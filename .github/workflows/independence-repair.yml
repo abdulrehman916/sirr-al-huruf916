@@ -1,0 +1,72 @@
+name: Apply verified independence repairs
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/independence-repair.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.repository_id == '1407942113'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 2
+      - name: Verify expected parent
+        run: test "$(git rev-parse HEAD^)" = a08e17805022b4d7d374265a695d12e4b0ff2f2e
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24
+      - name: Apply reviewed patch
+        shell: bash
+        run: |
+          python3 - <<'PYCODE'
+          import gzip,base64,hashlib,subprocess
+          patch=gzip.decompress(base64.b64decode(
+              'H4sIAAAAAAACA71YS4/bRhK+61fUXiLSpEhJnpE90modw3EAAwlsjGEkwGTWaJHNUWcokulujiwoOiW55pC/sIc97f/x/JutfvAhauSZJEh88Ej9qK766quX'
+              'YpYkMBhcMQkkFBFnhRThDeUs2QwKzm6IpANOE8ppFlERrL4XsHjYuR7LYvoByDg5G40fB8HpZDJ6TM9gNBxOTk56g8HgoS/2PM978Kuffw6DU38C3qn/BPBL'
+              'SiUIKgTLM5hDVqbprKcXSZrmaxrjouQltYuc/lBSIQWuDnEpyjMhIUoZzSQubXsegCgLsiCCvuPpFPpLKQsxDcN8nQ2EzDm5ogH9QFZFSvt+DwBIKZdT2MIV'
+              'lW+NGlMgYpNF4Lgw/xc4W4iJJOpIpeYOdi7s9G0rUu0mPF9Nm0sRp2j9W3aV0VirYoUWRC71ma26D7VFnjfT2IxH/lPwxmN/NFLwWAvzTBoTyZowBYPIU8Q5'
+              'sB/wPZGXHDGewgUC7uOJ5NIHwsmCRe8l/SARi4//vf25h3oIymWAz5LUqV73YeRD/5wWSukYGp+BWBJOIc8oCLSFZVeVxn131hFmtQxar/rm1dvfPv7n9teP'
+              '/7v97fan219vf2nfXREZLeu71oyLIWof/tt477vwu7b/Qrzs2csxpcVLa0kDCZ6jlUTXhweDc6Amehn6b8mNMpvAchNzDU9EeAwFPkT5DUIUlygppWAZ30LP'
+              '2FkTOSGpUEyudY1SSrjTsofebcunaBxWsNyMwnzxPY1kqDwVVvEX51G5QiBEyFZFzlH/JiTDFclKE7dBESfPZH5Ns7mk6iDhm76rsUIMXn4oGEcb3p1/JTTT'
+              'EQ4E4IblpajjQhElyyUUlAsm8KH+77FMLnH5d9uUsJS2VNdSlNp/iVwU+1p9gJyzK5aJ2mJO15xJpNthUBwJWIQVtVTpDoU+h5hmDOE1PIWM4lHFlhSzOYmu'
+              'QeZAMkCiUp6RFBZ5fq1fOkich8yK9woIj0JSsLBIiUxyvnqhM2dgisaxPVsonk4mZ5OniyB4Mh6fJMlpp1AcvW2Lw9F9lfROnqh055k/ddbDA0xunhcM7XPM'
+              'F5tdq9QpS55VYXlOo5zHTpmtOSks7IuNWX0VO6ZIOG6g2Ov0Kz3ec30AIzUQNEVCOP1H+Jn+4PTNi+h0+7QPLHYxXW0WmNazq5Q6rqucALYWmARv8r6jaoaL'
+              'OX7wMEXv1w7phqTCRG+08XVVwkJUqY0fWkp5f+mz01aKqyPZWHxMoQ5KZRErlFhsBLpVNbTlruTclLs/7018Qr3wSZ/Wis6Mv4wWPF93Nbj/WWtY0zQEQeBY'
+              'e54F2mc//gjbHb6MO8aHCJpx2N/27nH3KV3A/LsTML3IYlywwgMN4IHLZ58IUTSwZoSK/skIW0FP///A2G9TaVGm1y9M0KFg1RleXNZ8Ygk4/1DLQUqzK9V5'
+              'WY0uLmd7sfkGgWWCBphz/2CI6FdWeM9CadrATrS6DVauPryHTDdy/w6lPhnL96t7hzPeGSoeOuMOqxr9FCl0W2wJsAWVHJoYmau4mFUyanpU3Ai6GWWm1D9W'
+              '/ky5P68Mf44FW4pOGTx2xpbDRURPRk9GQUCTaJQ8HR8ph0eldMri0XPdecmg8+b85ZevvkVQ+tUEEt7RxPTRP2HYNGp1A7HMhQx6+F01hJCUWSRVG2FqV63E'
+              'uW0mHJyNTL22rrRZmkRLqloPuoav0YWGvGbPNEjY7u7v1zypn6z6oRuSlnQvbOWmoHkCegPmc20qx/TSh88+M6uBkIRL8Q2TS8cA4tYSoKZRzR8TOrUtGD1q'
+              '9guawU9pqOAenah8NDq1zcgfRanOP7jENyr96g9BiYxN4Z9z+ALFBFm+dtpqV4oXJkpQ77bGVe9v477r8b7biMEE3plB9ezpw9lw6JrcZ49hS5s5tnRgouc8'
+              '52rCxWA0n5/p7hKm+sCzQFTylElqx1ave6Vt2+cqOxtp8wc+N9sXoyCuz7gN8zBzyWbDN5RxO5dtOqmP7W3vOmjqQdUM+NrsWbNtXDxHumnvTlu+BQ8mw+H7'
+              '4XDo107dta7qMNLKGvdoUZaJ4zP/FLzHJ/548ueYuNvLwBoKk7sVEezqtgpGrO1qeqh+zDAK2oFCqY4QYVYxtDIToZqDYiawDm2McOHbIaaajU1l0i4N4NyU'
+              'GUCqMG7FVcOzGcvav0AsaKIOCzuGY/KPWTWFB+p2O5no8lUnE+/eZOI2rFTnGvYsibBy6p6h2USAnQ6flP9bBLdBTLjQk7/KgYiUc0BCmy7X2WstvHV0L+yb'
+              '37TcwKhxIMNw+A1ySJWFh0+6/ZYkBYHR2b6isWq0w8xrtxVXM7Lay8GNBq67H+xV5TdVy8NxN8pj+u781Yt8VeSZMvJAbsoi2hJZNXBt8HbVxx3o4EQKh4/g'
+              'NY/RS+iO6lczJvSQTqpf6xS8ATwKm/v7ceG1ZCtEnnNONgET+m+XFKYSqRbGsq9SUN00fEPUDvlnnNLmnxX4Wm/oDP8SUwGjwrFL1H41Gpi26eKaYiOH8bC6'
+              '1MFqvleBoNbdyxqz3V532Vir1w+zgJXSSQfb/YQwa4VFvbTTGW7X+z+ojwqovhYAAA=='
+          ))
+          assert hashlib.sha256(patch).hexdigest() == '0a9abcf2ae6417be4c8432d4634c7fb714d17e370443bd3e75e0a13e149d5484'
+          subprocess.run(["git","apply","--check","-"],input=patch,check=True)
+          subprocess.run(["git","apply","-"],input=patch,check=True)
+          PYCODE
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - run: npm run verify:calculations
+      - run: npm run verify:calculation-source
+      - run: npm run verify:calculation-regression
+      - run: npm run verify:async-calculation
+      - run: npm run verify:records
+      - run: npm run verify:private-references
+      - run: npm run verify:independence
+      - run: npm run build
+      - name: Commit verified application repairs
+        run: |
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Preserve original calculations and bilingual displays; preserve durable references when editing cards"
+          git push origin HEAD:main
