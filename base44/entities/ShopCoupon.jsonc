@@ -1,0 +1,109 @@
+{
+  "name": "ShopCoupon",
+  "type": "object",
+  "properties": {
+    "coupon_code": {
+      "type": "string",
+      "description": "Unique coupon code e.g. SUMMER20, NEWUSER100"
+    },
+    "description": {
+      "type": "string",
+      "description": "Coupon description for admin reference"
+    },
+    "discount_type": {
+      "type": "string",
+      "enum": [
+        "PERCENTAGE",
+        "FIXED",
+        "FREE_SHIPPING"
+      ],
+      "default": "PERCENTAGE",
+      "description": "Type of discount"
+    },
+    "discount_value": {
+      "type": "number",
+      "description": "Discount value. For PERCENTAGE: 0-100. For FIXED: amount in AED."
+    },
+    "min_order_value": {
+      "type": "number",
+      "default": 0,
+      "description": "Minimum order value for coupon to apply (AED)"
+    },
+    "max_uses": {
+      "type": "integer",
+      "default": -1,
+      "description": "Maximum total uses. -1 = unlimited."
+    },
+    "use_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "How many times this coupon has been used"
+    },
+    "max_uses_per_customer": {
+      "type": "integer",
+      "default": 1,
+      "description": "Max uses per customer. -1 = unlimited."
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "If false, coupon cannot be redeemed"
+    },
+    "valid_from": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when coupon becomes active"
+    },
+    "valid_until": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when coupon expires. Null = never expires."
+    },
+    "applicable_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Categories this coupon applies to. Empty = all categories."
+    },
+    "applicable_product_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific product IDs this coupon applies to. Empty = all products."
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Admin user ID who created this coupon"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "coupon_code",
+    "discount_type",
+    "discount_value"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

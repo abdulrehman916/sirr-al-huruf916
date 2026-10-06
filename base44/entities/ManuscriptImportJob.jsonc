@@ -1,0 +1,202 @@
+{
+  "name": "ManuscriptImportJob",
+  "type": "object",
+  "description": "Tracks manuscript import jobs with per-chunk status, stage timings, and error details for resumable background processing. Each chunk is independently resumable \u2014 completed chunks are never reprocessed. Failed chunks retry with exponential backoff. Admin-only.",
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "description": "Permanent unique job identifier. Format: JOB-<timestamp>-<rand>."
+    },
+    "book_id": {
+      "type": "string",
+      "description": "FK to ManuscriptBook.book_id"
+    },
+    "book_title": {
+      "type": "string",
+      "description": "Denormalized book title for display"
+    },
+    "onedrive_file_id": {
+      "type": "string",
+      "description": "OneDrive file ID being imported"
+    },
+    "onedrive_file_path": {
+      "type": "string",
+      "description": "OneDrive file path for display"
+    },
+    "onedrive_etag": {
+      "type": "string"
+    },
+    "onedrive_file_hash": {
+      "type": "string"
+    },
+    "total_chunks": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total number of chunks the PDF was split into"
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chunk_number": {
+            "type": "integer"
+          },
+          "chunk_url": {
+            "type": "string",
+            "description": "URL to the chunk PDF file in Base44 storage"
+          },
+          "page_offset": {
+            "type": "integer",
+            "description": "0-based page offset for absolute page numbering"
+          },
+          "page_range": {
+            "type": "string",
+            "description": "Human-readable page range e.g. '1-10'"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "processing",
+              "completed",
+              "failed",
+              "skipped"
+            ],
+            "default": "pending"
+          },
+          "retry_count": {
+            "type": "integer",
+            "default": 0
+          },
+          "max_retries": {
+            "type": "integer",
+            "default": 3
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message if the chunk failed"
+          },
+          "failed_stage": {
+            "type": "string",
+            "description": "Which stage failed: quality_gate, chunk_creation, chunk_upload, extraction, image_extraction, heading_creation, entry_creation, book_update, or unknown"
+          },
+          "stage_timings": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Per-stage execution time in milliseconds. Keys: quality_gate_ms, extraction_ms, image_extraction_ms, heading_creation_ms, entry_creation_ms, book_update_ms, total_ms."
+          },
+          "entries_extracted": {
+            "type": "integer",
+            "default": 0
+          },
+          "images_extracted": {
+            "type": "integer",
+            "default": 0
+          },
+          "processing_time_ms": {
+            "type": "integer",
+            "default": 0
+          },
+          "started_at": {
+            "type": "string"
+          },
+          "completed_at": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "current_stage": {
+      "type": "string",
+      "description": "Current pipeline stage for UI display"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "splitting",
+        "extracting",
+        "completed",
+        "failed"
+      ],
+      "default": "splitting"
+    },
+    "overall_progress": {
+      "type": "integer",
+      "default": 0,
+      "description": "0-100 percentage of completed chunks"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "created_by_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "job_id",
+    "book_id",
+    "status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_job_id",
+      "fields": [
+        "job_id"
+      ]
+    },
+    {
+      "name": "idx_book_id",
+      "fields": [
+        "book_id"
+      ]
+    },
+    {
+      "name": "idx_status",
+      "fields": [
+        "status"
+      ]
+    },
+    {
+      "name": "idx_onedrive_file_id",
+      "fields": [
+        "onedrive_file_id"
+      ]
+    },
+    {
+      "name": "idx_started_at",
+      "fields": [
+        "started_at"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

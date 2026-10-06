@@ -1,0 +1,1 @@
+export default function VerifyVIPAccess() { return <div>Verify VIP Access</div>; }

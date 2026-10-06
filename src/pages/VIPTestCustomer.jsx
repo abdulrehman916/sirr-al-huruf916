@@ -1,0 +1,1 @@
+export default function VIPTestCustomer() { return <div>VIP Test Customer</div>; }

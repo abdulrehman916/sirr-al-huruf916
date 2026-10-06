@@ -1,0 +1,122 @@
+{
+  "name": "ManuscriptMiscKnowledge",
+  "type": "object",
+  "description": "Catch-all canonical store for manuscript knowledge that doesn't fit Astro Clock, \u0130htil\u00e2\u00e7, K\u0131yafetname, or Ear Ringing domains. Includes planetary conjunctions, ebced tables, prayers, general theory, etc. ISOLATED \u2014 only classifyAndIngestScreenshot writes to this entity. Merge rules: never overwrite, never delete, preserve every source, remove exact duplicates only.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: MMK-SCR-<timestamp>-<rand>."
+    },
+    "content_type": {
+      "type": "string",
+      "description": "Brief description of what type of content this is (e.g., 'planetary_conjunction', 'ebced_table', 'prayer', 'general_theory')."
+    },
+    "raw_text_tr": {
+      "type": "string",
+      "description": "Verbatim Turkish/Ottoman text from the manuscript."
+    },
+    "raw_text_en": {
+      "type": "string",
+      "description": "English translation or summary."
+    },
+    "raw_text_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of normalized content_type + raw_text_en (first 200 chars) for dedup."
+    },
+    "source_book_title": {
+      "type": "string"
+    },
+    "source_page_number": {
+      "type": "string"
+    },
+    "source_screenshot_url": {
+      "type": "string"
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "content_type",
+    "raw_text_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_content_type",
+      "fields": [
+        "content_type"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_screenshot_url",
+      "fields": [
+        "source_screenshot_url"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

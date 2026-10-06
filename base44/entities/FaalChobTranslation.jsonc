@@ -1,0 +1,47 @@
+{
+  "name": "FaalChobTranslation",
+  "type": "object",
+  "properties": {
+    "gridPos": {
+      "type": "integer",
+      "description": "Grid position (1-64) matching FaalChob card"
+    },
+    "arabic": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "danyal": {
+          "type": "string"
+        },
+        "sadiq": {
+          "type": "string"
+        }
+      },
+      "description": "Arabic translations"
+    },
+    "malayalam": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "danyal": {
+          "type": "string"
+        },
+        "sadiq": {
+          "type": "string"
+        }
+      },
+      "description": "Malayalam translations"
+    },
+    "source_text": {
+      "type": "string",
+      "description": "Original Persian text used for translation"
+    }
+  },
+  "required": [
+    "gridPos"
+  ]
+}

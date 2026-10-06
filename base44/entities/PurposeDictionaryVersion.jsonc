@@ -1,0 +1,118 @@
+{
+  "name": "PurposeDictionaryVersion",
+  "type": "object",
+  "description": "Version history for Purpose Dictionary bulk imports. Stores pre-import snapshots (as uploaded JSON file URLs) for automatic rollback on failure. ISOLATED \u2014 only PurposeDictionary management functions read/write this entity. Never accessed by any Mizan, Ritual, Calculation, Timing, Astro, or UI subsystem outside the admin Purpose Dictionary manager.",
+  "properties": {
+    "version_id": {
+      "type": "string",
+      "description": "Unique version ID e.g. VER-<timestamp>"
+    },
+    "version_label": {
+      "type": "string",
+      "description": "Human-readable label e.g. 'Pre-import 2026-07-05 14:30'"
+    },
+    "trigger": {
+      "type": "string",
+      "enum": [
+        "pre_import",
+        "manual_backup",
+        "auto_rollback"
+      ],
+      "default": "pre_import",
+      "description": "What triggered this version snapshot"
+    },
+    "snapshot_file_url": {
+      "type": "string",
+      "description": "URL to the uploaded JSON backup file containing all PurposeDictionary records at version time"
+    },
+    "record_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of PurposeDictionary records captured in this snapshot"
+    },
+    "import_report": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Import report associated with this version: { total, imported, updated, skipped, duplicatesMerged, errors }"
+    },
+    "import_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed",
+        "failed",
+        "rolled_back"
+      ],
+      "default": "pending",
+      "description": "Status of the import associated with this version snapshot"
+    },
+    "rolled_back_from_version": {
+      "type": "string",
+      "description": "If this version was created by a rollback, the version_id that was rolled back"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Admin user ID who triggered this version"
+    },
+    "created_by_email": {
+      "type": "string",
+      "description": "Admin email (denormalized for display)"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional admin notes"
+    }
+  },
+  "required": [
+    "version_id",
+    "version_label",
+    "snapshot_file_url",
+    "import_status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_version_id",
+      "fields": [
+        "version_id"
+      ]
+    },
+    {
+      "name": "idx_created_at",
+      "fields": [
+        "created_at"
+      ]
+    },
+    {
+      "name": "idx_import_status",
+      "fields": [
+        "import_status"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

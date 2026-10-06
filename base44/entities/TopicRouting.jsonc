@@ -1,0 +1,192 @@
+{
+  "name": "TopicRouting",
+  "type": "object",
+  "description": "Smart Topic Router \u2014 stores topic classification and routing results for multi-page manuscript uploads. Each record represents one topic section (consecutive pages with the same topic). ISOLATED enhancement layer \u2014 does NOT modify EntityKnowledge, AstroClockKnowledge, unifiedIngestKnowledge, or any existing entity/function. Created exclusively by the smartTopicRoute backend function. Supports batch processing with pending sections carried across batch boundaries.",
+  "properties": {
+    "routing_id": {
+      "type": "string",
+      "description": "PERMANENT unique identifier. Format: TR-<document_id>-<seq> for sections, TR-PENDING-<document_id> for the pending section carried across batches."
+    },
+    "document_id": {
+      "type": "string",
+      "description": "FK to IngestedDocument.document_id (or standalone document ID if Smart Topic Router is used without Document Context Mode)."
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "astrology",
+        "holy_names",
+        "vefk",
+        "abjad",
+        "duas",
+        "dream_interpretation",
+        "manuscript_notes",
+        "other"
+      ],
+      "description": "Topic classification for this section. astrology=planetary hours/zodiac/planets, holy_names=divine names/angels, vefk=magic squares/wafq, abjad=numerical calculations, duas=supplications/prayers, dream_interpretation=physiognomy/omens, manuscript_notes=general instructions, other=unclassified."
+    },
+    "page_start": {
+      "type": "integer",
+      "description": "First page number in this section (1-based, preserves document page order)."
+    },
+    "page_end": {
+      "type": "integer",
+      "description": "Last page number in this section. Same as page_start for single-page sections. For pending sections, this is updated as more pages are classified."
+    },
+    "page_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of pages in this section (page_end - page_start + 1)."
+    },
+    "destination_store": {
+      "type": "string",
+      "description": "Knowledge store this section was routed to. 'AstroClockKnowledge/EntityKnowledge' for astrology (via unifiedIngestKnowledge), 'Skipped' for non-astrology topics (no screenshot-based import exists)."
+    },
+    "records_created": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of knowledge records created from this section (from unifiedIngestKnowledge results)."
+    },
+    "records_updated": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of existing knowledge records updated/merged from this section."
+    },
+    "records_skipped": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of pages skipped (non-astrology sections where unifiedIngestKnowledge was not called)."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "completed",
+        "skipped",
+        "failed"
+      ],
+      "default": "pending",
+      "description": "Section status. 'pending' = section continues into next batch (not yet finalized). 'processing' = entity extraction in progress. 'completed' = astrology section processed via unifiedIngestKnowledge. 'skipped' = non-astrology section, no processing. 'failed' = processing error."
+    },
+    "page_classifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page_number": {
+            "type": "integer"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "Classification confidence 0-100"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Brief explanation for the classification"
+          }
+        }
+      },
+      "default": [],
+      "description": "Per-page classification results for this section. Each entry: { page_number, topic, confidence, reason }."
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Section-specific warnings (low confidence, processing errors, etc.)"
+    },
+    "source_label": {
+      "type": "string",
+      "default": "",
+      "description": "Source label from the upload."
+    },
+    "processing_duration_ms": {
+      "type": "integer",
+      "default": 0,
+      "description": "Processing duration for this section in milliseconds."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this routing record was created."
+    }
+  },
+  "required": [
+    "routing_id",
+    "document_id",
+    "topic",
+    "page_start",
+    "page_end",
+    "status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_routing_id",
+      "fields": [
+        "routing_id"
+      ]
+    },
+    {
+      "name": "idx_document_id",
+      "fields": [
+        "document_id"
+      ]
+    },
+    {
+      "name": "idx_topic",
+      "fields": [
+        "topic"
+      ]
+    },
+    {
+      "name": "idx_status",
+      "fields": [
+        "status"
+      ]
+    },
+    {
+      "name": "idx_document_status",
+      "fields": [
+        "document_id",
+        "status"
+      ]
+    },
+    {
+      "name": "idx_document_topic",
+      "fields": [
+        "document_id",
+        "topic"
+      ]
+    },
+    {
+      "name": "idx_page_range",
+      "fields": [
+        "page_start",
+        "page_end"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

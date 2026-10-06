@@ -1,0 +1,166 @@
+{
+  "name": "SirrAuditLog",
+  "type": "object",
+  "description": "PERMANENT audit trail for every SIRR archival operation. One record per operation (upload, extract chunk, OCR retry, verify, rebuild, export, backup, restore, integrity check, error). Scales to millions of records across thousands of books over many years. Every record is immutable once written \u2014 append-only. ISOLATED \u2014 only SIRR functions and the SIRR UI write to this entity. This is the SOLE source of truth for the processing / OCR / verification / backup / error / retry history of every SIRR book and PDF part.",
+  "properties": {
+    "audit_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: SA-<timestamp>-<rand>. Never changes."
+    },
+    "sirr_book_id": {
+      "type": "string",
+      "description": "FK to SirrManuscriptBook.sirr_book_id. The book this operation affected."
+    },
+    "part_id": {
+      "type": "string",
+      "default": "",
+      "description": "FK to the SirrManuscriptBook.pdf_parts[].part_id this operation affected. Empty for book-level operations (upload of Part 1, verify, export, backup)."
+    },
+    "part_number": {
+      "type": "integer",
+      "default": 0,
+      "description": "The part number (1-based) affected. 0 for book-level operations."
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "upload",
+        "extract_chunk",
+        "extract_complete",
+        "extract_failed",
+        "retry",
+        "verify",
+        "rebuild",
+        "export",
+        "backup",
+        "restore",
+        "integrity_check"
+      ],
+      "description": "The archival operation performed. upload = PDF part uploaded. extract_chunk = one page-range chunk extracted. extract_complete = a part fully extracted. extract_failed = extraction error. retry = transient error retry attempt by the background engine. verify = sirrVerifyBook run. rebuild = part reset for re-extraction. export = book exported to JSON. backup = book backed up to private storage. restore = book restored from a backup file. integrity_check = file checksum/hash verification."
+    },
+    "user_id": {
+      "type": "string",
+      "default": "",
+      "description": "ID of the user who triggered the operation. 'system' for scheduled automations (backup)."
+    },
+    "user_name": {
+      "type": "string",
+      "default": "",
+      "description": "Display name or email of the triggering user. 'system' for scheduled automations."
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when the operation occurred. Required."
+    },
+    "page_range": {
+      "type": "string",
+      "default": "",
+      "description": "Page range affected for extract_chunk/retry, e.g. '11-20'. Empty for non-page-scoped operations."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "success",
+        "failed",
+        "partial",
+        "info"
+      ],
+      "default": "success",
+      "description": "Outcome of the operation. success = completed. failed = error. partial = interrupted/resumable. info = informational (e.g. upload/retry recorded)."
+    },
+    "details": {
+      "type": "string",
+      "default": "",
+      "description": "Human-readable summary. For export/backup/restore, includes the resulting file_uri. For failures/retries, includes the error message."
+    },
+    "entry_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of entries affected/created/verified/exported/backed up/restored."
+    },
+    "ocr_confidence_min": {
+      "type": "number",
+      "default": 100,
+      "description": "Minimum OCR confidence among entries in this operation (for extract/verify)."
+    },
+    "file_uri": {
+      "type": "string",
+      "default": "",
+      "description": "Resulting permanent file URI for export/backup/restore operations. Empty otherwise."
+    }
+  },
+  "required": [
+    "audit_id",
+    "sirr_book_id",
+    "action",
+    "timestamp"
+  ],
+  "indexes": [
+    {
+      "name": "idx_audit_id",
+      "fields": [
+        "audit_id"
+      ]
+    },
+    {
+      "name": "idx_sirr_book_id",
+      "fields": [
+        "sirr_book_id"
+      ]
+    },
+    {
+      "name": "idx_action",
+      "fields": [
+        "action"
+      ]
+    },
+    {
+      "name": "idx_timestamp",
+      "fields": [
+        "timestamp"
+      ]
+    },
+    {
+      "name": "idx_book_timestamp",
+      "fields": [
+        "sirr_book_id",
+        "timestamp"
+      ]
+    },
+    {
+      "name": "idx_book_action",
+      "fields": [
+        "sirr_book_id",
+        "action"
+      ]
+    },
+    {
+      "name": "idx_part_id",
+      "fields": [
+        "part_id"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

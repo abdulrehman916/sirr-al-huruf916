@@ -1,0 +1,308 @@
+{
+  "name": "MasterPdfPage",
+  "type": "object",
+  "description": "MASTER PDF LIBRARY \u2014 per-page index. ONE record per page of every MasterPdfBook. Each page stores its raw OCR text (never overwritten), the rendered page scan, extracted images, language-separated text, AI content classification, and quality flags. Every page is independently searchable. APPEND-ONLY: ocr_text is the immutable original OCR; corrections are appended, never replacing the original. OWNER-ONLY: entity RLS is admin-only; backend functions verify Owner (is_owner === true or OWNER_EMAIL) before serving. Linked to MasterPdfBook via master_book_id, and to SirrAuditLog for the processing/OCR/verification history. Designed for hundreds of thousands of PDFs and millions of indexed pages.",
+  "properties": {
+    "page_record_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: MPP-<master_book_id>-p<page_number>. Never changes."
+    },
+    "master_book_id": {
+      "type": "string",
+      "description": "FK to MasterPdfBook.master_book_id. The book this page belongs to. Permanent."
+    },
+    "source_part_id": {
+      "type": "string",
+      "default": "",
+      "description": "PERMANENT FK to the originating PDF part (MasterPdfBook.pdf_parts[].part_id)."
+    },
+    "source_part_number": {
+      "type": "integer",
+      "default": 0,
+      "description": "The part number (1-based) this page was extracted from."
+    },
+    "page_number": {
+      "type": "integer",
+      "description": "1-based page number within the book (across all parts). The authoritative page index."
+    },
+    "page_label": {
+      "type": "string",
+      "default": "",
+      "description": "Printed page label if it differs from the physical page number (e.g. 'iii', '12a'). Empty if same."
+    },
+    "ocr_text": {
+      "type": "string",
+      "default": "",
+      "description": "ORIGINAL RAW OCR \u2014 the complete verbatim text transcribed from this page (Arabic + English + Malayalam mixed as printed). IMMUTABLE: never overwritten once stored. This is the faithful original OCR of record. Corrections go to ocr_corrections, never replacing this field."
+    },
+    "ocr_text_ar": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic-script portion of the OCR, separated by language. Subset of ocr_text. Preserves every harakah. Never auto-normalized."
+    },
+    "ocr_text_en": {
+      "type": "string",
+      "default": "",
+      "description": "English/Latin-script portion of the OCR, separated by language. Subset of ocr_text."
+    },
+    "ocr_text_ml": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam-script portion of the OCR, separated by language. Subset of ocr_text."
+    },
+    "ocr_corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "correction_id": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "corrected_by": {
+            "type": "string",
+            "default": ""
+          },
+          "field": {
+            "type": "string",
+            "description": "Which text field was corrected (ocr_text, ocr_text_ar, etc.)"
+          },
+          "original_snippet": {
+            "type": "string",
+            "default": ""
+          },
+          "corrected_snippet": {
+            "type": "string",
+            "default": ""
+          },
+          "reason": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "correction_id",
+          "timestamp",
+          "field"
+        ]
+      },
+      "default": [],
+      "description": "APPEND-ONLY correction log. Every correction adds an entry; the original ocr_text is never modified. Preserves the full history of Owner/editorial corrections with reasoning."
+    },
+    "original_scan_url": {
+      "type": "string",
+      "default": "",
+      "description": "URL of the rendered page image (the original scan / page render). Permanent visual record of the page."
+    },
+    "extracted_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image_url": {
+            "type": "string",
+            "description": "URL of the extracted image."
+          },
+          "image_type": {
+            "type": "string",
+            "enum": [
+              "magic_square",
+              "wafq",
+              "table",
+              "diagram",
+              "seal",
+              "symbol",
+              "figure",
+              "handwritten_chart",
+              "other"
+            ],
+            "default": "other",
+            "description": "AI-classified type of the extracted image."
+          },
+          "caption": {
+            "type": "string",
+            "default": "",
+            "description": "AI-generated caption describing the image."
+          },
+          "bounding_box": {
+            "type": "string",
+            "default": "",
+            "description": "Location of the image on the page (approx)."
+          }
+        },
+        "required": [
+          "image_url"
+        ]
+      },
+      "default": [],
+      "description": "Images extracted from this page, classified by type (magic squares, wafq, tables, diagrams, seals, symbols, figures, handwritten charts). Each with URL, type, caption, location. Append-only."
+    },
+    "arabic_text": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic text on this page (classified from OCR). Verbatim, harakat preserved."
+    },
+    "english_text": {
+      "type": "string",
+      "default": "",
+      "description": "English text on this page (classified from OCR)."
+    },
+    "malayalam_text": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam text on this page (classified from OCR)."
+    },
+    "ai_classification": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "AI pre-processing classification of this page's content. Keys: holy_names[], quran_verses[], hadith[], dua[], dhikr[], wazifa[], hizb[], khawass[], mujarrabat[], riyadah[], fasting_instructions[], magic_squares[], wafq[], talismans[], repetition_counts[], timings[], benefits[], conditions[], warnings[], scholars[], authors[], references[]. Each value is an array of {text, confidence}. Populated by ingestMasterPdfPages. Empty arrays when no content of that type is found on the page \u2014 never fabricated."
+    },
+    "ocr_confidence": {
+      "type": "number",
+      "default": 100,
+      "description": "OCR / transcription confidence for this page (0-100). 100 only when every character is certain. Below 100 \u2192 needs_owner_review=true."
+    },
+    "quality_flags": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Quality verification flags. Keys: ocr_errors (bool), harakat_errors (bool), missing_arabic_letters (bool), broken_arabic_words (bool), duplicate_content (bool), low_quality_scan (bool), missing_pages (bool), printing_errors (bool), incomplete_ocr (bool). Set by the quality detection pass. When any is true, needs_owner_review=true (NEVER auto-fixed)."
+    },
+    "needs_owner_review": {
+      "type": "boolean",
+      "default": false,
+      "description": "True when ocr_confidence < 100 OR any quality_flag is true. The page is marked NEEDS OWNER REVIEW \u2014 never auto-fixed. Owner must approve, reject, edit, merge, ignore, or mark as verified."
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "approved",
+        "rejected",
+        "ignored",
+        "verified"
+      ],
+      "default": "pending_review",
+      "description": "Owner Review status for this page. 'pending_review' = awaiting Owner. 'approved' = Owner approved. 'rejected' = Owner rejected. 'ignored' = Owner chose to ignore. 'verified' = Owner cross-verified against other sources."
+    },
+    "reviewed_by": {
+      "type": "string",
+      "default": "",
+      "description": "Owner user ID who last reviewed this page."
+    },
+    "reviewed_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent Owner review of this page."
+    },
+    "content_hash": {
+      "type": "string",
+      "default": "",
+      "description": "SHA-256 hash of normalized page text for duplicate detection across the library. Two pages with the same content_hash are duplicates \u2014 every source stored independently, displayed as 'Supported by X independent sources'."
+    },
+    "search_text": {
+      "type": "string",
+      "default": "",
+      "description": "Concatenated lowercased searchable text (ocr_text + arabic_text + english_text + malayalam_text + classification text). Indexed for full-text search across the entire library."
+    },
+    "indexed_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp when this page was first indexed."
+    }
+  },
+  "required": [
+    "page_record_id",
+    "master_book_id",
+    "page_number"
+  ],
+  "indexes": [
+    {
+      "name": "idx_page_record_id",
+      "fields": [
+        "page_record_id"
+      ]
+    },
+    {
+      "name": "idx_master_book_id",
+      "fields": [
+        "master_book_id"
+      ]
+    },
+    {
+      "name": "idx_source_part_id",
+      "fields": [
+        "source_part_id"
+      ]
+    },
+    {
+      "name": "idx_page_number",
+      "fields": [
+        "page_number"
+      ]
+    },
+    {
+      "name": "idx_book_page",
+      "fields": [
+        "master_book_id",
+        "page_number"
+      ]
+    },
+    {
+      "name": "idx_needs_owner_review",
+      "fields": [
+        "needs_owner_review"
+      ]
+    },
+    {
+      "name": "idx_review_status",
+      "fields": [
+        "review_status"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_search_text",
+      "fields": [
+        "search_text"
+      ]
+    },
+    {
+      "name": "idx_book_review",
+      "fields": [
+        "master_book_id",
+        "review_status"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#0B1020"/>
+  <circle cx="96" cy="96" r="70" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0.8"/>
+  <circle cx="96" cy="96" r="50" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+  <text x="96" y="108" font-family="serif" font-size="48" fill="#D4AF37" text-anchor="middle" font-weight="bold">س</text>
+  <circle cx="96" cy="96" r="5" fill="#D4AF37"/>
+</svg>

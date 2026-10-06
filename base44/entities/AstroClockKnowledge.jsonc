@@ -1,0 +1,782 @@
+{
+  "name": "AstroClockKnowledge",
+  "type": "object",
+  "description": "ONE centralized Astro Clock knowledge database. Every astrology rule extracted from PDFs, screenshots, or images is stored here \u2014 never in EntityKnowledge. Each record belongs to exactly one rule_category and one rule_entity. The store supports unlimited future categories (rule_category is a free string, not an enum). Two record classes coexist: (A) full_context timing records (source_type='full_context', rule_category='planetary_hour') indexed by full_context_key = weekday|period|saat_number|planet|nakshatra \u2014 read by the Ritual Timing Engine (Cards 1-6); (B) categorized entity records (source_type='categorized', rule_category = Planet/Weekday/Zodiac/Lunar Mansion/Moon Phase/Ritual Purpose/General/etc.) indexed by rule_record_key = rule_category|rule_entity. GLOBAL MERGE RULE: never delete, never overwrite \u2014 only merge missing information and remove true duplicates. Every source reference is preserved permanently. Multilingual names (Arabic/Turkish/English) are normalized to canonical internal values before storage; the original wording is preserved in knowledge_text_ar and entity_raw.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: ACK-<source_entry_id>-<seq>, ACK-SCR-<timestamp>-<rand> for screenshots, ACK-CAT-<timestamp>-<rand> for categorized records, or ACK-MARKER-<entry_id> for markers."
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "weekday",
+        "day_period",
+        "night_period",
+        "sahath",
+        "planetary_hour",
+        "full_context",
+        "categorized"
+      ],
+      "description": "Record class. 'full_context' = timing record indexed by the complete Weekday+Period+Saat+Kawkab+Nakshatra combination (read by Ritual Timing Engine). 'categorized' = category+entity record (Planet/Weekday/Zodiac/Mansion/Moon Phase/Purpose/General/...). Legacy types retained for backward compatibility."
+    },
+    "rule_category": {
+      "type": "string",
+      "description": "PRIMARY CATEGORY. Free string (unlimited categories, not an enum). Known values: Planet, Planetary Hour, Weekday, Zodiac, Lunar Mansion, Moon Phase, Ritual Purpose, General Astrology Rules, Benefic Rules, Malefic Rules, Marriage Rules, Travel Rules, Trade Rules, Health Rules, Financial Rules, Agricultural Rules, Weather Rules. Every new record has exactly one category. Existing full_context timing records use 'planetary_hour'. Stored as a lowercase slug for the record key; display layer title-cases it."
+    },
+    "rule_entity": {
+      "type": "string",
+      "description": "The specific entity within the category. Examples: Planet->'sun', Zodiac->'leo', Lunar Mansion->'al-sarfa', Weekday->'tuesday', Moon Phase->'waxing crescent', Planetary Hour->'hour-3', General->'sun'. Normalized to canonical lowercase. The original-language wording is preserved in entity_raw."
+    },
+    "entity_raw": {
+      "type": "string",
+      "default": "",
+      "description": "Original-language entity name exactly as written in the manuscript (Arabic/Turkish/transliteration). Preserved verbatim \u2014 never normalized away."
+    },
+    "rule_record_key": {
+      "type": "string",
+      "description": "DEDUP/MERGE KEY for categorized records. Format: 'rule_category|rule_entity'. Two records with the same key are the same canonical rule and are merged \u2014 never duplicated. For full_context timing records, dedup uses full_context_key instead."
+    },
+    "weekday": {
+      "type": "integer",
+      "description": "0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday. Required for full_context timing records; optional/absent for categorized records."
+    },
+    "period": {
+      "type": "string",
+      "enum": [
+        "day",
+        "night"
+      ],
+      "description": "Day or Night period. Required for full_context timing records; absent for categorized records."
+    },
+    "sahath_number": {
+      "type": "integer",
+      "description": "Legacy Sahath number 1-12 (per-period). Retained for backward compatibility."
+    },
+    "saat_number": {
+      "type": "integer",
+      "description": "FULL-CONTEXT Sa'at number 1-24. 1-12 = daytime hours, 13-24 = nighttime hours. Required for full_context timing records; absent for categorized records."
+    },
+    "planet": {
+      "type": "string",
+      "description": "Governing Kawkab / planet key (sun, moon, mars, mercury, jupiter, venus, saturn). For full_context timing records this is the Kawkab ruling this Sa'at. For categorized Planet-category records this is the canonical planet key."
+    },
+    "nakshatra": {
+      "type": "string",
+      "description": "Lunar mansion / Manzil name if the knowledge is specific to a nakshatra. Empty if not applicable. Part of the full context key; also used as rule_entity for Lunar Mansion category records."
+    },
+    "full_context_key": {
+      "type": "string",
+      "description": "FULL-CONTEXT INDEX KEY for timing records. Format: 'weekday|period|saat_number|kawkab|nakshatra'. Two timing records with the same key are merged. Absent for categorized records."
+    },
+    "knowledge_category": {
+      "type": "string",
+      "enum": [
+        "recommendation",
+        "rule",
+        "warning",
+        "condition",
+        "timing_rule",
+        "suitable_time",
+        "unsuitable_time",
+        "special_timing",
+        "full_context_rule",
+        "categorized_rule"
+      ],
+      "description": "Legacy knowledge type. 'full_context_rule' = timing record. 'categorized_rule' = category+entity record. Retained for backward compatibility; rule_category is the primary classifier."
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Actions recommended for this rule. Unique items only \u2014 duplicates removed during merge. Every source preserved."
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Actions forbidden / to be avoided. Unique items only. Every source preserved."
+    },
+    "enemy_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Enemy-related actions. Unique items only. Every source preserved."
+    },
+    "friendship_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Friendship-related actions. Unique items only. Every source preserved."
+    },
+    "warnings_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Warnings. Unique items only. Every source preserved."
+    },
+    "notes_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "ml": {
+            "type": "string"
+          },
+          "ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "en"
+        ]
+      },
+      "default": [],
+      "description": "Additional notes. Unique items only. Every source preserved."
+    },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Structured key-value attributes for categorized records (e.g. {nature:'hot/dry', benefic:true, element:'fire', direction:'east', color:'red', metal:'gold', day_ruler:'sunday'}). Merged additively \u2014 new keys added, existing keys never overwritten."
+    },
+    "ritual_suitability": {
+      "type": "string",
+      "description": "Ritual suitability assessment for this rule. Describes which ritual types are suitable and why."
+    },
+    "knowledge_text_en": {
+      "type": "string",
+      "description": "English text of the knowledge \u2014 RESOLVED text containing complementary and equivalent knowledge merged via LLM. Empty string for marker records. For full_context records, a summary of the complete timing rule. For categorized records, the rule text."
+    },
+    "knowledge_text_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Appended from new sources. Empty for markers."
+    },
+    "knowledge_text_ar": {
+      "type": "string",
+      "description": "Original Arabic text. Appended from new sources \u2014 never modified. Empty for markers."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash for duplicate detection. Marker records use no-timing-<entry_id>. Screenshot timing records use scr-<full_context_key>-<hash>. Categorized records use cat-<rule_record_key>-<hash of first text>."
+    },
+    "canonical_key": {
+      "type": "string",
+      "description": "Legacy canonical routing key. Format: 'source_type|weekday|period|sahath_number|planet'. Retained for backward compatibility."
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, entry analyzed but no knowledge found. Never displayed."
+    },
+    "context_specific": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "type": "string"
+          },
+          "text_en": {
+            "type": "string"
+          },
+          "text_ml": {
+            "type": "string"
+          },
+          "text_ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          },
+          "source_count": {
+            "type": "integer",
+            "default": 1
+          }
+        }
+      },
+      "default": [],
+      "description": "Context-specific knowledge valid only under certain conditions. Stored under its matching condition without affecting other conditions."
+    },
+    "conflicting_opinions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "opinion_text_en": {
+            "type": "string"
+          },
+          "opinion_text_ml": {
+            "type": "string"
+          },
+          "opinion_text_ar": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "string"
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "screenshot_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "default": []
+          },
+          "source_count": {
+            "type": "integer",
+            "default": 1
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW"
+            ],
+            "default": "MEDIUM"
+          }
+        }
+      },
+      "default": [],
+      "description": "Conflicting opinions from verified sources. Both statements preserved. Each attached to its supporting sources. Marked as 'Multiple Verified Opinions'."
+    },
+    "conflict_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "List of fields that have conflicting opinions ('Multiple Verified Opinions')."
+    },
+    "source_book_id": {
+      "type": "string",
+      "description": "FK to ManuscriptBook.book_id. Empty for screenshot-sourced records."
+    },
+    "source_book_title": {
+      "type": "string",
+      "description": "Denormalized book title. For screenshots, the source_label or 'Screenshot Upload'."
+    },
+    "source_page_number": {
+      "type": "string",
+      "description": "Page number in the source PDF / screenshot sequence."
+    },
+    "source_entry_id": {
+      "type": "string",
+      "description": "FK to ManuscriptEntry.entry_id. Empty for screenshot-sourced records."
+    },
+    "source_screenshot_url": {
+      "type": "string",
+      "description": "URL of the source screenshot image. Preserved permanently for provenance."
+    },
+    "ocr_confidence": {
+      "type": "number",
+      "description": "OCR / vision extraction confidence score (0-100) reported by the vision model for this page. Preserved per source."
+    },
+    "detected_language": {
+      "type": "string",
+      "description": "Primary language detected in the source page by the vision model (ar/tr/en/ml/...). Preserved per source."
+    },
+    "upload_date": {
+      "type": "string",
+      "description": "ISO 8601 date when this source was uploaded/imported. Preserved per source."
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "True only if source ManuscriptEntry was verified. Screenshot records default to false (admin-reviewed)."
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "entry_id": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          },
+          "ocr_confidence": {
+            "type": "number"
+          },
+          "detected_language": {
+            "type": "string"
+          },
+          "upload_date": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "Additional manuscript/screenshot sources. Updated when duplicate rule_record_key or full_context_key match is found. Every source preserved permanently with its full provenance metadata."
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "Total manuscript/screenshot sources. 0 for markers."
+    },
+    "attached_visuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "visual_url": {
+            "type": "string",
+            "description": "URL of the cropped visual image (wafq, magic square, seal, symbol, table, diagram) extracted from the source screenshot. Displayed inside this card alongside the Arabic text and Malayalam explanation."
+          },
+          "visual_type": {
+            "type": "string",
+            "enum": [
+              "magic_square",
+              "wafq",
+              "table",
+              "symbol",
+              "seal",
+              "diagram",
+              "figure",
+              "grid",
+              "handwritten_chart",
+              "talisman",
+              "other"
+            ],
+            "default": "other",
+            "description": "Type of visual content."
+          },
+          "description": {
+            "type": "string",
+            "default": "",
+            "description": "English description of what the visual depicts."
+          },
+          "description_ar": {
+            "type": "string",
+            "default": "",
+            "description": "Arabic caption printed on the visual, preserved verbatim. Empty if none."
+          },
+          "source_screenshot_url": {
+            "type": "string",
+            "default": "",
+            "description": "URL of the ORIGINAL full screenshot this visual was cropped from. Preserved permanently as provenance."
+          },
+          "source_page": {
+            "type": "string",
+            "default": "",
+            "description": "Page number in the source, if visible."
+          },
+          "imported_at": {
+            "type": "string",
+            "default": "",
+            "description": "ISO 8601 timestamp when this visual was attached."
+          }
+        },
+        "required": [
+          "visual_url",
+          "visual_type"
+        ]
+      },
+      "default": [],
+      "description": "VISUAL CONTENT \u2014 individually cropped visuals (wafq, magic squares, seals, symbols, tables, diagrams, figures) extracted from the source screenshot and displayed inside this card together with the related Arabic text and Malayalam explanation. APPEND-ONLY: new visuals are appended, never overwritten. Deduplicated by visual_url \u2014 the same crop is never attached twice to the same card. The original full screenshot remains preserved in source_screenshot_url / supporting_sources as provenance."
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "source_type",
+    "knowledge_category",
+    "knowledge_text_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_canonical_key",
+      "fields": [
+        "canonical_key"
+      ]
+    },
+    {
+      "name": "idx_full_context_key",
+      "fields": [
+        "full_context_key"
+      ]
+    },
+    {
+      "name": "idx_rule_category",
+      "fields": [
+        "rule_category"
+      ]
+    },
+    {
+      "name": "idx_rule_entity",
+      "fields": [
+        "rule_entity"
+      ]
+    },
+    {
+      "name": "idx_rule_record_key",
+      "fields": [
+        "rule_record_key"
+      ]
+    },
+    {
+      "name": "idx_rule_category_entity",
+      "fields": [
+        "rule_category",
+        "rule_entity"
+      ]
+    },
+    {
+      "name": "idx_context_lookup",
+      "fields": [
+        "weekday",
+        "period",
+        "saat_number",
+        "planet"
+      ]
+    },
+    {
+      "name": "idx_saat_number",
+      "fields": [
+        "saat_number"
+      ]
+    },
+    {
+      "name": "idx_source_type",
+      "fields": [
+        "source_type"
+      ]
+    },
+    {
+      "name": "idx_source_type_weekday",
+      "fields": [
+        "source_type",
+        "weekday"
+      ]
+    },
+    {
+      "name": "idx_source_type_sahath",
+      "fields": [
+        "source_type",
+        "sahath_number"
+      ]
+    },
+    {
+      "name": "idx_source_type_planet",
+      "fields": [
+        "source_type",
+        "planet"
+      ]
+    },
+    {
+      "name": "idx_source_type_category",
+      "fields": [
+        "source_type",
+        "rule_category"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_is_verified",
+      "fields": [
+        "is_verified"
+      ]
+    },
+    {
+      "name": "idx_source_book_id",
+      "fields": [
+        "source_book_id"
+      ]
+    },
+    {
+      "name": "idx_source_entry_id",
+      "fields": [
+        "source_entry_id"
+      ]
+    },
+    {
+      "name": "idx_conflict_flags",
+      "fields": [
+        "conflict_flags"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

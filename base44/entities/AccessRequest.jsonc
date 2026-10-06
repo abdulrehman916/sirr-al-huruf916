@@ -1,0 +1,135 @@
+{
+  "name": "AccessRequest",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "description": "Unique request ID e.g. REQ-1234567890"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Base44 User ID (if logged in)"
+    },
+    "session_id": {
+      "type": "string",
+      "description": "Guest session ID (localStorage UUID) \u2014 used to find the user's existing Reading Code via AccessCode.device_id"
+    },
+    "existing_code": {
+      "type": "string",
+      "description": "The user's existing Reading Code string (if they already have one), passed from the client for admin reference"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full name of requester"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number of requester"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email of requester"
+    },
+    "page_path": {
+      "type": "string",
+      "description": "Page route requested e.g. /abjad"
+    },
+    "page_name": {
+      "type": "string",
+      "description": "Human-readable page name"
+    },
+    "feature_id": {
+      "type": "string",
+      "description": "Specific feature ID requested e.g. method_1, abjad_kabir. Null for page-level requests."
+    },
+    "plan_name": {
+      "type": "string",
+      "description": "Selected plan name e.g. '1 Month', 'Lifetime'"
+    },
+    "price": {
+      "type": "number",
+      "description": "Numeric price amount e.g. 25"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Currency code e.g. AED, USD"
+    },
+    "message": {
+      "type": "string",
+      "description": "User's message or reason for access"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "AWAITING_PAYMENT",
+        "PAYMENT_CONFIRMED",
+        "INFO_REQUESTED",
+        "CODE_UPDATED",
+        "APPROVED",
+        "REJECTED",
+        "CLOSED"
+      ],
+      "default": "PENDING",
+      "description": "Request status \u2014 PENDING=submitted, AWAITING_PAYMENT=admin sent payment instructions, PAYMENT_CONFIRMED=admin confirmed payment, INFO_REQUESTED=admin needs more info, CODE_UPDATED=admin updated reading code, APPROVED=completed, REJECTED=denied, CLOSED=request closed"
+    },
+    "approved_by": {
+      "type": "string",
+      "description": "Admin user ID who acted on request"
+    },
+    "approved_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of action"
+    },
+    "access_duration": {
+      "type": "string",
+      "enum": [
+        "1_MONTH",
+        "3_MONTHS",
+        "6_MONTHS",
+        "PERMANENT"
+      ],
+      "description": "Duration granted (set by owner on approval)"
+    },
+    "rejection_reason": {
+      "type": "string",
+      "description": "Reason for rejection (set by admin when rejecting)"
+    },
+    "requested_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of request"
+    }
+  },
+  "required": [
+    "request_id",
+    "page_path",
+    "page_name",
+    "status",
+    "requested_at"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

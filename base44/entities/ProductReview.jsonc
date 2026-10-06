@@ -1,0 +1,72 @@
+{
+  "name": "ProductReview",
+  "type": "object",
+  "properties": {
+    "review_id": {
+      "type": "string",
+      "description": "Unique review ID e.g. REV-000001"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "FK to Product.product_id"
+    },
+    "reviewer_name": {
+      "type": "string",
+      "description": "Display name of reviewer"
+    },
+    "rating": {
+      "type": "integer",
+      "description": "Rating from 1 to 5"
+    },
+    "title": {
+      "type": "string",
+      "description": "Review title/summary"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Full review text"
+    },
+    "is_approved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Admin must approve before review is publicly visible"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    }
+  },
+  "required": [
+    "review_id",
+    "product_id",
+    "reviewer_name",
+    "rating",
+    "comment",
+    "created_at"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "$or": [
+        {
+          "data.is_approved": true
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap&font-display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 222 47% 16%;
+    --primary-foreground: 45 80% 90%;
+    --secondary: 45 60% 52%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 45 70% 55%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
+    --ring: 222 47% 16%;
+    --chart-1: 45 70% 55%;
+    --chart-2: 222 47% 16%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+    --font-amiri: 'Noto Naskh Arabic', 'Amiri', serif;
+    --font-inter: 'Inter', sans-serif;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 45 20% 95%;
+    --card: 222 40% 12%;
+    --card-foreground: 45 20% 95%;
+    --popover: 222 40% 12%;
+    --popover-foreground: 45 20% 95%;
+    --primary: 45 60% 52%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 45 20% 95%;
+    --muted: 222 30% 16%;
+    --muted-foreground: 220 9% 60%;
+    --accent: 45 70% 55%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 45 60% 52%;
+    --chart-1: 45 70% 55%;
+    --chart-2: 222 47% 40%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 45 60% 52%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 30% 16%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 45 60% 52%;
+  }
+
+  /* Auto dark mode from system preference — same values as .dark */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 222 47% 8%;
+      --foreground: 45 20% 95%;
+      --card: 222 40% 12%;
+      --card-foreground: 45 20% 95%;
+      --popover: 222 40% 12%;
+      --popover-foreground: 45 20% 95%;
+      --primary: 45 60% 52%;
+      --primary-foreground: 222 47% 11%;
+      --secondary: 222 30% 20%;
+      --secondary-foreground: 45 20% 95%;
+      --muted: 222 30% 16%;
+      --muted-foreground: 220 9% 60%;
+      --accent: 45 70% 55%;
+      --accent-foreground: 222 47% 11%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 222 30% 20%;
+      --input: 222 30% 20%;
+      --ring: 45 60% 52%;
+    }
+  }
+}
+
+@layer base {
+  /* ── DYNAMIC VIEWPORT — KEYBOARD FIX — APK MATCH ── */
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+  }
+  #root {
+    position: relative;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1;
+    background-color: #020710 !important;
+  }
+
+  /* Scrollbar (platform-wide consistent styling) */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: rgba(5,13,26,0.8); }
+  ::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.25); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(212,175,55,0.50); }
+
+  /* Hide scrollbar utility (opt-in per page/component) */
+  .scrollbar-none { scrollbar-width: none; -ms-overflow-style: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  
+  /* ── RTL (Arabic) Support — Platform-level text direction only ── */
+  [dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+  }
+  [dir="rtl"] .font-inter {
+    direction: ltr;
+    text-align: left;
+  }
+  [dir="rtl"] input,
+  [dir="rtl"] textarea {
+    text-align: right;
+    direction: rtl;
+  }
+  [dir="rtl"] input[type="email"],
+  [dir="rtl"] input[type="search"] {
+    direction: ltr;
+    text-align: left;
+  }
+  [dir="rtl"] .ltr-preserve {
+    direction: ltr;
+    text-align: left;
+  }
+  /* Mirror chevron-based icons for RTL */
+  [dir="rtl"] .mirror-rtl {
+    transform: scaleX(-1);
+  }
+
+  /* ── Typography — Font rendering only (no layout rules) ── */
+  /* Arabic text: premium typography with optimal rendering */
+  .font-amiri {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.04em;
+    line-height: 2;
+    font-weight: 600;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1;
+  }
+
+  /* Mizaan page — improve legibility of generated Arabic words (spacing only, same font/text) */
+  .mizaan-page .font-amiri {
+    font-family: 'Noto Naskh Arabic', 'Amiri', 'Scheherazade New', serif;
+    letter-spacing: 0.06em;
+    word-spacing: 0.18em;
+    line-height: 2.2;
+    font-weight: 600;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1, "mkmk" 1, "mark" 1;
+  }
+
+  /* Hadim page — premium Arabic rendering for generated names (Hadim Name, Joined
+     Ceremonial, Final Grand Name, Kasem invocations). Uses Noto Naskh Arabic for
+     sharper display, adds mkmk/mark for proper diacritic stacking, and modest
+     word-spacing for readability. Letter-spacing kept minimal to preserve cursive
+     joining. Input fields excluded from line-height/word-spacing changes. */
+  .hadim-page .font-amiri {
+    font-family: 'Noto Naskh Arabic', 'Amiri', 'Scheherazade New', serif;
+    letter-spacing: 0.03em;
+    word-spacing: 0.10em;
+    line-height: 2.2;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1, "mkmk" 1, "mark" 1;
+  }
+  .hadim-page input.font-amiri,
+  .hadim-page textarea.font-amiri {
+    line-height: 1.6;
+    word-spacing: normal;
+  }
+
+  /* Large Arabic display text */
+  .font-amiri-display {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Section B Holy Names: Premium Mushaf-style Quranic Arabic typography */
+  .font-quranic {
+    font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4.5vw, 2.6rem);
+    letter-spacing: 0.08em;
+    word-spacing: 0.15em;
+    line-height: 2.8;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+    direction: rtl;
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+    margin: 0;
+    text-shadow: 0 0 24px rgba(212,175,55,0.35);
+  }
+
+  /* Quranic Arabic with harakat - preserve diacritics */
+  .font-quranic-harakat {
+    font-family: 'Noto Naskh Arabic', 'Scheherazade New', 'Amiri', serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    letter-spacing: 0;
+    word-spacing: 0.12em;
+    line-height: 3.2;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1, "mkmk" 1, "mark" 1;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+    direction: rtl;
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    margin: 0;
+    text-shadow: 0 0 28px rgba(212,175,55,0.40);
+  }
+
+  /* Enhanced English text readability */
+  .font-inter {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+  }
+
+  /* Malayalam text: premium typography for Astro Clock */
+  .font-malayalam {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    font-weight: 600;
+  }
+
+  /* Large Malayalam headings */
+  .font-malayalam-lg {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  /* Medium Malayalam text */
+  .font-malayalam-md {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.7;
+    font-weight: 600;
+  }
+
+  /* Small Malayalam text (minimum readable size) */
+  .font-malayalam-sm {
+    font-size: clamp(0.875rem, 1.8vw, 1rem);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  /* Text selection rules (typography only) */
+  .selectable {
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-touch-callout: default;
+  }
+  .font-amiri {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  /* Prevent inputs from causing zoom on iOS (font-size >= 16px) */
+  input, select, textarea {
+    font-size: max(16px, 1em);
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+
+
+
+
+  /* ── Motion preference (accessibility) ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ── AtmosphericBackground keyframes — defined once globally (used by AtmosphericBackground component) ── */
+@keyframes sh-twinkle {
+  0%,100% { opacity: var(--op, 0.15); transform: scale(1); }
+  50%     { opacity: calc(var(--op, 0.15) * 2.8 + 0.1); transform: scale(1.6); }
+}
+@keyframes sh-bloom {
+  0%,100% { opacity: 0.65; }
+  50%     { opacity: 1; }
+}
+@keyframes sh-drift-0 {
+  0%   { transform: translate(0px,   0px)  scale(1);    }
+  33%  { transform: translate(18px, -22px) scale(1.15); }
+  66%  { transform: translate(-12px,-38px) scale(0.90); }
+  100% { transform: translate(0px,   0px)  scale(1);    }
+}
+@keyframes sh-drift-1 {
+  0%   { transform: translate(0px,   0px)  scale(1);    }
+  40%  { transform: translate(-20px,-30px) scale(1.10); }
+  80%  { transform: translate(14px, -50px) scale(0.85); }
+  100% { transform: translate(0px,   0px)  scale(1);    }
+}
+@keyframes sh-drift-2 {
+  0%   { transform: translate(0px,  0px)   scale(1);    }
+  50%  { transform: translate(25px,-28px)  scale(1.20); }
+  100% { transform: translate(0px,  0px)   scale(1);    }
+}
+@keyframes sh-drift-3 {
+  0%   { transform: translate(0px,   0px)  scale(1);    }
+  30%  { transform: translate(-15px,-18px) scale(0.88); }
+  70%  { transform: translate(10px, -40px) scale(1.12); }
+  100% { transform: translate(0px,   0px)  scale(1);    }
+}
+/* ── SacredWheel AsmaNames orbital keyframes (used by SacredWheel component) ── */
+@keyframes sw-orbit {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes sw-orbit-counter {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+/* ── Global utility classes — used across pages and components ── */
+.card-dark {
+  background: linear-gradient(145deg, rgba(8,16,38,0.98) 0%, rgba(4,10,24,0.99) 100%);
+  border: 1px solid rgba(212,175,55,0.22);
+  border-radius: 1rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.55), inset 0 1px 0 rgba(212,175,55,0.08);
+}
+
+.card-gold {
+  background: linear-gradient(145deg, rgba(212,175,55,0.14) 0%, rgba(212,175,55,0.05) 100%);
+  border: 1px solid rgba(212,175,55,0.40);
+  border-radius: 1rem;
+  box-shadow: 0 0 28px rgba(212,175,55,0.18), inset 0 1px 0 rgba(212,175,55,0.15);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #f6d860 0%, #e0a820 50%, #c98a14 100%);
+  color: #0d1b2a;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 0 32px rgba(212,175,55,0.45);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.btn-gold:hover { opacity: 0.92; transform: scale(1.01); }
+.btn-gold:active { transform: scale(0.98); }
+.btn-gold:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+
+.text-gold {
+  color: #D4AF37 !important;
+}
+
+.border-gold {
+  border-color: rgba(212,175,55,0.55) !important;
+}
+
+.border-gold-dim {
+  border-color: rgba(212,175,55,0.30) !important;
+}
+
+.text-gold-dim {
+  color: rgba(212,175,55,0.70) !important;
+}
+
+/* ── Astro Clock Arabic Display — GLOBAL UI LANGUAGE RULE ── */
+/* Arabic names: 25-35% larger, visually prominent, easy to read */
+.astro-arabic {
+  font-family: 'Noto Naskh Arabic', 'Amiri', 'Scheherazade New', serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  direction: rtl;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Malayalam transliteration: directly below Arabic, slightly smaller */
+.astro-arabic-ml {
+  font-size: clamp(0.875rem, 1.5vw, 1.0625rem);
+  color: rgba(212,175,55,0.60);
+  text-align: center;
+  direction: ltr;
+  margin-top: 0.15rem;
+  line-height: 1.5;
+  font-weight: 500;
+}

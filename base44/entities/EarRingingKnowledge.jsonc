@@ -1,0 +1,163 @@
+{
+  "name": "EarRingingKnowledge",
+  "type": "object",
+  "description": "Canonical store for Kulak \u00c7\u0131nlamas\u0131 (ear ringing) interpretations organized by weekday and day/night period. ISOLATED \u2014 only classifyAndIngestScreenshot writes to this entity. Merge rules: never overwrite, never delete, preserve every source, remove exact duplicates only.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: ERK-SCR-<timestamp>-<rand>."
+    },
+    "weekday": {
+      "type": "integer",
+      "description": "0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday."
+    },
+    "weekday_name_tr": {
+      "type": "string",
+      "description": "Turkish weekday name (e.g., 'Pazar g\u00fcn\u00fc', 'Pazartesi gecesi')"
+    },
+    "period": {
+      "type": "string",
+      "enum": [
+        "day",
+        "night"
+      ],
+      "description": "Day or night period."
+    },
+    "interpretation_tr": {
+      "type": "string",
+      "description": "Original Turkish interpretation verbatim."
+    },
+    "interpretation_en": {
+      "type": "string",
+      "description": "English translation."
+    },
+    "interpretation_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "is_positive": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if positive omen (joy, wealth, good news), false if negative."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of weekday|period|interpretation_en for dedup."
+    },
+    "full_context_key": {
+      "type": "string",
+      "description": "Format: 'weekday|period'. Two records with same key are merged."
+    },
+    "source_book_title": {
+      "type": "string"
+    },
+    "source_page_number": {
+      "type": "string"
+    },
+    "source_screenshot_url": {
+      "type": "string"
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "weekday",
+    "period",
+    "interpretation_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_full_context_key",
+      "fields": [
+        "full_context_key"
+      ]
+    },
+    {
+      "name": "idx_weekday_period",
+      "fields": [
+        "weekday",
+        "period"
+      ]
+    },
+    {
+      "name": "idx_weekday",
+      "fields": [
+        "weekday"
+      ]
+    },
+    {
+      "name": "idx_is_positive",
+      "fields": [
+        "is_positive"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_screenshot_url",
+      "fields": [
+        "source_screenshot_url"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

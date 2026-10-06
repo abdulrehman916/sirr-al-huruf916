@@ -1,0 +1,235 @@
+{
+  "name": "LibraryBookIndex",
+  "type": "object",
+  "description": "TWO-STAGE PIPELINE \u2014 Stage 1 index. A complete, fast classification index of EVERY book in the Master PDF Library (which already mirrors Google Drive live-index and OneDrive imports). Each book is classified into one or more modules (astrology, holy_names, wafq, khawass, mujarrabat, abjad, nine_mizan, general_esoteric) by sampling a few OCR pages + title/author and asking the LLM. NO knowledge cards are populated in Stage 1 \u2014 this is purely a catalog so Stage 2 can process ONLY the books relevant to a given module without missing any. One record per book. METADATA CAPTURED per book (no full OCR / no knowledge extraction during indexing): file name (book_title), folder (folder_path), author, table of contents (headings detected on first pages), first 2-3 pages summary, important keywords, module classification, confidence score. Append-only metadata: re-classification updates modules + metadata in place (the index is metadata, not scholarly content). FREEZE: once Stage 1 reaches 100% (every book classified), index_frozen=true is set on all records \u2014 the index becomes immutable and Stage 2 (extractAstrologyFromIndex) is the ONLY function allowed to read it for extraction. OWNER/ADMIN ONLY.",
+  "properties": {
+    "index_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: LBI-<source>-<source_book_id>. Never changes. One per book."
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "master_library",
+        "google_drive",
+        "onedrive"
+      ],
+      "default": "master_library",
+      "description": "Where the book came from. master_library covers all MasterPdfBook records (including those imported from Google Drive live-index and OneDrive). google_drive / onedrive reserved for books detected on cloud but not yet imported into the Master Library."
+    },
+    "source_book_id": {
+      "type": "string",
+      "description": "FK to the source book. For master_library: MasterPdfBook.master_book_id. For google_drive: the Drive file ID. For onedrive: the OneDrive file ID."
+    },
+    "book_title": {
+      "type": "string",
+      "default": "",
+      "description": "File name / book title as imported. Captured at index time (mirrors MasterPdfBook.book_title)."
+    },
+    "author": {
+      "type": "string",
+      "default": "",
+      "description": "Author as printed / as stored in MasterPdfBook.author."
+    },
+    "folder_path": {
+      "type": "string",
+      "default": "",
+      "description": "Folder / source location of the book. Derived from MasterPdfBook: onedrive_file_path directory portion, google_drive_parent_id, or import_source label. Helps the Owner locate the book in its original cloud/local folder."
+    },
+    "import_source": {
+      "type": "string",
+      "default": "",
+      "description": "Denormalized MasterPdfBook.import_source (upload, googledrive, onedrive, ...)."
+    },
+    "combined_total_pages": {
+      "type": "integer",
+      "default": 0
+    },
+    "table_of_contents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Chapter / section heading detected on the sampled first pages, verbatim."
+          },
+          "page_number": {
+            "type": "integer",
+            "default": 0,
+            "description": "Page number where the heading appears (from the sampled pages). 0 if unknown."
+          }
+        },
+        "required": [
+          "title"
+        ]
+      },
+      "default": [],
+      "description": "Table of Contents \u2014 chapter/section headings detected on the first 2-3 sampled pages. Captured verbatim during indexing (no full-book scan). Empty if the first pages contain no detectable headings."
+    },
+    "first_pages_summary": {
+      "type": "string",
+      "default": "",
+      "description": "Concatenated text of the first 2-3 OCR pages (capped ~2000 chars), captured during indexing so Stage 2 and the Owner can preview the book's opening without re-reading the PDF. Not full OCR \u2014 only the opening pages."
+    },
+    "important_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Important keywords / topics detected on the first pages (Arabic + English terms). Extracted by the LLM during classification. Helps fast module filtering and search."
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "astrology",
+          "holy_names",
+          "wafq",
+          "khawass",
+          "mujarrabat",
+          "abjad",
+          "nine_mizan",
+          "general_esoteric"
+        ]
+      },
+      "default": [],
+      "description": "Modules this book contains content for. A book may belong to MULTIPLE modules. Empty array if the sampled text shows no relevant content."
+    },
+    "module_confidence": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Per-module confidence 0-1 from the LLM classification (e.g. { astrology: 0.92, holy_names: 0.6 })."
+    },
+    "classification_summary": {
+      "type": "string",
+      "default": "",
+      "description": "1-2 sentence summary of what the book contains, from the LLM."
+    },
+    "classification_basis": {
+      "type": "string",
+      "default": "",
+      "description": "Which pages were sampled for classification (e.g. 'Sampled pages: 1,2,3,50,100,150')."
+    },
+    "classification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "classified",
+        "failed",
+        "not_applicable"
+      ],
+      "default": "pending",
+      "description": "Classification status. 'pending' = not yet classified. 'classified' = LLM classification done. 'failed' = LLM call failed. 'not_applicable' = book has no OCR pages to sample."
+    },
+    "indexed_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of classification."
+    },
+    "index_frozen": {
+      "type": "boolean",
+      "default": false,
+      "description": "FREEZE FLAG. Set to true once Stage 1 reaches 100% (every book classified). Once frozen, the index is immutable \u2014 buildLibraryIndex becomes a no-op and only extractAstrologyFromIndex (Stage 2) may read it. Unfrozen only by an explicit 'reclassify' mode."
+    },
+    "astrology_extraction_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_progress",
+        "completed",
+        "skipped",
+        "failed"
+      ],
+      "default": "pending",
+      "description": "STAGE 2 tracking \u2014 only for books where modules includes 'astrology'. 'pending' = waiting for Stage 2 extraction. 'in_progress' = Stage 2 is extracting astrology passages. 'completed' = all pages processed. 'skipped' = book is not an astrology book (modules does not include 'astrology'). 'failed' = extraction error."
+    },
+    "astrology_pages_processed": {
+      "type": "integer",
+      "default": 0,
+      "description": "Stage 2: last page number processed for this book (resumability)."
+    }
+  },
+  "required": [
+    "index_id",
+    "source",
+    "source_book_id",
+    "classification_status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_index_id",
+      "fields": [
+        "index_id"
+      ]
+    },
+    {
+      "name": "idx_source_book_id",
+      "fields": [
+        "source_book_id"
+      ]
+    },
+    {
+      "name": "idx_source",
+      "fields": [
+        "source"
+      ]
+    },
+    {
+      "name": "idx_classification_status",
+      "fields": [
+        "classification_status"
+      ]
+    },
+    {
+      "name": "idx_astrology_extraction_status",
+      "fields": [
+        "astrology_extraction_status"
+      ]
+    },
+    {
+      "name": "idx_modules",
+      "fields": [
+        "modules"
+      ]
+    },
+    {
+      "name": "idx_index_frozen",
+      "fields": [
+        "index_frozen"
+      ]
+    },
+    {
+      "name": "idx_classification_status_frozen",
+      "fields": [
+        "classification_status",
+        "index_frozen"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

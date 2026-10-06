@@ -1,0 +1,170 @@
+{
+  "name": "SupportConversation",
+  "type": "object",
+  "properties": {
+    "conversation_id": {
+      "type": "string",
+      "description": "Unique conversation ID e.g. CONV-000001"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Base44 User ID (null for guest users)"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "User display name"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User email address"
+    },
+    "user_session_id": {
+      "type": "string",
+      "description": "Guest session ID for non-authenticated users"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Conversation subject/topic"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Bug Report",
+        "Feature Request",
+        "Content Correction",
+        "Access Problem",
+        "General Question",
+        "Technical Support",
+        "Billing Question"
+      ],
+      "description": "Support category"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "IN_PROGRESS",
+        "WAITING_FOR_CUSTOMER",
+        "RESOLVED",
+        "CLOSED"
+      ],
+      "default": "OPEN",
+      "description": "Conversation status"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "NORMAL",
+        "HIGH",
+        "URGENT"
+      ],
+      "default": "NORMAL",
+      "description": "Priority level"
+    },
+    "assigned_to": {
+      "type": "string",
+      "description": "Admin user ID assigned to this conversation"
+    },
+    "assigned_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of assignment"
+    },
+    "last_message_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of last message"
+    },
+    "last_message_from": {
+      "type": "string",
+      "enum": [
+        "CUSTOMER",
+        "ADMIN"
+      ],
+      "description": "Who sent the last message"
+    },
+    "unread_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of unread messages for admin"
+    },
+    "customer_unread_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of unread messages for customer"
+    },
+    "message_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total messages in conversation"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for categorization"
+    },
+    "resolved_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when resolved"
+    },
+    "resolved_by": {
+      "type": "string",
+      "description": "Admin user ID who resolved"
+    },
+    "closed_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when closed"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of creation"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Internal admin notes"
+    }
+  },
+  "required": [
+    "conversation_id",
+    "subject",
+    "category",
+    "status",
+    "created_at"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "$or": [
+        {
+          "user_id": "{{user.id}}"
+        },
+        {
+          "user_session_id": "{{session_id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "$or": [
+        {
+          "user_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

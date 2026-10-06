@@ -1,0 +1,100 @@
+{
+  "name": "ScholarlyProvenance",
+  "type": "object",
+  "description": "OWNER-ONLY private provenance store \u2014 the permanent home for the original source/provenance fields (PDF URLs, file IDs, cloud paths, scan image URLs, OCR metadata, internal IDs, download URLs) that were REMOVED from the public scholarly entities per the Provenance Privacy Law. Public entities never contain these fields; their values live here, linked by source_entity + record_id + field_path. COMPLETELY OWNER-ONLY: entity RLS is admin-only AND every backend function that reads/writes here verifies the caller is the Owner (is_owner === true or OWNER_EMAIL) before serving. Public modules, admins, moderators, guests, and API consumers can NEVER read this entity. This store exists ONLY so the Owner can trace any public scholarly card back to its exact original source. The public face of the app obtains ONLY scholarly content + citation (book title / author / volume / edition / page number).",
+  "properties": {
+    "provenance_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: SP-<source_entity>-<record_id>-<field_path_slug>. Never changes."
+    },
+    "source_entity": {
+      "type": "string",
+      "description": "Which public entity this provenance value was removed from. Known values: HolyNameImportedSection, HolyOnePDFName, HolyNameKnowledge, HolyNameEsotericKnowledge, HolyNameTranscriptionCache, SirrManuscriptEntry, SirrManuscriptBook, ManuscriptEntry, ManuscriptBook, AstroClockKnowledge, EntityKnowledge."
+    },
+    "record_id": {
+      "type": "string",
+      "description": "The id of the public entity record this provenance belongs to. FK back to the public record."
+    },
+    "field_path": {
+      "type": "string",
+      "description": "Dotted path to the provenance field on the public record (e.g. source_pdf_url, source_pdf_file, images, invocations.3.url, pdf_parts.1.file_url, source_screenshot_url, onedrive_file_id)."
+    },
+    "field_value": {
+      "type": "string",
+      "default": "",
+      "description": "The original private value (URL / file ID / cloud path / scan URL / OCR text / internal ID). For array/object values, stored as a JSON string. NEVER exposed to any non-Owner."
+    },
+    "book_title": {
+      "type": "string",
+      "default": "",
+      "description": "Denormalized citation book title for Owner reference when browsing provenance in the Owner panel."
+    },
+    "backed_up_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this provenance value was backed up / migrated from the public entity into this private store."
+    }
+  },
+  "required": [
+    "provenance_id",
+    "source_entity",
+    "record_id",
+    "field_path"
+  ],
+  "indexes": [
+    {
+      "name": "idx_provenance_id",
+      "fields": [
+        "provenance_id"
+      ]
+    },
+    {
+      "name": "idx_source_entity",
+      "fields": [
+        "source_entity"
+      ]
+    },
+    {
+      "name": "idx_record_id",
+      "fields": [
+        "record_id"
+      ]
+    },
+    {
+      "name": "idx_entity_record",
+      "fields": [
+        "source_entity",
+        "record_id"
+      ]
+    },
+    {
+      "name": "idx_entity_record_field",
+      "fields": [
+        "source_entity",
+        "record_id",
+        "field_path"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

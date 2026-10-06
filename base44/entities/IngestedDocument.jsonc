@@ -1,0 +1,317 @@
+{
+  "name": "IngestedDocument",
+  "type": "object",
+  "description": "Document Context Layer \u2014 stores metadata, OCR context, chapter structure, entity page-ranges, relationship graph references, and processing summary for multi-page manuscript uploads treated as ONE logical document. ISOLATED enhancement layer \u2014 does NOT modify EntityKnowledge, AstroClockKnowledge, or unifiedIngestKnowledge. Created exclusively by the documentContextIngest backend function. Supports failure recovery via last_processed_page + status fields.",
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "PERMANENT unique identifier. Format: DOC-<timestamp>-<rand>. One per upload session. Shared across all pages in the document."
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "description": "Detected or assigned document title."
+    },
+    "detected_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Languages detected in OCR text: 'ar', 'ml', 'en', etc."
+    },
+    "total_pages": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total number of pages in this document upload."
+    },
+    "source_label": {
+      "type": "string",
+      "default": "",
+      "description": "User-provided source label for the upload."
+    },
+    "upload_timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when the document was first uploaded."
+    },
+    "processing_started_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when processing first started. Used to calculate total processing duration across resume batches."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "processing",
+        "completed",
+        "failed",
+        "partial"
+      ],
+      "default": "processing",
+      "description": "Document processing status. 'processing' = in progress (or paused for resume). 'completed' = all pages processed + post-processing done. 'failed' = fatal error. 'partial' = some pages failed but processing completed."
+    },
+    "last_processed_page": {
+      "type": "integer",
+      "default": 0,
+      "description": "Index of the last successfully processed page (0-based). Used for failure recovery \u2014 resume from last_processed_page."
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer"
+          },
+          "page_end": {
+            "type": "integer"
+          },
+          "level": {
+            "type": "integer",
+            "description": "1=chapter/bab, 2=section/fasl, 3=subsection"
+          }
+        }
+      },
+      "default": [],
+      "description": "Detected chapter/section headings with page ranges."
+    },
+    "detected_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entity_type": {
+            "type": "string"
+          },
+          "entity_key": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer",
+            "description": "First page this entity appears on"
+          },
+          "page_end": {
+            "type": "integer",
+            "description": "Last page this entity appears on (same as page_start if single page)"
+          }
+        }
+      },
+      "default": [],
+      "description": "Entities detected across the document with page ranges. Entities spanning multiple pages have page_start != page_end."
+    },
+    "page_ranges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entity_type": {
+            "type": "string"
+          },
+          "entity_key": {
+            "type": "string"
+          },
+          "page_start": {
+            "type": "integer"
+          },
+          "page_end": {
+            "type": "integer"
+          }
+        }
+      },
+      "default": [],
+      "description": "Alias for detected_entities. Every knowledge record that spans multiple pages has page_start and page_end here."
+    },
+    "page_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page_number": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "done",
+              "rejected",
+              "duplicate",
+              "error"
+            ]
+          },
+          "records_created": {
+            "type": "integer",
+            "default": 0
+          },
+          "records_merged": {
+            "type": "integer",
+            "default": 0
+          },
+          "entries_found": {
+            "type": "integer",
+            "default": 0
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            },
+            "default": []
+          },
+          "error": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "default": [],
+      "description": "Per-page entity extraction results from unifiedIngestKnowledge. Accumulated across resume batches."
+    },
+    "page_ocr_summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page_number": {
+            "type": "integer"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "OCR confidence 0-100"
+          },
+          "starts_mid_sentence": {
+            "type": "boolean",
+            "description": "Page continues from previous page"
+          },
+          "ends_mid_sentence": {
+            "type": "boolean",
+            "description": "Page continues to next page"
+          },
+          "is_continuation": {
+            "type": "boolean",
+            "description": "Detected as paragraph continuation from previous page"
+          },
+          "corrected": {
+            "type": "boolean",
+            "description": "OCR correction was applied"
+          },
+          "original_text_snippet": {
+            "type": "string",
+            "description": "First 200 chars of original OCR text"
+          },
+          "corrected_text_snippet": {
+            "type": "string",
+            "description": "First 200 chars of context-corrected text"
+          },
+          "headings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "level": {
+                  "type": "number"
+                }
+              }
+            },
+            "default": []
+          }
+        }
+      },
+      "default": [],
+      "description": "Per-page OCR summaries with context reconstruction metadata. Stores both original_text and context_corrected_text snippets. Accumulated across resume batches."
+    },
+    "knowledge_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "IDs of all EntityKnowledge/AstroClockKnowledge records created or merged from this document."
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Final document summary: { document_title, detected_languages, number_of_pages, detected_entities, detected_chapters, knowledge_records_created, knowledge_records_updated, duplicates_merged, ocr_confidence_average, processing_duration_ms, warnings, relationships_created, pages_processed, pages_rejected, pages_errored, pages_corrected }"
+    },
+    "ocr_stats": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "OCR statistics: { average_confidence, min_confidence, max_confidence, pages_corrected }"
+    },
+    "processing_duration_ms": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total processing duration in milliseconds (from processing_started_at to completion)."
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Processing warnings (low confidence, failed pages, corrections applied, etc.)"
+    }
+  },
+  "required": [
+    "document_id",
+    "total_pages",
+    "status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_document_id",
+      "fields": [
+        "document_id"
+      ]
+    },
+    {
+      "name": "idx_status",
+      "fields": [
+        "status"
+      ]
+    },
+    {
+      "name": "idx_source_label",
+      "fields": [
+        "source_label"
+      ]
+    },
+    {
+      "name": "idx_upload_timestamp",
+      "fields": [
+        "upload_timestamp"
+      ]
+    },
+    {
+      "name": "idx_last_processed_page",
+      "fields": [
+        "last_processed_page"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

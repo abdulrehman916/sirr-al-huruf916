@@ -1,0 +1,86 @@
+{
+  "name": "ShopAnalyticsEvent",
+  "type": "object",
+  "properties": {
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "view",
+        "detail_view",
+        "buy_click",
+        "amazon_click",
+        "noon_click",
+        "flipkart_click",
+        "custom_click",
+        "whatsapp_click",
+        "email_click",
+        "share_click",
+        "wishlist_add",
+        "search",
+        "no_result_search",
+        "category_filter"
+      ],
+      "description": "Type of anonymous shop interaction event"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "Product ID if the event is product-specific (empty for search/filter events)"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Product display name (denormalized for reporting without joins)"
+    },
+    "marketplace": {
+      "type": "string",
+      "description": "Marketplace platform name for click events (amazon, noon, flipkart, custom, etc.)"
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Search keyword for search/no_result_search events"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category name for category_filter events"
+    },
+    "country": {
+      "type": "string",
+      "description": "Anonymous country code derived from request headers (no personal data)"
+    },
+    "device_type": {
+      "type": "string",
+      "enum": [
+        "mobile",
+        "tablet",
+        "desktop",
+        "unknown"
+      ],
+      "default": "unknown",
+      "description": "Anonymous device type derived from user-agent (no personal data)"
+    },
+    "session_id": {
+      "type": "string",
+      "description": "Anonymous session identifier (localStorage UUID, no personal data)"
+    }
+  },
+  "required": [
+    "event_type"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

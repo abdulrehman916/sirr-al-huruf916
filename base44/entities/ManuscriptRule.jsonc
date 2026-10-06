@@ -1,0 +1,102 @@
+{
+  "name": "ManuscriptRule",
+  "type": "object",
+  "properties": {
+    "rule_id": {
+      "type": "string",
+      "description": "Unique rule identifier e.g. havass_hour_001"
+    },
+    "manuscript_id": {
+      "type": "string",
+      "description": "FK to ManuscriptLibrary.book_id"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Denormalized book name for display"
+    },
+    "author": {
+      "type": "string",
+      "description": "Denormalized author for display"
+    },
+    "page_number": {
+      "type": "integer",
+      "description": "Exact page number in the source PDF"
+    },
+    "chapter": {
+      "type": "string",
+      "description": "Chapter or section name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "PLANETARY_HOURS",
+        "LUNAR_MANSIONS",
+        "ZODIAC",
+        "PLANETS",
+        "FRIENDSHIP_RULES",
+        "INCENSE_RULES",
+        "LETTER_RULES",
+        "TIMING_RULES",
+        "DAY_RULERS",
+        "SAAD_NAHS",
+        "SPIRITUAL_WORKS",
+        "PROTECTION_WORKS",
+        "LOVE_WORKS",
+        "WEALTH_WORKS",
+        "TRAVEL_WORKS",
+        "ELEMENT_RULES",
+        "COSMOLOGY",
+        "OTHER"
+      ],
+      "description": "Rule category"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "More specific subcategory"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "critical",
+        "important",
+        "minor"
+      ],
+      "description": "Manuscript-defined importance of this rule for its ritual purpose. critical = failure produces Not Recommended or Forbidden; important = failure significantly affects verdict; minor = failure still allows Good. The manuscript is the SOLE authority for this weight. If the manuscript does not specify a priority for this rule, the field is absent (null) and the engine treats the rule as informational \u2014 it is displayed to the user with its reason and source but NEVER affects the verdict. NO default value. NO engine fallback. NO assumption by rule type, field, or category. The engine reads exactly what the manuscript wrote \u2014 nothing more."
+    },
+    "original_text": {
+      "type": "string",
+      "description": "Verbatim original text from the manuscript"
+    },
+    "rule_summary": {
+      "type": "string",
+      "description": "Concise English summary of the rule"
+    },
+    "rule_summary_ml": {
+      "type": "string",
+      "description": "Malayalam summary"
+    },
+    "data_json": {
+      "type": "string",
+      "description": "Structured rule data as JSON string. May include a 'priority' field (critical/important/minor) that is set by the manuscript and overrides the top-level priority for this rule. This is manuscript-defined data \u2014 not an engine assumption."
+    },
+    "conflict_with": {
+      "type": "string",
+      "description": "rule_id of conflicting rule from another manuscript, if any"
+    },
+    "conflict_note": {
+      "type": "string",
+      "description": "Description of the conflict"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Has this rule been manually verified?"
+    }
+  },
+  "required": [
+    "rule_id",
+    "manuscript_id",
+    "category",
+    "rule_summary"
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "name": "MasterPdfBook",
+  "type": "object",
+  "description": "MASTER PDF LIBRARY \u2014 Owner-only permanent research repository for the Sirr al-Huruf project. Extends the SIRR module's proven append-only architecture (multi-part PDF storage, OCR, verification, audit, backup) into a central, Owner-confidential library. COMPLETELY OWNER-ONLY: entity RLS is admin-only (blocks public/low-role API access); every backend function that reads/writes this entity additionally verifies the caller is the Owner (is_owner === true or OWNER_EMAIL) before serving data. No Admin, Moderator, Editor, Contributor, or API may access Master Library content. SEPARATE from SirrManuscriptBook (the public SIRR archive) because SirrManuscriptBook is public-read for the SIRR page and cannot hold Owner-confidential content. This entity reuses the same architecture (pdf_parts multi-part permanent storage, append-only, verification_report, processing_lock, backup tracking, SirrAuditLog integration) so future integration with Sections A/B/C requires no redesign. IMPORT SOURCES (extensible): upload, multi_upload, folder, zip, onedrive, googledrive, adobe, future. Adobe Document Cloud provenance stored in adobe_* fields; OneDrive in onedrive_* fields; Google Drive in google_drive_* fields (the Google Drive file ID is the permanent link used by the Live Cloud Auto-Sync to detect add/update/rename/move/delete \u2014 the library mirrors the live state of Google Drive; no PDF binary is copied, only the live index). APPEND-ONLY: original OCR is never overwritten; every modification creates a version_history entry; nothing is ever deleted EXCEPT a pure live-index book (google_drive_file_id set, import_source='googledrive', total_pages_indexed=0) whose source file was removed from Google Drive \u2014 such an index record is deleted to avoid orphan/stale records (no knowledge had been extracted from it). PERMANENT: every pdf_part's file_url, file_hash, file_size stored at upload time. FUTURE: in Phase 2+ this library becomes the primary research engine enriching Sections A, B, and C.",
+  "properties": {
+    "master_book_id": {
+      "type": "string",
+      "description": "Permanent unique identifier for this Master Library book. Format: MPB-<timestamp>-<rand>. Never changes. Used as FK in MasterPdfPage.master_book_id."
+    },
+    "library_type": {
+      "type": "string",
+      "enum": [
+        "master_library"
+      ],
+      "default": "master_library",
+      "description": "Always 'master_library' \u2014 distinguishes this entity from SirrManuscriptBook (sirr_archive). Single-value enum for clarity and future-proofing."
+    },
+    "import_source": {
+      "type": "string",
+      "enum": [
+        "upload",
+        "multi_upload",
+        "folder",
+        "zip",
+        "onedrive",
+        "googledrive",
+        "adobe",
+        "future"
+      ],
+      "default": "upload",
+      "description": "How this book entered the Master Library. Extensible \u2014 new cloud providers add new enum values without redesign. 'upload' = single local PDF; 'multi_upload' = multiple local PDFs into one book; 'folder' = folder upload; 'zip' = ZIP archive; 'onedrive' = Microsoft OneDrive; 'googledrive' = Google Drive (live-index linked by google_drive_file_id); 'adobe' = Adobe Document Cloud; 'future' = reserved for future cloud providers."
+    },
+    "malayalam_book_name": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam display name for the book. Editable by the Owner."
+    },
+    "book_title": {
+      "type": "string",
+      "description": "Original book title exactly as imported (original language preserved \u2014 never translated). Extracted from the PDF title page. For Google Drive live-index books, mirrors the Drive file name (updated on rename)."
+    },
+    "book_title_ar": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic title if applicable. Preserved verbatim."
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "",
+      "description": "Subtitle as printed on the title page. Empty if the PDF has no subtitle."
+    },
+    "author": {
+      "type": "string",
+      "default": "",
+      "description": "Author or scribe as printed."
+    },
+    "translator": {
+      "type": "string",
+      "default": "",
+      "description": "Translator if the work is a translation. Empty if not a translation."
+    },
+    "publisher": {
+      "type": "string",
+      "default": "",
+      "description": "Publisher as printed."
+    },
+    "edition": {
+      "type": "string",
+      "default": "",
+      "description": "Edition as printed (e.g. '1st Edition', 'Cairo 1932')."
+    },
+    "volume": {
+      "type": "string",
+      "default": "",
+      "description": "Volume if part of a multi-volume work."
+    },
+    "language": {
+      "type": "string",
+      "default": "",
+      "description": "Primary language(s) of the manuscript (ar, en, ml, mixed, etc.)."
+    },
+    "publication_year": {
+      "type": "string",
+      "default": "",
+      "description": "Year of publication or printing as printed."
+    },
+    "isbn": {
+      "type": "string",
+      "default": "",
+      "description": "ISBN if printed and available. Empty for manuscripts/rare books without ISBN."
+    },
+    "source_label": {
+      "type": "string",
+      "default": "",
+      "description": "Free-text source label (e.g. 'Adobe Document Cloud', 'Owner private collection', 'Rare book scan')."
+    },
+    "file_size": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total size of all PDF parts in bytes. Sum of pdf_parts[].file_size."
+    },
+    "owner_notes": {
+      "type": "string",
+      "default": "",
+      "description": "Private Owner notes about this book. Never shown to non-owners."
+    },
+    "total_pages": {
+      "type": "integer",
+      "default": 0,
+      "description": "Page count of the CURRENT part being processed (informational). The true combined total is combined_total_pages."
+    },
+    "combined_total_pages": {
+      "type": "integer",
+      "default": 0,
+      "description": "TRUE combined page count across ALL uploaded PDF parts. Sum of every pdf_parts[].page_count."
+    },
+    "last_processed_page": {
+      "type": "integer",
+      "default": 0,
+      "description": "Last page successfully processed WITHIN the current part (1-based)."
+    },
+    "current_part_index": {
+      "type": "integer",
+      "default": 0,
+      "description": "Index (0-based) into pdf_parts of the part currently being processed."
+    },
+    "pdf_parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "part_id": {
+            "type": "string",
+            "description": "PERMANENT unique identifier for this PDF part. Format: MPBP-<master_book_id>-<part_number>."
+          },
+          "part_number": {
+            "type": "integer",
+            "description": "1-based part sequence number (Part 1, Part 2, ...). Preserves upload order permanently."
+          },
+          "file_url": {
+            "type": "string",
+            "description": "PERMANENT URL to this PDF part. Saved immediately at upload time."
+          },
+          "file_name": {
+            "type": "string",
+            "description": "Original file name of this PDF part."
+          },
+          "file_hash": {
+            "type": "string",
+            "default": "",
+            "description": "SHA-256 checksum of the original PDF file bytes, computed at upload time. Corruption-detection baseline."
+          },
+          "file_size": {
+            "type": "integer",
+            "default": 0,
+            "description": "Size of this PDF part in bytes."
+          },
+          "page_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Total page count of this PDF part."
+          },
+          "uploaded_at": {
+            "type": "string",
+            "description": "ISO 8601 timestamp when this part was uploaded."
+          },
+          "processed": {
+            "type": "boolean",
+            "default": false,
+            "description": "True when this part is fully processed (all pages indexed)."
+          },
+          "extraction_status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "processing",
+              "completed",
+              "failed"
+            ],
+            "default": "pending"
+          }
+        },
+        "required": [
+          "part_id",
+          "part_number",
+          "file_url",
+          "file_name"
+        ]
+      },
+      "default": [],
+      "description": "ORDERED LIST of every uploaded PDF part for this book. The background engine processes parts in order. Every part's file_url, part_id, file_hash, file_size permanently stored at upload time. SOLE source of truth for what to process \u2014 never chat history. Empty for Google Drive live-index books (no binary is copied; indexing fetches via the Drive API on demand)."
+    },
+    "upload_date": {
+      "type": "string",
+      "description": "ISO 8601 date when this book was first uploaded into the Master Library."
+    },
+    "import_date": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent import/ingest action on this book."
+    },
+    "extraction_status": {
+      "type": "string",
+      "enum": [
+        "uploading",
+        "pending",
+        "processing",
+        "pending_verification",
+        "completed",
+        "failed",
+        "partial",
+        "paused",
+        "cloud_deleted"
+      ],
+      "default": "pending",
+      "description": "Book-level content extraction status. 'uploading' = Owner still uploading parts (engine ignores). 'pending' = all parts uploaded, waiting for processor. 'processing' = a part is being extracted. 'pending_verification' = ALL parts processed, awaiting Owner verification. 'completed' = Owner-verified. 'partial' = interrupted, resumable. 'paused' = paused by Owner. 'cloud_deleted' = the cloud source file was removed (Google Drive trash/permanent delete); for a pure live-index book with no indexed pages the record is deleted, otherwise it is preserved (append-only) and flagged so it is never stale."
+    },
+    "extraction_error": {
+      "type": "string",
+      "default": "",
+      "description": "Error message if extraction_status is failed or partial."
+    },
+    "processing_lock_until": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp; while in the future, another background run must NOT process this book. Auto-expires so a crashed run never strands the book."
+    },
+    "owner_review_status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "approved",
+        "rejected",
+        "needs_revision"
+      ],
+      "default": "pending_review",
+      "description": "Owner Review gate. Nothing becomes permanent until the Owner approves. 'pending_review' = extracted, awaiting Owner. 'approved' = Owner verified. 'rejected' = Owner rejected. 'needs_revision' = Owner requested changes."
+    },
+    "reviewed_by": {
+      "type": "string",
+      "default": "",
+      "description": "Owner user ID who last reviewed this book."
+    },
+    "reviewed_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent Owner review action."
+    },
+    "cross_verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "verified",
+        "conflicting"
+      ],
+      "default": "unverified",
+      "description": "Cross-PDF verification result. 'verified' = multiple authoritative books agree. 'conflicting' = contradictions detected (every opinion kept separately). 'unverified' = not yet cross-checked against other Master Library books."
+    },
+    "supporting_sources_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "DUPLICATE CONTROL: how many independent Master Library sources support this book's content. Displayed as 'Supported by X independent sources'. 1 = only this source. Incremented when cross-verification finds agreement."
+    },
+    "verification_report": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "PERMANENT full verification report from the most recent verification run. Contains missing_pages, ocr_issues, min_ocr_confidence, avg_ocr_confidence, duplicate_content, quality_flags, final_result, failure_reasons."
+    },
+    "last_verified_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent verification run."
+    },
+    "total_pages_indexed": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total number of MasterPdfPage records indexed from this book (across all parts). Used by Live Cloud Auto-Sync to decide whether a deleted Google Drive source can be hard-removed (0 indexed pages) or must be preserved (append-only) and marked cloud_deleted."
+    },
+    "version_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version_id": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "description": "upload, metadata_edit, review, verify, import, cloud_sync, append_ocr, classification"
+          },
+          "user_id": {
+            "type": "string",
+            "default": ""
+          },
+          "user_name": {
+            "type": "string",
+            "default": ""
+          },
+          "change_summary": {
+            "type": "string",
+            "default": ""
+          },
+          "previous_value": {
+            "type": "string",
+            "default": ""
+          },
+          "new_value": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "version_id",
+          "timestamp",
+          "action"
+        ]
+      },
+      "default": [],
+      "description": "APPEND-ONLY version/change log. Every modification creates a new entry with timestamp, action, user, change summary, and previous vs new value. Never deleted, never overwritten. This is the audit trail required by the Append-Only law."
+    },
+    "adobe_file_id": {
+      "type": "string",
+      "default": "",
+      "description": "Adobe Document Cloud file ID if imported from Adobe. Permanent provenance. Empty for non-Adobe imports."
+    },
+    "adobe_file_path": {
+      "type": "string",
+      "default": "",
+      "description": "Full path of the file in Adobe Document Cloud. Permanent provenance."
+    },
+    "adobe_modified_date": {
+      "type": "string",
+      "default": "",
+      "description": "Last modified date of the Adobe file at import time (ISO 8601). Used to detect changes."
+    },
+    "onedrive_file_id": {
+      "type": "string",
+      "default": "",
+      "description": "OneDrive file ID if imported from OneDrive. Permanent provenance and duplicate detection."
+    },
+    "onedrive_file_path": {
+      "type": "string",
+      "default": "",
+      "description": "Full path of the PDF file in OneDrive."
+    },
+    "onedrive_etag": {
+      "type": "string",
+      "default": "",
+      "description": "OneDrive ETag at import time. Detects if the original PDF changed since import."
+    },
+    "google_drive_file_id": {
+      "type": "string",
+      "default": "",
+      "description": "GOOGLE DRIVE file ID (permanent link). The Live Cloud Auto-Sync matches Drive files to books by this ID to detect add/update/rename/move/delete. Empty for non-Google-Drive books. Unique per book."
+    },
+    "google_drive_name": {
+      "type": "string",
+      "default": "",
+      "description": "Google Drive file name at last sync. Renames are detected by comparing this to the current Drive name (book_title is updated to match)."
+    },
+    "google_drive_modified_time": {
+      "type": "string",
+      "default": "",
+      "description": "Google Drive modifiedTime at last sync (ISO 8601). Updates are detected by comparing this to the current Drive modifiedTime; a changed file is flagged for re-index."
+    },
+    "google_drive_parent_id": {
+      "type": "string",
+      "default": "",
+      "description": "Google Drive parent folder ID at last sync. Moves are detected by comparing this to the current parent (parents[0])."
+    },
+    "google_drive_view_link": {
+      "type": "string",
+      "default": "",
+      "description": "Google Drive webViewLink (Owner-only, never public). Used by the Owner to open the source in Drive."
+    },
+    "notes": {
+      "type": "string",
+      "default": "",
+      "description": "Legacy system notes (not Owner-facing). Use owner_notes for Owner notes."
+    }
+  },
+  "required": [
+    "master_book_id",
+    "book_title",
+    "extraction_status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_master_book_id",
+      "fields": [
+        "master_book_id"
+      ]
+    },
+    {
+      "name": "idx_import_source",
+      "fields": [
+        "import_source"
+      ]
+    },
+    {
+      "name": "idx_extraction_status",
+      "fields": [
+        "extraction_status"
+      ]
+    },
+    {
+      "name": "idx_owner_review_status",
+      "fields": [
+        "owner_review_status"
+      ]
+    },
+    {
+      "name": "idx_upload_date",
+      "fields": [
+        "upload_date"
+      ]
+    },
+    {
+      "name": "idx_status_upload",
+      "fields": [
+        "extraction_status",
+        "upload_date"
+      ]
+    },
+    {
+      "name": "idx_adobe_file_id",
+      "fields": [
+        "adobe_file_id"
+      ]
+    },
+    {
+      "name": "idx_onedrive_file_id",
+      "fields": [
+        "onedrive_file_id"
+      ]
+    },
+    {
+      "name": "idx_google_drive_file_id",
+      "fields": [
+        "google_drive_file_id"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

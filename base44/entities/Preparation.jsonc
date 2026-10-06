@@ -1,0 +1,454 @@
+{
+  "name": "Preparation",
+  "type": "object",
+  "description": "Enterprise Preparation Library. Each preparation is a standalone database entity \u2014 herbs, oils, powders, mixtures, incense, perfumes, ink, wafq materials, recipes, storage methods, tools, and safety notes. Preparations are NEVER duplicated: if the same recipe appears in another book, it is linked as an additional source. If any ingredient, quantity, step, timing, or usage differs, a NEW version is created. Cross-linked to ManuscriptEntry methods via used_by_methods.",
+  "properties": {
+    "preparation_id": {
+      "type": "string",
+      "description": "PERMANENT unique identifier for this preparation version. Format: PREP-<group>-<version>-<rand>. Never changes."
+    },
+    "preparation_group_id": {
+      "type": "string",
+      "description": "Groups all versions of the same preparation name. Different recipes for the same name share this group ID but have different preparation_id values."
+    },
+    "version_number": {
+      "type": "integer",
+      "default": 1,
+      "description": "Version number within the preparation_group_id. Increments when a different recipe (ingredients, quantities, steps, timing) is found for the same preparation name."
+    },
+    "is_primary_version": {
+      "type": "boolean",
+      "default": true,
+      "description": "True for the first/original version of this preparation. False for alternate recipe versions."
+    },
+    "name": {
+      "type": "string",
+      "description": "Generic display name"
+    },
+    "name_ar": {
+      "type": "string",
+      "description": "Arabic name (with harakat if verified)"
+    },
+    "name_ml": {
+      "type": "string",
+      "description": "Malayalam name"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "English name"
+    },
+    "preparation_type": {
+      "type": "string",
+      "enum": [
+        "herb",
+        "natural_medicine",
+        "oil",
+        "powder",
+        "mixture",
+        "incense",
+        "perfume",
+        "ink",
+        "wafq_material",
+        "recipe",
+        "storage_method",
+        "usage_instruction",
+        "ingredient",
+        "measurement",
+        "tool",
+        "safety_note"
+      ],
+      "default": "recipe",
+      "description": "Category: herb, natural_medicine, oil, powder, mixture, incense (bukhoor), perfume, ink, wafq_material, recipe, storage_method, usage_instruction, ingredient, measurement, tool, safety_note"
+    },
+    "purpose": {
+      "type": "string",
+      "description": "Purpose or goal of this preparation"
+    },
+    "purpose_ml": {
+      "type": "string",
+      "description": "Malayalam purpose"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "name_ar": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "Ingredients with quantities. Each ingredient: { name, name_ar, quantity, unit }. Verbatim from manuscript."
+    },
+    "preparation_steps": {
+      "type": "string",
+      "description": "Step-by-step preparation instructions from the manuscript"
+    },
+    "required_tools": {
+      "type": "string",
+      "description": "Tools required for preparation (mortar, sieve, container, etc.)"
+    },
+    "timing": {
+      "type": "string",
+      "description": "Timing requirements (planetary hour, day, season, preparation duration)"
+    },
+    "storage_instructions": {
+      "type": "string",
+      "description": "How to store the prepared item"
+    },
+    "shelf_life": {
+      "type": "string",
+      "description": "Shelf life \u2014 ONLY if mentioned in the manuscript. Empty if not specified."
+    },
+    "warnings": {
+      "type": "string",
+      "description": "Safety warnings \u2014 ONLY from the manuscript. Never invented."
+    },
+    "usage_instructions": {
+      "type": "string",
+      "description": "How to use the prepared item (dosage, method, frequency)"
+    },
+    "original_arabic": {
+      "type": "string",
+      "description": "Original Arabic text VERBATIM from the manuscript. Never AI-generated. Never modified."
+    },
+    "verified_arabic": {
+      "type": "string",
+      "description": "Verified Arabic with authenticated harakat from VerifiedArabic system. Empty if not verified."
+    },
+    "verified_arabic_hash": {
+      "type": "string",
+      "description": "text_hash linking to VerifiedArabic entity. Used in Stage 1 duplicate detection. Empty if not verified."
+    },
+    "malayalam_translation": {
+      "type": "string",
+      "description": "Malayalam translation from verified Arabic only. Never AI-guessed."
+    },
+    "english_translation": {
+      "type": "string",
+      "description": "English translation from verified Arabic only. Never AI-guessed."
+    },
+    "page_number": {
+      "type": "string",
+      "description": "Page number in the source PDF"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "FK to ManuscriptBook.book_id"
+    },
+    "book_title": {
+      "type": "string",
+      "description": "Denormalized book title for display"
+    },
+    "author": {
+      "type": "string",
+      "description": "Denormalized author for display"
+    },
+    "edition": {
+      "type": "string",
+      "description": "Edition of the source book"
+    },
+    "pdf_source": {
+      "type": "string",
+      "description": "URL to the original PDF file"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "description": "herb_photo, wafq, taweez, seal, diagram, preparation_drawing, ingredient_table"
+          }
+        }
+      },
+      "default": [],
+      "description": "ORIGINAL extracted images only. Never AI-generated. Each image: { url, page_number, caption, type }."
+    },
+    "diagrams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "Diagrams and tables extracted from the manuscript."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "pending",
+        "verified",
+        "manual_review"
+      ],
+      "default": "unverified",
+      "description": "Arabic verification status"
+    },
+    "confidence_score": {
+      "type": "number",
+      "description": "Duplicate detection confidence (0-100) or extraction confidence (0-100)."
+    },
+    "revision_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "revision_number": {
+            "type": "integer"
+          },
+          "date": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "changed_by": {
+            "type": "string"
+          },
+          "fields_changed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "default": [],
+      "description": "Complete revision history. Each entry: { revision_number, date, reason, changed_by, fields_changed }."
+    },
+    "sirr_section": {
+      "type": "integer",
+      "default": 6,
+      "description": "Sirr section this preparation belongs to. Default 6 (Herbs & Preparations)."
+    },
+    "topic": {
+      "type": "string",
+      "description": "Topic this preparation is associated with (e.g., 'Stomach Healing', 'Jinn Protection')."
+    },
+    "method_id": {
+      "type": "string",
+      "description": "ENTERPRISE DUPLICATE DETECTION. Groups identical preparations across books. First preparation generates it; duplicates inherit it."
+    },
+    "is_primary_preparation": {
+      "type": "boolean",
+      "default": true,
+      "description": "True for the PRIMARY preparation (first found). False for duplicates linked to this preparation."
+    },
+    "linked_preparation_id": {
+      "type": "string",
+      "description": "For duplicate preparations: the preparation_id of the PRIMARY they are linked to."
+    },
+    "duplicate_status": {
+      "type": "string",
+      "enum": [
+        "pending_detection",
+        "unique",
+        "exact_duplicate",
+        "same_recipe",
+        "equivalent_recipe"
+      ],
+      "default": "pending_detection",
+      "description": "Result of 3-stage duplicate detection. pending_detection=not processed. unique=new recipe. exact_duplicate=Stage 1 match. same_recipe=Stage 2 match. equivalent_recipe=Stage 3 match."
+    },
+    "primary_source": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "PRIMARY ONLY. Source metadata: { book_title, author, page_number, pdf_url, edition, year }."
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "pdf_url": {
+            "type": "string"
+          },
+          "edition": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "preparation_id": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "PRIMARY ONLY. All additional sources for the same recipe. Updated when duplicates are linked."
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "PRIMARY ONLY. Total number of sources for this recipe."
+    },
+    "used_by_methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "method_id": {
+            "type": "string"
+          },
+          "entry_id": {
+            "type": "string"
+          },
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "CROSS-LINK. All methods/rituals that use this preparation. Each entry: { method_id, entry_id, book_title, page_number, topic, purpose }. A preparation is NEVER duplicated \u2014 it is linked everywhere it is used."
+    }
+  },
+  "required": [
+    "preparation_id",
+    "name",
+    "preparation_type"
+  ],
+  "indexes": [
+    {
+      "name": "idx_preparation_id",
+      "fields": [
+        "preparation_id"
+      ]
+    },
+    {
+      "name": "idx_preparation_group_id",
+      "fields": [
+        "preparation_group_id"
+      ]
+    },
+    {
+      "name": "idx_preparation_type",
+      "fields": [
+        "preparation_type"
+      ]
+    },
+    {
+      "name": "idx_sirr_section",
+      "fields": [
+        "sirr_section"
+      ]
+    },
+    {
+      "name": "idx_sirr_section_type",
+      "fields": [
+        "sirr_section",
+        "preparation_type"
+      ]
+    },
+    {
+      "name": "idx_sirr_section_topic",
+      "fields": [
+        "sirr_section",
+        "topic"
+      ]
+    },
+    {
+      "name": "idx_duplicate_status",
+      "fields": [
+        "duplicate_status"
+      ]
+    },
+    {
+      "name": "idx_is_primary_preparation",
+      "fields": [
+        "is_primary_preparation"
+      ]
+    },
+    {
+      "name": "idx_verified_arabic_hash",
+      "fields": [
+        "verified_arabic_hash"
+      ]
+    },
+    {
+      "name": "idx_book_id",
+      "fields": [
+        "book_id"
+      ]
+    },
+    {
+      "name": "idx_method_id",
+      "fields": [
+        "method_id"
+      ]
+    },
+    {
+      "name": "idx_preparation_type_primary",
+      "fields": [
+        "preparation_type",
+        "is_primary_preparation"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

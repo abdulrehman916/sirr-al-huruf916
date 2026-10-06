@@ -1,0 +1,179 @@
+{
+  "name": "RedeemCodeApproval",
+  "type": "object",
+  "properties": {
+    "approval_id": {
+      "type": "string",
+      "description": "Unique approval ID e.g. RCA-000001"
+    },
+    "code": {
+      "type": "string",
+      "description": "The reading code submitted by customer (stored uppercase)"
+    },
+    "customer_email": {
+      "type": "string",
+      "description": "Customer email (lowercase)"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Customer name"
+    },
+    "customer_session_id": {
+      "type": "string",
+      "description": "Guest session ID for non-authenticated users"
+    },
+    "customer_user_id": {
+      "type": "string",
+      "description": "Base44 User ID if logged in"
+    },
+    "assigned_admin_id": {
+      "type": "string",
+      "description": "AdminProfile.admin_profile_id of the customer's assigned admin. Null if unassigned."
+    },
+    "assigned_admin_name": {
+      "type": "string",
+      "description": "Denormalized admin name for display"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "INFO_REQUESTED",
+        "OVERRIDDEN"
+      ],
+      "default": "PENDING",
+      "description": "PENDING=awaiting review, APPROVED=activated, REJECTED=denied, INFO_REQUESTED=needs more info, OVERRIDDEN=owner overrode admin decision"
+    },
+    "reviewed_by": {
+      "type": "string",
+      "description": "Admin user ID who reviewed"
+    },
+    "reviewed_by_name": {
+      "type": "string",
+      "description": "Admin display name"
+    },
+    "reviewed_by_role": {
+      "type": "string",
+      "description": "admin or owner"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of review"
+    },
+    "rejection_reason": {
+      "type": "string",
+      "description": "Reason for rejection"
+    },
+    "info_request_message": {
+      "type": "string",
+      "description": "Message to customer when more info needed"
+    },
+    "customer_response": {
+      "type": "string",
+      "description": "Customer's response to info request"
+    },
+    "customer_responded_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of customer response"
+    },
+    "override_by_owner": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if owner overrode admin decision"
+    },
+    "override_reason": {
+      "type": "string",
+      "description": "Reason for owner override"
+    },
+    "original_decision": {
+      "type": "string",
+      "description": "Original admin decision before override"
+    },
+    "original_reviewed_by": {
+      "type": "string",
+      "description": "Original admin user ID who was overridden"
+    },
+    "activated_code_id": {
+      "type": "string",
+      "description": "AccessCode.id reference after approval (for audit trail)"
+    },
+    "activated_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Features/page_paths activated upon approval"
+    },
+    "submitted_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of submission"
+    },
+    "audit_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "SUBMITTED, APPROVED, REJECTED, INFO_REQUESTED, CUSTOMER_RESPONDED, OVERRIDDEN"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "user_name": {
+            "type": "string"
+          },
+          "user_role": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "previous_value": {
+            "type": "string"
+          },
+          "new_value": {
+            "type": "string"
+          },
+          "details": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Complete audit trail: User, Admin, Timestamp, Action, Previous Value, New Value"
+    }
+  },
+  "required": [
+    "approval_id",
+    "code",
+    "status",
+    "submitted_at"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "ShopBrand",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Brand display name e.g. Dabur, Hamdard, Samsung"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe slug"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "If false, brand is hidden from customer shop filters"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "Brand logo image URL"
+    },
+    "country": {
+      "type": "string",
+      "description": "Brand origin country code e.g. IN, AE, US"
+    },
+    "display_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "Display sort order (lower = first)"
+    },
+    "product_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Cached count of products with this brand"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "slug"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

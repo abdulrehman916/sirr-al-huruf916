@@ -1,0 +1,76 @@
+{
+  "name": "AccessRequestMessage",
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "string",
+      "description": "Unique message ID e.g. MSG-REQ-000001"
+    },
+    "request_id": {
+      "type": "string",
+      "description": "FK to AccessRequest.request_id"
+    },
+    "sender_type": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "ADMIN"
+      ],
+      "description": "Who sent this message"
+    },
+    "sender_id": {
+      "type": "string",
+      "description": "Admin user ID or guest session ID"
+    },
+    "sender_name": {
+      "type": "string",
+      "description": "Display name of sender"
+    },
+    "message": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "attachment_url": {
+      "type": "string",
+      "description": "Optional file attachment URL (e.g. payment screenshot)"
+    },
+    "status_change": {
+      "type": "string",
+      "description": "If this message changed the request status, the new status value"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Has the recipient read this message?"
+    }
+  },
+  "required": [
+    "message_id",
+    "request_id",
+    "sender_type",
+    "message",
+    "created_at"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

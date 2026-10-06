@@ -1,0 +1,112 @@
+{
+  "name": "DocumentRelationship",
+  "type": "object",
+  "description": "Document Context Layer \u2014 relationship graph between astrological entities (planets, zodiac signs, lunar mansions, hours, days, elements, books, references) detected during document ingestion. Each relationship links a source entity to a target entity with a relationship type and evidence text. ISOLATED \u2014 does NOT modify existing entity records. Created exclusively by the documentContextIngest backend function during post-processing.",
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "description": "PERMANENT unique identifier. Format: REL-<document_id>-<rand>."
+    },
+    "document_id": {
+      "type": "string",
+      "description": "FK to IngestedDocument.document_id. The document from which this relationship was detected."
+    },
+    "source_entity_type": {
+      "type": "string",
+      "description": "Entity type of the source: planet, zodiac, mansion, weekday, house, element, book, reference."
+    },
+    "source_entity_key": {
+      "type": "string",
+      "description": "Entity key of the source (e.g., 'mars', 'aries', '5', 'fire')."
+    },
+    "target_entity_type": {
+      "type": "string",
+      "description": "Entity type of the target."
+    },
+    "target_entity_key": {
+      "type": "string",
+      "description": "Entity key of the target."
+    },
+    "relationship_type": {
+      "type": "string",
+      "description": "Type of relationship: rules, associated_with, timing_for, friendly_with, enemy_of, exalted_in, debilitated_in, home_sign, etc."
+    },
+    "source_page": {
+      "type": "string",
+      "default": "",
+      "description": "Page number(s) where this relationship was detected."
+    },
+    "evidence_text": {
+      "type": "string",
+      "default": "",
+      "description": "Text evidence supporting this relationship."
+    }
+  },
+  "required": [
+    "relationship_id",
+    "document_id",
+    "source_entity_type",
+    "source_entity_key",
+    "target_entity_type",
+    "target_entity_key"
+  ],
+  "indexes": [
+    {
+      "name": "idx_relationship_id",
+      "fields": [
+        "relationship_id"
+      ]
+    },
+    {
+      "name": "idx_document_id",
+      "fields": [
+        "document_id"
+      ]
+    },
+    {
+      "name": "idx_source_entity",
+      "fields": [
+        "source_entity_type",
+        "source_entity_key"
+      ]
+    },
+    {
+      "name": "idx_target_entity",
+      "fields": [
+        "target_entity_type",
+        "target_entity_key"
+      ]
+    },
+    {
+      "name": "idx_relationship_type",
+      "fields": [
+        "relationship_type"
+      ]
+    },
+    {
+      "name": "idx_document_relationship",
+      "fields": [
+        "document_id",
+        "relationship_type"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

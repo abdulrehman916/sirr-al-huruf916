@@ -1,0 +1,135 @@
+{
+  "name": "ManuscriptHeading",
+  "type": "object",
+  "description": "Dynamic heading tree for manuscript structure preservation. Each heading represents a real heading detected from the PDF layout (chapter, section, subsection, bab, fasl, mas'ala, part, etc.) or a generated fallback when no heading exists. Headings form a tree via parent_heading_id. Any number of heading levels is supported \u2014 no fixed hierarchy assumption. ManuscriptEntry records reference their parent heading via heading_id. The 7 Sirr sections remain as an alternative classification, not the primary navigation.",
+  "properties": {
+    "heading_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: H-<book_id>-<level>-<order>-<rand>. Never changes."
+    },
+    "parent_heading_id": {
+      "type": "string",
+      "description": "FK to parent ManuscriptHeading.heading_id. Empty string for top-level headings. Forms the heading tree \u2014 any depth."
+    },
+    "book_id": {
+      "type": "string",
+      "description": "FK to ManuscriptBook.book_id. The manuscript this heading belongs to."
+    },
+    "heading_level": {
+      "type": "integer",
+      "description": "Depth in the tree. 1 = top-level heading, 2 = sub-heading, 3 = sub-sub-heading, etc. Dynamic \u2014 no fixed limit. Different manuscripts may have different depths."
+    },
+    "heading_title": {
+      "type": "string",
+      "description": "Heading title text as detected from the PDF (English transliteration or translation if the heading is in Arabic). For generated_fallback, this is a temporary descriptive label."
+    },
+    "heading_title_ar": {
+      "type": "string",
+      "description": "Heading title in original Arabic script (if the manuscript heading is in Arabic). Empty if the heading is not in Arabic. Preserved verbatim \u2014 never modified."
+    },
+    "heading_order": {
+      "type": "integer",
+      "description": "Sequence within the parent heading (or within the book for top-level). 1-based. Preserves manuscript order."
+    },
+    "start_page": {
+      "type": "string",
+      "description": "First page number where this heading appears in the PDF."
+    },
+    "end_page": {
+      "type": "string",
+      "description": "Last page number before the next heading at the same level (or end of parent heading). Empty if unknown."
+    },
+    "heading_source": {
+      "type": "string",
+      "enum": [
+        "pdf_detected",
+        "generated_fallback"
+      ],
+      "default": "pdf_detected",
+      "description": "pdf_detected = heading was detected from the PDF layout (font size, bold, centered, numbering, decorative separators, Arabic heading conventions like \u0628\u0627\u0628/\u0641\u0635\u0644/\u0642\u0633\u0645). generated_fallback = no heading found in the manuscript for this section, a temporary heading was created to maintain structure."
+    },
+    "entry_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Denormalized count of ManuscriptEntry records directly under this heading (not including sub-headings). For display."
+    },
+    "total_entry_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total entries under this heading AND all descendant headings. For display and navigation."
+    }
+  },
+  "required": [
+    "heading_id",
+    "book_id",
+    "heading_level",
+    "heading_title",
+    "heading_source"
+  ],
+  "indexes": [
+    {
+      "name": "idx_heading_id",
+      "fields": [
+        "heading_id"
+      ]
+    },
+    {
+      "name": "idx_book_id",
+      "fields": [
+        "book_id"
+      ]
+    },
+    {
+      "name": "idx_book_parent",
+      "fields": [
+        "book_id",
+        "parent_heading_id"
+      ]
+    },
+    {
+      "name": "idx_book_level_order",
+      "fields": [
+        "book_id",
+        "heading_level",
+        "heading_order"
+      ]
+    },
+    {
+      "name": "idx_parent_heading_id",
+      "fields": [
+        "parent_heading_id"
+      ]
+    },
+    {
+      "name": "idx_heading_source",
+      "fields": [
+        "heading_source"
+      ]
+    },
+    {
+      "name": "idx_book_heading_level",
+      "fields": [
+        "book_id",
+        "heading_level"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

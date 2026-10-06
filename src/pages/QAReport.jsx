@@ -1,0 +1,1 @@
+export default function QAReport() { return <div>QA Report</div>; }

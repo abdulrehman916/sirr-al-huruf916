@@ -1,0 +1,278 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Unique product ID e.g. PRD-000001"
+    },
+    "name": {
+      "type": "string",
+      "description": "Product display name"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe slug for detail page routing"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Product brand or manufacturer name"
+    },
+    "sku": {
+      "type": "string",
+      "description": "Stock Keeping Unit \u2014 internal product code"
+    },
+    "barcode": {
+      "type": "string",
+      "description": "Product barcode (EAN/UPC/ISBN) for scanning and marketplace sync"
+    },
+    "short_description": {
+      "type": "string",
+      "description": "One-line summary shown on product cards"
+    },
+    "full_description": {
+      "type": "string",
+      "description": "Full English product description shown on detail page"
+    },
+    "malayalam_description": {
+      "type": "string",
+      "description": "Full product description in Malayalam script"
+    },
+    "arabic_description": {
+      "type": "string",
+      "description": "Full product description in Arabic"
+    },
+    "usage_instructions": {
+      "type": "string",
+      "description": "How to use the product \u2014 dosage, method, frequency"
+    },
+    "ingredients": {
+      "type": "string",
+      "description": "Ingredients or composition of the product"
+    },
+    "benefits": {
+      "type": "string",
+      "description": "Key benefits and therapeutic/spiritual effects"
+    },
+    "warnings": {
+      "type": "string",
+      "description": "Safety warnings and contraindications"
+    },
+    "rules_precautions": {
+      "type": "string",
+      "description": "Rules and precautions for safe usage"
+    },
+    "storage_instructions": {
+      "type": "string",
+      "description": "How to store the product \u2014 temperature, shelf life"
+    },
+    "specifications": {
+      "type": "object",
+      "description": "Key-value specification pairs",
+      "additionalProperties": true
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of image URLs (first image is the primary/thumbnail unless thumbnail_index is set). Supports unlimited high-resolution images."
+    },
+    "thumbnail_index": {
+      "type": "integer",
+      "default": 0,
+      "description": "Index of the thumbnail image in the images array. 0 = first image."
+    },
+    "video_url": {
+      "type": "string",
+      "description": "Single YouTube/Vimeo embed URL or uploaded file URL (legacy)"
+    },
+    "video_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Multiple video URLs (YouTube/Vimeo/uploaded)"
+    },
+    "pdf_url": {
+      "type": "string",
+      "description": "PDF attachment URL (datasheet, brochure, manual)"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category e.g. 'Books', 'Tools', 'Incense', 'Ayurvedic', 'Herbal', 'Talismans'"
+    },
+    "sub_category": {
+      "type": "string",
+      "description": "Sub-category name for finer classification"
+    },
+    "product_status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "draft",
+        "archived",
+        "pending_review"
+      ],
+      "default": "active",
+      "description": "Product lifecycle status"
+    },
+    "amazon_url": {
+      "type": "string",
+      "description": "Direct Amazon product URL for this specific product. Used by the 'Buy on Amazon' button. If empty, the Amazon button is hidden."
+    },
+    "affiliate_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platform": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "visible": {
+            "type": "boolean",
+            "default": true
+          }
+        }
+      },
+      "description": "External purchase links (External Link Mode \u2014 no live API sync)"
+    },
+    "price_display": {
+      "type": "string",
+      "description": "Price display string e.g. 'AED 50', 'Check on Amazon', 'Varies'"
+    },
+    "compare_price_display": {
+      "type": "string",
+      "description": "Original/strike-through price for discount display"
+    },
+    "country_price_overrides": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Map of country code to {price, compare_price} for country-specific pricing overrides. e.g. { 'IN': {price: '\u20b9999'}, 'US': {price: '$15'} }"
+    },
+    "rating_display": {
+      "type": "string",
+      "description": "Optional rating display e.g. '4.5/5'"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Searchable tags for filtering"
+    },
+    "faqs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "FAQ entries shown in an accordion on the detail page"
+    },
+    "seller_whatsapp": {
+      "type": "string",
+      "description": "WhatsApp number for product inquiries"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Contact email for the seller"
+    },
+    "stock_quantity": {
+      "type": "integer",
+      "default": -1,
+      "description": "Stock quantity. -1 = unlimited stock. 0 = out of stock."
+    },
+    "low_stock_threshold": {
+      "type": "integer",
+      "default": 10,
+      "description": "Threshold below which a product is flagged as low stock"
+    },
+    "warehouse_location": {
+      "type": "string",
+      "description": "Warehouse location code or name for inventory management"
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "Display sort order (lower = first)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "If false, product is hidden from the shop page"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, product appears in the featured section"
+    },
+    "is_best_seller": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_new_arrival": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_trending": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_out_of_stock": {
+      "type": "boolean",
+      "default": false,
+      "description": "Manual out-of-stock override. If true, buy buttons are disabled."
+    },
+    "discount_percentage": {
+      "type": "number",
+      "description": "Discount percentage (0-100)"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "product_id",
+    "name",
+    "slug",
+    "category",
+    "is_active"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

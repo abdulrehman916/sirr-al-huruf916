@@ -1,0 +1,129 @@
+{
+  "name": "PagePermission",
+  "type": "object",
+  "properties": {
+    "permission_id": {
+      "type": "string",
+      "description": "Unique permission identifier e.g. PERM-000001"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Base44 User ID"
+    },
+    "page_path": {
+      "type": "string",
+      "description": "Page route e.g. /mizaan9, /astro-clock"
+    },
+    "page_name": {
+      "type": "string",
+      "description": "Human-readable page name"
+    },
+    "permission_code": {
+      "type": "string",
+      "description": "Unique permission code e.g. MIZAN_ACCESS, ASTRO_CLOCK_ACCESS"
+    },
+    "sub_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of feature IDs unlocked by this permission (e.g. ['abjad_kabir', 'jumlat_kabir']). If absent or empty, ALL features on the page are unlocked (backward compatible with existing full-page permissions)."
+    },
+    "granted_by": {
+      "type": "string",
+      "description": "Admin user ID who granted permission"
+    },
+    "granted_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "start_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp - access starts"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp - access expires"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Is permission currently active"
+    },
+    "is_revoked": {
+      "type": "boolean",
+      "default": false,
+      "description": "Has permission been revoked by admin"
+    },
+    "revoked_by": {
+      "type": "string",
+      "description": "Admin user ID who revoked"
+    },
+    "revoked_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of revocation"
+    },
+    "revoked_reason": {
+      "type": "string",
+      "description": "Reason for revocation"
+    },
+    "extended_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of times expiry was extended"
+    },
+    "last_extended_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of last extension"
+    },
+    "last_extended_by": {
+      "type": "string",
+      "description": "Admin user ID who last extended"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Admin notes about this permission"
+    }
+  },
+  "required": [
+    "permission_id",
+    "user_id",
+    "page_path",
+    "page_name",
+    "permission_code",
+    "granted_by",
+    "granted_at",
+    "start_date",
+    "expiry_date",
+    "is_active"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "$or": [
+        {
+          "data.user_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

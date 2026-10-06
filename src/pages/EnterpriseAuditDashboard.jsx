@@ -1,0 +1,1 @@
+export default function EnterpriseAuditDashboard() { return <div>Enterprise Audit Dashboard</div>; }

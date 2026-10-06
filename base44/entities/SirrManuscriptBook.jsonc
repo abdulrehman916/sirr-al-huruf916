@@ -1,0 +1,349 @@
+{
+  "name": "SirrManuscriptBook",
+  "type": "object",
+  "description": "SIRR-MODULE-ISOLATED permanent manuscript library. Completely separate from the global ManuscriptBook entity. The SIRR page reads ONLY from this entity. PERMANENT SCALABLE LIBRARY: supports unlimited books for many years. Every book has a permanent sirr_book_id; every uploaded PDF part has a permanent part_id; every extracted card has a permanent sirr_entry_id (in SirrManuscriptEntry). MULTI-PART PERMANENT STORAGE: A single book may be built from multiple uploaded PDF parts (Part 1, Part 2, ... Part N). Every uploaded PDF URL is permanently stored in the pdf_parts array immediately at upload time \u2014 never kept only in conversation state, never deleted unless the book is explicitly deleted. Each pdf_part also stores a permanent SHA-256 file_hash and file_size for corruption detection. The background engine (sirrProcessNextChunk) rebuilds exclusively from the stored pdf_parts list, never from chat history. current_part_index tracks which part is being processed; last_processed_page tracks progress within the current part. combined_total_pages is the true total across all parts. UPLOAD-THEN-PROCESS FLOW: While the user is still uploading parts, extraction_status stays 'uploading' \u2014 the background engine IGNORES books in this state, so processing NEVER begins until the user explicitly clicks 'Begin Processing'. COMPLETION GATE (RULE 15): The engine NEVER marks a book 'completed'. When all parts are processed it sets 'pending_verification'. A book becomes 'completed' ONLY when sirrVerifyBook returns VERIFIED (every part processed, no missing pages, no OCR issues, no duplicates). Until then it stays 'pending_verification'. PERMANENT VERIFICATION REPORT: the full verification report is persisted in verification_report and timestamped in last_verified_at on every sirrVerifyBook run. PERMANENT BACKUP TRACKING: last_backup_at / last_backup_uri / last_backup_entry_count record the most recent automatic backup; the full backup history lives in SirrAuditLog (action='backup'). CONCURRENCY LOCK (RULE 6, 8): processing_lock_until is a time-limited optimistic lock set by the background engine while it is actively processing this book, preventing two concurrent runs from processing the same book simultaneously (which would corrupt data). The lock auto-expires (2-minute TTL, refreshed each chunk) so a crashed run never permanently strands a book. PAUSE/RESUME (RULE 7): extraction_status='paused' is set by sirrJobStatus to pause a job; the engine's filter excludes 'paused' books, so processing halts until resumed. ISOLATED \u2014 only the SIRR ingestSirrManuscript backend function, sirrProcessNextChunk, sirrVerifyBook, and SIRR-only UI logic may write to this entity.",
+  "properties": {
+    "sirr_book_id": {
+      "type": "string",
+      "description": "Permanent unique identifier for this SIRR book. Never changes. Used as FK in SirrManuscriptEntry. Required."
+    },
+    "malayalam_book_name": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam display name for the book. Editable by the user from the SIRR library. Shown as the primary book title in the SIRR UI."
+    },
+    "book_title": {
+      "type": "string",
+      "description": "Original book title exactly as imported (original language preserved \u2014 never translated)."
+    },
+    "book_title_ar": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic title if applicable. Preserved verbatim."
+    },
+    "author": {
+      "type": "string",
+      "default": "",
+      "description": "Author or scribe of the manuscript."
+    },
+    "language": {
+      "type": "string",
+      "default": "",
+      "description": "Primary language of the manuscript (ar, tr, en, ...)."
+    },
+    "edition": {
+      "type": "string",
+      "default": "",
+      "description": "Edition of the manuscript if available."
+    },
+    "volume": {
+      "type": "string",
+      "default": "",
+      "description": "Volume of the manuscript if available."
+    },
+    "publication_year": {
+      "type": "string",
+      "default": "",
+      "description": "Year of publication or printing if available."
+    },
+    "total_pages": {
+      "type": "integer",
+      "default": 0,
+      "description": "Page count of the CURRENT part being processed (informational). The true combined total is combined_total_pages."
+    },
+    "combined_total_pages": {
+      "type": "integer",
+      "default": 0,
+      "description": "TRUE combined page count across ALL uploaded PDF parts. Sum of every pdf_parts[].page_count. Set by sirrProcessNextChunk as parts are processed. This is the authoritative total \u2014 never overwritten by a single part's count."
+    },
+    "last_processed_page": {
+      "type": "integer",
+      "default": 0,
+      "description": "Last page successfully processed WITHIN the current part (1-based). The background processor resumes from last_processed_page+1 within the current part. When the current part is fully processed, current_part_index advances and this resets to 0."
+    },
+    "current_part_index": {
+      "type": "integer",
+      "default": 0,
+      "description": "Index (0-based) into pdf_parts of the part currently being processed. When current_part_index >= pdf_parts.length, all parts are done and extraction_status becomes 'pending_verification' (NOT 'completed' \u2014 completion requires verification). The processor never depends on chat history \u2014 it reads this field and the pdf_parts array from the database."
+    },
+    "pdf_parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "part_id": {
+            "type": "string",
+            "description": "PERMANENT unique identifier for this PDF part. Format: SIRRP-<sirr_book_id>-<part_number>. Never changes. Every extracted SirrManuscriptEntry from this part carries this as source_part_id so every card always knows its originating PDF part."
+          },
+          "part_number": {
+            "type": "integer",
+            "description": "1-based part sequence number (Part 1, Part 2, ...). Preserves upload order permanently."
+          },
+          "file_url": {
+            "type": "string",
+            "description": "PERMANENT URL to this PDF part. Saved immediately at upload time. Never lost, never deleted unless the book is explicitly deleted."
+          },
+          "file_name": {
+            "type": "string",
+            "description": "Original file name of this PDF part."
+          },
+          "file_hash": {
+            "type": "string",
+            "default": "",
+            "description": "SHA-256 checksum of the original PDF file bytes, computed at upload time. Permanent corruption-detection baseline. sirrVerifyFileIntegrity re-fetches the file_url, recomputes the hash, and compares to detect corruption."
+          },
+          "file_size": {
+            "type": "integer",
+            "default": 0,
+            "description": "Size of the original PDF file in bytes. Recorded at upload time."
+          },
+          "page_start": {
+            "type": "integer",
+            "default": 1,
+            "description": "First page of this part within the part's own numbering (always 1)."
+          },
+          "page_end": {
+            "type": "integer",
+            "default": 0,
+            "description": "Last page processed so far in this part. Equals page_count when the part is fully processed."
+          },
+          "page_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Total page count of this PDF part, determined by the LLM during first chunk extraction. 0 until the first chunk runs."
+          },
+          "uploaded_at": {
+            "type": "string",
+            "description": "ISO 8601 timestamp when this part was uploaded. Preserved permanently."
+          },
+          "processed": {
+            "type": "boolean",
+            "default": false,
+            "description": "True when this part is fully processed (page_end >= page_count)."
+          },
+          "extraction_status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "processing",
+              "completed",
+              "failed"
+            ],
+            "default": "pending",
+            "description": "Per-PDF processing status. 'pending' = uploaded, not yet processed. 'processing' = currently being extracted. 'completed' = fully processed. 'failed' = extraction error on this part."
+          },
+          "ocr_status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "completed",
+              "failed"
+            ],
+            "default": "pending",
+            "description": "Per-PDF OCR status. 'pending' = not yet OCR'd. 'completed' = OCR finished (confidence may still flag pages for review). 'failed' = OCR error."
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "unverified",
+              "verified",
+              "failed"
+            ],
+            "default": "unverified",
+            "description": "Per-PDF verification status, set by sirrVerifyBook. 'verified' = all pages extracted with no OCR issues. 'failed' = missing pages or OCR issues. 'unverified' = not yet verified."
+          }
+        },
+        "required": [
+          "part_id",
+          "part_number",
+          "file_url",
+          "file_name"
+        ]
+      },
+      "default": [],
+      "description": "ORDERED LIST of every uploaded PDF part for this book. Part 1, Part 2, ... Part N. Every part's file_url, part_id, file_hash and file_size are permanently stored here at upload time. The background engine processes parts in order. Adding a new part appends to this array and keeps extraction_status at 'uploading'. This is the SOLE source of truth for what to process \u2014 never chat history. Upload order is preserved permanently by array position."
+    },
+    "original_file_url": {
+      "type": "string",
+      "default": "",
+      "description": "LEGACY: URL of the first PDF part. Kept for backward compatibility. New uploads populate pdf_parts[0].file_url instead."
+    },
+    "original_file_name": {
+      "type": "string",
+      "default": "",
+      "description": "LEGACY: Original file name of the first PDF part. Kept for backward compatibility."
+    },
+    "source": {
+      "type": "string",
+      "default": "sirr_upload",
+      "description": "How this book entered the SIRR store. Always SIRR-specific."
+    },
+    "upload_date": {
+      "type": "string",
+      "description": "ISO 8601 date when this book was first uploaded into the SIRR module."
+    },
+    "extraction_status": {
+      "type": "string",
+      "enum": [
+        "uploading",
+        "pending",
+        "processing",
+        "pending_verification",
+        "completed",
+        "failed",
+        "partial",
+        "paused"
+      ],
+      "default": "pending",
+      "description": "Book-level content extraction status. 'uploading' = user is still uploading PDF parts; the background engine IGNORES this state. 'pending' = all parts uploaded, waiting for background processor. 'processing' = a part is being extracted. 'pending_verification' = ALL parts fully processed, awaiting sirrVerifyBook (the engine NEVER sets 'completed' directly \u2014 RULE 15). 'completed' = set ONLY by sirrVerifyBook when the report is VERIFIED. 'partial' = interrupted, scheduled automation will resume. 'paused' = paused by admin via sirrJobStatus; the engine filter EXCLUDES this state so processing halts until resumed. Never shown to users."
+    },
+    "extraction_error": {
+      "type": "string",
+      "default": "",
+      "description": "Error message if extraction_status is failed or partial. Includes the exact Book ID, Part ID and page number when a part fails."
+    },
+    "processing_lock_until": {
+      "type": "string",
+      "default": "",
+      "description": "CONCURRENCY LOCK (RULE 6, 8). ISO 8601 timestamp; while in the future, another background run must NOT process this book. Set by sirrProcessNextChunk when it begins processing a book (2-minute TTL, refreshed each chunk) and cleared when the run finishes. Auto-expires so a crashed run never permanently strands the book. Empty when no run holds the book."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "verified",
+        "failed"
+      ],
+      "default": "unverified",
+      "description": "Book-level verification status from sirrVerifyBook. 'verified' = VERIFIED (every part processed, no missing pages, no OCR issues, no duplicates). Never set to 'verified' until every uploaded PDF part has been processed and verified."
+    },
+    "verification_report": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "PERMANENT full verification report from the most recent sirrVerifyBook run. Persisted on every verify run (RULE 14). Contains: missing_pages, missing_parts, ocr_issues, min_ocr_confidence, avg_ocr_confidence, missing_malayalam_meanings, malayalam_verification_status, duplicate_entries, order_gaps, arabic_verification_status, database_verification_status, final_result, failure_reasons, verification_passed, parts[], total_pdf_parts, total_pages, total_entries."
+    },
+    "last_verified_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent sirrVerifyBook run. Empty if never verified."
+    },
+    "total_entries": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total number of SirrManuscriptEntry records extracted from this book (across all parts)."
+    },
+    "last_backup_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent automatic backup of this book (sirrBackupArchive). Empty if never backed up. The full backup history (every backup event with its file_uri) is permanently recorded in SirrAuditLog (action='backup')."
+    },
+    "last_backup_uri": {
+      "type": "string",
+      "default": "",
+      "description": "Permanent private-storage URI of the most recent backup JSON file for this book. Use CreateFileSignedUrl to download."
+    },
+    "last_backup_entry_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of entries included in the most recent backup. Used to confirm the backup is complete."
+    },
+    "notes": {
+      "type": "string",
+      "default": "",
+      "description": "Admin notes about this SIRR manuscript."
+    }
+  },
+  "required": [
+    "sirr_book_id",
+    "book_title",
+    "extraction_status"
+  ],
+  "indexes": [
+    {
+      "name": "idx_sirr_book_id",
+      "fields": [
+        "sirr_book_id"
+      ]
+    },
+    {
+      "name": "idx_source",
+      "fields": [
+        "source"
+      ]
+    },
+    {
+      "name": "idx_extraction_status",
+      "fields": [
+        "extraction_status"
+      ]
+    },
+    {
+      "name": "idx_upload_date",
+      "fields": [
+        "upload_date"
+      ]
+    },
+    {
+      "name": "idx_status_upload_date",
+      "fields": [
+        "extraction_status",
+        "upload_date"
+      ]
+    },
+    {
+      "name": "idx_last_processed_page",
+      "fields": [
+        "last_processed_page"
+      ]
+    },
+    {
+      "name": "idx_current_part_index",
+      "fields": [
+        "current_part_index"
+      ]
+    },
+    {
+      "name": "idx_verification_status",
+      "fields": [
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_last_verified_at",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "name": "idx_last_backup_at",
+      "fields": [
+        "last_backup_at"
+      ]
+    },
+    {
+      "name": "idx_processing_lock_until",
+      "fields": [
+        "processing_lock_until"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

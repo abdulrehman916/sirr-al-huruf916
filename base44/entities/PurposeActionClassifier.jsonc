@@ -1,0 +1,105 @@
+{
+  "name": "PurposeActionClassifier",
+  "type": "object",
+  "description": "Dynamic Rule-Database registry that maps a ritual intent (love, separation, healing, ...) to the action-text keywords used to match AstroClockKnowledge action records. Replaces the former hardcoded PURPOSE_KEYWORDS map inside the ritual timing engine. Seeded once from the legacy hardcoded values (seedPurposeActionClassifier); admin-editable; auto-extendable by future book ingestion. ISOLATED \u2014 only usePurposeActionKeywords (read) and seedPurposeActionClassifier (write) access it. The runtime recommendation path reads from here; no recommendation, reason, or decision derives from hardcoded ritual knowledge in code.",
+  "properties": {
+    "classifier_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: PAC-<ritual_intent>-<slug(keyword)>."
+    },
+    "ritual_intent": {
+      "type": "string",
+      "enum": [
+        "love",
+        "separation",
+        "healing",
+        "enemy",
+        "protection",
+        "wealth",
+        "knowledge",
+        "travel",
+        "planetary",
+        "spiritual",
+        "general"
+      ],
+      "description": "The ritual intent this keyword classifies. Matches the ritualKey used by the ritual timing engine."
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Lowercase match term. If this term appears in an AstroClockKnowledge action's text (recommended/forbidden/enemy/friendship/warnings), the action is relevant to the ritual_intent."
+    },
+    "match_field": {
+      "type": "string",
+      "enum": [
+        "any",
+        "recommended",
+        "forbidden",
+        "enemy",
+        "friendship",
+        "warnings"
+      ],
+      "default": "any",
+      "description": "Which action field this keyword signals. 'any' = check all fields (preserves legacy PURPOSE_KEYWORDS behavior)."
+    },
+    "source": {
+      "type": "string",
+      "default": "system_seed",
+      "description": "Provenance. 'system_seed' = migrated from the legacy hardcoded map; a book_id = added from book ingestion."
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Inactive keywords are ignored by the engine."
+    }
+  },
+  "required": [
+    "classifier_id",
+    "ritual_intent",
+    "keyword"
+  ],
+  "indexes": [
+    {
+      "name": "idx_classifier_id",
+      "fields": [
+        "classifier_id"
+      ]
+    },
+    {
+      "name": "idx_ritual_intent",
+      "fields": [
+        "ritual_intent"
+      ]
+    },
+    {
+      "name": "idx_ritual_intent_active",
+      "fields": [
+        "ritual_intent",
+        "is_active"
+      ]
+    },
+    {
+      "name": "idx_keyword",
+      "fields": [
+        "keyword"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "name": "KiyafetnameKnowledge",
+  "type": "object",
+  "description": "Canonical store for K\u0131yafetname (physiognomy) interpretations from verified manuscripts. Each record maps a physical body trait to its character/temperament meaning. ISOLATED \u2014 only classifyAndIngestScreenshot writes to this entity. Merge rules: never overwrite, never delete, preserve every source, remove exact duplicates only.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: KK-SCR-<timestamp>-<rand>."
+    },
+    "physical_trait_tr": {
+      "type": "string",
+      "description": "Original Turkish trait verbatim (e.g., 'Uzun boy')"
+    },
+    "physical_trait_en": {
+      "type": "string",
+      "description": "English translation (e.g., 'Tall stature')"
+    },
+    "physical_trait_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "character_meaning_tr": {
+      "type": "string",
+      "description": "Original Turkish meaning verbatim (e.g., 'Ham\u00e2kat ve s\u00e2deli\u011fe, ahmak ve b\u00f6nl\u00fc\u011fe del\u00e2let eder')"
+    },
+    "character_meaning_en": {
+      "type": "string",
+      "description": "English translation (e.g., 'Indicates foolishness and stupidity')"
+    },
+    "character_meaning_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "trait_category": {
+      "type": "string",
+      "enum": [
+        "stature",
+        "hair",
+        "head",
+        "forehead",
+        "eyebrow",
+        "eye",
+        "ear",
+        "nose",
+        "mouth",
+        "voice",
+        "face",
+        "complexion",
+        "beard",
+        "neck",
+        "shoulder",
+        "arm",
+        "hand",
+        "finger",
+        "nail",
+        "chest",
+        "back",
+        "belly",
+        "leg",
+        "foot",
+        "other"
+      ],
+      "default": "other",
+      "description": "Body category this trait belongs to."
+    },
+    "is_positive": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if the meaning is positive (intelligence, generosity, beauty), false if negative."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of normalized physical_trait_en + character_meaning_en for dedup."
+    },
+    "source_book_title": {
+      "type": "string"
+    },
+    "source_page_number": {
+      "type": "string"
+    },
+    "source_screenshot_url": {
+      "type": "string"
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "physical_trait_tr",
+    "character_meaning_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_trait_category",
+      "fields": [
+        "trait_category"
+      ]
+    },
+    {
+      "name": "idx_is_positive",
+      "fields": [
+        "is_positive"
+      ]
+    },
+    {
+      "name": "idx_physical_trait_en",
+      "fields": [
+        "physical_trait_en"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_screenshot_url",
+      "fields": [
+        "source_screenshot_url"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

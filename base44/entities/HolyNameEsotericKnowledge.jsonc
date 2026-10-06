@@ -1,0 +1,1245 @@
+{
+  "name": "HolyNameEsotericKnowledge",
+  "type": "object",
+  "description": "INDEPENDENT Section C \u2014 the Birhat\u012bya / Esoteric Invocation Names scholarly knowledge database. COMPLETELY SEPARATE from Section A (HolyNameKnowledge) and Section B (HolyOnePDFName). Each record is ONE independent card with a permanent ID (HNK-MHC-001..). STRUCTURE: (1) PRIMARY INFORMATION \u2014 canonical Arabic, transliterations (Latin/Malayalam/English), exact meaning from source, letter count, individual letter values, full Abjad calculation, total Abjad value, verification status, source reference, source page, source notes; (2) CURRENT SCHOLARLY DATA \u2014 verbatim text from each uploaded scholarly PDF, never summarized/simplified/invented; (3) ADVANCED KNOWLEDGE SECTIONS \u2014 30+ named sections (invocation, complete Birhat\u012bya text, related conjurations/az\u0101'im/ruhaniyyat/talismans/awf\u0101q, khaw\u0101\u1e63\u1e63, amal, mujarrab\u0101t, khatam, d\u0101'irah, talisman images, ritual procedure, conditions, recitations, timing, planet, lunar mansion, zodiac, incense, colors, elements, angels, jinn, servitors, benefits, warnings, scholarly discussions, historical notes, manuscript variants, related books, cross references) \u2014 ALL EMPTY until explicitly approved. FUTURE MERGE: every new PDF is compared against existing records; existing info preserved; only verified info merged; nothing overwritten; every differing opinion/alternate spelling/pronunciation/meaning/Abjad recorded separately. INTERNET RULE: never search the internet or use AI knowledge unless the owner explicitly says 'Now search the internet'. DATA SAFETY: never fabricate, hallucinate, guess, or translate by assumption; every field traceable to its exact source. ISOLATED \u2014 only the Section C page, seedHolyNameEsoteric, and a future Section-C merge function read/write this entity.",
+  "properties": {
+    "name_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: HNK-MHC-001, HNK-MHC-002, ... Sequential, never changes."
+    },
+    "order_index": {
+      "type": "integer",
+      "default": 0,
+      "description": "Sequential display order as supplied (1..N)."
+    },
+    "original_static_id": {
+      "type": "integer",
+      "default": 0,
+      "description": "Original 1-based position in the owner's supplied list, preserved permanently for traceability."
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Inactive names are excluded from display."
+    },
+    "seeded": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this name was seeded from an owner-supplied list (always true for Section C)."
+    },
+    "arabic_name": {
+      "type": "string",
+      "description": "Arabic name as supplied/printed in the source (with harakat preserved verbatim). The display source."
+    },
+    "arabic_normalized": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic name WITHOUT harakat/tatweel, normalized for indexed matching/search. Populated at seed time."
+    },
+    "canonical_arabic_name": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Canonical Arabic Name. The authoritative fully-vowelized form when verified. Empty until verified \u2014 never guessed. May differ from arabic_name after scholarly correction."
+    },
+    "transliteration": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Latin transliteration of the name as given in the source."
+    },
+    "malayalam_transliteration": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Malayalam transliteration of the name (the name rendered in Malayalam script). Empty until a source provides it."
+    },
+    "english_transliteration": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 English transliteration (alternate English rendering if distinct from the main transliteration). Empty if same as transliteration."
+    },
+    "exact_meaning": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Exact meaning from the uploaded source, VERBATIM. Never summarized, simplified, or invented. When the source lists multiple scholarly opinions ('and some say...', 'and it is said...'), all are preserved verbatim."
+    },
+    "letter_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "PRIMARY \u00b7 Number of Arabic letters in the name (as supplied by the source or counted from arabic_name)."
+    },
+    "individual_letter_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "letter": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "letter",
+          "value"
+        ]
+      },
+      "default": [],
+      "description": "PRIMARY \u00b7 Each Arabic letter of the name with its standard Abjad value, in order. Computed mechanically (deterministic, not fabrication) so the full calculation is transparent."
+    },
+    "full_abjad_calculation": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 The full Abjad calculation showing every letter separately, e.g. '\u0628(2) + \u0631(200) + \u0647(5) + \u062a(400) + \u064a(10) + \u0629(5) = 622'. Computed mechanically."
+    },
+    "total_abjad_value": {
+      "type": "integer",
+      "default": 0,
+      "description": "PRIMARY \u00b7 Total Abjad value as stated by the source (authoritative). When sources differ, each alternate is recorded in alternate_abjad_values."
+    },
+    "abjad_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "PRIMARY \u00b7 True when the mechanically-computed Abjad sum matches the source-stated total_abjad_value. False flags a discrepancy that needs review (recorded in source_notes)."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "verified",
+        "needs_review",
+        "conflicting_sources",
+        "not_in_classical_sources"
+      ],
+      "default": "unverified",
+      "description": "PRIMARY \u00b7 Verification status. 'unverified' = not yet audited (default). 'verified' = >=2 sources agree. 'needs_review' = uncertain. 'conflicting_sources' = sources disagree. 'not_in_classical_sources' = not found."
+    },
+    "source_reference": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Full bibliographic reference of the source this card's primary information came from."
+    },
+    "source_page_number": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Page number(s) in the source. Stored as string for ranges (e.g. '67\u201374')."
+    },
+    "source_notes": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY \u00b7 Notes about the source or this extraction (e.g. recension details, abjad discrepancies, alternate manuscript traditions noted in the source)."
+    },
+    "scholarly_data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          },
+          "verbatim_text": {
+            "type": "string",
+            "default": ""
+          },
+          "exact_meaning": {
+            "type": "string",
+            "default": ""
+          },
+          "arabic_text": {
+            "type": "string",
+            "default": ""
+          },
+          "transliteration": {
+            "type": "string",
+            "default": ""
+          },
+          "notes": {
+            "type": "string",
+            "default": ""
+          },
+          "imported_at": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "source_reference"
+        ]
+      },
+      "default": [],
+      "description": "CURRENT SCHOLARLY DATA \u00b7 One entry per uploaded scholarly source. Each holds the VERBATIM text from that source (never summarized, simplified, or invented). New sources APPEND here \u2014 existing entries are never overwritten. Every entry carries its full source citation."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string"
+          },
+          "page": {
+            "type": "string",
+            "default": ""
+          },
+          "url": {
+            "type": "string",
+            "default": ""
+          },
+          "imported_at": {
+            "type": "string",
+            "default": ""
+          },
+          "notes": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "reference"
+        ]
+      },
+      "default": [],
+      "description": "Full list of every source consulted for this card, with complete citation. Append-only \u2014 never deleted. For traceability."
+    },
+    "alternate_spellings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "arabic"
+        ]
+      },
+      "default": [],
+      "description": "Every alternate spelling attested by any source. Each with source citation. Append-only."
+    },
+    "alternate_pronunciations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pronunciation": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "pronunciation"
+        ]
+      },
+      "default": [],
+      "description": "Every alternate pronunciation/transliteration attested by any source. Append-only."
+    },
+    "alternate_meanings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "meaning": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "meaning"
+        ]
+      },
+      "default": [],
+      "description": "Every alternate meaning attested by any source (distinct from the primary exact_meaning). Append-only."
+    },
+    "alternate_abjad_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "abjad": {
+            "type": "integer"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "abjad"
+        ]
+      },
+      "default": [],
+      "description": "Every alternate Abjad value attested by any source (when a source differs from total_abjad_value). Append-only."
+    },
+    "invocation_wazifa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Invocation (Wazifa). Empty until approved."
+    },
+    "complete_birhatiyya_text": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Complete Birhat\u012bya text. Empty until approved."
+    },
+    "related_conjurations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related conjurations. Empty until approved."
+    },
+    "related_azaim": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related Az\u0101'im. Empty until approved."
+    },
+    "related_ruhaniyyat": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related R\u016b\u1e25\u0101niyy\u0101t. Empty until approved."
+    },
+    "related_talismans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related talismans. Empty until approved."
+    },
+    "related_magic_squares": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related magic squares (Awf\u0101q). Empty until approved."
+    },
+    "khawass": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Khaw\u0101\u1e63\u1e63 (specific properties). Empty until approved."
+    },
+    "amal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Amal (ritual work). Empty until approved."
+    },
+    "mujarrabat": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Mujarrab\u0101t (tested/efficacious). Empty until approved."
+    },
+    "khatam": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Khatam (seal). Empty until approved."
+    },
+    "dairah": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 D\u0101'irah (circle). Empty until approved."
+    },
+    "talisman_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Talisman images. Empty until approved."
+    },
+    "ritual_procedure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Ritual procedure. Empty until approved."
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Conditions. Empty until approved."
+    },
+    "number_of_recitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Number of recitations. Empty until approved."
+    },
+    "timing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Time/timing. Empty until approved."
+    },
+    "planet": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Planet. Empty until approved."
+    },
+    "lunar_mansion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Lunar mansion. Empty until approved."
+    },
+    "zodiac": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Zodiac. Empty until approved."
+    },
+    "incense": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Incense. Empty until approved."
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Colors. Empty until approved."
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Elements. Empty until approved."
+    },
+    "angels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Angels. Empty until approved."
+    },
+    "jinn": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Jinn. Empty until approved."
+    },
+    "servitors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Servitors. Empty until approved."
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Benefits. Empty until approved."
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Warnings. Empty until approved."
+    },
+    "scholarly_discussions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Scholarly discussions. Empty until approved."
+    },
+    "historical_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Historical notes. Empty until approved."
+    },
+    "manuscript_variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Manuscript variants. Empty until approved."
+    },
+    "related_books": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Related books. Empty until approved."
+    },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_reference": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "default": [],
+      "description": "ADVANCED \u00b7 Cross references. Empty until approved."
+    },
+    "attached_visuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "visual_url": {
+            "type": "string",
+            "description": "URL of the rendered page image showing the visual content exactly as it appears in the source book."
+          },
+          "visual_type": {
+            "type": "string",
+            "enum": [
+              "magic_square",
+              "wafq",
+              "table",
+              "symbol",
+              "seal",
+              "diagram",
+              "figure",
+              "grid",
+              "handwritten_chart",
+              "other"
+            ],
+            "default": "other",
+            "description": "Type of visual content: magic_square (wafq/awfaq), wafq (letter grid), table, symbol, seal, diagram, figure, grid, handwritten_chart, other."
+          },
+          "description": {
+            "type": "string",
+            "default": "",
+            "description": "Description of what the visual contains, generated during the scan."
+          },
+          "source_reference": {
+            "type": "string",
+            "default": "",
+            "description": "Book title / source reference where this visual appears."
+          },
+          "source_page": {
+            "type": "string",
+            "default": "",
+            "description": "Page number in the source PDF where this visual appears."
+          },
+          "name_id": {
+            "type": "string",
+            "default": "",
+            "description": "Which Birhat\u012bya name this visual relates to (HNK-MHC-001..028), or empty for general/whole-conjuration visuals."
+          },
+          "imported_at": {
+            "type": "string",
+            "default": "",
+            "description": "ISO 8601 timestamp when this visual was attached."
+          }
+        },
+        "required": [
+          "visual_url",
+          "visual_type"
+        ]
+      },
+      "default": [],
+      "description": "VISUAL CONTENT \u2014 rendered page images showing magic squares, wafq, tables, symbols, seals, diagrams, figures, grids from the source PDFs. Each visual is displayed underneath the related text content so the user can see the original square, symbol or figure exactly as it appears in the source book. APPEND-ONLY: new visuals are appended, never overwritten. Multiple versions from different books are preserved with their own citations. Populated by scanSectionCVisuals + attachSectionCVisual."
+    }
+  },
+  "required": [
+    "name_id",
+    "arabic_name"
+  ],
+  "indexes": [
+    {
+      "name": "idx_name_id",
+      "fields": [
+        "name_id"
+      ]
+    },
+    {
+      "name": "idx_arabic_normalized",
+      "fields": [
+        "arabic_normalized"
+      ]
+    },
+    {
+      "name": "idx_is_active",
+      "fields": [
+        "is_active"
+      ]
+    },
+    {
+      "name": "idx_order_index",
+      "fields": [
+        "order_index"
+      ]
+    },
+    {
+      "name": "idx_seeded",
+      "fields": [
+        "seeded"
+      ]
+    },
+    {
+      "name": "idx_verification_status",
+      "fields": [
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_original_static_id",
+      "fields": [
+        "original_static_id"
+      ]
+    },
+    {
+      "name": "idx_source_reference",
+      "fields": [
+        "source_reference"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

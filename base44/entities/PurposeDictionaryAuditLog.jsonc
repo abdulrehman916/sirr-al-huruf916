@@ -1,0 +1,101 @@
+{
+  "name": "PurposeDictionaryAuditLog",
+  "type": "object",
+  "description": "Audit trail for ALL Purpose Dictionary operations: imports, backups, rollbacks, restores, record creates/updates/deletes, merges, exports. ISOLATED \u2014 only PurposeDictionary management functions write to this. Never accessed by any Mizan, Ritual, Calculation, Timing, Astro, or UI subsystem outside the admin Purpose Dictionary manager.",
+  "properties": {
+    "log_id": {
+      "type": "string",
+      "description": "Unique log ID e.g. PDA-<timestamp>-<rand>"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "BACKUP_CREATED",
+        "BULK_IMPORT",
+        "IMPORT_COMPLETED",
+        "IMPORT_FAILED",
+        "ROLLBACK",
+        "RESTORE",
+        "RECORD_CREATE",
+        "RECORD_UPDATE",
+        "RECORD_DELETE",
+        "MERGE",
+        "EXPORT",
+        "VERSION_DELETED"
+      ],
+      "description": "Action type performed on the Purpose Dictionary"
+    },
+    "version_id": {
+      "type": "string",
+      "description": "Related PurposeDictionaryVersion version_id if applicable (null for individual record operations)"
+    },
+    "performed_by": {
+      "type": "string",
+      "description": "Admin user ID who performed the action"
+    },
+    "performed_by_email": {
+      "type": "string",
+      "description": "Admin email (denormalized for display)"
+    },
+    "details": {
+      "type": "string",
+      "description": "JSON string with action-specific structured context (before/after, fields changed, report summary, etc.)"
+    },
+    "record_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of PurposeDictionary records affected by this action"
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of the action"
+    }
+  },
+  "required": [
+    "log_id",
+    "action",
+    "timestamp"
+  ],
+  "indexes": [
+    {
+      "name": "idx_audit_timestamp",
+      "fields": [
+        "timestamp"
+      ]
+    },
+    {
+      "name": "idx_audit_action",
+      "fields": [
+        "action"
+      ]
+    },
+    {
+      "name": "idx_audit_version",
+      "fields": [
+        "version_id"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "name": "Subscription",
+  "type": "object",
+  "description": "Manual-access subscription record. Created by the Owner/Admin after confirming manual (offline) payment. Linked to a purchased page via page_path. No online payment gateway is used \u2014 access is granted manually through Access Codes and PagePermission. Gateway-specific columns have been removed; this entity stores only subscription metadata (user, plan, page, duration, status, grant/audit fields).",
+  "properties": {
+    "subscription_id": {
+      "type": "string",
+      "description": "Unique subscription ID e.g. SUB-000001"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Base44 User ID (foreign key)"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "User full name"
+    },
+    "user_phone": {
+      "type": "string",
+      "description": "User phone number"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User email address"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "SubscriptionPlan ID (e.g. PLAN_BASIC, PLAN_PREMIUM)"
+    },
+    "page_path": {
+      "type": "string",
+      "description": "Page route this subscription grants access to e.g. /abjad, /hadim"
+    },
+    "page_name": {
+      "type": "string",
+      "description": "Human-readable page name"
+    },
+    "plan_name": {
+      "type": "string",
+      "enum": [
+        "1_MONTH",
+        "6_MONTHS",
+        "1_YEAR",
+        "LIFETIME"
+      ],
+      "description": "Subscription plan type"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Amount paid (manual / offline)"
+    },
+    "currency": {
+      "type": "string",
+      "default": "AED",
+      "description": "Currency code"
+    },
+    "start_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp - subscription starts"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp - subscription expires (null for LIFETIME)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "ACTIVE",
+        "EXPIRED",
+        "CANCELLED"
+      ],
+      "default": "PENDING",
+      "description": "Current subscription status"
+    },
+    "granted_by": {
+      "type": "string",
+      "description": "Admin user ID who granted this subscription"
+    },
+    "granted_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when subscription was granted"
+    },
+    "last_modified_by": {
+      "type": "string",
+      "description": "Admin user ID who last modified"
+    },
+    "last_modified_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of last modification"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Admin notes about this subscription"
+    }
+  },
+  "required": [
+    "subscription_id",
+    "user_id",
+    "page_path",
+    "page_name",
+    "plan_name",
+    "start_date",
+    "status"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "$or": [
+        {
+          "user_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

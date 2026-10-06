@@ -1,0 +1,721 @@
+{
+  "name": "HolyNameKnowledge",
+  "type": "object",
+  "description": "INDEPENDENT Holy Names Knowledge database for the PDF Knowledge Import System on the Holy Names page ONLY. Completely separate from Section A's static magicalHolyNamesData array and from Section B's HolyOnePDFName entity. This entity holds the canonical Holy Name records (matching targets). Seeded once with the 99 Names of Allah (reference keys); ALL descriptive content (Malayalam meaning, description, benefits, usage, method, warnings, references, notes) comes ONLY from uploaded PDFs and is stored as HolyNameImportedSection child records \u2014 never AI-generated. Matching during import is done on arabic_normalized (harakat-stripped). ISOLATED \u2014 only seedHolyNameKnowledge and importHolyNamesPDF backend functions, and the Holy Names page PDF Knowledge tab, read/write this entity. Never used by any other module, engine, or page. EXTENDED (authoritative harakat + knowledge enrichment): new fields hold verified harakat, alternative readings, linguistic info, Islamic knowledge, traditional practices, and full source attribution for the Section A occult-name audit. record_class distinguishes the canonical 99-Name seed ('canonical_99') from the 443 occult Section-A names ('occult_section_a'). Existing records are never overwritten; enrichment only fills the new authoritative fields. SCHOLARLY SPELLING CORRECTION: when the imported arabic_name is a proven OCR/transcription error, the verification pass corrects arabic_name + arabic_normalized and records the full correction (spelling_corrected + spelling_correction) \u2014 identity of the name is always preserved, two different names are never merged. FULL RESEARCH PROFILE: each card is a complete scholarly research page \u2014 alternative_spellings, original_source_word, research_profile (history/pronunciation/refs/earliest occurrence), separated meanings, categorized source-supported benefits, relationship_to_99_names, and invocations (practices, invocations & manuscript texts). Every statement source-attributed; empty/'Not Verified' when unsupported; zero fabricated content.",
+  "properties": {
+    "name_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. For the 99-Name seed: HNK-001..HNK-099. For the 443 occult Section-A names: HNK-MHN-<original_static_id>. Used as FK in HolyNameImportedSection.name_id. Never changes."
+    },
+    "record_class": {
+      "type": "string",
+      "enum": [
+        "canonical_99",
+        "occult_section_a"
+      ],
+      "default": "canonical_99",
+      "description": "Distinguishes the canonical 99-Names-of-Allah seed records from the 443 occult Section-A names (from magicalHolyNamesData.js / Book of Deadly Names appendix). Default 'canonical_99' keeps existing seed records unchanged."
+    },
+    "arabic_name": {
+      "type": "string",
+      "description": "Arabic Holy Name with harakat preserved verbatim. The display + matching source. For occult names this is the spelling as printed in the source manuscript array (magicalHolyNamesData.js). When the scholarly verification pass proves the imported spelling/harakat was an OCR or transcription error, this field is CORRECTED to the documentary-evidence form (and arabic_normalized updated with it); the original imported form is preserved in spelling_correction.previous_spelling."
+    },
+    "arabic_normalized": {
+      "type": "string",
+      "default": "",
+      "description": "Arabic name WITHOUT harakat/tatweel, leading '\u0627\u0644' kept, normalized for indexed matching/search. Populated by the seeding/import functions and updated by the verification pass whenever arabic_name is corrected."
+    },
+    "transliteration": {
+      "type": "string",
+      "default": "",
+      "description": "Latin transliteration of the name (reference only)."
+    },
+    "malayalam_name": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam rendering of the name if found in a PDF. Empty until imported from a PDF."
+    },
+    "meaning_en": {
+      "type": "string",
+      "default": "",
+      "description": "English meaning (reference only for the canonical seed names)."
+    },
+    "order_index": {
+      "type": "integer",
+      "default": 0,
+      "description": "Display order (canonical order for seeded names)."
+    },
+    "section_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Denormalized count of HolyNameImportedSection records linked to this name. Updated by importHolyNamesPDF after each import."
+    },
+    "last_imported_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent PDF import that added sections to this name."
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Inactive names are excluded from matching and display."
+    },
+    "seeded": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this name came from the canonical 99-Names seed; false if discovered from a PDF or from the occult Section-A seed."
+    },
+    "original_static_id": {
+      "type": "integer",
+      "default": 0,
+      "description": "For record_class='occult_section_a' only: the original 1..443 id from magicalHolyNamesData.js, preserved permanently for traceability back to the source array."
+    },
+    "abjad_value": {
+      "type": "integer",
+      "default": 0,
+      "description": "For record_class='occult_section_a' only: the traditional occult Abjad value from magicalHolyNamesData.js (preserved verbatim, never recalculated)."
+    },
+    "letter_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "For record_class='occult_section_a' only: the letter count from magicalHolyNamesData.js (preserved verbatim)."
+    },
+    "occult_source_ref": {
+      "type": "string",
+      "default": "",
+      "description": "For record_class='occult_section_a' only: the source manuscript reference (e.g. 'Book of Deadly Names - Appendix of Magical Names (magicalHolyNamesData.js)')."
+    },
+    "canonical_arabic": {
+      "type": "string",
+      "default": "",
+      "description": "AUTHORITATIVE fully-vowelized canonical Arabic spelling, verified against authoritative sources for the name's actual linguistic origin. Empty until verified \u2014 NEVER guessed. When sources disagree, the preferred scholarly reading is stored here and variants go to alternative_readings. When the imported arabic_name was a proven OCR/transcription error, this holds the corrected form (and arabic_name is also corrected to it)."
+    },
+    "fully_vowelized_name": {
+      "type": "string",
+      "default": "",
+      "description": "Alias of canonical_arabic: the complete vowelized form with every harakah, hamza, madd, shaddah, sukoon, tanween verified. Empty until verified."
+    },
+    "spelling_corrected": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if the imported arabic_name spelling or harakat was corrected by the scholarly verification pass because the imported form was a proven OCR error or transcription mistake backed by documentary evidence. When true, arabic_name and arabic_normalized have been updated to the corrected values and spelling_correction holds the full correction record (previous vs corrected spelling/harakat, confidence, evidence, sources). The identity of the Holy Name is always preserved \u2014 never merged with a different name."
+    },
+    "spelling_correction": {
+      "type": "object",
+      "properties": {
+        "previous_spelling": {
+          "type": "string",
+          "default": ""
+        },
+        "corrected_spelling": {
+          "type": "string",
+          "default": ""
+        },
+        "previous_harakat": {
+          "type": "string",
+          "default": ""
+        },
+        "corrected_harakat": {
+          "type": "string",
+          "default": ""
+        },
+        "confidence": {
+          "type": "integer",
+          "default": 0
+        },
+        "evidence": {
+          "type": "string",
+          "default": ""
+        },
+        "corrected_at": {
+          "type": "string",
+          "default": ""
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "page": {
+                "type": "string",
+                "default": ""
+              },
+              "url": {
+                "type": "string",
+                "default": ""
+              }
+            }
+          },
+          "default": []
+        }
+      },
+      "default": {},
+      "description": "Full correction record when spelling_corrected=true: the previous imported spelling/harakat, the corrected spelling/harakat, a confidence score, the documentary evidence proving the correction, and the sources that establish the corrected form. Empty object when no correction was needed."
+    },
+    "alternative_readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic": {
+            "type": "string"
+          },
+          "reading_note": {
+            "type": "string",
+            "default": ""
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "page": {
+                  "type": "string",
+                  "default": ""
+                },
+                "url": {
+                  "type": "string",
+                  "default": ""
+                },
+                "language": {
+                  "type": "string",
+                  "default": ""
+                },
+                "reliability_score": {
+                  "type": "integer",
+                  "default": 0
+                }
+              }
+            },
+            "default": []
+          },
+          "preferred": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "arabic"
+        ]
+      },
+      "default": [],
+      "description": "Every alternative VOCALIZATION/harakat reading attested by a source, with its source(s) and a preferred flag. Populated only when authoritative sources disagree \u2014 never auto-overwritten."
+    },
+    "alternative_spellings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "page": {
+                  "type": "string",
+                  "default": ""
+                },
+                "url": {
+                  "type": "string",
+                  "default": ""
+                }
+              }
+            },
+            "default": []
+          }
+        },
+        "required": [
+          "arabic"
+        ]
+      },
+      "default": [],
+      "description": "Alternative SPELLINGS of the name (distinct from vocalization variants in alternative_readings). Each with source attribution. Append-only."
+    },
+    "original_source_word": {
+      "type": "string",
+      "default": "",
+      "description": "The original word in its source language (Hebrew/Syriac/Aramaic/Persian/etc.) when the name is a transliteration of a foreign Divine/angelic name. Empty when origin is Arabic or unknown."
+    },
+    "harakat_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "True only when every harakah, hamza, madd, shaddah, sukoon, tanween, and wasl/qat' has been confirmed by >=2 authoritative sources for the name's origin. False until then."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "verified",
+        "needs_review",
+        "conflicting_sources",
+        "not_in_classical_sources"
+      ],
+      "default": "unverified",
+      "description": "Harakat verification gate. 'unverified' = not yet audited. 'verified' = >=2 authoritative sources agree. 'needs_review' = insufficient or uncertain sources, manual review required. 'conflicting_sources' = authoritative sources disagree (alternative_readings populated). 'not_in_classical_sources' = name not found in any classical source of its origin (common for foreign transliterations)."
+    },
+    "verification_confidence": {
+      "type": "integer",
+      "default": 0,
+      "description": "Confidence score 0-100 for the harakat verification. 100 = >=2 top-tier sources agree. Lower when sources are weak, secondary, or disagree. 0 = not yet audited."
+    },
+    "verification_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string",
+            "default": ""
+          },
+          "publisher": {
+            "type": "string",
+            "default": ""
+          },
+          "edition": {
+            "type": "string",
+            "default": ""
+          },
+          "page": {
+            "type": "string",
+            "default": ""
+          },
+          "volume": {
+            "type": "string",
+            "default": ""
+          },
+          "url": {
+            "type": "string",
+            "default": ""
+          },
+          "access_date": {
+            "type": "string",
+            "default": ""
+          },
+          "language": {
+            "type": "string",
+            "default": ""
+          },
+          "reliability_score": {
+            "type": "integer",
+            "default": 0
+          },
+          "field_verified": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "title"
+        ]
+      },
+      "default": [],
+      "description": "Every source consulted for this name's verification, with full bibliographic attribution and a per-field note of what it verified. Append-only."
+    },
+    "last_verified_date": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 date of the most recent authoritative harakat verification pass."
+    },
+    "name_origin": {
+      "type": "string",
+      "enum": [
+        "hebrew",
+        "syriac",
+        "aramaic",
+        "arabic",
+        "persian",
+        "mixed",
+        "unknown"
+      ],
+      "default": "unknown",
+      "description": "The name's actual linguistic origin, determined honestly per name. 'hebrew'/'syriac'/'aramaic'/'persian' for foreign-origin occult transliterations; 'arabic' for genuine Arabic words; 'mixed' for hybrid forms; 'unknown' when origin cannot be determined (never guessed)."
+    },
+    "etymology": {
+      "type": "string",
+      "default": "",
+      "description": "Honest etymological trace of the name to its source language and original form (e.g. Hebrew \u05d0\u05b6\u05d4\u05b0\u05d9\u05b6\u05d4 \u2192 Arabic \u0623\u064e\u0647\u0652\u064a\u064e\u0627). Empty when origin is unknown \u2014 never fabricated."
+    },
+    "linguistic": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Linguistic information object: { root_letters, arabic_root, morphological_pattern, literal_meaning, lexical_meaning, classical_explanation, quranic_usage, hadith_usage, difference_from_similar, related_names, grammar_notes, origin_language }. Each sub-field filled ONLY from authoritative sources for the name's origin; left empty when not applicable (e.g. quranic_usage empty for Hebrew names not in the Qur'an)."
+    },
+    "islamic_knowledge": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Islamic knowledge object: { meaning, detailed_explanation, tafsir_refs, hadith_refs, scholarly_explanation, spiritual_significance, conditions_of_usage, authentic_duas, authentic_adhkar, quran_verses, classical_explanations }. Filled ONLY when the name genuinely appears in Islamic sources; left empty (not fabricated) for foreign-origin names absent from the Qur'an/Hadith/classical scholarship."
+    },
+    "traditional_practices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "wafq",
+              "amal",
+              "dua",
+              "hizb",
+              "dhikr",
+              "other"
+            ]
+          },
+          "text_ar": {
+            "type": "string",
+            "default": ""
+          },
+          "translation_en": {
+            "type": "string",
+            "default": ""
+          },
+          "translation_ml": {
+            "type": "string",
+            "default": ""
+          },
+          "source": {
+            "type": "string",
+            "default": ""
+          },
+          "authenticated": {
+            "type": "boolean",
+            "default": false
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "default": [],
+      "description": "Traditional manuscript practices (wafq/amal/dua/hizb/dhikr) associated with this name, with COMPLETE source attribution. authenticated=false and note='Traditional Manuscript Reference (Not authenticated)' when authenticity cannot be verified \u2014 never presented as established Islamic fact."
+    },
+    "research_profile": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "DEEP RESEARCH PROFILE (Gemini 3.1 Pro + live web search, scholarly sources only). Holds: { historical_background, pronunciation_guide, classical_dict_refs[], academic_refs[], manuscript_refs[], earliest_occurrence, related_historical_usage, linguistic_explanation, root_meaning, literal_meaning, root_letters, arabic_root, morphological_pattern }. Each sub-field filled ONLY from reliable sources; left empty or 'Not Verified' when unsupported. Never fabricated."
+    },
+    "meanings": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "SEPARATED MEANINGS: { arabic, malayalam, english, original, symbolic, historical, traditional }. symbolic ONLY when sourced. Each filled from reliable sources; empty when unsupported."
+    },
+    "benefits": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "SOURCE-SUPPORTED BENEFITS by category: { authentic_islamic[], linguistic[], historical[], traditional[], wafq[], amal[], esoteric[] }. Each entry: { text, sources[], authenticated }. Traditional/occult material labeled 'Traditional/Historical/Not Authenticated as Islamic Teaching' with authenticated=false. Never mix traditional occult material with authenticated Islamic teachings."
+    },
+    "relationship_to_99_names": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "RELATIONSHIP to the canonical 99 Names of Allah. { relationship_type, related_name_id, related_name_arabic, evidence, sources[] }. relationship_type: identical | alternate_reading | same_root | same_meaning | closely_related | synonymous | scholarly_relation | none | foreign_equivalent | traditional_only. 'none' = no authentic relationship found. Never invent relationships \u2014 state 'none' with evidence when absent."
+    },
+    "relationship_to_99_names_type": {
+      "type": "string",
+      "enum": [
+        "identical",
+        "alternate_reading",
+        "same_root",
+        "same_meaning",
+        "closely_related",
+        "synonymous",
+        "scholarly_relation",
+        "none",
+        "foreign_equivalent",
+        "traditional_only",
+        "unknown"
+      ],
+      "default": "unknown",
+      "description": "Denormalized relationship_type from relationship_to_99_names for indexed filtering. 'unknown' until audited."
+    },
+    "invocations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "authentic_islamic_dhikr",
+              "quranic_supplication",
+              "hadith_supplication",
+              "classical_wazifa",
+              "traditional_invocation",
+              "vefk_practice",
+              "talismanic_formula",
+              "occult_manuscript_practice",
+              "unknown_origin"
+            ],
+            "description": "Category of the invocation. NEVER mixed \u2014 each invocation belongs to exactly one category. authentic_islamic_dhikr/quranic_supplication/hadith_supplication = authentic Islamic evidence; classical_wazifa/traditional_invocation = traditional practice; vefk_practice/talismanic_formula/occult_manuscript_practice = occult; unknown_origin = origin cannot be determined."
+          },
+          "text_ar": {
+            "type": "string",
+            "description": "Original Arabic of the invocation, copied EXACTLY as printed in the source \u2014 every letter and harakat preserved verbatim. Never normalized, rewritten, or invented."
+          },
+          "text_harakat": {
+            "type": "string",
+            "default": "",
+            "description": "Fully vowelized form only if it differs from text_ar (e.g. when the source prints unvowelized but a verified vocalization exists). Empty otherwise."
+          },
+          "transliteration": {
+            "type": "string",
+            "default": "",
+            "description": "Latin transliteration of the invocation."
+          },
+          "translation_ml": {
+            "type": "string",
+            "default": "",
+            "description": "Complete, easy-to-understand Malayalam translation of the invocation. Empty when no translation is sourced."
+          },
+          "translation_en": {
+            "type": "string",
+            "default": "",
+            "description": "English translation of the invocation. Empty when no translation is sourced."
+          },
+          "source_book": {
+            "type": "string",
+            "default": "",
+            "description": "Source book / printed work title."
+          },
+          "author": {
+            "type": "string",
+            "default": "",
+            "description": "Author of the source work."
+          },
+          "chapter": {
+            "type": "string",
+            "default": "",
+            "description": "Chapter or section of the source."
+          },
+          "page": {
+            "type": "string",
+            "default": "",
+            "description": "Page number in the source."
+          },
+          "edition": {
+            "type": "string",
+            "default": "",
+            "description": "Edition of the source work if available."
+          },
+          "manuscript_ref": {
+            "type": "string",
+            "default": "",
+            "description": "Manuscript reference (library/collection/folio) when the source is a manuscript."
+          },
+          "publication": {
+            "type": "string",
+            "default": "",
+            "description": "Publication details (publisher, city, year) when available."
+          },
+          "url": {
+            "type": "string",
+            "default": "",
+            "description": "Source URL when available."
+          },
+          "purpose": {
+            "type": "string",
+            "default": "",
+            "description": "Documented purpose of the invocation."
+          },
+          "traditional_usage": {
+            "type": "string",
+            "default": "",
+            "description": "Traditional usage documented for the invocation."
+          },
+          "historical_usage": {
+            "type": "string",
+            "default": "",
+            "description": "Historical usage documented for the invocation."
+          },
+          "conditions": {
+            "type": "string",
+            "default": "",
+            "description": "Conditions of use documented for the invocation."
+          },
+          "repetitions": {
+            "type": "string",
+            "default": "",
+            "description": "Documented number of repetitions. Empty if not documented."
+          },
+          "timing": {
+            "type": "string",
+            "default": "",
+            "description": "Days or timing prescribed. Empty if not documented."
+          },
+          "preparation": {
+            "type": "string",
+            "default": "",
+            "description": "Required preparation documented. Empty if not documented."
+          },
+          "warnings": {
+            "type": "string",
+            "default": "",
+            "description": "Warnings documented for the invocation."
+          },
+          "authenticated": {
+            "type": "boolean",
+            "default": false,
+            "description": "True ONLY for authentic Islamic evidence (Qur'an/Hadith/classical scholarship). False for traditional/occult material."
+          },
+          "scholarly_opinions": {
+            "type": "string",
+            "default": "",
+            "description": "Scholarly opinions on this practice, each with attribution. Empty when none documented."
+          },
+          "evidence_level": {
+            "type": "string",
+            "enum": [
+              "authenticated",
+              "traditional",
+              "unknown"
+            ],
+            "default": "unknown",
+            "description": "authenticated = authentic Islamic evidence; traditional = historical/traditional practice not authenticated as Islamic teaching; unknown = origin cannot be determined."
+          }
+        },
+        "required": [
+          "category",
+          "text_ar"
+        ]
+      },
+      "default": [],
+      "description": "PRACTICES, INVOCATIONS & MANUSCRIPT TEXTS explicitly containing this Holy Name, collected ONLY from trusted historical sources, manuscripts, printed books, academic references, linguistic sources, traditional Islamic literature, and historical occult manuscripts. NEVER fabricated \u2014 every Arabic letter and harakat copied exactly as printed in its source; never normalized or rewritten. Each invocation is categorized (categories are NEVER mixed): authentic_islamic_dhikr, quranic_supplication, hadith_supplication, classical_wazifa, traditional_invocation, vefk_practice, talismanic_formula, occult_manuscript_practice, unknown_origin. authenticated=true and evidence_level='authenticated' ONLY for authentic Islamic evidence; traditional/occult material has authenticated=false and evidence_level='traditional' or 'unknown'. Every invocation carries full source attribution (source_book, author, chapter, page, edition, manuscript_ref, publication, url) plus purpose, traditional_usage, historical_usage, conditions, repetitions, timing, preparation, warnings, scholarly_opinions, and evidence_level. Multiple versions of the same invocation are stored as separate entries, each with its own source. Empty array when no historically documented invocation exists for this name \u2014 never invented."
+    },
+    "review_notes": {
+      "type": "string",
+      "default": "",
+      "description": "Manual review notes for records flagged verification_status='needs_review' or 'conflicting_sources'."
+    }
+  },
+  "required": [
+    "name_id",
+    "arabic_name"
+  ],
+  "indexes": [
+    {
+      "name": "idx_name_id",
+      "fields": [
+        "name_id"
+      ]
+    },
+    {
+      "name": "idx_record_class",
+      "fields": [
+        "record_class"
+      ]
+    },
+    {
+      "name": "idx_arabic_normalized",
+      "fields": [
+        "arabic_normalized"
+      ]
+    },
+    {
+      "name": "idx_is_active",
+      "fields": [
+        "is_active"
+      ]
+    },
+    {
+      "name": "idx_order_index",
+      "fields": [
+        "order_index"
+      ]
+    },
+    {
+      "name": "idx_seeded",
+      "fields": [
+        "seeded"
+      ]
+    },
+    {
+      "name": "idx_verification_status",
+      "fields": [
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_name_origin",
+      "fields": [
+        "name_origin"
+      ]
+    },
+    {
+      "name": "idx_harakat_verified",
+      "fields": [
+        "harakat_verified"
+      ]
+    },
+    {
+      "name": "idx_record_class_status",
+      "fields": [
+        "record_class",
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_original_static_id",
+      "fields": [
+        "original_static_id"
+      ]
+    },
+    {
+      "name": "idx_relationship_to_99_names_type",
+      "fields": [
+        "relationship_to_99_names_type"
+      ]
+    },
+    {
+      "name": "idx_spelling_corrected",
+      "fields": [
+        "spelling_corrected"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

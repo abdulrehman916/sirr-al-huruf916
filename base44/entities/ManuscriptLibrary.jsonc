@@ -1,0 +1,71 @@
+{
+  "name": "ManuscriptLibrary",
+  "type": "object",
+  "properties": {
+    "book_id": {
+      "type": "string",
+      "description": "Unique identifier for this manuscript"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Full title of the manuscript"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name"
+    },
+    "language": {
+      "type": "string",
+      "description": "Primary language of the manuscript"
+    },
+    "tradition": {
+      "type": "string",
+      "description": "Occult/scholarly tradition"
+    },
+    "pages_ingested": {
+      "type": "string",
+      "description": "Page range ingested e.g. 1-100"
+    },
+    "pdf_filename": {
+      "type": "string",
+      "description": "Original PDF filename"
+    },
+    "pdf_url": {
+      "type": "string",
+      "description": "Stored URL of the PDF file"
+    },
+    "total_rules_extracted": {
+      "type": "integer",
+      "description": "Count of rules extracted from this manuscript"
+    },
+    "categories_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of rule categories covered"
+    },
+    "ingestion_status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "PROCESSING",
+        "FULLY_INGESTED",
+        "PARTIAL"
+      ],
+      "default": "PENDING"
+    },
+    "ingestion_date": {
+      "type": "string",
+      "description": "Date of ingestion"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any notes about this manuscript"
+    }
+  },
+  "required": [
+    "book_name",
+    "book_id"
+  ]
+}

@@ -1,0 +1,1 @@
+export default function OTPEmailTest() { return <div>OTP Email Test</div>; }

@@ -1,0 +1,104 @@
+{
+  "name": "HolyOneName",
+  "type": "object",
+  "properties": {
+    "name_id": {
+      "type": "string",
+      "description": "Unique identifier e.g. HN-001"
+    },
+    "arabic_name": {
+      "type": "string",
+      "description": "Arabic name text"
+    },
+    "arabic_transliteration": {
+      "type": "string",
+      "description": "Arabic name transliterated in Latin script"
+    },
+    "malayalam_pronunciation": {
+      "type": "string",
+      "description": "Malayalam pronunciation of the name"
+    },
+    "meaning_malayalam": {
+      "type": "string",
+      "description": "Meaning in Malayalam"
+    },
+    "explanation_malayalam": {
+      "type": "string",
+      "description": "Complete Malayalam explanation"
+    },
+    "virtues_benefits": {
+      "type": "string",
+      "description": "Virtues and benefits in Malayalam"
+    },
+    "islamic_information": {
+      "type": "string",
+      "description": "Related Islamic information from PDF"
+    },
+    "authentic_notes": {
+      "type": "string",
+      "description": "Authentic notes from PDF"
+    },
+    "source_page": {
+      "type": "integer",
+      "description": "Page number in source PDF"
+    },
+    "source_reference": {
+      "type": "string",
+      "description": "Reference/citation from PDF"
+    },
+    "order_index": {
+      "type": "integer",
+      "description": "Display order (alphabetical or sequential)"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "User marked as favorite"
+    },
+    "view_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of times viewed"
+    },
+    "last_viewed": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of last view"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Admin user ID who imported"
+    },
+    "created_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name_id",
+    "arabic_name",
+    "malayalam_pronunciation",
+    "meaning_malayalam"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

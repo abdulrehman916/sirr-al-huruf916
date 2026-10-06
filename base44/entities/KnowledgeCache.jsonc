@@ -1,0 +1,417 @@
+{
+  "name": "KnowledgeCache",
+  "type": "object",
+  "description": "KNOWLEDGE INTELLIGENCE CACHE \u2014 the permanent, reusable, verified-knowledge store for the entire Sirr al-Huruf project. The single source of truth that lets every module (Holy Names, Du'a, Ayat, Wafq, Khawas, Mujarrabat, Abjad, Methods, Nine Mizan, Astro Clock, etc.) retrieve already-verified scholarly knowledge WITHOUT re-running AI, re-searching PDFs, or re-performing OCR. POPULATION: the Owner runs `unifiedKnowledgeSearch` (the Master PDF Library gateway); its AI-reconciled scholarly findings are saved here as a PENDING entry (verification_status='pending_review'). Nothing is ever auto-published. The Owner reviews via `approveKnowledgeEntry`; on approval the entry flips to 'verified' and becomes permanently reusable by every module. CONSUMPTION: modules call `getVerifiedKnowledge` which reads ONLY verification_status='verified' entries \u2014 zero AI, zero credits, instant retrieval. APPEND-ONLY (Law): scholarly_entries and citations are NEVER overwritten once verified. Re-approval of the same query for an updated dataset creates a NEW version_history entry preserving the previous verified payload (never destroys prior verified data). Every stored fact preserves full provenance (source book, page, PDF page, citation, date indexed, verification status, Owner approval history). PROVENANCE PRIVACY: stores ONLY scholarly citation metadata (book title, author, volume, edition, page number) \u2014 never raw file URLs, file IDs, or cloud paths (those live in the Owner-only ScholarlyProvenance entity). RLS: Owner-only direct access; modules read verified entries exclusively through the `getVerifiedKnowledge` backend function (service-role read, filtered to verified).",
+  "properties": {
+    "cache_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: KC-<content_hash>. Never changes. One per (query, mode) combination."
+    },
+    "query": {
+      "type": "string",
+      "description": "The original user/module query string exactly as submitted to unifiedKnowledgeSearch."
+    },
+    "mode": {
+      "type": "string",
+      "default": "harakat_insensitive",
+      "description": "Search mode used (arabic, harakat_insensitive, exact, malayalam, english, semantic, root, fuzzy). Part of the cache key."
+    },
+    "query_normalized": {
+      "type": "string",
+      "description": "Normalized cache key: lowercased + harakat-stripped query + '|' + mode. Used for cache lookup so '\u0627\u0644\u0631\u062d\u0645\u0646' and '\u0627\u0644\u0631\u064e\u0651\u062d\u0652\u0645\u064e\u0646\u064f' in the same mode hit the same cache entry."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 of query_normalized. Dedup key \u2014 two cache entries with the same content_hash are the same knowledge query."
+    },
+    "requesting_module": {
+      "type": "string",
+      "default": "unified_search",
+      "description": "Which module requested this knowledge (holy_names, dua, ayat, wafq, khawas, mujarrabat, abjad, methods, nine_mizan, astro_clock, unified_search). Set by the calling module; 'unified_search' when populated directly from the Unified Knowledge Search page."
+    },
+    "scholarly_entries": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "The AI-reconciled scholarly findings from unifiedKnowledgeSearch \u2014 the structured knowledge card payload. Keys: meanings, explanations, tafsir, khawass, mujarrabat, wazifa, hizb, dua, amal, magic_squares, talismans, repetitions, timings, conditions, warnings, benefits, related_verses, related_hadith, related_names, classical_references, comparison_summary, conflicts. Each value is an array of source-attributed entries. FROZEN once verification_status='verified' (append-only \u2014 never overwritten)."
+    },
+    "db_results_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "master_book_id": {
+            "type": "string"
+          },
+          "book_title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string",
+            "default": ""
+          },
+          "page_number": {
+            "type": "integer",
+            "default": 0
+          },
+          "page_label": {
+            "type": "string",
+            "default": ""
+          },
+          "edition": {
+            "type": "string",
+            "default": ""
+          },
+          "publisher": {
+            "type": "string",
+            "default": ""
+          },
+          "volume": {
+            "type": "string",
+            "default": ""
+          },
+          "language": {
+            "type": "string",
+            "default": ""
+          },
+          "publication_year": {
+            "type": "string",
+            "default": ""
+          },
+          "ocr_confidence": {
+            "type": "integer",
+            "default": 100
+          },
+          "content_hash": {
+            "type": "string",
+            "default": ""
+          },
+          "duplicate_status": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "master_book_id",
+          "book_title"
+        ]
+      },
+      "default": [],
+      "description": "Summary of the indexed Master PDF Library pages that supported this knowledge (citations). Book title / author / page / edition only \u2014 NO file URLs or cloud paths (provenance privacy law). Preserved permanently so every cached fact is traceable to its exact source pages."
+    },
+    "source_books": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string",
+            "default": ""
+          },
+          "page": {
+            "type": "string",
+            "default": ""
+          },
+          "pdf_page": {
+            "type": "integer",
+            "default": 0,
+            "description": "Physical PDF page number (the indexed page_number)."
+          },
+          "citation": {
+            "type": "string",
+            "default": "",
+            "description": "Full human-readable citation string."
+          },
+          "edition": {
+            "type": "string",
+            "default": ""
+          },
+          "publisher": {
+            "type": "string",
+            "default": ""
+          },
+          "language": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "book_title"
+        ]
+      },
+      "default": [],
+      "description": "Denormalized list of every source book/page that contributed to this cached knowledge. Used by modules to display 'Supported by N sources' with full citations. Append-only."
+    },
+    "linked_cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "module": {
+            "type": "string",
+            "description": "Which module's card: holy_names, dua, ayat, wafq, khawas, mujarrabat, abjad, methods, nine_mizan, astro_clock, sirr."
+          },
+          "card_id": {
+            "type": "string",
+            "description": "The card/record ID in that module's entity (e.g. HolyNameKnowledge.name_id)."
+          },
+          "card_title": {
+            "type": "string",
+            "default": ""
+          },
+          "linked_at": {
+            "type": "string",
+            "description": "ISO 8601 timestamp when this card was linked to this knowledge."
+          },
+          "linked_by": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "module",
+          "card_id"
+        ]
+      },
+      "default": [],
+      "description": "Links from this verified knowledge entry to the module cards that use it (req 5: 'link it to the related cards'). Append-only \u2014 a card link is never removed, only superseded by a new version_history entry. Enables a card to show all its supporting verified knowledge with citations."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "verified",
+        "rejected",
+        "needs_revision",
+        "superseded"
+      ],
+      "default": "pending_review",
+      "description": "Owner-approval gate. 'pending_review' = freshly generated by unifiedKnowledgeSearch, awaiting Owner \u2014 NEVER served to modules. 'verified' = Owner approved, permanently reusable by every module (getVerifiedKnowledge returns only these). 'rejected' = Owner rejected the findings. 'needs_revision' = Owner requested changes. 'superseded' = a newer verified version exists for the same query; the old entry is kept (append-only) but no longer served."
+    },
+    "confidence_score": {
+      "type": "integer",
+      "default": 0,
+      "description": "Overall confidence (0-100) of the cached knowledge \u2014 composite of OCR confidence, source count, and AI reconciliation quality. Stored at creation; frozen once verified."
+    },
+    "ocr_confidence_min": {
+      "type": "integer",
+      "default": 100,
+      "description": "Minimum OCR confidence among the source pages that supported this knowledge. Preserved for quality traceability."
+    },
+    "ai_was_used": {
+      "type": "boolean",
+      "default": true,
+      "description": "True if AI reconciliation ran to produce this entry (the first population always runs AI). Once verified, future identical queries hit the cache and AI is NOT run \u2014 this flag records that AI was used ONCE, permanently, for this knowledge."
+    },
+    "llm_model": {
+      "type": "string",
+      "default": "",
+      "description": "The LLM model used for the one-time reconciliation (e.g. gemini_3_flash). Recorded for provenance."
+    },
+    "approved_by": {
+      "type": "string",
+      "default": "",
+      "description": "Owner user ID who approved this entry as verified."
+    },
+    "approved_by_name": {
+      "type": "string",
+      "default": "",
+      "description": "Owner display name/email who approved."
+    },
+    "approved_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of Owner approval."
+    },
+    "approval_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "approved, rejected, needs_revision, superseded, linked_card, unlinked_card"
+          },
+          "user_id": {
+            "type": "string",
+            "default": ""
+          },
+          "user_name": {
+            "type": "string",
+            "default": ""
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "action",
+          "timestamp"
+        ]
+      },
+      "default": [],
+      "description": "APPEND-ONLY Owner approval history. Every Owner action (approve, reject, request revision, link a card, supersede) adds an entry. Never deleted, never overwritten. Full audit trail (req 8)."
+    },
+    "version_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "integer",
+            "description": "1-based version number."
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "description": "created, repopulated, approved, superseded"
+          },
+          "changed_by": {
+            "type": "string",
+            "default": ""
+          },
+          "changed_by_name": {
+            "type": "string",
+            "default": ""
+          },
+          "summary": {
+            "type": "string",
+            "default": ""
+          },
+          "previous_status": {
+            "type": "string",
+            "default": ""
+          },
+          "previous_payload_hash": {
+            "type": "string",
+            "default": "",
+            "description": "SHA-256 of the previous scholarly_entries payload \u2014 lets the Owner see exactly what changed between versions without storing the full old payload twice."
+          }
+        },
+        "required": [
+          "version",
+          "timestamp",
+          "action"
+        ]
+      },
+      "default": [],
+      "description": "APPEND-ONLY version history (req 9: never overwrite verified data). Every repopulation (new AI run for the same query) creates a new version; the previous verified payload's hash is preserved here so nothing is lost. The current verified payload lives in scholarly_entries; the chain of what changed lives here."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this cache entry was first created (pending)."
+    },
+    "last_served_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent module retrieval of this verified entry. Updated by getVerifiedKnowledge."
+    },
+    "serve_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "How many times modules have retrieved this verified entry. Proves the cache is saving AI calls \u2014 every serve_count increment = one AI run avoided."
+    },
+    "last_repopulated_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of the most recent re-run of unifiedKnowledgeSearch that updated this entry's pending payload (before re-approval)."
+    }
+  },
+  "required": [
+    "cache_id",
+    "query",
+    "query_normalized",
+    "content_hash",
+    "verification_status",
+    "scholarly_entries",
+    "created_at"
+  ],
+  "indexes": [
+    {
+      "name": "idx_cache_id",
+      "fields": [
+        "cache_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_query_normalized",
+      "fields": [
+        "query_normalized"
+      ]
+    },
+    {
+      "name": "idx_verification_status",
+      "fields": [
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_requesting_module",
+      "fields": [
+        "requesting_module"
+      ]
+    },
+    {
+      "name": "idx_status_module",
+      "fields": [
+        "verification_status",
+        "requesting_module"
+      ]
+    },
+    {
+      "name": "idx_approved_at",
+      "fields": [
+        "approved_at"
+      ]
+    },
+    {
+      "name": "idx_created_at",
+      "fields": [
+        "created_at"
+      ]
+    },
+    {
+      "name": "idx_serve_count",
+      "fields": [
+        "serve_count"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

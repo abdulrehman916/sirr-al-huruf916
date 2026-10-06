@@ -1,0 +1,54 @@
+{
+  "name": "ManagedPage",
+  "type": "object",
+  "description": "Owner-managed website content pages. Presentation/CMS data only; calculation engines and manuscript calculation rules are never stored here.",
+  "properties": {
+    "slug": { "type": "string", "description": "Unique public slug, e.g. dua-protection" },
+    "title_ml": { "type": "string" },
+    "title_en": { "type": "string" },
+    "title_ar": { "type": "string" },
+    "excerpt_ml": { "type": "string" },
+    "excerpt_en": { "type": "string" },
+    "excerpt_ar": { "type": "string" },
+    "body_ml": { "type": "string" },
+    "body_en": { "type": "string" },
+    "body_ar": { "type": "string" },
+    "category": { "type": "string", "default": "general" },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "PUBLISHED", "ARCHIVED"],
+      "default": "DRAFT"
+    },
+    "access_mode": {
+      "type": "string",
+      "enum": ["PUBLIC", "LOGIN", "PREMIUM", "PAID", "SELECTED_CUSTOMERS"],
+      "default": "PUBLIC"
+    },
+    "price_amount": { "type": "number", "default": 0 },
+    "price_currency": { "type": "string", "default": "AED" },
+    "featured_image_url": { "type": "string" },
+    "is_featured": { "type": "boolean", "default": false },
+    "seo_title": { "type": "string" },
+    "seo_description": { "type": "string" },
+    "published_at": { "type": "string" },
+    "last_published_by": { "type": "string" },
+    "version": { "type": "integer", "default": 1 }
+  },
+  "required": ["slug", "title_ml", "status", "access_mode"],
+  "indexes": [
+    { "name": "idx_managed_page_slug", "fields": ["slug"] },
+    { "name": "idx_managed_page_status", "fields": ["status"] },
+    { "name": "idx_managed_page_access", "fields": ["access_mode"] }
+  ],
+  "rls": {
+    "create": { "user_condition": { "role": "admin" } },
+    "read": {
+      "$or": [
+        { "data.status": "PUBLISHED" },
+        { "user_condition": { "role": "admin" } }
+      ]
+    },
+    "update": { "user_condition": { "role": "admin" } },
+    "delete": { "user_condition": { "role": "admin" } }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "name": "IhtilacKnowledge",
+  "type": "object",
+  "description": "Canonical store for \u0130htil\u00e2\u00e7 (body twitching/spasm) interpretations from verified manuscripts. Each record maps a specific body part twitch to its omen. ISOLATED \u2014 only classifyAndIngestScreenshot writes to this entity. Merge rules: never overwrite, never delete, preserve every source, remove exact duplicates only.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: IK-SCR-<timestamp>-<rand>."
+    },
+    "body_part_tr": {
+      "type": "string",
+      "description": "Original Turkish body part text verbatim (e.g., 'Aln\u0131n sa\u011f taraf\u0131n\u0131n se\u011frimesi')"
+    },
+    "body_part_en": {
+      "type": "string",
+      "description": "English translation of the body part (e.g., 'Right side of forehead twitching')"
+    },
+    "body_part_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "interpretation_tr": {
+      "type": "string",
+      "description": "Original Turkish interpretation verbatim (e.g., 'Mesrur olmaya ve zevke del\u00e2let eder')"
+    },
+    "interpretation_en": {
+      "type": "string",
+      "description": "English translation of the interpretation"
+    },
+    "interpretation_ml": {
+      "type": "string",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "source_system": {
+      "type": "string",
+      "enum": [
+        "ibrahim_hakki",
+        "cafer_i_sadik",
+        "general",
+        "unknown"
+      ],
+      "default": "general",
+      "description": "Which ihtil\u00e2\u00e7 system this entry belongs to."
+    },
+    "is_positive": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if the omen is positive (joy, wealth, good news), false if negative (grief, loss, warning)."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of normalized body_part_en + interpretation_en for exact duplicate detection."
+    },
+    "source_book_title": {
+      "type": "string",
+      "description": "Book title or screenshot label."
+    },
+    "source_page_number": {
+      "type": "string",
+      "description": "Page number if known."
+    },
+    "source_screenshot_url": {
+      "type": "string",
+      "description": "URL of the source screenshot. Preserved permanently for provenance."
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, no usable knowledge found. Never displayed."
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "Additional sources. Updated when duplicate content_hash is found. Every source preserved."
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "Total sources. 0 for markers."
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "body_part_tr",
+    "interpretation_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_source_system",
+      "fields": [
+        "source_system"
+      ]
+    },
+    {
+      "name": "idx_is_positive",
+      "fields": [
+        "is_positive"
+      ]
+    },
+    {
+      "name": "idx_body_part_en",
+      "fields": [
+        "body_part_en"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_screenshot_url",
+      "fields": [
+        "source_screenshot_url"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

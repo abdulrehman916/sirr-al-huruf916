@@ -1,0 +1,252 @@
+{
+  "name": "SectionDKnowledge",
+  "type": "object",
+  "description": "SECTION D \u2014 Card-based Holy Names library. Each Dua, Wazifa, Hizb, Hirz, Salawat, Qur'an reference and Spiritual Practice has its own individual card containing Arabic text, Malayalam translation, explanation, benefits, conditions, usage method, recommended repetition/day/planetary hour, related Holy Names/Wafq/Magic Squares, and full source citation. APPEND-ONLY (Law): records are never overwritten or deleted. Future PDF imports APPEND into the existing card (matched by canonical_key = content_type|entity) via the additional_sources array instead of creating duplicates. canonical_key is the dedup/merge key \u2014 two records with the same canonical_key are the same practice and are merged. Scalable to thousands of cards via server-side pagination on canonical_key + content_type indexes. ISOLATED \u2014 only separateExtractedKnowledge writes to this entity.",
+  "properties": {
+    "section_d_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: SD-MIG-<original_knowledge_id> or SD-<timestamp>-<rand>. Never changes."
+    },
+    "canonical_key": {
+      "type": "string",
+      "default": "",
+      "description": "DEDUP/MERGE KEY. Format: 'content_type|original_rule_entity'. Two records with the same canonical_key are the same practice \u2014 future imports APPEND to the existing card's additional_sources instead of creating a new card. Populated at creation. Indexed for O(1) lookup."
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "description": "Display title for the card. Defaults to the entity name (e.g., 'Bismillah', 'Salawat', 'Ayat al-Kursi'). Can be enriched with a more descriptive title from future PDF imports (append-only \u2014 never overwritten)."
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "long_dua",
+        "general_wazifa",
+        "general_khawass",
+        "general_mujarrabat",
+        "spiritual_practice",
+        "quran_reference",
+        "islamic_figure",
+        "miscellaneous"
+      ],
+      "description": "Type of Section D content. long_dua = extended supplications; general_wazifa = general devotional practices; general_khawass = general properties not tied to a specific Divine Name; general_mujarrabat = general tested/efficacious practices; spiritual_practice = spiritual practices related to Divine Names; quran_reference = Qur'an verses/surahs referenced in Holy Names context; islamic_figure = references to Islamic scholars/prophets/angels; miscellaneous = other authenticated Holy Names content."
+    },
+    "arabic_text": {
+      "type": "string",
+      "default": "",
+      "description": "PRIMARY SOURCE Arabic text verbatim. Every letter and harakah preserved exactly as printed in the original source. Never normalized, rewritten, or invented. This is the text from the first/primary source that created this card."
+    },
+    "malayalam_translation": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam translation of the Arabic text from the primary source. Faithful rendering of the meaning. Empty when no Malayalam is available in the source."
+    },
+    "explanation": {
+      "type": "string",
+      "default": "",
+      "description": "Explanation or commentary from the primary source. Preserved verbatim. Empty when the source provides no explanation."
+    },
+    "knowledge_text_en": {
+      "type": "string",
+      "default": "",
+      "description": "English summary for reference and citation tracking. Not the primary display text."
+    },
+    "benefits": {
+      "type": "string",
+      "default": "",
+      "description": "Benefits of this practice as documented in the source. Empty until a PDF import provides this information. Append-only \u2014 future imports add to this field with a separator, never overwrite."
+    },
+    "conditions": {
+      "type": "string",
+      "default": "",
+      "description": "Conditions that must be met for this practice (e.g., wudu, facing qibla, specific time). Empty until documented. Append-only."
+    },
+    "usage_method": {
+      "type": "string",
+      "default": "",
+      "description": "Step-by-step method of performing this practice. Empty until documented. Append-only."
+    },
+    "recommended_repetition": {
+      "type": "string",
+      "default": "",
+      "description": "Recommended number of repetitions (e.g., '66 times', '1000 times', '7 times after Fajr'). Empty if not documented."
+    },
+    "recommended_day": {
+      "type": "string",
+      "default": "",
+      "description": "Recommended day of the week or Islamic date (e.g., 'Friday', 'Monday', 'Laylat al-Qadr'). Empty if not documented."
+    },
+    "recommended_planetary_hour": {
+      "type": "string",
+      "default": "",
+      "description": "Recommended planetary hour if the practice is tied to a specific Saat (e.g., 'Hour of Jupiter', 'Saat 5 \u2014 daytime'). Empty if not applicable or not documented."
+    },
+    "related_holy_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Related Holy Names (Divine Names) connected to this practice. Each entry is a name or entity reference. Append-only \u2014 future imports add new names, never remove existing ones."
+    },
+    "related_wafq": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Related Wafq (magic squares/letter grids) connected to this practice. Append-only."
+    },
+    "related_magic_squares": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Related Magic Squares connected to this practice. Append-only."
+    },
+    "source_book_title": {
+      "type": "string",
+      "default": "",
+      "description": "Title of the primary source book (the first source that created this card)."
+    },
+    "source_page_number": {
+      "type": "string",
+      "default": "",
+      "description": "Page number(s) in the primary source book. Stored as string for ranges (e.g. '12,13,14')."
+    },
+    "citation": {
+      "type": "string",
+      "default": "",
+      "description": "Full human-readable citation of the primary source combining book title, author, page, and provenance metadata."
+    },
+    "additional_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic_text": {
+            "type": "string",
+            "default": "",
+            "description": "Verbatim Arabic text from this additional source."
+          },
+          "malayalam_translation": {
+            "type": "string",
+            "default": ""
+          },
+          "explanation": {
+            "type": "string",
+            "default": ""
+          },
+          "source_book_title": {
+            "type": "string",
+            "default": ""
+          },
+          "source_page_number": {
+            "type": "string",
+            "default": ""
+          },
+          "citation": {
+            "type": "string",
+            "default": ""
+          },
+          "imported_at": {
+            "type": "string",
+            "default": "",
+            "description": "ISO 8601 timestamp when this source was appended."
+          }
+        },
+        "required": [
+          "source_book_title"
+        ]
+      },
+      "default": [],
+      "description": "APPEND-ONLY list of additional sources that contributed to this card. Each entry preserves its own Arabic text, translation, explanation, and citation. When a future PDF import finds content for an existing canonical_key, the new source is appended here instead of creating a duplicate card. Never overwritten, never deleted."
+    },
+    "original_knowledge_id": {
+      "type": "string",
+      "default": "",
+      "description": "FK traceability: the original AstroClockKnowledge.knowledge_id this card was migrated from. Empty for non-migrated records."
+    },
+    "original_rule_category": {
+      "type": "string",
+      "default": "",
+      "description": "Traceability: the original AstroClockKnowledge.rule_category this record was migrated from."
+    },
+    "original_rule_entity": {
+      "type": "string",
+      "default": "",
+      "description": "Traceability: the original AstroClockKnowledge.rule_entity (e.g. 'bismillah', 'ayat_al_kursi') this record was migrated from. Part of the canonical_key."
+    },
+    "migrated_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp when this record was first migrated/created."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of (content_type + '|' + original_rule_entity + '|' + normalized arabic_text + knowledge_text_en). Used for exact-content dedup \u2014 a record with the same hash already exists and is skipped."
+    }
+  },
+  "required": [
+    "section_d_id",
+    "content_type",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_section_d_id",
+      "fields": [
+        "section_d_id"
+      ]
+    },
+    {
+      "name": "idx_canonical_key",
+      "fields": [
+        "canonical_key"
+      ]
+    },
+    {
+      "name": "idx_content_type",
+      "fields": [
+        "content_type"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_original_knowledge_id",
+      "fields": [
+        "original_knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_original_rule_entity",
+      "fields": [
+        "original_rule_entity"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

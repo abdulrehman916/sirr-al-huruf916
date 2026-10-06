@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "policy": "Calculation formulas, method structure and source-specific values are immutable unless a source-verified correction is explicitly approved.",
+  "files": {
+    "src/lib/abjadModes.js": "5ad95ad436b778f304ba068a4930165ac1cfda16afeeefded4c7896136723b3d",
+    "src/lib/abjadValues.js": "3f94aa9ce551241dcc255a6c5be01fef1e1ae278d834f1e5780d973871d658a5",
+    "src/lib/anasirEngine.js": "103f4d35ba4d9f7f46be21ab0784a35b8f759bae0efdadf1fe1b9fd6d0f910a2",
+    "src/lib/anasirValues.js": "18e75e4c1a36d1053937093e2eda1bd8bd7e0d64c3895049108f76e1c595714f",
+    "src/lib/bastHuroofData.js": "9ea666984522f861f73540aa23332610a460f8276248c72dec85ff646ce2449b",
+    "src/lib/bastHuroofEngine.js": "a3a0b9b14f2872ba7a3ceadb5e23644b4214d045ed3255f3b3faa94abe957e3b",
+    "src/lib/canonicalAbjadLock.js": "cdd5d9a81c9736f401198eb2191eae433375c4a36fdcab0b2a3cf90b01dfd04f",
+    "src/lib/hadimEngine.js": "5fe517130cb57e313a5a770751dd7dc41951af5cfa9c191fb19cf3b7c352c3d3",
+    "src/lib/mizaan9Data.js": "3901faa5f9e672f4abef517519ad6e22b83f67b3ee265b0dcf12ee58c32a640c",
+    "src/lib/mizaan9DataB.js": "005eef0f296b0a3b5c81432e2a86981bdd7c947cc3b64d58a687a04af661e4fe",
+    "src/lib/mizaan9DataC.js": "e362a77bb9dc64865c9c6fdbac7c9f5aae43f9364c4a473aeaecc11b4ebee3b4",
+    "src/lib/mizaan9Engine.js": "61fc9219c60f7b34f7c13bd77d62c9099f62c4c4a1c1d737f4747118f765f00c",
+    "src/lib/mizaanSaatCalculator.js": "13fdcceea0672418bc4f6ed739937bc4b4be2461f0d223c82b325786a6aed26b",
+    "src/lib/mizanCanonicalLock.js": "d7e24aad5199c1724405d3e7574305aaeb2f223d8a8e21854e23ef4ef574b046",
+    "src/lib/mizanRubaiAnalysis.js": "b395b7404b70369d80c24d5b280d7264d7ff37be2070bdf64b07fa78d6f004e2",
+    "src/lib/mizanValidation.js": "b550c0ccbcd90fadc0ed1ee69bc543b4401dd34a94e26f71f0c63c1006248cc9",
+    "src/lib/auditVefkCalculation.js": "e9c03955f769227363d6342082e3099de22a2cb2bed0ce83d1aa9ca0478bd7a2"
+  }
+}

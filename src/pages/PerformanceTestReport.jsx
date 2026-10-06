@@ -1,0 +1,1 @@
+export default function PerformanceTestReport() { return <div>Performance Test Report</div>; }

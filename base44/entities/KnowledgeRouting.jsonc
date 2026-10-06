@@ -1,0 +1,133 @@
+{
+  "name": "KnowledgeRouting",
+  "type": "object",
+  "description": "Tracks which ManuscriptEntry records have been classified by primary purpose and routed to their canonical module knowledge store. Each record links an entry_id to its primary purpose and the module it was enriched into. Prevents reprocessing \u2014 routeManuscriptKnowledge skips entries that already have a routing record. ISOLATED \u2014 only routeManuscriptKnowledge writes to this entity.",
+  "properties": {
+    "routing_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: KR-<entry_id>. One routing record per entry."
+    },
+    "entry_id": {
+      "type": "string",
+      "description": "FK to ManuscriptEntry.entry_id. The entry that was classified and routed."
+    },
+    "book_id": {
+      "type": "string",
+      "description": "FK to ManuscriptBook.book_id. Denormalized for efficient book-level queries."
+    },
+    "primary_purpose": {
+      "type": "string",
+      "enum": [
+        "astro_timing",
+        "dua",
+        "ritual",
+        "wafq",
+        "planet_info",
+        "zodiac_info",
+        "mansion_info",
+        "element_info",
+        "house_info",
+        "weekday_info",
+        "general_astro",
+        "other"
+      ],
+      "description": "The PRIMARY PURPOSE classification. astro_timing=timing/planetary hour, dua=supplication, ritual=amal/procedure, wafq=magic square, planet_info=planet-specific knowledge, zodiac_info=zodiac-specific, mansion_info=mansion-specific, element_info=element-specific, house_info=house-specific, weekday_info=weekday-specific, general_astro=general astro knowledge, other=material/herb/note (not routed)."
+    },
+    "routed_to": {
+      "type": "string",
+      "enum": [
+        "AstroClockKnowledge",
+        "DuaKnowledge",
+        "RitualKnowledge",
+        "WafqKnowledge",
+        "EntityKnowledge",
+        "none"
+      ],
+      "description": "The canonical module knowledge store this entry was enriched into. none for primary_purpose=other entries."
+    },
+    "knowledge_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "IDs of the knowledge records created in the canonical module store. Empty if the entry was a marker or routed_to=none."
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if the entry was routed to a module but no module-specific knowledge was found (the module enrichment function created a marker record)."
+    },
+    "routed_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when the routing record was created."
+    }
+  },
+  "required": [
+    "routing_id",
+    "entry_id",
+    "book_id",
+    "primary_purpose"
+  ],
+  "indexes": [
+    {
+      "name": "idx_routing_id",
+      "fields": [
+        "routing_id"
+      ]
+    },
+    {
+      "name": "idx_entry_id",
+      "fields": [
+        "entry_id"
+      ]
+    },
+    {
+      "name": "idx_book_id",
+      "fields": [
+        "book_id"
+      ]
+    },
+    {
+      "name": "idx_primary_purpose",
+      "fields": [
+        "primary_purpose"
+      ]
+    },
+    {
+      "name": "idx_routed_to",
+      "fields": [
+        "routed_to"
+      ]
+    },
+    {
+      "name": "idx_book_id_purpose",
+      "fields": [
+        "book_id",
+        "primary_purpose"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

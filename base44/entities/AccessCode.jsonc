@@ -1,0 +1,224 @@
+{
+  "name": "AccessCode",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Unique access code string e.g. ABDUL2026 (stored uppercase)"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Admin label \u2014 who this code is intended for"
+    },
+    "email": {
+      "type": "string",
+      "description": "Customer email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Customer phone number"
+    },
+    "whatsapp": {
+      "type": "string",
+      "description": "Customer WhatsApp number"
+    },
+    "page_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of page routes unlocked by this code"
+    },
+    "page_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Denormalized page display names, parallel to page_paths"
+    },
+    "page_durations": {
+      "type": "object",
+      "description": "Per-page duration settings. Keys are page paths, values are objects with {value, label, days, duration_ms, duration_type, duration_count, custom_date}",
+      "additionalProperties": true
+    },
+    "page_grants": {
+      "type": "object",
+      "description": "TRUE PER-PAGE EXPIRY source of truth. Map of page_path -> { granted_at, expires_at, duration_label }. Each page's timer is fully independent: granted_at = when the page was added to the code, expires_at = granted_at + duration (null = lifetime). Add/edit/remove/renew touch ONLY the affected page; other pages are never modified. expires_at is feature-aware (mirrors redeemCodeGuest.buildPermissions).",
+      "additionalProperties": true
+    },
+    "feature_durations": {
+      "type": "object",
+      "description": "Per-feature plan settings. Keys are 'page_path:feature_id', values are {plan_name, duration_days, is_lifetime}.",
+      "additionalProperties": true
+    },
+    "sub_features": {
+      "type": "object",
+      "description": "Map of page_path to array of feature IDs unlocked by this code.",
+      "additionalProperties": true
+    },
+    "duration": {
+      "type": "string",
+      "enum": [
+        "1_DAY",
+        "7_DAYS",
+        "30_DAYS",
+        "3_MONTHS",
+        "6_MONTHS",
+        "1_YEAR",
+        "LIFETIME",
+        "CUSTOM"
+      ],
+      "description": "Duration type (legacy field, use page_durations for per-page settings)"
+    },
+    "expiry_date": {
+      "type": "string",
+      "description": "ISO 8601 expiry timestamp. null = Lifetime (never expires). Coarse code-level guard only; per-page expiry is authoritative via page_grants."
+    },
+    "max_uses": {
+      "type": "integer",
+      "default": 1,
+      "description": "Maximum number of times this code can be redeemed."
+    },
+    "use_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "How many times this code has been redeemed so far"
+    },
+    "is_disabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Admin can disable a code to prevent further redemption"
+    },
+    "used_by_user_id": {
+      "type": "string",
+      "description": "Session ID of the first user who redeemed this code (device binding)"
+    },
+    "used_by_email": {
+      "type": "string",
+      "description": "Email or guest identifier of the first user who redeemed"
+    },
+    "linked_user_id": {
+      "type": "string",
+      "description": "Base44 User ID of the Google account this code is permanently linked to. Null = not yet linked. One code \u2194 one Google account. Set by linkAccessCode (Owner/Admin) or redeemCodeLinked (customer self-service)."
+    },
+    "linked_user_email": {
+      "type": "string",
+      "description": "Google email of the linked account (denormalized for admin display)."
+    },
+    "linked_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when the code was linked to the Google account."
+    },
+    "linked_by": {
+      "type": "string",
+      "description": "User ID of the Owner/Admin who performed the Google account link. Null if linked via customer self-service redemption."
+    },
+    "linked_by_name": {
+      "type": "string",
+      "description": "Display name/email of the Owner/Admin who linked the code (denormalized for admin display)."
+    },
+    "device_id": {
+      "type": "string",
+      "description": "Device/session ID that first redeemed this code. Permanently bound unless admin resets."
+    },
+    "used_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of first redemption"
+    },
+    "reset_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Number of times device binding was reset by admin"
+    },
+    "renewal_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "renewed_at": {
+            "type": "string"
+          },
+          "renewed_by": {
+            "type": "string"
+          },
+          "old_expiry": {
+            "type": "string"
+          },
+          "new_expiry": {
+            "type": "string"
+          },
+          "duration_type": {
+            "type": "string"
+          },
+          "duration_count": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "History of all renewals applied to this code"
+    },
+    "audit_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "admin_id": {
+            "type": "string"
+          },
+          "details": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Complete audit trail: CREATED, REDEEMED, REDEEMED_LINKED, LINKED_EXISTING, GOOGLE_LINKED, GOOGLE_UNLINKED, GOOGLE_TRANSFERRED, REJECTED_LINKED_ELSEWHERE, RENEWED, DISABLED, ENABLED, DELETED, RESET_DEVICE, ADDED_FEATURES, REMOVED_FEATURES"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Admin user ID who created this code"
+    },
+    "created_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of code creation (built-in)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional admin notes about this code"
+    }
+  },
+  "required": [
+    "code",
+    "customer_name",
+    "page_paths"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "superadmin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "superadmin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "superadmin"
+      }
+    }
+  }
+}

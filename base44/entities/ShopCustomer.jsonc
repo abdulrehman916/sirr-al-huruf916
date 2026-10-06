@@ -1,0 +1,104 @@
+{
+  "name": "ShopCustomer",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "description": "Unique customer ID e.g. CUS-000001"
+    },
+    "name": {
+      "type": "string",
+      "description": "Customer full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Customer email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Customer phone/WhatsApp number"
+    },
+    "whatsapp": {
+      "type": "string",
+      "description": "WhatsApp number with country code"
+    },
+    "country": {
+      "type": "string",
+      "description": "Customer country code e.g. AE, IN, SA, US, GB"
+    },
+    "city": {
+      "type": "string",
+      "description": "Customer city"
+    },
+    "address": {
+      "type": "string",
+      "description": "Shipping address"
+    },
+    "total_orders": {
+      "type": "integer",
+      "default": 0,
+      "description": "Total number of orders placed"
+    },
+    "total_spent_display": {
+      "type": "string",
+      "description": "Total amount spent (display string e.g. 'AED 500')"
+    },
+    "wishlist_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "notes": {
+      "type": "string",
+      "description": "Admin notes about this customer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "BLOCKED",
+        "VIP",
+        "NEW"
+      ],
+      "default": "NEW",
+      "description": "Customer status"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of customer creation"
+    },
+    "last_active": {
+      "type": "string",
+      "description": "ISO 8601 timestamp of last activity"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "name",
+    "status"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

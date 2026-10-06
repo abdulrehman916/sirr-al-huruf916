@@ -1,0 +1,254 @@
+{
+  "name": "EntityKnowledge",
+  "type": "object",
+  "description": "Canonical store for entity-specific manuscript knowledge displayed in entity detail pages on the Astrology page. Each record is linked to a specific entity (planet, zodiac, mansion, house, element, weekday, ritual, general_astro) and displayed in that entity's detail card via EntityKnowledgePanel. ISOLATED \u2014 only unifiedIngestKnowledge and migrateLegacyAstroKnowledge write to this entity. MERGE RULES: never overwrite, never delete, dedup by content_hash, merge complementary knowledge by canonical_key, preserve every source reference. DATA QUALITY: records with verification_status='pending_review' are hidden from users until admin review. Only verification_status='verified' records are displayed.",
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "description": "Permanent unique identifier. Format: EK-SCR-<timestamp>-<rand> for screenshots, EK-MAN-<book_id>-<seq> for manuscript entries, EK-MIG-<legacy_id> for migrated records."
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "planet",
+        "zodiac",
+        "mansion",
+        "weekday",
+        "house",
+        "element",
+        "ritual",
+        "general_astro"
+      ],
+      "description": "Which entity type this knowledge belongs to. Determines which entity detail page displays it. planet=Planet detail card, zodiac=Zodiac detail card, mansion=Mansion detail card, house=House reference, element=Element reference, weekday=Day reference, ritual=Ritual reference, general_astro=General Astrology section."
+    },
+    "entity_key": {
+      "type": "string",
+      "description": "The specific entity identifier (lowercase). planet: sun/moon/mars/mercury/jupiter/venus/saturn. zodiac: aries/taurus/gemini/cancer/leo/virgo/libra/scorpio/sagittarius/capricorn/aquarius/pisces. mansion: 1-28. house: 1-12. element: fire/earth/air/water. weekday: 0-6. ritual: short name. general_astro: general."
+    },
+    "knowledge_category": {
+      "type": "string",
+      "description": "Category of knowledge: properties, traits, relationships, timing_rules, ritual_instructions, warnings, incense, health, general."
+    },
+    "knowledge_text_en": {
+      "type": "string",
+      "description": "English text of the knowledge. Merged from multiple sources \u2014 new sources append with separator, never overwrite."
+    },
+    "knowledge_text_ml": {
+      "type": "string",
+      "default": "",
+      "description": "Malayalam translation. Empty until translated."
+    },
+    "knowledge_text_ar": {
+      "type": "string",
+      "default": "",
+      "description": "Original Arabic text verbatim. Appended from new sources \u2014 never modified."
+    },
+    "structured_data": {
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "description": "Structured knowledge data as JSON object (e.g., {colors: ['red'], actions: ['protection'], traits: ['hot', 'dry']}). Merged from multiple sources."
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of normalized entity_type + '|' + entity_key + '|' + knowledge_text_en (first 200 chars) for exact duplicate detection."
+    },
+    "canonical_key": {
+      "type": "string",
+      "description": "Format: 'entity_type|entity_key|knowledge_category'. Records with same canonical_key are merged \u2014 complementary knowledge is appended, never overwritten."
+    },
+    "is_marker": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, no usable knowledge found. Never displayed."
+    },
+    "source_book_id": {
+      "type": "string",
+      "default": "",
+      "description": "FK to ManuscriptBook.book_id. Empty for screenshots."
+    },
+    "source_book_title": {
+      "type": "string",
+      "default": "",
+      "description": "Denormalized book title for display."
+    },
+    "source_page_number": {
+      "type": "string",
+      "default": "",
+      "description": "Page number in the source PDF. Empty for screenshots."
+    },
+    "source_entry_id": {
+      "type": "string",
+      "default": "",
+      "description": "FK to ManuscriptEntry.entry_id. Empty for screenshots."
+    },
+    "source_screenshot_url": {
+      "type": "string",
+      "default": "",
+      "description": "URL of the source screenshot image. Preserved permanently for provenance."
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if source ManuscriptEntry was verified."
+    },
+    "extraction_confidence": {
+      "type": "number",
+      "default": 100,
+      "description": "LLM extraction confidence score (0-100). 100=fully confident. Below 70 = uncertain, marked for review."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "pending_review"
+      ],
+      "default": "verified",
+      "description": "Data quality gate. 'verified' = displayed to users. 'pending_review' = hidden until admin review. Default 'verified' so existing records remain visible."
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "book_title": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": "string"
+          },
+          "entry_id": {
+            "type": "string"
+          },
+          "screenshot_url": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "Additional sources. Updated when duplicate content_hash or canonical_key match is found. Every source preserved permanently."
+    },
+    "source_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "Total sources. 0 for markers."
+    }
+  },
+  "required": [
+    "knowledge_id",
+    "entity_type",
+    "entity_key",
+    "knowledge_text_en",
+    "content_hash"
+  ],
+  "indexes": [
+    {
+      "name": "idx_knowledge_id",
+      "fields": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "name": "idx_entity_type",
+      "fields": [
+        "entity_type"
+      ]
+    },
+    {
+      "name": "idx_entity_key",
+      "fields": [
+        "entity_key"
+      ]
+    },
+    {
+      "name": "idx_entity_type_key",
+      "fields": [
+        "entity_type",
+        "entity_key"
+      ]
+    },
+    {
+      "name": "idx_content_hash",
+      "fields": [
+        "content_hash"
+      ]
+    },
+    {
+      "name": "idx_canonical_key",
+      "fields": [
+        "canonical_key"
+      ]
+    },
+    {
+      "name": "idx_is_marker",
+      "fields": [
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_entry_id",
+      "fields": [
+        "source_entry_id"
+      ]
+    },
+    {
+      "name": "idx_source_book_id",
+      "fields": [
+        "source_book_id"
+      ]
+    },
+    {
+      "name": "idx_entity_type_key_category",
+      "fields": [
+        "entity_type",
+        "entity_key",
+        "knowledge_category"
+      ]
+    },
+    {
+      "name": "idx_entity_type_marker",
+      "fields": [
+        "entity_type",
+        "is_marker"
+      ]
+    },
+    {
+      "name": "idx_source_screenshot_url",
+      "fields": [
+        "source_screenshot_url"
+      ]
+    },
+    {
+      "name": "idx_verification_status",
+      "fields": [
+        "verification_status"
+      ]
+    },
+    {
+      "name": "idx_entity_type_key_verified",
+      "fields": [
+        "entity_type",
+        "entity_key",
+        "verification_status"
+      ]
+    }
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

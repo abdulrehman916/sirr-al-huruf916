@@ -1,0 +1,1 @@
+export default function AuditTableRendering() { return <div>Audit Table Rendering</div>; }
