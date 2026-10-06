@@ -47,11 +47,11 @@ const entityApi = (entity) => ({
     return hydrateRecord(unwrap(await byRecordId(client().from('platform_records').select('*').eq('entity', entity), id).maybeSingle()));
   },
   async create(data) {
-    return hydrateRecord(unwrap(await client().from('platform_records').insert({ entity, data }).select().single()));
+    return hydrateRecord(unwrap(await client().from('platform_records').insert({ entity, data: references.restore(data) }).select().single()));
   },
   async update(id, data) {
     const current = unwrap(await byRecordId(client().from('platform_records').select('id,data').eq('entity', entity), id).single());
-    const row = unwrap(await client().from('platform_records').update({ data: { ...(current?.data || {}), ...data } })
+    const row = unwrap(await client().from('platform_records').update({ data: { ...(current?.data || {}), ...references.restore(data) } })
       .eq('entity', entity).eq('id', current.id).select().single());
     return hydrateRecord(row);
   },
@@ -61,7 +61,7 @@ const entityApi = (entity) => ({
   },
   async bulkCreate(rows = []) {
     if (!rows.length) return [];
-    return Promise.all(unwrap(await client().from('platform_records').insert(rows.map((data) => ({ entity, data }))).select()).map(hydrateRecord));
+    return Promise.all(unwrap(await client().from('platform_records').insert(rows.map((data) => ({ entity, data: references.restore(data) }))).select()).map(hydrateRecord));
   },
   async bulkUpdate(rows = []) {
     return Promise.all(rows.map((row) => { const { id, ...data } = row; return entityApi(entity).update(id, data); }));

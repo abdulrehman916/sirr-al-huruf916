@@ -5,6 +5,7 @@ const PREFIX = 'storage://private-documents/';
 // previous external host.
 export function createReferenceResolver(getClient) {
   const cache = new Map();
+  const originals = new Map();
   async function resolve(value) {
     if (typeof value === 'string' && value.startsWith(PREFIX)) {
       const { data } = await getClient().auth.getSession();
@@ -14,7 +15,11 @@ export function createReferenceResolver(getClient) {
       if (!entry || entry.until <= Date.now()) {
         const promise = getClient().storage.from('private-documents')
           .createSignedUrl(path, 900)
-          .then(({ data, error }) => error ? null : data?.signedUrl || null)
+          .then(({ data, error }) => {
+            const signedUrl = error ? null : data?.signedUrl || null;
+            if (signedUrl) originals.set(signedUrl, value);
+            return signedUrl;
+          })
           .catch(() => null);
         entry = { until: Date.now() + 600_000, promise };
         cache.set(path, entry);
@@ -29,5 +34,26 @@ export function createReferenceResolver(getClient) {
     }
     return value;
   }
-  return { resolve, clear: () => cache.clear() };
+  // Signed URLs are display values, never durable record data. Restore their
+  // private object references before saving an edited card.
+  function restore(value) {
+    if (typeof value === 'string') {
+      if (originals.has(value)) return originals.get(value);
+      try {
+        const parsed = new URL(value);
+        const ownOrigin = new URL(getClient().supabaseUrl).origin;
+        const signedPath = '/storage/v1/object/sign/private-documents/';
+        if (parsed.origin === ownOrigin && parsed.pathname.startsWith(signedPath)) {
+          return PREFIX + decodeURIComponent(parsed.pathname.slice(signedPath.length));
+        }
+      } catch { /* Ordinary content is not a storage URL. */ }
+      return value;
+    }
+    if (Array.isArray(value)) return value.map(restore);
+    if (value && typeof value === 'object') {
+      return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, restore(item)]));
+    }
+    return value;
+  }
+  return { resolve, restore, clear: () => { cache.clear(); originals.clear(); } };
 }
