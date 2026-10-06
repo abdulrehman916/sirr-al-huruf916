@@ -26,5 +26,11 @@ jobs:
         run: npm ci
       - name: Verify locked calculation core
         run: npm run verify:calculations
+      - name: Verify record relationships and private references
+        run: npm run verify:records && npm run verify:private-references && npm run verify:independence
+      - name: Lint source
+        run: npm run lint
+      - name: Compare source calculation outputs
+        run: npm run verify:calculation-source && npm run verify:calculation-regression && npm run verify:async-calculation
       - name: Build production bundle
         run: npm run build
