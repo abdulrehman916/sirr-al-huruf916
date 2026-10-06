@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Star, BookOpen, Calendar } from "lucide-react";
 import { ASTEROID_METADATA, ASTEROID_TIMING_RULES } from "@/lib/astroClockAsteroidData";
 
@@ -32,7 +31,7 @@ export default function AsteroidKnowledgeSummary() {
           borderColor: G.borderHi,
           boxShadow: `0 0 40px ${G.glow}, 0 4px 28px rgba(0,0,0,0.50), inset 0 1px 0 rgba(212,175,55,0.10)`,
         }}>
-        
+
         <div className="flex items-center gap-3 mb-4">
           <Star className="w-5 h-5" style={{ color: G.text }} />
           <h2 className="font-inter text-lg font-bold uppercase tracking-widest" style={{ color: G.text }}>
@@ -96,7 +95,7 @@ export default function AsteroidKnowledgeSummary() {
           background: "rgba(212,175,55,0.04)",
           borderColor: "rgba(212,175,55,0.20)",
         }}>
-        
+
         <div className="grid grid-cols-2 gap-3">
           <div className="text-center">
             <p className="font-inter text-[9px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>

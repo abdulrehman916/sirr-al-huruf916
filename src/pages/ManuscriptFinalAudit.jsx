@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Book, FileText, Layers, CheckCircle, AlertTriangle, XCircle, Database, Hash, FolderOpen } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Book, FileText, Layers, CheckCircle, AlertTriangle, Database, Hash, FolderOpen } from "lucide-react";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -33,16 +33,16 @@ export default function ManuscriptFinalAudit() {
     try {
       setLoading(true);
       // Run verifyManuscriptDatabase
-      const verifyRes = await base44.functions.invoke('verifyManuscriptDatabase', {});
+      const verifyRes = await platform.functions.invoke('verifyManuscriptDatabase', {});
       const verifyData = verifyRes.data.verification_audit;
 
       // Get manuscript library details
-      const manuscripts = await base44.entities.ManuscriptLibrary.list();
-      const rules = await base44.entities.ManuscriptRule.list();
-      
+      const manuscripts = await platform.entities.ManuscriptLibrary.list();
+      const rules = await platform.entities.ManuscriptRule.list();
+
       const categories = new Set(rules.map(r => r.category));
       const orphaned = rules.filter(r => !manuscripts.some(m => m.book_id === r.manuscript_id));
-      
+
       // Calculate page coverage
       const allPages = rules.map(r => r.page_number).filter(p => p != null);
       const minPage = Math.min(...allPages);
@@ -222,8 +222,8 @@ export default function ManuscriptFinalAudit() {
             <CoverageStat label="Page Range" value={`p.${audit.page_coverage.min_page}–${audit.page_coverage.max_page}`} />
             <CoverageStat label="Unique Pages" value={audit.page_coverage.unique_pages} />
             <CoverageStat label="Coverage" value={`${audit.page_coverage.coverage_percentage}%`} />
-            <CoverageStat 
-              label="Missing Pages" 
+            <CoverageStat
+              label="Missing Pages"
               value={audit.page_coverage.missing_pages.length}
               highlight={audit.page_coverage.missing_pages.length > 0}
             />

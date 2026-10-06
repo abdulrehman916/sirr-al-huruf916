@@ -4,7 +4,6 @@
 // Astro Clock module only — completely isolated
 // ═══════════════════════════════════════════════════════════════
 
-import { Info } from "lucide-react";
 
 const G = {
   border: "rgba(212,175,55,0.40)",

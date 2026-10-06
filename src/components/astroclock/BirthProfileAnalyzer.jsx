@@ -6,9 +6,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, Clock, MapPin, Star, Moon, Sun, Info, ChevronDown, Sparkles } from "lucide-react";
-import { calculateBirthProfile, analyzeCompatibility, BIRTH_PROFILE_STATUS } from "@/lib/astroClockBirthProfile.js";
-import { getCurrentPlanetaryHour, getAllPlanetaryHours, PLANET_INFO } from "@/lib/astroClockLiveEngine.js";
+import { Calendar, Clock, Star, Moon, Sun, Info, Sparkles } from "lucide-react";
+import { calculateBirthProfile, analyzeCompatibility } from "@/lib/astroClockBirthProfile.js";
+import { getCurrentPlanetaryHour, PLANET_INFO } from "@/lib/astroClockLiveEngine.js";
 import { calculateSunriseSunset, getUserLocation } from "@/lib/astroClockSunriseSunset.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import ZodiacTab from "./BirthProfileTabs/ZodiacTab.jsx";
@@ -49,7 +49,7 @@ export default function BirthProfileAnalyzer() {
       const userLoc = getUserLocation();
       const sunData = calculateSunriseSunset(now, userLoc.lat, userLoc.lng, userLoc.timezone);
       const currentHourData = getCurrentPlanetaryHour(now, sunData.sunrise, sunData.sunset);
-      
+
       setLiveData({
         currentHour: currentHourData,
         dayRuler: currentHourData.dayRuler,
@@ -68,7 +68,7 @@ export default function BirthProfileAnalyzer() {
     if (birthDate) {
       const profile = calculateBirthProfile(birthDate, birthTime || null, birthPlace || "Unknown");
       setBirthProfile(profile);
-      
+
       if (profile && currentHour) {
         const compat = analyzeCompatibility(profile, currentHour);
         setCompatibility(compat);
@@ -80,7 +80,7 @@ export default function BirthProfileAnalyzer() {
     if (birthDate) {
       const profile = calculateBirthProfile(birthDate, birthTime || null, birthPlace || "Unknown");
       setBirthProfile(profile);
-      
+
       if (profile && currentHour) {
         const compat = analyzeCompatibility(profile, currentHour);
         setCompatibility(compat);
@@ -141,7 +141,7 @@ export default function BirthProfileAnalyzer() {
             }}
           />
         </div>
-        
+
         <div>
           <label className="block font-inter text-[9px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>
             {isMalayalam ? "ജനന സമയം" : "Time of Birth"}
@@ -159,7 +159,7 @@ export default function BirthProfileAnalyzer() {
             }}
           />
         </div>
-        
+
         <div className="md:col-span-2">
           <label className="block font-inter text-[9px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>
             {isMalayalam ? "ജനന സ്ഥലം" : "Place of Birth"}
@@ -254,7 +254,7 @@ export default function BirthProfileAnalyzer() {
                     {isMalayalam ? "നിലവിലെ സമയവുമായുള്ള താരതമ്യം" : "Comparison With Current Time"}
                   </p>
                 </div>
-                
+
                 <div className="mb-3">
                   <div className="flex items-center justify-between mb-2">
                     <p className="font-inter text-xs text-white/80">
@@ -330,7 +330,7 @@ export default function BirthProfileAnalyzer() {
               {isMalayalam ? "കുറിപ്പ്" : "Note"}
             </p>
             <p className="font-inter text-xs text-white/60">
-              {isMalayalam 
+              {isMalayalam
                 ? "ജനന തീയതി നൽകിയാൽ മാത്രമേ വിശകലനം സാധ്യമാകൂ. സമയവും സ്ഥലവും ഐച്ഛികമാണ്."
                 : "Date of birth is required for analysis. Time and place are optional for enhanced accuracy."}
             </p>

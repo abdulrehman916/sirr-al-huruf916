@@ -120,7 +120,7 @@ export default function PlanetEncyclopedia() {
                   <div className="px-2.5 pb-2.5 space-y-2.5">
 
                     {/* ── TOPIC: Identity & Element ── */}
-                    <Topic title={txt("തിരിച്ചറിയലും മൂലകവും", "Identity & Element", "Kimlik & Element")}>
+                    <Topic title={txt("അടയാളവും മൂലകവും", "Identity & Element", "Kimlik & Element")}>
                       <div className="grid grid-cols-2 gap-1.5 text-[10px]">
                         {language === "ar" && <div><span className="font-bold" style={{ color: "rgba(255,255,255,0.40)" }}>{txt("അറബി പദം", "Arabic", "العربية")}: </span><span className="font-amiri" style={{ color: "rgba(255,255,255,0.65)" }}>{PLANET_AR_ML[key]?.ar || info.name_ar}</span></div>}
                         {language === "ml" && <div><span className="font-bold" style={{ color: "rgba(255,255,255,0.40)" }}>{txt("മലയാള അർത്ഥം", "Malayalam", "مالايالام")}: </span><span style={{ color: "rgba(255,255,255,0.65)" }}>{PLANET_AR_ML[key]?.ml || info.name_ml_equivalent}</span></div>}
@@ -148,7 +148,7 @@ export default function PlanetEncyclopedia() {
                             <Src src={SRC_HAVASS} page="88-92" language={language} isOwner={isOwner} />
                             <div className="grid grid-cols-3 gap-1.5 w-full">
                               <div>
-                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(74,222,128,0.50)" }}>{txt("സുഹൃത്തുകൾ", "Friends", "Dostlar")}</p>
+                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(74,222,128,0.50)" }}>{txt("സുഹൃത്", "Friends", "Dostlar")}</p>
                                 <p className="font-inter text-[9px]" style={{ color: "rgba(74,222,128,0.70)" }}>{friendNamesHavass.join(", ") || "—"}</p>
                               </div>
                               <div>
@@ -156,7 +156,7 @@ export default function PlanetEncyclopedia() {
                                 <p className="font-inter text-[9px]" style={{ color: "rgba(248,113,113,0.70)" }}>{enemyNamesHavass.join(", ") || "—"}</p>
                               </div>
                               <div>
-                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(251,191,36,0.50)" }}>{txt("നിഷ്പക്ഷം", "Neutral", "Nötr")}</p>
+                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(251,191,36,0.50)" }}>{txt("നിരപേക്ഷം", "Neutral", "Nötr")}</p>
                                 <p className="font-inter text-[9px]" style={{ color: "rgba(251,191,36,0.70)" }}>{neutralNamesHavass.join(", ") || "—"}</p>
                               </div>
                             </div>
@@ -170,7 +170,7 @@ export default function PlanetEncyclopedia() {
                             <Src src={SRC_GIH} page={gihRel.source_page} language={language} isOwner={isOwner} />
                             <div className="grid grid-cols-2 gap-1.5 w-full">
                               <div>
-                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(74,222,128,0.50)" }}>{txt("സുഹൃത്ത്", "Friend", "Dost")}</p>
+                                <p className="font-inter text-[8px] uppercase tracking-wider font-bold" style={{ color: "rgba(74,222,128,0.50)" }}>{txt("സുഹൃത്", "Friend", "Dost")}</p>
                                 <p className="font-inter text-[9px]" style={{ color: "rgba(74,222,128,0.70)" }}>{gihFriend || "—"}</p>
                               </div>
                               <div>

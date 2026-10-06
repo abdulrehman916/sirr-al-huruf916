@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useI18n } from '@/i18n/I18nContext';
 import useTranslation from '@/i18n/useTranslation';
-import { Sparkles, ArrowRight, Globe } from 'lucide-react';
+import { ArrowRight, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AtmosphericBackground from '@/components/AtmosphericBackground';
 

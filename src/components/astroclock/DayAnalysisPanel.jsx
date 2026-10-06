@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, Star, Heart, Briefcase, Plane, Shield, BookOpen, Info } from "lucide-react";
-import { DAY_INFO, PLANET_INFO } from "@/lib/astroClockLiveEngine";
+import { Calendar, Heart, Briefcase, Plane, Shield, BookOpen } from "lucide-react";
+import { DAY_INFO } from "@/lib/astroClockLiveEngine";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { useAstroData } from "./dashboard/useAstroData";
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 /**
  * Read-only hook for the Sirr module's book library.
@@ -15,7 +15,7 @@ export function useSirrBooks() {
   useEffect(() => {
     let alive = true;
     setLoading(true);
-    base44.entities.SirrManuscriptBook.list("-upload_date", 100)
+    platform.entities.SirrManuscriptBook.list("-upload_date", 100)
       .then((rows) => { if (alive) setBooks(rows || []); })
       .catch((e) => { if (alive) setError(e); })
       .finally(() => { if (alive) setLoading(false); });

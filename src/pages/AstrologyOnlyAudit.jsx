@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Book, Filter, CheckCircle, XCircle, AlertTriangle, Layers, FileText, Hash, Database, TrendingUp, ShieldOff, Link } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Book, Filter, CheckCircle, Layers, FileText, Hash, Database, TrendingUp, Link } from "lucide-react";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -33,15 +33,19 @@ export default function AstrologyOnlyAudit() {
     try {
       setLoading(true);
       setError(null);
-      
-      // Call the backend audit function with PDF URLs
-      const result = await base44.functions.invoke('auditAstrologyIngestion', {
-        pdf_urls: [
-          "https://media.base44.com/files/public/69f3dea51ce92ee2fde20be6/77e45391d_E95C54E0AD505E43-1-50.pdf",
-          "https://media.base44.com/files/public/69f3dea51ce92ee2fde20be6/2af646637_E95C54E0AD505E43-51-100.pdf"
-        ]
+
+      // Personal source books are available only through Storage authorization.
+      const sourcePaths = [
+        "imported-reference/a1359aa3a5af812ab03a43bbf728a5ce7df9f91bae8998d31423952172080237.pdf",
+        "imported-reference/c93e3475c1f032e450f349ba44ed7ee22e854d72ab04647a66c38664499aed70.pdf",
+      ];
+      const downloads = await Promise.all(sourcePaths.map(path =>
+        platform.integrations.Core.CreateSignedDownload({ path }),
+      ));
+      const result = await platform.functions.invoke('auditAstrologyIngestion', {
+        pdf_urls: downloads.map(item => item.signed_url),
       });
-      
+
       setAudit(result.data.broad_astrology_audit);
     } catch (err) {
       setError(err.message);

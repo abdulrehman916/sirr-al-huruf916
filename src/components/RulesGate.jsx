@@ -4,7 +4,7 @@ import { RULES_STORAGE_KEY } from '@/lib/rulesContent';
 import { persistGet, persistSet, persistRemove, isDevMode } from '@/lib/devModePersistence';
 import { useAuth } from '@/lib/AuthContext';
 import { ROLES } from '@/lib/rbac';
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 
 /**
  * Dev-only: clears ALL onboarding state (rules, splash, Google prompt)
@@ -64,7 +64,7 @@ function LoadingScreen() {
 //      last admin reset → skip (stored on account)
 //   4. Authenticated user, not accepted OR accepted before last
 //      admin reset → show RulesConditions
-//   5. On accept → base44.auth.updateMe({ rules_accepted: true,
+//   5. On accept → platform.auth.updateMe({ rules_accepted: true,
 //      rules_accepted_date: now }) + localStorage cache
 //
 // ADMIN RESET:
@@ -96,7 +96,7 @@ async function fetchOnboardingResetDate() {
 
   // Fetch from server
   try {
-    const res = await base44.functions.invoke('getOnboardingResetDate', {});
+    const res = await platform.functions.invoke('getOnboardingResetDate', {});
     const date = res.data?.onboarding_reset_date || null;
     // Cache in sessionStorage for 5 minutes
     try {
@@ -214,7 +214,7 @@ export default function RulesGate({ children }) {
       const now = new Date().toISOString();
       // Persist acceptance to the authenticated user's account (tied to Google account)
       try {
-        await base44.auth.updateMe({
+        await platform.auth.updateMe({
           rules_accepted: true,
           rules_accepted_date: now,
         });

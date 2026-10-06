@@ -1,5 +1,5 @@
 import { CalendarClock, Check, ArrowRight } from "lucide-react";
-import { G, T, translatePlanet, translateDay, saatDisplayNum, MIZAN_DAY_NAMES, computeCompat, compatColor } from "../v3/shared";
+import { G, T, translatePlanet, translateDay, computeCompat, compatColor } from "../v3/shared";
 import CollapsibleBox from "./CollapsibleBox";
 
 // CARD 2 — NEXT AVAILABLE PLANETARY HOURS (current cycle only)

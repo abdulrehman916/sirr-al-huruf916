@@ -9,7 +9,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect, useCallback } from "react";
 import { CheckCircle2, XCircle, RefreshCw, Loader2, AlertCircle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { normalizeDisplay } from "@/lib/astroClockLanguageNormalizer";
 
@@ -26,7 +26,7 @@ export default function EntityKnowledgeReviewQueue() {
     try {
       // Astrology review queue now reads ONLY from AstroClockKnowledge
       // (categorized records pending verification).
-      const data = await base44.entities.AstroClockKnowledge.filter({
+      const data = await platform.entities.AstroClockKnowledge.filter({
         source_type: "categorized",
         is_marker: false,
         is_verified: false,
@@ -44,7 +44,7 @@ export default function EntityKnowledgeReviewQueue() {
   const approve = async (id) => {
     setActioning(id);
     try {
-      await base44.entities.AstroClockKnowledge.update(id, { is_verified: true });
+      await platform.entities.AstroClockKnowledge.update(id, { is_verified: true });
       setRecords(prev => prev.filter(r => r.id !== id));
     } catch (err) {
       setError(err?.message || "Failed to approve");
@@ -57,7 +57,7 @@ export default function EntityKnowledgeReviewQueue() {
     setActioning(id);
     try {
       // Never delete ACK records — hide as marker instead (preserves provenance).
-      await base44.entities.AstroClockKnowledge.update(id, { is_marker: true });
+      await platform.entities.AstroClockKnowledge.update(id, { is_marker: true });
       setRecords(prev => prev.filter(r => r.id !== id));
     } catch (err) {
       setError(err?.message || "Failed to reject");

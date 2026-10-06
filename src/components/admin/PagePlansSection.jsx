@@ -7,7 +7,7 @@
  */
 import { useState, useEffect } from "react";
 import { Plus, Save, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { getFeatures, hasSubFeatures } from "@/lib/featureRegistry";
 import { invalidatePlanCache } from "@/lib/subscriptionPlanCache";
@@ -38,7 +38,7 @@ export default function PagePlansSection({ pagePath }) {
   const loadPlans = async () => {
     setLoading(true);
     try {
-      const all = await base44.entities.SubscriptionPlanConfig.filter(
+      const all = await platform.entities.SubscriptionPlanConfig.filter(
         { page_path: pagePath }, "sort_order", 100
       );
       setPlans(all || []);
@@ -81,14 +81,14 @@ export default function PagePlansSection({ pagePath }) {
     setPlans(plans.filter(p => p.plan_config_id !== plan.plan_config_id && p.id !== plan.id));
     setDirty(true);
     if (plan.id) {
-      try { await base44.entities.SubscriptionPlanConfig.delete(plan.id); } catch {}
+      try { await platform.entities.SubscriptionPlanConfig.delete(plan.id); } catch {}
     }
   };
 
   const saveAll = async () => {
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       for (const plan of plans) {
         if (!plan.plan_name?.trim() || !plan.price) continue;
         const data = {
@@ -107,9 +107,9 @@ export default function PagePlansSection({ pagePath }) {
           updated_at: new Date().toISOString(),
         };
         if (plan.id) {
-          await base44.entities.SubscriptionPlanConfig.update(plan.id, data);
+          await platform.entities.SubscriptionPlanConfig.update(plan.id, data);
         } else {
-          await base44.entities.SubscriptionPlanConfig.create(data);
+          await platform.entities.SubscriptionPlanConfig.create(data);
         }
       }
       invalidatePlanCache(pagePath);

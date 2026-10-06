@@ -7,13 +7,12 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Clock, Sun, Moon, Calendar, Book, FileText, ChevronDown, ChevronUp, CheckCircle, XCircle, AlertCircle, Star, Zap } from "lucide-react";
+import { Clock, Sun, Moon, Book, FileText, ChevronDown, ChevronUp, CheckCircle, XCircle, AlertCircle, Star } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { getAllPlanetaryHours, DAY_INFO, PLANET_INFO } from "@/lib/astroClockLiveEngine.js";
 import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset.js";
 import { getPlanetFriendships } from "@/lib/astroClockPlanetFriendships.js";
 import { getPlanetHourRules } from "@/lib/astroClockPlanetaryHourRules.js";
-import { safeFormatTime } from "@/lib/astroClockDateUtils.js";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { usePersistedLocation } from "@/lib/usePersistedLocation.js";
 
@@ -115,7 +114,7 @@ export default function Full24HourPlanetaryChart() {
             </p>
           </div>
         </div>
-        
+
         {currentHour && (
           <div className="text-right">
             <p className="font-inter text-[9px] uppercase tracking-widest" style={{ color: G.dim }}>
@@ -158,9 +157,9 @@ export default function Full24HourPlanetaryChart() {
       )}
 
       {/* Day Hours Table */}
-      <DayHoursSection 
-        hours={dayHours} 
-        currentHour={currentHour} 
+      <DayHoursSection
+        hours={dayHours}
+        currentHour={currentHour}
         expandedHour={expandedHour}
         setExpandedHour={setExpandedHour}
         isMalayalam={isMalayalam}
@@ -168,9 +167,9 @@ export default function Full24HourPlanetaryChart() {
       />
 
       {/* Night Hours Table */}
-      <NightHoursSection 
-        hours={nightHours} 
-        currentHour={currentHour} 
+      <NightHoursSection
+        hours={nightHours}
+        currentHour={currentHour}
         expandedHour={expandedHour}
         setExpandedHour={setExpandedHour}
         isMalayalam={isMalayalam}
@@ -288,7 +287,7 @@ function HourRow({ hour, index, isCurrent, isNext, expanded, onToggle, isMalayal
   // Derived directly from tick — no state, no interval
   const hourCountdown = (isCurrent || expanded) ? decimalEndToCountdown(hour.endTimeDecimal) : "";
   const status = isCurrent ? "current" : isNext ? "next" : hour.planetInfo?.nature === "benefic" ? "best" : "adverse";
-  
+
   const statusConfig = {
     current: { bg: G.current, border: G.currentBorder, icon: CheckCircle, color: "#22c55e", label: isMalayalam ? "നിലവിലെത്" : "Current" },
     next: { bg: G.next, border: G.nextBorder, icon: Clock, color: "#3b82f6", label: isMalayalam ? "അടുത്തത്" : "Next" },
@@ -301,10 +300,10 @@ function HourRow({ hour, index, isCurrent, isNext, expanded, onToggle, isMalayal
 
   return (
     <>
-      <tr 
+      <tr
         className={`border-b cursor-pointer transition-all ${expanded ? 'bg-opacity-20' : ''}`}
-        style={{ 
-          background: config.bg, 
+        style={{
+          background: config.bg,
           borderColor: config.border,
         }}
         onClick={onToggle}
@@ -360,8 +359,8 @@ function HourRow({ hour, index, isCurrent, isNext, expanded, onToggle, isMalayal
           >
             <td colSpan={6} className="p-0">
               <ErrorBoundary fallbackMessage="Could not load hour details. Please try again.">
-                <HourDetails 
-                  hour={hour} 
+                <HourDetails
+                  hour={hour}
                   index={index}
                   planetRules={planetRules}
                   friendships={friendships}
@@ -497,7 +496,7 @@ function HourDetails({ hour, index, planetRules, friendships, isMalayalam }) {
             <p className="font-malayalam-sm font-bold text-white">Havâss'ın Derinlikleri</p>
             <p className="font-inter text-xs" style={{ color: G.dim }}>Bülent Kısa</p>
           </div>
-          
+
           <div className="p-3 rounded-lg" style={{ background: G.bg, border: `1px solid ${G.border}` }}>
             <div className="flex items-center gap-2 mb-2">
               <FileText className="w-4 h-4" style={{ color: G.text }} />

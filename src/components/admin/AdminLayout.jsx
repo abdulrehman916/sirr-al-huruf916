@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Shield, LayoutDashboard, Users, Globe, MessageSquare, FileText, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, BarChart3, SlidersHorizontal, ShoppingBag, Store, ScrollText, Tags, LogOut, BookMarked, Library, ListChecks, Search, FilePlus2, BookOpen, LockKeyhole, KeyRound, Link2 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 import { filterAdminSections } from "@/lib/rbac";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { clearLocalSession } from "@/lib/sessionId";
 
 const G = {
@@ -194,7 +194,7 @@ function SidebarContent({ location, onNavigate }) {
             try { sessionStorage.removeItem("sirr_admin_session"); } catch {}
             try { sessionStorage.removeItem("sirr_google_prompt_dismissed"); } catch {}
             if (onNavigate) onNavigate();
-            await base44.auth.logout("/login");
+            await platform.auth.logout("/login");
           }}
           style={{
             display: "flex",

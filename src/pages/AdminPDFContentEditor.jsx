@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import { Upload, CheckCircle, Loader2, FileText, X } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -24,7 +24,7 @@ export default function AdminPDFContentEditor() {
 
   const checkAdmin = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!["owner", "admin"].includes(user?.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
     } catch {
@@ -42,10 +42,10 @@ export default function AdminPDFContentEditor() {
 
     setUploading(true);
     setError(null);
-    
+
     try {
-      const result = await base44.integrations.Core.UploadFile({ file });
-      
+      const result = await platform.integrations.Core.UploadFile({ file });
+
       const newUrls = [...uploadedUrls];
       newUrls[index] = {
         url: result.file_url,
@@ -53,7 +53,7 @@ export default function AdminPDFContentEditor() {
         fileName: file.name
       };
       setUploadedUrls(newUrls);
-      
+
       toast({ title: "✓ PDF uploaded", description: file.name });
     } catch (err) {
       setError(`Upload failed: ${err.message}`);
@@ -81,13 +81,13 @@ export default function AdminPDFContentEditor() {
     setImportResult(null);
 
     try {
-      const result = await base44.functions.invoke('autoImportHolyNamesFromPDF', {
+      const result = await platform.functions.invoke('autoImportHolyNamesFromPDF', {
         pdf_urls: validUrls
       });
 
       setImportResult(result.data);
-      toast({ 
-        title: "✓ Import Complete", 
+      toast({
+        title: "✓ Import Complete",
         description: `${result.data.count} names imported automatically`
       });
     } catch (err) {
@@ -139,9 +139,9 @@ export default function AdminPDFContentEditor() {
         {/* PDF Upload Section */}
         <div className="space-y-3">
           <h3 className="font-inter font-semibold text-white text-sm">Upload PDF Files</h3>
-          
+
           {[0, 1, 2].map((idx) => (
-            <div key={idx} className="rounded-xl border p-4" style={{ 
+            <div key={idx} className="rounded-xl border p-4" style={{
               background: uploadedUrls[idx] ? "rgba(34,197,94,0.06)" : G.bg,
               borderColor: uploadedUrls[idx] ? "rgba(34,197,94,0.30)" : G.border
             }}>
@@ -204,9 +204,9 @@ export default function AdminPDFContentEditor() {
             onClick={handleAutoImport}
             disabled={importing || uploadedUrls.filter(u => u).length === 0}
             className="w-full py-4 rounded-xl font-inter font-bold text-base flex items-center justify-center gap-2 disabled:opacity-50"
-            style={{ 
-              background: "linear-gradient(135deg, #f6d860 0%, #c98a14 100%)", 
-              color: "#0d1b2a" 
+            style={{
+              background: "linear-gradient(135deg, #f6d860 0%, #c98a14 100%)",
+              color: "#0d1b2a"
             }}
           >
             {importing ? (

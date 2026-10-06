@@ -10,7 +10,7 @@
 // preserved and displayed with their own citations.
 // ═══════════════════════════════════════════════════════════════
 import { motion } from "framer-motion";
-import { Image as ImageIcon, BookOpen, Sparkles } from "lucide-react";
+import { Image as ImageIcon, BookOpen } from "lucide-react";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
 const P = {

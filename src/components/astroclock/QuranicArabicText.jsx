@@ -27,7 +27,7 @@
 // REUSABLE: <QuranicArabicText text={arabicString} size="md" />
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import {
   hasSufficientHarakat,
   getCachedHarakat,
@@ -119,7 +119,7 @@ export default function QuranicArabicText({
       text,
     ].join("\n");
 
-    base44.integrations.Core.InvokeLLM({
+    platform.integrations.Core.InvokeLLM({
       prompt,
       response_json_schema: {
         type: "object",

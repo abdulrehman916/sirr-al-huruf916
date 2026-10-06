@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { BookOpen, Search, Loader2 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 export default function BooksLibrary() {
   const [books, setBooks] = useState([]);
@@ -11,7 +11,7 @@ export default function BooksLibrary() {
 
   useEffect(() => {
     let alive = true;
-    base44.entities.BookPublication.filter({ status: "PUBLISHED" }, "-published_at", 500)
+    platform.entities.BookPublication.filter({ status: "PUBLISHED" }, "-published_at", 500)
       .then((rows) => { if (alive) setBooks(rows || []); })
       .catch(() => { if (alive) setBooks([]); })
       .finally(() => { if (alive) setLoading(false); });

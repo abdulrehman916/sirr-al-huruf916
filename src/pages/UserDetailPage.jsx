@@ -5,7 +5,7 @@ import {
   User, Mail, Phone, MessageCircle, Calendar, Shield, KeyRound,
   Smartphone, Clock, LogIn, Hash, Loader2,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import UserCodeRow from "@/components/admin/UserCodeRow";
@@ -61,7 +61,7 @@ export default function UserDetailPage() {
   const [renewCode, setRenewCode] = useState(null);
 
   useEffect(() => {
-    base44.auth.me().then(user => {
+    platform.auth.me().then(user => {
       if (!user || user.role !== "admin") { setIsAdmin(false); return; }
       setIsAdmin(true);
       loadUser();
@@ -72,8 +72,8 @@ export default function UserDetailPage() {
     setLoading(true);
     try {
       const [profiles, perms] = await Promise.all([
-        base44.entities.UserAccessProfile.filter({ user_id: userId }),
-        base44.entities.PagePermission.filter({ user_id: userId }),
+        platform.entities.UserAccessProfile.filter({ user_id: userId }),
+        platform.entities.PagePermission.filter({ user_id: userId }),
       ]);
       const prof = profiles[0] || null;
       setProfile(prof);
@@ -82,13 +82,13 @@ export default function UserDetailPage() {
       // Fetch codes by user_id or email
       let userCodes = [];
       try {
-        const byUserId = await base44.entities.AccessCode.filter({ used_by_user_id: userId });
+        const byUserId = await platform.entities.AccessCode.filter({ used_by_user_id: userId });
         userCodes = byUserId;
       } catch {}
       // Also try by email if available
       if (prof?.email) {
         try {
-          const byEmail = await base44.entities.AccessCode.filter({ used_by_email: prof.email });
+          const byEmail = await platform.entities.AccessCode.filter({ used_by_email: prof.email });
           // Merge unique by id
           const existingIds = new Set(userCodes.map(c => c.id));
           byEmail.forEach(c => { if (!existingIds.has(c.id)) userCodes.push(c); });

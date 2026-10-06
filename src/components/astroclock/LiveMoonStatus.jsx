@@ -5,9 +5,8 @@
 // NO APPROXIMATIONS — Reference data only
 // ═══════════════════════════════════════════════════════════════
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Moon, Star, Info, BookOpen, AlertCircle } from "lucide-react";
+import { Moon, BookOpen, AlertCircle } from "lucide-react";
 import { AY_MANAZILLERI } from "@/lib/astroClockData";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
@@ -24,7 +23,7 @@ const G = {
 
 export default function LiveMoonStatus() {
   const { isMalayalam } = useAstroClockLanguage();
-  
+
   // Display all 28 mansions as reference (no real-time calculation)
   const mansions = AY_MANAZILLERI || [];
 
@@ -64,7 +63,7 @@ export default function LiveMoonStatus() {
               {isMalayalam ? "ശ്രദ്ധിക്കുക" : "Important Notice"}
             </p>
             <p className="font-inter text-xs text-white/70 leading-relaxed">
-              {isMalayalam 
+              {isMalayalam
                 ? "കൃത്യമായ ചന്ദ്ര നിലപാട് കണക്കാക്കാൻ എഫെമറിസ് ഡാറ്റ ആവശ്യമാണ്. ഇവിടെ കാണിക്കുന്നത് ഗ്രന്ഥങ്ങളിൽ നിന്നുള്ള റഫറൻസ് ഡാറ്റ മാത്രമാണ്."
                 : "Accurate moon position requires ephemeris data. This displays reference data from ingested manuscripts only."}
             </p>
@@ -114,7 +113,7 @@ export default function LiveMoonStatus() {
                 </td>
                 <td className="py-3 px-3">
                   <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider ${
-                    mansion.genel_hukum.includes('Saad') ? 'text-green-400' : 
+                    mansion.genel_hukum.includes('Saad') ? 'text-green-400' :
                     mansion.genel_hukum.includes('Nahs') ? 'text-red-400' : 'text-yellow-400'
                   }`} style={{ background: "rgba(255,255,255,0.05)" }}>
                     {mansion.genel_hukum}

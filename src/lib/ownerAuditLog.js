@@ -7,7 +7,7 @@
  * The actual write goes through the recordOwnerAuditLog backend function, which
  * captures user, role, device, IP, and user-agent from the request.
  */
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 export const AUDIT_ACTIONS = {
   ADMIN_CREATED: "ADMIN_CREATED",
@@ -49,7 +49,7 @@ export const AUDIT_ACTIONS = {
  */
 export async function logOwnerAudit(action_type, objectType, objectId, opts = {}) {
   try {
-    await base44.functions.invoke("recordOwnerAuditLog", {
+    await platform.functions.invoke("recordOwnerAuditLog", {
       action_type,
       object_type: objectType,
       object_id: objectId || "",

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { useTranslation } from "@/i18n/useTranslation";
 
 export default function ErrorBoundary({ children }) {

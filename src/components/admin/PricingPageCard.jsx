@@ -22,16 +22,16 @@ import {
   GripVertical,
   Lock,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
-import { FEATURE_REGISTRY, hasSubFeatures, getFeatures } from "@/lib/featureRegistry";
+import { hasSubFeatures, getFeatures } from "@/lib/featureRegistry";
 import { invalidateFeatureConfigCache } from "@/lib/featureConfigCache";
 import { invalidatePlanCache } from "@/lib/subscriptionPlanCache";
 import { useAuth } from "@/lib/AuthContext";
 import { ROLES } from "@/lib/rbac";
 import { isPublicPage } from "@/lib/pageRegistry";
 import { clearAllCache } from "@/lib/permissionCache";
-import { formatPrice, isSaleActive, getEffectivePrice, formatDuration, inferDurationType } from "@/lib/pricingUtils";
+import { isSaleActive } from "@/lib/pricingUtils";
 import PricingPlanEditor from "./PricingPlanEditor";
 import ChildPagePlansSection from "./ChildPagePlansSection";
 
@@ -81,7 +81,7 @@ export default function PricingPageCard({ pagePath, pageName, pageIcon, visibili
   const savePageSettings = async () => {
     setSavingPage(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const data = {
         page_path: pagePath,
         page_name: pageTitle.trim() || pageName,
@@ -102,9 +102,9 @@ export default function PricingPageCard({ pagePath, pageName, pageIcon, visibili
       };
 
       if (vc?.id) {
-        await base44.entities.PageVisibilityConfig.update(vc.id, data);
+        await platform.entities.PageVisibilityConfig.update(vc.id, data);
       } else {
-        await base44.entities.PageVisibilityConfig.create(data);
+        await platform.entities.PageVisibilityConfig.create(data);
       }
 
       setEditingPage(false);
@@ -126,20 +126,20 @@ export default function PricingPageCard({ pagePath, pageName, pageIcon, visibili
     if (role !== ROLES.OWNER) return;
     setSavingPlock(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const next = !permanentLock;
       const reasonPayload = next
         ? { permanent_lock_reason: "temporarily_unavailable", permanent_lock_custom_message: "" }
         : { permanent_lock_reason: "", permanent_lock_custom_message: "" };
       if (vc?.id) {
-        await base44.entities.PageVisibilityConfig.update(vc.id, {
+        await platform.entities.PageVisibilityConfig.update(vc.id, {
           permanent_lock: next,
           ...reasonPayload,
           updated_by: me?.id || "",
           updated_at: new Date().toISOString(),
         });
       } else {
-        await base44.entities.PageVisibilityConfig.create({
+        await platform.entities.PageVisibilityConfig.create({
           page_path: pagePath,
           page_name: pageName,
           requires_permission: !isPublicPage(pagePath),
@@ -167,7 +167,7 @@ export default function PricingPageCard({ pagePath, pageName, pageIcon, visibili
     if (role !== ROLES.OWNER) return;
     setSavingReason(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const data = {
         permanent_lock_reason: lockReason,
         permanent_lock_custom_message: lockReason === "custom" ? customMsg.trim() : "",
@@ -175,9 +175,9 @@ export default function PricingPageCard({ pagePath, pageName, pageIcon, visibili
         updated_at: new Date().toISOString(),
       };
       if (vc?.id) {
-        await base44.entities.PageVisibilityConfig.update(vc.id, data);
+        await platform.entities.PageVisibilityConfig.update(vc.id, data);
       } else {
-        await base44.entities.PageVisibilityConfig.create({
+        await platform.entities.PageVisibilityConfig.create({
           page_path: pagePath,
           page_name: pageName,
           requires_permission: !isPublicPage(pagePath),
@@ -567,7 +567,7 @@ function FeaturePlansSection({ pagePath, pageName, feature, featureConfig, plans
   const saveFeatureConfig = async () => {
     setSavingFeature(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const configId = featureConfig?.config_id || `FC-${feature.id}`;
       const data = {
         config_id: configId,
@@ -587,9 +587,9 @@ function FeaturePlansSection({ pagePath, pageName, feature, featureConfig, plans
       };
 
       if (featureConfig?.id) {
-        await base44.entities.FeatureConfig.update(featureConfig.id, data);
+        await platform.entities.FeatureConfig.update(featureConfig.id, data);
       } else {
-        await base44.entities.FeatureConfig.create(data);
+        await platform.entities.FeatureConfig.create(data);
       }
 
       setEditingFeature(false);

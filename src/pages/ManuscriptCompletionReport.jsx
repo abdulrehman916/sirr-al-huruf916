@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Database, CheckCircle, AlertCircle, TrendingUp, FileText, Book } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
@@ -29,9 +29,9 @@ export default function ManuscriptCompletionReport() {
     try {
       setLoading(true);
       const [auditRes, validationRes, manazilRes] = await Promise.all([
-        base44.functions.invoke('auditManuscriptRuleCompleteness', {}),
-        base44.functions.invoke('validateCrossReferences', {}),
-        base44.functions.invoke('auditManazilQuality', {})
+        platform.functions.invoke('auditManuscriptRuleCompleteness', {}),
+        platform.functions.invoke('validateCrossReferences', {}),
+        platform.functions.invoke('auditManazilQuality', {})
       ]);
 
       setReport({
@@ -229,7 +229,7 @@ export default function ManuscriptCompletionReport() {
                         {mansion.records.length} records
                       </span>
                       <span className={`font-inter text-xs font-bold px-2 py-1 rounded ${
-                        mansion.completeness_score === 100 ? 'text-green-400' : 
+                        mansion.completeness_score === 100 ? 'text-green-400' :
                         mansion.completeness_score > 50 ? 'text-yellow-400' : 'text-red-400'
                       }`}>
                         {mansion.completeness_score}%

@@ -1,4 +1,4 @@
-import { base44 } from '../api/base44Client';
+import { platform } from '../api/platformClient';
 
 // Permission cache with TTL (30 seconds for faster role updates)
 const CACHE_TTL = 30000;
@@ -40,7 +40,7 @@ export function getCachedPermissions(userId) {
 
 export async function refreshPermissionCache(userId) {
   try {
-    const permissions = await base44.entities.PagePermission.filter({ user_id: userId, is_active: true, is_revoked: false });
+    const permissions = await platform.entities.PagePermission.filter({ user_id: userId, is_active: true, is_revoked: false });
     permissionCache.set(userId, {
       permissions,
       timestamp: Date.now()
@@ -71,10 +71,10 @@ export function clearAllCache() {
 export function hasPagePermission(userId, pagePath, cachedPermissions = null) {
   const permissions = cachedPermissions || getCachedPermissions(userId);
   if (!permissions) return false;
-  
-  return permissions.some(p => 
-    p.page_path === pagePath && 
-    p.is_active && 
+
+  return permissions.some(p =>
+    p.page_path === pagePath &&
+    p.is_active &&
     !p.is_revoked &&
     new Date(p.expiry_date) > new Date()
   );

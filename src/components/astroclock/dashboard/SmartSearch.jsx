@@ -19,7 +19,7 @@ import { ACTION_CATEGORIES } from "@/lib/astroActionClassifier";
 import { SEMANTIC_GRAPH } from "@/lib/semanticKnowledgeGraph";
 import {
   Search, Clock, CheckCircle2, Ban, BookOpen, AlertTriangle,
-  Brain, Tags, FileWarning, Lightbulb, Loader2, AlertCircle,
+  Brain, Tags, Loader2, AlertCircle,
   Shield, Scale, GitBranch, Sparkles,
 } from "lucide-react";
 import ManuscriptSourcePanel from "./ManuscriptSourcePanel";

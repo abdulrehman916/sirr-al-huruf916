@@ -6,16 +6,16 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Book, FileText, CheckCircle, XCircle, AlertCircle, ChevronDown, ChevronUp, MapPin } from "lucide-react";
+import { Book, FileText, CheckCircle, ChevronDown, ChevronUp, MapPin } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { getCurrentPlanetaryHour, getAllPlanetaryHours, DAY_INFO, PLANET_INFO } from "@/lib/astroClockLiveEngine.js";
+import { getCurrentPlanetaryHour, getAllPlanetaryHours, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { getPlanetFriendships } from "@/lib/astroClockPlanetFriendships.js";
 import { getPlanetHourRules } from "@/lib/astroClockPlanetaryHourRules.js";
 import { AY_MANAZILLERI } from "@/lib/astroClockData.js";
-import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset.js";
+import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset.js";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -47,7 +47,7 @@ export default function ManuscriptAuditPage() {
   function generateAudit() {
     const now = new Date();
     const today = new Date();
-    
+
     let location = { lat: 25.2048, lng: 55.2708, timezone: 4 };
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
@@ -66,7 +66,7 @@ export default function ManuscriptAuditPage() {
     const currentHour = getCurrentPlanetaryHour(now, sunTimes.sunrise, sunTimes.sunset);
     const moonPos = calculateMoonPosition(now);
     const dayRuler = DAY_INFO[now.getDay()];
-    
+
     const audit = {
       timestamp: now,
       location,
@@ -181,7 +181,7 @@ export default function ManuscriptAuditPage() {
 function getManuscriptSourceForPlanet(planetKey) {
   const rules = getPlanetHourRules(planetKey);
   const friendships = getPlanetFriendships(planetKey);
-  
+
   return {
     planet: planetKey,
     hourRules: rules,
@@ -217,7 +217,7 @@ function getManuscriptSourceForDay(dayIndex) {
   ];
 
   const dayData = dayRulers[dayIndex];
-  
+
   return {
     day: dayData.day,
     ruler: dayData.ruler,
@@ -237,7 +237,7 @@ function getManuscriptSourceForDay(dayIndex) {
 
 function getManuscriptSourceForMansion(mansionNo) {
   if (!mansionNo) return null;
-  
+
   const mansion = AY_MANAZILLERI.find(m => m.no === mansionNo);
   if (!mansion) return null;
 
@@ -260,7 +260,7 @@ function getManuscriptSourceForMansion(mansionNo) {
 
 function getAllPlanetFriendshipAudits() {
   const planets = ["saturn", "jupiter", "mars", "sun", "venus", "mercury", "moon"];
-  
+
   return planets.map(planet => {
     const friendships = getPlanetFriendships(planet);
     return {
@@ -650,7 +650,7 @@ function MansionAuditCard({ mansion, isMalayalam }) {
           {isMalayalam ? "സ്വഭാവം" : "Nature"}
         </p>
         <span className={`font-inter text-[8px] uppercase tracking-widest ${
-          mansion.mansion.genel_hukum.includes("Saad") ? "text-green-400" : 
+          mansion.mansion.genel_hukum.includes("Saad") ? "text-green-400" :
           mansion.mansion.genel_hukum.includes("Nahs") ? "text-red-400" : "text-yellow-400"
         }`}>
           {mansion.mansion.genel_hukum}

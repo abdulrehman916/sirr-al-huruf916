@@ -17,7 +17,7 @@
  *   await syncPages(); // fire-and-forget on app load
  */
 
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 import { getContentPages } from '@/lib/pageRegistry';
 import { FEATURE_REGISTRY } from '@/lib/featureRegistry';
 
@@ -91,7 +91,7 @@ export async function syncPages(force = false) {
       return lastSyncResult;
     }
 
-    const response = await base44.functions.invoke('syncPageVisibility', {
+    const response = await platform.functions.invoke('syncPageVisibility', {
       routes,
     });
     const data = response?.data || response;

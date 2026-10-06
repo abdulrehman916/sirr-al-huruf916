@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Image as ImageIcon, FileText, Video, Search, Copy, Check, Package, X } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -29,7 +29,7 @@ export default function MediaLibrary() {
   useEffect(() => {
     (async () => {
       try {
-        const list = await base44.entities.Product.list("-created_date", 500);
+        const list = await platform.entities.Product.list("-created_date", 500);
         setProducts(list || []);
       } catch { setProducts([]); }
       finally { setLoading(false); }

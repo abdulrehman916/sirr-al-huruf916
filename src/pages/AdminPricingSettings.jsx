@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -47,7 +47,7 @@ export default function AdminPricingSettings() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    base44.auth.me().then((u) => {
+    platform.auth.me().then((u) => {
       setUser(u);
       if (!["owner", "admin"].includes(u.role)) {
         window.location.href = '/';
@@ -64,7 +64,7 @@ export default function AdminPricingSettings() {
   const loadPricing = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke('getPagePricing', { page_path: selectedPage.path });
+      const res = await platform.functions.invoke('getPagePricing', { page_path: selectedPage.path });
       if (res.data.success) {
         const pricingMap = {};
         res.data.pricing.forEach((p) => {
@@ -88,7 +88,7 @@ export default function AdminPricingSettings() {
         is_active: true,
       }));
 
-      const res = await base44.functions.invoke('updatePagePricing', {
+      const res = await platform.functions.invoke('updatePagePricing', {
         page_path: selectedPage.path,
         page_name: selectedPage.name,
         pricing_updates,
@@ -277,7 +277,7 @@ export default function AdminPricingSettings() {
         <Card className="mt-6" style={{ background: COLORS.card, borderColor: COLORS.border }}>
           <CardContent className="py-4">
             <p className="font-inter text-xs text-gray-400">
-              💡 <strong>Tip:</strong> Prices are displayed to users in the subscription modal when they try to access this page. 
+              💡 <strong>Tip:</strong> Prices are displayed to users in the subscription modal when they try to access this page.
               Update prices anytime - changes take effect immediately.
             </p>
           </CardContent>

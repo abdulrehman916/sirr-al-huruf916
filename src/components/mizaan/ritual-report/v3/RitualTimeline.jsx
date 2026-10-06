@@ -8,7 +8,7 @@
 // Auto-updates every minute (driven by the parent's 60s `now` tick).
 // ═══════════════════════════════════════════════════════════════
 import { useMemo } from "react";
-import { Navigation, MapPin } from "lucide-react";
+import { Navigation } from "lucide-react";
 import { G, T, translatePlanet, translateDay, saatDisplayNum, DAY_KEY_BY_INDEX, MIZAN_DAY_NAMES, computeCompat, compatColor } from "./shared";
 
 const DAY_INDEX = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };

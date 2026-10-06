@@ -11,6 +11,7 @@ import { useAstroData, DAY_AR, PLANET_AR } from "./useAstroData";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { MiniCard, SubCollapse } from "./DashboardSection";
 import { getKashfLunarDayInfo, getKashfNahsStatus } from "@/lib/astroClockManuscriptMerger";
+import { MANSION_ML_NAMES } from "@/lib/astroClockMansionsML";
 import { zodiacEnToML, planetArabicMLDisplay, PLANET_AR_ML } from "@/lib/astroClockLabelMap";
 import { Sparkles, AlertTriangle, CheckCircle2, Ban, Moon } from "lucide-react";
 import { formatDecimalHour12h } from "@/lib/astroClockTimeFormat";
@@ -79,10 +80,11 @@ export default function TodayDashboard() {
   const phaseEn = d.moonPhaseDesc?.en || "";
   // No approved Arabic moon-phase label exists in the codebase — show percentage only in Arabic mode.
   const moonPhaseLabel = language === "ar" ? "" : (language === "ml" ? d.moonPhaseDesc?.ml : phaseEn);
+  const moonMansionName = MANSION_ML_NAMES[d.currentMansion?.name] || "";
   const moonMansionDisplay = language === "ar"
     ? `#${d.currentMansion?.no || "?"} ${d.currentMansion?.name_arabic || ""}`.trim()
     : language === "ml"
-    ? `#${d.currentMansion?.no || "?"} ${d.currentMansion?.name_arabic || ""}`.trim()
+    ? `#${d.currentMansion?.no || "?"} ${moonMansionName}`.trim()
     : `#${d.currentMansion?.no || "?"} ${d.currentMansion?.name || ""}`.trim();
 
   // ── Kashf lunar day data ──

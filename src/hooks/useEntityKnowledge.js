@@ -9,7 +9,7 @@
 // Affects: Astrology (Astro Clock) module only.
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // entity_type (legacy) → AstroClockKnowledge rule_category (lowercase)
 const ENTITY_TYPE_TO_RULE_CATEGORY = {
@@ -67,7 +67,7 @@ export function useEntityKnowledge(entityType, entityKey) {
     // khawass, mujarrabat, wafq, etc.) visible inside each entity card.
     // Wrong-slug / legacy categories are filtered client-side to avoid
     // duplicates with their consolidated correct-slug counterparts.
-    base44.entities.AstroClockKnowledge.filter({
+    platform.entities.AstroClockKnowledge.filter({
       source_type: "categorized",
       is_marker: false,
       rule_entity: String(entityKey).toLowerCase(),

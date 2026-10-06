@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Clock, Book, AlertCircle, CheckCircle, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
-import { getCurrentPlanetaryHour, PLANET_INFO, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
+import { getCurrentPlanetaryHour, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
 const G = {
@@ -107,7 +107,7 @@ function CurrentStatus({ status, planetHour, moonPos, dayInfo, isMalayalam }) {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
         <StatusItem label={isMalayalam ? "ഗ്രഹ മണിക്കൂർ" : "Planetary Hour"} value={isMalayalam ? planetHour.planetInfo?.name_ml_equivalent : planetHour.planetInfo?.name_en} symbol={planetHour.planetInfo?.symbol} />
         <StatusItem label={isMalayalam ? "മൂലകം" : "Element"} value={moonPos.zodiacSign?.element} />
-        <StatusItem label={isMalayalam ? "ചാന്ദ്ര മൻസിൽ" : "Lunar Mansion"} value={isMalayalam ? (moonPos.mansion?.name_ar || "—") : moonPos.mansion?.name_en} arabic={isMalayalam ? undefined : moonPos.mansion?.name_ar} />
+        <StatusItem label={isMalayalam ? "നക്ഷത്രം" : "Lunar Mansion"} value={isMalayalam ? moonPos.mansion?.name_ml : moonPos.mansion?.name_en} arabic={moonPos.mansion?.name_ar} />
         <StatusItem label={isMalayalam ? "രാശി" : "Zodiac Sign"} value={isMalayalam ? moonPos.zodiacSign?.name_ml : moonPos.zodiacSign?.name_en} symbol={moonPos.zodiacSign?.symbol} />
       </div>
     </div>

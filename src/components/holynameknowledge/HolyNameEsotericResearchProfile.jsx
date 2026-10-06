@@ -4,7 +4,7 @@ import {
   Loader2, ShieldAlert, BookOpen, Sparkles, Calculator,
   FileText, ChevronDown, BookMarked, BookCopy, ScrollText,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import SectionCVisualDisplay from "@/components/sectionc/SectionCVisualDisplay";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
@@ -138,7 +138,7 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
   useEffect(() => {
     let alive = true;
     setLoading(true);
-    base44.entities.HolyNameEsotericKnowledge.filter({ name_id: nameId }, null, 1)
+    platform.entities.HolyNameEsotericKnowledge.filter({ name_id: nameId }, null, 1)
       .then(r => { if (alive) setRec((r && r[0]) || null); })
       .catch(() => { if (alive) setRec(null); })
       .finally(() => { if (alive) setLoading(false); });

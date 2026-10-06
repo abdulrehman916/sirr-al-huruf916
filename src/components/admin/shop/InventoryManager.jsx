@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Package, AlertTriangle, CheckCircle, Infinity as InfinityIcon, Save, X } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -40,7 +40,7 @@ export default function InventoryManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.Product.list("-created_date", 500);
+      const list = await platform.entities.Product.list("-created_date", 500);
       setProducts(list || []);
     } catch { setProducts([]); }
     finally { setLoading(false); }
@@ -60,7 +60,7 @@ export default function InventoryManager() {
 
   const saveStock = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, {
+      await platform.entities.Product.update(product.id, {
         stock_quantity: editStock,
         warehouse_location: editWarehouse,
         is_out_of_stock: editStock === 0,
@@ -91,7 +91,7 @@ export default function InventoryManager() {
     const val = bulkStock.trim() === "unlimited" ? -1 : parseInt(bulkStock) || 0;
     try {
       const ids = Array.from(selectedIds);
-      await base44.entities.Product.bulkUpdate(ids.map(id => ({ id, stock_quantity: val, is_out_of_stock: val === 0, updated_at: new Date().toISOString() })));
+      await platform.entities.Product.bulkUpdate(ids.map(id => ({ id, stock_quantity: val, is_out_of_stock: val === 0, updated_at: new Date().toISOString() })));
       toast({ title: `${ids.length} products stock updated` });
       setSelectedIds(new Set());
       setBulkStock("");

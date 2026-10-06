@@ -5,6 +5,12 @@ import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginUnusedImports from "eslint-plugin-unused-imports";
 
 export default [
+  { ignores: ["dist/**", "node_modules/**", "base44/**"] },
+  {
+    files: ["src/**/*.{js,jsx}"],
+    languageOptions: { globals: globals.browser, parserOptions: { ecmaVersion: 2022, sourceType: "module", ecmaFeatures: { jsx: true } } },
+    plugins: { "react-hooks": pluginReactHooks },
+  },
   {
     files: [
       "src/components/**/*.{js,mjs,cjs,jsx}",

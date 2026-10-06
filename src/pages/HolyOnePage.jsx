@@ -1,12 +1,11 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Search, SortAsc, SortDesc, Heart, Clock, BookOpen } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/lib/AuthContext";
 import SectionBVisualIntegrator from "@/components/sectionb/SectionBVisualIntegrator";
@@ -37,7 +36,7 @@ export default function HolyOnePage() {
   const loadNames = async () => {
     setLoading(true);
     try {
-      const result = await base44.entities.HolyOneName.filter({ archived: false });
+      const result = await platform.entities.HolyOneName.filter({ archived: false });
       setNames(result);
     } catch (e) {
       toast({ title: "Failed to load names", description: e.message, variant: "destructive" });
@@ -67,7 +66,7 @@ export default function HolyOnePage() {
     // Sorting
     filtered.sort((a, b) => {
       let comparison = 0;
-      
+
       if (sortBy === "alphabetical") {
         comparison = (a.arabic_name || "").localeCompare(b.arabic_name || "", "ar");
       } else if (sortBy === "recently_viewed") {
@@ -75,7 +74,7 @@ export default function HolyOnePage() {
         const bTime = b.last_viewed ? new Date(b.last_viewed).getTime() : 0;
         comparison = bTime - aTime;
       }
-      
+
       return sortOrder === "asc" ? comparison : -comparison;
     });
 
@@ -84,7 +83,7 @@ export default function HolyOnePage() {
 
   const toggleFavorite = async (name) => {
     try {
-      await base44.entities.HolyOneName.update(name.id, { is_favorite: !name.is_favorite });
+      await platform.entities.HolyOneName.update(name.id, { is_favorite: !name.is_favorite });
       loadNames();
       toast({ title: name.is_favorite ? "Removed from favorites" : "Added to favorites" });
     } catch (e) {
@@ -95,7 +94,7 @@ export default function HolyOnePage() {
   const viewName = async (name) => {
     try {
       // Update view count and last viewed
-      await base44.entities.HolyOneName.update(name.id, {
+      await platform.entities.HolyOneName.update(name.id, {
         view_count: (name.view_count || 0) + 1,
         last_viewed: new Date().toISOString()
       });
@@ -108,7 +107,7 @@ export default function HolyOnePage() {
   return (
     <PageLayout>
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
-        
+
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="font-amiri text-3xl font-bold text-gold mb-2">Holy One</h1>
@@ -133,7 +132,7 @@ export default function HolyOnePage() {
               onClick={() => setSortBy("alphabetical")}
               variant={sortBy === "alphabetical" ? "default" : "outline"}
               className="flex-1 min-w-[120px]"
-              style={{ 
+              style={{
                 background: sortBy === "alphabetical" ? G.bg : "transparent",
                 borderColor: G.border,
                 fontSize: 16
@@ -146,7 +145,7 @@ export default function HolyOnePage() {
               onClick={() => setSortBy("recently_viewed")}
               variant={sortBy === "recently_viewed" ? "default" : "outline"}
               className="flex-1 min-w-[120px]"
-              style={{ 
+              style={{
                 background: sortBy === "recently_viewed" ? G.bg : "transparent",
                 borderColor: G.border,
                 fontSize: 16
@@ -158,7 +157,7 @@ export default function HolyOnePage() {
             <Button
               onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
               variant={showFavoritesOnly ? "default" : "outline"}
-              style={{ 
+              style={{
                 background: showFavoritesOnly ? G.bg : "transparent",
                 borderColor: G.border,
                 fontSize: 16

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
-import { Search, Filter, MessageSquare, CheckCircle, Clock, AlertCircle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Search, MessageSquare, CheckCircle, Clock, AlertCircle } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
@@ -52,7 +52,7 @@ export default function AdminSupportCenter() {
 
   const checkAdmin = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!["owner", "admin"].includes(user?.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
       loadConversations();
@@ -66,21 +66,21 @@ export default function AdminSupportCenter() {
   const loadConversations = async () => {
     setLoading(true);
     try {
-      const result = await base44.functions.invoke("getSupportConversations", { limit: 100, skip: 0 });
+      const result = await platform.functions.invoke("getSupportConversations", { limit: 100, skip: 0 });
       let convs = result.conversations || [];
-      
+
       if (statusFilter !== "ALL") {
         convs = convs.filter(c => c.status === statusFilter);
       }
       if (search) {
         const s = search.toLowerCase();
-        convs = convs.filter(c => 
+        convs = convs.filter(c =>
           (c.subject || "").toLowerCase().includes(s) ||
           (c.user_name || "").toLowerCase().includes(s) ||
           (c.user_email || "").toLowerCase().includes(s)
         );
       }
-      
+
       setConversations(convs);
     } catch (e) {
       toast({ title: "Failed to load conversations", description: e.message, variant: "destructive" });
@@ -91,7 +91,7 @@ export default function AdminSupportCenter() {
 
   const loadMessages = async (conversation_id) => {
     try {
-      const result = await base44.functions.invoke("getSupportMessages", { conversation_id, limit: 100 });
+      const result = await platform.functions.invoke("getSupportMessages", { conversation_id, limit: 100 });
       setMessages(result.messages || []);
     } catch (e) {
       toast({ title: "Failed to load messages", description: e.message, variant: "destructive" });
@@ -100,10 +100,10 @@ export default function AdminSupportCenter() {
 
   const sendMessage = async () => {
     if (!replyMessage.trim() || !selectedConv) return;
-    
+
     setSending(true);
     try {
-      await base44.functions.invoke("sendSupportMessage", {
+      await platform.functions.invoke("sendSupportMessage", {
         conversation_id: selectedConv.conversation_id,
         message: replyMessage.trim()
       });
@@ -120,7 +120,7 @@ export default function AdminSupportCenter() {
 
   const updateConversation = async (conversation_id, updates) => {
     try {
-      await base44.functions.invoke("updateSupportConversation", { conversation_id, ...updates });
+      await platform.functions.invoke("updateSupportConversation", { conversation_id, ...updates });
       loadConversations();
       toast({ title: "Conversation updated" });
     } catch (e) {
@@ -150,7 +150,7 @@ export default function AdminSupportCenter() {
   return (
     <AdminLayout title="Support Center" subtitle="Manage customer conversations">
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
-        
+
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
           <StatCard label="Total" value={stats.total} icon={<MessageSquare className="w-4 h-4" />} />
@@ -231,15 +231,15 @@ export default function AdminSupportCenter() {
                 </div>
               </DialogTitle>
             </DialogHeader>
-            
+
             {/* Messages */}
             <div className="flex-1 overflow-y-auto space-y-3 py-4" style={{ maxHeight: "400px" }}>
               {messages.map((msg) => (
                 <div key={msg.id} className={`flex ${msg.sender_type === "ADMIN" ? "justify-end" : "justify-start"}`}>
                   <div
                     className={`rounded-xl p-3 max-w-[80%] ${
-                      msg.sender_type === "ADMIN" 
-                        ? "bg-yellow-500/10 border border-yellow-500/30" 
+                      msg.sender_type === "ADMIN"
+                        ? "bg-yellow-500/10 border border-yellow-500/30"
                         : "bg-white/5 border border-white/10"
                     }`}
                   >

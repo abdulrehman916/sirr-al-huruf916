@@ -25,7 +25,7 @@ import {
   FileSearch, Database, Copy, ShieldAlert,
   Image as ImageIcon, ShieldCheck, Save, Clock
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 export default function SirrAnalyzeModal({ file, language, onClose, onComplete }) {
   const isMl = language === "ml";
@@ -53,7 +53,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
       setStage("quality");
       setProgress(5);
 
-      const importRes = await base44.functions.invoke("importFromOneDrive", {
+      const importRes = await platform.functions.invoke("importFromOneDrive", {
         file_id: file.id,
         book_title: bookTitle,
       });
@@ -102,7 +102,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
           while (!chunkSuccess && chunkAttempts <= MAX_CHUNK_RETRIES) {
             chunkAttempts++;
             try {
-              const chunkRes = await base44.functions.invoke("processImportChunk", {
+              const chunkRes = await platform.functions.invoke("processImportChunk", {
                 job_id: jobId,
                 chunk_number: chunk.chunk_number,
                 retry_attempt: chunkAttempts - 1,
@@ -184,7 +184,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
           // The function response may be stale if the HTTP request was slow.
           // The database is the source of truth for chunk completion status.
           try {
-            const jobs = await base44.entities.ManuscriptImportJob.filter({ job_id: jobId });
+            const jobs = await platform.entities.ManuscriptImportJob.filter({ job_id: jobId });
             if (jobs && jobs.length > 0) {
               const liveJob = jobs[0];
               const completedCount = liveJob.chunks.filter(c => c.status === 'completed').length;
@@ -205,7 +205,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
       setStage("extraction");
       setProgress(20);
       try {
-        const books = await base44.entities.ManuscriptBook.filter({ book_id: bookId });
+        const books = await platform.entities.ManuscriptBook.filter({ book_id: bookId });
         if (books && books.length > 0) {
           const book = books[0];
           const phase1Report = book.validation_report || {};
@@ -250,7 +250,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
         batchCount++;
         setBatchInfo({ current: batchCount, remaining: 0 });
 
-        const verifyRes = await base44.functions.invoke("verifyBookEntries", {
+        const verifyRes = await platform.functions.invoke("verifyBookEntries", {
           book_id: bookId,
           batch_size: 5,
         });
@@ -281,7 +281,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
       setProgress(80);
 
       try {
-        await base44.functions.invoke("detectManuscriptDuplicates", { book_id: bookId });
+        await platform.functions.invoke("detectManuscriptDuplicates", { book_id: bookId });
       } catch { /* non-critical — duplicates can be detected later */ }
 
       // ══ STAGE: Universal Knowledge Routing ══
@@ -294,7 +294,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
       try {
         let routeData;
         do {
-          const routeRes = await base44.functions.invoke("routeManuscriptKnowledge", {
+          const routeRes = await platform.functions.invoke("routeManuscriptKnowledge", {
             book_id: bookId,
             batch_size: 5,
           });

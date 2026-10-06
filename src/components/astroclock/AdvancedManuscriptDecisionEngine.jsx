@@ -5,14 +5,14 @@
  */
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Clock, CheckCircle, XCircle, AlertCircle, Book, Search, Shield, Sword } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { 
-  searchManuscriptsForAction, 
-  getCurrentLiveConditions, 
+import {
+  searchManuscriptsForAction,
+  getCurrentLiveConditions,
   compareRulesAgainstConditions,
-  calculateNextSuitableTime 
+  calculateNextSuitableTime
 } from "@/lib/advancedManuscriptDecisionEngine.js";
 
 const G = {
@@ -65,10 +65,10 @@ export default function AdvancedManuscriptDecisionEngine() {
   function runDecisionEngine(action) {
     setLoading(true);
     const now = new Date();
-    
+
     // STEP 1: Search all manuscripts (includes classification)
     const manuscriptSearch = searchManuscriptsForAction(action.key);
-    
+
     if (!manuscriptSearch.found) {
       setDecisionResult({
         manuscriptFound: false,
@@ -78,25 +78,25 @@ export default function AdvancedManuscriptDecisionEngine() {
       setLoading(false);
       return;
     }
-    
+
     // STEP 2: Get current live conditions
     const liveConditions = getCurrentLiveConditions(now, 6.5, 18.25);
-    
+
     // STEP 3: Compare rules against conditions (with action type awareness)
     const allRules = [];
     Object.values(manuscriptSearch.rulesByManuscript).forEach(rules => {
       allRules.push(...rules);
     });
-    
+
     const comparison = compareRulesAgainstConditions(
-      allRules, 
-      liveConditions, 
+      allRules,
+      liveConditions,
       manuscriptSearch.classification
     );
-    
+
     // STEP 4: Calculate next suitable time
     const nextSuitable = calculateNextSuitableTime(allRules, now, 6.5, 18.25);
-    
+
     // STEP 5: Build timing guidance
     const timingGuidance = {
       suitableMansions: extractSuitableMansions(allRules),
@@ -107,7 +107,7 @@ export default function AdvancedManuscriptDecisionEngine() {
       unsuitableDays: extractUnsuitableDays(allRules),
       bestNight: extractDayOrNight(allRules)
     };
-    
+
     setDecisionResult({
       manuscriptFound: true,
       action: action,
@@ -265,21 +265,21 @@ function DecisionResults({ result, isMalayalam }) {
       {classification && classification.classified && (
         <ActionTypeDisplay classification={classification} isMalayalam={isMalayalam} />
       )}
-      
+
       {/* Current Status */}
       <CurrentStatusDisplay comparison={comparison} isMalayalam={isMalayalam} />
-      
+
       {/* Live Conditions */}
       <LiveConditionsDisplay conditions={liveConditions} isMalayalam={isMalayalam} />
-      
+
       {/* Timing Guidance */}
       <TimingGuidanceDisplay guidance={timingGuidance} isMalayalam={isMalayalam} />
-      
+
       {/* Next Suitable Time */}
       {nextSuitable?.found && (
         <NextSuitableTimeDisplay next={nextSuitable} isMalayalam={isMalayalam} />
       )}
-      
+
       {/* Manuscript Evidence */}
       <ManuscriptEvidenceDisplay rulesByManuscript={result.rulesByManuscript} isMalayalam={isMalayalam} />
     </div>
@@ -289,12 +289,12 @@ function DecisionResults({ result, isMalayalam }) {
 function ActionTypeDisplay({ classification, isMalayalam }) {
   const isBeneficial = classification.actionType === 'beneficial';
   const isHarmful = classification.actionType === 'harmful';
-  
+
   const Icon = isBeneficial ? Shield : isHarmful ? Sword : AlertCircle;
   const color = isBeneficial ? '#22c55e' : isHarmful ? '#ef4444' : '#fbbf24';
   const bg = isBeneficial ? 'rgba(34,197,94,0.10)' : isHarmful ? 'rgba(239,68,68,0.10)' : 'rgba(251,191,36,0.10)';
   const border = isBeneficial ? 'rgba(34,197,94,0.50)' : isHarmful ? 'rgba(239,68,68,0.50)' : 'rgba(251,191,36,0.50)';
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 8 }}
@@ -313,7 +313,7 @@ function ActionTypeDisplay({ classification, isMalayalam }) {
           </p>
         </div>
       </div>
-      
+
       <div className="grid md:grid-cols-2 gap-3 text-sm">
         <div className="p-3 rounded-lg" style={{ background: 'rgba(34,197,94,0.05)', border: '1px solid rgba(34,197,94,0.30)' }}>
           <p className="font-inter text-[8px] uppercase tracking-widest mb-1" style={{ color: '#22c55e' }}>
@@ -332,7 +332,7 @@ function ActionTypeDisplay({ classification, isMalayalam }) {
           </p>
         </div>
       </div>
-      
+
       {classification.confidence && (
         <p className="font-inter text-[8px] mt-3" style={{ color: 'rgba(255,255,255,0.50)' }}>
           {isMalayalam ? "വിശ്വാസം:" : "Confidence:"} {Math.round(classification.confidence * 100)}% ({classification.beneficialIndicators} {isMalayalam ? "ഗുണകരം" : "beneficial"} / {classification.harmfulIndicators} {isMalayalam ? "ഹാനികരം" : "harmful"})

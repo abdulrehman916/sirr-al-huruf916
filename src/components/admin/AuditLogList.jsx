@@ -3,7 +3,7 @@
  * Displays aggregated logs from multiple sources (RedeemCodeApproval, AccessCode, AdminProfile, AssignmentLog).
  */
 import { useState, useMemo } from "react";
-import { Search, History, Filter, X } from "lucide-react";
+import { Search, History, X } from "lucide-react";
 import {
   Select,
   SelectContent,

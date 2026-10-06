@@ -8,7 +8,7 @@
 // ISOLATED to Astro Clock — reads AstroClockKnowledge only.
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 function norm(s) {
   return String(s || "")
@@ -37,7 +37,7 @@ export function useAstroClockVisuals(categories = [], entityAliases = []) {
 
       for (const cat of categories) {
         try {
-          const recs = await base44.entities.AstroClockKnowledge.filter(
+          const recs = await platform.entities.AstroClockKnowledge.filter(
             { is_marker: false, rule_category: cat },
             "-source_count",
             200

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/lib/AuthContext";
 import { BookOpen, LogOut } from "lucide-react";
@@ -21,7 +21,7 @@ export default function AccountModal({ user, onClose }) {
 
   useEffect(() => {
     if (user?.id) {
-      base44.entities.UserAccessProfile.filter({ user_id: user.id })
+      platform.entities.UserAccessProfile.filter({ user_id: user.id })
         .then(profiles => {
           if (profiles && profiles.length > 0) {
             setProfile(profiles[0]);
@@ -125,7 +125,7 @@ export default function AccountModal({ user, onClose }) {
                 Books Studio
               </button>
             )}
-            
+
             <button
               onClick={handleLogout}
               disabled={loggingOut}

@@ -98,8 +98,8 @@ export function checkLocalPermission(page_path) {
 export async function validateAndCleanPermissions() {
   const sid = getSessionId();
   try {
-    const { base44 } = await import("@/api/base44Client");
-    const res = await base44.functions.invoke("validateCodeStatus", { session_id: sid });
+    const { platform } = await import("@/api/platformClient");
+    const res = await platform.functions.invoke("validateCodeStatus", { session_id: sid });
     const data = res.data;
     if (!data?.success || !data?.codes) return;
 

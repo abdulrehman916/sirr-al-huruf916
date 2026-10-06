@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Edit3, Trash2, Users, Save, Search } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -24,7 +24,7 @@ export default function CustomersManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopCustomer.list("-created_date", 200);
+      const list = await platform.entities.ShopCustomer.list("-created_date", 200);
       setCustomers(list || []);
     } catch { setCustomers([]); }
     finally { setLoading(false); }
@@ -37,10 +37,10 @@ export default function CustomersManager() {
     try {
       const now = new Date().toISOString();
       if (editId) {
-        await base44.entities.ShopCustomer.update(editId, { ...form, updated_at: now });
+        await platform.entities.ShopCustomer.update(editId, { ...form, updated_at: now });
         toast({ title: "Customer updated" });
       } else {
-        await base44.entities.ShopCustomer.create({ ...form, customer_id: `CUS-${Date.now()}`, created_at: now, total_orders: 0, wishlist_count: 0 });
+        await platform.entities.ShopCustomer.create({ ...form, customer_id: `CUS-${Date.now()}`, created_at: now, total_orders: 0, wishlist_count: 0 });
         toast({ title: "Customer created" });
       }
       setShowForm(false);
@@ -54,7 +54,7 @@ export default function CustomersManager() {
 
   const handleDelete = async (id) => {
     if (!confirm("Delete this customer?")) return;
-    try { await base44.entities.ShopCustomer.delete(id); toast({ title: "Customer deleted" }); load(); }
+    try { await platform.entities.ShopCustomer.delete(id); toast({ title: "Customer deleted" }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 

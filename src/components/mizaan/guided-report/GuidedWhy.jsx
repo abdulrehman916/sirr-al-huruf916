@@ -2,7 +2,7 @@
 // Displays only the reasons that apply to the CURRENT selection.
 import { CheckCircle2, XCircle } from "lucide-react";
 import GuidedCard from "./GuidedCard";
-import { G, T } from "../ritual-report/shared";
+import { T } from "../ritual-report/shared";
 
 export default function GuidedWhy({ analysis, lang }) {
   const isSuitable = analysis?.verdict === "Suitable";

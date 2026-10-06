@@ -10,7 +10,7 @@
  *
  * Cache TTL: 2 minutes (120000ms) — balances freshness with performance.
  */
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { getCached, setCached } from "@/lib/permissionCache";
 
 const CACHE_TTL = 120000; // 2 minutes
@@ -42,7 +42,7 @@ export function setCachedFeaturePermission(pagePath, featureId, requiresPermissi
  */
 export async function preloadPageFeatureConfigs(pagePath) {
   try {
-    const results = await base44.entities.FeatureConfig.filter(
+    const results = await platform.entities.FeatureConfig.filter(
       { page_path: pagePath, is_active: true },
       "sort_order",
       50
@@ -72,7 +72,7 @@ export async function getFeatureConfig(pagePath, featureId) {
   }
 
   try {
-    const results = await base44.entities.FeatureConfig.filter(
+    const results = await platform.entities.FeatureConfig.filter(
       { page_path: pagePath, feature_id: featureId, is_active: true },
       null,
       1
@@ -102,7 +102,7 @@ export async function getPageFeatureConfigs(pagePath) {
   }
 
   try {
-    const results = await base44.entities.FeatureConfig.filter(
+    const results = await platform.entities.FeatureConfig.filter(
       { page_path: pagePath, is_active: true },
       "sort_order",
       50
@@ -120,7 +120,7 @@ export async function getPageFeatureConfigs(pagePath) {
 /**
  * Invalidate cache for a specific feature or page (called after admin updates).
  * @param {string} pagePath
- * @param {string} [featureId] — if omitted, invalidates all configs for the page
+ * @param {string} [featureId] - If omitted, invalidates all configs for the page.
  */
 export function invalidateFeatureConfigCache(pagePath, featureId) {
   if (featureId) {

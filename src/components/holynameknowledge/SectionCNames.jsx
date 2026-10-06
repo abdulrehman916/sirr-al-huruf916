@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, ChevronDown, Loader2, ShieldAlert } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import HolyNameEsotericResearchProfile from "@/components/holynameknowledge/HolyNameEsotericResearchProfile";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 
@@ -44,7 +44,7 @@ export default function SectionCNames() {
 
   useEffect(() => {
     let alive = true;
-    base44.entities.HolyNameEsotericKnowledge.list("order_index", 200)
+    platform.entities.HolyNameEsotericKnowledge.list("order_index", 200)
       .then((r) => { if (alive) setCards(r || []); })
       .catch(() => { if (alive) setCards([]); })
       .finally(() => { if (alive) setLoading(false); });

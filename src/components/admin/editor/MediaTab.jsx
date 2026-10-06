@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { Plus, X, ChevronUp, ChevronDown, Play, FileText, Image as ImageIcon, Upload, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -40,7 +40,7 @@ export default function MediaTab({ form, setForm }) {
     setUploading(true);
     try {
       for (const file of files) {
-        const result = await base44.integrations.Core.UploadFile({ file });
+        const result = await platform.integrations.Core.UploadFile({ file });
         if (result?.file_url) {
           setForm(prev => ({ ...prev, images: [...(prev.images || []), result.file_url] }));
         }
@@ -59,7 +59,7 @@ export default function MediaTab({ form, setForm }) {
     if (!file) return;
     setUploadingPdf(true);
     try {
-      const result = await base44.integrations.Core.UploadFile({ file });
+      const result = await platform.integrations.Core.UploadFile({ file });
       if (result?.file_url) {
         setForm(prev => ({ ...prev, pdf_url: result.file_url }));
         toast({ title: "PDF uploaded" });

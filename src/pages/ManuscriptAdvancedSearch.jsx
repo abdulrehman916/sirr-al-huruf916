@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Search, Book, Moon, Sun, Star, Sparkles, Shield, Gem, Scroll } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
@@ -54,7 +54,7 @@ export default function ManuscriptAdvancedSearch() {
   async function performSearch() {
     setLoading(true);
     try {
-      const response = await base44.functions.invoke('searchManuscriptRules', {
+      const response = await platform.functions.invoke('searchManuscriptRules', {
         query: searchTerm,
         searchIn: searchIn
       });
@@ -200,7 +200,7 @@ function SearchResultCard({ result, expanded, onToggle, isMalayalam }) {
               </span>
             )}
           </div>
-          
+
           <div className="flex flex-wrap gap-2 mb-2">
             <span className="font-inter text-[8px] px-2 py-0.5 rounded" style={{ background: "rgba(0,0,0,0.3)", color: G.dim }}>
               📖 {result.manuscript}
@@ -346,7 +346,7 @@ function SearchResultCard({ result, expanded, onToggle, isMalayalam }) {
                     <p className="font-inter text-[8px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>
                       {isMalayalam ? "സഅദ്/നഹ്സ്" : "Saad/Nahs"}
                     </p>
-                    <span className="font-inter text-xs px-2 py-1 rounded" style={{ 
+                    <span className="font-inter text-xs px-2 py-1 rounded" style={{
                       background: result.associations.saad_nahs === 'Saad' ? 'rgba(34,197,94,0.2)' : 'rgba(239,68,68,0.2)',
                       color: result.associations.saad_nahs === 'Saad' ? '#22c55e' : '#ef4444',
                       border: `1px solid ${result.associations.saad_nahs === 'Saad' ? '#22c55e' : '#ef4444'}`

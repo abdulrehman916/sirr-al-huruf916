@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { CheckCircle, XCircle, RefreshCw, Clock, User, Mail, FileText, Calendar, KeyRound, Search } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -38,13 +38,13 @@ export default function AdminAccessRequests() {
   const [rejectReason, setRejectReason] = useState("");
 
   useEffect(() => {
-    base44.auth.me().then(setUser).catch(() => {});
+    platform.auth.me().then(setUser).catch(() => {});
   }, []);
 
   const loadRequests = useCallback(async () => {
     setLoading(true);
     try {
-      const all = await base44.entities.AccessRequest.list("-requested_at", 500);
+      const all = await platform.entities.AccessRequest.list("-requested_at", 500);
       setRequests(all);
     } catch {
       toast({ title: "Error loading requests", variant: "destructive" });
@@ -75,7 +75,7 @@ export default function AdminAccessRequests() {
   const handleApprove = async (req) => {
     setProcessing(req.id);
     try {
-      const res = await base44.functions.invoke("approveAccessRequest", {
+      const res = await platform.functions.invoke("approveAccessRequest", {
         request_id: req.request_id,
       });
       if (!res.data?.success) {
@@ -101,7 +101,7 @@ export default function AdminAccessRequests() {
     setRejectingReq(null);
     setProcessing(req.id);
     try {
-      const res = await base44.functions.invoke("approveAccessRequest", {
+      const res = await platform.functions.invoke("approveAccessRequest", {
         request_id: req.request_id,
         reject: true,
         rejection_reason: rejectReason.trim() || "No reason provided",

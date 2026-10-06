@@ -11,7 +11,7 @@
 //   • Additional sources (appended from future PDF imports)
 // ═══════════════════════════════════════════════════════════════
 import { useState } from "react";
-import { ChevronDown, BookOpen, Clock, Calendar, Repeat, Sparkles, AlertCircle, Hand, Heart, Link2, Grid3x3 } from "lucide-react";
+import { ChevronDown, BookOpen, Clock, Calendar, Repeat, Sparkles, AlertCircle, Hand } from "lucide-react";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
 const CONTENT_TYPE_LABELS = {

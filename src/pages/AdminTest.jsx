@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { Shield, User, CheckCircle, XCircle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -28,7 +27,7 @@ export default function AdminTest() {
 
   const checkAuth = async () => {
     try {
-      const userData = await base44.auth.me();
+      const userData = await platform.auth.me();
       setUser(userData);
       setLoading(false);
     } catch (err) {

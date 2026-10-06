@@ -11,7 +11,7 @@ import {
   RefreshCw, GitMerge, ExternalLink, ImageIcon, Scale, Loader2, AlertTriangle,
   BookOpen, Hash, Clock, Tag, FileText, Languages, Shield, History,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
@@ -44,7 +44,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
     let active = true;
     (async () => {
       try {
-        const logs = await base44.entities.SirrAuditLog.filter({ sirr_book_id: p.master_book_id }, "-timestamp", 100);
+        const logs = await platform.entities.SirrAuditLog.filter({ sirr_book_id: p.master_book_id }, "-timestamp", 100);
         if (!active) return;
         const mine = (logs || []).filter((l) => String(l.page_range || "") === String(p.page_number));
         setAudit(mine);
@@ -79,7 +79,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
   async function run(mode, payload = {}) {
     setBusy(mode);
     try {
-      const res = await base44.functions.invoke("reviewMasterPdfPage", { mode, page_id: p.id, ...payload });
+      const res = await platform.functions.invoke("reviewMasterPdfPage", { mode, page_id: p.id, ...payload });
       const data = res?.data || res;
       if (data?.error) throw new Error(data.error);
       onChanged && onChanged();

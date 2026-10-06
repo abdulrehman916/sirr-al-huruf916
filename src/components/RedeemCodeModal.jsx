@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { X, KeyRound, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { addRedeemedCode, getSessionId, mergeGrantedPermissions } from "@/lib/sessionId";
 
 const G = {
@@ -40,14 +40,14 @@ export default function RedeemCodeModal({ onClose }) {
       // be restored only by the same linked account.
       let signedInUser = null;
       try {
-        signedInUser = await base44.auth.me();
+        signedInUser = await platform.auth.me();
       } catch {
         signedInUser = null;
       }
 
       if (!signedInUser?.id) throw new Error("ആദ്യം നിങ്ങളുടെ email ഉപയോഗിച്ച് login ചെയ്യുക.");
       const functionName = "redeemCodeLinked";
-      const res = await base44.functions.invoke(functionName, {
+      const res = await platform.functions.invoke(functionName, {
         code: trimmed,
         session_id: sessionId,
       });

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Trash2, Wand2, Copy, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { preprocessArabic } from "../lib/asyncProcessor";
-import { ABJAD_MAP } from "../lib/abjadValues";
+import { ABJAD_VALUES as ABJAD_MAP } from "../lib/abjadValues";
 
 // ── Abjad calculation ─────────────────────────────────
 function calcAbjad(text) {

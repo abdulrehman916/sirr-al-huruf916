@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from "react";
-import { Upload, Loader2, CheckCircle2, AlertCircle, FileImage, X } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Upload, Loader2, CheckCircle2, AlertCircle, FileImage } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useManuscriptScreenshotIngestion } from "@/hooks/useManuscriptScreenshotIngestion";
 
 const DOMAIN_LABELS = {
@@ -48,11 +48,11 @@ export default function ManuscriptScreenshotUploader() {
     for (const file of selectedFiles) {
       try {
         // Step 1: Upload file
-        const uploadRes = await base44.integrations.Core.UploadFile({ file });
+        const uploadRes = await platform.integrations.Core.UploadFile({ file });
         const fileUrl = uploadRes.file_url || uploadRes.data?.file_url;
 
         // Step 2: Classify + Ingest
-        const ingestRes = await base44.functions.invoke('classifyAndIngestScreenshot', {
+        const ingestRes = await platform.functions.invoke('classifyAndIngestScreenshot', {
           file_url: fileUrl,
           source_label: sourceLabel || file.name
         });

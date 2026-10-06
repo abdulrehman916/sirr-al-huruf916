@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { FIRST_BAST, istintak, getBastLevel, satirVahidSum } from "../../lib/mizaanPostEngine";
+import { FIRST_BAST } from "../../lib/mizaanPostEngine";
 
 const G = {
   gold: "#F5D060",
@@ -20,21 +20,21 @@ export default function AllahCalculationAudit() {
   const calculation = useMemo(() => {
     const word = "الله";
     const letters = ["ا", "ل", "ل", "ه"];
-    
+
     // Step 1: Value 1 (First Bast) for each letter
     const letterValues = letters.map((l, i) => ({
       letter: l,
       index: i + 1,
       value1: FIRST_BAST[l] || 0,
     }));
-    
+
     // Step 2: Sum of all Value 1 values
     const totalValue1 = letterValues.reduce((sum, lv) => sum + lv.value1, 0);
-    
+
     // Step 3: For Mizan Option 1, we need the full 9 Mizan grand totals
     // This is a SIMPLIFIED audit showing only the input word's letter values
     // Full calculation requires all 9 Mizan selections
-    
+
     return {
       word,
       letters: letterValues,
@@ -120,8 +120,8 @@ export default function AllahCalculationAudit() {
             ⚠ Important Note
           </div>
           <p className="font-inter text-xs" style={{ color: G.dim }}>
-            This shows ONLY the input word "الله" letter values. The FULL Mizan Option 1 Vefk Source requires 
-            completing all 9 Mizan selections (Element, Khayr/Sharr, Hour, Day, Planet, Purposes, etc.) to get 
+            This shows ONLY the input word "الله" letter values. The FULL Mizan Option 1 Vefk Source requires
+            completing all 9 Mizan selections (Element, Khayr/Sharr, Hour, Day, Planet, Purposes, etc.) to get
             the Grand Bast + Grand Letters total, which then produces the expanded letters through Istintak.
           </p>
         </div>

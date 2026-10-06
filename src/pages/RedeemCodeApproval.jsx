@@ -21,9 +21,8 @@ import {
   AlertCircle,
   Send,
   MessageSquare,
-  ArrowRight,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -67,7 +66,7 @@ export default function RedeemCodeApproval() {
       let email = null;
       let name = null;
       try {
-        const user = await base44.auth.me();
+        const user = await platform.auth.me();
         if (user?.email) {
           email = user.email;
           name = user.full_name || "";
@@ -86,7 +85,7 @@ export default function RedeemCodeApproval() {
 
   const loadSubmissions = async (email) => {
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "GET_MY_SUBMISSIONS",
         email: email,
       });
@@ -110,7 +109,7 @@ export default function RedeemCodeApproval() {
     setSubmitting(true);
     try {
       const sessionId = getSessionId();
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "SUBMIT",
         code: formData.code.trim(),
         email: formData.email.trim(),
@@ -153,7 +152,7 @@ export default function RedeemCodeApproval() {
     if (!responseData.trim()) return;
     setResponding(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "RESPOND_INFO",
         approval_id: approvalId,
         customer_response: responseData.trim(),

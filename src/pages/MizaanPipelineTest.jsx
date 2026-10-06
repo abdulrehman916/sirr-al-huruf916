@@ -11,14 +11,9 @@ import PageLayout from "../components/PageLayout";
 import {
   runMizaanPostPipeline,
   istintak,
-  getBastLevel,
-  satirVahidSum,
-  buildVefk,
-  BAST_TABLE,
-  FIRST_BAST,
   ELEMENT_BAST_TOTALS,
 } from "../lib/mizaanPostEngine";
-import { mizaanAnalyze, MIZAAN_ELEMENTS, MIZAAN_BAST2 } from "../lib/mizaan9Engine";
+import { mizaanAnalyze, MIZAAN_BAST2 } from "../lib/mizaan9Engine";
 import {
   MIZAAN_KHAYR_SHARR,
   MIZAAN_HOURS,
@@ -26,7 +21,6 @@ import {
   MIZAAN_PLANETS_ALL,
   MIZAAN_PURPOSES,
   MIZAAN_ELEMENT_DEGREES,
-  DAY_PLANET_MAP,
 } from "../lib/mizaan9Data";
 
 // ── FIXED TEST INPUT ────────────────────────────────────────────────

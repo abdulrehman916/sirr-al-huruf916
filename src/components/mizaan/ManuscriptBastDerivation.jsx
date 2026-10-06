@@ -3,7 +3,7 @@
  * Shows seed letters, ferd/zevc, processing order, and individual bast derivations
  */
 import { useMemo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { getBastLevel, istintak } from "../../lib/mizaanPostEngine";
 
 const G = {
@@ -25,13 +25,13 @@ const AR = {
 function LetterChip({ letter, bastValue, color, size = "1.4rem", showBast = false }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "2px" }}>
-      <span 
-        dir="rtl" 
+      <span
+        dir="rtl"
         lang="ar"
-        style={{ 
+        style={{
           fontFamily: AR.fontFamily,
-          fontSize: size, 
-          color: color, 
+          fontSize: size,
+          color: color,
           fontWeight: "600",
           padding: "6px 10px",
           borderRadius: "6px",
@@ -62,9 +62,9 @@ function ProcessingArrow({ direction = "right" }) {
   );
 }
 
-export default function ManuscriptBastDerivation({ 
-  seedLetters, 
-  bastLevel, 
+export default function ManuscriptBastDerivation({
+  seedLetters,
+  bastLevel,
   isZevc,
   expandedLetters,
   isExpandedZevc,
@@ -97,10 +97,10 @@ export default function ManuscriptBastDerivation({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       className="rounded-2xl border p-5 space-y-4"
-      style={{ 
-        background: "rgba(3,6,20,0.99)", 
-        borderColor: color, 
-        boxShadow: `0 0 40px ${color}20, inset 0 1px 0 ${color}10` 
+      style={{
+        background: "rgba(3,6,20,0.99)",
+        borderColor: color,
+        boxShadow: `0 0 40px ${color}20, inset 0 1px 0 ${color}10`
       }}
     >
       {/* Header */}
@@ -135,9 +135,9 @@ export default function ManuscriptBastDerivation({
       <div className="rounded-xl border p-3" style={{ background: `${color}05`, borderColor: `${color}30` }}>
         <div className="flex items-center justify-between mb-2">
           <span className="font-inter text-[8px] uppercase tracking-widest" style={{ color: G.dim }}>Classification</span>
-          <div style={{ 
-            fontSize: "0.9rem", 
-            fontWeight: "bold", 
+          <div style={{
+            fontSize: "0.9rem",
+            fontWeight: "bold",
             color: isZevc ? G.green : G.red,
             padding: "4px 12px",
             borderRadius: "4px",
@@ -157,9 +157,9 @@ export default function ManuscriptBastDerivation({
       <div className="rounded-xl border p-3" style={{ background: `${color}05`, borderColor: `${color}30` }}>
         <div className="flex items-center justify-between">
           <span className="font-inter text-[8px] uppercase tracking-widest" style={{ color: G.dim }}>Selected Bast Level</span>
-          <div style={{ 
-            fontSize: "1.1rem", 
-            fontWeight: "bold", 
+          <div style={{
+            fontSize: "1.1rem",
+            fontWeight: "bold",
             color: G.green,
             padding: "6px 14px",
             borderRadius: "6px",
@@ -183,7 +183,7 @@ export default function ManuscriptBastDerivation({
             FIRST → LAST
           </span>
         </div>
-        
+
         <div className="flex flex-wrap items-center justify-center gap-1 py-3" style={{ direction: "ltr" }}>
           {seedLetters.map((l, i) => (
             <div key={i} style={{ display: "flex", alignItems: "center" }}>
@@ -197,7 +197,7 @@ export default function ManuscriptBastDerivation({
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-2">
           <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: G.dim }}>
             Sequence: {seedLetters.join(' ')}
@@ -226,20 +226,20 @@ export default function ManuscriptBastDerivation({
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.08, duration: 0.3 }}
               className="rounded-lg border p-3"
-              style={{ 
-                background: `${G.purple}05`, 
+              style={{
+                background: `${G.purple}05`,
                 borderColor: `${G.purple}30`,
                 borderLeft: `3px solid ${color}`
               }}
             >
               <div className="flex items-center gap-2 mb-2">
-                <span style={{ 
-                  background: color, 
-                  color: "#000", 
-                  padding: "2px 8px", 
-                  borderRadius: "4px", 
-                  fontWeight: "bold", 
-                  fontSize: "0.65rem" 
+                <span style={{
+                  background: color,
+                  color: "#000",
+                  padding: "2px 8px",
+                  borderRadius: "4px",
+                  fontWeight: "bold",
+                  fontSize: "0.65rem"
                 }}>
                   {idx + 1}
                 </span>
@@ -251,12 +251,12 @@ export default function ManuscriptBastDerivation({
               <div className="flex items-center gap-3 flex-wrap">
                 {/* Original letter */}
                 <LetterChip letter={derivation.letter} color={G.purple} size="1.5rem" showBast={false} />
-                
+
                 <span style={{ fontSize: "1.5rem", color: G.dim }}>→</span>
-                
+
                 {/* Bast level */}
-                <div style={{ 
-                  fontSize: "0.75rem", 
+                <div style={{
+                  fontSize: "0.75rem",
                   color: G.text,
                   padding: "6px 10px",
                   borderRadius: "6px",
@@ -267,9 +267,9 @@ export default function ManuscriptBastDerivation({
                   <div style={{ color: G.dim, fontSize: "0.6rem", marginBottom: "2px" }}>{bastLevel}th Bast</div>
                   <div style={{ fontWeight: "bold" }}>{derivation.bastValue.toLocaleString()}</div>
                 </div>
-                
+
                 <span style={{ fontSize: "1.5rem", color: G.dim }}>→</span>
-                
+
                 {/* Expansion letters */}
                 <div className="flex flex-wrap gap-1" style={{ direction: "ltr" }}>
                   {derivation.expansionLetters.map((l, i) => (
@@ -302,15 +302,15 @@ export default function ManuscriptBastDerivation({
         <div className="p-4 rounded-lg" style={{ background: `${color}10`, border: `2px solid ${color}40` }}>
           <div className="flex flex-wrap justify-center gap-2 mb-3" style={{ direction: "ltr" }}>
             {allExpansionLetters.map((l, i) => (
-              <LetterChip 
-                key={i} 
-                letter={l} 
-                color={color} 
-                size="1.4rem" 
+              <LetterChip
+                key={i}
+                letter={l}
+                color={color}
+                size="1.4rem"
               />
             ))}
           </div>
-          
+
           <div className="text-center pt-3 border-t" style={{ borderColor: `${color}30` }}>
             <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: G.dim }}>
               All expansion letters concatenated in sequence order
@@ -336,15 +336,15 @@ export default function ManuscriptBastDerivation({
           <div className="p-4 rounded-lg" style={{ background: `${color}10`, border: `2px solid ${color}40` }}>
             <div className="flex flex-wrap justify-center gap-2 mb-3" style={{ direction: "ltr" }}>
               {expandedLetters.map((l, i) => (
-                <LetterChip 
-                  key={i} 
-                  letter={l} 
-                  color={G.green} 
-                  size="1.4rem" 
+                <LetterChip
+                  key={i}
+                  letter={l}
+                  color={G.green}
+                  size="1.4rem"
                 />
               ))}
             </div>
-            
+
             <div className="text-center pt-3 border-t" style={{ borderColor: `${color}30` }}>
               <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: G.dim }}>
                 These letters are used for Esma-i Kitabet name generation

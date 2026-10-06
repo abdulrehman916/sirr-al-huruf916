@@ -10,7 +10,7 @@ import { Clock, CheckCircle, XCircle, AlertCircle, Book, ChevronDown, ChevronUp 
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { getCurrentPlanetaryHour, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { getRulesForTopic, getAllTopics } from "@/lib/astroClockKnowledgeBaseFramework.js";
+import { getRulesForTopic } from "@/lib/astroClockKnowledgeBaseFramework.js";
 
 const ACTION_CATEGORIES = [
   { id: "marriage", name: "Marriage", arabic: "النكاح", icon: "💍" },
@@ -186,7 +186,7 @@ function CurrentFactors({ evaluation, isMalayalam }) {
 
   return (
     <div className="mb-6 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-      <FactorCard label={isMalayalam ? "ചാന്ദ്ര മൻസിൽ" : "Lunar Mansion"} value={isMalayalam ? (moonPos.mansion?.name_ar || "—") : moonPos.mansion?.name_en} arabic={isMalayalam ? undefined : moonPos.mansion?.name_ar} icon="🌙" />
+      <FactorCard label={isMalayalam ? "നക്ഷത്രം" : "Lunar Mansion"} value={isMalayalam ? moonPos.mansion?.name_ml : moonPos.mansion?.name_en} arabic={moonPos.mansion?.name_ar} icon="🌙" />
       <FactorCard label={isMalayalam ? "രാശി" : "Zodiac Sign"} value={isMalayalam ? moonPos.zodiacSign?.name_ml : moonPos.zodiacSign?.name_en} symbol={moonPos.zodiacSign?.symbol} icon="⭐" />
       <FactorCard label={isMalayalam ? "മൂലകം" : "Element"} value={moonPos.zodiacSign?.element} icon="🔥" />
       <FactorCard label={isMalayalam ? "ഗ്രഹ മണിക്കൂർ" : "Planetary Hour"} value={isMalayalam ? planetHour.planetInfo?.name_ml_equivalent : planetHour.planetInfo?.name_en} symbol={planetHour.planetInfo?.symbol} icon="🪐" />

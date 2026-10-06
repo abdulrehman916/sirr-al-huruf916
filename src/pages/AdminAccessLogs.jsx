@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Search, FileText, Calendar, Loader2, KeyRound, Globe, Shield } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Search, FileText, Calendar, Loader2, KeyRound, Globe } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -63,7 +63,7 @@ export default function AdminAccessLogs() {
   const [customDate, setCustomDate] = useState("");
 
   useEffect(() => {
-    base44.auth.me().then(user => {
+    platform.auth.me().then(user => {
       if (!user || !["owner", "admin"].includes(user.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
       loadLogs();
@@ -74,8 +74,8 @@ export default function AdminAccessLogs() {
     setLoading(true);
     try {
       const [accessLogs, codes] = await Promise.all([
-        base44.entities.AccessLog.list("-timestamp", 500),
-        base44.entities.AccessCode.list("-created_date", 200),
+        platform.entities.AccessLog.list("-timestamp", 500),
+        platform.entities.AccessCode.list("-created_date", 200),
       ]);
       setLogs(accessLogs);
 

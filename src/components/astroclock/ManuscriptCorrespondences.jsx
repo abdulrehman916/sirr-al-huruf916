@@ -4,11 +4,9 @@
 // Shows Arabic primary, Malayalam secondary, with full citations
 // ═══════════════════════════════════════════════════════════════
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Book, FileText, Scroll, Sparkles, Moon, Sun, Star, ChevronDown, ChevronUp } from "lucide-react";
-import { base44 } from "@/api/base44Client";
-import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
+import { Book, Scroll, Sparkles, Moon, Sun, Star, ChevronDown, ChevronUp } from "lucide-react";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay } from "./ArabicLetterDisplay";
 
 const G = {
@@ -49,7 +47,7 @@ export default function ManuscriptCorrespondences({ records, isMalayalam }) {
       <p className="font-inter text-xs font-bold uppercase tracking-wider" style={{ color: G.text }}>
         📖 {isMalayalam ? "ഹസ്തലിഖിത രേഖകൾ" : "Manuscript Records"} ({records.length})
       </p>
-      
+
       {Object.entries(groupedByCategory).map(([category, categoryRecords]) => (
         <CategorySection
           key={category}

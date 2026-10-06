@@ -16,7 +16,7 @@
 
 import { useMemo, useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { runMizaanPostPipeline, getBastLevel as getBastLevelA, istintak, GALIB_ANASIR_VALUES } from "../../lib/mizaanPostEngine";
+import { runMizaanPostPipeline, getBastLevel as getBastLevelA, istintak } from "../../lib/mizaanPostEngine";
 import SatrVahidGrouping from "./SatrVahidGrouping";
 import { ChevronDown, ChevronRight } from "lucide-react";
 

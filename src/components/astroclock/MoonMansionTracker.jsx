@@ -7,7 +7,7 @@
 
 import { useState, useEffect, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Moon, Calendar, Clock, Book, FileText, ChevronDown, ChevronUp, Star, AlertCircle, CheckCircle, Zap } from "lucide-react";
+import { Moon, Calendar, Clock, Book, FileText, ChevronDown, ChevronUp, AlertCircle, CheckCircle } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { AY_MANAZILLERI } from "@/lib/astroClockData.js";
@@ -27,20 +27,6 @@ const G = {
   warning: "rgba(251,191,36,0.15)",
   warningBorder: "rgba(251,191,36,0.60)"
 };
-
-const mansionArabicName = (mansion) =>
-  mansion?.name_arabic || mansion?.name_ar || "—";
-
-function MansionIdentity({ mansion, isMalayalam, compact = false }) {
-  if (!mansion) return null;
-  if (!isMalayalam) return <>{mansion.name_en || mansion.name || mansionArabicName(mansion)}</>;
-  return (
-    <span className="inline-flex flex-col">
-      <span className="font-amiri" dir="rtl">{mansionArabicName(mansion)}</span>
-      {!compact && <span className="font-malayalam text-[9px] font-normal text-white/45">ചാന്ദ്ര മൻസിൽ #{mansion.number}</span>}
-    </span>
-  );
-}
 
 export default function MoonMansionTracker() {
   const { isMalayalam } = useAstroClockLanguage();
@@ -149,7 +135,7 @@ export default function MoonMansionTracker() {
             <p className="font-inter text-[9px] uppercase tracking-widest" style={{ color: G.dim }}>
               {isMalayalam ? "നിലവിലെ നക്ഷത്രം" : "Current Mansion"}
             </p>
-            <p className="font-malayalam-md font-bold text-white"><MansionIdentity mansion={currentMansion} isMalayalam={isMalayalam} /></p>
+            <p className="font-malayalam-md font-bold text-white">#{currentMansion.number} {currentMansion.name_ml}</p>
           </div>
         )}
       </div>
@@ -198,7 +184,7 @@ function CurrentMansionDisplay({ mansion, nextMansion, countdown, isMalayalam })
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         <MansionDetail label={isMalayalam ? "നമ്പർ" : "Number"} value={`#${mansion.number}`} />
         <MansionDetail label={isMalayalam ? "അറബിക് പേര്" : "Arabic Name"} value={mansionData?.name_arabic || mansion.name_ar} arabic large />
-        <MansionDetail label={isMalayalam ? "തിരിച്ചറിയൽ" : "Identity"} value={isMalayalam ? `ചാന്ദ്ര മൻസിൽ #${mansion.number}` : (mansionData?.name_en || mansion.name_en)} />
+        <MansionDetail label={isMalayalam ? "മലയാളം പേര്" : "Malayalam Name"} value={mansionData?.name_ml || mansion.name_ml} />
         <MansionDetail label={isMalayalam ? "ഇംഗ്ലീഷ് പേര്" : "English Name"} value={mansionData?.name_en || mansion.name_en} />
       </div>
 
@@ -295,7 +281,7 @@ function NextMansionDisplay({ mansion, countdown, isMalayalam }) {
           <p className="font-inter text-[8px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>
             {isMalayalam ? "നക്ഷത്രം" : "Mansion"}
           </p>
-          <p className="font-malayalam-sm font-bold text-white"><MansionIdentity mansion={mansion} isMalayalam={isMalayalam} /></p>
+          <p className="font-malayalam-sm font-bold text-white">#{mansion.number} {mansion.name_ml}</p>
         </div>
         <div>
           <p className="font-inter text-[8px] uppercase tracking-widest mb-1" style={{ color: G.dim }}>
@@ -403,7 +389,7 @@ function MansionRow({ transit, index, expanded, onToggle, isMalayalam }) {
         </td>
         <td className="py-3 px-3">
           <div>
-            <p className="font-malayalam-sm font-bold text-white"><MansionIdentity mansion={transit.mansion} isMalayalam={isMalayalam} compact /></p>
+            <p className="font-malayalam-sm font-bold text-white">{transit.mansion.name_ml}</p>
             <p className="font-amiri text-xs" style={{ color: G.text }}>{transit.mansion.name_ar}</p>
           </div>
         </td>
@@ -462,7 +448,7 @@ function MansionDetails({ transit, mansionData, isMalayalam }) {
           <div className="space-y-2 text-sm">
             <DetailRow label={isMalayalam ? "നമ്പർ" : "Number"} value={`#${transit.mansion.number}`} />
             <DetailRow label={isMalayalam ? "അറബിക്" : "Arabic"} value={transit.mansion.name_ar} />
-            <DetailRow label={isMalayalam ? "തിരിച്ചറിയൽ" : "Identity"} value={isMalayalam ? `ചാന്ദ്ര മൻസിൽ #${transit.mansion.number}` : transit.mansion.name_en} />
+            <DetailRow label={isMalayalam ? "മലയാളം" : "Malayalam"} value={transit.mansion.name_ml} />
             <DetailRow label={isMalayalam ? "ഇംഗ്ലീഷ്" : "English"} value={transit.mansion.name_en} />
             <DetailRow label={isMalayalam ? "ഘടകം" : "Element"} value={mansionData?.element || "N/A"} />
             <DetailRow label={isMalayalam ? "സ്വഭാവം" : "Nature"} value={mansionData?.nature || "N/A"} />

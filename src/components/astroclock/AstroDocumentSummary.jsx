@@ -4,7 +4,7 @@
 // knowledge created/updated, duplicates, OCR confidence, processing
 // time, integrity checks, relationships, warnings.
 // ═══════════════════════════════════════════════════════════════
-import { CheckCircle2, AlertCircle, BookOpen, Globe, Layers, GitBranch, Clock, Shield } from "lucide-react";
+import { CheckCircle2, AlertCircle, BookOpen, Globe, Shield } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 
 const LANG_LABELS = { ar: 'العربية', ml: 'മലയാളം', en: 'English', tr: 'Türkçe' };

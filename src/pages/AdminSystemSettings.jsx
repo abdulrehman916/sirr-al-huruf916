@@ -9,14 +9,14 @@
  *
  * Server-side RBAC enforced by manageSystemSettings function.
  */
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import {
   Settings, Globe, UserPlus, Ticket, CreditCard, Shield, Bell,
-  Database, Download, Upload, Save, AlertTriangle, History, X,
+  Database, Download, Upload, AlertTriangle, History, X,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -76,7 +76,7 @@ export default function AdminSystemSettings() {
 
   const checkAdminAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         toast({ title: "Access Denied", description: "Only administrators can access this page", variant: "destructive" });
@@ -93,7 +93,7 @@ export default function AdminSystemSettings() {
   const loadSettings = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("manageSystemSettings", { action: "GET_SETTINGS" });
+      const res = await platform.functions.invoke("manageSystemSettings", { action: "GET_SETTINGS" });
       if (res.data?.success) {
         const s = res.data.settings;
         setSettings(s);
@@ -129,7 +129,7 @@ export default function AdminSystemSettings() {
   const handleSaveSection = async (section) => {
     setSavingSection(section);
     try {
-      const res = await base44.functions.invoke("manageSystemSettings", {
+      const res = await platform.functions.invoke("manageSystemSettings", {
         action: "UPDATE_SECTION",
         section,
         data: sectionData[section],
@@ -156,7 +156,7 @@ export default function AdminSystemSettings() {
   const handleExport = async () => {
     setExporting(true);
     try {
-      const res = await base44.functions.invoke("manageSystemSettings", { action: "EXPORT_SETTINGS" });
+      const res = await platform.functions.invoke("manageSystemSettings", { action: "EXPORT_SETTINGS" });
       if (res.data?.success) {
         const data = res.data.export_data;
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
@@ -183,7 +183,7 @@ export default function AdminSystemSettings() {
     setImporting(true);
     try {
       const importData = JSON.parse(importText);
-      const res = await base44.functions.invoke("manageSystemSettings", {
+      const res = await platform.functions.invoke("manageSystemSettings", {
         action: "IMPORT_SETTINGS",
         import_data: importData,
       });
@@ -204,7 +204,7 @@ export default function AdminSystemSettings() {
 
   const handleBackupConfig = async () => {
     try {
-      const res = await base44.functions.invoke("manageSystemSettings", { action: "BACKUP_CONFIG" });
+      const res = await platform.functions.invoke("manageSystemSettings", { action: "BACKUP_CONFIG" });
       if (res.data?.success) {
         toast({ title: "✓ Backup Recorded", description: "Database configuration backup logged." });
         await loadSettings();

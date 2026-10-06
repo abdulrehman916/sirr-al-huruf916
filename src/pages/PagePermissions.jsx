@@ -18,7 +18,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { Navigate } from "react-router-dom";
 import { Loader2, Search, RefreshCw, Save } from "lucide-react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
 import PricingPageCard from "@/components/admin/PricingPageCard";
@@ -26,7 +26,7 @@ import { getContentPages } from "@/lib/pageRegistry";
 import { FEATURE_REGISTRY, hasSubFeatures } from "@/lib/featureRegistry";
 import { invalidateFeatureConfigCache } from "@/lib/featureConfigCache";
 import { invalidatePlanCache } from "@/lib/subscriptionPlanCache";
-import { syncPages, isSyncInProgress } from "@/lib/pageSync";
+import { syncPages } from "@/lib/pageSync";
 import { Zap } from "lucide-react";
 
 const G = {
@@ -105,7 +105,7 @@ export default function PagePermissions() {
 
   const checkAdmin = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || user.role !== "admin") {
         setIsAdmin(false);
         return;
@@ -121,9 +121,9 @@ export default function PagePermissions() {
     setLoading(true);
     try {
       const [vis, cfgs, plans] = await Promise.all([
-        base44.entities.PageVisibilityConfig.list("-updated_at", 500),
-        base44.entities.FeatureConfig.list("-updated_at", 500),
-        base44.entities.SubscriptionPlanConfig.list("sort_order", 500),
+        platform.entities.PageVisibilityConfig.list("-updated_at", 500),
+        platform.entities.FeatureConfig.list("-updated_at", 500),
+        platform.entities.SubscriptionPlanConfig.list("sort_order", 500),
       ]);
       setVisibilityConfigs(vis || []);
       setFeatureConfigs(cfgs || []);
@@ -232,7 +232,7 @@ export default function PagePermissions() {
     // Save new order to PageVisibilityConfig
     setSavingOrder(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       // Batch update display_order for all affected pages
       const updates = newOrder.map((page, idx) => {
         const vc = visMap[page.path];
@@ -252,9 +252,9 @@ export default function PagePermissions() {
           admin_only: vc?.admin_only || false,
         };
         if (vc?.id) {
-          return base44.entities.PageVisibilityConfig.update(vc.id, data);
+          return platform.entities.PageVisibilityConfig.update(vc.id, data);
         } else {
-          return base44.entities.PageVisibilityConfig.create(data);
+          return platform.entities.PageVisibilityConfig.create(data);
         }
       });
 

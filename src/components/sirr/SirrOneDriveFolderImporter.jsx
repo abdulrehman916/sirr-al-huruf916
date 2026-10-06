@@ -20,7 +20,7 @@ import {
   CheckCircle2, AlertCircle, Play, RotateCcw, Shield,
   HardDriveDownload, Clock, X, ListChecks
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ── Time formatter ──
 function formatTime(ms) {
@@ -98,15 +98,15 @@ export default function SirrOneDriveFolderImporter({ onBack, onImported, languag
 
   // ── Check admin status + check for resumable jobs ──
   useEffect(() => {
-    base44.auth.isAuthenticated().then(async (authed) => {
+    platform.auth.isAuthenticated().then(async (authed) => {
       if (authed) {
         try {
-          const me = await base44.auth.me();
+          const me = await platform.auth.me();
           setIsAdmin(me.role === "admin");
           if (me.role === "admin") {
             // Check for interrupted jobs
             try {
-              const jobs = await base44.entities.BulkImportJob.filter(
+              const jobs = await platform.entities.BulkImportJob.filter(
                 { status: "processing" },
                 "-started_at",
                 5
@@ -127,7 +127,7 @@ export default function SirrOneDriveFolderImporter({ onBack, onImported, languag
     setLoading(true);
     setBrowseError("");
     try {
-      const res = await base44.functions.invoke("browseOneDrive", { folder_id: folderId });
+      const res = await platform.functions.invoke("browseOneDrive", { folder_id: folderId });
       const data = res.data;
       setFolders(data.folders || []);
       setFiles(data.files || []);
@@ -163,7 +163,7 @@ export default function SirrOneDriveFolderImporter({ onBack, onImported, languag
 
     try {
       // Step 1: Create job (scan folder)
-      const createRes = await base44.functions.invoke("bulkImportOneDriveFolder", { folder_id: folderId });
+      const createRes = await platform.functions.invoke("bulkImportOneDriveFolder", { folder_id: folderId });
       const createData = createRes.data;
 
       if (createData.error) {
@@ -216,7 +216,7 @@ export default function SirrOneDriveFolderImporter({ onBack, onImported, languag
   const processLoop = async (jobId) => {
     while (loopRef.current) {
       try {
-        const res = await base44.functions.invoke("bulkImportOneDriveFolder", { job_id: jobId });
+        const res = await platform.functions.invoke("bulkImportOneDriveFolder", { job_id: jobId });
         const data = res.data;
 
         if (data.error) {

@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, X, ArrowUpDown, ChevronDown, BookOpen, MapPin, Zap, AlertTriangle, Info } from "lucide-react";
+import { Search, X, ArrowUpDown, ChevronDown, BookOpen, MapPin, Zap, Info } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import PullToRefresh from "../components/PullToRefresh";
@@ -204,7 +204,7 @@ function JinnCard({ jinn, index, isOpen, onToggle }) {
             style={{ overflow: "hidden" }}
           >
             <div className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
-              
+
               {/* Basic Info Grid */}
               <div className="grid grid-cols-2 gap-3 mb-3">
                 {/* Arabic Name */}
@@ -311,7 +311,7 @@ export default function EvilJinnPage() {
       <PullToRefresh onRefresh={handleRefresh}>
         <div className="space-y-4">
           <PageTitle arabic="أسماء الجن الشريرة" latin="Evil Jinn Names" subtitle="Reference Database" icon="👁" />
-          
+
           <div className="flex items-center gap-2 rounded-2xl border px-3 py-2.5" style={{ background: P.bg, borderColor: P.border }}>
             <Search className="w-4 h-4" style={{ color: P.dim }} />
             <input
@@ -321,9 +321,9 @@ export default function EvilJinnPage() {
             />
             {query && <button onClick={() => setQuery("")} style={{ color: P.dim }}><X className="w-4 h-4" /></button>}
           </div>
-          
+
           <CategoryFilter active={category} onSelect={setCategory} />
-          
+
           <div className="flex items-center justify-between">
             <p className="font-inter text-[10px] uppercase tracking-widest" style={{ color: "rgba(255,255,255,0.22)" }}>
               {filtered.length} of {EVIL_JINN_NAMES.length}
@@ -343,7 +343,7 @@ export default function EvilJinnPage() {
               </button>
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <AnimatePresence mode="popLayout">
               {filtered.length === 0

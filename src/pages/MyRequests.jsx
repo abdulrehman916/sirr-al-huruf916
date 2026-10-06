@@ -5,9 +5,9 @@
  */
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { getSessionId } from "@/lib/sessionId";
-import { REQUEST_STATUSES, STATUS_FILTERS, getStatusConfig } from "@/lib/accessRequestStatus";
+import { STATUS_FILTERS, getStatusConfig } from "@/lib/accessRequestStatus";
 import { Inbox, RefreshCw, ChevronLeft, Send, Loader2, AlertCircle, KeyRound, Paperclip, X, RotateCcw, Search } from "lucide-react";
 import RequestConversation from "@/components/RequestConversation";
 
@@ -40,7 +40,7 @@ export default function MyRequests() {
     setLoading(true);
     setError(null);
     try {
-      const res = await base44.functions.invoke("getUserRequests", {
+      const res = await platform.functions.invoke("getUserRequests", {
         session_id: getSessionId(),
       });
       if (res.data?.success) {
@@ -60,7 +60,7 @@ export default function MyRequests() {
     if (!replyText.trim() && !attachmentUrl) return;
     setReplying(true);
     try {
-      await base44.functions.invoke("replyToAccessRequest", {
+      await platform.functions.invoke("replyToAccessRequest", {
         request_id: requestId,
         session_id: getSessionId(),
         message: replyText.trim(),
@@ -80,7 +80,7 @@ export default function MyRequests() {
     if (!file) return;
     setUploading(true);
     try {
-      const { file_url } = await base44.integrations.Core.UploadFile({ file });
+      const { file_url } = await platform.integrations.Core.UploadFile({ file });
       setAttachmentUrl(file_url);
     } catch (e) {
       setError("Failed to upload file: " + e.message);

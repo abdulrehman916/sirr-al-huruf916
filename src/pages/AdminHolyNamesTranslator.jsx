@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import { Loader2, Send, CheckCircle, AlertCircle, BookOpen, Languages } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -142,7 +142,7 @@ export default function AdminHolyNamesTranslator() {
   const [currentIdx, setCurrentIdx] = useState(null);
 
   useState(() => {
-    base44.auth.me().then(u => setIsAdmin(["owner", "admin"].includes(u?.role))).catch(() => setIsAdmin(false));
+    platform.auth.me().then(u => setIsAdmin(["owner", "admin"].includes(u?.role))).catch(() => setIsAdmin(false));
   });
 
   const translateOne = async (nameData, idx) => {
@@ -151,9 +151,9 @@ export default function AdminHolyNamesTranslator() {
 
     // Combine all chunks into one text
     const fullText = nameData.chunks.join('\n\n');
-    
+
     try {
-      const result = await base44.functions.invoke('translateDivineNameChunk', {
+      const result = await platform.functions.invoke('translateDivineNameChunk', {
         name_id: nameData.name_id,
         arabic_name: nameData.arabic_name,
         arabic_transliteration: nameData.arabic_transliteration,
@@ -164,8 +164,8 @@ export default function AdminHolyNamesTranslator() {
         dry_run: false
       });
 
-      setQueue(prev => prev.map((item, i) => i === idx ? { 
-        ...item, 
+      setQueue(prev => prev.map((item, i) => i === idx ? {
+        ...item,
         status: result.data?.success ? 'done' : 'error',
         result: result.data,
         error: result.data?.error || null
@@ -175,10 +175,10 @@ export default function AdminHolyNamesTranslator() {
         toast({ title: `✓ ${nameData.arabic_name} saved`, description: `${result.data.explanation_length} chars` });
       }
     } catch (err) {
-      setQueue(prev => prev.map((item, i) => i === idx ? { 
-        ...item, 
-        status: 'error', 
-        error: err.message 
+      setQueue(prev => prev.map((item, i) => i === idx ? {
+        ...item,
+        status: 'error',
+        error: err.message
       } : item));
       toast({ title: "Error", description: err.message, variant: "destructive" });
     }

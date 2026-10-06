@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Search, Loader2, ShieldAlert, Sparkles, BookOpen } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import HolyNameEsotericResearchProfile from "@/components/holynameknowledge/HolyNameEsotericResearchProfile";
 import SectionCVisualIntegrator from "@/components/sectionc/SectionCVisualIntegrator";
@@ -31,7 +31,7 @@ export default function SectionCPage() {
   const load = useCallback(async () => {
     setLoading(true);
     try {
-      const r = await base44.entities.HolyNameEsotericKnowledge.list("order_index", 2000);
+      const r = await platform.entities.HolyNameEsotericKnowledge.list("order_index", 2000);
       setCards(r || []);
     } catch (e) {
       toast({ title: "Failed to load Section C names", description: String(e?.message || e), variant: "destructive" });

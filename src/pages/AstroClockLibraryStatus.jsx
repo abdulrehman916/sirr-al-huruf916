@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const P = {
   border: "rgba(212,175,55,0.30)",
@@ -55,7 +55,7 @@ export default function AstroClockLibraryStatus() {
     setLoading(true);
     setError(null);
     try {
-      const result = await base44.functions.invoke("getAstroClockLibraryStatus", {});
+      const result = await platform.functions.invoke("getAstroClockLibraryStatus", {});
       setStatus(result.data || result);
     } catch (err) {
       setError(err.message || "Failed to load library status");

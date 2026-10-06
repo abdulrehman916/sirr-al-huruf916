@@ -17,7 +17,7 @@ import {
   Users, UserCheck, Crown, Globe, Ticket, Clock, CheckCircle, XCircle,
   DollarSign, Calendar, Shield, UserPlus, UserMinus, Download, BarChart3, History, ShoppingBag,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -50,7 +50,7 @@ export default function AdminAnalytics() {
 
   const checkAdminAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         toast({ title: "Access Denied", description: "Only administrators can access this page", variant: "destructive" });
@@ -67,7 +67,7 @@ export default function AdminAnalytics() {
   const loadAnalytics = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("manageAnalytics", { action: "GET_ANALYTICS" });
+      const res = await platform.functions.invoke("manageAnalytics", { action: "GET_ANALYTICS" });
       if (res.data?.success) {
         setStats(res.data.stats);
         setCharts(res.data.charts);
@@ -83,7 +83,7 @@ export default function AdminAnalytics() {
   const loadAuditLogs = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("manageAnalytics", { action: "GET_AUDIT_LOGS" });
+      const res = await platform.functions.invoke("manageAnalytics", { action: "GET_AUDIT_LOGS" });
       if (res.data?.success) {
         setLogs(res.data.logs || []);
         setIsOwner(res.data.is_owner);
@@ -112,7 +112,7 @@ export default function AdminAnalytics() {
     }
     setExporting(true);
     try {
-      const res = await base44.functions.invoke("manageAnalytics", {
+      const res = await platform.functions.invoke("manageAnalytics", {
         action: "EXPORT_DATA",
         export_type: exportType,
       });

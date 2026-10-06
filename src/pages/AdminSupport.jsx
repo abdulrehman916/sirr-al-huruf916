@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import { Search, Mail, User, Calendar, CheckCircle, Clock, AlertCircle, XCircle, Mic } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -61,7 +61,7 @@ export default function AdminSupport() {
 
   const checkAdminAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         toast({
@@ -86,7 +86,7 @@ export default function AdminSupport() {
   const loadTickets = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("manageSupportRouting", {
+      const res = await platform.functions.invoke("manageSupportRouting", {
         action: "GET_SCOPED_TICKETS",
       });
       if (res.data?.success) {
@@ -109,12 +109,12 @@ export default function AdminSupport() {
   };
 
   const filteredTickets = tickets.filter(ticket => {
-    const matchesSearch = 
+    const matchesSearch =
       ticket.ticket_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
       ticket.subject.toLowerCase().includes(searchQuery.toLowerCase()) ||
       ticket.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       ticket.email.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     const matchesStatus = statusFilter === "all" || ticket.status === statusFilter;
     const matchesCategory = categoryFilter === "all" || ticket.category === categoryFilter;
 
@@ -129,7 +129,7 @@ export default function AdminSupport() {
   const handleStatusChange = async (ticketId, newStatus) => {
     setUpdatingStatus(true);
     try {
-      await base44.entities.SupportTickets.update(ticketId, { status: newStatus });
+      await platform.entities.SupportTickets.update(ticketId, { status: newStatus });
       await loadTickets();
       toast({
         title: "Status Updated",
@@ -167,7 +167,7 @@ export default function AdminSupport() {
 
     setSubmittingReply(true);
     try {
-      await base44.entities.SupportTickets.update(selectedTicket.id, {
+      await platform.entities.SupportTickets.update(selectedTicket.id, {
         admin_reply: replyText,
         status: selectedTicket.status === "OPEN" ? "IN_PROGRESS" : selectedTicket.status
       });

@@ -36,7 +36,7 @@ import {
   Loader2, CheckCircle2, AlertCircle, Eye, ChevronDown,
   Play,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const RENDER_SCALE = 2;
@@ -96,7 +96,7 @@ export default function SectionDVisualIntegrator() {
       let skip = 0;
       const PAGE = 100;
       while (true) {
-        const batch = await base44.entities.SectionDKnowledge.list("-created_date", PAGE, skip);
+        const batch = await platform.entities.SectionDKnowledge.list("-created_date", PAGE, skip);
         if (!batch || batch.length === 0) break;
         allCards.push(...batch);
         if (batch.length < PAGE) break;
@@ -143,7 +143,7 @@ export default function SectionDVisualIntegrator() {
 
         let pdfUrl = "";
         try {
-          const res = await base44.functions.invoke("getMasterPdfRenderUrl", { book_title: title });
+          const res = await platform.functions.invoke("getMasterPdfRenderUrl", { book_title: title });
           pdfUrl = res?.data?.file_url || res?.file_url || "";
           if (!pdfUrl) throw new Error("resolver returned no file_url");
         } catch (e) {
@@ -204,7 +204,7 @@ export default function SectionDVisualIntegrator() {
             if (!blob) throw new Error("render produced no blob");
             const safeSlug = String(title).replace(/[^\p{L}\p{N}._-]+/gu, "_").slice(0, 40);
             const file = new File([blob], `section_d_${safeSlug}_p${pn}.png`, { type: "image/png" });
-            const up = await base44.integrations.Core.UploadFile({ file });
+            const up = await platform.integrations.Core.UploadFile({ file });
             imageUrl = up?.file_url || "";
             if (!imageUrl) throw new Error("upload returned no url");
           } catch (e) {
@@ -230,7 +230,7 @@ export default function SectionDVisualIntegrator() {
                 source_page: pageStr,
                 imported_at: new Date().toISOString(),
               };
-              await base44.entities.SectionDKnowledge.update(c.id, { attached_visuals: [...existing, newVisual] });
+              await platform.entities.SectionDKnowledge.update(c.id, { attached_visuals: [...existing, newVisual] });
               br.attached++;
               totalAttached++;
             } catch (e) {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Package, FolderTree, Tag, ShoppingCart, TrendingUp, Star, PackageX, Eye, BarChart3 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -64,10 +64,10 @@ export default function ShopAnalytics() {
     (async () => {
       try {
         const [prods, cats, brnds, ords] = await Promise.all([
-          base44.entities.Product.list("-created_date", 500),
-          base44.entities.ShopCategory.list("display_order", 200),
-          base44.entities.ShopBrand.list("display_order", 200),
-          base44.entities.ShopOrder.list("-created_date", 200),
+          platform.entities.Product.list("-created_date", 500),
+          platform.entities.ShopCategory.list("display_order", 200),
+          platform.entities.ShopBrand.list("display_order", 200),
+          platform.entities.ShopOrder.list("-created_date", 200),
         ]);
         setProducts(prods || []);
         setCategories(cats || []);

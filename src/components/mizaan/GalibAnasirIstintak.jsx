@@ -5,7 +5,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { getGalibAnasirData, GALIB_ANASIR_VALUES } from "../../lib/mizaanPostEngine";
-import { istintak } from "../../lib/mizaanPostEngine";
 
 const G = {
   text: "#F5D060",
@@ -52,7 +51,7 @@ const LetterChip = ({ letter, size = "1.4rem", color }) => (
 
 const ElementCard = ({ element, data, isSelected, onClick }) => {
   const meta = ELEMENT_META[element];
-  
+
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -79,7 +78,7 @@ const ElementCard = ({ element, data, isSelected, onClick }) => {
           {data.value.toLocaleString()}
         </div>
       </div>
-      
+
       {/* Istintak breakdown */}
       <div className="space-y-2">
         <div className="text-xs" style={{ color: G.dim }}>
@@ -105,7 +104,7 @@ export default function GalibAnasirIstintak({ selectedElement, onElementSelect }
       data: getGalibAnasirData(el),
     }));
   }, []);
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -128,7 +127,7 @@ export default function GalibAnasirIstintak({ selectedElement, onElementSelect }
         </h2>
         <div className="h-px w-20 mx-auto" style={{ background: `linear-gradient(90deg, transparent, ${G.borderHi}, transparent)` }} />
       </div>
-      
+
       {/* Element cards grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {elements.map(({ element, data }) => (
@@ -141,7 +140,7 @@ export default function GalibAnasirIstintak({ selectedElement, onElementSelect }
           />
         ))}
       </div>
-      
+
       {/* Selected element detail */}
       {selectedElement && (
         <motion.div

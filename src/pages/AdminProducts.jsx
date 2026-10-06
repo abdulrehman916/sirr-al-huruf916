@@ -6,7 +6,7 @@ import {
   Star, Flame, Sparkles, PackageX, TrendingUp, Copy
 } from "lucide-react";
 import ProductEditor from "@/components/admin/ProductEditor";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
@@ -110,7 +110,7 @@ export default function AdminProducts() {
   const loadProducts = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.Product.list("-created_date", 500);
+      const list = await platform.entities.Product.list("-created_date", 500);
       setProducts(list || []);
     } catch {
       setProducts([]);
@@ -121,7 +121,7 @@ export default function AdminProducts() {
 
   const loadReviews = async () => {
     try {
-      const list = await base44.entities.ProductReview.list("-created_date", 100);
+      const list = await platform.entities.ProductReview.list("-created_date", 100);
       setReviews(list || []);
     } catch {
       setReviews([]);
@@ -245,10 +245,10 @@ export default function AdminProducts() {
       };
 
       if (editId) {
-        await base44.entities.Product.update(editId, payload);
+        await platform.entities.Product.update(editId, payload);
         toast({ title: "Product updated" });
       } else {
-        await base44.entities.Product.create(payload);
+        await platform.entities.Product.create(payload);
         toast({ title: "Product created" });
       }
       setShowForm(false);
@@ -263,7 +263,7 @@ export default function AdminProducts() {
   const handleDelete = async (id) => {
     if (!confirm("Delete this product? This cannot be undone.")) return;
     try {
-      await base44.entities.Product.delete(id);
+      await platform.entities.Product.delete(id);
       toast({ title: "Product deleted" });
       loadProducts();
     } catch (err) {
@@ -273,7 +273,7 @@ export default function AdminProducts() {
 
   const toggleActive = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_active: !product.is_active, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_active: !product.is_active, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -282,7 +282,7 @@ export default function AdminProducts() {
 
   const toggleFeatured = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_featured: !product.is_featured, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_featured: !product.is_featured, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -291,7 +291,7 @@ export default function AdminProducts() {
 
   const moveOrder = async (product, direction) => {
     try {
-      await base44.entities.Product.update(product.id, {
+      await platform.entities.Product.update(product.id, {
         sort_order: (product.sort_order || 0) + direction,
         updated_at: new Date().toISOString(),
       });
@@ -371,7 +371,7 @@ export default function AdminProducts() {
 
   const toggleBestSeller = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_best_seller: !product.is_best_seller, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_best_seller: !product.is_best_seller, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -380,7 +380,7 @@ export default function AdminProducts() {
 
   const toggleNewArrival = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_new_arrival: !product.is_new_arrival, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_new_arrival: !product.is_new_arrival, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -389,7 +389,7 @@ export default function AdminProducts() {
 
   const toggleTrending = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_trending: !product.is_trending, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_trending: !product.is_trending, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -398,7 +398,7 @@ export default function AdminProducts() {
 
   const toggleStock = async (product) => {
     try {
-      await base44.entities.Product.update(product.id, { is_out_of_stock: !product.is_out_of_stock, updated_at: new Date().toISOString() });
+      await platform.entities.Product.update(product.id, { is_out_of_stock: !product.is_out_of_stock, updated_at: new Date().toISOString() });
       loadProducts();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -407,7 +407,7 @@ export default function AdminProducts() {
 
   const approveReview = async (review) => {
     try {
-      await base44.entities.ProductReview.update(review.id, { is_approved: true });
+      await platform.entities.ProductReview.update(review.id, { is_approved: true });
       loadReviews();
       toast({ title: "Review approved" });
     } catch (err) {
@@ -418,7 +418,7 @@ export default function AdminProducts() {
   const deleteReview = async (id) => {
     if (!confirm("Delete this review?")) return;
     try {
-      await base44.entities.ProductReview.delete(id);
+      await platform.entities.ProductReview.delete(id);
       loadReviews();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -443,7 +443,7 @@ export default function AdminProducts() {
   const duplicateProduct = async (product) => {
     try {
       const { id, created_date, updated_date, created_by_id, ...rest } = product;
-      await base44.entities.Product.create({
+      await platform.entities.Product.create({
         ...rest,
         product_id: `PRD-${Date.now()}`,
         name: `${product.name} (Copy)`,
@@ -466,7 +466,7 @@ export default function AdminProducts() {
     if (!confirm(`Delete ${selectedIds.size} products? This cannot be undone.`)) return;
     try {
       const ids = Array.from(selectedIds);
-      await Promise.all(ids.map(id => base44.entities.Product.delete(id)));
+      await Promise.all(ids.map(id => platform.entities.Product.delete(id)));
       toast({ title: `${ids.length} products deleted` });
       setSelectedIds(new Set());
       loadProducts();
@@ -480,7 +480,7 @@ export default function AdminProducts() {
     try {
       const ids = Array.from(selectedIds);
       const now = new Date().toISOString();
-      await base44.entities.Product.bulkUpdate(ids.map(id => ({ id, is_active: publish, updated_at: now })));
+      await platform.entities.Product.bulkUpdate(ids.map(id => ({ id, is_active: publish, updated_at: now })));
       toast({ title: `${ids.length} products ${publish ? "published" : "hidden"}` });
       setSelectedIds(new Set());
       loadProducts();
@@ -495,7 +495,7 @@ export default function AdminProducts() {
       const ids = Array.from(selectedIds);
       const now = new Date().toISOString();
       const cat = bulkCategory.trim();
-      await base44.entities.Product.bulkUpdate(ids.map(id => ({ id, category: cat, updated_at: now })));
+      await platform.entities.Product.bulkUpdate(ids.map(id => ({ id, category: cat, updated_at: now })));
       toast({ title: `${ids.length} products moved to ${cat}` });
       setBulkCategory("");
       setSelectedIds(new Set());
@@ -511,7 +511,7 @@ export default function AdminProducts() {
       const ids = Array.from(selectedIds);
       const now = new Date().toISOString();
       const brand = bulkBrand.trim();
-      await base44.entities.Product.bulkUpdate(ids.map(id => ({ id, brand, updated_at: now })));
+      await platform.entities.Product.bulkUpdate(ids.map(id => ({ id, brand, updated_at: now })));
       toast({ title: `${ids.length} products brand set to ${brand}` });
       setBulkBrand("");
       setSelectedIds(new Set());

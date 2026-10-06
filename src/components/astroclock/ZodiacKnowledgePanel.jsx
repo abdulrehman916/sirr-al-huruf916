@@ -9,7 +9,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ZODIAC_SIGNS } from "@/lib/astroClockZodiacData.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { Star, ChevronDown, BookOpen } from "lucide-react";
+import { Star, BookOpen } from "lucide-react";
 import ManuscriptKnowledgeExplorer from "./ManuscriptKnowledgeExplorer";
 
 const G = {
@@ -153,7 +153,7 @@ function SignDetails({ sign, isMalayalam }) {
         <InfoBox label={isMalayalam ? "ലിംഗം" : "Gender"} value={isMalayalam ? sign.gender_ml : sign.gender} arabic={sign.gender_ar} />
         <InfoBox label={isMalayalam ? "ലോഹം" : "Metal"} value={isMalayalam ? sign.metal_ml : sign.metal} arabic={sign.metal_ar} />
       </div>
-      
+
       {/* Incense - Arabic Typography Display */}
       <div className="p-4 rounded-lg bg-black/30 border" style={{ borderColor: G.faint }}>
         <p className="font-inter text-[9px] uppercase tracking-widest mb-3 text-center" style={{ color: G.dim }}>

@@ -4,8 +4,7 @@
  * NEVER displays Malayalam as the primary value
  */
 
-import React, { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import React from "react";
 
 const G = {
   arabic: "#F5D060",
@@ -25,7 +24,7 @@ export function ArabicLetterDisplay({ letter, malayalam, name, size = "lg", onCl
 
   const sizeClasses = {
     sm: "text-2xl",
-    md: "text-4xl", 
+    md: "text-4xl",
     lg: "text-6xl",
     xl: "text-8xl"
   };
@@ -33,11 +32,11 @@ export function ArabicLetterDisplay({ letter, malayalam, name, size = "lg", onCl
   const isClickable = !!onClick;
 
   return (
-    <div 
+    <div
       className={`flex flex-col items-center gap-2 ${isClickable ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
       onClick={onClick}
     >
-      <span 
+      <span
         className={`font-amiri font-bold ${sizeClasses[size]}`}
         style={{ color: G.arabic }}
         dir="rtl"
@@ -70,7 +69,7 @@ export function LunarMansionDisplay({ arabic, name, malayalam, number, onClick, 
   const isClickable = !!onClick;
 
   return (
-    <div 
+    <div
       className={`flex items-center gap-3 ${isClickable ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
       onClick={onClick}
     >
@@ -110,7 +109,7 @@ export function ZodiacSignDisplay({ arabic, name, malayalam, onClick, showCount 
   const isClickable = !!onClick;
 
   return (
-    <div 
+    <div
       className={`flex flex-col gap-1 ${isClickable ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
       onClick={onClick}
     >
@@ -165,7 +164,7 @@ export function PlanetDisplay({ arabic, name, malayalam, symbol, onClick, showCo
   const isClickable = !!onClick;
 
   return (
-    <div 
+    <div
       className={`flex flex-col items-center gap-2 ${isClickable ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
       onClick={onClick}
     >
@@ -201,7 +200,7 @@ export function ElementDisplay({ arabic, name, malayalam, onClick, showCount = f
   const isClickable = !!onClick;
 
   return (
-    <div 
+    <div
       className={`p-3 rounded-lg border ${isClickable ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
       onClick={onClick}
       style={{ background: G.dim + "11", borderColor: G.dim + "44" }}
@@ -235,7 +234,7 @@ export function SaadNahsDisplay({ nature, onClick, showCount = false, count = 0 
   const isClickable = !!onClick;
   const isSaad = nature?.includes('Saad');
   const isNahs = nature?.includes('Nahs');
-  
+
   const colors = {
     bg: isSaad ? 'rgba(34,197,94,0.15)' : isNahs ? 'rgba(239,68,68,0.15)' : 'rgba(251,191,36,0.15)',
     border: isSaad ? 'rgba(34,197,94,0.60)' : isNahs ? 'rgba(239,68,68,0.60)' : 'rgba(251,191,36,0.60)',
@@ -243,7 +242,7 @@ export function SaadNahsDisplay({ nature, onClick, showCount = false, count = 0 
   };
 
   return (
-    <div 
+    <div
       className={`px-4 py-2 rounded-lg font-bold uppercase tracking-wider text-sm cursor-pointer hover:scale-105 transition-transform`}
       onClick={onClick}
       style={{ background: colors.bg, border: `2px solid ${colors.border}`, color: colors.text }}

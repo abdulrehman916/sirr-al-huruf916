@@ -23,7 +23,7 @@
 //   - The reasoning engine is a pure additive layer
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect, useMemo } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { resolveAction, expandAction, textMatchesExpansion, generateReasoningSummary } from "@/lib/semanticReasoningEngine";
 import { SEMANTIC_GRAPH } from "@/lib/semanticKnowledgeGraph";
 import { ACTION_CATEGORIES } from "@/lib/astroActionClassifier";
@@ -71,8 +71,8 @@ export function useSemanticActionSearch() {
     };
 
     Promise.all([
-      base44.entities.AstroClockKnowledge.filter(ackQuery, "-source_count", 50),
-      base44.entities.EntityKnowledge.filter(ekQuery, "-source_count", 50),
+      platform.entities.AstroClockKnowledge.filter(ackQuery, "-source_count", 50),
+      platform.entities.EntityKnowledge.filter(ekQuery, "-source_count", 50),
     ])
       .then(([ackData, ekData]) => {
         if (cancelled) return;

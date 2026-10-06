@@ -9,9 +9,9 @@ import {
   KeyRound, RefreshCw, Trash2, ToggleLeft, ToggleRight, Smartphone,
   Clock, Loader2, ChevronRight, Copy, Check,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
-import { getCodeStatus, fmtDate, fmtDateTime, isLifetime } from "@/lib/codeDuration";
+import { getCodeStatus, fmtDate, isLifetime } from "@/lib/codeDuration";
 import RemainingTime from "./RemainingTime";
 
 const G = {
@@ -40,9 +40,9 @@ export default function UserCodeRow({ code, onAction }) {
     e.stopPropagation();
     setLoading(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const now = new Date().toISOString();
-      await base44.entities.AccessCode.update(code.id, {
+      await platform.entities.AccessCode.update(code.id, {
         is_disabled: !code.is_disabled,
         audit_log: [...(code.audit_log || []), {
           action: code.is_disabled ? 'ENABLED' : 'DISABLED',
@@ -63,7 +63,7 @@ export default function UserCodeRow({ code, onAction }) {
     if (!confirm(`Reset device binding for "${code.code}"?`)) return;
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("resetCodeDevice", { code_id: code.id });
+      const res = await platform.functions.invoke("resetCodeDevice", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: "✓ Device binding reset" });
         if (onAction) onAction();
@@ -82,7 +82,7 @@ export default function UserCodeRow({ code, onAction }) {
     if (!confirm(`Delete code "${code.code}"? This permanently revokes all permissions.`)) return;
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
+      const res = await platform.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: `✓ Code "${code.code}" deleted` });
         if (onAction) onAction();

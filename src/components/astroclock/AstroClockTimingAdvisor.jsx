@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Search, Clock, Calendar, Star, Moon, Shield, Zap, BookOpen, AlertTriangle, CheckCircle, XCircle } from "lucide-react";
+import { Search, Clock, Calendar, Star, Moon, BookOpen, AlertTriangle, CheckCircle, XCircle } from "lucide-react";
 import { getTimingAdvice, findSimilarActions } from "@/lib/astroClockTimingAdvisor";
 
 const G = {
@@ -93,7 +93,7 @@ export default function AstroClockTimingAdvisor() {
           borderColor: G.borderHi,
           boxShadow: `0 0 40px ${G.glow}, 0 4px 28px rgba(0,0,0,0.50), inset 0 1px 0 rgba(212,175,55,0.10)`,
         }}>
-        
+
         <h2 className="font-inter text-lg font-bold uppercase tracking-widest mb-4" style={{ color: G.text }}>
           ⏰ Timing Advisor
         </h2>
@@ -192,7 +192,7 @@ export default function AstroClockTimingAdvisor() {
 
               <div className="rounded-2xl border p-5 space-y-4"
                 style={{ background: "linear-gradient(145deg, rgba(8,18,44,0.98) 0%, rgba(4,10,28,0.99) 100%)", borderColor: G.border }}>
-                
+
                 {renderSection("Best Days", advice.bestDays, Calendar, G.success)}
                 {renderSection("Best Planets", advice.bestPlanets, Star, G.success)}
                 {renderSection("Best Planetary Hours", advice.bestHours, Clock, G.success)}

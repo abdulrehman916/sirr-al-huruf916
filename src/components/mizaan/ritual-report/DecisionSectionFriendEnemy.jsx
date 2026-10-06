@@ -5,7 +5,7 @@
 // Explanation from database only.
 // ═══════════════════════════════════════════════════════════════
 import { Heart, Shield, Swords, Zap } from "lucide-react";
-import { G, T, translatePlanet, translateDay, MIZAN_DAY_NAMES, DAY_KEY_BY_INDEX } from "./shared";
+import { G, T, translatePlanet, translateDay, DAY_KEY_BY_INDEX } from "./shared";
 
 function cleanReason(text) {
   if (!text) return "";

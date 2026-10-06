@@ -6,11 +6,11 @@
 // The dictionary (lookupPurposeIntent) ALWAYS has highest priority;
 // AI is invoked ONLY when the dictionary returns no match.
 // ═══════════════════════════════════════════════════════════════
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 export async function getAIPurposeSuggestion({ middleWord, fullText, actionArabic, cardKey, lang }) {
   try {
-    const res = await base44.functions.invoke("aiPurposeSuggestion", {
+    const res = await platform.functions.invoke("aiPurposeSuggestion", {
       middleWord, fullText, actionArabic, cardKey, lang,
     });
     return res.data || { success: false };
@@ -21,7 +21,7 @@ export async function getAIPurposeSuggestion({ middleWord, fullText, actionArabi
 
 export async function savePurposeDictionaryEntry(entry) {
   try {
-    const res = await base44.functions.invoke("savePurposeDictionaryEntry", entry);
+    const res = await platform.functions.invoke("savePurposeDictionaryEntry", entry);
     return res.data || { success: false };
   } catch (e) {
     return { success: false, error: e?.message || "Save failed" };

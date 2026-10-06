@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MizaanHeader from "./MizaanHeader";
 import { MIZAAN_ELEMENT_DEGREES } from "../../lib/mizaan9Data";
-import { MIZAAN_ELEMENTS } from "../../lib/mizaan9Engine";
 
 const G = { borderHi: "rgba(212,175,55,0.65)", glow: "rgba(212,175,55,0.22)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)" };
 

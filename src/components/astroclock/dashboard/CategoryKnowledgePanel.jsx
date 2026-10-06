@@ -14,7 +14,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, BookOpen } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { normalizeDisplay } from "@/lib/astroClockLanguageNormalizer";
 
@@ -79,7 +79,7 @@ export default function CategoryKnowledgePanel() {
     const all = [];
     let skip = 0;
     const loadBatch = () => {
-      base44.entities.AstroClockKnowledge.filter(
+      platform.entities.AstroClockKnowledge.filter(
         { source_type: "categorized", is_marker: false },
         "-source_count", 500, skip
       ).then(batch => {

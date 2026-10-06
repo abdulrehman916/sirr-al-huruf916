@@ -1,14 +1,14 @@
 /**
  * MizaanAuditReport — Full strict audit of software vs book
  * "Bastların Usûlü Vefklerin Sırrı ve Havassı"
- * 
+ *
  * Book example used: Ennârul müsta'mel (fire element, 9th Mizan)
  * Bast1 total = 41407, letter count = 80
  */
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import PageLayout from "../components/PageLayout";
-import { istintak, getBastLevel, buildVefk, BAST_TABLE } from "../lib/mizaanPostEngine";
+import { istintak, getBastLevel, buildVefk } from "../lib/mizaanPostEngine";
 
 const G = {
   borderHi: "rgba(212,175,55,0.65)",
@@ -114,22 +114,22 @@ export default function MizaanAuditReport() {
 
     // FIXED istintak
     const seedLetters = istintak(satirVahid); // Should now give [ز,ف,ت,γ,ا,م]
-    
+
     // Bast4 values for each seed
     const seedBasts = seedLetters.map(l => ({ letter: l, bast4: getBastLevel(l, 4) }));
-    
+
     // Expansions
     const expansions = seedBasts.map(sb => ({
       ...sb,
       expanded: istintak(sb.bast4)
     }));
-    
+
     // Expanded letters
     const allExpanded = expansions.flatMap(e => e.expanded);
     const expandedCount = allExpanded.length;
     const isZevc = expandedCount % 2 === 0;
     const groupSize = isZevc ? 4 : 5;
-    
+
     // Satır Vahid of expanded = bast1 sum + count
     const bastSumExpanded = allExpanded.reduce((s,l) => s + getBastLevel(l,1), 0);
     const satirVahidKitabet = bastSumExpanded + expandedCount;
@@ -171,7 +171,7 @@ export default function MizaanAuditReport() {
     }
 
     const oldVefk = buildVefkOld(satirVahidKitabet, 'fire');
-    
+
     return {
       satirVahid, seedLetters, seedBasts, expansions, allExpanded, expandedCount,
       isZevc, groupSize, bastSumExpanded, satirVahidKitabet, vefkKitabet,
@@ -267,7 +267,7 @@ export default function MizaanAuditReport() {
 
         {/* SECTION C — CALCULATION ERRORS */}
         <Section title="Section C — Calculation Errors (Fixed)" color="#FF4444">
-          
+
           <Finding n={1} step="BUG: Istintak — d=1 in non-final thousands digit skipped incorrectly" sev="CRITICAL"
             bookStep="ist(41487): book gives [م,ا,γ,ت,ف,ز] — 6 letters. The 1 in '41___' (thousands place) must emit γ+ا because higher digits follow."
             swStep="Software had: if (d !== 0 && d !== 1) → ALWAYS skips d=1 after thousands marker, giving [ز,ف,ت,γ,م] — 5 letters."
@@ -332,7 +332,7 @@ export default function MizaanAuditReport() {
         <Section title="Section E — Final Verdict" color="#F5D060">
           <div className="space-y-3 font-inter text-xs" style={{ color:"rgba(255,255,255,0.70)", lineHeight:1.8 }}>
             <p><b style={{color:G.text}}>3 bugs found and fixed.</b> All three affect final output.</p>
-            
+
             <div className="rounded-xl border p-3 space-y-1.5"
               style={{ borderColor:"rgba(255,68,68,0.40)", background:"rgba(255,68,68,0.06)" }}>
               <p style={{color:"#FF4444"}}><b>CRITICAL #1 — Istintak d=1 skip rule:</b></p>

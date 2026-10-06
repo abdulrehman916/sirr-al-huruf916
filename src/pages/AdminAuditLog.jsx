@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Shield, Search, Filter, ChevronLeft, ChevronRight, Loader2, ScrollText, Download } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
 import { ROLES } from "@/lib/rbac";
@@ -101,7 +101,7 @@ export default function AdminAuditLog() {
     setLoading(true);
     setError(null);
     try {
-      const res = await base44.functions.invoke("getOwnerAuditLog", {
+      const res = await platform.functions.invoke("getOwnerAuditLog", {
         action_type: actionType || undefined,
         actor_email: actorEmail.trim() || undefined,
         search: search.trim() || undefined,

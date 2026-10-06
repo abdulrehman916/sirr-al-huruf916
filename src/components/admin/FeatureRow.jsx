@@ -11,7 +11,7 @@
  */
 import { useState, useEffect } from "react";
 import { Lock, Globe, Save, Plus, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { invalidateFeatureConfigCache } from "@/lib/featureConfigCache";
 import { invalidatePlanCache } from "@/lib/subscriptionPlanCache";
@@ -45,7 +45,7 @@ export default function FeatureRow({ pagePath, pageName, feature, dbConfig, inde
   const loadPlans = async () => {
     setLoading(true);
     try {
-      const all = await base44.entities.SubscriptionPlanConfig.filter(
+      const all = await platform.entities.SubscriptionPlanConfig.filter(
         { page_path: pagePath, feature_id: feature.id }, "sort_order", 50
       );
       setPlans(all || []);
@@ -81,14 +81,14 @@ export default function FeatureRow({ pagePath, pageName, feature, dbConfig, inde
     setPlans(plans.filter(p => p.plan_config_id !== plan.plan_config_id && p.id !== plan.id));
     setDirty(true);
     if (plan.id) {
-      try { await base44.entities.SubscriptionPlanConfig.delete(plan.id); } catch {}
+      try { await platform.entities.SubscriptionPlanConfig.delete(plan.id); } catch {}
     }
   };
 
   const saveAll = async () => {
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
 
       // 1. Save FeatureConfig (requires_permission)
       const configData = {
@@ -105,9 +105,9 @@ export default function FeatureRow({ pagePath, pageName, feature, dbConfig, inde
         updated_at: new Date().toISOString(),
       };
       if (dbConfig?.id) {
-        await base44.entities.FeatureConfig.update(dbConfig.id, configData);
+        await platform.entities.FeatureConfig.update(dbConfig.id, configData);
       } else {
-        await base44.entities.FeatureConfig.create(configData);
+        await platform.entities.FeatureConfig.create(configData);
       }
 
       // 2. Save all plans
@@ -129,9 +129,9 @@ export default function FeatureRow({ pagePath, pageName, feature, dbConfig, inde
           updated_at: new Date().toISOString(),
         };
         if (plan.id) {
-          await base44.entities.SubscriptionPlanConfig.update(plan.id, data);
+          await platform.entities.SubscriptionPlanConfig.update(plan.id, data);
         } else {
-          await base44.entities.SubscriptionPlanConfig.create(data);
+          await platform.entities.SubscriptionPlanConfig.create(data);
         }
       }
 

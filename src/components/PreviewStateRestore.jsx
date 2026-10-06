@@ -30,7 +30,7 @@ export default function PreviewStateRestore() {
         navigate(saved, { replace: true });
       }
     } catch { /* ignore */ }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   // ── Save current route on every navigation ──
   useEffect(() => {

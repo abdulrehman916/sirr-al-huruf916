@@ -1,7 +1,7 @@
 /**
  * Dev-Mode Persistence Utility
  *
- * In Base44 Preview (dev mode): stores values in BOTH localStorage AND a cookie
+ * In development preview (dev mode): stores values in BOTH localStorage AND a cookie
  * for cross-rebuild redundancy. If localStorage is cleared on a rebuild, the
  * cookie backup ensures acceptance state survives — no more re-accepting rules
  * after every preview refresh.
@@ -81,5 +81,5 @@ export function sessionSet(key, value) {
   try { sessionStorage.setItem(key, value); } catch { /* ignore */ }
 }
 
-/** True when running in Base44 Preview / Vite dev server */
+/** True when running in development preview / Vite dev server */
 export const isDevMode = IS_DEV;

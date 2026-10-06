@@ -3,7 +3,7 @@
 // Shows: topics detected, sections with page ranges, destinations,
 // records created/updated/skipped, warnings, integrity checks.
 // ═══════════════════════════════════════════════════════════════
-import { CheckCircle2, AlertCircle, Route, Layers, BookOpen } from "lucide-react";
+import { CheckCircle2, AlertCircle, Route, Layers } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 
 const TOPIC_COLORS = {

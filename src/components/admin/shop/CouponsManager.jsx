@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Edit3, Trash2, Ticket, Save, Percent, DollarSign, Truck } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -24,7 +24,7 @@ export default function CouponsManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopCoupon.list("-created_date", 200);
+      const list = await platform.entities.ShopCoupon.list("-created_date", 200);
       setCoupons(list || []);
     } catch { setCoupons([]); }
     finally { setLoading(false); }
@@ -38,10 +38,10 @@ export default function CouponsManager() {
       const now = new Date().toISOString();
       const data = { ...form, coupon_code: form.coupon_code.toUpperCase().trim(), valid_until: form.valid_until || null, updated_at: now };
       if (editId) {
-        await base44.entities.ShopCoupon.update(editId, data);
+        await platform.entities.ShopCoupon.update(editId, data);
         toast({ title: "Coupon updated" });
       } else {
-        await base44.entities.ShopCoupon.create({ ...data, created_at: now, use_count: 0 });
+        await platform.entities.ShopCoupon.create({ ...data, created_at: now, use_count: 0 });
         toast({ title: "Coupon created" });
       }
       setShowForm(false);
@@ -55,12 +55,12 @@ export default function CouponsManager() {
 
   const handleDelete = async (id) => {
     if (!confirm("Delete this coupon?")) return;
-    try { await base44.entities.ShopCoupon.delete(id); toast({ title: "Coupon deleted" }); load(); }
+    try { await platform.entities.ShopCoupon.delete(id); toast({ title: "Coupon deleted" }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 
   const toggleActive = async (c) => {
-    try { await base44.entities.ShopCoupon.update(c.id, { is_active: !c.is_active }); load(); }
+    try { await platform.entities.ShopCoupon.update(c.id, { is_active: !c.is_active }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 

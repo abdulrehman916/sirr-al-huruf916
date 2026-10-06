@@ -11,7 +11,7 @@
  * fallback. The `source` field is always transparent — never silently downgraded.
  */
 
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // NASA JPL HORIZONS API CONFIGURATION
@@ -77,18 +77,18 @@ function buildHorizonsUrl(target, date, _lat = 0, _lng = 0) {
 export async function fetchFromJPLHorizons(target, date, location = { lat: 0, lng: 0 }) {
   try {
     const url = buildHorizonsUrl(target, date, location.lat, location.lng);
-    
+
     const response = await fetch(url);
-    
+
     if (!response.ok) {
       throw new Error(`JPL API error: ${response.status}`);
     }
-    
+
     const data = await response.json();
-    
+
     // Parse JPL Horizons response
     return parseJPLResponse(data, target);
-    
+
   } catch (error) {
     console.error(`Failed to fetch ${target} from JPL Horizons:`, error);
     // Return null to indicate fallback to local calculation
@@ -155,7 +155,7 @@ export async function getEnhancedMoonPosition(date, location = { lat: 0, lng: 0 
 
   // PRIMARY — backend function (server-side JPL fetch, no CORS).
   try {
-    const resp = await base44.functions.invoke('getLiveMoonPosition', {
+    const resp = await platform.functions.invoke('getLiveMoonPosition', {
       lat: location.lat,
       lng: location.lng,
       date: date.toISOString(),
@@ -256,12 +256,12 @@ function calculateMoonPhase(date) {
   const J2000 = 2451545.0;
   const JD = getJulianDate(date);
   const T = (JD - J2000) / 36525;
-  
+
   // Mean elongation
   let D = 297.8501921 + 445267.1114034 * T;
   D = D % 360;
   if (D < 0) D += 360;
-  
+
   const phase = (1 - Math.cos(D * Math.PI / 180)) / 2;
   return (phase * 100).toFixed(1);
 }
@@ -276,18 +276,18 @@ function getJulianDate(date) {
   const month = date.getUTCMonth() + 1;
   const day = date.getUTCDate();
   const hour = date.getUTCHours() + date.getUTCMinutes() / 60;
-  
+
   let Y = year;
   let M = month;
-  
+
   if (M <= 2) {
     Y -= 1;
     M += 12;
   }
-  
+
   const A = Math.floor(Y / 100);
   const B = 2 - A + Math.floor(A / 4);
-  
+
   return Math.floor(365.25 * (Y + 4716)) + Math.floor(30.6001 * (M + 1)) + day + B - 1524.5 + hour / 24;
 }
 

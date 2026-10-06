@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { X, Save, AlertTriangle, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -113,9 +113,9 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
       };
 
       if (isEdit) {
-        await base44.entities.PurposeDictionary.update(entry.id, data);
+        await platform.entities.PurposeDictionary.update(entry.id, data);
       } else {
-        await base44.entities.PurposeDictionary.create(data);
+        await platform.entities.PurposeDictionary.create(data);
       }
       onSave();
     } catch (err) {

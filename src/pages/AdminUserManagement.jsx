@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { 
-  Users, Search, Clock, CheckCircle, XCircle, Gift,
-  Loader2, Calendar, Phone, Mail, Shield 
+import {
+  Users, Search, XCircle, Gift,
+  Loader2, Calendar, Phone, Mail, Shield
 } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import GrantAccessModal from "@/components/admin/GrantAccessModal";
 import { useToast } from "@/components/ui/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { motion } from "framer-motion";
@@ -35,7 +33,7 @@ export default function AdminUserManagement() {
 
   const checkAuth = async () => {
     try {
-      const currentUser = await base44.auth.me();
+      const currentUser = await platform.auth.me();
       if (!currentUser || !["owner", "admin"].includes(currentUser.role)) {
         toast({
           title: "Access Denied",
@@ -57,8 +55,8 @@ export default function AdminUserManagement() {
   const fetchData = async () => {
     try {
       const [userProfiles, subs] = await Promise.all([
-        base44.entities.UserAccessProfile.list(null, 500),
-        base44.entities.Subscription.list('-start_date', 500)
+        platform.entities.UserAccessProfile.list(null, 500),
+        platform.entities.Subscription.list('-start_date', 500)
       ]);
       setUsers(userProfiles);
       setSubscriptions(subs);
@@ -79,7 +77,7 @@ export default function AdminUserManagement() {
       const newExpiry = new Date(sub.expiry_date);
       newExpiry.setDate(newExpiry.getDate() + days);
 
-      await base44.entities.Subscription.update(subId, {
+      await platform.entities.Subscription.update(subId, {
         expiry_date: newExpiry.toISOString(),
         last_modified_by: user.id,
         last_modified_at: new Date().toISOString(),
@@ -102,7 +100,7 @@ export default function AdminUserManagement() {
 
   const handleRevokeSubscription = async (subId) => {
     try {
-      await base44.entities.Subscription.update(subId, {
+      await platform.entities.Subscription.update(subId, {
         status: "CANCELLED",
         last_modified_by: user.id,
         last_modified_at: new Date().toISOString()
@@ -130,7 +128,7 @@ export default function AdminUserManagement() {
     if (accountTab === "deactivated" && !isInactive) return false;
 
     // Search filter
-    const matchesSearch = searchQuery === "" || 
+    const matchesSearch = searchQuery === "" ||
       ((searchType === "phone" || searchType === "all") && u.mobile?.includes(searchQuery)) ||
       ((searchType === "email" || searchType === "all") && u.email?.toLowerCase().includes(searchQuery.toLowerCase())) ||
       ((searchType === "name" || searchType === "all") && u.full_name?.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -388,7 +386,7 @@ export default function AdminUserManagement() {
                           Subscriptions ({userSubs.length})
                         </h4>
                         {userSubs.map((sub) => (
-                          <div 
+                          <div
                             key={sub.id}
                             className="p-3 rounded-lg bg-white/5 border border-white/10"
                           >

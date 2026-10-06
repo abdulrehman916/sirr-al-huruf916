@@ -6,7 +6,7 @@
 // Day + Saat + Kawkab context.
 // ═══════════════════════════════════════════════════════════════
 import { useEffect, useState } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 let cache = null;
 let inflight = null;
@@ -19,7 +19,7 @@ export function fetchAstroClockKnowledge() {
       const all = [];
       let skip = 0;
       while (skip < 5000) {
-        const batch = await base44.entities.AstroClockKnowledge.filter(
+        const batch = await platform.entities.AstroClockKnowledge.filter(
           { is_marker: false, source_type: "full_context" },
           "-source_count", 100, skip
         );

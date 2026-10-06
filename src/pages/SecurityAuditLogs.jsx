@@ -1,15 +1,15 @@
 import { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Shield, Search, Clock, User, FileText, Download,
-  AlertTriangle, CheckCircle, XCircle, Lock, Key,
+  AlertTriangle, CheckCircle, XCircle, Key,
   Database, Eye, Settings, LogOut, RefreshCw
 } from "lucide-react";
 
@@ -90,18 +90,18 @@ export default function SecurityAuditLogs() {
 
   useEffect(() => {
     checkAuth();
-    
+
     // Real-time subscription for instant audit log updates
-    const unsubscribe = base44.entities.AuditLog.subscribe(() => {
+    const unsubscribe = platform.entities.AuditLog.subscribe(() => {
       fetchLogs();
     });
-    
+
     return () => unsubscribe();
   }, []);
 
   const checkAuth = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || user.role !== "admin") {
         toast({ title: "Access Denied", description: "Admin access required", variant: "destructive" });
         navigate("/");
@@ -117,7 +117,7 @@ export default function SecurityAuditLogs() {
 
   const fetchLogs = async () => {
     try {
-      const allLogs = await base44.entities.AuditLog.list("-timestamp", 200);
+      const allLogs = await platform.entities.AuditLog.list("-timestamp", 200);
       setLogs(allLogs);
     } catch (err) {
       toast({ title: "Error", description: "Failed to load audit logs", variant: "destructive" });
@@ -126,7 +126,7 @@ export default function SecurityAuditLogs() {
 
   const filteredLogs = useMemo(() => {
     return logs.filter(log => {
-      const matchesSearch = searchQuery === "" || 
+      const matchesSearch = searchQuery === "" ||
         log.performed_by_email?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         log.target_user_id?.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesAction = filterAction === "all" || log.action_type === filterAction;
@@ -139,7 +139,7 @@ export default function SecurityAuditLogs() {
   const handleExport = async () => {
     setExporting(true);
     try {
-      const response = await base44.functions.invoke("exportData", { export_type: "audit_logs" });
+      const response = await platform.functions.invoke("exportData", { export_type: "audit_logs" });
       const blob = new Blob([JSON.stringify(response, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -257,13 +257,13 @@ export default function SecurityAuditLogs() {
                           {log.performed_by_email}
                         </span>
                       </div>
-                      
+
                       {log.target_user_id && (
                         <p className="text-xs text-white/40 mt-0.5">
                           Target: {log.target_user_id}
                         </p>
                       )}
-                      
+
                       {details && Object.keys(details).length > 0 && (
                         <div className="mt-2 text-xs text-white/30 bg-white/5 rounded-lg p-2">
                           {Object.entries(details).map(([key, val]) => (

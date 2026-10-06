@@ -6,11 +6,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Book, Upload, Search, Database, AlertTriangle, CheckCircle, Clock, FileText, Plus, ChevronDown, ChevronUp, X } from "lucide-react";
+import { Book, Upload, Search, Database, CheckCircle, FileText, Plus, ChevronDown, ChevronUp, X } from "lucide-react";
 import PageLayout from "../components/PageLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay, ArabicTextWithTranslation } from "../components/astroclock/ArabicLetterDisplay";
-import { formatArabicLetter, getLetterInfo } from "@/lib/arabicLetterReference";
 
 const G = {
   border: "rgba(212,175,55,0.35)",
@@ -73,7 +72,7 @@ export default function ManuscriptLibraryPage() {
   async function loadManuscripts() {
     setLoading(true);
     try {
-      const data = await base44.entities.ManuscriptLibrary.list('-created_date');
+      const data = await platform.entities.ManuscriptLibrary.list('-created_date');
       setManuscripts(data);
     } catch (e) {
       console.error(e);
@@ -87,10 +86,10 @@ export default function ManuscriptLibraryPage() {
     setUploadResult(null);
     try {
       // Upload PDF file
-      const { file_url } = await base44.integrations.Core.UploadFile({ file: form.file });
+      const { file_url } = await platform.integrations.Core.UploadFile({ file: form.file });
 
       // Ingest manuscript
-      const result = await base44.functions.invoke('ingestManuscriptPDF', {
+      const result = await platform.functions.invoke('ingestManuscriptPDF', {
         pdf_url: file_url,
         book_name: form.book_name,
         author: form.author,
@@ -115,7 +114,7 @@ export default function ManuscriptLibraryPage() {
   async function handleQuery() {
     setQuerying(true);
     try {
-      const result = await base44.functions.invoke('queryManuscriptLibrary', {
+      const result = await platform.functions.invoke('queryManuscriptLibrary', {
         category: selectedCategory !== "ALL" ? selectedCategory : undefined,
         search_term: searchTerm || undefined,
         include_conflicts: true
@@ -267,7 +266,7 @@ export default function ManuscriptLibraryPage() {
                     <div>
                       <p className="font-bold text-white mb-1">✅ {uploadResult.message}</p>
                       <p className="font-inter text-xs" style={{ color: G.dim }}>
-                        Rules stored: {uploadResult.extraction?.stored_rules} | 
+                        Rules stored: {uploadResult.extraction?.stored_rules} |
                         Categories: {uploadResult.extraction?.categories_covered?.join(', ')} |
                         Conflicts detected: {uploadResult.extraction?.conflicts_detected}
                       </p>
@@ -446,13 +445,13 @@ function ManuscriptCard({ manuscript: ms, expanded, onToggle }) {
 function ArabicDataDisplay({ rule }) {
   try {
     const data = typeof rule.data_json === 'string' ? JSON.parse(rule.data_json) : rule.data_json;
-    
+
     return (
       <div className="mb-3 space-y-2">
         {/* Arabic Letter */}
         {data.letter && (
           <div className="flex items-center gap-3">
-            <ArabicLetterDisplay 
+            <ArabicLetterDisplay
               letter={data.letter}
               malayalam={data.letter_malayalam}
               size="md"
@@ -462,7 +461,7 @@ function ArabicDataDisplay({ rule }) {
             </span>
           </div>
         )}
-        
+
         {/* Lunar Mansion */}
         {data.lunar_mansion && (
           <LunarMansionDisplay
@@ -471,7 +470,7 @@ function ArabicDataDisplay({ rule }) {
             malayalam={data.lunar_mansion_malayalam}
           />
         )}
-        
+
         {/* Zodiac Sign */}
         {data.zodiac && (
           <ZodiacSignDisplay
@@ -540,17 +539,17 @@ function QueryResults({ results }) {
                         <div className="flex items-start justify-between gap-4">
                           <div className="flex-1">
                             <p className="font-inter text-sm text-white mb-2">{rule.rule_summary}</p>
-                            
+
                             {/* Display Arabic letters/glyphs properly */}
                             <ArabicDataDisplay rule={rule} />
-                            
+
                             {rule.original_text && (
-                              <ArabicTextWithTranslation 
+                              <ArabicTextWithTranslation
                                 arabic={rule.original_text}
                                 className="mb-3"
                               />
                             )}
-                            
+
                             <div className="flex flex-wrap gap-2 mt-2">
                               <span className="font-inter text-[8px] px-2 py-0.5 rounded" style={{ background: G.bg, color: G.dim }}>
                                 📖 {rule.book_name}

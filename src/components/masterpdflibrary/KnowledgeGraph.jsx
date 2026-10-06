@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import {
   X, Loader2, Sparkles, Network, BookOpen, ScrollText, Gem, BookMarked, AlertTriangle, Tag, ChevronDown, ChevronRight, ShieldCheck,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
@@ -46,7 +46,7 @@ export default function KnowledgeGraph({ query = "", dbResults = [], onClose }) 
         english: r.english || "",
         citation: r.citation || {},
       }));
-      const res = await base44.functions.invoke("buildKnowledgeGraph", { query, matched });
+      const res = await platform.functions.invoke("buildKnowledgeGraph", { query, matched });
       const data = res?.data || res;
       if (data?.error) throw new Error(data.error);
       setGraph(data.graph);

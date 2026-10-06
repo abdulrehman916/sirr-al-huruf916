@@ -1,14 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Send, Upload, Image, FileText, Mic, StopCircle, Paperclip, X } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Send, FileText, Mic, StopCircle, Paperclip, X } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { getSessionId } from "@/lib/sessionId";
-import ReactMarkdown from "react-markdown";
 
 const CATEGORIES = [
   { value: "General Question", label: "General Question", icon: "❓" },
@@ -40,7 +38,7 @@ export default function SupportCenter() {
   const [recordingTime, setRecordingTime] = useState(0);
   const [audioBlob, setAudioBlob] = useState(null);
   const [view, setView] = useState("list"); // "list" or "chat"
-  
+
   const mediaRecorderRef = useRef(null);
   const chunksRef = useRef([]);
   const timerRef = useRef(null);
@@ -59,7 +57,7 @@ export default function SupportCenter() {
 
   const loadConversations = async () => {
     try {
-      const result = await base44.functions.invoke("getSupportConversations", {
+      const result = await platform.functions.invoke("getSupportConversations", {
         session_id: sessionId,
         limit: 50
       });
@@ -71,7 +69,7 @@ export default function SupportCenter() {
 
   const loadMessages = async (conversation_id) => {
     try {
-      const result = await base44.functions.invoke("getSupportMessages", {
+      const result = await platform.functions.invoke("getSupportMessages", {
         conversation_id,
         session_id: sessionId,
         limit: 100
@@ -99,7 +97,7 @@ export default function SupportCenter() {
 
     setUploading(true);
     try {
-      const result = await base44.integrations.Core.UploadFile({ file });
+      const result = await platform.integrations.Core.UploadFile({ file });
       setUploadedFile({ url: result.file_url, name: file.name, type: file.type, size: file.size });
       toast({ title: "Upload Successful", description: "File uploaded successfully." });
     } catch (error) {
@@ -154,13 +152,13 @@ export default function SupportCenter() {
 
     setLoading(true);
     try {
-      const result = await base44.functions.invoke("createSupportConversation", {
+      const result = await platform.functions.invoke("createSupportConversation", {
         subject: subject.trim(),
         category: selectedCategory,
         message: "New conversation started",
         session_id: sessionId
       });
-      
+
       toast({ title: "Conversation Created", description: "Support conversation started successfully." });
       setActiveConversation(result.data);
       setView("chat");
@@ -194,14 +192,14 @@ export default function SupportCenter() {
       // Upload audio if recording
       if (audioBlob) {
         const audioFile = new File([audioBlob], "voice-message.webm", { type: "audio/webm" });
-        const result = await base44.integrations.Core.UploadFile({ file: audioFile });
+        const result = await platform.integrations.Core.UploadFile({ file: audioFile });
         attachment_url = result.file_url;
         attachment_type = "audio/webm";
         attachment_name = "voice-message.webm";
         audio_duration = recordingTime;
       }
 
-      const result = await base44.functions.invoke("sendSupportMessage", {
+      const result = await platform.functions.invoke("sendSupportMessage", {
         conversation_id: activeConversation.conversation_id,
         message: messageInput.trim(),
         attachment_url,
@@ -218,7 +216,7 @@ export default function SupportCenter() {
       setRecordingTime(0);
       loadMessages(activeConversation.conversation_id);
       loadConversations();
-      
+
       toast({ title: "Message Sent", description: "Your message has been sent." });
     } catch (error) {
       toast({ title: "Send Failed", description: error.message, variant: "destructive" });
@@ -235,15 +233,15 @@ export default function SupportCenter() {
 
   const formatDateTime = (iso) => {
     if (!iso) return "";
-    return new Date(iso).toLocaleString("en-GB", { 
-      day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" 
+    return new Date(iso).toLocaleString("en-GB", {
+      day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit"
     });
   };
 
   return (
     <PageLayout>
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto space-y-4">
-        
+
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="font-inter text-2xl font-bold text-white">Support Center</h1>

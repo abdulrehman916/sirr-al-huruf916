@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { FileText, CheckCircle, AlertCircle, Database, TrendingUp, Wand2 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 
@@ -31,7 +31,7 @@ export default function ManuscriptRuleAudit() {
   async function runAudit() {
     try {
       setLoading(true);
-      const response = await base44.functions.invoke('auditManuscriptRuleCompleteness', {});
+      const response = await platform.functions.invoke('auditManuscriptRuleCompleteness', {});
       setPrevAudit(audit);
       setAudit(response.data.audit);
       setError(null);
@@ -46,15 +46,15 @@ export default function ManuscriptRuleAudit() {
     try {
       setEnriching(true);
       setEnrichmentProgress({ processed: 0, enriched: 0, skipped: 0, total: 0 });
-      
+
       let skip = 0;
       let totalEnriched = 0;
       let totalSkipped = 0;
       let done = false;
 
       while (!done && enriching) {
-        const response = await base44.functions.invoke('enrichManuscriptRules', { skip, batchSize: 5 });
-        
+        const response = await platform.functions.invoke('enrichManuscriptRules', { skip, batchSize: 5 });
+
         if (response.data.error) {
           throw new Error(response.data.error);
         }
@@ -140,7 +140,7 @@ export default function ManuscriptRuleAudit() {
             <p className="font-inter text-sm mt-2" style={{ color: G.dim }}>
               Completeness Report - {new Date().toLocaleDateString()}
             </p>
-            
+
             {!enrichmentDone && !enriching && (
               <button
                 onClick={runEnrichment}
@@ -372,7 +372,7 @@ function FieldBar({ label, count, total, color }) {
 function ImprovementCard({ label, prev, curr, total }) {
   const increase = curr - prev;
   const percentageIncrease = prev > 0 ? Math.round((increase / total) * 100) : 0;
-  
+
   return (
     <div className="p-3 rounded" style={{ background: "rgba(0,0,0,0.3)" }}>
       <p className="font-inter text-xs mb-1" style={{ color: G.dim }}>{label}</p>

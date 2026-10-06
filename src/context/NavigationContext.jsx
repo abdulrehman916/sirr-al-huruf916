@@ -1,5 +1,5 @@
 import { createContext, useContext, useCallback } from 'react';
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 import { useNavigate } from 'react-router-dom';
 
 const NavigationContext = createContext(null);

@@ -2,17 +2,17 @@ import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search, X, ShoppingBag, Star, ArrowUpDown, ChevronDown, SlidersHorizontal,
-  Heart, Check, Package, Clock, TrendingUp, Flame, Sparkles
+  Heart, Check, Clock, TrendingUp, Flame, Sparkles
 } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import ProductCard from "../components/shop/ProductCard";
 import { ProductGridSkeleton } from "../components/shop/ProductSkeleton";
 import { EmptySearchState, EmptyShopState, EmptyWishlistState } from "../components/shop/EmptyState";
-import { base44 } from "../api/base44Client";
+import { platform } from "../api/platformClient";
 import { setSelectedCountry } from "@/lib/shopCurrency";
 import { trackSearch, trackCategoryFilter } from "@/lib/shopAnalytics";
-import { getWishlist, isInWishlist, toggleWishlist, extractBrands, parsePrice, getRecentlyViewed, getBrand } from "@/lib/shopUtils";
+import { getWishlist, extractBrands, parsePrice, getRecentlyViewed, getBrand } from "@/lib/shopUtils";
 import RelatedProducts from "../components/shop/RelatedProducts";
 import CompareBar from "../components/shop/CompareBar";
 import ShopSectionRow from "../components/shop/ShopSectionRow";
@@ -69,13 +69,13 @@ export default function ShopPage() {
   useEffect(() => {
     (async () => {
       try {
-        const cats = await base44.entities.ShopCategory.list("display_order", 200);
+        const cats = await platform.entities.ShopCategory.list("display_order", 200);
         const active = (cats || []).filter(c => c.is_active !== false).map(c => c.name);
         if (active.length > 0) setShopCategories(active);
       } catch { /* fallback to product-derived */ }
 
       try {
-        const settings = await base44.entities.ShopSettings.list();
+        const settings = await platform.entities.ShopSettings.list();
         const s = settings?.[0];
         if (s && s.auto_detect_country === false && s.active_country) {
           setSelectedCountry(s.active_country);
@@ -112,7 +112,7 @@ export default function ShopPage() {
   const loadProducts = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.Product.list("-created_date", 200);
+      const list = await platform.entities.Product.list("-created_date", 200);
       setProducts(list || []);
     } catch (err) {
       setProducts([]);

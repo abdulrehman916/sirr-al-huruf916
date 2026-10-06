@@ -1,13 +1,13 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AssignAdminModal from "@/components/admin/AssignAdminModal";
 import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Users, UserCheck, UserX, Shield, ShieldOff, Trash2, RotateCcw,
-  Search, Calendar, LogIn, Mail, Phone, Clock, AlertCircle,
-  ChevronRight, X, FileText, KeyRound, MessageSquare, Lock, Unlock, UserCog
+import {
+  Users, Shield, ShieldOff, Trash2, RotateCcw,
+  Search, Calendar, LogIn, Mail, Phone, Clock,
+  ChevronRight, X, KeyRound, MessageSquare, Lock, Unlock, UserCog
 } from "lucide-react";
 
 const G = {
@@ -43,10 +43,10 @@ function UserDrawer({ user, onClose, onUpdate }) {
     try {
       // SCALABILITY: Add limits to all queries
       const [profile, codes, perms, msgs] = await Promise.all([
-        base44.entities.UserAccessProfile.filter({ user_id: user.id }).then(r => r[0]),
-        base44.entities.AccessCode.list(null, 100).then(codes => codes.filter(c => c.used_by_user_id === user.id)),
-        base44.entities.PagePermission.filter({ user_id: user.id }, null, 500), // Limit to 500 permissions
-        base44.entities.SupportMessage.filter({ sender_id: user.email }, null, 10).then(r => r.slice(0, 10)),
+        platform.entities.UserAccessProfile.filter({ user_id: user.id }).then(r => r[0]),
+        platform.entities.AccessCode.list(null, 100).then(codes => codes.filter(c => c.used_by_user_id === user.id)),
+        platform.entities.PagePermission.filter({ user_id: user.id }, null, 500), // Limit to 500 permissions
+        platform.entities.SupportMessage.filter({ sender_id: user.email }, null, 10).then(r => r.slice(0, 10)),
       ]);
       setUserProfile(profile);
       setAccessCodes(codes);
@@ -61,7 +61,7 @@ function UserDrawer({ user, onClose, onUpdate }) {
 
   const handleBlock = async () => {
     try {
-      await base44.entities.ApprovedUser.update(user.id, { status: "BLOCKED", blocked_at: new Date().toISOString() });
+      await platform.entities.ApprovedUser.update(user.id, { status: "BLOCKED", blocked_at: new Date().toISOString() });
       toast({ title: "User blocked" });
       onUpdate();
       onClose();
@@ -72,7 +72,7 @@ function UserDrawer({ user, onClose, onUpdate }) {
 
   const handleUnblock = async () => {
     try {
-      await base44.entities.ApprovedUser.update(user.id, { status: "ACTIVE" });
+      await platform.entities.ApprovedUser.update(user.id, { status: "ACTIVE" });
       toast({ title: "User unblocked" });
       onUpdate();
       onClose();
@@ -83,7 +83,7 @@ function UserDrawer({ user, onClose, onUpdate }) {
 
   const handleRemove = async () => {
     try {
-      await base44.entities.ApprovedUser.update(user.id, { status: "REMOVED", removed_at: new Date().toISOString() });
+      await platform.entities.ApprovedUser.update(user.id, { status: "REMOVED", removed_at: new Date().toISOString() });
       toast({ title: "User removed" });
       onUpdate();
       onClose();
@@ -94,7 +94,7 @@ function UserDrawer({ user, onClose, onUpdate }) {
 
   const handleRestore = async () => {
     try {
-      await base44.entities.ApprovedUser.update(user.id, { status: "ACTIVE" });
+      await platform.entities.ApprovedUser.update(user.id, { status: "ACTIVE" });
       toast({ title: "User restored" });
       onUpdate();
       onClose();
@@ -105,7 +105,7 @@ function UserDrawer({ user, onClose, onUpdate }) {
 
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
@@ -279,7 +279,7 @@ export default function ApprovedUsersTab() {
 
   const handleBlockUser = async (userId) => {
     try {
-      await base44.entities.ApprovedUser.update(userId, { status: "BLOCKED", blocked_at: new Date().toISOString() });
+      await platform.entities.ApprovedUser.update(userId, { status: "BLOCKED", blocked_at: new Date().toISOString() });
       toast({ title: "User blocked" });
       loadUsers();
     } catch (e) {
@@ -289,7 +289,7 @@ export default function ApprovedUsersTab() {
 
   const handleUnblockUser = async (userId) => {
     try {
-      await base44.entities.ApprovedUser.update(userId, { status: "ACTIVE" });
+      await platform.entities.ApprovedUser.update(userId, { status: "ACTIVE" });
       toast({ title: "User unblocked" });
       loadUsers();
     } catch (e) {
@@ -299,7 +299,7 @@ export default function ApprovedUsersTab() {
 
   const handleRemoveUser = async (userId) => {
     try {
-      await base44.entities.ApprovedUser.update(userId, { status: "REMOVED", removed_at: new Date().toISOString() });
+      await platform.entities.ApprovedUser.update(userId, { status: "REMOVED", removed_at: new Date().toISOString() });
       toast({ title: "User removed" });
       loadUsers();
     } catch (e) {
@@ -309,7 +309,7 @@ export default function ApprovedUsersTab() {
 
   const handleRestoreUser = async (userId) => {
     try {
-      await base44.entities.ApprovedUser.update(userId, { status: "ACTIVE" });
+      await platform.entities.ApprovedUser.update(userId, { status: "ACTIVE" });
       toast({ title: "User restored" });
       loadUsers();
     } catch (e) {
@@ -322,28 +322,28 @@ export default function ApprovedUsersTab() {
     try {
       // SCALABILITY: Load only PAGE_SIZE users with pagination
       const skip = (page - 1) * PAGE_SIZE;
-      
+
       const [approvedUsers, allUsers, accessProfiles, adminList, currentUser] = await Promise.all([
-        base44.entities.ApprovedUser.list(null, PAGE_SIZE + 1),
-        base44.entities.User.list(null, 500).catch(() => []),
-        base44.entities.UserAccessProfile.list(null, 500).catch(() => []),
-        base44.entities.AdminProfile.list(null, 500).catch(() => []),
-        base44.auth.me().catch(() => null),
+        platform.entities.ApprovedUser.list(null, PAGE_SIZE + 1),
+        platform.entities.User.list(null, 500).catch(() => []),
+        platform.entities.UserAccessProfile.list(null, 500).catch(() => []),
+        platform.entities.AdminProfile.list(null, 500).catch(() => []),
+        platform.auth.me().catch(() => null),
       ]);
-      
+
       // Set admin profiles for filter dropdown and assign modal
       setAdminProfiles(adminList || []);
-      
+
       // Determine owner status from AdminProfile
       const myProfile = (adminList || []).find(
         (p) => (p.user_id && currentUser && p.user_id === currentUser.id) ||
                (p.email && currentUser && p.email.toLowerCase() === currentUser.email.toLowerCase())
       );
       setIsOwner(myProfile?.is_owner === true);
-      
+
       const hasMore = approvedUsers.length > PAGE_SIZE;
       const paginatedUsers = hasMore ? approvedUsers.slice(0, PAGE_SIZE) : approvedUsers;
-      
+
       const merged = paginatedUsers.map(approved => {
         const platformUser = allUsers.find(u => u.email === approved.email);
         const accessProfile = (accessProfiles || []).find(
@@ -363,7 +363,7 @@ export default function ApprovedUsersTab() {
           assigned_admin_name: assignedAdmin?.full_name || assignedAdmin?.email || null,
         };
       });
-      
+
       setUsers(merged);
       setTotalUsers(hasMore ? PAGE_SIZE * page + merged.length : (PAGE_SIZE * (page - 1)) + merged.length);
     } catch (e) {
@@ -379,7 +379,7 @@ export default function ApprovedUsersTab() {
     let list = users;
     if (search.trim()) {
       const q = search.toLowerCase();
-      list = list.filter(u => 
+      list = list.filter(u =>
         u.email.toLowerCase().includes(q) ||
         (u.full_name && u.full_name.toLowerCase().includes(q)) ||
         (u.phone && u.phone.toLowerCase().includes(q))
@@ -472,7 +472,7 @@ export default function ApprovedUsersTab() {
               const status = STATUS_CONFIG[user.status] || STATUS_CONFIG.ACTIVE;
               const StatusIcon = status.icon;
               return (
-                <div key={user.id} 
+                <div key={user.id}
                   onClick={() => setSelectedUser(user)}
                   className="rounded-xl border p-4 cursor-pointer transition-all hover:scale-[1.01]"
                   style={{ background: G.bg, borderColor: G.border }}>
@@ -528,7 +528,7 @@ export default function ApprovedUsersTab() {
               );
             })}
           </div>
-          
+
           {/* Pagination Controls */}
           <div className="flex items-center justify-between gap-4 mt-4 pt-4 border-t" style={{ borderColor: G.border }}>
             <p className="text-xs text-white/40">
@@ -539,8 +539,8 @@ export default function ApprovedUsersTab() {
                 onClick={() => setPage(p => Math.max(1, p - 1))}
                 disabled={page === 1}
                 className="px-4 py-2 rounded-lg text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ 
-                  background: page === 1 ? G.bg : G.bgHi, 
+                style={{
+                  background: page === 1 ? G.bg : G.bgHi,
                   color: page === 1 ? G.dim : G.text,
                   border: `1px solid ${G.border}`
                 }}
@@ -551,8 +551,8 @@ export default function ApprovedUsersTab() {
                 onClick={() => setPage(p => p + 1)}
                 disabled={users.length < PAGE_SIZE}
                 className="px-4 py-2 rounded-lg text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ 
-                  background: users.length < PAGE_SIZE ? G.bg : G.bgHi, 
+                style={{
+                  background: users.length < PAGE_SIZE ? G.bg : G.bgHi,
                   color: users.length < PAGE_SIZE ? G.dim : G.text,
                   border: `1px solid ${G.border}`
                 }}
@@ -567,9 +567,9 @@ export default function ApprovedUsersTab() {
       {/* User Details Drawer */}
       <AnimatePresence>
         {selectedUser && (
-          <UserDrawer 
-            user={selectedUser} 
-            onClose={() => setSelectedUser(null)} 
+          <UserDrawer
+            user={selectedUser}
+            onClose={() => setSelectedUser(null)}
             onUpdate={loadUsers}
           />
         )}

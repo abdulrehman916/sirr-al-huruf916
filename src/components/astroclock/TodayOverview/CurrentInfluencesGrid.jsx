@@ -4,7 +4,7 @@
 // Turkish → Malayalam Translation Layer: Applied
 // ═══════════════════════════════════════════════════════════════
 
-import { Sun, Moon, Star, Sparkles, Clock, Book } from "lucide-react";
+import { Sun, Moon, Star, Sparkles, Clock } from "lucide-react";
 import { translateTurkishToMalayalam } from "@/lib/astroClockTurkishToMalayalam.js";
 
 const G = {

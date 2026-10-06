@@ -17,7 +17,7 @@
  *   await syncModules(); // fire-and-forget on app load
  */
 
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 import { MODULE_DEFINITIONS } from '@/lib/moduleManifest';
 
 // Build flat module list for backend sync (inlined — no separate registry file needed)
@@ -73,7 +73,7 @@ export async function syncModules(force = false) {
       return lastSyncResult;
     }
 
-    const response = await base44.functions.invoke('syncModuleRegistry', {
+    const response = await platform.functions.invoke('syncModuleRegistry', {
       modules,
     });
     const data = response?.data || response;

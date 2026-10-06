@@ -1,7 +1,7 @@
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
-import { Calculator, CheckCircle, XCircle, FileText, AlertCircle } from "lucide-react";
-import { buildVefk, validateVefk, VEFK_TEMPLATES } from "../lib/mizaanPostEngine";
+import { Calculator, CheckCircle, FileText, AlertCircle } from "lucide-react";
+import { buildVefk, validateVefk } from "../lib/mizaanPostEngine";
 
 const G = {
   gold: "#F5D060",
@@ -168,7 +168,7 @@ export default function MizanRubaiVerification() {
   // Count verification status
   const verifiedCount = MANUSCRIPT_EXAMPLES.filter(ex => ex.status === "verified" && ex.matchPercentage === 100).length;
   const allTemplatesVerified = true; // All 4 elements manuscript-proven (Page 68)
-  
+
   return (
     <PageLayout>
       <div className="space-y-4">
@@ -263,7 +263,7 @@ export default function MizanRubaiVerification() {
 
           return (
             <Card key={example.id} title={`${example.elementName} — ${example.arabic} (Source: ${example.sourceNumber.toLocaleString()})`} icon={Calculator}>
-              
+
               {/* Construction Parameters */}
               <div className="mb-4 p-3 rounded-lg border" style={{ borderColor: G.goldBorder + "40" }}>
                 <div className="grid grid-cols-4 gap-4 text-center">
@@ -303,7 +303,7 @@ export default function MizanRubaiVerification() {
               {/* Validation Status */}
               <div className={`mt-4 p-3 rounded-lg border text-center ${
                 validation.isValid && result.mc === example.sourceNumber
-                  ? "bg-green-500/10 border-green-500/40" 
+                  ? "bg-green-500/10 border-green-500/40"
                   : "bg-yellow-500/10 border-yellow-500/40"
               }`}>
                 <div className="flex items-center justify-center gap-2">
@@ -315,7 +315,7 @@ export default function MizanRubaiVerification() {
                   <span className={`font-inter text-sm font-bold ${
                     validation.isValid && result.mc === example.sourceNumber ? "text-green-500" : "text-yellow-500"
                   }`}>
-                    {validation.isValid 
+                    {validation.isValid
                       ? result.mc === example.sourceNumber
                         ? "✓ MANUSCRIPT-VERIFIED (MC = Source)"
                         : `⚠ MC ≠ Source (diff: ${Math.abs(result.mc - example.sourceNumber)})`
@@ -510,7 +510,7 @@ export default function MizanRubaiVerification() {
                   <div>All four elemental templates manuscript-proven (Page 68)</div>
                   <div>Sequential continuation method verified (Pages 314, 316)</div>
                 </div>
-                
+
                 <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/40">
                   <div className="font-bold mb-1 text-yellow-500">⚠ PRIORITY 1: Manuscript Research</div>
                   <div className="ml-3">• Search for 3×3 (Musallas) examples</div>
@@ -519,7 +519,7 @@ export default function MizanRubaiVerification() {
                   <div className="ml-3">• Search for 7×7 (Suba'i) examples</div>
                   <div className="ml-3">• Search for 8×8 (Sumani) examples</div>
                 </div>
-                
+
                 <div className="p-3 rounded-lg bg-blue-500/10 border border-blue-500/40">
                   <div className="font-bold mb-1 text-blue-500">⚠ PRIORITY 2: Algorithm Development</div>
                   <div>Only after manuscript examples are found:</div>
@@ -527,7 +527,7 @@ export default function MizanRubaiVerification() {
                   <div className="ml-3">• Validate against all found examples</div>
                   <div className="ml-3">• Document verification status</div>
                 </div>
-                
+
                 <div className="p-2 rounded bg-yellow-500/10 border border-yellow-500/40" style={{ color: G.yellow }}>
                   <strong>⚠ CRITICAL LAW:</strong> Manuscript is authority, not formula.<br/>
                   DO NOT implement grid sizes without manuscript evidence.<br/>

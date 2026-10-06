@@ -1,6 +1,6 @@
 import { useMemo, memo } from "react";
 import { motion } from "framer-motion";
-import { PLANETS, SIZE_PLANET_MAP, PLANET_EN, buildHierarchy, triangle, toArabicIndic } from "./msEngine";
+import { PLANETS, SIZE_PLANET_MAP, PLANET_EN, buildHierarchy, toArabicIndic } from "./msEngine";
 
 const G = {
   borderHi: "rgba(212,175,55,0.65)",

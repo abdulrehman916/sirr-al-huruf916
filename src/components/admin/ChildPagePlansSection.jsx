@@ -12,7 +12,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Edit3, Check, Loader2, Plus, Eye, EyeOff, ShoppingBag, Ban } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import PricingPlanEditor from "./PricingPlanEditor";
 
@@ -49,7 +49,7 @@ export default function ChildPagePlansSection({ pagePath, pageName, pageIcon, vi
   const save = async () => {
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const data = {
         page_path: pagePath,
         page_name: name.trim() || pageName,
@@ -66,9 +66,9 @@ export default function ChildPagePlansSection({ pagePath, pageName, pageIcon, vi
         admin_only: vc?.admin_only || false,
       };
       if (vc?.id) {
-        await base44.entities.PageVisibilityConfig.update(vc.id, data);
+        await platform.entities.PageVisibilityConfig.update(vc.id, data);
       } else {
-        await base44.entities.PageVisibilityConfig.create(data);
+        await platform.entities.PageVisibilityConfig.create(data);
       }
       setEditing(false);
       toast({ title: "Section saved", description: name });

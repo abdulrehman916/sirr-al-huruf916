@@ -7,7 +7,7 @@ import PageTitle from "../components/PageTitle";
 import PullToRefresh from "../components/PullToRefresh";
 import { usePageState } from "../context/PageStateContext";
 import { HOLY_NAMES, MHN_CATEGORIES } from "../lib/magicalHolyNamesData";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Lock } from "lucide-react";
 import FeatureLockedCard from "@/components/FeatureLockedCard";
 import { checkFeatureAccess } from "@/lib/featurePermission";
@@ -42,8 +42,8 @@ function SectionA({ importRefreshKey }) {
   useEffect(() => {
     let alive = true;
     Promise.all([
-      base44.entities.HolyNameKnowledge.filter({ record_class: "occult_section_a", verification_status: "verified" }, "order_index", 500),
-      base44.entities.HolyNameKnowledge.filter({ record_class: "occult_section_a", verification_status: "conflicting_sources" }, "order_index", 500),
+      platform.entities.HolyNameKnowledge.filter({ record_class: "occult_section_a", verification_status: "verified" }, "order_index", 500),
+      platform.entities.HolyNameKnowledge.filter({ record_class: "occult_section_a", verification_status: "conflicting_sources" }, "order_index", 500),
     ]).then(([a, b]) => {
       if (!alive) return;
       const map = {};
@@ -368,7 +368,7 @@ function SectionB() {
 
   const loadNames = async () => {
     try {
-      const allNames = await base44.entities.HolyOnePDFName.list();
+      const allNames = await platform.entities.HolyOnePDFName.list(null, 500);
       setNames(allNames || []);
       const uniqueSurahs = [...new Set(allNames.map(n => n.surah_name))].filter(Boolean);
       setSurahList(uniqueSurahs);
@@ -380,7 +380,7 @@ function SectionB() {
   };
 
   const filteredNames = names.filter(name => {
-    const matchesSearch = searchQuery === "" || 
+    const matchesSearch = searchQuery === "" ||
       name.arabic_name?.includes(searchQuery) ||
       name.arabic_transliteration?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       name.meaning_malayalam?.includes(searchQuery);
@@ -476,7 +476,7 @@ function SectionB() {
                     <p className="text-[10px] text-gray-400 mt-2 tracking-widest uppercase">{name.arabic_transliteration}</p>
                   )}
                 </div>
-                
+
                 {/* Malayalam Pronunciation */}
                 {name.malayalam_pronunciation && (
                   <div className="text-center">
@@ -485,7 +485,7 @@ function SectionB() {
                     </p>
                   </div>
                 )}
-                
+
                 {/* Meaning - Highlighted, Immediate Identification */}
                 {name.meaning_malayalam && (
                   <div className="rounded-xl p-4 text-center" style={{
@@ -504,7 +504,7 @@ function SectionB() {
                     </p>
                   </div>
                 )}
-                
+
                 {/* Source Reference */}
                 <div className="flex justify-between items-center text-xs pt-2 border-t" style={{
                   borderColor: "rgba(212,175,55,0.20)"

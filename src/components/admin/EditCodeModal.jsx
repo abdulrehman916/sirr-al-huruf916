@@ -6,8 +6,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 // framer-motion removed — plain divs for reliable modal close/unmount behavior
-import { X, Plus, Loader2, Check, KeyRound } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { X, Loader2, Check, KeyRound } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { getContentPages } from "@/lib/pageRegistry";
 import { DURATION_OPTIONS, buildPageGrant, computePageExpiry } from "@/lib/codeDuration";
@@ -110,7 +110,7 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
   // Re-fetch code from backend — updates "Currently Unlocked" without closing modal
   const refreshCode = async () => {
     try {
-      const updated = await base44.entities.AccessCode.get(code.id);
+      const updated = await platform.entities.AccessCode.get(code.id);
       setLocalCode(updated);
       setSelectedPages(updated.page_paths || []);
       setPageDurations(updated.page_durations || {});
@@ -153,14 +153,14 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
         updateData.page_grants = { ...origGrants, [path]: { granted_at: grantedAt, expires_at: expiresAt, duration_label: pd?.label || '' } };
       } catch { /* best-effort — never block feature save */ }
       if (isFeatureNew) {
-        const me = await base44.auth.me();
+        const me = await platform.auth.me();
         const dl = stampedPlan.is_lifetime ? 'Lifetime' : stampedPlan.duration_days ? `${stampedPlan.duration_days} days` : 'N/A';
         updateData.audit_log = [...(code.audit_log || []), {
           action: "ADDED_FEATURE", timestamp: nowISO, admin_id: me?.id || "",
           details: `Feature added: ${featKey} — Plan: ${stampedPlan.plan_name || 'N/A'} (${dl})`,
         }];
       }
-      await base44.functions.invoke("updateAccessCode", { code_id: code.id, update_data: updateData });
+      await platform.functions.invoke("updateAccessCode", { code_id: code.id, update_data: updateData });
       toast({ title: `✓ ${featId} saved` });
       refreshCode();
     } catch (e) {
@@ -208,7 +208,7 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
       });
 
       // Build audit entries for page/feature additions and removals
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const origPagePaths = code.page_paths || [];
       const newFeatureKeys = Object.keys(stampedFeatureDurations);
       const addedPages = selectedPages.filter(p => !origPagePaths.includes(p));
@@ -265,7 +265,7 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
         }
       });
 
-      await base44.functions.invoke("updateAccessCode", {
+      await platform.functions.invoke("updateAccessCode", {
         code_id: code.id,
         update_data: {
           page_paths: selectedPages,

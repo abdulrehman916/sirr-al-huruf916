@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Edit3, Trash2, Eye, EyeOff, ChevronUp, ChevronDown, FolderTree, Save } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -31,7 +31,7 @@ export default function CategoriesManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopCategory.list("display_order", 200);
+      const list = await platform.entities.ShopCategory.list("display_order", 200);
       setCategories(list || []);
     } catch {
       setCategories([]);
@@ -60,11 +60,11 @@ export default function CategoriesManager() {
     const now = new Date().toISOString();
     try {
       if (editId) {
-        await base44.entities.ShopCategory.update(editId, { ...form, slug, updated_at: now });
+        await platform.entities.ShopCategory.update(editId, { ...form, slug, updated_at: now });
         toast({ title: "Category updated" });
       } else {
         const maxOrder = categories.reduce((mx, c) => Math.max(mx, c.display_order || 0), 0);
-        await base44.entities.ShopCategory.create({ ...form, slug, display_order: maxOrder + 1, updated_at: now });
+        await platform.entities.ShopCategory.create({ ...form, slug, display_order: maxOrder + 1, updated_at: now });
         toast({ title: "Category created" });
       }
       setShowForm(false);
@@ -77,7 +77,7 @@ export default function CategoriesManager() {
   const handleDelete = async (id) => {
     if (!confirm("Delete this category? Products in this category will remain but won't appear in category filters until reassigned.")) return;
     try {
-      await base44.entities.ShopCategory.delete(id);
+      await platform.entities.ShopCategory.delete(id);
       toast({ title: "Category deleted" });
       load();
     } catch (err) {
@@ -87,7 +87,7 @@ export default function CategoriesManager() {
 
   const toggleActive = async (cat) => {
     try {
-      await base44.entities.ShopCategory.update(cat.id, { is_active: !cat.is_active, updated_at: new Date().toISOString() });
+      await platform.entities.ShopCategory.update(cat.id, { is_active: !cat.is_active, updated_at: new Date().toISOString() });
       load();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -102,8 +102,8 @@ export default function CategoriesManager() {
     const a = sorted[idx], b = sorted[target];
     const now = new Date().toISOString();
     await Promise.all([
-      base44.entities.ShopCategory.update(a.id, { display_order: b.display_order, updated_at: now }),
-      base44.entities.ShopCategory.update(b.id, { display_order: a.display_order, updated_at: now }),
+      platform.entities.ShopCategory.update(a.id, { display_order: b.display_order, updated_at: now }),
+      platform.entities.ShopCategory.update(b.id, { display_order: a.display_order, updated_at: now }),
     ]);
     load();
   };

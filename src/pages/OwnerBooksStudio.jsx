@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { BookPlus, Save, Send, Upload, Loader2 } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -16,7 +16,7 @@ export default function OwnerBooksStudio() {
   const { toast } = useToast();
   const [items,setItems]=useState([]), [selectedId,setSelectedId]=useState(null), [draft,setDraft]=useState(EMPTY), [saving,setSaving]=useState(false), [uploading,setUploading]=useState(false);
   const selected=useMemo(()=>items.find(x=>x.id===selectedId),[items,selectedId]);
-  const load=async()=>setItems(await base44.entities.BookPublication.list("-updated_date",500).catch(()=>[]));
+  const load=async()=>setItems(await platform.entities.BookPublication.list("-updated_date",500).catch(()=>[]));
   useEffect(()=>{ if(role==="owner") load(); },[role]);
   useEffect(()=>{ if(selected) setDraft({...EMPTY,...selected}); },[selected]);
   if(!authResolved||adminProfileLoading) return <AdminLayout title="Books Studio"><div className="flex min-h-[60vh] items-center justify-center"><Loader2 className="h-8 w-8 animate-spin text-yellow-200"/></div></AdminLayout>;
@@ -28,7 +28,7 @@ export default function OwnerBooksStudio() {
     setSaving(true);
     try{
       const payload={...draft,slug:slugify(draft.slug),status,price_amount:Number(draft.price_amount||0),published_at:status==="PUBLISHED"?new Date().toISOString():draft.published_at||null};
-      const row=selectedId?await base44.entities.BookPublication.update(selectedId,payload):await base44.entities.BookPublication.create(payload);
+      const row=selectedId?await platform.entities.BookPublication.update(selectedId,payload):await platform.entities.BookPublication.create(payload);
       await load(); setSelectedId(row?.id||selectedId); setDraft(prev=>({...prev,...payload,...row}));
       toast({title:status==="PUBLISHED"?"Book published":"Draft saved",description:status==="PUBLISHED"?`/books/${payload.slug}`:"Saved safely"});
     }catch(error){toast({title:"Save failed",description:error?.message,variant:"destructive"});}finally{setSaving(false);}
@@ -38,7 +38,7 @@ export default function OwnerBooksStudio() {
     const file=event.target.files?.[0]; if(!file)return;
     if(file.type!=="application/pdf"){toast({title:"PDF file മാത്രം തിരഞ്ഞെടുക്കുക",variant:"destructive"});return;}
     setUploading(true);
-    try{const result=await base44.integrations.Core.UploadFile({file});change("pdf_path",result.file_url);toast({title:"PDF uploaded securely"});}
+    try{const result=await platform.integrations.Core.UploadFile({file});change("pdf_path",result.file_url);toast({title:"PDF uploaded securely"});}
     catch(error){toast({title:"Upload failed",description:error?.message,variant:"destructive"});}finally{setUploading(false);event.target.value="";}
   }
 

@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { ChevronLeft, Heart, BookOpen, Star, Clock, Calculator } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
@@ -34,10 +34,10 @@ export default function HolyOneDetailPage() {
   // Save navigation state before navigating to detail
   useEffect(() => {
     const tab = searchParams.get('tab');
-    const listKey = tab === 'b' || nameId?.startsWith('PDF-') 
-      ? 'magical-holy-names-section-b' 
+    const listKey = tab === 'b' || nameId?.startsWith('PDF-')
+      ? 'magical-holy-names-section-b'
       : 'magical-holy-names-section-a';
-    
+
     const currentState = getPageState(listKey, {});
     pushNavState('holy-names', {
       listKey,
@@ -62,10 +62,10 @@ export default function HolyOneDetailPage() {
     setLoading(true);
     try {
       const tab = searchParams.get('tab');
-      
+
       if (tab === 'b' || nameId.startsWith('PDF-')) {
         // Section B: PDF Holy Names
-        const result = await base44.entities.HolyOnePDFName.filter({ pdf_name_id: nameId });
+        const result = await platform.entities.HolyOnePDFName.filter({ pdf_name_id: nameId });
         if (result && result.length > 0) {
           setName(result[0]);
           setSource("B");
@@ -75,7 +75,7 @@ export default function HolyOneDetailPage() {
         }
       } else {
         // Section A: Original Holy Names
-        const result = await base44.entities.HolyOneName.filter({ name_id: nameId });
+        const result = await platform.entities.HolyOneName.filter({ name_id: nameId });
         if (result && result.length > 0) {
           setName(result[0]);
           setSource("A");
@@ -95,9 +95,9 @@ export default function HolyOneDetailPage() {
     if (!name) return;
     try {
       if (source === "A") {
-        await base44.entities.HolyOneName.update(name.id, { is_favorite: !name.is_favorite });
+        await platform.entities.HolyOneName.update(name.id, { is_favorite: !name.is_favorite });
       } else {
-        await base44.entities.HolyOnePDFName.update(name.id, { is_favorite: !name.is_favorite });
+        await platform.entities.HolyOnePDFName.update(name.id, { is_favorite: !name.is_favorite });
       }
       loadName();
       toast({ title: name.is_favorite ? "Removed from favorites" : "Added to favorites" });
@@ -189,7 +189,7 @@ export default function HolyOneDetailPage() {
   return (
     <PageLayout>
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-        
+
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
@@ -207,7 +207,7 @@ export default function HolyOneDetailPage() {
 
         {/* Source Badge */}
         <div className="flex justify-center mb-4">
-          <Badge style={{ 
+          <Badge style={{
             background: source === "A" ? "rgba(34,197,94,0.15)" : "rgba(59,130,246,0.15)",
             borderColor: source === "A" ? "rgba(34,197,94,0.40)" : "rgba(59,130,246,0.40)",
             color: source === "A" ? "#4ade80" : "#60a5fa",
@@ -361,7 +361,7 @@ export default function HolyOneDetailPage() {
 
         {/* Content Sections */}
         <div className="space-y-4">
-          
+
           {/* Meaning */}
           {name.meaning_malayalam ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>

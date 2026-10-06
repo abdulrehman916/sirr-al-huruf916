@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Shield, Clock } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.35)",
@@ -21,7 +21,7 @@ export default function SecurityAuditTab() {
   const loadLogs = async () => {
     setLoading(true);
     try {
-      const allLogs = await base44.entities.AuditLog.list("-timestamp", 100);
+      const allLogs = await platform.entities.AuditLog.list("-timestamp", 100);
       setLogs(allLogs);
     } catch (e) {
       console.error("Failed to load audit logs:", e);

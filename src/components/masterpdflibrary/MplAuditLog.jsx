@@ -5,7 +5,7 @@
  */
 import { useState, useEffect } from "react";
 import { Loader2, ScrollText, Filter } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)" };
 
@@ -21,7 +21,7 @@ export default function MplAuditLog() {
       setLoading(true);
       try {
         const filter = action ? { action } : {};
-        setRows(await base44.entities.SirrAuditLog.filter(filter, "-timestamp", 100));
+        setRows(await platform.entities.SirrAuditLog.filter(filter, "-timestamp", 100));
       } catch { /* ignore */ } finally { setLoading(false); }
     })();
   }, [action]);

@@ -1,0 +1,9 @@
+{
+  "source_commit": "99c504225ecf5d524ae4632785b9ac3c2e4095b2",
+  "text_cases": 162,
+  "hour_cases": 168,
+  "excluded_metadata": [
+    "timestamp"
+  ],
+  "sha256": "df2f9c8d043db9bc55706f1053695b7cb1e185cfe3b01559f3499424003aba0c"
+}

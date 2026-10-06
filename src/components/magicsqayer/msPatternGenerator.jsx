@@ -3,7 +3,6 @@
 //  Book formula: tier value → subtract suffix → extract letters via Abjad
 // ═══════════════════════════════════════════════════════════════
 
-import { ARABIC_ABJAD, HEBREW_GEMATRIA } from './msEngine';
 import { buildAngelName, buildJinnName, buildHebrewAngelName, buildHebrewJinnName } from './msHarakat';
 
 // Book suffix values
@@ -75,12 +74,12 @@ function extractLettersFromValue(value, isHebrew = false) {
  * 3. For Angel modes: add suffix letters (إيل for Arabic, אל for Hebrew) AFTER extraction
  * 4. For Jinn modes: no suffix letters added
  * 5. Apply tashkeel ONLY (never change letters)
- * 
+ *
  * CRITICAL: BAST-2 CONSONANT ORDER IS IMMUTABLE
  * - Extracted consonants are concatenated in EXACT extraction order
  * - NO reversal, NO reordering, NO letter insertion, NO letter removal
  * - Example: 337 = 300 + 30 + 7 = ش + ل + ز = شلز (NOT زلش)
- * 
+ *
  * CRITICAL: The input value is already the result of Ulvi adjustment.
  * Example: 18 → 18 + 360 - 41 = 337 (adjustment happens BEFORE this function is called)
  * This function receives 337 and extracts: 337 = 300 + 30 + 7 = ش ل ز
@@ -90,31 +89,31 @@ export function generateNameForHierarchyValue(value, suffixType = 'ar-angel') {
   if (!suffix) {
     return { success: false, error: 'Invalid suffix type' };
   }
-  
+
   const isAngel = suffixType.includes('angel');
   const isHebrew = suffixType.includes('heb');
   const isArabic = !isHebrew;
-  
+
   // BAST-2 RULE: value is already adjusted, extract directly
   // DO NOT subtract suffix again - it was already applied during Ulvi adjustment
   const extractionValue = value;
-  
+
   // POSITIONAL DIGIT-CYCLE EXTRACTION: Read right-to-left, cycling Unit → Tens → Hundreds → Thousand Marker
   const consonants = extractLettersFromValue(extractionValue, isHebrew);
-  
+
   if (consonants.length === 0) {
     return { success: false, error: 'Could not extract letters' };
   }
-  
+
   // FINAL NAME: mirror order (reverse of breakdown)
   const rawConsonantSequence = consonants.join('');
   const reversedConsonants = [...consonants].reverse();
-  
+
   // Apply harakat/suffix — four systems fully separate
   const fullName = isHebrew
     ? (isAngel ? buildHebrewAngelName(reversedConsonants) : buildHebrewJinnName(reversedConsonants))
     : (isAngel ? buildAngelName(reversedConsonants)       : buildJinnName(reversedConsonants));
-  
+
   return {
     success: true,
     value,

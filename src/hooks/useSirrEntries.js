@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 /**
  * Read-only hook for Sirr manuscript entries (cards/knowledge) of ONE book.
@@ -16,7 +16,7 @@ export function useSirrEntries(bookId) {
     let alive = true;
     if (!bookId) { setEntries([]); setLoading(false); return; }
     setLoading(true);
-    base44.entities.SirrManuscriptEntry.filter({ sirr_book_id: bookId }, "entry_order", 200)
+    platform.entities.SirrManuscriptEntry.filter({ sirr_book_id: bookId }, "entry_order", 200)
       .then((rows) => { if (alive) setEntries(rows || []); })
       .catch((e) => { if (alive) setError(e); })
       .finally(() => { if (alive) setLoading(false); });

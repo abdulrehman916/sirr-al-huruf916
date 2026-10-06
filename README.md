@@ -9,8 +9,8 @@ Sirr al-Huruf is an independent React/Vite website hosted on Vercel and backed b
 
 - Runtime authentication and application data use Supabase.
 - The project does not include the Base44 SDK or call Base44 as its application backend.
-- `src/api/base44Client.js` keeps a temporary compatibility facade for older page modules; its implementation is backed by Supabase. Do not add Base44 service credentials or restore Base44 runtime calls.
-- The `base44/` directory and legacy-ID fields are retained as import/reference data while migrated records and customer access are verified. They are not a live backend dependency.
+- `src/api/platformClient.js` provides the Supabase implementation used by every page. Do not add external app credentials or restore external runtime calls.
+- The previous backend scaffold has been removed. Historical identifier fields remain in imported records to preserve relationships; they do not make network connections. Original books and scans are stored privately, with short-lived access controlled by Storage policies.
 
 
 ## Requirements
@@ -48,6 +48,9 @@ npm run dev
 
 ```bash
 npm run verify:calculations
+npm run verify:records
+npm run verify:private-references
+npm run verify:independence
 npm run build
 npm run lint
 npm run typecheck
@@ -71,3 +74,7 @@ The live deployment and a successful build do not prove capacity for one million
 
 The Supabase migration ledger and the checked-in SQL files currently contain historical mismatches. Do not rerun old migrations blindly. Compare the live schema and migration history, restore/record the original applied SQL where available, and apply only forward, idempotent migrations after review.
 
+
+## Outstanding feature work
+
+See `docs/INDEPENDENCE_AUDIT.md` and `docs/backend-feature-audit.json`. Migration and a passing production build do not certify all features: the source calls 76 server function names without an implemented independent application endpoint. Existing JavaScript type errors and incomplete chapter translations also remain. Do not describe these features as ready or the content as complete.

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Loader2, ShieldCheck, X } from "lucide-react";
 import { persistSet, persistRemove } from "@/lib/devModePersistence";
 
@@ -29,7 +29,7 @@ export default function GoogleSignInPrompt({ onSkip }) {
     // persistSet: localStorage (production) or localStorage+cookie (dev preview).
     try { persistSet("sirr_admin_session", "true"); } catch { /* ignore */ }
     try {
-      await base44.auth.loginWithProvider("google", window.location.pathname || "/");
+      await platform.auth.loginWithProvider("google", window.location.pathname || "/");
     } catch {
       setLoading(false);
       try { persistRemove("sirr_admin_session"); } catch { /* ignore */ }

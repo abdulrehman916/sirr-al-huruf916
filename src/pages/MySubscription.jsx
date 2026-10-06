@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CreditCard, Clock, CheckCircle, Lock, Star, Crown, Zap, RefreshCw, X, History, TrendingUp } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { CreditCard, Clock, CheckCircle, Lock, Star, Crown, Zap, RefreshCw, X } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { useToast } from "@/components/ui/use-toast";
@@ -141,7 +141,7 @@ export default function MySubscription() {
   const load = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("getUserSubscriptions", {});
+      const res = await platform.functions.invoke("getUserSubscriptions", {});
       setData(res.data || { subscriptions: [], all_subscriptions: [], permissions: [], plans: [] });
     } catch (e) {
       toast({ title: "Error", description: e.message, variant: "destructive" });

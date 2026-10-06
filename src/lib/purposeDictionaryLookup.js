@@ -13,7 +13,7 @@
 // influence any Mizan other than injecting a purpose key into the
 // existing 7th-Mizan selections. See purposeDictionaryIsolationLaw.js.
 // ═══════════════════════════════════════════════════════════════
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import "@/lib/purposeDictionaryIsolationLaw";
 
 // In-memory lookup cache with Promise sharing — guarantees exactly ONE
@@ -30,7 +30,7 @@ export function lookupPurposeIntent(customPurpose, selectedAction) {
   if (lookupCache.has(cacheKey)) {
     return lookupCache.get(cacheKey);
   }
-  const promise = base44.functions.invoke("autoLearnPurpose", {
+  const promise = platform.functions.invoke("autoLearnPurpose", {
     customPurpose,
     selectedAction,
   })
@@ -58,7 +58,7 @@ export function clearLookupCache(customPurpose, selectedAction) {
 // Confirm a user-selected candidate meaning. Saves to PurposeDictionary
 // and returns the confirmed result in the same shape as lookupPurposeIntent.
 export function confirmPurposeMeaning({ mainPurpose, english_meaning, malayalam_meaning, normalized_purpose_key, synonyms, ai_confidence }) {
-  return base44.functions.invoke("confirmPurposeMeaning", {
+  return platform.functions.invoke("confirmPurposeMeaning", {
     mainPurpose,
     english_meaning,
     malayalam_meaning,

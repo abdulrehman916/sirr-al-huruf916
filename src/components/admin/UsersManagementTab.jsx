@@ -2,10 +2,9 @@ import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  Users, Search, Mail, Phone, Clock, Crown, Ban,
-  AlertTriangle, X, Archive, RotateCcw, MessageSquare, UserMinus
+  Users, Search, Mail, Phone, Clock, Crown, Ban, X, Archive, RotateCcw, MessageSquare, UserMinus
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import WhatsAppMessenger from "./WhatsAppMessenger";
 
@@ -51,8 +50,8 @@ function StatusModal({ user, profile, action, onClose, onDone }) {
   const handle = async () => {
     setProcessing(true);
     try {
-      const me = await base44.auth.me();
-      const existing = await base44.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
+      const me = await platform.auth.me();
+      const existing = await platform.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
 
       const now = new Date().toISOString();
       const cleanFields = { removed_at: null, removed_by: null, remove_reason: null, blocked_at: null, blocked_by: null, block_reason: null, archived_at: null, archived_by: null, archive_reason: null };
@@ -68,7 +67,7 @@ function StatusModal({ user, profile, action, onClose, onDone }) {
       // Enforce a block at the authenticated account level as well as the
       // dashboard display record. The server rejects changes to owner accounts.
       if (["block", "archive", "unblock", "unarchive", "restore"].includes(action)) {
-        const { supabase } = await import("@/api/base44Client");
+        const { supabase } = await import("@/api/platformClient");
         const { error } = await supabase.rpc("set_customer_status", {
           p_user_id: user.id,
           p_status: ["block", "archive"].includes(action) ? "disabled" : "active",
@@ -76,9 +75,9 @@ function StatusModal({ user, profile, action, onClose, onDone }) {
         if (error) throw error;
       }
       if (existing.length > 0) {
-        await base44.entities.UserAccessProfile.update(existing[0].id, update);
+        await platform.entities.UserAccessProfile.update(existing[0].id, update);
       } else {
-        await base44.entities.UserAccessProfile.create({
+        await platform.entities.UserAccessProfile.create({
           user_id: user.id, email: user.email, full_name: user.full_name || "",
           ...update,
         });

@@ -4,8 +4,8 @@
  * Owner-only (page-gated). Reads MasterPdfBook.
  */
 import { useState, useEffect } from "react";
-import { Loader2, BookOpen, ChevronDown, ChevronRight, AlertTriangle, CheckCircle2, Clock, History, ShieldCheck } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Loader2, BookOpen, ChevronDown, ChevronRight, CheckCircle2, Clock, History } from "lucide-react";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
 
@@ -84,7 +84,7 @@ export default function MplLibrary() {
 
   useEffect(() => {
     (async () => {
-      try { setBooks(await base44.entities.MasterPdfBook.list("-upload_date", 100)); }
+      try { setBooks(await platform.entities.MasterPdfBook.list("-upload_date", 100)); }
       catch { /* ignore */ } finally { setLoading(false); }
     })();
   }, []);

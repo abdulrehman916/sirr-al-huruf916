@@ -3,7 +3,7 @@
 //  Uses 200+ authentic morphological templates
 // ═══════════════════════════════════════════════════════════════
 
-import { generateNameFromPattern, getNameForHierarchyValue } from './msPatternGenerator';
+import { generateNameFromPattern } from './msPatternGenerator';
 import { validateName } from './msNameValidator';
 
 // Vowel marks
@@ -23,10 +23,10 @@ export function addTashkeelToPatternName(bareName, suffixType) {
 
   const isAngel = suffixType === 'angel' || suffixType === 'ar-angel' || suffixType === 'heb-angel';
   const isJinn = suffixType === 'jinn' || suffixType === 'ar-jinn' || suffixType === 'heb-jinn';
-  
+
   // Validate the bare name
   const validation = validateName(bareName, isAngel);
-  
+
   if (!validation.passed) {
     return {
       name: bareName,
@@ -36,7 +36,7 @@ export function addTashkeelToPatternName(bareName, suffixType) {
       failureReason: validation.failureReason
     };
   }
-  
+
   // Name is already valid from pattern generation
   return {
     name: bareName,
@@ -52,12 +52,12 @@ export function addTashkeelToPatternName(bareName, suffixType) {
  * Generate name using pattern-based approach
  */
 export function generatePatternBasedName(value, suffixType = 'ar-angel') {
-  const category = suffixType.includes('angel') ? 'angel' : 
+  const category = suffixType.includes('angel') ? 'angel' :
                    suffixType.includes('jinn') ? 'jinn' : 'general';
-  
+
   // Generate using pattern system
   const result = generateNameFromPattern(value, category);
-  
+
   if (!result || !result.success) {
     return {
       success: false,
@@ -66,10 +66,10 @@ export function generatePatternBasedName(value, suffixType = 'ar-angel') {
       suffixType
     };
   }
-  
+
   // Apply tashkeel
   const tashkeelResult = addTashkeelToPatternName(result.generatedName, suffixType);
-  
+
   return {
     success: true,
     value,
@@ -91,19 +91,19 @@ export function generatePatternBasedName(value, suffixType = 'ar-angel') {
  */
 export function generateHierarchyNames(hierarchyData, suffixType = 'ar-angel') {
   if (!hierarchyData) return null;
-  
+
   const names = {};
   const failed = {};
-  
+
   // Generate for each hierarchy level
   const levels = ['usurper', 'guide', 'mystery', 'adjuster', 'leader', 'regulator', 'genGov', 'highOver'];
-  
+
   levels.forEach(level => {
     const value = hierarchyData[level];
     if (!value) return;
-    
+
     const result = generatePatternBasedName(value, suffixType);
-    
+
     if (result.success && result.passed) {
       names[level] = {
         value,
@@ -115,7 +115,7 @@ export function generateHierarchyNames(hierarchyData, suffixType = 'ar-angel') {
       failed[level] = result;
     }
   });
-  
+
   return {
     names,
     failed,
@@ -131,13 +131,13 @@ export function generateHierarchyNames(hierarchyData, suffixType = 'ar-angel') {
  */
 export function getPatternDisplayInfo(pattern) {
   if (!pattern) return null;
-  
+
   const categoryLabels = {
     angel: { ar: 'ملائكي', en: 'Angelic' },
     jinn: { ar: 'جني', en: 'Jinn' },
     general: { ar: 'عام', en: 'General' }
   };
-  
+
   const difficultyLabels = {
     1: { ar: 'بسيط', en: 'Simple' },
     2: { ar: 'متوسط', en: 'Moderate' },
@@ -145,7 +145,7 @@ export function getPatternDisplayInfo(pattern) {
     4: { ar: 'معقد جداً', en: 'Very Complex' },
     5: { ar: 'نادر', en: 'Rare' }
   };
-  
+
   return {
     id: pattern.id,
     template: pattern.template,
@@ -162,10 +162,10 @@ export function getPatternDisplayInfo(pattern) {
  */
 export function validateHierarchyNames(names) {
   if (!names) return { valid: false, count: 0 };
-  
+
   const validNames = Object.entries(names).filter(([_, data]) => data.passed);
   const invalidNames = Object.entries(names).filter(([_, data]) => !data.passed);
-  
+
   return {
     valid: validNames.length === Object.keys(names).length,
     count: validNames.length,

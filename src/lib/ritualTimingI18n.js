@@ -17,11 +17,12 @@ export const RITUAL_LANGS = [
 
 const STORAGE_KEY = "ritualTimingLang";
 
+/** @returns {[string, import('react').Dispatch<import('react').SetStateAction<string>>]} */
 export function useRitualLang() {
   const [lang, setLang] = useState(() => {
     try {
       const saved = sessionStorage.getItem(STORAGE_KEY);
-      return "en";
+      return saved === "ml" ? "ml" : "en";
     } catch {
       return "en";
     }
@@ -151,7 +152,7 @@ export const STR = {
   advisorIntro: { en: "This advisor compares your current Mizan selections against all imported manuscript rules. For each field where an improvement is possible, the recommended value and the manuscript reason are shown below. Go back to the Mizan selections above and adjust manually — the engine never changes Mizan for you.", ml: "ഈ ഉപദേഷ്ടാവ് നിങ്ങളുടെ നിലവിലെ മിസാൻ തിരഞ്ഞെടുപ്പുകളെ ഇറക്കുമതി ചെയ്ത എല്ലാ ഗ്രന്ഥ നിയമങ്ങളുമായി താരതമ്യം ചെയ്യുന്നു. മെച്ചപ്പെടുത്താൻ കഴിയുന്ന ഓരോ മണ്ഡലത്തിലും, ശുപാർശ ചെയ്യുന്ന മൂല്യവും ഗ്രന്ഥ കാരണവും താഴെ കാണിക്കുന്നു. മുകളിലുള്ള മിസാൻ തിരഞ്ഞെടുപ്പുകളിലേക്ക് മടങ്ങി സ്വയം ക്രമീകരിക്കുക — യന്ത്രം മിസാന് മാറ്റങ്ങളൊന്നും വരുത്തുന്നില്ല." },
   optimalBanner: { en: "Your current Mizan configuration is already optimal.", ml: "നിങ്ങളുടെ നിലവിലെ മിസാൻ ക്രമീകരണം ഏറ്റവും ഉത്തമമാണ്." },
   optimalSub: { en: "No changes are recommended — proceed with the full decision report below.", ml: "മാറ്റങ്ങളൊന്നും ആവശ്യമില്ല — താഴെയുള്ള പൂർണ്ണ തീരുമാന റിപ്പോർട്ടിലൂടെ മുന്നോട്ടുപോകുക." },
-  langLabel: { en: "Malayalam", ml: "Malayalam" },
+  langLabel: { en: "Malayalam", ml: "English" },
   langWord: { en: "Language", ml: "Language" },
   footerNote: { en: "This analysis is read-only and does not modify any Mizan calculation. All recommendations are derived from existing manuscript rules and live astronomical data.", ml: "ഈ വിശകലനം റീഡ്-ഒൺലി ആണ്; മിസാൻ കണക്കുകളൊന്നും മാറ്റുന്നില്ല. എല്ലാ ശുപാർശകളും നിലവിലുള്ള ഗ്രന്ഥ നിയമങ്ങളിൽ നിന്നും തത്സമയ ജ്യോതിശാസ്ത്ര വിവരങ്ങളിൽ നിന്നും ഉരുത്തിരിച്ചതാണ്." },
   // ── RitualTimingAnalysis UI labels ──

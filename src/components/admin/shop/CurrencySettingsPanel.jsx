@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { DollarSign, Save, TrendingUp } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { COUNTRY_PROFILES } from "@/lib/countryProfiles";
 
@@ -34,10 +34,10 @@ export default function CurrencySettingsPanel() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopSettings.list();
+      const list = await platform.entities.ShopSettings.list();
       let s = list?.[0];
       if (!s) {
-        s = await base44.entities.ShopSettings.create({ settings_id: "SHOP-SETTINGS-MAIN", shipping_config: {}, currency_config: {}, marketplace_config: {}, auto_detect_country: true, deep_links_enabled: true, default_marketplace: "Amazon" });
+        s = await platform.entities.ShopSettings.create({ settings_id: "SHOP-SETTINGS-MAIN", shipping_config: {}, currency_config: {}, marketplace_config: {}, auto_detect_country: true, deep_links_enabled: true, default_marketplace: "Amazon" });
       }
       setSettings(s);
     } catch { /* ignore */ }
@@ -49,7 +49,7 @@ export default function CurrencySettingsPanel() {
   const handleSave = async () => {
     setSaving(true);
     try {
-      await base44.entities.ShopSettings.update(settings.id, { currency_config: settings.currency_config || {}, updated_at: new Date().toISOString() });
+      await platform.entities.ShopSettings.update(settings.id, { currency_config: settings.currency_config || {}, updated_at: new Date().toISOString() });
       toast({ title: "Currency settings saved" });
     } catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
     finally { setSaving(false); }

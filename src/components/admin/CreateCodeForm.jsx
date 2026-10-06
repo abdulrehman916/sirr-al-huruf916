@@ -4,8 +4,8 @@
  * Includes customer contact fields (email, phone, whatsapp).
  */
 import { useState, useMemo, useEffect } from "react";
-import { KeyRound, X, CheckCircle, Check } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { KeyRound, X, CheckCircle } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { getContentPages } from "@/lib/pageRegistry";
 import CreateCodePageItem from "./CreateCodePageItem";
@@ -46,7 +46,7 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
     let cancelled = false;
     async function loadManagedPages() {
       try {
-        const rows = await base44.entities.ManagedPage.filter({ status: "PUBLISHED" }, "-updated_date", 500);
+        const rows = await platform.entities.ManagedPage.filter({ status: "PUBLISHED" }, "-updated_date", 500);
         if (cancelled) return;
         setManagedPages((Array.isArray(rows) ? rows : []).map(page => ({
           path: `/content/${page.slug}`,
@@ -124,14 +124,14 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
   const confirmCreate = async () => {
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const normalizedCode = codeStr.trim().toUpperCase();
 
       // ── P1.1: Prevent duplicate Reading Access Codes ──
       // Every code must be globally unique. Check before saving so existing
       // codes are preserved and no two codes can ever share the same string.
       try {
-        const existing = await base44.entities.AccessCode.filter({ code: normalizedCode }, null, 1);
+        const existing = await platform.entities.AccessCode.filter({ code: normalizedCode }, null, 1);
         if (existing && existing.length > 0) {
           toast({ title: "Duplicate code", description: `A code "${normalizedCode}" already exists. Use a different code string.`, variant: "destructive" });
           setSaving(false);
@@ -176,12 +176,12 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
         audit_log: [{ action: "CREATED", timestamp: new Date().toISOString(), admin_id: me.id, details: `Code created for ${customerName.trim()}` }],
         notes: notes.trim() || undefined,
       };
-      const res = await base44.functions.invoke("createAccessCode", { code_data: codeData });
+      const res = await platform.functions.invoke("createAccessCode", { code_data: codeData });
       if (!res.data?.success) throw new Error(res.data?.message || "Create failed");
 
       // ── P4.9: Centralized audit log for code creation ──
       try {
-        await base44.entities.AuditLog.create({
+        await platform.entities.AuditLog.create({
           log_id: 'AUDIT-' + (crypto.randomUUID ? crypto.randomUUID().toUpperCase() : Date.now().toString()),
           action_type: 'ACCESS_CODE_CREATED',
           performed_by: me.id,

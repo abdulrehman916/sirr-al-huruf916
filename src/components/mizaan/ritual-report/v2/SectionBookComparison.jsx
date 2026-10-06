@@ -1,5 +1,5 @@
 import { BookOpen, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
-import { G, T, translatePlanet, translateDay, MIZAN_DAY_NAMES, DAY_KEY_BY_INDEX, saatDisplayNum } from "../shared";
+import { G, T } from "../shared";
 import { computeCompat, compatColor } from "./compatibility";
 
 function cleanReason(text) {

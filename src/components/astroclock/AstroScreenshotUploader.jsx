@@ -18,7 +18,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useRef } from "react";
 import { Upload, Loader2, AlertCircle, Image as ImageIcon, FileText, Layers, Play, Plus, Route } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { renderPdfPages } from "@/lib/astroPdfRenderer";
 import AstroBatchThumbnailGrid from "./AstroBatchThumbnailGrid";
@@ -235,7 +235,7 @@ export default function AstroScreenshotUploader() {
         const fileObj = await applyRotation(rawFile, page.rotation, uploadName);
 
         // Step 1: Upload page image to Base44 storage
-        const uploadRes = await base44.integrations.Core.UploadFile({ file: fileObj });
+        const uploadRes = await platform.integrations.Core.UploadFile({ file: fileObj });
         const fileUrl = uploadRes.data?.file_url || uploadRes.file_url;
         if (!fileUrl) {
           errors++;
@@ -245,7 +245,7 @@ export default function AstroScreenshotUploader() {
 
         // Step 2: Send through the Astro Clock ACK pipeline (AstroClockKnowledge)
         setPages(prev => prev.map((p, idx) => idx === i ? { ...p, status: 'analyzing' } : p));
-        const response = await base44.functions.invoke('analyzeScreenshotAndMergeAstro', {
+        const response = await platform.functions.invoke('analyzeScreenshotAndMergeAstro', {
           file_url: fileUrl,
           source_label: page.source_name,
         });
@@ -330,7 +330,7 @@ export default function AstroScreenshotUploader() {
 
         const uploadName = `${page.file_name}-p${page.page_number}.png`;
         const fileObj = await applyRotation(rawFile, page.rotation, uploadName);
-        const uploadRes = await base44.integrations.Core.UploadFile({ file: fileObj });
+        const uploadRes = await platform.integrations.Core.UploadFile({ file: fileObj });
         const fileUrl = uploadRes.data?.file_url || uploadRes.file_url;
 
         if (!fileUrl) {
@@ -363,7 +363,7 @@ export default function AstroScreenshotUploader() {
       let documentId = null;
 
       while (resumeFrom < validPages.length) {
-        const response = await base44.functions.invoke('documentContextIngest', {
+        const response = await platform.functions.invoke('documentContextIngest', {
           pages: validPages,
           source_label: sourceLabel || 'Document Upload',
           document_id: documentId,
@@ -433,7 +433,7 @@ export default function AstroScreenshotUploader() {
 
         const uploadName = `${page.file_name}-p${page.page_number}.png`;
         const fileObj = await applyRotation(rawFile, page.rotation, uploadName);
-        const uploadRes = await base44.integrations.Core.UploadFile({ file: fileObj });
+        const uploadRes = await platform.integrations.Core.UploadFile({ file: fileObj });
         const fileUrl = uploadRes.data?.file_url || uploadRes.file_url;
 
         if (!fileUrl) {
@@ -465,7 +465,7 @@ export default function AstroScreenshotUploader() {
       let documentId = null;
 
       while (resumeFrom < validPages.length) {
-        const response = await base44.functions.invoke('smartTopicRoute', {
+        const response = await platform.functions.invoke('smartTopicRoute', {
           pages: validPages,
           source_label: sourceLabel || 'Smart Topic Router',
           document_id: documentId,

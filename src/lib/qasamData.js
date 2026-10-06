@@ -3,7 +3,7 @@
  *
  * Source: كتاب الشروط والأقسام (uploaded PDF, pages 9–50)
  * Indexed into ManuscriptLibrary as: sirr_al_huruf_pdf_pages_9_50
- * PDF URL: https://media.base44.com/files/public/69f3dea51ce92ee2fde20be6/7237cb58d____________-9-50.pdf
+ * PDF URL: storage://private-documents/imported-reference/442134ecdbed7c4d0feb790ac389a9f4b21deefef0e45c8c7cacfb81256c96ef.pdf
  * Ingestion date: 2026-07-04
  *
  * Every Arabic word, harakat, holy name, and rule in this file comes
@@ -26,7 +26,7 @@
 // ── Source record ID in ManuscriptLibrary ──
 export const PDF_SOURCE_ID = '6a4876275f91c72e355cdff8';
 export const PDF_SOURCE_LABEL = 'كتاب الشروط والأقسام — صفحات 27–31';
-export const PDF_URL = 'https://media.base44.com/files/public/69f3dea51ce92ee2fde20be6/7237cb58d____________-9-50.pdf';
+export const PDF_URL = 'storage://private-documents/imported-reference/442134ecdbed7c4d0feb790ac389a9f4b21deefef0e45c8c7cacfb81256c96ef.pdf';
 
 // ═══════════════════════════════════════════════════════════════
 //  VERIFICATION LOG — 2026-07-04

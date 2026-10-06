@@ -4,7 +4,7 @@ import { ShieldCheck, Loader2 } from "lucide-react";
 import AuthLayout from "@/components/AuthLayout";
 import { Button } from "@/components/ui/button";
 import GoogleIcon from "@/components/GoogleIcon";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { persistRemove, persistSet } from "@/lib/devModePersistence";
 
 export default function OwnerLogin() {
@@ -19,7 +19,7 @@ export default function OwnerLogin() {
     setLoading(true);
     try {
       persistSet("sirr_admin_session", "true");
-      await base44.auth.loginWithProvider("google", returnTo);
+      await platform.auth.loginWithProvider("google", returnTo);
     } catch (err) {
       persistRemove("sirr_admin_session");
       setError(err?.message || "Google login failed.");

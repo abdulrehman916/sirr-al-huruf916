@@ -29,7 +29,7 @@ export default function useIsMobile() {
     }
     listeners.add(setIsMobile);
     return () => listeners.delete(setIsMobile);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return isMobile;
 }

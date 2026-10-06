@@ -1,10 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
-import { Lock, MessageCircle, KeyRound, Loader2, CheckCircle, AlertCircle, Shield, Construction } from "lucide-react";
+import { platform } from "@/api/platformClient";
+import { Lock, MessageCircle, KeyRound, Loader2, Shield, Construction } from "lucide-react";
 import { getPageConfig, isPublicPage } from "@/lib/pageRegistry";
-import { getCached, setCached, visibilityKey } from "@/lib/permissionCache";
 import { validateAndCleanPermissions } from "@/lib/sessionId";
 import { setAdminFlag } from "@/lib/featurePermission";
 import { useAuth } from "@/lib/AuthContext";
@@ -105,7 +104,7 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
     let pageVisibility = null;
     if (!isAdminRoute) {
       try {
-        const { supabase } = await import("@/api/base44Client");
+        const { supabase } = await import("@/api/platformClient");
         if (!supabase) throw new Error("Access service unavailable");
         const { data, error } = await supabase.rpc("page_visibility", { p_path: routePath });
         if (error) throw error;
@@ -198,7 +197,7 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
     //    code) — otherwise the locked screen is shown (enforce the lock).
     if (hasSubFeatures(routePath)) {
       await preloadPageFeatureConfigs(routePath);
-      const remoteGrant = isAuthenticated && await base44.canAccessLegacyPage(routePath);
+      const remoteGrant = isAuthenticated && await platform.canAccessLegacyPage(routePath);
       if (!dbLocked || remoteGrant) {
         setAccessStatus("granted");
         validateAndCleanPermissions();
@@ -217,7 +216,7 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
     // Linked codes and manual permissions are verified against live backend state.
     // A copied code or stale browser storage cannot restore revoked access.
     try {
-      if (isAuthenticated && await base44.canAccessLegacyPage(routePath)) {
+      if (isAuthenticated && await platform.canAccessLegacyPage(routePath)) {
         setAccessStatus("granted");
         return;
       }
@@ -355,7 +354,7 @@ function PremiumLockedScreen({ pageName, routePath, resource }) {
     try { persistSet("sirr_admin_session", "true"); } catch { /* ignore */ }
     try { sessionStorage.setItem("sirr_locked_signin_redirect", routePath); } catch { /* ignore */ }
     try {
-      await base44.auth.loginWithProvider("google", routePath);
+      await platform.auth.loginWithProvider("google", routePath);
     } catch {
       setGoogleLoading(false);
       try { persistRemove("sirr_admin_session"); } catch { /* ignore */ }

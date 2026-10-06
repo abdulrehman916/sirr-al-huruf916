@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import {
   Eye, MousePointerClick, ShoppingBag, MessageCircle, Mail, Share2,
   Heart, Search, Globe, Smartphone, Tablet, Monitor, BarChart3,
-  Download, FileText, FileSpreadsheet, RefreshCw, Filter, TrendingUp,
+  Download, FileText, FileSpreadsheet, RefreshCw, Filter,
   MapPin, Package,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { exportCsv, exportXlsx, exportPdf } from "@/lib/shopAnalyticsExport";
 import AnalyticsChartPanel, { MarketplaceBreakdownChart } from "./AnalyticsChartPanel";
@@ -199,7 +199,7 @@ export default function MarketplaceAnalyticsDashboard() {
   const loadAnalytics = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("getShopAnalytics", {});
+      const res = await platform.functions.invoke("getShopAnalytics", {});
       if (res.data?.success) {
         setData(res.data.data);
       } else {

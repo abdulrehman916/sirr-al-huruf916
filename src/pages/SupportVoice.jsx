@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Mic, MicOff, StopCircle, Play, ArrowLeft, Send, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Mic, MicOff, StopCircle, ArrowLeft, Send, Loader2 } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -83,14 +83,14 @@ export default function SupportVoice() {
     setUploading(true);
     try {
       const file = new File([audioBlob], `voice-${Date.now()}.webm`, { type: "audio/webm" });
-      const uploadRes = await base44.integrations.Core.UploadFile({ file });
-      const allTickets = await base44.entities.SupportTickets.list('-created_at', 100);
+      const uploadRes = await platform.integrations.Core.UploadFile({ file });
+      const allTickets = await platform.entities.SupportTickets.list('-created_at', 100);
       const maxNum = allTickets.reduce((max, t) => {
         const n = parseInt(t.ticket_id?.split("-")[1] || "0");
         return n > max ? n : max;
       }, 0);
       const ticketId = `SUP-${String(maxNum + 1).padStart(6, "0")}`;
-      await base44.entities.SupportTickets.create({
+      await platform.entities.SupportTickets.create({
         ticket_id: ticketId,
         name,
         mobile: "",

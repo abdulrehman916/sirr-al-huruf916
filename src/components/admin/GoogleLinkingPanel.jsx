@@ -2,11 +2,10 @@ import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Link2, Unlink, RefreshCw, Search, X, Loader2, KeyRound, Mail, Clock,
-  ChevronDown, ChevronUp, AlertCircle, ArrowRightLeft, ToggleRight, ToggleLeft, UserCircle2,
+  ChevronDown, ChevronUp, ArrowRightLeft, ToggleRight, ToggleLeft, UserCircle2,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
-import { useAuth } from "@/lib/AuthContext";
 import { ROLES } from "@/lib/rbac";
 import RenewCodeModal from "./RenewCodeModal";
 import { fmtDate } from "@/lib/codeDuration";
@@ -31,7 +30,7 @@ function LinkModal({ codes, onClose, onLinked }) {
     if (!email.trim()) { toast({ title: "Google email required", variant: "destructive" }); return; }
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("linkAccessCode", { code_id: codeId, google_email: email.trim() });
+      const res = await platform.functions.invoke("linkAccessCode", { code_id: codeId, google_email: email.trim() });
       const data = res.data;
       if (data?.success) { toast({ title: data.message }); onLinked(); onClose(); }
       else toast({ title: "Link failed", description: data?.message, variant: "destructive" });
@@ -84,7 +83,7 @@ function TransferModal({ code, onClose, onDone }) {
     if (!email.trim()) { toast({ title: "New Google email required", variant: "destructive" }); return; }
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("transferAccessCode", { code_id: code.id, google_email: email.trim() });
+      const res = await platform.functions.invoke("transferAccessCode", { code_id: code.id, google_email: email.trim() });
       const data = res.data;
       if (data?.success) { toast({ title: data.message }); onDone(); onClose(); }
       else toast({ title: "Transfer failed", description: data?.message, variant: "destructive" });
@@ -123,7 +122,7 @@ function UnlinkConfirm({ code, onClose, onDone }) {
   const handle = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("unlinkAccessCode", { code_id: code.id });
+      const res = await platform.functions.invoke("unlinkAccessCode", { code_id: code.id });
       const data = res.data;
       if (data?.success) { toast({ title: data.message }); onDone(); onClose(); }
       else toast({ title: "Unlink failed", description: data?.message, variant: "destructive" });
@@ -168,8 +167,8 @@ export default function GoogleLinkingPanel({ role }) {
     setLoading(true);
     try {
       const [allCodes, allProfiles] = await Promise.all([
-        base44.entities.AccessCode.list("-created_date", 500),
-        base44.entities.UserAccessProfile.list(null, 200),
+        platform.entities.AccessCode.list("-created_date", 500),
+        platform.entities.UserAccessProfile.list(null, 200),
       ]);
       setCodes(allCodes);
       setProfiles(allProfiles);
@@ -220,7 +219,7 @@ export default function GoogleLinkingPanel({ role }) {
   const handleToggleDisable = async (code) => {
     setToggling(code.id);
     try {
-      const res = await base44.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
+      const res = await platform.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
       if (!res.data?.success) throw new Error(res.data?.message || "Action failed");
       toast({ title: code.is_disabled ? "✓ Code enabled" : "✓ Code disabled" });
       load();

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calculator, Trash2, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { analyzeText, ELEMENTS } from "../lib/anasirValues";
+import { ELEMENTS } from "../lib/anasirValues";
+import { analyzeElements as analyzeText } from "../lib/anasirEngine";
 import AnasirLetterGrid from "../components/AnasirLetterGrid";
 import AnasirResultsSummary from "../components/AnasirResultsSummary";
 

@@ -1,18 +1,17 @@
 import { useState, useEffect, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import {
-  Users, CreditCard, Globe, Shield, Search, Plus, Trash2, Smartphone,
+  Users, CreditCard, Globe, Shield, Search, Plus, Trash2,
   CheckCircle, X, Clock, Lock, ChevronDown, ChevronUp,
-  Phone, Mail, Calendar, Crown, RefreshCw, Star, Zap,
-  DollarSign, TrendingUp, Edit2, Save, AlertCircle,
-  Ban, CalendarPlus2, MessageSquare, KeyRound, UserCheck, Link2
+  Phone, Mail, Crown, RefreshCw, Star, Zap,
+  DollarSign, TrendingUp, Edit2, Save, AlertCircle, CalendarPlus2, MessageSquare, KeyRound, UserCheck, Link2
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { useToast } from "@/components/ui/use-toast";
-import { getContentPages, getAllRegisteredPages, getAdminVisiblePages as getVisibleContentPages } from "@/lib/pageRegistry";
+import { getContentPages, getAdminVisiblePages as getVisibleContentPages } from "@/lib/pageRegistry";
 import PaymentsTab from "@/components/admin/PaymentsTab";
 import AccessCodesTab from "@/components/admin/AccessCodesTab";
 import ManageSubscriptionModal from "@/components/admin/ManageSubscriptionModal";
@@ -106,7 +105,7 @@ function GrantAccessModal({ user, existingPaths, onClose, onGranted }) {
       const page = getContentPageList().find(p => p.path === path);
       if (!page) continue;
       try {
-        const result = await base44.functions.invoke("grantPagePermission", {
+        const result = await platform.functions.invoke("grantPagePermission", {
           user_id: user.id,
           page_path: page.path,
           page_name: page.name,
@@ -221,10 +220,10 @@ function ExtendAccessModal({ permission, onClose, onExtended }) {
     const dur = DURATION_OPTIONS.find(d => d.value === duration);
     const newExpiry = dur.value === "LIFETIME" ? null : new Date(Date.now() + (dur.duration_ms ?? dur.days * 86400000)).toISOString();
     try {
-      await base44.functions.invoke("extendPermissionExpiry", {
+      await platform.functions.invoke("extendPermissionExpiry", {
         permission_id: permission.permission_id,
         new_expiry_date: newExpiry,
-        extended_by: (await base44.auth.me()).id,
+        extended_by: (await platform.auth.me()).id,
       });
       toast({ title: `✓ Extended "${permission.page_name}" by ${dur.label}` });
       onExtended();
@@ -453,7 +452,7 @@ function PlansTab({ plans, onRefresh }) {
   const saveEdit = async () => {
     setSaving(true);
     try {
-      await base44.entities.SubscriptionPlan.update(editingId, editData);
+      await platform.entities.SubscriptionPlan.update(editingId, editData);
       toast({ title: "✓ Plan updated" });
       setEditingId(null);
       onRefresh();
@@ -473,7 +472,7 @@ function PlansTab({ plans, onRefresh }) {
     setSaving(true);
     try {
       const planId = "PLAN_" + newPlan.plan_name.toUpperCase() + "_" + Date.now();
-      await base44.entities.SubscriptionPlan.create({
+      await platform.entities.SubscriptionPlan.create({
         ...newPlan,
         plan_id: planId,
         page_paths: newPages,
@@ -706,10 +705,10 @@ function AccessRequestsTab({ requests, users, onRefresh }) {
 
   const handleApprove = async (request, duration) => {
     try {
-      await base44.functions.invoke("approveAccessRequest", {
+      await platform.functions.invoke("approveAccessRequest", {
         request_id: request.request_id,
         access_duration: duration,
-        approved_by: (await base44.auth.me()).id,
+        approved_by: (await platform.auth.me()).id,
       });
       toast({ title: "✓ Request approved" });
       onRefresh();
@@ -721,10 +720,10 @@ function AccessRequestsTab({ requests, users, onRefresh }) {
   const handleReject = async (request) => {
     if (!confirm("Reject this access request?")) return;
     try {
-      await base44.functions.invoke("approveAccessRequest", {
+      await platform.functions.invoke("approveAccessRequest", {
         request_id: request.request_id,
         access_duration: null,
-        approved_by: (await base44.auth.me()).id,
+        approved_by: (await platform.auth.me()).id,
         reject: true,
       });
       toast({ title: "✓ Request rejected" });
@@ -853,10 +852,10 @@ function ApproveRequestModal({ request, onClose, onApproved }) {
   const handleApprove = async () => {
     setProcessing(true);
     try {
-      await base44.functions.invoke("approveAccessRequest", {
+      await platform.functions.invoke("approveAccessRequest", {
         request_id: request.request_id,
         access_duration: duration,
-        approved_by: (await base44.auth.me()).id,
+        approved_by: (await platform.auth.me()).id,
       });
       toast({ title: "✓ Request approved" });
       onApproved();
@@ -930,7 +929,7 @@ function VisibilityTab({ pageConfigs, onRefresh }) {
   const handleToggle = async (page) => {
     setToggling(page.path);
     try {
-      await base44.functions.invoke("updatePageVisibility", {
+      await platform.functions.invoke("updatePageVisibility", {
         page_path: page.path,
         page_name: page.name,
         requires_permission: !page.isPrivate,
@@ -1010,8 +1009,8 @@ function UserAccessTab({ users, permissions, onRefresh }) {
   const handleRevoke = async (perm) => {
     if (!confirm(`Revoke access to "${perm.page_name}"?`)) return;
     try {
-      const me = await base44.auth.me();
-      await base44.functions.invoke("revokePagePermission", {
+      const me = await platform.auth.me();
+      await platform.functions.invoke("revokePagePermission", {
         permission_id: perm.permission_id,
         revoked_by: me.id,
         reason: "Revoked by owner",
@@ -1186,7 +1185,7 @@ export default function OwnerAccessDashboard() {
 
   const init = async () => {
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const isOwner = me?.email?.toLowerCase() === ADMIN_CONFIG.OWNER_EMAIL.toLowerCase();
       if (!me || (me.role !== "admin" && !isOwner)) {
         setIsAdmin(false); return;
@@ -1202,13 +1201,13 @@ export default function OwnerAccessDashboard() {
       // Paginated: limit initial loads to prevent OOM with 10K+ users
       const PAGE_LIMIT = 200;
       const [allUsers, allProfiles, perms, subs, configs, allPlans, allRequests] = await Promise.all([
-        base44.entities.User.list(null, PAGE_LIMIT),
-        base44.entities.UserAccessProfile.list(null, PAGE_LIMIT),
-        base44.entities.PagePermission.list("-granted_at", PAGE_LIMIT),
-        base44.entities.Subscription.list("-start_date", PAGE_LIMIT),
-        base44.entities.PageVisibilityConfig.list(null, PAGE_LIMIT),
-        base44.entities.SubscriptionPlan.list(null, 100),
-        base44.entities.AccessRequest.list("-requested_at", PAGE_LIMIT),
+        platform.entities.User.list(null, PAGE_LIMIT),
+        platform.entities.UserAccessProfile.list(null, PAGE_LIMIT),
+        platform.entities.PagePermission.list("-granted_at", PAGE_LIMIT),
+        platform.entities.Subscription.list("-start_date", PAGE_LIMIT),
+        platform.entities.PageVisibilityConfig.list(null, PAGE_LIMIT),
+        platform.entities.SubscriptionPlan.list(null, 100),
+        platform.entities.AccessRequest.list("-requested_at", PAGE_LIMIT),
       ]);
       setUsers(allUsers);
       setProfiles(allProfiles);

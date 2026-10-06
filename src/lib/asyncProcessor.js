@@ -1,6 +1,6 @@
 // asyncProcessor.js — Abjad async processor only.
 // Anasir analysis lives entirely in lib/anasirEngine.js
-import { ABJAD_MAP } from "./abjadValues";
+import { ABJAD_VALUES as ABJAD_MAP } from "./abjadValues";
 
 const CHUNK_SIZE = 500;
 

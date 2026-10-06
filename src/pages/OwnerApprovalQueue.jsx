@@ -17,10 +17,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { isAdminRole } from "@/lib/rbac";
-import { ShieldAlert, FileWarning, Calculator, BookOpen } from "lucide-react";
+import { FileWarning, Calculator, BookOpen } from "lucide-react";
 
 const FLAGGED_BOOKS = [
   "1 - How to Summon and Command ... by de Lafayette (2010).pdf",
@@ -115,7 +115,7 @@ export default function OwnerApprovalQueue() {
         for (const title of FLAGGED_BOOKS) {
           let skip = 0;
           // fetch up to 200 per book (flagged counts max 58)
-          let batch = await base44.entities.AstroClockKnowledge.filter(
+          let batch = await platform.entities.AstroClockKnowledge.filter(
             { source_book_title: title },
             "-created_date",
             200,
@@ -124,7 +124,7 @@ export default function OwnerApprovalQueue() {
           all.push(...batch);
           while (batch.length === 200) {
             skip += 200;
-            batch = await base44.entities.AstroClockKnowledge.filter(
+            batch = await platform.entities.AstroClockKnowledge.filter(
               { source_book_title: title }, "-created_date", 200, skip
             );
             all.push(...batch);

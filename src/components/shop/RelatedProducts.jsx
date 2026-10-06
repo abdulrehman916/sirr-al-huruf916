@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ChevronRight, ShoppingBag, Star, Clock, Sparkles } from "lucide-react";
+import { ShoppingBag, Star, Clock } from "lucide-react";
 import { Heart } from "lucide-react";
 import { isInWishlist, toggleWishlist } from "@/lib/shopUtils";
 import { useState, useEffect } from "react";

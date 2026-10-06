@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ZoomIn, X, BookOpen, FileText, Layers,
+import { ChevronLeft, ZoomIn, X, BookOpen, Layers,
   FlaskConical, Clock, Archive, AlertTriangle, Package, Wrench,
   ListChecks, BookMarked, GitBranch, Link2 } from "lucide-react";
 import { getPreparationTypeLabel } from "@/lib/preparationLibrarySync";

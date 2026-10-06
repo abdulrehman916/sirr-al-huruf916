@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Moon, Clock, MapPin, Book } from "lucide-react";
+import { Moon, MapPin, Book } from "lucide-react";
 import { getAllPlanetaryHours } from "@/lib/astroClockLiveEngine";
 import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
@@ -72,7 +72,7 @@ export default function NighttimePlanetaryHours() {
             </p>
           </div>
         </div>
-        
+
         {location && sunData && (
           <div className="text-right hidden md:block">
             <div className="flex items-center gap-2 justify-end mb-1">

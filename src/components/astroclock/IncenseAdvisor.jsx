@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Flame, Info } from "lucide-react";
-import { PLANET_INCENSES, ZODIAC_INCENSES, getIncenseForPlanet, getIncenseForZodiac } from "@/lib/astroClockIncenseData.js";
+import { PLANET_INCENSES, ZODIAC_INCENSES } from "@/lib/astroClockIncenseData.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
 const G = {

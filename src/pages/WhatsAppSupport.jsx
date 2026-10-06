@@ -18,7 +18,7 @@ import {
   AlertCircle,
   CheckCircle,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -51,7 +51,7 @@ export default function WhatsAppSupport() {
     try {
       let userEmail = null;
       try {
-        const user = await base44.auth.me();
+        const user = await platform.auth.me();
         if (user?.email) userEmail = user.email;
       } catch {}
 
@@ -69,7 +69,7 @@ export default function WhatsAppSupport() {
   const checkAssignment = async (emailToCheck) => {
     setPhase("checking");
     try {
-      const res = await base44.functions.invoke("manageSupportRouting", {
+      const res = await platform.functions.invoke("manageSupportRouting", {
         action: "GET_MY_ASSIGNED_ADMIN",
         email: emailToCheck,
       });
@@ -94,7 +94,7 @@ export default function WhatsAppSupport() {
 
   const loadActiveAdmins = async () => {
     try {
-      const res = await base44.functions.invoke("manageSupportRouting", {
+      const res = await platform.functions.invoke("manageSupportRouting", {
         action: "GET_ACTIVE_ADMINS",
       });
       if (res.data?.success) {
@@ -120,7 +120,7 @@ export default function WhatsAppSupport() {
   const handleSelectAdmin = async (admin) => {
     setSelecting(true);
     try {
-      const res = await base44.functions.invoke("manageSupportRouting", {
+      const res = await platform.functions.invoke("manageSupportRouting", {
         action: "SELF_ASSIGN_ADMIN",
         email: email.trim(),
         admin_profile_id: admin.admin_profile_id,

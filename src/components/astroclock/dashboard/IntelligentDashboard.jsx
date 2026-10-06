@@ -18,7 +18,7 @@ import { MiniCard } from "./DashboardSection";
 import { planetArabicMLDisplay } from "@/lib/astroClockLabelMap";
 import {
   Sparkles, CheckCircle2, Ban, Crosshair, Layers, Clock, BookOpen,
-  Sun, Moon, Compass, ScrollText, CalendarDays, Star, Activity, Radio,
+  Sun, Moon, Compass, ScrollText, CalendarDays, Star, Activity,
 } from "lucide-react";
 
 // Live countdown to the next planetary-hour transition.

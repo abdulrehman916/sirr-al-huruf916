@@ -15,11 +15,11 @@
  *   5. Entity RLS — MasterPdfPage/SirrAuditLog admin-only.
  */
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ShieldAlert, Loader2, CheckCircle2, XCircle, RotateCcw, Edit3, StickyNote, HelpCircle, RefreshCw, GitMerge, ExternalLink, ImageIcon, Scale, Search, Filter } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
+import { ShieldAlert, Loader2, CheckCircle2, GitMerge, Search, Filter } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import MplReviewDrawer from "@/components/masterpdflibrary/MplReviewDrawer";
 
 const G = {
@@ -51,8 +51,8 @@ export default function OwnerPendingReviews() {
     setLoading(true);
     try {
       const [allPages, allBooks] = await Promise.all([
-        base44.entities.MasterPdfPage.list("-indexed_at", 300),
-        base44.entities.MasterPdfBook.list("-upload_date", 200),
+        platform.entities.MasterPdfPage.list("-indexed_at", 300),
+        platform.entities.MasterPdfBook.list("-upload_date", 200),
       ]);
       setPages(allPages);
       setBooks(allBooks);

@@ -7,7 +7,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Sun } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { DAY_INFO, PLANET_INFO } from '@/lib/astroClockLiveEngine.js';
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 

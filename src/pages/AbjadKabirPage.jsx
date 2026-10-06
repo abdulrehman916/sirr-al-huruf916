@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Trash2, Copy, Check, Download } from "lucide-react";
 import { calcKebir, calcSaghir, calcCumeli, calcBast, calcBast2 } from "../lib/abjadModes";
 import PageLayout from "../components/PageLayout";
-import PageTitle from "../components/PageTitle";
 import { usePageState } from "../context/PageStateContext";
 import { Lock } from "lucide-react";
 import FeatureLockedCard from "../components/FeatureLockedCard";
@@ -33,7 +32,7 @@ export default function AbjadKabirPage() {
     input: "",
     results: { kebir: null, saghir: null, cumeli: null, bast: null, bast2: null },
   });
-  
+
   const [mode, setMode] = useState(initialState.mode);
   const [bastLevel, setBastLevel] = useState(initialState.bastLevel);
   const [bastulLevel, setBastulLevel] = useState(initialState.bastulLevel);
@@ -184,14 +183,14 @@ export default function AbjadKabirPage() {
           {/* Mode Selection Card */}
           <SectionCard>
             <SectionLabel>SELECT CALCULATION MODE</SectionLabel>
-            
+
             <div className="grid grid-cols-3 gap-1.5 mt-2">
               {['kebir', 'saghir', 'cumeli', 'bast', 'bast2'].map((modeId) => {
                 const labels = getModeLabel(modeId);
                 const isActive = mode === modeId && !lockedFeature;
                 const modeFeat = FEATURES.find(f => f.mode === modeId);
                 const isModeLocked = modeFeat && !checkFeatureAccess(PAGE_PATH, modeFeat.id);
-                
+
                 return (
                   <motion.button
                     key={modeId}
@@ -295,7 +294,7 @@ export default function AbjadKabirPage() {
           {/* Input Card */}
           <SectionCard>
             <SectionLabel>ARABIC TEXT INPUT — {mode.toUpperCase()}</SectionLabel>
-            
+
             <div className="relative mt-3">
               <textarea
                 value={input}
@@ -365,7 +364,7 @@ export default function AbjadKabirPage() {
                     className="inline-block font-inter font-bold"
                     style={{
                       color: G.text,
-                      fontSize: results[mode].total.toString().length > 6 ? '2.5rem' : 
+                      fontSize: results[mode].total.toString().length > 6 ? '2.5rem' :
                                 results[mode].total.toString().length > 4 ? '3rem' : '3.5rem',
                       textShadow: `0 0 24px ${G.glow}`,
                     }}

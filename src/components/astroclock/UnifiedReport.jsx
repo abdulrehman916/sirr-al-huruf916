@@ -4,14 +4,8 @@
 // Malayalam-first display with Arabic preservation
 // ═══════════════════════════════════════════════════════════════
 
-import { Book, CheckCircle, Info, Moon, Sun, Clock, Sparkles, Calendar, AlertCircle, Star } from "lucide-react";
-import { 
-  translatePlanetToMalayalam, 
-  translateDayToMalayalam,
-  translateMansionToMalayalam,
-  formatPlanetDisplay,
-  formatDayDisplay,
-  formatMansionDisplay,
+import { Book, CheckCircle, Info, Moon, Sun, Clock, Sparkles, Calendar, AlertCircle } from "lucide-react";
+import {
   translateTurkishToMalayalam
 } from "@/lib/astroClockTurkishToMalayalam.js";
 
@@ -38,7 +32,7 @@ const SECTION_ICONS = {
 
 export default function UnifiedReport({ report, isMalayalam }) {
   if (!report) return null;
-  
+
   const sections = [
     { id: 1, data: report.section1_meaning },
     { id: 2, data: report.section2_historical },
@@ -59,21 +53,21 @@ export default function UnifiedReport({ report, isMalayalam }) {
     { id: 17, data: report.section17_manuscript_citations },
     { id: 18, data: report.section18_summary }
   ];
-  
+
   return (
     <div className="space-y-3">
       {sections.map((section) => (
-        <PreservationSectionCard 
+        <PreservationSectionCard
           key={section.id}
           section={section}
           isMalayalam={isMalayalam}
         />
       ))}
-      
+
       {/* Preservation Notice */}
-      <div className="rounded-xl border p-4 mt-4" style={{ 
-        background: "rgba(212,175,55,0.05)", 
-        borderColor: "rgba(212,175,55,0.25)" 
+      <div className="rounded-xl border p-4 mt-4" style={{
+        background: "rgba(212,175,55,0.05)",
+        borderColor: "rgba(212,175,55,0.25)"
       }}>
         <div className="flex items-center gap-2 mb-2">
           <Book className="w-4 h-4" style={{ color: "#D4AF37" }} />
@@ -82,12 +76,12 @@ export default function UnifiedReport({ report, isMalayalam }) {
           </p>
         </div>
         <p className="font-inter text-xs mb-1" style={{ color: "rgba(255,255,255,0.70)" }}>
-          {isMalayalam 
-            ? "എല്ലാ വിവരങ്ങളും സംരക്ഷിത സ്രോതസ്സുകളിൽ നിന്നാണ്" 
+          {isMalayalam
+            ? "എല്ലാ വിവരങ്ങളും സംരക്ഷിത സ്രോതസ്സുകളിൽ നിന്നാണ്"
             : "All information from preserved knowledge sources"}
         </p>
         <p className="font-inter text-xs" style={{ color: "rgba(212,175,55,0.60)" }}>
-          {isMalayalam 
+          {isMalayalam
             ? `കൈയെഴുത്തുപ്രതി: ${report._preservation_metadata?.manuscript_references_preserved || 0} | പുസ്തകം: ${report._preservation_metadata?.book_references_preserved || 0} | PDF: ${report._preservation_metadata?.pdf_references_preserved || 0}`
             : `Manuscripts: ${report._preservation_metadata?.manuscript_references_preserved || 0} | Books: ${report._preservation_metadata?.book_references_preserved || 0} | PDFs: ${report._preservation_metadata?.pdf_references_preserved || 0}`}
         </p>
@@ -99,11 +93,11 @@ export default function UnifiedReport({ report, isMalayalam }) {
 function PreservationSectionCard({ section, isMalayalam }) {
   const SectionIcon = SECTION_ICONS[section.id] || Book;
   const data = section.data;
-  
+
   return (
-    <div className="rounded-xl border p-4" style={{ 
-      background: "rgba(8,18,44,0.95)", 
-      borderColor: "rgba(212,175,55,0.25)" 
+    <div className="rounded-xl border p-4" style={{
+      background: "rgba(8,18,44,0.95)",
+      borderColor: "rgba(212,175,55,0.25)"
     }}>
       <div className="flex items-center gap-3 mb-3">
         <div className="flex items-center justify-center w-8 h-8 rounded-lg" style={{ background: "rgba(212,175,55,0.15)" }}>
@@ -120,7 +114,7 @@ function PreservationSectionCard({ section, isMalayalam }) {
           )}
         </div>
       </div>
-      
+
       <div className="space-y-2 pl-11">
         {/* Malayalam first, then English */}
         {data.description_ml && (
@@ -133,7 +127,7 @@ function PreservationSectionCard({ section, isMalayalam }) {
             {data.description_en}
           </p>
         )}
-        
+
         {/* Render manuscripts */}
         {data.manuscripts && data.manuscripts.length > 0 && (
           <div className="space-y-2 mt-2">
@@ -147,21 +141,21 @@ function PreservationSectionCard({ section, isMalayalam }) {
             ))}
           </div>
         )}
-        
+
         {/* Render categories */}
         {data.categories && data.categories.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-2">
             {data.categories.map((cat, idx) => (
-              <span key={idx} className="px-2 py-1 rounded-lg text-xs" style={{ 
-                background: "rgba(212,175,55,0.15)", 
-                color: "#F5D060" 
+              <span key={idx} className="px-2 py-1 rounded-lg text-xs" style={{
+                background: "rgba(212,175,55,0.15)",
+                color: "#F5D060"
               }}>
                 {cat}
               </span>
             ))}
           </div>
         )}
-        
+
         {/* Render citations */}
         {data.citations && data.citations.length > 0 && (
           <div className="space-y-1 mt-2">
@@ -172,7 +166,7 @@ function PreservationSectionCard({ section, isMalayalam }) {
             ))}
           </div>
         )}
-        
+
         {/* Render other data */}
         {renderOtherData(data, isMalayalam)}
       </div>
@@ -182,7 +176,7 @@ function PreservationSectionCard({ section, isMalayalam }) {
 
 function renderOtherData(data, isMalayalam) {
   const skipKeys = ['title_ml', 'title_en', 'title_ar', 'description_ml', 'description_en', 'manuscripts', 'categories', 'citations'];
-  
+
   return Object.entries(data)
     .filter(([key]) => !skipKeys.includes(key))
     .map(([key, value]) => {
@@ -194,7 +188,7 @@ function renderOtherData(data, isMalayalam) {
             <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ background: "rgba(212,175,55,0.60)" }} />
             <div className="flex-1">
               <span className="font-inter text-xs font-semibold capitalize" style={{ color: "rgba(212,175,55,0.70)" }}>
-                {key.replace(/_/g, ' ')}: 
+                {key.replace(/_/g, ' ')}:
               </span>
               <div className="flex flex-wrap gap-1 mt-1">
                 {value.map((item, idx) => {
@@ -204,9 +198,9 @@ function renderOtherData(data, isMalayalam) {
                     displayItem = translateTurkishToMalayalam(item);
                   }
                   return (
-                    <span key={idx} className="px-2 py-0.5 rounded text-xs" style={{ 
-                      background: "rgba(212,175,55,0.10)", 
-                      color: "rgba(255,255,255,0.80)" 
+                    <span key={idx} className="px-2 py-0.5 rounded text-xs" style={{
+                      background: "rgba(212,175,55,0.10)",
+                      color: "rgba(255,255,255,0.80)"
                     }}>
                       {displayItem}
                     </span>
@@ -217,21 +211,21 @@ function renderOtherData(data, isMalayalam) {
           </div>
         );
       }
-      
+
       // Handle simple values
       if (typeof value === 'object' && value !== null) {
         return null; // Skip complex nested objects
       }
-      
+
       // Translate Turkish text before display
       const displayValue = typeof value === 'string' ? translateTurkishToMalayalam(value) : String(value);
-      
+
       return (
         <div key={key} className="flex items-start gap-2 mt-1">
           <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ background: "rgba(212,175,55,0.60)" }} />
           <div className="flex-1">
             <span className="font-inter text-xs font-semibold capitalize" style={{ color: "rgba(212,175,55,0.70)" }}>
-              {key.replace(/_/g, ' ')}: 
+              {key.replace(/_/g, ' ')}:
             </span>
             <span className="font-inter text-sm ml-1" style={{ color: "rgba(255,255,255,0.80)" }}>
               {displayValue}

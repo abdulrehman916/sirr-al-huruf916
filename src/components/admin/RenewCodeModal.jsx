@@ -6,10 +6,10 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { X, RefreshCw, Loader2, Check } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import {
-  DURATION_TYPES, DURATION_PRESETS, computeExpiry, formatDurationLabel, fmtDateTime,
+  DURATION_TYPES, DURATION_PRESETS, computeExpiry, fmtDateTime,
 } from "@/lib/codeDuration";
 
 const G = {
@@ -57,7 +57,7 @@ export default function RenewCodeModal({ code, onClose, onRenewed }) {
     }
     setSaving(true);
     try {
-      const res = await base44.functions.invoke("renewAccessCode", {
+      const res = await platform.functions.invoke("renewAccessCode", {
         code_id: code.id,
         duration_type: durationType,
         duration_count: durationCount,

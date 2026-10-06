@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { 
-  Activity, Search, Shield, CheckCircle, Clock, XCircle, 
+import { Search, Shield, CheckCircle, Clock, XCircle,
   Loader2, User, Calendar, ArrowRight
 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
@@ -36,7 +35,7 @@ export default function AdminSubscriptionRequests() {
 
   const checkAuth = async () => {
     try {
-      const currentUser = await base44.auth.me();
+      const currentUser = await platform.auth.me();
       if (!currentUser || !["owner", "admin"].includes(currentUser.role)) {
         toast({
           title: "Access Denied",
@@ -57,7 +56,7 @@ export default function AdminSubscriptionRequests() {
 
   const fetchRequests = async () => {
     try {
-      const allRequests = await base44.entities.AccessRequest.list("-requested_at", 100);
+      const allRequests = await platform.entities.AccessRequest.list("-requested_at", 100);
       setRequests(allRequests);
     } catch (err) {
       toast({
@@ -70,7 +69,7 @@ export default function AdminSubscriptionRequests() {
 
   const handleApprove = async (req) => {
     try {
-      await base44.functions.invoke("approveAccessRequest", {
+      await platform.functions.invoke("approveAccessRequest", {
         request_id: req.request_id,
         duration: "1_MONTH"
       });
@@ -91,9 +90,9 @@ export default function AdminSubscriptionRequests() {
 
   const handleReject = async (reqId) => {
     try {
-      const reqs = await base44.entities.AccessRequest.filter({ request_id: reqId });
+      const reqs = await platform.entities.AccessRequest.filter({ request_id: reqId });
       if (reqs.length > 0) {
-        await base44.entities.AccessRequest.update(reqs[0].id, {
+        await platform.entities.AccessRequest.update(reqs[0].id, {
           status: "REJECTED",
           approved_by: user.id,
           approved_at: new Date().toISOString()
@@ -115,13 +114,13 @@ export default function AdminSubscriptionRequests() {
   };
 
   const filteredRequests = requests.filter(req => {
-    const matchesSearch = searchQuery === "" || 
+    const matchesSearch = searchQuery === "" ||
       (req.name || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
       (req.email || "").toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     const matchesStatus = filterStatus === "all" || req.status === filterStatus;
     const matchesPage = filterPage === "all" || req.page_path === filterPage;
-    
+
     return matchesSearch && matchesStatus && matchesPage;
   });
 
@@ -273,7 +272,7 @@ export default function AdminSubscriptionRequests() {
                         <Badge className={STATUS_COLORS[req.status] || STATUS_COLORS.PENDING}>
                           {req.status}
                         </Badge>
-                        
+
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-1">
                             <User className="w-3 h-3 text-white/50" />
@@ -316,7 +315,7 @@ export default function AdminSubscriptionRequests() {
                             </div>
                           )}
                         </div>
-                        
+
                         {req.status === "PENDING" && (
                           <div className="flex gap-2">
                             <Button
@@ -338,7 +337,7 @@ export default function AdminSubscriptionRequests() {
                             </Button>
                           </div>
                         )}
-                        
+
                         {req.status !== "PENDING" && (
                           <ArrowRight className="w-4 h-4 text-white/30" />
                         )}

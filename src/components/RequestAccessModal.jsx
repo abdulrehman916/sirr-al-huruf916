@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { X, Send, User, Phone, Mail, MessageSquare, CheckCircle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { getSessionId, getRedeemedCodes } from "@/lib/sessionId";
 
 const G = {
@@ -29,7 +29,7 @@ export default function RequestAccessModal({ pagePath, pageName, onClose }) {
     setLoading(true);
     try {
       const redeemed = getRedeemedCodes();
-      const res = await base44.functions.invoke("submitAccessRequest", {
+      const res = await platform.functions.invoke("submitAccessRequest", {
         name: form.name.trim(),
         phone: form.phone.trim(),
         email: form.email.trim(),

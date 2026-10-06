@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { FIRST_BAST } from "../../lib/mizaanPostEngine";
 
@@ -88,7 +87,7 @@ export default function MizanLetterReference() {
       <div className="px-4 pb-6 pt-4">
         <Card accent={G.gold}>
           <SectionHeader label="Letter Values" arabic="قيم الحروف" color={G.gold} />
-          
+
           {/* Grid of letter-value pairs */}
           <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2">
             {letterData.map(([letter, value], idx) => (
@@ -112,7 +111,7 @@ export default function MizanLetterReference() {
           {/* Info note */}
           <div className="mt-4 p-3 rounded-lg border" style={{ background: G.goldFaint, borderColor: G.goldBorder + "40" }}>
             <p className="font-inter text-[8px] uppercase tracking-wider" style={{ color: G.dim }}>
-              These values are from the First Bast (البسط الأول) table used across all Mizan calculations. 
+              These values are from the First Bast (البسط الأول) table used across all Mizan calculations.
               Values are sourced from the manuscript's canonical letter-value mappings.
             </p>
           </div>

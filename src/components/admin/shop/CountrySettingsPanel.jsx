@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Globe, Save, Smartphone, ShoppingBag, Languages, Receipt, MapPin, Plus, X, ChevronUp, ChevronDown } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { COUNTRY_PROFILES, MARKETPLACE_REGISTRY } from "@/lib/countryProfiles";
 
@@ -36,10 +36,10 @@ export default function CountrySettingsPanel() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopSettings.list();
+      const list = await platform.entities.ShopSettings.list();
       let s = list?.[0];
       if (!s) {
-        s = await base44.entities.ShopSettings.create({
+        s = await platform.entities.ShopSettings.create({
           settings_id: "SHOP-SETTINGS-MAIN",
           active_country: "", auto_detect_country: true,
           deep_links_enabled: true, default_marketplace: "Amazon",
@@ -56,7 +56,7 @@ export default function CountrySettingsPanel() {
   const handleSave = async () => {
     setSaving(true);
     try {
-      await base44.entities.ShopSettings.update(settings.id, {
+      await platform.entities.ShopSettings.update(settings.id, {
         active_country: settings.active_country || "",
         auto_detect_country: settings.auto_detect_country !== false,
         deep_links_enabled: settings.deep_links_enabled !== false,

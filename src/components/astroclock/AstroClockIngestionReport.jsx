@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { BookOpen, FileText, Layers, CheckCircle } from "lucide-react";
 import { TAHA_INGESTION_REPORT, TAHA_SOURCE } from "@/lib/astroClockTahaData";
 
@@ -24,7 +23,7 @@ export default function AstroClockIngestionReport() {
           borderColor: G.borderHi,
           boxShadow: `0 0 40px ${G.glow}, 0 4px 28px rgba(0,0,0,0.50), inset 0 1px 0 rgba(212,175,55,0.10)`,
         }}>
-        
+
         <div className="flex items-center gap-3 mb-4">
           <BookOpen className="w-5 h-5" style={{ color: G.text }} />
           <h2 className="font-inter text-lg font-bold uppercase tracking-widest" style={{ color: G.text }}>

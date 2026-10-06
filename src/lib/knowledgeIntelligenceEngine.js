@@ -20,7 +20,7 @@
 //   Does NOT modify timing engine, calculation engine, database schema,
 //   OCR, translation, Nine Mizan, Abjad, Bast, authentication, or navigation.
 // ═══════════════════════════════════════════════════════════════
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { classifyAction, ACTION_CATEGORIES } from "./astroActionClassifier";
 
 // ── Response cache (avoids duplicate LLM calls for same input+weekday) ──
@@ -84,12 +84,12 @@ async function collectAllKnowledge(weekday) {
   // AstroClockKnowledge. Timing = full_context records; entity knowledge =
   // categorized records. EntityKnowledge is no longer read here.
   const [ackData, ekData] = await Promise.all([
-    base44.entities.AstroClockKnowledge.filter(
+    platform.entities.AstroClockKnowledge.filter(
       { weekday, is_marker: false },
       "-source_count",
       30
     ),
-    base44.entities.AstroClockKnowledge.filter(
+    platform.entities.AstroClockKnowledge.filter(
       { is_marker: false, source_type: "categorized" },
       "-source_count",
       50
@@ -436,7 +436,7 @@ export async function runKnowledgeIntelligenceSearch(userInput, weekday, weekday
   //    result from ACTION_CATEGORIES — zero credits, zero external calls.
   let processed;
   try {
-    const llmResponse = await base44.integrations.Core.InvokeLLM({
+    const llmResponse = await platform.integrations.Core.InvokeLLM({
       prompt,
       response_json_schema: RESPONSE_SCHEMA,
     });

@@ -10,12 +10,12 @@
 // depth) via parent_heading_id. buildHeadingTree() converts the flat
 // list into a nested structure for UI navigation.
 // ═══════════════════════════════════════════════════════════════
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ── Fetch all ManuscriptBook records ──
 export async function fetchManuscriptBooks() {
   try {
-    const books = await base44.entities.ManuscriptBook.list("-created_date", 500);
+    const books = await platform.entities.ManuscriptBook.list("-created_date", 500);
     return books || [];
   } catch {
     return [];
@@ -25,7 +25,7 @@ export async function fetchManuscriptBooks() {
 // ── Fetch all ManuscriptEntry records ──
 export async function fetchManuscriptEntries() {
   try {
-    const entries = await base44.entities.ManuscriptEntry.list("-created_date", 500);
+    const entries = await platform.entities.ManuscriptEntry.list("-created_date", 500);
     return entries || [];
   } catch {
     return [];
@@ -35,7 +35,7 @@ export async function fetchManuscriptEntries() {
 // ── Fetch all ManuscriptHeading records ──
 export async function fetchManuscriptHeadings() {
   try {
-    const headings = await base44.entities.ManuscriptHeading.list("-created_date", 500);
+    const headings = await platform.entities.ManuscriptHeading.list("-created_date", 500);
     return headings || [];
   } catch {
     return [];

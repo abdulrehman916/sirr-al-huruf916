@@ -6,7 +6,7 @@
 // instance of this hook re-fetches, so ReferenceLibrary and ImportHistory (and any
 // other consumer) stay in sync after a book is deleted.
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 let _catalogVersion = 0;
 const _listeners = new Set();
@@ -38,8 +38,8 @@ export function useManuscriptCatalog() {
       setLoading(true);
       try {
         const [bookRes, ackRes] = await Promise.all([
-          base44.entities.ManuscriptBook.list("-upload_date", 200),
-          base44.entities.AstroClockKnowledge.filter({ is_marker: false }, "-updated_date", 1000),
+          platform.entities.ManuscriptBook.list("-upload_date", 200),
+          platform.entities.AstroClockKnowledge.filter({ is_marker: false }, "-updated_date", 1000),
         ]);
         if (!alive) return;
         setBooks(Array.isArray(bookRes) ? bookRes : []);

@@ -2,10 +2,10 @@ import { useState, useEffect, createContext, useContext } from "react";
 import { motion } from "framer-motion";
 import {
   Loader2, ShieldCheck, ShieldAlert, BookOpen, Languages, ScrollText, Sparkles,
-  Link2, BookMarked, FileText, Quote, Award, AlertTriangle, Clock, Volume2,
+  Link2, BookMarked, Quote, Award, AlertTriangle, Clock,
   Network, BookCopy, ChevronDown,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import HolyNameProfileLangSelector from "./HolyNameProfileLangSelector";
 import { arTitle } from "./holyNameProfileI18n";
 
@@ -237,7 +237,7 @@ export default function HolyNameResearchProfile({ originalStaticId }) {
     let alive = true;
     setLoading(true);
     const nameId = `HNK-MHN-${originalStaticId}`;
-    base44.entities.HolyNameKnowledge.filter({ name_id: nameId }, null, 1)
+    platform.entities.HolyNameKnowledge.filter({ name_id: nameId }, null, 1)
       .then(r => { if (!alive) return; setRec((r && r[0]) || null); })
       .catch(() => { if (alive) setRec(null); })
       .finally(() => { if (alive) setLoading(false); });

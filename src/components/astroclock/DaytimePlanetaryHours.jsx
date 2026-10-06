@@ -6,12 +6,10 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sun, Clock, MapPin, Book } from "lucide-react";
+import { Sun, MapPin, Book } from "lucide-react";
 import { getAllPlanetaryHours } from "@/lib/astroClockLiveEngine";
 import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { getPlanetHourRules } from "@/lib/astroClockPlanetaryHourRules.js";
-import { getPlanetFriendships } from "@/lib/astroClockPlanetFriendships.js";
 import ExpandedPlanetaryHourCard from "./ExpandedPlanetaryHourCard.jsx";
 import { usePersistedLocation } from "@/lib/usePersistedLocation.js";
 
@@ -75,7 +73,7 @@ export default function DaytimePlanetaryHours() {
             </p>
           </div>
         </div>
-        
+
         {location && sunData && (
           <div className="text-right hidden md:block">
             <div className="flex items-center gap-2 justify-end mb-1">

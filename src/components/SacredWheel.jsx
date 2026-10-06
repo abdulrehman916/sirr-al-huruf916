@@ -1,5 +1,5 @@
 import { motion, useMotionValue } from "framer-motion";
-import { useState, useEffect, useMemo, memo } from "react";
+import { useEffect, useMemo } from "react";
 import useIsMobile from "../hooks/useIsMobile";
 import { useNavigation } from "../context/NavigationContext";
 
@@ -565,20 +565,20 @@ function getContainerSize() {
   if (typeof window === "undefined") return 400;
   const w = window.innerWidth;
   const h = window.screen.height; // Use screen.height (stable) instead of innerHeight (changes with keyboard)
-  
+
   // Mobile (<768px): original behavior, unchanged
   if (w < 768) {
     const maxByHeight = Math.min(h * 0.70, 500);
     return Math.min(maxByHeight, Math.max(260, w * 0.85));
   }
-  
+
   // Large Tablet (768-1366px): Galaxy Tab A7 FE optimized
   // Scale down to ensure entire circle fits within viewport
   if (w < 1366) {
     const maxByHeight = Math.min(h * 0.50, 420);
     return Math.min(maxByHeight, w * 0.55);
   }
-  
+
   // Desktop (>=1366px): original desktop behavior
   const maxByHeight = Math.min(h * 0.70, 500);
   return Math.min(maxByHeight, Math.max(260, w * 0.85));
@@ -593,7 +593,7 @@ export default function SacredWheel({ mouse, containerSize: parentContainerSize,
 
   // Use parent-provided size if available (HeroSection), otherwise calculate internally
   const containerSize = parentContainerSize || getContainerSize();
-  
+
   const fallbackX = useMotionValue(0);
   const fallbackY = useMotionValue(0);
   const mouseX = mouse?.x ?? fallbackX;

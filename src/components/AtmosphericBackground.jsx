@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function AtmosphericBackground() {
   return (
@@ -8,7 +8,7 @@ export default function AtmosphericBackground() {
       <div className="absolute inset-0" style={{
         background: "radial-gradient(ellipse at top, rgba(59,130,246,0.08) 0%, transparent 70%)",
       }} />
-      
+
       {/* Floating particles */}
       {[...Array(20)].map((_, i) => (
         <motion.div

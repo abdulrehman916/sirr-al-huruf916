@@ -7,7 +7,7 @@
  */
 import { useState } from "react";
 import { Check, Loader2, Edit3, Trash2, Plus } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.35)",
@@ -62,7 +62,7 @@ export default function PlanEditor({ pagePath, featureId, plan, sortOrder, onSav
     if (!planName.trim() || !price) return;
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const data = {
         plan_config_id: planConfigId,
         page_path: pagePath,
@@ -79,9 +79,9 @@ export default function PlanEditor({ pagePath, featureId, plan, sortOrder, onSav
         updated_at: new Date().toISOString(),
       };
       if (plan?.id) {
-        await base44.entities.SubscriptionPlanConfig.update(plan.id, data);
+        await platform.entities.SubscriptionPlanConfig.update(plan.id, data);
       } else {
-        await base44.entities.SubscriptionPlanConfig.create(data);
+        await platform.entities.SubscriptionPlanConfig.create(data);
       }
       setEditing(false);
       if (onSaved) onSaved();
@@ -97,7 +97,7 @@ export default function PlanEditor({ pagePath, featureId, plan, sortOrder, onSav
     if (!confirm(`Delete plan "${plan.plan_name}"?`)) return;
     setDeleting(true);
     try {
-      await base44.entities.SubscriptionPlanConfig.delete(plan.id);
+      await platform.entities.SubscriptionPlanConfig.delete(plan.id);
       if (onSaved) onSaved();
     } catch (e) {
       console.error("Failed to delete plan:", e);

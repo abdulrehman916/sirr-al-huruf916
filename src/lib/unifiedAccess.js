@@ -1,4 +1,4 @@
-import { supabase } from '@/api/base44Client';
+import { supabase } from '@/api/platformClient';
 
 const titleFor = (resource) => (
   resource?.title?.ml || resource?.title?.en || resource?.title?.ar || resource?.slug || ''

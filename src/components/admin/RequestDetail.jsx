@@ -3,7 +3,7 @@
  * Shown when admin expands a request in AdminAccessRequests.
  */
 import { useState, useEffect, useCallback } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { Send, Loader2, CheckCircle, DollarSign, KeyRound, XCircle, HelpCircle } from "lucide-react";
 import { REQUEST_STATUSES } from "@/lib/accessRequestStatus";
@@ -25,13 +25,13 @@ export default function RequestDetail({ request, onUpdate }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    base44.auth.me().then(setUser).catch(() => {});
+    platform.auth.me().then(setUser).catch(() => {});
   }, []);
 
   const loadMessages = useCallback(async () => {
     setLoadingMsgs(true);
     try {
-      const msgs = await base44.entities.AccessRequestMessage.filter(
+      const msgs = await platform.entities.AccessRequestMessage.filter(
         { request_id: request.request_id },
         "created_at",
         200
@@ -54,7 +54,7 @@ export default function RequestDetail({ request, onUpdate }) {
       const now = new Date().toISOString();
 
       if (message?.trim()) {
-        await base44.entities.AccessRequestMessage.create({
+        await platform.entities.AccessRequestMessage.create({
           message_id: messageId,
           request_id: request.request_id,
           sender_type: "ADMIN",
@@ -69,7 +69,7 @@ export default function RequestDetail({ request, onUpdate }) {
 
       if (statusChange === "APPROVED") {
         // Approval triggers automatic code delivery via backend function
-        const res = await base44.functions.invoke("approveAccessRequest", {
+        const res = await platform.functions.invoke("approveAccessRequest", {
           request_id: request.request_id,
         });
         if (!res.data?.success) {
@@ -79,7 +79,7 @@ export default function RequestDetail({ request, onUpdate }) {
         }
         toast({ title: "✓ Approved & code delivered" });
       } else if (statusChange) {
-        await base44.entities.AccessRequest.update(request.id, {
+        await platform.entities.AccessRequest.update(request.id, {
           status: statusChange,
           approved_by: user?.id || "admin",
           approved_at: now,

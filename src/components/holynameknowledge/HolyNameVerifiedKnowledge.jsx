@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Database, BookOpen, ChevronDown, Sparkles, FileText } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ═══════════════════════════════════════════════════════════════
 // HolyNameVerifiedKnowledge — Knowledge Intelligence Engine reader
@@ -109,7 +109,7 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
     setLoading(true);
     setError(null);
     setData(null);
-    base44.functions
+    platform.functions
       .invoke("getVerifiedKnowledge", {
         query: arabicName,
         mode: "harakat_insensitive",

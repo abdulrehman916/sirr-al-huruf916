@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 /**
  * Hook for the multi-domain manuscript screenshot ingestion pipeline.
@@ -19,7 +19,7 @@ export function useManuscriptScreenshotIngestion() {
     setError(null);
     setResult(null);
     try {
-      const response = await base44.functions.invoke('classifyAndIngestScreenshot', {
+      const response = await platform.functions.invoke('classifyAndIngestScreenshot', {
         file_url: fileUrl,
         source_label: sourceLabel || 'Screenshot Upload'
       });

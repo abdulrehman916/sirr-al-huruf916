@@ -4,7 +4,7 @@
 // Read-only. Never writes. Cached for the session.
 // ═══════════════════════════════════════════════════════════════
 import { useEffect, useState } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 let cache = null;
 let inflight = null;
@@ -18,7 +18,7 @@ export function fetchManuscriptRules() {
       let skip = 0;
       // Page through up to 500 rules (single source of truth).
       while (skip < 3000) {
-        const batch = await base44.entities.ManuscriptRule.list("-created_date", 100, skip);
+        const batch = await platform.entities.ManuscriptRule.list("-created_date", 100, skip);
         if (!batch || batch.length === 0) break;
         all.push(...batch);
         if (batch.length < 100) break;

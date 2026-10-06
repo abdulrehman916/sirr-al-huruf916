@@ -6,14 +6,13 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Search, Book, FileText, CheckCircle, XCircle, AlertCircle, Clock, MapPin, Calendar, Moon, Sun, ChevronDown, ChevronUp } from "lucide-react";
+import { Book, FileText, CheckCircle, XCircle, AlertCircle, Clock, Calendar, Moon, Sun, ChevronDown, ChevronUp } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { getCurrentPlanetaryHour, getAllPlanetaryHours, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
+import { getCurrentPlanetaryHour, DAY_INFO } from "@/lib/astroClockLiveEngine.js";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset.js";
-import { AY_MANAZILLERI } from "@/lib/astroClockData.js";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -68,7 +67,7 @@ export default function ManuscriptActionFinder() {
   function updateCurrentAstro() {
     const now = new Date();
     let location = { lat: 25.2048, lng: 55.2708, timezone: 4 };
-    
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
         location = {
@@ -96,7 +95,7 @@ export default function ManuscriptActionFinder() {
 
   function handleSearch(query, category) {
     if (!query && !category) return;
-    
+
     setLoading(true);
     setSearchQuery(query);
     setSelectedCategory(category);
@@ -181,8 +180,8 @@ export default function ManuscriptActionFinder() {
         )}
 
         {searchResults && !loading && (
-          <SearchResults 
-            results={searchResults} 
+          <SearchResults
+            results={searchResults}
             currentAstro={currentAstro}
             isMalayalam={isMalayalam}
           />
@@ -196,7 +195,7 @@ function searchManuscriptKnowledge(query) {
   // Search through manuscript knowledge base
   const allRules = getManuscriptActionRules();
   const queryLower = query.toLowerCase();
-  
+
   const matchingRules = allRules.filter(rule => {
     return rule.action?.toLowerCase().includes(queryLower) ||
            rule.keywords?.some(k => k.toLowerCase().includes(queryLower));
@@ -460,10 +459,10 @@ function ManuscriptRuleCard({ rule, currentAstro, expanded, onToggle, isMalayala
         <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} className="space-y-6">
           {/* Source Information */}
           <SourceInfo rule={rule} isMalayalam={isMalayalam} />
-          
+
           {/* Required Conditions */}
           <RequiredConditions rule={rule} currentAstro={currentAstro} isMalayalam={isMalayalam} />
-          
+
           {/* Timing Recommendation */}
           <TimingRecommendation rule={rule} currentAstro={currentAstro} isMalayalam={isMalayalam} />
         </motion.div>
@@ -550,7 +549,7 @@ function RequiredConditions({ rule, currentAstro, isMalayalam }) {
 
 function ConditionRow({ icon, label, value, current, isMalayalam }) {
   const match = current && value.toLowerCase().includes(current.toLowerCase());
-  
+
   return (
     <div className="flex items-center gap-3">
       <div style={{ color: match ? "#22c55e" : G.dim }}>{icon}</div>
@@ -622,7 +621,7 @@ function evaluateSuitability(rule, currentAstro) {
   }
 
   const ratio = totalChecks > 0 ? score / totalChecks : 0;
-  
+
   if (ratio >= 0.75) return { status: "suitable", color: "#22c55e", bg: G.success };
   if (ratio >= 0.25) return { status: "wait", color: "#fbbf24", bg: G.warning };
   return { status: "not_suitable", color: "#ef4444", bg: G.error };
@@ -631,7 +630,7 @@ function evaluateSuitability(rule, currentAstro) {
 function calculateNextSuitableTime(rule, currentAstro) {
   if (!currentAstro) return null;
   const now = currentAstro.timestamp;
-  
+
   for (let h = 1; h <= 24; h++) {
     const future = new Date(now.getTime() + h * 60 * 60 * 1000);
     if (rule.required_day && rule.required_day.toLowerCase().includes(DAY_INFO[future.getDay()].name_en.toLowerCase())) {

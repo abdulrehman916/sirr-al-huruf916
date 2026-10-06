@@ -3,7 +3,7 @@
 //  Original book formulas only
 // ═══════════════════════════════════════════════════════════════
 
-import { buildHierarchy, triangle } from './msEngine';
+import { buildHierarchy } from './msEngine';
 import { generateNameForHierarchyValue } from './msPatternGenerator';
 
 const MC = 66;

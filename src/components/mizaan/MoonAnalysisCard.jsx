@@ -18,7 +18,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Moon, ChevronDown, Check, X, Minus, CalendarClock, Search, AlertTriangle, Sparkles, BookOpen } from "lucide-react";
+import { Moon, ChevronDown, Check, X, Minus, CalendarClock, AlertTriangle, Sparkles, BookOpen } from "lucide-react";
 import {
   analyzeMoonCompatibility,
   planRitualByMoon,

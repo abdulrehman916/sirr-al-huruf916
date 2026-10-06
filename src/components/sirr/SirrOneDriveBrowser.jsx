@@ -18,7 +18,7 @@ import {
   CheckCircle2, AlertCircle, RefreshCw, HardDriveDownload,
   Shield, Microscope
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import SirrAnalyzeModal from "./SirrAnalyzeModal";
 
 export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
@@ -37,10 +37,10 @@ export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
 
   // ── Check admin status ──
   useEffect(() => {
-    base44.auth.isAuthenticated().then(async (authed) => {
+    platform.auth.isAuthenticated().then(async (authed) => {
       if (authed) {
         try {
-          const me = await base44.auth.me();
+          const me = await platform.auth.me();
           setIsAdmin(me.role === "admin");
         } catch { setIsAdmin(false); }
       }
@@ -54,7 +54,7 @@ export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
     setError("");
     setSelected(new Set());
     try {
-      const res = await base44.functions.invoke("browseOneDrive", { folder_id: folderId });
+      const res = await platform.functions.invoke("browseOneDrive", { folder_id: folderId });
       const data = res.data;
       setFolders(data.folders || []);
       setFiles(data.files || []);
@@ -100,7 +100,7 @@ export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
         [statusKey]: { status: "importing", name, message: `Processing Part ${chunk.chunk_number}/${total_chunks}...` },
       }));
       try {
-        const chunkRes = await base44.functions.invoke("validateManuscriptImport", {
+        const chunkRes = await platform.functions.invoke("validateManuscriptImport", {
           pdf_url: chunk.chunk_url,
           book_title: bookTitle,
           existing_book_id: book_id,
@@ -142,7 +142,7 @@ export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
       const bookTitle = file.name.replace(/\.pdf$/i, "");
       setImportStatus((prev) => ({ ...prev, [file.id]: { status: "importing", name: file.name } }));
       try {
-        const res = await base44.functions.invoke("importFromOneDrive", {
+        const res = await platform.functions.invoke("importFromOneDrive", {
           file_id: file.id,
           book_title: bookTitle,
         });
@@ -179,7 +179,7 @@ export default function SirrOneDriveBrowser({ onBack, onImported, language }) {
     setImporting(true);
     setImportStatus((prev) => ({ ...prev, [fileId]: { status: "importing", name: bookTitle } }));
     try {
-      const res = await base44.functions.invoke("importFromOneDrive", {
+      const res = await platform.functions.invoke("importFromOneDrive", {
         file_id: fileId,
         book_title: bookTitle,
         force_reimport: true,

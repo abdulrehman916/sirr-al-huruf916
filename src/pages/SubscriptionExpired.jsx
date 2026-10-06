@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, RefreshCw, AlertCircle, Loader2 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { motion } from "framer-motion";
@@ -25,11 +25,11 @@ export default function SubscriptionExpired() {
 
   const checkAuthAndSubscription = async () => {
     try {
-      const currentUser = await base44.auth.me();
+      const currentUser = await platform.auth.me();
       setUser(currentUser);
 
       // Check for expired subscription
-      const subs = await base44.entities.Subscription.filter({
+      const subs = await platform.entities.Subscription.filter({
         user_id: currentUser.id,
         page_path: DECODED_PAGE_PATH,
         status: "EXPIRED"
@@ -40,7 +40,7 @@ export default function SubscriptionExpired() {
       }
 
       // Fetch pricing for renewal
-      const response = await base44.functions.invoke("getPagePricing", {
+      const response = await platform.functions.invoke("getPagePricing", {
         page_path: DECODED_PAGE_PATH
       });
 

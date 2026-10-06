@@ -2,14 +2,12 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  ArrowLeft, ShoppingBag, Star, ExternalLink, Play, X, ZoomIn,
-  ChevronLeft, ChevronRight, CheckCircle, MessageSquare, Heart, Share2,
-  Link2, Sparkles, Package, Shield, Truck, Award, ChevronDown, ChevronUp,
-  FileText, GitCompare, BookOpen, Leaf, HeartPulse, AlertTriangle, ShieldCheck,
-  Snowflake, Languages, Tag, Hash
+  ArrowLeft, ShoppingBag, Star, ExternalLink, Play, MessageSquare, Heart,
+  Link2, Sparkles, Shield, Truck, Award,
+  FileText, GitCompare, Tag, Hash
 } from "lucide-react";
 import PageLayout from "../components/PageLayout";
-import { base44 } from "../api/base44Client";
+import { platform } from "../api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { ProductDetailSkeleton } from "../components/shop/ProductSkeleton";
 import RelatedProducts from "../components/shop/RelatedProducts";
@@ -17,7 +15,6 @@ import ProductBadgesInline, { getDiscountPercent } from "../components/shop/Prod
 import FaqSection from "../components/shop/FaqSection";
 import SellerContact from "../components/shop/SellerContact";
 import ShareMenu from "../components/shop/ShareMenu";
-import ProductInfoSection from "../components/shop/ProductInfoSection";
 import PriceDisplay from "../components/shop/PriceDisplay";
 import MarketplaceButtons from "../components/shop/MarketplaceButtons";
 import ShopBadges from "../components/shop/ShopBadges";
@@ -102,9 +99,9 @@ export default function ProductDetailPage() {
   const loadProduct = async () => {
     try {
       setLoading(true);
-      let list = await base44.entities.Product.filter({ slug: productId });
+      let list = await platform.entities.Product.filter({ slug: productId });
       if (!list || list.length === 0) {
-        list = await base44.entities.Product.filter({ product_id: productId });
+        list = await platform.entities.Product.filter({ product_id: productId });
       }
       if (list && list.length > 0) {
         const p = list[0];
@@ -122,7 +119,7 @@ export default function ProductDetailPage() {
 
   const loadAllProducts = async () => {
     try {
-      const list = await base44.entities.Product.list("-created_date", 200);
+      const list = await platform.entities.Product.list("-created_date", 200);
       setAllProducts(list || []);
     } catch {
       setAllProducts([]);
@@ -131,7 +128,7 @@ export default function ProductDetailPage() {
 
   const loadReviews = async (pid) => {
     try {
-      const list = await base44.entities.ProductReview.filter({ product_id: pid });
+      const list = await platform.entities.ProductReview.filter({ product_id: pid });
       setReviews(list || []);
     } catch {
       setReviews([]);
@@ -241,7 +238,7 @@ export default function ProductDetailPage() {
     if (!reviewForm.reviewer_name.trim() || !reviewForm.comment.trim()) return;
     try {
       setSubmittingReview(true);
-      await base44.entities.ProductReview.create({
+      await platform.entities.ProductReview.create({
         review_id: `REV-${Date.now()}`,
         product_id: product.product_id,
         reviewer_name: reviewForm.reviewer_name.trim(),

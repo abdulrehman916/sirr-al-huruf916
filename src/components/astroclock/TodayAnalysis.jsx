@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { KNOWLEDGE_DAYS, KNOWLEDGE_LUNAR_MANSIONS } from "@/lib/astroClockKnowledgeBase.js";
 import { AY_MANAZILLERI, PLANETARY_DAY_RULERS } from "@/lib/astroClockData.js";
 import { Sun, Moon, Star, Clock, AlertCircle, CheckCircle } from "lucide-react";
 
@@ -14,17 +13,17 @@ export default function TodayAnalysis() {
     // Calculate today's astrological data
     const now = new Date();
     const dayOfWeek = now.getDay(); // 0=Sunday, 1=Monday, etc.
-    
+
     // Console trace for debugging
     console.log("[TodayAnalysis] Day of week:", dayOfWeek, ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayOfWeek]);
     console.log("[TodayAnalysis] PLANETARY_DAY_RULERS loaded:", PLANETARY_DAY_RULERS?.length || 0);
-    
+
     // Get planetary ruler for today
     const dayRuler = PLANETARY_DAY_RULERS.find(d => {
       const dayIndex = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].indexOf(d.day_name_en);
       return dayIndex === dayOfWeek;
     });
-    
+
     console.log("[TodayAnalysis] Day ruler found:", dayRuler ? dayRuler.day_name_en : "NOT FOUND");
 
     // Get current hour's planetary ruler (simplified)
@@ -64,7 +63,7 @@ export default function TodayAnalysis() {
       zodiacSign: "Aries", // Placeholder
       star: "Ashwini" // Placeholder
     });
-    
+
     setLoading(false);
   }, []);
 
@@ -102,7 +101,7 @@ export default function TodayAnalysis() {
 
   // Generate GOOD FOR / AVOID / NEUTRAL lists from book data
   const dayRuler = todayData.dayRuler || "Unknown";
-  const goodFor = dayRuler === "Güneş" 
+  const goodFor = dayRuler === "Güneş"
     ? ["Leadership", "Success", "Authority meetings", "Friendship"]
     : dayRuler === "Ay"
     ? ["Travel", "Water activities", "Love", "Dreams"]

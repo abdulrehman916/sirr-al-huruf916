@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Loader2, BookOpen, ImageIcon, AlertTriangle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
 const P = {
@@ -39,7 +39,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
   useEffect(() => {
     let alive = true;
     setLoading(true);
-    base44.entities.HolyNameImportedSection
+    platform.entities.HolyNameImportedSection
       .filter({ source_section: sourceSection, source_name_key: String(sourceNameKey) }, null, 500)
       .then((raw) => {
         if (!alive) return;

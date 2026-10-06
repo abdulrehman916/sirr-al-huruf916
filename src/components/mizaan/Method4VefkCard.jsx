@@ -5,7 +5,6 @@
 // ═══════════════════════════════════════════════════════════════
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { getBastLevel as getBastLevelDefault, istintak } from "../../lib/mizaanPostEngine";
 

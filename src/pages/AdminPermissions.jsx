@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
-import { Users, Shield, Calendar, Clock, CheckCircle, XCircle, Plus, Trash2, Edit, Globe, Lock, Eye, EyeOff } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Users, Calendar, Clock, CheckCircle, XCircle, Plus, Trash2, Edit, Globe, Lock, EyeOff } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,7 +10,6 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { ROUTE_PERMISSION_MAP } from "@/lib/permissionCodes";
 import { getAdminVisiblePages } from "@/lib/pageRegistry";
@@ -84,7 +83,7 @@ export default function AdminPermissions() {
     setLoadingVisibility(true);
     try {
       const visiblePaths = new Set(getAdminVisiblePages().map(p => p.path));
-      const configs = await base44.entities.PageVisibilityConfig.list(null, 500);
+      const configs = await platform.entities.PageVisibilityConfig.list(null, 500);
       const visibilityList = Object.entries(ROUTE_PERMISSION_MAP)
         .filter(([path]) => visiblePaths.has(path))
         .map(([path, config]) => {
@@ -106,7 +105,7 @@ export default function AdminPermissions() {
 
   const checkAdminAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         toast({
@@ -132,8 +131,8 @@ export default function AdminPermissions() {
     setLoading(true);
     try {
       const [allUsers, allPermissions] = await Promise.all([
-        base44.entities.User.list(null, 500),
-        base44.entities.PagePermission.list(null, 500)
+        platform.entities.User.list(null, 500),
+        platform.entities.PagePermission.list(null, 500)
       ]);
       setUsers(allUsers);
       setPermissions(allPermissions);
@@ -166,11 +165,11 @@ export default function AdminPermissions() {
 
       const now = new Date();
       const startDate = now.toISOString();
-      const expiryDate = duration.value === "permanent" 
+      const expiryDate = duration.value === "permanent"
         ? new Date(now.getTime() + (duration.days * 24 * 60 * 60 * 1000)).toISOString()
         : new Date(now.getTime() + (duration.days * 24 * 60 * 60 * 1000)).toISOString();
 
-      await base44.functions.invoke("grantPagePermission", {
+      await platform.functions.invoke("grantPagePermission", {
         user_id: grantForm.user_id,
         page_path: grantForm.page_path,
         page_name: page?.name,
@@ -213,15 +212,15 @@ export default function AdminPermissions() {
       const duration = DURATION_OPTIONS.find(d => d.value === extendForm.duration);
       const currentExpiry = new Date(selectedPermission.expiry_date);
       const now = new Date();
-      
+
       // If already expired, start from now; otherwise extend from current expiry
       const baseDate = currentExpiry > now ? currentExpiry : now;
       const newExpiry = new Date(baseDate.getTime() + (duration.days * 24 * 60 * 60 * 1000));
 
-      await base44.functions.invoke("extendPermissionExpiry", {
+      await platform.functions.invoke("extendPermissionExpiry", {
         permission_id: selectedPermission.permission_id,
         new_expiry_date: newExpiry.toISOString(),
-        extended_by: (await base44.auth.me()).id
+        extended_by: (await platform.auth.me()).id
       });
 
       toast({
@@ -249,9 +248,9 @@ export default function AdminPermissions() {
 
     setProcessing(true);
     try {
-      await base44.functions.invoke("revokePagePermission", {
+      await platform.functions.invoke("revokePagePermission", {
         permission_id: permission.permission_id,
-        revoked_by: (await base44.auth.me()).id,
+        revoked_by: (await platform.auth.me()).id,
         reason: "Revoked by admin"
       });
 
@@ -278,7 +277,7 @@ export default function AdminPermissions() {
 
     setVisibilityProcessing(true);
     try {
-      await base44.functions.invoke("updatePageVisibility", {
+      await platform.functions.invoke("updatePageVisibility", {
         page_path: pagePath,
         requires_permission: newVisibility
       });
@@ -482,8 +481,8 @@ export default function AdminPermissions() {
               <div className="space-y-4 mt-4">
                 <div>
                   <Label className="text-white/80">Select User *</Label>
-                  <Select 
-                    value={grantForm.user_id} 
+                  <Select
+                    value={grantForm.user_id}
                     onValueChange={(value) => setGrantForm(prev => ({ ...prev, user_id: value }))}
                   >
                     <SelectTrigger className="mt-2 bg-white/5 border-white/10 text-white">
@@ -501,8 +500,8 @@ export default function AdminPermissions() {
 
                 <div>
                   <Label className="text-white/80">Select Page *</Label>
-                  <Select 
-                    value={grantForm.page_path} 
+                  <Select
+                    value={grantForm.page_path}
                     onValueChange={(value) => setGrantForm(prev => ({ ...prev, page_path: value }))}
                   >
                     <SelectTrigger className="mt-2 bg-white/5 border-white/10 text-white">
@@ -520,8 +519,8 @@ export default function AdminPermissions() {
 
                 <div>
                   <Label className="text-white/80">Duration *</Label>
-                  <Select 
-                    value={grantForm.duration} 
+                  <Select
+                    value={grantForm.duration}
                     onValueChange={(value) => setGrantForm(prev => ({ ...prev, duration: value }))}
                   >
                     <SelectTrigger className="mt-2 bg-white/5 border-white/10 text-white">
@@ -644,8 +643,8 @@ export default function AdminPermissions() {
                                             </div>
                                             <div>
                                               <Label className="text-white/80">Extend By</Label>
-                                              <Select 
-                                                value={extendForm.duration} 
+                                              <Select
+                                                value={extendForm.duration}
                                                 onValueChange={(value) => setExtendForm(prev => ({ ...prev, duration: value }))}
                                               >
                                                 <SelectTrigger className="mt-2 bg-white/5 border-white/10 text-white">

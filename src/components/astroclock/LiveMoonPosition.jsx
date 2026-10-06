@@ -6,7 +6,7 @@
 
 import { useState, useEffect, useMemo, memo } from "react";
 import { motion } from "framer-motion";
-import { Moon, MapPin, Clock, Info } from "lucide-react";
+import { Moon, MapPin, Info } from "lucide-react";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
@@ -230,7 +230,7 @@ const LiveMoonPosition = memo(function LiveMoonPosition() {
                   {displayData.mansion.name_ar}
                 </p>
                 <p className="font-inter text-lg font-bold text-white text-center">
-                  {isMalayalam ? (displayData.mansion.name_ar || "—") : displayData.mansion.name_en}
+                  {isMalayalam ? displayData.mansion.name_ml : displayData.mansion.name_en}
                 </p>
               </>
             )}

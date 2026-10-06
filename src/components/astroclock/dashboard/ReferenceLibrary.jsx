@@ -9,7 +9,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, BookOpen, FileText, Globe, Calendar, Link2, Layers, CheckCircle2, AlertTriangle, Trash2 } from "lucide-react";
 import { useManuscriptCatalog, refreshCatalog } from "@/hooks/useManuscriptCatalog";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 
 function parsePageNum(p) {
@@ -188,7 +188,7 @@ function BookCard({ book, knowledge, txt, language, onDelete }) {
   const handleDelete = async () => {
     setDeleting(true);
     try {
-      await base44.entities.ManuscriptBook.delete(book.book_id || book._id);
+      await platform.entities.ManuscriptBook.delete(book.book_id || book._id);
       refreshCatalog();
     } catch (e) {
       console.error("Delete book failed:", e);

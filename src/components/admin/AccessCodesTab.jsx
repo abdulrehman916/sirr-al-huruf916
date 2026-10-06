@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Plus, Search, KeyRound, Copy, Check, Trash2, ToggleLeft, ToggleRight,
-  RefreshCw, ChevronRight, Clock, CheckCircle, AlertCircle, Loader2,
+  RefreshCw, ChevronRight, Clock, Loader2,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { useAuth } from "@/lib/AuthContext";
 import { ROLES } from "@/lib/rbac";
@@ -79,7 +79,7 @@ export default function AccessCodesTab() {
       const pageSize = 500;
       const all = [];
       for (let skip = 0; ; skip += pageSize) {
-        const page = await base44.entities.AccessCode.list("-created_date", pageSize, skip);
+        const page = await platform.entities.AccessCode.list("-created_date", pageSize, skip);
         all.push(...page);
         if (page.length < pageSize) break;
       }
@@ -96,7 +96,7 @@ export default function AccessCodesTab() {
   const handleToggleDisable = async (e, code) => {
     e.stopPropagation();
     try {
-      const res = await base44.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
+      const res = await platform.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
       if (!res.data?.success) throw new Error(res.data?.message || "Action failed");
       toast({ title: code.is_disabled ? "✓ Code enabled" : "✓ Code disabled" });
       load();
@@ -109,7 +109,7 @@ export default function AccessCodesTab() {
     e.stopPropagation();
     if (!confirm(`Delete code "${code.code}"? This permanently revokes all permissions.`)) return;
     try {
-      const res = await base44.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
+      const res = await platform.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: `✓ Code "${code.code}" deleted` });
         load();

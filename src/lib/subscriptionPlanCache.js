@@ -4,7 +4,7 @@
  *
  * Cache TTL: 2 minutes (120000ms).
  */
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { getCached, setCached } from "@/lib/permissionCache";
 import { getEffectivePrice, isSaleActive } from "@/lib/pricingUtils";
 
@@ -33,7 +33,7 @@ export async function getPagePlans(pagePath) {
   if (cached) return cached;
 
   try {
-    const results = await base44.entities.SubscriptionPlanConfig.filter(
+    const results = await platform.entities.SubscriptionPlanConfig.filter(
       { page_path: pagePath, is_active: true },
       "sort_order",
       50

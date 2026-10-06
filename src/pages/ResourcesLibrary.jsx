@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { FileText, LockKeyhole, Search } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { useI18n } from "@/i18n/I18nContext";
 
@@ -30,7 +30,7 @@ export default function ResourcesLibrary() {
 
   useEffect(() => {
     let cancelled = false;
-    base44.entities.ManagedPage.filter({ status: "PUBLISHED" }, "-published_at", 500)
+    platform.entities.ManagedPage.filter({ status: "PUBLISHED" }, "-published_at", 500)
       .then((rows) => { if (!cancelled) setPages(Array.isArray(rows) ? rows : []); })
       .catch(() => { if (!cancelled) setPages([]); })
       .finally(() => { if (!cancelled) setLoading(false); });

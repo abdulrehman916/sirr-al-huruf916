@@ -24,10 +24,10 @@
 import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Upload, Scan, Image as ImageIcon, Loader2, CheckCircle2,
-  AlertCircle, FileText, ChevronDown, X, Eye, Sparkles,
+  Upload, Scan, Loader2, CheckCircle2,
+  AlertCircle, ChevronDown, X, Eye, Sparkles,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const P = {
@@ -125,7 +125,7 @@ export default function SectionCVisualIntegrator() {
     try {
       // Step 1: Upload the PDF to get a URL for the LLM
       setProgress({ current: 0, total: 1, current_page: 0, description: "Uploading PDF for scanning…" });
-      const uploadRes = await base44.integrations.Core.UploadFile({ file: pdfFile });
+      const uploadRes = await platform.integrations.Core.UploadFile({ file: pdfFile });
       const uploadedUrl = uploadRes?.file_url || "";
 
       // Step 2: Call InvokeLLM directly to identify pages with visual content
@@ -183,7 +183,7 @@ Also report:
 - total_pages: total page count of the PDF
 - book_title: the title of the book/document as printed`;
 
-      const llmRes = await base44.integrations.Core.InvokeLLM({
+      const llmRes = await platform.integrations.Core.InvokeLLM({
         prompt: scanPrompt,
         file_urls: [uploadedUrl],
         model: "gemini_3_flash",
@@ -287,14 +287,14 @@ Also report:
 
           // Upload the page image
           const imageFile = new File([blob], `section_c_page_${pageNum}.png`, { type: "image/png" });
-          const imgUploadRes = await base44.integrations.Core.UploadFile({ file: imageFile });
+          const imgUploadRes = await platform.integrations.Core.UploadFile({ file: imageFile });
           const imageUrl = imgUploadRes?.file_url || "";
 
           // Attach each visual on this page to the matching card — direct SDK update
           for (const v of pageVisuals) {
             try {
               const targetNameId = v.name_id || "HNK-MHC-001";
-              const cards = await base44.entities.HolyNameEsotericKnowledge.filter(
+              const cards = await platform.entities.HolyNameEsotericKnowledge.filter(
                 { name_id: targetNameId }, null, 1
               );
               const card = cards?.[0];
@@ -322,7 +322,7 @@ Also report:
                 name_id: card.name_id,
                 imported_at: new Date().toISOString(),
               };
-              await base44.entities.HolyNameEsotericKnowledge.update(card.id, {
+              await platform.entities.HolyNameEsotericKnowledge.update(card.id, {
                 attached_visuals: [...existing, newVisual],
               });
               results.push({
@@ -388,7 +388,7 @@ Also report:
     setLoadingStatus(true);
     setError("");
     try {
-      const cards = await base44.entities.HolyNameEsotericKnowledge.list("order_index", 60);
+      const cards = await platform.entities.HolyNameEsotericKnowledge.list("order_index", 60);
       const report = {
         total_cards: cards.length,
         cards_with_visuals: 0,

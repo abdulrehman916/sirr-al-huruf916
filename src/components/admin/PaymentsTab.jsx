@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CreditCard, Clock, Search, AlertCircle, CalendarPlus2, Ban, CheckCircle, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { CreditCard, Clock, Search, AlertCircle, Loader2 } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -30,7 +30,7 @@ export default function PaymentsTab({ subscriptions, users, onRefresh }) {
     return { ...sub, userName: user?.full_name || sub.user_name || "Unknown", userEmail: user?.email || sub.user_email || "—" };
   });
 
-  const filtered = search.trim() ? enriched.filter(s => 
+  const filtered = search.trim() ? enriched.filter(s =>
     (s.userName || "").toLowerCase().includes(search.toLowerCase()) ||
     (s.userEmail || "").toLowerCase().includes(search.toLowerCase()) ||
     (s.subscription_id || "").toLowerCase().includes(search.toLowerCase())
@@ -54,7 +54,7 @@ export default function PaymentsTab({ subscriptions, users, onRefresh }) {
         payload.extend_days = extendDays;
       }
 
-      const res = await base44.functions.invoke("adminManageSubscription", payload);
+      const res = await platform.functions.invoke("adminManageSubscription", payload);
 
       if (res.data?.success) {
         toast({ title: `✓ ${actionModal.action === "extend" ? "Extended" : "Cancelled"}` });
@@ -165,7 +165,7 @@ export default function PaymentsTab({ subscriptions, users, onRefresh }) {
               className="w-full max-w-md rounded-2xl p-6 space-y-4"
               style={{ background: "linear-gradient(145deg,#0c1630,#060c1c)", border: `1px solid ${G.borderHi}` }}
               onClick={e => e.stopPropagation()}>
-              
+
               <div className="flex items-center justify-between">
                 <h3 className="font-inter font-bold text-white text-base capitalize">{actionModal.action} Subscription</h3>
                 <button onClick={() => setActionModal(null)} className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white/10" style={{ color: "rgba(255,255,255,0.40)" }}>

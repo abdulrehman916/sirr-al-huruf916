@@ -7,7 +7,7 @@ import {
   Plus, Edit3, ArrowRight, PackageX, Eye, Globe, Image as ImageIcon,
 } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import DashboardOverview from "@/components/admin/shop/DashboardOverview";
 import CategoriesManager from "@/components/admin/shop/CategoriesManager";
 import BrandsManager from "@/components/admin/shop/BrandsManager";
@@ -57,7 +57,7 @@ export default function AdminShopDashboard() {
   const [isAdmin, setIsAdmin] = useState(null);
 
   useEffect(() => {
-    base44.auth.me().then(user => {
+    platform.auth.me().then(user => {
       if (!user || !["owner", "admin"].includes(user.role)) setIsAdmin(false);
       else setIsAdmin(true);
     }).catch(() => setIsAdmin(false));
@@ -66,7 +66,7 @@ export default function AdminShopDashboard() {
   useEffect(() => {
     (async () => {
       try {
-        const list = await base44.entities.Product.list("-created_date", 100);
+        const list = await platform.entities.Product.list("-created_date", 100);
         setProducts(list || []);
       } catch { /* ignore */ }
       finally { setLoading(false); }

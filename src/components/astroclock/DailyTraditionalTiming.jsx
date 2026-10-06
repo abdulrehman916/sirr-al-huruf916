@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Sun, Moon, Clock, CheckCircle, XCircle, BookOpen } from "lucide-react";
 import { DAY_INFO, PLANET_INFO, getAllPlanetaryHours } from "@/lib/astroClockLiveEngine";
-import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset";
+import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
 const G = {
@@ -33,7 +33,7 @@ export default function DailyTraditionalTiming() {
   useEffect(() => {
     const today = new Date();
     const dayIndex = today.getDay();
-    
+
     // Get location
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -44,7 +44,7 @@ export default function DailyTraditionalTiming() {
             timezone: -position.coords.longitude / 15
           };
           setLocation(loc);
-          
+
           const sunTimes = calculateSunriseSunset(today, loc.lat, loc.lng, loc.timezone);
           if (sunTimes.sunrise && sunTimes.sunset) {
             const hours = getAllPlanetaryHours(today, sunTimes.sunrise, sunTimes.sunset);
@@ -71,7 +71,7 @@ export default function DailyTraditionalTiming() {
         setPlanetaryHours(hours);
       }
     }
-    
+
     setDayData(DAY_INFO[dayIndex]);
   }, []);
 

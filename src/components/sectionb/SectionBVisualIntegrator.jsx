@@ -27,10 +27,9 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Loader2, CheckCircle2, AlertCircle, Eye, ChevronDown,
-  Sparkles, Image as ImageIcon, Play,
+  Loader2, CheckCircle2, AlertCircle, Eye, ChevronDown, Play,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const TILIMSANI_FILE = "Tilimsani_MaanilEsma.pdf";
@@ -79,7 +78,7 @@ export default function SectionBVisualIntegrator() {
     try {
       // 1. Load the 65 Tilimsani Section B cards
       setProgress({ current: 0, total: 1, page: 0, desc: "Loading Tilimsani cards…" });
-      const cards = await base44.entities.HolyOnePDFName.filter(
+      const cards = await platform.entities.HolyOnePDFName.filter(
         { source_pdf_file: TILIMSANI_FILE }, null, 200
       );
       const targets = cards.filter(c => Number(c.source_pdf_page) > 0);
@@ -93,7 +92,7 @@ export default function SectionBVisualIntegrator() {
 
       // 2. Read the approved Tilimsani PDF URL from the transcription cache
       setProgress({ current: 0, total: 1, page: 0, desc: "Locating approved Tilimsani source…" });
-      const cacheHits = await base44.entities.HolyNameTranscriptionCache.filter(
+      const cacheHits = await platform.entities.HolyNameTranscriptionCache.filter(
         { source_pdf_file: TILIMSANI_FILE }, null, 1
       );
       const pdfUrl = cacheHits?.[0]?.source_pdf_url;
@@ -142,7 +141,7 @@ export default function SectionBVisualIntegrator() {
           page.cleanup();
           if (!blob) throw new Error("page render produced no blob");
           const file = new File([blob], `section_b_tilimsani_p${pn}.png`, { type: "image/png" });
-          const up = await base44.integrations.Core.UploadFile({ file });
+          const up = await platform.integrations.Core.UploadFile({ file });
           imageUrl = up?.file_url || "";
           if (!imageUrl) throw new Error("upload returned no url");
         } catch (e) {
@@ -171,7 +170,7 @@ export default function SectionBVisualIntegrator() {
               order_on_page: 0,
               imported_at: new Date().toISOString(),
             };
-            await base44.entities.HolyOnePDFName.update(c.id, { attached_visuals: [...existing, newVisual] });
+            await platform.entities.HolyOnePDFName.update(c.id, { attached_visuals: [...existing, newVisual] });
             attached++;
             results.push({ page: pn, card: c.pdf_name_id, status: "attached" });
           } catch (e) {

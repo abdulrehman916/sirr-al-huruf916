@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ArrowLeft, KeyRound, Loader2, Mail, ShieldCheck } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -24,7 +24,7 @@ export default function Login() {
     setLoading(true);
     try {
       persistSet("sirr_admin_session", "true");
-      await base44.auth.loginWithProvider("google", returnTo);
+      await platform.auth.loginWithProvider("google", returnTo);
     } catch (err) {
       setError(err?.message || "Google login failed.");
       setLoading(false);
@@ -39,10 +39,10 @@ export default function Login() {
       const cleanEmail = email.trim().toLowerCase();
       if (!otpSent) {
         const callback = `${window.location.origin}/auth/callback?redirect=${encodeURIComponent(returnTo)}`;
-        await base44.auth.requestLoginOtp({ email: cleanEmail, redirectTo: callback });
+        await platform.auth.requestLoginOtp({ email: cleanEmail, redirectTo: callback });
         setOtpSent(true);
       } else {
-        await base44.auth.verifyLoginOtp({ email: cleanEmail, token: otp.trim() });
+        await platform.auth.verifyLoginOtp({ email: cleanEmail, token: otp.trim() });
         persistSet("sirr_admin_session", "true");
         window.location.assign(returnTo);
       }

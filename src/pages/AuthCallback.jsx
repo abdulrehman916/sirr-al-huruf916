@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
-import { supabase } from "@/api/base44Client";
+import { supabase } from "@/api/platformClient";
 import { persistSet } from "@/lib/devModePersistence";
 
 export default function AuthCallback() {

@@ -9,7 +9,7 @@
 // the same canonical knowledge is displayed.
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 /**
  * Fetches full-context knowledge for an exact Day+Saat+Kawkab combination.
@@ -47,7 +47,7 @@ export function useAstroClockContextKnowledge(context = {}) {
       planet: context.planet
     };
 
-    base44.entities.AstroClockKnowledge.filter(query, "-source_count", 10)
+    platform.entities.AstroClockKnowledge.filter(query, "-source_count", 10)
       .then(records => {
         if (cancelled) return;
         // Only full_context records with actual action data

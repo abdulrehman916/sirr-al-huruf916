@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Lock } from "lucide-react";
 import PageLayout from "../components/PageLayout";

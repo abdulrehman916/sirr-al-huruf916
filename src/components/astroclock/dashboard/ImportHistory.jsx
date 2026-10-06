@@ -71,7 +71,7 @@ export default function ImportHistory() {
         <div className="rounded-xl p-2.5" style={{ background: "rgba(74,222,128,0.04)", border: "1px solid rgba(74,222,128,0.15)" }}>
           <div className="flex items-center justify-between mb-1.5">
             <span className="font-inter text-[9px] uppercase tracking-wider font-bold flex items-center gap-1" style={{ color: "rgba(74,222,128,0.60)" }}>
-              <FileText className="w-3 h-3" />{txt("ഇറക്കുമതി പുരോഗതി", "Import Progress", "İçe Aktarma İlerlemesi")}
+              <FileText className="w-3 h-3" />{txt("��റക്കുമതി പുരോഗതി", "Import Progress", "İçe Aktarma İlerlemesi")}
             </span>
             <span className="font-inter text-xs font-bold tabular-nums" style={{ color: "#4ADE80" }}>{progress}%</span>
           </div>

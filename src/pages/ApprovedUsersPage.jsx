@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import ApprovedUsersTab from "@/components/admin/ApprovedUsersTab";
 import { useToast } from "@/components/ui/use-toast";
@@ -27,7 +27,7 @@ export default function ApprovedUsersPage() {
 
   const checkAdminAccess = async () => {
     try {
-      const currentUser = await base44.auth.me();
+      const currentUser = await platform.auth.me();
       if (!currentUser || currentUser.role !== 'admin') {
         setIsAdmin(false);
         toast({

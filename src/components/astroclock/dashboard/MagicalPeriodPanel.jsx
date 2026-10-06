@@ -13,7 +13,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
 import { Sparkles } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
@@ -40,7 +40,7 @@ export default function MagicalPeriodPanel({ entityType, entityKey }) {
     if (!key) { setRecords([]); setLoading(false); return; }
     let cancelled = false;
     setLoading(true);
-    base44.entities.AstroClockKnowledge.filter({ is_marker: false, rule_entity: key }, "-source_count", 30)
+    platform.entities.AstroClockKnowledge.filter({ is_marker: false, rule_entity: key }, "-source_count", 30)
       .then(res => {
         if (cancelled) return;
         const all = Array.isArray(res) ? res : [];

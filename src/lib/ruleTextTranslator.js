@@ -14,7 +14,7 @@
 //     graph, timing engine, or canonical records.
 //   - Results are cached to avoid repeated LLM calls.
 // ═══════════════════════════════════════════════════════════════
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const cache = new Map();
 const CACHE_MAX = 100;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Send, Upload, FileText, Image, ArrowLeft, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -56,7 +56,7 @@ export default function SupportTicket() {
     }
     setUploading(true);
     try {
-      const res = await base44.integrations.Core.UploadFile({ file });
+      const res = await platform.integrations.Core.UploadFile({ file });
       setUploadedFile({ url: res.file_url, name: file.name, type: file.type });
     } catch (err) {
       toast({ title: "Upload Failed", description: err.message, variant: "destructive" });
@@ -76,7 +76,7 @@ export default function SupportTicket() {
       // Use timestamp-based ID instead of counting all tickets — O(1) vs O(n)
       const ts = Date.now().toString(36).toUpperCase();
       const tid = `SUP-${ts.slice(-6)}`;
-      await base44.entities.SupportTickets.create({
+      await platform.entities.SupportTickets.create({
         ticket_id: tid,
         name: form.name,
         mobile: form.mobile,

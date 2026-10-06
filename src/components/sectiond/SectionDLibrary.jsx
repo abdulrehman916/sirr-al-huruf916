@@ -11,7 +11,7 @@
 // canonical_key) instead of creating duplicates.
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect, useCallback } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Search, Loader2, ChevronDown } from "lucide-react";
 import SectionDCard from "@/components/sectiond/SectionDCard";
 
@@ -50,7 +50,7 @@ export default function SectionDLibrary() {
   const loadPage = useCallback(async (pageNum, filterType) => {
     const query = {};
     if (filterType !== "all") query.content_type = filterType;
-    const batch = await base44.entities.SectionDKnowledge.filter(
+    const batch = await platform.entities.SectionDKnowledge.filter(
       query,
       "-created_date",
       PAGE_SIZE,
@@ -78,7 +78,7 @@ export default function SectionDLibrary() {
       });
 
     // Get total count for the filter
-    base44.entities.SectionDKnowledge.filter(
+    platform.entities.SectionDKnowledge.filter(
       filter !== "all" ? { content_type: filter } : {},
       undefined,
       1,

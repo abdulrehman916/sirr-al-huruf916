@@ -4,7 +4,7 @@
  */
 import { useState, useEffect } from "react";
 import { Clock } from "lucide-react";
-import { formatRemaining, formatRemainingLong, getCodeStatus } from "@/lib/codeDuration";
+import { formatRemaining, formatRemainingLong } from "@/lib/codeDuration";
 
 export default function RemainingTime({ expiryDate, showFull = false }) {
   const [, setTick] = useState(0);

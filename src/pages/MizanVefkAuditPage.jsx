@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import { buildVefk, VEFK_TEMPLATES } from "../lib/mizaanPostEngine";

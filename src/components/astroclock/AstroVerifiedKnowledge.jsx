@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, Database, BookOpen, ChevronDown, Sparkles, FileText } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 
@@ -120,7 +120,7 @@ export default function AstroVerifiedKnowledge({ query }) {
     setLoading(true);
     setError(null);
     setData(null);
-    base44.functions
+    platform.functions
       .invoke("getVerifiedKnowledge", {
         query,
         mode: "harakat_insensitive",

@@ -5,8 +5,8 @@
  * error/review flags. Owner-only (page-gated).
  */
 import { useState, useEffect, useMemo } from "react";
-import { Loader2, Search, Copy, AlertTriangle, CheckCircle2, Tag } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Loader2, Copy, AlertTriangle, CheckCircle2, Tag } from "lucide-react";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
 
@@ -19,7 +19,7 @@ export default function MplPages() {
 
   useEffect(() => {
     (async () => {
-      try { setPages(await base44.entities.MasterPdfPage.list("-indexed_at", 200)); }
+      try { setPages(await platform.entities.MasterPdfPage.list("-indexed_at", 200)); }
       catch { /* ignore */ } finally { setLoading(false); }
     })();
   }, []);

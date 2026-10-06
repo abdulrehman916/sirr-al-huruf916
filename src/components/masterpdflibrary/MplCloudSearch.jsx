@@ -6,7 +6,7 @@
  */
 import { useState } from "react";
 import { Loader2, Search, ExternalLink, HardDrive, FileBox, FileText } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
 
@@ -66,7 +66,7 @@ export default function MplCloudSearch() {
     try {
       const fn = provider === "googledrive" ? "searchGoogleDrivePdfs" : provider === "onedrive" ? "searchOneDrivePdfs" : "searchAdobeCloudPdfs";
       const payload = mode === "list" ? { mode: "list", page_size: 50 } : { mode: "search", query, page_size: 50 };
-      const r = await base44.functions.invoke(fn, payload);
+      const r = await platform.functions.invoke(fn, payload);
       const d = r?.data || r;
       if (provider === "adobe") { setErr(d?.error || "Adobe: " + (d?.note || "library search not available")); return; }
       if (d?.success) setFiles(d.files || []);
@@ -78,7 +78,7 @@ export default function MplCloudSearch() {
     setReadingId(f.id); setReadText(null);
     try {
       const fn = provider === "googledrive" ? "searchGoogleDrivePdfs" : "searchOneDrivePdfs";
-      const r = await base44.functions.invoke(fn, { mode: "read", file_id: f.id });
+      const r = await platform.functions.invoke(fn, { mode: "read", file_id: f.id });
       const d = r?.data || r;
       if (d?.success) setReadText({ id: f.id, text: d.text || "", chars: d.char_count || (d.text || "").length });
       else setErr(d?.error || "Read failed");

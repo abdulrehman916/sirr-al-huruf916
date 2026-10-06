@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
-import { 
+import {
   MANUSCRIPT_METADATA,
   EBCEDI_KEBIR,
   EBCEDI_SAGHIR,
@@ -10,7 +10,6 @@ import {
   LETTER_NAMES_CUMELI,
   SAKIT_LETTERS,
 } from "../lib/manuscriptAbjadData";
-import { istintak, GALIB_ANASIR_VALUES } from "../lib/mizaanPostEngine";
 
 // Design tokens
 const G = {
@@ -128,7 +127,7 @@ export default function AbjadBastAuditPage() {
   return (
     <PageLayout>
       <div className="max-w-6xl mx-auto space-y-6 pb-6">
-        
+
         <PageTitle
           arabic="جدول الأبجد والبسط"
           latin="ABJAD & BAST TABLES"
@@ -309,7 +308,7 @@ export default function AbjadBastAuditPage() {
               <div>
                 <h4 className="font-inter text-[8px] uppercase tracking-widest font-bold mb-1" style={{ color: G.gold }}>Manuscript Source Authority</h4>
                 <p className="font-inter text-[7px] leading-relaxed" style={{ color: G.dim }}>
-                  All values on this page are locked to the manuscript source (pages {MANUSCRIPT_METADATA.sourcePages.join(", ")}). 
+                  All values on this page are locked to the manuscript source (pages {MANUSCRIPT_METADATA.sourcePages.join(", ")}).
                   These tables represent the canonical authority for Ebcedi Kebir, Ebcedi Sağir, and all five Bast levels.
                   No modifications allowed without manual unlock.
                 </p>

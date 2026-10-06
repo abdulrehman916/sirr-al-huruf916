@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check, Loader2, Edit3 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.35)",
@@ -27,7 +27,7 @@ export default function FeatureConfigEditor({ pagePath, pageName, feature, exist
   const handleSave = async () => {
     setSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const data = {
         config_id: configId,
         page_path: pagePath,
@@ -44,9 +44,9 @@ export default function FeatureConfigEditor({ pagePath, pageName, feature, exist
       };
 
       if (existingConfig?.id) {
-        await base44.entities.FeatureConfig.update(existingConfig.id, data);
+        await platform.entities.FeatureConfig.update(existingConfig.id, data);
       } else {
-        await base44.entities.FeatureConfig.create(data);
+        await platform.entities.FeatureConfig.create(data);
       }
 
       setEditing(false);

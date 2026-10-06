@@ -1,7 +1,6 @@
 // ═══════════════════════════════════════════════════════════════
 // ASTRO CLOCK LANGUAGE CONTEXT — 3-Language (ML / EN / AR)
 // Astro Clock module only — completely isolated
-// Turkish may exist in legacy/source data as reference, but is never a UI language.
 // ═══════════════════════════════════════════════════════════════
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 
@@ -9,7 +8,7 @@ import { createContext, useContext, useState, useEffect, useCallback } from "rea
 // Centralized Arabic translations for every Astro Clock UI label.
 // Keyed by the English string passed as the 2nd arg to txt().
 // Arabic mode looks up this dictionary; falls back to English only
-// if a label is missing.
+// if a label is missing (none of the labels below fall back).
 // This is UI chrome only — never manuscript content. Manuscript
 // Arabic is preserved via the *_ar fields and txtA(), not here.
 // ─────────────────────────────────────────────────────────────
@@ -128,12 +127,11 @@ const AR_UI = {
 };
 
 const LanguageContext = createContext();
-const SUPPORTED_LANGUAGES = new Set(["ml", "en", "ar"]);
 
 export function AstroClockLanguageProvider({ children }) {
   const [language, setLang] = useState(() => {
     const saved = localStorage.getItem("astroClockLanguage");
-    return "en";
+    return ["en", "ml", "ar"].includes(saved) ? saved : "en";
   });
 
   useEffect(() => {
@@ -144,9 +142,7 @@ export function AstroClockLanguageProvider({ children }) {
   const isEnglish = language === "en";
   const isArabic = language === "ar";
 
-  const setLanguage = useCallback((lang) => {
-    setLang(SUPPORTED_LANGUAGES.has(lang) ? lang : "en");
-  }, []);
+  const setLanguage = useCallback((lang) => setLang(["en", "ml", "ar"].includes(lang) ? lang : "en"), []);
 
   // Custom date override — persisted to localStorage so Historical Date Mode survives reloads.
   const [customDate, setCustomDate] = useState(() => {
@@ -164,63 +160,64 @@ export function AstroClockLanguageProvider({ children }) {
     setLang(prev => prev === "ml" ? "en" : "ml");
   }, []);
 
-  // txt: Malayalam / English / Arabic. Arabic mode looks up the English label.
-  // Any legacy third argument passed by old components is ignored by JavaScript.
+  // txt: Malayalam / English / Arabic. Arabic mode looks up the English
+  // label in the centralized AR_UI dictionary. The legacy 3rd arg
+  // (Turkish) is ALWAYS ignored — Turkish is never shown to users.
   const txt = useCallback((ml, en) => {
     if (language === "ml") return ml;
     if (language === "ar") return (AR_UI[en] || en);
     return en;
   }, [language]);
 
-  // txtA: use when an explicit Arabic translation is available.
+  // txtA: trilingual-aware — use when Arabic translation is available
   const txtA = useCallback((ml, en, ar) => {
     if (language === "ml") return ml;
     if (language === "ar") return ar || en;
     return en;
   }, [language]);
 
-  // Legacy t object (kept for backward compatibility with old components).
+  // Legacy t object (kept for backward compat with old components)
   const t = {
-    current: txt("മലയാളം", "English"),
-    toggle: txt("English", "മലയാളം"),
-    day: txt("ദിവസം", "Day"),
-    planetRuler: txt("ഗ്രഹാധിപൻ", "Planet Ruler"),
-    qualities: txt("ഗുണങ്ങൾ", "Qualities"),
-    warnings: txt("മുന്നറിയിപ്പുകൾ", "Warnings"),
-    suitableActions: txt("അനുയോജ്യമായ പ്രവർത്തനങ്ങൾ", "Suitable Actions"),
-    note: txt("കുറിപ്പ്", "Note"),
-    source: txt("സ്രോതസ്സ്", "Source"),
-    daytimeHours: txt("പകൽ 12 ഗ്രഹ മണിക്കൂറുകൾ", "Daytime 12 Planetary Hours"),
-    nighttimeHours: txt("രാത്രി 12 ഗ്രഹ മണിക്കൂറുകൾ", "Nighttime 12 Planetary Hours"),
-    hour: txt("മണിക്കൂർ", "Hour"),
-    time: txt("സമയം", "Time"),
-    planet: txt("ഗ്രഹം", "Planet"),
-    sunrise: txt("സൂര്യോദയം", "Sunrise"),
-    sunset: txt("സൂര്യാസ്തമയം", "Sunset"),
-    moonPosition: txt("ചന്ദ്രന്റെ സ്ഥാനം", "Moon Position"),
-    currentMansion: txt("നിലവിലെ ചാന്ദ്ര മൻസിൽ", "Current Mansion"),
-    zodiacSign: txt("രാശി", "Zodiac Sign"),
-    degree: txt("ഡിഗ്രി", "Degree"),
-    lunarMansions: txt("ചന്ദ്ര മൻസിലുകൾ", "Lunar Mansions"),
-    mansion: txt("മൻസിൽ", "Mansion"),
-    zodiac: txt("രാശികൾ", "Zodiac"),
-    suitable: txt("അനുയോജ്യമായ പ്രവർത്തനങ്ങൾ", "Suitable Operations"),
-    planets: txt("ഗ്രഹങ്ങൾ", "Planets"),
-    nature: txt("സ്വഭാവം", "Nature"),
-    benefits: txt("ഗുണങ്ങൾ", "Benefits"),
-    spiritualOperations: txt("ആത്മീയ പ്രവർത്തനങ്ങൾ", "Spiritual Operations"),
-    element: txt("മൂലകം", "Element"),
-    gender: txt("ലിംഗം", "Gender"),
-    metal: txt("ലോഹം", "Metal"),
-    incense: txt("ധൂപം / സുഗന്ധദ്രവ്യം", "Incense"),
-    friendlySigns: txt("സൗഹൃദ രാശികൾ", "Friendly Signs"),
-    enemySigns: txt("വിരുദ്ധ രാശികൾ", "Enemy Signs"),
-    spiritualMeaning: txt("ആത്മീയ അർത്ഥം", "Spiritual Meaning"),
-    favorable: txt("അനുകൂലം", "Favorable"),
-    neutral: txt("നിഷ്പക്ഷം", "Neutral"),
-    unfavorable: txt("പ്രതികൂലം", "Unfavorable"),
-    ready: txt("തയ്യാറാണ്", "Ready"),
-    traditionalSystem: txt("പാരമ്പര്യ വ്യവസ്ഥ", "Traditional System"),
+    current: txt("മലയാളം", "English", "Türkçe"),
+    toggle: txt("English", "മലയാളം", "Malayalam"),
+    day: txt("ദിവസം", "Day", "Gün"),
+    planetRuler: txt("ഗ്രഹ നാഥൻ", "Planet Ruler", "Gezegen Hükümdarı"),
+    qualities: txt("ഗുണങ്ങൾ", "Qualities", "Özellikler"),
+    warnings: txt("മുന്നറിയിപ്പുകൾ", "Warnings", "Uyarılar"),
+    suitableActions: txt("ഉചിത പ്രവൃത്തികൾ", "Suitable Actions", "Uygun Eylemler"),
+    note: txt("കുറിപ്പ്", "Note", "Not"),
+    source: txt("സ്രോതസ്സ്", "Source", "Kaynak"),
+    daytimeHours: txt("പകൽ 12 ഗ്രഹ മണിക്കൂറുകൾ", "Daytime 12 Planetary Hours", "Gündüz 12 Gezegen Saati"),
+    nighttimeHours: txt("രാത്രി 12 ഗ്രഹ മണിക്കൂറുകൾ", "Nighttime 12 Planetary Hours", "Gece 12 Gezegen Saati"),
+    hour: txt("മണിക്കൂർ", "Hour", "Saat"),
+    time: txt("സമയം", "Time", "Zaman"),
+    planet: txt("ഗ്രഹം", "Planet", "Gezegen"),
+    sunrise: txt("സൂര്യോദയം", "Sunrise", "Güneş Doğuşu"),
+    sunset: txt("സൂര്യാസ്തമയം", "Sunset", "Güneş Batışı"),
+    moonPosition: txt("ചന്ദ്രന്റെ സ്ഥാനം", "Moon Position", "Ay Pozisyonu"),
+    currentMansion: txt("നിലവിലെ നക്ഷത്രം", "Current Mansion", "Mevcut Menzil"),
+    zodiacSign: txt("രാശി", "Zodiac Sign", "Burç"),
+    degree: txt("ഡിഗ്രി", "Degree", "Derece"),
+    lunarMansions: txt("ചാന്ദ്ര നക്ഷത്രങ്ങൾ", "Lunar Mansions", "Ay Menzilleri"),
+    mansion: txt("നക്ഷത്രം", "Mansion", "Menzil"),
+    zodiac: txt("രാശി", "Zodiac", "Burçlar"),
+    suitable: txt("ഉചിതമായ പ്രവർത്തനങ്ങൾ", "Suitable Operations", "Uygun Çalışmalar"),
+    planets: txt("ഗ്രഹങ്ങൾ", "Planets", "Gezegenler"),
+    nature: txt("സ്വഭാവം", "Nature", "Doğa"),
+    benefits: txt("ഗുണങ്ങൾ", "Benefits", "Faydalar"),
+    spiritualOperations: txt("ആത്മിക പ്രവർത്തനങ്ങൾ", "Spiritual Operations", "Manevi Çalışmalar"),
+    element: txt("മൂലകം", "Element", "Element"),
+    gender: txt("ലിംഗം", "Gender", "Cinsiyet"),
+    metal: txt("ലോഹം", "Metal", "Metal"),
+    incense: txt("സുഗന്ധം", "Incense", "Tütsü"),
+    friendlySigns: txt("സൌഹൃദ രാശികൾ", "Friendly Signs", "Dost Burçlar"),
+    enemySigns: txt("ശത്രു രാശികൾ", "Enemy Signs", "Düşman Burçlar"),
+    spiritualMeaning: txt("ആത്മിക അർത്ഥം", "Spiritual Meaning", "Manevi Anlam"),
+    favorable: txt("അനുയോജ്യം", "Favorable", "Elverişli"),
+    neutral: txt("സാധാരണ", "Neutral", "Nötr"),
+    unfavorable: txt("പ്രതികൂലം", "Unfavorable", "Olumsuz"),
+    ready: txt("തയ്യാറാണ്", "Ready", "Hazır"),
+    traditionalSystem: txt("പാരമ്പര്യ വ്യവസ്ഥ", "Traditional System", "Geleneksel Sistem"),
   };
 
   return (

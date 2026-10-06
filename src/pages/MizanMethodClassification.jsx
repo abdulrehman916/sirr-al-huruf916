@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import { buildVefk } from "../lib/mizaanPostEngine";
@@ -72,16 +71,16 @@ export default function MizanMethodClassification() {
           const Q = Math.floor(V / 4);
           const R = V % 4;
           const generated = buildVefk(example.source, "fire");
-          
+
           // Calculate manuscript magic constant
           const msMC = example.manuscript[0].reduce((a, b) => a + b, 0);
           const msRowSums = example.manuscript.map(row => row.reduce((a, b) => a + b, 0));
-          const msColSums = example.manuscript[0].map((_, j) => 
+          const msColSums = example.manuscript[0].map((_, j) =>
             example.manuscript.reduce((sum, row) => sum + row[j], 0)
           );
           const msDiag1 = example.manuscript.reduce((sum, row, i) => sum + row[i], 0);
           const msDiag2 = example.manuscript.reduce((sum, row, i) => sum + row[3 - i], 0);
-          
+
           // Cell comparison
           let matchCount = 0;
           const differences = [];
@@ -128,16 +127,16 @@ export default function MizanMethodClassification() {
                   <div className="text-[7px] uppercase tracking-wider mb-1" style={{ color: G.goldDim }}>
                     Manuscript MC
                   </div>
-                  <div className="font-inter text-xl font-bold" style={{ 
-                    color: msMC === example.source ? G.green : G.red 
+                  <div className="font-inter text-xl font-bold" style={{
+                    color: msMC === example.source ? G.green : G.red
                   }}>
                     {msMC.toLocaleString()}
                   </div>
                   <div className="text-[6px]" style={{ color: G.dim }}>
                     Target: {example.source.toLocaleString()}
                   </div>
-                  <div className="text-[6px] mt-1" style={{ 
-                    color: msMC === example.source ? G.green : G.red 
+                  <div className="text-[6px] mt-1" style={{
+                    color: msMC === example.source ? G.green : G.red
                   }}>
                     {msMC === example.source ? "✓ Exact match" : "✗ Difference: " + (msMC - example.source)}
                   </div>
@@ -147,16 +146,16 @@ export default function MizanMethodClassification() {
                   <div className="text-[7px] uppercase tracking-wider mb-1" style={{ color: G.goldDim }}>
                     Algorithm MC
                   </div>
-                  <div className="font-inter text-xl font-bold" style={{ 
-                    color: generated.mc === example.source ? G.green : G.red 
+                  <div className="font-inter text-xl font-bold" style={{
+                    color: generated.mc === example.source ? G.green : G.red
                   }}>
                     {generated.mc.toLocaleString()}
                   </div>
                   <div className="text-[6px]" style={{ color: G.dim }}>
                     Target: {example.source.toLocaleString()}
                   </div>
-                  <div className="text-[6px] mt-1" style={{ 
-                    color: generated.mc === example.source ? G.green : G.red 
+                  <div className="text-[6px] mt-1" style={{
+                    color: generated.mc === example.source ? G.green : G.red
                   }}>
                     {generated.mc === example.source ? "✓ Exact match" : "✗ Difference: " + (generated.mc - example.source)}
                   </div>
@@ -171,16 +170,16 @@ export default function MizanMethodClassification() {
                 <div className="grid grid-cols-2 gap-3 text-[7px]">
                   <div>
                     <div style={{ color: G.dim }}>Row Sums:</div>
-                    <div style={{ 
-                      color: msRowSums.every(s => s === msMC) ? G.green : G.red 
+                    <div style={{
+                      color: msRowSums.every(s => s === msMC) ? G.green : G.red
                     }}>
                       {msRowSums.join(", ")}
                     </div>
                   </div>
                   <div>
                     <div style={{ color: G.dim }}>Col Sums:</div>
-                    <div style={{ 
-                      color: msColSums.every(s => s === msMC) ? G.green : G.red 
+                    <div style={{
+                      color: msColSums.every(s => s === msMC) ? G.green : G.red
                     }}>
                       {msColSums.join(", ")}
                     </div>

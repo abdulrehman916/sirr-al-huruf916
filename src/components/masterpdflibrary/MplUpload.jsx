@@ -6,7 +6,7 @@
  */
 import { useState, useEffect } from "react";
 import { Loader2, UploadCloud, CheckCircle2, XCircle, HardDrive, Cloud, FileBox } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
 
@@ -36,13 +36,13 @@ export default function MplUpload() {
   useEffect(() => {
     (async () => {
       try {
-        const adobe = await base44.functions.invoke("searchAdobeCloudPdfs", { mode: "status" });
+        const adobe = await platform.functions.invoke("searchAdobeCloudPdfs", { mode: "status" });
         const d = adobe?.data || adobe;
         setConn((c) => ({ ...c, adobe: d?.configured ? "connected" : "missing", adobeNote: d?.note }));
       } catch { setConn((c) => ({ ...c, adobe: "missing" })); }
       // Drive/OneDrive connection status — inferred by attempting a list call
-      try { const r = await base44.functions.invoke("searchGoogleDrivePdfs", { mode: "list", page_size: 1 }); setConn((c) => ({ ...c, drive: (r?.data || r)?.success ? "connected" : "missing" })); } catch { setConn((c) => ({ ...c, drive: "missing" })); }
-      try { const r = await base44.functions.invoke("searchOneDrivePdfs", { mode: "list", page_size: 1 }); setConn((c) => ({ ...c, onedrive: (r?.data || r)?.success ? "connected" : "missing" })); } catch { setConn((c) => ({ ...c, onedrive: "missing" })); }
+      try { const r = await platform.functions.invoke("searchGoogleDrivePdfs", { mode: "list", page_size: 1 }); setConn((c) => ({ ...c, drive: (r?.data || r)?.success ? "connected" : "missing" })); } catch { setConn((c) => ({ ...c, drive: "missing" })); }
+      try { const r = await platform.functions.invoke("searchOneDrivePdfs", { mode: "list", page_size: 1 }); setConn((c) => ({ ...c, onedrive: (r?.data || r)?.success ? "connected" : "missing" })); } catch { setConn((c) => ({ ...c, onedrive: "missing" })); }
     })();
   }, []);
 
@@ -51,14 +51,14 @@ export default function MplUpload() {
     if (!file) return;
     setUploading(true); setMsg(null);
     try {
-      const up = await base44.integrations.Core.UploadFile({ file });
+      const up = await platform.integrations.Core.UploadFile({ file });
       const fileUrl = up?.file_url || up?.data?.file_url;
       if (!fileUrl) throw new Error("Upload failed");
       const ts = Date.now();
       const rand = Math.random().toString(36).slice(2, 8);
       const masterBookId = `MPB-${ts}-${rand}`;
       const partId = `MPBP-${masterBookId}-1`;
-      await base44.entities.MasterPdfBook.create({
+      await platform.entities.MasterPdfBook.create({
         master_book_id: masterBookId,
         library_type: "master_library",
         import_source: "upload",

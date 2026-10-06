@@ -7,7 +7,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Book, Star, Moon, Sun, Sparkles, Shield } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -87,7 +87,7 @@ export function ClickableEntityCard({
     async function fetchCount() {
       setLoading(true);
       try {
-        const result = await base44.functions.invoke('queryManuscriptLibrary', {
+        const result = await platform.functions.invoke('queryManuscriptLibrary', {
           entity_type: entityType,
           entity_value: entityValue
         });
@@ -121,7 +121,7 @@ export function ClickableEntityCard({
       <Icon className="w-4 h-4" style={{ color: G.dim }} />
 
       {/* Arabic Display */}
-      <span 
+      <span
         className={`font-amiri font-bold ${sizeClasses[size]}`}
         style={{ color: G.text }}
         dir="rtl"
@@ -160,7 +160,7 @@ export function NatureBadge({ nature, onClick, showCount = false }) {
 
     async function fetchCount() {
       try {
-        const result = await base44.functions.invoke('queryManuscriptLibrary', {
+        const result = await platform.functions.invoke('queryManuscriptLibrary', {
           entity_type: 'SAAD_NAHS',
           entity_value: nature
         });

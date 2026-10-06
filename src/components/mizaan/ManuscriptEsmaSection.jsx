@@ -4,7 +4,7 @@
  * NO hidden calculations, NO skipped stages, NO summaries.
  */
 import { useMemo } from "react";
-import { buildVefk, ELEMENT_BAST_TOTALS, istintak, getBastLevel } from "../../lib/mizaanPostEngine";
+import { buildVefk, ELEMENT_BAST_TOTALS, istintak } from "../../lib/mizaanPostEngine";
 import IstintakSteps from "./IstintakSteps";
 
 const AR = {
@@ -24,13 +24,13 @@ const G = {
 // Letter chip component
 function LetterChip({ letter, color, size = "1.3rem" }) {
   return (
-    <span 
-      dir="rtl" 
+    <span
+      dir="rtl"
       lang="ar"
-      style={{ 
+      style={{
         fontFamily: "'Noto Naskh Arabic','Amiri','Scheherazade New',serif",
-        fontSize: size, 
-        color: color, 
+        fontSize: size,
+        color: color,
         fontWeight: "500",
         padding: "2px 6px",
         borderRadius: "4px",
@@ -48,10 +48,10 @@ function LetterChip({ letter, color, size = "1.3rem" }) {
 // Step row component
 function StepRow({ step, children, color }) {
   return (
-    <div style={{ 
-      marginBottom: "12px", 
-      padding: "10px", 
-      border: `1px solid ${color}30`, 
+    <div style={{
+      marginBottom: "12px",
+      padding: "10px",
+      border: `1px solid ${color}30`,
       borderRadius: "6px",
       background: `${color}05`
     }}>
@@ -79,14 +79,14 @@ export default function ManuscriptEsmaSection({
   const meta = TIER_LABELS[tier];
 
   const vefk = useMemo(() => buildVefk(satirTotal, element), [satirTotal, element]);
-  const guardianName = useMemo(() => 
-    istintak(ELEMENT_BAST_TOTALS[element] || 3550).join(''), 
+  const guardianName = useMemo(() =>
+    istintak(ELEMENT_BAST_TOTALS[element] || 3550).join(''),
     [element]
   );
 
   return (
     <div style={{ fontFamily: AR.fontFamily, direction: "rtl", textAlign: "right", marginBottom: "32px" }}>
-      
+
       {/* Section title */}
       <h3 style={{ fontSize: "1.5rem", color, marginBottom: "20px", fontWeight: "bold", borderBottom: `2px solid ${color}40`, paddingBottom: "10px" }}>
         {meta.ar} <span style={{ fontSize: "0.9rem", color: G.dim, fontWeight: "400" }}>({meta.en})</span>
@@ -140,9 +140,9 @@ export default function ManuscriptEsmaSection({
         <div style={{ fontSize: "0.8rem", color: G.text }}>
           Seed count: {data.seedCount}
         </div>
-        <div style={{ 
-          fontSize: "0.9rem", 
-          fontWeight: "bold", 
+        <div style={{
+          fontSize: "0.9rem",
+          fontWeight: "bold",
           color: data.isZevc ? G.green : "#F87171",
           marginTop: "6px",
           padding: "6px 10px",
@@ -167,9 +167,9 @@ export default function ManuscriptEsmaSection({
             <>{data.isZevc ? 'Zevc rule: 4th Bast' : 'Ferd rule: 5th Bast'}</>
           )}
         </div>
-        <div style={{ 
-          fontSize: "1rem", 
-          fontWeight: "bold", 
+        <div style={{
+          fontSize: "1rem",
+          fontWeight: "bold",
           color: G.green,
           marginTop: "6px",
           padding: "6px 10px",
@@ -187,9 +187,9 @@ export default function ManuscriptEsmaSection({
       <StepRow step="المرحلة ٦: تطبيق البسط على كل حرف واستنطاق (Stage 6: Apply Bast + Istintak to Each Seed)" color={color}>
         <div style={{ display: "grid", gap: "10px" }}>
           {data.seedBastValues.map((seed, idx) => (
-            <div key={idx} style={{ 
-              padding: "8px", 
-              border: `1px solid ${color}30`, 
+            <div key={idx} style={{
+              padding: "8px",
+              border: `1px solid ${color}30`,
               borderRadius: "6px",
               background: `${color}05`
             }}>
@@ -222,9 +222,9 @@ export default function ManuscriptEsmaSection({
         <div style={{ fontSize: "0.75rem", color: G.dim, marginBottom: "8px" }}>
           Complete Satr-ı Vahid letter sequence ({data.expandedCount} حرف):
         </div>
-        <div style={{ 
-          padding: "12px", 
-          border: `2px solid ${color}40`, 
+        <div style={{
+          padding: "12px",
+          border: `2px solid ${color}40`,
           borderRadius: "8px",
           background: `${color}08`,
           marginBottom: "8px"
@@ -247,9 +247,9 @@ export default function ManuscriptEsmaSection({
         <div style={{ fontSize: "0.8rem", color: G.text }}>
           Expanded count: {data.expandedCount}
         </div>
-        <div style={{ 
-          fontSize: "0.9rem", 
-          fontWeight: "bold", 
+        <div style={{
+          fontSize: "0.9rem",
+          fontWeight: "bold",
           color: data.isExpandedZevc ? G.green : "#F87171",
           marginTop: "6px",
           padding: "6px 10px",
@@ -273,9 +273,9 @@ export default function ManuscriptEsmaSection({
             const endIdx = Math.min(startIdx + data.groupSize, data.expandedCount);
             const groupLetters = data.expandedLetters.slice(startIdx, endIdx);
             return (
-              <div key={i} style={{ 
-                padding: "10px", 
-                border: `1px solid ${color}40`, 
+              <div key={i} style={{
+                padding: "10px",
+                border: `1px solid ${color}40`,
                 borderRadius: "6px",
                 background: `${color}08`
               }}>
@@ -295,10 +295,10 @@ export default function ManuscriptEsmaSection({
           })}
         </div>
         {data.remainder && data.remainder.length > 0 && (
-          <div style={{ 
-            marginTop: "10px", 
-            padding: "8px", 
-            border: `1px dashed ${color}40`, 
+          <div style={{
+            marginTop: "10px",
+            padding: "8px",
+            border: `1px dashed ${color}40`,
             borderRadius: "6px",
             background: `${color}05`
           }}>
@@ -332,9 +332,9 @@ export default function ManuscriptEsmaSection({
       <StepRow step="المرحلة ١٠: الأسماء النهائية (Stage 10: Final Names)" color={color}>
         <div style={{ display: "grid", gap: "6px" }}>
           {data.names.map((name, i) => (
-            <div key={i} style={{ 
-              fontSize: "1.6rem", 
-              color, 
+            <div key={i} style={{
+              fontSize: "1.6rem",
+              color,
               fontWeight: "bold",
               padding: "10px",
               border: `1px solid ${color}40`,

@@ -21,7 +21,7 @@
 import { useMemo, useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { getBastLevel as getBastLevelA, istintak, GALIB_ANASIR_VALUES, buildVefk } from "../../lib/mizaanPostEngine";
+import { getBastLevel as getBastLevelA, istintak, buildVefk } from "../../lib/mizaanPostEngine";
 
 // ── Design tokens ────────────────────────────────────────────────
 const G = {

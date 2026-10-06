@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, ShoppingBag, AlertTriangle, Search } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { MARKETPLACE_REGISTRY } from "@/lib/countryProfiles";
 
 const G = {
@@ -21,7 +21,7 @@ export default function MarketplaceLinksManager() {
   useEffect(() => {
     (async () => {
       try {
-        const list = await base44.entities.Product.list("-created_date", 500);
+        const list = await platform.entities.Product.list("-created_date", 500);
         setProducts(list || []);
       } catch { setProducts([]); }
       finally { setLoading(false); }

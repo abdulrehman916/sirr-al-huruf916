@@ -25,7 +25,7 @@
 //   UNVERIFIED = No trusted source (nothing stored)
 // ═══════════════════════════════════════════════════════════════
 
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const CACHE_KEY_PREFIX = "verified_arabic_";
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours — only for verified records
@@ -124,7 +124,7 @@ export async function lookupVerifiedArabic(
 
   const promise = (async () => {
     try {
-      const response = await base44.functions.invoke("verifyArabicText", {
+      const response = await platform.functions.invoke("verifyArabicText", {
         arabic_text: arabicText,
         source_type: sourceType,
         book_name: bookName,

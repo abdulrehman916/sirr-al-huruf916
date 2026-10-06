@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shuffle, Trash2, Star, ChevronDown, ChevronUp } from "lucide-react";
+import { Trash2, Star, ChevronDown, ChevronUp } from "lucide-react";
 import { FAAL_CELLS } from "../../lib/faalHasrathData";
 import { usePageState } from "../../context/PageStateContext";
 
@@ -28,7 +28,7 @@ const PAGE_KEY = 'faalAli';
 export default function FaalAli() {
   const { getPageState, setPageState, clearPageState } = usePageState();
   const createShuffled = useCallback(() => shuffleArray(FAAL_CELLS), []);
-  
+
   const initialShuffled = useMemo(() => createShuffled(), []);
   const initialState = getPageState(PAGE_KEY, {
     lang: "en",
@@ -36,8 +36,8 @@ export default function FaalAli() {
     selectedCell: null,
     hasShuffledOnce: false,
   });
-  
-  const [lang, setLang] = useState("en");
+
+  const [lang, setLang] = useState(initialState.lang || "en");
   const [shuffled, setShuffled] = useState(initialState.shuffled);
   const [selectedCell, setSelectedCell] = useState(initialState.selectedCell);
   const [hasShuffledOnce, setHasShuffledOnce] = useState(initialState.hasShuffledOnce);
@@ -98,7 +98,7 @@ export default function FaalAli() {
   };
 
   return (
-    <div 
+    <div
       className="space-y-4"
       style={{
         minHeight: 0,
@@ -190,9 +190,9 @@ export default function FaalAli() {
                 className="overflow-hidden"
                 style={{ touchAction: 'auto' }}
               >
-                <div 
+                <div
                   className="space-y-1.5 pt-2 pb-1"
-                  style={{ 
+                  style={{
                     touchAction: 'auto',
                     overscrollBehavior: 'contain'
                   }}
@@ -229,7 +229,7 @@ export default function FaalAli() {
                       maxWidth: "120px",
                     }}
                   >
-                    <div className="absolute inset-0" style={{ 
+                    <div className="absolute inset-0" style={{
                       background: `radial-gradient(ellipse 60% 50% at 50% 50%, rgba(212,175,55,0.08) 0%, transparent 60%),
                                    repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(212,175,55,0.03) 8px, rgba(212,175,55,0.03) 16px)`
                     }} />
@@ -279,7 +279,7 @@ export default function FaalAli() {
                     }}
                   >
                     <span className="font-amiri text-3xl" style={{ color: G.text }}>
-                       {selectedCell.innerMark === "dot" ? "•" : 
+                       {selectedCell.innerMark === "dot" ? "•" :
                         selectedCell.innerMark === "two-dots" ? "••" :
                         selectedCell.innerMark === "arc-up" ? "⌒" :
                         selectedCell.innerMark === "three-dots" ? "∴" :

@@ -1,5 +1,3 @@
-import { base44 } from '@/api/base44Client';
-
 // Query client instance with optimized defaults
 import { QueryClient } from '@tanstack/react-query';
 

@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Clock, CheckCircle, XCircle, User, Mail, Phone, Calendar, Search, Crown } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Clock, XCircle, Mail, Phone, Calendar, Search, Crown } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
@@ -48,7 +47,7 @@ export default function SubscriptionRequestsTab() {
   const loadRequests = async () => {
     setLoading(true);
     try {
-      const allRequests = await base44.entities.SubscriptionRequest.list("-requested_at");
+      const allRequests = await platform.entities.SubscriptionRequest.list("-requested_at");
       setRequests(allRequests);
     } catch (error) {
       toast({ title: "Error", description: error.message, variant: "destructive" });
@@ -58,11 +57,11 @@ export default function SubscriptionRequestsTab() {
   };
 
   const filteredRequests = requests.filter(req => {
-    const matchesSearch = 
+    const matchesSearch =
       req.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       req.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
       req.page_name.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     const matchesStatus = statusFilter === "all" || req.status === statusFilter;
     return matchesSearch && matchesStatus;
   });
@@ -74,11 +73,11 @@ export default function SubscriptionRequestsTab() {
       const days = parseInt(customDays) || 30;
       const now = new Date();
       const expiryDate = new Date(now.getTime() + days * 86400000);
-      
+
       // Find user by email
-      const allUsers = await base44.entities.User.list();
+      const allUsers = await platform.entities.User.list();
       const targetUser = allUsers.find(u => u.email === approving.email);
-      
+
       if (!targetUser) {
         toast({ title: "User Not Found", description: "Please ensure the user has registered first.", variant: "destructive" });
         return;
@@ -88,7 +87,7 @@ export default function SubscriptionRequestsTab() {
       const permissionCode = approving.page_path.replace("/", "").toUpperCase().replace(/-/g, "_") + "_ACCESS";
 
       // Grant page permission
-      const permResult = await base44.functions.invoke("grantPagePermission", {
+      const permResult = await platform.functions.invoke("grantPagePermission", {
         user_id: targetUser.id,
         page_path: approving.page_path,
         page_name: approving.page_name,
@@ -98,9 +97,9 @@ export default function SubscriptionRequestsTab() {
       });
 
       // Update subscription request
-      await base44.entities.SubscriptionRequest.update(approving.id, {
+      await platform.entities.SubscriptionRequest.update(approving.id, {
         status: "ACTIVATED",
-        approved_by: (await base44.auth.me()).id,
+        approved_by: (await platform.auth.me()).id,
         approved_at: now.toISOString(),
         activation_duration_days: days,
         expiry_date: expiryDate.toISOString(),
@@ -117,11 +116,11 @@ export default function SubscriptionRequestsTab() {
 
   const handleReject = async (request) => {
     if (!confirm(`Reject subscription request from ${request.name}?`)) return;
-    
+
     try {
-      await base44.entities.SubscriptionRequest.update(request.id, {
+      await platform.entities.SubscriptionRequest.update(request.id, {
         status: "REJECTED",
-        approved_by: (await base44.auth.me()).id,
+        approved_by: (await platform.auth.me()).id,
         approved_at: new Date().toISOString(),
       });
       toast({ title: "✓ Request Rejected" });
@@ -246,14 +245,14 @@ export default function SubscriptionRequestsTab() {
                   </Badge>
                   {req.status === "PENDING" && (
                     <div className="flex gap-2 mt-2">
-                      <button 
+                      <button
                         onClick={() => { setApproving(req); setCustomDays(PLAN_DAYS[req.selected_plan]?.toString() || "30"); }}
                         className="px-3 py-1 rounded text-xs font-semibold"
                         style={{ background: "rgba(34,197,94,0.12)", color: "#4ade80", border: "1px solid rgba(34,197,94,0.30)" }}
                       >
                         Activate
                       </button>
-                      <button 
+                      <button
                         onClick={() => handleReject(req)}
                         className="px-3 py-1 rounded text-xs font-semibold"
                         style={{ background: "rgba(239,68,68,0.12)", color: "#ef4444", border: "1px solid rgba(239,68,68,0.30)" }}
@@ -311,7 +310,7 @@ export default function SubscriptionRequestsTab() {
                   style={{ background: "transparent", border: `1px solid ${G.border}`, color: G.text }}>
                   Cancel
                 </button>
-                <button 
+                <button
                   onClick={handleApprove}
                   className="flex-1 py-3 rounded-xl font-inter font-bold text-sm"
                   style={{ background: "linear-gradient(135deg,#f6d860,#c98a14)", color: "#0d1b2a" }}

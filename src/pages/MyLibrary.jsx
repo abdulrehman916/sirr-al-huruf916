@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { BookOpen, CalendarClock, FileText, LockKeyhole } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { useI18n } from "@/i18n/I18nContext";
 
@@ -44,7 +44,7 @@ export default function MyLibrary() {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([base44.listMyEntitlements(), base44.listFreeResources(100)])
+    Promise.all([platform.listMyEntitlements(), platform.listFreeResources(100)])
       .then(([owned, free]) => {
         if (!cancelled) { setEntitlements(owned || []); setFreeResources(free || []); }
       })

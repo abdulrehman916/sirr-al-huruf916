@@ -11,7 +11,13 @@
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify:records": "node scripts/verify-record-identity.mjs",
+    "verify:independence": "node scripts/verify-independence.mjs",
+    "verify:private-references": "node scripts/verify-private-references.mjs",
+    "verify:calculation-regression": "node scripts/verify-calculation-regression.mjs",
+    "verify:calculation-source": "node scripts/verify-calculation-source.mjs",
+    "verify:async-calculation": "node scripts/verify-async-calculation.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",
@@ -90,6 +96,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "baseline-browser-mapping": "^2.8.32",
+    "esbuild": "0.25.12",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",

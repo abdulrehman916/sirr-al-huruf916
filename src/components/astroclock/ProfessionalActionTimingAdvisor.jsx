@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Search, Calendar, Clock, Star, AlertTriangle, CheckCircle, XCircle, BookOpen, Info, Sun, Moon, Zap } from "lucide-react";
+import { Search, Calendar, Clock, Star, AlertTriangle, CheckCircle, XCircle, BookOpen, Info, Sun } from "lucide-react";
 import { getActionTimingAdvice, findSimilarActions } from "@/lib/astroClockActionTimingAdvisor";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
@@ -46,7 +46,7 @@ export default function ProfessionalActionTimingAdvisor() {
 
   const handleSearch = async () => {
     if (!action.trim()) return;
-    
+
     setLoading(true);
     setTimeout(() => {
       const advice = getActionTimingAdvice(action, isMalayalam ? 'ml' : 'en');
@@ -107,8 +107,8 @@ export default function ProfessionalActionTimingAdvisor() {
               value={action}
               onChange={handleInputChange}
               onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-              placeholder={isMalayalam 
-                ? "പ്രവൃത്തി നൽകുക (വിവാഹം, യാത്ര, വ്യാപാരം...)" 
+              placeholder={isMalayalam
+                ? "പ്രവൃത്തി നൽകുക (വിവാഹം, യാത്ര, വ്യാപാരം...)"
                 : "Enter action (Marriage, Travel, Business...)"}
               className="w-full px-5 py-4 rounded-xl border focus:outline-none focus:ring-2"
               style={{
@@ -393,10 +393,10 @@ function CurrentStatusCard({ results, isMalayalam }) {
     en: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     ml: ["ഞായർ", "തിങ്കൾ", "ചൊവ്വ", "ബുധൻ", "വ്യാഴം", "വെള്ളി", "ശനി"]
   };
-  
+
   const currentDay = dayNames[isMalayalam ? 'ml' : 'en'][today.getDay()];
   const isBestDay = results.bestDays?.some(d => d.day === currentDay);
-  
+
   return (
     <div className={`p-4 rounded-lg border ${isBestDay ? 'bg-green-900/20 border-green-500/40' : 'bg-yellow-900/20 border-yellow-500/40'}`}>
       <div className="flex items-center justify-between">
@@ -408,7 +408,7 @@ function CurrentStatusCard({ results, isMalayalam }) {
         </div>
         <div className={`px-4 py-2 rounded-lg ${isBestDay ? 'bg-green-500/20' : 'bg-yellow-500/20'}`}>
           <p className={`font-inter text-xs font-bold ${isBestDay ? 'text-green-400' : 'text-yellow-400'}`}>
-            {isBestDay 
+            {isBestDay
               ? (isMalayalam ? "ഉത്തമം" : "Favorable")
               : (isMalayalam ? "ശരാശരി" : "Neutral")}
           </p>
@@ -422,7 +422,7 @@ function DayCards({ days, isMalayalam }) {
   if (!days || days.length === 0) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "വിവരങ്ങൾ ലഭ്യമല്ല" : "No data available"}</p>;
   }
-  
+
   return (
     <div className="grid grid-cols-1 gap-3">
       {days.map((day, idx) => (
@@ -451,7 +451,7 @@ function HourCards({ hours, isMalayalam }) {
   if (!hours || hours.length === 0) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "വിവരങ്ങൾ ലഭ്യമല്ല" : "No data available"}</p>;
   }
-  
+
   return (
     <div className="grid grid-cols-2 gap-3">
       {hours.map((hour, idx) => (
@@ -469,11 +469,11 @@ function MansionCards({ mansions, isMalayalam, isBest }) {
   if (!mansions || mansions.length === 0) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "വിവരങ്ങൾ ലഭ്യമല്ല" : "No data available"}</p>;
   }
-  
+
   const color = isBest ? "#22c55e" : "#ef4444";
   const bg = isBest ? "rgba(34,197,94,0.05)" : "rgba(239,68,68,0.05)";
   const border = isBest ? "rgba(34,197,94,0.30)" : "rgba(239,68,68,0.30)";
-  
+
   return (
     <div className="grid grid-cols-2 gap-3">
       {mansions.map((mansion, idx) => (
@@ -495,11 +495,11 @@ function PlanetCards({ planets, isMalayalam, isSuitable }) {
   if (!planets || planets.length === 0) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "വിവരങ്ങൾ ലഭ്യമല്ല" : "No data available"}</p>;
   }
-  
+
   const color = isSuitable ? "#22c55e" : "#ef4444";
   const bg = isSuitable ? "rgba(34,197,94,0.05)" : "rgba(239,68,68,0.05)";
   const border = isSuitable ? "rgba(34,197,94,0.30)" : "rgba(239,68,68,0.30)";
-  
+
   return (
     <div className="grid grid-cols-3 gap-3">
       {planets.map((planet, idx) => (
@@ -518,7 +518,7 @@ function RecommendationCard({ results, isMalayalam }) {
     const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     return dayNames[today] === d.day;
   });
-  
+
   return (
     <div className={`p-5 rounded-lg border ${isFavorable ? 'bg-green-900/20 border-green-500/40' : 'bg-yellow-900/20 border-yellow-500/40'}`}>
       <div className="flex items-start gap-3">
@@ -546,11 +546,11 @@ function RecommendationCard({ results, isMalayalam }) {
 
 function NextBestTimeCard({ results, isMalayalam }) {
   const nextBestDay = results.bestDays?.[0];
-  
+
   if (!nextBestDay) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "വിവരങ്ങൾ ലഭ്യമല്ല" : "No data available"}</p>;
   }
-  
+
   return (
     <div className="p-4 rounded-lg border" style={{ background: "rgba(251,191,36,0.05)", borderColor: "rgba(251,191,36,0.30)" }}>
       <div className="flex items-center gap-3">
@@ -570,11 +570,11 @@ function NextBestTimeCard({ results, isMalayalam }) {
 
 function AvoidTimesCard({ results, isMalayalam }) {
   const worstDays = results.worstDays || [];
-  
+
   if (worstDays.length === 0) {
     return <p className="font-inter text-sm text-white/50">{isMalayalam ? "ഒഴിവാക്കേണ്ട ദിവസങ്ങൾ ഇല്ല" : "No days to avoid"}</p>;
   }
-  
+
   return (
     <div className="space-y-2">
       {worstDays.map((day, idx) => (

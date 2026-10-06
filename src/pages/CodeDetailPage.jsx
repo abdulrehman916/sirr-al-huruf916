@@ -13,10 +13,9 @@ import {
   Smartphone, Mail, Phone, MessageCircle, Clock, FileText, History,
   Shield, Loader2, AlertCircle,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
-import RemainingTime from "@/components/admin/RemainingTime";
 import RenewCodeModal from "@/components/admin/RenewCodeModal";
 import EditCodeModal from "@/components/admin/EditCodeModal";
 import {
@@ -80,7 +79,7 @@ export default function CodeDetailPage() {
   const load = async () => {
     setLoading(true);
     try {
-      const data = await base44.entities.AccessCode.get(codeId);
+      const data = await platform.entities.AccessCode.get(codeId);
       setCode(data);
     } catch (e) {
       toast({ title: "Failed to load code", description: e.message, variant: "destructive" });
@@ -94,7 +93,7 @@ export default function CodeDetailPage() {
   const handleToggleDisable = async () => {
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
+      const res = await platform.functions.invoke("setAccessCodeDisabled", { code_id: code.id, disable: !code.is_disabled });
       if (!res.data?.success) throw new Error(res.data?.message || "Action failed");
       toast({ title: code.is_disabled ? "✓ Code enabled" : "✓ Code disabled" });
       load();
@@ -109,7 +108,7 @@ export default function CodeDetailPage() {
     if (!confirm(`Reset device binding for "${code.code}"? This allows the code to be redeemed on a new device.`)) return;
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("resetCodeDevice", { code_id: code.id });
+      const res = await platform.functions.invoke("resetCodeDevice", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: "✓ Device binding reset" });
         load();
@@ -127,7 +126,7 @@ export default function CodeDetailPage() {
     if (!confirm(`Delete code "${code.code}"? This permanently revokes all permissions granted by this code.`)) return;
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
+      const res = await platform.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: `✓ Code "${code.code}" deleted` });
         navigate("/admin/access-dashboard?tab=codes");

@@ -3,9 +3,9 @@ import { Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Settings, MessageCircle, Info, Database, Download, Upload, Clock,
-  Shield, Loader2, Globe, Archive, RotateCcw,
+  Shield, Loader2, Globe, RotateCcw,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -57,7 +57,7 @@ export default function AdminSettings() {
   const [resetOnboardingLoading, setResetOnboardingLoading] = useState(false);
 
   useEffect(() => {
-    base44.auth.me().then(user => {
+    platform.auth.me().then(user => {
       if (!user || !["owner", "admin"].includes(user.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
       // Load saved settings from localStorage
@@ -96,7 +96,7 @@ export default function AdminSettings() {
   const handleBackup = async () => {
     setBackupLoading(true);
     try {
-      const res = await base44.functions.invoke("automatedBackup");
+      const res = await platform.functions.invoke("automatedBackup");
       if (res.data?.success || res.data?.backup_url) {
         toast({ title: "✓ Backup created successfully" });
       } else {
@@ -113,7 +113,7 @@ export default function AdminSettings() {
     if (!confirm("Restore from latest backup? This will overwrite current data.")) return;
     setRestoreLoading(true);
     try {
-      const res = await base44.functions.invoke("restoreFromZipBackup");
+      const res = await platform.functions.invoke("restoreFromZipBackup");
       if (res.data?.success) {
         toast({ title: "✓ Backup restored successfully" });
       } else {
@@ -130,7 +130,7 @@ export default function AdminSettings() {
     if (!confirm("Reset onboarding for ALL users? They will see the introduction rules again on their next visit.")) return;
     setResetOnboardingLoading(true);
     try {
-      const res = await base44.functions.invoke("resetOnboarding");
+      const res = await platform.functions.invoke("resetOnboarding");
       if (res.data?.success) {
         toast({ title: "✓ Onboarding reset for all users", description: res.data?.message });
       } else {
@@ -147,7 +147,7 @@ export default function AdminSettings() {
     setExportLoading(type);
     try {
       const exportType = type === "users" ? "users" : type === "logs" ? "audit_logs" : "full";
-      const res = await base44.functions.invoke("exportData", { export_type: exportType });
+      const res = await platform.functions.invoke("exportData", { export_type: exportType });
       // exportData returns JSON directly — download it as a file
       const blob = new Blob([JSON.stringify(res.data, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);

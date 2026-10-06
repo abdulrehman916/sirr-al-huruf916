@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Clock, Book, ChevronRight, Star } from "lucide-react";
 import { getAllPlanetaryHours, DAY_INFO } from "@/lib/astroClockLiveEngine";
-import { calculateSunriseSunset, formatDecimalTime } from "@/lib/astroClockSunriseSunset";
+import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset";
 import { getCurrentPlanetaryHour } from "@/lib/astroClockLiveEngine";
 import { getPlanetFriendships } from "@/lib/astroClockPlanetFriendships.js";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
@@ -64,7 +64,7 @@ export default function PlanetaryHourBookView() {
         const [endH, endM] = currentHour.endTime.split(':').map(Number);
         const endDate = new Date(now);
         endDate.setHours(endH, endM, 0, 0);
-        
+
         const diff = endDate - now;
         if (diff > 0) {
           const hrs = Math.floor(diff / 3600000);
@@ -73,7 +73,7 @@ export default function PlanetaryHourBookView() {
           setCountdown(`${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`);
         }
       }, 1000);
-      
+
       return () => clearInterval(interval);
     }
   }, [currentHour]);
@@ -144,12 +144,12 @@ export default function PlanetaryHourBookView() {
             {isMalayalam ? "24 മണിക്കൂർ ക്രമം" : "24-Hour Planetary Sequence"}
           </p>
         </div>
-        
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
           {(allHours || []).map((hour, idx) => (
-            <HourSequenceCard 
-              key={idx} 
-              hour={hour} 
+            <HourSequenceCard
+              key={idx}
+              hour={hour}
               isCurrent={currentHour?.hourNumber === hour.hourNumber}
               isMalayalam={isMalayalam}
             />
@@ -200,8 +200,8 @@ function CurrentHourCard({ hour, countdown, isMalayalam }) {
         <InfoRow label={isMalayalam ? "മണിക്കൂർ" : "Hour"} value={`#${hour.hourNumber}`} />
         <InfoRow label={isMalayalam ? "സമയം" : "Time"} value={`${hour.startTime} → ${hour.endTime}`} />
         <InfoRow label={isMalayalam ? "കൗണ്ട്ഡൗൺ" : "Countdown"} value={countdown} highlight />
-        <InfoRow 
-          label={isMalayalam ? "സ്ഥിതി" : "Status"} 
+        <InfoRow
+          label={isMalayalam ? "സ്ഥിതി" : "Status"}
           value={isMalayalam ? hour.planetInfo?.nature_ml : hour.planetInfo?.nature}
           status={isSaad ? "good" : "bad"}
         />
@@ -258,8 +258,8 @@ function NextHourCard({ hour, isMalayalam }) {
       <div className="space-y-2 mb-4">
         <InfoRow label={isMalayalam ? "മണിക്കൂർ" : "Hour"} value={`#${hour.hourNumber}`} />
         <InfoRow label={isMalayalam ? "സമയം" : "Time"} value={`${hour.startTime} → ${hour.endTime}`} />
-        <InfoRow 
-          label={isMalayalam ? "സ്ഥിതി" : "Status"} 
+        <InfoRow
+          label={isMalayalam ? "സ്ഥിതി" : "Status"}
           value={isMalayalam ? hour.planetInfo?.nature_ml : hour.planetInfo?.nature}
           status={isSaad ? "good" : "bad"}
         />
@@ -290,7 +290,7 @@ function NextHourCard({ hour, isMalayalam }) {
 
 function HourSequenceCard({ hour, isCurrent, isMalayalam }) {
   return (
-    <div 
+    <div
       className="p-3 rounded-lg border text-center"
       style={{
         background: isCurrent ? G.current : G.bg,

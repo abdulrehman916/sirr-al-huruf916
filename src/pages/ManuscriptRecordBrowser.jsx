@@ -5,9 +5,9 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Database, Search, Filter, Book, FileText, Hash, ChevronDown, ChevronUp, X } from "lucide-react";
+import { Database, Search, Book, FileText, Hash, ChevronDown, ChevronUp } from "lucide-react";
 import PageLayout from "../components/PageLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay, ArabicTextWithTranslation } from "../components/astroclock/ArabicLetterDisplay";
 
 const G = {
@@ -52,7 +52,7 @@ export default function ManuscriptRecordBrowser() {
   async function loadRecords() {
     setLoading(true);
     try {
-      const data = await base44.entities.ManuscriptRule.list('-created_date', 100);
+      const data = await platform.entities.ManuscriptRule.list('-created_date', 100);
       setRecords(data);
     } catch (e) {
       console.error(e);
@@ -64,10 +64,10 @@ export default function ManuscriptRecordBrowser() {
     try {
       // Load only what's needed — manuscripts list is small, rules should be sampled
       const [rules, manuscripts] = await Promise.all([
-        base44.entities.ManuscriptRule.list('-created_date', 500),
-        base44.entities.ManuscriptLibrary.list()
+        platform.entities.ManuscriptRule.list('-created_date', 500),
+        platform.entities.ManuscriptLibrary.list()
       ]);
-      
+
       const categoryCount = {};
       rules.forEach(r => {
         categoryCount[r.category] = (categoryCount[r.category] || 0) + 1;
@@ -329,7 +329,7 @@ function RecordCard({ record, expanded, onToggle }) {
 function DataJsonDisplay({ dataJson }) {
   try {
     const data = typeof dataJson === 'string' ? JSON.parse(dataJson) : dataJson;
-    
+
     return (
       <div className="space-y-3">
         {/* Arabic Letter */}
@@ -369,8 +369,8 @@ function DataJsonDisplay({ dataJson }) {
         )}
 
         {/* Other Data */}
-        {Object.entries(data).filter(([k]) => 
-          !['letter', 'letter_malayalam', 'lunar_mansion', 'lunar_mansion_arabic', 'lunar_mansion_malayalam', 
+        {Object.entries(data).filter(([k]) =>
+          !['letter', 'letter_malayalam', 'lunar_mansion', 'lunar_mansion_arabic', 'lunar_mansion_malayalam',
             'zodiac', 'zodiac_arabic', 'zodiac_malayalam', 'planet', 'planet_arabic', 'planet_malayalam',
             'page_number', 'manuscript_id'].includes(k)
         ).length > 0 && (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, Check, X, Trash2, MessageSquare, Search } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -28,8 +28,8 @@ export default function ReviewsManager() {
     try {
       setLoading(true);
       const [revs, prods] = await Promise.all([
-        base44.entities.ProductReview.list("-created_date", 200),
-        base44.entities.Product.list("-created_date", 200),
+        platform.entities.ProductReview.list("-created_date", 200),
+        platform.entities.Product.list("-created_date", 200),
       ]);
       setReviews(revs || []);
       setProducts(prods || []);
@@ -52,18 +52,18 @@ export default function ReviewsManager() {
   });
 
   const approve = async (r) => {
-    try { await base44.entities.ProductReview.update(r.id, { is_approved: true }); toast({ title: "Review approved" }); load(); }
+    try { await platform.entities.ProductReview.update(r.id, { is_approved: true }); toast({ title: "Review approved" }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 
   const reject = async (r) => {
-    try { await base44.entities.ProductReview.update(r.id, { is_approved: false }); toast({ title: "Review hidden" }); load(); }
+    try { await platform.entities.ProductReview.update(r.id, { is_approved: false }); toast({ title: "Review hidden" }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 
   const handleDelete = async (id) => {
     if (!confirm("Delete this review permanently?")) return;
-    try { await base44.entities.ProductReview.delete(id); toast({ title: "Review deleted" }); load(); }
+    try { await platform.entities.ProductReview.delete(id); toast({ title: "Review deleted" }); load(); }
     catch (err) { toast({ title: "Error", description: err.message, variant: "destructive" }); }
   };
 

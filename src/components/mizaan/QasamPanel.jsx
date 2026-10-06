@@ -23,7 +23,6 @@ import {
   OMANI_FORM_NOTE,
   RITUAL_ORDER_NOTE,
   PDF_SOURCE_LABEL,
-  PDF_URL,
   VERIFICATION_STATUS,
 } from "@/lib/qasamData";
 

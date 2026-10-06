@@ -6,10 +6,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Book, FileText, Search, X, ChevronDown, ChevronUp, Moon, Sun, Star, Sparkles, Scroll, Shield, Gem } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Book, Search, X, ChevronDown, ChevronUp, Moon, Sun, Star, Sparkles, Scroll, Shield, Gem } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay, ArabicTextWithTranslation } from "./ArabicLetterDisplay";
+import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay } from "./ArabicLetterDisplay";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -51,7 +51,7 @@ export default function ManuscriptKnowledgeExplorer({ entityType, entityData, on
   async function loadRelatedRecords() {
     setLoading(true);
     try {
-      const result = await base44.functions.invoke('queryManuscriptLibrary', {
+      const result = await platform.functions.invoke('queryManuscriptLibrary', {
         entity_type: entityType,
         entity_value: entityData
       });

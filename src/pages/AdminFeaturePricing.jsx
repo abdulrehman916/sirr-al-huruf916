@@ -13,7 +13,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Navigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import FeaturePlansEditor from "@/components/admin/FeaturePlansEditor";
 import { FEATURE_REGISTRY } from "@/lib/featureRegistry";
@@ -37,7 +37,7 @@ export default function AdminFeaturePricing() {
 
   const checkAdmin = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
       loadData();
@@ -50,8 +50,8 @@ export default function AdminFeaturePricing() {
     setLoading(true);
     try {
       const [cfgs, allPlans] = await Promise.all([
-        base44.entities.FeatureConfig.list("-updated_at", 200),
-        base44.entities.SubscriptionPlanConfig.list("sort_order", 500),
+        platform.entities.FeatureConfig.list("-updated_at", 200),
+        platform.entities.SubscriptionPlanConfig.list("sort_order", 500),
       ]);
       setConfigs(cfgs || []);
       setPlans(allPlans || []);

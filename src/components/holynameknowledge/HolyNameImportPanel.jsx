@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { UploadCloud, Loader2, CheckCircle2, AlertTriangle, FileText, Lock } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { HOLY_NAMES } from "@/lib/magicalHolyNamesData";
 
@@ -97,7 +97,7 @@ export default function HolyNameImportPanel({ onImported }) {
       const blob = await new Promise((r) => canvas.toBlob(r, "image/jpeg", 0.82));
       if (!blob) return null;
       const file = new File([blob], `page-${pageNum}.jpg`, { type: "image/jpeg" });
-      const up = await base44.integrations.Core.UploadFile({ file });
+      const up = await platform.integrations.Core.UploadFile({ file });
       return up?.file_url || null;
     } catch { return null; }
   };
@@ -110,7 +110,7 @@ export default function HolyNameImportPanel({ onImported }) {
     for (const file of files) {
       try {
         addLog(`Uploading "${file.name}"…`);
-        const up = await base44.integrations.Core.UploadFile({ file });
+        const up = await platform.integrations.Core.UploadFile({ file });
         const file_url = up?.file_url;
         if (!file_url) { addLog(`✗ Upload failed for "${file.name}"`); continue; }
 
@@ -136,7 +136,7 @@ export default function HolyNameImportPanel({ onImported }) {
           addLog(`No usable text layer. Using verbatim LLM fallback…`);
         }
 
-        const res = await base44.functions.invoke("importHolyNamesPDF", payload);
+        const res = await platform.functions.invoke("importHolyNamesPDF", payload);
         const d = res?.data || {};
         addLog(
           `✓ "${file.name}": ${d.names_found || 0} names · ${d.sections_added || 0} sections added · ${d.duplicates_skipped || 0} duplicates skipped (${d.extraction_method || "raw"})`

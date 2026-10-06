@@ -3,7 +3,7 @@
 // Attached at the bottom of Mizaan9Page. NEVER modifies Mizan logic.
 // Full i18n: English / Malayalam via shared useRitualLang() state.
 // ═══════════════════════════════════════════════════════════════
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown, Clock, Moon, Compass, AlertTriangle, BookOpen,
@@ -11,7 +11,7 @@ import {
   CheckCircle2, XCircle, AlertCircle,
 } from "lucide-react";
 import { analyzeRitualTiming } from "../../lib/ritualTimingEngineV3";
-import { localizeAnalysis, tStr, tPlanet, tDay, tStatus, useRitualLang, RITUAL_LANGS } from "../../lib/ritualTimingI18n";
+import { localizeAnalysis, tStr, useRitualLang, RITUAL_LANGS } from "../../lib/ritualTimingI18n";
 import { useAstroClockKnowledgeAll } from "../../hooks/useAstroClockKnowledgeAll";
 import { usePurposeActionKeywords } from "../../hooks/usePurposeActionKeywords";
 

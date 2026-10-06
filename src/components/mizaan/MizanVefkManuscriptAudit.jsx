@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { buildVefk, VEFK_TEMPLATES } from "../../lib/mizaanPostEngine";
+import { buildVefk } from "../../lib/mizaanPostEngine";
 import { ChevronDown, ChevronRight, CheckCircle2, XCircle } from "lucide-react";
 
 const G = {
@@ -91,7 +91,7 @@ function GridDisplay({ grid, label, highlight = [] }) {
 function CellComparison({ generated, manuscript, idx }) {
   const match = generated === manuscript;
   const diff = generated - manuscript;
-  
+
   return (
     <div className="flex items-center justify-between py-1 px-2 rounded text-[7px] font-inter"
       style={{
@@ -149,11 +149,11 @@ export default function MizanVefkManuscriptAudit() {
           const V = example.source - 30;
           const Q = Math.floor(V / 4);
           const R = V % 4;
-          
+
           const generated = buildVefk(example.source, "fire");
           const genGrid = generated.grid;
           const msGrid = example.manuscript;
-          
+
           // Cell-by-cell comparison
           const comparisons = [];
           let matchCount = 0;
@@ -170,13 +170,13 @@ export default function MizanVefkManuscriptAudit() {
               if (genVal === msVal) matchCount++;
             }
           }
-          
+
           const isPerfectMatch = matchCount === 16;
-          
+
           // Row sum verification
           const genRowSums = genGrid.map(row => row.reduce((a, b) => a + b, 0));
           const msRowSums = msGrid.map(row => row.reduce((a, b) => a + b, 0));
-          
+
           return (
             <Card key={example.id}>
               <button

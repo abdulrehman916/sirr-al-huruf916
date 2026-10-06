@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { Upload, FileJson, FileSpreadsheet, Loader2, Database } from "lucide-react";
 import * as XLSX from "xlsx";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import ImportReport from "./ImportReport";
 
 const G = {
@@ -149,7 +149,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
         let versionId = null;
         setProgress({ phase: "backup", current: 0, total: 1 });
         try {
-          const backupRes = await base44.functions.invoke("backupPurposeDictionary", {
+          const backupRes = await platform.functions.invoke("backupPurposeDictionary", {
             label: `Pre-import ${new Date().toISOString()}`,
           });
           versionId = backupRes.data?.version_id || null;
@@ -165,7 +165,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
           const chunk = parsed.slice(c * CHUNK_SIZE, (c + 1) * CHUNK_SIZE);
           setProgress({ phase: "import", current: c + 1, total: totalChunks });
           try {
-            const response = await base44.functions.invoke("bulkImportPurposeDictionary", { entries: chunk });
+            const response = await platform.functions.invoke("bulkImportPurposeDictionary", { entries: chunk });
             const r = response.data || {};
             aggregated.total += r.total || 0;
             aggregated.imported += r.imported || 0;
@@ -184,7 +184,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
         if (importFailed && versionId) {
           setProgress({ phase: "rollback", current: 0, total: 1 });
           try {
-            const restoreRes = await base44.functions.invoke("restorePurposeDictionary", { version_id: versionId });
+            const restoreRes = await platform.functions.invoke("restorePurposeDictionary", { version_id: versionId });
             const rd = restoreRes.data || {};
             // Client-side recreation: download snapshot + bulkCreate in chunks
             if (rd.snapshot_file_url) {
@@ -195,7 +195,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
               for (let rc = 0; rc < restoreChunks; rc++) {
                 setProgress({ phase: "rollback", current: rc + 1, total: restoreChunks });
                 const chunk = records.slice(rc * 250, (rc + 1) * 250);
-                await base44.entities.PurposeDictionary.bulkCreate(chunk);
+                await platform.entities.PurposeDictionary.bulkCreate(chunk);
               }
             }
             aggregated.errors.unshift(`Import failed: ${failError?.message || "Unknown error"}. Automatically rolled back to pre-import state (${rd.record_count} records restored).`);
@@ -203,11 +203,11 @@ export default function ImportExportBar({ entries, onImportComplete }) {
             aggregated.errors.unshift(`Import failed: ${failError?.message}. Rollback also failed: ${rollbackErr.message}. Manual restore needed via Version History.`);
           }
           try {
-            await base44.functions.invoke("finalizePurposeDictionaryImport", { version_id: versionId, report: aggregated, status: "failed" });
+            await platform.functions.invoke("finalizePurposeDictionaryImport", { version_id: versionId, report: aggregated, status: "failed" });
           } catch {}
         } else if (versionId) {
           try {
-            await base44.functions.invoke("finalizePurposeDictionaryImport", { version_id: versionId, report: aggregated, status: "completed" });
+            await platform.functions.invoke("finalizePurposeDictionaryImport", { version_id: versionId, report: aggregated, status: "completed" });
           } catch {}
         }
 

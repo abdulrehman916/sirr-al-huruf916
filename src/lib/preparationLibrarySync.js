@@ -1,4 +1,4 @@
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ═══════════════════════════════════════════════════════════════
 // PREPARATION LIBRARY SYNC
@@ -9,7 +9,7 @@ import { base44 } from "@/api/base44Client";
 
 export async function fetchPreparations() {
   try {
-    return await base44.entities.Preparation.list("-created_date", 500);
+    return await platform.entities.Preparation.list("-created_date", 500);
   } catch {
     return [];
   }
@@ -17,7 +17,7 @@ export async function fetchPreparations() {
 
 export async function fetchPreparationsByType(type) {
   try {
-    return await base44.entities.Preparation.filter(
+    return await platform.entities.Preparation.filter(
       { preparation_type: type },
       "-created_date",
       200
@@ -29,7 +29,7 @@ export async function fetchPreparationsByType(type) {
 
 export async function fetchPreparationDetail(id) {
   try {
-    return await base44.entities.Preparation.get(id);
+    return await platform.entities.Preparation.get(id);
   } catch {
     return null;
   }
@@ -37,7 +37,7 @@ export async function fetchPreparationDetail(id) {
 
 export async function fetchRelatedPreparations(methodId, methodIdAlt) {
   try {
-    const all = await base44.entities.Preparation.list("-created_date", 500);
+    const all = await platform.entities.Preparation.list("-created_date", 500);
     return all.filter((p) => {
       const usedBy = p.used_by_methods || [];
       return usedBy.some(

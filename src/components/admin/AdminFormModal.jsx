@@ -7,7 +7,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import { X, Loader2, Check, Copy, Mail, MessageCircle, User } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { ADMIN_PERMISSIONS, ADMIN_FORBIDDEN } from "@/lib/adminPermissions";
 
@@ -50,12 +50,12 @@ export default function AdminFormModal({ mode, profile, onClose, onSaved }) {
       if (mode === "add") {
         // First, invite the user via platform
         try {
-          await base44.users.inviteUser(email.trim(), "admin");
+          await platform.users.inviteUser(email.trim(), "admin");
         } catch (inviteErr) {
           // User might already exist — continue anyway
         }
 
-        const res = await base44.functions.invoke("manageAdminProfile", {
+        const res = await platform.functions.invoke("manageAdminProfile", {
           action: "CREATE",
           email: email.trim(),
           full_name: fullName.trim(),
@@ -71,13 +71,13 @@ export default function AdminFormModal({ mode, profile, onClose, onSaved }) {
         }
       } else {
         const [updateRes, permRes] = await Promise.all([
-          base44.functions.invoke("manageAdminProfile", {
+          platform.functions.invoke("manageAdminProfile", {
             action: "UPDATE",
             admin_profile_id: profile.admin_profile_id,
             full_name: fullName.trim(),
             whatsapp_number: whatsapp.trim(),
           }),
-          base44.functions.invoke("manageAdminProfile", {
+          platform.functions.invoke("manageAdminProfile", {
             action: "UPDATE_PERMISSIONS",
             admin_profile_id: profile.admin_profile_id,
             permissions,

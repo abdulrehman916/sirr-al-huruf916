@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SearchX, ShoppingBag, Heart, PackageOpen } from "lucide-react";
+import { SearchX, Heart, PackageOpen } from "lucide-react";
 
 const G = {
   text: "#F5D060",

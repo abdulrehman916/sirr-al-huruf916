@@ -5,7 +5,7 @@
  */
 import { useState, useEffect } from "react";
 import { Loader2, BookOpen, FileText, AlertTriangle, CheckCircle2, Copy, Clock } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = { border: "rgba(212,175,55,0.40)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)" };
 
@@ -29,8 +29,8 @@ export default function MplOverview() {
   useEffect(() => {
     (async () => {
       try {
-        const books = await base44.entities.MasterPdfBook.list("-upload_date", 200);
-        const pages = await base44.entities.MasterPdfPage.list("-indexed_at", 200);
+        const books = await platform.entities.MasterPdfBook.list("-upload_date", 200);
+        const pages = await platform.entities.MasterPdfPage.list("-indexed_at", 200);
         const byStatus = {};
         (books || []).forEach((b) => { byStatus[b.extraction_status] = (byStatus[b.extraction_status] || 0) + 1; });
         const needsReview = (pages || []).filter((p) => p.needs_owner_review).length;

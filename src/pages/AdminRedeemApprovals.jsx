@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import { Search, ClipboardCheck, Clock, CheckCircle, XCircle, AlertCircle, Gavel } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Dialog } from "@/components/ui/dialog";
@@ -56,7 +56,7 @@ export default function AdminRedeemApprovals() {
 
   const checkAdminAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         toast({
@@ -81,7 +81,7 @@ export default function AdminRedeemApprovals() {
   const loadApprovals = async () => {
     setLoading(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "GET_ALL",
       });
       if (res.data?.success) {
@@ -123,7 +123,7 @@ export default function AdminRedeemApprovals() {
     await loadApprovals();
     // Update selected approval with fresh data
     if (selectedApproval) {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "GET_ALL",
       });
       if (res.data?.success) {
@@ -138,7 +138,7 @@ export default function AdminRedeemApprovals() {
   const handleApprove = async (approvalId) => {
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "APPROVE",
         approval_id: approvalId,
       });
@@ -162,7 +162,7 @@ export default function AdminRedeemApprovals() {
   const handleReject = async (approvalId, reason) => {
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "REJECT",
         approval_id: approvalId,
         rejection_reason: reason,
@@ -187,7 +187,7 @@ export default function AdminRedeemApprovals() {
   const handleRequestInfo = async (approvalId, message) => {
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "REQUEST_INFO",
         approval_id: approvalId,
         info_request_message: message,
@@ -212,7 +212,7 @@ export default function AdminRedeemApprovals() {
   const handleOverride = async (approvalId, newStatus, reason) => {
     setActionLoading(true);
     try {
-      const res = await base44.functions.invoke("manageRedeemCodeApproval", {
+      const res = await platform.functions.invoke("manageRedeemCodeApproval", {
         action: "OVERRIDE",
         approval_id: approvalId,
         new_status: newStatus,

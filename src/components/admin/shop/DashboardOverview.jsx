@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Package, ShoppingCart, Users, DollarSign, TrendingUp, AlertTriangle, Star, Clock } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Package, ShoppingCart, Users, DollarSign, TrendingUp, AlertTriangle, Clock } from "lucide-react";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
@@ -33,10 +33,10 @@ export default function DashboardOverview({ onNavigate }) {
     (async () => {
       try {
         const [products, orders, customers, categories] = await Promise.all([
-          base44.entities.Product.list("-created_date", 500),
-          base44.entities.ShopOrder.list("-created_date", 100),
-          base44.entities.ShopCustomer.list("-created_date", 100),
-          base44.entities.ShopCategory.list("display_order", 100),
+          platform.entities.Product.list("-created_date", 500),
+          platform.entities.ShopOrder.list("-created_date", 100),
+          platform.entities.ShopCustomer.list("-created_date", 100),
+          platform.entities.ShopCategory.list("display_order", 100),
         ]);
 
         const prods = products || [];

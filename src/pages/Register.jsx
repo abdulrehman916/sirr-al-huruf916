@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,7 +30,7 @@ export default function Register() {
     }
     setLoading(true);
     try {
-      const result = await base44.auth.register({
+      const result = await platform.auth.register({
         email: email.trim(),
         password,
         emailRedirectTo: `${window.location.origin}${returnTo}`,
@@ -48,7 +48,7 @@ export default function Register() {
   };
 
   const handleGoogle = () => {
-    base44.auth.loginWithProvider("google", "/");
+    platform.auth.loginWithProvider("google", "/");
   };
 
   if (confirmationSent) {

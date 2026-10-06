@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navigate } from "react-router-dom";
-import { Users, Shield, CheckCircle, XCircle, Plus, Trash2, Search, ChevronDown, ChevronUp, Clock, Calendar } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Users, Shield, CheckCircle, Plus, Trash2, Search, ChevronDown, ChevronUp, Clock } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -72,7 +72,7 @@ function GrantModal({ user, existingPaths, onClose, onGranted }) {
     for (const path of selectedPages) {
       const page = GRANTABLE_PAGES.find(p => p.path === path);
       try {
-        await base44.functions.invoke("grantPagePermission", {
+        await platform.functions.invoke("grantPagePermission", {
           user_id: user.id,
           page_path: path,
           page_name: page.name,
@@ -218,8 +218,8 @@ function UserRow({ user, permissions, onRefresh }) {
     if (!confirm(`Revoke "${perm.page_name}" for ${user.full_name || user.email}?`)) return;
     setRevoking(perm.permission_id);
     try {
-      const me = await base44.auth.me();
-      await base44.functions.invoke("revokePagePermission", {
+      const me = await platform.auth.me();
+      await platform.functions.invoke("revokePagePermission", {
         permission_id: perm.permission_id,
         revoked_by: me.id,
         reason: "Revoked by owner",
@@ -375,7 +375,7 @@ export default function AdminUserPermissions() {
 
   const init = async () => {
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       if (!me || !["owner", "admin"].includes(me.role)) {
         setIsAdmin(false);
         return;
@@ -391,8 +391,8 @@ export default function AdminUserPermissions() {
     setLoading(true);
     try {
       const [allUsers, allPerms] = await Promise.all([
-        base44.entities.User.list(null, 500),
-        base44.entities.PagePermission.list(null, 500),
+        platform.entities.User.list(null, 500),
+        platform.entities.PagePermission.list(null, 500),
       ]);
       setUsers(allUsers);
       setPermissions(allPerms);

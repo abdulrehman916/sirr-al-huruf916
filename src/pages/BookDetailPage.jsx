@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, BookOpen, Lock, Download, Loader2 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 export default function BookDetailPage() {
   const { slug } = useParams();
@@ -12,7 +12,7 @@ export default function BookDetailPage() {
   const [downloadError, setDownloadError] = useState("");
 
   useEffect(() => {
-    base44.entities.BookPublication.filter({ slug, status: "PUBLISHED" }, null, 1)
+    platform.entities.BookPublication.filter({ slug, status: "PUBLISHED" }, null, 1)
       .then((rows) => setBook(rows?.[0] || null)).catch(() => setBook(null)).finally(() => setLoading(false));
   }, [slug]);
 
@@ -25,7 +25,7 @@ export default function BookDetailPage() {
     setDownloading(true);
     setDownloadError("");
     try {
-      const result = await base44.integrations.Core.CreateSignedDownload({ path: book.pdf_path });
+      const result = await platform.integrations.Core.CreateSignedDownload({ path: book.pdf_path });
       window.location.assign(result.signed_url);
     } catch (error) {
       setDownloadError(error?.message || "Download തയ്യാറാക്കാൻ കഴിഞ്ഞില്ല.");

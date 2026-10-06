@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Edit3, Trash2, Eye, EyeOff, Tag, Save } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -38,7 +38,7 @@ export default function BrandsManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopBrand.list("display_order", 200);
+      const list = await platform.entities.ShopBrand.list("display_order", 200);
       setBrands(list || []);
     } catch {
       setBrands([]);
@@ -67,11 +67,11 @@ export default function BrandsManager() {
     const now = new Date().toISOString();
     try {
       if (editId) {
-        await base44.entities.ShopBrand.update(editId, { ...form, slug, updated_at: now });
+        await platform.entities.ShopBrand.update(editId, { ...form, slug, updated_at: now });
         toast({ title: "Brand updated" });
       } else {
         const maxOrder = brands.reduce((mx, b) => Math.max(mx, b.display_order || 0), 0);
-        await base44.entities.ShopBrand.create({ ...form, slug, display_order: maxOrder + 1, updated_at: now });
+        await platform.entities.ShopBrand.create({ ...form, slug, display_order: maxOrder + 1, updated_at: now });
         toast({ title: "Brand created" });
       }
       setShowForm(false);
@@ -84,7 +84,7 @@ export default function BrandsManager() {
   const handleDelete = async (id) => {
     if (!confirm("Delete this brand?")) return;
     try {
-      await base44.entities.ShopBrand.delete(id);
+      await platform.entities.ShopBrand.delete(id);
       toast({ title: "Brand deleted" });
       load();
     } catch (err) {
@@ -94,7 +94,7 @@ export default function BrandsManager() {
 
   const toggleActive = async (brand) => {
     try {
-      await base44.entities.ShopBrand.update(brand.id, { is_active: !brand.is_active, updated_at: new Date().toISOString() });
+      await platform.entities.ShopBrand.update(brand.id, { is_active: !brand.is_active, updated_at: new Date().toISOString() });
       load();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });

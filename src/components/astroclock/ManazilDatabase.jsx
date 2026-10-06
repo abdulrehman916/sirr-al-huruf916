@@ -10,10 +10,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Moon, ChevronDown, BookOpen } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { LUNAR_MANSION_DATA } from "@/lib/astroClockLunarMansionML.js";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import ManuscriptKnowledgeExplorer from "./ManuscriptKnowledgeExplorer";
 import ManuscriptCorrespondences from "./ManuscriptCorrespondences";
-import { LunarMansionDisplay, ArabicLetterDisplay, PlanetDisplay, ZodiacSignDisplay, ElementDisplay, SaadNahsDisplay } from "./ArabicLetterDisplay";
+import { ArabicLetterDisplay, PlanetDisplay, ZodiacSignDisplay, SaadNahsDisplay } from "./ArabicLetterDisplay";
 import { useManuscriptExplorer } from "./useManuscriptExplorer";
 
 const G = {
@@ -49,7 +49,7 @@ export default function ManazilDatabase() {
       const records = {};
       for (const manzil of (LUNAR_MANSION_DATA || [])) {
         try {
-          const result = await base44.functions.invoke('queryManuscriptLibrary', {
+          const result = await platform.functions.invoke('queryManuscriptLibrary', {
             entity_type: 'LUNAR_MANSION',
             entity_value: manzil.name_arabic
           });
@@ -97,7 +97,7 @@ export default function ManazilDatabase() {
         <div className="space-y-2">
             {(LUNAR_MANSION_DATA || []).map((manzil) => (
                 <div key={manzil.number} className="rounded-lg border" style={{borderColor: G.faint, background: G.bg}}>
-                    <button 
+                    <button
                         onClick={() => setExpandedManzil(expandedManzil === manzil.number ? null : manzil.number)}
                         className="w-full p-4 flex items-center justify-between text-left"
                     >
@@ -125,7 +125,7 @@ export default function ManazilDatabase() {
                             >
                                 <BookOpen className="w-5 h-5" style={{ color: G.text }} />
                             </button>
-                            <ChevronDown 
+                            <ChevronDown
                                 className="w-6 h-6 text-gold transition-transform"
                                 style={{transform: expandedManzil === manzil.number ? 'rotate(180deg)' : 'rotate(0deg)'}}
                             />
@@ -181,7 +181,7 @@ export default function ManazilDatabase() {
                                         showCount
                                         count={0}
                                     />
-                                    
+
                                     {/* Zodiac Sign - Clickable */}
                                     <ZodiacSignDisplay
                                         arabic={manzil.zodiac_sign_arabic}
@@ -205,7 +205,7 @@ export default function ManazilDatabase() {
                                         showCount
                                         count={0}
                                     />
-                                    
+
                                     {/* Saad/Nahs - Clickable */}
                                     <SaadNahsDisplay
                                         nature={manzil.nature}
@@ -214,7 +214,7 @@ export default function ManazilDatabase() {
                                         count={0}
                                     />
                                 </div>
-                                
+
                                 {/* Operations */}
                                 <div className="p-4 rounded-lg" style={{background: "rgba(34,197,94,0.08)", border: `1px solid rgba(34,197,94,0.40)`}}>
                                     <p className="font-inter text-[8px] uppercase tracking-widest mb-3 font-bold" style={{color: "#22c55e"}}>

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { X, CalendarPlus2, Ban, AlertCircle, ChevronDown, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -27,8 +27,8 @@ export default function ManageSubscriptionModal({ subscription, onClose, onSucce
         payload.extend_days = extendDays;
       }
 
-      const res = await base44.functions.invoke("adminManageSubscription", payload);
-      
+      const res = await platform.functions.invoke("adminManageSubscription", payload);
+
       if (res.data?.success) {
         toast({ title: `✓ ${action === "cancel" ? "Cancelled" : "Extended"}`, description: res.data.message });
         onSuccess();

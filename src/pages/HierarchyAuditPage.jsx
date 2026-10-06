@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,7 +28,7 @@ export default function HierarchyAuditPage() {
 
   const runAudit = async () => {
     try {
-      const res = await base44.functions.invoke('auditHierarchy', {});
+      const res = await platform.functions.invoke('auditHierarchy', {});
       setAudit(res.data);
     } catch (error) {
       console.error('Audit failed:', error);
@@ -177,7 +177,7 @@ export default function HierarchyAuditPage() {
                       {tier} — Arabic Angel
                     </h3>
                   </div>
-                  
+
                   {/* Complete Workflow Display */}
                   <div className="space-y-3">
                     {/* Step 1 */}
@@ -185,13 +185,13 @@ export default function HierarchyAuditPage() {
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.dim }}>Step 1: Original Hierarchy Value</p>
                       <p className="text-3xl font-bold" style={{ color: G.text }}>{data.arabicAngel.originalValue}</p>
                     </div>
-                    
+
                     {/* Step 2 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(79,227,255,0.08)", border: `1px solid ${G.angel}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.angel }}>Step 2: Ulvi Adjustment Rule</p>
                       <p className="font-mono text-sm" style={{ color: G.text }}>{data.arabicAngel.adjustmentRule}</p>
                     </div>
-                    
+
                     {/* Step 3 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(79,227,255,0.08)", border: `1px solid ${G.angel}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.angel }}>Step 3: Adjusted Extraction Value</p>
@@ -200,7 +200,7 @@ export default function HierarchyAuditPage() {
                         Extracted: {data.arabicAngel.extractedTotalValue} | Remainder: {data.arabicAngel.extractionRemainder}
                       </p>
                     </div>
-                    
+
                     {/* Step 4 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(212,175,55,0.08)", border: `1px solid ${G.text}30` }}>
                       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: G.dim }}>Step 4: Extracted Letters ({data.arabicAngel.letterCount} letters)</p>
@@ -218,13 +218,13 @@ export default function HierarchyAuditPage() {
                         ))}
                       </div>
                     </div>
-                    
+
                     {/* Step 5 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(79,227,255,0.08)", border: `1px solid ${G.angel}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.angel }}>Step 5: Constructed Name (BEFORE Tashkeel)</p>
                       <p className="text-2xl font-bold" dir="rtl" style={{ color: G.text }}>{data.arabicAngel.nameBefore}</p>
                     </div>
-                    
+
                     {/* Step 6 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(79,227,255,0.12)", border: `1px solid ${G.angel}60` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.angel }}>Step 6: Final Vocalized Name (AFTER Tashkeel)</p>
@@ -251,7 +251,7 @@ export default function HierarchyAuditPage() {
                       {tier} — Arabic Jinn
                     </h3>
                   </div>
-                  
+
                   {/* Complete Workflow Display */}
                   <div className="space-y-3">
                     {/* Step 1 */}
@@ -259,13 +259,13 @@ export default function HierarchyAuditPage() {
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.dim }}>Step 1: Original Hierarchy Value</p>
                       <p className="text-3xl font-bold" style={{ color: G.text }}>{data.arabicJinn.originalValue}</p>
                     </div>
-                    
+
                     {/* Step 2 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(255,159,90,0.08)", border: `1px solid ${G.jinn}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.jinn }}>Step 2: Ulvi Adjustment Rule</p>
                       <p className="font-mono text-sm" style={{ color: G.text }}>{data.arabicJinn.adjustmentRule}</p>
                     </div>
-                    
+
                     {/* Step 3 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(255,159,90,0.08)", border: `1px solid ${G.jinn}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.jinn }}>Step 3: Adjusted Extraction Value</p>
@@ -274,7 +274,7 @@ export default function HierarchyAuditPage() {
                         Extracted: {data.arabicJinn.extractedTotalValue} | Remainder: {data.arabicJinn.extractionRemainder}
                       </p>
                     </div>
-                    
+
                     {/* Step 4 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(212,175,55,0.08)", border: `1px solid ${G.text}30` }}>
                       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: G.dim }}>Step 4: Extracted Letters ({data.arabicJinn.letterCount} letters)</p>
@@ -292,13 +292,13 @@ export default function HierarchyAuditPage() {
                         ))}
                       </div>
                     </div>
-                    
+
                     {/* Step 5 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(255,159,90,0.08)", border: `1px solid ${G.jinn}40` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.jinn }}>Step 5: Constructed Name (BEFORE Tashkeel)</p>
                       <p className="text-2xl font-bold" dir="rtl" style={{ color: G.text }}>{data.arabicJinn.nameBefore}</p>
                     </div>
-                    
+
                     {/* Step 6 */}
                     <div className="p-3 rounded-lg" style={{ background: "rgba(255,159,90,0.12)", border: `1px solid ${G.jinn}60` }}>
                       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: G.jinn }}>Step 6: Final Vocalized Name (AFTER Tashkeel)</p>

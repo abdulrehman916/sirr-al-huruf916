@@ -7,7 +7,7 @@
  * All functions are non-blocking: they call the backend function and
  * silently catch errors so they never affect the shop UI.
  */
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ── Anonymous session ID (localStorage, no personal data) ──
 function getSessionId() {
@@ -26,7 +26,7 @@ function getSessionId() {
 // ── Fire-and-forget logger ──
 function logEvent(event_type, data = {}) {
   try {
-    base44.functions.invoke("logShopAnalyticsEvent", {
+    platform.functions.invoke("logShopAnalyticsEvent", {
       event_type,
       session_id: getSessionId(),
       ...data,

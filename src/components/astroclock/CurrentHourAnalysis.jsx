@@ -3,7 +3,7 @@
 // Book-based knowledge ONLY
 // ═══════════════════════════════════════════════════════════════
 
-import { Clock, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { Clock, CheckCircle, AlertCircle } from "lucide-react";
 
 const G = {
   border: "rgba(212,175,55,0.40)",

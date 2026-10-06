@@ -6,7 +6,7 @@
  * Uses: AdminProfile entity + manageAdminProfile backend function.
  */
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Navigate } from "react-router-dom";
 import {
   Shield,
@@ -21,7 +21,7 @@ import {
   Crown,
   AlertCircle,
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { ADMIN_PERMISSIONS } from "@/lib/adminPermissions";
@@ -214,21 +214,21 @@ export default function AdminAdmins() {
 
   const checkAccess = async () => {
     try {
-      const user = await base44.auth.me();
+      const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         return;
       }
       setIsAdmin(true);
 
-      const res = await base44.functions.invoke("manageAdminProfile", { action: "GET_STATUS" });
+      const res = await platform.functions.invoke("manageAdminProfile", { action: "GET_STATUS" });
       setIsOwner(res.data?.is_owner || false);
       setProfiles(res.data?.profiles || []);
 
       // Fetch customer assignment stats if owner
       if (res.data?.is_owner) {
         try {
-          const statsRes = await base44.functions.invoke("manageCustomerAssignment", {
+          const statsRes = await platform.functions.invoke("manageCustomerAssignment", {
             action: "GET_STATS",
           });
           setAssignmentStats(statsRes.data?.stats || null);
@@ -244,7 +244,7 @@ export default function AdminAdmins() {
   const handleAction = async (action, params = {}) => {
     setBusy(true);
     try {
-      const res = await base44.functions.invoke("manageAdminProfile", { action, ...params });
+      const res = await platform.functions.invoke("manageAdminProfile", { action, ...params });
       if (res.data?.success) {
         toast({ title: `✓ ${action.toLowerCase().replace(/_/g, " ")} success` });
         await checkAccess();

@@ -6,7 +6,7 @@ import {
   RefreshCw, AlertCircle, Calendar, MessageSquare,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
 import { isAdminRole } from "@/lib/rbac";
@@ -52,7 +52,7 @@ export default function AdminDashboard() {
 
   const fetchStats = async () => {
     try {
-      const res = await base44.functions.invoke("getUserStats");
+      const res = await platform.functions.invoke("getUserStats");
       setStats(res.data.stats);
     } catch {}
   };
@@ -60,8 +60,8 @@ export default function AdminDashboard() {
   const fetchPending = async () => {
     try {
       const [a, b] = await Promise.all([
-        base44.entities.PremiumAccessRequest.filter({ status: "PENDING" }).then(r => r.length),
-        base44.entities.AccessRequest.filter({ status: "PENDING" }).then(r => r.length),
+        platform.entities.PremiumAccessRequest.filter({ status: "PENDING" }).then(r => r.length),
+        platform.entities.AccessRequest.filter({ status: "PENDING" }).then(r => r.length),
       ]);
       setPendingRequests(a + b);
     } catch {}

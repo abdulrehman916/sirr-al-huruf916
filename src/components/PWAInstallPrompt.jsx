@@ -71,7 +71,7 @@ export default function PWAInstallPrompt() {
               <div className="flex-shrink-0 w-11 h-11 rounded-xl overflow-hidden border"
                 style={{ borderColor: "rgba(212,175,55,0.28)" }}>
                 <img
-                  src="https://media.base44.com/images/public/69f3dea51ce92ee2fde20be6/9627dbf20_generated_image.png"
+                  src="/icons/icon-192.svg"
                   alt="Sirr al-Huruf"
                   className="w-full h-full object-cover"
                 />

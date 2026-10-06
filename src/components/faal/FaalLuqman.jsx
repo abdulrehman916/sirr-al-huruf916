@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shuffle, Trash2, Star, ChevronDown, ChevronUp } from "lucide-react";
+import { Trash2, ChevronDown, ChevronUp } from "lucide-react";
 import { LUQMAN_CELLS } from "../../lib/faalLuqmanData";
 import { usePageState } from "../../context/PageStateContext";
 
@@ -28,7 +28,7 @@ const PAGE_KEY = 'faalLuqman';
 export default function FaalLuqman() {
   const { getPageState, setPageState, clearPageState } = usePageState();
   const createShuffled = useCallback(() => shuffleArray(LUQMAN_CELLS), []);
-  
+
   const initialShuffled = useMemo(() => createShuffled(), []);
   const initialState = getPageState(PAGE_KEY, {
     lang: "en",
@@ -36,8 +36,8 @@ export default function FaalLuqman() {
     selectedCell: null,
     hasShuffledOnce: false,
   });
-  
-  const [lang, setLang] = useState("en");
+
+  const [lang, setLang] = useState(initialState.lang || "en");
   const [shuffled, setShuffled] = useState(initialState.shuffled);
   const [selectedCell, setSelectedCell] = useState(initialState.selectedCell);
   const [hasShuffledOnce, setHasShuffledOnce] = useState(initialState.hasShuffledOnce);
@@ -100,7 +100,7 @@ export default function FaalLuqman() {
   };
 
   return (
-    <div 
+    <div
       className="space-y-4"
       style={{
         minHeight: 0,
@@ -192,9 +192,9 @@ export default function FaalLuqman() {
                 className="overflow-hidden"
                 style={{ touchAction: 'auto' }}
               >
-                <div 
+                <div
                   className="space-y-1.5 pt-2 pb-1"
-                  style={{ 
+                  style={{
                     touchAction: 'auto',
                     overscrollBehavior: 'contain'
                   }}
@@ -213,7 +213,7 @@ export default function FaalLuqman() {
               <p className="font-inter text-[8px] text-white/60 text-center mb-3">
                 Focus on your question and select one card from the sacred grid
               </p>
-              
+
               <div className="grid grid-cols-7 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-7 xl:grid-cols-7 gap-2 mt-2">
                 {shuffled.map((cell, idx) => (
                   <motion.button
@@ -232,7 +232,7 @@ export default function FaalLuqman() {
                       maxWidth: "90px",
                     }}
                   >
-                    <div className="absolute inset-0" style={{ 
+                    <div className="absolute inset-0" style={{
                       background: `radial-gradient(ellipse 60% 50% at 50% 50%, rgba(212,175,55,0.08) 0%, transparent 60%),
                                    repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(212,175,55,0.03) 8px, rgba(212,175,55,0.03) 16px)`
                     }} />

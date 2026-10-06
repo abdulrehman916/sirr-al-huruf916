@@ -10,7 +10,7 @@
 //   - Pages with images / errors / skipped
 //   - Bulk import gate status
 // ═══════════════════════════════════════════════════════════════
-import { ChevronLeft, CheckCircle2, XCircle, AlertCircle, FileText, Image, BookOpen, Sparkles, Lock, Unlock, Loader2 } from "lucide-react";
+import { ChevronLeft, CheckCircle2, XCircle, AlertCircle, FileText, Image, BookOpen, Sparkles, Lock, Unlock } from "lucide-react";
 
 function MetricCard({ icon: Icon, label, value, color, sublabel }) {
   return (

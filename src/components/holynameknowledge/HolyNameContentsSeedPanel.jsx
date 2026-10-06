@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { BookCopy, Loader2, CheckCircle2, AlertTriangle, Lock } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 
 const P = {
@@ -53,14 +53,14 @@ export default function HolyNameContentsSeedPanel({ onSeeded }) {
       addLog(`Uploading ${files.length} Contents page(s)…`);
       const file_urls = [];
       for (const f of files) {
-        const up = await base44.integrations.Core.UploadFile({ file: f });
+        const up = await platform.integrations.Core.UploadFile({ file: f });
         const url = up?.file_url;
         if (url) file_urls.push(url);
       }
       if (file_urls.length === 0) { addLog("✗ Upload failed."); setBusy(false); return; }
 
       addLog(`Reading the Table of Contents (transcribing every name verbatim)…`);
-      const res = await base44.functions.invoke("seedHolyOneNamesFromContents", {
+      const res = await platform.functions.invoke("seedHolyOneNamesFromContents", {
         file_urls,
         source_pdf_file,
       });

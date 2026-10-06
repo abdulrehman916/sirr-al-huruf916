@@ -4,10 +4,9 @@ import {
   MessageSquare, Search, Clock, X, Send, Image, Mic,
   Square, Play, Pause, ExternalLink
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
-import { ADMIN_CONFIG } from "@/lib/adminConfig";
 import WhatsAppMessenger from "./WhatsAppMessenger";
 
 const G = {
@@ -126,7 +125,7 @@ function ChatModal({ ticket, messages, onClose, onRefresh }) {
     if (!replyText.trim()) return;
     setSending(true);
     try {
-      await base44.functions.invoke("createSupportMessage", {
+      await platform.functions.invoke("createSupportMessage", {
         ticket_id: ticket.ticket_id,
         message: replyText,
         sender_type: "ADMIN"
@@ -144,8 +143,8 @@ function ChatModal({ ticket, messages, onClose, onRefresh }) {
     setUploading(true);
     try {
       const isAudio = file.type.startsWith("audio/");
-      const { file_url } = await base44.integrations.Core.UploadFile({ file });
-      await base44.functions.invoke("createSupportMessage", {
+      const { file_url } = await platform.integrations.Core.UploadFile({ file });
+      await platform.functions.invoke("createSupportMessage", {
         ticket_id: ticket.ticket_id,
         message: isAudio ? "🎙️ Voice message" : `📎 ${file.name}`,
         sender_type: "ADMIN",
@@ -266,11 +265,11 @@ export default function MessagesTab() {
   const loadTickets = async () => {
     setLoading(true);
     try {
-      const allTickets = await base44.entities.SupportTickets.list("-created_at");
+      const allTickets = await platform.entities.SupportTickets.list("-created_at");
       setTickets(allTickets);
       const messagesMap = {};
       for (const ticket of allTickets) {
-        const msgs = await base44.entities.SupportMessage.filter({ ticket_id: ticket.ticket_id }, "created_at");
+        const msgs = await platform.entities.SupportMessage.filter({ ticket_id: ticket.ticket_id }, "created_at");
         messagesMap[ticket.ticket_id] = msgs || [];
       }
       setMessages(messagesMap);

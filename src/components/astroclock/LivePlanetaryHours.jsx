@@ -6,8 +6,8 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Clock, Timer, Sun, Moon } from "lucide-react";
-import { getCurrentPlanetaryHour, getAllPlanetaryHours, PLANET_INFO } from "@/lib/astroClockLiveEngine";
+import { Timer, Sun, Moon } from "lucide-react";
+import { getCurrentPlanetaryHour, PLANET_INFO } from "@/lib/astroClockLiveEngine";
 import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { safeFormatTime } from "@/lib/astroClockDateUtils.js";
@@ -55,7 +55,7 @@ export default function LivePlanetaryHours() {
   const updateCurrentHour = (date, sunTimes) => {
     const hour = getCurrentPlanetaryHour(date, sunTimes.sunrise, sunTimes.sunset);
     setCurrentHour(hour);
-    
+
     // Calculate countdown from remainingTime
     if (hour.remainingTime) {
       setCountdown(hour.remainingTime);
@@ -89,7 +89,7 @@ export default function LivePlanetaryHours() {
       animate={{ opacity: 1, y: 0 }}
       className="rounded-2xl border p-5 relative overflow-hidden"
       style={{
-        background: isDay 
+        background: isDay
           ? "linear-gradient(145deg, rgba(255,200,100,0.08) 0%, rgba(255,150,50,0.05) 100%)"
           : "linear-gradient(145deg, rgba(10,22,56,0.99) 0%, rgba(5,12,36,0.99) 100%)",
         borderColor: G.borderHi,
@@ -109,7 +109,7 @@ export default function LivePlanetaryHours() {
             </p>
           </div>
         </div>
-        
+
         {sunData && (
           <div className="flex flex-wrap gap-x-3 gap-y-1">
             {(location?.name) && (
@@ -160,37 +160,37 @@ export default function LivePlanetaryHours() {
 
         {/* Right: Hour Details */}
         <div className="space-y-3">
-          <InfoRow 
-            label={isMalayalam ? "മണിക്കൂർ" : "Hour Number"} 
-            value={`#${currentHour.hourNumber}`} 
-            isMalayalam={isMalayalam} 
+          <InfoRow
+            label={isMalayalam ? "മണിക്കൂർ" : "Hour Number"}
+            value={`#${currentHour.hourNumber}`}
+            isMalayalam={isMalayalam}
           />
-          <InfoRow 
-            label={isMalayalam ? "സമയം" : "Time Period"} 
-            value={`${currentHour.hourStart} - ${currentHour.hourEnd}`} 
-            isMalayalam={isMalayalam} 
+          <InfoRow
+            label={isMalayalam ? "സമയം" : "Time Period"}
+            value={`${currentHour.hourStart} - ${currentHour.hourEnd}`}
+            isMalayalam={isMalayalam}
           />
-          <InfoRow 
-            label={isMalayalam ? "ദിവസ നാഥൻ" : "Day Ruler"} 
+          <InfoRow
+            label={isMalayalam ? "ദിവസ നാഥൻ" : "Day Ruler"}
             value={isMalayalam ? PLANET_INFO[currentHour.dayRuler]?.name_ml_equivalent : PLANET_INFO[currentHour.dayRuler]?.name_en}
             symbol={PLANET_INFO[currentHour.dayRuler]?.symbol}
-            isMalayalam={isMalayalam} 
+            isMalayalam={isMalayalam}
           />
-          <InfoRow 
-            label={isMalayalam ? "അടുത്ത ഗ്രഹം" : "Next Planet"} 
+          <InfoRow
+            label={isMalayalam ? "അടുത്ത ഗ്രഹം" : "Next Planet"}
             value={isMalayalam ? PLANET_INFO[currentHour.nextPlanet]?.name_ml_equivalent : PLANET_INFO[currentHour.nextPlanet]?.name_en}
             symbol={PLANET_INFO[currentHour.nextPlanet]?.symbol}
-            isMalayalam={isMalayalam} 
+            isMalayalam={isMalayalam}
           />
-          <InfoRow 
-            label={isMalayalam ? "മണിക്കൂർ ദൈർഘ്യം" : "Hour Duration"} 
-            value={currentHour.duration} 
-            isMalayalam={isMalayalam} 
+          <InfoRow
+            label={isMalayalam ? "മണിക്കൂർ ദൈർഘ്യം" : "Hour Duration"}
+            value={currentHour.duration}
+            isMalayalam={isMalayalam}
           />
-          <InfoRow 
-            label={isMalayalam ? "കാലം" : "Period"} 
-            value={isDay ? (isMalayalam ? "പകൽ" : "Daytime") : (isMalayalam ? "രാത്രി" : "Nighttime")} 
-            isMalayalam={isMalayalam} 
+          <InfoRow
+            label={isMalayalam ? "കാലം" : "Period"}
+            value={isDay ? (isMalayalam ? "പകൽ" : "Daytime") : (isMalayalam ? "രാത്രി" : "Nighttime")}
+            isMalayalam={isMalayalam}
           />
         </div>
       </div>

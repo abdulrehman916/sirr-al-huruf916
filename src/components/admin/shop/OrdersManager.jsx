@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Trash2, ShoppingCart, Save, ChevronDown } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -30,7 +30,7 @@ export default function OrdersManager() {
   const load = async () => {
     try {
       setLoading(true);
-      const list = await base44.entities.ShopOrder.list("-created_date", 200);
+      const list = await platform.entities.ShopOrder.list("-created_date", 200);
       setOrders(list || []);
     } catch {
       setOrders([]);
@@ -45,7 +45,7 @@ export default function OrdersManager() {
     if (!form.customer_name.trim()) return;
     try {
       const orderId = `ORD-${Date.now()}`;
-      await base44.entities.ShopOrder.create({
+      await platform.entities.ShopOrder.create({
         ...form,
         order_id: orderId,
         status: "PENDING",
@@ -63,7 +63,7 @@ export default function OrdersManager() {
 
   const updateStatus = async (order, newStatus) => {
     try {
-      await base44.entities.ShopOrder.update(order.id, { status: newStatus, updated_at: new Date().toISOString() });
+      await platform.entities.ShopOrder.update(order.id, { status: newStatus, updated_at: new Date().toISOString() });
       load();
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -73,7 +73,7 @@ export default function OrdersManager() {
   const handleDelete = async (id) => {
     if (!confirm("Delete this order?")) return;
     try {
-      await base44.entities.ShopOrder.delete(id);
+      await platform.entities.ShopOrder.delete(id);
       toast({ title: "Order deleted" });
       load();
     } catch (err) {

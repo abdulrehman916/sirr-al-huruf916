@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-/* eslint-disable no-undef */
+
 // ═══════════════════════════════════════════════════════════════
 // MIZAN PERMANENT LOCK VALIDATOR
 // ═══════════════════════════════════════════════════════════════
-// 
+//
 // PURPOSE: Enforce permanent isolation between ABJAD and MIZAN modules
 // EXECUTION: Run before every build (pre-build hook)
 // AUTHORITY: MIZAN MANUSCRIPT (Verified & Validated)
-// 
+//
 // If ANY violation is detected:
 // - FAIL VALIDATION
 // - BLOCK BUILD
@@ -69,19 +69,19 @@ const FORBIDDEN_ABJAD_IMPORTS = [
 // ── FILE SCANNER ──
 function scanDirectory(dir, fileList = []) {
   if (!existsSync(dir)) return fileList;
-  
+
   const files = readdirSync(dir, { withFileTypes: true });
-  
+
   for (const file of files) {
     const fullPath = join(dir, file.name);
-    
+
     if (file.isDirectory()) {
       scanDirectory(fullPath, fileList);
     } else if (file.isFile() && (file.name.endsWith('.js') || file.name.endsWith('.jsx'))) {
       fileList.push(fullPath);
     }
   }
-  
+
   return fileList;
 }
 
@@ -91,7 +91,7 @@ function extractImports(filePath) {
     const content = readFileSync(filePath, 'utf-8');
     const lines = content.split('\n');
     const imports = [];
-    
+
     lines.forEach((line, index) => {
       if (line.includes('import') || line.includes('from')) {
         imports.push({
@@ -101,7 +101,7 @@ function extractImports(filePath) {
         });
       }
     });
-    
+
     return imports;
   } catch (error) {
     console.warn(`⚠️  Warning: Could not read ${filePath}`);
@@ -113,13 +113,13 @@ function extractImports(filePath) {
 function detectViolations() {
   const violations = [];
   const allFiles = scanDirectory(SRC_DIR);
-  
+
   console.log(`🔍 Scanning ${allFiles.length} files for architecture violations...\n`);
-  
+
   for (const fullPath of allFiles) {
     const relativePath = relative(PROJECT_ROOT, fullPath).replace(/^[\/\\]/, '');
     const imports = extractImports(fullPath);
-    
+
     // Check MIZAN files for forbidden Abjad imports
     if (MIZAN_FILES.some(mizanFile => relativePath.includes(mizanFile))) {
       for (const imp of imports) {
@@ -136,7 +136,7 @@ function detectViolations() {
         }
       }
     }
-    
+
     // Check ABJAD files for forbidden Mizan imports
     if (ABJAD_FILES.some(abjadFile => relativePath.includes(abjadFile))) {
       for (const imp of imports) {
@@ -154,7 +154,7 @@ function detectViolations() {
       }
     }
   }
-  
+
   return violations;
 }
 
@@ -171,7 +171,7 @@ if (violations.length > 0) {
   console.error('═══════════════════════════════════════════════════════════════');
   console.error(`   Total Violations: ${violations.length}`);
   console.error('═══════════════════════════════════════════════════════════════\n');
-  
+
   violations.forEach((v, i) => {
     console.error(`[${i + 1}] ${v.severity} — ${v.type}`);
     console.error(`    File: ${v.file}`);
@@ -179,7 +179,7 @@ if (violations.length > 0) {
     console.error(`    Import: ${v.import}`);
     console.error('');
   });
-  
+
   console.error('═══════════════════════════════════════════════════════════════');
   console.error('   ❌ BUILD ABORTED — Architecture law violation detected');
   console.error('   Cross-module imports are STRICTLY PROHIBITED');
@@ -196,7 +196,7 @@ if (violations.length > 0) {
   console.error('   2. Use only module-local resources');
   console.error('   3. Re-run validation');
   console.error('═══════════════════════════════════════════════════════════════');
-  
+
   throw new Error('Architecture law violation — build aborted');
 }
 

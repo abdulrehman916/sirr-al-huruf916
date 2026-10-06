@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import AdminLayout from "@/components/admin/AdminLayout";
 import StatsPanel from "@/components/admin/purposeDict/StatsPanel";
@@ -13,7 +13,7 @@ import AuditLogPanel from "@/components/admin/purposeDict/AuditLogPanel";
 // ONLY writer of PurposeDictionary and must never connect to any Mizan,
 // engine, calculation, or timing logic. See purposeDictionaryIsolationLaw.js
 import "@/lib/purposeDictionaryIsolationLaw";
-import { Plus, RefreshCw, Loader2 } from "lucide-react";
+import { Plus, RefreshCw } from "lucide-react";
 
 export default function AdminPurposeDictionary() {
   const { user } = useAuth();
@@ -26,7 +26,7 @@ export default function AdminPurposeDictionary() {
   // ── Audit logging helper (isolated to PurposeDictionaryAuditLog) ──
   const logAudit = useCallback(async (action, details, recordCount = 0) => {
     try {
-      await base44.entities.PurposeDictionaryAuditLog.create({
+      await platform.entities.PurposeDictionaryAuditLog.create({
         log_id: `PDA-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
         action,
         performed_by: user?.id || "",
@@ -43,7 +43,7 @@ export default function AdminPurposeDictionary() {
   const loadEntries = useCallback(async () => {
     setLoading(true);
     try {
-      const result = await base44.entities.PurposeDictionary.list("-created_date", 500);
+      const result = await platform.entities.PurposeDictionary.list("-created_date", 500);
       setEntries(result || []);
     } catch (err) {
       console.error("Failed to load PurposeDictionary entries:", err);
@@ -68,7 +68,7 @@ export default function AdminPurposeDictionary() {
 
   const handleToggleActive = async (entry) => {
     try {
-      await base44.entities.PurposeDictionary.update(entry.id, { is_active: !entry.is_active });
+      await platform.entities.PurposeDictionary.update(entry.id, { is_active: !entry.is_active });
       await logAudit("RECORD_UPDATE", { id: entry.id, arabic_keyword: entry.arabic_keyword, field: "is_active", old: entry.is_active, new: !entry.is_active });
       setRefreshKey(k => k + 1);
     } catch (err) {
@@ -80,7 +80,7 @@ export default function AdminPurposeDictionary() {
   const handleDelete = async (entry) => {
     if (!confirm(`Delete "${entry.purpose_phrase}"?\n\nThis action cannot be undone.`)) return;
     try {
-      await base44.entities.PurposeDictionary.delete(entry.id);
+      await platform.entities.PurposeDictionary.delete(entry.id);
       await logAudit("RECORD_DELETE", { id: entry.id, purpose_phrase: entry.purpose_phrase, arabic_keyword: entry.arabic_keyword });
       setRefreshKey(k => k + 1);
     } catch (err) {

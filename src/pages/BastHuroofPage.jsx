@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Trash2 } from "lucide-react";
 import PageLayout from "../components/PageLayout";
@@ -225,7 +225,7 @@ const PAGE_KEY = 'bastHuroof';
 export default function BastHuroofPage() {
   const { getPageState, setPageState, clearPageState } = usePageState();
   const initialState = getPageState(PAGE_KEY, { input: "", numberInput: "", level: 1, allResults: null, inputMode: 'text' });
-  
+
   const [input, setInput] = useState(initialState.input);
   const [numberInput, setNumberInput] = useState(initialState.numberInput);
   const [level, setLevel] = useState(initialState.level);
@@ -255,22 +255,22 @@ export default function BastHuroofPage() {
   const handleNumberCalculate = useCallback(() => {
     const num = parseInt(numberInput);
     if (!num || num <= 0) return;
-    
+
     // Step 1: Convert number to Akram letters (PRIMARY decomposition)
     const akramPieces = toAkramPieces(num);
     const akramLetters = akramPieces.map(p => p.letter).join('');
-    
+
     // Step 2: Calculate ONLY the selected BAST level (same as text mode single-level workflow)
     const result = calcBastHuroof(akramLetters, level);
-    
+
     // Store both the original number decomposition AND the bast result
-    setAllResults({ 
-      [level]: { 
+    setAllResults({
+      [level]: {
         ...result,
         originalNumber: num,
         originalAkramPieces: akramPieces,
         originalAkramLetters: akramLetters,
-      } 
+      }
     });
   }, [numberInput, level]);
 
@@ -279,7 +279,7 @@ export default function BastHuroofPage() {
   };
 
   const activeResult = allResults?.[level] ?? null;
-  
+
   // Extract Akram pieces for secondary transformation (only when result is ready)
   const akramPiecesForSecondary = activeResult && !activeResult.isPending && activeResult.total > 0
     ? (() => {
@@ -518,7 +518,7 @@ export default function BastHuroofPage() {
                             levelLabel={BAST_LEVELS.find(l => l.key === level)?.label}
                             levelArabic={BAST_LEVELS.find(l => l.key === level)?.arabic}
                           />
-                          
+
                           {/* Secondary Akram — Letter-by-letter transformation (reverse order) */}
                           <SecondaryAkram
                             akramLetters={akramPiecesForSecondary?.map(p => p.letter).join('').split('').reverse().join('') || ''}
@@ -608,10 +608,10 @@ export default function BastHuroofPage() {
                           </motion.div>
                         ))}
                       </div>
-                      
+
                       <div className="h-px w-full mt-2"
                         style={{ background: `linear-gradient(90deg, transparent, rgba(212,175,55,0.15), transparent)` }} />
-                      
+
                       <div className="flex items-center justify-between px-3 py-2 rounded-xl"
                         style={{ background: G.bgHi, border: `1px solid ${G.borderHi}` }}>
                         <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: G.dim }}>
@@ -621,7 +621,7 @@ export default function BastHuroofPage() {
                           {activeResult.originalAkramPieces.length}
                         </span>
                       </div>
-                      
+
                       <div className="flex items-center justify-between px-3 py-2 rounded-xl"
                         style={{ background: G.bgHi, border: `1px solid ${G.borderHi}` }}>
                         <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: G.dim }}>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Search, Clock, Calendar, Star, Moon, AlertTriangle, CheckCircle, XCircle, BookOpen, Info } from "lucide-react";
+import { Search, Clock, Calendar, Star, Moon, XCircle, BookOpen } from "lucide-react";
 import { getTimingAdvice, findSimilarActions } from "@/lib/astroClockTimingAdvisor";
 
 const G = {

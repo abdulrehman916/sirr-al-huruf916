@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { Check, Copy, ExternalLink, Eye, FilePlus2, Paperclip, Save, Send, Trash2, Upload } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useAuth } from "@/lib/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -72,7 +72,7 @@ export default function OwnerContentStudio() {
   useEffect(() => {
     if (selected) {
       setDraft({ ...EMPTY, ...selected });
-      base44.listResourceAssets(selected.id).then(setAssets).catch(() => setAssets([]));
+      platform.listResourceAssets(selected.id).then(setAssets).catch(() => setAssets([]));
     } else {
       setAssets([]);
     }
@@ -86,7 +86,7 @@ export default function OwnerContentStudio() {
   async function loadPages() {
     setLoading(true);
     try {
-      const rows = await base44.entities.ManagedPage.list("-updated_date", 200);
+      const rows = await platform.entities.ManagedPage.list("-updated_date", 200);
       setItems(Array.isArray(rows) ? rows : []);
     } catch {
       toast({ title: "Content Studio", description: "ManagedPage data could not be loaded yet.", variant: "destructive" });
@@ -139,8 +139,8 @@ export default function OwnerContentStudio() {
       }
 
       let saved;
-      if (selectedId) saved = await base44.entities.ManagedPage.update(selectedId, payload);
-      else saved = await base44.entities.ManagedPage.create(payload);
+      if (selectedId) saved = await platform.entities.ManagedPage.update(selectedId, payload);
+      else saved = await platform.entities.ManagedPage.create(payload);
 
       await loadPages();
       const resolvedId = saved?.id || selectedId || null;
@@ -161,7 +161,7 @@ export default function OwnerContentStudio() {
     if (!selectedId) return;
     if (!window.confirm("Delete this managed page?")) return;
     try {
-      await base44.entities.ManagedPage.delete(selectedId);
+      await platform.entities.ManagedPage.delete(selectedId);
       newPage();
       await loadPages();
       toast({ title: "Deleted", description: "Managed page removed." });
@@ -183,12 +183,12 @@ export default function OwnerContentStudio() {
           throw new Error(`${file.name}: Photos and PDF documents only.`);
         }
         const assetType = isPdf ? "PDF" : "IMAGE";
-        await base44.uploadResourceAsset(selectedId, file, {
+        await platform.uploadResourceAsset(selectedId, file, {
           assetType,
           isDownloadable: draft.allow_download !== false,
         });
       }
-      setAssets(await base44.listResourceAssets(selectedId));
+      setAssets(await platform.listResourceAssets(selectedId));
       toast({ title: "Files uploaded", description: `${files.length} file(s) ഈ page-ലേക്ക് ചേർത്തു.` });
     } catch (error) {
       toast({ title: "Upload failed", description: error?.message || "File upload ചെയ്യാൻ കഴിഞ്ഞില്ല.", variant: "destructive" });
@@ -200,7 +200,7 @@ export default function OwnerContentStudio() {
   async function removeAsset(asset) {
     if (!window.confirm("Delete this file from the resource?")) return;
     try {
-      await base44.deleteResourceAsset(asset);
+      await platform.deleteResourceAsset(asset);
       setAssets((current) => current.filter((item) => item.id !== asset.id));
       toast({ title: "File deleted" });
     } catch (error) {

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { runMizaanPostPipeline, istintak, getBastLevel } from "../../lib/mizaanPostEngine";
+import { runMizaanPostPipeline, getBastLevel } from "../../lib/mizaanPostEngine";
 
 const G = {
   gold: "#F5D060",

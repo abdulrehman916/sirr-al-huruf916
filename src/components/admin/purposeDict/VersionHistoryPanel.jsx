@@ -8,7 +8,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
 import { History, RotateCcw, Trash2, Loader2, CheckCircle2, XCircle, Clock, RefreshCw } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -34,7 +34,7 @@ export default function VersionHistoryPanel({ onRestored }) {
   const loadVersions = async () => {
     setLoading(true);
     try {
-      const result = await base44.entities.PurposeDictionaryVersion.list("-created_at", 50);
+      const result = await platform.entities.PurposeDictionaryVersion.list("-created_at", 50);
       setVersions(result || []);
     } catch {
       setVersions([]);
@@ -50,7 +50,7 @@ export default function VersionHistoryPanel({ onRestored }) {
     setActioning(versionId);
     setMessage("Deleting current records + downloading snapshot...");
     try {
-      const res = await base44.functions.invoke("restorePurposeDictionary", { version_id: versionId });
+      const res = await platform.functions.invoke("restorePurposeDictionary", { version_id: versionId });
       const r = res.data || {};
       // Client-side recreation: download snapshot + bulkCreate in chunks
       if (r.snapshot_file_url) {
@@ -60,7 +60,7 @@ export default function VersionHistoryPanel({ onRestored }) {
         const records = JSON.parse(json);
         for (let i = 0; i < records.length; i += 250) {
           const chunk = records.slice(i, i + 250);
-          await base44.entities.PurposeDictionary.bulkCreate(chunk);
+          await platform.entities.PurposeDictionary.bulkCreate(chunk);
         }
       }
       setMessage(`Restored ${r.record_count} records from snapshot (deleted ${r.deleted_count}).`);
@@ -77,9 +77,9 @@ export default function VersionHistoryPanel({ onRestored }) {
     setActioning(versionId);
     setMessage("");
     try {
-      const records = await base44.entities.PurposeDictionaryVersion.filter({ version_id: versionId }, null, 1);
+      const records = await platform.entities.PurposeDictionaryVersion.filter({ version_id: versionId }, null, 1);
       if (records && records.length > 0) {
-        await base44.entities.PurposeDictionaryVersion.delete(records[0].id);
+        await platform.entities.PurposeDictionaryVersion.delete(records[0].id);
       }
       setMessage("Version deleted.");
       loadVersions();

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import { X, Loader2, Check, UserCog } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const G = {
@@ -39,7 +39,7 @@ export default function AssignAdminModal({
     }
     setSaving(true);
     try {
-      const res = await base44.functions.invoke("manageCustomerAssignment", {
+      const res = await platform.functions.invoke("manageCustomerAssignment", {
         action: "ASSIGN",
         customer_email: customer.email,
         admin_profile_id: selectedAdminId,
@@ -68,7 +68,7 @@ export default function AssignAdminModal({
   const handleRemove = async () => {
     setSaving(true);
     try {
-      const res = await base44.functions.invoke("manageCustomerAssignment", {
+      const res = await platform.functions.invoke("manageCustomerAssignment", {
         action: "REMOVE",
         customer_email: customer.email,
       });

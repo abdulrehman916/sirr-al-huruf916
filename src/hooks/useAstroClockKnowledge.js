@@ -5,7 +5,7 @@
 // Marker records (is_marker=true) are always filtered out.
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 /**
  * Fetches enriched timing knowledge from verified manuscripts.
@@ -30,7 +30,7 @@ export function useAstroClockKnowledge(filter = {}) {
     if (filter.sahath_number !== undefined && filter.sahath_number !== null) query.sahath_number = filter.sahath_number;
     if (filter.planet) query.planet = filter.planet;
 
-    base44.entities.AstroClockKnowledge.filter(query, "-created_date", 50)
+    platform.entities.AstroClockKnowledge.filter(query, "-created_date", 50)
       .then(records => {
         if (cancelled) return;
         const real = (records || []).filter(r => r.knowledge_text_en && r.knowledge_text_en.length > 0);

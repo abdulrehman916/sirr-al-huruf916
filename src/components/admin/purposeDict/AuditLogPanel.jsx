@@ -7,7 +7,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState, useEffect } from "react";
 import { Shield, Loader2, Search } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -42,7 +42,7 @@ export default function AuditLogPanel() {
   const loadLogs = async () => {
     setLoading(true);
     try {
-      const result = await base44.entities.PurposeDictionaryAuditLog.list("-timestamp", 100);
+      const result = await platform.entities.PurposeDictionaryAuditLog.list("-timestamp", 100);
       setLogs(result || []);
     } catch {
       setLogs([]);

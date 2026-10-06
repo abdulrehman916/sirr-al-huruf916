@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { ShieldAlert, Search, Loader2, Sparkles, Database, Cloud, BookOpen, AlertTriangle } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import KnowledgeSearchResults from "@/components/masterpdflibrary/KnowledgeSearchResults";
 
 const G = {
@@ -61,7 +61,7 @@ export default function UnifiedKnowledgeSearch() {
     if (!query.trim()) return;
     setLoading(true); setError(""); setResults(null);
     try {
-      const res = await base44.functions.invoke("unifiedKnowledgeSearch", { query: query.trim(), mode });
+      const res = await platform.functions.invoke("unifiedKnowledgeSearch", { query: query.trim(), mode });
       const data = res?.data || res;
       if (data?.error) throw new Error(data.error);
       setResults(data);

@@ -1,5 +1,5 @@
 import { Ban, XCircle } from "lucide-react";
-import { G, T, translatePlanet, translateDay, MIZAN_DAY_NAMES } from "../shared";
+import { T, translatePlanet, translateDay, MIZAN_DAY_NAMES } from "../shared";
 
 function cleanReason(text) {
   if (!text) return "";

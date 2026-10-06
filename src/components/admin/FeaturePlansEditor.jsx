@@ -3,10 +3,10 @@
  * - Description is stored in FeatureConfig (optional, shown on locked screen).
  * - Plans are stored in SubscriptionPlanConfig (unlimited, fully dynamic).
  */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Loader2, Edit3, Check } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PlanEditor from "./PlanEditor";
 import { invalidatePlanCache } from "@/lib/subscriptionPlanCache";
 
@@ -28,7 +28,7 @@ export default function FeaturePlansEditor({ pagePath, pageName, feature, existi
   const saveDescription = async () => {
     setDescSaving(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       const configId = existingConfig?.config_id || `FC-${feature.id}`;
       const data = {
         config_id: configId,
@@ -45,9 +45,9 @@ export default function FeaturePlansEditor({ pagePath, pageName, feature, existi
         updated_at: new Date().toISOString(),
       };
       if (existingConfig?.id) {
-        await base44.entities.FeatureConfig.update(existingConfig.id, data);
+        await platform.entities.FeatureConfig.update(existingConfig.id, data);
       } else {
-        await base44.entities.FeatureConfig.create(data);
+        await platform.entities.FeatureConfig.create(data);
       }
       setDescEditing(false);
       if (onSaved) onSaved();

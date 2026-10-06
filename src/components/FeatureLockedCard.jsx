@@ -13,7 +13,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lock, MessageCircle, KeyRound, CheckCircle, AlertCircle, Loader2, ChevronLeft, Check, Inbox, Star, Tag } from "lucide-react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { ADMIN_CONFIG } from "@/lib/adminConfig";
 import { getSessionId, mergeGrantedPermissions, addRedeemedCode, getRedeemedCodes } from "@/lib/sessionId";
 import { getFeatureConfig } from "@/lib/featureConfigCache";
@@ -75,7 +75,7 @@ export default function FeatureLockedCard({ pagePath, featureId, featureLabel, o
     setCodeResult(null);
     try {
       const sessionId = getSessionId();
-      const res = await base44.functions.invoke("redeemCodeGuest", {
+      const res = await platform.functions.invoke("redeemCodeGuest", {
         code: trimmed,
         session_id: sessionId,
       });
@@ -110,7 +110,7 @@ export default function FeatureLockedCard({ pagePath, featureId, featureLabel, o
       ].filter(Boolean);
 
       const redeemedCodes = getRedeemedCodes();
-      const res = await base44.functions.invoke("submitAccessRequest", {
+      const res = await platform.functions.invoke("submitAccessRequest", {
         name: formName.trim(),
         phone: formPhone.trim(),
         email: "",

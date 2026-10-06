@@ -7,7 +7,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { useState } from "react";
 import { BookOpen, FileText, Calendar, Pencil, Trash2, RefreshCw, ChevronLeft, Check, X, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 function hasText(v) { return v != null && String(v).trim().length > 0; }
 
@@ -34,7 +34,7 @@ export default function SirrBookCard({ book, entryCount, onOpen, onRefresh, lang
     if (!hasText(name)) { setRenaming(false); return; }
     setSavingName(true); setErr("");
     try {
-      await base44.entities.SirrManuscriptBook.update(book.sirr_book_id || book._id, {
+      await platform.entities.SirrManuscriptBook.update(book.sirr_book_id || book._id, {
         malayalam_book_name: name.trim(),
       });
       setRenaming(false);
@@ -49,8 +49,8 @@ export default function SirrBookCard({ book, entryCount, onOpen, onRefresh, lang
   const handleDelete = async () => {
     setDeleting(true); setErr("");
     try {
-      await base44.entities.SirrManuscriptEntry.deleteMany({ sirr_book_id: book.sirr_book_id });
-      await base44.entities.SirrManuscriptBook.delete(book.sirr_book_id || book._id);
+      await platform.entities.SirrManuscriptEntry.deleteMany({ sirr_book_id: book.sirr_book_id });
+      await platform.entities.SirrManuscriptBook.delete(book.sirr_book_id || book._id);
       if (onRefresh) onRefresh();
     } catch (e) {
       setErr(String(e?.message || e));
@@ -64,7 +64,7 @@ export default function SirrBookCard({ book, entryCount, onOpen, onRefresh, lang
     if (!hasText(book.original_file_url)) { setErr(isMl ? "മൂല PDF ലഭ്യമല്ല" : "Original PDF unavailable"); return; }
     setReimporting(true); setErr("");
     try {
-      const res = await base44.functions.invoke("ingestSirrManuscript", {
+      const res = await platform.functions.invoke("ingestSirrManuscript", {
         pdf_file_url: book.original_file_url,
         original_file_name: book.original_file_name || "",
         malayalam_book_name: book.malayalam_book_name || "",

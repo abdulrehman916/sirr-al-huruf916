@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ShoppingBag, Star, ExternalLink, Heart, Share2, Check } from "lucide-react";
+import { ShoppingBag, Star, Heart, Share2 } from "lucide-react";
 import { isInWishlist, toggleWishlist, shareProduct, getBrand } from "@/lib/shopUtils";
 import { trackProductView, trackShareClick } from "@/lib/shopAnalytics";
 import { useToast } from "@/components/ui/use-toast";

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Download, FileText, LockKeyhole, LogIn, ShieldCheck } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { useAuth } from "@/lib/AuthContext";
 import { checkLocalPermission, validateAndCleanPermissions } from "@/lib/sessionId";
@@ -83,7 +83,7 @@ export default function ManagedContentPage() {
       setLoading(true);
       setAccessResolved(false);
       try {
-        const rows = await base44.entities.ManagedPage.filter({ slug, status: "PUBLISHED" }, null, 1);
+        const rows = await platform.entities.ManagedPage.filter({ slug, status: "PUBLISHED" }, null, 1);
         const found = Array.isArray(rows) && rows.length ? rows[0] : null;
         if (cancelled) return;
         setPage(found);
@@ -127,7 +127,7 @@ export default function ManagedContentPage() {
         // purchases, coupons and owner grants. The database also enforces
         // expiry and revocation, so a stale browser session cannot bypass it.
         try {
-          const hasResourceAccess = await base44.canAccessResource(found.id);
+          const hasResourceAccess = await platform.canAccessResource(found.id);
           if (cancelled) return;
           if (hasResourceAccess) {
             setAllowed(true);
@@ -142,8 +142,8 @@ export default function ManagedContentPage() {
         // Backward-compatible fallbacks for manually-created subscriptions and
         // page permissions. Existing records continue to work unchanged.
         const [subscriptions, permissions] = await Promise.all([
-          base44.entities.Subscription.filter({ user_id: user.id, page_path: pagePath }).catch(() => []),
-          base44.entities.PagePermission.filter({ user_id: user.id, page_path: pagePath }).catch(() => []),
+          platform.entities.Subscription.filter({ user_id: user.id, page_path: pagePath }).catch(() => []),
+          platform.entities.PagePermission.filter({ user_id: user.id, page_path: pagePath }).catch(() => []),
         ]);
         if (cancelled) return;
 
@@ -173,12 +173,12 @@ export default function ManagedContentPage() {
       return;
     }
     let cancelled = false;
-    base44.listResourceAssets(page.id)
+    platform.listResourceAssets(page.id)
       .then(async (rows) => Promise.all((Array.isArray(rows) ? rows : [])
         .filter((asset) => ["COVER", "IMAGE", "PDF", "PREVIEW_PDF", "DOWNLOAD"].includes(asset.asset_type))
         .map(async (asset) => {
         if (!["COVER", "IMAGE"].includes(asset.asset_type)) return asset;
-        try { return { ...asset, view_url: await base44.createResourceAssetView(asset) }; }
+        try { return { ...asset, view_url: await platform.createResourceAssetView(asset) }; }
         catch { return asset; }
       })))
       .then((rows) => { if (!cancelled) setAssets(rows); })
@@ -191,7 +191,7 @@ export default function ManagedContentPage() {
     setDownloadError("");
     setDownloadingId(asset.id);
     try {
-      const url = await base44.createResourceAssetDownload(asset);
+      const url = await platform.createResourceAssetDownload(asset);
       window.location.assign(url);
     } catch (error) {
       setDownloadError(error?.message || "Download തയ്യാറാക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക.");

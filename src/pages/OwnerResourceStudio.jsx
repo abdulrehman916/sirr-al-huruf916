@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Loader2, Save, ShieldCheck } from 'lucide-react';
 import AdminLayout from '@/components/admin/AdminLayout';
-import { supabase } from '@/api/base44Client';
+import { supabase } from '@/api/platformClient';
 import ROUTE_MANIFEST from '@/lib/routeManifest';
 
 const MODES = ['FREE', 'LOGIN', 'PAID', 'COUPON', 'SELECTED'];

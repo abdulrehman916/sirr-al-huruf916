@@ -9,8 +9,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, ChevronDown, BookOpen } from "lucide-react";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
-import { PLANET_INFO, WEEKDAY_ANALYSIS } from "@/lib/astroClockLiveEngine.js";
-import { base44 } from "@/api/base44Client";
+import { PLANET_INFO } from "@/lib/astroClockLiveEngine.js";
+import { platform } from "@/api/platformClient";
 import ManuscriptKnowledgeExplorer from "./ManuscriptKnowledgeExplorer";
 import ManuscriptCorrespondences from "./ManuscriptCorrespondences";
 
@@ -36,7 +36,7 @@ export default function PlanetKnowledgePanels() {
     const planetList = Object.values(PLANET_INFO);
     planetList.forEach(async (planet) => {
       try {
-        const result = await base44.functions.invoke('queryManuscriptLibrary', {
+        const result = await platform.functions.invoke('queryManuscriptLibrary', {
           entity_type: 'PLANET',
           entity_value: planet.name_ar
         });
@@ -83,9 +83,9 @@ export default function PlanetKnowledgePanels() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {(planets || []).map((planet) => (
-          <PlanetCard 
-            key={planet.name_en} 
-            planet={planet} 
+          <PlanetCard
+            key={planet.name_en}
+            planet={planet}
             isMalayalam={isMalayalam}
             openExplorer={openExplorer}
             planetRecords={planetRecords}
@@ -152,7 +152,7 @@ function PlanetCard({ planet, isMalayalam, openExplorer, planetRecords }) {
               {isMalayalam ? planet.nature_ml : planet.nature_en}
             </p>
           </div>
-          
+
           <div className="p-4 rounded-lg" style={{ background: "rgba(34,197,94,0.08)", border: `1px solid ${G.success}` }}>
               <p className="font-inter text-[9px] uppercase tracking-widest mb-2 font-bold" style={{ color: G.success }}>
                   {isMalayalam ? "നല്ല പ്രവർത്തനങ്ങൾ" : "Good Actions"}

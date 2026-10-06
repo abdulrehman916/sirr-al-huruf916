@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import { useNavigation } from "../context/NavigationContext";
 import { useTranslation } from "@/i18n/useTranslation";
 import SacredWheel from "./SacredWheel";
-import NavCard from "./NavCards/NavCard";
 import useIsMobile from "../hooks/useIsMobile";
 
 // ── Static data ───────────────────────────────────────────────────
@@ -36,7 +34,7 @@ const STATIC_RINGS = [
 function OrbitalRings({ paused, deviceType }) {
   const isMobile = deviceType === 'mobile';
   const isTablet = deviceType === 'tablet';
-  
+
   if (isMobile) {
     // CSS-only rings on mobile — no Framer Motion
     return (
@@ -51,7 +49,7 @@ function OrbitalRings({ paused, deviceType }) {
       </div>
     );
   }
-  
+
   if (isTablet) {
     // Tablet: CSS rings with reduced scale
     return (
@@ -68,7 +66,7 @@ function OrbitalRings({ paused, deviceType }) {
       </div>
     );
   }
-  
+
   // Desktop: full Framer Motion rings
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: 1 }}>
@@ -352,21 +350,21 @@ export default function HeroSection({ mouse }) {
   const safeMouse = mouse ?? ZERO_MV;
   const [deviceType, setDeviceType] = useState('desktop');
   const initialDeviceType = useRef(null);
-  
+
   // Set device type once on mount - NO updates on keyboard/viewport changes
   useEffect(() => {
     if (initialDeviceType.current) return; // Already set
-    
+
     const checkDevice = () => {
       const w = window.innerWidth;
       if (w < 768) return 'mobile';
       else if (w < 1366) return 'tablet';
       else return 'desktop';
     };
-    
+
     initialDeviceType.current = checkDevice();
     setDeviceType(initialDeviceType.current);
-    
+
     // ONLY listen for orientation change, NOT resize (keyboard opens trigger resize)
     const handleOrientation = () => {
       const newType = checkDevice();
@@ -375,11 +373,11 @@ export default function HeroSection({ mouse }) {
         setDeviceType(newType);
       }
     };
-    
+
     window.addEventListener('orientationchange', handleOrientation, { passive: true });
     return () => window.removeEventListener('orientationchange', handleOrientation);
   }, []);
-  
+
   // Shared wheel size calculation — used by both HeroSection and SacredWheel
   // Calculate once on mount - NO updates on keyboard/viewport changes
   const getWheelSize = () => {
@@ -390,20 +388,20 @@ export default function HeroSection({ mouse }) {
     if (w < 1366) return Math.min(h * 0.50, 400, w * 0.55);
     return Math.min(h * 0.70, 500, w * 0.85);
   };
-  
+
   const [wheelSize, setWheelSize] = useState(getWheelSize());
   const wheelSizeInitialized = useRef(false);
-  
+
   // ONLY update wheel size on orientation change, NOT resize (keyboard opens trigger resize)
   useEffect(() => {
     if (wheelSizeInitialized.current) return; // Already set
     wheelSizeInitialized.current = true;
     setWheelSize(getWheelSize());
-    
+
     const handleOrientation = () => {
       setWheelSize(getWheelSize());
     };
-    
+
     window.addEventListener('orientationchange', handleOrientation, { passive: true });
     return () => window.removeEventListener('orientationchange', handleOrientation);
   }, []);

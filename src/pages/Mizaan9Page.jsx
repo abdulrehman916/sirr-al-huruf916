@@ -1,11 +1,8 @@
-import { useState, useRef, useCallback, useEffect, useLayoutEffect, useMemo } from "react";
+import { useState, useRef, useCallback, useEffect, useLayoutEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Trash2 } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import { mizaanAnalyzeAsync, mizaanCalcBast } from "../lib/mizaan9Engine";
-import { MIZAAN_DAYNIGHT_FULL, MIZAAN_HOURS, MIZAAN_DAYS, MIZAAN_PLANETS_ALL, MIZAAN_PURPOSES, MIZAAN_ELEMENT_DEGREES } from "../lib/mizaan9Data";
-import { MIZAAN_BAST2 } from "../lib/mizaan9Engine";
 import Mizaan1      from "../components/mizaan/Mizaan1";
 import Mizaan2      from "../components/mizaan/Mizaan2";
 import Mizaan3      from "../components/mizaan/Mizaan3";
@@ -18,7 +15,6 @@ import Mizaan9Final from "../components/mizaan/Mizaan9Final";
 import MizaanFinalSummary from "../components/mizaan/MizaanFinalSummary";
 import MizaanPipelineFull from "../components/mizaan/MizaanPipelineFull";
 
-import SatrVahidGrouping from "../components/mizaan/SatrVahidGrouping";
 import EsmaAvanSection from "../components/mizaan/EsmaAvanSection";
 import EsmaKasemSection from "../components/mizaan/EsmaKasemSection";
 import FinalVefkSummary from "../components/mizaan/FinalVefkSummary";
@@ -270,7 +266,7 @@ export default function Mizaan9Page() {
     customPurpose: "",
     degreeSels: {},
   });
-  
+
   const [input, setInput] = useState(initialState.input);
   const [inputMode, setInputMode] = useState(initialState.inputMode || "text");
   const [directNumber, setDirectNumber] = useState(initialState.directNumber || "");
@@ -373,7 +369,7 @@ export default function Mizaan9Page() {
         setLoading(false);
       });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [activeSection]);
 
   const handleAnalyze = useCallback(async () => {
@@ -449,7 +445,7 @@ export default function Mizaan9Page() {
     if (!selections?.hour) return;
     const planetKey = getKawkabForSaat(selections.hour, selections?.days, selections?.dayNight);
     if (planetKey) updateSel("planet")(planetKey);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [selections?.hour, selections?.days, selections?.dayNight]);
 
   return (

@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sun, Moon, Star, Clock, Calendar } from "lucide-react";
+import { Sun, Moon, Star } from "lucide-react";
 
 const G = {
   border:   "rgba(212,175,55,0.40)",
@@ -34,13 +34,13 @@ export default function LiveAstroClock() {
   useEffect(() => {
     const updateClock = () => {
       const now = new Date();
-      
+
       // Current time
-      const timeStr = now.toLocaleTimeString('en-GB', { 
+      const timeStr = now.toLocaleTimeString('en-GB', {
         timeZone: 'Asia/Dubai',
-        hour12: false 
+        hour12: false
       });
-      
+
       // Current date
       const dateStr = now.toLocaleDateString('en-GB', {
         timeZone: 'Asia/Dubai',
@@ -49,18 +49,18 @@ export default function LiveAstroClock() {
         month: 'long',
         day: 'numeric'
       });
-      
+
       // Day name
       const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       const dayName = days[now.getDay()];
-      
+
       // Islamic date (approximate)
       const islamicDate = new Intl.DateTimeFormat('en-TN-u-ca-islamic', {
         day: 'numeric',
         month: 'long',
         year: 'numeric'
       }).format(now);
-      
+
       // Prayer times (approximate for Dubai)
       const prayerTimes = {
         sunriseFormatted: "05:42",
@@ -68,7 +68,7 @@ export default function LiveAstroClock() {
         sunsetFormatted: "19:10",
         midnightFormatted: "00:26"
       };
-      
+
       setAstroData({
         currentTime: timeStr,
         currentDate: dateStr,
@@ -77,7 +77,7 @@ export default function LiveAstroClock() {
         prayerTimes
       });
     };
-    
+
     updateClock();
     const interval = setInterval(updateClock, 1000);
     return () => clearInterval(interval);
@@ -97,7 +97,7 @@ export default function LiveAstroClock() {
     >
       <div className="absolute top-0 left-0 right-0 h-px"
         style={{ background: `linear-gradient(90deg, transparent, rgba(212,175,55,0.50), transparent)` }} />
-      
+
       <div className="flex items-center gap-3 mb-4">
         <Star className="w-5 h-5" style={{ color: G.text }} />
         <h2 className="font-inter text-lg font-bold uppercase tracking-widest" style={{ color: G.text }}>

@@ -2,10 +2,10 @@
  * ═══════════════════════════════════════════════════════════════
  * PAGE VISIBILITY DEPENDENCY MAP
  * ═══════════════════════════════════════════════════════════════
- * 
+ *
  * CRITICAL FINDING: PageVisibilityConfig records are NOT orphan metadata.
  * They are CRITICAL runtime dependencies for the ProtectedPage access control system.
- * 
+ *
  * Without these records, pages FAIL with "Access Denied" even if they should be public.
  */
 
@@ -15,12 +15,12 @@
 
 /**
  * ProtectedPage access check flow:
- * 
+ *
  * Layer 0: requiresPermission === false prop → GRANTED
  * Layer 1: isPublicPage(routePath) from pageRegistry → GRANTED
  * Layer 2: PageVisibilityConfig DB check → GRANTED if requires_permission: false
  * Layer 3-4: checkPageAccessFast() → DENIED if no permission found
- * 
+ *
  * CRITICAL: Layer 2 REQUIRES PageVisibilityConfig record to exist.
  * If record is MISSING → falls through to Layer 3-4 → user denied.
  */
@@ -32,22 +32,22 @@ async function checkAccess() {
     setAccessStatus("granted");
     return;
   }
-  
+
   // Layer 2: DATABASE VISIBILITY CHECK ← CRITICAL DEPENDENCY
-  const dbConfigs = await base44.entities.PageVisibilityConfig.filter(
+  const dbConfigs = await platform.entities.PageVisibilityConfig.filter(
     { page_path: routePath }, null, 1
   );
-  
+
   if (dbConfigs.length > 0 && !dbConfigs[0].requires_permission) {
     setAccessStatus("granted");  // ✅ PUBLIC - ACCESS GRANTED
     return;
   }
-  
+
   // Layer 3-4: Permission check ← FALLS THROUGH IF NO VISIBILITY RECORD
-  const response = await base44.functions.invoke("checkPageAccessFast", {
+  const response = await platform.functions.invoke("checkPageAccessFast", {
     page_path: routePath,
   });
-  
+
   if (!response.data.granted) {
     setAccessStatus("locked");  // ❌ ACCESS DENIED
   }
@@ -75,7 +75,7 @@ export const PAGE_DEPENDENCY_MAP = {
     calculation_dependencies: ['AbjadKebir', 'AbjadSaghir', 'AbjadBast'],
     data_files: ['lib/abjadModes.js', 'lib/abjadValues.js'],
   },
-  
+
   '/anasir': {
     page_name: 'Anasir Calculator',
     chunk: 'AnasirPage',
@@ -91,7 +91,7 @@ export const PAGE_DEPENDENCY_MAP = {
     calculation_dependencies: ['ElementAnalysis', 'DominationCalc'],
     data_files: ['lib/anasirEngine.js', 'lib/anasirValues.js'],
   },
-  
+
   '/hadim': {
     page_name: 'Hadim Calculator',
     chunk: 'HadimPage',
@@ -107,7 +107,7 @@ export const PAGE_DEPENDENCY_MAP = {
     calculation_dependencies: ['HadimUlvi', 'HadimSufli', 'HadimSherli'],
     data_files: ['lib/hadimEngine.js'],
   },
-  
+
   '/mizaan9': {
     page_name: 'Mizan 9',
     chunk: 'Mizaan9Page',
@@ -138,7 +138,7 @@ export const PAGE_DEPENDENCY_MAP = {
     restored_record: true,
     restoration_impact: 'Page became accessible after restoration - all calculations working',
   },
-  
+
   '/magic-sqayer': {
     page_name: 'Magic Sqayer',
     chunk: 'MagicSqayerPage',
@@ -165,7 +165,7 @@ export const PAGE_DEPENDENCY_MAP = {
     restored_record: true,
     restoration_impact: 'Page became accessible after restoration - all vefk calculations working',
   },
-  
+
   '/vefkin-yapilisi': {
     page_name: 'Vefkin Yapılışı',
     chunk: 'VefkinYapilisiPage',
@@ -181,7 +181,7 @@ export const PAGE_DEPENDENCY_MAP = {
     calculation_dependencies: ['VefkConstruction', 'TanzimFormatting'],
     data_files: ['components/AnaVefk.js', 'components/TanzimVefki.js'],
   },
-  
+
   '/basthul-huroof-2': {
     page_name: 'Basthul Huroof 2',
     chunk: 'BastHuroofPage',
@@ -197,7 +197,7 @@ export const PAGE_DEPENDENCY_MAP = {
     calculation_dependencies: ['BastLevel1-5', 'AkramTransformation'],
     data_files: ['lib/bastHuroofEngine.js', 'lib/bastHuroofData.js'],
   },
-  
+
   '/faal-hasrath': {
     page_name: 'Faal Hasrath',
     chunk: 'FaalHasrathPage',
@@ -217,7 +217,7 @@ export const PAGE_DEPENDENCY_MAP = {
       'lib/faalLuqmanData.js',
     ],
   },
-  
+
   '/astro-clock': {
     page_name: 'Astro Clock',
     chunk: 'AstroClockPage',
@@ -244,7 +244,7 @@ export const PAGE_DEPENDENCY_MAP = {
       'lib/astroClockKnowledgeBase.js',
     ],
   },
-  
+
   // ── REFERENCE PAGES (5) ───────────────────────────────────────
   '/plants': {
     page_name: 'Plants Dictionary',
@@ -260,7 +260,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'Access denied - Plant dictionary inaccessible',
     data_files: ['lib/plantsData.js', 'lib/plantsData2.js'],
   },
-  
+
   '/plants/:id': {
     page_name: 'Plant Detail',
     chunk: 'PlantDetailPage',
@@ -275,7 +275,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'Access denied - Individual plant pages blocked',
     data_files: ['lib/plantsData.js'],
   },
-  
+
   '/evil-jinn': {
     page_name: 'Evil Jinn Names',
     chunk: 'EvilJinnPage',
@@ -290,7 +290,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'Access denied - Jinn names inaccessible',
     data_files: ['lib/evilJinnData.js'],
   },
-  
+
   '/holy-names': {
     page_name: 'Magical Holy Names',
     chunk: 'MagicalHolyNamesPage',
@@ -305,7 +305,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'Access denied - Holy names inaccessible',
     data_files: ['lib/magicalHolyNamesData.js'],
   },
-  
+
   // ── SYSTEM PAGES (2) ──────────────────────────────────────────
   '/': {
     page_name: 'Home',
@@ -321,7 +321,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'CRITICAL: App entry point blocked - users cannot access home page',
     data_files: [],
   },
-  
+
   '/support': {
     page_name: 'Support Hub',
     chunk: 'CustomerService',
@@ -336,7 +336,7 @@ export const PAGE_DEPENDENCY_MAP = {
     failure_mode: 'Access denied - Support system inaccessible',
     data_files: [],
   },
-  
+
   // ── MISSING VISIBILITY RECORDS (21) ───────────────────────────
   // These pages FAIL without visibility configs
   '/onboarding': {
@@ -354,7 +354,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: false',
   },
-  
+
   '/otp-login': {
     page_name: 'OTP Login',
     chunk: 'OTPLogin',
@@ -370,7 +370,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: false',
   },
-  
+
   '/admin/access-dashboard': {
     page_name: 'Admin Dashboard',
     chunk: 'AdminDashboard',
@@ -386,7 +386,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: true, admin_only: true',
   },
-  
+
   '/admin/approved-users': {
     page_name: 'Approved Users',
     chunk: 'ApprovedUsersPage',
@@ -402,7 +402,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: true, admin_only: true',
   },
-  
+
   '/admin/page-permissions': {
     page_name: 'Page Permissions',
     chunk: 'PagePermissions',
@@ -418,7 +418,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: true, admin_only: true',
   },
-  
+
   '/admin/access-codes': {
     page_name: 'Access Codes',
     chunk: 'AdminAccessCodes',
@@ -434,7 +434,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: true, admin_only: true',
   },
-  
+
   '/admin/support': {
     page_name: 'Admin Support',
     chunk: 'AdminSupport',
@@ -450,7 +450,7 @@ export const PAGE_DEPENDENCY_MAP = {
     priority: 'CRITICAL',
     action_required: 'Create PageVisibilityConfig with requires_permission: true, admin_only: true',
   },
-  
+
   '/admin/user/:userId': {
     page_name: 'User Detail',
     chunk: 'UserDetailPage',
@@ -477,34 +477,34 @@ export const ORPHAN_RECORDS_ANALYSIS = {
   actual_missing_count: 21,
   discrepancy: 7,
   discrepancy_explanation: 'May have been duplicate records, audit logs, or records from deleted test pages',
-  
+
   // Why they were misclassified as "orphans"
   misclassification_root_cause: `
     PageVisibilityConfig records were assumed to be "orphan metadata" because:
     1. They contain only visibility flags (requires_permission, admin_only)
     2. They don't contain calculation data or formulas
     3. They were assumed to be optional configuration
-    
+
     REALITY: They are CRITICAL runtime dependencies for ProtectedPage.jsx access control.
   `,
-  
+
   // Why pages failed without them
   failure_mechanism: `
     ProtectedPage.jsx Layer 2 checks PageVisibilityConfig database:
-    
-    const dbConfigs = await base44.entities.PageVisibilityConfig.filter(
+
+    const dbConfigs = await platform.entities.PageVisibilityConfig.filter(
       { page_path: routePath }, null, 1
     );
-    
+
     if (dbConfigs.length > 0 && !dbConfigs[0].requires_permission) {
       setAccessStatus("granted");  // ✅ PUBLIC
       return;
     }
-    
+
     // NO RECORD → dbConfigs.length === 0 → falls through to permission check
     // User has no permission → ACCESS DENIED
   `,
-  
+
   // Pages that failed (user reported Mizan & Sqayer)
   critical_failures: [
     {
@@ -522,7 +522,7 @@ export const ORPHAN_RECORDS_ANALYSIS = {
       status: 'WORKING',
     },
   ],
-  
+
   // Verification: All restored pages now work
   restoration_verification: {
     mizaan9: {
@@ -561,24 +561,24 @@ export const RECOMMENDATIONS = {
     'Set requires_permission: true + admin_only: true for admin pages',
     'Verify all pages load correctly after visibility config creation',
   ],
-  
+
   prevent_future_issues: [
     'Auto-create PageVisibilityConfig when new route is added to route manifest',
     'Add migration script to sync route manifest with PageVisibilityConfig on deploy',
     'Add admin UI warning for routes without visibility configs',
     'Add runtime check: warn in console if page lacks visibility config',
   ],
-  
+
   audit_trail: [
     'Log all PageVisibilityConfig changes to AuditLog entity',
     'Create backup before bulk visibility updates',
     'Add version tracking for PageVisibilityConfig records',
     'Implement soft-delete: use is_active: false instead of hard delete',
   ],
-  
+
   no_hard_delete_policy: `
     NEVER hard delete PageVisibilityConfig records automatically.
-    
+
     Instead:
     1. Set is_active: false to disable
     2. Log deletion to AuditLog with action_type="PAGE_VISIBILITY_CHANGE"

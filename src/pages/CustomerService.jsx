@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { Send, Upload, FileText, Image, Monitor, Mic, MicOff, Play, StopCircle } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Send, Upload, FileText, Image, Monitor, Mic, MicOff, StopCircle } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
@@ -87,7 +87,7 @@ export default function CustomerService() {
 
     setUploading(true);
     try {
-      const result = await base44.integrations.Core.UploadFile({ file });
+      const result = await platform.integrations.Core.UploadFile({ file });
       setUploadedFile({ url: result.file_url, name: file.name, type: file.type });
       toast({
         title: "Upload Successful",
@@ -119,7 +119,7 @@ export default function CustomerService() {
       mediaRecorderRef.current.onstop = async () => {
         const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
         setAudioBlob(blob);
-        
+
         // Calculate duration
         const audio = new Audio(URL.createObjectURL(blob));
         audio.onloadedmetadata = () => {
@@ -153,10 +153,10 @@ export default function CustomerService() {
     if (mediaRecorderRef.current && isRecording) {
       mediaRecorderRef.current.stop();
       setIsRecording(false);
-      
+
       // Stop all tracks
       mediaRecorderRef.current.stream.getTracks().forEach(track => track.stop());
-      
+
       // Clear timer
       if (timerRef.current) {
         clearInterval(timerRef.current);
@@ -190,7 +190,7 @@ export default function CustomerService() {
     setUploading(true);
     try {
       const file = new File([audioBlob], `voice-message-${Date.now()}.webm`, { type: 'audio/webm' });
-      const result = await base44.integrations.Core.UploadFile({ file });
+      const result = await platform.integrations.Core.UploadFile({ file });
       return { url: result.file_url, duration: audioDuration };
     } catch (error) {
       toast({
@@ -211,7 +211,7 @@ export default function CustomerService() {
   };
 
   const generateTicketId = async () => {
-    const existingTickets = await base44.entities.SupportTickets.list('-created_at', 100);
+    const existingTickets = await platform.entities.SupportTickets.list('-created_at', 100);
     const maxNum = existingTickets.reduce((max, ticket) => {
       const num = parseInt(ticket.ticket_id.split('-')[1]);
       return num > max ? num : max;
@@ -221,7 +221,7 @@ export default function CustomerService() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.mobile || !formData.email || !formData.category || !formData.subject || !formData.message) {
       toast({
         title: "Missing Information",
@@ -242,7 +242,7 @@ export default function CustomerService() {
         audioData = await uploadAudio();
       }
 
-      await base44.entities.SupportTickets.create({
+      await platform.entities.SupportTickets.create({
         ticket_id: ticketId,
         name: formData.name,
         mobile: formData.mobile,
@@ -289,7 +289,7 @@ export default function CustomerService() {
 
   return (
     <PageLayout>
-      <PageTitle 
+      <PageTitle
         arabic="دعم العملاء"
         latin="SIRR AL-HURUF SUPPORT"
         subtitle="Submit Support Tickets & Inquiries"

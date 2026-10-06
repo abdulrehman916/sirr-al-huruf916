@@ -8,13 +8,13 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { translateTurkishToMalayalam } from "@/lib/astroClockTurkishToMalayalam.js";
-import { 
-  PLANETARY_DAY_RULERS, 
+import {
+  PLANETARY_DAY_RULERS,
   AY_MANAZILLERI,
 } from "@/lib/astroClockData.js";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { getCurrentPlanetaryHour } from "@/lib/astroClockLiveEngine.js";
-import { Sun, Moon, Star, Clock, AlertCircle, CheckCircle, Book } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 import CurrentInfluencesGrid from "./TodayOverview/CurrentInfluencesGrid";
 import TodayGoodBadLists from "./TodayOverview/TodayGoodBadLists";
 import CurrentHourAnalysis from "./TodayOverview/CurrentHourAnalysis";
@@ -65,7 +65,7 @@ export default function TodayOverviewFull() {
     const sunrise = 6.5;
     const sunset = 18.25;
     const isDaytime = currentHour >= sunrise && currentHour < sunset;
-    
+
     setTodayData({
       date: now,
       dayKey,
@@ -130,18 +130,18 @@ export default function TodayOverviewFull() {
   function analyzeCurrentHour(planetaryHour, dayRuler) {
     const canDo = [];
     const avoid = [];
-    
+
     if (planetaryHour?.planetInfo?.suitable_operations) {
       (planetaryHour.planetInfo.suitable_operations || []).slice(0, 3).forEach(op => {
         canDo.push({ text: translateTurkishToMalayalam(op), source: "Havâss'ın Derinlikleri", page: "p.51-52" });
       });
     }
-    
+
     if (planetaryHour?.planet === "Mars" || planetaryHour?.planet === "Satürn") {
       avoid.push({ text: "പുതിയ തുടക്കങ്ങൾ ഒഴിവാക്കുക", source: "Havâss'ın Derinlikleri", page: "p.53" });
       avoid.push({ text: "പ്രധാന യോഗങ്ങൾ ഒഴിവാക്കുക", source: "Havâss'ın Derinlikleri", page: "p.53" });
     }
-    
+
     return { canDo: canDo.length > 0 ? canDo : [{ text: "സാധാരണ ജോലികൾ", source: "General", page: "p.50" }], avoid };
   }
 
@@ -150,7 +150,7 @@ export default function TodayOverviewFull() {
     const planetarySequence = ["Güneş", "Venüs", "Merkür", "Ay", "Satürn", "Jüpiter", "Mars"];
     const planetML = { "Güneş": "സൂര്യൻ", "Venüs": "ശുക്രൻ", "Merkür": "ബുധൻ", "Ay": "ചന്ദ്രൻ", "Satürn": "ശനി", "Jüpiter": "ഗുരു", "Mars": "ചൊവ്വ" };
     const dayIndex = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].indexOf(dayRuler?.day_name_en || "Sunday");
-    
+
     for (let i = currentHour + 1; i < currentHour + 24; i++) {
       const hourIndex = (dayIndex + i) % 7;
       const planet = planetarySequence[hourIndex];
@@ -172,7 +172,7 @@ export default function TodayOverviewFull() {
     const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const dayRulers = ["Güneş", "Ay", "Mars", "Merkür", "Jüpiter", "Venüs", "Satürn"];
     const planetML = { "Güneş": "സൂര്യൻ", "Venüs": "ശുക്രൻ", "Merkür": "ബുധൻ", "Ay": "ചന്ദ്രൻ", "Satürn": "ശനി", "Jüpiter": "ഗുരു", "Mars": "ചൊവ്വ" };
-    
+
     for (let i = currentDayIndex + 1; i < currentDayIndex + 7; i++) {
       const nextIndex = i % 7;
       if (goodDays.includes(dayNames[nextIndex])) {

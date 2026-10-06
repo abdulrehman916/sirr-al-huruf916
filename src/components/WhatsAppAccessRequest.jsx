@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MessageCircle, CheckCircle, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { ADMIN_CONFIG } from "@/lib/adminConfig";
 import { getSessionId, getRedeemedCodes } from "@/lib/sessionId";
 
@@ -21,7 +21,7 @@ export default function WhatsAppAccessRequest({ pageName, routePath }) {
     // Silently continue to WhatsApp even if the record creation fails.
     try {
       const redeemed = getRedeemedCodes();
-      await base44.functions.invoke("submitAccessRequest", {
+      await platform.functions.invoke("submitAccessRequest", {
         name: "",
         phone: "",
         email: "",

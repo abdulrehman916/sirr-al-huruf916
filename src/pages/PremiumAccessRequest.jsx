@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Check, Clock, Loader2, Shield } from "lucide-react";
+import { Check, Loader2, Shield } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import PageLayout from "@/components/PageLayout";
 import { motion } from "framer-motion";
@@ -42,7 +41,7 @@ export default function PremiumAccessRequest() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    base44.auth.me().then((u) => {
+    platform.auth.me().then((u) => {
       setUser(u);
     }).catch(() => navigate("/otp-login"));
   }, [navigate]);
@@ -50,7 +49,7 @@ export default function PremiumAccessRequest() {
   const handleSubmitRequest = async () => {
     setLoading(true);
     try {
-      const response = await base44.functions.invoke("submitAccessRequest", {
+      const response = await platform.functions.invoke("submitAccessRequest", {
         name: user.full_name || "",
         phone: "",
         email: user.email || "",
@@ -140,8 +139,8 @@ export default function PremiumAccessRequest() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Select 
-              value={selectedPage.path} 
+            <Select
+              value={selectedPage.path}
               onValueChange={(value) => setSelectedPage(PREMIUM_PAGES.find(p => p.path === value))}
             >
               <SelectTrigger className="bg-white/5 border-white/10 text-white h-12">

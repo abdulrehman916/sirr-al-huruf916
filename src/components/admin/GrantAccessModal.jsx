@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Shield, Check, X, Loader2, Users, Calendar, Gift } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { Shield, Check, Loader2, Calendar } from "lucide-react";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
 const AVAILABLE_PAGES = [
@@ -78,7 +76,7 @@ export default function GrantAccessModal({ user, onClose, onSuccess }) {
         };
       });
 
-      const response = await base44.functions.invoke("grantManualAccess", {
+      const response = await platform.functions.invoke("grantManualAccess", {
         user_id: user.user_id,
         user_name: user.email || user.mobile,
         user_email: user.email || '',

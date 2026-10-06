@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { base44 } from '@/api/base44Client';
+import { platform } from '@/api/platformClient';
 
 /**
  * Hook: Manage ManuscriptKnowledgeExplorer state
@@ -61,7 +61,7 @@ export function useManuscriptReferenceCounts(entities = []) {
       try {
         const promises = entities.map(async (entity) => {
           try {
-            const result = await base44.functions.invoke('queryManuscriptLibrary', {
+            const result = await platform.functions.invoke('queryManuscriptLibrary', {
               entity_type: entity.type,
               entity_value: entity.value
             });
@@ -98,7 +98,7 @@ export function useEntityNavigation() {
 
   /**
    * Navigate to related entity
-   * @param {string} entityType 
+   * @param {string} entityType
    * @param {string} entityData
    * @param {string} previousType - Entity type we came from
    */
@@ -112,8 +112,8 @@ export function useEntityNavigation() {
   /**
    * Get current entity in navigation chain
    */
-  const current = navigationHistory.length > 0 
-    ? navigationHistory[navigationHistory.length - 1] 
+  const current = navigationHistory.length > 0
+    ? navigationHistory[navigationHistory.length - 1]
     : null;
 
   /**

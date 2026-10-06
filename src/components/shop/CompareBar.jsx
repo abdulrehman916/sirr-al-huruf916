@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { GitCompare, X, Check } from "lucide-react";
+import { GitCompare, X } from "lucide-react";
 import { getCompareList, toggleCompare, isInCompare, clearCompare } from "@/lib/shopUtils";
 
 const G = {

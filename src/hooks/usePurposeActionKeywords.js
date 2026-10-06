@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 
 // ═══════════════════════════════════════════════════════════════
 // DYNAMIC PURPOSE KEYWORDS — loaded from the PurposeActionClassifier
@@ -17,7 +17,7 @@ export function usePurposeActionKeywords() {
 
   useEffect(() => {
     let alive = true;
-    base44.entities.PurposeActionClassifier.list("-created_date", 2000)
+    platform.entities.PurposeActionClassifier.list("-created_date", 2000)
       .then((records) => {
         if (!alive) return;
         const map = {};

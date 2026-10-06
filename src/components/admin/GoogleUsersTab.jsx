@@ -4,7 +4,7 @@ import {
   Search, Crown, Shield, User as UserIcon, Trash2, X,
   ArrowUpCircle, ArrowDownCircle, Loader2, Mail, Clock
 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import { ADMIN_CONFIG } from "@/lib/adminConfig";
 
@@ -74,9 +74,9 @@ function ActionModal({ user, profile, action, adminProfile, onClose, onDone }) {
   const handle = async () => {
     setProcessing(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       if (action === "promote") {
-        await base44.functions.invoke("manageAdminProfile", {
+        await platform.functions.invoke("manageAdminProfile", {
           action: "CREATE",
           email: user.email,
           full_name: profile?.full_name || user.full_name || "",
@@ -84,15 +84,15 @@ function ActionModal({ user, profile, action, adminProfile, onClose, onDone }) {
           permissions: {},
         });
       } else if (action === "demote") {
-        await base44.functions.invoke("manageAdminProfile", { action: "DELETE", admin_profile_id: adminProfile.admin_profile_id });
+        await platform.functions.invoke("manageAdminProfile", { action: "DELETE", admin_profile_id: adminProfile.admin_profile_id });
       } else if (action === "disableAdmin") {
-        await base44.functions.invoke("manageAdminProfile", { action: "DISABLE", admin_profile_id: adminProfile.admin_profile_id });
+        await platform.functions.invoke("manageAdminProfile", { action: "DISABLE", admin_profile_id: adminProfile.admin_profile_id });
       } else if (action === "enableAdmin") {
-        await base44.functions.invoke("manageAdminProfile", { action: "ENABLE", admin_profile_id: adminProfile.admin_profile_id });
+        await platform.functions.invoke("manageAdminProfile", { action: "ENABLE", admin_profile_id: adminProfile.admin_profile_id });
       } else if (action === "disableUser") {
-        const existing = await base44.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
+        const existing = await platform.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
         if (existing.length > 0) {
-          await base44.entities.UserAccessProfile.update(existing[0].id, {
+          await platform.entities.UserAccessProfile.update(existing[0].id, {
             account_status: "BLOCKED",
             blocked_at: new Date().toISOString(),
             blocked_by: me.id,
@@ -102,9 +102,9 @@ function ActionModal({ user, profile, action, adminProfile, onClose, onDone }) {
       } else if (action === "deleteUser") {
         // Remove ONLY the UserAccessProfile. Never touch Reading Codes,
         // Access Codes, Purchases, or Logs.
-        const existing = await base44.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
+        const existing = await platform.entities.UserAccessProfile.filter({ user_id: user.id }, null, 1);
         if (existing.length > 0) {
-          await base44.entities.UserAccessProfile.delete(existing[0].id);
+          await platform.entities.UserAccessProfile.delete(existing[0].id);
         }
       }
       toast({ title: `✓ ${cfg.btn} — ${user.full_name || user.email}` });
@@ -159,9 +159,9 @@ export default function GoogleUsersTab({ users, profiles, onRefresh }) {
   const loadAdmins = async () => {
     setLoadingAdmins(true);
     try {
-      const me = await base44.auth.me();
+      const me = await platform.auth.me();
       setIsOwner(me?.email?.toLowerCase() === ADMIN_CONFIG.OWNER_EMAIL.toLowerCase());
-      const res = await base44.functions.invoke("manageAdminProfile", { action: "GET_STATUS" });
+      const res = await platform.functions.invoke("manageAdminProfile", { action: "GET_STATUS" });
       setAdminProfiles(res.data?.profiles || []);
     } catch (e) {
       toast({ title: "Failed to load admin profiles", description: e.message, variant: "destructive" });

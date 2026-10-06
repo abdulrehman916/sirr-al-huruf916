@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
-import { Moon, CheckCircle, AlertCircle, Book, Star } from "lucide-react";
+import { platform } from "@/api/platformClient";
+import { CheckCircle, AlertCircle, Book } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
@@ -30,7 +30,7 @@ export default function ManazilQualityAudit() {
   async function runAudit() {
     try {
       setLoading(true);
-      const response = await base44.functions.invoke('auditManazilQuality', {});
+      const response = await platform.functions.invoke('auditManazilQuality', {});
       setAudit(response.data);
       setError(null);
     } catch (err) {
@@ -161,7 +161,7 @@ function SummaryCard({ label, value, color }) {
 }
 
 function MansionCard({ mansion, expanded, onToggle, isMalayalam }) {
-  const completenessColor = 
+  const completenessColor =
     mansion.completeness_score === 100 ? G.success :
     mansion.completeness_score >= 50 ? G.warning : G.danger;
 
@@ -181,7 +181,7 @@ function MansionCard({ mansion, expanded, onToggle, isMalayalam }) {
           <div>
             <p className="font-amiri text-3xl font-bold" style={{ color: G.text }} dir="rtl">{mansion.arabic_name}</p>
             <p className="font-inter text-xs" style={{ color: G.dim }}>
-              {mansion.records.length} {isMalayalam ? "രേഖകൾ" : "records"} · 
+              {mansion.records.length} {isMalayalam ? "രേഖകൾ" : "records"} ·
               <span style={{ color: completenessColor }}> {mansion.completeness_score}%</span>
             </p>
           </div>

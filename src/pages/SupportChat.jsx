@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import { Send, MessageSquare, ArrowLeft, Loader2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
-import PageTitle from "@/components/PageTitle";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
@@ -37,7 +35,7 @@ export default function SupportChat() {
   // Real-time subscription for admin replies
   useEffect(() => {
     if (!ticketId) return;
-    const unsub = base44.entities.SupportMessage.subscribe((event) => {
+    const unsub = platform.entities.SupportMessage.subscribe((event) => {
       if (event.data?.ticket_id === ticketId) {
         setMessages(prev => {
           const exists = prev.some(m => m.id === event.data.id);
@@ -50,12 +48,12 @@ export default function SupportChat() {
 
   const initChat = async () => {
     try {
-      const u = await base44.auth.me();
+      const u = await platform.auth.me();
       if (!u) return;
       setUser(u);
 
       // Find or create a chat ticket for this user
-      const existing = await base44.entities.SupportTickets.filter({
+      const existing = await platform.entities.SupportTickets.filter({
         email: u.email || "",
         category: "General Question"
       }, "-created_at");
@@ -64,13 +62,13 @@ export default function SupportChat() {
       if (existing.length > 0 && existing[0].status !== "CLOSED") {
         tid = existing[0].ticket_id;
       } else {
-        const allTickets = await base44.entities.SupportTickets.list('-created_at', 100);
+        const allTickets = await platform.entities.SupportTickets.list('-created_at', 100);
         const maxNum = allTickets.reduce((max, t) => {
           const n = parseInt(t.ticket_id?.split("-")[1] || "0");
           return n > max ? n : max;
         }, 0);
         const newId = `SUP-${String(maxNum + 1).padStart(6, "0")}`;
-        await base44.entities.SupportTickets.create({
+        await platform.entities.SupportTickets.create({
           ticket_id: newId,
           name: u.full_name || u.email || "User",
           mobile: "",
@@ -86,7 +84,7 @@ export default function SupportChat() {
       setTicketId(tid);
 
       // Load messages
-      const msgs = await base44.entities.SupportMessage.filter({ ticket_id: tid }, "created_at");
+      const msgs = await platform.entities.SupportMessage.filter({ ticket_id: tid }, "created_at");
       setMessages(msgs || []);
     } catch (err) {
       toast({ title: "Error", description: err.message, variant: "destructive" });
@@ -101,7 +99,7 @@ export default function SupportChat() {
     try {
       const u = user || {};
       const messageId = `MSG-${Date.now()}`;
-      const msg = await base44.entities.SupportMessage.create({
+      const msg = await platform.entities.SupportMessage.create({
         message_id: messageId,
         ticket_id: ticketId,
         sender_type: "CUSTOMER",
