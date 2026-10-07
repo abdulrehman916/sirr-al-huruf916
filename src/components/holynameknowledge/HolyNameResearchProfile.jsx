@@ -231,7 +231,7 @@ export default function HolyNameResearchProfile({ originalStaticId }) {
   const [rec, setRec] = useState(null);
   // (source-PDF provenance state removed — filenames/URLs are private library artifacts)
   const [loading, setLoading] = useState(true);
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("ml");
 
   useEffect(() => {
     let alive = true;
