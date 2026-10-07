@@ -28,6 +28,8 @@ jobs:
         run: npm run verify:calculations
       - name: Verify record relationships and private references
         run: npm run verify:records && npm run verify:private-references && npm run verify:independence
+      - name: Verify independent account read isolation
+        run: node scripts/verify-independent-read-api.mjs
       - name: Lint source
         run: npm run lint
       - name: Compare source calculation outputs
