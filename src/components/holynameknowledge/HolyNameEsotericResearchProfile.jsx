@@ -5,7 +5,6 @@ import {
   FileText, ChevronDown, BookMarked, BookCopy, ScrollText,
 } from "lucide-react";
 import { platform } from "@/api/platformClient";
-import SectionCVisualDisplay from "@/components/sectionc/SectionCVisualDisplay";
 import { calculateAbjad, getAbjadBreakdown } from "@/lib/abjadValues";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
@@ -93,12 +92,13 @@ function Field({ label, labelML, children, arabic }) {
 }
 
 function Block({ title, titleML, icon: Icon, children, accent, defaultOpen = true }) {
+  const { language } = useHolyNamesLanguage();
   return (
     <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }} className="rounded-xl border overflow-hidden" style={{ background: "rgba(8,16,38,0.55)", borderColor: P.border }}>
       <details open={defaultOpen} className="group">
         <summary className="cursor-pointer list-none flex items-center gap-2 px-3 py-2.5 select-none" style={{ borderBottom: defaultOpen ? `1px solid ${P.faint}` : "none" }}>
           <Icon className="w-3.5 h-3.5 flex-shrink-0" style={{ color: accent || P.text }} />
-          <span className="font-malayalam text-sm font-bold flex-1" style={{ color: accent || P.text }}>{titleML || title}</span>
+          <span className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm font-bold flex-1`} style={{ color: accent || P.text }}>{language === "ml" ? (titleML || title) : title}</span>
           <ChevronDown className="w-3.5 h-3.5 transition-transform group-open:rotate-180 flex-shrink-0" style={{ color: P.dim }} />
         </summary>
         <div className="px-3 py-3 space-y-3">{children}</div>
@@ -181,12 +181,17 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
   const letters = getAbjadBreakdown(displayedName).filter(item => item.value > 0);
   const abjadValue = calculateAbjad(displayedName);
   const fullCalculation = letters.map(item => `${item.letter} (${item.value})`).join(" + ") + ` = ${abjadValue}`;
-  const scholarly = Array.isArray(rec.scholarly_data) ? rec.scholarly_data : [];
+  const normalizeName = value => String(value || "").replace(/[\u064B-\u065F\u0670\u0640\s]/g, "");
+  const scholarly = (Array.isArray(rec.scholarly_data) ? rec.scholarly_data : []).filter(entry =>
+    entry.related_name_id === nameId || entry.name_id === nameId ||
+    (normalizeName(entry.arabic_text) && normalizeName(entry.arabic_text) === normalizeName(displayedName))
+  );
   const hasAltSpell = Array.isArray(rec.alternate_spellings) && rec.alternate_spellings.length > 0;
   const hasAltPron = Array.isArray(rec.alternate_pronunciations) && rec.alternate_pronunciations.length > 0;
   const hasAltMean = Array.isArray(rec.alternate_meanings) && rec.alternate_meanings.length > 0;
   const hasAltAbjad = Array.isArray(rec.alternate_abjad_values) && rec.alternate_abjad_values.length > 0;
   const hasAlts = hasAltSpell || hasAltPron || hasAltMean || hasAltAbjad;
+  const populatedSections = ADVANCED_SECTIONS.map(s => ({ ...s, entries: (Array.isArray(rec[s.key]) ? rec[s.key] : []).filter(entry => entry.related_name_id === nameId || entry.name_id === nameId) })).filter(s => s.entries.length > 0);
 
   return (
     <div className="pt-3 mt-1 space-y-3" style={{ borderTop: `1px solid ${P.faint}` }}>
@@ -270,9 +275,6 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
       </Block>
 
       {/* VISUAL CONTENT — displayed above scholarly data, underneath primary info */}
-      {Array.isArray(rec.attached_visuals) && rec.attached_visuals.length > 0 && (
-        <SectionCVisualDisplay visuals={rec.attached_visuals} />
-      )}
 
       {/* 2 — CURRENT SCHOLARLY DATA */}
       <Block title="Current Scholarly Data" titleML="നിലവിലുള്ള പണ്ഡിത വിവരങ്ങൾ" icon={ScrollText} accent={P.text} defaultOpen={false}>
@@ -291,9 +293,9 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
                 </div>
                 {s.arabic_text && <p className="font-amiri text-lg leading-loose selectable" style={{ color: "rgba(255,255,255,0.90)" }} dir="rtl">{s.arabic_text}</p>}
                 {s.transliteration && <p className="font-inter text-xs italic selectable" style={{ color: "rgba(255,255,255,0.70)" }} dir="ltr">{s.transliteration}</p>}
-                {(language === "ml" ? (s.malayalam_translation || s.meaning_ml) : (s.english_translation || s.meaning_en || (s.language === "en" ? s.exact_meaning : ""))) && (
+                {(language === "ml" ? (s.malayalam_translation || s.meaning_ml || (/[\u0D00-\u0D7F]/.test(s.exact_meaning || "") ? s.exact_meaning : "")) : (s.english_translation || s.meaning_en || (s.language === "en" ? s.exact_meaning : ""))) && (
                   <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm leading-relaxed selectable`} style={{ color: "rgba(255,255,255,0.88)" }} dir="auto">
-                    {language === "ml" ? (s.malayalam_translation || s.meaning_ml) : (s.english_translation || s.meaning_en || s.exact_meaning)}
+                    {language === "ml" ? (s.malayalam_translation || s.meaning_ml || s.exact_meaning) : (s.english_translation || s.meaning_en || s.exact_meaning)}
                   </p>
                 )}
                 {isOwner && s.notes && <p className="font-inter text-[9px] italic" style={{ color: P.dim }}>{s.notes}</p>}
@@ -325,11 +327,11 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
       </Block>
 
       {/* 3 — ADVANCED KNOWLEDGE SECTIONS (all empty until approved) */}
-      <Block title="Advanced Knowledge Sections" titleML="വിപുലമായ വിജ്ഞാന വിഭാഗങ്ങൾ" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={false}>
+      {populatedSections.length > 0 && <Block title="Practices and related details" titleML="രീതികളും ബന്ധപ്പെട്ട വിവരങ്ങളും" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={true}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          {ADVANCED_SECTIONS.map(s => <AdvancedBlock key={s.key} label={s.label} ml={s.ml} entries={rec[s.key]} />)}
+          {populatedSections.map(s => <AdvancedBlock key={s.key} label={s.label} ml={s.ml} entries={s.entries} />)}
         </div>
-      </Block>
+      </Block>}
 
       {/* Footer — traceability — Owner only */}
       {isOwner && (

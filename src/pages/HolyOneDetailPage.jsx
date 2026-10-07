@@ -11,7 +11,6 @@ import { usePageState } from "@/context/PageStateContext";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
-import SectionCVisualDisplay from "@/components/sectionc/SectionCVisualDisplay";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
@@ -401,9 +400,6 @@ export default function HolyOneDetailPage() {
           ) : null}
 
           {/* Attached Visuals — original source page images (magic squares, wafq, symbols, seals, diagrams) */}
-          {source === "B" && Array.isArray(name.attached_visuals) && name.attached_visuals.length > 0 && (
-            <SectionCVisualDisplay visuals={name.attached_visuals} />
-          )}
 
           {/* Source Reference — provenance Owner-only; Surah kept as content */}
           <div className="text-center text-xs text-white/30 mt-6">

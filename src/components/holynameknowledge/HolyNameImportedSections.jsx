@@ -165,7 +165,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
                 </div>
               )}
 
-              {s.text_content && (
+              {isOwner && s.text_content && (
                 <details className="pt-1 border-t" style={{ borderColor: "rgba(212,175,55,0.10)" }}>
                   <summary className="cursor-pointer font-inter text-[7px] uppercase tracking-widest py-1" style={{ color: "rgba(212,175,55,0.50)" }}>Original book content</summary>
                   <p className="font-amiri text-sm leading-loose whitespace-pre-wrap selectable mt-1" style={{ color: "rgba(255,255,255,0.70)" }} dir="auto">

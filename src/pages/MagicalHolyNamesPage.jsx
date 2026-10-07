@@ -535,14 +535,14 @@ function TabSwitcher({ activeTab, onTabChange }) {
   };
 
   const TABS = [
-    { id: "section-a", label: "Current Holy Names", arabic: "الأسماء أ", subtitle: "Section A" },
-    { id: "section-b", label: "PDF Holy Names", arabic: "الأسماء ب", subtitle: "Section B" },
-    { id: "section-c", label: "Birhatīya Names", arabic: "البرهتيّة", subtitle: "Section C" },
-    { id: "section-d", label: "Holy Names Library", arabic: "القسم د", subtitle: "Section D" },
+    { id: "section-a", arabic: "الأسماء أ", subtitle: "Ism A" },
+    { id: "section-b", arabic: "الأسماء ب", subtitle: "Ism B" },
+    { id: "section-c", arabic: "البرهتيّة", subtitle: "Ism C" },
+    { id: "section-d", arabic: "القسم د", subtitle: "Ism D" },
   ];
 
   return (
-    <div className="flex gap-2 mb-4">
+    <div className="grid grid-cols-2 gap-4 mb-4" aria-label="Choose Holy Names section">
       {TABS.map(tab => {
         const feat = FEATURES.find(f => f.tab === tab.id);
         const isLocked = feat && !checkFeatureAccess(PAGE_PATH, feat.id);
@@ -550,7 +550,7 @@ function TabSwitcher({ activeTab, onTabChange }) {
           <button
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
-            className="flex-1 py-3 px-4 rounded-xl border font-inter text-xs font-semibold transition-all"
+            className="min-h-36 py-6 px-4 rounded-2xl border font-inter text-sm font-semibold transition-all hover:border-yellow-400/60"
             style={{
               background: activeTab === tab.id ? P.bgHi : P.bg,
               borderColor: activeTab === tab.id ? P.borderHi : P.border,
@@ -558,11 +558,11 @@ function TabSwitcher({ activeTab, onTabChange }) {
               boxShadow: activeTab === tab.id ? `0 0 14px ${P.glow}` : "none",
             }}
           >
-            <span className="font-amiri text-sm block flex items-center justify-center gap-1">
+            <span className="font-amiri text-2xl leading-loose flex items-center justify-center gap-2 mb-2" dir="rtl">
               {isLocked && <Lock className="w-3 h-3 opacity-60" />}
               {tab.arabic}
             </span>
-            <span className="text-[9px] uppercase tracking-widest">{tab.subtitle}</span>
+            <span className="text-sm tracking-widest">{tab.subtitle}</span>
           </button>
         );
       })}
@@ -572,22 +572,15 @@ function TabSwitcher({ activeTab, onTabChange }) {
 
 // ── MAIN PAGE ────────────────────────────────────────────────────
 export default function MagicalHolyNamesPage() {
-  const { getPageState, setPageState } = usePageState();
   const { role } = useAuth();
   const isAdmin = role === "admin" || role === "owner";
-  const pageKey = "magical-holy-names-page";
-  const initial = getPageState(pageKey, { activeTab: "section-a" });
-  const [activeTab, setActiveTab] = useState(initial.activeTab || "section-a");
+  const [activeTab, setActiveTab] = useState(null);
   const [language, setLanguage] = useHolyNamesLanguagePreference();
   const [lockedFeature, setLockedFeature] = useState(null);
   const [importRefreshKey, setImportRefreshKey] = useState(0);
 
-  // Save active tab on change
-  useEffect(() => {
-    setPageState(pageKey, { activeTab });
-  }, [activeTab, setPageState]);
-
   const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
     const feat = FEATURES.find(f => f.tab === tabId);
     if (feat && !checkFeatureAccess(PAGE_PATH, feat.id)) {
       setLockedFeature(feat);
@@ -617,21 +610,17 @@ export default function MagicalHolyNamesPage() {
             <HolyNamesLanguageToggle />
           </div>
 
-          {isAdmin && (
-            <HolyNameImportPanel onImported={() => setImportRefreshKey((k) => k + 1)} />
-          )}
-          {isAdmin && (
-            <HolyNameContentsSeedPanel onSeeded={() => setImportRefreshKey((k) => k + 1)} />
+          {!activeTab && <TabSwitcher activeTab={null} onTabChange={handleTabChange} />}
+          {activeTab && (
+            <button className="rounded-xl border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200" onClick={() => { setActiveTab(null); setLockedFeature(null); }}>Back to Holy Names</button>
           )}
 
-          <TabSwitcher activeTab={activeTab} onTabChange={handleTabChange} />
-
-          {lockedFeature ? (
+          {activeTab && (lockedFeature ? (
             <FeatureLockedCard
               pagePath={PAGE_PATH}
               featureId={lockedFeature.id}
               featureLabel={lockedFeature.label}
-              onBack={() => setLockedFeature(null)}
+              onBack={() => { setLockedFeature(null); setActiveTab(null); }}
               onUnlocked={() => { setLockedFeature(null); window.location.reload(); }}
             />
           ) : (
@@ -654,6 +643,15 @@ export default function MagicalHolyNamesPage() {
                 )}
               </motion.div>
             </AnimatePresence>
+          ))}
+          {isAdmin && activeTab && (
+            <details className="rounded-xl border border-white/10 p-3">
+              <summary className="cursor-pointer text-sm text-white/50">Manage content</summary>
+              <div className="space-y-4 pt-4">
+                <HolyNameImportPanel onImported={() => setImportRefreshKey((k) => k + 1)} />
+                <HolyNameContentsSeedPanel onSeeded={() => setImportRefreshKey((k) => k + 1)} />
+              </div>
+            </details>
           )}
         </div>
       </PullToRefresh>
