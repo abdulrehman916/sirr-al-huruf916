@@ -37,8 +37,17 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       {(chapter.edition_accounts || []).map(account => <article key={account.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
         <h3 className={`${cls} text-base text-yellow-200`}>{translated(account.title)}</h3>
         <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(account.translation)}</p>
+        {(account.count != null || account.timing) && <dl className={`${cls} text-sm space-y-2 text-white/75`}>
+          {account.count != null && <div><dt className="text-yellow-200/70">{ml ? "എണ്ണം" : "Count"}</dt><dd>{account.count}</dd></div>}
+          {account.timing && <div><dt className="text-yellow-200/70">{ml ? "സമയം" : "Timing"}</dt><dd className="leading-relaxed">{translated(account.timing)}</dd></div>}
+        </dl>}
         <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(account.scope_note)}</p>
         <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "ഈ പതിപ്പിലെ മൂലപാഠം" : "Original in this edition"}</summary><p className="font-inter text-sm leading-relaxed pt-2" lang="en">{account.original_text}</p><p className="pt-2">{account.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {account.printed_page}</p></details>
+      </article>)}
+      {(chapter.source_notes || []).map(note => <article key={note.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
+        <h3 className={`${cls} text-base text-yellow-200`}>{translated(note.title)}</h3>
+        <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(note.translation)}</p>
+        <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{note.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {note.printed_page}</p></details>
       </article>)}
       {chapter.figure?.image_path?.startsWith("/figures/") && <figure className="space-y-2"><img src={chapter.figure.image_path} alt={translated(chapter.figure.caption)} loading="lazy" className="max-w-full w-80 rounded-lg mx-auto" /><figcaption className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.figure.caption)}</figcaption></figure>}
       {chapter.edition_note && <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(chapter.edition_note)}</p>}

@@ -21,5 +21,30 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+  },
+  "edition_accounts": [
+    {
+      "id": "english-nightly-300",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 119,
+      "title": {
+        "ml": "ഓരോ രാത്രിയിലും 300 തവണ — ഇംഗ്ലീഷ് പതിപ്പിലെ പരാമർശം",
+        "en": "Three hundred each night — English-edition account"
+      },
+      "original_text": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts.",
+      "translation": {
+        "ml": "ഓരോ രാത്രിയിലും പേര് 300 തവണ ഓതുകയും ഓരോ നൂറിനുശേഷവും “ഈ നാമങ്ങളുടെ സേവകരേ, ഇന്നയാളുടെ രൂപത്തിൽ ഇന്നയാളുടെ അടുത്തേക്ക് പോയി ഇന്നകാര്യം ചെയ്യാൻ അയാളോട് ആവശ്യപ്പെടുക” എന്നു നിയോഗിക്കുകയും ചെയ്താൽ, മൂന്നു ദിവസം കഴിയുന്നതിനു മുമ്പ് ആവശ്യം നിറവേറുമെന്നാണ് ഈ പതിപ്പിലെ അവകാശവാദം. മാംസവും അതിൽനിന്നുള്ള ഉൽപ്പന്നങ്ങളും ഒഴിവാക്കുകയും നോമ്പെടുക്കുകയും ചെയ്യണമെന്ന വ്യവസ്ഥയും ഇതിൽ പറയുന്നു.",
+        "en": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts."
+      },
+      "count": 300,
+      "timing": {
+        "ml": "ഓരോ രാത്രിയിലും; ഓരോ 100-നും ശേഷം നിയോഗവാക്യം. മൂന്നു ദിവസത്തിനുള്ളിലെ ഫലമാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്.",
+        "en": "Each night, with a charge after every hundred. The book claims an outcome within three days."
+      },
+      "scope_note": {
+        "ml": "ഇത് പേരുമായി ബന്ധപ്പെട്ട ചരിത്രപരമായ അവകാശവാദമാണ്. N. എന്നത് വ്യക്തിയുടെ പേര് പകരം ചേർക്കുന്ന ഇടമാണ്; പേരോ ഫലമോ പുതുതായി സൃഷ്ടിച്ചിട്ടില്ല.",
+        "en": "A historical source claim. N. is a placeholder for a name; no target or outcome is invented."
+      }
+    }
+  ]
 }

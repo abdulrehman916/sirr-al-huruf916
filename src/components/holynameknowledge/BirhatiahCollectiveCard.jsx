@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import externalSources from "@/data/holyNamesExternalSources.json";
+import BirhatiahCollectiveVersion from "./BirhatiahCollectiveVersion";
 
 // The collective text has its own card; never attach it as an individual
 // name's prayer or silently substitute the current card list for a manuscript.
@@ -19,7 +20,8 @@ export default function BirhatiahCollectiveCard({ cards }) {
       <ChevronDown className={`w-5 h-5 text-yellow-200 transition-transform ${open ? "rotate-180" : ""}`} />
     </button>
     {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
-      <p className={`${cls} text-sm text-white/80 leading-loose`}>{ml ? "ഇത് വ്യക്തിഗത നാമങ്ങളുടെ കാർഡുകളിൽനിന്ന് വേർതിരിച്ച സംയുക്ത പാഠത്തിനുള്ള കാർഡാണ്. ഇപ്പോൾ ഒത്തുനോക്കിയ സമാപനഭാഗം താഴെ നൽകിയിരിക്കുന്നു. നീണ്ട മന്ത്രത്തിന്റെ മുഴുവൻ പതിപ്പുകളുടെ അക്ഷരപരിശോധനയും വിവർത്തനവും പൂർത്തിയായിട്ടില്ല; ഈ ഭാഗത്തെ പൂർണ്ണ മന്ത്രമെന്ന് വിളിക്കുന്നില്ല." : "This card separates collective material from the individual names. A checked closing passage is provided below. Letter-by-letter review and translation of the full long versions remain incomplete; this passage is not labelled the complete invocation."}</p>
+      <p className={`${cls} text-sm text-white/80 leading-loose`}>{ml ? "ഇത് വ്യക്തിഗത നാമങ്ങളുടെ കാർഡുകളിൽനിന്ന് വേർതിരിച്ച സംയുക്ത പാഠത്തിനുള്ള കാർഡാണ്. നൽകിയ പുസ്തകത്തിലെ ആദ്യ പതിപ്പിന്റെ പേരുകളും തുടർവാക്യത്തിന്റെ മലയാളം/ഇംഗ്ലീഷ് വിവർത്തനവും താഴെ കാണാം. കൂടുതൽ നീണ്ട മറ്റു പതിപ്പുകളുടെ പൂർണ അക്ഷരപരിശോധനയും വിവർത്തനവും ഇനിയും പൂർത്തിയായിട്ടില്ല." : "This card separates collective material from the individual names. It includes the first version's names from the supplied book and a Malayalam/English translation of its continuation. Full letter-by-letter review and translation of other longer versions remain incomplete."}</p>
+      <BirhatiahCollectiveVersion />
       {completeList && <div className="space-y-3">
         <h3 className={`${cls} text-yellow-200`}>{ml ? "നിലവിലെ 28 നാമങ്ങളുടെ ക്രമം" : "Order of the current 28 name cards"}</h3>
         <p className="font-amiri text-2xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{ordered.map(c => c.canonical_arabic_name || c.arabic_name).join(" · ")}</p>

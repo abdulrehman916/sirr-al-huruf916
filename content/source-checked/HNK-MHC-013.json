@@ -21,5 +21,30 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+  },
+  "edition_accounts": [
+    {
+      "id": "english-copper-square",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 124,
+      "title": {
+        "ml": "ചെമ്പുപലകയിലെ 5 × 5 കളം — ഗ്രന്ഥപരാമർശം",
+        "en": "A five-by-five square on copper — source account"
+      },
+      "original_text": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it.",
+      "translation": {
+        "ml": "പേര് വേർതിരിച്ച അക്ഷരങ്ങളായി ചെമ്പുപലകയിൽ 5 × 5 കളത്തിൽ എഴുതി വീട്ടിൽ തൂക്കിയാൽ കള്ളന്മാരിൽനിന്നും തീപിടിത്തത്തിൽനിന്നും സുരക്ഷ ലഭിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം. ജിന്നുകളെ പീഡിപ്പിക്കാനാഗ്രഹിക്കുന്നവർ ഇത് അധികമായി ഓതണമെന്നൊരു വാക്യവും തുടർന്ന് വരുന്നു.",
+        "en": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it."
+      },
+      "count": null,
+      "timing": {
+        "ml": "നിശ്ചിത സമയമോ ഓതൽഎണ്ണമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "No specific time or repetition count is given."
+      },
+      "scope_note": {
+        "ml": "ഈ പേജിൽ 5 × 5 എന്ന അളവാണ് പറഞ്ഞിരിക്കുന്നത്; ഓരോ സെല്ലിന്റെയും ക്രമം കാണിക്കുന്ന ചിത്രം ഇല്ല. അതിനാൽ ഒരു പുതിയ കളം ഊഹിച്ച് വരച്ചിട്ടില്ല. തീപിടിത്തസുരക്ഷയ്ക്ക് ഇതിനെ ആശ്രയിക്കരുത്.",
+        "en": "The page gives the five-by-five size without a cell-by-cell diagram. No square has been invented. This is not fire-safety protection."
+      }
+    }
+  ]
 }

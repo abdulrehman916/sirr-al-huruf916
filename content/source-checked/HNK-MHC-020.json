@@ -21,5 +21,20 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+  },
+  "source_notes": [
+    {
+      "id": "historical-medical-claim",
+      "title": {
+        "ml": "രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഗ്രന്ഥപരാമർശം",
+        "en": "A historical bleeding-related passage"
+      },
+      "translation": {
+        "ml": "അറബി പേജ് 72-ലും ഇംഗ്ലീഷ് പേജ് 132-ലും രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഒരു പരമ്പരാഗത അവകാശവാദം കാണുന്നു. ഇംഗ്ലീഷ് പതിപ്പ് red lead എന്ന വസ്തുവിനെ പരാമർശിക്കുന്നു. ഇത് വായനക്കാരന് തയ്യാറാക്കി കുടിക്കാനുള്ള രീതിയായോ ചികിത്സാനിർദേശമായോ നൽകിയിട്ടില്ല.",
+        "en": "Arabic page 72 and English page 132 contain a traditional bleeding-related claim. The English edition mentions red lead. It is not supplied as a preparation to drink or as medical guidance."
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 132
+    }
+  ]
 }

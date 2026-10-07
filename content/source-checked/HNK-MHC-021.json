@@ -28,5 +28,20 @@
       "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
       "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending."
     }
-  }
+  },
+  "source_notes": [
+    {
+      "id": "square-surrounding-text",
+      "title": {
+        "ml": "കളവും അതിനു ചുറ്റുമുള്ള എഴുത്തും — ഗ്രന്ഥപരാമർശം",
+        "en": "The square and its surrounding inscription — source account"
+      },
+      "translation": {
+        "ml": "അറബി പേജ് 72-ൽ ഈ പേര് നൂറ് തവണ എഴുതുന്നതും, മൂസാ നബിയുമായി ബന്ധപ്പെട്ട രണ്ടു ഖുർആൻ ഭാഗങ്ങൾ വേർതിരിച്ച അക്ഷരങ്ങളായി ഈ കളത്തിനു ചുറ്റും എഴുതുന്നതും ഗ്രന്ഥം വിവരിക്കുന്നു. മന്ത്രബാധയുള്ളയാൾ അത് ധരിച്ചാൽ ബാധ മാറുമെന്നത് ഗ്രന്ഥത്തിലെ പരമ്പരാഗത അവകാശവാദമാണ്. ഈ കാർഡിലെ കളം അതേ പേജിൽനിന്ന് എടുത്ത ചിത്രമാണ്. ഇത് നൂറ് തവണ ഓതാനുള്ള എണ്ണം എന്നു മാറ്റി എഴുതിയിട്ടില്ല; പുസ്തകം ഇവിടെ എഴുതാനുള്ള എണ്ണമാണ് പറയുന്നത്.",
+        "en": "Arabic page 72 describes writing this name one hundred times and placing two Quranic passages concerning Moses, in separated letters, around this square. It traditionally claims relief from a spell when carried. The diagram in this card is cropped from that page. The hundred inscriptions are not relabelled as a repetition count for recitation."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 72
+    }
+  ]
 }

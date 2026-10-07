@@ -21,5 +21,30 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+  },
+  "edition_accounts": [
+    {
+      "id": "english-hunger-70",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 137,
+      "title": {
+        "ml": "വിശപ്പിനെക്കുറിച്ചുള്ള ചരിത്രപരമായ അവകാശവാദം",
+        "en": "A historical claim concerning hunger"
+      },
+      "original_text": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger.",
+      "translation": {
+        "ml": "പേര് ഒരു പാത്രത്തിൽ എഴുപത് തവണ എഴുതി ഒഴിഞ്ഞ വയറ്റിൽ അത് കുടിക്കുന്ന ഒരാൾ വിശപ്പിൽനിന്ന് സുരക്ഷിതനാകുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം.",
+        "en": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger."
+      },
+      "count": 70,
+      "timing": {
+        "ml": "ഒഴിഞ്ഞ വയറ്റിൽ എന്നാണ്; ദിവസമോ ഘടികാരസമയമോ ഇല്ല.",
+        "en": "An empty stomach is specified, without a day or clock time."
+      },
+      "scope_note": {
+        "ml": "ഇത് ഭക്ഷണത്തിന് പകരമുള്ള മാർഗമോ മഷി/എഴുത്തുപദാർത്ഥം കുടിക്കാനുള്ള നിർദേശമോ അല്ല. ഫലം തെളിയിക്കപ്പെട്ടതായി നൽകിയിട്ടില്ല.",
+        "en": "This is not a substitute for food or advice to drink ink or writing substances. The claimed outcome is not established."
+      }
+    }
+  ]
 }

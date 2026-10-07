@@ -21,5 +21,30 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+  },
+  "edition_accounts": [
+    {
+      "id": "english-joint-summoning",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 124,
+      "title": {
+        "ml": "ഖൽനഹൂദ്–ബർശാൻ സംയുക്ത പരാമർശം",
+        "en": "Qalnahud–Barshan combined account"
+      },
+      "original_text": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires.",
+      "translation": {
+        "ml": "ഏതെങ്കിലും ആവശ്യത്തിന് ആത്മാക്കളെ വിളിക്കാനാഗ്രഹിക്കുന്ന ഒരാൾ ഖൽനഹൂദ്, ബർശാൻ എന്നീ രണ്ടു പേരുകളും അധികമായി ഓതുകയും കുന്തിരിക്കവും മഹ്‌ലബും പുകയ്ക്കുകയും ആത്മാക്കളോട് ആവശ്യപ്പെടുകയും ചെയ്താൽ അവർ വന്ന് അയാൾ ആഗ്രഹിക്കുന്ന കാര്യങ്ങളെക്കുറിച്ച് സംസാരിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം.",
+        "en": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires."
+      },
+      "count": null,
+      "timing": {
+        "ml": "നിശ്ചിത എണ്ണമോ ദിവസമോ മണിക്കൂറോ നൽകിയിട്ടില്ല; അധികമായി ഓതുക എന്നാണ്.",
+        "en": "No fixed count, day or hour; the text says frequently."
+      },
+      "scope_note": {
+        "ml": "ഇത് 11-ഉം 12-ഉം പേരുകൾ ചേർന്നുള്ള രീതിയെക്കുറിച്ചാണ്; 11-ാമത്തെ പേരിന് മാത്രമുള്ള നിർദേശമല്ല.",
+        "en": "This concerns the eleventh and twelfth names together, not the eleventh name alone."
+      }
+    }
+  ]
 }
