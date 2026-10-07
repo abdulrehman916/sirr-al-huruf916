@@ -82,7 +82,7 @@ function displayValue(value) {
 function EntryCard({ entry }) {
   const text = entry?.text || entry?.verbatim_text || "";
   const arabic = entry?.arabic_text || "";
-  const malayalam = entry?.malayalam || entry?.exact_meaning || "";
+  const malayalam = displayValue(entry?.malayalam_text) || displayValue(entry?.malayalam_translation) || displayValue(entry?.malayalam) || displayValue(entry?.exact_meaning);
   const isOwner = useIsOwner();
   const sourceBook = entry?.source_book || entry?.source_reference || "";
   const author = entry?.author || "";
@@ -106,11 +106,11 @@ function EntryCard({ entry }) {
           {arabic}
         </p>
       )}
-      {text && text.trim() !== arabic.trim() && (
-        <p className="text-white/85 text-sm leading-relaxed mb-2 whitespace-pre-wrap">{text}</p>
-      )}
       {malayalam && (
-        <p className="text-white/65 text-sm leading-relaxed mb-2 font-malayalam">{malayalam}</p>
+        <p className="text-white/90 text-base leading-loose mb-3 font-malayalam whitespace-pre-wrap" lang="ml">{malayalam}</p>
+      )}
+      {text && text.trim() !== arabic.trim() && (
+        <p className="text-white/70 text-sm leading-relaxed mb-2 whitespace-pre-wrap">{text}</p>
       )}
       {(construction || conditions || reps || timing || purpose || warnings) && (
         <div className="space-y-1 mb-2 text-xs">
@@ -122,17 +122,18 @@ function EntryCard({ entry }) {
           {warnings && <p className="text-white/60"><span className="text-gold-dim">Warnings:</span> {warnings}</p>}
         </div>
       )}
-      {(sourceBook || author || page || lang || conf || cat) && (
-        <div className="text-[11px] text-white/45 border-t border-white/5 pt-2 flex flex-wrap gap-x-3 gap-y-1">
-          {isOwner && sourceBook && <span>📚 {sourceBook}{author ? ` — ${author}` : ""}</span>}
-          {isOwner && page && <span>📄 {page}</span>}
-          {lang && <span>🌐 {lang}</span>}
-          {conf && <span>⭐ {conf}</span>}
-          {cat && <span>🏷 {cat}</span>}
-        </div>
-      )}
-      {notes && (
-        <p className="text-[11px] text-white/40 mt-1">{notes}</p>
+      {isOwner && (sourceBook || author || page || lang || conf || cat || notes) && (
+        <details className="text-xs text-white/50 border-t border-white/10 pt-2 mt-3">
+          <summary className="cursor-pointer">Source details</summary>
+          <div className="space-y-1 pt-2">
+            {sourceBook && <p>{sourceBook}{author ? ` — ${author}` : ""}</p>}
+            {page && <p>Page: {page}</p>}
+            {lang && <p>Language: {lang}</p>}
+            {conf && <p>Imported confidence: {conf}</p>}
+            {cat && <p>Category: {cat}</p>}
+            {notes && <p className="whitespace-pre-wrap break-words">{notes}</p>}
+          </div>
+        </details>
       )}
     </div>
   );
@@ -216,12 +217,12 @@ export default function HolyOneScholarlySections({ card }) {
         <h2 className="font-inter font-semibold text-white">
           പണ്ഡിത ഗ്രന്ഥശാല (Scholarly Library)
         </h2>
-        <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: G.text }}>
+        {isOwner && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: G.text }}>
           {sources.length} sources · {history.length} passes
-        </span>
+        </span>}
       </div>
       <p className="text-[11px] text-white/45 mb-3">
-        Append-only scholarly research. Every entry independently sourced. Conflicting opinions kept separate.
+        Arabic passages and their available Malayalam explanations are shown together.
       </p>
 
       {sections.map(s => (
