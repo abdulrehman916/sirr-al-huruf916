@@ -15,7 +15,277 @@
     "resetCodeDevice",
     "revokePagePermission",
     "setAccessCodeDisabled",
+{
+  "mapped_function_names": [
+    "adminManageSubscription",
+    "approveAccessRequest",
+    "createAccessCode",
+    "deleteAccessCodeSecure",
+    "extendPermissionExpiry",
+    "getUserStats",
+    "grantPagePermission",
+    "linkAccessCode",
+    "loadLinkedPermissions",
+    "redeemCodeGuest",
+    "redeemCodeLinked",
+    "renewAccessCode",
+    "resetCodeDevice",
+    "revokePagePermission",
+    "setAccessCodeDisabled",
     "submitAccessRequest",
+    "transferAccessCode",
+    "unlinkAccessCode",
+    "updateAccessCode",
+    "updatePageVisibility",
+    "validateCodeStatus"
+  ],
+  "unported_calls": {
+    "aiPurposeSuggestion": [
+      "src/lib/aiPurposeSuggestion.js"
+    ],
+    "analyzeScreenshotAndMergeAstro": [
+      "src/components/astroclock/AstroScreenshotUploader.jsx"
+    ],
+    "auditAstrologyIngestion": [
+      "src/pages/AstrologyOnlyAudit.jsx"
+    ],
+    "auditHierarchy": [
+      "src/pages/HierarchyAuditPage.jsx"
+    ],
+    "auditManazilQuality": [
+      "src/pages/ManazilQualityAudit.jsx",
+      "src/pages/ManuscriptCompletionReport.jsx"
+    ],
+    "auditManuscriptRuleCompleteness": [
+      "src/pages/ManuscriptCompletionReport.jsx",
+      "src/pages/ManuscriptRuleAudit.jsx"
+    ],
+    "autoImportHolyNamesFromPDF": [
+      "src/pages/AdminPDFContentEditor.jsx"
+    ],
+    "autoLearnPurpose": [
+      "src/lib/purposeDictionaryLookup.js"
+    ],
+    "automatedBackup": [
+      "src/pages/AdminSettings.jsx"
+    ],
+    "backupPurposeDictionary": [
+      "src/components/admin/purposeDict/ImportExportBar.jsx"
+    ],
+    "browseOneDrive": [
+      "src/components/sirr/SirrOneDriveBrowser.jsx",
+      "src/components/sirr/SirrOneDriveFolderImporter.jsx"
+    ],
+    "buildKnowledgeGraph": [
+      "src/components/masterpdflibrary/KnowledgeGraph.jsx"
+    ],
+    "bulkImportOneDriveFolder": [
+      "src/components/sirr/SirrOneDriveFolderImporter.jsx"
+    ],
+    "bulkImportPurposeDictionary": [
+      "src/components/admin/purposeDict/ImportExportBar.jsx"
+    ],
+    "classifyAndIngestScreenshot": [
+      "src/components/manuscript/ManuscriptScreenshotUploader.jsx",
+      "src/hooks/useManuscriptScreenshotIngestion.js"
+    ],
+    "confirmPurposeMeaning": [
+      "src/lib/purposeDictionaryLookup.js"
+    ],
+    "createSupportConversation": [
+      "src/pages/SupportCenter.jsx"
+    ],
+    "createSupportMessage": [
+      "src/components/admin/MessagesTab.jsx"
+    ],
+    "detectManuscriptDuplicates": [
+      "src/components/sirr/SirrAnalyzeModal.jsx"
+    ],
+    "documentContextIngest": [
+      "src/components/astroclock/AstroScreenshotUploader.jsx"
+    ],
+    "enrichManuscriptRules": [
+      "src/pages/ManuscriptRuleAudit.jsx"
+    ],
+    "exportData": [
+      "src/pages/AdminSettings.jsx",
+      "src/pages/SecurityAuditLogs.jsx"
+    ],
+    "finalizePurposeDictionaryImport": [
+      "src/components/admin/purposeDict/ImportExportBar.jsx"
+    ],
+    "getAstroClockLibraryStatus": [
+      "src/pages/AstroClockLibraryStatus.jsx"
+    ],
+    "getLiveMoonPosition": [
+      "src/lib/astroClockJPLHorizons.js"
+    ],
+    "getMasterPdfRenderUrl": [
+      "src/components/sectiond/SectionDVisualIntegrator.jsx"
+    ],
+    "getOwnerAuditLog": [
+      "src/pages/AdminAuditLog.jsx"
+    ],
+    "getShopAnalytics": [
+      "src/components/admin/shop/MarketplaceAnalyticsDashboard.jsx"
+    ],
+    "getSupportConversations": [
+      "src/pages/AdminSupportCenter.jsx",
+      "src/pages/SupportCenter.jsx"
+    ],
+    "getSupportMessages": [
+      "src/pages/AdminSupportCenter.jsx",
+      "src/pages/SupportCenter.jsx"
+    ],
+    "grantManualAccess": [
+      "src/components/admin/GrantAccessModal.jsx"
+    ],
+    "importFromOneDrive": [
+      "src/components/sirr/SirrAnalyzeModal.jsx",
+      "src/components/sirr/SirrOneDriveBrowser.jsx"
+    ],
+    "importHolyNamesPDF": [
+      "src/components/holynameknowledge/HolyNameImportPanel.jsx"
+    ],
+    "ingestManuscriptPDF": [
+      "src/pages/ManuscriptLibraryPage.jsx"
+    ],
+    "ingestSirrManuscript": [
+      "src/components/sirr/SirrBookCard.jsx"
+    ],
+    "invoke-llm": [
+      "src/api/platformClient.js"
+    ],
+    "logShopAnalyticsEvent": [
+      "src/lib/shopAnalytics.js"
+    ],
+    "manageAdminProfile": [
+      "src/components/admin/AdminFormModal.jsx",
+      "src/components/admin/GoogleUsersTab.jsx",
+      "src/pages/AdminAdmins.jsx"
+    ],
+    "manageAnalytics": [
+      "src/pages/AdminAnalytics.jsx"
+    ],
+    "manageCustomerAssignment": [
+      "src/components/admin/AssignAdminModal.jsx",
+      "src/pages/AdminAdmins.jsx"
+    ],
+    "manageRedeemCodeApproval": [
+      "src/pages/AdminRedeemApprovals.jsx",
+      "src/pages/RedeemCodeApproval.jsx"
+    ],
+    "manageSupportRouting": [
+      "src/pages/AdminSupport.jsx",
+      "src/pages/WhatsAppSupport.jsx"
+    ],
+    "manageSystemSettings": [
+      "src/pages/AdminSystemSettings.jsx"
+    ],
+    "processImportChunk": [
+      "src/components/sirr/SirrAnalyzeModal.jsx"
+    ],
+    "queryManuscriptLibrary": [
+      "src/components/astroclock/ClickableEntityCard.jsx",
+      "src/components/astroclock/ManazilDatabase.jsx",
+      "src/components/astroclock/ManuscriptKnowledgeExplorer.jsx",
+      "src/components/astroclock/PlanetKnowledgePanels.jsx",
+      "src/components/astroclock/useManuscriptExplorer.jsx",
+      "src/pages/ManuscriptLibraryPage.jsx"
+    ],
+    "recordOwnerAuditLog": [
+      "src/lib/ownerAuditLog.js"
+    ],
+    "replyToAccessRequest": [
+      "src/pages/MyRequests.jsx"
+    ],
+    "resetOnboarding": [
+      "src/pages/AdminSettings.jsx"
+    ],
+    "restoreFromZipBackup": [
+      "src/pages/AdminSettings.jsx"
+    ],
+    "restorePurposeDictionary": [
+      "src/components/admin/purposeDict/ImportExportBar.jsx",
+      "src/components/admin/purposeDict/VersionHistoryPanel.jsx"
+    ],
+    "reviewMasterPdfPage": [
+      "src/components/masterpdflibrary/MplReviewDrawer.jsx"
+    ],
+    "routeManuscriptKnowledge": [
+      "src/components/sirr/SirrAnalyzeModal.jsx"
+    ],
+    "savePurposeDictionaryEntry": [
+      "src/lib/aiPurposeSuggestion.js"
+    ],
+    "searchAdobeCloudPdfs": [
+      "src/components/masterpdflibrary/MplUpload.jsx"
+    ],
+    "searchGoogleDrivePdfs": [
+      "src/components/masterpdflibrary/MplUpload.jsx"
+    ],
+    "searchManuscriptRules": [
+      "src/pages/ManuscriptAdvancedSearch.jsx"
+    ],
+    "searchOneDrivePdfs": [
+      "src/components/masterpdflibrary/MplUpload.jsx"
+    ],
+    "seedHolyOneNamesFromContents": [
+      "src/components/holynameknowledge/HolyNameContentsSeedPanel.jsx"
+    ],
+    "sendSupportMessage": [
+      "src/pages/AdminSupportCenter.jsx",
+      "src/pages/SupportCenter.jsx"
+    ],
+    "smartTopicRoute": [
+      "src/components/astroclock/AstroScreenshotUploader.jsx"
+    ],
+    "syncModuleRegistry": [
+      "src/lib/moduleSync.js"
+    ],
+    "syncPageVisibility": [
+      "src/lib/pageSync.js"
+    ],
+    "translateDivineNameChunk": [
+      "src/pages/AdminHolyNamesTranslator.jsx"
+    ],
+    "unifiedKnowledgeSearch": [
+      "src/pages/UnifiedKnowledgeSearch.jsx"
+    ],
+    "updatePagePricing": [
+      "src/pages/AdminPricingSettings.jsx"
+    ],
+    "updateSupportConversation": [
+      "src/pages/AdminSupportCenter.jsx"
+    ],
+    "validateCrossReferences": [
+      "src/pages/ManuscriptCompletionReport.jsx"
+    ],
+    "validateManuscriptImport": [
+      "src/components/sirr/SirrOneDriveBrowser.jsx"
+    ],
+    "verifyArabicText": [
+      "src/lib/verifiedArabicDatabase.js"
+    ],
+    "verifyBookEntries": [
+      "src/components/sirr/SirrAnalyzeModal.jsx"
+    ],
+    "verifyManuscriptDatabase": [
+      "src/pages/ManuscriptFinalAudit.jsx"
+    ]
+  },
+  "unported_name_count": 71,
+  "source_function_files": 256,
+  "status": "Five independent read endpoints deployed; remaining server features are incomplete. Signed-in customer/owner end-to-end verification is pending.",
+  "deployed_edge_functions": [
+    "getUserSubscriptions",
+    "getUserRequests",
+    "getPagePricing",
+    "getOnboardingResetDate",
+    "checkPageAccessFast"
+  ]
+}
+      "submitAccessRequest",
     "transferAccessCode",
     "unlinkAccessCode",
     "updateAccessCode",
