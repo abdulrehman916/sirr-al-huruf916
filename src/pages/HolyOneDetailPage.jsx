@@ -272,7 +272,7 @@ export default function HolyOneDetailPage() {
             </div>
 
             {/* Without ال */}
-            <div>
+            {divineNameInfo.withAL !== divineNameInfo.withoutAL && (<div>
               <div className="text-center mb-3">
                 <span className="font-inter text-[10px] uppercase tracking-widest" style={{ color: G.text }}>
                   Holy Name (without ال)
@@ -311,7 +311,7 @@ export default function HolyOneDetailPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div>)}
           </div>
         )}
 
