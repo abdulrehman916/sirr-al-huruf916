@@ -1,0 +1,63 @@
+{
+  "name_id": "HNK-MHC-001",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 67,
+  "source_name_form": "بِرْهَتِيْهٍ",
+  "scope_note": {
+    "ml": "ഇവ ഗ്രന്ഥത്തിൽ രേഖപ്പെടുത്തിയ വിശ്വാസപരമായ അവകാശവാദങ്ങളാണ്. മൂലപാഠം പരിശോധിച്ചതാണ്; ഫലങ്ങൾ തെളിയിക്കപ്പെട്ടുവെന്ന അർത്ഥമില്ല. ഈ ഭാഗം ആദ്യ പേരിന്റെ തിരഞ്ഞെടുത്ത നിർദ്ദേശങ്ങൾ മാത്രമാണ്.",
+    "en": "These are historical claims recorded in the source. The source text was checked; the outcomes are not established. This section covers selected instructions for the first name."
+  },
+  "name_note": {
+    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം അനുസരിച്ചുള്ള ഹരക്കത്തുകളാണ് മുകളിൽ നൽകിയിരിക്കുന്നത്. ഈ പതിപ്പിൽ അവസാന അക്ഷരം ه ആണ്. നിലവിലെ കാർഡിന്റെ ة എന്ന അക്ഷരവും കണക്കുകളും മാറ്റിയിട്ടില്ല. അർത്ഥം: പരിശുദ്ധൻ; മറ്റൊരു അഭിപ്രായത്തിൽ മഹത്വപ്പെടുത്തപ്പെട്ടവൻ.",
+    "en": "The vowel marks follow the pronunciation instructions in this edition, which ends the name with ه. The existing card spelling with ة and its calculations are preserved. Meaning: Most Holy; alternatively, Most Glorified."
+  },
+  "practices": [
+    {
+      "id": "daily-100",
+      "count": 100,
+      "title": {
+        "ml": "ദിവസേന നൂറ് തവണ — ഗ്രന്ഥത്തിലെ പരാമർശം",
+        "en": "Daily repetition — source account"
+      },
+      "arabic_original": "وإذا استعمله من ضاق به الرزق كل يوم مائة مرة لا يمضي عليه أربعون يوما حتى يفتح الله عليه باب الغنى عن الناس",
+      "translation": {
+        "ml": "ഉപജീവനം പ്രയാസത്തിലായ ഒരാൾ ഇത് ദിവസേന നൂറ് തവണ ഉപയോഗിച്ചാൽ, നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ് അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറന്നുകൊടുക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+        "en": "The source says that someone facing difficulty earning a living uses the name one hundred times daily, and claims that within forty days God opens a way to independence from others."
+      },
+      "timing": {
+        "ml": "ദിവസേന. പ്രത്യേക ഘടികാരസമയമോ നമസ്കാരശേഷമോ ഇവിടെ പറഞ്ഞിട്ടില്ല.",
+        "en": "Daily. No clock time or prayer is specified in this passage."
+      },
+      "claim": {
+        "ml": "മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "The source claims an opening toward independence from others."
+      }
+    },
+    {
+      "id": "right-palm-seven",
+      "count": 7,
+      "title": {
+        "ml": "വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ — അറബി പതിപ്പ്",
+        "en": "Seven inscriptions on the right palm — Arabic edition"
+      },
+      "arabic_original": "وإذا كتبه إنسان في كفه الأيمن سبع مرات وطلب به الرزق حفظ كل ما يبيعه ولا يكسد أبدا",
+      "translation": {
+        "ml": "ഒരാൾ ഇത് തന്റെ വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതുകയും അതിലൂടെ ഉപജീവനം തേടുകയും ചെയ്താൽ, അയാൾ വിൽക്കുന്ന വസ്തുക്കൾ സംരക്ഷിക്കപ്പെടുകയും വിറ്റുപോകാതെ കിടക്കാതിരിക്കുകയും ചെയ്യുമെന്ന് ഈ അറബി പതിപ്പ് പറയുന്നു.",
+        "en": "This Arabic edition describes writing the name seven times on the right palm and seeking provision through it, claiming protection for the goods sold and that they will not remain unsold."
+      },
+      "timing": {
+        "ml": "ഈ നിർദ്ദേശത്തിൽ സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "No time or day is given for this instruction."
+      },
+      "claim": {
+        "ml": "വ്യാപാരവസ്തുക്കളുടെ സംരക്ഷണവും വിറ്റുപോകലും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "A source claim concerning protection and sale of merchandise."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ൽ കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തിന് വ്യത്യസ്തമായ വിവരണവും ഓർമ്മശക്തിയെക്കുറിച്ചുള്ള അവകാശവാദവുമാണ്. അത് ഈ അറബി പതിപ്പിന്റെ വിവർത്തനമായി കലർത്തിയിട്ടില്ല. പേജ് 67-ലെ പ്രസവത്തെക്കുറിച്ചുള്ള മറ്റൊരു ചരിത്രപരമായ അവകാശവാദം ഇവിടെ ചികിത്സാനിർദ്ദേശമായി നൽകിയിട്ടില്ല. ഈ പേരിനുള്ള പ്രത്യേക കളം ഈ പേജിൽ കാണുന്നില്ല.",
+    "en": "Printed page 110 of the supplied English book gives a different account of the seven palm inscriptions, with a memory-related claim. It is not merged into the translation of this Arabic edition. Another historical childbirth claim on page 67 is not presented here as medical guidance. No name-specific square appears on this page."
+  }
+}

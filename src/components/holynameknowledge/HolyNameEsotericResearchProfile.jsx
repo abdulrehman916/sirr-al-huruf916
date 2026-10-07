@@ -8,6 +8,7 @@ import { platform } from "@/api/platformClient";
 import { calculateAbjad, getAbjadBreakdown } from "@/lib/abjadValues";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
+import HolyNameSourceChapter from "./HolyNameSourceChapter";
 
 // ── Section C Card Detail ──
 // Renders ONE Birhatīya name card with:
@@ -274,7 +275,7 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
         </>)}
       </Block>
 
-      {/* VISUAL CONTENT — displayed above scholarly data, underneath primary info */}
+      <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} />
 
       {/* 2 — CURRENT SCHOLARLY DATA */}
       <Block title="Current Scholarly Data" titleML="നിലവിലുള്ള പണ്ഡിത വിവരങ്ങൾ" icon={ScrollText} accent={P.text} defaultOpen={false}>
