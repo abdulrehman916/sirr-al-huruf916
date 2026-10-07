@@ -26,6 +26,7 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
           </dl>
         </article>
       ))}
+      {chapter.figure?.image_path?.startsWith("/figures/") && <figure className="space-y-2"><img src={chapter.figure.image_path} alt={translated(chapter.figure.caption)} loading="lazy" className="max-w-full w-80 rounded-lg mx-auto" /><figcaption className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.figure.caption)}</figcaption></figure>}
       {chapter.edition_note && <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(chapter.edition_note)}</p>}
       <details className={`${cls} text-xs text-white/50 border-t border-white/10 pt-3`}>
         <summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary>

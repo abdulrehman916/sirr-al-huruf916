@@ -1,0 +1,42 @@
+{
+  "name_id": "HNK-MHC-005",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 68,
+  "source_name_form": "مَزْجَلٍ",
+  "scope_note": {
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  },
+  "name_note": {
+    "ml": "അർത്ഥം: നിലനിൽക്കുന്നവനേ; മറ്റൊരു അഭിപ്രായം: ഉള്ളവനേ.",
+    "en": "Meaning: O Ever Subsistent One; alternatively, O Existent One."
+  },
+  "practices": [
+    {
+      "id": "daily-50",
+      "count": 50,
+      "title": {
+        "ml": "ദിവസേന അമ്പത് തവണ",
+        "en": "Fifty repetitions daily"
+      },
+      "arabic_original": "ومن واظب على تلاوته كل يوم خمسين مرة غفر الله ذنوبه ومن عليه بزيارة قبر النبي صلى الله عليه وسلم قبل موته ونال مرتبة عظيمة وأحب كل من رآه",
+      "translation": {
+        "ml": "ദിവസേന അമ്പത് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾക്ക് പാപമോചനവും, മരണത്തിനുമുമ്പ് നബി ﷺയുടെ ഖബർ സന്ദർശിക്കാനുള്ള അവസരവും, ഉയർന്ന സ്ഥാനവും, കാണുന്നവരുടെ സ്നേഹവും ലഭിക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+        "en": "The source associates habitual daily repetition fifty times with forgiveness, visiting the Prophet’s grave before death, high standing and being loved by those who see the person."
+      },
+      "timing": {
+        "ml": "ദിവസേന; നമസ്കാരശേഷമെന്ന് പ്രത്യേകം പറഞ്ഞിട്ടില്ല.",
+        "en": "Daily; no particular prayer is specified."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim in the source; the outcome is not established."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name_id": "HNK-MHC-004",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 68,
+  "source_name_form": "طُورَانٍ",
+  "scope_note": {
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  },
+  "name_note": {
+    "ml": "അർത്ഥം: ജീവിച്ചിരിക്കുന്നവനേ; മറ്റൊരു അഭിപ്രായം: ജീവൻ നൽകുന്നവനേ. ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണമാണ് ഹരക്കത്തിന്റെ അടിസ്ഥാനം.",
+    "en": "Meaning: O Living One; alternatively, O Giver of Life. Vowel marks follow the source pronunciation description."
+  },
+  "practices": [
+    {
+      "id": "protection-five",
+      "count": 5,
+      "title": {
+        "ml": "സംരക്ഷണത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശം",
+        "en": "Source account concerning protection"
+      },
+      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع آخر أربع آيات آخر سورة الحشر وثلاث هاءات وخمس همزات حرس من سطوة الإنس والجن والجبابرة",
+      "translation": {
+        "ml": "ഈ പേര് അഞ്ചു തവണ, സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, അഞ്ച് ഹംസകൾ എന്നിവയ്ക്കൊപ്പം എഴുതി കൈവശം വെക്കുന്നതിനെക്കുറിച്ച് ഗ്രന്ഥം പറയുന്നു. മനുഷ്യർ, ജിന്നുകൾ, അധികാരദുരുപയോഗം ചെയ്യുന്നവർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്ന് സംരക്ഷണം ലഭിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. ഈ കുറിപ്പ് ആയത്തുകളുടെ പൂർണ്ണ പാഠത്തിന് പകരമല്ല.",
+        "en": "The source describes five inscriptions together with the last four verses of al-Hashr, three ha letters and five hamzas, carried for claimed protection against humans, jinn and tyrants. This note does not substitute for the complete verse text."
+      },
+      "timing": {
+        "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "No specific time or day is stated in this instruction."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim in the source; the outcome is not established."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  }
+}

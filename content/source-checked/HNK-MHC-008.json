@@ -1,0 +1,42 @@
+{
+  "name_id": "HNK-MHC-008",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 69,
+  "source_name_form": "بَرْهَشٍ",
+  "scope_note": {
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  },
+  "name_note": {
+    "ml": "അർത്ഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ, അവന് ഉത്തരം നൽകേണമേ; മറ്റൊരു അഭിപ്രായം: ശക്തനായവനേ. ഗ്രന്ഥം ഇതിനെ മീകാഈലിന്റെ തസ്ബീഹ് എന്ന് വിശേഷിപ്പിക്കുന്നു; ഇത് ഗ്രന്ഥത്തിന്റെ വിവരണമാണ്.",
+    "en": "Meaning: O Allah, here is Your servant, answer him; alternatively, O Omnipotent One. The source describes it as Mika’il’s glorification; this is the book’s account."
+  },
+  "practices": [
+    {
+      "id": "combined-recitation",
+      "count": 1209,
+      "title": {
+        "ml": "ഏഴാം പേരിനൊപ്പം — ഗ്രന്ഥപരാമർശം",
+        "en": "Combined with the seventh name — source account"
+      },
+      "arabic_original": "ومن واظب على الاسمين ترقب برهش ١٢٠٩ وكل عند كل مائة على من أراد حضر إليه سريعا",
+      "translation": {
+        "ml": "തർഖബ്, ബർഹശ് എന്നീ രണ്ടു പേരുകൾ ചേർത്ത് 1209 തവണ വായിക്കുന്നതും ഓരോ നൂറ് തവണയ്ക്കുശേഷമുള്ള നിർദ്ദേശവും ഗ്രന്ഥത്തിൽ പരാമർശിക്കുന്നു. ആവശ്യപ്പെടുന്ന ആളെ എത്തിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. അഗർവുഡ്, കുന്തിരിക്കം എന്നിവയും അർദ്ധരാത്രിയും ഈ സംയുക്തപരാമർശത്തിൽ നൽകിയിട്ടുണ്ട്.",
+        "en": "The source records combined repetition of Tarqab and Barhash 1209 times, with a charge after each hundred, claiming to bring the requested person. Aloeswood, frankincense and midnight are specified in this combined account."
+      },
+      "timing": {
+        "ml": "അർദ്ധരാത്രി; ഇത് രണ്ടു പേരുകളും ചേർന്നുള്ള പരാമർശമാണ്.",
+        "en": "Midnight; this timing belongs to the combined account."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim in the source; the outcome is not established."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  }
+}

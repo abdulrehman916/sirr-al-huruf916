@@ -1,0 +1,42 @@
+{
+  "name_id": "HNK-MHC-006",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 69,
+  "source_name_form": "بَزْجَلٍ",
+  "scope_note": {
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  },
+  "name_note": {
+    "ml": "അർത്ഥങ്ങൾക്ക് ഗ്രന്ഥം സ്നേഹമുള്ളവനേ, അല്ലാഹുവേ, കീഴടക്കുന്നവനേ, ഏകനേ എന്നീ വ്യത്യസ്ത അഭിപ്രായങ്ങൾ നൽകുന്നു.",
+    "en": "Alternative meanings in the source include O Loving One, O God, O Subduer and O One."
+  },
+  "practices": [
+    {
+      "id": "thursday-paper",
+      "count": null,
+      "title": {
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പുള്ള എഴുത്ത്",
+        "en": "Writing before sunrise on Thursday"
+      },
+      "arabic_original": "ومن خواصه أن من كتبه في ورقة حمراء قبل طلوع شمس يوم الخميس وقبل أن يتكلم مع أحد ثم قرأ حاجته ثم ألقى الورقة في بحر قضى الله حاجته في جمعته",
+      "translation": {
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്, ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്, ചുവന്ന കടലാസിൽ പേര് എഴുതുകയും തന്റെ ആവശ്യം പറയുകയും കടലാസ് കടലിലിടുകയും ചെയ്യുന്നതാണ് ഗ്രന്ഥത്തിലെ വിവരണം. ആ ആഴ്ച ആവശ്യം നിറവേറുമെന്ന അവകാശവാദമാണുള്ളത്. എഴുത്തിന്റെ ആവർത്തനസംഖ്യ ഈ ഭാഗത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "The source describes writing the name on red paper before Thursday sunrise and before speaking to anyone, stating the need, and casting the paper into the sea. It claims fulfillment that week. This passage gives no repetition count."
+      },
+      "timing": {
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്; ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്.",
+        "en": "Thursday before sunrise, before speaking to anyone."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim in the source; the outcome is not established."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  }
+}

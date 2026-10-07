@@ -1,0 +1,49 @@
+{
+  "name_id": "HNK-MHC-007",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 69,
+  "source_name_form": "تَرْقَبٍ",
+  "scope_note": {
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  },
+  "name_note": {
+    "ml": "അർത്ഥം: പൂർണ്ണനായവനേ. താഴെയുള്ള കളം ഈ പേരിന്റെ ഭാഗത്തുതന്നെയാണ് അച്ചടിച്ചിരിക്കുന്നത്.",
+    "en": "Meaning: O Complete One. The square below is printed within this name’s source section."
+  },
+  "practices": [
+    {
+      "id": "friday-store",
+      "count": null,
+      "title": {
+        "ml": "കടയുമായി ബന്ധപ്പെട്ട കളം — ഗ്രന്ഥപരാമർശം",
+        "en": "A store-related square — source account"
+      },
+      "arabic_original": "ومن خواصه أن من كتبه يوم جمعة مع قوله تعالى كلما دخل عليها زكريا المحراب وجد عندها رزقا الآية ومع هذا الوفق كما ترى",
+      "translation": {
+        "ml": "വെള്ളിയാഴ്ച ഈ പേരും, സകരിയ്യാ മിഹ്റാബിൽ കടന്നപ്പോൾ മർയമിന്റെ അടുത്ത് ഉപജീവനം കണ്ടെത്തിയതിനെക്കുറിച്ചുള്ള ആയത്തിന്റെ പരാമർശവും, താഴെ കാണുന്ന കളവും ചേർത്ത് എഴുതുന്നതാണ് ഗ്രന്ഥത്തിൽ പറയുന്നത്. അഗർവുഡ്, ബെൻസോയിൻ എന്നിവയുടെ ധൂപം നൽകി കടയിൽ തൂക്കിയാൽ ആളുകൾ എല്ലാ ദിക്കുകളിൽനിന്നും എത്തുമെന്ന അവകാശവാദവും പിന്നാലെയുണ്ട്. മുകളിൽ നൽകിയ അറബി ഈ ഗ്രന്ഥവാക്യത്തിന്റെ ഭാഗമാണ്; പൂർണ്ണ ഖുർആൻ ആയത്തല്ല.",
+        "en": "The source describes writing the name on Friday with the reference to Zakariya finding provision at Maryam’s sanctuary and the square shown below. It then mentions aloeswood and benzoin incense and hanging it in a store, claiming customers arrive from every direction. The Arabic above is an excerpt from the book’s sentence, not the complete Qur’anic verse."
+      },
+      "timing": {
+        "ml": "വെള്ളിയാഴ്ച; മണിക്കൂർ പറഞ്ഞിട്ടില്ല.",
+        "en": "Friday; no hour is given."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim in the source; the outcome is not established."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  },
+  "figure": {
+    "image_path": "/figures/tarqab-manba-p69.svg",
+    "caption": {
+      "ml": "അച്ചടിച്ച പേജ് 69-ലെ കളത്തിന്റെ ഭാഗം മാത്രം. സംഖ്യകൾ തിരുത്തിയിട്ടില്ല. ഇംഗ്ലീഷ് പതിപ്പിലെ കളവുമായി വ്യത്യാസമുള്ളതിനാൽ പതിപ്പുകൾ കലർത്തിയിട്ടില്ല.",
+      "en": "Only the square from printed page 69. Its numbers are unchanged. It differs from the English edition, so the editions have not been merged."
+    }
+  }
+}
