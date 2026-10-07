@@ -259,7 +259,7 @@
   },
   "unported_name_count": 71,
   "source_function_files": 256,
-  "status": "Five independent read endpoints deployed; remaining server features are incomplete. Signed-in customer/owner end-to-end verification is pending.",
+  "status": "Five independent read endpoints deployed. Owner sign-in, subscriptions and archived requests verified live; customer end-to-end checks and remaining server features are incomplete. This static inventory does not include every dynamic call.",
   "deployed_edge_functions": [
     "getUserSubscriptions",
     "getUserRequests",
