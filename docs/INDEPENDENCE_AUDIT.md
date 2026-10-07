@@ -20,7 +20,7 @@ Imported premium snapshot: `99c504225ecf5d524ae4632785b9ac3c2e4095b2`.
 - Canonical Abjad checks: الله = 66; بسم الله الرحمن الرحيم = 786. Async processing is checked across chunk boundaries.
 - Missing imports in the older Abjad/Anasir pages now point to the existing canonical engines. No numeric tables or calculation formulas were changed.
 - Original Astro Clock content layouts and language-specific displays are restored. Saved English/Malayalam/Arabic content choices are respected. Global Login/Back interface controls stay English; Arabic source text is preserved.
-- Section B now loads all 160 stored names rather than stopping at the client's default 100.
+- Section B now loads all 160 stored names rather than stopping at the client's default 100. Its detail heading preserves Arabic with the stored English transliteration beneath it; Malayalam pronunciation remains separate. Duplicate identical Arabic entry text and literal null display placeholders are suppressed without changing the stored source content.
 - Imported record identifiers are preserved in the client so existing card relationships continue to match.
 
 ## Runtime independence and personal sources
@@ -33,10 +33,10 @@ Imported premium snapshot: `99c504225ecf5d524ae4632785b9ac3c2e4095b2`.
 
 ## Incomplete work — do not certify as finished
 
-- `backend-feature-audit.json` identifies 71 called server function names that still need independent implementations, including the AI `invoke-llm` endpoint. Five read endpoints (subscriptions, user requests, pricing, onboarding reset date and page access) are deployed; ownership and blocked-account checks pass isolated tests. Unauthenticated live requests are rejected. Signed-in live checks remain pending. A copied legacy function file was not an independent deployed backend.
-- Imported chapter coverage: Section A has 170 paragraphs for 26 names; 167 contain Arabic and Malayalam fields. Section B has 1,581 paragraphs for 144 names, all with Arabic and Malayalam fields. None of these imported paragraphs has an English translation field. This is a limitation in the stored source content, not missing migration records.
+- `backend-feature-audit.json` identifies 71 called server function names that still need independent implementations, including the AI `invoke-llm` endpoint. Five read endpoints (subscriptions, user requests, pricing, onboarding reset date and page access) are deployed; ownership and blocked-account checks pass isolated tests. Unauthenticated live requests are rejected. Owner Google sign-in, subscriptions (including all three active plans), the five archived owner access requests, and live Abjad calculations (66 and 786) are verified in production. Customer sign-in and cross-account live checks remain pending. The static inventory is not exhaustive: dynamic function calls, including `getVerifiedKnowledge`, also need review. A copied legacy function file was not an independent deployed backend.
+- Imported chapter coverage: Section A has 170 paragraphs for 26 names; 167 contain Arabic and Malayalam fields. Section B has 1,581 paragraphs for 144 names, all with Arabic and Malayalam fields. Imported chapters now have an Arabic/English/Malayalam translation selector, while original Arabic always remains visible. None of these imported paragraphs currently has an English translation field; selecting English explicitly reports the missing translation instead of displaying Malayalam as English. This is a limitation in the stored source content, not missing migration records.
 - The repository has substantial pre-existing JavaScript type errors. Common UI props and platform entity typing were corrected, but `npm run typecheck` still fails. These checks have not been disabled.
-- Authenticated owner/customer and every server-backed feature are not certified by the build and public-page checks.
+- Owner flows listed above have been checked in the signed-in production UI. Customer flows and every server-backed feature are not certified by the build or those owner checks.
 - Capacity for one million users has not been load-tested or provisioned. The current hosting plan cannot be treated as proof of that capacity.
 - Historical Supabase migration-file/version mismatches remain. Do not rerun old SQL files blindly.
 
