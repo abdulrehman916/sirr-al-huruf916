@@ -1,0 +1,43 @@
+[
+  {
+    "id": "mundhiri-collective-241-242",
+    "related_name_ids": [
+      "HNK-MHC-001",
+      "HNK-MHC-004",
+      "HNK-MHC-005",
+      "HNK-MHC-007",
+      "HNK-MHC-008",
+      "HNK-MHC-010",
+      "HNK-MHC-014",
+      "HNK-MHC-016",
+      "HNK-MHC-017"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "كشف الأسرار المخفية في علم الأجرام السماوية والرقوم الحرفية",
+    "source_author": "عمر بن مسعود بن ساعد المنذري",
+    "source_volume": "3",
+    "source_pages": "241–242",
+    "source_urls": [
+      "https://ablibrary.net/book_content/b/12109/241?lang=ar",
+      "https://ablibrary.net/book_content/b/12109/242?lang=ar"
+    ],
+    "title": {
+      "ml": "സംയുക്ത പ്രാർത്ഥനയുടെ സമാപനവാക്യം",
+      "en": "Closing words of a collective invocation"
+    },
+    "context_arabic": "وهذه أيضا عزيمة البرهتية المختصّة بالوفق الثلاثي",
+    "context_translation": {
+      "ml": "ഇതും മൂന്നിന് മൂന്നുള്ള കളവുമായി ബന്ധപ്പെട്ട ബർഹത്തിയ പ്രാർത്ഥനയാണ്.",
+      "en": "This is another Birhatiya invocation associated with a three-by-three square."
+    },
+    "arabic_original": "ولا حول ولا قوّة إلا باللّه العليّ العظيم وصلّى اللّه على سيّدنا محمد النبيّ وآله وسلم",
+    "translation": {
+      "ml": "ഉന്നതനും മഹാനുമായ അല്ലാഹുവിലൂടെയല്ലാതെ ശക്തിയോ കഴിവോ ഇല്ല. നമ്മുടെ നേതാവായ മുഹമ്മദ് നബിയിലും അദ്ദേഹത്തിന്റെ കുടുംബത്തിലും അല്ലാഹുവിന്റെ അനുഗ്രഹവും സമാധാനവും ഉണ്ടാകട്ടെ.",
+      "en": "There is no power or strength except through God, the Exalted and Great. May God bless and grant peace to our master Muhammad the Prophet and his family."
+    },
+    "scope_note": {
+      "ml": "ഇത് ഈ പേരും ഉൾപ്പെടുന്ന സംയുക്ത പാഠത്തിന്റെ അവസാനവാക്യമാണ്; ഈ പേരിന് മാത്രമുള്ള പൂർണ്ണ ദുആയല്ല. ഈ ഭാഗത്ത് ആവർത്തനസംഖ്യയോ നിശ്ചിത സമയമോ കളത്തിന്റെ സംഖ്യകളോ നൽകിയിട്ടില്ല.",
+      "en": "These are closing words from a collective text that includes this name, not a complete name-specific prayer. No repetition count, scheduled time or square values are supplied in this passage."
+    }
+  }
+]

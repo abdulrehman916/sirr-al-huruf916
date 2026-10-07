@@ -1,3 +1,4 @@
+import externalSources from "@/data/holyNamesExternalSources.json";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 export default function HolyNameSourceChapter({ chapter, nameId }) {
@@ -6,6 +7,7 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
   const ml = language === "ml";
   const cls = ml ? "font-malayalam" : "font-inter";
   const translated = value => value?.[language] || "";
+  const relatedExternalSources = externalSources.filter(source => source.review_status === "checked_against_digital_text" && source.related_name_ids.includes(nameId));
   return (
     <section className="rounded-xl border border-yellow-500/30 p-4 space-y-5 holy-name-reader">
       <h2 className={`${cls} text-lg text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തിലെ വിശദീകരണം" : "Explanation in the source"}</h2>
@@ -29,6 +31,20 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       ))}
       {chapter.figure?.image_path?.startsWith("/figures/") && <figure className="space-y-2"><img src={chapter.figure.image_path} alt={translated(chapter.figure.caption)} loading="lazy" className="max-w-full w-80 rounded-lg mx-auto" /><figcaption className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.figure.caption)}</figcaption></figure>}
       {chapter.edition_note && <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(chapter.edition_note)}</p>}
+      {relatedExternalSources.map(source => (
+        <article key={source.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
+          <h3 className={`${cls} text-base text-yellow-200`}>{translated(source.title)}</h3>
+          <p className="font-amiri text-xl text-right leading-loose text-white/90" lang="ar" dir="rtl">{source.context_arabic}</p>
+          <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(source.context_translation)}</p>
+          <p className="font-amiri text-xl text-right leading-loose text-white/90" lang="ar" dir="rtl">{source.arabic_original}</p>
+          <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(source.translation)}</p>
+          <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(source.scope_note)}</p>
+          <details className={`${cls} text-xs text-white/50`}>
+            <summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary>
+            <p className="pt-2">{source.source_title} · {source.source_author} · {ml ? "വാല്യം" : "Volume"} {source.source_volume} · {ml ? "പേജുകൾ" : "Pages"} {source.source_pages}</p>
+          </details>
+        </article>
+      ))}
       <details className={`${cls} text-xs text-white/50 border-t border-white/10 pt-3`}>
         <summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary>
         <p className="pt-2">{chapter.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {chapter.printed_page}</p>
