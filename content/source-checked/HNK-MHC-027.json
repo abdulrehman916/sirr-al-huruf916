@@ -1,0 +1,47 @@
+{
+  "name_id": "HNK-MHC-027",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 73,
+  "source_name_form": null,
+  "scope_note": {
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
+  },
+  "name_note": {
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
+  },
+  "meaning_arabic": "يا شكور",
+  "meaning_translation": {
+    "ml": "നന്ദി സ്വീകരിക്കുന്നവനേ.",
+    "en": "O Grateful One."
+  },
+  "practices": [
+    {
+      "id": "checked-account",
+      "count": 80,
+      "title": {
+        "ml": "ഗ്രന്ഥപരാമർശം",
+        "en": "Source account"
+      },
+      "arabic_original": "ومن كانت له حاجة وأراد قضاءها فليقرأه عند صلاة العشاء وهو ساجد ثمانين مرة ويسأل الله حاجته تقضى",
+      "translation": {
+        "ml": "ആവശ്യം നിറവേറാൻ ആഗ്രഹിക്കുന്ന ഒരാൾ ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ എൺപത് തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കണമെന്ന് ഈ അറബി പതിപ്പ് പറയുന്നു. ആവശ്യം നിറവേറുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്. ഇംഗ്ലീഷ് പതിപ്പ് ഇശായ്ക്കുശേഷം എന്നാണ് പറയുന്നത്; രണ്ടു വിവരണങ്ങളും കലർത്തിയിട്ടില്ല.",
+        "en": "The Arabic edition describes eighty repetitions while prostrating at the night prayer and asking God for fulfillment. The English edition specifies after that prayer; the two accounts are kept distinct."
+      },
+      "timing": {
+        "ml": "അറബി പതിപ്പിൽ: ഇശാ നമസ്കാരസമയത്ത്, സുജൂദിൽ. ഇംഗ്ലീഷ് പതിപ്പിൽ: ഇശായ്ക്കുശേഷം.",
+        "en": "Arabic edition: at the night prayer, in prostration. English edition: after the night prayer."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+        "en": "A traditional source claim; no outcome is guaranteed."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  }
+}

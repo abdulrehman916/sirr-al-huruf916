@@ -8,12 +8,13 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
   const translated = value => value?.[language] || "";
   return (
     <section className="rounded-xl border border-yellow-500/30 p-4 space-y-5 holy-name-reader">
-      <h2 className={`${cls} text-lg text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തിൽ രേഖപ്പെടുത്തിയ രീതികൾ" : "Practices recorded in the source"}</h2>
+      <h2 className={`${cls} text-lg text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തിലെ വിശദീകരണം" : "Explanation in the source"}</h2>
       <p className={`${cls} text-sm text-white/60 leading-relaxed`}>{translated(chapter.scope_note)}</p>
       <div>
         <p className="font-amiri text-3xl text-yellow-200 text-right leading-loose" lang="ar" dir="rtl">{chapter.source_name_form}</p>
         <p className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.name_note)}</p>
       </div>
+      {chapter.meaning_arabic && <div className="space-y-2"><p className="font-amiri text-2xl text-right leading-loose text-yellow-200" lang="ar" dir="rtl">{chapter.meaning_arabic}</p><p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(chapter.meaning_translation)}</p></div>}
       {(chapter.practices || []).map(practice => (
         <article key={practice.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
           <h3 className={`${cls} text-base text-yellow-200`}>{translated(practice.title)}</h3>

@@ -1,0 +1,25 @@
+{
+  "name_id": "HNK-MHC-009",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 70,
+  "source_name_form": null,
+  "scope_note": {
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
+  },
+  "name_note": {
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
+  },
+  "meaning_arabic": "يا حميد يا مجيد",
+  "meaning_translation": {
+    "ml": "സ്തുതിക്കർഹനായവനേ, മഹത്വമുള്ളവനേ.",
+    "en": "O Praiseworthy One, O Glorious One."
+  },
+  "practices": [],
+  "edition_note": {
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  }
+}

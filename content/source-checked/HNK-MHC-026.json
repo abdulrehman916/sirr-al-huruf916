@@ -1,0 +1,47 @@
+{
+  "name_id": "HNK-MHC-026",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 73,
+  "source_name_form": null,
+  "scope_note": {
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
+  },
+  "name_note": {
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
+  },
+  "meaning_arabic": "يا قادر على كل شيء",
+  "meaning_translation": {
+    "ml": "എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ.",
+    "en": "O He who is able to do all things."
+  },
+  "practices": [
+    {
+      "id": "checked-account",
+      "count": null,
+      "title": {
+        "ml": "ഗ്രന്ഥപരാമർശം",
+        "en": "Source account"
+      },
+      "arabic_original": "ومن خواصه أن من داوم على قراءته من غير عدد أمن من العطش وتطهرت روحه وصفت من الخواطر النفسانية وانطلق لسانه بإذن الله تعالى",
+      "translation": {
+        "ml": "നിശ്ചിത സംഖ്യയില്ലാതെ തുടർച്ചയായി വായിക്കുന്നതിനെ ഗ്രന്ഥം ദാഹത്തിൽനിന്നുള്ള സംരക്ഷണം, ആത്മാവിന്റെ ശുദ്ധി, മനസ്സിന്റെ ചാഞ്ചാട്ടങ്ങളിൽനിന്നുള്ള വ്യക്തത, സംസാരത്തിലെ ഒഴുക്ക് എന്നിവയുമായി ബന്ധിപ്പിക്കുന്നു. ദാഹത്തെക്കുറിച്ചുള്ളത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്; വെള്ളം കുടിക്കേണ്ടതില്ലെന്ന നിർദ്ദേശമല്ല.",
+        "en": "The source associates persistent repetition without a fixed count with protection against thirst, purity of spirit, freedom from capricious thoughts and eloquence. Its thirst-related claim is not a direction to forgo drinking water."
+      },
+      "timing": {
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No specific time or day is stated in this sentence."
+      },
+      "claim": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
+        "en": "A traditional source claim; no outcome is guaranteed."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  }
+}
