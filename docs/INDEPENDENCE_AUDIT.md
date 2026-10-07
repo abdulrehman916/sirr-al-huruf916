@@ -26,14 +26,14 @@ Imported premium snapshot: `99c504225ecf5d524ae4632785b9ac3c2e4095b2`.
 ## Runtime independence and personal sources
 
 - All page imports use the independent Supabase platform client. The old SDK scaffold and unused OAuth bootstrap are removed from the deployed source.
-- Seventy-one source assets, 68,058,785 bytes, were copied to private Storage and verified by downloading each copy and comparing its SHA-256 checksum.
+- 714 source assets, 595,268,265 bytes, were copied to private Storage and verified by downloading each copy and comparing its SHA-256 checksum.
 - Personal source files are never made public. Short-lived references require existing Storage authorization and are not reused across sign-out.
 - The one-time copying function is closed and requires JWT authentication; it contains no outbound source requests or migration credential.
-- The database reference cutover is pending. It must back up the 535 affected records privately before replacing their external media references, then report zero external media references in active application tables. The prepared frontend repairs have not yet been deployed.
+- The database reference cutover is complete. All affected records were backed up privately, and each was compared with its original backup after applying only the verified URL replacements. All 46,522 active records remain; zero active records contain the old media.base44.com or base44.app asset URLs. Frontend independence repairs are deployed.
 
 ## Incomplete work — do not certify as finished
 
-- `backend-feature-audit.json` identifies 76 called server function names that still need independent implementations. The AI `invoke-llm` endpoint also remains unimplemented. A copied legacy function file was not an independent deployed backend.
+- `backend-feature-audit.json` identifies 71 called server function names that still need independent implementations, including the AI `invoke-llm` endpoint. Five read endpoints (subscriptions, user requests, pricing, onboarding reset date and page access) are deployed; ownership and blocked-account checks pass isolated tests. Unauthenticated live requests are rejected. Signed-in live checks remain pending. A copied legacy function file was not an independent deployed backend.
 - Imported chapter coverage: Section A has 170 paragraphs for 26 names; 167 contain Arabic and Malayalam fields. Section B has 1,581 paragraphs for 144 names, all with Arabic and Malayalam fields. None of these imported paragraphs has an English translation field. This is a limitation in the stored source content, not missing migration records.
 - The repository has substantial pre-existing JavaScript type errors. Common UI props and platform entity typing were corrected, but `npm run typecheck` still fails. These checks have not been disabled.
 - Authenticated owner/customer and every server-backed feature are not certified by the build and public-page checks.
