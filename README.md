@@ -51,6 +51,7 @@ npm run verify:calculations
 npm run verify:records
 npm run verify:private-references
 npm run verify:independence
+node scripts/verify-independent-read-api.mjs
 npm run build
 npm run lint
 npm run typecheck
@@ -77,4 +78,4 @@ The Supabase migration ledger and the checked-in SQL files currently contain his
 
 ## Outstanding feature work
 
-See `docs/INDEPENDENCE_AUDIT.md` and `docs/backend-feature-audit.json`. Migration and a passing production build do not certify all features: the source calls 76 server function names without an implemented independent application endpoint. Existing JavaScript type errors and incomplete chapter translations also remain. Do not describe these features as ready or the content as complete.
+See `docs/INDEPENDENCE_AUDIT.md` and `docs/backend-feature-audit.json`. Migration and a passing production build do not certify all features: the source calls 71 server function names without an implemented independent application endpoint. Five independent account read endpoints are deployed; authenticated live verification remains pending. Existing JavaScript type errors and incomplete chapter translations also remain. Do not describe these features as ready or the content as complete.
