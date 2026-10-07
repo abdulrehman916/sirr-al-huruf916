@@ -184,5 +184,179 @@
         }
       }
     ]
+  },
+  "PDF-HN-002": {
+    "name_id": "PDF-HN-002",
+    "review_status": "checked_against_scan",
+    "source_title": "معاني الأسماء الإلهية — عفيف الدين التلمساني، تحقيق يوسف كيسويت",
+    "printed_page": "25–26",
+    "source_name_form": "اسمه الرحيم تبارك وتعالى",
+    "scope_note": {
+      "ml": "അർ-റഹീം അധ്യായത്തിലെ രണ്ട് ഖണ്ഡങ്ങളും അറബി പേജുകളുമായി ഒത്തുനോക്കി വിവർത്തനം ചെയ്തിരിക്കുന്നു. ഇത് ഗ്രന്ഥകാരന്റെ സൂഫി തത്ത്വവിവരണമാണ്; ഓതേണ്ട എണ്ണമോ സമയമോ കളമോ ഈ അധ്യായത്തിൽ നൽകിയിട്ടില്ല.",
+      "en": "Both paragraphs of the al-Rahim chapter are translated against the Arabic pages. This is the author’s Sufi metaphysical exposition; no recitation count, time or square is supplied."
+    },
+    "name_note": {
+      "ml": "അർ-റഹീം: കരുണാനിധി; ഏറെ കരുണ ചെയ്യുന്നവൻ. താഴെ അർ-റഹ്മാനുമായുള്ള ബന്ധം ഗ്രന്ഥകാരൻ വിശദീകരിക്കുന്നു.",
+      "en": "Al-Rahim: the Merciful. The author explains its relation to al-Rahman below."
+    },
+    "edition_note": {
+      "ml": "തലക്കെട്ടും രണ്ട് ഖണ്ഡങ്ങളും ഉൾപ്പെടുത്തിയിരിക്കുന്നു. അച്ചടിയിൽ നൽകിയിട്ടില്ലാത്ത ഹറകത്ത് സാധാരണ ഗദ്യത്തിൽ ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഹഖീഖത്ത്, വഖ്ഫത്ത്, നഫസ് തുടങ്ങിയ സാങ്കേതിക പദങ്ങളുടെ സന്ദർഭാർഥം വിവർത്തനത്തിൽ വിശദീകരിച്ചിരിക്കുന്നു. «الأكملية» എന്ന പദം വലുതാക്കിയ പേജ് ദൃശ്യവുമായി ഒത്തുനോക്കി, കൂടുതൽ പൂർണ്ണത എന്ന സന്ദർഭാർഥത്തിൽ വിവർത്തനം ചെയ്തിരിക്കുന്നു.",
+      "en": "The heading and both paragraphs are included. Prose vowels absent from the printing are not guessed. Technical terms such as reality, station of standing and breath are explained in context. The term الأكملية was checked against an enlarged scan and translated in context as greater completeness."
+    },
+    "practices": [
+      {
+        "id": "tilimsani-rahim-1",
+        "title": {
+          "ml": "അർ-റഹീമും അർ-റഹ്മാനും തമ്മിലുള്ള ബന്ധം",
+          "en": "The relation between al-Rahim and al-Rahman"
+        },
+        "arabic_original": "هذا الاسم العظيم مما اتفق عليه الأئمة الثلاثة رضوان الله عليهم البيهقي والغزالي وابن برجان ووروده في الفاتحة في قوله تعالى ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الرَّحْمَٰنِ الرَّحِيمِ﴾ وهو مشتق من الرحمة وصيغة فعيل فيه للمبالغة والفرق بينه وبين الاسم الرحمن أن الاسم الرحمن لكل الرحمة والرحيم للأكملية فكل رحمة ظهرت في الوجود يقال لها الرحمة ما بقي للذات أثر في نظر الناظر وإن لم يبق للذات أثر فهو رحمانية في فناء الشاهد بالمشهود وإن زاد على ذلك زيادة بعد التام فهي رحيمية والرحيمية هي مقام التحقيق والرحمانية من مقام الوقفة والرحمة من مقام العلم.",
+        "translation": {
+          "ml": "അൽ-ബൈഹഖി, അൽ-ഗസാലി, ഇബ്‌നു ബർറജാൻ എന്നീ മൂന്ന് ഇമാമുകളും ഈ മഹത്തായ നാമം അംഗീകരിച്ചിട്ടുണ്ടെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു; അല്ലാഹു അവരിൽ പ്രസാദിക്കട്ടെ. ഫാതിഹയിൽ «സർവലോകങ്ങളുടെയും രക്ഷിതാവായ, പരമകാരുണികനും കരുണാനിധിയുമായ അല്ലാഹുവിന് സ്തുതി» എന്ന വചനത്തിലാണ് ഇതു വരുന്നത്. ഈ നാമം കരുണ എന്ന അർഥമുള്ള «റഹ്മത്ത്» എന്നതിൽനിന്നുള്ളതാണ്; «ഫഈൽ» എന്ന രൂപം കരുണയുടെ ആധിക്യത്തെ സൂചിപ്പിക്കുന്നു. അർ-റഹ്മാനുമായുള്ള വ്യത്യാസം ഗ്രന്ഥം ഇങ്ങനെ വിശദീകരിക്കുന്നു: അർ-റഹ്മാൻ എല്ലാ കരുണയെയും സംബന്ധിക്കുന്നതാണ്. അർ-റഹീം കൂടുതൽ പൂർണ്ണതയെ സംബന്ധിക്കുന്നതാണ്; അച്ചടിയിലെ «الأكملية» എന്ന പദം ഇവിടെ കൂടുതൽ പൂർണ്ണമായ നിലയെ സൂചിപ്പിക്കുന്നു. അസ്തിത്വത്തിൽ പ്രത്യക്ഷപ്പെടുന്ന ഓരോ കരുണയെയും, നിരീക്ഷിക്കുന്നവന്റെ കാഴ്ചയിൽ സത്തയുടെ ഒരു അടയാളം ശേഷിക്കുന്നിടത്തോളം «റഹ്മത്ത്» എന്ന് പറയുന്നു. ആ അടയാളം ശേഷിക്കാതെ, ദർശിക്കുന്നവൻ ദർശിക്കപ്പെടുന്നവനിൽ ലയിക്കുന്ന നിലയിലാണ് «റഹ്മാനിയ്യത്ത്» എന്ന് ഗ്രന്ഥകാരൻ പറയുന്നത്. ആ പൂർണ്ണതയ്ക്കും ശേഷമുള്ള അധികാവസ്ഥയാണ് «റഹീമിയ്യത്ത്». റഹീമിയ്യത്ത് ഹഖീഖത്ത് സാക്ഷാത്കരിക്കുന്ന നിലയും, റഹ്മാനിയ്യത്ത് «വഖ്ഫത്ത്»—നിൽപ്പിന്റെ ആത്മീയ നില—സംബന്ധിച്ചതും, റഹ്മത്ത് അറിവിന്റെ നിലയുമായി ബന്ധപ്പെട്ടതുമാണെന്ന് ഗ്രന്ഥം പറയുന്നു. ഇവ ഗ്രന്ഥകാരന്റെ ആത്മീയ സാങ്കേതിക വിശദീകരണങ്ങളാണ്.",
+          "en": "The author says the three imams al-Bayhaqi, al-Ghazali and Ibn Barrajān agree on this great name; may Allah be pleased with them. It occurs in al-Fatihah in “Praise belongs to Allah, Lord of the worlds, the All-Merciful, the Merciful.” It derives from mercy, and the faʿil form expresses intensity. He relates al-Rahman to all mercy. He relates al-Rahim to greater completeness, expressed by the printed term الأكملية. Every mercy appearing in existence is called mercy while a trace of the self remains in the observer’s view. When no such trace remains and the witness is effaced in the witnessed, he calls it rahmaniyyah. An increase beyond that completeness is rahimiyyah. He assigns rahimiyyah to realization, rahmaniyyah to the station of standing, and mercy to the station of knowledge. These are the author’s spiritual technical distinctions."
+        }
+      },
+      {
+        "id": "tilimsani-rahim-2",
+        "title": {
+          "ml": "മറ്റു നാമങ്ങളിലെ ശക്തമായ അർഥരൂപങ്ങൾ",
+          "en": "Intensive forms in other names"
+        },
+        "arabic_original": "واعلم أن كل اسم من أسمائه تعالى فيه مبالغة على صيغة فعيل فهو داخل في الاسم الرحيم لا من كل وجه بل من الوجه الذي يدخل به الاسم الرحيم في الاسم الرحمن وهو جانب الوجود الذي هو نفس الرحمن في كل مرتبة وذلك مثل العليم والقدير والسميع من وجه والبصير من وجه آخر أيضا وأشباه ذلك من الأسماء.",
+        "translation": {
+          "ml": "അല്ലാഹുവിന്റെ നാമങ്ങളിൽ «ഫഈൽ» എന്ന രൂപത്തിൽ ആധിക്യം സൂചിപ്പിക്കുന്ന ഓരോ നാമവും അർ-റഹീമിൽ ഉൾപ്പെടുന്നതായി ഗ്രന്ഥം പറയുന്നു. എല്ലാ നിലകളിലും അല്ല; അർ-റഹീം അർ-റഹ്മാനിൽ ഉൾപ്പെടുന്ന അതേ നിലയിലാണ്. ഓരോ നിലയിലും റഹ്മാന്റെ «നഫസ്»—ദൈവിക കരുണയുടെ ശ്വാസം എന്ന സാങ്കേതിക വിവരണം—ആയിരിക്കുന്ന അസ്തിത്വത്തിന്റെ വശത്തെയാണ് ഇവിടെ ഉദ്ദേശിക്കുന്നത്. അൽ-അലീം, അൽ-ഖദീർ, ഒരു പരിഗണനയിൽ അസ്-സമീഅ്, മറ്റൊരു പരിഗണനയിൽ അൽ-ബസ്വീർ, ഇവയ്ക്ക് സമാനമായ മറ്റു നാമങ്ങൾ എന്നിവയാണ് ഗ്രന്ഥകാരൻ ഉദാഹരണമായി നൽകുന്നത്.",
+          "en": "The author says every divine name expressing intensity in the faʿil pattern is included in al-Rahim, not in every respect but in the respect in which al-Rahim enters al-Rahman. This is the aspect of existence he describes as the breath of al-Rahman at each level. His examples include al-Alim, al-Qadir, al-Sami in one consideration, al-Basir in another, and similar names."
+        }
+      }
+    ]
+  },
+  "PDF-HN-003": {
+    "name_id": "PDF-HN-003",
+    "review_status": "checked_against_scan",
+    "source_title": "معاني الأسماء الإلهية — عفيف الدين التلمساني، تحقيق يوسف كيسويت",
+    "printed_page": "26–29",
+    "source_name_form": "اسمه الملك تبارك وتعالى",
+    "scope_note": {
+      "ml": "അൽ-മലിക് അധ്യായത്തിലെ ഒൻപത് ഖണ്ഡങ്ങളുടെ അറബി പാഠവും മലയാളം/ഇംഗ്ലീഷ് വിവർത്തനവും നൽകിയിരിക്കുന്നു. ഇത് ഗ്രന്ഥകാരന്റെ സൂഫി തത്ത്വവ്യാഖ്യാനമാണ്; അഭിപ്രായങ്ങൾ അദ്ദേഹത്തിന്റേതായി വേർതിരിച്ചിരിക്കുന്നു. ഈ അധ്യായത്തിൽ ഓതേണ്ട എണ്ണമോ സമയമോ കളമോ നൽകിയിട്ടില്ല.",
+      "en": "Arabic and Malayalam/English translations of the nine paragraphs of the al-Malik chapter. This is the author’s Sufi metaphysical interpretation; positions are attributed to him. No recitation count, time or square is supplied in this chapter."
+    },
+    "name_note": {
+      "ml": "അൽ-മലിക്: രാജാവ്; പരമാധികാരമുള്ളവൻ. ഉടമസ്ഥതയെ സൂചിപ്പിക്കുന്ന അൽ-മാലിക് എന്ന വായനയുമായുള്ള വ്യത്യാസം ആദ്യഭാഗത്തിൽ വിശദീകരിക്കുന്നു.",
+      "en": "Al-Malik: the King, the Sovereign. The opening distinguishes it from Mālik, Owner."
+    },
+    "edition_note": {
+      "ml": "അറബി പാഠം അച്ചടിച്ച 26–29 പേജുകളുമായി ഒത്തുനോക്കിയിരിക്കുന്നു. അച്ചടിയിൽ ഇല്ലാത്ത ഹറകത്ത് സാധാരണ ഗദ്യത്തിൽ ഊഹിച്ച് ചേർത്തിട്ടില്ല. «حيم» എന്ന സാങ്കേതിക പദം മൂലരൂപത്തിൽ സൂക്ഷിച്ചിരിക്കുന്നു. ഗ്രന്ഥകാരന്റെ പരലോകവ്യാഖ്യാനം അദ്ദേഹത്തിന്റെ അഭിപ്രായമായി നൽകിയതാണ്.",
+      "en": "The Arabic was compared with printed pages 26–29. Prose vowels absent from the printing are not guessed. The technical term حيم is retained. The author’s eschatological interpretation is presented as his own position."
+    },
+    "practices": [
+      {
+        "id": "tilimsani-malik-1",
+        "title": {
+          "ml": "അൽ-മലിക്കും അൽ-മാലിക്കും",
+          "en": "Al-Malik and al-Malik with a long vowel"
+        },
+        "arabic_original": "هذا الاسم الكريم هو مما اتفق عليه الأئمة الثلاثة رضوان الله عليهم وأول وروده في الكتاب العزيز هو في قوله تعالى ﴿مَلِكِ يَوْمِ الدِّينِ﴾ وهو وإن ورد هنا مضافا فهو مطلق في المعنى بدليل وروده خاليا عن الإضافة في قوله ﴿هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ﴾ واشتقاقه من الملك ومن قرأ ﴿مَالِكِ يَوْمِ الدِّينِ﴾ فهو مشتق من الملك بكسر الميم وهما اسمان مختلفان في المعنى وفي مصنف أبي جعفر أحمد بن محمد بن إسماعيل البغوي قال سمعت محمد بن الوليد يحكي عن محمد بن يزيد أنه كان يستحسن أن يقرأ ﴿مَلِكِ يَوْمِ الدِّينِ﴾ ويستدل على ذلك بقوله ﴿لِمَنِ الْمُلْكُ﴾.",
+        "translation": {
+          "ml": "മൂന്ന് ഇമാമുകളും അംഗീകരിച്ച നാമമാണ് അൽ-മലിക് എന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു; അല്ലാഹു അവരിൽ പ്രസാദിക്കട്ടെ. വിശുദ്ധ ഗ്രന്ഥത്തിൽ ആദ്യം വരുന്നത് «പ്രതിഫലദിനത്തിന്റെ രാജാവ്» എന്ന വചനത്തിലാണ്. അവിടെ മറ്റൊരു പദത്തോടു ചേർത്താണ് വന്നതെങ്കിലും, അതിന്റെ അർഥം പരിമിതമല്ലെന്ന് അദ്ദേഹം വിശദീകരിക്കുന്നു: «അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല; അവൻ രാജാവാണ്» എന്ന വചനത്തിൽ ചേർപ്പില്ലാതെ ഈ നാമം വരുന്നുണ്ട്. അൽ-മലിക് അധികാരവും രാജത്വവും സൂചിപ്പിക്കുന്ന «മുൽക്» എന്നതിൽനിന്നാണ്. «മാലികി യൗമിദ്ദീൻ» എന്ന വായന ഉടമസ്ഥതയെ സൂചിപ്പിക്കുന്ന, മീമിന് കസ്റയുള്ള «മിൽക്» എന്നതിൽനിന്നാണ്. ഇവ അർഥത്തിൽ വ്യത്യസ്തമായ രണ്ടു നാമങ്ങളാണെന്ന് ഗ്രന്ഥം പറയുന്നു. അബൂജഅ്ഫർ അഹ്മദ് ബിൻ മുഹമ്മദ് ബിൻ ഇസ്മാഈൽ അൽ-ബഗവിയുടെ ഗ്രന്ഥത്തിൽ മുഹമ്മദ് ബിൻ അൽ-വലീദ്, മുഹമ്മദ് ബിൻ യസീദിനെക്കുറിച്ച് പറഞ്ഞതായി ഉദ്ധരിക്കുന്നു: അദ്ദേഹം «മലികി യൗമിദ്ദീൻ» എന്ന വായന ഇഷ്ടപ്പെടുകയും «രാജാധികാരം ആർക്കാണ്?» എന്ന വചനം അതിനു തെളിവായി കാണിക്കുകയും ചെയ്തു.",
+          "en": "The author says the three imams agree on this name; may Allah be pleased with them. Its first occurrence is “King of the Day of Judgment.” Although grammatically annexed there, its meaning is unrestricted, as shown by “He is Allah, besides whom there is no deity, the King,” where it is not annexed. Malik, King, derives from sovereignty; the reading Mālik, Owner, derives from milk with a kasrah on the mim, ownership. The author distinguishes their meanings. He cites the compilation of Abu Jaʿfar Ahmad ibn Muhammad ibn Ismaʿil al-Baghawi: Muhammad ibn al-Walid related that Muhammad ibn Yazid preferred the reading Malik, citing “To whom belongs sovereignty?”"
+        }
+      },
+      {
+        "id": "tilimsani-malik-2",
+        "title": {
+          "ml": "കാലത്തിനപ്പുറമുള്ള രാജാധികാരം",
+          "en": "Sovereignty beyond temporal succession"
+        },
+        "arabic_original": "ومرتبة ﴿مَلِكِ يَوْمِ الدِّينِ﴾ في الأسماء الإلهية تدخل تحت حيطة الاسم الباطن من حيث أن الآخرة غيب الآن وعند تعين يوم الدين وهو القيامة تدخل في حيطة الاسم الظاهر وتعد نسبة الاسم الملك عز وجل من الاسم الأول لأن الأولية سابقة و﴿مَلِكِ يَوْمِ الدِّينِ﴾ لاحق لتأخر ظهور حكمه إلى ﴿يَوْمِ الدِّينِ﴾ أما من حيث قدم الأسماء بقدم المسمى فذلك لا يختلف لكن لا تنقطع النسبة بينه وبين الاسم الأول بالكلية فإن يوم الآخرة بالنسبة إلى الله تعالى هو الآن حاضر لأنه تعالى لا تختلف في حقه الأزمنة ولا هو زماني فالماضي والمستقبل عنده حاضر وهذا المعنى يفهمه أهل الله تعالى فهما يستند إلى المشاهدة فلا يعترضهم فيه الشك ولا الظن ولا الوهم.",
+        "translation": {
+          "ml": "ദൈവിക നാമങ്ങളുടെ നിലയിൽ «പ്രതിഫലദിനത്തിന്റെ രാജാവ്» ഇപ്പോൾ മറഞ്ഞിരിക്കുന്ന പരലോകത്തെ സംബന്ധിക്കുന്നതിനാൽ അൽ-ബാത്വിൻ എന്ന നാമത്തിന്റെ വ്യാപ്തിയിൽ ഉൾപ്പെടുന്നു എന്ന് ഗ്രന്ഥം പറയുന്നു. പ്രതിഫലദിനം—ഖിയാമത്ത്—പ്രത്യക്ഷമാകുമ്പോൾ ഇത് അസ്-സാഹിറിന്റെ വ്യാപ്തിയിൽ ഉൾപ്പെടുന്നു. അൽ-അവ്വൽ എന്ന നാമത്തോട് അൽ-മലിക്കിന്റെ ബന്ധം അകന്നുനിൽക്കുന്നതായി അദ്ദേഹം വിശദീകരിക്കുന്നു: ആദ്യത്വം മുമ്പുള്ളതാണ്; പ്രതിഫലദിനവുമായി ബന്ധപ്പെട്ട അധികാരത്തിന്റെ പ്രകടനം പിന്നീടാണ്. എന്നാൽ നാമങ്ങളാൽ വിളിക്കപ്പെടുന്നവന്റെ അനാദിത്വത്തോടൊപ്പം നാമങ്ങളുടെ അനാദിത്വം പരിഗണിച്ചാൽ ഈ വ്യത്യാസമില്ല. അൽ-അവ്വലുമായുള്ള ബന്ധം പൂർണ്ണമായി മുറിയുന്നുമില്ല. അല്ലാഹുവിനെ സംബന്ധിച്ച് പരലോകദിനം ഇപ്പോൾതന്നെ സന്നിഹിതമാണ്; അവൻ കാലത്തിനുള്ളിലല്ല, കാലഭേദങ്ങൾ അവനെ ബാധിക്കുന്നില്ല. കഴിഞ്ഞതും വരാനിരിക്കുന്നതും അവന്റെ അടുക്കൽ സന്നിഹിതമാണ്. ദൈവജ്ഞാനികൾ ഈ അർഥം ആത്മീയ ദർശനത്തിൽ അധിഷ്ഠിതമായി മനസ്സിലാക്കുന്നതിനാൽ സംശയമോ അനുമാനമോ ഭാവനയോ അവരെ അലട്ടുന്നില്ലെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു.",
+          "en": "The author places “King of the Day of Judgment” within al-Batin because the hereafter is presently unseen. When that day, the Resurrection, becomes manifest, it enters the encompassing scope of al-Zahir. He describes its relation to al-Awwal as distant: firstness precedes, whereas this sovereignty becomes manifest later, on the Day of Judgment. Considering the names’ eternity through the eternity of the Named removes that difference, however, and their relation is not wholly severed. For Allah the hereafter is already present: He is not temporal, and differences of time do not affect Him. Past and future are present to Him. The author says people of divine knowledge understand this through witnessing, without doubt, supposition or imagination."
+        }
+      },
+      {
+        "id": "tilimsani-malik-3",
+        "title": {
+          "ml": "കരുണയും പ്രതികാരവും എന്ന രണ്ടു വിവരണങ്ങൾ",
+          "en": "Two descriptions: mercy and requital"
+        },
+        "arabic_original": "والمملكة يوم الدين تنقسم إلى قسمين أحدهما للرحمن قال الله تعالى ﴿الْمُلْكُ يَوْمَئِذٍ الْحَقُّ لِلرَّحْمَٰنِ﴾ والقسم الآخر للمنتقم وكذلك هو الملك ينعم على قوم وينتقم من آخرين قال الله تعالى ﴿وَكَانَ يَوْمًا عَلَى الْكَافِرِينَ عَسِيرًا﴾ فيوم الدين هو يوم الجزاء والجزاء إما بالرحمة وإما بالانتقام وحقيقة الرحمة ظهور حكم الملاءمة وذلك هو النعيم وحقيقة الانتقام عنده وهو إدراك المنافر وحقيقة ظهور الملاءمة والمنافرة المذكورين هنا أن يتجلى الاسم الباطن بأحكام الاسم الآخر فإنها الآخرة فيراه أهل الموقف على قدر استعداداتهم في رؤيته فمن لاءم ما رآه تنعم ومن نافره تألم وذلك لأن الاسم الباطن معنويته الأحدية وأهل الموقف جاؤوا من الدنيا وهم لا يعرفونها حقيقة فإن كان أحد منهم في الدنيا معترفا بالوحدانية فاعترافه إيمانا لا عيانا.",
+        "translation": {
+          "ml": "പ്രതിഫലദിനത്തിലെ രാജാധികാരം രണ്ടു നിലകളായി ഗ്രന്ഥം വിശദീകരിക്കുന്നു. ഒന്നിനെ അർ-റഹ്മാനോട് ബന്ധിപ്പിക്കുന്നു: «അന്നത്തെ യഥാർഥ രാജാധികാരം അർ-റഹ്മാനാണ്.» മറ്റൊന്ന് അൽ-മുൻതഖിം എന്ന നാമത്തോടാണ്. രാജാവ് ഒരു വിഭാഗത്തിന് അനുഗ്രഹം നൽകുകയും മറ്റൊരു വിഭാഗത്തിന് ശിക്ഷ നൽകുകയും ചെയ്യുന്നു: «അത് സത്യനിഷേധികൾക്ക് പ്രയാസമേറിയ ദിനമായിരിക്കും.» പ്രതിഫലദിനത്തിൽ ഫലം കരുണയാലോ ശിക്ഷയാലോ ലഭിക്കുന്നു. അനുയോജ്യമായതിന്റെ പ്രകടനമാണ് കരുണയുടെ യാഥാർഥ്യം—അതാണ് ആനന്ദം. അനുയോജ്യമല്ലാത്തത് അനുഭവപ്പെടുന്നതാണ് പ്രതികാരത്തിന്റെ യാഥാർഥ്യം എന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. അൽ-ബാത്വിൻ, അൽ-ആഖിറിന്റെ വിധികളിലൂടെ വെളിപ്പെടുന്നതായാണ് അദ്ദേഹം ഇത് വിശദീകരിക്കുന്നത്. അവിടെ നിൽക്കുന്നവർ തങ്ങളുടെ സ്വീകരണശേഷിക്കനുസരിച്ച് കാണുന്നു; കണ്ടത് അനുയോജ്യമാകുന്നവർ ആനന്ദിക്കുകയും വിരുദ്ധമാകുന്നവർ വേദനിക്കുകയും ചെയ്യുന്നു. അൽ-ബാത്വിന്റെ അർഥം അഹദിയ്യത്ത്—പരമ ഏകത—ആണ്. ലോകത്തുനിന്ന് വന്നവർ അതിനെ നേരിട്ടുള്ള യാഥാർഥ്യമായി അറിഞ്ഞിട്ടില്ല; ലോകത്തിൽ ഏകത അംഗീകരിച്ചിട്ടുണ്ടെങ്കിൽ അത് വിശ്വാസത്തിലൂടെയായിരുന്നു, നേരിട്ടുള്ള ദർശനത്തിലൂടെയല്ലെന്ന് ഈ തത്ത്വവിവരണം പറയുന്നു.",
+          "en": "The author describes two aspects of sovereignty on Judgment Day: one belongs to al-Rahman, citing “True sovereignty that day belongs to the All-Merciful”; the other to al-Muntaqim. The King bestows blessings on some and requites others: “It will be a difficult day for the unbelievers.” Recompense is through mercy or requital. Mercy manifests what is congenial, producing bliss; requital is the perception of what is uncongenial. He explains this as al-Batin manifesting through the rulings of al-Akhir. Those standing there perceive according to their receptivity: agreement with what they see brings bliss, disagreement pain. Al-Batin signifies absolute unity. Those arriving from this world have not known it by direct realization; any previous acknowledgment of oneness was through faith rather than direct witnessing."
+        }
+      },
+      {
+        "id": "tilimsani-malik-4",
+        "title": {
+          "ml": "സ്വരൂപതൗഹീദും അറിവിന്റെ നിലയും",
+          "en": "Unity of the Essence and degrees of knowledge"
+        },
+        "arabic_original": "وأما أهل التوحيد الذاتي فلا ينافرهم تجلي الوحدانية بوجه من الوجوه فيكون نعيمهم ذاتيا مساويا لنعيم أهل الدنيا والآخرة كله محسوسه ومتخيله وموهومه ومعلومه بسائر اعتبارات النعيم ويليهم في المرتبة أهل المعرفة وهم عرفوه تعالى من حضرة اسم من أسمائه أو اسمين على قدر مرتبتهم في المعرفة فتنعم هذه الطائفة ببعض نعيم الطائفة الأولى ويفوتهم من النعيم بقدر ما فاتهم من الشهود الذاتي.",
+        "translation": {
+          "ml": "സ്വരൂപതൗഹീദിന്റെ ആളുകൾക്ക് ഏകതയുടെ വെളിപ്പെടൽ ഒരു നിലയിലും വിരുദ്ധമാകുന്നില്ലെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. അതിനാൽ അവരുടെ ആനന്ദം സ്വരൂപപരമാണ്; ഇഹലോകത്തും പരലോകത്തുമുള്ള എല്ലാ ആനന്ദങ്ങൾക്കും തുല്യമായി അദ്ദേഹം അതിനെ വിവരിക്കുന്നു—ഇന്ദ്രിയാനുഭവം, ഭാവന, സങ്കൽപ്പം, അറിവ് തുടങ്ങിയ എല്ലാ പരിഗണനകളിലും. അടുത്ത നിലയിൽ മഅ്‌രിഫത്തിന്റെ ആളുകളാണ്. അവരുടെ അറിവിന്റെ നിലയ്ക്കനുസരിച്ച് അല്ലാഹുവിന്റെ ഒരു നാമത്തിന്റെയോ രണ്ടു നാമങ്ങളുടെയോ സാന്നിധ്യത്തിലൂടെയാണ് അവർ അവനെ അറിഞ്ഞത്. ആദ്യവിഭാഗത്തിന്റെ ആനന്ദത്തിൽ ഒരു ഭാഗം ഇവർ അനുഭവിക്കുന്നു; സ്വരൂപദർശനത്തിൽ എത്ര നഷ്ടപ്പെട്ടുവോ അത്ര ആനന്ദവും നഷ്ടപ്പെടുന്നതായി ഗ്രന്ഥം പറയുന്നു.",
+          "en": "The author says manifestation of oneness is never uncongenial to those realizing the unity of the Essence. Their bliss is intrinsic and equals the entirety of worldly and otherworldly bliss: sensed, imagined, supposed, known and considered in every other respect. Next are people of gnosis, who know Allah through the presence of one or two of His names according to their degree of knowledge. They share some of the first group’s bliss and miss as much bliss as they miss direct witnessing of the Essence."
+        }
+      },
+      {
+        "id": "tilimsani-malik-5",
+        "title": {
+          "ml": "സാക്ഷ്യവും ഇഹ്സാന്റെ രണ്ടു നിലകളും",
+          "en": "Witnessing and the two degrees of ihsan"
+        },
+        "arabic_original": "ويلي هذه الطائفة المؤمنون وهم على قسمين منهم ﴿مُؤْمِنُونَ بِالْغَيْبِ﴾ ومنهم من ﴿أَلْقَى السَّمْعَ وَهُوَ شَهِيدٌ﴾ فيكون نعيم هذا القسم الثاني أقوى من نعيم قسيمه ومقام هؤلاء هو مقام السكينة ويبقى القسم الآخر من المؤمنين فينقسم قسمين أحدهما أهل مقام الإحسان وهو مقام أن تعبد الله كأنك تراه وهم أشرف نعيما من الذين في مقام فإن لم تكن تراه فإنه يراك وكلا هذين في مقام الإحسان.",
+        "translation": {
+          "ml": "അടുത്തതായി വിശ്വാസികൾ വരുന്നു എന്ന് ഗ്രന്ഥം പറയുന്നു. അവരിൽ ചിലർ അദൃശ്യത്തിൽ വിശ്വസിക്കുന്നവരും മറ്റുചിലർ «സാക്ഷിയായിക്കൊണ്ട് ശ്രദ്ധിച്ചു കേൾക്കുന്നവരും» ആണ്. രണ്ടാമത്തെ വിഭാഗത്തിന്റെ ആനന്ദം ആദ്യത്തേതിനെക്കാൾ ശക്തമാണ്; ഇവരുടെ നില സകീനത്ത്—ശാന്തമായ ഉറപ്പ്—ആണ്. വിശ്വാസികളിലെ ശേഷിക്കുന്ന വിഭാഗം വീണ്ടും രണ്ടായി വിഭജിക്കുന്നു. ഒന്നാമത്, «അല്ലാഹുവിനെ നീ കാണുന്നതുപോലെ ആരാധിക്കുക» എന്ന ഇഹ്സാന്റെ നിലയിലുള്ളവർ. «നീ അവനെ കാണുന്നില്ലെങ്കിലും അവൻ നിന്നെ കാണുന്നു» എന്ന നിലയിലുള്ളവരെക്കാൾ ഉന്നതമായ ആനന്ദമാണ് ഇവർക്കെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. ഈ രണ്ടു നിലകളും ഇഹ്സാനിൽ ഉൾപ്പെടുന്നു.",
+          "en": "Next come believers, whom the author divides into those believing in the unseen and those who “listen while witnessing.” The second group’s bliss is greater; their station is tranquility. He then divides the remaining believers into two degrees of ihsan: worshipping Allah as though seeing Him, and knowing that, though one does not see Him, He sees oneself. He describes the former’s bliss as more elevated, while placing both within ihsan."
+        }
+      },
+      {
+        "id": "tilimsani-malik-6",
+        "title": {
+          "ml": "ഇഹ്സാനിൽ എത്താത്ത വിശ്വാസികളുടെ വിവരണം",
+          "en": "Believers who have not attained ihsan"
+        },
+        "arabic_original": "والقسم الآخر من المؤمنين هم الذين لم يصلوا إلى مقام الإحسان فهم ﴿الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ﴾ الآية فهؤلاء يتنعمون نعيما أضعف من نعيم من ذكر قبلهم وإن كان نعيمهم لو فرق على الناس أجمعين لوسعهم لكن بعض هذه الطائفة اعتقدوا عقائد غير مناسبة فيلحقهم من العذاب ما يطهرهم من دنس كفر باطن كان فيهم وشرك خفي كان في ذواتهم وذلك العذاب متفاوت على مقدار انحرافهم عن الاعتدال الإيماني فهذه الطائفة أهل السعادة التي تظهر عليهم أحكام ﴿مَلِكِ يَوْمِ الدِّينِ﴾.",
+        "translation": {
+          "ml": "വിശ്വാസികളിലെ മറ്റൊരു വിഭാഗം ഇഹ്സാന്റെ നിലയിലെത്താത്തവരാണ്: «അദൃശ്യത്തിൽ വിശ്വസിക്കുകയും നമസ്കാരം നിലനിർത്തുകയും ചെയ്യുന്നവർ» എന്ന് വചനത്തിൽ പറയുന്നവർ. മുമ്പ് പറഞ്ഞവരെക്കാൾ കുറഞ്ഞ ആനന്ദമാണ് ഇവർക്കെന്ന് ഗ്രന്ഥം പറയുന്നു. എന്നിരുന്നാലും അവരുടെ ആനന്ദം എല്ലാവർക്കുമായി പങ്കിട്ടാൽ എല്ലാവർക്കും മതിയാകും. ഈ വിഭാഗത്തിലെ ചിലർ അനുയോജ്യമല്ലാത്ത വിശ്വാസങ്ങൾ സ്വീകരിച്ചതിനാൽ, അവരുടെ ഉള്ളിലുണ്ടായിരുന്ന മറഞ്ഞ സത്യനിഷേധത്തിന്റെയും സൂക്ഷ്മശിർക്കിന്റെയും മലിനത നീക്കുന്ന ശിക്ഷ അവർക്കുണ്ടാകുമെന്ന് ഗ്രന്ഥകാരൻ അഭിപ്രായപ്പെടുന്നു. വിശ്വാസത്തിലെ സമതുലിതനിലയിൽനിന്നുള്ള വ്യതിചലനത്തിന്റെ അളവനുസരിച്ച് ആ ശിക്ഷ വ്യത്യാസപ്പെടും. «പ്രതിഫലദിനത്തിന്റെ രാജാവ്» എന്ന നാമത്തിന്റെ വിധികൾ പ്രത്യക്ഷപ്പെടുന്ന സൗഭാഗ്യവിഭാഗമായാണ് ഇവരെ ഈ ഗ്രന്ഥം വിവരിക്കുന്നത്.",
+          "en": "The other believers have not attained ihsan: those who “believe in the unseen and establish prayer.” The author assigns them less bliss than the preceding groups, though their bliss, distributed among all people, would suffice for everyone. He maintains that some in this group held inappropriate beliefs and undergo suffering to purify inward unbelief and hidden association. Its degree varies with their departure from balanced faith. He nevertheless places this group among the fortunate upon whom the rulings of “King of the Day of Judgment” become manifest."
+        }
+      },
+      {
+        "id": "tilimsani-malik-7",
+        "title": {
+          "ml": "അൽ-ബാത്വിന്റെ വെളിപ്പെടലും സ്വീകരണശേഷിയും",
+          "en": "Manifestation of al-Batin and receptivity"
+        },
+        "arabic_original": "وأما الطائفة الأخرى وهم أهل نسبة الاسم المنتقم فإذا تجلى عليهم الاسم الباطن بظهور أحكام الاسم الآخر وبمقتضى معنوية الوحدانية لم يجد التجلي فيهم موضعا للقبول وأمر هذا التجلي إذ ذاك لا يزداد كذلك تكون أحكام الملك المطاع طوعا وكرها فأما أهل النعيم فطوعا وأما هؤلاء فكرها وحينئذ تنفذ أشعة التجلي فيهم كرها فلا يبقى منهم رسم مع رسم بل يتمزقون لظهور أشعة الوحدانية فيهم وذلك هو عذاب النار فالذي ينعم أهل النعيم هو الذي به يعذب أهل العذاب قال الواقف أوقفني في النار فرأيت حيم الجنة حيم جيم جهنم ورأيت ما به يعذب عين ما به ينعم.",
+        "translation": {
+          "ml": "മറ്റൊരു വിഭാഗത്തെ ഗ്രന്ഥകാരൻ അൽ-മുൻതഖിം എന്ന നാമവുമായി ബന്ധമുള്ളവരായി വിവരിക്കുന്നു. അൽ-ആഖിറിന്റെ വിധികളോടും ഏകതയുടെ അർഥത്തോടും കൂടെ അൽ-ബാത്വിൻ അവരിൽ വെളിപ്പെടുമ്പോൾ, അതിനെ സ്വീകരിക്കുന്ന സ്ഥാനം അവരിൽ കണ്ടെത്തുന്നില്ലെന്ന് അദ്ദേഹം പറയുന്നു. ആ വെളിപ്പെടൽ അപ്പോൾ കൂടുതലാകുന്നുമില്ല. രാജാവിന്റെ വിധികൾ സ്വമേധയായും നിർബന്ധമായും അനുസരിക്കപ്പെടുന്നു: ആനന്ദത്തിന്റെ ആളുകൾ സ്വമേധയാ; മറ്റുള്ളവർ നിർബന്ധമായി. ഏകതയുടെ വെളിപ്പെടലിന്റെ കിരണങ്ങൾ നിർബന്ധമായി അവരിലൂടെ കടന്നുപോകുന്നതിനാൽ ഒരു രൂപവും മറ്റൊന്നോടൊപ്പം നിലനിൽക്കാതെ അവർ ചിതറുന്നതായാണ് ഈ തത്ത്വവിവരണം പറയുന്നത്; അതിനെ നരകശിക്ഷയോട് ബന്ധിപ്പിക്കുന്നു. ആനന്ദത്തിന്റെ ആളുകളെ ആനന്ദിപ്പിക്കുന്നതുതന്നെയാണ് ശിക്ഷയുടെ ആളുകളെ ശിക്ഷിക്കുന്നതെന്നതാണ് ഗ്രന്ഥകാരന്റെ നിലപാട്. തുടർന്ന് «അൽ-വാഖിഫ്» എന്ന ആത്മീയവിവരണത്തിൽനിന്ന് അദ്ദേഹം ഉദ്ധരിക്കുന്നു: “എന്നെ നരകത്തിൽ നിർത്തി. സ്വർഗത്തിന്റെ ‘ഹീം’ നരകത്തിലെ ജീമിന്റെ ‘ഹീം’ ആയി ഞാൻ കണ്ടു; ശിക്ഷ ലഭിക്കുന്ന അതേ ഒന്നിലൂടെയാണ് ആനന്ദവും ലഭിക്കുന്നതെന്ന് ഞാൻ കണ്ടു.” «حيم» എന്ന അച്ചടിപ്പദവും അക്ഷരസൂചനയും സാങ്കേതികമായതിനാൽ അതേപടി സംരക്ഷിച്ചിരിക്കുന്നു; അതിന് ഗ്രന്ഥത്തിൽ ഇല്ലാത്ത വ്യാഖ്യാനം ചേർത്തിട്ടില്ല.",
+          "en": "The author relates the other group to al-Muntaqim. When al-Batin manifests through the rulings of al-Akhir and the meaning of oneness, that manifestation finds no receptivity in them; it does not then increase. The King’s rulings are obeyed willingly or unwillingly: willingly by those in bliss, unwillingly by the others. He describes the rays of manifestation penetrating them involuntarily until their forms break apart, relating this to the torment of fire. What gives bliss to one group gives pain to the other. He then quotes al-Waqif: “He stationed me in the fire; I saw the ḥīm of Paradise as the ḥīm of the jīm of Hell, and saw that what brings torment is precisely what brings bliss.” The printed term حيم and its letter reference are retained as technical wording, without adding an interpretation absent from the chapter."
+        }
+      },
+      {
+        "id": "tilimsani-malik-8",
+        "title": {
+          "ml": "രൂപം മാറുന്നതിനെക്കുറിച്ചുള്ള ഗ്രന്ഥവിവരണം",
+          "en": "The source’s account of changing form"
+        },
+        "arabic_original": "فإذا نفذ حكم الملك فيهم وتمزقهم كل ممزق بحكم ظهوره لهم بالصورة التي لا يعرفونه بها وذلك قولهم نعوذ بالله منك نحن هنا حتى يأتينا ربنا فبعد تمزقهم يتحول لهم في الصورة التي يعرفونه فيها فيقولون نعم أنت ربنا وذلك في أحقاب من العذاب.",
+        "translation": {
+          "ml": "അവർ തിരിച്ചറിയാത്ത രൂപത്തിലുള്ള വെളിപ്പെടലിലൂടെ രാജാവിന്റെ വിധി അവരിൽ നടപ്പായി, അവർ പൂർണ്ണമായി ചിതറിയശേഷമുള്ള അവസ്ഥ ഗ്രന്ഥകാരൻ വിവരിക്കുന്നു. “നിന്നിൽനിന്ന് ഞങ്ങൾ അല്ലാഹുവിൽ അഭയംതേടുന്നു; ഞങ്ങളുടെ രക്ഷിതാവ് വരുന്നതുവരെ ഞങ്ങൾ ഇവിടെ നിൽക്കും” എന്നു അവർ പറയുന്നതുമായി അദ്ദേഹം ഇത് ബന്ധിപ്പിക്കുന്നു. പിന്നീട് അവർ തിരിച്ചറിയുന്ന രൂപത്തിൽ പ്രത്യക്ഷപ്പെടുമ്പോൾ, “അതെ, നീയാണ് ഞങ്ങളുടെ രക്ഷിതാവ്” എന്നു പറയുന്നതായി ഗ്രന്ഥം പറയുന്നു. ഇതിനെ ദീർഘമായ ശിക്ഷാകാലഘട്ടങ്ങളുമായി ഗ്രന്ഥകാരൻ ബന്ധിപ്പിക്കുന്നു. ഇവിടെ നൽകിയിരിക്കുന്നത് അദ്ദേഹത്തിന്റെ വ്യാഖ്യാനമാണ്.",
+          "en": "The author describes the King’s ruling taking effect through a form they do not recognize and their being completely broken apart. He connects this with their saying, “We seek refuge in Allah from you; we remain here until our Lord comes.” Afterward He appears in a form they recognize and they say, “Yes, You are our Lord.” The author locates this within long periods of punishment. This is his interpretive account."
+        }
+      },
+      {
+        "id": "tilimsani-malik-9",
+        "title": {
+          "ml": "വെളിപ്പെടലും സ്വീകരിക്കുന്നവരുടെ മാറ്റവും",
+          "en": "Manifestation and change in its recipients"
+        },
+        "arabic_original": "ومعنى هذا التحول لا يعود إلى تغير في المتجلي الذي هو الباطن بإذن الملك بل إنما يعود إلى قوابل المعذبين فكأنه قال إنهم عند بلوغ غاية العذاب ترجع قوابلهم مناسبة للمتجلي لا بمعنى أنها تغيرت عما كانت عليه بل لسعة معاني التجلي لهم وحيطتها فإذا إنما يتحول حالهم بالنسبة إلى التجلي فيشهدون منه ثانيا ما لم يشهدوه منه أولا وذلك لأنهم بالعذاب استعدوا استعدادا تاما لأن بعض استعداداتهم كان مغمورا في الحجاب فعندما كشف حجابهم العذاب رأوا فاعترفوا بما أنكروا فذلك هو حين ظهور حكم الاسم الرحمن فيهم فيلحقون بالنعيم ويبقى أهل الجحيم الذين هم أهلها فقال أهل الله إنهم بعد أن يجري العذاب فيهم مدى عامه ينعطف عليهم بالرحمة فيتنعمهم في النار بها حتى لو خيروا لاختاروها على الجنة وهنا يتحقق أن أسماء النقمة قد تعود إلى الرحمن قال الله تعالى ﴿قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ أَيًّا مَا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ﴾ ومن جملة الأسماء الحسنى أسماء النقمة فهي للاسم الرحمن أيضا.",
+        "translation": {
+          "ml": "ഈ മാറ്റം, അൽ-മലിക്കിന്റെ അനുമതിയോടെ വെളിപ്പെടുന്ന അൽ-ബാത്വിനിൽ സംഭവിക്കുന്ന മാറ്റമല്ലെന്ന് ഗ്രന്ഥകാരൻ വിശദീകരിക്കുന്നു. ശിക്ഷ അനുഭവിക്കുന്നവരുടെ സ്വീകരണശേഷിയോടാണ് അതിന്റെ ബന്ധം. ശിക്ഷയുടെ അറ്റത്തെത്തുമ്പോൾ അവരുടെ സ്വീകരണശേഷി വെളിപ്പെടലിനോട് അനുയോജ്യമാകുന്നു എന്ന് അദ്ദേഹം പറയുന്നു. മുമ്പുണ്ടായിരുന്നതിൽനിന്ന് അതു മാറി എന്ന അർഥത്തിലല്ല; വെളിപ്പെടലിന്റെ അർഥങ്ങളുടെ വിശാലതയും അവരെ ഉൾക്കൊള്ളുന്ന വ്യാപ്തിയും കൊണ്ടാണ്. വെളിപ്പെടലുമായുള്ള ബന്ധത്തിൽ അവരുടെ അവസ്ഥ മാറി, ആദ്യം കാണാത്തത് പിന്നീട് കാണുന്നു. ശിക്ഷയിലൂടെ അവർ പൂർണ്ണമായ സ്വീകരണശേഷി നേടുന്നതായും, മുമ്പ് മറയിൽ മുങ്ങിയിരുന്ന ശേഷികളുടെ മറ നീങ്ങി അവർ നിഷേധിച്ചത് അംഗീകരിക്കുന്നതായും ഗ്രന്ഥം വിവരിക്കുന്നു. അപ്പോൾ അർ-റഹ്മാന്റെ വിധി അവരിൽ പ്രത്യക്ഷമായി അവർ ആനന്ദത്തിലേക്കെത്തുമെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. നരകത്തിന്റെ സ്ഥിരവാസികളായി ശേഷിക്കുന്നവരെക്കുറിച്ച്, ശിക്ഷ അതിന്റെ കാലപരിധിവരെ നടന്നശേഷം കരുണ അവരിലേക്കു തിരിയുകയും നരകത്തിൽതന്നെ അവർ അതിലൂടെ ആനന്ദിക്കുകയും, തിരഞ്ഞെടുപ്പു നൽകിയാൽ സ്വർഗത്തെക്കാൾ അതിനെ തിരഞ്ഞെടുക്കുകയും ചെയ്യുമെന്ന അഭിപ്രായം «അഹ്‌ലുല്ലാഹ്» പറഞ്ഞതായി അദ്ദേഹം രേഖപ്പെടുത്തുന്നു. ഇത് ഈ ഗ്രന്ഥത്തിലെ പ്രത്യേക സൂഫി അഭിപ്രായമാണ്; എല്ലാ പണ്ഡിതരും അംഗീകരിച്ച നിലപാടായി അവതരിപ്പിക്കുന്നില്ല. പ്രതികാരനാമങ്ങളും അർ-റഹ്മാനിലേക്കു മടങ്ങാമെന്ന ആശയത്തോട് അദ്ദേഹം ഇതിനെ ബന്ധിപ്പിക്കുന്നു: «പറയുക: അല്ലാഹു എന്നു വിളിച്ചാലും അർ-റഹ്മാൻ എന്നു വിളിച്ചാലും, ഏതു വിളിച്ചാലും ഏറ്റവും നല്ല നാമങ്ങൾ അവനുള്ളതാണ്.» പ്രതികാരനാമങ്ങളും മനോഹരനാമങ്ങളിൽ ഉൾപ്പെടുന്നതിനാൽ അവയും അർ-റഹ്മാനുമായി ബന്ധപ്പെട്ടവയാണെന്ന് ഗ്രന്ഥകാരൻ ഉപസംഹരിക്കുന്നു.",
+          "en": "The author says this change is not a change in the manifesting al-Batin, acting by the King’s permission, but concerns the recipients undergoing punishment. At its limit their receptivity becomes appropriate to manifestation, not through an alteration of what it was, but through the breadth and encompassing reach of the manifestation’s meanings. Their state in relation to it changes: they now witness what they did not previously witness. He says punishment perfects their receptivity, uncovering capacities previously veiled, so that they acknowledge what they denied. Al-Rahman’s ruling then appears and they attain bliss. Regarding those remaining as permanent inhabitants of the fire, he reports a view attributed to people of divine knowledge: after punishment runs its duration, mercy turns toward them and gives them enjoyment within the fire, such that they would choose it over Paradise. This is the book’s particular Sufi position, not presented here as scholarly consensus. The author connects it with names of requital returning to al-Rahman, citing “Say: Call upon Allah or call upon the All-Merciful; whichever you call upon, His are the most beautiful names.” He concludes that names of requital, also being beautiful names, belong to al-Rahman as well."
+        }
+      }
+    ]
   }
 }
