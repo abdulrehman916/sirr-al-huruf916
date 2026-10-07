@@ -21,5 +21,12 @@
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  },
+  "figure": {
+    "image_path": "/figures/kaydahula-manba-p72.svg",
+    "caption": {
+      "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
+      "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending."
+    }
   }
 }
