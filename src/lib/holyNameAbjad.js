@@ -13,7 +13,7 @@ export function getHolyNameAbjad(arabicHeading) {
   const withAL = tokens[0].replace(/\u0640/g, '');
   const marks = '[\\u0610-\\u061A\\u064B-\\u065F\\u0670\\u06D6-\\u06ED]*';
   const bareFirst = withAL.replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]/g, '');
-  const withoutAL = bareFirst.startsWith('ال') && bareFirst.length > 2
+  const withoutAL = bareFirst !== 'الله' && bareFirst.startsWith('ال') && bareFirst.length > 2
     ? withAL.replace(new RegExp('^ا' + marks + 'ل' + marks), '')
     : withAL;
   const calculate = text => [...String(text)
