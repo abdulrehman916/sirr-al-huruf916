@@ -6,7 +6,7 @@ import {
   Network, BookCopy, ChevronDown,
 } from "lucide-react";
 import { platform } from "@/api/platformClient";
-import HolyNameProfileLangSelector from "./HolyNameProfileLangSelector";
+import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import { arTitle } from "./holyNameProfileI18n";
 
 const P = {
@@ -58,11 +58,11 @@ function TriField({ label, labelML, arabic, malayalam, english, arabicFirst }) {
   const activeLabel = lang === "ml" ? (labelML || label) : lang === "ar" ? (labelAR || label) : label;
   const labelIsAr = lang === "ar" && !!labelAR;
   const selVal = lang === "ml" ? malayalam : lang === "ar" ? arabic : english;
-  const hasTerm = arabicFirst && has(arabic);
+  const hasTerm = has(arabic);
   const hasSel = has(selVal);
   const parts = [];
   if (hasTerm) parts.push({ val: arabic, cls: "font-amiri text-base leading-loose", dir: "rtl" });
-  if (hasSel && !(arabicFirst && lang === "ar")) {
+  if (hasSel && lang !== "ar" && String(selVal).trim() !== String(arabic || "").trim()) {
     const cls = lang === "ml" ? "font-malayalam text-sm leading-relaxed" : lang === "ar" ? "font-amiri text-base leading-loose" : "font-inter text-xs leading-relaxed";
     parts.push({ val: selVal, cls, dir: lang === "ar" ? "rtl" : "auto" });
   }
@@ -231,7 +231,7 @@ export default function HolyNameResearchProfile({ originalStaticId }) {
   const [rec, setRec] = useState(null);
   // (source-PDF provenance state removed — filenames/URLs are private library artifacts)
   const [loading, setLoading] = useState(true);
-  const [lang, setLang] = useState("ml");
+  const { language: lang } = useHolyNamesLanguage();
 
   useEffect(() => {
     let alive = true;
@@ -284,7 +284,6 @@ export default function HolyNameResearchProfile({ originalStaticId }) {
           <Sparkles className="w-3.5 h-3.5" style={{ color: P.text }} />
           <span className={lang === "ml" ? "font-malayalam text-[11px] font-bold" : "font-inter text-[9px] uppercase tracking-widest font-bold"} style={{ color: P.text }}>{lang === "ml" ? "പണ്ഡിതോപയോഗിയായ ഗവേഷണ പ്രൊഫൈൽ" : "Scholarly Research Profile"}</span>
         </div>
-        <HolyNameProfileLangSelector lang={lang} setLang={setLang} />
       </div>
 
       {/* 1 — Verified Arabic spelling + verification meta */}

@@ -5,6 +5,7 @@ import { platform } from "@/api/platformClient";
 import HolyNameEsotericResearchProfile from "@/components/holynameknowledge/HolyNameEsotericResearchProfile";
 import { calculateAbjad } from "@/lib/abjadValues";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
+import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
 // INDEPENDENT module. Reads ONLY from HolyNameEsotericKnowledge.
@@ -38,6 +39,7 @@ function getMalayalamMeaning(card) {
 }
 
 export default function SectionCNames() {
+  const { language } = useHolyNamesLanguage();
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
@@ -133,6 +135,8 @@ export default function SectionCNames() {
               const isOpen = openId === card.id;
               const abjadValue = calculateAbjad(card.canonical_arabic_name || card.arabic_name || "");
               const malayalamMeaning = getMalayalamMeaning(card);
+              const englishMeaning = [card?.english_meaning, card?.meaning_en].find((value) => value && /[A-Za-z]/.test(value) && !/[\u0D00-\u0D7F\u0600-\u06FF]/.test(value)) || "";
+              const displayedMeaning = language === "ml" ? malayalamMeaning : englishMeaning;
               return (
                 <motion.div
                   key={card.id}
@@ -170,11 +174,11 @@ export default function SectionCNames() {
                       {card.transliteration && (
                         <p className="font-inter text-sm font-semibold truncate" style={{ color: "rgba(255,255,255,0.88)" }}>{card.transliteration}</p>
                       )}
-                      {malayalamMeaning && (
-                        <p className="font-malayalam text-[12px] leading-relaxed line-clamp-2" style={{ color: "rgba(255,255,255,0.62)" }}>
-                          {malayalamMeaning}
-                        </p>
-                      )}
+                      {displayedMeaning
+                        ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[12px] leading-relaxed line-clamp-2`} style={{ color: "rgba(255,255,255,0.62)" }}>{displayedMeaning}</p>
+                        : language === "en" && malayalamMeaning
+                          ? <p className="font-inter text-[11px] italic" style={{ color: "rgba(255,255,255,0.42)" }}>English translation unavailable</p>
+                          : null}
                     </div>
                     <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }} className="flex-shrink-0" style={{ color: isOpen ? P.text : P.dim }}>
                       <ChevronDown className="w-4 h-4" />

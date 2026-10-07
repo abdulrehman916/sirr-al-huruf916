@@ -13,12 +13,24 @@ import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScho
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import SectionCVisualDisplay from "@/components/sectionc/SectionCVisualDisplay";
 import { useIsOwner } from "@/hooks/useIsOwner";
+import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
   text: "#F5D060",
   bg: "rgba(212,175,55,0.07)",
 };
+
+function SelectedTranslation({ language, malayalam, english }) {
+  const value = language === "ml" ? malayalam : english;
+  if (value) {
+    return <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-white/80 leading-relaxed whitespace-pre-wrap`}>{value}</p>;
+  }
+  if (malayalam || english) {
+    return <p className="font-inter text-sm text-white/50">{language === "ml" ? "മലയാള പരിഭാഷ ലഭ്യമല്ല." : "English translation not available yet."}</p>;
+  }
+  return null;
+}
 
 export default function HolyOneDetailPage() {
   const { nameId } = useParams();
@@ -29,6 +41,7 @@ export default function HolyOneDetailPage() {
   const [name, setName] = useState(null);
   const [loading, setLoading] = useState(true);
   const [source, setSource] = useState("A"); // A or B
+  const [language, setLanguage] = useHolyNamesLanguagePreference();
   const isOwner = useIsOwner();
 
   // Save navigation state before navigating to detail
@@ -154,7 +167,10 @@ export default function HolyOneDetailPage() {
 
   return (
     <PageLayout>
+      <HolyNamesLanguageContext.Provider value={{ language, setLanguage }}>
       <motion.div className="holy-name-reader" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+
+        <div className="flex justify-end mb-3"><HolyNamesLanguageToggle /></div>
 
         {/* Back Button */}
         <button
@@ -330,57 +346,57 @@ export default function HolyOneDetailPage() {
         <div className="space-y-4">
 
           {/* Meaning */}
-          {name.meaning_malayalam ? (
+          {(name.meaning_malayalam || name.meaning_english || name.english_meaning) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">അർത്ഥം (Meaning)</h2>
+                <h2 className="font-inter font-semibold text-white">Meaning</h2>
               </div>
-              <p className="text-white/80 leading-relaxed">{name.meaning_malayalam}</p>
+              <SelectedTranslation language={language} malayalam={name.meaning_malayalam} english={name.meaning_english || name.english_meaning} />
             </div>
           ) : null}
 
           {/* Explanation */}
-          {name.explanation_malayalam ? (
+          {(name.explanation_malayalam || name.explanation_english || name.english_explanation) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Star className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">വിശദീകരണം (Explanation)</h2>
+                <h2 className="font-inter font-semibold text-white">Explanation</h2>
               </div>
-              <p className="text-white/80 leading-relaxed whitespace-pre-wrap">{name.explanation_malayalam}</p>
+              <SelectedTranslation language={language} malayalam={name.explanation_malayalam} english={name.explanation_english || name.english_explanation} />
             </div>
           ) : null}
 
           {/* Virtues & Benefits */}
-          {name.virtues_benefits ? (
+          {(name.virtues_benefits || name.virtues_benefits_english || name.benefits_english) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Star className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">ഗുണങ്ങളും ആനുകൂല്യങ്ങളും (Virtues & Benefits)</h2>
+                <h2 className="font-inter font-semibold text-white">Virtues & Benefits</h2>
               </div>
-              <p className="text-white/80 leading-relaxed whitespace-pre-wrap">{name.virtues_benefits}</p>
+              <SelectedTranslation language={language} malayalam={name.virtues_benefits} english={name.virtues_benefits_english || name.benefits_english} />
             </div>
           ) : null}
 
           {/* Islamic Information */}
-          {name.islamic_information ? (
+          {(name.islamic_information || name.islamic_information_english) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">ഇസ്ലാമിക വിവരങ്ങൾ (Islamic Information)</h2>
+                <h2 className="font-inter font-semibold text-white">Islamic Information</h2>
               </div>
-              <p className="text-white/80 leading-relaxed whitespace-pre-wrap">{name.islamic_information}</p>
+              <SelectedTranslation language={language} malayalam={name.islamic_information} english={name.islamic_information_english} />
             </div>
           ) : null}
 
           {/* Authentic Notes */}
-          {name.authentic_notes ? (
+          {(name.authentic_notes || name.authentic_notes_english) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">ആധികാരിക കുറിപ്പുകൾ (Authentic Notes)</h2>
+                <h2 className="font-inter font-semibold text-white">Authentic Notes</h2>
               </div>
-              <p className="text-white/80 leading-relaxed whitespace-pre-wrap">{name.authentic_notes}</p>
+              <SelectedTranslation language={language} malayalam={name.authentic_notes} english={name.authentic_notes_english} />
             </div>
           ) : null}
 
@@ -424,6 +440,7 @@ export default function HolyOneDetailPage() {
         )}
 
       </motion.div>
+      </HolyNamesLanguageContext.Provider>
     </PageLayout>
   );
 }

@@ -22,6 +22,7 @@ import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
 import { useAuth } from "@/lib/AuthContext";
 
 import { calculateAbjad } from "@/lib/abjadValues";
+import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference, useHolyNamesLanguage } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 const PAGE_PATH = "/holy-names";
 const FEATURES = getFeatures(PAGE_PATH);
@@ -317,6 +318,7 @@ function SectionA({ importRefreshKey }) {
 
 // ── SECTION B COMPONENT ──────────────────────────────────────────
 function SectionB() {
+  const { language } = useHolyNamesLanguage();
   const { getPageState, setPageState } = usePageState();
   const listKey = "magical-holy-names-section-b";
   const initial = getPageState(listKey, { searchQuery: "", selectedSurah: "all", scrollTop: 0 });
@@ -489,21 +491,18 @@ function SectionB() {
                 )}
 
                 {/* Meaning - Highlighted, Immediate Identification */}
-                {name.meaning_malayalam && (
+                {(name.meaning_malayalam || name.meaning_english || name.english_meaning) && (
                   <div className="rounded-xl p-4 text-center" style={{
                     background: "rgba(212,175,55,0.10)",
                     border: "1px solid rgba(212,175,55,0.40)",
                     boxShadow: "0 0 20px rgba(212,175,55,0.12)"
                   }}>
-                    <p className="font-inter text-[8px] uppercase tracking-widest mb-2" style={{ color: "rgba(245,208,96,0.55)" }}>
-                      അർത്ഥം / Meaning
-                    </p>
-                    <p className="font-malayalam font-semibold leading-relaxed" style={{
-                      fontSize: "clamp(0.95rem, 2.2vw, 1.1rem)",
-                      color: "#F5D060"
-                    }}>
-                      {name.meaning_malayalam}
-                    </p>
+                    <p className="font-inter text-[8px] uppercase tracking-widest mb-2" style={{ color: "rgba(245,208,96,0.55)" }}>Meaning</p>
+                    {(language === "ml" ? name.meaning_malayalam : (name.meaning_english || name.english_meaning))
+                      ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} font-semibold leading-relaxed`} style={{ fontSize: "clamp(0.95rem, 2.2vw, 1.1rem)", color: "#F5D060" }}>
+                          {language === "ml" ? name.meaning_malayalam : (name.meaning_english || name.english_meaning)}
+                        </p>
+                      : <p className="font-inter text-xs text-white/50">English translation not available yet.</p>}
                   </div>
                 )}
 
@@ -579,6 +578,7 @@ export default function MagicalHolyNamesPage() {
   const pageKey = "magical-holy-names-page";
   const initial = getPageState(pageKey, { activeTab: "section-a" });
   const [activeTab, setActiveTab] = useState(initial.activeTab || "section-a");
+  const [language, setLanguage] = useHolyNamesLanguagePreference();
   const [lockedFeature, setLockedFeature] = useState(null);
   const [importRefreshKey, setImportRefreshKey] = useState(0);
 
@@ -604,14 +604,18 @@ export default function MagicalHolyNamesPage() {
 
   return (
     <PageLayout>
+      <HolyNamesLanguageContext.Provider value={{ language, setLanguage }}>
       <PullToRefresh onRefresh={() => new Promise(res => setTimeout(res, 700))}>
         <div className="space-y-4">
-          <PageTitle
-            arabic="الأسماء المقدسة"
-            latin="Holy Names"
-            subtitle="Sacred Names Reference"
-            icon="✦"
-          />
+          <div className="flex items-center justify-between gap-3 flex-wrap">
+            <PageTitle
+              arabic="الأسماء المقدسة"
+              latin="Holy Names"
+              subtitle="Sacred Names Reference"
+              icon="✦"
+            />
+            <HolyNamesLanguageToggle />
+          </div>
 
           {isAdmin && (
             <HolyNameImportPanel onImported={() => setImportRefreshKey((k) => k + 1)} />
@@ -653,6 +657,7 @@ export default function MagicalHolyNamesPage() {
           )}
         </div>
       </PullToRefresh>
+      </HolyNamesLanguageContext.Provider>
     </PageLayout>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Database, BookOpen, ChevronDown, Sparkles, FileText } from "lucide-react";
 import { platform } from "@/api/platformClient";
+import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 // ═══════════════════════════════════════════════════════════════
 // HolyNameVerifiedKnowledge — Knowledge Intelligence Engine reader
@@ -63,13 +64,22 @@ const DISPLAY_ORDER = Object.keys(CATEGORY_LABELS);
 
 function EntryRow({ entry, idx }) {
   const [open, setOpen] = useState(false);
-  if (!entry || !entry.text) return null;
+  const { language } = useHolyNamesLanguage();
+  if (!entry) return null;
+  const arabic = entry.arabic || (entry.language === "ar" ? entry.text : "");
+  const translation = language === "ml"
+    ? (entry.malayalam_translation || entry.malayalam_text || entry.malayalam || entry.text_ml || entry.meaning_ml || (entry.language === "ml" ? entry.text : ""))
+    : (entry.english_translation || entry.english_text || entry.english || entry.text_en || entry.meaning_en || (entry.language === "en" ? entry.text : ""));
+  if (!arabic && !translation && !entry.text) return null;
   return (
     <div className="rounded-lg border px-3 py-2" style={{ background: P.bg, borderColor: "rgba(52,211,153,0.20)" }}>
       <button onClick={() => setOpen((o) => !o)} className="w-full text-left flex items-start gap-2">
         <span className="font-inter text-[8px] font-semibold mt-0.5 flex-shrink-0" style={{ color: P.dim }}>#{idx + 1}</span>
-        <span className="flex-1 font-inter text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.82)" }}>
-          {entry.text}
+        <span className="flex-1 min-w-0 space-y-2">
+          {arabic && <span className="block font-amiri text-lg leading-loose text-right" style={{ color: P.goldText }} dir="rtl" lang="ar">{arabic}</span>}
+          <span className={`block ${language === "ml" ? "font-malayalam" : "font-inter"} text-xs leading-relaxed`} style={{ color: "rgba(255,255,255,0.82)" }} lang={language}>
+            {translation || (language === "ml" ? "ഈ ഭാഗത്തിന്റെ മലയാള പരിഭാഷ ഇതുവരെ ചേർത്തിട്ടില്ല." : "An English translation has not been added for this passage yet.")}
+          </span>
         </span>
         <ChevronDown className={`w-3 h-3 mt-1 flex-shrink-0 transition-transform ${open ? "rotate-180" : ""}`} style={{ color: P.dim }} />
       </button>
@@ -77,9 +87,6 @@ function EntryRow({ entry, idx }) {
         {open && (
           <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.18 }} style={{ overflow: "hidden" }}>
             <div className="pt-2 mt-2 space-y-1.5" style={{ borderTop: "1px solid rgba(52,211,153,0.18)" }}>
-              {entry.arabic && (
-                <p className="font-amiri text-base leading-loose text-right" style={{ color: P.goldText }} dir="rtl">{entry.arabic}</p>
-              )}
               {(entry.source_book || entry.citation || entry.source_page) && (
                 <p className="font-inter text-[10px] flex items-center gap-1" style={{ color: "rgba(255,255,255,0.50)" }}>
                   <FileText className="w-3 h-3" style={{ color: P.dim }} />

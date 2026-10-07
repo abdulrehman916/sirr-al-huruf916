@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Loader2, BookOpen, ImageIcon, AlertTriangle } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { useIsOwner } from "@/hooks/useIsOwner";
-import HolyNameProfileLangSelector from "./HolyNameProfileLangSelector";
+import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 const P = {
   border: "rgba(212,175,55,0.30)",
@@ -35,7 +35,7 @@ const LANG_LABELS = { ar: "Arabic", ml: "Malayalam", en: "English", mixed: "Arab
 export default function HolyNameImportedSections({ sourceSection, sourceNameKey, refreshKey = 0 }) {
   const [sections, setSections] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [lang, setLang] = useState("ml");
+  const { language: lang } = useHolyNamesLanguage();
   const isOwner = useIsOwner();
 
   useEffect(() => {
@@ -70,26 +70,26 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
   }
 
   if (!sections || sections.length === 0) return null;
+  const contentSections = sections.filter(s => s.content_role !== "import_metadata");
+  const metadataSections = sections.filter(s => s.content_role === "import_metadata");
+  if (contentSections.length === 0 && !isOwner) return null;
 
   return (
     <div className="pt-3 mt-1" style={{ borderTop: "1px solid " + P.faint }}>
       <div className="flex items-center gap-2 mb-3">
         <BookOpen className="w-3.5 h-3.5" style={{ color: P.text }} />
         <span className="font-inter text-[9px] uppercase tracking-widest font-bold" style={{ color: P.text }}>
-          {isOwner ? `PDF Knowledge · ${sections.length} paragraph${sections.length > 1 ? "s" : ""}` : `${sections.length} paragraph${sections.length > 1 ? "s" : ""}`}
+          {isOwner ? `PDF Knowledge · ${contentSections.length} paragraph${contentSections.length > 1 ? "s" : ""}` : `${contentSections.length} paragraph${contentSections.length > 1 ? "s" : ""}`}
         </span>
       </div>
 
-      <div className="mb-3" role="group" aria-label="Chapter translation language">
-        <HolyNameProfileLangSelector lang={lang} setLang={setLang} />
-        {lang === "en" && sections.some(s => !s.english_translation) && (
-          <p className="font-inter text-xs text-white/60 mt-2">English translation is not yet available for every paragraph. The original Arabic remains below.</p>
-        )}
-      </div>
+      {lang === "en" && contentSections.some(s => !s.english_translation) && (
+        <p className="font-inter text-xs text-white/60 mb-3">English translation is not available for every paragraph yet. The original Arabic remains visible.</p>
+      )}
 
       <div className="space-y-3">
         <AnimatePresence mode="popLayout">
-          {sections.map((s, i) => (
+          {contentSections.map((s, i) => (
             <motion.div
               key={s.section_id}
               initial={{ opacity: 0, y: 6 }}
@@ -193,6 +193,19 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
           ))}
         </AnimatePresence>
       </div>
+      {isOwner && metadataSections.length > 0 && (
+        <details className="mt-3 rounded-xl border p-3 text-xs text-white/50" style={{ borderColor: P.faint }}>
+          <summary className="cursor-pointer">Import metadata · {metadataSections.length} records</summary>
+          <div className="space-y-3 pt-3">
+            {metadataSections.map(s => (
+              <div key={s.section_id}>
+                <p>{s.content_classification_note}</p>
+                {s.text_content && <p className="mt-1 whitespace-pre-wrap">{s.text_content}</p>}
+              </div>
+            ))}
+          </div>
+        </details>
+      )}
     </div>
   );
 }

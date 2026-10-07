@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, BookOpen, ScrollText, Sparkles, Shield, Square, Star, Hand, Gift, AlertTriangle, Clock, Hash, ListChecks, Type, Languages, Library, History } from "lucide-react";
+import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
 // ═══════════════════════════════════════════════════════════════
@@ -79,10 +80,12 @@ function displayValue(value) {
   return typeof value === "string" && /^(null|undefined)$/i.test(value.trim()) ? "" : (value ?? "");
 }
 
-function EntryCard({ entry }) {
+function EntryCard({ entry, language }) {
   const text = entry?.text || entry?.verbatim_text || "";
   const arabic = entry?.arabic_text || "";
   const malayalam = displayValue(entry?.malayalam_text) || displayValue(entry?.malayalam_translation) || displayValue(entry?.malayalam) || displayValue(entry?.exact_meaning);
+  const english = displayValue(entry?.english_text) || displayValue(entry?.english_translation) || displayValue(entry?.english) || (/[A-Za-z]/.test(text) && !/[\u0600-\u06ff\u0d00-\u0d7f]/.test(text) ? text : "");
+  const translation = language === "ml" ? malayalam : language === "en" ? english : "";
   const isOwner = useIsOwner();
   const sourceBook = entry?.source_book || entry?.source_reference || "";
   const author = entry?.author || "";
@@ -106,11 +109,11 @@ function EntryCard({ entry }) {
           {arabic}
         </p>
       )}
-      {malayalam && (
-        <p className="text-white/90 text-base leading-loose mb-3 font-malayalam whitespace-pre-wrap" lang="ml">{malayalam}</p>
+      {translation && (
+        <p className={`text-white/90 text-base leading-loose mb-3 whitespace-pre-wrap ${language === "ml" ? "font-malayalam" : "font-inter"}`} lang={language}>{translation}</p>
       )}
-      {text && text.trim() !== arabic.trim() && (
-        <p className="text-white/70 text-sm leading-relaxed mb-2 whitespace-pre-wrap">{text}</p>
+      {language !== "ar" && !translation && (arabic || text) && (
+        <p className="text-white/50 text-sm mb-3">{language === "ml" ? "മലയാള പരിഭാഷ ഇതുവരെ ചേർത്തിട്ടില്ല." : "English translation has not been added yet."}</p>
       )}
       {(construction || conditions || reps || timing || purpose || warnings) && (
         <div className="space-y-1 mb-2 text-xs">
@@ -185,6 +188,7 @@ function SourceCard({ src }) {
 }
 
 export default function HolyOneScholarlySections({ card }) {
+  const { language } = useHolyNamesLanguage();
   const c = card || {};
   const isOwner = useIsOwner();
 
@@ -221,14 +225,11 @@ export default function HolyOneScholarlySections({ card }) {
           {sources.length} sources · {history.length} passes
         </span>}
       </div>
-      <p className="text-[11px] text-white/45 mb-3">
-        Arabic passages and their available Malayalam explanations are shown together.
-      </p>
 
       {sections.map(s => (
         <CollapsibleSection key={s.key} icon={s.icon} title_ml={s.label_ml} title_en={s.label_en} count={s.count}>
           {s.items.map((entry, i) => (
-            <EntryCard key={i} entry={entry} />
+            <EntryCard key={i} entry={entry} language={language} />
           ))}
         </CollapsibleSection>
       ))}
