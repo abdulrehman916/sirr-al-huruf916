@@ -12,6 +12,7 @@ import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImp
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSourceChapter from "@/components/holynameknowledge/HolyNameSourceChapter";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
+import reviewedCards from "@/data/holyNamesReviewedCards.json";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference } from "@/components/holynameknowledge/HolyNamesLanguageContext";
@@ -81,7 +82,10 @@ export default function HolyOneDetailPage() {
         // Section B: PDF Holy Names
         const result = await platform.entities.HolyOnePDFName.filter({ pdf_name_id: nameId });
         if (result && result.length > 0) {
-          setName(result[0]);
+          const reviewed = reviewedCards[nameId];
+          setName(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
+            ? { ...result[0], ...reviewed }
+            : result[0]);
           setSource("B");
         } else {
           toast({ title: "Name not found", variant: "destructive" });
@@ -204,7 +208,7 @@ export default function HolyOneDetailPage() {
         <div className="text-center mb-6">
           <h1 className={source === "B" ? "font-quranic text-gold mb-3" : "font-amiri text-4xl font-bold text-gold mb-3"}>{name.arabic_name || "Unknown"}</h1>
           <p className="font-inter text-lg text-white/80 mb-2">{name.arabic_transliteration || name.english_name || ""}</p>
-          {name.malayalam_pronunciation && <p className="font-malayalam text-base text-white/60 mb-2">{name.malayalam_pronunciation}</p>}
+          {language === "ml" && name.malayalam_pronunciation && <p className="font-malayalam text-base text-white/60 mb-2">{name.malayalam_pronunciation}</p>}
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Badge style={{ background: G.bg, borderColor: G.border, fontSize: 12 }}>
               {name.view_count || 0} views
@@ -333,7 +337,7 @@ export default function HolyOneDetailPage() {
         )}
 
         {/* Verified Knowledge Cache — checked first (zero AI on hit) */}
-        {name.arabic_name && (
+        {name.arabic_name && !reviewedCards[nameId] && (
           <div className="mb-4">
             <HolyNameVerifiedKnowledge
               arabicName={name.arabic_name}
@@ -422,12 +426,12 @@ export default function HolyOneDetailPage() {
         </div>
 
         {/* Imported PDF Knowledge — enriches this Holy Name's existing card */}
-        <div className="mt-6">
+        {!reviewedCards[nameId] && <div className="mt-6">
           <HolyNameImportedSections
             sourceSection={source === "B" ? "section_b" : "section_a"}
             sourceNameKey={source === "B" ? (name.pdf_name_id || nameId) : nameId}
           />
-        </div>
+        </div>}
 
         {/* Section B scholarly library — append-only research arrays.
             Section-B-only; never shown for Section A. */}
