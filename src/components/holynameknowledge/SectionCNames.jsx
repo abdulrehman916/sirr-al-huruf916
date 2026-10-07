@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, ChevronDown, Loader2, ShieldAlert } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import HolyNameEsotericResearchProfile from "@/components/holynameknowledge/HolyNameEsotericResearchProfile";
+import { calculateAbjad } from "@/lib/abjadValues";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
@@ -87,7 +88,7 @@ export default function SectionCNames() {
   }
 
   return (
-    <div className="space-y-4" id="section-c-container">
+    <div className="space-y-4 holy-name-reader" id="section-c-container">
       <div className="flex items-center gap-2 rounded-2xl border px-3 py-2.5" style={{ background: P.bg, borderColor: P.border }}>
         <Search className="w-4 h-4 flex-shrink-0" style={{ color: P.dim }} />
         <input
@@ -130,6 +131,7 @@ export default function SectionCNames() {
           ) : (
             filtered.map((card, i) => {
               const isOpen = openId === card.id;
+              const abjadValue = calculateAbjad(card.canonical_arabic_name || card.arabic_name || "");
               const malayalamMeaning = getMalayalamMeaning(card);
               return (
                 <motion.div
@@ -159,9 +161,9 @@ export default function SectionCNames() {
                         <span className="font-amiri text-[1.65rem] font-bold" style={{ color: P.text, textShadow: isOpen ? "0 0 20px rgba(212,175,55,0.35)" : "0 0 12px rgba(212,175,55,0.20)" }} dir="rtl">
                           {card.canonical_arabic_name || card.arabic_name}
                         </span>
-                        {card.total_abjad_value > 0 && (
+                        {abjadValue > 0 && (
                           <span className="font-inter text-[7px] uppercase tracking-widest px-1.5 py-0.5 rounded-full border whitespace-nowrap" style={{ color: P.dim, borderColor: P.border, background: "rgba(245,208,96,0.08)" }}>
-                            {card.total_abjad_value}
+                            {abjadValue}
                           </span>
                         )}
                       </div>
