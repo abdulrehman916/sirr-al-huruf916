@@ -9,8 +9,8 @@
     "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
   },
   "name_note": {
-    "ml": "അർത്ഥങ്ങൾക്ക് ഗ്രന്ഥം സ്നേഹമുള്ളവനേ, അല്ലാഹുവേ, കീഴടക്കുന്നവനേ, ഏകനേ എന്നീ വ്യത്യസ്ത അഭിപ്രായങ്ങൾ നൽകുന്നു.",
-    "en": "Alternative meanings in the source include O Loving One, O God, O Subduer and O One."
+    "ml": "ഗ്രന്ഥം അഞ്ച് വ്യത്യസ്ത അറബി അർഥങ്ങൾ രേഖപ്പെടുത്തുന്നു; അവയെല്ലാം താഴെ നൽകിയിട്ടുണ്ട്. ഇവ വ്യത്യസ്ത അഭിപ്രായങ്ങളാണ്.",
+    "en": "All five alternative Arabic meanings recorded by the source are included below; they remain distinct opinions."
   },
   "practices": [
     {
@@ -38,5 +38,10 @@
   "edition_note": {
     "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
     "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  },
+  "meaning_arabic": "ومعناه بالعربية يا ودود وقيل يا الله وقيل يا قاهر وقيل يا أحد وقيل يا واسع",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: സ്നേഹമുള്ളവനേ; അല്ലാഹുവേ; കീഴടക്കുന്നവനേ; ഏകനേ; വിശാലതയുള്ളവനേ.",
+    "en": "Alternative source meanings: O Loving One; O Allah; O Subduer; O One; O All-Encompassing."
   }
 }

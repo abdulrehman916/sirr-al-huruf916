@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lane-ahya-sherahya",
+    "name_ids": [1, 2],
+    "source_title": "Edward William Lane — Arabic-English Lexicon, شَرِه, p. 1544",
+    "source_url": "https://www.arabic-english-dictionary.com/content/13_x/076_xrh",
+    "review_status": "checked_against_digital_text",
+    "arabic_original": "إِهْيَا أَشَرْ إِهْيَا · يَا حَىُّ يَا قَيُّومُ",
+    "translation": {
+      "ml": "ഈ നിഘണ്ടു സംയുക്തപ്രയോഗത്തെ ‘ഞാൻ ആയിരിക്കുന്നവൻ ആയിരിക്കും’ എന്ന എബ്രായ വാക്യവുമായി ബന്ധിപ്പിക്കുന്നു. «യാ ഹയ്യു, യാ ഖയ്യൂം» എന്നതിന്റെ അർഥം: എന്നെന്നും ജീവിച്ചിരിക്കുന്നവനേ, സ്വയം നിലനിൽക്കുകയും എല്ലാറ്റിനെയും നിലനിർത്തുകയും ചെയ്യുന്നവനേ.",
+      "en": "The lexicon connects the combined expression with the Hebrew ‘I shall be that I am.’ Ya Hayyu, Ya Qayyum means: O Ever-Living, O Self-Subsisting Sustainer."
+    },
+    "explanation": {
+      "ml": "Lane വ്യത്യസ്ത പാരമ്പര്യങ്ങളിലെ എഴുത്തും ഉച്ചാരണവും രേഖപ്പെടുത്തുന്നു. അതിനാൽ ഒരു പതിപ്പിന്റെ ഹറകത്ത് മറ്റൊരു പേരിന്റെ ഉറപ്പായ തിരുത്തലായി ഉപയോഗിച്ചിട്ടില്ല. ഇത് ഭാഷാപരമായ വിവരമാണ്; ഓതേണ്ട എണ്ണമോ സമയമോ ഫലമോ ഇവിടെ നൽകിയിട്ടില്ല.",
+      "en": "Lane records differing spellings and pronunciations. One variant is therefore not imposed as a certain correction of the card. This is lexical evidence; the passage gives no recitation count, time or outcome."
+    }
+  }
+]

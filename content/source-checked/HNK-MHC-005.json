@@ -9,8 +9,8 @@
     "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
   },
   "name_note": {
-    "ml": "അർത്ഥം: നിലനിൽക്കുന്നവനേ; മറ്റൊരു അഭിപ്രായം: ഉള്ളവനേ.",
-    "en": "Meaning: O Ever Subsistent One; alternatively, O Existent One."
+    "ml": "ഈ പതിപ്പിൽ يا قيوم, يا واجد എന്നീ അർഥങ്ങളാണ് നൽകിയിരിക്കുന്നത്. «വാജിദ്» എന്നതിനെ «ഉള്ളവൻ» എന്നു മാത്രം നൽകിയിരുന്ന വിവർത്തനം തിരുത്തിയിരിക്കുന്നു. പേരിന്റെ അക്ഷരങ്ങളോ കണക്കുകളോ മാറ്റിയിട്ടില്ല.",
+    "en": "This edition gives Ya Qayyum and Ya Wajid. The earlier rendering of Wajid simply as “Existent” is corrected. Name spelling and calculations are preserved."
   },
   "practices": [
     {
@@ -38,5 +38,10 @@
   "edition_note": {
     "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
     "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  },
+  "meaning_arabic": "ومعناه بالعربية يا قيوم وقيل يا واجد",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: സ്വയം നിലനിൽക്കുകയും എല്ലാറ്റിനെയും നിലനിർത്തുകയും ചെയ്യുന്നവനേ. മറ്റൊരു അഭിപ്രായത്തിൽ: എല്ലാം കണ്ടെത്തുന്നവനേ/നേടുന്നവനേ (അൽ-വാജിദ്).",
+    "en": "The source’s Arabic meaning: O Self-Subsisting Sustainer; alternatively, O Finder/Possessor (al-Wajid)."
   }
 }

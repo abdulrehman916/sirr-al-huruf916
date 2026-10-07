@@ -38,5 +38,10 @@
   "edition_note": {
     "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
     "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  },
+  "meaning_arabic": "ومعناه بالعربية يا الله عبدك أجب وقيل يا قادر",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ; ഉത്തരം നൽകേണമേ. മറ്റൊരു അഭിപ്രായത്തിൽ: ശക്തനായവനേ.",
+    "en": "The source’s Arabic meaning: O Allah, here is Your servant; answer him. Alternatively, O Powerful One."
   }
 }

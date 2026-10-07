@@ -54,10 +54,36 @@
         "ml": "വ്യാപാരവസ്തുക്കൾ മോഷ്ടിക്കപ്പെടാതിരിക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
         "en": "The source claims protection of merchandise against theft."
       }
+    },
+    {
+      "id": "silver-17",
+      "count": 17,
+      "title": {
+        "ml": "വെള്ളിപ്പലകയിലെ പതിനേഴ് എഴുത്തുകൾ — ഗ്രന്ഥപരാമർശം",
+        "en": "Seventeen inscriptions on silver — source account"
+      },
+      "arabic_original": "ومن كتبه بماء قراح في طبق وغسل به لوحا من الفضة ١٧ مرة ثلاثة أيام أغناه الله تعالى",
+      "translation": {
+        "ml": "ഈ പേര് തെളിഞ്ഞ വെള്ളത്തിൽ ഒരു പാത്രത്തിൽ എഴുതുകയും അതുപയോഗിച്ച് വെള്ളിപ്പലക പതിനേഴ് തവണ കഴുകുകയും ചെയ്യുന്ന രീതിയെ ഗ്രന്ഥം വിവരിക്കുന്നു. മൂന്നു ദിവസമാണ് പറയുന്നത്. ഇതിലൂടെ അല്ലാഹു സമ്പത്ത് നൽകുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The source describes writing the name with clear water in a vessel and using it to wash a silver plate seventeen times, over three days. It claims that Allah grants wealth through this."
+      },
+      "timing": {
+        "ml": "മൂന്നു ദിവസം; പ്രത്യേക മണിക്കൂറോ നമസ്കാരശേഷമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "Three days; no specific hour or prayer is stated."
+      },
+      "claim": {
+        "ml": "സമ്പത്ത് ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
+        "en": "A traditional claim of wealth; the outcome is not established."
+      }
     }
   ],
   "edition_note": {
     "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ലും ഈ രണ്ട് പരാമർശങ്ങളുണ്ട്. ഈ പേജിൽ ചികിത്സയുമായി ബന്ധപ്പെട്ട മറ്റൊരു പരാമർശവും പിന്നാലെ ആദ്യ രണ്ടു പേരുകൾ ചേർത്തുള്ള രീതികളും കാണുന്നു; അവ ഈ തിരഞ്ഞെടുത്ത ഭാഗത്തിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല. ഈ പേരിന് പ്രത്യേകമായ കളം അച്ചടിച്ച പേജ് 68-ൽ കാണുന്നില്ല.",
     "en": "Printed page 110 of the supplied English book also records these two accounts. A medical claim and subsequent methods combining the first two names are outside this selected section. No square specifically assigned to this name appears on printed page 68."
+  },
+  "meaning_arabic": "ومعناه بالعربية إله كل شيء وقيل يا الله",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം. മറ്റൊരു അഭിപ്രായത്തിൽ: അല്ലാഹുവേ.",
+    "en": "The source’s Arabic meaning is God of all things; alternatively, O Allah."
   }
 }

@@ -16,6 +16,7 @@ import HolyNameImportPanel from "@/components/holynameknowledge/HolyNameImportPa
 import HolyNameContentsSeedPanel from "@/components/holynameknowledge/HolyNameContentsSeedPanel";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
 import HolyNameResearchProfile from "@/components/holynameknowledge/HolyNameResearchProfile";
+import HolyNameLexicalNotes from "@/components/holynameknowledge/HolyNameLexicalNotes";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import SectionCNames from "@/components/holynameknowledge/SectionCNames";
 import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
@@ -302,6 +303,7 @@ function SectionA({ importRefreshKey }) {
                         </div>
                         <HolyNameVerifiedKnowledge arabicName={name.arabicName} nameId={name.id} englishName={name.englishName} />
                         <HolyNameResearchProfile originalStaticId={name.id} />
+                        <HolyNameLexicalNotes nameId={name.id} />
                         <HolyNameImportedSections sourceSection="section_a" sourceNameKey={String(name.id)} refreshKey={importRefreshKey} />
                       </motion.div>
                     )}

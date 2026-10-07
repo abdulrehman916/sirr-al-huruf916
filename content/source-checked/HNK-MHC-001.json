@@ -59,5 +59,10 @@
   "edition_note": {
     "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ൽ കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തിന് വ്യത്യസ്തമായ വിവരണവും ഓർമ്മശക്തിയെക്കുറിച്ചുള്ള അവകാശവാദവുമാണ്. അത് ഈ അറബി പതിപ്പിന്റെ വിവർത്തനമായി കലർത്തിയിട്ടില്ല. പേജ് 67-ലെ പ്രസവത്തെക്കുറിച്ചുള്ള മറ്റൊരു ചരിത്രപരമായ അവകാശവാദം ഇവിടെ ചികിത്സാനിർദ്ദേശമായി നൽകിയിട്ടില്ല. ഈ പേരിനുള്ള പ്രത്യേക കളം ഈ പേജിൽ കാണുന്നില്ല.",
     "en": "Printed page 110 of the supplied English book gives a different account of the seven palm inscriptions, with a memory-related claim. It is not merged into the translation of this Arabic edition. Another historical childbirth claim on page 67 is not presented here as medical guidance. No name-specific square appears on this page."
+  },
+  "meaning_arabic": "ومعناه بالعربية القدوس وقيل سبوح",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം «അൽ-ഖുദ്ദൂസ്»—പരിശുദ്ധൻ. മറ്റൊരു അഭിപ്രായത്തിൽ «സുബ്ബൂഹ്»—എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവൻ.",
+    "en": "The source gives al-Quddus, the Most Holy; alternatively Subbuh, the One glorified as free of imperfections."
   }
 }

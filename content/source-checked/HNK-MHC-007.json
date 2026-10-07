@@ -9,8 +9,8 @@
     "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
   },
   "name_note": {
-    "ml": "അർത്ഥം: പൂർണ്ണനായവനേ. താഴെയുള്ള കളം ഈ പേരിന്റെ ഭാഗത്തുതന്നെയാണ് അച്ചടിച്ചിരിക്കുന്നത്.",
-    "en": "Meaning: O Complete One. The square below is printed within this name’s source section."
+    "ml": "ഈ പതിപ്പിൽ يا سلام എന്നാണ് അർഥം നൽകിയിരിക്കുന്നത്. «പൂർണ്ണനായവനേ» എന്ന മുൻ വിവർത്തനം കൂടുതൽ വ്യക്തമായി താഴെ നൽകിയിരിക്കുന്നു. ഈ പേരിനുള്ള കളം അതിന്റെ ഭാഗത്തുതന്നെ അച്ചടിച്ചിരിക്കുന്നു.",
+    "en": "This edition gives Ya Salam, explained more precisely below than the earlier “O Complete One.” Its square is printed within this name’s section."
   },
   "practices": [
     {
@@ -45,5 +45,10 @@
       "ml": "അച്ചടിച്ച പേജ് 69-ലെ കളത്തിന്റെ ഭാഗം മാത്രം. സംഖ്യകൾ തിരുത്തിയിട്ടില്ല. ഇംഗ്ലീഷ് പതിപ്പിലെ കളവുമായി വ്യത്യാസമുള്ളതിനാൽ പതിപ്പുകൾ കലർത്തിയിട്ടില്ല.",
       "en": "Only the square from printed page 69. Its numbers are unchanged. It differs from the English edition, so the editions have not been merged."
     }
+  },
+  "meaning_arabic": "ومعناه بالعربية يا سلام",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: «യാ സലാം»—സമാധാനവും സുരക്ഷയും നൽകുന്നവനേ, എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായവനേ.",
+    "en": "The source gives Ya Salam: O Source of Peace and Safety, free from all imperfections."
   }
 }

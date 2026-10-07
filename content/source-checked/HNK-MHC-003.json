@@ -59,5 +59,10 @@
   "edition_note": {
     "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
     "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  },
+  "meaning_arabic": "ومعناه بالعربية القدوس القادر وقيل سبوح قدوس وقيل العليم وقيل المجير",
+  "meaning_translation": {
+    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: പരിശുദ്ധനും ശക്തനുമായവൻ; മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ; എല്ലാം അറിയുന്നവൻ; അഭയം നൽകുന്നവൻ.",
+    "en": "Alternative source meanings: the Holy, the Powerful; the Glorified, the Holy; the All-Knowing; the Giver of Refuge."
   }
 }
