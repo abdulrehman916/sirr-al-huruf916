@@ -1,0 +1,63 @@
+{
+  "name_id": "HNK-MHC-002",
+  "review_status": "checked_against_scan",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "printed_page": 68,
+  "source_name_form": "كَرِيرٍ",
+  "scope_note": {
+    "ml": "ഈ ഭാഗം രണ്ടാം പേരിനെക്കുറിച്ചുള്ള തിരഞ്ഞെടുത്ത ഗ്രന്ഥപരാമർശങ്ങളാണ്. ഇവ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്; മൂലപാഠപരിശോധന അവയുടെ ഫലങ്ങൾ തെളിയിക്കുന്നില്ല.",
+    "en": "Selected source accounts concerning the second name. These are traditional claims; checking the text does not establish their outcomes."
+  },
+  "name_note": {
+    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം: കാഫിന് ഫത്ഹ, റാഇന് കസ്റ, യാഇന് സുകൂൻ, അവസാന റാഇന് കസ്റ തൻവീൻ. അർത്ഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം; മറ്റൊരു അഭിപ്രായം: അല്ലാഹുവേ. ബന്ധപ്പെട്ട അക്ഷരം ب; മൻസിൽ البطين. നിലവിലെ പേരിന്റെ കണക്കുകൾ മാറ്റിയിട്ടില്ല.",
+    "en": "The source describes kaf with fatha, ra with kasra, an unvoweled ya, and final ra with kasra tanwin. Meaning: God of all things; alternatively, O God. Associated letter: ب; lunar mansion: البطين. Existing calculations are preserved."
+  },
+  "practices": [
+    {
+      "id": "nightly-100",
+      "count": 100,
+      "title": {
+        "ml": "ഓരോ രാത്രിയിലും നൂറ് തവണ — ഗ്രന്ഥപരാമർശം",
+        "en": "One hundred times each night — source account"
+      },
+      "arabic_original": "ومن خواصه أن من واظب على قراءته كل ليلة مائة مرة فإنه يجتمع بالجن عيانا وربما يصيرون له خداما",
+      "translation": {
+        "ml": "ഓരോ രാത്രിയിലും ഈ പേര് നൂറ് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾ ജിന്നുകളെ നേരിൽ കാണുമെന്നും, ചിലപ്പോൾ അവർ അയാളുടെ സേവകരായിത്തീരുമെന്നും ഗ്രന്ഥം അവകാശപ്പെടുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ വിശ്വാസപരമായ വിവരണമാണ്; തെളിയിക്കപ്പെട്ട സംഭവമായി അവതരിപ്പിക്കുന്നില്ല.",
+        "en": "The source claims that habitual repetition one hundred times each night leads to seeing jinn, and possibly their becoming servants. This is the source’s belief-based account, not an established outcome."
+      },
+      "timing": {
+        "ml": "ഓരോ രാത്രിയിലും. നിശ്ചിത മണിക്കൂറോ നമസ്കാരമോ ദിവസങ്ങളുടെ എണ്ണമോ ഈ നിർദ്ദേശത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "Each night. No clock hour, prayer, or number of days is specified in this instruction."
+      },
+      "claim": {
+        "ml": "ജിന്നുകളെ കാണുന്നതും അവരുടെ സേവനവും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "A source claim about seeing jinn and their service."
+      }
+    },
+    {
+      "id": "merchandise-11",
+      "count": 11,
+      "title": {
+        "ml": "വ്യാപാരവസ്തുക്കളിൽ സൂക്ഷിക്കുന്ന എഴുത്ത് — ഗ്രന്ഥപരാമർശം",
+        "en": "An inscription kept with merchandise — source account"
+      },
+      "arabic_original": "ومن كتبه ١١ مرة في ورقة ووضعها في مال التجار لا يسرق",
+      "translation": {
+        "ml": "ഈ പേര് ഒരു കടലാസിൽ പതിനൊന്ന് തവണ എഴുതി വ്യാപാരിയുടെ വസ്തുക്കളോടൊപ്പം വെച്ചാൽ അവ മോഷ്ടിക്കപ്പെടില്ലെന്ന് ഗ്രന്ഥം പറയുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The source describes writing the name eleven times on paper and placing it with a trader’s goods, claiming that they will not be stolen."
+      },
+      "timing": {
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "No specific time or day is stated."
+      },
+      "claim": {
+        "ml": "വ്യാപാരവസ്തുക്കൾ മോഷ്ടിക്കപ്പെടാതിരിക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "The source claims protection of merchandise against theft."
+      }
+    }
+  ],
+  "edition_note": {
+    "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ലും ഈ രണ്ട് പരാമർശങ്ങളുണ്ട്. ഈ പേജിൽ ചികിത്സയുമായി ബന്ധപ്പെട്ട മറ്റൊരു പരാമർശവും പിന്നാലെ ആദ്യ രണ്ടു പേരുകൾ ചേർത്തുള്ള രീതികളും കാണുന്നു; അവ ഈ തിരഞ്ഞെടുത്ത ഭാഗത്തിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല. ഈ പേരിന് പ്രത്യേകമായ കളം അച്ചടിച്ച പേജ് 68-ൽ കാണുന്നില്ല.",
+    "en": "Printed page 110 of the supplied English book also records these two accounts. A medical claim and subsequent methods combining the first two names are outside this selected section. No square specifically assigned to this name appears on printed page 68."
+  }
+}
