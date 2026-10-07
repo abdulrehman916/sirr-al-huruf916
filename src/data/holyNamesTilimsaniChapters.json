@@ -79,5 +79,110 @@
         }
       }
     ]
+  },
+  "PDF-HN-101": {
+    "name_id": "PDF-HN-101",
+    "review_status": "checked_against_scan",
+    "source_title": "معاني الأسماء الإلهية — عفيف الدين التلمساني، تحقيق يوسف كيسويت",
+    "printed_page": "23–25",
+    "source_name_form": "اسمه الرب تبارك وتعالى",
+    "scope_note": {
+      "ml": "അർ-റബ്ബ് അധ്യായത്തിലെ ഏഴ് ഖണ്ഡങ്ങളും അറബി പേജുകളുമായി ഒത്തുനോക്കി വിവർത്തനം ചെയ്തിരിക്കുന്നു. ഇത് ഗ്രന്ഥകാരന്റെ സൂഫി തത്ത്വവിവരണമാണ്; ഓതേണ്ട എണ്ണമോ പ്രത്യേക സമയമോ കളമോ ഈ അധ്യായത്തിൽ നൽകിയിട്ടില്ല.",
+      "en": "All seven paragraphs are translated against the Arabic pages. This is the author’s Sufi metaphysical exposition, with no recitation count, special time or square."
+    },
+    "name_note": {
+      "ml": "അർ-റബ്ബ്: രക്ഷിതാവ്; പരിപാലിക്കുകയും നന്നാക്കുകയും ചെയ്യുന്നവൻ.",
+      "en": "Al-Rabb: Lord; the One who nurtures and sets right."
+    },
+    "edition_note": {
+      "ml": "സാധാരണ ഗദ്യത്തിൽ അച്ചടിയിലില്ലാത്ത ഹറകത്ത് ഊഹിച്ച് ചേർത്തിട്ടില്ല. തലക്കെട്ടും എല്ലാ ഏഴ് ഖണ്ഡങ്ങളും ഉൾപ്പെടുത്തിയിരിക്കുന്നു; മറ്റ് നാമങ്ങളുടെ അധ്യായങ്ങളുമായി കലർത്തിയിട്ടില്ല.",
+      "en": "Prose vowels absent from the printing are not guessed. The heading and all seven paragraphs are included separately from the chapters for other names."
+    },
+    "practices": [
+      {
+        "id": "tilimsani-rabb-1",
+        "title": {
+          "ml": "അർ-റബ്ബ് എന്ന നാമത്തിന്റെ അർഥം",
+          "en": "Meaning of al-Rabb"
+        },
+        "arabic_original": "هذا الاسم اتفق على إيراده أبو بكر البيهقي وأبو الحكم الأندلسي ولم يذكره الإمام الغزالي رضوان الله عليه واشتقاقه من الرب الذي هو الإصلاح والتربية قريبة من معناه وهو من التسمية بالمصدر كعدل ورضا ووروده في الفاتحة في قوله تعالى ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾.",
+        "translation": {
+          "ml": "ഈ നാമം ഉൾപ്പെടുത്തുന്നതിൽ അബൂബക്ർ അൽ-ബൈഹഖിയും അബുൽ-ഹകം അൽ-അൻദലുസിയും യോജിച്ചുവെന്നും ഇമാം അൽ-ഗസാലി ഇത് പരാമർശിച്ചിട്ടില്ലെന്നും ഗ്രന്ഥകാരൻ പറയുന്നു; അല്ലാഹു അവരിൽ പ്രസാദിക്കട്ടെ. «റബ്ബ്» എന്നതിന്റെ ഉത്ഭവാർഥം നന്നാക്കലും ശരിയായ നിലയിലാക്കലുമാണ്. വളർത്തിപ്പരിപാലിക്കുക എന്ന അർഥവും അതിനോട് അടുത്തുനിൽക്കുന്നു. «അദ്ൽ», «രിദാ» എന്നിവപോലെ ക്രിയാനാമം ഉപയോഗിച്ച് നാമകരണം ചെയ്തതാണിതെന്ന് ഗ്രന്ഥം വിശദീകരിക്കുന്നു. ഫാതിഹയിൽ «സർവലോകങ്ങളുടെയും രക്ഷിതാവായ അല്ലാഹുവിന് സ്തുതി» എന്ന വചനത്തിലാണ് ഈ നാമം വരുന്നത്.",
+          "en": "The author says Abu Bakr al-Bayhaqi and Abu al-Hakam al-Andalusi agree on including this name, while Imam al-Ghazali did not mention it; may Allah be pleased with them. He derives it from rabb in the sense of setting right, with nurturing close to its meaning. Like adl and rida, it is a naming by a verbal noun. It occurs in al-Fatihah in “Praise belongs to Allah, Lord of the worlds.”"
+        }
+      },
+      {
+        "id": "tilimsani-rabb-2",
+        "title": {
+          "ml": "പരിപാലനവും അർ-റഹ്മാനുമായുള്ള ബന്ധവും",
+          "en": "Nurturing and its connection with al-Rahman"
+        },
+        "arabic_original": "وهو من الأسماء العبودية التي اختصاصها بالاسم الرحمن من جهة وجود التربية فإنها نفع وجودي يصل إلى المربوب فالرحمن من طور التربية هو رب في التجلي وهذا الكلام باعتبار مراتب الأسماء وأما الذات الموصوفة بهذه الأسماء فهي حيث وجدت الأسماء وحيث لم توجد ولا يقع فيها اختلاف الاعتبارات بل إنما تلقى الاعتبارات أسماءها ففي هذا يكون الرب صفة تجل من الاسم الرحمن تتصل في مجال التربية في جميع أطوار الوجود ظاهره وباطنه.",
+        "translation": {
+          "ml": "പരിപാലനത്തിന്റെ അസ്തിത്വം എന്ന നിലയിൽ അർ-റഹ്മാനുമായി പ്രത്യേകബന്ധമുള്ള അടിമത്തസംബന്ധമായ നാമങ്ങളിൽ ഒന്നാണിതെന്ന് ഗ്രന്ഥം പറയുന്നു. പരിപാലനം, പരിപാലിക്കപ്പെടുന്നവനിലേക്കെത്തുന്ന അസ്തിത്വപരമായ ഒരു ഉപകാരമാണ്. അതിനാൽ പരിപാലനത്തിന്റെ നിലയിലുള്ള റഹ്മാൻ, ദൈവിക വെളിപ്പെടലിൽ റബ്ബാണ്. ഈ വിവരണം നാമങ്ങളുടെ നിലകൾ പരിഗണിച്ചുള്ളതാണ്. എന്നാൽ ഈ നാമങ്ങളാൽ വിശേഷിപ്പിക്കപ്പെടുന്ന ദൈവിക സത്ത, നാമങ്ങൾ ഉണ്ടായാലും ഇല്ലെങ്കിലും അതേ സത്തയാണ്; പരിഗണനകളിലെ വ്യത്യാസം അതിൽ സംഭവിക്കുന്നില്ല. വ്യത്യസ്ത പരിഗണനകൾക്കാണ് അവയുടെ നാമങ്ങൾ ലഭിക്കുന്നത്. ഈ നിലയിൽ, അർ-റഹ്മാൻ എന്ന നാമത്തിൽനിന്നുള്ള ഒരു വെളിപ്പെടലിന്റെ ഗുണമാണ് റബ്ബ്; പരിപാലനത്തിലൂടെ അസ്തിത്വത്തിന്റെ എല്ലാ പുറംനിലകളിലും അകത്തുള്ള നിലകളിലും അത് ബന്ധപ്പെട്ടിരിക്കുന്നു.",
+          "en": "The author places this among the names of servanthood particularly connected with al-Rahman through the existence of nurturing. Nurturing is an existential benefit reaching the nurtured being; al-Rahman, in the aspect of nurturing, is therefore Rabb in manifestation. This account concerns the levels of the names. The Essence described by them remains where names exist and where they do not: differing considerations do not divide it, but receive their own names. Rabb is thus an attribute of manifestation from al-Rahman, connected through nurturing with all outward and inward states of existence."
+        }
+      },
+      {
+        "id": "tilimsani-rabb-3",
+        "title": {
+          "ml": "ഓരോ സൃഷ്ടിയുടെയും ആവശ്യത്തിന് അനുയോജ്യമായ പരിപാലനം",
+          "en": "Nurturing appropriate to each being’s need"
+        },
+        "arabic_original": "وهذا الاسم وإن ذكرنا اختصاصه بالاسم الرحمن من جهة وجوديته فله نسبة أيضا إلى الاسم الله من جهة عدمية إضافاته ومثاله أن التربية بحسب كل موجود إنما هي بقدر ما يحتاج إليه ذلك الموجود فلو زادت عن قدر حاجته انعكس معنى التربية إلى ضده فيصير زيادة وجود التربية عدم تربية في حق ذلك المربوب وهذا الاسم المذكور وإن كان صفة وجودية حتى كل صفة وجودية في الأصل أن ترجع إلى الاسم الرحمن إلا أن رجوعها هنا إلى اسم الله لفوات التربية المصلحة لهذا الموجود الخاص وفوات صفة الرحمانية التي هي هنا إيجاد التربية لهذا الموجود وفي الحقيقة ليس هذا من الاسم الرب إلا بالعرض من كون مبدأ ذلك كان تربية ثم خرج.",
+        "translation": {
+          "ml": "ഈ നാമത്തിന്റെ അസ്തിത്വപരമായ നില അർ-റഹ്മാനുമായി ബന്ധപ്പെടുന്നതായി പറഞ്ഞെങ്കിലും, അതിന്റെ ആപേക്ഷിക അഭാവങ്ങളുടെ നിലയിൽ «അല്ലാഹ്» എന്ന നാമത്തോടും ഇതിനു ബന്ധമുണ്ടെന്ന് ഗ്രന്ഥം പറയുന്നു. ഉദാഹരണം: ഓരോ സൃഷ്ടിയുടെയും പരിപാലനം അതിന്റെ ആവശ്യത്തിന് അനുസരിച്ചാണ്. ആവശ്യത്തേക്കാൾ അധികമായാൽ പരിപാലനത്തിന്റെ അർഥം അതിന്റെ വിരുദ്ധമായി മാറും; അപ്പോൾ പരിപാലനത്തിന്റെ വർധന ആ സൃഷ്ടിയുടെ കാര്യത്തിൽ പരിപാലനമില്ലായ്മയായിത്തീരും. അസ്തിത്വപരമായ ഗുണങ്ങൾ അടിസ്ഥാനപരമായി അർ-റഹ്മാനിലേക്കാണ് മടങ്ങുന്നതെങ്കിലും, ഇവിടെ അല്ലാഹ് എന്ന നാമത്തിലേക്കുള്ള ബന്ധം ആ പ്രത്യേക സൃഷ്ടിക്ക് ഉപകാരപ്പെടുന്ന പരിപാലനം നഷ്ടപ്പെടുന്നതിലും അതിനു പരിപാലനം സൃഷ്ടിച്ചുനൽകുന്ന റഹ്മാനിയായ ഗുണം നഷ്ടപ്പെടുന്നതിലുമാണ്. യഥാർഥത്തിൽ, ആദ്യം പരിപാലനമായിരുന്ന ഒന്ന് പിന്നീട് അതിൽനിന്ന് പുറത്തുപോയതുകൊണ്ടുള്ള അനുബന്ധബന്ധം മാത്രമാണ് ഇതിന് റബ്ബ് എന്ന നാമവുമായുള്ളതെന്ന് ഗ്രന്ഥം വിശദീകരിക്കുന്നു.",
+          "en": "Although its existential aspect belongs particularly to al-Rahman, the author also relates this name to Allah through the relative nonexistence of its relations. Nurturing is appropriate to each being only in the measure of its need. If it exceeds that need, it turns into its opposite: increased nurturing becomes an absence of nurturing for that recipient. Existential attributes fundamentally return to al-Rahman, but this relation to Allah concerns the loss of beneficial nurturing for a particular being and the loss of the merciful attribute that brings that nurturing into existence. Strictly, this belongs to Rabb only incidentally: it began as nurturing and then ceased to be so."
+        }
+      },
+      {
+        "id": "tilimsani-rabb-4",
+        "title": {
+          "ml": "നാമങ്ങളുടെ അർഥങ്ങളെ വേർതിരിച്ചറിയുക",
+          "en": "Distinguishing the meanings of the names"
+        },
+        "arabic_original": "واعلم أن التربية الوجودية ربما ظن المحجوب أنها صفة فعل حقيقي في غيره فيقع في الشرك ولم يعلم أنها صفة من الصفات ترجع إلى الاسم الظاهر من حيث هو ثابت للاسم الرحمن فالتربية إذا تجليات متتابعة ما الظاهر بها غير الرحمن عز وجل فلا تأخذك معاني الأسماء فتغيب عن المسمى فقد دخل الاسم الرب في معنى الاسم الظاهر وهما معا في ضمن الاسم الرحمن ويدخل في الاسم الرب الاسم المعطي من جهة ما في التربية من العطاء وفيه الاسم الودود وفيه المحسن والمنعم والجواد وغير ذلك ويتفاوت دخول هذه الأسماء في الاسم الرب على قدر قصد كل منهم.",
+        "translation": {
+          "ml": "ആത്മീയമായി മറയുള്ള ഒരാൾ അസ്തിത്വപരമായ പരിപാലനത്തെ മറ്റൊരാളിൽ യഥാർഥമായി നിലനിൽക്കുന്ന പ്രവൃത്തിയുടെ ഗുണമായി തെറ്റിദ്ധരിക്കുകയും അങ്ങനെ ശിർക്കിൽ വീഴുകയും ചെയ്യാമെന്ന് ഗ്രന്ഥകാരൻ മുന്നറിയിപ്പുനൽകുന്നു. അത് ഒരു ഗുണമാണെന്നും, അർ-റഹ്മാനിൽ സ്ഥിരമായിരിക്കുന്ന നിലയിൽ «അസ്-സാഹിർ» എന്ന നാമത്തിലേക്കാണ് മടങ്ങുന്നതെന്നും അദ്ദേഹം വിശദീകരിക്കുന്നു. അതിനാൽ പരിപാലനം തുടർച്ചയായ ദൈവിക വെളിപ്പെടലുകളാണ്; അവയിലൂടെ വെളിപ്പെടുന്നത് അർ-റഹ്മാൻ തന്നെയാണെന്ന് ഈ തത്ത്വവിവരണം പറയുന്നു. നാമങ്ങളുടെ അർഥങ്ങളിൽ മുഴുകി ആ നാമങ്ങളാൽ വിളിക്കപ്പെടുന്നവനെ മറക്കരുതെന്നാണ് ഉപദേശം. റബ്ബ് എന്ന നാമം അസ്-സാഹിറിന്റെ അർഥത്തിൽ ഉൾപ്പെടുന്നു; രണ്ടും അർ-റഹ്മാന്റെ വ്യാപ്തിക്കുള്ളിലാണ്. പരിപാലനത്തിലുള്ള ദാനത്തിന്റെ നിലയിൽ «അൽ-മുഅ്തി» ഇതിൽ ഉൾപ്പെടുന്നു. അൽ-വദൂദ്, അൽ-മുഹ്സിൻ, അൽ-മുൻഇം, അൽ-ജവാദ് തുടങ്ങിയവയും ഉൾപ്പെടുന്നു. ഓരോ നാമത്തെയും ഏത് ഉദ്ദേശ്യത്തിൽ പരിഗണിക്കുന്നുവെന്നതനുസരിച്ച് റബ്ബിൽ അവ ഉൾപ്പെടുന്ന രീതിക്ക് വ്യത്യാസമുണ്ടെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+          "en": "The author warns that a spiritually veiled person may regard existential nurturing as an attribute of a real action in another, and thereby fall into association. He treats it instead as an attribute returning to al-Zahir insofar as it is established for al-Rahman. Nurturing is consequently a succession of manifestations in which it is al-Rahman who appears. The meanings of the names should not distract one from the Named. Rabb enters the meaning of al-Zahir, and both fall within al-Rahman. Al-Muti is included through the giving in nurturing; al-Wadud, al-Muhsin, al-Munim, al-Jawad and others are also included. Their inclusion varies with the intended consideration of each name."
+        }
+      },
+      {
+        "id": "tilimsani-rabb-5",
+        "title": {
+          "ml": "ഖയ്യൂമിയ്യത്തും പരിപാലനശക്തിയും",
+          "en": "Self-subsistence and the power of nurturing"
+        },
+        "arabic_original": "فصل لا يجوز أن تكون تربية في الموجودات بعضها لبعض إلا وهي قوى من سريان قوة التربية الإلهية ولو بقدر ما ينسب إلى القيومية الإلهية التي قام بها كل شيء وكل تربية هي من قيوميته القيوم تعالى وإن شئت نسبتها إلى الاسم القادر فإن كل مقدور فرضته هو بالقدرة الإلهية ﴿وَالْقُوَّةُ لِلَّهِ جَمِيعًا﴾ وهو توحيد الأفعال فالقادر داخل في الاسم الرب بهذا الاعتبار وقس على هذا جميع معاني الأسماء الإلهية.",
+        "translation": {
+          "ml": "പ്രത്യേക ഭാഗം: സൃഷ്ടികൾ പരസ്പരം പരിപാലിക്കുന്നത്, ദൈവിക പരിപാലനശക്തി അവയിൽ പ്രവഹിക്കുന്നതിലൂടെ ലഭിച്ച ശക്തികളായിരിക്കാതെ സാധ്യമല്ലെന്ന് ഗ്രന്ഥം പറയുന്നു. എല്ലാറ്റിനെയും നിലനിർത്തുന്ന ദൈവിക ഖയ്യൂമിയ്യത്തിനോടുള്ള ബന്ധം എത്ര അളവിലായാലും ഇതു ബാധകമാണ്. എല്ലാ പരിപാലനവും അൽ-ഖയ്യൂമിന്റെ നിലനിർത്തലിൽ നിന്നുള്ളതാണെന്ന് അദ്ദേഹം വിശദീകരിക്കുന്നു. ഇതിനെ അൽ-ഖാദിർ എന്ന നാമത്തോട് ബന്ധിപ്പിക്കാനും കഴിയും: സങ്കൽപ്പിക്കാവുന്ന ഓരോ സാധ്യകാര്യവും ദൈവിക ശക്തിയാലാണ്. «ശക്തി മുഴുവനും അല്ലാഹുവിനാണ്.» ഇതിനെ പ്രവൃത്തികളുടെ തൗഹീദ് എന്ന് ഗ്രന്ഥം വിളിക്കുന്നു. ഈ പരിഗണനയിൽ അൽ-ഖാദിർ, റബ്ബിൽ ഉൾപ്പെടുന്നു. മറ്റു ദൈവിക നാമങ്ങളുടെ അർഥങ്ങളെയും ഇതേ രീതിയിൽ പരിഗണിക്കണമെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു.",
+          "en": "Section: Beings can nurture one another only through powers flowing from divine nurturing, even in the measure attributable to divine self-subsistence by which everything stands. Every nurturing proceeds from the self-subsistence of al-Qayyum. It may also be related to al-Qadir, since every conceivable object of power is through divine power: “All power belongs to Allah.” The author calls this the unity of actions. In this consideration al-Qadir enters Rabb; other divine names may be considered by the same analogy."
+        }
+      },
+      {
+        "id": "tilimsani-rabb-6",
+        "title": {
+          "ml": "ജീവനും ഘടനകളുടെ നിലനിൽപ്പും",
+          "en": "Life and the continuance of composites"
+        },
+        "arabic_original": "واعلم أن التربية أعم مما يفهم منها في العرف فإن تربية الحق تعالى من حيث ما هو رب للعالمين هي سر الحياة فكل موجود من العالمين فالحياة في البسائط حركة ذاتية تنشئ التركيب فهي حياة للتركيب ثم لأجزاء المركب ثم لبقاء المركب ثم لقيام المركب ثم لكونه قد يكون جزءا لمركب آخر فتصير المركبات في الطور الأول أجزاء لمركب في الطور الثاني ويسري إلى حيث تقف فهذه حياة بها يدخل الاسم الحي في الاسم الرب بهذه التربية المذكورة.",
+        "translation": {
+          "ml": "സാധാരണ ഉപയോഗത്തിൽ പരിപാലനം എന്ന് മനസ്സിലാക്കുന്നതിനെക്കാൾ വിശാലമാണ് ഇവിടെ അതിന്റെ അർഥമെന്ന് ഗ്രന്ഥം പറയുന്നു. സർവലോകങ്ങളുടെയും റബ്ബ് എന്ന നിലയിലെ അല്ലാഹുവിന്റെ പരിപാലനം ജീവന്റെ രഹസ്യമാണ്. ലോകങ്ങളിലെ ഓരോ അസ്തിത്വത്തെയും സംബന്ധിച്ച്, ലളിതഘടകങ്ങളിലെ ജീവൻ സംയോജിതഘടനയെ ഉണ്ടാക്കുന്ന സ്വാഭാവിക ചലനമാണ്. അതു ഘടനയ്ക്കും അതിന്റെ ഘടകങ്ങൾക്കും, ആ ഘടനയുടെ തുടരുന്നതിനും നിലനിൽപ്പിനും ജീവൻ നൽകുന്നു. പിന്നീട് ആ ഘടന മറ്റൊരു സംയോജിതഘടനയുടെ ഭാഗമാകാം. അങ്ങനെ ഒന്നാം നിലയിലെ സംയോജിതവസ്തുക്കൾ രണ്ടാമത്തെ നിലയിലെ ഘടകങ്ങളായിത്തീരുന്നു; ഈ പ്രവാഹം അതിന്റെ പരിധിവരെ തുടരുന്നു. ഈ പരിപാലനത്തിന്റെ നിലയിൽ അൽ-ഹയ്യ് എന്ന നാമം റബ്ബിൽ ഉൾപ്പെടുന്നതായി ഗ്രന്ഥം വിശദീകരിക്കുന്നു.",
+          "en": "The author understands nurturing more broadly than ordinary usage. Divine nurturing, in the aspect of Lord of the worlds, is the secret of life. In simple constituents, life is an intrinsic movement producing composition: it is life for the composition, its parts, its continuation and its subsistence, and for its becoming part of another composite. Composites at the first stage become parts at the next, and this extends as far as it reaches. Through nurturing in this sense, al-Hayy enters the name Rabb."
+        }
+      },
+      {
+        "id": "tilimsani-rabb-7",
+        "title": {
+          "ml": "പൊതുവായ അർഥവും പരിധിയില്ലാത്ത വ്യാപ്തിയും",
+          "en": "Ordinary understanding and unlimited scope"
+        },
+        "arabic_original": "وأما مفهوم العوام من التربية فهو ما يشبه تربية الطفل فقط ولو كان كذلك لخرج بعض العالمين من حيطة تربية اسم الرب له وكيف وهو ﴿رَبِّ الْعَالَمِينَ﴾ بالعموم وذلك يقتضي العوالم كلها ظاهرها وباطنها أولها الإضافي وآخرها ولو جرى القلم بما يقتضي معنى الربوبية لم يقف عند حد أبد الأبدين ﴿وَاللَّهُ وَاسِعٌ عَلِيمٌ﴾.",
+        "translation": {
+          "ml": "പൊതുജനങ്ങൾ പരിപാലനം എന്ന് മനസ്സിലാക്കുന്നത് കുട്ടിയെ വളർത്തുന്നതുപോലുള്ള കാര്യങ്ങളായി മാത്രമാണെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. അത്രയേ ഉള്ളുവെങ്കിൽ ലോകങ്ങളിൽ ചിലത് റബ്ബ് എന്ന നാമത്തിന്റെ പരിപാലനവ്യാപ്തിക്ക് പുറത്തുപോകുമായിരുന്നു. എന്നാൽ പൊതുവായി «സർവലോകങ്ങളുടെയും റബ്ബ്» എന്നാണ് പറയുന്നത്. അതിനാൽ സകല ലോകങ്ങളും—അവയുടെ പുറവും അകവും, ആപേക്ഷിക ആരംഭവും അവസാനവും—ഇതിൽ ഉൾപ്പെടുന്നു. റുബൂബിയ്യത്തിന്റെ അർഥം ആവശ്യപ്പെടുന്ന കാര്യങ്ങളെല്ലാം പേനകൊണ്ട് എഴുതാൻ തുടങ്ങിയാൽ അത് അനന്തകാലത്തും അവസാനിക്കുകയില്ലെന്ന് ഗ്രന്ഥകാരൻ പറയുന്നു. «അല്ലാഹു വിശാലതയുള്ളവനും എല്ലാം അറിയുന്നവനുമാണ്.»",
+          "en": "The author says ordinary people understand nurturing as something resembling the raising of a child alone. If that were all it meant, some worlds would fall outside the encompassing nurturing of the name Rabb. Yet He is “Lord of the worlds” universally, which includes all worlds: outward and inward, relative beginning and end. Were the pen to write everything implied by lordship, it would not reach a limit throughout eternity. “Allah is All-Encompassing, All-Knowing.”"
+        }
+      }
+    ]
   }
 }
