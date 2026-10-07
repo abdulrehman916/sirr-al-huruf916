@@ -21,7 +21,7 @@ import SectionCNames from "@/components/holynameknowledge/SectionCNames";
 import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
 import { useAuth } from "@/lib/AuthContext";
 
-import { calculateAbjad } from "@/lib/abjadValues";
+import { getHolyNameCardMetrics } from "@/lib/holyNameCardMetrics";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference, useHolyNamesLanguage } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 const PAGE_PATH = "/holy-names";
@@ -70,7 +70,7 @@ function SectionA({ importRefreshKey }) {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const copy = HOLY_NAMES.map(n => ({ ...n, abjadValue: calculateAbjad(knowledgeMap[n.id]?.canonical_arabic || knowledgeMap[n.id]?.fully_vowelized_name || n.arabicName) }));
+    const copy = HOLY_NAMES.map(n => ({ ...n, ...getHolyNameCardMetrics(n, knowledgeMap[n.id]) }));
     if (sort === "az") copy.sort((a, b) => a.englishName.localeCompare(b.englishName));
     else if (sort === "za") copy.sort((a, b) => b.englishName.localeCompare(a.englishName));
     else if (sort === "value") copy.sort((a, b) => a.abjadValue - b.abjadValue);

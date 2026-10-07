@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { calculateAbjad } from '../src/lib/abjadValues.js';
 import { HOLY_NAMES } from '../src/lib/magicalHolyNamesData.js';
 import { getHolyNameAbjad } from '../src/lib/holyNameAbjad.js';
+import { getHolyNameCardMetrics } from '../src/lib/holyNameCardMetrics.js';
 
 // The vowels between alif and lam used to stop removal of the article.
 for (const [heading, withArticle, withoutArticle] of [
@@ -29,3 +30,11 @@ assert.equal(calculateAbjad(HOLY_NAMES.find(name => name.id === 5).arabicName), 
 assert.equal(calculateAbjad('ءأإآ'), 4);
 assert.equal(calculateAbjad('ؤئ'), 16);
 console.log('Section A sample names and shared Hamza values verified.');
+
+// A corrected spelling must update the count together with its value.
+const imported = { arabicName: 'أَهْيَا', abjadValue: 16, letterCount: 99 };
+assert.deepEqual(getHolyNameCardMetrics(imported), { abjadValue: 17, letterCount: 4 });
+assert.deepEqual(getHolyNameCardMetrics(imported, { canonical_arabic: 'بِرْهَتِيَة' }), { abjadValue: 622, letterCount: 6 });
+assert.deepEqual(getHolyNameCardMetrics(imported, { fully_vowelized_name: 'أَـهْيَا ١٢٣،' }), { abjadValue: 17, letterCount: 4 });
+assert.equal(imported.letterCount, 99);
+console.log('Holy Name card value/count consistency and original preservation verified.');
