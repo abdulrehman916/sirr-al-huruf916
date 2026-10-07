@@ -1,1 +1,13 @@
 
+# All endpoints require gateway JWT validation. Onboarding returns one public timestamp.
+[functions.getOnboardingResetDate]
+verify_jwt = true
+
+[functions.getUserSubscriptions]
+verify_jwt = true
+[functions.getUserRequests]
+verify_jwt = true
+[functions.getPagePricing]
+verify_jwt = true
+[functions.checkPageAccessFast]
+verify_jwt = true
