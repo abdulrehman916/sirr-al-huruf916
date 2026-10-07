@@ -5,6 +5,7 @@ import { platform } from "@/api/platformClient";
 import HolyNameEsotericResearchProfile from "@/components/holynameknowledge/HolyNameEsotericResearchProfile";
 import { calculateAbjad } from "@/lib/abjadValues";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
+import BirhatiahCollectiveCard from "./BirhatiahCollectiveCard";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
@@ -80,10 +81,10 @@ export default function SectionCNames() {
       <div className="text-center py-12 space-y-3">
         <ShieldAlert className="w-10 h-10 mx-auto" style={{ color: "rgba(148,163,184,0.6)" }} />
         <p className="font-malayalam text-sm" style={{ color: "rgba(148,163,184,0.7)" }}>
-          സെക്ഷൻ C കാർഡുകൾ ലഭ്യമായില്ല
+          Section C cards are unavailable
         </p>
         <p className="font-malayalam text-sm" style={{ color: "rgba(255,255,255,0.45)" }}>
-          കാർഡുകൾ ലഭ്യമായില്ല
+          Please try again
         </p>
       </div>
     );
@@ -97,7 +98,7 @@ export default function SectionCNames() {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="ബിർഹതിയ്യ നാമങ്ങൾ തിരയുക..."
+          placeholder="Search Birhatiah names..."
           className="flex-1 bg-transparent outline-none font-inter text-sm"
           style={{ color: "rgba(255,255,255,0.85)" }}
           dir="auto"
@@ -112,14 +113,14 @@ export default function SectionCNames() {
 
       <div className="flex items-center justify-between flex-wrap gap-2">
         <p className="font-malayalam text-[12px] font-semibold" style={{ color: "rgba(255,255,255,0.30)" }}>
-          {filtered.length} / {cards.length} നാമങ്ങൾ
+          {filtered.length} / {cards.length} names
         </p>
         <button
           onClick={() => { setQuery(""); setOpenId(null); }}
           className="px-3 py-1.5 rounded-xl border font-malayalam text-[12px] font-semibold"
           style={{ background: P.bg, borderColor: P.border, color: P.dim }}
         >
-          മായ്ക്കുക
+          Clear
         </button>
       </div>
 
@@ -128,7 +129,7 @@ export default function SectionCNames() {
           {filtered.length === 0 ? (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-16 space-y-3">
               <p className="font-amiri text-lg" style={{ color: P.dim }}>لا توجد نتائج</p>
-              <p className="font-malayalam text-sm" style={{ color: "rgba(255,255,255,0.22)" }}>മറ്റൊരു തിരയൽ ശ്രമിക്കുക</p>
+              <p className="font-inter text-sm" style={{ color: "rgba(255,255,255,0.22)" }}>Try another search</p>
             </motion.div>
           ) : (
             filtered.map((card, i) => {
@@ -208,6 +209,7 @@ export default function SectionCNames() {
           )}
         </AnimatePresence>
       </div>
+      <BirhatiahCollectiveCard cards={cards} />
     </div>
   );
 }

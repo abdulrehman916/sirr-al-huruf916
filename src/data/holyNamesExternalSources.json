@@ -38,7 +38,8 @@
     "scope_note": {
       "ml": "ഇത് ഈ പേരും ഉൾപ്പെടുന്ന സംയുക്ത പാഠത്തിന്റെ അവസാനവാക്യമാണ്; ഈ പേരിന് മാത്രമുള്ള പൂർണ്ണ ദുആയല്ല. ഈ ഭാഗത്ത് ആവർത്തനസംഖ്യയോ നിശ്ചിത സമയമോ കളത്തിന്റെ സംഖ്യകളോ നൽകിയിട്ടില്ല.",
       "en": "These are closing words from a collective text that includes this name, not a complete name-specific prayer. No repetition count, scheduled time or square values are supplied in this passage."
-    }
+    },
+    "arabic_reading": "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ وَآلِهِ وَسَلَّمَ"
   },
   {
     "id": "birhatiah-meaning-muslim-487a",
@@ -74,26 +75,369 @@
   {
     "id": "birhatiah-meaning-quran-59-23",
     "related_name_ids": [
-      "HNK-MHC-001"
+      "HNK-MHC-001",
+      "HNK-MHC-003",
+      "HNK-MHC-007",
+      "HNK-MHC-013",
+      "HNK-MHC-015",
+      "HNK-MHC-016",
+      "HNK-MHC-017"
     ],
     "review_status": "checked_against_digital_text",
     "source_title": "القرآن الكريم",
-    "source_location": "Al-Hashr 59:23 — excerpt",
+    "source_location": "Al-Hashr 59:23 — complete verse",
     "source_urls": [
       "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html"
     ],
     "title": {
-      "ml": "ഖുദ്ദൂസ് എന്ന അറബി അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
-      "en": "A verse related to the Arabic meaning Quddus"
+      "ml": "പരിശുദ്ധി, സമാധാനം, സംരക്ഷണം — അർഥങ്ങളുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Holiness, peace and guardianship — a verse related to the meanings"
     },
-    "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ",
+    "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
     "translation": {
-      "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ രാജാവും പരിശുദ്ധനും സമാധാനത്തിന്റെയും സുരക്ഷയുടെയും ഉറവിടവുമാണ്.",
-      "en": "He is Allah, besides whom there is no deity: the King, the Most Holy, the Source of Peace."
+      "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ രാജാവും പരിശുദ്ധനും സമാധാനത്തിന്റെയും സുരക്ഷയുടെയും ഉറവിടവും വിശ്വാസവും സുരക്ഷയും നൽകുന്നവനും സംരക്ഷിക്കുന്നവനും പ്രതാപശാലിയും സർവാധികാരിയും മഹത്വമുള്ളവനുമാണ്. അവർ പങ്കുചേർക്കുന്നതിൽനിന്നെല്ലാം അല്ലാഹു പരിശുദ്ധനാണ്.",
+      "en": "He is Allah, besides whom there is no deity: the King, the Most Holy, the Source of Peace, the Giver of security, the Guardian, the Mighty, the Compeller, the Supremely Great. Glory be to Allah above what they associate with Him."
     },
     "scope_note": {
-      "ml": "ഇത് അൽ-ഹശ്ർ 59:23-ലെ ആദ്യ ഭാഗമാണ്. ബന്ധം ഖുദ്ദൂസ് എന്ന അർഥത്തിനാണ്; ബർഹത്തിയ എന്ന പദം ഈ ആയത്തിൽ ഇല്ല. ഇതിൽ പ്രത്യേക ഓതൽഎണ്ണമോ സമയമോ കളമോ നിർദേശിക്കുന്നില്ല.",
-      "en": "This is the opening portion of Al-Hashr 59:23, linked through the meaning Quddus. Birhatiah is not a word in this verse. No special recitation count, time or square is prescribed here."
+      "ml": "ഇത് അൽ-ഹശ്ർ 59:23-ലെ മുഴുവൻ ആയത്താണ്. ഖുദ്ദൂസ്, സലാം, മുഅ്മിൻ, മുഹൈമിൻ, സുബ്ഹാനല്ലാഹ് എന്നീ അറബി അർഥങ്ങളിലൂടെയാണ് ബന്ധപ്പെട്ട കാർഡുകളിലേക്ക് ചേർത്തിരിക്കുന്നത്. ബർഹത്തിയ നാമങ്ങൾ ഈ ആയത്തിൽ ഇല്ല; അവയ്ക്ക് പ്രത്യേക ഓതൽഎണ്ണമോ സമയമോ കളമോ ഇത് നിർദേശിക്കുന്നില്ല.",
+      "en": "This is the complete verse Al-Hashr 59:23. It is linked through the Arabic meanings Quddus, Salam, Mumin, Muhaymin and Subhan Allah. The Birhatiah names do not occur in it; it prescribes no special Birhatiah repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-2-255",
+    "related_name_ids": [
+      "HNK-MHC-004",
+      "HNK-MHC-005"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Baqara 2:255 — opening excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html"
+    ],
+    "title": {
+      "ml": "ഹയ്യ്, ഖയ്യൂം: ജീവനുള്ളവനും സർവവും നിലനിർത്തുന്നവനും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Hayy and Qayyum: the Ever-Living and Sustainer — a verse related to the meaning"
+    },
+    "arabic_original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+    "translation": {
+      "ml": "അല്ലാഹു: അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല; അവൻ എന്നെന്നും ജീവിക്കുന്നവനും സർവവും നിലനിർത്തുന്നവനുമാണ്.",
+      "en": "Allah: there is no deity except Him, the Ever-Living, the Sustainer of all."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «الحَيّ، القَيّوم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-11-90",
+    "related_name_ids": [
+      "HNK-MHC-006"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Hud 11:90 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya90.html"
+    ],
+    "title": {
+      "ml": "വദൂദ്: സ്നേഹിക്കുന്നവൻ — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Wadud: the Loving — a verse related to the meaning"
+    },
+    "arabic_original": "وَاسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
+    "translation": {
+      "ml": "നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക; പിന്നെ അവനിലേക്ക് പശ്ചാത്തപിച്ച് മടങ്ങുക. എന്റെ രക്ഷിതാവ് കരുണയുള്ളവനും സ്നേഹിക്കുന്നവനുമാണ്.",
+      "en": "Seek forgiveness from your Lord, then turn to Him in repentance. My Lord is Merciful and Loving."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «وَدود» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-11-73",
+    "related_name_ids": [
+      "HNK-MHC-009"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Hud 11:73 — closing excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya73.html"
+    ],
+    "title": {
+      "ml": "ഹമീദ്, മജീദ്: സ്തുത്യർഹനും മഹത്വമുള്ളവനും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Hamid and Majid: Praiseworthy and Glorious — a verse related to the meaning"
+    },
+    "arabic_original": "إِنَّهُ حَمِيدٌ مَّجِيدٌ",
+    "translation": {
+      "ml": "തീർച്ചയായും അവൻ സ്തുത്യർഹനും മഹത്വമുള്ളവനുമാണ്.",
+      "en": "Indeed, He is Praiseworthy and Glorious."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «حَميد، مَجيد» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-51-58",
+    "related_name_ids": [
+      "HNK-MHC-010",
+      "HNK-MHC-011"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Adh-Dhariyat 51:58 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html"
+    ],
+    "title": {
+      "ml": "ശക്തിയും ദൃഢതയും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Strength and firmness — a verse related to the meaning"
+    },
+    "arabic_original": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+    "translation": {
+      "ml": "തീർച്ചയായും അല്ലാഹുവാണ് ഉപജീവനം നൽകുന്നവൻ; ശക്തിയുടെ ഉടമയും ദൃഢശക്തിയുള്ളവനുമാണ്.",
+      "en": "Indeed, Allah is the Provider, the Possessor of strength, the Firm."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «قَوِيّ എന്നതിന്റെ ശക്തി എന്ന അർഥം; مَتين» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-4-126",
+    "related_name_ids": [
+      "HNK-MHC-012"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "An-Nisa 4:126 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya126.html"
+    ],
+    "title": {
+      "ml": "മുഹീത്: എല്ലാം ഉൾക്കൊള്ളുന്നവൻ — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Muhit: encompassing everything — a verse related to the meaning"
+    },
+    "arabic_original": "وَلِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۚ وَكَانَ اللَّهُ بِكُلِّ شَيْءٍ مُّحِيطًا",
+    "translation": {
+      "ml": "ആകാശങ്ങളിലുള്ളതും ഭൂമിയിലുള്ളതും അല്ലാഹുവിന്റേതാണ്. അല്ലാഹു എല്ലാ കാര്യങ്ങളെയും ഉൾക്കൊള്ളുന്നവനാണ്.",
+      "en": "To Allah belongs all that is in the heavens and on earth. Allah encompasses everything."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «مُحيط» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-2-20",
+    "related_name_ids": [
+      "HNK-MHC-008",
+      "HNK-MHC-014",
+      "HNK-MHC-019",
+      "HNK-MHC-021",
+      "HNK-MHC-026",
+      "HNK-MHC-028"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Baqara 2:20 — closing excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya20.html"
+    ],
+    "title": {
+      "ml": "ഖാദിർ: എല്ലാ കാര്യത്തിനും കഴിവുള്ളവൻ — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Qadir: able to do all things — a verse related to the meaning"
+    },
+    "arabic_original": "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+    "translation": {
+      "ml": "തീർച്ചയായും അല്ലാഹു എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനാണ്.",
+      "en": "Indeed, Allah is able to do all things."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «قادِر / قَدير» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-35-30",
+    "related_name_ids": [
+      "HNK-MHC-027"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Fatir 35:30 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya30.html"
+    ],
+    "title": {
+      "ml": "ശകൂർ: സൽകർമത്തിന് പ്രതിഫലം നൽകുന്നവൻ — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Shakur: the Appreciative — a verse related to the meaning"
+    },
+    "arabic_original": "لِيُوَفِّيَهُمْ أُجُورَهُمْ وَيَزِيدَهُم مِّن فَضْلِهِ ۚ إِنَّهُ غَفُورٌ شَكُورٌ",
+    "translation": {
+      "ml": "അവരുടെ പ്രതിഫലങ്ങൾ പൂർണമായി നൽകാനും തന്റെ ഔദാര്യത്തിൽനിന്ന് അധികമായി നൽകാനും വേണ്ടിയാണ് അത്. തീർച്ചയായും അവൻ ഏറെ പൊറുക്കുന്നവനും സൽകർമത്തിന് പ്രതിഫലം നൽകുന്നവനുമാണ്.",
+      "en": "So that He may pay them their rewards in full and give them more from His bounty. Indeed, He is Forgiving and Appreciative."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «شَكور» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-82-6",
+    "related_name_ids": [
+      "HNK-MHC-020",
+      "HNK-MHC-028"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Infitar 82:6 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura82-aya6.html"
+    ],
+    "title": {
+      "ml": "കരീം: ഔദാര്യമുള്ള രക്ഷിതാവ് — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Karim: the Generous Lord — a verse related to the meaning"
+    },
+    "arabic_original": "يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+    "translation": {
+      "ml": "മനുഷ്യനേ, ഔദാര്യമുള്ള നിന്റെ രക്ഷിതാവിനെക്കുറിച്ച് നിന്നെ വഞ്ചിതനാക്കിയത് എന്താണ്?",
+      "en": "O human being, what has deceived you concerning your Generous Lord?"
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «كَريم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-13-16",
+    "related_name_ids": [
+      "HNK-MHC-020"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Ar-Ra’d 13:16 — closing excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html"
+    ],
+    "title": {
+      "ml": "ഖഹ്ഹാർ: എല്ലാറ്റിനുമേൽ അധികാരമുള്ളവൻ — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Qahhar: the All-Dominant — a verse related to the meaning"
+    },
+    "arabic_original": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+    "translation": {
+      "ml": "പറയുക: അല്ലാഹുവാണ് എല്ലാ വസ്തുക്കളുടെയും സ്രഷ്ടാവ്. അവൻ ഏകനും എല്ലാറ്റിനുമേൽ അധികാരമുള്ളവനുമാണ്.",
+      "en": "Say: Allah is the Creator of everything, and He is the One, the All-Dominant."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «قَهّار» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-2-115",
+    "related_name_ids": [
+      "HNK-MHC-003",
+      "HNK-MHC-006",
+      "HNK-MHC-022"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Baqara 2:115 — closing excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya115.html"
+    ],
+    "title": {
+      "ml": "വാസിഅ്, അലീം: വിശാലതയും അറിവും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Wasi and Alim: all-encompassing and knowing — a verse related to the meaning"
+    },
+    "arabic_original": "إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+    "translation": {
+      "ml": "തീർച്ചയായും അല്ലാഹു വിശാലതയുള്ളവനും എല്ലാം അറിയുന്നവനുമാണ്.",
+      "en": "Indeed, Allah is All-Encompassing and All-Knowing."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «واسِع، عَليم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-6-102",
+    "related_name_ids": [
+      "HNK-MHC-002"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Anam 6:102 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya102.html"
+    ],
+    "title": {
+      "ml": "സർവത്തിന്റെയും സ്രഷ്ടാവും ആരാധനയ്ക്കർഹനും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Creator of everything and the only deity — a verse related to the meaning"
+    },
+    "arabic_original": "ذَٰلِكُمُ اللَّهُ رَبُّكُمْ ۖ لَا إِلَٰهَ إِلَّا هُوَ ۖ خَالِقُ كُلِّ شَيْءٍ فَاعْبُدُوهُ ۚ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+    "translation": {
+      "ml": "അവനാണ് നിങ്ങളുടെ രക്ഷിതാവായ അല്ലാഹു. അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. എല്ലാ വസ്തുക്കളുടെയും സ്രഷ്ടാവായ അവനെ ആരാധിക്കുക. എല്ലാ കാര്യങ്ങളുടെയും പരിപാലകൻ അവനാണ്.",
+      "en": "That is Allah, your Lord. There is no deity except Him, the Creator of everything, so worship Him. He is the Guardian over all things."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «إله كل شيء / الله» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-6-18",
+    "related_name_ids": [
+      "HNK-MHC-006",
+      "HNK-MHC-018",
+      "HNK-MHC-024"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Anam 6:18 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya18.html"
+    ],
+    "title": {
+      "ml": "ഖാഹിർ, ഹകീം: പരമാധികാരവും ജ്ഞാനവും — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Qahir and Hakim: dominance and wisdom — a verse related to the meaning"
+    },
+    "arabic_original": "وَهُوَ الْقَاهِرُ فَوْقَ عِبَادِهِ ۚ وَهُوَ الْحَكِيمُ الْخَبِيرُ",
+    "translation": {
+      "ml": "അവൻ തന്റെ ദാസന്മാരുടെ മേൽ പരമാധികാരമുള്ളവനാണ്. അവൻ ജ്ഞാനിയും എല്ലാ കാര്യങ്ങളും സൂക്ഷ്മമായി അറിയുന്നവനുമാണ്.",
+      "en": "He is the Dominant over His servants, and He is the Wise, the All-Aware."
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «قاهِر، حَكيم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-95-8",
+    "related_name_ids": [
+      "HNK-MHC-023"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "At-Tin 95:8 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura95-aya8.html"
+    ],
+    "title": {
+      "ml": "ഹാകിം: വിധികർത്താവ് — അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "Hakim: the Judge — a verse related to the meaning"
+    },
+    "arabic_original": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+    "translation": {
+      "ml": "അല്ലാഹു വിധികർത്താക്കളിൽ ഏറ്റവും ഉത്തമനായ വിധികർത്താവല്ലയോ?",
+      "en": "Is Allah not the best of judges?"
+    },
+    "scope_note": {
+      "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «حاكِم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
+      "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
     }
   }
 ]
