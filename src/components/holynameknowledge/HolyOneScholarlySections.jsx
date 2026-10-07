@@ -44,6 +44,7 @@ const VARIANTS = [
 
 function CollapsibleSection({ icon: Icon, title_ml, title_en, count, children }) {
   const [open, setOpen] = useState(true);
+  const { language } = useHolyNamesLanguage();
   if (count === 0) return null;
   return (
     <div className="rounded-xl border overflow-hidden" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
@@ -54,8 +55,8 @@ function CollapsibleSection({ icon: Icon, title_ml, title_en, count, children })
       >
         <div className="flex items-center gap-2">
           <Icon className="w-5 h-5" style={{ color: G.text }} />
-          <span className="font-inter font-semibold text-white text-sm">
-            {title_ml} <span className="text-white/40">({title_en})</span>
+          <span className={`${language === "ml" ? "font-malayalam" : "font-inter"} font-semibold text-white text-sm`}>
+            {language === "ml" ? title_ml : title_en}
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -218,8 +219,8 @@ export default function HolyOneScholarlySections({ card }) {
     <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-3">
       <div className="flex items-center gap-2 mb-2">
         <Library className="w-5 h-5" style={{ color: G.text }} />
-        <h2 className="font-inter font-semibold text-white">
-          പണ്ഡിത ഗ്രന്ഥശാല (Scholarly Library)
+        <h2 className={`${language === "ml" ? "font-malayalam" : "font-inter"} font-semibold text-white`}>
+          {language === "ml" ? "പണ്ഡിത ഗ്രന്ഥശാല" : "Scholarly Library"}
         </h2>
         {isOwner && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: G.text }}>
           {sources.length} sources · {history.length} passes
