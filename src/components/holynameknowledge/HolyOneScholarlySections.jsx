@@ -73,6 +73,12 @@ function CollapsibleSection({ icon: Icon, title_ml, title_en, count, children })
   );
 }
 
+// Old imports sometimes encode an absent value as the literal string "null".
+// Suppress those display placeholders without editing the preserved source record.
+function displayValue(value) {
+  return typeof value === "string" && /^(null|undefined)$/i.test(value.trim()) ? "" : (value ?? "");
+}
+
 function EntryCard({ entry }) {
   const text = entry?.text || entry?.verbatim_text || "";
   const arabic = entry?.arabic_text || "";
@@ -85,12 +91,12 @@ function EntryCard({ entry }) {
   const lang = entry?.language || "";
   const conf = entry?.confidence || "";
   const cat = entry?.category || "";
-  const construction = entry?.construction_method || "";
-  const conditions = entry?.conditions || "";
-  const reps = entry?.repetitions || "";
-  const timing = entry?.timing || "";
-  const purpose = entry?.purpose || "";
-  const warnings = entry?.warnings || "";
+  const construction = displayValue(entry?.construction_method);
+  const conditions = displayValue(entry?.conditions);
+  const reps = displayValue(entry?.repetitions);
+  const timing = displayValue(entry?.timing);
+  const purpose = displayValue(entry?.purpose);
+  const warnings = displayValue(entry?.warnings);
   const notes = entry?.notes || "";
 
   return (
@@ -100,7 +106,7 @@ function EntryCard({ entry }) {
           {arabic}
         </p>
       )}
-      {text && (
+      {text && text.trim() !== arabic.trim() && (
         <p className="text-white/85 text-sm leading-relaxed mb-2 whitespace-pre-wrap">{text}</p>
       )}
       {malayalam && (
