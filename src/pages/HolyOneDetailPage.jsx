@@ -6,7 +6,7 @@ import { platform } from "@/api/platformClient";
 import PageLayout from "@/components/PageLayout";
 import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
-import { ABJAD_VALUES } from "@/lib/abjadValues";
+import { getHolyNameAbjad } from "@/lib/holyNameAbjad";
 import { usePageState } from "@/context/PageStateContext";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
@@ -119,41 +119,7 @@ export default function HolyOneDetailPage() {
   // future Holy Name card; no database change.
   const divineNameInfo = useMemo(() => {
     if (source !== "B" || !name || !name.arabic_name) return null;
-    // Strip the "اسمه" chapter marker (and any leading "اسم" prefix).
-    const heading = String(name.arabic_name)
-      .replace(/^\s*اسمه\s+/, "")
-      .replace(/^\s*اسم\s+/, "")
-      .trim();
-    const tokens = heading.split(/\s+/).filter(Boolean);
-    if (tokens.length === 0) return null;
-    // Divine Name = the FIRST word of the heading (with ال). Everything
-    // after it is explanatory/honorific and is never used for calculation.
-    const withAL = tokens[0].replace(/\u0640/g, ""); // strip tatweel only
-    let withoutAL = withAL;
-    const bareFirst = withAL.replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]/g, "");
-    if (bareFirst.startsWith("\u0627\u0644") && bareFirst.length > 2) {
-      withoutAL = withAL.replace(/^\u0627\u0644/, "");
-    }
-    const calcAbjad = (txt) => {
-      const clean = String(txt)
-        .replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, "")
-        .replace(/\s+/g, "");
-      let total = 0;
-      for (const ch of clean) {
-        if (ABJAD_VALUES[ch]) total += ABJAD_VALUES[ch];
-      }
-      return total;
-    };
-    const withALValue = calcAbjad(withAL);
-    const withoutALValue = calcAbjad(withoutAL);
-    return {
-      withAL,
-      withoutAL,
-      withALValue,
-      withoutALValue,
-      withALSquare: withALValue * withALValue,
-      withoutALSquare: withoutALValue * withoutALValue,
-    };
+    return getHolyNameAbjad(name.arabic_name);
   }, [name?.arabic_name, source]);
 
   if (loading) {
