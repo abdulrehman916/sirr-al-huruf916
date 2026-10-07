@@ -7,7 +7,7 @@
     "dev": "vite",
     "prebuild": "npm run verify:calculations",
     "build": "vite build",
-    "verify:calculations": "node scripts/verify-calculation-core.mjs",
+    "verify:calculations": "node scripts/verify-calculation-core.mjs && node scripts/verify-holy-name-abjad.mjs",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
