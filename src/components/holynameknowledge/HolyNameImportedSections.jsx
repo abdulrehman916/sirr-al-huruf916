@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Loader2, BookOpen, ImageIcon, AlertTriangle } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { useIsOwner } from "@/hooks/useIsOwner";
+import HolyNameProfileLangSelector from "./HolyNameProfileLangSelector";
 
 const P = {
   border: "rgba(212,175,55,0.30)",
@@ -34,6 +35,7 @@ const LANG_LABELS = { ar: "Arabic", ml: "Malayalam", en: "English", mixed: "Arab
 export default function HolyNameImportedSections({ sourceSection, sourceNameKey, refreshKey = 0 }) {
   const [sections, setSections] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [lang, setLang] = useState("ml");
   const isOwner = useIsOwner();
 
   useEffect(() => {
@@ -76,6 +78,13 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
         <span className="font-inter text-[9px] uppercase tracking-widest font-bold" style={{ color: P.text }}>
           {isOwner ? `PDF Knowledge · ${sections.length} paragraph${sections.length > 1 ? "s" : ""}` : `${sections.length} paragraph${sections.length > 1 ? "s" : ""}`}
         </span>
+      </div>
+
+      <div className="mb-3" role="group" aria-label="Chapter translation language">
+        <HolyNameProfileLangSelector lang={lang} setLang={setLang} />
+        {lang === "en" && sections.some(s => !s.english_translation) && (
+          <p className="font-inter text-xs text-white/60 mt-2">English translation is not yet available for every paragraph. The original Arabic remains below.</p>
+        )}
       </div>
 
       <div className="space-y-3">
@@ -138,11 +147,20 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
                 </div>
               )}
 
-              {s.malayalam_translation && (
+              {lang === "ml" && s.malayalam_translation && (
                 <div className="space-y-1 pt-1 border-t" style={{ borderColor: "rgba(212,175,55,0.10)" }}>
                   <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>Malayalam translation</span>
                   <p className="font-malayalam text-sm leading-relaxed whitespace-pre-wrap selectable" style={{ color: "rgba(255,255,255,0.80)" }} dir="auto">
                     {s.malayalam_translation}
+                  </p>
+                </div>
+              )}
+
+              {lang === "en" && s.english_translation && (
+                <div className="space-y-1 pt-1 border-t" style={{ borderColor: "rgba(212,175,55,0.10)" }}>
+                  <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>English translation</span>
+                  <p className="font-inter text-sm leading-relaxed whitespace-pre-wrap selectable" style={{ color: "rgba(255,255,255,0.80)" }} dir="ltr">
+                    {s.english_translation}
                   </p>
                 </div>
               )}
