@@ -21,6 +21,8 @@ import SectionCNames from "@/components/holynameknowledge/SectionCNames";
 import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
 import { useAuth } from "@/lib/AuthContext";
 
+import { calculateAbjad } from "@/lib/abjadValues";
+
 const PAGE_PATH = "/holy-names";
 const FEATURES = getFeatures(PAGE_PATH);
 
@@ -67,7 +69,7 @@ function SectionA({ importRefreshKey }) {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const copy = [...HOLY_NAMES];
+    const copy = HOLY_NAMES.map(n => ({ ...n, abjadValue: calculateAbjad(knowledgeMap[n.id]?.canonical_arabic || knowledgeMap[n.id]?.fully_vowelized_name || n.arabicName) }));
     if (sort === "az") copy.sort((a, b) => a.englishName.localeCompare(b.englishName));
     else if (sort === "za") copy.sort((a, b) => b.englishName.localeCompare(a.englishName));
     else if (sort === "value") copy.sort((a, b) => a.abjadValue - b.abjadValue);
@@ -78,7 +80,7 @@ function SectionA({ importRefreshKey }) {
       if (!q) return true;
       return n.arabicName.includes(query.trim()) || n.englishName.toLowerCase().includes(q);
     });
-  }, [query, category, sort]);
+  }, [query, category, sort, knowledgeMap]);
 
   const handleToggle = (id) => {
     const newOpenId = openId === id ? null : id;
@@ -130,7 +132,7 @@ function SectionA({ importRefreshKey }) {
   }, [listKey, setPageState]);
 
   return (
-    <div className="space-y-4" id="section-a-container">
+    <div className="space-y-4 holy-name-reader" id="section-a-container">
       <div className="flex items-center gap-2 rounded-2xl border px-3 py-2.5" style={{ background: P.bg, borderColor: P.border }}>
         <Search className="w-4 h-4 flex-shrink-0" style={{ color: P.dim }} />
         <input
