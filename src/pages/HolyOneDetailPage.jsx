@@ -154,7 +154,7 @@ export default function HolyOneDetailPage() {
 
   return (
     <PageLayout>
-      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+      <motion.div className="holy-name-reader" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
 
         {/* Back Button */}
         <button
