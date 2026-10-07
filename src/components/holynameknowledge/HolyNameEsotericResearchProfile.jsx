@@ -209,9 +209,16 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
           </p>
         </div>
 
+        <div className="grid grid-cols-3 gap-3">
+          <Field label="Total Abjad Value" labelML="മൊത്തം അബ്ജദ് മൂല്യം">{abjadValue}</Field>
+          <Field label="Abjad Square" labelML="അബ്ജദ് സ്ക്വയർ">{abjadValue * abjadValue}</Field>
+          <Field label="Letter Count" labelML="അക്ഷരസംഖ്യ">{letters.length || ""}</Field>
+        </div>
+        <p className="font-inter text-xs text-white/50">{abjadValue} × {abjadValue} = {abjadValue * abjadValue}</p>
+
         <Field label="Canonical Arabic Name" labelML="അറബി നാമം" arabic>{rec.canonical_arabic_name || rec.arabic_name}</Field>
         <Field label="Transliteration" labelML="ട്രാൻസ്ലിറ്ററേഷൻ">{rec.transliteration}</Field>
-        <Field label="Malayalam Transliteration" labelML="മലയാളം ട്രാൻസ്ലിറ്ററേഷൻ">{rec.malayalam_transliteration}</Field>
+        {language === "ml" && <Field label="Malayalam Transliteration" labelML="മലയാളം ട്രാൻസ്ലിറ്ററേഷൻ">{rec.malayalam_transliteration}</Field>}
         <Field label="English Transliteration" labelML="ഇംഗ്ലീഷ് ട്രാൻസ്ലിറ്ററേഷൻ">{rec.english_transliteration || rec.transliteration}</Field>
 
         <Field label="Meanings given in the imported source" labelML="ഇറക്കുമതി ചെയ്ത സ്രോതസ്സിൽ നൽകിയ അർത്ഥങ്ങൾ">
@@ -223,11 +230,6 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
         <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-xs leading-relaxed text-white/50`}>
           {language === "ml" ? "ഇവ ഇറക്കുമതി ചെയ്ത സ്രോതസ്സിൽ പറയുന്ന അർത്ഥങ്ങളാണ്; സ്വതന്ത്ര സ്രോതസ്സ് പരിശോധന പൂർത്തിയായിട്ടില്ല." : "These meanings are attributed in the imported source; independent source verification is pending."}
         </p>
-
-        <div className="grid grid-cols-2 gap-3">
-          <Field label="Letter Count" labelML="അക്ഷര എണ്ണം">{letters.length || ""}</Field>
-          <Field label="Total Abjad Value" labelML="മൊത്തം എബ്ജദ് മൂല്യം">{abjadValue}</Field>
-        </div>
 
         {/* Individual letter values */}
         <div className="space-y-1">

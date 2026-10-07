@@ -196,8 +196,8 @@ export default function SectionCNames() {
                         style={{ overflow: "hidden" }}
                       >
                         <div className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
-                          <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} />
                           <HolyNameEsotericResearchProfile nameId={card.name_id} />
+                          <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} />
                         </div>
                       </motion.div>
                     )}

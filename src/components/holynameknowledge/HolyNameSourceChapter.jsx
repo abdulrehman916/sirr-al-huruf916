@@ -20,7 +20,8 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       {(chapter.practices || []).map(practice => (
         <article key={practice.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
           <h3 className={`${cls} text-base text-yellow-200`}>{translated(practice.title)}</h3>
-          <p className="font-amiri text-xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{practice.arabic_original}</p>
+          <p className="font-amiri text-xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{practice.arabic_reading || practice.arabic_original}</p>
+          {practice.arabic_reading && <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "ഹറകത്ത് ചേർത്ത വായന; അച്ചടിയിലെ മൂലപാഠം" : "Vowelled reading; original printed wording"}</summary><p className="font-amiri text-lg leading-loose text-right pt-2" dir="rtl" lang="ar">{practice.arabic_original}</p></details>}
           <p className={`${cls} text-sm text-white/85 leading-loose whitespace-pre-wrap`}>{translated(practice.translation)}</p>
           <dl className={`${cls} text-sm space-y-2 text-white/75`}>
             {[[ml ? "എണ്ണം" : "Count", practice.count == null ? "" : String(practice.count)], [ml ? "സമയം" : "Timing", translated(practice.timing)], [ml ? "ഗ്രന്ഥം പറയുന്ന ഫലം" : "Outcome claimed in the source", translated(practice.claim)]].map(([label, value]) => value && (
@@ -29,6 +30,12 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
           </dl>
         </article>
       ))}
+      {(chapter.edition_accounts || []).map(account => <article key={account.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
+        <h3 className={`${cls} text-base text-yellow-200`}>{translated(account.title)}</h3>
+        <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(account.translation)}</p>
+        <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(account.scope_note)}</p>
+        <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "ഈ പതിപ്പിലെ മൂലപാഠം" : "Original in this edition"}</summary><p className="font-inter text-sm leading-relaxed pt-2" lang="en">{account.original_text}</p><p className="pt-2">{account.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {account.printed_page}</p></details>
+      </article>)}
       {chapter.figure?.image_path?.startsWith("/figures/") && <figure className="space-y-2"><img src={chapter.figure.image_path} alt={translated(chapter.figure.caption)} loading="lazy" className="max-w-full w-80 rounded-lg mx-auto" /><figcaption className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.figure.caption)}</figcaption></figure>}
       {chapter.edition_note && <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(chapter.edition_note)}</p>}
       {relatedExternalSources.map(source => (
@@ -41,7 +48,7 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
           <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{translated(source.scope_note)}</p>
           <details className={`${cls} text-xs text-white/50`}>
             <summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary>
-            <p className="pt-2">{source.source_title} · {source.source_author} · {ml ? "വാല്യം" : "Volume"} {source.source_volume} · {ml ? "പേജുകൾ" : "Pages"} {source.source_pages}</p>
+            <p className="pt-2">{source.source_title}{source.source_author && ` · ${source.source_author}`}{source.source_volume && ` · ${ml ? "വാല്യം" : "Volume"} ${source.source_volume}`}{source.source_pages && ` · ${ml ? "പേജുകൾ" : "Pages"} ${source.source_pages}`}{source.source_location && ` · ${source.source_location}`}</p>
           </details>
         </article>
       ))}

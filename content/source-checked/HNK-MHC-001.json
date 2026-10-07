@@ -14,6 +14,18 @@
   },
   "practices": [
     {
+      "id": "source-correspondences",
+      "title": {
+        "ml": "ഗ്രന്ഥത്തിലെ അക്ഷര-മൻസിൽ ബന്ധം",
+        "en": "Letter and lunar-mansion correspondence in the source"
+      },
+      "arabic_original": "ومن له من الحروف حرف الألف ومن المنازل الشرطين",
+      "translation": {
+        "ml": "ഈ പേരുമായി ബന്ധപ്പെട്ട അക്ഷരമായി അലിഫും മൻസിലായി അശ്-ശറതൈനും ഗ്രന്ഥം രേഖപ്പെടുത്തുന്നു. ഇത് പുസ്തകത്തിലെ പരമ്പരാഗത ബന്ധമാണ്; ഓതാനുള്ള സമയമോ ഇപ്പോഴത്തെ ഗ്രഹസ്ഥാനമോ ഈ വാക്യത്തിൽ നൽകിയിട്ടില്ല.",
+        "en": "The source associates the name with alif and the lunar mansion al-Sharatain. This is its traditional correspondence, not a recitation schedule or a statement of the current planetary position."
+      }
+    },
+    {
       "id": "daily-100",
       "count": 100,
       "title": {
@@ -32,7 +44,8 @@
       "claim": {
         "ml": "മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
         "en": "The source claims an opening toward independence from others."
-      }
+      },
+      "arabic_reading": "وَإِذَا اسْتَعْمَلَهُ مَنْ ضَاقَ بِهِ الرِّزْقُ كُلَّ يَوْمٍ مِائَةَ مَرَّةٍ، لَا يَمْضِي عَلَيْهِ أَرْبَعُونَ يَوْمًا حَتَّى يَفْتَحَ اللَّهُ عَلَيْهِ بَابَ الْغِنَى عَنِ النَّاسِ."
     },
     {
       "id": "right-palm-seven",
@@ -53,16 +66,55 @@
       "claim": {
         "ml": "വ്യാപാരവസ്തുക്കളുടെ സംരക്ഷണവും വിറ്റുപോകലും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
         "en": "A source claim concerning protection and sale of merchandise."
-      }
+      },
+      "arabic_reading": "وَإِذَا كَتَبَهُ إِنْسَانٌ فِي كَفِّهِ الْأَيْمَنِ سَبْعَ مَرَّاتٍ، وَطَلَبَ بِهِ الرِّزْقَ، حَفِظَ كُلَّ مَا يَبِيعُهُ وَلَا يَكْسَدُ أَبَدًا."
     }
   ],
   "edition_note": {
-    "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ൽ കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തിന് വ്യത്യസ്തമായ വിവരണവും ഓർമ്മശക്തിയെക്കുറിച്ചുള്ള അവകാശവാദവുമാണ്. അത് ഈ അറബി പതിപ്പിന്റെ വിവർത്തനമായി കലർത്തിയിട്ടില്ല. പേജ് 67-ലെ പ്രസവത്തെക്കുറിച്ചുള്ള മറ്റൊരു ചരിത്രപരമായ അവകാശവാദം ഇവിടെ ചികിത്സാനിർദ്ദേശമായി നൽകിയിട്ടില്ല. ഈ പേരിനുള്ള പ്രത്യേക കളം ഈ പേജിൽ കാണുന്നില്ല.",
-    "en": "Printed page 110 of the supplied English book gives a different account of the seven palm inscriptions, with a memory-related claim. It is not merged into the translation of this Arabic edition. Another historical childbirth claim on page 67 is not presented here as medical guidance. No name-specific square appears on this page."
+    "ml": "നൽകിയ ഇംഗ്ലീഷ് പുസ്തകത്തിന്റെ അച്ചടിച്ച പേജ് 110-ൽ കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തിന് വ്യത്യസ്തമായ വിവരണവും ഓർമ്മശക്തിയെക്കുറിച്ചുള്ള അവകാശവാദവുമാണ്. അത് ഈ അറബി പതിപ്പിന്റെ വിവർത്തനമായി കലർത്തിയിട്ടില്ല. പേജ് 67-ലെ പ്രസവത്തെക്കുറിച്ചുള്ള മറ്റൊരു ചരിത്രപരമായ അവകാശവാദം ഇവിടെ ചികിത്സാനിർദ്ദേശമായി നൽകിയിട്ടില്ല. ഈ പേരിനുള്ള പ്രത്യേക കളം ഈ പേജിൽ കാണുന്നില്ല. വായനയ്ക്ക് സഹായമായി ചേർത്ത ഹറകത്ത് അച്ചടിയിലെ ഹറകത്താണെന്ന അവകാശവാദമില്ല; അച്ചടിയിലെ വാക്കുകൾ വേർതിരിച്ച് കാണാം.",
+    "en": "Printed page 110 of the supplied English book gives a different account of the seven palm inscriptions, with a memory-related claim. It is not merged into the translation of this Arabic edition. Another historical childbirth claim on page 67 is not presented here as medical guidance. No name-specific square appears on this page. Editorial reading vowels are distinguished from the unvowelled printed wording."
   },
   "meaning_arabic": "ومعناه بالعربية القدوس وقيل سبوح",
   "meaning_translation": {
     "ml": "ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം «അൽ-ഖുദ്ദൂസ്»—പരിശുദ്ധൻ. മറ്റൊരു അഭിപ്രായത്തിൽ «സുബ്ബൂഹ്»—എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവൻ.",
     "en": "The source gives al-Quddus, the Most Holy; alternatively Subbuh, the One glorified as free of imperfections."
-  }
+  },
+  "edition_accounts": [
+    {
+      "id": "english-daily-100",
+      "title": {
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: നൂറ് തവണ, നാൽപ്പത് ദിവസം",
+        "en": "English edition: one hundred times for forty days"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 109,
+      "original_text": "If one having difficulty earning a living uses it a hundred times a day for forty days, God will open the gate of independence from others to him.",
+      "translation": {
+        "ml": "ഉപജീവനത്തിൽ പ്രയാസം നേരിടുന്ന ഒരാൾ ഈ പേര് ദിവസേന നൂറ് തവണ നാൽപ്പത് ദിവസം ഉപയോഗിച്ചാൽ അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന് ഈ ഇംഗ്ലീഷ് പതിപ്പ് പറയുന്നു.",
+        "en": "This English edition describes using the name one hundred times daily for forty days and claims that God will open a way to independence from others."
+      },
+      "scope_note": {
+        "ml": "അറബി പതിപ്പിൽ «നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ്» എന്നാണ്; ഇംഗ്ലീഷ് പതിപ്പിൽ «നാൽപ്പത് ദിവസത്തേക്ക്» എന്നാണ്. ദിവസേന എന്നതല്ലാതെ നമസ്കാരശേഷമോ ഘടികാരസമയമോ നൽകിയിട്ടില്ല. രണ്ടും വ്യത്യസ്ത പതിപ്പുകളുടെ അവകാശവാദങ്ങളായി സൂക്ഷിച്ചിരിക്കുന്നു.",
+        "en": "The Arabic edition says before forty days have passed, while this edition says for forty days. Neither specifies a prayer or clock time beyond daily use. Their claims are kept separate."
+      }
+    },
+    {
+      "id": "english-palm-seven",
+      "title": {
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തും ഓർമ്മയെക്കുറിച്ചുള്ള അവകാശവാദവും",
+        "en": "English edition: seven palm inscriptions and a memory claim"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 110,
+      "original_text": "If one writes it on one’s right palm seven times and licks it off on an empty stomach, one will memorize everything one hears and never forget it.",
+      "translation": {
+        "ml": "പേര് വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതുകയും ഒഴിഞ്ഞ വയറ്റിൽ അത് നക്കിയെടുക്കുകയും ചെയ്താൽ കേൾക്കുന്നതെല്ലാം ഓർമ്മിക്കുകയും ഒരിക്കലും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം.",
+        "en": "This edition claims that seven inscriptions on the right palm, licked off on an empty stomach, allow a person to remember everything heard and never forget it."
+      },
+      "scope_note": {
+        "ml": "അറബി പതിപ്പിലെ വ്യാപാരവസ്തുക്കളെക്കുറിച്ചുള്ള വിവരണത്തിൽനിന്ന് ഇതു വ്യത്യസ്തമാണ്. ഇവിടെ പറഞ്ഞത് ഒഴിഞ്ഞ വയറ്റിൽ എന്ന അവസ്ഥയാണ്; പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ നൽകിയിട്ടില്ല. ഇത് തെളിയിക്കപ്പെട്ട ഓർമ്മശക്തി വർധനരീതിയായോ എഴുതാൻ ഉപയോഗിച്ച വസ്തു കഴിക്കാനുള്ള നിർദേശമായോ നൽകിയിട്ടില്ല.",
+        "en": "This differs from the Arabic edition’s merchandise account. It specifies an empty stomach, not a day or clock time. It is presented as a historical claim, not an established memory technique or advice to ingest a writing substance."
+      }
+    }
+  ]
 }

@@ -39,5 +39,61 @@
       "ml": "ഇത് ഈ പേരും ഉൾപ്പെടുന്ന സംയുക്ത പാഠത്തിന്റെ അവസാനവാക്യമാണ്; ഈ പേരിന് മാത്രമുള്ള പൂർണ്ണ ദുആയല്ല. ഈ ഭാഗത്ത് ആവർത്തനസംഖ്യയോ നിശ്ചിത സമയമോ കളത്തിന്റെ സംഖ്യകളോ നൽകിയിട്ടില്ല.",
       "en": "These are closing words from a collective text that includes this name, not a complete name-specific prayer. No repetition count, scheduled time or square values are supplied in this passage."
     }
+  },
+  {
+    "id": "birhatiah-meaning-muslim-487a",
+    "related_name_ids": [
+      "HNK-MHC-001"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "صحيح مسلم",
+    "source_author": "مسلم بن الحجاج",
+    "source_location": "487a · Book 4, Hadith 253",
+    "source_urls": [
+      "https://sunnah.com/muslim:487a"
+    ],
+    "title": {
+      "ml": "അർഥവുമായി ബന്ധപ്പെട്ട ഹദീസ്: റുകൂഇലെയും സുജൂദിലെയും ദിക്റ്",
+      "en": "Hadith related to the meaning: remembrance in bowing and prostration"
+    },
+    "context_arabic": "كَانَ يَقُولُ فِي رُكُوعِهِ وَسُجُودِهِ",
+    "context_translation": {
+      "ml": "നബി ﷺ തന്റെ റുകൂഇലും സുജൂദിലും ഇങ്ങനെ പറയാറുണ്ടായിരുന്നുവെന്ന് ആഇശ رضي الله عنها വിവരിക്കുന്നു.",
+      "en": "Aisha reports that the Prophet used to say the following in bowing and prostration."
+    },
+    "arabic_original": "سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ",
+    "translation": {
+      "ml": "സകല ന്യൂനതകളിൽനിന്നും മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവനും പരിശുദ്ധനുമായവൻ; മലക്കുകളുടെയും റൂഹിന്റെയും രക്ഷിതാവ്.",
+      "en": "Glorified above imperfection, Most Holy, Lord of the angels and the Spirit."
+    },
+    "scope_note": {
+      "ml": "ഈ ഹദീസ് «സുബ്ബൂഹ്», «ഖുദ്ദൂസ്» എന്നീ അറബി അർഥങ്ങളോടാണ് ബന്ധിപ്പിച്ചിരിക്കുന്നത്; ബർഹത്തിയ എന്ന പദം ഹദീസിൽ വരുന്നതായി പറയുന്നില്ല. സമയം: റുകൂഉം സുജൂദും. ഈ റിപ്പോർട്ടിൽ പ്രത്യേക ആവർത്തനസംഖ്യയോ കളമോ നൽകിയിട്ടില്ല.",
+      "en": "This is linked to the Arabic meanings Subbuh and Quddus; it does not establish Birhatiah as a word in the hadith. Occasion: bowing and prostration. The report gives no specific repetition count or square."
+    }
+  },
+  {
+    "id": "birhatiah-meaning-quran-59-23",
+    "related_name_ids": [
+      "HNK-MHC-001"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Al-Hashr 59:23 — excerpt",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html"
+    ],
+    "title": {
+      "ml": "ഖുദ്ദൂസ് എന്ന അറബി അർഥവുമായി ബന്ധപ്പെട്ട ആയത്ത്",
+      "en": "A verse related to the Arabic meaning Quddus"
+    },
+    "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ",
+    "translation": {
+      "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ രാജാവും പരിശുദ്ധനും സമാധാനത്തിന്റെയും സുരക്ഷയുടെയും ഉറവിടവുമാണ്.",
+      "en": "He is Allah, besides whom there is no deity: the King, the Most Holy, the Source of Peace."
+    },
+    "scope_note": {
+      "ml": "ഇത് അൽ-ഹശ്ർ 59:23-ലെ ആദ്യ ഭാഗമാണ്. ബന്ധം ഖുദ്ദൂസ് എന്ന അർഥത്തിനാണ്; ബർഹത്തിയ എന്ന പദം ഈ ആയത്തിൽ ഇല്ല. ഇതിൽ പ്രത്യേക ഓതൽഎണ്ണമോ സമയമോ കളമോ നിർദേശിക്കുന്നില്ല.",
+      "en": "This is the opening portion of Al-Hashr 59:23, linked through the meaning Quddus. Birhatiah is not a word in this verse. No special recitation count, time or square is prescribed here."
+    }
   }
 ]
