@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
+import { transform } from 'esbuild';
 
 const root = process.cwd();
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
@@ -57,4 +58,17 @@ const langSelector=fs.readFileSync(path.join(root,'src/components/holynameknowle
 assert.ok(langSelector.includes('{ id: "ml", label: "മലയാളം" }'));
 assert.ok(langSelector.includes('{ id: "en", label: "English" }'));
 assert.ok(!langSelector.includes('{ id: "tr"'), 'Turkish must not appear in the language controls');
-console.log('PASS: distinct bilingual source methods, matching original Arabic letters, 28-card shared deduplication, compact source shelf and existing ML/EN toggle.');
+for (const file of [
+  'src/components/holynameknowledge/SectionCNames.jsx',
+  'src/components/holynameknowledge/HolyNameSourceChapter.jsx',
+  'src/components/holynameknowledge/HolyNameEsotericResearchProfile.jsx',
+  'src/components/holynameknowledge/BirhatiahConciseReferences.jsx',
+  'src/components/holynameknowledge/BirhatiahSharedImportedMaterial.jsx',
+  'src/components/holynameknowledge/BirhatiahOutsideVariants.jsx',
+  'src/components/holynameknowledge/BirhatiahOnlineNumericalComparison.jsx',
+  'src/components/holynameknowledge/BirhatiahCollectiveCard.jsx',
+]) {
+  const source = fs.readFileSync(path.join(root, file), 'utf8');
+  await transform(source, { loader: 'jsx', sourcefile: file, target: 'es2022' });
+}
+console.log('PASS: 28-card bilingual topics and source fidelity, variant-safe deduplication, concise references and JSX parsing.');
