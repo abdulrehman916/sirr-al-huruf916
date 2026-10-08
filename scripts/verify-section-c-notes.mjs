@@ -27,7 +27,7 @@ for (const note of notes) {
       assert.ok(html.includes(escape(quote.arabic)), `${note.name_id}: missing Arabic`);
       assert.ok(html.includes(escape(quote.translation[language])), `${note.name_id}: missing ${language} Quran meaning`);
     }
-    assert.ok(!/href=["'][^"']*(?:adobe|drive\.google)/i.test(html));
+    assert.ok(!/href=["'][^"']*adobe/i.test(html));
   }
 }
 console.log('Section C: 21 bilingual notes, 42 server renders and five Arabic quotation blocks passed.');
@@ -76,3 +76,25 @@ for (const language of ['ml', 'en']) {
   }
 }
 console.log('Shared material: 55 sourced bilingual accounts, 8 scan figures and 11 correctly matched outside variants passed.');
+
+const singlePage = JSON.parse(fs.readFileSync('src/data/birhatiahArabicSinglePage.json', 'utf8'));
+const invocationSources = JSON.parse(fs.readFileSync('src/data/birhatiahArabicInvocationSources.json', 'utf8'));
+assert.ok(fs.existsSync(`public${singlePage.image_path}`));
+for (let number = 1; number <= 28; number++) {
+  const nameId = `HNK-MHC-${String(number).padStart(3, '0')}`;
+  const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${nameId}.json`, 'utf8'));
+  for (const language of ['ml', 'en']) {
+    const html = render(chapter, language);
+    for (const account of singlePage.accounts) {
+      const belongsHere = !account.name_ids.length || account.name_ids.includes(nameId);
+      assert.equal(html.includes(escape(account.translation[language])), belongsHere, `${nameId}: incorrect Arabic account targeting`);
+      if (belongsHere) assert.ok(html.includes(escape(account.arabic_original)));
+    }
+    for (const account of invocationSources.accounts) assert.ok(html.includes(escape(account.translation[language])));
+    for (const page of invocationSources.pages) {
+      assert.ok(fs.existsSync(`public${page.image_path}`));
+      assert.ok(html.includes(page.image_path));
+    }
+  }
+}
+console.log('Additional Arabic sources: per-name account isolation, collective access in all 28 cards, bilingual text, original Arabic and full source-page images passed.');

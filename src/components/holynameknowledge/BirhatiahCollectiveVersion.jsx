@@ -2,6 +2,8 @@ import version from "@/data/birhatiahCollectiveVersion.json";
 import bibliography from "@/data/birhatiahBibliography.json";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import BirhatiahSharedBookAccounts from './BirhatiahSharedBookAccounts';
+import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
+import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources';
 
 export default function BirhatiahCollectiveVersion() {
   const { language } = useHolyNamesLanguage();
@@ -12,6 +14,8 @@ export default function BirhatiahCollectiveVersion() {
   if (version.review_status !== "checked_against_supplied_scan" || version.names.length !== 28) return null;
   return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
     <BirhatiahSharedBookAccounts />
+    <BirhatiahArabicSinglePage />
+    <BirhatiahArabicInvocationSources />
     {account?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
       <h3 className={`${cls} text-lg text-yellow-200`}>{account.title[language]}</h3>
       <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
