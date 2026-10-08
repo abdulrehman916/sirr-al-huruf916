@@ -7,142 +7,170 @@
     {
       "order": 1,
       "arabic_original": "برهتيه",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بِرْهَتِيْهٍ"
     },
     {
       "order": 2,
       "arabic_original": "كرير",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "كَرِيرٍ"
     },
     {
       "order": 3,
       "arabic_original": "تتليه",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "تَتْلِيهٍ"
     },
     {
       "order": 4,
       "arabic_original": "طوران",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "طُورَانٍ"
     },
     {
       "order": 5,
       "arabic_original": "مزجل",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "مَزْجَلٍ"
     },
     {
       "order": 6,
       "arabic_original": "بزجل",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَزْجَلٍ"
     },
     {
       "order": 7,
       "arabic_original": "ترقب",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "تَرْقَبٍ"
     },
     {
       "order": 8,
       "arabic_original": "برهش",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَرْهَشٍ"
     },
     {
       "order": 9,
       "arabic_original": "غلمش",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "غَلْمَشٍ"
     },
     {
       "order": 10,
       "arabic_original": "خوطير",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "خُوطِيرٍ"
     },
     {
       "order": 11,
       "arabic_original": "قلنهود",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "قَلْنَهُودٍ"
     },
     {
       "order": 12,
       "arabic_original": "برشان",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَرْشَانٍ"
     },
     {
       "order": 13,
       "arabic_original": "كظهير",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "كَظْهِيرٍ"
     },
     {
       "order": 14,
       "arabic_original": "نمو شلخ",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "نمو شلخ"
     },
     {
       "order": 15,
       "arabic_original": "برهيولا",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَرْهَيُولَا"
     },
     {
       "order": 16,
       "arabic_original": "بشكيلخ",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَشْكَيْلَخٍ"
     },
     {
       "order": 17,
       "arabic_original": "قزمز",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "قَزْمَزٍ"
     },
     {
       "order": 18,
       "arabic_original": "أنغلليط",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "أَنْغَلَلِيطٍ"
     },
     {
       "order": 19,
       "arabic_original": "قبرات",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "قَبَرَاتٍ"
     },
     {
       "order": 20,
       "arabic_original": "غياها",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "غَيَاهَا"
     },
     {
       "order": 21,
       "arabic_original": "كيدهولا",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "كَيْدَهُولَا"
     },
     {
       "order": 22,
       "arabic_original": "شمخاهر",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "شَمْخَاهِرٍ"
     },
     {
       "order": 23,
       "arabic_original": "شمخاهير",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "شَمْخَاهِيرٍ"
     },
     {
       "order": 24,
       "arabic_original": "شمهارير",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "شمهارير"
     },
     {
       "order": 25,
       "arabic_original": "بكهطونيه",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بكهطونيه"
     },
     {
       "order": 26,
       "arabic_original": "بشارش",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "بَشَارِشٍ"
     },
     {
       "order": 27,
       "arabic_original": "طونش",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "طُونَشٍ"
     },
     {
       "order": 28,
       "arabic_original": "شمخا باروخ",
-      "repetitions": 2
+      "repetitions": 2,
+      "reader_form": "شَمْخَا بَارُوخٍ"
     }
   ],
   "continuation_words": [

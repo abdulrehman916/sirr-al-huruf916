@@ -202,7 +202,8 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
       </div>
 
       {/* 1 — PRIMARY INFORMATION */}
-      <Block title="Primary Information" titleML="പ്രാഥമിക വിവരങ്ങൾ" icon={BookOpen} accent={P.text}>
+      <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} />
+      <Block title="Primary Information" titleML="നാമവിവരങ്ങളും അക്ഷരമൂല്യങ്ങളും" icon={BookOpen} accent={P.text} defaultOpen={false}>
         <div className="text-center py-2 rounded-lg" style={{ background: P.bgHi, border: `1px solid ${P.borderHi}` }}>
           <p className="font-amiri text-[2.2rem] font-bold leading-[2.2] selectable" style={{ color: P.text, textShadow: "0 0 20px rgba(212,175,55,0.30)" }} dir="rtl">
             {rec.canonical_arabic_name || rec.arabic_name}
@@ -277,7 +278,7 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
         </>)}
       </Block>
 
-      <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} />
+
 
       {/* 2 — CURRENT SCHOLARLY DATA */}
       <Block title="Current Scholarly Data" titleML="നിലവിലുള്ള പണ്ഡിത വിവരങ്ങൾ" icon={ScrollText} accent={P.text} defaultOpen={false}>

@@ -1,66 +1,27 @@
-import version from "@/data/birhatiahCollectiveVersion.json";
-import bibliography from "@/data/birhatiahBibliography.json";
-import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
-import BirhatiahSharedBookAccounts from './BirhatiahSharedBookAccounts';
-import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
-import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources';
-import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
-import BirhatiahExpandedVersions from './BirhatiahExpandedVersions';
+import version from '@/data/birhatiahCollectiveVersion.json';
+import invocation from '@/data/birhatiahArabicInvocationSources.json';
+import book from '@/data/birhatiahSharedBookAccounts.json';
+import BirhatiahCollectiveReference from './BirhatiahCollectiveReference';
+import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 
 export default function BirhatiahCollectiveVersion() {
   const { language } = useHolyNamesLanguage();
-  const ml = language === "ml";
-  const cls = ml ? "font-malayalam" : "font-inter";
-  const excerpt = version.arabic_source_excerpt;
-  const account = version.collective_source_account;
-  if (version.review_status !== "checked_against_supplied_scan" || version.names.length !== 28) return null;
-  return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
-    <BirhatiahSharedBookAccounts />
-    <BirhatiahArabicSinglePage />
-    <BirhatiahArabicInvocationSources />
-    <BirhatiahFullSourceChapter />
-    <BirhatiahExpandedVersions />
-    {account?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
-      <h3 className={`${cls} text-lg text-yellow-200`}>{account.title[language]}</h3>
-      <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
-      <p className={`${cls} text-white/90 leading-loose`} lang={language}>{account.translation[language]}</p>
-      <p className={`${cls} text-sm text-white/65 leading-loose`}>{account.scope_note[language]}</p>
-      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></details>
-    </section>}
-    {bibliography.review_status === "checked_against_digital_text" && <section className="space-y-2">
-      <h3 className={`${cls} text-base text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തെക്കുറിച്ചുള്ള പുറംസ്രോതസ്സ്" : "External bibliographic context"}</h3>
-      <p className={`${cls} text-sm text-white/85 leading-loose`}>{bibliography.translation[language]}</p>
-      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{bibliography.source_title}</p></details>
-    </section>}
-    <h3 className={`${cls} text-lg text-yellow-200`}>{version.title[language]}</h3>
-    <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.introduction[language]}</p>
-    <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-      {version.names.map(name => <li key={name.order} className="flex items-center gap-3 rounded-lg border border-yellow-500/15 px-3 py-2">
-        <span className="font-inter text-xs text-white/50">{String(name.order).padStart(2, "0")}</span>
-        <span className="flex-1 font-amiri text-2xl text-yellow-200 text-right leading-loose" dir="rtl" lang="ar">{name.arabic_original}</span>
-        <span className="font-inter text-sm text-white/70">×{name.repetitions}</span>
-      </li>)}
-    </ol>
-    <h4 className={`${cls} text-yellow-200`}>{ml ? "തുടർന്ന് വരുന്ന പദങ്ങൾ — അച്ചടിയിലെ അറബി രൂപം" : "Following words — printed Arabic forms"}</h4>
-    <p className="font-amiri text-2xl text-right text-white/90 leading-loose" dir="rtl" lang="ar">{version.continuation_words.join(" · ")}</p>
-    <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.continuation_translation[language]}</p>
-    <p className="font-amiri text-2xl text-right text-yellow-200 leading-loose" dir="rtl" lang="ar">{version.closing_arabic}</p>
-    <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.closing_translation[language]}</p>
-    {excerpt?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
-      <h4 className={`${cls} text-yellow-200`}>{ml ? "അറബി ഗ്രന്ഥത്തിലെ അവസാന വാക്യം" : "Closing sentence in the Arabic source"}</h4>
-      <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{excerpt.reading}</p>
-      <p className={`${cls} text-white/90 leading-loose`} lang={language}>{excerpt.translation[language]}</p>
-      <details className={`${cls} text-sm text-white/65`}>
-        <summary className="cursor-pointer">{ml ? "ഗ്രന്ഥം പറയുന്ന പാഠപരമ്പര" : "Transmission attributed by the book"}</summary>
-        <div className="pt-3 space-y-3">
-          <p className="font-amiri text-xl leading-loose text-right" dir="rtl" lang="ar">{excerpt.attribution_original}</p>
-          <p className="leading-loose" lang={language}>{excerpt.attribution_translation[language]}</p>
-          <p className="leading-loose">{excerpt.scope_note[language]}</p>
-          <p>{excerpt.source_title} · {ml ? "പേജ്" : "Page"} {excerpt.printed_page}</p>
-        </div>
-      </details>
-    </section>}
-    <details className={`${cls} text-sm text-white/65`}><summary className="cursor-pointer">{ml ? "പതിപ്പിനെക്കുറിച്ചുള്ള കുറിപ്പ്" : "Edition note"}</summary><p className="pt-2 leading-loose">{version.scope_note[language]}</p></details>
-    <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സും ഇംഗ്ലീഷ് മൂലപാഠവും" : "Source and original English text"}</summary><div className="pt-2 space-y-3"><p>{version.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {version.printed_page}</p><p className="font-inter leading-relaxed" lang="en">{version.introduction_original}</p><p className="font-inter leading-relaxed" lang="en">{version.continuation_original}</p></div></details>
+  const ml = language === 'ml';
+  const t = value => value?.[language] || '';
+  if (version.review_status !== 'checked_against_supplied_scan' || version.names.length !== 28) return null;
+  return <article className={`space-y-6 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="birhatiah-collective-guide">
+    <section className="space-y-3" data-reader-section="formula">
+      <h3 className="text-xl text-yellow-200">{ml ? 'ബർഹത്തിയ മന്ത്രം — 28 നാമങ്ങൾ' : 'Birhatiah formula — twenty-eight names'}</h3>
+      <p className="text-white/80 leading-loose">{ml ? 'ഈ നാമക്രമത്തിൽ ഓരോ പേരും രണ്ടുതവണ വീതമാണ്. വായിക്കാനായി ആവർത്തനം താഴെ എഴുതിയിരിക്കുന്നു.' : 'In this version each name is repeated twice. Both repetitions are written out below.'}</p>
+      <p className="font-amiri text-3xl sm:text-4xl text-right text-yellow-100 leading-[2.4] rounded-xl border border-yellow-500/20 p-4" dir="rtl" lang="ar">{version.names.flatMap(name => [name.reader_form || name.arabic_original, name.reader_form || name.arabic_original]).join('، ')}</p>
+      <details className="space-y-3"><summary className="cursor-pointer text-yellow-200">{ml ? 'ഈ ചെറിയ പതിപ്പിന്റെ തുടർപാഠവും അർഥവും' : 'Continuation and meaning of this short version'}</summary><p className="font-amiri text-2xl text-right leading-loose text-yellow-100" dir="rtl" lang="ar">{version.continuation_words.join(' · ')}</p><p className="text-white/85 leading-loose">{t(version.continuation_translation)}</p><p className="font-amiri text-3xl text-right leading-loose text-yellow-100" dir="rtl" lang="ar">{version.closing_arabic}</p><p className="text-white/85 leading-loose">{t(version.closing_translation)}</p><a href="/figures/birhatiah-manba-p75.png" target="_blank" rel="noreferrer" className="block text-yellow-100 underline">{ml ? 'അറബി തുടർവാക്യം ഹറകത്തോടുകൂടി വായിക്കുക' : 'Read the Arabic continuation with its printed vowels'}</a><img src="/figures/birhatiah-manba-p75.png" loading="lazy" alt={ml ? 'ബർഹത്തിയ അറബി തുടർപാഠം' : 'Arabic Birhatiah continuation'} className="w-full max-w-xl mx-auto rounded-lg" /></details>
+    </section>
+    <section className="rounded-xl bg-yellow-500/5 p-4 space-y-3"><h3 className="text-lg text-yellow-200">{ml ? 'പരമ്പരാഗതമായി പറയുന്ന ഗുണങ്ങളും ആവശ്യങ്ങളും' : 'Traditional benefits and petitions'}</h3><p className="text-white/90 leading-loose">{ml ? 'ആവശ്യം നിറവേറുക, ഉപജീവനം, സംരക്ഷണം, വിഷമം മാറുക, ആത്മീയ സഹായം എന്നിവയാണ് ബന്ധപ്പെട്ട പ്രാർത്ഥനകളിലെ പ്രധാന വിഷയങ്ങൾ. ഓരോ ആവശ്യത്തിനുമുള്ള രീതിയും എണ്ണവും പ്രത്യേകം വായിക്കുക.' : 'Fulfilment of a need, livelihood, protection, relief from worry and spiritual assistance are central themes of the related prayers. Read the method and count for each purpose separately.'}</p></section>
+    <section className="border-t border-yellow-500/20 pt-4 space-y-3" data-reader-section="yasin-method"><h3 className="text-lg text-yellow-200">{ml ? 'രീതി 1 — യാസീനോടൊപ്പം, 35 ആവർത്തനങ്ങൾ' : 'Method 1 — with Ya Sin, thirty-five repetitions'}</h3><ol className="list-decimal pl-6 leading-loose space-y-2 text-white/90"><li>{ml ? '28 നാമങ്ങളും സൂറത്ത് യാസീനോടൊപ്പം വായിക്കുക.' : 'Read the twenty-eight names with Surah Ya Sin.'}</li><li>{ml ? 'തുടർന്ന് നാമങ്ങൾ 35 തവണ വായിക്കുക.' : 'Then read the names thirty-five times.'}</li><li>{ml ? 'സ്വന്തം ആവശ്യം തേടുക.' : 'Pursue the need.'}</li></ol></section>
+    <section className="border-t border-yellow-500/20 pt-4 space-y-3" data-reader-section="seven-day-method"><h3 className="text-lg text-yellow-200">{ml ? 'രീതി 2 — ഏഴുദിവസത്തെ സംയുക്ത റിയാദ, 45 ആവർത്തനങ്ങൾ' : 'Method 2 — seven-day collective discipline, forty-five repetitions'}</h3><ol className="list-decimal pl-6 leading-loose space-y-2 text-white/90"><li>{ml ? 'ഏഴുദിവസത്തെ നോമ്പ്; മാംസവും മൃഗോൽപ്പന്നങ്ങളും ഒഴിവാക്കുക എന്ന നിബന്ധനയാണ് ഈ രീതിയിലുള്ളത്.' : 'This method specifies seven days of fasting and avoiding meat and animal products.'}</li><li>{ml ? 'ഭക്ഷണമായി ഉപ്പില്ലാത്ത യവറൊട്ടിയും ഒലിവെണ്ണയും പരാമർശിക്കുന്നു.' : 'The described food is unsalted barley bread and olive oil.'}</li><li>{ml ? 'ശരീരവും വസ്ത്രങ്ങളും ഉപയോഗിക്കുന്ന വസ്തുക്കളും ശുദ്ധമായി സൂക്ഷിക്കുക.' : 'Keep the body, clothing and materials clean.'}</li><li>{ml ? '28 നാമങ്ങളും ദിവസേന റോസ്‌വാട്ടർ, കസ്തൂരി, കുങ്കുമം ഉപയോഗിച്ച് എഴുതുന്ന പരാമർശമുണ്ട്.' : 'The account describes writing the twenty-eight names daily using rosewater, musk and saffron.'}</li><li>{ml ? 'ധൂപത്തോടൊപ്പം സംയുക്ത മന്ത്രം 45 തവണ വായിക്കുക.' : 'Read the collective formula forty-five times with incense.'}</li></ol></section>
+    <details className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><summary className="cursor-pointer text-yellow-200">{ml ? 'ദിവസമനുസരിച്ച് പരാമർശിച്ച ധൂപങ്ങൾ' : 'Incense mentioned for each day'}</summary><div className="space-y-3">{book.accounts.filter(entry => Number(entry.id.slice(-3)) >= 10 && Number(entry.id.slice(-3)) <= 16).map(entry => <p key={entry.id} className="text-white/85 leading-loose">{t(entry.translation)}</p>)}</div></details>
+    <section className="border-t border-yellow-500/20 pt-4 space-y-3"><h3 className="text-lg text-yellow-200">{ml ? 'ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ' : 'Points to observe'}</h3><ul className="list-disc pl-6 leading-loose space-y-2 text-white/85"><li>{ml ? '35 ആവർത്തനരീതിയും ഏഴുദിവസത്തെ 45 ആവർത്തനരീതിയും വേറിട്ടവയാണ്.' : 'The thirty-five-reading method and the seven-day forty-five-reading method are separate.'}</li><li>{ml ? 'ആത്മാർഥത, ഹലാൽ വരുമാനം, ശരീര–വസ്ത്രശുദ്ധി, മതബാധ്യതകൾ, വാക്കിലും പ്രവൃത്തിയിലും മര്യാദ എന്നിവ പൊതുനിബന്ധനകളാണ്.' : 'Sincerity, lawful livelihood, bodily and clothing cleanliness, religious duties and respectful conduct are general conditions.'}</li><li>{ml ? 'കഴുകിയ എഴുത്ത് കുടിക്കുന്ന ചരിത്രപരാമർശങ്ങൾ തയ്യാറാക്കാനോ കുടിക്കാനോ ഉള്ള നിർദേശമല്ല.' : 'Historical accounts of ingesting washed inscriptions are not preparation or ingestion instructions.'}</li></ul></section>
+    <details className="rounded-xl border border-yellow-500/25 p-4 space-y-5" data-reader-section="extended-prayer"><summary className="cursor-pointer text-yellow-200">{ml ? 'ദീർഘ ദുആയും സജ്റും — വേറിട്ട പൂർണ്ണ അറബി പാഠം' : 'Extended prayer and zajr — separate complete Arabic text'}</summary>{invocation.transcription.map(block => <article key={block.id} className="space-y-3 border-t border-white/10 pt-3"><h4 className="text-yellow-100">{t(block.title)}</h4><p className="font-amiri text-2xl sm:text-3xl leading-[2.2] text-right text-white/90 whitespace-pre-wrap" dir="rtl" lang="ar">{block.arabic}</p><p className="text-white/85 leading-loose">{t(block.translation)}</p></article>)}<details className="space-y-3"><summary className="cursor-pointer text-yellow-100">{ml ? 'അച്ചടിയിലെ ഹറകത്തോടുകൂടിയ പൂർണ്ണ പാഠം' : 'Complete text with the printed vowels'}</summary>{invocation.pages.map(page => <a key={page.pdf_page} href={page.image_path} target="_blank" rel="noreferrer"><img src={page.image_path} loading="lazy" alt={`Arabic prayer ${page.pdf_page}`} className="w-full max-w-xl mx-auto rounded-lg mb-4" /></a>)}</details></details>
+    <details className="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"><summary className="cursor-pointer text-yellow-200">{ml ? 'റഫറൻസുകൾ, മറ്റു രീതികൾ, പാഠഭേദങ്ങൾ, മൂലപേജുകൾ' : 'References, further methods, variants and source pages'}</summary><BirhatiahCollectiveReference /></details>
   </article>;
 }

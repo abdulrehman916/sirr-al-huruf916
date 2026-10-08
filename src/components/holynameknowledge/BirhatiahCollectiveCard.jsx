@@ -20,8 +20,8 @@ export default function BirhatiahCollectiveCard({ cards }) {
       <ChevronDown className={`w-5 h-5 text-yellow-200 transition-transform ${open ? "rotate-180" : ""}`} />
     </button>
     {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
-      <p className={`${cls} text-sm text-white/80 leading-loose`}>{ml ? "ഇത് വ്യക്തിഗത നാമങ്ങളുടെ കാർഡുകളിൽനിന്ന് വേർതിരിച്ച സംയുക്ത പാഠത്തിനുള്ള കാർഡാണ്. നൽകിയ പുസ്തകത്തിലെ ആദ്യ പതിപ്പിന്റെ പേരുകളും തുടർവാക്യത്തിന്റെ മലയാളം/ഇംഗ്ലീഷ് വിവർത്തനവും താഴെ കാണാം. കൂടുതൽ നീണ്ട മറ്റു പതിപ്പുകളുടെ പൂർണ അക്ഷരപരിശോധനയും വിവർത്തനവും ഇനിയും പൂർത്തിയായിട്ടില്ല." : "This card separates collective material from the individual names. It includes the first version's names from the supplied book and a Malayalam/English translation of its continuation. Full letter-by-letter review and translation of other longer versions remain incomplete."}</p>
       <BirhatiahCollectiveVersion />
+      <details className="rounded-xl border border-white/15 p-4 space-y-4"><summary className="cursor-pointer text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</summary>
       {completeList && <div className="space-y-3">
         <h3 className={`${cls} text-yellow-200`}>{ml ? "നിലവിലെ 28 നാമങ്ങളുടെ ക്രമം" : "Order of the current 28 name cards"}</h3>
         <p className="font-amiri text-2xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{ordered.map(c => c.canonical_arabic_name || c.arabic_name).join(" · ")}</p>
@@ -37,7 +37,7 @@ export default function BirhatiahCollectiveCard({ cards }) {
         <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{ml ? "ഈ ഭാഗം പ്രത്യേക സമയം, ഓതൽഎണ്ണം, കളത്തിന്റെ സംഖ്യകൾ എന്നിവ നൽകുന്നില്ല. പേരുകൾക്കുള്ള മുഴുവൻ സംയുക്ത നിർദേശമായി ഇത് ഉപയോഗിച്ചിട്ടില്ല." : "This passage supplies no specific time, repetition count or square values. It is not used as a complete collective prescription."}</p>
         <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{source.source_title} · {source.source_author} · {source.source_volume} · {source.source_pages}</p></details>
       </article>}
-      <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{ml ? "പകർപ്പുകളുടെ എണ്ണം സ്വതന്ത്ര സ്ഥിരീകരണങ്ങളുടെ എണ്ണമല്ല. ആരൊക്കെ ഉദ്ധരിച്ചുവെന്ന് കൃത്യമായ ഗ്രന്ഥപരാമർശത്തോടെ രേഖപ്പെടുത്തും; സ്ഥിരീകരിക്കാത്ത വ്യക്തികളുടെ എണ്ണം നൽകിയിട്ടില്ല." : "Copy counts are not counts of independent attestations. Attributions require precise book references; no unsupported number of authorities is supplied."}</p>
+      </details>
     </div>}
   </section>;
 }
