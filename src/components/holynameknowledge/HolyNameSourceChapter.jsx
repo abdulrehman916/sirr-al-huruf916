@@ -4,7 +4,7 @@ import methodVerses from '@/data/birhatiahMethodVerses.json';
 import meaningReadings from '@/data/birhatiahMeaningReadings.json';
 import externalSources from '@/data/holyNamesExternalSources.json';
 import collectiveText from '@/data/birhatiahCollectiveVersion.json';
-import HolyNameReferenceChapter from './HolyNameReferenceChapter';
+import BirhatiahConciseReferences from './BirhatiahConciseReferences';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import { BirhatiahOnlineNameComparison } from './BirhatiahOnlineNumericalComparison';
 
@@ -143,6 +143,6 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
         </div>
       </details>)}
     </div>
-    <details className="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"><summary className="cursor-pointer text-yellow-200">{ml ? 'മൂലഗ്രന്ഥപേജുകളും പാഠഭേദങ്ങളും' : 'Original pages and textual variants'}</summary><HolyNameReferenceChapter chapter={chapter} nameId={nameId} /></details>
+    <details className="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"><summary className="cursor-pointer text-yellow-200">{ml ? 'മൂലഗ്രന്ഥപേജുകളും പാഠഭേദങ്ങളും' : 'Original pages and textual variants'}</summary><BirhatiahConciseReferences chapter={chapter} nameId={nameId} /></details>
   </section>;
 }
