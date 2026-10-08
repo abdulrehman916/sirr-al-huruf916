@@ -1,121 +1,161 @@
 {
   "name_id": "HNK-MHC-001",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 67,
-  "source_name_form": "بِرْهَتِيْهٍ",
-  "scope_note": {
-    "ml": "ഇവ ഗ്രന്ഥത്തിൽ രേഖപ്പെടുത്തിയ വിശ്വാസപരമായ അവകാശവാദങ്ങളാണ്. മൂലപാഠം പരിശോധിച്ചതാണ്; ഫലങ്ങൾ തെളിയിക്കപ്പെട്ടുവെന്ന അർത്ഥമില്ല. ഈ ഭാഗം ആദ്യ പേരിന്റെ തിരഞ്ഞെടുത്ത നിർദ്ദേശങ്ങൾ മാത്രമാണ്.",
-    "en": "These are historical claims recorded in the source. The source text was checked; the outcomes are not established. This section covers selected instructions for the first name."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം അനുസരിച്ചുള്ള ഹരക്കത്തുകളാണ് മുകളിൽ നൽകിയിരിക്കുന്നത്. ഈ പതിപ്പിൽ അവസാന അക്ഷരം ه ആണ്. നിലവിലെ കാർഡിന്റെ ة എന്ന അക്ഷരവും കണക്കുകളും മാറ്റിയിട്ടില്ല. അർത്ഥം: പരിശുദ്ധൻ; മറ്റൊരു അഭിപ്രായത്തിൽ മഹത്വപ്പെടുത്തപ്പെട്ടവൻ.",
-    "en": "The vowel marks follow the pronunciation instructions in this edition, which ends the name with ه. The existing card spelling with ة and its calculations are preserved. Meaning: Most Holy; alternatively, Most Glorified."
+    "en": "The vowel marks follow the pronunciation instructions in this edition, which ends the name with ه. The existing card spelling with ة and its calculations are preserved. Meaning: Most Holy; alternatively, Most Glorified.",
+    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം അനുസരിച്ചുള്ള ഹരക്കത്തുകളാണ് മുകളിൽ നൽകിയിരിക്കുന്നത്. ഈ പതിപ്പിൽ അവസാന അക്ഷരം ه ആണ്. നിലവിലെ കാർഡിന്റെ ة എന്ന അക്ഷരവും കണക്കുകളും മാറ്റിയിട്ടില്ല. അർത്ഥം: പരിശുദ്ധൻ; മറ്റൊരു അഭിപ്രായത്തിൽ മഹത്വപ്പെടുത്തപ്പെട്ടവൻ."
   },
   "practices": [
     {
       "id": "source-correspondences",
       "title": {
-        "ml": "ഗ്രന്ഥത്തിലെ അക്ഷര-മൻസിൽ ബന്ധം",
-        "en": "Letter and lunar-mansion correspondence in the source"
+        "en": "Letter and lunar-mansion correspondence in the source",
+        "ml": "ഗ്രന്ഥത്തിലെ അക്ഷര-മൻസിൽ ബന്ധം"
       },
-      "arabic_original": "ومن الحروف حرف الألف ومن المنازل الشرطين",
       "translation": {
-        "ml": "ഈ പേരുമായി ബന്ധപ്പെട്ട അക്ഷരമായി അലിഫും മൻസിലായി അശ്-ശറതൈനും ഗ്രന്ഥം രേഖപ്പെടുത്തുന്നു. ഇത് പുസ്തകത്തിലെ പരമ്പരാഗത ബന്ധമാണ്; ഓതാനുള്ള സമയമോ ഇപ്പോഴത്തെ ഗ്രഹസ്ഥാനമോ ഈ വാക്യത്തിൽ നൽകിയിട്ടില്ല.",
-        "en": "The source associates the name with alif and the lunar mansion al-Sharatain. This is its traditional correspondence, not a recitation schedule or a statement of the current planetary position."
-      }
+        "en": "The source associates the name with alif and the lunar mansion al-Sharatain. This is its traditional correspondence, not a recitation schedule or a statement of the current planetary position.",
+        "ml": "ഈ പേരുമായി ബന്ധപ്പെട്ട അക്ഷരമായി അലിഫും മൻസിലായി അശ്-ശറതൈനും ഗ്രന്ഥം രേഖപ്പെടുത്തുന്നു. ഇത് പുസ്തകത്തിലെ പരമ്പരാഗത ബന്ധമാണ്; ഓതാനുള്ള സമയമോ ഇപ്പോഴത്തെ ഗ്രഹസ്ഥാനമോ ഈ വാക്യത്തിൽ നൽകിയിട്ടില്ല."
+      },
+      "arabic_original": "ومن الحروف حرف الألف ومن المنازل الشرطين"
     },
     {
       "id": "daily-100",
+      "claim": {
+        "en": "The source claims an opening toward independence from others.",
+        "ml": "മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം."
+      },
       "count": 100,
       "title": {
-        "ml": "ദിവസേന നൂറ് തവണ — ഗ്രന്ഥത്തിലെ പരാമർശം",
-        "en": "Daily repetition — source account"
-      },
-      "arabic_original": "وإذا استعمله من ضاق به الرزق كل يوم مائة مرة لا يمضي عليه أربعون يوما حتى يفتح الله عليه باب الغنى عن الناس",
-      "translation": {
-        "ml": "ഉപജീവനം പ്രയാസത്തിലായ ഒരാൾ ഇത് ദിവസേന നൂറ് തവണ ഉപയോഗിച്ചാൽ, നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ് അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറന്നുകൊടുക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
-        "en": "The source says that someone facing difficulty earning a living uses the name one hundred times daily, and claims that within forty days God opens a way to independence from others."
+        "en": "Daily repetition — source account",
+        "ml": "ദിവസേന നൂറ് തവണ — ഗ്രന്ഥത്തിലെ പരാമർശം"
       },
       "timing": {
-        "ml": "ദിവസേന. പ്രത്യേക ഘടികാരസമയമോ നമസ്കാരശേഷമോ ഇവിടെ പറഞ്ഞിട്ടില്ല.",
-        "en": "Daily. No clock time or prayer is specified in this passage."
+        "en": "Daily. No clock time or prayer is specified in this passage.",
+        "ml": "ദിവസേന. പ്രത്യേക ഘടികാരസമയമോ നമസ്കാരശേഷമോ ഇവിടെ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
-        "en": "The source claims an opening toward independence from others."
+      "translation": {
+        "en": "The source says that someone facing difficulty earning a living uses the name one hundred times daily, and claims that within forty days God opens a way to independence from others.",
+        "ml": "ഉപജീവനം പ്രയാസത്തിലായ ഒരാൾ ഇത് ദിവസേന നൂറ് തവണ ഉപയോഗിച്ചാൽ, നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ് അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറന്നുകൊടുക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു."
       },
-      "arabic_reading": "وَإِذَا اسْتَعْمَلَهُ مَنْ ضَاقَ بِهِ الرِّزْقُ كُلَّ يَوْمٍ مِائَةَ مَرَّةٍ، لَا يَمْضِي عَلَيْهِ أَرْبَعُونَ يَوْمًا حَتَّى يَفْتَحَ اللَّهُ عَلَيْهِ بَابَ الْغِنَى عَنِ النَّاسِ."
+      "arabic_reading": "وَإِذَا اسْتَعْمَلَهُ مَنْ ضَاقَ بِهِ الرِّزْقُ كُلَّ يَوْمٍ مِائَةَ مَرَّةٍ، لَا يَمْضِي عَلَيْهِ أَرْبَعُونَ يَوْمًا حَتَّى يَفْتَحَ اللَّهُ عَلَيْهِ بَابَ الْغِنَى عَنِ النَّاسِ.",
+      "arabic_original": "وإذا استعمله من ضاق به الرزق كل يوم مائة مرة لا يمضي عليه أربعون يوما حتى يفتح الله عليه باب الغنى عن الناس"
     },
     {
       "id": "right-palm-seven",
+      "claim": {
+        "en": "The source claims memory and freedom from forgetting.",
+        "ml": "ഓർമ്മയും മറവിയില്ലായ്മയും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം."
+      },
       "count": 7,
       "title": {
-        "ml": "വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ — അറബി പതിപ്പ്",
-        "en": "Seven inscriptions on the right palm — Arabic edition"
-      },
-      "arabic_original": "وإذا كتبه إنسان في كفه الأيمن سبع مرات ولحسه على الريق حفظ كل ما يسمعه ولا ينساه أبدا",
-      "translation": {
-        "ml": "ഒരാൾ ഈ പേര് വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതി ഒഴിഞ്ഞ വയറ്റിൽ അത് നക്കിയെടുത്താൽ, കേൾക്കുന്നതെല്ലാം ഓർമ്മിക്കുകയും ഒരിക്കലും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ അവകാശവാദം. ഇത് ഓർമ്മശക്തി വർധിപ്പിക്കാനുള്ള തെളിയിക്കപ്പെട്ട മാർഗമോ എഴുതാൻ ഉപയോഗിച്ച വസ്തു കഴിക്കാനുള്ള നിർദേശമോ അല്ല.",
-        "en": "The historical passage claims that seven inscriptions on the right palm, licked off on an empty stomach, enable remembering everything heard without forgetting. This is not an established memory method or advice to ingest a writing substance."
+        "en": "Seven inscriptions on the right palm — Arabic edition",
+        "ml": "വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ — അറബി പതിപ്പ്"
       },
       "timing": {
-        "ml": "ഒഴിഞ്ഞ വയറ്റിൽ എന്നാണ് മൂലപാഠം. ദിവസമോ ഘടികാരസമയമോ പറയുന്നില്ല.",
-        "en": "The source specifies an empty stomach, not a day or clock time."
+        "en": "The source specifies an empty stomach, not a day or clock time.",
+        "ml": "ഒഴിഞ്ഞ വയറ്റിൽ എന്നാണ് മൂലപാഠം. ദിവസമോ ഘടികാരസമയമോ പറയുന്നില്ല."
       },
-      "claim": {
-        "ml": "ഓർമ്മയും മറവിയില്ലായ്മയും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
-        "en": "The source claims memory and freedom from forgetting."
+      "translation": {
+        "en": "The historical passage claims that seven inscriptions on the right palm, licked off on an empty stomach, enable remembering everything heard without forgetting. This is not an established memory method or advice to ingest a writing substance.",
+        "ml": "ഒരാൾ ഈ പേര് വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതി ഒഴിഞ്ഞ വയറ്റിൽ അത് നക്കിയെടുത്താൽ, കേൾക്കുന്നതെല്ലാം ഓർമ്മിക്കുകയും ഒരിക്കലും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ അവകാശവാദം. ഇത് ഓർമ്മശക്തി വർധിപ്പിക്കാനുള്ള തെളിയിക്കപ്പെട്ട മാർഗമോ എഴുതാൻ ഉപയോഗിച്ച വസ്തു കഴിക്കാനുള്ള നിർദേശമോ അല്ല."
       },
-      "arabic_reading": "وَإِذَا كَتَبَهُ إِنْسَانٌ فِي كَفِّهِ الْأَيْمَنِ سَبْعَ مَرَّاتٍ وَلَحِسَهُ عَلَى الرِّيقِ حَفِظَ كُلَّ مَا يَسْمَعُهُ وَلَا يَنْسَاهُ أَبَدًا"
+      "arabic_reading": "وَإِذَا كَتَبَهُ إِنْسَانٌ فِي كَفِّهِ الْأَيْمَنِ سَبْعَ مَرَّاتٍ وَلَحِسَهُ عَلَى الرِّيقِ حَفِظَ كُلَّ مَا يَسْمَعُهُ وَلَا يَنْسَاهُ أَبَدًا",
+      "arabic_original": "وإذا كتبه إنسان في كفه الأيمن سبع مرات ولحسه على الريق حفظ كل ما يسمعه ولا ينساه أبدا"
     }
   ],
+  "scope_note": {
+    "en": "These are historical claims recorded in the source. The source text was checked; the outcomes are not established. This section covers selected instructions for the first name.",
+    "ml": "ഇവ ഗ്രന്ഥത്തിൽ രേഖപ്പെടുത്തിയ വിശ്വാസപരമായ അവകാശവാദങ്ങളാണ്. മൂലപാഠം പരിശോധിച്ചതാണ്; ഫലങ്ങൾ തെളിയിക്കപ്പെട്ടുവെന്ന അർത്ഥമില്ല. ഈ ഭാഗം ആദ്യ പേരിന്റെ തിരഞ്ഞെടുത്ത നിർദ്ദേശങ്ങൾ മാത്രമാണ്."
+  },
   "edition_note": {
-    "ml": "അറബി പേജ് 67-ലും ഇംഗ്ലീഷ് പേജ് 110-ലും കൈപ്പത്തിയിലെ ഏഴ് എഴുത്ത് ഓർമ്മയുമായി ബന്ധപ്പെട്ടതാണ്. മുൻപ് ഉണ്ടായ വ്യാപാരവസ്തുക്കളെക്കുറിച്ചുള്ള വായനാ തെറ്റ് മൂലപേജ് വീണ്ടും നോക്കി തിരുത്തി. പ്രസവവുമായി ബന്ധപ്പെട്ട മറ്റൊരു ചരിത്രപരമായ പരാമർശം ചികിത്സാനിർദേശമായി നൽകിയിട്ടില്ല. ഈ പേജിൽ പേരിന് പ്രത്യേക കളം കാണുന്നില്ല.",
-    "en": "Arabic page 67 and English page 110 both associate the seven palm inscriptions with memory. A previous misreading about merchandise was corrected after rechecking the scan. A further historical childbirth passage is not presented as medical guidance. No name-specific square appears on this page."
+    "en": "Arabic page 67 and English page 110 both associate the seven palm inscriptions with memory. A previous misreading about merchandise was corrected after rechecking the scan. A further historical childbirth passage is not presented as medical guidance. No name-specific square appears on this page.",
+    "ml": "അറബി പേജ് 67-ലും ഇംഗ്ലീഷ് പേജ് 110-ലും കൈപ്പത്തിയിലെ ഏഴ് എഴുത്ത് ഓർമ്മയുമായി ബന്ധപ്പെട്ടതാണ്. മുൻപ് ഉണ്ടായ വ്യാപാരവസ്തുക്കളെക്കുറിച്ചുള്ള വായനാ തെറ്റ് മൂലപേജ് വീണ്ടും നോക്കി തിരുത്തി. പ്രസവവുമായി ബന്ധപ്പെട്ട മറ്റൊരു ചരിത്രപരമായ പരാമർശം ചികിത്സാനിർദേശമായി നൽകിയിട്ടില്ല. ഈ പേജിൽ പേരിന് പ്രത്യേക കളം കാണുന്നില്ല."
   },
+  "printed_page": 67,
+  "source_notes": [
+    {
+      "id": "english-extended-001",
+      "title": {
+        "en": "First-name pronunciation and historical childbirth account",
+        "ml": "ആദ്യ നാമത്തിന്റെ വായനയും പ്രസവത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശവും"
+      },
+      "name_id": "HNK-MHC-001",
+      "translation": {
+        "en": "The measure is tif‘alih. Its description gives ba/kasra, ra/sukun, ha/fatha, ta/kasra, ya/sukun and ha with two kasras. This English edition says the final letter of the remaining names is likewise nunated with two kasras. Correspondences are alif and al-Sharatain. Meanings are ‘Most Holy’ or ‘Most Glorified.’\nIt records a historical childbirth claim involving thirty-five inscriptions on a clean white dish, washing the inscription off and giving it to a woman having difficulty delivering. Thirty-five counts inscriptions. This is not a substitute for obstetric or emergency care. Its hundred-times-daily-for-forty-days livelihood account and seven-palm-inscription memory account appear separately above.",
+        "ml": "വസ്ന് tif‘alih. ب-യ്ക്ക് കസ്റ, ر-യ്ക്ക് സുകൂൻ, ه-യ്ക്ക് ഫത്ഹ, ت-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം രണ്ട് കസ്റയുള്ള ه എന്നാണ് ഈ പതിപ്പിലെ വായനാവിവരണം. തുടർന്ന് വരുന്ന പേരുകളുടെ അവസാന അക്ഷരത്തിനും ഇത്തരത്തിലുള്ള കസ്റ തൻവീൻ ഉണ്ടെന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിന്റെ പൊതുവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ا; മൻസിൽ അശ്ശറതൈൻ. ‘പരിശുദ്ധൻ’, മറ്റൊരു അഭിപ്രായത്തിൽ ‘മഹത്വപ്പെടുത്തപ്പെട്ടവൻ’ എന്നാണ് അർഥം.\nശുദ്ധമായ വെളുത്ത പാത്രത്തിൽ 35 തവണ എഴുതി കഴുകിയെടുത്ത് പ്രസവപ്രയാസമുള്ള സ്ത്രീക്ക് കുടിക്കാൻ നൽകുന്നതിനെ പ്രസവം നടക്കുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്ന ചരിത്രപരമായ ചികിത്സാപരാമർശം ഇതിലുണ്ട്. 35 എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്. ഇത് പ്രസവസംബന്ധമായ ചികിത്സയ്ക്കോ അടിയന്തരസഹായത്തിനോ പകരമുള്ള മാർഗമായി നൽകിയിട്ടില്ല. ദിവസേന 100 തവണ നാൽപ്പത് ദിവസം എന്ന ഉപജീവനപരാമർശവും കൈപ്പത്തിയിലെ ഏഴ് എഴുത്ത് എന്ന ഓർമ്മപരാമർശവും മുകളിലെ പ്രത്യേക ഭാഗങ്ങളിൽ നൽകിയിരിക്കുന്നു."
+      },
+      "printed_page": "109–110",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية القدوس وقيل سبوح",
-  "meaning_translation": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം «അൽ-ഖുദ്ദൂസ്»—പരിശുദ്ധൻ. മറ്റൊരു അഭിപ്രായത്തിൽ «സുബ്ബൂഹ്»—എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവൻ.",
-    "en": "The source gives al-Quddus, the Most Holy; alternatively Subbuh, the One glorified as free of imperfections."
-  },
   "edition_accounts": [
     {
       "id": "english-daily-100",
       "title": {
-        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: നൂറ് തവണ, നാൽപ്പത് ദിവസം",
-        "en": "English edition: one hundred times for forty days"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 109,
-      "original_text": "If one having difficulty earning a living uses it a hundred times a day for forty days, God will open the gate of independence from others to him.",
-      "translation": {
-        "ml": "ഉപജീവനത്തിൽ പ്രയാസം നേരിടുന്ന ഒരാൾ ഈ പേര് ദിവസേന നൂറ് തവണ നാൽപ്പത് ദിവസം ഉപയോഗിച്ചാൽ അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന് ഈ ഇംഗ്ലീഷ് പതിപ്പ് പറയുന്നു.",
-        "en": "This English edition describes using the name one hundred times daily for forty days and claims that God will open a way to independence from others."
+        "en": "English edition: one hundred times for forty days",
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: നൂറ് തവണ, നാൽപ്പത് ദിവസം"
       },
       "scope_note": {
-        "ml": "അറബി പതിപ്പിൽ «നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ്» എന്നാണ്; ഇംഗ്ലീഷ് പതിപ്പിൽ «നാൽപ്പത് ദിവസത്തേക്ക്» എന്നാണ്. ദിവസേന എന്നതല്ലാതെ നമസ്കാരശേഷമോ ഘടികാരസമയമോ നൽകിയിട്ടില്ല. രണ്ടും വ്യത്യസ്ത പതിപ്പുകളുടെ അവകാശവാദങ്ങളായി സൂക്ഷിച്ചിരിക്കുന്നു.",
-        "en": "The Arabic edition says before forty days have passed, while this edition says for forty days. Neither specifies a prayer or clock time beyond daily use. Their claims are kept separate."
-      }
+        "en": "The Arabic edition says before forty days have passed, while this edition says for forty days. Neither specifies a prayer or clock time beyond daily use. Their claims are kept separate.",
+        "ml": "അറബി പതിപ്പിൽ «നാൽപ്പത് ദിവസം കഴിയുന്നതിനുമുമ്പ്» എന്നാണ്; ഇംഗ്ലീഷ് പതിപ്പിൽ «നാൽപ്പത് ദിവസത്തേക്ക്» എന്നാണ്. ദിവസേന എന്നതല്ലാതെ നമസ്കാരശേഷമോ ഘടികാരസമയമോ നൽകിയിട്ടില്ല. രണ്ടും വ്യത്യസ്ത പതിപ്പുകളുടെ അവകാശവാദങ്ങളായി സൂക്ഷിച്ചിരിക്കുന്നു."
+      },
+      "translation": {
+        "en": "This English edition describes using the name one hundred times daily for forty days and claims that God will open a way to independence from others.",
+        "ml": "ഉപജീവനത്തിൽ പ്രയാസം നേരിടുന്ന ഒരാൾ ഈ പേര് ദിവസേന നൂറ് തവണ നാൽപ്പത് ദിവസം ഉപയോഗിച്ചാൽ അല്ലാഹു മറ്റുള്ളവരെ ആശ്രയിക്കാതെ കഴിയാനുള്ള വഴി തുറക്കുമെന്ന് ഈ ഇംഗ്ലീഷ് പതിപ്പ് പറയുന്നു."
+      },
+      "printed_page": 109,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one having difficulty earning a living uses it a hundred times a day for forty days, God will open the gate of independence from others to him."
     },
     {
       "id": "english-palm-seven",
       "title": {
-        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തും ഓർമ്മയെക്കുറിച്ചുള്ള അവകാശവാദവും",
-        "en": "English edition: seven palm inscriptions and a memory claim"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 110,
-      "original_text": "If one writes it on one’s right palm seven times and licks it off on an empty stomach, one will memorize everything one hears and never forget it.",
-      "translation": {
-        "ml": "പേര് വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതുകയും ഒഴിഞ്ഞ വയറ്റിൽ അത് നക്കിയെടുക്കുകയും ചെയ്താൽ കേൾക്കുന്നതെല്ലാം ഓർമ്മിക്കുകയും ഒരിക്കലും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം.",
-        "en": "This edition claims that seven inscriptions on the right palm, licked off on an empty stomach, allow a person to remember everything heard and never forget it."
+        "en": "English edition: seven palm inscriptions and a memory claim",
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പ്: കൈപ്പത്തിയിലെ ഏഴ് എഴുത്തും ഓർമ്മയെക്കുറിച്ചുള്ള അവകാശവാദവും"
       },
       "scope_note": {
-        "ml": "അറബി പേജ് 67-ലെ പരാമർശവുമായി ഇത് ഒത്തുപോകുന്നു. ഒഴിഞ്ഞ വയറ്റിൽ എന്ന അവസ്ഥയാണ് പറയുന്നത്; പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ ഇല്ല. ഇത് എഴുതാൻ ഉപയോഗിച്ച വസ്തു കഴിക്കാനുള്ള നിർദേശമല്ല.",
-        "en": "This agrees with the account on Arabic page 67. An empty stomach is specified, without a day or clock time. It is not advice to ingest a writing substance."
-      }
+        "en": "This agrees with the account on Arabic page 67. An empty stomach is specified, without a day or clock time. It is not advice to ingest a writing substance.",
+        "ml": "അറബി പേജ് 67-ലെ പരാമർശവുമായി ഇത് ഒത്തുപോകുന്നു. ഒഴിഞ്ഞ വയറ്റിൽ എന്ന അവസ്ഥയാണ് പറയുന്നത്; പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ ഇല്ല. ഇത് എഴുതാൻ ഉപയോഗിച്ച വസ്തു കഴിക്കാനുള്ള നിർദേശമല്ല."
+      },
+      "translation": {
+        "en": "This edition claims that seven inscriptions on the right palm, licked off on an empty stomach, allow a person to remember everything heard and never forget it.",
+        "ml": "പേര് വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതുകയും ഒഴിഞ്ഞ വയറ്റിൽ അത് നക്കിയെടുക്കുകയും ചെയ്താൽ കേൾക്കുന്നതെല്ലാം ഓർമ്മിക്കുകയും ഒരിക്കലും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം."
+      },
+      "printed_page": 110,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one writes it on one’s right palm seven times and licks it off on an empty stomach, one will memorize everything one hears and never forget it."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 109,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ا; മൻസിൽ al-Sharatain. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ا and lunar mansion al-Sharatain. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بِرْهَتِيهٍ",
+      "arabic_original": "برهتيه",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
   ],
+  "source_name_form": "بِرْهَتِيْهٍ",
+  "meaning_translation": {
+    "en": "The source gives al-Quddus, the Most Holy; alternatively Subbuh, the One glorified as free of imperfections.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം «അൽ-ഖുദ്ദൂസ്»—പരിശുദ്ധൻ. മറ്റൊരു അഭിപ്രായത്തിൽ «സുബ്ബൂഹ്»—എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവൻ."
+  },
   "source_review_revision": "scan-recheck-2026-10-08"
 }

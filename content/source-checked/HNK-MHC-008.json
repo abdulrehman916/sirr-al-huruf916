@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-008",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 69,
-  "source_name_form": "بَرْهَشٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
-  },
   "name_note": {
-    "ml": "അർത്ഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ, അവന് ഉത്തരം നൽകേണമേ; മറ്റൊരു അഭിപ്രായം: ശക്തനായവനേ. ഗ്രന്ഥം ഇതിനെ മീകാഈലിന്റെ തസ്ബീഹ് എന്ന് വിശേഷിപ്പിക്കുന്നു; ഇത് ഗ്രന്ഥത്തിന്റെ വിവരണമാണ്.",
-    "en": "Meaning: O Allah, here is Your servant, answer him; alternatively, O Omnipotent One. The source describes it as Mika’il’s glorification; this is the book’s account."
+    "en": "Meaning: O Allah, here is Your servant, answer him; alternatively, O Omnipotent One. The source describes it as Mika’il’s glorification; this is the book’s account.",
+    "ml": "അർത്ഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ, അവന് ഉത്തരം നൽകേണമേ; മറ്റൊരു അഭിപ്രായം: ശക്തനായവനേ. ഗ്രന്ഥം ഇതിനെ മീകാഈലിന്റെ തസ്ബീഹ് എന്ന് വിശേഷിപ്പിക്കുന്നു; ഇത് ഗ്രന്ഥത്തിന്റെ വിവരണമാണ്."
   },
   "practices": [
     {
       "id": "combined-recitation",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": 1209,
       "title": {
-        "ml": "ഏഴാം പേരിനൊപ്പം — ഗ്രന്ഥപരാമർശം",
-        "en": "Combined with the seventh name — source account"
-      },
-      "arabic_original": "ومن واظب على الاسمين ترقب برهش ١٢٠٩ وكل عند كل مائة على من أراد حضر إليه سريعا",
-      "translation": {
-        "ml": "തർഖബ്, ബർഹശ് എന്നീ രണ്ടു പേരുകൾ ചേർത്ത് 1209 തവണ വായിക്കുന്നതും ഓരോ നൂറ് തവണയ്ക്കുശേഷമുള്ള നിർദ്ദേശവും ഗ്രന്ഥത്തിൽ പരാമർശിക്കുന്നു. ആവശ്യപ്പെടുന്ന ആളെ എത്തിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. അഗർവുഡ്, കുന്തിരിക്കം എന്നിവയും അർദ്ധരാത്രിയും ഈ സംയുക്തപരാമർശത്തിൽ നൽകിയിട്ടുണ്ട്.",
-        "en": "The source records combined repetition of Tarqab and Barhash 1209 times, with a charge after each hundred, claiming to bring the requested person. Aloeswood, frankincense and midnight are specified in this combined account."
+        "en": "Combined with the seventh name — source account",
+        "ml": "ഏഴാം പേരിനൊപ്പം — ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "അർദ്ധരാത്രി; ഇത് രണ്ടു പേരുകളും ചേർന്നുള്ള പരാമർശമാണ്.",
-        "en": "Midnight; this timing belongs to the combined account."
+        "en": "Midnight; this timing belongs to the combined account.",
+        "ml": "അർദ്ധരാത്രി; ഇത് രണ്ടു പേരുകളും ചേർന്നുള്ള പരാമർശമാണ്."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source records combined repetition of Tarqab and Barhash 1209 times, with a charge after each hundred, claiming to bring the requested person. Aloeswood, frankincense and midnight are specified in this combined account.",
+        "ml": "തർഖബ്, ബർഹശ് എന്നീ രണ്ടു പേരുകൾ ചേർത്ത് 1209 തവണ വായിക്കുന്നതും ഓരോ നൂറ് തവണയ്ക്കുശേഷമുള്ള നിർദ്ദേശവും ഗ്രന്ഥത്തിൽ പരാമർശിക്കുന്നു. ആവശ്യപ്പെടുന്ന ആളെ എത്തിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. അഗർവുഡ്, കുന്തിരിക്കം എന്നിവയും അർദ്ധരാത്രിയും ഈ സംയുക്തപരാമർശത്തിൽ നൽകിയിട്ടുണ്ട്."
+      },
+      "arabic_original": "ومن واظب على الاسمين ترقب برهش ١٢٠٩ وكل عند كل مائة على من أراد حضر إليه سريعا"
     }
   ],
-  "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
   },
+  "edition_note": {
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+  },
+  "printed_page": 69,
+  "source_notes": [
+    {
+      "id": "english-extended-008",
+      "title": {
+        "en": "Eighth-name pronunciation and context of the paired account",
+        "ml": "എട്ടാം പേരിന്റെ വായനയും സംയുക്ത രീതിയുടെ പൂർണ്ണ സാഹചര്യവും"
+      },
+      "name_id": "HNK-MHC-008",
+      "translation": {
+        "en": "The measure is taf‘al: ba/fatha, ra/sukun, ha/fatha and a nunated shin. Correspondences are ha (ح) and al-Nathra. Meanings are ‘O Allah, it is Your servant, answer him’ or ‘O Omnipotent One’; the book traditionally attributes the name as Mika’il’s glorification.\nIt also records an end-of-Ramadan account involving eleven yellow-paper inscriptions, sandalwood, further talismans and a yellow-branched date palm, with a claim of illness affecting a target; the book itself adds ‘fear God Most High.’ Exact transcription of the talismans is not established here.\nThe paired seventh/eighth-name account specifies 1209 repetitions, a charge after every hundred, aloeswood and frankincense and midnight. The English printed servant names read Zaḥrayl and Shaytayil; exact Arabic letters and vowels are not established here. The checked count remains 1209, not 1309.",
+        "ml": "വസ്ന് taf‘al. ب-യ്ക്ക് ഫത്ഹ, ر-യ്ക്ക് സുകൂൻ, ه-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ش എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ح; മൻസിൽ അന്നഥ്റാ. ‘അല്ലാഹുവേ, ഇത് നിന്റെ ദാസനാണ്, അവന് ഉത്തരം നൽകുക’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘സർവശക്തനായവനേ’ എന്നും അർഥം നൽകുന്നു. മീകാഈലിന്റെ തസ്ബീഹെന്ന പരമ്പരാഗത ബന്ധിപ്പിക്കലും ഇതിലുണ്ട്.\nറമദാനിന്റെ അവസാനം മഞ്ഞക്കടലാസിൽ 11 എഴുത്ത്, ചന്ദനധൂപം, മറ്റു ത്വൽസമുകൾ, മഞ്ഞക്കൊമ്പുകളുള്ള ഈന്തപ്പനയിൽ തൂക്കൽ എന്നിവയെ ലക്ഷ്യവ്യക്തിക്ക് രോഗങ്ങൾ ഉണ്ടാകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്ന ഒരു പരാമർശവും ഗ്രന്ഥത്തിലുണ്ട്; ‘അല്ലാഹുവിനെ ഭയപ്പെടുക’ എന്ന വാചകവും അതോടൊപ്പം അച്ചടിച്ചിട്ടുണ്ട്. ആ ത്വൽസമുകളുടെ കൃത്യമായ പകർപ്പ് ഇവിടെ സ്ഥിരീകരിച്ചിട്ടില്ല.\nഏഴും എട്ടും പേരുകൾ ചേർത്ത് 1209 തവണ വായിക്കുക, ഓരോ നൂറിനുശേഷവും സേവകരോട് ആവശ്യപ്പെട്ട വ്യക്തിയെ കൊണ്ടുവരാൻ ആവശ്യപ്പെടുക, അഗിലും കുന്തിരിക്കവും ധൂപമാക്കുക, അർദ്ധരാത്രി വായിക്കുക എന്നിങ്ങനെയുള്ള പരാമർശം തുടർന്ന് വരുന്നു. സേവകരുടെ പേരുകളുടെ ഇംഗ്ലീഷ് അച്ചടിവായന Zaḥrayl, Shaytayil എന്നാണ്; കൃത്യമായ അറബി അക്ഷരരൂപവും ഹറകത്തും സ്ഥിരീകരിച്ചിട്ടില്ല. 1209 എന്ന എണ്ണം പതിപ്പുകളുമായി ഒത്തുനോക്കിയതാണ്; 1309 ആക്കിയിട്ടില്ല."
+      },
+      "printed_page": "117–118",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية يا الله عبدك أجب وقيل يا قادر",
+  "source_name_form": "بَرْهَشٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ; ഉത്തരം നൽകേണമേ. മറ്റൊരു അഭിപ്രായത്തിൽ: ശക്തനായവനേ.",
-    "en": "The source’s Arabic meaning: O Allah, here is Your servant; answer him. Alternatively, O Powerful One."
-  }
+    "en": "The source’s Arabic meaning: O Allah, here is Your servant; answer him. Alternatively, O Powerful One.",
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: അല്ലാഹുവേ, നിന്റെ ദാസൻ ഇതാ; ഉത്തരം നൽകേണമേ. മറ്റൊരു അഭിപ്രായത്തിൽ: ശക്തനായവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 117,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ح; മൻസിൽ al-Nathra. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ح and lunar mansion al-Nathra. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بَرْهَشٍ",
+      "arabic_original": "برهش",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

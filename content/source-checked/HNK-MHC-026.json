@@ -1,90 +1,113 @@
 {
   "name_id": "HNK-MHC-026",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 73,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا قادر على كل شيء",
-  "meaning_translation": {
-    "ml": "എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ.",
-    "en": "O He who is able to do all things."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": null,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن خواصه أن من داوم على قراءته من غير عدد أمن من العطش وتطهرت روحه وصفت من الخواطر النفسانية وانطلق لسانه بإذن الله تعالى",
-      "translation": {
-        "ml": "നിശ്ചിത സംഖ്യയില്ലാതെ തുടർച്ചയായി വായിക്കുന്നതിനെ ഗ്രന്ഥം ദാഹത്തിൽനിന്നുള്ള സംരക്ഷണം, ആത്മാവിന്റെ ശുദ്ധി, മനസ്സിന്റെ ചാഞ്ചാട്ടങ്ങളിൽനിന്നുള്ള വ്യക്തത, സംസാരത്തിലെ ഒഴുക്ക് എന്നിവയുമായി ബന്ധിപ്പിക്കുന്നു. ദാഹത്തെക്കുറിച്ചുള്ളത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്; വെള്ളം കുടിക്കേണ്ടതില്ലെന്ന നിർദ്ദേശമല്ല.",
-        "en": "The source associates persistent repetition without a fixed count with protection against thirst, purity of spirit, freedom from capricious thoughts and eloquence. Its thirst-related claim is not a direction to forgo drinking water."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source associates persistent repetition without a fixed count with protection against thirst, purity of spirit, freedom from capricious thoughts and eloquence. Its thirst-related claim is not a direction to forgo drinking water.",
+        "ml": "നിശ്ചിത സംഖ്യയില്ലാതെ തുടർച്ചയായി വായിക്കുന്നതിനെ ഗ്രന്ഥം ദാഹത്തിൽനിന്നുള്ള സംരക്ഷണം, ആത്മാവിന്റെ ശുദ്ധി, മനസ്സിന്റെ ചാഞ്ചാട്ടങ്ങളിൽനിന്നുള്ള വ്യക്തത, സംസാരത്തിലെ ഒഴുക്ക് എന്നിവയുമായി ബന്ധിപ്പിക്കുന്നു. ദാഹത്തെക്കുറിച്ചുള്ളത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്; വെള്ളം കുടിക്കേണ്ടതില്ലെന്ന നിർദ്ദേശമല്ല."
+      },
+      "arabic_original": "ومن خواصه أن من داوم على قراءته من غير عدد أمن من العطش وتطهرت روحه وصفت من الخواطر النفسانية وانطلق لسانه بإذن الله تعالى"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 73,
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا قادر على كل شيء",
   "edition_accounts": [
     {
       "id": "english-name-and-correspondence-137",
       "title": {
-        "ml": "പേരിന്റെ വായനയും അക്ഷര–മൻസിൽ ബന്ധവും",
-        "en": "Pronunciation and letter–mansion correspondence"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 137,
-      "original_text": "The twenty-sixth name is Bashārishin, has the scale of manasir. The letter corresponding to it is the pointed dad, and the mansion corresponding to it is Fargh al-Muqaddam. In Arabic it means ‘O He who is able to do all things.’",
-      "translation": {
-        "ml": "ഇരുപത്താറാം പേര് ബശാരിശിൻ എന്നാണ് ഈ പതിപ്പിന്റെ വിവരണം. ب-യ്ക്ക് ഫത്ഹ, ش-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا, ر-യ്ക്ക് കസ്റ, അവസാനം തൻവീനുള്ള ش എന്നാണ് അക്ഷരങ്ങളുടെ വായന വിശദീകരിക്കുന്നത്. ബന്ധിപ്പിച്ച അക്ഷരം ض (ദാദ്); മൻസിൽ അൽ-ഫർഗ് അൽ-മുഖദ്ദം. അറബി അർഥം: എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ. ഗ്രന്ഥം പേരിന്റെ വസ്നായി manasir എന്ന് രേഖപ്പെടുത്തുന്നു.",
-        "en": "This edition calls the twenty-sixth name Bashārishin. Its spelling instructions give ba with fatha, shin with fatha, alif, ra with kasra and a nunated shin. It associates the name with dad and Fargh al-Muqaddam and gives the Arabic meaning ‘O He who is able to do all things.’ The printed measure is manasir."
+        "en": "Pronunciation and letter–mansion correspondence",
+        "ml": "പേരിന്റെ വായനയും അക്ഷര–മൻസിൽ ബന്ധവും"
       },
       "scope_note": {
-        "ml": "ഇവ പുസ്തകത്തിലെ ഉച്ചാരണവിവരണവും പരമ്പരാഗത ബന്ധങ്ങളുമാണ്. ഇത് ഓതാനുള്ള സമയനിർദേശമല്ല. നിലവിലുള്ള കാർഡിന്റെ പേരും കണക്കുകളും മാറ്റിയിട്ടില്ല.",
-        "en": "These are the book’s pronunciation instructions and traditional correspondences, not a recitation schedule. Existing card spelling and calculations are preserved."
-      }
+        "en": "These are the book’s pronunciation instructions and traditional correspondences, not a recitation schedule. Existing card spelling and calculations are preserved.",
+        "ml": "ഇവ പുസ്തകത്തിലെ ഉച്ചാരണവിവരണവും പരമ്പരാഗത ബന്ധങ്ങളുമാണ്. ഇത് ഓതാനുള്ള സമയനിർദേശമല്ല. നിലവിലുള്ള കാർഡിന്റെ പേരും കണക്കുകളും മാറ്റിയിട്ടില്ല."
+      },
+      "translation": {
+        "en": "This edition calls the twenty-sixth name Bashārishin. Its spelling instructions give ba with fatha, shin with fatha, alif, ra with kasra and a nunated shin. It associates the name with dad and Fargh al-Muqaddam and gives the Arabic meaning ‘O He who is able to do all things.’ The printed measure is manasir.",
+        "ml": "ഇരുപത്താറാം പേര് ബശാരിശിൻ എന്നാണ് ഈ പതിപ്പിന്റെ വിവരണം. ب-യ്ക്ക് ഫത്ഹ, ش-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا, ر-യ്ക്ക് കസ്റ, അവസാനം തൻവീനുള്ള ش എന്നാണ് അക്ഷരങ്ങളുടെ വായന വിശദീകരിക്കുന്നത്. ബന്ധിപ്പിച്ച അക്ഷരം ض (ദാദ്); മൻസിൽ അൽ-ഫർഗ് അൽ-മുഖദ്ദം. അറബി അർഥം: എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ. ഗ്രന്ഥം പേരിന്റെ വസ്നായി manasir എന്ന് രേഖപ്പെടുത്തുന്നു."
+      },
+      "printed_page": 137,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "The twenty-sixth name is Bashārishin, has the scale of manasir. The letter corresponding to it is the pointed dad, and the mansion corresponding to it is Fargh al-Muqaddam. In Arabic it means ‘O He who is able to do all things.’"
     },
     {
       "id": "english-unspecified-count-137",
-      "title": {
-        "ml": "നിശ്ചിത എണ്ണമില്ലാത്ത തുടർച്ചയായ വായന",
-        "en": "Persistent repetition without a fixed count"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 137,
-      "original_text": "Among its properties is that if one regularly recites it an indefinite number of times, one will be safe from thirst, one’s spirit will be cleansed and shielded from capricious thoughts, and one’s tongue will become eloquent.",
       "count": null,
-      "timing": {
-        "ml": "തുടർച്ചയായി; നിശ്ചിത ദിവസമോ സമയമോ എണ്ണമോ നൽകിയിട്ടില്ല.",
-        "en": "Regularly; no fixed day, time or repetition count is supplied."
+      "title": {
+        "en": "Persistent repetition without a fixed count",
+        "ml": "നിശ്ചിത എണ്ണമില്ലാത്ത തുടർച്ചയായ വായന"
       },
-      "translation": {
-        "ml": "നിശ്ചിത എണ്ണം തീരുമാനിക്കാതെ പതിവായി ഈ പേര് വായിക്കുന്നവൻ ദാഹത്തിൽനിന്ന് സംരക്ഷിക്കപ്പെടുകയും, ആത്മാവ് ശുദ്ധമാകുകയും, ചാഞ്ചാട്ടമുള്ള ചിന്തകളിൽനിന്ന് സംരക്ഷിക്കപ്പെടുകയും, സംസാരത്തിൽ ഒഴുക്കും വ്യക്തതയും ലഭിക്കുകയും ചെയ്യുമെന്നാണ് പുസ്തകത്തിലെ പരമ്പരാഗത അവകാശവാദം.",
-        "en": "The book claims that regular repetition without a fixed count protects against thirst, cleanses the spirit, shields it from capricious thoughts and produces eloquence."
+      "timing": {
+        "en": "Regularly; no fixed day, time or repetition count is supplied.",
+        "ml": "തുടർച്ചയായി; നിശ്ചിത ദിവസമോ സമയമോ എണ്ണമോ നൽകിയിട്ടില്ല."
       },
       "scope_note": {
-        "ml": "അറബി പതിപ്പിലെ എണ്ണമില്ലാത്ത വായനയുമായി ഇത് ഒത്തുപോകുന്നു. ദാഹത്തെക്കുറിച്ചുള്ള അവകാശവാദം വെള്ളം കുടിക്കുന്നതിന് പകരമായ ഒരു മാർഗമായി കാണരുത്.",
-        "en": "This agrees with the Arabic edition’s unspecified-count account. Its thirst claim is not a substitute for drinking water."
-      }
+        "en": "This agrees with the Arabic edition’s unspecified-count account. Its thirst claim is not a substitute for drinking water.",
+        "ml": "അറബി പതിപ്പിലെ എണ്ണമില്ലാത്ത വായനയുമായി ഇത് ഒത്തുപോകുന്നു. ദാഹത്തെക്കുറിച്ചുള്ള അവകാശവാദം വെള്ളം കുടിക്കുന്നതിന് പകരമായ ഒരു മാർഗമായി കാണരുത്."
+      },
+      "translation": {
+        "en": "The book claims that regular repetition without a fixed count protects against thirst, cleanses the spirit, shields it from capricious thoughts and produces eloquence.",
+        "ml": "നിശ്ചിത എണ്ണം തീരുമാനിക്കാതെ പതിവായി ഈ പേര് വായിക്കുന്നവൻ ദാഹത്തിൽനിന്ന് സംരക്ഷിക്കപ്പെടുകയും, ആത്മാവ് ശുദ്ധമാകുകയും, ചാഞ്ചാട്ടമുള്ള ചിന്തകളിൽനിന്ന് സംരക്ഷിക്കപ്പെടുകയും, സംസാരത്തിൽ ഒഴുക്കും വ്യക്തതയും ലഭിക്കുകയും ചെയ്യുമെന്നാണ് പുസ്തകത്തിലെ പരമ്പരാഗത അവകാശവാദം."
+      },
+      "printed_page": 137,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "Among its properties is that if one regularly recites it an indefinite number of times, one will be safe from thirst, one’s spirit will be cleansed and shielded from capricious thoughts, and one’s tongue will become eloquent."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 137,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ض; മൻസിൽ Fargh al-Muqaddam. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ض and lunar mansion Fargh al-Muqaddam. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بَشَارِشٍ",
+      "arabic_original": "بشارش",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
   ],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O He who is able to do all things.",
+    "ml": "എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ."
   }
 }

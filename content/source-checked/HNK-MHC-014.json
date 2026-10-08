@@ -1,47 +1,97 @@
 {
   "name_id": "HNK-MHC-014",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 71,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا الله يا قادر",
-  "meaning_translation": {
-    "ml": "അല്ലാഹുവേ, കഴിവുള്ളവനേ.",
-    "en": "O God, O Almighty."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": null,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن داوم على تلاوته مسجون أطلقه الله تعالى",
-      "translation": {
-        "ml": "തടവിലുള്ള ഒരാൾ ഈ പേര് തുടർച്ചയായി വായിച്ചാൽ അല്ലാഹു അയാളെ മോചിപ്പിക്കുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. ഈ വാക്യത്തിൽ എണ്ണമോ നിശ്ചിത സമയമോ നൽകിയിട്ടില്ല.",
-        "en": "The source claims release for a prisoner who persists in reciting the name. This sentence gives no count or specific time."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source claims release for a prisoner who persists in reciting the name. This sentence gives no count or specific time.",
+        "ml": "തടവിലുള്ള ഒരാൾ ഈ പേര് തുടർച്ചയായി വായിച്ചാൽ അല്ലാഹു അയാളെ മോചിപ്പിക്കുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. ഈ വാക്യത്തിൽ എണ്ണമോ നിശ്ചിത സമയമോ നൽകിയിട്ടില്ല."
+      },
+      "arabic_original": "ومن داوم على تلاوته مسجون أطلقه الله تعالى"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 71,
+  "source_notes": [
+    {
+      "id": "english-extended-014",
+      "title": {
+        "en": "Meanings and additional accounts in the English edition",
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പിലെ അർഥങ്ങളും വിവിധ പരാമർശങ്ങളും"
+      },
+      "name_id": "HNK-MHC-014",
+      "translation": {
+        "en": "The measure is Banu Qamar; the spelling description gives nun with fatha, mim with damma, an unvoweled waw, shin with fatha and a nunated kha. The correspondence is nun and al-Simak. Its alternative meanings include ‘O God, O Almighty,’ ‘I am God, the safety of the frightened,’ ‘O Almighty, You are God,’ ‘O God, O Strong One, O Firm One,’ and ‘O God, O He.’\nThe book associates a Saturday-before-sunrise inscription of the name seventeen times on a virgin palm leaf, with a Quran quotation three times in separate letters, with a cough-relief claim. The quotation is al-Balad 90:11–13; its Arabic text and meaning follow below. It also links persistent prisoner recitation with release and describes names written on a garment in a bleeding-related claim.\nPage 126 describes an asphalt piece bearing a target’s name and named inscriptions at specified positions, four nails fixing it to the ground or an eastern wall, coriander and bdellium incense and recitation, in a historical enemy-torment claim. The unfamiliar Arabic inscriptions have not yet been securely transcribed. Medical claims are not established treatments.",
+        "ml": "വസ്ന് Banu Qamar; വായനയിൽ ن-യ്ക്ക് ഫത്ഹ, م-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ش-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള خ എന്നാണ് പുസ്തകം വിവരിക്കുന്നത്. ബന്ധിപ്പിച്ച അക്ഷരം ن; മൻസിൽ അസ്സിമാക്. അർഥങ്ങളായി ‘അല്ലാഹുവേ, സർവശക്തനായവനേ’, ‘ഞാനാണ് അല്ലാഹു, ഭയപ്പെടുന്നവരുടെ സുരക്ഷ’, ‘സർവശക്തനായവനേ, നീയാണ് അല്ലാഹു’, ‘അല്ലാഹുവേ, ശക്തനായവനേ, ഉറച്ചവനേ’, ‘അല്ലാഹുവേ, അവനേ’ എന്നീ അഭിപ്രായങ്ങൾ നൽകുന്നു.\nശനിയാഴ്ച സൂര്യോദയത്തിനു മുമ്പ്, ഫലം കായ്ക്കാത്ത ഈന്തപ്പനയുടെ ഇലയിൽ പേര് 17 തവണയും ഒരു ഖുർആൻ ഉദ്ധരണി വേർതിരിച്ച അക്ഷരങ്ങളായി മൂന്ന് തവണയും എഴുതിവച്ച് ചുമയുള്ള ആളിൽ തൂക്കുന്നതിനെ ചുമ മാറുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. ഈ ഉദ്ധരണി അൽ-ബലദ് 90:11–13 ആണ്; അറബി പാഠവും അർഥവും താഴെ നൽകിയിരിക്കുന്നു. തടവുകാരന്റെ തുടർച്ചയായ വായനയെ മോചനവുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശവും, ചില നാമങ്ങൾ വസ്ത്രത്തിൽ എഴുതി രക്തസ്രാവം നിൽക്കുമെന്ന ചികിത്സാസംബന്ധമായ പരാമർശവും തുടർന്ന് വരുന്നു.\n126-ാം പേജിൽ അസ്ഫാൾട്ടിന്റെ ഒരു കഷണത്തിൽ ലക്ഷ്യവ്യക്തിയുടെ പേരും വിവിധ നാമങ്ങളും നിർദിഷ്ട സ്ഥാനങ്ങളിൽ എഴുതുക, നാല് ആണികൾകൊണ്ട് നിലത്തോ കിഴക്കൻ മതിലിലോ ഉറപ്പിക്കുക, മല്ലിയും bdellium-വും ധൂപമാക്കുക, നാമങ്ങൾ വായിക്കുക തുടങ്ങിയവയെ ശത്രുവിനെ ശിക്ഷിക്കുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. അവിടെയുള്ള അപരിചിത നാമങ്ങളുടെ കൃത്യമായ അറബി പകർപ്പ് സ്ഥിരീകരിച്ചിട്ടില്ല. ചികിത്സാപരാമർശങ്ങൾ തെളിയിക്കപ്പെട്ട ചികിത്സകളായി അവതരിപ്പിക്കുന്നില്ല."
+      },
+      "printed_page": "125–126",
+      "quote_blocks": [
+        {
+          "arabic": "فَلَا اقْتَحَمَ الْعَقَبَةَ ۝ وَمَا أَدْرَاكَ مَا الْعَقَبَةُ ۝ فَكُّ رَقَبَةٍ",
+          "translation": {
+            "en": "Yet he did not undertake the difficult path. And what will make you understand that difficult path? It is freeing a slave.",
+            "ml": "എന്നാൽ അവൻ ദുർഘടമായ പാത കടന്നില്ല. ആ ദുർഘടമായ പാത എന്താണെന്ന് നിനക്കറിയുമോ? ഒരു അടിമയെ മോചിപ്പിക്കുക എന്നതാണ് അത്."
+          },
+          "source_location": "Quran 90:11–13"
+        }
+      ],
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا الله يا قادر",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O God, O Almighty.",
+    "ml": "അല്ലാഹുവേ, കഴിവുള്ളവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 125,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ن; മൻസിൽ al-Simak. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല. ഈ പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള വിവരണത്തിൽ ل-ന്റെ ഹറകത്ത് വ്യക്തമല്ല; അച്ചടിയിലെ നാമത്തിൽ ل കാണുന്നു. അതിനാൽ ഈ വിവരണം മാത്രം ആശ്രയിച്ച് പുതിയ പൂർണ്ണ ഹറകത്ത് രൂപം സൃഷ്ടിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ن and lunar mansion al-Simak. These are traditional correspondences in the book, not a clock-time recitation prescription. The letter-by-letter description does not specify the lam’s vowel although the printed name includes lam. No fully vowelled new form is generated from that incomplete description."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

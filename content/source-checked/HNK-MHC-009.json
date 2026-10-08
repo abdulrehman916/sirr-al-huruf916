@@ -1,50 +1,90 @@
 {
   "name_id": "HNK-MHC-009",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 70,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا حميد يا مجيد",
-  "meaning_translation": {
-    "ml": "സ്തുതിക്കർഹനായവനേ, മഹത്വമുള്ളവനേ.",
-    "en": "O Praiseworthy One, O Glorious One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 70,
+  "source_notes": [
+    {
+      "id": "english-extended-009",
+      "title": {
+        "en": "Further ninth-name accounts and 1370 repetitions",
+        "ml": "ഒൻപതാം പേരിന്റെ മറ്റു പ്രയോഗങ്ങളും 1370 വായനയും"
+      },
+      "name_id": "HNK-MHC-009",
+      "translation": {
+        "en": "The measure is taf‘al: ghayn/fatha, lam/sukun, mim/fatha and a nunated shin. Correspondences are ta (ط) and al-Tarfa. Meanings are ‘O Praiseworthy One, O Glorious One’ or ‘O King’; the book describes it as showing the student proof. The nightly 300 account’s fasting and dietary conditions appear above.\nAn eleven-inscription account specifies separate letters on white paper, a seal and fumigation with something associated with a target. The book directs assessment of the dominant element: fire corresponds to burning, air to wind suspension, water to immersion and earth to burial, in a three-day arrival claim. Eleven counts inscriptions.\nAnother account links cinnamon-root incense and 1370 recitations to driving jinn from a place. Its separate return account uses rose-water-soaked aloeswood and the reversed name Shamlagh: shin/fatha, mim/sukun, lam/fatha and a nunated ghayn. The continuation asks angels, by the name’s right, to allow jinn to return to their places and assignments and invokes God’s blessing. No additional fixed return count is supplied.",
+        "ml": "വസ്ന് taf‘al. غ-യ്ക്ക് ഫത്ഹ, ل-യ്ക്ക് സുകൂൻ, م-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ش എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ط; മൻസിൽ അത്തർഫാ. ‘സ്തുതിക്കപ്പെടുന്നവനേ, മഹത്വമുള്ളവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘രാജാവേ’ എന്നും അർഥം നൽകുന്നു. വിദ്യാർത്ഥിക്ക് തെളിവ് കാണിക്കുന്ന പേരാണെന്ന വിവരണവും പുസ്തകത്തിലുണ്ട്. രാത്രിയിലെ 300 വായനയുടെ ഉപവാസ–ഭക്ഷണനിയന്ത്രണ സാഹചര്യങ്ങൾ മുകളിലുണ്ട്.\nവെളുത്ത കടലാസിൽ വേർതിരിച്ച അക്ഷരങ്ങളായി 11 തവണ എഴുതുക, മുദ്രയിൽ ഉൾപ്പെടുത്തുക, ലക്ഷ്യവ്യക്തിയുമായി ബന്ധപ്പെട്ട വസ്തു ധൂപമാക്കുക എന്ന പരാമർശത്തിൽ, പേരിൽ ഏത് തത്ത്വമാണ് മേൽക്കോയ്മയുള്ളതെന്ന് കണക്കാക്കണമെന്ന് ഗ്രന്ഥം പറയുന്നു. അഗ്നിതത്ത്വമാണെങ്കിൽ കത്തിക്കൽ, വായുതത്ത്വമാണെങ്കിൽ കാറ്റിൽ തൂക്കൽ, ജലതത്ത്വമാണെങ്കിൽ വെള്ളത്തിൽ ഇടൽ, ഭൂതത്ത്വമാണെങ്കിൽ മണ്ണിൽ കുഴിച്ചിടൽ എന്നിങ്ങനെ വിവരിച്ച് മൂന്നു ദിവസത്തിനുള്ളിൽ വ്യക്തി എത്തുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. ഈ 11 എഴുത്തിന്റെ എണ്ണമാണ്.\nസ്ഥലത്തുനിന്ന് ജിന്നുകളെ പുറത്താക്കുന്നതിനെ കറുവപ്പട്ടയുടെ വേർ ധൂപമാക്കലും 1370 വായനയും ആയി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. തിരികെ വരുത്തുന്നതിനുള്ള വേറിട്ട പരാമർശത്തിൽ പനിനീരിൽ മുക്കിയ അഗിലും പേരിന്റെ മറുവായനയും നൽകുന്നു. ആ മറുവായനയുടെ ഇംഗ്ലീഷ് രൂപം Shamlagh എന്നാണ്; ش-യ്ക്ക് ഫത്ഹ, م-യ്ക്ക് സുകൂൻ, ل-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള غ എന്നാണ് വിവരണം. ‘ഈ പേരിന്റെ ഹഖിനാൽ, മലക്കുകളേ, ജിന്നുകളെ അവരുടെ സ്ഥലങ്ങളിലേക്കും ഏൽപ്പിക്കപ്പെട്ട കാര്യങ്ങളിലേക്കും മടങ്ങാൻ അനുവദിക്കുക; അല്ലാഹു നിങ്ങളെ അനുഗ്രഹിക്കട്ടെ’ എന്നാണ് തുടർവാക്യത്തിന്റെ അർഥം. തിരികെ വരുത്തലിന് പുതിയൊരു നിശ്ചിത എണ്ണം നൽകിയിട്ടില്ല."
+      },
+      "printed_page": "118–120",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا حميد يا مجيد",
   "edition_accounts": [
     {
       "id": "english-nightly-300",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 119,
-      "title": {
-        "ml": "ഓരോ രാത്രിയിലും 300 തവണ — ഇംഗ്ലീഷ് പതിപ്പിലെ പരാമർശം",
-        "en": "Three hundred each night — English-edition account"
-      },
-      "original_text": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts.",
-      "translation": {
-        "ml": "ഓരോ രാത്രിയിലും പേര് 300 തവണ ഓതുകയും ഓരോ നൂറിനുശേഷവും “ഈ നാമങ്ങളുടെ സേവകരേ, ഇന്നയാളുടെ രൂപത്തിൽ ഇന്നയാളുടെ അടുത്തേക്ക് പോയി ഇന്നകാര്യം ചെയ്യാൻ അയാളോട് ആവശ്യപ്പെടുക” എന്നു നിയോഗിക്കുകയും ചെയ്താൽ, മൂന്നു ദിവസം കഴിയുന്നതിനു മുമ്പ് ആവശ്യം നിറവേറുമെന്നാണ് ഈ പതിപ്പിലെ അവകാശവാദം. മാംസവും അതിൽനിന്നുള്ള ഉൽപ്പന്നങ്ങളും ഒഴിവാക്കുകയും നോമ്പെടുക്കുകയും ചെയ്യണമെന്ന വ്യവസ്ഥയും ഇതിൽ പറയുന്നു.",
-        "en": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts."
-      },
       "count": 300,
+      "title": {
+        "en": "Three hundred each night — English-edition account",
+        "ml": "ഓരോ രാത്രിയിലും 300 തവണ — ഇംഗ്ലീഷ് പതിപ്പിലെ പരാമർശം"
+      },
       "timing": {
-        "ml": "ഓരോ രാത്രിയിലും; ഓരോ 100-നും ശേഷം നിയോഗവാക്യം. മൂന്നു ദിവസത്തിനുള്ളിലെ ഫലമാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്.",
-        "en": "Each night, with a charge after every hundred. The book claims an outcome within three days."
+        "en": "Each night, with a charge after every hundred. The book claims an outcome within three days.",
+        "ml": "ഓരോ രാത്രിയിലും; ഓരോ 100-നും ശേഷം നിയോഗവാക്യം. മൂന്നു ദിവസത്തിനുള്ളിലെ ഫലമാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്."
       },
       "scope_note": {
-        "ml": "ഇത് പേരുമായി ബന്ധപ്പെട്ട ചരിത്രപരമായ അവകാശവാദമാണ്. N. എന്നത് വ്യക്തിയുടെ പേര് പകരം ചേർക്കുന്ന ഇടമാണ്; പേരോ ഫലമോ പുതുതായി സൃഷ്ടിച്ചിട്ടില്ല.",
-        "en": "A historical source claim. N. is a placeholder for a name; no target or outcome is invented."
-      }
+        "en": "A historical source claim. N. is a placeholder for a name; no target or outcome is invented.",
+        "ml": "ഇത് പേരുമായി ബന്ധപ്പെട്ട ചരിത്രപരമായ അവകാശവാദമാണ്. N. എന്നത് വ്യക്തിയുടെ പേര് പകരം ചേർക്കുന്ന ഇടമാണ്; പേരോ ഫലമോ പുതുതായി സൃഷ്ടിച്ചിട്ടില്ല."
+      },
+      "translation": {
+        "en": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts.",
+        "ml": "ഓരോ രാത്രിയിലും പേര് 300 തവണ ഓതുകയും ഓരോ നൂറിനുശേഷവും “ഈ നാമങ്ങളുടെ സേവകരേ, ഇന്നയാളുടെ രൂപത്തിൽ ഇന്നയാളുടെ അടുത്തേക്ക് പോയി ഇന്നകാര്യം ചെയ്യാൻ അയാളോട് ആവശ്യപ്പെടുക” എന്നു നിയോഗിക്കുകയും ചെയ്താൽ, മൂന്നു ദിവസം കഴിയുന്നതിനു മുമ്പ് ആവശ്യം നിറവേറുമെന്നാണ് ഈ പതിപ്പിലെ അവകാശവാദം. മാംസവും അതിൽനിന്നുള്ള ഉൽപ്പന്നങ്ങളും ഒഴിവാക്കുകയും നോമ്പെടുക്കുകയും ചെയ്യണമെന്ന വ്യവസ്ഥയും ഇതിൽ പറയുന്നു."
+      },
+      "printed_page": 119,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one recites it three hundred times every night and says after every hundred, “Be charged, O servants of these names, with going to N. in the image of N. and commanding him to such and such,” three days will not pass without the need being fulfilled, provided that one abstains from meat and its byproducts and fasts."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 118,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ط; മൻസിൽ al-Tarfa. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ط and lunar mansion al-Tarfa. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "غَلْمَشٍ",
+      "arabic_original": "غلمش",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
-  ]
+  ],
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Praiseworthy One, O Glorious One.",
+    "ml": "സ്തുതിക്കർഹനായവനേ, മഹത്വമുള്ളവനേ."
+  }
 }

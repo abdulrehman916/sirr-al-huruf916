@@ -1,74 +1,97 @@
 {
   "name_id": "HNK-MHC-022",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 73,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "تعاليت يا عليم يا عالي",
-  "meaning_translation": {
-    "ml": "അറിയുന്നവനേ, ഉന്നതനായവനേ, നീ അത്യുന്നതനായിരിക്കുന്നു.",
-    "en": "Exalted are You, O All-knowing One, O Exalted One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 7,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن خواصه أن من كتبه سبع مرات في طبق ومحاه بماء قراح ورشه في مكان النمل ذهب منه",
-      "translation": {
-        "ml": "ഈ പേര് ഒരു പാത്രത്തിൽ ഏഴ് തവണ എഴുതി ശുദ്ധജലത്തിൽ കഴുകിയെടുത്ത് ഉറുമ്പുകളുള്ള സ്ഥലത്ത് തളിച്ചാൽ അവ പോകുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
-        "en": "The source describes seven inscriptions on a dish, washing them off with clear water and sprinkling it where ants are present, claiming their departure."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source describes seven inscriptions on a dish, washing them off with clear water and sprinkling it where ants are present, claiming their departure.",
+        "ml": "ഈ പേര് ഒരു പാത്രത്തിൽ ഏഴ് തവണ എഴുതി ശുദ്ധജലത്തിൽ കഴുകിയെടുത്ത് ഉറുമ്പുകളുള്ള സ്ഥലത്ത് തളിച്ചാൽ അവ പോകുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്."
+      },
+      "arabic_original": "ومن خواصه أن من كتبه سبع مرات في طبق ومحاه بماء قراح ورشه في مكان النمل ذهب منه"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 73,
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "تعاليت يا عليم يا عالي",
   "edition_accounts": [
     {
       "id": "english-name-and-ants-134",
-      "title": {
-        "ml": "പേരിന്റെ വായന, അർഥം, ഏഴ് എഴുത്തുകളുടെ പരാമർശം",
-        "en": "Pronunciation, meaning and seven-inscription account"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 134,
-      "arabic_original": "شمخاهر",
-      "arabic_reading": "شَمْخَاهِرٍ",
-      "original_text": "The twenty-second name is Shamkhāhirin [شمخاهر], has the scale of Jabra’il, and consists of a pointed shin voweled with a fat’ha, followed by an unvoweled mim, followed by a pointed kha’ voweled with a fat’ha, followed by an alif, followed by a ha’ voweled with a kasra, followed by a nunated ra’. The letter corresponding to it is the ta’ marked with two upper diacritics, and the mansion corresponding to it is Sa’d al-Dhabih. In Arabic it means ‘Exalted are You, O Most Exalted One, O All-knowing One.’ Among its properties is that if one writes it seven times on a dish and washes it off with clear water and sprinkles it on a place in which are ants, they will depart from it.",
-      "translation": {
-        "ml": "ഇരുപത്തിരണ്ടാം പേര് شمخاهر എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിൽ. വസ്ന് ജബ്‌റാഈൽ. ش-യ്ക്ക് ഫത്ഹ, م-യ്ക്ക് സുകൂൻ, خ-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا, ه-യ്ക്ക് കസ്റ, അവസാനം തൻവീനുള്ള ر എന്നതാണ് ഗ്രന്ഥത്തിലെ വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ت; മൻസിൽ സഅ്ദ് അദ്ദാബിഹ്. ‘അത്യുന്നതനായവനേ, എല്ലാം അറിയുന്നവനേ, നീ മഹോന്നതനായിരിക്കുന്നു’ എന്നാണ് അർഥം. പേര് ഒരു പാത്രത്തിൽ ഏഴ് തവണ എഴുതി ശുദ്ധജലത്തിൽ കഴുകിയെടുത്ത് ഉറുമ്പുകളുള്ള സ്ഥലത്ത് തളിച്ചാൽ അവ അവിടം വിട്ടുപോകുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം.",
-        "en": "This edition spells the twenty-second name شمخاهر with the measure Jabra’il. It describes shin with fatha, mim with sukun, kha with fatha, alif, ha with kasra and a nunated ra. Its associated letter is ta (ت) and mansion Sa’d al-Dhabih. It means ‘Exalted are You, O Most Exalted One, O All-knowing One.’ The book claims that seven inscriptions on a dish, washed off with clear water and sprinkled where ants are present, make them depart."
-      },
       "count": 7,
+      "title": {
+        "en": "Pronunciation, meaning and seven-inscription account",
+        "ml": "പേരിന്റെ വായന, അർഥം, ഏഴ് എഴുത്തുകളുടെ പരാമർശം"
+      },
       "timing": {
-        "ml": "പ്രത്യേക സമയമോ ദിവസമോ ഇല്ല. ഏഴ് എന്നത് പാത്രത്തിൽ എഴുതുന്നതിന്റെ എണ്ണമാണ്.",
-        "en": "No particular time or day is supplied. Seven counts inscriptions on the dish."
+        "en": "No particular time or day is supplied. Seven counts inscriptions on the dish.",
+        "ml": "പ്രത്യേക സമയമോ ദിവസമോ ഇല്ല. ഏഴ് എന്നത് പാത്രത്തിൽ എഴുതുന്നതിന്റെ എണ്ണമാണ്."
       },
       "scope_note": {
-        "ml": "ഹറകത്ത് ഈ പതിപ്പിന്റെ വായനാവിവരണം അനുസരിച്ച് ചേർത്തതാണ്. ഉറുമ്പുകളെക്കുറിച്ചുള്ളത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. പേജിനു മുകളിലുള്ള കളം മുൻപത്തെ 21-ാം പേരിന്റെ തുടർച്ചയാണ്; അതിനെ 22-ാം പേരിന്റെ കളമായി ചേർത്തിട്ടില്ല.",
-        "en": "Reading vowels follow this edition’s pronunciation instructions. The ant account is the book’s claim. The square above this paragraph continues the preceding twenty-first name and is not assigned to the twenty-second name."
-      }
+        "en": "Reading vowels follow this edition’s pronunciation instructions. The ant account is the book’s claim. The square above this paragraph continues the preceding twenty-first name and is not assigned to the twenty-second name.",
+        "ml": "ഹറകത്ത് ഈ പതിപ്പിന്റെ വായനാവിവരണം അനുസരിച്ച് ചേർത്തതാണ്. ഉറുമ്പുകളെക്കുറിച്ചുള്ളത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. പേജിനു മുകളിലുള്ള കളം മുൻപത്തെ 21-ാം പേരിന്റെ തുടർച്ചയാണ്; അതിനെ 22-ാം പേരിന്റെ കളമായി ചേർത്തിട്ടില്ല."
+      },
+      "translation": {
+        "en": "This edition spells the twenty-second name شمخاهر with the measure Jabra’il. It describes shin with fatha, mim with sukun, kha with fatha, alif, ha with kasra and a nunated ra. Its associated letter is ta (ت) and mansion Sa’d al-Dhabih. It means ‘Exalted are You, O Most Exalted One, O All-knowing One.’ The book claims that seven inscriptions on a dish, washed off with clear water and sprinkled where ants are present, make them depart.",
+        "ml": "ഇരുപത്തിരണ്ടാം പേര് شمخاهر എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിൽ. വസ്ന് ജബ്‌റാഈൽ. ش-യ്ക്ക് ഫത്ഹ, م-യ്ക്ക് സുകൂൻ, خ-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا, ه-യ്ക്ക് കസ്റ, അവസാനം തൻവീനുള്ള ر എന്നതാണ് ഗ്രന്ഥത്തിലെ വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ت; മൻസിൽ സഅ്ദ് അദ്ദാബിഹ്. ‘അത്യുന്നതനായവനേ, എല്ലാം അറിയുന്നവനേ, നീ മഹോന്നതനായിരിക്കുന്നു’ എന്നാണ് അർഥം. പേര് ഒരു പാത്രത്തിൽ ഏഴ് തവണ എഴുതി ശുദ്ധജലത്തിൽ കഴുകിയെടുത്ത് ഉറുമ്പുകളുള്ള സ്ഥലത്ത് തളിച്ചാൽ അവ അവിടം വിട്ടുപോകുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം."
+      },
+      "printed_page": 134,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "The twenty-second name is Shamkhāhirin [شمخاهر], has the scale of Jabra’il, and consists of a pointed shin voweled with a fat’ha, followed by an unvoweled mim, followed by a pointed kha’ voweled with a fat’ha, followed by an alif, followed by a ha’ voweled with a kasra, followed by a nunated ra’. The letter corresponding to it is the ta’ marked with two upper diacritics, and the mansion corresponding to it is Sa’d al-Dhabih. In Arabic it means ‘Exalted are You, O Most Exalted One, O All-knowing One.’ Among its properties is that if one writes it seven times on a dish and washes it off with clear water and sprinkles it on a place in which are ants, they will depart from it.",
+      "arabic_reading": "شَمْخَاهِرٍ",
+      "arabic_original": "شمخاهر"
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 134,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ت; മൻസിൽ Sad al-Dhabih. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ت and lunar mansion Sad al-Dhabih. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "شَمْخَاهِرٍ",
+      "arabic_original": "شمخاهر",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
   ],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "Exalted are You, O All-knowing One, O Exalted One.",
+    "ml": "അറിയുന്നവനേ, ഉന്നതനായവനേ, നീ അത്യുന്നതനായിരിക്കുന്നു."
   }
 }

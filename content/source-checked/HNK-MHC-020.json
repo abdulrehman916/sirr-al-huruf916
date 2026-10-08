@@ -1,40 +1,90 @@
 {
   "name_id": "HNK-MHC-020",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 72,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا كريم يا قهار",
-  "meaning_translation": {
-    "ml": "ഉദാരനായവനേ, കീഴടക്കുന്നവനേ.",
-    "en": "O Generous One, O Subduer."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 72,
   "source_notes": [
     {
       "id": "historical-medical-claim",
       "title": {
-        "ml": "രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഗ്രന്ഥപരാമർശം",
-        "en": "A historical bleeding-related passage"
+        "en": "A historical bleeding-related passage",
+        "ml": "രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഗ്രന്ഥപരാമർശം"
       },
       "translation": {
-        "ml": "അറബി പേജ് 72-ലും ഇംഗ്ലീഷ് പേജ് 132-ലും രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഒരു പരമ്പരാഗത അവകാശവാദം കാണുന്നു. ഇംഗ്ലീഷ് പതിപ്പ് red lead എന്ന വസ്തുവിനെ പരാമർശിക്കുന്നു. ഇത് വായനക്കാരന് തയ്യാറാക്കി കുടിക്കാനുള്ള രീതിയായോ ചികിത്സാനിർദേശമായോ നൽകിയിട്ടില്ല.",
-        "en": "Arabic page 72 and English page 132 contain a traditional bleeding-related claim. The English edition mentions red lead. It is not supplied as a preparation to drink or as medical guidance."
+        "en": "Arabic page 72 and English page 132 contain a traditional bleeding-related claim. The English edition mentions red lead. It is not supplied as a preparation to drink or as medical guidance.",
+        "ml": "അറബി പേജ് 72-ലും ഇംഗ്ലീഷ് പേജ് 132-ലും രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ഒരു പരമ്പരാഗത അവകാശവാദം കാണുന്നു. ഇംഗ്ലീഷ് പതിപ്പ് red lead എന്ന വസ്തുവിനെ പരാമർശിക്കുന്നു. ഇത് വായനക്കാരന് തയ്യാറാക്കി കുടിക്കാനുള്ള രീതിയായോ ചികിത്സാനിർദേശമായോ നൽകിയിട്ടില്ല."
       },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 132
+      "printed_page": 132,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach"
+    },
+    {
+      "id": "english-extended-020",
+      "title": {
+        "en": "Pronunciation, meanings and counts in the historical bleeding account",
+        "ml": "വായന, അർഥങ്ങൾ, രക്തസ്രാവത്തെക്കുറിച്ചുള്ള ചരിത്രപരാമർശത്തിന്റെ കണക്കുകൾ"
+      },
+      "name_id": "HNK-MHC-020",
+      "translation": {
+        "en": "The measure is hayaha; its spelling description gives ghayn/fatha, ya, alif, ha/fatha and alif. Correspondences are ra and al-Na‘a’im. Meanings are ‘O Generous One, O Subduer,’ ‘O Generous One, O Judge,’ or ‘O Almighty One, O Overpowering One.’\nThe historical bleeding account gives ninety written names and a Quran quotation three times in separate letters. It mentions red lead as the writing substance and ingestion of the inscription in a bleeding-relief claim. Ninety and three are inscription counts, not recitation counts. Red lead is poisonous; the passage is not provided as medical guidance. The quotation is al-Tariq 86:8; its Arabic text and meaning follow below.",
+        "ml": "വസ്ന് hayaha. غ-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ي, ا, ه-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا എന്നാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ر; മൻസിൽ അന്നആഇം. അർഥാഭിപ്രായങ്ങൾ: ‘ഉദാരനായവനേ, കീഴടക്കുന്നവനേ’, ‘ഉദാരനായവനേ, വിധിക്കുന്നവനേ’, ‘സർവശക്തനായവനേ, എല്ലാം കീഴടക്കുന്നവനേ’.\nചരിത്രപരമായ ചികിത്സാപരാമർശത്തിൽ പേര് തൊണ്ണൂറ് തവണയും ഒരു ഖുർആൻ ഉദ്ധരണി വേർതിരിച്ച അക്ഷരങ്ങളായി മൂന്ന് തവണയും എഴുതുന്നതാണ് പറയുന്നത്. എഴുതാൻ red lead ഉപയോഗിക്കുകയും എഴുത്ത് കുടിപ്പിക്കുന്നതിനെ രക്തസ്രാവം നിൽക്കുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുകയും ചെയ്യുന്നു. 90,3 എന്നിവ എഴുത്തിന്റെ എണ്ണങ്ങളാണ്; ഓതലിനുള്ള എണ്ണങ്ങളല്ല. Red lead വിഷമുള്ള വസ്തുവാണ്; ഈ പരാമർശം ഉപയോഗിക്കാനുള്ള ചികിത്സാനിർദേശമായി നൽകിയിട്ടില്ല. ഉദ്ധരണി അത്താരിഖ് 86:8 ആണ്; അറബി പാഠവും അർഥവും താഴെ നൽകിയിരിക്കുന്നു."
+      },
+      "printed_page": "131–132",
+      "quote_blocks": [
+        {
+          "arabic": "إِنَّهُ عَلَىٰ رَجْعِهِ لَقَادِرٌ",
+          "translation": {
+            "en": "Indeed, He is able to bring him back.",
+            "ml": "തീർച്ചയായും അവനെ തിരിച്ചുകൊണ്ടുവരാൻ അവന് കഴിവുണ്ട്."
+          },
+          "source_location": "Quran 86:8"
+        }
+      ],
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا كريم يا قهار",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Generous One, O Subduer.",
+    "ml": "ഉദാരനായവനേ, കീഴടക്കുന്നവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 131,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ر; മൻസിൽ al-Naaim. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ر and lunar mansion al-Naaim. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "غَيَاهَا",
+      "arabic_original": "غياها",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
   ]
 }

@@ -1,117 +1,140 @@
 {
   "name_id": "HNK-MHC-024",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 73,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا قادر يا قاهر",
-  "meaning_translation": {
-    "ml": "കഴിവുള്ളവനേ, കീഴടക്കുന്നവനേ.",
-    "en": "O Almighty One, O Overpowering One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 100,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "فاذكر شمخاهير شمهارير مائة ثم قل إن كنتم حضرتم أيها الأرواح فأروني من نوركم فإنه يخرج كشعاع الشمس",
-      "translation": {
-        "ml": "രണ്ട് പേരുകളും ചേർത്ത് നൂറ് തവണ പറഞ്ഞശേഷം, ആത്മാക്കൾ വന്നിട്ടുണ്ടെങ്കിൽ അവരുടെ പ്രകാശം കാണിക്കണമെന്ന് ആവശ്യപ്പെടുന്ന വിവരണമാണ് ഗ്രന്ഥത്തിലുള്ളത്. സൂര്യകിരണത്തിനോട് സാമ്യമുള്ള പ്രകാശം കാണുമെന്നതാണ് അതിന്റെ അവകാശവാദം. ഇവിടെ പേരുകളുടെ രണ്ടാമത്തെ രൂപം ഈ പതിപ്പിൽ ശമഹാരീർ എന്ന രീതിയിലാണ്; കാർഡിലെ അക്ഷരങ്ങൾ മാറ്റിയിട്ടില്ല.",
-        "en": "The source describes one hundred combined repetitions followed by a request for spirits, if present, to show their light, claiming an appearance like a sunray. The second name’s written form differs in this edition; the existing card spelling is unchanged."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source describes one hundred combined repetitions followed by a request for spirits, if present, to show their light, claiming an appearance like a sunray. The second name’s written form differs in this edition; the existing card spelling is unchanged.",
+        "ml": "രണ്ട് പേരുകളും ചേർത്ത് നൂറ് തവണ പറഞ്ഞശേഷം, ആത്മാക്കൾ വന്നിട്ടുണ്ടെങ്കിൽ അവരുടെ പ്രകാശം കാണിക്കണമെന്ന് ആവശ്യപ്പെടുന്ന വിവരണമാണ് ഗ്രന്ഥത്തിലുള്ളത്. സൂര്യകിരണത്തിനോട് സാമ്യമുള്ള പ്രകാശം കാണുമെന്നതാണ് അതിന്റെ അവകാശവാദം. ഇവിടെ പേരുകളുടെ രണ്ടാമത്തെ രൂപം ഈ പതിപ്പിൽ ശമഹാരീർ എന്ന രീതിയിലാണ്; കാർഡിലെ അക്ഷരങ്ങൾ മാറ്റിയിട്ടില്ല."
+      },
+      "arabic_original": "فاذكر شمخاهير شمهارير مائة ثم قل إن كنتم حضرتم أيها الأرواح فأروني من نوركم فإنه يخرج كشعاع الشمس"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 73,
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا قادر يا قاهر",
   "edition_accounts": [
     {
       "id": "english-pronunciation-meanings-135",
       "title": {
-        "ml": "പേരിന്റെ വായനയും അർഥവ്യത്യാസങ്ങളും",
-        "en": "Pronunciation and alternative meanings"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 135,
-      "arabic_original": "شمهاهير",
-      "arabic_reading": "شَمْهَاهِيرٍ",
-      "original_text": "The twenty-fourth name is Shamhāhīrin [شمهاهير] and has the scale and vowelization of the word before it except for a ha’ in place of the kha’. The letter corresponding to it is the pointed kha’, and the mansion corresponding to it is Sa’d al-Su’ud. In Arabic it means ‘O Almighty One, O Omnipotent One’ and, according to another view, ‘O Protector, O Invincible One, O Overpowering One.’",
-      "translation": {
-        "ml": "ഇരുപത്തിനാലാം പേര് شمهاهير എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിൽ. മുൻപത്തെ പേരിന്റെ വസ്നും ഹറകത്തും തന്നെയാണെന്നും خ-യ്ക്ക് പകരം ه വരുന്നതാണെന്നും പറയുന്നു. ബന്ധിപ്പിച്ച അക്ഷരം خ; മൻസിൽ സഅ്ദ് അസ്സുഊദ്. ‘സർവശക്തനായവനേ, എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ’ എന്നാണ് ഇവിടെ നൽകുന്ന അർഥം. മറ്റൊരു അഭിപ്രായത്തിൽ ‘സംരക്ഷകനേ, പരാജയപ്പെടുത്താനാകാത്തവനേ, എല്ലാം കീഴടക്കുന്നവനേ’ എന്നും നൽകുന്നു.",
-        "en": "This edition spells the twenty-fourth name شمهاهير, using the preceding name’s measure and vowels but replacing kha with ha. It associates it with kha (خ) and Sa’d al-Su’ud. Its interpretations are ‘O Almighty One, O Omnipotent One,’ or ‘O Protector, O Invincible One, O Overpowering One.’"
+        "en": "Pronunciation and alternative meanings",
+        "ml": "പേരിന്റെ വായനയും അർഥവ്യത്യാസങ്ങളും"
       },
       "scope_note": {
-        "ml": "ഇത് ഈ പതിപ്പിന്റെ എഴുത്തുരൂപവും പരമ്പരാഗത വിശദീകരണവുമാണ്. നിലവിലുള്ള കാർഡിന്റെ പേര്, അക്ഷരസംഖ്യ, Abjad മൂല്യം എന്നിവ മാറ്റിയിട്ടില്ല.",
-        "en": "This is the edition’s spelling and traditional explanation. The existing name, letter count and Abjad value remain unchanged."
-      }
+        "en": "This is the edition’s spelling and traditional explanation. The existing name, letter count and Abjad value remain unchanged.",
+        "ml": "ഇത് ഈ പതിപ്പിന്റെ എഴുത്തുരൂപവും പരമ്പരാഗത വിശദീകരണവുമാണ്. നിലവിലുള്ള കാർഡിന്റെ പേര്, അക്ഷരസംഖ്യ, Abjad മൂല്യം എന്നിവ മാറ്റിയിട്ടില്ല."
+      },
+      "translation": {
+        "en": "This edition spells the twenty-fourth name شمهاهير, using the preceding name’s measure and vowels but replacing kha with ha. It associates it with kha (خ) and Sa’d al-Su’ud. Its interpretations are ‘O Almighty One, O Omnipotent One,’ or ‘O Protector, O Invincible One, O Overpowering One.’",
+        "ml": "ഇരുപത്തിനാലാം പേര് شمهاهير എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിൽ. മുൻപത്തെ പേരിന്റെ വസ്നും ഹറകത്തും തന്നെയാണെന്നും خ-യ്ക്ക് പകരം ه വരുന്നതാണെന്നും പറയുന്നു. ബന്ധിപ്പിച്ച അക്ഷരം خ; മൻസിൽ സഅ്ദ് അസ്സുഊദ്. ‘സർവശക്തനായവനേ, എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ’ എന്നാണ് ഇവിടെ നൽകുന്ന അർഥം. മറ്റൊരു അഭിപ്രായത്തിൽ ‘സംരക്ഷകനേ, പരാജയപ്പെടുത്താനാകാത്തവനേ, എല്ലാം കീഴടക്കുന്നവനേ’ എന്നും നൽകുന്നു."
+      },
+      "printed_page": 135,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "The twenty-fourth name is Shamhāhīrin [شمهاهير] and has the scale and vowelization of the word before it except for a ha’ in place of the kha’. The letter corresponding to it is the pointed kha’, and the mansion corresponding to it is Sa’d al-Su’ud. In Arabic it means ‘O Almighty One, O Omnipotent One’ and, according to another view, ‘O Protector, O Invincible One, O Overpowering One.’",
+      "arabic_reading": "شَمْهَاهِيرٍ",
+      "arabic_original": "شمهاهير"
     },
     {
       "id": "english-enmity-source-account-135-136",
-      "title": {
-        "ml": "വൈരത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശവും അതിലെ ഖുർആൻ ഉദ്ധരണിയും",
-        "en": "Historical enmity account and its Quran quotation"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": "135–136",
-      "original_text": "If one writes it a hundred times with the words of Him Most High ‘وألقينا بينهم العداوة والبغضاء إلى يوم القيامة’ and the names of two individuals who get together for something that displeases Allah, hostility will occur between them and they will intensely hate one another.",
-      "arabic_original": "وألقينا بينهم العداوة والبغضاء إلى يوم القيامة",
-      "arabic_reading": "وَأَلْقَيْنَا بَيْنَهُمُ الْعَدَاوَةَ وَالْبَغْضَاءَ إِلَى يَوْمِ الْقِيَامَةِ",
-      "translation": {
-        "ml": "അറബി ഉദ്ധരണിയുടെ അർഥം: ‘അവർക്കിടയിൽ അന്ത്യനാൾവരെ വൈരവും വിദ്വേഷവും നാം ഇട്ടു.’ അല്ലാഹുവിന് അനിഷ്ടമായ ഒരു കാര്യത്തിനായി ഒന്നിക്കുന്ന രണ്ടു പേരുടെ പേരുകളോടും ഈ ഉദ്ധരണിയോടും കൂടി നാമം നൂറ് തവണ എഴുതിയാൽ അവർക്കിടയിൽ വൈരവും കടുത്ത വിദ്വേഷവും ഉണ്ടാകുമെന്നാണ് ഗ്രന്ഥത്തിലെ പരാമർശം. നൂറ് ഇവിടെ എഴുത്തിന്റെ എണ്ണമാണ്; ഓതലിന്റെ എണ്ണമല്ല.",
-        "en": "The quotation means: ‘We cast enmity and hatred between them until the Day of Resurrection.’ The book claims that writing the name one hundred times with this quotation and the names of two people united in something displeasing to Allah creates hostility and intense hatred between them. One hundred counts inscriptions, not recitations."
-      },
       "count": 100,
+      "title": {
+        "en": "Historical enmity account and its Quran quotation",
+        "ml": "വൈരത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശവും അതിലെ ഖുർആൻ ഉദ്ധരണിയും"
+      },
       "timing": {
-        "ml": "ഈ വാക്യത്തിൽ പ്രത്യേക ദിവസമോ സമയമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No particular day or time is supplied in this sentence."
+        "en": "No particular day or time is supplied in this sentence.",
+        "ml": "ഈ വാക്യത്തിൽ പ്രത്യേക ദിവസമോ സമയമോ പറഞ്ഞിട്ടില്ല."
       },
       "scope_note": {
-        "ml": "ഉദ്ധരിച്ചത് ഖുർആൻ 5:64-ലെ ഒരു ഭാഗമാണ്; പൂർണ്ണ ആയത്തല്ല. ഗ്രന്ഥം ഇതിനെ ഉപയോഗിക്കുന്ന രീതിയാണ് ഇവിടെ രേഖപ്പെടുത്തിയത്; ആ രീതി ഖുർആൻ നിർദേശിക്കുന്നുവെന്നോ ഫലം തെളിയിക്കപ്പെട്ടുവെന്നോ അർഥമില്ല. ഹറകത്ത് വായനയ്ക്കായി ചേർത്തതാണ്.",
-        "en": "The quotation is part of Quran 5:64, not the complete verse. The book’s use of the passage is recorded here; this does not establish that the Quran prescribes that procedure or that its claimed result is proven. Reading vowels are editorial."
-      }
+        "en": "The quotation is part of Quran 5:64, not the complete verse. The book’s use of the passage is recorded here; this does not establish that the Quran prescribes that procedure or that its claimed result is proven. Reading vowels are editorial.",
+        "ml": "ഉദ്ധരിച്ചത് ഖുർആൻ 5:64-ലെ ഒരു ഭാഗമാണ്; പൂർണ്ണ ആയത്തല്ല. ഗ്രന്ഥം ഇതിനെ ഉപയോഗിക്കുന്ന രീതിയാണ് ഇവിടെ രേഖപ്പെടുത്തിയത്; ആ രീതി ഖുർആൻ നിർദേശിക്കുന്നുവെന്നോ ഫലം തെളിയിക്കപ്പെട്ടുവെന്നോ അർഥമില്ല. ഹറകത്ത് വായനയ്ക്കായി ചേർത്തതാണ്."
+      },
+      "translation": {
+        "en": "The quotation means: ‘We cast enmity and hatred between them until the Day of Resurrection.’ The book claims that writing the name one hundred times with this quotation and the names of two people united in something displeasing to Allah creates hostility and intense hatred between them. One hundred counts inscriptions, not recitations.",
+        "ml": "അറബി ഉദ്ധരണിയുടെ അർഥം: ‘അവർക്കിടയിൽ അന്ത്യനാൾവരെ വൈരവും വിദ്വേഷവും നാം ഇട്ടു.’ അല്ലാഹുവിന് അനിഷ്ടമായ ഒരു കാര്യത്തിനായി ഒന്നിക്കുന്ന രണ്ടു പേരുടെ പേരുകളോടും ഈ ഉദ്ധരണിയോടും കൂടി നാമം നൂറ് തവണ എഴുതിയാൽ അവർക്കിടയിൽ വൈരവും കടുത്ത വിദ്വേഷവും ഉണ്ടാകുമെന്നാണ് ഗ്രന്ഥത്തിലെ പരാമർശം. നൂറ് ഇവിടെ എഴുത്തിന്റെ എണ്ണമാണ്; ഓതലിന്റെ എണ്ണമല്ല."
+      },
+      "printed_page": "135–136",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one writes it a hundred times with the words of Him Most High ‘وألقينا بينهم العداوة والبغضاء إلى يوم القيامة’ and the names of two individuals who get together for something that displeases Allah, hostility will occur between them and they will intensely hate one another.",
+      "arabic_reading": "وَأَلْقَيْنَا بَيْنَهُمُ الْعَدَاوَةَ وَالْبَغْضَاءَ إِلَى يَوْمِ الْقِيَامَةِ",
+      "arabic_original": "وألقينا بينهم العداوة والبغضاء إلى يوم القيامة"
     },
     {
       "id": "english-paired-names-100-136",
-      "title": {
-        "ml": "രണ്ടു പേരുകൾ ചേർത്തുള്ള നൂറ് ആവർത്തനങ്ങളുടെ പരാമർശം",
-        "en": "One hundred repetitions of the paired names"
-      },
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 136,
-      "original_text": "If you want to know whether the spirits have come to you during any operation, say Shamkhāhīrin Shamhāhīrin [شمخاهير شمهاهير] a hundred times, then say, ‘If you have come, O spirits, then show me a ray of your light’ and a light resembling a sunray will appear.",
-      "translation": {
-        "ml": "ഒരു കർമത്തിനിടെ ആത്മാക്കൾ എത്തിയിട്ടുണ്ടോ എന്ന് അറിയാൻ شمخاهير, شمهاهير എന്നീ രണ്ടു പേരുകൾ ചേർത്ത് നൂറ് തവണ പറഞ്ഞശേഷം ‘ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിന്റെ ഒരു കിരണം എനിക്ക് കാണിക്കൂ’ എന്നു പറയണമെന്ന് ഗ്രന്ഥം വിവരിക്കുന്നു. തുടർന്ന് സൂര്യകിരണത്തോട് സാമ്യമുള്ള പ്രകാശം കാണുമെന്നാണ് അതിലെ അവകാശവാദം.",
-        "en": "The book describes saying the paired names شمخاهير and شمهاهير one hundred times during an operation, then asking arriving spirits to show a ray of their light. It claims that light like a sunray appears."
-      },
       "count": 100,
+      "title": {
+        "en": "One hundred repetitions of the paired names",
+        "ml": "രണ്ടു പേരുകൾ ചേർത്തുള്ള നൂറ് ആവർത്തനങ്ങളുടെ പരാമർശം"
+      },
       "timing": {
-        "ml": "കർമത്തിനിടെ എന്നാണ് പരാമർശം; പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ ഇല്ല.",
-        "en": "During an operation; no specific day or clock time is supplied."
+        "en": "During an operation; no specific day or clock time is supplied.",
+        "ml": "കർമത്തിനിടെ എന്നാണ് പരാമർശം; പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ ഇല്ല."
       },
       "scope_note": {
-        "ml": "നൂറ് എന്നത് രണ്ടു പേരുകൾ ചേർത്തുള്ള ആവർത്തനമാണ്. മുമ്പത്തെ നൂറ് എഴുത്തുകളുടെ പരാമർശത്തിൽനിന്ന് ഇത് വേറെയാണ്. അറബി പതിപ്പിൽ രണ്ടാമത്തെ നാമത്തിന്റെ എഴുത്ത് വ്യത്യസ്തമാണ്; ഇവിടെ ഈ ഇംഗ്ലീഷ് പതിപ്പിലെ രൂപം തന്നെയാണ് രേഖപ്പെടുത്തിയത്.",
-        "en": "One hundred applies to repetition of the pair, separately from the preceding hundred-inscription account. The second name differs in the Arabic edition; the spelling here follows this English edition."
-      }
+        "en": "One hundred applies to repetition of the pair, separately from the preceding hundred-inscription account. The second name differs in the Arabic edition; the spelling here follows this English edition.",
+        "ml": "നൂറ് എന്നത് രണ്ടു പേരുകൾ ചേർത്തുള്ള ആവർത്തനമാണ്. മുമ്പത്തെ നൂറ് എഴുത്തുകളുടെ പരാമർശത്തിൽനിന്ന് ഇത് വേറെയാണ്. അറബി പതിപ്പിൽ രണ്ടാമത്തെ നാമത്തിന്റെ എഴുത്ത് വ്യത്യസ്തമാണ്; ഇവിടെ ഈ ഇംഗ്ലീഷ് പതിപ്പിലെ രൂപം തന്നെയാണ് രേഖപ്പെടുത്തിയത്."
+      },
+      "translation": {
+        "en": "The book describes saying the paired names شمخاهير and شمهاهير one hundred times during an operation, then asking arriving spirits to show a ray of their light. It claims that light like a sunray appears.",
+        "ml": "ഒരു കർമത്തിനിടെ ആത്മാക്കൾ എത്തിയിട്ടുണ്ടോ എന്ന് അറിയാൻ شمخاهير, شمهاهير എന്നീ രണ്ടു പേരുകൾ ചേർത്ത് നൂറ് തവണ പറഞ്ഞശേഷം ‘ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിന്റെ ഒരു കിരണം എനിക്ക് കാണിക്കൂ’ എന്നു പറയണമെന്ന് ഗ്രന്ഥം വിവരിക്കുന്നു. തുടർന്ന് സൂര്യകിരണത്തോട് സാമ്യമുള്ള പ്രകാശം കാണുമെന്നാണ് അതിലെ അവകാശവാദം."
+      },
+      "printed_page": 136,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If you want to know whether the spirits have come to you during any operation, say Shamkhāhīrin Shamhāhīrin [شمخاهير شمهاهير] a hundred times, then say, ‘If you have come, O spirits, then show me a ray of your light’ and a light resembling a sunray will appear."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 135,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം خ; മൻസിൽ Sad al-Suud. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter خ and lunar mansion Sad al-Suud. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "شَمْهَاهِيرٍ",
+      "arabic_original": "شمهاهير",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
   ],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Almighty One, O Overpowering One.",
+    "ml": "കഴിവുള്ളവനേ, കീഴടക്കുന്നവനേ."
   }
 }

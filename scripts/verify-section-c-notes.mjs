@@ -31,3 +31,26 @@ for (const note of notes) {
   }
 }
 console.log('Section C: 21 bilingual notes, 42 server renders and five Arabic quotation blocks passed.');
+const strip = value => String(value || '').replace(/[\u064B-\u065F\u0670\s]/g, '');
+for (let number = 1; number <= 28; number++) {
+  const nameId = `HNK-MHC-${String(number).padStart(3, '0')}`;
+  const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${nameId}.json`, 'utf8'));
+  const reading = chapter.edition_accounts.find(entry => entry.id === 'english-reading-correspondence-review');
+  assert.ok(reading, `${nameId}: missing reviewed reading`);
+  if (reading.arabic_reading) assert.equal(strip(reading.arabic_reading), strip(reading.arabic_original));
+  const anchors = ['practices', 'edition_accounts', 'source_notes'].flatMap(group => (chapter[group] || []).map(entry => `source-${nameId}-${group}-${entry.id}`));
+  assert.equal(new Set(anchors).size, anchors.length);
+  for (const language of ['ml', 'en']) {
+    const html = render(chapter, language);
+    assert.ok(html.includes(escape(reading.translation[language])));
+    for (const anchor of anchors) assert.ok(html.includes(`id="${anchor}"`), `${nameId}: missing subject target ${anchor}`);
+    for (const figure of chapter.edition_figures || []) {
+      assert.ok(fs.existsSync(`public${figure.image_path}`));
+      assert.ok(html.includes(figure.image_path));
+      assert.ok(html.includes(escape(figure.caption[language])));
+    }
+  }
+}
+const externalSources = JSON.parse(fs.readFileSync('src/data/holyNamesExternalSources.json', 'utf8'));
+assert.equal(new Set(externalSources.flatMap(source => source.related_name_ids).filter(id => id.startsWith('HNK-MHC-'))).size, 28);
+console.log('All 28 chapters: 56 bilingual renders, subject targets, source reading letters, scan figures and 28 outside-source links passed.');

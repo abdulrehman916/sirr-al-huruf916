@@ -1,50 +1,90 @@
 {
   "name_id": "HNK-MHC-018",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 72,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا عظيم يا حكيم",
-  "meaning_translation": {
-    "ml": "മഹാനായവനേ, ജ്ഞാനിയായവനേ.",
-    "en": "O Great One, O All-wise One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 72,
+  "source_notes": [
+    {
+      "id": "english-extended-018",
+      "title": {
+        "en": "Pronunciation, meanings and three accounts",
+        "ml": "വായന, അർഥങ്ങൾ, മൂന്ന് പരാമർശങ്ങൾ"
+      },
+      "name_id": "HNK-MHC-018",
+      "translation": {
+        "en": "The measure is aqta‘a dhib. The spelling description gives hamza/fatha, nun/sukun, ghayn/fatha, first lam/fatha, second lam/kasra, ya/sukun and a nunated ta (ط). Correspondences are sad and al-Qalb. Meanings include ‘O Great One, O All-wise One,’ ‘O All-wise One, O All-knowing One, O Generous One,’ or ‘the Most Merciful and Compassionate.’\nThe first account describes a name and Surah al-Fil inscription on an unfired potsherd, pulverized and cast toward an enemy’s house, with a claim that its inhabitants depart. The second links many recitations and an intention with extinguishing fire, with no fixed count. The third links a bowl inscription washed off with water and sprinkled where apparitions occur with their departure; that account appears separately above. These historical claims are not established fire-safety methods.",
+        "ml": "വസ്ന് aqta‘a dhib. ഹംസയ്ക്ക് ഫത്ഹ, ن-യ്ക്ക് സുകൂൻ, غ-യ്ക്ക് ഫത്ഹ, ആദ്യ ل-യ്ക്ക് ഫത്ഹ, രണ്ടാമത്തെ ل-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള ط എന്നാണ് പുസ്തകത്തിലെ വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ص; മൻസിൽ അൽ-ഖൽബ്. ‘മഹാനായവനേ, യുക്തിമാനേ’, ‘യുക്തിമാനേ, എല്ലാം അറിയുന്നവനേ, ഉദാരനായവനേ’, ‘ഏറ്റവും കരുണയും ദയയുമുള്ളവൻ’ എന്നീ അർഥാഭിപ്രായങ്ങൾ നൽകുന്നു.\nആദ്യ പരാമർശം: പേര് സൂറത്ത് അൽ-ഫീലിനൊപ്പം ചുട്ടെടുക്കാത്ത മൺപാത്രക്കഷണത്തിൽ എഴുതുകയും പൊടിക്കുകയും ശത്രുവിന്റെ വീടിന്റെ ദിശയിലേക്ക് ഇടുകയും ചെയ്യുന്നതിനെ അവിടെയുള്ളവർ സ്ഥലം വിട്ടുപോകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. രണ്ടാമത്തേത്: പേര് പലതവണ വായിച്ച് തീ അണയണമെന്ന ഉദ്ദേശം വച്ചാൽ തീ അണയുമെന്ന അവകാശവാദം; നിശ്ചിത എണ്ണം നൽകിയിട്ടില്ല. മൂന്നാമത്തേത്: ഒരു പാത്രത്തിലെ എഴുത്ത് വെള്ളത്തിൽ കഴുകിയെടുത്ത് പ്രത്യക്ഷരൂപങ്ങൾ കാണുന്ന സ്ഥലത്ത് തളിക്കുന്നതിനെ അവ മാറിപ്പോകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. മൂന്നാമത്തെ പരാമർശത്തിന്റെ പ്രത്യേക ഭാഗം മുകളിൽ നൽകിയിരിക്കുന്നു. ഈ ചരിത്രപരമായ വിവരണങ്ങളെ അഗ്നിസുരക്ഷയ്ക്കുള്ള തെളിയിക്കപ്പെട്ട മാർഗമായി അവതരിപ്പിക്കുന്നില്ല."
+      },
+      "printed_page": "129–130",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا عظيم يا حكيم",
   "edition_accounts": [
     {
       "id": "english-apparitions-water",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 130,
-      "title": {
-        "ml": "സ്ഥലവുമായി ബന്ധപ്പെട്ട പരമ്പരാഗത പരാമർശം",
-        "en": "A traditional place-related account"
-      },
-      "original_text": "If one writes it in a bowl, washes it off with water, and sprinkles it in a place in which are apparitions, they will depart from it.",
-      "translation": {
-        "ml": "പേര് ഒരു പാത്രത്തിൽ എഴുതി വെള്ളംകൊണ്ട് മായ്ച്ച്, പ്രത്യക്ഷരൂപങ്ങൾ ഉണ്ടെന്നു പറയുന്ന സ്ഥലത്ത് ആ വെള്ളം തളിച്ചാൽ അവ അവിടെനിന്ന് പോകുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
-        "en": "If one writes it in a bowl, washes it off with water, and sprinkles it in a place in which are apparitions, they will depart from it."
-      },
       "count": null,
+      "title": {
+        "en": "A traditional place-related account",
+        "ml": "സ്ഥലവുമായി ബന്ധപ്പെട്ട പരമ്പരാഗത പരാമർശം"
+      },
       "timing": {
-        "ml": "നിശ്ചിത എണ്ണമോ ദിവസമോ മണിക്കൂറോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No fixed count, day or hour is stated."
+        "en": "No fixed count, day or hour is stated.",
+        "ml": "നിശ്ചിത എണ്ണമോ ദിവസമോ മണിക്കൂറോ പറഞ്ഞിട്ടില്ല."
       },
       "scope_note": {
-        "ml": "ഇത് പുസ്തകത്തിലെ വിശ്വാസപരമായ വിവരണമാണ്; പ്രത്യക്ഷരൂപങ്ങളുടെ സാന്നിധ്യമോ ഈ രീതിയുടെ ഫലമോ സ്ഥിരീകരിക്കുന്നില്ല.",
-        "en": "A belief-based book account; it does not establish the presence of apparitions or efficacy."
-      }
+        "en": "A belief-based book account; it does not establish the presence of apparitions or efficacy.",
+        "ml": "ഇത് പുസ്തകത്തിലെ വിശ്വാസപരമായ വിവരണമാണ്; പ്രത്യക്ഷരൂപങ്ങളുടെ സാന്നിധ്യമോ ഈ രീതിയുടെ ഫലമോ സ്ഥിരീകരിക്കുന്നില്ല."
+      },
+      "translation": {
+        "en": "If one writes it in a bowl, washes it off with water, and sprinkles it in a place in which are apparitions, they will depart from it.",
+        "ml": "പേര് ഒരു പാത്രത്തിൽ എഴുതി വെള്ളംകൊണ്ട് മായ്ച്ച്, പ്രത്യക്ഷരൂപങ്ങൾ ഉണ്ടെന്നു പറയുന്ന സ്ഥലത്ത് ആ വെള്ളം തളിച്ചാൽ അവ അവിടെനിന്ന് പോകുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം."
+      },
+      "printed_page": 130,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one writes it in a bowl, washes it off with water, and sprinkles it in a place in which are apparitions, they will depart from it."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 129,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ص; മൻസിൽ al-Qalb. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ص and lunar mansion al-Qalb. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "أَنْغَلَلِيطٍ",
+      "arabic_original": "أنغلليط",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
-  ]
+  ],
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Great One, O All-wise One.",
+    "ml": "മഹാനായവനേ, ജ്ഞാനിയായവനേ."
+  }
 }

@@ -1,91 +1,133 @@
 {
   "name_id": "HNK-MHC-002",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 68,
-  "source_name_form": "كَرِيرٍ",
-  "scope_note": {
-    "ml": "ഈ ഭാഗം രണ്ടാം പേരിനെക്കുറിച്ചുള്ള തിരഞ്ഞെടുത്ത ഗ്രന്ഥപരാമർശങ്ങളാണ്. ഇവ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്; മൂലപാഠപരിശോധന അവയുടെ ഫലങ്ങൾ തെളിയിക്കുന്നില്ല.",
-    "en": "Selected source accounts concerning the second name. These are traditional claims; checking the text does not establish their outcomes."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം: കാഫിന് ഫത്ഹ, റാഇന് കസ്റ, യാഇന് സുകൂൻ, അവസാന റാഇന് കസ്റ തൻവീൻ. അർത്ഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം; മറ്റൊരു അഭിപ്രായം: അല്ലാഹുവേ. ബന്ധപ്പെട്ട അക്ഷരം ب; മൻസിൽ البطين. നിലവിലെ പേരിന്റെ കണക്കുകൾ മാറ്റിയിട്ടില്ല.",
-    "en": "The source describes kaf with fatha, ra with kasra, an unvoweled ya, and final ra with kasra tanwin. Meaning: God of all things; alternatively, O God. Associated letter: ب; lunar mansion: البطين. Existing calculations are preserved."
+    "en": "The source describes kaf with fatha, ra with kasra, an unvoweled ya, and final ra with kasra tanwin. Meaning: God of all things; alternatively, O God. Associated letter: ب; lunar mansion: البطين. Existing calculations are preserved.",
+    "ml": "ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണം: കാഫിന് ഫത്ഹ, റാഇന് കസ്റ, യാഇന് സുകൂൻ, അവസാന റാഇന് കസ്റ തൻവീൻ. അർത്ഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം; മറ്റൊരു അഭിപ്രായം: അല്ലാഹുവേ. ബന്ധപ്പെട്ട അക്ഷരം ب; മൻസിൽ البطين. നിലവിലെ പേരിന്റെ കണക്കുകൾ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "nightly-100",
+      "claim": {
+        "en": "A source claim about seeing jinn and their service.",
+        "ml": "ജിന്നുകളെ കാണുന്നതും അവരുടെ സേവനവും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം."
+      },
       "count": 100,
       "title": {
-        "ml": "ഓരോ രാത്രിയിലും നൂറ് തവണ — ഗ്രന്ഥപരാമർശം",
-        "en": "One hundred times each night — source account"
-      },
-      "arabic_original": "ومن خواصه أن من واظب على قراءته كل ليلة مائة مرة فإنه يجتمع بالجن عيانا وربما يصيرون له خداما",
-      "translation": {
-        "ml": "ഓരോ രാത്രിയിലും ഈ പേര് നൂറ് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾ ജിന്നുകളെ നേരിൽ കാണുമെന്നും, ചിലപ്പോൾ അവർ അയാളുടെ സേവകരായിത്തീരുമെന്നും ഗ്രന്ഥം അവകാശപ്പെടുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ വിശ്വാസപരമായ വിവരണമാണ്; തെളിയിക്കപ്പെട്ട സംഭവമായി അവതരിപ്പിക്കുന്നില്ല.",
-        "en": "The source claims that habitual repetition one hundred times each night leads to seeing jinn, and possibly their becoming servants. This is the source’s belief-based account, not an established outcome."
+        "en": "One hundred times each night — source account",
+        "ml": "ഓരോ രാത്രിയിലും നൂറ് തവണ — ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ഓരോ രാത്രിയിലും. നിശ്ചിത മണിക്കൂറോ നമസ്കാരമോ ദിവസങ്ങളുടെ എണ്ണമോ ഈ നിർദ്ദേശത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "Each night. No clock hour, prayer, or number of days is specified in this instruction."
+        "en": "Each night. No clock hour, prayer, or number of days is specified in this instruction.",
+        "ml": "ഓരോ രാത്രിയിലും. നിശ്ചിത മണിക്കൂറോ നമസ്കാരമോ ദിവസങ്ങളുടെ എണ്ണമോ ഈ നിർദ്ദേശത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ജിന്നുകളെ കാണുന്നതും അവരുടെ സേവനവും സംബന്ധിച്ച ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
-        "en": "A source claim about seeing jinn and their service."
-      }
+      "translation": {
+        "en": "The source claims that habitual repetition one hundred times each night leads to seeing jinn, and possibly their becoming servants. This is the source’s belief-based account, not an established outcome.",
+        "ml": "ഓരോ രാത്രിയിലും ഈ പേര് നൂറ് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾ ജിന്നുകളെ നേരിൽ കാണുമെന്നും, ചിലപ്പോൾ അവർ അയാളുടെ സേവകരായിത്തീരുമെന്നും ഗ്രന്ഥം അവകാശപ്പെടുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ വിശ്വാസപരമായ വിവരണമാണ്; തെളിയിക്കപ്പെട്ട സംഭവമായി അവതരിപ്പിക്കുന്നില്ല."
+      },
+      "arabic_original": "ومن خواصه أن من واظب على قراءته كل ليلة مائة مرة فإنه يجتمع بالجن عيانا وربما يصيرون له خداما"
     },
     {
       "id": "merchandise-11",
+      "claim": {
+        "en": "The source claims protection of merchandise against theft.",
+        "ml": "വ്യാപാരവസ്തുക്കൾ മോഷ്ടിക്കപ്പെടാതിരിക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം."
+      },
       "count": 11,
       "title": {
-        "ml": "വ്യാപാരവസ്തുക്കളിൽ സൂക്ഷിക്കുന്ന എഴുത്ത് — ഗ്രന്ഥപരാമർശം",
-        "en": "An inscription kept with merchandise — source account"
-      },
-      "arabic_original": "ومن كتبه ١١ مرة في ورقة ووضعها في مال التجار لا يسرق",
-      "translation": {
-        "ml": "ഈ പേര് ഒരു കടലാസിൽ പതിനൊന്ന് തവണ എഴുതി വ്യാപാരിയുടെ വസ്തുക്കളോടൊപ്പം വെച്ചാൽ അവ മോഷ്ടിക്കപ്പെടില്ലെന്ന് ഗ്രന്ഥം പറയുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
-        "en": "The source describes writing the name eleven times on paper and placing it with a trader’s goods, claiming that they will not be stolen."
+        "en": "An inscription kept with merchandise — source account",
+        "ml": "വ്യാപാരവസ്തുക്കളിൽ സൂക്ഷിക്കുന്ന എഴുത്ത് — ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated."
+        "en": "No specific time or day is stated.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "വ്യാപാരവസ്തുക്കൾ മോഷ്ടിക്കപ്പെടാതിരിക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
-        "en": "The source claims protection of merchandise against theft."
-      }
+      "translation": {
+        "en": "The source describes writing the name eleven times on paper and placing it with a trader’s goods, claiming that they will not be stolen.",
+        "ml": "ഈ പേര് ഒരു കടലാസിൽ പതിനൊന്ന് തവണ എഴുതി വ്യാപാരിയുടെ വസ്തുക്കളോടൊപ്പം വെച്ചാൽ അവ മോഷ്ടിക്കപ്പെടില്ലെന്ന് ഗ്രന്ഥം പറയുന്നു. ഇത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+      },
+      "arabic_original": "ومن كتبه ١١ مرة في ورقة ووضعها في مال التجار لا يسرق"
     },
     {
       "id": "historical-eye-account-17",
+      "claim": {
+        "en": "A historical healing claim, not an established medical effect.",
+        "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം; ചികിത്സാഫലമായി സ്ഥിരീകരിച്ചിട്ടില്ല."
+      },
       "count": 17,
       "title": {
-        "ml": "കണ്ണിനെക്കുറിച്ചുള്ള ചരിത്രപരമായ പരാമർശം — ചികിത്സാനിർദേശമല്ല",
-        "en": "Historical eye-related account — not medical guidance"
-      },
-      "arabic_original": "ومن كتبه بماء قراح في طبق وغسل به العين الرمدة ١٧ مرة ثلاثة أيام أبرأه الله تعالى",
-      "translation": {
-        "ml": "പേര് തെളിഞ്ഞ വെള്ളത്തിൽ ഒരു പാത്രത്തിൽ എഴുതി, അതുകൊണ്ട് രോഗബാധിതമായ കണ്ണ് പതിനേഴ് തവണ കഴുകുന്നത് മൂന്നു ദിവസം ചെയ്താൽ അല്ലാഹു സുഖപ്പെടുത്തുമെന്നാണ് ഈ ചരിത്രഗ്രന്ഥത്തിലെ അവകാശവാദം. ഇത് വെള്ളിപ്പലകയെയോ സമ്പത്ത് ലഭിക്കുന്നതിനെയോ കുറിച്ചുള്ള വാക്യമല്ല. കണ്ണിന്റെ ചികിത്സയ്ക്കോ കണ്ണിൽ എഴുത്തുവെള്ളം ഉപയോഗിക്കാനോ ഉള്ള നിർദേശമായി ഇതിനെ കാണരുത്.",
-        "en": "This historical passage describes writing the name with clear water in a dish and washing a sore eye seventeen times over three days, claiming healing by God. It does not concern a silver plate or acquiring wealth. It is not advice to treat an eye or apply inscription water to it."
+        "en": "Historical eye-related account — not medical guidance",
+        "ml": "കണ്ണിനെക്കുറിച്ചുള്ള ചരിത്രപരമായ പരാമർശം — ചികിത്സാനിർദേശമല്ല"
       },
       "timing": {
-        "ml": "മൂന്നു ദിവസം; പ്രത്യേക മണിക്കൂറോ നമസ്കാരശേഷമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "Three days; no specific hour or prayer is stated."
+        "en": "Three days; no specific hour or prayer is stated.",
+        "ml": "മൂന്നു ദിവസം; പ്രത്യേക മണിക്കൂറോ നമസ്കാരശേഷമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം; ചികിത്സാഫലമായി സ്ഥിരീകരിച്ചിട്ടില്ല.",
-        "en": "A historical healing claim, not an established medical effect."
+      "translation": {
+        "en": "This historical passage describes writing the name with clear water in a dish and washing a sore eye seventeen times over three days, claiming healing by God. It does not concern a silver plate or acquiring wealth. It is not advice to treat an eye or apply inscription water to it.",
+        "ml": "പേര് തെളിഞ്ഞ വെള്ളത്തിൽ ഒരു പാത്രത്തിൽ എഴുതി, അതുകൊണ്ട് രോഗബാധിതമായ കണ്ണ് പതിനേഴ് തവണ കഴുകുന്നത് മൂന്നു ദിവസം ചെയ്താൽ അല്ലാഹു സുഖപ്പെടുത്തുമെന്നാണ് ഈ ചരിത്രഗ്രന്ഥത്തിലെ അവകാശവാദം. ഇത് വെള്ളിപ്പലകയെയോ സമ്പത്ത് ലഭിക്കുന്നതിനെയോ കുറിച്ചുള്ള വാക്യമല്ല. കണ്ണിന്റെ ചികിത്സയ്ക്കോ കണ്ണിൽ എഴുത്തുവെള്ളം ഉപയോഗിക്കാനോ ഉള്ള നിർദേശമായി ഇതിനെ കാണരുത്."
       },
-      "arabic_reading": "وَمَنْ كَتَبَهُ بِمَاءٍ قَرَاحٍ فِي طَبَقٍ وَغَسَلَ بِهِ الْعَيْنَ الرَّمِدَةَ ١٧ مَرَّةً ثَلَاثَةَ أَيَّامٍ أَبْرَأَهُ اللَّهُ تَعَالَى"
+      "arabic_reading": "وَمَنْ كَتَبَهُ بِمَاءٍ قَرَاحٍ فِي طَبَقٍ وَغَسَلَ بِهِ الْعَيْنَ الرَّمِدَةَ ١٧ مَرَّةً ثَلَاثَةَ أَيَّامٍ أَبْرَأَهُ اللَّهُ تَعَالَى",
+      "arabic_original": "ومن كتبه بماء قراح في طبق وغسل به العين الرمدة ١٧ مرة ثلاثة أيام أبرأه الله تعالى"
     }
   ],
+  "scope_note": {
+    "en": "Selected source accounts concerning the second name. These are traditional claims; checking the text does not establish their outcomes.",
+    "ml": "ഈ ഭാഗം രണ്ടാം പേരിനെക്കുറിച്ചുള്ള തിരഞ്ഞെടുത്ത ഗ്രന്ഥപരാമർശങ്ങളാണ്. ഇവ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്; മൂലപാഠപരിശോധന അവയുടെ ഫലങ്ങൾ തെളിയിക്കുന്നില്ല."
+  },
   "edition_note": {
-    "ml": "അറബി പേജ് 68-ലെ العين الرمدة (രോഗബാധിതമായ കണ്ണ്), أبرأه (സുഖപ്പെടുത്തി) എന്നീ വാക്കുകൾ വീണ്ടും ഒത്തുനോക്കി. മുൻപ് നൽകിയ വെള്ളിപ്പലക/സമ്പത്ത് എന്ന തെറ്റായ വിവർത്തനം തിരുത്തി. ഇംഗ്ലീഷ് പേജ് 110-ലും കണ്ണിനെക്കുറിച്ചുള്ള ഈ പരാമർശമാണ്. പിന്നാലെയുള്ള ആദ്യ രണ്ടു പേരുകൾ ചേർത്തുള്ള പരാമർശങ്ങൾ ഈ ഭാഗത്തിൽ ഉൾപ്പെട്ടിട്ടില്ല.",
-    "en": "The words العين الرمدة (sore eye) and أبرأه (healed) were rechecked on Arabic page 68. The previous mistranslation about silver and wealth was corrected. English page 110 likewise concerns an eye. Subsequent accounts combining the first two names are outside this selected passage."
+    "en": "The words العين الرمدة (sore eye) and أبرأه (healed) were rechecked on Arabic page 68. The previous mistranslation about silver and wealth was corrected. English page 110 likewise concerns an eye. Subsequent accounts combining the first two names are outside this selected passage.",
+    "ml": "അറബി പേജ് 68-ലെ العين الرمدة (രോഗബാധിതമായ കണ്ണ്), أبرأه (സുഖപ്പെടുത്തി) എന്നീ വാക്കുകൾ വീണ്ടും ഒത്തുനോക്കി. മുൻപ് നൽകിയ വെള്ളിപ്പലക/സമ്പത്ത് എന്ന തെറ്റായ വിവർത്തനം തിരുത്തി. ഇംഗ്ലീഷ് പേജ് 110-ലും കണ്ണിനെക്കുറിച്ചുള്ള ഈ പരാമർശമാണ്. പിന്നാലെയുള്ള ആദ്യ രണ്ടു പേരുകൾ ചേർത്തുള്ള പരാമർശങ്ങൾ ഈ ഭാഗത്തിൽ ഉൾപ്പെട്ടിട്ടില്ല."
   },
+  "printed_page": 68,
+  "source_notes": [
+    {
+      "id": "english-extended-002",
+      "title": {
+        "en": "Second-name pronunciation and accounts paired with the first name",
+        "ml": "രണ്ടാം നാമത്തിന്റെ വായനയും ഒന്നാം പേരിനൊപ്പം വരുന്ന പരാമർശങ്ങളും"
+      },
+      "name_id": "HNK-MHC-002",
+      "translation": {
+        "en": "The measure is fa‘il, with kaf/fatha, ra/kasra, ya/sukun and a nunated ra. Correspondences are ba and al-Butain. Meanings are ‘the God of all things’ or ‘O God.’ The nightly hundred recitations, eleven merchandise inscriptions and seventeen-wash/three-day eye account appear separately above.\nPage 111 adds accounts pairing names one and two: food inscription or recitation over drinking water is linked to love; an amber-ring engraving carried by an unmarried girl without proposals is linked to a proposal; and written paired names among unsold merchandise are linked to profitable sales. No fixed recitation count or time is supplied for these paragraphs. They are not relabelled as single-name accounts.",
+        "ml": "വസ്ന് fa‘il. ك-യ്ക്ക് ഫത്ഹ, ر-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള ر എന്നാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ب; മൻസിൽ അൽ-ബുതൈൻ. അർഥം ‘എല്ലാ കാര്യങ്ങളുടെയും ദൈവം’; മറ്റൊരു അഭിപ്രായത്തിൽ ‘അല്ലാഹുവേ’. രാത്രിയിലെ 100 വായന, വ്യാപാരവസ്തുക്കൾക്കിടയിലെ 11 എഴുത്ത്, കണ്ണിന്റെ അസുഖത്തെക്കുറിച്ചുള്ള 17 തവണ–മൂന്നു ദിവസം എന്ന പരാമർശങ്ങൾ മുകളിലെ പ്രത്യേക ഭാഗങ്ങളിൽ നൽകിയിരിക്കുന്നു.\n111-ാം പേജിൽ ഒന്നും രണ്ടും പേരുകൾ സംയുക്തമായി വരുന്ന മറ്റു പരാമർശങ്ങളുണ്ട്: ഭക്ഷണത്തിൽ എഴുതിനൽകുകയോ വെള്ളത്തിനുമീതെ രണ്ടു പേരുകളും പറഞ്ഞ് കുടിക്കാൻ നൽകുകയോ ചെയ്യുന്നതിനെ സ്നേഹം ഉണ്ടാകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. രണ്ടു പേരുകളും amber മോതിരത്തിൽ കൊത്തിവച്ച് വിവാഹാലോചന ലഭിക്കാത്ത പെൺകുട്ടി കൈവശം വയ്ക്കുന്നതിനെ വിവാഹാലോചന വരുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. വിൽക്കാതെ കിടക്കുന്ന വ്യാപാരവസ്തുക്കൾക്കിടയിൽ രണ്ടു പേരുകളും എഴുതി വയ്ക്കുന്നതിനെ ലാഭമുള്ള വിൽപ്പനയുമായി ബന്ധിപ്പിക്കുന്നു. ഇവയ്ക്ക് ഈ ഖണ്ഡത്തിൽ നിശ്ചിത ഓതൽഎണ്ണമോ സമയമോ നൽകുന്നില്ല; ഒറ്റ പേരിന്റെ രീതിയായി മാറ്റിയിട്ടില്ല."
+      },
+      "printed_page": "110–111",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية إله كل شيء وقيل يا الله",
+  "source_name_form": "كَرِيرٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം. മറ്റൊരു അഭിപ്രായത്തിൽ: അല്ലാഹുവേ.",
-    "en": "The source’s Arabic meaning is God of all things; alternatively, O Allah."
+    "en": "The source’s Arabic meaning is God of all things; alternatively, O Allah.",
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: എല്ലാ വസ്തുക്കളുടെയും ദൈവം. മറ്റൊരു അഭിപ്രായത്തിൽ: അല്ലാഹുവേ."
   },
-  "source_review_revision": "scan-recheck-2026-10-08"
+  "source_review_revision": "scan-recheck-2026-10-08",
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 110,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ب; മൻസിൽ al-Butain. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ب and lunar mansion al-Butain. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "كَرِيرٍ",
+      "arabic_original": "كرير",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

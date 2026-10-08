@@ -1,54 +1,108 @@
 {
+  "figure": {
+    "caption": {
+      "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending.",
+      "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+    },
+    "image_path": "/figures/qazmaz-manba-p72.svg"
+  },
   "name_id": "HNK-MHC-017",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 72,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا مهيمن",
-  "meaning_translation": {
-    "ml": "കാത്തുപരിപാലിക്കുന്നവനേ.",
-    "en": "O All-vigilant One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": null,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن أراد الخلاص من عدو له فليكثر من ذكر بشكيلخ قزمز",
-      "translation": {
-        "ml": "ശത്രുവിൽനിന്ന് രക്ഷ തേടുന്ന ഒരാൾ ബശ്കീലഖ്, ഖസ്മസ് എന്നീ രണ്ടു പേരുകളും കൂടുതലായി വായിക്കണമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്. ഈ സംയുക്തവാക്യത്തിൽ എണ്ണമോ സമയമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "The source describes frequent combined repetition of Bashkaylakh and Qazmaz for claimed rescue from an enemy. This combined sentence gives no count or timing."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source describes frequent combined repetition of Bashkaylakh and Qazmaz for claimed rescue from an enemy. This combined sentence gives no count or timing.",
+        "ml": "ശത്രുവിൽനിന്ന് രക്ഷ തേടുന്ന ഒരാൾ ബശ്കീലഖ്, ഖസ്മസ് എന്നീ രണ്ടു പേരുകളും കൂടുതലായി വായിക്കണമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്. ഈ സംയുക്തവാക്യത്തിൽ എണ്ണമോ സമയമോ പറഞ്ഞിട്ടില്ല."
+      },
+      "arabic_original": "ومن أراد الخلاص من عدو له فليكثر من ذكر بشكيلخ قزمز"
     }
   ],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
-  "figure": {
-    "image_path": "/figures/qazmaz-manba-p72.svg",
-    "caption": {
-      "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-      "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending."
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 72,
+  "source_notes": [
+    {
+      "id": "english-extended-017",
+      "title": {
+        "en": "Square, one hundred collective repetitions and paired names",
+        "ml": "കളം, മുഴുവൻ മന്ത്രത്തിന്റെ നൂറ് ആവർത്തനം, സംയുക്ത നാമങ്ങൾ"
+      },
+      "name_id": "HNK-MHC-017",
+      "translation": {
+        "en": "The measure is maq‘ad, with qaf/fatha, zay/sukun, mim/fatha and a nunated zay. Correspondences are fa and al-Iklil. Meanings are ‘O All-vigilant One’ or ‘Mighty is God, Most Merciful and Compassionate’; the book traditionally attributes it as ‘Isa’s glorification.\nThe account describes a new blue silk cloth bearing the name and square, placed in a bag containing a few dirhams, hung from boxthorn, with raw ambergris and musk incense and one hundred recitations of the entire conjuration on Thursday night. It claims blessing and inexhaustible dirhams. One hundred applies to the entire invocation, not this name alone. The printed night designation is not silently converted to a regional calendar convention.\nThe English edition’s square rows are 10,50,1000 / 1000,10,50 / 50,1000,10. These are not combined with the Arabic-edition image to invent a new square. Frequent combined recitation of names sixteen and seventeen is linked to rescue from an enemy without a fixed count.",
+        "ml": "വസ്ന് maq‘ad. ق-യ്ക്ക് ഫത്ഹ, ز-യ്ക്ക് സുകൂൻ, م-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ز എന്നാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ف; മൻസിൽ അൽ-ഇക്‌ലീൽ. ‘എല്ലാം നിരീക്ഷിക്കുന്നവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘ഏറ്റവും കരുണയും ദയയുമുള്ള അല്ലാഹു മഹാശക്തനാണ്’ എന്നും അർഥം നൽകുന്നു. ഈസാ നബിയുടെ തസ്ബീഹെന്ന പരമ്പരാഗത ബന്ധിപ്പിക്കലും ഗ്രന്ഥത്തിലുണ്ട്.\nപുതിയ നീല പട്ടുതുണിയിൽ പേരും കളവും എഴുതുക, കുറച്ച് ദിർഹമുകളുള്ള ഒരു സഞ്ചിയിൽ വയ്ക്കുക, boxthorn ചെടിയുടെ കൊമ്പിൽ സഞ്ചി തൂക്കുക, അസംസ്കൃത ambergris-വും കസ്തൂരിയും ധൂപമാക്കുക, വ്യാഴാഴ്ച രാത്രിയിൽ മുഴുവൻ സംയുക്ത മന്ത്രം നൂറ് തവണ വായിക്കുക എന്നിങ്ങനെയുള്ള പരാമർശം തുടർന്ന് വരുന്നു. സഞ്ചിയിൽ ബറകത്ത് ഇറങ്ങുകയും ദിർഹമുകൾ തീരാതിരിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. നൂറ് എന്നത് ഈ പേരിന് മാത്രമല്ല, മുഴുവൻ മന്ത്രത്തിനാണ്. വ്യാഴാഴ്ച രാത്രിയെ ഏതെങ്കിലും പ്രദേശത്തിന്റെ കലണ്ടർനിയമം അനുസരിച്ച് സ്വമേധയാ മാറ്റിയിട്ടില്ല.\nപുസ്തകത്തിലെ ഇംഗ്ലീഷ് പതിപ്പിലെ കളത്തിൽ വരികൾ 10,50,1000 / 1000,10,50 / 50,1000,10 എന്നാണ്. നിലവിലുള്ള അറബി പതിപ്പിന്റെ കൃത്യമായ ചിത്രവുമായി ഈ അക്കങ്ങളെ കലർത്തി ഒരു പുതിയ കളം നിർമ്മിച്ചിട്ടില്ല. 16,17 പേരുകൾ ചേർത്ത് പതിവായി വായിക്കുന്നതിനെ ശത്രുവിൽനിന്നുള്ള രക്ഷയുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു; അതിന് നിശ്ചിത എണ്ണം നൽകുന്നില്ല."
+      },
+      "printed_page": "128–129",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
     }
-  }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا مهيمن",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O All-vigilant One.",
+    "ml": "കാത്തുപരിപാലിക്കുന്നവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 128,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ف; മൻസിൽ al-Iklil. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ف and lunar mansion al-Iklil. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "قَزْمَزٍ",
+      "arabic_original": "قزمز",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ],
+  "edition_figures": [
+    {
+      "image_path": "/figures/qazmaz-english-p129.png",
+      "caption": {
+        "ml": "17-ാം നാമത്തിന്റെ ഇംഗ്ലീഷ് പതിപ്പിലെ 3×3 കളം. വരികൾ: 10,50,1000 / 1000,10,50 / 50,1000,10. ഓരോ വരിയും 1060. ഇത് മൂലപേജിൽ നിന്നുള്ള ചിത്രം.",
+        "en": "The seventeenth name’s English-edition 3×3 square, with each row totalling 1060. Direct crop of the source page."
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "printed_page": 129,
+      "review_status": "checked_against_scan"
+    }
+  ]
 }

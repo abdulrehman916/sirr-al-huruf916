@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-004",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 68,
-  "source_name_form": "طُورَانٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
-  },
   "name_note": {
-    "ml": "അർത്ഥം: ജീവിച്ചിരിക്കുന്നവനേ; മറ്റൊരു അഭിപ്രായം: ജീവൻ നൽകുന്നവനേ. ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണമാണ് ഹരക്കത്തിന്റെ അടിസ്ഥാനം.",
-    "en": "Meaning: O Living One; alternatively, O Giver of Life. Vowel marks follow the source pronunciation description."
+    "en": "Meaning: O Living One; alternatively, O Giver of Life. Vowel marks follow the source pronunciation description.",
+    "ml": "അർത്ഥം: ജീവിച്ചിരിക്കുന്നവനേ; മറ്റൊരു അഭിപ്രായം: ജീവൻ നൽകുന്നവനേ. ഗ്രന്ഥത്തിലെ ഉച്ചാരണവിവരണമാണ് ഹരക്കത്തിന്റെ അടിസ്ഥാനം."
   },
   "practices": [
     {
       "id": "protection-five",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": 5,
       "title": {
-        "ml": "സംരക്ഷണത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശം",
-        "en": "Source account concerning protection"
-      },
-      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع آخر أربع آيات آخر سورة الحشر وثلاث هاءات وخمس همزات حرس من سطوة الإنس والجن والجبابرة",
-      "translation": {
-        "ml": "ഈ പേര് അഞ്ചു തവണ, സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, അഞ്ച് ഹംസകൾ എന്നിവയ്ക്കൊപ്പം എഴുതി കൈവശം വെക്കുന്നതിനെക്കുറിച്ച് ഗ്രന്ഥം പറയുന്നു. മനുഷ്യർ, ജിന്നുകൾ, അധികാരദുരുപയോഗം ചെയ്യുന്നവർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്ന് സംരക്ഷണം ലഭിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. ഈ കുറിപ്പ് ആയത്തുകളുടെ പൂർണ്ണ പാഠത്തിന് പകരമല്ല.",
-        "en": "The source describes five inscriptions together with the last four verses of al-Hashr, three ha letters and five hamzas, carried for claimed protection against humans, jinn and tyrants. This note does not substitute for the complete verse text."
+        "en": "Source account concerning protection",
+        "ml": "സംരക്ഷണത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this instruction."
+        "en": "No specific time or day is stated in this instruction.",
+        "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source describes five inscriptions together with the last four verses of al-Hashr, three ha letters and five hamzas, carried for claimed protection against humans, jinn and tyrants. This note does not substitute for the complete verse text.",
+        "ml": "ഈ പേര് അഞ്ചു തവണ, സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, അഞ്ച് ഹംസകൾ എന്നിവയ്ക്കൊപ്പം എഴുതി കൈവശം വെക്കുന്നതിനെക്കുറിച്ച് ഗ്രന്ഥം പറയുന്നു. മനുഷ്യർ, ജിന്നുകൾ, അധികാരദുരുപയോഗം ചെയ്യുന്നവർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്ന് സംരക്ഷണം ലഭിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. ഈ കുറിപ്പ് ആയത്തുകളുടെ പൂർണ്ണ പാഠത്തിന് പകരമല്ല."
+      },
+      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع آخر أربع آيات آخر سورة الحشر وثلاث هاءات وخمس همزات حرس من سطوة الإنس والجن والجبابرة"
     }
   ],
-  "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
   },
+  "edition_note": {
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+  },
+  "printed_page": 68,
+  "source_notes": [
+    {
+      "id": "english-extended-004",
+      "title": {
+        "en": "Fourth-name pronunciation and remaining accounts",
+        "ml": "നാലാം പേരിന്റെ വായനയും ശേഷിക്കുന്ന പരാമർശങ്ങളും"
+      },
+      "name_id": "HNK-MHC-004",
+      "translation": {
+        "en": "The measure is fu‘lan: ta (ط)/damma, waw/sukun, ra/fatha, alif and a nunated nun. Correspondences are dal and al-Dabaran. Meanings are ‘O Living One’ or ‘O Giver of Life.’ The five-inscription protection account with the final four al-Hashr verses, three ha letters and five hamzas appears above.\nThe source links one thousand nightly repetitions, with a revenge charge after each hundred, to a three-day claim against an oppressor. A different account links twenty-one inscriptions on bread, divided and eaten by a prisoner, to deliverance; twenty-one counts inscriptions.\nIt links written first-four names hung on an afflicted person to restored consciousness and relief from possession or sorcery, and their inscription washed with rose water and rubbed on the face to fulfilment of a need. Further paragraphs describe two names on a scryer’s forehead and paired recitation in seclusion with fragrant incense for success, spirit obedience and fulfilment. Exact printed identification of the pair remains pending; no names are guessed. Medical outcomes are source claims only.",
+        "ml": "വസ്ന് fu‘lan. ط-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ر-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا, അവസാനം തൻവീനുള്ള ن എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം د; മൻസിൽ അദ്ദബറാൻ. ‘ജീവിക്കുന്നവനേ’, മറ്റൊരു അഭിപ്രായത്തിൽ ‘ജീവൻ നൽകുന്നവനേ’ എന്നാണ് അർഥം. അൽ-ഹശ്‌റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه, അഞ്ച് ഹംസ, പേരിന്റെ അഞ്ച് എഴുത്ത് എന്നിവയോടുള്ള സംരക്ഷണപരാമർശം മുകളിലുണ്ട്.\nരാത്രിയിൽ ആയിരം തവണ വായിച്ച് ഓരോ നൂറിനുശേഷവും ഒരു പീഡകനെതിരെ പ്രതികാരം ആവശ്യപ്പെടുന്നതിനെ മൂന്നു ദിവസത്തിനുള്ളിൽ പ്രതികാരം ഉണ്ടാകുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. മറ്റൊരു പരാമർശത്തിൽ അപ്പത്തിലോ ഉണങ്ങിയ അപ്പത്തിലോ പേര് 21 തവണ എഴുതിനൽകുകയും തടവുകാരൻ അത് രണ്ടു ഭാഗങ്ങളാക്കി കഴിക്കുകയും ചെയ്യുന്നതിനെ മോചനവുമായി ബന്ധിപ്പിക്കുന്നു; 21 എഴുത്തിന്റെ എണ്ണമാണ്.\nആദ്യ നാല് പേരുകൾ കടലാസിൽ എഴുതി ബാധിതനിൽ തൂക്കുന്നതിനെ ബോധം തിരിച്ചുകിട്ടൽ, ജിന്ന് വിട്ടുപോകൽ, സിഹ്റ് മാറൽ എന്നിവയുമായി ബന്ധിപ്പിക്കുന്നു. അതേ പേരുകൾ എഴുതിയത് പനിനീരിൽ കഴുകിയെടുത്ത് മുഖത്ത് പുരട്ടുന്നതിനെ ആവശ്യം നിറവേറലുമായി ബന്ധിപ്പിക്കുന്നു. രണ്ടു പേരുകൾ ദർശനക്കാരന്റെ നെറ്റിയിൽ എഴുതുന്നതിന്റെ മറ്റൊരു പരാമർശവും, സുഗന്ധധൂപത്തോടെ ഒറ്റപ്പെട്ടിരുന്ന് സംയുക്തമായി വായിക്കുന്നതിനെ പ്രവർത്തനവിജയം, ആത്മാക്കളുടെ അനുസരണം, ആവശ്യനിറവേറ്റൽ എന്നിവയുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശവും തുടർന്ന് വരുന്നു. ആ രണ്ടു പേരുകളുടെ കൃത്യമായ അച്ചടിരൂപം ഇനിയും ഒത്തുനോക്കാനുണ്ട്; ഊഹിച്ച് ചേർത്തിട്ടില്ല. ചികിത്സാസംബന്ധമായ ഫലങ്ങൾ ഗ്രന്ഥാവകാശവാദങ്ങളായി മാത്രമാണ് നൽകിയിരിക്കുന്നത്."
+      },
+      "printed_page": "112–114",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية يا حي وقيل يا محيي",
+  "source_name_form": "طُورَانٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: ജീവിച്ചിരിക്കുന്നവനേ. മറ്റൊരു അഭിപ്രായത്തിൽ: ജീവൻ നൽകുന്നവനേ.",
-    "en": "The source’s Arabic meaning: O Living One; alternatively, O Giver of Life."
-  }
+    "en": "The source’s Arabic meaning: O Living One; alternatively, O Giver of Life.",
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: ജീവിച്ചിരിക്കുന്നവനേ. മറ്റൊരു അഭിപ്രായത്തിൽ: ജീവൻ നൽകുന്നവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 112,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം د; മൻസിൽ al-Dabaran. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter د and lunar mansion al-Dabaran. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "طُورَانٍ",
+      "arabic_original": "طوران",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

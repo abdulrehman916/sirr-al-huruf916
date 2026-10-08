@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-010",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 70,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا قوي",
-  "meaning_translation": {
-    "ml": "ശക്തനായവനേ.",
-    "en": "O Strong One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 70,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن تلاه كل يوم سبعين مرة رزقه الله الهيبة وحفظ جميع ما سمعه وانفجرت الحكمة من قلبه",
-      "translation": {
-        "ml": "ദിവസേന എഴുപത് തവണ വായിക്കുന്ന ഒരാൾക്ക് ഗാംഭീര്യവും കേൾക്കുന്നതെല്ലാം ഓർക്കാനുള്ള കഴിവും ലഭിക്കുമെന്നും ഹൃദയത്തിൽനിന്ന് ജ്ഞാനം പുറപ്പെടുമെന്നും ഗ്രന്ഥം പറയുന്നു.",
-        "en": "The source associates seventy daily repetitions with awe, retention of what is heard and wisdom arising from the heart."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "Daily; no specific hour or prayer is stated."
+        "en": "Daily; no specific hour or prayer is stated.",
+        "ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source associates seventy daily repetitions with awe, retention of what is heard and wisdom arising from the heart.",
+        "ml": "ദിവസേന എഴുപത് തവണ വായിക്കുന്ന ഒരാൾക്ക് ഗാംഭീര്യവും കേൾക്കുന്നതെല്ലാം ഓർക്കാനുള്ള കഴിവും ലഭിക്കുമെന്നും ഹൃദയത്തിൽനിന്ന് ജ്ഞാനം പുറപ്പെടുമെന്നും ഗ്രന്ഥം പറയുന്നു."
+      },
+      "arabic_original": "ومن تلاه كل يوم سبعين مرة رزقه الله الهيبة وحفظ جميع ما سمعه وانفجرت الحكمة من قلبه"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 70,
+  "source_notes": [
+    {
+      "id": "english-extended-010",
+      "title": {
+        "en": "Tenth-name pronunciation, meanings and further source accounts",
+        "ml": "പത്താം പേരിന്റെ വായന, അർഥങ്ങൾ, ശേഷിക്കുന്ന ഗ്രന്ഥപരാമർശങ്ങൾ"
+      },
+      "name_id": "HNK-MHC-010",
+      "translation": {
+        "en": "The preferred pronunciation uses kha/damma, waw/sukun, ta (ط)/kasra, ya/sukun and a nunated ra, with an alternative kha/fatha view. The measure is fu‘il; correspondences are ya and al-Jabha. Meanings are ‘O Strong One’ or ‘O Firm One, O Knowing One, O Wise One.’\nAccounts cover separate-letter writing with Surah al-Tariq for a child’s protection; seventy daily recitations for awe, memory and wisdom; and an iron ring engraved with further words in its day and hour for shooting or sword-fighting skill, without identifying that day/hour here.\nFurther accounts link washed dish inscriptions to a pack animal’s stomach-ache relief; writing on tanned wolf skin buried under a threshold to excluding dogs; seven recitations over an apple to affection; and a ruler’s pure-gold plate to inspiring awe in the army.\nPage 122 adds a first-hour-Saturday black-lead-seal account with further words, a Quran quotation, carnation incense and lowering into a well on black wool thread in a water-subsiding claim. Another account links two palm inscriptions and recitation to an aide’s compliance. Exact Arabic transcription of unfamiliar words remains pending. Veterinary claims are not established treatments.",
+        "ml": "വസ്ന് fu‘il. خ-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ط-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള ر എന്നാണ് ഈ പതിപ്പിന്റെ മുൻഗണനയുള്ള വായന. خ-യ്ക്ക് ഫത്ഹ നൽകുന്ന മറ്റൊരു അഭിപ്രായവും രേഖപ്പെടുത്തുന്നു. ബന്ധിപ്പിച്ച അക്ഷരം ي; മൻസിൽ അൽ-ജബ്ഹാ. ‘ശക്തനായവനേ’, അല്ലെങ്കിൽ ‘ഉറച്ചവനേ, അറിയുന്നവനേ, യുക്തിമാനേ’ എന്നാണ് അർഥം.\nസൂറത്ത് അത്താരിഖിനൊപ്പം വേർതിരിച്ച അക്ഷരങ്ങളായി കടലാസിൽ എഴുതി കുട്ടിയിൽ തൂക്കുന്നതിനെ ജിന്ന്, ഖരീൻ, കണ്ണേറ് എന്നിവയിൽനിന്നുള്ള സംരക്ഷണവുമായി ബന്ധിപ്പിക്കുന്നു. ദിവസേന 70 വായനയെ ഗാംഭീര്യം, കേൾക്കുന്നതിന്റെ ഓർമ്മ, ഹൃദയത്തിൽനിന്ന് ജ്ഞാനം പുറപ്പെടൽ എന്നിവയുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശം മുകളിലുണ്ട്. ഇരുമ്പുമോതിരത്തിൽ ചില പദങ്ങൾ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തിവയ്ക്കുന്നതിനെ അമ്പെയ്ത്തോ വാൾപ്രയോഗമോ ചെയ്യുന്നയാളുടെ മികവുമായി ബന്ധിപ്പിക്കുന്നു; ഈ ഖണ്ഡത്തിൽ ആ ദിവസം/മണിക്കൂർ എന്തെന്ന് വ്യക്തമാക്കുന്നില്ല.\nശുദ്ധപാത്രത്തിലെ എഴുത്ത് കഴുകിയ വെള്ളം വയറുവേദനയുള്ള ചുമട്ടുമൃഗത്തിന് കുടിപ്പിക്കുന്നതിനെ രോഗശമനവുമായി ബന്ധിപ്പിക്കുന്നു. സംസ്കരിച്ച ചെന്നായ്തോലിലെ എഴുത്ത് വാതിൽപ്പടിക്കടിയിൽ കുഴിച്ചിടുന്നതിനെ നായകൾ അകത്തു വരാതിരിക്കലുമായി ബന്ധിപ്പിക്കുന്നു. ആപ്പിളിനുമീതെ പേര് ഏഴ് തവണ പറഞ്ഞ് ലക്ഷ്യവ്യക്തിക്ക് നൽകുന്നതിനെ സ്നേഹവുമായി ബന്ധിപ്പിക്കുന്നു. രാജാവ് ശുദ്ധസ്വർണ്ണ തകിടിൽ കൊത്തി വഹിക്കുന്നതിനെ സൈന്യത്തിന്റെ ആദരഭയവുമായി ബന്ധിപ്പിക്കുന്നു.\n122-ാം പേജിലെ മറ്റൊരു പരാമർശം ശനിയാഴ്ച ആദ്യ മണിക്കൂറിൽ കറുത്ത ഈയമുദ്രയിൽ ചില പദങ്ങളും ഖുർആൻ ഉദ്ധരണിയും എഴുതുക, carnation ധൂപമാക്കുക, കറുത്ത കമ്പിളിനൂലിൽ കിണറ്റിലേക്കിറക്കുക എന്നിവയെ വെള്ളം താഴുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. കൈപ്പത്തിയിൽ രണ്ടു നാമങ്ങൾ എഴുതി വായിച്ച് സഹായി അനുസരിക്കുമെന്ന പരാമർശവും തുടർന്ന് വരുന്നു. ഈ ഭാഗങ്ങളിലെ അപരിചിത പദങ്ങളുടെ കൃത്യമായ അറബി പകർപ്പ് സ്ഥിരീകരിക്കാനുള്ളത് ബാക്കിയുണ്ട്. മൃഗചികിത്സയെക്കുറിച്ചുള്ളത് തെളിയിക്കപ്പെട്ട ചികിത്സയായി നൽകിയിട്ടില്ല."
+      },
+      "printed_page": "120–122",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا قوي",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Strong One.",
+    "ml": "ശക്തനായവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 120,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ي; മൻസിൽ al-Jabha. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ي and lunar mansion al-Jabha. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "خُوطِيرٍ",
+      "arabic_original": "خوطير",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

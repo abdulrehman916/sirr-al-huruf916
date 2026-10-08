@@ -1,54 +1,108 @@
 {
-  "name_id": "HNK-MHC-007",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 69,
-  "source_name_form": "تَرْقَبٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
+  "figure": {
+    "caption": {
+      "en": "Only the square from printed page 69. Its numbers are unchanged. It differs from the English edition, so the editions have not been merged.",
+      "ml": "അച്ചടിച്ച പേജ് 69-ലെ കളത്തിന്റെ ഭാഗം മാത്രം. സംഖ്യകൾ തിരുത്തിയിട്ടില്ല. ഇംഗ്ലീഷ് പതിപ്പിലെ കളവുമായി വ്യത്യാസമുള്ളതിനാൽ പതിപ്പുകൾ കലർത്തിയിട്ടില്ല."
+    },
+    "image_path": "/figures/tarqab-manba-p69.svg"
   },
+  "name_id": "HNK-MHC-007",
   "name_note": {
-    "ml": "ഈ പതിപ്പിൽ يا سلام എന്നാണ് അർഥം നൽകിയിരിക്കുന്നത്. «പൂർണ്ണനായവനേ» എന്ന മുൻ വിവർത്തനം കൂടുതൽ വ്യക്തമായി താഴെ നൽകിയിരിക്കുന്നു. ഈ പേരിനുള്ള കളം അതിന്റെ ഭാഗത്തുതന്നെ അച്ചടിച്ചിരിക്കുന്നു.",
-    "en": "This edition gives Ya Salam, explained more precisely below than the earlier “O Complete One.” Its square is printed within this name’s section."
+    "en": "This edition gives Ya Salam, explained more precisely below than the earlier “O Complete One.” Its square is printed within this name’s section.",
+    "ml": "ഈ പതിപ്പിൽ يا سلام എന്നാണ് അർഥം നൽകിയിരിക്കുന്നത്. «പൂർണ്ണനായവനേ» എന്ന മുൻ വിവർത്തനം കൂടുതൽ വ്യക്തമായി താഴെ നൽകിയിരിക്കുന്നു. ഈ പേരിനുള്ള കളം അതിന്റെ ഭാഗത്തുതന്നെ അച്ചടിച്ചിരിക്കുന്നു."
   },
   "practices": [
     {
       "id": "friday-store",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": null,
       "title": {
-        "ml": "കടയുമായി ബന്ധപ്പെട്ട കളം — ഗ്രന്ഥപരാമർശം",
-        "en": "A store-related square — source account"
-      },
-      "arabic_original": "ومن خواصه أن من كتبه يوم جمعة مع قوله تعالى كلما دخل عليها زكريا المحراب وجد عندها رزقا الآية ومع هذا الوفق كما ترى",
-      "translation": {
-        "ml": "വെള്ളിയാഴ്ച ഈ പേരും, സകരിയ്യാ മിഹ്റാബിൽ കടന്നപ്പോൾ മർയമിന്റെ അടുത്ത് ഉപജീവനം കണ്ടെത്തിയതിനെക്കുറിച്ചുള്ള ആയത്തിന്റെ പരാമർശവും, താഴെ കാണുന്ന കളവും ചേർത്ത് എഴുതുന്നതാണ് ഗ്രന്ഥത്തിൽ പറയുന്നത്. അഗർവുഡ്, ബെൻസോയിൻ എന്നിവയുടെ ധൂപം നൽകി കടയിൽ തൂക്കിയാൽ ആളുകൾ എല്ലാ ദിക്കുകളിൽനിന്നും എത്തുമെന്ന അവകാശവാദവും പിന്നാലെയുണ്ട്. മുകളിൽ നൽകിയ അറബി ഈ ഗ്രന്ഥവാക്യത്തിന്റെ ഭാഗമാണ്; പൂർണ്ണ ഖുർആൻ ആയത്തല്ല.",
-        "en": "The source describes writing the name on Friday with the reference to Zakariya finding provision at Maryam’s sanctuary and the square shown below. It then mentions aloeswood and benzoin incense and hanging it in a store, claiming customers arrive from every direction. The Arabic above is an excerpt from the book’s sentence, not the complete Qur’anic verse."
+        "en": "A store-related square — source account",
+        "ml": "കടയുമായി ബന്ധപ്പെട്ട കളം — ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "വെള്ളിയാഴ്ച; മണിക്കൂർ പറഞ്ഞിട്ടില്ല.",
-        "en": "Friday; no hour is given."
+        "en": "Friday; no hour is given.",
+        "ml": "വെള്ളിയാഴ്ച; മണിക്കൂർ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source describes writing the name on Friday with the reference to Zakariya finding provision at Maryam’s sanctuary and the square shown below. It then mentions aloeswood and benzoin incense and hanging it in a store, claiming customers arrive from every direction. The Arabic above is an excerpt from the book’s sentence, not the complete Qur’anic verse.",
+        "ml": "വെള്ളിയാഴ്ച ഈ പേരും, സകരിയ്യാ മിഹ്റാബിൽ കടന്നപ്പോൾ മർയമിന്റെ അടുത്ത് ഉപജീവനം കണ്ടെത്തിയതിനെക്കുറിച്ചുള്ള ആയത്തിന്റെ പരാമർശവും, താഴെ കാണുന്ന കളവും ചേർത്ത് എഴുതുന്നതാണ് ഗ്രന്ഥത്തിൽ പറയുന്നത്. അഗർവുഡ്, ബെൻസോയിൻ എന്നിവയുടെ ധൂപം നൽകി കടയിൽ തൂക്കിയാൽ ആളുകൾ എല്ലാ ദിക്കുകളിൽനിന്നും എത്തുമെന്ന അവകാശവാദവും പിന്നാലെയുണ്ട്. മുകളിൽ നൽകിയ അറബി ഈ ഗ്രന്ഥവാക്യത്തിന്റെ ഭാഗമാണ്; പൂർണ്ണ ഖുർആൻ ആയത്തല്ല."
+      },
+      "arabic_original": "ومن خواصه أن من كتبه يوم جمعة مع قوله تعالى كلما دخل عليها زكريا المحراب وجد عندها رزقا الآية ومع هذا الوفق كما ترى"
     }
   ],
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
+  },
   "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
   },
-  "figure": {
-    "image_path": "/figures/tarqab-manba-p69.svg",
-    "caption": {
-      "ml": "അച്ചടിച്ച പേജ് 69-ലെ കളത്തിന്റെ ഭാഗം മാത്രം. സംഖ്യകൾ തിരുത്തിയിട്ടില്ല. ഇംഗ്ലീഷ് പതിപ്പിലെ കളവുമായി വ്യത്യാസമുള്ളതിനാൽ പതിപ്പുകൾ കലർത്തിയിട്ടില്ല.",
-      "en": "Only the square from printed page 69. Its numbers are unchanged. It differs from the English edition, so the editions have not been merged."
+  "printed_page": 69,
+  "source_notes": [
+    {
+      "id": "english-extended-007",
+      "title": {
+        "en": "Seventh-name pronunciation and English-edition square values",
+        "ml": "ഏഴാം പേരിന്റെ വായനയും ഇംഗ്ലീഷ് പതിപ്പിലെ കളത്തിന്റെ അക്കങ്ങളും"
+      },
+      "name_id": "HNK-MHC-007",
+      "translation": {
+        "en": "The measure is taf‘al: ta (ت)/fatha, ra/sukun, qaf/fatha and a nunated ba. Correspondences are zay and al-Dhira‘. The meaning is ‘O Complete One.’ The Friday shop account combines a Quran quotation and square inscription with aloeswood and benzoin incense and a customer-arrival claim. No further clock time or recitation count is supplied.\nThe English square rows are 100,1,7,200 / 200,100,1,7 / 7,200,100,1 / 1,7,200,100. Each row totals 308. This checks that edition’s values rather than replacing the values of another edition. The existing image is the exact Arabic-edition figure.",
+        "ml": "വസ്ന് taf‘al. ت-യ്ക്ക് ഫത്ഹ, ر-യ്ക്ക് സുകൂൻ, ق-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ب എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ز; മൻസിൽ അദ്ദിറാഅ്. ‘പൂർണ്ണനായവനേ’ എന്നാണ് അർഥം. വെള്ളിയാഴ്ച ഖുർആൻ ഉദ്ധരണിയോടും കളത്തോടും കൂടി എഴുതി, അഗിലും benzoin-വും ധൂപമാക്കി കടയിൽ തൂക്കുന്നതിനെ ഉപഭോക്താക്കളുടെ വരവുമായി ബന്ധിപ്പിക്കുന്നു. വെള്ളിയാഴ്ച എന്നതല്ലാതെ പ്രത്യേക ഘടികാരസമയമോ ഓതൽഎണ്ണമോ ഈ ഖണ്ഡത്തിൽ നൽകുന്നില്ല.\nഇംഗ്ലീഷ് പതിപ്പിൽ കളത്തിന്റെ വരികൾ: 100,1,7,200 / 200,100,1,7 / 7,200,100,1 / 1,7,200,100. ഓരോ വരിയുടെയും തുക 308 ആണ്. ഇത് ആ പതിപ്പിലെ അക്കങ്ങളുടെ പരിശോധനയാണ്; മറ്റൊരു പതിപ്പിലെ കളത്തിനു പകരമാക്കി അക്കങ്ങൾ മാറ്റിയിട്ടില്ല. നിലവിൽ നൽകിയിരിക്കുന്നത് അറബി പതിപ്പിൽനിന്നുള്ള കൃത്യമായ കളത്തിന്റെ ചിത്രമാണ്."
+      },
+      "printed_page": "116–117",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
     }
-  },
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية يا سلام",
+  "source_name_form": "تَرْقَبٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: «യാ സലാം»—സമാധാനവും സുരക്ഷയും നൽകുന്നവനേ, എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായവനേ.",
-    "en": "The source gives Ya Salam: O Source of Peace and Safety, free from all imperfections."
-  }
+    "en": "The source gives Ya Salam: O Source of Peace and Safety, free from all imperfections.",
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: «യാ സലാം»—സമാധാനവും സുരക്ഷയും നൽകുന്നവനേ, എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനായവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 116,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ز; മൻസിൽ al-Dhira. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ز and lunar mansion al-Dhira. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "تَرْقَبٍ",
+      "arabic_original": "ترقب",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ],
+  "edition_figures": [
+    {
+      "image_path": "/figures/tarqab-english-p117.png",
+      "caption": {
+        "ml": "7-ാം നാമത്തിന്റെ ഇംഗ്ലീഷ് പതിപ്പിലെ 4×4 കളം. വരികൾ: 100,1,7,200 / 200,100,1,7 / 7,200,100,1 / 1,7,200,100. ഓരോ വരിയും 308. അറബി പതിപ്പിന്റെ ചിത്രവുമായി കലർത്തിയിട്ടില്ല.",
+        "en": "The seventh name’s English-edition 4×4 square. Each row totals 308; kept separate from the Arabic-edition figure."
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "printed_page": 117,
+      "review_status": "checked_against_scan"
+    }
+  ]
 }

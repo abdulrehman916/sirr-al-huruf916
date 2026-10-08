@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-016",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 71,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا مؤمن",
-  "meaning_translation": {
-    "ml": "സുരക്ഷ നൽകുന്നവനേ.",
-    "en": "O Giver of Security."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 70,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "وإذا استعمله مكروب كل ليلة سبعين مرة فإن الله يفرج كربه وهمه ويقضي دينه",
-      "translation": {
-        "ml": "വിഷമത്തിലായ ഒരാൾ ഓരോ രാത്രിയിലും എഴുപത് തവണ ഉപയോഗിച്ചാൽ അല്ലാഹു അയാളുടെ വിഷമവും ആശങ്കയും നീക്കി കടം തീർക്കുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
-        "en": "The source associates seventy repetitions each night by a distressed person with relief of distress and worry and settlement of debt."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ഓരോ രാത്രിയിലും; മണിക്കൂർ പറഞ്ഞിട്ടില്ല.",
-        "en": "Each night; no hour is stated."
+        "en": "Each night; no hour is stated.",
+        "ml": "ഓരോ രാത്രിയിലും; മണിക്കൂർ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source associates seventy repetitions each night by a distressed person with relief of distress and worry and settlement of debt.",
+        "ml": "വിഷമത്തിലായ ഒരാൾ ഓരോ രാത്രിയിലും എഴുപത് തവണ ഉപയോഗിച്ചാൽ അല്ലാഹു അയാളുടെ വിഷമവും ആശങ്കയും നീക്കി കടം തീർക്കുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്."
+      },
+      "arabic_original": "وإذا استعمله مكروب كل ليلة سبعين مرة فإن الله يفرج كربه وهمه ويقضي دينه"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 71,
+  "source_notes": [
+    {
+      "id": "english-extended-016",
+      "title": {
+        "en": "Pronunciation and the Tuesday seven-inscription account",
+        "ml": "വായനയും ചൊവ്വാഴ്ചയിലെ ഏഴ് എഴുത്തുകളുടെ പരാമർശവും"
+      },
+      "name_id": "HNK-MHC-016",
+      "translation": {
+        "en": "The measure is maf‘aylal, with ba/fatha, shin/sukun, kaf/fatha, ya/sukun, lam/fatha and a nunated kha. Correspondences are ‘ayn and al-Zubana. Meanings are ‘O Giver of Security’ or ‘Mighty is God, Most Merciful and Compassionate.’\nThe Tuesday account describes seven inscriptions on paper with an eye-protection formula referring to Ya‘qub’s grief and the bearer of Yusuf’s shirt, hung on someone with conjunctivitis. Its English formula addresses the two eyes, seeks protection through Ya‘qub and tells the conjunctivitis to depart. No Arabic original is invented by back-translating that English formula.\nAnother account claims that seventy uses every night dispel distress and worry and settle debt. Seventy counts nightly recitation; seven counts Tuesday inscriptions. The medical claim is not an established treatment.",
+        "ml": "വസ്ന് maf‘aylal. ب-യ്ക്ക് ഫത്ഹ, ش-യ്ക്ക് സുകൂൻ, ك-യ്ക്ക് ഫത്ഹ, ي-യ്ക്ക് സുകൂൻ, ل-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള خ എന്നതാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ع; മൻസിൽ അസ്സുബാനാ. ‘സുരക്ഷ നൽകുന്നവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘ഏറ്റവും കരുണയും ദയയുമുള്ള അല്ലാഹു മഹാശക്തനാണ്’ എന്നും അർഥം നൽകുന്നു.\nചൊവ്വാഴ്ച കടലാസിൽ ഏഴ് തവണ എഴുതി, കണ്ണുകളെയും യഅ്ഖൂബ് നബിയെയും യൂസുഫ് നബിയുടെ കുപ്പായം കൊണ്ടുവന്ന സന്തോഷവാർത്തക്കാരനെയും പരാമർശിക്കുന്ന വാചകത്തോടൊപ്പം കണ്ണിന്റെ അസുഖമുള്ള ആളിൽ തൂക്കുന്നതിനെ ഗ്രന്ഥം രോഗശമനവുമായി ബന്ധിപ്പിക്കുന്നു. ആ വാചകത്തിന്റെ ഇംഗ്ലീഷ് അർഥം: ‘എന്റെ രണ്ടു കാഴ്ചയുള്ള കണ്ണുകളേ, ദുഃഖം ബാധിച്ച യഅ്ഖൂബ് സംരക്ഷണം തേടിയതിൽനിന്ന് അദ്ദേഹത്തെ മുൻനിർത്തി നിങ്ങൾക്കും സംരക്ഷണം തേടുന്നു; സന്തോഷവാർത്തക്കാരൻ യൂസുഫിന്റെ കുപ്പായവുമായി എത്തിയപ്പോൾ എന്നപോലെ. യഅ്ഖൂബിന്റെ ഹഖിനാൽ, കണ്ണിന്റെ അസുഖമേ, നീ പോകുക.’ ഈ ഇംഗ്ലീഷിൽനിന്ന് പുതിയൊരു അറബി മൂലപാഠം സൃഷ്ടിച്ചിട്ടില്ല.\nമനഃപ്രയാസമുള്ള ഒരാൾ ഓരോ രാത്രിയും എഴുപത് തവണ ഉപയോഗിച്ചാൽ വിഷമവും ആശങ്കയും കടബാധ്യതയും മാറുമെന്ന മറ്റൊരു പരാമർശവും ഇതിലുണ്ട്. രാത്രി 70 എന്നത് വായനയുടെ എണ്ണമാണ്; ചൊവ്വാഴ്ചയിലെ ഏഴ് എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്. ചികിത്സാവകാശവാദം തെളിയിക്കപ്പെട്ട ചികിത്സയായി അവതരിപ്പിക്കുന്നില്ല."
+      },
+      "printed_page": "127–128",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا مؤمن",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Giver of Security.",
+    "ml": "സുരക്ഷ നൽകുന്നവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 127,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ع; മൻസിൽ al-Zubana. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ع and lunar mansion al-Zubana. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بَشْكَيْلَخٍ",
+      "arabic_original": "بشكيلخ",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

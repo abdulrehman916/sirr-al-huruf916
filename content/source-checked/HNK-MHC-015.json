@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-015",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 71,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "سبحان الله",
-  "meaning_translation": {
-    "ml": "അല്ലാഹു പരിശുദ്ധൻ.",
-    "en": "Glory be to God."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 7,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن أراد أن يرى في منامه شيئا فليتوضأ ويصل ست ركعات كل ركعتين بتسليمة ثم يكتب برهيولا سبع مرات في كفه الأيمن",
-      "translation": {
-        "ml": "സ്വപ്നത്തിൽ ഒരു കാര്യം കാണാൻ ആഗ്രഹിക്കുന്ന ഒരാൾ വുദൂ ചെയ്ത് ആറ് റക്അത്ത് നമസ്കരിക്കണം—ഓരോ രണ്ട് റക്അത്തിനും ഒരു സലാം—തുടർന്ന് ബർഹയൂലാ വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതണം എന്നാണ് ഈ ഗ്രന്ഥഭാഗം. തുടർഭാഗത്തിൽ ആവശ്യപ്പെടുന്ന കാര്യം കാണിക്കാനുള്ള നിർദ്ദേശം പറഞ്ഞ് ഉറങ്ങുന്നതും സ്വപ്നത്തിൽ കാണുമെന്ന അവകാശവാദവും ഉണ്ട്. ഇംഗ്ലീഷ് പതിപ്പിലെ റക്അത്ത്/സലാം വാചകം ഇതിൽനിന്ന് വ്യത്യസ്തമാണ്; ഇവിടെ അറബി പതിപ്പിന്റെ വായനയാണ് നൽകിയിരിക്കുന്നത്.",
-        "en": "This passage describes ablution, six rakahs with a salutation after every two, then seven inscriptions of Barhayula on the right palm. It continues with a charge to show the requested matter and sleep, claiming a dream vision. The English edition’s rakah/salutation wording differs; this account follows the Arabic edition."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "This passage describes ablution, six rakahs with a salutation after every two, then seven inscriptions of Barhayula on the right palm. It continues with a charge to show the requested matter and sleep, claiming a dream vision. The English edition’s rakah/salutation wording differs; this account follows the Arabic edition.",
+        "ml": "സ്വപ്നത്തിൽ ഒരു കാര്യം കാണാൻ ആഗ്രഹിക്കുന്ന ഒരാൾ വുദൂ ചെയ്ത് ആറ് റക്അത്ത് നമസ്കരിക്കണം—ഓരോ രണ്ട് റക്അത്തിനും ഒരു സലാം—തുടർന്ന് ബർഹയൂലാ വലത് കൈപ്പത്തിയിൽ ഏഴ് തവണ എഴുതണം എന്നാണ് ഈ ഗ്രന്ഥഭാഗം. തുടർഭാഗത്തിൽ ആവശ്യപ്പെടുന്ന കാര്യം കാണിക്കാനുള്ള നിർദ്ദേശം പറഞ്ഞ് ഉറങ്ങുന്നതും സ്വപ്നത്തിൽ കാണുമെന്ന അവകാശവാദവും ഉണ്ട്. ഇംഗ്ലീഷ് പതിപ്പിലെ റക്അത്ത്/സലാം വാചകം ഇതിൽനിന്ന് വ്യത്യസ്തമാണ്; ഇവിടെ അറബി പതിപ്പിന്റെ വായനയാണ് നൽകിയിരിക്കുന്നത്."
+      },
+      "arabic_original": "ومن أراد أن يرى في منامه شيئا فليتوضأ ويصل ست ركعات كل ركعتين بتسليمة ثم يكتب برهيولا سبع مرات في كفه الأيمن"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 71,
+  "source_notes": [
+    {
+      "id": "english-extended-015",
+      "title": {
+        "en": "Pronunciation, meanings, lost-property and dream accounts",
+        "ml": "വായന, അർഥങ്ങൾ, നഷ്ടപ്പെട്ട വസ്തുവിന്റെയും സ്വപ്നത്തിന്റെയും പരാമർശങ്ങൾ"
+      },
+      "name_id": "HNK-MHC-015",
+      "translation": {
+        "en": "The measure is fay‘alula. The spelling description gives ba with fatha, ra with sukun, ha with fatha, ya with damma, waw with sukun, lam with fatha and alif. The correspondences are sin and al-Ghafr. Alternative meanings include ‘Glory be to God,’ ‘I am God, the safety of the frightened,’ ‘O Protector, O All-hearer,’ and ‘O God, my spirit stands for Your Spirit through Your will.’ The book traditionally attributes it to Ibrahim’s glorification.\nIts lost-property account describes writing the name on paper in a 3×3 or similar square, a further word seven times around it, and hanging it inside the house where the loss occurred. Exact transcription of that surrounding word and square cells is not established here.\nIts dream account describes ablution, six rakas, seven inscriptions on the right palm, charging the servants to show a specified matter and sleeping. The English edition prints ‘two taslimas per raka’; that wording is not silently corrected. Seven in this account counts inscriptions. Outcomes are the book’s claims.",
+        "ml": "വസ്ന് fay‘alula. ب-യ്ക്ക് ഫത്ഹ, ر-യ്ക്ക് സുകൂൻ, ه-യ്ക്ക് ഫത്ഹ, ي-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ل-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا എന്നതാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം س; മൻസിൽ അൽ-ഗഫ്റ്. ‘അല്ലാഹുവിന് മഹത്വം’, ‘ഞാനാണ് അല്ലാഹു, ഭയപ്പെടുന്നവരുടെ സുരക്ഷ’, ‘സംരക്ഷകനേ, എല്ലാം കേൾക്കുന്നവനേ’, ‘അല്ലാഹുവേ, നിന്റെ ഇച്ഛയാൽ എന്റെ ആത്മാവ് നിന്റെ ആത്മാവിനുവേണ്ടി നിലകൊള്ളുന്നു’ എന്നീ അർഥാഭിപ്രായങ്ങൾ പുസ്തകം നൽകുന്നു. ഇബ്രാഹീം നബിയുടെ തസ്ബീഹെന്ന പരമ്പരാഗത ബന്ധിപ്പിക്കലും നൽകുന്നു.\nനഷ്ടപ്പെട്ട വസ്തു തിരികെ കിട്ടുന്നതിനെക്കുറിച്ചുള്ള പരാമർശത്തിൽ പേര് കടലാസിൽ എഴുതുക, 3×3 കളത്തിലോ അതുപോലെയുള്ള കളത്തിലോ ഉൾപ്പെടുത്തുക, ചുറ്റും മറ്റൊരു പദം ഏഴ് തവണ എഴുതുക, നഷ്ടം സംഭവിച്ച വീടിനുള്ളിൽ തൂക്കുക എന്നിങ്ങനെയാണ് ഗ്രന്ഥവിവരണം. ആ ചുറ്റുപദത്തിന്റെ കൃത്യമായ അറബി പകർപ്പും കളത്തിന്റെ സെല്ലുകളും ഈ ഭാഗത്തിൽ സ്ഥിരീകരിച്ചിട്ടില്ല.\nസ്വപ്നപരാമർശത്തിൽ വുദൂഅ്, ആറു റക്അത്ത്, വലത് കൈപ്പത്തിയിൽ പേര് ഏഴ് എഴുത്ത്, ഉദ്ദേശിച്ച കാര്യം കാണിക്കണമെന്ന് നാമത്തിന്റെ സേവകരോട് ആവശ്യപ്പെടുന്ന വാചകം, തുടർന്ന് ഉറക്കം എന്നിവ വിവരിക്കുന്നു. ഇംഗ്ലീഷ് പതിപ്പിൽ നമസ്കാരക്രമത്തിന് ‘ഓരോ റക്അത്തിനും രണ്ട് തസ്‌ലീം’ എന്നാണ് അച്ചടി; അത് സ്വമേധയാ തിരുത്തിയിട്ടില്ല. നിലവിലുള്ള സ്വപ്നഭാഗത്തിലെ ഏഴ് എന്ന എണ്ണം എഴുത്തിനുള്ളതാണ്. എല്ലാ ഫലങ്ങളും പുസ്തകത്തിലെ അവകാശവാദങ്ങളാണ്."
+      },
+      "printed_page": "126–127",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "سبحان الله",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "Glory be to God.",
+    "ml": "അല്ലാഹു പരിശുദ്ധൻ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 126,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം س; മൻസിൽ al-Ghafr. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter س and lunar mansion al-Ghafr. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بَرْهَيُولَا",
+      "arabic_original": "برهيولا",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

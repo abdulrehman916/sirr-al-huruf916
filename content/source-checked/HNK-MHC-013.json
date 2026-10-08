@@ -1,50 +1,90 @@
 {
   "name_id": "HNK-MHC-013",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 71,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "سبحان الله",
-  "meaning_translation": {
-    "ml": "അല്ലാഹു പരിശുദ്ധൻ.",
-    "en": "Glory be to God."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 71,
+  "source_notes": [
+    {
+      "id": "english-extended-013",
+      "title": {
+        "en": "Pronunciation and further meanings in the English edition",
+        "ml": "ഇംഗ്ലീഷ് പതിപ്പിലെ വായനയും മറ്റു അർഥങ്ങളും"
+      },
+      "name_id": "HNK-MHC-013",
+      "translation": {
+        "en": "The printed measure is takrim. The pronunciation description gives kaf with fatha, za (ظ) with sukun, ha with kasra, ya with sukun and a nunated ra. The correspondence is mim and al-‘Awa. Meanings are ‘Glory be to God,’ alternatively ‘O Strong One, O Firm One,’ or ‘O Merciful One.’ The book also attributes it as the glorification of Yunus; this is its traditional attribution. The same page describes a copper 5×5 square in separate letters hung in a house and frequent recitation for tormenting jinn. The house-square account is presented in the separate section above.",
+        "ml": "ഈ പതിപ്പിലെ പതിമൂന്നാം പേരിന്റെ വസ്ന് takrim എന്നാണ്. ك-യ്ക്ക് ഫത്ഹ, ظ-യ്ക്ക് സുകൂൻ, ه-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള ر എന്നതാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം م; മൻസിൽ അൽ-അവ്വാ. ‘അല്ലാഹുവിന് മഹത്വം’ എന്നാണ് ഒരു അർഥം. മറ്റു അഭിപ്രായങ്ങളിൽ ‘ശക്തനായവനേ, ഉറച്ചവനേ’, ‘കരുണയുള്ളവനേ’ എന്നും നൽകുന്നു. യൂനുസ് നബിയുടെ തസ്ബീഹാണെന്ന ബന്ധിപ്പിക്കലും ഗ്രന്ഥത്തിലുണ്ട്. അത് ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത ബന്ധിപ്പിക്കലാണ്. ചെമ്പിൽ വേർതിരിച്ച അക്ഷരങ്ങളായി 5×5 കളം എഴുതിവച്ച് വീട്ടിൽ തൂക്കുന്നതിന്റെ പരാമർശവും, പേര് പതിവായി വായിക്കുന്നതിനെ ജിന്നുകളെ ശിക്ഷിക്കുന്നതുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശവും ഇതേ പേജിലാണ്. വീട്ടിലെ കളത്തെക്കുറിച്ചുള്ള വിശദീകരണം മുകളിലെ പ്രത്യേക ഭാഗത്തിൽ നൽകിയിരിക്കുന്നു."
+      },
+      "printed_page": 124,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "سبحان الله",
   "edition_accounts": [
     {
       "id": "english-copper-square",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 124,
-      "title": {
-        "ml": "ചെമ്പുപലകയിലെ 5 × 5 കളം — ഗ്രന്ഥപരാമർശം",
-        "en": "A five-by-five square on copper — source account"
-      },
-      "original_text": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it.",
-      "translation": {
-        "ml": "പേര് വേർതിരിച്ച അക്ഷരങ്ങളായി ചെമ്പുപലകയിൽ 5 × 5 കളത്തിൽ എഴുതി വീട്ടിൽ തൂക്കിയാൽ കള്ളന്മാരിൽനിന്നും തീപിടിത്തത്തിൽനിന്നും സുരക്ഷ ലഭിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം. ജിന്നുകളെ പീഡിപ്പിക്കാനാഗ്രഹിക്കുന്നവർ ഇത് അധികമായി ഓതണമെന്നൊരു വാക്യവും തുടർന്ന് വരുന്നു.",
-        "en": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it."
-      },
       "count": null,
+      "title": {
+        "en": "A five-by-five square on copper — source account",
+        "ml": "ചെമ്പുപലകയിലെ 5 × 5 കളം — ഗ്രന്ഥപരാമർശം"
+      },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ഓതൽഎണ്ണമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or repetition count is given."
+        "en": "No specific time or repetition count is given.",
+        "ml": "നിശ്ചിത സമയമോ ഓതൽഎണ്ണമോ പറഞ്ഞിട്ടില്ല."
       },
       "scope_note": {
-        "ml": "ഈ പേജിൽ 5 × 5 എന്ന അളവാണ് പറഞ്ഞിരിക്കുന്നത്; ഓരോ സെല്ലിന്റെയും ക്രമം കാണിക്കുന്ന ചിത്രം ഇല്ല. അതിനാൽ ഒരു പുതിയ കളം ഊഹിച്ച് വരച്ചിട്ടില്ല. തീപിടിത്തസുരക്ഷയ്ക്ക് ഇതിനെ ആശ്രയിക്കരുത്.",
-        "en": "The page gives the five-by-five size without a cell-by-cell diagram. No square has been invented. This is not fire-safety protection."
-      }
+        "en": "The page gives the five-by-five size without a cell-by-cell diagram. No square has been invented. This is not fire-safety protection.",
+        "ml": "ഈ പേജിൽ 5 × 5 എന്ന അളവാണ് പറഞ്ഞിരിക്കുന്നത്; ഓരോ സെല്ലിന്റെയും ക്രമം കാണിക്കുന്ന ചിത്രം ഇല്ല. അതിനാൽ ഒരു പുതിയ കളം ഊഹിച്ച് വരച്ചിട്ടില്ല. തീപിടിത്തസുരക്ഷയ്ക്ക് ഇതിനെ ആശ്രയിക്കരുത്."
+      },
+      "translation": {
+        "en": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it.",
+        "ml": "പേര് വേർതിരിച്ച അക്ഷരങ്ങളായി ചെമ്പുപലകയിൽ 5 × 5 കളത്തിൽ എഴുതി വീട്ടിൽ തൂക്കിയാൽ കള്ളന്മാരിൽനിന്നും തീപിടിത്തത്തിൽനിന്നും സുരക്ഷ ലഭിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം. ജിന്നുകളെ പീഡിപ്പിക്കാനാഗ്രഹിക്കുന്നവർ ഇത് അധികമായി ഓതണമെന്നൊരു വാക്യവും തുടർന്ന് വരുന്നു."
+      },
+      "printed_page": 124,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one inscribes it on a sheet of copper as a 5x5 square, in separate letters, and hangs it in a house, it will be safe from burglars and burning. And whoever wishes to torture jinn should frequently recite it."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 124,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം م; മൻസിൽ al-Awwa. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter م and lunar mansion al-Awwa. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "كَظْهِيرٍ",
+      "arabic_original": "كظهير",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
-  ]
+  ],
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "Glory be to God.",
+    "ml": "അല്ലാഹു പരിശുദ്ധൻ."
+  }
 }

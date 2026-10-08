@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-006",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 69,
-  "source_name_form": "بَزْجَلٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം അഞ്ച് വ്യത്യസ്ത അറബി അർഥങ്ങൾ രേഖപ്പെടുത്തുന്നു; അവയെല്ലാം താഴെ നൽകിയിട്ടുണ്ട്. ഇവ വ്യത്യസ്ത അഭിപ്രായങ്ങളാണ്.",
-    "en": "All five alternative Arabic meanings recorded by the source are included below; they remain distinct opinions."
+    "en": "All five alternative Arabic meanings recorded by the source are included below; they remain distinct opinions.",
+    "ml": "ഗ്രന്ഥം അഞ്ച് വ്യത്യസ്ത അറബി അർഥങ്ങൾ രേഖപ്പെടുത്തുന്നു; അവയെല്ലാം താഴെ നൽകിയിട്ടുണ്ട്. ഇവ വ്യത്യസ്ത അഭിപ്രായങ്ങളാണ്."
   },
   "practices": [
     {
       "id": "thursday-paper",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": null,
       "title": {
-        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പുള്ള എഴുത്ത്",
-        "en": "Writing before sunrise on Thursday"
-      },
-      "arabic_original": "ومن خواصه أن من كتبه في ورقة حمراء قبل طلوع شمس يوم الخميس وقبل أن يتكلم مع أحد ثم قرأ حاجته ثم ألقى الورقة في بحر قضى الله حاجته في جمعته",
-      "translation": {
-        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്, ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്, ചുവന്ന കടലാസിൽ പേര് എഴുതുകയും തന്റെ ആവശ്യം പറയുകയും കടലാസ് കടലിലിടുകയും ചെയ്യുന്നതാണ് ഗ്രന്ഥത്തിലെ വിവരണം. ആ ആഴ്ച ആവശ്യം നിറവേറുമെന്ന അവകാശവാദമാണുള്ളത്. എഴുത്തിന്റെ ആവർത്തനസംഖ്യ ഈ ഭാഗത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "The source describes writing the name on red paper before Thursday sunrise and before speaking to anyone, stating the need, and casting the paper into the sea. It claims fulfillment that week. This passage gives no repetition count."
+        "en": "Writing before sunrise on Thursday",
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പുള്ള എഴുത്ത്"
       },
       "timing": {
-        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്; ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്.",
-        "en": "Thursday before sunrise, before speaking to anyone."
+        "en": "Thursday before sunrise, before speaking to anyone.",
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്; ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source describes writing the name on red paper before Thursday sunrise and before speaking to anyone, stating the need, and casting the paper into the sea. It claims fulfillment that week. This passage gives no repetition count.",
+        "ml": "വ്യാഴാഴ്ച സൂര്യോദയത്തിനുമുമ്പ്, ആരോടും സംസാരിക്കുന്നതിനുമുമ്പ്, ചുവന്ന കടലാസിൽ പേര് എഴുതുകയും തന്റെ ആവശ്യം പറയുകയും കടലാസ് കടലിലിടുകയും ചെയ്യുന്നതാണ് ഗ്രന്ഥത്തിലെ വിവരണം. ആ ആഴ്ച ആവശ്യം നിറവേറുമെന്ന അവകാശവാദമാണുള്ളത്. എഴുത്തിന്റെ ആവർത്തനസംഖ്യ ഈ ഭാഗത്തിൽ പറഞ്ഞിട്ടില്ല."
+      },
+      "arabic_original": "ومن خواصه أن من كتبه في ورقة حمراء قبل طلوع شمس يوم الخميس وقبل أن يتكلم مع أحد ثم قرأ حاجته ثم ألقى الورقة في بحر قضى الله حاجته في جمعته"
     }
   ],
-  "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
   },
+  "edition_note": {
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+  },
+  "printed_page": 69,
+  "source_notes": [
+    {
+      "id": "english-extended-006",
+      "title": {
+        "en": "Sixth-name meanings and 66 paired recitations with the fifth",
+        "ml": "ആറാം പേരിന്റെ അർഥങ്ങളും അഞ്ചാം പേരിനൊപ്പമുള്ള 66 വായനയും"
+      },
+      "name_id": "HNK-MHC-006",
+      "translation": {
+        "en": "The measure is maf‘al: ba/fatha, zay/sukun, jim/fatha and a nunated lam. Correspondences are waw and, as printed in this English edition, al-Haq‘a. Meanings are ‘O Loving One,’ ‘O God,’ ‘O Subduer,’ ‘O Unique One’ or ‘O One.’ The red-paper Thursday-before-sunrise account appears above. The book also says Venus ascended through this name; that traditional story is not presented as verified history.\nIt links three salt pebbles in water, sixty-six recitations of names five and six together and bathing with that water to release from sorcery or binding. Sixty-six counts the paired recitation. The next page adds a general claim of rapid success through paired recitation for a purpose without assigning another fixed count.",
+        "ml": "വസ്ന് maf‘al. ب-യ്ക്ക് ഫത്ഹ, ز-യ്ക്ക് സുകൂൻ, ج-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ل എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം و; മൻസിൽ അൽ-ഹഖ്അ എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിൽ അച്ചടി. ‘സ്നേഹിക്കുന്നവനേ’, ‘അല്ലാഹുവേ’, ‘കീഴടക്കുന്നവനേ’, ‘അതുല്യനായവനേ’, ‘ഏകനേ’ എന്നീ അർഥാഭിപ്രായങ്ങൾ നൽകുന്നു. വ്യാഴാഴ്ച സൂര്യോദയത്തിനു മുമ്പുള്ള ചുവന്ന കടലാസിന്റെ പരാമർശം മുകളിലെ ഭാഗത്തിലുണ്ട്. ഈ പേര് വഴി ശുക്രൻ ആകാശത്തേക്ക് ഉയർന്നുവെന്ന പരമ്പരാഗത കഥയും പുസ്തകം പറയുന്നു; അത് ചരിത്രപരമായി സ്ഥിരീകരിച്ചെന്ന അവകാശവാദമില്ല.\nമൂന്നു ഉപ്പുകഷണങ്ങൾ വെള്ളത്തിൽ ഇടുക, അഞ്ചും ആറും പേരുകൾ ചേർത്ത് 66 തവണ വായിക്കുക, ബാധിതൻ ആ വെള്ളത്തിൽ കുളിക്കുക എന്നിവയെ സിഹ്റോ ബന്ധനമോ മാറുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. 66 സംയുക്ത വായനയുടെ എണ്ണമാണ്. രണ്ടു പേരുകളും ഏതെങ്കിലും കാര്യത്തിനായി വായിക്കുന്നവൻ വേഗത്തിൽ വിജയിക്കുമെന്ന പൊതുപരാമർശവും അടുത്ത പേജിൽ തുടരുന്നു; അതിന് പുതിയൊരു നിശ്ചിത എണ്ണം നൽകുന്നില്ല."
+      },
+      "printed_page": "115–116",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية يا ودود وقيل يا الله وقيل يا قاهر وقيل يا أحد وقيل يا واسع",
+  "source_name_form": "بَزْجَلٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: സ്നേഹമുള്ളവനേ; അല്ലാഹുവേ; കീഴടക്കുന്നവനേ; ഏകനേ; വിശാലതയുള്ളവനേ.",
-    "en": "Alternative source meanings: O Loving One; O Allah; O Subduer; O One; O All-Encompassing."
-  }
+    "en": "Alternative source meanings: O Loving One; O Allah; O Subduer; O One; O All-Encompassing.",
+    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: സ്നേഹമുള്ളവനേ; അല്ലാഹുവേ; കീഴടക്കുന്നവനേ; ഏകനേ; വിശാലതയുള്ളവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 115,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം و; മൻസിൽ al-Haqa. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter و and lunar mansion al-Haqa. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു. അഞ്ചാമത്തെയും ആറാമത്തെയും പേരുകൾക്ക് ഈ ഇംഗ്ലീഷ് പതിപ്പ് al-Haqa എന്നാണ് അച്ചടിച്ചിരിക്കുന്നത്; ക്രമം കണ്ട് മറ്റൊരു മൻസിൽ ഊഹിച്ച് തിരുത്തിയിട്ടില്ല.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate. This English printing gives al-Haqa for both names five and six. The duplicate is retained rather than silently repaired from an assumed sequence."
+      },
+      "arabic_reading": "بَزْجَلٍ",
+      "arabic_original": "بزجل",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

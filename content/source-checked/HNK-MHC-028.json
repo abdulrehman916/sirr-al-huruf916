@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-028",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 74,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "القادر هو الله الكريم",
-  "meaning_translation": {
-    "ml": "കഴിവുള്ളവൻ ഉദാരനായ അല്ലാഹുവാണ്.",
-    "en": "The Almighty is God, the Generous."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 35,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن قرأها مع سورة يس ثم قرأها ٣٥ مرة وتوجه لحاجته قضيت بإذن الله تعالى",
-      "translation": {
-        "ml": "28 പേരുകളും സൂറത്ത് യാസീനോടൊപ്പം വായിക്കുകയും തുടർന്ന് അവ 35 തവണ വായിച്ച് ആവശ്യം തേടുകയും ചെയ്യുന്നതിനെ ഗ്രന്ഥം പരാമർശിക്കുന്നു. ഇത് ഇരുപത്തെട്ടാം പേരിന് മാത്രം നൽകിയ എണ്ണമല്ല; എല്ലാ പേരുകളെയും ചേർത്തുള്ള പരാമർശമാണ്.",
-        "en": "The source mentions reciting the twenty-eight names with Ya Sin, then thirty-five repetitions and pursuing a need. This count belongs to the collective account, not the twenty-eighth name alone."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this sentence."
+        "en": "No specific time or day is stated in this sentence.",
+        "ml": "നിശ്ചിത സമയമോ ദിവസമോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source mentions reciting the twenty-eight names with Ya Sin, then thirty-five repetitions and pursuing a need. This count belongs to the collective account, not the twenty-eighth name alone.",
+        "ml": "28 പേരുകളും സൂറത്ത് യാസീനോടൊപ്പം വായിക്കുകയും തുടർന്ന് അവ 35 തവണ വായിച്ച് ആവശ്യം തേടുകയും ചെയ്യുന്നതിനെ ഗ്രന്ഥം പരാമർശിക്കുന്നു. ഇത് ഇരുപത്തെട്ടാം പേരിന് മാത്രം നൽകിയ എണ്ണമല്ല; എല്ലാ പേരുകളെയും ചേർത്തുള്ള പരാമർശമാണ്."
+      },
+      "arabic_original": "ومن قرأها مع سورة يس ثم قرأها ٣٥ مرة وتوجه لحاجته قضيت بإذن الله تعالى"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 74,
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "القادر هو الله الكريم",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "The Almighty is God, the Generous.",
+    "ml": "കഴിവുള്ളവൻ ഉദാരനായ അല്ലാഹുവാണ്."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 138,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം غ; മൻസിൽ al-Rasha. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter غ and lunar mansion al-Rasha. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "شَمْخَا بَارُوخٍ",
+      "arabic_original": "شمخا باروخ",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    },
+    {
+      "id": "english-name-specific-and-collective-139",
+      "title": {
+        "ml": "28-ാം പേരിന്റെ പ്രത്യേക പരാമർശവും സംയുക്ത 28 നാമങ്ങളുടെ ഉപയോഗവും",
+        "en": "The twenty-eighth name’s account and the collective twenty-eight names"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 139,
+      "translation": {
+        "ml": "ഈ പേരിനൊപ്പം യൂനുസ് 10:81-ൽനിന്നുള്ള ഉദ്ധരണി പാത്രത്തിൽ എഴുതുന്നതിനെ സിഹ്റ് മാറുമെന്ന പരമ്പരാഗത അവകാശവാദവുമായി ഈ പതിപ്പ് ബന്ധിപ്പിക്കുന്നു. ഈ ഖണ്ഡത്തിൽ പ്രത്യേക എണ്ണമോ ദിവസമോ ഘടികാരസമയമോ നൽകുന്നില്ല. എഴുതിയത് കുടിപ്പിക്കുന്ന ചരിത്രപരാമർശം ചികിത്സാനിർദേശമായി നൽകിയിട്ടില്ല.\nതുടർന്ന് വരുന്നവ ഒറ്റ പേരിനുള്ളതല്ല: മുഴുവൻ 28 പേരുകളും വാളിൽ എഴുതിയാൽ ശത്രു ഓടിപ്പോകുമെന്നതും രോഗിയ്ക്കോ സിഹ്റ് ബാധിച്ചതായി കരുതുന്ന ആളിനോ എഴുതിയാൽ ആശ്വാസമുണ്ടാകുമെന്നതും ഗ്രന്ഥം അവകാശപ്പെടുന്നു. യാസീനോടൊപ്പം 28 പേരുകളും വായിച്ച് തുടർന്ന് രണ്ടും 35 തവണ വായിക്കുന്ന സംയുക്ത പരാമർശവും ഉണ്ട്. 35 എന്നത് 28-ാം പേര് ഒറ്റയ്ക്ക് വായിക്കാനുള്ള എണ്ണമാക്കി മാറ്റിയിട്ടില്ല.",
+        "en": "This edition links writing the name together with a quotation from Yunus 10:81 on a dish to a traditional spell-relief claim. This paragraph supplies no particular count, day or clock time. The historical ingestion account is not presented as treatment guidance.\nThe subsequent accounts concern all twenty-eight names, not this one name: inscriptions on a sword are claimed to make an enemy flee, and inscriptions for a sick or supposedly bewitched person are claimed to bring relief. It also describes the names with Ya Sin followed by thirty-five repetitions of both. Thirty-five is not reassigned to the twenty-eighth name alone."
+      },
+      "scope_note": {
+        "ml": "പേര്-പ്രത്യേക പരാമർശവും മുഴുവൻ നാമങ്ങളുടെ സംയുക്ത പരാമർശവും പ്രത്യേകം മനസ്സിലാക്കുക. ഇംഗ്ലീഷ് പതിപ്പിൽ «രണ്ടും» എന്നാണ്; അറബി പതിപ്പിന്റെ നിലവിലുള്ള പാഠം മുകളിൽ വേർതിരിച്ച് നൽകിയിരിക്കുന്നു.",
+        "en": "Keep the name-specific paragraph separate from collective accounts. The English edition says “both”; the existing Arabic-edition passage is retained separately above."
+      }
+    }
+  ]
 }

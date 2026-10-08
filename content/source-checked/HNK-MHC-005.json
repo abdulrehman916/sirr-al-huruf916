@@ -1,47 +1,89 @@
 {
   "name_id": "HNK-MHC-005",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 68,
-  "source_name_form": "مَزْجَلٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
-  },
   "name_note": {
-    "ml": "ഈ പതിപ്പിൽ يا قيوم, يا واجد എന്നീ അർഥങ്ങളാണ് നൽകിയിരിക്കുന്നത്. «വാജിദ്» എന്നതിനെ «ഉള്ളവൻ» എന്നു മാത്രം നൽകിയിരുന്ന വിവർത്തനം തിരുത്തിയിരിക്കുന്നു. പേരിന്റെ അക്ഷരങ്ങളോ കണക്കുകളോ മാറ്റിയിട്ടില്ല.",
-    "en": "This edition gives Ya Qayyum and Ya Wajid. The earlier rendering of Wajid simply as “Existent” is corrected. Name spelling and calculations are preserved."
+    "en": "This edition gives Ya Qayyum and Ya Wajid. The earlier rendering of Wajid simply as “Existent” is corrected. Name spelling and calculations are preserved.",
+    "ml": "ഈ പതിപ്പിൽ يا قيوم, يا واجد എന്നീ അർഥങ്ങളാണ് നൽകിയിരിക്കുന്നത്. «വാജിദ്» എന്നതിനെ «ഉള്ളവൻ» എന്നു മാത്രം നൽകിയിരുന്ന വിവർത്തനം തിരുത്തിയിരിക്കുന്നു. പേരിന്റെ അക്ഷരങ്ങളോ കണക്കുകളോ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "daily-50",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": 50,
       "title": {
-        "ml": "ദിവസേന അമ്പത് തവണ",
-        "en": "Fifty repetitions daily"
-      },
-      "arabic_original": "ومن واظب على تلاوته كل يوم خمسين مرة غفر الله ذنوبه ومن عليه بزيارة قبر النبي صلى الله عليه وسلم قبل موته ونال مرتبة عظيمة وأحب كل من رآه",
-      "translation": {
-        "ml": "ദിവസേന അമ്പത് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾക്ക് പാപമോചനവും, മരണത്തിനുമുമ്പ് നബി ﷺയുടെ ഖബർ സന്ദർശിക്കാനുള്ള അവസരവും, ഉയർന്ന സ്ഥാനവും, കാണുന്നവരുടെ സ്നേഹവും ലഭിക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
-        "en": "The source associates habitual daily repetition fifty times with forgiveness, visiting the Prophet’s grave before death, high standing and being loved by those who see the person."
+        "en": "Fifty repetitions daily",
+        "ml": "ദിവസേന അമ്പത് തവണ"
       },
       "timing": {
-        "ml": "ദിവസേന; നമസ്കാരശേഷമെന്ന് പ്രത്യേകം പറഞ്ഞിട്ടില്ല.",
-        "en": "Daily; no particular prayer is specified."
+        "en": "Daily; no particular prayer is specified.",
+        "ml": "ദിവസേന; നമസ്കാരശേഷമെന്ന് പ്രത്യേകം പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source associates habitual daily repetition fifty times with forgiveness, visiting the Prophet’s grave before death, high standing and being loved by those who see the person.",
+        "ml": "ദിവസേന അമ്പത് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾക്ക് പാപമോചനവും, മരണത്തിനുമുമ്പ് നബി ﷺയുടെ ഖബർ സന്ദർശിക്കാനുള്ള അവസരവും, ഉയർന്ന സ്ഥാനവും, കാണുന്നവരുടെ സ്നേഹവും ലഭിക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു."
+      },
+      "arabic_original": "ومن واظب على تلاوته كل يوم خمسين مرة غفر الله ذنوبه ومن عليه بزيارة قبر النبي صلى الله عليه وسلم قبل موته ونال مرتبة عظيمة وأحب كل من رآه"
     }
   ],
-  "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
   },
+  "edition_note": {
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+  },
+  "printed_page": 68,
+  "source_notes": [
+    {
+      "id": "english-extended-005",
+      "title": {
+        "en": "Fifth-name pronunciation and historical medical account",
+        "ml": "അഞ്ചാം പേരിന്റെ വായനയും ചികിത്സാസംബന്ധമായ ചരിത്രപരാമർശവും"
+      },
+      "name_id": "HNK-MHC-005",
+      "translation": {
+        "en": "The measure is maf‘al: mim/fatha, zay/sukun, jim/fatha and a nunated lam. Correspondences are ha and al-Haq‘a. Meanings are ‘O Ever Subsistent One’ or ‘O Existent One.’\nA historical conception account describes seven name inscriptions with eight Tahatil names in a vessel, drinking the washed inscription seven times over seven days, absence of menstruation and intercourse. Exact Arabic transcription of the eight Tahatil names remains pending; no substitute names are supplied. It is not an established infertility treatment.\nThe daily fifty-recitation account links use to forgiveness, visiting the Prophet’s grave before death, elevated status and others’ affection, continuing on page 115. Fifty counts recitations and is not combined with the sevens in the medical account.",
+        "ml": "വസ്ന് maf‘al. م-യ്ക്ക് ഫത്ഹ, ز-യ്ക്ക് സുകൂൻ, ج-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ل എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ه; മൻസിൽ അൽ-ഹഖ്അ. ‘നിത്യമായി നിലകൊള്ളുന്നവനേ’, മറ്റൊരു അഭിപ്രായത്തിൽ ‘നിലനിൽക്കുന്നവനേ’ എന്നാണ് അർഥം.\nഗർഭധാരണത്തെക്കുറിച്ചുള്ള ചരിത്രപരാമർശത്തിൽ പേര് ഏഴ് തവണയും Tahatil-ന്റെ എട്ട് നാമങ്ങളും പാത്രത്തിൽ എഴുതുക, കഴുകിയെടുത്തത് ഏഴ് ദിവസങ്ങളിൽ ഏഴ് തവണ കുടിപ്പിക്കുക, മാസമുറയില്ലാത്ത അവസ്ഥയും ഭർത്താവുമായുള്ള ബന്ധവും എന്നിവയെ ഗ്രന്ഥം ഗർഭധാരണത്തിന്റെ അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. എട്ട് Tahatil നാമങ്ങളുടെ അച്ചടിയിലെ കൃത്യമായ അറബി പകർപ്പ് ഇനിയും പരിശോധിക്കണം; പകരം പുതിയ നാമങ്ങൾ നൽകിയിട്ടില്ല. ഇത് വന്ധ്യതയ്ക്കുള്ള തെളിയിക്കപ്പെട്ട ചികിത്സയല്ല.\nദിവസേന അമ്പത് തവണ വായിക്കുന്നതിനെ പാപമോചനം, മരണത്തിനു മുമ്പ് നബിയുടെ ഖബർ സന്ദർശിക്കൽ, ഉയർന്ന സ്ഥാനം, കാണുന്നവരുടെ സ്നേഹം എന്നിവയുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. ഈ അവസാന ഭാഗം 115-ാം പേജിൽ തുടരുന്നു. അമ്പത് ഓതലിന്റെ എണ്ണമാണ്; ചികിത്സാപരാമർശത്തിലെ ഏഴ് എന്ന എണ്ണവുമായി കലർത്തിയിട്ടില്ല."
+      },
+      "printed_page": "114–115",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية يا قيوم وقيل يا واجد",
+  "source_name_form": "مَزْجَلٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: സ്വയം നിലനിൽക്കുകയും എല്ലാറ്റിനെയും നിലനിർത്തുകയും ചെയ്യുന്നവനേ. മറ്റൊരു അഭിപ്രായത്തിൽ: എല്ലാം കണ്ടെത്തുന്നവനേ/നേടുന്നവനേ (അൽ-വാജിദ്).",
-    "en": "The source’s Arabic meaning: O Self-Subsisting Sustainer; alternatively, O Finder/Possessor (al-Wajid)."
-  }
+    "en": "The source’s Arabic meaning: O Self-Subsisting Sustainer; alternatively, O Finder/Possessor (al-Wajid).",
+    "ml": "ഗ്രന്ഥത്തിലെ അറബി അർഥം: സ്വയം നിലനിൽക്കുകയും എല്ലാറ്റിനെയും നിലനിർത്തുകയും ചെയ്യുന്നവനേ. മറ്റൊരു അഭിപ്രായത്തിൽ: എല്ലാം കണ്ടെത്തുന്നവനേ/നേടുന്നവനേ (അൽ-വാജിദ്)."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 114,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ه; മൻസിൽ al-Haqa. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ه and lunar mansion al-Haqa. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു. അഞ്ചാമത്തെയും ആറാമത്തെയും പേരുകൾക്ക് ഈ ഇംഗ്ലീഷ് പതിപ്പ് al-Haqa എന്നാണ് അച്ചടിച്ചിരിക്കുന്നത്; ക്രമം കണ്ട് മറ്റൊരു മൻസിൽ ഊഹിച്ച് തിരുത്തിയിട്ടില്ല.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate. This English printing gives al-Haqa for both names five and six. The duplicate is retained rather than silently repaired from an assumed sequence."
+      },
+      "arabic_reading": "مَزْجَلٍ",
+      "arabic_original": "مزجل",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

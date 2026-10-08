@@ -1,68 +1,91 @@
 {
   "name_id": "HNK-MHC-025",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 73,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا قديم",
-  "meaning_translation": {
-    "ml": "ആദിയില്ലാത്തവനേ.",
-    "en": "O Preeternal One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 73,
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا قديم",
   "edition_accounts": [
     {
       "id": "english-correspondence-meaning-137",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 137,
       "title": {
-        "ml": "അക്ഷരം, മൻസിൽ, രണ്ടു അർഥങ്ങൾ",
-        "en": "Letter, mansion and two meanings"
-      },
-      "original_text": "it is the pointed dhal, and the mansion corresponding to it is Sa’d al-Akhbiya. In Arabic it means, ‘O Preeternal One’ and, according to another view, ‘O Enduring One.’",
-      "translation": {
-        "ml": "ഈ പേരുമായി ബന്ധിപ്പിച്ച അക്ഷരം ذ (ദാൽ); മൻസിൽ സഅ്ദ് അൽ-അഖ്ബിയ. അറബി അർഥമായി ‘ആദിയില്ലാത്തവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘എന്നെന്നും നിലനിൽക്കുന്നവനേ’ എന്നും ഇംഗ്ലീഷ് പതിപ്പ് നൽകുന്നു.",
-        "en": "The edition associates the name with dhal (ذ) and Sa’d al-Akhbiya, giving ‘O Preeternal One’ or, alternatively, ‘O Enduring One’ as its Arabic meanings."
+        "en": "Letter, mansion and two meanings",
+        "ml": "അക്ഷരം, മൻസിൽ, രണ്ടു അർഥങ്ങൾ"
       },
       "scope_note": {
-        "ml": "ഈ മൻസിൽബന്ധം ഓതാനുള്ള സമയനിർദേശമല്ല. 136-ാം പേജിലെ പേരിന്റെ മറ്റു എഴുത്തുരൂപങ്ങളുടെ കൃത്യമായ അറബി പകർപ്പ് പരിശോധിക്കാനുള്ളത് ബാക്കിയുണ്ട്.",
-        "en": "The mansion correspondence is not a recitation schedule. Exact Arabic transcription of the alternate spellings on page 136 remains pending."
-      }
+        "en": "The mansion correspondence is not a recitation schedule. Exact Arabic transcription of the alternate spellings on page 136 remains pending.",
+        "ml": "ഈ മൻസിൽബന്ധം ഓതാനുള്ള സമയനിർദേശമല്ല. 136-ാം പേജിലെ പേരിന്റെ മറ്റു എഴുത്തുരൂപങ്ങളുടെ കൃത്യമായ അറബി പകർപ്പ് പരിശോധിക്കാനുള്ളത് ബാക്കിയുണ്ട്."
+      },
+      "translation": {
+        "en": "The edition associates the name with dhal (ذ) and Sa’d al-Akhbiya, giving ‘O Preeternal One’ or, alternatively, ‘O Enduring One’ as its Arabic meanings.",
+        "ml": "ഈ പേരുമായി ബന്ധിപ്പിച്ച അക്ഷരം ذ (ദാൽ); മൻസിൽ സഅ്ദ് അൽ-അഖ്ബിയ. അറബി അർഥമായി ‘ആദിയില്ലാത്തവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘എന്നെന്നും നിലനിൽക്കുന്നവനേ’ എന്നും ഇംഗ്ലീഷ് പതിപ്പ് നൽകുന്നു."
+      },
+      "printed_page": 137,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "it is the pointed dhal, and the mansion corresponding to it is Sa’d al-Akhbiya. In Arabic it means, ‘O Preeternal One’ and, according to another view, ‘O Enduring One.’"
     },
     {
       "id": "english-hunger-70",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 137,
-      "title": {
-        "ml": "വിശപ്പിനെക്കുറിച്ചുള്ള ചരിത്രപരമായ അവകാശവാദം",
-        "en": "A historical claim concerning hunger"
-      },
-      "original_text": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger.",
-      "translation": {
-        "ml": "പേര് ഒരു പാത്രത്തിൽ എഴുപത് തവണ എഴുതി ഒഴിഞ്ഞ വയറ്റിൽ അത് കുടിക്കുന്ന ഒരാൾ വിശപ്പിൽനിന്ന് സുരക്ഷിതനാകുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം.",
-        "en": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger."
-      },
       "count": 70,
+      "title": {
+        "en": "A historical claim concerning hunger",
+        "ml": "വിശപ്പിനെക്കുറിച്ചുള്ള ചരിത്രപരമായ അവകാശവാദം"
+      },
       "timing": {
-        "ml": "ഒഴിഞ്ഞ വയറ്റിൽ എന്നാണ്; ദിവസമോ ഘടികാരസമയമോ ഇല്ല.",
-        "en": "An empty stomach is specified, without a day or clock time."
+        "en": "An empty stomach is specified, without a day or clock time.",
+        "ml": "ഒഴിഞ്ഞ വയറ്റിൽ എന്നാണ്; ദിവസമോ ഘടികാരസമയമോ ഇല്ല."
       },
       "scope_note": {
-        "ml": "ഇത് ഭക്ഷണത്തിന് പകരമുള്ള മാർഗമോ മഷി/എഴുത്തുപദാർത്ഥം കുടിക്കാനുള്ള നിർദേശമോ അല്ല. ഫലം തെളിയിക്കപ്പെട്ടതായി നൽകിയിട്ടില്ല.",
-        "en": "This is not a substitute for food or advice to drink ink or writing substances. The claimed outcome is not established."
-      }
+        "en": "This is not a substitute for food or advice to drink ink or writing substances. The claimed outcome is not established.",
+        "ml": "ഇത് ഭക്ഷണത്തിന് പകരമുള്ള മാർഗമോ മഷി/എഴുത്തുപദാർത്ഥം കുടിക്കാനുള്ള നിർദേശമോ അല്ല. ഫലം തെളിയിക്കപ്പെട്ടതായി നൽകിയിട്ടില്ല."
+      },
+      "translation": {
+        "en": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger.",
+        "ml": "പേര് ഒരു പാത്രത്തിൽ എഴുപത് തവണ എഴുതി ഒഴിഞ്ഞ വയറ്റിൽ അത് കുടിക്കുന്ന ഒരാൾ വിശപ്പിൽനിന്ന് സുരക്ഷിതനാകുമെന്നാണ് ഈ പതിപ്പിലെ ചരിത്രപരമായ അവകാശവാദം."
+      },
+      "printed_page": 137,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "Among its properties is that if whoever writes it seventy times on a dish and drinks it on an empty stomach will be safe from hunger."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 136,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ذ; മൻസിൽ Sad al-Akhbiya. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ذ and lunar mansion Sad al-Akhbiya. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "بِكَهْطَهَوْنَيْهٍ",
+      "arabic_original": "بكهطهونيه",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
-  ]
+  ],
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Preeternal One.",
+    "ml": "ആദിയില്ലാത്തവനേ."
+  }
 }

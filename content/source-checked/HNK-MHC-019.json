@@ -1,47 +1,99 @@
 {
   "name_id": "HNK-MHC-019",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 72,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا قادر",
-  "meaning_translation": {
-    "ml": "കഴിവുള്ളവനേ.",
-    "en": "O Almighty."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [
     {
       "id": "checked-account",
+      "claim": {
+        "en": "A traditional source claim; no outcome is guaranteed.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല."
+      },
       "count": 60,
       "title": {
-        "ml": "ഗ്രന്ഥപരാമർശം",
-        "en": "Source account"
-      },
-      "arabic_original": "ومن واظب على تلاوته ستين كل يوم لم ير مكروها أبدا",
-      "translation": {
-        "ml": "ദിവസേന അറുപത് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾ അനിഷ്ടസംഭവം കാണുകയില്ലെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. ഇത് ജീവിതത്തിൽ അപായം സംഭവിക്കില്ലെന്ന ഉറപ്പല്ല.",
-        "en": "The source claims avoidance of misfortune through habitual daily repetition sixty times. This is not a guarantee of safety."
+        "en": "Source account",
+        "ml": "ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "Daily; no specific hour or prayer is stated."
+        "en": "Daily; no specific hour or prayer is stated.",
+        "ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-        "en": "A traditional source claim; no outcome is guaranteed."
-      }
+      "translation": {
+        "en": "The source claims avoidance of misfortune through habitual daily repetition sixty times. This is not a guarantee of safety.",
+        "ml": "ദിവസേന അറുപത് തവണ വായിക്കുന്നത് പതിവാക്കുന്ന ഒരാൾ അനിഷ്ടസംഭവം കാണുകയില്ലെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. ഇത് ജീവിതത്തിൽ അപായം സംഭവിക്കില്ലെന്ന ഉറപ്പല്ല."
+      },
+      "arabic_original": "ومن واظب على تلاوته ستين كل يوم لم ير مكروها أبدا"
     }
   ],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
-  }
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 72,
+  "source_notes": [
+    {
+      "id": "english-extended-019",
+      "title": {
+        "en": "Two pronunciation views and the complete list of meanings",
+        "ml": "രണ്ടു വായനാഭിപ്രായങ്ങളും മുഴുവൻ അർഥാഭിപ്രായങ്ങളും"
+      },
+      "name_id": "HNK-MHC-019",
+      "translation": {
+        "en": "The English edition gives the measure rahamat, alternatively rahman. Its spelling description gives qaf/fatha; ba/fatha in the first view or ba/sukun in the second; ra/fatha, alif and a nunated ta. Correspondences are qaf and al-Shawla. Meanings are ‘O Almighty,’ ‘O Enduring One,’ ‘O Forbearing One,’ ‘O All-wise One,’ ‘O Protector, O Generous One,’ or ‘Mighty is Allah, the Protector, the Generous.’\nIt associates carrying an inscription with a Quran quotation with protection from pestilence and enemies. The quotation is Yunus 10:92; its Arabic text and meaning follow below. A further account claims that sixty habitual recitations daily prevent misfortune. Sixty counts recitations. These are traditional source claims.",
+        "ml": "വസ്ന് rahamat എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ rahman എന്നും ഇംഗ്ലീഷ് പതിപ്പ് നൽകുന്നു. ق-യ്ക്ക് ഫത്ഹ; ب-യ്ക്ക് ആദ്യ അഭിപ്രായത്തിൽ ഫത്ഹ, രണ്ടാമത്തേതിൽ സുകൂൻ; തുടർന്ന് ر-യ്ക്ക് ഫത്ഹ, ا, അവസാനം തൻവീനുള്ള ت എന്നതാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ق; മൻസിൽ അശ്ശൗലാ. അർഥാഭിപ്രായങ്ങൾ: ‘സർവശക്തനായവനേ’, ‘എന്നെന്നും നിലനിൽക്കുന്നവനേ’, ‘സഹനശീലനായവനേ’, ‘യുക്തിമാനേ’, ‘സംരക്ഷകനേ, ഉദാരനായവനേ’, ‘സംരക്ഷകനും ഉദാരനുമായ അല്ലാഹു മഹാശക്തനാണ്’.\nഒരു ഖുർആൻ ഉദ്ധരണിയോടൊപ്പം പേര് എഴുതി കൈവശം വയ്ക്കുന്നതിനെ മഹാമാരിയിൽനിന്നും ശത്രുക്കളിൽനിന്നും സംരക്ഷണം ലഭിക്കുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. ഈ ഉദ്ധരണി യൂനുസ് 10:92 ആണ്; അറബി പാഠവും അർഥവും താഴെ നൽകിയിരിക്കുന്നു. ദിവസേന അറുപത് തവണ പതിവായി വായിച്ചാൽ ദുരന്തം കാണില്ലെന്ന മറ്റൊരു അവകാശവാദവും നൽകുന്നു. ആ എണ്ണം ഓതലിനുള്ളതാണ്. ഇവ ഗ്രന്ഥത്തിലെ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്."
+      },
+      "printed_page": "130–131",
+      "quote_blocks": [
+        {
+          "arabic": "فَالْيَوْمَ نُنَجِّيكَ بِبَدَنِكَ لِتَكُونَ لِمَنْ خَلْفَكَ آيَةً ۚ وَإِنَّ كَثِيرًا مِّنَ النَّاسِ عَنْ آيَاتِنَا لَغَافِلُونَ",
+          "translation": {
+            "en": "Today We will preserve your body so that you may be a sign to those who come after you. Indeed, many people are heedless of Our signs.",
+            "ml": "അതിനാൽ ഇന്ന് നിന്റെ ശരീരത്തെ നാം രക്ഷിച്ചെടുക്കും; നിന്റെ പിന്നാലെ വരുന്നവർക്ക് നീ ഒരു ദൃഷ്ടാന്തമാകാൻ വേണ്ടി. തീർച്ചയായും മനുഷ്യരിൽ പലരും നമ്മുടെ ദൃഷ്ടാന്തങ്ങളെക്കുറിച്ച് അശ്രദ്ധരാണ്."
+          },
+          "source_location": "Quran 10:92"
+        }
+      ],
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا قادر",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Almighty.",
+    "ml": "കഴിവുള്ളവനേ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 131,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ق; മൻസിൽ al-Shawla. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ق and lunar mansion al-Shawla. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "قَبَرَاتٍ",
+      "arabic_original": "قبرات",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

@@ -1,47 +1,117 @@
 {
+  "figure": {
+    "caption": {
+      "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending.",
+      "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+    },
+    "image_path": "/figures/kaydahula-manba-p72.svg"
+  },
   "name_id": "HNK-MHC-021",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 72,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "القادر هو الله",
-  "meaning_translation": {
-    "ml": "കഴിവുള്ളവൻ അല്ലാഹുവാണ്.",
-    "en": "The Almighty is God."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
+  },
   "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
   },
-  "figure": {
-    "image_path": "/figures/kaydahula-manba-p72.svg",
-    "caption": {
-      "ml": "അറബി ഗ്രന്ഥത്തിന്റെ അച്ചടിച്ച പേജ് 72-ൽ ഈ പേരിനൊപ്പം നൽകിയ കളം. അക്ഷരങ്ങളും സംഖ്യകളും മാറ്റിയെഴുതാതെ മൂലത്തിലെ ചിത്രം തന്നെയാണ് നൽകിയിരിക്കുന്നത്. പൂർണ്ണ നിർദ്ദേശങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-      "en": "The diagram printed with this name on page 72 of the Arabic source. Its original image is preserved without retyping letters or numbers. Full instruction review remains pending."
-    }
-  },
+  "printed_page": 72,
   "source_notes": [
     {
       "id": "square-surrounding-text",
       "title": {
-        "ml": "കളവും അതിനു ചുറ്റുമുള്ള എഴുത്തും — ഗ്രന്ഥപരാമർശം",
-        "en": "The square and its surrounding inscription — source account"
+        "en": "The square and its surrounding inscription — source account",
+        "ml": "കളവും അതിനു ചുറ്റുമുള്ള എഴുത്തും — ഗ്രന്ഥപരാമർശം"
       },
       "translation": {
-        "ml": "അറബി പേജ് 72-ൽ ഈ പേര് നൂറ് തവണ എഴുതുന്നതും, മൂസാ നബിയുമായി ബന്ധപ്പെട്ട രണ്ടു ഖുർആൻ ഭാഗങ്ങൾ വേർതിരിച്ച അക്ഷരങ്ങളായി ഈ കളത്തിനു ചുറ്റും എഴുതുന്നതും ഗ്രന്ഥം വിവരിക്കുന്നു. മന്ത്രബാധയുള്ളയാൾ അത് ധരിച്ചാൽ ബാധ മാറുമെന്നത് ഗ്രന്ഥത്തിലെ പരമ്പരാഗത അവകാശവാദമാണ്. ഈ കാർഡിലെ കളം അതേ പേജിൽനിന്ന് എടുത്ത ചിത്രമാണ്. ഇത് നൂറ് തവണ ഓതാനുള്ള എണ്ണം എന്നു മാറ്റി എഴുതിയിട്ടില്ല; പുസ്തകം ഇവിടെ എഴുതാനുള്ള എണ്ണമാണ് പറയുന്നത്.",
-        "en": "Arabic page 72 describes writing this name one hundred times and placing two Quranic passages concerning Moses, in separated letters, around this square. It traditionally claims relief from a spell when carried. The diagram in this card is cropped from that page. The hundred inscriptions are not relabelled as a repetition count for recitation."
+        "en": "Arabic page 72 describes writing this name one hundred times and placing two Quranic passages concerning Moses, in separated letters, around this square. It traditionally claims relief from a spell when carried. The diagram in this card is cropped from that page. The hundred inscriptions are not relabelled as a repetition count for recitation.",
+        "ml": "അറബി പേജ് 72-ൽ ഈ പേര് നൂറ് തവണ എഴുതുന്നതും, മൂസാ നബിയുമായി ബന്ധപ്പെട്ട രണ്ടു ഖുർആൻ ഭാഗങ്ങൾ വേർതിരിച്ച അക്ഷരങ്ങളായി ഈ കളത്തിനു ചുറ്റും എഴുതുന്നതും ഗ്രന്ഥം വിവരിക്കുന്നു. മന്ത്രബാധയുള്ളയാൾ അത് ധരിച്ചാൽ ബാധ മാറുമെന്നത് ഗ്രന്ഥത്തിലെ പരമ്പരാഗത അവകാശവാദമാണ്. ഈ കാർഡിലെ കളം അതേ പേജിൽനിന്ന് എടുത്ത ചിത്രമാണ്. ഇത് നൂറ് തവണ ഓതാനുള്ള എണ്ണം എന്നു മാറ്റി എഴുതിയിട്ടില്ല; പുസ്തകം ഇവിടെ എഴുതാനുള്ള എണ്ണമാണ് പറയുന്നത്."
       },
-      "source_title": "منبع أصول الحكمة — شرح البرهتية",
-      "printed_page": 72
+      "printed_page": 72,
+      "source_title": "منبع أصول الحكمة — شرح البرهتية"
+    },
+    {
+      "id": "english-extended-021",
+      "title": {
+        "en": "Meanings, one hundred square inscriptions and paired recitations",
+        "ml": "അർഥങ്ങൾ, കളത്തിലെ നൂറ് എഴുത്ത്, സംയുക്ത വായനകൾ"
+      },
+      "name_id": "HNK-MHC-021",
+      "translation": {
+        "en": "The measure is fay‘alula, with kaf/fatha, ya/sukun, dal/fatha, ha/damma, waw/sukun, lam/fatha and alif. Correspondences are shin and al-Balda. Meanings are ‘the Almighty is God,’ ‘O Preeternal One, O Triumphant One, O He who has power over all things,’ or ‘O Swift One.’\nThe book links one hundred written names and two Musa-related Quran quotations in separate letters around a square, carried by a bewitched person, with spell relief. The checked Arabic-edition square appears above; one hundred counts inscriptions.\nIt also links recitation of names nineteen and twenty to a scryer with loss of the scryer’s vision. A further account describes seclusion under its conditions, continuous paired recitation of names twenty and twenty-one and one recitation of the Names of the Tijan after every hundred. The Tijan list is not supplied in this passage and no substitute names are invented. No particular day or clock time is stated for these accounts.",
+        "ml": "വസ്ന് fay‘alula. ك-യ്ക്ക് ഫത്ഹ, ي-യ്ക്ക് സുകൂൻ, د-യ്ക്ക് ഫത്ഹ, ه-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ل-യ്ക്ക് ഫത്ഹ, തുടർന്ന് ا എന്നാണ് വായനാവിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ش; മൻസിൽ അൽ-ബൽദാ. ‘സർവശക്തൻ അല്ലാഹുവാണ്’, ‘ആദിയില്ലാത്തവനേ, വിജയിക്കുന്നവനേ, എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനേ’, ‘വേഗത്തിൽ പ്രവർത്തിക്കുന്നവനേ’ എന്നീ അർഥാഭിപ്രായങ്ങൾ നൽകുന്നു.\nപേര് നൂറ് തവണയും മൂസാ നബിയുമായി ബന്ധപ്പെട്ട രണ്ടു ഖുർആൻ ഉദ്ധരണികളും വേർതിരിച്ച അക്ഷരങ്ങളായി കളത്തിനു ചുറ്റും എഴുതിവച്ച്, സിഹ്റ് ബാധിച്ചയാൾ കൈവശം വയ്ക്കുന്നതിനെ സിഹ്റ് മാറുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. കളത്തെക്കുറിച്ചുള്ള കൃത്യമായ അറബി പതിപ്പിന്റെ ചിത്രം മുകളിൽ നൽകിയിരിക്കുന്നു; ഈ നൂറ് എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്.\n19,20 പേരുകൾ ഒരു ദർശനക്കാരനോട് വായിക്കുന്നതിനെ അദ്ദേഹത്തിന്റെ ദർശനശേഷി നഷ്ടമാകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശവും ഇതിലുണ്ട്. മറ്റൊരു പരാമർശത്തിൽ ഖൽവത്തിന്റെ നിബന്ധനകളോടെ ഒറ്റപ്പെട്ടിരിക്കുക, 20,21 പേരുകൾ തുടർച്ചയായി വായിക്കുക, ഓരോ നൂറിനുശേഷവും Names of the Tijan ഒരുതവണ വായിക്കുക എന്നിങ്ങനെ പറയുന്നു. Tijan നാമങ്ങളുടെ പൂർണ്ണ പട്ടിക ഈ ഖണ്ഡത്തിൽ നൽകിയിട്ടില്ല; ഊഹിച്ച് പകരം നാമങ്ങൾ ചേർത്തിട്ടില്ല. ഈ പരാമർശങ്ങൾക്ക് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ നൽകുന്നില്ല."
+      },
+      "printed_page": "132–133",
+      "quote_blocks": [
+        {
+          "arabic": "وَأَلْقِ مَا فِي يَمِينِكَ تَلْقَفْ مَا صَنَعُوا ۖ إِنَّمَا صَنَعُوا كَيْدُ سَاحِرٍ ۖ وَلَا يُفْلِحُ السَّاحِرُ حَيْثُ أَتَىٰ",
+          "translation": {
+            "en": "Cast what is in your right hand; it will swallow what they have made. What they have made is only a magician’s trick. A magician will not succeed wherever he comes.",
+            "ml": "നിന്റെ വലതുകൈയിലുള്ളത് ഇടുക; അവർ ഉണ്ടാക്കിയത് അത് വിഴുങ്ങിക്കൊള്ളും. അവർ ഉണ്ടാക്കിയത് ഒരു ജാലവിദ്യക്കാരന്റെ തന്ത്രം മാത്രമാണ്. ജാലവിദ്യക്കാരൻ എവിടെ വന്നാലും വിജയിക്കുകയില്ല."
+          },
+          "source_location": "Quran 20:69, quoted portion"
+        },
+        {
+          "arabic": "قَالَ مُوسَىٰ مَا جِئْتُم بِهِ السِّحْرُ ۖ إِنَّ اللَّهَ سَيُبْطِلُهُ ۖ إِنَّ اللَّهَ لَا يُصْلِحُ عَمَلَ الْمُفْسِدِينَ",
+          "translation": {
+            "en": "Musa said: What you have brought is magic. God will render it ineffective. God does not set right the work of those who cause corruption.",
+            "ml": "മൂസാ പറഞ്ഞു: നിങ്ങൾ കൊണ്ടുവന്നത് സിഹ്റാണ്. അല്ലാഹു അതിനെ നിഷ്ഫലമാക്കും. നാശമുണ്ടാക്കുന്നവരുടെ പ്രവൃത്തിയെ അല്ലാഹു ശരിയാക്കുകയില്ല."
+          },
+          "source_location": "Quran 10:81, quoted portion"
+        }
+      ],
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "القادر هو الله",
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "The Almighty is God.",
+    "ml": "കഴിവുള്ളവൻ അല്ലാഹുവാണ്."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 132,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ش; മൻസിൽ al-Balda. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ش and lunar mansion al-Balda. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "كَيْدَهُولَا",
+      "arabic_original": "كيدهولا",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ],
+  "edition_figures": [
+    {
+      "image_path": "/figures/kaydahula-english-p134.png",
+      "caption": {
+        "ml": "21-ാം നാമത്തിന്റെ തുടർച്ചയായ ഇംഗ്ലീഷ് പതിപ്പിലെ ചിഹ്നകളം. അടുത്ത നാമത്തിന്റെ തലക്കെട്ടിനുമുകളിൽ അച്ചടിച്ചതുകൊണ്ട് 22-ാം പേരിന്റേതാക്കി മാറ്റിയിട്ടില്ല. ചിഹ്നങ്ങൾ മൂലചിത്രത്തിൽനിന്നുള്ളവയാണ്.",
+        "en": "The symbol square continuing the twenty-first name in the English edition. It is not assigned to the twenty-second name merely because it precedes that heading."
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "printed_page": 134,
+      "review_status": "checked_against_scan"
     }
   ]
 }

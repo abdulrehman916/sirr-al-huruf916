@@ -1,68 +1,110 @@
 {
   "name_id": "HNK-MHC-003",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 68,
-  "source_name_form": "تَتْلِيهٍ",
-  "scope_note": {
-    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല.",
-    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes."
-  },
   "name_note": {
-    "ml": "അർത്ഥമായി ഗ്രന്ഥം പരിശുദ്ധനും ശക്തനുമായവൻ, മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ, എല്ലാം അറിയുന്നവൻ, സംരക്ഷകൻ എന്നീ വ്യത്യസ്ത അഭിപ്രായങ്ങൾ നൽകുന്നു.",
-    "en": "The source gives alternative meanings: Holy and Omnipotent; Glorified and Holy; Omniscient; Protector."
+    "en": "The source gives alternative meanings: Holy and Omnipotent; Glorified and Holy; Omniscient; Protector.",
+    "ml": "അർത്ഥമായി ഗ്രന്ഥം പരിശുദ്ധനും ശക്തനുമായവൻ, മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ, എല്ലാം അറിയുന്നവൻ, സംരക്ഷകൻ എന്നീ വ്യത്യസ്ത അഭിപ്രായങ്ങൾ നൽകുന്നു."
   },
   "practices": [
     {
       "id": "tin-13",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": 13,
       "title": {
-        "ml": "കീടങ്ങളെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശം",
-        "en": "Source account concerning bedbugs"
-      },
-      "arabic_original": "ومن خواصه أن من كتبه ١٣ مرة في لوح صفيح ووضعه في البيت الذي به بق رحلت منه بإذن الله تعالى",
-      "translation": {
-        "ml": "ഒരു തകരപ്പലകയിൽ ഈ പേര് പതിമൂന്ന് തവണ എഴുതി മൂട്ടകളുള്ള വീട്ടിൽ വെച്ചാൽ അവ അവിടെനിന്ന് പോകുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
-        "en": "The source describes thirteen inscriptions on a tin plate in a house with bedbugs and claims that they leave."
+        "en": "Source account concerning bedbugs",
+        "ml": "കീടങ്ങളെക്കുറിച്ചുള്ള ഗ്രന്ഥപരാമർശം"
       },
       "timing": {
-        "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "No specific time or day is stated in this instruction."
+        "en": "No specific time or day is stated in this instruction.",
+        "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source describes thirteen inscriptions on a tin plate in a house with bedbugs and claims that they leave.",
+        "ml": "ഒരു തകരപ്പലകയിൽ ഈ പേര് പതിമൂന്ന് തവണ എഴുതി മൂട്ടകളുള്ള വീട്ടിൽ വെച്ചാൽ അവ അവിടെനിന്ന് പോകുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു."
+      },
+      "arabic_original": "ومن خواصه أن من كتبه ١٣ مرة في لوح صفيح ووضعه في البيت الذي به بق رحلت منه بإذن الله تعالى"
     },
     {
       "id": "daily-70",
+      "claim": {
+        "en": "A traditional claim in the source; the outcome is not established.",
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല."
+      },
       "count": 70,
       "title": {
-        "ml": "ദിവസേന എഴുപത് തവണ",
-        "en": "Seventy repetitions daily"
-      },
-      "arabic_original": "ومن تلاه كل يوم ٧٠ مرة يموت غنيا ويرزقه الله المعيشة الهنيئة",
-      "translation": {
-        "ml": "ദിവസേന എഴുപത് തവണ വായിക്കുന്ന ഒരാൾ സമ്പന്നനായി മരണപ്പെടുമെന്നും അല്ലാഹു അയാൾക്ക് സുഖകരമായ ഉപജീവനം നൽകുമെന്നും ഗ്രന്ഥം പറയുന്നു.",
-        "en": "The source claims that daily repetition seventy times brings comfortable livelihood and wealth at death."
+        "en": "Seventy repetitions daily",
+        "ml": "ദിവസേന എഴുപത് തവണ"
       },
       "timing": {
-        "ml": "ദിവസേന; നിശ്ചിത മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല.",
-        "en": "Daily; no clock hour or prayer is specified."
+        "en": "Daily; no clock hour or prayer is specified.",
+        "ml": "ദിവസേന; നിശ്ചിത മണിക്കൂറോ നമസ്കാരമോ പറഞ്ഞിട്ടില്ല."
       },
-      "claim": {
-        "ml": "ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദം; ഫലം തെളിയിക്കപ്പെട്ടിട്ടില്ല.",
-        "en": "A traditional claim in the source; the outcome is not established."
-      }
+      "translation": {
+        "en": "The source claims that daily repetition seventy times brings comfortable livelihood and wealth at death.",
+        "ml": "ദിവസേന എഴുപത് തവണ വായിക്കുന്ന ഒരാൾ സമ്പന്നനായി മരണപ്പെടുമെന്നും അല്ലാഹു അയാൾക്ക് സുഖകരമായ ഉപജീവനം നൽകുമെന്നും ഗ്രന്ഥം പറയുന്നു."
+      },
+      "arabic_original": "ومن تلاه كل يوم ٧٠ مرة يموت غنيا ويرزقه الله المعيشة الهنيئة"
     }
   ],
-  "edition_note": {
-    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്.",
-    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed."
+  "scope_note": {
+    "en": "Selected accounts checked against the scanned source, not a complete chapter translation. Source claims do not guarantee outcomes.",
+    "ml": "മൂലപാഠവുമായി ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത പരാമർശങ്ങളാണ് ഈ ഭാഗം. ഇത് പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനമല്ല. ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങൾ ഫലം ഉറപ്പുനൽകുന്നില്ല."
   },
+  "edition_note": {
+    "en": "Existing spelling and calculations are preserved. Medical or harmful claims are not presented as practical guidance in this selected section; other source material remains to be reviewed.",
+    "ml": "പഴയ പേരിന്റെ അക്ഷരങ്ങളും കണക്കുകളും മാറ്റിയിട്ടില്ല. ചികിത്സാ/ഹാനികരമായ അവകാശവാദങ്ങൾ പ്രായോഗിക നിർദ്ദേശങ്ങളായി ഈ ഭാഗത്തിൽ നൽകിയിട്ടില്ല; ഗ്രന്ഥത്തിലെ മറ്റു ഭാഗങ്ങളുടെ പരിശോധന ബാക്കിയുണ്ട്."
+  },
+  "printed_page": 68,
+  "source_notes": [
+    {
+      "id": "english-extended-003",
+      "title": {
+        "en": "Third-name alternative meanings and collective account",
+        "ml": "മൂന്നാം പേരിന്റെ അർഥവ്യത്യാസങ്ങളും സംയുക്ത പ്രയോഗവും"
+      },
+      "name_id": "HNK-MHC-003",
+      "translation": {
+        "en": "The measure is taf‘il: first ta/fatha, second ta/sukun, lam/kasra, ya/sukun and a nunated ha. Correspondences are jim and al-Thuraiya. Meanings include ‘the Most Holy and Omnipotent,’ ‘the Most Glorified and Holy,’ ‘the Omniscient’ or ‘Protector.’ Thirteen tin-plate inscriptions and seventy daily recitations appear above.\nFor marital disputes the book describes seventy inscriptions with musk and saffron on gazelle parchment, carried on the husband’s head, with a reconciliation claim. Those seventy count inscriptions, separately from seventy daily recitations. It also links regular combined use of names one, two and three to obedience of celestial and terrestrial spirits, with no fixed count for that combined account.",
+        "ml": "വസ്ന് taf‘il. ആദ്യ ت-യ്ക്ക് ഫത്ഹ, രണ്ടാമത്തെ ت-യ്ക്ക് സുകൂൻ, ل-യ്ക്ക് കസ്റ, ي-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള ه എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ج; മൻസിൽ അഥ്ഥുറയ്യാ. ‘പരിശുദ്ധനും സർവശക്തനുമായവൻ’, ‘മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ’, ‘എല്ലാം അറിയുന്നവൻ’, ‘സംരക്ഷകൻ’ എന്നീ അർഥാഭിപ്രായങ്ങൾ നൽകുന്നു. ടിൻ തകിടിലെ 13 എഴുത്തും ദിവസേന 70 വായനയും മുകളിലെ ഭാഗങ്ങളിലുണ്ട്.\nദമ്പതികൾക്കിടയിൽ തർക്കമുണ്ടായാൽ കസ്തൂരിയും കുങ്കുമപ്പൂവും ഉപയോഗിച്ച് മാൻതോൽ രേഖയിൽ പേര് 70 തവണ എഴുതി ഭർത്താവ് തലയിൽ വഹിക്കുന്നത് ഭാര്യയുമായി അനുരഞ്ജനം ഉണ്ടാകുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. ഈ 70 എഴുത്തിനുള്ളതാണ്; ദിവസേനയുള്ള 70 വായനയിൽനിന്ന് വേറിട്ട പരാമർശം. ഒന്നും രണ്ടും മൂന്നും പേരുകൾ പതിവായി ചേർത്ത് വായിക്കുന്നതിനെ ആകാശ–ഭൂതല ആത്മാക്കൾ അനുസരിക്കുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്ന പരാമർശവും ഇതിലുണ്ട്; സംയുക്ത വായനയ്ക്ക് നിശ്ചിത എണ്ണം നൽകിയിട്ടില്ല."
+      },
+      "printed_page": "111–112",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
   "meaning_arabic": "ومعناه بالعربية القدوس القادر وقيل سبوح قدوس وقيل العليم وقيل المجير",
+  "source_name_form": "تَتْلِيهٍ",
   "meaning_translation": {
-    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: പരിശുദ്ധനും ശക്തനുമായവൻ; മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ; എല്ലാം അറിയുന്നവൻ; അഭയം നൽകുന്നവൻ.",
-    "en": "Alternative source meanings: the Holy, the Powerful; the Glorified, the Holy; the All-Knowing; the Giver of Refuge."
-  }
+    "en": "Alternative source meanings: the Holy, the Powerful; the Glorified, the Holy; the All-Knowing; the Giver of Refuge.",
+    "ml": "ഗ്രന്ഥത്തിലെ വ്യത്യസ്ത അർഥങ്ങൾ: പരിശുദ്ധനും ശക്തനുമായവൻ; മഹത്വപ്പെടുത്തപ്പെട്ട പരിശുദ്ധൻ; എല്ലാം അറിയുന്നവൻ; അഭയം നൽകുന്നവൻ."
+  },
+  "edition_accounts": [
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 111,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ج; മൻസിൽ al-Thuraiya. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ج and lunar mansion al-Thuraiya. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "تَتْلِيهٍ",
+      "arabic_original": "تتليه",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
+    }
+  ]
 }

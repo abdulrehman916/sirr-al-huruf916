@@ -439,5 +439,56 @@
       "ml": "ബന്ധം പുസ്തകത്തിൽ നൽകിയ «حاكِم» എന്ന അറബി അർഥത്തിനാണ്. ഈ വാക്യത്തിൽ ബർഹത്തിയ നാമമോ അതിന് പ്രത്യേക ഓതൽഎണ്ണം, സമയം, കളം എന്നിവയോ നൽകിയിട്ടില്ല.",
       "en": "This passage is linked through the Arabic meaning recorded in the book, not as an occurrence of the Birhatiah name. It prescribes no Birhatiah-specific repetition count, time or square."
     }
+  },
+  {
+    "id": "birhatiah-meaning-quran-57-3",
+    "related_name_ids": [
+      "HNK-MHC-025"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم — تفسير الطبري",
+    "source_location": "Al-Hadid 57:3 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya3.html"
+    ],
+    "title": {
+      "ml": "ആദിയില്ലാത്തവൻ, നിലനിൽക്കുന്നവൻ — അർഥബന്ധമുള്ള ആയത്ത്",
+      "en": "Preeternity and permanence — meaning-related verse"
+    },
+    "arabic_original": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+    "translation": {
+      "ml": "അവനാണ് ആദ്യനും അവസാനനും പ്രത്യക്ഷനും ഗൂഢനും. അവൻ എല്ലാ കാര്യവും അറിയുന്നവനാണ്.",
+      "en": "He is the First and the Last, the Manifest and the Hidden, and He knows all things."
+    },
+    "scope_note": {
+      "ml": "പുസ്തകം നൽകുന്ന «ഖദീം», «ദാഇം» എന്ന അർഥങ്ങളുമായി ആശയപരമായി ബന്ധിപ്പിച്ച ആയത്താണ്. ഇത് ഒരു വിശദീകരണബന്ധമാണ്: ഈ ആയത്തിൽ ബർഹത്തിയ നാമം വരുന്നില്ല; ആ നാമത്തിന്റെ ഓതൽഎണ്ണമോ സമയമോ രീതിയോ ഈ ആയത്ത് നൽകുന്നില്ല. അത്തബരി ആദ്യൻ എന്നതിനെ എല്ലാറ്റിനും മുമ്പുള്ളവൻ എന്നും അവസാനൻ എന്നതിനെ അവസാനമില്ലാത്തവൻ എന്നും വിശദീകരിക്കുന്നു.",
+      "en": "This is an explanatory thematic link to the book’s meanings Qadim and Daim, not an occurrence of the Birhatiah name. It supplies no Birhatiah count, timing or method. Al-Tabari explains the First as before everything and the Last as without end."
+    }
+  },
+  {
+    "id": "birhatiah-source-quotation-quran-10-81",
+    "related_name_ids": [
+      "HNK-MHC-021",
+      "HNK-MHC-028"
+    ],
+    "review_status": "checked_against_digital_text",
+    "source_title": "القرآن الكريم",
+    "source_location": "Yunus 10:81 — complete verse",
+    "source_urls": [
+      "https://quran.ksu.edu.sa/tafseer/tabary/sura10-aya81.html"
+    ],
+    "title": {
+      "ml": "ഗ്രന്ഥത്തിൽ ഉദ്ധരിക്കുന്ന യൂനുസ് 10:81 — പൂർണ്ണ ആയത്തും അർഥവും",
+      "en": "Yunus 10:81 quoted in the book — complete verse and meaning"
+    },
+    "arabic_original": "فَلَمَّا أَلْقَوْا قَالَ مُوسَىٰ مَا جِئْتُم بِهِ السِّحْرُ ۖ إِنَّ اللَّهَ سَيُبْطِلُهُ ۖ إِنَّ اللَّهَ لَا يُصْلِحُ عَمَلَ الْمُفْسِدِينَ",
+    "translation": {
+      "ml": "അവർ ഇട്ടപ്പോൾ മൂസാ പറഞ്ഞു: നിങ്ങൾ കൊണ്ടുവന്നത് സിഹ്റാണ്. അല്ലാഹു അതിനെ നിഷ്ഫലമാക്കും. തീർച്ചയായും നാശമുണ്ടാക്കുന്നവരുടെ പ്രവൃത്തിയെ അല്ലാഹു ശരിയാക്കുകയില്ല.",
+      "en": "When they cast, Musa said: What you have brought is magic. Allah will render it ineffective. Allah does not set right the work of those who cause corruption."
+    },
+    "scope_note": {
+      "ml": "ഗ്രന്ഥത്തിലെ ഉദ്ധരണി തിരിച്ചറിയാനാണ് പൂർണ്ണ ആയത്ത് ഇവിടെ നൽകുന്നത്. ഗ്രന്ഥത്തിലെ എഴുത്തുരീതിയോ എണ്ണമോ ഖുർആൻ തന്നെ നിർദേശിച്ചതാണെന്ന അർഥമില്ല.",
+      "en": "The full verse identifies the book’s quotation. The book’s inscription method and counts are not thereby prescribed by the Quran itself."
+    }
   }
 ]

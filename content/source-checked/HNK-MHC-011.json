@@ -1,50 +1,90 @@
 {
   "name_id": "HNK-MHC-011",
-  "review_status": "checked_against_scan",
-  "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "printed_page": 70,
-  "source_name_form": null,
-  "scope_note": {
-    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല.",
-    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects."
-  },
   "name_note": {
-    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല.",
-    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved."
-  },
-  "meaning_arabic": "يا متين",
-  "meaning_translation": {
-    "ml": "ഉറച്ചവനേ.",
-    "en": "O Firm One."
+    "en": "One meaning given by this source is shown here; full review of alternative interpretations remains pending. Existing card spelling, vowel marks and calculations are preserved.",
+    "ml": "ഗ്രന്ഥം നൽകുന്ന ഒരു അർത്ഥമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്; വ്യത്യസ്ത അഭിപ്രായങ്ങളുള്ളപ്പോൾ അവയുടെ പൂർണ്ണ പരിശോധന ബാക്കിയുണ്ട്. നിലവിലെ കാർഡിന്റെ പേര്, ഹരക്കത്ത്, കണക്കുകൾ എന്നിവ മാറ്റിയിട്ടില്ല."
   },
   "practices": [],
-  "edition_note": {
-    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
-    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
+  "scope_note": {
+    "en": "Below are name-specific passages checked against the scanned source. The full chapter translation remains incomplete. Traditional outcome claims are not established effects.",
+    "ml": "ഈ പേരുമായി നേരിട്ട് ബന്ധപ്പെട്ട, ഗ്രന്ഥത്തിൽ ഒത്തുനോക്കിയ ഭാഗങ്ങളാണ് താഴെ. പൂർണ്ണ അധ്യായത്തിന്റെ വിവർത്തനം ഇനിയും പൂർത്തിയായിട്ടില്ല. പരമ്പരാഗത ഫലാവകാശവാദങ്ങൾ തെളിയിക്കപ്പെട്ട ഫലങ്ങളല്ല."
   },
+  "edition_note": {
+    "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added.",
+    "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല."
+  },
+  "printed_page": 70,
+  "source_notes": [
+    {
+      "id": "english-extended-011",
+      "title": {
+        "en": "Eleventh-name alternative meanings and 20/7 recitation accounts",
+        "ml": "പതിനൊന്നാം പേരിന്റെ അർഥവ്യത്യാസങ്ങളും 20/7 വായനകളുടെ പരാമർശങ്ങളും"
+      },
+      "name_id": "HNK-MHC-011",
+      "translation": {
+        "en": "The measure is Hadramawt: qaf/fatha, lam/sukun, nun/fatha, ha/damma, waw/sukun and a nunated dal. Correspondences are kaf and al-Kharatan. Meanings include ‘O Firm One,’ ‘O All-hearer, O All-seer,’ ‘O All-hearer, O Originator,’ ‘O Enricher’ or ‘O All-encompassing One.’\nThe book links twenty recitations over an afflicted person or someone having fits, with amber skin, benzoin, frankincense and liquid storax incense, to a claim of an indwelling entity speaking. It then describes seven recitations of all the names and a hung written amulet in a departure/no-return claim. Twenty counts this name; seven counts the complete set. Fits-related content is not medical guidance. The paired eleventh/twelfth-name frankincense/mahaleb account appears separately above.",
+        "ml": "വസ്ന് Hadramawt. ق-യ്ക്ക് ഫത്ഹ, ل-യ്ക്ക് സുകൂൻ, ن-യ്ക്ക് ഫത്ഹ, ه-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, അവസാനം തൻവീനുള്ള د എന്നാണ് വിവരണം. ബന്ധിപ്പിച്ച അക്ഷരം ك; മൻസിൽ അൽ-ഖറതാൻ. ‘ഉറച്ചവനേ’, ‘എല്ലാം കേൾക്കുന്നവനേ, കാണുന്നവനേ’, ‘എല്ലാം കേൾക്കുന്നവനേ, സൃഷ്ടിക്ക് തുടക്കം നൽകുന്നവനേ’, ‘സമ്പന്നനാക്കുന്നവനേ’, ‘എല്ലാം ഉൾക്കൊള്ളുന്നവനേ’ എന്നീ അർഥാഭിപ്രായങ്ങൾ നൽകുന്നു.\nബാധയോ fits-ഓ ഉള്ള ഒരാളോട് പേര് 20 തവണ വായിച്ച് amber skin, benzoin, കുന്തിരിക്കം, liquid storax എന്നിവ ധൂപമാക്കുന്നതിനെ അകത്തുള്ളത് സംസാരിക്കുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. വിടുന്നില്ലെങ്കിൽ മുഴുവൻ നാമങ്ങളും ഏഴ് തവണ വായിക്കുക, തുടർന്ന് എഴുത്ത് തൂക്കുക എന്നിവയെ തിരിച്ചുവരാതിരിക്കലുമായി ബന്ധിപ്പിക്കുന്നു. 20 ഈ പേരിന്റെ വായനയ്ക്കാണ്; ഏഴ് മുഴുവൻ പേരുകളുടെ വായനയ്ക്കാണ്. Fits സംബന്ധിച്ച വിവരണം ചികിത്സാനിർദേശമായി നൽകിയിട്ടില്ല. 11,12 പേരുകൾ ചേർത്തുള്ള ആവർത്തനവും കുന്തിരിക്കം–mahaleb ധൂപവും സംബന്ധിച്ച പ്രത്യേക പരാമർശം മുകളിലുണ്ട്."
+      },
+      "printed_page": "122–124",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_status": "checked_against_scan",
+  "meaning_arabic": "يا متين",
   "edition_accounts": [
     {
       "id": "english-joint-summoning",
-      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
-      "printed_page": 124,
-      "title": {
-        "ml": "ഖൽനഹൂദ്–ബർശാൻ സംയുക്ത പരാമർശം",
-        "en": "Qalnahud–Barshan combined account"
-      },
-      "original_text": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires.",
-      "translation": {
-        "ml": "ഏതെങ്കിലും ആവശ്യത്തിന് ആത്മാക്കളെ വിളിക്കാനാഗ്രഹിക്കുന്ന ഒരാൾ ഖൽനഹൂദ്, ബർശാൻ എന്നീ രണ്ടു പേരുകളും അധികമായി ഓതുകയും കുന്തിരിക്കവും മഹ്‌ലബും പുകയ്ക്കുകയും ആത്മാക്കളോട് ആവശ്യപ്പെടുകയും ചെയ്താൽ അവർ വന്ന് അയാൾ ആഗ്രഹിക്കുന്ന കാര്യങ്ങളെക്കുറിച്ച് സംസാരിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം.",
-        "en": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires."
-      },
       "count": null,
+      "title": {
+        "en": "Qalnahud–Barshan combined account",
+        "ml": "ഖൽനഹൂദ്–ബർശാൻ സംയുക്ത പരാമർശം"
+      },
       "timing": {
-        "ml": "നിശ്ചിത എണ്ണമോ ദിവസമോ മണിക്കൂറോ നൽകിയിട്ടില്ല; അധികമായി ഓതുക എന്നാണ്.",
-        "en": "No fixed count, day or hour; the text says frequently."
+        "en": "No fixed count, day or hour; the text says frequently.",
+        "ml": "നിശ്ചിത എണ്ണമോ ദിവസമോ മണിക്കൂറോ നൽകിയിട്ടില്ല; അധികമായി ഓതുക എന്നാണ്."
       },
       "scope_note": {
-        "ml": "ഇത് 11-ഉം 12-ഉം പേരുകൾ ചേർന്നുള്ള രീതിയെക്കുറിച്ചാണ്; 11-ാമത്തെ പേരിന് മാത്രമുള്ള നിർദേശമല്ല.",
-        "en": "This concerns the eleventh and twelfth names together, not the eleventh name alone."
-      }
+        "en": "This concerns the eleventh and twelfth names together, not the eleventh name alone.",
+        "ml": "ഇത് 11-ഉം 12-ഉം പേരുകൾ ചേർന്നുള്ള രീതിയെക്കുറിച്ചാണ്; 11-ാമത്തെ പേരിന് മാത്രമുള്ള നിർദേശമല്ല."
+      },
+      "translation": {
+        "en": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires.",
+        "ml": "ഏതെങ്കിലും ആവശ്യത്തിന് ആത്മാക്കളെ വിളിക്കാനാഗ്രഹിക്കുന്ന ഒരാൾ ഖൽനഹൂദ്, ബർശാൻ എന്നീ രണ്ടു പേരുകളും അധികമായി ഓതുകയും കുന്തിരിക്കവും മഹ്‌ലബും പുകയ്ക്കുകയും ആത്മാക്കളോട് ആവശ്യപ്പെടുകയും ചെയ്താൽ അവർ വന്ന് അയാൾ ആഗ്രഹിക്കുന്ന കാര്യങ്ങളെക്കുറിച്ച് സംസാരിക്കുമെന്നാണ് ഗ്രന്ഥത്തിലെ അവകാശവാദം."
+      },
+      "printed_page": 124,
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "original_text": "If one wishes to summon spirits for anything, one should frequently recite “Qalnahudin Barshanin,” burn frankincense and mahaleb, and request the spirits and they will come to one and speak to one about everything one desires."
+    },
+    {
+      "id": "english-reading-correspondence-review",
+      "title": {
+        "ml": "ഉച്ചാരണം, ഹറകത്ത്, അക്ഷരം, മൻസിൽ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Pronunciation, reading vowels, letter and mansion — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition, commentary by Nineveh Shadrach",
+      "printed_page": 122,
+      "translation": {
+        "ml": "ഈ പതിപ്പിലെ ബന്ധിപ്പിച്ച അക്ഷരം ك; മൻസിൽ al-Kharatan. ഇവ പുസ്തകത്തിന്റെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഈ നാമത്തിന് ഓതാനുള്ള ഘടികാരസമയം ഇതിൽനിന്ന് നിശ്ചയിച്ചിട്ടില്ല.",
+        "en": "This edition associates the name with letter ك and lunar mansion al-Kharatan. These are traditional correspondences in the book, not a clock-time recitation prescription."
+      },
+      "scope_note": {
+        "ml": "ഹറകത്ത് ഇംഗ്ലീഷ് പതിപ്പിലെ അക്ഷരംപ്രതിയുള്ള ഉച്ചാരണവിവരണത്തിൽനിന്ന് ചേർത്ത വായനയാണ്. കാർഡിന്റെ നിലവിലെ പേരും Abjad കണക്കും വേർതിരിച്ച് നിലനിർത്തുന്നു.",
+        "en": "Reading vowels are editorially added from the English edition’s letter-by-letter pronunciation instructions. The stored card spelling and Abjad calculation remain separate."
+      },
+      "arabic_reading": "قَلْنَهُودٍ",
+      "arabic_original": "قلنهود",
+      "subjects": [
+        "pronunciation",
+        "correspondence"
+      ]
     }
-  ]
+  ],
+  "source_name_form": null,
+  "meaning_translation": {
+    "en": "O Firm One.",
+    "ml": "ഉറച്ചവനേ."
+  }
 }
