@@ -9,6 +9,7 @@ import { calculateAbjad, getAbjadBreakdown } from "@/lib/abjadValues";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import HolyNameSourceChapter from "./HolyNameSourceChapter";
+import { sectionCEntriesForCard } from "@/lib/birhatiahSharedContent";
 
 // ── Section C Card Detail ──
 // Renders ONE Birhatīya name card with:
@@ -144,7 +145,7 @@ function AdvancedBlock({ label, ml, entries, nameId }) {
   );
 }
 
-export default function HolyNameEsotericResearchProfile({ nameId }) {
+export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKeys = new Set() }) {
   const [rec, setRec] = useState(null);
   const [loading, setLoading] = useState(true);
   const isOwner = useIsOwner();
@@ -197,7 +198,7 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
   const hasAlts = hasAltSpell || hasAltPron || hasAltMean || hasAltAbjad;
   const populatedSections = ADVANCED_SECTIONS.map(s => ({
     ...s,
-    entries: (Array.isArray(rec[s.key]) ? rec[s.key] : []).filter(belongsToCard),
+    entries: sectionCEntriesForCard((Array.isArray(rec[s.key]) ? rec[s.key] : []).filter(belongsToCard), s.key, sharedEntryKeys),
   })).filter(s => s.entries.length > 0);
 
   return (
