@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm run verify:calculations",
+    "prebuild": "npm run verify:calculations && npm run verify:section-c-source",
     "build": "vite build",
     "verify:calculations": "node scripts/verify-calculation-core.mjs && node scripts/verify-holy-name-abjad.mjs",
     "lint": "eslint . --quiet",
@@ -17,7 +17,8 @@
     "verify:private-references": "node scripts/verify-private-references.mjs",
     "verify:calculation-regression": "node scripts/verify-calculation-regression.mjs",
     "verify:calculation-source": "node scripts/verify-calculation-source.mjs",
-    "verify:async-calculation": "node scripts/verify-async-calculation.mjs"
+    "verify:async-calculation": "node scripts/verify-async-calculation.mjs",
+    "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",
