@@ -1,4 +1,5 @@
 import version from "@/data/birhatiahCollectiveVersion.json";
+import bibliography from "@/data/birhatiahBibliography.json";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 export default function BirhatiahCollectiveVersion() {
@@ -15,6 +16,11 @@ export default function BirhatiahCollectiveVersion() {
       <p className={`${cls} text-white/90 leading-loose`} lang={language}>{account.translation[language]}</p>
       <p className={`${cls} text-sm text-white/65 leading-loose`}>{account.scope_note[language]}</p>
       <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></details>
+    </section>}
+    {bibliography.review_status === "checked_against_digital_text" && <section className="space-y-2">
+      <h3 className={`${cls} text-base text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തെക്കുറിച്ചുള്ള പുറംസ്രോതസ്സ്" : "External bibliographic context"}</h3>
+      <p className={`${cls} text-sm text-white/85 leading-loose`}>{bibliography.translation[language]}</p>
+      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{bibliography.source_title}</p></details>
     </section>}
     <h3 className={`${cls} text-lg text-yellow-200`}>{version.title[language]}</h3>
     <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.introduction[language]}</p>

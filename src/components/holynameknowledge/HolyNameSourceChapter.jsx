@@ -47,7 +47,12 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       </article>)}
       {(chapter.source_notes || []).map(note => <article key={note.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
         <h3 className={`${cls} text-base text-yellow-200`}>{translated(note.title)}</h3>
-        <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(note.translation)}</p>
+        <p className={`${cls} text-sm text-white/85 leading-loose whitespace-pre-wrap`}>{translated(note.translation)}</p>
+        {(note.quote_blocks || []).map((quote, index) => <div key={`${note.id}-quote-${index}`} className="space-y-2">
+          <p className="font-amiri text-2xl text-right leading-loose text-yellow-200" dir="rtl" lang="ar">{quote.arabic}</p>
+          <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(quote.translation)}</p>
+          <p className={`${cls} text-xs text-white/50`}>{quote.source_location}</p>
+        </div>)}
         <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{note.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {note.printed_page}</p></details>
       </article>)}
       {chapter.figure?.image_path?.startsWith("/figures/") && <figure className="space-y-2"><img src={chapter.figure.image_path} alt={translated(chapter.figure.caption)} loading="lazy" className="max-w-full w-80 rounded-lg mx-auto" /><figcaption className={`${cls} text-sm text-white/70 leading-relaxed`}>{translated(chapter.figure.caption)}</figcaption></figure>}
