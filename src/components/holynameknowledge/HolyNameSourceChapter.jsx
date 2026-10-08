@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import guides from '@/data/birhatiahReaderGuide.json';
+import additionalOutsideMethods from '@/data/birhatiahOutsideMethods2023.json';
 import methodVerses from '@/data/birhatiahMethodVerses.json';
 import meaningReadings from '@/data/birhatiahMeaningReadings.json';
 import externalSources from '@/data/holyNamesExternalSources.json';
@@ -32,8 +33,8 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
   const linked = ['practices', 'edition_accounts', 'source_notes'].flatMap(group => chapter[group] || []).find(entry => entry.id === method.source_entry);
   const sourceTitle = method.external_source?.title || (method.source_name_id && method.source_name_id !== chapter.name_id ? '' : (linked?.source_title || chapter.source_title));
   const sourcePage = linked?.printed_page || (linked ? chapter.printed_page : null);
-  const sourceTime = linked?.timing?.[language] || '';
-  const sourceCount = linked?.count;
+  const sourceTime = linked?.timing?.[language] || method.timing?.[language] || '';
+  const sourceCount = linked?.count ?? method.count;
   return <details id={method.method_id} className="rounded-xl border border-yellow-500/25 bg-yellow-500/[0.035] scroll-mt-24 overflow-hidden" data-reader-section="method" data-source-entry={method.source_entry} open={index === 1 ? true : undefined}>
     <summary className="cursor-pointer px-4 py-3 space-y-1 hover:bg-yellow-500/5">
       <span className="block text-lg font-semibold text-yellow-200">{index}. {t(method.title)}</span>
@@ -42,6 +43,7 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
     <div className="space-y-4 px-4 pb-5 pt-3 border-t border-yellow-500/15">
     <h4 className="text-yellow-100">{ml ? 'ഉപയോഗിക്കേണ്ട നാമം / പാഠം' : 'Name / text used in this method'}</h4>
     {!collective && <Arabic>{method.formula_arabic || name}</Arabic>}
+    {method.source_form_arabic && <details className="text-xs text-white/55"><summary className="cursor-pointer">{ml ? 'പുറംരേഖയിൽ അച്ചടിച്ച ഹറകത്തില്ലാത്ത നാമരൂപം' : 'Unvowelled spelling in the outside source'}</summary><Arabic>{method.source_form_arabic}</Arabic></details>}
     {(collective || method.include_all_names) && <section className="space-y-3" data-reader-section="all-names-text"><h4 className="text-yellow-100">{ml ? '28 നാമങ്ങളുടെ പൂർണ്ണ പാഠം' : 'Complete text of the twenty-eight names'}</h4><Arabic>{collectiveText.names.map(entry => entry.reader_form || entry.arabic_original).join('، ')}</Arabic></section>}
     {method.include_collective_formula && <details className="rounded-xl border border-yellow-500/20 p-3 space-y-3" data-reader-section="inline-collective-formula"><summary className="cursor-pointer text-yellow-100">{ml ? 'ഇവിടെ വായിക്കേണ്ട പൂർണ്ണ സംയുക്ത മന്ത്രം' : 'Complete collective formula to read here'}</summary><Arabic>{collectiveText.names.flatMap(entry => [entry.reader_form || entry.arabic_original, entry.reader_form || entry.arabic_original]).join('، ')}{'\n'}{collectiveText.arabic_short_continuation}</Arabic><p className="text-white/85 leading-loose">{t(collectiveText.continuation_translation)}</p></details>}
     {method.written_text && <section className="space-y-3"><h4 className="text-yellow-100">{ml ? 'എഴുതേണ്ട പാഠവും അർഥവും' : 'Text to write and its meaning'}</h4><Arabic>{method.written_text.arabic}</Arabic><p className="text-white/85 leading-loose">{t(method.written_text.translation)}</p></section>}
@@ -87,7 +89,7 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
   const guide = guides[nameId];
   const readings = chapter.edition_accounts?.find(entry => entry.id === 'english-reading-correspondence-review');
   const name = chapter.source_name_form || safeReading(readings?.arabic_reading, readings?.arabic_original);
-  const methods = guide ? [guide, ...(guide.other_methods || [])] : [];
+  const methods = guide ? [guide, ...(guide.other_methods || []), ...additionalOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))] : [];
   const usedSourceIds = new Set(methods.filter(method => !method.source_name_id || method.source_name_id === nameId).map(method => method.source_entry).filter(Boolean));
   const supplementary = ['practices', 'edition_accounts', 'source_notes']
     .flatMap(group => (chapter[group] || []).filter(entry => !usedSourceIds.has(entry.id)).map(entry => ({ ...entry, group })));
