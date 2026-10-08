@@ -5,6 +5,7 @@ import externalSources from '@/data/holyNamesExternalSources.json';
 import collectiveText from '@/data/birhatiahCollectiveVersion.json';
 import HolyNameReferenceChapter from './HolyNameReferenceChapter';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { BirhatiahOnlineNameComparison } from './BirhatiahOnlineNumericalComparison';
 
 const letters = value => String(value || '').replace(/[\u064B-\u065F\u0670\u0640\s،؛؟,.]/g, '');
 const safeReading = (reading, original) => reading && letters(reading) === letters(original) ? reading : original;
@@ -58,6 +59,7 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       <Arabic>{safeReading(meaningReadings[nameId], chapter.meaning_arabic)}</Arabic>
       <p className="text-white/90 leading-loose">{t(chapter.meaning_translation).replace(/^ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം\s*/, '').replace(/^ഗ്രന്ഥത്തിലെ അറബി അർഥം:\s*/, '').replace(/^The source gives\s*/, '').replace(/^The source’s Arabic meaning is\s*/, '')}</p>
     </section>
+    <BirhatiahOnlineNameComparison nameId={nameId} />
     <section className="space-y-3" data-reader-section="name-details"><h3 className="text-yellow-200">{ml ? 'നാമത്തിന്റെ അക്ഷരങ്ങളും ബന്ധങ്ങളും' : 'Letters and correspondences'}</h3><p className="font-amiri text-2xl text-right text-yellow-100" dir="rtl">{[...letters(name)].join(' · ')}</p>{linkedLetter && <p className="text-white/85">{ml ? 'ബന്ധിപ്പിച്ച അക്ഷരം: ' : 'Associated letter: '}{linkedLetter[1] || linkedLetter[2]}</p>}{linkedMansion && <p className="text-white/85">{ml ? 'മൻസിൽ: ' : 'Lunar mansion: '}{linkedMansion[1] || linkedMansion[2]}</p>}</section>
     <nav className="rounded-xl border border-yellow-500/20 p-4 space-y-3" aria-label={ml ? 'ഈ കാർഡിലെ ആവശ്യങ്ങൾ' : 'Purposes in this card'}><h3 className="text-yellow-200">{ml ? 'ആവശ്യങ്ങൾ — തിരഞ്ഞെടുക്കുക' : 'Choose a purpose'}</h3><ol className="list-decimal pl-6 space-y-2">{methods.map(method => <li key={method.method_id}><a href={`#${nameId}-${method.method_id}`} className="text-white/85 underline underline-offset-4">{t(method.title)}</a></li>)}</ol></nav>
     {methods.map((method, i) => <PurposeMethod key={method.method_id} method={{...method, method_id: `${nameId}-${method.method_id}`}} name={name} language={language} chapter={chapter} index={i + 1} collective={nameId === 'HNK-MHC-028' && i === 0} />)}
