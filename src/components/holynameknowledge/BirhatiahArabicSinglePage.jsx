@@ -4,7 +4,8 @@ import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 export default function BirhatiahArabicSinglePage({ nameId }) {
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
-  const entries = source.accounts.filter(entry => !nameId || !entry.name_ids.length || entry.name_ids.includes(nameId));
+  const entries = source.accounts.filter(entry => nameId ? entry.name_ids?.includes(nameId) : !entry.name_ids?.length);
+  if (!entries.length) return null;
   return <details className="rounded-xl border border-yellow-500/25 p-4 space-y-4">
     <summary className="cursor-pointer text-yellow-200 font-semibold">{ml ? 'വേറിട്ട അറബി പേജിലെ പരിശോധിച്ച വിവരങ്ങൾ' : 'Checked accounts from a separate Arabic page'} ({entries.length})</summary>
     <p className="text-sm leading-loose text-white/70">{source.scope[language]}</p>
