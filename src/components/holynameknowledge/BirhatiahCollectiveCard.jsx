@@ -4,10 +4,11 @@ import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import externalSources from "@/data/holyNamesExternalSources.json";
 import BirhatiahCollectiveVersion from "./BirhatiahCollectiveVersion";
 import { BirhatiahOnlineCollectiveGrids } from "./BirhatiahOnlineNumericalComparison";
+import BirhatiahSharedImportedMaterial from "./BirhatiahSharedImportedMaterial";
 
 // The collective text has its own card; never attach it as an individual
 // name's prayer or silently substitute the current card list for a manuscript.
-export default function BirhatiahCollectiveCard({ cards }) {
+export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
   const [open, setOpen] = useState(false);
   const { language } = useHolyNamesLanguage();
   const ml = language === "ml";
@@ -24,6 +25,7 @@ export default function BirhatiahCollectiveCard({ cards }) {
     {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
       <BirhatiahCollectiveVersion />
       <BirhatiahOnlineCollectiveGrids />
+      <BirhatiahSharedImportedMaterial byField={sharedByField} />
       <details className="rounded-xl border border-white/15 p-4 space-y-4"><summary className="cursor-pointer text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</summary>
       {completeList && <div className="space-y-3">
         <h3 className={`${cls} text-yellow-200`}>{ml ? "നിലവിലെ 28 നാമങ്ങളുടെ ക്രമം" : "Order of the current 28 name cards"}</h3>
