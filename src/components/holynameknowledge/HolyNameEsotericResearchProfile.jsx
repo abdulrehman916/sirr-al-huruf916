@@ -35,7 +35,7 @@ const P = {
 
 const NOT_VERIFIED = "സ്രോതസ്സിൽ നിന്ന് സ്ഥിരീകരിച്ചിട്ടില്ല";
 const AWAITING = "ഈ വിവരം നിലവിൽ അപ്‌ലോഡ് ചെയ്ത PDF-കളിൽ ലഭ്യമല്ല.";
-const SHARED_MARKER = "ഈ വിവരങ്ങൾ മുഴുവൻ ബിർഹതിയ്യ മന്ത്രസമുച്ചയത്തിന്റെയും പൊതുവായ നിർദ്ദേശങ്ങളാണ്; ഈ പേരിന് മാത്രം പ്രത്യേകമായ വിവരമല്ല.";
+const UNSCOPED_MARKER = "ഈ കാർഡിലെ പഴയ സ്രോതസ്സുവിവരങ്ങളിൽ ഓരോ വരിയുടെയും വ്യക്തിഗത ഇസ്മ് ബന്ധം അടയാളപ്പെടുത്തിയിട്ടില്ല. അതുകൊണ്ട് ഇതിനെ ഈ ഇസ്മിനു മാത്രം ഉള്ള നിർദ്ദേശമായി കണക്കാക്കരുത്.";
 
 const ADVANCED_SECTIONS = [
   { key: "invocation_wazifa", label: "Invocation (Wazifa)", ml: "പ്രാർഥന (വസീഫ)" },
@@ -108,9 +108,8 @@ function Block({ title, titleML, icon: Icon, children, accent, defaultOpen = tru
   );
 }
 
-function AdvancedBlock({ label, ml, entries }) {
+function AdvancedBlock({ label, ml, entries, nameId }) {
   const list = Array.isArray(entries) ? entries : [];
-  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const isArabic = (t) => /[\u0600-\u06FF]/.test(t || "");
   return (
@@ -122,7 +121,7 @@ function AdvancedBlock({ label, ml, entries }) {
         <p className="font-malayalam text-[11px] mt-1 leading-relaxed" style={{ color: "rgba(148,163,184,0.55)" }}>{AWAITING}</p>
       ) : (
         <div className="mt-2 space-y-2">
-          <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{SHARED_MARKER}</p>
+          {list.some(e => !e.name_id && !e.related_name_id) && <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{UNSCOPED_MARKER}</p>}
           {list.map((e, i) => {
             const arabicText = isArabic(e.text) ? e.text : (e.arabic_text || e.arabic || "");
             const translated = language === "ml"
@@ -134,7 +133,8 @@ function AdvancedBlock({ label, ml, entries }) {
                 {translated
                   ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[11px] selectable leading-relaxed`} style={{ color: "rgba(255,255,255,0.85)" }} dir="auto">{translated}</p>
                   : <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[10px] italic`} style={{ color: "rgba(255,255,255,0.38)" }}>{language === "ml" ? "മലയാള പരിഭാഷ ലഭ്യമല്ല" : "Translation unavailable"}</p>}
-                {isOwner && <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(212,175,55,0.45)" }}>{e.source_reference}{e.source_page ? ` · p. ${e.source_page}` : ""}</p>}
+                {(e.source_reference || e.source_page) && <p className="font-inter text-[10px] mt-1 break-words" style={{ color: "rgba(212,175,55,0.60)" }}>{e.source_reference || ""}{e.source_page ? ` · p. ${e.source_page}` : ""}</p>}
+                {(e.name_id === nameId || e.related_name_id === nameId) && <p className="font-malayalam text-[10px]" style={{color:P.dim}}>{language === "ml" ? "ഈ ഇസ്മുമായി നേരിട്ട് ബന്ധിപ്പിച്ച രേഖ" : "Explicitly linked to this name"}</p>}
               </div>
             );
           })}
@@ -183,16 +183,23 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
   const abjadValue = calculateAbjad(displayedName);
   const fullCalculation = letters.map(item => `${item.letter} (${item.value})`).join(" + ") + ` = ${abjadValue}`;
   const normalizeName = value => String(value || "").replace(/[\u064B-\u065F\u0670\u0640\s]/g, "");
-  const scholarly = (Array.isArray(rec.scholarly_data) ? rec.scholarly_data : []).filter(entry =>
-    entry.related_name_id === nameId || entry.name_id === nameId ||
-    (normalizeName(entry.arabic_text) && normalizeName(entry.arabic_text) === normalizeName(displayedName))
-  );
+  // Every record is stored under one HolyNameEsotericKnowledge card.
+  // Imported source entries often have no redundant name_id. Excluding them
+  // hid the existing bibliography and practices for all twenty-eight names.
+  // Honor explicit links; retain unscoped entries in the card with labels.
+  const belongsToCard = entry =>
+    (!entry.related_name_id && !entry.name_id) ||
+    entry.related_name_id === nameId || entry.name_id === nameId;
+  const scholarly = (Array.isArray(rec.scholarly_data) ? rec.scholarly_data : []).filter(belongsToCard);
   const hasAltSpell = Array.isArray(rec.alternate_spellings) && rec.alternate_spellings.length > 0;
   const hasAltPron = Array.isArray(rec.alternate_pronunciations) && rec.alternate_pronunciations.length > 0;
   const hasAltMean = Array.isArray(rec.alternate_meanings) && rec.alternate_meanings.length > 0;
   const hasAltAbjad = Array.isArray(rec.alternate_abjad_values) && rec.alternate_abjad_values.length > 0;
   const hasAlts = hasAltSpell || hasAltPron || hasAltMean || hasAltAbjad;
-  const populatedSections = ADVANCED_SECTIONS.map(s => ({ ...s, entries: (Array.isArray(rec[s.key]) ? rec[s.key] : []).filter(entry => entry.related_name_id === nameId || entry.name_id === nameId) })).filter(s => s.entries.length > 0);
+  const populatedSections = ADVANCED_SECTIONS.map(s => ({
+    ...s,
+    entries: (Array.isArray(rec[s.key]) ? rec[s.key] : []).filter(belongsToCard),
+  })).filter(s => s.entries.length > 0);
 
   return (
     <div className="pt-3 mt-1 space-y-3" style={{ borderTop: `1px solid ${P.faint}` }}>
@@ -288,12 +295,10 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
               <div key={i} className="rounded-lg p-3 space-y-2" style={{ background: "rgba(212,175,55,0.04)", border: `1px solid ${P.faint}` }}>
                 <div className="flex items-start gap-2">
                   <BookMarked className="w-3 h-3 flex-shrink-0 mt-0.5" style={{ color: P.dim }} />
-                  {isOwner && (
                   <div className="flex-1 space-y-0.5">
-                    <p className="font-inter text-[10px] selectable" style={{ color: "rgba(255,255,255,0.82)" }}>{s.source_reference}</p>
+                    <p className="font-inter text-[10px] selectable break-words" style={{ color: "rgba(255,255,255,0.72)" }}>{s.source_reference || (language === "ml" ? "സ്രോതസ്സ് വ്യക്തമാക്കിയിട്ടില്ല" : "Source not recorded")}</p>
                     {s.source_page && <p className="font-malayalam text-[11px]" style={{ color: P.dim }}>പേജ് {s.source_page}</p>}
                   </div>
-                  )}
                 </div>
                 {s.arabic_text && <p className="font-amiri text-lg leading-loose selectable" style={{ color: "rgba(255,255,255,0.90)" }} dir="rtl">{s.arabic_text}</p>}
                 {s.transliteration && <p className="font-inter text-xs italic selectable" style={{ color: "rgba(255,255,255,0.70)" }} dir="ltr">{s.transliteration}</p>}
@@ -331,9 +336,9 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
       </Block>
 
       {/* 3 — ADVANCED KNOWLEDGE SECTIONS (all empty until approved) */}
-      {populatedSections.length > 0 && <Block title="Practices and related details" titleML="രീതികളും ബന്ധപ്പെട്ട വിവരങ്ങളും" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={true}>
+      {populatedSections.length > 0 && <Block title="Practices and related details" titleML="രീതികളും ബന്ധപ്പെട്ട വിവരങ്ങളും" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={false}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          {populatedSections.map(s => <AdvancedBlock key={s.key} label={s.label} ml={s.ml} entries={s.entries} />)}
+          {populatedSections.map(s => <AdvancedBlock key={s.key} label={s.label} ml={s.ml} entries={s.entries} nameId={nameId} />)}
         </div>
       </Block>}
 
