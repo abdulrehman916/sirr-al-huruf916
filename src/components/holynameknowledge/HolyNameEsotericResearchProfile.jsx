@@ -226,7 +226,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
         <Field label="Canonical Arabic Name" labelML="അറബി നാമം" arabic>{rec.canonical_arabic_name || rec.arabic_name}</Field>
         {language === "ml" && rec.malayalam_transliteration && <Field label="Malayalam Pronunciation" labelML="മലയാളം ഉച്ചാരണം">{rec.malayalam_transliteration}</Field>}
-        {language === "en" && <Field label="English Transliteration" labelML="ഇംഗ്ലീഷ് ട്രാൻസ്ലിറ്ററേഷൻ">{rec.english_transliteration || rec.transliteration}</Field>
+        {language === "en" && <Field label="English Transliteration" labelML="ഇംഗ്ലീഷ് ട്രാൻസ്ലിറ്ററേഷൻ">{rec.english_transliteration || rec.transliteration}</Field>}
 
         <Field label="Meanings given in the imported source" labelML="ഇറക്കുമതി ചെയ്ത സ്രോതസ്സിൽ നൽകിയ അർത്ഥങ്ങൾ">
           {language === "ml"
