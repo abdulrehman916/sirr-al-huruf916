@@ -37,7 +37,7 @@ export default function BirhatiahSharedImportedMaterial({ byField = {} }) {
             <p className={`text-sm leading-loose text-white/85 ${ml ? 'font-malayalam' : 'font-inter'}`}>
               {translation || (ml ? 'ഈ മൂലവാക്യത്തിന്റെ മലയാള അർത്ഥം ഇനിയും ഉറപ്പിച്ച് ചേർത്തിട്ടില്ല.' : 'The source statement has not yet been translated into English.')}
             </p>
-            {!original && !translation && <p className="text-xs text-white/60">{ml ? 'മൂലരേഖയിലെ പാഠം' : 'Original source entry'}: {entry.text}</p>}
+            {!original && !translation && <p className="text-xs text-white/60">{ml ? "ഈ മൂലരേഖയുടെ മലയാള പരിഭാഷ ചേർക്കാനുണ്ട്." : "This source entry still needs an English translation."}</p>}
             <p className="text-xs text-white/55 break-words">{entry.source_reference || (ml ? 'സ്രോതസ്സ് രേഖപ്പെടുത്തിയിട്ടില്ല' : 'Source not recorded')}{entry.source_page ? ` · ${ml ? 'പേജ്' : 'Page'} ${entry.source_page}` : ''}</p>
           </article>;
         })}
