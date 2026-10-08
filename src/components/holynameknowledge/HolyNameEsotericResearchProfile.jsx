@@ -225,9 +225,8 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
         <p className="font-inter text-xs text-white/50">{abjadValue} × {abjadValue} = {abjadValue * abjadValue}</p>
 
         <Field label="Canonical Arabic Name" labelML="അറബി നാമം" arabic>{rec.canonical_arabic_name || rec.arabic_name}</Field>
-        <Field label="Transliteration" labelML="ട്രാൻസ്ലിറ്ററേഷൻ">{rec.transliteration}</Field>
-        {language === "ml" && <Field label="Malayalam Transliteration" labelML="മലയാളം ട്രാൻസ്ലിറ്ററേഷൻ">{rec.malayalam_transliteration}</Field>}
-        <Field label="English Transliteration" labelML="ഇംഗ്ലീഷ് ട്രാൻസ്ലിറ്ററേഷൻ">{rec.english_transliteration || rec.transliteration}</Field>
+        {language === "ml" && rec.malayalam_transliteration && <Field label="Malayalam Pronunciation" labelML="മലയാളം ഉച്ചാരണം">{rec.malayalam_transliteration}</Field>}
+        {language === "en" && <Field label="English Transliteration" labelML="ഇംഗ്ലീഷ് ട്രാൻസ്ലിറ്ററേഷൻ">{rec.english_transliteration || rec.transliteration}</Field>
 
         <Field label="Meanings given in the imported source" labelML="ഇറക്കുമതി ചെയ്ത സ്രോതസ്സിൽ നൽകിയ അർത്ഥങ്ങൾ">
           {language === "ml"
@@ -301,7 +300,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
                   </div>
                 </div>
                 {s.arabic_text && <p className="font-amiri text-lg leading-loose selectable" style={{ color: "rgba(255,255,255,0.90)" }} dir="rtl">{s.arabic_text}</p>}
-                {s.transliteration && <p className="font-inter text-xs italic selectable" style={{ color: "rgba(255,255,255,0.70)" }} dir="ltr">{s.transliteration}</p>}
+                {language === "en" && s.transliteration && <p className="font-inter text-xs italic selectable" style={{ color: "rgba(255,255,255,0.70)" }} dir="ltr">{s.transliteration}</p>}
                 {(language === "ml" ? (s.malayalam_translation || s.meaning_ml || (/[\u0D00-\u0D7F]/.test(s.exact_meaning || "") ? s.exact_meaning : "")) : (s.english_translation || s.meaning_en || (s.language === "en" ? s.exact_meaning : ""))) && (
                   <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm leading-relaxed selectable`} style={{ color: "rgba(255,255,255,0.88)" }} dir="auto">
                     {language === "ml" ? (s.malayalam_translation || s.meaning_ml || s.exact_meaning) : (s.english_translation || s.meaning_en || s.exact_meaning)}
