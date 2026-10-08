@@ -3,6 +3,7 @@ import { ChevronDown } from "lucide-react";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import externalSources from "@/data/holyNamesExternalSources.json";
 import BirhatiahCollectiveVersion from "./BirhatiahCollectiveVersion";
+import { BirhatiahOnlineCollectiveGrids } from "./BirhatiahOnlineNumericalComparison";
 
 // The collective text has its own card; never attach it as an individual
 // name's prayer or silently substitute the current card list for a manuscript.
@@ -22,6 +23,7 @@ export default function BirhatiahCollectiveCard({ cards }) {
     </button>
     {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
       <BirhatiahCollectiveVersion />
+      <BirhatiahOnlineCollectiveGrids />
       <details className="rounded-xl border border-white/15 p-4 space-y-4"><summary className="cursor-pointer text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</summary>
       {completeList && <div className="space-y-3">
         <h3 className={`${cls} text-yellow-200`}>{ml ? "നിലവിലെ 28 നാമങ്ങളുടെ ക്രമം" : "Order of the current 28 name cards"}</h3>
