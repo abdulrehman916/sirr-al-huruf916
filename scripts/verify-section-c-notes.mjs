@@ -54,3 +54,25 @@ for (let number = 1; number <= 28; number++) {
 const externalSources = JSON.parse(fs.readFileSync('src/data/holyNamesExternalSources.json', 'utf8'));
 assert.equal(new Set(externalSources.flatMap(source => source.related_name_ids).filter(id => id.startsWith('HNK-MHC-'))).size, 28);
 console.log('All 28 chapters: 56 bilingual renders, subject targets, source reading letters, scan figures and 28 outside-source links passed.');
+
+const shared = JSON.parse(fs.readFileSync('src/data/birhatiahSharedBookAccounts.json', 'utf8'));
+const variants = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideVariants.json', 'utf8'));
+assert.equal(shared.accounts.length, 55);
+assert.equal(new Set(shared.accounts.map(entry => entry.id)).size, 55);
+const firstChapter = JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-001.json', 'utf8'));
+for (const language of ['ml', 'en']) {
+  const html = render(firstChapter, language);
+  for (const entry of shared.accounts) {
+    assert.ok(entry.printed_pages);
+    assert.ok(html.includes(escape(entry.translation[language])), `${entry.id}: missing shared ${language} text`);
+  }
+  for (const figure of shared.figures) {
+    assert.ok(fs.existsSync(`public${figure.image_path}`));
+    assert.ok(html.includes(figure.image_path));
+  }
+  for (const entry of variants.entries) {
+    const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${entry.name_id}.json`, 'utf8'));
+    assert.ok(render(chapter, language).includes(escape(entry.translation[language])));
+  }
+}
+console.log('Shared material: 55 sourced bilingual accounts, 8 scan figures and 11 correctly matched outside variants passed.');

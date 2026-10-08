@@ -1,0 +1,98 @@
+{
+  "source_title": "Arabic Translators International — أسئلة في اللغات الجزيرية, guest post #4, 31 December 2006",
+  "source_url": "https://atinternational.org/forums/forum/the-afro-asiatic-languages/comparative-linguistic-studies/1565-أسئلة-في-اللغات-الجزيرية",
+  "context": {
+    "en": "Alternative glosses posted by a guest asking linguists for verification; linguistic confirmation is not established.",
+    "ml": "ഭാഷാശാസ്ത്രജ്ഞരോട് സ്ഥിരീകരണം ചോദിച്ച അതിഥിയുടെ വ്യത്യസ്ത അർഥങ്ങൾ; ഭാഷാപരമായ സ്ഥിരീകരണമല്ല."
+  },
+  "entries": [
+    {
+      "name_id": "HNK-MHC-003",
+      "arabic_original": "المجيب؛ الرحمن",
+      "translation": {
+        "en": "The Answerer; the Merciful",
+        "ml": "മറുപടി നൽകുന്നവൻ; കരുണയുള്ളവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-004",
+      "arabic_original": "الرحيم",
+      "translation": {
+        "en": "The Merciful",
+        "ml": "കരുണയുള്ളവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-005",
+      "arabic_original": "الجبار",
+      "translation": {
+        "en": "The Compeller",
+        "ml": "അധികാരത്താൽ നിയന്ത്രിക്കുന്നവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-006",
+      "arabic_original": "السلام",
+      "translation": {
+        "en": "Peace / the Giver of Peace",
+        "ml": "സമാധാനം / സമാധാനം നൽകുന്നവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-013",
+      "arabic_original": "الحق",
+      "translation": {
+        "en": "The Truth",
+        "ml": "സത്യം"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-014",
+      "arabic_original": "الوكيل",
+      "translation": {
+        "en": "The Trustee",
+        "ml": "കാര്യങ്ങൾ ഏൽപ്പിക്കപ്പെടുന്നവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-016",
+      "arabic_original": "اللطيف",
+      "translation": {
+        "en": "The Subtle / Gentle",
+        "ml": "സൂക്ഷ്മനായവൻ / സൗമ്യനായവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-017",
+      "arabic_original": "القيوم",
+      "translation": {
+        "en": "The Self-Subsisting Sustainer",
+        "ml": "സ്വയം നിലനിൽക്കുന്ന പരിപാലകൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-020",
+      "arabic_original": "العلي",
+      "translation": {
+        "en": "The Most High",
+        "ml": "അത്യുന്നതൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-025",
+      "arabic_original": "مدبر",
+      "translation": {
+        "en": "The Disposer / Administrator",
+        "ml": "കാര്യങ്ങൾ ക്രമീകരിക്കുന്നവൻ"
+      }
+    },
+    {
+      "name_id": "HNK-MHC-026",
+      "arabic_original": "خالق الخلق",
+      "translation": {
+        "en": "Creator of creation",
+        "ml": "സൃഷ്ടികളുടെ സ്രഷ്ടാവ്"
+      }
+    }
+  ]
+}
