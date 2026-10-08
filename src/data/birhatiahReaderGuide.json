@@ -11,11 +11,11 @@
     "steps": {
       "ml": [
         "പേര് ദിവസേന 100 തവണ വായിക്കുക.",
-        "ഈ വിവരണം നാൽപ്പത് ദിവസം തികയുന്നതിനുമുമ്പുള്ള ഫലമാണ് പറയുന്നത്."
+        "നാൽപ്പത് ദിവസം തികയുന്നതിനുമുമ്പ് ഫലം ലഭിക്കുമെന്നാണ് പരമ്പരാഗത അവകാശവാദം."
       ],
       "en": [
         "Read the name 100 times daily.",
-        "This account describes an outcome before forty days elapse."
+        "A result before forty days is traditionally claimed."
       ]
     },
     "source_entry": "daily-100",
@@ -32,18 +32,18 @@
         },
         "steps": {
           "ml": [
-            "പേര് ദിവസേന 100 തവണ, നാൽപ്പത് ദിവസം വായിക്കുന്ന വേറിട്ട വിവരണമാണ്."
+            "പേര് ദിവസേന 100 തവണ വീതം നാൽപ്പത് ദിവസം വായിക്കുക."
           ],
           "en": [
-            "A separate account specifies reading the name one hundred times daily for forty days."
+            "Read the name one hundred times daily for forty days."
           ]
         }
       },
       {
         "source_entry": "right-palm-seven",
         "title": {
-          "ml": "ഓർമ്മയെക്കുറിച്ചുള്ള എഴുത്തുപരാമർശം",
-          "en": "Memory inscription account"
+          "ml": "ഓർമ്മയ്ക്കുള്ള എഴുത്തുരീതി",
+          "en": "Memory inscription method"
         },
         "benefit": {
           "ml": "കേട്ടത് ഓർക്കുകയും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്ന അവകാശവാദം.",
@@ -51,11 +51,11 @@
         },
         "steps": {
           "ml": [
-            "വലത് കൈപ്പത്തിയിൽ പേര് 7 തവണ എഴുതുന്നതാണ് പരാമർശം.",
+            "വലത് കൈപ്പത്തിയിൽ പേര് 7 തവണ എഴുതുക.",
             "ഒഴിഞ്ഞ വയറ്റിൽ എഴുത്ത് നക്കിയെടുക്കുന്ന തുടർഭാഗം ചരിത്രവിവരമാണ്; കഴിക്കാനുള്ള നിർദേശമായി നൽകുന്നില്ല."
           ],
           "en": [
-            "The account specifies seven inscriptions on the right palm.",
+            "Write the name seven times on the right palm.",
             "Its subsequent account of licking the inscription on an empty stomach is retained as historical information, not an ingestion instruction."
           ]
         }
@@ -76,7 +76,7 @@
             "വിൽക്കാതെ കിടക്കുന്ന വ്യാപാരവസ്തുക്കളോടൊപ്പം എഴുത്ത് വയ്ക്കുന്നു."
           ],
           "en": [
-            "The account writes Birhatiah and Karir together.",
+            "Write Birhatiah and Karir together.",
             "It places the inscription among the unsold merchandise."
           ]
         },
@@ -87,7 +87,7 @@
   },
   "HNK-MHC-002": {
     "title": {
-      "ml": "രാത്രിയിലെ രൂഹാനി ദർശനപരാമർശം",
+      "ml": "രാത്രിയിലെ രൂഹാനി ദർശനം",
       "en": "Nightly reading"
     },
     "benefit": {
@@ -121,15 +121,15 @@
           ],
           "en": [
             "Write the name eleven times on paper.",
-            "The account places the inscription among the trader’s goods."
+            "Place the inscription among the trader’s goods."
           ]
         }
       },
       {
         "source_entry": "historical-eye-account-17",
         "title": {
-          "ml": "കണ്ണിനെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
-          "en": "Historical eye account"
+          "ml": "കണ്ണുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി",
+          "en": "Historical eye method"
         },
         "benefit": {
           "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
@@ -137,11 +137,11 @@
         },
         "steps": {
           "ml": [
-            "17 എന്നത് കഴുകലിന്റെ എണ്ണമാണ്; മൂന്നു ദിവസം എന്നാണ് വിവരണം.",
-            "എഴുത്തുവെള്ളം കണ്ണിൽ ഉപയോഗിക്കുന്ന ചരിത്രപരാമർശം ചികിത്സാനിർദേശമായി നൽകുന്നില്ല."
+            "കഴുകലിന്റെ എണ്ണം 17; കാലാവധി മൂന്നു ദിവസം.",
+            "എഴുത്തുവെള്ളം കണ്ണിൽ ഉപയോഗിക്കുന്ന ചരിത്രരീതിയാണ്. ഇത് ചികിത്സയ്ക്കായി ഉപയോഗിക്കരുത്."
           ],
           "en": [
-            "Seventeen refers to washes; the account specifies three days.",
+            "The washing count is seventeen; the duration is three days.",
             "The use of inscription water in the eye is retained as a historical account, not a treatment instruction."
           ]
         }
@@ -162,7 +162,7 @@
             "വിൽക്കാതെ കിടക്കുന്ന വ്യാപാരവസ്തുക്കളോടൊപ്പം എഴുത്ത് വയ്ക്കുന്നു."
           ],
           "en": [
-            "The account writes Birhatiah and Karir together.",
+            "Write Birhatiah and Karir together.",
             "It places the inscription among the unsold merchandise."
           ]
         },
@@ -207,7 +207,7 @@
           ],
           "en": [
             "Write the name thirteen times on tin.",
-            "The account places the tin in the affected house."
+            "Place the tin in the affected house."
           ]
         }
       }
@@ -268,14 +268,14 @@
         },
         "steps": {
           "ml": [
-            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുന്നതാണ് ഈ പരാമർശം.",
+            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുക.",
             "മസ്‌ജൽ, ബസ്‌ജൽ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് വെള്ളത്തിന്മീതെ 66 തവണ വായിക്കുക.",
             "ബന്ധപ്പെട്ട വ്യക്തി ആ വെള്ളത്തിൽ കുളിക്കുന്ന രീതിയാണ്."
           ],
           "en": [
-            "The account places three pieces of salt in water.",
+            "Place three pieces of salt in water.",
             "Read Mazjal and Bazjal together over the water sixty-six times.",
-            "The account describes bathing with that water."
+            "The method involves bathing with that water."
           ]
         },
         "source_name_id": "HNK-MHC-006",
@@ -316,14 +316,14 @@
         },
         "steps": {
           "ml": [
-            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുന്നതാണ് ഈ പരാമർശം.",
+            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുക.",
             "മസ്‌ജൽ, ബസ്‌ജൽ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് വെള്ളത്തിന്മീതെ 66 തവണ വായിക്കുക.",
             "ബന്ധപ്പെട്ട വ്യക്തി ആ വെള്ളത്തിൽ കുളിക്കുന്ന രീതിയാണ്."
           ],
           "en": [
-            "The account places three pieces of salt in water.",
+            "Place three pieces of salt in water.",
             "Read Mazjal and Bazjal together over the water sixty-six times.",
-            "The account describes bathing with that water."
+            "The method involves bathing with that water."
           ]
         },
         "source_name_id": "HNK-MHC-006",
@@ -362,7 +362,7 @@
   },
   "HNK-MHC-008": {
     "title": {
-      "ml": "വ്യക്തിയെ എത്തിക്കാനുള്ള സംയുക്ത പരാമർശം",
+      "ml": "വ്യക്തിയെ എത്തിക്കാനുള്ള സംയുക്ത വായന",
       "en": "Tarqab–Barhash paired reading"
     },
     "benefit": {
@@ -372,7 +372,7 @@
     "steps": {
       "ml": [
         "തർഖബ്, ബർഹശ് എന്നീ രണ്ടു പേരുകളും ചേർത്ത് 1209 തവണ വായിക്കുന്ന രീതിയാണിത്.",
-        "അർദ്ധരാത്രിയും അഗർവുഡ്–കുന്തിരിക്കം ധൂപവും പരാമർശിക്കുന്നു.",
+        "സമയം: അർദ്ധരാത്രി. ധൂപം: അഗർവുഡ്, കുന്തിരിക്കം.",
         "ഓരോ നൂറിനുശേഷവും പറയേണ്ട അധിക നിർദേശത്തിന്റെ പൂർണ്ണവാക്കുകൾ ഉറപ്പിച്ചിട്ടില്ല; ഈ ഭാഗം മാത്രം പൂർണ്ണരീതിയല്ല."
       ],
       "en": [
@@ -437,8 +437,8 @@
       {
         "source_entry": "english-extended-010",
         "title": {
-          "ml": "കുട്ടിയുടെ സംരക്ഷണത്തിനുള്ള എഴുത്തുപരാമർശം",
-          "en": "Inscription account for a child’s protection"
+          "ml": "കുട്ടിയുടെ സംരക്ഷണത്തിനുള്ള എഴുത്തുരീതി",
+          "en": "Inscription method for a child’s protection"
         },
         "benefit": {
           "ml": "ജിന്ന്, ഖരീൻ, കണ്ണേറ് എന്നിവയിൽനിന്നുള്ള സംരക്ഷണം.",
@@ -446,12 +446,12 @@
         },
         "steps": {
           "ml": [
-            "പേരും സൂറത്ത് അത്താരിഖും വേർതിരിച്ച അക്ഷരങ്ങളായി കടലാസിൽ എഴുതുന്ന പരാമർശമാണ്.",
+            "പേരും സൂറത്ത് അത്താരിഖും വേർതിരിച്ച അക്ഷരങ്ങളായി കടലാസിൽ എഴുതുക.",
             "എഴുത്ത് കുട്ടിയിൽ തൂക്കുന്നതാണ് തുടർക്രമം."
           ],
           "en": [
-            "The account writes the name with Surah al-Tariq in separated letters on paper.",
-            "It then describes attaching the inscription to the child."
+            "Write the name with Surah al-Tariq in separated letters on paper.",
+            "Then attach the inscription to the child."
           ]
         },
         "verse_group": "86:1-17"
@@ -474,14 +474,14 @@
       ],
       "en": [
         "Read Qalnahud and Barshan together repeatedly.",
-        "The account uses frankincense and mahaleb incense and states the need."
+        "Use frankincense and mahaleb incense and states the need."
       ]
     },
     "source_entry": "english-joint-summoning"
   },
   "HNK-MHC-012": {
     "title": {
-      "ml": "ആവശ്യം നിറവേറാനുള്ള മോതിരപരാമർശം",
+      "ml": "ആവശ്യം നിറവേറാനുള്ള മോതിരരീതി",
       "en": "Ring inscription"
     },
     "benefit": {
@@ -490,11 +490,11 @@
     },
     "steps": {
       "ml": [
-        "തകരമോതിരത്തിൽ പേര് സുലൈമാനീ രഹസ്യത്തോടൊപ്പം എഴുതുന്ന പരാമർശമാണിത്.",
+        "തകരമോതിരത്തിൽ പേരും സുലൈമാനീ രഹസ്യവും എഴുതുന്നതാണ് രീതി.",
         "സുലൈമാനീ പാഠത്തിന്റെ പൂർണ്ണരൂപം ഈ ഭാഗത്ത് ലഭ്യമല്ല; അതിനാൽ ഇത് പൂർണ്ണമായി ചെയ്യാവുന്ന ക്രമമായി നൽകിയിട്ടില്ല."
       ],
       "en": [
-        "The account describes writing the name with the Sulaymani secret on a tin ring.",
+        "The method involves writing the name with the Sulaymani secret on a tin ring.",
         "The complete Sulaymani formula is absent from this passage, so this is not presented as a complete procedure."
       ]
     },
@@ -515,7 +515,7 @@
         "കളത്തിലെ എല്ലാ സ്ഥാനങ്ങളും ലഭ്യമല്ലെങ്കിൽ ഊഹിച്ച് നിറയ്ക്കരുത്."
       ],
       "en": [
-        "The account writes the name in separated letters in a five-by-five square on copper and hangs it in the house.",
+        "Write the name in separated letters in a five-by-five square on copper and hangs it in the house.",
         "Do not fill unestablished cells by guesswork."
       ]
     },
@@ -535,7 +535,7 @@
         "പേര് തുടർച്ചയായി വായിക്കുന്ന രീതിയാണ്."
       ],
       "en": [
-        "The account describes continuous reading of the name."
+        "The method involves continuous reading of the name."
       ]
     },
     "source_entry": "checked-account",
@@ -543,8 +543,8 @@
       {
         "source_entry": "english-extended-014",
         "title": {
-          "ml": "ചുമയെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
-          "en": "Historical cough account"
+          "ml": "ചുമയുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി",
+          "en": "Historical cough method"
         },
         "benefit": {
           "ml": "ചുമ മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
@@ -552,11 +552,11 @@
         },
         "steps": {
           "ml": [
-            "ശനിയാഴ്ച സൂര്യോദയത്തിനു മുമ്പ്, ഫലം കായ്ക്കാത്ത ഈന്തപ്പനയുടെ ഇലയിൽ പേര് 17 തവണ എഴുതുന്ന പരാമർശമാണിത്.",
-            "അൽ-ബലദ് 90:11–13-ലെ ഉദ്ധരണി വേർതിരിച്ച അക്ഷരങ്ങളായി 3 തവണ എഴുതി ബന്ധപ്പെട്ട വ്യക്തിയിൽ തൂക്കുന്നതാണ് ഈ വിവരണം."
+            "ശനിയാഴ്ച സൂര്യോദയത്തിനു മുമ്പ്, ഫലം കായ്ക്കാത്ത ഈന്തപ്പനയുടെ ഇലയിൽ പേര് 17 തവണ എഴുതുക.",
+            "അൽ-ബലദ് 90:11–13-ലെ വാക്യം വേർതിരിച്ച അക്ഷരങ്ങളായി 3 തവണ എഴുതി ബന്ധപ്പെട്ട വ്യക്തിയിൽ തൂക്കുക."
           ],
           "en": [
-            "The account specifies seventeen name inscriptions on a leaf of a non-fruiting palm, before sunrise on Saturday.",
+            "The method specifies seventeen name inscriptions on a leaf of a non-fruiting palm, before sunrise on Saturday.",
             "It adds the quoted passage of Quran 90:11–13 three times in separated letters and describes attaching it to the person."
           ]
         }
@@ -652,7 +652,7 @@
             "100 എന്നത് ഈ പേര് ഒറ്റയ്ക്കല്ല; 29-ാം കാർഡിലെ സംയുക്ത മന്ത്രത്തിനാണ്."
           ],
           "en": [
-            "The account writes the name and its square on new blue silk.",
+            "Write the name and its square on new blue silk.",
             "It places this in a pouch with some dirhams and hangs it on a boxthorn branch.",
             "With raw ambergris and musk incense, it specifies one hundred readings of the full collective invocation on Thursday night.",
             "The hundred readings belong to the collective formula in card 29, not this name alone."
@@ -670,8 +670,8 @@
   },
   "HNK-MHC-018": {
     "title": {
-      "ml": "സ്ഥലത്തെ പ്രത്യക്ഷരൂപങ്ങളെക്കുറിച്ചുള്ള പരാമർശം",
-      "en": "Apparitions account"
+      "ml": "സ്ഥലത്തെ പ്രത്യക്ഷരൂപങ്ങൾ മാറാൻ",
+      "en": "Apparitions method"
     },
     "benefit": {
       "ml": "പ്രത്യക്ഷരൂപങ്ങൾ മാറിപ്പോകുക എന്ന പരമ്പരാഗത അവകാശവാദം.",
@@ -684,7 +684,7 @@
       ],
       "en": [
         "Write the name in a porcelain dish.",
-        "The account washes off the writing with water and sprinkles the place."
+        "Wash off the writing with water and sprinkles the place."
       ]
     },
     "source_entry": "english-apparitions-water"
@@ -723,7 +723,7 @@
             "പേരും യൂനുസ് 10:92-ലെ ഉദ്ധരണിയും ചേർത്ത് എഴുതി കൈവശം വയ്ക്കുന്ന രീതിയാണ്."
           ],
           "en": [
-            "The account writes the name with the quoted passage of Quran 10:92 and describes carrying it."
+            "Write the name with the quoted passage of Quran 10:92 and describes carrying it."
           ]
         }
       }
@@ -731,8 +731,8 @@
   },
   "HNK-MHC-020": {
     "title": {
-      "ml": "രക്തസ്രാവത്തെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
-      "en": "Historical bleeding account"
+      "ml": "രക്തസ്രാവവുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി",
+      "en": "Historical bleeding method"
     },
     "benefit": {
       "ml": "രക്തസ്രാവം നിൽക്കുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
@@ -741,18 +741,18 @@
     "steps": {
       "ml": [
         "90 എന്നത് പേരിന്റെ എഴുത്തിനും 3 എന്നത് അത്താരിഖ് 86:8-ന്റെ വേർതിരിച്ച അക്ഷരങ്ങളിലുള്ള എഴുത്തിനുമാണ്.",
-        "പരാമർശത്തിൽ വിഷമുള്ള റെഡ് ലെഡ് ഉപയോഗിക്കുന്നു. ഇത് തയ്യാറാക്കാനോ കുടിക്കാനോ ഉള്ള രീതിയായി നൽകുന്നില്ല."
+        "ഈ ചരിത്രരീതിയിലെ റെഡ് ലെഡ് വിഷമുള്ളതാണ്. ഇത് തയ്യാറാക്കുകയോ കുടിക്കുകയോ ചെയ്യരുത്."
       ],
       "en": [
         "Ninety refers to written names; three refers to the separated-letter inscription of Quran 86:8.",
-        "The account uses toxic red lead. It is not offered as a preparation or ingestion procedure."
+        "Use toxic red lead. It is not offered as a preparation or ingestion procedure."
       ]
     },
     "source_entry": "english-extended-020"
   },
   "HNK-MHC-021": {
     "title": {
-      "ml": "സിഹ്റ് മോചനത്തിനുള്ള എഴുത്തുപരാമർശം",
+      "ml": "സിഹ്റ് മോചനത്തിനുള്ള എഴുത്തുരീതി",
       "en": "Square inscription with two verses"
     },
     "benefit": {
@@ -768,7 +768,7 @@
       "en": [
         "Write the name one hundred times. This counts inscriptions.",
         "Place the quoted passages of Quran 20:69 and 10:81 in separated letters around the square shown below.",
-        "The account describes carrying the inscription."
+        "The method involves carrying the inscription."
       ]
     },
     "source_entry": "square-surrounding-text",
@@ -783,7 +783,7 @@
   "HNK-MHC-022": {
     "title": {
       "ml": "ഉറുമ്പുകൾ മാറിപ്പോകാൻ",
-      "en": "Ants inscription account"
+      "en": "Ants inscription method"
     },
     "benefit": {
       "ml": "ഉറുമ്പുകൾ സ്ഥലം വിട്ടുപോകുക.",
@@ -796,7 +796,7 @@
       ],
       "en": [
         "Write the name seven times in a dish.",
-        "The account washes off the writing with clean water and sprinkles the place."
+        "Wash off the writing with clean water and sprinkles the place."
       ]
     },
     "source_entry": "checked-account"
@@ -804,7 +804,7 @@
   "HNK-MHC-023": {
     "title": {
       "ml": "കൊതുകുകൾ മാറിപ്പോകാൻ",
-      "en": "Mosquito inscription account"
+      "en": "Mosquito inscription method"
     },
     "benefit": {
       "ml": "കൊതുകുകൾ സ്ഥലം വിട്ടുപോകുക.",
@@ -817,7 +817,7 @@
       ],
       "en": [
         "Write the name fifteen times on paper.",
-        "The account burns that paper where mosquitoes are present."
+        "Burn that paper where mosquitoes are present."
       ]
     },
     "source_entry": "checked-account"
@@ -833,11 +833,11 @@
     },
     "steps": {
       "ml": [
-        "شمخاهير, شمهارير എന്നീ ഈ അറബി രീതിയിലെ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുന്ന പരാമർശമാണിത്.",
+        "شمخاهير, شمهارير എന്നീ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുക.",
         "താഴെയുള്ള അഭ്യർഥന പറയുക."
       ],
       "en": [
-        "This Arabic account pairs شمخاهير and شمهارير for one hundred readings.",
+        "Read شمخاهير and شمهارير together one hundred times.",
         "Say the request below."
       ]
     },
@@ -853,8 +853,8 @@
   },
   "HNK-MHC-025": {
     "title": {
-      "ml": "വിശപ്പിനെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
-      "en": "Historical hunger account"
+      "ml": "വിശപ്പുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി",
+      "en": "Historical hunger method"
     },
     "benefit": {
       "ml": "വിശപ്പിൽനിന്നുള്ള സംരക്ഷണമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
@@ -863,7 +863,7 @@
     "steps": {
       "ml": [
         "70 എന്നത് പാത്രത്തിലെ പേരിന്റെ എഴുത്തിന്റെ എണ്ണമാണ്; ഓതലിന്റെ എണ്ണമല്ല.",
-        "ഒഴിഞ്ഞ വയറ്റിൽ കഴുകിയ എഴുത്ത് കുടിക്കുന്ന പരാമർശം ചരിത്രവിവരമായി മാത്രം നിലനിർത്തുന്നു."
+        "ഒഴിഞ്ഞ വയറ്റിൽ കഴുകിയ എഴുത്ത് കുടിക്കുന്ന ചരിത്രരീതിയാണ്; കുടിക്കാനുള്ള നിർദേശമായി ഉപയോഗിക്കരുത്."
       ],
       "en": [
         "Seventy counts written names in a vessel, not recitations.",
@@ -887,7 +887,7 @@
         "ദാഹത്തെക്കുറിച്ചുള്ള അവകാശവാദം വെള്ളം ഒഴിവാക്കാനുള്ള നിർദേശമല്ല."
       ],
       "en": [
-        "The account describes regular reading without a fixed count.",
+        "The method involves regular reading without a fixed count.",
         "The thirst claim is not an instruction to avoid water."
       ]
     },
@@ -904,10 +904,10 @@
     },
     "steps": {
       "ml": [
-        "ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുക എന്നതാണ് അറബി വിവരണം."
+        "ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുക."
       ],
       "en": [
-        "The Arabic account specifies eighty readings in prostration at the night prayer, followed by asking God for the need."
+        "Read the name eighty times in prostration at the night prayer, then ask God for the need."
       ]
     },
     "source_entry": "checked-account",
@@ -937,7 +937,7 @@
         "source_entry": "english-fatiha-eleven-138",
         "title": {
           "ml": "കുട്ടിയുടെ ഭയവും കരച്ചിലും സംബന്ധിച്ച എഴുത്ത്",
-          "en": "Inscription account concerning a child’s fear and crying"
+          "en": "Inscription method concerning a child’s fear and crying"
         },
         "benefit": {
           "ml": "ഭയവും കരച്ചിലും മാറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
@@ -945,14 +945,14 @@
         },
         "steps": {
           "ml": [
-            "ഒരു കളത്തിൽ പേര് എഴുതുന്നതാണ് പരാമർശം.",
+            "ഒരു കളത്തിൽ പേര് എഴുതുക.",
             "അതോടൊപ്പം അൽ-ഫാതിഹ 11 തവണ എഴുതുന്നു. 11 എന്നത് ഫാതിഹയുടെ എഴുത്തിന്റെ എണ്ണമാണ്.",
             "എഴുത്ത് കുട്ടിയിൽ തൂക്കുന്ന രീതിയാണ്."
           ],
           "en": [
-            "The account writes the name in a square.",
+            "Write the name in a square.",
             "It adds eleven written copies of al-Fatihah. Eleven counts written copies of the surah.",
-            "It describes attaching the inscription to the child."
+            "Attach the inscription to the child."
           ]
         },
         "verse_group": "1:1-7"

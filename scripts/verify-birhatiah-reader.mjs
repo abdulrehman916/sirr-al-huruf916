@@ -37,6 +37,9 @@ for (const [id, guide] of Object.entries(guides)) {
     if (id === 'HNK-MHC-027') assert.ok(primary.includes('1:1') && primary.includes('1:7'));
     assert.ok(!primary.includes('mundhiri-collective-241-242'));
     if (id === 'HNK-MHC-021') {
+      assert.ok(primary.includes('data-reader-section="tijan-text"'));
+      assert.ok(primary.includes('/figures/birhatiah-manba-p88.png') && primary.includes('/figures/birhatiah-manba-p89.png'));
+      assert.ok(!primary.includes('വേറിട്ട പരാമർശമാണിത്') && !primary.includes('A separate account describes'));
       assert.ok(primary.includes('20:69') && primary.includes('10:81'));
       assert.ok(primary.includes('/figures/kaydahula-manba-p72.svg'));
       assert.ok(primary.includes(language === 'ml' ? 'ഇത് എഴുത്തിന്റെ എണ്ണമാണ്' : 'This counts inscriptions'));
