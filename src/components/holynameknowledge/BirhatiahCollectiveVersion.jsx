@@ -6,8 +6,16 @@ export default function BirhatiahCollectiveVersion() {
   const ml = language === "ml";
   const cls = ml ? "font-malayalam" : "font-inter";
   const excerpt = version.arabic_source_excerpt;
+  const account = version.collective_source_account;
   if (version.review_status !== "checked_against_supplied_scan" || version.names.length !== 28) return null;
   return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
+    {account?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
+      <h3 className={`${cls} text-lg text-yellow-200`}>{account.title[language]}</h3>
+      <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
+      <p className={`${cls} text-white/90 leading-loose`} lang={language}>{account.translation[language]}</p>
+      <p className={`${cls} text-sm text-white/65 leading-loose`}>{account.scope_note[language]}</p>
+      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></details>
+    </section>}
     <h3 className={`${cls} text-lg text-yellow-200`}>{version.title[language]}</h3>
     <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.introduction[language]}</p>
     <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">

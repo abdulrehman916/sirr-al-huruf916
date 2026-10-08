@@ -198,5 +198,25 @@
       "ml": "അറബി പതിപ്പിന്റെ 75-ാം പേജിൽ നേരിട്ട് പരിശോധിച്ച അവസാന വാക്യമാണിത്. വായനയ്ക്കുള്ള ഹറകത്ത് പിന്നീട് ചേർത്തതാണ്; മൂലത്തിലെ അക്ഷരങ്ങൾ മാറ്റിയിട്ടില്ല. ഇത് മുഴുവൻ മന്ത്രത്തിന്റെ അറബി പകർപ്പല്ല. മുൻപുള്ള അപരിചിത പദങ്ങളുടെ പതിപ്പുവ്യത്യാസം പരിഹരിക്കാനുണ്ട്.",
       "en": "This closing sentence was checked directly on printed page 75 of the Arabic edition. Reading vowels are editorial additions; the original letters are unchanged. This is not a complete Arabic transcription of the invocation. Variant spellings of the preceding unfamiliar words still need reconciliation."
     }
+  },
+  "collective_source_account": {
+    "source_title": "منبع أصول الحكمة — شرح البرهتية",
+    "printed_page": 74,
+    "review_status": "checked_against_scan",
+    "count": 35,
+    "original": "ومن قرأها مع سورة يس ثم قرأها ٣٥ مرة وتوجه لحاجته قضيت بإذن الله تعالى",
+    "reading": "وَمَنْ قَرَأَهَا مَعَ سُورَةِ يس ثُمَّ قَرَأَهَا ٣٥ مَرَّةً وَتَوَجَّهَ لِحَاجَتِهِ قُضِيَتْ بِإِذْنِ اللَّهِ تَعَالَى",
+    "title": {
+      "ml": "28 നാമങ്ങളും സൂറത്ത് യാസീനും — 35 ആവർത്തനങ്ങളുടെ പരാമർശം",
+      "en": "The 28 names with Surah Ya Sin — account of 35 repetitions"
+    },
+    "translation": {
+      "ml": "“അവ സൂറത്ത് യാസീനോടൊപ്പം വായിക്കുകയും, പിന്നീട് അവ മുപ്പത്തഞ്ച് തവണ വായിച്ച് തന്റെ ആവശ്യം തേടിപ്പോകുകയും ചെയ്യുന്നവന്റെ ആവശ്യം അല്ലാഹുവിന്റെ അനുമതിയാൽ നിറവേറുന്നതാണ്” എന്നാണ് ഗ്രന്ഥം പറയുന്നത്. ഇവിടെ “അവ” എന്നു പറയുന്നത് സംയുക്തമായ 28 നാമങ്ങളെയാണ്; ഇരുപത്തെട്ടാം നാമം മാത്രം എന്നല്ല.",
+      "en": "The book says that whoever reads them with Surah Ya Sin, then reads them thirty-five times and pursues their need, will have that need fulfilled by God’s permission. “Them” refers to the collective twenty-eight names, not the twenty-eighth name alone."
+    },
+    "scope_note": {
+      "ml": "ഇത് പേജ് 74-ലെ വേറിട്ട പരാമർശമാണ്. താഴെയുള്ള ബഹ്‌നസാവി പതിപ്പിലെ ഓരോ പേരിന്റെയും ×2 ആവർത്തനവുമായി ഇതിനെ ചേർത്ത് പുതിയൊരു ക്രമം സൃഷ്ടിച്ചിട്ടില്ല. ഈ വാക്യത്തിൽ പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ നമസ്കാരശേഷമോ പറഞ്ഞിട്ടില്ല. ആവശ്യനിറവേറ്റൽ ഗ്രന്ഥത്തിന്റെ വിശ്വാസപരമായ അവകാശവാദമാണ്.",
+      "en": "This is a separate account on page 74. It is not combined with the ×2 markers in the al-Bahnasawi version below to create a new procedure. The sentence specifies no day, clock time or prayer. Fulfilment of a need is the source’s religious claim."
+    }
   }
 }
