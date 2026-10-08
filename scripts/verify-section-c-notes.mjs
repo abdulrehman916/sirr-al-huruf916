@@ -65,6 +65,11 @@ for (const language of ['ml', 'en']) {
   for (const entry of shared.accounts) {
     assert.ok(entry.printed_pages);
     assert.ok(html.includes(escape(entry.translation[language])), `${entry.id}: missing shared ${language} text`);
+    for (const paragraph of entry.expanded_translation || []) assert.ok(html.includes(escape(paragraph[language])));
+    if (entry.edition_comparison) {
+      assert.ok(html.includes(escape(entry.edition_comparison[language])));
+      assert.ok(fs.existsSync(`public${entry.edition_comparison.image_path}`));
+    }
   }
   for (const figure of shared.figures) {
     assert.ok(fs.existsSync(`public${figure.image_path}`));
@@ -123,3 +128,23 @@ for (let number = 1; number <= 28; number++) {
   }
 }
 console.log('Full source chapter: all 24 pages, 28 name/page mappings, 10 bilingual Arabic transcription blocks and isolated author interpretations passed.');
+
+const expandedVersions = JSON.parse(fs.readFileSync('src/data/birhatiahExpandedVersions.json', 'utf8'));
+assert.equal(expandedVersions.versions.length, 6);
+assert.equal(new Set(expandedVersions.versions.map(version => version.id)).size, 6);
+for (let number = 1; number <= 28; number++) {
+  const chapter = JSON.parse(fs.readFileSync(`content/source-checked/HNK-MHC-${String(number).padStart(3, '0')}.json`, 'utf8'));
+  for (const language of ['ml', 'en']) {
+    const html = render(chapter, language);
+    for (const version of expandedVersions.versions) {
+      assert.ok(html.includes(escape(version.title[language])));
+      assert.ok(version.english_pages);
+      for (const paragraph of version.paragraphs) assert.ok(html.includes(escape(paragraph[language])));
+      for (const page of version.arabic_pages) {
+        assert.ok(fs.existsSync(`public/figures/birhatiah-manba-p${page}.png`));
+        assert.ok(html.includes(`/figures/birhatiah-manba-p${page}.png`));
+      }
+    }
+  }
+}
+console.log('Six expanded collective recensions: all paragraphs, bilingual display in all 28 cards and linked original Arabic pages passed.');

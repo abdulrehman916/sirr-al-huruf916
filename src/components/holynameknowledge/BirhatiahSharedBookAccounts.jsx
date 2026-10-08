@@ -42,7 +42,15 @@ export default function BirhatiahSharedBookAccounts() {
         <summary className="cursor-pointer text-yellow-100">{names[ml ? 0 : 1]} ({entries.length})</summary>
         {entries.map(entry => <section key={entry.id} className="border-t border-white/10 pt-3 space-y-2">
           <p className="text-sm leading-loose text-white/90">{entry.translation[language]}</p>
+          {entry.expanded_translation && <details className="space-y-3">
+            <summary className="cursor-pointer text-yellow-100 text-sm">{ml ? 'ഈ പാഠഭാഗത്തിന്റെ വിപുലമായ അർഥം' : 'Expanded meaning of this passage'}</summary>
+            {entry.expanded_translation.map((paragraph, index) => <p key={`${entry.id}-${index}`} className="text-sm leading-loose text-white/90">{paragraph[language]}</p>)}
+          </details>}
           <p className="text-xs text-white/55">{book.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.printed_pages}</p>
+          {entry.edition_comparison && <section className="border-l-2 border-yellow-500/25 pl-3 space-y-2">
+            <p className="text-sm leading-loose text-white/85">{entry.edition_comparison[language]}</p>
+            <a href={entry.edition_comparison.image_path} target="_blank" rel="noreferrer" className="text-xs underline text-white/55">{entry.edition_comparison.source_title}</a>
+          </section>}
         </section>)}
       </details>;
     })}

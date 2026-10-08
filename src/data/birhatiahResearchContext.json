@@ -49,6 +49,67 @@
         "en": "Citing Canaan, Graham reports “the Affectionate” for Bazjal and distinguishes the Arabic commentators’ glosses. This is an attributed linguistic account; the card does not independently confirm it from a Syriac dictionary.",
         "ml": "കനാനെ ഉദ്ധരിച്ച് ഗ്രഹാം ബസ്‌ജലിന് സ്നേഹമുള്ളവൻ എന്ന അർഥം റിപ്പോർട്ട് ചെയ്യുകയും അറബി വ്യാഖ്യാതാക്കളുടെ അർഥങ്ങളിൽനിന്ന് വേർതിരിക്കുകയും ചെയ്യുന്നു. ഇത് സ്രോതസ്സ് വ്യക്തമാക്കിയ ഭാഷാവിവരണമാണ്; സുറിയാനി നിഘണ്ടുവഴി ഇവിടെ സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല."
       }
+    },
+    {
+      "id": "berkeley-manuscript-record",
+      "name_ids": [],
+      "source_title": "University of California, Berkeley — West African Arabic Manuscript Database, record3106",
+      "source_url": "https://waamd.lib.berkeley.edu/titles/3106?fieldName=subject&page=7&query=miscellanea",
+      "translation": {
+        "en": "Berkeley’s manuscript catalogue lists Sharh Dawat al-Barhatiyya al-Kubra in Kano, Falke/0415/MS, with the author recorded as unknown. This is catalogue evidence of a manuscript, not authentication of every attribution or practice. Its unexamined contents are not inserted into the cards as verified text.",
+        "ml": "ബർക്ലിയുടെ കൈയെഴുത്തുഗ്രന്ഥപ്പട്ടികയിൽ ശർഹ് ദഅ്‌വത് അൽ-ബർഹതിയ്യ അൽ-കുബ്‌റാ എന്ന ഗ്രന്ഥം കാനോയിലെ Falke/0415/MS ആയി രേഖപ്പെടുത്തിയിട്ടുണ്ട്; രചയിതാവ് അജ്ഞാതൻ എന്നാണ്. ഇത് കൈയെഴുത്തുപ്രതിയുടെ കാറ്റലോഗ് തെളിവാണ്; എല്ലാ പരമ്പരയുടെയോ രീതിയുടെയോ സ്ഥിരീകരണമല്ല. പരിശോധിക്കാത്ത ഉള്ളടക്കം സ്ഥിരീകരിച്ച പാഠമായി കാർഡുകളിൽ ചേർത്തിട്ടില്ല."
+      }
+    },
+    {
+      "id": "forum-c3-gloss",
+      "name_ids": [
+        "HNK-MHC-003"
+      ],
+      "source_title": "Asrare — Abu al-Harith, forum post #1, 25 March 2009",
+      "source_url": "https://asrare.net/node/85",
+      "translation": {
+        "en": "The forum gives “O Praiseworthy, O Glorious” for Tatlih. This differs from the supplied glosses; its linguistic basis is unconfirmed.",
+        "ml": "ഫോറത്തിൽ തത്‌ലിഹിന് സ്തുതിക്കപ്പെടുന്നവനേ, മഹത്വമുള്ളവനേ എന്നാണ്. നൽകിയ ഗ്രന്ഥത്തിലെ അർഥങ്ങളിൽനിന്ന് വ്യത്യസ്തം; ഭാഷാപരമായ അടിസ്ഥാനം സ്ഥിരീകരിച്ചിട്ടില്ല."
+      },
+      "arabic_original": "يا حميد يا مجيد"
+    },
+    {
+      "id": "forum-c18-gloss",
+      "name_ids": [
+        "HNK-MHC-018"
+      ],
+      "source_title": "Asrare — Abu al-Harith, forum post #1, 25 March 2009",
+      "source_url": "https://asrare.net/node/85",
+      "translation": {
+        "en": "The forum gives “O Wise, O Knowing, O Gentle” for Anghalalit. This is an attributed alternative, not a verified Syriac translation.",
+        "ml": "ഫോറത്തിൽ അൻഗലലീതിന് ജ്ഞാനമുള്ളവനേ, അറിയുന്നവനേ, സൗമ്യനായവനേ എന്നാണ്. ഇത് സ്രോതസ്സ് വ്യക്തമാക്കിയ വ്യത്യസ്താഭിപ്രായമാണ്; സ്ഥിരീകരിച്ച സുറിയാനി പരിഭാഷയല്ല."
+      },
+      "arabic_original": "يا حكيم يا عليم يا لطيف"
+    },
+    {
+      "id": "forum-abraham-placement",
+      "name_ids": [
+        "HNK-MHC-015",
+        "HNK-MHC-016"
+      ],
+      "source_title": "Asrare — Abu al-Harith, forum post #1, 25 March 2009",
+      "source_url": "https://asrare.net/node/85",
+      "translation": {
+        "en": "The forum attaches Abraham’s praise to Bashkaylakh; the supplied books place it under Barhayula. The conflicting placement is recorded without changing the book attribution.",
+        "ml": "ഫോറത്തിൽ ഇബ്‌റാഹീമിന്റെ തസ്ബീഹ് ബശ്കയ്‌ലഖിനോട് ബന്ധിപ്പിക്കുന്നു; നൽകിയ ഗ്രന്ഥങ്ങളിൽ അത് ബർഹയൂലയുടേതാണ്. ഈ വൈരുദ്ധ്യം രേഖപ്പെടുത്തുന്നു; ഗ്രന്ഥത്തിലെ ബന്ധം മാറ്റുന്നില്ല."
+      }
+    },
+    {
+      "id": "forum-last-name-count",
+      "name_ids": [
+        "HNK-MHC-028"
+      ],
+      "source_title": "Asrare — Abu al-Harith, forum post #1, 25 March 2009",
+      "source_url": "https://asrare.net/node/85",
+      "translation": {
+        "en": "The forum separates Shamkha and Barukh and calls the list 29 names. The supplied chapter combines them as name 28. These are different counting conventions.",
+        "ml": "ഫോറത്തിൽ ശംഖായും ബാറൂഖും വേർതിരിച്ച് 29 നാമങ്ങൾ എന്നു പറയുന്നു. നൽകിയ അധ്യായത്തിൽ രണ്ടും ചേർന്നതാണ് 28-ാം പേര്. എണ്ണുന്ന രീതി വ്യത്യസ്തമാണ്."
+      }
     }
   ]
 }

@@ -5,6 +5,7 @@ import BirhatiahSharedBookAccounts from './BirhatiahSharedBookAccounts';
 import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
 import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources';
 import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
+import BirhatiahExpandedVersions from './BirhatiahExpandedVersions';
 
 export default function BirhatiahCollectiveVersion() {
   const { language } = useHolyNamesLanguage();
@@ -18,6 +19,7 @@ export default function BirhatiahCollectiveVersion() {
     <BirhatiahArabicSinglePage />
     <BirhatiahArabicInvocationSources />
     <BirhatiahFullSourceChapter />
+    <BirhatiahExpandedVersions />
     {account?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
       <h3 className={`${cls} text-lg text-yellow-200`}>{account.title[language]}</h3>
       <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
