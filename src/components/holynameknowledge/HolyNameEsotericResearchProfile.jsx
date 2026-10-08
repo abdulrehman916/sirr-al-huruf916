@@ -112,7 +112,7 @@ function Block({ title, titleML, icon: Icon, children, accent, defaultOpen = tru
 function AdvancedBlock({ label, ml, entries, nameId }) {
   const list = Array.isArray(entries) ? entries : [];
   const { language } = useHolyNamesLanguage();
-  const isArabic = (t) => /[\u0600-\u06FF]/.test(t || "");
+  const pureArabic = (t) => /[\u0600-\u06FF]/.test(String(t || "")) && !/[A-Za-zçğıöşüÇĞİÖŞÜ]/.test(String(t || ""));
   return (
     <div className="rounded-lg px-3 py-2.5" style={{ background: "rgba(8,16,38,0.4)", border: `1px solid ${P.faint}` }}>
       <div className="flex items-baseline justify-between gap-2">
@@ -124,7 +124,7 @@ function AdvancedBlock({ label, ml, entries, nameId }) {
         <div className="mt-2 space-y-2">
           {list.some(e => !e.name_id && !e.related_name_id) && <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{UNSCOPED_MARKER}</p>}
           {list.map((e, i) => {
-            const arabicText = isArabic(e.text) ? e.text : (e.arabic_text || e.arabic || "");
+            const arabicText = [e.arabic_text, e.arabic, e.text].find(pureArabic) || "";
             const translated = language === "ml"
               ? (e.malayalam_translation || e.text_ml || e.meaning_ml || "")
               : (e.english_translation || e.text_en || e.meaning_en || (e.language === "en" ? e.text : ""));
