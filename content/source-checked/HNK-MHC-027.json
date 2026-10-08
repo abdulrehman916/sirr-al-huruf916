@@ -40,6 +40,86 @@
       }
     }
   ],
+  "edition_accounts": [
+    {
+      "id": "english-variants-137-138",
+      "title": {
+        "ml": "നാമത്തിന്റെ നാലു രൂപങ്ങളും അർഥങ്ങളും",
+        "en": "Four name variants and their meanings"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": "137–138",
+      "original_text": "The twenty-seventh name is Tūnashin [طونش]. According to another view, it is Ṭawshin [طوش]; according to another, Ṭarshin [طرش]; and according to another, Ṭawyāshin [طوياش]. The correct view is the first. The letter corresponding to it is the raised za’, and the mansion corresponding to it is Fargh al-Mu’akhkhar. In Arabic it means ‘O Grateful One’ and, according to another view, ‘He is God, the Generous.’",
+      "translation": {
+        "ml": "ഈ പതിപ്പ് ഇരുപത്തേഴാം പേരിനെ طونش (തൂനശിൻ) എന്നു രേഖപ്പെടുത്തുന്നു. طوش, طرش, طوياش എന്നീ മറ്റു രൂപങ്ങളും കൊടുക്കുന്നു; ആദ്യരൂപമാണ് ശരിയെന്ന് ഗ്രന്ഥം വിലയിരുത്തുന്നു. ആദ്യരൂപത്തിന്റെ വായന: ط-യ്ക്ക് ദമ്മ, و-യ്ക്ക് സുകൂൻ, ن-യ്ക്ക് ഫത്ഹ, അവസാനം തൻവീനുള്ള ش. ബന്ധിപ്പിച്ച അക്ഷരം ظ; മൻസിൽ അൽ-ഫർഗ് അൽ-മുഅഖ്ഖർ. അർഥമായി ‘നന്ദി സ്വീകരിക്കുന്നവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘അവൻ ഉദാരനായ അല്ലാഹുവാണ്’ എന്നും കൊടുക്കുന്നു. വസ്നുകൾ യഥാക്രമം muhtad, ‘awf, qard, faw‘al എന്നാണ് ഇംഗ്ലീഷ് പതിപ്പിലെ അച്ചടി.",
+        "en": "This edition lists طونش, طوش, طرش and طوياش and judges the first form correct. Its pronunciation instructions give ta with damma, an unvoweled waw, nun with fatha and a nunated shin. The associated letter is za (ظ), the mansion Fargh al-Mu’akhkhar. Its meanings are ‘O Grateful One’ or ‘He is God, the Generous.’ The printed measures are muhtad, ‘awf, qard and faw‘al respectively."
+      },
+      "scope_note": {
+        "ml": "ഇവ പുസ്തകത്തിലെ പതിപ്പുവ്യത്യാസങ്ങളാണ്; നാലു പുതിയ കാർഡുകളോ പുതിയ Abjad കണക്കുകളോ ഉണ്ടാക്കിയിട്ടില്ല. ‘ആദ്യരൂപമാണ് ശരി’ എന്നത് ഗ്രന്ഥത്തിന്റെ വിലയിരുത്തലാണ്.",
+        "en": "These are source variants, not four new cards or new Abjad calculations. The judgement that the first is correct belongs to the book."
+      }
+    },
+    {
+      "id": "english-fatiha-eleven-138",
+      "title": {
+        "ml": "കളവും അൽ-ഫാതിഹയുടെ പതിനൊന്ന് എഴുത്തുകളും",
+        "en": "Square and eleven inscriptions of al-Fatiha"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 138,
+      "original_text": "If one writes it in a magic square and with it al-Fatiha [Quran 1] eleven times and hangs it on a crying child, it will stop crying and being scared.",
+      "count": 11,
+      "translation": {
+        "ml": "പേര് ഒരു കളത്തിൽ എഴുതുകയും അതോടൊപ്പം അൽ-ഫാതിഹ പതിനൊന്ന് തവണ എഴുതുകയും ചെയ്ത് കരയുന്ന കുട്ടിയിൽ തൂക്കിയാൽ കരച്ചിലും ഭയവും മാറുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്. പതിനൊന്ന് എന്ന എണ്ണം ഇവിടെ അൽ-ഫാതിഹയുടെ എഴുത്തിനാണ്; പേര് പതിനൊന്ന് തവണ ഓതണം എന്നല്ല.",
+        "en": "The book claims that writing the name in a square with eleven inscriptions of al-Fatiha and hanging it on a crying child stops crying and fear. Eleven applies to the written al-Fatiha, not eleven recitations of the name."
+      },
+      "scope_note": {
+        "ml": "ഈ പേജിൽ കളത്തിന്റെ സെല്ലുകളോ കൃത്യമായ ചിത്രമോ നൽകിയിട്ടില്ല; അതിനാൽ ഊഹിച്ച് കളം വരച്ചിട്ടില്ല. ഇത് ചരിത്രഗ്രന്ഥത്തിലെ അവകാശവാദമാണ്; കുട്ടിയുടെ അസ്വസ്ഥതയ്ക്ക് കാരണമെന്തെന്ന് പരിശോധിക്കുന്നതിന് പകരമല്ല.",
+        "en": "No cell layout or exact square image is supplied on this page, so no diagram is invented. This historical claim is not a substitute for assessing a child’s distress."
+      }
+    },
+    {
+      "id": "english-after-isha-80-138",
+      "title": {
+        "ml": "ഇശായ്ക്കുശേഷം സുജൂദിൽ എൺപത് തവണ — ഇംഗ്ലീഷ് പതിപ്പ്",
+        "en": "Eighty repetitions in prostration after Isha — English edition"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 138,
+      "original_text": "If one has a need and wants it fulfilled, one should recite it eighty times in prostration after the nightfall prayer and ask God to fulfill one’s need and it will be fulfilled.",
+      "count": 80,
+      "timing": {
+        "ml": "ഇശാ നമസ്കാരത്തിനുശേഷം, സുജൂദിൽ എന്നാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പ് പറയുന്നത്.",
+        "en": "After the nightfall prayer, in prostration, in this English edition."
+      },
+      "translation": {
+        "ml": "ആവശ്യം നിറവേറാൻ ആഗ്രഹിക്കുന്ന ഒരാൾ ഇശാ നമസ്കാരത്തിനുശേഷം സുജൂദിൽ ഈ പേര് എൺപത് തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം നിറവേറ്റാൻ ചോദിച്ചാൽ അത് നിറവേറുമെന്നാണ് ഈ പതിപ്പിലെ അവകാശവാദം.",
+        "en": "This edition claims that a person seeking fulfilment of a need recites the name eighty times in prostration after Isha and asks God for fulfilment."
+      },
+      "scope_note": {
+        "ml": "അറബി പതിപ്പിലെ ‘ഇശാ നമസ്കാരസമയത്ത്’ എന്ന വാചകവും ഈ പതിപ്പിലെ ‘ഇശായ്ക്കുശേഷം’ എന്ന വാചകവും വേർതിരിച്ചാണ് നൽകിയിരിക്കുന്നത്.",
+        "en": "The Arabic edition’s ‘at the night prayer’ and this edition’s ‘after the nightfall prayer’ are retained separately."
+      }
+    },
+    {
+      "id": "english-variant-accounts-138",
+      "title": {
+        "ml": "മറ്റു എഴുത്തുരൂപങ്ങളെക്കുറിച്ചുള്ള പരാമർശങ്ങൾ",
+        "en": "Accounts attached to the other spellings"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 138,
+      "original_text": "Among the properties of Ṭawshin [طوش] is that if one writes it twenty times on a piece of paper with ninety sads [ص] and hangs it on someone with a headache, it will go away. The properties of Ṭawyāshin [طوياش] are the same as those of Tūnashin [طونش] except that its magic square is of 5x5. As for Ṭarshin [طرش], I have no knowledge of its property.",
+      "translation": {
+        "ml": "طوش എന്ന രൂപം കടലാസിൽ ഇരുപത് തവണ എഴുതുകയും അതോടൊപ്പം ص എന്ന അക്ഷരം തൊണ്ണൂറ് തവണ എഴുതുകയും ചെയ്ത് തലവേദനയുള്ള ആളിൽ തൂക്കിയാൽ തലവേദന മാറുമെന്നാണ് ഗ്രന്ഥത്തിലെ പരാമർശം. ഈ എണ്ണങ്ങൾ എഴുത്തിനാണ്, ഓതലിനല്ല. طوياش-ന്റെ ഗുണങ്ങൾ طونش-ന്റേതുപോലെയാണെന്നും കളം മാത്രം 5×5 ആണെന്നും പറയുന്നു. طرش-ന്റെ പ്രത്യേക ഗുണം അറിയില്ലെന്ന് ഗ്രന്ഥകാരൻ തന്നെ രേഖപ്പെടുത്തുന്നു.",
+        "en": "The book attributes a headache-relief claim to twenty written طوش names accompanied by ninety written ص letters on paper, hung on the person. These are inscription counts, not recitation counts. It gives طوياش the same properties as طونش except for a 5×5 square, and explicitly says the property of طرش is unknown to the author."
+      },
+      "scope_note": {
+        "ml": "തലവേദന മാറുമെന്നത് തെളിയിക്കപ്പെട്ട ചികിത്സയായി അവതരിപ്പിക്കുന്നില്ല. 5×5 കളത്തിന്റെ സെൽവിവരങ്ങൾ ഈ പേജിൽ കാണിക്കുന്നില്ല; പരിശോധിച്ച ചിത്രം ലഭിക്കുന്നതുവരെ അതിന്റെ രൂപം ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+        "en": "The headache claim is not presented as an established treatment. This page does not show the 5×5 cells; an exact diagram remains pending a verified image."
+      }
+    }
+  ],
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."
