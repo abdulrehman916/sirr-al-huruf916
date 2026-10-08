@@ -5,6 +5,7 @@ export default function BirhatiahCollectiveVersion() {
   const { language } = useHolyNamesLanguage();
   const ml = language === "ml";
   const cls = ml ? "font-malayalam" : "font-inter";
+  const excerpt = version.arabic_source_excerpt;
   if (version.review_status !== "checked_against_supplied_scan" || version.names.length !== 28) return null;
   return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
     <h3 className={`${cls} text-lg text-yellow-200`}>{version.title[language]}</h3>
@@ -21,6 +22,20 @@ export default function BirhatiahCollectiveVersion() {
     <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.continuation_translation[language]}</p>
     <p className="font-amiri text-2xl text-right text-yellow-200 leading-loose" dir="rtl" lang="ar">{version.closing_arabic}</p>
     <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.closing_translation[language]}</p>
+    {excerpt?.review_status === "checked_against_scan" && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
+      <h4 className={`${cls} text-yellow-200`}>{ml ? "അറബി ഗ്രന്ഥത്തിലെ അവസാന വാക്യം" : "Closing sentence in the Arabic source"}</h4>
+      <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{excerpt.reading}</p>
+      <p className={`${cls} text-white/90 leading-loose`} lang={language}>{excerpt.translation[language]}</p>
+      <details className={`${cls} text-sm text-white/65`}>
+        <summary className="cursor-pointer">{ml ? "ഗ്രന്ഥം പറയുന്ന പാഠപരമ്പര" : "Transmission attributed by the book"}</summary>
+        <div className="pt-3 space-y-3">
+          <p className="font-amiri text-xl leading-loose text-right" dir="rtl" lang="ar">{excerpt.attribution_original}</p>
+          <p className="leading-loose" lang={language}>{excerpt.attribution_translation[language]}</p>
+          <p className="leading-loose">{excerpt.scope_note[language]}</p>
+          <p>{excerpt.source_title} · {ml ? "പേജ്" : "Page"} {excerpt.printed_page}</p>
+        </div>
+      </details>
+    </section>}
     <details className={`${cls} text-sm text-white/65`}><summary className="cursor-pointer">{ml ? "പതിപ്പിനെക്കുറിച്ചുള്ള കുറിപ്പ്" : "Edition note"}</summary><p className="pt-2 leading-loose">{version.scope_note[language]}</p></details>
     <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സും ഇംഗ്ലീഷ് മൂലപാഠവും" : "Source and original English text"}</summary><div className="pt-2 space-y-3"><p>{version.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {version.printed_page}</p><p className="font-inter leading-relaxed" lang="en">{version.introduction_original}</p><p className="font-inter leading-relaxed" lang="en">{version.continuation_original}</p></div></details>
   </article>;
