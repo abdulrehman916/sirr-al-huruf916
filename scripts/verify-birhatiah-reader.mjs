@@ -14,6 +14,12 @@ for (const [id, guide] of Object.entries(guides)) {
   const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${id}.json`, 'utf8'));
   assert.ok(['practices', 'source_notes', 'edition_accounts'].flatMap(key => chapter[key] || []).some(entry => entry.id === guide.source_entry), `${id}: unlinked method`);
   for (const language of ['ml', 'en']) {
+    for (const method of guide.other_methods || []) {
+      const sourceChapter = JSON.parse(fs.readFileSync(`content/source-checked/${method.source_name_id || id}.json`, 'utf8'));
+      assert.ok(['practices', 'source_notes', 'edition_accounts'].flatMap(key => sourceChapter[key] || []).some(entry => entry.id === method.source_entry), `${id}: additional method lacks source`);
+      assert.ok(method.steps[language]?.length && method.title[language] && method.benefit[language]);
+      if (method.figure) assert.ok(fs.existsSync(`public${method.figure.image_path}`));
+    }
     assert.ok(guide.steps[language].length && guide.title[language] && guide.benefit[language]);
     const html = render(chapter, language);
     const split = html.indexOf('<details class="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"');
@@ -23,6 +29,13 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(!primary.includes('data-reader-section="references"'));
     assert.ok(!primary.includes('28 പേരുകൾക്കുള്ള സംയുക്തവും അനുബന്ധവുമായ ഗ്രന്ഥവിവരങ്ങൾ'));
     assert.ok(!primary.includes('SourceSubjects'));
+    for (const method of guide.other_methods || []) assert.ok(primary.includes(`data-source-entry="${method.source_entry}"`));
+    if (guide.spoken_request) assert.ok(primary.includes(guide.spoken_request.arabic));
+    if (id === 'HNK-MHC-017') assert.ok(primary.includes('/figures/qazmaz-english-p129.png'));
+    if (id === 'HNK-MHC-004') assert.ok(primary.includes('59:21') && primary.includes('59:24'));
+    if (id === 'HNK-MHC-010') assert.ok(primary.includes('86:1') && primary.includes('86:17'));
+    if (id === 'HNK-MHC-027') assert.ok(primary.includes('1:1') && primary.includes('1:7'));
+    assert.ok(!primary.includes('mundhiri-collective-241-242'));
     if (id === 'HNK-MHC-021') {
       assert.ok(primary.includes('20:69') && primary.includes('10:81'));
       assert.ok(primary.includes('/figures/kaydahula-manba-p72.svg'));
@@ -37,5 +50,16 @@ for (const language of ['ml', 'en']) {
   assert.ok(html.indexOf('data-reader-section="yasin-method"') < html.indexOf('data-reader-section="seven-day-method"'));
   assert.ok(html.indexOf('data-reader-section="extended-prayer"') < html.indexOf('data-reader-section="references"'));
   assert.ok(!/<details[^>]+data-reader-section="references"[^>]*\bopen/.test(html));
+}
+const version = JSON.parse(fs.readFileSync('src/data/birhatiahCollectiveVersion.json', 'utf8'));
+assert.equal(version.arabic_short_continuation_source.printed_page, 75);
+assert.ok(render(null, 'ml').includes(version.arabic_short_continuation));
+const collectiveCard = fs.readFileSync('src/components/holynameknowledge/BirhatiahCollectiveCard.jsx', 'utf8');
+assert.ok(collectiveCard.includes('data-order-index="29"') && collectiveCard.includes('birhatiah-mantra-029'));
+const verses = JSON.parse(fs.readFileSync('src/data/birhatiahMethodVerses.json', 'utf8'));
+for (const [id, count] of [['1:1-7', 7], ['86:1-17', 17], ['59:21-24', 4]]) {
+  assert.equal(verses[id].verses.length, count);
+  assert.equal(new Set(verses[id].verses.map(verse => verse.reference)).size, count);
+  assert.ok(verses[id].verses.every(verse => verse.arabic && verse.translation.ml && verse.translation.en));
 }
 console.log('Reader guide: 28 source-linked methods, 56 bilingual renders, collapsed references, inscription/recitation separation and collective method ordering passed.');

@@ -246,5 +246,30 @@
       "ml": "ഇത് പേജ് 74-ലെ വേറിട്ട പരാമർശമാണ്. താഴെയുള്ള ബഹ്‌നസാവി പതിപ്പിലെ ഓരോ പേരിന്റെയും ×2 ആവർത്തനവുമായി ഇതിനെ ചേർത്ത് പുതിയൊരു ക്രമം സൃഷ്ടിച്ചിട്ടില്ല. ഈ വാക്യത്തിൽ പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ നമസ്കാരശേഷമോ പറഞ്ഞിട്ടില്ല. ആവശ്യനിറവേറ്റൽ ഗ്രന്ഥത്തിന്റെ വിശ്വാസപരമായ അവകാശവാദമാണ്.",
       "en": "This is a separate account on page 74. It is not combined with the ×2 markers in the al-Bahnasawi version below to create a new procedure. The sentence specifies no day, clock time or prayer. Fulfilment of a need is the source’s religious claim."
     }
-  }
+  },
+  "arabic_short_continuation": "اللهم بحق كهكهيج يغطشى بلطشغشويل أمويل جلد مهجما هلمج وروديه مهفياج بعزتك إلا ما أخذت سمعهم وأبصارهم سبحان من ليس كمثله شيء وهو السميع البصير",
+  "arabic_short_continuation_source": {
+    "source_title": "منبع أصول الحكمة",
+    "printed_page": 75,
+    "image_path": "/figures/birhatiah-manba-p75.png",
+    "review_status": "checked_against_scan"
+  },
+  "online_comparison": [
+    {
+      "url": "https://www.albatine.org/showthread.php?t=33",
+      "title": "كل شيء حول الدعوة البرهتية بالتفصيل الكامل",
+      "note": {
+        "ml": "ചെറിയ തുടർദുആയും ഓരോ പേരിന്റെയും പരമ്പരാഗത ഉപയോഗങ്ങളും പ്രസിദ്ധീകരിച്ചിട്ടുണ്ട്. വായിക്കാനായത് തിരച്ചിലിൽ ലഭിച്ച പാഠഭാഗങ്ങളാണ്; സൈറ്റ് പൂർണ്ണമായി തുറക്കാനായില്ല.",
+        "en": "Publishes the short continuation and traditional individual-name accounts. The available indexed excerpts were checked; the full page could not be opened."
+      }
+    },
+    {
+      "url": "https://asrare.net/node/42673",
+      "title": "دعوة الدعوة البرهتية",
+      "note": {
+        "ml": "ദീർഘ ആഹ്വാനത്തിന്റെ വേറിട്ട പാഠമാണ്. നാമപ്പട്ടികയിൽ ഒരു സ്ഥാനവും ചില തുടർപദങ്ങളും ഇവിടെ നൽകിയ 28-നാമക്രമത്തിൽനിന്ന് വ്യത്യസ്തമാണ്; അതിനാൽ ചെറിയ മന്ത്രത്തിൽ ചേർത്തിട്ടില്ല.",
+        "en": "A distinct long invocation. Its list position and continuation spellings differ from this twenty-eight-name sequence, so it is not merged into the short formula."
+      }
+    }
+  ]
 }

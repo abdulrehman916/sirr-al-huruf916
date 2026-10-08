@@ -1,7 +1,7 @@
 {
   "HNK-MHC-001": {
     "title": {
-      "ml": "ഉപജീവനത്തിനുള്ള ദിവസേനയുള്ള വായന",
+      "ml": "ഉപജീവനത്തിനായി",
       "en": "Daily livelihood reading"
     },
     "benefit": {
@@ -11,18 +11,83 @@
     "steps": {
       "ml": [
         "പേര് ദിവസേന 100 തവണ വായിക്കുക.",
-        "അറബി വിവരണത്തിൽ നാൽപ്പത് ദിവസം തികയുന്നതിനുമുമ്പുള്ള ഫലമാണ് പറയുന്നത്. നാൽപ്പത് ദിവസം തുടരുക എന്ന വേറിട്ട വിവരണവും ഉണ്ട്."
+        "ഈ വിവരണം നാൽപ്പത് ദിവസം തികയുന്നതിനുമുമ്പുള്ള ഫലമാണ് പറയുന്നത്."
       ],
       "en": [
         "Read the name 100 times daily.",
-        "The Arabic account speaks of an outcome before forty days; a separate account specifies continuing for forty days."
+        "This account describes an outcome before forty days elapse."
       ]
     },
-    "source_entry": "daily-100"
+    "source_entry": "daily-100",
+    "other_methods": [
+      {
+        "source_entry": "english-daily-100",
+        "title": {
+          "ml": "ഉപജീവനത്തിനായി — നാൽപ്പത് ദിവസം തുടരുന്ന രീതി",
+          "en": "Livelihood — the forty-day method"
+        },
+        "benefit": {
+          "ml": "ഉപജീവനത്തിലെ പ്രയാസം മാറുക.",
+          "en": "Relief from livelihood difficulty."
+        },
+        "steps": {
+          "ml": [
+            "പേര് ദിവസേന 100 തവണ, നാൽപ്പത് ദിവസം വായിക്കുന്ന വേറിട്ട വിവരണമാണ്."
+          ],
+          "en": [
+            "A separate account specifies reading the name one hundred times daily for forty days."
+          ]
+        }
+      },
+      {
+        "source_entry": "right-palm-seven",
+        "title": {
+          "ml": "ഓർമ്മയെക്കുറിച്ചുള്ള എഴുത്തുപരാമർശം",
+          "en": "Memory inscription account"
+        },
+        "benefit": {
+          "ml": "കേട്ടത് ഓർക്കുകയും മറക്കാതിരിക്കുകയും ചെയ്യുമെന്ന അവകാശവാദം.",
+          "en": "Claim of remembering what is heard without forgetting."
+        },
+        "steps": {
+          "ml": [
+            "വലത് കൈപ്പത്തിയിൽ പേര് 7 തവണ എഴുതുന്നതാണ് പരാമർശം.",
+            "ഒഴിഞ്ഞ വയറ്റിൽ എഴുത്ത് നക്കിയെടുക്കുന്ന തുടർഭാഗം ചരിത്രവിവരമാണ്; കഴിക്കാനുള്ള നിർദേശമായി നൽകുന്നില്ല."
+          ],
+          "en": [
+            "The account specifies seven inscriptions on the right palm.",
+            "Its subsequent account of licking the inscription on an empty stomach is retained as historical information, not an ingestion instruction."
+          ]
+        }
+      },
+      {
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "വിൽക്കാതെ കിടക്കുന്ന വസ്തുക്കളുടെ വിൽപ്പനയ്ക്കായി",
+          "en": "Sale of unsold merchandise"
+        },
+        "benefit": {
+          "ml": "ലാഭത്തോടെ വിൽപ്പന നടക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of a profitable sale."
+        },
+        "steps": {
+          "ml": [
+            "ബിർഹതിയ്യ, കരീർ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് എഴുതുന്ന രീതിയാണ്.",
+            "വിൽക്കാതെ കിടക്കുന്ന വ്യാപാരവസ്തുക്കളോടൊപ്പം എഴുത്ത് വയ്ക്കുന്നു."
+          ],
+          "en": [
+            "The account writes Birhatiah and Karir together.",
+            "It places the inscription among the unsold merchandise."
+          ]
+        },
+        "source_name_id": "HNK-MHC-002",
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ"
+      }
+    ]
   },
   "HNK-MHC-002": {
     "title": {
-      "ml": "രാത്രിയിലെ വായന",
+      "ml": "രാത്രിയിലെ രൂഹാനി ദർശനപരാമർശം",
       "en": "Nightly reading"
     },
     "benefit": {
@@ -37,11 +102,78 @@
         "Read the name 100 times each night."
       ]
     },
-    "source_entry": "nightly-100"
+    "source_entry": "nightly-100",
+    "other_methods": [
+      {
+        "source_entry": "merchandise-11",
+        "title": {
+          "ml": "വ്യാപാരവസ്തുക്കളുടെ സംരക്ഷണത്തിനായി",
+          "en": "Protection of merchandise"
+        },
+        "benefit": {
+          "ml": "വ്യാപാരവസ്തുക്കൾ മോഷ്ടിക്കപ്പെടാതിരിക്കുമെന്ന അവകാശവാദം.",
+          "en": "Traditional claim of protection of merchandise from theft."
+        },
+        "steps": {
+          "ml": [
+            "കടലാസിൽ പേര് 11 തവണ എഴുതുക.",
+            "വ്യാപാരിയുടെ വസ്തുക്കളോടൊപ്പം എഴുത്ത് വയ്ക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "Write the name eleven times on paper.",
+            "The account places the inscription among the trader’s goods."
+          ]
+        }
+      },
+      {
+        "source_entry": "historical-eye-account-17",
+        "title": {
+          "ml": "കണ്ണിനെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
+          "en": "Historical eye account"
+        },
+        "benefit": {
+          "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of relief from an eye condition."
+        },
+        "steps": {
+          "ml": [
+            "17 എന്നത് കഴുകലിന്റെ എണ്ണമാണ്; മൂന്നു ദിവസം എന്നാണ് വിവരണം.",
+            "എഴുത്തുവെള്ളം കണ്ണിൽ ഉപയോഗിക്കുന്ന ചരിത്രപരാമർശം ചികിത്സാനിർദേശമായി നൽകുന്നില്ല."
+          ],
+          "en": [
+            "Seventeen refers to washes; the account specifies three days.",
+            "The use of inscription water in the eye is retained as a historical account, not a treatment instruction."
+          ]
+        }
+      },
+      {
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "വിൽക്കാതെ കിടക്കുന്ന വസ്തുക്കളുടെ വിൽപ്പനയ്ക്കായി",
+          "en": "Sale of unsold merchandise"
+        },
+        "benefit": {
+          "ml": "ലാഭത്തോടെ വിൽപ്പന നടക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of a profitable sale."
+        },
+        "steps": {
+          "ml": [
+            "ബിർഹതിയ്യ, കരീർ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് എഴുതുന്ന രീതിയാണ്.",
+            "വിൽക്കാതെ കിടക്കുന്ന വ്യാപാരവസ്തുക്കളോടൊപ്പം എഴുത്ത് വയ്ക്കുന്നു."
+          ],
+          "en": [
+            "The account writes Birhatiah and Karir together.",
+            "It places the inscription among the unsold merchandise."
+          ]
+        },
+        "source_name_id": "HNK-MHC-002",
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ"
+      }
+    ]
   },
   "HNK-MHC-003": {
     "title": {
-      "ml": "ഉപജീവനത്തിനുള്ള വായന",
+      "ml": "ഉപജീവനത്തിനായി",
       "en": "Livelihood reading"
     },
     "benefit": {
@@ -56,11 +188,34 @@
         "Read the name 70 times daily."
       ]
     },
-    "source_entry": "daily-70"
+    "source_entry": "daily-70",
+    "other_methods": [
+      {
+        "source_entry": "tin-13",
+        "title": {
+          "ml": "മൂട്ടകൾ മാറിപ്പോകാൻ",
+          "en": "Bedbugs leaving the home"
+        },
+        "benefit": {
+          "ml": "മൂട്ടകൾ വീട്ടിൽനിന്ന് പോകുക.",
+          "en": "Bedbugs leaving the home."
+        },
+        "steps": {
+          "ml": [
+            "തകരപ്പലകയിൽ പേര് 13 തവണ എഴുതുക.",
+            "മൂട്ടകളുള്ള വീട്ടിൽ പലക വയ്ക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "Write the name thirteen times on tin.",
+            "The account places the tin in the affected house."
+          ]
+        }
+      }
+    ]
   },
   "HNK-MHC-004": {
     "title": {
-      "ml": "സംരക്ഷണത്തിനുള്ള എഴുത്ത്",
+      "ml": "സംരക്ഷണത്തിനായി",
       "en": "Protective inscription"
     },
     "benefit": {
@@ -79,11 +234,12 @@
         "Carry the inscription."
       ]
     },
-    "source_entry": "protection-five"
+    "source_entry": "protection-five",
+    "verse_group": "59:21-24"
   },
   "HNK-MHC-005": {
     "title": {
-      "ml": "ദിവസേന അമ്പത് വായന",
+      "ml": "പാപമോചനവും സ്നേഹവും ലക്ഷ്യമാക്കി",
       "en": "Fifty daily readings"
     },
     "benefit": {
@@ -98,11 +254,38 @@
         "Read the name 50 times daily."
       ]
     },
-    "source_entry": "daily-50"
+    "source_entry": "daily-50",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-006",
+        "title": {
+          "ml": "മസ്‌ജൽ–ബസ്‌ജൽ സംയുക്ത വായന — 66 തവണ",
+          "en": "Mazjal–Bazjal paired reading — sixty-six times"
+        },
+        "benefit": {
+          "ml": "സിഹ്റോ ബന്ധനമോ മാറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of relief from a spell or binding."
+        },
+        "steps": {
+          "ml": [
+            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുന്നതാണ് ഈ പരാമർശം.",
+            "മസ്‌ജൽ, ബസ്‌ജൽ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് വെള്ളത്തിന്മീതെ 66 തവണ വായിക്കുക.",
+            "ബന്ധപ്പെട്ട വ്യക്തി ആ വെള്ളത്തിൽ കുളിക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "The account places three pieces of salt in water.",
+            "Read Mazjal and Bazjal together over the water sixty-six times.",
+            "The account describes bathing with that water."
+          ]
+        },
+        "source_name_id": "HNK-MHC-006",
+        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ"
+      }
+    ]
   },
   "HNK-MHC-006": {
     "title": {
-      "ml": "ആവശ്യത്തിനുള്ള വ്യാഴാഴ്ച രീതി",
+      "ml": "ആവശ്യം നിറവേറാൻ",
       "en": "Thursday need petition"
     },
     "benefit": {
@@ -119,11 +302,38 @@
         "State the need and place the paper in the sea."
       ]
     },
-    "source_entry": "thursday-paper"
+    "source_entry": "thursday-paper",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-006",
+        "title": {
+          "ml": "മസ്‌ജൽ–ബസ്‌ജൽ സംയുക്ത വായന — 66 തവണ",
+          "en": "Mazjal–Bazjal paired reading — sixty-six times"
+        },
+        "benefit": {
+          "ml": "സിഹ്റോ ബന്ധനമോ മാറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of relief from a spell or binding."
+        },
+        "steps": {
+          "ml": [
+            "വെള്ളത്തിൽ മൂന്ന് ഉപ്പുകഷണങ്ങൾ ഇടുന്നതാണ് ഈ പരാമർശം.",
+            "മസ്‌ജൽ, ബസ്‌ജൽ എന്നീ രണ്ടു പേരുകളും ചേർത്ത് വെള്ളത്തിന്മീതെ 66 തവണ വായിക്കുക.",
+            "ബന്ധപ്പെട്ട വ്യക്തി ആ വെള്ളത്തിൽ കുളിക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "The account places three pieces of salt in water.",
+            "Read Mazjal and Bazjal together over the water sixty-six times.",
+            "The account describes bathing with that water."
+          ]
+        },
+        "source_name_id": "HNK-MHC-006",
+        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ"
+      }
+    ]
   },
   "HNK-MHC-007": {
     "title": {
-      "ml": "കടയിലെ ഉപജീവനത്തിനുള്ള രീതി",
+      "ml": "കടയിലെ ഉപജീവനത്തിനായി",
       "en": "Shop livelihood method"
     },
     "benefit": {
@@ -140,11 +350,19 @@
         "Use agarwood and benzoin incense and hang it in the shop."
       ]
     },
-    "source_entry": "friday-store"
+    "source_entry": "friday-store",
+    "figure": {
+      "image_path": "/figures/tarqab-manba-p69.svg",
+      "caption": {
+        "ml": "ഈ രീതിയുമായി ബന്ധപ്പെട്ട കളം — അറബി പാഠം.",
+        "en": "Square associated with this method — Arabic text."
+      }
+    },
+    "verse_group": "3:37"
   },
   "HNK-MHC-008": {
     "title": {
-      "ml": "തർഖബ്–ബർഹശ് സംയുക്ത വായന",
+      "ml": "വ്യക്തിയെ എത്തിക്കാനുള്ള സംയുക്ത പരാമർശം",
       "en": "Tarqab–Barhash paired reading"
     },
     "benefit": {
@@ -167,7 +385,7 @@
   },
   "HNK-MHC-009": {
     "title": {
-      "ml": "മൂന്നുനൂറ് രാത്രിവായന",
+      "ml": "ആവശ്യം നിറവേറാനുള്ള രാത്രിവായന",
       "en": "Three hundred nightly readings"
     },
     "benefit": {
@@ -177,20 +395,29 @@
     "steps": {
       "ml": [
         "ഓരോ രാത്രിയിലും പേര് 300 തവണ വായിക്കുക.",
-        "ഓരോ നൂറിനുശേഷവും സേവകരോട് ലക്ഷ്യവ്യക്തിയെയും ആവശ്യത്തെയും വ്യക്തമാക്കിയുള്ള അഭ്യർഥന പറയുന്ന രീതിയാണ്.",
+        "ഓരോ നൂറിനുശേഷവും താഴെയുള്ള അഭ്യർഥന പറയുന്ന രീതിയാണ്; “ഇന്ന രൂപത്തിൽ”, “ഇന്നയാളുടെ അടുത്തേക്ക്”, “ഇന്ന കാര്യം” എന്നിവ ആവശ്യത്തിനനുസരിച്ച് വ്യക്തമാക്കുന്നു.",
         "നോമ്പും മാംസവും അതിന്റെ ഉൽപ്പന്നങ്ങളും ഒഴിവാക്കലും നിബന്ധനകളാണ്; മൂന്നു ദിവസം തികയുന്നതിനുമുമ്പുള്ള ഫലമാണ് പറയുന്നത്."
       ],
       "en": [
         "Read the name 300 times each night.",
-        "After each hundred, the account addresses the servants, identifying the person and task.",
+        "After every hundred, say the request below, specifying the form, person and task in place of the placeholders.",
         "Fasting and avoidance of meat and its products are conditions; the claimed outcome is before three days elapse."
       ]
     },
-    "source_entry": "english-nightly-300"
+    "source_entry": "english-nightly-300",
+    "spoken_request": {
+      "arabic": "توكلوا يا خدام هذا الاسم في صفة كذا إلى كذا وأمروه بكذا",
+      "translation": {
+        "ml": "ഈ നാമത്തിന്റെ സേവകരേ, ഇന്ന രൂപത്തിൽ ഇന്നയാളുടെ അടുത്തേക്ക് പോയി ഇന്ന കാര്യം ചെയ്യാൻ അയാളോട് ആവശ്യപ്പെടുക.",
+        "en": "Servants of this name, undertake the task in such-and-such a form, go to such-and-such a person and instruct them to do such-and-such."
+      },
+      "source_url": "https://www.albatine.org/showthread.php?t=33",
+      "source_kind": "traditional_forum_account"
+    }
   },
   "HNK-MHC-010": {
     "title": {
-      "ml": "ഓർമ്മയും ജ്ഞാനവും ലക്ഷ്യമാക്കിയ വായന",
+      "ml": "ഓർമ്മയും ജ്ഞാനവും ലക്ഷ്യമാക്കി",
       "en": "Reading for memory and wisdom"
     },
     "benefit": {
@@ -205,11 +432,35 @@
         "Read the name 70 times daily."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "കുട്ടിയുടെ സംരക്ഷണത്തിനുള്ള എഴുത്തുപരാമർശം",
+          "en": "Inscription account for a child’s protection"
+        },
+        "benefit": {
+          "ml": "ജിന്ന്, ഖരീൻ, കണ്ണേറ് എന്നിവയിൽനിന്നുള്ള സംരക്ഷണം.",
+          "en": "Traditional protection claim concerning jinn, qarin and the evil eye."
+        },
+        "steps": {
+          "ml": [
+            "പേരും സൂറത്ത് അത്താരിഖും വേർതിരിച്ച അക്ഷരങ്ങളായി കടലാസിൽ എഴുതുന്ന പരാമർശമാണ്.",
+            "എഴുത്ത് കുട്ടിയിൽ തൂക്കുന്നതാണ് തുടർക്രമം."
+          ],
+          "en": [
+            "The account writes the name with Surah al-Tariq in separated letters on paper.",
+            "It then describes attaching the inscription to the child."
+          ]
+        },
+        "verse_group": "86:1-17"
+      }
+    ]
   },
   "HNK-MHC-011": {
     "title": {
-      "ml": "ഖൽനഹൂദ്–ബർശാൻ സംയുക്ത വായന",
+      "ml": "ആവശ്യത്തെക്കുറിച്ച് മറുപടി തേടാൻ",
       "en": "Qalnahud–Barshan paired reading"
     },
     "benefit": {
@@ -230,7 +481,7 @@
   },
   "HNK-MHC-012": {
     "title": {
-      "ml": "മോതിരത്തിലെ എഴുത്ത്",
+      "ml": "ആവശ്യം നിറവേറാനുള്ള മോതിരപരാമർശം",
       "en": "Ring inscription"
     },
     "benefit": {
@@ -251,7 +502,7 @@
   },
   "HNK-MHC-013": {
     "title": {
-      "ml": "വീട്ടിലെ സംരക്ഷണത്തിനുള്ള കളം",
+      "ml": "വീട്ടിലെ സംരക്ഷണത്തിനായി",
       "en": "House protection square"
     },
     "benefit": {
@@ -272,7 +523,7 @@
   },
   "HNK-MHC-014": {
     "title": {
-      "ml": "ബന്ധനമോചനത്തിനുള്ള വായന",
+      "ml": "ബന്ധനമോചനത്തിനായി",
       "en": "Reading for release"
     },
     "benefit": {
@@ -287,11 +538,34 @@
         "The account describes continuous reading of the name."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-014",
+        "title": {
+          "ml": "ചുമയെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
+          "en": "Historical cough account"
+        },
+        "benefit": {
+          "ml": "ചുമ മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of cough relief."
+        },
+        "steps": {
+          "ml": [
+            "ശനിയാഴ്ച സൂര്യോദയത്തിനു മുമ്പ്, ഫലം കായ്ക്കാത്ത ഈന്തപ്പനയുടെ ഇലയിൽ പേര് 17 തവണ എഴുതുന്ന പരാമർശമാണിത്.",
+            "അൽ-ബലദ് 90:11–13-ലെ ഉദ്ധരണി വേർതിരിച്ച അക്ഷരങ്ങളായി 3 തവണ എഴുതി ബന്ധപ്പെട്ട വ്യക്തിയിൽ തൂക്കുന്നതാണ് ഈ വിവരണം."
+          ],
+          "en": [
+            "The account specifies seventeen name inscriptions on a leaf of a non-fruiting palm, before sunrise on Saturday.",
+            "It adds the quoted passage of Quran 90:11–13 three times in separated letters and describes attaching it to the person."
+          ]
+        }
+      }
+    ]
   },
   "HNK-MHC-015": {
     "title": {
-      "ml": "സ്വപ്നത്തിൽ ആവശ്യം കാണാനുള്ള രീതി",
+      "ml": "സ്വപ്നത്തിൽ ആവശ്യം കാണാൻ",
       "en": "Dream-vision method"
     },
     "benefit": {
@@ -312,11 +586,19 @@
         "Say the request below, specifying the matter, then sleep."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "spoken_request": {
+      "arabic": "توكلوا يا خدام هذا الاسم الشريف وأروني كذا وكذا",
+      "translation": {
+        "ml": "ഈ മഹത്തായ നാമത്തിന്റെ സേവകരേ, ചുമതല ഏറ്റെടുക്കുകയും ഇന്ന കാര്യം എനിക്ക് കാണിച്ചുതരുകയും ചെയ്യുക. “ഇന്ന കാര്യം” എന്നിടത്ത് ആവശ്യപ്പെടുന്ന കാര്യം വ്യക്തമാക്കുന്നു.",
+        "en": "Servants of this noble name, undertake the task and show me such-and-such. Specify the requested matter in place of “such-and-such”."
+      },
+      "source_entry": "arabic-single-page-02"
+    }
   },
   "HNK-MHC-016": {
     "title": {
-      "ml": "വിഷമത്തിനും കടത്തിനുമുള്ള രാത്രിവായന",
+      "ml": "വിഷമം മാറാനും കടം തീരാനും",
       "en": "Night reading for distress and debt"
     },
     "benefit": {
@@ -335,7 +617,7 @@
   },
   "HNK-MHC-017": {
     "title": {
-      "ml": "ബശ്കീലഖ്–ഖസ്മസ് സംയുക്ത വായന",
+      "ml": "ശത്രുവിൽനിന്നുള്ള സംരക്ഷണത്തിനായി",
       "en": "Bashkaylakh–Qazmaz paired reading"
     },
     "benefit": {
@@ -350,11 +632,45 @@
         "The account pairs Bashkaylakh and Qazmaz for frequent reading."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-017",
+        "title": {
+          "ml": "ഉപജീവനത്തിനുള്ള സഞ്ചിയും സംയുക്ത മന്ത്രവും",
+          "en": "Livelihood pouch and collective invocation"
+        },
+        "benefit": {
+          "ml": "സഞ്ചിയിലെ ദിർഹമുകൾ തീരാതിരിക്കും എന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of continued money in the pouch."
+        },
+        "steps": {
+          "ml": [
+            "പുതിയ നീല പട്ടുതുണിയിൽ പേരും ബന്ധപ്പെട്ട കളവും എഴുതുന്ന രീതിയാണ്.",
+            "കുറച്ച് ദിർഹമുകളുള്ള സഞ്ചിയിൽ വച്ച് boxthorn കൊമ്പിൽ തൂക്കുന്നു.",
+            "അസംസ്കൃത ambergris-വും കസ്തൂരിയും ധൂപമാക്കി വ്യാഴാഴ്ച രാത്രിയിൽ മുഴുവൻ ബർഹത്തിയ മന്ത്രം 100 തവണ വായിക്കുന്നു.",
+            "100 എന്നത് ഈ പേര് ഒറ്റയ്ക്കല്ല; 29-ാം കാർഡിലെ സംയുക്ത മന്ത്രത്തിനാണ്."
+          ],
+          "en": [
+            "The account writes the name and its square on new blue silk.",
+            "It places this in a pouch with some dirhams and hangs it on a boxthorn branch.",
+            "With raw ambergris and musk incense, it specifies one hundred readings of the full collective invocation on Thursday night.",
+            "The hundred readings belong to the collective formula in card 29, not this name alone."
+          ]
+        },
+        "figure": {
+          "image_path": "/figures/qazmaz-english-p129.png",
+          "caption": {
+            "ml": "ഈ സഞ്ചിരീതിയുമായി ബന്ധപ്പെട്ട 3 × 3 കളം.",
+            "en": "Three-by-three square associated with this pouch method."
+          }
+        }
+      }
+    ]
   },
   "HNK-MHC-018": {
     "title": {
-      "ml": "സ്ഥലത്തെ പ്രത്യക്ഷരൂപങ്ങളെക്കുറിച്ചുള്ള രീതി",
+      "ml": "സ്ഥലത്തെ പ്രത്യക്ഷരൂപങ്ങളെക്കുറിച്ചുള്ള പരാമർശം",
       "en": "Apparitions account"
     },
     "benefit": {
@@ -375,7 +691,7 @@
   },
   "HNK-MHC-019": {
     "title": {
-      "ml": "ദിവസേന അറുപത് വായന",
+      "ml": "അനിഷ്ടസംഭവങ്ങളിൽനിന്നുള്ള സംരക്ഷണത്തിനായി",
       "en": "Sixty daily readings"
     },
     "benefit": {
@@ -390,11 +706,32 @@
         "Read the name 60 times daily."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "source_entry": "english-extended-019",
+        "title": {
+          "ml": "സംരക്ഷണത്തിനുള്ള ആയത്തോടുകൂടിയ എഴുത്ത്",
+          "en": "Protective inscription with a verse"
+        },
+        "benefit": {
+          "ml": "മഹാമാരിയിലും ശത്രുക്കളിലും നിന്നുള്ള സംരക്ഷണമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of protection from epidemic disease and enemies."
+        },
+        "steps": {
+          "ml": [
+            "പേരും യൂനുസ് 10:92-ലെ ഉദ്ധരണിയും ചേർത്ത് എഴുതി കൈവശം വയ്ക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "The account writes the name with the quoted passage of Quran 10:92 and describes carrying it."
+          ]
+        }
+      }
+    ]
   },
   "HNK-MHC-020": {
     "title": {
-      "ml": "ചരിത്രപരമായ രക്തസ്രാവപരാമർശം",
+      "ml": "രക്തസ്രാവത്തെക്കുറിച്ചുള്ള ചരിത്രപരാമർശം",
       "en": "Historical bleeding account"
     },
     "benefit": {
@@ -415,7 +752,7 @@
   },
   "HNK-MHC-021": {
     "title": {
-      "ml": "കളവും രണ്ട് ആയത്തുകളും ചേർത്തുള്ള എഴുത്ത്",
+      "ml": "സിഹ്റ് മോചനത്തിനുള്ള എഴുത്തുപരാമർശം",
       "en": "Square inscription with two verses"
     },
     "benefit": {
@@ -434,11 +771,18 @@
         "The account describes carrying the inscription."
       ]
     },
-    "source_entry": "square-surrounding-text"
+    "source_entry": "square-surrounding-text",
+    "figure": {
+      "image_path": "/figures/kaydahula-manba-p72.svg",
+      "caption": {
+        "ml": "ഈ രീതിയുമായി ബന്ധപ്പെട്ട കളം — അറബി പാഠം.",
+        "en": "Square associated with this method — Arabic text."
+      }
+    }
   },
   "HNK-MHC-022": {
     "title": {
-      "ml": "ഉറുമ്പുകളെക്കുറിച്ചുള്ള എഴുത്തുരീതി",
+      "ml": "ഉറുമ്പുകൾ മാറിപ്പോകാൻ",
       "en": "Ants inscription account"
     },
     "benefit": {
@@ -459,7 +803,7 @@
   },
   "HNK-MHC-023": {
     "title": {
-      "ml": "കൊതുകുകളെക്കുറിച്ചുള്ള എഴുത്തുരീതി",
+      "ml": "കൊതുകുകൾ മാറിപ്പോകാൻ",
       "en": "Mosquito inscription account"
     },
     "benefit": {
@@ -489,15 +833,23 @@
     },
     "steps": {
       "ml": [
-        "شمخاهير, شمهاهير എന്നീ ഈ രീതിയിലെ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുക.",
-        "“ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിന്റെ ഒരു കിരണം എനിക്ക് കാണിക്കൂ” എന്ന അഭ്യർഥനയാണ് തുടർന്ന് വരുന്നത്."
+        "شمخاهير, شمهارير എന്നീ ഈ അറബി രീതിയിലെ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുന്ന പരാമർശമാണിത്.",
+        "താഴെയുള്ള അഭ്യർഥന പറയുക."
       ],
       "en": [
-        "Read the method’s pair شمخاهير and شمهاهير together one hundred times.",
-        "Then request: “Spirits, if you have arrived, show me a ray of your light.”"
+        "This Arabic account pairs شمخاهير and شمهارير for one hundred readings.",
+        "Say the request below."
       ]
     },
-    "source_entry": "english-paired-names-100-136"
+    "source_entry": "checked-account",
+    "spoken_request": {
+      "arabic": "إن كنتم حضرتم أيها الأرواح فأروني من نوركم",
+      "translation": {
+        "ml": "ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിൽനിന്ന് എനിക്ക് കാണിച്ചുതരൂ.",
+        "en": "Spirits, if you have arrived, show me some of your light."
+      },
+      "source_entry": "checked-account"
+    }
   },
   "HNK-MHC-025": {
     "title": {
@@ -522,7 +874,7 @@
   },
   "HNK-MHC-026": {
     "title": {
-      "ml": "തുടർച്ചയായ വായന",
+      "ml": "ആത്മശുദ്ധിയും വ്യക്തതയും ലക്ഷ്യമാക്കി",
       "en": "Continuous reading"
     },
     "benefit": {
@@ -543,7 +895,7 @@
   },
   "HNK-MHC-027": {
     "title": {
-      "ml": "ആവശ്യം ചോദിച്ച് എൺപത് വായന",
+      "ml": "ആവശ്യം നിറവേറാൻ",
       "en": "Eighty readings with a need petition"
     },
     "benefit": {
@@ -552,19 +904,64 @@
     },
     "steps": {
       "ml": [
-        "ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുക എന്നതാണ് അറബി വിവരണം.",
-        "ഇശായ്ക്കുശേഷം സുജൂദിൽ 80 തവണ എന്ന വേറിട്ട രീതിയും ഉണ്ട്; ഇവ രണ്ടു വ്യത്യസ്ത സമയവിവരണങ്ങളാണ്."
+        "ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുക എന്നതാണ് അറബി വിവരണം."
       ],
       "en": [
-        "The Arabic account specifies eighty readings in prostration at the night prayer, followed by asking God for the need.",
-        "A separate account specifies eighty in prostration after the night prayer; these are distinct timing descriptions."
+        "The Arabic account specifies eighty readings in prostration at the night prayer, followed by asking God for the need."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "source_entry": "english-after-isha-80-138",
+        "title": {
+          "ml": "ആവശ്യം നിറവേറാൻ — ഇശായ്ക്കുശേഷമുള്ള രീതി",
+          "en": "Fulfilment of a need — after the night prayer"
+        },
+        "benefit": {
+          "ml": "ആവശ്യം നിറവേറുക.",
+          "en": "Fulfilment of a need."
+        },
+        "steps": {
+          "ml": [
+            "ഇശാ നമസ്കാരത്തിനുശേഷം സുജൂദിൽ പേര് 80 തവണ വായിക്കുക.",
+            "അല്ലാഹുവിനോട് സ്വന്തം ആവശ്യം ചോദിക്കുക."
+          ],
+          "en": [
+            "Read the name eighty times in prostration after the night prayer.",
+            "Ask God for the need."
+          ]
+        }
+      },
+      {
+        "source_entry": "english-fatiha-eleven-138",
+        "title": {
+          "ml": "കുട്ടിയുടെ ഭയവും കരച്ചിലും സംബന്ധിച്ച എഴുത്ത്",
+          "en": "Inscription account concerning a child’s fear and crying"
+        },
+        "benefit": {
+          "ml": "ഭയവും കരച്ചിലും മാറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of relief from fear and crying."
+        },
+        "steps": {
+          "ml": [
+            "ഒരു കളത്തിൽ പേര് എഴുതുന്നതാണ് പരാമർശം.",
+            "അതോടൊപ്പം അൽ-ഫാതിഹ 11 തവണ എഴുതുന്നു. 11 എന്നത് ഫാതിഹയുടെ എഴുത്തിന്റെ എണ്ണമാണ്.",
+            "എഴുത്ത് കുട്ടിയിൽ തൂക്കുന്ന രീതിയാണ്."
+          ],
+          "en": [
+            "The account writes the name in a square.",
+            "It adds eleven written copies of al-Fatihah. Eleven counts written copies of the surah.",
+            "It describes attaching the inscription to the child."
+          ]
+        },
+        "verse_group": "1:1-7"
+      }
+    ]
   },
   "HNK-MHC-028": {
     "title": {
-      "ml": "യാസീനോടൊപ്പമുള്ള സംയുക്ത രീതി",
+      "ml": "ആവശ്യം നിറവേറാൻ — 28 നാമങ്ങളും ഒരുമിച്ച്",
       "en": "Collective reading with Ya Sin"
     },
     "benefit": {

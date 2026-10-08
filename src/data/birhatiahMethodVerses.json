@@ -1,0 +1,274 @@
+{
+  "1:1-7": {
+    "title": {
+      "ml": "സൂറത്ത് അൽ-ഫാതിഹ — പൂർണ്ണ പാഠം",
+      "en": "1:1-7"
+    },
+    "source_url": "https://quran.com/al-fatihah",
+    "review_status": "checked_against_quran_text",
+    "verses": [
+      {
+        "reference": "1:1",
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "translation": {
+          "ml": "പരമകാരുണികനും കരുണാനിധിയുമായ അല്ലാഹുവിന്റെ നാമത്തിൽ.",
+          "en": "In the name of Allah, the Most Merciful, the Compassionate."
+        }
+      },
+      {
+        "reference": "1:2",
+        "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        "translation": {
+          "ml": "സർവലോകങ്ങളുടെയും രക്ഷിതാവായ അല്ലാഹുവിനാണ് സ്തുതി.",
+          "en": "Praise belongs to Allah, Lord of all worlds."
+        }
+      },
+      {
+        "reference": "1:3",
+        "arabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "translation": {
+          "ml": "പരമകാരുണികനും കരുണാനിധിയുമായവൻ.",
+          "en": "The Most Merciful, the Compassionate."
+        }
+      },
+      {
+        "reference": "1:4",
+        "arabic": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+        "translation": {
+          "ml": "പ്രതിഫലദിനത്തിന്റെ അധിപൻ.",
+          "en": "Master of the day of recompense."
+        }
+      },
+      {
+        "reference": "1:5",
+        "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        "translation": {
+          "ml": "നിന്നെ മാത്രമാണ് ഞങ്ങൾ ആരാധിക്കുന്നത്; നിന്നോട് മാത്രമാണ് ഞങ്ങൾ സഹായം തേടുന്നത്.",
+          "en": "You alone we worship; from You alone we seek help."
+        }
+      },
+      {
+        "reference": "1:6",
+        "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+        "translation": {
+          "ml": "ഞങ്ങളെ നേരായ പാതയിൽ നയിക്കണേ.",
+          "en": "Lead us along the straight path."
+        }
+      },
+      {
+        "reference": "1:7",
+        "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+        "translation": {
+          "ml": "നീ അനുഗ്രഹിച്ചവരുടെ പാതയിൽ; കോപത്തിന് വിധേയരായവരുടെയും വഴിതെറ്റിയവരുടെയും പാതയിലല്ല.",
+          "en": "The path of those You favoured, without incurring anger or straying."
+        }
+      }
+    ]
+  },
+  "86:1-17": {
+    "title": {
+      "ml": "സൂറത്ത് അത്താരിഖ് — പൂർണ്ണ പാഠം",
+      "en": "86:1-17"
+    },
+    "source_url": "https://quran.com/at-tariq",
+    "review_status": "checked_against_quran_text",
+    "verses": [
+      {
+        "reference": "86:1",
+        "arabic": "وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+        "translation": {
+          "ml": "ആകാശവും രാത്രിയിൽ വരുന്നതും സത്യം.",
+          "en": "By the sky and the night visitor."
+        }
+      },
+      {
+        "reference": "86:2",
+        "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ",
+        "translation": {
+          "ml": "രാത്രിയിൽ വരുന്നത് എന്താണെന്ന് നിനക്കറിയാമോ?",
+          "en": "What lets you know what the night visitor is?"
+        }
+      },
+      {
+        "reference": "86:3",
+        "arabic": "ٱلنَّجْمُ ٱلثَّاقِبُ",
+        "translation": {
+          "ml": "തുളച്ചുകയറുന്ന പ്രകാശമുള്ള നക്ഷത്രം.",
+          "en": "The star with piercing light."
+        }
+      },
+      {
+        "reference": "86:4",
+        "arabic": "إِن كُلُّ نَفْسٍۢ لَّمَّا عَلَيْهَا حَافِظٌۭ",
+        "translation": {
+          "ml": "ഓരോ ആത്മാവിനും അതിന്മേൽ ഒരു കാവൽക്കാരനുണ്ട്.",
+          "en": "Every soul has a keeper over it."
+        }
+      },
+      {
+        "reference": "86:5",
+        "arabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ مِمَّ خُلِقَ",
+        "translation": {
+          "ml": "താൻ എന്തിൽനിന്നാണ് സൃഷ്ടിക്കപ്പെട്ടതെന്ന് മനുഷ്യൻ നോക്കട്ടെ.",
+          "en": "Let the human consider their origin."
+        }
+      },
+      {
+        "reference": "86:6",
+        "arabic": "خُلِقَ مِن مَّآءٍۢ دَافِقٍۢ",
+        "translation": {
+          "ml": "കുതിച്ചൊഴുകുന്ന ഒരു ദ്രാവകത്തിൽനിന്നാണ് അവൻ സൃഷ്ടിക്കപ്പെട്ടത്.",
+          "en": "Created from a gushing fluid,"
+        }
+      },
+      {
+        "reference": "86:7",
+        "arabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
+        "translation": {
+          "ml": "നട്ടെല്ലിനും വാരിയെല്ലുകൾക്കുമിടയിൽനിന്ന് പുറപ്പെടുന്നത്.",
+          "en": "emerging from between the backbone and ribs."
+        }
+      },
+      {
+        "reference": "86:8",
+        "arabic": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌۭ",
+        "translation": {
+          "ml": "അവനെ തിരിച്ചുകൊണ്ടുവരാൻ അവന് തീർച്ചയായും കഴിവുണ്ട്.",
+          "en": "He certainly has power to bring him back."
+        }
+      },
+      {
+        "reference": "86:9",
+        "arabic": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ",
+        "translation": {
+          "ml": "രഹസ്യങ്ങൾ പരിശോധിക്കപ്പെടുന്ന ദിവസം.",
+          "en": "On the day hidden things are examined,"
+        }
+      },
+      {
+        "reference": "86:10",
+        "arabic": "فَمَا لَهُۥ مِن قُوَّةٍۢ وَلَا نَاصِرٍۢ",
+        "translation": {
+          "ml": "അപ്പോൾ അവന് ശക്തിയോ സഹായിയോ ഉണ്ടായിരിക്കില്ല.",
+          "en": "he has neither strength nor a helper."
+        }
+      },
+      {
+        "reference": "86:11",
+        "arabic": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ",
+        "translation": {
+          "ml": "ആവർത്തിച്ച് മടക്കിത്തരുന്ന ആകാശം സത്യം.",
+          "en": "By the sky that returns,"
+        }
+      },
+      {
+        "reference": "86:12",
+        "arabic": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ",
+        "translation": {
+          "ml": "പിളരുന്ന ഭൂമി സത്യം.",
+          "en": "and the earth that splits open,"
+        }
+      },
+      {
+        "reference": "86:13",
+        "arabic": "إِنَّهُۥ لَقَوْلٌۭ فَصْلٌۭ",
+        "translation": {
+          "ml": "തീർച്ചയായും ഇത് തീർപ്പുകൽപ്പിക്കുന്ന വചനമാണ്.",
+          "en": "this is a decisive utterance,"
+        }
+      },
+      {
+        "reference": "86:14",
+        "arabic": "وَمَا هُوَ بِٱلْهَزْلِ",
+        "translation": {
+          "ml": "ഇത് തമാശയല്ല.",
+          "en": "and is no jest."
+        }
+      },
+      {
+        "reference": "86:15",
+        "arabic": "إِنَّهُمْ يَكِيدُونَ كَيْدًۭا",
+        "translation": {
+          "ml": "അവർ ഒരു തന്ത്രം മെനയുന്നു.",
+          "en": "They devise a scheme,"
+        }
+      },
+      {
+        "reference": "86:16",
+        "arabic": "وَأَكِيدُ كَيْدًۭا",
+        "translation": {
+          "ml": "ഞാനും ഒരു തന്ത്രം ഒരുക്കുന്നു.",
+          "en": "and I devise a plan."
+        }
+      },
+      {
+        "reference": "86:17",
+        "arabic": "فَمَهِّلِ ٱلْكَـٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا",
+        "translation": {
+          "ml": "അതിനാൽ സത്യനിഷേധികൾക്ക് അവധി നൽകുക; കുറച്ചുകാലം അവരെ വിട്ടേക്കുക.",
+          "en": "Allow the disbelievers a respite, a short delay."
+        }
+      }
+    ]
+  },
+  "59:21-24": {
+    "title": {
+      "ml": "അൽ-ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ",
+      "en": "59:21-24"
+    },
+    "source_url": "https://quran.com/al-hashr/21-24",
+    "review_status": "checked_against_quran_text",
+    "verses": [
+      {
+        "reference": "59:21",
+        "arabic": "لَوْ أَنزَلْنَا هَـٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍۢ لَّرَأَيْتَهُۥ خَـٰشِعًۭا مُّتَصَدِّعًۭا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَـٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
+        "translation": {
+          "ml": "ഈ ഖുർആൻ ഒരു മലയിൽ ഇറക്കിയിരുന്നെങ്കിൽ, അല്ലാഹുവിനെ ഭയന്ന് അത് വിനയപ്പെടുകയും പിളരുകയും ചെയ്യുന്നതായി നീ കാണുമായിരുന്നു. മനുഷ്യർ ചിന്തിക്കാനായി നാം ഈ ഉപമകൾ നൽകുന്നു.",
+          "en": "Had this Quran descended on a mountain, you would have seen it humbled and split in fear of Allah. These comparisons invite people to reflect."
+        }
+      },
+      {
+        "reference": "59:22",
+        "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ۖ هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ",
+        "translation": {
+          "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധ്യനില്ല. അദൃശ്യവും ദൃശ്യവും അറിയുന്നവൻ. അവൻ പരമകാരുണികനും കരുണാനിധിയുമാണ്.",
+          "en": "He is Allah, the only deity, knowing the unseen and the visible, the Most Merciful and Compassionate."
+        }
+      },
+      {
+        "reference": "59:23",
+        "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധ്യനില്ല. രാജാധിപൻ, പരിശുദ്ധൻ, സമാധാനത്തിന്റെ ഉറവിടം, സുരക്ഷ നൽകുന്നവൻ, കാവൽനിൽക്കുന്നവൻ, മഹാശക്തൻ, സർവാധിപൻ, മഹത്വമുള്ളവൻ. അവർ പങ്കുചേർക്കുന്നതിൽനിന്ന് അല്ലാഹു പരിശുദ്ധനാണ്.",
+          "en": "He is Allah, the only deity: sovereign, holy, source of peace, giver of security, guardian, mighty, supreme and majestic. He is exalted above their associations."
+        }
+      },
+      {
+        "reference": "59:24",
+        "arabic": "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        "translation": {
+          "ml": "അവനാണ് അല്ലാഹു: സൃഷ്ടിക്കുന്നവൻ, ഉണ്ടാക്കുന്നവൻ, രൂപം നൽകുന്നവൻ. ഉത്തമനാമങ്ങൾ അവനുള്ളതാണ്. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനെ മഹത്വപ്പെടുത്തുന്നു. അവൻ മഹാശക്തനും യുക്തിമാനുമാണ്.",
+          "en": "He is Allah, creator, originator and giver of form. The finest names belong to Him. Heaven and earth glorify Him, the mighty and wise."
+        }
+      }
+    ]
+  },
+  "3:37": {
+    "title": {
+      "ml": "ആലു ഇംറാൻ 3:37 — പൂർണ്ണ ആയത്ത്",
+      "en": "Ali Imran 3:37 — complete verse"
+    },
+    "source_url": "https://quran.com/ali-imran/37",
+    "review_status": "checked_against_quran_text",
+    "verses": [
+      {
+        "reference": "3:37",
+        "arabic": "فَتَقَبَّلَهَا رَبُّهَا بِقَبُولٍ حَسَنٖ وَأَنۢبَتَهَا نَبَاتًا حَسَنٗا وَكَفَّلَهَا زَكَرِيَّاۖ كُلَّمَا دَخَلَ عَلَيۡهَا زَكَرِيَّا ٱلۡمِحۡرَابَ وَجَدَ عِندَهَا رِزۡقٗاۖ قَالَ يَٰمَرۡيَمُ أَنَّىٰ لَكِ هَٰذَاۖ قَالَتۡ هُوَ مِنۡ عِندِ ٱللَّهِۖ إِنَّ ٱللَّهَ يَرۡزُقُ مَن يَشَآءُ بِغَيۡرِ حِسَابٍ",
+        "translation": {
+          "ml": "അവളുടെ രക്ഷിതാവ് അവളെ നല്ല സ്വീകരണത്തോടെ സ്വീകരിച്ചു; നല്ല രീതിയിൽ വളർത്തി; സകരിയ്യായെ അവളുടെ സംരക്ഷണം ഏൽപ്പിച്ചു. സകരിയ്യാ അവളുടെ അടുത്ത് മിഹ്റാബിൽ പ്രവേശിക്കുമ്പോഴെല്ലാം അവിടെ ഉപജീവനസാധനങ്ങൾ കണ്ടെത്തി. അദ്ദേഹം ചോദിച്ചു: മർയമേ, ഇത് നിനക്ക് എവിടെനിന്നാണ്? അവൾ പറഞ്ഞു: ഇത് അല്ലാഹുവിങ്കൽനിന്നാണ്. അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നവർക്ക് കണക്കില്ലാതെ ഉപജീവനം നൽകുന്നു.",
+          "en": "Her Lord accepted her well, nurtured her well and entrusted her to Zakariyya. Whenever he entered her sanctuary, he found provisions. He asked Maryam their origin. She replied that they came from Allah, who provides without measure to whom He wills."
+        }
+      }
+    ]
+  }
+}

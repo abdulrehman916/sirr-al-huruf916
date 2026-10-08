@@ -68,6 +68,8 @@ export default function SectionCNames() {
     );
   }, [cards, query]);
 
+  const showCollective = !query.trim() || ["29", "029", "ബർഹത്തിയ", "ബ്രഹത്യ", "മന്ത്രം", "സംയുക്ത", "برهت", "birhat", "mantra", "collective"].some(term => query.toLowerCase().includes(term));
+
   if (loading) {
     return (
       <div className="flex justify-center py-12">
@@ -113,7 +115,7 @@ export default function SectionCNames() {
 
       <div className="flex items-center justify-between flex-wrap gap-2">
         <p className="font-malayalam text-[12px] font-semibold" style={{ color: "rgba(255,255,255,0.30)" }}>
-          {filtered.length} / {cards.length} names
+          {language === "ml" ? `${filtered.length} / ${cards.length} ഇസ്മുകൾ · 29-ാം കാർഡ്: ബർഹത്തിയ മന്ത്രം` : `${filtered.length} / ${cards.length} names · Card 29: Birhatiah invocation`}
         </p>
         <button
           onClick={() => { setQuery(""); setOpenId(null); }}
@@ -126,7 +128,7 @@ export default function SectionCNames() {
 
       <div className="space-y-2">
         <AnimatePresence mode="popLayout">
-          {filtered.length === 0 ? (
+          {filtered.length === 0 && !showCollective ? (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-16 space-y-3">
               <p className="font-amiri text-lg" style={{ color: P.dim }}>لا توجد نتائج</p>
               <p className="font-inter text-sm" style={{ color: "rgba(255,255,255,0.22)" }}>Try another search</p>
@@ -209,7 +211,7 @@ export default function SectionCNames() {
           )}
         </AnimatePresence>
       </div>
-      <BirhatiahCollectiveCard cards={cards} />
+      {showCollective && <BirhatiahCollectiveCard cards={cards} />}
     </div>
   );
 }
