@@ -98,3 +98,28 @@ for (let number = 1; number <= 28; number++) {
   }
 }
 console.log('Additional Arabic sources: per-name account isolation, collective access in all 28 cards, bilingual text, original Arabic and full source-page images passed.');
+
+const fullChapter = JSON.parse(fs.readFileSync('src/data/birhatiahFullSourceChapter.json', 'utf8'));
+const research = JSON.parse(fs.readFileSync('src/data/birhatiahResearchContext.json', 'utf8'));
+assert.deepEqual(fullChapter.pages.map(page => page.printed_page), Array.from({ length: 24 }, (_, index) => index + 67));
+assert.equal(Object.keys(fullChapter.name_pages).length, 28);
+assert.equal(invocationSources.transcription.length, 10);
+for (const page of fullChapter.pages) assert.ok(fs.existsSync(`public${page.image_path}`));
+for (let number = 1; number <= 28; number++) {
+  const nameId = `HNK-MHC-${String(number).padStart(3, '0')}`;
+  const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${nameId}.json`, 'utf8'));
+  for (const language of ['ml', 'en']) {
+    const html = render(chapter, language);
+    for (const entry of invocationSources.transcription) {
+      assert.ok(html.includes(escape(entry.arabic)), `${nameId}: missing transcription ${entry.id}`);
+      assert.ok(html.includes(escape(entry.translation[language])));
+    }
+    for (const page of fullChapter.pages) assert.ok(html.includes(escape(page.title[language])));
+    const selected = fullChapter.pages.find(page => page.printed_page === fullChapter.name_pages[nameId][0]);
+    assert.ok(html.includes(selected.image_path));
+    for (const entry of research.entries) {
+      assert.equal(html.includes(escape(entry.translation[language])), !entry.name_ids.length || entry.name_ids.includes(nameId), `${nameId}: incorrect research targeting`);
+    }
+  }
+}
+console.log('Full source chapter: all 24 pages, 28 name/page mappings, 10 bilingual Arabic transcription blocks and isolated author interpretations passed.');

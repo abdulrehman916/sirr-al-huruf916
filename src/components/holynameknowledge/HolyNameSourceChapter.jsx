@@ -6,6 +6,8 @@ import BirhatiahSharedBookAccounts from './BirhatiahSharedBookAccounts';
 import BirhatiahOutsideVariants from './BirhatiahOutsideVariants';
 import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
 import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources';
+import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
+import BirhatiahResearchContext from './BirhatiahResearchContext';
 
 const originalLetters = text => String(text || "").replace(/[\u064B-\u065F\u0670\u0640\s،؛؟,.]/g, "");
 
@@ -84,6 +86,8 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       <BirhatiahOutsideVariants nameId={nameId} />
       <BirhatiahArabicSinglePage nameId={nameId} />
       <BirhatiahArabicInvocationSources />
+      <BirhatiahFullSourceChapter nameId={nameId} />
+      <BirhatiahResearchContext nameId={nameId} />
       <details className={`${cls} text-xs text-white/50 border-t border-white/10 pt-3`}>
         <summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary>
         <p className="pt-2">{chapter.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {chapter.printed_page}</p>

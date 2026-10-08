@@ -15,8 +15,8 @@
         "en": "Opening formulas and different repetition counts"
       },
       "translation": {
-        "en": "The three-page document places 313 repetitions by the short opening and 45 by the next line. Its main list marks names twice and includes additional or alternative spellings such as the extra forms around names 25–28. These counts belong to the specific printed lines; they are not a universal prescription for every name. It gives no weekday or hour. The complete printed words and vowels can be read in the page images below; uncertain unfamiliar strings have not been reconstructed.",
-        "ml": "മൂന്നുപേജുള്ള രേഖയുടെ ചെറുതുടക്കത്തിനു 313 തവണയും അടുത്ത വരിക്ക് 45 തവണയും അടയാളമുണ്ട്. പ്രധാന പട്ടികയിൽ പേരുകൾ രണ്ടുതവണ വീതം അടയാളപ്പെടുത്തുന്നു; 25–28 പേരുകളുടെ ഭാഗത്തും മറ്റും അധികരൂപങ്ങളും പാഠഭേദങ്ങളും ഉണ്ട്. ഈ സംഖ്യകൾ അതത് അച്ചടിച്ച വരിക്കാണ്; എല്ലാ പേരുകൾക്കുമുള്ള പൊതുനിർദേശമല്ല. ആഴ്ചദിവസമോ മണിക്കൂറോ നൽകിയിട്ടില്ല. മുഴുവൻ അച്ചടിച്ച വാക്കുകളും ഹറകത്തുകളും താഴെയുള്ള പേജുചിത്രങ്ങളിൽ വായിക്കാം; ഉറപ്പിക്കാത്ത അപരിചിത പദങ്ങൾ ഊഹിച്ചുപകർത്തിയിട്ടില്ല."
+        "en": "The three-page document places 313 repetitions by the short opening and 45 by the next line. Its main list marks most names twice (Karir lacks its own following marker) and includes additional or alternative spellings such as the extra forms around names 25–28. These counts belong to the specific printed lines; they are not a universal prescription for every name. It gives no weekday or hour. The complete printed words and vowels can be read in the page images below; uncertain unfamiliar strings have not been reconstructed.",
+        "ml": "മൂന്നുപേജുള്ള രേഖയുടെ ചെറുതുടക്കത്തിനു 313 തവണയും അടുത്ത വരിക്ക് 45 തവണയും അടയാളമുണ്ട്. പ്രധാന പട്ടികയിൽ മിക്ക പേരുകളും രണ്ടുതവണ അടയാളപ്പെടുത്തുന്നു (കരീറിനു സ്വന്തമായി പിന്നാലെ അടയാളമില്ല); 25–28 പേരുകളുടെ ഭാഗത്തും മറ്റും അധികരൂപങ്ങളും പാഠഭേദങ്ങളും ഉണ്ട്. ഈ സംഖ്യകൾ അതത് അച്ചടിച്ച വരിക്കാണ്; എല്ലാ പേരുകൾക്കുമുള്ള പൊതുനിർദേശമല്ല. ആഴ്ചദിവസമോ മണിക്കൂറോ നൽകിയിട്ടില്ല. മുഴുവൻ അച്ചടിച്ച വാക്കുകളും ഹറകത്തുകളും താഴെയുള്ള പേജുചിത്രങ്ങളിൽ വായിക്കാം; ഉറപ്പിക്കാത്ത അപരിചിത പദങ്ങൾ ഊഹിച്ചുപകർത്തിയിട്ടില്ല."
       }
     },
     {
@@ -111,5 +111,141 @@
       "reference": "79:13–14",
       "url": "https://quran.ksu.edu.sa/tafseer/katheer/sura79-aya13.html"
     }
-  ]
+  ],
+  "transcription": [
+    {
+      "id": "arabic-full-01",
+      "pdf_page": 1,
+      "title": {
+        "ml": "ആദ്യത്തെ രണ്ടു വരികൾ",
+        "en": "The two opening lines"
+      },
+      "arabic": "بَطَدٌ زَهَجٌ وَاحٌ — 313 مرة\nإيهٍ بِقْطِرْيَالٍ جَلِيشٍ دَمْيَالٍ هَطَطُوشٍ وَهِيمٍ زَنُقَطَاءٍ حَدَايِهٍ طَفْيَالْ — 45 مرة",
+      "translation": {
+        "en": "The first printed formula is marked 313 times, the second 45 times. These unfamiliar formula words are preserved as source forms; no semantic translation is established here.",
+        "ml": "ആദ്യ അച്ചടിച്ച സൂത്രവാക്യത്തിന് 313 തവണ; രണ്ടാമത്തേതിന് 45 തവണ. അപരിചിത സൂത്രപദങ്ങൾ സ്രോതസ്സിലെ രൂപങ്ങളായി നിലനിർത്തുന്നു; അവയ്ക്ക് ഇവിടെ ഉറപ്പിച്ച പദാർഥം നൽകിയിട്ടില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-02",
+      "pdf_page": 1,
+      "title": {
+        "ml": "ആഹ്വാനവും അച്ചടിച്ച നാമപ്പട്ടികയും",
+        "en": "Invocation and printed name list"
+      },
+      "arabic": "أقسمت عليكم أيتها الأرواح الروحانية العلوية والسفلية وخدام العهد الكبير أن تجيبوا دعوتى وتقضوا حاجتى بعزةِ بَرْهتَيةٍ 2 كَرِيرٍ تَتْلِيهٍ 2 طُورَانٍ 2 مَزْجَلٍ 2 بَزْجَلٍ 2 تَرْقَبٍ 2 بَرْهَشٍ 2 قَلْمَشٍ 2 خَوْطِيَرٍ 2 قَلْنَهُودٍ 2 بَرْشَانٍ 2 كَظَهِيرٍ 2 نَمُوَشَلَخٍ 2 بَرْهَيُولَا 2 بَشْكَيْلَخٍ 2 قَزْمَزٍ 2 أنْقَلَلِيطٍ 2 قِبْرَاتٍ 2 غَيَاهَا 2 كَيْدَهُولَا 2 شَمْخَاهِرٍ 2 شَمْخَاهِيرٍ 2 شَمْهَاهِرٍ 2 شَمْهَاهِيرٍ 2 بِكطهُونيهٍ 2 بِكَهْطَهْطَهُونيِهٍ 2 بِشَارِشٍ 2 شَارِشٍ 2 طُونشٍ 2 طُونْيَاشٍ 2 شَمْخَاهُ بَارُوخٍ 2 يَارُوخٍ 2 تَبْشِيمٍ 2 شِيِمٍ 2 بِكَهْطَفٍ 2 بِلطشَقْشَقْوِيلٍ 2 أمَوِيلٍ 2 إِيلٍ 2 مَرْتينٍ 2 اللهم بِكَهْكَهيجٍ 2",
+      "translation": {
+        "en": "The speaker adjures the celestial and terrestrial spirits and servants of the great covenant to answer the invocation and fulfil the need, by the strength of the printed names. This edition expands and varies the list. Its printed 2-markers are retained; Karir does not have a separate 2-marker immediately after it. Qalmash and Anqallalit are retained as this source’s forms, rather than silently changed to the canonical spellings. Extra words are not assigned an invented meaning.",
+        "ml": "ആകാശ–ഭൗമ രൂഹുകളെയും വലിയ ഉടമ്പടിയുടെ സേവകരെയും അഭിസംബോധന ചെയ്ത്, അച്ചടിച്ച നാമങ്ങളുടെ ശക്തിയാൽ ആഹ്വാനത്തിനു മറുപടി നൽകാനും ആവശ്യം നിറവേറ്റാനും ആവശ്യപ്പെടുന്നു. ഈ പതിപ്പിൽ പട്ടിക വിപുലമായതും പാഠഭേദമുള്ളതുമാണ്. അച്ചടിച്ച 2 അടയാളങ്ങൾ നിലനിർത്തുന്നു; കരീറിന് തൊട്ടുപിന്നിൽ സ്വന്തമായി 2 അടയാളമില്ല. ഖൽമശ്, അൻഖല്ലലീത് എന്നീ ഈ സ്രോതസ്സിലെ രൂപങ്ങൾ പതിവുരൂപങ്ങളാക്കി മാറ്റിയിട്ടില്ല. അധികപദങ്ങൾക്ക് ഊഹിച്ച അർഥം നൽകിയിട്ടില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-03",
+      "pdf_page": 1,
+      "title": {
+        "ml": "തുടരുന്ന പദശൃംഖല",
+        "en": "Continuing formula words"
+      },
+      "arabic": "كَجْكَلَمٍ يَقَطْشٍ جُلَدَا مَهْجَمَا هَشْلِيخٍ تَمْلِيخٍ هَشْلَمُوخٍ وَرُودَنِيهٍ مَهْفِياجٍ بعزتك إلا ما أخذت سمعهم وأبصارهم.",
+      "translation": {
+        "en": "After the additional formula words, the speaker asks, by divine might, for taking their hearing and sight. The unfamiliar words are preserved without claiming a verified Syriac, Hebrew or Arabic lexical meaning.",
+        "ml": "അധിക സൂത്രപദങ്ങൾക്കു ശേഷം ദൈവികശക്തിയാൽ അവരുടെ കേൾവിയും കാഴ്ചയും പിടിച്ചെടുക്കണമെന്ന അഭ്യർഥന വരുന്നു. അപരിചിത പദങ്ങൾക്ക് സ്ഥിരീകരിച്ച സുറിയാനി, ഹീബ്രു, അറബി നിഘണ്ടുവർഥം അവകാശപ്പെടുന്നില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-04",
+      "pdf_page": 1,
+      "title": {
+        "ml": "മലക്കുകളുടെയും മറ്റുള്ളവരുടെയും പേരുകൾ",
+        "en": "Names of angels and other addressed figures"
+      },
+      "arabic": "الانقياد يا رُوقِيَائِيلْ وأنت يا جِبريلْ وأنت يا سَمْسَمَائِيلْ وأنت يا مِيكَائِيلْ وأنت يا صَرْفَيَائِيلْ وأنت يا عَنيَائِيل وأنت يا كَسْفَيَائِيل. أجب يا مَذْهَبْ وأنت يا مُرَّة وأنت يا أَحمر وأنت يا بَرْقان وأنت يا شَمْهَرُوش وأنت يا زوبعة وأنت يا ميمون الانقياد فيما أمرتكم به.",
+      "translation": {
+        "en": "The passage addresses the named figures, calls them to answer and asks for compliance with what the speaker has commanded. The printed names are retained as this edition’s list; they are not treated as additional members of the 28-name sequence.",
+        "ml": "അച്ചടിച്ച പേരുകളിൽ വരുന്നവരെ അഭിസംബോധന ചെയ്ത് മറുപടി നൽകാനും പറഞ്ഞ കാര്യത്തിൽ അനുസരിക്കാനും ആവശ്യപ്പെടുന്നു. ഈ പതിപ്പിലെ പട്ടികയായി പേരുകൾ നിലനിർത്തുന്നു; 28 നാമങ്ങളുടെ പട്ടികയിലെ പുതിയ അംഗങ്ങളായി ചേർക്കുന്നില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-05",
+      "pdf_page": 1,
+      "title": {
+        "ml": "ഉടമ്പടിയും കേൾവിയും കാഴ്ചയും",
+        "en": "Covenant, hearing and sight"
+      },
+      "arabic": "بعزة العزيز المعتز في عزِّ عزِّه أوفوا بعهد الله إذا عاهدتم ولا تنقضوا الأيمان بعد توكيدها وقد جعلت الله عليكم كفيلا. وبحق الاسم الذى ليس كمثله شيء وهو السميع البصير. احضروا واسمعوا وأطيعوا وكونوا عونا لى في جميع ما",
+      "translation": {
+        "en": "The speaker invokes divine might, quotes covenant wording, then invokes the One without likeness, who hears and sees, and asks the addressed figures to attend, hear, obey and help. The sentence continues on page 2. The printed covenant wording has “ja‘alta” in the singular; Quran 16:91 has “ja‘altum” in the plural. The source wording is retained here and is not presented as the exact canonical Quran text. The next phrase corresponds to Quran 42:11.",
+        "ml": "ദൈവികശക്തിയെ ചൊല്ലി ഉടമ്പടിവാക്യം ഉദ്ധരിക്കുന്നു. തുടർന്ന് തുല്യനില്ലാത്ത, കേൾക്കുന്നവനും കാണുന്നവനുമായവനെ ചൊല്ലി അഭിസംബോധന ചെയ്തവർ ഹാജരാകാനും കേൾക്കാനും അനുസരിക്കാനും സഹായിക്കാനും ആവശ്യപ്പെടുന്നു. വാക്യം രണ്ടാം പേജിൽ തുടരുന്നു. അച്ചടിയിലെ ഉടമ്പടിവാക്യത്തിൽ ഏകവചനമായ “ജഅൽത” ആണ്; ഖുർആൻ 16:91-ൽ ബഹുവചനമായ “ജഅൽതും” ആണ്. ഇവിടെ സ്രോതസ്സിലെ വാചകം തന്നെയാണ്; ഖുർആനിന്റെ കൃത്യമായ മൂലപാഠമായി അവതരിപ്പിക്കുന്നില്ല. അടുത്ത വാക്യഭാഗം ഖുർആൻ 42:11-നോട് ബന്ധപ്പെടുന്നു."
+      }
+    },
+    {
+      "id": "arabic-full-06",
+      "pdf_page": 2,
+      "title": {
+        "ml": "ഉപജീവനവും ദോഷനിവാരണവും",
+        "en": "Livelihood and removal of harm"
+      },
+      "arabic": "أمرتكم وما آمركم به وتوكلوا بتسخير الروحانين لخدمتي وبجلب جميع الأرزاق والمنافع والخيرات والمسرات وبدفع جميع المضرات والهموم عنى وعن من تحيط به شفعتي بحق الاسم العظيم الأعظم الذى أوله آلْ وآخره آلْ هو آلُ شَلْعٍ يَشْلَعٍ كَلَشٍ كَذَالَهِمٍ جَمْعُهُمْ مَكْلَشٍ شَكَلٍ سُبُّوحٌ قُدُّوسٌ رَبُّ الملائكةِ والروحِ بْيُو يوبِيَةٍ وَهٍ بِتَكَهٍ بَيْهَمٍ بِتِكَفَالٍ بِصَعِى كَعِى مِمْيَالٍ بِمُطِيْعَى لك يا آلْ جَلَّ زِرْيَالْ احترق من عصى أسماءك يا (الله) 3",
+      "translation": {
+        "en": "Continuing the preceding sentence, the speaker asks for service, all sustenance, benefits, good things and joys, and removal of harm and worries from the speaker and those encompassed by the speaker’s intercession. It invokes a great name said to begin and end with Al, inserts unfamiliar formula words, says “All-glorious, All-holy, Lord of the angels and the Spirit”, and calls for burning of whoever disobeys the addressed names. Allah is explicitly marked three times. The additional strings are preserved without a made-up translation.",
+        "ml": "മുൻ വാക്യം തുടർന്ന് സേവനം, എല്ലാ ഉപജീവനവും പ്രയോജനങ്ങളും നന്മകളും സന്തോഷങ്ങളും, തനിക്കും തന്റെ ശുപാർശയിൽ ഉൾപ്പെടുന്നവർക്കും ദോഷവും വിഷമവും മാറുക എന്നിവ അഭ്യർഥിക്കുന്നു. ആൽ എന്നതിൽ തുടങ്ങുകയും അവസാനിക്കുകയും ചെയ്യുന്നുവെന്ന് പറയുന്ന വലിയ നാമത്തോടൊപ്പം അപരിചിത സൂത്രപദങ്ങൾ വരുന്നു. “സുബ്ബൂഹ്, ഖുദ്ദൂസ്, മലക്കുകളുടെയും റൂഹിന്റെയും റബ്ബ്” എന്നു പറയുന്നു; അഭിസംബോധന ചെയ്ത നാമങ്ങൾ അനുസരിക്കാത്തവർ കത്തണമെന്ന ആഹ്വാനവും വരുന്നു. അല്ലാഹ് എന്നതിന് മൂന്നുതവണ എന്ന അടയാളമുണ്ട്. അധികപദശൃംഖലകൾക്ക് ഉണ്ടാക്കിയ അർഥം നൽകുന്നില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-07",
+      "pdf_page": 2,
+      "title": {
+        "ml": "കൂടുതൽ പദങ്ങളും ആവശ്യത്തിന്റെ പൂർത്തീകരണവും",
+        "en": "Further words and fulfilment of the need"
+      },
+      "arabic": "بِهُو بَهَا هِيَةٍ فَلْطَحْعَى هَيْكَن طِيَاشَفَهٍ كَيُورَثٍ غَيُورَشٍ هَلْطَهْطَوْهَثِنْ مَهْطَمْهَى لَيْهَفٍ طَهْيُو مَهُو هَفٍ لهُ يَا مَيْهَلُوخَا بحق هذه الأسماء التى أنتم بها مسجونين وبعزتها مسخرين وبقوتها طائعين ومجيبين بقسمها فليس لكم تصريف في أنفسكم حتى تقضوا حاجتي (المطلوب) وتحتاطوا بنواصى الأرواح الذين دعوتهم حتى يحضروا ويكاشفونى ويفعلوا ما آمرهم به بقوة الأسماء وقهرها العظيم المهلك على من لم يطعها الخضوع من قبل إنفاد الدعوة أو الكلمتين. (45 أو 70) مرة.",
+      "translation": {
+        "en": "After further formula words, the charge says that the addressed figures are bound, subjected and obedient through these names and their oath; asks that the stated need be fulfilled; asks for the summoned spirits to be brought to attend, disclose and perform the command; and invokes the names’ overpowering force. The printed ending gives 45 or 70 repetitions. No hour or weekday is supplied. The parenthesis identifies where the required matter is mentioned, rather than supplying an invented request.",
+        "ml": "കൂടുതൽ സൂത്രപദങ്ങൾക്കു ശേഷം ഈ നാമങ്ങളും സത്യവും വഴി അഭിസംബോധന ചെയ്തവർ ബന്ധിതരും അധീനരും അനുസരിക്കുന്നവരുമാണെന്ന് പറയുന്നു. പറഞ്ഞ ആവശ്യം നിറവേറ്റുക, ആഹ്വാനം ചെയ്ത രൂഹുകളെ ഹാജരാക്കുക, വെളിപ്പെടുത്തലും നിർദേശനിർവഹണവും നടത്തുക എന്നിവ ആവശ്യപ്പെടുന്നു; നാമങ്ങളുടെ കീഴടക്കുന്ന ശക്തിയെ ചൊല്ലുന്നു. അച്ചടിച്ച അവസാനം 45 അല്ലെങ്കിൽ 70 ആവർത്തനമാണ്. മണിക്കൂറോ ആഴ്ചദിവസമോ നൽകിയിട്ടില്ല. ആവശ്യവിഷയം പറയേണ്ട ഇടമാണ് ബ്രാക്കറ്റിലെ സൂചന; ഊഹിച്ച് പുതിയ അഭ്യർഥന ചേർത്തിട്ടില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-08",
+      "pdf_page": 2,
+      "title": {
+        "ml": "സജ്‌റിന്റെ ആരംഭം",
+        "en": "Opening of the Zajr"
+      },
+      "arabic": "زجر الزاجور (21) مرة\nبسم الله العَظيم الأعظم الحَيِّ القَيُومِ الرَّحْمَنِ الرَّحِيمِ رَبِّ جِبريلَ وميكَائيلَ وإسْرافِيلَ وعَزرائِيلَ إهٍ إهٍ إهٍ إهٍ أهيا شَرَاهْيَا اهْيَا هَاهْيَا نَمَاهْيَا أَدُونَايْ أصْبَاؤت آل شَدَايْ صِرْيَالْ صِدْيَالْ الرحمن على العرش استوى أجيبوا أيتها الملائكة الفلكية والروحانية والملوك الأرضية وافعلوا ما أمرتكم به الآن",
+      "translation": {
+        "en": "A separate Zajr is marked 21 repetitions. It begins in the name of God, the Great, the Greatest, the Living, the Sustainer, the Merciful, the Compassionate, Lord of the named angels, followed by additional formula words. It uses the throne phrase corresponding to Quran 20:5 and commands the celestial/spiritual angels and terrestrial kings to answer and perform the instruction immediately. “Now” is a word within the charge, not a prescribed clock time.",
+        "ml": "വേറിട്ട സജ്‌റിന് 21 ആവർത്തനമെന്നാണ് അടയാളം. മഹാനും ഏറ്റവും മഹാനും ജീവിച്ചിരിക്കുന്നവനും നിലനിർത്തുന്നവനും കരുണയുള്ളവനും പരമകാരുണികനും, പേരെടുത്ത മലക്കുകളുടെ റബ്ബുമായ അല്ലാഹുവിന്റെ നാമത്തിൽ ആരംഭിക്കുന്നു; തുടർന്ന് അധിക സൂത്രപദങ്ങൾ വരുന്നു. ഖുർആൻ 20:5-നോടു ബന്ധപ്പെടുന്ന അർശ് വാക്യം ഉപയോഗിച്ച് ആകാശ/രൂഹാനി മലക്കുകളോടും ഭൗമ രാജാക്കന്മാരോടും മറുപടി നൽകാനും ഉടൻ നിർദേശം നിർവഹിക്കാനും ആവശ്യപ്പെടുന്നു. “ഇപ്പോൾ” എന്നത് ആഹ്വാനത്തിലെ വാക്കാണ്; നിർദേശിച്ച ഘടികാരസമയമല്ല."
+      }
+    },
+    {
+      "id": "arabic-full-09",
+      "pdf_page": 2,
+      "title": {
+        "ml": "സജ്‌റിലെ അധിക നാമശൃംഖല",
+        "en": "Additional formula words in the Zajr"
+      },
+      "arabic": "بحق شَلْعَجْعَصٍ شَيْلَقُوشٍ طَطْلَيْكَشٍ طَطْلَيْكُوشٍ مَهْلَوْشَخٍ بَهْمَشٍ هَمْشٍ هَمْيُوشٍ شَيْهَشٍ شَنَاهِشٍ شَنَاهِيشٍ مَرْطَطَكَيُوشٍ مَرْطَطَلْكَيُوشٍ نَارَفَهْلَمٍ غَيُوثَا نَافُغْلَا ثَاوُثْ — ما أعظم هذا الكلام جل جلال رب العالمين أجب أيها السيد طِحِيطْمْغِيلَالْ ومَيْطَطْرُونْ وشَرْنَطَائِييل (دعوة) ما أعظم سلطان الله احترق من عصى",
+      "translation": {
+        "en": "The additional name strings are followed by praise of the greatness of these words and the majesty of the Lord of the worlds, a call to the named figures to answer, and an assertion of God’s great dominion. The final clause continues on page 3. The strings are source transcriptions, with no invented lexical meanings or replacements from another edition.",
+        "ml": "അധിക നാമശൃംഖലകൾക്കു ശേഷം ഈ വാക്കുകളുടെ മഹത്വവും ലോകരബ്ബിന്റെ മഹിമയും പറയുന്നു; പേരെടുത്തവർ മറുപടി നൽകണമെന്ന് ആവശ്യപ്പെടുകയും അല്ലാഹുവിന്റെ അധികാരത്തിന്റെ മഹത്വം പറയുകയും ചെയ്യുന്നു. അവസാന വാക്യം മൂന്നാം പേജിൽ തുടരുന്നു. പദശൃംഖലകൾ ഈ സ്രോതസ്സിൽനിന്നുള്ള പകർപ്പാണ്; ഊഹിച്ച പദാർഥങ്ങളോ വേറെ പതിപ്പിലെ പകരംപദങ്ങളോ നൽകിയിട്ടില്ല."
+      }
+    },
+    {
+      "id": "arabic-full-10",
+      "pdf_page": 3,
+      "title": {
+        "ml": "സജ്‌റിന്റെ സമാപനം",
+        "en": "Closing of the Zajr"
+      },
+      "arabic": "الله وأسمائه بِنَارِ اللهِ المُوقَدَةِ الَّتِي تَطَّلِعُ عَلَى الأَفْئِدَةِ إِنَّهَا عَلَيْهِمْ مُؤْصَدَةٌ فِي عَمَدٍ مُمَدَّدَةٍ اِصْعَقُوا بهم يا ملائكة الله الكرام بالرجيف والفزع الشديد والروع العظيم والعذاب الأليم فإنما هي زجرة واحدة فإذا هم بالساهرة.",
+      "translation": {
+        "en": "The preceding clause continues with God and His names, then invokes God’s kindled fire that reaches the hearts, closed upon them in extended columns. It calls on the honoured angels with shaking, great fear, dread and painful punishment, and closes with the single-cry/resurrection phrase. The fire passage echoes Quran 104:6–9 and the closing echoes 79:13–14. The source uses “bi-nari” in its sentence; this is preserved as invocation wording, not substituted for the canonical opening of the verse.",
+        "ml": "മുൻ വാക്യം അല്ലാഹുവും അവന്റെ നാമങ്ങളും എന്നതോടെ തുടർന്ന്, ഹൃദയങ്ങളിലേക്കെത്തുന്നതും നീണ്ട തൂണുകളിൽ അവരുടെമേൽ അടച്ചതുമായ അല്ലാഹുവിന്റെ ജ്വലിക്കുന്ന തീയെ ചൊല്ലുന്നു. വിറയൽ, കടുത്ത ഭയം, വലിയ സംഭ്രമം, വേദനാജനക ശിക്ഷ എന്നിവ പറഞ്ഞ് ആദരണീയ മലക്കുകളെ ആഹ്വാനം ചെയ്യുന്നു. ഒരൊറ്റ വിളിയും ഉയിർത്തെഴുന്നേൽപ്പും പറയുന്ന വാക്യത്തോടെ അവസാനിക്കുന്നു. തീയുടെ ഭാഗം ഖുർആൻ 104:6–9-നോടും അവസാനം 79:13–14-നോടും ബന്ധപ്പെടുന്നു. ഈ വാക്യത്തിൽ സ്രോതസ്സ് “ബിനാരി” എന്നാണ് ഉപയോഗിക്കുന്നത്; ആഹ്വാനത്തിലെ പ്രയോഗമായി നിലനിർത്തുന്നു, ആയത്തിന്റെ കൃത്യമായ തുടക്കത്തിനു പകരമാക്കുന്നില്ല."
+      }
+    }
+  ],
+  "transcription_scope": {
+    "en": "A reading transcription of the three supplied pages, split at subject and page boundaries. Source name variants, count markers and partial printed vowels are retained. It does not replace the scan or claim a verified dictionary meaning for unfamiliar strings. Compare the original page for spelling and vowel details; no extra practice timing is supplied.",
+    "ml": "നൽകിയ മൂന്നു പേജുകളുടെ വായനാപകർപ്പ്; വിഷയവും പേജും അനുസരിച്ച് വിഭജിച്ചിരിക്കുന്നു. സ്രോതസ്സിലെ നാമപാഠഭേദങ്ങളും സംഖ്യാ അടയാളങ്ങളും ഭാഗിക അച്ചടിച്ച ഹറകത്തുകളും നിലനിർത്തുന്നു. മൂലചിത്രത്തിനു പകരമല്ല; അപരിചിത പദങ്ങൾക്ക് സ്ഥിരീകരിച്ച നിഘണ്ടുവർഥം അവകാശപ്പെടുന്നില്ല. അക്ഷരരൂപവും ഹറകത്തും പരിശോധിക്കാൻ മൂലപേജ് ഒപ്പം കാണുക; അധിക അനുഷ്ഠാനസമയം നൽകിയിട്ടില്ല."
+  }
 }

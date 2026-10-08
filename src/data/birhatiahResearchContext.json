@@ -1,0 +1,54 @@
+{
+  "scope": {
+    "en": "Author interpretations are kept separate from printed source readings. These notes do not establish linguistic origins or efficacy.",
+    "ml": "രചയിതാക്കളുടെ വ്യാഖ്യാനങ്ങൾ അച്ചടിയിലെ വായനയിൽനിന്ന് വേർതിരിച്ചിരിക്കുന്നു. ഈ കുറിപ്പുകൾ ഭാഷാപരമായ ഉത്ഭവമോ ഫലപ്രാപ്തിയോ സ്ഥിരീകരിക്കുന്നില്ല."
+  },
+  "entries": [
+    {
+      "id": "azal-recensions",
+      "name_ids": [],
+      "source_title": "N Wahid Azal, The Birhatīya Conjuration Oath and the meaning of its first 28 names (revised 2014), introduction",
+      "source_url": "https://www.academia.edu/9799507/The_Birhat%C4%ABya_Conjuration_Oath_and_the_meaning_of_its_first_28_names",
+      "translation": {
+        "en": "Azal describes variant names and invocation structures across editions. He identifies the origin as uncertain and deliberately normalizes identifiable Hebrew forms in his translation. His reconstructed spellings therefore belong to his edition; they do not replace this card’s printed Arabic.",
+        "ml": "പതിപ്പുകൾക്കിടയിൽ നാമങ്ങളിലും പ്രാർത്ഥനയുടെ ഘടനയിലും വ്യത്യാസങ്ങളുണ്ടെന്ന് അസൽ പറയുന്നു. ഉത്ഭവം ഉറപ്പില്ലെന്നും തിരിച്ചറിയാനായ ഹീബ്രു രൂപങ്ങൾ തന്റെ പരിഭാഷയിൽ ക്രമപ്പെടുത്തിയെന്നും വ്യക്തമാക്കുന്നു. ആ രൂപങ്ങൾ അദ്ദേഹത്തിന്റെ പതിപ്പിനുള്ളതാണ്; കാർഡിലെ അച്ചടിച്ച അറബിക്ക് പകരമല്ല."
+      }
+    },
+    {
+      "id": "azal-c22-variant",
+      "name_ids": [
+        "HNK-MHC-022"
+      ],
+      "source_title": "N Wahid Azal (revised 2014), invocation translation",
+      "source_url": "https://www.academia.edu/9799507/The_Birhat%C4%ABya_Conjuration_Oath_and_the_meaning_of_its_first_28_names",
+      "translation": {
+        "en": "Azal’s invocation gives Samākhir at position 22. This is a separate recension reading, not a correction of Shamkhahir.",
+        "ml": "അസലിന്റെ പ്രാർത്ഥനയിൽ 22-ാം സ്ഥാനത്ത് സമാഖിർ എന്നാണ്. ഇത് മറ്റൊരു പതിപ്പിന്റെ വായനയാണ്; ശംഖാഹിറിന്റെ തിരുത്തലല്ല."
+      }
+    },
+    {
+      "id": "graham-c3-linguistic",
+      "name_ids": [
+        "HNK-MHC-003"
+      ],
+      "source_title": "Lloyd D. Graham, Qurʾānic Spell-ing: Disconnected Letter Series in Islamic Talismans (2011), pp23–24, notes89–91",
+      "source_url": "https://www.academia.edu/516626/Qur%CA%BE%C4%81nic_Spell_ing_Disconnected_Letter_Series_in_Islamic_Talismans",
+      "translation": {
+        "en": "Graham questions a secure Syriac meaning for Tatliyah: Canaan discusses taqliya, a different consonantal form. His proposed relation to Tahatil also requires replacing ṭ with t, so it is not an exact-letter anagram. This is a linguistic proposal, not a verified etymology.",
+        "ml": "തത്‌ലിഹിന് ഉറപ്പായ സുറിയാനി അർഥമുണ്ടോ എന്ന് ഗ്രഹാം സംശയിക്കുന്നു: കനാൻ പരിശോധിച്ചത് വ്യഞ്ജനങ്ങൾ വ്യത്യസ്തമായ തഖ്‌ലിയ രൂപമാണ്. തഹാതീലുമായുള്ള നിർദേശിച്ച ബന്ധത്തിലും ṭ-യ്ക്ക് പകരം t വേണം; അതിനാൽ അതേ അക്ഷരങ്ങളുടെ പുനഃക്രമീകരണമല്ല. ഇത് ഭാഷാപരമായ നിർദേശമാണ്; സ്ഥിരീകരിച്ച ഉത്ഭവമല്ല."
+      }
+    },
+    {
+      "id": "graham-c6-gloss",
+      "name_ids": [
+        "HNK-MHC-006"
+      ],
+      "source_title": "Lloyd D. Graham (2011), p24, note93, citing Tewfik Canaan",
+      "source_url": "https://www.academia.edu/516626/Qur%CA%BE%C4%81nic_Spell_ing_Disconnected_Letter_Series_in_Islamic_Talismans",
+      "translation": {
+        "en": "Citing Canaan, Graham reports “the Affectionate” for Bazjal and distinguishes the Arabic commentators’ glosses. This is an attributed linguistic account; the card does not independently confirm it from a Syriac dictionary.",
+        "ml": "കനാനെ ഉദ്ധരിച്ച് ഗ്രഹാം ബസ്‌ജലിന് സ്നേഹമുള്ളവൻ എന്ന അർഥം റിപ്പോർട്ട് ചെയ്യുകയും അറബി വ്യാഖ്യാതാക്കളുടെ അർഥങ്ങളിൽനിന്ന് വേർതിരിക്കുകയും ചെയ്യുന്നു. ഇത് സ്രോതസ്സ് വ്യക്തമാക്കിയ ഭാഷാവിവരണമാണ്; സുറിയാനി നിഘണ്ടുവഴി ഇവിടെ സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല."
+      }
+    }
+  ]
+}

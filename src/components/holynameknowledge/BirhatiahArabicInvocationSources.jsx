@@ -7,6 +7,16 @@ export default function BirhatiahArabicInvocationSources() {
   return <details className="rounded-xl border border-yellow-500/25 p-4 space-y-4">
     <summary className="cursor-pointer text-yellow-200 font-semibold">{ml ? 'കൂടുതൽ അറബി സംയുക്തപതിപ്പുകളും പൂർണ മൂലപേജുകളും' : 'Additional Arabic collective variants and complete source pages'}</summary>
     <p className="text-sm text-white/70 leading-loose">{source.scope[language]}</p>
+    <details className="rounded-lg border border-white/15 p-3 space-y-4">
+      <summary className="cursor-pointer text-yellow-100">{ml ? 'പൂർണ അറബി വായനാപകർപ്പും വിഷയമനുസരിച്ചുള്ള അർഥവും' : 'Full Arabic reading transcription and meaning by subject'}</summary>
+      <p className="text-sm leading-loose text-white/65">{source.transcription_scope[language]}</p>
+      {source.transcription.map(entry => <article key={entry.id} className="border-t border-white/10 pt-3 space-y-3">
+        <h3 className="text-yellow-100">{entry.title[language]}</h3>
+        <p className="font-amiri text-xl text-right leading-loose whitespace-pre-wrap text-white/90" lang="ar" dir="rtl">{entry.arabic}</p>
+        <p className="text-sm leading-loose text-white/85">{entry.translation[language]}</p>
+        <a href={source.pages.find(page => page.pdf_page === entry.pdf_page).image_path} target="_blank" rel="noreferrer" className="text-xs underline text-white/55">{ml ? 'ഒത്തുനോക്കാനുള്ള മൂലപേജ്' : 'Original page for comparison'} {entry.pdf_page}</a>
+      </article>)}
+    </details>
     {source.accounts.map(entry => <article key={entry.id} className="border-t border-white/15 pt-3 space-y-3">
       <h3 className="text-yellow-100">{entry.title[language]}</h3>
       {entry.arabic_original && <p className="font-amiri text-xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{entry.arabic_original}</p>}
