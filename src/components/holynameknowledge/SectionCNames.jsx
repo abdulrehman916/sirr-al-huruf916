@@ -175,8 +175,8 @@ export default function SectionCNames() {
                           </span>
                         )}
                       </div>
-                      {card.transliteration && (
-                        <p className="font-inter text-sm font-semibold truncate" style={{ color: "rgba(255,255,255,0.88)" }}>{card.transliteration}</p>
+                      {(language === "ml" ? card.malayalam_transliteration : (card.english_transliteration || card.transliteration)) && (
+                        <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm font-semibold truncate`} style={{ color: "rgba(255,255,255,0.88)" }}>{language === "ml" ? card.malayalam_transliteration : (card.english_transliteration || card.transliteration)}</p>
                       )}
                       {displayedMeaning
                         ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[12px] leading-relaxed line-clamp-2`} style={{ color: "rgba(255,255,255,0.62)" }}>{displayedMeaning}</p>
