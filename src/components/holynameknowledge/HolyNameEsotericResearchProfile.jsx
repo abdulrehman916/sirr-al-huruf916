@@ -182,7 +182,6 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
   const letters = getAbjadBreakdown(displayedName).filter(item => item.value > 0);
   const abjadValue = calculateAbjad(displayedName);
   const fullCalculation = letters.map(item => `${item.letter} (${item.value})`).join(" + ") + ` = ${abjadValue}`;
-  const normalizeName = value => String(value || "").replace(/[\u064B-\u065F\u0670\u0640\s]/g, "");
   // Every record is stored under one HolyNameEsotericKnowledge card.
   // Imported source entries often have no redundant name_id. Excluding them
   // hid the existing bibliography and practices for all twenty-eight names.
@@ -209,7 +208,7 @@ export default function HolyNameEsotericResearchProfile({ nameId }) {
       </div>
 
       {/* 1 — PRIMARY INFORMATION */}
-      <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} />
+      <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} currentAbjad={abjadValue} />
       <Block title="Primary Information" titleML="നാമവിവരങ്ങളും അക്ഷരമൂല്യങ്ങളും" icon={BookOpen} accent={P.text} defaultOpen={false}>
         <div className="text-center py-2 rounded-lg" style={{ background: P.bgHi, border: `1px solid ${P.borderHi}` }}>
           <p className="font-amiri text-[2.2rem] font-bold leading-[2.2] selectable" style={{ color: P.text, textShadow: "0 0 20px rgba(212,175,55,0.30)" }} dir="rtl">
