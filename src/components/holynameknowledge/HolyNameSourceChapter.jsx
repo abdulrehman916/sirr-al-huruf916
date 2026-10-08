@@ -36,6 +36,7 @@ export default function HolyNameSourceChapter({ chapter, nameId }) {
       ))}
       {(chapter.edition_accounts || []).map(account => <article key={account.id} className="border-t border-yellow-500/20 pt-4 space-y-3">
         <h3 className={`${cls} text-base text-yellow-200`}>{translated(account.title)}</h3>
+        {account.arabic_original && <p className="font-amiri text-2xl text-right leading-loose text-yellow-200" dir="rtl" lang="ar">{account.arabic_reading && originalLetters(account.arabic_reading) === originalLetters(account.arabic_original) ? account.arabic_reading : account.arabic_original}</p>}
         <p className={`${cls} text-sm text-white/85 leading-loose`}>{translated(account.translation)}</p>
         {(account.count != null || account.timing) && <dl className={`${cls} text-sm space-y-2 text-white/75`}>
           {account.count != null && <div><dt className="text-yellow-200/70">{ml ? "എണ്ണം" : "Count"}</dt><dd>{account.count}</dd></div>}

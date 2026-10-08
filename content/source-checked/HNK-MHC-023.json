@@ -40,6 +40,33 @@
       }
     }
   ],
+  "edition_accounts": [
+    {
+      "id": "english-name-meaning-and-account-135",
+      "title": {
+        "ml": "പേരിന്റെ രൂപം, മൂന്ന് അർഥങ്ങൾ, പതിനഞ്ച് എഴുത്തുകളുടെ പരാമർശം",
+        "en": "Name form, three meanings and fifteen-inscription account"
+      },
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 135,
+      "arabic_original": "شمخاهير",
+      "arabic_reading": "شَمْخَاهِيرٍ",
+      "original_text": "The twenty-third name is Shamkhāhīrin [شمخاهير] and has the scale and vowelization of the name before it except for an added, unvoweled ya’ after the ha’. The letter corresponding to it is the tha’ marked with three diacritics, and the mansion corresponding to it is Sa’d Bula’. In Arabic it means ‘O Judge,’ and according to another view, ‘O He, O He’; and according to another view, ‘O my Lord, O my Lord.’ Among its properties is that if one writes it fifteen times on a piece of paper and burns it in a place in which are mosquitoes, they will depart from it.",
+      "translation": {
+        "ml": "ഇരുപത്തിമൂന്നാം നാമം شمخاهير എന്നാണ് ഈ പതിപ്പിൽ. മുൻപത്തെ പേരിന്റെ വസ്നും ഹറകത്തും തന്നെയാണെന്നും ه-യ്ക്ക് ശേഷം സുകൂനുള്ള ي അധികമായി വരുന്നതാണെന്നും പറയുന്നു. ബന്ധിപ്പിച്ച അക്ഷരം ث (സാ); മൻസിൽ സഅ്ദ് ബുലഅ്. അറബി അർഥമായി ‘വിധിക്കുന്നവനേ’ എന്നും മറ്റു അഭിപ്രായങ്ങളിൽ ‘അവനേ, അവനേ’, ‘എന്റെ രക്ഷിതാവേ, എന്റെ രക്ഷിതാവേ’ എന്നും നൽകുന്നു. പേര് കടലാസിൽ പതിനഞ്ച് തവണ എഴുതി കൊതുകുകളുള്ള സ്ഥലത്ത് കത്തിച്ചാൽ കൊതുകുകൾ അവിടം വിട്ടുപോകുമെന്നാണ് ഗ്രന്ഥത്തിലെ പരമ്പരാഗത പരാമർശം.",
+        "en": "The edition spells the twenty-third name شمخاهير and describes it as the preceding name’s measure and vowels with an additional unvoweled ya after ha. It associates the name with tha (ث) and Sa’d Bula’, and gives three interpretations: ‘O Judge,’ ‘O He, O He,’ or ‘O my Lord, O my Lord.’ It then claims that fifteen inscriptions on paper burned where mosquitoes are present make them depart."
+      },
+      "count": 15,
+      "timing": {
+        "ml": "പ്രത്യേക ദിവസമോ സമയമോ നമസ്കാരശേഷമോ നൽകിയിട്ടില്ല. 15 എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്.",
+        "en": "No day, clock time or prayer is specified. Fifteen counts inscriptions."
+      },
+      "scope_note": {
+        "ml": "ഇത് ഇംഗ്ലീഷ് പതിപ്പിലെ 135-ാം പേജിൽ പരിശോധിച്ച വിവരമാണ്. കൊതുകുകൾ പോകുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്. പേരിന്റെ അച്ചടിരൂപം നിലവിലുള്ള കാർഡിന്റെ കണക്കുകൾ മാറ്റാൻ ഉപയോഗിച്ചിട്ടില്ല.",
+        "en": "Checked on printed page 135 of the English edition. Departure of mosquitoes is the source’s claim. The printed spelling does not alter existing card calculations."
+      }
+    }
+  ],
   "edition_note": {
     "ml": "ഈ ഭാഗം തിരഞ്ഞെടുത്ത പാഠമാണ്. ഗ്രന്ഥത്തിലെ ചികിത്സാ, ഹാനികരമായ അവകാശവാദങ്ങൾ ഇവിടെ പ്രായോഗിക നിർദ്ദേശങ്ങളാക്കിയിട്ടില്ല. പരിശോധിക്കാത്ത മന്ത്രങ്ങളോ കളങ്ങളോ കൂട്ടിച്ചേർത്തിട്ടില്ല.",
     "en": "This is a selected reading. Medical and harmful claims are not turned into practical guidance here. Unchecked formulas and diagrams have not been added."

@@ -24,6 +24,24 @@
   },
   "edition_accounts": [
     {
+      "id": "english-correspondence-meaning-137",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
+      "printed_page": 137,
+      "title": {
+        "ml": "അക്ഷരം, മൻസിൽ, രണ്ടു അർഥങ്ങൾ",
+        "en": "Letter, mansion and two meanings"
+      },
+      "original_text": "it is the pointed dhal, and the mansion corresponding to it is Sa’d al-Akhbiya. In Arabic it means, ‘O Preeternal One’ and, according to another view, ‘O Enduring One.’",
+      "translation": {
+        "ml": "ഈ പേരുമായി ബന്ധിപ്പിച്ച അക്ഷരം ذ (ദാൽ); മൻസിൽ സഅ്ദ് അൽ-അഖ്ബിയ. അറബി അർഥമായി ‘ആദിയില്ലാത്തവനേ’ എന്നും മറ്റൊരു അഭിപ്രായത്തിൽ ‘എന്നെന്നും നിലനിൽക്കുന്നവനേ’ എന്നും ഇംഗ്ലീഷ് പതിപ്പ് നൽകുന്നു.",
+        "en": "The edition associates the name with dhal (ذ) and Sa’d al-Akhbiya, giving ‘O Preeternal One’ or, alternatively, ‘O Enduring One’ as its Arabic meanings."
+      },
+      "scope_note": {
+        "ml": "ഈ മൻസിൽബന്ധം ഓതാനുള്ള സമയനിർദേശമല്ല. 136-ാം പേജിലെ പേരിന്റെ മറ്റു എഴുത്തുരൂപങ്ങളുടെ കൃത്യമായ അറബി പകർപ്പ് പരിശോധിക്കാനുള്ളത് ബാക്കിയുണ്ട്.",
+        "en": "The mansion correspondence is not a recitation schedule. Exact Arabic transcription of the alternate spellings on page 136 remains pending."
+      }
+    },
+    {
       "id": "english-hunger-70",
       "source_title": "Berhatiah: Ancient Magick Conjuration of Power — Nineveh Shadrach",
       "printed_page": 137,
