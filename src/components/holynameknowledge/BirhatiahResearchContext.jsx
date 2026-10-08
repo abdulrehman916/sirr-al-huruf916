@@ -3,7 +3,8 @@ import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 
 export default function BirhatiahResearchContext({ nameId }) {
   const { language } = useHolyNamesLanguage();
-  const entries = research.entries.filter(entry => !entry.name_ids.length || entry.name_ids.includes(nameId));
+  const entries = research.entries.filter(entry => nameId ? entry.name_ids?.includes(nameId) : !entry.name_ids?.length);
+  if (!entries.length) return null;
   return <details className="rounded-xl border border-yellow-500/25 p-4 space-y-3">
     <summary className="cursor-pointer text-yellow-200 font-semibold">{language === 'ml' ? 'പുറത്തെ ഗവേഷകരുടെ വ്യാഖ്യാനങ്ങളും പതിപ്പുവ്യത്യാസങ്ങളും' : 'Outside author interpretations and recension differences'}</summary>
     <p className="text-sm text-white/65 leading-loose">{research.scope[language]}</p>
