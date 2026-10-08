@@ -6,6 +6,7 @@ import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
 import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources';
 import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
 import BirhatiahExpandedVersions from './BirhatiahExpandedVersions';
+import BirhatiahResearchContext from './BirhatiahResearchContext';
 
 export default function BirhatiahCollectiveReference() {
   const { language } = useHolyNamesLanguage();
@@ -16,6 +17,7 @@ export default function BirhatiahCollectiveReference() {
   if (version.review_status !== "checked_against_supplied_scan" || version.names.length !== 28) return null;
   return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
     <BirhatiahSharedBookAccounts />
+    <BirhatiahResearchContext />
     <BirhatiahArabicSinglePage />
     <BirhatiahArabicInvocationSources />
     <BirhatiahFullSourceChapter />
