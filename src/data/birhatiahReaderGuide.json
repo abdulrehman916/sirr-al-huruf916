@@ -1639,29 +1639,22 @@
         },
         "steps": {
           "ml": [
-            "ചൊവ്വാഴ്ച പേര് കടലാസിൽ ഏഴ് തവണ എഴുതുന്നതാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിലെ രീതി.",
-            "യഅ്ഖൂബ് നബിയെയും യൂസുഫ് നബിയുടെ കുപ്പായത്തെയും പരാമർശിക്കുന്ന വാചകം ചേർത്ത് ബാധിതനിൽ തൂക്കുക. അറബി പതിപ്പിൽ തിങ്കളാഴ്ച എന്നാണ്; താഴെയുള്ള മൂലപേജ് ആ രീതിയുടേതാണ്.",
+            "ചൊവ്വാഴ്ച പേര് കടലാസിൽ ഏഴ് തവണ എഴുതുക.",
+            "ഇവിടെ നൽകിയ രണ്ടു വരികളും ചേർത്ത് കണ്ണിന്റെ അസുഖമുള്ള വ്യക്തിയിൽ തൂക്കുന്നതാണ് ചരിത്രരീതി.",
             "ഇത് കണ്ണിന്റെ ചികിത്സയ്ക്ക് പകരമല്ല."
           ],
           "en": [
-            "This English edition specifies seven name inscriptions on paper on Tuesday.",
-            "Add the verse referring to Yaqub and Yusuf’s shirt and attach it to the person. The Arabic edition specifies Monday; the original page below belongs to that variant.",
+            "Write the name seven times on paper on Tuesday.",
+            "Add the two lines provided here and attach the inscription to the person with an eye ailment, as a historical method.",
             "This is not a substitute for eye treatment."
           ]
         },
-        "source_pages": [
-          71
-        ],
         "written_text": {
           "arabic": "يا ناظري بيعقوب أعيذكما بما استعاذ به إذ مسه الكمد\nقميص يوسف إذ جاء البشير به بحق يعقوب فاذهب أيها الرمد",
           "translation": {
             "ml": "എന്റെ രണ്ടു കണ്ണുകളേ, ദുഃഖം ബാധിച്ചപ്പോൾ യഅ്ഖൂബ് സംരക്ഷണം തേടിയതുകൊണ്ട് നിങ്ങൾക്കും സംരക്ഷണം തേടുന്നു. സന്തോഷവാർത്തക്കാരൻ യൂസുഫിന്റെ കുപ്പായവുമായി എത്തിയതിനെ മുൻനിർത്തി, യഅ്ഖൂബിന്റെ ഹഖിനാൽ കണ്ണിന്റെ അസുഖമേ, നീ പോകുക.",
             "en": "My two eyes, I seek protection for you through what Yaqub sought protection with when sorrow afflicted him. By Yusuf’s shirt brought by the bearer of glad tidings, and by the right of Yaqub, depart, eye ailment."
           }
-        },
-        "scan_caption": {
-          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
-          "en": "Original Arabic-edition page — printed names and symbols"
         }
       },
       {
