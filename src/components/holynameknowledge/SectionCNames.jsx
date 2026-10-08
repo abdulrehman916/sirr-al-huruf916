@@ -7,6 +7,7 @@ import { calculateAbjad } from "@/lib/abjadValues";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import BirhatiahCollectiveCard from "./BirhatiahCollectiveCard";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
+import { collectSectionCShared } from "@/lib/birhatiahSharedContent";
 
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
 // INDEPENDENT module. Reads ONLY from HolyNameEsotericKnowledge.
@@ -68,7 +69,7 @@ export default function SectionCNames() {
     );
   }, [cards, query]);
 
-  const showCollective = !query.trim() || ["29", "029", "ബർഹത്തിയ", "ബ്രഹത്യ", "മന്ത്രം", "സംയുക്ത", "برهت", "birhat", "mantra", "collective"].some(term => query.toLowerCase().includes(term));
+  const shared = useMemo(() => collectSectionCShared(cards), [cards]);
 
   if (loading) {
     return (
@@ -83,10 +84,10 @@ export default function SectionCNames() {
       <div className="text-center py-12 space-y-3">
         <ShieldAlert className="w-10 h-10 mx-auto" style={{ color: "rgba(148,163,184,0.6)" }} />
         <p className="font-malayalam text-sm" style={{ color: "rgba(148,163,184,0.7)" }}>
-          Section C cards are unavailable
+          {language === "ml" ? "സെക്ഷൻ C കാർഡുകൾ ലഭ്യമല്ല" : "Section C cards are unavailable"}
         </p>
         <p className="font-malayalam text-sm" style={{ color: "rgba(255,255,255,0.45)" }}>
-          Please try again
+          {language === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Please try again"}
         </p>
       </div>
     );
@@ -100,7 +101,7 @@ export default function SectionCNames() {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search Birhatiah names..."
+          placeholder={language === "ml" ? "ബർഹത്തിയ്യ നാമങ്ങൾ തിരയുക..." : "Search Birhatiah names..."}
           className="flex-1 bg-transparent outline-none font-inter text-sm"
           style={{ color: "rgba(255,255,255,0.85)" }}
           dir="auto"
@@ -122,16 +123,16 @@ export default function SectionCNames() {
           className="px-3 py-1.5 rounded-xl border font-malayalam text-[12px] font-semibold"
           style={{ background: P.bg, borderColor: P.border, color: P.dim }}
         >
-          Clear
+          {language === "ml" ? "മായ്ക്കുക" : "Clear"}
         </button>
       </div>
 
       <div className="space-y-2">
         <AnimatePresence mode="popLayout">
-          {filtered.length === 0 && !showCollective ? (
+          {filtered.length === 0 ? (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-16 space-y-3">
               <p className="font-amiri text-lg" style={{ color: P.dim }}>لا توجد نتائج</p>
-              <p className="font-inter text-sm" style={{ color: "rgba(255,255,255,0.22)" }}>Try another search</p>
+              <p className="font-inter text-sm" style={{ color: "rgba(255,255,255,0.22)" }}>{language === "ml" ? "മറ്റൊരു പേര് തിരയുക" : "Try another search"}</p>
             </motion.div>
           ) : (
             filtered.map((card, i) => {
@@ -199,7 +200,7 @@ export default function SectionCNames() {
                         style={{ overflow: "hidden" }}
                       >
                         <div className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
-                          <HolyNameEsotericResearchProfile nameId={card.name_id} />
+                          <HolyNameEsotericResearchProfile nameId={card.name_id} sharedEntryKeys={shared.keys} />
                           <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} />
                         </div>
                       </motion.div>
@@ -211,7 +212,7 @@ export default function SectionCNames() {
           )}
         </AnimatePresence>
       </div>
-      {showCollective && <BirhatiahCollectiveCard cards={cards} />}
+      <BirhatiahCollectiveCard cards={cards} sharedByField={shared.byField} />
     </div>
   );
 }
