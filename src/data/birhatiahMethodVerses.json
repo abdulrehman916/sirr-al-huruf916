@@ -270,5 +270,737 @@
         }
       }
     ]
+  },
+  "36:1-83": {
+    "title": {
+      "ml": "സൂറത്ത് യാസീൻ — 83 ആയത്തുകളും അർഥവും",
+      "en": "Surah Ya Sin — all eighty-three verses and meanings"
+    },
+    "source_url": "https://quran.com/36",
+    "text_source_url": "https://api.quran.com/api/v4/quran/verses/uthmani?chapter_number=36",
+    "review_status": "checked_against_quran_text",
+    "translation_note": {
+      "ml": "മലയാളവും ഇംഗ്ലീഷും ആയത്തിന്റെ അർഥം വിശദീകരിക്കുന്ന വിവർത്തനങ്ങളാണ്; അറബി പാഠം Quran.com-ൽനിന്നുള്ളതാണ്.",
+      "en": "Malayalam and English are explanatory translations; the Arabic text is from Quran.com."
+    },
+    "verses": [
+      {
+        "reference": "36:1",
+        "arabic": " يسٓ",
+        "translation": {
+          "ml": "യാ–സീൻ.",
+          "en": "Ya Sin."
+        }
+      },
+      {
+        "reference": "36:2",
+        "arabic": "وَٱلْقُرْءَانِ ٱلْحَكِيمِ",
+        "translation": {
+          "ml": "ജ്ഞാനസമ്പന്നമായ ഖുർആനെ സാക്ഷിയാക്കി.",
+          "en": "By the Quran full of wisdom."
+        }
+      },
+      {
+        "reference": "36:3",
+        "arabic": "إِنَّكَ لَمِنَ ٱلْمُرْسَلِينَ",
+        "translation": {
+          "ml": "തീർച്ചയായും നീ ദൂതന്മാരിൽപ്പെട്ടവനാണ്.",
+          "en": "You are surely one of the messengers."
+        }
+      },
+      {
+        "reference": "36:4",
+        "arabic": "عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+        "translation": {
+          "ml": "നേരായ പാതയിലാണ് നീ.",
+          "en": "Upon a straight path."
+        }
+      },
+      {
+        "reference": "36:5",
+        "arabic": "تَنزِيلَ ٱلْعَزِيزِ ٱلرَّحِيمِ",
+        "translation": {
+          "ml": "പ്രതാപശാലിയും കരുണയുള്ളവനുമായവൻ ഇറക്കിയതാണ് ഇത്.",
+          "en": "A revelation from the Mighty, the Merciful."
+        }
+      },
+      {
+        "reference": "36:6",
+        "arabic": "لِتُنذِرَ قَوْمًا مَّآ أُنذِرَ ءَابَآؤُهُمْ فَهُمْ غَـٰفِلُونَ",
+        "translation": {
+          "ml": "തങ്ങളുടെ പൂർവികർക്ക് മുന്നറിയിപ്പ് ലഭിക്കാതിരുന്നതിനാൽ അശ്രദ്ധരായിരിക്കുന്ന ഒരു ജനതയ്ക്ക് നീ മുന്നറിയിപ്പ് നൽകാനായി.",
+          "en": "So that you may warn a people whose forefathers were not warned, and who are heedless."
+        }
+      },
+      {
+        "reference": "36:7",
+        "arabic": "لَقَدْ حَقَّ ٱلْقَوْلُ عَلَىٰٓ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+        "translation": {
+          "ml": "അവരിൽ മിക്കവരുടെമേലും വിധിവചനം യാഥാർഥ്യമായിരിക്കുന്നു; അതിനാൽ അവർ വിശ്വസിക്കുന്നില്ല.",
+          "en": "The decree has become due against most of them, so they do not believe."
+        }
+      },
+      {
+        "reference": "36:8",
+        "arabic": "إِنَّا جَعَلْنَا فِىٓ أَعْنَـٰقِهِمْ أَغْلَـٰلًا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+        "translation": {
+          "ml": "അവരുടെ കഴുത്തുകളിൽ നാം വിലങ്ങുകൾ വെച്ചിരിക്കുന്നു. അവ താടിവരെ എത്തുന്നതിനാൽ അവരുടെ തലകൾ ഉയർത്തിപ്പിടിക്കപ്പെട്ടിരിക്കുന്നു.",
+          "en": "We have placed fetters around their necks reaching their chins, keeping their heads raised."
+        }
+      },
+      {
+        "reference": "36:9",
+        "arabic": "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَـٰهُمْ فَهُمْ لَا يُبْصِرُونَ",
+        "translation": {
+          "ml": "അവരുടെ മുമ്പിലും പിന്നിലും നാം തടസ്സങ്ങൾ വെച്ചു; അവരെ മൂടിയതിനാൽ അവർ കാണുന്നില്ല.",
+          "en": "We placed a barrier before them and another behind them, and covered them, so they cannot see."
+        }
+      },
+      {
+        "reference": "36:10",
+        "arabic": "وَسَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ",
+        "translation": {
+          "ml": "നീ അവർക്ക് മുന്നറിയിപ്പ് നൽകിയാലും നൽകിയില്ലെങ്കിലും അവർക്ക് ഒരുപോലെയാണ്; അവർ വിശ്വസിക്കുകയില്ല.",
+          "en": "Whether you warn them or do not warn them is the same for them; they will not believe."
+        }
+      },
+      {
+        "reference": "36:11",
+        "arabic": "إِنَّمَا تُنذِرُ مَنِ ٱتَّبَعَ ٱلذِّكْرَ وَخَشِىَ ٱلرَّحْمَـٰنَ بِٱلْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍ وَأَجْرٍ كَرِيمٍ",
+        "translation": {
+          "ml": "ഉപദേശം പിന്തുടരുകയും കാണാതെതന്നെ പരമകാരുണികനെ ഭയപ്പെടുകയും ചെയ്യുന്നവനെയാണ് നിന്റെ മുന്നറിയിപ്പ് പ്രയോജനപ്പെടുത്തുന്നത്. അവന് പാപമോചനത്തിന്റെയും മാന്യമായ പ്രതിഫലത്തിന്റെയും സന്തോഷവാർത്ത അറിയിക്കുക.",
+          "en": "Your warning benefits the one who follows the reminder and fears the Most Merciful unseen. Give him glad tidings of forgiveness and a generous reward."
+        }
+      },
+      {
+        "reference": "36:12",
+        "arabic": "إِنَّا نَحْنُ نُحْىِ ٱلْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا۟ وَءَاثَـٰرَهُمْ ۚ وَكُلَّ شَىْءٍ أَحْصَيْنَـٰهُ فِىٓ إِمَامٍ مُّبِينٍ",
+        "translation": {
+          "ml": "നാം തന്നെയാണ് മരിച്ചവരെ ജീവിപ്പിക്കുന്നത്. അവർ മുമ്പ് ചെയ്തതും പിന്നിൽ അവശേഷിപ്പിച്ച അടയാളങ്ങളും നാം രേഖപ്പെടുത്തുന്നു. എല്ലാ കാര്യങ്ങളും വ്യക്തമായ ഒരു രേഖയിൽ നാം കണക്കാക്കിയിരിക്കുന്നു.",
+          "en": "We give life to the dead and record what they sent ahead and the traces they left. We have counted everything in a clear record."
+        }
+      },
+      {
+        "reference": "36:13",
+        "arabic": "وَٱضْرِبْ لَهُم مَّثَلًا أَصْحَـٰبَ ٱلْقَرْيَةِ إِذْ جَآءَهَا ٱلْمُرْسَلُونَ",
+        "translation": {
+          "ml": "ദൂതന്മാർ എത്തിയ പട്ടണവാസികളുടെ ഉദാഹരണം അവർക്ക് പറഞ്ഞുകൊടുക്കുക.",
+          "en": "Give them the example of the people of a town when the messengers came to it."
+        }
+      },
+      {
+        "reference": "36:14",
+        "arabic": "إِذْ أَرْسَلْنَآ إِلَيْهِمُ ٱثْنَيْنِ فَكَذَّبُوهُمَا فَعَزَّزْنَا بِثَالِثٍ فَقَالُوٓا۟ إِنَّآ إِلَيْكُم مُّرْسَلُونَ",
+        "translation": {
+          "ml": "നാം അവരിലേക്ക് രണ്ടു പേരെ അയച്ചപ്പോൾ അവർ ഇരുവരെയും നിഷേധിച്ചു. മൂന്നാമനിലൂടെ നാം അവരെ ശക്തിപ്പെടുത്തി. അവർ പറഞ്ഞു: ഞങ്ങൾ നിങ്ങളിലേക്കയക്കപ്പെട്ട ദൂതന്മാരാണ്.",
+          "en": "We sent them two messengers, but they denied both; We strengthened them with a third. They said: We are messengers sent to you."
+        }
+      },
+      {
+        "reference": "36:15",
+        "arabic": "قَالُوا۟ مَآ أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا وَمَآ أَنزَلَ ٱلرَّحْمَـٰنُ مِن شَىْءٍ إِنْ أَنتُمْ إِلَّا تَكْذِبُونَ",
+        "translation": {
+          "ml": "അവർ പറഞ്ഞു: നിങ്ങൾ ഞങ്ങളെപ്പോലെയുള്ള മനുഷ്യർ മാത്രമാണ്. പരമകാരുണികൻ ഒന്നും ഇറക്കിയിട്ടില്ല. നിങ്ങൾ കള്ളം പറയുക മാത്രമാണ്.",
+          "en": "They said: You are only humans like us. The Most Merciful has sent down nothing; you are merely lying."
+        }
+      },
+      {
+        "reference": "36:16",
+        "arabic": "قَالُوا۟ رَبُّنَا يَعْلَمُ إِنَّآ إِلَيْكُمْ لَمُرْسَلُونَ",
+        "translation": {
+          "ml": "ദൂതന്മാർ പറഞ്ഞു: ഞങ്ങൾ നിങ്ങളിലേക്കയക്കപ്പെട്ട ദൂതന്മാരാണെന്ന് ഞങ്ങളുടെ രക്ഷിതാവിന് അറിയാം.",
+          "en": "The messengers said: Our Lord knows that we are messengers sent to you."
+        }
+      },
+      {
+        "reference": "36:17",
+        "arabic": "وَمَا عَلَيْنَآ إِلَّا ٱلْبَلَـٰغُ ٱلْمُبِينُ",
+        "translation": {
+          "ml": "വ്യക്തമായി സന്ദേശം എത്തിക്കേണ്ട ബാധ്യത മാത്രമേ ഞങ്ങൾക്കുള്ളൂ.",
+          "en": "Our duty is only to convey the message clearly."
+        }
+      },
+      {
+        "reference": "36:18",
+        "arabic": "قَالُوٓا۟ إِنَّا تَطَيَّرْنَا بِكُمْ ۖ لَئِن لَّمْ تَنتَهُوا۟ لَنَرْجُمَنَّكُمْ وَلَيَمَسَّنَّكُم مِّنَّا عَذَابٌ أَلِيمٌ",
+        "translation": {
+          "ml": "അവർ പറഞ്ഞു: നിങ്ങളെ ഞങ്ങൾ ദുശ്ശകുനമായി കാണുന്നു. നിങ്ങൾ നിർത്തിയില്ലെങ്കിൽ ഞങ്ങൾ നിങ്ങളെ കല്ലെറിഞ്ഞുകൊല്ലും; ഞങ്ങളിൽനിന്ന് വേദനാജനകമായ ശിക്ഷ നിങ്ങളെ ബാധിക്കും.",
+          "en": "They said: We see an evil omen in you. If you do not stop, we will stone you, and a painful punishment from us will touch you."
+        }
+      },
+      {
+        "reference": "36:19",
+        "arabic": "قَالُوا۟ طَـٰٓئِرُكُم مَّعَكُمْ ۚ أَئِن ذُكِّرْتُم ۚ بَلْ أَنتُمْ قَوْمٌ مُّسْرِفُونَ",
+        "translation": {
+          "ml": "ദൂതന്മാർ പറഞ്ഞു: നിങ്ങളുടെ ദുശ്ശകുനം നിങ്ങളോടുതന്നെയാണ്. ഉപദേശം നൽകപ്പെട്ടതുകൊണ്ടാണോ ഇങ്ങനെ പറയുന്നത്? നിങ്ങൾ അതിരുകടക്കുന്ന ജനതയാണ്.",
+          "en": "The messengers said: Your omen is with yourselves. Is this because you have been reminded? Rather, you are a people exceeding bounds."
+        }
+      },
+      {
+        "reference": "36:20",
+        "arabic": "وَجَآءَ مِنْ أَقْصَا ٱلْمَدِينَةِ رَجُلٌ يَسْعَىٰ قَالَ يَـٰقَوْمِ ٱتَّبِعُوا۟ ٱلْمُرْسَلِينَ",
+        "translation": {
+          "ml": "നഗരത്തിന്റെ അങ്ങേയറ്റത്തുനിന്ന് ഒരാൾ ഓടിവന്നു. അദ്ദേഹം പറഞ്ഞു: എന്റെ ജനങ്ങളേ, ഈ ദൂതന്മാരെ പിന്തുടരുക.",
+          "en": "A man came running from the farthest part of the city. He said: My people, follow the messengers."
+        }
+      },
+      {
+        "reference": "36:21",
+        "arabic": "ٱتَّبِعُوا۟ مَن لَّا يَسْـَٔلُكُمْ أَجْرًا وَهُم مُّهْتَدُونَ",
+        "translation": {
+          "ml": "നിങ്ങളോട് പ്രതിഫലം ചോദിക്കാത്തവരെയും സന്മാർഗത്തിലുള്ളവരെയും പിന്തുടരുക.",
+          "en": "Follow those who ask you for no payment and who are rightly guided."
+        }
+      },
+      {
+        "reference": "36:22",
+        "arabic": "وَمَا لِىَ لَآ أَعْبُدُ ٱلَّذِى فَطَرَنِى وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": {
+          "ml": "എന്നെ സൃഷ്ടിച്ചവനെ ഞാൻ എന്തുകൊണ്ട് ആരാധിക്കാതിരിക്കണം? അവനിലേക്കാണ് നിങ്ങളും മടക്കപ്പെടുന്നത്.",
+          "en": "Why should I not worship the One who created me? To Him you will be returned."
+        }
+      },
+      {
+        "reference": "36:23",
+        "arabic": "ءَأَتَّخِذُ مِن دُونِهِۦٓ ءَالِهَةً إِن يُرِدْنِ ٱلرَّحْمَـٰنُ بِضُرٍّ لَّا تُغْنِ عَنِّى شَفَـٰعَتُهُمْ شَيْـًٔا وَلَا يُنقِذُونِ",
+        "translation": {
+          "ml": "അവനുപുറമെ ഞാൻ ദൈവങ്ങളെ സ്വീകരിക്കണമോ? പരമകാരുണികൻ എനിക്ക് ദോഷം ഉദ്ദേശിച്ചാൽ അവരുടെ ശുപാർശ എനിക്ക് ഒരു പ്രയോജനവും ചെയ്യില്ല; അവർ എന്നെ രക്ഷിക്കുകയുമില്ല.",
+          "en": "Should I take other deities besides Him? If the Most Merciful intends harm for me, their intercession will not benefit me at all, nor can they save me."
+        }
+      },
+      {
+        "reference": "36:24",
+        "arabic": "إِنِّىٓ إِذًا لَّفِى ضَلَـٰلٍ مُّبِينٍ",
+        "translation": {
+          "ml": "അങ്ങനെ ചെയ്താൽ ഞാൻ വ്യക്തമായ വഴികേടിലായിരിക്കും.",
+          "en": "Then I would surely be in clear error."
+        }
+      },
+      {
+        "reference": "36:25",
+        "arabic": "إِنِّىٓ ءَامَنتُ بِرَبِّكُمْ فَٱسْمَعُونِ",
+        "translation": {
+          "ml": "നിങ്ങളുടെ രക്ഷിതാവിൽ ഞാൻ വിശ്വസിച്ചിരിക്കുന്നു; അതിനാൽ എന്റെ വാക്ക് കേൾക്കുക.",
+          "en": "I have believed in your Lord, so listen to me."
+        }
+      },
+      {
+        "reference": "36:26",
+        "arabic": "قِيلَ ٱدْخُلِ ٱلْجَنَّةَ ۖ قَالَ يَـٰلَيْتَ قَوْمِى يَعْلَمُونَ",
+        "translation": {
+          "ml": "അദ്ദേഹത്തോട് പറയപ്പെട്ടു: സ്വർഗത്തിൽ പ്രവേശിക്കുക. അദ്ദേഹം പറഞ്ഞു: എന്റെ ജനത അറിഞ്ഞിരുന്നെങ്കിൽ!",
+          "en": "He was told: Enter Paradise. He said: If only my people knew!"
+        }
+      },
+      {
+        "reference": "36:27",
+        "arabic": "بِمَا غَفَرَ لِى رَبِّى وَجَعَلَنِى مِنَ ٱلْمُكْرَمِينَ",
+        "translation": {
+          "ml": "എന്റെ രക്ഷിതാവ് എനിക്ക് മാപ്പുനൽകുകയും എന്നെ ആദരിക്കപ്പെട്ടവരിൽ ഉൾപ്പെടുത്തുകയും ചെയ്തത് അവർ അറിഞ്ഞിരുന്നെങ്കിൽ!",
+          "en": "If only they knew that my Lord forgave me and placed me among the honoured!"
+        }
+      },
+      {
+        "reference": "36:28",
+        "arabic": "۞ وَمَآ أَنزَلْنَا عَلَىٰ قَوْمِهِۦ مِنۢ بَعْدِهِۦ مِن جُندٍ مِّنَ ٱلسَّمَآءِ وَمَا كُنَّا مُنزِلِينَ",
+        "translation": {
+          "ml": "അദ്ദേഹത്തിനുശേഷം ആ ജനതയ്ക്കെതിരെ ആകാശത്തുനിന്ന് ഒരു സൈന്യവും നാം ഇറക്കിയില്ല; ഇറക്കേണ്ടതുമുണ്ടായിരുന്നില്ല.",
+          "en": "After him, We sent down no army from the sky against his people, nor did We need to send one."
+        }
+      },
+      {
+        "reference": "36:29",
+        "arabic": "إِن كَانَتْ إِلَّا صَيْحَةً وَٰحِدَةً فَإِذَا هُمْ خَـٰمِدُونَ",
+        "translation": {
+          "ml": "ഒരൊറ്റ ഘോരശബ്ദം മാത്രമായിരുന്നു അത്; ഉടനെ അവർ കെട്ടടങ്ങി.",
+          "en": "It was only a single mighty cry, and at once they were extinguished."
+        }
+      },
+      {
+        "reference": "36:30",
+        "arabic": "يَـٰحَسْرَةً عَلَى ٱلْعِبَادِ ۚ مَا يَأْتِيهِم مِّن رَّسُولٍ إِلَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ",
+        "translation": {
+          "ml": "ദാസന്മാരുടെ കാര്യം എത്ര ഖേദകരം! ഒരു ദൂതൻ അവരിലേക്കു വന്നാലുടൻ അവർ അദ്ദേഹത്തെ പരിഹസിക്കുകയായിരുന്നു.",
+          "en": "How regrettable for the servants! Whenever a messenger came to them, they mocked him."
+        }
+      },
+      {
+        "reference": "36:31",
+        "arabic": "أَلَمْ يَرَوْا۟ كَمْ أَهْلَكْنَا قَبْلَهُم مِّنَ ٱلْقُرُونِ أَنَّهُمْ إِلَيْهِمْ لَا يَرْجِعُونَ",
+        "translation": {
+          "ml": "അവർക്കുമുമ്പ് എത്ര തലമുറകളെ നാം നശിപ്പിച്ചുവെന്നും അവർ ഇവരിലേക്കു മടങ്ങിവരുന്നില്ലെന്നും ഇവർ കണ്ടില്ലേ?",
+          "en": "Have they not seen how many generations We destroyed before them, who do not return to them?"
+        }
+      },
+      {
+        "reference": "36:32",
+        "arabic": "وَإِن كُلٌّ لَّمَّا جَمِيعٌ لَّدَيْنَا مُحْضَرُونَ",
+        "translation": {
+          "ml": "അവരെല്ലാം ഒരുമിച്ച് നമ്മുടെ മുമ്പിൽ ഹാജരാക്കപ്പെടും.",
+          "en": "All of them will be brought together before Us."
+        }
+      },
+      {
+        "reference": "36:33",
+        "arabic": "وَءَايَةٌ لَّهُمُ ٱلْأَرْضُ ٱلْمَيْتَةُ أَحْيَيْنَـٰهَا وَأَخْرَجْنَا مِنْهَا حَبًّا فَمِنْهُ يَأْكُلُونَ",
+        "translation": {
+          "ml": "മൃതമായ ഭൂമി അവർക്ക് ഒരു ദൃഷ്ടാന്തമാണ്. നാം അതിന് ജീവൻ നൽകുകയും അതിൽനിന്ന് ധാന്യം പുറപ്പെടുവിക്കുകയും ചെയ്തു; അതിൽനിന്നാണ് അവർ ഭക്ഷിക്കുന്നത്.",
+          "en": "The lifeless earth is a sign for them. We give it life and bring forth grain from it, which they eat."
+        }
+      },
+      {
+        "reference": "36:34",
+        "arabic": "وَجَعَلْنَا فِيهَا جَنَّـٰتٍ مِّن نَّخِيلٍ وَأَعْنَـٰبٍ وَفَجَّرْنَا فِيهَا مِنَ ٱلْعُيُونِ",
+        "translation": {
+          "ml": "അതിൽ ഈന്തപ്പനകളുടെയും മുന്തിരിവള്ളികളുടെയും തോട്ടങ്ങൾ നാം ഉണ്ടാക്കി; ഉറവകൾ ഒഴുക്കുകയും ചെയ്തു.",
+          "en": "We made gardens of date palms and vines in it, and caused springs to flow there."
+        }
+      },
+      {
+        "reference": "36:35",
+        "arabic": "لِيَأْكُلُوا۟ مِن ثَمَرِهِۦ وَمَا عَمِلَتْهُ أَيْدِيهِمْ ۖ أَفَلَا يَشْكُرُونَ",
+        "translation": {
+          "ml": "അതിലെ ഫലങ്ങളിൽനിന്ന് അവർ ഭക്ഷിക്കാനായി—അവയെ അവരുടെ കൈകൾ സൃഷ്ടിച്ചതല്ല. എന്നിട്ടും അവർ നന്ദി കാണിക്കുന്നില്ലേ?",
+          "en": "So that they may eat its fruit, which their hands did not create. Will they not give thanks?"
+        }
+      },
+      {
+        "reference": "36:36",
+        "arabic": "سُبْحَـٰنَ ٱلَّذِى خَلَقَ ٱلْأَزْوَٰجَ كُلَّهَا مِمَّا تُنۢبِتُ ٱلْأَرْضُ وَمِنْ أَنفُسِهِمْ وَمِمَّا لَا يَعْلَمُونَ",
+        "translation": {
+          "ml": "ഭൂമി മുളപ്പിക്കുന്നതിൽനിന്നും മനുഷ്യരിൽനിന്നും അവർ അറിയാത്തവയിൽനിന്നും എല്ലാ ഇണകളെയും സൃഷ്ടിച്ചവൻ എത്ര പരിശുദ്ധൻ!",
+          "en": "Glory to the One who created all pairs, from what the earth grows, from themselves, and from what they do not know."
+        }
+      },
+      {
+        "reference": "36:37",
+        "arabic": "وَءَايَةٌ لَّهُمُ ٱلَّيْلُ نَسْلَخُ مِنْهُ ٱلنَّهَارَ فَإِذَا هُم مُّظْلِمُونَ",
+        "translation": {
+          "ml": "രാത്രിയും അവർക്ക് ഒരു ദൃഷ്ടാന്തമാണ്. അതിൽനിന്ന് പകലിനെ നാം നീക്കുമ്പോൾ അവർ ഇരുട്ടിലാകുന്നു.",
+          "en": "The night is a sign for them. We strip the day from it, and they are in darkness."
+        }
+      },
+      {
+        "reference": "36:38",
+        "arabic": "وَٱلشَّمْسُ تَجْرِى لِمُسْتَقَرٍّ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+        "translation": {
+          "ml": "സൂര്യൻ അതിനു നിശ്ചയിച്ച സ്ഥാനത്തേക്ക് സഞ്ചരിക്കുന്നു. പ്രതാപശാലിയും എല്ലാം അറിയുന്നവനുമായവന്റെ നിർണയമാണത്.",
+          "en": "The sun runs towards its appointed resting place. That is the determination of the Mighty, the All-Knowing."
+        }
+      },
+      {
+        "reference": "36:39",
+        "arabic": "وَٱلْقَمَرَ قَدَّرْنَـٰهُ مَنَازِلَ حَتَّىٰ عَادَ كَٱلْعُرْجُونِ ٱلْقَدِيمِ",
+        "translation": {
+          "ml": "ചന്ദ്രന് നാം ഘട്ടങ്ങൾ നിശ്ചയിച്ചു; ഒടുവിൽ അത് പഴയ ഈന്തപ്പഴക്കുലയുടെ വളഞ്ഞ തണ്ടുപോലെയാകുന്നു.",
+          "en": "We determined stages for the moon until it becomes like an old curved date stalk."
+        }
+      },
+      {
+        "reference": "36:40",
+        "arabic": "لَا ٱلشَّمْسُ يَنۢبَغِى لَهَآ أَن تُدْرِكَ ٱلْقَمَرَ وَلَا ٱلَّيْلُ سَابِقُ ٱلنَّهَارِ ۚ وَكُلٌّ فِى فَلَكٍ يَسْبَحُونَ",
+        "translation": {
+          "ml": "സൂര്യന് ചന്ദ്രനെ പിടികൂടാനാവില്ല; രാത്രി പകലിനെ മറികടക്കുകയുമില്ല. ഓരോന്നും സ്വന്തം ഭ്രമണപഥത്തിൽ സഞ്ചരിക്കുന്നു.",
+          "en": "The sun cannot overtake the moon, nor can the night outstrip the day. Each swims in an orbit."
+        }
+      },
+      {
+        "reference": "36:41",
+        "arabic": "وَءَايَةٌ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِى ٱلْفُلْكِ ٱلْمَشْحُونِ",
+        "translation": {
+          "ml": "അവരുടെ സന്തതികളെ നിറച്ച കപ്പലിൽ നാം കയറ്റിയതും അവർക്ക് ഒരു ദൃഷ്ടാന്തമാണ്.",
+          "en": "A sign for them is that We carried their descendants in the laden ship."
+        }
+      },
+      {
+        "reference": "36:42",
+        "arabic": "وَخَلَقْنَا لَهُم مِّن مِّثْلِهِۦ مَا يَرْكَبُونَ",
+        "translation": {
+          "ml": "അതുപോലെ അവർ കയറിസഞ്ചരിക്കുന്ന മറ്റു വാഹനങ്ങളും നാം അവർക്കായി സൃഷ്ടിച്ചു.",
+          "en": "We also created for them other means of transport like it, which they ride."
+        }
+      },
+      {
+        "reference": "36:43",
+        "arabic": "وَإِن نَّشَأْ نُغْرِقْهُمْ فَلَا صَرِيخَ لَهُمْ وَلَا هُمْ يُنقَذُونَ",
+        "translation": {
+          "ml": "നാം ഉദ്ദേശിച്ചാൽ അവരെ മുക്കിക്കളയും; അവരെ സഹായിക്കാൻ ആരുമുണ്ടാകില്ല, അവർ രക്ഷിക്കപ്പെടുകയുമില്ല.",
+          "en": "If We will, We drown them; no one can answer their cry for help, nor will they be rescued."
+        }
+      },
+      {
+        "reference": "36:44",
+        "arabic": "إِلَّا رَحْمَةً مِّنَّا وَمَتَـٰعًا إِلَىٰ حِينٍ",
+        "translation": {
+          "ml": "നമ്മുടെ കാരുണ്യത്താൽ മാത്രമാണ് അവർ രക്ഷിക്കപ്പെടുന്നതും ഒരു നിശ്ചിതകാലം ജീവിതസുഖം അനുഭവിക്കുന്നതും.",
+          "en": "Only through mercy from Us and enjoyment for a limited time are they spared."
+        }
+      },
+      {
+        "reference": "36:45",
+        "arabic": "وَإِذَا قِيلَ لَهُمُ ٱتَّقُوا۟ مَا بَيْنَ أَيْدِيكُمْ وَمَا خَلْفَكُمْ لَعَلَّكُمْ تُرْحَمُونَ",
+        "translation": {
+          "ml": "നിങ്ങളുടെ മുമ്പിലും പിന്നിലുമുള്ളതിനെ സൂക്ഷിക്കുക; നിങ്ങൾക്ക് കരുണ ലഭിച്ചേക്കാം എന്നു അവരോട് പറയുമ്പോൾ.",
+          "en": "When they are told: Guard against what is before you and behind you, so that you may receive mercy."
+        }
+      },
+      {
+        "reference": "36:46",
+        "arabic": "وَمَا تَأْتِيهِم مِّنْ ءَايَةٍ مِّنْ ءَايَـٰتِ رَبِّهِمْ إِلَّا كَانُوا۟ عَنْهَا مُعْرِضِينَ",
+        "translation": {
+          "ml": "അവരുടെ രക്ഷിതാവിന്റെ ദൃഷ്ടാന്തങ്ങളിൽ ഏതെങ്കിലും വന്നാൽ അവർ അതിൽനിന്ന് പിന്തിരിയുക മാത്രമാണ് ചെയ്യുന്നത്.",
+          "en": "Whenever any sign of their Lord comes to them, they turn away from it."
+        }
+      },
+      {
+        "reference": "36:47",
+        "arabic": "وَإِذَا قِيلَ لَهُمْ أَنفِقُوا۟ مِمَّا رَزَقَكُمُ ٱللَّهُ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَنُطْعِمُ مَن لَّوْ يَشَآءُ ٱللَّهُ أَطْعَمَهُۥٓ إِنْ أَنتُمْ إِلَّا فِى ضَلَـٰلٍ مُّبِينٍ",
+        "translation": {
+          "ml": "അല്ലാഹു നൽകിയതിൽനിന്ന് ചെലവഴിക്കുക എന്നു അവരോട് പറഞ്ഞാൽ, നിഷേധിച്ചവർ വിശ്വസിച്ചവരോട് പറയുന്നു: അല്ലാഹു ഉദ്ദേശിച്ചിരുന്നെങ്കിൽ ഭക്ഷണം നൽകുമായിരുന്ന ഒരാൾക്ക് ഞങ്ങൾ ഭക്ഷണം നൽകണമോ? നിങ്ങൾ വ്യക്തമായ വഴികേടിലാണ്.",
+          "en": "When told to spend from what Allah has provided, the disbelievers say to the believers: Should we feed someone whom Allah could have fed if He wished? You are in clear error."
+        }
+      },
+      {
+        "reference": "36:48",
+        "arabic": "وَيَقُولُونَ مَتَىٰ هَـٰذَا ٱلْوَعْدُ إِن كُنتُمْ صَـٰدِقِينَ",
+        "translation": {
+          "ml": "നിങ്ങൾ സത്യസന്ധരാണെങ്കിൽ ഈ വാഗ്ദാനം എപ്പോഴാണ് സംഭവിക്കുക എന്നും അവർ ചോദിക്കുന്നു.",
+          "en": "They ask: When will this promise be fulfilled, if you are truthful?"
+        }
+      },
+      {
+        "reference": "36:49",
+        "arabic": "مَا يَنظُرُونَ إِلَّا صَيْحَةً وَٰحِدَةً تَأْخُذُهُمْ وَهُمْ يَخِصِّمُونَ",
+        "translation": {
+          "ml": "അവർ തർക്കിച്ചുകൊണ്ടിരിക്കുമ്പോൾ അവരെ പിടികൂടുന്ന ഒരൊറ്റ ഘോരശബ്ദം മാത്രമാണ് അവർ കാത്തിരിക്കുന്നത്.",
+          "en": "They await only a single mighty cry that will seize them while they dispute."
+        }
+      },
+      {
+        "reference": "36:50",
+        "arabic": "فَلَا يَسْتَطِيعُونَ تَوْصِيَةً وَلَآ إِلَىٰٓ أَهْلِهِمْ يَرْجِعُونَ",
+        "translation": {
+          "ml": "അപ്പോൾ അവർക്ക് വസിയ്യത്ത് നൽകാനോ കുടുംബങ്ങളിലേക്കു മടങ്ങാനോ കഴിയില്ല.",
+          "en": "Then they will be unable to make a final bequest or return to their families."
+        }
+      },
+      {
+        "reference": "36:51",
+        "arabic": "وَنُفِخَ فِى ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ",
+        "translation": {
+          "ml": "കാഹളത്തിൽ ഊതപ്പെടും; ഉടനെ അവർ കബറുകളിൽനിന്ന് തങ്ങളുടെ രക്ഷിതാവിലേക്കു കുതിക്കും.",
+          "en": "The trumpet will be blown, and they will hurry from their graves towards their Lord."
+        }
+      },
+      {
+        "reference": "36:52",
+        "arabic": "قَالُوا۟ يَـٰوَيْلَنَا مَنۢ بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَـٰذَا مَا وَعَدَ ٱلرَّحْمَـٰنُ وَصَدَقَ ٱلْمُرْسَلُونَ",
+        "translation": {
+          "ml": "അവർ പറയും: ഞങ്ങളുടെ നാശമേ! ഞങ്ങളുടെ ഉറക്കസ്ഥലത്തുനിന്ന് ആരാണ് ഞങ്ങളെ എഴുന്നേൽപ്പിച്ചത്? പരമകാരുണികൻ വാഗ്ദാനം ചെയ്തതാണിത്; ദൂതന്മാർ സത്യം പറഞ്ഞിരുന്നു.",
+          "en": "They will say: Woe to us! Who raised us from our sleeping place? This is what the Most Merciful promised, and the messengers spoke the truth."
+        }
+      },
+      {
+        "reference": "36:53",
+        "arabic": "إِن كَانَتْ إِلَّا صَيْحَةً وَٰحِدَةً فَإِذَا هُمْ جَمِيعٌ لَّدَيْنَا مُحْضَرُونَ",
+        "translation": {
+          "ml": "ഒരൊറ്റ ഘോരശബ്ദം മാത്രമായിരിക്കും; ഉടനെ അവരെല്ലാം നമ്മുടെ മുമ്പിൽ ഹാജരാക്കപ്പെടും.",
+          "en": "It will be only one mighty cry, and all of them will be brought before Us."
+        }
+      },
+      {
+        "reference": "36:54",
+        "arabic": "فَٱلْيَوْمَ لَا تُظْلَمُ نَفْسٌ شَيْـًٔا وَلَا تُجْزَوْنَ إِلَّا مَا كُنتُمْ تَعْمَلُونَ",
+        "translation": {
+          "ml": "അന്നേദിവസം ഒരാളോടും യാതൊരു അനീതിയും ചെയ്യപ്പെടില്ല. നിങ്ങൾ ചെയ്തതിന്റെ പ്രതിഫലം മാത്രമേ നിങ്ങൾക്ക് നൽകപ്പെടൂ.",
+          "en": "On that day no soul will suffer any injustice, and you will be recompensed only for what you did."
+        }
+      },
+      {
+        "reference": "36:55",
+        "arabic": "إِنَّ أَصْحَـٰبَ ٱلْجَنَّةِ ٱلْيَوْمَ فِى شُغُلٍ فَـٰكِهُونَ",
+        "translation": {
+          "ml": "സ്വർഗവാസികൾ അന്നേദിവസം സന്തോഷകരമായ കാര്യങ്ങളിൽ മുഴുകിയിരിക്കും.",
+          "en": "The people of Paradise will that day be occupied in joy."
+        }
+      },
+      {
+        "reference": "36:56",
+        "arabic": "هُمْ وَأَزْوَٰجُهُمْ فِى ظِلَـٰلٍ عَلَى ٱلْأَرَآئِكِ مُتَّكِـُٔونَ",
+        "translation": {
+          "ml": "അവരും അവരുടെ ഇണകളും തണലുകളിൽ അലങ്കരിച്ച ഇരിപ്പിടങ്ങളിൽ ചാരിയിരിക്കും.",
+          "en": "They and their spouses will recline on adorned couches in shade."
+        }
+      },
+      {
+        "reference": "36:57",
+        "arabic": "لَهُمْ فِيهَا فَـٰكِهَةٌ وَلَهُم مَّا يَدَّعُونَ",
+        "translation": {
+          "ml": "അവർക്കവിടെ പഴങ്ങളുണ്ടാകും; അവർ ആവശ്യപ്പെടുന്നതും ലഭിക്കും.",
+          "en": "They will have fruit there, and whatever they request."
+        }
+      },
+      {
+        "reference": "36:58",
+        "arabic": "سَلَـٰمٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ",
+        "translation": {
+          "ml": "കരുണയുള്ള രക്ഷിതാവിൽനിന്നുള്ള വചനമായി സമാധാനം ലഭിക്കും.",
+          "en": "Peace will be spoken to them by a Merciful Lord."
+        }
+      },
+      {
+        "reference": "36:59",
+        "arabic": "وَٱمْتَـٰزُوا۟ ٱلْيَوْمَ أَيُّهَا ٱلْمُجْرِمُونَ",
+        "translation": {
+          "ml": "കുറ്റവാളികളേ, ഇന്ന് നിങ്ങൾ വേർതിരിഞ്ഞുനിൽക്കുക.",
+          "en": "Stand apart today, you evildoers."
+        }
+      },
+      {
+        "reference": "36:60",
+        "arabic": "۞ أَلَمْ أَعْهَدْ إِلَيْكُمْ يَـٰبَنِىٓ ءَادَمَ أَن لَّا تَعْبُدُوا۟ ٱلشَّيْطَـٰنَ ۖ إِنَّهُۥ لَكُمْ عَدُوٌّ مُّبِينٌ",
+        "translation": {
+          "ml": "ആദമിന്റെ മക്കളേ, പിശാചിനെ ആരാധിക്കരുതെന്നും അവൻ നിങ്ങളുടെ വ്യക്തമായ ശത്രുവാണെന്നും ഞാൻ നിങ്ങളോട് നിർദേശിച്ചിരുന്നില്ലേ?",
+          "en": "Children of Adam, did I not enjoin you not to worship Satan, who is your clear enemy?"
+        }
+      },
+      {
+        "reference": "36:61",
+        "arabic": "وَأَنِ ٱعْبُدُونِى ۚ هَـٰذَا صِرَٰطٌ مُّسْتَقِيمٌ",
+        "translation": {
+          "ml": "എന്നെ ആരാധിക്കണമെന്നും നിർദേശിച്ചിരുന്നില്ലേ? ഇതാണ് നേരായ പാത.",
+          "en": "And to worship Me? This is the straight path."
+        }
+      },
+      {
+        "reference": "36:62",
+        "arabic": "وَلَقَدْ أَضَلَّ مِنكُمْ جِبِلًّا كَثِيرًا ۖ أَفَلَمْ تَكُونُوا۟ تَعْقِلُونَ",
+        "translation": {
+          "ml": "നിങ്ങളിൽ വലിയൊരു ജനസമൂഹത്തെ അവൻ വഴിതെറ്റിച്ചിട്ടുണ്ട്. എന്നിട്ടും നിങ്ങൾ ചിന്തിച്ചില്ലേ?",
+          "en": "He led a great multitude of you astray. Did you not use your reason?"
+        }
+      },
+      {
+        "reference": "36:63",
+        "arabic": "هَـٰذِهِۦ جَهَنَّمُ ٱلَّتِى كُنتُمْ تُوعَدُونَ",
+        "translation": {
+          "ml": "നിങ്ങൾക്ക് മുന്നറിയിപ്പ് നൽകപ്പെട്ടിരുന്ന നരകമാണിത്.",
+          "en": "This is the Hell of which you were warned."
+        }
+      },
+      {
+        "reference": "36:64",
+        "arabic": "ٱصْلَوْهَا ٱلْيَوْمَ بِمَا كُنتُمْ تَكْفُرُونَ",
+        "translation": {
+          "ml": "നിങ്ങൾ നിഷേധിച്ചിരുന്നതിനാൽ ഇന്ന് അതിൽ പ്രവേശിച്ച് എരിയുക.",
+          "en": "Enter and burn in it today because you used to disbelieve."
+        }
+      },
+      {
+        "reference": "36:65",
+        "arabic": "ٱلْيَوْمَ نَخْتِمُ عَلَىٰٓ أَفْوَٰهِهِمْ وَتُكَلِّمُنَآ أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم بِمَا كَانُوا۟ يَكْسِبُونَ",
+        "translation": {
+          "ml": "ഇന്ന് അവരുടെ വായുകൾ നാം മുദ്രവയ്ക്കും. അവരുടെ കൈകൾ നമ്മോട് സംസാരിക്കും; അവർ ചെയ്തതിനെക്കുറിച്ച് കാലുകൾ സാക്ഷ്യം പറയും.",
+          "en": "Today We seal their mouths. Their hands speak to Us and their feet bear witness to what they earned."
+        }
+      },
+      {
+        "reference": "36:66",
+        "arabic": "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ",
+        "translation": {
+          "ml": "നാം ഉദ്ദേശിച്ചിരുന്നെങ്കിൽ അവരുടെ കണ്ണുകൾ നാം മായ്ച്ചുകളയുമായിരുന്നു. അപ്പോൾ അവർ വഴിയിലേക്ക് മത്സരിച്ച് ഓടുമെങ്കിലും എങ്ങനെ കാണാനാകും?",
+          "en": "If We willed, We could erase their sight. They would rush towards the path, but how could they see?"
+        }
+      },
+      {
+        "reference": "36:67",
+        "arabic": "وَلَوْ نَشَآءُ لَمَسَخْنَـٰهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا ٱسْتَطَـٰعُوا۟ مُضِيًّا وَلَا يَرْجِعُونَ",
+        "translation": {
+          "ml": "നാം ഉദ്ദേശിച്ചിരുന്നെങ്കിൽ അവർ നിൽക്കുന്നിടത്തുതന്നെ അവരെ രൂപംമാറ്റിയേനേ. പിന്നെ അവർക്കു മുന്നോട്ടു പോകാനോ മടങ്ങാനോ കഴിയുമായിരുന്നില്ല.",
+          "en": "If We willed, We could transform them where they stand, leaving them unable to move forward or return."
+        }
+      },
+      {
+        "reference": "36:68",
+        "arabic": "وَمَن نُّعَمِّرْهُ نُنَكِّسْهُ فِى ٱلْخَلْقِ ۖ أَفَلَا يَعْقِلُونَ",
+        "translation": {
+          "ml": "നാം ദീർഘായുസ്സ് നൽകുന്നവന്റെ ശാരീരികാവസ്ഥയെ നാം തിരിച്ചിറക്കുന്നു. എന്നിട്ടും അവർ ചിന്തിക്കുന്നില്ലേ?",
+          "en": "Whoever We grant a long life, We reverse in physical strength. Will they not reason?"
+        }
+      },
+      {
+        "reference": "36:69",
+        "arabic": "وَمَا عَلَّمْنَـٰهُ ٱلشِّعْرَ وَمَا يَنۢبَغِى لَهُۥٓ ۚ إِنْ هُوَ إِلَّا ذِكْرٌ وَقُرْءَانٌ مُّبِينٌ",
+        "translation": {
+          "ml": "അദ്ദേഹത്തിന് നാം കവിത പഠിപ്പിച്ചിട്ടില്ല; അത് അദ്ദേഹത്തിന് യോജിക്കുന്നതുമല്ല. ഇത് ഉപദേശവും വ്യക്തമായ ഖുർആനും മാത്രമാണ്.",
+          "en": "We did not teach him poetry, nor is it fitting for him. This is only a reminder and a clear Quran."
+        }
+      },
+      {
+        "reference": "36:70",
+        "arabic": "لِّيُنذِرَ مَن كَانَ حَيًّا وَيَحِقَّ ٱلْقَوْلُ عَلَى ٱلْكَـٰفِرِينَ",
+        "translation": {
+          "ml": "ജീവനുള്ളവന് മുന്നറിയിപ്പ് നൽകാനും നിഷേധികളുടെമേൽ വിധിവചനം യാഥാർഥ്യമാകാനുമാണ് ഇത്.",
+          "en": "So that it may warn whoever is alive, and the decree become due against the disbelievers."
+        }
+      },
+      {
+        "reference": "36:71",
+        "arabic": "أَوَلَمْ يَرَوْا۟ أَنَّا خَلَقْنَا لَهُم مِّمَّا عَمِلَتْ أَيْدِينَآ أَنْعَـٰمًا فَهُمْ لَهَا مَـٰلِكُونَ",
+        "translation": {
+          "ml": "നമ്മുടെ കൈകൾ പ്രവർത്തിപ്പിച്ചതിൽനിന്ന് അവർക്കായി കന്നുകാലികളെ നാം സൃഷ്ടിച്ചതായി അവർ കണ്ടില്ലേ? അവർ അവയുടെ ഉടമകളാണ്.",
+          "en": "Do they not see that We created livestock for them from what Our hands have made, and they own them?"
+        }
+      },
+      {
+        "reference": "36:72",
+        "arabic": "وَذَلَّلْنَـٰهَا لَهُمْ فَمِنْهَا رَكُوبُهُمْ وَمِنْهَا يَأْكُلُونَ",
+        "translation": {
+          "ml": "നാം അവയെ അവർക്ക് കീഴ്പ്പെടുത്തി. അവയിൽ ചിലതിൽ അവർ സഞ്ചരിക്കുന്നു; ചിലതിൽനിന്ന് അവർ ഭക്ഷിക്കുന്നു.",
+          "en": "We made them subject to people; some they ride and some they eat."
+        }
+      },
+      {
+        "reference": "36:73",
+        "arabic": "وَلَهُمْ فِيهَا مَنَـٰفِعُ وَمَشَارِبُ ۖ أَفَلَا يَشْكُرُونَ",
+        "translation": {
+          "ml": "അവയിൽ മറ്റു പ്രയോജനങ്ങളും കുടിക്കാനുള്ള പാനീയങ്ങളും അവർക്കുണ്ട്. എന്നിട്ടും അവർ നന്ദി കാണിക്കുന്നില്ലേ?",
+          "en": "They have other benefits and drinks from them. Will they not give thanks?"
+        }
+      },
+      {
+        "reference": "36:74",
+        "arabic": "وَٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ ءَالِهَةً لَّعَلَّهُمْ يُنصَرُونَ",
+        "translation": {
+          "ml": "സഹായം ലഭിക്കുമെന്ന പ്രതീക്ഷയിൽ അല്ലാഹുവിനുപുറമെ അവർ ദൈവങ്ങളെ സ്വീകരിച്ചു.",
+          "en": "They have taken other deities besides Allah, hoping to be helped."
+        }
+      },
+      {
+        "reference": "36:75",
+        "arabic": "لَا يَسْتَطِيعُونَ نَصْرَهُمْ وَهُمْ لَهُمْ جُندٌ مُّحْضَرُونَ",
+        "translation": {
+          "ml": "ആ ദൈവങ്ങൾക്ക് അവരെ സഹായിക്കാനാവില്ല; ഇവരാകട്ടെ അവയ്ക്കുവേണ്ടി സജ്ജമായ സൈന്യമാണ്.",
+          "en": "Those deities cannot help them; their worshippers stand ready as a host for them."
+        }
+      },
+      {
+        "reference": "36:76",
+        "arabic": "فَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ",
+        "translation": {
+          "ml": "അവരുടെ വാക്കുകൾ നിന്നെ ദുഃഖിപ്പിക്കാതിരിക്കട്ടെ. അവർ മറച്ചുവയ്ക്കുന്നതും പരസ്യമാക്കുന്നതും നമുക്ക് അറിയാം.",
+          "en": "Let their words not grieve you. We know what they conceal and what they reveal."
+        }
+      },
+      {
+        "reference": "36:77",
+        "arabic": "أَوَلَمْ يَرَ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن نُّطْفَةٍ فَإِذَا هُوَ خَصِيمٌ مُّبِينٌ",
+        "translation": {
+          "ml": "മനുഷ്യൻ കണ്ടില്ലേ—നാം അവനെ ഒരു ബീജകണത്തിൽനിന്ന് സൃഷ്ടിച്ചു; എന്നിട്ടും അവൻ വ്യക്തമായി തർക്കിക്കുന്നവനാകുന്നു.",
+          "en": "Does the human not see that We created him from a drop, yet he becomes an open adversary?"
+        }
+      },
+      {
+        "reference": "36:78",
+        "arabic": "وَضَرَبَ لَنَا مَثَلًا وَنَسِىَ خَلْقَهُۥ ۖ قَالَ مَن يُحْىِ ٱلْعِظَـٰمَ وَهِىَ رَمِيمٌ",
+        "translation": {
+          "ml": "തന്റെ സൃഷ്ടിയെ മറന്നുകൊണ്ട് അവൻ നമുക്ക് ഒരു ഉദാഹരണം പറഞ്ഞു: ഈ അസ്ഥികൾ ദ്രവിച്ചിരിക്കുമ്പോൾ ആരാണ് അവയ്ക്ക് ജീവൻ നൽകുക?",
+          "en": "Forgetting his own creation, he presents an example to Us: Who will give life to bones when they have decayed?"
+        }
+      },
+      {
+        "reference": "36:79",
+        "arabic": "قُلْ يُحْيِيهَا ٱلَّذِىٓ أَنشَأَهَآ أَوَّلَ مَرَّةٍ ۖ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ",
+        "translation": {
+          "ml": "പറയുക: ആദ്യമായി അവയെ സൃഷ്ടിച്ചവൻ തന്നെ അവയ്ക്ക് ജീവൻ നൽകും. എല്ലാ സൃഷ്ടിയെക്കുറിച്ചും അവന് അറിവുണ്ട്.",
+          "en": "Say: The One who first created them will give them life. He knows every creation."
+        }
+      },
+      {
+        "reference": "36:80",
+        "arabic": "ٱلَّذِى جَعَلَ لَكُم مِّنَ ٱلشَّجَرِ ٱلْأَخْضَرِ نَارًا فَإِذَآ أَنتُم مِّنْهُ تُوقِدُونَ",
+        "translation": {
+          "ml": "പച്ചയായ വൃക്ഷത്തിൽനിന്ന് നിങ്ങൾക്ക് തീ ഉണ്ടാക്കിയവനാണവൻ. അതിൽനിന്നാണ് നിങ്ങൾ തീ കത്തിക്കുന്നത്.",
+          "en": "He made fire for you from the green tree, and from it you kindle fire."
+        }
+      },
+      {
+        "reference": "36:81",
+        "arabic": "أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ بِقَـٰدِرٍ عَلَىٰٓ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ ٱلْخَلَّـٰقُ ٱلْعَلِيمُ",
+        "translation": {
+          "ml": "ആകാശങ്ങളും ഭൂമിയും സൃഷ്ടിച്ചവന് ഇവരെപ്പോലുള്ളവരെ വീണ്ടും സൃഷ്ടിക്കാൻ കഴിയില്ലേ? തീർച്ചയായും കഴിയും. അവൻ സൃഷ്ടിച്ചുകൊണ്ടിരിക്കുന്നവനും എല്ലാം അറിയുന്നവനുമാണ്.",
+          "en": "Is the One who created the heavens and earth not able to create their like? Certainly He is; He is the ever-Creating, the All-Knowing."
+        }
+      },
+      {
+        "reference": "36:82",
+        "arabic": "إِنَّمَآ أَمْرُهُۥٓ إِذَآ أَرَادَ شَيْـًٔا أَن يَقُولَ لَهُۥ كُن فَيَكُونُ",
+        "translation": {
+          "ml": "ഒരു കാര്യം അവൻ ഉദ്ദേശിക്കുമ്പോൾ അതിനോട് ഉണ്ടാകുക എന്നു പറയുക മാത്രമാണ് അവന്റെ കല്പന; അപ്പോൾ അത് ഉണ്ടാകുന്നു.",
+          "en": "When He wills a thing, His command is only to say to it: Be, and it is."
+        }
+      },
+      {
+        "reference": "36:83",
+        "arabic": "فَسُبْحَـٰنَ ٱلَّذِى بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍ وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": {
+          "ml": "എല്ലാറ്റിന്റെയും പൂർണ്ണാധികാരം കൈവശമുള്ളവൻ എത്ര പരിശുദ്ധൻ! അവനിലേക്കാണ് നിങ്ങൾ മടക്കപ്പെടുന്നത്.",
+          "en": "Glory to the One in whose hand is the dominion of everything. To Him you will be returned."
+        }
+      }
+    ],
+    "opening_arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"
+  },
+  "105:1-5": {
+    "title": {
+      "ml": "സൂറത്ത് അൽ-ഫീൽ — പൂർണ്ണ പാഠവും അർഥവും",
+      "en": "Surah al-Fil — complete text and meaning"
+    },
+    "source_url": "https://quran.com/105",
+    "text_source_url": "https://api.quran.com/api/v4/quran/verses/uthmani?chapter_number=105",
+    "review_status": "checked_against_quran_text",
+    "verses": [
+      {
+        "reference": "105:1",
+        "arabic": " أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+        "translation": {
+          "ml": "ആനപ്പടക്കാരോട് നിന്റെ രക്ഷിതാവ് എങ്ങനെ പ്രവർത്തിച്ചുവെന്ന് നീ കണ്ടില്ലേ?",
+          "en": "Have you not seen how your Lord dealt with the companions of the elephant?"
+        }
+      },
+      {
+        "reference": "105:2",
+        "arabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+        "translation": {
+          "ml": "അവരുടെ തന്ത്രം അവൻ പാഴാക്കിയില്ലേ?",
+          "en": "Did He not render their plan futile?"
+        }
+      },
+      {
+        "reference": "105:3",
+        "arabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+        "translation": {
+          "ml": "അവർക്കെതിരെ കൂട്ടംകൂട്ടമായി പക്ഷികളെ അവൻ അയച്ചു.",
+          "en": "He sent birds against them in flocks."
+        }
+      },
+      {
+        "reference": "105:4",
+        "arabic": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+        "translation": {
+          "ml": "ചുട്ട മണ്ണിന്റെ കല്ലുകൾ അവ അവരുടെമേൽ എറിഞ്ഞു.",
+          "en": "They struck them with stones of baked clay."
+        }
+      },
+      {
+        "reference": "105:5",
+        "arabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+        "translation": {
+          "ml": "അങ്ങനെ അവരെ അവൻ തിന്നുതീർത്ത വൈക്കോൽപോലെയാക്കി.",
+          "en": "He made them like chewed straw."
+        }
+      }
+    ],
+    "opening_arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"
   }
 }

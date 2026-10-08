@@ -6,6 +6,14 @@ import { createRequire } from 'node:module';
 import { build } from 'esbuild';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 assert.equal(Object.keys(guides).length, 28);
+const verseGroups = JSON.parse(fs.readFileSync('src/data/birhatiahMethodVerses.json', 'utf8'));
+for (const [group, surah, count] of [['36:1-83', 36, 83], ['105:1-5', 105, 5]]) {
+  assert.equal(verseGroups[group].verses.length, count);
+  verseGroups[group].verses.forEach((verse, i) => {
+    assert.equal(verse.reference, `${surah}:${i + 1}`);
+    assert.ok(verse.arabic && verse.translation.ml && verse.translation.en);
+  });
+}
 const work = fs.mkdtempSync(path.join(os.tmpdir(), 'birhatiah-guide-'));
 const output = path.join(work, 'reader.cjs');
 await build({ stdin: { contents: `import React from 'react'; import { renderToStaticMarkup } from 'react-dom/server'; import Reader from './src/components/holynameknowledge/HolyNameSourceChapter.jsx'; import Collective from './src/components/holynameknowledge/BirhatiahCollectiveVersion.jsx'; import { HolyNamesLanguageContext } from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx'; export const render = (chapter, language) => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, { value: {language} }, chapter ? React.createElement(Reader, { chapter, nameId: chapter.name_id }) : React.createElement(Collective)));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: {'@': path.join(process.cwd(), 'src')} });
@@ -16,7 +24,7 @@ for (const [id, guide] of Object.entries(guides)) {
   for (const language of ['ml', 'en']) {
     for (const method of guide.other_methods || []) {
       const sourceChapter = JSON.parse(fs.readFileSync(`content/source-checked/${method.source_name_id || id}.json`, 'utf8'));
-      assert.ok(['practices', 'source_notes', 'edition_accounts'].flatMap(key => sourceChapter[key] || []).some(entry => entry.id === method.source_entry), `${id}: additional method lacks source`);
+      assert.ok(method.external_source?.url?.startsWith('https://') && method.external_source.checked_on || ['practices', 'source_notes', 'edition_accounts'].flatMap(key => sourceChapter[key] || []).some(entry => entry.id === method.source_entry), `${id}: additional method lacks source`);
       assert.ok(method.steps[language]?.length && method.title[language] && method.benefit[language]);
       if (method.figure) assert.ok(fs.existsSync(`public${method.figure.image_path}`));
     }
@@ -29,10 +37,28 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(!primary.includes('data-reader-section="references"'));
     assert.ok(!primary.includes('28 പേരുകൾക്കുള്ള സംയുക്തവും അനുബന്ധവുമായ ഗ്രന്ഥവിവരങ്ങൾ'));
     assert.ok(!primary.includes('SourceSubjects'));
+    assert.ok(!primary.includes('ബന്ധപ്പെട്ട ദുആകളും അർഥവുമായി ബന്ധപ്പെട്ട വചനങ്ങളും'));
+    assert.ok(!primary.includes('data-reader-section="duas"'));
+    assert.ok(primary.includes('data-reader-section="name-details"'));
+    const allMethods = [guide, ...(guide.other_methods || [])];
+    assert.equal(new Set(allMethods.map(method => method.method_id)).size, allMethods.length);
+    for (const method of allMethods) assert.ok(primary.includes(`id="${id}-${method.method_id}"`) && primary.includes(`href="#${id}-${method.method_id}"`), `${id}: purpose must link to its complete block`);
     for (const method of guide.other_methods || []) assert.ok(primary.includes(`data-source-entry="${method.source_entry}"`));
     if (guide.spoken_request) assert.ok(primary.includes(guide.spoken_request.arabic));
+    for (const method of allMethods) {
+      if (method.spoken_request?.arabic_reading) {
+        const strip = text => text.replace(/[\u064B-\u065F\u0670\u0640\s]/g, '');
+        assert.equal(strip(method.spoken_request.arabic_reading), strip(method.spoken_request.arabic));
+      }
+      if (method.source_pages) for (const page of method.source_pages) assert.ok(fs.existsSync(`public/figures/birhatiah-manba-p${page}.png`));
+    }
     if (id === 'HNK-MHC-017') assert.ok(primary.includes('/figures/qazmaz-english-p129.png'));
     if (id === 'HNK-MHC-004') assert.ok(primary.includes('59:21') && primary.includes('59:24'));
+    if (id === 'HNK-MHC-004') {
+      assert.ok(guide.steps.ml.some(step => step.includes('ഏഴ് ഹംസ')));
+      assert.ok(guide.other_methods.some(method => method.steps.ml.some(step => step.includes('അഞ്ച് ഹംസ'))));
+      assert.ok(chapter.practices.find(entry => entry.id === 'protection-five').arabic_original.includes('وسبع همزات'));
+    }
     if (id === 'HNK-MHC-010') assert.ok(primary.includes('86:1') && primary.includes('86:17'));
     if (id === 'HNK-MHC-027') assert.ok(primary.includes('1:1') && primary.includes('1:7'));
     assert.ok(!primary.includes('mundhiri-collective-241-242'));
@@ -44,7 +70,13 @@ for (const [id, guide] of Object.entries(guides)) {
       assert.ok(primary.includes('/figures/kaydahula-manba-p72.svg'));
       assert.ok(primary.includes(language === 'ml' ? 'ഇത് എഴുത്തിന്റെ എണ്ണമാണ്' : 'This counts inscriptions'));
     }
-    if (id === 'HNK-MHC-028') assert.ok(primary.includes(language === 'ml' ? 'ഈ പേര് ഒറ്റയ്ക്ക് ചൊല്ലാനുള്ള എണ്ണമല്ല' : 'not a count for this name alone'));
+    if (id === 'HNK-MHC-028') {
+      assert.ok(primary.includes(language === 'ml' ? 'ഈ പേര് ഒറ്റയ്ക്ക് ചൊല്ലാനുള്ള എണ്ണമല്ല' : 'not a count for this name alone'));
+      assert.ok(primary.includes('36:1') && primary.includes('36:83'));
+      assert.ok(primary.includes('data-reader-section="all-names-text"'));
+    }
+    if (id === 'HNK-MHC-017') assert.ok(primary.includes('data-reader-section="inline-collective-formula"'));
+    if (id === 'HNK-MHC-018') assert.ok(primary.includes('105:1') && primary.includes('105:5'));
   }
 }
 for (const language of ['ml', 'en']) {
@@ -65,4 +97,4 @@ for (const [id, count] of [['1:1-7', 7], ['86:1-17', 17], ['59:21-24', 4]]) {
   assert.equal(new Set(verses[id].verses.map(verse => verse.reference)).size, count);
   assert.ok(verses[id].verses.every(verse => verse.arabic && verse.translation.ml && verse.translation.en));
 }
-console.log('Reader guide: 28 source-linked methods, 56 bilingual renders, collapsed references, inscription/recitation separation and collective method ordering passed.');
+console.log(`Reader guide: ${Object.values(guides).reduce((count, guide) => count + 1 + (guide.other_methods?.length || 0), 0)} purpose blocks in 28 cards, 56 bilingual renders, linked sources, scoped verses, inscription/recitation separation and collective ordering passed.`);

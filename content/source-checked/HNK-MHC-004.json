@@ -21,10 +21,10 @@
         "ml": "ഈ നിർദ്ദേശത്തിൽ നിശ്ചിത സമയമോ ദിവസമോ പറഞ്ഞിട്ടില്ല."
       },
       "translation": {
-        "en": "The source describes five inscriptions together with the last four verses of al-Hashr, three ha letters and five hamzas, carried for claimed protection against humans, jinn and tyrants. This note does not substitute for the complete verse text.",
-        "ml": "ഈ പേര് അഞ്ചു തവണ, സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, അഞ്ച് ഹംസകൾ എന്നിവയ്ക്കൊപ്പം എഴുതി കൈവശം വെക്കുന്നതിനെക്കുറിച്ച് ഗ്രന്ഥം പറയുന്നു. മനുഷ്യർ, ജിന്നുകൾ, അധികാരദുരുപയോഗം ചെയ്യുന്നവർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്ന് സംരക്ഷണം ലഭിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. ഈ കുറിപ്പ് ആയത്തുകളുടെ പൂർണ്ണ പാഠത്തിന് പകരമല്ല."
+        "en": "The source describes five inscriptions together with the last four verses of al-Hashr, three ha letters and seven hamzas, carried for claimed protection against humans, jinn and tyrants. This note does not substitute for the complete verse text.",
+        "ml": "ഈ പേര് അഞ്ചു തവണ, സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, ഏഴ് ഹംസകൾ എന്നിവയ്ക്കൊപ്പം എഴുതി കൈവശം വെക്കുന്നതിനെക്കുറിച്ച് ഗ്രന്ഥം പറയുന്നു. മനുഷ്യർ, ജിന്നുകൾ, അധികാരദുരുപയോഗം ചെയ്യുന്നവർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്ന് സംരക്ഷണം ലഭിക്കുമെന്നാണ് അതിന്റെ അവകാശവാദം. ഈ കുറിപ്പ് ആയത്തുകളുടെ പൂർണ്ണ പാഠത്തിന് പകരമല്ല."
       },
-      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع آخر أربع آيات آخر سورة الحشر وثلاث هاءات وخمس همزات حرس من سطوة الإنس والجن والجبابرة"
+      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع آخر أربع آيات آخر سورة الحشر وثلاث هاءات وسبع همزات حرس من سطوة الإنس والجن والجبابرة"
     }
   ],
   "scope_note": {
@@ -85,5 +85,6 @@
         "correspondence"
       ]
     }
-  ]
+  ],
+  "source_review_revision": "2026-10-08-hamza-count-rechecked-p68"
 }

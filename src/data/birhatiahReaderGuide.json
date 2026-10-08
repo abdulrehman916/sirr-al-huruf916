@@ -37,7 +37,8 @@
           "en": [
             "Read the name one hundred times daily for forty days."
           ]
-        }
+        },
+        "method_id": "hnk-mhc-001-purpose-002"
       },
       {
         "source_entry": "right-palm-seven",
@@ -58,7 +59,8 @@
             "Write the name seven times on the right palm.",
             "Its subsequent account of licking the inscription on an empty stomach is retained as historical information, not an ingestion instruction."
           ]
-        }
+        },
+        "method_id": "hnk-mhc-001-purpose-003"
       },
       {
         "source_entry": "english-extended-002",
@@ -81,9 +83,151 @@
           ]
         },
         "source_name_id": "HNK-MHC-002",
-        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ"
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ",
+        "method_id": "hnk-mhc-001-purpose-004"
+      },
+      {
+        "method_id": "childbirth-35",
+        "source_entry": "english-extended-001",
+        "title": {
+          "ml": "പ്രസവപ്രയാസം — ചരിത്രത്തിലെ 35 എഴുത്തുരീതി",
+          "en": "Childbirth difficulty — historical thirty-five inscriptions"
+        },
+        "benefit": {
+          "ml": "പ്രസവം സുഗമമാകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of easier childbirth."
+        },
+        "steps": {
+          "ml": [
+            "ശുദ്ധമായ വെളുത്ത പാത്രത്തിൽ പേര് 35 തവണ എഴുതുന്നതാണ് ഈ ചരിത്രരീതി.",
+            "എഴുത്ത് കഴുകിയെടുത്തത് കുടിപ്പിക്കുന്നതാണ് തുടർഘട്ടം. ഇത് പ്രസവചികിത്സയ്ക്കോ അടിയന്തരസഹായത്തിനോ പകരമായി ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "This historical method specifies thirty-five name inscriptions on a clean white dish.",
+            "The next historical step is ingestion of the washed inscription. Do not use this in place of obstetric or emergency care."
+          ]
+        }
+      },
+      {
+        "method_id": "paired-love",
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "സ്നേഹം ലഭിക്കാൻ — രണ്ടു പേരുകളുടെ രീതി",
+          "en": "Love — paired names"
+        },
+        "benefit": {
+          "ml": "സ്നേഹം ഉണ്ടാകുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of affection."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും ഭക്ഷണത്തിൽ എഴുതിനൽകുക, അല്ലെങ്കിൽ വെള്ളത്തിനുമീതെ വായിക്കുക എന്നിങ്ങനെ രണ്ടു രീതികളുണ്ട്.",
+            "കഴുകിയ എഴുത്തോ എഴുതാൻ ഉപയോഗിച്ച വസ്തുവോ കഴിക്കാനുള്ള നിർദേശമായി ഇതിനെ ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "Two historical forms are inscription on food or recitation over water.",
+            "Do not treat this as advice to ingest an inscription or writing material."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ",
+        "source_name_id": "HNK-MHC-002"
+      },
+      {
+        "method_id": "marriage-ring",
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "വിവാഹാലോചന ലഭിക്കാൻ",
+          "en": "For a marriage proposal"
+        },
+        "benefit": {
+          "ml": "വിവാഹാലോചന വരുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of receiving a marriage proposal."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും amber മോതിരത്തിൽ കൊത്തിവയ്ക്കുക.",
+            "വിവാഹാലോചന ലഭിക്കാത്ത പെൺകുട്ടി മോതിരം കൈവശം വയ്ക്കുക."
+          ],
+          "en": [
+            "Engrave both names on an amber ring.",
+            "The unmarried woman seeking a proposal carries the ring."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ",
+        "source_name_id": "HNK-MHC-002"
+      },
+      {
+        "method_id": "three-name-spirits",
+        "source_entry": "english-extended-003",
+        "title": {
+          "ml": "ആത്മാക്കളുടെ അനുസരണത്തിനായി — മൂന്ന് പേരുകൾ",
+          "en": "Spirit obedience — three names"
+        },
+        "benefit": {
+          "ml": "ആകാശ–ഭൂതല ആത്മാക്കൾ അനുസരിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of obedience of celestial and terrestrial spirits."
+        },
+        "steps": {
+          "ml": [
+            "മൂന്ന് പേരുകളും ചേർത്ത് പതിവായി വായിക്കുക."
+          ],
+          "en": [
+            "Read the three names together regularly."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ",
+        "source_name_id": "HNK-MHC-003"
+      },
+      {
+        "method_id": "four-name-protection",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ബാധിതന്റെ സംരക്ഷണത്തിനായി — ആദ്യ നാല് പേരുകൾ",
+          "en": "Protection — first four names"
+        },
+        "benefit": {
+          "ml": "ബോധം തിരിച്ചുകിട്ടൽ, ജിന്ന് വിട്ടുപോകൽ, സിഹ്റ് മാറൽ എന്നിവയുടെ പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claims of recovery of consciousness, departure of jinn and spell relief."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും കടലാസിൽ എഴുതുക.",
+            "എഴുത്ത് ബാധിതനിൽ തൂക്കുക. ബോധക്ഷയം സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the first four names on paper.",
+            "Attach the inscription to the person. This historical method is not a treatment for unconsciousness."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
+      },
+      {
+        "method_id": "four-name-need",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ആവശ്യം നിറവേറാൻ — ആദ്യ നാല് പേരുകൾ",
+          "en": "Fulfilment of a need — first four names"
+        },
+        "benefit": {
+          "ml": "ആവശ്യം നിറവേറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of fulfilment of a need."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും എഴുതുക.",
+            "എഴുത്ത് പനിനീരിൽ കഴുകിയെടുത്ത് മുഖത്ത് പുരട്ടുക; തുടർന്ന് ആവശ്യത്തിനായി പോകുക."
+          ],
+          "en": [
+            "Write the first four names.",
+            "Wash the inscription off with rosewater, apply it to the face, then pursue the need."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-001-purpose-001"
   },
   "HNK-MHC-002": {
     "title": {
@@ -123,7 +267,8 @@
             "Write the name eleven times on paper.",
             "Place the inscription among the trader’s goods."
           ]
-        }
+        },
+        "method_id": "hnk-mhc-002-purpose-002"
       },
       {
         "source_entry": "historical-eye-account-17",
@@ -144,7 +289,8 @@
             "The washing count is seventeen; the duration is three days.",
             "The use of inscription water in the eye is retained as a historical account, not a treatment instruction."
           ]
-        }
+        },
+        "method_id": "hnk-mhc-002-purpose-003"
       },
       {
         "source_entry": "english-extended-002",
@@ -167,9 +313,127 @@
           ]
         },
         "source_name_id": "HNK-MHC-002",
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ",
+        "method_id": "hnk-mhc-002-purpose-004"
+      },
+      {
+        "method_id": "paired-love",
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "സ്നേഹം ലഭിക്കാൻ — രണ്ടു പേരുകളുടെ രീതി",
+          "en": "Love — paired names"
+        },
+        "benefit": {
+          "ml": "സ്നേഹം ഉണ്ടാകുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of affection."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും ഭക്ഷണത്തിൽ എഴുതിനൽകുക, അല്ലെങ്കിൽ വെള്ളത്തിനുമീതെ വായിക്കുക എന്നിങ്ങനെ രണ്ടു രീതികളുണ്ട്.",
+            "കഴുകിയ എഴുത്തോ എഴുതാൻ ഉപയോഗിച്ച വസ്തുവോ കഴിക്കാനുള്ള നിർദേശമായി ഇതിനെ ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "Two historical forms are inscription on food or recitation over water.",
+            "Do not treat this as advice to ingest an inscription or writing material."
+          ]
+        },
         "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ"
+      },
+      {
+        "method_id": "marriage-ring",
+        "source_entry": "english-extended-002",
+        "title": {
+          "ml": "വിവാഹാലോചന ലഭിക്കാൻ",
+          "en": "For a marriage proposal"
+        },
+        "benefit": {
+          "ml": "വിവാഹാലോചന വരുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of receiving a marriage proposal."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും amber മോതിരത്തിൽ കൊത്തിവയ്ക്കുക.",
+            "വിവാഹാലോചന ലഭിക്കാത്ത പെൺകുട്ടി മോതിരം കൈവശം വയ്ക്കുക."
+          ],
+          "en": [
+            "Engrave both names on an amber ring.",
+            "The unmarried woman seeking a proposal carries the ring."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ"
+      },
+      {
+        "method_id": "three-name-spirits",
+        "source_entry": "english-extended-003",
+        "title": {
+          "ml": "ആത്മാക്കളുടെ അനുസരണത്തിനായി — മൂന്ന് പേരുകൾ",
+          "en": "Spirit obedience — three names"
+        },
+        "benefit": {
+          "ml": "ആകാശ–ഭൂതല ആത്മാക്കൾ അനുസരിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of obedience of celestial and terrestrial spirits."
+        },
+        "steps": {
+          "ml": [
+            "മൂന്ന് പേരുകളും ചേർത്ത് പതിവായി വായിക്കുക."
+          ],
+          "en": [
+            "Read the three names together regularly."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ",
+        "source_name_id": "HNK-MHC-003"
+      },
+      {
+        "method_id": "four-name-protection",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ബാധിതന്റെ സംരക്ഷണത്തിനായി — ആദ്യ നാല് പേരുകൾ",
+          "en": "Protection — first four names"
+        },
+        "benefit": {
+          "ml": "ബോധം തിരിച്ചുകിട്ടൽ, ജിന്ന് വിട്ടുപോകൽ, സിഹ്റ് മാറൽ എന്നിവയുടെ പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claims of recovery of consciousness, departure of jinn and spell relief."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും കടലാസിൽ എഴുതുക.",
+            "എഴുത്ത് ബാധിതനിൽ തൂക്കുക. ബോധക്ഷയം സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the first four names on paper.",
+            "Attach the inscription to the person. This historical method is not a treatment for unconsciousness."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
+      },
+      {
+        "method_id": "four-name-need",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ആവശ്യം നിറവേറാൻ — ആദ്യ നാല് പേരുകൾ",
+          "en": "Fulfilment of a need — first four names"
+        },
+        "benefit": {
+          "ml": "ആവശ്യം നിറവേറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of fulfilment of a need."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും എഴുതുക.",
+            "എഴുത്ത് പനിനീരിൽ കഴുകിയെടുത്ത് മുഖത്ത് പുരട്ടുക; തുടർന്ന് ആവശ്യത്തിനായി പോകുക."
+          ],
+          "en": [
+            "Write the first four names.",
+            "Wash the inscription off with rosewater, apply it to the face, then pursue the need."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-002-purpose-001"
   },
   "HNK-MHC-003": {
     "title": {
@@ -209,14 +473,107 @@
             "Write the name thirteen times on tin.",
             "Place the tin in the affected house."
           ]
+        },
+        "method_id": "hnk-mhc-003-purpose-002"
+      },
+      {
+        "method_id": "marital-reconciliation",
+        "source_entry": "english-extended-003",
+        "title": {
+          "ml": "ദാമ്പത്യ തർക്കം മാറാൻ",
+          "en": "For marital reconciliation"
+        },
+        "benefit": {
+          "ml": "ദമ്പതികൾക്കിടയിൽ അനുരഞ്ജനം ഉണ്ടാകുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of marital reconciliation."
+        },
+        "steps": {
+          "ml": [
+            "കസ്തൂരിയും കുങ്കുമപ്പൂവും ഉപയോഗിച്ച് മാൻതോൽ രേഖയിൽ പേര് 70 തവണ എഴുതുക.",
+            "ഭർത്താവ് അത് തലയിൽ വഹിക്കുക. 70 എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്."
+          ],
+          "en": [
+            "Write the name seventy times on gazelle parchment using musk and saffron.",
+            "The husband carries it on his head. Seventy counts inscriptions."
+          ]
         }
+      },
+      {
+        "method_id": "three-name-spirits",
+        "source_entry": "english-extended-003",
+        "title": {
+          "ml": "ആത്മാക്കളുടെ അനുസരണത്തിനായി — മൂന്ന് പേരുകൾ",
+          "en": "Spirit obedience — three names"
+        },
+        "benefit": {
+          "ml": "ആകാശ–ഭൂതല ആത്മാക്കൾ അനുസരിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of obedience of celestial and terrestrial spirits."
+        },
+        "steps": {
+          "ml": [
+            "മൂന്ന് പേരുകളും ചേർത്ത് പതിവായി വായിക്കുക."
+          ],
+          "en": [
+            "Read the three names together regularly."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ"
+      },
+      {
+        "method_id": "four-name-protection",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ബാധിതന്റെ സംരക്ഷണത്തിനായി — ആദ്യ നാല് പേരുകൾ",
+          "en": "Protection — first four names"
+        },
+        "benefit": {
+          "ml": "ബോധം തിരിച്ചുകിട്ടൽ, ജിന്ന് വിട്ടുപോകൽ, സിഹ്റ് മാറൽ എന്നിവയുടെ പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claims of recovery of consciousness, departure of jinn and spell relief."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും കടലാസിൽ എഴുതുക.",
+            "എഴുത്ത് ബാധിതനിൽ തൂക്കുക. ബോധക്ഷയം സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the first four names on paper.",
+            "Attach the inscription to the person. This historical method is not a treatment for unconsciousness."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
+      },
+      {
+        "method_id": "four-name-need",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ആവശ്യം നിറവേറാൻ — ആദ്യ നാല് പേരുകൾ",
+          "en": "Fulfilment of a need — first four names"
+        },
+        "benefit": {
+          "ml": "ആവശ്യം നിറവേറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of fulfilment of a need."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും എഴുതുക.",
+            "എഴുത്ത് പനിനീരിൽ കഴുകിയെടുത്ത് മുഖത്ത് പുരട്ടുക; തുടർന്ന് ആവശ്യത്തിനായി പോകുക."
+          ],
+          "en": [
+            "Write the first four names.",
+            "Wash the inscription off with rosewater, apply it to the face, then pursue the need."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ",
+        "source_name_id": "HNK-MHC-004"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-003-purpose-001"
   },
   "HNK-MHC-004": {
     "title": {
-      "ml": "സംരക്ഷണത്തിനായി",
-      "en": "Protective inscription"
+      "ml": "സംരക്ഷണത്തിനായി — ഏഴ് ഹംസകളുള്ള രീതി",
+      "en": "Protection — seven-hamza version"
     },
     "benefit": {
       "ml": "മനുഷ്യരുടെയും ജിന്നുകളുടെയും അധികാരദുരുപയോഗം ചെയ്യുന്നവരുടെയും ആധിപത്യത്തിൽനിന്നുള്ള സംരക്ഷണം.",
@@ -225,17 +582,138 @@
     "steps": {
       "ml": [
         "പേര് 5 തവണ എഴുതുക.",
-        "സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, ه മൂന്ന് തവണ, ഹംസ അഞ്ച് തവണ എന്നിവ ചേർക്കുക.",
+        "സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകൾ, മൂന്ന് ه അക്ഷരങ്ങൾ, ഏഴ് ഹംസകൾ എന്നിവ ചേർത്ത് എഴുതുക.",
         "എഴുത്ത് കൈവശം വയ്ക്കുക."
       ],
       "en": [
         "Write the name five times.",
-        "Add the last four verses of al-Hashr, three instances of ه and five hamzas.",
+        "Add the last four verses of al-Hashr, three instances of ه and seven hamzas.",
         "Carry the inscription."
       ]
     },
     "source_entry": "protection-five",
-    "verse_group": "59:21-24"
+    "verse_group": "59:21-24",
+    "other_methods": [
+      {
+        "method_id": "bread-release",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "തടവിൽനിന്നുള്ള മോചനം — ചരിത്രത്തിലെ അപ്പരീതി",
+          "en": "Release from imprisonment — historical bread method"
+        },
+        "benefit": {
+          "ml": "തടവുകാരന് മോചനം ലഭിക്കുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of release from imprisonment."
+        },
+        "steps": {
+          "ml": [
+            "അപ്പത്തിലോ ഉണങ്ങിയ അപ്പത്തിലോ പേര് 21 തവണ എഴുതുന്നതാണ് ചരിത്രരീതി.",
+            "തടവുകാരൻ അത് രണ്ടു ഭാഗങ്ങളാക്കി കഴിക്കുന്നതാണ് തുടർഘട്ടം; എഴുത്തുവസ്തു കഴിക്കാനുള്ള നിർദേശമായി ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "The historical method specifies twenty-one inscriptions on bread or dried bread.",
+            "The prisoner divides and eats it; this is not advice to ingest writing materials."
+          ]
+        }
+      },
+      {
+        "method_id": "four-name-protection",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ബാധിതന്റെ സംരക്ഷണത്തിനായി — ആദ്യ നാല് പേരുകൾ",
+          "en": "Protection — first four names"
+        },
+        "benefit": {
+          "ml": "ബോധം തിരിച്ചുകിട്ടൽ, ജിന്ന് വിട്ടുപോകൽ, സിഹ്റ് മാറൽ എന്നിവയുടെ പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claims of recovery of consciousness, departure of jinn and spell relief."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും കടലാസിൽ എഴുതുക.",
+            "എഴുത്ത് ബാധിതനിൽ തൂക്കുക. ബോധക്ഷയം സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the first four names on paper.",
+            "Attach the inscription to the person. This historical method is not a treatment for unconsciousness."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ"
+      },
+      {
+        "method_id": "four-name-need",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "ആവശ്യം നിറവേറാൻ — ആദ്യ നാല് പേരുകൾ",
+          "en": "Fulfilment of a need — first four names"
+        },
+        "benefit": {
+          "ml": "ആവശ്യം നിറവേറുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of fulfilment of a need."
+        },
+        "steps": {
+          "ml": [
+            "ആദ്യ നാല് പേരുകളും എഴുതുക.",
+            "എഴുത്ത് പനിനീരിൽ കഴുകിയെടുത്ത് മുഖത്ത് പുരട്ടുക; തുടർന്ന് ആവശ്യത്തിനായി പോകുക."
+          ],
+          "en": [
+            "Write the first four names.",
+            "Wash the inscription off with rosewater, apply it to the face, then pursue the need."
+          ]
+        },
+        "formula_arabic": "بِرْهَتِيْهٍ كَرِيرٍ تَتْلِيهٍ طُورَانٍ"
+      },
+      {
+        "method_id": "english-protection-five-hamzas",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "സംരക്ഷണത്തിനായി — അഞ്ച് ഹംസകളുള്ള രീതി",
+          "en": "Protection — five-hamza version"
+        },
+        "benefit": {
+          "ml": "മനുഷ്യർ, ജിന്നുകൾ, പീഡകർ എന്നിവരിൽനിന്നുള്ള സംരക്ഷണമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of protection from people, jinn and tyrants."
+        },
+        "steps": {
+          "ml": [
+            "പേര് അഞ്ചു തവണ എഴുതുക.",
+            "അൽ-ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകളും മൂന്ന് ه അക്ഷരങ്ങളും അഞ്ച് ഹംസകളും ചേർത്ത് എഴുതുക.",
+            "എഴുത്ത് കൈവശം വയ്ക്കുക."
+          ],
+          "en": [
+            "Write the name five times.",
+            "Add the last four verses of al-Hashr, three ه letters and five hamzas.",
+            "Carry the inscription."
+          ]
+        },
+        "verse_group": "59:21-24"
+      },
+      {
+        "method_id": "oppressor-nightly",
+        "source_entry": "english-extended-004",
+        "title": {
+          "ml": "പീഡകനെതിരെയുള്ള ചരിത്രവായന — രാത്രിയിൽ 1000",
+          "en": "Historical reading against an oppressor — one thousand nightly"
+        },
+        "benefit": {
+          "ml": "മൂന്നു ദിവസത്തിനുള്ളിൽ പ്രതികാരം ഉണ്ടാകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of redress within three days."
+        },
+        "steps": {
+          "ml": [
+            "രാത്രിയിൽ പേര് 1000 തവണ വായിക്കുക.",
+            "ഓരോ നൂറിനുശേഷവും പീഡകനെതിരെ പ്രതികാരം ആവശ്യപ്പെടുന്നതാണ് തുടർഘട്ടം. ഈ അഭ്യർഥനയുടെ കൃത്യമായ അറബി വാക്യം സ്ഥിരീകരിച്ചിട്ടില്ല."
+          ],
+          "en": [
+            "Read the name one thousand times at night.",
+            "After every hundred, request redress against the oppressor. The exact Arabic request is unverified."
+          ]
+        }
+      }
+    ],
+    "method_id": "hnk-mhc-004-purpose-001",
+    "source_pages": [
+      68
+    ]
   },
   "HNK-MHC-005": {
     "title": {
@@ -279,9 +757,64 @@
           ]
         },
         "source_name_id": "HNK-MHC-006",
-        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ"
+        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ",
+        "method_id": "hnk-mhc-005-purpose-002"
+      },
+      {
+        "method_id": "fertility-seven",
+        "source_entry": "english-extended-005",
+        "title": {
+          "ml": "ഗർഭധാരണം — ചരിത്രത്തിലെ ഏഴ് എഴുത്തുരീതി",
+          "en": "Conception — historical seven-inscription method"
+        },
+        "benefit": {
+          "ml": "ഗർഭധാരണം ഉണ്ടാകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of conception."
+        },
+        "steps": {
+          "ml": [
+            "പേര് ഏഴ് തവണയും എട്ട് Tahatil നാമങ്ങളും പാത്രത്തിൽ എഴുതുക എന്നതാണ് ചരിത്രരീതിയുടെ തുടക്കം.",
+            "കഴുകിയ എഴുത്ത് ഏഴ് ദിവസങ്ങളിൽ ഏഴ് തവണ കുടിപ്പിക്കൽ, മാസമുറ കഴിഞ്ഞുള്ള അവസ്ഥ, ദാമ്പത്യബന്ധം എന്നിവയാണ് മറ്റു ഘട്ടങ്ങൾ.",
+            "Tahatil നാമങ്ങളുടെ കൃത്യമായ അറബി പാഠം സ്ഥിരീകരിക്കാനുണ്ട്. ഇത് വന്ധ്യതാ ചികിത്സയ്ക്കോ കുടിക്കാനുള്ള നിർദേശത്തിനോ ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "The historical method begins with seven inscriptions of the name and eight Tahatil names in a vessel.",
+            "Other historical elements are ingestion seven times over seven days, the period after menstruation, and marital intercourse.",
+            "The exact Arabic Tahatil list remains unverified. Do not use this as fertility treatment or ingestion advice."
+          ]
+        },
+        "source_pages": [
+          68
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      },
+      {
+        "method_id": "paired-success",
+        "source_entry": "english-extended-006",
+        "title": {
+          "ml": "കാര്യങ്ങളിൽ വിജയം ലഭിക്കാൻ — രണ്ടു പേരുകൾ",
+          "en": "Success in an undertaking — paired names"
+        },
+        "benefit": {
+          "ml": "വേഗത്തിൽ വിജയം ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of rapid success."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും ആവശ്യപ്പെട്ട കാര്യത്തിനായി ചേർത്ത് വായിക്കുക."
+          ],
+          "en": [
+            "Read both names together for the intended undertaking."
+          ]
+        },
+        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ",
+        "source_name_id": "HNK-MHC-006"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-005-purpose-001"
   },
   "HNK-MHC-006": {
     "title": {
@@ -327,9 +860,32 @@
           ]
         },
         "source_name_id": "HNK-MHC-006",
+        "formula_arabic": "مَزْجَلٍ بَزْجَلٍ",
+        "method_id": "hnk-mhc-006-purpose-002"
+      },
+      {
+        "method_id": "paired-success",
+        "source_entry": "english-extended-006",
+        "title": {
+          "ml": "കാര്യങ്ങളിൽ വിജയം ലഭിക്കാൻ — രണ്ടു പേരുകൾ",
+          "en": "Success in an undertaking — paired names"
+        },
+        "benefit": {
+          "ml": "വേഗത്തിൽ വിജയം ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of rapid success."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും ആവശ്യപ്പെട്ട കാര്യത്തിനായി ചേർത്ത് വായിക്കുക."
+          ],
+          "en": [
+            "Read both names together for the intended undertaking."
+          ]
+        },
         "formula_arabic": "مَزْجَلٍ بَزْجَلٍ"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-006-purpose-001"
   },
   "HNK-MHC-007": {
     "title": {
@@ -358,7 +914,8 @@
         "en": "Square associated with this method — Arabic text."
       }
     },
-    "verse_group": "3:37"
+    "verse_group": "3:37",
+    "method_id": "hnk-mhc-007-purpose-001"
   },
   "HNK-MHC-008": {
     "title": {
@@ -381,7 +938,42 @@
         "The complete additional instruction after every hundred is not established here; this is not a complete procedure on its own."
       ]
     },
-    "source_entry": "combined-recitation"
+    "source_entry": "combined-recitation",
+    "formula_arabic": "تَرْقَبٍ بَرْهَشٍ",
+    "method_id": "hnk-mhc-008-purpose-001",
+    "other_methods": [
+      {
+        "method_id": "historical-eleven-yellow",
+        "source_entry": "english-extended-008",
+        "title": {
+          "ml": "രോഗം ഉണ്ടാക്കുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രഎഴുത്ത്",
+          "en": "Historical inscription concerning causing illness"
+        },
+        "benefit": {
+          "ml": "ലക്ഷ്യവ്യക്തിക്ക് രോഗം ഉണ്ടാകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of illness affecting an intended person."
+        },
+        "steps": {
+          "ml": [
+            "റമദാനിന്റെ അവസാനം മഞ്ഞക്കടലാസിൽ പേര് 11 തവണ എഴുതുക.",
+            "ചന്ദനധൂപവും മറ്റു ത്വൽസമുകളും ഉപയോഗിച്ച് മഞ്ഞക്കൊമ്പുകളുള്ള ഈന്തപ്പനയിൽ തൂക്കുക എന്നാണ് ചരിത്രക്രമം.",
+            "ത്വൽസമുകളുടെ മുഴുവൻ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല. അതിനോടൊപ്പം “അല്ലാഹുവിനെ ഭയപ്പെടുക” എന്നും അച്ചടിച്ചിട്ടുണ്ട്."
+          ],
+          "en": [
+            "The historical method uses eleven name inscriptions on yellow paper at the end of Ramadan.",
+            "Its other elements are sandalwood incense, additional talismans and hanging it on a palm with yellow branches.",
+            "The full talisman text remains unverified. The passage also prints an admonition to fear God."
+          ]
+        },
+        "source_pages": [
+          69
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      }
+    ]
   },
   "HNK-MHC-009": {
     "title": {
@@ -395,12 +987,12 @@
     "steps": {
       "ml": [
         "ഓരോ രാത്രിയിലും പേര് 300 തവണ വായിക്കുക.",
-        "ഓരോ നൂറിനുശേഷവും താഴെയുള്ള അഭ്യർഥന പറയുന്ന രീതിയാണ്; “ഇന്ന രൂപത്തിൽ”, “ഇന്നയാളുടെ അടുത്തേക്ക്”, “ഇന്ന കാര്യം” എന്നിവ ആവശ്യത്തിനനുസരിച്ച് വ്യക്തമാക്കുന്നു.",
+        "ഓരോ നൂറിനുശേഷവും ഇവിടെ നൽകിയ അഭ്യർഥന പറയുന്ന രീതിയാണ്; “ഇന്ന രൂപത്തിൽ”, “ഇന്നയാളുടെ അടുത്തേക്ക്”, “ഇന്ന കാര്യം” എന്നിവ ആവശ്യത്തിനനുസരിച്ച് വ്യക്തമാക്കുന്നു.",
         "നോമ്പും മാംസവും അതിന്റെ ഉൽപ്പന്നങ്ങളും ഒഴിവാക്കലും നിബന്ധനകളാണ്; മൂന്നു ദിവസം തികയുന്നതിനുമുമ്പുള്ള ഫലമാണ് പറയുന്നത്."
       ],
       "en": [
         "Read the name 300 times each night.",
-        "After every hundred, say the request below, specifying the form, person and task in place of the placeholders.",
+        "After every hundred, say the request provided here, specifying the form, person and task in place of the placeholders.",
         "Fasting and avoidance of meat and its products are conditions; the claimed outcome is before three days elapse."
       ]
     },
@@ -413,7 +1005,89 @@
       },
       "source_url": "https://www.albatine.org/showthread.php?t=33",
       "source_kind": "traditional_forum_account"
-    }
+    },
+    "other_methods": [
+      {
+        "method_id": "spirits-departure",
+        "source_entry": "english-extended-009",
+        "title": {
+          "ml": "സ്ഥലത്തുനിന്ന് ജിന്നുകൾ വിട്ടുപോകാൻ",
+          "en": "Departure of jinn from a place"
+        },
+        "benefit": {
+          "ml": "സ്ഥലത്തുനിന്ന് ജിന്നുകൾ വിട്ടുപോകുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of departure of jinn."
+        },
+        "steps": {
+          "ml": [
+            "കറുവപ്പട്ടയുടെ വേർ ധൂപമാക്കുക.",
+            "പേര് 1370 തവണ വായിക്കുക."
+          ],
+          "en": [
+            "Use cinnamon root as incense.",
+            "Read the name 1,370 times."
+          ]
+        }
+      },
+      {
+        "method_id": "spirits-return",
+        "source_entry": "english-extended-009",
+        "title": {
+          "ml": "ജിന്നുകളെ അവരുടെ സ്ഥാനങ്ങളിലേക്ക് മടങ്ങാൻ അനുവദിക്കൽ",
+          "en": "Allowing jinn to return to their places"
+        },
+        "benefit": {
+          "ml": "ജിന്നുകൾ തങ്ങളുടെ സ്ഥാനങ്ങളിലേക്കും ചുമതലകളിലേക്കും മടങ്ങുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of return to their places and duties."
+        },
+        "steps": {
+          "ml": [
+            "പനിനീരിൽ മുക്കിയ അഗിൽ ധൂപമാക്കുക.",
+            "പേരിന്റെ മറുവായനയായ شَمْلَغٍ ഉപയോഗിക്കുക.",
+            "തുടർഅഭ്യർഥനയുടെ അർഥം: ഈ പേരിന്റെ ഹഖിനാൽ, മലക്കുകളേ, ജിന്നുകളെ അവരുടെ സ്ഥാനങ്ങളിലേക്കും ചുമതലകളിലേക്കും മടങ്ങാൻ അനുവദിക്കുക; അല്ലാഹു നിങ്ങളെ അനുഗ്രഹിക്കട്ടെ. അതിന്റെ കൃത്യമായ അറബി മൂലപാഠം ഇവിടെ സ്ഥിരീകരിച്ചിട്ടില്ല."
+          ],
+          "en": [
+            "Use agarwood soaked in rosewater as incense.",
+            "Use the reversed reading شَمْلَغٍ.",
+            "The follow-up request asks the angels, by the right of the name, to allow the jinn to return to their places and duties, and invokes God’s blessing. Its exact Arabic text is not verified here."
+          ]
+        },
+        "formula_arabic": "شَمْلَغٍ"
+      },
+      {
+        "method_id": "eleven-element-method",
+        "source_entry": "english-extended-009",
+        "title": {
+          "ml": "വ്യക്തിയെ എത്തിക്കാനുള്ള എഴുത്ത് — 11 തവണ",
+          "en": "Bringing a person — eleven inscriptions"
+        },
+        "benefit": {
+          "ml": "മൂന്നു ദിവസത്തിനുള്ളിൽ വ്യക്തി എത്തുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of arrival within three days."
+        },
+        "steps": {
+          "ml": [
+            "വെളുത്ത കടലാസിൽ പേര് വേർതിരിച്ച അക്ഷരങ്ങളായി 11 തവണ എഴുതുക.",
+            "മുദ്രയിൽ ഉൾപ്പെടുത്തി ലക്ഷ്യവ്യക്തിയുമായി ബന്ധപ്പെട്ട വസ്തു ധൂപമാക്കുക. മുദ്രയുടെ കൃത്യമായ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല.",
+            "പേരിലെ മേൽക്കോയ്മയുള്ള തത്ത്വം കണക്കാക്കിയശേഷം: അഗ്നിയെങ്കിൽ കത്തിക്കൽ; വായുവെങ്കിൽ കാറ്റിൽ തൂക്കൽ; ജലമെങ്കിൽ വെള്ളത്തിൽ ഇടൽ; ഭൂമിയെങ്കിൽ മണ്ണിൽ കുഴിച്ചിടൽ എന്നിങ്ങനെയാണ് ചരിത്രക്രമം. ആ കണക്കിന്റെ രീതി ഈ ഖണ്ഡത്തിൽ നൽകിയിട്ടില്ല."
+          ],
+          "en": [
+            "Write the name eleven times in separated letters on white paper.",
+            "Include it in a seal and use an object associated with the intended person as incense. The exact seal is unverified.",
+            "The historical sequence then uses the dominant element of the name: burning for fire, exposure to wind for air, water for water, or burial for earth. This passage does not provide the element-calculation method."
+          ]
+        },
+        "source_pages": [
+          69,
+          70
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      }
+    ],
+    "method_id": "hnk-mhc-009-purpose-001"
   },
   "HNK-MHC-010": {
     "title": {
@@ -454,9 +1128,167 @@
             "Then attach the inscription to the child."
           ]
         },
-        "verse_group": "86:1-17"
+        "verse_group": "86:1-17",
+        "method_id": "hnk-mhc-010-purpose-002"
+      },
+      {
+        "method_id": "apple-love",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "സ്നേഹം ലഭിക്കാൻ — ആപ്പിളിന്മേലുള്ള ഏഴ് വായനകൾ",
+          "en": "Affection — seven readings over an apple"
+        },
+        "benefit": {
+          "ml": "സ്നേഹം നിലനിൽക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of lasting affection."
+        },
+        "steps": {
+          "ml": [
+            "ആവശ്യപ്പെട്ട വ്യക്തിയെ ഉദ്ദേശിച്ച് ആപ്പിളിന്മേൽ പേര് ഏഴ് തവണ വായിക്കുക.",
+            "ആ ആപ്പിൾ ആ വ്യക്തിക്ക് നൽകുക."
+          ],
+          "en": [
+            "Read the name seven times over an apple with the intended person in mind.",
+            "Give the apple to that person."
+          ]
+        }
+      },
+      {
+        "method_id": "royal-respect",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "സൈന്യത്തിന്റെ ആദരവ് ലഭിക്കാൻ",
+          "en": "Respect from soldiers"
+        },
+        "benefit": {
+          "ml": "രാജാവിന് സൈന്യത്തിന്റെ ആദരഭയം ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of respect for a ruler among soldiers."
+        },
+        "steps": {
+          "ml": [
+            "ശുദ്ധസ്വർണ്ണ തകിടിൽ പേര് കൊത്തിവയ്ക്കുക.",
+            "രാജാവ് അത് കൈവശം വയ്ക്കുക."
+          ],
+          "en": [
+            "Engrave the name on a pure gold plate.",
+            "The ruler carries the plate."
+          ]
+        }
+      },
+      {
+        "method_id": "dogs-threshold",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "വാതിലിലൂടെ നായകൾ കടക്കാതിരിക്കാൻ",
+          "en": "Preventing dogs from entering a doorway"
+        },
+        "benefit": {
+          "ml": "തോൽ കുഴിച്ചിട്ടിരിക്കുന്നിടത്തോളം നായകൾ കടക്കില്ലെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim that dogs do not enter while the skin remains buried."
+        },
+        "steps": {
+          "ml": [
+            "സംസ്കരിച്ച ചെന്നായ്തോലിൽ എഴുതുക.",
+            "വീടിന്റെയോ നഗരത്തിന്റെയോ വാതിൽപ്പടിക്കടിയിൽ കുഴിച്ചിടുക. ഈ ഖണ്ഡത്തിലെ എഴുത്തിന്റെ മുഴുവൻ നാമക്രമം സ്ഥിരീകരിക്കാനുണ്ട്."
+          ],
+          "en": [
+            "The historical method uses an inscription on tanned wolf skin.",
+            "Bury it under the doorway of a house or city. The complete name sequence in this passage remains unverified."
+          ]
+        }
+      },
+      {
+        "method_id": "iron-ring-skill",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "ഇരുമ്പുമോതിരത്തിൽ നിർദിഷ്ട പദങ്ങൾ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തിവയ്ക്കുക.",
+            "അമ്പെയ്ത്തോ വാൾപ്രയോഗമോ ചെയ്യുന്നയാൾ മോതിരം ധരിക്കുക. പദങ്ങളുടെ പൂർണ്ണ അറബി പാഠവും ഏത് ദിവസം/മണിക്കൂർ എന്നതും ഈ ഖണ്ഡത്തിൽ സ്ഥിരീകരിച്ചിട്ടില്ല."
+          ],
+          "en": [
+            "The method specifies engraving particular words on an iron ring on its day and hour.",
+            "The practitioner wears the ring. The full Arabic words and the specified day and hour are unverified in this passage."
+          ]
+        }
+      },
+      {
+        "method_id": "animal-colic",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "ചുമട്ടുമൃഗത്തിന്റെ വയറുവേദന — ചരിത്രരീതി",
+          "en": "Pack-animal colic — historical method"
+        },
+        "benefit": {
+          "ml": "മൃഗത്തിന്റെ വയറുവേദന മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of relief from an animal’s colic."
+        },
+        "steps": {
+          "ml": [
+            "ശുദ്ധപാത്രത്തിൽ എഴുതിയത് ശുദ്ധവെള്ളത്തിൽ കഴുകിയെടുത്ത് മൃഗത്തിന് കുടിപ്പിക്കുന്നതാണ് ചരിത്രരീതി.",
+            "പൂർണ്ണ എഴുത്തുപാഠം ഈ ഖണ്ഡത്തിൽ സ്ഥിരീകരിച്ചിട്ടില്ല. ഇത് മൃഗചികിത്സയ്ക്കോ എഴുത്തുവസ്തു കുടിപ്പിക്കാനോ ഉള്ള നിർദേശമല്ല."
+          ],
+          "en": [
+            "The historical method washes an inscription in a clean vessel with clean water and gives it to the animal.",
+            "The full inscription is unverified here. This is not veterinary or ingestion advice."
+          ]
+        }
+      },
+      {
+        "method_id": "well-water",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "കിണറ്റിലെ വെള്ളം താഴുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രരീതി",
+          "en": "Historical method concerning lowering well water"
+        },
+        "benefit": {
+          "ml": "കിണറ്റിലെ വെള്ളം താഴുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of lowering well water."
+        },
+        "steps": {
+          "ml": [
+            "ശനിയാഴ്ച ആദ്യ മണിക്കൂറിൽ കറുത്ത ഈയമുദ്രയിൽ നിർദിഷ്ട പദങ്ങളും ഖുർആൻ ഉദ്ധരണിയും എഴുതുന്നതാണ് ചരിത്രക്രമം.",
+            "carnation ധൂപമാക്കി കറുത്ത കമ്പിളിനൂലിൽ കിണറ്റിലേക്കിറക്കുന്നതാണ് തുടർഘട്ടം.",
+            "അപരിചിത പദങ്ങളുടെ പൂർണ്ണ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല. ഈയം വെള്ളത്തിൽ ഇടാനുള്ള നിർദേശമായി ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "The historical sequence specifies words and a Quran quotation on a black lead seal in the first hour of Saturday.",
+            "It then uses carnation incense and lowers the seal into a well on black wool thread.",
+            "The complete unfamiliar words remain unverified. Do not use this as advice to place lead in water."
+          ]
+        }
+      },
+      {
+        "method_id": "paired-palm",
+        "source_entry": "english-extended-010",
+        "title": {
+          "ml": "സഹായിയുടെ അനുസരണത്തിനുള്ള കൈപ്പത്തി എഴുത്ത്",
+          "en": "Palm inscription for a helper’s obedience"
+        },
+        "benefit": {
+          "ml": "സഹായി അനുസരിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of a helper’s obedience."
+        },
+        "steps": {
+          "ml": [
+            "കൈപ്പത്തിയിൽ രണ്ടു പേരുകൾ എഴുതി വായിക്കുന്നതാണ് രീതി.",
+            "ആ രണ്ടു പേരുകളുടെ കൃത്യമായ അറബി പാഠം സ്ഥിരീകരിക്കാനുണ്ട്; പകരം ഊഹിച്ച പേരുകൾ നൽകിയിട്ടില്ല."
+          ],
+          "en": [
+            "The method writes and reads two names on the palm.",
+            "The exact Arabic pair remains unverified; conjectural names are not substituted."
+          ]
+        }
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-010-purpose-001"
   },
   "HNK-MHC-011": {
     "title": {
@@ -477,7 +1309,36 @@
         "Use frankincense and mahaleb incense and states the need."
       ]
     },
-    "source_entry": "english-joint-summoning"
+    "source_entry": "english-joint-summoning",
+    "other_methods": [
+      {
+        "method_id": "possession-twenty",
+        "source_entry": "english-extended-011",
+        "title": {
+          "ml": "ബാധയെക്കുറിച്ചുള്ള ചരിത്രരീതി — 20 വായനകൾ",
+          "en": "Historical possession method — twenty readings"
+        },
+        "benefit": {
+          "ml": "ബാധ സംസാരിക്കുകയും വിട്ടുപോകുകയും ചെയ്യുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of speech and departure of a possessing entity."
+        },
+        "steps": {
+          "ml": [
+            "ഈ പേരിന്റെ 20 വായനകളും amber skin, benzoin, കുന്തിരിക്കം, liquid storax എന്നീ ധൂപങ്ങളും ആണ് ആദ്യഘട്ടം.",
+            "വിടുന്നില്ലെങ്കിൽ 28 പേരുകളും ഏഴ് തവണ വായിക്കുക; തുടർന്ന് എഴുത്ത് തൂക്കുക എന്നാണ് തുടർക്രമം. ആ എഴുത്തിന്റെ പൂർണ്ണ രൂപം ഈ ഖണ്ഡത്തിൽ ലഭ്യമല്ല.",
+            "Fits സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "The first stage specifies twenty readings with amber skin, benzoin, frankincense and liquid storax incense.",
+            "The next stage is seven readings of all twenty-eight names and an attached inscription. The full inscription is absent from this passage.",
+            "This historical method is not a treatment for seizures."
+          ]
+        },
+        "include_all_names": true
+      }
+    ],
+    "formula_arabic": "قَلْنَهُودٍ بَرْشَانٍ",
+    "method_id": "hnk-mhc-011-purpose-001"
   },
   "HNK-MHC-012": {
     "title": {
@@ -498,7 +1359,35 @@
         "The complete Sulaymani formula is absent from this passage, so this is not presented as a complete procedure."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "method_id": "paired-information",
+        "source_entry": "english-extended-012",
+        "title": {
+          "ml": "വിവരം അറിയാൻ — ഖൽനഹൂദ്, ബർശാൻ",
+          "en": "Seeking information — Qalnahud and Barshan"
+        },
+        "benefit": {
+          "ml": "ആത്മാക്കൾ എത്തി ചോദിച്ച കാര്യത്തെക്കുറിച്ച് സംസാരിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim that spirits arrive and answer questions."
+        },
+        "steps": {
+          "ml": [
+            "രണ്ടു പേരുകളും ചേർത്ത് പതിവായി വായിക്കുക.",
+            "കുന്തിരിക്കവും mahaleb-വും ധൂപമാക്കുക.",
+            "ആത്മാക്കളുടെ വരവ് ആവശ്യപ്പെട്ട് അറിയേണ്ട കാര്യം ചോദിക്കുക."
+          ],
+          "en": [
+            "Read the two names together regularly.",
+            "Use frankincense and mahaleb incense.",
+            "Request their arrival and ask the intended question."
+          ]
+        },
+        "formula_arabic": "قَلْنَهُودٍ بَرْشَانٍ"
+      }
+    ],
+    "method_id": "hnk-mhc-012-purpose-001"
   },
   "HNK-MHC-013": {
     "title": {
@@ -519,7 +1408,30 @@
         "Do not fill unestablished cells by guesswork."
       ]
     },
-    "source_entry": "english-copper-square"
+    "source_entry": "english-copper-square",
+    "other_methods": [
+      {
+        "method_id": "jinn-discipline",
+        "source_entry": "english-extended-013",
+        "title": {
+          "ml": "ജിന്നുകളെ ശിക്ഷിക്കുന്നതിനുള്ള വായന",
+          "en": "Reading for disciplining jinn"
+        },
+        "benefit": {
+          "ml": "ജിന്നുകളെ ശിക്ഷിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of disciplining jinn."
+        },
+        "steps": {
+          "ml": [
+            "പേര് പതിവായി വായിക്കുക."
+          ],
+          "en": [
+            "Read the name regularly."
+          ]
+        }
+      }
+    ],
+    "method_id": "hnk-mhc-013-purpose-001"
   },
   "HNK-MHC-014": {
     "title": {
@@ -559,9 +1471,73 @@
             "The method specifies seventeen name inscriptions on a leaf of a non-fruiting palm, before sunrise on Saturday.",
             "It adds the quoted passage of Quran 90:11–13 three times in separated letters and describes attaching it to the person."
           ]
+        },
+        "include_chapter_quotes": true,
+        "method_id": "hnk-mhc-014-purpose-002"
+      },
+      {
+        "method_id": "bleeding-clothing",
+        "source_entry": "english-extended-014",
+        "title": {
+          "ml": "രക്തസ്രാവം — വസ്ത്രത്തിലെ ചരിത്രഎഴുത്ത്",
+          "en": "Bleeding — historical clothing inscription"
+        },
+        "benefit": {
+          "ml": "രക്തസ്രാവം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of stopping bleeding."
+        },
+        "steps": {
+          "ml": [
+            "വസ്ത്രത്തിൽ ഖൽനഹൂദ്, ബർശാൻ, കത്ഹീർ, നമൂശലഖ് എന്നീ പേരുകൾ എഴുതുന്നതാണ് അറബി പാഠത്തിലെ രീതി.",
+            "ഈ ചരിത്രരീതി രക്തസ്രാവത്തിനുള്ള ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "The Arabic text specifies the names Qalnahud, Barshan, Kathhir and Namushalakh on clothing.",
+            "This historical method is not a treatment for bleeding."
+          ]
+        },
+        "formula_arabic": "قَلْنَهُودٍ بَرْشَانٍ كَظْهِيرٍ نَمُوشَلَخٍ",
+        "source_pages": [
+          71
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      },
+      {
+        "method_id": "asphalt-historical",
+        "source_entry": "english-extended-014",
+        "title": {
+          "ml": "ശത്രുവിനെ ശിക്ഷിക്കുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രരീതി",
+          "en": "Historical method concerning punishment of an adversary"
+        },
+        "benefit": {
+          "ml": "ശത്രുവിനെ ശിക്ഷിക്കുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of punishment of an adversary."
+        },
+        "steps": {
+          "ml": [
+            "അസ്ഫാൾട്ടിന്റെ കഷണത്തിൽ ലക്ഷ്യവ്യക്തിയുടെ പേരും നിർദിഷ്ട നാമങ്ങളും നിശ്ചിത സ്ഥാനങ്ങളിൽ എഴുതുന്നതാണ് ചരിത്രരീതി.",
+            "നാല് ആണികൾകൊണ്ട് നിലത്തോ കിഴക്കൻ മതിലിലോ ഉറപ്പിക്കുക; മല്ലിയും bdellium-വും ധൂപമാക്കി നാമങ്ങൾ വായിക്കുക എന്നാണ് തുടർക്രമം.",
+            "അപരിചിത നാമങ്ങളുടെ കൃത്യമായ പകർപ്പ് സ്ഥിരീകരിച്ചിട്ടില്ല. അവയുടെ അച്ചടിരൂപം താഴെയുള്ള മൂലപേജിൽ കാണാം."
+          ],
+          "en": [
+            "The historical method positions the intended person’s name and specific names on a piece of asphalt.",
+            "Its next elements are four nails fixing it to the ground or an eastern wall, coriander and bdellium incense, and reading the names.",
+            "The unfamiliar names are not reliably transcribed. Their printed form is visible on the original page below."
+          ]
+        },
+        "source_pages": [
+          71
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
         }
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-014-purpose-001"
   },
   "HNK-MHC-015": {
     "title": {
@@ -577,13 +1553,13 @@
         "വുദൂ ചെയ്യുക.",
         "ഓരോ രണ്ടു റക്അത്തിനും സലാം നൽകി ആറ് റക്അത്ത് നമസ്കരിക്കുക.",
         "വലത് കൈപ്പത്തിയിൽ പേര് 7 തവണ എഴുതുക.",
-        "താഴെയുള്ള അഭ്യർഥന പറഞ്ഞ് ആവശ്യപ്പെട്ട കാര്യം വ്യക്തമാക്കുക; തുടർന്ന് ഉറങ്ങുക."
+        "ഇവിടെ നൽകിയ അഭ്യർഥന പറഞ്ഞ് ആവശ്യപ്പെട്ട കാര്യം വ്യക്തമാക്കുക; തുടർന്ന് ഉറങ്ങുക."
       ],
       "en": [
         "Perform ablution.",
         "Pray six rakʿahs, with a salutation after every two.",
         "Write the name seven times on the right palm.",
-        "Say the request below, specifying the matter, then sleep."
+        "Say the request provided here, specifying the matter, then sleep."
       ]
     },
     "source_entry": "checked-account",
@@ -593,8 +1569,43 @@
         "ml": "ഈ മഹത്തായ നാമത്തിന്റെ സേവകരേ, ചുമതല ഏറ്റെടുക്കുകയും ഇന്ന കാര്യം എനിക്ക് കാണിച്ചുതരുകയും ചെയ്യുക. “ഇന്ന കാര്യം” എന്നിടത്ത് ആവശ്യപ്പെടുന്ന കാര്യം വ്യക്തമാക്കുന്നു.",
         "en": "Servants of this noble name, undertake the task and show me such-and-such. Specify the requested matter in place of “such-and-such”."
       },
-      "source_entry": "arabic-single-page-02"
-    }
+      "source_entry": "arabic-single-page-02",
+      "arabic_reading": "تَوَكَّلُوا يَا خُدَّامَ هَذَا الِاسْمِ الشَّرِيفِ وَأَرُونِي كَذَا وَكَذَا"
+    },
+    "other_methods": [
+      {
+        "method_id": "lost-property",
+        "source_entry": "english-extended-015",
+        "title": {
+          "ml": "നഷ്ടപ്പെട്ട വസ്തു തിരികെ ലഭിക്കാൻ",
+          "en": "Recovery of lost property"
+        },
+        "benefit": {
+          "ml": "നഷ്ടപ്പെട്ട വസ്തു തിരിച്ചുകിട്ടുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of recovery of a lost item."
+        },
+        "steps": {
+          "ml": [
+            "കടലാസിൽ പേര് എഴുതുക.",
+            "മൂന്നു വരിയും മൂന്നു നിരയും ഉള്ള കളത്തോടൊപ്പം ചുറ്റും ബർഹയൂലാ ഏഴ് തവണ എഴുതുക.",
+            "വസ്തു നഷ്ടപ്പെട്ട വീട്ടിൽ എഴുത്ത് തൂക്കുക. കളത്തിലെ സെല്ലുകൾ ഊഹിച്ച് നിറച്ചിട്ടില്ല."
+          ],
+          "en": [
+            "Write the name on paper.",
+            "With a three-by-three square, write Barhayula seven times around it.",
+            "Hang it in the house where the item was lost. The square cells are not conjecturally filled."
+          ]
+        },
+        "source_pages": [
+          71
+        ],
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      }
+    ],
+    "method_id": "hnk-mhc-015-purpose-001"
   },
   "HNK-MHC-016": {
     "title": {
@@ -613,7 +1624,86 @@
         "Read the name 70 times each night."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "method_id": "eye-inscription",
+        "source_entry": "english-extended-016",
+        "title": {
+          "ml": "കണ്ണുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി — ചൊവ്വാഴ്ച",
+          "en": "Historical eye inscription — Tuesday"
+        },
+        "benefit": {
+          "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of relief from an eye ailment."
+        },
+        "steps": {
+          "ml": [
+            "ചൊവ്വാഴ്ച പേര് കടലാസിൽ ഏഴ് തവണ എഴുതുന്നതാണ് ഈ ഇംഗ്ലീഷ് പതിപ്പിലെ രീതി.",
+            "യഅ്ഖൂബ് നബിയെയും യൂസുഫ് നബിയുടെ കുപ്പായത്തെയും പരാമർശിക്കുന്ന വാചകം ചേർത്ത് ബാധിതനിൽ തൂക്കുക. അറബി പതിപ്പിൽ തിങ്കളാഴ്ച എന്നാണ്; താഴെയുള്ള മൂലപേജ് ആ രീതിയുടേതാണ്.",
+            "ഇത് കണ്ണിന്റെ ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "This English edition specifies seven name inscriptions on paper on Tuesday.",
+            "Add the verse referring to Yaqub and Yusuf’s shirt and attach it to the person. The Arabic edition specifies Monday; the original page below belongs to that variant.",
+            "This is not a substitute for eye treatment."
+          ]
+        },
+        "source_pages": [
+          71
+        ],
+        "written_text": {
+          "arabic": "يا ناظري بيعقوب أعيذكما بما استعاذ به إذ مسه الكمد\nقميص يوسف إذ جاء البشير به بحق يعقوب فاذهب أيها الرمد",
+          "translation": {
+            "ml": "എന്റെ രണ്ടു കണ്ണുകളേ, ദുഃഖം ബാധിച്ചപ്പോൾ യഅ്ഖൂബ് സംരക്ഷണം തേടിയതുകൊണ്ട് നിങ്ങൾക്കും സംരക്ഷണം തേടുന്നു. സന്തോഷവാർത്തക്കാരൻ യൂസുഫിന്റെ കുപ്പായവുമായി എത്തിയതിനെ മുൻനിർത്തി, യഅ്ഖൂബിന്റെ ഹഖിനാൽ കണ്ണിന്റെ അസുഖമേ, നീ പോകുക.",
+            "en": "My two eyes, I seek protection for you through what Yaqub sought protection with when sorrow afflicted him. By Yusuf’s shirt brought by the bearer of glad tidings, and by the right of Yaqub, depart, eye ailment."
+          }
+        },
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      },
+      {
+        "method_id": "eye-inscription-monday",
+        "source_entry": "english-extended-016",
+        "title": {
+          "ml": "കണ്ണുമായി ബന്ധപ്പെട്ട ചരിത്രരീതി — തിങ്കളാഴ്ച",
+          "en": "Historical eye inscription — Monday"
+        },
+        "benefit": {
+          "ml": "കണ്ണിന്റെ അസുഖം മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of relief from an eye ailment."
+        },
+        "steps": {
+          "ml": [
+            "തിങ്കളാഴ്ച പേര് കടലാസിൽ ഏഴ് തവണ എഴുതുക.",
+            "ഇവിടെ നൽകിയ രണ്ടു വരികളും ചേർത്ത് കണ്ണിന്റെ അസുഖമുള്ള വ്യക്തിയിൽ തൂക്കുന്നതാണ് ചരിത്രരീതി.",
+            "ഇത് കണ്ണിന്റെ ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the name seven times on paper on Monday.",
+            "Add the two lines provided here and attach it to the person with an eye ailment, as a historical method.",
+            "This is not a substitute for eye treatment."
+          ]
+        },
+        "source_pages": [
+          71
+        ],
+        "written_text": {
+          "arabic": "يا ناظري بيعقوب أعيذكما بما استعاذ به إذ مسه الكمد\nقميص يوسف إذ جاء البشير به بحق يعقوب فاذهب أيها الرمد",
+          "translation": {
+            "ml": "എന്റെ രണ്ടു കണ്ണുകളേ, ദുഃഖം ബാധിച്ചപ്പോൾ യഅ്ഖൂബ് സംരക്ഷണം തേടിയതുകൊണ്ട് നിങ്ങൾക്കും സംരക്ഷണം തേടുന്നു. സന്തോഷവാർത്തക്കാരൻ യൂസുഫിന്റെ കുപ്പായവുമായി എത്തിയതിനെ മുൻനിർത്തി, യഅ്ഖൂബിന്റെ ഹഖിനാൽ കണ്ണിന്റെ അസുഖമേ, നീ പോകുക.",
+            "en": "My two eyes, I seek protection for you through what Yaqub sought protection with when sorrow afflicted him. By Yusuf’s shirt brought by the bearer of glad tidings, and by the right of Yaqub, depart, eye ailment."
+          }
+        },
+        "scan_caption": {
+          "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
+          "en": "Original Arabic-edition page — printed names and symbols"
+        }
+      }
+    ],
+    "method_id": "hnk-mhc-016-purpose-001"
   },
   "HNK-MHC-017": {
     "title": {
@@ -664,9 +1754,13 @@
             "ml": "ഈ സഞ്ചിരീതിയുമായി ബന്ധപ്പെട്ട 3 × 3 കളം.",
             "en": "Three-by-three square associated with this pouch method."
           }
-        }
+        },
+        "method_id": "hnk-mhc-017-purpose-002",
+        "include_collective_formula": true
       }
-    ]
+    ],
+    "formula_arabic": "بَشْكَيْلَخٍ قَزْمَزٍ",
+    "method_id": "hnk-mhc-017-purpose-001"
   },
   "HNK-MHC-018": {
     "title": {
@@ -687,7 +1781,55 @@
         "Wash off the writing with water and sprinkles the place."
       ]
     },
-    "source_entry": "english-apparitions-water"
+    "source_entry": "english-apparitions-water",
+    "other_methods": [
+      {
+        "method_id": "fire-historical",
+        "source_entry": "english-extended-018",
+        "title": {
+          "ml": "തീ അണയുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രവായന",
+          "en": "Historical reading concerning extinguishing fire"
+        },
+        "benefit": {
+          "ml": "തീ അണയുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of extinguishing fire."
+        },
+        "steps": {
+          "ml": [
+            "തീ അണയണമെന്ന ഉദ്ദേശത്തോടെ പേര് പലതവണ വായിക്കുന്നതാണ് ചരിത്രരീതി.",
+            "ഇത് അഗ്നിസുരക്ഷയ്ക്കോ അടിയന്തരസഹായത്തിനോ പകരമല്ല."
+          ],
+          "en": [
+            "The historical method is frequent reading with the intention of extinguishing fire.",
+            "It is not a fire-safety or emergency response method."
+          ]
+        }
+      },
+      {
+        "method_id": "relocation-historical",
+        "source_entry": "english-extended-018",
+        "title": {
+          "ml": "വീട്ടിലുള്ളവർ സ്ഥലം വിടുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രരീതി",
+          "en": "Historical method concerning occupants leaving a house"
+        },
+        "benefit": {
+          "ml": "വീട്ടിലുള്ളവർ സ്ഥലം വിട്ടുപോകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of occupants leaving a house."
+        },
+        "steps": {
+          "ml": [
+            "ചുട്ടെടുക്കാത്ത മൺപാത്രക്കഷണത്തിൽ പേരും സൂറത്ത് അൽ-ഫീലും എഴുതുക.",
+            "ആ കഷണം പൊടിച്ച് ശത്രുവിന്റെ വീടിന്റെ ദിശയിലേക്ക് ഇടുന്നതാണ് ചരിത്രത്തിലെ തുടർഘട്ടം."
+          ],
+          "en": [
+            "The historical method inscribes the name and Surah al-Fil on an unfired potsherd.",
+            "Its next step is crushing the piece and casting it towards the adversary’s house."
+          ]
+        },
+        "verse_group": "105:1-5"
+      }
+    ],
+    "method_id": "hnk-mhc-018-purpose-001"
   },
   "HNK-MHC-019": {
     "title": {
@@ -725,9 +1867,38 @@
           "en": [
             "Write the name with the quoted passage of Quran 10:92 and describes carrying it."
           ]
+        },
+        "include_chapter_quotes": true,
+        "method_id": "hnk-mhc-019-purpose-002"
+      },
+      {
+        "method_id": "outside-daily-two-hundred",
+        "source_entry": "outside-asrare-daily-two-hundred",
+        "title": {
+          "ml": "അനിഷ്ടസംഭവങ്ങളിൽനിന്നുള്ള സംരക്ഷണം — ദിവസേന 200",
+          "en": "Protection from misfortune — two hundred daily"
+        },
+        "benefit": {
+          "ml": "അനിഷ്ടസംഭവങ്ങളിൽനിന്നുള്ള സംരക്ഷണമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of protection from misfortune."
+        },
+        "steps": {
+          "ml": [
+            "പേര് ദിവസേന 200 തവണ വായിക്കുന്നത് പതിവാക്കുക."
+          ],
+          "en": [
+            "Read the name two hundred times every day."
+          ]
+        },
+        "external_source": {
+          "url": "https://asrare.net/node/12726",
+          "title": "الدعوة العظيمة والاسماء المباركة البرهتيه",
+          "checked_on": "2026-10-08",
+          "claim_type": "traditional_claim"
         }
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-019-purpose-001"
   },
   "HNK-MHC-020": {
     "title": {
@@ -745,10 +1916,39 @@
       ],
       "en": [
         "Ninety refers to written names; three refers to the separated-letter inscription of Quran 86:8.",
-        "Use toxic red lead. It is not offered as a preparation or ingestion procedure."
+        "The historical method uses toxic red lead. Do not prepare or ingest it."
       ]
     },
-    "source_entry": "english-extended-020"
+    "source_entry": "english-extended-020",
+    "include_chapter_quotes": true,
+    "method_id": "hnk-mhc-020-purpose-001",
+    "other_methods": [
+      {
+        "method_id": "ghayaha-kaydahula-tijan",
+        "source_entry": "english-extended-021",
+        "title": {
+          "ml": "ഖൽവത്തിലെ ഗയാഹാ–കൈദഹൂലാ വായന",
+          "en": "Ghayaha–Kaydahula reading in seclusion"
+        },
+        "benefit": {
+          "ml": "ഖൽവത്തിൽ രണ്ടു പേരുകളും തിജാൻ പാഠവും ചേർത്തുള്ള വായന. പ്രത്യേക ഫലം ഈ ഖണ്ഡത്തിൽ വ്യക്തമാക്കിയിട്ടില്ല.",
+          "en": "Paired reading with the Tijan text in seclusion. This passage does not specify a distinct result."
+        },
+        "formula_arabic": "غَيَاهَا كَيْدَهُولَا",
+        "steps": {
+          "ml": [
+            "ഖൽവത്തിന്റെ നിബന്ധനകളോടെ ഒറ്റപ്പെട്ടിരുന്ന് രണ്ടു പേരുകളും തുടർച്ചയായി വായിക്കുക.",
+            "ഓരോ നൂറ് ആവർത്തനത്തിനുശേഷവും തിജാൻ നാമങ്ങൾ ഒരുതവണ വായിക്കുക. താഴെ പൂർണ്ണ അറബി പാഠം തുറക്കാം."
+          ],
+          "en": [
+            "Read both names continuously in seclusion under the conditions of khalwah.",
+            "After every hundred repetitions, read the Names of the Tijan once. Open the complete Arabic text below."
+          ]
+        },
+        "inline_tijan": true,
+        "source_name_id": "HNK-MHC-021"
+      }
+    ]
   },
   "HNK-MHC-021": {
     "title": {
@@ -762,7 +1962,7 @@
     "steps": {
       "ml": [
         "പേര് 100 തവണ എഴുതുക. ഇത് എഴുത്തിന്റെ എണ്ണമാണ്.",
-        "താഴെ കാണുന്ന കളത്തിനു ചുറ്റും ത്വാഹാ 20:69-ലെയും യൂനുസ് 10:81-ലെയും ഉദ്ധരിച്ച ഭാഗങ്ങൾ വേർതിരിച്ച അക്ഷരങ്ങളായി എഴുതുക.",
+        "ഇവിടെ കാണുന്ന കളത്തിനു ചുറ്റും ത്വാഹാ 20:69-ലെയും യൂനുസ് 10:81-ലെയും ഉദ്ധരിച്ച ഭാഗങ്ങൾ വേർതിരിച്ച അക്ഷരങ്ങളായി എഴുതുക.",
         "എഴുത്ത് ബന്ധപ്പെട്ട വ്യക്തി കൈവശം വയ്ക്കുന്ന രീതിയാണ്."
       ],
       "en": [
@@ -778,7 +1978,35 @@
         "ml": "ഈ രീതിയുമായി ബന്ധപ്പെട്ട കളം — അറബി പാഠം.",
         "en": "Square associated with this method — Arabic text."
       }
-    }
+    },
+    "include_chapter_quotes": true,
+    "method_id": "hnk-mhc-021-purpose-001",
+    "other_methods": [
+      {
+        "method_id": "ghayaha-kaydahula-tijan",
+        "source_entry": "english-extended-021",
+        "title": {
+          "ml": "ഖൽവത്തിലെ ഗയാഹാ–കൈദഹൂലാ വായന",
+          "en": "Ghayaha–Kaydahula reading in seclusion"
+        },
+        "benefit": {
+          "ml": "ഖൽവത്തിൽ രണ്ടു പേരുകളും തിജാൻ പാഠവും ചേർത്തുള്ള വായന. പ്രത്യേക ഫലം ഈ ഖണ്ഡത്തിൽ വ്യക്തമാക്കിയിട്ടില്ല.",
+          "en": "Paired reading with the Tijan text in seclusion. This passage does not specify a distinct result."
+        },
+        "formula_arabic": "غَيَاهَا كَيْدَهُولَا",
+        "steps": {
+          "ml": [
+            "ഖൽവത്തിന്റെ നിബന്ധനകളോടെ ഒറ്റപ്പെട്ടിരുന്ന് രണ്ടു പേരുകളും തുടർച്ചയായി വായിക്കുക.",
+            "ഓരോ നൂറ് ആവർത്തനത്തിനുശേഷവും തിജാൻ നാമങ്ങൾ ഒരുതവണ വായിക്കുക. താഴെ പൂർണ്ണ അറബി പാഠം തുറക്കാം."
+          ],
+          "en": [
+            "Read both names continuously in seclusion under the conditions of khalwah.",
+            "After every hundred repetitions, read the Names of the Tijan once. Open the complete Arabic text below."
+          ]
+        },
+        "inline_tijan": true
+      }
+    ]
   },
   "HNK-MHC-022": {
     "title": {
@@ -799,7 +2027,8 @@
         "Wash off the writing with clean water and sprinkles the place."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "method_id": "hnk-mhc-022-purpose-001"
   },
   "HNK-MHC-023": {
     "title": {
@@ -820,7 +2049,8 @@
         "Burn that paper where mosquitoes are present."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "method_id": "hnk-mhc-023-purpose-001"
   },
   "HNK-MHC-024": {
     "title": {
@@ -834,11 +2064,11 @@
     "steps": {
       "ml": [
         "شمخاهير, شمهارير എന്നീ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുക.",
-        "താഴെയുള്ള അഭ്യർഥന പറയുക."
+        "ഇവിടെ നൽകിയ അഭ്യർഥന പറയുക."
       ],
       "en": [
         "Read شمخاهير and شمهارير together one hundred times.",
-        "Say the request below."
+        "Say the request provided here."
       ]
     },
     "source_entry": "checked-account",
@@ -848,8 +2078,69 @@
         "ml": "ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിൽനിന്ന് എനിക്ക് കാണിച്ചുതരൂ.",
         "en": "Spirits, if you have arrived, show me some of your light."
       },
-      "source_entry": "checked-account"
-    }
+      "source_entry": "checked-account",
+      "arabic_reading": "إِنْ كُنْتُمْ حَضَرْتُمْ أَيُّهَا الْأَرْوَاحُ فَأَرُونِي مِنْ نُورِكُمْ"
+    },
+    "formula_arabic": "شمخاهير شمهارير",
+    "method_id": "hnk-mhc-024-purpose-001",
+    "other_methods": [
+      {
+        "method_id": "enmity-inscription",
+        "source_entry": "english-enmity-source-account-135-136",
+        "title": {
+          "ml": "അനിഷ്ടകാര്യത്തിനായി ഒന്നിക്കുന്നവരെ വേർപെടുത്തൽ — ചരിത്രഎഴുത്ത്",
+          "en": "Historical inscription concerning separation in a displeasing undertaking"
+        },
+        "benefit": {
+          "ml": "രണ്ടുപേർക്കിടയിൽ വൈരവും വിദ്വേഷവും ഉണ്ടാകുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of hostility between two people."
+        },
+        "steps": {
+          "ml": [
+            "നാമം 100 തവണ എഴുതുക. ഇത് എഴുത്തിന്റെ എണ്ണമാണ്.",
+            "അല്ലാഹുവിന് അനിഷ്ടമായ കാര്യത്തിനായി ഒന്നിക്കുന്ന രണ്ടു പേരുടെ പേരുകളും ഇവിടെ നൽകിയ അൽ-മാഇദ 5:64-ലെ ഉദ്ധരണിയും ചേർത്ത് എഴുതുക."
+          ],
+          "en": [
+            "Write the name one hundred times. This counts inscriptions.",
+            "Add the names of the two people united in an undertaking displeasing to God and the quoted passage of al-Maidah 5:64 provided here."
+          ]
+        },
+        "quote_entry_ids": [
+          "english-enmity-source-account-135-136"
+        ]
+      },
+      {
+        "method_id": "english-light-pair",
+        "source_entry": "english-paired-names-100-136",
+        "title": {
+          "ml": "പ്രകാശം കാണിക്കാനുള്ള അഭ്യർഥന — ശമഹാഹീർ രൂപം",
+          "en": "Request to show light — Shamhahir version"
+        },
+        "benefit": {
+          "ml": "സൂര്യകിരണത്തോട് സാമ്യമുള്ള പ്രകാശം കാണുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of light resembling a sunray."
+        },
+        "steps": {
+          "ml": [
+            "ഈ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുക.",
+            "ഇവിടെ നൽകിയ അഭ്യർഥന പറയുക."
+          ],
+          "en": [
+            "Read this pair one hundred times.",
+            "Say the request provided here."
+          ]
+        },
+        "formula_arabic": "شَمْخَاهِيرٍ شَمْهَاهِيرٍ",
+        "spoken_request": {
+          "arabic": "إن كنتم حضرتم أيتها الأرواح فأروني من شعاع نوركم",
+          "translation": {
+            "ml": "ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിന്റെ ഒരു കിരണം എനിക്ക് കാണിക്കൂ.",
+            "en": "Spirits, if you have arrived, show me a ray of your light."
+          },
+          "arabic_reading": "إِنْ كُنْتُمْ حَضَرْتُمْ أَيَّتُهَا الْأَرْوَاحُ فَأَرُونِي مِنْ شُعَاعِ نُورِكُمْ"
+        }
+      }
+    ]
   },
   "HNK-MHC-025": {
     "title": {
@@ -870,7 +2161,8 @@
         "The account of ingesting a washed inscription on an empty stomach is retained as historical information."
       ]
     },
-    "source_entry": "english-hunger-70"
+    "source_entry": "english-hunger-70",
+    "method_id": "hnk-mhc-025-purpose-001"
   },
   "HNK-MHC-026": {
     "title": {
@@ -891,7 +2183,8 @@
         "The thirst claim is not an instruction to avoid water."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "method_id": "hnk-mhc-026-purpose-001"
   },
   "HNK-MHC-027": {
     "title": {
@@ -931,7 +2224,8 @@
             "Read the name eighty times in prostration after the night prayer.",
             "Ask God for the need."
           ]
-        }
+        },
+        "method_id": "hnk-mhc-027-purpose-002"
       },
       {
         "source_entry": "english-fatiha-eleven-138",
@@ -955,9 +2249,36 @@
             "Attach the inscription to the child."
           ]
         },
-        "verse_group": "1:1-7"
+        "verse_group": "1:1-7",
+        "method_id": "hnk-mhc-027-purpose-003"
+      },
+      {
+        "method_id": "headache-tawsh",
+        "source_entry": "english-variant-accounts-138",
+        "title": {
+          "ml": "തലവേദന — തൂശ് രൂപത്തിലെ ചരിത്രഎഴുത്ത്",
+          "en": "Headache — historical Tawsh inscription"
+        },
+        "benefit": {
+          "ml": "തലവേദന മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of headache relief."
+        },
+        "steps": {
+          "ml": [
+            "طُوشٍ എന്ന രൂപം കടലാസിൽ 20 തവണ എഴുതുക.",
+            "ص അക്ഷരം 90 തവണ കൂടി എഴുതുക. 20, 90 എന്നിവ എഴുത്തിന്റെ എണ്ണങ്ങളാണ്.",
+            "എഴുത്ത് തലവേദനയുള്ള വ്യക്തി വഹിക്കുന്നതാണ് ചരിത്രരീതി; ചികിത്സയ്ക്ക് പകരമല്ല."
+          ],
+          "en": [
+            "Write the form طُوشٍ twenty times on paper.",
+            "Add ninety instances of ص. Both counts refer to inscriptions.",
+            "The historical method has the person with a headache carry it; this is not treatment."
+          ]
+        },
+        "formula_arabic": "طُوشٍ"
       }
-    ]
+    ],
+    "method_id": "hnk-mhc-027-purpose-001"
   },
   "HNK-MHC-028": {
     "title": {
@@ -980,6 +2301,35 @@
         "Thirty-five is not a count for this name alone."
       ]
     },
-    "source_entry": "checked-account"
+    "source_entry": "checked-account",
+    "other_methods": [
+      {
+        "method_id": "spell-inscription",
+        "source_entry": "english-name-specific-and-collective-139",
+        "title": {
+          "ml": "സിഹ്റ് മോചനം — പാത്രത്തിലെ ചരിത്രഎഴുത്ത്",
+          "en": "Spell relief — historical vessel inscription"
+        },
+        "benefit": {
+          "ml": "സിഹ്റ് മാറുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
+          "en": "Historical claim of spell relief."
+        },
+        "steps": {
+          "ml": [
+            "പേരും യൂനുസ് 10:81-ലെ ഉദ്ധരണിയും പാത്രത്തിൽ എഴുതുന്നതാണ് ഈ ചരിത്രരീതി.",
+            "എഴുത്ത് കുടിപ്പിക്കൽ അതിന്റെ തുടർഘട്ടമാണ്; എഴുതിയ വസ്തു കുടിക്കാനുള്ള നിർദേശമായി ഉപയോഗിക്കരുത്."
+          ],
+          "en": [
+            "The historical method inscribes the name and the quoted passage of Yunus 10:81 in a vessel.",
+            "Its next step is ingestion; do not use this as advice to ingest writing materials."
+          ]
+        },
+        "external_verse_ids": [
+          "birhatiah-source-quotation-quran-10-81"
+        ]
+      }
+    ],
+    "method_id": "hnk-mhc-028-purpose-001",
+    "verse_group": "36:1-83"
   }
 }
