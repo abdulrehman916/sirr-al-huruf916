@@ -6,6 +6,10 @@ import { createRequire } from 'node:module';
 import { build } from 'esbuild';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 assert.equal(Object.keys(guides).length, 28);
+const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
+assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
+assert.equal(new Set(blogGlosses.entries.map(entry => entry.name_id)).size, 28);
+assert.equal(blogGlosses.verification_status, 'unverified_linguistic_meaning');
 const verseGroups = JSON.parse(fs.readFileSync('src/data/birhatiahMethodVerses.json', 'utf8'));
 for (const [group, surah, count] of [['36:1-83', 36, 83], ['105:1-5', 105, 5]]) {
   assert.equal(verseGroups[group].verses.length, count);
@@ -40,6 +44,10 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(!primary.includes('ബന്ധപ്പെട്ട ദുആകളും അർഥവുമായി ബന്ധപ്പെട്ട വചനങ്ങളും'));
     assert.ok(!primary.includes('data-reader-section="duas"'));
     assert.ok(primary.includes('data-reader-section="name-details"'));
+    const externalGloss = blogGlosses.entries.find(entry => entry.name_id === id);
+    assert.ok(externalGloss && primary.includes('data-reader-section="external-gloss-2012"'), `${id}: attributed blog gloss missing`);
+    assert.ok(primary.includes(externalGloss.translation[language]), `${id}: translated outside gloss missing`);
+    assert.ok(primary.includes('heshammamdouh.blogspot.com/2012/01/28.html'));
     const allMethods = [guide, ...(guide.other_methods || [])];
     assert.equal(new Set(allMethods.map(method => method.method_id)).size, allMethods.length);
     for (const method of allMethods) assert.ok(primary.includes(`id="${id}-${method.method_id}"`) && primary.includes(`href="#${id}-${method.method_id}"`), `${id}: purpose must link to its complete block`);
