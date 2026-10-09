@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import guides from '@/data/birhatiahReaderGuide.json';
 import additionalOutsideMethods from '@/data/birhatiahOutsideMethods2023.json';
+import newlyCheckedOutsideMethods from '@/data/birhatiahOutsideMethods2020.json';
 import methodVerses from '@/data/birhatiahMethodVerses.json';
 import meaningReadings from '@/data/birhatiahMeaningReadings.json';
 import externalSources from '@/data/holyNamesExternalSources.json';
@@ -89,7 +90,7 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
   const guide = guides[nameId];
   const readings = chapter.edition_accounts?.find(entry => entry.id === 'english-reading-correspondence-review');
   const name = chapter.source_name_form || safeReading(readings?.arabic_reading, readings?.arabic_original);
-  const methods = guide ? [guide, ...(guide.other_methods || []), ...additionalOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))] : [];
+  const methods = guide ? [guide, ...(guide.other_methods || []), ...additionalOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId)), ...newlyCheckedOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))] : [];
   const usedSourceIds = new Set(methods.filter(method => !method.source_name_id || method.source_name_id === nameId).map(method => method.source_entry).filter(Boolean));
   const supplementary = ['practices', 'edition_accounts', 'source_notes']
     .flatMap(group => (chapter[group] || []).filter(entry => !usedSourceIds.has(entry.id)).map(entry => ({ ...entry, group })));
