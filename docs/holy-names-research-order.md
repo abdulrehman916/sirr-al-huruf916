@@ -54,3 +54,14 @@ Owner-approved reading layout for **the independent repository only**:
 6. The user approves research and careful safe implementation. Keep the archive and calculation cores unchanged and publish only checked batches. `npm run verify:section-c-reader` includes a 28-name SSR check and deduplication checks; it is part of `prebuild`. Preserve the distinction between a successful build and complete content transcription.
 
 **Remaining:** Full line-by-line transcription/meaning for long Arabic and manuscript prayers, additional source-specific diagrams, and an exhaustive source-by-source pass for every one of the 28 names remain unfinished. No complete-coverage claim is authorized until reviewed and published.
+
+
+## 10 October 2026 — owner-approved Section B work
+
+The owner explicitly authorizes Section B research and careful implementation now; this supersedes the earlier instruction to remain exclusively in C. Do not describe Section C as exhaustively complete. Work only in abdulrehman916/sirr-al-huruf916; preserve existing working features, card identifiers, calculation values and original source records.
+
+For every Section B name, preserve the current numerical header, then present the name's meaning and detailed explanation, followed by separately attributed scholarly interpretations. Below that, organize distinct purposes and methods under headings and subheadings. Each topic must be self-contained: source-attributed purpose, full relevant Arabic prayer or verse, understandable Malayalam/English meaning, ordered steps, repetition or inscription count, day/time/occasion and conditions when explicitly stated, genuine name-specific source figures and concise book/edition/page attribution. Reading must not require visiting another website. Retain provenance links in source details.
+
+Research order: first collect and check accessible external sources name by name; then examine the owner's accessible books and append the relevant passages to the appropriate cards. Deduplicate identical accounts for display while retaining all source references. Preserve distinct authors' opinions, counts, methods and editions separately. Include every verified distinct relevant diagram found; ten is an example, not a quota. Preserve original figure letters, numbers and positions; never generate substitute source diagrams or invent unreadable text, vowels, counts, timing or effects. Distinguish Quran/hadith evidence from traditional and forum claims; no guaranteed efficacy claims. Record unavailable or unreadable sources and finite coverage honestly.
+
+Authorization is confirmed, but this instruction record is not evidence that content has been implemented, the live database audited, all books accessed or a deployment completed. Validate and publish checked implementation batches, and report actual scope and remaining work.
