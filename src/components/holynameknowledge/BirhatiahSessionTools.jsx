@@ -6,15 +6,25 @@ import {
 
 // Optional, strictly user-operated reading aid. No new ritual number/time is prescribed.
 // Counter is manual; time is a personal countdown and is never sourced from Abjad.
-export default function BirhatiahSessionTools({ sourceCount, sourceCountKind }) {
+export default function BirhatiahSessionTools({ sourceCount, sourceCountKind, sessionKey }) {
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
-  const [repetitions, setRepetitions] = useState(0);
+  const [repetitions, setRepetitions] = useState(() => {
+    try {
+      const value = Number(localStorage.getItem(`birhatiah-session-count:${sessionKey}`));
+      return Number.isSafeInteger(value) && value >= 0 ? value : 0;
+    } catch { return 0; }
+  });
   const [minutes, setMinutes] = useState(5);
   const [seconds, setSeconds] = useState(300);
   const [running, setRunning] = useState(false);
   const deadline = useRef(null);
   const sourceGoal = sourceRecitationGoal(sourceCount, sourceCountKind);
+
+  useEffect(() => {
+    try { localStorage.setItem(`birhatiah-session-count:${sessionKey}`, String(repetitions)); }
+    catch { /* Count still works in memory when storage is blocked. */ }
+  }, [repetitions, sessionKey]);
 
   useEffect(() => {
     if (!running) return undefined;
@@ -56,8 +66,8 @@ export default function BirhatiahSessionTools({ sourceCount, sourceCountKind }) 
       <h4 className="text-sm font-semibold text-yellow-100">{ml ? 'വ്യക്തിഗത പാരായണ കൗണ്ടറും ടൈമറും' : 'Personal reading counter and timer'}</h4>
       <p className="text-xs text-white/60 leading-relaxed">
         {ml
-          ? 'ഇത് നിങ്ങൾക്ക് ഉപയോഗിക്കാനുള്ള ഐച്ഛിക ഉപകരണമാണ്. ടൈമറിന്റെ സമയം ഗ്രന്ഥം നിർദേശിച്ച മുഹൂർത്തമല്ല. അബ്ജദ് മൂല്യമോ എഴുതേണ്ട എണ്ണമോ സ്വയം ഓതൽഎണ്ണമാക്കുന്നില്ല. കാർഡ് അടച്ചാൽ ഈ സെഷന്റെ എണ്ണങ്ങൾ നിലനിൽക്കണമെന്നില്ല.'
-          : 'An optional personal aid. The timer duration is not a source-prescribed clock hour. Abjad values and inscription counts are never treated as recitation targets. Session values may reset when the card closes.'}
+          ? 'ഇത് നിങ്ങൾക്ക് ഉപയോഗിക്കാനുള്ള ഐച്ഛിക ഉപകരണമാണ്. ടൈമറിന്റെ സമയം ഗ്രന്ഥം നിർദേശിച്ച മുഹൂർത്തമല്ല. അബ്ജദ് മൂല്യമോ എഴുതേണ്ട എണ്ണമോ സ്വയം ഓതൽഎണ്ണമാക്കുന്നില്ല. എണ്ണം ഈ ഉപകരണത്തിൽ മാത്രം സൂക്ഷിക്കും; കാർഡ് അടച്ചാൽ ടൈമർ റീസെറ്റാകും.'
+          : 'An optional personal aid. The timer duration is not a source-prescribed clock hour. Abjad values and inscription counts are never treated as recitation targets. The count is kept on this device only; the timer resets when the card closes.'}
       </p>
       <div className="flex flex-wrap items-end gap-3">
         <div className="rounded-lg border border-yellow-500/15 p-3 min-w-32">
