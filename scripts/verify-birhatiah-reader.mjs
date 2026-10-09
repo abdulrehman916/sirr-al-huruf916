@@ -34,8 +34,17 @@ for (const [id, guide] of Object.entries(guides)) {
     }
     assert.ok(guide.steps[language].length && guide.title[language] && guide.benefit[language]);
     const html = render(chapter, language);
-    const split = html.indexOf('<details class="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"');
-    assert.ok(split > 0, `${id}: references must be collapsed`);
+    const split = html.indexOf('data-reader-section="references"');
+    assert.ok(split > 0, `${id}: source references must appear inside the card`);
+    assert.ok(html.includes('data-reader-layout="inline"'), `${id}: source references are not inline`);
+    assert.ok(html.includes('data-reader-content="inline-source-material"'), `${id}: source content unavailable`);
+    assert.ok(html.includes('data-testid="birhatiah-inline-book-pages"'), `${id}: original pages missing from the card`);
+    assert.ok(!html.includes('<details'), `${id}: nested sections still conceal source material`);
+    const linkedPages = JSON.parse(fs.readFileSync('src/data/birhatiahFullSourceChapter.json', 'utf8')).name_pages[id] || [];
+    for (const printedPage of linkedPages) {
+      assert.ok(html.includes(`data-source-page="${printedPage}"`), `${id}: source page ${printedPage} not inline`);
+      assert.ok(html.includes(`/figures/birhatiah-manba-p${printedPage}.png`));
+    }
     const primary = html.slice(0, split);
     assert.ok(primary.indexOf('data-reader-section="formula"') < primary.indexOf('data-reader-section="method"'));
     assert.ok(!primary.includes('data-reader-section="references"'));
@@ -63,7 +72,7 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(primary.includes('heshammamdouh.blogspot.com/2012/01/28.html'));
     const allMethods = [guide, ...(guide.other_methods || [])];
     assert.equal(new Set(allMethods.map(method => method.method_id)).size, allMethods.length);
-    for (const method of allMethods) assert.ok(primary.includes(`id="${id}-${method.method_id}"`) && primary.includes(`href="#${id}-${method.method_id}"`), `${id}: purpose must link to its complete block`);
+    for (const method of allMethods) assert.ok(primary.includes(`id="${id}-${method.method_id}"`), `${id}: full method must be embedded in the card`);
     for (const method of guide.other_methods || []) assert.ok(primary.includes(`data-source-entry="${method.source_entry}"`));
     if (guide.spoken_request) assert.ok(primary.includes(guide.spoken_request.arabic));
     for (const method of allMethods) {
@@ -105,7 +114,7 @@ for (const language of ['ml', 'en']) {
   assert.ok(html.indexOf('data-reader-section="formula"') < html.indexOf('data-reader-section="yasin-method"'));
   assert.ok(html.indexOf('data-reader-section="yasin-method"') < html.indexOf('data-reader-section="seven-day-method"'));
   assert.ok(html.indexOf('data-reader-section="extended-prayer"') < html.indexOf('data-reader-section="references"'));
-  assert.ok(!/<details[^>]+data-reader-section="references"[^>]*\bopen/.test(html));
+  assert.ok(!/<details/.test(html), 'Collective reader must show material inline');
 }
 const version = JSON.parse(fs.readFileSync('src/data/birhatiahCollectiveVersion.json', 'utf8'));
 assert.equal(version.arabic_short_continuation_source.printed_page, 75);

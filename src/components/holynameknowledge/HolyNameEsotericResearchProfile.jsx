@@ -210,7 +210,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
       {/* 1 — PRIMARY INFORMATION */}
       <HolyNameSourceChapter chapter={rec.source_checked_chapter} nameId={nameId} currentAbjad={abjadValue} />
-      <Block title="Primary Information" titleML="നാമവിവരങ്ങളും അക്ഷരമൂല്യങ്ങളും" icon={BookOpen} accent={P.text} defaultOpen={false}>
+      <Block title="Primary Information" titleML="നാമവിവരങ്ങളും അക്ഷരമൂല്യങ്ങളും" icon={BookOpen} accent={P.text} defaultOpen={true}>
         <div className="text-center py-2 rounded-lg" style={{ background: P.bgHi, border: `1px solid ${P.borderHi}` }}>
           <p className="font-amiri text-[2.2rem] font-bold leading-[2.2] selectable" style={{ color: P.text, textShadow: "0 0 20px rgba(212,175,55,0.30)" }} dir="rtl">
             {rec.canonical_arabic_name || rec.arabic_name}
@@ -284,7 +284,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
 
       {/* 2 — CURRENT SCHOLARLY DATA */}
-      <Block title="Current Scholarly Data" titleML="നിലവിലുള്ള പണ്ഡിത വിവരങ്ങൾ" icon={ScrollText} accent={P.text} defaultOpen={false}>
+      <Block title="Current Scholarly Data" titleML="നിലവിലുള്ള പണ്ഡിത വിവരങ്ങൾ" icon={ScrollText} accent={P.text} defaultOpen={true}>
         {scholarly.length > 0 ? (
           <div className="space-y-3">
             {scholarly.map((s, i) => (
@@ -332,7 +332,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
       </Block>
 
       {/* 3 — ADVANCED KNOWLEDGE SECTIONS (all empty until approved) */}
-      {populatedSections.length > 0 && <Block title="Practices and related details" titleML="രീതികളും ബന്ധപ്പെട്ട വിവരങ്ങളും" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={false}>
+      {populatedSections.length > 0 && <Block title="Practices and related details" titleML="രീതികളും ബന്ധപ്പെട്ട വിവരങ്ങളും" icon={BookCopy} accent="rgba(245,208,96,0.60)" defaultOpen={true}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {populatedSections.map(s => <AdvancedBlock key={s.key} label={s.label} ml={s.ml} entries={s.entries} nameId={nameId} />)}
         </div>

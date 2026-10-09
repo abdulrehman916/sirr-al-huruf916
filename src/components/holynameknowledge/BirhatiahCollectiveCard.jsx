@@ -30,7 +30,7 @@ export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
       <BirhatiahOmanBookNotes />
       <BirhatiahOnlineCollectiveGrids />
       <BirhatiahSharedImportedMaterial byField={sharedByField} />
-      <details className="rounded-xl border border-white/15 p-4 space-y-4"><summary className="cursor-pointer text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</summary>
+      <section className="rounded-xl border border-white/15 p-4 space-y-4"><h3 className="text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</h3>
       {completeList && <div className="space-y-3">
         <h3 className={`${cls} text-yellow-200`}>{ml ? "നിലവിലെ 28 നാമങ്ങളുടെ ക്രമം" : "Order of the current 28 name cards"}</h3>
         <p className="font-amiri text-2xl text-right leading-loose text-white/90" dir="rtl" lang="ar">{ordered.map(c => c.canonical_arabic_name || c.arabic_name).join(" · ")}</p>
@@ -42,11 +42,11 @@ export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
         <p className={`${cls} text-sm text-white/85 leading-loose`}>{source.context_translation[language]}</p>
         <p className="font-amiri text-2xl text-right leading-loose text-white/90" lang="ar" dir="rtl">{source.arabic_reading || source.arabic_original}</p>
         <p className={`${cls} text-sm text-white/85 leading-loose`}>{source.translation[language]}</p>
-        {source.arabic_reading && <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "വായനയ്ക്കായി ഹറകത്ത് ചേർത്തത്; മൂലപാഠം" : "Editorial reading vowels; original wording"}</summary><p className="font-amiri text-lg text-right leading-loose pt-2" lang="ar" dir="rtl">{source.arabic_original}</p></details>}
+        {source.arabic_reading && <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "വായനയ്ക്കായി ഹറകത്ത് ചേർത്തത്; മൂലപാഠം" : "Editorial reading vowels; original wording"}</h3><p className="font-amiri text-lg text-right leading-loose pt-2" lang="ar" dir="rtl">{source.arabic_original}</p></section>}
         <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{ml ? "ഈ ഭാഗം പ്രത്യേക സമയം, ഓതൽഎണ്ണം, കളത്തിന്റെ സംഖ്യകൾ എന്നിവ നൽകുന്നില്ല. പേരുകൾക്കുള്ള മുഴുവൻ സംയുക്ത നിർദേശമായി ഇത് ഉപയോഗിച്ചിട്ടില്ല." : "This passage supplies no specific time, repetition count or square values. It is not used as a complete collective prescription."}</p>
-        <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{source.source_title} · {source.source_author} · {source.source_volume} · {source.source_pages}</p></details>
+        <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{source.source_title} · {source.source_author} · {source.source_volume} · {source.source_pages}</p></section>
       </article>}
-      </details>
+      </section>
     </div>}
   </section>;
 }

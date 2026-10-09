@@ -10,10 +10,10 @@ export default function BirhatiahOmanNameReferences({ nameId }) {
     .filter(row => row.name_id === nameId)
     .map(row => ({ note, row })));
   if (!matches.length) return null;
-  return <details className="rounded-xl border border-yellow-500/25 p-3 space-y-3" data-testid="birhatiah-oman-name-references">
-    <summary className="cursor-pointer text-yellow-200 font-semibold">
+  return <section className="rounded-xl border border-yellow-500/25 p-3 space-y-3" data-testid="birhatiah-oman-name-references">
+    <h3 className="text-yellow-200 font-semibold">
       {ml ? 'ഒമാൻ ഗ്രന്ഥത്തിൽ ഈ നാമത്തെക്കുറിച്ചുള്ള പരാമർശം' : 'This name in the Oman source volume'}
-    </summary>
+    </h3>
     <div className="space-y-4 pt-3">
       {matches.map(({ note, row }) => {
         const isCollective = note.source_scope?.startsWith('collective_');
@@ -40,5 +40,5 @@ export default function BirhatiahOmanNameReferences({ nameId }) {
         </article>;
       })}
     </div>
-  </details>;
+  </section>;
 }

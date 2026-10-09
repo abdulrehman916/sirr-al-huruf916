@@ -15,10 +15,10 @@ export function BirhatiahOnlineNameComparison({ nameId, currentAbjad }) {
   const entry = source.entries.find(item => item.name_id === nameId);
   if (!entry) return null;
   const differs = Number.isFinite(Number(currentAbjad)) && Number(currentAbjad) !== entry.abjad_reported;
-  return <details className="rounded-xl border border-yellow-500/25 p-3 space-y-3" data-testid="birhatiah-online-comparison">
-    <summary className="cursor-pointer text-yellow-200 font-semibold">
+  return <section className="rounded-xl border border-yellow-500/25 p-3 space-y-3" data-testid="birhatiah-online-comparison">
+    <h3 className="text-yellow-200 font-semibold">
       {ml ? 'പുറംസ്രോതസ്സിലെ നാമപാഠവും എബ്ജദ് പാഠഭേദവും' : 'Outside-source name spelling and Abjad variant'}
-    </summary>
+    </h3>
     <div className="space-y-2 pt-2">
       <p className="font-amiri text-2xl text-right text-yellow-100" lang="ar" dir="rtl">{entry.arabic_original}</p>
       <p className="text-sm text-white/90">{ml ? 'ഈ ഫോറം രേഖപ്പെടുത്തിയ എബ്ജദ് മൂല്യം' : 'Abjad value reported by the forum'}: <strong>{entry.abjad_reported}</strong></p>
@@ -26,7 +26,7 @@ export function BirhatiahOnlineNameComparison({ nameId, currentAbjad }) {
       <p className="text-xs text-white/60 leading-relaxed">{ml ? 'ഈ പുറംരേഖയിൽ പേരുകൾ ഹറകത്തില്ലാതെയാണ്. മൂലഗ്രന്ഥത്തിലെ ഹറകത്തോടെയുള്ള വായന മുകളിലുണ്ട്. മുകളിലെ സംഖ്യ എബ്ജദ് മൂല്യമാണ്; ദിക്റിന്റെ ആവർത്തനസംഖ്യയല്ല.' : 'This outside post prints the names without vowels. Read the manuscript-based vowelled name above. The number is an Abjad value, not a recitation count.'}</p>
       <a href={source.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{source.source_title}</a>
     </div>
-  </details>;
+  </section>;
 }
 
 function PrintedGrid({ matrix, title, language }) {
@@ -50,8 +50,8 @@ export function BirhatiahOnlineCollectiveGrids() {
   const ml = language === 'ml';
   const printed = source.collective.reported_sum;
   const calculated = sum(source.entries.map(item => item.abjad_reported));
-  return <details className="rounded-xl border border-yellow-500/25 p-4 space-y-4" data-testid="birhatiah-printed-online-grids">
-    <summary className="cursor-pointer font-semibold text-yellow-200">{ml ? 'പുറത്തെ അച്ചടിരൂപത്തിലെ രണ്ട് കളങ്ങളും സംഖ്യാഭേദങ്ങളും' : 'Two externally printed grids and numerical variants'}</summary>
+  return <section className="rounded-xl border border-yellow-500/25 p-4 space-y-4" data-testid="birhatiah-printed-online-grids">
+    <h3 className="font-semibold text-yellow-200">{ml ? 'പുറത്തെ അച്ചടിരൂപത്തിലെ രണ്ട് കളങ്ങളും സംഖ്യാഭേദങ്ങളും' : 'Two externally printed grids and numerical variants'}</h3>
     <div className="space-y-4 pt-3">
       <p className="text-sm leading-relaxed text-white/85">{ml ? `പുറംപോസ്റ്റ് ആകെ ${printed} എന്ന് രേഖപ്പെടുത്തുന്നു. അതേ പോസ്റ്റിലെ 28 സംഖ്യകൾ കൂട്ടിയാൽ ${calculated} ആണ്. ഈ വ്യത്യാസം മറച്ചിട്ടില്ല.` : `The forum claims a sum of ${printed}, while its 28 listed numbers actually total ${calculated}. Both readings are retained without altering the site's canonical values.`}</p>
       <PrintedGrid matrix={source.collective.triangle} title={ml ? 'ത്രികോൺ കളം — പോസ്റ്റിലെ രൂപം' : '3 × 3 grid — forum printing'} language={language}/>
@@ -64,5 +64,5 @@ export function BirhatiahOnlineCollectiveGrids() {
         <a href={witness.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{witness.source_title}</a>
       </section>)}
     </div>
-  </details>;
+  </section>;
 }
