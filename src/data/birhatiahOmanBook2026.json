@@ -2,7 +2,7 @@
   "source_title_ar": "مجربات أهل عُمان الكبير",
   "edition": "النسخة 2",
   "checked_on": "2026-10-09",
-  "review_basis": "Eight separate passages visually checked against original user-owned Oman PDF page images: PDF pages 40, 87, 91–92, 94, 264, 282, 454, 491. Original scans remain in the user's private library; page images for the newly checked passages have not been published.",
+  "review_basis": "Twelve historical passages checked against original page images in the user's private 837-page Oman PDF, covering PDF pages 31, 40, 81, 87, 91–92, 94, 142, 264, 282, 454, 472, 491; separate source square on PDF 565 remains documented in its own data file. This is not an exhaustive transcription of the whole volume.",
   "scope": "collective_section_c",
   "notes": [
     {
@@ -226,6 +226,118 @@
       "review_note": {
         "ml": "പേജിലെ വ്യത്യസ്ത ചിത്രങ്ങൾ പരസ്പരം കലർത്തരുത്; അവയുടെ സംഖ്യാപാഠം അക്ഷരപരിശോധന കൂടാതെ ടൈപ്പ് ചെയ്തിട്ടില്ല.",
         "en": "The separate page figures have not been conflated, and their handwritten characters were not guessed."
+      }
+    },
+    {
+      "id": "oman-p27",
+      "printed_page": 27,
+      "pdf_page": 31,
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "short_grouped_names_embedded_in_other_historical_prayer",
+      "arabic_excerpt": "برهتيه كرير تتليه",
+      "counts": [],
+      "title": {
+        "ml": "മറ്റൊരു ദുആയിൽ ഉൾപ്പെട്ട ആദ്യ നാമങ്ങളുടെ ചെറുപരാമർശം",
+        "en": "Short group of opening names embedded in another prayer"
+      },
+      "meaning": {
+        "ml": "അച്ചടിച്ച പേജ് 27-ലെ പഴയ വിരുദ്ധപ്രാർത്ഥനയുടെ അകത്താണ് ആദ്യ ബൃഹത്തീയ്യ നാമങ്ങളിൽ ചിലത് പ്രത്യക്ഷപ്പെടുന്നത്. ഇവിടെ ഓരോ നാമത്തിനുമുള്ള സ്വതന്ത്ര പാരായണസംഖ്യയോ ഈ മൂന്നു നാമങ്ങൾക്കു മാത്രമായ ഒരു പൊതു നിയമമോ വ്യക്തമായി നൽകിയിട്ടില്ല. ഇത് ഗ്രന്ഥചരിത്രത്തിലെ പരാമർശം മാത്രമാണ്.",
+        "en": "Printed page 27 includes some opening Birhatiah names within a separate historical adversarial prayer. It does not supply independently attributable counts for those names. Recorded only for source comparison."
+      },
+      "review_note": {
+        "ml": "മൂലചിത്രത്തിലെ അച്ചടിച്ച രൂപത്തിൽനിന്നുള്ള ചെറിയ ഭാഗം; മുഴുവൻ ദീർഘവാക്യം ഇനിയും പദാനുപദം പരിശോധിക്കേണ്ടതാണ്.",
+        "en": "Short segment visually read from the source page; longer prayer remains untranscribed and should not be reconstructed by inference."
+      }
+    },
+    {
+      "id": "oman-p77",
+      "printed_page": 77,
+      "pdf_page": 81,
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "four_names_in_collective_historical_context",
+      "related_name_ids": [
+        "HNK-MHC-001",
+        "HNK-MHC-002",
+        "HNK-MHC-003",
+        "HNK-MHC-004"
+      ],
+      "arabic_excerpt": "برهتيه كرير تتليه طوران",
+      "counts": [],
+      "title": {
+        "ml": "ആദ്യ നാല് നാമങ്ങളുടെ സംയുക്ത പരാമർശം",
+        "en": "Historical grouped mention of the first four names"
+      },
+      "meaning": {
+        "ml": "അച്ചടിച്ച പേജ് 77-ൽ «برهتيه كرير تتليه طوران» എന്ന ആദ്യ നാല് നാമങ്ങൾ ഒന്നിച്ചുള്ള ഒരു ചരിത്രഭാഗത്തിൽ കാണുന്നു. ഇവിടെ നാല് നാമങ്ങൾക്കും വേറിട്ട ഓതൽഎണ്ണമോ നാല് സ്വതന്ത്ര രീതികളോ നൽകിയിട്ടില്ല. ഗ്രന്ഥത്തിലെ ഫലവാദങ്ങൾ സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല.",
+        "en": "Printed page 77 contains the four opening names «برهتيه كرير تتليه طوران» in a shared historical account. It gives no four separate readings or independent practices; the historical effectiveness claim is not verified."
+      },
+      "review_note": {
+        "ml": "മൂലപേജ് പരിശോധിച്ചു; അപരിചിത അക്ഷരരൂപങ്ങൾക്ക് പുതിയ ഹർക്കത്ത് സൃഷ്ടിച്ചിട്ടില്ല.",
+        "en": "Original page checked; no unsupported vowel marks have been assigned."
+      }
+    },
+    {
+      "id": "oman-p138",
+      "printed_page": 138,
+      "pdf_page": 142,
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "collective_seven_recitations_with_separate_karir_inscription",
+      "related_name_ids": [
+        "HNK-MHC-002"
+      ],
+      "arabic_excerpt": "ثم تعزم على المربوط بالبرهتيه 7 مرات",
+      "additional_excerpts": [
+        "وفي الكف الأيسر (كرير) أحرف مفرقه"
+      ],
+      "counts": [
+        {
+          "kind": "collective_recitation",
+          "value": 7
+        }
+      ],
+      "title": {
+        "ml": "സംയുക്ത ഏഴ് വായനകൾ; കരീറിന്റെ വേറിട്ട എഴുത്തുപരാമർശം",
+        "en": "Seven collective readings, separate Karir inscription mention"
+      },
+      "meaning": {
+        "ml": "അച്ചടിച്ച പേജ് 138-ലെ ചരിത്രഭാഗത്തിൽ മുഴുവൻ ബൃഹത്തീയ്യയെ ഏഴ് തവണ എന്നിങ്ങനെ പരാമർശിക്കുന്നു. അതിനോടൊപ്പം കരീർ എന്ന നാമം വേറിട്ട എഴുത്തുസന്ദർഭത്തിൽ വരുന്നു. ഏഴ് എന്ന എണ്ണം കരീർ മാത്രം ചൊല്ലേണ്ട എണ്ണം അല്ല; ഈ രണ്ടു ഭാഗങ്ങൾ തമ്മിൽ കൂട്ടിക്കലർത്തരുത്.",
+        "en": "Printed page 138 contains a sevenfold reading of the collective Birhatiah invocation. Separately, Karir appears as an inscription reference. Seven is not an independent Karir recitation goal."
+      },
+      "review_note": {
+        "ml": "ഇത് ഒരു ഗ്രന്ഥരേഖയാണ്; ഫലവാദം സ്വതന്ത്രമായി പരിശോധിച്ചിട്ടില്ല.",
+        "en": "A historical attributed passage; claimed effects have not been independently verified."
+      }
+    },
+    {
+      "id": "oman-p468",
+      "printed_page": 468,
+      "pdf_page": 472,
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "collective_alternative_readings_near_untranscribed_figures",
+      "arabic_excerpt": "وتعزم عليه بالبرهتيه 3 مرات أو 7 مرات",
+      "counts": [
+        {
+          "kind": "collective_recitation_option",
+          "value": 3
+        },
+        {
+          "kind": "collective_recitation_option",
+          "value": 7
+        }
+      ],
+      "figure_present_in_source": true,
+      "figure_reproduced_in_site": false,
+      "title": {
+        "ml": "സംയുക്ത മൂന്നു അല്ലെങ്കിൽ ഏഴ് എന്ന രണ്ട് ബദലുകൾ",
+        "en": "Three or seven as alternative collective counts"
+      },
+      "meaning": {
+        "ml": "അച്ചടിച്ച പേജ് 468-ൽ സംയുക്ത ബൃഹത്തീയ്യയെ മൂന്ന് തവണ **അല്ലെങ്കിൽ** ഏഴ് തവണ എന്ന രണ്ട് ബദലുകളായി ഗ്രന്ഥം രേഖപ്പെടുത്തുന്നു. അവ കൂട്ടിച്ചേർത്ത് പത്ത് തവണ എന്ന പുതിയ സംഖ്യ ഉണ്ടാക്കുന്നില്ല. സമീപമുള്ള കൈയെഴുത്ത് രൂപങ്ങൾ ഈ ഗ്രന്ഥപേജിന്റെ മറ്റ് വിഭാഗങ്ങളുമായി ബന്ധപ്പെട്ടവയാണ്; അവയെ സ്ഥിരീകരിച്ച ബൃഹത്തീയ്യ ഔഫാഖ് എന്ന് തെറ്റായി കാണിക്കുന്നില്ല.",
+        "en": "Printed page 468 describes three OR seven readings of collective Birhatiah, not an additive ten-reading rule. Nearby handwritten forms belong to distinct page contexts and have not been authenticated as independent Birhatiah awfāq."
+      },
+      "review_note": {
+        "ml": "കൈയെഴുത്ത് ചിത്രങ്ങൾ മൂലപേജിൽ നേരിട്ട് പരിശോധിച്ചു; അവയുടെ ഡിജിറ്റൽ പകർപ്പുകൾ ഇനിയും വെബ്സൈറ്റിൽ ചേർത്തിട്ടില്ല.",
+        "en": "Handwritten source images were visually inspected; faithful figures have not yet been digitized into the website."
       }
     }
   ],
