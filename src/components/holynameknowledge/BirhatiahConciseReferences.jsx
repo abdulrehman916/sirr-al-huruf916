@@ -1,4 +1,5 @@
 import BirhatiahOutsideVariants from './BirhatiahOutsideVariants';
+import BirhatiahOmanNameReferences from './BirhatiahOmanNameReferences';
 import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
 import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
 import BirhatiahResearchContext from './BirhatiahResearchContext';
@@ -36,6 +37,7 @@ export default function BirhatiahConciseReferences({ chapter, nameId }) {
         <p className="text-xs text-white/45">{figure.source_title || chapter.source_title}{figure.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${figure.printed_page}` : ''}</p>
       </figure>)}
     </details>}
+    <BirhatiahOmanNameReferences nameId={nameId} />
     <BirhatiahOutsideVariants nameId={nameId} />
     <BirhatiahArabicSinglePage nameId={nameId} />
     <BirhatiahResearchContext nameId={nameId} />

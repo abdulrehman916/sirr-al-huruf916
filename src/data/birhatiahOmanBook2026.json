@@ -2,7 +2,7 @@
   "source_title_ar": "مجربات أهل عُمان الكبير",
   "edition": "النسخة 2",
   "checked_on": "2026-10-09",
-  "review_basis": "User Library PDF pages visually checked; no original scan published.",
+  "review_basis": "User Library PDF source pages 40, 87, 91, 92 and 94 read with accompanying source page images; additional index candidates require image checking. The private PDF scan is not published.",
   "scope": "collective_section_c",
   "notes": [
     {
@@ -23,13 +23,14 @@
       "meaning": {
         "ml": "ഈ പ്രത്യേക സംരക്ഷണപ്രാർത്ഥനയുടെ അവസാനത്തിൽ ബിർഹത്തിയ്യ ഒരു തവണ വായിക്കണമെന്ന് പുസ്തകം പറയുന്നു. മറ്റു പതിപ്പുകളുടെ എണ്ണം ഇതുകൊണ്ട് മാറ്റുന്നില്ല.",
         "en": "At the end of this particular protective passage, the book states one reading of Birhatiah. This does not replace other editions' counts."
-      }
+      },
+      "review_status": "checked_against_pdf_page_image"
     },
     {
       "id": "oman-p83",
       "printed_page": 83,
       "pdf_page": 87,
-      "arabic_excerpt": "باسم البرهتية كلها",
+      "arabic_excerpt": "تقرأ عليه وهو بين يديك (قلنهود) 195 مره",
       "counts": [
         {
           "value": 195,
@@ -44,7 +45,12 @@
       "meaning": {
         "ml": "കൽനഹൂദ് എന്ന നാമം 195 തവണ വായിക്കുന്ന ഒരു ചരിത്രരേഖയും മുഴുവൻ ബിർഹത്തിയ്യ നാമങ്ങളുമായി ബന്ധപ്പെട്ട വേറൊരു പരാമർശവും ഈ പേജിലുണ്ട്. 195 എന്നത് മുഴുവൻ നാമങ്ങൾക്കും പൊതുവായ എണ്ണമല്ല.",
         "en": "This page includes a historical account specifying 195 readings of Qalnahud and a separate mention of all the Birhatiah names. The 195 is not a count for the entire set."
-      }
+      },
+      "review_status": "checked_against_pdf_page_image",
+      "additional_excerpts": [
+        "بأسم البرهتية كلها"
+      ],
+      "source_scope": "name_011_and_separate_collective_mention"
     },
     {
       "id": "oman-p87-88",
@@ -88,6 +94,72 @@
       "review_note": {
         "ml": "ദീർഘ അറബി പാഠത്തിന്റെ പൂർണ്ണ അക്ഷരപരിശോധന ബാക്കിയുണ്ട്. അപരിചിത നാമങ്ങൾക്ക് ഊഹിച്ച് ഹർക്കത്ത് നൽകിയിട്ടില്ല.",
         "en": "Full letter-by-letter review of the long Arabic text remains pending; no invented vowels have been assigned to unfamiliar names."
+      },
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "collective_28_names_with_embedded_name_010"
+    },
+    {
+      "id": "oman-p90",
+      "printed_page": 90,
+      "pdf_page": 94,
+      "review_status": "checked_against_pdf_page_image",
+      "source_scope": "collective_reference_only",
+      "arabic_excerpt": "قراءة البرهتية",
+      "counts": [],
+      "title": {
+        "ml": "കൈപ്പത്തി സംബന്ധിച്ച ചരിത്രപരമായ പരാമർശം — എണ്ണം നൽകിയിട്ടില്ല",
+        "en": "Historical palm-related mention — no count supplied"
+      },
+      "meaning": {
+        "ml": "ഈ പേജിലെ മറ്റൊരു ചരിത്രരീതിയിൽ ബൃഹത്തീയ്യ വായനയെ പരാമർശിക്കുന്നു. ഇവിടെ ബൃഹത്തീയ്യയ്ക്കായി പ്രത്യേക ഓതൽഎണ്ണം പറയുന്നില്ല. മന്ത്രപ്രയോഗത്തിന്റെ ഫലത്തെ ശാസ്ത്രീയ രോഗനിർണയമായി കാണാനാവില്ല.",
+        "en": "A separate historical palm-related account mentions reading Birhatiah but states no distinct repetition count for it. Its claimed diagnostic effects are not clinically validated."
+      }
+    }
+  ],
+  "indexed_pending_visual_review": [
+    {
+      "pdf_page": 264,
+      "printed_page": 260,
+      "scope": "historical_menstrual_bleeding_claim",
+      "related_name_ids": [
+        "HNK-MHC-011",
+        "HNK-MHC-012",
+        "HNK-MHC-013",
+        "HNK-MHC-014"
+      ],
+      "summary": {
+        "ml": "രക്തസ്രാവത്തെക്കുറിച്ചുള്ള പഴയ ചികിത്സാവാദത്തിന് സമീപം നാല് നാമങ്ങളുടെ കൂട്ടുപട്ടികയും സംയുക്ത ബൃഹത്തീയ്യ പരാമർശവും.",
+        "en": "A four-name grouping and collective Birhatiah mention near a historical bleeding-related claim."
+      }
+    },
+    {
+      "pdf_page": 282,
+      "printed_page": 278,
+      "scope": "historical_health_claim",
+      "related_name_ids": [],
+      "summary": {
+        "ml": "ആരോഗ്യബന്ധപ്പെട്ട അവകാശവാദമുള്ള ഭാഗത്ത് ബൃഹത്തീയ്യ മൂന്നുതവണ എന്ന സൂചന; പേജ് ചിത്രപരിശോധന ബാക്കി.",
+        "en": "A health-claim section appears to give a threefold collective recitation; visual verification pending."
+      }
+    },
+    {
+      "pdf_page": 454,
+      "printed_page": 450,
+      "scope": "historical_palm_inscription",
+      "related_name_ids": [],
+      "summary": {
+        "ml": "കൈപ്പത്തി/മുദ്ര ബന്ധമുള്ള വേറിട്ട പരാമർശം; കൃത്യമായ മൂലചിത്രപരിശോധന ബാക്കി.",
+        "en": "Another palm-inscription reference; original page image review pending."
+      }
+    },
+    {
+      "pdf_page": 491,
+      "printed_page": 487,
+      "scope": "talisman_reference",
+      "related_name_ids": [],
+      "summary": {
+        "ml": "വ്യക്തിയെക്കുറിച്ച് വിവരം കണ്ടെത്തുമെന്ന താലിസ്മാൻ പരാമർശം; ചിത്രവും പൂർണ്ണമൂലപാഠവും പരിശോധിക്കാനുള്ളതാണ്.",
+        "en": "A talisman-related passage alleging divination about a person; the figure and complete original text require inspection."
       }
     }
   ]
