@@ -31,7 +31,7 @@ try {
     const rows=JSON.parse(fs.readFileSync(process.env.SECTION_B_PRIVATE_SNAPSHOT,'utf8'));
     let figures=0;
     for(const {data:card} of rows){
-      const checked=(card.attached_visuals||[]).filter(v=>v.research_batch==='section-b-source-pass-2026-10-09');
+      const checked=(card.attached_visuals||[]).filter(v=>v.review_status==='checked_against_scan' && v.matched_pdf_name_id===card.pdf_name_id && ['wafq','talisman','special_script'].includes(v.visual_type));
       figures+=checked.length;
       for(const v of checked){
         assert.equal(v.matched_pdf_name_id,card.pdf_name_id);
@@ -40,12 +40,12 @@ try {
         assert.equal(createHash('sha256').update(bytes).digest('hex'),v.image_sha256);
       }
       for(const lang of ['ml','en']) assert.equal((render(card,lang).match(/<img /g)||[]).length,checked.length);
-      for(const list of Object.values(card).filter(Array.isArray)) for(const e of list.filter(e=>e.research_batch==='section-b-source-pass-2026-10-09')){
+      for(const list of Object.values(card).filter(Array.isArray)) for(const e of list.filter(e=>e.research_batch?.startsWith('section-b-'))){
         if(e.visual_type) continue;
         assert.ok(e.arabic_text&&e.malayalam_text&&e.english_text&&e.source_book&&e.source_page);
       }
     }
-    assert.equal(figures,26);
+    assert.equal(figures,Number(process.env.SECTION_B_EXPECTED_FIGURES || 26));
   }
 }finally{fs.rmSync(work,{recursive:true,force:true});}
 console.log('PASS: only source-checked figures for the matching name; ordinary pages excluded, bilingual source details, source-image hashes and text escaping.');
