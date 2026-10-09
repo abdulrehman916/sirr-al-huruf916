@@ -148,18 +148,22 @@ function AdvancedBlock({ label, ml, entries, nameId }) {
 export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKeys = new Set() }) {
   const [rec, setRec] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [retryIndex, setRetryIndex] = useState(0);
   const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
 
   useEffect(() => {
     let alive = true;
     setLoading(true);
+    setLoadError(false);
+    setRec(null);
     platform.entities.HolyNameEsotericKnowledge.filter({ name_id: nameId }, null, 1)
       .then(r => { if (alive) setRec((r && r[0]) || null); })
-      .catch(() => { if (alive) setRec(null); })
+      .catch(() => { if (alive) { setRec(null); setLoadError(true); } })
       .finally(() => { if (alive) setLoading(false); });
     return () => { alive = false; };
-  }, [nameId]);
+  }, [nameId, retryIndex]);
 
   if (loading) {
     return (
@@ -174,7 +178,17 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
     return (
       <div className="mt-3 rounded-xl border p-3 flex items-start gap-2" style={{ background: "rgba(8,16,38,0.5)", borderColor: P.faint }}>
         <ShieldAlert className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style={{ color: "rgba(148,163,184,0.7)" }} />
-        <p className="font-malayalam text-sm font-bold" style={{ color: "rgba(148,163,184,0.85)" }}>{NOT_VERIFIED}</p>
+        <div className="space-y-2">
+          <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm font-semibold`} style={{ color: "rgba(148,163,184,0.85)" }}>
+            {loadError
+              ? (language === "ml" ? "കാർഡിലെ വിവരങ്ങൾ താൽക്കാലികമായി ലോഡ് ചെയ്യാനായില്ല." : "Unable to load this card's details right now.")
+              : (language === "ml" ? "ഈ ഇസ്മിന്റെ ഡാറ്റ ലഭ്യമല്ല." : "This name's data is unavailable.")}
+          </p>
+          <button type="button" data-testid="section-c-card-retry" onClick={() => setRetryIndex(index => index + 1)}
+            className="rounded-lg border border-yellow-500/35 px-3 py-2 text-xs text-yellow-100">
+            {language === "ml" ? "കാർഡ് വീണ്ടും ലോഡ് ചെയ്യുക" : "Retry card details"}
+          </button>
+        </div>
       </div>
     );
   }
