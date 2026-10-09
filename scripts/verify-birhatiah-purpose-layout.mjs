@@ -64,7 +64,7 @@ for (const method of source2020.methods) {
   for (const language of ['ml','en']) {
     assert.ok(method.title[language] && method.benefit[language] && method.steps[language]?.length && method.timing[language]);
   }
-  assert.equal(stripVowels(method.formula_arabic).replace(/\\s/g,''), method.source_form_arabic.replace(/\\s/g,''),
+  assert.equal(stripVowels(method.formula_arabic).replace(/\s+/g,''), method.source_form_arabic.replace(/\s+/g,''),
     'Do not change printed Arabic consonantal spelling while adding source-reviewed reading forms');
 }
 const sourceChapter = fs.readFileSync(path.join(root,'src/components/holynameknowledge/HolyNameSourceChapter.jsx'),'utf8');
