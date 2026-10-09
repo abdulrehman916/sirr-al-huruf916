@@ -224,7 +224,7 @@ export default function SectionCNames() {
                       >
                         <div id={`section-c-detail-${card.name_id}`} className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
                           <HolyNameEsotericResearchProfile nameId={card.name_id} sharedEntryKeys={shared.keys} />
-                          <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} />
+                          <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} inlineDetails />
                         </div>
                       </motion.div>
                     )}
