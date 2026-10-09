@@ -12,9 +12,11 @@ try {
   const output = path.join(work, 'reader.cjs');
   await build({ stdin: { contents: `import React from 'react'; import {renderToStaticMarkup} from 'react-dom/server';
     import Reader from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
+    export {sectionBReading, unlinkedSectionBVisuals} from './src/lib/holyNames/sectionBReading.js';
+    export {withSectionBMeaning} from './src/lib/holyNames/sectionBMeanings.js';
     import {HolyNamesLanguageContext as Context} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx';
-    export const render=(chapter,nameId,language)=>renderToStaticMarkup(React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId})));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
-  const { render } = createRequire(import.meta.url)(output);
+    export const render=(chapter,nameId,language,card)=>renderToStaticMarkup(React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId,card})));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
+  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning } = createRequire(import.meta.url)(output);
   const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
   for (const [id, chapter] of Object.entries(chapters)) {
     for (const language of ['ml', 'en']) {
@@ -48,5 +50,48 @@ try {
   const page = fs.readFileSync('src/pages/HolyOneDetailPage.jsx', 'utf8');
   assert.ok(page.includes('<HolyNameSectionBReader') && !page.includes('<HolyNameSourceChapter'));
   assert.ok(page.includes('sequence !== loadSequence.current'));
+  const base = { id: 'method', title_ml: 'പരാമർശം', title_en: 'Account', arabic_text: 'النص', malayalam_text: 'രീതി', english_text: 'Method', source_book: 'Book A', source_page: '12', review_status: 'checked_against_scan', related_visual_id: 'figure', repetitions: 7 };
+  const card = { pdf_name_id: 'test', wafq: [base, { ...base, id: 'duplicate', source_book: 'Book B' }, { ...base, id: 'different-count', repetitions: 8 }], dua: [{ ...base, id: 'prayer', arabic_text: 'الدعاء', english_text: 'Prayer', malayalam_text: 'ദുആ', repetitions: null }], scholarly_entries: [{ id: 'legacy', verification_status: 'verified', confidence: 'HIGH' }], attached_visuals: [{ id: 'figure' }, { id: 'unlinked' }] };
+  const reading = sectionBReading(card, 'test');
+  assert.equal(reading.pending, 1);
+  assert.equal(reading.topics.length, 2);
+  assert.equal(reading.topics[0].references.length, 2);
+  assert.equal(reading.topics[0].supplications.length, 1);
+  assert.equal(reading.topics[1].count, 8);
+  assert.deepEqual(unlinkedSectionBVisuals(card), [{ id: 'unlinked' }]);
+  assert.equal(sectionBReading(card, 'wrong').topics.length, 0);
+  assert.ok(!render(null, 'test', 'en', card).includes('Not specified in this source.'));
+  assert.equal(withSectionBMeaning({ pdf_name_id: 'PDF-HN-0146', meaning_malayalam: 'Original' }).meaning_malayalam, 'Original');
+  const privateCard = { pdf_name_id: 'test', dua: [{ ...base, source_url: 'https://private-bucket.supabase.co/storage/v1/object/sign/scan?token=secret' }] };
+  assert.ok(!render(null, 'test', 'en', privateCard).includes('token=secret'));
+  const meanings = JSON.parse(fs.readFileSync('src/data/holyNamesQuranMeanings.json', 'utf8'));
+  assert.equal(Object.keys(meanings.verses).length, 47);
+  assert.ok(meanings.source_notice.includes('CHANGING IT IS NOT ALLOWED'));
+  for (const [ref, verse] of Object.entries(meanings.verses)) {
+    const qcard = { pdf_name_id: 'test', scholarly_entries: [{ ...base, id: ref, source_book: 'القرآن الكريم — Tanzil', source_page: ref, source_url: `https://tanzil.net/#${ref}`, arabic_text: verse.arabic }] };
+    for (const language of ['en', 'ml']) assert.ok(render(null, 'test', language, qcard).includes(escape(verse[language])), `Missing complete meaning: ${ref}`);
+    qcard.scholarly_entries[0].arabic_text = 'different excerpt';
+    assert.equal(sectionBReading(qcard, 'test').evidence[0].verse_meaning, null);
+  }
+  if (process.env.SECTION_B_CHECKED_FIXTURE) {
+    const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
+    const cards = new Map();
+    for (const row of checked) {
+      const c = cards.get(row.name_id) || { pdf_name_id: row.name_id };
+      (c[row.group] ||= []).push(row.entry); cards.set(row.name_id, c);
+    }
+    const reviewed = JSON.parse(fs.readFileSync('src/data/holyNamesReviewedCards.json', 'utf8'));
+    for (const [id, c] of Object.entries(reviewed)) cards.set(id, c);
+    assert.equal(cards.size, 160);
+    for (const [id, c] of cards) for (const language of ['ml', 'en']) {
+      const html = render(chapters[id], id, language, c);
+      for (const field of ['scholarly_entries', 'dua', 'khawass', 'wafq', 'talisman', 'amal', 'wazifa']) for (const entry of c[field] || []) {
+        const body = entry[language === 'ml' ? 'malayalam_text' : 'english_text'];
+        if (body) assert.ok(html.includes(escape(body)), `${id}: missing ${entry.id} ${language}`);
+        if (entry.arabic_text) assert.ok(html.includes(escape(entry.arabic_text)), `${id}: missing original ${entry.id}`);
+      }
+    }
+    console.log(`PASS: ${checked.length} checked records across all ${cards.size} live-card fixtures retain originals and both translations.`);
+  }
 } finally { fs.rmSync(work, { recursive: true, force: true }); }
 console.log('PASS: every Section B chapter paragraph in both languages, separate Quran/scholar/topic/book sections, name isolation, no invented count, source attribution and escaped text.');

@@ -1,3 +1,4 @@
+import { withSectionBMeaning } from '@/lib/holyNames/sectionBMeanings';
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Book, Filter, ArrowUpDown, X, ChevronDown } from "lucide-react";
@@ -378,7 +379,7 @@ function SectionB() {
     setLoadError(false);
     try {
       const allNames = await platform.entities.HolyOnePDFName.list(null, 500);
-      setNames(allNames || []);
+      setNames((allNames || []).map(withSectionBMeaning));
       const uniqueSurahs = [...new Set((allNames || []).map(n => n.surah_name))].filter(Boolean);
       setSurahList(uniqueSurahs);
     } catch (error) {

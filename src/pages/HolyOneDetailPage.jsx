@@ -14,6 +14,8 @@ import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVi
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSectionBReader from "@/components/holynameknowledge/HolyNameSectionBReader";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
+import { withSectionBMeaning } from '@/lib/holyNames/sectionBMeanings';
+import { unlinkedSectionBVisuals } from '@/lib/holyNames/sectionBReading';
 import reviewedCards from "@/data/holyNamesReviewedCards.json";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import { useIsOwner } from "@/hooks/useIsOwner";
@@ -93,9 +95,9 @@ export default function HolyOneDetailPage() {
         if (sequence !== loadSequence.current) return;
         if (result && result.length > 0) {
           const reviewed = reviewedCards[nameId];
-          setName(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
+          setName(withSectionBMeaning(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
             ? { ...result[0], ...reviewed }
-            : result[0]);
+            : result[0]));
           setSource("B");
         } else {
           toast({ title: "Name not found", variant: "destructive" });
@@ -378,6 +380,7 @@ export default function HolyOneDetailPage() {
                 <h2 className="font-inter font-semibold text-white">Meaning</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.meaning_malayalam} english={name.meaning_english || name.english_meaning} />
+              {name.editorial_meaning && <p className="text-xs text-white/55 mt-3 leading-relaxed">{language === 'ml' ? 'ഇത് നൽകിയ അറബി തലക്കെട്ടിന്റെ ലളിതമായ അർഥമാണ്. തബാറക, തആലാ, സുബ്ഹാനഹു തുടങ്ങിയവ സ്തുതിപദങ്ങളാണ്. ഒരു പദത്തെ സ്വതന്ത്ര ദൈവനാമമായി സ്ഥിരീകരിക്കുന്ന തെളിവായി ഈ അർഥം കണക്കാക്കരുത്.' : 'This is an editorial meaning of the supplied Arabic heading. Tabaraka, taala and subhanahu are expressions of praise. This gloss does not authenticate a word as an independent divine name.'}</p>}
             </div>
           ) : null}
 
@@ -392,7 +395,7 @@ export default function HolyOneDetailPage() {
             </div>
           ) : null}
 
-        {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
+        {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} card={name} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
 
           {/* Virtues & Benefits */}
           {(name.virtues_benefits || name.virtues_benefits_english || name.benefits_english) ? (
@@ -428,7 +431,7 @@ export default function HolyOneDetailPage() {
           ) : null}
 
           {/* Original figures remain access-controlled; the API resolves temporary URLs. */}
-          {source === "B" && <HolyOneSourceVisuals visuals={name.attached_visuals} cardId={name.pdf_name_id} />}
+          {source === "B" && <HolyOneSourceVisuals visuals={unlinkedSectionBVisuals(name)} cardId={name.pdf_name_id} />}
 
           {/* Source Reference — provenance Owner-only; Surah kept as content */}
           <div className="text-center text-xs text-white/30 mt-6">
@@ -460,7 +463,7 @@ export default function HolyOneDetailPage() {
             Section-B-only; never shown for Section A. */}
         {source === "B" && (
           <div className="mt-6">
-            <HolyOneScholarlySections card={name} />
+            <HolyOneScholarlySections card={name} pendingOnly />
           </div>
         )}
 

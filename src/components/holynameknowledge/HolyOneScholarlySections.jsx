@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, BookOpen, ScrollText, Sparkles, Shield, Square, Star, Hand, Gift, AlertTriangle, Clock, Hash, ListChecks, Type, Languages, Library, History } from "lucide-react";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import { useIsOwner } from "@/hooks/useIsOwner";
+import { isSourceChecked } from '@/lib/holyNames/sectionBReading';
 
 // ═══════════════════════════════════════════════════════════════
 // HolyOneScholarlySections — Section-B-only scholarly library panel.
@@ -194,17 +195,17 @@ function SourceCard({ src }) {
   );
 }
 
-export default function HolyOneScholarlySections({ card }) {
+export default function HolyOneScholarlySections({ card, pendingOnly = false }) {
   const { language } = useHolyNamesLanguage();
   const c = card || {};
   const isOwner = useIsOwner();
 
   const sections = useMemo(() => {
     return SECTIONS.map(s => {
-      const arr = Array.isArray(c[s.key]) ? c[s.key] : [];
+      const arr = (Array.isArray(c[s.key]) ? c[s.key] : []).filter(entry => !pendingOnly || !isSourceChecked(entry));
       return { ...s, items: arr, count: arr.length };
     });
-  }, [c]);
+  }, [c, pendingOnly]);
 
   const variants = useMemo(() => {
     return VARIANTS.map(v => {
@@ -226,7 +227,7 @@ export default function HolyOneScholarlySections({ card }) {
       <div className="flex items-center gap-2 mb-2">
         <Library className="w-5 h-5" style={{ color: G.text }} />
         <h2 className={`${language === "ml" ? "font-malayalam" : "font-inter"} font-semibold text-white`}>
-          {language === "ml" ? "പണ്ഡിത ഗ്രന്ഥശാല" : "Scholarly Library"}
+          {pendingOnly ? (language === 'ml' ? 'പഴയ പരാമർശങ്ങൾ — സ്രോതസ്സ് പുനഃപരിശോധന ബാക്കി' : 'Earlier accounts — source recheck pending') : (language === "ml" ? "പണ്ഡിത ഗ്രന്ഥശാല" : "Scholarly Library")}
         </h2>
         {isOwner && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: G.text }}>
           {sources.length} sources · {history.length} passes

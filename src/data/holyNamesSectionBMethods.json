@@ -1,0 +1,36 @@
+{
+  "PDF-HN-0159": {
+    "b-oman-khabir-p338": {
+      "source_book": "مجربات أهل عُمان الكبير — النسخة 2",
+      "source_page": "printed 338 / PDF 342",
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥം ആദ്യം കൊടുത്തിരിക്കുന്ന അറബി വാക്യം കടലാസിൽ എഴുതുന്നതായി വിവരിക്കുന്നു; അതിൽ «അൽ-ഖബീർ» ഏഴുതവണ വരുന്നു.",
+          "പിന്നീട് കടലാസ് നല്ല സുഗന്ധമുള്ള ധൂപത്തിനുമുകളിൽ വെക്കുന്നതായി പറയുന്നു.",
+          "«ഖബീർ» 812 തവണ വായിക്കുന്നതായി പറയുന്നു. ഏഴ് എന്ന എഴുത്തിലെ എണ്ണവും 812 എന്ന വായനയുടെ എണ്ണവും വേർതിരിച്ചിരിക്കുന്നു.",
+          "ആ രാത്രിയിലെ സ്വപ്നത്തിൽ ആവശ്യപ്പെട്ട കാര്യം അറിയിക്കണമെന്ന മുകളിലെ അറബി പ്രാർത്ഥന പറയുന്നു; «كذا وكذا» ആവശ്യപ്പെട്ട കാര്യത്തെ സൂചിപ്പിക്കുന്നു.",
+          "കടലാസ് തലക്കടിയിൽ വെക്കുന്നതായി ഗ്രന്ഥം വിവരിക്കുന്നു. സന്തോഷകരമായ കാര്യം കാണുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+        ],
+        "en": [
+          "The book first describes writing the quoted Arabic passage on paper, including al-Khabir seven times.",
+          "It then describes holding the paper over pleasant-smelling incense.",
+          "It states that Khabir is read 812 times. Seven inscriptions and 812 recitations are distinct counts.",
+          "The quoted Arabic request asks for the desired matter to be disclosed in that night's dream; kadha wa kadha represents that matter.",
+          "The book describes placing the paper under the head. Its promise of a pleasing dream is the book's claim."
+        ]
+      },
+      "count": {
+        "ml": "എഴുത്തിൽ അൽ-ഖബീർ 7 തവണ; വായനയിൽ ഖബീർ 812 തവണ.",
+        "en": "Al-Khabir written 7 times; Khabir recited 812 times."
+      },
+      "timing": {
+        "ml": "പ്രാർത്ഥനയിൽ «ഈ രാത്രി» എന്നു പറയുന്നു; കടലാസ് തലക്കടിയിൽ വെക്കുന്നു. പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറയുന്നില്ല.",
+        "en": "The request refers to this night, followed by placing the paper under the head. No weekday or clock time is stated."
+      },
+      "conditions": {
+        "ml": "കടലാസും നല്ല സുഗന്ധമുള്ള ധൂപവും പരാമർശിക്കുന്നു; ധൂപത്തിന്റെ ഇനം വ്യക്തമാക്കിയിട്ടില്ല. ഈ ഭാഗത്ത് പ്രത്യേക ശുദ്ധീകരണമോ ഭക്ഷണനിയമമോ പറഞ്ഞിട്ടില്ല. ഇത് പരമ്പരാഗത ഗ്രന്ഥപരാമർശമാണ്; നബിവചനമായി അവതരിപ്പിക്കുന്നില്ല.",
+        "en": "Paper and pleasant-smelling incense are mentioned; no incense species is specified. This passage gives no special purification or diet rule. This is a traditional book account, not presented as a prophetic report."
+      }
+    }
+  }
+}
