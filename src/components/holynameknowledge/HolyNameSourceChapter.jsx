@@ -118,19 +118,19 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
       <Arabic>{name}</Arabic>
       <Arabic>{safeReading(meaningReadings[nameId], chapter.meaning_arabic)}</Arabic>
       <p className="text-white/90 leading-loose">{t(chapter.meaning_translation).replace(/^ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം\s*/, '').replace(/^ഗ്രന്ഥത്തിലെ അറബി അർഥം:\s*/, '').replace(/^The source gives\s*/, '').replace(/^The source’s Arabic meaning is\s*/, '')}</p>
-      {outsideGloss && <details className="border-t border-yellow-500/20 pt-3 space-y-3" data-reader-section="external-gloss-2012">
-        <summary className="cursor-pointer text-sm text-yellow-200">{ml ? 'പുറം ബ്ലോഗിലെ അർത്ഥഭേദം — സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല' : 'Alternative gloss in outside blog — not independently verified'}</summary>
+      {outsideGloss && <section className="border-t border-yellow-500/20 pt-3 space-y-3" data-reader-section="external-gloss-2012">
+        <h4 className="text-sm text-yellow-200">{ml ? 'പുറം ബ്ലോഗിലെ അർത്ഥഭേദം — സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല' : 'Alternative gloss in outside blog — not independently verified'}</h4>
         <p className="text-white/85 text-sm leading-loose mt-3">{t(outsideGloss.translation)}</p>
         <p className="text-white/60 text-xs leading-loose mt-2">{t(outsideGlosses2012.scope_note)}</p>
         <a href={outsideGlosses2012.source_url} target="_blank" rel="noreferrer" className="block underline text-xs text-white/70 mt-2">{outsideGlosses2012.source_author} · {outsideGlosses2012.source_date}</a>
-      </details>}
+      </section>}
     </section>
     <BirhatiahOnlineNameComparison nameId={nameId} currentAbjad={currentAbjad} />
     <section className="space-y-3" data-reader-section="name-details"><h3 className="text-yellow-200">{ml ? 'നാമത്തിന്റെ അക്ഷരങ്ങളും ബന്ധങ്ങളും' : 'Letters and correspondences'}</h3><p className="font-amiri text-2xl text-right text-yellow-100" dir="rtl">{[...letters(name)].join(' · ')}</p>{linkedLetter && <p className="text-white/85">{ml ? 'ബന്ധിപ്പിച്ച അക്ഷരം: ' : 'Associated letter: '}{linkedLetter[1] || linkedLetter[2]}</p>}{linkedMansion && <p className="text-white/85">{ml ? 'മൻസിൽ: ' : 'Lunar mansion: '}{linkedMansion[1] || linkedMansion[2]}</p>}</section>
     <div className="space-y-3" data-reader-section="topics">
       <div className="space-y-1">
         <h3 className="text-lg font-semibold text-yellow-200">{ml ? 'ആവശ്യങ്ങളും ദിക്റിന്റെ രീതികളും' : 'Purposes and reading methods'}</h3>
-        <p className="text-sm text-white/60">{ml ? 'ഒരു വിഷയം തുറന്ന് അറബി പാഠവും അർത്ഥവും ചെയ്യേണ്ട ക്രമവും വായിക്കുക.' : 'Open a topic to read the Arabic wording, meaning and method.'}</p>
+        <p className="text-sm text-white/60">{ml ? 'കാർഡിലെ എല്ലാ രീതികളും അവയുടെ അറബി പാഠവും അർത്ഥവും താഴെ നേരിട്ട് കാണാം. ഈ തിരച്ചിൽ ആവശ്യമായ വിഷയം കണ്ടെത്താൻ മാത്രം ഉപയോഗിക്കുക.' : 'Every method, original Arabic text and translation is displayed below. Search is only an optional filter.'}</p>
       </div>
       <input type="search" value={topicQuery} onChange={event => setTopicQuery(event.target.value)}
         placeholder={ml ? 'ഉപജീവനം, സംരക്ഷണം, മനസ്സമാധാനം… വിഷയങ്ങൾ തിരയുക' : 'Search livelihood, protection, peace of mind…'}
@@ -139,8 +139,8 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
       <nav className="rounded-xl border border-yellow-500/20 p-4 space-y-3" aria-label={ml ? 'ഈ കാർഡിലെ ആവശ്യങ്ങൾ' : 'Purposes in this card'}>
         <h3 className="text-yellow-200">{ml ? 'വിഷയസൂചിക' : 'Topic index'}</h3>
         <ol className="list-decimal pl-6 space-y-2">
-          {visibleMethods.map(method => <li key={method.method_id}><a href={`#${nameId}-${method.method_id}`} className="text-white/85 underline underline-offset-4">{t(method.title)}</a></li>)}
-          {visibleSupplementary.map(entry => <li key={entry.group + ':' + entry.id}><a href={`#${nameId}-extra-${entry.group}-${entry.id}`} className="text-white/85 underline underline-offset-4">{t(entry.title)}</a></li>)}
+          {visibleMethods.map(method => <li key={method.method_id}><span className="text-white/85">{t(method.title)}</span></li>)}
+          {visibleSupplementary.map(entry => <li key={entry.group + ':' + entry.id}><span className="text-white/85">{t(entry.title)}</span></li>)}
         </ol>
         {!visibleMethods.length && !visibleSupplementary.length && <p className="text-sm text-white/60">{ml ? 'ഈ വാക്കിനുള്ള വിഷയം കണ്ടെത്തിയില്ല.' : 'No matching topic in this name.'}</p>}
       </nav>
@@ -148,21 +148,24 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
         method={{...method, method_id: `${nameId}-${method.method_id}`}}
         name={name} language={language} chapter={chapter} index={methods.indexOf(method) + 1}
         collective={nameId === 'HNK-MHC-028' && methods.indexOf(method) === 0} />)}
-      {visibleSupplementary.map(entry => <details key={entry.group + ':' + entry.id}
+      {visibleSupplementary.map(entry => <article key={entry.group + ':' + entry.id}
         id={`${nameId}-extra-${entry.group}-${entry.id}`}
         className="rounded-xl border border-yellow-500/25 bg-yellow-500/[0.025] scroll-mt-24 overflow-hidden"
         data-reader-section="source-topic">
-        <summary className="cursor-pointer px-4 py-3 text-yellow-100 font-semibold">{t(entry.title)}</summary>
+        <h4 className="px-4 py-3 text-yellow-100 font-semibold">{t(entry.title)}</h4>
         <div className="space-y-3 border-t border-yellow-500/15 px-4 py-4">
           {entry.arabic_original && <Arabic>{safeReading(entry.arabic_reading, entry.arabic_original)}</Arabic>}
           {t(entry.translation) && <p className="leading-loose text-white/85 whitespace-pre-wrap">{t(entry.translation)}</p>}
-          {entry.count != null && <p className="text-sm text-white/85">{ml ? 'എണ്ണം' : 'Count'}: {entry.count}</p>}
+          {entry.count != null && <p className="text-sm text-white/85">{sourceCountLabel(entry.count_kind, language)}: {entry.count}</p>}
           {t(entry.timing) && <p className="text-sm text-white/85">{ml ? 'സമയം' : 'Time'}: {t(entry.timing)}</p>}
           {(entry.quote_blocks || []).map((quote, j) => <div key={j} className="space-y-2 border-t border-white/10 pt-3"><Arabic>{safeReading(quote.arabic_reading, quote.arabic_original || quote.arabic) || quote.arabic}</Arabic><p className="leading-loose text-white/85">{t(quote.translation)}</p><p className="text-xs text-white/55">{quote.source_location}</p></div>)}
           {entry.source_title && <p className="text-xs text-white/45">{entry.source_title}{entry.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${entry.printed_page}` : ''}</p>}
         </div>
-      </details>)}
+      </article>)}
     </div>
-    <details className="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references"><summary className="cursor-pointer text-yellow-200">{ml ? 'മൂലഗ്രന്ഥപേജുകളും പാഠഭേദങ്ങളും' : 'Original pages and textual variants'}</summary><BirhatiahConciseReferences chapter={chapter} nameId={nameId} /></details>
+    <section className="rounded-xl border border-white/15 p-4 space-y-4" data-reader-section="references" data-reader-layout="inline">
+      <h3 className="text-lg font-semibold text-yellow-200">{ml ? 'മൂലഗ്രന്ഥപേജുകൾ, പാഠഭേദങ്ങൾ, ചിത്രങ്ങൾ' : 'Original pages, textual variants and figures'}</h3>
+      <BirhatiahConciseReferences chapter={chapter} nameId={nameId} />
+    </section>
   </section>;
 }
