@@ -1,0 +1,110 @@
+{
+  "source_id": "blog-birhatiya-2020-two-practices",
+  "source_title": "تصريفات مجربة ومفيدة لأسماء الدعوة البرهتية — مدونة الشيخ برهتية (29 February 2020)",
+  "source_url": "https://barhatiya.blogspot.com/2020/02/blog-post_88.html",
+  "source_kind": "author-published-blog-claim",
+  "source_author": "الشيخ برهتية",
+  "checked_on": "2026-10-09",
+  "scope_note": {
+    "ml": "2020-ലെ അറബി ബ്ലോഗിലെ രണ്ട് പ്രത്യേക പരാമർശങ്ങളാണിവ. ഈ പോസ്റ്റ് 24 നാമങ്ങൾ എന്നൊരു വേറിട്ട എണ്ണം പറയുന്നു; നമ്മുടെ പ്രധാന 28 നാമങ്ങളുടെ ക്രമം മാറ്റരുത്. 622/340 ഇവിടെ വായനയുടെ എണ്ണമാണ്; പഴയ എബ്ജദ് കണക്കിനുള്ള തിരുത്തലല്ല. ഗ്രന്ഥത്തിൽ പൂർണ്ണ നിശ്ചിത സമയമോ നോമ്പിന്റെ ദിവസസംഖ്യയോ പറഞ്ഞിട്ടില്ല.",
+    "en": "Two distinct methods recorded on an Arabic blog in 2020. The post also describes an alternative 24-name grouping, which must not replace the site's canonical 28 names. Here 622/340 are source-specified recitation repetitions, not replacements for stored Abjad calculations. No exact clock hour or fasting duration is provided."
+  },
+  "methods": [
+    {
+      "id": "outside-2020-birhatya-request-622",
+      "method_id": "outside-2020-birhatya-request-622",
+      "source_entry": "blog-2020-name-one",
+      "related_name_ids": [
+        "HNK-MHC-001"
+      ],
+      "source_form_arabic": "برهتيه",
+      "formula_arabic": "بِرْهَتِيْهٍ",
+      "title": {
+        "ml": "അനീതിയുള്ള അധികാരിയുടെ മുമ്പിലുള്ള ആവശ്യത്തിന് — 622 തവണ",
+        "en": "Request before an unjust authority — 622 readings"
+      },
+      "benefit": {
+        "ml": "അനീതിയുള്ള ഭരണാധികാരി, ന്യായാധിപൻ എന്നിവരുടെ മുന്നിലുള്ള ആവശ്യം നിറവേറാൻ ഈ രചയിതാവ് വിവരിക്കുന്ന രീതി.",
+        "en": "A method described by the author for a request before an unjust ruler or judge."
+      },
+      "count": 622,
+      "count_kind": "recitation",
+      "timing": {
+        "ml": "നമസ്കാരത്തിനും നോമ്പിനും ശേഷം; ഏത് നമസ്കാരം, എത്ര ദിവസം നോമ്പ്, പ്രത്യേക മണിക്കൂർ എന്നിവ വ്യക്തമാക്കിയിട്ടില്ല.",
+        "en": "After prayer and fasting; the particular prayer, number of fasting days and clock time are not specified."
+      },
+      "spoken_request": {
+        "arabic": "توكل ياجبرائيل بفلان واقض حاجتي",
+        "translation": {
+          "ml": "ജിബ്‌രീലിനോടുള്ള ആഹ്വാനവും, നിർദിഷ്ട വ്യക്തിയുമായി ബന്ധപ്പെട്ട തന്റെ ആവശ്യം നിറവേറ്റണമെന്ന അപേക്ഷയും ഈ രേഖയിൽ ചേർത്തിരിക്കുന്നു. ‘فلان’ ആവശ്യപ്പെടുന്ന വ്യക്തിയെ സൂചിപ്പിക്കുന്ന സ്ഥാനപൂരകമാണ്.",
+          "en": "The source includes an appeal addressed to Jibril regarding the named person and fulfilment of the petition. ‘فلان’ is a placeholder for the person."
+        }
+      },
+      "steps": {
+        "ml": [
+          "നമസ്കാരത്തിനും നോമ്പിനും ശേഷം ബിർഹത്തിയ്യ ഇസ്മ് 622 തവണ വായിക്കുന്നതായി ഈ രചയിതാവ് രേഖപ്പെടുത്തുന്നു.",
+          "തുടർന്ന് ഈ വിഷയത്തിന് രേഖപ്പെടുത്തിയിരിക്കുന്ന അറബി അപേക്ഷാവാക്യം പറയുന്നതാണ് അതിലെ ക്രമം.",
+          "ഇത് 100 തവണ ദിവസേന എന്ന മറ്റൊരു പതിപ്പിൽനിന്ന് വ്യത്യസ്തമാണ്; ഒരേ രീതിയായി കൂട്ടിച്ചേർക്കരുത്."
+        ],
+        "en": [
+          "The author states 622 readings of the Birhatiah name following prayer and fasting.",
+          "The Arabic request given for that purpose follows.",
+          "This is distinct from the separately sourced daily one-hundred method and should not be merged with it."
+        ]
+      },
+      "external_source": {
+        "url": "https://barhatiya.blogspot.com/2020/02/blog-post_88.html",
+        "title": "تصريفات مجربة ومفيدة لأسماء الدعوة البرهتية (2020)",
+        "checked_on": "2026-10-09"
+      }
+    },
+    {
+      "id": "outside-2020-karir-distress-340",
+      "method_id": "outside-2020-karir-distress-340",
+      "source_entry": "blog-2020-name-two",
+      "related_name_ids": [
+        "HNK-MHC-002"
+      ],
+      "source_form_arabic": "كرير",
+      "formula_arabic": "كَرِيرٍ",
+      "title": {
+        "ml": "വിഷമവും പ്രയാസവും മാറാൻ — 340 തവണ",
+        "en": "Relief from distress — 340 readings"
+      },
+      "benefit": {
+        "ml": "വിഷമത്തിൽ കഴിയുന്ന വ്യക്തിക്ക് ആശ്വാസം ലഭിക്കുന്നതിനുള്ള രീതി എന്നാണ് ഈ അറബി ബ്ലോഗിൽ രേഖപ്പെടുത്തിയിരിക്കുന്നത്.",
+        "en": "A source-attributed reading described for someone facing distress."
+      },
+      "count": 340,
+      "count_kind": "recitation",
+      "timing": {
+        "ml": "നോമ്പിനും നമസ്കാരത്തിനും ശേഷം; സമയം, ദിവസം, കാലദൈർഘ്യം വ്യക്തമാക്കിയിട്ടില്ല.",
+        "en": "Following fasting and prayer; the time, weekday and duration are not specified."
+      },
+      "spoken_request": {
+        "arabic": "توكلوا ياخدام هذا الاسم بإزالة الكرب",
+        "translation": {
+          "ml": "ഈ ഇസ്മിന്റെ സേവകരോടുള്ള അഭ്യർത്ഥനയായി വിഷമം അകറ്റണമെന്ന് പറയുന്ന അറബി വാക്യമാണ് രേഖയിൽ.",
+          "en": "An Arabic appeal to the servitors of the name, requesting removal of distress."
+        }
+      },
+      "steps": {
+        "ml": [
+          "നോമ്പിനും നമസ്കാരത്തിനും ശേഷം കരീർ ഇസ്മ് 340 തവണ ചൊല്ലുന്നതായാണ് ഈ രചയിതാവ് പറയുന്നത്.",
+          "തുടർന്ന് രേഖയിലെ അറബി അപേക്ഷാവാക്യം വരുന്നു.",
+          "ഇത് മറ്റ് ഗ്രന്ഥങ്ങളിലെ കരീർ നാമത്തിന്റെ എണ്ണം അല്ലെങ്കിൽ എബ്ജദ് മൂല്യത്തിനുള്ള തിരുത്തലായി ഉപയോഗിക്കരുത്."
+        ],
+        "en": [
+          "The author records 340 readings of Karir after fasting and prayer.",
+          "The Arabic request printed in the source then follows.",
+          "Do not substitute this count for Karir's Abjad value or other editions' distinct methods."
+        ]
+      },
+      "external_source": {
+        "url": "https://barhatiya.blogspot.com/2020/02/blog-post_88.html",
+        "title": "تصريفات مجربة ومفيدة لأسماء الدعوة البرهتية (2020)",
+        "checked_on": "2026-10-09"
+      }
+    }
+  ]
+}
