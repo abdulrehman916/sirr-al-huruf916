@@ -17,8 +17,8 @@ export default function BirhatiahOmanSquare() {
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const valid = allLines(diagram.numbers).every(x => x === diagram.verified_magic_sum);
-  return <details className="rounded-xl border border-yellow-500/25 p-4 space-y-4" data-testid="birhatiah-oman-original-square">
-    <summary className="cursor-pointer font-semibold text-yellow-200">{diagram.title[language]}</summary>
+  return <section className="rounded-xl border border-yellow-500/25 p-4 space-y-4" data-testid="birhatiah-oman-original-square">
+    <h3 className="font-semibold text-yellow-200">{diagram.title[language]}</h3>
     <div className="space-y-3 pt-3">
       <p className="font-amiri text-lg text-right text-white/85" lang="ar" dir="rtl">{diagram.heading_arabic}</p>
       <p className={`text-sm leading-loose text-white/85 ${ml?'font-malayalam':'font-inter'}`}>{diagram.purpose[language]}</p>
@@ -32,5 +32,5 @@ export default function BirhatiahOmanSquare() {
       <p className={`text-xs text-white/65 leading-relaxed ${ml?'font-malayalam':'font-inter'}`}>{diagram.reading_note[language]}</p>
       <p className="text-xs text-white/50">{diagram.source_title_ar} · {ml?'പേജ്':'p.'} {diagram.printed_page}</p>
     </div>
-  </details>;
+  </section>;
 }
