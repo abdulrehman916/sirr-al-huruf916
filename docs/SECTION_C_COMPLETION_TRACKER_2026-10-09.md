@@ -98,3 +98,11 @@ Priority: inspect every original Arabic page, then related edition passages and 
 - The formerly named **"Abjad Square"** display is now explicitly **"Abjad Value Squared (not a magic square)"**: `Abjad × Abjad` is only arithmetic. Actual manuscript awfāq and source-backed diagrams remain separate, and no synthetic talisman or unsupported grid was added.
 - Added the independent `verify-birhatiah-session.mjs` regression tests, plus per-name bilingual static-reader checks, to the production `prebuild` path. Build READY only verifies code/test packaging, not manual device interaction or entire textual source accuracy.
 - **Unresolved corpus work remains**: every line of all supplied original Arabic and parallel editions, missing per-name source methods and diagrams, new book metadata, medical/safety source classifications, full visual checks of the Oman volume, reliable external research provenance, and a manually exercised stopwatch/counter on real devices. Do not mark the entire library COMPLETE on the strength of a build.
+
+
+### Additional live-data audit and public citation fix
+
+- Independent Supabase SELECT rechecked 28/28 `HolyNameEsotericKnowledge` rows and 28/28 `checked_against_scan` source chapters. The structured chapters hold **26 practices, 48 edition accounts, 23 source notes**; an older scholarly array holds **292 entries**. These are entry counts, not 292 independently distinct proven rituals.
+- The legacy `timing` advanced-section array is still **empty for all 28 cards**. There are **28 count entries on 27 cards**, but they are not all recitation targets; other source-chapter passages may state times within methods. Do not auto-populate blanks by using Abjad or astronomy.
+- Seven cards have no items in their structured `practices` array: C009, C011, C013, C018, C020, C021, C025. This is **not proof no methods exist**, since edition accounts and separate guide/source files may still hold applicable material; each should get a source-by-source review.
+- Card-level source names/pages and `sources[]` bibliographies now render to general Section C visitors rather than only the owner. Private `source_notes` and internal entry notes remain owner-only. A displayed citation identifies where a claim comes from; it does not independently establish that a historical healing/wealth claim is effective.
