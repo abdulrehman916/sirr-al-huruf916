@@ -88,3 +88,21 @@ Priority: inspect every original Arabic page, then related edition passages and 
 - The article does not give separate per-name recitation counts, timings, diagrams or medical evidence. No unsupported claim is inferred. An unrelated blog comment or unrelated ritual must not be included in these entries.
 - The source-first reader verification was extended to check the new entries and both display languages across the full 28-name set. Branch-stage changes remain separate from `main` until an actual successful build and review; an older successful build is not proof of the new branch's runtime.
 - **Still incomplete:** line-by-line original book transcription, remaining Oman book pages, source-backed name-specific methods/figures, reliable bibliographic comparison, genuinely working independent recitation timer, and exhaustive external discovery.
+
+
+## Section C session tooling and numeric-source safeguards — 2026-10-09
+
+- A **per-method optional manual reading counter** and a **personal configurable countdown (1–180 minutes)** have been developed for the 28 name cards, with Malayalam/English labels. Counter values are saved only to this browser/device under a unique per-method key; the clock is reset when the card closes. The countdown uses a wall-clock deadline, so tab suspension does not count as paused time. This is *not* a prescription of an auspicious hour or guaranteed spiritual/medical effect.
+- An automatic suggested reading target appears **only when the source data explicitly marks a number as `count_kind: "recitation"`**. Abjad totals, square entries, writing/inscription counts, and untyped values cannot become automated reading targets. The corresponding source-value label distinguishes these types or clearly says the type is not yet verified.
+- Three existing 2023 forum methods which explicitly describe **combined reading 100 times** are marked `count_kind: "recitation"`, without changing their original Arabic words or the 28 canonical name values; these are still forum claims, not authenticated manuscript efficacy.
+- The formerly named **"Abjad Square"** display is now explicitly **"Abjad Value Squared (not a magic square)"**: `Abjad × Abjad` is only arithmetic. Actual manuscript awfāq and source-backed diagrams remain separate, and no synthetic talisman or unsupported grid was added.
+- Added the independent `verify-birhatiah-session.mjs` regression tests, plus per-name bilingual static-reader checks, to the production `prebuild` path. Build READY only verifies code/test packaging, not manual device interaction or entire textual source accuracy.
+- **Unresolved corpus work remains**: every line of all supplied original Arabic and parallel editions, missing per-name source methods and diagrams, new book metadata, medical/safety source classifications, full visual checks of the Oman volume, reliable external research provenance, and a manually exercised stopwatch/counter on real devices. Do not mark the entire library COMPLETE on the strength of a build.
+
+
+### Additional live-data audit and public citation fix
+
+- Independent Supabase SELECT rechecked 28/28 `HolyNameEsotericKnowledge` rows and 28/28 `checked_against_scan` source chapters. The structured chapters hold **26 practices, 48 edition accounts, 23 source notes**; an older scholarly array holds **292 entries**. These are entry counts, not 292 independently distinct proven rituals.
+- The legacy `timing` advanced-section array is still **empty for all 28 cards**. There are **28 count entries on 27 cards**, but they are not all recitation targets; other source-chapter passages may state times within methods. Do not auto-populate blanks by using Abjad or astronomy.
+- Seven cards have no items in their structured `practices` array: C009, C011, C013, C018, C020, C021, C025. This is **not proof no methods exist**, since edition accounts and separate guide/source files may still hold applicable material; each should get a source-by-source review.
+- Card-level source names/pages and `sources[]` bibliographies now render to general Section C visitors rather than only the owner. Private `source_notes` and internal entry notes remain owner-only. A displayed citation identifies where a claim comes from; it does not independently establish that a historical healing/wealth claim is effective.

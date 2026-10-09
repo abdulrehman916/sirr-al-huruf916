@@ -44,6 +44,8 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(!primary.includes('ബന്ധപ്പെട്ട ദുആകളും അർഥവുമായി ബന്ധപ്പെട്ട വചനങ്ങളും'));
     assert.ok(!primary.includes('data-reader-section="duas"'));
     assert.ok(primary.includes('data-reader-section="name-details"'));
+    assert.ok(primary.includes('data-testid="birhatiah-session-tools"'), `${id}: personal session tool missing`);
+    assert.ok(primary.includes('data-timer-kind="personal-session"'), `${id}: personal and source times conflated`);
     const externalGloss = blogGlosses.entries.find(entry => entry.name_id === id);
     assert.ok(externalGloss && primary.includes('data-reader-section="external-gloss-2012"'), `${id}: attributed blog gloss missing`);
     assert.ok(primary.includes(externalGloss.translation[language]), `${id}: translated outside gloss missing`);

@@ -219,10 +219,11 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
         <div className="grid grid-cols-3 gap-3">
           <Field label="Total Abjad Value" labelML="മൊത്തം അബ്ജദ് മൂല്യം">{abjadValue}</Field>
-          <Field label="Abjad Square" labelML="അബ്ജദ് സ്ക്വയർ">{abjadValue * abjadValue}</Field>
+          <Field label="Abjad Value Squared (not a magic square)" labelML="അബ്ജദ് മൂല്യത്തിന്റെ വർഗം (വെഫ്ക് അല്ല)">{abjadValue * abjadValue}</Field>
           <Field label="Letter Count" labelML="അക്ഷരസംഖ്യ">{letters.length || ""}</Field>
         </div>
         <p className="font-inter text-xs text-white/50">{abjadValue} × {abjadValue} = {abjadValue * abjadValue}</p>
+        <p className="text-xs text-white/50">{language === "ml" ? "ഇത് ഒരു ഗണിത വർഗീകരണമാണ്; ഗ്രന്ഥത്തിലെ വെഫ്കോ ഔഫാഖ് കളമോ അല്ല. യഥാർത്ഥ കളങ്ങൾ ഉറവിടം സഹിതം പ്രത്യേകമായി കാണിക്കുന്നു." : "This is arithmetic squaring, not a manuscript magic square. Actual sourced figures are shown separately."}</p>
 
         <Field label="Canonical Arabic Name" labelML="അറബി നാമം" arabic>{rec.canonical_arabic_name || rec.arabic_name}</Field>
         {language === "ml" && rec.malayalam_transliteration && <Field label="Malayalam Pronunciation" labelML="മലയാളം ഉച്ചാരണം">{rec.malayalam_transliteration}</Field>}
@@ -275,13 +276,9 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
         <div className="grid grid-cols-2 gap-3">
           <Field label="Verification Status" labelML="പരിശോധന നില">{rec.verification_status || "unverified"}</Field>
         </div>
-        {isOwner && (<>
         <Field label="Source Reference" labelML="സ്രോതസ്സ് പരാമർശം">{rec.source_reference}</Field>
-        <div className="grid grid-cols-2 gap-3">
-          <Field label="Source Page Number" labelML="സ്രോതസ്സ് പേജ്">{rec.source_page_number}</Field>
-          <Field label="Source Notes" labelML="സ്രോതസ്സ് കുറിപ്പുകൾ">{rec.source_notes}</Field>
-        </div>
-        </>)}
+        <Field label="Source Page Number" labelML="സ്രോതസ്സ് പേജ്">{rec.source_page_number}</Field>
+        {isOwner && <Field label="Source Notes" labelML="സ്രോതസ്സ് കുറിപ്പുകൾ">{rec.source_notes}</Field>}
       </Block>
 
 
@@ -325,8 +322,8 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
           </div>
         )}
 
-        {/* Sources consulted — Owner only */}
-        {isOwner && Array.isArray(rec.sources) && rec.sources.length > 0 && (
+        {/* Citations are useful to every reader; private notes remain owner-only. */}
+        {Array.isArray(rec.sources) && rec.sources.length > 0 && (
           <div className="space-y-1 pt-2" style={{ borderTop: `1px solid ${P.faint}` }}>
             <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>പരിശോധിച്ച സ്രോതസ്സുകൾ</span>
             {rec.sources.map((s, i) => <p key={i} className="font-inter text-[9px] selectable" style={{ color: "rgba(255,255,255,0.65)" }}>{s.reference} {s.page ? `(p. ${s.page})` : ""}</p>)}
@@ -341,15 +338,13 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
         </div>
       </Block>}
 
-      {/* Footer — traceability — Owner only */}
-      {isOwner && (
+      {/* Per-name traceability is visible to readers, not only the owner. */}
       <div className="flex items-center gap-2 pt-2 px-1" style={{ borderTop: `1px solid ${P.faint}` }}>
         <FileText className="w-3 h-3" style={{ color: P.dim }} />
         <span className="font-malayalam text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>
-          {rec.name_id} · Section C · ഓരോ വിവരവും അതിന്റെ കൃത്യമായ സ്രോതസ്സിലേക്ക് ലേഖനം ചെയ്യാൻ കഴിയും
+          {rec.name_id} · Section C · {language === "ml" ? "വിവരങ്ങളുടെ ഉറവിടം അതത് വിഭാഗത്തിൽ കാണാം" : "Source citations are shown alongside their entries"}
         </span>
       </div>
-      )}
     </div>
   );
 }
