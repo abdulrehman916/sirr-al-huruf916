@@ -7,6 +7,21 @@
     "en": "Editorial translation of meaning from the Arabic; the recorded contextual explanation follows separately."
   },
   "verses": {
+    "7:180": {
+      "arabic": "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا ۖ وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ ۚ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ",
+      "ml": "അല്ലാഹുവിനാണ് ഏറ്റവും നല്ല നാമങ്ങൾ. അതിനാൽ അവയെ ഉപയോഗിച്ച് അവനോട് പ്രാർഥിക്കുക; അവന്റെ നാമങ്ങളിൽ വളച്ചൊടിക്കൽ നടത്തുന്നവരെ വിട്ടേക്കുക. അവർ ചെയ്തുകൊണ്ടിരുന്നതിന് അവർക്ക് പ്രതിഫലം നൽകപ്പെടും.",
+      "en": "Allah has the Most Beautiful Names, so call upon Him by them. And leave those who distort His Names; they will be recompensed for what they have done."
+    },
+    "17:110": {
+      "arabic": "قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَابْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًا",
+      "ml": "പറയുക: നിങ്ങൾ അല്ലാഹുവിനെ വിളിച്ചാലും പരമകാരുണികനെ വിളിച്ചാലും മതി; ഏത് പേരിൽ വിളിച്ചാലും ഏറ്റവും നല്ല നാമങ്ങൾ അവന്നുള്ളതാണ്. നിന്റെ നമസ്കാരത്തിൽ ശബ്ദം അതിയായി ഉയർത്തരുത്; വളരെ താഴ്ത്തുകയും അരുത്; അതിനിടയിൽ ഒരു മാർഗം തേടുക.",
+      "en": "Say: Call upon Allah or call upon the Most Compassionate—whatever name you call Him by, to Him belong the Most Beautiful Names. Do not recite your prayer too loudly or too quietly, but seek a way between."
+    },
+    "20:8": {
+      "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+      "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. ഏറ്റവും നല്ല നാമങ്ങൾ അവന്നുള്ളതാണ്.",
+      "en": "Allah—there is no deity worthy of worship except Him. To Him belong the Most Beautiful Names."
+    },
     "1:2": {
       "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
       "ml": "സർവലോകങ്ങളുടെയും രക്ഷിതാവായ അല്ലാഹുവിനാണ് എല്ലാ സ്തുതിയും.",
@@ -244,3 +259,4 @@
     }
   }
 }
+
