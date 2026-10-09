@@ -58,6 +58,11 @@ export function BirhatiahOnlineCollectiveGrids() {
       <PrintedGrid matrix={source.collective.square} title={ml ? 'ചതുരക്കളം — പോസ്റ്റിലെ രൂപം' : '4 × 4 grid — forum printing'} language={language}/>
       <p className="text-xs leading-relaxed text-white/70">{ml ? '2012 ഡിസംബർ 13-ലെ മറുപടിയിൽ ത്രികോൺ കളത്തിലെ 6139 എന്നത് 6193 ആകണമെന്ന് ഒരാൾ തിരുത്തൽ നിർദേശിച്ചിട്ടുണ്ട്. അതുകൊണ്ട് മൂലസംഖ്യയും മറുപടിയും പ്രത്യേകം സൂക്ഷിക്കുന്നു.' : source.collective.forum_correction}</p>
       <a href={source.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{source.source_title}</a>
+      {(source.related_online_witnesses || []).map(witness => <section key={witness.id} className="rounded-lg border border-white/15 p-3 space-y-2" data-source-witness={witness.id}>
+        <h4 className="text-sm text-yellow-100">{ml ? 'പഴയ പുറംഫോറം പാഠത്തിന്റെ താരതമ്യം' : 'Comparison with an earlier online forum witness'}</h4>
+        <p className="text-sm text-white/80 leading-loose">{witness.notes[language]}</p>
+        <a href={witness.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{witness.source_title}</a>
+      </section>)}
     </div>
   </details>;
 }
