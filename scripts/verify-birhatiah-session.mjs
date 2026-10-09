@@ -36,5 +36,9 @@ assert.ok(reader.includes('<BirhatiahSessionTools sourceCount={sourceCount} sour
 assert.ok(reader.includes('sourceCountLabel(sourceCountKind, language)'));
 assert.ok(profile.includes('Abjad Value Squared (not a magic square)'));
 assert.ok(profile.includes('അബ്ജദ് മൂല്യത്തിന്റെ വർഗം (വെഫ്ക് അല്ല)'));
+assert.ok(!profile.includes('isOwner && Array.isArray(rec.sources)'), 'Bibliography must be public in Section C');
+assert.ok(profile.includes('<Field label="Source Reference"'), 'Source citations must be visible');
+assert.ok(profile.includes('isOwner && <Field label="Source Notes"'), 'Private owner notes must remain restricted');
+assert.ok(component.includes('birhatiah-session-count:'), 'Manual reading count must be local and per-method');
 await transform(component, {loader: 'jsx', target: 'es2022'});
 console.log('PASS: personal timer math, manual counter guard, source count types, JSX parsing, and Abjad square separation.');
