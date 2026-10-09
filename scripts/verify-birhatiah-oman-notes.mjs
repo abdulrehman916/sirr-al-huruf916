@@ -34,6 +34,13 @@ for (const id of ['oman-p450','oman-p487']) {
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p77').related_name_ids, ['HNK-MHC-001','HNK-MHC-002','HNK-MHC-003','HNK-MHC-004']);
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p138').counts.map(n=>[n.kind,n.value]), [['collective_recitation',7]]);
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p468').counts.map(n=>[n.kind,n.value]), [['collective_recitation_option',3],['collective_recitation_option',7]]);
+const p468 = data.notes.find(n => n.id === 'oman-p468');
+assert.match(p468.figure_context, /lower handwritten figure/i);
+assert.ok(!p468.meaning.ml.includes('**'), 'Raw Markdown should not appear on in-card Malayalam text');
+assert.ok(!p468.meaning.en.includes('**'), 'Raw Markdown should not appear on in-card English text');
+assert.ok(viewer.includes('sourceOrder.map(note =>'), 'Oman passages must render in printed-page order');
+assert.ok(viewer.includes('data-source-count-relation="either-or"'), 'Alternative counts require visible OR context');
+assert.ok(viewer.includes('note.pdf_page'), 'Show original PDF page number directly in the card');
 assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_present_in_source, true);
 assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_reproduced_in_site, false);
 assert.match(viewer, /data-source-figure-status=/);
