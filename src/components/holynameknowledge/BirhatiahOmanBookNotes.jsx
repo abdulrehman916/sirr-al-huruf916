@@ -35,11 +35,18 @@ export default function BirhatiahOmanBookNotes() {
             {countLabels[count.kind]?.[language] || count.kind}: {count.value}
           </span>)}
         </div>
-        {note.figure_present_in_source && <p className="text-xs text-white/60" data-source-figure-status={note.figure_reproduced_in_site ? 'present' : 'pending'}>
-          {ml
-            ? 'ഈ മൂലപേജിൽ ചിത്രം/കളം ഉണ്ട്. അതിന്റെ യഥാർത്ഥ ചിത്രം ഈ കാർഡിൽ ഇനിയും ചേർത്തിട്ടില്ല; രൂപവും സംഖ്യകളും ഊഹിച്ച് വരയ്ക്കുന്നില്ല.'
-            : 'This printed page contains a diagram or figure. The authentic image has not yet been added to this card, and no substitute or numeric transcription has been invented.'}
+        {note.source_duration_days && <p className="text-sm text-white/75" data-source-duration-days={note.source_duration_days}>
+          {ml ? "ഗ്രന്ഥത്തിലെ കാലയളവ്" : "Source duration"}: {note.source_duration_days} {ml ? "ദിവസങ്ങൾ; പാരായണസംഖ്യയിൽ ചേർക്കരുത്" : "days; separate from recitation counts"}
         </p>}
+        {note.figure_present_in_source && (note.figure_reproduced_in_site && note.figure_image_path
+          ? <figure className="space-y-2" data-source-figure-status="present">
+              <img src={note.figure_image_path} alt={note.figure_caption[language]} loading="lazy"
+                className="w-full max-w-3xl mx-auto h-auto rounded-lg bg-white" />
+              <figcaption className="text-xs text-white/60 leading-relaxed">{note.figure_caption[language]}</figcaption>
+            </figure>
+          : <p className="text-xs text-white/60" data-source-figure-status="pending">
+              {ml ? "മൂലപേജിലെ യഥാർത്ഥ ചിത്രം ഈ കാർഡിൽ ഇനിയും ചേർത്തിട്ടില്ല." : "The original source figure has not yet been added to this card."}
+            </p>)}
         {note.review_note && <p className={`text-xs text-white/60 leading-relaxed ${ml ? 'font-malayalam' : 'font-inter'}`}>{note.review_note[language]}</p>}
         <p className="text-xs text-white/55">{notes.source_title_ar} · {notes.edition} · {ml ? "അച്ചടിച്ച പേജ്" : "printed page"} {note.printed_page}{note.continuation_printed_page ? `–${note.continuation_printed_page}` : ""} · PDF {note.pdf_page}{note.continuation_pdf_page ? `–${note.continuation_pdf_page}` : ""}</p>
       </article>)}

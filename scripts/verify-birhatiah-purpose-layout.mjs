@@ -74,7 +74,12 @@ assert.ok(omanBook.notes.every(entry => entry.review_status === 'checked_against
 assert.equal(omanBook.indexed_pending_visual_review.length, 0, 'All four indexed candidates have now had a visual source review');
 assert.deepEqual(omanBook.notes.find(note => note.id === 'oman-p260').related_name_ids, ['HNK-MHC-011','HNK-MHC-012','HNK-MHC-013','HNK-MHC-014']);
 assert.deepEqual(omanBook.notes.find(note => note.id === 'oman-p278').counts.map(c => [c.kind,c.value]), [['fatiha_reading',7],['collective_recitation',3],['separate_names_reading',3]]);
-assert.ok(omanBook.notes.filter(note => note.figure_present_in_source).every(note => note.figure_reproduced_in_site === false));
+for (const note of omanBook.notes.filter(note => note.figure_present_in_source)) {
+  assert.equal(note.figure_reproduced_in_site, true);
+  assert.ok(fs.existsSync(`public${note.figure_image_path}`));
+  assert.equal(note.figure_extraction.kind, 'original_pdf_region_render');
+  assert.equal(note.figure_extraction.source_pdf_page, note.pdf_page);
+}
 const omanQalnahud = omanBook.notes.find(note => note.id === 'oman-p83');
 assert.equal(omanQalnahud.counts[0].name_id, 'HNK-MHC-011');
 assert.equal(omanQalnahud.counts[0].value, 195);

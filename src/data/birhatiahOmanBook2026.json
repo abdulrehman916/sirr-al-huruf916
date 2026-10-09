@@ -187,22 +187,32 @@
       "printed_page": 450,
       "pdf_page": 454,
       "review_status": "checked_against_pdf_page_image",
-      "source_scope": "collective_reference_with_printed_seal_and_two_other_figures",
+      "source_scope": "collective_reference_with_own_six_point_seal_other_figures_excluded",
       "arabic_excerpt": "ويقرأ عليه العزيمة البرهتية",
       "counts": [],
       "figure_present_in_source": true,
-      "figure_reproduced_in_site": false,
+      "figure_reproduced_in_site": true,
       "title": {
-        "ml": "കൈപ്പത്തി ചിഹ്നവും രണ്ട് അധിക രൂപങ്ങളും — സംയുക്ത ദഅ്‌വ പരാമർശം",
-        "en": "Palm-mark seal and two other figures — collective invocation mention"
+        "ml": "കൈപ്പത്തി ചിഹ്നം — സംയുക്ത ദഅ്‌വ പരാമർശത്തിന്റെ മൂലചിത്രം",
+        "en": "Palm-mark seal — original collective-invocation source figure"
       },
       "meaning": {
-        "ml": "അച്ചടിച്ച പേജ് 450-ൽ ആറുമുനയുള്ള ഒരു ചിഹ്നവും കൂടാതെ രണ്ട് കൈയെഴുത്ത് രൂപങ്ങളും ചിത്രമായി നൽകിയിട്ടുണ്ട്; അതിനോട് ചേർന്ന് ബൃഹത്തീയ്യ ദഅ്‌വത്തെ പരാമർശിക്കുന്നു. ഗ്രന്ഥം ഇവിടെ ഉറപ്പുള്ള പാരായണസംഖ്യ നൽകുന്നില്ല. ചിത്രത്തിന്റെ വ്യക്തിഗത കളമൂല്യങ്ങളോ നാമബന്ധങ്ങളോ ഊഹിച്ച് സൃഷ്ടിച്ചിട്ടില്ല.",
-        "en": "Printed page 450 contains a six-point geometric seal and two additional handwritten shapes alongside a reference to the collective Birhatiah invocation. No definite reading count is printed there. The source shapes are not invented or assigned to individual names."
+        "ml": "അച്ചടിച്ച പേജ് 450-ലെ ആദ്യ തലക്കെട്ടിനു കീഴിൽ ആറുമുനയുള്ള ചിഹ്നവും ബൃഹത്തീയ്യ ദഅ്‌വ പരാമർശവും ഒരുമിച്ചുണ്ട്. ആ ഭാഗത്തിന്റെ യഥാർത്ഥ ചിത്രം താഴെ നൽകിയിട്ടുണ്ട്. പേജിലെ മറ്റ് രണ്ടു കൈയെഴുത്ത് രൂപങ്ങൾ വേറിട്ട തലക്കെട്ടുകളുടേതാണ്; അവയെ ഈ നിർദേശത്തിന്റെ ഭാഗമാക്കിയിട്ടില്ല. ഈ ഭാഗത്ത് നിശ്ചിത പാരായണസംഖ്യ നൽകിയിട്ടില്ല.",
+        "en": "Under the first heading on printed page 450, a six-point seal accompanies a collective Birhatiah reference. That original source region is shown below. The other two handwritten forms on this page belong to separate headings and are not attached to this account. No fixed reading count is given."
       },
       "review_note": {
-        "ml": "പേജിലെ ചിത്രങ്ങൾ നേരിട്ട് പരിശോധിച്ചു. യഥാർത്ഥ ചിത്രങ്ങളുടെ ഡിജിറ്റൽ പകർപ്പ് വെബ്സൈറ്റിൽ ചേർത്തിട്ടില്ല; അതുകൊണ്ട് പുതിയ കളം എന്ന വ്യാജപ്രദർശനം നടത്തില്ല.",
-        "en": "Figures verified on the printed page. Their original images are not yet digitized within the website; no synthetic figure is substituted."
+        "ml": "മൂല PDF പേജിൽ വീണ്ടും പരിശോധിച്ച് ബന്ധപ്പെട്ട തലക്കെട്ടും വാക്യവും ചിത്രവും അതേപടി ചേർത്തു. പേജിലെ മറ്റ് വിഭാഗങ്ങളുടെ ചിത്രങ്ങൾ ഇതുമായി കലർത്തിയിട്ടില്ല.",
+        "en": "Rechecked the original PDF page and included the relevant heading, paragraph and figure directly. Figures from other page sections are excluded."
+      },
+      "figure_image_path": "/figures/birhatiah-oman-p450-original.png",
+      "figure_extraction": {
+        "source_pdf_page": 454,
+        "kind": "original_pdf_region_render",
+        "includes": "relevant heading, source paragraph and its own figure; unrelated page sections excluded"
+      },
+      "figure_caption": {
+        "ml": "അച്ചടിച്ച പേജ് 450 / PDF പേജ് 454: ഈ പരാമർശത്തിന്റെ യഥാർത്ഥ മൂലചിത്രം. കൈയെഴുത്തിലെ അക്ഷരങ്ങൾ പുതുതായി ടൈപ്പ് ചെയ്തിട്ടില്ല.",
+        "en": "Printed page 450 / PDF page 454: original source region for this passage. Handwritten characters have not been retyped or reconstructed."
       }
     },
     {
@@ -214,7 +224,7 @@
       "arabic_excerpt": "ثم يتلى على الشخص البرهتية",
       "counts": [],
       "figure_present_in_source": true,
-      "figure_reproduced_in_site": false,
+      "figure_reproduced_in_site": true,
       "title": {
         "ml": "വ്യത്യസ്ത താലിസ്മാൻ രൂപങ്ങൾക്കിടയിലെ സംയുക്ത പരാമർശം",
         "en": "Collective mention among separate talisman diagrams"
@@ -224,8 +234,18 @@
         "en": "Printed page 487 shows a 2×2 table at the top and distinct handwritten forms below. One separate paragraph mentions reciting Birhatiah regarding a person, without a count. The upper 2×2 table has NOT been identified as a Birhatiah square."
       },
       "review_note": {
-        "ml": "പേജിലെ വ്യത്യസ്ത ചിത്രങ്ങൾ പരസ്പരം കലർത്തരുത്; അവയുടെ സംഖ്യാപാഠം അക്ഷരപരിശോധന കൂടാതെ ടൈപ്പ് ചെയ്തിട്ടില്ല.",
-        "en": "The separate page figures have not been conflated, and their handwritten characters were not guessed."
+        "ml": "മൂല PDF പേജിൽ വീണ്ടും പരിശോധിച്ച് ബന്ധപ്പെട്ട തലക്കെട്ടും വാക്യവും ചിത്രവും അതേപടി ചേർത്തു. പേജിലെ മറ്റ് വിഭാഗങ്ങളുടെ ചിത്രങ്ങൾ ഇതുമായി കലർത്തിയിട്ടില്ല.",
+        "en": "Rechecked the original PDF page and included the relevant heading, paragraph and figure directly. Figures from other page sections are excluded."
+      },
+      "figure_image_path": "/figures/birhatiah-oman-p487-original.png",
+      "figure_extraction": {
+        "source_pdf_page": 491,
+        "kind": "original_pdf_region_render",
+        "includes": "relevant heading, source paragraph and its own figure; unrelated page sections excluded"
+      },
+      "figure_caption": {
+        "ml": "അച്ചടിച്ച പേജ് 487 / PDF പേജ് 491: ഈ പരാമർശത്തിന്റെ യഥാർത്ഥ മൂലചിത്രം. കൈയെഴുത്തിലെ അക്ഷരങ്ങൾ പുതുതായി ടൈപ്പ് ചെയ്തിട്ടില്ല.",
+        "en": "Printed page 487 / PDF page 491: original source region for this passage. Handwritten characters have not been retyped or reconstructed."
       }
     },
     {
@@ -326,20 +346,31 @@
         }
       ],
       "figure_present_in_source": true,
-      "figure_reproduced_in_site": false,
+      "figure_reproduced_in_site": true,
       "title": {
         "ml": "സംയുക്ത മൂന്നു അല്ലെങ്കിൽ ഏഴ് എന്ന രണ്ട് ബദലുകൾ",
         "en": "Three or seven as alternative collective counts"
       },
       "meaning": {
-        "ml": "അച്ചടിച്ച പേജ് 468-ൽ സംയുക്ത ബൃഹത്തീയ്യയെ മൂന്ന് തവണ അല്ലെങ്കിൽ ഏഴ് തവണ എന്ന രണ്ട് ബദലുകളായി രേഖപ്പെടുത്തുന്നു. അവ കൂട്ടിച്ചേർത്ത് പത്ത് തവണ എന്ന പുതിയ സംഖ്യ ഉണ്ടാക്കുന്നില്ല. ഈ പരാമർശത്തിന് തൊട്ടുതാഴെയുള്ള കൈയെഴുത്ത് ചിത്രം അതേ ഭാഗത്തേതാണ്; പേജിന്റെ മുകളിലെ രണ്ടു ചിത്രങ്ങൾ വേറിട്ട തലക്കെട്ടുകളുടേതാണ്. താഴെയുള്ള യഥാർത്ഥ ചിത്രം ഇനിയും വെബ്സൈറ്റിൽ പകർത്തിയിട്ടില്ല; അതിന്റെ അക്ഷരങ്ങളും രൂപവും ഊഹിച്ച് സൃഷ്ടിക്കുന്നില്ല.",
-        "en": "Printed page 468 gives three OR seven readings of the collective Birhatiah invocation, not an additive ten-reading rule. The lower handwritten figure immediately follows the same account; the two figures above belong to separately headed entries. The authentic lower figure has not been reproduced on this website and is not recreated from guesses."
+        "ml": "അച്ചടിച്ച പേജ് 468-ൽ സംയുക്ത ബൃഹത്തീയ്യയെ മൂന്ന് തവണ അല്ലെങ്കിൽ ഏഴ് തവണ എന്ന രണ്ട് ബദലുകളായി രേഖപ്പെടുത്തുന്നു; കൂട്ടിച്ചേർത്ത് പത്ത് എന്ന എണ്ണം ഉണ്ടാക്കുന്നില്ല. തുടർന്ന് മൂന്ന് ദിവസത്തെ കാലയളവ് പ്രത്യേകം പറയുന്നു. ഈ പരാമർശത്തിന് തൊട്ടുതാഴെയുള്ള കൈയെഴുത്ത് ചിത്രം അതേ ഭാഗത്തേതാണ്; അതിന്റെ യഥാർത്ഥ പകർപ്പ് താഴെ കാണാം. പേജിന്റെ മുകളിലെ രണ്ടു ചിത്രങ്ങൾ വേറിട്ട തലക്കെട്ടുകളുടേതാണ്, അതിനാൽ ഇവിടെ ചേർത്തിട്ടില്ല.",
+        "en": "Printed page 468 gives three OR seven collective readings, not an additive ten-reading rule. It separately mentions a three-day duration. The lower handwritten figure belongs to this account and its original source region is shown below. The two upper diagrams belong to other headings and are excluded."
       },
       "review_note": {
-        "ml": "പേജ് ചിത്രത്തിലെ ഭാഗങ്ങളുടെ അതിരുകൾ വീണ്ടും പരിശോധിച്ചു. മുകളിലെ രണ്ട് താലിസ്മാൻ ചിത്രങ്ങളും താഴെയുള്ള ബൃഹത്തീയ്യ പരാമർശത്തിന്റെ ചിത്രവും വ്യത്യസ്തമായി തിരിച്ചറിഞ്ഞിട്ടുണ്ട്; ഫലവാദം തെളിയിച്ചതല്ല.",
-        "en": "Page layout visually checked: the two upper figures belong to other topics, while the lower handwritten figure accompanies the collective Birhatiah passage. Historical effectiveness is unverified."
+        "ml": "മൂല PDF പേജിൽ വീണ്ടും പരിശോധിച്ച് ബന്ധപ്പെട്ട തലക്കെട്ടും വാക്യവും ചിത്രവും അതേപടി ചേർത്തു. പേജിലെ മറ്റ് വിഭാഗങ്ങളുടെ ചിത്രങ്ങൾ ഇതുമായി കലർത്തിയിട്ടില്ല.",
+        "en": "Rechecked the original PDF page and included the relevant heading, paragraph and figure directly. Figures from other page sections are excluded."
       },
-      "figure_context": "Lower handwritten figure accompanies the Birhatiah-referencing passage. Two upper diagrams belong to separate headings. Authentic lower figure pending on-site digitization."
+      "figure_context": "Lower handwritten figure accompanies the Birhatiah-referencing passage. The two upper diagrams belong to separate headings and are excluded from the on-site source crop.",
+      "figure_image_path": "/figures/birhatiah-oman-p468-original.png",
+      "figure_extraction": {
+        "source_pdf_page": 472,
+        "kind": "original_pdf_region_render",
+        "includes": "relevant heading, source paragraph and its own figure; unrelated page sections excluded"
+      },
+      "figure_caption": {
+        "ml": "അച്ചടിച്ച പേജ് 468 / PDF പേജ് 472: ഈ പരാമർശത്തിന്റെ യഥാർത്ഥ മൂലചിത്രം. കൈയെഴുത്തിലെ അക്ഷരങ്ങൾ പുതുതായി ടൈപ്പ് ചെയ്തിട്ടില്ല.",
+        "en": "Printed page 468 / PDF page 472: original source region for this passage. Handwritten characters have not been retyped or reconstructed."
+      },
+      "source_duration_days": 3
     }
   ],
   "indexed_pending_visual_review": []

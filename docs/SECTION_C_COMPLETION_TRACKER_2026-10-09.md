@@ -175,3 +175,13 @@ A text-layer search across **all 837 pages** for multiple spellings of Birhatiah
 - Live database read confirmed 28 distinct name records, 28 attached source chapters and Malayalam/English meaning fields for all 28. There are 97 entries in their structured source-chapter groups. This does not certify the much larger legacy imports as fully translated or attributed.
 - Verified actual list hooks for saved state, remount, search/no results, API failure/retry; checked source-safe deduplication and original wording preservation. Existing 56 bilingual reader renders, source/figure checks, calculation locks, back-navigation checks and targeted ESLint pass. Vite production build passes.
 - **Still incomplete:** a faithful transcription and translation of every manuscript line and legacy import; correct name-level attribution of unscoped imports; authentic on-site Oman diagrams marked pending. These require original-page collation rather than inferred text, numbers or synthetic images. No database contents, access policies or calculation engines were rewritten in this repair.
+
+## Authentic Oman source figures supplied from the user's original PDF
+
+- Located and materialized the user's original 837-page Oman book. Visually checked original PDF pages 454, 472 and 491 (printed 450, 468 and 487) again.
+- Extracted only each relevant heading, original paragraph and its own diagram from the PDF. Three original PNG source regions now appear inline in Card 29. No figure was generated, redrawn or typed from guesses. The complete private PDF was not added to the public repository.
+- Printed p.450's first six-point seal belongs to its Birhatiah-referencing paragraph. The two later handwritten diagrams belong to other headings; corrected the summary and excluded them from that account's image.
+- Printed p.468's lower handwritten figure accompanies its 3-OR-7 passage. The source also separately states a three-day duration, now visible without adding it to either recitation count. The two upper figures are excluded.
+- Printed p.487's middle Birhatiah-referencing heading, paragraph and handwritten figure are shown. Its unrelated upper 2×2 table is excluded.
+- Regression checks confirm all three local image files and their source PDF page identifiers, plus actual Malayalam and English image rendering and duration separation.
+- This closes these three image-digitization gaps. Full long-text transcription, translation and name attribution across all legacy imports and the complete 837-page book remain unfinished; no corpus-completion claim is made.
