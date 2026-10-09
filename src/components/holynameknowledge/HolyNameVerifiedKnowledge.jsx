@@ -37,6 +37,16 @@ const P = {
 };
 
 // Categories to surface (only those with content render).
+const CATEGORY_LABELS_ML = {
+  meanings: "അർത്ഥങ്ങൾ", explanations: "വിശദീകരണങ്ങൾ", tafsir: "തഫ്സീർ",
+  khawass: "ഖവാസ്സ്", mujarrabat: "മുജർറബാത്", wazifa: "വസീഫ",
+  hizb: "ഹിസ്ബ്", dua: "ദുആ", amal: "അമൽ", magic_squares: "ഔഫാഖ് കളങ്ങൾ",
+  talismans: "താലിസ്മാനുകൾ", repetitions: "ആവർത്തന സംഖ്യകൾ",
+  timings: "സമയങ്ങൾ", conditions: "നിബന്ധനകൾ", warnings: "മുന്നറിയിപ്പുകൾ",
+  benefits: "ഗുണങ്ങളെക്കുറിച്ചുള്ള അവകാശവാദങ്ങൾ", related_verses: "ബന്ധപ്പെട്ട ആയത്തുകൾ",
+  related_hadith: "ബന്ധപ്പെട്ട ഹദീസുകൾ", related_names: "ബന്ധപ്പെട്ട നാമങ്ങൾ",
+  classical_references: "ഗ്രന്ഥപരാമർശങ്ങൾ",
+};
 const CATEGORY_LABELS = {
   meanings: "Meanings",
   explanations: "Explanations",
@@ -62,7 +72,7 @@ const CATEGORY_LABELS = {
 
 const DISPLAY_ORDER = Object.keys(CATEGORY_LABELS);
 
-function EntryRow({ entry, idx }) {
+function EntryRow({ entry, idx, inlineDetails = false }) {
   const [open, setOpen] = useState(false);
   const { language } = useHolyNamesLanguage();
   if (!entry) return null;
@@ -71,6 +81,31 @@ function EntryRow({ entry, idx }) {
     ? (entry.malayalam_translation || entry.malayalam_text || entry.malayalam || entry.text_ml || entry.meaning_ml || (entry.language === "ml" ? entry.text : ""))
     : (entry.english_translation || entry.english_text || entry.english || entry.text_en || entry.meaning_en || (entry.language === "en" ? entry.text : ""));
   if (!arabic && !translation && !entry.text) return null;
+  // Section C explicitly displays the full reading, source, and confidence
+  // without a second click. Other sections retain their existing controls.
+  if (inlineDetails) return (
+    <article className="rounded-lg border px-3 py-3 space-y-2" data-testid="section-c-verified-entry-inline"
+      style={{ background: P.bg, borderColor: "rgba(52,211,153,0.20)" }}>
+      <p className="font-inter text-[10px] font-semibold" style={{ color: P.dim }}>#{idx + 1}</p>
+      {arabic && <p className="font-amiri text-xl sm:text-2xl text-right leading-loose whitespace-pre-wrap"
+        style={{ color: P.goldText }} dir="rtl" lang="ar">{arabic}</p>}
+      {translation ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-sm leading-relaxed whitespace-pre-wrap`}
+        style={{ color: "rgba(255,255,255,0.85)" }} lang={language}>{translation}</p>
+        : <p className="text-sm leading-loose text-white/70">
+          {!arabic && entry.text
+            ? entry.text
+            : (language === "ml" ? "ഈ ഭാഗത്തിന്റെ മലയാള പരിഭാഷ ഇനിയും ചേർത്തിട്ടില്ല." : "An English translation is not yet available for this passage.")}
+        </p>}
+      {(entry.source_book || entry.citation || entry.source_page) && <p className="text-xs text-white/60 leading-relaxed" data-testid="section-c-verified-entry-source">
+        <FileText className="w-3 h-3 inline mr-1" />
+        {[entry.source_book, entry.citation, entry.source_page ? `${language === "ml" ? "പേജ്" : "Page"} ${entry.source_page}` : null]
+          .filter(Boolean).join(" · ")}
+      </p>}
+      {entry.confidence != null && <p className="text-xs text-white/60">
+        {language === "ml" ? "രേഖപ്പെടുത്തിയ വിശ്വാസ്യത" : "Recorded confidence"}: {entry.confidence}%
+      </p>}
+    </article>
+  );
   return (
     <div className="rounded-lg border px-3 py-2" style={{ background: P.bg, borderColor: "rgba(52,211,153,0.20)" }}>
       <button onClick={() => setOpen((o) => !o)} className="w-full text-left flex items-start gap-2">
@@ -105,7 +140,8 @@ function EntryRow({ entry, idx }) {
   );
 }
 
-export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishName }) {
+export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishName, inlineDetails = false }) {
+  const { language } = useHolyNamesLanguage();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -162,8 +198,8 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
       <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: "1px solid " + P.border }}>
         <ShieldCheck className="w-4 h-4" style={{ color: P.text }} />
         <div className="flex-1 min-w-0">
-          <p className="font-inter text-[10px] font-bold uppercase tracking-widest" style={{ color: P.text }}>Verified Knowledge</p>
-          <p className="font-inter text-[8px] uppercase tracking-wider" style={{ color: P.dim }}>Knowledge Intelligence Engine · Master PDF Library</p>
+          <p className="font-inter text-[10px] font-bold uppercase tracking-widest" style={{ color: P.text }}>{inlineDetails && language === "ml" ? "ഉറവിടം പരിശോധിച്ച വിവരങ്ങൾ" : "Verified Knowledge"}</p>
+          <p className="font-inter text-[8px] uppercase tracking-wider" style={{ color: P.dim }}>{inlineDetails && language === "ml" ? "ഗ്രന്ഥശേഖരത്തിലെ രേഖപ്പെടുത്തിയ വിവരങ്ങൾ" : "Knowledge Intelligence Engine · Master PDF Library"}</p>
         </div>
         <span className="font-inter text-[7px] uppercase tracking-widest px-2 py-1 rounded-full border whitespace-nowrap" style={{ color: P.text, borderColor: P.border, background: P.bgHi }}>
           ✓ Zero AI
@@ -180,7 +216,7 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
         {Array.isArray(entries.conflicts) && entries.conflicts.length > 0 && (
           <div className="rounded-xl p-3" style={{ background: "rgba(245,208,96,0.06)", border: "1px solid rgba(245,208,96,0.30)" }}>
             <p className="font-inter text-[9px] font-bold uppercase tracking-widest mb-2 flex items-center gap-1" style={{ color: P.goldDim }}>
-              <Sparkles className="w-3 h-3" /> Multiple Scholarly Opinions
+              <Sparkles className="w-3 h-3" /> {inlineDetails && language === "ml" ? "വ്യത്യസ്ത ഗ്രന്ഥാഭിപ്രായങ്ങൾ" : "Multiple Scholarly Opinions"}
             </p>
             <div className="space-y-2">
               {entries.conflicts.map((c, i) => (
@@ -201,10 +237,10 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
               <div key={cat}>
                 <p className="font-inter text-[9px] font-bold uppercase tracking-widest mb-1.5 flex items-center gap-1.5" style={{ color: P.text }}>
                   <BookOpen className="w-3 h-3" style={{ color: P.dim }} />
-                  {CATEGORY_LABELS[cat]} <span style={{ color: P.dim }}>({entries[cat].length})</span>
+                  {(inlineDetails && language === "ml" ? CATEGORY_LABELS_ML[cat] : null) || CATEGORY_LABELS[cat]} <span style={{ color: P.dim }}>({entries[cat].length})</span>
                 </p>
                 <div className="space-y-1.5">
-                  {entries[cat].map((e, i) => <EntryRow key={i} entry={e} idx={i} />)}
+                  {entries[cat].map((e, i) => <EntryRow key={i} entry={e} idx={i} inlineDetails={inlineDetails} />)}
                 </div>
               </div>
             ))}
@@ -216,7 +252,7 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
           <div className="pt-2" style={{ borderTop: "1px solid rgba(52,211,153,0.18)" }}>
             <p className="font-inter text-[9px] font-bold uppercase tracking-widest mb-1.5 flex items-center gap-1.5" style={{ color: P.text }}>
               <Database className="w-3 h-3" style={{ color: P.dim }} />
-              Citations ({sourceBooks.length})
+              {inlineDetails && language === "ml" ? "ഗ്രന്ഥസൂചനകൾ" : "Citations"} ({sourceBooks.length})
             </p>
             <div className="space-y-1">
               {sourceBooks.map((s, i) => (
