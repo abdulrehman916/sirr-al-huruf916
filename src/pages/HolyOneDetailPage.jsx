@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { ChevronLeft, Heart, BookOpen, Star, Clock, Calculator } from "lucide-react";
@@ -12,7 +12,7 @@ import { useNavigation } from "@/context/NavigationContext";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
 import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVisuals";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
-import HolyNameSourceChapter from "@/components/holynameknowledge/HolyNameSourceChapter";
+import HolyNameSectionBReader from "@/components/holynameknowledge/HolyNameSectionBReader";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
 import reviewedCards from "@/data/holyNamesReviewedCards.json";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
@@ -45,6 +45,8 @@ export default function HolyOneDetailPage() {
   const { getPageState, setPageState, pushNavState, popNavState } = usePageState();
   const [name, setName] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const loadSequence = useRef(0);
   const [source, setSource] = useState("A"); // A or B
   const [language, setLanguage] = useHolyNamesLanguagePreference();
   const isOwner = useIsOwner();
@@ -74,16 +76,21 @@ export default function HolyOneDetailPage() {
 
   useEffect(() => {
     loadName();
+    return () => { loadSequence.current += 1; };
   }, [nameId, searchParams.get('tab')]);
 
   const loadName = async () => {
+    const sequence = ++loadSequence.current;
     setLoading(true);
+    setLoadError(false);
+    setName(null);
     try {
       const tab = searchParams.get('tab');
 
       if (tab === 'b' || nameId.startsWith('PDF-')) {
         // Section B: PDF Holy Names
         const result = await platform.entities.HolyOnePDFName.filter({ pdf_name_id: nameId });
+        if (sequence !== loadSequence.current) return;
         if (result && result.length > 0) {
           const reviewed = reviewedCards[nameId];
           setName(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
@@ -97,6 +104,7 @@ export default function HolyOneDetailPage() {
       } else {
         // Section A: Original Holy Names
         const result = await platform.entities.HolyOneName.filter({ name_id: nameId });
+        if (sequence !== loadSequence.current) return;
         if (result && result.length > 0) {
           setName(result[0]);
           setSource("A");
@@ -106,9 +114,11 @@ export default function HolyOneDetailPage() {
         }
       }
     } catch (e) {
+      if (sequence !== loadSequence.current) return;
+      setLoadError(true);
       toast({ title: "Failed to load", description: e.message, variant: "destructive" });
     } finally {
-      setLoading(false);
+      if (sequence === loadSequence.current) setLoading(false);
     }
   };
 
@@ -151,6 +161,13 @@ export default function HolyOneDetailPage() {
         </div>
       </PageLayout>
     );
+  }
+
+  if (loadError) {
+    return <PageLayout><div role="alert" className="min-h-[60vh] flex flex-col items-center justify-center gap-4 text-center px-4">
+      <p className="text-white/85">{language === "ml" ? "ഈ നാമത്തിന്റെ വിവരങ്ങൾ ലോഡ് ചെയ്യാനായില്ല." : "This name could not be loaded."}</p>
+      <button type="button" onClick={loadName} className="rounded-xl border border-gold-dim px-4 py-2 text-gold">{language === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Try again"}</button>
+    </div></PageLayout>;
   }
 
   if (!name) {
@@ -375,6 +392,8 @@ export default function HolyOneDetailPage() {
             </div>
           ) : null}
 
+        {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
+
           {/* Virtues & Benefits */}
           {(name.virtues_benefits || name.virtues_benefits_english || name.benefits_english) ? (
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
@@ -441,7 +460,6 @@ export default function HolyOneDetailPage() {
             Section-B-only; never shown for Section A. */}
         {source === "B" && (
           <div className="mt-6">
-            <HolyNameSourceChapter chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />
             <HolyOneScholarlySections card={name} />
           </div>
         )}

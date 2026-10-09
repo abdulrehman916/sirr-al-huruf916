@@ -65,3 +65,14 @@ For every Section B name, preserve the current numerical header, then present th
 Research order: first collect and check accessible external sources name by name; then examine the owner's accessible books and append the relevant passages to the appropriate cards. Deduplicate identical accounts for display while retaining all source references. Preserve distinct authors' opinions, counts, methods and editions separately. Include every verified distinct relevant diagram found; ten is an example, not a quota. Preserve original figure letters, numbers and positions; never generate substitute source diagrams or invent unreadable text, vowels, counts, timing or effects. Distinguish Quran/hadith evidence from traditional and forum claims; no guaranteed efficacy claims. Record unavailable or unreadable sources and finite coverage honestly.
 
 Authorization is confirmed, but this instruction record is not evidence that content has been implemented, the live database audited, all books accessed or a deployment completed. Validate and publish checked implementation batches, and report actual scope and remaining work.
+
+
+## Section B implementation batch — 9 October 2026
+
+Added a Section-B-specific reader instead of routing Tilimsani chapters through the Birhatiah-specific component. It preserves every stored Arabic paragraph, both translations and scope/edition cautions for the four checked-in chapters (PDF-HN-001, 002, 003, 101). No original records or Abjad rules were changed.
+
+First outside-source batch for PDF-HN-001 (al-Rahman): Quran 1:3 and 17:110, selected al-Saadi and al-Qurtubi summaries with distinct derivation/meaning opinions, and the mercy-related Quran 23:118 supplication. Source URLs, verse/discussion references, Arabic, Malayalam and English are stored in holyNamesSectionBResearch.json. The 23:118 supplication is expressly thematic and does not contain al-Rahman; no count, special time or diagram is inferred. These are selected summaries, not full translations of entire tafsir chapters. The reader offers local topic search. Old scholarly arrays and source figures remain available.
+
+Section B list and detail API failures now have explicit retry states, rather than appearing as empty/missing records. Detail loads reject stale responses after route changes.
+
+Remaining: all other names need source-by-source external research; purpose-specific wealth/marriage and other traditional accounts require actual source verification, followed by the owner's books and verified distinct diagrams. This batch is not completion of Section B, a live database audit, or exhaustive internet coverage.

@@ -327,6 +327,7 @@ function SectionB() {
 
   const [names, setNames] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
   const [searchQuery, setSearchQuery] = useState(initial.searchQuery || "");
   const [selectedSurah, setSelectedSurah] = useState(initial.selectedSurah || "all");
   const [surahList, setSurahList] = useState([]);
@@ -373,13 +374,15 @@ function SectionB() {
   }, []);
 
   const loadNames = async () => {
+    setLoading(true);
+    setLoadError(false);
     try {
       const allNames = await platform.entities.HolyOnePDFName.list(null, 500);
       setNames(allNames || []);
-      const uniqueSurahs = [...new Set(allNames.map(n => n.surah_name))].filter(Boolean);
+      const uniqueSurahs = [...new Set((allNames || []).map(n => n.surah_name))].filter(Boolean);
       setSurahList(uniqueSurahs);
     } catch (error) {
-      // Silently handle error - will show empty state
+      setLoadError(true);
     } finally {
       setLoading(false);
     }
@@ -408,6 +411,13 @@ function SectionB() {
         <div className="w-8 h-8 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
+  }
+
+  if (loadError) {
+    return <div role="alert" className="rounded-xl border border-red-400/30 p-6 text-center space-y-3">
+      <p className="text-white/85">{language === "ml" ? "നാമങ്ങൾ ഇപ്പോൾ ലോഡ് ചെയ്യാനായില്ല. ഇത് ശൂന്യമായ പട്ടികയാണെന്നർഥമില്ല." : "Names could not be loaded. This does not mean the list is empty."}</p>
+      <button type="button" onClick={loadNames} className="rounded-xl border border-gold-dim px-4 py-2 text-gold">{language === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Try again"}</button>
+    </div>;
   }
 
   return (

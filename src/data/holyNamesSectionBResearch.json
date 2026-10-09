@@ -1,0 +1,127 @@
+{
+  "PDF-HN-001": {
+    "name_id": "PDF-HN-001",
+    "reviewed_on": "2026-10-09",
+    "coverage": {
+      "ml": "ആദ്യ പുറംസ്രോതസ്സ് പരിശോധന: താഴെയുള്ള ഖുർആൻ ഭാഗങ്ങളും തെരഞ്ഞെടുത്ത തഫ്സീർ വിശദീകരണങ്ങളും മാത്രം. മുഴുവൻ ഇന്റർനെറ്റ് ഗവേഷണമോ എല്ലാ പുസ്തകങ്ങളുടെ പരിശോധനയോ പൂർത്തിയായിട്ടില്ല.",
+      "en": "First external-source review: the Quran passages and selected tafsir explanations below. Internet and book coverage remain incomplete."
+    },
+    "explanation": {
+      "ml": "അർ-റഹ്മാൻ എന്ന നാമം അല്ലാഹുവിന്റെ കരുണയെ സൂചിപ്പിക്കുന്നു; ഇവിടെ പരമകാരുണികൻ എന്നാണ് അർഥം നൽകിയിരിക്കുന്നത്. അൽ-ഫാതിഹ 1:3-ൽ അർ-റഹ്മാനും അർ-റഹീമും ഒരുമിച്ച് വരുന്നു. താഴെ ഖുർആൻ പാഠം, പണ്ഡിതരുടെ വിശദീകരണം, കരുണയുമായി ബന്ധപ്പെട്ട ദുആ എന്നിവ പ്രത്യേകം കാണാം.",
+      "en": "Al-Rahman denotes Allah’s mercy, rendered here as the All-Merciful. Al-Fatihah 1:3 pairs al-Rahman with al-Rahim. Quran wording, scholarly explanations and a mercy-related supplication are presented separately."
+    },
+    "evidence": [
+      {
+        "id": "quran-1-3",
+        "title": {
+          "ml": "ഖുർആനിലെ നാമം — അൽ-ഫാതിഹ 1:3",
+          "en": "The name in the Quran — al-Fatihah 1:3"
+        },
+        "translation": {
+          "ml": "പരമകാരുണികനും കരുണാനിധിയുമായവൻ. ഈ ആയത്തിൽ രണ്ട് നാമങ്ങളും ഒരുമിച്ചാണ്.",
+          "en": "The All-Merciful, the Merciful. This verse contains both names."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya3.html",
+        "source_reference": "ഖുർആൻ / Quran 1:3",
+        "review_status": "checked_against_digital_text",
+        "arabic_original": "الرَّحْمَٰنِ الرَّحِيمِ"
+      },
+      {
+        "id": "quran-17-110",
+        "title": {
+          "ml": "അല്ലാഹു / അർ-റഹ്മാൻ എന്നു വിളിച്ച് പ്രാർഥിക്കൽ — അൽ-ഇസ്റാഅ് 17:110",
+          "en": "Calling upon Allah / al-Rahman — al-Isra 17:110"
+        },
+        "translation": {
+          "ml": "പറയുക: അല്ലാഹുവിനെ വിളിക്കുക, അല്ലെങ്കിൽ അർ-റഹ്മാനെ വിളിക്കുക. ഏതു നാമത്തിൽ വിളിച്ചാലും ഏറ്റവും നല്ല നാമങ്ങൾ അവനുള്ളതാണ്. നിന്റെ നമസ്കാരത്തിൽ ശബ്ദം വളരെ ഉയർത്തുകയോ വളരെ താഴ്ത്തുകയോ ചെയ്യാതെ അതിനിടയിൽ ഒരു മാർഗം സ്വീകരിക്കുക.",
+          "en": "Say: call upon Allah or call upon al-Rahman; whichever you call upon, the most beautiful names belong to Him. Do not make your prayer too loud or too quiet; seek a way between them."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya110.html",
+        "source_reference": "ഖുർആൻ / Quran 17:110",
+        "review_status": "checked_against_digital_text",
+        "arabic_original": "قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَابْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًا"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "saadi-mercy",
+        "title": {
+          "ml": "അസ്-സഅ്ദി: കരുണയുടെ വ്യാപ്തി",
+          "en": "Al-Saadi: encompassing mercy"
+        },
+        "translation": {
+          "ml": "അസ്-സഅ്ദി ഈ രണ്ട് നാമങ്ങളും എല്ലാ ജീവികളിലേക്കും വ്യാപിക്കുന്ന മഹത്തായ കരുണയെ സൂചിപ്പിക്കുന്നതായി വിശദീകരിക്കുന്നു; പ്രവാചകന്മാരെ പിന്തുടരുന്ന ഭക്തർക്കായി നിശ്ചയിച്ച കരുണയും പരാമർശിക്കുന്നു. ഇത് അദ്ദേഹത്തിന്റെ തഫ്സീറിന്റെ സംഗ്രഹമാണ്.",
+          "en": "Al-Saadi explains both names through immense mercy embracing every living being, also mentioning mercy assigned to the God-fearing followers of the prophets. This is a summary of his commentary."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura1-aya1.html",
+        "source_reference": "تيسير الكريم الرحمن — عبد الرحمن السعدي · al-Fatihah 1:1",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "qurtubi-derivation",
+        "title": {
+          "ml": "അൽ-ഖുർതുബി: പദോത്ഭവത്തെക്കുറിച്ചുള്ള അഭിപ്രായഭേദം",
+          "en": "Al-Qurtubi: disagreement on derivation"
+        },
+        "translation": {
+          "ml": "കരുണയിൽനിന്നുള്ള പദോത്ഭവം നിരസിക്കുന്ന അഭിപ്രായവും ഖുർതുബി രേഖപ്പെടുത്തുന്നു; ഭൂരിപക്ഷത്തിന്റെ അഭിപ്രായം കരുണയുടെ അതിശയത്തെ സൂചിപ്പിക്കുന്ന രൂപമാണെന്നാണ്. ഈ അഭിപ്രായങ്ങൾ വേർതിരിച്ചാണ് നൽകിയിരിക്കുന്നത്.",
+          "en": "Al-Qurtubi records a view rejecting derivation from mercy, alongside the majority view that the form intensifies mercy. These positions remain distinct."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura1-aya1.html",
+        "source_reference": "الجامع لأحكام القرآن — القرطبي · al-Fatihah 1:1, discussion 22",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "qurtubi-distinction",
+        "title": {
+          "ml": "അർ-റഹ്മാൻ / അർ-റഹീം: അർഥഭേദം",
+          "en": "Al-Rahman / al-Rahim: distinction in meaning"
+        },
+        "translation": {
+          "ml": "ഖുർതുബി രണ്ടിനും ഒരേ അർഥമാണെന്ന അഭിപ്രായവും രേഖപ്പെടുത്തുന്നു. ഭൂരിപക്ഷാഭിപ്രായമായി അർ-റഹ്മാന്റെ പൊതുവായ കരുണയും വിശ്വാസികളോടുള്ള അർ-റഹീമിന്റെ പ്രത്യേക കരുണയും വിശദീകരിക്കുന്നു.",
+          "en": "Al-Qurtubi also records a synonymous interpretation. As the majority position, he distinguishes general mercy under al-Rahman from particular mercy toward believers under al-Rahim."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura1-aya1.html",
+        "source_reference": "الجامع لأحكام القرآن — القرطبي · al-Fatihah 1:1, discussion 24",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": [
+      {
+        "id": "mercy-forgiveness",
+        "title": {
+          "ml": "ക്ഷമയും കരുണയും അപേക്ഷിക്കാൻ",
+          "en": "Seeking forgiveness and mercy"
+        },
+        "translation": {
+          "ml": "എന്റെ രക്ഷിതാവേ, പൊറുക്കുകയും കരുണ കാണിക്കുകയും ചെയ്യേണമേ. കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും ഉത്തമൻ നീയാകുന്നു. ഇത് കരുണയുമായി ബന്ധപ്പെട്ട ഖുർആൻ ദുആയാണ്; ഈ വാക്യത്തിൽ അർ-റഹ്മാൻ എന്ന നാമം നേരിട്ട് വരുന്നില്ല.",
+          "en": "My Lord, forgive and have mercy; You are the best of those who show mercy. This is a mercy-related Quranic supplication; it does not itself contain the name al-Rahman."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya118.html",
+        "source_reference": "ഖുർആൻ / Quran 23:118 · تفسير ابن كثير",
+        "review_status": "checked_against_digital_text",
+        "arabic_original": "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+        "steps": {
+          "ml": [
+            "മുകളിലെ അറബി ദുആയും അർഥവും വായിക്കുക.",
+            "ഇതിലെ അഭ്യർഥന ക്ഷമയും കരുണയുമാണ്. അർ-റഹ്മാൻ എന്ന നാമത്തിനുള്ള പ്രത്യേക എണ്ണമുള്ള വസീഫയായി ഇതിനെ മാറ്റരുത്."
+          ],
+          "en": [
+            "Read the Arabic supplication and its meaning above.",
+            "Its request is forgiveness and mercy. Do not convert it into a special numbered al-Rahman practice."
+          ]
+        },
+        "count": null,
+        "timing": {
+          "ml": "ഈ ആയത്തിൽ ദിവസം, സമയം, ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+          "en": "This verse specifies no day, time or repetition count."
+        },
+        "conditions": {
+          "ml": "ഈ പാഠത്തിൽ പ്രത്യേക ഒരുക്കമോ കളമോ നിർദേശിക്കുന്നില്ല.",
+          "en": "This passage specifies no special preparation or figure."
+        },
+        "claim_kind": "quranic_supplication"
+      }
+    ]
+  }
+}
