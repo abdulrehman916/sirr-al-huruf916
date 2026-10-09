@@ -68,8 +68,8 @@ for (const method of source2020.methods) {
     'Do not change printed Arabic consonantal spelling while adding source-reviewed reading forms');
 }
 const omanBook = read('src/data/birhatiahOmanBook2026.json');
-assert.equal(omanBook.notes.length, 8, 'Eight distinct Oman-book passages must remain separate');
-assert.deepEqual(omanBook.notes.map(entry => entry.pdf_page), [40, 87, 91, 94, 264, 282, 454, 491]);
+assert.equal(omanBook.notes.length, 12, 'Twelve distinct Oman-book passages must remain separate');
+assert.deepEqual(omanBook.notes.map(entry => entry.pdf_page), [40, 87, 91, 94, 264, 282, 454, 491, 31, 81, 142, 472]);
 assert.ok(omanBook.notes.every(entry => entry.review_status === 'checked_against_pdf_page_image'));
 assert.equal(omanBook.indexed_pending_visual_review.length, 0, 'All four indexed candidates have now had a visual source review');
 assert.deepEqual(omanBook.notes.find(note => note.id === 'oman-p260').related_name_ids, ['HNK-MHC-011','HNK-MHC-012','HNK-MHC-013','HNK-MHC-014']);
