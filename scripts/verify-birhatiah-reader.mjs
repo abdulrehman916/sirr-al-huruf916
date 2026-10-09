@@ -61,7 +61,11 @@ for (const [id, guide] of Object.entries(guides)) {
       assert.ok(html.includes('data-source-note="oman-p83"'), 'C11: Oman Qalnahud 195 passage absent');
       assert.ok(!html.includes('data-source-note="oman-p87-88"'), 'C11: Khutir 11 passage must not be assigned to Qalnahud');
     }
-    if (!['HNK-MHC-010', 'HNK-MHC-011'].includes(id)) {
+    if (['HNK-MHC-011', 'HNK-MHC-012', 'HNK-MHC-013', 'HNK-MHC-014'].includes(id)) {
+      assert.ok(html.includes('data-source-note="oman-p260"'), `${id}: visually checked four-name grouping missing`);
+    }
+    if (id === 'HNK-MHC-010') assert.ok(!html.includes('data-source-note="oman-p260"'), 'C10 must not inherit C11–C14 grouping');
+    if (!['HNK-MHC-010', 'HNK-MHC-011', 'HNK-MHC-012', 'HNK-MHC-013', 'HNK-MHC-014'].includes(id)) {
       assert.ok(!html.includes('data-testid="birhatiah-oman-name-references"'), `${id}: unrelated Oman name-specific claim`);
     }
     assert.ok(primary.includes('data-testid="birhatiah-session-tools"'), `${id}: personal session tool missing`);
