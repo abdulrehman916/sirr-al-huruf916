@@ -48,9 +48,29 @@ assert.equal(subset.byField.amal.length,1,'28-card invariant for shared source')
 assert.equal(sectionCEntriesForCard(cards[0].amal,'amal',subset.keys).length,1,'Nonshared entries remain on individual cards');
 assert.equal(sectionCEntriesForCard([...cards[0].amal,...cards[0].amal],'amal',new Set()).length,2,'Exact imported duplicate dedup, no source conflation');
 
+const source2020 = read('src/data/birhatiahOutsideMethods2020.json');
+const source2023 = read('src/data/birhatiahOutsideMethods2023.json');
+assert.equal(source2020.methods.length, 2, 'Two separate 2020 accounts are sourced');
+assert.match(source2020.source_url, /^https:\/\//);
+assert.equal(new Set([...source2020.methods, ...source2023.methods].map(item => item.method_id)).size, 5, 'Do not duplicate outside accounts');
+const expected2020 = {'outside-2020-birhatya-request-622':['HNK-MHC-001',622], 'outside-2020-karir-distress-340':['HNK-MHC-002',340]};
+for (const method of source2020.methods) {
+  const [expectedName, expectedCount] = expected2020[method.method_id] || [];
+  assert.deepEqual(method.related_name_ids, [expectedName]);
+  assert.equal(method.count, expectedCount);
+  assert.equal(method.count_kind, 'recitation');
+  assert.equal(method.external_source.url, source2020.source_url);
+  assert.ok(method.spoken_request?.arabic && method.spoken_request?.translation.ml && method.spoken_request?.translation.en);
+  for (const language of ['ml','en']) {
+    assert.ok(method.title[language] && method.benefit[language] && method.steps[language]?.length && method.timing[language]);
+  }
+  assert.equal(stripVowels(method.formula_arabic).replace(/\\s/g,''), method.source_form_arabic.replace(/\\s/g,''),
+    'Do not change printed Arabic consonantal spelling while adding source-reviewed reading forms');
+}
 const sourceChapter = fs.readFileSync(path.join(root,'src/components/holynameknowledge/HolyNameSourceChapter.jsx'),'utf8');
 assert.ok(sourceChapter.includes('data-reader-section="topics"'));
 assert.ok(sourceChapter.includes('additionalOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))'));
+assert.ok(sourceChapter.includes('newlyCheckedOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))'));
 assert.ok(sourceChapter.includes('<BirhatiahConciseReferences chapter={chapter} nameId={nameId} />'));
 assert.ok(sourceChapter.includes('const [topicQuery, setTopicQuery] = useState'));
 assert.ok(!sourceChapter.includes('We cast enmity and hatred between them'), 'Do not inject a fixed verse/translation for unrelated methods');
