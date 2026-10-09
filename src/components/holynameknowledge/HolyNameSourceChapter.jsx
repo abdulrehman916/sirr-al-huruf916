@@ -66,7 +66,7 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
       {sourceCount != null && <span className="rounded-lg border border-yellow-500/25 px-3 py-2 text-yellow-100">{sourceCountLabel(sourceCountKind, language)}: {sourceCount}</span>}
       {sourceTime && <span className="rounded-lg border border-yellow-500/25 px-3 py-2 text-yellow-100">{ml ? 'സമയം' : 'Time'}: {sourceTime}</span>}
     </div>}
-    <BirhatiahSessionTools sourceCount={sourceCount} sourceCountKind={sourceCountKind} />
+    <BirhatiahSessionTools sourceCount={sourceCount} sourceCountKind={sourceCountKind} sessionKey={method.method_id} />
     <h4 className="text-yellow-100">{ml ? 'രീതി — ക്രമമായി' : 'Method — in order'}</h4>
     <ol className="list-decimal pl-6 space-y-3 text-white/90 leading-loose">{method.steps[language].map((step, index) => <li key={index}>{step}</li>)}</ol>
     {method.figure?.image_path?.startsWith('/figures/') && <figure className="space-y-2"><a href={method.figure.image_path} target="_blank" rel="noreferrer"><img src={method.figure.image_path} alt={t(method.figure.caption)} loading="lazy" className="max-w-full w-96 rounded-lg mx-auto" /></a><figcaption className="text-sm text-white/70 leading-loose">{t(method.figure.caption)}</figcaption></figure>}
