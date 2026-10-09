@@ -27,12 +27,12 @@ export default function BirhatiahCollectiveReference() {
       <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
       <p className={`${cls} text-white/90 leading-loose`} lang={language}>{account.translation[language]}</p>
       <p className={`${cls} text-sm text-white/65 leading-loose`}>{account.scope_note[language]}</p>
-      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></details>
+      <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></section>
     </section>}
     {bibliography.review_status === "checked_against_digital_text" && <section className="space-y-2">
       <h3 className={`${cls} text-base text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തെക്കുറിച്ചുള്ള പുറംസ്രോതസ്സ്" : "External bibliographic context"}</h3>
       <p className={`${cls} text-sm text-white/85 leading-loose`}>{bibliography.translation[language]}</p>
-      <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</summary><p className="pt-2">{bibliography.source_title}</p></details>
+      <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{bibliography.source_title}</p></section>
     </section>}
     <h3 className={`${cls} text-lg text-yellow-200`}>{version.title[language]}</h3>
     <p className={`${cls} text-sm text-white/85 leading-loose`}>{version.introduction[language]}</p>
@@ -52,17 +52,17 @@ export default function BirhatiahCollectiveReference() {
       <h4 className={`${cls} text-yellow-200`}>{ml ? "അറബി ഗ്രന്ഥത്തിലെ അവസാന വാക്യം" : "Closing sentence in the Arabic source"}</h4>
       <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{excerpt.reading}</p>
       <p className={`${cls} text-white/90 leading-loose`} lang={language}>{excerpt.translation[language]}</p>
-      <details className={`${cls} text-sm text-white/65`}>
-        <summary className="cursor-pointer">{ml ? "ഗ്രന്ഥം പറയുന്ന പാഠപരമ്പര" : "Transmission attributed by the book"}</summary>
+      <section className={`${cls} text-sm text-white/65`}>
+        <h3 className="cursor-pointer">{ml ? "ഗ്രന്ഥം പറയുന്ന പാഠപരമ്പര" : "Transmission attributed by the book"}</h3>
         <div className="pt-3 space-y-3">
           <p className="font-amiri text-xl leading-loose text-right" dir="rtl" lang="ar">{excerpt.attribution_original}</p>
           <p className="leading-loose" lang={language}>{excerpt.attribution_translation[language]}</p>
           <p className="leading-loose">{excerpt.scope_note[language]}</p>
           <p>{excerpt.source_title} · {ml ? "പേജ്" : "Page"} {excerpt.printed_page}</p>
         </div>
-      </details>
+      </section>
     </section>}
-    <details className={`${cls} text-sm text-white/65`}><summary className="cursor-pointer">{ml ? "പതിപ്പിനെക്കുറിച്ചുള്ള കുറിപ്പ്" : "Edition note"}</summary><p className="pt-2 leading-loose">{version.scope_note[language]}</p></details>
-    <details className={`${cls} text-xs text-white/50`}><summary className="cursor-pointer">{ml ? "സ്രോതസ്സും ഇംഗ്ലീഷ് മൂലപാഠവും" : "Source and original English text"}</summary><div className="pt-2 space-y-3"><p>{version.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {version.printed_page}</p><p className="font-inter leading-relaxed" lang="en">{version.introduction_original}</p><p className="font-inter leading-relaxed" lang="en">{version.continuation_original}</p></div></details>
+    <section className={`${cls} text-sm text-white/65`}><h3 className="cursor-pointer">{ml ? "പതിപ്പിനെക്കുറിച്ചുള്ള കുറിപ്പ്" : "Edition note"}</h3><p className="pt-2 leading-loose">{version.scope_note[language]}</p></section>
+    <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സും ഇംഗ്ലീഷ് മൂലപാഠവും" : "Source and original English text"}</h3><div className="pt-2 space-y-3"><p>{version.source_title} · {ml ? "അച്ചടിച്ച പേജ്" : "Printed page"} {version.printed_page}</p><p className="font-inter leading-relaxed" lang="en">{version.introduction_original}</p><p className="font-inter leading-relaxed" lang="en">{version.continuation_original}</p></div></section>
   </article>;
 }
