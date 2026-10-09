@@ -61,6 +61,7 @@ const sourceFiles = [
   'src/components/holynameknowledge/BirhatiahFullSourceChapter.jsx',
   'src/components/holynameknowledge/SectionCNames.jsx',
   'src/components/holynameknowledge/HolyNameEsotericResearchProfile.jsx',
+  'src/components/holynameknowledge/HolyNameVerifiedKnowledge.jsx',
 ];
 for (const p of sourceFiles) await transform(file(p), { loader:'jsx', sourcefile:p, target:'es2022' });
 const invocationUI = file(sourceFiles[0]);
@@ -69,6 +70,7 @@ const extendedUI = file(sourceFiles[2]);
 const collectiveUI = file(sourceFiles[3]);
 const nameUI = file(sourceFiles[5]);
 const cardUI = file(sourceFiles[6]);
+const verifiedUI = file(sourceFiles[7]);
 assert.ok(invocationUI.includes('data-source-image="inline-edition"'));
 assert.ok(invocationUI.includes('data-reader-section="optional-source-links"'));
 assert.ok(!invocationUI.includes('source.pages.find(page => page.pdf_page === entry.pdf_page).image_path'), 'Clickable page-only references still remain');
@@ -84,4 +86,10 @@ assert.ok(nameUI.includes('aria-expanded={isOpen}') && nameUI.includes('aria-con
 assert.ok(cardUI.includes('data-testid="section-c-card-retry"'), 'Card-level retry is required');
 assert.ok(cardUI.includes('[nameId, retryIndex]'), 'Card retry must refresh the selected record');
 assert.ok(cardUI.includes('setLoadError(true)'), 'Network errors should not be labelled unsourced data');
-console.log(`PASS: ${localImages.length} verified on-site source images, 24 chapter pages across 28 names, 55 shared accounts, 3 Arabic invocation pages, inline figures, retry action, and JSX.`);
+assert.ok(nameUI.includes('nameId={card.name_id} inlineDetails />'), 'Section C must use immediate verified source details');
+assert.ok(verifiedUI.includes('inlineDetails = false'), 'Other modules should keep their existing row behavior');
+assert.ok(verifiedUI.includes('data-testid="section-c-verified-entry-inline"'), 'Knowledge entries should not require extra clicks');
+assert.ok(verifiedUI.includes('data-testid="section-c-verified-entry-source"'), 'Source citations must be visible under the text');
+assert.ok(verifiedUI.includes('entry.confidence != null'), 'Confidence must be displayed when actually documented');
+assert.ok(verifiedUI.includes('CATEGORY_LABELS_ML'), 'Section C categories require Malayalam labels');
+console.log(`PASS: ${localImages.length} verified on-site source images, 24 chapter pages across 28 names, 55 shared accounts, 3 Arabic invocation pages, inline figures, verified citations, retry action, and JSX.`);
