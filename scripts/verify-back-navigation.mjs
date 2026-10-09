@@ -15,6 +15,7 @@ assert.equal(history.location.pathname + history.location.search, '/holy-names')
 history.go(1);
 assert.equal(history.location.search, '?section=section-b');
 for (const [path, search, expected] of [
+  ['/holy-names', '?section=section-b', '/holy-names'],
   ['/holy-names/one/PDF-HN-001', '', '/holy-names?section=section-b'],
   ['/holy-names/one/001', '?tab=b', '/holy-names?section=section-b'],
   ['/holy-names/one/001', '', '/holy-names/one'],

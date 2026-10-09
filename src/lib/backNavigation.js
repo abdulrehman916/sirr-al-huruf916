@@ -1,4 +1,5 @@
 export function parentRoute(pathname, search = '') {
+  if (pathname === '/holy-names' && new URLSearchParams(search).has('section')) return '/holy-names';
   if (pathname.startsWith('/holy-names/one/')) {
     const isBookName = new URLSearchParams(search).get('tab') === 'b' || pathname.includes('/PDF-');
     return isBookName ? '/holy-names?section=section-b' : '/holy-names/one';
