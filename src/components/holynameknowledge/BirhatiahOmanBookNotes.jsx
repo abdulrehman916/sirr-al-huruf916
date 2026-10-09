@@ -7,6 +7,8 @@ const countLabels = {
   khutir_name_recitation: { ml: 'ഖൂതീർ നാമത്തിന്റെ വായന', en: 'Khutir name readings' },
   quran_ten_verses_reading: { ml: 'സൂറത്തുസ്സ്വാഫ്ഫാത്തിലെ പത്ത് ആയത്തുകളുടെ വായന', en: 'Ten verses from Sūrat al-Ṣāffāt' },
   session_repetition: { ml: 'ഒരു ഇരിപ്പിലെ ആവർത്തനം', en: 'In-session repetitions' },
+  fatiha_reading: { ml: 'സൂറത്തുൽ ഫാതിഹയുടെ വായന', en: 'Readings of al-Fatiha' },
+  separate_names_reading: { ml: 'വേറിട്ട നാമകൂട്ടത്തിന്റെ വായന', en: 'Readings of a separate name formula' },
 };
 
 export default function BirhatiahOmanBookNotes() {
@@ -14,7 +16,7 @@ export default function BirhatiahOmanBookNotes() {
   const ml = language === 'ml';
   return <section className="rounded-xl border border-yellow-500/25 p-4" data-testid="birhatiah-oman-book-notes">
     <h3 className="text-yellow-200 font-semibold">
-      {ml ? 'ഒമാൻ ഗ്രന്ഥത്തിലെ പരിശോധിച്ച നാല് ഭാഗങ്ങളും മറ്റ് പേജ് സൂചികയും' : 'Four checked Oman-book passages and further page index'}
+      {ml ? 'ഒമാൻ ഗ്രന്ഥത്തിൽ മൂലപേജിനോട് പരിശോധിച്ച എട്ട് ചരിത്രപരാമർശങ്ങൾ' : 'Eight historical passages checked against Oman source page images'}
     </h3>
     <div className="space-y-4 pt-4">
       {notes.notes.map(note => <article key={note.id} className="rounded-lg border border-white/15 p-3 space-y-3" data-source-note={note.id}>
@@ -27,6 +29,11 @@ export default function BirhatiahOmanBookNotes() {
             {countLabels[count.kind]?.[language] || count.kind}: {count.value}
           </span>)}
         </div>
+        {note.figure_present_in_source && <p className="text-xs text-white/60" data-source-figure-status={note.figure_reproduced_in_site ? 'present' : 'pending'}>
+          {ml
+            ? 'ഈ മൂലപേജിൽ ചിത്രം/കളം ഉണ്ട്. അതിന്റെ യഥാർത്ഥ ചിത്രം ഈ കാർഡിൽ ഇനിയും ചേർത്തിട്ടില്ല; രൂപവും സംഖ്യകളും ഊഹിച്ച് വരയ്ക്കുന്നില്ല.'
+            : 'This printed page contains a diagram or figure. The authentic image has not yet been added to this card, and no substitute or numeric transcription has been invented.'}
+        </p>}
         {note.review_note && <p className={`text-xs text-white/60 leading-relaxed ${ml ? 'font-malayalam' : 'font-inter'}`}>{note.review_note[language]}</p>}
         <p className="text-xs text-white/50">{notes.source_title_ar} · {ml ? 'അച്ചടിച്ച പേജ്' : 'printed p.'} {note.printed_page}{note.continuation_printed_page ? `–${note.continuation_printed_page}` : ''}</p>
       </article>)}
