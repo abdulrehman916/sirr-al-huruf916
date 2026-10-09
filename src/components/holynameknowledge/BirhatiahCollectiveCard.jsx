@@ -4,6 +4,7 @@ import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import externalSources from "@/data/holyNamesExternalSources.json";
 import BirhatiahCollectiveVersion from "./BirhatiahCollectiveVersion";
 import { BirhatiahOnlineCollectiveGrids } from "./BirhatiahOnlineNumericalComparison";
+import BirhatiahOmanSquare from "./BirhatiahOmanSquare";
 import BirhatiahSharedImportedMaterial from "./BirhatiahSharedImportedMaterial";
 
 // The collective text has its own card; never attach it as an individual
@@ -24,6 +25,7 @@ export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
     </button>
     {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
       <BirhatiahCollectiveVersion />
+      <BirhatiahOmanSquare />
       <BirhatiahOnlineCollectiveGrids />
       <BirhatiahSharedImportedMaterial byField={sharedByField} />
       <details className="rounded-xl border border-white/15 p-4 space-y-4"><summary className="cursor-pointer text-yellow-200">{ml ? "നാമക്രമവും അധിക സമാപനദുആയും" : "Name index and additional closing prayer"}</summary>
