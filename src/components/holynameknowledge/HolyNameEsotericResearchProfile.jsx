@@ -219,10 +219,11 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
         <div className="grid grid-cols-3 gap-3">
           <Field label="Total Abjad Value" labelML="മൊത്തം അബ്ജദ് മൂല്യം">{abjadValue}</Field>
-          <Field label="Abjad Square" labelML="അബ്ജദ് സ്ക്വയർ">{abjadValue * abjadValue}</Field>
+          <Field label="Abjad Value Squared (not a magic square)" labelML="അബ്ജദ് മൂല്യത്തിന്റെ വർഗം (വെഫ്ക് അല്ല)">{abjadValue * abjadValue}</Field>
           <Field label="Letter Count" labelML="അക്ഷരസംഖ്യ">{letters.length || ""}</Field>
         </div>
         <p className="font-inter text-xs text-white/50">{abjadValue} × {abjadValue} = {abjadValue * abjadValue}</p>
+        <p className="text-xs text-white/50">{language === "ml" ? "ഇത് ഒരു ഗണിത വർഗീകരണമാണ്; ഗ്രന്ഥത്തിലെ വെഫ്കോ ഔഫാഖ് കളമോ അല്ല. യഥാർത്ഥ കളങ്ങൾ ഉറവിടം സഹിതം പ്രത്യേകമായി കാണിക്കുന്നു." : "This is arithmetic squaring, not a manuscript magic square. Actual sourced figures are shown separately."}</p>
 
         <Field label="Canonical Arabic Name" labelML="അറബി നാമം" arabic>{rec.canonical_arabic_name || rec.arabic_name}</Field>
         {language === "ml" && rec.malayalam_transliteration && <Field label="Malayalam Pronunciation" labelML="മലയാളം ഉച്ചാരണം">{rec.malayalam_transliteration}</Field>}
