@@ -1,0 +1,77 @@
+{
+  "id": "oman-birhatiah-wafq-square-p561",
+  "source_title_ar": "مجربات أهل عُمان الكبير",
+  "source_edition": "النسخة 2",
+  "printed_page": 561,
+  "pdf_page": 565,
+  "heading_arabic": "وفق مربع أسماء البرهتية للفك والإبطال وحرق العوارض والأسحار",
+  "scope": "collective_28_names",
+  "verification": "visually_transcribed_from_user_supplied_page",
+  "orientation": "Numbers stored in left-to-right matrix for readable page faithful graphic; the printed document is an Arabic right-to-left page.",
+  "numbers": [
+    [
+      4646,
+      4649,
+      4653,
+      4639
+    ],
+    [
+      4652,
+      4640,
+      4645,
+      4650
+    ],
+    [
+      4641,
+      4655,
+      4647,
+      4644
+    ],
+    [
+      4648,
+      4643,
+      4642,
+      4654
+    ]
+  ],
+  "printed_minor_positions": [
+    [
+      8,
+      11,
+      14,
+      1
+    ],
+    [
+      13,
+      2,
+      7,
+      12
+    ],
+    [
+      3,
+      16,
+      9,
+      6
+    ],
+    [
+      10,
+      5,
+      4,
+      15
+    ]
+  ],
+  "verified_magic_sum": 18587,
+  "title": {
+    "ml": "ബിർഹത്തിയ്യ നാമങ്ങളുടെ 4×4 വെഫ്ക് — മൂലഗ്രന്ഥത്തിലെ ക്രമം",
+    "en": "4×4 awfaq square of the Birhatiah names — as printed"
+  },
+  "purpose": {
+    "ml": "സിഹ്റ്, മറ്റ് ബാധകൾ എന്നിവയെ അകറ്റുന്നതുമായി ബന്ധപ്പെടുത്തി ഗ്രന്ഥം നൽകുന്ന സംയുക്ത വെഫ്ക്.",
+    "en": "The book presents this collective square in its section on repelling alleged magical afflictions."
+  },
+  "reading_note": {
+    "ml": "ഓരോ വലിയ സംഖ്യയും താഴെയുള്ള ചെറിയ സ്ഥാനസംഖ്യയും മൂലചിത്രത്തിലെ അതേ കളത്തിൽ തന്നെയാണ്. ഇത് 28 നാമങ്ങൾക്കുള്ള സംയുക്ത വെഫ്കാണ്; ഒറ്റ ഇസ്മിന്റെ പ്രത്യേക കളമല്ല. ഗ്രന്ഥത്തിലെ സമീപ പാരഗ്രാഫുകളിൽ വേറെ രീതികളുണ്ട്; അവയെ ഈ 4×4 കളത്തിന്റെ നിർബന്ധിത ക്രമമായി ചേർത്തിട്ടില്ല.",
+    "en": "Large numbers and small positional indices are preserved in their printed cells. This is a collective Birhatiah square, not an individual name's square. Adjacent paragraphs describe other methods; they are not silently attached as obligatory steps for this 4×4 square."
+  },
+  "source_note": "Visual check against the supplied PDF page 565 (printed page 561); source original retained privately; no public download link."
+}
