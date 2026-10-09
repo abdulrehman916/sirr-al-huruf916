@@ -67,6 +67,29 @@ for (const method of source2020.methods) {
   assert.equal(stripVowels(method.formula_arabic).replace(/\s+/g,''), method.source_form_arabic.replace(/\s+/g,''),
     'Do not change printed Arabic consonantal spelling while adding source-reviewed reading forms');
 }
+const omanBook = read('src/data/birhatiahOmanBook2026.json');
+assert.equal(omanBook.notes.length, 4, 'Four original Oman-book passages must remain distinct');
+assert.deepEqual(omanBook.notes.map(entry => entry.pdf_page), [40, 87, 91, 94]);
+assert.ok(omanBook.notes.every(entry => entry.review_status === 'checked_against_pdf_page_image'));
+assert.equal(omanBook.indexed_pending_visual_review.length, 4);
+assert.deepEqual(omanBook.indexed_pending_visual_review.map(entry => entry.pdf_page), [264, 282, 454, 491]);
+const omanQalnahud = omanBook.notes.find(note => note.id === 'oman-p83');
+assert.equal(omanQalnahud.counts[0].name_id, 'HNK-MHC-011');
+assert.equal(omanQalnahud.counts[0].value, 195);
+assert.ok(omanQalnahud.arabic_excerpt.includes('قلنهود') && omanQalnahud.arabic_excerpt.includes('195'));
+const omanCollective = omanBook.notes.find(note => note.id === 'oman-p87-88');
+assert.deepEqual(omanCollective.counts.map(entry => entry.value), [21, 11, 11, 3]);
+assert.equal(omanCollective.counts.find(entry => entry.name_id)?.name_id, 'HNK-MHC-010');
+assert.ok(omanCollective.source_scope.startsWith('collective_'), 'Embedded name count is not standalone');
+const collectiveNotes = fs.readFileSync('src/components/holynameknowledge/BirhatiahCollectiveCard.jsx', 'utf8');
+assert.ok(collectiveNotes.includes('<BirhatiahOmanBookNotes />'));
+const referenceUI = fs.readFileSync('src/components/holynameknowledge/BirhatiahConciseReferences.jsx', 'utf8');
+assert.ok(referenceUI.includes('<BirhatiahOmanNameReferences nameId={nameId} />'));
+const omanNoteUI = fs.readFileSync('src/components/holynameknowledge/BirhatiahOmanBookNotes.jsx', 'utf8');
+assert.ok(omanNoteUI.includes('data-source-index-status="needs-image-review"'));
+await transform(omanNoteUI, {loader:'jsx',target:'es2022'});
+await transform(fs.readFileSync('src/components/holynameknowledge/BirhatiahOmanNameReferences.jsx','utf8'), {loader:'jsx',target:'es2022'});
+
 const oman = read('src/data/birhatiahOmanSquareP561.json');
 assert.equal(oman.scope, 'collective_28_names', 'Source square belongs only in collective Section C');
 assert.equal(oman.printed_page, 561);
