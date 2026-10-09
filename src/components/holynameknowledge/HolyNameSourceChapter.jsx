@@ -4,6 +4,7 @@ import additionalOutsideMethods from '@/data/birhatiahOutsideMethods2023.json';
 import newlyCheckedOutsideMethods from '@/data/birhatiahOutsideMethods2020.json';
 import methodVerses from '@/data/birhatiahMethodVerses.json';
 import meaningReadings from '@/data/birhatiahMeaningReadings.json';
+import outsideGlosses2012 from '@/data/birhatiahOutsideGlosses2012.json';
 import externalSources from '@/data/holyNamesExternalSources.json';
 import collectiveText from '@/data/birhatiahCollectiveVersion.json';
 import BirhatiahConciseReferences from './BirhatiahConciseReferences';
@@ -101,12 +102,19 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
   const correspondence = readings?.translation?.[language] || '';
   const linkedLetter = correspondence.match(/അക്ഷരം\s+([^;]+)|with letter\s+([^ ]+)/);
   const linkedMansion = correspondence.match(/മൻസിൽ\s+([^.]+)|lunar mansion\s+([^.]+)/);
+  const outsideGloss = outsideGlosses2012.entries.find(entry => entry.name_id === nameId);
   return <section className={`rounded-xl border border-yellow-500/30 p-4 space-y-6 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="birhatiah-reader-guide">
     <section className="space-y-3" data-reader-section="formula">
       <h2 className="text-lg text-yellow-200">{ml ? 'മന്ത്രവും അർഥവും' : 'Formula and meaning'}</h2>
       <Arabic>{name}</Arabic>
       <Arabic>{safeReading(meaningReadings[nameId], chapter.meaning_arabic)}</Arabic>
       <p className="text-white/90 leading-loose">{t(chapter.meaning_translation).replace(/^ഗ്രന്ഥം നൽകുന്ന അറബി അർഥം\s*/, '').replace(/^ഗ്രന്ഥത്തിലെ അറബി അർഥം:\s*/, '').replace(/^The source gives\s*/, '').replace(/^The source’s Arabic meaning is\s*/, '')}</p>
+      {outsideGloss && <details className="border-t border-yellow-500/20 pt-3 space-y-3" data-reader-section="external-gloss-2012">
+        <summary className="cursor-pointer text-sm text-yellow-200">{ml ? 'പുറം ബ്ലോഗിലെ അർത്ഥഭേദം — സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചിട്ടില്ല' : 'Alternative gloss in outside blog — not independently verified'}</summary>
+        <p className="text-white/85 text-sm leading-loose mt-3">{t(outsideGloss.translation)}</p>
+        <p className="text-white/60 text-xs leading-loose mt-2">{t(outsideGlosses2012.scope_note)}</p>
+        <a href={outsideGlosses2012.source_url} target="_blank" rel="noreferrer" className="block underline text-xs text-white/70 mt-2">{outsideGlosses2012.source_author} · {outsideGlosses2012.source_date}</a>
+      </details>}
     </section>
     <BirhatiahOnlineNameComparison nameId={nameId} currentAbjad={currentAbjad} />
     <section className="space-y-3" data-reader-section="name-details"><h3 className="text-yellow-200">{ml ? 'നാമത്തിന്റെ അക്ഷരങ്ങളും ബന്ധങ്ങളും' : 'Letters and correspondences'}</h3><p className="font-amiri text-2xl text-right text-yellow-100" dir="rtl">{[...letters(name)].join(' · ')}</p>{linkedLetter && <p className="text-white/85">{ml ? 'ബന്ധിപ്പിച്ച അക്ഷരം: ' : 'Associated letter: '}{linkedLetter[1] || linkedLetter[2]}</p>}{linkedMansion && <p className="text-white/85">{ml ? 'മൻസിൽ: ' : 'Lunar mansion: '}{linkedMansion[1] || linkedMansion[2]}</p>}</section>
