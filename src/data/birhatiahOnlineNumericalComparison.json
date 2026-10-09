@@ -248,5 +248,21 @@
     ],
     "forum_correction": "A reply dated 13 December 2012 proposes replacing 6139 with 6193 in the triangle. Keep the original printed value visible; the proposed correction is not silently applied.",
     "reply_url": "https://asrare.net/node/35293"
-  }
+  },
+  "related_online_witnesses": [
+    {
+      "id": "alchamel-2008-birhatiah-forum",
+      "source_title": "قسم البرهتية — alchamel114.org, forum post 13 July 2008",
+      "source_url": "https://alchamel114.org/showthread.php?mode=hybrid&t=90",
+      "date_as_displayed": "2008-07-13",
+      "kind": "forum_post_not_independent_critical_edition",
+      "lists_name_count": 28,
+      "claims_total": 18587,
+      "repeats_triangle_value": 6139,
+      "notes": {
+        "ml": "2008 ജൂലൈ 13 എന്ന് കാണിക്കുന്ന മറ്റൊരു ഫോറം പോസ്റ്റിലും 28 പേരുകളുടെ അതേ എബ്ജദ് പട്ടികയും 18,587 എന്ന അവകാശപ്പെടുന്ന ആകെത്തുകയും 6139 ഉൾപ്പെട്ട ത്രികോൺ കളവും കാണുന്നു. 2011-ലെ പോസ്റ്റുമായി സമാനമായ തെറ്റുകൾ ഉള്ളതിനാൽ ഇത് രണ്ട് സ്വതന്ത്ര ഗ്രന്ഥസാക്ഷ്യങ്ങളാണെന്ന് പറയാനാവില്ല; പകർപ്പുപരമ്പരയോ പൊതുമൂലമോ ആയിരിക്കാം. പേരുകളുടെ എബ്ജദ് മൂല്യം പാരായണസംഖ്യയല്ല; അച്ചടിച്ച രൂപം തിരുത്തിയിട്ടില്ല.",
+        "en": "Another forum page marked 13 July 2008 repeats the 28-name Abjad list, a claimed total of 18,587, and the triangle entry 6139. Shared numerical errors mean this is NOT proof of two independent manuscript witnesses: copying or common ancestry is possible. Abjad values are not reading targets and no original text is silently corrected."
+      }
+    }
+  ]
 }
