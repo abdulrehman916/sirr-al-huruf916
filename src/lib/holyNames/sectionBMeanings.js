@@ -44,3 +44,11 @@ export function withSectionBMeaning(card) {
     editorial_meaning: supplemental,
   };
 }
+
+export function sectionBExplanation(card, language = 'en') {
+  const name = card?.arabic_name || '';
+  const meaning = language === 'ml' ? card?.meaning_malayalam : (card?.meaning_english || card?.english_meaning);
+  if (!card?.pdf_name_id) return '';
+  if (language === 'ml') return `ഈ കാർഡിലെ അറബി തലക്കെട്ട് «${name}» ആണ്. നൽകിയിരിക്കുന്ന അർഥം: ${meaning || 'അർഥം ഇപ്പോഴും source recheck കാത്തിരിക്കുന്നു'}. താഴെയുള്ള വിവരങ്ങൾ ഖുർആൻ/ഹദീസ് തെളിവ്, പണ്ഡിതവിവരണം, അല്ലെങ്കിൽ ഗ്രന്ഥത്തിലെ പരമ്പരാഗത account എന്ന നിലയിൽ അതത് source-നൊപ്പം വായിക്കണം. നിശ്ചിത എണ്ണം, ദിവസം, സമയം, ഉപാധി എന്നിവ source-ൽ വ്യക്തമായി ഇല്ലെങ്കിൽ ഇവിടെ ചേർത്തിട്ടില്ല.`;
+  return `This card retains the supplied Arabic heading “${name}”. Its displayed meaning is: ${meaning || 'meaning awaiting source recheck'}. Read the material below with its source label as Quran or hadith evidence, scholarly explanation, or a traditional book account. Counts, days, times and conditions are shown only when the source states them.`;
+}

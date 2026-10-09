@@ -4,6 +4,7 @@ import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
 import { sectionBReading } from '@/lib/holyNames/sectionBReading';
+import { sectionBExplanation } from '@/lib/holyNames/sectionBMeanings';
 
 function Arabic({ text }) {
   return text ? <p dir="rtl" lang="ar" className="font-amiri text-2xl text-yellow-100 leading-loose whitespace-pre-wrap">{text}</p> : null;
@@ -58,7 +59,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const availablePurposes = new Set(groups.find(group => group.key === 'topics').items.map(entry => entry.purpose || 'other'));
   return <section className={`space-y-5 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="section-b-reader">
     <h2 className="text-lg text-yellow-200 font-semibold">{ml ? 'നാമത്തെക്കുറിച്ചുള്ള വിശദമായ വായന' : 'Detailed reading about this name'}</h2>
-    {profile && <div className="space-y-3"><p className="text-white/90 leading-loose">{t(profile.explanation)}</p><p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p></div>}
+    <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
     {card && <p className="text-sm text-white/60 leading-loose">{ml ? 'താഴെ സ്രോതസ്സുമായി പരിശോധിച്ചതായി രേഖപ്പെടുത്തിയ വിവരങ്ങൾ വായിക്കാം. ഗ്രന്ഥത്തിലെ പ്രയോഗങ്ങൾ അതത് ഗ്രന്ഥത്തിന്റെ വിവരണങ്ങളാണ്; ഖുർആൻ / ഹദീസ് നിർദേശങ്ങളുമായി കലർത്തിയിട്ടില്ല. എല്ലാ ഗ്രന്ഥങ്ങളുടെയും ഗവേഷണം പൂർത്തിയായിട്ടില്ല.' : 'The material below is recorded as checked against its source. Traditional practices are attributed to their books and kept distinct from Quran or hadith instructions. Research across all books remains incomplete.'}{runtime.pending > 0 && ` ${ml ? 'സ്രോതസ്സ് വീണ്ടും പരിശോധിക്കേണ്ട പഴയ പരാമർശങ്ങൾ' : 'Earlier entries awaiting source recheck'}: ${runtime.pending}.`}</p>}
     <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ഈ കാർഡിലെ വിഷയങ്ങൾ തിരയുക' : 'Search topics in this card'}</span><input type="search" value={query} onChange={event => setQuery(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-transparent px-4 py-3 text-white focus:border-yellow-300" /></label>
     {availablePurposes.size > 0 && <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ആവശ്യാനുസരിച്ചുള്ള ഗ്രന്ഥപരാമർശങ്ങൾ' : 'Source accounts by purpose'}</span><select value={purpose} onChange={event => setPurpose(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-black px-4 py-3 text-white"><option value="all">{ml ? 'എല്ലാ വിഷയങ്ങളും' : 'All purposes'}</option>{Object.entries(shamsBrief.purpose_labels).filter(([key]) => availablePurposes.has(key)).map(([key, label]) => <option key={key} value={key}>{t(label)}</option>)}</select></label>}
