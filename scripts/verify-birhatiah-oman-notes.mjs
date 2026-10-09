@@ -25,7 +25,7 @@ assert.ok(fourNameGroup.arabic_excerpt.includes('قلنهود برشان كظه�
 assert.equal(fourNameGroup.counts.length,0);
 const source278 = data.notes.find(n => n.id === 'oman-p278');
 assert.deepEqual(source278.counts.map(row => [row.kind,row.value]),[['fatiha_reading',7],['collective_recitation',3],['separate_names_reading',3]]);
-for (const id of ['oman-p450','oman-p487','oman-p468']) {
+for (const id of ['oman-p450','oman-p487']) {
   const note = data.notes.find(n => n.id === id);
   assert.equal(note.figure_present_in_source,true);
   assert.equal(note.figure_reproduced_in_site,false,'Do not imply a full figure is present when the source image is not deployed');
@@ -34,6 +34,8 @@ for (const id of ['oman-p450','oman-p487','oman-p468']) {
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p77').related_name_ids, ['HNK-MHC-001','HNK-MHC-002','HNK-MHC-003','HNK-MHC-004']);
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p138').counts.map(n=>[n.kind,n.value]), [['collective_recitation',7]]);
 assert.deepEqual(data.notes.find(n=>n.id==='oman-p468').counts.map(n=>[n.kind,n.value]), [['collective_recitation_option',3],['collective_recitation_option',7]]);
+assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_present_in_source, true);
+assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_reproduced_in_site, false);
 assert.match(viewer, /data-source-figure-status=/);
 for(const note of data.notes){assert.ok(note.title.ml && note.title.en && note.meaning.ml && note.meaning.en);assert.ok(note.printed_page && note.pdf_page);}
 console.log('Oman notes: all 8 printed-source passages, correct grouped names and typed counts verified');
