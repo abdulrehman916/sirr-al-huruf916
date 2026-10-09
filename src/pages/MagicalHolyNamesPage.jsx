@@ -653,7 +653,7 @@ export default function MagicalHolyNamesPage() {
               </motion.div>
             </AnimatePresence>
           ))}
-          {isAdmin && activeTab && (
+          {isAdmin && activeTab && activeTab !== "section-d" && (
             <details className="rounded-xl border border-white/10 p-3">
               <summary className="cursor-pointer text-sm text-white/50">Manage content</summary>
               <div className="space-y-4 pt-4">

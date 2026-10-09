@@ -7,14 +7,8 @@
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
-import SectionDVisualIntegrator from "@/components/sectiond/SectionDVisualIntegrator";
-import SirrManuscriptLibrary from "@/components/sirr/SirrManuscriptLibrary";
-import { useAuth } from "@/lib/AuthContext";
-import { isAdminRole } from "@/lib/rbac";
 
 export default function SectionDPage() {
-  const { role } = useAuth();
-  const canManage = isAdminRole(role);
 
   return (
     <PageLayout>
@@ -22,14 +16,10 @@ export default function SectionDPage() {
         <PageTitle
           arabic="القسم د"
           latin="Section D"
-          subtitle="Holy Names Library — Du'a · Wazifa · Hirz · Salawat · Qur'an"
           icon="📜"
         />
-        {canManage && <SectionDVisualIntegrator />}
         <SectionDLibrary />
 
-        {/* Sirr Manuscript Library — migrated UI (reads SirrManuscriptBook/SirrManuscriptEntry) */}
-        <SirrManuscriptLibrary />
       </div>
     </PageLayout>
   );

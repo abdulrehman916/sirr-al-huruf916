@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigation } from "../context/NavigationContext";
 import { useTranslation } from "@/i18n/useTranslation";
-import { useAuth } from "@/lib/AuthContext";
 
 // SVG icon system
 const CARD_ICONS = {
@@ -158,15 +157,6 @@ const NAV_CARDS = [
   { path: "/books",            arabic: "الكتب",          label: "BOOKS",            subtitle: "PDF Books & Study Library",    iconKey: "shop",   accent: [212, 175, 55] },
 ];
 
-const OWNER_CONTENT_CARD = {
-  path: "/admin/content-studio",
-  arabic: "إنشاء صفحة",
-  label: "CREATE NEW PAGE",
-  subtitle: "Private Social Content Studio",
-  iconKey: "resources",
-  accent: [45, 212, 191],
-};
-
 const CARD_SUB_KEYS = {
   "/abjad": "card_sub_abjad",
   "/anasir": "card_sub_anasir",
@@ -228,8 +218,7 @@ function CardInner({ card }) {
 
 export default function CardsSection() {
   const { startNav } = useNavigation();
-  const { role } = useAuth();
-  const visibleCards = role === "owner" ? [...NAV_CARDS, OWNER_CONTENT_CARD] : NAV_CARDS;
+  const visibleCards = NAV_CARDS;
   
   return (
     <div className="relative z-20 w-full px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-3 md:gap-4" style={{
