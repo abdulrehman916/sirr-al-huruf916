@@ -1,5 +1,6 @@
 import quranMeanings from '@/data/holyNamesQuranMeanings.json';
 import structuredMethods from '@/data/holyNamesSectionBMethods.json';
+import shamsBrief from '@/data/holyNamesShamsBrief.json';
 
 export const SECTION_B_FIELDS = ['scholarly_entries', 'mujarrabat', 'amal', 'dua', 'wazifa', 'khawass', 'wafq', 'talisman', 'servitor', 'benefits', 'warnings', 'conditions', 'timings', 'repetitions', 'methods'];
 const CHECKED = new Set(['checked_against_scan', 'checked_against_primary_text', 'checked_against_digital_text']);
@@ -37,6 +38,11 @@ function normalize(entry, field, index) {
     timing: typeof entry.timing === 'string' ? { ml: entry.timing, en: entry.timing } : entry.timing,
     conditions: typeof entry.conditions === 'string' ? { ml: entry.conditions, en: entry.conditions } : entry.conditions,
     construction: entry.construction_method,
+    steps: entry.steps,
+    source_passage: null,
+    passage_translation: null,
+    source_scope: null,
+    purpose: entry.purpose,
     references: [{ book: entry.source_book || entry.source_reference || entry.book || '', author: entry.author || '', page: entry.source_page || entry.page || '', url: publicUrl(entry) }],
     field,
   };
@@ -54,10 +60,20 @@ export function sectionBReading(card, nameId) {
       if (structured && structured.source_book === entry.references[0].book && structured.source_page === entry.references[0].page) {
         for (const key of ['steps', 'count', 'timing', 'conditions']) entry[key] = structured[key];
       }
+      const brief = shamsBrief.accounts[entry.id];
+      if (brief && entry.references[0].book === shamsBrief.source_title && String(entry.references[0].page) === brief.source_page) {
+        entry.source_passage = brief.arabic_original;
+        entry.passage_translation = brief.translation || null;
+        entry.source_scope = shamsBrief.scope;
+        entry.references[0].url = shamsBrief.source_url;
+        for (const key of ['steps', 'count', 'timing', 'conditions', 'purpose']) entry[key] = brief[key];
+        const figure = { 'الرحمن': 'b-shams-early-rahman', 'الرحيم': 'b-shams-early-rahim', 'السلام': 'b-shams-early-salam', 'النور': 'b-shams-early-nur-nafi', 'النافع': 'b-shams-early-nur-nafi' }[entry.id.split('-').slice(4).join('-')];
+        if (!entry.related_visual_id && figure) entry.related_visual_id = figure;
+      }
       const isQuran = /tanzil\.net|القرآن الكريم/.test(`${entry.references[0].url || ''} ${entry.references[0].book}`);
       const group = isQuran ? 'evidence' : field === 'scholarly_entries' ? 'scholarly' : 'topics';
       // Preserve different wordings, counts, timings and figures as separate accounts.
-      const fingerprint = JSON.stringify([group, entry.arabic_original, entry.translation, entry.count, entry.timing, entry.conditions, entry.construction, entry.related_visual_id]);
+      const fingerprint = JSON.stringify([group, entry.arabic_original, entry.source_passage, entry.translation, entry.count, entry.timing, entry.conditions, entry.construction, entry.related_visual_id]);
       const duplicate = seen.get(fingerprint);
       if (duplicate) {
         for (const reference of entry.references) if (!duplicate.references.some(ref => JSON.stringify(ref) === JSON.stringify(reference))) duplicate.references.push(reference);

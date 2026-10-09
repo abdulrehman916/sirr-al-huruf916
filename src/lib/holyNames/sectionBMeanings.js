@@ -1,4 +1,5 @@
 // Editorial meanings of the supplied Arabic headings, not authentication of a divine-name list.
+import englishGlosses from '@/data/holyNamesSectionBEnglishGlosses.json';
 const glosses = {
   'PDF-HN-0146': ['എല്ലാറ്റിനും കഴിവുള്ളവൻ', 'The All-Powerful'],
   'PDF-HN-0147': ['ഉദാരമായി ദാനങ്ങൾ നൽകുന്നവൻ', 'The Bestower'],
@@ -33,11 +34,13 @@ const glosses = {
 
 export function withSectionBMeaning(card) {
   const gloss = glosses[card?.pdf_name_id];
-  if (!gloss) return card;
+  const english = englishGlosses[card?.pdf_name_id];
+  if (!gloss && !english) return card;
+  const supplemental = (!card.meaning_malayalam && Boolean(gloss)) || (!card.meaning_english && !card.english_meaning && Boolean(english));
   return {
     ...card,
-    meaning_malayalam: card.meaning_malayalam || gloss[0],
-    meaning_english: card.meaning_english || card.english_meaning || gloss[1],
-    editorial_meaning: true,
+    meaning_malayalam: card.meaning_malayalam || gloss?.[0],
+    meaning_english: card.meaning_english || card.english_meaning || gloss?.[1] || english,
+    editorial_meaning: supplemental,
   };
 }
