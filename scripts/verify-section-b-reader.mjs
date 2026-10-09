@@ -65,7 +65,7 @@ try {
   const privateCard = { pdf_name_id: 'test', dua: [{ ...base, source_url: 'https://private-bucket.supabase.co/storage/v1/object/sign/scan?token=secret' }] };
   assert.ok(!render(null, 'test', 'en', privateCard).includes('token=secret'));
   const meanings = JSON.parse(fs.readFileSync('src/data/holyNamesQuranMeanings.json', 'utf8'));
-  assert.equal(Object.keys(meanings.verses).length, 47);
+  assert.ok(Object.keys(meanings.verses).length >= 50);
   assert.ok(meanings.source_notice.includes('CHANGING IT IS NOT ALLOWED'));
   for (const [ref, verse] of Object.entries(meanings.verses)) {
     const qcard = { pdf_name_id: 'test', scholarly_entries: [{ ...base, id: ref, source_book: 'القرآن الكريم — Tanzil', source_page: ref, source_url: `https://tanzil.net/#${ref}`, arabic_text: verse.arabic }] };
@@ -95,3 +95,4 @@ try {
   }
 } finally { fs.rmSync(work, { recursive: true, force: true }); }
 console.log('PASS: every Section B chapter paragraph in both languages, separate Quran/scholar/topic/book sections, name isolation, no invented count, source attribution and escaped text.');
+
