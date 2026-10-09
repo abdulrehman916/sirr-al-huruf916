@@ -98,7 +98,7 @@ export default function SectionCNames() {
         <p className="font-malayalam text-sm" style={{ color: "rgba(255,255,255,0.45)" }}>
           {loadFailed
             ? (language === "ml" ? "ഡാറ്റ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. താഴെയുള്ള ബട്ടൺ അമർത്തി വീണ്ടും ശ്രമിക്കാം." : "Unable to load the records. Use the button below to try again.")
-            : (language === "ml" ? "നിലവിൽ പ്രസിദ്ധീകരിച്ച കാർഡ് രേഖകൾ കണ്ടെത്തിയില്ല." : "No published card records were returned.")}
+            : (language === "ml" ? "കാർഡുകൾ ലഭിച്ചില്ല. നിലവിലെ അക്കൗണ്ടിന് ഈ വിഭാഗത്തിന്റെ പ്രവേശനാനുമതി ഉണ്ടെന്ന് ഉറപ്പുവരുത്തുക; തുടർന്ന് വീണ്ടും ശ്രമിക്കുക." : "No cards were returned. Confirm this account has access to Section C, then retry.")}
         </p>
         <button type="button" data-testid="section-c-retry" onClick={() => setRetryIndex(index => index + 1)}
           className="rounded-xl border border-yellow-500/35 px-4 py-2 text-sm text-yellow-100">
