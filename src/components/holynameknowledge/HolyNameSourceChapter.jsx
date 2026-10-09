@@ -39,7 +39,10 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
   const sourcePage = linked?.printed_page || (linked ? chapter.printed_page : null);
   const sourceTime = linked?.timing?.[language] || method.timing?.[language] || '';
   const sourceCount = linked?.count ?? method.count;
-  const sourceCountKind = linked?.count_kind || method.count_kind || null;
+  // If a linked book excerpt has its own count, never borrow a conflicting
+  // method's recitation type and mislabel inscriptions as spoken repetitions.
+  const sameCount = linked?.count == null || (method.count != null && Number(linked.count) === Number(method.count));
+  const sourceCountKind = linked?.count_kind || (sameCount ? method.count_kind : null) || null;
   return <details id={method.method_id} className="rounded-xl border border-yellow-500/25 bg-yellow-500/[0.035] scroll-mt-24 overflow-hidden" data-reader-section="method" data-source-entry={method.source_entry} open={index === 1 ? true : undefined}>
     <summary className="cursor-pointer px-4 py-3 space-y-1 hover:bg-yellow-500/5">
       <span className="block text-lg font-semibold text-yellow-200">{index}. {t(method.title)}</span>
