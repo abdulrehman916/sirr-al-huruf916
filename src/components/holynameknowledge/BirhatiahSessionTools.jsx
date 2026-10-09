@@ -16,6 +16,7 @@ export default function BirhatiahSessionTools({ sourceCount, sourceCountKind, se
     } catch { return 0; }
   });
   const [minutes, setMinutes] = useState(5);
+  const [minutesInput, setMinutesInput] = useState('5');
   const [seconds, setSeconds] = useState(300);
   const [running, setRunning] = useState(false);
   const deadline = useRef(null);
@@ -40,7 +41,11 @@ export default function BirhatiahSessionTools({ sourceCount, sourceCountKind, se
   }, [running]);
 
   const start = () => {
-    const duration = seconds > 0 ? seconds : minutes * 60;
+    const selectedMinutes = clampSessionMinutes(minutesInput);
+    const duration = minutesInput !== String(minutes)
+      ? selectedMinutes * 60 : seconds > 0 ? seconds : minutes * 60;
+    setMinutes(selectedMinutes);
+    setMinutesInput(String(selectedMinutes));
     setSeconds(duration);
     deadline.current = Date.now() + duration * 1000;
     setRunning(true);
@@ -51,14 +56,19 @@ export default function BirhatiahSessionTools({ sourceCount, sourceCountKind, se
     setRunning(false);
   };
   const resetTime = () => {
+    const next = clampSessionMinutes(minutesInput);
+    setMinutes(next);
+    setMinutesInput(String(next));
     deadline.current = null;
     setRunning(false);
-    setSeconds(minutes * 60);
-  };
-  const updateMinutes = (event) => {
-    const next = clampSessionMinutes(event.target.value);
-    setMinutes(next);
     setSeconds(next * 60);
+  };
+  const commitMinutes = () => {
+    const next = clampSessionMinutes(minutesInput);
+    setMinutes(next);
+    setMinutesInput(String(next));
+    // Focusing and leaving the field must not discard a paused countdown.
+    if (minutesInput !== String(minutes)) setSeconds(next * 60);
   };
 
   return (
@@ -85,8 +95,9 @@ export default function BirhatiahSessionTools({ sourceCount, sourceCountKind, se
       <div className="flex flex-wrap items-end gap-3 border-t border-yellow-500/15 pt-3">
         <label className="text-xs text-white/70 space-y-1">
           <span className="block">{ml ? 'സ്വന്തമായി തിരഞ്ഞെടുക്കുന്ന മിനിറ്റ് (1–180)' : 'Personal duration in minutes (1–180)'}</span>
-          <input type="number" min="1" max="180" step="1" value={minutes} disabled={running}
-            onChange={updateMinutes} className="w-24 rounded-lg border border-white/20 bg-black/20 px-2 py-2 text-white" />
+          <input type="number" min="1" max="180" step="1" value={minutesInput} disabled={running}
+            onChange={event => setMinutesInput(event.target.value)} onBlur={commitMinutes}
+            className="w-24 rounded-lg border border-white/20 bg-black/20 px-2 py-2 text-white" />
         </label>
         <div className="space-y-1">
           <p className="text-xs text-white/55">{ml ? 'ശേഷിക്കുന്ന സമയം' : 'Time remaining'}</p>

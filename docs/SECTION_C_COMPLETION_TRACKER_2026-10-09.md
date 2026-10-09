@@ -2,6 +2,14 @@
 
 Snapshot: 2026-10-09. Repository `abdulrehman916/sirr-al-huruf916` only. No Base44 dependence.
 
+## Latest delivery state
+
+- Production currently serves commit `8166a91`: the blank Holy Names page crash and Section C search/reader-state fixes are live.
+- Commit `b2a3de1` supplies the three authentic Oman source regions. The next repair fixes editing a personal timer duration and verifies actual start, pause, resume, reset and expiry behavior. These changes are prepared in GitHub but are not yet confirmed live.
+- Vercel rejected the deployment request with `402 payment_required`, resource `api-deployments-free-per-day`, reporting the daily deployment limit and a 24-hour retry interval. Billing was not changed and the working production deployment was retained. Publishing remains blocked by that provider limit; a passing local build is not a live deployment.
+- Earlier sections below are chronological evidence. Their historical statements that the three Oman figures are missing are superseded by the original-image extraction batch at the end.
+- The UI repair scope is independently tested. Complete transcription and bilingual translation of every line in all source books is a separate, unfinished source-editing task; no UI test establishes that completion.
+
 ## Current independently checked milestones
 
 | Gate | Status | Basis |
@@ -185,3 +193,10 @@ A text-layer search across **all 837 pages** for multiple spellings of Birhatiah
 - Printed p.487's middle Birhatiah-referencing heading, paragraph and handwritten figure are shown. Its unrelated upper 2×2 table is excluded.
 - Regression checks confirm all three local image files and their source PDF page identifiers, plus actual Malayalam and English image rendering and duration separation.
 - This closes these three image-digitization gaps. Full long-text transcription, translation and name attribution across all legacy imports and the complete 837-page book remain unfinished; no corpus-completion claim is made.
+
+## Personal timer input repair and final application checks
+
+- The controlled number input previously clamped every keystroke. Clearing the field to type a new duration immediately forced a number back into it. It now keeps the editable draft, normalizes the 1–180 minute range on blur/start/reset, and preserves a paused countdown when an unchanged input loses focus.
+- Actual component tests with a controlled clock and storage verify clearing and typing 12 minutes, upper-limit normalization, start/pause/resume/reset, background-tab expiry, bilingual completion, interval cleanup and reset when reopened. Manual counts stay local and cannot go below zero; inscription numbers remain excluded from reading goals.
+- Full production build passes, including calculation-core locks, all 28 name cards/56 bilingual renders, 94 purpose blocks, source/page scoping and authentic images. Targeted ESLint, record identity, independent source imports and private-reference/session-cache checks also pass.
+- Latest production was checked again and still serves `8166a91`. Original-image and timer repairs must be deployed after the provider limit clears and then checked on the actual live site. Signed-in card access still requires an authorized user session; access policies were not loosened to test them.
