@@ -36,7 +36,7 @@ const P = {
 
 const NOT_VERIFIED = "സ്രോതസ്സിൽ നിന്ന് സ്ഥിരീകരിച്ചിട്ടില്ല";
 const AWAITING = "ഈ വിവരം നിലവിൽ അപ്‌ലോഡ് ചെയ്ത PDF-കളിൽ ലഭ്യമല്ല.";
-const UNSCOPED_MARKER = "ഈ കാർഡിലെ പഴയ സ്രോതസ്സുവിവരങ്ങളിൽ ഓരോ വരിയുടെയും വ്യക്തിഗത ഇസ്മ് ബന്ധം അടയാളപ്പെടുത്തിയിട്ടില്ല. അതുകൊണ്ട് ഇതിനെ ഈ ഇസ്മിനു മാത്രം ഉള്ള നിർദ്ദേശമായി കണക്കാക്കരുത്.";
+const UNSCOPED_MARKER = "ഈ കാർഡിലെ പഴയ ഇറക്കുമതി രേഖകളിൽ ഓരോ വരിയുടെയും വ്യക്തിഗത ഇസ്മ് ബന്ധം അടയാളപ്പെടുത്തിയിട്ടില്ല. ഗ്രന്ഥപേരും പേജും പഴയ രേഖയിലെ അവകാശവാദമാണ്; പരിഭാഷ അതിന്റെ ഉറവിടസ്ഥിരീകരണമല്ല. അതുകൊണ്ട് ഇതിനെ ഈ ഇസ്മിനു മാത്രം ഉള്ള നിർദ്ദേശമായി കണക്കാക്കരുത്.";
 
 const ADVANCED_SECTIONS = [
   { key: "invocation_wazifa", label: "Invocation (Wazifa)", ml: "പ്രാർഥന (വസീഫ)" },
@@ -121,7 +121,7 @@ function AdvancedBlock({ label, ml, entries, nameId }) {
         <p className="font-malayalam text-[11px] mt-1 leading-relaxed" style={{ color: "rgba(148,163,184,0.55)" }}>{language === "ml" ? AWAITING : "This information is not available in the uploaded sources."}</p>
       ) : (
         <div className="mt-2 space-y-2">
-          {list.some(e => !e.name_id && !e.related_name_id) && <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{language === "ml" ? UNSCOPED_MARKER : "These imported entries have no explicit individual-name attribution. Do not treat them as instructions exclusive to this name."}</p>}
+          {list.some(e => !e.name_id && !e.related_name_id) && <p className="text-xs italic leading-relaxed" style={{ color: "rgba(212,175,55,0.72)" }}>{language === "ml" ? UNSCOPED_MARKER : "These legacy imports have no explicit individual-name attribution. Book and page labels are the old record's claims; translation does not certify their sources. Do not treat them as instructions exclusive to this name."}</p>}
           {list.map((e, i) => {
             const original = sectionCOriginal(e);
             const translated = sectionCTranslation(e, language);

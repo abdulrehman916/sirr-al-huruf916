@@ -1,25 +1,9 @@
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import path from 'node:path';
-import legacy from '../src/data/birhatiahLegacyAmalTranslations.js';
 import { build } from 'esbuild';
 import { matchesSectionCSearch, sectionCMeaning } from '../src/lib/sectionCReaderState.js';
 import { collectSectionCShared, sectionCEntriesForCard, sectionCOriginal, sectionCTranslation } from '../src/lib/birhatiahSharedContent.js';
-assert.equal(legacy.entries.length, 40);
-const legacyKeys = new Set();
-for (const entry of legacy.entries) {
-  const key = JSON.stringify([entry.source_reference, entry.source_page, entry.text]);
-  assert.ok(!legacyKeys.has(key), 'Duplicate translation key');
-  legacyKeys.add(key);
-  const imported = {...entry}; delete imported.translation;
-  assert.equal(sectionCTranslation(imported, 'ml'), entry.translation.ml);
-  assert.equal(sectionCTranslation(imported, 'en'), entry.translation.en);
-  assert.equal(sectionCTranslation({...imported, source_page:'wrong-page'}, 'en'), '', 'Never attach translation to a different page');
-  assert.equal(sectionCTranslation({...imported, source_reference:'different-source'}, 'en'), '', 'Never attach translation to another book');
-  assert.equal(sectionCTranslation({...imported, translation:{en:'Owner corrected translation'}}, 'en'), 'Owner corrected translation');
-  assert.equal(sectionCOriginal(imported), entry.text, 'Never modify the imported original');
-}
-console.log('PASS: all 40 imported-wording translations in both languages, exact source/page matching, owner preference and original preservation.');
 const card = { id: 'one', name_id: 'HNK-MHC-001', canonical_arabic_name: 'بَرْهَتِيَّة', exact_meaning_ml: 'അർത്ഥം', exact_meaning_en: 'Compassion', malayalam_transliteration: 'ബർഹത്തിയ്യ' };
 for (const query of ['برهتية', 'COMPASSION', 'ബർഹത്തിയ്യ', 'hnk-mhc-001']) assert.ok(matchesSectionCSearch(card, query));
 assert.ok(!matchesSectionCSearch(card, 'unrelated'));

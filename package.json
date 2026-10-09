@@ -19,7 +19,7 @@
     "verify:calculation-source": "node scripts/verify-calculation-source.mjs",
     "verify:async-calculation": "node scripts/verify-async-calculation.mjs",
     "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs && node scripts/verify-birhatiah-oman-notes.mjs",
-    "verify:section-c-reader": "node scripts/verify-section-c-reader-state.mjs && node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs"
+    "verify:section-c-reader": "node scripts/verify-section-c-reader-state.mjs && node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs && node scripts/verify-section-c-legacy-coverage.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",

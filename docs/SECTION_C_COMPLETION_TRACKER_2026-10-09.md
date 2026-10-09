@@ -5,7 +5,8 @@ Snapshot: 2026-10-09. Repository `abdulrehman916/sirr-al-huruf916` only. No Base
 ## Latest delivery state
 
 - Production deployment `dpl_33Ke82sbBpW6oYUF37FxfgYiSXZu` is READY for commit `94b3ff3`: the Holy Names page repair, three authentic Oman source regions and personal timer input repair have deployed. The earlier quota rejection is historical, not the current status of those changes.
-- The next batch collates two selected Arabic passages and translates 40 distinct legacy imported wordings. It remains a separate content-review batch until its own production deployment is confirmed.
+- Deployment `dpl_J1Dciq1tWsfJDbDVUB2AohttAymC` is READY for commit `cc6782d`: the two source collation notes and 40 initial legacy meaning translations are live on `www.sirralhuruf.com`.
+- The current extension covers all 205 distinct wordings in the audited 1,204 visible legacy array occurrences across 14 fields. This is an exact-wording translation coverage milestone, not certification of all cited books or every line of their contents.
 - Vercel previously rejected a deployment request with `402 payment_required`, resource `api-deployments-free-per-day`. Billing was not changed. A passing local build by itself is never reported as a live deployment.
 - Earlier sections below are chronological evidence. Their historical statements that the three Oman figures are missing are superseded by the original-image extraction batch at the end.
 - The UI repair scope is independently tested. Complete transcription and bilingual translation of every line in all source books is a separate, unfinished source-editing task; no UI test establishes that completion.
@@ -207,7 +208,7 @@ A text-layer search across **all 837 pages** for multiple spellings of Birhatiah
 - The bottom of Arabic p.68 prints `خمس مرة` (five), whereas the existing reviewed English-edition account records fifty. C005 now displays the Arabic five as a separate source variant and attributes its retained fifty-reading account to English pp.114–115. The old Arabic paraphrase containing `خمسين` is no longer displayed as a verbatim quotation of Arabic p.68. Original name spelling and calculation fields remain intact.
 - Source corrections are applied narrowly in the reader to older imported chapters. They preserve unrelated live additions, work with the existing API records and do not rewrite the database.
 - Read-only database audit counted 925 occurrences across five legacy array fields: amal 473, invocation_wazifa 117, khawass 218, mujarrabat 61 and related_magic_squares 56. None had both of the standard `translation.ml/en` or `translation_ml/en` fields checked by this audit. This is not a count of distinct methods.
-- Of those occurrences, 850 carry the legacy AMAL-I MÜCERREB label. Removing import ids/timestamps yields 40 distinct JSON wordings. All 40 now have Malayalam and English meaning translations in a presentation dictionary, matched by exact source label, page and original wording. These translations cover existing imports; they do not constitute translation of the full book or proof of the label's al-Buni attribution. Existing owner translations take precedence.
+- Of those occurrences, 850 carry the legacy AMAL-I MÜCERREB label. Removing import ids/timestamps yields 40 distinct JSON wordings. All 40 received Malayalam and English meaning translations matched by exact source label, page and original wording. The later coverage extension moves these translations into the access-controlled database records and removes the public client dictionary. These translations cover existing imports; they do not constitute translation of the full book or proof of the label's al-Buni attribution. Existing owner translations take precedence.
 - Located a 24-page AMAL'I MÜCERREB-1 scan in the Internet Archive collection `TrkeHavasKitaplar_20190519`. Downloaded it for inspection and visually checked pages 1 and 9. These checks do not certify the remaining handwritten names, the entire volume or every imported transcription. The complete external PDF is not republished.
 - Unknown name meanings, ambiguous letter fragments, missing figures and the function of inline numerals are stated as unresolved. Originals and differing spellings are kept; no unknown names receive guessed harakat. The imported repeated-source heading now clearly states that repetition across 28 cards does not establish Birhatiah or name-specific applicability.
 - Tests require all 40 translations in both languages, exact page/source matching, owner preference and original preservation. Bilingual renders verify the pair's C002/C004 scope and the five/fifty edition distinction only in C005. Corrections are immutable and idempotent.
@@ -216,10 +217,23 @@ A text-layer search across **all 837 pages** for multiple spellings of Birhatiah
 
 | Remaining source work | Completion requirement |
 | --- | --- |
-| Remaining 75 legacy occurrences outside AMAL | Locate their actual editions/pages, verify attribution and translate their content; source labels alone are insufficient |
+| Legacy source attribution | Locate actual editions/pages and verify attribution; the imported wording now has bilingual meaning coverage, but a source label alone is insufficient evidence |
 | AMAL handwriting and scope | Collate all relevant original pages and resolve name variants/figures where legible; determine which entries actually concern Birhatiah |
 | Manba full chapter | Complete line-by-line transcription and bilingual translation of printed pp.67–90 beyond the selected checked passages |
 | English-edition incomplete formulas | Review the exact original pages for the Tahatil list, ring/seal words and unclear names rather than borrowing a different edition |
 | Oman long passages | Transcribe and translate the full relevant prayers/paragraphs beyond the 12 checked excerpts and extracted original regions |
 
 The 75 occurrences are not necessarily 75 unique passages. This bounded list concerns the currently known Section C material; it is not a promise to exhaust every possible book or internet source.
+
+## Complete audited legacy-wording meaning coverage
+
+- Broadened the audit from five fields to every array field rendered by the existing Section C advanced reader. The live snapshot has 28 name records and **1,204 visible imported occurrences across 14 fields**. They reduce to **205 exact source/page/wording keys**.
+- Added bilingual meaning translations for the other 75 original five-field entries and 90 additional wordings found in servitors, talisman descriptions, incense, number fields, scholarly discussion, angels, benefits, book titles and historical notes.
+- All 205 keys now have both Malayalam and English meanings stored in their existing access-controlled database records and read through the same shared reader function. Repeated entries use the same exact match; similar names, different pages and different sources are not silently combined. Owner-supplied translations retain precedence.
+- Bare numerals in number fields are translated as numbers without asserting they are recitation counts. Bare names in number fields remain names. Fragmentary clauses, missing diagrams, ambiguous words and unfamiliar name meanings are explicitly identified; missing text or vowels are not invented.
+- English historical and alchemical arguments retain their qualifiers, hypothetical framing, unnamed pronouns and ellipses. They are presented as the source's claims or interpretations, not independently established history or scientific mechanisms. Medical passages are historical text, not treatment recommendations.
+- The coverage manifest stores hashes and occurrence counts for the exact audited keys, without republishing the entire live record dataset. Build checks verify the coverage manifest and synthetic reader fixtures. The authorized private database snapshot additionally verifies all 205 keys, 1,204 occurrences, actual bilingual component renders and HTML escaping; the private snapshot is excluded from the repository.
+- The individual-card import notice now also distinguishes translated wording from certified book/page attribution, with readable small-screen text. Database contents, identity fields, owner settings, access/payment policies and calculation engines are unchanged.
+- Meaning coverage of the existing imported wording is complete for this snapshot. Full manuscript transcription, authentication of legacy citations and complete-book translation remain distinct source research requirements listed above.
+
+- Protected legacy source text is no longer bundled in a public translation dictionary. All translation additions are stored on the existing records under the existing access rules.

@@ -1,7 +1,4 @@
 // Presentation-only scope and deduplication. Never modify stored manuscripts, values or source rows.
-import legacyTranslations from '../data/birhatiahLegacyAmalTranslations.js';
-const legacyTranslationKey = entry => JSON.stringify([entry?.source_reference, entry?.source_page, sectionCOriginal(entry)]);
-const checkedLegacyTranslations = new Map(legacyTranslations.entries.map(entry => [legacyTranslationKey(entry), entry.translation]));
 export const BIRHATIAH_ADVANCED_FIELDS = [
   'invocation_wazifa', 'complete_birhatiyya_text', 'related_conjurations',
   'related_azaim', 'related_ruhaniyyat', 'related_talismans',
@@ -92,8 +89,7 @@ export function sectionCTranslation(entry, language) {
     ? [entry?.malayalam_translation, entry?.text_ml, entry?.meaning_ml, entry?.translation?.ml]
     : [entry?.english_translation, entry?.text_en, entry?.meaning_en, entry?.translation?.en];
   if (entry?.language === language) candidates.push(entry.text);
-  // Match the exact source label, page AND wording. Preserve spelling variants
-  // and prefer owner-supplied translations over this non-mutating fallback.
-  candidates.push(checkedLegacyTranslations.get(legacyTranslationKey(entry))?.[language]);
+  // Translations travel with the access-controlled record. Never bundle protected
+  // imported passages in a public client-side translation dictionary.
   return candidates.find(value => typeof value === 'string' && value.trim()) || '';
 }
