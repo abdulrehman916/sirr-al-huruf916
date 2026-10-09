@@ -32,7 +32,7 @@ assert.ok(component.includes('data-timer-kind="personal-session"'));
 assert.ok(component.includes('setInterval') && component.includes('clearInterval'));
 assert.ok(component.includes('Date.now()') && component.includes('remainingSeconds(deadline.current)'));
 assert.ok(component.includes('sourceRecitationGoal(sourceCount, sourceCountKind)'));
-assert.ok(reader.includes('<BirhatiahSessionTools sourceCount={sourceCount} sourceCountKind={sourceCountKind} />'));
+assert.ok(reader.includes('<BirhatiahSessionTools sourceCount={sourceCount} sourceCountKind={sourceCountKind} sessionKey={method.method_id} />'));
 assert.ok(reader.includes('sourceCountLabel(sourceCountKind, language)'));
 assert.ok(profile.includes('Abjad Value Squared (not a magic square)'));
 assert.ok(profile.includes('അബ്ജദ് മൂല്യത്തിന്റെ വർഗം (വെഫ്ക് അല്ല)'));
