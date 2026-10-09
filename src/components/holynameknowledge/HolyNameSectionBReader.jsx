@@ -21,6 +21,8 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
     {entry.multiple_verses?.length > 0 && <p className="text-xs text-white/50">{t(entry.translation_note)}</p>}
     {entry.source_passage && <div className="space-y-3"><p className="text-xs text-yellow-200">{ml ? 'ഈ ഭാഗത്തിന്റെ മൂല അറബി പാഠം' : 'Original Arabic of this source passage'}</p><Arabic text={entry.source_passage} />{t(entry.passage_translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.passage_translation)}</p>}<p className="text-xs text-white/50 leading-relaxed">{t(entry.source_scope)}</p></div>}
     {t(entry.translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.translation)}</p>}
+    {entry.legacy_body && <div className="rounded-lg border border-amber-500/20 bg-amber-950/20 p-3"><p className="text-xs text-amber-200 mb-1">{ml ? 'പഴയ കാർഡ് രേഖയിലെ പാഠം' : 'Legacy card text'}</p><p className="text-white/80 leading-relaxed whitespace-pre-wrap">{entry.legacy_body}</p></div>}
+    {entry.review_status === 'pending_source_recheck' && <p className="text-xs text-amber-200/90">{ml ? 'സ്ഥിതി: ഉറവിടം വീണ്ടും പരിശോധിക്കണം — ഇത് സ്ഥിരീകരിച്ച തെളിവായി കണക്കാക്കരുത്.' : 'Status: source recheck required — do not treat this as verified evidence.'}{entry.legacy_confidence && ` ${ml ? 'പഴയ സ്ഥിതി: ' : 'Legacy status: '}${entry.legacy_confidence}`}</p>}
     {topic && <div className="space-y-3 border-t border-white/10 pt-3">
       {Array.isArray(t(entry.steps)) && <ol className="list-decimal pl-6 space-y-2 text-white/85">{t(entry.steps).map((step, i) => <li key={i}>{step}</li>)}</ol>}
       <p className="text-white/75"><span className="text-yellow-200">{ml ? 'എണ്ണം: ' : 'Count: '}</span>{(typeof entry.count === 'object' && entry.count ? t(entry.count) : entry.count) ?? (entry.references ? (ml ? 'മുകളിലെ സ്രോതസ്സ് വിവരണം വായിക്കുക; എണ്ണം പ്രത്യേകം രേഖപ്പെടുത്തിയിട്ടില്ല.' : 'Read the source account above; no separate count field is recorded.') : (ml ? 'ഈ സ്രോതസ്സിൽ നിർദേശിച്ചിട്ടില്ല.' : 'Not specified in this source.'))}</p>
@@ -52,6 +54,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...runtime.topics] },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
+    { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
   ];
   const term = query.trim().toLocaleLowerCase();
   const matches = entry => !term || [t(entry.title), t(entry.translation), entry.arabic_original, entry.source_passage, t(entry.passage_translation), t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference, ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`), ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`), checkedChapter?.source_title, t(entry.timing), t(entry.conditions), ...(Array.isArray(t(entry.steps)) ? t(entry.steps) : [])].filter(Boolean).join(' ').toLocaleLowerCase().includes(term);
@@ -67,6 +70,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     {visible.map(group => group.items.length > 0 && <section key={group.key} className="space-y-3" data-section-b-group={group.key}>
       <h3 className="text-lg text-yellow-200">{group.title}</h3>
       {group.key === 'book' && <div className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><Arabic text={checkedChapter.source_name_form} />{['name_note', 'scope_note', 'edition_note'].map(key => t(checkedChapter[key]) && <p key={key} className="text-white/75 leading-loose">{t(checkedChapter[key])}</p>)}<p className="text-xs text-white/60">{checkedChapter.source_title} · {checkedChapter.printed_page}</p></div>}
+      {group.key === 'pending' && <p className="text-sm text-white/60 leading-relaxed">{ml ? 'ഇവ പഴയ ഡാറ്റയിൽ ഉണ്ടായിരുന്ന രേഖകളാണ്. ഉറവിടത്തിലെ പേജ്/പാഠം വീണ്ടും പരിശോധിക്കുന്നതുവരെ ഇവയെ ഖുർആൻ/ഹദീസ് തെളിവായി കാണിക്കില്ല.' : 'These records were already present in the legacy data. Until their source page/text is rechecked, they are not presented as Quran or hadith evidence.'}</p>}
       {group.key === 'topics' ? Object.entries(shamsBrief.purpose_labels).map(([key, label]) => {
         const items = group.items.filter(entry => (entry.purpose || 'other') === key);
         return items.length > 0 && <section key={key} className="space-y-3" data-section-b-purpose={key}><h4 className="text-yellow-200 font-semibold">{t(label)}</h4>{items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} topic />)}</section>;
@@ -74,3 +78,4 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     </section>)}
   </section>;
 }
+

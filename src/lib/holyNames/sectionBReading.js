@@ -43,18 +43,27 @@ function normalize(entry, field, index) {
     passage_translation: null,
     source_scope: null,
     purpose: entry.purpose,
+    legacy_body: entry.text || entry.verbatim_text || entry.description || '',
+    legacy_confidence: entry.confidence || entry.verification_status || '',
     references: [{ book: entry.source_book || entry.source_reference || entry.book || '', author: entry.author || '', page: entry.source_page || entry.page || '', url: publicUrl(entry) }],
     field,
   };
 }
 
 export function sectionBReading(card, nameId) {
-  if (!card || card.pdf_name_id !== nameId) return { evidence: [], scholarly: [], topics: [], pending: 0 };
-  const result = { evidence: [], scholarly: [], topics: [], pending: 0 };
+  if (!card || card.pdf_name_id !== nameId) return { evidence: [], scholarly: [], topics: [], pending: 0, pendingEntries: [] };
+  const result = { evidence: [], scholarly: [], topics: [], pending: 0, pendingEntries: [] };
   const seen = new Map();
   for (const field of SECTION_B_FIELDS) {
     for (const [index, original] of (Array.isArray(card[field]) ? card[field] : []).entries()) {
-      if (!isSourceChecked(original)) { result.pending++; continue; }
+      if (!isSourceChecked(original)) {
+        result.pending++;
+        const legacy = normalize(original, field, index);
+        legacy.review_status = 'pending_source_recheck';
+        legacy.source_kind = legacy.source_kind || 'legacy_record';
+        result.pendingEntries.push(legacy);
+        continue;
+      }
       const entry = normalize(original, field, index);
       const structured = structuredMethods[nameId]?.[entry.id];
       if (structured && structured.source_book === entry.references[0].book && structured.source_page === entry.references[0].page) {
@@ -95,3 +104,4 @@ export function unlinkedSectionBVisuals(card) {
   const linked = new Set(reading.topics.map(entry => entry.related_visual_id).filter(Boolean));
   return (Array.isArray(card?.attached_visuals) ? card.attached_visuals : []).filter(visual => !linked.has(visual.id));
 }
+
