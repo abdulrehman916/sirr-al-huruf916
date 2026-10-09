@@ -4,9 +4,9 @@ Snapshot: 2026-10-09. Repository `abdulrehman916/sirr-al-huruf916` only. No Base
 
 ## Latest delivery state
 
-- Production currently serves commit `8166a91`: the blank Holy Names page crash and Section C search/reader-state fixes are live.
-- Commit `b2a3de1` supplies the three authentic Oman source regions. The next repair fixes editing a personal timer duration and verifies actual start, pause, resume, reset and expiry behavior. These changes are prepared in GitHub but are not yet confirmed live.
-- Vercel rejected the deployment request with `402 payment_required`, resource `api-deployments-free-per-day`, reporting the daily deployment limit and a 24-hour retry interval. Billing was not changed and the working production deployment was retained. Publishing remains blocked by that provider limit; a passing local build is not a live deployment.
+- Production deployment `dpl_33Ke82sbBpW6oYUF37FxfgYiSXZu` is READY for commit `94b3ff3`: the Holy Names page repair, three authentic Oman source regions and personal timer input repair have deployed. The earlier quota rejection is historical, not the current status of those changes.
+- The next batch collates two selected Arabic passages and translates 40 distinct legacy imported wordings. It remains a separate content-review batch until its own production deployment is confirmed.
+- Vercel previously rejected a deployment request with `402 payment_required`, resource `api-deployments-free-per-day`. Billing was not changed. A passing local build by itself is never reported as a live deployment.
 - Earlier sections below are chronological evidence. Their historical statements that the three Oman figures are missing are superseded by the original-image extraction batch at the end.
 - The UI repair scope is independently tested. Complete transcription and bilingual translation of every line in all source books is a separate, unfinished source-editing task; no UI test establishes that completion.
 
@@ -200,3 +200,26 @@ A text-layer search across **all 837 pages** for multiple spellings of Birhatiah
 - Actual component tests with a controlled clock and storage verify clearing and typing 12 minutes, upper-limit normalization, start/pause/resume/reset, background-tab expiry, bilingual completion, interval cleanup and reset when reopened. Manual counts stay local and cannot go below zero; inscription numbers remain excluded from reading goals.
 - Full production build passes, including calculation-core locks, all 28 name cards/56 bilingual renders, 94 purpose blocks, source/page scoping and authentic images. Targeted ESLint, record identity, independent source imports and private-reference/session-cache checks also pass.
 - Latest production was checked again and still serves `8166a91`. Original-image and timer repairs must be deployed after the provider limit clears and then checked on the actual live site. Signed-in card access still requires an authorized user session; access policies were not loosened to test them.
+
+## Source collation and legacy translation batch
+
+- Visually collated the Turan–Karir paired passage on original Arabic printed p.68. Its original text and Malayalam/English meaning appear only in C002 and C004. No count or clock time is invented. This Arabic edition identifies the pair; it does not retrospectively establish the unclear spellings in another English edition.
+- The bottom of Arabic p.68 prints `خمس مرة` (five), whereas the existing reviewed English-edition account records fifty. C005 now displays the Arabic five as a separate source variant and attributes its retained fifty-reading account to English pp.114–115. The old Arabic paraphrase containing `خمسين` is no longer displayed as a verbatim quotation of Arabic p.68. Original name spelling and calculation fields remain intact.
+- Source corrections are applied narrowly in the reader to older imported chapters. They preserve unrelated live additions, work with the existing API records and do not rewrite the database.
+- Read-only database audit counted 925 occurrences across five legacy array fields: amal 473, invocation_wazifa 117, khawass 218, mujarrabat 61 and related_magic_squares 56. None had both of the standard `translation.ml/en` or `translation_ml/en` fields checked by this audit. This is not a count of distinct methods.
+- Of those occurrences, 850 carry the legacy AMAL-I MÜCERREB label. Removing import ids/timestamps yields 40 distinct JSON wordings. All 40 now have Malayalam and English meaning translations in a presentation dictionary, matched by exact source label, page and original wording. These translations cover existing imports; they do not constitute translation of the full book or proof of the label's al-Buni attribution. Existing owner translations take precedence.
+- Located a 24-page AMAL'I MÜCERREB-1 scan in the Internet Archive collection `TrkeHavasKitaplar_20190519`. Downloaded it for inspection and visually checked pages 1 and 9. These checks do not certify the remaining handwritten names, the entire volume or every imported transcription. The complete external PDF is not republished.
+- Unknown name meanings, ambiguous letter fragments, missing figures and the function of inline numerals are stated as unresolved. Originals and differing spellings are kept; no unknown names receive guessed harakat. The imported repeated-source heading now clearly states that repetition across 28 cards does not establish Birhatiah or name-specific applicability.
+- Tests require all 40 translations in both languages, exact page/source matching, owner preference and original preservation. Bilingual renders verify the pair's C002/C004 scope and the five/fifty edition distinction only in C005. Corrections are immutable and idempotent.
+
+### Still needed before a full content-completion claim
+
+| Remaining source work | Completion requirement |
+| --- | --- |
+| Remaining 75 legacy occurrences outside AMAL | Locate their actual editions/pages, verify attribution and translate their content; source labels alone are insufficient |
+| AMAL handwriting and scope | Collate all relevant original pages and resolve name variants/figures where legible; determine which entries actually concern Birhatiah |
+| Manba full chapter | Complete line-by-line transcription and bilingual translation of printed pp.67–90 beyond the selected checked passages |
+| English-edition incomplete formulas | Review the exact original pages for the Tahatil list, ring/seal words and unclear names rather than borrowing a different edition |
+| Oman long passages | Transcribe and translate the full relevant prayers/paragraphs beyond the 12 checked excerpts and extracted original regions |
+
+The 75 occurrences are not necessarily 75 unique passages. This bounded list concerns the currently known Section C material; it is not a promise to exhaust every possible book or internet source.

@@ -4,7 +4,29 @@ import path from 'node:path';
 import os from 'node:os';
 import { createRequire } from 'node:module';
 import { build } from 'esbuild';
+import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
+const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
+assert.equal(collation.notes.length, 2);
+for (const note of collation.notes) {
+  assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
+  assert.ok(fs.existsSync(`public${note.source_image}`));
+  assert.equal(note.review_status, 'checked_against_scan');
+}
+assert.deepEqual(collation.notes[0].related_name_ids, ['HNK-MHC-002', 'HNK-MHC-004']);
+assert.equal(collation.notes[1].count, 5);
+assert.ok(collation.notes[1].arabic_original.includes('خمس مرة'));
+assert.ok(!collation.notes[1].arabic_original.includes('خمسين'));
+const importedChapter = JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-005.json', 'utf8'));
+importedChapter.source_notes.push({id:'owner-added-note', translation:{en:'Keep this live entry'}});
+const before = JSON.stringify(importedChapter);
+const correctedChapter = collateBirhatiahChapter(importedChapter, collation);
+assert.equal(JSON.stringify(importedChapter), before, 'Collation must not mutate imported records');
+assert.equal(correctedChapter.practices[0].count, 50, 'English fifty must be retained as its own edition reading');
+assert.equal(correctedChapter.practices[0].arabic_original, undefined, 'An inaccurate Arabic paraphrase must not be labelled an original');
+assert.ok(correctedChapter.practices[0].source_title.includes('English edition'));
+assert.ok(correctedChapter.source_notes.some(note=>note.id==='owner-added-note'));
+assert.equal(collateBirhatiahChapter(correctedChapter, collation).source_notes.length, correctedChapter.source_notes.length, 'Collation must be idempotent');
 assert.equal(Object.keys(guides).length, 28);
 const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
 assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
@@ -34,6 +56,14 @@ for (const [id, guide] of Object.entries(guides)) {
     }
     assert.ok(guide.steps[language].length && guide.title[language] && guide.benefit[language]);
     const html = render(chapter, language);
+    const pairVisible = ['HNK-MHC-002', 'HNK-MHC-004'].includes(id);
+    assert.equal(html.includes(`${id}-extra-source_notes-manba-p68-turan-karir-pair`), pairVisible, `${id}: paired source account has wrong name scope`);
+    assert.equal(html.includes(`${id}-extra-source_notes-manba-p68-69-mazjal-five-variant`), id==='HNK-MHC-005', `${id}: five-reading variant has wrong name scope`);
+    if (id==='HNK-MHC-005') {
+      assert.ok(!html.includes(importedChapter.practices[0].arabic_original), 'Old paraphrase must not appear as original Arabic in either language');
+      assert.ok(html.includes('ومن تلاه كل يوم خمس مرة'));
+      assert.ok(html.includes('114–115'), 'Fifty-reading account must identify its English edition pages');
+    }
     const split = html.indexOf('data-reader-section="references"');
     assert.ok(split > 0, `${id}: source references must appear inside the card`);
     assert.ok(html.includes('data-reader-layout="inline"'), `${id}: source references are not inline`);

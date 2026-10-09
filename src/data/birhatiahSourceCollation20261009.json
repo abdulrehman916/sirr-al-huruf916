@@ -1,0 +1,65 @@
+{
+  "checked_on": "2026-10-09",
+  "source_title": "منبع أصول الحكمة — شرح البرهتية",
+  "review_basis": "Direct visual collation of the bundled original printed pages 68 and 69; a selected passage check, not a complete chapter transcription.",
+  "notes": [
+    {
+      "id": "manba-p68-turan-karir-pair",
+      "related_name_ids": ["HNK-MHC-002", "HNK-MHC-004"],
+      "title": {
+        "ml": "തൂറാൻ–കരീർ: അറബി പതിപ്പിൽ വ്യക്തമായി പേരെടുത്ത സംയുക്ത പരാമർശം",
+        "en": "Turan–Karir: the explicitly named pair in the Arabic edition"
+      },
+      "arabic_original": "ومن كتب طوران وكرير على جبهة ناظر في مندل فإنه ينظر النظر التام ومن تلاهما في خلوة مع بخور طيب نجح في عمله وأطاعته جميع الأرواح العلوية والسفلية وقضيت حوائجه كائنة ما كانت",
+      "translation": {
+        "ml": "തൂറാൻ, കരീർ എന്നീ പേരുകൾ മന്ദലിൽ ദർശനം അന്വേഷിക്കുന്ന ആളുടെ നെറ്റിയിൽ എഴുതുന്നവന് പൂർണ്ണ ദർശനം ലഭിക്കുമെന്ന് ഈ വാക്യം പറയുന്നു. രണ്ടു പേരുകളും സുഗന്ധധൂപത്തോടെ ഒറ്റപ്പെട്ടിരുന്ന് വായിക്കുന്നവന് തന്റെ പ്രവർത്തനത്തിൽ വിജയം ലഭിക്കും, മുകളിലും താഴെയുമുള്ള എല്ലാ ആത്മാക്കളും അയാളെ അനുസരിക്കും, ആവശ്യങ്ങൾ എന്തുതന്നെയായാലും നിറവേറും എന്നും തുടർവാക്യം അവകാശപ്പെടുന്നു. ഇവ ഗ്രന്ഥത്തിന്റെ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്.",
+        "en": "The sentence claims that writing Turan and Karir on the forehead of a person looking in a mandal gives complete vision. It then claims that reciting the pair in seclusion with pleasant incense brings success in the undertaking, obedience from all upper and lower spirits, and fulfilment of needs whatever they may be. These are the source's traditional claims."
+      },
+      "scope_note": {
+        "ml": "അറബി പേജ് 68 ഈ രണ്ടു പേരുകളും നേരിട്ട് പറയുന്നു. ഇത് കരീറിനോ തൂറാനോ ഒറ്റയ്ക്കുള്ള രീതിയല്ല. ഈ വാക്യത്തിൽ നിശ്ചിത ഓതൽഎണ്ണമോ ദിവസമോ മണിക്കൂറോ ഇല്ല. വേറിട്ട ഇംഗ്ലീഷ് പതിപ്പിലെ വ്യക്തമല്ലാത്ത പേരുകൾ ഈ അറബി പാഠംകൊണ്ട് ഊഹിച്ച് പൂരിപ്പിച്ചിട്ടില്ല.",
+        "en": "Arabic page 68 explicitly identifies both names. This is a paired account, not an isolated Karir or Turan method. No fixed reading count, day or clock hour appears in the sentence. It does not silently reconstruct unclear spellings in the separate English edition."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "source_image": "/figures/birhatiah-manba-p68.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p68-69-mazjal-five-variant",
+      "related_name_ids": ["HNK-MHC-005"],
+      "title": {
+        "ml": "അറബി പതിപ്പിലെ ദിവസേന അഞ്ച് — ഇംഗ്ലീഷ് രേഖയിലെ അമ്പതിൽനിന്ന് വേറിട്ട്",
+        "en": "Five daily in the Arabic printing — distinct from the English account's fifty"
+      },
+      "arabic_original": "ومن تلاه كل يوم خمس مرة",
+      "translation": {
+        "ml": "തിരഞ്ഞെടുത്ത വാക്യഭാഗത്തിന്റെ അർത്ഥം: ‘ദിവസേന ഇത് അഞ്ച് തവണ വായിക്കുന്നവൻ’. അറബി പേജ് 68-ന്റെ അവസാനവരിയിൽ അച്ചടിച്ചിരിക്കുന്നത് خمس (‘അഞ്ച്’) എന്നാണ്; خمسين (‘അമ്പത്’) എന്നല്ല. ഫലങ്ങളെക്കുറിച്ചുള്ള തുടർവിവരണം പേജ് 69-ൽ തുടരുന്നു. ഇംഗ്ലീഷ് പതിപ്പിനെ അടിസ്ഥാനമാക്കിയ മുൻ രേഖയിൽ ദിവസേന അമ്പത് എന്ന വ്യത്യസ്ത വായനയുണ്ട്. രണ്ടു പതിപ്പുകളുടെ സംഖ്യകളും വേറിട്ട് നിലനിർത്തുന്നു; ഏതാണ് അച്ചടിപ്പിശക് എന്ന് ഊഹിച്ച് നിശ്ചയിക്കുന്നില്ല.",
+        "en": "The selected clause means: 'Whoever recites it five times each day.' The final line of Arabic page 68 prints خمس ('five'), not خمسين ('fifty'). The account of outcomes continues on page 69. The previously recorded English-edition account gives fifty daily. Both edition readings are retained separately; neither is silently declared a printing error."
+      },
+      "count": 5,
+      "count_kind": "recitation",
+      "timing": {"ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറില്ല.", "en": "Daily; no particular clock hour."},
+      "scope_note": {
+        "ml": "ഇത് സംഖ്യ വ്യക്തമാക്കുന്ന ചെറിയ മൂലവാക്യഭാഗമാണ്; പേജ് 68–69-ലെ മുഴുവൻ ഖണ്ഡത്തിന്റെ പകർപ്പല്ല. ഗർഭധാരണപരാമർശത്തിലെ ഏഴ് എഴുത്തുകളോ ഏഴ് ദിവസങ്ങളോ ഇതിൽ ചേർക്കുന്നില്ല. നിലവിലെ നാമരൂപവും Abjad കണക്കും മാറ്റുന്നില്ല.",
+        "en": "This is a short original clause establishing the printed number, not a transcription of the complete paragraph on pages 68–69. It is separate from the seven inscriptions and seven days in the conception account. The stored name and Abjad calculation remain unchanged."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": "68–69",
+      "source_image": "/figures/birhatiah-manba-p68.png",
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "practice_provenance_corrections": [
+    {
+      "name_id": "HNK-MHC-005",
+      "practice_id": "daily-50",
+      "source_title": "Berhatiah: Ancient Magick Conjuration of Power — English edition",
+      "printed_page": "114–115",
+      "count_kind": "recitation",
+      "scope_note": {
+        "ml": "അമ്പത് എന്ന എണ്ണം ഇംഗ്ലീഷ് പതിപ്പിന്റെ നിലവിലുള്ള പരിശോധിച്ച രേഖയിൽ നിന്നാണ്. അറബി പേജ് 68-ലെ അച്ചടിരൂപമായ അഞ്ച് എന്നതുമായി ഇതിനെ കലർത്തരുത്. മുൻ അറബി വാക്യം മൂലപേജുമായി വാക്കുപ്രതി പൊരുത്തപ്പെടാത്തതിനാൽ ഇവിടെ മൂലഉദ്ധരണിയായി കാണിക്കുന്നില്ല.",
+        "en": "Fifty comes from the existing reviewed English-edition record. Do not conflate it with five as printed on Arabic page 68. The previous Arabic sentence does not match that page word for word and is no longer displayed as an original quotation."
+      }
+    }
+  ]
+}

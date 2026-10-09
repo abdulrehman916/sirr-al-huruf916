@@ -11,10 +11,10 @@ export default function BirhatiahSharedImportedMaterial({ byField = {} }) {
   const count = sections.reduce((total, [, entries]) => total + entries.length, 0);
   return <section className="rounded-xl border border-yellow-500/25 p-4 space-y-4" data-testid="birhatiah-shared-imported-material">
     <h3 className="text-yellow-200 font-semibold">
-      {ml ? '28 ഇസ്മുകൾക്കും പൊതുവായ പഴയ ഗ്രന്ഥവിവരങ്ങൾ — ഒരിടത്ത് മാത്രം' : 'Imported source material shared by all 28 names — shown once'} ({count})
+      {ml ? '28 കാർഡുകളിലും ആവർത്തിച്ച പഴയ ഇറക്കുമതി രേഖകൾ — ഒരിടത്ത് മാത്രം' : 'Legacy imports repeated across all 28 cards — shown once'} ({count})
     </h3>
     <p className="text-sm text-white/70 leading-loose">
-      {ml ? 'ഇവ എല്ലാ 28 കാർഡുകളിലും ഒരേ സ്രോതസ്സും പേജും പാഠവുമുള്ള പഴയ രേഖകളാണ്. പ്രത്യേക നാമത്തിന്റെ മാത്രം അമലായി അവതരിപ്പിക്കുന്നില്ല. വ്യത്യസ്ത ഗ്രന്ഥപതിപ്പുകളിലെ പാഠങ്ങൾ വേർതിരിച്ചാണ് നിലനിർത്തിയത്.' : 'These legacy entries have the same wording, source and page in all 28 cards. They are collected here once, not attributed uniquely to each name. Edition differences remain separate.'}
+      {ml ? 'ഇവ എല്ലാ 28 കാർഡുകളിലും ഒരേ സ്രോതസ്സും പേജും പാഠവുമുള്ള പഴയ രേഖകളാണ്. ആവർത്തിച്ച് ഇറക്കുമതി ചെയ്തതുകൊണ്ട് മാത്രം ഇവ ബിർഹതിയ്യയുടെ സംയുക്ത രീതികളോ ഓരോ നാമത്തിന്റെയും അമലുകളോ ആകുന്നില്ല. മൂലപേജുമായി ബന്ധം പരിശോധിക്കാനുണ്ട്; ഇവിടെ നൽകിയ സ്രോതസ്സുപേര് പഴയ രേഖയിലെ അവകാശവാദമാണ്. വ്യത്യസ്ത പാഠങ്ങളും ലഭ്യമായ പരിഭാഷകളും വേറിട്ട് നിലനിർത്തുന്നു.' : 'These legacy entries repeat the same wording, source and page across all 28 cards. Repeated import does not establish that they are collective Birhatiah methods or practices for each name. Their relationship requires original-page review; the source label is the legacy record’s attribution. Distinct readings and available translations remain separate.'}
     </p>
     {sections.map(([field, entries]) => <section key={field} className="rounded-lg border border-white/15 p-3 space-y-3">
       <h3 className="text-yellow-100">
