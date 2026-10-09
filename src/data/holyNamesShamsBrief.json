@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 56234)
-Total output lines: 2503
-
 {
   "source_title": "شمس المعارف الكبرى — خواص الأسماء الحسنى، النسخة المصورة المنسوبة لأحمد البوني",
   "source_url": "https://archive.org/details/1_20240129_20240129_2322",
@@ -440,7 +437,1600 @@ Total output lines: 2503
       "review_status": "checked_against_scan",
       "purpose": "provision",
       "count": {
-        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട…34234 tokens truncated…ا رحيما.",
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الرزاق": {
+      "arabic_original": "وأما اسمه تعالى الرزاق: من أكثر من ذكره، يسر الله تعالى له الأسباب ورزقه من حيث لا يحتسب.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "provision",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الفتاح": {
+      "arabic_original": "وأما اسمه تعالى الفتاح: من أكثر من ذكره، فتح الله عليه أسباب الخير ظاهرا وباطنا.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-العليم": {
+      "arabic_original": "وأما اسمه تعالى العليم: من أكثر من ذكره، أنطقه الله تعالى بالحكمة.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-القابض": {
+      "arabic_original": "وأما اسمه تعالى القابض: من أكثر من ذكره، زال عنه كل قبض.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الباسط": {
+      "arabic_original": "وأما اسمه تعالى الباسط: من أكثر من ذكره، انبسط سره.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الخافض": {
+      "arabic_original": "وأما اسمه تعالى الخافض: أكثر من ذكره ودعا على ظالم أخذ لوقته.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഈ ചുരുക്കഭാഗത്തിന്റെ ഉള്ളടക്കം മുകളിലെ മൂലവാക്യത്തിലും പരിഭാഷയിലും നൽകിയിരിക്കുന്നു. പാഠത്തിൽ ഇല്ലാത്ത പുതിയ ക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "The complete source sentence and its meaning appear above. No additional sequence absent from the text has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الرافع": {
+      "arabic_original": "وأما اسمه تعالى الرافع: من أكثر من ذكره، رفع الله تعالى قدره وأعلى درجته.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-المعز": {
+      "arabic_original": "وأما اسمه تعالى المعز: من أكثر من ذكره، أعزه الله تعالى في الدنيا والآخرة.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-المذل": {
+      "arabic_original": "وأما اسمه تعالى المذل: من أكثر من ذكره، أذل الله تعالى له جميع الجبابرة.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-السميع": {
+      "arabic_original": "وأما اسمه تعالى السميع: من أكثر من ذكره، كان يجاب الدعوات في كل ما سأل.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-البصير": {
+      "arabic_original": "وأما اسمه تعالى البصير: من كتبه في جام زجاج مائة، ومحاه بماء المطر وشربه على الفطور، فتق الله تعالى ذهنه وقوى قلبه وحفظه.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അൽ-ബസ്വീർ ഒരു ഗ്ലാസ് പാത്രത്തിൽ നൂറുതവണ എഴുതുന്നതും മഴവെള്ളത്തിൽ മായ്ച്ച് പ്രഭാതഭക്ഷണത്തിനോടനുബന്ധിച്ച് കുടിക്കുന്നതും വിവരിക്കുന്നു. മനസ്സ് തുറക്കുകയും ഹൃദയവും ഓർമ്മയും ശക്തമാകുകയും ചെയ്യുമെന്നാണ് അവകാശവാദം. 100 ഇവിടെ എഴുത്തിന്റെ എണ്ണമാണ്. മഷിയോ എഴുത്ത് മായ്ച്ച വെള്ളമോ കുടിക്കുന്നതിനുള്ള നിർദേശമായി ഇത് നൽകുന്നില്ല.",
+        "en": "The book describes writing al-Basir one hundred times in a glass vessel, washing the writing with rainwater and drinking it at breakfast, claiming opened understanding and a strengthened heart and memory. One hundred is the writing count. This is not supplied as an instruction to ingest ink or washed writing."
+      },
+      "purpose": "knowledge",
+      "count": {
+        "ml": "100 എഴുത്തുകൾ; ഓതൽഎണ്ണമല്ല.",
+        "en": "100 inscriptions, not recitations."
+      },
+      "timing": {
+        "ml": "പ്രഭാതഭക്ഷണത്തിനോടനുബന്ധിച്ചാണ് ഗ്രന്ഥവിവരണം.",
+        "en": "The book account places it at breakfast."
+      },
+      "conditions": {
+        "ml": "കൃത്യമായ വസ്തുക്കളും നിബന്ധനകളും മുകളിലെ പൂർണ പരിഭാഷയിൽ വേർതിരിച്ചിരിക്കുന്നു. ഇത് ചരിത്രപരമായ ഗ്രന്ഥപരാമർശമാണ്.",
+        "en": "Materials and conditions are distinguished in the complete translation above. This remains a historical book account."
+      },
+      "steps": {
+        "ml": [
+          "എഴുത്ത് മായ്ച്ച വെള്ളം കുടിക്കുന്ന ചരിത്രവിവരണം; ഉപയോഗനിർദേശമായി നൽകുന്നില്ല."
+        ],
+        "en": [
+          "A historical account of drinking washed writing; not supplied as an instruction."
+        ]
+      }
+    },
+    "b-shams-brief-68-الحكم": {
+      "arabic_original": "وأما اسمه تعالى الحكم: فإنه يصلح ذكره لنفوذ الكلمة.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-العدل": {
+      "arabic_original": "وأما اسمه تعالى العدل: من أكثر من ذكره، ألهمه الله تعالى العدل في سائر أحواله.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "purification",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-اللطيف": {
+      "arabic_original": "وأما اسمه تعالى اللطيف: من أكثر من ذكره، في أي كربة وأي مرض كان يسر الله تعالى له منه الخلاص.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الخبير": {
+      "arabic_original": "وأما اسمه تعالى الخبير: من نقشه على فص في الساعة الأولى من يوم الجمعة، ووضعه في فمه لم يصبه وصب العطش وإن وضعه في كوز الماء وشرب منه أسرع الله تعالى له الري، ولم يطلب الماء بعد ذلك أبدا.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: വെള്ളിയാഴ്ചയുടെ ആദ്യ മണിക്കൂറിൽ അൽ-ഖബീർ മോതിരക്കല്ലിൽ കൊത്തി വായിൽ വെക്കുന്നതായി വിവരിക്കുന്നു; ദാഹത്തിന്റെ ബുദ്ധിമുട്ട് ഉണ്ടാകില്ലെന്നാണ് അവകാശവാദം. വേറൊരു വാക്യത്തിൽ കല്ല് വെള്ളപ്പാത്രത്തിൽ വെച്ച് അതിൽനിന്ന് കുടിച്ചാൽ വേഗത്തിൽ ദാഹം തീരുകയും തുടർന്ന് വെള്ളം ആവശ്യപ്പെടാതിരിക്കുകയും ചെയ്യുമെന്ന് പറയുന്നു. ഈ പാഠം കല്ല് വായിൽ വെക്കുന്നതിനോ വെള്ളം ഒഴിവാക്കുന്നതിനോ സുരക്ഷിതമായ നിർദേശമായി നൽകുന്നില്ല; ഇത് ചരിത്രപരമായ അവകാശവാദമാണ്.",
+        "en": "The book describes engraving al-Khabir on a ring stone in Friday's first hour and putting it in the mouth, claiming freedom from the distress of thirst. A separate sentence puts the stone in a water vessel and drinks from it, claiming rapid quenching and no subsequent need for water. This is a historical claim, not a safe instruction to put a stone in the mouth or avoid drinking water."
+      },
+      "purpose": "relief",
+      "count": {
+        "ml": "നിശ്ചിത എണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "No fixed count is stated."
+      },
+      "timing": {
+        "ml": "വെള്ളിയാഴ്ചയുടെ ആദ്യ മണിക്കൂർ; ഏത് ആധുനിക മണിക്കൂറാണെന്ന് പാഠം നിശ്ചയിക്കുന്നില്ല.",
+        "en": "Friday’s first hour; no modern clock hour is inferred."
+      },
+      "conditions": {
+        "ml": "കൃത്യമായ വസ്തുക്കളും നിബന്ധനകളും മുകളിലെ പൂർണ പരിഭാഷയിൽ വേർതിരിച്ചിരിക്കുന്നു. ഇത് ചരിത്രപരമായ ഗ്രന്ഥപരാമർശമാണ്.",
+        "en": "Materials and conditions are distinguished in the complete translation above. This remains a historical book account."
+      },
+      "steps": {
+        "ml": [
+          "കല്ല് വായിൽ വെക്കുന്നതും ദാഹം മാറ്റുന്നതും സംബന്ധിച്ച ചരിത്രാവകാശവാദം; നടപടിപ്പട്ടികയായി നൽകുന്നില്ല."
+        ],
+        "en": [
+          "A historical claim involving a stone in the mouth and thirst; not converted into a procedure."
+        ]
+      }
+    },
+    "b-shams-brief-68-الحليم": {
+      "arabic_original": "وأما اسمه تعالى الحليم: من أكثر من ذكره أمن من الاضطرار عند نزول الشدائد.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-العظيم": {
+      "arabic_original": "وأما اسمه تعالى العظيم: من أكثر من ذكره وقاه الله تعالى شر ما يخاف ويحذر.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الشكور": {
+      "arabic_original": "وأما اسمه تعالى الشكور: من أكثر من ذكره، أعلى الله تعالى قدره.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-العلي": {
+      "arabic_original": "وأما اسمه تعالى العلي: من أكثر من ذكره، كان محفوظا من شر الأشرار في سائر حركاته وسكناته.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الكبير": {
+      "arabic_original": "وأما اسمه تعالى الكبير: من أكثر من ذكره، كبر في أعين الناس وعظمه كل من رآه.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الحفيظ": {
+      "arabic_original": "وأما اسمه تعالى الحفيظ: من أكثر من ذكره، حفظه الله تعالى مما يكره.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-المقيت": {
+      "arabic_original": "وأما اسمه تعالى المقيت: من أكثر من ذكره، لا يحس بألم الجوع.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الحسيب": {
+      "arabic_original": "وأما اسمه تعالى الحسيب: من أكثر من ذكره، كان مقضي الحاجة.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-68-الجليل": {
+      "arabic_original": "وأما اسمه تعالى الجليل: من أكثر من ذكره، أجل الله قدره عند جميع العوالم.",
+      "source_page": "68",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الكريم": {
+      "arabic_original": "وأما اسمه تعالى الكريم: من أكثر من ذكره، عصمه الله تعالى في سائر حركاته.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الرقيب": {
+      "arabic_original": "وأما اسمه تعالى الرقيب: من أكثر من ذكره، رزقه الله تعالى النظر في العواقب.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المجيب": {
+      "arabic_original": "وأما اسمه تعالى المجيب: من أكثر من ذكره، كان يجاب الدعوة.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الودود": {
+      "arabic_original": "وأما اسمه تعالى الودود: من أكثر من ذكره، عطفت عليه جميع الأرواح.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "relationships",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المجيد": {
+      "arabic_original": "وأما اسمه تعالى المجيد: من أكثر من ذكره من الملوك وسع الله تعالى ملكه.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الباعث": {
+      "arabic_original": "وأما اسمه تعالى الباعث: من أكثر من ذكره، انبعث على كل خير كان.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الشهيد": {
+      "arabic_original": "وأما اسمه تعالى الشهيد: من أكثر من ذكره، أشهده الله تعالى المراقبة في خلواته.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الحق": {
+      "arabic_original": "وأما اسمه تعالى الحق: من أكثر من ذكره، جعل الله كلمته عالية.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الوكيل": {
+      "arabic_original": "وأما اسمه تعالى الوكيل: فله مربع عظيم من نقشه في رخام والطالع العقرب ووضعه في داره، فلا يبقى فيها حية ولا عقرب إلا خرجت منها وسائر الحشرات المؤذية.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അൽ-വകീലിന് സമീപം സൂചിപ്പിക്കുന്ന വലിയ കളം മാർബിളിൽ കൊത്തി, വൃശ്ചികം ലഗ്നമായിരിക്കുമ്പോൾ വീട്ടിൽ സ്ഥാപിക്കുന്നതായി വിവരിക്കുന്നു. പാമ്പും തേളും മറ്റു ഉപദ്രവകാരികളായ ജീവികളും വീടുവിട്ടുപോകുമെന്നാണ് അവകാശവാദം. ഓതേണ്ട എണ്ണം ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല. കളം വിഷമുള്ള ജീവികളിൽനിന്ന് സുരക്ഷ ഉറപ്പുനൽകുന്നതായി കാണരുത്.",
+        "en": "The book describes engraving the indicated large square for al-Wakil in marble and placing it in the home with Scorpio as ascendant. It claims that snakes, scorpions and other harmful creatures leave the house. This sentence specifies no recitation count. The figure is not a guarantee of safety from venomous animals."
+      },
+      "purpose": "protection",
+      "count": {
+        "ml": "നിശ്ചിത എണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "No fixed count is stated."
+      },
+      "timing": {
+        "ml": "വൃശ്ചിക ലഗ്നം.",
+        "en": "Scorpio ascendant."
+      },
+      "conditions": {
+        "ml": "കൃത്യമായ വസ്തുക്കളും നിബന്ധനകളും മുകളിലെ പൂർണ പരിഭാഷയിൽ വേർതിരിച്ചിരിക്കുന്നു. ഇത് ചരിത്രപരമായ ഗ്രന്ഥപരാമർശമാണ്.",
+        "en": "Materials and conditions are distinguished in the complete translation above. This remains a historical book account."
+      },
+      "steps": {
+        "ml": [
+          "വിഷജീവികളെ തടയുമെന്ന ഗ്രന്ഥാവകാശവാദം; സുരക്ഷാക്രമമായി നൽകുന്നില്ല."
+        ],
+        "en": [
+          "A book claim about repelling venomous animals; not a safety procedure."
+        ]
+      }
+    },
+    "b-shams-brief-69-القوي": {
+      "arabic_original": "وأما اسمه تعالى القوي: من أكثر من ذكره، قويت روحه ودامت محبته.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المتين": {
+      "arabic_original": "وأما اسمه تعالى المتين: من أكثر من ذكره، أمن من ضعف القوة.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الولي": {
+      "arabic_original": "وأما اسمه تعالى الولي: من أكثر من ذكره، تولاه الله تعالى ووالاه.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الحميد": {
+      "arabic_original": "وأما اسمه تعالى الحميد: من أكثر من ذكره، وكتبه في خاتم عدده الواقع عليه ومحاه وسقاه لمن أراد أمن من كل مرض وعافاه الله تعالى.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അൽ-ഹമീദ് അധികമായി ഓർക്കുന്നതോടൊപ്പം, അതുമായി ബന്ധപ്പെട്ട എണ്ണം മോതിരത്തിൽ എഴുതുന്നതും എഴുത്ത് മായ്ച്ച് ഉദ്ദേശിക്കുന്ന വ്യക്തിക്ക് നൽകുന്നതും പറയുന്നു. എല്ലാ രോഗങ്ങളിൽനിന്നും രക്ഷപ്പെടുമെന്നാണ് അവകാശവാദം. ഈ വാക്യം കൃത്യമായ സംഖ്യ അച്ചടിക്കുന്നില്ല; «അതുമായി ബന്ധപ്പെട്ട എണ്ണം» എന്നാണ് പറയുന്നത്. അതിനെ കാർഡിന്റെ അബ്ജദ് മൂല്യത്തിൽനിന്ന് ഊഹിച്ച് പൂരിപ്പിച്ചിട്ടില്ല. എഴുത്ത് മായ്ച്ച വെള്ളം കുടിക്കുന്നതിനുള്ള നിർദേശമല്ല ഇത്.",
+        "en": "The book combines frequent remembrance of al-Hamid with writing its associated number on a ring, washing the writing and giving the liquid to the intended person, claiming protection from every illness. The sentence prints no explicit numeral; it says the number associated with it. No value has been inferred from the card's Abjad calculation. This is not an instruction to drink washed writing."
+      },
+      "purpose": "other",
+      "count": {
+        "ml": "«അതുമായി ബന്ധപ്പെട്ട എണ്ണം»; കൃത്യമായ സംഖ്യ ഇവിടെ അച്ചടിച്ചിട്ടില്ല.",
+        "en": "Its associated number; no explicit numeral is printed here."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയം പറഞ്ഞിട്ടില്ല.",
+        "en": "No special time is given."
+      },
+      "conditions": {
+        "ml": "കൃത്യമായ വസ്തുക്കളും നിബന്ധനകളും മുകളിലെ പൂർണ പരിഭാഷയിൽ വേർതിരിച്ചിരിക്കുന്നു. ഇത് ചരിത്രപരമായ ഗ്രന്ഥപരാമർശമാണ്.",
+        "en": "Materials and conditions are distinguished in the complete translation above. This remains a historical book account."
+      },
+      "steps": {
+        "ml": [
+          "എഴുത്ത് മായ്ച്ച വെള്ളം രോഗിക്ക് നൽകുന്ന ചരിത്രവിവരണം; ചികിത്സാനിർദേശമായി നൽകുന്നില്ല."
+        ],
+        "en": [
+          "A historical account of giving washed writing to a patient; not a treatment instruction."
+        ]
+      }
+    },
+    "b-shams-brief-69-المحصي": {
+      "arabic_original": "وأما اسمه تعالى المحصي: من أكثر من ذكره، أمن من التبعات.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المبدئ": {
+      "arabic_original": "وأما اسمه تعالى المبدئ: من أكثر من ذكره، وفعل شيئا صلحت أحواله.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المعيد": {
+      "arabic_original": "وأما اسمه تعالى المعيد: من وضعه في مربع والطالع أحد البروج المنقلبة وتعلق في مكان في مهب ريح وكرر الاسم ليلا ونهارا على أبق أو غائب رجع إلى المكان الذي خرج منه بإذن الله تعالى.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അൽ-മുഈദ് കളത്തിൽ സ്ഥാപിക്കുന്നതും ലഗ്നം ചരരാശികളിലൊന്നായിരിക്കുന്നതും കാറ്റുവീശുന്ന സ്ഥലത്ത് കളം തൂക്കുന്നതും വിവരിക്കുന്നു. വിട്ടുപോയ സേവകനോ കാണാതായ ആളോ മടങ്ങിവരാൻ രാവും പകലും നാമം ആവർത്തിക്കുന്നതായി പറയുന്നു. പോയ സ്ഥലത്തേക്കു മടങ്ങിവരുമെന്നാണ് അവകാശവാദം. നിശ്ചിത ആവർത്തനഎണ്ണം ഈ ഭാഗത്ത് പറഞ്ഞിട്ടില്ല. ഇത് കാണാതായ ആളെ കണ്ടെത്താനുള്ള ഉറപ്പുള്ള മാർഗമായി അവതരിപ്പിക്കുന്നില്ല.",
+        "en": "The book places al-Muid in a square with a movable-sign ascendant and hangs it where wind blows. It describes repeating the name by night and day concerning a runaway servant or absent person, claiming a return to the place from which that person departed. No fixed repetition count is stated. This is not presented as a reliable way to locate a missing person."
+      },
+      "purpose": "relationships",
+      "count": {
+        "ml": "നിശ്ചിത ഓതൽഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "No fixed recitation count is stated."
+      },
+      "timing": {
+        "ml": "രാവും പകലും; ചരരാശികളിലൊന്ന് ലഗ്നം.",
+        "en": "Night and day; a movable-sign ascendant."
+      },
+      "conditions": {
+        "ml": "കളം കാറ്റുവീശുന്ന സ്ഥലത്ത് തൂക്കുന്നു; മടങ്ങിവരുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "A square hung where wind blows; the promised return remains the book claim."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥം ചരരാശി ലഗ്നമായിരിക്കുമ്പോൾ നാമം കളത്തിൽ സ്ഥാപിക്കുന്നതായി വിവരിക്കുന്നു.",
+          "കാറ്റുവീശുന്ന സ്ഥലത്ത് അത് തൂക്കുന്നതായി പറയുന്നു.",
+          "വിട്ടുപോയവന്റെ മടങ്ങിവരവുമായി ബന്ധപ്പെടുത്തി രാവും പകലും നാമം ആവർത്തിക്കുന്നതായി പറയുന്നു."
+        ],
+        "en": [
+          "The book describes placing the name in a square under a movable-sign ascendant.",
+          "It describes hanging it where wind blows.",
+          "It links night-and-day remembrance to the return of an absent person."
+        ]
+      }
+    },
+    "b-shams-brief-69-المميت": {
+      "arabic_original": "وأما اسمه تعالى المميت: من أكثر من ذكره، أمات الله تعالى شهواته الظلمانية.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "purification",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الحي": {
+      "arabic_original": "وأما اسمه تعالى الحي: من أكثر من ذكره وكتبه مائة وعشرين مرة على باب داره في شرف الزهرة فإن الساكن فيها يحفظ من العوارض الرديئة.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അൽ-ഹയ്യ് അധികമായി ഓർക്കുന്നതും ശുക്രന്റെ ഉച്ചസ്ഥിതിയിൽ വീടിന്റെ വാതിലിൽ നാമം 120 തവണ എഴുതുന്നതും പറയുന്നു. അവിടെ താമസിക്കുന്നവൻ ദോഷകരമായ ബാധകളിൽനിന്ന് കാക്കപ്പെടുമെന്നാണ് അവകാശവാദം. 120 എഴുത്തിന്റെ എണ്ണമാണ്; ഓതൽഎണ്ണം ഇതിൽ നിശ്ചയിക്കുന്നില്ല.",
+        "en": "The book combines frequent remembrance of al-Hayy with writing the name 120 times on the house doorway at Venus's exaltation, claiming protection of the occupant from harmful afflictions. One hundred and twenty is the inscription count; this sentence sets no recitation count."
+      },
+      "purpose": "other",
+      "count": {
+        "ml": "120 എഴുത്തുകൾ; ഓർമ്മയ്ക്കുള്ള എണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "120 inscriptions; no remembrance count is stated."
+      },
+      "timing": {
+        "ml": "വാതിലിലെ എഴുത്ത്: ശുക്രന്റെ ഉച്ചസ്ഥിതി.",
+        "en": "Doorway inscription: Venus’s exaltation."
+      },
+      "conditions": {
+        "ml": "വീടിന്റെ വാതിൽ; മഷിയോ മറ്റു ഒരുക്കങ്ങളോ ഈ വാക്യത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "The house doorway; no ink or other preparation is stated."
+      },
+      "steps": {
+        "ml": [
+          "നാമം അധികമായി ഓർക്കുന്നതായി ഗ്രന്ഥം വിവരിക്കുന്നു.",
+          "വേറൊരു ക്രമത്തിൽ ശുക്രന്റെ ഉച്ചസ്ഥിതിയിൽ വീടിന്റെ വാതിലിൽ നാമം 120 തവണ എഴുതുന്നതായി പറയുന്നു."
+        ],
+        "en": [
+          "The book describes frequent remembrance of the name.",
+          "A separate sequence writes it 120 times on a house doorway at Venus’s exaltation."
+        ]
+      }
+    },
+    "b-shams-brief-69-القيوم": {
+      "arabic_original": "وأما اسمه تعالى القيوم: من أكثر من ذكره، وجد في باطنه علوما ومعارف.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الواحد": {
+      "arabic_original": "وأما اسمه تعالى الواحد: من أكثر من ذكره، استوحش من الكثرة.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "purification",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الأحد": {
+      "arabic_original": "وأما اسمه تعالى الأحد: من أكثر من ذكره، أغناه الله تعالى عن كل أحد.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "purification",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الصمد": {
+      "arabic_original": "وأما اسمه تعالى الصمد: من أكثر من ذكره، رزقه الله تعالى روحانية وقوة عرفانية.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المقتدر": {
+      "arabic_original": "وأما اسمه تعالى المقتدر: من أكثر من ذكره، سخر الله له الأرواح كلها.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المقدم": {
+      "arabic_original": "وأما اسمه تعالى المقدم: من أكثر من ذكره، رزقه الله تعالى التصرف في الأسباب.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المؤخر": {
+      "arabic_original": "وأما اسمه تعالى المؤخر: فيذكر لمن كان بابه مقفلا وستره وحجابه مسبلا.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: വാതിൽ അടച്ചിട്ടും തിരശ്ശീലയും മറയും താഴ്ത്തിയിട്ടുമുള്ളവനുമായി ബന്ധപ്പെട്ട് അൽ-മുഅഖ്ഖിർ ഓർക്കുന്നതിനെക്കുറിച്ചാണ് ഈ ചുരുക്കവാക്യം പറയുന്നത്. അതിനപ്പുറം ചെയ്യേണ്ട നടപടിയോ ഫലമോ എണ്ണമോ വാക്യം വിശദീകരിക്കുന്നില്ല. കാണാത്ത വിശദീകരണം ചേർത്തിട്ടില്ല.",
+        "en": "This brief sentence mentions remembrance of al-Muakhkhir for someone whose door is closed and whose curtain and screen are lowered. It gives no further procedure, claimed outcome or count. No missing explanation has been supplied."
+      },
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഈ ചുരുക്കഭാഗത്തിന്റെ ഉള്ളടക്കം മുകളിലെ മൂലവാക്യത്തിലും പരിഭാഷയിലും നൽകിയിരിക്കുന്നു. പാഠത്തിൽ ഇല്ലാത്ത പുതിയ ക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "The complete source sentence and its meaning appear above. No additional sequence absent from the text has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الأول": {
+      "arabic_original": "وأما اسمه تعالى الأول: من أكثر من ذكره، كان سابقا إلى كل خير كان.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الآخر": {
+      "arabic_original": "وأما اسمه تعالى الآخر: من أكثر من ذكره، نال كل خير فهو سر مصون وعلم مكنون.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الظاهر": {
+      "arabic_original": "وأما اسمه تعالى الظاهر: من أكثر من ذكره، أظهره الله تعالى على خفيات الأمور.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الباطن": {
+      "arabic_original": "وأما اسمه تعالى الباطن: أكثر من ذكره، لا يأتي أحدا إلا أجابه وقضى حاجته.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "relief",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-الوالي": {
+      "arabic_original": "وأما اسمه تعالى الوالي: من أكثر من ذكره، كان مهابا عند جميع الناس.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "authority",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-المتعالي": {
+      "arabic_original": "وأما اسمه تعالى المتعالي: من أكثر من ذكره، رزقه الله تعالى روحانية عظيمة.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "knowledge",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-69-البر": {
+      "arabic_original": "وأما اسمه تعالى البر: من أكثر من ذكره، كان ملطوفا به في جميع أحواله.",
+      "source_page": "69",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-70-التواب": {
+      "arabic_original": "وأما اسمه تعالى التواب: من كتبه ومحاه بماء المطر وسقاه لمن يشرب الخمر وغيره وأكثر من تلاوته فإنه يبغضه ويتوب الله تعالى عليه.",
+      "source_page": "70",
+      "review_status": "checked_against_scan",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിന്റെ പരാമർശം: അത്തവ്വാബ് എഴുതി മഴവെള്ളത്തിൽ മായ്ച്ച് മദ്യം തുടങ്ങിയവ കുടിക്കുന്ന വ്യക്തിക്ക് നൽകുന്നതും നാമം അധികമായി പാരായണം ചെയ്യുന്നതും വിവരിക്കുന്നു. അയാൾ അതിനെ വെറുക്കുകയും അല്ലാഹു പശ്ചാത്താപം സ്വീകരിക്കുകയും ചെയ്യുമെന്നാണ് അവകാശവാദം. നിശ്ചിത എണ്ണം പറയുന്നില്ല. എഴുത്ത് മായ്ച്ച വെള്ളം നൽകുന്നത് ലഹരിവിമുക്തി ചികിത്സയായി ഇവിടെ നിർദേശിക്കുന്നില്ല.",
+        "en": "The book describes writing al-Tawwab, washing the writing with rainwater, giving it to someone who drinks wine or similar substances, and frequent recitation. It claims that the person comes to dislike the substance and Allah accepts repentance. No fixed count is stated. Giving washed writing is not prescribed here as addiction treatment."
+      },
+      "purpose": "purification",
+      "count": {
+        "ml": "നിശ്ചിത എണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "No fixed count is stated."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയം പറഞ്ഞിട്ടില്ല.",
+        "en": "No special time is given."
+      },
+      "conditions": {
+        "ml": "കൃത്യമായ വസ്തുക്കളും നിബന്ധനകളും മുകളിലെ പൂർണ പരിഭാഷയിൽ വേർതിരിച്ചിരിക്കുന്നു. ഇത് ചരിത്രപരമായ ഗ്രന്ഥപരാമർശമാണ്.",
+        "en": "Materials and conditions are distinguished in the complete translation above. This remains a historical book account."
+      },
+      "steps": {
+        "ml": [
+          "മഴവെള്ളത്തിൽ എഴുത്ത് മായ്ച്ച് നൽകുന്ന ചരിത്രവിവരണം; ലഹരിവിമുക്തി ചികിത്സയായി നൽകുന്നില്ല."
+        ],
+        "en": [
+          "A historical washed-writing account; not addiction treatment."
+        ]
+      }
+    },
+    "b-shams-brief-70-المنتقم": {
+      "arabic_original": "وأما اسمه تعالى المنتقم: من أكثر من ذكره، انتقم الله تعالى من جميع أعدائه.",
+      "source_page": "70",
+      "review_status": "checked_against_scan",
+      "purpose": "other",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഈ ചുരുക്കഭാഗത്തിന്റെ ഉള്ളടക്കം മുകളിലെ മൂലവാക്യത്തിലും പരിഭാഷയിലും നൽകിയിരിക്കുന്നു. പാഠത്തിൽ ഇല്ലാത്ത പുതിയ ക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "The complete source sentence and its meaning appear above. No additional sequence absent from the text has been added."
+        ]
+      }
+    },
+    "b-shams-brief-70-العفو": {
+      "arabic_original": "وأما اسمه تعالى العفو: من أكثر من ذكره، وكان خائفا من أحد أمنه الله تعالى منه.",
+      "source_page": "70",
+      "review_status": "checked_against_scan",
+      "purpose": "protection",
+      "count": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് നിശ്ചിത ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no fixed repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് പ്രത്യേക ദിവസമോ ഘടികാരസമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "This brief passage states no weekday or clock time."
+      },
+      "conditions": {
+        "ml": "ഈ ചുരുക്കഭാഗത്ത് ശുദ്ധീകരണം, ധൂപം, ഭക്ഷണനിയമം തുടങ്ങിയ പ്രത്യേക ഒരുക്കങ്ങൾ പറഞ്ഞിട്ടില്ല. പിന്നീട് വരുന്ന വേറൊരു അധ്യായത്തിന്റെ നിബന്ധനകൾ ഇതിൽ ചേർത്തിട്ടില്ല.",
+        "en": "This brief passage specifies no special purification, incense or diet. Conditions from a separate later chapter have not been imported here."
+      },
+      "steps": {
+        "ml": [
+          "ഗ്രന്ഥത്തിലെ ഈ ചുരുക്കവിവരണം നാമത്തിന്റെ പതിവായ / അധികമായ ഓർമ്മയെക്കുറിച്ചാണ്. പൂർണ മൂലവാക്യം മുകളിൽ നൽകിയിരിക്കുന്നു; പുതിയ ദുആക്രമം ചേർത്തിട്ടില്ല."
+        ],
+        "en": [
+          "This brief book account concerns frequent remembrance of the name. Its complete source sentence appears above; no new prayer sequence has been added."
+        ]
+      }
+    },
+    "b-shams-brief-70-الرؤوف": {
+      "arabic_original": "وأما اسمه تعالى الرؤوف: من أكثر من ذكره، كان الله به رؤوفا رحيما.",
       "source_page": "70",
       "review_status": "checked_against_scan",
       "purpose": "other",
