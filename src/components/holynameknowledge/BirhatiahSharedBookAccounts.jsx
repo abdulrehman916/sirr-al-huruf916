@@ -49,7 +49,10 @@ export default function BirhatiahSharedBookAccounts() {
           <p className="text-xs text-white/55">{book.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.printed_pages}</p>
           {entry.edition_comparison && <section className="border-l-2 border-yellow-500/25 pl-3 space-y-2">
             <p className="text-sm leading-loose text-white/85">{entry.edition_comparison[language]}</p>
-            <a href={entry.edition_comparison.image_path} target="_blank" rel="noreferrer" className="text-xs underline text-white/55">{entry.edition_comparison.source_title}</a>
+            {entry.edition_comparison.image_path?.startsWith('/figures/') && <figure className="space-y-2" data-source-image="inline-comparison">
+              <img src={entry.edition_comparison.image_path} loading="lazy" alt={entry.edition_comparison.source_title} className="block w-full max-w-2xl mx-auto rounded-lg bg-white" />
+              <figcaption className="text-xs text-white/65">{entry.edition_comparison.source_title}</figcaption>
+            </figure>}
           </section>}
         </section>)}
       </section>;
@@ -59,7 +62,7 @@ export default function BirhatiahSharedBookAccounts() {
       <h3 className="text-yellow-100">{ml ? 'പുസ്തകത്തിൽനിന്നുള്ള വ്യക്തമായ സംയുക്ത ചിത്രങ്ങൾ' : 'Shared figures directly from the book'} ({book.figures.length})</h3>
       <p className="text-sm text-white/65">{ml ? 'അച്ചടിയിൽ ഉള്ള രൂപം തന്നെ. ഓരോ ചിത്രവും അതത് പേജിലെ ഭാഗവുമായി മാത്രം ബന്ധിപ്പിക്കുക. ഒഴിഞ്ഞ കളങ്ങൾ ഊഹിച്ച് നിറച്ചിട്ടില്ല.' : 'The printed forms are retained. Read each figure with the account on its own page. Empty cells are not filled by inference.'}</p>
       {book.figures.map(figure => <figure key={figure.printed_page} className="space-y-2">
-        <a href={figure.image_path} target="_blank" rel="noreferrer"><img src={figure.image_path} loading="lazy" alt={`${ml ? 'സംയുക്ത ഗ്രന്ഥചിത്രം, പേജ്' : 'Shared book figure, page'} ${figure.printed_page}`} className="w-full max-w-xl mx-auto rounded-lg bg-white" /></a>
+        <img src={figure.image_path} loading="lazy" alt={`${ml ? 'സംയുക്ത ഗ്രന്ഥചിത്രം, പേജ്' : 'Shared book figure, page'} ${figure.printed_page}`} className="block w-full max-w-xl mx-auto rounded-lg bg-white" />
         <figcaption className="text-xs text-white/65">{book.source_title} · {ml ? 'പേജ്' : 'Page'} {figure.printed_page}</figcaption>
       </figure>)}
     </section>
