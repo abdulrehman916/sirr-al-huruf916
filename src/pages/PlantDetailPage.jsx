@@ -1,10 +1,11 @@
+import { useNavigation } from "@/context/NavigationContext";
 // ═══════════════════════════════════════════════════════════════
 // PLANT DETAIL PAGE — Dictionary module only
 // Zero imports from sealed engines.
 // ═══════════════════════════════════════════════════════════════
 
 import { useMemo } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, BookOpen, Leaf } from "lucide-react";
 import PageLayout from "../components/PageLayout";
@@ -45,7 +46,7 @@ function Field({ label, value, arabic = false, rtl = false }) {
 
 export default function PlantDetailPage() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const { goBack } = useNavigation();
 
   const plant = useMemo(() => PLANTS_DATA.find(p => String(p.id) === String(id)), [id]);
   const catLabel = PLANT_CATEGORIES.find(c => c.id === plant?.category)?.label ?? plant?.category;
@@ -56,7 +57,7 @@ export default function PlantDetailPage() {
         <div className="text-center py-24 space-y-4">
           <Leaf className="w-12 h-12 mx-auto" style={{ color: P.dim }} />
           <p className="font-amiri text-xl" style={{ color: P.dim }}>Entry not found</p>
-          <button onClick={() => navigate("/plants")} className="font-inter text-xs underline" style={{ color: P.text }}>
+          <button onClick={goBack} className="font-inter text-xs underline" style={{ color: P.text }}>
             ← Back to Dictionary
           </button>
         </div>
@@ -71,7 +72,7 @@ export default function PlantDetailPage() {
         {/* Back */}
         <motion.button
           initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
-          onClick={() => navigate("/plants")}
+          onClick={goBack}
           className="flex items-center gap-2 font-inter text-xs font-semibold uppercase tracking-widest px-3 py-2 rounded-xl border"
           style={{ color: P.text, borderColor: P.border, background: P.bg, WebkitTapHighlightColor: "transparent" }}
         >

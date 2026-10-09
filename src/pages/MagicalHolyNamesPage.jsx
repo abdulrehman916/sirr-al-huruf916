@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Book, Filter, ArrowUpDown, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
 import PageTitle from "../components/PageTitle";
 import PullToRefresh from "../components/PullToRefresh";
@@ -576,26 +576,33 @@ function TabSwitcher({ activeTab, onTabChange }) {
 export default function MagicalHolyNamesPage() {
   const { role } = useAuth();
   const isAdmin = role === "admin" || role === "owner";
-  const [activeTab, setActiveTab] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requestedTab = searchParams.get("section");
+  const activeTab = TABS.some(tab => tab.id === requestedTab) ? requestedTab : null;
+  const setActiveTab = (tabId) => {
+    const next = new URLSearchParams(searchParams);
+    if (tabId) next.set("section", tabId);
+    else next.delete("section");
+    setSearchParams(next);
+  };
   const [language, setLanguage] = useHolyNamesLanguagePreference();
-  const [lockedFeature, setLockedFeature] = useState(null);
+  const accessFeature = FEATURES.find(f => f.tab === activeTab);
+  const lockedFeature = accessFeature && !checkFeatureAccess(PAGE_PATH, accessFeature.id) ? accessFeature : null;
   const [importRefreshKey, setImportRefreshKey] = useState(0);
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
     const feat = FEATURES.find(f => f.tab === tabId);
     if (feat && !checkFeatureAccess(PAGE_PATH, feat.id)) {
-      setLockedFeature(feat);
       return;
     }
-    setLockedFeature(null);
-    setActiveTab(tabId);
     // Reset scroll when switching tabs
     const container = document.querySelector('[data-scroll-container="true"]');
     if (container) {
       container.scrollTop = 0;
     }
   };
+
 
   return (
     <PageLayout>
@@ -614,7 +621,7 @@ export default function MagicalHolyNamesPage() {
 
           {!activeTab && <TabSwitcher activeTab={null} onTabChange={handleTabChange} />}
           {activeTab && (
-            <button className="rounded-xl border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200" onClick={() => { setActiveTab(null); setLockedFeature(null); }}>Back to Holy Names</button>
+            <button className="rounded-xl border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200" onClick={() => { setActiveTab(null); }}>Back to Holy Names</button>
           )}
 
           {activeTab && (lockedFeature ? (
@@ -622,8 +629,8 @@ export default function MagicalHolyNamesPage() {
               pagePath={PAGE_PATH}
               featureId={lockedFeature.id}
               featureLabel={lockedFeature.label}
-              onBack={() => { setLockedFeature(null); setActiveTab(null); }}
-              onUnlocked={() => { setLockedFeature(null); window.location.reload(); }}
+              onBack={() => { setActiveTab(null); }}
+              onUnlocked={() => { window.location.reload(); }}
             />
           ) : (
             <AnimatePresence mode="wait">

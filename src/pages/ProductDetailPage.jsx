@@ -1,5 +1,6 @@
+import { useNavigation } from "@/context/NavigationContext";
 import { useState, useEffect, useMemo, useRef } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowLeft, ShoppingBag, Star, ExternalLink, Play, MessageSquare, Heart,
@@ -48,7 +49,7 @@ const TRUST_BADGES = [
 
 export default function ProductDetailPage() {
   const { productId } = useParams();
-  const navigate = useNavigate();
+  const { goBack } = useNavigation();
   const { toast } = useToast();
 
   const [product, setProduct] = useState(null);
@@ -292,7 +293,7 @@ export default function ProductDetailPage() {
             <ShoppingBag className="w-8 h-8" style={{ color: G.dim }} />
           </div>
           <p className="font-inter text-sm" style={{ color: "rgba(255,255,255,0.50)" }}>Product not found</p>
-          <button onClick={() => navigate("/shop")} className="font-inter text-xs underline" style={{ color: G.text }}>
+          <button onClick={goBack} className="font-inter text-xs underline" style={{ color: G.text }}>
             ← Back to Shop
           </button>
         </div>
@@ -325,7 +326,7 @@ export default function ProductDetailPage() {
       {/* Top action bar */}
       <div className="px-4 pt-3 pb-1 flex items-center justify-between">
         <button
-          onClick={() => navigate("/shop")}
+          onClick={goBack}
           className="flex items-center gap-1.5 font-inter text-xs font-semibold"
           style={{ color: G.dim }}
         >

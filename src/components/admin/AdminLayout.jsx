@@ -1,6 +1,7 @@
+import { useNavigation } from "@/context/NavigationContext";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Shield, LayoutDashboard, Users, Globe, MessageSquare, FileText, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, BarChart3, SlidersHorizontal, ShoppingBag, Store, ScrollText, Tags, LogOut, BookMarked, Library, ListChecks, Search, FilePlus2, BookOpen, LockKeyhole, KeyRound, Link2 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 import { filterAdminSections } from "@/lib/rbac";
@@ -224,7 +225,7 @@ function SidebarContent({ location, onNavigate }) {
 
 export default function AdminLayout({ children, title, subtitle, showBackButton = false, backPath = null }) {
   const location = useLocation();
-  const navigate = useNavigate();
+  const { goBack } = useNavigation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { role } = useAuth();
 
@@ -351,7 +352,7 @@ export default function AdminLayout({ children, title, subtitle, showBackButton 
           {/* Back button when showBackButton */}
           {showBackButton && (
             <button
-              onClick={() => backPath ? navigate(backPath) : navigate(-1)}
+              onClick={() => goBack(backPath)}
               style={{
                 display: "flex", alignItems: "center", gap: 5,
                 padding: "5px 12px", borderRadius: 7,

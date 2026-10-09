@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/toaster"
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClientInstance } from '@/lib/query-client'
-import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect, useState, lazy, Suspense, useMemo } from 'react';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
@@ -22,6 +22,7 @@ import { persistGet, isDevMode } from '@/lib/devModePersistence';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from '@/i18n/useTranslation';
 import { useNavigation } from './context/NavigationContext';
+import RouteScrollRestore from './components/RouteScrollRestore';
 
 const PAGE_IMPORTS = {
   Home:                     () => import('./pages/Home'),
@@ -141,18 +142,11 @@ const PageFallback = () => (
 
 function GlobalBackButton() {
   const location = useLocation();
-  const navigate = useNavigate();
   const { t, language } = useTranslation();
-  const { startNav } = useNavigation();
+  const { goBack } = useNavigation();
 
   if (location.pathname === '/') return null;
 
-  const goBack = () => {
-    startNav();
-    const historyIndex = window.history.state?.idx;
-    if (Number.isInteger(historyIndex) && historyIndex > 0) navigate(-1);
-    else navigate('/');
-  };
 
   const BackIcon = language === 'ar' ? ChevronRight : ChevronLeft;
 
@@ -190,9 +184,6 @@ const AuthenticatedApp = () => {
     if (isAuthenticated) setGooglePromptDismissed(true);
   }, [isAuthenticated]);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  }, [location.pathname]);
 
   if (isLoadingPublicSettings) {
     return (
@@ -204,6 +195,7 @@ const AuthenticatedApp = () => {
 
   return (
     <>
+      <RouteScrollRestore />
       {import.meta.env.VITE_GOOGLE_AUTH_ENABLED === 'true' && !isDevMode && !isAuthenticated && !googlePromptDismissed && (
         <GoogleSignInPrompt onSkip={() => setGooglePromptDismissed(true)} />
       )}

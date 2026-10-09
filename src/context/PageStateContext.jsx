@@ -10,22 +10,18 @@ const STORAGE_KEY = 'app_navigation_state_v2';
 const storage = isDevMode ? localStorage : sessionStorage;
 
 export function PageStateProvider({ children }) {
-  const [pageStates, setPageStates] = useState({});
-  const [navStack, setNavStack] = useState([]);
-
-  // Load from sessionStorage on mount
-  useEffect(() => {
+  // Read before rendering children so their initial filters do not reset.
+  const [initialState] = useState(() => {
     try {
       const saved = storage.getItem(STORAGE_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        setPageStates(parsed.pageStates || {});
-        setNavStack(parsed.navStack || []);
-      }
+      return saved ? JSON.parse(saved) : {};
     } catch (e) {
       console.warn('[PageState] Failed to load from sessionStorage:', e);
+      return {};
     }
-  }, []);
+  });
+  const [pageStates, setPageStates] = useState(initialState.pageStates || {});
+  const [navStack, setNavStack] = useState(initialState.navStack || []);
 
   // Save to sessionStorage on change
   useEffect(() => {

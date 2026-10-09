@@ -8,6 +8,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Badge } from "@/components/ui/badge";
 import { getHolyNameAbjad } from "@/lib/holyNameAbjad";
 import { usePageState } from "@/context/PageStateContext";
+import { useNavigation } from "@/context/NavigationContext";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSourceChapter from "@/components/holynameknowledge/HolyNameSourceChapter";
@@ -38,6 +39,7 @@ export default function HolyOneDetailPage() {
   const { nameId } = useParams();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
+  const { goBack } = useNavigation();
   const { toast } = useToast();
   const { getPageState, setPageState, pushNavState, popNavState } = usePageState();
   const [name, setName] = useState(null);
@@ -179,7 +181,7 @@ export default function HolyOneDetailPage() {
 
         {/* Back Button */}
         <button
-          onClick={() => navigate(-1)}
+          onClick={goBack}
           className="flex items-center gap-2 mb-6 px-3 py-2 rounded-xl"
           style={{
             color: G.text,
