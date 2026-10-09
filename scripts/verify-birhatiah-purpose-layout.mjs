@@ -67,6 +67,26 @@ for (const method of source2020.methods) {
   assert.equal(stripVowels(method.formula_arabic).replace(/\s+/g,''), method.source_form_arabic.replace(/\s+/g,''),
     'Do not change printed Arabic consonantal spelling while adding source-reviewed reading forms');
 }
+const oman = read('src/data/birhatiahOmanSquareP561.json');
+assert.equal(oman.scope, 'collective_28_names', 'Source square belongs only in collective Section C');
+assert.equal(oman.printed_page, 561);
+assert.equal(oman.pdf_page, 565);
+assert.equal(oman.numbers.length, 4);
+assert.equal(oman.printed_minor_positions.length, 4);
+assert.equal(new Set(oman.printed_minor_positions.flat()).size, 16);
+assert.deepEqual([...oman.printed_minor_positions.flat()].sort((a,b)=>a-b), Array.from({length:16},(_,i)=>i+1));
+const squareSum = values => values.reduce((a,b)=>a+b,0);
+const squareLines = [
+ ...oman.numbers.map(squareSum),
+ ...oman.numbers[0].map((_, column) => squareSum(oman.numbers.map(row=>row[column]))),
+ squareSum(oman.numbers.map((row,i)=>row[i])),
+ squareSum(oman.numbers.map((row,i)=>row[row.length-i-1]))
+];
+assert.deepEqual(squareLines, Array(10).fill(18587), 'Printed Oman source square must retain a full valid row/column/diagonal constant');
+const collectiveUI = fs.readFileSync(path.join(root,'src/components/holynameknowledge/BirhatiahCollectiveCard.jsx'),'utf8');
+assert.ok(collectiveUI.includes('<BirhatiahOmanSquare />'), 'Store genuine printed square in collective card 29');
+const omanComponent = fs.readFileSync(path.join(root,'src/components/holynameknowledge/BirhatiahOmanSquare.jsx'),'utf8');
+await transform(omanComponent, {loader:'jsx',sourcefile:'BirhatiahOmanSquare.jsx',target:'es2022'});
 const sourceChapter = fs.readFileSync(path.join(root,'src/components/holynameknowledge/HolyNameSourceChapter.jsx'),'utf8');
 assert.ok(sourceChapter.includes('data-reader-section="topics"'));
 assert.ok(sourceChapter.includes('additionalOutsideMethods.methods.filter(method => method.related_name_ids.includes(nameId))'));
