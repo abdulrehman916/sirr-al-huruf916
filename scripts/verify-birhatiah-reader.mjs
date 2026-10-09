@@ -44,6 +44,17 @@ for (const [id, guide] of Object.entries(guides)) {
     assert.ok(!primary.includes('ബന്ധപ്പെട്ട ദുആകളും അർഥവുമായി ബന്ധപ്പെട്ട വചനങ്ങളും'));
     assert.ok(!primary.includes('data-reader-section="duas"'));
     assert.ok(primary.includes('data-reader-section="name-details"'));
+    if (id === 'HNK-MHC-010') {
+      assert.ok(html.includes('data-source-note="oman-p87-88"'), 'C10: Oman collective Khutir reference absent');
+      assert.ok(!html.includes('data-source-note="oman-p83"'), 'C10: Qalnahud passage must not be assigned to Khutir');
+    }
+    if (id === 'HNK-MHC-011') {
+      assert.ok(html.includes('data-source-note="oman-p83"'), 'C11: Oman Qalnahud 195 passage absent');
+      assert.ok(!html.includes('data-source-note="oman-p87-88"'), 'C11: Khutir 11 passage must not be assigned to Qalnahud');
+    }
+    if (!['HNK-MHC-010', 'HNK-MHC-011'].includes(id)) {
+      assert.ok(!html.includes('data-testid="birhatiah-oman-name-references"'), `${id}: unrelated Oman name-specific claim`);
+    }
     assert.ok(primary.includes('data-testid="birhatiah-session-tools"'), `${id}: personal session tool missing`);
     assert.ok(primary.includes('data-timer-kind="personal-session"'), `${id}: personal and source times conflated`);
     const externalGloss = blogGlosses.entries.find(entry => entry.name_id === id);
