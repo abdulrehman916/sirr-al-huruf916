@@ -46,15 +46,24 @@ export default function SectionCNames() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [openId, setOpenId] = useState(null);
+  const [retryIndex, setRetryIndex] = useState(0);
+  const [loadFailed, setLoadFailed] = useState(false);
 
   useEffect(() => {
     let alive = true;
+    setLoading(true);
+    setLoadFailed(false);
     platform.entities.HolyNameEsotericKnowledge.list("order_index", 200)
-      .then((r) => { if (alive) setCards(r || []); })
-      .catch(() => { if (alive) setCards([]); })
+      .then((r) => { if (alive) setCards(Array.isArray(r) ? r : []); })
+      .catch(() => {
+        if (alive) {
+          setCards([]);
+          setLoadFailed(true);
+        }
+      })
       .finally(() => { if (alive) setLoading(false); });
     return () => { alive = false; };
-  }, []);
+  }, [retryIndex]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -87,14 +96,25 @@ export default function SectionCNames() {
           {language === "ml" ? "സെക്ഷൻ C കാർഡുകൾ ലഭ്യമല്ല" : "Section C cards are unavailable"}
         </p>
         <p className="font-malayalam text-sm" style={{ color: "rgba(255,255,255,0.45)" }}>
-          {language === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Please try again"}
+          {loadFailed
+            ? (language === "ml" ? "ഡാറ്റ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല. താഴെയുള്ള ബട്ടൺ അമർത്തി വീണ്ടും ശ്രമിക്കാം." : "Unable to load the records. Use the button below to try again.")
+            : (language === "ml" ? "നിലവിൽ പ്രസിദ്ധീകരിച്ച കാർഡ് രേഖകൾ കണ്ടെത്തിയില്ല." : "No published card records were returned.")}
         </p>
+        <button type="button" data-testid="section-c-retry" onClick={() => setRetryIndex(index => index + 1)}
+          className="rounded-xl border border-yellow-500/35 px-4 py-2 text-sm text-yellow-100">
+          {language === "ml" ? "വീണ്ടും ലോഡ് ചെയ്യുക" : "Retry loading"}
+        </button>
       </div>
     );
   }
 
   return (
     <div className="space-y-4 holy-name-reader" id="section-c-container">
+      {cards.length !== 28 && <p role="status" className="rounded-xl border border-yellow-500/30 p-3 text-sm text-yellow-100" data-testid="section-c-incomplete-count">
+        {language === "ml"
+          ? `ഇപ്പോൾ ${cards.length} കാർഡുകളുടെ ഡാറ്റ മാത്രമാണ് ലഭിച്ചത്. 28 ഇസ്മുകൾ മുഴുവനായി ലോഡ് ആയിട്ടില്ല; കാണാത്ത വിവരങ്ങൾ ഊഹിച്ചു ചേർക്കില്ല.`
+          : `Only ${cards.length} of 28 name records loaded. Missing records are not fabricated.`}
+      </p>}
       <div className="flex items-center gap-2 rounded-2xl border px-3 py-2.5" style={{ background: P.bg, borderColor: P.border }}>
         <Search className="w-4 h-4 flex-shrink-0" style={{ color: P.dim }} />
         <input
@@ -157,6 +177,9 @@ export default function SectionCNames() {
                   }}
                 >
                   <button
+                    type="button"
+                    aria-expanded={isOpen}
+                    aria-controls={`section-c-detail-${card.name_id}`}
                     onClick={() => setOpenId(isOpen ? null : card.id)}
                     className="w-full flex items-center justify-between px-4 py-3 text-left gap-3"
                     style={{ WebkitTapHighlightColor: "transparent" }}
@@ -199,7 +222,7 @@ export default function SectionCNames() {
                         transition={{ duration: 0.22, ease: "easeInOut" }}
                         style={{ overflow: "hidden" }}
                       >
-                        <div className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
+                        <div id={`section-c-detail-${card.name_id}`} className="px-4 pb-4 pt-1 space-y-3" style={{ borderTop: "1px solid " + P.faint }}>
                           <HolyNameEsotericResearchProfile nameId={card.name_id} sharedEntryKeys={shared.keys} />
                           <HolyNameVerifiedKnowledge arabicName={card.canonical_arabic_name || card.arabic_name} nameId={card.name_id} />
                         </div>
