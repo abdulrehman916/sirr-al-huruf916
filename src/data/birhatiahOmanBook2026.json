@@ -332,13 +332,14 @@
         "en": "Three or seven as alternative collective counts"
       },
       "meaning": {
-        "ml": "അച്ചടിച്ച പേജ് 468-ൽ സംയുക്ത ബൃഹത്തീയ്യയെ മൂന്ന് തവണ **അല്ലെങ്കിൽ** ഏഴ് തവണ എന്ന രണ്ട് ബദലുകളായി ഗ്രന്ഥം രേഖപ്പെടുത്തുന്നു. അവ കൂട്ടിച്ചേർത്ത് പത്ത് തവണ എന്ന പുതിയ സംഖ്യ ഉണ്ടാക്കുന്നില്ല. സമീപമുള്ള കൈയെഴുത്ത് രൂപങ്ങൾ ഈ ഗ്രന്ഥപേജിന്റെ മറ്റ് വിഭാഗങ്ങളുമായി ബന്ധപ്പെട്ടവയാണ്; അവയെ സ്ഥിരീകരിച്ച ബൃഹത്തീയ്യ ഔഫാഖ് എന്ന് തെറ്റായി കാണിക്കുന്നില്ല.",
-        "en": "Printed page 468 describes three OR seven readings of collective Birhatiah, not an additive ten-reading rule. Nearby handwritten forms belong to distinct page contexts and have not been authenticated as independent Birhatiah awfāq."
+        "ml": "അച്ചടിച്ച പേജ് 468-ൽ സംയുക്ത ബൃഹത്തീയ്യയെ മൂന്ന് തവണ അല്ലെങ്കിൽ ഏഴ് തവണ എന്ന രണ്ട് ബദലുകളായി രേഖപ്പെടുത്തുന്നു. അവ കൂട്ടിച്ചേർത്ത് പത്ത് തവണ എന്ന പുതിയ സംഖ്യ ഉണ്ടാക്കുന്നില്ല. ഈ പരാമർശത്തിന് തൊട്ടുതാഴെയുള്ള കൈയെഴുത്ത് ചിത്രം അതേ ഭാഗത്തേതാണ്; പേജിന്റെ മുകളിലെ രണ്ടു ചിത്രങ്ങൾ വേറിട്ട തലക്കെട്ടുകളുടേതാണ്. താഴെയുള്ള യഥാർത്ഥ ചിത്രം ഇനിയും വെബ്സൈറ്റിൽ പകർത്തിയിട്ടില്ല; അതിന്റെ അക്ഷരങ്ങളും രൂപവും ഊഹിച്ച് സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "Printed page 468 gives three OR seven readings of the collective Birhatiah invocation, not an additive ten-reading rule. The lower handwritten figure immediately follows the same account; the two figures above belong to separately headed entries. The authentic lower figure has not been reproduced on this website and is not recreated from guesses."
       },
       "review_note": {
-        "ml": "കൈയെഴുത്ത് ചിത്രങ്ങൾ മൂലപേജിൽ നേരിട്ട് പരിശോധിച്ചു; അവയുടെ ഡിജിറ്റൽ പകർപ്പുകൾ ഇനിയും വെബ്സൈറ്റിൽ ചേർത്തിട്ടില്ല.",
-        "en": "Handwritten source images were visually inspected; faithful figures have not yet been digitized into the website."
-      }
+        "ml": "പേജ് ചിത്രത്തിലെ ഭാഗങ്ങളുടെ അതിരുകൾ വീണ്ടും പരിശോധിച്ചു. മുകളിലെ രണ്ട് താലിസ്മാൻ ചിത്രങ്ങളും താഴെയുള്ള ബൃഹത്തീയ്യ പരാമർശത്തിന്റെ ചിത്രവും വ്യത്യസ്തമായി തിരിച്ചറിഞ്ഞിട്ടുണ്ട്; ഫലവാദം തെളിയിച്ചതല്ല.",
+        "en": "Page layout visually checked: the two upper figures belong to other topics, while the lower handwritten figure accompanies the collective Birhatiah passage. Historical effectiveness is unverified."
+      },
+      "figure_context": "Lower handwritten figure accompanies the Birhatiah-referencing passage. Two upper diagrams belong to separate headings. Authentic lower figure pending on-site digitization."
     }
   ],
   "indexed_pending_visual_review": []
