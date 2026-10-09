@@ -32,3 +32,40 @@ Snapshot: 2026-10-09. Repository `abdulrehman916/sirr-al-huruf916` only. No Base
 No trustworthy completion date can be provided before a bounded manifest of the user's complete books and other source texts is made. There are potentially unlimited external sources; promises to find "all" internet documents or thousands of as-yet-unlocated methods would be ungrounded. Work through the known, accessible corpus in incremental reviewable batches and keep this file updated with the number of newly validated entries and unresolved pages after each batch. Priority is source fidelity and preserving the existing site, not fabricating fast completion.
 
 Keep all facts, pages and content scoped to the cited printed edition. The terms "recitation", "written copies", "Abjad value" and "square entries" must not be conflated.
+
+## Per-name source-chapter inventory (Supabase, 2026-10-09)
+
+This table is **only** an inventory of source-chapter excerpts already in the live database. It is not a completion score, does not include full manuscript scans or the other method/guide files, and gives no permission to fill zeros with imagined material.
+
+| Name ID | Source page | Practices | Edition accounts | Source notes | Full content review |
+|---|---:|---:|---:|---:|---|
+| HNK-MHC-001 | 67 | 3 | 3 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-002 | 68 | 3 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-003 | 68 | 2 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-004 | 68 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-005 | 68 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-006 | 69 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-007 | 69 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-008 | 69 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-009 | 70 | 0 | 2 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-010 | 70 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-011 | 70 | 0 | 2 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-012 | 70 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-013 | 71 | 0 | 2 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-014 | 71 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-015 | 71 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-016 | 71 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-017 | 72 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-018 | 72 | 0 | 2 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-019 | 72 | 1 | 1 | 1 | Pending exhaustive scan/variant pass |
+| HNK-MHC-020 | 72 | 0 | 1 | 2 | Pending exhaustive scan/variant pass |
+| HNK-MHC-021 | 72 | 0 | 1 | 2 | Pending exhaustive scan/variant pass |
+| HNK-MHC-022 | 73 | 1 | 2 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-023 | 73 | 1 | 2 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-024 | 73 | 1 | 4 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-025 | 73 | 0 | 3 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-026 | 73 | 1 | 3 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-027 | 73 | 1 | 5 | 0 | Pending exhaustive scan/variant pass |
+| HNK-MHC-028 | 74 | 1 | 2 | 0 | Pending exhaustive scan/variant pass |
+
+Priority: inspect every original Arabic page, then related edition passages and outside sources for each name, preserving all distinct complete prayers and any genuine source figure. Do not equate an empty structured field with absence of a practice in books.
