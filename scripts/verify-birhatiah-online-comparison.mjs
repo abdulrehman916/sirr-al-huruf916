@@ -31,4 +31,17 @@ const printedRows = data.collective.triangle.map(sum);
 assert.notEqual(printedRows[1], printedRows[0], 'Warn when forum grid is not mathematically consistent');
 const outer = data.collective.square.map(sum);
 assert.notEqual(outer[0], outer[1], 'Warn on 4x4 source discrepancy');
+const witnesses = data.related_online_witnesses || [];
+assert.equal(witnesses.length, 1);
+const earliest = witnesses[0];
+assert.equal(earliest.date_as_displayed, '2008-07-13');
+assert.equal(earliest.lists_name_count, 28);
+assert.equal(earliest.claims_total, 18587);
+assert.equal(earliest.repeats_triangle_value, data.collective.triangle[1][2]);
+assert.match(earliest.source_url, /^https:\/\//);
+assert.equal(earliest.kind, 'forum_post_not_independent_critical_edition');
+assert.ok(earliest.notes.ml && earliest.notes.en && /NOT proof/.test(earliest.notes.en));
+const collectiveComponent = readFileSync(new URL('../src/components/holynameknowledge/BirhatiahOnlineNumericalComparison.jsx',import.meta.url), 'utf8');
+assert.ok(collectiveComponent.includes('data-source-witness={witness.id}'));
+
 console.log('PASS: 28 name variants, source cards, Abjad-only labels and both uncorrected printed grids.');
