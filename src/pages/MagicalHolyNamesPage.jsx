@@ -524,6 +524,13 @@ function SectionB() {
   );
 }
 
+const TABS = [
+    { id: "section-a", arabic: "الأسماء أ", subtitle: "Ism A" },
+    { id: "section-b", arabic: "الأسماء ب", subtitle: "Ism B" },
+    { id: "section-c", arabic: "البرهتيّة", subtitle: "Ism C" },
+    { id: "section-d", arabic: "القسم د", subtitle: "Ism D" },
+  ];
+
 // ── TAB SWITCHER ─────────────────────────────────────────────────
 function TabSwitcher({ activeTab, onTabChange }) {
   const P = {
@@ -536,12 +543,7 @@ function TabSwitcher({ activeTab, onTabChange }) {
     bgHi: "rgba(212,175,55,0.14)",
   };
 
-  const TABS = [
-    { id: "section-a", arabic: "الأسماء أ", subtitle: "Ism A" },
-    { id: "section-b", arabic: "الأسماء ب", subtitle: "Ism B" },
-    { id: "section-c", arabic: "البرهتيّة", subtitle: "Ism C" },
-    { id: "section-d", arabic: "القسم د", subtitle: "Ism D" },
-  ];
+
 
   return (
     <div className="grid grid-cols-2 gap-4 mb-4" aria-label="Choose Holy Names section">

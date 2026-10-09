@@ -25,9 +25,15 @@ export const BIRHATIAH_FIELD_LABELS = {
 // must remain separate, while exact repeated imports should show only once.
 export function sectionCEntryKey(field, entry) {
   if (!entry || typeof entry !== 'object') return null;
-  const text = String(entry.text ?? entry.arabic_text ?? entry.verbatim_text ?? '').trim();
-  if (!text) return null;
-  return JSON.stringify([field, text, String(entry.source_reference ?? ''), String(entry.source_page ?? '')]);
+  const fields = ['text', 'arabic_text', 'arabic', 'verbatim_text', 'arabic_original',
+    'malayalam_translation', 'english_translation', 'text_ml', 'text_en',
+    'meaning_ml', 'meaning_en', 'translation', 'source_reference', 'source_page',
+    'source_book', 'citation', 'name_id', 'related_name_id', 'image_path'];
+  const contentFields = fields.slice(0, 12).concat('image_path');
+  if (!contentFields.some(key => entry[key] != null && String(entry[key]).trim())) return null;
+  // Keep translated-only rows and distinct source readings. Import IDs are
+  // deliberately excluded, but content, provenance and explicit scope remain.
+  return JSON.stringify([field, fields.map(key => entry[key] ?? null)]);
 }
 
 export function sectionCEntriesForCard(entries, field, sharedKeys = new Set()) {
@@ -69,4 +75,19 @@ export function collectSectionCShared(cards) {
     (byField[field] ||= []).push(entry);
   }
   return { byField, keys };
+}
+
+// Display the actual imported wording, including mixed-language annotations.
+// A missing translation must never make an original source entry disappear.
+export function sectionCOriginal(entry) {
+  return ['arabic_text', 'arabic_original', 'arabic', 'verbatim_text', 'text']
+    .map(key => entry?.[key]).find(value => typeof value === 'string' && value.trim()) || '';
+}
+
+export function sectionCTranslation(entry, language) {
+  const candidates = language === 'ml'
+    ? [entry?.malayalam_translation, entry?.text_ml, entry?.meaning_ml, entry?.translation?.ml]
+    : [entry?.english_translation, entry?.text_en, entry?.meaning_en, entry?.translation?.en];
+  if (entry?.language === language) candidates.push(entry.text);
+  return candidates.find(value => typeof value === 'string' && value.trim()) || '';
 }

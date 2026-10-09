@@ -1,13 +1,5 @@
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
-import { BIRHATIAH_FIELD_LABELS } from '@/lib/birhatiahSharedContent';
-
-const hasArabic = value => /[\u0600-\u06FF]/.test(String(value || ''));
-const translationFor = (entry, language) => {
-  const candidates = language === 'ml'
-    ? [entry.malayalam_translation, entry.text_ml, entry.meaning_ml]
-    : [entry.english_translation, entry.text_en, entry.meaning_en];
-  return candidates.find(value => typeof value === 'string' && value.trim()) || '';
-};
+import { BIRHATIAH_FIELD_LABELS, sectionCOriginal, sectionCTranslation } from '@/lib/birhatiahSharedContent';
 
 // Only the truly identical, unscoped records present in all 28 name cards
 // appear here once, instead of being mislabelled as 28 distinct practices.
@@ -30,10 +22,10 @@ export default function BirhatiahSharedImportedMaterial({ byField = {} }) {
       </h3>
       <div className="space-y-4 pt-3">
         {entries.map((entry, index) => {
-          const original = String(entry.arabic_text || (hasArabic(entry.text) ? entry.text : '') || '');
-          const translation = translationFor(entry, language);
+          const original = sectionCOriginal(entry);
+          const translation = sectionCTranslation(entry, language);
           return <article key={index} className="space-y-2 border-t border-white/10 pt-3">
-            {original && <p className="font-amiri text-2xl leading-[2.2] text-right whitespace-pre-wrap text-white/95" dir="rtl" lang="ar">{original}</p>}
+            {original && <p className="font-amiri text-2xl leading-[2.2] text-right whitespace-pre-wrap text-white/95" dir="auto">{original}</p>}
             <p className={`text-sm leading-loose text-white/85 ${ml ? 'font-malayalam' : 'font-inter'}`}>
               {translation || (ml ? 'ഈ മൂലവാക്യത്തിന്റെ മലയാള അർത്ഥം ഇനിയും ഉറപ്പിച്ച് ചേർത്തിട്ടില്ല.' : 'The source statement has not yet been translated into English.')}
             </p>

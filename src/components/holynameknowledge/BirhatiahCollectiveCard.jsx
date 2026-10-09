@@ -10,8 +10,13 @@ import BirhatiahSharedImportedMaterial from "./BirhatiahSharedImportedMaterial";
 
 // The collective text has its own card; never attach it as an individual
 // name's prayer or silently substitute the current card list for a manuscript.
-export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
-  const [open, setOpen] = useState(false);
+export default function BirhatiahCollectiveCard({ cards, sharedByField = {}, open: controlledOpen, onOpenChange }) {
+  const [localOpen, setLocalOpen] = useState(false);
+  const open = controlledOpen ?? localOpen;
+  const toggleOpen = () => {
+    if (onOpenChange) onOpenChange(!open);
+    else setLocalOpen(!open);
+  };
   const { language } = useHolyNamesLanguage();
   const ml = language === "ml";
   const cls = ml ? "font-malayalam" : "font-inter";
@@ -19,12 +24,12 @@ export default function BirhatiahCollectiveCard({ cards, sharedByField = {} }) {
   const completeList = ordered.length === 28 && new Set(ordered.map(c => c.name_id)).size === 28;
   const source = externalSources.find(s => s.id === "mundhiri-collective-241-242" && s.review_status === "checked_against_digital_text");
   return <section className="rounded-2xl border border-yellow-500/40 bg-yellow-500/5 overflow-hidden" data-testid="birhatiah-collective-card" data-order-index="29" id="birhatiah-mantra-029">
-    <button type="button" onClick={() => setOpen(value => !value)} aria-expanded={open} className="w-full p-4 flex items-center justify-between gap-3 text-left">
+    <button type="button" onClick={toggleOpen} aria-expanded={open} aria-controls="birhatiah-collective-detail" className="w-full p-4 flex items-center justify-between gap-3 text-left">
       <span className="font-inter text-sm text-yellow-200">029</span>
       <span className="flex-1 space-y-1"><span className="block font-amiri text-2xl text-yellow-200" lang="ar" dir="rtl">الدعوة البرهتية</span><span className={`block ${cls} text-base text-white`}>{ml ? "ബർഹത്തിയ മന്ത്രം / സംയുക്ത ദുആ" : "Birhatiah invocation / collective prayer"}</span></span>
       <ChevronDown className={`w-5 h-5 text-yellow-200 transition-transform ${open ? "rotate-180" : ""}`} />
     </button>
-    {open && <div className="border-t border-yellow-500/20 p-4 space-y-5">
+    {open && <div id="birhatiah-collective-detail" className="border-t border-yellow-500/20 p-4 space-y-5">
       <BirhatiahCollectiveVersion />
       <BirhatiahOmanSquare />
       <BirhatiahOmanBookNotes />

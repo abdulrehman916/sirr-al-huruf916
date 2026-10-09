@@ -9,7 +9,7 @@ import { calculateAbjad, getAbjadBreakdown } from "@/lib/abjadValues";
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import HolyNameSourceChapter from "./HolyNameSourceChapter";
-import { sectionCEntriesForCard } from "@/lib/birhatiahSharedContent";
+import { sectionCEntriesForCard, sectionCOriginal, sectionCTranslation } from "@/lib/birhatiahSharedContent";
 
 // ── Section C Card Detail ──
 // Renders ONE Birhatīya name card with:
@@ -112,25 +112,22 @@ function Block({ title, titleML, icon: Icon, children, accent, defaultOpen = tru
 function AdvancedBlock({ label, ml, entries, nameId }) {
   const list = Array.isArray(entries) ? entries : [];
   const { language } = useHolyNamesLanguage();
-  const pureArabic = (t) => /[\u0600-\u06FF]/.test(String(t || "")) && !/[A-Za-zçğıöşüÇĞİÖŞÜ]/.test(String(t || ""));
   return (
     <div className="rounded-lg px-3 py-2.5" style={{ background: "rgba(8,16,38,0.4)", border: `1px solid ${P.faint}` }}>
       <div className="flex items-baseline justify-between gap-2">
-        <span className="font-malayalam text-[12px] font-semibold leading-tight" style={{ color: "rgba(245,208,96,0.62)" }}>{ml}</span>
+        <span className="font-malayalam text-[12px] font-semibold leading-tight" style={{ color: "rgba(245,208,96,0.62)" }}>{language === "ml" ? ml : label}</span>
       </div>
       {list.length === 0 ? (
-        <p className="font-malayalam text-[11px] mt-1 leading-relaxed" style={{ color: "rgba(148,163,184,0.55)" }}>{AWAITING}</p>
+        <p className="font-malayalam text-[11px] mt-1 leading-relaxed" style={{ color: "rgba(148,163,184,0.55)" }}>{language === "ml" ? AWAITING : "This information is not available in the uploaded sources."}</p>
       ) : (
         <div className="mt-2 space-y-2">
-          {list.some(e => !e.name_id && !e.related_name_id) && <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{UNSCOPED_MARKER}</p>}
+          {list.some(e => !e.name_id && !e.related_name_id) && <p className="font-malayalam text-[10px] italic leading-relaxed" style={{ color: "rgba(212,175,55,0.62)" }}>{language === "ml" ? UNSCOPED_MARKER : "These imported entries have no explicit individual-name attribution. Do not treat them as instructions exclusive to this name."}</p>}
           {list.map((e, i) => {
-            const arabicText = [e.arabic_text, e.arabic, e.text].find(pureArabic) || "";
-            const translated = language === "ml"
-              ? (e.malayalam_translation || e.text_ml || e.meaning_ml || "")
-              : (e.english_translation || e.text_en || e.meaning_en || (e.language === "en" ? e.text : ""));
+            const original = sectionCOriginal(e);
+            const translated = sectionCTranslation(e, language);
             return (
               <div key={i} className="rounded-md px-2 py-1.5 space-y-1" style={{ background: "rgba(8,16,38,0.55)", border: `1px solid ${P.faint}` }}>
-                {arabicText && <p className="font-amiri text-base selectable leading-loose" style={{ color: "rgba(255,255,255,0.92)" }} dir="rtl">{arabicText}</p>}
+                {original && <p data-testid="section-c-original-entry" className="font-amiri text-base selectable leading-loose whitespace-pre-wrap" style={{ color: "rgba(255,255,255,0.92)" }} dir="auto">{original}</p>}
                 {translated
                   ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[11px] selectable leading-relaxed`} style={{ color: "rgba(255,255,255,0.85)" }} dir="auto">{translated}</p>
                   : <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[10px] italic`} style={{ color: "rgba(255,255,255,0.38)" }}>{language === "ml" ? "മലയാള പരിഭാഷ ലഭ്യമല്ല" : "Translation unavailable"}</p>}
@@ -231,7 +228,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           <Field label="Total Abjad Value" labelML="മൊത്തം അബ്ജദ് മൂല്യം">{abjadValue}</Field>
           <Field label="Abjad Value Squared (not a magic square)" labelML="അബ്ജദ് മൂല്യത്തിന്റെ വർഗം (വെഫ്ക് അല്ല)">{abjadValue * abjadValue}</Field>
           <Field label="Letter Count" labelML="അക്ഷരസംഖ്യ">{letters.length || ""}</Field>
@@ -255,7 +252,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
 
         {/* Individual letter values */}
         <div className="space-y-1">
-          <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>ഓരോ അറബി അക്ഷരത്തിന്റെ എബ്ജദ് മൂല്യം</span>
+          <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>{language === "ml" ? "ഓരോ അറബി അക്ഷരത്തിന്റെ എബ്ജദ് മൂല്യം" : "Abjad value of each Arabic letter"}</span>
           {letters.length > 0 ? (
             <div className="flex flex-wrap gap-1.5 pt-1">
               {letters.map((l, i) => (
@@ -267,23 +264,23 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
               ))}
             </div>
           ) : (
-            <p className="font-inter text-xs italic" style={{ color: "rgba(255,255,255,0.30)" }}>{NOT_VERIFIED}</p>
+            <p className="font-inter text-xs italic" style={{ color: "rgba(255,255,255,0.30)" }}>{language === "ml" ? NOT_VERIFIED : "Not verified in the available source data"}</p>
           )}
         </div>
 
         {/* Full Abjad calculation */}
         <div className="space-y-1">
-          <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>പൂർണ്ണ എബ്ജദ് കണക്കുകൂട്ടൽ</span>
+          <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>{language === "ml" ? "പൂർണ്ണ എബ്ജദ് കണക്കുകൂട്ടൽ" : "Full Abjad calculation"}</span>
           {letters.length > 0 ? (
             <div className="flex items-start gap-2 rounded-lg p-2.5" style={{ background: "rgba(8,16,38,0.6)", border: `1px solid ${P.faint}` }}>
               <Calculator className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style={{ color: P.dim }} />
               <p className="font-amiri text-base leading-loose selectable flex-1" style={{ color: "rgba(255,255,255,0.88)" }} dir="rtl">{fullCalculation}</p>
             </div>
           ) : (
-            <p className="font-inter text-xs italic" style={{ color: "rgba(255,255,255,0.30)" }}>{NOT_VERIFIED}</p>
+            <p className="font-inter text-xs italic" style={{ color: "rgba(255,255,255,0.30)" }}>{language === "ml" ? NOT_VERIFIED : "Not verified in the available source data"}</p>
           )}
           {rec.abjad_verified === false && rec.total_abjad_value > 0 && (
-            <p className="font-malayalam text-[11px] italic" style={{ color: "#fbbf24" }}>⚠ കണക്കുകൂട്ടിയ തുക സ്രോതസ്സിലെ മൂല്യവുമായി പൊരുത്തപ്പെടുന്നില്ല — പരിശോധനയ്ക്കായി അടയാളപ്പെടുത്തി.</p>
+            <p className="font-malayalam text-[11px] italic" style={{ color: "#fbbf24" }}>{language === "ml" ? "⚠ കണക്കുകൂട്ടിയ തുക സ്രോതസ്സിലെ മൂല്യവുമായി പൊരുത്തപ്പെടുന്നില്ല — പരിശോധനയ്ക്കായി അടയാളപ്പെടുത്തി." : "⚠ The recorded Abjad value is flagged for review; compare it with the calculation and source."}</p>
           )}
         </div>
 
@@ -307,7 +304,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
                   <BookMarked className="w-3 h-3 flex-shrink-0 mt-0.5" style={{ color: P.dim }} />
                   <div className="flex-1 space-y-0.5">
                     <p className="font-inter text-[10px] selectable break-words" style={{ color: "rgba(255,255,255,0.72)" }}>{s.source_reference || (language === "ml" ? "സ്രോതസ്സ് വ്യക്തമാക്കിയിട്ടില്ല" : "Source not recorded")}</p>
-                    {s.source_page && <p className="font-malayalam text-[11px]" style={{ color: P.dim }}>പേജ് {s.source_page}</p>}
+                    {s.source_page && <p className="font-malayalam text-[11px]" style={{ color: P.dim }}>{language === "ml" ? "പേജ്" : "Page"} {s.source_page}</p>}
                   </div>
                 </div>
                 {s.arabic_text && <p className="font-amiri text-lg leading-loose selectable" style={{ color: "rgba(255,255,255,0.90)" }} dir="rtl">{s.arabic_text}</p>}
@@ -322,13 +319,13 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
             ))}
           </div>
         ) : (
-          <p className="font-malayalam text-sm italic" style={{ color: "rgba(255,255,255,0.40)" }}>ഇതുവരെ പണ്ഡിത സ്രോതസ്സ് വിവരങ്ങൾ ഇറക്കുമതി ചെയ്തിട്ടില്ല.</p>
+          <p className="font-malayalam text-sm italic" style={{ color: "rgba(255,255,255,0.40)" }}>{language === "ml" ? "ഇതുവരെ പണ്ഡിത സ്രോതസ്സ് വിവരങ്ങൾ ഇറക്കുമതി ചെയ്തിട്ടില്ല." : "No scholarly source entries have been imported yet."}</p>
         )}
 
         {/* Alternates (future merge) */}
         {hasAlts && (
           <div className="space-y-2 pt-2" style={{ borderTop: `1px solid ${P.faint}` }}>
-            <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>മാറ്റ് അഭിപ്രായങ്ങൾ (ബഹു-സ്രോതസ്സ് ലയനം)</span>
+            <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>{language === "ml" ? "മാറ്റ് അഭിപ്രായങ്ങൾ (ബഹു-സ്രോതസ്സ് ലയനം)" : "Alternative readings from different sources"}</span>
             {hasAltSpell && rec.alternate_spellings.map((a, i) => <p key={`s${i}`} className="font-amiri text-sm selectable" style={{ color: "rgba(255,255,255,0.80)" }} dir="rtl">{a.arabic} <span className="font-inter text-[9px]" style={{ color: P.dim }}>— {a.source_reference}</span></p>)}
             {hasAltPron && rec.alternate_pronunciations.map((a, i) => <p key={`p${i}`} className="font-inter text-xs selectable" style={{ color: "rgba(255,255,255,0.80)" }}>{a.pronunciation} <span style={{ color: P.dim }}>— {a.source_reference}</span></p>)}
             {hasAltMean && rec.alternate_meanings.map((a, i) => <p key={`m${i}`} className="font-inter text-xs selectable" style={{ color: "rgba(255,255,255,0.80)" }} dir="auto">"{a.meaning}" <span style={{ color: P.dim }}>— {a.source_reference}</span></p>)}
@@ -339,7 +336,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
         {/* Citations are useful to every reader; private notes remain owner-only. */}
         {Array.isArray(rec.sources) && rec.sources.length > 0 && (
           <div className="space-y-1 pt-2" style={{ borderTop: `1px solid ${P.faint}` }}>
-            <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>പരിശോധിച്ച സ്രോതസ്സുകൾ</span>
+            <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>{language === "ml" ? "പരിശോധിച്ച സ്രോതസ്സുകൾ" : "Recorded source references"}</span>
             {rec.sources.map((s, i) => <p key={i} className="font-inter text-[9px] selectable" style={{ color: "rgba(255,255,255,0.65)" }}>{s.reference} {s.page ? `(p. ${s.page})` : ""}</p>)}
           </div>
         )}

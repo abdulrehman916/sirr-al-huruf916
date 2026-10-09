@@ -7,6 +7,8 @@ import { calculateAbjad } from "@/lib/abjadValues";
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import BirhatiahCollectiveCard from "./BirhatiahCollectiveCard";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
+import { usePageState } from "@/context/PageStateContext";
+import { matchesSectionCSearch, sectionCMeaning } from "@/lib/sectionCReaderState";
 import { collectSectionCShared } from "@/lib/birhatiahSharedContent";
 
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
@@ -25,27 +27,19 @@ const P = {
   bgHi: "rgba(212,175,55,0.14)",
 };
 
-const MALAYALAM_RE = /[\u0D00-\u0D7F]/;
-const TURKISH_RE = /[çğıöşüÇĞİÖŞÜ]/;
-
-function getMalayalamMeaning(card) {
-  const candidates = [
-    card?.malayalam_meaning,
-    card?.meaning_ml,
-    card?.exact_meaning,
-  ];
-  return candidates.find((value) => {
-    const text = String(value || "").trim();
-    return text && MALAYALAM_RE.test(text) && !TURKISH_RE.test(text);
-  }) || "";
-}
-
 export default function SectionCNames() {
   const { language } = useHolyNamesLanguage();
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState("");
-  const [openId, setOpenId] = useState(null);
+  const { getPageState, setPageState } = usePageState();
+  const [initial] = useState(() => getPageState("holy-names-section-c", {}));
+  const [query, setQuery] = useState(initial.query || "");
+  const [openId, setOpenId] = useState(initial.openId || null);
+  const [collectiveOpen, setCollectiveOpen] = useState(Boolean(initial.collectiveOpen));
+
+  useEffect(() => {
+    setPageState("holy-names-section-c", { query, openId, collectiveOpen });
+  }, [query, openId, collectiveOpen, setPageState]);
   const [retryIndex, setRetryIndex] = useState(0);
   const [loadFailed, setLoadFailed] = useState(false);
 
@@ -68,21 +62,15 @@ export default function SectionCNames() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return cards;
-    return cards.filter((c) =>
-      (c.arabic_name || "").toLowerCase().includes(q) ||
-      (c.arabic_normalized || "").toLowerCase().includes(q) ||
-      (c.transliteration || "").toLowerCase().includes(q) ||
-      (c.exact_meaning || "").toLowerCase().includes(q) ||
-      (c.malayalam_meaning || "").toLowerCase().includes(q) ||
-      (c.name_id || "").toLowerCase().includes(q)
-    );
+    return cards.filter(card => matchesSectionCSearch(card, q));
   }, [cards, query]);
 
   const shared = useMemo(() => collectSectionCShared(cards), [cards]);
 
   if (loading) {
     return (
-      <div className="flex justify-center py-12">
+      <div className="flex justify-center items-center gap-2 py-12" role="status">
+        <span>{language === "ml" ? "കാർഡുകൾ ലോഡ് ചെയ്യുന്നു…" : "Loading name cards…"}</span>
         <Loader2 className="w-6 h-6 animate-spin" style={{ color: P.dim }} />
       </div>
     );
@@ -122,13 +110,14 @@ export default function SectionCNames() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={language === "ml" ? "ബർഹത്തിയ്യ നാമങ്ങൾ തിരയുക..." : "Search Birhatiah names..."}
-          className="flex-1 bg-transparent outline-none font-inter text-sm"
+          aria-label={language === "ml" ? "ബർഹത്തിയ്യ നാമങ്ങൾ തിരയുക" : "Search Birhatiah names"}
+          className="flex-1 min-w-0 bg-transparent outline-none font-inter text-base"
           style={{ color: "rgba(255,255,255,0.85)" }}
           dir="auto"
           autoComplete="off"
         />
         {query && (
-          <button onClick={() => setQuery("")} style={{ color: P.dim }}>
+          <button type="button" aria-label={language === "ml" ? "തിരച്ചിൽ മായ്ക്കുക" : "Clear search"} onClick={() => setQuery("")} style={{ color: P.dim }}>
             <X className="w-4 h-4" />
           </button>
         )}
@@ -139,7 +128,8 @@ export default function SectionCNames() {
           {language === "ml" ? `${filtered.length} / ${cards.length} ഇസ്മുകൾ · 29-ാം കാർഡ്: ബർഹത്തിയ മന്ത്രം` : `${filtered.length} / ${cards.length} names · Card 29: Birhatiah invocation`}
         </p>
         <button
-          onClick={() => { setQuery(""); setOpenId(null); }}
+          type="button"
+          onClick={() => { setQuery(""); setOpenId(null); setCollectiveOpen(false); }}
           className="px-3 py-1.5 rounded-xl border font-malayalam text-[12px] font-semibold"
           style={{ background: P.bg, borderColor: P.border, color: P.dim }}
         >
@@ -158,8 +148,8 @@ export default function SectionCNames() {
             filtered.map((card, i) => {
               const isOpen = openId === card.id;
               const abjadValue = calculateAbjad(card.canonical_arabic_name || card.arabic_name || "");
-              const malayalamMeaning = getMalayalamMeaning(card);
-              const englishMeaning = [card?.english_meaning, card?.meaning_en].find((value) => value && /[A-Za-z]/.test(value) && !/[\u0D00-\u0D7F\u0600-\u06FF]/.test(value)) || "";
+              const malayalamMeaning = sectionCMeaning(card, "ml");
+              const englishMeaning = sectionCMeaning(card, "en");
               const displayedMeaning = language === "ml" ? malayalamMeaning : englishMeaning;
               return (
                 <motion.div
@@ -235,7 +225,7 @@ export default function SectionCNames() {
           )}
         </AnimatePresence>
       </div>
-      <BirhatiahCollectiveCard cards={cards} sharedByField={shared.byField} />
+      <BirhatiahCollectiveCard cards={cards} sharedByField={shared.byField} open={collectiveOpen} onOpenChange={setCollectiveOpen} />
     </div>
   );
 }
