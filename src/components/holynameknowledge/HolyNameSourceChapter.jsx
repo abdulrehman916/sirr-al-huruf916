@@ -10,6 +10,8 @@ import collectiveText from '@/data/birhatiahCollectiveVersion.json';
 import BirhatiahConciseReferences from './BirhatiahConciseReferences';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import { BirhatiahOnlineNameComparison } from './BirhatiahOnlineNumericalComparison';
+import BirhatiahSessionTools from './BirhatiahSessionTools';
+import { sourceCountLabel } from '@/lib/birhatiahSessionUtils';
 
 const letters = value => String(value || '').replace(/[\u064B-\u065F\u0670\u0640\s،؛؟,.]/g, '');
 const safeReading = (reading, original) => reading && letters(reading) === letters(original) ? reading : original;
@@ -37,6 +39,7 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
   const sourcePage = linked?.printed_page || (linked ? chapter.printed_page : null);
   const sourceTime = linked?.timing?.[language] || method.timing?.[language] || '';
   const sourceCount = linked?.count ?? method.count;
+  const sourceCountKind = linked?.count_kind || method.count_kind || null;
   return <details id={method.method_id} className="rounded-xl border border-yellow-500/25 bg-yellow-500/[0.035] scroll-mt-24 overflow-hidden" data-reader-section="method" data-source-entry={method.source_entry} open={index === 1 ? true : undefined}>
     <summary className="cursor-pointer px-4 py-3 space-y-1 hover:bg-yellow-500/5">
       <span className="block text-lg font-semibold text-yellow-200">{index}. {t(method.title)}</span>
@@ -60,9 +63,10 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
     {method.spoken_request && <div className="space-y-3"><h4 className="text-yellow-100">{ml ? 'പറയേണ്ട അഭ്യർഥനയും അർഥവും' : 'Spoken request and meaning'}</h4><Arabic>{safeReading(method.spoken_request.arabic_reading, method.spoken_request.arabic)}</Arabic><p className="text-white/90 leading-loose">{t(method.spoken_request.translation)}</p>{method.spoken_request.arabic_reading && <details className="text-xs text-white/55"><summary className="cursor-pointer">{ml ? 'ഹറകത്ത് ചേർക്കാത്ത മൂലവാക്യം' : 'Original wording without editorial vowels'}</summary><Arabic>{method.spoken_request.arabic}</Arabic></details>}{method.spoken_request.source_url && <details className="text-xs text-white/55"><summary className="cursor-pointer">{ml ? 'റഫറൻസ്' : 'Reference'}</summary><a href={method.spoken_request.source_url} target="_blank" rel="noreferrer" className="underline">{ml ? 'പരമ്പരാഗത രീതിയുടെ വെബ് പരാമർശം' : 'Traditional web account'}</a></details>}</div>}
     {verses && <details className="rounded-xl border border-yellow-500/20 p-3 space-y-4"><summary className="cursor-pointer text-yellow-200">{t(verses.title)}</summary><Arabic>{verses.opening_arabic}</Arabic>{verses.verses.map(verse => <section key={verse.reference} className="space-y-2"><Arabic>{verse.arabic}</Arabic><p className="text-white/85 leading-loose">{t(verse.translation)}</p><p className="text-xs text-yellow-100/60">{verse.reference}</p></section>)}<a href={verses.source_url} target="_blank" rel="noreferrer" className="text-xs underline text-white/55">Quran.com</a></details>}
     {(sourceCount != null || sourceTime) && <div className="flex flex-wrap gap-2 text-sm">
-      {sourceCount != null && <span className="rounded-lg border border-yellow-500/25 px-3 py-2 text-yellow-100">{ml ? 'ഗ്രന്ഥത്തിൽ പറഞ്ഞ എണ്ണം' : 'Count in the source'}: {sourceCount}</span>}
+      {sourceCount != null && <span className="rounded-lg border border-yellow-500/25 px-3 py-2 text-yellow-100">{sourceCountLabel(sourceCountKind, language)}: {sourceCount}</span>}
       {sourceTime && <span className="rounded-lg border border-yellow-500/25 px-3 py-2 text-yellow-100">{ml ? 'സമയം' : 'Time'}: {sourceTime}</span>}
     </div>}
+    <BirhatiahSessionTools sourceCount={sourceCount} sourceCountKind={sourceCountKind} />
     <h4 className="text-yellow-100">{ml ? 'രീതി — ക്രമമായി' : 'Method — in order'}</h4>
     <ol className="list-decimal pl-6 space-y-3 text-white/90 leading-loose">{method.steps[language].map((step, index) => <li key={index}>{step}</li>)}</ol>
     {method.figure?.image_path?.startsWith('/figures/') && <figure className="space-y-2"><a href={method.figure.image_path} target="_blank" rel="noreferrer"><img src={method.figure.image_path} alt={t(method.figure.caption)} loading="lazy" className="max-w-full w-96 rounded-lg mx-auto" /></a><figcaption className="text-sm text-white/70 leading-loose">{t(method.figure.caption)}</figcaption></figure>}
