@@ -60,6 +60,7 @@ const sourceFiles = [
   'src/components/holynameknowledge/BirhatiahCollectiveVersion.jsx',
   'src/components/holynameknowledge/BirhatiahFullSourceChapter.jsx',
   'src/components/holynameknowledge/SectionCNames.jsx',
+  'src/components/holynameknowledge/HolyNameEsotericResearchProfile.jsx',
 ];
 for (const p of sourceFiles) await transform(file(p), { loader:'jsx', sourcefile:p, target:'es2022' });
 const invocationUI = file(sourceFiles[0]);
@@ -67,6 +68,7 @@ const sharedUI = file(sourceFiles[1]);
 const extendedUI = file(sourceFiles[2]);
 const collectiveUI = file(sourceFiles[3]);
 const nameUI = file(sourceFiles[5]);
+const cardUI = file(sourceFiles[6]);
 assert.ok(invocationUI.includes('data-source-image="inline-edition"'));
 assert.ok(invocationUI.includes('data-reader-section="optional-source-links"'));
 assert.ok(!invocationUI.includes('source.pages.find(page => page.pdf_page === entry.pdf_page).image_path'), 'Clickable page-only references still remain');
@@ -79,4 +81,7 @@ assert.ok(nameUI.includes('onClick={() => setRetryIndex(index => index + 1)}'), 
 assert.ok(nameUI.includes('[retryIndex]'), 'Retry state does not trigger an effect');
 assert.ok(nameUI.includes('data-testid="section-c-incomplete-count"'), 'Partial 28-name results need a warning');
 assert.ok(nameUI.includes('aria-expanded={isOpen}') && nameUI.includes('aria-controls={`section-c-detail-${card.name_id}`}'));
+assert.ok(cardUI.includes('data-testid="section-c-card-retry"'), 'Card-level retry is required');
+assert.ok(cardUI.includes('[nameId, retryIndex]'), 'Card retry must refresh the selected record');
+assert.ok(cardUI.includes('setLoadError(true)'), 'Network errors should not be labelled unsourced data');
 console.log(`PASS: ${localImages.length} verified on-site source images, 24 chapter pages across 28 names, 55 shared accounts, 3 Arabic invocation pages, inline figures, retry action, and JSX.`);
