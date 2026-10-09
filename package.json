@@ -18,7 +18,7 @@
     "verify:calculation-regression": "node scripts/verify-calculation-regression.mjs",
     "verify:calculation-source": "node scripts/verify-calculation-source.mjs",
     "verify:async-calculation": "node scripts/verify-async-calculation.mjs",
-    "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs",
+    "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs && node scripts/verify-birhatiah-oman-notes.mjs",
     "verify:section-c-reader": "node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs"
   },
   "dependencies": {
