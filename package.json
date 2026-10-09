@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm run verify:calculations && npm run verify:section-c-source && npm run verify:section-c-reader",
+    "prebuild": "npm run verify:calculations && npm run verify:section-c-source && npm run verify:section-c-reader && npm run verify:section-b-figures",
     "build": "vite build",
     "verify:calculations": "node scripts/verify-calculation-core.mjs && node scripts/verify-holy-name-abjad.mjs",
     "lint": "eslint . --quiet",
@@ -19,7 +19,8 @@
     "verify:calculation-source": "node scripts/verify-calculation-source.mjs",
     "verify:async-calculation": "node scripts/verify-async-calculation.mjs",
     "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs && node scripts/verify-birhatiah-oman-notes.mjs",
-    "verify:section-c-reader": "node scripts/verify-section-c-reader-state.mjs && node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs && node scripts/verify-section-c-legacy-coverage.mjs"
+    "verify:section-c-reader": "node scripts/verify-section-c-reader-state.mjs && node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs && node scripts/verify-section-c-legacy-coverage.mjs",
+    "verify:section-b-figures": "node scripts/verify-section-b-figures.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",

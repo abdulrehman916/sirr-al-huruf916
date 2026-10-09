@@ -20,7 +20,7 @@ const G = {
 
 const SECTIONS = [
   { key: "scholarly_entries", icon: BookOpen,   label_ml: "പണ്ഡിത വിവരങ്ങൾ",          label_en: "Scholarly Entries" },
-  { key: "mujarrabat",        icon: Sparkles,   label_ml: "മുജർറബത് (പരീക്ഷിതം)",     label_en: "Mujarrabāt (Tested)" },
+  { key: "mujarrabat",        icon: Sparkles,   label_ml: "മുജർറബാത്ത് (ഗ്രന്ഥപരാമർശങ്ങൾ)",     label_en: "Mujarrabāt (Source Accounts)" },
   { key: "amal",             icon: ScrollText, label_ml: "അമൽ (ആചാരങ്ങൾ)",          label_en: "ʿAmal (Ritual Works)" },
   { key: "dua",              icon: Hand,        label_ml: "ദുആ (പ്രാർത്ഥനകൾ)",         label_en: "Duʿāʾ (Supplications)" },
   { key: "wazifa",           icon: ScrollText,  label_ml: "വസീഫ (വിർദ്/ഹിസ്ബ്)",       label_en: "Wazīfa / Wird / Ḥizb" },
@@ -83,12 +83,11 @@ function displayValue(value) {
 
 function EntryCard({ entry, language }) {
   const text = entry?.text || entry?.verbatim_text || "";
-  const arabic = entry?.arabic_text || "";
+  const arabic = entry?.arabic_text || entry?.arabic_original || (/^[^A-Za-z]*[\u0600-\u06ff]/.test(text) ? text : "");
   const malayalam = displayValue(entry?.malayalam_text) || displayValue(entry?.malayalam_translation) || displayValue(entry?.malayalam) || displayValue(entry?.exact_meaning);
   const english = displayValue(entry?.english_text) || displayValue(entry?.english_translation) || displayValue(entry?.english) || (/[A-Za-z]/.test(text) && !/[\u0600-\u06ff\u0d00-\u0d7f]/.test(text) ? text : "");
   const translation = language === "ml" ? malayalam : language === "en" ? english : "";
-  const isOwner = useIsOwner();
-  const sourceBook = entry?.source_book || entry?.source_reference || "";
+  const sourceBook = entry?.source_book || entry?.source_reference || entry?.book || "";
   const author = entry?.author || "";
   const page = entry?.page || entry?.source_page || "";
   // Source URLs are private — citation (book/author/page) only.
@@ -102,9 +101,13 @@ function EntryCard({ entry, language }) {
   const purpose = displayValue(entry?.purpose);
   const warnings = displayValue(entry?.warnings);
   const notes = entry?.notes || "";
+  const checked = ["checked_against_primary_text", "checked_against_scan"].includes(entry?.review_status);
+  const title = language === "ml" ? entry?.title_ml : entry?.title_en;
 
   return (
     <div className="rounded-lg border p-3" style={{ background: "rgba(255,255,255,0.02)", borderColor: "rgba(212,175,55,0.22)" }}>
+      {title && <h3 className="text-base text-gold font-semibold mb-2">{title}</h3>}
+      {checked && <p className="text-xs text-white/60 mb-2">{language === "ml" ? "മൂലസ്രോതസ്സുമായി ഒത്തുനോക്കിയ പാഠം" : "Text checked against the primary source"}</p>}
       {arabic && (
         <p className="font-amiri text-right text-lg leading-relaxed mb-2" style={{ color: G.text, direction: "rtl" }}>
           {arabic}
@@ -126,16 +129,19 @@ function EntryCard({ entry, language }) {
           {warnings && <p className="text-white/60"><span className="text-gold-dim">Warnings:</span> {warnings}</p>}
         </div>
       )}
-      {isOwner && (sourceBook || author || page || lang || conf || cat || notes) && (
+      {(sourceBook || author || page || lang || conf || cat || notes) && (
         <details className="text-xs text-white/50 border-t border-white/10 pt-2 mt-3">
-          <summary className="cursor-pointer">Source details</summary>
+          <summary className="cursor-pointer">{language === "ml" ? "മൂലസ്രോതസ്സ്" : "Source details"}</summary>
           <div className="space-y-1 pt-2">
             {sourceBook && <p>{sourceBook}{author ? ` — ${author}` : ""}</p>}
-            {page && <p>Page: {page}</p>}
+            {page && <p>{language === "ml" ? "പേജ് / പാഠനമ്പർ" : "Page / text number"}: {page}</p>}
             {lang && <p>Language: {lang}</p>}
             {conf && <p>Imported confidence: {conf}</p>}
+            {!checked && <p>{language === "ml" ? "പഴയ ഇറക്കുമതി വിവരം: പുസ്തകം, പേജ്, ഗുണങ്ങൾ എന്നിവയുടെ ആധികാരികത വീണ്ടും പരിശോധിക്കേണ്ടതാണ്. HIGH / verified എന്ന പഴയ അടയാളം മാത്രം മൂലസ്രോതസ്സിന്റെ തെളിവല്ല." : "Legacy import: book, page and claimed properties need source verification. An imported HIGH / verified label alone is not primary-source evidence."}</p>}
             {cat && <p>Category: {cat}</p>}
             {notes && <p className="whitespace-pre-wrap break-words">{notes}</p>}
+            {entry?.public_source_url?.startsWith("https://tanzil.net/#") && <a href={entry.public_source_url} target="_blank" rel="noopener noreferrer" className="block text-gold underline">Tanzil Project — Quran text</a>}
+            {entry?.source_notice && <p className="whitespace-pre-wrap text-[11px]">{entry.source_notice}</p>}
           </div>
         </details>
       )}
@@ -146,7 +152,7 @@ function EntryCard({ entry, language }) {
 function VariantCard({ entry, type }) {
   const value = entry?.arabic || entry?.meaning || entry?.pronunciation || entry?.text || "";
   const note = entry?.note || "";
-  const sourceBook = entry?.source_book || entry?.source_reference || "";
+  const sourceBook = entry?.source_book || entry?.source_reference || entry?.book || "";
   const page = entry?.source_page || "";
   if (!value) return null;
   return (

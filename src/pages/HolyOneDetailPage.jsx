@@ -10,6 +10,7 @@ import { getHolyNameAbjad } from "@/lib/holyNameAbjad";
 import { usePageState } from "@/context/PageStateContext";
 import { useNavigation } from "@/context/NavigationContext";
 import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImportedSections";
+import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVisuals";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSourceChapter from "@/components/holynameknowledge/HolyNameSourceChapter";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
@@ -407,7 +408,8 @@ export default function HolyOneDetailPage() {
             </div>
           ) : null}
 
-          {/* Attached Visuals — original source page images (magic squares, wafq, symbols, seals, diagrams) */}
+          {/* Original figures remain access-controlled; the API resolves temporary URLs. */}
+          {source === "B" && <HolyOneSourceVisuals visuals={name.attached_visuals} cardId={name.pdf_name_id} />}
 
           {/* Source Reference — provenance Owner-only; Surah kept as content */}
           <div className="text-center text-xs text-white/30 mt-6">
