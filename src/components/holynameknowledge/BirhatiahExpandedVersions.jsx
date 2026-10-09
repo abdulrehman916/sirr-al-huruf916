@@ -14,7 +14,7 @@ export default function BirhatiahExpandedVersions() {
       <section className="space-y-3">
         <h3 className="text-white/65 text-sm">{ml ? 'താരതമ്യത്തിനുള്ള അറബി പതിപ്പിന്റെ പാഠവും ഹറകത്തും' : 'Arabic-edition text and printed vowels for comparison'}</h3>
         {version.arabic_pages.map(number => <figure key={number} className="space-y-2">
-          <a href={`/figures/birhatiah-manba-p${number}.png`} target="_blank" rel="noreferrer"><img src={`/figures/birhatiah-manba-p${number}.png`} loading="lazy" alt={`Manba · ${number}`} className="w-full max-w-2xl mx-auto bg-white rounded-lg" /></a>
+          <img src={`/figures/birhatiah-manba-p${number}.png`} loading="lazy" alt={`Manba · ${number}`} className="block w-full max-w-2xl mx-auto bg-white rounded-lg" />
           <figcaption className="text-xs text-white/55">منبع أصول الحكمة · {number}</figcaption>
         </figure>)}
       </section>
