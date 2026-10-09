@@ -1,0 +1,94 @@
+{
+  "source_title_ar": "مجربات أهل عُمان الكبير",
+  "edition": "النسخة 2",
+  "checked_on": "2026-10-09",
+  "review_basis": "User Library PDF pages visually checked; no original scan published.",
+  "scope": "collective_section_c",
+  "notes": [
+    {
+      "id": "oman-p36",
+      "printed_page": 36,
+      "pdf_page": 40,
+      "arabic_excerpt": "تقرأ البرهتية مرة واحدة",
+      "counts": [
+        {
+          "value": 1,
+          "kind": "collective_recitation"
+        }
+      ],
+      "title": {
+        "ml": "സംയുക്ത ദുആ — ഒരു തവണ എന്ന പ്രത്യേക സൂചന",
+        "en": "Collective passage — a single reading"
+      },
+      "meaning": {
+        "ml": "ഈ പ്രത്യേക സംരക്ഷണപ്രാർത്ഥനയുടെ അവസാനത്തിൽ ബിർഹത്തിയ്യ ഒരു തവണ വായിക്കണമെന്ന് പുസ്തകം പറയുന്നു. മറ്റു പതിപ്പുകളുടെ എണ്ണം ഇതുകൊണ്ട് മാറ്റുന്നില്ല.",
+        "en": "At the end of this particular protective passage, the book states one reading of Birhatiah. This does not replace other editions' counts."
+      }
+    },
+    {
+      "id": "oman-p83",
+      "printed_page": 83,
+      "pdf_page": 87,
+      "arabic_excerpt": "باسم البرهتية كلها",
+      "counts": [
+        {
+          "value": 195,
+          "kind": "qalnahud_recitation",
+          "name_id": "HNK-MHC-011"
+        }
+      ],
+      "title": {
+        "ml": "കൽനഹൂദ് 195; മുഴുവൻ നാമങ്ങളെക്കുറിച്ചുള്ള വേറിട്ട സൂചന",
+        "en": "Qalnahud 195; separate all-names reference"
+      },
+      "meaning": {
+        "ml": "കൽനഹൂദ് എന്ന നാമം 195 തവണ വായിക്കുന്ന ഒരു ചരിത്രരേഖയും മുഴുവൻ ബിർഹത്തിയ്യ നാമങ്ങളുമായി ബന്ധപ്പെട്ട വേറൊരു പരാമർശവും ഈ പേജിലുണ്ട്. 195 എന്നത് മുഴുവൻ നാമങ്ങൾക്കും പൊതുവായ എണ്ണമല്ല.",
+        "en": "This page includes a historical account specifying 195 readings of Qalnahud and a separate mention of all the Birhatiah names. The 195 is not a count for the entire set."
+      }
+    },
+    {
+      "id": "oman-p87-88",
+      "printed_page": 87,
+      "pdf_page": 91,
+      "continuation_printed_page": 88,
+      "continuation_pdf_page": 92,
+      "arabic_excerpt": "تقرأ الدعوة البرهتية 21 مره",
+      "additional_excerpts": [
+        "تكرر (خوطير) 11 مره",
+        "العشر الآيات من سورة الصافات تقرأ 11 مره",
+        "وتكرر السابق في جلسة واحدة 3 مرات"
+      ],
+      "counts": [
+        {
+          "value": 21,
+          "kind": "collective_recitation"
+        },
+        {
+          "value": 11,
+          "kind": "khutir_name_recitation",
+          "name_id": "HNK-MHC-010"
+        },
+        {
+          "value": 11,
+          "kind": "quran_ten_verses_reading"
+        },
+        {
+          "value": 3,
+          "kind": "session_repetition"
+        }
+      ],
+      "title": {
+        "ml": "സംയുക്ത പാഠഭേദത്തിലെ 21 / 11 / 11 / 3 എണ്ണങ്ങൾ",
+        "en": "Collective variant's distinct 21 / 11 / 11 / 3 markers"
+      },
+      "meaning": {
+        "ml": "ഗ്രന്ഥം സംയുക്ത ദഅ്‌വത്തിന് 21 എന്നും ‘خوطير’ എന്ന നാമത്തിന് 11 എന്നും സൂറത്തുസ്സ്വാഫ്ഫാത്തിലെ പത്ത് ആയത്തുകൾക്ക് 11 എന്നും രേഖപ്പെടുത്തുന്നു. അടുത്ത പേജിൽ മുൻഭാഗം ഒരു ഇരിപ്പിൽ മൂന്ന് തവണ എന്ന സൂചനയുണ്ട്. ഇവ കൂട്ടിക്കലർത്തിയോ ഗുണിച്ചോ പുതിയ എണ്ണം ഉണ്ടാക്കിയിട്ടില്ല.",
+        "en": "The book prints 21 for the collective invocation, 11 for the name ‘خوطير’, and 11 for ten verses from Sūrat al-Ṣāffāt. The following page has a separate threefold-in-one-session marker. No combined total is inferred."
+      },
+      "review_note": {
+        "ml": "ദീർഘ അറബി പാഠത്തിന്റെ പൂർണ്ണ അക്ഷരപരിശോധന ബാക്കിയുണ്ട്. അപരിചിത നാമങ്ങൾക്ക് ഊഹിച്ച് ഹർക്കത്ത് നൽകിയിട്ടില്ല.",
+        "en": "Full letter-by-letter review of the long Arabic text remains pending; no invented vowels have been assigned to unfamiliar names."
+      }
+    }
+  ]
+}
