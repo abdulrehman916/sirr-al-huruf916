@@ -15,9 +15,9 @@ assert.deepEqual(session.counts.map(x=>[x.kind,x.value]),[['collective_recitatio
 assert.equal(data.notes.find(n=>n.id==='oman-p36').counts[0].value,1);
 assert.equal(data.notes.find(n=>n.id==='oman-p90').counts.length,0);
 assert.equal(new Set(data.notes.map(n=>n.id)).size,data.notes.length);
-assert.equal(data.notes.length, 8, 'All eight source passages have been visually checked');
+assert.equal(data.notes.length, 12, 'All twelve source passages have been visually checked');
 assert.equal(data.indexed_pending_visual_review.length, 0);
-assert.deepEqual(data.notes.filter(n => n.id.startsWith('oman-p')).map(n => n.pdf_page), [40,87,91,94,264,282,454,491]);
+assert.deepEqual(data.notes.filter(n => n.id.startsWith('oman-p')).map(n => n.pdf_page), [40,87,91,94,264,282,454,491,31,81,142,472]);
 assert.ok(data.notes.every(n => n.review_status === 'checked_against_pdf_page_image'));
 const fourNameGroup = data.notes.find(n => n.id === 'oman-p260');
 assert.deepEqual(fourNameGroup.related_name_ids, ['HNK-MHC-011','HNK-MHC-012','HNK-MHC-013','HNK-MHC-014']);
@@ -31,6 +31,11 @@ for (const id of ['oman-p450','oman-p487']) {
   assert.equal(note.figure_reproduced_in_site,false,'Do not imply a full figure is present when the source image is not deployed');
   assert.equal(note.counts.length,0);
 }
+assert.deepEqual(data.notes.find(n=>n.id==='oman-p77').related_name_ids, ['HNK-MHC-001','HNK-MHC-002','HNK-MHC-003','HNK-MHC-004']);
+assert.deepEqual(data.notes.find(n=>n.id==='oman-p138').counts.map(n=>[n.kind,n.value]), [['collective_recitation',7]]);
+assert.deepEqual(data.notes.find(n=>n.id==='oman-p468').counts.map(n=>[n.kind,n.value]), [['collective_recitation_option',3],['collective_recitation_option',7]]);
+assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_present_in_source, true);
+assert.equal(data.notes.find(n=>n.id==='oman-p468').figure_reproduced_in_site, false);
 assert.match(viewer, /data-source-figure-status=/);
 for(const note of data.notes){assert.ok(note.title.ml && note.title.en && note.meaning.ml && note.meaning.en);assert.ok(note.printed_page && note.pdf_page);}
 console.log('Oman notes: all 8 printed-source passages, correct grouped names and typed counts verified');

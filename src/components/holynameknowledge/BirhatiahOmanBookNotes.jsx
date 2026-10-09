@@ -9,6 +9,7 @@ const countLabels = {
   session_repetition: { ml: 'ഒരു ഇരിപ്പിലെ ആവർത്തനം', en: 'In-session repetitions' },
   fatiha_reading: { ml: 'സൂറത്തുൽ ഫാതിഹയുടെ വായന', en: 'Readings of al-Fatiha' },
   separate_names_reading: { ml: 'വേറിട്ട നാമകൂട്ടത്തിന്റെ വായന', en: 'Readings of a separate name formula' },
+  collective_recitation_option: { ml: 'ബദലായ സംയുക്ത പാരായണസംഖ്യ', en: 'Alternative collective recitation count' },
 };
 
 export default function BirhatiahOmanBookNotes() {
@@ -16,7 +17,7 @@ export default function BirhatiahOmanBookNotes() {
   const ml = language === 'ml';
   return <section className="rounded-xl border border-yellow-500/25 p-4" data-testid="birhatiah-oman-book-notes">
     <h3 className="text-yellow-200 font-semibold">
-      {ml ? 'ഒമാൻ ഗ്രന്ഥത്തിൽ മൂലപേജിനോട് പരിശോധിച്ച എട്ട് ചരിത്രപരാമർശങ്ങൾ' : 'Eight historical passages checked against Oman source page images'}
+      {ml ? 'ഒമാൻ ഗ്രന്ഥത്തിലെ മൂലചിത്രവുമായി പരിശോധിച്ച പന്ത്രണ്ട് പരാമർശങ്ങൾ' : 'Twelve Oman-book passages checked against source page images'}
     </h3>
     <div className="space-y-4 pt-4">
       {notes.notes.map(note => <article key={note.id} className="rounded-lg border border-white/15 p-3 space-y-3" data-source-note={note.id}>
