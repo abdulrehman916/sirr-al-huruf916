@@ -595,6 +595,69 @@ try {
     assert.ok(html.includes(frequent.source_url));
   }
   console.log('PASS: 90 distinct tafsir-deepened names, 23 new classical commentaries, five complete Quran verses and Sahih Bukhari 6389 supplication.');
+
+  // Sixth pass: preserve 105 distinct deeply researched cards and their
+  // original Arabic Quran/tafsir source evidence, in both reader languages.
+  const depthVI = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthVI.json','utf8'));
+  const sixthIds = Object.keys(depthVI.profiles);
+  assert.equal(sixthIds.length,15);
+  const sixPhaseIds = [...allFiveDeepIds,...sixthIds];
+  assert.equal(sixPhaseIds.length,105);
+  assert.equal(new Set(sixPhaseIds).size,105,'Phase VI must introduce fifteen unique cards without reusing old IDs.');
+  assert.ok(sixPhaseIds.every(id=>coveredIds.has(id)),'All deep studies need a valid canonical card ID.');
+  let sixthTafsir=0,sixthKathir=0,sixthTabari=0,sixthCompleteQuran=0;
+  for(const [id,p] of Object.entries(depthVI.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=1);
+    const recordIds = new Set();
+    for(const item of [...p.scholarly,...p.evidence]){
+      assert.ok(!recordIds.has(item.id),`Duplicate scholarly record on ${id}`);
+      recordIds.add(item.id);
+      assert.equal(item.review_status,'checked_against_digital_text');
+      assert.ok(item.arabic_original && item.arabic_original.length>=15,`Missing original Arabic ${id}/${item.id}`);
+      assert.ok(item.translation?.ml && item.translation?.en,'Every source requires meanings in both languages.');
+      assert.ok(item.source_scope?.ml && item.source_scope?.en,'Source scope and religious status must be explained.');
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(item.source_url));
+      assert.ok(!item.count&&!item.timing,'Do not manufacture recitation counts or times from classical tafsir.');
+    }
+    for(const item of p.scholarly){
+      sixthTafsir++;
+      if(item.source_url.includes('/katheer/'))sixthKathir++;
+      if(item.source_url.includes('/tabary/'))sixthTabari++;
+    }
+    for(const item of p.evidence){
+      sixthCompleteQuran++;
+      assert.equal(item.claim_kind,'complete_quran_verse_context');
+      assert.ok(item.arabic_original.length>300);
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const item of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(item.arabic_original)),`Missing original in reader ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(escape(item.translation[lang])),`Missing translation in reader ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(item.source_url),`Missing linked source in reader ${id}/${item.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({sixthTafsir,sixthKathir,sixthTabari,sixthCompleteQuran},
+    {sixthTafsir:22,sixthKathir:10,sixthTabari:12,sixthCompleteQuran:1});
+  const wahidVerse=depthVI.profiles['PDF-HN-064'].evidence[0];
+  assert.ok(wahidVerse.arabic_original.includes('الْوَاحِدُ الْقَهَّارُ'));
+  assert.ok(wahidVerse.arabic_original.startsWith('قُلْ مَن رَّبُّ'));
+  const muslimBedtime=prophetic.entries.find(x=>x.id==='hadith-muslim-2713a');
+  assert.ok(muslimBedtime?.source_reference.includes('2713a'));
+  for(const id of ['PDF-HN-073','PDF-HN-074','PDF-HN-075','PDF-HN-076']){
+    assert.ok(depthVI.profiles[id].scholarly.some(x=>x.source_url.includes('/tabary/sura57-aya3.html')));
+    assert.ok(muslimBedtime.name_ids.includes(id),'Each Quran 57:3 Name links to the existing source-verified bedtime dua.');
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes(escape(muslimBedtime.arabic_original)));
+    }
+  }
+  assert.ok(depthVI.profiles['PDF-HN-065'].scholarly.some(x=>x.translation.en.includes('weak chains')));
+  assert.ok(depthVI.profiles['PDF-HN-092'].scholarly.some(x=>x.source_url.includes('/tabary/sura24-aya35.html')));
+  console.log('PASS: 105 distinct scholarly-deepened Holy Names; 22 further sourced Arabic tafsir excerpts, one full Quran verse, four 57:3 hadith-linked names and weak-report caveat.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
