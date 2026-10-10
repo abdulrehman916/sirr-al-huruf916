@@ -95,7 +95,7 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 26);
+  assert.equal(prophetic.entries.length, 27);
   assert.ok(topical.topics.length >= 18);
   const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
@@ -490,6 +490,51 @@ try {
     assert.ok(html.includes(afterPrayer.source_url));
   }
   console.log('PASS: 60 distinct deep-studied headings (three phases), 22 more classical tafsir readings, five complete Quran passages, and authenticated after-prayer hadith.');
+  // Fourth original-language tafsir source phase, reaching 75 distinct deep-study cards.
+  const depthIV = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthIV.json','utf8'));
+  const depth4Ids = Object.keys(depthIV.profiles);
+  assert.equal(depth4Ids.length,15,'The fourth tafsir stage covers fifteen cards');
+  const allDeepIds = [...Object.keys(depth.profiles),...Object.keys(depthII.profiles),...Object.keys(depthIII.profiles),...depth4Ids];
+  assert.equal(new Set(allDeepIds).size,75,'Depth IV must not duplicate earlier studied cards');
+  assert.ok(allDeepIds.every(id=>coveredIds.has(id)));
+  let fourthTafsir=0,fourthKathir=0,fourthTabari=0;
+  for(const [id,p] of Object.entries(depthIV.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=1);
+    for(const entry of p.scholarly){
+      fourthTafsir++;
+      if(entry.source_url.includes('/katheer/'))fourthKathir++;
+      if(entry.source_url.includes('/tabary/'))fourthTabari++;
+      assert.equal(entry.review_status,'checked_against_digital_text');
+      assert.ok(entry.arabic_original.length>12);
+      assert.ok(entry.translation.ml && entry.translation.en);
+      assert.ok(entry.source_scope?.ml && entry.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+      assert.ok(!entry.count&&!entry.timing,'Tafsir paraphrases must not invent rituals or counts.');
+      for(const lang of ['ml','en']){
+        const html=render(null,id,lang,{pdf_name_id:id});
+        assert.ok(html.includes('data-section-b-group="scholarly"'));
+        assert.ok(html.includes(escape(entry.arabic_original)),`Fourth-phase Arabic missing ${id}/${entry.id}`);
+        assert.ok(html.includes(escape(entry.translation[lang])),`Fourth-phase meaning missing ${id}/${entry.id}/${lang}`);
+        assert.ok(html.includes(entry.source_url),`Fourth-phase reference missing ${id}/${entry.id}`);
+      }
+    }
+  }
+  assert.deepEqual({fourthTafsir,fourthKathir,fourthTabari},{fourthTafsir:20,fourthKathir:15,fourthTabari:5});
+  const firm=prophetic.entries.find(x=>x.id==='hadith-tirmidhi-2140-hearts-steadfast');
+  assert.ok(firm?.arabic_original.includes('يَا مُقَلِّبَ الْقُلُوبِ'));
+  assert.equal(firm.source_url,'https://sunnah.com/tirmidhi:2140');
+  assert.ok(firm.count.en.includes('no fixed number'));
+  assert.ok(firm.name_ids.includes('PDF-HN-0147'));
+  for(const id of firm.name_ids)for(const lang of ['ml','en']){
+    const html=render(null,id,lang,{pdf_name_id:id});
+    assert.ok(html.includes(escape(firm.arabic_original)));
+    assert.ok(html.includes(escape(firm.translation[lang])));
+    assert.ok(html.includes(firm.source_url));
+  }
+  assert.ok(depthIV.profiles['PDF-HN-0172'].scholarly.some(x=>x.source_url.includes('/tabary/')),
+    'Al-Muqit must retain al-Tabari alternative readings and his chosen interpretation');
+  console.log('PASS: 75 individually deep-studied headings, 20 additional original-Arabic tafsir explanations and authentic Tirmidhi 2140 heart dua.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
