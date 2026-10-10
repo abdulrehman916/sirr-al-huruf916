@@ -1,0 +1,802 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് 30 അറബി പാഠഭാഗങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 15. ആദ്യം ഖുർആനിൽ നേരിട്ട് വരുന്നത് ക്രിയയാണോ നാമമാണോ എന്ന വ്യത്യാസം, ദാനം/നീതി/അന്ത്യവിധി പോലെയുള്ള സന്ദർഭം, ഗുരുതരമായ മതപരമായ അവകാശവാദങ്ങളിലെ സ്രോതസ്സിന്റെ പരിധി എന്നിവ രേഖപ്പെടുത്തി. ഗ്രന്ഥത്തിലെ മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ ഇനിയും സമഗ്രമായി പരിശോധിക്കണം. ഭാഗിക പാഠം മാത്രമുണ്ടായിരുന്ന 2:245 രണ്ട് ബന്ധപ്പെട്ട കാർഡുകളിലും, 6:114 അൽ-ഹകം കാർഡിലും പൂർണ അറബി വചനവും അർഥവും ചേർത്തിട്ടുണ്ട്. ത്വബരിയിലെ പാരായണവ്യത്യാസവും ഗൈബിനെപ്പറ്റി തെറ്റായ അവകാശവാദം ഉന്നയിക്കരുതെന്ന മുന്നറിയിപ്പും അധികം രണ്ടു വിമർശനരേഖകളായി ചേർത്തു.",
+    "en": "Eighth source-based deep-study batch: 15 previously unstudied card IDs, 30 short verbatim Arabic classical commentary excerpts (15 Ibn Kathir and 15 al-Tabari), individually sourced. Distinguishes Quran's exact verbs and grammatical forms from later listed Names; highlights justice, charity, accountability and limits of unauthenticated occult/numerical claims. Historical manuscripts and every practice are still pending comprehensive review. Complete Quran 2:245 is added to both separately cataloged Qabid and Basit cards, and the complete Quran 6:114 to Hakam, replacing excerpts with original Arabic and bilingual meanings. Two extra source-critical al-Tabari excerpts document the grammatical reading of al-Matin and the critique of unsupported claims to unseen knowledge."
+  },
+  "profiles": {
+    "PDF-HN-0154": {
+      "name_id": "PDF-HN-0154",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-0154-katheer-71-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 71:10",
+            "en": "Ibn Kathir — Quran 71:10"
+          },
+          "arabic_original": "ارجعوا إليه وارجعوا عما أنتم فيه وتوبوا إليه من قريب",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നോഹ് നബിയുടെ ആഹ്വാനത്തെ തെറ്റുകളിൽനിന്ന് മടങ്ങി അല്ലാഹുവിനോട് പശ്ചാത്തപിക്കാനുള്ള വിളിയായി വിശദീകരിക്കുന്നു. ആയത്തിലെ നാമരൂപം «غَفَّارًا» ആണ്; കാർഡിലെ «الغفور» എന്ന അതേ രൂപമല്ല.",
+            "en": "Ibn Kathir presents Noah's invitation as turning away from wrongdoing and repenting. Quran 71:10 says ghaffaran, which differs morphologically from the card heading al-Ghafur."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-0154-tabary-71-10",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 71:10",
+            "en": "Al-Tabari — Quran 71:10"
+          },
+          "arabic_original": "سلوا ربكم غفران ذنوبكم، وتوبوا إليه من كفركم",
+          "translation": {
+            "ml": "ത്വബരി പാപമോചനം തേടുക, ബഹുദൈവാരാധന വിട്ട് ഏകദൈവവിശ്വാസത്തിലേക്ക് മടങ്ങുക എന്നാണ് വിശദീകരിക്കുന്നത്; വചനത്തിലെ ഗഫ്ഫാർ എന്ന രൂപം പ്രത്യേകം തിരിച്ചറിയണം.",
+            "en": "Al-Tabari understands the call as seeking forgiveness and abandoning shirk in favor of sincere worship. The Quranic form is ghaffar, not the isolated al-Ghafur title."
+          },
+          "source_reference": "تفسير الطبري — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0155": {
+      "name_id": "PDF-HN-0155",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-0155-katheer-11-61",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:61",
+            "en": "Ibn Kathir — Quran 11:61"
+          },
+          "arabic_original": "إن ربي قريب مجيب",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വാലിഹ് നബി തന്റെ ജനതയെ ഇസ്തിഗ്ഫാറിനും തൗബയ്ക്കും വിളിച്ച സന്ദർഭമായി വിവരിക്കുന്നു. «قَرِيبٌ» എന്ന വിശേഷണം ഉപയോഗിക്കുന്നു; «الْقَرِيبُ» എന്ന നിശ്ചിത സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "Ibn Kathir situates divine nearness within Salih's call to repent and seek forgiveness. The verse says qaribun, not the definite isolated al-Qarib."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-0155-tabary-11-61",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 11:61",
+            "en": "Al-Tabari — Quran 11:61"
+          },
+          "arabic_original": "إن ربي قريب ممن أخلص له العبادة ورغب إليه في التوبة",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിനെ ഏകാഗ്രമായി ആരാധിച്ച് പശ്ചാത്തപിക്കാനാഗ്രഹിക്കുന്നവർക്കുള്ള അടുത്തിരിപ്പായി ഇതിനെ വിശദീകരിക്കുന്നു; ഭൗതികദൂരമെന്ന അർഥത്തിൽ ചുരുക്കുന്നില്ല.",
+            "en": "Al-Tabari explains nearness in terms of a servant sincerely worshiping Allah and desiring repentance, not a quantifiable physical distance."
+          },
+          "source_reference": "تفسير الطبري — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0156": {
+      "name_id": "PDF-HN-0156",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-0156-katheer-11-61",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:61",
+            "en": "Ibn Kathir — Quran 11:61"
+          },
+          "arabic_original": "وإذا سألك عبادي عني فإني قريب أجيب دعوة الداع إذا دعان",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 11:61-ലെ «മുജീബ്» ദുആയ്ക്ക് ഉത്തരം നൽകുന്നതായി വിശദീകരിച്ച് 2:186-നെ ബന്ധിപ്പിക്കുന്നു. പ്രത്യേക ഫലം ലഭിക്കാനുള്ള ജപസംഖ്യ ഇവിടെയില്ല.",
+            "en": "Ibn Kathir connects mujib, the One who responds, to Quran 2:186 on answering supplication; he supplies no standalone recitation count."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-0156-tabary-11-61",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 11:61",
+            "en": "Al-Tabari — Quran 11:61"
+          },
+          "arabic_original": "مجيبٌ له إذا دعاه",
+          "translation": {
+            "ml": "ത്വബരി തൗബയും ആരാധനയിലെ ഇഖ്‌ലാസും നിലനിർത്തുന്നവൻ പ്രാർത്ഥിച്ചാൽ അല്ലാഹു മറുപടി നൽകുന്നു എന്ന് വ്യാഖ്യാനിക്കുന്നു. «مُجِيبٌ» ഇവിടെ പദരൂപമാണ്.",
+            "en": "Al-Tabari reads mujib as Allah responding to the sincerely repentant who call upon Him. The verse prints mujibun in context."
+          },
+          "source_reference": "تفسير الطبري — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-016": {
+      "name_id": "PDF-HN-016",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-016-katheer-51-58",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 51:58",
+            "en": "Ibn Kathir — Quran 51:58"
+          },
+          "arabic_original": "فهو خالقهم ورازقهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടികൾ അല്ലാഹുവിനെ ആശ്രയിക്കുന്നവരാണെന്നും അവന് അവരിൽനിന്ന് ഭക്ഷണമോ സഹായമോ ആവശ്യമില്ലെന്നും പറയുന്നു. «الرزاق» വചനത്തിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir explains all creatures depend on Allah, whereas He needs no provision from them. Ar-Razzaq is the direct Quranic designation."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-016-tabary-51-58",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 51:58",
+            "en": "Al-Tabari — Quran 51:58"
+          },
+          "arabic_original": "إن الله هو الرزّاق خلقه, المتكفل بأقواتهم",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു സൃഷ്ടികൾക്ക് ആവശ്യമായ ഉപജീവനത്തിന്റെ ഉത്തരവാദിത്തം ഏറ്റെടുത്തവനാണെന്ന് വിശദീകരിക്കുന്നു; ഇവിടെ «الرزاق» പൂർണമായ നാമരൂപമാണ്.",
+            "en": "Al-Tabari explains ar-Razzaq as the One who provides and sustains created beings, directly supported by the full wording of Quran 51:58."
+          },
+          "source_reference": "تفسير الطبري — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-critical-016-tabary-51-58",
+          "title": {
+            "ml": "ത്വബരി — പാഠവും വിശ്വാസപരിധിയും 51:58",
+            "en": "Al-Tabari — textual and evidentiary limits, Quran 51:58"
+          },
+          "arabic_original": "واختلفت القرّاء في قراءة قوله ( المَتِين )",
+          "translation": {
+            "ml": "ത്വബരി «മതീൻ» എന്ന പദത്തിന്റെ റഫ്അ്/ഖഫ്ദ് പാരായണങ്ങളെ വിശദീകരിച്ച് പ്രമുഖ ഖാരിഉകളുടെ റഫ്അ് വായനയ്ക്കാണ് മുൻഗണന നൽകുന്നത്; അത് അല്ലാഹുവിന്റെ വിശേഷണമായാണ് കാണുന്നത്. ഈ ഭാഷാപരമായ അഭിപ്രായഭേദം പ്രത്യേക ജപസംഖ്യയ്ക്കുള്ള തെളിവല്ല.",
+            "en": "Al-Tabari records a reading difference in al-matin's grammatical case and explicitly favors nominative agreement as a Divine description on majority reading grounds. This is a qira'at/grammar issue, not a numeric occult practice."
+          },
+          "source_reference": "تفسير الطبري — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_critical_grammar_and_unseen_claims",
+          "source_scope": {
+            "ml": "മൂലഗ്രന്ഥത്തിൽ നേരിട്ട് രേഖപ്പെടുത്തിയ ഭാഷാപരമോ അവകാശവാദങ്ങളിലെ തെളിവുപരിമിതിയോ; ഇതു പുതിയ എണ്ണമുള്ള വസീഫയോ ചികിത്സാഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Directly checked classical text addressing recitation grammar or unsupported claims about the unseen; not a ritual count or promised miraculous result."
+          }
+        }
+      ]
+    },
+    "PDF-HN-017": {
+      "name_id": "PDF-HN-017",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-017-katheer-34-26",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 34:26",
+            "en": "Ibn Kathir — Quran 34:26"
+          },
+          "arabic_original": "الحاكم العادل العالم بحقائق الأمور",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-ഫത്താഹ്» അന്തിമവിധിയിൽ നീതിപൂർവം തീർപ്പുകൽപ്പിക്കുന്നവൻ എന്നും സകല വസ്തുതകളും അറിയുന്നവൻ എന്നും വിശദീകരിക്കുന്നു; സമ്പത്ത് തുറക്കുന്ന രഹസ്യക്രമമായി ചുരുക്കരുത്.",
+            "en": "Ibn Kathir interprets al-Fattah as the just Judge with complete knowledge of affairs at the final gathering, not an independently prescribed wealth-opening ritual."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 34:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura34-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-017-tabary-34-26",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 34:26",
+            "en": "Al-Tabari — Quran 34:26"
+          },
+          "arabic_original": "يقول: القاضي",
+          "translation": {
+            "ml": "ത്വബരി ഇബ്നു അബ്ബാസിന്റെ വ്യാഖ്യാനമായി «വിധികർത്താവ്» എന്ന് രേഖപ്പെടുത്തുന്നു; ഈ വാക്യത്തിൽ «الفتاح العليم» നാമരൂപങ്ങൾ നേരിട്ട് വരുന്നു.",
+            "en": "Al-Tabari transmits the gloss al-qadi, 'the Judge', for al-Fattah; the pair al-Fattah al-Alim appears in Quran 34:26."
+          },
+          "source_reference": "تفسير الطبري — Quran 34:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura34-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-018": {
+      "name_id": "PDF-HN-018",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-018-katheer-2-32",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:32",
+            "en": "Ibn Kathir — Quran 2:32"
+          },
+          "arabic_original": "العليم بكل شيء ، الحكيم في خلقك وأمرك",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മലക്കുകൾക്ക് അല്ലാഹു പഠിപ്പിച്ചതല്ലാതെ അറിവില്ലെന്ന് അവർ സമ്മതിക്കുന്ന സന്ദർഭമാണ് ഇത് എന്ന് വിശദീകരിക്കുന്നു. അല്ലാഹുവിന്റെ അറിവിന്റെ പൂർണതയും ജ്ഞാനവും ആയത്തിൽ വരുന്നു.",
+            "en": "Ibn Kathir frames the angels' confession of limited knowledge against divine all-knowledge and wisdom in creation and command."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:32",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-018-tabary-2-32",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:32",
+            "en": "Al-Tabari — Quran 2:32"
+          },
+          "arabic_original": "العليمُ من غير تعليم بجميع ما قد كان وما وهو كائن",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിന്റെ അറിവ് മറ്റൊരാളിൽനിന്നു പഠിച്ചതല്ലെന്നും ഭൂതഭാവികളെല്ലാം അവന് അറിയാമെന്നും വിവരിക്കുന്നു; ജ്യോത്സ്യരും കാഹിനുകളും ഗൈബ് അറിയുന്നു എന്ന അവകാശവാദങ്ങളെ വിമർശിക്കുന്നു.",
+            "en": "Al-Tabari explains Allah's knowledge does not depend on being taught and includes past and future; he also rebukes unsupported claims of occult knowledge by soothsayers and astrologers."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:32",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-critical-018-tabary-2-32",
+          "title": {
+            "ml": "ത്വബരി — പാഠവും വിശ്വാസപരിധിയും 2:32",
+            "en": "Al-Tabari — textual and evidentiary limits, Quran 2:32"
+          },
+          "arabic_original": "على كذب مقالة كلّ من ادعى شيئًا من علوم الغيب",
+          "translation": {
+            "ml": "ത്വബരി ഈ ആയത്ത് ഗൈബ് അറിയുമെന്ന അനധികൃത ജ്യോത്സ്യ-കാഹിനി അവകാശവാദങ്ങളെ ഖണ്ഡിക്കുന്നതായി വ്യക്തമാക്കുന്നു. ഇങ്ങനെയുള്ള ഉറപ്പില്ലാത്ത രഹസ്യവിദ്യാവാദങ്ങളെ ഖുർആനിൽനിന്നുള്ള സാക്ഷാൽ തെളിവായി പ്രസിദ്ധീകരിക്കരുത്.",
+            "en": "Al-Tabari expressly criticizes those claiming unseen knowledge without proof, including soothsayers and astrologers. This cautions against claiming an unsourced occult effect as established scriptural knowledge."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:32",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_critical_grammar_and_unseen_claims",
+          "source_scope": {
+            "ml": "മൂലഗ്രന്ഥത്തിൽ നേരിട്ട് രേഖപ്പെടുത്തിയ ഭാഷാപരമോ അവകാശവാദങ്ങളിലെ തെളിവുപരിമിതിയോ; ഇതു പുതിയ എണ്ണമുള്ള വസീഫയോ ചികിത്സാഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Directly checked classical text addressing recitation grammar or unsupported claims about the unseen; not a ritual count or promised miraculous result."
+          }
+        }
+      ]
+    },
+    "PDF-HN-019": {
+      "name_id": "PDF-HN-019",
+      "evidence": [
+        {
+          "id": "depth-viii-full-019-2-245",
+          "title": {
+            "ml": "ഖുർആൻ 2:245 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:245 — complete verse"
+          },
+          "arabic_original": "مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً ۚ وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+          "translation": {
+            "ml": "അല്ലാഹുവിനു നല്ലൊരു കടം നൽകുന്നവൻ ആരുണ്ട്? അല്ലാഹു അതിനെ അവനു അനേകമടങ്ങായി വർധിപ്പിച്ചു നൽകും. അവൻ ഉപജീവനം ചുരുക്കുകയും വികസിപ്പിക്കുകയും ചെയ്യുന്നു; നിങ്ങൾ അവനിലേക്കാണ് മടങ്ങുക.",
+            "en": "Who will lend Allah a goodly loan so that He multiplies it many times? Allah restricts and expands provision, and to Him you will be returned."
+          },
+          "source_reference": "Quran 2:245 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«يَقْبِضُ» ചുരുക്കുന്നു എന്ന ക്രിയയാണ്; ഈ പൂർണ ആയത്ത് ദാനത്തെ പ്രോത്സാഹിപ്പിക്കുന്നു. «الْقَابِضُ» എന്ന അതേ സ്വതന്ത്ര നാമരൂപം വചനത്തിൽ ഇല്ല.",
+            "en": "The complete verse urges charitable spending; yaqbidu is an active verb, not an isolated definite name al-Qabid."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-viii-019-katheer-2-245",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:245",
+            "en": "Ibn Kathir — Quran 2:245"
+          },
+          "arabic_original": "فالله هو الرزاق يضيق على من يشاء من عباده في الرزق",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദാനത്തെ പ്രോത്സാഹിപ്പിക്കുന്ന ആയത്തിന്റെ അവസാനത്തിൽ ഉപജീവനം ചിലർക്കു കുറയ്ക്കുകയും മറ്റുള്ളവർക്ക് വികസിപ്പിക്കുകയും ചെയ്യുന്നത് അല്ലാഹുവാണെന്ന് പറയുന്നു. «يَقْبِضُ» ക്രിയ; «القابض» സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "Ibn Kathir reads narrowing provision in the context of encouragement to spend charitably. Yaqbidu is a verb, not the separate definite title al-Qabid."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:245",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-019-tabary-2-245",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:245",
+            "en": "Al-Tabari — Quran 2:245"
+          },
+          "arabic_original": "من هذا الذي ينفق في سبيل الله",
+          "translation": {
+            "ml": "ത്വബരി «നല്ല കടം» എന്നത് അല്ലാഹുവിന് ആവശ്യമുള്ളതിനല്ല, പ്രതിഫലം പ്രതീക്ഷിച്ചു മനുഷ്യരെ സഹായിക്കാൻ ചെയ്യുന്ന ദാനമാണെന്ന് വിശദീകരിക്കുന്നു. ക്രിയയിൽനിന്ന് രഹസ്യ തടസ്സപ്പെടുത്തൽ ക്രമം കണ്ടുപിടിക്കരുത്.",
+            "en": "Al-Tabari explains the goodly loan as charitable spending for people in need, not because Allah needs money; the verb cannot establish a secret withholding ritual."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:245",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-020": {
+      "name_id": "PDF-HN-020",
+      "evidence": [
+        {
+          "id": "depth-viii-full-020-2-245",
+          "title": {
+            "ml": "ഖുർആൻ 2:245 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:245 — complete verse"
+          },
+          "arabic_original": "مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً ۚ وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+          "translation": {
+            "ml": "അല്ലാഹുവിനു നല്ലൊരു കടം നൽകുന്നവൻ ആരുണ്ട്? അല്ലാഹു അതിനെ അവനു അനേകമടങ്ങായി വർധിപ്പിച്ചു നൽകും. അവൻ ഉപജീവനം ചുരുക്കുകയും വികസിപ്പിക്കുകയും ചെയ്യുന്നു; നിങ്ങൾ അവനിലേക്കാണ് മടങ്ങുക.",
+            "en": "Who will lend Allah a goodly loan so that He multiplies it many times? Allah restricts and expands provision, and to Him you will be returned."
+          },
+          "source_reference": "Quran 2:245 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«يَبْسُطُ» വിശാലമാക്കുന്നു എന്ന ക്രിയയാണ്; ദാനം, ഉപജീവനം എന്നിവയാണ് സന്ദർഭം. «الْبَاسِطُ» എന്ന സ്വതന്ത്ര നാമരൂപം നേരിട്ട് ആയത്തിൽ ഇല്ല.",
+            "en": "The Quranic text says yabsutu, a verb meaning 'expands'; it is not the independent nominal form al-Basit."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-viii-020-katheer-2-245",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:245",
+            "en": "Ibn Kathir — Quran 2:245"
+          },
+          "arabic_original": "ويوسعه على آخرين ، له الحكمة البالغة في ذلك",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു മറ്റുള്ളവർക്ക് ഉപജീവനം വികസിപ്പിക്കുന്നതും അവന്റെ ജ്ഞാനപൂർവമായ തീരുമാനമാണെന്ന് പറയുന്നു; ദാനത്തിന്റെ സന്ദർഭം വിട്ടുപോകരുത്. «يَبْسُطُ» ക്രിയയാണ്.",
+            "en": "Ibn Kathir relates the expansion of provision to divine wisdom and generosity. The passage uses yabsutu as a verb, not the isolated al-Basit title."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:245",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-020-tabary-2-245",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:245",
+            "en": "Al-Tabari — Quran 2:245"
+          },
+          "arabic_original": "ليس ذلك لحاجة بالله إلى أحد من خلقه",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു സൃഷ്ടികളിൽനിന്ന് ആവശ്യക്കാരനല്ലെന്ന് വ്യക്തമാക്കുന്നു; മറ്റുള്ളവരെ സഹായിക്കുന്ന ദാനത്തിനു പ്രതിഫലം നൽകുമെന്ന വാഗ്ദാനമാണ് പ്രധാനം.",
+            "en": "Al-Tabari emphasizes Allah needs nothing from creatures: the central context is generous spending and divine reward, not a guaranteed multiplication scheme."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:245",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-021": {
+      "name_id": "PDF-HN-021",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-021-katheer-56-3",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 56:3",
+            "en": "Ibn Kathir — Quran 56:3"
+          },
+          "arabic_original": "تحفض أقواما إلى أسفل سافلين إلى الجحيم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അന്ത്യവിധി ചിലരെ നരകത്തിലേക്ക് താഴ്ത്തുകയും മറ്റുചിലരെ അനുഗ്രഹത്തിലേക്ക് ഉയർത്തുകയും ചെയ്യുന്നതായി വ്യാഖ്യാനിക്കുന്നു. «خَافِضَةٌ» അന്ത്യദിവസത്തെ വിശേഷിപ്പിക്കുന്നു; അൽ-ഖാഫിദ് സ്വതന്ത്ര നാമമല്ല.",
+            "en": "Ibn Kathir says the Resurrection lowers some toward punishment and raises others to bliss; khafidatun describes the event, not a separately printed Divine Name."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 56:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura56-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-021-tabary-56-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 56:3",
+            "en": "Al-Tabari — Quran 56:3"
+          },
+          "arabic_original": "الواقعة حينئذ خافضة، أقواما كانوا في الدنيا، أعزّاء إلى نار الله",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-വാഖിഅ» എന്ന അന്ത്യദിവസം മുൻകാലത്ത് ഉയർന്നസ്ഥാനമുള്ളവരെയും താഴ്ത്താൻ കഴിവുള്ളതാണ് എന്ന് വിശദീകരിക്കുന്നു. മനുഷ്യരെ അപമാനിക്കുന്ന വസീഫയാണെന്ന് ഇതിൽനിന്ന് പറയരുത്.",
+            "en": "Al-Tabari explains that the overwhelming Event itself lowers people formerly powerful in the world; no human-directed humiliation rite is prescribed."
+          },
+          "source_reference": "تفسير الطبري — Quran 56:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura56-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-022": {
+      "name_id": "PDF-HN-022",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-022-katheer-58-11",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 58:11",
+            "en": "Ibn Kathir — Quran 58:11"
+          },
+          "arabic_original": "بل هو رفعة ومزية عند الله",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മറ്റുള്ളവർക്ക് സഭയിൽ ഇടം നൽകുന്നതും പഠനവും വിശ്വാസവും അല്ലാഹു പദവി ഉയർത്തുന്നതുമായി ബന്ധിപ്പിക്കുന്നു. «يَرْفَعِ» ക്രിയയാണ്; തലക്കെട്ടിലെ അൽ-റാഫിഅ് എന്ന ഒറ്റ നാമമല്ല.",
+            "en": "Ibn Kathir connects courtesy in gatherings, faith and knowledge with being raised in rank. The Quran has yarfa' as a verb rather than the isolated nominal al-Rafi'."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 58:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-022-tabary-58-11",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 58:11",
+            "en": "Al-Tabari — Quran 58:11"
+          },
+          "arabic_original": "يرفع الله الذين آمنوا منكم أيها القوم بطاعتهم ربهم",
+          "translation": {
+            "ml": "ത്വബരി സഭയിൽ ഇടം വിട്ടുകൊടുക്കലും നന്മയിലേക്ക് എഴുന്നേൽക്കലും അനുസരിക്കുന്നവരെ ഉയർത്തുന്നതുമായി ബന്ധപ്പെട്ടതായി വ്യാഖ്യാനിക്കുന്നു; അറിവിനും പ്രത്യേക മഹത്വമുണ്ടെന്ന് പറയുന്നു.",
+            "en": "Al-Tabari reads raising in rank as reward for obedience, making room for others and responding to good; knowledge further increases rank."
+          },
+          "source_reference": "تفسير الطبري — Quran 58:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura58-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-023": {
+      "name_id": "PDF-HN-023",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-023-katheer-3-26",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 3:26",
+            "en": "Ibn Kathir — Quran 3:26"
+          },
+          "arabic_original": "أنت المعطي ، وأنت المانع",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അധികാരം നൽകലും തിരിച്ചെടുക്കലും ആദരവും താഴ്ത്തലും അല്ലാഹുവിന്റെ തീരുമാനമാണെന്ന് പറയുന്നു. «تُعِزُّ» ക്രിയയാണ്; «الْمُعِزّ» എന്ന ഒറ്റ നാമം ആയത്തിൽ വരുന്നില്ല.",
+            "en": "Ibn Kathir assigns sovereignty, honor and humiliation to Allah's will; tu'izzu is a verb, not the standalone definite Name al-Mu'izz."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-023-tabary-3-26",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 3:26",
+            "en": "Al-Tabari — Quran 3:26"
+          },
+          "arabic_original": "بإعطائه الملك والسلطان، وَبسط القدرة له",
+          "translation": {
+            "ml": "ത്വബരി ഒരാൾക്ക് അധികാരവും പ്രവർത്തിക്കാനുള്ള കഴിവും നൽകുന്നത് «തുഇസ്സു» എന്നതിന്റെ സന്ദർഭമായി വിശദീകരിക്കുന്നു. ഒരാളെ നിയന്ത്രിക്കാൻ പ്രത്യേക എണ്ണം നിർദേശിച്ചിട്ടില്ല.",
+            "en": "Al-Tabari understands granting honor here as granting dominion and capability, not a numerically prescribed method to compel another person."
+          },
+          "source_reference": "تفسير الطبري — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-025": {
+      "name_id": "PDF-HN-025",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-025-katheer-42-11",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:11",
+            "en": "Ibn Kathir — Quran 42:11"
+          },
+          "arabic_original": "ليس كخالق الأزواج كلها شيء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു സൃഷ്ടികളുടെ യാതൊന്നിനും സമാനനല്ലെന്നും അതോടൊപ്പം «السميع البصير» ആണെന്നും വിശദീകരിക്കുന്നു. കേൾവിയും ദർശനവും മനുഷ്യഗുണങ്ങളുമായി ഒന്നാണെന്ന് പറയുന്നില്ല.",
+            "en": "Ibn Kathir stresses Allah is unlike any created thing even as the Quran affirms as-Sami' and al-Basir, without equating divine qualities with human ones."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-025-tabary-42-11",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 42:11",
+            "en": "Al-Tabari — Quran 42:11"
+          },
+          "arabic_original": "ليس هو كشيء",
+          "translation": {
+            "ml": "ത്വബരി «ലൈസ കമിഥ്ലിഹി ശയ്» എന്ന വാക്യത്തിന്റെ ഭാഷാപരമായ അർഥവ്യത്യാസം പരിശോധിക്കുന്നു; അതേ വചനം സൃഷ്ടിയിലുള്ള അസാമ്യതയും കേൾവിയും ദർശനവും ഒരുമിച്ച് പറയുന്നു.",
+            "en": "Al-Tabari analyzes the negation of likeness linguistically and retains the verse's simultaneous affirmation of divine hearing and sight."
+          },
+          "source_reference": "تفسير الطبري — Quran 42:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura42-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-026": {
+      "name_id": "PDF-HN-026",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-026-katheer-42-11",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:11",
+            "en": "Ibn Kathir — Quran 42:11"
+          },
+          "arabic_original": "ليس كمثله شيء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദൈവിക ദർശനം പറയുന്നതിന് മുൻപ് ദൈവത്തിന് സൃഷ്ടികളോട് സാമ്യമില്ലെന്ന് ഊന്നുന്നു; «الْبَصِيرُ» എന്ന നാമം വചനത്തിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir places the directly occurring al-Basir within the Quran's unequivocal denial of Allah resembling creation."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-026-tabary-42-11",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 42:11",
+            "en": "Al-Tabari — Quran 42:11"
+          },
+          "arabic_original": "خالق السموات السبع والأرض",
+          "translation": {
+            "ml": "ത്വബരി സ്രഷ്ടാവായ അല്ലാഹുവിന്റെ പൂർണ അധികാരത്തെ വിവരിക്കുന്നു; 42:11-ൽ «السميع البصير» നേരിട്ട് വന്നാലും അവന്റെ ഗുണങ്ങളെ സൃഷ്ടികളുമായി സാമ്യമാക്കുന്നില്ല.",
+            "en": "Al-Tabari explains the Creator's uniqueness; both as-Sami' and al-Basir appear in the actual Quranic wording, with likeness to creation denied."
+          },
+          "source_reference": "تفسير الطبري — Quran 42:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura42-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-027": {
+      "name_id": "PDF-HN-027",
+      "evidence": [
+        {
+          "id": "depth-viii-full-027-6-114",
+          "title": {
+            "ml": "ഖുർആൻ 6:114 — പൂർണ ആയത്ത്",
+            "en": "Quran 6:114 — complete verse"
+          },
+          "arabic_original": "أَفَغَيْرَ اللَّهِ أَبْتَغِي حَكَمًا وَهُوَ الَّذِي أَنزَلَ إِلَيْكُمُ الْكِتَابَ مُفَصَّلًا ۚ وَالَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْلَمُونَ أَنَّهُ مُنَزَّلٌ مِّن رَّبِّكَ بِالْحَقِّ ۖ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാതെ വേറൊരു വിധികർത്താവിനെ ഞാൻ തേടണമോ? വ്യക്തമായി വിശദീകരിച്ച ഗ്രന്ഥം നിങ്ങൾക്കിറക്കിത്തന്നത് അവനാണ്. ഗ്രന്ഥം ലഭിച്ചവർ ഇത് നിന്റെ രക്ഷിതാവിൽനിന്നുള്ള സത്യമാണെന്ന് തിരിച്ചറിയുന്നു. അതിനാൽ സംശയിക്കുന്നവരിൽ ഉൾപ്പെടരുത്.",
+            "en": "Should I seek a judge other than Allah, when He sent down the Book made clear? Those given Scripture know it has come from your Lord in truth, so do not be among those who doubt."
+          },
+          "source_reference": "Quran 6:114 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya114.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«حَكَمًا» എന്ന അനിശ്ചിത വിഭക്തിരൂപമാണ് ഇവിടെ; «الْحَكَمُ» എന്ന കൃത്യമായ നാമരൂപമല്ല. നീതിയുള്ള വിധിയും വഹ്‌യിന്റെ സത്യവുമാണ് സന്ദർഭം.",
+            "en": "The exact verse says hakaman, grammatically indefinite, rather than a standalone definite al-Hakam; context is judging by revelation and truth."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-viii-027-katheer-6-114",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 6:114",
+            "en": "Ibn Kathir — Quran 6:114"
+          },
+          "arabic_original": "بيني وبينكم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അല്ലാഹുവല്ലാതെ വിധികർത്താവിനെ അന്വേഷിക്കുമോ?» എന്നത് നബി ﷺക്കും എതിരാളികൾക്കും ഇടയിലെ സത്യവിവേചനമെന്നായി വിശദീകരിക്കുന്നു. ആയത്തിൽ «حَكَمًا» എന്ന രൂപമാണ്, «الْحَكَمُ» എന്ന സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "Ibn Kathir construes seeking a judge between the Prophet and his opponents; the Quran says hakaman, not the isolated definite heading al-Hakam."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:114",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya114.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-027-tabary-6-114",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 6:114",
+            "en": "Al-Tabari — Quran 6:114"
+          },
+          "arabic_original": "لأنه لا حَكَم أعدل منه، ولا قائل أصدق منه",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിനെക്കാൾ നീതിയുള്ള വിധികർത്താവോ സത്യസന്ധനായ വക്താവോ ഇല്ലെന്ന് വ്യാഖ്യാനിക്കുന്നു. ആയത്തിലെ കൃത്യമായ അറബി പദരൂപം വേർതിരിക്കുന്നു.",
+            "en": "Al-Tabari emphasizes no judge is more just and none speaks more truthfully than Allah; it is judicial authority, not an esoteric formula."
+          },
+          "source_reference": "تفسير الطبري — Quran 6:114",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya114.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    },
+    "PDF-HN-028": {
+      "name_id": "PDF-HN-028",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-viii-028-katheer-4-58",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:58",
+            "en": "Ibn Kathir — Quran 4:58"
+          },
+          "arabic_original": "إنه يأمر بأداء الأمانات إلى أهلها",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഏൽപ്പിച്ച ഉത്തരവാദിത്വങ്ങൾ അവകാശികൾക്ക് തിരികെ നൽകാനും ജനങ്ങൾക്കിടയിൽ നീതിപൂർവം വിധിക്കാനും അല്ലാഹു നിർദേശിക്കുന്നതായി വിശദീകരിക്കുന്നു. «بِالْعَدْلِ» ഗുണവാചകമാണ്; അൽ-അദ്ല് എന്ന ഒറ്റ നാമം ഇതിൽ ഇല്ല.",
+            "en": "Ibn Kathir reads a real ethical command: return trusts and judge fairly. The verse says bil-'adl, not the standalone Divine Name al-'Adl."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-028-tabary-4-58",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 4:58",
+            "en": "Al-Tabari — Quran 4:58"
+          },
+          "arabic_original": "بالعدل بينهم في القضية، والقَسْم بينهم بالسوية",
+          "translation": {
+            "ml": "ത്വബരി ഈ വചനത്തിന്റെ ആദ്യ ലക്ഷ്യം പൊതു ഉത്തരവാദിത്തമുള്ള ഭരണാധികാരികളാണ് എന്നാണ് മുൻഗണന നൽകുന്നത്; ന്യായമായ വിധിയും സമതുല്യ വിതരണവും ഊന്നുന്നു.",
+            "en": "Al-Tabari prefers an address especially to officials entrusted with people's rights, calling for fair judgment and equitable distribution."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
+            "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        }
+      ]
+    }
+  }
+}
