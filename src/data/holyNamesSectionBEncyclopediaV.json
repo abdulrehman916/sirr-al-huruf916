@@ -917,7 +917,43 @@
           }
         }
       ],
-      "hadith": []
+      "hadith": [
+        {
+          "id": "encyclopedia-mumin-bukhari-3360",
+          "title": {
+            "ml": "സ്വഹീഹ് ബുഖാരി 3360 — 6:82-ലെ അനീതിയുടെ അർഥം നബി ﷺ വിശദീകരിക്കുന്നു",
+            "en": "Sahih Bukhari 3360 — the Prophet explains the zulm in Quran 6:82"
+          },
+          "arabic_original": "لَمَّا نَزَلَتِ {الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُمْ بِظُلْمٍ} قُلْنَا يَا رَسُولَ اللَّهِ أَيُّنَا لَا يَظْلِمُ نَفْسَهُ؟ قَالَ: «لَيْسَ كَمَا تَقُولُونَ، {لَمْ يَلْبِسُوا إِيمَانَهُمْ بِظُلْمٍ} بِشِرْكٍ، أَوَلَمْ تَسْمَعُوا إِلَى قَوْلِ لُقْمَانَ لِابْنِهِ: {يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ}»",
+          "translation": {
+            "ml": "അബ്ദുല്ലാഹ് ഇബ്നു മസ്ഊദ് (റ) റിപ്പോർട്ട്: ഖുർആൻ 6:82-ൽ വിശ്വാസത്തെ അനീതിയാൽ കലർത്തരുത് എന്നു വന്നപ്പോൾ, ഞങ്ങളിൽ സ്വന്തം ആത്മാവിനോട് അനീതി ചെയ്യാത്തവരാരുണ്ട് എന്ന് സഹാബികൾ ചോദിച്ചു. നബി ﷺ 'നിങ്ങൾ വിചാരിക്കുന്നതല്ല; ഇവിടെ ശിർക്കാണ് ഉദ്ദേശിക്കുന്നത്' എന്നു പറഞ്ഞ് ലുഖ്മാൻ 31:13 ഉദ്ധരിച്ചു. ഇവിടെ ഒരു പ്രത്യേക ജപസംഖ്യയില്ല. ഇതേ ആശയം സ്വഹീഹ് മുസ്‌ലിം 124a-ലും രേഖപ്പെടുത്തിയിരിക്കുന്നു.",
+            "en": "Abdullah ibn Mas'ud reports that when Quran 6:82 was revealed, the companions worried that all had wronged themselves. The Prophet corrected their interpretation: the relevant wrongdoing is shirk, citing Luqman's warning in Quran 31:13. The report does not prescribe any numbered al-Mu'min litany; Sahih Muslim 124a corroborates its substance."
+          },
+          "source_reference": "صحيح البخاري 3360; corroboration صحيح مسلم 124a",
+          "source_url": "https://sunnah.com/bukhari:3360",
+          "references": [
+            {
+              "book": "صحيح مسلم",
+              "page": "124a",
+              "url": "https://sunnah.com/muslim:124a"
+            }
+          ],
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "authentic_prophetic_quran_explanation",
+          "count": {
+            "ml": "നാമം ഓതാൻ പ്രത്യേക എണ്ണം പറഞ്ഞിട്ടില്ല.",
+            "en": "No repetition count for this Name is prescribed."
+          },
+          "timing": {
+            "ml": "ആയത്ത് അവതരിച്ചപ്പോൾ നൽകിയ വ്യാഖ്യാനം; പ്രത്യേക സമയപരിധിയില്ല.",
+            "en": "Prophetic explanation when the verse was revealed; no timed ritual."
+          },
+          "source_scope": {
+            "ml": "ഇത് നിവേദനത്തിലെ സംഭാഷണത്തിന്റെ മൂല അറബി മത്ന് ആണ്; മുഴുവൻ ഇസ്നാദ് അല്ല. ഉദ്ധരണിയുടെ ഹർക്കത്തുകൾ വായനസഹായത്തിന് ക്രമീകരിച്ചിട്ടുണ്ട്; അച്ചടിസ്രോതസ്സിന്റെ എല്ലാ ഹർക്കത്തുകളും അക്ഷരാർത്ഥത്തിൽ ലഭ്യമായിട്ടില്ല.",
+            "en": "Arabic matn of the reported dialogue, excluding the full isnad. Vowel marks are reading aids rather than a claim that every mark was printed in the reference edition."
+          }
+        }
+      ]
     }
   }
 }
