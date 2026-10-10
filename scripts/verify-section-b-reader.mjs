@@ -1412,6 +1412,86 @@ try {
     assert.ok(!html.includes(deepSalam.evidence[0].id),'No cross-card leakage for al-Salam');
   }
   console.log('PASS: card 005 has 26 complete Quran peace contexts (27 ayat), 20 tafsir studies, 2 full Sahih Muslim reports, preserved Muslim 591 and a clearly disclosed historical Shams cross-link.');
+
+  // Sixth encyclopedia-depth card: clearly distinguish the exact Divine Name from safety/faith word relatives.
+  const encyclopaediaV=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaV.json','utf8'));
+  const muminId='PDF-HN-006';
+  const deepMumin=encyclopaediaV.profiles[muminId];
+  assert.deepEqual(Object.keys(encyclopaediaV.profiles),[muminId],'Card six overlay should contain no fake placeholder profiles.');
+  assert.equal(deepMumin.evidence.length,21,'Card 006 must have 21 complete Quranic safety/faith contexts.');
+  assert.equal(deepMumin.evidence.reduce((n,e)=>n+e.verse_count,0),21);
+  assert.equal(deepMumin.scholarly.length,18,'18 independently sourced exegetical notes expected.');
+  assert.equal(deepMumin.hadith.length,1,'One new independently source-checked Sahih Bukhari matn expected.');
+  assert.equal(new Set([...deepMumin.evidence,...deepMumin.scholarly,...deepMumin.hadith].map(x=>x.id)).size,40);
+  assert.equal(research[muminId].evidence.filter(x=>x.source_reference==='Quran 59:23').length,1,'The ONE direct Name verse should be preserved, not padded by synonyms.');
+  const sourceRefs=new Set();
+  const thematicKinds=new Set();
+  for(const entry of deepMumin.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.relationship,'thematic_not_exact_divine_name');
+    assert.ok(entry.claim_kind&&entry.verse_meaning.ml&&entry.verse_meaning.en&&entry.translation.ml&&entry.translation.en);
+    assert.ok(entry.source_scope.ml&&entry.source_scope.en);
+    assert.ok(entry.arabic_original.length>20 && entry.source_reference.startsWith('Quran '));
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+    const ref=entry.source_reference.match(/Quran (\d+:\d+)/)?.[1];
+    assert.ok(ref&&!sourceRefs.has(ref)&&ref!=='59:23','No duplicate or falsely new direct-name verse: '+ref);
+    sourceRefs.add(ref);thematicKinds.add(entry.claim_kind);
+    for(const language of ['ml','en']){
+      const html=render(chapters[muminId]||null,muminId,language,{pdf_name_id:muminId});
+      for(const content of [entry.arabic_original,entry.verse_meaning[language],entry.translation[language],entry.source_scope[language]]){
+        assert.ok(html.includes(escape(content)), 'Full Quran text or interpretation absent: '+entry.id+'/'+language);
+      }
+      assert.ok(html.includes(entry.source_url),'Exact Quran source link absent '+entry.id);
+      assert.ok(sectionBEntrySearchText(entry,language).includes(entry.verse_meaning[language].toLocaleLowerCase()),'Search must include full verse meaning.');
+    }
+  }
+  assert.equal(sourceRefs.size,21);
+  assert.ok(thematicKinds.size>=15,'Require meaningfully diverse subjects, not repetition.');
+  const safetyVerse=deepMumin.evidence.find(x=>x.source_reference.startsWith('Quran 9:6'));
+  assert.ok(safetyVerse?.translation.en.includes('safe conduct')||safetyVerse?.translation.en.includes('legal and ethical'),'Protection of asylum seekers must be explicitly respected.');
+  assert.ok(deepMumin.evidence.find(x=>x.source_reference.startsWith('Quran 48:4'))?.translation.en.includes('human believers'),'Do not label the plural human believers as Allah\'s singular Divine Name.');
+  assert.ok(deepMumin.evidence.find(x=>x.source_reference.startsWith('Quran 24:55'))?.translation.en.includes('not an isolated'),'Do not promise power through an isolated name count.');
+  const commentatorNames=new Set();
+  for(const entry of deepMumin.scholarly){
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.ok(entry.arabic_original.length>10&&entry.translation.ml&&entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary|saadi|baghawy)\//.test(entry.source_url));
+    commentatorNames.add(entry.source_url.match(/\/tafseer\/([^/]+)\//)[1]);
+    for(const language of ['ml','en']){
+      const html=render(chapters[muminId]||null,muminId,language,{pdf_name_id:muminId});
+      assert.ok(html.includes(escape(entry.arabic_original)),entry.id+' Arabic tafsir snippet not rendered');
+      assert.ok(html.includes(escape(entry.translation[language])),entry.id+' tafsir explanation not rendered');
+      assert.ok(html.includes(entry.source_url),entry.id+' citation missing');
+    }
+  }
+  assert.deepEqual([...commentatorNames].sort(),['baghawy','katheer','qortobi','saadi','tabary']);
+  assert.ok(deepMumin.scholarly.some(x=>x.translation.en.includes('unusual eschatological account')),'Do not silently endorse disputed extra narratives.');
+  const hadith3360=deepMumin.hadith[0];
+  assert.equal(hadith3360.source_url,'https://sunnah.com/bukhari:3360');
+  assert.ok(hadith3360.arabic_original.includes('الشِّرْكَ لَظُلْمٌ عَظِيمٌ'));
+  assert.ok(hadith3360.translation.en.includes('Muslim 124a')&&hadith3360.count.en.includes('No repetition'));
+  assert.ok(hadith3360.references.some(ref=>ref.url==='https://sunnah.com/muslim:124a'));
+  assert.equal(bridge.identity_map['b-shams-brief-68-المؤمن'],muminId,'Shams source must stay attached to card 006.');
+  const historicalSource=historical.accounts['b-shams-brief-68-المؤمن'];
+  assert.equal(historicalSource.source_page,'68');
+  assert.ok(historicalSource.arabic_original.includes('كل يوم ١١٣٢ مرة'),'Historical number must remain precisely original.');
+  assert.ok(historicalSource.translation.en.includes('not evidence of disease prevention'),'Avoid unsafe plague protection claims.');
+  for(const language of ['ml','en']){
+    const html=render(chapters[muminId]||null,muminId,language,{pdf_name_id:muminId});
+    assert.ok(html.includes(escape(hadith3360.arabic_original)),'Bukhari original Arabic missing.');
+    assert.ok(html.includes(escape(hadith3360.translation[language])),'Bilingual Bukhari translation missing.');
+    assert.ok(html.includes(hadith3360.source_url));
+    assert.ok(html.includes(escape(historicalSource.arabic_original)),'The 1,132 historical Arabic recitation account must survive.');
+    assert.ok(html.includes(escape(historicalSource.translation[language])),'The historical count with health caveat must survive.');
+    assert.ok(html.includes('https://sunnah.com/muslim:2708a'),'Previously linked authentic refuge prayer source must remain.');
+    assert.ok(html.includes(escape(encyclopaediaV.scope[language])),'Do not indicate manuscript research is complete.');
+  }
+  for(const other of ['PDF-HN-001','PDF-HN-002','PDF-HN-003','PDF-HN-004','PDF-HN-005']){
+    const html=render(chapters[other]||null,other,'en',{pdf_name_id:other});
+    assert.ok(!html.includes(deepMumin.evidence[0].id),'Name six source entry leaked onto another card.');
+  }
+  console.log('PASS: card 006 al-Mumin preserves 21 complete Quran verses, 18 sourced tafsir notes, Bukhari 3360 with Muslim 124a corroboration, pre-existing Muslim 2708a and Shams 1,132 historical count with medical warning.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
