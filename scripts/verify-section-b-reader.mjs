@@ -95,7 +95,7 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 28);
+  assert.equal(prophetic.entries.length, 29);
   assert.ok(topical.topics.length >= 18);
   const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
@@ -829,6 +829,60 @@ try {
   assert.ok(depthIX.profiles['PDF-HN-103'].scholarly.some(e=>e.translation.en.includes('both attested readings')));
   assert.ok(depthIX.profiles['PDF-HN-096'].scholarly.some(e=>e.translation.en.includes('plural')));
   console.log('PASS: 150 unique deeply studied Holy Names, 32 new Arabic tafsir notes, two exact-name Quran verses, both-language reader rendering.');
+
+  // Final tenth source-critical pass: all 160 card IDs now have one deep layer.
+  const depthX=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthX.json','utf8'));
+  const xIds=Object.keys(depthX.profiles);
+  assert.equal(xIds.length,10);
+  const studiedAll=[...researchedIX,...xIds];
+  assert.equal(studiedAll.length,160);
+  assert.equal(new Set(studiedAll).size,160,'No repeated IDs permitted across all ten tafsir layers.');
+  assert.equal(new Set(studiedAll.filter(id=>coveredIds.has(id))).size,160);
+  let tenthNotes=0,tenthKathir=0,tenthTabari=0;
+  const tenthSourceIds=new Set();
+  for(const [id,p] of Object.entries(depthX.profiles)){
+    assert.equal(p.name_id,id);
+    assert.equal(p.scholarly.length,2);
+    for(const item of p.scholarly){
+      tenthNotes++;
+      if(item.source_url.includes('/katheer/'))tenthKathir++;
+      if(item.source_url.includes('/tabary/'))tenthTabari++;
+      assert.ok(!tenthSourceIds.has(item.id),`Duplicate tenth record ID: ${item.id}`);
+      tenthSourceIds.add(item.id);
+      assert.equal(item.review_status,'checked_against_digital_text');
+      assert.ok(item.arabic_original?.length>=10);
+      assert.ok(item.translation?.ml&&item.translation?.en);
+      assert.ok(item.source_scope?.ml&&item.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(item.source_url));
+      assert.ok(!item.count&&!item.timing&&!item.steps,'Tafsir must not fabricate ritual methods.');
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const item of p.scholarly){
+        assert.ok(html.includes(escape(item.arabic_original)),`Original Arabic missing ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(escape(item.translation[lang])),`Meaning missing ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(escape(item.source_scope[lang])),`Attribution missing ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(item.source_url),`Source link missing ${id}/${item.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({tenthNotes,tenthKathir,tenthTabari},{tenthNotes:20,tenthKathir:10,tenthTabari:10});
+  assert.ok(depthX.profiles['PDF-HN-110'].scholarly.some(e=>e.translation.en.includes('nominative')));
+  assert.ok(depthX.profiles['PDF-HN-123'].scholarly.some(e=>e.translation.en.includes('al-Akram')));
+  assert.ok(depthX.profiles['PDF-HN-136'].scholarly.some(e=>e.translation.en.includes('not an isolated Divine Name')));
+  const disaster=prophetic.entries.find(e=>e.id==='hadith-muslim-918a-calamity-full-istirja');
+  assert.ok(disaster?.arabic_original.includes('اللَّهُمَّ أْجُرْنِي'));
+  assert.ok(disaster.source_url.includes('muslim:918a'));
+  assert.ok(disaster.count.en.includes('no numerical repeat count'));
+  assert.deepEqual(disaster.name_ids,['PDF-HN-136']);
+  for(const lang of ['ml','en']){
+    const html=render(null,'PDF-HN-136',lang,{pdf_name_id:'PDF-HN-136'});
+    assert.ok(html.includes(escape(disaster.arabic_original)));
+    assert.ok(html.includes(escape(disaster.translation[lang])));
+    assert.ok(html.includes(disaster.source_url));
+  }
+  console.log('PASS: all 160 individually researched card IDs now have deep tafsir overlays; 20 further original Arabic excerpts plus the authentic Sahih Muslim 918a calamity dua.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
