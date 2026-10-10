@@ -754,6 +754,382 @@
         "ml": "ഈ നാമത്തെക്കുറിച്ചുള്ള ആദ്യ പുറംസ്രോതസ്സ് പരിശോധന: ഇവിടെ കാണുന്ന ഖുർആൻ വചനങ്ങളും നിർദിഷ്ട തഫ്സീർ ഭാഗങ്ങളും മാത്രം. മറ്റ് ഗ്രന്ഥങ്ങളിലെ മുഴുവൻ ഖവാസ്സുകൾ, ദുആകൾ, കളങ്ങൾ എന്നിവയുടെ ഗവേഷണം പൂർത്തിയായിട്ടില്ല.",
         "en": "First external-source review limited to the cited Quranic passages and selected tafsir. Exhaustive source books, prayers, figures and practices have not been reviewed."
       }
+    },
+    "PDF-HN-041": {
+      "canonical_arabic": "الْحَسِيبُ",
+      "english_name": "Al-Hasib",
+      "explanation": {
+        "ml": "അൽ-ഹസീബ് — കണക്കെടുക്കുന്നവൻ, മതിയായവൻ. അന്നിസാഅ് 4:86-ൽ അല്ലാഹു എല്ലാ കാര്യത്തിന്റെയും ഹസീബാണെന്ന് പറയുന്നു; അഭിവാദ്യത്തിന് മറുപടി നൽകുന്ന സാമൂഹ്യ മര്യാദയോടാണ് ഈ വചനം ബന്ധപ്പെട്ടിരിക്കുന്നത്. അന്നിസാഅ് 4:6-ൽ അനാഥരുടെ സമ്പത്ത് ഉത്തരവാദിത്തത്തോടെ കൈമാറുന്നതിന്റെ അവസാനം അല്ലാഹു കണക്ക് ചോദിക്കുന്നവനായി പരാമർശിക്കപ്പെടുന്നു. ഇത് ആളുകളെ നിയന്ത്രിക്കുന്ന ഏതെങ്കിലും പ്രത്യേക കളം നൽകുന്നില്ല.",
+        "en": "Al-Hasib denotes the Reckoner and the Sufficient. Quran 4:86 refers to God's accounting in the context of exchanging greetings; 4:6 refers to accountability for the property of orphans. Neither passage teaches a talisman for controlling others."
+      },
+      "evidence": [
+        {
+          "id": "hasib-4-86",
+          "title": {
+            "ml": "അഭിവാദ്യവും അല്ലാഹുവിന്റെ കണക്കെടുപ്പും — 4:86",
+            "en": "Responding to greetings and divine reckoning — 4:86"
+          },
+          "arabic_original": "وَإِذَا حُيِّيتُم بِتَحِيَّةٍ فَحَيُّوا بِأَحْسَنَ مِنْهَا أَوْ رُدُّوهَا ۗ إِنَّ اللَّهَ كَانَ عَلَىٰ كُلِّ شَيْءٍ حَسِيبًا",
+          "translation": {
+            "ml": "നിങ്ങൾക്ക് അഭിവാദ്യം ലഭിച്ചാൽ അതിനേക്കാൾ നല്ലതായോ അതേപോലെയോ മറുപടി നൽകുക; തീർച്ചയായും അല്ലാഹു എല്ലാ കാര്യത്തിന്റെയും കണക്ക് എടുക്കുന്നവനാണ്. ഇവിടെ «ഹസീബാ» എന്ന വിശേഷണരൂപം വരുന്നു.",
+            "en": "Return a greeting with a better or equivalent one; God takes account of everything. The form 'hasiba' appears as a predicate, not the definite noun al-Hasib."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 4:86 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya86.html",
+          "claim_kind": "attribute_form_not_exact_name"
+        },
+        {
+          "id": "hasib-4-6",
+          "title": {
+            "ml": "അനാഥരുടെ ധനത്തിന്റെ കണക്കെടുപ്പിന് അല്ലാഹു മതിയാകുന്നു — 4:6-ലെ അവസാനഭാഗം",
+            "en": "Allah is sufficient as Reckoner — final excerpt 4:6"
+          },
+          "arabic_original": "وَكَفَىٰ بِاللَّهِ حَسِيبًا",
+          "translation": {
+            "ml": "അനാഥരുടെ സ്വത്തുക്കൾ അവകാശികളിലേക്ക് ഉത്തരവാദിത്തത്തോടെ കൈമാറണമെന്ന ആയത്തിന്റെ അവസാനഭാഗമാണ് ഇത്. പൂർണ വചനം ഇവിടെ നൽകിയിട്ടില്ല.",
+            "en": "The closing words of a verse about returning orphans' property responsibly. This is an excerpt, not the full verse."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 4:6 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya6.html",
+          "claim_kind": "attribute_form_not_exact_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "hasib-kathir-4-6",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — അനാഥരുടെ സ്വത്തും ഉത്തരവാദിത്തവും",
+            "en": "Ibn Kathir — orphans' property and accounting"
+          },
+          "translation": {
+            "ml": "ഇബ്‌നു കസീർ «ഹസീബാ» എന്നതിനെ അനാഥരുടെ സ്വത്ത് കൈകാര്യം ചെയ്യുന്ന രക്ഷിതാക്കൾക്കുമേൽ അല്ലാഹു കണക്ക് നോക്കുന്നവനും സാക്ഷിയുമാണെന്ന സന്ദർഭത്തിൽ വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains 'hasiba' here as divine accounting, witnessing, and oversight of guardians handling orphans' assets."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 4:6 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya6.html",
+          "claim_kind": "attributed_tafsir_summary"
+        },
+        {
+          "id": "hasib-kathir-4-86",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — സലാമിന് മറുപടി നൽകൽ",
+            "en": "Ibn Kathir — responding fairly to greetings"
+          },
+          "translation": {
+            "ml": "മറ്റൊരാൾ നൽകിയ സലാമിനെ അതിന് തുല്യമായോ അതിലേറെ നല്ലതായോ തിരിച്ച് നൽകണമെന്ന സന്ദർഭം ഇബ്‌നു കസീർ വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains the requirement to respond to a greeting with an equivalent or better greeting."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 4:86 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya86.html",
+          "claim_kind": "attributed_tafsir_summary"
+        }
+      ],
+      "topics": [],
+      "name_id": "PDF-HN-041",
+      "reviewed_on": "2026-10-10",
+      "coverage": {
+        "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ/തഫ്സീർ വചനങ്ങളും ഉണ്ടെങ്കിൽ ഒരു ഹദീസും മാത്രം പരിശോധിച്ച ആദ്യഘട്ട ഗവേഷണം. എല്ലാ പരമ്പരാഗത ഗ്രന്ഥങ്ങളും ദുആകളും കളങ്ങളും പരിശോധിച്ചു കഴിഞ്ഞിട്ടില്ല.",
+        "en": "Initial limited review of selected Quran, tafsir and where applicable one hadith. This is not exhaustive coverage of historical texts, prayers or figures."
+      }
+    },
+    "PDF-HN-042": {
+      "canonical_arabic": "الْجَلِيلُ",
+      "english_name": "Al-Jalil",
+      "explanation": {
+        "ml": "അൽ-ജലീൽ എന്നതിന്റെ ആശയം മഹത്വവും ഗൗരവവുമാണ്. അർ-റഹ്മാൻ 55:27-ലും 55:78-ലും «ദുൽ/ദീൽ ജലാലി വൽ ഇക്‌റാം» എന്ന ദൈവിക വിശേഷണം ഉണ്ട്. ഇവിടെ «അൽ-ജലീൽ» എന്ന സ്വതന്ത്ര നാമരൂപം വരുന്നില്ല; ജലാൽ എന്ന മഹത്വഗുണത്തോടുള്ള ബന്ധമാണ് രേഖപ്പെടുത്തുന്നത്. ഇബ്‌നു കസീർ ഇതിന്റെ ആശയം ആദരിക്കപ്പെടേണ്ട മഹത്വം എന്നാണ് വിശദീകരിക്കുന്നത്.",
+        "en": "Al-Jalil relates to majesty. Quran 55:27 and 55:78 mention the Lord possessing majesty and honor, rather than the standalone nominal Name al-Jalil. Ibn Kathir interprets the passage in terms of His lasting majesty and the honor owed to Him."
+      },
+      "evidence": [
+        {
+          "id": "jalil-55-27",
+          "title": {
+            "ml": "ശാശ്വത മഹത്വം — അർ-റഹ്മാൻ 55:27",
+            "en": "Enduring Majesty — ar-Rahman 55:27"
+          },
+          "arabic_original": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+          "translation": {
+            "ml": "മഹത്വത്തിന്റെയും ആദരത്തിന്റെയും ഉടമയായ നിന്റെ രക്ഷിതാവിന്റെ മുഖം നിലനിൽക്കും. ഈ വാക്യത്തിൽ «ജലാൽ» ഗുണമാണ്; അൽ-ജലീൽ എന്ന നാമരൂപമല്ല.",
+            "en": "The Face of your Lord, Possessor of Majesty and Honor, endures. 'Jalal' is an attribute in this verse, not the independent nominal Name al-Jalil."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 55:27 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        },
+        {
+          "id": "jalil-55-78",
+          "title": {
+            "ml": "മഹത്വവും ആദരവുമുള്ള നാമം — 55:78",
+            "en": "The blessed Name of the Possessor of Majesty — 55:78"
+          },
+          "arabic_original": "تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ",
+          "translation": {
+            "ml": "മഹത്വത്തിന്റെയും ആദരത്തിന്റെയും ഉടമയായ നിന്റെ രക്ഷിതാവിന്റെ നാമം അനുഗ്രഹപൂർണമാണ്. അൽ-ജലീൽ എന്ന സ്വതന്ത്ര നാമരൂപമല്ല ഇത്.",
+            "en": "Blessed is the Name of your Lord, Possessor of Majesty and Honor. This is not a direct occurrence of the standalone Name al-Jalil."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 55:78 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya78.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "jalil-kathir-55-27",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — ദൈവിക മഹത്വവും ശാശ്വതതയും",
+            "en": "Ibn Kathir — divine majesty and permanence"
+          },
+          "translation": {
+            "ml": "സൃഷ്ടികൾ നശിക്കുന്നവരും അല്ലാഹു ശാശ്വതനുമാണെന്ന് ഇബ്‌നു കസീർ വിവരിക്കുന്നു; «ദുൽ ജലാലി വൽ ഇക്‌റാം» മഹത്വവും ആദരിക്കപ്പെടേണ്ട സ്ഥാനവും സൂചിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir contrasts the mortality of creation with the endurance of God, explaining 'Possessor of Majesty and Honor'."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 55:27 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "claim_kind": "attributed_tafsir_summary"
+        },
+        {
+          "id": "jalil-kathir-55-78",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — ആദരവും അനുസരണവും",
+            "en": "Ibn Kathir — honoring and obeying God"
+          },
+          "translation": {
+            "ml": "55:78-ൽ മഹത്വത്തിന് അനുയോജ്യമായ ആദരവും ആരാധനയും നന്ദിയും മറക്കാതിരിക്കലുമാണ് ഇബ്‌നു കസീർ ഊന്നിപ്പറയുന്നത്; പ്രത്യേക കളമോ സംഖ്യയോ അല്ല.",
+            "en": "In 55:78 Ibn Kathir emphasizes honor, worship, gratitude, and remembrance rather than an occult grid or number."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 55:78 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya78.html",
+          "claim_kind": "attributed_tafsir_summary"
+        }
+      ],
+      "topics": [],
+      "name_id": "PDF-HN-042",
+      "reviewed_on": "2026-10-10",
+      "coverage": {
+        "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ/തഫ്സീർ വചനങ്ങളും ഉണ്ടെങ്കിൽ ഒരു ഹദീസും മാത്രം പരിശോധിച്ച ആദ്യഘട്ട ഗവേഷണം. എല്ലാ പരമ്പരാഗത ഗ്രന്ഥങ്ങളും ദുആകളും കളങ്ങളും പരിശോധിച്ചു കഴിഞ്ഞിട്ടില്ല.",
+        "en": "Initial limited review of selected Quran, tafsir and where applicable one hadith. This is not exhaustive coverage of historical texts, prayers or figures."
+      }
+    },
+    "PDF-HN-044": {
+      "canonical_arabic": "الرَّشِيدُ",
+      "english_name": "Ar-Rashid",
+      "explanation": {
+        "ml": "അർ-റശീദ് — ശരിയായ മാർഗത്തിലേക്ക് നയിക്കുന്നവൻ എന്ന അർഥത്തോട് ബന്ധപ്പെട്ട നാമം. അൽ-കഹ്ഫ് 18:10-ൽ ഗുഹാവാസികളായ യുവാക്കൾ കാര്യം ശരിയായി ക്രമീകരിച്ചുതരണമെന്നു പ്രാർത്ഥിക്കുന്നു; 18:17-ൽ «മുർഷിദാ» എന്ന വഴികാട്ടിയെക്കുറിച്ച് പറയുന്നു. എന്നാൽ ആ വചനങ്ങളിൽ «അർ-റശീദ്» എന്ന സ്വതന്ത്ര ദൈവിക നാമം നേരിട്ടു വരുന്നില്ല. ബന്ധപ്പെട്ട ദുആയ്ക്ക് നിശ്ചിത ജപസംഖ്യയും പറയുന്നില്ല.",
+        "en": "Ar-Rashid relates to right guidance. The youths in the Cave ask for 'rashadan' in 18:10, and 18:17 uses 'murshida' in a statement about guidance. Neither verse explicitly contains the standalone name ar-Rashid or a named repetition practice."
+      },
+      "evidence": [
+        {
+          "id": "rashid-18-10",
+          "title": {
+            "ml": "ഗുഹാവാസികളുടെ ദുആ — 18:10",
+            "en": "Companions of the Cave supplication — 18:10"
+          },
+          "arabic_original": "إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+          "translation": {
+            "ml": "യുവാക്കൾ ഗുഹയിൽ അഭയം തേടി: ഞങ്ങളുടെ രക്ഷിതാവേ, നിന്റെ അടുക്കൽനിന്നുള്ള കരുണയും ഞങ്ങളുടെ കാര്യത്തിൽ ശരിയായ മാർഗവും ഒരുക്കേണമേ. «റശദാ» എന്ന പദം വരുന്നു; അർ-റശീദ് എന്ന നാമമല്ല.",
+            "en": "The youths seek refuge in the Cave and ask Allah for mercy and right guidance ('rashadan'), not by explicitly reciting the Name ar-Rashid."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 18:10 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya10.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        },
+        {
+          "id": "rashid-18-17",
+          "title": {
+            "ml": "മാർഗദർശനം അല്ലാഹുവിൽനിന്ന് — 18:17-ലെ ഭാഗം",
+            "en": "Guidance comes from Allah — excerpt of 18:17"
+          },
+          "arabic_original": "مَن يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ ۖ وَمَن يُضْلِلْ فَلَن تَجِدَ لَهُ وَلِيًّا مُّرْشِدًا",
+          "translation": {
+            "ml": "അല്ലാഹു നേർവഴിയാക്കുന്നവനാണ് നേർവഴിയിലായവൻ; അവൻ വഴിതെറ്റാൻ വിടുന്നവനു യഥാർഥ വഴികാട്ടിയെ കണ്ടെത്തുകയില്ല. «മുർഷിദാ» എന്നാണ് വചനത്തിൽ ഉള്ളത്.",
+            "en": "Whoever Allah guides is rightly guided, and whoever He allows to stray finds no guiding protector. The source word is 'murshida'."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 18:17 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya17.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "rashid-kathir-18-10",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — ഗുഹാവാസികളുടെ വിശ്വാസവും സംരക്ഷണവും",
+            "en": "Ibn Kathir — the Cave youths' plea for mercy"
+          },
+          "translation": {
+            "ml": "യുവാക്കളുടെ വിശ്വാസപരമായ പ്രതിസന്ധിയും സംരക്ഷണത്തിനുള്ള അപേക്ഷയും 18:10-ന്റെ തഫ്സീറിൽ വിശദീകരിക്കുന്നു; മന്ത്രസംഖ്യയെക്കുറിച്ചുള്ള നിർദേശം അല്ല.",
+            "en": "The tafsir recounts the youths' need for divine mercy and guidance during a dangerous situation; not a fixed-number invocation."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 18:10 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya10.html",
+          "claim_kind": "attributed_tafsir_summary"
+        },
+        {
+          "id": "rashid-kathir-18-17",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — യഥാർഥ മാർഗദർശനം",
+            "en": "Ibn Kathir — who truly guides"
+          },
+          "translation": {
+            "ml": "അല്ലാഹു അവരെ സന്മാർഗത്തിലേക്ക് നയിച്ചതെന്നും യഥാർഥ മാർഗദർശകൻ അവനാണെന്നുമുള്ള വിഷയമായി 18:17-ലെ തഫ്സീർ അവതരിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir explains that Allah guided the youths; those He guides are guided, and those left astray cannot find a true guide."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 18:17 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya17.html",
+          "claim_kind": "attributed_tafsir_summary"
+        }
+      ],
+      "topics": [
+        {
+          "id": "rashid-dua-18-10",
+          "purpose": "knowledge",
+          "title": {
+            "ml": "നല്ല തീരുമാനവും വഴികാട്ടലും ലഭിക്കാൻ ഗുഹാവാസികളുടെ ദുആ",
+            "en": "The Cave youths' prayer for right guidance"
+          },
+          "arabic_original": "رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+          "translation": {
+            "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, നിന്റെ അടുക്കൽനിന്ന് കരുണ തരികയും ഞങ്ങളുടെ കാര്യത്തിന് യോജിച്ച ശരിയായ മാർഗം ഒരുക്കുകയും ചെയ്യേണമേ. ആയത്തിൽ ഓതേണ്ട എണ്ണം പറയുന്നില്ല.",
+            "en": "Our Lord, grant us mercy from Yourself and guide our affairs rightly. No recitation count is specified in the verse."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 18:10 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya10.html",
+          "claim_kind": "contextual_quranic_prayer",
+          "count": {
+            "ml": "ഈ വചനത്തിൽ നാമത്തിനായി പ്രത്യേക ജപസംഖ്യ നിർദേശിക്കുന്നില്ല.",
+            "en": "The cited verse gives no special count for reciting the Name."
+          },
+          "timing": {
+            "ml": "പ്രത്യേക ദിവസം, സമയം, ദിവസസംഖ്യ എന്നിവ ഈ വചനത്തിൽ ഇല്ല.",
+            "en": "No specified day, clock time, or number of days appears in this passage."
+          },
+          "conditions": {
+            "ml": "കളം, തകിട്, മുദ്ര, വസ്തു, പ്രത്യേക ക്രമം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+            "en": "The verse prescribes no square, amulet, seal, materials or special ritual setup."
+          },
+          "source_scope": {
+            "ml": "ഖുർആനിലെ വിഷയബന്ധിത പ്രാർത്ഥന; ഒരു ദൈവിക നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ചൊല്ലാനുള്ള നിർദേശമായി ഇതിനെ മാറ്റരുത്.",
+            "en": "A related Quranic prayer, not a prescribed stand-alone counted practice for this divine name."
+          }
+        }
+      ],
+      "name_id": "PDF-HN-044",
+      "reviewed_on": "2026-10-10",
+      "coverage": {
+        "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ/തഫ്സീർ വചനങ്ങളും ഉണ്ടെങ്കിൽ ഒരു ഹദീസും മാത്രം പരിശോധിച്ച ആദ്യഘട്ട ഗവേഷണം. എല്ലാ പരമ്പരാഗത ഗ്രന്ഥങ്ങളും ദുആകളും കളങ്ങളും പരിശോധിച്ചു കഴിഞ്ഞിട്ടില്ല.",
+        "en": "Initial limited review of selected Quran, tafsir and where applicable one hadith. This is not exhaustive coverage of historical texts, prayers or figures."
+      }
+    },
+    "PDF-HN-045": {
+      "canonical_arabic": "الصَّبُورُ",
+      "english_name": "As-Sabur",
+      "explanation": {
+        "ml": "അസ്-സബൂർ — ക്ഷമയും സഹനവും എന്ന അർഥങ്ങളുമായി ബന്ധപ്പെട്ട് പാരമ്പര്യ നാമപട്ടികകളിൽ കാണുന്നു. ഖുർആൻ 16:127 ക്ഷമയ്ക്ക് അല്ലാഹുവിന്റെ സഹായം വേണമെന്ന് പറയുകയും 2:153 ക്ഷമയും നമസ്കാരവും കൊണ്ട് സഹായം തേടണമെന്ന് പഠിപ്പിക്കുകയും ചെയ്യുന്നു. ഈ രണ്ടിടത്തും അസ്-സബൂർ എന്ന നാമരൂപം നേരിട്ട് ഇല്ല. എന്നാൽ സഹനത്തെക്കുറിച്ച് അല്ലാഹുവിനെ വിശേഷിപ്പിക്കുന്ന സഹീഹുൽ ബുഖാരി 6099-ലെ നബിവചനവും ഇവിടെ പ്രത്യേകം ഉദ്ധരിക്കുന്നു. അതിലും നിശ്ചിത ജപസംഖ്യ ഇല്ല.",
+        "en": "As-Sabur is found in traditional name lists relating to patience. Quran 16:127 and 2:153 concern patience and help through prayer, but do not use the stand-alone Divine Name as-Sabur. Bukhari 6099 describes God's extraordinary patience with harm heard, while specifying no recitation count."
+      },
+      "evidence": [
+        {
+          "id": "sabur-16-127",
+          "title": {
+            "ml": "16:127 — ക്ഷമിക്കാൻ അല്ലാഹുവിന്റെ സഹായം",
+            "en": "16:127 — patience by Allah's help"
+          },
+          "arabic_original": "وَاصْبِرْ وَمَا صَبْرُكَ إِلَّا بِاللَّهِ ۚ وَلَا تَحْزَنْ عَلَيْهِمْ وَلَا تَكُ فِي ضَيْقٍ مِّمَّا يَمْكُرُونَ",
+          "translation": {
+            "ml": "ക്ഷമിക്കുക; നിന്റെ ക്ഷമ അല്ലാഹുവിന്റെ സഹായത്താൽ മാത്രമാണ്. അവർ ചെയ്യുന്നതിനെക്കുറിച്ച് ദുഃഖത്തിലോ മനസ്സിടുക്കത്തിലോ വീഴരുത്. ഇവിടെ നാമം «അസ്-സബൂർ» എന്ന രൂപത്തിൽ വരുന്നില്ല.",
+            "en": "Be patient; your patience is only through Allah's help. Do not grieve or be distressed by their plotting. The standalone name as-Sabur is absent."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 16:127 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya127.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        },
+        {
+          "id": "sabur-2-153",
+          "title": {
+            "ml": "2:153 — ക്ഷമയും നമസ്കാരവും കൊണ്ട് സഹായം തേടുക",
+            "en": "2:153 — seek help with patience and prayer"
+          },
+          "arabic_original": "يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "translation": {
+            "ml": "വിശ്വാസികളേ, ക്ഷമയും നമസ്കാരവും വഴി സഹായം തേടുക; അല്ലാഹു ക്ഷമയുള്ളവരോടൊപ്പമാണ്. ക്ഷമയ്ക്കുള്ള ഉപദേശമാണ്, പ്രത്യേക നാമം ഓതാനുള്ള എണ്ണം അല്ല.",
+            "en": "Believers, seek help through patience and prayer; Allah is with the patient. This gives ethical guidance, not a count for chanting as-Sabur."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 2:153 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya153.html",
+          "claim_kind": "thematic_relation_not_exact_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "sabur-kathir-16",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — ക്ഷമയുടെ ശക്തി അല്ലാഹുവിൽനിന്ന്",
+            "en": "Ibn Kathir — patience through God's support"
+          },
+          "translation": {
+            "ml": "ക്ഷമയ്ക്ക് അല്ലാഹുവിന്റെ ഇച്ഛയും സഹായവും ശക്തിയും ആവശ്യമാണെന്ന് 16:127-ൽ ഇബ്‌നു കസീർ വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir says attaining patience depends on divine assistance, will and power."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 16:127 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya127.html",
+          "claim_kind": "attributed_tafsir_summary"
+        },
+        {
+          "id": "sabur-kathir-2",
+          "title": {
+            "ml": "ഇബ്‌നു കസീർ — പരീക്ഷണത്തിൽ ക്ഷമയും നമസ്കാരവും",
+            "en": "Ibn Kathir — patience and prayer in affliction"
+          },
+          "translation": {
+            "ml": "പരീക്ഷണങ്ങളും വിഷമങ്ങളും നേരിടാനുള്ള മികച്ച സഹായമായി ക്ഷമയെയും നമസ്കാരത്തെയും ഇബ്‌നു കസീർ വിശദീകരിക്കുന്നു; ദിക്‌റിന്റെ പ്രത്യേക എണ്ണമൊന്നും നിശ്ചയിക്കുന്നില്ല.",
+            "en": "Ibn Kathir discusses patience and prayer as ways to face trials and hardship; he does not establish a special numerical chanting practice."
+          },
+          "review_status": "checked_against_digital_text",
+          "source_reference": "Quran 2:153 · Tafsir Ibn Kathir (King Saud University)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya153.html",
+          "claim_kind": "attributed_tafsir_summary"
+        }
+      ],
+      "hadith": [
+        {
+          "id": "sabur-bukhari-6099",
+          "title": {
+            "ml": "സഹീഹുൽ ബുഖാരി 6099 — അല്ലാഹുവിന്റെ സഹനം",
+            "en": "Sahih al-Bukhari 6099 — divine patience"
+          },
+          "arabic_original": "لَيْسَ أَحَدٌ ـ أَوْ لَيْسَ شَىْءٌ ـ أَصْبَرَ عَلَى أَذًى سَمِعَهُ مِنَ اللَّهِ، إِنَّهُمْ لَيَدْعُونَ لَهُ وَلَدًا، وَإِنَّهُ لَيُعَافِيهِمْ وَيَرْزُقُهُمْ",
+          "translation": {
+            "ml": "അബൂമൂസാ (റ) നിവേദനം: അല്ലാഹുവിനെക്കാൾ തനിക്കെതിരെ പറയുന്ന ദോഷകരമായ വാക്കുകളെ കൂടുതൽ സഹിക്കുന്ന മറ്റൊരാളുമില്ല. മനുഷ്യർ അവന് സന്താനമുണ്ടെന്ന് ആരോപിച്ചിട്ടും അവൻ അവർക്കു ആരോഗ്യം നൽകുകയും ഉപജീവനം നൽകുകയും ചെയ്യുന്നു. റിപ്പോർട്ടിൽ «അസ്വ്ബറ» (കൂടുതൽ ക്ഷമയുള്ളവൻ) എന്ന രൂപമാണ്; «അസ്-സബൂർ» എന്ന നാമം നേരിട്ട് പറഞ്ഞിട്ടില്ല.",
+            "en": "Abu Musa reports that no one is more patient with hurtful statements than Allah; despite people attributing a child to Him, He grants wellbeing and provision. The wording 'asbara' is a comparative adjective, not the nominal name as-Sabur."
+          },
+          "source_reference": "Sahih al-Bukhari 6099 · Book 78, Hadith 126",
+          "source_url": "https://sunnah.com/bukhari:6099",
+          "claim_kind": "prophetic_hadith",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": [],
+      "name_id": "PDF-HN-045",
+      "reviewed_on": "2026-10-10",
+      "coverage": {
+        "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ/തഫ്സീർ വചനങ്ങളും ഉണ്ടെങ്കിൽ ഒരു ഹദീസും മാത്രം പരിശോധിച്ച ആദ്യഘട്ട ഗവേഷണം. എല്ലാ പരമ്പരാഗത ഗ്രന്ഥങ്ങളും ദുആകളും കളങ്ങളും പരിശോധിച്ചു കഴിഞ്ഞിട്ടില്ല.",
+        "en": "Initial limited review of selected Quran, tafsir and where applicable one hadith. This is not exhaustive coverage of historical texts, prayers or figures."
+      }
     }
   }
 }
