@@ -1,157 +1,4 @@
 {
-  "PDF-HN-025": {
-    "name_id": "PDF-HN-025",
-    "reviewed_on": "2026-10-10",
-    "coverage": {
-      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
-      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
-    },
-    "explanation": {
-      "ml": "അസ്-സമീഅ് എന്ന നാമം അല്ലാഹുവിന്റെ എല്ലാം കേൾക്കുന്ന അറിവിനെ സൂചിപ്പിക്കുന്നു. ശബ്ദമോ ഭാഷയോ വ്യത്യാസപ്പെട്ടാലും അവന്റെ കേൾവി സൃഷ്ടികളുടെ കേൾവിയോട് ഉപമിക്കാനാവില്ല. അശ്ശൂറാ 42:11-ൽ 'അവനെപ്പോലെ ഒന്നുമില്ല' എന്നതിനോടൊപ്പം അസ്-സമീഅ്, അൽ-ബസ്വീർ എന്നിവ വരുന്നു.",
-      "en": "As-Sami denotes Allah's complete hearing. The Quran places hearing alongside sight while denying any likeness between Allah and creation; it does not support treating divine hearing as a human physical faculty."
-    },
-    "evidence": [
-      {
-        "id": "quran-42-11",
-        "title": {
-          "ml": "ഖുർആനിലെ പരാമർശം — 42:11",
-          "en": "Quran 42:11"
-        },
-        "arabic_original": "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ ۚ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَمِنَ الْأَنْعَامِ أَزْوَاجًا ۖ يَذْرَؤُكُمْ فِيهِ ۚ لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
-        "translation": {
-          "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും സ്രഷ്ടാവ്. നിങ്ങൾക്കായി നിങ്ങളുടെ വർഗത്തിൽനിന്ന് ഇണകളെയും കന്നുകാലികളിൽനിന്ന് ഇണകളെയും അവൻ ഉണ്ടാക്കി. അതിലൂടെ അവൻ നിങ്ങളെ പെരുപ്പിക്കുന്നു. അവനെപ്പോലെ ഒന്നുമില്ല. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
-          "en": "Originator of the heavens and earth. He made mates for you from among yourselves, and pairs among livestock; through this He multiplies you. Nothing is like Him. He is the All-Hearing, the All-Seeing."
-        },
-        "source_reference": "Quran 42:11",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "scholarly": [
-      {
-        "id": "ibn-kathir-42-11",
-        "title": {
-          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 42:11",
-          "en": "Ibn Kathir's explanation — Quran 42:11"
-        },
-        "translation": {
-          "ml": "ഇബ്നു കസീർ ഇവിടെ സൃഷ്ടികളിൽ ഒരാളോടും ഉപമിക്കാനാകാത്ത അല്ലാഹുവിന്റെ ഏകതയെ വിശദീകരിക്കുന്നു. കേൾവി എന്ന വിശേഷണം സൃഷ്ടിയോട് സാദൃശ്യം കൽപ്പിക്കുന്നതായി ഇവിടെ കാണരുത്.",
-          "en": "Ibn Kathir explains that nothing resembles Allah. The name affirms divine hearing without making it analogous to creaturely hearing."
-        },
-        "source_reference": "تفسير ابن كثير — Quran 42:11",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "topics": []
-  },
-  "PDF-HN-026": {
-    "name_id": "PDF-HN-026",
-    "reviewed_on": "2026-10-10",
-    "coverage": {
-      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
-      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
-    },
-    "explanation": {
-      "ml": "അൽ-ബസ്വീർ എന്ന നാമം എല്ലാ കാര്യങ്ങളും കാണുന്നവനെന്ന അർഥം സൂചിപ്പിക്കുന്നു. ഖുർആൻ 42:11-ൽ അസ്-സമീഅിനൊപ്പം വരുന്നു; അതേ ആയത്ത് സൃഷ്ടികളുമായി യാതൊരു സാമ്യവും ഇല്ലെന്ന് പറയുന്നു. ഒരു നിശ്ചിത സംഖ്യ ചൊല്ലിയാൽ കാണാത്തത് കാണാനാകുമെന്ന അവകാശവാദം ഈ ആയത്തിൽ ഇല്ല.",
-      "en": "Al-Basir denotes the All-Seeing, paired with al-Sami in Quran 42:11. The verse denies resemblance between Allah and creation; it does not promise supernatural perception through a special repetition count."
-    },
-    "evidence": [
-      {
-        "id": "quran-42-11",
-        "title": {
-          "ml": "ഖുർആനിലെ പരാമർശം — 42:11",
-          "en": "Quran 42:11"
-        },
-        "arabic_original": "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ ۚ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَمِنَ الْأَنْعَامِ أَزْوَاجًا ۖ يَذْرَؤُكُمْ فِيهِ ۚ لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
-        "translation": {
-          "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും സ്രഷ്ടാവ്. നിങ്ങൾക്കായി നിങ്ങളുടെ വർഗത്തിൽനിന്ന് ഇണകളെയും കന്നുകാലികളിൽനിന്ന് ഇണകളെയും അവൻ ഉണ്ടാക്കി. അതിലൂടെ അവൻ നിങ്ങളെ പെരുപ്പിക്കുന്നു. അവനെപ്പോലെ ഒന്നുമില്ല. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
-          "en": "Originator of the heavens and earth. He made mates for you from among yourselves, and pairs among livestock; through this He multiplies you. Nothing is like Him. He is the All-Hearing, the All-Seeing."
-        },
-        "source_reference": "Quran 42:11",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "scholarly": [
-      {
-        "id": "ibn-kathir-42-11",
-        "title": {
-          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 42:11",
-          "en": "Ibn Kathir's explanation — Quran 42:11"
-        },
-        "translation": {
-          "ml": "ഇബ്നു കസീർ സൃഷ്ടികളിൽ ഒരാളും അല്ലാഹുവിന് തുല്യനല്ല എന്ന വാക്യം അടിസ്ഥാനമാക്കി തഫ്സീർ ചെയ്യുന്നു. അല്ലാഹുവിന്റെ കാണൽ മനുഷ്യന്റെ ഇന്ദ്രിയകാഴ്ചയെന്ന രീതിയിൽ പരിമിതപ്പെടുത്തരുത്.",
-          "en": "Ibn Kathir emphasizes God's incomparability; the predicate 'Seeing' should not be reduced to a human sensory mechanism."
-        },
-        "source_reference": "تفسير ابن كثير — Quran 42:11",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "topics": []
-  },
-  "PDF-HN-030": {
-    "name_id": "PDF-HN-030",
-    "reviewed_on": "2026-10-10",
-    "coverage": {
-      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
-      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
-    },
-    "explanation": {
-      "ml": "അൽ-വദൂദ് സ്നേഹപൂർവ്വമായ ദൈവിക കരുണയും അടുപ്പവും സൂചിപ്പിക്കുന്നു. അൽ-ബുറൂജ് 85:14-ൽ അൽ-ഗഫൂറിനൊപ്പം വരുന്നു. ഹൂദ് 11:90-ൽ ശുഐബ് നബി തന്റെ ജനതയോട് ഇസ്തിഗ്ഫാറും തൗബയും ആവശ്യപ്പെട്ട് അല്ലാഹു റഹീമും വദൂദുമാണെന്ന് പറയുന്നു.",
-      "en": "Al-Wadud conveys Allah's loving mercy. Quran 85:14 pairs the name with the All-Forgiving; 11:90 places loving mercy in Shuayb's call to ask forgiveness and turn back to Allah."
-    },
-    "evidence": [
-      {
-        "id": "quran-85-14",
-        "title": {
-          "ml": "ഖുർആനിലെ പരാമർശം — 85:14",
-          "en": "Quran 85:14"
-        },
-        "arabic_original": "وَهُوَ الْغَفُورُ الْوَدُودُ",
-        "translation": {
-          "ml": "അവൻ വളരെ പൊറുക്കുന്നവനും സ്നേഹമുള്ളവനുമാണ്.",
-          "en": "He is the All-Forgiving, the Loving."
-        },
-        "source_reference": "Quran 85:14",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya14.html",
-        "review_status": "checked_against_digital_text"
-      },
-      {
-        "id": "quran-11-90",
-        "title": {
-          "ml": "ഖുർആനിലെ പരാമർശം — 11:90",
-          "en": "Quran 11:90"
-        },
-        "arabic_original": "وَاسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
-        "translation": {
-          "ml": "നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക; തുടർന്ന് അവനിലേക്കു പശ്ചാത്തപിച്ചു മടങ്ങുക. എന്റെ രക്ഷിതാവ് കരുണാനിധിയും സ്നേഹമുള്ളവനുമാണ്.",
-          "en": "Seek your Lord’s forgiveness, then turn to Him in repentance. My Lord is Merciful and Loving."
-        },
-        "source_reference": "Quran 11:90",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya90.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "scholarly": [
-      {
-        "id": "ibn-kathir-85-14",
-        "title": {
-          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 85:14",
-          "en": "Ibn Kathir's explanation — Quran 85:14"
-        },
-        "translation": {
-          "ml": "ഇബ്നു കസീർ 85:14-ൽ ഇബ്നു അബ്ബാസ് മുതലായവരിൽനിന്ന് അൽ-വദൂദിനെ സ്നേഹമുള്ളവൻ എന്ന രീതിയിൽ വിശദീകരിക്കുന്നു; 11:90-ൽ പശ്ചാത്തപിക്കുന്നവരോടുള്ള ദൈവിക കരുണയെ അദ്ദേഹം സൂചിപ്പിക്കുന്നു.",
-          "en": "Ibn Kathir relays the explanation of al-Wadud as loving/beloved and in Quran 11:90 relates it to Allah's kindness to those who repent."
-        },
-        "source_reference": "تفسير ابن كثير — Quran 85:14",
-        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya14.html",
-        "review_status": "checked_against_digital_text"
-      }
-    ],
-    "topics": []
-  },
   "PDF-HN-062": {
     "name_id": "PDF-HN-062",
     "reviewed_on": "2026-10-10",
@@ -944,6 +791,144 @@
         },
         "source_reference": "تفسير ابن كثير — Quran 22:6",
         "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-079": {
+    "name_id": "PDF-HN-079",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ ഘട്ടത്തിൽ ഈ ആയത്തും അതിന്റെ ഇബ്നു കസീർ തഫ്സീറും പരിശോധിച്ചു. എല്ലാ ഗ്രന്ഥങ്ങളിലും ഈ നാമത്തെക്കുറിച്ചുള്ള മുഴുവൻ ഗവേഷണം നടത്തിയിട്ടില്ല. ആയത്തിൽ ആവർത്തനഎണ്ണമോ സമയമോ കളമോ നിർദേശിക്കുന്നില്ല.",
+      "en": "This phase checks the verse and Ibn Kathir's discussion. The full literature has not been surveyed; no repetition count, timing or magic square is prescribed by this verse."
+    },
+    "explanation": {
+      "ml": "അൽ-ബർറ് എന്ന നാമം കരുണയും നന്മയും ചെയ്യുന്ന അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്നു. അത്തൂർ 52:28-ൽ സ്വർഗത്തിലുള്ളവർ മുമ്പ് തങ്ങൾ പ്രാർത്ഥിച്ചിരുന്നതും അല്ലാഹു അൽ-ബർറും അർ-റഹീമുമാണെന്നും പറയുന്നു. ഇത് സ്രോതസ്സിന്റെ സന്ദർഭമാണ്; സമ്പത്ത് കിട്ടുമെന്ന് നിശ്ചിത ജപസംഖ്യ പറയുന്നില്ല.",
+      "en": "Al-Barr denotes the One abundant in goodness and mercy. Quran 52:28 records people of Paradise acknowledging that they called upon Allah and that He is al-Barr, al-Rahim. It gives no fixed repetition count for worldly wealth."
+    },
+    "evidence": [
+      {
+        "id": "quran-52-28",
+        "title": {
+          "ml": "ഖുർആനിലെ നാമം — 52:28",
+          "en": "Quranic wording — 52:28"
+        },
+        "arabic_original": "إِنَّا كُنَّا مِن قَبْلُ نَدْعُوهُ ۖ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ",
+        "translation": {
+          "ml": "മുമ്പ് ഞങ്ങൾ അവനെ പ്രാർത്ഥിച്ചുകൊണ്ടിരുന്നു; തീർച്ചയായും അവൻ മഹാ നന്മ ചെയ്യുന്നവനും കരുണാനിധിയുമാണ്.",
+          "en": "We used to call upon Him before; He is the Beneficent and Merciful."
+        },
+        "source_reference": "Quran 52:28",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura52-aya28.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-52-28",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 52:28",
+          "en": "Ibn Kathir commentary — 52:28"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ സ്വർഗത്തിലുള്ളവർ മുമ്പ് അല്ലാഹുവിനോട് വിനയത്തോടെ പ്രാർത്ഥിച്ചതിനാൽ അവരുടെ അപേക്ഷയ്ക്ക് ഉത്തരം നൽകിയെന്നാണ് വിശദീകരിക്കുന്നത്. ഗ്രന്ഥത്തിൽ വരുന്ന മറ്റൊരു റിപ്പോർട്ടിന്റെ സനദ് വിവാദം ഈ ആയത്തിലെ ഉറച്ച അർഥവുമായി കലർത്തരുത്.",
+          "en": "Ibn Kathir explains their statement as referring to supplication before Allah, who answered them. A separate narration discussed within the tafsir has chain issues and is not presented as an established Prophetic prescription."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 52:28",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura52-aya28.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-080": {
+    "name_id": "PDF-HN-080",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ ഘട്ടത്തിൽ ഈ ആയത്തും അതിന്റെ ഇബ്നു കസീർ തഫ്സീറും പരിശോധിച്ചു. എല്ലാ ഗ്രന്ഥങ്ങളിലും ഈ നാമത്തെക്കുറിച്ചുള്ള മുഴുവൻ ഗവേഷണം നടത്തിയിട്ടില്ല. ആയത്തിൽ ആവർത്തനഎണ്ണമോ സമയമോ കളമോ നിർദേശിക്കുന്നില്ല.",
+      "en": "This phase checks the verse and Ibn Kathir's discussion. The full literature has not been surveyed; no repetition count, timing or magic square is prescribed by this verse."
+    },
+    "explanation": {
+      "ml": "അത്ത്-തവ്വാബ് എന്ന നാമം പശ്ചാത്തപിക്കുന്നവരെ വീണ്ടും വീണ്ടും സ്വീകരിക്കുന്ന അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്നു. 2:37-ൽ ആദം നബിയുടെ തൗബയുമായി ചേർന്നാണ് അത്ത്-തവ്വാബ്, അർ-റഹീം എന്നു വരുന്നത്. ഈ ആയത്ത് പ്രത്യേക ദിവസമോ ജപസംഖ്യയോ നിർദേശിക്കുന്നില്ല.",
+      "en": "At-Tawwab denotes Allah's readiness to accept sincere repentance. Quran 2:37 places the name alongside al-Rahim in the account of Adam. It does not prescribe a fixed recitation count or schedule."
+    },
+    "evidence": [
+      {
+        "id": "quran-2-37",
+        "title": {
+          "ml": "ഖുർആനിലെ നാമം — 2:37",
+          "en": "Quranic wording — 2:37"
+        },
+        "arabic_original": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ ۚ إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
+        "translation": {
+          "ml": "ആദം തന്റെ രക്ഷിതാവിൽനിന്ന് ചില വാക്കുകൾ സ്വീകരിച്ചു; അല്ലാഹു അവന്റെ പശ്ചാത്താപം സ്വീകരിച്ചു. തീർച്ചയായും അവൻ പശ്ചാത്താപം സ്വീകരിക്കുന്നവനും കരുണാനിധിയുമാണ്.",
+          "en": "Adam received words from his Lord, and Allah accepted his repentance. He is the Accepter of Repentance, the Merciful."
+        },
+        "source_reference": "Quran 2:37",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya37.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-2-37",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:37",
+          "en": "Ibn Kathir commentary — 2:37"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ആദം സ്വീകരിച്ച 'വാക്കുകൾ' എന്താണെന്നതിൽ മുൻകാല വിശദീകരണങ്ങൾ രേഖപ്പെടുത്തുന്നു; അൽഅഅ്റാഫ് 7:23-ലെ ക്ഷമാപണ ദുആയുമായി അവയെ ബന്ധിപ്പിക്കുന്ന വ്യാഖ്യാനവും ഉണ്ട്. ചില നിവേദനങ്ങൾ ദുർബലമാണെന്ന് വേർതിരിക്കുന്നു.",
+          "en": "Ibn Kathir records several explanations of the words Adam received, including their connection to Quran 7:23, while noting that some other reports have weaknesses."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 2:37",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya37.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-082": {
+    "name_id": "PDF-HN-082",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ ഘട്ടത്തിൽ ഈ ആയത്തും അതിന്റെ ഇബ്നു കസീർ തഫ്സീറും പരിശോധിച്ചു. എല്ലാ ഗ്രന്ഥങ്ങളിലും ഈ നാമത്തെക്കുറിച്ചുള്ള മുഴുവൻ ഗവേഷണം നടത്തിയിട്ടില്ല. ആയത്തിൽ ആവർത്തനഎണ്ണമോ സമയമോ കളമോ നിർദേശിക്കുന്നില്ല.",
+      "en": "This phase checks the verse and Ibn Kathir's discussion. The full literature has not been surveyed; no repetition count, timing or magic square is prescribed by this verse."
+    },
+    "explanation": {
+      "ml": "അൽ-അഫുവ്വ് എന്ന ദൈവിക വിശേഷണം മാപ്പുനൽകുകയും കുറ്റം മായ്ക്കുകയും ചെയ്യുന്ന കരുണയെ സൂചിപ്പിക്കുന്നു. 4:149-ൽ നന്മ ചെയ്യുകയും മറ്റുള്ളവരുടെ തെറ്റ് ക്ഷമിക്കുകയും ചെയ്യാനുള്ള മനുഷ്യപരമായ ഉപദേശത്തോടൊപ്പം «عَفُوًّا قَدِيرًا» വരുന്നു. പ്രത്യേക മന്ത്രവാദപ്രയോഗമോ എണ്ണമോ ആയത്തിൽ ഇല്ല.",
+      "en": "Al-Afuww denotes Allah's pardoning grace. Quran 4:149 connects divine pardon and power to the encouragement to do good and forgive others. It gives no special charm or repetition count."
+    },
+    "evidence": [
+      {
+        "id": "quran-4-149",
+        "title": {
+          "ml": "ഖുർആനിലെ നാമം — 4:149",
+          "en": "Quranic wording — 4:149"
+        },
+        "arabic_original": "إِن تُبْدُوا خَيْرًا أَوْ تُخْفُوهُ أَوْ تَعْفُوا عَن سُوءٍ فَإِنَّ اللَّهَ كَانَ عَفُوًّا قَدِيرًا",
+        "translation": {
+          "ml": "നിങ്ങൾ നന്മ വെളിപ്പെടുത്തുകയോ മറച്ചുവെക്കുകയോ മറ്റൊരാളുടെ തെറ്റ് മാപ്പാക്കുകയോ ചെയ്താൽ അല്ലാഹു മാപ്പുനൽകുന്നവനും എല്ലാറ്റിനും കഴിവുള്ളവനുമാണ്.",
+          "en": "Whether you reveal good, conceal it, or pardon a wrong, Allah is Pardoning and Powerful."
+        },
+        "source_reference": "Quran 4:149",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya149.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-4-149",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 4:149",
+          "en": "Ibn Kathir commentary — 4:149"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ അല്ലാഹു ശിക്ഷിക്കാൻ കഴിവുള്ളവനായിരിക്കെ മാപ്പുനൽകുന്നുവെന്ന് വിശദീകരിക്കുന്നു. മറ്റു മനുഷ്യരുടെ തെറ്റ് മാപ്പാക്കൽ അല്ലാഹുവിനോടുള്ള അടുപ്പത്തിനുള്ള നല്ല സ്വഭാവമാണെന്നും പറയുന്നു.",
+          "en": "Ibn Kathir emphasizes that Allah pardons while possessing full power to punish, and praises forgiving those who wrong us."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 4:149",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya149.html",
         "review_status": "checked_against_digital_text"
       }
     ],
