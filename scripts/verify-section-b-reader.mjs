@@ -1119,7 +1119,7 @@ try {
   }
   assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('takyif')));
   assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('gharib')));
-  assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('not equally authenticated')));
+  assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('rather than securely Prophetic')));
   // This first deep expansion may not leak into a separate card's title, source section or Arabic verses.
   for(const id of ['PDF-HN-002','PDF-HN-003','PDF-HN-101']){
     const html=render(chapters[id]||null,id,'en',{pdf_name_id:id});
