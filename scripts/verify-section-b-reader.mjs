@@ -14,9 +14,10 @@ try {
     import Reader from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
     export {sectionBReading, unlinkedSectionBVisuals} from './src/lib/holyNames/sectionBReading.js';
     export {withSectionBMeaning} from './src/lib/holyNames/sectionBMeanings.js';
+    export {sectionBEntrySearchText} from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
     import {HolyNamesLanguageContext as Context} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx';
     export const render=(chapter,nameId,language,card)=>renderToStaticMarkup(React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId,card})));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
-  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning } = createRequire(import.meta.url)(output);
+  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning, sectionBEntrySearchText } = createRequire(import.meta.url)(output);
   const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
   for (const [id, chapter] of Object.entries(chapters)) {
     for (const language of ['ml', 'en']) {
@@ -1043,6 +1044,31 @@ try {
   assert.deepEqual([oralNumber,writtenNumber],[1,4]);
   assert.deepEqual(auditedValues.sort((a,b)=>a-b),[5,100,120,161,1132]);
   console.log('PASS: 11 source variants shown across 9 name cards, five original numbered book passages parsed as 1 recitation and 4 inscriptions.');
+
+  // Real search projection must index both source-edition readings and the exact kind of count.
+  for (const [id,row] of Object.entries(digitalVariants.entries)) {
+    const item={...historical.accounts[id], title:{ml:id,en:id}, edition_variants:row,
+      count_evidence:historicCounts.entries[id] || null, source_reference:bridge.source_reference};
+    for (const lang of ['ml','en']) {
+      const searchable=sectionBEntrySearchText(item,lang,'Historical name chapter');
+      assert.ok(searchable.includes('historical name chapter'));
+      for (const variant of row.variants) {
+        assert.ok(searchable.includes(variant.stored_phrase.toLocaleLowerCase()), 'Original reading not searchable: '+id);
+        assert.ok(searchable.includes(variant.alternative_phrase.toLocaleLowerCase()), 'Alternative reading not searchable: '+id);
+        assert.ok(searchable.includes(variant.note[lang].toLocaleLowerCase()), 'Variant explanation not searchable: '+id+'/'+lang);
+      }
+    }
+  }
+  for (const [id,count] of Object.entries(historicCounts.entries)) {
+    const item={...historical.accounts[id], title:{ml:id,en:id}, count_evidence:count};
+    for (const lang of ['ml','en']) {
+      const text=sectionBEntrySearchText(item,lang);
+      assert.ok(text.includes(String(count.value)),'Printed number not searchable: '+id);
+      assert.ok(text.includes(count.source_phrase.toLocaleLowerCase()),'Source wording not searchable: '+id);
+      assert.ok(text.includes(count.note[lang].toLocaleLowerCase()),'Count category not searchable: '+id+'/'+lang);
+    }
+  }
+  console.log('PASS: Arabic source variants, bilingual variant notes, and five historical recitation/inscription counts are searchable.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
