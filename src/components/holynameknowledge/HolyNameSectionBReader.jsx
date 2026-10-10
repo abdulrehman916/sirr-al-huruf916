@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import research from '@/data/holyNamesSectionBResearch.json';
+import topicalDuas from '@/data/holyNamesSectionBTopicalDuas.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
@@ -16,6 +17,7 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
   return <article id={`section-b-${entry.id}`} className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
     <h4 className="text-yellow-200 font-semibold">{t(entry.title)}</h4>
     <Arabic text={entry.arabic_original} />
+    {entry.source_scope && !entry.source_passage && <p className="text-xs text-amber-100/75 leading-relaxed">{t(entry.source_scope)}</p>}
     {entry.verse_meaning && <div className="space-y-2"><p className="text-xs text-yellow-200">{ml ? 'ആയത്തിന്റെ പൂർണ അർഥം' : 'Meaning of the complete verse'}</p><p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.verse_meaning)}</p><p className="text-xs text-white/50">{t(entry.translation_note)}</p></div>}
     {entry.multiple_verses?.map(verse => <div key={verse.ref} className="space-y-2"><p className="text-yellow-200 text-sm">{verse.ref}</p><Arabic text={verse.arabic} /><p className="text-white/90 leading-loose">{t(verse)}</p></div>)}
     {entry.multiple_verses?.length > 0 && <p className="text-xs text-white/50">{t(entry.translation_note)}</p>}
@@ -46,6 +48,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const ml = language === 'ml';
   const t = value => value?.[language] || '';
   const profile = research[nameId]?.name_id === nameId ? research[nameId] : null;
+  const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const checkedChapter = chapter?.name_id === nameId && chapter.review_status === 'checked_against_scan' ? chapter : null;
   const runtime = sectionBReading(card, nameId);
   if (!profile && !checkedChapter && (!card || card.pdf_name_id !== nameId)) return null;
@@ -53,7 +56,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...runtime.evidence] },
     { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: profile?.hadith || [] },
     { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...runtime.scholarly] },
-    { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...runtime.topics] },
+    { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...runtime.topics] },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
     { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
   ];
