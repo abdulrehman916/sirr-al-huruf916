@@ -1188,6 +1188,62 @@
           "Say Subhan Allah 33 times."
         ]
       }
+    },
+    {
+      "id": "hadith-bukhari-844-no-one-withholds-post-prayer",
+      "name_ids": [
+        "PDF-HN-089",
+        "PDF-HN-0200",
+        "PDF-HN-0149",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഫർദ് നമസ്കാരശേഷം: അല്ലാഹു നൽകുന്നത് തടയാനാവില്ല",
+        "en": "After obligatory prayer: none withholds what Allah grants"
+      },
+      "arabic_original": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+      "translation": {
+        "ml": "അല്ലാഹുവല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ ഏകനാണ്; പങ്കാളിയില്ല. രാജാധികാരവും സ്തുതിയും അവനാണ്; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്. അല്ലാഹുവേ, നീ നൽകിയതിനെ തടയാനോ നീ തടഞ്ഞതിനെ നൽകാനോ മറ്റാർക്കും കഴിയില്ല; സമ്പത്തിനും പദവിക്കും നിന്റെ മുമ്പിൽ സ്വതന്ത്രമായ പ്രയോജനമില്ല. മുഗീറ (റ) മുഖേന നബി ﷺ ഫർദ് നമസ്കാരശേഷം ഇത് പറഞ്ഞിരുന്നതായി റിപ്പോർട്ട് ചെയ്യുന്നു.",
+        "en": "None deserves worship but Allah alone, without partner. Sovereignty and praise belong to Him and He has power over everything. O Allah, none can withhold what You give, nor give what You withhold; wealth and status do not avail against You. Reported from the Prophet after obligatory prayer through al-Mughira."
+      },
+      "source_reference": "Sahih al-Bukhari 844; Sahih Muslim 593a",
+      "source_url": "https://sunnah.com/bukhari:844",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഇത് ഫർദ് നമസ്കാരശേഷമുള്ള പൂർണ നിവേദനമാണ്; «المانع» ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണം ചൊല്ലുന്ന വസീഫയല്ല. ബുഖാരി 844-ഉം മുസ്ലിം 593a-ഉം പരിശോധിച്ചു.",
+        "en": "The authentic reported post-prayer wording, not a separate numerical practice for the isolated Name al-Mani. Cross-checked Bukhari 844 and Muslim 593a."
+      },
+      "count": {
+        "ml": "ഓരോ ഫർദ് നമസ്കാരശേഷം; 7, 41, 444 മുതലായ അധിക ആവർത്തനഎണ്ണം നിവേദനത്തിൽ ഇല്ല.",
+        "en": "Following each obligatory prayer; no additional 7, 41 or 444 recitation count is prescribed."
+      },
+      "timing": {
+        "ml": "ഓരോ ഫർദ് നമസ്കാരം കഴിഞ്ഞ്.",
+        "en": "After every obligatory prayer."
+      },
+      "conditions": {
+        "ml": "നമസ്കാരാനന്തര ദിക്‌ർ; കളമോ തകിടോ പ്രത്യേക ദിവസമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "Post-prayer remembrance; no amulet, square or special day."
+      },
+      "steps": {
+        "ml": [
+          "ഫർദ് നമസ്കാരം കഴിഞ്ഞ് സലാം പറയുക.",
+          "പൂർണ അറബി ദിക്‌ർ ചൊല്ലുക; ഒറ്റ നാമമായി ചുരുക്കരുത്."
+        ],
+        "en": [
+          "Complete the obligatory prayer and its salam.",
+          "Say the full Prophetic wording rather than isolating one Name into an invented count."
+        ]
+      },
+      "references": [
+        {
+          "book": "Sahih Muslim",
+          "page": "593a",
+          "url": "https://sunnah.com/muslim:593a"
+        }
+      ]
     }
   ]
 }
