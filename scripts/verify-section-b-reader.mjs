@@ -998,6 +998,51 @@ try {
   assert.equal(historicalChecked.size,91);
   assert.equal(91-Object.keys(bridge.translations).length,18,'Existing 18 detailed translations must remain intact.');
   console.log('PASS: 91 full Shams source Arabic accounts visible across 91 correct cards, 73 new bilingual translations and 18 preserved earlier translations.');
+
+  // Digital-edition collation retains both readings without overwriting the scan-labelled Arabic.
+  const digitalVariants=JSON.parse(fs.readFileSync('src/data/holyNamesShamsEditionVariants.json','utf8'));
+  const historicCounts=JSON.parse(fs.readFileSync('src/data/holyNamesShamsCountAudit.json','utf8'));
+  assert.equal(Object.keys(digitalVariants.entries).length,9);
+  assert.equal(Object.values(digitalVariants.entries).reduce((n,entry)=>n+entry.variants.length,0),11);
+  assert.equal(Object.keys(historicCounts.entries).length,5);
+  for(const [id,entry] of Object.entries(digitalVariants.entries)){
+    assert.equal(entry.account_id,id);
+    assert.ok(historical.accounts[id] && bridge.identity_map[id]);
+    assert.ok(entry.compared_source_url.startsWith('https://ablibrary.net/book_content/b/10942/'));
+    assert.equal(entry.review_status,'secondary_digital_text_compared');
+    const original=historical.accounts[id].arabic_original;
+    for(const pair of entry.variants){
+      assert.ok(original.includes(pair.stored_phrase),'The quoted reading must match stored source: '+id);
+      assert.ok(pair.alternative_phrase && pair.note.ml && pair.note.en);
+    }
+    for(const lang of ['ml','en']){
+      const cardId=bridge.identity_map[id];
+      const html=render(chapters[cardId]||null,cardId,lang,{pdf_name_id:cardId});
+      for(const pair of entry.variants) for(const phrase of [pair.stored_phrase,pair.alternative_phrase,pair.note[lang]]){
+        assert.ok(html.includes(escape(phrase)),'Missing side-by-side edition variant '+id+'/'+lang);
+      }
+      assert.ok(html.includes(entry.compared_source_url),'Variant link missing '+id);
+      assert.ok(html.includes(escape(digitalVariants.scope[lang])),'Must disclose limited edition comparison');
+    }
+  }
+  let oralNumber=0,writtenNumber=0;
+  const auditedValues=[];
+  for(const [id,count] of Object.entries(historicCounts.entries)){
+    assert.equal(count.card_id,bridge.identity_map[id],'Count proof must never appear in a different name card');
+    assert.ok(historical.accounts[id].arabic_original.includes(count.source_phrase),'Number must be grounded in original Arabic');
+    assert.ok(Number.isInteger(count.value)&&count.value>0);
+    assert.ok(['recitation','inscription'].includes(count.unit));
+    if(count.unit==='recitation') oralNumber++; else writtenNumber++;
+    auditedValues.push(count.value);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[count.card_id]||null,count.card_id,lang,{pdf_name_id:count.card_id});
+      assert.ok(html.includes(escape(count.source_phrase)),'Missing original numeric wording '+id+'/'+lang);
+      assert.ok(html.includes(escape(count.note[lang])),'Missing count unit caveat '+id+'/'+lang);
+    }
+  }
+  assert.deepEqual([oralNumber,writtenNumber],[1,4]);
+  assert.deepEqual(auditedValues.sort((a,b)=>a-b),[5,100,120,161,1132]);
+  console.log('PASS: 11 source variants shown across 9 name cards, five original numbered book passages parsed as 1 recitation and 4 inscriptions.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
