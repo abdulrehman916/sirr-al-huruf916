@@ -126,6 +126,46 @@ try {
   assert.ok(dawudPrices.name_ids.includes('PDF-HN-019') && tirmidhiPrices.name_ids.includes('PDF-HN-020'));
   const witr = prophetic.entries.find(entry => entry.id === 'hadith-nasai-1733');
   assert.ok(witr.count.ml.includes('മൂന്നു') && witr.timing.en.includes('witr'));
+
+  // New Section B name research: source fidelity, bilingual rendering, and precise occurrence types.
+  const nextResearch = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBNextResearch.json', 'utf8'));
+  const coverage = JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8'));
+  const coveredIds = new Set(coverage.cards.map(card => card.name_id));
+  const newIds = Object.keys(nextResearch.profiles);
+  assert.equal(newIds.length, 8);
+  assert.equal(new Set(newIds).size, newIds.length);
+  assert.ok(newIds.every(id => coveredIds.has(id)), 'Expansion has a name not on the stored 160-card list.');
+  for (const [id, profile] of Object.entries(nextResearch.profiles)) {
+    assert.equal(profile.name_id, id);
+    assert.equal(research[id], undefined, `Must never override existing researched card ${id}`);
+    assert.ok(profile.evidence.length >= 2 && profile.scholarly.length >= 2);
+    assert.ok(profile.coverage.ml.includes('പൂർത്തിയായിട്ടില്ല'));
+    const itemIds = new Set();
+    for (const group of ['evidence', 'scholarly', 'topics']) {
+      for (const entry of profile[group]) {
+        assert.ok(!itemIds.has(entry.id), `Duplicate entry ${id} / ${entry.id}`);
+        itemIds.add(entry.id);
+        assert.equal(entry.review_status, 'checked_against_digital_text');
+        assert.ok(entry.source_url.startsWith('https://quran.ksu.edu.sa/tafseer/katheer/'));
+        if (group === 'evidence') assert.ok(entry.arabic_original.length > 10);
+        if (group === 'topics') assert.ok(entry.count.ml && entry.timing.en && entry.conditions.ml);
+      }
+    }
+    for (const language of ['ml', 'en']) {
+      const html = render(null, id, language, { pdf_name_id: id });
+      assert.ok(html.includes('data-section-b-group="evidence"') && html.includes('data-section-b-group="scholarly"'));
+      assert.ok(html.includes(escape(profile.explanation[language])), `Missing intro for ${id}, ${language}`);
+      for (const group of ['evidence', 'scholarly', 'topics']) for (const entry of profile[group]) {
+        assert.ok(html.includes(escape(entry.translation[language])), `Missing ${group} translation: ${id}/${entry.id}/${language}`);
+        assert.ok(html.includes(entry.source_url), `Missing ${group} citation: ${id}/${entry.id}`);
+        if (entry.arabic_original) assert.ok(html.includes(escape(entry.arabic_original)), `Missing Arabic source: ${id}/${entry.id}`);
+        if (group === 'topics') assert.ok(html.includes(escape(entry.count[language])), `Missing topic count for ${id}/${entry.id}`);
+      }
+    }
+  }
+  assert.equal(nextResearch.profiles['PDF-HN-021'].evidence[0].claim_kind, 'thematic_relation_not_exact_name');
+  assert.equal(nextResearch.profiles['PDF-HN-030'].evidence[0].claim_kind, 'direct_quranic_text');
+  console.log('PASS: eight new name profiles show 16 Quran references, tafsir explanations and every source-linked prayer in both languages.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
