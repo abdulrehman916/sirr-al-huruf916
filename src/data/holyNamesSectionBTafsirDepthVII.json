@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "Section B-യിലെ മുൻപ് അധിക തഫ്സീർ പഠനമില്ലാത്ത ആദ്യത്തെ 15 പേരുകൾക്കുള്ള സ്രോതസ്സാധിഷ്ഠിത പഠനം. ഇബ്നു കസീർ 16, ത്വബരി 16 എന്നിങ്ങനെ 32 അറബി മൂല ഉദ്ധരണികളും മലയാളം–ഇംഗ്ലീഷ് ആശയവിവരണങ്ങളും. ഖുർആൻ നാമം നേരിട്ട് വരുന്ന സന്ദർഭവും ബിസ്മില്ലാഹ് ആയത്ത് സംബന്ധിച്ച അഭിപ്രായഭിന്നതയും ഗരീബ് ഹദീസ് റിപ്പോർട്ടും വ്യത്യസ്തമായി രേഖപ്പെടുത്തി. സമ്പൂർണ ഖവാസ്സ്, കളം ഗവേഷണം ഇതോടെ പൂർത്തിയായിട്ടില്ല.",
-    "en": "Seventh distinct deep-study batch: the first 15 canonical Holy Names. Thirty-two directly checked short Arabic tafsir excerpts (16 Ibn Kathir, 16 al-Tabari), plus individualized Malayalam/English source criticism. Quranic divine Name occurrences are kept distinct from a disputed al-Fatihah basmala verse-count argument and the reported gharib virtue tradition about the last verses of al-Hashr; no comprehensive occult-manuscript claim is made."
+    "ml": "Section B-യിലെ മുൻപ് അധിക തഫ്സീർ പഠനമില്ലാത്ത ആദ്യത്തെ 15 പേരുകൾക്കുള്ള സ്രോതസ്സാധിഷ്ഠിത പഠനം. ഇബ്നു കസീർ 16, ത്വബരി 16 എന്നിങ്ങനെ 32 അറബി മൂല ഉദ്ധരണികളും മലയാളം–ഇംഗ്ലീഷ് ആശയവിവരണങ്ങളും. ഖുർആൻ നാമം നേരിട്ട് വരുന്ന സന്ദർഭവും ബിസ്മില്ലാഹ് ആയത്ത് സംബന്ധിച്ച അഭിപ്രായഭിന്നതയും ഗരീബ് ഹദീസ് റിപ്പോർട്ടും വ്യത്യസ്തമായി രേഖപ്പെടുത്തി. സമ്പൂർണ ഖവാസ്സ്, കളം ഗവേഷണം ഇതോടെ പൂർത്തിയായിട്ടില്ല. കൂടാതെ 3:6, 2:54, 17:110, 13:16 എന്നീ മുൻപ് ഭാഗികമായിരുന്ന ആയത്തുകളുടെ പൂർണ അറബി പാഠവും അർഥവും ചേർത്തു.",
+    "en": "Seventh distinct deep-study batch: the first 15 canonical Holy Names. Thirty-two directly checked short Arabic tafsir excerpts (16 Ibn Kathir, 16 al-Tabari), plus individualized Malayalam/English source criticism. Quranic divine Name occurrences are kept distinct from a disputed al-Fatihah basmala verse-count argument and the reported gharib virtue tradition about the last verses of al-Hashr; no comprehensive occult-manuscript claim is made. Four verses formerly excerpted in these cards (3:6, 2:54, 17:110, 13:16) now include full Arabic and contextual Malayalam/English meanings."
   },
   "profiles": {
     "PDF-HN-001": {
@@ -349,7 +349,28 @@
     },
     "PDF-HN-008": {
       "name_id": "PDF-HN-008",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-vii-quran-full-008-3-6",
+          "title": {
+            "ml": "ഖുർആൻ 3:6 — പൂർണ മൂലവചനവും സന്ദർഭവും",
+            "en": "Quran 3:6 — full original text and context"
+          },
+          "arabic_original": "هُوَ الَّذِي يُصَوِّرُكُمْ فِي الْأَرْحَامِ كَيْفَ يَشَاءُ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+          "translation": {
+            "ml": "അവൻ ഇച്ഛിക്കുന്നപോലെ ഗർഭപാത്രങ്ങളിൽ നിങ്ങളെ രൂപപ്പെടുത്തുന്നു. അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല; അവൻ പ്രതാപശാലിയും യുക്തിമാനുമാണ്.",
+            "en": "He fashions you in the wombs as He wills. None is worthy of worship but Him, the Mighty, the Wise."
+          },
+          "source_reference": "Quran 3:6 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya6.html",
+          "claim_kind": "complete_quran_verse_context",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ «അൽ-അസീസ് അൽ-ഹകീം» എന്ന അവസാന ഭാഗം മാത്രം ഉണ്ടായിരുന്നു. പൂർണ ആയത്ത് ഗർഭത്തിലുള്ള സൃഷ്ടിയും ഏകദൈവവിശ്വാസവുമാണ് സംസാരിക്കുന്നത്.",
+            "en": "Previously just the ending Name pair was shown; the full verse places al-Aziz in the context of forming human beings and the oneness of Allah."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-vii-008-katheer-59-23",
@@ -553,7 +574,28 @@
     },
     "PDF-HN-012": {
       "name_id": "PDF-HN-012",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-vii-quran-full-012-2-54",
+          "title": {
+            "ml": "ഖുർആൻ 2:54 — പൂർണ മൂലവചനവും സന്ദർഭവും",
+            "en": "Quran 2:54 — full original text and context"
+          },
+          "arabic_original": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِ يَا قَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم بِاتِّخَاذِكُمُ الْعِجْلَ فَتُوبُوا إِلَىٰ بَارِئِكُمْ فَاقْتُلُوا أَنفُسَكُمْ ذَٰلِكُمْ خَيْرٌ لَّكُمْ عِندَ بَارِئِكُمْ فَتَابَ عَلَيْكُمْ ۚ إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
+          "translation": {
+            "ml": "മൂസാ തന്റെ ജനതയോട് പറഞ്ഞു: എന്റെ ജനങ്ങളേ, കാളക്കുട്ടിയെ ആരാധ്യനാക്കിയതുകൊണ്ട് നിങ്ങൾ നിങ്ങളോടുതന്നെ അനീതി ചെയ്തു. അതിനാൽ നിങ്ങളുടെ സ്രഷ്ടാവിനോട് പശ്ചാത്തപിച്ച്, ആ കാലത്ത് അവർക്കു നൽകിയ കഠിന ശിക്ഷാനിർദേശം പാലിക്കുക; അതാണ് അവരുടെ പശ്ചാത്താപത്തിന് നല്ലത്. തുടർന്ന് അല്ലാഹു അവർക്കു മാപ്പുനൽകി. അവൻ തൗബ സ്വീകരിക്കുന്നവനും കരുണാനിധിയുമാണ്.",
+            "en": "Moses told his people that adopting the calf for worship wronged themselves. He called them to repent to their Creator and, in their particular historical covenant, obey a severe command involving taking lives. Allah then accepted their repentance; He is the Accepter of Repentance, the Merciful."
+          },
+          "source_reference": "Quran 2:54 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya54.html",
+          "claim_kind": "complete_quran_verse_context",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് ബനൂ ഇസ്രാഈല്യരുടെ കാളക്കുട്ടി ആരാധനയുടെയും ആ പ്രത്യേക കാലഘട്ടത്തിൽ നൽകിയ ശിക്ഷാവിധിയുടെയും വിവരണമാണ്. ഇന്നത്തെ വ്യക്തികൾക്ക് ഹിംസ ചെയ്യാനുള്ള കൽപനയായി ഉപയോഗിക്കരുത്. «بَارِئِكُمْ» എന്ന പദരൂപം സ്രഷ്ടാവിനെക്കുറിച്ചാണ്.",
+            "en": "This records a specific historical command concerning the Israelites after calf worship, **not an instruction or authorization for violence today**. The verse's exact form is bari'ikum, 'your Creator.'"
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-vii-012-katheer-59-24",
@@ -599,7 +641,28 @@
     },
     "PDF-HN-013": {
       "name_id": "PDF-HN-013",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-vii-quran-full-013-17-110",
+          "title": {
+            "ml": "ഖുർആൻ 17:110 — പൂർണ മൂലവചനവും സന്ദർഭവും",
+            "en": "Quran 17:110 — full original text and context"
+          },
+          "arabic_original": "قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَابْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًا",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവിനെ വിളിച്ചാലും അർ-റഹ്‌മാനെ വിളിച്ചാലും, നിങ്ങൾ ഏത് നാമംകൊണ്ട് വിളിച്ചാലും ഏറ്റവും ഉത്തമ നാമങ്ങൾ അവനുള്ളതാണ്. നമസ്കാരത്തിൽ അത്യുച്ചത്തിൽ ശബ്ദമുയർത്തുകയോ തീരെ താഴ്ത്തുകയോ ചെയ്യാതെ ഇടത്തരം മാർഗം സ്വീകരിക്കുക.",
+            "en": "Say: Call upon Allah or call upon al-Rahman; whichever Name you use, the Most Beautiful Names belong to Him. Do not raise your voice excessively in prayer or make it inaudibly quiet, but seek a middle way."
+          },
+          "source_reference": "Quran 17:110 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya110.html",
+          "claim_kind": "complete_quran_verse_context",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ആദ്യഭാഗം മാത്രമായിരുന്നു. ത്വബരി ഈ ആയത്തിന്റെ അവസാന പദത്തിന് ദുആയുടെ ശബ്ദമോ ഖുർആൻ പാരായണത്തിന്റെ ശബ്ദമോ എന്ന രണ്ടു വ്യത്യസ്ത ആദ്യകാല വ്യാഖ്യാനങ്ങൾ നൽകുന്നു. പ്രത്യേക നാമജപസംഖ്യ ഇവിടെ ഇല്ല.",
+            "en": "The earlier card quoted only the opening. Al-Tabari records early disagreements on whether the final clause concerns supplication or Quran recitation; it provides no special Name-count."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-vii-013-katheer-17-110",
@@ -645,7 +708,28 @@
     },
     "PDF-HN-014": {
       "name_id": "PDF-HN-014",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-vii-quran-full-014-13-16",
+          "title": {
+            "ml": "ഖുർആൻ 13:16 — പൂർണ മൂലവചനവും സന്ദർഭവും",
+            "en": "Quran 13:16 — full original text and context"
+          },
+          "arabic_original": "قُلْ مَن رَّبُّ السَّمَاوَاتِ وَالْأَرْضِ قُلِ اللَّهُ ۚ قُلْ أَفَاتَّخَذْتُم مِّن دُونِهِ أَوْلِيَاءَ لَا يَمْلِكُونَ لِأَنفُسِهِمْ نَفْعًا وَلَا ضَرًّا ۚ قُلْ هَلْ يَسْتَوِي الْأَعْمَىٰ وَالْبَصِيرُ أَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُ ۗ أَمْ جَعَلُوا لِلَّهِ شُرَكَاءَ خَلَقُوا كَخَلْقِهِ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْ ۚ قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+          "translation": {
+            "ml": "പറയുക: ആകാശഭൂമികളുടെ രക്ഷിതാവ് ആരാണ്? അല്ലാഹു എന്ന് പറയുക. സ്വയം നന്മയോ ദോഷമോ ചെയ്യാൻ കഴിയാത്ത രക്ഷാധികാരികളെ നിങ്ങൾ സ്വീകരിക്കുകയാണോ? അന്ധനും കാഴ്ചയുള്ളവനും, ഇരുട്ടും വെളിച്ചവും തുല്യമാകുമോ? അവർ അല്ലാഹുവിനോട് പങ്കാളികളെ ചേർത്തത് അവരെപ്പോലെ സൃഷ്ടിക്കുന്നവരെയാണോ? പറയുക: എല്ലാത്തിന്റെയും സ്രഷ്ടാവ് അല്ലാഹുവാണ്; അവൻ ഏകനും സർവാധിപതിയുമാണ്.",
+            "en": "Ask who is Lord of the heavens and earth: Allah. Why turn to protectors that cannot control benefit or harm even for themselves? Are blindness and sight, darkness and light, alike? Have the supposed partners created anything like Allah's creation? Say: Allah created everything and He is the One, the All-Subduing."
+          },
+          "source_reference": "Quran 13:16 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+          "claim_kind": "complete_quran_verse_context",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മുൻ രേഖയിൽ അവസാനഭാഗം മാത്രം ഉണ്ടായിരുന്നു; പൂർണ ആയത്ത് സൃഷ്ടി, ഉപമകൾ, തൗഹീദ് എന്നിവയുമായി ബന്ധപ്പെട്ടു. അൽ-ഖഹ്ഹാർ എന്ന പേരുപയോഗിച്ച് മറ്റുള്ളവരെ ഉപദ്രവിക്കുന്ന പ്രത്യേക ക്രമം ഈ ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+            "en": "Previously only the final phrase appeared. The complete verse argues from divine creation and contrasts of light and darkness; it does not authorize harming people by a special formula."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-vii-014-katheer-13-16",
