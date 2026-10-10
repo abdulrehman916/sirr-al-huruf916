@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പത്തെ രണ്ട് ഘട്ടങ്ങളിൽ വിശദമായ തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകളിലേക്ക് 22 നിർദിഷ്ട തഫ്സീർ പാഠ-വിശകലനങ്ങൾ. നാമത്തിന്റെ അതേ പദരൂപവും വിഷയപരമായ ആയത്ത് ബന്ധവും വേർതിരിക്കുന്നു; ഗ്രന്ഥങ്ങളിലെ ഖവാസ്സ്, കളങ്ങൾ, മുഴുവൻ പരമ്പരാഗത വിവരങ്ങളുടെ ഗവേഷണം ഇനിയും ബാക്കിയാണ്.",
-    "en": "A source-specific deep study of the final 15 formerly undeepened cards: 22 cited bilingual classical tafsir analyses, 15 from Ibn Kathir and seven from al-Tabari. Verbatim Name forms are separated from verbs and thematic relationships, without invented rituals or claims of complete source coverage."
+    "ml": "മുമ്പത്തെ രണ്ട് ഘട്ടങ്ങളിൽ വിശദമായ തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകളിലേക്ക് 22 നിർദിഷ്ട തഫ്സീർ പാഠ-വിശകലനങ്ങൾ. നാമത്തിന്റെ അതേ പദരൂപവും വിഷയപരമായ ആയത്ത് ബന്ധവും വേർതിരിക്കുന്നു; ഗ്രന്ഥങ്ങളിലെ ഖവാസ്സ്, കളങ്ങൾ, മുഴുവൻ പരമ്പരാഗത വിവരങ്ങളുടെ ഗവേഷണം ഇനിയും ബാക്കിയാണ്. 13:11, 32:22, 2:143, 35:2, 9:72 എന്നീ അഞ്ച് ആയത്തുകൾ ഭാഗിക ഉദ്ധരണിയിൽനിന്ന് പൂർണ അറബി പാഠം/അർഥത്തിലേക്ക് വികസിപ്പിച്ചു.",
+    "en": "A source-specific deep study of the final 15 formerly undeepened cards: 22 cited bilingual classical tafsir analyses, 15 from Ibn Kathir and seven from al-Tabari. Verbatim Name forms are separated from verbs and thematic relationships, without invented rituals or claims of complete source coverage. Five previously excerpt-only Quran verses (13:11, 32:22, 2:143, 35:2, 9:72) now include full original Arabic and complete bilingual meanings."
   },
   "profiles": {
     "PDF-HN-0196": {
@@ -251,7 +251,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-077-13-11",
+          "title": {
+            "ml": "ഖുർആൻ 13:11 — പൂർണ ആയത്ത്",
+            "en": "Quran 13:11 — complete verse"
+          },
+          "arabic_original": "لَهُ مُعَقِّبَاتٌ مِّن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ يَحْفَظُونَهُ مِنْ أَمْرِ اللَّهِ ۗ إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ ۗ وَإِذَا أَرَادَ اللَّهُ بِقَوْمٍ سُوءًا فَلَا مَرَدَّ لَهُ ۚ وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ",
+          "translation": {
+            "ml": "മനുഷ്യന്റെ മുന്നിലും പിന്നിലും മാറിമാറി വരുന്ന നിരീക്ഷകർ അവനെ അല്ലാഹുവിന്റെ കല്പനപ്രകാരം സൂക്ഷിക്കുന്നു. ഒരു ജനത സ്വയം ഉള്ളത് മാറ്റുന്നതുവരെ അല്ലാഹു അവരുടെ അവസ്ഥ മാറ്റുകയില്ല. അവൻ ഒരു ജനതയ്ക്ക് ദോഷം തീരുമാനിച്ചാൽ അതിനെ തിരിച്ചുവിടാൻ കഴിയില്ല; അല്ലാഹുവല്ലാതെ അവർക്ക് രക്ഷാധികാരിയുമില്ല.",
+            "en": "Angels follow and guard a person by Allah's command. Allah does not change a people's condition until they change what is within themselves. If He decrees adversity for a people none can repel it; they have no protecting guardian besides Him."
+          },
+          "source_reference": "Quran 13:11 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
     },
     "PDF-HN-081": {
       "name_id": "PDF-HN-081",
@@ -297,7 +318,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-081-32-22",
+          "title": {
+            "ml": "ഖുർആൻ 32:22 — പൂർണ ആയത്ത്",
+            "en": "Quran 32:22 — complete verse"
+          },
+          "arabic_original": "وَمَنْ أَظْلَمُ مِمَّن ذُكِّرَ بِآيَاتِ رَبِّهِ ثُمَّ أَعْرَضَ عَنْهَا ۚ إِنَّا مِنَ الْمُجْرِمِينَ مُنتَقِمُونَ",
+          "translation": {
+            "ml": "രക്ഷിതാവിന്റെ അടയാളങ്ങൾ ഓർമ്മിപ്പിച്ചതിനു ശേഷവും അവയിൽനിന്ന് പിന്തിരിയുന്നവനെക്കാൾ വലിയ അക്രമിയാരുണ്ട്? തീർച്ചയായും കുറ്റവാളികളോട് നാം നീതിപൂർവമായ ശിക്ഷാനടപടി സ്വീകരിക്കുന്നവരാണ്.",
+            "en": "Who is more unjust than one reminded of the Lord's signs who then turns away? We shall surely exact retribution from persistent wrongdoers."
+          },
+          "source_reference": "Quran 32:22 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
     },
     "PDF-HN-083": {
       "name_id": "PDF-HN-083",
@@ -323,7 +365,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-083-2-143",
+          "title": {
+            "ml": "ഖുർആൻ 2:143 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:143 — complete verse"
+          },
+          "arabic_original": "وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا ۗ وَمَا جَعَلْنَا الْقِبْلَةَ الَّتِي كُنتَ عَلَيْهَا إِلَّا لِنَعْلَمَ مَن يَتَّبِعُ الرَّسُولَ مِمَّن يَنقَلِبُ عَلَىٰ عَقِبَيْهِ ۚ وَإِن كَانَتْ لَكَبِيرَةً إِلَّا عَلَى الَّذِينَ هَدَى اللَّهُ ۗ وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ ۚ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَّحِيمٌ",
+          "translation": {
+            "ml": "നിങ്ങളെ നീതിമാന്മാരായ ഒരു സമൂഹമാക്കിയത് മനുഷ്യർക്കു സാക്ഷികളാകാനാണ്; റസൂൽ നിങ്ങളുടെയും സാക്ഷിയാകും. മുമ്പത്തെ ഖിബ്‌ല, റസൂലിനെ പിന്തുടരുന്നവരെയും പിന്തിരിയുന്നവരെയും തിരിച്ചറിയിക്കാനുള്ള പരീക്ഷണമായിരുന്നു. അല്ലാഹു നേർവഴി കാണിച്ചവർക്കല്ലാതെ അത് പ്രയാസകരമായിരുന്നു. നിങ്ങളുടെ വിശ്വാസവും മുൻ നമസ്കാരങ്ങളും അല്ലാഹു പാഴാക്കുകയില്ല; അവൻ മനുഷ്യരോട് ആർദ്രദയയുള്ളവനും കരുണാനിധിയുമാണ്.",
+            "en": "Allah made this community just so it would witness over humanity and the Messenger would witness over it. The former direction of prayer distinguished those who followed the Messenger from those who turned away; it was difficult except for those Allah guided. Allah will not waste your faith and earlier prayers; He is compassionate and merciful to people."
+          },
+          "source_reference": "Quran 2:143 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya143.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
     },
     "PDF-HN-089": {
       "name_id": "PDF-HN-089",
@@ -369,7 +432,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-089-35-2",
+          "title": {
+            "ml": "ഖുർആൻ 35:2 — പൂർണ ആയത്ത്",
+            "en": "Quran 35:2 — complete verse"
+          },
+          "arabic_original": "مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا ۖ وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُ مِن بَعْدِهِ ۚ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+          "translation": {
+            "ml": "അല്ലാഹു മനുഷ്യർക്കു തുറന്നുകൊടുക്കുന്ന കരുണയെ ആർക്കും തടയാനാവില്ല. അവൻ തടഞ്ഞുനിർത്തിയതിനെ അവനുശേഷം ആർക്കും നൽകാനാവില്ല. അവൻ പ്രതാപിയും യുക്തിമാനുമാണ്.",
+            "en": "No one can withhold the mercy Allah opens for people, and no one can release what He withholds after Him; He is the Mighty and Wise."
+          },
+          "source_reference": "Quran 35:2 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
     },
     "PDF-HN-090": {
       "name_id": "PDF-HN-090",
@@ -507,7 +591,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-121-9-72",
+          "title": {
+            "ml": "ഖുർആൻ 9:72 — പൂർണ ആയത്ത്",
+            "en": "Quran 9:72 — complete verse"
+          },
+          "arabic_original": "وَعَدَ اللَّهُ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ۚ وَرِضْوَانٌ مِّنَ اللَّهِ أَكْبَرُ ۚ ذَٰلِكَ هُوَ الْفَوْزُ الْعَظِيمُ",
+          "translation": {
+            "ml": "വിശ്വസിക്കുന്ന പുരുഷന്മാർക്കും സ്ത്രീകൾക്കും അടിയിലൂടെ നദികളൊഴുകുന്ന സ്വർഗത്തോട്ടങ്ങളും അവയിൽ നിത്യവാസവും ആദ്നിലെ മനോഹരമായ ഭവനങ്ങളും അല്ലാഹു വാഗ്ദാനം ചെയ്തിരിക്കുന്നു. എന്നാൽ അല്ലാഹുവിന്റെ തൃപ്തി അതിനേക്കാൾ വലുതാണ്. അതാണ് മഹത്തായ വിജയം.",
+            "en": "Allah promises believing men and women gardens beneath which rivers flow, eternal residence and good dwellings in Eden. His pleasure is greater than all of that: this is the supreme success."
+          },
+          "source_reference": "Quran 9:72 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya72.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
     },
     "PDF-HN-122": {
       "name_id": "PDF-HN-122",
