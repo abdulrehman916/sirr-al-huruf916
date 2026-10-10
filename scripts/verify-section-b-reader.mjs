@@ -883,6 +883,24 @@ try {
     assert.ok(html.includes(disaster.source_url));
   }
   console.log('PASS: all 160 individually researched card IDs now have deep tafsir overlays; 20 further original Arabic excerpts plus the authentic Sahih Muslim 918a calamity dua.');
+  // The visible source summary must include every research overlay, not merely the first-pass profile.
+  for (const id of coveredIds) {
+    for (const lang of ['ml', 'en']) {
+      const html = render(chapters[id], id, lang, { pdf_name_id: id });
+      const groups = [...html.matchAll(/data-section-b-group="([^"]+)" data-section-b-count="(\\d+)"/g)];
+      const getCount = key => {
+        const match = html.match(new RegExp('data-testid="section-b-' + key + '-count">(\\\\d+)<\\\\/span>'));
+        assert.ok(match, 'Missing ' + key + ' counter on ' + id + ' / ' + lang);
+        return Number(match[1]);
+      };
+      const countGroup = key => Number(groups.find(entry => entry[1] === key)?.[2] || 0);
+      const verifiedTotal = groups.filter(entry => entry[1] !== 'pending').reduce((sum, entry) => sum + Number(entry[2]), 0);
+      assert.equal(getCount('source'), verifiedTotal, 'Incomplete source total on ' + id + ' / ' + lang);
+      assert.equal(getCount('quran'), countGroup('evidence'), 'Incomplete Quran total on ' + id + ' / ' + lang);
+      assert.equal(getCount('topic'), countGroup('topics') + countGroup('prophetic'), 'Incomplete topic total on ' + id + ' / ' + lang);
+    }
+  }
+  console.log('PASS: all 160 card summaries count their complete Arabic/bilingual Quran, scholarly, Prophetic, topics and book sections.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
