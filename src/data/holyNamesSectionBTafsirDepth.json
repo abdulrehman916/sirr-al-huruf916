@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "25 കാർഡുകൾക്ക് ഇബ്നു കസീർ, ത്വബരി തഫ്സീർ പുസ്തകങ്ങളിൽ പരിശോധിച്ച 34 പ്രത്യേക വ്യാഖ്യാനങ്ങൾ; സമ്പൂർണ ഗ്രന്ഥ/ഖവാസ്സ് ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല.",
-    "en": "34 selected, source-checked bilingual interpretations from Ibn Kathir and al-Tabari for 25 headings; not a completion certificate for the names' full literature."
+    "ml": "25 കാർഡുകൾക്ക് ഇബ്നു കസീർ, ത്വബരി തഫ്സീർ പുസ്തകങ്ങളിൽ പരിശോധിച്ച 34 പ്രത്യേക വ്യാഖ്യാനങ്ങൾ; സമ്പൂർണ ഗ്രന്ഥ/ഖവാസ്സ് ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. കൂടാതെ എട്ട് കാർഡുകളിൽ പൂർണ ആയത്തുകളുടെ അറബി പാഠവും അർഥവും ചേർത്തിട്ടുണ്ട്.",
+    "en": "34 selected, source-checked bilingual interpretations from Ibn Kathir and al-Tabari for 25 headings; not a completion certificate for the names' full literature. Eight cards additionally carry full, diacritized Quran verses and original Malayalam and English meaning summaries."
   },
   "profiles": {
     "PDF-HN-0148": {
@@ -177,7 +177,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0153-2-165",
+          "title": {
+            "ml": "ഖുർആൻ 2:165 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 2:165 — complete verse"
+          },
+          "arabic_original": "وَمِنَ النَّاسِ مَن يَتَّخِذُ مِن دُونِ اللَّهِ أَندَادًا يُحِبُّونَهُمْ كَحُبِّ اللَّهِ ۖ وَالَّذِينَ آمَنُوا أَشَدُّ حُبًّا لِّلَّهِ ۗ وَلَوْ يَرَى الَّذِينَ ظَلَمُوا إِذْ يَرَوْنَ الْعَذَابَ أَنَّ الْقُوَّةَ لِلَّهِ جَمِيعًا وَأَنَّ اللَّهَ شَدِيدُ الْعَذَابِ",
+          "translation": {
+            "ml": "ചില മനുഷ്യർ അല്ലാഹുവിന് തുല്യരായി മറ്റുള്ളവരെ സ്വീകരിച്ച് അവരെ അല്ലാഹുവിനെപ്പോലെ സ്നേഹിക്കുന്നു. വിശ്വാസികൾ അല്ലാഹുവിനോടു കൂടുതൽ സ്നേഹമുള്ളവരാണ്. അക്രമികൾ ശിക്ഷ കാണുമ്പോൾ ശക്തിയെല്ലാം അല്ലാഹുവിനാണെന്നും അവൻ കഠിനമായി ശിക്ഷിക്കുന്നവനാണെന്നും തിരിച്ചറിയും.",
+            "en": "Some people treat others as equals to Allah and love them as they should love Allah. Believers love Allah more deeply. When the wrongdoers see punishment, they will realize that all strength belongs to Allah and His punishment is severe."
+          },
+          "source_reference": "Quran 2:165 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya165.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0157": {
       "name_id": "PDF-HN-0157",
@@ -201,7 +222,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0157-40-17",
+          "title": {
+            "ml": "ഖുർആൻ 40:17 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 40:17 — complete verse"
+          },
+          "arabic_original": "الْيَوْمَ تُجْزَىٰ كُلُّ نَفْسٍ بِمَا كَسَبَتْ ۚ لَا ظُلْمَ الْيَوْمَ ۚ إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ",
+          "translation": {
+            "ml": "ഇന്ന് ഓരോ വ്യക്തിക്കും ചെയ്ത പ്രവൃത്തിക്കനുസരിച്ചുള്ള പ്രതിഫലം ലഭിക്കും. ഇന്ന് അനീതിയുണ്ടാകില്ല. അല്ലാഹു വേഗത്തിൽ കണക്കെടുക്കുന്നവനാണ്.",
+            "en": "Today every soul will be repaid for what it earned. No injustice will occur today. Allah is swift in reckoning."
+          },
+          "source_reference": "Quran 40:17 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0164": {
       "name_id": "PDF-HN-0164",
@@ -243,7 +285,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0164-4-58",
+          "title": {
+            "ml": "ഖുർആൻ 4:58 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 4:58 — complete verse"
+          },
+          "arabic_original": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ ۚ إِنَّ اللَّهَ نِعِمَّا يَعِظُكُم بِهِ ۗ إِنَّ اللَّهَ كَانَ سَمِيعًا بَصِيرًا",
+          "translation": {
+            "ml": "വിശ്വാസത്തോടെ ഏൽപ്പിക്കപ്പെട്ടവ അതിന്റെ അവകാശികൾക്ക് തിരികെ നൽകാനും ജനങ്ങൾക്കിടയിൽ വിധി പറയുമ്പോൾ നീതിയോടെ വിധിക്കാനും അല്ലാഹു നിർദേശിക്കുന്നു. അവൻ നൽകുന്ന ഉപദേശം മഹത്താണ്. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
+            "en": "Allah commands you to return trusts to their rightful holders and to judge fairly between people. Excellent is His instruction; He hears and sees all."
+          },
+          "source_reference": "Quran 4:58 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0166": {
       "name_id": "PDF-HN-0166",
@@ -357,7 +420,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0173-4-87",
+          "title": {
+            "ml": "ഖുർആൻ 4:87 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 4:87 — complete verse"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۚ لَيَجْمَعَنَّكُمْ إِلَىٰ يَوْمِ الْقِيَامَةِ لَا رَيْبَ فِيهِ ۗ وَمَنْ أَصْدَقُ مِنَ اللَّهِ حَدِيثًا",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. സംശയമില്ലാത്ത ഉയിർത്തെഴുന്നേൽപ്പുദിവസത്തിനായി അവൻ നിങ്ങളെ ഒരുമിച്ചു കൂട്ടും. അല്ലാഹുവിനെക്കാൾ സത്യസന്ധമായി സംസാരിക്കുന്നവൻ ആരുണ്ട്?",
+            "en": "Allah: none has the right to be worshipped except Him. He will gather you for the Day of Resurrection, without doubt. Who is more truthful in speech than Allah?"
+          },
+          "source_reference": "Quran 4:87 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya87.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0174": {
       "name_id": "PDF-HN-0174",
@@ -525,7 +609,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0183-8-9",
+          "title": {
+            "ml": "ഖുർആൻ 8:9 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 8:9 — complete verse"
+          },
+          "arabic_original": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ أَنِّي مُمِدُّكُم بِأَلْفٍ مِّنَ الْمَلَائِكَةِ مُرْدِفِينَ",
+          "translation": {
+            "ml": "നിങ്ങൾ രക്ഷിതാവിനോട് സഹായം അപേക്ഷിച്ചപ്പോൾ അവൻ ഉത്തരം നൽകി: തുടർച്ചയായി വരുന്ന ആയിരം മലക്കുകൾകൊണ്ട് ഞാൻ നിങ്ങളെ സഹായിക്കും. ഇത് ബദ്റിന്റെ സന്ദർഭമാണ്.",
+            "en": "When you sought your Lord's aid, He answered that He would support you with a thousand angels coming in succession. This concerns Badr."
+          },
+          "source_reference": "Quran 8:9 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0186": {
       "name_id": "PDF-HN-0186",
@@ -549,7 +654,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0186-11-102",
+          "title": {
+            "ml": "ഖുർആൻ 11:102 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 11:102 — complete verse"
+          },
+          "arabic_original": "وَكَذَٰلِكَ أَخْذُ رَبِّكَ إِذَا أَخَذَ الْقُرَىٰ وَهِيَ ظَالِمَةٌ ۚ إِنَّ أَخْذَهُ أَلِيمٌ شَدِيدٌ",
+          "translation": {
+            "ml": "അനീതിയിൽ മുഴുകിയ പട്ടണങ്ങളെ നിന്റെ രക്ഷിതാവ് പിടികൂടുമ്പോൾ അവന്റെ നടപടി ഇങ്ങനെയാണ്. അവന്റെ പിടിത്തം വേദനാജനകവും കഠിനവുമാകുന്നു.",
+            "en": "Such is your Lord's punishment when He seizes unjust towns; His seizure is painful and severe."
+          },
+          "source_reference": "Quran 11:102 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya102.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0202": {
       "name_id": "PDF-HN-0202",
@@ -591,7 +717,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0202-21-30",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 21:30 — complete verse"
+          },
+          "arabic_original": "أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا ۖ وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ ۖ أَفَلَا يُؤْمِنُونَ",
+          "translation": {
+            "ml": "ആകാശവും ഭൂമിയും ചേർന്ന നിലയിൽ ഉണ്ടായിരുന്നുവെന്നും നാം അവയെ വേർപെടുത്തിയെന്നും നിഷേധികൾ മനസ്സിലാക്കുന്നില്ലേ? വെള്ളത്തിൽനിന്നാണ് ജീവിക്കുന്ന എല്ലാറ്റിനെയും നാം സൃഷ്ടിച്ചത്. അവർ വിശ്വസിക്കുന്നില്ലേ?",
+            "en": "Do those who disbelieve not consider that the heavens and earth were joined, then We separated them? We made every living thing from water. Will they not believe?"
+          },
+          "source_reference": "Quran 21:30 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0203": {
       "name_id": "PDF-HN-0203",
@@ -633,7 +780,28 @@
           }
         }
       ],
-      "evidence": []
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0203-21-30",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 21:30 — complete verse"
+          },
+          "arabic_original": "أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا ۖ وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ ۖ أَفَلَا يُؤْمِنُونَ",
+          "translation": {
+            "ml": "ആകാശവും ഭൂമിയും ചേർന്ന നിലയിൽ ഉണ്ടായിരുന്നുവെന്നും നാം അവയെ വേർപെടുത്തിയെന്നും നിഷേധികൾ മനസ്സിലാക്കുന്നില്ലേ? വെള്ളത്തിൽനിന്നാണ് ജീവിക്കുന്ന എല്ലാറ്റിനെയും നാം സൃഷ്ടിച്ചത്. അവർ വിശ്വസിക്കുന്നില്ലേ?",
+            "en": "Do those who disbelieve not consider that the heavens and earth were joined, then We separated them? We made every living thing from water. Will they not believe?"
+          },
+          "source_reference": "Quran 21:30 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
     },
     "PDF-HN-0209": {
       "name_id": "PDF-HN-0209",
