@@ -125,7 +125,7 @@ try {
   assert.ok(dawudPrices.arabic_original.includes('الرَّازِقُ') && tirmidhiPrices.arabic_original.includes('الرَّزَّاقُ'), 'Distinct narrated wordings must not be merged.');
   assert.ok(dawudPrices.name_ids.includes('PDF-HN-019') && tirmidhiPrices.name_ids.includes('PDF-HN-020'));
   const witr = prophetic.entries.find(entry => entry.id === 'hadith-nasai-1733');
-  assert.ok(witr.count.ml.includes('മൂന്ന്') && witr.timing.en.includes('witr'));
+  assert.ok(witr.count.ml.includes('മൂന്നു') && witr.timing.en.includes('witr'));
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
