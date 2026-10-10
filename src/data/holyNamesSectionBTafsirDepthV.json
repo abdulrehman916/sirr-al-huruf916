@@ -1,56 +1,10 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പ് ആഴത്തിലുള്ള പഠനം ഇല്ലാത്ത 15 കാർഡുകളിലേക്ക് 23 പുതിയ തഫ്സീർ വ്യാഖ്യാനങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 8. പ്രത്യേകിച്ച് നേരിട്ടുള്ള നാമരൂപങ്ങൾ, ക്രിയ/വാക്യപ്രയോഗങ്ങൾ, വിശ്വസനീയമല്ലെന്ന് ഗ്രന്ഥം തന്നെ പറഞ്ഞ നിവേദനങ്ങൾ എന്നിവ വേർതിരിക്കുന്നു. സമ്പൂർണ ഖവാസ്സ് പഠനം പൂർത്തിയായിട്ടില്ല. ഖുർആൻ 54:55, 24:25, 15:86, 95:8, 48:28 എന്നീ അഞ്ച് പൂർണ ആയത്തുകൾ കൃത്യമായ പദരൂപം തിരിച്ചറിയാൻ ചേർത്തിട്ടുണ്ട്.",
-    "en": "Twenty-three source-checked interpretations for 15 previously undepened headings (Ibn Kathir 15, Al-Tabari 8). Precise nominal wording, a verb/phrase, and an unsound reported guarantee are carefully distinguished. Comprehensive historic khawass coverage remains unfinished. Five complete original Quran verses (54:55, 24:25, 15:86, 95:8 and 48:28) supply exact grammatical evidence and replace reliance on loose thematic parallels."
+    "ml": "മുമ്പ് ആഴത്തിലുള്ള പഠനം ഇല്ലാത്ത 15 കാർഡുകളിലേക്ക് 23 പുതിയ തഫ്സീർ വ്യാഖ്യാനങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 8. പ്രത്യേകിച്ച് നേരിട്ടുള്ള നാമരൂപങ്ങൾ, ക്രിയ/വാക്യപ്രയോഗങ്ങൾ, വിശ്വസനീയമല്ലെന്ന് ഗ്രന്ഥം തന്നെ പറഞ്ഞ നിവേദനങ്ങൾ എന്നിവ വേർതിരിക്കുന്നു. സമ്പൂർണ ഖവാസ്സ് പഠനം പൂർത്തിയായിട്ടില്ല. ഖുർആൻ 54:55, 24:25, 15:86, 95:8, 48:28 എന്നീ അഞ്ച് പൂർണ ആയത്തുകൾ കൃത്യമായ പദരൂപം തിരിച്ചറിയാൻ ചേർത്തിട്ടുണ്ട്. മുൻഘട്ടത്തിൽ ആവർത്തിച്ച PDF-HN-057-ന് പകരം PDF-HN-058-ന്റെ അർഹമായ സ്വതന്ത്ര പഠനം ചേർത്തു.",
+    "en": "Twenty-three source-checked interpretations for 15 previously undepened headings (Ibn Kathir 15, Al-Tabari 8). Precise nominal wording, a verb/phrase, and an unsound reported guarantee are carefully distinguished. Comprehensive historic khawass coverage remains unfinished. Five complete original Quran verses (54:55, 24:25, 15:86, 95:8 and 48:28) supply exact grammatical evidence and replace reliance on loose thematic parallels. A duplicate earlier deep-study ID (057) was replaced by the previously unstudied al-Muhsi (058), using original source passages of Quran 58:6."
   },
   "profiles": {
-    "PDF-HN-057": {
-      "name_id": "PDF-HN-057",
-      "evidence": [],
-      "scholarly": [
-        {
-          "id": "depth-v-PDF-HN-057-katheer-22-64",
-          "title": {
-            "ml": "ഇബ്നു കസീർ — 22:64",
-            "en": "Ibn Kathir — Quran 22:64"
-          },
-          "arabic_original": "مُلْكُهُ جَمِيعُ الْأَشْيَاءِ",
-          "translation": {
-            "ml": "ഇബ്നു കസീർ എല്ലാം അല്ലാഹുവിന്റെ ഉടമസ്ഥതയിലാണെന്നും സൃഷ്ടികളെല്ലാം അവനെ ആശ്രയിക്കുമ്പോൾ അവൻ ഒന്നിനെയും ആശ്രയിക്കുന്നില്ലെന്നും വിശദീകരിക്കുന്നു. 22:64-ൽ «الْحَمِيدُ» നേരിട്ട് വരുന്നു.",
-            "en": "Ibn Kathir explains that all things belong to Allah; He is independent of creation while all creatures depend on Him. Al-Hamid is directly present in Quran 22:64."
-          },
-          "source_reference": "تفسير ابن كثير — Quran 22:64",
-          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
-          "review_status": "checked_against_digital_text",
-          "claim_kind": "attributed_tafsir_summary",
-          "source_scope": {
-            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
-            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
-          }
-        },
-        {
-          "id": "depth-v-PDF-HN-057-tabary-22-64",
-          "title": {
-            "ml": "ഇമാം ത്വബരി — 22:64",
-            "en": "Al-Tabari — Quran 22:64"
-          },
-          "arabic_original": "الْحَمِيدُ عِنْدَ عِبَادِهِ فِي إِفْضَالِهِ عَلَيْهِمْ",
-          "translation": {
-            "ml": "ത്വബരി അല്ലാഹു സകലത്തിന്റെയും ഉടമയും സൃഷ്ടികളുടെ ദാനത്തിൽനിന്ന് സ്വതന്ത്രനും ആയിരിക്കുമ്പോഴും, സൃഷ്ടികൾക്ക് നൽകുന്ന അനുഗ്രഹങ്ങൾകൊണ്ട് പ്രശംസാർഹനുമാണെന്ന് പറയുന്നു. «അൽഹമീദ്» ആയത്തിന്റെ യഥാർഥ പദമാണ്.",
-            "en": "Al-Tabari explains al-Hamid as worthy of praise for gifts to creation, though Allah needs none of it and possesses everything."
-          },
-          "source_reference": "تفسير الطبري — Quran 22:64",
-          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura22-aya64.html",
-          "review_status": "checked_against_digital_text",
-          "claim_kind": "attributed_tafsir_summary",
-          "source_scope": {
-            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
-            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
-          }
-        }
-      ]
-    },
     "PDF-HN-068": {
       "name_id": "PDF-HN-068",
       "evidence": [
@@ -656,6 +610,52 @@
           "source_scope": {
             "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
             "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-058": {
+      "name_id": "PDF-HN-058",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-058-katheer-58-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 58:6",
+            "en": "Ibn Kathir — Quran 58:6"
+          },
+          "arabic_original": "ضَبَطَهُ اللَّهُ وَحَفِظَهُ عَلَيْهِمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രകാരം മനുഷ്യർ മറന്നുപോയ നല്ലതും ചീത്തയുമായ പ്രവൃത്തികളെല്ലാം അല്ലാഹു കൃത്യമായി രേഖപ്പെടുത്തി സംരക്ഷിക്കുന്നു. 58:6-ൽ «أَحْصَاهُ اللَّهُ» എന്ന ക്രിയാപ്രയോഗമാണ്; «الْمُحْصِي» എന്ന സ്വതന്ത്ര നാമം നേരിട്ട് വരുന്നില്ല.",
+            "en": "Ibn Kathir explains Allah precisely records and preserves human actions even when their doers forget them. The verse uses the verb ahsahu Allah, not the isolated noun al-Muhsi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീർ പാഠവും പണ്ഡിതന്റെ വിശദീകരണവും; പേരിലുള്ള സംഖ്യകളോ ഗൂഢഫലങ്ങളോ ഈ പാഠം നിർദേശിക്കുന്നില്ല.",
+            "en": "Original classical commentary and attributed meaning, not a prescribed numerical occult technique."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-058-tabary-58-6",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 58:6",
+            "en": "Al-Tabari — Quran 58:6"
+          },
+          "arabic_original": "أَحْصَى اللَّهُ مَا عَمِلُوا فَعَدَّهُ عَلَيْهِمْ",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു മനുഷ്യരുടെ പ്രവൃത്തികളെ എണ്ണിയും രേഖപ്പെടുത്തിയും സൂക്ഷിച്ചിരിക്കുകയാണെന്ന് വിശദീകരിക്കുന്നു; ചെയ്തവർ മറന്നാലും അല്ലാഹുവിൽനിന്ന് ഒന്നും നഷ്ടപ്പെടില്ല. 58:6-ലെ അർഥം അന്ത്യദിനത്തിലെ കണക്കെടുപ്പുമായി ബന്ധപ്പെട്ടതാണ്.",
+            "en": "Al-Tabari says Allah counted, established and preserved people's deeds even after they forgot. It concerns accountability on Resurrection Day, not an independent esoteric counting rite."
+          },
+          "source_reference": "تفسير الطبري — Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീർ പാഠവും പണ്ഡിതന്റെ വിശദീകരണവും; പേരിലുള്ള സംഖ്യകളോ ഗൂഢഫലങ്ങളോ ഈ പാഠം നിർദേശിക്കുന്നില്ല.",
+            "en": "Original classical commentary and attributed meaning, not a prescribed numerical occult technique."
           }
         }
       ]
