@@ -1,0 +1,644 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "മുമ്പത്തെ രണ്ട് ഘട്ടങ്ങളിൽ വിശദമായ തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകളിലേക്ക് 22 നിർദിഷ്ട തഫ്സീർ പാഠ-വിശകലനങ്ങൾ. നാമത്തിന്റെ അതേ പദരൂപവും വിഷയപരമായ ആയത്ത് ബന്ധവും വേർതിരിക്കുന്നു; ഗ്രന്ഥങ്ങളിലെ ഖവാസ്സ്, കളങ്ങൾ, മുഴുവൻ പരമ്പരാഗത വിവരങ്ങളുടെ ഗവേഷണം ഇനിയും ബാക്കിയാണ്. 13:11, 32:22, 2:143, 35:2, 9:72 എന്നീ അഞ്ച് ആയത്തുകൾ ഭാഗിക ഉദ്ധരണിയിൽനിന്ന് പൂർണ അറബി പാഠം/അർഥത്തിലേക്ക് വികസിപ്പിച്ചു.",
+    "en": "A source-specific deep study of the final 15 formerly undeepened cards: 22 cited bilingual classical tafsir analyses, 15 from Ibn Kathir and seven from al-Tabari. Verbatim Name forms are separated from verbs and thematic relationships, without invented rituals or claims of complete source coverage. Five previously excerpt-only Quran verses (13:11, 32:22, 2:143, 35:2, 9:72) now include full original Arabic and complete bilingual meanings."
+  },
+  "profiles": {
+    "PDF-HN-0196": {
+      "name_id": "PDF-HN-0196",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-11-90-0196",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 11:90",
+            "en": "Ibn Kathir — Quran 11:90"
+          },
+          "arabic_original": "إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
+          "translation": {
+            "ml": "തൗബയിലേക്ക് മടങ്ങുന്നവരോടുള്ള അല്ലാഹുവിന്റെ കരുണയും സ്നേഹവും ഇബ്നു കസീർ വ്യക്തമാക്കുന്നു. ഇവിടെ «الْحَنَّانُ» എന്ന പദമല്ല, «رَحِيمٌ وَدُودٌ» ആണ്. ഈ ആയത്ത് മാത്രം ഹന്നാൻ എന്ന സ്വതന്ത്ര നാമം സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "Ibn Kathir explains mercy and love toward those who turn back in repentance. Quran 11:90 explicitly says rahim and wadud, not the independent noun al-Hannan."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:90",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya90.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0228": {
+      "name_id": "PDF-HN-0228",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-59-24-0228",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:24",
+            "en": "Ibn Kathir — Quran 59:24"
+          },
+          "arabic_original": "الَّذِي يُنَفِّذُ مَا يُرِيدُ إِيجَادَهُ عَلَى الصِّفَةِ الَّتِي يُرِيدُهَا",
+          "translation": {
+            "ml": "സൃഷ്ടിയെ അല്ലാഹു ഉദ്ദേശിക്കുന്ന രൂപത്തിൽ ഉണ്ടാക്കുന്നവനാണ് «അൽ-മുസവ്വിർ» എന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. «അൽ-ഖാലിഖ്» പദ്ധതീകരണത്തെയും «അൽ-ബാരിഅ്» ആ സൃഷ്ടിയെ യാഥാർഥ്യമാക്കുന്നതിനെയും സൂചിപ്പിക്കുന്ന വ്യത്യാസവും പറയുന്നു.",
+            "en": "Ibn Kathir explains al-Musawwir as bringing into being what Allah wills in the form He chooses, distinguishing divine determining and bringing forth."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0230": {
+      "name_id": "PDF-HN-0230",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-42-11-0230",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 42:11",
+            "en": "Ibn Kathir — Quran 42:11"
+          },
+          "arabic_original": "يَذْرَؤُكُمْ فِيهِ أَيْ يَخْلُقُكُمْ فِيهِ",
+          "translation": {
+            "ml": "ഇവിടെ «യദ്‌റഊകും» തലമുറകളായി മനുഷ്യരെയും മൃഗങ്ങളെയും സൃഷ്ടിക്കുന്നതിനെ സൂചിപ്പിക്കുന്ന ക്രിയയാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. ആയത്തിൽ «الذَّارِئُ» എന്ന സ്വതന്ത്ര നാമം വരുന്നില്ല; അതേ ആയത്ത് അല്ലാഹുവിന് സമാനമായി യാതൊന്നുമില്ലെന്ന് വ്യക്തമാക്കുന്നു.",
+            "en": "Ibn Kathir explains yadhra'ukum as Allah continuing generations of people and livestock. It is a verb, while the verse expressly denies that anything resembles Allah."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0232": {
+      "name_id": "PDF-HN-0232",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-59-22-0232",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:22",
+            "en": "Ibn Kathir — Quran 59:22"
+          },
+          "arabic_original": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അനുസരിച്ച് മനുഷ്യർ കാണുന്നതും കാണാത്തതും ചെറുതും വലുതുമായ സകലവും അല്ലാഹു അറിയുന്നു. ഖുർആനിലെ പൂർണ വിശേഷണം «عَالِمُ الْغَيْبِ وَالشَّهَادَةِ» ആണ്; «العالم» ഒറ്റപ്പദം മാത്രം അല്ല.",
+            "en": "Ibn Kathir explains Allah's knowledge of all things, visible and concealed, small and large. The full Quranic phrase is alim al-ghayb wa-sh-shahada."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-59-22-0232",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:22",
+            "en": "Al-Tabari — Quran 59:22"
+          },
+          "arabic_original": "عَالِمُ غَيْبِ السَّمَاوَاتِ وَالْأَرْضِ",
+          "translation": {
+            "ml": "ത്വബരി ദൃശ്യവും അദൃശ്യവുമായ എല്ലാം അല്ലാഹുവിന്റെ അറിവിൽ ഉൾപ്പെടുമെന്ന് പറയുന്നു; മനുഷ്യർക്കു കാണാനും അറിയാനും കഴിയാത്തതെല്ലാം അവൻ അറിയുന്നു.",
+            "en": "Al-Tabari explains Allah's knowledge of what is absent from human observation and what is witnessed in the heavens and earth."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-059": {
+      "name_id": "PDF-HN-059",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-85-13-059",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 85:13",
+            "en": "Ibn Kathir — Quran 85:13"
+          },
+          "arabic_original": "يُبْدِئُ الْخَلْقَ وَيُعِيدُهُ كَمَا بَدَأَهُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടിയെ ആദ്യം ഉണ്ടാക്കാനും വീണ്ടും പുനർസൃഷ്ടിക്കാനും അല്ലാഹുവിന് പൂർണ ശക്തിയുണ്ടെന്ന് വിശദീകരിക്കുന്നു. ആയത്തിൽ രണ്ടു ക്രിയകളാണ്; «الْمُبْدِئُ» എന്ന സ്വതന്ത്ര നാമരൂപം ഇല്ല.",
+            "en": "Ibn Kathir describes originating creation and restoring it through complete divine power. The Quran prints two verbs rather than the isolated al-Mubdi' title."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:13",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya13.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-069": {
+      "name_id": "PDF-HN-069",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-3-26-069",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 3:26",
+            "en": "Ibn Kathir — Quran 3:26"
+          },
+          "arabic_original": "تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അധികാരം നൽകലും തിരികെയെടുക്കലും അല്ലാഹുവിന്റെ തീരുമാനമാണെന്ന് വിവരിക്കുന്നു. «الْمُقَدِّمُ» എന്ന പേരിന്റെ നേരിട്ടുള്ള തെളിവ് ഈ ആയത്തിലല്ല; നബിയുടെ പാപമോചനദുആയായ മുസ്ലിം 2719a-യിലാണ് ആ രൂപം നേരിട്ട് വരുന്നത്.",
+            "en": "Ibn Kathir explains granting and removing authority as subject to Allah's will. The noun al-Muqaddim is not in this verse; its direct wording belongs to Sahih Muslim 2719a."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-070": {
+      "name_id": "PDF-HN-070",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-3-26-070",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 3:26",
+            "en": "Ibn Kathir — Quran 3:26"
+          },
+          "arabic_original": "تُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ",
+          "translation": {
+            "ml": "ആദരവും താഴ്ത്തലും അല്ലാഹുവിന്റെ അധികാരത്തിലാണ് എന്ന് ഇബ്നു കസീർ വിവരിക്കുന്നു. «الْمُؤَخِّرُ» എന്ന നാമം ഈ ആയത്തിലില്ല; അത് മുസ്ലിം 2719a-ലെ ദുആയിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir treats honoring and humbling as divine authority. Al-Mu'akhkhir does not occur in 3:26 but appears in the full Prophetic prayer of Sahih Muslim 2719a."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-077": {
+      "name_id": "PDF-HN-077",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-13-11-077",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 13:11",
+            "en": "Ibn Kathir — Quran 13:11"
+          },
+          "arabic_original": "وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആയത്തിന്റെ ആദ്യഭാഗം മനുഷ്യരെ സംരക്ഷിക്കാൻ ഏൽപ്പിക്കപ്പെട്ട മലക്കുകളുമായി ബന്ധിപ്പിക്കുന്നു. അവസാനം അല്ലാഹുവല്ലാതെ രക്ഷാധികാരിയില്ല എന്നാണ്; അതിലെ «وَالٍ» ഒരു വ്യാകരണപ്രയോഗമാണ്, «الْوَالِي» എന്ന സ്വതന്ത്ര നാമരൂപമല്ല.",
+            "en": "Ibn Kathir discusses angels accompanying and guarding people. The closing wali-in construction means no protector besides Allah, not a verbatim standalone name al-Wali, the Governor."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-13-11-077",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 13:11",
+            "en": "Al-Tabari — Quran 13:11"
+          },
+          "arabic_original": "وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ",
+          "translation": {
+            "ml": "ത്വബരി വിവിധ ആദ്യകാല വ്യാഖ്യാനങ്ങൾ സംഗ്രഹിച്ചശേഷം, അല്ലാഹു ഒരു ജനതയുടെ സ്ഥിതി മാറ്റണമെന്നു തീരുമാനിച്ചാൽ മനുഷ്യരുടെ കാവൽസേനകൾക്കും അത് തടയാനാവില്ലെന്ന് വിവരിക്കുന്നു. വചനത്തിലെ «والٍ» അവർക്കുള്ള രക്ഷാധികാരിയുടെ അഭാവം സൂചിപ്പിക്കുന്നു.",
+            "en": "Al-Tabari distinguishes several earlier readings and explains that no earthly guard can prevent what Allah decrees. Wali-in denies these people a protector besides Allah, rather than naming al-Wali."
+          },
+          "source_reference": "تفسير الطبري — Quran 13:11",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura13-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-077-13-11",
+          "title": {
+            "ml": "ഖുർആൻ 13:11 — പൂർണ ആയത്ത്",
+            "en": "Quran 13:11 — complete verse"
+          },
+          "arabic_original": "لَهُ مُعَقِّبَاتٌ مِّن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ يَحْفَظُونَهُ مِنْ أَمْرِ اللَّهِ ۗ إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ ۗ وَإِذَا أَرَادَ اللَّهُ بِقَوْمٍ سُوءًا فَلَا مَرَدَّ لَهُ ۚ وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ",
+          "translation": {
+            "ml": "മനുഷ്യന്റെ മുന്നിലും പിന്നിലും മാറിമാറി വരുന്ന നിരീക്ഷകർ അവനെ അല്ലാഹുവിന്റെ കല്പനപ്രകാരം സൂക്ഷിക്കുന്നു. ഒരു ജനത സ്വയം ഉള്ളത് മാറ്റുന്നതുവരെ അല്ലാഹു അവരുടെ അവസ്ഥ മാറ്റുകയില്ല. അവൻ ഒരു ജനതയ്ക്ക് ദോഷം തീരുമാനിച്ചാൽ അതിനെ തിരിച്ചുവിടാൻ കഴിയില്ല; അല്ലാഹുവല്ലാതെ അവർക്ക് രക്ഷാധികാരിയുമില്ല.",
+            "en": "Angels follow and guard a person by Allah's command. Allah does not change a people's condition until they change what is within themselves. If He decrees adversity for a people none can repel it; they have no protecting guardian besides Him."
+          },
+          "source_reference": "Quran 13:11 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-081": {
+      "name_id": "PDF-HN-081",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-32-22-081",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 32:22",
+            "en": "Ibn Kathir — Quran 32:22"
+          },
+          "arabic_original": "إِنَّا مِنَ الْمُجْرِمِينَ مُنْتَقِمُونَ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദൈവിക മുന്നറിയിപ്പ് അവന്റെ അടയാളങ്ങൾ ഓർമ്മിപ്പിച്ചശേഷവും പിന്തിരിയുന്ന കുറ്റവാളികൾക്കെതിരാണെന്ന് വിശദീകരിക്കുന്നു. ആയത്ത് «منتقمون» എന്ന ബഹുവചനത്തിലാണ്, «المنتقم» എന്ന ഏകവചന നാമമല്ല; അദ്ദേഹം ഉദ്ധരിക്കുന്ന ഒരു റിപ്പോർട്ടിനെ «വളരെ ഗരീബ്» എന്നും വിശേഷിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir links retribution to people deliberately turning away after being reminded of revelation. The Quran uses the plural muntaqimun, not al-Muntaqim, and the commentary flags an attached report as extremely unusual."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 32:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-32-22-081",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 32:22",
+            "en": "Al-Tabari — Quran 32:22"
+          },
+          "arabic_original": "إِنَّا مِنَ الَّذِينَ اكْتَسَبُوا الْآثَامَ",
+          "translation": {
+            "ml": "ത്വബരി «മുജ്‌രിമുകൾ» എന്നത് പാപം സമ്പാദിച്ച് തെറ്റുകൾ ചെയ്യുന്നവരാണെന്ന് വിശദീകരിക്കുന്നു. ഇതു ആയത്തിലെ plural «مُنْتَقِمُونَ» എന്ന രൂപത്തെ ഏകവചന നാമമാക്കുന്നില്ല.",
+            "en": "Al-Tabari describes the criminals as those who earn sins and deliberately commit wrong; the passage uses the plural divine utterance, not a singular title."
+          },
+          "source_reference": "تفسير الطبري — Quran 32:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura32-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-081-32-22",
+          "title": {
+            "ml": "ഖുർആൻ 32:22 — പൂർണ ആയത്ത്",
+            "en": "Quran 32:22 — complete verse"
+          },
+          "arabic_original": "وَمَنْ أَظْلَمُ مِمَّن ذُكِّرَ بِآيَاتِ رَبِّهِ ثُمَّ أَعْرَضَ عَنْهَا ۚ إِنَّا مِنَ الْمُجْرِمِينَ مُنتَقِمُونَ",
+          "translation": {
+            "ml": "രക്ഷിതാവിന്റെ അടയാളങ്ങൾ ഓർമ്മിപ്പിച്ചതിനു ശേഷവും അവയിൽനിന്ന് പിന്തിരിയുന്നവനെക്കാൾ വലിയ അക്രമിയാരുണ്ട്? തീർച്ചയായും കുറ്റവാളികളോട് നാം നീതിപൂർവമായ ശിക്ഷാനടപടി സ്വീകരിക്കുന്നവരാണ്.",
+            "en": "Who is more unjust than one reminded of the Lord's signs who then turns away? We shall surely exact retribution from persistent wrongdoers."
+          },
+          "source_reference": "Quran 32:22 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-083": {
+      "name_id": "PDF-HN-083",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-2-143-083",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 2:143",
+            "en": "Ibn Kathir — Quran 2:143"
+          },
+          "arabic_original": "وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖിബ്‌ല മാറ്റത്തിനു മുമ്പ് ബൈത്തുൽ മഖ്ദിസിലേക്കു നമസ്കരിച്ചവരുടെ നമസ്കാരപ്രതിഫലം നഷ്ടമാകില്ലെന്നാണ് വിശദീകരിക്കുന്നത്. ഈ കരുണയുടെ സന്ദർഭത്തിലാണ് «رَءُوفٌ رَحِيمٌ» വരുന്നത്.",
+            "en": "Ibn Kathir explains that prayers performed toward Jerusalem before the change of qibla are not wasted. The verse ends by calling Allah ra'uf and rahim in this context."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:143",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya143.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-083-2-143",
+          "title": {
+            "ml": "ഖുർആൻ 2:143 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:143 — complete verse"
+          },
+          "arabic_original": "وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا ۗ وَمَا جَعَلْنَا الْقِبْلَةَ الَّتِي كُنتَ عَلَيْهَا إِلَّا لِنَعْلَمَ مَن يَتَّبِعُ الرَّسُولَ مِمَّن يَنقَلِبُ عَلَىٰ عَقِبَيْهِ ۚ وَإِن كَانَتْ لَكَبِيرَةً إِلَّا عَلَى الَّذِينَ هَدَى اللَّهُ ۗ وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ ۚ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَّحِيمٌ",
+          "translation": {
+            "ml": "നിങ്ങളെ നീതിമാന്മാരായ ഒരു സമൂഹമാക്കിയത് മനുഷ്യർക്കു സാക്ഷികളാകാനാണ്; റസൂൽ നിങ്ങളുടെയും സാക്ഷിയാകും. മുമ്പത്തെ ഖിബ്‌ല, റസൂലിനെ പിന്തുടരുന്നവരെയും പിന്തിരിയുന്നവരെയും തിരിച്ചറിയിക്കാനുള്ള പരീക്ഷണമായിരുന്നു. അല്ലാഹു നേർവഴി കാണിച്ചവർക്കല്ലാതെ അത് പ്രയാസകരമായിരുന്നു. നിങ്ങളുടെ വിശ്വാസവും മുൻ നമസ്കാരങ്ങളും അല്ലാഹു പാഴാക്കുകയില്ല; അവൻ മനുഷ്യരോട് ആർദ്രദയയുള്ളവനും കരുണാനിധിയുമാണ്.",
+            "en": "Allah made this community just so it would witness over humanity and the Messenger would witness over it. The former direction of prayer distinguished those who followed the Messenger from those who turned away; it was difficult except for those Allah guided. Allah will not waste your faith and earlier prayers; He is compassionate and merciful to people."
+          },
+          "source_reference": "Quran 2:143 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya143.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-089": {
+      "name_id": "PDF-HN-089",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-35-2-089",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 35:2",
+            "en": "Ibn Kathir — Quran 35:2"
+          },
+          "arabic_original": "لَا مَانِعَ لِمَا أَعْطَى وَلَا مُعْطِيَ لِمَا مَنَعَ",
+          "translation": {
+            "ml": "അല്ലാഹു നൽകുന്ന കരുണ തടയാനോ അവൻ തടഞ്ഞതിനെ മനുഷ്യർക്ക് നൽകാനോ മറ്റാർക്കും കഴിയില്ലെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു; തുടർന്ന് നമസ്കാരശേഷമുള്ള നബിവചന ദിക്‌ർ ഉദ്ധരിക്കുന്നു. «الْمَانِعُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല.",
+            "en": "Ibn Kathir links Quran 35:2 to the authentic post-prayer supplication that none can withhold what Allah grants or grant what He withholds. The verse itself does not print al-Mani' as an independent Name."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 35:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-35-2-089",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 35:2",
+            "en": "Al-Tabari — Quran 35:2"
+          },
+          "arabic_original": "مَفَاتِيحُ الْخَيْرِ وَمَغَالِقُهَا كُلُّهَا بِيَدِهِ",
+          "translation": {
+            "ml": "ത്വബരി നന്മയുടെ തുറവുകളും തടസ്സങ്ങളും അല്ലാഹുവിന്റെ അധികാരത്തിലാണെന്ന് വിശദീകരിക്കുന്നു; അവൻ നൽകിയ കരുണ ആരും തടയുകയില്ലെന്നും അവൻ തടഞ്ഞത് മറ്റാർക്കും തുറക്കാനാവില്ലെന്നും പറയുന്നു.",
+            "en": "Al-Tabari says the keys to opening or withholding good are in Allah's hand; none can stop a blessing He opens or open what He closes."
+          },
+          "source_reference": "تفسير الطبري — Quran 35:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura35-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-089-35-2",
+          "title": {
+            "ml": "ഖുർആൻ 35:2 — പൂർണ ആയത്ത്",
+            "en": "Quran 35:2 — complete verse"
+          },
+          "arabic_original": "مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا ۖ وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُ مِن بَعْدِهِ ۚ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+          "translation": {
+            "ml": "അല്ലാഹു മനുഷ്യർക്കു തുറന്നുകൊടുക്കുന്ന കരുണയെ ആർക്കും തടയാനാവില്ല. അവൻ തടഞ്ഞുനിർത്തിയതിനെ അവനുശേഷം ആർക്കും നൽകാനാവില്ല. അവൻ പ്രതാപിയും യുക്തിമാനുമാണ്.",
+            "en": "No one can withhold the mercy Allah opens for people, and no one can release what He withholds after Him; He is the Mighty and Wise."
+          },
+          "source_reference": "Quran 35:2 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-090": {
+      "name_id": "PDF-HN-090",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-6-17-090",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 6:17",
+            "en": "Ibn Kathir — Quran 6:17"
+          },
+          "arabic_original": "إِنَّهُ مَالِكُ الضُّرِّ وَالنَّفْعِ",
+          "translation": {
+            "ml": "പ്രയാസവും നന്മയും അല്ലാഹുവിന്റെ പൂർണ അധികാരത്തിലാണ് എന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു; മറ്റൊന്നിനും ആ അധികാരത്തെ മറികടക്കാനാവില്ല. «الضار» എന്ന ഒറ്റപ്പദം ഈ ആയത്തിൽ ഇല്ല; ദോഷപ്പെടുത്താനുള്ള ജപമെന്ന നിർദേശവും അല്ല.",
+            "en": "Ibn Kathir interprets divine control over harm and benefit and the inability of false deities to override it. Al-Darr does not appear here as an independent name or a harm-working rite."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-6-17-090",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 6:17",
+            "en": "Al-Tabari — Quran 6:17"
+          },
+          "arabic_original": "إِنْ يُصِبْكَ اللَّهُ بِضُرٍّ",
+          "translation": {
+            "ml": "ത്വബരി പ്രയാസത്തെ ജീവിതത്തിലെ ബുദ്ധിമുട്ടും ഉപജീവനത്തിലുള്ള കുറവും പോലെയുള്ള അർഥങ്ങളിൽ വിശദീകരിക്കുന്നു; അതിനെ മാറ്റുന്നവൻ അല്ലാഹുവാണ്. അവന്റെ അധികാരം വിഗ്രഹങ്ങൾക്ക് ഇല്ലെന്ന് വചനത്തിൽ ഊന്നുന്നു.",
+            "en": "Al-Tabari explains hardship through difficult conditions and restricted livelihood, contrasting Allah's power to relieve it with the impotence of idols."
+          },
+          "source_reference": "تفسير الطبري — Quran 6:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-091": {
+      "name_id": "PDF-HN-091",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-6-17-091",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 6:17",
+            "en": "Ibn Kathir — Quran 6:17"
+          },
+          "arabic_original": "فَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ തീരുമാനത്തെ ഒരാൾക്കും മാറ്റാൻ കഴിയില്ലെന്നും നന്മയും പ്രയാസവും അവന്റെ അധികാരത്തിലാണെന്നും വിശദീകരിക്കുന്നു. «النافع» എന്ന സ്വതന്ത്ര പദരൂപം ഈ ആയത്തിൽ ഇല്ല.",
+            "en": "Ibn Kathir explains that Allah alone controls benefit and adversity and none overturns His decree. The noun al-Nafi' is not the standalone Quranic wording in this verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-6-17-091",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 6:17",
+            "en": "Al-Tabari — Quran 6:17"
+          },
+          "arabic_original": "هُوَ الْقَادِرُ عَلَى نَفْعِكَ وَضَرِّكَ",
+          "translation": {
+            "ml": "ത്വബരി നന്മയോ പ്രയാസമോ നൽകാൻ അല്ലാഹുവിന് മാത്രമാണ് പരിപൂർണ കഴിവെന്ന് വിശദീകരിക്കുന്നു; സൃഷ്ടികളെയോ വിഗ്രഹങ്ങളെയോ സ്വതന്ത്ര ശക്തിയായി കാണരുത്.",
+            "en": "Al-Tabari explains Allah's sole power to benefit or harm and criticizes worship of beings unable to secure benefit even for themselves."
+          },
+          "source_reference": "تفسير الطبري — Quran 6:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-121": {
+      "name_id": "PDF-HN-121",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-9-72-121",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 9:72",
+            "en": "Ibn Kathir — Quran 9:72"
+          },
+          "arabic_original": "وَرِضْوَانٌ مِنَ اللَّهِ أَكْبَرُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വർഗത്തിലെ അനുഗ്രഹങ്ങളെക്കാൾ മഹത്തായത് അല്ലാഹുവിന്റെ തൃപ്തിയാണെന്ന് പറയുന്നു. «أكبر» എന്നത് «റിദ്വാൻ» എന്ന നാമവുമായി ബന്ധപ്പെട്ട താരതമ്യപദമാണ്; «الْأَكْبَرُ» എന്ന സ്വതന്ത്ര നാമത്തിന്റെ നേരിട്ടുള്ള തെളിവല്ല.",
+            "en": "Ibn Kathir says divine approval exceeds the other rewards promised in Paradise. Akbar compares God's pleasure with those rewards; it is not independently the name al-Akbar here."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 9:72",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya72.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        },
+        {
+          "id": "further-depth-tabary-9-72-121",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 9:72",
+            "en": "Al-Tabari — Quran 9:72"
+          },
+          "arabic_original": "وَرِضَا اللَّهِ عَنْهُمْ أَكْبَرُ مِنْ ذَلِكَ كُلِّهِ",
+          "translation": {
+            "ml": "ത്വബരി സ്വർഗ്ഗസുഖങ്ങളേക്കാൾ അല്ലാഹുവിന്റെ തൃപ്തി മഹത്തായതാണെന്ന് വിശദീകരിക്കുന്നു. ഇവിടെ «أكبر» മറ്റൊരു വസ്തുവുമായുള്ള താരതമ്യമാണ്; സ്വതന്ത്ര ദൈവനാമമെന്ന ഭാഷാപരമായ അവകാശം അല്ല.",
+            "en": "Al-Tabari places Allah's pleasure above all the promised Garden rewards; akbar is a comparative attached to ridwan, not a separate Name."
+          },
+          "source_reference": "تفسير الطبري — Quran 9:72",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura9-aya72.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "third-depth-full-PDF-HN-121-9-72",
+          "title": {
+            "ml": "ഖുർആൻ 9:72 — പൂർണ ആയത്ത്",
+            "en": "Quran 9:72 — complete verse"
+          },
+          "arabic_original": "وَعَدَ اللَّهُ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ۚ وَرِضْوَانٌ مِّنَ اللَّهِ أَكْبَرُ ۚ ذَٰلِكَ هُوَ الْفَوْزُ الْعَظِيمُ",
+          "translation": {
+            "ml": "വിശ്വസിക്കുന്ന പുരുഷന്മാർക്കും സ്ത്രീകൾക്കും അടിയിലൂടെ നദികളൊഴുകുന്ന സ്വർഗത്തോട്ടങ്ങളും അവയിൽ നിത്യവാസവും ആദ്നിലെ മനോഹരമായ ഭവനങ്ങളും അല്ലാഹു വാഗ്ദാനം ചെയ്തിരിക്കുന്നു. എന്നാൽ അല്ലാഹുവിന്റെ തൃപ്തി അതിനേക്കാൾ വലുതാണ്. അതാണ് മഹത്തായ വിജയം.",
+            "en": "Allah promises believing men and women gardens beneath which rivers flow, eternal residence and good dwellings in Eden. His pleasure is greater than all of that: this is the supreme success."
+          },
+          "source_reference": "Quran 9:72 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya72.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുൻ കാർഡിൽ ബന്ധപ്പെട്ട ഭാഗം മാത്രം ഉണ്ടായിരുന്നതിനാൽ പൂർണ ആയത്ത് ചേർക്കുന്നു. തലക്കെട്ടിലെ പദം അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്ന അവകാശമല്ല.",
+            "en": "A complete verse added where the earlier card had only an excerpt. This is not proof that the exact card heading is a standalone Quranic Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-122": {
+      "name_id": "PDF-HN-122",
+      "scholarly": [
+        {
+          "id": "further-depth-katheer-35-10-122",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 35:10",
+            "en": "Ibn Kathir — Quran 35:10"
+          },
+          "arabic_original": "مَنْ كَانَ يُرِيدُ الْعِزَّةَ فَلِلَّهِ الْعِزَّةُ جَمِيعًا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇഹപരലോകങ്ങളിൽ യഥാർഥ പ്രതാപം ആഗ്രഹിക്കുന്നവർ അല്ലാഹുവിന്റെ അനുസരണം പാലിക്കണമെന്ന് വിശദീകരിക്കുന്നു. «الْأَعَزُّ» എന്ന വേറിട്ട നാമം ആയത്തിലില്ല; «الْعِزَّةُ» എന്നതാണ് ഇവിടെ.",
+            "en": "Ibn Kathir connects true honor to obedience to Allah, since all might belongs to Him. The verse contains al-'izzah, not the standalone superlative al-A'azz."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 35:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവും. പ്രത്യേക എണ്ണം/ഫലം ഉള്ള ഖുർആൻ അല്ലെങ്കിൽ സഹീഹ് ഹദീസ് നിർദേശമായി വായിക്കരുത്.",
+            "en": "Short cited Arabic text and attributed interpretive summary; this is not a new Quranic or Prophetic fixed-count prescription."
+          }
+        }
+      ],
+      "evidence": []
+    }
+  }
+}

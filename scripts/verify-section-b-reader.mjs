@@ -95,7 +95,7 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 25);
+  assert.equal(prophetic.entries.length, 26);
   assert.ok(topical.topics.length >= 18);
   const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
@@ -432,6 +432,64 @@ try {
   assert.ok(depthII.profiles['PDF-HN-0205'].scholarly.some(item=>item.source_url.includes('/tabary/')));
   assert.ok(depthII.profiles['PDF-HN-0213'].scholarly.some(item=>item.source_url.includes('/tabary/')));
   console.log('PASS: 20 additional source-checked name cards show 27 original Arabic tafsir excerpts and ten complete Quran verses, in Malayalam and English.');
+
+  // Third detailed research pass: the 60 originally excerpt-only profiles now all
+  // have a distinct, source-linked classical commentary layer across three phases.
+  const depthIII = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthIII.json','utf8'));
+  const thirdIds = Object.keys(depthIII.profiles);
+  assert.equal(thirdIds.length,15);
+  const allDeep = [...Object.keys(depth.profiles),...Object.keys(depthII.profiles),...thirdIds];
+  assert.equal(allDeep.length,60);
+  assert.equal(new Set(allDeep).size,60,'The three depth phases must cover 60 different card headings.');
+  assert.ok(allDeep.every(id=>coveredIds.has(id)));
+  let tafsirThird=0,kathirThird=0,tabariThird=0,fullVerseThird=0;
+  for(const [id,p] of Object.entries(depthIII.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=1);
+    const unique = new Set();
+    for(const item of [...p.scholarly,...p.evidence]){
+      assert.ok(!unique.has(item.id),`Source ID reused: ${id}/${item.id}`);
+      unique.add(item.id);
+      assert.equal(item.review_status,'checked_against_digital_text');
+      assert.ok(item.arabic_original && item.arabic_original.length>12);
+      assert.ok(item.translation.ml && item.translation.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(item.source_url),`Source URL missing: ${id}/${item.id}`);
+      assert.ok(!item.count&&!item.timing,'Scholarly summary cannot invent ritual timing or count.');
+    }
+    for(const item of p.scholarly){
+      tafsirThird++;
+      if(item.source_url.includes('/katheer/'))kathirThird++;
+      if(item.source_url.includes('/tabary/'))tabariThird++;
+    }
+    for(const item of p.evidence){
+      fullVerseThird++;
+      assert.equal(item.claim_kind,'complete_quran_verse_context');
+      assert.ok(item.arabic_original.length>80);
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const item of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(item.arabic_original)),`Arabic source not rendered: ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(escape(item.translation[lang])),`Translated source not rendered: ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(item.source_url),`Source link not rendered: ${id}/${item.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({tafsirThird,kathirThird,tabariThird,fullVerseThird},{tafsirThird:22,kathirThird:15,tabariThird:7,fullVerseThird:5});
+  const afterPrayer=prophetic.entries.find(x=>x.id==='hadith-bukhari-844-no-one-withholds-post-prayer');
+  assert.ok(afterPrayer && afterPrayer.arabic_original.includes('لَا مَانِعَ لِمَا أَعْطَيْتَ'));
+  assert.ok(afterPrayer.source_reference.includes('Bukhari 844') && afterPrayer.source_reference.includes('Muslim 593a'));
+  assert.ok(afterPrayer.timing.en.includes('obligatory prayer'));
+  assert.ok(afterPrayer.count.en.includes('no additional'));
+  assert.ok(afterPrayer.name_ids.includes('PDF-HN-089'));
+  for(const id of afterPrayer.name_ids) for(const lang of ['ml','en']){
+    const html=render(null,id,lang,{pdf_name_id:id});
+    assert.ok(html.includes(escape(afterPrayer.arabic_original)));
+    assert.ok(html.includes(escape(afterPrayer.translation[lang])));
+    assert.ok(html.includes(afterPrayer.source_url));
+  }
+  console.log('PASS: 60 distinct deep-studied headings (three phases), 22 more classical tafsir readings, five complete Quran passages, and authenticated after-prayer hadith.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
