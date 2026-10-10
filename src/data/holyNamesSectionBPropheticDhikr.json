@@ -1244,6 +1244,54 @@
           "url": "https://sunnah.com/muslim:593a"
         }
       ]
+    },
+    {
+      "id": "hadith-tirmidhi-2140-hearts-steadfast",
+      "name_ids": [
+        "PDF-HN-0147",
+        "PDF-HN-015",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഹൃദയം വിശ്വാസത്തിൽ ഉറപ്പിക്കാൻ നബി ﷺയുടെ പതിവ് ദുആ",
+        "en": "Prophetic prayer for steadfastness of heart"
+      },
+      "arabic_original": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+      "translation": {
+        "ml": "ഹൃദയങ്ങളെ മാറ്റുന്നവനേ, എന്റെ ഹൃദയത്തെ നിന്റെ മതത്തിൽ ഉറപ്പിക്കേണമേ. അനസ് (റ) നിവേദനം: നബി ﷺ ഈ ദുആ പലപ്പോഴും ചൊല്ലിയിരുന്നു. ഈ ഹദീസിൽ അൽ-വഹ്ഹാബ് എന്ന സ്വതന്ത്ര നാമം വരുന്നില്ല; ഖുർആൻ 3:8-ലെ അപേക്ഷയുമായുള്ള ബന്ധം വിഷയപരമാണ്.",
+        "en": "O Turner of hearts, keep my heart firm upon Your religion. Anas reported that the Prophet often uttered this prayer. Al-Wahhab is not directly invoked in the formula; the association with Quran 3:8 is thematic."
+      },
+      "source_reference": "Jami at-Tirmidhi 2140 (Hasan per al-Tirmidhi)",
+      "source_url": "https://sunnah.com/tirmidhi:2140",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "തിർമിദി 2140-ലെ ഹദീസ് ദുആ. ഇത് ഖുർആൻ 3:8-ലെ വാചകവുമായി ഒന്നല്ല; നിശ്ചിത 99, 313, 1000 ജപസംഖ്യ ഈ ഹദീസിലില്ല.",
+        "en": "A distinct authenticated Prophetic supplication, judged Hasan by al-Tirmidhi. It is not the identical wording of Quran 3:8 and assigns no 99, 313 or 1000 repetitions."
+      },
+      "count": {
+        "ml": "പലപ്പോഴും ചൊല്ലിയിരുന്നു; നിശ്ചിത ജപസംഖ്യ റിപ്പോർട്ടിലില്ല.",
+        "en": "Frequently said, but no fixed number of repetitions is given."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക ദിവസമോ മണിക്കൂറോ റിപ്പോർട്ടിൽ നിശ്ചയിക്കുന്നില്ല.",
+        "en": "No fixed day or clock time is specified."
+      },
+      "conditions": {
+        "ml": "നേരിട്ടുള്ള ദുആ. തകിടോ കളമോ ഇല്ല.",
+        "en": "A spoken supplication; no amulet or square is prescribed."
+      },
+      "steps": {
+        "ml": [
+          "ഈ ചെറു ദുആ പൂർണമായി പറയുക.",
+          "ഖുർആൻ 3:8-ലെ വേറൊരു ദുആയുമായി പദരൂപം കലർത്തരുത്."
+        ],
+        "en": [
+          "Recite the complete concise Prophetic wording.",
+          "Keep the separate Quranic supplication in 3:8 distinct."
+        ]
+      }
     }
   ]
 }
