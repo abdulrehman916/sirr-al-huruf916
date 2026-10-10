@@ -716,6 +716,64 @@ try {
   assert.ok(depthVII.profiles['PDF-HN-012'].evidence[0].source_scope.en.includes('not an instruction or authorization for violence today'));
   assert.ok(depthVII.profiles['PDF-HN-014'].evidence[0].arabic_original.includes('الْوَاحِدُ الْقَهَّارُ'));
   console.log('PASS: 120 unique deep-studied cards; first 15 add 32 source-exact classical excerpts, 4 full verses, two critical disagreements and bilingual original-text rendering.');
+
+  // Eighth source-critical pass: fifteen entirely new canonical IDs (135 total).
+  const depthVIII = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthVIII.json','utf8'));
+  const viiiIds = Object.keys(depthVIII.profiles);
+  assert.equal(viiiIds.length,15);
+  const researchedVIII = [...studiedVII,...viiiIds];
+  assert.equal(researchedVIII.length,135);
+  assert.equal(new Set(researchedVIII).size,135,'Eighth phase must contain no repeat IDs.');
+  assert.ok(researchedVIII.every(id=>coveredIds.has(id)));
+  let viiiTafsir=0,viiiKathir=0,viiiTabari=0,viiiFullQuran=0,viiiCritical=0;
+  const recIds=new Set();
+  for(const [id,p] of Object.entries(depthVIII.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=2);
+    assert.ok(p.scholarly.some(e=>e.source_url.includes('/katheer/')));
+    assert.ok(p.scholarly.some(e=>e.source_url.includes('/tabary/')));
+    for(const record of [...p.scholarly,...p.evidence]){
+      assert.ok(!recIds.has(record.id),`Record collision: ${record.id}`);
+      recIds.add(record.id);
+      assert.equal(record.review_status,'checked_against_digital_text');
+      assert.ok(record.arabic_original?.length>=10);
+      assert.ok(record.translation?.ml && record.translation?.en);
+      assert.ok(record.source_scope?.ml && record.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(record.source_url));
+      assert.ok(!record.count&&!record.timing&&!record.steps,'Do not invent practices from tafsir.');
+    }
+    for(const record of p.scholarly){
+      viiiTafsir++;
+      if(record.source_url.includes('/katheer/'))viiiKathir++;
+      if(record.source_url.includes('/tabary/'))viiiTabari++;
+      if(record.claim_kind==='source_critical_grammar_and_unseen_claims')viiiCritical++;
+    }
+    for(const record of p.evidence){
+      viiiFullQuran++;
+      assert.equal(record.claim_kind,'complete_quran_verse_context');
+      assert.ok(record.source_reference.endsWith('(complete verse)'));
+      assert.ok(record.arabic_original.length>100);
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const record of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(record.arabic_original)),`Original Arabic not displayed ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.translation[lang])),`Translation absent ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.source_scope[lang])),`Source scope absent ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(record.source_url),`Source link absent ${id}/${record.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({viiiTafsir,viiiKathir,viiiTabari,viiiFullQuran,viiiCritical},
+    {viiiTafsir:32,viiiKathir:15,viiiTabari:17,viiiFullQuran:3,viiiCritical:2});
+  assert.ok(depthVIII.profiles['PDF-HN-019'].evidence[0].arabic_original.includes('وَاللَّهُ يَقْبِضُ وَيَبْسُطُ'));
+  assert.ok(depthVIII.profiles['PDF-HN-020'].evidence[0].arabic_original.includes('وَاللَّهُ يَقْبِضُ وَيَبْسُطُ'));
+  assert.ok(depthVIII.profiles['PDF-HN-027'].evidence[0].arabic_original.includes('أَبْتَغِي حَكَمًا'));
+  assert.ok(depthVIII.profiles['PDF-HN-018'].scholarly.some(x=>x.claim_kind==='source_critical_grammar_and_unseen_claims'));
+  assert.ok(depthVIII.profiles['PDF-HN-016'].scholarly.some(x=>x.translation.en.includes('grammatical case')));
+  assert.ok(depthVIII.profiles['PDF-HN-021'].scholarly.some(x=>x.translation.en.includes('event')));
+  console.log('PASS: 135 unique researched headings; 32 Arabic classical tafsir excerpts, three full Quran verses, and two source-critical records render in Malayalam/English.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
