@@ -503,7 +503,448 @@
           "verse_count": 1
         }
       ],
-      "scholarly": []
+      "scholarly": [
+        {
+          "id": "encyclopedia-aziz-tafsir-1-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഒന്നിനും കീഴടക്കാനാവാത്ത മഹത്വം",
+            "en": "Ibn Kathir: the One who overpowers all things"
+          },
+          "arabic_original": "الذي قد عز كل شيء فقهره",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-അസീസിനെ സകലതിനെയും അതിജയിക്കുന്നവനും മറ്റാർക്കും കീഴടക്കാനാകാത്തവനുമായി വിശദീകരിക്കുന്നു. ഈ നാമത്തോടൊപ്പം വരുന്ന അൽ-ജബ്ബാറിനെയും അൽ-മുതകബ്ബിറിനെയും വ്യത്യസ്ത പേരുകളായി പരിഗണിക്കണം.",
+            "en": "Ibn Kathir glosses al-Aziz as the One who surpasses and overpowers all; the adjacent al-Jabbar and al-Mutakabbir remain separate Names."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-2-59-23-saadi",
+          "title": {
+            "ml": "സഅ്ദി: ആരും ജയിക്കാത്ത അധിപത്യം",
+            "en": "Al-Sa'di: none can contest the Almighty"
+          },
+          "arabic_original": "الذي لا يغالب ولا يمانع",
+          "translation": {
+            "ml": "സഅ്ദി അൽ-അസീസിന്റെ അർഥം ആരും ചെറുത്തുനിൽക്കുകയോ ജയിക്കുകയോ ചെയ്യാനാവാത്ത അധിപതിയെന്നാണ് വിശദീകരിക്കുന്നത്. സകല സൃഷ്ടികളും അവന്റെ അധികാരത്തിന് വിധേയരാണ്.",
+            "en": "Al-Sa'di defines al-Aziz as the One whom no one can overcome or resist, to whom all creation submits."
+          },
+          "source_reference": "تفسير السعدي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-3-2-129-katheer",
+          "title": {
+            "ml": "ഇബ്രാഹീമിന്റെ ദുആയിൽ ശക്തിയും ഹിക്മത്തും",
+            "en": "Ibn Kathir: might and wisdom in Ibrahim's prayer"
+          },
+          "arabic_original": "العزيز الذي لا يعجزه شيء",
+          "translation": {
+            "ml": "ഇബ്രാഹീമും ഇസ്മാഈലും അപേക്ഷിക്കുന്ന ദൗത്യവഴിയിലുള്ള വിദ്യാഭ്യാസം, ശുദ്ധീകരണം എന്നിവയുടെ സമാപനത്തിലാണ് അൽ-അസീസ് അൽ-ഹകീം. ഇബ്നു കസീർ അവന് അസാധ്യമായി ഒന്നുമില്ലെന്നും ഹിക്മത്ത് കാര്യങ്ങളെ ശരിയായ സ്ഥാനത്തിടുന്നതാണെന്നും പറയുന്നു.",
+            "en": "The prayer ends with al-Aziz al-Hakim after requesting a Messenger who teaches and purifies. Ibn Kathir says nothing incapacitates Allah and His wisdom places things rightly."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 2:129",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya129.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-4-3-6-katheer",
+          "title": {
+            "ml": "ഗർഭത്തിലെ സൃഷ്ടിയും ദൈവത്തിന്റെ ശക്തിയും",
+            "en": "Ibn Kathir: Divine power in human formation"
+          },
+          "arabic_original": "وله العزة التي لا ترام",
+          "translation": {
+            "ml": "അമ്മയുടെ ഗർഭത്തിൽ മനുഷ്യനെ ഇച്ഛിക്കുന്നവിധം രൂപപ്പെടുത്തുന്ന ദൈവിക സൃഷ്ടിശക്തിയെ ഇബ്നു കസീർ അൽ-അസീസ് നാമവുമായി ബന്ധിപ്പിക്കുന്നു. ഈസാ നബിയുടെ ജനനത്തെപ്പറ്റിയുള്ള ക്രിസ്തീയ വാദങ്ങളോടുള്ള പാഠപരമായ പ്രതികരണവുമാണ്.",
+            "en": "Ibn Kathir relates Divine might to shaping human beings in the womb, also situating the verse within arguments about Isa's human birth."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 3:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya6.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-5-3-18-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അൽ-അസീസ് കൂടെയുള്ള അൽ-ഹകീം",
+            "en": "Ibn Kathir: might is coupled with wisdom"
+          },
+          "arabic_original": "الحكيم في أقواله وأفعاله وشرعه وقدره",
+          "translation": {
+            "ml": "തൗഹീദിനും നീതിക്കും സാക്ഷ്യം നൽകുന്ന പൂർണ ആയത്തിന്റെ അവസാനത്താണ് അൽ-അസീസ് അൽ-ഹകീം. ഇബ്നു കസീർ അല്ലാഹുവിന്റെ ഹിക്മത്ത് വാക്കിലും പ്രവർത്തിയിലും നിയമത്തിലും വിധിയിലുമുണ്ടെന്ന് പറയുന്നു.",
+            "en": "After monotheism and justice, the paired Names indicate wisdom in Divine words, actions, law and decree."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 3:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya18.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-6-3-18-tabary",
+          "title": {
+            "ml": "ത്വബരി: അൽ-അസീസ് — ഇച്ഛിക്കുന്നതിനെ ആരും തടയില്ല",
+            "en": "Al-Tabari: none can prevent God's will"
+          },
+          "arabic_original": "الذي لا يمتنع عليه شيء أراده",
+          "translation": {
+            "ml": "ത്വബരി അൽ-അസീസിനെ അവൻ ഇച്ഛിക്കുന്നതു തടയാനാവാത്തവനും അവന്റെ ശിക്ഷയെ ആരും അതിജയിക്കാനാവാത്തവനുമായി വിശദീകരിക്കുന്നു. അൽ-ഹകീം അവന്റെ നിയന്ത്രണത്തിലെ പിഴവില്ലായ്മയാണെന്ന് പറയുന്നു.",
+            "en": "Al-Tabari explains that none resists God's will or gains the upper hand against His judgment. Al-Hakim means wise governance without defect."
+          },
+          "source_reference": "تفسير الطبري · Quran 3:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya18.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-7-3-18-saadi",
+          "title": {
+            "ml": "സഅ്ദി: അൽ-അസീസിനൊപ്പം ഖിസ്ത്",
+            "en": "Al-Sa'di: justice accompanies omnipotence"
+          },
+          "arabic_original": "لم يزل متصفا بالقسط في أفعاله",
+          "translation": {
+            "ml": "മലക്കുകൾക്കും അറിവുള്ളവർക്കും സാക്ഷിത്വം നൽകുന്ന ഈ ആയത്തിൽ «قَائِمًا بِالْقِسْطِ» നീതിയോടെ നിലകൊള്ളൽ എന്നും സഅ്ദി വിശദീകരിക്കുന്നു. അൽ-അസീസിന്റെ ശക്തി ധാർമികതയിൽനിന്ന് വേർപെടുത്തുന്നില്ല.",
+            "en": "Al-Sa'di considers the Divine testimony, scholarly witness and enduring justice as mutually linked; power is not detached from just governance."
+          },
+          "source_reference": "تفسير السعدي · Quran 3:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura3-aya18.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-8-12-30-katheer",
+          "title": {
+            "ml": "യൂസുഫിന്റെ കഥ: അസീസ് മനുഷ്യനായ മന്ത്രി",
+            "en": "Ibn Kathir: al-Aziz means the human minister"
+          },
+          "arabic_original": "امرأة العزيز ، وهو الوزير",
+          "translation": {
+            "ml": "യൂസുഫിന്റെ കഥയിൽ നഗരത്തിലെ സ്ത്രീകൾ «ഇംറഅതുൽ അസീസ്» എന്നു പറയുന്നു; അത് ഈജിപ്തിലെ പ്രഭുവിന്റെ ഭാര്യയാണ്, അല്ലാഹുവിന്റെ ദൈവനാമമല്ല. ഇബ്നു കസീർ അദ്ദേഹം മന്ത്രിയെന്ന് വ്യക്തമായി പറയുന്നു.",
+            "en": "The women discuss the wife of Egypt's powerful official; Ibn Kathir explicitly identifies al-Aziz here as the minister, not Allah."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 12:30",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya30.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-9-12-78-tabary",
+          "title": {
+            "ml": "ത്വബരി: «യാ അയ്യുഹൽ അസീസ്» = «ഭരണാധികാരിയേ»",
+            "en": "Al-Tabari: al-Aziz here means O king"
+          },
+          "arabic_original": "يا أيها الملك",
+          "translation": {
+            "ml": "യൂസുഫിനെ വിളിക്കുന്ന «യാ അയ്യുഹൽ അസീസ്» ത്വബരി «യാ അയ്യുഹൽ മലിക്» എന്നു നേരിട്ട് വ്യാഖ്യാനിക്കുന്നു. മനുഷ്യനെ വിളിക്കുന്ന പദം ദൈവനാമം നേരിട്ടു വന്നതിന്റെ തെളിവാക്കി എണ്ണരുത്.",
+            "en": "Al-Tabari explicitly glosses the brothers' address as O king, reflecting a human political title, not a Divine invocation."
+          },
+          "source_reference": "تفسير الطبري · Quran 12:78",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura12-aya78.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-10-12-78-katheer",
+          "title": {
+            "ml": "യൂസുഫിന്റെ മുമ്പിൽ സഹോദരങ്ങളുടെ അപേക്ഷ",
+            "en": "Ibn Kathir: a plea on behalf of an elderly father"
+          },
+          "arabic_original": "وهو يحبه حبا شديدا",
+          "translation": {
+            "ml": "ബിൻയാമീനെ വിടാൻ അപേക്ഷിക്കുമ്പോൾ വൃദ്ധനായ പിതാവിന് അവനോടുള്ള സ്നേഹം ചൂണ്ടിക്കാണിക്കുകയാണെന്ന് ഇബ്നു കസീർ പറയുന്നു. «അസീസ്» ഭരണപദവിയാണ്.",
+            "en": "Ibn Kathir explains that the brothers appeal to their father's deep attachment to Binyamin in asking Yusuf to take one of them instead."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 12:78",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya78.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-11-12-88-katheer",
+          "title": {
+            "ml": "യൂസുഫിന്റെ കഥയിലെ കുറഞ്ഞ വിലയുള്ള സാധനങ്ങൾ",
+            "en": "Ibn Kathir: what the brothers meant by inferior goods"
+          },
+          "arabic_original": "من الجدب والقحط وقلة الطعام",
+          "translation": {
+            "ml": "കുറഞ്ഞ വിലയുള്ളതോ കൈമാറ്റം ചെയ്യാൻ പ്രയാസമുള്ളതോ ആയ സാധനങ്ങൾകൊണ്ടുവന്നുവെന്ന വിശദീകരണങ്ങൾ ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. സഹായം അഭ്യർഥിക്കുന്നത് യൂസുഫിനോടാണ്; «അസീസ്» അവന്റെ പദവി.",
+            "en": "Ibn Kathir transmits different explanations for the inadequate goods presented by Yusuf's brothers. The addressee al-Aziz remains an earthly officeholder."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 12:88",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya88.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-12-26-9-katheer",
+          "title": {
+            "ml": "പ്രതാപവും കാരുണ്യവും ഒരുമിക്കുന്ന കൂട്ടുനാമം",
+            "en": "Ibn Kathir: might and mercy joined together"
+          },
+          "arabic_original": "الذي عز كل شيء وقهره وغلبه",
+          "translation": {
+            "ml": "പ്രവാചകകഥകളിൽ ആവർത്തിക്കുന്ന «الْعَزِيزُ الرَّحِيمُ» എന്നത് ദൈവത്തിന്റെ അപ്രതിരോധ്യ ശക്തിയും പാപികൾക്ക് മടങ്ങിവരാനുള്ള കാരുണ്യവും ഒരുമിച്ച് പഠിപ്പിക്കുന്നു.",
+            "en": "The repeated pairing al-Aziz al-Rahim joins unconquerable might with mercy for those who return and repent."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 26:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura26-aya9.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-13-26-9-katheer",
+          "title": {
+            "ml": "സഈദ് ഇബ്നു ജുബൈർ: തൗബ ചെയ്യുന്നവനോട് കാരുണ്യം",
+            "en": "Sa'id ibn Jubayr: merciful toward repentance"
+          },
+          "arabic_original": "الرحيم بمن تاب إليه وأناب",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സഈദ് ഇബ്നു ജുബൈറിന്റെ അഭിപ്രായമായി «റഹീം» എന്നത് തൗബചെയ്ത് മടങ്ങുന്നവരോടുള്ള കാരുണ്യമെന്ന് ചൂണ്ടിക്കാണിക്കുന്നു. ശക്തിയും മാപ്പും തമ്മിലുള്ള ബന്ധമാണിത്.",
+            "en": "Ibn Kathir attributes to Sa'id ibn Jubayr the gloss of mercy toward those who repent, paired with Divine might."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 26:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura26-aya9.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-14-27-9-katheer",
+          "title": {
+            "ml": "മൂസാ നബിയോട് നേരിട്ടുള്ള ദൈവിക അഭിസംബോധന",
+            "en": "Ibn Kathir: Allah's address to Musa"
+          },
+          "arabic_original": "الحكيم في أفعاله وأقواله",
+          "translation": {
+            "ml": "അൽ-അസീസ് അൽ-ഹകീം എന്ന് അല്ലാഹു മൂസാ നബിയെ അഭിസംബോധന ചെയ്യുന്ന സന്ദർഭം ഇബ്നു കസീർ ശക്തിയുടെയും പ്രവൃത്തിയുടെയും വാക്കിന്റെയും ഹിക്മത്ത് വിശദീകരിക്കുന്നു.",
+            "en": "In the address to Musa, Ibn Kathir explains al-Aziz through power and al-Hakim through wisdom in speech and action."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 27:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura27-aya9.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-15-30-5-katheer",
+          "title": {
+            "ml": "റോമാ–പേർഷ്യ ചരിത്രത്തിന്റെ സമയം സംബന്ധിച്ച ഭിന്നാഭിപ്രായം",
+            "en": "Ibn Kathir: disagreement about the timing of the Roman victory"
+          },
+          "arabic_original": "بل كان نصرة الروم على فارس عام الحديبية",
+          "translation": {
+            "ml": "റോമാക്കാരുടെ വിജയവുമായി ബന്ധപ്പെട്ട സന്തോഷത്തിന്റെ വർഷം ബദ്റാണോ ഹുദൈബിയ്യയാണോ എന്ന കാര്യത്തിൽ ഇബ്നു കസീർ രണ്ടു അഭിപ്രായങ്ങൾ ഉദ്ധരിക്കുന്നു. അത് ഉറപ്പായ ഒറ്റ തീയതിയാക്കരുത്.",
+            "en": "Ibn Kathir records conflicting accounts, some linking the Roman victory to Badr and others to Hudaybiyyah; avoid inventing a unanimously fixed date."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 30:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura30-aya5.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-16-36-5-katheer",
+          "title": {
+            "ml": "യാസീനിലെ വെളിപ്പാട്: പ്രതാപിയും കാരുണ്യവാനും",
+            "en": "Ibn Kathir: revelation from the Mighty and Merciful"
+          },
+          "arabic_original": "منزل من رب العزة",
+          "translation": {
+            "ml": "വളരെ ചെറിയ പൂർണ ആയത്തായ «തൻസീലൽ അസീസിർ റഹീം» ഖുർആന്റെ ദൈവിക ഉറവിടത്തെ വ്യക്തമാക്കുന്നു. ഇബ്നു കസീർ ഈ മാർഗത്തെ ദൈവത്തിൽനിന്നിറക്കപ്പെട്ട ഹിദായത്തായി വായിക്കുന്നു.",
+            "en": "This short but complete verse affirms revelation from the Mighty and Merciful, with Ibn Kathir explaining the revealed guidance."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 36:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya5.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-17-39-5-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രതാപമുള്ളവൻ തന്നെ പൊറുക്കുന്നവൻ",
+            "en": "Ibn Kathir: the Mighty is also the All-Forgiving"
+          },
+          "arabic_original": "مع عزته وعظمته وكبريائه هو غفار",
+          "translation": {
+            "ml": "രാത്രിപകൽ ക്രമത്തെയും സൂര്യചന്ദ്രഗതിയെയും പരാമർശിക്കുന്നതിനൊപ്പം «അൽ-അസീസ് അൽ-ഗഫ്ഫാർ» വരുന്നു. ഇബ്നു കസീർ പാപം ചെയ്തശേഷം തൗബചെയ്യുന്നവർക്കുള്ള മാപ്പിനെയാണ് ചൂണ്ടിക്കാണിക്കുന്നത്.",
+            "en": "After describing cosmic order, the verse pairs al-Aziz with al-Ghaffar, explaining repentance and forgiveness despite Divine might."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 39:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya5.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-18-40-2-katheer",
+          "title": {
+            "ml": "ശക്തിയോടൊപ്പം സർവജ്ഞത",
+            "en": "Ibn Kathir: Divine might with comprehensive knowledge"
+          },
+          "arabic_original": "ولا يخفى عليه الذر",
+          "translation": {
+            "ml": "ഖുർആൻ അവതരണത്തെക്കുറിച്ചുള്ള 40:2-ൽ അൽ-അസീസ് അൽ-അലീം ചേർന്ന് വരുന്നു. ഇബ്നു കസീർ ദൈവശക്തിയെ സമീപിക്കാനാകാത്തതും സൂക്ഷ്മമായതുപോലും അറിവിൽനിന്ന് മറയാത്തതും വിവരിക്കുന്നു.",
+            "en": "The source of revelation is both unconquerably mighty and omniscient, including the minutest unseen details."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 40:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya2.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-19-42-3-katheer",
+          "title": {
+            "ml": "വിവിധ പ്രവാചകന്മാർക്ക് വഹ്‌യ് എത്തുന്ന ഒരേ ഉറവിടം",
+            "en": "Ibn Kathir: the same source of prior revelation"
+          },
+          "arabic_original": "كذلك أنزل الكتب والصحف على الأنبياء قبلك",
+          "translation": {
+            "ml": "മുഹമ്മദ് നബിക്ക് ഖുർആൻ ഇറക്കിയതുപോലെ മുൻ നബിമാർക്കും സന്ദേശം ഇറക്കിയതാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. അൽ-അസീസ് അൽ-ഹകീം ഇവിടെ വഹ്‌യിന്റെ ഉറവിടത്തിന്റെ വിശേഷണങ്ങളാണ്.",
+            "en": "Ibn Kathir says the same Allah sent Scripture and written revelation to earlier prophets; al-Aziz al-Hakim describes the Revealer."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 42:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya3.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-20-59-24-katheer",
+          "title": {
+            "ml": "99 നാമഹദീസും നീണ്ട നാമപ്പട്ടികയും തമ്മിൽ വേർതിരിക്കൽ",
+            "en": "Ibn Kathir: distinguish the 99-Names hadith from an enumerated list"
+          },
+          "arabic_original": "إن لله تعالى تسعة وتسعين اسما",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇവിടെ അല്ലാഹുവിന് 99 നാമങ്ങളുണ്ടെന്ന സ്വഹീഹ് നബിവചനം ചൂണ്ടിക്കാണിക്കുന്നു. എന്നാൽ അതിനോടൊപ്പം തിർമിദി, ഇബ്നു മാജ എന്നിവരിലൂടെ വരുന്ന നിരയായി പറഞ്ഞ നാമപ്പട്ടികയുടെ നിവേദനനില പ്രത്യേകം പരിശോധിക്കേണ്ടതാണ്.",
+            "en": "Ibn Kathir cites the sound hadith concerning ninety-nine Names and separately reproduces an enumerated list found in later narrations. Their chains must not be conflated."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-21-67-2-katheer",
+          "title": {
+            "ml": "ഏറ്റവും നല്ല പ്രവൃത്തി — വെറും ഏറ്റവും അധികമല്ല",
+            "en": "Ibn Kathir: best deeds rather than most deeds"
+          },
+          "arabic_original": "ولم يقل أكثر عملا",
+          "translation": {
+            "ml": "ജീവിതവും മരണവും ഒരു പരീക്ഷണമായി സൃഷ്ടിച്ചതിനെക്കുറിച്ച് മുഹമ്മദ് ഇബ്നു അജ്ലാന്റെ അഭിപ്രായമായി ‘നല്ല പ്രവൃത്തി’യാണ് പറഞ്ഞത്, ‘അധികം’ എന്നല്ല എന്ന് ഇബ്നു കസീർ പറയുന്നു.",
+            "en": "Ibn Kathir, citing Muhammad ibn Ajlan, highlights that the verse tests whose deeds are best, not merely most numerous."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 67:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya2.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        },
+        {
+          "id": "encyclopedia-aziz-tafsir-22-67-2-saadi",
+          "title": {
+            "ml": "സഅ്ദി: ആത്മാർത്ഥതയും ശരിയായ പ്രവൃത്തിയും",
+            "en": "Al-Sa'di: sincere and correct action"
+          },
+          "arabic_original": "أخلصه وأصوبه",
+          "translation": {
+            "ml": "സഅ്ദി «അഹ്‌സനു അമലൻ» എന്നതിനെ നിഷ്കളങ്കവും ശരിയുമായ പ്രവൃത്തിയായി വിശദീകരിക്കുന്നു. അൽ-അസീസ് അൽ-ഗഫൂർ എന്ന കൂട്ടുപ്രയോഗം ശക്തിയോടൊപ്പം കരുണയും ചേർക്കുന്നു.",
+            "en": "Al-Sa'di explains the 'best deeds' as sincere and correct deeds, pairing Divine might with pardon."
+          },
+          "source_reference": "تفسير السعدي · Quran 67:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura67-aya2.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദമായ മലയാളം/English വ്യാഖ്യാനവുമാണ്. മുഴുവൻ തഫ്സീറിന്റെ പകർപ്പോ എല്ലാ അനുബന്ധ ഹദീസുകളുടെ സനദ് ഗ്രേഡ് പരിശോധിച്ചെന്ന അവകാശവാദമോ അല്ല.",
+            "en": "An attributed short Arabic tafsir phrase with bilingual explanatory context, not a complete edition or independent verification of incidental narrations."
+          }
+        }
+      ]
     }
   }
 }
