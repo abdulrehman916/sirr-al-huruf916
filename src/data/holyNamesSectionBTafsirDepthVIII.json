@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് 30 അറബി പാഠഭാഗങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 15. ആദ്യം ഖുർആനിൽ നേരിട്ട് വരുന്നത് ക്രിയയാണോ നാമമാണോ എന്ന വ്യത്യാസം, ദാനം/നീതി/അന്ത്യവിധി പോലെയുള്ള സന്ദർഭം, ഗുരുതരമായ മതപരമായ അവകാശവാദങ്ങളിലെ സ്രോതസ്സിന്റെ പരിധി എന്നിവ രേഖപ്പെടുത്തി. ഗ്രന്ഥത്തിലെ മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ ഇനിയും സമഗ്രമായി പരിശോധിക്കണം. ഭാഗിക പാഠം മാത്രമുണ്ടായിരുന്ന 2:245 രണ്ട് ബന്ധപ്പെട്ട കാർഡുകളിലും, 6:114 അൽ-ഹകം കാർഡിലും പൂർണ അറബി വചനവും അർഥവും ചേർത്തിട്ടുണ്ട്.",
-    "en": "Eighth source-based deep-study batch: 15 previously unstudied card IDs, 30 short verbatim Arabic classical commentary excerpts (15 Ibn Kathir and 15 al-Tabari), individually sourced. Distinguishes Quran's exact verbs and grammatical forms from later listed Names; highlights justice, charity, accountability and limits of unauthenticated occult/numerical claims. Historical manuscripts and every practice are still pending comprehensive review. Complete Quran 2:245 is added to both separately cataloged Qabid and Basit cards, and the complete Quran 6:114 to Hakam, replacing excerpts with original Arabic and bilingual meanings."
+    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് 30 അറബി പാഠഭാഗങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 15. ആദ്യം ഖുർആനിൽ നേരിട്ട് വരുന്നത് ക്രിയയാണോ നാമമാണോ എന്ന വ്യത്യാസം, ദാനം/നീതി/അന്ത്യവിധി പോലെയുള്ള സന്ദർഭം, ഗുരുതരമായ മതപരമായ അവകാശവാദങ്ങളിലെ സ്രോതസ്സിന്റെ പരിധി എന്നിവ രേഖപ്പെടുത്തി. ഗ്രന്ഥത്തിലെ മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ ഇനിയും സമഗ്രമായി പരിശോധിക്കണം. ഭാഗിക പാഠം മാത്രമുണ്ടായിരുന്ന 2:245 രണ്ട് ബന്ധപ്പെട്ട കാർഡുകളിലും, 6:114 അൽ-ഹകം കാർഡിലും പൂർണ അറബി വചനവും അർഥവും ചേർത്തിട്ടുണ്ട്. ത്വബരിയിലെ പാരായണവ്യത്യാസവും ഗൈബിനെപ്പറ്റി തെറ്റായ അവകാശവാദം ഉന്നയിക്കരുതെന്ന മുന്നറിയിപ്പും അധികം രണ്ടു വിമർശനരേഖകളായി ചേർത്തു.",
+    "en": "Eighth source-based deep-study batch: 15 previously unstudied card IDs, 30 short verbatim Arabic classical commentary excerpts (15 Ibn Kathir and 15 al-Tabari), individually sourced. Distinguishes Quran's exact verbs and grammatical forms from later listed Names; highlights justice, charity, accountability and limits of unauthenticated occult/numerical claims. Historical manuscripts and every practice are still pending comprehensive review. Complete Quran 2:245 is added to both separately cataloged Qabid and Basit cards, and the complete Quran 6:114 to Hakam, replacing excerpts with original Arabic and bilingual meanings. Two extra source-critical al-Tabari excerpts document the grammatical reading of al-Matin and the critique of unsupported claims to unseen knowledge."
   },
   "profiles": {
     "PDF-HN-0154": {
@@ -186,6 +186,26 @@
             "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
             "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
           }
+        },
+        {
+          "id": "depth-viii-critical-016-tabary-51-58",
+          "title": {
+            "ml": "ത്വബരി — പാഠവും വിശ്വാസപരിധിയും 51:58",
+            "en": "Al-Tabari — textual and evidentiary limits, Quran 51:58"
+          },
+          "arabic_original": "واختلفت القرّاء في قراءة قوله ( المَتِين )",
+          "translation": {
+            "ml": "ത്വബരി «മതീൻ» എന്ന പദത്തിന്റെ റഫ്അ്/ഖഫ്ദ് പാരായണങ്ങളെ വിശദീകരിച്ച് പ്രമുഖ ഖാരിഉകളുടെ റഫ്അ് വായനയ്ക്കാണ് മുൻഗണന നൽകുന്നത്; അത് അല്ലാഹുവിന്റെ വിശേഷണമായാണ് കാണുന്നത്. ഈ ഭാഷാപരമായ അഭിപ്രായഭേദം പ്രത്യേക ജപസംഖ്യയ്ക്കുള്ള തെളിവല്ല.",
+            "en": "Al-Tabari records a reading difference in al-matin's grammatical case and explicitly favors nominative agreement as a Divine description on majority reading grounds. This is a qira'at/grammar issue, not a numeric occult practice."
+          },
+          "source_reference": "تفسير الطبري — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_critical_grammar_and_unseen_claims",
+          "source_scope": {
+            "ml": "മൂലഗ്രന്ഥത്തിൽ നേരിട്ട് രേഖപ്പെടുത്തിയ ഭാഷാപരമോ അവകാശവാദങ്ങളിലെ തെളിവുപരിമിതിയോ; ഇതു പുതിയ എണ്ണമുള്ള വസീഫയോ ചികിത്സാഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Directly checked classical text addressing recitation grammar or unsupported claims about the unseen; not a ritual count or promised miraculous result."
+          }
         }
       ]
     },
@@ -277,6 +297,26 @@
           "source_scope": {
             "ml": "കൃത്യമായ തഫ്സീർ സ്രോതസ്സിൽ നിന്നുള്ള ചെറു അറബി മൂലഭാഗവും സ്വതന്ത്രമായ അർഥവിവരണവും. ഇതിൽനിന്ന് നിശ്ചിത ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ഉണ്ടാക്കരുത്.",
             "en": "Short original excerpt from the named commentary with separate, contextual bilingual explanation, not an authenticated standalone numerical ritual or amulet."
+          }
+        },
+        {
+          "id": "depth-viii-critical-018-tabary-2-32",
+          "title": {
+            "ml": "ത്വബരി — പാഠവും വിശ്വാസപരിധിയും 2:32",
+            "en": "Al-Tabari — textual and evidentiary limits, Quran 2:32"
+          },
+          "arabic_original": "على كذب مقالة كلّ من ادعى شيئًا من علوم الغيب",
+          "translation": {
+            "ml": "ത്വബരി ഈ ആയത്ത് ഗൈബ് അറിയുമെന്ന അനധികൃത ജ്യോത്സ്യ-കാഹിനി അവകാശവാദങ്ങളെ ഖണ്ഡിക്കുന്നതായി വ്യക്തമാക്കുന്നു. ഇങ്ങനെയുള്ള ഉറപ്പില്ലാത്ത രഹസ്യവിദ്യാവാദങ്ങളെ ഖുർആനിൽനിന്നുള്ള സാക്ഷാൽ തെളിവായി പ്രസിദ്ധീകരിക്കരുത്.",
+            "en": "Al-Tabari expressly criticizes those claiming unseen knowledge without proof, including soothsayers and astrologers. This cautions against claiming an unsourced occult effect as established scriptural knowledge."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:32",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_critical_grammar_and_unseen_claims",
+          "source_scope": {
+            "ml": "മൂലഗ്രന്ഥത്തിൽ നേരിട്ട് രേഖപ്പെടുത്തിയ ഭാഷാപരമോ അവകാശവാദങ്ങളിലെ തെളിവുപരിമിതിയോ; ഇതു പുതിയ എണ്ണമുള്ള വസീഫയോ ചികിത്സാഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Directly checked classical text addressing recitation grammar or unsupported claims about the unseen; not a ritual count or promised miraculous result."
           }
         }
       ]
