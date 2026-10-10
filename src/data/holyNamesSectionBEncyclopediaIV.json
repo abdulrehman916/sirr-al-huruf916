@@ -1,0 +1,691 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "കാർഡ് 005 (അസ്സലാം) — ഖുർആനിലെ സലാം പദത്തിന്റെ വ്യത്യസ്ത പ്രയോഗങ്ങളിലൂടെ സമാധാനം, സുരക്ഷ, സ്വർഗപ്രവേശനം, സാമൂഹിക മര്യാദ, ദൈവിക കാരുണ്യം എന്നിവ പഠിക്കുന്ന അഞ്ചാമത്തെ വിപുല ഗവേഷണപാളി. പഴയ 59:23 വചനം, മുസ്‌ലിം 591-ലെ നമസ്കാരശേഷ ദിക്ർ, ശംസ് ഗ്രന്ഥത്തിലെ പരാമർശം എന്നിവ നിലനിർത്തുന്നു. 160 കാർഡുകൾ പൂർണമായിട്ടില്ല.",
+    "en": "Fifth deep card, as-Salam: Quranic semantic and contextual studies of peace, greeting, safety, paradise and divine compassion. The earlier direct Name in Quran 59:23, authentic post-prayer Muslim 591 dhikr, and the historical Shams account are retained. The 160-card encyclopedia is not complete."
+  },
+  "profiles": {
+    "PDF-HN-005": {
+      "name_id": "PDF-HN-005",
+      "evidence": [
+        {
+          "id": "encyclopedia-salam-quran-4-86",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 4:86",
+            "en": "As-Salam — full Quranic context 4:86"
+          },
+          "arabic_original": "وَإِذَا حُيِّيتُم بِتَحِيَّةٍ فَحَيُّوا بِأَحْسَنَ مِنْهَا أَوْ رُدُّوهَا ۗ إِنَّ اللَّهَ كَانَ عَلَىٰ كُلِّ شَيْءٍ حَسِيبًا",
+          "verse_meaning": {
+            "ml": "ആരെങ്കിലും അഭിവാദ്യം ചെയ്താൽ അതിലും നന്നായോ അതുപോലെയോ മറുപടി നൽകുക; അല്ലാഹു എല്ലാറ്റിന്റെയും കണക്കെടുക്കുന്നവനാണ്.",
+            "en": "When greeted, return a better greeting or one equal to it; Allah takes account of all things."
+          },
+          "translation": {
+            "ml": "സലാമിന് മറുപടി നൽകുന്ന മര്യാദയാണിത്. വചനത്തിൽ നേരിട്ട് «السَّلَامُ» എന്ന ദൈവനാമം വരുന്നില്ല; ഇബ്നു കസീർ മറുപടിയുടെ ബാധ്യതയും കൂടുതൽ നന്നായ മറുപടിയുടെ മഹത്വവും വേർതിരിക്കുന്നു.",
+            "en": "This sets out the social duty to return greetings. It does not write the Divine Name al-Salam; Ibn Kathir distinguishes obligatory response from commendable improvement."
+          },
+          "source_reference": "Quran 4:86 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "greeting_ethics",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-5-16",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 5:16",
+            "en": "As-Salam — full Quranic context 5:16"
+          },
+          "arabic_original": "يَهْدِي بِهِ اللَّهُ مَنِ اتَّبَعَ رِضْوَانَهُ سُبُلَ السَّلَامِ وَيُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ بِإِذْنِهِ وَيَهْدِيهِمْ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹുവിന്റെ പ്രീതിയെ പിന്തുടരുന്നവരെ അവൻ സമാധാനത്തിന്റെ വഴികളിലേക്കു നയിക്കുകയും ഇരുട്ടുകളിൽനിന്ന് വെളിച്ചത്തിലേക്കു കൊണ്ടുവരുകയും നേരായ പാത കാണിക്കുകയും ചെയ്യുന്നു.",
+            "en": "Allah guides those pursuing His pleasure along paths of peace, out of darkness into light by His permission, and toward a straight path."
+          },
+          "translation": {
+            "ml": "«سُبُلَ السَّلَامِ» എന്നത് മാർഗദർശന-സമാധാന പദപ്രയോഗമാണ്, 59:23-ലെ അസ്സലാം നാമത്തിന്റെ അതേ വാക്യമല്ല.",
+            "en": "Subul al-salam are paths of peace and safety, not the isolated Divine Name in Quran 59:23."
+          },
+          "source_reference": "Quran 5:16 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "paths_of_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-6-127",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 6:127",
+            "en": "As-Salam — full Quranic context 6:127"
+          },
+          "arabic_original": "۞ لَهُمْ دَارُ السَّلَامِ عِندَ رَبِّهِمْ ۖ وَهُوَ وَلِيُّهُم بِمَا كَانُوا يَعْمَلُونَ",
+          "verse_meaning": {
+            "ml": "അവർക്കു അവരുടെ രക്ഷിതാവിന്റെ അടുക്കൽ ദാറുസ്സലാം ഉണ്ട്; അവരുടെ പ്രവൃത്തികൾ മൂലം അവൻ അവരുടെ സംരക്ഷകനാണ്.",
+            "en": "They have the Abode of Peace with their Lord; He is their protecting ally in consequence of their deeds."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇതിനെ സ്വർഗവും സുരക്ഷിതത്വവും എന്ന് വിശദീകരിക്കുന്നു; ത്വബരി «സലാം» അല്ലാഹുവിന്റെ നാമമാണെന്നും «ദാറുസ്സലാം» അവന്റെ സ്വർഗമാണെന്നും പറയുന്നു. രണ്ട് വ്യാഖ്യാനവഴികളും രേഖപ്പെടുത്തി.",
+            "en": "Ibn Kathir connects Dar al-Salam to paradise and safety. Al-Tabari explains Salam as one of Allah's Names in his analysis of the abode. Preserve both shades."
+          },
+          "source_reference": "Quran 6:127 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya127.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "abode_of_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-10-10",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 10:10",
+            "en": "As-Salam — full Quranic context 10:10"
+          },
+          "arabic_original": "دَعْوَاهُمْ فِيهَا سُبْحَانَكَ اللَّهُمَّ وَتَحِيَّتُهُمْ فِيهَا سَلَامٌ ۚ وَآخِرُ دَعْوَاهُمْ أَنِ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "verse_meaning": {
+            "ml": "സ്വർഗത്തിൽ അവരുടെ പ്രാർത്ഥന «അല്ലാഹുവേ, നീ പരിശുദ്ധൻ» എന്നതും അഭിവാദ്യം സലാം എന്നതും അവസാന സ്തുതി ലോകങ്ങളുടെ രക്ഷിതാവായ അല്ലാഹുവിനെന്നതുമാണ്.",
+            "en": "In paradise their call includes 'Glory be to You, O Allah,' their greeting is peace, and their concluding praise is to the Lord of all worlds."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «സലാം» സ്വർഗത്തിലെ അഭിവാദ്യമാണ്; 59:23-ലെ നേരിട്ടുള്ള ദൈവനാമപ്രയോഗമായി എണ്ണരുത്.",
+            "en": "Salam here is the greeting of paradise, not an additional exact occurrence of the Divine Name al-Salam."
+          },
+          "source_reference": "Quran 10:10 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "paradise_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-10-25",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 10:25",
+            "en": "As-Salam — full Quranic context 10:25"
+          },
+          "arabic_original": "وَاللَّهُ يَدْعُو إِلَىٰ دَارِ السَّلَامِ وَيَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹു ദാറുസ്സലാമിലേക്കു വിളിക്കുകയും ഉദ്ദേശിക്കുന്നവരെ നേരായ പാതയിലേക്കു നയിക്കുകയും ചെയ്യുന്നു.",
+            "en": "Allah calls toward the Abode of Peace and guides whom He wills to a straight path."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «ദാറുസ്സലാം» എല്ലാ ദോഷങ്ങളിൽനിന്നും സുരക്ഷിതമായ സ്വർഗം എന്നാണ് വിശദീകരിക്കുന്നത്. അതോടു ബന്ധപ്പെട്ട് ഉദ്ധരിക്കുന്ന ചില ആലങ്കാരിക റിപ്പോർട്ടുകൾ മുർസൽ ആയി അടയാളപ്പെടുത്തിയിട്ടുണ്ട്.",
+            "en": "Ibn Kathir explains the abode as paradise free of defects; he labels one related parabolic narration mursal, which must not be presented as automatically Sahih."
+          },
+          "source_reference": "Quran 10:25 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "abode_of_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-13-23-24",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 13:23-24",
+            "en": "As-Salam — full Quranic context 13:23-24"
+          },
+          "arabic_original": "جَنَّاتُ عَدْنٍ يَدْخُلُونَهَا وَمَن صَلَحَ مِنْ آبَائِهِمْ وَأَزْوَاجِهِمْ وَذُرِّيَّاتِهِمْ ۖ وَالْمَلَائِكَةُ يَدْخُلُونَ عَلَيْهِم مِّن كُلِّ بَابٍ\nسَلَامٌ عَلَيْكُم بِمَا صَبَرْتُمْ ۚ فَنِعْمَ عُقْبَى الدَّارِ",
+          "verse_meaning": {
+            "ml": "സ്ഥിരവാസത്തിന്റെ സ്വർഗത്തോട്ടങ്ങളിൽ അവർ പ്രവേശിക്കും; സൽസ്വഭാവമുള്ള ബന്ധുക്കളും കൂടെയുണ്ടാകും. മലക്കുകൾ പല കവാടങ്ങളിലൂടെ വന്ന് «നിങ്ങളുടെ ക്ഷമ മൂലം നിങ്ങൾക്കു സലാം; എന്തു നല്ല അന്ത്യം!» എന്നു പറയും.",
+            "en": "They enter everlasting gardens with righteous family members; angels enter by every gate, greeting them with peace for their patience and praising their final home."
+          },
+          "translation": {
+            "ml": "ഇവ രണ്ട് പൂർണ ആയത്തുകളാണ്; സലാം പറയുന്നത് മലക്കുകളാണ്. അല്ലാഹുവിന്റെ അസ്സലാം എന്ന നാമത്തിന്റെ നേരിട്ടുള്ള വരിയല്ല.",
+            "en": "These are two full verses; the speakers of the greeting are the angels, not the written isolated Name al-Salam."
+          },
+          "source_reference": "Quran 13:23-24 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "angelic_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 2
+        },
+        {
+          "id": "encyclopedia-salam-quran-14-23",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 14:23",
+            "en": "As-Salam — full Quranic context 14:23"
+          },
+          "arabic_original": "وَأُدْخِلَ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا بِإِذْنِ رَبِّهِمْ ۖ تَحِيَّتُهُمْ فِيهَا سَلَامٌ",
+          "verse_meaning": {
+            "ml": "വിശ്വസിക്കുകയും സൽപ്രവൃത്തികൾ നടത്തുകയും ചെയ്തവർ സ്വർഗത്തോട്ടങ്ങളിൽ സ്ഥിരവാസികളാകും; അവിടത്തെ അഭിവാദ്യം സലാമായിരിക്കും.",
+            "en": "Believers who do good enter eternal gardens with flowing rivers, by their Lord's leave, and are greeted with peace."
+          },
+          "translation": {
+            "ml": "സ്വർഗത്തിലെ ആദരവും സുരക്ഷയുമാണ് വിഷയം; ഈ വരിയിൽ അസ്സലാം എന്ന നാമം നേരിട്ടു വരുന്നില്ല.",
+            "en": "The theme is the greeting and safety of paradise, not another exact Divine Name occurrence."
+          },
+          "source_reference": "Quran 14:23 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "paradise_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-15-46",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 15:46",
+            "en": "As-Salam — full Quranic context 15:46"
+          },
+          "arabic_original": "ادْخُلُوهَا بِسَلَامٍ آمِنِينَ",
+          "verse_meaning": {
+            "ml": "സുരക്ഷിതരായി സമാധാനത്തോടെ അവയിൽ പ്രവേശിക്കുക.",
+            "en": "Enter them in peace and security."
+          },
+          "translation": {
+            "ml": "«بِسَلَامٍ آمِنِينَ» സ്വർഗപ്രവേശനത്തിലെ സുരക്ഷിതത്വമാണ്; നാമത്തിന്റെ പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Salam here describes safe entry into paradise, not a counted al-Salam practice."
+          },
+          "source_reference": "Quran 15:46 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya46.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "safe_entry",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-16-32",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 16:32",
+            "en": "As-Salam — full Quranic context 16:32"
+          },
+          "arabic_original": "الَّذِينَ تَتَوَفَّاهُمُ الْمَلَائِكَةُ طَيِّبِينَ ۙ يَقُولُونَ سَلَامٌ عَلَيْكُمُ ادْخُلُوا الْجَنَّةَ بِمَا كُنتُمْ تَعْمَلُونَ",
+          "verse_meaning": {
+            "ml": "ശുദ്ധമായ നിലയിൽ മരണപ്പെടുന്നവരോട് മലക്കുകൾ «നിങ്ങൾക്കു സലാം; ചെയ്ത പ്രവൃത്തികൾ മൂലം സ്വർഗത്തിൽ പ്രവേശിക്കുക» എന്നു പറയും.",
+            "en": "The angels greet those whose lives end in purity: peace be upon you; enter paradise for what you did."
+          },
+          "translation": {
+            "ml": "ആളുകളുടെ മരണസമയത്ത് മലക്കുകളുടെ ആശംസയാണ്; ദൈവനാമമായ അസ്സലാമിനെക്കുറിച്ചുള്ള പ്രത്യേക മന്ത്രക്രമമല്ല.",
+            "en": "The greeting is from angels at the end of a life, not a special talisman or repetition of the Divine Name."
+          },
+          "source_reference": "Quran 16:32 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "angelic_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-19-15",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 19:15",
+            "en": "As-Salam — full Quranic context 19:15"
+          },
+          "arabic_original": "وَسَلَامٌ عَلَيْهِ يَوْمَ وُلِدَ وَيَوْمَ يَمُوتُ وَيَوْمَ يُبْعَثُ حَيًّا",
+          "verse_meaning": {
+            "ml": "അദ്ദേഹം ജനിച്ച ദിവസവും മരിക്കുന്ന ദിവസവും ഉയിർത്തെഴുന്നേൽക്കുന്ന ദിവസവും അദ്ദേഹത്തിന്മേൽ സമാധാനമുണ്ടാകട്ടെ.",
+            "en": "Peace be upon him the day he was born, the day he dies, and the day he is raised alive."
+          },
+          "translation": {
+            "ml": "യഹ്‌യാ നബിയെക്കുറിച്ചുള്ള പൂർണ വചനമാണ്. അർഥം ആദരവും സുരക്ഷിതത്വവുമാണ്; «السَّلَامُ» എന്ന ഏക ദൈവനാമമല്ല.",
+            "en": "A complete statement about Prophet Yahya; salam here expresses honor and protection, not the isolated Name al-Salam."
+          },
+          "source_reference": "Quran 19:15 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-19-33",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 19:33",
+            "en": "As-Salam — full Quranic context 19:33"
+          },
+          "arabic_original": "وَالسَّلَامُ عَلَيَّ يَوْمَ وُلِدتُّ وَيَوْمَ أَمُوتُ وَيَوْمَ أُبْعَثُ حَيًّا",
+          "verse_meaning": {
+            "ml": "ഞാൻ ജനിച്ച ദിവസവും മരിക്കുന്ന ദിവസവും ഉയിർത്തെഴുന്നേൽക്കുന്ന ദിവസവും എനിക്കു സമാധാനം ഉണ്ടാകട്ടെ.",
+            "en": "Peace be upon me the day I was born, the day I die and the day I am raised alive."
+          },
+          "translation": {
+            "ml": "ഇത് ഈസാ നബി സംസാരിക്കുന്ന വചനമാണ്; 19:15-ലെ യഹ്‌യാ നബിയുടെ സന്ദർഭത്തിൽനിന്ന് വേറെയാണ്. ഇവിടെ «السَّلَامُ» വ്യാകരണപരമായി ആശംസയാണ്, ദൈവനാമമല്ല.",
+            "en": "This is Isa's own speech, distinct from the statement about Yahya in 19:15. The definite word al-salam functions as peace in the blessing, not the Divine Name."
+          },
+          "source_reference": "Quran 19:33 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya33.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-19-47",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 19:47",
+            "en": "As-Salam — full Quranic context 19:47"
+          },
+          "arabic_original": "قَالَ سَلَامٌ عَلَيْكَ ۖ سَأَسْتَغْفِرُ لَكَ رَبِّي ۖ إِنَّهُ كَانَ بِي حَفِيًّا",
+          "verse_meaning": {
+            "ml": "ഇബ്രാഹീം പറഞ്ഞു: നിനക്കു സമാധാനം; എന്റെ രക്ഷിതാവിനോട് നിനക്കുവേണ്ടി ക്ഷമ തേടാം. അവൻ എന്നോട് ദയാലുവാണ്.",
+            "en": "Ibrahim said: Peace be upon you; I will seek my Lord's forgiveness for you; He has been gracious to me."
+          },
+          "translation": {
+            "ml": "ഇബ്രാഹീം തന്റെ പിതാവിനോടു പറഞ്ഞ വാക്ക് ഭീഷണിക്ക് പകരം ദോഷം ചെയ്യാതിരിക്കാനുള്ള നിലപാടാണ്. പിന്നീട് 9:114-ൽ വന്ന പശ്ചാത്തലം ഒഴിവാക്കി ആധുനിക പൊതുവിധി സൃഷ്ടിക്കരുത്.",
+            "en": "Ibrahim's words to his father signal no harm in return; Ibn Kathir connects them to the later qualification in Quran 9:114. Do not ignore that historical context."
+          },
+          "source_reference": "Quran 19:47 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya47.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "peace_in_conflict",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-20-47",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 20:47",
+            "en": "As-Salam — full Quranic context 20:47"
+          },
+          "arabic_original": "فَأْتِيَاهُ فَقُولَا إِنَّا رَسُولَا رَبِّكَ فَأَرْسِلْ مَعَنَا بَنِي إِسْرَائِيلَ وَلَا تُعَذِّبْهُمْ ۖ قَدْ جِئْنَاكَ بِآيَةٍ مِّن رَّبِّكَ ۖ وَالسَّلَامُ عَلَىٰ مَنِ اتَّبَعَ الْهُدَىٰ",
+          "verse_meaning": {
+            "ml": "ഫിർഔനോട് പറയുക: ഞങ്ങൾ നിന്റെ രക്ഷിതാവിന്റെ ദൂതന്മാരാണ്; ബനൂഇസ്റാഈലിനെ വിടുക, പീഡിപ്പിക്കരുത്. ഞങ്ങൾ ദൈവിക അടയാളവുമായി വന്നിരിക്കുന്നു; മാർഗദർശനം പിന്തുടരുന്നവർക്ക് സമാധാനം.",
+            "en": "Musa and Harun are instructed to tell Pharaoh to release the Children of Israel, stop persecuting them and recognize the sign from their Lord; peace is upon those who follow guidance."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «السَّلَامُ» മാർഗദർശനവുമായി ബന്ധപ്പെടുത്തിയ സന്ദേശമാണ്; അല്ലാഹുവിന്റെ പ്രത്യേക നാമമായി അല്ല.",
+            "en": "Al-salam is the conditionally worded peace greeting connected to guidance, not an isolated invocation of God's Name."
+          },
+          "source_reference": "Quran 20:47 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya47.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_message",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-24-27",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 24:27",
+            "en": "As-Salam — full Quranic context 24:27"
+          },
+          "arabic_original": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَدْخُلُوا بُيُوتًا غَيْرَ بُيُوتِكُمْ حَتَّىٰ تَسْتَأْنِسُوا وَتُسَلِّمُوا عَلَىٰ أَهْلِهَا ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+          "verse_meaning": {
+            "ml": "വിശ്വാസികളേ, മറ്റൊരാളുടെ വീട്ടിൽ അനുമതി ചോദിക്കുകയും വീട്ടുകാരെ സലാം പറയുകയും ചെയ്യുന്നതിനു മുമ്പ് പ്രവേശിക്കരുത്; അതാണ് നിങ്ങള്ക്ക് നല്ലത്.",
+            "en": "Believers, do not enter another's house before seeking permission and greeting its inhabitants with peace; this is better for you."
+          },
+          "translation": {
+            "ml": "സ്വകാര്യതയും സലാം അഭിവാദ്യവും ചേർന്ന ഖുർആനിക മര്യാദയാണ്; അനുമതിയില്ലാതെ പ്രവേശിക്കുന്നതിന് സലാം പകരമല്ല.",
+            "en": "A verse about privacy and greeting; saying salam does not replace the requirement for permission."
+          },
+          "source_reference": "Quran 24:27 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "privacy_and_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-27-59",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 27:59",
+            "en": "As-Salam — full Quranic context 27:59"
+          },
+          "arabic_original": "قُلِ الْحَمْدُ لِلَّهِ وَسَلَامٌ عَلَىٰ عِبَادِهِ الَّذِينَ اصْطَفَىٰ ۗ آللَّهُ خَيْرٌ أَمَّا يُشْرِكُونَ",
+          "verse_meaning": {
+            "ml": "പറയുക: അല്ലാഹുവിനാണ് സ്തുതി; അവൻ തിരഞ്ഞെടുത്ത ദാസന്മാർക്ക് സമാധാനം. അല്ലാഹുവാണോ നല്ലവൻ, അവർ പങ്കാളികളാക്കുന്നതോ?",
+            "en": "Say: Praise belongs to Allah, and peace upon His chosen servants. Is Allah better, or the partners attributed to Him?"
+          },
+          "translation": {
+            "ml": "പ്രവാചകന്മാരെയോ അല്ലാഹു തിരഞ്ഞെടുത്ത ദാസന്മാരെയോ സൂചിപ്പിക്കുന്നതിൽ തഫ്സീർ വ്യത്യാസങ്ങളുണ്ട്; ഇവിടെ സലാം അവർക്കുള്ള അഭിവാദ്യമാണ്.",
+            "en": "Classical exegetes differ on which chosen servants are intended; salam is an invocation for them, not a direct naming of Allah."
+          },
+          "source_reference": "Quran 27:59 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura27-aya59.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "peace_for_chosen",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-28-55",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 28:55",
+            "en": "As-Salam — full Quranic context 28:55"
+          },
+          "arabic_original": "وَإِذَا سَمِعُوا اللَّغْوَ أَعْرَضُوا عَنْهُ وَقَالُوا لَنَا أَعْمَالُنَا وَلَكُمْ أَعْمَالُكُمْ سَلَامٌ عَلَيْكُمْ لَا نَبْتَغِي الْجَاهِلِينَ",
+          "verse_meaning": {
+            "ml": "വ്യർഥസംസാരം കേൾക്കുമ്പോൾ അവർ അകന്നുനിന്ന് «ഞങ്ങളുടെ പ്രവൃത്തികൾ ഞങ്ങൾക്കുണ്ട്, നിങ്ങളുടേത് നിങ്ങൾക്കുണ്ട്; നിങ്ങൾക്കു സമാധാനം; അജ്ഞരുടെ കൂട്ടം ഞങ്ങൾ തേടുന്നില്ല» എന്നു പറയും.",
+            "en": "When hearing idle abusive speech, they withdraw and say: Our works are ours and yours are yours; peace be upon you; we do not seek the ignorant."
+          },
+          "translation": {
+            "ml": "«سَلَامٌ عَلَيْكُمْ» പ്രതികാരമില്ലാതെ സംഘർഷത്തിൽനിന്നു മാറിനിൽക്കുന്നതിന്റെ പദപ്രയോഗമാണ്; ദൈവനാമം എഴുതുന്ന ദിക്ർ അല്ല.",
+            "en": "Salam here marks dignified disengagement from abuse; it is not a recitation-count instruction or a direct Name occurrence."
+          },
+          "source_reference": "Quran 28:55 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya55.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "peace_in_conflict",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-33-44",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 33:44",
+            "en": "As-Salam — full Quranic context 33:44"
+          },
+          "arabic_original": "تَحِيَّتُهُمْ يَوْمَ يَلْقَوْنَهُ سَلَامٌ ۚ وَأَعَدَّ لَهُمْ أَجْرًا كَرِيمًا",
+          "verse_meaning": {
+            "ml": "അവനെ കണ്ടുമുട്ടുന്ന ദിവസം അവരുടെ അഭിവാദ്യം സലാമായിരിക്കും; അവർക്ക് മഹത്തായ പ്രതിഫലം ഒരുക്കിയിട്ടുണ്ട്.",
+            "en": "On the day they meet Him their greeting will be peace; He has prepared for them a noble reward."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിൽനിന്നുള്ള സലാം എന്ന അർഥം മുൻഗണിക്കുന്നു; ഖതാദയുടെ പരസ്പരം സലാം പറയൽ വ്യാഖ്യാനവും രേഖപ്പെടുത്തുന്നു. ത്വബരി പരസ്പര അഭിവാദ്യത്തിന്റെ വ്യാഖ്യാനം പറയുന്നു.",
+            "en": "Ibn Kathir inclines to Allah greeting the faithful while also recording Qatadah's reading of mutual greetings. Al-Tabari emphasizes the greeting among the people of paradise."
+          },
+          "source_reference": "Quran 33:44 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura33-aya44.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "eschatological_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-36-58",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 36:58",
+            "en": "As-Salam — full Quranic context 36:58"
+          },
+          "arabic_original": "سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ",
+          "verse_meaning": {
+            "ml": "കരുണയുള്ള രക്ഷിതാവിൽനിന്നുള്ള വാക്കായി സമാധാനം.",
+            "en": "Peace, a word from a Merciful Lord."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വർഗവാസികളോടുള്ള അല്ലാഹുവിന്റെ അഭിവാദ്യമായി ഈ ആയത്തെ കാണുന്നു. അതോടു ബന്ധപ്പെട്ട വിപുലമായ ദർശനകഥയുടെ സനദിനെ «في إسناده نظر» എന്ന് വിമർശിക്കുന്നു; ആ കഥ സഹീഹ് എന്നു സ്ഥാപിക്കരുത്.",
+            "en": "Ibn Kathir understands this as Allah's greeting to paradise's people. He explicitly questions the chain of a colorful extra story about the event; the narrative must not be elevated to Sahih."
+          },
+          "source_reference": "Quran 36:58 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "divine_greeting_not_name",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-37-79",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 37:79",
+            "en": "As-Salam — full Quranic context 37:79"
+          },
+          "arabic_original": "سَلَامٌ عَلَىٰ نُوحٍ فِي الْعَالَمِينَ",
+          "verse_meaning": {
+            "ml": "ലോകങ്ങളിലെല്ലാം നൂഹിന് സമാധാനം ഉണ്ടാകട്ടെ.",
+            "en": "Peace upon Nuh among all peoples."
+          },
+          "translation": {
+            "ml": "നൂഹ് നബിയെ ആദരിക്കുന്ന ഖുർആൻ വചനമാണ്. ഈ വചനത്തിലെ സലാം ആശംസയാണ്; ദൈവനാമത്തിന്റെ നേരിട്ടുള്ള രൂപമല്ല.",
+            "en": "A Quranic honor bestowed upon Nuh; salam is a benediction, not the Name as-Salam."
+          },
+          "source_reference": "Quran 37:79 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura37-aya79.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-37-109",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 37:109",
+            "en": "As-Salam — full Quranic context 37:109"
+          },
+          "arabic_original": "سَلَامٌ عَلَىٰ إِبْرَاهِيمَ",
+          "verse_meaning": {
+            "ml": "ഇബ്രാഹീമിന് സമാധാനം ഉണ്ടാകട്ടെ.",
+            "en": "Peace upon Ibrahim."
+          },
+          "translation": {
+            "ml": "ഇബ്രാഹീം നബിയുടെ പരീക്ഷണങ്ങൾക്കുശേഷമുള്ള ആദരപ്രഖ്യാപനം; സലാം എന്ന പദത്തിന്റെ ആശംസാരൂപം.",
+            "en": "A benediction following Ibrahim's trial; the word is a greeting of peace."
+          },
+          "source_reference": "Quran 37:109 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura37-aya109.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-37-120",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 37:120",
+            "en": "As-Salam — full Quranic context 37:120"
+          },
+          "arabic_original": "سَلَامٌ عَلَىٰ مُوسَىٰ وَهَارُونَ",
+          "verse_meaning": {
+            "ml": "മൂസായ്ക്കും ഹാറൂനിനും സമാധാനം ഉണ്ടാകട്ടെ.",
+            "en": "Peace upon Musa and Harun."
+          },
+          "translation": {
+            "ml": "രണ്ട് പ്രവാചകന്മാരോടുമുള്ള ആദരപൂർവ സലാം; ദൈവത്തിന്റെ അസ്സലാം നാമത്തിന് സ്വതന്ത്ര ജപസംഖ്യ നിർദ്ദേശിക്കുന്നില്ല.",
+            "en": "Peace is invoked upon the two prophets; the verse prescribes no isolated al-Salam number."
+          },
+          "source_reference": "Quran 37:120 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura37-aya120.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-39-73",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 39:73",
+            "en": "As-Salam — full Quranic context 39:73"
+          },
+          "arabic_original": "وَسِيقَ الَّذِينَ اتَّقَوْا رَبَّهُمْ إِلَى الْجَنَّةِ زُمَرًا ۖ حَتَّىٰ إِذَا جَاءُوهَا وَفُتِحَتْ أَبْوَابُهَا وَقَالَ لَهُمْ خَزَنَتُهَا سَلَامٌ عَلَيْكُمْ طِبْتُمْ فَادْخُلُوهَا خَالِدِينَ",
+          "verse_meaning": {
+            "ml": "ഭയഭക്തിയുള്ളവർ സംഘങ്ങളായി സ്വർഗത്തിലേക്ക് നയിക്കപ്പെടും; കവാടങ്ങൾ തുറക്കുമ്പോൾ അതിന്റെ കാവൽക്കാർ «നിങ്ങൾക്കു സലാം; നിങ്ങൾ ശുദ്ധരായി; സ്ഥിരമായി പ്രവേശിക്കുക» എന്നു പറയും.",
+            "en": "The God-fearing are led in groups to paradise, where its gatekeepers say: Peace be upon you, you have become good; enter forever."
+          },
+          "translation": {
+            "ml": "ഈ വചനത്തിൽ അഭിവാദ്യം ചെയ്യുന്നത് സ്വർഗത്തിന്റെ കാവൽക്കാരാണ്; അല്ലാഹുവിന്റെ നാമം മാത്രം ഓതുന്നതിനെക്കുറിച്ചുള്ള വ്യവസ്ഥയല്ല.",
+            "en": "The gatekeepers greet entrants; it is not a rite for reciting the isolated Divine Name."
+          },
+          "source_reference": "Quran 39:73 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya73.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "paradise_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-50-34",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 50:34",
+            "en": "As-Salam — full Quranic context 50:34"
+          },
+          "arabic_original": "ادْخُلُوهَا بِسَلَامٍ ۖ ذَٰلِكَ يَوْمُ الْخُلُودِ",
+          "verse_meaning": {
+            "ml": "സമാധാനത്തോടെ അതിൽ പ്രവേശിക്കുക; ഇത് ശാശ്വതവാസത്തിന്റെ ദിവസമാണ്.",
+            "en": "Enter it in peace; this is the Day of Abiding."
+          },
+          "translation": {
+            "ml": "സ്വർഗപ്രവേശനത്തിലെ സുരക്ഷയും സ്ഥിരവാസവുമാണ് വിഷയം.",
+            "en": "Peace denotes safe eternal entry into paradise."
+          },
+          "source_reference": "Quran 50:34 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya34.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "safe_entry",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-51-25",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 51:25",
+            "en": "As-Salam — full Quranic context 51:25"
+          },
+          "arabic_original": "إِذْ دَخَلُوا عَلَيْهِ فَقَالُوا سَلَامًا ۖ قَالَ سَلَامٌ قَوْمٌ مُّنكَرُونَ",
+          "verse_meaning": {
+            "ml": "അവർ അദ്ദേഹത്തിന്റെ അടുക്കൽ വന്ന് «സലാം» എന്നു പറഞ്ഞു; അദ്ദേഹം «സലാം, പരിചയമില്ലാത്ത ആളുകളാണല്ലോ» എന്നു മറുപടി പറഞ്ഞു.",
+            "en": "When the visitors entered and offered peace, Ibrahim replied with peace, recognizing them as unfamiliar guests."
+          },
+          "translation": {
+            "ml": "ഇബ്രാഹീം നബിയും അതിഥികളും തമ്മിലുള്ള അഭിവാദ്യമാണിത്. തഫ്സീർ നന്നായ മറുപടിയും അതിഥിസത്കാരവും ചർച്ച ചെയ്യുന്നു.",
+            "en": "This records the exchange of greetings with Ibrahim's visitors, relevant to hospitality, not a Divine Name invocation."
+          },
+          "source_reference": "Quran 51:25 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "hospitality_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-56-26",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 56:26",
+            "en": "As-Salam — full Quranic context 56:26"
+          },
+          "arabic_original": "إِلَّا قِيلًا سَلَامًا سَلَامًا",
+          "verse_meaning": {
+            "ml": "സമാധാനം, സമാധാനം എന്ന വാക്കുകൾ മാത്രം.",
+            "en": "Only words of peace, peace."
+          },
+          "translation": {
+            "ml": "സ്വർഗത്തിലെ വാക്കുകൾ ദോഷകരമല്ലെന്ന മുൻവചനങ്ങളുമായി ബന്ധപ്പെട്ടതാണ്; രണ്ടുതവണ വന്ന «സലാം» ഒറ്റനാമം രണ്ടുതവണ ഓതേണ്ട നിർദ്ദേശമല്ല.",
+            "en": "The doubled word describes speech in paradise, not a prescription to say God's isolated Name twice."
+          },
+          "source_reference": "Quran 56:26 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura56-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "paradise_greeting",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-salam-quran-97-5",
+          "title": {
+            "ml": "അസ്സലാം — ഖുർആനിലെ സമാധാനസന്ദർഭം 97:5",
+            "en": "As-Salam — full Quranic context 97:5"
+          },
+          "arabic_original": "سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ",
+          "verse_meaning": {
+            "ml": "പുലരി ഉദിക്കുന്നതുവരെ അത് സമാധാനപൂർണമാണ്.",
+            "en": "It is peace until the rise of dawn."
+          },
+          "translation": {
+            "ml": "ലൈലത്തുൽ ഖദ്റിനെക്കുറിച്ചുള്ള ആയത്താണ്. ത്വബരി «നന്മ നിറഞ്ഞ രാത്രി» എന്ന് വ്യാഖ്യാനിക്കുന്നു; മലക്കുകളുടെ സലാമിനെക്കുറിച്ചുള്ള മറ്റു റിപ്പോർട്ടുകളും ഉണ്ട്. ഈ രാത്രി അൽ-സലാം എന്ന നാമം പ്രത്യേക 1000 തവണ ഓതണമെന്ന് വചനം പറയുന്നില്ല.",
+            "en": "This describes the Night of Decree. Al-Tabari understands the entire night as good; narrations about angelic greetings are separate. No fixed al-Salam repetition is prescribed."
+          },
+          "source_reference": "Quran 97:5 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura97-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "night_of_decree_peace",
+          "relationship": "related_word_or_theme_not_exact_divine_name",
+          "source_scope": {
+            "ml": "59:23-ൽ വന്ന «السَّلَامُ» എന്ന നേരിട്ടുള്ള നാമം ഈ പട്ടികയിൽ ആവർത്തിക്കുന്നില്ല. ഇവ ഖുർആനിലെ സലാം എന്ന പദത്തിന്റെ അഭിവാദ്യം, സുരക്ഷ, സ്വർഗം, സമാധാനമാർഗം തുടങ്ങിയ ആശയങ്ങൾ പരിശോധിക്കുന്ന പൂർണ വചനങ്ങളാണ്; ദൈവനാമം ഒരേ അക്ഷരത്തിൽ വന്ന 27 പുതിയ ആയത്തുകൾ എന്ന അവകാശവാദമില്ല. പുതിയ ജപസംഖ്യയോ തകിടോ ഫലവാഗ്ദാനമോ ചേർത്തിട്ടില്ല.",
+            "en": "The direct Divine Name al-Salam in Quran 59:23 is preserved in the older card, not duplicated. These complete passages study greetings, safety, paradise and ways of peace using related words, not 27 additional exact Name occurrences. No new recitation count, talisman or promised effect is inferred."
+          },
+          "verse_count": 1
+        }
+      ],
+      "scholarly": []
+    }
+  }
+}
