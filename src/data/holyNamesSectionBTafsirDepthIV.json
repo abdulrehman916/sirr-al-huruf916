@@ -1,0 +1,499 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "15 വ്യത്യസ്ത കാർഡുകളിലേക്ക് നേരിട്ട് പരിശോധിച്ച ഇബ്നു കസീർ (15), ത്വബരി (5) തഫ്സീറിൽനിന്നുള്ള 20 ഗവേഷണരേഖകൾ. കൃത്യ നാമരൂപം, ക്രിയ, ദൈവിക വിശേഷണം എന്നിവ തമ്മിലുള്ള വ്യത്യാസം സംരക്ഷിക്കുന്നു. മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ/ഹദീസ് ഗവേഷണം പൂർത്തിയായിട്ടില്ല.",
+    "en": "Twenty individual source-checked classical tafsir analyses for 15 additional Section B headings: 15 Ibn Kathir and five al-Tabari. Exact Name forms, verbs and grammatical predicates are distinguished. Neither complete historical khawass research nor name-specific numerical practice is claimed."
+  },
+  "profiles": {
+    "PDF-HN-0144": {
+      "name_id": "PDF-HN-0144",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0144-katheer-85-20",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 85:20",
+            "en": "Ibn Kathir — Quran 85:20"
+          },
+          "arabic_original": "هُوَ قَادِرٌ عَلَيْهِمْ قَاهِرٌ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രകാരം നിഷേധികൾക്ക് അല്ലാഹുവിന്റെ അധികാരത്തിനു പുറത്തേക്കു കടന്നുപോകാൻ കഴിയില്ല. ഈ ആയത്തിൽ «مُحِيطٌ» എന്ന വിശേഷണമാണ്; «الْمُحِيطُ» എന്ന സ്വതന്ത്ര നാമരൂപമല്ല.",
+            "en": "Ibn Kathir explains that the wrongdoers cannot escape Allah's power. The verse says muhit, rather than printing the definite nominal heading al-Muhit."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:20",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya20.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        },
+        {
+          "id": "depth4-0144-tabary-85-20",
+          "title": {
+            "ml": "ഇമാം ത്വബരി തഫ്സീർ — 85:20",
+            "en": "Al-Tabari — Quran 85:20"
+          },
+          "arabic_original": "بِأَعْمَالِهِمْ مُحْصٍ لَهَا",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു മനുഷ്യരുടെ പ്രവൃത്തികളെ മുഴുവനായി എണ്ണിപ്പരിശോധിക്കുമെന്നും ഒന്നും അവനിൽനിന്ന് മറഞ്ഞുപോകില്ലെന്നും വിശദീകരിക്കുന്നു. ഇത് ഇബ്നു കസീറിന്റെ ശക്തി-ആധിപത്യ വിശദീകരണത്തോട് ചേർന്നെങ്കിലും പ്രത്യേക ഊന്നൽ വ്യത്യസ്തമാണ്.",
+            "en": "Al-Tabari emphasizes that Allah encompasses and records their actions without anything escaping Him, distinct in emphasis from Ibn Kathir's account of irresistible power."
+          },
+          "source_reference": "تفسير الطبري — Quran 85:20",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura85-aya20.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0146": {
+      "name_id": "PDF-HN-0146",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0146-katheer-22-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 22:6",
+            "en": "Ibn Kathir — Quran 22:6"
+          },
+          "arabic_original": "الْخَالِقُ الْمُدَبِّرُ الْفَعَّالُ لِمَا يَشَاءُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു യഥാർഥ സ്രഷ്ടാവും കാര്യങ്ങൾ നിയന്ത്രിക്കുന്നവനും ഇച്ഛിക്കുന്നതു ചെയ്യുന്നവനുമാണെന്ന് വ്യക്തമാക്കുന്നു. മരിച്ചു കഴിഞ്ഞുള്ള ഉയിർത്തെഴുന്നേൽപ്പാണ് സന്ദർഭം; എണ്ണമുള്ള ദിക്‌ർ അല്ല.",
+            "en": "Ibn Kathir describes the true Creator and disposer of affairs, affirming resurrection. The phrase qadir is a predicate, not a counted-name practice."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0147": {
+      "name_id": "PDF-HN-0147",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0147-katheer-3-8",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 3:8",
+            "en": "Ibn Kathir — Quran 3:8"
+          },
+          "arabic_original": "رَحْمَةً تُثَبِّتُ بِهَا قُلُوبَنَا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ദുആ ഹൃദയം മാർഗഭ്രംശത്തിലാകാതിരിക്കാനും ഉറച്ച വിശ്വാസവും കാരുണ്യവും കിട്ടാനുമുള്ള അഭ്യർത്ഥനയാണെന്ന് വിശദീകരിക്കുന്നു. «الْوَهَّابُ» ഖുർആനിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir understands the request as mercy that makes hearts firm in faith and guidance. Al-Wahhab appears explicitly; the verse does not stipulate an isolated recitation count."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        },
+        {
+          "id": "depth4-0147-tabary-3-8",
+          "title": {
+            "ml": "ഇമാം ത്വബരി തഫ്സീർ — 3:8",
+            "en": "Al-Tabari — Quran 3:8"
+          },
+          "arabic_original": "التَّوْفِيقَ وَالسَّدَادَ لِلثَّبَاتِ عَلَى دِينِكَ",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-വഹ്ഹാബ്» എന്ന നാമത്തെ മതത്തിൽ ഉറച്ചുനിൽക്കാനുള്ള തൗഫീഖും ശരിയായ മാർഗവും നൽകി അനുഗ്രഹിക്കുന്നവൻ എന്ന് വിശദീകരിക്കുന്നു. ഇതു ഖുർആനിലെ നേരിട്ടുള്ള ദുആയാണ്.",
+            "en": "Al-Tabari explains al-Wahhab as the Giver of guidance and steadiness in faith, responding to the supplication to keep hearts from deviation."
+          },
+          "source_reference": "تفسير الطبري — Quran 3:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0152": {
+      "name_id": "PDF-HN-0152",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0152-katheer-20-8",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 20:8",
+            "en": "Ibn Kathir — Quran 20:8"
+          },
+          "arabic_original": "ذُو الْأَسْمَاءِ الْحُسْنَى وَالصِّفَاتِ الْعُلَا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖുർആൻ ഇറക്കിയത് ആരാധനയ്ക്കർഹനായ ഏക അല്ലാഹുവാണെന്നും ഏറ്റവും മനോഹരമായ നാമങ്ങളും ഉന്നത വിശേഷണങ്ങളും അവനുള്ളതാണെന്നും വിശദീകരിക്കുന്നു. «الإله الواحد» ഈ ആയത്തിലെ ഒറ്റ നാമമല്ല.",
+            "en": "Ibn Kathir explains that the revealer of the Quran alone deserves worship and possesses the Beautiful Names. Al-Ilah al-Wahid is a heading expressing the doctrine, not a standalone Quranic token here."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 20:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0158": {
+      "name_id": "PDF-HN-0158",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0158-katheer-64-17",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 64:17",
+            "en": "Ibn Kathir — Quran 64:17"
+          },
+          "arabic_original": "يَعْفُو وَيَصْفَحُ وَيَغْفِرُ وَيَسْتُرُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-ഹലീം എന്ന വിശേഷണം പാപങ്ങൾക്ക് ഉടൻ ശിക്ഷിക്കാതെ മാപ്പുനൽകുകയും മറച്ചുവെക്കുകയും ചെയ്യുന്ന ദൈവിക ക്ഷമയുമായി ബന്ധിപ്പിക്കുന്നു. ആയത്ത് ദാനവും പാപമോചനവും സംബന്ധിക്കുന്നു.",
+            "en": "Ibn Kathir connects divine forbearance with pardoning and covering sins. The context concerns charitable giving and forgiveness, not an invented count."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        },
+        {
+          "id": "depth4-0158-tabary-64-17",
+          "title": {
+            "ml": "ഇമാം ത്വബരി തഫ്സീർ — 64:17",
+            "en": "Al-Tabari — Quran 64:17"
+          },
+          "arabic_original": "بِتَرْكِ مُعَاجَلَتِهِمْ بِعُقُوبَتِهِ",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഹലീം എന്നതിനെ പാപികൾക്ക് ഉടൻ ശിക്ഷ നൽകാതെ അവകാശപ്പെട്ട കാലാവധി അനുവദിക്കുന്ന സഹനമായി വിശദീകരിക്കുന്നു. ആയത്തിന്റെ ആദ്യപകുതിയിൽ ഉദാരമായ ദാനം സംബന്ധിക്കുന്നു.",
+            "en": "Al-Tabari reads Halim as forbearing from rushing punishment upon wrongdoers, alongside encouragement of generosity and forgiveness."
+          },
+          "source_reference": "تفسير الطبري — Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0159": {
+      "name_id": "PDF-HN-0159",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0159-katheer-6-18",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 6:18",
+            "en": "Ibn Kathir — Quran 6:18"
+          },
+          "arabic_original": "الْخَبِيرُ بِمَوَاضِعِ الْأَشْيَاءِ وَمَحَالِّهَا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-ഖബീർ» ഓരോ കാര്യം അതിന്റെ സ്ഥാനവും സാഹചര്യവും അനുസരിച്ച് അറിയുന്നവനാണെന്ന് വിശദീകരിക്കുന്നു; അതേ ആയത്തിൽ «അൽ-ഹകീം» നാമം കൂടി ഉണ്ട്.",
+            "en": "Ibn Kathir interprets al-Khabir as fully aware of the proper places and circumstances of things, paired in the verse with al-Hakim."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0160": {
+      "name_id": "PDF-HN-0160",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0160-katheer-2-255",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:255",
+            "en": "Ibn Kathir — Quran 2:255"
+          },
+          "arabic_original": "لَا يَثْقُلُهُ وَلَا يَكْرُثُهُ حِفْظُ السَّمَاوَاتِ وَالْأَرْضِ",
+          "translation": {
+            "ml": "ആയത്തുൽ കുർസിയിൽ ആകാശഭൂമികളെ സംരക്ഷിക്കുന്നത് അല്ലാഹുവിന് ഭാരമല്ലെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു; ഈ ആയത്തിന്റെ അവസാനത്തിൽ «الْعَلِيُّ» നേരിട്ട് വരുന്നു. ഖുർആനിലെ ആയത്ത് മുഴുവനായാണ് സംരക്ഷിക്കേണ്ടത്.",
+            "en": "Ibn Kathir explains that preserving the heavens and earth does not burden Allah. Al-Ali occurs at the end of the full Ayat al-Kursi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0161": {
+      "name_id": "PDF-HN-0161",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0161-katheer-2-255",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:255",
+            "en": "Ibn Kathir — Quran 2:255"
+          },
+          "arabic_original": "الْعَلِيُّ الْعَظِيمُ لَا إِلَهَ غَيْرُهُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-അലിയ്യ് അൽ-അളീം» എന്ന അവസാന വിശേഷണങ്ങളിലൂടെയാണ് ആയത്തിന്റെ അധികാരവും മഹത്വവും വിശദീകരിക്കുന്നത്. «العظيم» എന്നത് «العليم» (അറിവുള്ളവൻ) എന്ന വേറൊരു പദമല്ല.",
+            "en": "Ibn Kathir joins al-Ali and al-Azim to the verse's conclusion about majesty and unique divinity; al-Azim (Magnificent) differs from al-Alim (Knowing)."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0165": {
+      "name_id": "PDF-HN-0165",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0165-katheer-3-26",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 3:26",
+            "en": "Ibn Kathir — Quran 3:26"
+          },
+          "arabic_original": "لَكَ الْمُلْكُ كُلُّهُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അധികാരം നൽകലും തിരിച്ചെടുക്കലും, ആദരവും താഴ്ത്തലും അല്ലാഹുവിന്റെ തീരുമാനമാണെന്ന് പറയുന്നു. «മാലികൽ മുൽക്» ഖുർആനിലെ ദുആയുടെ ഭാഗമാണ്; ഉടൻ അധികാരം ലഭിക്കും എന്ന വസീഫ വാഗ്ദാനമല്ല.",
+            "en": "Ibn Kathir explains Allah's control over granting or removing sovereignty, honor and humiliation. The prayer provides no guaranteed ritual for obtaining office."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0170": {
+      "name_id": "PDF-HN-0170",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0170-katheer-4-1",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 4:1",
+            "en": "Ibn Kathir — Quran 4:1"
+          },
+          "arabic_original": "هُوَ مُرَاقِبٌ لِجَمِيعِ أَعْمَالِكُمْ وَأَحْوَالِكُمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു മനുഷ്യരുടെ എല്ലാ പ്രവൃത്തികളും അവസ്ഥകളും നിരീക്ഷിക്കുന്നുവെന്ന് വിശദീകരിക്കുന്നു. കുടുംബബന്ധങ്ങളും മനുഷ്യരുടെ ഉത്തരവാദിത്തങ്ങളും ഉൾപ്പെടുന്ന ആയത്തിലാണ് «رَقِيبًا» വരുന്നത്.",
+            "en": "Ibn Kathir explains Allah observes all deeds and circumstances. Raqiban appears amid family ties, human dignity and accountability."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0172": {
+      "name_id": "PDF-HN-0172",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0172-katheer-4-85",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 4:85",
+            "en": "Ibn Kathir — Quran 4:85"
+          },
+          "arabic_original": "حَفِيظًا، شَهِيدًا، حَسِيبًا، قَدِيرًا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «മുഖീത്» എന്ന പദത്തിന് ആദ്യകാല പണ്ഡിതരിൽനിന്ന് സൂക്ഷിപ്പുകാരൻ, സാക്ഷി, കണക്കുകാരൻ, ശക്തനായവൻ എന്നീ വ്യത്യസ്ത വിശദീകരണങ്ങൾ രേഖപ്പെടുത്തുന്നു. «ഉപജീവനം മാത്രം» എന്ന ഒരു അർഥത്തിൽ ചുരുക്കരുത്.",
+            "en": "Ibn Kathir preserves multiple early glosses for muqit: guardian, witness, reckoner and powerful; it cannot be reduced solely to providing food."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:85",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya85.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        },
+        {
+          "id": "depth4-0172-tabary-4-85",
+          "title": {
+            "ml": "ഇമാം ത്വബരി തഫ്സീർ — 4:85",
+            "en": "Al-Tabari — Quran 4:85"
+          },
+          "arabic_original": "مَعْنَى الْمُقِيتِ الْقَدِيرُ",
+          "translation": {
+            "ml": "ത്വബരി മുകീത് എന്നതിന് ചില പണ്ഡിതർ ഹഫീള്, ശഹീദ്, ഹസീബ് എന്നിങ്ങനെ വ്യാഖ്യാനിച്ചതായി രേഖപ്പെടുത്തിയ ശേഷം «ഖദീർ» എന്ന അർഥത്തിന് തന്റെ മുൻഗണന വ്യക്തമാക്കുന്നു. ഈ അഭിപ്രായഭേദം തുറന്നുകാണിക്കണം.",
+            "en": "Al-Tabari lists early meanings of muqit (preserver, witness and reckoner) but explicitly prefers qadir, 'having power'. The divergence matters and is preserved."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:85",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya85.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0175": {
+      "name_id": "PDF-HN-0175",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0175-katheer-6-101",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 6:101",
+            "en": "Ibn Kathir — Quran 6:101"
+          },
+          "arabic_original": "عَلَى غَيْرِ مِثَالٍ سَبَقَ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആകാശഭൂമികളെ മുൻമാതൃകയില്ലാതെ സൃഷ്ടിച്ചതാണ് «بَدِيعُ» എന്നതിന്റെ അർഥമെന്ന് വിശദീകരിക്കുന്നു. ഈ ആയത്തിൽ «بَدِيعُ» ആണ്; കാർഡിലെ «الْفَاطِرُ» എന്ന കൃത്യമായ പദരൂപമല്ല.",
+            "en": "Ibn Kathir says badi means creating heaven and earth without a prior model. The actual expression is badi', not the card's exact heading al-Fatir."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:101",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya101.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0179": {
+      "name_id": "PDF-HN-0179",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-0179-katheer-42-19",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 42:19",
+            "en": "Ibn Kathir — Quran 42:19"
+          },
+          "arabic_original": "لَا يَنْسَى أَحَدًا مِنْهُمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ ഉപജീവനപരമായ കാരുണ്യം സകലസൃഷ്ടികൾക്കും എത്തുന്നുവെന്നും ആരെയും മറക്കുകയില്ലെന്നും വിശദീകരിക്കുന്നു. ആയത്തിൽ «لَطِيفٌ» എന്ന രൂപമാണ്.",
+            "en": "Ibn Kathir explains that divine gentle provision reaches all creatures and none is forgotten. The verse says latifun, rather than the definite standalone al-Latif."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:19",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya19.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-057": {
+      "name_id": "PDF-HN-057",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-057-katheer-22-64",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 22:64",
+            "en": "Ibn Kathir — Quran 22:64"
+          },
+          "arabic_original": "هُوَ غَنِيٌّ عَمَّا سِوَاهُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സകലത്തിന്റെയും ഉടമയായ അല്ലാഹുവിന് സൃഷ്ടികളുടെ സഹായം ആവശ്യമില്ലെന്നും, സൃഷ്ടികൾ അവനെ ആശ്രയിച്ചിരിക്കുന്നുവെന്നും പറയുന്നു. «الْحَمِيدُ» നേരിട്ട് വരുന്ന ആയത്തിന്റെ പശ്ചാത്തലമാണിത്.",
+            "en": "Ibn Kathir explains that Allah owns all and needs no creature, whereas everything relies on Him; the verse explicitly calls Him al-Hamid."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:64",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    },
+    "PDF-HN-061": {
+      "name_id": "PDF-HN-061",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth4-061-katheer-15-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ തഫ്സീർ — 15:23",
+            "en": "Ibn Kathir — Quran 15:23"
+          },
+          "arabic_original": "عَنْ قُدْرَتِهِ تَعَالَى عَلَى بَدْءِ الْخَلْقِ وَإِعَادَتِهِ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആദ്യം ജീവൻ നൽകലും മരണം നൽകലും പിന്നീട് ഉയിർത്തെഴുന്നേൽപ്പിക്കലും അല്ലാഹുവിന്റെ കഴിവാണെന്ന് വിശദീകരിക്കുന്നു. «نُمِيتُ» എന്ന ക്രിയയാണ് 15:23-ൽ; «الْمُمِيتُ» എന്ന ഒറ്റനാമരൂപമല്ല.",
+            "en": "Ibn Kathir links creating, causing death and resurrection to divine power. Quran 15:23 uses the verb numit, not the standalone noun al-Mumit."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 15:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        },
+        {
+          "id": "depth4-061-tabary-15-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി തഫ്സീർ — 15:23",
+            "en": "Al-Tabari — Quran 15:23"
+          },
+          "arabic_original": "وَنَحْنُ نَرِثُ الْأَرْضَ وَمَنْ عَلَيْهَا",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു ഉദ്ദേശിക്കുന്നപ്പോൾ ജീവനുള്ളവരെ മരിപ്പിക്കുകയും അവസാനം ഭൂമിയും അതിലുള്ള സകലവും അവനിലേക്കു മടങ്ങുകയും ചെയ്യുമെന്ന് വിശദീകരിക്കുന്നു. പദം «نُمِيتُ» എന്ന ക്രിയയാണ്.",
+            "en": "Al-Tabari explains that Allah causes death when He wills and ultimately inherits earth and its inhabitants. The relevant Quranic form is a verb."
+          },
+          "source_reference": "تفسير الطبري — Quran 15:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura15-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "ഇത് പണ്ഡിതന്റെ ഗ്രന്ഥത്തിൽനിന്നുള്ള ചെറു മൂലഭാഗവും അർഥസംഗ്രഹവുമാണ്; ആയത്തിൽ പറയാത്ത പ്രത്യേക വസീഫ എണ്ണമോ സമയമോ അല്ല.",
+            "en": "Brief original wording and an attributed interpretive paraphrase; not a new fixed-count or timed Prophetic practice."
+          }
+        }
+      ]
+    }
+  }
+}
