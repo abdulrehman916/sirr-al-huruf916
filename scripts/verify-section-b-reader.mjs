@@ -95,13 +95,13 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 16);
+  assert.equal(prophetic.entries.length, 18);
   assert.ok(topical.topics.length >= 18);
   for (const entry of prophetic.entries) {
     assert.ok(!sourceIds.has(entry.id), `Repeated prophetic source ID: ${entry.id}`);
     sourceIds.add(entry.id);
     assert.equal(entry.review_status, 'checked_against_digital_text');
-    assert.equal(entry.claim_kind, 'prophetic_hadith');
+    assert.ok(['prophetic_hadith', 'prophetic_report'].includes(entry.claim_kind));
     assert.ok(entry.source_url.startsWith('https://sunnah.com/'), `Unrecognized hadith source: ${entry.id}`);
     assert.ok(allowedPurposes.has(entry.purpose));
     assert.ok(entry.arabic_original && entry.translation.ml && entry.translation.en);
@@ -120,6 +120,10 @@ try {
   }
   const musPain = prophetic.entries.find(entry => entry.id === 'hadith-muslim-2202');
   assert.ok(musPain.count.ml.includes('3') && musPain.count.ml.includes('7'), 'Pain dua counts must remain distinct.');
+  const dawudPrices = prophetic.entries.find(entry => entry.id === 'hadith-abudawud-3451');
+  const tirmidhiPrices = prophetic.entries.find(entry => entry.id === 'hadith-tirmidhi-1314');
+  assert.ok(dawudPrices.arabic_original.includes('الرَّازِقُ') && tirmidhiPrices.arabic_original.includes('الرَّزَّاقُ'), 'Distinct narrated wordings must not be merged.');
+  assert.ok(dawudPrices.name_ids.includes('PDF-HN-019') && tirmidhiPrices.name_ids.includes('PDF-HN-020'));
   const witr = prophetic.entries.find(entry => entry.id === 'hadith-nasai-1733');
   assert.ok(witr.count.ml.includes('മൂന്ന്') && witr.timing.en.includes('witr'));
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
