@@ -883,6 +883,47 @@ try {
     assert.ok(html.includes(disaster.source_url));
   }
   console.log('PASS: all 160 individually researched card IDs now have deep tafsir overlays; 20 further original Arabic excerpts plus the authentic Sahih Muslim 918a calamity dua.');
+  // Additive seven-record complete Quranic prayer set: full Arabic, bilingual meanings, exact linked cards, and no fabricated rites.
+  const topicalII = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuasII.json', 'utf8'));
+  assert.equal(topicalII.topics.length, 7, 'Seven new fully source-linked Quranic prayers required.');
+  const oldTopicIds = new Set(topical.topics.map(entry => entry.id));
+  const freshTopicIds = new Set();
+  const checkedQuranVerses = ['20:114', '21:89', '2:127', '3:38', '23:97', '23:98', '7:126', '7:89'];
+  let attachedCount = 0;
+  for (const entry of topicalII.topics) {
+    assert.ok(!oldTopicIds.has(entry.id) && !freshTopicIds.has(entry.id), 'A new prayer must not overwrite an earlier prayer.');
+    freshTopicIds.add(entry.id);
+    assert.ok(entry.name_ids.length && entry.name_ids.every(id => coveredIds.has(id)));
+    assert.equal(entry.review_status, 'checked_against_digital_text');
+    assert.ok(entry.arabic_original.length >= 40 && entry.translation.ml && entry.translation.en);
+    assert.ok(entry.source_scope.ml && entry.source_scope.en && entry.claim_kind);
+    assert.ok(entry.count.ml && entry.count.en && entry.timing.ml && entry.timing.en && entry.conditions.ml && entry.conditions.en);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura[0-9]+-aya[0-9]+\.html$/.test(entry.source_url));
+    for (const id of entry.name_ids) {
+      attachedCount++;
+      for (const lang of ['ml', 'en']) {
+        const html = render(null, id, lang, { pdf_name_id: id });
+        assert.ok(html.includes(escape(entry.arabic_original)), 'Original full Arabic missing on ' + id + ' / ' + lang);
+        assert.ok(html.includes(escape(entry.translation[lang])), 'Full-verse meaning missing on ' + id + ' / ' + lang);
+        assert.ok(html.includes(escape(entry.count[lang])), 'Count caveat missing on ' + id + ' / ' + lang);
+        assert.ok(html.includes(escape(entry.timing[lang])), 'Timing caveat missing on ' + id + ' / ' + lang);
+        assert.ok(html.includes(escape(entry.conditions[lang])), 'Methods caveat missing on ' + id + ' / ' + lang);
+        assert.ok(html.includes(entry.source_url), 'Source link missing on ' + id + ' / ' + lang);
+      }
+    }
+  }
+  assert.equal(attachedCount, 11, 'Seven Quranic supplications must appear at eleven card connections.');
+  const refuge = topicalII.topics.find(entry => entry.id === 'quran-23-97-98-seek-refuge');
+  assert.ok(refuge.arabic_original.includes('\n'), 'Both entire Quran 23:97 and 23:98 must be retained.');
+  assert.deepEqual(refuge.references.map(entry => entry.page), ['23:97', '23:98']);
+  const zakariya = topicalII.topics.find(entry => entry.id === 'quran-21-89-zakariya-heir');
+  assert.ok(zakariya.arabic_original.includes('خَيْرُ الْوَارِثِينَ'));
+  const accepting = topicalII.topics.find(entry => entry.id === 'quran-2-127-ibrahim-ismail-accept');
+  assert.ok(accepting.arabic_original.includes('السَّمِيعُ الْعَلِيمُ'));
+  const patients = topicalII.topics.find(entry => entry.id === 'quran-7-126-patience-magicians');
+  assert.ok(patients.translation.en.includes('Pharaoh') && patients.translation.ml.includes('ഫിർഔനി'));
+  assert.equal(checkedQuranVerses.length, 8);
+  console.log('PASS: seven full Quranic prayer records, eight complete verses and eleven card links in two languages.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {

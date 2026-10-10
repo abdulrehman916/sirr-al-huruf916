@@ -1,0 +1,277 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "ഖുർആൻ വചനങ്ങളുടെ പൂർണ അറബി പാഠങ്ങൾ കിംഗ് സൗദ് യൂണിവേഴ്സിറ്റി ഖുർആൻ തഫ്സീർ ഡിജിറ്റൽ പേജുകളുമായി ഒത്തുനോക്കിയ രണ്ടാം വിഷയാധിഷ്ഠിത ദുആ ശേഖരം. ഖുർആൻ സന്ദർഭവും പേരിന്റെ കൃത്യ പദരൂപവും അതിന്റെ വിഷയബന്ധവും വേർതിരിക്കുന്നു. ഏതെങ്കിലും നാമത്തിന് പ്രത്യേക സമയം, 100/1000 എന്ന ജപസംഖ്യ, തകിട്, ഉറപ്പായ ഭൗതികഫലം എന്നിവ സ്ഥാപിക്കുന്നില്ല.",
+    "en": "Second additive collection of complete Quranic verses checked against King Saud University digital Quran/tafsir pages. Preserves the verse's original context and distinguishes direct naming, descriptive wording and thematic relation. None of these verses establishes a name-specific numeric rite, amulet, timed procedure or guaranteed material outcome."
+  },
+  "topics": [
+    {
+      "id": "quran-20-114-increase-knowledge",
+      "name_ids": [
+        "PDF-HN-018"
+      ],
+      "purpose": "knowledge",
+      "title": {
+        "ml": "അറിവ് വർധിപ്പിക്കാനുള്ള ഖുർആൻ പ്രാർത്ഥന — ത്വാഹാ 20:114",
+        "en": "Prayer to increase knowledge — Ta-Ha 20:114"
+      },
+      "arabic_original": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۗ وَلَا تَعْجَلْ بِالْقُرْآنِ مِن قَبْلِ أَن يُقْضَىٰ إِلَيْكَ وَحْيُهُ ۖ وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "translation": {
+        "ml": "സത്യമായ രാജാവായ അല്ലാഹു അത്യുന്നതനാണ്. ഖുർആൻ സന്ദേശം പൂർത്തിയായി ലഭിക്കുന്നതിന് മുമ്പ് അതിൽ തിടുക്കപ്പെടരുത്. «എന്റെ രക്ഷിതാവേ, എനിക്ക് അറിവ് വർധിപ്പിക്കണമേ» എന്നു പറയാൻ കൽപ്പിക്കുന്നു. ഇത് വെളിപാടുമായി ബന്ധപ്പെട്ട വചനമാണ്; «അൽ-അലീം» എന്ന നാമം ഇവിടെ പ്രത്യേകം ഉച്ചരിച്ചിട്ടില്ല.",
+        "en": "Allah, the True Sovereign, is exalted. The Prophet is told not to hurry with the Quran before its revelation is completed and to say, ‘My Lord, increase me in knowledge.’ This is a revelation-context prayer; the standalone name al-Alim is not printed in the verse."
+      },
+      "source_reference": "Quran 20:114; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya114.html",
+      "claim_kind": "complete_quran_verse_themed_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-21-89-zakariya-heir",
+      "name_ids": [
+        "PDF-HN-096"
+      ],
+      "purpose": "relationships",
+      "title": {
+        "ml": "സകരിയ്യാ നബിയുടെ സന്താനപ്രാർത്ഥന — അൽ-അൻബിയാഅ് 21:89",
+        "en": "Zakariyya's prayer for an heir — Al-Anbiya 21:89"
+      },
+      "arabic_original": "وَزَكَرِيَّا إِذْ نَادَىٰ رَبَّهُ رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ",
+      "translation": {
+        "ml": "സകരിയ്യാ നബി രക്ഷിതാവിനെ വിളിച്ച് «എന്റെ രക്ഷിതാവേ, എന്നെ ഒറ്റയ്ക്കാക്കി വിടരുതേ; അനന്തരാവകാശികളിൽ ഏറ്റവും ഉത്തമൻ നീയാകുന്നു» എന്നു പ്രാർത്ഥിച്ചു. സന്താനത്തിനായുള്ള അപേക്ഷയാണ് സന്ദർഭം. «خَيْرُ الْوَارِثِينَ» എന്ന വിശേഷണപ്രയോഗമാണ് ഇവിടെ; സ്വതന്ത്രമായ «الْوَارِثُ» എന്ന പദരൂപമല്ല.",
+        "en": "Zakariyya calls upon his Lord: ‘My Lord, do not leave me alone; You are the best of inheritors.’ The account concerns his plea for offspring. The wording is khayr al-warithin, not the standalone singular definite name al-Warith."
+      },
+      "source_reference": "Quran 21:89; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya89.html",
+      "claim_kind": "complete_quran_verse_historical_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-2-127-ibrahim-ismail-accept",
+      "name_ids": [
+        "PDF-HN-018",
+        "PDF-HN-025"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഇബ്രാഹീം–ഇസ്മാഈൽ നബിമാർ: പ്രവൃത്തി സ്വീകരിക്കണമേ — അൽബഖറ 2:127",
+        "en": "Ibrahim and Ismail ask for acceptance — Al-Baqarah 2:127"
+      },
+      "arabic_original": "وَإِذْ يَرْفَعُ إِبْرَاهِيمُ الْقَوَاعِدَ مِنَ الْبَيْتِ وَإِسْمَاعِيلُ رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
+      "translation": {
+        "ml": "ഇബ്രാഹീമും ഇസ്മാഈലും ഭവനത്തിന്റെ അടിത്തറ ഉയർത്തുമ്പോൾ «ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളിൽനിന്ന് സ്വീകരിക്കണമേ; തീർച്ചയായും നീ എല്ലാം കേൾക്കുന്നവനും എല്ലാം അറിയുന്നവനുമാണ്» എന്നു പ്രാർത്ഥിച്ചു. «السَّمِيعُ الْعَلِيمُ» എന്ന രണ്ട് നാമങ്ങളും കൃത്യമായി ഈ വചനത്തിൽ വരുന്നു.",
+        "en": "As Ibrahim and Ismail raise the foundations of the House they pray, ‘Our Lord, accept from us. Indeed, You are the All-Hearing, the All-Knowing.’ The two names al-Sami and al-Alim occur explicitly, in a context of asking that righteous work be accepted."
+      },
+      "source_reference": "Quran 2:127; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya127.html",
+      "claim_kind": "complete_quran_verse_direct_names_and_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-3-38-zakariya-good-offspring",
+      "name_ids": [
+        "PDF-HN-015",
+        "PDF-HN-025"
+      ],
+      "purpose": "relationships",
+      "title": {
+        "ml": "സകരിയ്യാ നബിയുടെ നല്ല സന്താനത്തിനായുള്ള ദുആ — ആലു ഇംറാൻ 3:38",
+        "en": "Zakariyya's supplication for good offspring — Ali Imran 3:38"
+      },
+      "arabic_original": "هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُ ۖ قَالَ رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ",
+      "translation": {
+        "ml": "അവിടെ സകരിയ്യാ നബി തന്റെ രക്ഷിതാവിനോട് «എന്റെ രക്ഷിതാവേ, നിന്റെ പക്കൽനിന്ന് എനിക്ക് നല്ല സന്താനത്തെ ദാനമായി നൽകണമേ. തീർച്ചയായും നീ പ്രാർത്ഥന കേൾക്കുന്നവനാണ്» എന്നു അപേക്ഷിച്ചു. «هَبْ» എന്നത് «ദാനമായി തരേണമേ» എന്ന ക്രിയയാണ്; «الْوَهَّابُ» എന്ന നാമം ഇവിടെ പ്രത്യേകം വരുന്നില്ല. «سَمِيعُ الدُّعَاءِ» എന്നതാണ് പ്രയോഗം.",
+        "en": "Zakariyya asks, ‘My Lord, grant me good offspring from Yourself. Surely You hear prayer.’ The verb hab (‘grant’) is not the standalone name al-Wahhab, and the verse says sami al-dua (‘hearer of supplication’), not the isolated definite al-Sami."
+      },
+      "source_reference": "Quran 3:38; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya38.html",
+      "claim_kind": "complete_quran_verse_themed_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-23-97-98-seek-refuge",
+      "name_ids": [
+        "PDF-HN-106",
+        "PDF-HN-0187"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "പിശാചിന്റെ ദുർപ്രേരണയിൽനിന്ന് അഭയം — അൽമുഅ്മിനൂൻ 23:97–98",
+        "en": "Seeking refuge from satanic promptings — Al-Muminun 23:97–98"
+      },
+      "arabic_original": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ\nوَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+      "translation": {
+        "ml": "«എന്റെ രക്ഷിതാവേ, പിശാചുക്കളുടെ ദുർപ്രേരണകളിൽനിന്ന് ഞാൻ നിന്നോട് അഭയം തേടുന്നു. എന്റെ രക്ഷിതാവേ, അവർ എന്റെ സമീപത്ത് വരുന്നതിൽനിന്നും ഞാൻ നിന്നോട് അഭയം തേടുന്നു» എന്നു പറയാൻ ഖുർആൻ പഠിപ്പിക്കുന്നു. രണ്ട് വചനങ്ങളുടെയും മുഴുവൻ പാഠമാണ് മുകളിൽ. സംരക്ഷണവുമായി വിഷയബന്ധം മാത്രമാണ്; «അൽ-ഹഫീള്» എന്ന നാമം വചനങ്ങളിൽ നേരിട്ട് ഇല്ല.",
+        "en": "The Quran commands: ‘My Lord, I seek refuge in You from the promptings of devils; and I seek refuge in You, my Lord, from their being present with me.’ Both full verses are given, and protection is a thematic association, not a direct occurrence of the name al-Hafiz."
+      },
+      "source_reference": "Quran 23:97–98; Tafsir Ibn Kathir (both verses)",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya97.html",
+      "references": [
+        {
+          "book": "القرآن الكريم / Tafsir Ibn Kathir",
+          "page": "23:97",
+          "url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya97.html"
+        },
+        {
+          "book": "القرآن الكريم / Tafsir Ibn Kathir",
+          "page": "23:98",
+          "url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya98.html"
+        }
+      ],
+      "claim_kind": "two_complete_quran_verses_themed_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-7-126-patience-magicians",
+      "name_ids": [
+        "PDF-HN-045"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "ഫിർഔനിന്റെ ഭീഷണിക്കിടെ ക്ഷമക്കായുള്ള ദുആ — അൽഅഅ്റാഫ് 7:126",
+        "en": "Prayer for patience under Pharaoh's threat — Al-Araf 7:126"
+      },
+      "arabic_original": "وَمَا تَنقِمُ مِنَّا إِلَّا أَنْ آمَنَّا بِآيَاتِ رَبِّنَا لَمَّا جَاءَتْنَا ۚ رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ",
+      "translation": {
+        "ml": "ഫിർഔനിന്റെ ഭീഷണി നേരിട്ട വിശ്വാസികൾ «ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളുടെമേൽ ക്ഷമ ചൊരിഞ്ഞുതരേണമേ; ഞങ്ങളെ മുസ്ലിംകളായി മരിപ്പിക്കണമേ» എന്നു പ്രാർത്ഥിച്ചു. ഇത് ചരിത്രത്തിലെ അവരുടെ വിശ്വാസസ്ഥൈര്യത്തെക്കുറിച്ചുള്ള ആയത്താണ്; ഇവിടെ «الصَّبُورُ» എന്ന സ്വതന്ത്ര ദൈവനാമമോ പ്രത്യേക ജപസംഖ്യയോ ഇല്ല.",
+        "en": "The believers threatened by Pharaoh pray, ‘Our Lord, pour patience upon us and cause us to die in submission.’ It is a narrative of steadfast faith; the standalone Divine Name as-Sabur and a prescribed numerical dhikr do not occur here."
+      },
+      "source_reference": "Quran 7:126; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya126.html",
+      "claim_kind": "complete_quran_verse_historical_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    },
+    {
+      "id": "quran-7-89-shuayb-just-judgment",
+      "name_ids": [
+        "PDF-HN-017",
+        "PDF-HN-0177"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "ശുഐബ് നബിയുടെ നീതിയുള്ള വിധിക്കായുള്ള ദുആ — അൽഅഅ്റാഫ് 7:89",
+        "en": "Shuayb's appeal for just judgment — Al-Araf 7:89"
+      },
+      "arabic_original": "قَدِ افْتَرَيْنَا عَلَى اللَّهِ كَذِبًا إِنْ عُدْنَا فِي مِلَّتِكُم بَعْدَ إِذْ نَجَّانَا اللَّهُ مِنْهَا ۚ وَمَا يَكُونُ لَنَا أَن نَّعُودَ فِيهَا إِلَّا أَن يَشَاءَ اللَّهُ رَبُّنَا ۚ وَسِعَ رَبُّنَا كُلَّ شَيْءٍ عِلْمًا ۚ عَلَى اللَّهِ تَوَكَّلْنَا ۚ رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَيْرُ الْفَاتِحِينَ",
+      "translation": {
+        "ml": "ശുഐബ് നബി തന്റെ ജനതയുമായുള്ള തർക്കത്തിൽ ദൈവിക ഇച്ഛയെയും അറിവിനെയും ഓർത്തു, അല്ലാഹുവിൽ ആശ്രയിച്ചുകൊണ്ട് «ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങൾക്കും ഞങ്ങളുടെ ജനതയ്ക്കും ഇടയിൽ സത്യപ്രകാരം വിധിക്കണമേ; വിധിക്കുന്നവരിൽ ഏറ്റവും ഉത്തമൻ നീയാകുന്നു» എന്ന് അപേക്ഷിക്കുന്നു. «خَيْرُ الْفَاتِحِينَ» എന്ന പ്രയോഗം ഈ ആയത്തിലുണ്ട്; സ്വതന്ത്ര «الْقَاضِي» എന്ന നാമമില്ല.",
+        "en": "In the dispute with his people, Shuayb refers to Allah's knowledge and will, relies on Allah and asks: ‘Our Lord, decide between us and our people in truth; You are the best of those who judge.’ The wording is khayr al-fatihin, not the standalone name al-Qadi."
+      },
+      "source_reference": "Quran 7:89; Tafsir Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya89.html",
+      "claim_kind": "complete_quran_verse_historical_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവിടെ മുഴുവൻ ആയത്താണ് നൽകിയിരിക്കുന്നത്. ഇതിലുള്ള പ്രാർത്ഥന ചരിത്രപരമായ/ഖുർആനിക സന്ദർഭത്തിൽ വായിക്കണം. ബന്ധിപ്പിച്ച കാർഡിന്റെ നാമം വചനത്തിൽ തനിയെ ഇല്ലെങ്കിൽ പ്രത്യേക നാമവസീഫയാണെന്ന് കരുതരുത്.",
+        "en": "The complete verse is supplied in its Quranic context. A thematic card link does not mean that the standalone name occurs in the verse or that a dedicated name-specific wazifa is prescribed."
+      },
+      "count": {
+        "ml": "ഈ വചനത്തിൽ നിശ്ചിത ആവർത്തനഎണ്ണമോ 100/1000 തവണയെന്ന നിർദേശമോ ഇല്ല.",
+        "en": "No fixed repetition count or 100/1,000-times practice is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ഈ വചനത്തിൽ പ്രത്യേക ദിവസം, മണിക്കൂർ, അല്ലെങ്കിൽ ദിവസങ്ങളുടെ എണ്ണം പറയുന്നില്ല.",
+        "en": "No special weekday, clock time or number of days is specified by this verse."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, ധൂപം, മുദ്ര, തകിട്, ജ്യോതിഷസമയം എന്നിവ ഇവിടെ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "No square, incense, seal, amulet or astrological hour is directed by this verse."
+      }
+    }
+  ]
+}
