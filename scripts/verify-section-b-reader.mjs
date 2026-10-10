@@ -1258,6 +1258,78 @@ try {
     assert.ok(!html.includes(deepMalik.evidence[0].id),'New al-Malik evidence may not leak across cards.');
   }
   console.log('PASS: card 003 al-Malik has 24 Quran passage groups (29 full verses), 19 source-checked tafsir studies and all nine existing Tilimsani originals in both languages.');
+
+  // Fourth encyclopedia card: preserve the two actual Quranic occurrences of al-Quddus and clearly mark everything else thematic.
+  const encyclopaediaIII=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaIII.json','utf8'));
+  const quddusId='PDF-HN-004';
+  const deepQuddus=encyclopaediaIII.profiles[quddusId];
+  assert.deepEqual(Object.keys(encyclopaediaIII.profiles),[quddusId],'No empty placeholder profiles in the fourth-card overlay.');
+  assert.equal(deepQuddus.evidence.length,19,'Nineteen complete themed Quran passage groups are required.');
+  assert.equal(deepQuddus.evidence.reduce((sum,entry)=>sum+entry.verse_count,0),23,'Twenty-three complete Quran verses across nineteen passage groups.');
+  assert.equal(deepQuddus.scholarly.length,16,'Sixteen separate scholarly readings required.');
+  assert.equal(new Set([...deepQuddus.evidence,...deepQuddus.scholarly].map(x=>x.id)).size,35);
+  const quddusOriginalQuran=research[quddusId].evidence.map(x=>x.source_reference);
+  assert.ok(quddusOriginalQuran.includes('Quran 59:23')&&quddusOriginalQuran.includes('Quran 62:1'),'The TWO direct-name verses remain.');
+  const quddusRefs=new Set();
+  for(const entry of deepQuddus.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.relationship,'thematic_not_direct_name','Do not promote a purity theme to an exact Name occurrence.');
+    assert.ok(entry.claim_kind && entry.verse_meaning.ml && entry.verse_meaning.en && entry.translation.ml && entry.translation.en);
+    assert.ok(entry.source_scope.ml && entry.source_scope.en);
+    assert.ok(entry.arabic_original.length>15 && entry.source_reference.startsWith('Quran '));
+    const verseRef=entry.source_reference.match(/Quran (\d+:\d+(?:-\d+)?)/)?.[1];
+    assert.ok(verseRef && !quddusRefs.has(verseRef),'Full Quran references must be unique '+entry.id);
+    assert.ok(!quddusOriginalQuran.includes('Quran '+verseRef),'Do not duplicate existing direct verses');
+    quddusRefs.add(verseRef);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+    for(const lang of ['ml','en']){
+      const html=render(chapters[quddusId]||null,quddusId,lang,{pdf_name_id:quddusId});
+      for(const item of [entry.arabic_original,entry.verse_meaning[lang],entry.translation[lang],entry.source_scope[lang]]){
+        assert.ok(html.includes(escape(item)),'Arabic/full contextual meaning missing: '+verseRef+'/'+lang);
+      }
+      assert.ok(html.includes(entry.source_url),'Quran source url missing: '+verseRef);
+      assert.ok(sectionBEntrySearchText(entry,lang).includes(entry.verse_meaning[lang].toLocaleLowerCase()),'Quran verse meaning must be searchable');
+    }
+  }
+  assert.equal(deepQuddus.evidence.find(x=>x.source_reference.includes('Quran 2:30'))?.claim_kind,'related_root_verb');
+  assert.equal(deepQuddus.evidence.find(x=>x.source_reference.includes('Quran 42:11'))?.claim_kind,'incomparability');
+  const ikhlas=deepQuddus.evidence.find(x=>x.source_reference.includes('Quran 112:1-4'));
+  assert.equal(ikhlas?.arabic_original.split('\n').length,4,'Keep all four whole verses of al-Ikhlas.');
+  const dailyTasbih=deepQuddus.evidence.find(x=>x.source_reference.includes('Quran 30:17-18'));
+  assert.equal(dailyTasbih?.arabic_original.split('\n').length,2,'Keep both verses with morning/evening mentions.');
+  const scholars=new Set();
+  for(const entry of deepQuddus.scholarly){
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.ok(entry.arabic_original.length>=12&&entry.translation.ml&&entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary)\//.test(entry.source_url));
+    scholars.add(entry.source_url.match(/\/tafseer\/(katheer|qortobi|tabary)\//)[1]);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[quddusId]||null,quddusId,lang,{pdf_name_id:quddusId});
+      assert.ok(html.includes(escape(entry.arabic_original)),'Arabic original scholarly quote missing');
+      assert.ok(html.includes(escape(entry.translation[lang])),'Bilingual tafsir meaning missing');
+      assert.ok(html.includes(entry.source_url),'Exact tafsir study link missing');
+    }
+  }
+  assert.deepEqual([...scholars].sort(),['katheer','qortobi','tabary']);
+  assert.ok(deepQuddus.scholarly.some(x=>x.translation.en.includes('objectionable Isra')));
+  assert.ok(deepQuddus.scholarly.some(x=>x.translation.en.includes('fathah')));
+  assert.ok(deepQuddus.scholarly.some(x=>x.translation.en.includes('weak')));
+  for(const lang of ['ml','en']){
+    const html=render(chapters[quddusId]||null,quddusId,lang,{pdf_name_id:quddusId});
+    const muslim=research[quddusId].hadith.find(x=>x.id==='muslim-487a');
+    assert.ok(muslim&&html.includes(escape(muslim.arabic_original)),'Authentic Muslim bowing/prostration dhikr must survive.');
+    assert.ok(html.includes(escape(muslim.translation[lang])),'Bilingual Muslim hadith must survive.');
+    assert.ok(html.includes('https://sunnah.com/nasai:1733'),'Three-times-after-witr source link must survive.');
+    assert.ok(html.includes('سُبْحَانَ الْمَلِكِ الْقُدُّوسِ'),'The Witr Arabic original must survive.');
+    assert.ok(html.includes('وأما اسمه تعالى القدوس:'),'Original historical Shams account must survive with attribution.');
+    assert.ok(html.includes(escape(encyclopaediaIII.scope[lang])),'No claim that every manuscript is complete.');
+  }
+  for(const id of ['PDF-HN-001','PDF-HN-002','PDF-HN-003','PDF-HN-005']){
+    const html=render(chapters[id]||null,id,'en',{pdf_name_id:id});
+    assert.ok(!html.includes(deepQuddus.evidence[0].id),'Card 004 entries must not contaminate card '+id);
+  }
+  console.log('PASS: al-Quddus card preserves 19 full Quran groups (23 verses), 16 original tafsir studies, two original exact-name verses, authentic hadith, Witr count and source-attributed Shams account in both languages.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
