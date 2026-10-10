@@ -40,6 +40,21 @@
         "source_reference": "ഖുർആൻ / Quran 17:110",
         "review_status": "checked_against_digital_text",
         "arabic_original": "قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَابْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًا"
+      },
+      {
+        "id": "quran-59-22",
+        "title": {
+          "ml": "അർ-റഹ്മാൻ, അർ-റഹീം — അൽ-ഹഷ്ർ 59:22",
+          "en": "Al-Rahman and al-Rahim — al-Hashr 59:22"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَٰنُ الرَّحِيمُ",
+        "translation": {
+          "ml": "അല്ലാഹുവിനെ മാത്രം ആരാധ്യനായും ദൃശ്യവും അദൃശ്യവും അറിയുന്നവനായും ഈ ആയത്ത് പരിചയപ്പെടുത്തി, അർ-റഹ്മാൻ അർ-റഹീം എന്നീ രണ്ട് നാമങ്ങളും വ്യക്തമായി പറയുന്നു.",
+          "en": "This verse names Allah as the only deity and knower of seen and unseen things and explicitly mentions both al-Rahman and al-Rahim."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+        "source_reference": "القرآن الكريم / Quran 59:22",
+        "review_status": "checked_against_digital_text"
       }
     ],
     "scholarly": [
@@ -84,6 +99,20 @@
         "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura1-aya1.html",
         "source_reference": "الجامع لأحكام القرآن — القرطبي · al-Fatihah 1:1, discussion 24",
         "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "ibn-kathir-rahman-59-22",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: വിശാലവും സർവവ്യാപകവുമായ കരുണ",
+          "en": "Ibn Kathir: broad and encompassing mercy"
+        },
+        "translation": {
+          "ml": "അൽ-ഹഷ്ർ 59:22-ന്റെ വിശദീകരണത്തിൽ ഇബ്നു കസീർ അല്ലാഹുവിന്റെ കാരുണ്യം സൃഷ്ടികളിലേക്കാകെ വ്യാപിക്കുന്നതായി വിശദീകരിക്കുന്നു; 7:156, 6:54 എന്നിവയും അദ്ദേഹം പരാമർശിക്കുന്നു. ഇത് തഫ്സീറിന്റെ സംഗ്രഹം മാത്രം.",
+          "en": "On Quran 59:22 Ibn Kathir explains the names in terms of encompassing divine mercy and refers to 7:156 and 6:54. This is a summary of his tafsir."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:22",
+        "review_status": "checked_against_digital_text"
       }
     ],
     "topics": [
@@ -122,6 +151,390 @@
         },
         "claim_kind": "quranic_supplication"
       }
+    ],
+    "hadith": [
+      {
+        "id": "bukhari-5999-mercy",
+        "title": {
+          "ml": "അമ്മയുടെ കരുണയേക്കാൾ വിശാലമായ അല്ലാഹുവിന്റെ കരുണ — ഹദീസ്",
+          "en": "Divine mercy compared with a mother's mercy — hadith"
+        },
+        "arabic_original": "اللَّهُ أَرْحَمُ بِعِبَادِهِ مِنْ هَذِهِ بِوَلَدِهَا",
+        "translation": {
+          "ml": "ഉമർ (റ) നിവേദനം ചെയ്ത സംഭവത്തിൽ, കുഞ്ഞിനോടുള്ള അമ്മയുടെ കരുണയെക്കാൾ അല്ലാഹു തന്റെ ദാസരോട് കാരുണ്യമുള്ളവനാണെന്ന് നബി ﷺ പഠിപ്പിച്ചു. ഈ ഹദീസ് കരുണയുടെ വിശാലതയെക്കുറിച്ചാണ്; അർ-റഹ്മാൻ / അർ-റഹീം എന്ന നാമങ്ങൾ പ്രത്യേക എണ്ണം ഓതിയാൽ ഒരു ഭൗതികഫലം ഉറപ്പാണെന്ന തെളിവല്ല.",
+          "en": "In a report from Umar, the Prophet ﷺ teaches that Allah is more merciful to His servants than a mother to her child. It explains divine mercy, not a guaranteed outcome from repeating either name a set number of times."
+        },
+        "source_url": "https://sunnah.com/bukhari/78/30",
+        "source_reference": "صحيح البخاري 5999 — hadith of Umar (رضي الله عنه)",
+        "review_status": "checked_against_digital_text"
+      }
     ]
+  },
+  "PDF-HN-002": {
+    "name_id": "PDF-HN-002",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിലെ പുറംസ്രോതസ്സ് രേഖകൾ തിരഞ്ഞെടുക്കപ്പെട്ട ഖുർആൻ, ഹദീസ്, തഫ്സീർ ഭാഗങ്ങളിലേക്കു മാത്രമാണ്. എല്ലാ കൈയെഴുത്തുപ്രതികളും മുജറബാത്ത് ഗ്രന്ഥങ്ങളും വഫ്ഖുകളും ഈ ഘട്ടത്തിൽ പരിശോധിച്ചിട്ടില്ല. സ്രോതസ്സിൽ ഇല്ലാത്ത എണ്ണം, സമയം, ഫലം, കളം എന്നിവ ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+      "en": "This is a selected review of Quran, hadith and tafsir passages, not exhaustive coverage of manuscripts, practice books or diagrams. No unsupported counts, timings, promised effects or figures have been invented."
+    },
+    "explanation": {
+      "ml": "അർ-റഹീം (الرَّحِيم) കരുണയുള്ളവൻ എന്നാണ് അർഥം. ഖുർആൻ 1:3-ലും 59:22-ലും അർ-റഹ്മാൻ എന്ന നാമത്തോടൊപ്പം ഇത് വരുന്നു. അൽ-അഹ്സാബ് 33:43-ൽ അല്ലാഹു വിശ്വാസികളോട് കരുണയുള്ളവനാണെന്ന് പറയുന്നു. പണ്ഡിതരുടെ വിശദീകരണങ്ങളിൽ അർ-റഹ്മാൻ പൊതുവ്യാപകമായ കരുണയെയും അർ-റഹീം വിശ്വാസികളിലേക്കുള്ള പ്രത്യേക കരുണയെയും കൂടുതൽ സൂചിപ്പിക്കുന്നതായി ഒരു വ്യാഖ്യാനമുണ്ട്; രണ്ടും ഒരേ അർഥത്തിൽ ഉപയോഗിക്കപ്പെടുന്നുവെന്ന അഭിപ്രായവും പഴയ തഫ്സീറുകളിൽ രേഖപ്പെടുത്തിയിട്ടുണ്ട്. ഒരു നാമം അറിയുക എന്നതും ഏതെങ്കിലും നിശ്ചിത എണ്ണമുള്ള രഹസ്യപ്രയോഗത്തിന് പ്രത്യേക ഫലം ഉറപ്പിക്കുക എന്നതും വ്യത്യസ്തമാണ്. താഴെ നേരിട്ടുള്ള ഖുർആൻ പാഠങ്ങളും അർഥബന്ധമുള്ള ഹദീസും തഫ്സീർ വ്യാഖ്യാനങ്ങളും വേർതിരിച്ചിരിക്കുന്നു.",
+      "en": "Al-Rahim means the Merciful. Quran 1:3 and 59:22 pair it with al-Rahman, while 33:43 describes Allah as merciful towards believers. Some classical commentators distinguish broad mercy under al-Rahman and particular mercy under al-Rahim; others record interpretations bringing the meanings closer together. Textual occurrences, thematic hadith, and interpretive explanations are presented separately. These references do not authenticate a prescribed recitation number or guaranteed material benefit."
+    },
+    "evidence": [
+      {
+        "id": "quran-1-3",
+        "title": {
+          "ml": "അൽ-ഫാതിഹ: അർ-റഹ്മാൻ, അർ-റഹീം",
+          "en": "Al-Fatihah: al-Rahman and al-Rahim"
+        },
+        "arabic_original": "الرَّحْمَٰنِ الرَّحِيمِ",
+        "translation": {
+          "ml": "പരമകാരുണികൻ, കരുണാനിധി — അൽ-ഫാതിഹയിൽ രണ്ട് നാമങ്ങളും ഒരുമിച്ച് വരുന്നു.",
+          "en": "The All-Merciful, the Merciful: the two names appear together in al-Fatihah."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya3.html",
+        "source_reference": "Quran 1:3",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-33-43",
+        "title": {
+          "ml": "വിശ്വാസികളോടുള്ള പ്രത്യേക കരുണ — 33:43",
+          "en": "Mercy to believers — 33:43"
+        },
+        "arabic_original": "وَكَانَ بِالْمُؤْمِنِينَ رَحِيمًا",
+        "translation": {
+          "ml": "അല്ലാഹുവും അവന്റെ മലക്കുകളും വിശ്വാസികൾക്കായി അനുഗ്രഹം നൽകുന്നതും അവരെ അന്ധകാരത്തിൽ നിന്ന് വെളിച്ചത്തിലേക്കു നയിക്കുന്നതും ആയത്ത് പറയുന്നു; അവസാനം വിശ്വാസികളോടു കരുണയുള്ളവനെന്ന (رَحِيمًا) വിശേഷണം വരുന്നു. ഇത് ആയത്തിന്റെ അർഥസംഗ്രഹമാണ്.",
+          "en": "The verse speaks of Allah's favour and the angels' prayers for believers and describes Him as merciful to believers (rahiman). This is a verse summary."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura33-aya43.html",
+        "source_reference": "Quran 33:43",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-59-22",
+        "title": {
+          "ml": "ദൈവനാമമായി അർ-റഹീം — 59:22",
+          "en": "Al-Rahim as a divine name — 59:22"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَٰنُ الرَّحِيمُ",
+        "translation": {
+          "ml": "അല്ലാഹുവിന്റെ അർ-റഹ്മാൻ, അർ-റഹീം എന്നീ നാമങ്ങൾ ഈ വചനത്തിൽ നേരിട്ട് വരുന്നു.",
+          "en": "This verse explicitly gives the names al-Rahman and al-Rahim."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+        "source_reference": "Quran 59:22",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "bukhari-5999-mercy",
+        "title": {
+          "ml": "അമ്മയുടെ കരുണയേക്കാൾ വിശാലമായ അല്ലാഹുവിന്റെ കരുണ — ഹദീസ്",
+          "en": "Divine mercy compared with a mother's mercy — hadith"
+        },
+        "arabic_original": "اللَّهُ أَرْحَمُ بِعِبَادِهِ مِنْ هَذِهِ بِوَلَدِهَا",
+        "translation": {
+          "ml": "ഉമർ (റ) നിവേദനം ചെയ്ത സംഭവത്തിൽ, കുഞ്ഞിനോടുള്ള അമ്മയുടെ കരുണയെക്കാൾ അല്ലാഹു തന്റെ ദാസരോട് കാരുണ്യമുള്ളവനാണെന്ന് നബി ﷺ പഠിപ്പിച്ചു. ഈ ഹദീസ് കരുണയുടെ വിശാലതയെക്കുറിച്ചാണ്; അർ-റഹ്മാൻ / അർ-റഹീം എന്ന നാമങ്ങൾ പ്രത്യേക എണ്ണം ഓതിയാൽ ഒരു ഭൗതികഫലം ഉറപ്പാണെന്ന തെളിവല്ല.",
+          "en": "In a report from Umar, the Prophet ﷺ teaches that Allah is more merciful to His servants than a mother to her child. It explains divine mercy, not a guaranteed outcome from repeating either name a set number of times."
+        },
+        "source_url": "https://sunnah.com/bukhari/78/30",
+        "source_reference": "صحيح البخاري 5999 — hadith of Umar (رضي الله عنه)",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "tabari-rahim-59-22",
+        "title": {
+          "ml": "ത്വബരി: ലോകങ്ങളിലെ കരുണയും വിശ്വാസികളോടുള്ള കരുണയും",
+          "en": "Al-Tabari: mercy in this world and towards believers"
+        },
+        "translation": {
+          "ml": "അൽ-ഹഷ്ർ 59:22-ന്റെ തഫ്സീറിൽ ത്വബരി ലോകത്തും പരലോകത്തും ഉള്ള കരുണയെപ്പറ്റിയും വിശ്വാസികളോടുള്ള പ്രത്യേക കാരുണ്യത്തെപ്പറ്റിയും വ്യാഖ്യാനിക്കുന്നു.",
+          "en": "On 59:22 al-Tabari describes divine mercy across this world and the next and mercy towards those who believe."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya22.html",
+        "source_reference": "تفسير الطبري — الحشر 59:22",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "baghawi-rahim-1-3",
+        "title": {
+          "ml": "ബഗവി: രണ്ട് നാമങ്ങളെക്കുറിച്ചുള്ള വിവിധ അഭിപ്രായങ്ങൾ",
+          "en": "Al-Baghawi: differing interpretations of the two names"
+        },
+        "translation": {
+          "ml": "അൽ-ഫാതിഹ 1:3-ലെ ഈ രണ്ട് നാമങ്ങൾ ഒരേ അർഥമാണെന്ന അഭിപ്രായവും പൊതുവായതും പ്രത്യേകവുമായ കാരുണ്യമെന്ന അർഥഭേദവും ബഗവി രേഖപ്പെടുത്തുന്നു. അവയെ ഏകാഭിപ്രായമാക്കി കാണിക്കുന്നില്ല.",
+          "en": "Al-Baghawi records both a synonymous explanation and interpretations differentiating universal from particular mercy. They are not presented as a single unanimous reading."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura1-aya3.html",
+        "source_reference": "تفسير البغوي — الفاتحة 1:3",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-003": {
+    "name_id": "PDF-HN-003",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിലെ പുറംസ്രോതസ്സ് രേഖകൾ തിരഞ്ഞെടുക്കപ്പെട്ട ഖുർആൻ, ഹദീസ്, തഫ്സീർ ഭാഗങ്ങളിലേക്കു മാത്രമാണ്. എല്ലാ കൈയെഴുത്തുപ്രതികളും മുജറബാത്ത് ഗ്രന്ഥങ്ങളും വഫ്ഖുകളും ഈ ഘട്ടത്തിൽ പരിശോധിച്ചിട്ടില്ല. സ്രോതസ്സിൽ ഇല്ലാത്ത എണ്ണം, സമയം, ഫലം, കളം എന്നിവ ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+      "en": "This is a selected review of Quran, hadith and tafsir passages, not exhaustive coverage of manuscripts, practice books or diagrams. No unsupported counts, timings, promised effects or figures have been invented."
+    },
+    "explanation": {
+      "ml": "അൽ-മലിക് (الْمَلِكُ) എന്നാൽ യഥാർത്ഥ പരമാധിപതി. ഖുർആൻ 59:23-ൽ ഈ നാമം വ്യക്തമായി വരുന്നു. 20:114-ൽ അല്ലാഹുവിനെ സത്യമായ ഭരണാധികാരി എന്നും വിശേഷിപ്പിക്കുന്നു; സൂറത്തു നാസ് 114:2-ൽ മനുഷ്യരുടെ രാജാവ് (مَلِكِ النَّاسِ) എന്ന പ്രസ്താവനയുണ്ട്. മനുഷ്യരുടെ ഭരണവും ഉടമസ്ഥതയും പരിമിതവും മാറാവുന്നതുമാണെങ്കിലും, അല്ലാഹുവിന്റെ അധികാരം എല്ലാറ്റിനുമപ്പുറം നിൽക്കുന്നു എന്ന തഫ്സീർ വിശദീകരണം ഇവിടെ കേന്ദ്രമാണ്. അറബി നാമത്തിന്റെ വ്യാകരണം, ഖുർആനിലെ പ്രയോഗങ്ങൾ, മുഫസ്സിറുകളുടെ വ്യാഖ്യാനങ്ങൾ എന്നിവയ്ക്കു ശേഷം മാത്രമേ ഏതെങ്കിലും ഗ്രന്ഥത്തിലെ വസീഫാ-എണ്ണങ്ങളോ വഫ്ഖുകളോ അവരുടെ സ്വന്തം സ്രോതസ്സുപ്രകാരം വേർതിരിച്ച് നൽകാവൂ. ഇവിടെ ഖുർആൻ ആയത്തിന്റെ ഭാഗമായ 'റബ്ബി സിദ്നീ ഇൽമാ' ഈ നാമത്തിനുള്ള പ്രത്യേക എണ്ണമുള്ള രീതി ആണെന്ന് അവകാശപ്പെടുന്നില്ല.",
+      "en": "Al-Malik means the sovereign King. The name occurs in 59:23, the description al-Malik al-Haqq in 20:114, and Malik al-Nas in 114:2. Classical tafsir distinguishes Allah's enduring unrestricted sovereignty from the temporary power of created rulers. The passages do not prescribe particular counts, diagrams or promised financial outcomes."
+    },
+    "evidence": [
+      {
+        "id": "quran-59-23",
+        "title": {
+          "ml": "അൽ-മലിക് എന്ന നാമം — 59:23",
+          "en": "The name al-Malik — 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "ഈ ആയത്തിൽ അൽ-മലിക് എന്ന നാമം അൽ-ഖുദ്ദൂസ്, അസ്സലാം തുടങ്ങിയ നാമങ്ങൾക്കുമുമ്പായി വരുന്നു.",
+          "en": "The verse gives al-Malik alongside al-Quddus and as-Salam."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-20-114",
+        "title": {
+          "ml": "അൽ-മലികുൽ ഹഖ് — 20:114",
+          "en": "The true Sovereign — 20:114"
+        },
+        "arabic_original": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ",
+        "translation": {
+          "ml": "അല്ലാഹു യഥാർത്ഥ രാജാവാണെന്ന് പറയുന്ന ഈ ആയത്ത്, വഹ്‌യ് പൂർണമായി അറിയിക്കപ്പെടുന്നതിനു മുമ്പ് പാരായണത്തിൽ ധൃതിപ്പെടരുതെന്നും 'എന്റെ രക്ഷിതാവേ, എനിക്ക് അറിവ് വർധിപ്പിക്കേണമേ' എന്ന് പ്രാർത്ഥിക്കണമെന്നും പറയുന്നു.",
+          "en": "The verse calls Allah the true Sovereign, teaches care in receiving revelation, and contains the request 'My Lord, increase me in knowledge.'"
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya114.html",
+        "source_reference": "Quran 20:114",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-114-2",
+        "title": {
+          "ml": "മനുഷ്യരുടെ ഭരണാധികാരി — 114:2",
+          "en": "King of humankind — 114:2"
+        },
+        "arabic_original": "مَلِكِ النَّاسِ",
+        "translation": {
+          "ml": "സൂറത്തു നാസിൽ അല്ലാഹുവിനെ മനുഷ്യരുടെ രാജാവെന്ന് വിശേഷിപ്പിക്കുന്നു; അവനിൽ അഭയം തേടുന്ന സൂറത്തിന്റെ ഭാഗമാണിത്.",
+          "en": "Surah al-Nas calls Allah the King of humankind as part of the surah's appeal for divine refuge."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura114-aya2.html",
+        "source_reference": "Quran 114:2",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-malik-59-23",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: എല്ലാറ്റിന്റെയും അധിപൻ",
+          "en": "Ibn Kathir: owner and ruler of all things"
+        },
+        "translation": {
+          "ml": "അൽ-മലിക് എന്ന നാമം എല്ലാ വസ്തുക്കളുടെയും യഥാർത്ഥ ഉടമയും അവയിൽ നിയന്ത്രണമുള്ളവനുമാണ് അല്ലാഹു എന്ന അർഥത്തിൽ ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. ഇത് വചനവ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്.",
+          "en": "Ibn Kathir explains al-Malik as the One who owns all things and governs them without resistance. This is a tafsir summary."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "saadi-malik-20-114",
+        "title": {
+          "ml": "അസ്-സഅ്ദി: മനുഷ്യാധികാരം താൽക്കാലികം",
+          "en": "Al-Saadi: created power is limited"
+        },
+        "translation": {
+          "ml": "അസ്-സഅ്ദി 20:114-ൽ അല്ലാഹുവിന്റെ രാജ്യാധികാരം നിലനിൽക്കുന്നതാണെന്നും മനുഷ്യരുടെ ഭരണാധികാരം പരിമിതവും അവസാനിക്കുന്നതുമാണെന്നും വിശദീകരിക്കുന്നു.",
+          "en": "On 20:114 al-Saadi contrasts Allah's enduring sovereignty with the limited and temporary authority of created beings."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura20-aya114.html",
+        "source_reference": "تفسير السعدي — طه 20:114",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-004": {
+    "name_id": "PDF-HN-004",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിലെ പുറംസ്രോതസ്സ് രേഖകൾ തിരഞ്ഞെടുക്കപ്പെട്ട ഖുർആൻ, ഹദീസ്, തഫ്സീർ ഭാഗങ്ങളിലേക്കു മാത്രമാണ്. എല്ലാ കൈയെഴുത്തുപ്രതികളും മുജറബാത്ത് ഗ്രന്ഥങ്ങളും വഫ്ഖുകളും ഈ ഘട്ടത്തിൽ പരിശോധിച്ചിട്ടില്ല. സ്രോതസ്സിൽ ഇല്ലാത്ത എണ്ണം, സമയം, ഫലം, കളം എന്നിവ ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+      "en": "This is a selected review of Quran, hadith and tafsir passages, not exhaustive coverage of manuscripts, practice books or diagrams. No unsupported counts, timings, promised effects or figures have been invented."
+    },
+    "explanation": {
+      "ml": "അൽ-ഖുദ്ദൂസ് (الْقُدُّوسُ) അല്ലാഹു എല്ലാ കുറവുകളിൽനിന്നും ദോഷങ്ങളിൽനിന്നും പരിശുദ്ധനായവനാണെന്ന അർഥം നൽകുന്നു. അൽ-ഹഷ്ർ 59:23-ലും അൽ-ജുമുഅ 62:1-ലും ഈ നാമം പ്രത്യക്ഷപ്പെടുന്നു. തഫ്സീർ ഗ്രന്ഥങ്ങളിൽ പരമപരിശുദ്ധി, പൂർണത, എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തി എന്നീ അർഥങ്ങൾ വിശദീകരിക്കുന്നു. ആഇശ (റ) റിപ്പോർട്ട് ചെയ്യുന്ന സഹീഹ് മുസ്ലിമിലെ ഹദീസിൽ നബി ﷺ റുകൂഇലും സുജൂദിലും 'സുബ്ബൂഹുൻ ഖുദ്ദൂസുൻ റബ്ബുൽ മലാഇകതി വർറൂഹ്' എന്നു പറഞ്ഞതായി കാണുന്നു. ഖുർആനിലെ നാമപ്രയോഗവും ഹദീസിലെ ദിക്റും വ്യത്യസ്ത തരത്തിലുള്ള സ്രോതസ്സുകളാണ്. ഹദീസിലെ ദിക്റിൽ ഈ കാർഡിനായി പ്രത്യേക ആയിരം തവണയോ പ്രത്യേക ദിവസം കൊണ്ടോ ചെയ്യേണ്ട വഫ്ഖ് രീതി പറഞ്ഞിട്ടില്ല.",
+      "en": "Al-Quddus expresses absolute holiness and freedom from defects. It occurs in Quran 59:23 and 62:1. Classical tafsir explains divine perfection and transcendence. A report from Aisha in Sahih Muslim records the Prophet's remembrance 'Subbuhun Quddusun Rabbul-malaikati war-ruh' in bowing and prostration. That hadith is not a warrant for invented repetition numbers or occult procedures."
+    },
+    "evidence": [
+      {
+        "id": "quran-59-23",
+        "title": {
+          "ml": "അൽ-ഖുദ്ദൂസ് — അൽ-ഹഷ്ർ 59:23",
+          "en": "Al-Quddus — al-Hashr 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അൽ-ഖുദ്ദൂസ് എന്ന നാമം അൽ-മലിക്, അസ്സലാം എന്നിവയോടൊപ്പം വരുന്നു.",
+          "en": "The name appears with al-Malik and as-Salam."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-62-1",
+        "title": {
+          "ml": "അൽ-ഖുദ്ദൂസ് — അൽ-ജുമുഅ 62:1",
+          "en": "Al-Quddus — al-Jumuah 62:1"
+        },
+        "arabic_original": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+        "translation": {
+          "ml": "ആകാശഭൂമികളിലുള്ള എല്ലാം അല്ലാഹുവിനെ തസ്ബീഹ് ചെയ്യുന്നതായി ഈ ആയത്ത് പറയുന്നു; അവനെ അൽ-മലിക്, അൽ-ഖുദ്ദൂസ് എന്നും വിളിക്കുന്നു.",
+          "en": "The verse describes all in the heavens and earth glorifying Allah, the King, the Holy."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya1.html",
+        "source_reference": "Quran 62:1",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "muslim-487a",
+        "title": {
+          "ml": "റുകൂഇലും സുജൂദിലും ചൊല്ലിയ ദിക്റ്",
+          "en": "Remembrance during bowing and prostration"
+        },
+        "arabic_original": "سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلاَئِكَةِ وَالرُّوحِ",
+        "translation": {
+          "ml": "ആഇശ (റ) നിവേദനം: നബി ﷺ തന്റെ റുകൂഇലും സുജൂദിലും ഈ ദിക്റ് ചൊല്ലിയിരുന്നു. ഹദീസിലെ ഈ വാചകത്തിന് വേറൊരു നിശ്ചിത ആവർത്തനഎണ്ണമോ ധൂപമോ പ്രത്യേക ചിത്രമോ പറഞ്ഞിട്ടില്ല.",
+          "en": "Aisha reports that the Prophet ﷺ said these words in bowing and prostration. This narration supplies no special count, incense or diagram."
+        },
+        "source_url": "https://sunnah.com/muslim/4/253",
+        "source_reference": "صحيح مسلم 487a — عائشة رضي الله عنها",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-quddus-62-1",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: എല്ലാ ന്യൂനതകളിൽനിന്നും പരിശുദ്ധൻ",
+          "en": "Ibn Kathir: exalted above imperfection"
+        },
+        "translation": {
+          "ml": "62:1-ന്റെ തഫ്സീറിൽ അൽ-ഖുദ്ദൂസ് എന്നത് ന്യൂനതകളിൽനിന്നും പരിശുദ്ധനും പൂർണതയുടെ വിശേഷണങ്ങൾ ഉള്ളവനുമാണെന്ന് വിശദീകരിക്കുന്നു.",
+          "en": "On 62:1 Ibn Kathir explains al-Quddus as free from deficiencies and possessing attributes of perfection."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya1.html",
+        "source_reference": "تفسير ابن كثير — الجمعة 62:1",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "qurtubi-quddus-59-23",
+        "title": {
+          "ml": "അൽ-ഖുർതുബി: പൂർണതയും പരിശുദ്ധിയും",
+          "en": "Al-Qurtubi: purity and transcendence"
+        },
+        "translation": {
+          "ml": "ഖുർതുബി അൽ-ഖുദ്ദൂസ് എന്നതിനെ എല്ലാ കുറവുകളിലുംനിന്നും മുക്തനായ പരിശുദ്ധൻ എന്നു വിശദീകരിക്കുകയും ഈ പദത്തിന്റെ വായനാരീതികളെക്കുറിച്ചും ചർച്ച ചെയ്യുകയും ചെയ്യുന്നു.",
+          "en": "Al-Qurtubi explains al-Quddus as pure and above every defect, also discussing variant vocalizations recorded in Arabic."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+        "source_reference": "تفسير القرطبي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-005": {
+    "name_id": "PDF-HN-005",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിലെ പുറംസ്രോതസ്സ് രേഖകൾ തിരഞ്ഞെടുക്കപ്പെട്ട ഖുർആൻ, ഹദീസ്, തഫ്സീർ ഭാഗങ്ങളിലേക്കു മാത്രമാണ്. എല്ലാ കൈയെഴുത്തുപ്രതികളും മുജറബാത്ത് ഗ്രന്ഥങ്ങളും വഫ്ഖുകളും ഈ ഘട്ടത്തിൽ പരിശോധിച്ചിട്ടില്ല. സ്രോതസ്സിൽ ഇല്ലാത്ത എണ്ണം, സമയം, ഫലം, കളം എന്നിവ ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+      "en": "This is a selected review of Quran, hadith and tafsir passages, not exhaustive coverage of manuscripts, practice books or diagrams. No unsupported counts, timings, promised effects or figures have been invented."
+    },
+    "explanation": {
+      "ml": "അസ്സലാം (السَّلَامُ) എന്ന ദൈവനാമം അൽ-ഹഷ്ർ 59:23-ൽ നേരിട്ട് വരുന്നു. 'സമാധാനം' എന്ന മലയാള പദത്തിലേക്കു മാത്രമാക്കി ചുരുക്കാതെ, എല്ലാ കുറവുകളിൽനിന്നും ദോഷങ്ങളിൽനിന്നും മുക്തമായ പരിപൂർണതയും സുരക്ഷയും ഈ നാമത്തെപ്പറ്റിയുള്ള തഫ്സീർ വിശദീകരണങ്ങളിൽ വരുന്നതായി കാണാം. ഥൗബാൻ (റ) നിവേദനം ചെയ്ത സഹീഹ് മുസ്ലിം 591-ൽ നബി ﷺ നമസ്കാരശേഷം മൂന്ന് തവണ ഇസ്തിഗ്ഫാർ പറഞ്ഞതിനുശേഷം 'അല്ലാഹുമ്മ അന്റസ്സലാം വമിങ്കസ്സലാം...' എന്ന ദിക്റ് പറഞ്ഞതായി റിപ്പോർട്ടുണ്ട്. ഇവിടെ മൂന്ന് എന്ന എണ്ണം ഇസ്തിഗ്ഫാറുമായി ബന്ധപ്പെട്ടതാണ്; അസ്സലാം എന്ന നാമം മൂന്ന് തവണ എഴുതി വയ്ക്കണമെന്നോ പ്രത്യേക കളം നിർമിക്കണമെന്നോ ഉള്ള നിർദേശം ഈ ഹദീസിൽ ഇല്ല. അത് പ്രത്യേകം വ്യക്തമാക്കിയിരിക്കുന്നു.",
+      "en": "As-Salam appears in Quran 59:23. Classical tafsir connects the name with freedom from all defects and perfect well-being; it should not be reduced to an everyday greeting alone. In Sahih Muslim 591, Thawban reports the Prophet seeking forgiveness three times after prayer and then saying 'Allahumma anta as-salam wa minka as-salam ...'. The three repetitions concern seeking forgiveness, not a rule to inscribe As-Salam three times or use a diagram."
+    },
+    "evidence": [
+      {
+        "id": "quran-59-23",
+        "title": {
+          "ml": "അസ്സലാം എന്ന ദൈവനാമം — 59:23",
+          "en": "As-Salam as a divine name — 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അല്ലാഹുവിന്റെ നാമങ്ങളിൽ അസ്സലാം എന്ന പദം ഖുർആനിൽ നേരിട്ട് വരുന്നു.",
+          "en": "As-Salam is explicitly given among Allah's names."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "muslim-591",
+        "title": {
+          "ml": "നമസ്കാരശേഷം: അല്ലാഹുമ്മ അന്റസ്സലാം",
+          "en": "After prayer: Allahumma anta as-Salam"
+        },
+        "arabic_original": "اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَامِ",
+        "translation": {
+          "ml": "ഥൗബാൻ (റ) നിവേദനം: നബി ﷺ നമസ്കാരശേഷം മൂന്ന് തവണ ഇസ്തിഗ്ഫാർ പറഞ്ഞു; തുടർന്ന് ഈ ദിക്റ് ചൊല്ലി. ഇവിടെ മൂന്ന് ഇസ്തിഗ്ഫാറിന്റെ എണ്ണമാണ്, 'അസ്സലാം' എഴുതേണ്ടതിന്റെ എണ്ണമല്ല.",
+          "en": "Thawban reports that the Prophet ﷺ sought forgiveness three times after prayer, then said this remembrance. Three counts the preceding seeking of forgiveness, not inscriptions of the divine name."
+        },
+        "source_url": "https://sunnah.com/muslim/5/171",
+        "source_reference": "صحيح مسلم 591 — ثوبان رضي الله عنه",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-salam-59-23",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: ദോഷങ്ങളിൽനിന്ന് മുക്തൻ",
+          "en": "Ibn Kathir: free from deficiencies"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 59:23-ൽ അസ്സലാം എന്ന നാമത്തെ അല്ലാഹുവിന്റെ സത്തയിലും വിശേഷണങ്ങളിലും പ്രവർത്തനങ്ങളിലും കുറവില്ലാത്ത പരിപൂർണതയായി വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir explains as-Salam in 59:23 in terms of perfection free from deficiency in divine essence, attributes and acts."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "qurtubi-salam-59-23",
+        "title": {
+          "ml": "ഖുർതുബി: അസ്സലാം എന്നതിന്റെ വിവിധ വിശദീകരണങ്ങൾ",
+          "en": "Al-Qurtubi: distinct explanations of as-Salam"
+        },
+        "translation": {
+          "ml": "അൽ-ഖുർതുബി അസ്സലാം എന്നതിനെ കുറവുകളിൽനിന്നും മുക്തനായവൻ എന്ന് വിശദീകരിക്കുകയും വാക്കിന്റെ മറ്റ് വ്യാഖ്യാനങ്ങളും രേഖപ്പെടുത്തുകയും ചെയ്യുന്നു. അവയെല്ലാം ഒരേ നിർബന്ധിത അർഥമാണെന്ന് പറയുന്നില്ല.",
+          "en": "Al-Qurtubi explains as-Salam through freedom from defect and records additional scholarly interpretations without reducing them to one exclusive reading."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+        "source_reference": "تفسير القرطبي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
   }
 }
