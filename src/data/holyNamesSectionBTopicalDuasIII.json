@@ -1,0 +1,391 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "തിരഞ്ഞെടുത്ത പത്ത് പൂർണ ആയത്തുകൾ, നേരിട്ടുള്ള നാമപ്രയോഗവും പ്രാർത്ഥനയുടെ വിഷയബന്ധവും വേർതിരിച്ച്. ഖുർആൻ / തഫ്സീർ പേജുകൾ ഉപയോഗിച്ചുള്ള അധിക പരിശോധന; പഴയ ഖവാസ്സ് രേഖകളുടെ സ്വതന്ത്ര സ്കാൻപരിശോധനയ്ക്ക് പകരമല്ല.",
+    "en": "Ten additional complete Quran verses checked against Quran/tafsir pages, distinguishing directly attested Divine names from thematic associations. This supplements rather than replaces separate examination of historical khawass manuscripts."
+  },
+  "topics": [
+    {
+      "id": "quran-17-80-truthful-entry-exit",
+      "name_ids": [
+        "PDF-HN-0150",
+        "PDF-HN-0167"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "സത്യസന്ധമായ പ്രവേശനവും പുറപ്പെടലും സഹായവും — ഇസ്റാഅ് 17:80",
+        "en": "Truthful entry and exit, with divine help — Al-Isra 17:80"
+      },
+      "arabic_original": "وَقُل رَّبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَل لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا",
+      "translation": {
+        "ml": "«എന്റെ രക്ഷിതാവേ, എന്നെ സത്യസന്ധമായ വിധത്തിൽ പ്രവേശിപ്പിക്കുകയും സത്യസന്ധമായ വിധത്തിൽ പുറപ്പെടുവിക്കുകയും നിന്റെ പക്കൽനിന്ന് എനിക്ക് സഹായകമായ അധികാരം/തെളിവ് നൽകുകയും ചെയ്യണമേ» എന്നു പറയാൻ കൽപ്പിക്കുന്നു. ഇബ്നു കസീർ ഈ ആയത്ത് ഹിജ്റയുമായി ബന്ധപ്പെടുത്തി വ്യാഖ്യാനിക്കുന്ന അഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തുന്നു. «نَصِيرًا» എന്ന രൂപം വരുന്നു; «النَّصِيرُ» അല്ലെങ്കിൽ «النَّاصِرُ» എന്ന സ്വതന്ത്ര നാമം ഇവിടെ നൽകിയിട്ടില്ല.",
+        "en": "The Prophet is instructed to ask for a truthful entrance, a truthful exit and supporting authority or proof from Allah. Ibn Kathir records interpretations in the setting of the Hijra. Nasiran is a descriptive accusative expression, not the isolated Divine name al-Nasir or al-Nasir in definite form."
+      },
+      "source_reference": "Quran 17:80 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya80.html",
+      "claim_kind": "full_quran_verse_themed_help",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-2-128-submission-and-repentance",
+      "name_ids": [
+        "PDF-HN-080",
+        "PDF-HN-002"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഇബ്രാഹീമും ഇസ്മാഈലും: സമർപ്പണം, തൗബ — അൽബഖറ 2:128",
+        "en": "Ibrahim and Ismail: submission and repentance — Al-Baqarah 2:128"
+      },
+      "arabic_original": "رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَا أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنتَ التَّوَّابُ الرَّحِيمُ",
+      "translation": {
+        "ml": "«ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളെ നിനക്കു കീഴടങ്ങുന്ന രണ്ടുപേരാക്കുകയും ഞങ്ങളുടെ സന്തതികളിൽനിന്ന് നിനക്കു കീഴടങ്ങുന്ന ഒരു സമൂഹത്തെ ഉണ്ടാക്കുകയും ഞങ്ങളുടെ ആരാധനാക്രമങ്ങൾ കാണിച്ചുതരുകയും ഞങ്ങളുടെ പശ്ചാത്താപം സ്വീകരിക്കുകയും ചെയ്യണമേ. തീർച്ചയായും നീ പശ്ചാത്താപം സ്വീകരിക്കുന്നവനും കാരുണ്യവാനുമാകുന്നു» എന്ന ഇബ്രാഹീം–ഇസ്മാഈൽ നബിമാരുടെ ദുആയാണിത്. «التَّوَّابُ الرَّحِيمُ» എന്നീ നാമങ്ങൾ നേരിട്ട് വരുന്നു.",
+        "en": "Ibrahim and Ismail ask that they, and a community from their descendants, submit to Allah, that He show their rites and accept their repentance. The verse ends explicitly with the Divine names al-Tawwab and al-Rahim."
+      },
+      "source_reference": "Quran 2:128 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya128.html",
+      "claim_kind": "full_quran_verse_explicit_two_names",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-3-16-believers-seek-forgiveness",
+      "name_ids": [
+        "PDF-HN-0214"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "വിശ്വാസികളുടെ പാപമോചനപ്രാർത്ഥന — ആലു ഇംറാൻ 3:16",
+        "en": "Believers' plea for forgiveness — Ali Imran 3:16"
+      },
+      "arabic_original": "الَّذِينَ يَقُولُونَ رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ",
+      "translation": {
+        "ml": "ഭക്തരുടെ വാക്കായി ഖുർആൻ പറയുന്നു: «ഞങ്ങളുടെ രക്ഷിതാവേ, തീർച്ചയായും ഞങ്ങൾ വിശ്വസിച്ചിരിക്കുന്നു. ഞങ്ങളുടെ പാപങ്ങൾ പൊറുത്തുതരുകയും നരകശിക്ഷയിൽനിന്ന് ഞങ്ങളെ കാക്കുകയും ചെയ്യണമേ». «فَاغْفِرْ» എന്നത് പൊറുക്കണമെന്ന അപേക്ഷാക്രിയയാണ്; «الْغَافِرُ» എന്ന ഒറ്റ നാമം ഇവിടെ ഇല്ല.",
+        "en": "The Quran describes the God-conscious as saying, ‘Our Lord, we have believed; forgive our sins and protect us from the punishment of the Fire.’ Faghfir is a request to forgive, not the separately printed definite epithet al-Ghafir."
+      },
+      "source_reference": "Quran 3:16 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya16.html",
+      "claim_kind": "full_quran_verse_thematic_forgiveness",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-3-147-steadfastness-and-repentance",
+      "name_ids": [
+        "PDF-HN-0214",
+        "PDF-HN-045",
+        "PDF-HN-0167"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "പഴയ വിശ്വാസികളുടെ ക്ഷമയും സ്ഥിരതയും — ആലു ഇംറാൻ 3:147",
+        "en": "Earlier believers' steadfastness and repentance — Ali Imran 3:147"
+      },
+      "arabic_original": "وَمَا كَانَ قَوْلَهُمْ إِلَّا أَن قَالُوا رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+      "translation": {
+        "ml": "മുൻകാല വിശ്വാസികൾ പ്രതിസന്ധിയിലും യുദ്ധസന്ദർഭത്തിലും «ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളുടെ പാപങ്ങളും കാര്യങ്ങളിൽ ഞങ്ങൾ അതിരുകടന്നതും പൊറുത്തുതരണമേ; ഞങ്ങളുടെ കാലടികൾ ഉറപ്പിക്കുകയും അവിശ്വാസികളായ ശത്രുക്കൾക്കെതിരെ സഹായിക്കുകയും ചെയ്യണമേ» എന്നു പ്രാർത്ഥിച്ചതായി ആയത്ത് പറയുന്നു. ഇത് ചരിത്രപരമായ പശ്ചാത്തലത്തിലാണ്; വ്യക്തിപരമായ അക്രമത്തിനുള്ള നിർദ്ദേശമല്ല. പ്രത്യേക നാമവസീഫയോ എണ്ണമോ വചനം സ്ഥാപിക്കുന്നില്ല.",
+        "en": "Earlier believers in an armed-conflict narrative ask Allah to forgive their sins and excesses, make them firm and aid them against their hostile opponents. This historical account is not a directive for private violence and does not establish a fixed-count name ritual."
+      },
+      "source_reference": "Quran 3:147 · Al-Qurtubi",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura3-aya147.html",
+      "claim_kind": "full_quran_verse_historical_conflict_prayer",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-14-41-ibrahim-forgiveness",
+      "name_ids": [
+        "PDF-HN-0214"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഇബ്രാഹീം നബി: തനിക്കും മാതാപിതാക്കൾക്കും വിശ്വാസികൾക്കും മാപ്പ് — ഇബ്രാഹീം 14:41",
+        "en": "Ibrahim's prayer for forgiveness — Ibrahim 14:41"
+      },
+      "arabic_original": "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+      "translation": {
+        "ml": "«ഞങ്ങളുടെ രക്ഷിതാവേ, വിചാരണ നടക്കുന്ന ദിവസം എനിക്കും എന്റെ മാതാപിതാക്കൾക്കും വിശ്വാസികൾക്കും പൊറുത്തുതരണമേ» എന്ന ഇബ്രാഹീം നബിയുടെ പ്രാർത്ഥനയാണിത്. അദ്ദേഹത്തിന്റെ പിതാവിനുവേണ്ടി പൊറുക്കലിന് അപേക്ഷിച്ചതുമായി ബന്ധപ്പെട്ട ഖുർആൻ 9:114-ലെ വിശദീകരണവും ത്വബരി/ഇബ്നു കസീർ തഫ്സീറും കൂടെ പരിഗണിക്കണം; പഴയ സന്ദർഭത്തെ എല്ലാ സാഹചര്യങ്ങൾക്കും ഒരുപോലെ പ്രയോഗിക്കുന്ന പൊതുവിധിയാക്കി മാറ്റരുത്.",
+        "en": "Ibrahim asks forgiveness for himself, his parents and the believers on the Day of Reckoning. The explanation must also take account of Quran 9:114 about his later disavowal of his father's opposition to Allah; the verse is not a free-standing ruling for every parental circumstance."
+      },
+      "source_reference": "Quran 14:41 · Ibn Kathir and al-Tabari; context Quran 9:114",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya41.html",
+      "references": [
+        {
+          "book": "Quran / Ibn Kathir",
+          "page": "14:41",
+          "url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya41.html"
+        },
+        {
+          "book": "Quran / al-Tabari",
+          "page": "14:41",
+          "url": "https://quran.ksu.edu.sa/tafseer/tabary/sura14-aya41.html"
+        }
+      ],
+      "claim_kind": "full_quran_verse_contextual_parental_forgiveness",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-28-16-musa-forgiveness",
+      "name_ids": [
+        "PDF-HN-0214",
+        "PDF-HN-002"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "മൂസാ നബി: തെറ്റിന് ശേഷം ക്ഷമതേടൽ — അൽഖസ്വസ് 28:16",
+        "en": "Musa's repentance after wrongdoing — Al-Qasas 28:16"
+      },
+      "arabic_original": "قَالَ رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي فَغَفَرَ لَهُ ۚ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ",
+      "translation": {
+        "ml": "ഒരു മനുഷ്യന്റെ മരണം സംഭവിച്ച സംഘർഷത്തിന് ശേഷം മൂസാ നബി «എന്റെ രക്ഷിതാവേ, ഞാൻ എന്നോടുതന്നെ അനീതി ചെയ്തിരിക്കുന്നു; എന്നെ പൊറുക്കണമേ» എന്നു പ്രാർത്ഥിച്ചു. അല്ലാഹു അദ്ദേഹത്തിന് മാപ്പുനൽകിയെന്ന് ആയത്ത് പറയുന്നു. അവസാനത്തിൽ «الْغَفُورُ الرَّحِيمُ» എന്ന നാമങ്ങൾ വ്യക്തമാണ്. ഇത് ആ ചരിത്രസംഭവമാണ്; കുറ്റകൃത്യം ന്യായീകരിക്കുന്ന വചനമല്ല.",
+        "en": "After the confrontation in which a man died, Musa says, ‘My Lord, I have wronged myself, so forgive me.’ The Quran says Allah forgave him and explicitly concludes with al-Ghafur and al-Rahim. This is a historical account, not a license for wrongdoing."
+      },
+      "source_reference": "Quran 28:16 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya16.html",
+      "claim_kind": "full_quran_verse_explicit_ghafur_rahim",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-21-112-truthful-judgment",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-017",
+        "PDF-HN-116"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "സത്യപ്രകാരമുള്ള വിധിക്കുള്ള പ്രാർത്ഥന — അൽഅൻബിയാഅ് 21:112",
+        "en": "Appeal for judgment in truth — Al-Anbiya 21:112"
+      },
+      "arabic_original": "قَالَ رَبِّ احْكُم بِالْحَقِّ ۗ وَرَبُّنَا الرَّحْمَٰنُ الْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+      "translation": {
+        "ml": "«എന്റെ രക്ഷിതാവേ, സത്യപ്രകാരം വിധിക്കണമേ. നിങ്ങൾ പറയുന്ന കാര്യങ്ങൾക്കെതിരെ ഞങ്ങൾ സഹായം തേടുന്നത് പരമകാരുണികനായ ഞങ്ങളുടെ രക്ഷിതാവിനോടാണ്» എന്ന സമാപനവചനമാണിത്. «الرَّحْمَٰنُ» എന്ന നാമം നേരിട്ട് വരുന്നു; «احْكُم» വിധിക്കുക എന്ന അപേക്ഷാക്രിയയും «بِالْحَقِّ» സത്യപ്രകാരവും എന്ന പ്രയോഗവുമാണ്, സ്വതന്ത്ര «الْحَكَمُ» / «الْحَقُّ» എന്ന രൂപങ്ങൾ ഇവിടെ ഇല്ല.",
+        "en": "The closing verse asks, ‘My Lord, judge in truth,’ and invokes the All-Merciful as the One whose help is sought against false descriptions. Al-Rahman appears directly; uhkum is a verb and bil-haqq is a phrase, not a standalone occurrence of al-Hakam or al-Haqq."
+      },
+      "source_reference": "Quran 21:112 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya112.html",
+      "claim_kind": "full_quran_verse_explicit_rahman_and_related_forms",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-2-250-talut-patience",
+      "name_ids": [
+        "PDF-HN-045",
+        "PDF-HN-0150"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "താലൂത്തിന്റെ കൂട്ടരുടെ ക്ഷമയും സ്ഥിരതയും — അൽബഖറ 2:250",
+        "en": "Talut's companions ask for patience — Al-Baqarah 2:250"
+      },
+      "arabic_original": "وَلَمَّا بَرَزُوا لِجَالُوتَ وَجُنُودِهِ قَالُوا رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+      "translation": {
+        "ml": "താലൂത്തിന്റെ വിശ്വാസികളായ കൂട്ടർ ജാലൂത്തിനെയും സൈന്യത്തെയും നേരിടുമ്പോൾ «ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളുടെമേൽ ക്ഷമ ചൊരിഞ്ഞുതരണമേ, ഞങ്ങളുടെ കാലടികൾ ഉറപ്പിക്കണമേ, ശത്രുക്കൾക്കെതിരെ സഹായിക്കണമേ» എന്നു പ്രാർത്ഥിച്ചു. പുരാതന സംഘർഷത്തിന്റെ കഥയാണിത്; ഇന്നത്തെ വ്യക്തിപരമായ ആക്രമണത്തിനുള്ള അനുവാദമല്ല. «صَبْرًا» എന്ന പദം ക്ഷമയെയാണു സൂചിപ്പിക്കുന്നത്; «الصَّبُورُ» എന്ന നാമമല്ല.",
+        "en": "When Talut's companions faced Jalut's forces, they asked for patience, firmness and help. The verse narrates an ancient battlefield, not an authorization for individual modern violence. Sabran (‘patience’) is not the standalone Divine name as-Sabur."
+      },
+      "source_reference": "Quran 2:250 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya250.html",
+      "claim_kind": "full_quran_verse_historical_patience",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-27-19-sulayman-gratitude",
+      "name_ids": [
+        "PDF-HN-120",
+        "PDF-HN-002"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "സുലൈമാൻ നബിയുടെ നന്ദിയും സൽപ്രവൃത്തിയും — അന്നംൽ 27:19",
+        "en": "Sulayman's prayer of gratitude and good action — An-Naml 27:19"
+      },
+      "arabic_original": "فَتَبَسَّمَ ضَاحِكًا مِّن قَوْلِهَا وَقَالَ رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
+      "translation": {
+        "ml": "ഉറുമ്പിന്റെ വാക്ക് കേട്ട് പുഞ്ചിരിച്ച സുലൈമാൻ നബി «എനിക്കും എന്റെ മാതാപിതാക്കൾക്കും നീ നൽകിയ അനുഗ്രഹങ്ങൾക്ക് നന്ദി പറയാനും നിനക്കിഷ്ടമുള്ള സൽപ്രവൃത്തി ചെയ്യാനും എന്നെ പ്രചോദിപ്പിക്കണമേ; നിന്റെ കാരുണ്യത്താൽ സദ്‌വൃത്തരുടെ കൂട്ടത്തിൽ എന്നെ ഉൾപ്പെടുത്തണമേ» എന്നു പ്രാർത്ഥിച്ചു. «أَشْكُرَ» മനുഷ്യന്റെ നന്ദിപറച്ചിലിന്റെ ക്രിയയാണ്; ദൈവനാമമായ «الشَّكُورُ» ഇവിടെ നേരിട്ടു വരുന്നില്ല.",
+        "en": "Upon understanding the ant, Sulayman smiles and prays for help in thanking Allah for blessings on him and his parents, doing accepted good deeds and joining the righteous by Divine mercy. Ashkura (‘I give thanks’) is his verb, not the standalone Divine name al-Shakur."
+      },
+      "source_reference": "Quran 27:19 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura27-aya19.html",
+      "claim_kind": "full_quran_verse_sulayman_gratitude",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    },
+    {
+      "id": "quran-26-83-ibrahim-wisdom",
+      "name_ids": [
+        "PDF-HN-108",
+        "PDF-HN-015"
+      ],
+      "purpose": "knowledge",
+      "title": {
+        "ml": "ഇബ്രാഹീം നബി: വിജ്ഞാനവും സൽജനങ്ങളോടുള്ള ചേർച്ചയും — അശ്ശുഅറാഅ് 26:83",
+        "en": "Ibrahim asks for sound judgment and righteous company — Ash-Shuara 26:83"
+      },
+      "arabic_original": "رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَ",
+      "translation": {
+        "ml": "ഇബ്രാഹീം നബി «എന്റെ രക്ഷിതാവേ, എനിക്ക് വിധിവിവേകവും അറിവും നൽകുകയും സദ്‌വൃത്തരുടെ കൂട്ടത്തിൽ എന്നെ ഉൾപ്പെടുത്തുകയും ചെയ്യണമേ» എന്നു പ്രാർത്ഥിക്കുന്നു. ഇബ്നു കസീർ ഇവിടെ «حُكْمًا» എന്നതിന്റെ വ്യാഖ്യാനങ്ങളിൽ അറിവ് ഉൾപ്പെടുന്നതായി രേഖപ്പെടുത്തുന്നു. «هَبْ» ദാനത്തിനുള്ള അപേക്ഷാക്രിയയാണ്; «الْوَهَّابُ» എന്ന നാമമല്ല. «حُكْمًا» എന്ന പദം സ്വതന്ത്ര «الْحَكِيمُ» എന്ന നാമമല്ല.",
+        "en": "Ibrahim prays, ‘My Lord, grant me judgment or wisdom, and join me with the righteous.’ Ibn Kathir includes knowledge among the interpretations of hukman. Hab is a verb asking for a gift, not al-Wahhab, and hukman is not the standalone al-Hakim."
+      },
+      "source_reference": "Quran 26:83 · Ibn Kathir",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura26-aya83.html",
+      "claim_kind": "full_quran_verse_thematic_wisdom",
+      "review_status": "checked_against_digital_text",
+      "source_scope": {
+        "ml": "ഇവ പൂർണ്ണ ഖുർആൻ വചനങ്ങളോ അതിനുള്ളിലെ പ്രാർത്ഥനാവാക്യങ്ങളോ ആണ്. കാർഡുമായി ബന്ധപ്പെട്ടിരിക്കുന്നത് നാമത്തിന്റെ നേരിട്ടുള്ള പ്രയോഗമോ വ്യക്തമായി വിശദീകരിച്ച ആശയബന്ധമോ ഉള്ളിടത്ത് മാത്രമാണ്. പാഠത്തിൽ ഇല്ലാത്ത ആവർത്തനസംഖ്യ, സമയക്രമം, വഫ്ഖ്, തകിട്, ഫലവാഗ്ദാനം എന്നിവ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "This entry reproduces a full Quran verse in context. The linked card is either directly named or expressly marked as a thematic link; no verse is converted into an unattested name-specific number, timing, diagram, amulet or guaranteed result."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ഈ നാമത്തിന് പ്രത്യേക ജപസംഖ്യയോ 100/1000 ആവർത്തനമോ നിർദേശിച്ചിട്ടില്ല.",
+        "en": "This verse does not set a name-specific number of repetitions, including 100 or 1,000."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്തിൽ നിശ്ചിത ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "This verse specifies no fixed weekday, clock time or sequence of days."
+      },
+      "conditions": {
+        "ml": "ആയത്ത് കളം, തകിട്, മുദ്ര, ധൂപം, രഹസ്യചിഹ്നങ്ങൾ എന്നിവ നിർദേശിക്കുന്നില്ല.",
+        "en": "The verse specifies no squares, amulets, seals, incense or secret symbols."
+      }
+    }
+  ]
+}
