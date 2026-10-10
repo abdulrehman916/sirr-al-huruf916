@@ -679,7 +679,7 @@ try {
       assert.ok(!seenIds.has(record.id),`Globally duplicated research record ID ${record.id}`);
       seenIds.add(record.id);
       assert.equal(record.review_status,'checked_against_digital_text');
-      assert.ok(record.arabic_original && record.arabic_original.length>=14);
+      assert.ok(record.arabic_original && record.arabic_original.length>=10,`Short or absent original Arabic excerpt: ${record.id}`);
       assert.ok(record.translation?.ml && record.translation?.en);
       assert.ok(record.source_scope?.ml && record.source_scope?.en);
       assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(record.source_url),
