@@ -555,7 +555,368 @@
           "verse_count": 1
         }
       ],
-      "scholarly": [],
+      "scholarly": [
+        {
+          "id": "encyclopedia-mumin-tafsir-1-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സൃഷ്ടികളെ അനീതിയിൽനിന്ന് സുരക്ഷിതരാക്കുന്നവൻ",
+            "en": "Ibn Kathir: securing creation against His injustice"
+          },
+          "arabic_original": "أي أمن خلقه من أن يظلمهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദഹ്ഹാക്ക് ഇബ്നു അബ്ബാസിൽനിന്നു നൽകുന്ന വ്യാഖ്യാനമായി അല്ലാഹു സൃഷ്ടികളെ സ്വന്തം അനീതിയിൽനിന്നു നിർഭയരാക്കുന്നു എന്നു രേഖപ്പെടുത്തുന്നു. ദൈവിക നീതിയെ സംബന്ധിച്ച അർഥമാണിത്; എല്ലാ ഭൗതിക അപകടവും ഇല്ലാതാക്കുന്ന തകിടുവാഗ്ദാനം അല്ല.",
+            "en": "Ibn Kathir attributes to al-Dahhak from Ibn Abbas the interpretation that Allah secures creation against His injustice. This concerns Divine justice, not guaranteed protection from every worldly danger."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-2-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഖതാദ — തന്റെ വാക്കിന്റെ സത്യത്തെ സ്ഥിരീകരിക്കുന്നു",
+            "en": "Ibn Kathir: Qatadah on affirming His own truthful word"
+          },
+          "arabic_original": "أمن بقوله : إنه حق",
+          "translation": {
+            "ml": "ഖതാദയുടെ വ്യാഖ്യാനത്തിൽ അല്ലാഹുവിന്റെ വാക്കുകൾ സത്യമാണ് എന്ന് ഉറപ്പിക്കലാണ് അൽ-മുഅ്മിന്റെ ഒരു വിശദീകരണം. സുരക്ഷ എന്ന അർഥത്തിന് പുറമെ സ്ഥിരീകരിക്കൽ എന്ന ഭാഷാപരമായ വശവും രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir preserves Qatadah's interpretation of al-Mu'min as affirming the truth of God's statement, distinct from the protection-from-injustice gloss."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-3-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഇബ്നു സൈദ് — വിശ്വാസികളുടെ ഇമാൻ സ്ഥിരീകരിക്കൽ",
+            "en": "Ibn Kathir: Ibn Zayd and vindication of the faithful"
+          },
+          "arabic_original": "صدق عباده المؤمنين في إيمانهم به",
+          "translation": {
+            "ml": "ഇബ്നു സൈദിന്റെ പ്രസ്താവനയിൽ അല്ലാഹു വിശ്വാസികളുടെ ഇമാനിനെ സത്യമായി അംഗീകരിക്കുന്നു എന്ന വ്യാഖ്യാനമാണ്. ഇമാൻ ചെയ്യുന്ന മനുഷ്യനും ഇമാനിനെ സ്ഥിരീകരിക്കുന്ന അല്ലാഹുവും തമ്മിലുള്ള അർഥഭേദം ശ്രദ്ധിക്കണം.",
+            "en": "Ibn Kathir transmits Ibn Zayd's view that Allah confirms the believers in their faith. This should not collapse human belief and a Divine Name into the same grammatical role."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-4-59-23-tabary",
+          "title": {
+            "ml": "ത്വബരി: സൃഷ്ടികളെ സ്വന്തം അനീതിയിൽനിന്നു നിർഭയരാക്കുന്നു",
+            "en": "Al-Tabari: Divine security against injustice"
+          },
+          "arabic_original": "الذي يؤمن خلقه من ظلمه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-മുഅ്മിൻ എന്നതിന് അല്ലാഹു സൃഷ്ടികളെ തന്റെ അനീതിയിൽനിന്ന് സുരക്ഷിതരാക്കുന്നു എന്നു വ്യക്തമായി വിശദീകരിക്കുന്നു. ചരിത്രപരമായ ഖവാസ്സ് കണക്കുമായി ഇത് ബന്ധിപ്പിക്കരുത്.",
+            "en": "Al-Tabari glosses al-Mu'min as the One who secures His creation from injustice. The verse does not state an astronomical or numerical protective formula."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-5-59-23-tabary",
+          "title": {
+            "ml": "ത്വബരി: ദഹ്ഹാക്കിന്റെ «മുസദ്ദിഖ്» വ്യാഖ്യാനം",
+            "en": "Al-Tabari: al-Dahhak's 'the One who confirms'"
+          },
+          "arabic_original": "قال: المصدق",
+          "translation": {
+            "ml": "ത്വബരി ദഹ്ഹാക്കിന്റെ പേരിൽ «المصدق» എന്ന അറബി വിശദീകരണം രേഖപ്പെടുത്തുന്നു. ഇത് മനുഷ്യവിശ്വാസികളെ വിളിക്കുന്ന പദത്തോട് തുല്യമല്ല; ദൈവത്തിന്റെ സത്യസ്ഥിരീകരണത്തിന്റെ വിശദീകരണമാണ്.",
+            "en": "Al-Tabari records al-Dahhak's concise gloss al-musaddiq, the One who confirms or attests to truth. It is not simply the human noun 'believer'."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-6-59-23-tabary",
+          "title": {
+            "ml": "ത്വബരി: ഇബ്നു സൈദിന്റെ വ്യത്യസ്ത വായന",
+            "en": "Al-Tabari: Ibn Zayd and the believers' faith"
+          },
+          "arabic_original": "آمن الناس بربهم فسماهم مؤمنين",
+          "translation": {
+            "ml": "ത്വബരി ഇബ്നു സൈദിന്റെ നീണ്ട വിശദീകരണത്തിൽ അല്ലാഹു വിശ്വാസികളുടെ ഇമാനിനെ സ്ഥിരീകരിക്കുന്നതായി പറയുന്നു. ഒരു വ്യത്യസ്ത മുൻഗാമിയുടെ അഭിപ്രായമാണ്; മറ്റുള്ള വ്യാഖ്യാനങ്ങളെ മായ്ച്ചുകളയുന്നില്ല.",
+            "en": "Al-Tabari preserves Ibn Zayd's separate explanation that Allah affirms the believers in their belief, alongside other early views of the Name."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-7-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ദൂതന്മാരെ ദൃഷ്ടാന്തങ്ങളാൽ സ്ഥിരീകരിക്കുന്നവൻ",
+            "en": "Al-Qurtubi: confirmation of messengers through signs"
+          },
+          "arabic_original": "أي المصدق لرسله بإظهار معجزاته عليهم",
+          "translation": {
+            "ml": "ഖുർതുബിയുടെ ഒരു അർഥവ്യാഖ്യാനത്തിൽ അല്ലാഹു പ്രവാചകന്മാരുടെ സത്യസന്ധത അവരുടെ അത്ഭുതദൃഷ്ടാന്തങ്ങളിലൂടെ സ്ഥിരീകരിക്കുന്നു. നാമത്തിന്റെ «സത്യസ്ഥിരീകരിക്കൽ» എന്ന വശമാണിത്.",
+            "en": "Al-Qurtubi reads al-Mu'min as the One confirming His messengers by manifesting signs supporting their truthfulness, a distinct meaning from granting safety."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-8-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ഔലിയാക്കൾക്ക് ശിക്ഷയിൽനിന്നു രക്ഷ നൽകുന്നവൻ",
+            "en": "Al-Qurtubi: safeguarding His allies from punishment"
+          },
+          "arabic_original": "المؤمن الذي يؤمن أولياءه من عذابه",
+          "translation": {
+            "ml": "ഖുർതുബി അല്ലാഹു തന്റെ ഔലിയാക്കൾക്ക് ശിക്ഷയിൽനിന്ന് സുരക്ഷ നൽകുന്നു എന്നും ദാസന്മാരെ അനീതിയിൽനിന്ന് സുരക്ഷിതരാക്കുന്നു എന്നും മറ്റൊരു വ്യാഖ്യാനം നൽകുന്നു. ശിക്ഷയെക്കുറിച്ചുള്ള ഈ മതപരമായ ആശയം പാമ്പുകളെ പിടിക്കാമെന്ന ഉറപ്പായി മാറ്റരുത്.",
+            "en": "Al-Qurtubi also reports the interpretation of giving His devoted servants security from punishment and safeguarding creation from injustice. It must not be used to claim immunity to bites, weapons or illness."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-9-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: മുജാഹിദ് — തൗഹീദ് സാക്ഷ്യത്തിന്റെ അടിസ്ഥാനത്തിൽ",
+            "en": "Al-Qurtubi: Mujahid's Divine testimony interpretation"
+          },
+          "arabic_original": "المؤمن الذي وحد نفسه",
+          "translation": {
+            "ml": "മുജാഹിദ് «ശഹിദല്ലാഹു അന്നഹു ലാ ഇലാഹ ഇല്ലാ ഹുവ» എന്ന തൗഹീദ് പ്രഖ്യാപനവുമായി അൽ-മുഅ്മിനെ ബന്ധിപ്പിക്കുന്നു എന്ന് ഖുർതുബി പറയുന്നു. ഈ വായന നേരത്തേ പറഞ്ഞ ദൂതസ്ഥിരീകരണത്തിൽനിന്ന് ആശയപരമായി വ്യത്യസ്തമാണ്.",
+            "en": "Al-Qurtubi cites Mujahid connecting the Name to Allah's testimony of His own oneness. This is another interpretive proposal, not the only obligatory definition."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-10-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബിയിലെ ദീർഘമായ അന്തിമദിന വർത്തമാനം പ്രത്യേകം സ്ഥിരീകരിക്കേണ്ടത്",
+            "en": "Al-Qurtubi: a detailed eschatological narrative requires its own grading"
+          },
+          "arabic_original": "وأول من يخرج من وافق اسمه اسم نبي",
+          "translation": {
+            "ml": "ഖുർതുബി ഈ ഭാഗത്ത് ചിലരുടെ പേരുകൾ പ്രവാചകന്മാരുടെ പേരുകളുമായി ഒത്താൽ നരകത്തിൽനിന്ന് വിടുതൽ ലഭിക്കുന്നുവെന്ന തരത്തിലുള്ള ഒരു വ്യാഖ്യാനകഥയും പരാമർശിക്കുന്നു. അതിനെ സഹീഹ് പ്രവാചകവചനമെന്നോ ഇസ്‌മുകൾ എഴുതുന്ന പ്രത്യേക പ്രയോഗമെന്നോ സ്വതന്ത്ര പരിശോധനയില്ലാതെ കാണിക്കരുത്.",
+            "en": "Al-Qurtubi mentions an unusual eschatological account involving people's names matching prophetic names. Mere inclusion in a tafsir does not make it authentic hadith or a source for guaranteeing salvation by writing a name."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-11-59-23-saadi",
+          "title": {
+            "ml": "സഅ്ദി: വ്യക്തമായ തെളിവുകളാൽ പ്രവാചകന്മാരുടെ സത്യത സ്ഥിരീകരിക്കൽ",
+            "en": "Al-Sa'di: authenticating His prophets with clear proofs"
+          },
+          "arabic_original": "بما جاءوا به، بالآيات البينات",
+          "translation": {
+            "ml": "സഅ്ദിയുടെ വിശദീകരണത്തിൽ അൽ-മുഅ്മിൻ ദൂതന്മാരുടെ സന്ദേശത്തെ തെളിവുകളാലും ദൃഷ്ടാന്തങ്ങളാലും ഉറപ്പിക്കുന്നവനാണ്. തഫ്സീറിലെ അർഥമാണ്; പ്രത്യേക ഖവാസ്സ് എണ്ണമല്ല.",
+            "en": "Al-Sa'di explicitly explains al-Mu'min through Allah's confirmation of the prophets and messengers with decisive evidence and clear signs."
+          },
+          "source_reference": "تفسير السعدي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-12-59-23-baghawy",
+          "title": {
+            "ml": "ബഗവി: ഇബ്നു അബ്ബാസ് — അനീതിയിൽനിന്നും ശിക്ഷയിൽനിന്നും സുരക്ഷ",
+            "en": "Al-Baghawi: Ibn Abbas on two dimensions of protection"
+          },
+          "arabic_original": "وأمن من آمن به من عذابه",
+          "translation": {
+            "ml": "ബഗവി ഇബ്നു അബ്ബാസിനെ ഉദ്ധരിച്ച് സൃഷ്ടികളെ അനീതിയിൽനിന്നും വിശ്വാസികളെ ശിക്ഷയിൽനിന്നും സുരക്ഷിതരാക്കുന്ന അർഥം അവതരിപ്പിക്കുന്നു. 106:4-ലെ «آمَنَهُم مِّنْ خَوْفٍ» എന്ന പദപ്രയോഗം ഉദാഹരണമായി അദ്ദേഹം പറയുന്നു.",
+            "en": "Al-Baghawi explicitly links protection from injustice and punishment to Ibn Abbas and cites Quran 106:4's 'secured them from fear' as a linguistic parallel."
+          },
+          "source_reference": "تفسير البغوي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-13-6-82-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സുൽം എന്നത് ഇവിടെ ശിർക്കാണെന്ന് നബി വിശദീകരിച്ചു",
+            "en": "Ibn Kathir: the Prophet explains zulm here as shirk"
+          },
+          "arabic_original": "إن الشرك لظلم عظيم",
+          "translation": {
+            "ml": "6:82-ലെ «അനീതിയെ ചേർക്കാത്ത വിശ്വാസികൾക്ക് സുരക്ഷ» എന്ന വചനത്തെക്കുറിച്ച് സഹാബികൾ തങ്ങളൊക്കെ പിഴവുകൾ ചെയ്തിട്ടില്ലേയെന്ന് ചോദിച്ചു. നബി ﷺ 31:13-ലെ «إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ» എന്ന വചനം ചൂണ്ടിക്കാണിച്ചുവെന്ന് സ്വഹീഹ് റിപ്പോർട്ടുകൾ ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു.",
+            "en": "Ibn Kathir narrates that companions worried because everyone has wronged themselves; the Prophet used Quran 31:13 to clarify the relevant zulm as associating partners with Allah."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 6:82",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya82.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-14-2-126-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: രണ്ടു മക്കാ സുരക്ഷാപ്രാർത്ഥനകളുടെ സാഹചര്യം",
+            "en": "Ibn Kathir: the two city-safety prayers may differ in timing"
+          },
+          "arabic_original": "رب اجعل هذا بلدا آمنا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 2:126-ലെ «ബലദൻ ആമിനൻ» എന്നും 14:35-ലെ «ഹാദൽ ബലദ» എന്നും വരുന്ന വാക്കുകളുടെ വ്യത്യാസം നിർമാണത്തിന് മുമ്പും ശേഷവും ആയ പ്രാർത്ഥനകളായി വിശദീകരിക്കാവുന്നതാണെന്ന് പറയുന്നു. അത് ഒരു വ്യാഖ്യാനാനുമാനമാണ്; തികച്ചും സ്ഥിരീകരിച്ച സനദ് റിപ്പോർട്ടല്ല.",
+            "en": "Ibn Kathir proposes that the difference between baladan aminan (2:126) and hadha al-balad (14:35) may reflect prayers before and after the House was established. Treat this as exegesis rather than a proven hadith chronology."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 2:126",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya126.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-15-9-6-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അഭയം തേടുന്നവനെ സുരക്ഷിതമായി എത്തിക്കൽ",
+            "en": "Ibn Kathir: actual protection for a person seeking asylum"
+          },
+          "arabic_original": "ثم أبلغه مأمنه",
+          "translation": {
+            "ml": "അഭയം ചോദിക്കുന്ന എതിർവിഭാഗക്കാരനെ സംരക്ഷിച്ച് അല്ലാഹുവിന്റെ വചനങ്ങൾ കേൾപ്പിച്ച് ശേഷം സുരക്ഷിതസ്ഥലത്ത് എത്തിക്കാൻ 9:6 ആവശ്യപ്പെടുന്നു. യുദ്ധത്തിന്റെ നിയമസന്ദർഭമാണിത്; മനുഷ്യനെ അപകടത്തിലാക്കുന്ന ഖവാസ്സ് പ്രയോഗമല്ല.",
+            "en": "Quran 9:6 requires safe conduct for a requesting opponent, enabling him to hear revelation before being delivered to security. This is a legal and ethical responsibility in its historical context."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 9:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya6.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-16-13-28-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സ്മരണയിൽ ഹൃദയത്തിന്റെ ആശ്വാസം",
+            "en": "Ibn Kathir: the heart rests in remembrance"
+          },
+          "arabic_original": "وتطمئن قلوبهم بذكر الله",
+          "translation": {
+            "ml": "സത്യവിശ്വാസികൾ അല്ലാഹുവിനെ സ്മരിക്കുമ്പോൾ ഹൃദയം അവന്റെ സമീപം ശാന്തമാകുന്നതായി ഇബ്നു കസീർ പറയുന്നു. ഇവിടെ പ്രത്യേകം 1,132 തവണ «അൽ-മുഅ്മിൻ» എന്ന നാമം ഓതണമെന്ന വിധിയില്ല.",
+            "en": "Ibn Kathir interprets remembrance as bringing hearts to repose and reliance upon Allah. The verse does not impose the separate historical 1,132 recitation count."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 13:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya28.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-17-24-55-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തൗഹീദിനും സൽപ്രവൃത്തിക്കും അനുബന്ധമായ സമൂഹസുരക്ഷ",
+            "en": "Ibn Kathir: communal safety within faith and worship"
+          },
+          "arabic_original": "وليبدلنهم من بعد خوفهم أمنا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 24:55-ലെ ഭയത്തിനു ശേഷം സുരക്ഷ ലഭിക്കുന്ന വാഗ്ദാനത്തെ പ്രവാചകന്റെയും സഹാബികളുടെയും ചരിത്രത്തിലൂടെ വിശദീകരിക്കുന്നു. വിശ്വാസം, സൽപ്രവൃത്തി, പങ്കാളികളില്ലാത്ത ആരാധന എന്നിവ വചനം വ്യക്തമാക്കുന്ന നിബന്ധനകളാണ്.",
+            "en": "Ibn Kathir treats the promise of security after fear through the historical development of the early community, stressing belief, righteous conduct and worship without partners."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 24:55",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya55.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        },
+        {
+          "id": "encyclopedia-mumin-tafsir-18-106-4-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഭക്ഷണവും സുരക്ഷയും എന്ന ഇരട്ട അനുഗ്രഹം",
+            "en": "Ibn Kathir: provision and security are linked blessings"
+          },
+          "arabic_original": "وآمنهم من خوف",
+          "translation": {
+            "ml": "സൂറത്തു ഖുറൈശിന്റെ നാലാം ആയത്തിൽ വിശപ്പിൽനിന്നുള്ള ഉപജീവനവും ഭയത്തിൽനിന്നുള്ള സുരക്ഷയും അല്ലാഹുവിന്റെ കാരുണ്യപ്രവർത്തനങ്ങളായി വരുന്നു. «آمَنَهُم» ക്രിയയാണ്; 59:23-ലെ കൃത്യ നാമപദം അല്ല.",
+            "en": "In Quran 106:4 Allah is described as granting both food and security. Amanahum is the verb 'gave security,' not another occurrence of the Name al-Mu'min."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 106:4",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura106-aya4.html",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും വിശദീകരണത്തിന്റെ സംഗ്രഹവുമാണ്; ദീർഘ റിപ്പോർട്ടുകളുടെ സ്വതന്ത്ര സനദ് പരിശോധന പൂർത്തിയായിട്ടില്ലെങ്കിൽ സഹീഹ് എന്നു മുദ്രകുത്തുന്നില്ല.",
+            "en": "A short original Arabic quotation with a source-specific summary, not the complete commentary. Extra narratives require independent authenticity checks before being considered sound hadith."
+          }
+        }
+      ],
       "hadith": []
     }
   }
