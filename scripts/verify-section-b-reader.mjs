@@ -221,6 +221,57 @@ try {
   const fourNames = prophetic.entries.find(entry => entry.id === 'hadith-muslim-2713a');
   for (const id of ['PDF-HN-073','PDF-HN-074','PDF-HN-075','PDF-HN-076']) assert.ok(fourNames.name_ids.includes(id));
   console.log('PASS: 20 further sourced name chapters, 21 prophetic accounts, and complete 4+5+6-verse protection practices.');
+  // Next phase: first-pass Quran source coverage for a further 48 distinct headings.
+  const further = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBFurtherResearch.json', 'utf8'));
+  const furtherIds = Object.keys(further.profiles);
+  assert.equal(furtherIds.length, 48, 'Further research must include 48 headings.');
+  const allProfileIds = [...Object.keys(research), ...newIds, ...Object.keys(expanded), ...furtherIds];
+  assert.equal(new Set(allProfileIds).size, 100, 'Every research profile must be a distinct card: 20+12+20+48.');
+  assert.ok(allProfileIds.every(id => coveredIds.has(id)), 'Only approved Section B card IDs may be linked.');
+  const knownProfileKinds = new Set(['direct', 'descriptive', 'thematic', 'formula', 'variant']);
+  let furtherVerses = 0, furtherScholarly = 0;
+  for (const [id, profile] of Object.entries(further.profiles)) {
+    assert.equal(profile.name_id, id);
+    assert.ok(knownProfileKinds.has(profile.entry_kind), `Bad heading type: ${id}`);
+    assert.ok(profile.coverage.ml && profile.coverage.en, `Coverage limitations required: ${id}`);
+    assert.ok(profile.explanation.ml && profile.explanation.en);
+    assert.ok(profile.evidence.length > 0);
+    const itemIds = new Set();
+    for(const group of ['evidence', 'scholarly', 'topics']) for(const entry of (profile[group]||[])) {
+      assert.ok(!itemIds.has(entry.id), `Duplicate source record ${id}/${entry.id}`);
+      itemIds.add(entry.id);
+      assert.ok(entry.translation.ml && entry.translation.en);
+      assert.equal(entry.review_status, 'checked_against_digital_text');
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url), `Unexpected source address for ${id}/${entry.id}`);
+      if(group==='evidence'){assert.ok(entry.arabic_original.length > 10);furtherVerses++;}
+      if(group==='scholarly')furtherScholarly++;
+    }
+    for (const language of ['ml', 'en']) {
+      const html = render(null,id,language,{pdf_name_id:id});
+      assert.ok(html.includes(escape(profile.explanation[language])), `Missing intro ${id}/${language}`);
+      for(const group of ['evidence','scholarly'])for(const entry of profile[group]||[]){
+        assert.ok(html.includes(escape(entry.translation[language])), `Missing text ${id}/${entry.id}/${language}`);
+        assert.ok(html.includes(entry.source_url), `Missing source link ${id}/${entry.id}`);
+        if(entry.arabic_original) assert.ok(html.includes(escape(entry.arabic_original)), `Missing Arabic ${id}/${entry.id}`);
+      }
+    }
+  }
+  assert.equal(furtherVerses,55);
+  assert.equal(furtherScholarly,19);
+  assert.equal(topical.topics.length,23);
+  for(const id of ['quran-14-40-ibrahim-salah','quran-3-9-day-of-gathering','quran-2-156-calamity-remembrance','quran-18-39-garden-remembering','quran-71-10-nuh-istighfar']){
+    const x=topical.topics.find(e=>e.id===id);
+    assert.ok(x?.arabic_original && x?.count?.en && x?.source_url, `Missing new prayer details: ${id}`);
+    for (const name of x.name_ids) {
+      const html=render(null,name,'ml',{pdf_name_id:name});
+      assert.ok(html.includes(escape(x.arabic_original)), `Missing linked Quranic Arabic: ${name}/${id}`);
+    }
+  }
+  assert.ok(!further.profiles['PDF-HN-0170'].evidence[0].arabic_original.startsWith('بِسْمِ'), 'Surah 4:1 must not include the pre-verse basmala in its verse text.');
+  assert.equal(further.profiles['PDF-HN-058'].evidence[0].claim_kind,'theme_not_independent_name');
+  assert.equal(further.profiles['PDF-HN-060'].evidence[0].claim_kind,'theme_not_independent_name');
+  assert.equal(further.profiles['PDF-HN-139'].entry_kind,'formula');
+  console.log('PASS: 48 further headings (100 unique profiles total), 55 Quran links, 19 attributed tafsir accounts and 5 linked Quranic practice explanations.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
