@@ -1,0 +1,302 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "കാർഡ് 006 (അൽ-മുഅ്മിൻ) — ഖുർആനിലെ നേരിട്ടുള്ള നാമം 59:23 പഴയ കാർഡിലുണ്ട്. പുതിയ പൂർണ ആയത്തുകൾ വിശ്വാസം, സുരക്ഷ, അഭയം, നഗരസംരക്ഷണം, ഉത്തരവാദിത്തം എന്നിവ വിശദീകരിക്കുന്നു. പുരാതന ശംസ് ഗ്രന്ഥത്തിലെ 1,132 തവണ ഓതൽ അവകാശവാദം അതതു സ്രോതസ്സോടെ മുമ്പേ സൂക്ഷിച്ചിരിക്കുന്നു; ശരീഅത്ത് നിർബന്ധമോ സുരക്ഷാ ഉറപ്പോ അല്ല. എല്ലാ ചരിത്രഗ്രന്ഥങ്ങളുടെയും പരിശോധന പൂർത്തിയായിട്ടില്ല.",
+    "en": "Card 006 (al-Mu'min): the original exact Divine Name in Quran 59:23 remains in the base card. This overlay examines faith, safety, refuge, sanctuary and social responsibility through complete Quranic passages. The earlier source-labelled historical Shams claim of 1,132 recitations is not Quran or authenticated Sunnah and is not a safety guarantee. Full manuscript research remains incomplete."
+  },
+  "profiles": {
+    "PDF-HN-006": {
+      "name_id": "PDF-HN-006",
+      "evidence": [
+        {
+          "id": "encyclopedia-mumin-quran-2-125",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 2:125",
+            "en": "Al-Mu'min — Quranic security/faith context 2:125"
+          },
+          "arabic_original": "وَإِذْ جَعَلْنَا الْبَيْتَ مَثَابَةً لِّلنَّاسِ وَأَمْنًا وَاتَّخِذُوا مِن مَّقَامِ إِبْرَاهِيمَ مُصَلًّى ۖ وَعَهِدْنَا إِلَىٰ إِبْرَاهِيمَ وَإِسْمَاعِيلَ أَن طَهِّرَا بَيْتِيَ لِلطَّائِفِينَ وَالْعَاكِفِينَ وَالرُّكَّعِ السُّجُودِ",
+          "verse_meaning": {
+            "ml": "കഅ്ബയെ ജനങ്ങൾ വീണ്ടും വീണ്ടും വന്നുചേരുന്ന കേന്ദ്രവും സുരക്ഷിതസ്ഥലവും ആക്കിയതും, ഇബ്രാഹീമിന്റെ മഖാമിൽ നമസ്കരിക്കാനും ഭവനം ശുദ്ധീകരിക്കാനും കല്പിച്ചതുമാണ് വചനം.",
+            "en": "The House was made a place to which people return and a sanctuary of security; Ibrahim's standing place and care of the House are also mentioned."
+          },
+          "translation": {
+            "ml": "«أَمْنًا» മക്കയുടെ ഹറം സുരക്ഷയെ സൂചിപ്പിക്കുന്നു; അല്ലാഹുവിന്റെ «الْمُؤْمِنُ» എന്ന നേരിട്ടുള്ള നാമമല്ല. ഇബ്നു കസീർ ഹറത്തിന്റെ ആദരവും അതിന്റെ നിയമപരമായ സുരക്ഷാ സംവിധാനവും വിശദീകരിക്കുന്നു.",
+            "en": "Amnan describes sanctuary security, not the written Divine Name al-Mu'min. Ibn Kathir discusses the sanctity of the House and protection in legal and historical context."
+          },
+          "source_reference": "Quran 2:125 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya125.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sanctuary_security",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-2-126",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 2:126",
+            "en": "Al-Mu'min — Quranic security/faith context 2:126"
+          },
+          "arabic_original": "وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ اجْعَلْ هَٰذَا بَلَدًا آمِنًا وَارْزُقْ أَهْلَهُ مِنَ الثَّمَرَاتِ مَنْ آمَنَ مِنْهُم بِاللَّهِ وَالْيَوْمِ الْآخِرِ ۖ قَالَ وَمَن كَفَرَ فَأُمَتِّعُهُ قَلِيلًا ثُمَّ أَضْطَرُّهُ إِلَىٰ عَذَابِ النَّارِ ۖ وَبِئْسَ الْمَصِيرُ",
+          "verse_meaning": {
+            "ml": "ഇബ്രാഹീം തന്റെ നഗരത്തിന് സുരക്ഷയും വിശ്വാസികൾക്ക് ഫലവർഗങ്ങളാൽ ഉപജീവനവും അപേക്ഷിച്ചു. സത്യനിഷേധിക്കും കുറച്ചുകാലം ഉപജീവനം ലഭിക്കുമെന്ന മറുപടിയും ആയത്തിലുണ്ട്.",
+            "en": "Ibrahim prayed for a secure city and provision for its believing people; the response also describes limited worldly provision for disbelievers."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 2:126-ലെ പ്രാർത്ഥനയും 14:35-ലെ പ്രാർത്ഥനയും വ്യത്യസ്ത സന്ദർഭങ്ങളിലായിരിക്കാൻ സാധ്യത ചർച്ച ചെയ്യുന്നു. സുരക്ഷിത നഗരത്തിനുള്ള ദുആയാണിത്; പ്രത്യേക അൽ-മുഅ്മിൻ ജപസംഖ്യയല്ല.",
+            "en": "Ibn Kathir discusses the possible difference in timing between Ibrahim's requests here and in 14:35. This is a city-security prayer, not a fixed-count Divine-Name litany."
+          },
+          "source_reference": "Quran 2:126 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya126.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "ibrahim_city_prayer",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-3-97",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 3:97",
+            "en": "Al-Mu'min — Quranic security/faith context 3:97"
+          },
+          "arabic_original": "فِيهِ آيَاتٌ بَيِّنَاتٌ مَّقَامُ إِبْرَاهِيمَ ۖ وَمَن دَخَلَهُ كَانَ آمِنًا ۗ وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا ۚ وَمَن كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ عَنِ الْعَالَمِينَ",
+          "verse_meaning": {
+            "ml": "കഅ്ബയിലെ തെളിവുകളും മഖാമു ഇബ്രാഹീമും അതിൽ പ്രവേശിക്കുന്നവരുടെ സുരക്ഷയും കഴിവുള്ളവർക്ക് ഹജ്ജ് ബാധ്യതയും ആയത്തിൽ പ്രസ്താവിക്കുന്നു.",
+            "en": "The verse mentions clear signs at the House, Ibrahim's standing place, security for entrants, and the obligation of Hajj for those able to make the journey."
+          },
+          "translation": {
+            "ml": "«آمِنًا» ഹറത്തിന്റെ സുരക്ഷയെക്കുറിച്ചാണ്; ഈ ചരിത്ര-നിയമവിവരണത്തെ ഏതു സ്ഥലത്തും അപകടസാധ്യത ഇല്ലാതാക്കുന്ന മന്ത്രഫലമാക്കി മാറ്റരുത്.",
+            "en": "Aminan refers to the sanctuary's protected status. It must not be reinterpreted as an amulet conferring immunity in any dangerous setting."
+          },
+          "source_reference": "Quran 3:97 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya97.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sanctuary_security",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-4-83",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 4:83",
+            "en": "Al-Mu'min — Quranic security/faith context 4:83"
+          },
+          "arabic_original": "وَإِذَا جَاءَهُمْ أَمْرٌ مِّنَ الْأَمْنِ أَوِ الْخَوْفِ أَذَاعُوا بِهِ ۖ وَلَوْ رَدُّوهُ إِلَى الرَّسُولِ وَإِلَىٰ أُولِي الْأَمْرِ مِنْهُمْ لَعَلِمَهُ الَّذِينَ يَسْتَنبِطُونَهُ مِنْهُمْ ۗ وَلَوْلَا فَضْلُ اللَّهِ عَلَيْكُمْ وَرَحْمَتُهُ لَاتَّبَعْتُمُ الشَّيْطَانَ إِلَّا قَلِيلًا",
+          "verse_meaning": {
+            "ml": "സുരക്ഷയെയോ ഭയത്തെയോ സംബന്ധിച്ച വാർത്തകൾ കേട്ടാൽ ഉടൻ പ്രചരിപ്പിക്കാതെ ദൂതനിലേക്കും ബന്ധപ്പെട്ട ഉത്തരവാദിത്വമുള്ളവരിലേക്കും തിരിച്ചുവിടണം എന്ന് പഠിപ്പിക്കുന്നു.",
+            "en": "News about safety or fear should not be broadcast impulsively; it should be referred to the Messenger and responsible people capable of sound assessment."
+          },
+          "translation": {
+            "ml": "«الْأَمْنِ» വാർത്തയുടെ വിഷയമായ സുരക്ഷയാണ്; അല്ലാഹുവിന്റെ നാമമല്ല. ഇബ്നു കസീർ അനിയന്ത്രിതമായി കേട്ട വാർത്ത പടർത്തുന്നതിനെ വിമർശിക്കുന്നു.",
+            "en": "Al-amn here is a topic of public news, not Allah's name. Ibn Kathir discusses the danger of spreading reports without verification."
+          },
+          "source_reference": "Quran 4:83 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya83.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "responsible_information",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-6-81",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 6:81",
+            "en": "Al-Mu'min — Quranic security/faith context 6:81"
+          },
+          "arabic_original": "وَكَيْفَ أَخَافُ مَا أَشْرَكْتُمْ وَلَا تَخَافُونَ أَنَّكُمْ أَشْرَكْتُم بِاللَّهِ مَا لَمْ يُنَزِّلْ بِهِ عَلَيْكُمْ سُلْطَانًا ۚ فَأَيُّ الْفَرِيقَيْنِ أَحَقُّ بِالْأَمْنِ ۖ إِن كُنتُمْ تَعْلَمُونَ",
+          "verse_meaning": {
+            "ml": "ഇബ്രാഹീം വിഗ്രഹങ്ങളെ ഭയപ്പെടേണ്ടതില്ലെന്നും തെളിവില്ലാതെ അല്ലാഹുവിന് പങ്കാളികളെ ആരോപിക്കുന്നവരാണ് യഥാർത്ഥത്തിൽ ആശങ്കപ്പെടേണ്ടതെന്നും ചോദിക്കുന്നു: ഏത് കൂട്ടത്തിനാണ് സുരക്ഷയ്ക്ക് കൂടുതൽ അവകാശം?",
+            "en": "Ibrahim contrasts fear of idols with the ungrounded attribution of partners to Allah, asking which side is more deserving of safety."
+          },
+          "translation": {
+            "ml": "ഇത് ഇബ്രാഹീമിന്റെ തൗഹീദ് വാദത്തിന്റെ ഭാഗമാണ്; «الْأَمْنِ» സമാധാനമെന്ന പദമാണ്, നാമത്തിന്റെ ഒറ്റയ്ക്ക് ആവർത്തനമല്ല.",
+            "en": "Part of Ibrahim's monotheistic argument, al-amn means security, not an isolated repetition of the Divine Name."
+          },
+          "source_reference": "Quran 6:81 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya81.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "tawhid_and_security",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-6-82",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 6:82",
+            "en": "Al-Mu'min — Quranic security/faith context 6:82"
+          },
+          "arabic_original": "الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُم بِظُلْمٍ أُولَٰئِكَ لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ",
+          "verse_meaning": {
+            "ml": "വിശ്വസിക്കുകയും തങ്ങളുടെ വിശ്വാസത്തെ അനീതികൊണ്ട് കലർത്താതിരിക്കുകയും ചെയ്തവർക്കാണ് സുരക്ഷയും മാർഗദർശനവും ഉള്ളത്.",
+            "en": "Those who believe and do not mix their faith with wrongdoing have security and guidance."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «ظُلْمٍ» എന്നതിന്റെ സന്ദർഭത്തിൽ നബി ﷺ അത് ശിർക്കാണെന്നു വിശദീകരിച്ച സഹീഹ് റിപ്പോർട്ട് ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. ഏതു ചെറിയ പിഴവുമില്ലാത്തവർക്ക് മാത്രം വിശ്വാസസുരക്ഷയെന്ന തെറ്റായ വ്യാഖ്യാനം ഒഴിവാക്കണം.",
+            "en": "Ibn Kathir transmits the authentic Prophetic clarification that the zulm here concerns shirk; do not infer that every ordinary fault strips a believer of all promised security."
+          },
+          "source_reference": "Quran 6:82 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya82.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "security_of_tawhid",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-8-11",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 8:11",
+            "en": "Al-Mu'min — Quranic security/faith context 8:11"
+          },
+          "arabic_original": "إِذْ يُغَشِّيكُمُ النُّعَاسَ أَمَنَةً مِّنْهُ وَيُنَزِّلُ عَلَيْكُم مِّنَ السَّمَاءِ مَاءً لِّيُطَهِّرَكُم بِهِ وَيُذْهِبَ عَنكُمْ رِجْزَ الشَّيْطَانِ وَلِيَرْبِطَ عَلَىٰ قُلُوبِكُمْ وَيُثَبِّتَ بِهِ الْأَقْدَامَ",
+          "verse_meaning": {
+            "ml": "ചരിത്രപരമായ ബദ്റ് സാഹചര്യത്തിൽ അല്ലാഹു ഉറക്കച്ചുളിവിലൂടെ ആശ്വാസവും മഴയിലൂടെ ശുദ്ധിയും ഹൃദയങ്ങൾക്ക് സ്ഥിരതയും നൽകിയതായി പറയുന്നു.",
+            "en": "In the historical setting of Badr, drowsiness brought reassurance and rain served purification and strengthened hearts and footing."
+          },
+          "translation": {
+            "ml": "«أَمَنَةً» ഒരു പ്രത്യേക ചരിത്രത്തിലെ ആശ്വാസമാണ്; ഇന്നത്തെ യുദ്ധസാഹചര്യങ്ങളിൽ സുരക്ഷ ഉറപ്പിക്കുന്ന രഹസ്യമന്ത്രമായി ഉപയോഗിക്കരുത്.",
+            "en": "Amanatan describes reassurance in a particular historical battle, not a universal guarantee of physical immunity from harm."
+          },
+          "source_reference": "Quran 8:11 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya11.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "historical_reassurance",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-9-6",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 9:6",
+            "en": "Al-Mu'min — Quranic security/faith context 9:6"
+          },
+          "arabic_original": "وَإِنْ أَحَدٌ مِّنَ الْمُشْرِكِينَ اسْتَجَارَكَ فَأَجِرْهُ حَتَّىٰ يَسْمَعَ كَلَامَ اللَّهِ ثُمَّ أَبْلِغْهُ مَأْمَنَهُ ۚ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْلَمُونَ",
+          "verse_meaning": {
+            "ml": "ശത്രുപക്ഷത്തിലെ ഒരാൾ അഭയം തേടിയാൽ അവന് അഭയം നൽകി അല്ലാഹുവിന്റെ വചനം കേൾക്കാൻ അവസരം നൽകുകയും പിന്നീട് സുരക്ഷിതമായ സ്ഥലത്ത് എത്തിക്കുകയും ചെയ്യണമെന്ന് പറയുന്നു.",
+            "en": "If an opponent seeks protection, grant refuge, allow him to hear Allah's speech, then escort him to a place of safety."
+          },
+          "translation": {
+            "ml": "ഇതിലെ «مَأْمَنَهُ» യഥാർത്ഥ സുരക്ഷിതസ്ഥലത്തെയാണ് സൂചിപ്പിക്കുന്നത്. മുസ്‌ലിംകളോട് ആശ്രയം തേടുന്നവരുടെ ജീവസംരക്ഷണത്തെക്കുറിച്ചുള്ള നിയമസന്ദർഭമാണിത്.",
+            "en": "Ma'manahu means his place of safety; the verse supplies concrete responsibilities toward persons seeking asylum, not an occult charm."
+          },
+          "source_reference": "Quran 9:6 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "protection_for_asylum_seekers",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-10-62",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 10:62",
+            "en": "Al-Mu'min — Quranic security/faith context 10:62"
+          },
+          "arabic_original": "أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹുവിന്റെ ഔലിയാക്കൾക്ക് ഭയമില്ല, അവർ ദുഃഖിക്കുകയുമില്ല.",
+            "en": "Indeed, Allah's close servants shall have no fear and shall not grieve."
+          },
+          "translation": {
+            "ml": "തുടർന്നുള്ള വചനം അവർ വിശ്വസിക്കുകയും തഖ്‌വ പുലർത്തുകയും ചെയ്യുന്നവരാണെന്ന് വ്യക്തമാക്കുന്നു. ഇബ്നു കസീർ ചില അധിക നിവേദനങ്ങളുടെ സനദ് മുറിഞ്ഞതാണെന്ന് സൂചിപ്പിക്കുന്നു.",
+            "en": "The next verse qualifies them by faith and God-consciousness. Ibn Kathir cautions about interrupted transmission for a supplementary narration."
+          },
+          "source_reference": "Quran 10:62 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya62.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "friends_of_god",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-13-28",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 13:28",
+            "en": "Al-Mu'min — Quranic security/faith context 13:28"
+          },
+          "arabic_original": "الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+          "verse_meaning": {
+            "ml": "വിശ്വസിച്ചവരുടെ ഹൃദയങ്ങൾ അല്ലാഹുവിന്റെ സ്മരണയിൽ ശാന്തമാകുന്നു; അവന്റെ സ്മരണയിലൂടെയാണ് ഹൃദയങ്ങൾക്ക് സമാധാനം ലഭിക്കുന്നത്.",
+            "en": "Believers' hearts find repose in remembrance of Allah; in the remembrance of Allah hearts find tranquility."
+          },
+          "translation": {
+            "ml": "ഈ ആയത്ത് പൊതുവായ ദിക്‌റിന്റെ ആത്മീയശാന്തിയെപ്പറ്റിയാണ്; «الْمُؤْمِنُ» എന്ന ഒറ്റ നാമം കൃത്യമായ എണ്ണം ഓതാനുള്ള കല്പനയല്ല.",
+            "en": "This concerns tranquility through remembrance generally, not a numerical prescription for the isolated Name al-Mu'min."
+          },
+          "source_reference": "Quran 13:28 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "tranquility_of_remembrance",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-mumin-quran-14-35",
+          "title": {
+            "ml": "അൽ-മുഅ്മിൻ — ഖുർആനിലെ സുരക്ഷ/വിശ്വാസ സന്ദർഭം 14:35",
+            "en": "Al-Mu'min — Quranic security/faith context 14:35"
+          },
+          "arabic_original": "وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا وَاجْنُبْنِي وَبَنِيَّ أَن نَّعْبُدَ الْأَصْنَامَ",
+          "verse_meaning": {
+            "ml": "ഇബ്രാഹീം പ്രാർത്ഥിച്ചു: ഈ നഗരത്തെ സുരക്ഷിതമാക്കുകയും എന്നെയും എന്റെ സന്തതികളെയും വിഗ്രഹാരാധനയിൽനിന്ന് അകറ്റുകയും ചെയ്യണമേ.",
+            "en": "Ibrahim prayed: Make this city secure, and keep me and my children away from worshipping idols."
+          },
+          "translation": {
+            "ml": "മക്കയുടെ സുരക്ഷയും തൗഹീദും ഒരുമിച്ച് വരുന്ന ഇബ്രാഹീമിന്റെ പ്രാർത്ഥനയാണ്. 2:126-ലെ സമാന പാഠവുമായി സ്ഥലം/കാലസന്ദർഭ വ്യത്യാസം തഫ്സീറിൽ ചർച്ച ചെയ്യുന്നു.",
+            "en": "Ibrahim's prayer connects safety of Makkah with monotheism. Ibn Kathir considers its relation to the related but distinct prayer in 2:126."
+          },
+          "source_reference": "Quran 14:35 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya35.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "ibrahim_city_prayer",
+          "relationship": "thematic_not_exact_divine_name",
+          "source_scope": {
+            "ml": "ഖുർആൻ 59:23-ലെ «الْمُؤْمِنُ» ദൈവനാമം ഈ കൂട്ടത്തിൽ വീണ്ടും പ്രസിദ്ധീകരിക്കുന്നില്ല. താഴെയുള്ളത് സുരക്ഷ, ഇമാൻ, ആശ്വാസം, മനുഷ്യരുടെ സംരക്ഷണം തുടങ്ങിയ ആശയങ്ങളുടെ പൂർണ ഖുർആൻ സന്ദർഭങ്ങളാണ്; ആയത്തിൽ പേരിന്റെ നേരിട്ടുള്ള പ്രയോഗമില്ല. ഗ്രന്ഥത്തിലെ ചരിത്രപരമായ 1,132 എന്ന എണ്ണം ഈ ആയത്തുകളുടെയോ ഹദീസിന്റെയോ കല്പനയല്ല.",
+            "en": "The explicit Divine Name al-Mu'min in Quran 59:23 is not repeated as a new verse. These are complete contextual Quran passages on security, faith, reassurance and protection of people, NOT exact additional occurrences of the Name. The historical 1,132 count is not a Quranic or authenticated hadith rule."
+          },
+          "verse_count": 1
+        }
+      ],
+      "scholarly": [],
+      "hadith": []
+    }
+  }
+}
