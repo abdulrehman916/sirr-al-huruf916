@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് 30 അറബി പാഠഭാഗങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 15. ആദ്യം ഖുർആനിൽ നേരിട്ട് വരുന്നത് ക്രിയയാണോ നാമമാണോ എന്ന വ്യത്യാസം, ദാനം/നീതി/അന്ത്യവിധി പോലെയുള്ള സന്ദർഭം, ഗുരുതരമായ മതപരമായ അവകാശവാദങ്ങളിലെ സ്രോതസ്സിന്റെ പരിധി എന്നിവ രേഖപ്പെടുത്തി. ഗ്രന്ഥത്തിലെ മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ ഇനിയും സമഗ്രമായി പരിശോധിക്കണം.",
-    "en": "Eighth source-based deep-study batch: 15 previously unstudied card IDs, 30 short verbatim Arabic classical commentary excerpts (15 Ibn Kathir and 15 al-Tabari), individually sourced. Distinguishes Quran's exact verbs and grammatical forms from later listed Names; highlights justice, charity, accountability and limits of unauthenticated occult/numerical claims. Historical manuscripts and every practice are still pending comprehensive review."
+    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് 30 അറബി പാഠഭാഗങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 15. ആദ്യം ഖുർആനിൽ നേരിട്ട് വരുന്നത് ക്രിയയാണോ നാമമാണോ എന്ന വ്യത്യാസം, ദാനം/നീതി/അന്ത്യവിധി പോലെയുള്ള സന്ദർഭം, ഗുരുതരമായ മതപരമായ അവകാശവാദങ്ങളിലെ സ്രോതസ്സിന്റെ പരിധി എന്നിവ രേഖപ്പെടുത്തി. ഗ്രന്ഥത്തിലെ മുഴുവൻ ഖവാസ്സ്/കളങ്ങൾ ഇനിയും സമഗ്രമായി പരിശോധിക്കണം. ഭാഗിക പാഠം മാത്രമുണ്ടായിരുന്ന 2:245 രണ്ട് ബന്ധപ്പെട്ട കാർഡുകളിലും, 6:114 അൽ-ഹകം കാർഡിലും പൂർണ അറബി വചനവും അർഥവും ചേർത്തിട്ടുണ്ട്.",
+    "en": "Eighth source-based deep-study batch: 15 previously unstudied card IDs, 30 short verbatim Arabic classical commentary excerpts (15 Ibn Kathir and 15 al-Tabari), individually sourced. Distinguishes Quran's exact verbs and grammatical forms from later listed Names; highlights justice, charity, accountability and limits of unauthenticated occult/numerical claims. Historical manuscripts and every practice are still pending comprehensive review. Complete Quran 2:245 is added to both separately cataloged Qabid and Basit cards, and the complete Quran 6:114 to Hakam, replacing excerpts with original Arabic and bilingual meanings."
   },
   "profiles": {
     "PDF-HN-0154": {
@@ -283,7 +283,28 @@
     },
     "PDF-HN-019": {
       "name_id": "PDF-HN-019",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-viii-full-019-2-245",
+          "title": {
+            "ml": "ഖുർആൻ 2:245 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:245 — complete verse"
+          },
+          "arabic_original": "مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً ۚ وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+          "translation": {
+            "ml": "അല്ലാഹുവിനു നല്ലൊരു കടം നൽകുന്നവൻ ആരുണ്ട്? അല്ലാഹു അതിനെ അവനു അനേകമടങ്ങായി വർധിപ്പിച്ചു നൽകും. അവൻ ഉപജീവനം ചുരുക്കുകയും വികസിപ്പിക്കുകയും ചെയ്യുന്നു; നിങ്ങൾ അവനിലേക്കാണ് മടങ്ങുക.",
+            "en": "Who will lend Allah a goodly loan so that He multiplies it many times? Allah restricts and expands provision, and to Him you will be returned."
+          },
+          "source_reference": "Quran 2:245 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«يَقْبِضُ» ചുരുക്കുന്നു എന്ന ക്രിയയാണ്; ഈ പൂർണ ആയത്ത് ദാനത്തെ പ്രോത്സാഹിപ്പിക്കുന്നു. «الْقَابِضُ» എന്ന അതേ സ്വതന്ത്ര നാമരൂപം വചനത്തിൽ ഇല്ല.",
+            "en": "The complete verse urges charitable spending; yaqbidu is an active verb, not an isolated definite name al-Qabid."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-viii-019-katheer-2-245",
@@ -329,7 +350,28 @@
     },
     "PDF-HN-020": {
       "name_id": "PDF-HN-020",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-viii-full-020-2-245",
+          "title": {
+            "ml": "ഖുർആൻ 2:245 — പൂർണ ആയത്ത്",
+            "en": "Quran 2:245 — complete verse"
+          },
+          "arabic_original": "مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً ۚ وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+          "translation": {
+            "ml": "അല്ലാഹുവിനു നല്ലൊരു കടം നൽകുന്നവൻ ആരുണ്ട്? അല്ലാഹു അതിനെ അവനു അനേകമടങ്ങായി വർധിപ്പിച്ചു നൽകും. അവൻ ഉപജീവനം ചുരുക്കുകയും വികസിപ്പിക്കുകയും ചെയ്യുന്നു; നിങ്ങൾ അവനിലേക്കാണ് മടങ്ങുക.",
+            "en": "Who will lend Allah a goodly loan so that He multiplies it many times? Allah restricts and expands provision, and to Him you will be returned."
+          },
+          "source_reference": "Quran 2:245 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«يَبْسُطُ» വിശാലമാക്കുന്നു എന്ന ക്രിയയാണ്; ദാനം, ഉപജീവനം എന്നിവയാണ് സന്ദർഭം. «الْبَاسِطُ» എന്ന സ്വതന്ത്ര നാമരൂപം നേരിട്ട് ആയത്തിൽ ഇല്ല.",
+            "en": "The Quranic text says yabsutu, a verb meaning 'expands'; it is not the independent nominal form al-Basit."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-viii-020-katheer-2-245",
@@ -605,7 +647,28 @@
     },
     "PDF-HN-027": {
       "name_id": "PDF-HN-027",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-viii-full-027-6-114",
+          "title": {
+            "ml": "ഖുർആൻ 6:114 — പൂർണ ആയത്ത്",
+            "en": "Quran 6:114 — complete verse"
+          },
+          "arabic_original": "أَفَغَيْرَ اللَّهِ أَبْتَغِي حَكَمًا وَهُوَ الَّذِي أَنزَلَ إِلَيْكُمُ الْكِتَابَ مُفَصَّلًا ۚ وَالَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْلَمُونَ أَنَّهُ مُنَزَّلٌ مِّن رَّبِّكَ بِالْحَقِّ ۖ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാതെ വേറൊരു വിധികർത്താവിനെ ഞാൻ തേടണമോ? വ്യക്തമായി വിശദീകരിച്ച ഗ്രന്ഥം നിങ്ങൾക്കിറക്കിത്തന്നത് അവനാണ്. ഗ്രന്ഥം ലഭിച്ചവർ ഇത് നിന്റെ രക്ഷിതാവിൽനിന്നുള്ള സത്യമാണെന്ന് തിരിച്ചറിയുന്നു. അതിനാൽ സംശയിക്കുന്നവരിൽ ഉൾപ്പെടരുത്.",
+            "en": "Should I seek a judge other than Allah, when He sent down the Book made clear? Those given Scripture know it has come from your Lord in truth, so do not be among those who doubt."
+          },
+          "source_reference": "Quran 6:114 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya114.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "«حَكَمًا» എന്ന അനിശ്ചിത വിഭക്തിരൂപമാണ് ഇവിടെ; «الْحَكَمُ» എന്ന കൃത്യമായ നാമരൂപമല്ല. നീതിയുള്ള വിധിയും വഹ്‌യിന്റെ സത്യവുമാണ് സന്ദർഭം.",
+            "en": "The exact verse says hakaman, grammatically indefinite, rather than a standalone definite al-Hakam; context is judging by revelation and truth."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-viii-027-katheer-6-114",
