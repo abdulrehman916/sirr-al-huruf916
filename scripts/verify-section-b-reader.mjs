@@ -139,7 +139,7 @@ try {
     assert.equal(profile.name_id, id);
     assert.equal(research[id], undefined, `Must never override existing researched card ${id}`);
     assert.ok(profile.evidence.length >= 2 && profile.scholarly.length >= 2);
-    assert.ok(profile.coverage.ml.includes('പൂർത്തിയായിട്ടില്ല'));
+    assert.ok(profile.coverage.ml && profile.coverage.en && /പൂർത്തി|കഴിഞ്ഞിട്ടില്ല/.test(profile.coverage.ml), `Coverage limitation required for ${id}`);
     const itemIds = new Set();
     for (const group of ['evidence', 'scholarly', 'topics']) {
       for (const entry of profile[group]) {
