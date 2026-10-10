@@ -784,13 +784,13 @@ try {
   assert.equal(new Set(researchedIX).size,150,'Ninth batch must not duplicate any of the previous 135 IDs.');
   assert.ok(researchedIX.every(id=>coveredIds.has(id)));
   let ninthNotes=0,ninthKathir=0,ninthTabari=0,ninthVerses=0;
-  const sourceIds=new Set();
+  const ninthSourceIds=new Set();
   for(const [id,p] of Object.entries(depthIX.profiles)){
     assert.equal(p.name_id,id);
     assert.ok(p.scholarly.length>=2,'At least two independently attributed tafsir notes per card.');
     for(const record of [...p.scholarly,...p.evidence]){
-      assert.ok(!sourceIds.has(record.id),`Duplicate IX record ID ${record.id}`);
-      sourceIds.add(record.id);
+      assert.ok(!ninthSourceIds.has(record.id),`Duplicate IX record ID ${record.id}`);
+      ninthSourceIds.add(record.id);
       assert.equal(record.review_status,'checked_against_digital_text');
       assert.ok(record.arabic_original?.length>=10,'Arabic original must not be empty.');
       assert.ok(record.translation?.ml && record.translation?.en);
