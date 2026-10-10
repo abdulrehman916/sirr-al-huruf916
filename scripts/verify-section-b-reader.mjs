@@ -887,9 +887,9 @@ try {
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
       const html = render(chapters[id], id, lang, { pdf_name_id: id });
-      const groups = [...html.matchAll(/data-section-b-group="([^"]+)" data-section-b-count="(\\d+)"/g)];
+      const groups = [...html.matchAll(/data-section-b-group="([^"]+)" data-section-b-count="([0-9]+)"/g)];
       const getCount = key => {
-        const match = html.match(new RegExp('data-testid="section-b-' + key + '-count">(\\\\d+)<\\\\/span>'));
+        const match = html.match(new RegExp('data-testid="section-b-' + key + '-count">([0-9]+)</span>'));
         assert.ok(match, 'Missing ' + key + ' counter on ' + id + ' / ' + lang);
         return Number(match[1]);
       };
