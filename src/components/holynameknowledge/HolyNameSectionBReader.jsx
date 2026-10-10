@@ -22,6 +22,7 @@ import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import shamsCardBridge from '@/data/holyNamesShamsCardBridge.json';
 import shamsEditionVariants from '@/data/holyNamesShamsEditionVariants.json';
 import shamsCountAudit from '@/data/holyNamesShamsCountAudit.json';
+import encyclopediaDepth from '@/data/holyNamesSectionBEncyclopediaI.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
 import { sectionBReading } from '@/lib/holyNames/sectionBReading';
@@ -31,7 +32,7 @@ import { sectionBExplanation } from '@/lib/holyNames/sectionBMeanings';
 export function sectionBEntrySearchText(entry, language, chapterTitle = null) {
   const t = value => value?.[language] || '';
   return [
-    t(entry.title), t(entry.translation), entry.arabic_original,
+    t(entry.title), t(entry.translation), t(entry.verse_meaning), t(entry.translation_note), entry.arabic_original,
     entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation),
     t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference,
     ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`),
@@ -123,6 +124,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const deepProfileVIII = tafsirDepthVIII.profiles?.[nameId]?.name_id === nameId ? tafsirDepthVIII.profiles[nameId] : null;
   const deepProfileIX = tafsirDepthIX.profiles?.[nameId]?.name_id === nameId ? tafsirDepthIX.profiles[nameId] : null;
   const deepProfileX = tafsirDepthX.profiles?.[nameId]?.name_id === nameId ? tafsirDepthX.profiles[nameId] : null;
+  const encyclopediaProfile = encyclopediaDepth.profiles?.[nameId]?.name_id === nameId ? encyclopediaDepth.profiles[nameId] : null;
   const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedQuranDuasII = (topicalDuasII.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedQuranDuasIII = (topicalDuasIII.topics || []).filter(entry => entry.name_ids?.includes(nameId));
@@ -168,10 +170,10 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     }).filter(Boolean);
   if (!profile && !checkedChapter && (!card || card.pdf_name_id !== nameId)) return null;
   const groups = [
-    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...(deepProfileVI?.evidence || []), ...(deepProfileVII?.evidence || []), ...(deepProfileVIII?.evidence || []), ...(deepProfileIX?.evidence || []), ...(deepProfileX?.evidence || []), ...runtime.evidence] },
+    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...(deepProfileVI?.evidence || []), ...(deepProfileVII?.evidence || []), ...(deepProfileVIII?.evidence || []), ...(deepProfileIX?.evidence || []), ...(deepProfileX?.evidence || []), ...(encyclopediaProfile?.evidence || []), ...runtime.evidence] },
     { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: profile?.hadith || [] },
     { key: 'prophetic', title: ml ? 'നബിവചന ദിക്ർ / ദുആ — എണ്ണവും സമയവും ക്രമവും' : 'Prophetic dhikr and supplications — count, timing and procedure', items: linkedPropheticDhikr },
-    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...(deepProfileVII?.scholarly || []), ...(deepProfileVIII?.scholarly || []), ...(deepProfileIX?.scholarly || []), ...(deepProfileX?.scholarly || []), ...runtime.scholarly] },
+    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...(deepProfileVII?.scholarly || []), ...(deepProfileVIII?.scholarly || []), ...(deepProfileIX?.scholarly || []), ...(deepProfileX?.scholarly || []), ...(encyclopediaProfile?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...linkedQuranDuasII, ...linkedQuranDuasIII, ...runtime.topics] },
     { key: 'shams', title: ml ? 'ശംസ് അൽമആരിഫ് — ഖവാസ്സ്: മൂല അറബി, എണ്ണം, സമയം, ഗ്രന്ഥവിവരണം' : 'Shams al-Maarif — historical khawass: Arabic, counts, timings and book account', items: linkedShamsAccounts },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
@@ -186,6 +188,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const totalSourceEntries = groups.filter(group => group.key !== 'pending').reduce((sum, group) => sum + group.items.length, 0);
   return <section className={`space-y-5 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="section-b-reader">
     <h2 className="text-lg text-yellow-200 font-semibold">{ml ? 'നാമത്തെക്കുറിച്ചുള്ള വിശദമായ വായന' : 'Detailed reading about this name'}</h2>
+    {encyclopediaProfile && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepth.scope)}</p>}
     <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
     {card && <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-white/70" aria-label={ml ? 'കാർഡ് ഉറവിട സംഗ്രഹം' : 'Card source summary'}>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'സ്രോതസ്സ് രേഖകൾ' : 'Source entries'}</span><span data-testid="section-b-source-count">{totalSourceEntries}</span></div>

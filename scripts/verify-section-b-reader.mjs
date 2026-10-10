@@ -1069,6 +1069,63 @@ try {
     }
   }
   console.log('PASS: Arabic source variants, bilingual variant notes, and five historical recitation/inscription counts are searchable.');
+
+  // First encyclopedia-depth card: thirty full Quranic passages, 33 verses and fifteen source-attributed tafsir distinctions.
+  const encyclopaedia=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaI.json','utf8'));
+  const rahmanId='PDF-HN-001';
+  const deepRahman=encyclopaedia.profiles[rahmanId];
+  assert.ok(deepRahman && Object.keys(encyclopaedia.profiles).length===1);
+  assert.equal(deepRahman.evidence.length,30,'First deep card should contain thirty complete Quran passages.');
+  assert.equal(deepRahman.scholarly.length,15,'Fifteen distinct scholarly notes must be preserved.');
+  assert.equal(new Set([...deepRahman.evidence,...deepRahman.scholarly].map(x=>x.id)).size,45);
+  const originalRahmanIds=new Set(research[rahmanId].evidence.map(x=>x.id));
+  const corpusIds=new Set();
+  const verseRefs=new Set();
+  for(const entry of deepRahman.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'direct_quran_name_context');
+    assert.ok(entry.arabic_original && entry.verse_meaning.ml && entry.verse_meaning.en);
+    assert.ok(entry.translation.ml && entry.translation.en && entry.source_scope.ml && entry.source_scope.en);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura[0-9]+-aya[0-9]+\.html$/.test(entry.source_url));
+    assert.ok(entry.arabic_original.replace(/[\u064B-\u065F\u0670]/g,'').includes('رحمن'),'Quran passage must directly contain the name: '+entry.id);
+    const verseRef=entry.source_reference.match(/Quran (\d+:\d+(?:-\d+)?)/)?.[1];
+    assert.ok(verseRef && !verseRefs.has(verseRef),'Each Quran entry needs a unique complete verse/passage reference.');
+    assert.ok(!['1:3','17:110','59:22'].includes(verseRef),'Do not republish pre-existing direct-name verse: '+verseRef);
+    verseRefs.add(verseRef);
+    assert.ok(!originalRahmanIds.has(entry.id));
+    assert.ok(!corpusIds.has(entry.id));corpusIds.add(entry.id);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[rahmanId],rahmanId,lang,{pdf_name_id:rahmanId});
+      for(const textValue of [entry.arabic_original,entry.verse_meaning[lang],entry.translation[lang],entry.source_scope[lang]]) {
+        assert.ok(html.includes(escape(textValue)),'Missing full bilingual Quran passage '+verseRef+' '+lang);
+      }
+      assert.ok(html.includes(entry.source_url),'Missing primary Quran/tafsir source '+verseRef);
+      assert.ok(sectionBEntrySearchText(entry,lang).includes(entry.verse_meaning[lang].toLocaleLowerCase()),'Full verse meaning not searchable '+verseRef);
+    }
+  }
+  const surah55=deepRahman.evidence.find(x=>x.source_reference.includes('Quran 55:1-4'));
+  assert.ok(surah55 && surah55.arabic_original.split('\n').length===4,'The four opening ayat must appear without truncation.');
+  for(const entry of deepRahman.scholarly){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary)\//.test(entry.source_url));
+    assert.ok(entry.arabic_original.length>=8 && entry.arabic_original.length<=100);
+    assert.ok(!corpusIds.has(entry.id),'Scholarly ID repeated: '+entry.id);corpusIds.add(entry.id);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[rahmanId],rahmanId,lang,{pdf_name_id:rahmanId});
+      assert.ok(html.includes(escape(entry.arabic_original)) && html.includes(escape(entry.translation[lang])));
+      assert.ok(html.includes(entry.source_url),'Tafsir citation absent '+entry.id);
+    }
+  }
+  assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('takyif')));
+  assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('gharib')));
+  assert.ok(deepRahman.scholarly.some(x=>x.translation.en.includes('rather than securely Prophetic')));
+  // This first deep expansion may not leak into a separate card's title, source section or Arabic verses.
+  for(const id of ['PDF-HN-002','PDF-HN-003','PDF-HN-101']){
+    const html=render(chapters[id]||null,id,'en',{pdf_name_id:id});
+    assert.ok(!html.includes('encyclopedia-rahman-19-18'),'Names must be isolated.');
+  }
+  console.log('PASS: al-Rahman receives 30 complete Quran passages (33 ayat) and 15 additional source-attributed tafsir studies in both languages, with no cross-card leakage.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {

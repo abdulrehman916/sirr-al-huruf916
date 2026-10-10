@@ -1,0 +1,1036 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "അർ-റഹ്മാൻ കാർഡിനായി 30 പൂർണ ഖുർആൻ പാഠക്കൂട്ടങ്ങൾ (മൊത്തം 33 ആയത്തുകൾ): സന്ദർഭം, മലയാളം/ഇംഗ്ലീഷ് അർഥം, തഫ്സീർ ഉറവിടം. 160 കാർഡുകൾ പൂർത്തിയായിട്ടില്ല.",
+    "en": "Thirty full Quran passages (33 verses) contextualized for the al-Rahman card; source URLs, bilingual meanings and interpretation. The other 159 cards are not marked complete."
+  },
+  "profiles": {
+    "PDF-HN-001": {
+      "name_id": "PDF-HN-001",
+      "evidence": [
+        {
+          "id": "encyclopedia-rahman-19-18",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:18",
+            "en": "Al-Rahman: complete Quran passage — 19:18"
+          },
+          "arabic_original": "قَالَتْ إِنِّي أَعُوذُ بِالرَّحْمَٰنِ مِنكَ إِن كُنتَ تَقِيًّا",
+          "verse_meaning": {
+            "ml": "മർയം പറഞ്ഞു: നീ ഭക്തനാണെങ്കിൽ നിന്നിൽനിന്ന് ഞാൻ പരമകാരുണികനിൽ അഭയം തേടുന്നു.",
+            "en": "Maryam said: I seek refuge with the All-Merciful against you, if you are God-fearing."
+          },
+          "translation": {
+            "ml": "മർയം സന്ദർശകനെ മലക്കാണെന്ന് തിരിച്ചറിയുന്നതിനു മുമ്പുള്ള ഭയവും സംരക്ഷണപ്രാർത്ഥനയും.",
+            "en": "Maryam seeks refuge before recognizing the visitor as an angel."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya18.html",
+          "source_reference": "Quran 19:18 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-26",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:26",
+            "en": "Al-Rahman: complete Quran passage — 19:26"
+          },
+          "arabic_original": "فَكُلِي وَاشْرَبِي وَقَرِّي عَيْنًا ۖ فَإِمَّا تَرَيِنَّ مِنَ الْبَشَرِ أَحَدًا فَقُولِي إِنِّي نَذَرْتُ لِلرَّحْمَٰنِ صَوْمًا فَلَنْ أُكَلِّمَ الْيَوْمَ إِنسِيًّا",
+          "verse_meaning": {
+            "ml": "തിന്നുകയും കുടിക്കുകയും ആശ്വാസം കൈവരിക്കുകയും ചെയ്യുക; ആരെയെങ്കിലും കണ്ടാൽ പരമകാരുണികനുവേണ്ടി മൗനവ്രതം നേർന്നതായി അറിയിക്കുക, ഇന്ന് ആരോടും സംസാരിക്കരുത്.",
+            "en": "Eat, drink and take comfort; if someone appears, indicate that you have vowed a fast of silence to the All-Merciful and will not speak today."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇവിടെ «صَوْمًا» മൗനമെന്നായി വിശദീകരിക്കുന്നു; ഇത് മർയമിന്റെ ചരിത്രസന്ദർഭമാണ്, പൊതുവായ മൗനവ്രതനിർദേശം അല്ല.",
+            "en": "Ibn Kathir reports interpreting sawman as silence in Mary's own historical setting, not a general vow prescription."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya26.html",
+          "source_reference": "Quran 19:26 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-44",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:44",
+            "en": "Al-Rahman: complete Quran passage — 19:44"
+          },
+          "arabic_original": "يَا أَبَتِ لَا تَعْبُدِ الشَّيْطَانَ ۖ إِنَّ الشَّيْطَانَ كَانَ لِلرَّحْمَٰنِ عَصِيًّا",
+          "verse_meaning": {
+            "ml": "പിതാവേ, പിശാചിനെ ആരാധിക്കരുത്; പിശാച് പരമകാരുണികനോട് അനുസരണക്കേട് കാണിക്കുന്നവനായിരുന്നു.",
+            "en": "Father, do not worship Satan, for he was rebellious against the All-Merciful."
+          },
+          "translation": {
+            "ml": "പിതാവിനോടു വിഗ്രഹാരാധന ഒഴിവാക്കാൻ ഇബ്രാഹീം നബി നൽകുന്ന ഉപദേശം.",
+            "en": "Ibrahim's compassionate counsel to his father to abandon idolatry."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya44.html",
+          "source_reference": "Quran 19:44 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-45",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:45",
+            "en": "Al-Rahman: complete Quran passage — 19:45"
+          },
+          "arabic_original": "يَا أَبَتِ إِنِّي أَخَافُ أَن يَمَسَّكَ عَذَابٌ مِّنَ الرَّحْمَٰنِ فَتَكُونَ لِلشَّيْطَانِ وَلِيًّا",
+          "verse_meaning": {
+            "ml": "പിതാവേ, പരമകാരുണികനിൽനിന്നുള്ള ശിക്ഷ നിന്നെ ബാധിച്ച് നീ പിശാചിന്റെ കൂട്ടാളിയാകുമെന്നു ഞാൻ ഭയപ്പെടുന്നു.",
+            "en": "Father, I fear that punishment from the All-Merciful may reach you, leaving you an ally of Satan."
+          },
+          "translation": {
+            "ml": "കരുണാനാമവും ഉത്തരവാദിത്തവും ഒന്നിക്കുന്ന ഇബ്രാഹീമിന്റെ മുന്നറിയിപ്പ്.",
+            "en": "Ibrahim's warning combines the Name of Mercy with moral accountability."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya45.html",
+          "source_reference": "Quran 19:45 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-58",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:58",
+            "en": "Al-Rahman: complete Quran passage — 19:58"
+          },
+          "arabic_original": "أُولَٰئِكَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِم مِّنَ النَّبِيِّينَ مِن ذُرِّيَّةِ آدَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَاهِيمَ وَإِسْرَائِيلَ وَمِمَّنْ هَدَيْنَا وَاجْتَبَيْنَا ۚ إِذَا تُتْلَىٰ عَلَيْهِمْ آيَاتُ الرَّحْمَٰنِ خَرُّوا سُجَّدًا وَبُكِيًّا ۩",
+          "verse_meaning": {
+            "ml": "ആദമിന്റെയും നൂഹിനൊപ്പം വഹിക്കപ്പെട്ടവരുടെയും ഇബ്രാഹീമിന്റെയും ഇസ്റാഈലിന്റെയും സന്തതികളിൽനിന്നുള്ള അനുഗ്രഹീതരായ, വഴികാട്ടപ്പെട്ട പ്രവാചകന്മാരെക്കുറിച്ചാണ് ഈ വചനം. പരമകാരുണികന്റെ വചനങ്ങൾ കേൾക്കുമ്പോൾ അവർ സജ്ദ ചെയ്തു കരഞ്ഞുവീഴുമായിരുന്നു.",
+            "en": "It describes divinely favored, guided and chosen prophets from the lineages of Adam, the people carried with Noah, Ibrahim and Israel. Upon hearing the All-Merciful's verses, they fell prostrate weeping."
+          },
+          "translation": {
+            "ml": "ഈ ആയത്തിൽ സജ്ദ അടയാളമുണ്ട്; സജ്ദതു തിലാവയുടെ ഫിഖ്ഹ് വിശദാംശങ്ങൾ വേറെ പഠിക്കേണ്ട വിഷയമാണ്.",
+            "en": "A Quranic prostration marker occurs; detailed prostration jurisprudence belongs to separate fiqh."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya58.html",
+          "source_reference": "Quran 19:58 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-61",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:61",
+            "en": "Al-Rahman: complete Quran passage — 19:61"
+          },
+          "arabic_original": "جَنَّاتِ عَدْنٍ الَّتِي وَعَدَ الرَّحْمَٰنُ عِبَادَهُ بِالْغَيْبِ ۚ إِنَّهُ كَانَ وَعْدُهُ مَأْتِيًّا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ ദാസന്മാർക്ക് അദൃശ്യത്തിൽ വാഗ്ദാനം ചെയ്ത സ്ഥിരവാസത്തിന്റെ സ്വർഗത്തോട്ടങ്ങളാണവ; അവന്റെ വാഗ്ദാനം വരുകതന്നെ ചെയ്യും.",
+            "en": "Gardens of everlasting residence that the All-Merciful promised His servants unseen; His promise will come."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അദൃശ്യത്തിലെ വാഗ്ദാനത്തോടുള്ള വിശ്വാസവും അതിന്റെ ഉറപ്പും വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir emphasizes faith in the unseen and certainty of the promise."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya61.html",
+          "source_reference": "Quran 19:61 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-75",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:75",
+            "en": "Al-Rahman: complete Quran passage — 19:75"
+          },
+          "arabic_original": "قُلْ مَن كَانَ فِي الضَّلَالَةِ فَلْيَمْدُدْ لَهُ الرَّحْمَٰنُ مَدًّا ۚ حَتَّىٰ إِذَا رَأَوْا مَا يُوعَدُونَ إِمَّا الْعَذَابَ وَإِمَّا السَّاعَةَ فَسَيَعْلَمُونَ مَنْ هُوَ شَرٌّ مَّكَانًا وَأَضْعَفُ جُندًا",
+          "verse_meaning": {
+            "ml": "വഴിതെറ്റലിൽ തുടരുന്നവന് പരമകാരുണികൻ സമയം നീട്ടിക്കൊടുക്കട്ടെ; ശിക്ഷയോ അന്ത്യമണിക്കൂറോ കാണുമ്പോൾ ആരുടെ നിലയും കൂട്ടവും ദുർബലമാണെന്നു മനസ്സിലാകും എന്നു പറയുക.",
+            "en": "Say that the All-Merciful may extend the respite of one persisting in error; when the threatened punishment or Hour comes they will know who is worse placed and weaker in forces."
+          },
+          "translation": {
+            "ml": "ഇത് വഴിതെറ്റലിലുള്ളവർക്ക് നൽകപ്പെടുന്ന അവസരത്തെയും ന്യായവിധിയെയും കുറിച്ചുള്ള സന്ദർഭമാണ്; ജപസംഖ്യ അല്ല.",
+            "en": "It describes extended respite and judgment, not an al-Rahman recitation count."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya75.html",
+          "source_reference": "Quran 19:75 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-85",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:85",
+            "en": "Al-Rahman: complete Quran passage — 19:85"
+          },
+          "arabic_original": "يَوْمَ نَحْشُرُ الْمُتَّقِينَ إِلَى الرَّحْمَٰنِ وَفْدًا",
+          "verse_meaning": {
+            "ml": "ഭക്തരെ പരമകാരുണികന്റെ സന്നിധിയിലേക്ക് ആദരണീയ സംഘമായി കൂട്ടിച്ചേർക്കുന്ന ദിവസം.",
+            "en": "The day the God-fearing are gathered before the All-Merciful as an honored delegation."
+          },
+          "translation": {
+            "ml": "«وَفْدًا» ആദരണീയ സംഘത്തിന്റെ വരവിനെ സൂചിപ്പിക്കുന്നു. വിശദമായ അനുബന്ധ തഫ്സീർ റിപ്പോർട്ടുകളുടെ വിശ്വാസ്യത ഒരുപോലെയല്ല.",
+            "en": "Wafdan is an honored delegation; accompanying elaborate reports are not all equally authenticated."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya85.html",
+          "source_reference": "Quran 19:85 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-87",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:87",
+            "en": "Al-Rahman: complete Quran passage — 19:87"
+          },
+          "arabic_original": "لَّا يَمْلِكُونَ الشَّفَاعَةَ إِلَّا مَنِ اتَّخَذَ عِندَ الرَّحْمَٰنِ عَهْدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികനോടുള്ള ഉടമ്പടിയുള്ളവനല്ലാതെ ആരും ശുപാർശയുടെ അധികാരം സ്വന്തമാക്കുന്നില്ല.",
+            "en": "None possesses intercession except one who has a covenant with the All-Merciful."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ഉടമ്പടിയെ തൗഹീദിന്റെ സാക്ഷ്യത്തോടും കടമകളോടും ബന്ധിപ്പിക്കുന്നു; തകിടിന്റെ സ്വതന്ത്ര ഫലവാഗ്ദാനമല്ല.",
+            "en": "Ibn Kathir links the covenant to testimony of divine oneness and its duties, not a talismanic guarantee."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya87.html",
+          "source_reference": "Quran 19:87 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-88",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:88",
+            "en": "Al-Rahman: complete Quran passage — 19:88"
+          },
+          "arabic_original": "وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ സന്താനത്തെ സ്വീകരിച്ചിട്ടുണ്ടെന്ന് അവർ ആരോപിച്ചു.",
+            "en": "Some alleged that the All-Merciful had taken a child."
+          },
+          "translation": {
+            "ml": "ഇത് ഖുർആൻ നിരാകരിക്കുന്ന ഒരു ആരോപണമാണ്; ഇസ്‌ലാമിക അംഗീകാരമല്ല. 19:92 ശ്രദ്ധിക്കുക.",
+            "en": "This quotes a claim being refuted, not affirmed; see the explicit denial in 19:92."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya88.html",
+          "source_reference": "Quran 19:88 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-92",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:92",
+            "en": "Al-Rahman: complete Quran passage — 19:92"
+          },
+          "arabic_original": "وَمَا يَنبَغِي لِلرَّحْمَٰنِ أَن يَتَّخِذَ وَلَدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ സന്താനത്തെ സ്വീകരിക്കുക യോജിച്ചതല്ല.",
+            "en": "It is not befitting for the All-Merciful to take a child."
+          },
+          "translation": {
+            "ml": "19:88-ലെ ആരോപണത്തിന്റെ വ്യക്തമായ നിഷേധം.",
+            "en": "This directly rejects the preceding alleged divine offspring."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya92.html",
+          "source_reference": "Quran 19:92 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-93",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:93",
+            "en": "Al-Rahman: complete Quran passage — 19:93"
+          },
+          "arabic_original": "إِن كُلُّ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ إِلَّا آتِي الرَّحْمَٰنِ عَبْدًا",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ള എല്ലാവരും പരമകാരുണികന്റെ മുമ്പിൽ ദാസന്മാരായി വരും.",
+            "en": "Every being in the heavens and earth will come to the All-Merciful as a servant."
+          },
+          "translation": {
+            "ml": "സൃഷ്ടികളുടെയെല്ലാം ആശ്രിതാവസ്ഥയാണ് ഊന്നിപ്പറയുന്നത്.",
+            "en": "The verse stresses complete created dependence."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya93.html",
+          "source_reference": "Quran 19:93 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-96",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:96",
+            "en": "Al-Rahman: complete Quran passage — 19:96"
+          },
+          "arabic_original": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا",
+          "verse_meaning": {
+            "ml": "വിശ്വസിക്കുകയും സൽപ്രവൃത്തികൾ ചെയ്യുകയും ചെയ്യുന്നവർക്കു പരമകാരുണികൻ സ്‌നേഹം ഏർപ്പെടുത്തും.",
+            "en": "The All-Merciful will establish affection for those who believe and do righteous works."
+          },
+          "translation": {
+            "ml": "വിശ്വാസവും സൽപ്രവൃത്തിയും വ്യക്തമാക്കിയ നിബന്ധനകളാണ്; മറ്റൊരാളുടെ മനസ്സ് നിയന്ത്രിക്കുന്ന വസീഫയല്ല.",
+            "en": "The promise explicitly involves faith and righteous conduct, not control of another person's emotions."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya96.html",
+          "source_reference": "Quran 19:96 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-5",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:5",
+            "en": "Al-Rahman: complete Quran passage — 20:5"
+          },
+          "arabic_original": "الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ അർശിന്മേൽ ഇസ്തിവാ ചെയ്തിരിക്കുന്നു.",
+            "en": "The All-Merciful is described as having established Himself over the Throne."
+          },
+          "translation": {
+            "ml": "ഇസ്തിവായെക്കുറിച്ചുള്ള പണ്ഡിതരീതികൾ വ്യത്യാസപ്പെടുന്നു; ദൈവത്തെ സൃഷ്ടിയോട് ഉപമിക്കരുത്.",
+            "en": "Exegetical approaches vary; avoid likening Allah to created beings."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya5.html",
+          "source_reference": "Quran 20:5 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-90",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:90",
+            "en": "Al-Rahman: complete Quran passage — 20:90"
+          },
+          "arabic_original": "وَلَقَدْ قَالَ لَهُمْ هَارُونُ مِن قَبْلُ يَا قَوْمِ إِنَّمَا فُتِنتُم بِهِ ۖ وَإِنَّ رَبَّكُمُ الرَّحْمَٰنُ فَاتَّبِعُونِي وَأَطِيعُوا أَمْرِي",
+          "verse_meaning": {
+            "ml": "ഹാറൂൻ നേരത്തെ പറഞ്ഞു: എന്റെ ജനങ്ങളേ, ഈ കാളക്കുട്ടി നിങ്ങളെ പരീക്ഷിച്ചിരിക്കുന്നു; നിങ്ങളുടെ രക്ഷിതാവ് പരമകാരുണികനാണ്; എന്നെ പിന്തുടരുക.",
+            "en": "Harun said: my people, the calf has tested you; your Lord is the All-Merciful, so follow and obey me."
+          },
+          "translation": {
+            "ml": "കാളക്കുട്ടി ആരാധനയിൽനിന്നു തൗഹീദിലേക്കുള്ള ഹാറൂന്റെ ആഹ്വാനം.",
+            "en": "Harun calls the people away from calf worship to monotheism."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya90.html",
+          "source_reference": "Quran 20:90 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-108",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:108",
+            "en": "Al-Rahman: complete Quran passage — 20:108"
+          },
+          "arabic_original": "يَوْمَئِذٍ يَتَّبِعُونَ الدَّاعِيَ لَا عِوَجَ لَهُ ۖ وَخَشَعَتِ الْأَصْوَاتُ لِلرَّحْمَٰنِ فَلَا تَسْمَعُ إِلَّا هَمْسًا",
+          "verse_meaning": {
+            "ml": "അന്നു വിളിക്കുന്നവനെ ജനങ്ങൾ പിന്തുടരും; പരമകാരുണികന്റെ മുമ്പിൽ ശബ്ദങ്ങൾ ഒതുങ്ങി പതിഞ്ഞ ഒച്ച മാത്രമാകും.",
+            "en": "People follow the caller on that day; voices are subdued before the All-Merciful so only a murmur remains."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «هَمْسًا» കാൽപ്പാടിന്റെയോ പതിഞ്ഞ സംസാരത്തിന്റെയോ ശബ്ദമായി വിശദീകരിക്കുന്ന അഭിപ്രായങ്ങൾ നൽകുന്നു.",
+            "en": "Ibn Kathir reports the interpretations of hamsan as quiet footsteps or hushed speech."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya108.html",
+          "source_reference": "Quran 20:108 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-109",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:109",
+            "en": "Al-Rahman: complete Quran passage — 20:109"
+          },
+          "arabic_original": "يَوْمَئِذٍ لَّا تَنفَعُ الشَّفَاعَةُ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَرَضِيَ لَهُ قَوْلًا",
+          "verse_meaning": {
+            "ml": "അന്നു പരമകാരുണികൻ അനുമതി നൽകുകയും വാക്ക് അംഗീകരിക്കുകയും ചെയ്തവനല്ലാതെ ശുപാർശ പ്രയോജനപ്പെടുകയില്ല.",
+            "en": "On that day intercession benefits only by the permission of the All-Merciful and His approval."
+          },
+          "translation": {
+            "ml": "ശഫാഅത്ത് ദൈവത്തിന്റെ അനുമതിയോടു ബന്ധപ്പെട്ടതാണ്; നാമമുള്ള തകിടിലൂടെ ലഭിക്കുന്നതല്ല.",
+            "en": "Intercession depends on Allah's permission, not an amulet or counted formula."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya109.html",
+          "source_reference": "Quran 20:109 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-21-26",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 21:26",
+            "en": "Al-Rahman: complete Quran passage — 21:26"
+          },
+          "arabic_original": "وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا ۗ سُبْحَانَهُ ۚ بَلْ عِبَادٌ مُّكْرَمُونَ",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികനു സന്താനമുണ്ടെന്ന് ചിലർ ആരോപിച്ചു. അവൻ പരിശുദ്ധനാണ്; മലക്കുകൾ ആദരിക്കപ്പെട്ട ദാസന്മാരാണ്.",
+            "en": "Some claimed that the All-Merciful had a child; glory be to Him! Rather, they are honored servants."
+          },
+          "translation": {
+            "ml": "മലക്കുകളെ ദൈവത്തിന്റെ സന്താനങ്ങളെന്നു വിശേഷിപ്പിച്ച വാദത്തെ ഖുർആൻ നിരസിക്കുന്നു.",
+            "en": "Refutes the claim that angels are divine offspring."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya26.html",
+          "source_reference": "Quran 21:26 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-25-26",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 25:26",
+            "en": "Al-Rahman: complete Quran passage — 25:26"
+          },
+          "arabic_original": "الْمُلْكُ يَوْمَئِذٍ الْحَقُّ لِلرَّحْمَٰنِ ۚ وَكَانَ يَوْمًا عَلَى الْكَافِرِينَ عَسِيرًا",
+          "verse_meaning": {
+            "ml": "അന്നത്തെ യഥാർത്ഥ രാജാധികാരം പരമകാരുണികനാണ്; സത്യനിഷേധികൾക്കത് കഠിനമായ ദിവസമായിരിക്കും.",
+            "en": "True sovereignty that day belongs to the All-Merciful; it will be a difficult day for the rejecters."
+          },
+          "translation": {
+            "ml": "നാമത്തിന്റെ കാരുണ്യസന്ദർഭത്തിനൊപ്പം അന്തിമാധികാരവും നീതിയും വരുന്നു.",
+            "en": "The merciful Name appears in the context of ultimate sovereignty and judgment."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya26.html",
+          "source_reference": "Quran 25:26 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-25-59",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 25:59",
+            "en": "Al-Rahman: complete Quran passage — 25:59"
+          },
+          "arabic_original": "الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا فِي سِتَّةِ أَيَّامٍ ثُمَّ اسْتَوَىٰ عَلَى الْعَرْشِ ۚ الرَّحْمَٰنُ فَاسْأَلْ بِهِ خَبِيرًا",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളും ഭൂമിയും ഇടയിലുള്ളതും ആറ് ദിവസങ്ങളിൽ സൃഷ്ടിച്ച് അർശിന്മേൽ ഇസ്തിവാ ചെയ്തവൻ പരമകാരുണികനാണ്; അവനെക്കുറിച്ച് അറിവുള്ളവനോടു ചോദിക്കുക.",
+            "en": "The One who created the heavens and earth and what lies between in six days, then established Himself over the Throne, is the All-Merciful; ask one informed about Him."
+          },
+          "translation": {
+            "ml": "സൃഷ്ടി, പരമാധികാരം, അറിവിന്റെ വിശ്വസനീയത എന്നിവ ഒത്തുചേരുന്നു.",
+            "en": "Creation, sovereignty and reliable knowledge of Allah are combined."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya59.html",
+          "source_reference": "Quran 25:59 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-25-60",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 25:60",
+            "en": "Al-Rahman: complete Quran passage — 25:60"
+          },
+          "arabic_original": "وَإِذَا قِيلَ لَهُمُ اسْجُدُوا لِلرَّحْمَٰنِ قَالُوا وَمَا الرَّحْمَٰنُ أَنَسْجُدُ لِمَا تَأْمُرُنَا وَزَادَهُمْ نُفُورًا ۩",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികനെ സജ്ദ ചെയ്യാൻ പറഞ്ഞപ്പോൾ «എന്താണ് അർ-റഹ്മാൻ?» എന്നു അവർ ചോദിക്കുകയും അകന്നുമാറുകയും ചെയ്തു.",
+            "en": "When told to prostrate to the All-Merciful, they ask what al-Rahman is and turn further away."
+          },
+          "translation": {
+            "ml": "ദൈവനാമത്തിന്റെ ചരിത്രപരമായ നിഷേധം; ആയത്തിൽ സജ്ദയുടെ അടയാളമുണ്ട്.",
+            "en": "Historical rejection of the Name is recorded, and a prostration marker occurs."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya60.html",
+          "source_reference": "Quran 25:60 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-25-63",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 25:63",
+            "en": "Al-Rahman: complete Quran passage — 25:63"
+          },
+          "arabic_original": "وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികന്റെ ദാസന്മാർ വിനയത്തോടെ നടക്കുകയും അജ്ഞർ മോശമായി സംസാരിക്കുമ്പോൾ സമാധാനത്തോടെ മറുപടി നൽകുകയും ചെയ്യുന്നു.",
+            "en": "The servants of the All-Merciful walk humbly and respond peacefully to ignorant abuse."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «هَوْنًا» എന്നത് കൃത്രിമ ബലഹീനതയല്ലെന്ന് വ്യക്തമാക്കുന്നു.",
+            "en": "Ibn Kathir says hawnan indicates composed humility, not affected weakness."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya63.html",
+          "source_reference": "Quran 25:63 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-36-11",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 36:11",
+            "en": "Al-Rahman: complete Quran passage — 36:11"
+          },
+          "arabic_original": "إِنَّمَا تُنذِرُ مَنِ اتَّبَعَ الذِّكْرَ وَخَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍ وَأَجْرٍ كَرِيمٍ",
+          "verse_meaning": {
+            "ml": "ഉപദേശം പിന്തുടർന്ന് അദൃശ്യത്തിൽ പരമകാരുണികനെ ഭയഭക്തിയോടെ സ്മരിക്കുന്നവന് പാപമോചനവും മഹത്തായ പ്രതിഫലവും സന്തോഷവാർത്ത അറിയിക്കുക.",
+            "en": "Give glad tidings of forgiveness and noble reward to one who follows the Reminder and reveres the All-Merciful unseen."
+          },
+          "translation": {
+            "ml": "മനുഷ്യർ കാണാത്തിടത്തും ദൈവബോധം പുലർത്തുന്നതിന്റെ പ്രാധാന്യം.",
+            "en": "Importance of sincerity and God-consciousness outside human view."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya11.html",
+          "source_reference": "Quran 36:11 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-43-36",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 43:36",
+            "en": "Al-Rahman: complete Quran passage — 43:36"
+          },
+          "arabic_original": "وَمَن يَعْشُ عَن ذِكْرِ الرَّحْمَٰنِ نُقَيِّضْ لَهُ شَيْطَانًا فَهُوَ لَهُ قَرِينٌ",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികന്റെ ഓർമയിൽനിന്ന് തിരിഞ്ഞുകളയുന്നവന് പിശാച് കൂട്ടാളിയായി വരും.",
+            "en": "Whoever turns away from remembrance of the All-Merciful is assigned a devil as companion."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ കാഴ്ചയുടെ ഉപമ ഉപയോഗിച്ച് ആത്മീയ അന്ധതയെ വിവരിക്കുന്നു.",
+            "en": "Ibn Kathir reads this as a metaphor of willful spiritual blindness."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura43-aya36.html",
+          "source_reference": "Quran 43:36 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-50-33",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 50:33",
+            "en": "Al-Rahman: complete Quran passage — 50:33"
+          },
+          "arabic_original": "مَّنْ خَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ وَجَاءَ بِقَلْبٍ مُّنِيبٍ",
+          "verse_meaning": {
+            "ml": "കാണാത്ത നിലയിൽ പരമകാരുണികനെ ഭയഭക്തിയോടെ കരുതി, അവനിലേക്കു മടങ്ങുന്ന ഹൃദയത്തോടെ വന്നവൻ.",
+            "en": "One who revered the All-Merciful unseen and came with a heart turned to Him."
+          },
+          "translation": {
+            "ml": "«مُنِيبٍ» പശ്ചാത്താപത്തോടെ മടങ്ങുന്ന ഹൃദയത്തെ സൂചിപ്പിക്കുന്നു.",
+            "en": "Munib points to a penitent heart that keeps turning toward Allah."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya33.html",
+          "source_reference": "Quran 50:33 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-55-1-4",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 55:1-4",
+            "en": "Al-Rahman: complete Quran passage — 55:1-4"
+          },
+          "arabic_original": "الرَّحْمَٰنُ\nعَلَّمَ الْقُرْآنَ\nخَلَقَ الْإِنسَانَ\nعَلَّمَهُ الْبَيَانَ",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ; അവൻ ഖുർആൻ പഠിപ്പിച്ചു, മനുഷ്യനെ സൃഷ്ടിച്ചു, വ്യക്തമായി സംസാരിക്കാനും ആശയങ്ങൾ പ്രകടിപ്പിക്കാനും പഠിപ്പിച്ചു.",
+            "en": "The All-Merciful taught the Quran, created the human being and taught articulate expression."
+          },
+          "translation": {
+            "ml": "സൂറത്ത് അർ-റഹ്മാനിലെ ആദ്യ നാല് പൂർണ വചനങ്ങൾ. «الْبَيَانَ» സംസാരത്തിന്റെയും അറിവ് പ്രകടിപ്പിക്കുന്നതിന്റെയും കഴിവ് എന്നായി തഫ്സീറിൽ ചർച്ച ചെയ്യുന്നു.",
+            "en": "Four complete opening verses; Ibn Kathir discusses al-bayan as the gift of speech and expression."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya1.html",
+          "source_reference": "Quran 55:1-4 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-67-3",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 67:3",
+            "en": "Al-Rahman: complete Quran passage — 67:3"
+          },
+          "arabic_original": "الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ",
+          "verse_meaning": {
+            "ml": "പാളികളായി ഏഴ് ആകാശങ്ങളെ സൃഷ്ടിച്ചു; പരമകാരുണികന്റെ സൃഷ്ടിയിൽ അസംഗതി കാണുന്നില്ല. വീണ്ടും നോക്കുക: വിള്ളലുകൾ കാണുന്നുണ്ടോ?",
+            "en": "He created seven heavens in layers. You see no discrepancy in the All-Merciful's creation; look again for flaws."
+          },
+          "translation": {
+            "ml": "«تَفَاوُتٍ» പൊരുത്തക്കേടും «فُطُورٍ» വിള്ളലും എന്നായി ഇബ്നു കസീർ വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir glosses tafawut as discrepancy and futur as fissures."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya3.html",
+          "source_reference": "Quran 67:3 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-67-29",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 67:29",
+            "en": "Al-Rahman: complete Quran passage — 67:29"
+          },
+          "arabic_original": "قُلْ هُوَ الرَّحْمَٰنُ آمَنَّا بِهِ وَعَلَيْهِ تَوَكَّلْنَا ۖ فَسَتَعْلَمُونَ مَنْ هُوَ فِي ضَلَالٍ مُّبِينٍ",
+          "verse_meaning": {
+            "ml": "പറയുക: അവൻ പരമകാരുണികൻ; ഞങ്ങൾ അവനിൽ വിശ്വസിക്കുകയും അവനെ ആശ്രയിക്കുകയും ചെയ്തു. വ്യക്തമായ വഴിതെറ്റലിലുള്ളവർ ആരെന്ന് നിങ്ങൾ അറിയും.",
+            "en": "Say: He is the All-Merciful; we believe in and rely upon Him. You will know who is clearly astray."
+          },
+          "translation": {
+            "ml": "വിശ്വാസവും തവക്കുലും ചേർന്ന വചനം; ഉത്തരവാദിത്തങ്ങൾ ഉപേക്ഷിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Faith and reliance are linked; not a prescription to neglect practical responsibilities."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya29.html",
+          "source_reference": "Quran 67:29 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-78-37",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 78:37",
+            "en": "Al-Rahman: complete Quran passage — 78:37"
+          },
+          "arabic_original": "رَّبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും ഇടയിലുള്ളതിന്റെയും രക്ഷിതാവായ പരമകാരുണികൻ; അവനോട് സ്വതന്ത്രമായി സംസാരിക്കാൻ അവർക്കു അധികാരമില്ല.",
+            "en": "The All-Merciful is Lord of the heavens, earth and all between them; none has independent right to address Him."
+          },
+          "translation": {
+            "ml": "അന്ത്യദിനത്തിലെ ദൈവിക പരമാധികാരത്തിന്റെ സന്ദർഭം.",
+            "en": "The Name appears in the context of absolute authority on Judgment Day."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura78-aya37.html",
+          "source_reference": "Quran 78:37 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-78-38",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 78:38",
+            "en": "Al-Rahman: complete Quran passage — 78:38"
+          },
+          "arabic_original": "يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَقَالَ صَوَابًا",
+          "verse_meaning": {
+            "ml": "റൂഹും മലക്കുകളും നിരയായി നിൽക്കുന്ന ദിവസം പരമകാരുണികൻ അനുമതി നൽകിയവനും സത്യവാക്കു പറയുന്നവനുമല്ലാതെ ആരും സംസാരിക്കില്ല.",
+            "en": "On the day the Spirit and the angels stand in ranks, none speak except by the All-Merciful's permission and with truthful words."
+          },
+          "translation": {
+            "ml": "«الرُّوحُ» ആരെന്നതിൽ ഇബ്നു കസീർ ഒന്നിലധികം പണ്ഡിതാഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir records several competing identifications of al-Ruh."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura78-aya38.html",
+          "source_reference": "Quran 78:38 · Ibn Kathir",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ അർ-റഹ്മാൻ നേരിട്ട് വരുന്ന പൂർണ പാഠമാണ്; പുതുതായി ജപസംഖ്യയോ ഗ്രഹസമയമോ തകിടോ ഉറപ്പുള്ള ഭൗതികഫലമോ ഈ വചനത്തിൽനിന്ന് സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "Complete Quranic passage with a direct occurrence of al-Rahman; no invented fixed recitation count, planetary hour, amulet or guaranteed effect."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "encyclopedia-rahman-tafsir-55-1-katheer-يخبر-تعالى-ع",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: കരുണയുടെ അനുഗ്രഹങ്ങളിൽ ഖുർആൻ പഠിപ്പിക്കൽ മുൻപന്തിയിൽ",
+            "en": "Ibn Kathir: revelation as a prime manifestation of mercy"
+          },
+          "arabic_original": "يخبر تعالى عن فضله ورحمته بخلقه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അർ-റഹ്മാൻ എന്ന ആദ്യവചനത്തിന് പിന്നാലെയുള്ള «عَلَّمَ الْقُرْآنَ» എന്ന പ്രസ്താവനയെ കാരുണ്യവുമായി ബന്ധിപ്പിക്കുന്നു. വിശ്വാസികൾക്ക് ഖുർആൻ പഠിക്കാനും മനസ്സിലാക്കാനും സൗകര്യം നൽകുന്നതിനെ അദ്ദേഹം പ്രധാന അനുഗ്രഹമായി പറയുന്നു. മനുഷ്യനെ സൃഷ്ടിച്ചതിന് മുമ്പ് ഖുർആൻ പഠിപ്പിച്ചെന്ന ക്രമം പരിശോധിക്കേണ്ട സവിശേഷ വിഷയമാണ്.",
+            "en": "Ibn Kathir explains the opening verses through Allah's benevolence in teaching revelation and enabling people to learn and understand it. The sequence placing the teaching of the Quran before the statement of human creation is exegetically significant."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya1.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-55-4-katheer-قال-الحسن-يع",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «ബയാൻ» വാക്കിന്റെയും ഉച്ചാരണത്തിന്റെയും അനുഗ്രഹം",
+            "en": "Ibn Kathir: bayan as articulate speech"
+          },
+          "arabic_original": "قال الحسن يعني النطق",
+          "translation": {
+            "ml": "അൽ-ബയാൻ എന്ന പദത്തെ ഹസൻ അൽ-ബസ്വരി സംസാരമായി വിവരിക്കുന്നുവെന്നും, ദഹ്ഹാക്കും ഖതാദയും നന്മതിന്മ വേർതിരിക്കുന്ന അറിവുമായി ബന്ധിപ്പിക്കുന്നുവെന്നും ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. അദ്ദേഹം ഈ സന്ദർഭത്തിൽ ഉച്ചാരണവുമായി ബന്ധപ്പെട്ട വ്യാഖ്യാനത്തെ മുൻഗണിക്കുന്നു. രണ്ടഭിപ്രായങ്ങളും ഒരേ രേഖയാക്കി മറച്ചിട്ടില്ല.",
+            "en": "Ibn Kathir records al-Hasan's interpretation of bayan as speech and the view of al-Dahhak and Qatadah connecting it to moral discernment. He favors the interpretation of articulation within the immediate context of Quranic instruction. These are preserved as distinguishable readings."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya4.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-26-katheer-هذا-حديث-منك",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മർയമിന്റെ മൗനവ്രതവും ദുർബല റിപ്പോർട്ടും",
+            "en": "Ibn Kathir: Mary's silence and a rejected report"
+          },
+          "arabic_original": "هذا حديث منكر جدا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മർയമിന്റെ «صَوْمًا» എന്ന പ്രയോഗത്തെ നിശ്ശബ്ദതയായി വിശദീകരിക്കുന്ന വ്യാഖ്യാനങ്ങൾ നൽകുന്നു. അതേ തഫ്സീർ ഭാഗത്ത് ഈത്തപ്പനയുടെ മഹത്ത്വവുമായി ബന്ധപ്പെട്ട ഒരു പ്രവാചകവചന-ആരോപണത്തെ «حديث منكر جدا» എന്നു വിമർശിക്കുന്നുണ്ട്. അതിനെ വിശ്വസനീയമായ സുന്നത്ത് ആയി കാർഡിൽ സ്ഥാപിക്കരുത്.",
+            "en": "Ibn Kathir transmits the interpretation of Mary's sawman as silence. The same commentary explicitly calls a separate palm-tree-related report ‘very objectionable’; that report must not be upgraded to authenticated Prophetic teaching."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya26.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-58-katheer-إذا-تتلى-علي",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രവാചകന്മാരുടെ ഖുർആൻ പ്രതികരണം",
+            "en": "Ibn Kathir: the prophets' response to revelation"
+          },
+          "arabic_original": "إذا تتلى عليهم آيات الرحمن خروا سجدا وبكيا",
+          "translation": {
+            "ml": "«آيَاتُ الرَّحْمَٰنِ» എന്നത് അല്ലാഹുവിന്റെ തെളിവുകളും വചനങ്ങളുമാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. അത് കേട്ട പ്രവാചകന്മാർ ഭക്തിയോടെ സജ്ദയും കരച്ചിലും പ്രകടിപ്പിച്ചതാണ് വചനത്തിലെ കാര്യം. ഇവിടെ പ്രത്യേക അർ-റഹ്മാൻ ഓതലിന്റെ എണ്ണം കണ്ടെത്താൻ പാടില്ല.",
+            "en": "Ibn Kathir explains that the verses of the All-Merciful contain God's signs and proofs. Prophets respond in humble prostration and tears; the narration is not a prescribed name-specific numeric litany."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya58.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:58",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-katheer-من-غير-تكييف",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഇസ്തിവാ വ്യാഖ്യാനത്തിലെ സലഫ് രീതി",
+            "en": "Ibn Kathir: the early approach to istiwa"
+          },
+          "arabic_original": "من غير تكييف ولا تحريف",
+          "translation": {
+            "ml": "അർ-റഹ്മാൻ അർശിന്മേൽ ഇസ്തിവാ എന്ന വചനത്തെ വിശദീകരിക്കുമ്പോൾ ഇബ്നു കസീർ സൃഷ്ടികളുമായി ഉപമിക്കാതെയും അതിന്റെ രൂപരീതി നിശ്ചയിക്കാതെയും ഖുർആൻ-ഹദീസിലെ പാഠം സ്വീകരിക്കുന്ന സലഫിന്റെ സമീപനം എടുത്തുപറയുന്നു. തക്യീഫ്, തശ്ബീഹ്, തഹ്‌രീഫ് എന്നീ വാദഭേദങ്ങൾ പദങ്ങളായി സൂക്ഷിച്ചു.",
+            "en": "Ibn Kathir refers to the early Muslim method of affirming what the scripture says without specifying a physical modality or likening Allah to creation. The disputed categories of takyif, tashbih and textual alteration are kept conceptually separate."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya5.html",
+          "source_reference": "تفسير ابن كثير — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-qortobi-بغير-حد-ولا-",
+          "title": {
+            "ml": "ഖുർതുബി: സൃഷ്ടികളോട് ഉപമിക്കാത്ത ഇസ്തിവാ",
+            "en": "Al-Qurtubi: divine transcendence in explaining istiwa"
+          },
+          "arabic_original": "بغير حد ولا كيف",
+          "translation": {
+            "ml": "അൽ-ഖുർതുബി ഈ ആയത്തിന്റെ വ്യാകരണവായനകളും 'ഇസ്തിവാ'യെ സംബന്ധിച്ച ദൈവശാസ്ത്രപ്രസ്താവനകളും രേഖപ്പെടുത്തുന്നു. സൃഷ്ടികൾക്കുള്ള അതിരുകളും 'എങ്ങനെ' എന്ന രൂപവിവരണവും അല്ലാഹുവിന് ബാധകമാക്കരുതെന്ന് അദ്ദേഹം ചർച്ച ചെയ്യുന്നു. ഇത് പണ്ഡിതവ്യാഖ്യാനമാണ്; ആയത്തിലെ പദങ്ങൾ മാറ്റിയതല്ല.",
+            "en": "Al-Qurtubi notes grammatical possibilities alongside theological discussion of istiwa, rejecting the importation of creaturely limitations or modality into Divine transcendence. It is a scholarly exposition, not a replacement for Quranic wording."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura20-aya5.html",
+          "source_reference": "تفسير القرطبي — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-tabary-وللرفع-في-ال",
+          "title": {
+            "ml": "ത്വബരി: അർ-റഹ്മാൻ എന്ന പദത്തിന്റെ വ്യാകരണബന്ധം",
+            "en": "Al-Tabari: grammar of the Divine Name in 20:5"
+          },
+          "arabic_original": "وللرفع في الرحمن وجهان",
+          "translation": {
+            "ml": "ത്വബരി «الرَّحْمَٰنُ» എന്ന പദത്തിന്റെ ഉയർത്തപ്പെട്ട രൂപത്തെ മുൻവചനത്തിലെ അവതരണവുമായി ബന്ധിപ്പിക്കുന്ന ഒരു വായനയും, അതിനെ തുടർന്ന് വരുന്ന «عَلَى الْعَرْشِ اسْتَوَىٰ» എന്ന വാക്യത്തോട് ബന്ധിപ്പിക്കുന്ന മറ്റൊരു വായനയും പറയുന്നു. ഒരേയൊരു വ്യാകരണബന്ധം മാത്രമെന്ന് അവകാശപ്പെടുന്നില്ല.",
+            "en": "Al-Tabari records more than one grammatical connection for the nominative al-Rahman: one relates it to the previous description of revelation and another to the following predication. The variant grammatical analyses are not silently harmonized."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura20-aya5.html",
+          "source_reference": "تفسير الطبري — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-63-katheer-بسكينة-ووقار",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വിനയം കൃത്രിമ ദുർബലതയല്ല",
+            "en": "Ibn Kathir: humility is not affected weakness"
+          },
+          "arabic_original": "بسكينة ووقار من غير جبرية ولا استكبار",
+          "translation": {
+            "ml": "«يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا» എന്നതിന് അഹങ്കാരമില്ലാത്ത, ശാന്തവും ഗാംഭീര്യപൂർണവുമായ പെരുമാറ്റം എന്ന അർഥമാണ് ഇബ്നു കസീർ ചർച്ച ചെയ്യുന്നത്. രോഗിയായി നടിച്ച് നടക്കുന്നതുപോലുള്ള കപടപെരുമാറ്റത്തെ അദ്ദേഹം വേർതിരിക്കുന്നു. മൃദുഭാഷണം അക്രമത്തെ അനുകരിക്കാതിരിക്കലാണ്.",
+            "en": "Ibn Kathir describes calm dignity free of arrogance, explicitly distinguishing it from affected frailty. Responding with salam concerns restraint rather than mirroring abusive conduct."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya63.html",
+          "source_reference": "تفسير ابن كثير — Quran 25:63",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-63-qortobi-وأضافهم-إلى-",
+          "title": {
+            "ml": "ഖുർതുബി: «ഇബാദുർറഹ്മാൻ» ആദരസംബോധനയും വ്യാകരണവും",
+            "en": "Al-Qurtubi: honored servants and their grammatical description"
+          },
+          "arabic_original": "وأضافهم إلى عبوديته تشريفا",
+          "translation": {
+            "ml": "ഖുർതുബി «عِبَادُ الرَّحْمَٰنِ» എന്ന ബന്ധം ദാസന്മാർക്ക് നൽകിയ ഒരു ആദരവിശേഷണമാണെന്ന് വിശദീകരിക്കുകയും തുടർന്നുള്ള «الَّذِينَ» എന്നതിന്റെ വ്യാകരണബന്ധത്തിനുള്ള വ്യത്യസ്ത നിർദേശങ്ങൾ നൽകുകയും ചെയ്യുന്നു. അതുവഴി പേരിന്റെ അർഥവും പെരുമാറ്റഗുണങ്ങളും വാക്യത്തിൽ എങ്ങനെ ചേരുന്നുവെന്നു വായിക്കാം.",
+            "en": "Al-Qurtubi explains the designation ‘servants of the All-Merciful’ as an honored ascription and records grammatical views about the relative construction that follows. These link the Divine Name to an extended portrait of upright character."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura25-aya63.html",
+          "source_reference": "تفسير القرطبي — Quran 25:63",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-85-katheer-وهو-أشبه-بال",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വിശദമായ അന്തിമദിന റിപ്പോർട്ടുകൾക്ക് സമാന നിലവാരമില്ല",
+            "en": "Ibn Kathir: distinguish vivid reports from securely established texts"
+          },
+          "arabic_original": "وهو أشبه بالصحة",
+          "translation": {
+            "ml": "വഫ്ദ് എന്ന പദത്തെ സംബന്ധിച്ച് ഇബ്നു കസീർ വ്യത്യസ്ത മുൻഗാമി അഭിപ്രായങ്ങളും ദീർഘമായ വിവരണമുള്ള ചില റിപ്പോർട്ടുകളും ഉദ്ധരിക്കുന്നു. ഒരു ദീർഘവിവരണത്തിനു ശേഷം അത് അലി (റ)യുടെ പ്രസ്താവനയായി വരുന്നതാണ് കൂടുതൽ ശരിയായ രൂപമെന്നു അദ്ദേഹം ശ്രദ്ധിപ്പിക്കുന്നു. അതിനാൽ എല്ലാ അലങ്കാരവിവരണങ്ങളും സഹീഹ് മർഫൂഅ് ഹദീസാക്കാൻ പാടില്ല.",
+            "en": "Ibn Kathir cites various early reports about wafdan and some unusually elaborate descriptions. He explicitly suggests that a long narration is more likely preserved as a statement from Ali rather than securely Prophetic. The card should not collapse all reports into Sahih hadith."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya85.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:85",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-87-katheer-شهادة-أن-لا-",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «അഹ്ദ്» തൗഹീദിന്റെ കരാറുമായി ബന്ധപ്പെട്ടു",
+            "en": "Ibn Kathir: the covenant concerns faith and its duties"
+          },
+          "arabic_original": "شهادة أن لا إله إلا الله",
+          "translation": {
+            "ml": "«عِندَ الرَّحْمَٰنِ عَهْدًا» എന്നതിൽ ഇബ്നു കസീർ തൗഹീദിന്റെ സാക്ഷ്യം, അതിന്റെ അവകാശങ്ങൾ നിറവേറ്റൽ എന്നിവയുടെ വ്യാഖ്യാനം ഉദ്ധരിക്കുന്നു. അതിനോട് ചേർത്ത് നബിവചനമായി സ്ഥിരീകരിക്കാത്ത എല്ലാ അധിക പ്രാർത്ഥനകളെയും പ്രവാചകസുന്നത്തായി മുദ്രകുത്തരുത്.",
+            "en": "Ibn Kathir interprets the covenant through confession of Allah's oneness and fulfilling its obligations. Supplementary reported supplications in the commentary require their own transmission review before being labelled Prophetic."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya87.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:87",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-96-katheer-سيجعل-لهم-ال",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സ്‌നേഹം വിശ്വാസത്തിന്റെയും സൽപ്രവൃത്തിയുടെയും സന്ദർഭം",
+            "en": "Ibn Kathir: love arises in the context of faith and righteous works"
+          },
+          "arabic_original": "سيجعل لهم الرحمن ودا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «وُدًّا» വിശ്വാസികളുടെ ഹൃദയങ്ങളിൽ ഉണ്ടാകുന്ന സ്‌നേഹവുമായി ബന്ധിപ്പിക്കുന്നു. അല്ലാഹു ഒരു ദാസനെ സ്‌നേഹിക്കുമ്പോൾ ജിബ്‌രീലിനോടുള്ള അറിയിപ്പിനെക്കുറിച്ചുള്ള ഹദീസ് ഇതോടൊപ്പം വിവരിക്കുന്നു. സ്‌നേഹം പിടിച്ചെടുക്കാനുള്ള രഹസ്യരീതി ആയത്തിൽ ഇല്ല.",
+            "en": "Ibn Kathir relates wuddan to affection arising among believers and discusses the report about divine love being announced to Gabriel. The verse does not provide a coercive charm for winning someone's affection."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya96.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:96",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-78-38-katheer-اختلف-المفسر",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «അർ-റൂഹ്» ആരെന്നതിലെ അഭിപ്രായഭേദം",
+            "en": "Ibn Kathir: several interpretations of al-Ruh"
+          },
+          "arabic_original": "اختلف المفسرون في المراد بالروح",
+          "translation": {
+            "ml": "«الرُّوحُ» എന്നത് ജിബ്‌രീൽ ആണെന്നതും മനുഷ്യരാണെന്നതും പ്രത്യേക സൃഷ്ടിയാണെന്നതും ഖുർആൻ തന്നെയാണെന്നതും അടക്കമുള്ള അഭിപ്രായങ്ങൾ ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. ത്വബരി ഒരേയൊരു അഭിപ്രായത്തിൽ തീർച്ചപ്പെടുത്തിയില്ലെന്നും ചർച്ച വരുന്നു. വ്യത്യാസമുള്ള വിഷയത്തിൽ ഒന്നുമാത്രം സ്ഥിരീകരിച്ച സത്യമായി അടയാളപ്പെടുത്തരുത്.",
+            "en": "Ibn Kathir lists the interpretations of al-Ruh as Gabriel, humanity, another created entity, and even the Quran, and remarks on al-Tabari's refusal to settle decisively on one. This controversy should not be flattened into a categorical ruling."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura78-aya38.html",
+          "source_reference": "تفسير ابن كثير — Quran 78:38",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-60-katheer-لا-نعرف-الرح",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അർ-റഹ്മാൻ എന്ന നാമത്തെക്കുറിച്ചുള്ള ചരിത്രപരമായ തർക്കം",
+            "en": "Ibn Kathir: historical dispute about using the Name"
+          },
+          "arabic_original": "لا نعرف الرحمن ولا الرحيم",
+          "translation": {
+            "ml": "ഈ വചനത്തിലെ «وَمَا الرَّحْمَٰنُ» എന്ന എതിർപ്പ് വിശദീകരിക്കുമ്പോൾ ഇബ്നു കസീർ ഹുദൈബിയ്യ കരാറിലെ ബിസ്മില്ലാഹ് എഴുതുന്നതിനെച്ചൊല്ലിയുള്ള തർക്കവും ഓർമ്മിപ്പിക്കുന്നു. പിന്നീട് 17:110-ലെ അല്ലാഹുവിന്റെയും അർ-റഹ്മാന്റെയും നാമങ്ങളിൽ വിളിക്കാമെന്ന പ്രഖ്യാപനവുമായി ബന്ധിപ്പിക്കുന്നു. ഇത് നാമത്തിന്റെ ചരിത്രപരമായ അംഗീകാരം പഠിക്കാനുള്ള വിഷയമാണ്.",
+            "en": "Ibn Kathir ties the rejection of al-Rahman to objections during the treaty of Hudaybiyyah to writing the basmalah, and links the answer to Quran 17:110. This provides important historical context for the Name's use."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya60.html",
+          "source_reference": "تفسير ابن كثير — Quran 25:60",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-55-1-katheer-هذا-حديث-غري",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ജിന്നുകളുടെ മറുപടി റിപ്പോർട്ടിന്റെ ഗ്രേഡിങ്ങ്",
+            "en": "Ibn Kathir: grade the reported response of the jinn separately"
+          },
+          "arabic_original": "هذا حديث غريب",
+          "translation": {
+            "ml": "സൂറത്ത് അർ-റഹ്മാനിലെ ആവർത്തിക്കുന്ന «فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ» എന്ന വചനത്തിനു ജിന്നുകൾ മറുപടി പറഞ്ഞു എന്നൊരു റിപ്പോർട്ട് ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. അതിന്റെ ഒരു വഴിയെ തിർമിദി «غريب» എന്ന് വിളിച്ചതും മറ്റൊരു വഴിയെ സംബന്ധിച്ച പരാമർശങ്ങളും ഉണ്ട്. ആ റിപ്പോർട്ട് സ്ഥിരീകരിക്കാതെ പൂർണ സുന്നത്ത് ആയി അവതരിപ്പിക്കരുത്.",
+            "en": "Ibn Kathir quotes a report that the jinn responded to the refrain of Surat al-Rahman. He also preserves al-Tirmidhi's qualification of a transmission as gharib and reports other routes. Its grading must be evaluated rather than assuming every narrated ritual is unequivocally authentic."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya1.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        }
+      ]
+    }
+  }
+}
