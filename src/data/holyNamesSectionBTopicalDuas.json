@@ -1,0 +1,492 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "പ്രാഥമിക ഖുർആൻ പാഠവും തഫ്സീർ പേജും പരിശോധിച്ച വിഷയബന്ധിത ദുആകളുടെ വിപുലീകരണം. ഒരു നാമവുമായി വിഷയബന്ധമുണ്ടെന്നത് ആ നാമത്തിന് പ്രത്യേക എണ്ണമോ വാഗ്ദാനഫലമോ സ്ഥിരപ്പെടുത്തിയതായി അർഥമാക്കരുത്. നിലവിലുള്ള വിവരങ്ങൾ മാറ്റാതെ ചേർക്കുന്നു.",
+    "en": "Thematic supplications cross-referenced to named cards from Quranic text and tafsir. Thematic relevance does not establish a name-specific count or guaranteed outcome. Existing card data is preserved."
+  },
+  "topics": [
+    {
+      "id": "quran-21-83-ayyub",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "അയ്യൂബ് നബി (അ) യുടെ പ്രയാസവേളയിലെ പ്രാർത്ഥന",
+        "en": "Ayyub's prayer in affliction"
+      },
+      "arabic_original": "أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+      "translation": {
+        "ml": "എനിക്ക് പ്രയാസം ബാധിച്ചിരിക്കുന്നു; കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും കരുണയുള്ളവൻ നീയാണ്. രോഗത്തെയും മറ്റു പരീക്ഷണങ്ങളെയും സംബന്ധിച്ച അയ്യൂബ് നബിയുടെ പ്രാർത്ഥനയുടെ ഭാഗമാണിത്. ശാരീരിക ചികിത്സയ്ക്ക് പകരമെന്ന അവകാശവാദമില്ല.",
+        "en": "Harm has touched me, and You are the Most Merciful of those who show mercy. This is the prayer portion of Ayyub's appeal amid trials, not a substitute for medical treatment."
+      },
+      "source_reference": "Quran 21:83 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya83.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-21-87-yunus",
+      "name_ids": [
+        "PDF-HN-013"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "യൂനുസ് നബി (അ) യുടെ ദുആ",
+        "en": "Yunus's prayer of repentance in distress"
+      },
+      "arabic_original": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+      "translation": {
+        "ml": "നീയല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. നീ പരിശുദ്ധനാണ്. തീർച്ചയായും ഞാൻ തെറ്റ് ചെയ്തവരിൽപ്പെട്ടവനായിരുന്നു. യൂനുസ് നബി ഇരുട്ടുകളിൽവെച്ച് നടത്തിയ പ്രാർത്ഥനയാണിത്.",
+        "en": "There is no deity except You. Glory be to You; I have indeed been among the wrongdoers. This is Yunus's prayer in the darkness."
+      },
+      "source_reference": "Quran 21:87 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya87.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-28-24-musa",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-013"
+      ],
+      "purpose": "provision",
+      "title": {
+        "ml": "മൂസാ നബി (അ): ആവശ്യവേളയിലെ നന്മയ്ക്കായുള്ള ദുആ",
+        "en": "Musa's supplication while in need"
+      },
+      "arabic_original": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "translation": {
+        "ml": "എന്റെ രക്ഷിതാവേ, നീ എനിക്ക് നൽകുന്ന ഏതു നന്മയ്ക്കും ഞാൻ ആവശ്യക്കാരനാണ്. മദ്‌യനിലെത്തിയ മൂസാ നബിയുടെ ആവശ്യവേളയിലാണ് ഈ ദുആ. നിശ്ചിത സമ്പത്തോ വരുമാനമോ ഉറപ്പുനൽകുന്ന മന്ത്രമല്ല.",
+        "en": "My Lord, I am truly in need of any good You send down to me. Musa prayed this in need after arriving at Madyan; it is not a guarantee of any set income."
+      },
+      "source_reference": "Quran 28:24 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya24.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-17-24-parents",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002"
+      ],
+      "purpose": "relationships",
+      "title": {
+        "ml": "മാതാപിതാക്കൾക്ക് കരുണയ്ക്കായി",
+        "en": "Mercy for one's parents"
+      },
+      "arabic_original": "رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+      "translation": {
+        "ml": "എന്റെ രക്ഷിതാവേ, അവർ എന്നെ ചെറുപ്പത്തിൽ വളർത്തിയതുപോലെ അവരോടും കരുണ കാണിക്കേണമേ. മാതാപിതാക്കളോടുള്ള കാരുണ്യവും വിനയവും പഠിപ്പിക്കുന്ന ഖുർആൻ ദുആയുടെ ഭാഗമാണിത്.",
+        "en": "My Lord, have mercy upon them as they raised me when I was small. This supplication appears in the Quranic instruction to treat parents with humility and kindness."
+      },
+      "source_reference": "Quran 17:24 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya24.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-25-74-family",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002",
+        "PDF-HN-015"
+      ],
+      "purpose": "relationships",
+      "title": {
+        "ml": "കുടുംബത്തിന്റെയും സന്താനങ്ങളുടെയും നന്മയ്ക്കായി",
+        "en": "For the wellbeing of spouses and children"
+      },
+      "arabic_original": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളുടെ ഇണകളിലും സന്താനങ്ങളിലും നിന്ന് ഞങ്ങൾക്ക് കണ്ണിന് കുളിർമ നൽകുന്നവരെ നൽകേണമേ; ഭക്തന്മാർക്ക് മാതൃകയായവരാക്കേണമേ. തഫ്സീറുകൾ ഇതിനെ ദൈവഭക്തിയും സൽസ്വഭാവവും ഉള്ള കുടുംബത്തെ ആഗ്രഹിക്കുന്ന പ്രാർത്ഥനയായി വിശദീകരിക്കുന്നു.",
+        "en": "Our Lord, grant us delight in our spouses and offspring and make us examples for the mindful. Exegetes relate this to a family distinguished by righteousness, not merely physical beauty."
+      },
+      "source_reference": "Quran 25:74 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya74.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-7-23-adam",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ആദം നബി (അ) യുടെയും ഹവ്വായുടെയും ക്ഷമാപണ ദുആ",
+        "en": "Adam and Eve's prayer for forgiveness"
+      },
+      "arabic_original": "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങൾ ഞങ്ങളോടുതന്നെ അന്യായം ചെയ്തിരിക്കുന്നു. നീ ഞങ്ങൾക്ക് പൊറുത്തുതരികയും കരുണ കാണിക്കുകയും ചെയ്തില്ലെങ്കിൽ ഞങ്ങൾ നഷ്ടക്കാരിൽപ്പെട്ടവരാകും. ഖുർആനിൽ രേഖപ്പെടുത്തിയ ആദമിന്റെയും ഹവ്വായുടെയും പ്രാർത്ഥനയാണിത്.",
+        "en": "Our Lord, we have wronged ourselves. Unless You forgive us and show us mercy, we will surely be among the losers. This is the Quranic prayer of Adam and Eve."
+      },
+      "source_reference": "Quran 7:23 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya23.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-3-8-steady-hearts",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-018"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഹൃദയങ്ങൾക്ക് സ്ഥിരതയും കരുണയും ലഭിക്കാൻ",
+        "en": "Steadfast hearts and mercy"
+      },
+      "arabic_original": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, നീ ഞങ്ങളെ നേർവഴിയിലാക്കിയശേഷം ഹൃദയങ്ങളെ വ്യതിചലിപ്പിക്കരുതേ; നിന്റെ അടുക്കൽനിന്ന് ഞങ്ങൾക്ക് കരുണ നൽകേണമേ. തീർച്ചയായും നീ മഹാദാതാവാണ്. ഇതിൽ അൽ-വഹ്ഹാബ് നേരിട്ട് വരുന്നു; അർ-റഹ്മാൻ എന്ന വാക്ക് നേരിട്ട് വരുന്നില്ല.",
+        "en": "Our Lord, do not let our hearts deviate after You have guided us; grant us mercy from Yourself. You are the Bestower. This verse directly invokes al-Wahhab, not al-Rahman by name."
+      },
+      "source_reference": "Quran 3:8 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-2-201-two-worlds",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-016"
+      ],
+      "purpose": "provision",
+      "title": {
+        "ml": "ഇഹപരലോകങ്ങളിലെ നന്മയ്ക്കുള്ള ദുആ",
+        "en": "Supplication for good in both worlds"
+      },
+      "arabic_original": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, ഇഹലോകത്ത് നന്മയും പരലോകത്ത് നന്മയും നൽകേണമേ; നരകശിക്ഷയിൽനിന്ന് ഞങ്ങളെ കാത്തുരക്ഷിക്കേണമേ. ഇബ്നു കസീർ ഇഹലോകനന്മയുടെ ഉദാഹരണങ്ങളായി ആരോഗ്യം, വിശാലമായ ഉപജീവനം, ഉപകാരപ്രദമായ അറിവ് എന്നിവയും വിവരിക്കുന്നു.",
+        "en": "Our Lord, grant us good in this world and good in the Hereafter, and protect us from the punishment of the Fire. Ibn Kathir includes health, ample provision and beneficial knowledge among worldly good."
+      },
+      "source_reference": "Quran 2:201 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya201.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-2-286-full",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002",
+        "PDF-HN-013"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "അൽ-ബഖറ 2:286 — സമ്പൂർണ ആയത്തും വിശാലമായ ദുആയും",
+        "en": "Al-Baqarah 2:286 — complete verse and extended prayer"
+      },
+      "arabic_original": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+      "translation": {
+        "ml": "അല്ലാഹു ഒരാളെയും അയാളുടെ കഴിവിനപ്പുറം ബാധ്യതപ്പെടുത്തുന്നില്ല. ഓരോരുത്തർക്കും അവർ നേടിയ നന്മയുടെ ഫലവും ചെയ്ത തിന്മയുടെ ബാധ്യതയും ഉണ്ട്. ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങൾ മറന്നുപോയാലോ തെറ്റുചെയ്താലോ ഞങ്ങളെ ശിക്ഷിക്കരുതേ. ഞങ്ങൾക്ക് മുമ്പുള്ളവർക്കുമേൽ ചുമത്തിയതുപോലെ കനത്ത ബാധ്യത ഞങ്ങളുടെമേൽ ചുമത്തരുതേ. ഞങ്ങൾക്ക് താങ്ങാനാകാത്തതും ചുമത്തരുതേ. ഞങ്ങൾക്ക് മാപ്പ് നൽകുകയും പൊറുക്കുകയും കരുണ കാണിക്കുകയും ചെയ്യേണമേ. നീയാണ് ഞങ്ങളുടെ രക്ഷാധികാരി; സത്യനിഷേധികളായ ജനതയ്‌ക്കെതിരെ ഞങ്ങളെ സഹായിക്കേണമേ. മുകളിൽ ആയത്ത് മുഴുവനായാണ് നൽകിയിരിക്കുന്നത്.",
+        "en": "Allah does not burden a soul beyond its capacity. Each soul receives the good it earns and bears the evil it commits. Our Lord, do not hold us to account if we forget or err. Do not lay on us the heavy burden placed on those before us. Do not burden us beyond our strength. Pardon, forgive and have mercy on us. You are our Protector; help us against the disbelieving people. The entire verse is reproduced above."
+      },
+      "source_reference": "Quran 2:286 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya286.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഈ ആയത്ത് മുഴുവനായി ഉദ്ധരിച്ചിരിക്കുന്നു. വ്യക്തിഗത നാമ-വസീഫയായി പ്രത്യേക എണ്ണം നിർദേശിച്ചിട്ടില്ല.",
+        "en": "The whole verse is quoted. It does not prescribe a name-specific recitation count."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-3-26-sovereignty",
+      "name_ids": [
+        "PDF-HN-003",
+        "PDF-HN-013"
+      ],
+      "purpose": "authority",
+      "title": {
+        "ml": "രാജാധികാരവും നന്മയും അല്ലാഹുവിന്റെ കൈകളിൽ — ആയത്ത് 3:26",
+        "en": "Sovereignty and good belong to Allah — full verse 3:26"
+      },
+      "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": {
+        "ml": "പറയുക: അല്ലാഹുവേ, പരമാധികാരത്തിന്റെ ഉടമയേ! നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് നീക്കുകയും ചെയ്യുന്നു; നീ ഉദ്ദേശിക്കുന്നവർക്ക് അഭിമാനം നൽകുകയും ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്. ഇത് അധികാരം ഉറപ്പായും ലഭിക്കുമെന്ന വാഗ്ദാനമല്ല; അല്ലാഹുവിന്റെ പരമാധികാരം അംഗീകരിക്കുന്ന വചനമാണ്.",
+        "en": "Say: O Allah, Owner of sovereignty, You give authority to whom You will and take it from whom You will; You honor whom You will and humble whom You will. In Your hand is all good; You have power over all things. This affirms divine sovereignty rather than guaranteeing personal status."
+      },
+      "source_reference": "Quran 3:26 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഈ ആയത്ത് മുഴുവനായി ഉദ്ധരിച്ചിരിക്കുന്നു. വ്യക്തിഗത നാമ-വസീഫയായി പ്രത്യേക എണ്ണം നിർദേശിച്ചിട്ടില്ല.",
+        "en": "The whole verse is quoted. It does not prescribe a name-specific recitation count."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-40-7-angel-prayer",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-002"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "വിശ്വാസികൾക്കായി മലക്കുകൾ നടത്തുന്ന പ്രാർത്ഥന — 40:7",
+        "en": "Angels' prayer for believers — Quran 40:7"
+      },
+      "arabic_original": "رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَّحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, നിന്റെ കരുണയും അറിവും എല്ലാറ്റിനെയും ഉൾക്കൊള്ളുന്നു; പശ്ചാത്തപിക്കുകയും നിന്റെ വഴി പിന്തുടരുകയും ചെയ്യുന്നവർക്ക് പൊറുത്തുതരികയും അവരെ നരകശിക്ഷയിൽനിന്ന് കാത്തുരക്ഷിക്കുകയും ചെയ്യേണമേ. ഈ വചനത്തിൽ മലക്കുകൾ നടത്തുന്ന പ്രാർത്ഥനയാണ് വിവരിക്കുന്നത്; പ്രത്യേക എണ്ണം നിർദേശിക്കുന്ന മനുഷ്യരുടെ വസീഫയായി വചനം അവതരിപ്പിക്കുന്നില്ല.",
+        "en": "Our Lord, Your mercy and knowledge encompass everything. Forgive those who repent and follow Your way, and protect them from the punishment of Hell. The Quran narrates an angelic prayer; it is not itself a numbered human wazifa."
+      },
+      "source_reference": "Quran 40:7 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya7.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-66-8-light",
+      "name_ids": [
+        "PDF-HN-004",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "പരലോകത്തെ പ്രകാശവും ക്ഷമയും ചോദിക്കുന്ന ദുആ",
+        "en": "Prayer for completion of light and forgiveness"
+      },
+      "arabic_original": "رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": {
+        "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളുടെ പ്രകാശം ഞങ്ങൾക്കു പൂർണമാക്കുകയും ഞങ്ങൾക്ക് പൊറുത്തുതരികയും ചെയ്യേണമേ; തീർച്ചയായും നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്. ഖുർആൻ 66:8-ൽ പരലോകസന്ദർഭത്തിൽ വിശ്വാസികളുടെ പ്രാർത്ഥനയായാണ് ഇത് രേഖപ്പെടുത്തിയിരിക്കുന്നത്.",
+        "en": "Our Lord, complete our light for us and forgive us; You have power over all things. In Quran 66:8 this is depicted as a prayer of the believers in the Hereafter."
+      },
+      "source_reference": "Quran 66:8 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura66-aya8.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-10-86-mercy-protection",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-005"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "പീഡനത്തിൽനിന്നും പ്രയാസത്തിൽനിന്നും കരുണയാൽ രക്ഷ തേടൽ",
+        "en": "Appeal for deliverance through mercy"
+      },
+      "arabic_original": "وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِينَ",
+      "translation": {
+        "ml": "നിന്റെ കരുണയാൽ സത്യനിഷേധികളായ ജനങ്ങളിൽനിന്ന് ഞങ്ങളെ രക്ഷിക്കേണമേ. ഫിർഔനിന്റെ ജനതയെ സംബന്ധിച്ചുള്ള ബനൂ ഇസ്രാഈലിന്റെ ചരിത്രപ്രാർത്ഥനയുടെ ഭാഗമാണിത്; എല്ലാ സാഹചര്യത്തിനുമുള്ള പ്രത്യേക സംഖ്യയുള്ള മന്ത്രമായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Deliver us through Your mercy from the disbelieving people. This is part of the historical appeal of the Children of Israel concerning Pharaoh's people, not a prescribed numbered charm."
+      },
+      "source_reference": "Quran 10:86 · تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya86.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_supplication",
+      "source_scope": {
+        "ml": "ഇത് വിഷയം അടിസ്ഥാനമാക്കി ബന്ധിപ്പിച്ച ഖുർആൻ ദുആയാണ്; ഈ നാമത്തിന് പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്ന് ഈ ആയത്ത് പറയുന്നില്ല. ഉദ്ധരിച്ചത് ആയത്തിലെ പ്രാർത്ഥനാഭാഗം മാത്രമാണ്.",
+        "en": "The Quranic prayer is linked thematically, not asserted as a name-specific numbered wazifa. Only the prayer portion of the verse is quoted."
+      },
+      "count": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിനായി പ്രത്യേക ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not prescribe a name-specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ആയത്ത് ഈ നാമത്തിന് പ്രത്യേക ദിവസമോ സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse does not specify a name-specific weekday, time or number of days."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    }
+  ]
+}
