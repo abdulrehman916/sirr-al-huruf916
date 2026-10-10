@@ -536,5 +536,477 @@
       }
     ],
     "topics": []
+  },
+  "PDF-HN-006": {
+    "name_id": "PDF-HN-006",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-മുഅ്മിൻ (الْمُؤْمِنُ) എന്നത് അൽ-ഹഷ്ർ 59:23-ൽ വ്യക്തമായി വരുന്ന ദൈവനാമമാണ്. ഈ പദത്തിന്റെ വിശദീകരണത്തിൽ പണ്ഡിതന്മാർ വിവിധ വശങ്ങൾ രേഖപ്പെടുത്തിയിട്ടുണ്ട്: അല്ലാഹു തന്റെ ദാസരെ അനീതിയിൽനിന്ന് നിർഭയരാക്കുന്നു എന്ന അഭിപ്രായവും, സന്ദേശവാഹകരെ തെളിവുകളിലൂടെ സത്യവാൻമാരായി സ്ഥിരീകരിക്കുന്നു എന്ന വ്യാഖ്യാനവും അതിലുണ്ട്. ഇവ ഭാഷാപരവും തഫ്സീർപരവുമായ വ്യാഖ്യാനങ്ങളാണ്; ഏതെങ്കിലും പ്രത്യേക ചിഹ്നം കൊണ്ട് സുരക്ഷ ഉറപ്പാകുമെന്ന് ഈ വചനം പറയുന്നില്ല. ഇബ്നു കസീറിന്റെയും സഅ്ദിയുടെയും അഭിപ്രായങ്ങൾ വേർതിരിച്ച് താഴെ ചേർത്തിരിക്കുന്നു.",
+      "en": "Al-Mumin occurs explicitly in Quran 59:23. Classical exegesis reports several dimensions: granting safety against injustice, and confirming the truth of messengers through clear evidence. The interpretations are attributed separately; the verse itself does not authenticate protective diagrams or guaranteed results."
+    },
+    "evidence": [
+      {
+        "id": "q59-23-mumin",
+        "title": {
+          "ml": "അൽ-മുഅ്മിൻ — 59:23",
+          "en": "Al-Mumin — Quran 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അൽ-മുഅ്മിൻ എന്ന നാമം ഇവിടെ നേരിട്ട് വരുന്നു.",
+          "en": "Al-Mumin appears directly in this verse."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-mumin",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: വിവിധ വ്യാഖ്യാനങ്ങൾ",
+          "en": "Ibn Kathir: recorded interpretive views"
+        },
+        "translation": {
+          "ml": "സൃഷ്ടികളെ അല്ലാഹു അനീതിക്ക് ഇരയാക്കുകയില്ല എന്ന വിശദീകരണവും സത്യത്തെ സ്ഥിരീകരിക്കുന്നു എന്ന വ്യാഖ്യാനവും ഇബ്നു കസീർ വിവിധ മുൻഗാമികളിൽനിന്ന് രേഖപ്പെടുത്തുന്നു.",
+          "en": "Ibn Kathir transmits explanations about safeguarding creation from injustice and affirming what is true."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "saadi-mumin",
+        "title": {
+          "ml": "സഅ്ദി: ദൂതന്മാരുടെ സത്യസന്ധത സ്ഥിരീകരിക്കുന്നു",
+          "en": "Al-Saadi: confirms His messengers"
+        },
+        "translation": {
+          "ml": "സഅ്ദി അല്ലാഹു വ്യക്തമായ ദൃഷ്ടാന്തങ്ങൾകൊണ്ട് തന്റെ ദൂതന്മാരുടെ സന്ദേശം സ്ഥിരീകരിക്കുന്നവൻ എന്ന അർഥം ഇവിടെ നൽകുന്നു.",
+          "en": "Al-Saadi explains the name through Allah's confirmation of His messengers with clear signs."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+        "source_reference": "تفسير السعدي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-007": {
+    "name_id": "PDF-HN-007",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-മുഹൈമിൻ (الْمُهَيْمِنُ) അൽ-ഹഷ്ർ 59:23-ലെ നാമമാണ്. സൃഷ്ടികളെയും അവരുടെ പ്രവർത്തനങ്ങളെയും നിരീക്ഷിക്കുകയും സാക്ഷ്യം വഹിക്കുകയും ചെയ്യുന്നവൻ എന്ന അർഥമാണ് പ്രധാന തഫ്സീർ വ്യാഖ്യാനങ്ങളിൽ ഒന്ന്. അൽ-ബഗവി രേഖപ്പെടുത്തുന്ന വ്യാഖ്യാനങ്ങൾക്കിടയിൽ നിരീക്ഷകൻ, സംരക്ഷകൻ, സാക്ഷി എന്നിങ്ങനെ വാക്കിന്റെ വ്യത്യസ്ത വശങ്ങളുണ്ട്. ഈ വ്യാഖ്യാനങ്ങളെല്ലാം ഒരേ ആചാരമാർഗത്തിന്റെയോ വഫ്ഖിന്റെയോ നിർദേശം അല്ല. നേരിട്ടുള്ള ഖുർആൻ പാഠവും പണ്ഡിതരുടെ വ്യാഖ്യാനവും വേർതിരിച്ചാണ് കൊടുത്തിരിക്കുന്നത്.",
+      "en": "Al-Muhaymin is named in 59:23. Tafsir discusses witnessing and watching over creation, with transmitted explanations including guardian and observer. These distinct lexical interpretations are not directions for a particular talisman or ritual."
+    },
+    "evidence": [
+      {
+        "id": "q59-23-muhaymin",
+        "title": {
+          "ml": "അൽ-മുഹൈമിൻ — 59:23",
+          "en": "Al-Muhaymin — Quran 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അൽ-മുഹൈമിൻ എന്ന നാമം ആയത്തിൽ നേരിട്ട് വരുന്നു.",
+          "en": "The divine name al-Muhaymin is stated here."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-muhaymin",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: സാക്ഷിയും നിരീക്ഷകനും",
+          "en": "Ibn Kathir: witness and watcher"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ സൃഷ്ടികളുടെ പ്രവൃത്തികളിൽ സാക്ഷിയായിരിക്കുന്നവൻ, അവരെ നിരീക്ഷിക്കുന്നവൻ എന്നീ വ്യാഖ്യാനങ്ങൾ നൽകുന്നു.",
+          "en": "Ibn Kathir reports interpretations meaning a witness over creation and observer of their deeds."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "baghawi-muhaymin",
+        "title": {
+          "ml": "ബഗവി: സാക്ഷി, നിരീക്ഷകൻ, സംരക്ഷകൻ",
+          "en": "Al-Baghawi: witness, observer, guardian"
+        },
+        "translation": {
+          "ml": "ബഗവി ഈ പദത്തിന്റെ വിവിധ പഴയ വ്യാഖ്യാനങ്ങൾ വേർതിരിച്ച് രേഖപ്പെടുത്തുന്നു; അവയെ ഒരേയൊരു സ്ഥിരീകരിച്ച പദോത്ഭവമായി ഇവിടെ കൂട്ടിച്ചേർക്കുന്നില്ല.",
+          "en": "Al-Baghawi records differing older explanations, kept distinct rather than asserted as one proven etymology."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+        "source_reference": "تفسير البغوي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-008": {
+    "name_id": "PDF-HN-008",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-അസീസ് (الْعَزِيزُ) അല്ലാഹുവിന്റെ മഹത്തായ ശക്തിയും ആർക്കും കീഴടക്കാനാകാത്ത അധിപത്യവും സൂചിപ്പിക്കുന്ന നാമമാണ്. അൽ-ഹഷ്ർ 59:23-ലും ആലു ഇംറാൻ 3:6-ലും വ്യക്തമായി വരുന്നു. ഖുർആനിൽ 'അൽ-അസീസ് അൽ-ഹകീം' എന്ന കൂട്ടുപ്രയോഗം അല്ലാഹുവിന്റെ ശക്തി അവന്റെ ജ്ഞാനത്തിൽനിന്ന് വേറിട്ടതല്ലെന്ന അർഥവ്യാഖ്യാനത്തിനുള്ള പശ്ചാത്തലമാണ്. എന്നാൽ നാമം ഒരു നിശ്ചിത എണ്ണം ഓതിയാൽ എതിരാളികളെ നിർബന്ധമായി തോൽപ്പിക്കും എന്ന നിഗമനം ഈ ആയത്തുകളിൽനിന്നു മാത്രം എടുക്കാനാവില്ല.",
+      "en": "Al-Aziz expresses unconquerable might and majesty. It occurs in 59:23 and together with al-Hakim in 3:6. Classical tafsir places power alongside divine wisdom; these verses do not establish numerical rites or guaranteed victory over opponents."
+    },
+    "evidence": [
+      {
+        "id": "q59-23-aziz",
+        "title": {
+          "ml": "അൽ-അസീസ് — 59:23",
+          "en": "Al-Aziz — Quran 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അൽ-അസീസ് ഈ ദൈവനാമങ്ങളുടെ നിരയിൽ വരുന്നു.",
+          "en": "Al-Aziz occurs in this list of divine names."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q3-6-aziz",
+        "title": {
+          "ml": "അൽ-അസീസുൽ ഹകീം — 3:6",
+          "en": "Al-Aziz al-Hakim — Quran 3:6"
+        },
+        "arabic_original": "لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+        "translation": {
+          "ml": "ഈ ആയത്തിൽ അൽ-അസീസ് അൽ-ഹകീം എന്ന സംയുക്തപ്രയോഗമുണ്ട്.",
+          "en": "This verse pairs al-Aziz with al-Hakim."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya6.html",
+        "source_reference": "Quran 3:6 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-aziz",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: കീഴടക്കപ്പെടാത്ത മഹത്വം",
+          "en": "Ibn Kathir: unconquerable might"
+        },
+        "translation": {
+          "ml": "ആധിപത്യത്തെയും മഹത്വത്തെയും മറ്റൊന്നും കീഴടക്കാനാവില്ലെന്ന നിലയിൽ ഇബ്നു കസീർ അൽ-അസീസ് വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir relates the name to unmatched might, power and exaltation."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "saadi-aziz",
+        "title": {
+          "ml": "സഅ്ദി: എല്ലാ സൃഷ്ടിയും അവനു കീഴിൽ",
+          "en": "Al-Saadi: all creation under His authority"
+        },
+        "translation": {
+          "ml": "അല്ലാഹുവിനെ ആരും തോൽപ്പിക്കില്ല; സൃഷ്ടികളൊക്കെയും അവന്റെ അധികാരത്തിനു കീഴിലാണ് എന്ന വിശദീകരണമാണ് സഅ്ദി നൽകുന്നത്.",
+          "en": "Al-Saadi explains that none can overpower Allah and everything is subject to His authority."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+        "source_reference": "تفسير السعدي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-009": {
+    "name_id": "PDF-HN-009",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-ജബ്ബാർ (الْجَبَّارُ) അൽ-ഹഷ്ർ 59:23-ൽ നേരിട്ട് വരുന്നു. ഈ നാമത്തെക്കുറിച്ചുള്ള വ്യാഖ്യാനങ്ങൾ ഒരു പദത്തിലൊതുങ്ങുന്നതല്ല: മഹാശക്തിയോടെ എല്ലാറ്റിനും മേൽ അധികാരമുള്ളവൻ എന്നും തകർന്നത് നന്നാക്കുന്നവൻ എന്നും പണ്ഡിതന്മാർ വിശദീകരിക്കുന്ന വശങ്ങളുണ്ട്. ഇബ്നു കസീർ മുൻഗാമികളിൽ നിന്നുള്ള വ്യത്യസ്ത അഭിപ്രായങ്ങൾ കൊടുക്കുന്നു; സഅ്ദി തകർന്നവർക്കു പിന്തുണയും ദുർബലർക്കു സഹായവും നൽകുന്നതുൾപ്പെടുന്ന വ്യാഖ്യാനം രേഖപ്പെടുത്തുന്നു. ഈ ആശയങ്ങൾ മാത്രം അടിസ്ഥാനമാക്കി അത്ഭുതചികിത്സയോ പ്രത്യേക മൊഴികളോ ഉറപ്പുനൽകാൻ പാടില്ല.",
+      "en": "Al-Jabbar occurs in 59:23. Classical explanations include overpowering sovereignty and restoration or support for the broken and needy. Interpretive strands are kept separate; no miraculous therapy or fixed-number practice is implied."
+    },
+    "evidence": [
+      {
+        "id": "q59-23-jabbar",
+        "title": {
+          "ml": "അൽ-ജബ്ബാർ — 59:23",
+          "en": "Al-Jabbar — Quran 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "അൽ-ജബ്ബാർ എന്ന നാമം നേരിട്ട് വരുന്നു.",
+          "en": "The name al-Jabbar appears explicitly."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-jabbar",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: നിയന്ത്രണവും കാര്യങ്ങൾ ശരിയാക്കലും",
+          "en": "Ibn Kathir: authority and setting affairs right"
+        },
+        "translation": {
+          "ml": "അൽ-ജബ്ബാറിനെ സൃഷ്ടികളുടെ കാര്യങ്ങളെ ശരിയായ നിലയിലാക്കുന്നവൻ എന്നും അവരിൽ തന്റെ ഇച്ഛ നടപ്പാക്കുന്നവൻ എന്നും വ്യാഖ്യാനിക്കുന്ന അഭിപ്രായങ്ങൾ ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു.",
+          "en": "Ibn Kathir reports explanations involving authority and restoring or setting creation's affairs in order."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "saadi-jabbar",
+        "title": {
+          "ml": "സഅ്ദി: തകർന്നവർക്കുള്ള പിന്തുണ",
+          "en": "Al-Saadi: supporting the broken"
+        },
+        "translation": {
+          "ml": "സഅ്ദിയുടെ വ്യാഖ്യാനത്തിൽ അധികാരത്തിനു പുറമെ ബലഹീനരുടെ ആവശ്യങ്ങൾ നിറവേറ്റൽ, തകർന്നവരെ സഹായിക്കൽ തുടങ്ങിയ വശങ്ങളും വരുന്നു.",
+          "en": "Al-Saadi includes both compelling might and mending what is broken, such as aiding those in need."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+        "source_reference": "تفسير السعدي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-010": {
+    "name_id": "PDF-HN-010",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-മുതകബ്ബിർ (الْمُتَكَبِّرُ) അൽ-ഹഷ്ർ 59:23-ലെ നാമമാണ്. മനുഷ്യർക്കിടയിലെ അഹങ്കാരം പോലെ ഒരു കുറവായല്ല ഈ നാമത്തെ പണ്ഡിതർ വിശദീകരിക്കുന്നത്; ദൈവത്തിന് മാത്രം യോജിക്കുന്ന പരമമഹത്വവും എല്ലാ അപൂർണതകളിൽനിന്നുമുള്ള ഉന്നതത്വവും എന്ന അർഥത്തിലാണ് തഫ്സീർ കാണിക്കുന്നത്. ഈ വ്യത്യാസം വ്യക്തമാക്കാതെ സാധാരണ മലയാളത്തിലെ 'അഹങ്കാരി' എന്ന പരാമർശത്തിലേക്കു മാത്രം ചുരുക്കുന്നത് തെറ്റിദ്ധാരണ ഉണ്ടാക്കും. പഴയ ഗ്രന്ഥങ്ങളിലെ ദൃശ്യചിഹ്നങ്ങളോ പ്രത്യേക രീതികളോ ഈ ഖുർആൻ പാഠത്തിൽ നിർദേശിച്ചിട്ടില്ല.",
+      "en": "Al-Mutakabbir is named in Quran 59:23. Exegetes connect it to divine majesty and transcendence above flaws, not the blameworthy human trait of arrogance. The verse itself does not prescribe a diagram, talisman or ritual."
+    },
+    "evidence": [
+      {
+        "id": "q59-23-mutakabbir",
+        "title": {
+          "ml": "അൽ-മുതകബ്ബിർ — 59:23",
+          "en": "Al-Mutakabbir — Quran 59:23"
+        },
+        "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": {
+          "ml": "ഈ വചനത്തിലെ ദൈവനാമങ്ങളിൽ അൽ-മുതകബ്ബിർ വരുന്നു.",
+          "en": "Al-Mutakabbir appears among Allah's names in this verse."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "Quran 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-mutakabbir",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: ദൈവത്തിന് മാത്രം യോജിക്കുന്ന മഹത്വം",
+          "en": "Ibn Kathir: majesty proper to God"
+        },
+        "translation": {
+          "ml": "മഹത്വം ദൈവത്തിന് യോജിക്കുന്ന വിധമാണ് ഈ പദം വിശദീകരിക്കപ്പെടുന്നത് എന്നും എല്ലാ തിന്മകളിൽനിന്നും അവൻ ഉന്നതനാണെന്നും തഫ്സീർ പറയുന്നു.",
+          "en": "Ibn Kathir relates this name to divine greatness and transcendence above evil."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "baghawi-mutakabbir",
+        "title": {
+          "ml": "ബഗവി: എല്ലാ അനർഹമായ വിശേഷണങ്ങളിൽനിന്നും ഉന്നതൻ",
+          "en": "Al-Baghawi: exalted above what is unworthy"
+        },
+        "translation": {
+          "ml": "അല്ലാഹുവിന് യോജിക്കാത്ത എല്ലാ തിന്മകളിലുംനിന്നും കുറവുകളിലുംനിന്നും ഉന്നതനാണെന്ന വ്യാഖ്യാനവും പരമമഹത്വമെന്ന വ്യാഖ്യാനവും ബഗവി രേഖപ്പെടുത്തുന്നു.",
+          "en": "Al-Baghawi records explanations of divine transcendence above evil and unsurpassed greatness."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+        "source_reference": "تفسير البغوي — الحشر 59:23",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-011": {
+    "name_id": "PDF-HN-011",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-ഖാലിഖ് (الْخَالِقُ) സർവസൃഷ്ടികർത്താവ് എന്ന അർഥമുള്ള ദൈവനാമമാണ്. അൽ-ഹഷ്ർ 59:24-ൽ അൽ-ഖാലിഖ്, അൽ-ബാരിഅ്, അൽ-മുസവ്വിർ എന്നിവ ഒരുമിച്ചു വരുന്നു. അൽ-അൻആം 6:102-ൽ അല്ലാഹുവാണ് എല്ലാറ്റിന്റെയും സൃഷ്ടികർത്താവെന്ന പ്രസ്താവനയുണ്ട്. ഇബ്നു കസീർ അൽ-ഖൽഖ് എന്ന ആശയത്തിന്റെ കൃത്യമായ നിർണയവും രൂപപ്പെടുത്തലും വിശദീകരിക്കുകയും അൽ-ബാരിഅ് എന്നതുമായി ഉള്ള വ്യത്യാസം ചർച്ച ചെയ്യുകയും ചെയ്യുന്നു. ലോകസൃഷ്ടിയും മനുഷ്യനിർമ്മിത കലാസൃഷ്ടിയും ഒരേ ശക്തിയെന്നു തെറ്റായി തുല്യപ്പെടുത്തരുത്. ഒരു നാമത്തിന്റെ ഖുർആൻ അർഥം അതുമായി ബന്ധപ്പെടുത്തിയ അതിഭൗതിക ഫലങ്ങളുടെ തെളിവല്ല.",
+      "en": "Al-Khaliq means the Creator. Quran 59:24 places it beside al-Bari and al-Musawwir, while 6:102 describes Allah as Creator of everything. Ibn Kathir distinguishes divine determination from bringing into existence. These passages do not validate promises based on numerical recitations or artistic diagrams."
+    },
+    "evidence": [
+      {
+        "id": "q59-24-khaliq",
+        "title": {
+          "ml": "അൽ-ഖാലിഖ് — 59:24",
+          "en": "Al-Khaliq — Quran 59:24"
+        },
+        "arabic_original": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "translation": {
+          "ml": "ഈ ആയത്തിൽ അൽ-ഖാലിഖ് എന്ന നാമം അൽ-ബാരിഅ്, അൽ-മുസവ്വിർ എന്നിവയ്ക്കൊപ്പം വരുന്നു.",
+          "en": "Al-Khaliq occurs with al-Bari and al-Musawwir."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+        "source_reference": "Quran 59:24",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q6-102-khaliq",
+        "title": {
+          "ml": "എല്ലാറ്റിന്റെയും സൃഷ്ടികർത്താവ് — 6:102",
+          "en": "Creator of everything — Quran 6:102"
+        },
+        "arabic_original": "خَالِقُ كُلِّ شَيْءٍ",
+        "translation": {
+          "ml": "ഈ ഭാഗം അല്ലാഹുവിനെ എല്ലാറ്റിന്റെയും സൃഷ്ടികർത്താവായി വിളിക്കുന്നു.",
+          "en": "This excerpt calls Allah the Creator of all things."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya102.html",
+        "source_reference": "Quran 6:102 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-khaliq",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: നിർണയവും സൃഷ്ടിയും",
+          "en": "Ibn Kathir: determination and bringing into being"
+        },
+        "translation": {
+          "ml": "അൽ-ഖൽഖ് എന്നതിൽ നിർണയത്തിന്റെ വശവും അൽ-ബാരിഅ് എന്നതിൽ നിർണയിച്ചതിനെ നിലവിൽ വരുത്തുന്ന വശവും തഫ്സീറിൽ വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir distinguishes determining creation from actually bringing it forth."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:24",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "saadi-khaliq",
+        "title": {
+          "ml": "സഅ്ദി: സൃഷ്ടിയിൽ ഏകാധിപത്യം",
+          "en": "Al-Saadi: unique power of creation"
+        },
+        "translation": {
+          "ml": "സൃഷ്ടി, നിയന്ത്രണം, നിർണയം എന്നിവയിൽ അല്ലാഹുവിന്റെ ഏകത്വത്തെയാണ് സഅ്ദി വ്യക്തമാക്കുന്നത്.",
+          "en": "Al-Saadi explains these names through Allah's unique creative, governing and determining power."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya24.html",
+        "source_reference": "تفسير السعدي — الحشر 59:24",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-012": {
+    "name_id": "PDF-HN-012",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവ ഇവിടെ പുതുതായി തിരഞ്ഞെടുത്ത ഖുർആൻ-തഫ്സീർ തെളിവുകളാണ്. ഗ്രന്ഥങ്ങൾ, കൈയെഴുത്തുപ്രതികൾ, ദുആകൾ, വഫ്ഖുകൾ, ചിഹ്നങ്ങൾ, നിശ്ചിത ഓതൽഎണ്ണങ്ങൾ തുടങ്ങിയവയുടെ സമ്പൂർണ പരിശോധന പൂർത്തിയായിട്ടില്ല. പരിശോധനയില്ലാത്ത ആത്മീയ/ഭൗതിക നേട്ടങ്ങൾ വാഗ്ദാനം ചെയ്യുന്നില്ല.",
+      "en": "This is a selected Quran/tafsir review, not exhaustive research into manuscripts, historical practice books, invocations, squares or diagrams. No invented repetition count or benefit is implied."
+    },
+    "explanation": {
+      "ml": "അൽ-ബാരിഅ് (الْبَارِئُ) അൽ-ഹഷ്ർ 59:24-ലെ ഒരു ദൈവനാമമാണ്; സൃഷ്ടിയെ നിലവിൽ വരുത്തുന്നവൻ എന്ന അർഥവ്യാഖ്യാനം ഇതിലുണ്ട്. ഇബ്നു കസീർ അൽ-ഖാലിഖ് എന്നതിൽ നിർണയവും അൽ-ബാരിഅ് എന്നതിൽ ആ നിർണയം യാഥാർഥ്യമാക്കലും തമ്മിലുള്ള വ്യത്യാസം വിശദീകരിക്കുന്നു. അൽ-ബഖറ 2:54-ൽ മൂസാ നബി തന്റെ ജനതയോട് സംസാരിക്കുന്ന ചരിത്രസന്ദർഭത്തിൽ 'ബാരിഇകും' (നിങ്ങളുടെ സൃഷ്ടികർത്താവിനോട്) എന്ന പദം വരുന്നു. ആ കഥയിലെ ജനതയ്ക്ക് നൽകിയ പ്രത്യേക കൽപ്പന ഇന്നത്തെ വായനക്കാർക്കുള്ള സ്വയം ദോഷപ്പെടുത്താനുള്ള നിർദേശമല്ല. ഏതെങ്കിലും പ്രത്യേക താബീസ്, കളം, എണ്ണമുള്ള രീതി ഇവിടെ സ്വയം സ്ഥിരീകരിക്കുന്നില്ല.",
+      "en": "Al-Bari is a divine name in Quran 59:24, explained through bringing created beings into existence. Ibn Kathir distinguishes this from the determination connected with al-Khaliq. The form bari'ikum occurs in Moses' address to his people in 2:54: a historical narrative, not a present-day instruction to harm oneself. Neither verse establishes a specific diagram or numbered rite."
+    },
+    "evidence": [
+      {
+        "id": "q59-24-bari",
+        "title": {
+          "ml": "അൽ-ബാരിഅ് — 59:24",
+          "en": "Al-Bari — Quran 59:24"
+        },
+        "arabic_original": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "translation": {
+          "ml": "അൽ-ഖാലിഖ്, അൽ-ബാരിഅ്, അൽ-മുസവ്വിർ എന്നീ മൂന്ന് നാമങ്ങൾ ഇവിടെ ഒരുമിച്ചു വരുന്നു.",
+          "en": "Al-Khaliq, al-Bari and al-Musawwir occur together."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+        "source_reference": "Quran 59:24",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q2-54-bari",
+        "title": {
+          "ml": "ബാരിഇകും — 2:54, ചരിത്രസന്ദർഭം",
+          "en": "Bari'ikum — Quran 2:54, historical context"
+        },
+        "arabic_original": "فَتُوبُوا إِلَىٰ بَارِئِكُمْ",
+        "translation": {
+          "ml": "മൂസാ നബി സ്വന്തം ജനതയോട് പശുക്കുട്ടിയെ ആരാധിച്ച സംഭവവുമായി ബന്ധപ്പെട്ട് പറഞ്ഞ വാക്കുകളുടെ ഭാഗമാണ് ഇത്; ആ ചരിത്രകൽപ്പന ഇന്നത്തെ ആളുകൾ അനുകരിക്കേണ്ട ചടങ്ങായി കാണിക്കരുത്.",
+          "en": "This phrase occurs in Moses' address to his people concerning the calf-worship narrative. The historical command is not a practice prescribed to modern readers."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya54.html",
+        "source_reference": "Quran 2:54 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-bari",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: സൃഷ്ടിയെ നിലവിൽ വരുത്തൽ",
+          "en": "Ibn Kathir: actualizing creation"
+        },
+        "translation": {
+          "ml": "അൽ-ബാരിഅ് എന്ന് നിർണയിച്ച സൃഷ്ടിയെ യഥാർത്ഥ നിലയിൽ കൊണ്ടുവരുന്നവൻ എന്നു തഫ്സീർ വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir explains al-Bari as actualizing what has been determined."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+        "source_reference": "تفسير ابن كثير — الحشر 59:24",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "baghawi-bari",
+        "title": {
+          "ml": "ബഗവി: ശൂന്യതയിൽനിന്നും അസ്തിത്വത്തിലേക്ക്",
+          "en": "Al-Baghawi: bringing into existence"
+        },
+        "translation": {
+          "ml": "ബഗവി അൽ-ബാരിഅ് എന്ന പദത്തെ മുമ്പില്ലാത്ത നിലയിൽനിന്ന് സൃഷ്ടികളെ നിലവിൽ വരുത്തുന്നവൻ എന്ന് വിശദീകരിക്കുന്നു.",
+          "en": "Al-Baghawi explains al-Bari as bringing beings into existence from nonexistence."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya24.html",
+        "source_reference": "تفسير البغوي — الحشر 59:24",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
   }
 }
