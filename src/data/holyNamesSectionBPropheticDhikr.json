@@ -1292,6 +1292,54 @@
           "Keep the separate Quranic supplication in 3:8 distinct."
         ]
       }
+    },
+    {
+      "id": "hadith-bukhari-6389-most-frequent-quran-dua",
+      "name_ids": [
+        "PDF-HN-139",
+        "PDF-HN-013",
+        "PDF-HN-130"
+      ],
+      "purpose": "other",
+      "title": {
+        "ml": "ഇഹപരലോകനന്മയ്ക്കുള്ള നബിയുടെ പതിവ് ദുആ — ബുഖാരി 6389",
+        "en": "The Prophet's most frequent dua for good in both worlds — Bukhari 6389"
+      },
+      "arabic_original": "اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَفِي الآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ",
+      "translation": {
+        "ml": "അല്ലാഹുവേ, ഞങ്ങളുടെ രക്ഷിതാവേ! ഇഹലോകത്ത് ഞങ്ങൾക്ക് നന്മ നൽകേണമേ; പരലോകത്തും നന്മ നൽകേണമേ; നരകശിക്ഷയിൽനിന്ന് രക്ഷിക്കേണമേ. അനസ് (റ) നിവേദനം പ്രകാരം നബി ﷺ ഏറ്റവും കൂടുതൽ പ്രാർത്ഥിച്ചിരുന്ന അപേക്ഷ ഇതായിരുന്നു.",
+        "en": "O Allah, our Lord, grant us good in this world and good in the Hereafter, and protect us from the Fire. Anas reported that this was the Prophet's most frequent supplication."
+      },
+      "source_reference": "Sahih al-Bukhari 6389; related Quran 2:201",
+      "source_url": "https://sunnah.com/bukhari:6389",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ബുഖാരി 6389-ൽ ഏറ്റവും കൂടുതൽ പ്രാർത്ഥിച്ചിരുന്നുവെന്നാണ്; 100/313/1000 ആവർത്തനഎണ്ണം ഈ ഹദീസിലില്ല. ഖുർആൻ 2:201-ലെ പാഠവും നബിവചനത്തിലെ അല്ലാഹുമ്മ എന്ന തുടക്കവും വേർതിരിച്ച് കാണണം.",
+        "en": "Bukhari 6389 says most frequent supplication, not 100, 313 or 1,000 prescribed repeats. Keep the report's Allahumma distinct from Quran 2:201's beginning."
+      },
+      "count": {
+        "ml": "നിശ്ചിത ആവർത്തനഎണ്ണം പറയുന്നില്ല; പതിവായി ചൊല്ലിയിരുന്നുവെന്ന് റിപ്പോർട്ട് ചെയ്യുന്നു.",
+        "en": "No fixed repetition count; this was reported as the Prophet's most frequent prayer."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസിൽ ഒരു നിർദ്ദിഷ്ട ദിവസമോ സമയമോ നിശ്ചയിക്കുന്നില്ല.",
+        "en": "No exclusive day or time is prescribed by this report."
+      },
+      "conditions": {
+        "ml": "പൂർണ ദുആ; പ്രത്യേക തകിടോ കളമോ ഇല്ല.",
+        "en": "Complete supplication; no amulet or magic square."
+      },
+      "steps": {
+        "ml": [
+          "ഹദീസിലുള്ള പൂർണ അപേക്ഷ പറയുക.",
+          "ഖുർആൻ 2:201-ലെ അടുത്തുതന്നെയുള്ള പാഠത്തിൽനിന്നുള്ള വാക്കുവ്യത്യാസം സൂക്ഷിക്കുക."
+        ],
+        "en": [
+          "Say the entire transmitted supplication.",
+          "Preserve its minor wording distinction from Quran 2:201."
+        ]
+      }
     }
   ]
 }
