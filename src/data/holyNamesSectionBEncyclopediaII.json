@@ -1,0 +1,996 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "കാർഡ് 003 അൽ-മലിക്: ഖുർആനിലെ മുഴുവൻ വചനങ്ങൾ, ഖിറാഅത്ത്/വ്യാകരണം, പരമാധികാരവും താൽക്കാലിക മനുഷ്യരാജ്യവും തമ്മിലുള്ള താരതമ്യം. തിലിംസാനിയുടെ നിലവിലുള്ള 9 അറബി ഖണ്ഡങ്ങൾ ആവർത്തിച്ചിട്ടില്ല. എല്ലാ 160 കാർഡുകളും പൂർത്തിയായിട്ടില്ല.",
+    "en": "Card 003, al-Malik: complete Quran passages, qira'at and grammatical distinctions, absolute Divine sovereignty versus granted human kingship. Preserves the existing nine large Tilimsani paragraphs without duplicating them; does not mark all 160 complete."
+  },
+  "profiles": {
+    "PDF-HN-003": {
+      "name_id": "PDF-HN-003",
+      "evidence": [
+        {
+          "id": "encyclopedia-malik-quran-1-4",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 1:4 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 1:4"
+          },
+          "arabic_original": "مَالِكِ يَوْمِ الدِّينِ",
+          "verse_meaning": {
+            "ml": "പ്രതിഫലദിനത്തിന്റെ ഉടമയും പരമാധികാരിയും.",
+            "en": "Master of the Day of Recompense."
+          },
+          "translation": {
+            "ml": "ഇവിടെ ഹഫ്സിന്റെ വായനയിൽ «مَالِكِ» എന്നാണ്; «مَلِكِ» എന്ന അംഗീകൃത ഖിറാഅത്തും ഉണ്ട്. രണ്ടും അല്ലാഹുവിന്റെ അധികാരം വ്യക്തമാക്കുന്നു. അൽ-മലിക് കാർഡിൽ വ്യാകരണ-ഖിറാഅത്ത് വ്യത്യാസം സൂക്ഷിക്കുന്നു.",
+            "en": "In the Hafs reading the expression is Māliki; the established alternative qira'a reads Maliki. Ibn Kathir confirms both; neither reading is to be rejected."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya4.html",
+          "source_reference": "Quran 1:4 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "canonical_qiraat_malik_maalik",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-2-247",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 2:247 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 2:247"
+          },
+          "arabic_original": "وَقَالَ لَهُمْ نَبِيُّهُمْ إِنَّ اللَّهَ قَدْ بَعَثَ لَكُمْ طَالُوتَ مَلِكًا ۚ قَالُوا أَنَّىٰ يَكُونُ لَهُ الْمُلْكُ عَلَيْنَا وَنَحْنُ أَحَقُّ بِالْمُلْكِ مِنْهُ وَلَمْ يُؤْتَ سَعَةً مِّنَ الْمَالِ ۚ قَالَ إِنَّ اللَّهَ اصْطَفَاهُ عَلَيْكُمْ وَزَادَهُ بَسْطَةً فِي الْعِلْمِ وَالْجِسْمِ ۖ وَاللَّهُ يُؤْتِي مُلْكَهُ مَن يَشَاءُ ۚ وَاللَّهُ وَاسِعٌ عَلِيمٌ",
+          "verse_meaning": {
+            "ml": "അവരുടെ പ്രവാചകൻ താലൂത്തിനെ രാജാവായി അല്ലാഹു നിയമിച്ചതായി അറിയിച്ചു. സമ്പത്തില്ലെന്ന اعتراضത്തിന് മറുപടിയായി അദ്ദേഹത്തിന്റെ അറിവും ശേഷിയും തെരഞ്ഞെടുപ്പും ചൂണ്ടിക്കാണിച്ചു; രാജാധികാരം നൽകുന്നത് അല്ലാഹുവാണെന്നും വ്യക്തമാക്കി.",
+            "en": "Their prophet announced Talut as a king appointed by Allah. They objected over his lack of wealth; his knowledge, physical ability, and Allah's election were given as grounds, and Allah grants rule as He wills."
+          },
+          "translation": {
+            "ml": "«مَلِكًا» താലൂത്ത് എന്ന മനുഷ്യരാജാവിനെയാണ് സൂചിപ്പിക്കുന്നത്; അല്ലാഹുവിന്റെ നാമമായ «الْمَلِكُ» എന്നല്ല. ഈ വ്യത്യാസം അധികാരത്തിന്റെ ദൈവിക ദാനവും മനുഷ്യരുടെ താൽക്കാലിക ഭരണവും വിശദീകരിക്കുന്നു.",
+            "en": "Malikan here refers to the human ruler Talut; it is not a direct occurrence of the Divine Name al-Malik. The context contrasts temporary human kingship with Allah's giving of dominion."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya247.html",
+          "source_reference": "Quran 2:247 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "human_kingship_comparison",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-2-258",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 2:258 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 2:258"
+          },
+          "arabic_original": "أَلَمْ تَرَ إِلَى الَّذِي حَاجَّ إِبْرَاهِيمَ فِي رَبِّهِ أَنْ آتَاهُ اللَّهُ الْمُلْكَ إِذْ قَالَ إِبْرَاهِيمُ رَبِّيَ الَّذِي يُحْيِي وَيُمِيتُ قَالَ أَنَا أُحْيِي وَأُمِيتُ ۖ قَالَ إِبْرَاهِيمُ فَإِنَّ اللَّهَ يَأْتِي بِالشَّمْسِ مِنَ الْمَشْرِقِ فَأْتِ بِهَا مِنَ الْمَغْرِبِ فَبُهِتَ الَّذِي كَفَرَ ۗ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+          "verse_meaning": {
+            "ml": "രാജാധികാരം ലഭിച്ചതിന്റെ പേരിൽ ഇബ്രാഹീമിനോട് തർക്കിച്ച ഭരണാധികാരിയോട് ഇബ്രാഹീം പറഞ്ഞു: എന്റെ രക്ഷിതാവ് ജീവിപ്പിക്കുകയും മരിപ്പിക്കുകയും ചെയ്യുന്നു. സൂര്യനെ പടിഞ്ഞാറുനിന്ന് കൊണ്ടുവരാമോ എന്ന് ചോദിച്ചതോടെ അയാൾക്ക് മറുപടിയില്ലാതായി.",
+            "en": "Ibrahim confronted a ruler who argued about God because he had been given dominion. Ibrahim challenged him to bring the sun from the west if he truly controlled life and death; the ruler was confounded."
+          },
+          "translation": {
+            "ml": "ഈ മനുഷ്യരാജാവിനെ ഇബ്നു കസീർ നംറൂദ് എന്നു പരിചയപ്പെടുത്തുന്ന പരമ്പരാഗത വ്യാഖ്യാനമുണ്ട്. ഭരണാധികാരം ലഭിച്ചതുകൊണ്ട് ദൈവിക അധികാരം സ്വന്തമായെന്ന വാദം ഖുർആൻ നിഷേധിക്കുന്നു.",
+            "en": "Ibn Kathir identifies the disputing ruler in exegetical tradition as Nimrod; worldly kingship does not give him Divine power over cosmic order."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya258.html",
+          "source_reference": "Quran 2:258 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "human_kingship_comparison",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-3-26",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 3:26 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "verse_meaning": {
+            "ml": "പറയുക: അല്ലാഹുവേ, രാജാധികാരത്തിന്റെ യഥാർത്ഥ ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് രാജ്യം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് എടുത്തുകളയുകയും ചെയ്യുന്നു; നീ ഉദ്ദേശിക്കുന്നവരെ ആദരിക്കുകയും താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്; നീ എല്ലാറ്റിനും കഴിവുള്ളവൻ.",
+            "en": "Say: O Allah, Owner of all dominion, You grant and remove power as You will, honor and humble as You will. All good is in Your hand and You are fully capable of everything."
+          },
+          "translation": {
+            "ml": "ഇത് ഖുർആനിലെ പൂർണ പ്രാർത്ഥനാസംബോധനമാണ്. «مَالِكَ الْمُلْكِ» എന്നത് «الْمَلِكُ» എന്ന ഒറ്റ നാമവുമായി അക്ഷരാർത്ഥത്തിൽ ഒരേ രൂപമല്ല. ധനം ഉറപ്പായി ലഭിക്കുന്ന 100/1000 ജപവിധി ആയത്തിൽ ഇല്ല.",
+            "en": "This is a full Quranic invocation: Mālika al-Mulk, not the identical written form of the isolated Name al-Malik. It supplies no guaranteed wealth promise or prescribed count."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "source_reference": "Quran 3:26 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "divine_owner_of_dominion_invocation",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-3-189",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 3:189 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 3:189"
+          },
+          "arabic_original": "وَلِلَّهِ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۗ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും രാജാധികാരം അല്ലാഹുവിനാണ്; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "The sovereignty of the heavens and earth belongs to Allah, who has power over all things."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «مُلْكُ» രാജാധികാരത്തെ സൂചിപ്പിക്കുന്ന നാമവാചകമാണ്; «الْمَلِكُ» എന്ന ദൈവനാമം നേരിട്ടുള്ള അതേ രൂപത്തിൽ വന്നിട്ടില്ല.",
+            "en": "Mulk here means dominion; it is a thematic sovereignty proof, not an occurrence of the definite Divine Name al-Malik."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya189.html",
+          "source_reference": "Quran 3:189 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-5-120",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 5:120 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 5:120"
+          },
+          "arabic_original": "لِلَّهِ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَمَا فِيهِنَّ ۚ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും അവയിലുള്ളതിന്റെയും മുഴുവൻ അധികാരവും അല്ലാഹുവിനാണ്; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Allah possesses dominion over the heavens, earth and everything within them and is capable of all things."
+          },
+          "translation": {
+            "ml": "സൂറത്ത് മാഇദയുടെ അവസാനവചനമാണിത്. ഇബ്നു കസീർ സൃഷ്ടിക്കലും ഉടമസ്ഥതയും നിയന്ത്രണവും അവനാണ് എന്നു ചേർത്ത് വിശദീകരിക്കുന്നു.",
+            "en": "The concluding verse of al-Ma'idah. Ibn Kathir links divine creation, ownership and governing power, excluding partners."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya120.html",
+          "source_reference": "Quran 5:120 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-6-73",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 6:73 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 6:73"
+          },
+          "arabic_original": "وَهُوَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ ۖ وَيَوْمَ يَقُولُ كُن فَيَكُونُ ۚ قَوْلُهُ الْحَقُّ ۚ وَلَهُ الْمُلْكُ يَوْمَ يُنفَخُ فِي الصُّورِ ۚ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۚ وَهُوَ الْحَكِيمُ الْخَبِيرُ",
+          "verse_meaning": {
+            "ml": "ആകാശവും ഭൂമിയും സത്യപ്രകാരം സൃഷ്ടിച്ചവനാണവൻ. അവൻ «ഉണ്ടാകുക» എന്നു പറയുമ്പോൾ അതുണ്ടാകുന്നു; കാഹളത്തിൽ ഊതപ്പെടുന്ന ദിവസം രാജാധികാരം അവനാണ്. അവൻ അദൃശ്യവും ദൃശ്യവും അറിയുന്ന ജ്ഞാനിയും സൂക്ഷ്മജ്ഞാനിയുമാണ്.",
+            "en": "He created the heavens and earth in truth. His command comes to be, dominion is His on the day the trumpet is blown, and He knows the seen and unseen."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «الصُّورِ» എന്നത് കാഹളമാണെന്ന വ്യാഖ്യാനത്തെയും അതിന്റെ മറ്റൊരു വ്യാകരണ അഭിപ്രായത്തെയും ചർച്ച ചെയ്യുന്നു. അതിനൊപ്പം ഉദ്ധരിക്കുന്ന വളരെ നീണ്ട അന്തിമദിന റിപ്പോർട്ട് ദുർബലമായ സനദ് സംബന്ധിച്ച അദ്ദേഹത്തിന്റെ മുന്നറിയിപ്പോടെയേ പരിഗണിക്കാവൂ.",
+            "en": "Ibn Kathir favors the trumpet interpretation of al-sur, discusses another interpretation, and expressly criticizes the chain and some wording of a very long apocalyptic report."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya73.html",
+          "source_reference": "Quran 6:73 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "judgment_day_sovereignty",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-12-101",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 12:101 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 12:101"
+          },
+          "arabic_original": "۞ رَبِّ قَدْ آتَيْتَنِي مِنَ الْمُلْكِ وَعَلَّمْتَنِي مِن تَأْوِيلِ الْأَحَادِيثِ ۚ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ",
+          "verse_meaning": {
+            "ml": "രക്ഷിതാവേ, നീ എനിക്കു അധികാരത്തിലും സ്വപ്നവ്യാഖ്യാനജ്ഞാനത്തിലും പങ്ക് നൽകിയിരിക്കുന്നു. ആകാശഭൂമികളുടെ സ്രഷ്ടാവേ, നീ ഇഹത്തിലും പരത്തിലും എന്റെ രക്ഷാധികാരിയാണ്. എന്നെ മുസ്‌ലിമായി മരിപ്പിക്കുകയും സജ്ജനരോടൊപ്പം ചേർക്കുകയും ചെയ്യേണമേ.",
+            "en": "My Lord, You have granted me a share of authority and taught me dream interpretation; Originator of the heavens and earth, You are my protector here and hereafter. Cause me to die as a Muslim and join the righteous."
+          },
+          "translation": {
+            "ml": "യൂസുഫ് നബി ലഭിച്ച **മനുഷ്യ** അധികാരത്തിന് നന്ദിപറയുന്ന പൂർണ ദുആയാണിത്. ഇബ്നു കസീർ മരണസമയം ഇപ്പോൾ വരട്ടെ എന്നതും മരിക്കുമ്പോൾ ഇമാൻ നിലനിൽക്കട്ടെ എന്നതും തമ്മിലുള്ള വ്യത്യാസം ചർച്ച ചെയ്ത്, പ്രയാസം മൂലം മരണം ആഗ്രഹിക്കരുതെന്ന സ്വഹീഹ് നബിവചനവും പറയുന്നു.",
+            "en": "This is Yusuf's prayer after receiving human authority. Ibn Kathir distinguishes asking for a faithful end from wishing for immediate death and cites the authentic prohibition on wishing for death due to hardship."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya101.html",
+          "source_reference": "Quran 12:101 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_prayer_human_dominion",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-17-111",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 17:111 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 17:111"
+          },
+          "arabic_original": "وَقُلِ الْحَمْدُ لِلَّهِ الَّذِي لَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُن لَّهُ شَرِيكٌ فِي الْمُلْكِ وَلَمْ يَكُن لَّهُ وَلِيٌّ مِّنَ الذُّلِّ ۖ وَكَبِّرْهُ تَكْبِيرًا",
+          "verse_meaning": {
+            "ml": "പറയുക: സന്താനത്തെ സ്വീകരിക്കാത്തവനും രാജാധികാരത്തിൽ പങ്കാളിയില്ലാത്തവനും ദൗർബല്യം കാരണം സഹായിയെ ആവശ്യമില്ലാത്തവനുമായ അല്ലാഹുവിന് സ്തുതി. അവനെ മഹത്വപ്പെടുത്തുക.",
+            "en": "Say: Praise belongs to Allah, who has taken no child, has no partner in dominion, and needs no protector out of weakness; magnify Him."
+          },
+          "translation": {
+            "ml": "തൗഹീദിന്റെ പൂർണ സ്തുതിവചനമാണിത്. രോഗവും ദാരിദ്ര്യവും മാറുമെന്ന ചില അധിക റിപ്പോർട്ടുകളെ ഇബ്നു കസീർ «إسناده ضعيف وفي متنه نكارة» എന്നു വിമർശിക്കുന്നു; അതിനെ ഉറപ്പായ വസീഫയായി നിശ്ചയിക്കരുത്.",
+            "en": "This is a full Quranic praise. Ibn Kathir critiques a supplementary poverty/cure account as weak in chain and objectionable in content. It is not proof of a guaranteed material ritual."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya111.html",
+          "source_reference": "Quran 17:111 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_praise",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-20-114",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 20:114 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 20:114"
+          },
+          "arabic_original": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۗ وَلَا تَعْجَلْ بِالْقُرْآنِ مِن قَبْلِ أَن يُقْضَىٰ إِلَيْكَ وَحْيُهُ ۖ وَقُل رَّبِّ زِدْنِي عِلْمًا",
+          "verse_meaning": {
+            "ml": "സത്യമായ രാജാധികാരിയായ അല്ലാഹു മഹോന്നതനാണ്. വഹ്‌യ് പൂർത്തിയാകുന്നതിന് മുമ്പ് ഖുർആൻ പാരായണത്തിൽ ധൃതിപ്പെടരുത്; «എന്റെ രക്ഷിതാവേ, എനിക്കു അറിവ് വർധിപ്പിക്കണമേ» എന്നു അപേക്ഷിക്കുക.",
+            "en": "Exalted is Allah, the True Sovereign. Do not hurry reciting revelation before it is completed, and say: My Lord, increase me in knowledge."
+          },
+          "translation": {
+            "ml": "മുൻ കാർഡിൽ ആദ്യവാചകം മാത്രമാണ് സൂക്ഷിച്ചിരുന്നത്; ഇവിടെ **മുഴുവൻ ആയത്തും** ചേർക്കുന്നു. «الْمَلِكُ الْحَقُّ» നേരിട്ടുള്ള ദൈവനാമപ്രയോഗം. «رَّبِّ زِدْنِي عِلْمًا» പഠനപ്രാർത്ഥനയാണ്, അൽ-മലിക് നാമത്തിനുള്ള നിശ്ചിത ജപസംഖ്യയല്ല.",
+            "en": "The previous card stored only the opening phrase; this restores the whole verse. Al-Malik al-Haqq is direct, whereas the knowledge petition is not a name-specific numerical rite."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya114.html",
+          "source_reference": "Quran 20:114 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "explicit_divine_name",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-22-56",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 22:56 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 22:56"
+          },
+          "arabic_original": "الْمُلْكُ يَوْمَئِذٍ لِّلَّهِ يَحْكُمُ بَيْنَهُمْ ۚ فَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فِي جَنَّاتِ النَّعِيمِ",
+          "verse_meaning": {
+            "ml": "അന്നു രാജാധികാരം അല്ലാഹുവിനാണ്. അവൻ അവർക്കിടയിൽ വിധിക്കും; വിശ്വസിക്കുകയും സൽപ്രവൃത്തി നടത്തുകയും ചെയ്തവർ അനുഗ്രഹത്തിന്റെ സ്വർഗത്തോട്ടങ്ങളിലായിരിക്കും.",
+            "en": "Sovereignty on that day belongs to Allah; He judges among them, and believers who do good enter gardens of bliss."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ വചനം 1:4, 25:26 എന്നിവയോടു ബന്ധിപ്പിക്കുന്നു. ന്യായവിധിയിലൂടെയാണ് അന്തിമാധികാരത്തിന്റെ പൂർണ പ്രകടനം.",
+            "en": "Ibn Kathir explicitly relates this declaration to Quran 1:4 and 25:26; sovereignty is manifest in ultimate judgment."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya56.html",
+          "source_reference": "Quran 22:56 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "judgment_day_sovereignty",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-23-88",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 23:88 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 23:88"
+          },
+          "arabic_original": "قُلْ مَن بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ",
+          "verse_meaning": {
+            "ml": "എല്ലാറ്റിന്റെയും പൂർണ അധികാരം ആരുടെ കൈയിലാണ്? സംരക്ഷണം നൽകുന്നതും അവനെതിരെ ആരും സംരക്ഷണം നൽകാൻ കഴിയാത്തതും ആരാണ്? എന്നു ചോദിക്കുക.",
+            "en": "Ask whose hand holds sovereignty over everything, who grants protection while none can grant protection against Him."
+          },
+          "translation": {
+            "ml": "«مَلَكُوتُ» എന്നത് അധികാരത്തിന്റെ വിപുലരൂപമാണ്; «الْمَلِكُ» എന്ന ഒറ്റനാമത്തിന്റെ അതേ അക്ഷരരൂപമല്ല. ഇബ്നു കസീർ രക്ഷയും ഭരണവും സൃഷ്ടികർത്താവിന്റെ അധികാരവും ചർച്ച ചെയ്യുന്നു.",
+            "en": "Malakut is an expansive dominion term, not the same written form as the Divine Name al-Malik. Ibn Kathir relates it to refuge and unrestricted command."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya88.html",
+          "source_reference": "Quran 23:88 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "malakut_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-23-116",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 23:116 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 23:116"
+          },
+          "arabic_original": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ",
+          "verse_meaning": {
+            "ml": "സത്യമായ രാജാധികാരിയായ അല്ലാഹു മഹോന്നതൻ; അവനല്ലാതെ ആരാധ്യനില്ല; മഹത്തായ അർശിന്റെ രക്ഷിതാവാണ് അവൻ.",
+            "en": "Exalted is Allah, the True King. There is no deity except Him, Lord of the noble Throne."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «الْمَلِكُ الْحَقُّ» നേരിട്ടുള്ള നാമപ്രയോഗമാണ്. ഇബ്നു കസീറിന്റെ തഫ്സീറിൽ അസാധാരണ ഫലങ്ങൾ വാഗ്ദാനം ചെയ്യുന്ന ചില അനുബന്ധ റുഖ്യ/സുരക്ഷാ റിപ്പോർട്ടുകൾ ഉദ്ധരിക്കുന്നുണ്ടെങ്കിലും അവയ്ക്ക് പ്രത്യേക സനദ് പരിശോധന വേണം.",
+            "en": "Al-Malik al-Haqq is explicitly present. Ibn Kathir also quotes extraordinary protective claims in additional narrated material, which must not be upgraded to verified Sunnah without grading."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya116.html",
+          "source_reference": "Quran 23:116 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "explicit_divine_name",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-25-2",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 25:2 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 25:2"
+          },
+          "arabic_original": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَلَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُن لَّهُ شَرِيكٌ فِي الْمُلْكِ وَخَلَقَ كُلَّ شَيْءٍ فَقَدَّرَهُ تَقْدِيرًا",
+          "verse_meaning": {
+            "ml": "ആകാശഭൂമികളുടെ ഉടമസ്ഥത അവനാണ്; അവൻ സന്താനത്തെ സ്വീകരിച്ചിട്ടില്ല, അധികാരത്തിൽ പങ്കാളിയില്ല. എല്ലാം സൃഷ്ടിച്ച് അതിന്റെ അളവും ക്രമവും നിശ്ചയിച്ചിരിക്കുന്നു.",
+            "en": "The One who possesses the heavens and earth has no offspring or partner in dominion; He created everything and apportioned it precisely."
+          },
+          "translation": {
+            "ml": "സൃഷ്ടിയും നിയന്ത്രണവും പങ്കാളിത്തമില്ലാത്ത ദൈവാധികാരവും ഈ പൂർണവചനത്തിൽ ഒന്നിക്കുന്നു; മനുഷ്യരാജ്യവുമായി അതിനെ തുല്യമാക്കരുത്.",
+            "en": "Creation, governance and complete absence of a co-ruler are linked; human kingship is not comparable to this absolute dominion."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya2.html",
+          "source_reference": "Quran 25:2 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-25-26",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 25:26 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 25:26"
+          },
+          "arabic_original": "الْمُلْكُ يَوْمَئِذٍ الْحَقُّ لِلرَّحْمَٰنِ ۚ وَكَانَ يَوْمًا عَلَى الْكَافِرِينَ عَسِيرًا",
+          "verse_meaning": {
+            "ml": "അന്നു യഥാർത്ഥ രാജാധികാരം അർ-റഹ്മാനാണ്; സത്യനിഷേധികൾക്കു അത് കഠിന ദിവസമായിരിക്കും.",
+            "en": "The true dominion on that day belongs to the All-Merciful; it will be a difficult day for the deniers."
+          },
+          "translation": {
+            "ml": "ഈ വചനത്തിൽ «الرَّحْمَٰنِ» എന്ന നേരിട്ടുള്ള നാമം വരുന്നു, «الْمَلِكُ» എന്ന ഒറ്റനാമമല്ല. പക്ഷേ രാജാധികാരത്തിന്റെ അർഥബന്ധം മൂലം അൽ-മലിക് കാർഡിലും വ്യത്യസ്ത സാഹചര്യത്തിൽ പഠിക്കുന്നു.",
+            "en": "The verse names al-Rahman directly, not al-Malik. It belongs here only as a contextual sovereignty proof; this distinction prevents misattribution."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya26.html",
+          "source_reference": "Quran 25:26 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "judgment_day_sovereignty",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-35-13",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 35:13 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 35:13"
+          },
+          "arabic_original": "يُولِجُ اللَّيْلَ فِي النَّهَارِ وَيُولِجُ النَّهَارَ فِي اللَّيْلِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَ كُلٌّ يَجْرِي لِأَجَلٍ مُّسَمًّى ۚ ذَٰلِكُمُ اللَّهُ رَبُّكُمْ لَهُ الْمُلْكُ ۚ وَالَّذِينَ تَدْعُونَ مِن دُونِهِ مَا يَمْلِكُونَ مِن قِطْمِيرٍ",
+          "verse_meaning": {
+            "ml": "പകലിലേക്ക് രാത്രിയെയും രാത്രിയിലേക്ക് പകലിനെയും പ്രവേശിപ്പിക്കുകയും സൂര്യചന്ദ്രന്മാരെ നിയന്ത്രിക്കുകയും ചെയ്യുന്ന അല്ലാഹുവിനാണ് അധികാരം. അവനല്ലാത്തവർക്ക് ഈത്തപ്പഴക്കുരുവിന്റെ നേർത്ത പൊതിയോളം പോലും അധികാരമില്ല.",
+            "en": "He merges night into day and day into night and subjects the sun and moon; dominion is His. Others invoked apart from Him do not own even the thin membrane of a date stone."
+          },
+          "translation": {
+            "ml": "«قِطْمِيرٍ» ഈത്തപ്പഴക്കുരുവിനെ പൊതിയുന്ന നേർത്ത ആവരണമാണ് എന്ന് മുൻഗാമികളുടെ അഭിപ്രായം ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. «الْمُلْكُ» അധികാരത്തിന്റെ പദമാണ്; നേരിട്ടുള്ള നാമരൂപമല്ല.",
+            "en": "Ibn Kathir transmits the early gloss of qitmir as the delicate membrane of a date stone. Here al-mulk means dominion, not the exact Divine Name."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura35-aya13.html",
+          "source_reference": "Quran 35:13 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-36-83",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 36:83 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 36:83"
+          },
+          "arabic_original": "فَسُبْحَانَ الَّذِي بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَإِلَيْهِ تُرْجَعُونَ",
+          "verse_meaning": {
+            "ml": "എല്ലാറ്റിന്റെയും പരമാധികാരം കൈവശമുള്ളവൻ എത്ര പരിശുദ്ധൻ! അവനിലേക്കാണ് നിങ്ങൾ മടങ്ങുന്നത്.",
+            "en": "Glory be to the One in whose hand is the dominion of everything; to Him you will return."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «مُلْك»–«مَلَكُوت» പദങ്ങളെ സമാന അധികാരാർഥത്തിലുള്ള രൂപങ്ങളായി വിശദീകരിക്കുന്നു. ശരീരലോകവും ആത്മലോകവും എന്ന നിർബന്ധമായ രണ്ട് ലോകവിഭജനം ഇതിലേക്കു ചേർക്കുന്നത് ഭൂരിപക്ഷ വ്യാഖ്യാനമല്ലെന്ന് അദ്ദേഹം പറയുന്നു.",
+            "en": "Ibn Kathir treats mulk and malakut as equivalent expressions of dominion and explicitly disputes claims that they necessarily mean physical and spiritual realms respectively."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya83.html",
+          "source_reference": "Quran 36:83 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "malakut_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-38-35",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 38:35 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 38:35"
+          },
+          "arabic_original": "قَالَ رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا لَّا يَنبَغِي لِأَحَدٍ مِّن بَعْدِي ۖ إِنَّكَ أَنتَ الْوَهَّابُ",
+          "verse_meaning": {
+            "ml": "സുലൈമാൻ പറഞ്ഞു: രക്ഷിതാവേ, എനിക്ക് ക്ഷമ നൽകുകയും എനിക്കു ശേഷം മറ്റാർക്കും അനുയോജ്യമാകാത്ത പ്രത്യേക രാജാധികാരം എനിക്കു നൽകുകയും ചെയ്യണമേ. നീയാണ് അൽ-വഹ്ഹാബ്.",
+            "en": "Sulayman prayed for forgiveness and a unique kind of dominion not granted to anyone after him, addressing Allah as al-Wahhab."
+          },
+          "translation": {
+            "ml": "ഈ ദുആയിൽ «الْوَهَّابُ» നാമം നേരിട്ട് വരുന്നു; «مُلْكًا» മനുഷ്യനായ സുലൈമാൻ അപേക്ഷിച്ച ഭരണാധികാരമാണ്. നബി ﷺ ഈ പ്രത്യേകതയെക്കുറിച്ച് ഹദീസിൽ പരാമർശിക്കുന്നുണ്ടെന്ന് ഇബ്നു കസീർ പറയുന്നു. ഇത് എല്ലാവർക്കും അതേ ഭരണാധികാരം കിട്ടാനുള്ള മന്ത്രമല്ല.",
+            "en": "The Name expressly invoked is al-Wahhab; mulkan is the special earthly power Sulayman asks for. Ibn Kathir cites authentic Prophetic reports about its uniqueness; not a general ritual to obtain the same kingdom."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura38-aya35.html",
+          "source_reference": "Quran 38:35 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "prophetic_prayer_human_dominion",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-40-16",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 40:16 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 40:16"
+          },
+          "arabic_original": "يَوْمَ هُم بَارِزُونَ ۖ لَا يَخْفَىٰ عَلَى اللَّهِ مِنْهُمْ شَيْءٌ ۚ لِّمَنِ الْمُلْكُ الْيَوْمَ ۖ لِلَّهِ الْوَاحِدِ الْقَهَّارِ",
+          "verse_meaning": {
+            "ml": "അവർ എല്ലാവരും പ്രത്യക്ഷപ്പെടുന്ന ദിവസം അല്ലാഹുവിൽനിന്ന് ഒന്നും മറയുകയില്ല. «ഇന്ന് ആരുടേതാണ് രാജാധികാരം?» «ഏകനും സർവാധിപത്യശക്തനുമായ അല്ലാഹുവിന്റേതാണ്».",
+            "en": "On the day all stand exposed and none is hidden from Allah: ‘To whom belongs dominion today?’ ‘To Allah, the One, the Overpowering.’"
+          },
+          "translation": {
+            "ml": "അന്ത്യദിനത്തിലെ മനുഷ്യ അധികാരങ്ങളുടെ അവസാനവും അല്ലാഹുവിന്റെ പരമാധികാരവും. ഇബ്നു കസീർ ഇതുമായി ബന്ധപ്പെട്ട നീളമുള്ള അന്തിമദിന നിവേദനങ്ങൾ ഉദ്ധരിക്കുമ്പോൾ അവയെ ഖുർആനിന്റെ മൂലവചനത്തോട് തുല്യമാക്കരുത്.",
+            "en": "The contrast is between vanished human power and God's final sovereignty. Lengthy associated eschatological narratives have their own transmission status distinct from the Quran."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya16.html",
+          "source_reference": "Quran 40:16 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "judgment_day_sovereignty",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-43-85",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 43:85 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 43:85"
+          },
+          "arabic_original": "وَتَبَارَكَ الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا وَعِندَهُ عِلْمُ السَّاعَةِ وَإِلَيْهِ تُرْجَعُونَ",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും അവയ്ക്കിടയിലുള്ളതിന്റെയും രാജാധികാരം അവനാണ്. അന്ത്യമണിക്കൂറിനെക്കുറിച്ചുള്ള അറിവ് അവനാണ്; അവനിലേക്കു മടങ്ങുന്നു.",
+            "en": "Blessed is the One who possesses dominion over the heavens, earth and what lies between them, knows the Hour, and to whom all return."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അധികാരത്തിന്റെ പൂർണതയെ അന്ത്യസമയത്തെക്കുറിച്ചുള്ള അറിവുമായി ബന്ധിപ്പിക്കുന്നു; എത്രയും വലിയ മനുഷ്യഭരണം അത്തരം സർവജ്ഞത നൽകില്ല.",
+            "en": "Ibn Kathir links total sovereignty to God's knowledge of the Hour; no human reign supplies such omniscience."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura43-aya85.html",
+          "source_reference": "Quran 43:85 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-54-55",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 54:55 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 54:55"
+          },
+          "arabic_original": "فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ",
+          "verse_meaning": {
+            "ml": "സത്യത്തിന്റെയും ആദരത്തിന്റെയും ഇരിപ്പിടത്തിൽ, ശക്തിയുള്ള പരമരാജാവിന്റെ സന്നിധിയിൽ.",
+            "en": "In a seat of truth and honor, near a mighty and all-powerful King."
+          },
+          "translation": {
+            "ml": "ഇവിടെ നാമരൂപം «مَلِيكٍ» ആണ്; «الْمَلِكُ» എന്ന നേരിട്ടുള്ള അക്ഷരരൂപമല്ല. ഖുർതുബി «عِندَ» എന്നു പറയുന്നത് സ്ഥാനമാനവും സാമീപ്യവും ആദരവുമാണെന്നും ഭൗതികസ്ഥലപരിമിതി അല്ലെന്നും വ്യാഖ്യാനിക്കുന്നു.",
+            "en": "The exact Quranic word is malik-in (مَلِيكٍ), not the definite al-Malik. Al-Qurtubi explains 'near' here in terms of nearness of favor, status and honor rather than ordinary spatial confinement."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura54-aya55.html",
+          "source_reference": "Quran 54:55 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "related_divine_epithet",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-62-1",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 62:1 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 62:1"
+          },
+          "arabic_original": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം രാജാവും പരിശുദ്ധനും പ്രതാപിയും യുക്തിയുള്ളവനുമായ അല്ലാഹുവിനെ പ്രകീർത്തിക്കുന്നു.",
+            "en": "Everything in the heavens and on earth glorifies Allah, the King, the Holy, the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «الْمَلِكِ» എന്ന നേരിട്ടുള്ള ദൈവനാമം «الْقُدُّوسِ» യോടൊപ്പം വരുന്നു. ഭൂമിയും ആകാശവും മുഴുവൻ തസ്ബീഹ് ചെയ്യുന്നുവെന്ന് ഇബ്നു കസീർ പറയുന്നു.",
+            "en": "The definite Name al-Malik appears directly alongside al-Quddus. Ibn Kathir connects the glorification with all creation in heaven and earth."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya1.html",
+          "source_reference": "Quran 62:1 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "explicit_divine_name",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-67-1",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 67:1 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 67:1"
+          },
+          "arabic_original": "تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "verse_meaning": {
+            "ml": "മുഴുവൻ രാജാധികാരം കൈവശമുള്ളവൻ അനുഗ്രഹപൂർണൻ; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Blessed is He in whose hand is all dominion; He has power over all things."
+          },
+          "translation": {
+            "ml": "സൂറത്ത് അൽമുൽകിന്റെ ആദ്യവചനം. സൂറത്തിന്റെ സംരക്ഷണഫലത്തെക്കുറിച്ചുള്ള ചില ഹദീസുകൾക്ക് വ്യത്യസ്ത ഗ്രേഡുകളുണ്ട്; ഈ ആയത്ത് മാത്രം അൽ-മലിക് നാമം 1000 തവണ ഓതണമെന്ന് നിർദേശിക്കുന്നില്ല.",
+            "en": "The opening verse of Surat al-Mulk. Ibn Kathir cites surah-related reports of differing strength, including one graded hasan and others considered weak; no thousand-count al-Malik ritual is prescribed."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya1.html",
+          "source_reference": "Quran 67:1 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "sovereignty_theme",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-malik-quran-114-1-6",
+          "title": {
+            "ml": "അൽ-മലിക് — ഖുർആൻ 114:1-6 (മുഴുവൻ സന്ദർഭം)",
+            "en": "Al-Malik — complete Quran context 114:1-6"
+          },
+          "arabic_original": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ\nمَلِكِ النَّاسِ\nإِلَٰهِ النَّاسِ\nمِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ\nالَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ\nمِنَ الْجِنَّةِ وَالنَّاسِ",
+          "verse_meaning": {
+            "ml": "പറയുക: മനുഷ്യരുടെ രക്ഷിതാവിലും മനുഷ്യരുടെ രാജാവിലും മനുഷ്യരുടെ ആരാധ്യനിലും ഞാൻ അഭയം തേടുന്നു; മനുഷ്യഹൃദയങ്ങളിൽ ദുർബോധനം നൽകുന്ന, പിന്നോട്ട് മാറുന്ന കുശുകുശുപ്പുകാരന്റെ ദോഷത്തിൽനിന്ന്; ജിന്നുകളിലും മനുഷ്യരിലും നിന്നുള്ള ദുർബോധനങ്ങളിൽനിന്ന്.",
+            "en": "Say: I seek refuge in the Lord, King and God of humankind from the retreating whisperer who whispers in people's hearts, whether among jinn or human beings."
+          },
+          "translation": {
+            "ml": "മുമ്പ് കാർഡിൽ «مَلِكِ النَّاسِ» മാത്രം ഉണ്ടായിരുന്നു; ഇവിടെ സൂറത്തു നാസിന്റെ ആറ് ആയത്തുകളും ചേർത്തു. ഖുർആനിലെ സമ്പൂർണ അഭയപ്രാർത്ഥനയാണിത്; അതിലെ രാജാവ് മനുഷ്യർക്കുള്ള നാമസംബോധനയാണ്.",
+            "en": "The earlier card quoted only Malik al-Nas (114:2). This expansion preserves all six verses as a full refuge prayer. The King here is Allah, in a grammatical annexation to humankind."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura114-aya1.html",
+          "source_reference": "Quran 114:1-6 · Ibn Kathir",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "full_surah_divine_king_refuge",
+          "source_scope": {
+            "ml": "മൂലപാഠത്തിൽ ഉള്ളതല്ലാത്ത ആവർത്തനസംഖ്യ, മുഹൂർത്തം, തകിട്, ഫലവാഗ്ദാനം ചേർക്കുന്നില്ല; ഓരോ ആയത്തിലും നേരിട്ടുള്ള ദൈവനാമം, അധികാരത്തെ സൂചിപ്പിക്കുന്ന പദം, മനുഷ്യരുടെ രാജാധികാരം എന്നിവ പ്രത്യേകം വേർതിരിച്ചിട്ടുണ്ട്.",
+            "en": "Direct Divine Name, related sovereignty expressions and temporary human kingship are distinguished. No unauthenticated recitation numbers, astrological hours, talismans or guarantees are inferred."
+          },
+          "verse_count": 6
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "encyclopedia-malik-tafsir-1-1-4-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «മലിക്»–«മാലിക്» രണ്ട് സ്വീകാര്യ ഖിറാഅത്തുകൾ",
+            "en": "Ibn Kathir: two transmitted readings of Malik/Malik"
+          },
+          "arabic_original": "وكلاهما صحيح متواتر في السبع",
+          "translation": {
+            "ml": "«مَلِكِ يَوْمِ الدِّينِ» എന്ന രാജാവ് എന്ന വായനയും «مَالِكِ يَوْمِ الدِّينِ» എന്ന ഉടമസ്ഥൻ എന്ന വായനയും അംഗീകൃത മുതവാതിർ ഖിറാഅത്തുകളാണെന്ന് ഇബ്നു കസീർ പറയുന്നു. ഹഫ്സിന്റെ പതിപ്പിലെ അക്ഷരരൂപം മാത്രം കാണിച്ച് മറ്റേ ഖിറാഅത്ത് തെറ്റാണെന്ന് വിധിക്കരുത്.",
+            "en": "Ibn Kathir explicitly calls the readings Maliki (King of the Day of Recompense) and Māliki (Owner/Master of the Day) both valid and mutawatir among the seven readings. A card must not treat the Hafs rendering as invalidating the other."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya4.html",
+          "source_reference": "تفسير ابن كثير · Quran 1:4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-2-1-4-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ഏതാണ് വ്യാപക അർഥം? പഴയ പണ്ഡിതരിലെ വ്യത്യാസം",
+            "en": "Al-Qurtubi: differing views over which form is more encompassing"
+          },
+          "arabic_original": "اختلف العلماء أيما أبلغ : ملك أو مالك",
+          "translation": {
+            "ml": "ഖുർതുബി «മലിക്» അധികം വ്യാപകമാണെന്ന് പറയുന്ന അബൂ ഉബൈദ–മുബർറദ് അഭിപ്രായവും «മാലിക്» അധികം വ്യാപകമാണെന്ന മറുവാദവും സംരക്ഷിക്കുന്നു. രാജാവിന്റെ ഉത്തരവിടാനുള്ള അധികാരവും ഉടമസ്ഥതയുടെ സമ്പൂർണതയും തമ്മിൽ വ്യത്യാസമുണ്ട്; ഒരു അഭിപ്രായം മാത്രം യഥാർത്ഥ ഖിറാഅത്ത് എന്ന് പറയരുത്.",
+            "en": "Al-Qurtubi records both the view that ‘King’ is more comprehensive and the counterview favoring ‘Owner’, carefully distinguishing public authority from possession of every kind. Neither valid reading should be suppressed."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura1-aya4.html",
+          "source_reference": "تفسير القرطبي · Quran 1:4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-3-1-4-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: യൗമിദ്ദീൻ പരിമിതമായ ഏകദിന ഉടമസ്ഥത അല്ല",
+            "en": "Ibn Kathir: Judgment Day does not limit divine kingship"
+          },
+          "arabic_original": "وتخصيص الملك بيوم الدين لا ينفيه عما عداه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രതിഫലദിനത്തെ പ്രത്യേകം വിളിച്ചത് മറ്റു സമയങ്ങളിൽ അല്ലാഹുവിന് അധികാരമില്ല എന്നതല്ലെന്ന് വ്യക്തമാക്കുന്നു. മനുഷ്യർ ഇഹലോകത്ത് രാജാധികാരം അവകാശപ്പെടുമ്പോഴും അന്തിമദിനത്തിൽ അത്തരം അവകാശവാദങ്ങൾ അവസാനിക്കും; «الدِّينِ» ഇവിടെ വിധിയും പ്രതിഫലവും അർഥമാക്കുന്നു.",
+            "en": "Ibn Kathir stresses that attaching kingship to the Day of Recompense does not deny God's kingship before it. The Day is singled out as human claims disappear and judgment is made manifest."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya4.html",
+          "source_reference": "تفسير ابن كثير · Quran 1:4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-4-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അൽ-മലിക് — സകലതിന്റെയും നിയന്ത്രണമുള്ളവൻ",
+            "en": "Ibn Kathir: al-Malik possesses and governs everything"
+          },
+          "arabic_original": "المالك لجميع الأشياء المتصرف فيها بلا ممانعة ولا مدافعة",
+          "translation": {
+            "ml": "«الْمَلِكُ» എന്ന നാമത്തെ എല്ലാറ്റിന്റെയും യഥാർത്ഥ ഉടമയും എതിർപ്പില്ലാതെ നിയന്ത്രിക്കുന്നവനുമെന്നാണ് ഇബ്നു കസീർ വിശദീകരിക്കുന്നത്. ആ വചനത്തിലെ അൽ-ഖുദ്ദൂസ്, അസ്സലാം, അൽ-മുഅ്മിൻ തുടങ്ങിയ നാമങ്ങളുമായുള്ള കൂട്ടായ്മ അൽ-മലിക്കിന്റെ അധികാരത്തെ സ്വയം സൃഷ്ടിയുടെ അപൂർണതയായി അവതരിപ്പിക്കരുതെന്ന് ഓർമ്മിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir interprets the isolated Name al-Malik as owning all things and acting without opposing power. Adjacent names such as al-Quddus and as-Salam qualify this kingship through holiness and freedom from defect."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-5-3-26-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: നൽകലും പിൻവലിക്കലും ദൈവിക അധികാരം",
+            "en": "Ibn Kathir: granting and removing sovereignty"
+          },
+          "arabic_original": "أنت المعطي ، وأنت المانع",
+          "translation": {
+            "ml": "«മാലികൽ മുല്‌ക്» എന്ന സംബോധനയിൽ എല്ലാ രാജാധികാരവും അല്ലാഹുവിന്റേതാണെന്നും അവൻ ഉദ്ദേശിക്കുന്നതു നൽകുകയും പിൻവലിക്കുകയും ചെയ്യുമെന്നും ഇബ്നു കസീർ പറയുന്നു. റസൂൽ ﷺയും ഉമ്മത്തും ലഭിച്ച അനുഗ്രഹത്തിന് നന്ദി പറയുന്ന സന്ദർഭത്തോടും അദ്ദേഹം ബന്ധിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir glosses the invocation as recognizing that all rule belongs to Allah, who gives and withholds it. His explanation also places gratitude and the mission of the Prophet in context."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "source_reference": "تفسير ابن كثير · Quran 3:26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-6-2-247-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മനുഷ്യരാജാവിന് ധനത്തേക്കാൾ യോഗ്യതയും അറിവും",
+            "en": "Ibn Kathir: knowledge and capability over inherited wealth"
+          },
+          "arabic_original": "وزاده بسطة في العلم والجسم",
+          "translation": {
+            "ml": "താലൂത്തിനെക്കുറിച്ചുള്ള തർക്കത്തിൽ സമ്പന്നതയല്ല, അറിവിലും ശരീരശേഷിയിലും ലഭിച്ച വിശാലതയാണ് ഇബ്നു കസീർ വിശദീകരിക്കുന്നത്. «مَلِكًا» എന്നത് മനുഷ്യനെ വിശേഷിപ്പിക്കുന്ന പദമാണ്; ഈ ആയത്തിൽ താലൂത്ത് ദൈവമെന്നോ മനുഷ്യർക്ക് അൽ-മലിക് എന്ന പരമാധികാരം ഉണ്ടെന്നോ പറയുന്നില്ല.",
+            "en": "Ibn Kathir relates the selection of Talut to divinely granted wisdom and ability, rejecting inheritance or wealth as conclusive criteria. Malikan refers to a human leader, never God Himself."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya247.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:247",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-7-2-258-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: നംറൂദിന്റെ രാജാധികാരവും അതിരുകടന്ന വാദവും",
+            "en": "Ibn Kathir: Nimrod’s kingship cannot give control over creation"
+          },
+          "arabic_original": "إلا تجبره ، وطول مدته في الملك",
+          "translation": {
+            "ml": "ഇബ്രാഹീമിനോടു തർക്കിച്ച ഭരണാധികാരിയെ നംറൂദ് എന്നു തിരിച്ചറിയുന്ന പാരമ്പര്യവ്യാഖ്യാനം ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. ഭരണാധികാരം കിട്ടിയപ്പോൾ ജീവനും മരണവും തന്റെ ശക്തിയിലാണെന്ന് അവകാശപ്പെട്ട അയാളുടെ വാദത്തെ സൂര്യന്റെ കിഴക്കുപടിഞ്ഞാറ് ഗതിയെക്കുറിച്ചുള്ള ഇബ്രാഹീമിന്റെ ചോദ്യം തകർക്കുന്നു.",
+            "en": "Ibn Kathir identifies the king in the customary exegetical account as Nimrod. His human dominion cannot make him creator of life, death, or the cosmic order, which Ibrahim demonstrates with the sunrise challenge."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya258.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:258",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-8-12-101-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: യൂസുഫ് നബിയുടെ പൂർണ ദുആയും മരണത്തെക്കുറിച്ചുള്ള ജാഗ്രതയും",
+            "en": "Ibn Kathir: Yusuf’s complete prayer and not wishing for death"
+          },
+          "arabic_original": "هذا دعاء من يوسف الصديق",
+          "translation": {
+            "ml": "യൂസുഫ് നബിക്ക് നൽകിയ മനുഷ്യഭരണവും സ്വപ്നവ്യാഖ്യാനജ്ഞാനവും അല്ലാഹുവിന്റെ അനുഗ്രഹമാണെന്ന് ഇബ്നു കസീർ പറയുന്നു. «തവ്വഫ്ഫനീ മുസ്‌ലിമൻ» എന്നതിൽ സമയമാകുമ്പോൾ മുസ്‌ലിമായി മരിപ്പിക്കണമെന്ന അപേക്ഷയെ അദ്ദേഹം വേർതിരിക്കുന്നു; ദുരിതം കാരണം ഉടനെ മരണം ആഗ്രഹിക്കരുതെന്ന സഹീഹ് നബിവചനവും കൂടെ ഉദ്ധരിക്കുന്നു.",
+            "en": "Ibn Kathir places Yusuf's prayer after reunion with his family and receipt of prophetic knowledge and authority. He distinguishes requesting a faithful end from wishing immediate death and cites the Sahih prohibition on wishing for death due to adversity."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya101.html",
+          "source_reference": "تفسير ابن كثير · Quran 12:101",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-9-17-111-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഭൗതികഫലം ഉറപ്പിക്കുന്ന ദുർബല കഥകളെ വേർതിരിക്കുക",
+            "en": "Ibn Kathir: weak protective/poverty-related narration"
+          },
+          "arabic_original": "إسناده ضعيف وفي متنه نكارة",
+          "translation": {
+            "ml": "രാജാധികാരത്തിൽ പങ്കാളിയില്ലാത്ത അല്ലാഹുവിനെ സ്തുതിക്കണമെന്ന് പറയുന്ന പൂർണ ഖുർആൻ പാഠത്തിനടുത്ത്, ഒരു പാവപ്പെട്ടവന് പ്രത്യേക വാക്കുകൾ പറഞ്ഞാൽ രോഗദാരിദ്ര്യങ്ങളിൽനിന്ന് മുക്തി കിട്ടുമെന്ന കഥയും തഫ്സീറിൽ ഉദ്ധരിക്കുന്നു. അതിന്റെ ശൃംഖല ദുർബലമാണെന്നും ഉള്ളടക്കത്തിൽ അസംഗതിയുണ്ടെന്നും ഇബ്നു കസീർ വ്യക്തമാക്കുന്നു. അതിനെ ഉറപ്പുള്ള ജപഫലമായി പകർന്നു നൽകരുത്.",
+            "en": "Ibn Kathir explicitly condemns the chain and wording of a supplementary story claiming material relief by selected praise words. This grading must accompany the report; it is not an authenticated promise attached to al-Malik."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya111.html",
+          "source_reference": "تفسير ابن كثير · Quran 17:111",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-10-23-116-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പരമരാജാവ് സൃഷ്ടിയെ വ്യർഥമായി സൃഷ്ടിച്ചിട്ടില്ല",
+            "en": "Ibn Kathir: the true King does not create in vain"
+          },
+          "arabic_original": "تقدس أن يخلق شيئا عبثا",
+          "translation": {
+            "ml": "«الْمَلِكُ الْحَقُّ» എന്ന വചനത്തിൽ അല്ലാഹു വ്യർഥമായി സൃഷ്ടിക്കുന്നവനല്ലെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. ഇതോടൊപ്പം വരുന്നത് അർശിന്റെ രക്ഷിതാവും പങ്കാളിയില്ലാത്ത ആരാധ്യനുമെന്ന പ്രസ്താവനയാണ്. തഫ്സീറിലെ അനുബന്ധ അത്ഭുതചികിത്സാ വാദങ്ങളുടെ സനദ് സ്വതന്ത്രമായി പരിശോധിക്കണം.",
+            "en": "Ibn Kathir links al-Malik al-Haqq to creation with purpose, the Throne and exclusive worship of Allah. Extraordinary healing reports appended in commentaries require independent authenticity assessment."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya116.html",
+          "source_reference": "تفسير ابن كثير · Quran 23:116",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-11-23-116-tabary",
+          "title": {
+            "ml": "ത്വബരി: അൽ-മലികുൽ ഹഖ് — പങ്കാളിത്തവാദത്തിന് മറുപടി",
+            "en": "Al-Tabari: al-Malik al-Haqq against false partners"
+          },
+          "arabic_original": "لا معبود تنبغي له العبودة إلا الله الملك الحقّ",
+          "translation": {
+            "ml": "ത്വബരി ഈ ആയത്തിലെ അൽ-മലിക് എന്ന നാമത്തെ അല്ലാഹുവിന് പങ്കാളിയോ സന്താനമോ ഉണ്ടെന്ന ആരോപണങ്ങളുടെ നിഷേധമായി വിശദീകരിക്കുന്നു. «رَبُّ الْعَرْشِ» എന്ന പദത്തിന്റെ വ്യാകരണബന്ധവും അദ്ദേഹം ചർച്ച ചെയ്യുന്നു. വ്യാകരണവും ദൈവശാസ്ത്രവും തമ്മിൽ ബന്ധമുണ്ട്.",
+            "en": "Al-Tabari glosses the True King as exalted above partners or offspring, and addresses the nominative syntax of Rabb al-Arsh. The verse argues for God's exclusive right to worship."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura23-aya116.html",
+          "source_reference": "تفسير الطبري · Quran 23:116",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-12-25-2-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സൃഷ്ടി, നിയന്ത്രണം, പങ്കാളിയില്ലായ്മ",
+            "en": "Ibn Kathir: sole Creator with no shareholding in dominion"
+          },
+          "arabic_original": "فنزّه نفسه عن الولد ، وعن الشريك",
+          "translation": {
+            "ml": "«وَلَمْ يَكُن لَّهُ شَرِيكٌ فِي الْمُلْكِ» എന്നത് അല്ലാഹുവിന് രാജാധികാരത്തിൽ പങ്കാളിയില്ലെന്നു വ്യക്തമാണ്. ഇബ്നു കസീർ സൃഷ്ടികളെയെല്ലാം അവന്റെ സൃഷ്ടിയും അവന്റെ നിയന്ത്രണത്തിന് വിധേയരുമായിട്ടാണ് വിശദീകരിക്കുന്നത്; മനുഷ്യരുടെ പരിമിതമായ രാജാധികാരവുമായി ഇതിനെ തുല്യമാക്കുന്നില്ല.",
+            "en": "Ibn Kathir explains creation, proportional ordering, and exclusive dominion without any independent co-ruler. Earthly rule is derivative and limited, whereas God's authority has no partner."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya2.html",
+          "source_reference": "تفسير ابن كثير · Quran 25:2",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-13-36-83-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «മുൽക്»–«മലകൂത്ത്» പദവ്യത്യാസം",
+            "en": "Ibn Kathir: mulk and malakut have equivalent basic meaning"
+          },
+          "arabic_original": "فالملك والملكوت واحد في المعنى",
+          "translation": {
+            "ml": "ചിലർ മുൽക് ശരീരലോകവും മലകൂത്ത് ആത്മലോകവുമാണെന്ന നിർബന്ധമായ വ്യത്യാസം വാദിച്ചെങ്കിലും, ഇബ്നു കസീർ രണ്ടും അടിസ്ഥാനത്തിൽ സമാന അധികാരാർഥമുള്ള രൂപങ്ങളാണെന്നും അതാണ് ഭൂരിപക്ഷ മുഫസ്സിറുകളുടെ നിലപാടെന്നും വ്യക്തമാക്കുന്നു. അതിനാൽ ഗ്രന്ഥപരമായ വ്യത്യാസവാദം എല്ലാവരുടെയും അംഗീകാരമായ ശാസ്ത്രമായി എഴുതരുത്.",
+            "en": "Ibn Kathir considers mulk and malakut equivalent in core meaning and specifically rejects a necessary division into physical and spiritual realms as contrary to the majority exegetical position."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya83.html",
+          "source_reference": "تفسير ابن كثير · Quran 36:83",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-14-54-55-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: «മലീക്» എന്ന പദവും സന്നിധിയുടെ അർഥവും",
+            "en": "Al-Qurtubi: Malik (مليك) and closeness of dignity"
+          },
+          "arabic_original": "عندية القربة والزلفة والمكانة والرتبة والكرامة والمنزلة",
+          "translation": {
+            "ml": "ഖുർതുബി «عِندَ مَلِيكٍ مُّقْتَدِرٍ» എന്നതിൽ «عند» ഭൂമിയിലെ ഒരു രാജാവിന്റെ അടുക്കൽ ഇരിക്കുന്നതുപോലുള്ള നിർബന്ധ ഭൗതികസ്ഥലമല്ല; അടുത്തുള്ള മഹത്വം, ആദരം, സ്ഥാനം, ബഹുമതി എന്നിവയാണെന്ന് വിശദീകരിക്കുന്നു. «مَلِيكٍ» എന്ന ദൈവിക വിശേഷണം «الْمَلِكُ» എന്ന നാമത്തിന്റെ അതേ അക്ഷരരൂപമല്ല.",
+            "en": "Al-Qurtubi understands 'near an All-Powerful King' in terms of favor, rank, dignity and honor, rather than simply earthly physical seating next to a ruler. The Quranic form is Malik-in, not the identical isolated al-Malik."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura54-aya55.html",
+          "source_reference": "تفسير القرطبي · Quran 54:55",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-15-62-1-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രകീർത്തിക്കപ്പെടുന്ന രാജാവ് പരിശുദ്ധനുമാണ്",
+            "en": "Ibn Kathir: the King is also the Holy"
+          },
+          "arabic_original": "هو مالك السماوات والأرض المتصرف فيهما بحكمه",
+          "translation": {
+            "ml": "ജുമുഅ സൂറത്തിന്റെ തുടക്കത്തിൽ ആകാശവും ഭൂമിയും ഉള്ളതെല്ലാം അല്ലാഹുവിനെ പ്രകീർത്തിക്കുന്നു. «الْمَلِكِ الْقُدُّوسِ» എന്നീ രണ്ടു നേരിട്ടുള്ള നാമങ്ങൾ രാജാധികാരം സൃഷ്ടികളുടെ അപൂർണതയോ അനീതിയോ അല്ലെന്ന സന്ദർഭം നൽകുന്നു.",
+            "en": "In Surat al-Jumu'ah everything in creation glorifies Allah, the King and Holy One. Ibn Kathir explains these Names as ownership, rightful government and freedom from defects."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya1.html",
+          "source_reference": "تفسير ابن كثير · Quran 62:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-16-67-1-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സൂറത്തുൽ മുല്‌കിന്റെ ഹദീസ് റിപ്പോർട്ടുകൾക്ക് വ്യത്യസ്ത ഗ്രേഡുകൾ",
+            "en": "Ibn Kathir: separate graded reports about Surat al-Mulk"
+          },
+          "arabic_original": "هذا حديث منكر جدا",
+          "translation": {
+            "ml": "സൂറത്തുൽ മുല്‌കിന്റെ മുപ്പത് ആയത്തുകൾ ശുപാർശ ചെയ്യുമെന്ന റിപ്പോർട്ട് തിർമിദി «حسن» എന്ന് വിളിച്ചതായി ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. എന്നാൽ ഇതേ വിഭാഗത്തിൽ വരുന്ന മറ്റ് ചില ദീർഘവിവരണങ്ങൾക്ക് «غريب», «ضعيف», «منكر جدا» എന്നീ മുന്നറിയിപ്പുകളും നൽകുന്നു. സൂറത്തിന്റെ പൊതുമഹത്വവും അൽ-മലിക് ഒറ്റ നാമത്തിന് സംഖ്യ നിർണ്ണയിക്കുന്നതും ഒരുമല്ല.",
+            "en": "Ibn Kathir records al-Tirmidhi's ‘hasan’ judgment on a thirty-verse surah intercession report, but labels other elaborate material weak, rare, or strongly objectionable. The surah's reported virtue does not establish a fixed al-Malik name-repetition count."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya1.html",
+          "source_reference": "تفسير ابن كثير · Quran 67:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-17-6-73-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ദീർഘമായ ‘ഹദീസുസ്സൂർ’ നിവേദനം വേർതിരിക്കണം",
+            "en": "Ibn Kathir: severe caution on the long trumpet narrative"
+          },
+          "arabic_original": "هذا حديث [ مشهور ] وهو غريب جدا",
+          "translation": {
+            "ml": "ഈ ആയത്തിനു കീഴിലുള്ള വലിയ അന്തിമദിന വിവരണത്തിന്റെ ചില ഘടകങ്ങൾക്ക് മറ്റ് നിവേദനങ്ങളിൽ പിന്തുണയുണ്ടെങ്കിലും പൂർണ നീളമുള്ള കഥ «غريب جدا» ആണെന്നും ചില വാക്കുകൾ നിഷേധാർഹമാണെന്നും പ്രധാന നിവേദകനെക്കുറിച്ച് വിമർശനമുണ്ടെന്നും ഇബ്നു കസീർ പറയുന്നു. കാർഡിൽ ഉള്ള പൂർണ ഖുർആൻ വചനം ആ കഥയുടെ ഹദീസ് ഗ്രേഡ് സ്വയം തെളിയിക്കുന്നില്ല.",
+            "en": "Ibn Kathir explicitly calls the long eschatological narrative highly unusual, highlights objectionable phrases and weaknesses around its transmitter, while noting some individual motifs have other supporting narrations. Do not attribute the entire expanded tale to Sahih hadith."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya73.html",
+          "source_reference": "تفسير ابن كثير · Quran 6:73",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-18-38-35-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സുലൈമാൻ നബിയുടെ പ്രത്യേക രാജാധികാരപ്രാർത്ഥന",
+            "en": "Ibn Kathir: Sulayman's prayer for a uniquely granted reign"
+          },
+          "arabic_original": "سأل من الله تعالى ملكا لا يكون لأحد من بعده",
+          "translation": {
+            "ml": "സുലൈമാന്റെ «رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا» എന്ന പൂർണ പ്രാർത്ഥനയിൽ അല്ലാഹുവിന്റെ നാമം «الْوَهَّابُ» എന്നാണ്; അദ്ദേഹം അപേക്ഷിക്കുന്നത് മറ്റാർക്കും ലഭിക്കാത്ത പ്രത്യേക **മനുഷ്യ** രാജാധികാരമാണ്. ഇബ്നു കസീർ നബി ﷺ പിശാചിനെ പിടിക്കാൻ ശ്രമിച്ചിട്ടും സുലൈമാന്റെ ദുആ ഓർത്ത് വിട്ട സംഭവത്തിന്റെ സഹീഹ് റിപ്പോർട്ടുകൾ ഉദ്ധരിക്കുന്നു.",
+            "en": "The verse directly invokes al-Wahhab and concerns a unique form of human kingship granted to Sulayman. Ibn Kathir cites authentic reports of the Prophet recalling this prayer when restraining a rebellious jinn, not a formula promising a kingdom to each reciter."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura38-aya35.html",
+          "source_reference": "تفسير ابن كثير · Quran 38:35",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        },
+        {
+          "id": "encyclopedia-malik-tafsir-19-25-26-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അന്ത്യദിനത്തിലെ യഥാർത്ഥ രാജാധികാരം",
+            "en": "Ibn Kathir: ultimate sovereignty on Judgment Day"
+          },
+          "arabic_original": "لمن الملك اليوم لله الواحد القهار",
+          "translation": {
+            "ml": "«الْمُلْكُ يَوْمَئِذٍ الْحَقُّ لِلرَّحْمَٰنِ» എന്ന പ്രസ്താവനയെ ഇബ്നു കസീർ 40:16-ലെ «ലിമനിൽ മുൽകുൽ യൗം» എന്ന ചോദ്യത്തോട് ബന്ധിപ്പിക്കുന്നു. ഈ ആയത്തിൽ നേരിട്ട് വരുന്നത് അർ-റഹ്മാൻ എന്ന നാമം; അൽ-മലിക് കാർഡിൽ ഇതിനെ രാജാധികാരത്തിന്റെ **ആശയതെളിവ്** എന്ന നിലയിലാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "Ibn Kathir connects this to Quran 40:16, demonstrating the end of all human claims at judgment. The explicitly named Divine Name in 25:26 is al-Rahman, and its placement on the al-Malik card is thematic, not an assertion of exact wording."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya26.html",
+          "source_reference": "تفسير ابن كثير · Quran 25:26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "തഫ്സീറിലെ ആശയത്തിന്റെ പദാർത്ഥസത്യസന്ധമായ സംഗ്രഹവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഓരോ ഹദീസ് റിപ്പോർട്ടിന്റെയും സനദ് അതത് സ്ഥലത്ത് വേർതിരിച്ചു പരിശോധിക്കണം; സ്വതന്ത്ര ഖവാസ്സ് വിധിയായി കണക്കാക്കരുത്.",
+            "en": "Source-attributed tafsir summary with a brief Arabic original phrase. Hadith transmissions mentioned in the commentary require their own grading and are not name-specific khawass prescriptions."
+          }
+        }
+      ]
+    }
+  }
+}

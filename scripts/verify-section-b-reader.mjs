@@ -1185,6 +1185,79 @@ try {
   const firstCardEn=render(chapters[rahmanId],rahmanId,'en',{pdf_name_id:rahmanId});
   assert.ok(!firstCardEn.includes(escape(deepRahim.evidence[0].arabic_original)),'Second encyclopedia card spilled onto the first.');
   console.log('PASS: al-Rahim has 24 whole Arabic Quran verses, 20 attributed tafsir studies, bilingual context, grammar distinction and source independence.');
+
+  // Third source-backed encyclopedia card: al-Malik, not a duplicate of the existing nine scanned Tilimsani sections.
+  const encyclopaediaII=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaII.json','utf8'));
+  const malikId='PDF-HN-003';
+  const deepMalik=encyclopaediaII.profiles[malikId];
+  assert.equal(Object.keys(encyclopaediaII.profiles).length,1,'Second encyclopedia overlay should add only card 003.');
+  assert.ok(deepMalik && deepMalik.name_id===malikId);
+  assert.equal(deepMalik.evidence.length,24,'Twenty-four complete Quran passage groups expected.');
+  assert.equal(deepMalik.evidence.reduce((sum,entry)=>sum+entry.verse_count,0),29,'Twenty-nine whole ayat, including the six of al-Nas.');
+  assert.equal(deepMalik.scholarly.length,19,'Nineteen original scholarly notes expected.');
+  assert.equal(chapters[malikId].practices.length,9,'Nine earlier Tilimsani paragraphs must remain intact.');
+  const malikIds=new Set();
+  const malikReferences=new Set();
+  const byMalikRef=new Map();
+  const malikLanguages=['ml','en'];
+  for(const entry of deepMalik.evidence){
+    assert.ok(!malikIds.has(entry.id),'No duplicate Quran record: '+entry.id);malikIds.add(entry.id);
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.ok(entry.claim_kind && entry.source_scope.ml && entry.source_scope.en);
+    assert.ok(entry.arabic_original.length>=15 && entry.verse_meaning.ml && entry.verse_meaning.en);
+    assert.ok(entry.translation.ml && entry.translation.en);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura[0-9]+-aya[0-9]+\.html$/.test(entry.source_url));
+    const verse=entry.source_reference.match(/Quran (\d+:\d+(?:-\d+)?)/)?.[1];
+    assert.ok(verse&&!malikReferences.has(verse),'Quran references must be distinct: '+entry.id);
+    malikReferences.add(verse);byMalikRef.set(verse,entry);
+    for(const lang of malikLanguages){
+      const html=render(chapters[malikId],malikId,lang,{pdf_name_id:malikId});
+      for(const phrase of [entry.arabic_original,entry.verse_meaning[lang],entry.translation[lang],entry.source_scope[lang]]) {
+        assert.ok(html.includes(escape(phrase)), 'Incomplete original/meaning/context '+entry.id+'/'+lang);
+      }
+      assert.ok(html.includes(entry.source_url),'Tafsir citation missing for '+entry.id);
+      assert.ok(sectionBEntrySearchText(entry,lang).includes(entry.verse_meaning[lang].toLocaleLowerCase()),'Full verse meaning missing from search.');
+    }
+  }
+  assert.equal(byMalikRef.get('1:4')?.claim_kind,'canonical_qiraat_malik_maalik');
+  assert.equal(byMalikRef.get('3:26')?.claim_kind,'divine_owner_of_dominion_invocation');
+  assert.equal(byMalikRef.get('23:116')?.claim_kind,'explicit_divine_name');
+  assert.equal(byMalikRef.get('62:1')?.claim_kind,'explicit_divine_name');
+  assert.equal(byMalikRef.get('54:55')?.claim_kind,'related_divine_epithet');
+  assert.equal(byMalikRef.get('2:247')?.claim_kind,'human_kingship_comparison');
+  assert.equal(byMalikRef.get('2:258')?.claim_kind,'human_kingship_comparison');
+  assert.equal(byMalikRef.get('38:35')?.claim_kind,'prophetic_prayer_human_dominion');
+  assert.ok(byMalikRef.get('20:114')?.arabic_original.includes('رَّبِّ زِدْنِي عِلْمًا'),'Previously clipped verse 20:114 must be completed.');
+  assert.equal(byMalikRef.get('114:1-6')?.arabic_original.split('\n').length,6,'Retain all six full surah al-Nas verses.');
+  assert.ok(byMalikRef.get('12:101')?.translation.en.includes('death'));
+  const scholarKinds=new Set();
+  for(const entry of deepMalik.scholarly){
+    assert.ok(!malikIds.has(entry.id),'Tafsir record repeated '+entry.id);malikIds.add(entry.id);
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.ok(entry.arabic_original.length>=12 && entry.translation.ml && entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary)\//.test(entry.source_url));
+    scholarKinds.add(entry.source_url.match(/\/tafseer\/([^/]+)\//)[1]);
+    for(const lang of malikLanguages){
+      const html=render(chapters[malikId],malikId,lang,{pdf_name_id:malikId});
+      assert.ok(html.includes(escape(entry.arabic_original))&&html.includes(escape(entry.translation[lang])));
+      assert.ok(html.includes(entry.source_url),'Study citation missing '+entry.id);
+    }
+  }
+  assert.deepEqual([...scholarKinds].sort(),['katheer','qortobi','tabary']);
+  for(const lang of malikLanguages){
+    const html=render(chapters[malikId],malikId,lang,{pdf_name_id:malikId});
+    for(const paragraph of chapters[malikId].practices){
+      assert.ok(html.includes(escape(paragraph.arabic_original)),'Tilimsani original was removed.');
+      assert.ok(html.includes(escape(paragraph.translation[lang])),'Tilimsani translation was removed.');
+    }
+    assert.ok(html.includes(escape(encyclopaediaII.scope[lang])),'No caution about incomplete manuscript research.');
+  }
+  for(const otherId of ['PDF-HN-001','PDF-HN-002','PDF-HN-004']){
+    const html=render(chapters[otherId]||null,otherId,'en',{pdf_name_id:otherId});
+    assert.ok(!html.includes(deepMalik.evidence[0].id),'New al-Malik evidence may not leak across cards.');
+  }
+  console.log('PASS: card 003 al-Malik has 24 Quran passage groups (29 full verses), 19 source-checked tafsir studies and all nine existing Tilimsani originals in both languages.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
