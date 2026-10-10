@@ -49,7 +49,7 @@ try {
     assert.equal(profile.name_id, id);
     for (const language of ['ml', 'en']) {
       const html = render(chapters[id] || null, id, language, { pdf_name_id: id });
-      assert.ok(html.includes(profile.explanation[language]), `${id}: missing research introduction ${language}`);
+      assert.ok(html.includes(escape(profile.explanation[language])), `${id}: missing research introduction ${language}`);
       for (const group of ['evidence', 'hadith', 'scholarly', 'topics']) {
         for (const entry of profile[group] || []) {
           assert.ok(html.includes(escape(entry.translation[language])), `${id}: missing ${group} ${entry.id} ${language}`);
