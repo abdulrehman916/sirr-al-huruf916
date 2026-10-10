@@ -1,0 +1,509 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "കാർഡ് 008 — അൽ-അസീസ്. പതിനൊൻപത് പൂർണ വചനങ്ങൾ ഖുർആൻ ഉറവിടങ്ങളോടും മലയാളം/English അർഥം, വ്യാകരണപദവി, തഫ്സീർ വിശദീകരണം എന്നിവയോടും കൂടിയാണ്. യൂസുഫിന്റെ കഥയിലെ മനുഷ്യസ്ഥാനം ദൈവനാമമല്ല. പഴയ ശംസ് ഗ്രന്ഥത്തിലെ പതിവായി/അധികമായി ഓതൽ പരാമർശത്തിന് ഒരു നിർദിഷ്ട എണ്ണം നൽകിയിട്ടില്ല; ഭൗതികഫലം ഉറപ്പിക്കുന്ന തെളിവല്ല. സമഗ്രമായ 160 കാർഡ് ഗവേഷണം പൂർത്തിയായിട്ടില്ല.",
+    "en": "Card 008 al-Aziz: nineteen complete Quran verses, bilingual context and grammatical role, including the non-Divine human titles in Surat Yusuf. The earlier Shams source says to remember frequently without a numeric count; it is not authenticated proof of worldly guarantees. Archival completion of all 160 cards remains pending."
+  },
+  "profiles": {
+    "PDF-HN-008": {
+      "name_id": "PDF-HN-008",
+      "evidence": [
+        {
+          "id": "encyclopedia-aziz-quran-2-129",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 2:129",
+            "en": "Al-Aziz — whole Quran verse 2:129"
+          },
+          "arabic_original": "رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا مِّنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِكَ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُزَكِّيهِمْ ۚ إِنَّكَ أَنتَ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "രക്ഷിതാവേ, ഇവർക്കിടയിൽ നിന്നുതന്നെ നിന്റെ ആയത്തുകൾ ഓതിക്കേൾപ്പിക്കുകയും ഗ്രന്ഥവും ജ്ഞാനവും പഠിപ്പിക്കുകയും അവരെ ശുദ്ധീകരിക്കുകയും ചെയ്യുന്ന ഒരു ദൂതനെ നിയോഗിക്കണമേ; നീ പ്രതാപിയും യുക്തിജ്ഞനുമാകുന്നു.",
+            "en": "Our Lord, raise among them a messenger to recite Your signs, teach the Book and wisdom and purify them; You are the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "ഇബ്രാഹീം–ഇസ്മാഈൽ നബിമാരുടെ പ്രാർത്ഥനയുടെ പൂർണവചനമാണിത്. ഇബ്നു കസീർ ഇതിനെ മുഹമ്മദ് നബി ﷺയുടെ പ്രവാചകത്വവുമായി ബന്ധിപ്പിക്കുന്നു. ഇവിടെ എണ്ണമല്ല, നബിയുടെ ദൗത്യമാണ് മുഖ്യവിഷയം.",
+            "en": "A complete prayer of Ibrahim and Isma'il. Ibn Kathir connects its fulfillment with the mission of Muhammad; it prescribes no isolated al-Aziz count."
+          },
+          "source_reference": "Quran 2:129 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya129.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_epithet_in_prophetic_prayer",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-3-6",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 3:6",
+            "en": "Al-Aziz — whole Quran verse 3:6"
+          },
+          "arabic_original": "هُوَ الَّذِي يُصَوِّرُكُمْ فِي الْأَرْحَامِ كَيْفَ يَشَاءُ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "ഗർഭപാത്രങ്ങളിൽ അവൻ ഇച്ഛിക്കുന്നവിധം നിങ്ങളെ രൂപപ്പെടുത്തുന്നു; അവനല്ലാതെ ആരാധ്യനില്ല; അവൻ പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "He forms people in the womb as He wills. There is no deity but Him, the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "മുമ്പ് ഈ കാർഡിൽ ആയത്തിന്റെ അവസാന ഭാഗം മാത്രമായിരുന്നു; ഇപ്പോൾ പൂർണ ആയത്ത് ചേർത്തു. ഇബ്നു കസീർ ഇതിനെ സൃഷ്ടിയിലെ പൂർണാധികാരവും ഈസാ നബിയുടെ മനുഷ്യജനനവും വിശദീകരിക്കുന്ന വചനമാക്കുന്നു.",
+            "en": "The base card held only the last words; this supplies the entire verse. Ibn Kathir relates sovereignty in creation to Isa's human birth."
+          },
+          "source_reference": "Quran 3:6 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "completed_prior_excerpt",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-3-18",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 3:18",
+            "en": "Al-Aziz — whole Quran verse 3:18"
+          },
+          "arabic_original": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹുവും മലക്കുകളും അറിവുള്ളവരും അവനല്ലാതെ ആരാധ്യനില്ലെന്ന് സാക്ഷ്യം വഹിക്കുന്നു; അവൻ നീതിയോടെ നിലകൊള്ളുന്ന പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "Allah, the angels and people of knowledge bear witness to His exclusive divinity and justice. He is the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "അൽ-അസീസിനൊപ്പം നീതിയും അറിവും വരുന്നു. ഇബ്നു കസീർ ‘ഖിസ്ത്’ എന്നത് നീതിപൂർവമായ ക്രമീകരണമാണെന്ന് വിശദീകരിക്കുന്നു; അനുബന്ധ ഹദീസ് റിപ്പോർട്ടുകളുടെ സനദ് പ്രത്യേകം പഠിക്കണം.",
+            "en": "The Name appears with justice and testimony. Ibn Kathir calls attention to God's equity and presents ancillary narrations requiring separate grading."
+          },
+          "source_reference": "Quran 3:18 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "divine_justice_and_testimony",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-4-158",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 4:158",
+            "en": "Al-Aziz — whole Quran verse 4:158"
+          },
+          "arabic_original": "بَل رَّفَعَهُ اللَّهُ إِلَيْهِ ۚ وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا",
+          "verse_meaning": {
+            "ml": "മറിച്ച് അല്ലാഹു ഈസാ നബിയെ തന്റെ അടുക്കലേക്ക് ഉയർത്തി; അവൻ പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "Rather, Allah raised Isa to Himself; Allah is Mighty and Wise."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «عَزِيزًا» അനിശ്ചിത വിശേഷണരൂപമാണ്; «الْعَزِيزُ» എന്ന കൃത്യ അക്ഷരരൂപമല്ല. സംഭവത്തിന്റെ അധിക കഥകളെ ഇബ്നു കസീർ വ്യത്യസ്ത സനദ്/ചരിത്ര റിപ്പോർട്ടുകളായി നൽകുന്നു; അവയെ ഖുർആനായി കണക്കാക്കരുത്.",
+            "en": "Azizan is an indefinite predicate, not the identical definite spelling al-Aziz. Ibn Kathir provides multiple historical accounts of the event, which are not the Quran's own text."
+          },
+          "source_reference": "Quran 4:158 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya158.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive_indefinite_form",
+          "relationship": "indefinite_divine_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-8-10",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 8:10",
+            "en": "Al-Aziz — whole Quran verse 8:10"
+          },
+          "arabic_original": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ وَلِتَطْمَئِنَّ بِهِ قُلُوبُكُمْ ۚ وَمَا النَّصْرُ إِلَّا مِنْ عِندِ اللَّهِ ۚ إِنَّ اللَّهَ عَزِيزٌ حَكِيمٌ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹു ആ അറിയിപ്പിനെ സന്തോഷവാർത്തയും ഹൃദയശാന്തിക്കുള്ള കാരണവുമായി നൽകി; വിജയം അല്ലാഹുവിങ്കൽനിന്നാണ്; അവൻ പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "Allah gave the sign as good news to reassure hearts; victory comes only from Him. He is Mighty and Wise."
+          },
+          "translation": {
+            "ml": "ബദ്റിലെ ചരിത്രസന്ദർഭത്തിൽ മലക്കുകളുടെ സഹായത്തെക്കുറിച്ച് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. പ്രത്യേക എണ്ണം ഓതിയാൽ ഏതു സംഘട്ടനത്തിലും വിജയമെന്ന ഉറപ്പ് ഇവിടെ ഇല്ല.",
+            "en": "In the historical context of Badr, Ibn Kathir discusses angelic reassurance. This is no promise that repeating the Name guarantees victory in any conflict."
+          },
+          "source_reference": "Quran 8:10 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "historical_badr",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-12-30",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 12:30",
+            "en": "Al-Aziz — whole Quran verse 12:30"
+          },
+          "arabic_original": "۞ وَقَالَ نِسْوَةٌ فِي الْمَدِينَةِ امْرَأَتُ الْعَزِيزِ تُرَاوِدُ فَتَاهَا عَن نَّفْسِهِ ۖ قَدْ شَغَفَهَا حُبًّا ۖ إِنَّا لَنَرَاهَا فِي ضَلَالٍ مُّبِينٍ",
+          "verse_meaning": {
+            "ml": "നഗരത്തിലെ സ്ത്രീകൾ «അസീസിന്റെ ഭാര്യ യുവാവിനെ വഴിതെറ്റിക്കാൻ ശ്രമിക്കുന്നു; അവനോടുള്ള പ്രണയം അവളെ കീഴടക്കി» എന്ന് പറയുന്നതായി വചനം രേഖപ്പെടുത്തുന്നു.",
+            "en": "Women in the city speak about the wife of 'the Aziz' trying to seduce her young servant and being overwhelmed by love."
+          },
+          "translation": {
+            "ml": "«الْعَزِيزِ» ഇവിടെ ഈജിപ്തിലെ മനുഷ്യഭരണാധികാരിയുടെ സ്ഥാനപ്പേരാണ്; ഇത് അല്ലാഹുവിന്റെ നാമം നേരിട്ട് വരുന്ന വചനമായി എണ്ണരുത്. ഇബ്നു കസീർ അദ്ദേഹത്തെ മന്ത്രിയെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Al-Aziz here is the title of a human Egyptian official; Ibn Kathir describes him as a minister. Its exact spelling cannot be used to claim a Divine Name in this narrative."
+          },
+          "source_reference": "Quran 12:30 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "human_title_not_divine_name",
+          "relationship": "human_title_not_divine_name",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-12-78",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 12:78",
+            "en": "Al-Aziz — whole Quran verse 12:78"
+          },
+          "arabic_original": "قَالُوا يَا أَيُّهَا الْعَزِيزُ إِنَّ لَهُ أَبًا شَيْخًا كَبِيرًا فَخُذْ أَحَدَنَا مَكَانَهُ ۖ إِنَّا نَرَاكَ مِنَ الْمُحْسِنِينَ",
+          "verse_meaning": {
+            "ml": "«പ്രിയ ഭരണാധികാരിയേ, അവന് വൃദ്ധനായ പിതാവുണ്ട്; അവന്റെ പകരം ഞങ്ങളിലൊരാളെ എടുക്കണമേ. നിങ്ങളെ നന്മ ചെയ്യുന്നവനായി ഞങ്ങൾ കാണുന്നു» എന്ന് യൂസുഫിന്റെ സഹോദരങ്ങൾ അപേക്ഷിക്കുന്നു.",
+            "en": "Yusuf's brothers plead, 'O Aziz, he has an elderly father; take one of us instead. We regard you as generous.'"
+          },
+          "translation": {
+            "ml": "ഈ വിളി യൂസുഫ് നബിയുടെ **മനുഷ്യ** ഭരണപദവിക്കാണ്. ത്വബരി കൃത്യമായി «يا أيها الملك» എന്നാണ് വിശദീകരിക്കുന്നത്; ദൈവനാമം അഭിസംബോധന ചെയ്യുന്നതല്ല.",
+            "en": "The addressee is Yusuf in an earthly ruling role. Al-Tabari explicitly glosses ya ayyuha al-aziz as 'O king', not a call upon God's Name."
+          },
+          "source_reference": "Quran 12:78 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya78.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "human_title_not_divine_name",
+          "relationship": "human_title_not_divine_name",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-12-88",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 12:88",
+            "en": "Al-Aziz — whole Quran verse 12:88"
+          },
+          "arabic_original": "فَلَمَّا دَخَلُوا عَلَيْهِ قَالُوا يَا أَيُّهَا الْعَزِيزُ مَسَّنَا وَأَهْلَنَا الضُّرُّ وَجِئْنَا بِبِضَاعَةٍ مُّزْجَاةٍ فَأَوْفِ لَنَا الْكَيْلَ وَتَصَدَّقْ عَلَيْنَا ۖ إِنَّ اللَّهَ يَجْزِي الْمُتَصَدِّقِينَ",
+          "verse_meaning": {
+            "ml": "«അസീസേ, ഞങ്ങളും കുടുംബവും കഷ്ടത്തിലായി; ഞങ്ങൾ വിലകുറഞ്ഞ സാധനങ്ങളുമായി വന്നിട്ടുണ്ട്. അളവ് പൂർണമായി നൽകുകയും ഞങ്ങളോട് കാരുണ്യം കാണിക്കുകയും ചെയ്യണം» എന്ന് സഹോദരങ്ങൾ പറയുന്നു.",
+            "en": "Yusuf's brothers ask the earthly Aziz for full measures despite their poor goods and appeal to his generosity."
+          },
+          "translation": {
+            "ml": "ഇവിടെയും അസീസ് യൂസുഫിനുള്ള മനുഷ്യ സ്ഥാനപ്പേരാണ്. ഇബ്നു കസീർ മോശം/കുറഞ്ഞ വ്യാപാരസാധനത്തിന്റെ അർഥത്തിൽ മുൻഗാമികളുടെ വ്യത്യസ്ത അഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Again al-Aziz is Yusuf's earthly title. Ibn Kathir reports several interpretations of bidāʿah muzjāh, poor-quality or inadequate trading goods."
+          },
+          "source_reference": "Quran 12:88 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya88.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "human_title_not_divine_name",
+          "relationship": "human_title_not_divine_name",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-14-1",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 14:1",
+            "en": "Al-Aziz — whole Quran verse 14:1"
+          },
+          "arabic_original": "الر ۚ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ لِتُخْرِجَ النَّاسَ مِنَ الظُّلُمَاتِ إِلَى النُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَاطِ الْعَزِيزِ الْحَمِيدِ",
+          "verse_meaning": {
+            "ml": "മനുഷ്യരെ ഇരുട്ടുകളിൽനിന്ന് വെളിച്ചത്തിലേക്കും പ്രതാപിയും സ്തുത്യർഹനുമായ അല്ലാഹുവിന്റെ മാർഗത്തിലേക്കും നയിക്കാൻ ഗ്രന്ഥം ഇറക്കി.",
+            "en": "A Book is revealed to lead people from darkness into light by their Lord's permission and toward the path of the Mighty, Praiseworthy."
+          },
+          "translation": {
+            "ml": "«الْعَزِيزِ الْحَمِيدِ» എന്ന കൂട്ടുപ്രയോഗമാണ്. സൂറയുടെ തുടക്കത്തിലെ അക്ഷരങ്ങളെക്കുറിച്ച് ഇബ്നു കസീർ പല പഴയ അഭിപ്രായങ്ങൾ പറയുന്നു; അക്ഷരങ്ങൾകൊണ്ട് മുഹൂർത്തഗണിതം നിർണയിക്കണമെന്നത് ഉറപ്പായ ഖുർആൻ വിധിയല്ല.",
+            "en": "The Name is paired with al-Hamid. Ibn Kathir lists differing interpretations of the opening disconnected letters; none establishes a required astrological calculation."
+          },
+          "source_reference": "Quran 14:1 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "might_and_praise",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-26-9",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 26:9",
+            "en": "Al-Aziz — whole Quran verse 26:9"
+          },
+          "arabic_original": "وَإِنَّ رَبَّكَ لَهُوَ الْعَزِيزُ الرَّحِيمُ",
+          "verse_meaning": {
+            "ml": "നിന്റെ രക്ഷിതാവുതന്നെയാണ് പ്രതാപിയും കാരുണ്യവാനും.",
+            "en": "Your Lord alone is surely the Mighty, the Merciful."
+          },
+          "translation": {
+            "ml": "ഖുർആനിലെ അടുത്തടുത്ത പ്രവാചകകഥകളിൽ ആവർത്തിക്കുന്ന ഈ കൂട്ടുനാമം പ്രതാപത്തോടൊപ്പം കാരുണ്യവും ചേർക്കുന്നു. ഇബ്നു കസീർ ദൈവത്തിന്റെ ശക്തിയും തൗബ ചെയ്യുന്നവരോടുള്ള കരുണയും വിശദീകരിക്കുന്നു.",
+            "en": "The recurring refrain in prophetic narratives joins irresistible might to mercy. Ibn Kathir notes God's power and patience with those who repent."
+          },
+          "source_reference": "Quran 26:9 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura26-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "might_and_mercy",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-27-9",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 27:9",
+            "en": "Al-Aziz — whole Quran verse 27:9"
+          },
+          "arabic_original": "يَا مُوسَىٰ إِنَّهُ أَنَا اللَّهُ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "മൂസായേ, തീർച്ചയായും ഞാനാണ് അല്ലാഹു; പ്രതാപിയും യുക്തിജ്ഞനുമായവൻ.",
+            "en": "O Musa, it is I, Allah, the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "മൂസാ നബിയോട് അല്ലാഹു സംസാരിക്കുന്ന പൂർണ വചനമാണിത്. ഇബ്നു കസീർ ഈ കൂട്ടുനാമം പ്രവർത്തികളിലും വാക്കുകളിലുമുള്ള ദൈവശക്തിയും ഹിക്മത്തും ആയി വിശദീകരിക്കുന്നു.",
+            "en": "A direct address to Musa. Ibn Kathir connects Divine might and wisdom in God's actions and speech."
+          },
+          "source_reference": "Quran 27:9 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura27-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "divine_address_to_musa",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-30-5",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 30:5",
+            "en": "Al-Aziz — whole Quran verse 30:5"
+          },
+          "arabic_original": "بِنَصْرِ اللَّهِ ۚ يَنصُرُ مَن يَشَاءُ ۖ وَهُوَ الْعَزِيزُ الرَّحِيمُ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹുവിന്റെ സഹായംകൊണ്ടാണ് വിജയം; അവൻ ഉദ്ദേശിക്കുന്നവരെ സഹായിക്കുന്നു; അവൻ പ്രതാപിയും കാരുണ്യവാനുമാണ്.",
+            "en": "Victory comes by Allah's help; He helps whom He wills, and He is the Mighty, the Merciful."
+          },
+          "translation": {
+            "ml": "മുൻ ആയത്തിൽ റോമക്കാരുടെയും പേർഷ്യക്കാരുടെയും ചരിത്രം വരുന്നു. വിജയത്തിന്റെ വർഷത്തെക്കുറിച്ച് ഇബ്നു കസീർ ബദ്റ് കാലമോ ഹുദൈബിയ്യാ കാലമോ എന്ന അഭിപ്രായഭേദം രേഖപ്പെടുത്തുന്നു.",
+            "en": "The preceding context concerns Roman–Persian history. Ibn Kathir records disagreements whether the victory aligned with Badr or Hudaybiyyah; this is not a modern combat ritual."
+          },
+          "source_reference": "Quran 30:5 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura30-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "historical_roman_persian_conflict",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-36-5",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 36:5",
+            "en": "Al-Aziz — whole Quran verse 36:5"
+          },
+          "arabic_original": "تَنزِيلَ الْعَزِيزِ الرَّحِيمِ",
+          "verse_meaning": {
+            "ml": "പ്രതാപിയും കാരുണ്യവാനുമായവന്റെ അവതരണം.",
+            "en": "A revelation from the Mighty, the Merciful."
+          },
+          "translation": {
+            "ml": "ഈ ആയത്ത് ചെറുതാണെങ്കിലും പൂർണ ഖുർആൻ വചനമാണ്. ഇബ്നു കസീർ ഇത് ഖുർആൻ ദൈവികമായി ഇറക്കപ്പെട്ടതും സന്മാർഗദർശനവുമാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Though short, this is a complete Quran verse. Ibn Kathir links the revelation to Divine might, mercy and guidance."
+          },
+          "source_reference": "Quran 36:5 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "revelation_might_and_mercy",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-39-5",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 39:5",
+            "en": "Al-Aziz — whole Quran verse 39:5"
+          },
+          "arabic_original": "خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ ۖ يُكَوِّرُ اللَّيْلَ عَلَى النَّهَارِ وَيُكَوِّرُ النَّهَارَ عَلَى اللَّيْلِ ۖ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَ ۖ كُلٌّ يَجْرِي لِأَجَلٍ مُّسَمًّى ۗ أَلَا هُوَ الْعَزِيزُ الْغَفَّارُ",
+          "verse_meaning": {
+            "ml": "ആകാശഭൂമികളെ സത്യത്തോടെ സൃഷ്ടിക്കുകയും പകലും രാവും പരസ്പരം മാറ്റുകയും സൂര്യചന്ദ്രന്മാരെ നിശ്ചിത കാലത്തേക്ക് നിയന്ത്രിക്കുകയും ചെയ്യുന്നവൻ പ്രതാപിയും ഏറെ പൊറുക്കുന്നവനുമാണ്.",
+            "en": "He creates in truth, alternates night and day and governs sun and moon; He is the Mighty, the Great Forgiver."
+          },
+          "translation": {
+            "ml": "അൽ-അസീസിന്റെ ശക്തിയോടൊപ്പം അൽ-ഗഫ്ഫാറിന്റെ പാപമോചനം വരുന്നു. ഇബ്നു കസീർ തൗബയോടെ തിരികെ വരുന്നവനോടുള്ള മാപ്പായി വിശദീകരിക്കുന്നു.",
+            "en": "Al-Aziz is paired with al-Ghaffar. Ibn Kathir stresses that despite His might, Allah forgives those who repent and return."
+          },
+          "source_reference": "Quran 39:5 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "might_and_forgiveness",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-40-2",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 40:2",
+            "en": "Al-Aziz — whole Quran verse 40:2"
+          },
+          "arabic_original": "تَنزِيلُ الْكِتَابِ مِنَ اللَّهِ الْعَزِيزِ الْعَلِيمِ",
+          "verse_meaning": {
+            "ml": "പ്രതാപിയും സർവജ്ഞനുമായ അല്ലാഹുവിൽനിന്നാണ് ഈ ഗ്രന്ഥത്തിന്റെ അവതരണം.",
+            "en": "The Book is a revelation from Allah, the Mighty, the All-Knowing."
+          },
+          "translation": {
+            "ml": "«الْعَزِيزِ الْعَلِيمِ» ദൈവിക ശക്തിയെയും അറിവിനെയും ചേർക്കുന്നു. ഇബ്നു കസീർ അണുവോളം പോലും ദൈവജ്ഞാനത്തിൽനിന്ന് മറയുന്നില്ലെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "The Name is paired with al-Alim. Ibn Kathir notes absolute might and knowledge in the revelation's source."
+          },
+          "source_reference": "Quran 40:2 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "might_and_knowledge",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-42-3",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 42:3",
+            "en": "Al-Aziz — whole Quran verse 42:3"
+          },
+          "arabic_original": "كَذَٰلِكَ يُوحِي إِلَيْكَ وَإِلَى الَّذِينَ مِن قَبْلِكَ اللَّهُ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "നിനക്കും മുമ്പുള്ള പ്രവാചകന്മാർക്കും പ്രതാപിയും യുക്തിജ്ഞനുമായ അല്ലാഹു ഇപ്രകാരം സന്ദേശം നൽകുന്നു.",
+            "en": "Allah, the Mighty, the Wise, sends revelation to you and to those before you."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇതിന് കീഴിൽ വഹ്‌യ് വരുന്ന വിധത്തെക്കുറിച്ചുള്ള ആഇശ (റ)യുടെ സ്വഹീഹ് റിപ്പോർട്ട് ഉദ്ധരിക്കുന്നു. അതിന്റെ മത്ന് വേറൊരു ഹദീസ് സ്രോതസ്സായി പരിശോധിക്കാം.",
+            "en": "Ibn Kathir cites Aisha's authentic account of modes of revelation in this context; that narrative has its own hadith source separate from this verse."
+          },
+          "source_reference": "Quran 42:3 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "continuity_of_revelation",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-48-7",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 48:7",
+            "en": "Al-Aziz — whole Quran verse 48:7"
+          },
+          "arabic_original": "وَلِلَّهِ جُنُودُ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا",
+          "verse_meaning": {
+            "ml": "ആകാശഭൂമികളിലെ സൈന്യങ്ങളും ശക്തികളും അല്ലാഹുവിനുള്ളതാണ്; അവൻ പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "The hosts of the heavens and earth belong to Allah; He is Mighty and Wise."
+          },
+          "translation": {
+            "ml": "«عَزِيزًا حَكِيمًا» അനിശ്ചിത വിശേഷണരൂപങ്ങളാണ്. സൂറത്തുൽ ഫത്ഹിന്റെ ചരിത്രസന്ദർഭത്തിൽ ഇബ്നു കസീർ ഈ വചനം വിശദീകരിക്കുന്നു; ഒറ്റനാമം ഓതിയാൽ രാഷ്ട്രീയാധികാരം ലഭിക്കുമെന്ന ഫോർമുലയല്ല.",
+            "en": "Azizan hakiman are indefinite predicate forms. Ibn Kathir treats this in Surat al-Fath's setting, not as a guaranteed formula for earthly dominion."
+          },
+          "source_reference": "Quran 48:7 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya7.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive_indefinite_form",
+          "relationship": "indefinite_divine_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-59-24",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 59:24",
+            "en": "Al-Aziz — whole Quran verse 59:24"
+          },
+          "arabic_original": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+          "verse_meaning": {
+            "ml": "അവനാണ് സ്രഷ്ടാവും ഉത്പാദകനും രൂപപ്പെടുത്തുന്നവനും; മനോഹരനാമങ്ങൾ അവനുള്ളതാണ്. ആകാശഭൂമികളിലെല്ലാം അവനെ പ്രകീർത്തിക്കുന്നു; അവൻ പ്രതാപിയും യുക്തിജ്ഞനുമാണ്.",
+            "en": "He is the Creator, Originator and Fashioner; the most beautiful Names belong to Him and all creation glorifies Him, the Mighty, the Wise."
+          },
+          "translation": {
+            "ml": "59:23-നോട് ചേർന്ന ആയത്താണ്. 99 നാമങ്ങളെക്കുറിച്ചുള്ള സ്വഹീഹ് ഹദീസിനോടൊപ്പം ചില നീണ്ട നാമപ്പട്ടിക നിവേദനങ്ങളും ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു; ഓരോ പട്ടികയുടെ സനദ് നില വേർതിരിച്ചറിയണം.",
+            "en": "The adjoining verse to 59:23. Ibn Kathir cites the authentic 99-Names report and a separately transmitted enumerated list; their different isnads should not be conflated."
+          },
+          "source_reference": "Quran 59:24 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "names_and_creation",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-aziz-quran-67-2",
+          "title": {
+            "ml": "അൽ-അസീസ് — പൂർണ ഖുർആൻ ആയത്ത് 67:2",
+            "en": "Al-Aziz — whole Quran verse 67:2"
+          },
+          "arabic_original": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ",
+          "verse_meaning": {
+            "ml": "ആരാണ് കൂടുതൽ നന്നായി പ്രവർത്തിക്കുന്നത് എന്ന് പരീക്ഷിക്കാൻ മരണവും ജീവിതവും സൃഷ്ടിച്ചത് അവനാണ്; അവൻ പ്രതാപിയും പൊറുക്കുന്നവനുമാണ്.",
+            "en": "He created death and life as a test of whose deeds are best; He is the Mighty, the Forgiving."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ‘ഏറ്റവും അധികം’ എന്നതിനു പകരം ‘ഏറ്റവും നല്ല പ്രവൃത്തി’ എന്ന വ്യത്യാസം പറയുന്നു. ശക്തിയോടൊപ്പം തൗബചെയ്യുന്നവർക്കുള്ള മാപ്പും വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir distinguishes best deeds from merely most deeds, pairing unrivaled might with mercy toward the repentant."
+          },
+          "source_reference": "Quran 67:2 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "good_deeds_and_forgiveness",
+          "relationship": "divine_name_or_epithet",
+          "source_scope": {
+            "ml": "ഇവയിൽ അല്ലാഹുവിനെ സൂചിപ്പിക്കുന്ന നേരിട്ടുള്ള നാമങ്ങളും «عَزِيزًا/عَزِيزٌ» എന്ന നിർവചനമില്ലാത്ത വിശേഷണങ്ങളും, യൂസുഫ് കഥയിലെ **മനുഷ്യ** ഭരണാധികാരിയുടെ സ്ഥാനപ്പേരുകളും കൃത്യമായി വേർതിരിച്ചിരിക്കുന്നു. പഴയ 59:23 നേരിട്ടുള്ള വചനവും 3:6-ന്റെ ഉദ്ധരണിയും നിലനിർത്തുന്നു. ഒരു പ്രത്യേക ഓതൽസംഖ്യയോ എതിരാളികളെ കീഴടക്കുന്ന ഉറപ്പോ വചനം കൽപ്പിക്കുന്നില്ല.",
+            "en": "The actual Divine Name, indefinite epithets ʿazīzan/ʿazīzun and the earthly human title in Yusuf are tagged separately. The old 59:23 direct verse and clipped 3:6 record remain. The Quran does not prescribe a Name count or a guarantee of overpowering opponents."
+          },
+          "verse_count": 1
+        }
+      ],
+      "scholarly": []
+    }
+  }
+}
