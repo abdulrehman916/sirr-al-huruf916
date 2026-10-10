@@ -1,0 +1,739 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "Section B-യിലെ മുൻപ് അധിക തഫ്സീർ പഠനമില്ലാത്ത ആദ്യത്തെ 15 പേരുകൾക്കുള്ള സ്രോതസ്സാധിഷ്ഠിത പഠനം. ഇബ്നു കസീർ 16, ത്വബരി 16 എന്നിങ്ങനെ 32 അറബി മൂല ഉദ്ധരണികളും മലയാളം–ഇംഗ്ലീഷ് ആശയവിവരണങ്ങളും. ഖുർആൻ നാമം നേരിട്ട് വരുന്ന സന്ദർഭവും ബിസ്മില്ലാഹ് ആയത്ത് സംബന്ധിച്ച അഭിപ്രായഭിന്നതയും ഗരീബ് ഹദീസ് റിപ്പോർട്ടും വ്യത്യസ്തമായി രേഖപ്പെടുത്തി. സമ്പൂർണ ഖവാസ്സ്, കളം ഗവേഷണം ഇതോടെ പൂർത്തിയായിട്ടില്ല.",
+    "en": "Seventh distinct deep-study batch: the first 15 canonical Holy Names. Thirty-two directly checked short Arabic tafsir excerpts (16 Ibn Kathir, 16 al-Tabari), plus individualized Malayalam/English source criticism. Quranic divine Name occurrences are kept distinct from a disputed al-Fatihah basmala verse-count argument and the reported gharib virtue tradition about the last verses of al-Hashr; no comprehensive occult-manuscript claim is made."
+  },
+  "profiles": {
+    "PDF-HN-001": {
+      "name_id": "PDF-HN-001",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-001-katheer-59-22",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:22",
+            "en": "Ibn Kathir — Quran 59:22"
+          },
+          "arabic_original": "ذو الرحمة الواسعة الشاملة لجميع المخلوقات",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അർ-റഹ്‌മാൻ» എന്നത് സകല സൃഷ്ടികളെയും ഉൾക്കൊള്ളുന്ന വിശാലമായ കരുണയുള്ള അല്ലാഹു എന്നാണ് വ്യക്തമാക്കുന്നത്. 59:22-ൽ നാമം നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir describes al-Rahman through broad mercy encompassing all creatures; the Name is expressly stated in 59:22."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-001-tabary-59-22",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:22",
+            "en": "Al-Tabari — Quran 59:22"
+          },
+          "arabic_original": "هو رحمن الدنيا والآخرة",
+          "translation": {
+            "ml": "ത്വബരി ഇഹലോകത്തിന്റെയും പരലോകത്തിന്റെയും കരുണയുള്ളവൻ എന്ന് വ്യാഖ്യാനിക്കുന്നു; അതേ വചനത്തിൽ അർ-റഹീം എന്ന നാമവും കൂടെ വരുന്നു.",
+            "en": "Al-Tabari interprets al-Rahman as merciful in this life and the next, with al-Rahim alongside it in the same verse."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-critical-001-tabary-1-3",
+          "title": {
+            "ml": "സനദ്/വ്യാഖ്യാന പരിധി — 1:3",
+            "en": "Source-critical qualification — Quran 1:3"
+          },
+          "arabic_original": "إذْ كنا لا نرى أن بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ من فاتحة الكتاب - آيةٌ",
+          "translation": {
+            "ml": "ത്വബരി തന്റെ അഭിപ്രായത്തിൽ ബിസ്മില്ലാഹ് അൽഫാത്തിഹയിലെ വേറിട്ട ആയത്തല്ലെന്ന് പറയുന്നു; ആ നിലപാട് എല്ലാ പണ്ഡിതരുടെയും ഏകാഭിപ്രായമായി കാണിക്കരുത്. പ്രസിദ്ധീകരിച്ച പതിപ്പിന്റെ അടിക്കുറിപ്പ് തന്നെ ഈ വിഷയത്തിലെ ഭിന്നത സൂചിപ്പിക്കുന്നു.",
+            "en": "Al-Tabari argues the basmala is not counted as an independent verse of al-Fatihah in his reading. This is a disputed interpretive matter, not scholarly unanimity; the edition's notes themselves discuss the disagreement."
+          },
+          "source_reference": "تفسير الطبري — Quran 1:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura1-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "critical_transmission_and_scholarly_disagreement",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ വിശദീകരണത്തിൽ രേഖപ്പെടുത്തിയ അഭിപ്രായഭേദമോ സനദ് സംബന്ധിച്ച മുന്നറിയിപ്പോ. സ്വതന്ത്ര ഹദീസ് ഗ്രേഡിംഗോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "A primary-source statement on disagreement or narration grading; not itself an independent hadith authentication or special numerical prescription."
+          }
+        }
+      ]
+    },
+    "PDF-HN-002": {
+      "name_id": "PDF-HN-002",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-002-katheer-59-22",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:22",
+            "en": "Ibn Kathir — Quran 59:22"
+          },
+          "arabic_original": "فهو رحمن الدنيا والآخرة ورحيمهما",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ കരുണ ഇഹലോകത്തും പരലോകത്തും വ്യാപിക്കുന്നു എന്നാണ് വിശദീകരിക്കുന്നത്; അർ-റഹീമിനെ സ്നേഹപരിമിതമായൊരു മാനുഷിക വികാരമായി കാണിക്കരുത്.",
+            "en": "Ibn Kathir characterizes Allah as merciful in both worlds. Al-Rahim is a directly attested Name, not merely a human sentiment."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-002-tabary-59-22",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:22",
+            "en": "Al-Tabari — Quran 59:22"
+          },
+          "arabic_original": "رحيم بأهل الإيمان به",
+          "translation": {
+            "ml": "ത്വബരി ഈ ആയത്തിൽ വിശ്വാസികളോടുള്ള പ്രത്യേക കാരുണ്യം ഊന്നുന്നു; അർ-റഹ്‌മാൻ എന്ന പൊതുകരുണയുടെ സമീപത്ത് ഈ അർഥവ്യത്യാസം വായിക്കാം.",
+            "en": "Al-Tabari emphasizes mercy toward those who believe, alongside the wider scope he mentions for al-Rahman."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:22",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya22.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-003": {
+      "name_id": "PDF-HN-003",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-003-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "المالك لجميع الأشياء المتصرف فيها بلا ممانعة ولا مدافعة",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-മലിക് എല്ലാത്തിന്റെയും ഉടമയും തടസ്സമില്ലാതെ എല്ലാത്തിലും അധികാരം പ്രവർത്തിപ്പിക്കുന്നവനുമാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains al-Malik as owner of all things who governs without resistance or opposition."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-003-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "الملك الذي لا ملك فوقه",
+          "translation": {
+            "ml": "ത്വബരി സകല രാജാധികാരത്തിനും മീതെയുള്ള അന്തിമ പരമാധികാരിയാണ് അൽ-മലിക് എന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari explains al-Malik as the Sovereign above whom there is no higher ruler."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-004": {
+      "name_id": "PDF-HN-004",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-004-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "قال وهب بن منبه : أي الطاهر",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ വഹ്ബ് ബിൻ മുനബ്ബിഹിൽനിന്നുള്ള «പരിശുദ്ധൻ» എന്ന വിശദീകരണവും മുജാഹിദ്, ഖതാദ എന്നിവർ പറഞ്ഞ «അനുഗൃഹീതൻ» എന്ന വായനയും രേഖപ്പെടുത്തുന്നു. ഇവ പണ്ഡിതാഭിപ്രായങ്ങളാണ്.",
+            "en": "Ibn Kathir reports Wahb ibn Munabbih's gloss 'pure' and other early opinions such as 'blessed'; these are cited scholarly readings."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-004-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "القدّوس، قيل: هو المبارك",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഖുദ്ദൂസിന് «അനുഗൃഹീതൻ» എന്ന പഴയ വ്യാഖ്യാനം രേഖപ്പെടുത്തുന്നു; തഫ്സീർ പദത്തെ വേറൊരു നാമമാക്കി മാറ്റുന്നില്ല.",
+            "en": "Al-Tabari preserves the early interpretation of al-Quddus as 'blessed', rather than claiming the gloss is another independent Quranic Name."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-005": {
+      "name_id": "PDF-HN-005",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-005-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "من جميع العيوب والنقائص",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അസ്-സലാം അല്ലാഹുവിന്റെ സത്തയിലും ഗുണങ്ങളിലും പ്രവൃത്തികളിലും ന്യൂനതകൾ ഇല്ലെന്ന പൂർണതയോട് ബന്ധിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir reads al-Salam as absolute freedom from every defect or imperfection in essence, attributes and acts."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-005-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "هو الذي يسلم خلقه من ظلمه",
+          "translation": {
+            "ml": "ത്വബരി അസ്-സലാം സൃഷ്ടികളെ തന്റെ ഭാഗത്തുനിന്നുള്ള അനീതിയിൽനിന്ന് സുരക്ഷിതരാക്കുന്നവൻ എന്ന നിലയിൽ വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari explains al-Salam as the One whose creatures are safe from being wronged by Him."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-006": {
+      "name_id": "PDF-HN-006",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-006-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "أي أمن خلقه من أن يظلمهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിന്റെ പേരിൽ അൽ-മുഅ്മിൻ സൃഷ്ടികളെ അനീതിയിൽനിന്ന് സുരക്ഷിതരാക്കുന്നവൻ എന്നു രേഖപ്പെടുത്തുന്നു; ഖതാദ, ഇബ്നു സൈദ് എന്നിവരുടെ വേറിട്ട വായനകളും സൂക്ഷിക്കുന്നു.",
+            "en": "Ibn Kathir transmits a gloss attributed to Ibn Abbas: al-Mu'min secures creation against injustice, while noting other early interpretations."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-006-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "الذي يؤمن خلقه من ظلمه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-മുഅ്മിൻ സൃഷ്ടികൾക്ക് സുരക്ഷിതത്വം നൽകുന്നവൻ എന്നു വ്യാഖ്യാനിക്കുന്നു; ഖതാദയുടെ «തന്റെ വാക്ക് സത്യമാണെന്ന് ഉറപ്പിക്കുന്നവൻ» എന്ന അഭിപ്രായവും പ്രത്യേകം രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari explains protection against injustice and separately records Qatadah's reading about the truthfulness of Allah's word."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-007": {
+      "name_id": "PDF-HN-007",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-007-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "أي الشاهد على خلقه بأعمالهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-മുഹൈമിൻ സൃഷ്ടികളുടെ പ്രവൃത്തികൾക്ക് സാക്ഷിയും നിരീക്ഷകനുമാണെന്ന് ഇബ്നു അബ്ബാസിൽനിന്ന് രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir reports al-Muhaymin as Witness to the deeds of creation and their Overseer."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-007-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "اختلف أهل التأويل في تأويله، فقال بعضهم: المهيمن الشهيد",
+          "translation": {
+            "ml": "ത്വബരി അൽ-മുഹൈമിൻ എന്നതിന് സാക്ഷി, വിശ്വസ്തൻ, സത്യപ്പെടുത്തുന്നവൻ എന്നീ വിവിധ വായനകൾ രേഖപ്പെടുത്തുന്നു; അവയെല്ലാം ഒരേ നിർവചനമായി കാണിക്കരുത്.",
+            "en": "Al-Tabari reports different readings of al-Muhaymin: Witness, Trustworthy, and Confirmer; their attribution and differences must remain visible."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-008": {
+      "name_id": "PDF-HN-008",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-008-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "الذي قد عز كل شيء فقهره",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-അസീസ് സകലത്തിനും മീതെ ജയിക്കുന്ന അധികാരത്തിന്റെയും കീഴടങ്ങാത്ത പ്രതാപത്തിന്റെയും പേരാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains al-Aziz as mighty over everything and beyond being overcome."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-008-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "الشديد في انتقامه ممن انتقم من أعدائه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-അസീസിന്റെ വ്യാഖ്യാനത്തിൽ ശത്രുക്കൾക്കെതിരെയുള്ള ദൈവിക ശിക്ഷാനടപടിയുടെ ശക്തിയെ ഊന്നുന്നു; ഇതിൽനിന്ന് സ്വയം ആരെയെങ്കിലും ഉപദ്രവിക്കുന്ന വസീഫ ഉണ്ടാക്കരുത്.",
+            "en": "Al-Tabari stresses the irresistible strength of divine retribution, not a humanly prescribed ritual for harming an opponent."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-009": {
+      "name_id": "PDF-HN-009",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-009-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "الجبار : المصلح أمور خلقه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ത്വബരിയുടെ അഭിപ്രായമായി അൽ-ജബ്ബാർ സൃഷ്ടികളുടെ കാര്യങ്ങൾ ശരിയാക്കുന്നവനാണെന്ന് ഉദ്ധരിക്കുന്നു; ഖതാദയുടെ നിർബന്ധിത ദൈവിക അധികാരം എന്ന വ്യാഖ്യാനവും ചൂണ്ടിക്കാണിക്കുന്നു.",
+            "en": "Ibn Kathir quotes al-Tabari's gloss that al-Jabbar puts creation's affairs right, while also preserving Qatadah's emphasis on power."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-009-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "المصلح أمور خلقه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ജബ്ബാർ സൃഷ്ടികളുടെ കാര്യങ്ങൾ നന്നാക്കുകയും അവർക്കു ഗുണമുള്ള രീതിയിൽ നിയന്ത്രിക്കുകയും ചെയ്യുന്നവനാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari explains al-Jabbar as setting creation's affairs right and governing with due benefit."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-010": {
+      "name_id": "PDF-HN-010",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-010-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:23",
+            "en": "Ibn Kathir — Quran 59:23"
+          },
+          "arabic_original": "المتكبر : يعني عن كل سوء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖതാദയുടെ അഭിപ്രായമായി അൽ-മുതകബ്ബിർ എല്ലാ തിന്മകളിൽനിന്നും ഉന്നതനായവനാണെന്ന് രേഖപ്പെടുത്തുന്നു; ഇത് മനുഷ്യർക്കുള്ള അഹങ്കാരം ആചരിക്കാൻ പ്രേരണയല്ല.",
+            "en": "Ibn Kathir relays Qatadah's interpretation: al-Mutakabbir transcends every evil. It is not an endorsement of human arrogance."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-010-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:23",
+            "en": "Al-Tabari — Quran 59:23"
+          },
+          "arabic_original": "تكبر عن كلّ شر",
+          "translation": {
+            "ml": "ത്വബരി അൽ-മുതകബ്ബിർ ഏതു തിന്മയിൽനിന്നും പരിശുദ്ധമായി ഉന്നതനായവൻ എന്നാണ് രേഖപ്പെടുത്തുന്നത്.",
+            "en": "Al-Tabari glosses al-Mutakabbir as exalted beyond all evil."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-011": {
+      "name_id": "PDF-HN-011",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-011-katheer-59-24",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:24",
+            "en": "Ibn Kathir — Quran 59:24"
+          },
+          "arabic_original": "الخلق : التقدير",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടിയുടെ മുൻനിർണയം (ഖൽക്) എന്നതും അതിനെ യാഥാർഥ്യമാക്കൽ (ബറഅ്) എന്നതും വ്യത്യസ്തമായി വിശദീകരിക്കുന്നു; അല്ലാഹുവിന്റെ സൃഷ്ടിശക്തി ഇരു കാര്യവും ഉൾക്കൊള്ളുന്നു.",
+            "en": "Ibn Kathir distinguishes determining creation from actually bringing the determined into existence."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-011-tabary-59-24",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:24",
+            "en": "Al-Tabari — Quran 59:24"
+          },
+          "arabic_original": "ولا خالق سواه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഖാലിഖ് അല്ലാഹു മാത്രമാണ് യഥാർത്ഥ സ്രഷ്ടാവ് എന്നും അവനല്ലാതെ ആരാധിക്കപ്പെടാൻ യോഗ്യനില്ലെന്നും വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari emphasizes no creator besides Allah, alongside exclusive worship."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-critical-011-katheer-59-24",
+          "title": {
+            "ml": "സനദ്/വ്യാഖ്യാന പരിധി — 59:24",
+            "en": "Source-critical qualification — Quran 59:24"
+          },
+          "arabic_original": "وقال : غريب لا نعرفه إلا من هذا الوجه",
+          "translation": {
+            "ml": "59:24-ന്റെ തഫ്സീറിൽ അവസാനത്തെ മൂന്ന് ആയത്തുകൾക്ക് നിശ്ചിത രാവിലത്തെ എണ്ണം ചൊല്ലിയാൽ 70,000 മലക്കുകളുടെ സംരക്ഷണമെന്ന റിപ്പോർട്ട് ഉദ്ധരിക്കുമ്പോൾ തിർമിദി അതിനെ ഗരീബ് എന്ന് വിശേഷിപ്പിച്ചതായി ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. സനദ് സ്വതന്ത്രമായി പരിശോധിക്കാതെ ഉറപ്പായ ഫലമോ നിർബന്ധവസീഫയോ ആയി ചേർക്കരുത്.",
+            "en": "Ibn Kathir records al-Tirmidhi calling the transmitted claim about three morning recitations and seventy thousand angels 'gharib, known only by this route.' This flags a narration requiring independent grading, not an established guaranteed virtue or mandatory routine."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "critical_transmission_and_scholarly_disagreement",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ വിശദീകരണത്തിൽ രേഖപ്പെടുത്തിയ അഭിപ്രായഭേദമോ സനദ് സംബന്ധിച്ച മുന്നറിയിപ്പോ. സ്വതന്ത്ര ഹദീസ് ഗ്രേഡിംഗോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "A primary-source statement on disagreement or narration grading; not itself an independent hadith authentication or special numerical prescription."
+          }
+        }
+      ]
+    },
+    "PDF-HN-012": {
+      "name_id": "PDF-HN-012",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-012-katheer-59-24",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 59:24",
+            "en": "Ibn Kathir — Quran 59:24"
+          },
+          "arabic_original": "إبراز ما قدره وقرره إلى الوجود",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-ബാരിഅ് മുൻനിശ്ചയിച്ച സൃഷ്ടിയെ യാഥാർഥ്യത്തിലേക്കു കൊണ്ടുവരുന്നതായി വിശദീകരിക്കുന്നു; 2:54-ലെ ബാരിഇകും എന്ന രൂപത്തിനും ഇതേ സൃഷ്ടി ബന്ധമുണ്ട്.",
+            "en": "Ibn Kathir distinguishes al-Bari' as bringing into actual existence what was planned; this differs from merely conceiving a form."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-012-tabary-59-24",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 59:24",
+            "en": "Al-Tabari — Quran 59:24"
+          },
+          "arabic_original": "فأوجدهم بقدرته",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ബാരിഅ് സൃഷ്ടികളെ അല്ലാഹുവിന്റെ ശക്തിയാൽ ഉണ്ടാക്കിയവൻ എന്നാണ് വിശദീകരിക്കുന്നത്; അൽ-മുസവ്വിറിനോടൊപ്പം ഖുർആൻ 59:24-ൽ നാമം വരുന്നു.",
+            "en": "Al-Tabari explains al-Bari' as bringing created beings into existence by divine power; it is directly named in Quran 59:24."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-013": {
+      "name_id": "PDF-HN-013",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-013-katheer-17-110",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 17:110",
+            "en": "Ibn Kathir — Quran 17:110"
+          },
+          "arabic_original": "لا فرق بين دعائكم له باسم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അല്ലാഹ്» എന്നും «അർ-റഹ്മാൻ» എന്നും വിളിച്ചാലും ആരാധിക്കപ്പെടുന്നവൻ ഒരേയൊരു ദൈവമാണെന്ന് വിശദീകരിക്കുന്നു. 17:110 ദൈവനാമങ്ങൾ വ്യത്യസ്ത ദേവന്മാരെ സൂചിപ്പിക്കുന്നില്ല.",
+            "en": "Ibn Kathir explains invoking Allah and invoking al-Rahman address the same One God; multiple Beautiful Names do not imply separate divinities."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 17:110",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya110.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-013-tabary-17-110",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 17:110",
+            "en": "Al-Tabari — Quran 17:110"
+          },
+          "arabic_original": "فإنما تدعون واحدا، وله الأسماء الحُسنى",
+          "translation": {
+            "ml": "ത്വബരി പല നാമങ്ങളിലൂടെ പ്രാർത്ഥിച്ചാലും ഒരേ അല്ലാഹുവിനെയാണ് വിളിക്കുന്നതെന്ന് വ്യക്തമാക്കുന്നു; ആ ആയത്തിന്റെ അവസാനം പ്രാർത്ഥന/നമസ്കാരശബ്ദത്തിന്റെ നിലയെക്കുറിച്ചുള്ള അഭിപ്രായഭേദങ്ങളും രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari says calling by different Names still addresses one God, and separately records multiple readings of the verse's instructions about prayer volume."
+          },
+          "source_reference": "تفسير الطبري — Quran 17:110",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura17-aya110.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-014": {
+      "name_id": "PDF-HN-014",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-014-katheer-13-16",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 13:16",
+            "en": "Ibn Kathir — Quran 13:16"
+          },
+          "arabic_original": "يقرر تعالى أنه لا إله إلا هو",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ യഥാർത്ഥ സ്രഷ്ടാവായ അല്ലാഹുവിനു പുറമെ ആരാധന ചെയ്യുന്നവയ്ക്ക് സ്വയം നന്മയോ ദോഷമോ നിയന്ത്രിക്കാൻ കഴിയില്ലെന്ന് വിശദീകരിക്കുന്നു; «അൽ-ഖഹ്ഹാർ» ഈ ഏകദൈവ വിശ്വാസത്തിന്റെ സന്ദർഭത്തിലാണ്.",
+            "en": "Ibn Kathir frames al-Qahhar within the proof of God's sole creation and authority; idols cannot even ensure their own benefit or harm."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:16",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-014-tabary-13-16",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 13:16",
+            "en": "Al-Tabari — Quran 13:16"
+          },
+          "arabic_original": "الذي يستحق الألوهة والعبادة, لا الأصنام والأوثان",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഖഹ്ഹാർ ആരാധനയ്ക്കർഹനായ പരമാധികാരിയാണ്; വിഗ്രഹങ്ങളല്ല എന്ന നിലയിൽ വിശദീകരിക്കുന്നു. ദോഷം ചെയ്യാനുള്ള മനുഷ്യന്റെ രഹസ്യശക്തിയായി ആയത്തെ അവതരിപ്പിക്കുന്നില്ല.",
+            "en": "Al-Tabari identifies the All-Subduing as the One worthy of worship, not idols; this is not a practice empowering humans to harm others."
+          },
+          "source_reference": "تفسير الطبري — Quran 13:16",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura13-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    },
+    "PDF-HN-015": {
+      "name_id": "PDF-HN-015",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vii-015-katheer-3-8",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 3:8",
+            "en": "Ibn Kathir — Quran 3:8"
+          },
+          "arabic_original": "ولكن ثبتنا على صراطك المستقيم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഹൃദയം ഹിദായത്തിൽനിന്ന് വഴിതെറ്റാതിരിക്കാനുള്ള ദുആയാണ് ഇത് എന്ന് പറയുന്നു. «അൽ-വഹ്ഹാബ്» ഇവിടെ നേരിട്ടുള്ള നാമമാണ്; അനുഗ്രഹം വിശ്വാസത്തിൽ ഉറച്ചുനിൽക്കുന്നതുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു.",
+            "en": "Ibn Kathir reads 3:8 as asking to be kept firm upon guidance. Al-Wahhab is explicitly named, and the request is for mercy and steadfast faith."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        },
+        {
+          "id": "depth-vii-015-tabary-3-8",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 3:8",
+            "en": "Al-Tabari — Quran 3:8"
+          },
+          "arabic_original": "المعطي عبادك التوفيقَ والسدادَ للثبات على دينك",
+          "translation": {
+            "ml": "ത്വബരി അൽ-വഹ്ഹാബ് മതത്തിൽ സ്ഥിരതയ്ക്കുള്ള തൗഫീഖും ശരിയായ മാർഗവും നൽകുന്നവൻ എന്നാണ് വ്യാഖ്യാനിക്കുന്നത്; ഖുർആൻ ദുആയ്ക്ക് ഒറ്റപ്പെട്ട ജപസംഖ്യ അദ്ദേഹം നിശ്ചയിക്കുന്നില്ല.",
+            "en": "Al-Tabari explains al-Wahhab as Giver of guidance and steadiness in faith, not a new counted-name formula."
+          },
+          "source_reference": "تفسير الطبري — Quran 3:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_attributed_explanation",
+          "source_scope": {
+            "ml": "ഇത് പരിശോധിച്ച തഫ്സീർ പേജിലെ ചെറു അറബി മൂലഭാഗവും പണ്ഡിതന്റെ ആശയത്തിന്റെ മലയാളം സംഗ്രഹവുമാണ്. ഇതിലൂടെ പുതിയ നിശ്ചിത ജപസംഖ്യയോ സമയമോ ഫലവാഗ്ദാനമോ സ്ഥിരീകരിക്കുന്നില്ല.",
+            "en": "A brief original-language excerpt checked against the cited tafsir and a separate attributed English interpretation; no independent numeric ritual, timing or guarantee is being asserted."
+          }
+        }
+      ]
+    }
+  }
+}
