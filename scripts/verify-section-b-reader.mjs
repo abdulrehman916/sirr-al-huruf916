@@ -1634,8 +1634,8 @@ try {
   assert.equal(shamsAziz.source_page,'68');
   assert.ok(shamsAziz.arabic_original.includes('من أكثر من ذكره'));
   assert.ok(shamsAziz.count.en.includes('no fixed repetition count'),'Shams brief must not be assigned a fabricated count.');
-  assert.ok(!shamsAziz.timing.en.includes('Saturday')&&!shamsAziz.conditions.en.includes('incense'),
-    'Do not import ritual timing or incense from unrelated manuscript chapter.');
+  assert.ok(shamsAziz.timing.en.includes('no weekday')&&shamsAziz.conditions.en.includes('no special purification, incense or diet'),
+    'Historical source must explicitly state that no specific time, incense or diet is established.');
   for(const language of ['ml','en']){
     const html=render(chapters[azizId]||null,azizId,language,{pdf_name_id:azizId});
     assert.ok(html.includes(escape(shamsAziz.arabic_original)),'Original sourced Shams al-Aziz brief absent.');
