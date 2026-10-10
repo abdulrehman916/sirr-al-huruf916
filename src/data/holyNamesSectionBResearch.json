@@ -1008,5 +1008,485 @@
       }
     ],
     "topics": []
+  },
+  "PDF-HN-013": {
+    "name_id": "PDF-HN-013",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "ഈ കാർഡിലെ മൂല തലക്കെട്ട് «اسمه الله تبارك وتعالى» — 'അവന്റെ നാമം അല്ലാഹു; അവൻ അനുഗ്രഹീതനും ഉന്നതനുമാണ്' — എന്നതാണ്. അല്ലാഹു (اللَّهُ) ദൈവത്തെ സൂചിപ്പിക്കുന്ന സവിശേഷ നാമമാണ്. ഖുർആൻ 20:14-ൽ മൂസാ നബിയോടുള്ള അഭിസംബോധനയിൽ അല്ലാഹുവാണ് ഏക ആരാധ്യനെന്ന് പറയുന്നു. 7:180-ൽ ഏറ്റവും നല്ല നാമങ്ങൾ അല്ലാഹുവിനുള്ളതാണെന്നും അവ ഉപയോഗിച്ച് പ്രാർത്ഥിക്കണമെന്നും പഠിപ്പിക്കുന്നു; 17:110-ൽ 'അല്ലാഹു' എന്നോ 'അർ-റഹ്മാൻ' എന്നോ വിളിക്കാമെന്ന് പറയുന്നു. സഹീഹ് ബുഖാരി 7392-ലും സഹീഹ് മുസ്ലിം 2677a-യിലും 99 നാമങ്ങളെക്കുറിച്ചുള്ള ഹദീസ് വരുന്നു. ഈ ഹദീസ് Section B-യിലെ നിലവിലുള്ള 160 PDF തലക്കെട്ടുകൾ മുഴുവൻ ഹദീസിൽ നിർദേശിച്ച പട്ടികയാണെന്ന് തെളിയിക്കുന്നില്ല. ചില പരമ്പരാഗത പേരുകളുടെ പട്ടികകളുടെ ആധികാരികത പ്രത്യേകം വിലയിരുത്തേണ്ടതാണ്. ദൈവനാമങ്ങളിലുള്ള ഗവേഷണം, ഔദ്യോഗിക ഖുർആൻ പാഠം, ഹദീസ് പാഠം, വിവാദമുള്ള അധിക റിപ്പോർട്ടുകൾ, ആത്മീയപരമ്പരാഗത ചിന്തകൾ എന്നിവ വ്യക്തമായി വേർതിരിക്കുന്ന സമീപനമാണ് ഇവിടെ.",
+      "en": "The stored chapter heading means 'His name is Allah, blessed and exalted.' Allah is the distinctive divine name. Quran 20:14 affirms sole divinity, 7:180 instructs invocation through the Beautiful Names, and 17:110 permits calling upon Allah or al-Rahman. Bukhari 7392 and Muslim 2677a establish the report about ninety-nine names, but do not authenticate this site's 160 stored PDF headings as a prophetic list. The different categories of evidence are kept separate."
+    },
+    "evidence": [
+      {
+        "id": "q20-14-allah",
+        "title": {
+          "ml": "അല്ലാഹു: ആരാധനയുടെ ഏക അവകാശി / Allah: the one deity",
+          "en": "അല്ലാഹു: ആരാധനയുടെ ഏക അവകാശി / Allah: the one deity"
+        },
+        "arabic_original": "إِنَّنِي أَنَا اللَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدْنِي وَأَقِمِ الصَّلَاةَ لِذِكْرِي",
+        "translation": {
+          "ml": "മൂസാ നബിയോട് സംസാരിക്കുന്ന വചനത്തിൽ അല്ലാഹു തനിക്കല്ലാതെ ആരാധ്യനില്ലെന്നും തന്നെ ആരാധിക്കണമെന്നും നമസ്കാരം നിലനിർത്തണമെന്നും പറയുന്നു.",
+          "en": "In the address to Moses, Allah declares He alone is to be worshipped and commands worship and prayer."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya14.html",
+        "source_reference": "Quran 20:14",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q7-180-names",
+        "title": {
+          "ml": "അസ്മാഉൽ ഹുസ്നാ / Beautiful Names",
+          "en": "അസ്മാഉൽ ഹുസ്നാ / Beautiful Names"
+        },
+        "arabic_original": "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا",
+        "translation": {
+          "ml": "അല്ലാഹുവിനാണ് ഏറ്റവും നല്ല നാമങ്ങൾ; അവയിലൂടെ അവനോട് പ്രാർത്ഥിക്കണമെന്ന് ഈ വചനം പറയുന്നു. ഇത് ആയത്തിന്റെ ആരംഭഭാഗമാണ്.",
+          "en": "The Beautiful Names belong to Allah; call upon Him by them. This is a verse excerpt."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya180.html",
+        "source_reference": "Quran 7:180",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q17-110-allah",
+        "title": {
+          "ml": "അല്ലാഹുവെന്നോ അർ-റഹ്മാനെന്നോ വിളിക്കുക / Call upon Allah or al-Rahman",
+          "en": "അല്ലാഹുവെന്നോ അർ-റഹ്മാനെന്നോ വിളിക്കുക / Call upon Allah or al-Rahman"
+        },
+        "arabic_original": "قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَٰنَ ۖ أَيًّا مَّا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+        "translation": {
+          "ml": "എന്ത് നാമത്തിൽ വിളിച്ചാലും ഏറ്റവും നല്ല നാമങ്ങൾ അല്ലാഹുവിനാണ് — ഈ ഭാഗം രണ്ട് വ്യത്യസ്ത ദൈവങ്ങളെ സൂചിപ്പിക്കുന്നില്ല.",
+          "en": "Whatever of these names one calls upon, the Beautiful Names belong to the one God."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya110.html",
+        "source_reference": "Quran 17:110",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "bukhari-7392",
+        "title": {
+          "ml": "തൊണ്ണൂറ്റൊൻപത് നാമങ്ങൾ — സഹീഹ് ബുഖാരി 7392",
+          "en": "Ninety-nine names — Bukhari 7392"
+        },
+        "arabic_original": "إِنَّ لِلَّهِ تِسْعَةً وَتِسْعِينَ اسْمًا مِائَةً إِلاَّ وَاحِدًا، مَنْ أَحْصَاهَا دَخَلَ الْجَنَّةَ",
+        "translation": {
+          "ml": "അബൂഹുറൈറ (റ) റിപ്പോർട്ട് ചെയ്യുന്നതനുസരിച്ച് 99 നാമങ്ങളെക്കുറിച്ചും അവ ഇഹ്സാ ചെയ്യുന്നവർക്കുള്ള പ്രതിഫലത്തെക്കുറിച്ചും നബി ﷺ സംസാരിച്ചു. ഈ വാചകം ഏതെങ്കിലും PDF-ലുള്ള 160 പേരുടെ പട്ടികയ്ക്ക് സ്വതവേ ആധികാരികത നൽകുന്നില്ല.",
+          "en": "Abu Huraira reports the hadith of ninety-nine names and the reward for counting/knowing them. This does not validate any particular list of 160 scanned headings."
+        },
+        "source_url": "https://sunnah.com/bukhari/97/21",
+        "source_reference": "صحيح البخاري 7392",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "muslim-2677a",
+        "title": {
+          "ml": "99 നാമങ്ങളുടെ ഹദീസ് — സഹീഹ് മുസ്ലിം",
+          "en": "Hadith of the ninety-nine names — Sahih Muslim"
+        },
+        "arabic_original": "لِلَّهِ تِسْعَةٌ وَتِسْعُونَ اسْمًا مَنْ حَفِظَهَا دَخَلَ الْجَنَّةَ وَإِنَّ اللَّهَ وِتْرٌ يُحِبُّ الْوِتْرَ",
+        "translation": {
+          "ml": "ഈ നിവേദനത്തിൽ ദൈവനാമങ്ങൾ പഠിച്ചറിയുന്നതിനെക്കുറിച്ചും അല്ലാഹു വിത്ർ ആണെന്നുമുള്ള പരാമർശമുണ്ട്. ഒരു 160-പേരുടെ പട്ടികയോ ഓരോ നാമത്തിനും നിശ്ചിത കളമോ ഇവിടെ നൽകിയിട്ടില്ല.",
+          "en": "The hadith concerns the ninety-nine names and Allah loving the odd number. It does not give this site's 160-heading list or talismans for each name."
+        },
+        "source_url": "https://sunnah.com/muslim/48/5",
+        "source_reference": "صحيح مسلم 2677a",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "tafsir-ibn-kathir-17-110",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: ഒരു ദൈവത്തിനുള്ള വ്യത്യസ്ത മനോഹരനാമങ്ങൾ",
+          "en": "Ibn Kathir: differing names of the one God"
+        },
+        "translation": {
+          "ml": "17:110-ൽ അല്ലാഹു എന്നും അർ-റഹ്മാൻ എന്നും പ്രാർത്ഥിക്കുന്നത് രണ്ട് ദൈവങ്ങളെയല്ല, ഏറ്റവും നല്ല നാമങ്ങളുള്ള ഒരേയൊരു അല്ലാഹുവിനെയാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു.",
+          "en": "On 17:110 Ibn Kathir explains that Allah and al-Rahman refer to the same deity and belong to His Beautiful Names."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya110.html",
+        "source_reference": "تفسير ابن كثير — الإسراء 17:110",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "tafsir-ibn-kathir-7-180",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: പട്ടികയുടെ സ്രോതസ്സും വ്യാഖ്യാനവും",
+          "en": "Ibn Kathir: transmission of the enumerated list"
+        },
+        "translation": {
+          "ml": "7:180-ന്റെ തഫ്സീറിൽ 99 നാമങ്ങളുടെ സഹീഹ് ഹദീസും പേരുകൾ ഒന്നൊന്നായി എണ്ണുന്ന ചില അധിക നിവേദനങ്ങളിലെ നിലപാടുകളും ഇബ്നു കസീർ വേർതിരിക്കുന്നു; പട്ടികയുടെ ആധികാരികതയെക്കുറിച്ചുള്ള നിരൂപണം പ്രത്യേകം പരിഗണിക്കണം.",
+          "en": "On 7:180 Ibn Kathir distinguishes the sound hadith about ninety-nine names from discussions about narrations enumerating individual names."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya180.html",
+        "source_reference": "تفسير ابن كثير — الأعراف 7:180",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-014": {
+    "name_id": "PDF-HN-014",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "അൽ-ഖഹ്ഹാർ (الْقَهَّارُ) എല്ലാറ്റിനും മേൽ സമ്പൂർണ അധികാരമുള്ളവൻ എന്ന അർഥത്തിൽ ഖുർആനിൽ വരുന്നു. അർ-റഅ്ദ് 13:16-ന്റെ അവസാനഭാഗത്ത് അല്ലാഹുവിനെ 'അൽ-വാഹിദുൽ ഖഹ്ഹാർ' എന്നാണ് വിളിക്കുന്നത്. സൃഷ്ടിയെ നിയന്ത്രിക്കുന്ന യഥാർത്ഥ അധികാരവും ഏകദൈവവിശ്വാസവുമാണ് ആയത്തിന്റെ പശ്ചാത്തലം. ആളുകളെ നിർബന്ധിച്ച് കീഴടക്കാനോ ദ്രോഹിക്കാനോ നാമം ഉപയോഗിക്കാമെന്ന നിഗമനം ഇതിൽനിന്ന് ഉണ്ടാക്കരുത്. പരിശോധിച്ച വചനത്തിൽ ഒരു നിശ്ചിത ആവർത്തനഎണ്ണമോ വഫ്ഖോ ഇല്ല.",
+      "en": "Al-Qahhar means the One of overwhelming sovereign power. Quran 13:16 pairs al-Wahid and al-Qahhar in a passage affirming monotheism and divine creation; it does not prescribe harmful domination or numbered charms."
+    },
+    "evidence": [
+      {
+        "id": "q13-16-qahhar",
+        "title": {
+          "ml": "അൽ-വാഹിദുൽ ഖഹ്ഹാർ / The One, the Overpowering",
+          "en": "അൽ-വാഹിദുൽ ഖഹ്ഹാർ / The One, the Overpowering"
+        },
+        "arabic_original": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+        "translation": {
+          "ml": "എല്ലാറ്റിന്റെയും സൃഷ്ടികർത്താവായ അല്ലാഹു ഏകാധിപത്യശക്തിയുള്ളവനാണെന്ന് വചനം പറയുന്നു. ഇത് അവസാനഭാഗമാണ്.",
+          "en": "This excerpt states Allah is the Creator of all, the One, the Overpowering."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+        "source_reference": "Quran 13:16",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "tafsir-qahhar-13-16",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: പങ്കാളിയില്ലാത്ത അധിപത്യം",
+          "en": "Ibn Kathir: authority without partner"
+        },
+        "translation": {
+          "ml": "ആരാധ്യനായും സൃഷ്ടികർത്താവായും അല്ലാഹുവിന് പങ്കാളികളില്ലെന്ന ഏകദൈവ സത്യത്തെയാണ് ഈ വചനത്തിന്റെ വിശദീകരണം ഉന്നയിക്കുന്നത്.",
+          "en": "The tafsir treats this as an affirmation that no one shares Allah's status as Creator and deity."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+        "source_reference": "تفسير ابن كثير — الرعد 13:16",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-015": {
+    "name_id": "PDF-HN-015",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "അൽ-വഹ്ഹാബ് (الْوَهَّابُ) അനവധിയായി ദാനം നൽകുന്നവൻ എന്ന അർഥമുള്ള നാമമാണ്. ആലു ഇംറാൻ 3:8-ൽ മാർഗനിർദേശം ലഭിച്ചശേഷം ഹൃദയങ്ങൾ വ്യതിചലിക്കാതിരിക്കാനും തന്റെ അടുക്കൽനിന്ന് കരുണ ലഭിക്കാനുമുള്ള ഖുർആൻ ദുആ ഈ നാമത്തോടു അവസാനിക്കുന്നു. സൂറത്തു സ്വാദ് 38:35-ൽ സുലൈമാൻ നബി സ്വന്തം പ്രത്യേക ചരിത്രസന്ദർഭത്തിൽ അല്ലാഹുവിനോട് പ്രാർത്ഥിക്കുകയും അൽ-വഹ്ഹാബ് എന്നു വിളിക്കുകയും ചെയ്യുന്നു. ആ പ്രാർത്ഥനയുടെ ചരിത്രപരമായ രാജാധികാര അഭ്യർഥനയെ എല്ലാ വായനക്കാർക്കും അതേ ഭൗതികഫലം ലഭിക്കുന്ന പൊതുഫോർമുലയാക്കി അവതരിപ്പിക്കുന്നില്ല. വചനങ്ങളിൽ പ്രത്യേകം ഓതേണ്ട എണ്ണം നൽകിയിട്ടില്ല.",
+      "en": "Al-Wahhab means the great Giver. Quran 3:8 contains a prayer for steadfast hearts and mercy, directly invoking this name. Quran 38:35 records Solomon's unique historical supplication for a distinctive kingdom. The latter must not be turned into a promise of identical wealth or sovereignty to readers."
+    },
+    "evidence": [
+      {
+        "id": "q3-8-wahhab",
+        "title": {
+          "ml": "ഹൃദയങ്ങൾക്ക് സ്ഥിരതയും കരുണയും: 3:8 / Steadfastness and mercy",
+          "en": "ഹൃദയങ്ങൾക്ക് സ്ഥിരതയും കരുണയും: 3:8 / Steadfastness and mercy"
+        },
+        "arabic_original": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+        "translation": {
+          "ml": "ഹൃദയം വഴിതെറ്റാതിരിക്കാനും കരുണ നൽകാനും അപേക്ഷിക്കുന്ന ദുആയാണ്; അവസാനം 'നീ തന്നെയാകുന്നു അൽ-വഹ്ഹാബ്' എന്നു പറയുന്നു.",
+          "en": "A supplication that hearts remain guided and mercy be granted, addressing Allah as al-Wahhab."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+        "source_reference": "Quran 3:8",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q38-35-wahhab",
+        "title": {
+          "ml": "സുലൈമാൻ നബിയുടെ ദുആ: 38:35 / Solomon's supplication",
+          "en": "സുലൈമാൻ നബിയുടെ ദുആ: 38:35 / Solomon's supplication"
+        },
+        "arabic_original": "قَالَ رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا لَّا يَنبَغِي لِأَحَدٍ مِّن بَعْدِي ۖ إِنَّكَ أَنتَ الْوَهَّابُ",
+        "translation": {
+          "ml": "സുലൈമാൻ നബി തനിക്ക് പൊറുത്തുതരണമെന്നും തനിക്കുശേഷം മറ്റാർക്കും ഇല്ലാത്ത ഭരണാധികാരം നൽകണമെന്നും പ്രാർത്ഥിക്കുന്നു. ഇത് അദ്ദേഹത്തിന്റെ ചരിത്രസന്ദർഭമാണ്.",
+          "en": "Solomon seeks forgiveness and a kingdom uniquely appropriate to him. This is his historical prayer."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura38-aya35.html",
+        "source_reference": "Quran 38:35",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-wahhab",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: കരുണയിലൂടെയുള്ള ദൃഢത",
+          "en": "Ibn Kathir: steadfastness through mercy"
+        },
+        "translation": {
+          "ml": "3:8-ന്റെ തഫ്സീറിൽ മാർഗനിർദേശത്തിനുശേഷം ഹൃദയം വളയാതിരിക്കാൻ കരുണയും ഉറപ്പും ചോദിക്കുന്നതായാണ് വിശദീകരണം.",
+          "en": "Ibn Kathir explains the prayer in 3:8 as asking for steadfast guidance and mercy."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+        "source_reference": "تفسير ابن كثير — آل عمران 3:8",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": [
+      {
+        "id": "dua-wahhab-3-8",
+        "title": {
+          "ml": "മാർഗനിർദേശത്തിന് സ്ഥിരതയ്ക്കുള്ള ഖുർആൻ ദുആ",
+          "en": "Quranic supplication for steadfastness"
+        },
+        "arabic_original": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+        "translation": {
+          "ml": "നാമവുമായി നേരിട്ട് ബന്ധമുള്ള ഖുർആൻ ദുആ തന്നെയാണ്. ഒരു നിർബന്ധിത ആവർത്തനഎണ്ണം 3:8-ൽ നൽകിയിട്ടില്ല.",
+          "en": "This Quranic supplication directly contains the name al-Wahhab. No fixed recitation count is specified."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+        "source_reference": "Quran 3:8",
+        "review_status": "checked_against_digital_text"
+      }
+    ]
+  },
+  "PDF-HN-016": {
+    "name_id": "PDF-HN-016",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "അർ-റസ്സാഖ് (الرَّزَّاقُ) സൃഷ്ടികളുടെ ഉപജീവനത്തിന് ക്രമീകരണം ചെയ്യുന്ന മഹാദാതാവ് എന്നാണ് അർഥം. അദ്ദാരിയാത് 51:58-ൽ ഈ നാമം നേരിട്ട് വരുന്നു. അൽ-അൻകബൂത് 29:60 ഉൾപ്പെടെയുള്ള വചനങ്ങൾ സൃഷ്ടികൾക്കുള്ള ഉപജീവനം അല്ലാഹുവിന്റെ കരുതലുമായി ബന്ധിപ്പിക്കുന്നു. മൂസാ നബി മദ്യനിലെത്തിയപ്പോൾ കഷ്ടതയിലായിരുന്ന അവസരത്തിൽ പറഞ്ഞ 28:24-ലെ 'റബ്ബി ഇന്നീ ലിമാ അൻസൽത ഇലയ്യ മിൻ ഖൈരിൻ ഫഖീർ' എന്ന ദുആ ഭക്ഷണത്തിനും സഹായത്തിനും വേണ്ടിയുള്ള അപേക്ഷയുമായി ബന്ധപ്പെട്ട് തഫ്സീർ വിശദീകരിക്കുന്നു. ഈ ദുആയിൽ 'അർ-റസ്സാഖ്' എന്ന നാമം നേരിട്ട് വരുന്നില്ല; ആശയബന്ധമുള്ളതുകൊണ്ടു മാത്രം ഇവിടെ ചേർത്തതാണ്. ദുആ പ്രാർത്ഥനയാണ്; അത് ജോലി, പണം, ഭക്ഷണം, സമ്പത്ത് എന്നിവ ഒരു നിർദ്ദിഷ്ട തീയതിയിൽ നിർബന്ധമായി നൽകുമെന്ന് തെളിയിക്കുന്ന ഇടപാട് അല്ല. വ്യക്തമായ സ്രോതസ്സില്ലാതെ ലക്ഷക്കണക്കിന് ആവർത്തനങ്ങളും കളങ്ങളും ചേർക്കരുത്.",
+      "en": "Ar-Razzaq means the Sustainer and Provider. The name occurs explicitly in Quran 51:58; related passages discuss sustenance for creation. Moses' prayer in 28:24, made in need, is included as a thematic supplication: it does not literally contain the name ar-Razzaq. Historical tafsir connects it with his need for food. No verse cited guarantees a salary, money, job or material outcome on a schedule."
+    },
+    "evidence": [
+      {
+        "id": "q51-58-razzaq",
+        "title": {
+          "ml": "അർ-റസ്സാഖ് — 51:58 / Ar-Razzaq",
+          "en": "അർ-റസ്സാഖ് — 51:58 / Ar-Razzaq"
+        },
+        "arabic_original": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+        "translation": {
+          "ml": "അല്ലാഹു മഹാദാതാവും പരമശക്തിയുള്ളവനും ആണെന്ന് നേരിട്ട് പറയുന്നു.",
+          "en": "The verse explicitly calls Allah the Provider, the Possessor of strength."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html",
+        "source_reference": "Quran 51:58",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q28-24-musa",
+        "title": {
+          "ml": "മൂസാ നബിയുടെ കഷ്ടതയിലെ അപേക്ഷ — 28:24",
+          "en": "മൂസാ നബിയുടെ കഷ്ടതയിലെ അപേക്ഷ — 28:24"
+        },
+        "arabic_original": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+        "translation": {
+          "ml": "നിഴലിൽ എത്തിയ മൂസാ നബി അല്ലാഹുവിൽനിന്നുള്ള നന്മയ്ക്ക് താൻ ആവശ്യക്കാരനാണെന്ന് പ്രാർത്ഥിച്ചു. അർ-റസ്സാഖ് എന്ന പേര് വാക്കുകളിൽ ഇല്ല; ആശയബന്ധമുള്ള ഉദാഹരണമാണ്.",
+          "en": "Moses asks for whatever good Allah sends him. This is a thematic example, not an occurrence of the exact name."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya24.html",
+        "source_reference": "Quran 28:24",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "tabari-razzaq",
+        "title": {
+          "ml": "ത്വബരി: സൃഷ്ടികൾക്കുള്ള ഉപജീവനം",
+          "en": "Al-Tabari: sustenance for creation"
+        },
+        "translation": {
+          "ml": "അല്ലാഹു തന്റെ സൃഷ്ടികൾക്കു വേണ്ട ആഹാരവും ഉപജീവനവും നൽകുന്നവൻ എന്നാണ് ത്വബരി 51:58-ൽ വിശദീകരിക്കുന്നത്.",
+          "en": "Al-Tabari explains the Provider as the One who ensures the sustenance of creation."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura51-aya58.html",
+        "source_reference": "تفسير الطبري — الذاريات 51:58",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "ibn-kathir-musa28-24",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: ഭക്ഷണത്തിന്റെ ആവശ്യം",
+          "en": "Ibn Kathir: Moses' material need"
+        },
+        "translation": {
+          "ml": "28:24-ൽ മൂസാ നബിയുടെ പ്രാർത്ഥന ഭക്ഷണത്തിനും സഹായത്തിനുമുള്ള ആവശ്യം അറിയിക്കുന്ന ചരിത്രസന്ദർഭത്തിലാണെന്ന് തഫ്സീർ വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir relates Moses' prayer in 28:24 to his need for food and help."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya24.html",
+        "source_reference": "تفسير ابن كثير — القصص 28:24",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": [
+      {
+        "id": "dua-rizq-musa",
+        "title": {
+          "ml": "ആവശ്യത്തിനുള്ള നന്മ തേടുന്ന ദുആ",
+          "en": "Supplication for good in a time of need"
+        },
+        "arabic_original": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+        "translation": {
+          "ml": "മൂസാ നബിയുടെ ഖുർആനിലെ പ്രാർത്ഥനയുടെ വാചകം തന്നെയാണ് ഇത്; നിർബന്ധമായ എണ്ണമോ നിർദ്ദിഷ്ട സമയമോ ഈ ആയത്ത് പറയുന്നില്ല.",
+          "en": "This is the Quranic wording of Moses' prayer; no fixed repetition count or time is given in the verse."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura28-aya24.html",
+        "source_reference": "Quran 28:24",
+        "review_status": "checked_against_digital_text"
+      }
+    ]
+  },
+  "PDF-HN-017": {
+    "name_id": "PDF-HN-017",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "അൽ-ഫത്താഹ് (الْفَتَّاحُ) എന്ന നാമം സാധാരണ 'തുറന്നുതരുന്നവൻ' എന്നു മാത്രം മനസ്സിലാക്കാറുണ്ടെങ്കിലും ഖുർആൻ 34:26-ന്റെ പശ്ചാത്തലത്തിൽ അത് സത്യത്തോടെ വിധി തീർപ്പാക്കുന്ന ന്യായാധിപൻ എന്ന അർഥത്തിലാണ് തഫ്സീർ വ്യക്തമാക്കുന്നത്. അൽ-അഅ്റാഫ് 7:89-ൽ ശുഐബ് നബിയുമായി ബന്ധപ്പെട്ട 'റബ്ബനഫ്തഹ് ബൈനനാ...' എന്ന പ്രാർത്ഥനയിൽ സത്യനീതിയോടെ വിധി നടത്തണമെന്ന അപേക്ഷയുണ്ട്. വ്യാപാരത്തിൽ ലാഭമോ അടഞ്ഞ വാതിൽ തുറക്കലോ ഉറപ്പാക്കുന്ന പ്രത്യേക ചിഹ്നം ഖുർആൻ നൽകുന്നില്ല. നേരിട്ടുള്ള നാമപ്രയോഗവും പശ്ചാത്തലത്തിലുള്ള പ്രാർത്ഥനയും വേർതിരിച്ചിരിക്കുന്നു.",
+      "en": "Al-Fattah often suggests 'Opener', but Quran 34:26 explains it in the context of just judgment between disputants. The prayer in 7:89 similarly asks for just resolution. These passages do not promise business success or validate an occult diagram."
+    },
+    "evidence": [
+      {
+        "id": "q34-26-fattah",
+        "title": {
+          "ml": "അൽ-ഫത്താഹുൽ അലീം — 34:26 / Just Judge, All-Knowing",
+          "en": "അൽ-ഫത്താഹുൽ അലീം — 34:26 / Just Judge, All-Knowing"
+        },
+        "arabic_original": "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِالْحَقِّ وَهُوَ الْفَتَّاحُ الْعَلِيمُ",
+        "translation": {
+          "ml": "സത്യത്തിന്റെ അടിസ്ഥാനത്തിൽ ന്യായവിധി നടത്തുന്നവൻ എന്നാണ് ഇവിടെ അൽ-ഫത്താഹിന്റെ അർഥം.",
+          "en": "Here al-Fattah describes the One who decides with truth."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura34-aya26.html",
+        "source_reference": "Quran 34:26",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-fattah",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: സത്യത്തോടെ വിധിക്കുന്നവൻ",
+          "en": "Ibn Kathir: the just Judge"
+        },
+        "translation": {
+          "ml": "34:26-ൽ അൽ-ഫത്താഹിനെ സൃഷ്ടികൾക്കിടയിൽ ന്യായവിധി നടത്തുന്നവൻ, സത്യാവസ്ഥ അറിയുന്നവൻ എന്ന നിലയിലാണ് വിശദീകരിക്കുന്നത്.",
+          "en": "Ibn Kathir interprets al-Fattah as the fair Judge who knows the reality of matters."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura34-aya26.html",
+        "source_reference": "تفسير ابن كثير — سبأ 34:26",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": [
+      {
+        "id": "dua-7-89-judgment",
+        "title": {
+          "ml": "ശുഐബ് നബിയുടെ നീതിയുള്ള വിധിക്കായുള്ള പ്രാർത്ഥന",
+          "en": "Prayer for just judgment from Shuayb's narrative"
+        },
+        "arabic_original": "رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَيْرُ الْفَاتِحِينَ",
+        "translation": {
+          "ml": "ഇത് ശുഐബ് നബിയുടെ ജനതയുമായുള്ള ചരിത്രസന്ദർഭത്തിലെ അപേക്ഷയാണ്; ബിസിനസ് ലാഭത്തിനുള്ള മന്ത്രമായി ഇതിനെ നിർദേശിക്കുന്നില്ല.",
+          "en": "This is a prayer for just resolution in Shuayb's historical context, not a profit mantra."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura7-aya89.html",
+        "source_reference": "Quran 7:89 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ]
+  },
+  "PDF-HN-018": {
+    "name_id": "PDF-HN-018",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഇവിടെ തെരഞ്ഞെടുത്ത ഖുർആൻ/ഹദീസ്/തഫ്സീർ ഭാഗങ്ങളാണ് പരിശോധിച്ചിരിക്കുന്നത്. ഇതുമായി ബന്ധപ്പെട്ട മുഴുവൻ ഗ്രന്ഥങ്ങളും കൈയെഴുത്തുപ്രതികളും വഫ്ഖ്, താവീസ്, രീതി, എണ്ണം, സമയം എന്നിവയും ഇതുവരെ സമ്പൂർണമായി പരിശോധിച്ചിട്ടില്ല. പരിശോധനയില്ലാത്ത വാഗ്ദാനങ്ങൾ നൽകരുത്.",
+      "en": "Selected Quran/hadith/tafsir passages have been reviewed. Full manuscript, historical practice, square, talisman, count and timing coverage is incomplete. Unsupported benefits and claims must not be invented."
+    },
+    "explanation": {
+      "ml": "അൽ-അലീം (الْعَلِيمُ) എല്ലാം അറിയുന്നവൻ എന്ന ദൈവനാമമാണ്. അൽ-ബഖറ 2:32-ൽ മലക്കുകൾ തങ്ങൾക്ക് അല്ലാഹു പഠിപ്പിച്ചതല്ലാതെ അറിവില്ലെന്ന് സമ്മതിക്കുകയും അവനെ അൽ-അലീം അൽ-ഹകീം എന്ന് സ്തുതിക്കുകയും ചെയ്യുന്നു. താഹാ 20:114-ൽ അറിവ് വർധിപ്പിക്കാൻ അല്ലാഹുവിനോട് പ്രാർത്ഥിക്കണമെന്ന് ഖുർആൻ പഠിപ്പിക്കുന്നു. ഈ രണ്ടാമത്തെ പ്രാർത്ഥനയിൽ അൽ-അലീം എന്ന പദം നേരിട്ട് വരുന്നില്ല; അറിവെന്ന വിഷയത്തിന്റെ ബന്ധം മാത്രമാണ്. ധ്യാനം, പഠനം, ദുആ എന്നിവയുടെ വ്യത്യാസവും ഹദീസ്/പരമ്പരാഗത ഗ്രന്ഥങ്ങളുടെ നിർദേശങ്ങളുടെ സ്രോതസ്സും പ്രത്യേകം പരിശോധിക്കണം. അറിവ് ലഭിക്കാൻ ഒരു നിർബന്ധിത എണ്ണമുള്ള രഹസ്യചടങ്ങ് ഈ ആയത്തുകളിൽ നൽകിയിട്ടില്ല.",
+      "en": "Al-Alim is the All-Knowing. In Quran 2:32 angels acknowledge that their knowledge derives from what Allah teaches and call Him al-Alim al-Hakim. Quran 20:114 contains a prayer for increased knowledge; the latter prayer is thematically related but does not literally include al-Alim. Neither text gives a fixed secret ritual for academic success."
+    },
+    "evidence": [
+      {
+        "id": "q2-32-alim",
+        "title": {
+          "ml": "അൽ-അലീമുൽ ഹകീം — 2:32",
+          "en": "അൽ-അലീമുൽ ഹകീം — 2:32"
+        },
+        "arabic_original": "قَالُوا سُبْحَانَكَ لَا عِلْمَ لَنَا إِلَّا مَا عَلَّمْتَنَا ۖ إِنَّكَ أَنتَ الْعَلِيمُ الْحَكِيمُ",
+        "translation": {
+          "ml": "തങ്ങൾക്ക് അല്ലാഹു പഠിപ്പിച്ചതേ അറിയൂ എന്നു മലക്കുകൾ സമ്മതിക്കുന്ന വചനമാണ്.",
+          "en": "The angels affirm their knowledge is only what Allah has taught them."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya32.html",
+        "source_reference": "Quran 2:32",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "q20-114-ilm",
+        "title": {
+          "ml": "അറിവ് വർധിപ്പിക്കാനുള്ള ഖുർആൻ അപേക്ഷ — 20:114",
+          "en": "അറിവ് വർധിപ്പിക്കാനുള്ള ഖുർആൻ അപേക്ഷ — 20:114"
+        },
+        "arabic_original": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+        "translation": {
+          "ml": "'എന്റെ രക്ഷിതാവേ, എനിക്ക് അറിവ് വർധിപ്പിക്കേണമേ' എന്ന ദുആ. ഇവിടെ അൽ-അലീം എന്ന പേര് നേരിട്ട് വരുന്നില്ല.",
+          "en": "'My Lord, increase me in knowledge.' The exact name al-Alim is not in this excerpt."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya114.html",
+        "source_reference": "Quran 20:114",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-alim",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: മലക്കുകൾക്കുപോലും ലഭിച്ച അറിവിന്റെ പരിധി",
+          "en": "Ibn Kathir: the limits of created knowledge"
+        },
+        "translation": {
+          "ml": "2:32-ന്റെ തഫ്സീറിൽ സൃഷ്ടികൾ അറിയുന്നതെല്ലാം അല്ലാഹു അവരെ പഠിപ്പിച്ചതിനുള്ളിൽ മാത്രമാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir explains that created beings know only what Allah has granted them."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya32.html",
+        "source_reference": "تفسير ابن كثير — البقرة 2:32",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": [
+      {
+        "id": "dua-ilm-20-114",
+        "title": {
+          "ml": "റബ്ബി സിദ്നീ ഇൽമാ — അറിവിനായുള്ള പ്രാർത്ഥന",
+          "en": "Rabbi zidni ilma — prayer for knowledge"
+        },
+        "arabic_original": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+        "translation": {
+          "ml": "ഇത് ഖുർആൻ വാചകമാണ്; 20:114-ൽ പ്രത്യേക ആവർത്തനഎണ്ണം വ്യക്തമാക്കിയിട്ടില്ല.",
+          "en": "This is Quranic wording; 20:114 specifies no recitation count."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya114.html",
+        "source_reference": "Quran 20:114 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ]
   }
 }
