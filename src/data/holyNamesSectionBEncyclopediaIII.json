@@ -503,7 +503,328 @@
           "verse_count": 4
         }
       ],
-      "scholarly": []
+      "scholarly": [
+        {
+          "id": "encyclopedia-quddus-tafsir-1-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വഹ്ബ് ഇബ്നു മുനബ്ബിഹിന്റെ «ത്വാഹിർ» വ്യാഖ്യാനം",
+            "en": "Ibn Kathir: Wahb's al-Tahir interpretation"
+          },
+          "arabic_original": "قال وهب بن منبه : أي الطاهر",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-ഖുദ്ദൂസിനെ വഹ്ബ് ഇബ്നു മുനബ്ബിഹ് «പരിശുദ്ധൻ» എന്ന് വിശദീകരിച്ചതായി രേഖപ്പെടുത്തുന്നു. ഇതു ഒരു തഫ്സീർ ഉദ്ധരണിയാണ്; സ്വന്തമായി പുതിയ ജപസംഖ്യ ഇതിൽനിന്നു ലഭിക്കുന്നില്ല.",
+            "en": "Ibn Kathir reports Wahb ibn Munabbih interpreting al-Quddus as ‘the Pure’. It is an attributed exegetical gloss rather than a new counted invocation."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-2-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മുജാഹിദ്, ഖതാദ — മുബാറക്",
+            "en": "Ibn Kathir: Mujahid and Qatadah on al-Mubarak"
+          },
+          "arabic_original": "وقال مجاهد ، وقتادة : أي المبارك",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മുജാഹിദിന്റെയും ഖതാദയുടെയും വ്യാഖ്യാനമായി «അനുഗ്രഹീതൻ» എന്ന അർഥവും രേഖപ്പെടുത്തുന്നു. ത്വാഹിർ, മുബാറക് എന്നിവ രണ്ടു വ്യത്യസ്ത വ്യാഖ്യാനപദങ്ങളാണ്; രണ്ടും ഒരേ അറബി വാക്കാണെന്ന് കാണിക്കരുത്.",
+            "en": "Ibn Kathir also attributes ‘Blessed’ to Mujahid and Qatadah. This preserves a distinct explanatory gloss alongside the ‘Pure’ interpretation."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-3-59-23-tabary",
+          "title": {
+            "ml": "ത്വബരി: ഖതാദയുടെ «മുബാറക്» വ്യാഖ്യാനം",
+            "en": "Al-Tabari: the transmitted al-Mubarak explanation"
+          },
+          "arabic_original": "القدّوس، قيل: هو المبارك",
+          "translation": {
+            "ml": "ത്വബരി ഖതാദയിലൂടെ അൽ-ഖുദ്ദൂസിന് «മുബാറക്» എന്ന വ്യാഖ്യാനം ഉദ്ധരിക്കുന്നു. പ്രത്യേക താവീസ്, സമയക്രമം, ഉറപ്പായ സംഖ്യ എന്നിവ ഈ വരിയിൽ ഇല്ല.",
+            "en": "Al-Tabari explicitly reports the al-Mubarak gloss from Qatadah. The passage does not prescribe a talisman, schedule or special numeric rite."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-4-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: എല്ലാ കുറവുകളിൽനിന്നും പരിശുദ്ധൻ",
+            "en": "Al-Qurtubi: exalted above every defect"
+          },
+          "arabic_original": "أي المنزه عن كل نقص ، والطاهر عن كل عيب",
+          "translation": {
+            "ml": "ഖുർതുബിയുടെ വിശദീകരണത്തിൽ «الْقُدُّوسُ» എല്ലാ കുറവുകളിലും ന്യൂനതകളിലുംനിന്നും പരിശുദ്ധനായവൻ എന്ന അർഥത്തിലാണ്. «സലാം» എന്ന അടുത്ത നാമവുമായി സാമ്യമുണ്ടെങ്കിലും പദങ്ങൾ വേറെയാണ്.",
+            "en": "Al-Qurtubi describes al-Quddus as transcending every deficiency and being free from every fault. The adjacent Name as-Salam has related but distinct discussion."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-5-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ഖുദ്ദൂസ്, സുബ്ബൂഹ് പദങ്ങളുടെ ഖാഫ്/സീൻ ഹർക്കത്ത്",
+            "en": "Al-Qurtubi: vocalization of quddus and subbuh"
+          },
+          "arabic_original": "وكان سيبويه يقول : قدوس وسبوح ; بفتح أولهما",
+          "translation": {
+            "ml": "സീബവൈഹിയുടെ ഭാഷാശാസ്ത്രവിവരവും മറ്റ് പഴയ അറബി ഉച്ചാരണങ്ങളും ഖുർതുബി ചർച്ച ചെയ്യുന്നു. സാധാരണ «قُدُّوس» എന്ന ഖാഫിനു ദമ്മയുള്ള രൂപത്തോടൊപ്പം «قَدُّوس» എന്ന ഫത്ഹ വായനയും ഭാഷാപരമായി അദ്ദേഹം രേഖപ്പെടുത്തുന്നു. ഖുർആന്റെ അംഗീകൃത ഖിറാഅത്ത് നിശ്ചയമായി പ്രഖ്യാപിക്കുന്നതല്ല.",
+            "en": "Al-Qurtubi records alternative traditional vocalizations, including fathah on the initial consonant of quddus/subbuh versus the more common dammah. This linguistic discussion is not automatically a formal canonical qira'a ruling."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-6-62-1-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ന്യൂനതകളില്ലാത്ത പൂർണത",
+            "en": "Ibn Kathir: freedom from deficiencies and perfect attributes"
+          },
+          "arabic_original": "المنزه عن النقائص ، الموصوف بصفات الكمال",
+          "translation": {
+            "ml": "62:1-ലെ അൽ-ഖുദ്ദൂസിനെ എല്ലാത്തരം കുറവുകളിൽനിന്നും അതീതനും പൂർണതയുടെ ഗുണങ്ങളുള്ളവനുമെന്നാണ് ഇബ്നു കസീർ വിശദീകരിക്കുന്നത്. സൃഷ്ടികളിലെ കുറവുകൾ അല്ലാഹുവിൽ ചാർത്താതിരിക്കുക എന്നതാണ് ഇതിന്റെ ആശയം.",
+            "en": "On Quran 62:1 Ibn Kathir explicitly defines al-Quddus through freedom from deficiencies and possession of the attributes of perfection."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya1.html",
+          "source_reference": "تفسير ابن كثير · Quran 62:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-7-2-30-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തക്ദീസ് നമസ്കാരവും തസ്ബീഹും",
+            "en": "Ibn Kathir: taqdis interpreted as prayer and exaltation"
+          },
+          "arabic_original": "والتقديس : الصلاة",
+          "translation": {
+            "ml": "«نُقَدِّسُ لَكَ» എന്ന മലക്കുകളുടെ വാക്കിനെ ഖതാദ, ഇബ്നു അബ്ബാസ് തുടങ്ങിയവരുടെ പേരിൽ നമസ്കാരമായും, മുജാഹിദിന്റെ പേരിൽ മഹത്വപ്പെടുത്തലായും ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. ഒരേയൊരു ഭാഷാപദത്തെ നിശ്ചിത ദിക്ർപട്ടികയാക്കേണ്ടതില്ല.",
+            "en": "Ibn Kathir cites different early glosses of the angels' nuqaddisu laka, including prayer and exaltation. This is a verb of worship, not a standalone name-specific recitation schedule."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya30.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:30",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-8-2-30-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മലക്കുകളുടെ ചോദ്യമൊരു എതിർപ്പല്ല",
+            "en": "Ibn Kathir: the angels' question is not defiance"
+          },
+          "arabic_original": "سؤال استعلام واستكشاف عن الحكمة",
+          "translation": {
+            "ml": "«أَتَجْعَلُ فِيهَا» എന്നു മലക്കുകൾ ചോദിച്ചത് അല്ലാഹുവിനെ എതിർത്തുകൊണ്ടല്ല, സൃഷ്ടിയുടെ ഹിക്മത്ത് അന്വേഷിച്ചുകൊണ്ടാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. ഇതിനു അനുബന്ധമായി വരുന്ന വിവിധ പഴയ കഥകളെല്ലാം ഒരേ ഗ്രേഡിൽ വിശ്വസിക്കരുത്.",
+            "en": "Ibn Kathir interprets the angels' question as seeking understanding, not challenging God's will; this is distinct from stories with weak or non-Islamic provenance."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya30.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:30",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-9-2-30-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മലക്കുകൾ നശിച്ചതെന്ന കഥയ്ക്ക് ഇസ്രാഈലിയ്യാത്ത് മുന്നറിയിപ്പ്",
+            "en": "Ibn Kathir rejects a sensational angels narrative"
+          },
+          "arabic_original": "إسرائيلي منكر كالذي قبله",
+          "translation": {
+            "ml": "മനുഷ്യസൃഷ്ടിയെപ്പറ്റി ചോദിച്ചതിന് ആയിരക്കണക്കിന് മലക്കുകളെ തീകൊണ്ട് നശിപ്പിച്ചു എന്ന കഥ ഇബ്നു കസീർ «إسرائيلي منكر» എന്ന് വിമർശിക്കുന്നു. ഈ കാർഡ് അത്തരമൊരു കഥയെ സഹീഹ് ഹദീസോ ഖുർആൻ വിശദീകരണമോ ആയി അംഗീകരിക്കില്ല.",
+            "en": "Ibn Kathir explicitly calls an account of thousands of angels being burned an objectionable Isra'ili narrative, not a reliable Prophetic report."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya30.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:30",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-10-2-32-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അറിയാത്തത് സമ്മതിക്കുന്ന തസ്ബീഹ്",
+            "en": "Ibn Kathir: glorifying God includes humility about knowledge"
+          },
+          "arabic_original": "هذا تقديس وتنزيه من الملائكة لله تعالى",
+          "translation": {
+            "ml": "മലക്കുകൾക്ക് പഠിപ്പിച്ചതിൽപ്പുറമുള്ള അറിവില്ലെന്ന വാക്യത്തെ ഇബ്നു കസീർ ദൈവത്തിന്റെ പൂർണജ്ഞാനം സമ്മതിക്കുന്ന തൻസീഹും തക്ദീസുമായി വ്യാഖ്യാനിക്കുന്നു. «സുബ്ഹാനക» എന്നത് നാമത്തിന്റെ പ്രത്യേക വഫ്ഖ് അല്ല.",
+            "en": "Ibn Kathir explicitly identifies the angels' confession of limited knowledge as sanctification and transcendence of God, rather than a diagram or magic formula."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya32.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:32",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-11-2-116-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഖുനൂത് സംബന്ധിച്ച ദുർബല ഹദീസ് വേർതിരിക്കുക",
+            "en": "Ibn Kathir: weak chain for an appended qunut report"
+          },
+          "arabic_original": "ولكن هذا الإسناد ضعيف لا يعتمد عليه",
+          "translation": {
+            "ml": "2:116-ലെ ദൈവത്തിനു സന്താനമില്ലെന്ന ഖുർആൻ പ്രഖ്യാപനം വ്യക്തമാണ്. എന്നാൽ «ഖുനൂത്» എന്ന പദം എവിടെയും അനുസരണം മാത്രം അർഥമാക്കുന്നു എന്ന നബിവചന-ആരോപണത്തിന് ദുർബല സനദ് ഉണ്ടെന്ന് ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. ഖുർആൻ വചനത്തിന്റെ തെളിവും ഹദീസിന്റെ സനദും വേറെയാണ്.",
+            "en": "Ibn Kathir grades a broad supplementary qunut-attribution weak, even while the Quran's refutation of divine offspring stands unchallenged. Quranic certainty and transmission grading differ."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya116.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:116",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-12-23-91-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അനവധി സ്വതന്ത്ര ദൈവങ്ങൾ അസാധ്യമെന്ന വാദം",
+            "en": "Ibn Kathir: impossibility of competing absolute deities"
+          },
+          "arabic_original": "دليل التمانع",
+          "translation": {
+            "ml": "ഒന്നിലധികം പരമസ്രഷ്ടാക്കൾ സ്വന്തം സൃഷ്ടിയുടെ കാര്യത്തിൽ പരസ്പരം വിരുദ്ധമായി ഇടപെടുമെങ്കിൽ വ്യവസ്ഥ തകരുമെന്ന «ദലീലുത്തമാനുഅ്» വാദം ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. അൽ-ഖുദ്ദൂസ് നാമത്തിന്റെ തൻസീഹ് ആശയവുമായി ബന്ധമാണ്, നേരിട്ടുള്ള നാമപ്രയോഗമല്ല.",
+            "en": "Ibn Kathir explains dalil al-tamanu, reasoning that competing ultimate deities would conflict. This is a doctrinal connection to Divine perfection, not another occurrence of al-Quddus."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura23-aya91.html",
+          "source_reference": "تفسير ابن كثير · Quran 23:91",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-13-39-67-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: രൂപവിശേഷം നിർണ്ണയിക്കാത്ത ഗുണവിശേഷവായന",
+            "en": "Ibn Kathir: Divine attributes without creaturely modality"
+          },
+          "arabic_original": "من غير تكييف ولا تحريف",
+          "translation": {
+            "ml": "അല്ലാഹുവിന്റെ മഹത്വത്തെക്കുറിച്ചുള്ള വചനത്തിന്റെ വ്യാഖ്യാനത്തിൽ, സലഫിന്റെ സമീപനം «എങ്ങനെ» എന്നു രൂപനിർണ്ണയം ചെയ്യാതെയും വാക്കുകൾ വ്യതിചലിപ്പിക്കാതെയും പാഠം സ്വീകരിക്കുന്നതാണെന്നു ഇബ്നു കസീർ പറയുന്നു. ഇത് വ്യാഖ്യാനപാരമ്പര്യത്തിന്റെ നിലപാടാണ്.",
+            "en": "Ibn Kathir recalls the early approach to Quranic attributes without imposing physical modality or altering the text, as a source-specific theological position."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya67.html",
+          "source_reference": "تفسير ابن كثير · Quran 39:67",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-14-42-11-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അല്ലാഹുവിനോട് യാതൊന്നിനും സാദൃശ്യമില്ല",
+            "en": "Ibn Kathir: incomparability and affirmed attributes"
+          },
+          "arabic_original": "ليس كمثله شيء",
+          "translation": {
+            "ml": "«لَيْسَ كَمِثْلِهِ شَيْءٌ» എന്ന ആയത്തിൽ സൃഷ്ടികളുമായുള്ള ഏതു നിർബന്ധ ഉപമയും നിരസിക്കുന്നു; «السَّمِيعُ الْبَصِيرُ» എന്ന നാമങ്ങൾ ഒപ്പം വരുന്നു. ഇബ്നു കസീർ ഇത് അല്ലാഹുവിനെ മനുഷ്യഗുണങ്ങളായി പരിമിതപ്പെടുത്താതെയുള്ള തഫ്സീറായി നൽകുന്നു.",
+            "en": "The verse denies likeness to creatures while affirming al-Sami and al-Basir. Ibn Kathir reads Divine transcendence without physicalizing God's nature."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+          "source_reference": "تفسير ابن كثير · Quran 42:11",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-15-112-2-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അസ്സമദ് വ്യാഖ്യാനങ്ങളുടെ വൈവിധ്യം",
+            "en": "Ibn Kathir: distinct traditional explanations of al-Samad"
+          },
+          "arabic_original": "اللَّهُ الصَّمَدُ",
+          "translation": {
+            "ml": "ഇഖ്‌ലാസിലെ «الصَّمَدُ» എന്ന വിശേഷണത്തിന് എല്ലാവരും ആശ്രയിക്കുന്നവൻ, ആവശ്യമില്ലാത്തവൻ തുടങ്ങിയ പഴയ വ്യാഖ്യാനങ്ങൾ ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. ഇത് അൽ-ഖുദ്ദൂസിന്റെ പരമപൂർണതയുമായി ആശയബന്ധമുള്ളതാണെങ്കിലും അർഥസമത്വമല്ല.",
+            "en": "Ibn Kathir transmits several explanations of al-Samad, including total self-sufficiency and creatures' dependence on Him. It is relevant to perfection but is not an identical meaning of al-Quddus."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya2.html",
+          "source_reference": "تفسير ابن كثير · Quran 112:2",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        },
+        {
+          "id": "encyclopedia-quddus-tafsir-16-30-17-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തസ്ബീഹിന്റെ ദിവസകാലങ്ങൾ, ഖുദ്ദൂസിന്റെ രഹസ്യഎണ്ണമല്ല",
+            "en": "Ibn Kathir: daily glorification differs from counted khawass"
+          },
+          "arabic_original": "فسبحان الله حين تمسون وحين تصبحون",
+          "translation": {
+            "ml": "റൂം 30:17–18-ലെ പകലും രാത്രിയുമായി ബന്ധപ്പെട്ട തസ്ബീഹിനെ ഇബ്നു കസീർ നമസ്കാരസമയങ്ങളുമായും അല്ലാഹുവിനെ എല്ലാ സമയത്തും സ്തുതിക്കലുമായും ബന്ധിപ്പിക്കുന്നു. പക്ഷേ അൽ-ഖുദ്ദൂസ് ഒറ്റ നാമം ആയിരം തവണ ഓതാനുള്ള കല്പനയല്ല.",
+            "en": "Ibn Kathir connects evening/morning glorification with prayer times and worship across the day. It does not establish a particular number for repeating al-Quddus as a separate Name."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura30-aya17.html",
+          "source_reference": "تفسير ابن كثير · Quran 30:17",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു അറബി വാക്യവുമാണ്; പൂർണ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് പരിശോധനയുമല്ല.",
+            "en": "Attributed scholarly interpretation with a short Arabic source phrase; not a full commentary, nor independent authentication of incidental reports."
+          }
+        }
+      ]
     }
   }
 }
