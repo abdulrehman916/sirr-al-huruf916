@@ -21,6 +21,7 @@ import propheticDhikr from '@/data/holyNamesSectionBPropheticDhikr.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import shamsCardBridge from '@/data/holyNamesShamsCardBridge.json';
 import shamsEditionVariants from '@/data/holyNamesShamsEditionVariants.json';
+import shamsCountAudit from '@/data/holyNamesShamsCountAudit.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
 import { sectionBReading } from '@/lib/holyNames/sectionBReading';
@@ -62,6 +63,12 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
     {topic && <div className="space-y-3 border-t border-white/10 pt-3">
       {Array.isArray(t(entry.steps)) && <ol className="list-decimal pl-6 space-y-2 text-white/85">{t(entry.steps).map((step, i) => <li key={i}>{step}</li>)}</ol>}
       <p className="text-white/75"><span className="text-yellow-200">{ml ? 'എണ്ണം: ' : 'Count: '}</span>{(typeof entry.count === 'object' && entry.count ? t(entry.count) : entry.count) ?? (entry.references ? (ml ? 'മുകളിലെ സ്രോതസ്സ് വിവരണം വായിക്കുക; എണ്ണം പ്രത്യേകം രേഖപ്പെടുത്തിയിട്ടില്ല.' : 'Read the source account above; no separate count field is recorded.') : (ml ? 'ഈ സ്രോതസ്സിൽ നിർദേശിച്ചിട്ടില്ല.' : 'Not specified in this source.'))}</p>
+      {entry.count_evidence && <div className="rounded-lg border border-yellow-500/20 p-3 space-y-2">
+        <p className="text-xs font-semibold text-yellow-200">{ml ? 'ഗ്രന്ഥത്തിലെ സംഖ്യ തെളിയിക്കുന്ന അറബി വാചകം' : 'Original Arabic wording establishing the source count'}</p>
+        <Arabic text={entry.count_evidence.source_phrase} />
+        <p className="text-xs text-white/85 leading-relaxed">{t(entry.count_evidence.note)}</p>
+        <p className="text-xs text-white/60">{ml ? 'എണ്ണത്തിന്റെ തരം' : 'Count unit'}: {entry.count_evidence.unit === 'recitation' ? (ml ? 'ഓതൽ' : 'Recitations') : (ml ? 'എഴുത്ത് / കൊത്തൽ' : 'Inscriptions')} · {entry.count_evidence.value}</p>
+      </div>}
       {t(entry.timing) && <p className="text-white/75"><span className="text-yellow-200">{ml ? 'ദിവസം / സമയം: ' : 'Day / time: '}</span>{t(entry.timing)}</p>}
       {t(entry.conditions) && <p className="text-white/75"><span className="text-yellow-200">{ml ? 'നിബന്ധനകൾ / ഒരുക്കം: ' : 'Conditions / preparation: '}</span>{t(entry.conditions)}</p>}
       {entry.construction && <p className="text-white/75 whitespace-pre-wrap">{entry.construction}</p>}
@@ -116,6 +123,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
       return {
         id: accountId,
         edition_variants: shamsEditionVariants.entries[accountId] || null,
+        count_evidence: shamsCountAudit.entries[accountId] || null,
         edition_scope: shamsEditionVariants.scope,
         edition_note: shamsEditionVariants.edition_note,
         title: { ml: `ശംസ് അൽമആരിഫ് — «${name}» — അച്ചടി പേജ് ${account.source_page}`,
