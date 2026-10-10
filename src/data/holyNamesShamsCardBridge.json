@@ -100,7 +100,300 @@
     "b-shams-brief-70-الرشيد": "PDF-HN-044",
     "b-shams-brief-70-الصبور": "PDF-HN-045"
   },
-  "translations": {},
+  "translations": {
+    "b-shams-brief-67-القدوس": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ മനസ്സിലെ ആസക്തികൾ അല്ലാഹു നീക്കുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims that frequent remembrance of this name removes sensual or self-directed desires."
+    },
+    "b-shams-brief-67-الملك": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് ഫിർഔനെപ്പോലെയുള്ള അധികാരികൾ വഴങ്ങുകയും അനുസരിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+      "en": "The book claims powerful or pharaonic rulers would submit and obey one who frequently remembers this name."
+    },
+    "b-shams-brief-68-العزيز": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് അല്ലാഹുവിന്റെയും മനുഷ്യരുടെയും മുമ്പിൽ ആദരം ലഭിക്കുമെന്ന ഗ്രന്ഥവിവരണം.",
+      "en": "The book claims frequent remembrance brings esteem before Allah and people."
+    },
+    "b-shams-brief-68-الجبار": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ എല്ലാവരിലും ഗാംഭീര്യഭാവവും ഭയഭക്തിയും ഉളവാക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims frequent remembrance makes the person awe-inspiring to others."
+    },
+    "b-shams-brief-68-المتكبر": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ വാക്ക് നടപ്പിലാകുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims the words of a frequent reciter will carry effect or authority."
+    },
+    "b-shams-brief-68-البارئ": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് അത്ഭുതകരമായ രഹസ്യങ്ങളും സൂക്ഷ്മമായ അടയാളങ്ങളും വെളിപ്പെടുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims the person is shown remarkable secrets and subtle signs through frequent remembrance."
+    },
+    "b-shams-brief-68-المصور": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് ശരീരരൂപങ്ങളായി ആത്മീയ പ്രത്യക്ഷത അനുഭവപ്പെടുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ പരാമർശം; ഇത് സ്വതന്ത്രമായി സ്ഥിരീകരിച്ച അനുഭവമല്ല.",
+      "en": "The book alleges that spiritual presences descend in bodily forms to a frequent reciter; this is not an independently established event."
+    },
+    "b-shams-brief-68-الغفار": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ പാപങ്ങൾ പൊറുക്കപ്പെടുകയും മായ്ച്ചുകളയപ്പെടുകയും ചെയ്യുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims frequent remembrance brings forgiveness and expiation of sins."
+    },
+    "b-shams-brief-68-القهار": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ സ്വന്തം മാനസിക ആസക്തികളെ കീഴടക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance helps subdue the person's lower desires."
+    },
+    "b-shams-brief-68-الوهاب": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ അല്ലാഹുവിനോട് എന്ത് അപേക്ഷിച്ചാലും ലഭിക്കുമെന്ന വിശാലമായ അവകാശവാദം ഗ്രന്ഥത്തിലുണ്ട്; ഉറപ്പായ വാഗ്ദാനമായി സ്വീകരിക്കരുത്.",
+      "en": "The book claims a frequent reciter receives whatever they ask from Allah; this sweeping promise is not established as a prophetic guarantee."
+    },
+    "b-shams-brief-68-الرزاق": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് കാരണങ്ങൾ എളുപ്പപ്പെടുകയും പ്രതീക്ഷിക്കാത്ത വഴികളിലൂടെ ഉപജീവനം ലഭിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
+      "en": "The book claims frequent remembrance eases means and brings sustenance from unexpected directions."
+    },
+    "b-shams-brief-68-الفتاح": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് പ്രത്യക്ഷവും ആന്തരികവുമായ നന്മയുടെ വഴികൾ തുറക്കുമെന്ന് ഗ്രന്ഥത്തിന്റെ പരാമർശം.",
+      "en": "The book claims frequent remembrance opens ways to outward and inward good."
+    },
+    "b-shams-brief-68-العليم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ അല്ലാഹു ജ്ഞാനപൂർണമായി സംസാരിപ്പിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance grants the person the ability to speak wisely."
+    },
+    "b-shams-brief-68-القابض": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ഉള്ളിലെ ഞെരുക്കം നീങ്ങുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance removes constriction or inward tightness."
+    },
+    "b-shams-brief-68-الباسط": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ആന്തരികാവസ്ഥ വിശാലമാകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance brings expansiveness to the person's inner state."
+    },
+    "b-shams-brief-68-الخافض": {
+      "ml": "ഈ നാമം അധികമായി ഓർത്ത് ഒരു അക്രമിക്കെതിരെ പ്രാർത്ഥിച്ചാൽ അയാൾ ഉടൻ ശിക്ഷിക്കപ്പെടുമെന്നാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്; ഇതു മറ്റൊരാളെ ഉപദ്രവിക്കാനുള്ള നിർദേശമല്ല.",
+      "en": "The book claims an oppressor is swiftly dealt with when remembrance is joined to an appeal against the oppressor; this is not a direction to harm others."
+    },
+    "b-shams-brief-68-الرافع": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ സ്ഥാനവും പദവിയും അല്ലാഹു ഉയർത്തുമെന്ന് ഗ്രന്ഥത്തിന്റെ പരാമർശം.",
+      "en": "The book claims Allah raises the standing and rank of a frequent reciter."
+    },
+    "b-shams-brief-68-المعز": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ ഇഹലോകത്തും പരലോകത്തും അല്ലാഹു ആദരിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance brings honor in this life and the next."
+    },
+    "b-shams-brief-68-المذل": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് എല്ലാ അഹങ്കാരികളെയും അല്ലാഹു കീഴ്പ്പെടുത്തുമെന്നാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്.",
+      "en": "The book claims Allah humbles tyrannical people before a frequent reciter."
+    },
+    "b-shams-brief-68-السميع": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ അഭ്യർത്ഥനകൾക്കൊക്കെയും ഉത്തരം ലഭിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം; നിർബന്ധഫലമായി അവതരിപ്പിക്കുന്നില്ല.",
+      "en": "The book claims all the supplications of a frequent reciter are answered; this is a book assertion, not a guaranteed result."
+    },
+    "b-shams-brief-68-الحكم": {
+      "ml": "വാക്കിന് പ്രാബല്യം ലഭിക്കാനുള്ള കാര്യത്തിൽ ഈ നാമത്തിന്റെ ഓർമ്മ അനുയോജ്യമാണെന്ന് ഗ്രന്ഥം പറയുന്നു; ഇവിടെ നിശ്ചിത എണ്ണം ഇല്ല.",
+      "en": "The book describes remembrance of this name as suited to making one's words effective; no fixed number occurs in this sentence."
+    },
+    "b-shams-brief-68-العدل": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് എല്ലാ സാഹചര്യങ്ങളിലും നീതിയോടെ പ്രവർത്തിക്കാൻ അല്ലാഹു പ്രചോദനം നൽകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance inspires justice in all one's affairs."
+    },
+    "b-shams-brief-68-اللطيف": {
+      "ml": "പ്രയാസമോ രോഗമോ ഉള്ള അവസ്ഥയിൽ ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് വിടുതൽ എളുപ്പപ്പെടുമെന്ന ഗ്രന്ഥാവകാശവാദം; ഇത് ചികിത്സയ്ക്കു പകരമല്ല.",
+      "en": "The book claims frequent remembrance eases relief from hardship or illness; it is not a substitute for medical care."
+    },
+    "b-shams-brief-68-الحليم": {
+      "ml": "കഠിനമായ പരീക്ഷണങ്ങൾ വരുമ്പോൾ നിർബന്ധാവസ്ഥയിൽനിന്ന് സുരക്ഷ ലഭിക്കുമെന്നാണ് ഈ നാമത്തെക്കുറിച്ചുള്ള ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance brings protection against being overwhelmed when hardships descend."
+    },
+    "b-shams-brief-68-العظيم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ഭയപ്പെടുന്ന ദോഷങ്ങളിൽനിന്ന് അല്ലാഹു സംരക്ഷിക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims Allah protects a frequent reciter from feared harms."
+    },
+    "b-shams-brief-68-الشكور": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ പദവി അല്ലാഹു ഉയർത്തുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah raises the rank of a frequent reciter."
+    },
+    "b-shams-brief-68-العلي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ സഞ്ചാരത്തിലും പ്രവൃത്തികളിലും ദുഷ്ടരുടെ ഉപദ്രവത്തിൽനിന്ന് സുരക്ഷിതനാകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims a frequent reciter is protected from the harm of wrongdoers in movement and rest."
+    },
+    "b-shams-brief-68-الكبير": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ മറ്റുള്ളവരുടെ കണ്ണിൽ വലിയവനായി തോന്നുകയും കാണുന്നവർ ആദരിക്കുകയും ചെയ്യുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
+      "en": "The book claims the person becomes great in people's eyes and is respected by those who see them."
+    },
+    "b-shams-brief-68-الحفيظ": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ അനിഷ്ടകരമായ കാര്യങ്ങളിൽനിന്ന് അല്ലാഹു സംരക്ഷിക്കുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims Allah safeguards a frequent reciter from what they dislike."
+    },
+    "b-shams-brief-68-المقيت": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ വിശപ്പിന്റെ വേദന അനുഭവിക്കില്ലെന്ന ഗ്രന്ഥാവകാശവാദം; ഭക്ഷണം ഉപേക്ഷിക്കാനുള്ള നിർദേശമല്ല.",
+      "en": "The book claims the person no longer feels hunger pain; it is not advice to stop eating."
+    },
+    "b-shams-brief-68-الحسيب": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ആവശ്യം നിറവേറും എന്നാണ് ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims a frequent reciter's need will be met."
+    },
+    "b-shams-brief-68-الجليل": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ സ്ഥാനം എല്ലാ ലോകങ്ങളിലും അല്ലാഹു ഉയർത്തുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims Allah grants an exalted standing to a frequent reciter across all realms."
+    },
+    "b-shams-brief-69-الكريم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ എല്ലാ പ്രവർത്തനങ്ങളിലും അല്ലാഹു സംരക്ഷിക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah safeguards a frequent reciter in all their actions."
+    },
+    "b-shams-brief-69-الرقيب": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് പ്രവർത്തനങ്ങളുടെ അനന്തരഫലങ്ങളെക്കുറിച്ച് മുൻകരുതലോടെ ചിന്തിക്കാൻ അല്ലാഹു കഴിവുനൽകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims Allah grants foresight into consequences to someone who frequently remembers this name."
+    },
+    "b-shams-brief-69-المجيب": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ദുആക്ക് ഉത്തരം ലഭിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം; പ്രത്യേക ആവർത്തനസംഖ്യ പറയുന്നില്ല.",
+      "en": "The book claims a frequent reciter's prayers receive an answer; it states no precise number."
+    },
+    "b-shams-brief-69-الودود": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളിലേക്കു എല്ലാ ആത്മാക്കളുടെയും സ്‌നേഹം തിരിയുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
+      "en": "The book claims all souls are drawn affectionately toward a frequent reciter."
+    },
+    "b-shams-brief-69-المجيد": {
+      "ml": "രാജാക്കന്മാർ ഈ നാമം അധികമായി ഓർത്താൽ അവരുടെ രാജ്യം അല്ലാഹു വിശാലമാക്കുമെന്ന ചരിത്രഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+      "en": "The book claims that kings who frequently remember this name receive an expansion of their dominion."
+    },
+    "b-shams-brief-69-الباعث": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ എല്ലാ നന്മകൾക്കും ഉത്സാഹപൂർവം മുന്നോട്ടുവരുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims frequent remembrance stirs the person toward every kind of good."
+    },
+    "b-shams-brief-69-الشهيد": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ഒറ്റയ്ക്കിരിക്കുമ്പോഴും ദൈവിക നിരീക്ഷണബോധം ലഭിക്കുമെന്ന ഗ്രന്ഥവിവരണം.",
+      "en": "The book claims frequent remembrance cultivates awareness of divine watchfulness in solitude."
+    },
+    "b-shams-brief-69-الحق": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ വാക്കിന് അല്ലാഹു ഉയർച്ച നൽകുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah elevates the word or standing of a frequent reciter."
+    },
+    "b-shams-brief-69-القوي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ആത്മാവിന്റെ ശക്തിയും സ്‌നേഹത്തിന്റെ സ്ഥിരതയും വർധിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance strengthens the spirit and makes affection enduring."
+    },
+    "b-shams-brief-69-المتين": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ബലഹീനതയിലേക്കു വീഴുന്നതിൽനിന്ന് സുരക്ഷിതനാകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance protects a person from weakness."
+    },
+    "b-shams-brief-69-الولي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ അല്ലാഹു സ്വന്തം സംരക്ഷണത്തിലും അടുപ്പത്തിലും ചേർക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah takes the frequent reciter into His care and friendship."
+    },
+    "b-shams-brief-69-المحصي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ബാധ്യതകളുടെയും അനന്തരപ്രതികൂലതകളുടെയും ആശങ്കയിൽനിന്ന് സുരക്ഷിതനാകുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance safeguards one from adverse liabilities or consequences."
+    },
+    "b-shams-brief-69-المبدئ": {
+      "ml": "ഈ നാമം അധികമായി ഓർത്ത് ഒരു പ്രവൃത്തി ചെയ്യുന്നയാളുടെ കാര്യങ്ങൾ ശരിയായി മാറുമെന്ന ഗ്രന്ഥവിവരണം.",
+      "en": "The book claims matters turn out well for someone who frequently remembers this name and undertakes an action."
+    },
+    "b-shams-brief-69-المميت": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളിലെ ഇരുണ്ട ആസക്തികളെ അല്ലാഹു ഇല്ലാതാക്കുമെന്നാണ് ഗ്രന്ഥപരാമർശം; മനുഷ്യന്റെ മരണത്തെക്കുറിച്ചല്ല.",
+      "en": "The book claims Allah causes dark inner desires to die away in a frequent reciter; this concerns desires, not killing a person."
+    },
+    "b-shams-brief-69-القيوم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ഉള്ളിൽ അറിവുകളും ആത്മീയ തിരിച്ചറിവുകളും കണ്ടെത്തുമെന്ന ഗ്രന്ഥവിവരണം.",
+      "en": "The book claims frequent remembrance brings inward knowledge and spiritual insights."
+    },
+    "b-shams-brief-69-الواحد": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ അനവധി കാര്യങ്ങളിലുള്ള ആസക്തിയിൽനിന്ന് അകലം പാലിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance makes the person turn away from multiplicity and distraction."
+    },
+    "b-shams-brief-69-الأحد": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ മറ്റുള്ളവരിലേക്കുള്ള ആശ്രയത്തിൽനിന്ന് അല്ലാഹു സ്വതന്ത്രനാക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah makes a frequent reciter independent of other people."
+    },
+    "b-shams-brief-69-الصمد": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് ആത്മീയതയും ആത്മജ്ഞാനത്തിന്റെ ശക്തിയും ലഭിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance bestows spirituality and strength in mystical knowledge."
+    },
+    "b-shams-brief-69-المقتدر": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് ആത്മാക്കളെല്ലാം കീഴ്പ്പെടുത്തപ്പെടുമെന്ന ഗ്രന്ഥാവകാശവാദം; ഇതു സ്ഥിരീകരിച്ച സുന്നത്ത് അല്ല.",
+      "en": "The book claims all spirits become subject to a frequent reciter; this is an unverified book claim, not authenticated Sunnah."
+    },
+    "b-shams-brief-69-المقدم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് കാര്യങ്ങളുടെ കാരണങ്ങളിൽ നിയന്ത്രണം ലഭിക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance grants influence over the means through which events occur."
+    },
+    "b-shams-brief-69-الأول": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ എല്ലാ നന്മകളിലേക്കും ആദ്യം മുന്നോട്ടുപോകുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims frequent remembrance makes the person foremost in pursuing good."
+    },
+    "b-shams-brief-69-الآخر": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് നന്മകൾ ലഭിക്കുമെന്ന ഗ്രന്ഥപരാമർശം; ഇത് സംരക്ഷിച്ച രഹസ്യവും മറച്ചുവെച്ച അറിവുമാണെന്നും ഗ്രന്ഥം കൂട്ടിച്ചേർക്കുന്നു.",
+      "en": "The book claims frequent remembrance brings all good and calls this a guarded secret and concealed knowledge."
+    },
+    "b-shams-brief-69-الظاهر": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് മറഞ്ഞുകിടക്കുന്ന കാര്യങ്ങൾ വെളിപ്പെടുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims Allah reveals hidden matters to a frequent reciter."
+    },
+    "b-shams-brief-69-الباطن": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ സമീപിക്കുന്ന എല്ലാവരും അയാളുടെ അപേക്ഷ സ്വീകരിച്ച് ആവശ്യം നിറവേറ്റുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims those approached by a frequent reciter will respond and meet their needs."
+    },
+    "b-shams-brief-69-الوالي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ എല്ലാവരിലും ഗാംഭീര്യവും ആദരവും ഉളവാക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance makes a person awe-inspiring in the eyes of others."
+    },
+    "b-shams-brief-69-المتعالي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് മഹത്തായ ആത്മീയാവസ്ഥ നൽകപ്പെടുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance grants an elevated spiritual state."
+    },
+    "b-shams-brief-69-البر": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ എല്ലാ അവസ്ഥകളിലും ദൈവിക സൗമ്യതയും കാരുണ്യവും അനുഭവപ്പെടുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims a frequent reciter receives gentle providential care in all circumstances."
+    },
+    "b-shams-brief-70-المنتقم": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ ശത്രുക്കൾക്കെതിരെ അല്ലാഹു പ്രതികാരം ചെയ്യുമെന്ന ഗ്രന്ഥാവകാശവാദം; മറ്റുള്ളവർക്കു ദോഷം ചെയ്യാനുള്ള അനുമതിയല്ല.",
+      "en": "The book claims Allah avenges the frequent reciter against enemies; this is not permission to harm others."
+    },
+    "b-shams-brief-70-العفو": {
+      "ml": "മറ്റൊരാളെ ഭയപ്പെടുന്ന ഒരാൾ ഈ നാമം അധികമായി ഓർത്താൽ ആ ഭയത്തിൽനിന്ന് സുരക്ഷ ലഭിക്കുമെന്ന ഗ്രന്ഥവിവരണം.",
+      "en": "The book claims frequent remembrance makes a fearful person safe from someone they fear."
+    },
+    "b-shams-brief-70-الرؤوف": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളോട് അല്ലാഹു ദയയും കാരുണ്യവും കാണിക്കുമെന്നാണ് ഗ്രന്ഥം പറയുന്നത്.",
+      "en": "The book claims Allah treats a frequent reciter with gentleness and mercy."
+    },
+    "b-shams-brief-70-مالك الملك": {
+      "ml": "രാജ്യം/ഭരണം ആഗ്രഹിക്കുന്ന ഒരാൾ ഈ നാമം അധികമായി ഓർത്താൽ അയാൾക്കതു ലഭിക്കുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims a person seeking dominion who frequently remembers this name is granted it."
+    },
+    "b-shams-brief-70-المقسط": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ എല്ലാ പ്രവർത്തനങ്ങളിലും നീതി പ്രകടമാകുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance makes the person equitable in all affairs."
+    },
+    "b-shams-brief-70-الجامع": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് കാണാതായ സാധനങ്ങളും ഒളിച്ചോടിപ്പോയവരും തിരിച്ചുകിട്ടുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു.",
+      "en": "The book claims frequent remembrance brings back lost belongings and absconded persons."
+    },
+    "b-shams-brief-70-الغني": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്കു സമ്പത്തിന്റെയും ഉപജീവനത്തിന്റെയും വഴികൾ വർധിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance multiplies the means of wealth and provision."
+    },
+    "b-shams-brief-70-المغني": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളെ എല്ലാ സൃഷ്ടികളിലേക്കുള്ള ആശ്രയത്തിൽനിന്ന് അല്ലാഹു സമ്പന്നനാക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims Allah frees the frequent reciter from dependence on other creatures."
+    },
+    "b-shams-brief-70-الضار": {
+      "ml": "ഈ നാമം അധികമായി ഓർത്ത് ഒരാൾക്കോ അക്രമിക്കോ ദോഷം ഉണ്ടാകണമെന്ന് അപേക്ഷിക്കുന്നതുമായി ബന്ധപ്പെട്ട അവകാശവാദം ഗ്രന്ഥത്തിൽ ഉണ്ട്. മറ്റൊരാളെ ഉപദ്രവിക്കാനുള്ള നിർദേശമായോ ഉറപ്പുള്ള ഫലമായോ ഇതിനെ അവതരിപ്പിക്കുന്നില്ല.",
+      "en": "The book claims extraordinary effects from invoking this name while seeking harm against a person or oppressor. It is not endorsed as a direction to hurt others or a proven outcome."
+    },
+    "b-shams-brief-70-البديع": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾ ദൈവിക അറിവുകളിലും അന്തർരഹസ്യങ്ങളിലും പുതുമ കണ്ടെത്തിക്കൊണ്ടിരിക്കുമെന്ന് ഗ്രന്ഥം പറയുന്നു.",
+      "en": "The book claims frequent remembrance produces continuing originality in divine sciences and inward mysteries."
+    },
+    "b-shams-brief-70-الباقي": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് എല്ലാ പ്രവർത്തനങ്ങളിലും നന്മയും വർധനയും ലഭിക്കുമെന്ന ഗ്രന്ഥാവകാശവാദം.",
+      "en": "The book claims frequent remembrance bequeaths goodness and increase throughout one's activities."
+    },
+    "b-shams-brief-70-الوارث": {
+      "ml": "ബന്ധുക്കളുടെ സ്വത്ത് അനന്തരമായി ലഭിക്കാൻ ആഗ്രഹിക്കുന്നയാൾ ഈ നാമം അധികമായി ഓർത്താൽ അവകാശം ലഭിക്കുമെന്ന് ഗ്രന്ഥം അവകാശപ്പെടുന്നു; ഇത് നിയമപരമായ അവകാശം മാറ്റുന്നില്ല.",
+      "en": "The book claims a frequent reciter who wants to inherit from relatives will inherit; this does not alter legal inheritance rights."
+    },
+    "b-shams-brief-70-الرشيد": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാളുടെ എല്ലാ കാര്യങ്ങളുടെയും അവസാനഫലം പ്രശംസനീയമാകുമെന്ന് ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims a frequent reciter's affairs attain praiseworthy outcomes."
+    },
+    "b-shams-brief-70-الصبور": {
+      "ml": "ഈ നാമം അധികമായി ഓർക്കുന്നയാൾക്ക് പ്രയാസങ്ങളിലും വലിയ ഉത്തരവാദിത്തങ്ങളിലും ഉറച്ചുനിൽക്കാനുള്ള കഴിവ് ലഭിക്കുമെന്ന ഗ്രന്ഥപരാമർശം.",
+      "en": "The book claims frequent remembrance grants steadfastness amid hardship and weighty tasks."
+    }
+  },
   "review_note": {
     "ml": "വിശദമായ അറബി പാഠം ഗ്രന്ഥത്തിൽ വന്നതുപോലെ നൽകുന്നു. അനുബന്ധ വിവരണം സ്വതന്ത്രമായി സുന്നത്ത് സ്ഥിരീകരിച്ചതല്ല. വിഷജന്തുക്കളെ കൈകാര്യം ചെയ്യൽ, ആരോഗ്യചികിത്സ ഒഴിവാക്കൽ, മറ്റുള്ളവർക്കു ദോഷം ചെയ്യൽ എന്നിവ സുരക്ഷിതമോ നിർദേശിക്കപ്പെട്ടതോ അല്ല.",
     "en": "The source-account wording is presented historically, not as an authenticated Sunnah prescription. Do not handle venomous animals, forgo medical treatment or harm another person in reliance on book claims."
