@@ -1488,5 +1488,159 @@
         "review_status": "checked_against_digital_text"
       }
     ]
+  },
+  "PDF-HN-019": {
+    "name_id": "PDF-HN-019",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ 2:245, തഫ്സീർ, അബൂദാവൂദ് 3451 എന്നിവയാണ് പരിശോധിച്ചത്. ഈ ആയത്തിലെ 'യഖ്ബിദു/യബ്സുതു' ക്രിയാരൂപങ്ങളാണ്; 'അൽ-ഖാബിദ്/അൽ-ബാസിത്' എന്ന നാമരൂപങ്ങൾ ഹദീസിൽ വരുന്നു. എല്ലാ കൈയെഴുത്തുപ്രതികളും പരമ്പരാഗത പ്രയോഗഗ്രന്ഥങ്ങളും പരിശോധിച്ചിട്ടില്ല; സ്രോതസ്സില്ലാത്ത എണ്ണം, സമയം, വഫ്ഖ്, ഫലവാഗ്ദാനം എന്നിവ ചേർത്തിട്ടില്ല.",
+      "en": "Selected reviews of Quran 2:245, tafsir and Abu Dawud 3451. The Quranic wording here uses verbs yaqbid/yabsut; the nominal forms al-Qabid and al-Basit occur in the hadith. Manuscripts and historical practice manuals remain unexhausted; counts, timings, squares and guaranteed benefits are not invented."
+    },
+    "explanation": {
+      "ml": "അൽ-ഖാബിദ് (الْقَابِضُ) 'ചുരുക്കുന്നവൻ', പ്രത്യേകിച്ച് ഉപജീവനം ചുരുക്കുന്നവൻ എന്ന വ്യാഖ്യാനത്തിൽ വരുന്ന നാമമാണ്. അൽ-ബഖറ 2:245-ൽ «وَاللَّهُ يَقْبِضُ وَيَبْسُطُ» — അല്ലാഹു ചുരുക്കുകയും വിശാലമാക്കുകയും ചെയ്യുന്നു — എന്ന് പറയുന്നു. ആയത്തിലെ 'യഖ്ബിദു' എന്നത് ക്രിയാരൂപമാണ്; 'അൽ-ഖാബിദ്' എന്ന രൂപം ഈ വാചകത്തിൽ നേരിട്ട് ഇല്ല. അനസ് (റ) റിപ്പോർട്ട് ചെയ്ത അബൂദാവൂദ് 3451-ൽ സാധനങ്ങളുടെ വില ഉയർന്നപ്പോൾ വില നിശ്ചയിച്ചുതരണമെന്ന അഭ്യർഥനയ്ക്കുള്ള നബിയുടെ ﷺ മറുപടിയിൽ «الْقَابِضُ الْبَاسِطُ» എന്ന നാമരൂപങ്ങൾ വരുന്നു. Sunnah.com ഈ നിവേദനത്തിന് അൽ-അൽബാനിയുടെ 'സഹീഹ്' വിലയിരുത്തൽ രേഖപ്പെടുത്തുന്നു. ത്വബരി ഈ ഖുർആൻ ഭാഗം സമ്പത്തിന്റെ ചുരുക്കലും വികസനവും, ദാനവും, ദരിദ്രർക്കു സഹായവും എന്ന പശ്ചാത്തലത്തിൽ വിശദീകരിക്കുന്നു. ദാരിദ്ര്യം സൃഷ്ടിക്കാനോ മറ്റൊരാളുടെ ഉപജീവനം തടയാനോ ഉള്ള താവീസ്-രീതി ഈ തെളിവുകളിൽ നിന്ന് നിർദേശിക്കുന്നില്ല.",
+      "en": "Al-Qabid is explained as the One who restricts, including provision. Quran 2:245 uses the verb 'yaqbid' rather than explicitly using al-Qabid as a nominal name. Sunan Abi Dawud 3451 uses the forms 'al-Qabid al-Basit' in a report from Anas on market prices and justice; the Sunnah.com page attributes a Sahih grade to al-Albani. Al-Tabari relates restriction and expansion of provision to generosity and the duty to help others. These texts do not prescribe charms to impoverish someone."
+    },
+    "evidence": [
+      {
+        "id": "q-2-245-qabid",
+        "title": {
+          "ml": "ചുരുക്കുകയും വിശാലമാക്കുകയും ചെയ്യുന്ന അല്ലാഹു — 2:245",
+          "en": "Allah restricts and expands — Quran 2:245"
+        },
+        "arabic_original": "وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": {
+          "ml": "സദഖയും പരസ്പരസഹായവും പറഞ്ഞശേഷം, അല്ലാഹു ഉപജീവനം ചുരുക്കുകയും വികസിപ്പിക്കുകയും ചെയ്യുന്നതായി ഈ വചനം പറയുന്നു. ഇത് ആയത്തിന്റെ അവസാന ഭാഗമാണ്; അൽ-ഖാബിദ് എന്ന നാമരൂപമല്ല, 'യഖ്ബിദു' എന്ന ക്രിയയാണ് ഇവിടെ.",
+          "en": "After urging generosity, the verse says Allah restricts and expands. This is the end of the verse, containing the verb yaqbid rather than the noun al-Qabid."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+        "source_reference": "Quran 2:245 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "abudawud-3451-qabid",
+        "title": {
+          "ml": "അൽ-ഖാബിദ് എന്ന നാമരൂപം — അബൂദാവൂദ് 3451",
+          "en": "The nominal name al-Qabid — Abu Dawud 3451"
+        },
+        "arabic_original": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ الْقَابِضُ الْبَاسِطُ الرَّازِقُ وَإِنِّي لأَرْجُو أَنْ أَلْقَى اللَّهَ وَلَيْسَ أَحَدٌ مِنْكُمْ يُطَالِبُنِي بِمَظْلَمَةٍ فِي دَمٍ وَلاَ مَالٍ",
+        "translation": {
+          "ml": "അനസ് (റ) നിവേദനം: വിലവർധനയെപ്പറ്റി ചോദിച്ചപ്പോൾ വില ക്രമപ്പെടുത്തുന്നവനും ചുരുക്കുകയും വികസിപ്പിക്കുകയും ഉപജീവനം നൽകുകയും ചെയ്യുന്നവനും അല്ലാഹുവാണെന്ന് നബി ﷺ പറഞ്ഞു; ഒരാളുടെയും സമ്പത്തോ ജീവന്റെയോ കാര്യത്തിൽ അനീതി വരുത്താതിരിക്കണമെന്ന ആശങ്കയും പറഞ്ഞു. അൽ-അൽബാനി: സഹീഹ് എന്ന ഗ്രേഡ് സൈറ്റിൽ കാണിക്കുന്നു.",
+          "en": "Anas reports the Prophet's response to requests to fix market prices, naming Allah as the Price Setter, Restrictor, Expander and Provider and expressing concern to avoid injustice. Sunnah.com shows al-Albani's Sahih grade."
+        },
+        "source_url": "https://sunnah.com/abudawud:3451",
+        "source_reference": "سنن أبي داود 3451 — grading attributed to al-Albani",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-qabid",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: ഉപജീവനത്തിലെ ഏറ്റക്കുറച്ചിൽ",
+          "en": "Ibn Kathir: differences in provision"
+        },
+        "translation": {
+          "ml": "2:245-ൽ ദാനം ചെയ്യാൻ പ്രേരിപ്പിക്കുമ്പോൾ അല്ലാഹു തന്റെ ജ്ഞാനപ്രകാരം ചിലർക്കു ഉപജീവനം ചുരുക്കുകയും മറ്റുള്ളവർക്ക് വിശാലമാക്കുകയും ചെയ്യുന്നതാണ് അർഥമെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു.",
+          "en": "On 2:245 Ibn Kathir interprets restriction and expansion in terms of provision, urging spending despite uncertainty."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+        "source_reference": "تفسير ابن كثير — البقرة 2:245",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "tabari-qabid",
+        "title": {
+          "ml": "ത്വബരി: ദാനവും ദരിദ്രരെ സഹായിക്കലും",
+          "en": "Al-Tabari: giving and helping those in need"
+        },
+        "translation": {
+          "ml": "ത്വബരി വിശ്വാസികൾക്ക് തങ്ങൾക്ക് ലഭിച്ച ഉപജീവനത്തിൽനിന്ന് ഇല്ലാത്തവരെ സഹായിക്കാനുള്ള പ്രോത്സാഹനത്തിന്റെ പശ്ചാത്തലത്തിൽ 'യഖ്ബിദു' എന്ന ക്രിയ വിശദീകരിക്കുന്നു.",
+          "en": "Al-Tabari interprets yaqbid in the context of provision, encouraging those with means to aid people in need."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya245.html",
+        "source_reference": "تفسير الطبري — البقرة 2:245",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-020": {
+    "name_id": "PDF-HN-020",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "തിരഞ്ഞെടുത്ത ഖുർആൻ 2:245, തഫ്സീർ, അബൂദാവൂദ് 3451 എന്നിവയാണ് പരിശോധിച്ചത്. ഈ ആയത്തിലെ 'യഖ്ബിദു/യബ്സുതു' ക്രിയാരൂപങ്ങളാണ്; 'അൽ-ഖാബിദ്/അൽ-ബാസിത്' എന്ന നാമരൂപങ്ങൾ ഹദീസിൽ വരുന്നു. എല്ലാ കൈയെഴുത്തുപ്രതികളും പരമ്പരാഗത പ്രയോഗഗ്രന്ഥങ്ങളും പരിശോധിച്ചിട്ടില്ല; സ്രോതസ്സില്ലാത്ത എണ്ണം, സമയം, വഫ്ഖ്, ഫലവാഗ്ദാനം എന്നിവ ചേർത്തിട്ടില്ല.",
+      "en": "Selected reviews of Quran 2:245, tafsir and Abu Dawud 3451. The Quranic wording here uses verbs yaqbid/yabsut; the nominal forms al-Qabid and al-Basit occur in the hadith. Manuscripts and historical practice manuals remain unexhausted; counts, timings, squares and guaranteed benefits are not invented."
+    },
+    "explanation": {
+      "ml": "അൽ-ബാസിത് (الْبَاسِطُ) 'വിശാലമാക്കുന്നവൻ', ഉപജീവനം വർധിപ്പിക്കുന്നവൻ എന്ന അർഥവ്യാഖ്യാനത്തോടെയാണ് ഉപയോഗിക്കുന്നത്. ഖുർആൻ 2:245-ൽ 'യബ്സുതു' എന്ന ക്രിയാരൂപത്തിൽ അല്ലാഹു ഉപജീവനം വിശാലമാക്കുന്നതായി പറയുന്നു; അൽ-ബാസിത് എന്ന നാമരൂപം അതേ ആയത്തിൽ വന്നിട്ടില്ല. എന്നാൽ അബൂദാവൂദ് 3451-ലെ അനസ് (റ) റിപ്പോർട്ട് ചെയ്യുന്ന ഹദീസിൽ «الْقَابِضُ الْبَاسِطُ» എന്ന രൂപങ്ങൾ നേരിട്ട് വരുന്നു. ഹദീസിന്റെ സന്ദർഭം വിലക്കയറ്റവും സമ്പത്തുമായി ബന്ധപ്പെട്ട അനീതിയിൽനിന്ന് ഒഴിവാകുന്നതുമാണ്; ധനം ലഭിക്കാനുള്ള ഒരു നിർദ്ദിഷ്ട ആവർത്തനമന്ത്രം നൽകുന്നതല്ല. ത്വബരിയുടെ തഫ്സീർ ആവശ്യക്കാരെ സഹായിക്കാനും ദാനം ചെയ്യാനും മനുഷ്യർക്ക് നൽകിയ ഉപജീവനം ഉപയോഗിക്കേണ്ട ഉത്തരവാദിത്തം ഊന്നിപ്പറയുന്നു. അൽ-ബാസിത് നാമവുമായി ബന്ധപ്പെടുത്തി പഴയ ഗ്രന്ഥങ്ങളിൽ കളങ്ങളോ പ്രത്യേക എണ്ണങ്ങളോ ഉണ്ടായേക്കാമെങ്കിലും അവയുടെ മൂലപ്രതി പരിശോധിക്കാതെ ഇവിടെ ഉറപ്പുള്ള നിർദേശമായി ചേർക്കുന്നില്ല.",
+      "en": "Al-Basit denotes the One who expands, including provision. Quran 2:245 uses the verb yabsut, while Sunan Abi Dawud 3451 explicitly gives the nominal form al-Basit alongside al-Qabid in a discussion about prices and avoiding unjust treatment. Al-Tabari stresses spending and aid to those in need. Neither source provides a fixed wealth-generating recitation or talisman."
+    },
+    "evidence": [
+      {
+        "id": "q-2-245-basit",
+        "title": {
+          "ml": "വിശാലമാക്കുന്നവൻ — 2:245",
+          "en": "The One who expands — Quran 2:245"
+        },
+        "arabic_original": "وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": {
+          "ml": "ഖുർആനിലെ വാചകം അല്ലാഹു ചുരുക്കുകയും വിശാലമാക്കുകയും ചെയ്യുന്നു എന്ന് പറയുന്നു; 'അൽ-ബാസിത്' എന്ന നാമം പദശഃ ഇവിടെ വന്നിട്ടില്ല.",
+          "en": "The Quran says Allah restricts and expands, but does not literally use the nominal form al-Basit in this phrase."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+        "source_reference": "Quran 2:245 — excerpt",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "hadith": [
+      {
+        "id": "abudawud-3451-basit",
+        "title": {
+          "ml": "അൽ-ബാസിത് നാമമുള്ള ഹദീസ് — 3451",
+          "en": "Hadith containing al-Basit — 3451"
+        },
+        "arabic_original": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ الْقَابِضُ الْبَاسِطُ الرَّازِقُ وَإِنِّي لأَرْجُو أَنْ أَلْقَى اللَّهَ وَلَيْسَ أَحَدٌ مِنْكُمْ يُطَالِبُنِي بِمَظْلَمَةٍ فِي دَمٍ وَلاَ مَالٍ",
+        "translation": {
+          "ml": "വില നിശ്ചയിക്കുന്നതിനെക്കുറിച്ചുള്ള ചർച്ചയിൽ നബി ﷺ അൽ-ഖാബിദ്, അൽ-ബാസിത്, അർ-റാസിഖ് എന്നീ നാമരൂപങ്ങൾ പറയുന്നു. ഹദീസ് സമ്പത്തും ജീവനും സംബന്ധിച്ച അനീതിയിൽനിന്ന് വിട്ടുനിൽക്കലിൽ ഊന്നുന്നു. അൽ-അൽബാനിയുടെ സഹീഹ് വിലയിരുത്തലാണ് ഇവിടെ കാണുന്ന grading.",
+          "en": "The Prophet ﷺ mentions al-Qabid, al-Basit and ar-Raziq in a report about price controls and avoiding injustice regarding wealth and life. The stated grading belongs to al-Albani."
+        },
+        "source_url": "https://sunnah.com/abudawud:3451",
+        "source_reference": "سنن أبي داود 3451 — grading attributed to al-Albani",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "tabari-basit",
+        "title": {
+          "ml": "ത്വബരി: ദാനം ചെയ്യാനുള്ള ഉത്തരവാദിത്തം",
+          "en": "Al-Tabari: responsibility to give"
+        },
+        "translation": {
+          "ml": "ഉപജീവനം വിശാലമായി ലഭിച്ചവർ ദരിദ്രരെയും ആവശ്യക്കാരെയും സഹായിക്കണമെന്ന പശ്ചാത്തലത്തിലാണ് ത്വബരി ഈ വചനം വിശദീകരിക്കുന്നത്. സമ്പത്ത് പരീക്ഷണമാണെന്ന വശവും വിവരിക്കുന്നു.",
+          "en": "Al-Tabari relates expanded provision to the responsibility to help the needy, interpreting wealth itself as a test."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya245.html",
+        "source_reference": "تفسير الطبري — البقرة 2:245",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "ibn-kathir-basit",
+        "title": {
+          "ml": "ഇബ്നു കസീർ: വ്യത്യസ്തർക്കു വ്യത്യസ്ത ഉപജീവനം",
+          "en": "Ibn Kathir: provision given unequally"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ അല്ലാഹു തന്റെ ഹിക്മത്തിനനുസരിച്ച് ചിലർക്കു അധികവും ചിലർക്കു കുറവും ഉപജീവനം നൽകുന്നതായി ഈ വചനം വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir explains that Allah distributes provision in different measures by His wisdom."
+        },
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya245.html",
+        "source_reference": "تفسير ابن كثير — البقرة 2:245",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
   }
 }
