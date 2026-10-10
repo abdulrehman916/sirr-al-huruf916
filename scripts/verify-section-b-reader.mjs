@@ -386,6 +386,52 @@ try {
   assert.ok(depth.profiles['PDF-HN-0203'].scholarly.some(e=>e.source_url.includes('/tabary/')));
   assert.ok(depth.profiles['PDF-HN-0164'].evidence[0].arabic_original.includes('بِالْعَدْلِ'));
   console.log('PASS: 25 strengthened name cards show 34 cited classical tafsir readings and 8 complete Quran verses in both languages.');
+  // Second deepening: 20 distinct additional names have actual Arabic excerpts
+  // from identified classical commentators, with bilingual meanings and source URLs.
+  const depthII = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthII.json', 'utf8'));
+  assert.equal(Object.keys(depthII.profiles).length, 20);
+  assert.equal(new Set([...Object.keys(depth.profiles), ...Object.keys(depthII.profiles)]).size,45,
+    'Depth II should research 20 previously unexpanded names instead of duplicating depth I.');
+  let secondTafsir=0, secondKathir=0, secondTabari=0, secondQuran=0;
+  for(const [id,p] of Object.entries(depthII.profiles)) {
+    assert.equal(p.name_id,id);
+    assert.ok(coveredIds.has(id), `Deep research outside the 160-card inventory: ${id}`);
+    assert.ok(p.scholarly.length>=1);
+    const usedIds = new Set();
+    for(const item of [...p.scholarly,...p.evidence]){
+      assert.ok(!usedIds.has(item.id),`Duplicate second-deep source ${id}/${item.id}`);
+      usedIds.add(item.id);
+      assert.equal(item.review_status,'checked_against_digital_text');
+      assert.ok(item.translation.ml && item.translation.en);
+      assert.ok(item.arabic_original && item.arabic_original.length>12);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(item.source_url));
+      assert.ok(!item.count&&!item.timing, 'Do not invent name-specific counts/timings from tafsir.');
+    }
+    for(const item of p.scholarly){
+      secondTafsir++;
+      if(item.source_url.includes('/katheer/')) secondKathir++;
+      if(item.source_url.includes('/tabary/')) secondTabari++;
+    }
+    for(const item of p.evidence){
+      secondQuran++;
+      assert.equal(item.claim_kind,'complete_quran_verse_context');
+      assert.ok(item.arabic_original.length>85);
+    }
+    for(const language of ['ml','en']){
+      const html=render(null,id,language,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const item of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(item.arabic_original)),`Missing Arabic original in ${id}/${item.id}/${language}`);
+        assert.ok(html.includes(escape(item.translation[language])),`Missing bilingual translation in ${id}/${item.id}/${language}`);
+        assert.ok(html.includes(item.source_url),`Missing source link in ${id}/${item.id}`);
+      }
+    }
+  }
+  assert.deepEqual({secondTafsir,secondKathir,secondTabari,secondQuran},
+    {secondTafsir:27,secondKathir:20,secondTabari:7,secondQuran:10});
+  assert.ok(depthII.profiles['PDF-HN-0205'].scholarly.some(item=>item.source_url.includes('/tabary/')));
+  assert.ok(depthII.profiles['PDF-HN-0213'].scholarly.some(item=>item.source_url.includes('/tabary/')));
+  console.log('PASS: 20 additional source-checked name cards show 27 original Arabic tafsir excerpts and ten complete Quran verses, in Malayalam and English.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();

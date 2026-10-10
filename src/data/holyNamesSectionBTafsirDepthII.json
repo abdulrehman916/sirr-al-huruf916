@@ -1,0 +1,852 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "20 പുതിയ Section B കാർഡുകളിൽ നേരിട്ട് പരിശോധിച്ച ഇബ്നു കസീർ, ത്വബരി തഫ്സീറിൽനിന്നുള്ള 27 മൂലപാഠ-വിശദീകരണങ്ങൾ. തലക്കെട്ടിന്റെ പദരൂപവും തഫ്സീർ അഭിപ്രായങ്ങളും തമ്മിൽ വ്യത്യാസം സൂക്ഷിച്ചിട്ടുണ്ട്; പൂർണ ഖവാസ്സ്/ചരിത്രഗ്രന്ഥ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. കൂടാതെ പത്ത് കാർഡുകളിൽ പൂർണ ആയത്തും മലയാളം-ഇംഗ്ലീഷ് അർഥവും പരിശോധിച്ച് ചേർത്തിട്ടുണ്ട്.",
+    "en": "Twenty additional source-checked name-card studies: 27 original Arabic excerpts and bilingual attributed analyses from Ibn Kathir (20) and al-Tabari (7). These sources do not by themselves authorize standalone divine-name recitation counts or magic-square claims. Ten full Quran verse contexts, in Arabic and both languages, are included."
+  },
+  "profiles": {
+    "PDF-HN-0187": {
+      "name_id": "PDF-HN-0187",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0187-katheer-11-57",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:57 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 11:57 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഹൂദ് നബിയുടെ ജനതയ്ക്കുള്ള മുന്നറിയിപ്പ് വിശദീകരിക്കുന്നു: അല്ലാഹുവിന്റെ സന്ദേശം എത്തിയിരിക്കുന്നു; അവർ തിരിഞ്ഞുപോയാലും അല്ലാഹുവിന് ദോഷമില്ല. «حفيظ» അവരുടെ വാക്കുകളുടെയും പ്രവൃത്തികളുടെയും സാക്ഷിയും സംരക്ഷകനുമാണ്.",
+            "en": "Ibn Kathir places Hafiz in Hud's warning: rejecting the message harms the rejecters, not Allah. He interprets Hafiz as witness and preserver of servants' words and deeds."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "شاهد وحافظ لأقوال عباده وأفعالهم"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0187-tabary-11-57",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 11:57 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 11:57 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി «ഹഫീള്» സൃഷ്ടികളെ സംബന്ധിച്ച അല്ലാഹുവിന്റെ സംരക്ഷണവും അറിവുമാണ് എന്നു വിശദീകരിക്കുന്നു. ഹൂദ് നബിയെ ജനതയുടെ ദോഷത്തിൽനിന്ന് സംരക്ഷിക്കുന്നതും സന്ദർഭത്തിലുണ്ട്.",
+            "en": "Al-Tabari interprets Hafiz through preservation and knowledge of all creation, also noting Hud's confidence that Allah guards him from his people's harm."
+          },
+          "source_reference": "تفسير الطبري — Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "إِنَّ رَبِّي عَلَى جَمِيعِ خَلْقِهِ ذُو حِفْظٍ وَعِلْمٍ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0187-11-57",
+          "title": {
+            "ml": "ഖുർആൻ 11:57 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 11:57 — complete verse context"
+          },
+          "arabic_original": "فَإِن تَوَلَّوْا فَقَدْ أَبْلَغْتُكُم مَّا أُرْسِلْتُ بِهِ إِلَيْكُمْ ۚ وَيَسْتَخْلِفُ رَبِّي قَوْمًا غَيْرَكُمْ وَلَا تَضُرُّونَهُ شَيْئًا ۚ إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ പിന്തിരിഞ്ഞാൽ എനിക്ക് ഏൽപ്പിക്കപ്പെട്ട സന്ദേശം ഞാൻ എത്തിച്ചുകഴിഞ്ഞു. എന്റെ രക്ഷിതാവ് നിങ്ങളെക്കാൾ വേറൊരു ജനതയെ കൊണ്ടുവരും; നിങ്ങൾക്ക് അവനെ യാതൊന്നും ദോഷപ്പെടുത്താനാവില്ല. എന്റെ രക്ഷിതാവ് എല്ലാത്തിന്റെയും സൂക്ഷിപ്പുകാരനാണ്.",
+            "en": "If you turn away, I have conveyed the message entrusted to me. My Lord may replace you with another people and you cannot harm Him. My Lord watches over everything."
+          },
+          "source_reference": "Quran 11:57 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0188": {
+      "name_id": "PDF-HN-0188",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0188-katheer-32-5",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 32:5 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 32:5 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ കല്പനയുടെ ഇറക്കവും അതിന്റെ തിരിച്ചുയരലും വിശദീകരിക്കുന്നു. 1000 വർഷമെന്ന വിവരണവുമായി ബന്ധപ്പെട്ട മുജാഹിദ്, ഖതാദ തുടങ്ങിയവരുടെ വ്യാഖ്യാനങ്ങളും നൽകുന്നു; ഇത് «المدبر» എന്ന സ്വതന്ത്ര ഖുർആൻ നാമമല്ല.",
+            "en": "Ibn Kathir explains the divine command's descent and ascent and relays earlier interpretations of the thousand-year description; the verse uses yudabbiru, not the independent al-Mudabbir noun."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 32:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "يَتَنَزَّلُ أَمْرُهُ مِنْ أَعْلَى السَّمَاوَاتِ إِلَى أَقْصَى تُخُومِ الْأَرْضِ السَّابِعَةِ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0188-tabary-32-5",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 32:5 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 32:5 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു സൃഷ്ടികളുടെ കാര്യങ്ങൾ ക്രമപ്പെടുത്തുന്നതായി വിവരിക്കുന്നു. ആയത്തിലെ ആയിരം വർഷത്തിന്റെ കാലപരിമാണത്തെക്കുറിച്ച് നിരവധി ആദ്യകാല വ്യാഖ്യാനങ്ങൾ അദ്ദേഹം സൂക്ഷിക്കുന്നു; ഒരൊറ്റ രഹസ്യസംഖ്യയായി അത് ഉപയോഗിക്കരുത്.",
+            "en": "Al-Tabari says Allah governs His creation and records multiple early views on the thousand-year span; none supplies a standalone recitation count."
+          },
+          "source_reference": "تفسير الطبري — Quran 32:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura32-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "اللَّهُ هُوَ الَّذِي يُدَبِّرُ الأَمْرَ مِنْ أَمْرِ خَلْقِهِ مِنَ السَّمَاءِ إِلَى الأَرْضِ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0188-32-5",
+          "title": {
+            "ml": "ഖുർആൻ 32:5 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 32:5 — complete verse context"
+          },
+          "arabic_original": "يُدَبِّرُ الْأَمْرَ مِنَ السَّمَاءِ إِلَى الْأَرْضِ ثُمَّ يَعْرُجُ إِلَيْهِ فِي يَوْمٍ كَانَ مِقْدَارُهُ أَلْفَ سَنَةٍ مِّمَّا تَعُدُّونَ",
+          "translation": {
+            "ml": "ആകാശത്തുനിന്ന് ഭൂമിയിലേക്കുള്ള കാര്യങ്ങൾ അവൻ നിയന്ത്രിക്കുന്നു. തുടർന്ന് അവ അവനിലേക്കുയരുന്നു; നിങ്ങൾ കണക്കാക്കുന്ന ആയിരം വർഷത്തിനു തുല്യമായ ഒരു ദിവസത്തെക്കുറിച്ചാണ് ആയത്ത് പറയുന്നത്.",
+            "en": "He governs affairs from heaven to earth; then they ascend to Him in a day whose measure is a thousand years by your reckoning."
+          },
+          "source_reference": "Quran 32:5 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0189": {
+      "name_id": "PDF-HN-0189",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0189-katheer-13-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 13:9 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 13:9 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-മുതആൽ» എല്ലാറ്റിനും മീതെ ഉന്നതനായവൻ എന്ന നിലയിൽ വിശദീകരിക്കുന്നു. മറഞ്ഞതും പ്രകടവുമായ എല്ലാം അല്ലാഹു അറിയുന്നു എന്ന വാക്യത്തിനൊപ്പം ഈ വിശേഷണം വരുന്നു.",
+            "en": "Ibn Kathir explains al-Muta'al as above everything and locates it beside Allah's complete knowledge of the hidden and visible."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "( المتعال ) أي : على كل شيء"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0191": {
+      "name_id": "PDF-HN-0191",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0191-katheer-39-36",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 39:36 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 39:36 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിനെ ആരാധിക്കുകയും അവനിൽ ഭരമേൽപ്പിക്കുകയും ചെയ്യുന്നവർക്ക് അവൻ മതിയാകുമെന്നാണ് വിശദീകരിക്കുന്നത്. വിഗ്രഹങ്ങളെക്കൊണ്ട് നബിയെ ഭീഷണിപ്പെടുത്തുന്ന ബഹുദൈവവിശ്വാസികളാണ് തുടർന്നുള്ള സന്ദർഭം; «الواقي» എന്ന പദം സ്വതന്ത്രമായി ഇവിടെ ഇല്ല.",
+            "en": "Ibn Kathir reads the verse as Allah's sufficiency for a worshipper who relies upon Him, against the context of idolaters' threats. Al-Waqi does not occur as a standalone token."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya36.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "يَعْنِي أَنَّهُ تَعَالَى يَكْفِي مَنْ عَبَدَهُ وَتَوَكَّلَ عَلَيْهِ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0192": {
+      "name_id": "PDF-HN-0192",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0192-katheer-22-38",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 22:38 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 22:38 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ തവക്കുൽ ചെയ്ത് അല്ലാഹുവിലേക്കു മടങ്ങുന്ന ദാസരെ ദുഷ്ടരുടെ ഉപദ്രവത്തിൽനിന്ന് അവൻ കാത്തുസൂക്ഷിക്കുന്നതായി വ്യാഖ്യാനിക്കുന്നു; ഉടമ്പടി വഞ്ചകരെ അല്ലാഹു സ്നേഹിക്കുന്നില്ല എന്നും ആയത്ത് പറയുന്നു. «الدافع» എന്ന സ്വതന്ത്ര പദം ആയത്തിലില്ല.",
+            "en": "Ibn Kathir says Allah defends those who rely upon and return to Him, while the verse disapproves of treachery. The Quran uses a verb, not the independent heading al-Dafi'."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:38",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya38.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "يَدْفَعُ عَنْ عِبَادِهِ الَّذِينَ تَوَكَّلُوا عَلَيْهِ وَأَنَابُوا إِلَيْهِ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0192-22-38",
+          "title": {
+            "ml": "ഖുർആൻ 22:38 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 22:38 — complete verse context"
+          },
+          "arabic_original": "إِنَّ اللَّهَ يُدَافِعُ عَنِ الَّذِينَ آمَنُوا ۗ إِنَّ اللَّهَ لَا يُحِبُّ كُلَّ خَوَّانٍ كَفُورٍ",
+          "translation": {
+            "ml": "വിശ്വസിക്കുന്നവരെ അല്ലാഹു സംരക്ഷിക്കുന്നു. വഞ്ചകരെയും നന്ദികെട്ടവരെയും അല്ലാഹു സ്നേഹിക്കുന്നില്ല.",
+            "en": "Allah defends those who believe. Allah does not love anyone who is treacherous and ungrateful."
+          },
+          "source_reference": "Quran 22:38 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya38.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0193": {
+      "name_id": "PDF-HN-0193",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0193-katheer-3-164",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 3:164 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 3:164 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രവാചകൻ സ്വന്തം സമൂഹത്തിൽനിന്നുള്ളവനായതിനാൽ അവർക്ക് അദ്ദേഹത്തോടു സംസാരിക്കാനും പഠിക്കാനും എളുപ്പമാണെന്ന് വിവരിക്കുന്നു. «يُزَكِّيهِمْ» എന്നത് നന്മ നിർദേശിക്കുകയും തിന്മ തടയുകയും ചെയ്ത് ആത്മാക്കളെ ശുദ്ധീകരിക്കലാണ്. «منان» എന്ന പദം നേരിട്ട് ഇവിടെ വരുന്നില്ല.",
+            "en": "Ibn Kathir explains the Messenger's accessibility and interprets 'purifies them' through enjoining good and forbidding wrong. The verse says manna Allah, not a standalone al-Mannan."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:164",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya164.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "أَمَرَهُمْ بِالْمَعْرُوفِ وَنَهَاهُمْ عَنِ الْمُنْكَرِ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0193-3-164",
+          "title": {
+            "ml": "ഖുർആൻ 3:164 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 3:164 — complete verse context"
+          },
+          "arabic_original": "لَقَدْ مَنَّ اللَّهُ عَلَى الْمُؤْمِنِينَ إِذْ بَعَثَ فِيهِمْ رَسُولًا مِّنْ أَنفُسِهِمْ يَتْلُو عَلَيْهِمْ آيَاتِهِ وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَإِن كَانُوا مِن قَبْلُ لَفِي ضَلَالٍ مُّبِينٍ",
+          "translation": {
+            "ml": "വിശ്വാസികളുടെ ഇടയിൽ അവരിൽനിന്നുള്ള ഒരു ദൂതനെ നിയോഗിച്ചുകൊണ്ട് അല്ലാഹു വലിയ അനുഗ്രഹം നൽകി. അദ്ദേഹം അല്ലാഹുവിന്റെ ആയത്തുകൾ ഓതിക്കൊടുക്കുകയും അവരെ ശുദ്ധീകരിക്കുകയും ഗ്രന്ഥവും ജ്ഞാനവും പഠിപ്പിക്കുകയും ചെയ്യുന്നു; അതിന് മുമ്പ് അവർ വ്യക്തമായ വഴിപിഴവിലായിരുന്നു.",
+            "en": "Allah granted believers a great favor by raising a messenger from among them to recite His verses, purify them and teach the Scripture and wisdom, whereas before this they were in clear error."
+          },
+          "source_reference": "Quran 3:164 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya164.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0194": {
+      "name_id": "PDF-HN-0194",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0194-katheer-16-91",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 16:91 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 16:91 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഉറപ്പിച്ച ഉടമ്പടികളും കരാറുകളും പാലിക്കേണ്ട ബാധ്യതയാണ് വിശദീകരിക്കുന്നത്; വ്യത്യസ്ത സാഹചര്യമുള്ള സത്യപ്രതിജ്ഞകളെക്കുറിച്ചുള്ള ഹദീസുമായി ഇത് തമ്മിൽ വിരോധമില്ലെന്നും പറയുന്നു. «كَفِيلًا» ഇവിടെ ഉത്തരവാദിത്തത്തിന്റെ സാക്ഷിയാണ്.",
+            "en": "Ibn Kathir explains that the passage concerns keeping binding covenants; he distinguishes these from other oaths that may require expiation when doing something better."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 16:91",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya91.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "وَهَذَا مِمَّا يَأْمُرُ اللَّهُ تَعَالَى بِهِ وَهُوَ الْوَفَاءُ بِالْعُهُودِ وَالْمَوَاثِيقِ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0194-tabary-16-91",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 16:91 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 16:91 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിനെ ഉടമ്പടികളുടെ കാവൽക്കാരനായി സ്വീകരിച്ചതിന്റെ ഉത്തരവാദിത്തം വ്യക്തമാക്കുന്നു. പ്രവാചകനോടുള്ള ബൈഅത്ത്, മുൻകാല കരാറുകൾ എന്നീ പശ്ചാത്തലങ്ങൾ രേഖപ്പെടുത്തിയ ശേഷം നിയമം പൊതുവായ ബാധ്യതയാണെന്ന് ത്വബരി തിരഞ്ഞെടുത്ത് പറയുന്നു.",
+            "en": "Al-Tabari interprets kafilan as a guardian over commitments; after examining reports concerning allegiance and earlier alliances, he favors the general duty to keep legitimate covenants."
+          },
+          "source_reference": "تفسير الطبري — Quran 16:91",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura16-aya91.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "وَقَدْ جَعَلْتُمُ اللَّهَ بِالْوَفَاءِ بِمَا تَعَاقَدْتُمْ عَلَيْهِ عَلَى أَنْفُسِكُمْ رَاعِيًا"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0194-16-91",
+          "title": {
+            "ml": "ഖുർആൻ 16:91 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 16:91 — complete verse context"
+          },
+          "arabic_original": "وَأَوْفُوا بِعَهْدِ اللَّهِ إِذَا عَاهَدتُّمْ وَلَا تَنقُضُوا الْأَيْمَانَ بَعْدَ تَوْكِيدِهَا وَقَدْ جَعَلْتُمُ اللَّهَ عَلَيْكُمْ كَفِيلًا ۚ إِنَّ اللَّهَ يَعْلَمُ مَا تَفْعَلُونَ",
+          "translation": {
+            "ml": "ഉടമ്പടിയിലേർപ്പെടുമ്പോൾ അല്ലാഹുവിനോടുള്ള ഉടമ്പടി നിറവേറ്റുക. ഉറപ്പിച്ച സത്യങ്ങൾ ലംഘിക്കരുത്; അല്ലാഹുവിനെ നിങ്ങളുടെ മേൽ ഉറപ്പുകാരനാക്കിയിരിക്കുകയാണ്. നിങ്ങൾ പ്രവർത്തിക്കുന്നതെല്ലാം അല്ലാഹു അറിയുന്നു.",
+            "en": "Fulfil your covenant with Allah when you make it. Do not break solemn oaths after confirming them, having made Allah your guarantor. Allah knows all that you do."
+          },
+          "source_reference": "Quran 16:91 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya91.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0195": {
+      "name_id": "PDF-HN-0195",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0195-katheer-89-15",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 89:15 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 89:15 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സമ്പത്തോ സൗകര്യമോ ലഭിച്ചതിനെ അല്ലാഹു ഒരാളെ നിർബന്ധമായും ആദരിക്കുന്നു എന്ന തെളിവാക്കുന്നതിനെ വിമർശിക്കുന്നു: അത് പരീക്ഷണമാണ്. «أَكْرَمَهُ» എന്ന ക്രിയയെ സമ്പത്തുണ്ടാക്കാനുള്ള നിശ്ചിത ജപമാക്കി മാറ്റരുത്.",
+            "en": "Ibn Kathir warns that generous material circumstances are a test, not proof of spiritual approval. The phrase akramahu is a verb, not a guaranteed prosperity incantation."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 89:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura89-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "بَلْ هُوَ ابْتِلَاءٌ وَامْتِحَانٌ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0195-89-15",
+          "title": {
+            "ml": "ഖുർആൻ 89:15 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 89:15 — complete verse context"
+          },
+          "arabic_original": "فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ",
+          "translation": {
+            "ml": "മനുഷ്യനെ അവന്റെ രക്ഷിതാവ് പരീക്ഷിച്ച് ആദരിക്കുകയും സുഖസൗകര്യം നൽകുകയും ചെയ്താൽ 'എന്റെ രക്ഷിതാവ് എന്നെ ആദരിച്ചിരിക്കുന്നു' എന്ന് അവൻ പറയുന്നു.",
+            "en": "When his Lord tests a human by honoring him and granting comforts, he says, 'My Lord has honored me.'"
+          },
+          "source_reference": "Quran 89:15 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura89-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0200": {
+      "name_id": "PDF-HN-0200",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0200-katheer-17-20",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 17:20 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 17:20 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇഹലോകം ഉദ്ദേശിക്കുന്നവർക്കും പരലോകം ഉദ്ദേശിക്കുന്നവർക്കും അല്ലാഹു തൻറെ ദാനത്തിൽനിന്ന് നൽകുന്നതായി വിശദീകരിക്കുന്നു; അതിനെ ആരും തടയാനാവില്ല. ഇത് «المعطي» എന്ന സ്വതന്ത്ര പദരൂപത്തിനുള്ള ഖുർആൻ തെളിവല്ല.",
+            "en": "Ibn Kathir says Allah extends His gift to people seeking the world and those seeking the Hereafter, and none can block His giving; this verse does not print al-Mu'ti as an isolated noun."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 17:20",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya20.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "وَمَا كَانَ عَطَاءُ رَبِّكَ مَحْظُورًا"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0200-17-20",
+          "title": {
+            "ml": "ഖുർആൻ 17:20 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 17:20 — complete verse context"
+          },
+          "arabic_original": "كُلًّا نُّمِدُّ هَٰؤُلَاءِ وَهَٰؤُلَاءِ مِنْ عَطَاءِ رَبِّكَ ۚ وَمَا كَانَ عَطَاءُ رَبِّكَ مَحْظُورًا",
+          "translation": {
+            "ml": "ഈ കൂട്ടർക്കും ആ കൂട്ടർക്കും നിന്റെ രക്ഷിതാവിന്റെ ദാനത്തിൽനിന്ന് നാം നൽകുന്നു. നിന്റെ രക്ഷിതാവിന്റെ ദാനം തടഞ്ഞുവെക്കപ്പെട്ടതല്ല.",
+            "en": "To each of these and those We extend gifts from your Lord; your Lord's giving is not withheld."
+          },
+          "source_reference": "Quran 17:20 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura17-aya20.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0201": {
+      "name_id": "PDF-HN-0201",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0201-katheer-71-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 71:10 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 71:10 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നൂഹ് നബിയുടെ ഇസ്തിഗ്ഫാർ ആഹ്വാനം പാപങ്ങളിൽനിന്ന് മടങ്ങി അല്ലാഹുവിലേക്കു തൗബ ചെയ്യലായി വിശദീകരിക്കുന്നു. മഴയെക്കുറിച്ചുള്ള തുടർവചനങ്ങളും ഉമർ (റ)യുടെ ഇസ്തിഗ്ഫാർ സംബന്ധിച്ച നിവേദനവും തഫ്സീറിൽ ഉണ്ട്. നിർബന്ധമായ എണ്ണമൊന്നും ഇവിടെ കൊടുത്തിട്ടില്ല.",
+            "en": "Ibn Kathir interprets Nuh's appeal as turning away from wrongdoing in repentance. He mentions rain in the following verse and reports about Umar's use of istighfar, but does not prescribe a new fixed numeric count."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "ارْجِعُوا إِلَيْهِ وَارْجِعُوا عَمَّا أَنْتُمْ فِيهِ وَتُوبُوا إِلَيْهِ مِنْ قَرِيبٍ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0205": {
+      "name_id": "PDF-HN-0205",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0205-katheer-4-49",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:49 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 4:49 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വയം പാപരഹിതരാണെന്ന അവകാശവാദത്തിന്റെ തെറ്റാണ് വിശദീകരിക്കുന്നത്; അല്ലാഹുവാണ് ഹൃദയങ്ങളുടെ യാഥാർഥ്യം അറിയുകയും അവൻ ഉദ്ദേശിക്കുന്നവരെ ശുദ്ധീകരിക്കുകയും ചെയ്യുന്നവൻ. «المزكي» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിലില്ല.",
+            "en": "Ibn Kathir criticizes claims of self-purity and says Allah alone knows hearts and purifies whom He wills. The word is a verb, not an independent al-Muzakki."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:49",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya49.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "بَلِ اللَّهُ يُزَكِّي مَنْ يَشَاءُ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0205-tabary-4-49",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 4:49 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 4:49 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി മുൻകാല തഫ്സീറുകളിലെ പല വ്യാഖ്യാനങ്ങൾ പരിശോധിച്ച്, തങ്ങളെ പാപരഹിതരെന്ന് സ്വയം പ്രഖ്യാപിക്കുന്നവരെ ശാസിക്കുന്നതാണ് ആയത്തിന്റെ പ്രധാന അർഥമെന്ന് തീരുമാനിക്കുന്നു; യഥാർഥ ശുദ്ധീകരണം അല്ലാഹുവിനുള്ളതാണ്.",
+            "en": "Al-Tabari reviews multiple explanations and prefers reading the verse as a rebuke of claiming to be sinless; purification belongs to Allah, not self-certification."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:49",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya49.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "وَلَكِنَّ الَّذِي يُزَكِّيهِ اللَّهُ"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0205-4-49",
+          "title": {
+            "ml": "ഖുർആൻ 4:49 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 4:49 — complete verse context"
+          },
+          "arabic_original": "أَلَمْ تَرَ إِلَى الَّذِينَ يُزَكُّونَ أَنفُسَهُم ۚ بَلِ اللَّهُ يُزَكِّي مَن يَشَاءُ وَلَا يُظْلَمُونَ فَتِيلًا",
+          "translation": {
+            "ml": "സ്വയം പരിശുദ്ധരെന്ന് പ്രഖ്യാപിക്കുന്നവരെ നീ കണ്ടില്ലേ? അല്ലാഹുവാണ് ഉദ്ദേശിക്കുന്നവരെ ശുദ്ധീകരിക്കുന്നത്. ചെറിയ നാരിന്റെ അളവുപോലും അവർക്കു അനീതി ചെയ്യപ്പെടില്ല.",
+            "en": "Have you not considered those who declare themselves pure? Allah purifies whom He wills, and they will not be wronged even by the slightest amount."
+          },
+          "source_reference": "Quran 4:49 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya49.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0206": {
+      "name_id": "PDF-HN-0206",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0206-katheer-53-41",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 53:41 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 53:41 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-അൗഫാ» എന്ന് ഏറ്റവും സമ്പൂർണമായ പ്രതിഫലം ലഭിക്കുക എന്നർഥത്തിൽ ചുരുക്കി വിശദീകരിക്കുന്നു. «الوفي» എന്ന സ്വതന്ത്ര നാമരൂപമോ ജപസംഖ്യയോ 53:41-ൽ ഇല്ല.",
+            "en": "Ibn Kathir glosses al-awfa as the fullest recompense. The verse does not contain a separate name al-Wafi or specify a recitation number."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 53:41",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura53-aya41.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "ثُمَّ يُجْزَاهُ الْجَزَاءَ الْأَوْفَى أَيْ الْأَوْفَرَ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0206-tabary-53-41",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 53:41 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 53:41 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി മനുഷ്യന്റെ ശ്രമത്തിനുള്ള പ്രതിഫലം അല്ലാഹു പൂർണമായി നൽകുമെന്നും «അൽ-അൗഫാ» ഏറ്റവും നിറവേറ്റപ്പെട്ട പ്രതിഫലമെന്നും വിശദീകരിക്കുന്നു. സന്ദർഭം പ്രവൃത്തികളുടെ കണക്കാണ്.",
+            "en": "Al-Tabari interprets the verse as fully recompensing a person's effort, with al-awfa describing the completeness of the reward."
+          },
+          "source_reference": "تفسير الطبري — Quran 53:41",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura53-aya41.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "ثُمَّ يُثَابُ بِسَعْيِهِ ذَلِكَ الثَّوَابَ الأَوْفَى"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0208": {
+      "name_id": "PDF-HN-0208",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0208-katheer-54-49",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 54:49 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 54:49 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ വചനത്തെ സൃഷ്ടികൾക്കുമുമ്പുള്ള അല്ലാഹുവിന്റെ അറിവും നിർണയവും സംബന്ധിച്ച ഖദർ പഠനവുമായി ബന്ധിപ്പിക്കുന്നു. ഉൾപ്പെടുത്തിയിരിക്കുന്ന വിവിധ ഹദീസുകളുടെ സനദും പ്രസ്താവനകളും വേർതിരിച്ച് പരിശോധിക്കണം; «المقدر» എന്ന പേരിൽ എണ്ണമൊന്നുമില്ല.",
+            "en": "Ibn Kathir relates this verse to belief in prior divine decree and knowledge of creation. The many reported traditions in the discussion require independent grading; no special count for al-Muqaddir follows."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 54:49",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura54-aya49.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0211": {
+      "name_id": "PDF-HN-0211",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0211-katheer-32-7",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 32:7 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 32:7 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു സൃഷ്ടികളെ നല്ല രീതിയിൽ രൂപകൽപ്പന ചെയ്യുകയും പൂർണത നൽകുകയും ചെയ്തുവെന്ന് വിശദീകരിക്കുന്നു; തുടർന്ന് ആദം മണ്ണിൽനിന്ന് സൃഷ്ടിക്കപ്പെട്ടതായി പറയുന്നു. «المحسن» എന്ന സ്വതന്ത്ര നാമം ഇവിടെ ഇല്ല.",
+            "en": "Ibn Kathir describes creation as excellently fashioned, exact and wise; the verse then recalls Adam's creation from clay. This employs ahsana rather than independently naming al-Muhsin."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 32:7",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura32-aya7.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "إِنَّهُ الَّذِي أَحْسَنَ خَلْقَ الأَشْيَاءِ وَأَتْقَنَهَا وَأَحْكَمَهَا"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0212": {
+      "name_id": "PDF-HN-0212",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0212-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 59:23 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 59:23 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ വഹ്ബ് ബിൻ മുനബ്ബിഹ് നൽകിയ «അൽ-ഖുദ്ദൂസ്» എന്നതിന് «പരിശുദ്ധൻ» എന്ന വിശദീകരണം രേഖപ്പെടുത്തുന്നു; മുജാഹിദിന്റെയും ഖതാദയുടെയും «അനുഗൃഹീതൻ» എന്ന വായനയും പറയുന്നു. ഇവ ഖുദ്ദൂസ് എന്ന നാമത്തിന്റെ തഫ്സീറാണ്, «الطاهر» അതേ വചനത്തിലെ വേറൊരു നാമമല്ല.",
+            "en": "Ibn Kathir reports Wahb ibn Munabbih's gloss of al-Quddus as pure, with alternative early glosses as blessed. These explain al-Quddus, not an independent Quranic al-Tahir."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "الْقُدُّوسُ قَالَ وَهْبُ بْنُ مُنَبِّهٍ أَيْ الطَّاهِرُ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0212-tabary-59-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 59:23 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 59:23 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി «ഖുദ്ദൂസ്» എന്നതിന് അനുഗൃഹീതൻ എന്ന ആദ്യകാല അഭിപ്രായം രേഖപ്പെടുത്തുന്നു. അദ്ദേഹം അൽ-സലാം എന്നത് സൃഷ്ടികളെ ദൈവിക അനീതിയിൽനിന്ന് സുരക്ഷിതമാക്കുന്ന നാമമെന്നും പ്രത്യേകം പറയുന്നു.",
+            "en": "Al-Tabari transmits the gloss 'blessed' for al-Quddus and separately describes al-Salam as the One who keeps His creatures safe from injustice."
+          },
+          "source_reference": "تفسير الطبري — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "الْقُدُّوسُ قِيلَ هُوَ الْمُبَارَكُ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0213": {
+      "name_id": "PDF-HN-0213",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0213-katheer-5-109",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 5:109 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 5:109 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അന്ത്യദിനത്തിൽ ദൂതന്മാർ തങ്ങൾക്ക് അറിയാത്ത ഉള്ളറകളെക്കുറിച്ച് അല്ലാഹുവിന്റെ അറിവിനെ അംഗീകരിക്കുന്നതായി വിശദീകരിക്കുന്നു. ഇബ്നു അബ്ബാസ് മുതലായവരുടെ വ്യത്യസ്ത വായനകൾ രേഖപ്പെടുത്തി, അല്ലാഹുവിന്റെ പരിപൂർണ അറിവിനോട് താരതമ്യത്തിൽ തങ്ങളുടെ അറിവ് പരിമിതമാണെന്ന അഭിപ്രായത്തെ നല്ലതായി പറയുന്നു.",
+            "en": "Ibn Kathir discusses the messengers' response on Judgment Day and several early readings, favorably relating it to their knowledge being limited beside Allah's knowledge of all hidden matters."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 5:109",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya109.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "لا عِلْمَ لَنَا إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ"
+        },
+        {
+          "id": "source-deep2-PDF-HN-0213-tabary-5-109",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 5:109 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Al-Tabari — Quran 5:109 (source-checked)"
+          },
+          "translation": {
+            "ml": "ത്വബരി വിവിധ ആദ്യകാല അഭിപ്രായങ്ങളിൽനിന്ന് «ഞങ്ങൾക്ക് അറിയുന്നതെല്ലാം നിനക്കു ഞങ്ങളെക്കാൾ നന്നായി അറിയാം» എന്ന അർഥത്തിന് മുൻഗണന നൽകുന്നു. ദൂതന്മാർ തങ്ങൾ നേരിട്ട് അറിഞ്ഞതെല്ലാം നിഷേധിച്ചെന്നല്ല.",
+            "en": "Al-Tabari prefers the view that whatever the messengers knew was already known more perfectly by Allah, rather than denying their own witnessed knowledge."
+          },
+          "source_reference": "تفسير الطبري — Quran 5:109",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya109.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "لا عِلْمَ لَنَا إِلا عِلْمٌ أَنْتَ أَعْلَمُ بِهِ مِنَّا"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0213-5-109",
+          "title": {
+            "ml": "ഖുർആൻ 5:109 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 5:109 — complete verse context"
+          },
+          "arabic_original": "يَوْمَ يَجْمَعُ اللَّهُ الرُّسُلَ فَيَقُولُ مَاذَا أُجِبْتُمْ ۖ قَالُوا لَا عِلْمَ لَنَا ۖ إِنَّكَ أَنتَ عَلَّامُ الْغُيُوبِ",
+          "translation": {
+            "ml": "അല്ലാഹു ദൂതന്മാരെ ഒരുമിച്ചു കൂട്ടി 'നിങ്ങൾക്ക് എന്ത് മറുപടിയാണ് ലഭിച്ചത്?' എന്നു ചോദിക്കുന്ന ദിവസം അവർ പറയും: 'ഞങ്ങൾക്ക് അറിവില്ല; മറഞ്ഞതെല്ലാം ഏറ്റവും നന്നായി അറിയുന്നവൻ നീ തന്നെയാണ്.'",
+            "en": "On the Day Allah gathers the messengers and asks how people responded, they will say, 'We have no knowledge; You alone are the thorough Knower of unseen things.'"
+          },
+          "source_reference": "Quran 5:109 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya109.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0216": {
+      "name_id": "PDF-HN-0216",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0216-katheer-40-15",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 40:15 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 40:15 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അർശിന്റെ മഹത്വവും «റൂഹ്» എന്ന വാക്കിലൂടെ ദൈവിക സന്ദേശം നൽകുന്നതും അന്ത്യദിനത്തെക്കുറിച്ചുള്ള മുന്നറിയിപ്പും വിശദീകരിക്കുന്നു. അൽ-റഫീഅ് എന്ന ഒറ്റപദം മാത്രം ഇവിടെ വരുന്നില്ല.",
+            "en": "Ibn Kathir discusses the exalted Throne, the sending of revelation, and warning of the Day of Meeting. The exact Quranic phrase is Rafi' al-darajat, not an isolated al-Rafi'."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 40:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "رَفِيعُ الدَّرَجَاتِ ذُو الْعَرْشِ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0218": {
+      "name_id": "PDF-HN-0218",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0218-katheer-49-3",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 49:3 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 49:3 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നബി ﷺയുടെ സന്നിധിയിൽ ശബ്ദം താഴ്ത്തുന്നവരുടെ ഹൃദയങ്ങൾ തഖ്‌വയ്ക്കായി ശുദ്ധീകരിച്ചെന്ന് വിശദീകരിക്കുന്നു. «امْتَحَنَ» എന്ന ക്രിയയെ പരീക്ഷണവും ശുദ്ധീകരണവും എന്നീ സന്ദർഭത്തിൽ വായിക്കണം.",
+            "en": "Ibn Kathir interprets 'tested their hearts for piety' as making those hearts sincere and suitable for reverence; the verse uses imtahana as a verb."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 49:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura49-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "أَخْلَصَهَا لَهَا وَجَعَلَهَا أَهْلًا وَمَحَلًّا"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "source-deep2-quran-full-PDF-HN-0218-49-3",
+          "title": {
+            "ml": "ഖുർആൻ 49:3 — പൂർണ വാക്യസന്ദർഭം",
+            "en": "Quran 49:3 — complete verse context"
+          },
+          "arabic_original": "إِنَّ الَّذِينَ يَغُضُّونَ أَصْوَاتَهُمْ عِندَ رَسُولِ اللَّهِ أُولَٰئِكَ الَّذِينَ امْتَحَنَ اللَّهُ قُلُوبَهُمْ لِلتَّقْوَىٰ ۚ لَهُم مَّغْفِرَةٌ وَأَجْرٌ عَظِيمٌ",
+          "translation": {
+            "ml": "അല്ലാഹുവിന്റെ ദൂതന്റെ സന്നിധിയിൽ ശബ്ദം താഴ്ത്തുന്നവരുടെ ഹൃദയങ്ങളെ അല്ലാഹു ഭക്തിക്കായി പരീക്ഷിക്കുകയും ഒരുക്കുകയും ചെയ്തിരിക്കുന്നു. അവർക്ക് പാപമോചനവും വലിയ പ്രതിഫലവുമുണ്ട്.",
+            "en": "Those who lower their voices in the Messenger's presence have hearts Allah has tested for reverence; they have forgiveness and a great reward."
+          },
+          "source_reference": "Quran 49:3 — full verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura49-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "പൂർണ ആയത്ത്. മുമ്പ് കാർഡിൽ ഭാഗിക പാഠം മാത്രമായിരുന്നിടത്ത് പൂർണ സന്ദർഭം നൽകുന്നു. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ സ്വതന്ത്ര നാമരൂപത്തിൽ ആയത്തിലുണ്ടെന്ന അവകാശവാദമല്ല.",
+            "en": "Full verse supplied for context, supplementing earlier excerpts. This is not an assertion that the card heading is a separately attested divine Name."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0226": {
+      "name_id": "PDF-HN-0226",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0226-katheer-59-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 59:23 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 59:23 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അസ്-സലാം» അല്ലാഹുവിന്റെ സത്തയിലും വിശേഷണങ്ങളിലും പ്രവർത്തികളിലും എല്ലാ ന്യൂനതകളിൽനിന്നുള്ള പൂർണതയെന്ന് വിശദീകരിക്കുന്നു. 59:23-ൽ നാമം നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir interprets al-Salam as free of every flaw and deficiency, perfect in essence, attributes and acts. The Name occurs directly in Quran 59:23."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "السَّلامُ أَيْ مِنْ جَمِيعِ الْعُيُوبِ وَالنَّقَائِصِ"
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0229": {
+      "name_id": "PDF-HN-0229",
+      "scholarly": [
+        {
+          "id": "source-deep2-PDF-HN-0229-katheer-51-58",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 51:58 (ഗ്രന്ഥപാഠം പരിശോധിച്ചു)",
+            "en": "Ibn Kathir — Quran 51:58 (source-checked)"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മനുഷ്യരെ സൃഷ്ടിച്ചത് തന്നെ മാത്രം ആരാധിക്കാനാണെന്നും സൃഷ്ടികളുടെ ഉപജീവനം അല്ലാഹുവിനെ ആശ്രയിച്ചിരിക്കുന്നതാണെന്നും പറയുന്നു; സൃഷ്ടികളുടെ ഭക്ഷണം അവന് വേണ്ടതില്ല. 51:58-ൽ «الرزاق» ആണ്, «الرازق» എന്ന വ്യത്യസ്ത രൂപമല്ല.",
+            "en": "Ibn Kathir explains Allah created people for worship and does not need provision from creatures; He provides for them. Quran 51:58 uses the emphatic ar-Razzaq, not the different heading ar-Raziq."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "ഇത് തഫ്സീറിൽനിന്നുള്ള ചെറു മൂലപാഠവും പണ്ഡിതന്റെ വിശദീകരണത്തിന്റെ അർഥസംഗ്രഹവുമാണ്; ഖുർആൻ/ഹദീസ് നിർദേശിക്കുന്ന വസീഫയല്ല.",
+            "en": "A short original Arabic quotation and attributed summary from classical tafsir, not a Quranic or Prophetic counted ritual."
+          },
+          "arabic_original": "فَهُوَ خَالِقُهُمْ وَرَازِقُهُمْ"
+        }
+      ],
+      "evidence": []
+    }
+  }
+}
