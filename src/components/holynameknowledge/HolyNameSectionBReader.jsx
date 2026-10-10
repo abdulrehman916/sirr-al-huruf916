@@ -26,6 +26,7 @@ import encyclopediaDepth from '@/data/holyNamesSectionBEncyclopediaI.json';
 import encyclopediaDepthII from '@/data/holyNamesSectionBEncyclopediaII.json';
 import encyclopediaDepthIII from '@/data/holyNamesSectionBEncyclopediaIII.json';
 import encyclopediaDepthIV from '@/data/holyNamesSectionBEncyclopediaIV.json';
+import encyclopediaDepthV from '@/data/holyNamesSectionBEncyclopediaV.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
 import { sectionBReading } from '@/lib/holyNames/sectionBReading';
@@ -131,6 +132,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const encyclopediaProfileII = encyclopediaDepthII.profiles?.[nameId]?.name_id === nameId ? encyclopediaDepthII.profiles[nameId] : null;
   const encyclopediaProfileIII = encyclopediaDepthIII.profiles?.[nameId]?.name_id === nameId ? encyclopediaDepthIII.profiles[nameId] : null;
   const encyclopediaProfileIV = encyclopediaDepthIV.profiles?.[nameId]?.name_id === nameId ? encyclopediaDepthIV.profiles[nameId] : null;
+  const encyclopediaProfileV = encyclopediaDepthV.profiles?.[nameId]?.name_id === nameId ? encyclopediaDepthV.profiles[nameId] : null;
   const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedQuranDuasII = (topicalDuasII.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedQuranDuasIII = (topicalDuasIII.topics || []).filter(entry => entry.name_ids?.includes(nameId));
@@ -177,10 +179,10 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     }).filter(Boolean);
   if (!profile && !checkedChapter && (!card || card.pdf_name_id !== nameId)) return null;
   const groups = [
-    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...(deepProfileVI?.evidence || []), ...(deepProfileVII?.evidence || []), ...(deepProfileVIII?.evidence || []), ...(deepProfileIX?.evidence || []), ...(deepProfileX?.evidence || []), ...(encyclopediaProfile?.evidence || []), ...(encyclopediaProfileII?.evidence || []), ...(encyclopediaProfileIII?.evidence || []), ...(encyclopediaProfileIV?.evidence || []), ...runtime.evidence] },
-    { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: [...(profile?.hadith || []), ...(encyclopediaProfileIV?.hadith || [])] },
+    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...(deepProfileVI?.evidence || []), ...(deepProfileVII?.evidence || []), ...(deepProfileVIII?.evidence || []), ...(deepProfileIX?.evidence || []), ...(deepProfileX?.evidence || []), ...(encyclopediaProfile?.evidence || []), ...(encyclopediaProfileII?.evidence || []), ...(encyclopediaProfileIII?.evidence || []), ...(encyclopediaProfileIV?.evidence || []), ...(encyclopediaProfileV?.evidence || []), ...runtime.evidence] },
+    { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: [...(profile?.hadith || []), ...(encyclopediaProfileIV?.hadith || []), ...(encyclopediaProfileV?.hadith || [])] },
     { key: 'prophetic', title: ml ? 'നബിവചന ദിക്ർ / ദുആ — എണ്ണവും സമയവും ക്രമവും' : 'Prophetic dhikr and supplications — count, timing and procedure', items: linkedPropheticDhikr },
-    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...(deepProfileVII?.scholarly || []), ...(deepProfileVIII?.scholarly || []), ...(deepProfileIX?.scholarly || []), ...(deepProfileX?.scholarly || []), ...(encyclopediaProfile?.scholarly || []), ...(encyclopediaProfileII?.scholarly || []), ...(encyclopediaProfileIII?.scholarly || []), ...(encyclopediaProfileIV?.scholarly || []), ...runtime.scholarly] },
+    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...(deepProfileVII?.scholarly || []), ...(deepProfileVIII?.scholarly || []), ...(deepProfileIX?.scholarly || []), ...(deepProfileX?.scholarly || []), ...(encyclopediaProfile?.scholarly || []), ...(encyclopediaProfileII?.scholarly || []), ...(encyclopediaProfileIII?.scholarly || []), ...(encyclopediaProfileIV?.scholarly || []), ...(encyclopediaProfileV?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...linkedQuranDuasII, ...linkedQuranDuasIII, ...runtime.topics] },
     { key: 'shams', title: ml ? 'ശംസ് അൽമആരിഫ് — ഖവാസ്സ്: മൂല അറബി, എണ്ണം, സമയം, ഗ്രന്ഥവിവരണം' : 'Shams al-Maarif — historical khawass: Arabic, counts, timings and book account', items: linkedShamsAccounts },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
@@ -199,6 +201,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     {encyclopediaProfileII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthII.scope)}</p>}
     {encyclopediaProfileIII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIII.scope)}</p>}
     {encyclopediaProfileIV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIV.scope)}</p>}
+    {encyclopediaProfileV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthV.scope)}</p>}
     <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
     {card && <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-white/70" aria-label={ml ? 'കാർഡ് ഉറവിട സംഗ്രഹം' : 'Card source summary'}>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'സ്രോതസ്സ് രേഖകൾ' : 'Source entries'}</span><span data-testid="section-b-source-count">{totalSourceEntries}</span></div>
