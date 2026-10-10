@@ -1569,6 +1569,84 @@ try {
     assert.ok(!html.includes(deepMuhaymin.evidence[0].id),'Cross-card leakage of seventh Name source into '+id);
   }
   console.log('PASS: al-Muhaymin seventh card contains 16 full Arabic Quran verses, 17 source-attributed tafsir distinctions, and the separate historical five-inscription ring claim, in both languages.');
+
+  // Eighth source-rich card: exactly distinguish the Divine Name, indefinite descriptions and Yusuf's human al-Aziz title.
+  const encyclopaediaVII=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaVII.json','utf8'));
+  const azizId='PDF-HN-008';
+  const deepAziz=encyclopaediaVII.profiles[azizId];
+  assert.deepEqual(Object.keys(encyclopaediaVII.profiles),[azizId],'No placeholders on eighth encyclopedia overlay.');
+  assert.equal(deepAziz.evidence.length,19,'Nineteen distinct complete Quran verses on al-Aziz expected.');
+  assert.equal(deepAziz.evidence.reduce((n,entry)=>n+entry.verse_count,0),19);
+  assert.equal(deepAziz.scholarly.length,22,'Twenty-two distinct tafsir studies required.');
+  assert.equal(new Set([...deepAziz.evidence,...deepAziz.scholarly].map(e=>e.id)).size,41);
+  assert.equal(research[azizId].evidence.filter(e=>e.source_reference==='Quran 59:23').length,1,'Original direct al-Aziz verse must remain without duplicate.');
+  const azizRefs=new Set(), azizHumanRefs=[];
+  for(const entry of deepAziz.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.ok(entry.arabic_original.length>=16 && entry.verse_meaning.ml && entry.verse_meaning.en);
+    assert.ok(entry.translation.ml && entry.translation.en && entry.source_scope.ml && entry.source_scope.en);
+    assert.ok(entry.arabic_original.includes('عَزِيز') || entry.arabic_original.includes('الْعَزِيز'),'Original must contain Aziz with Quranic marks: '+entry.id);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+    const ref=entry.source_reference.match(/Quran (\d+:\d+)/)?.[1];
+    assert.ok(ref && ref!=='59:23' && !azizRefs.has(ref),'Duplicate original Quran reference: '+ref);
+    azizRefs.add(ref);
+    if(entry.relationship==='human_title_not_divine_name'){
+      azizHumanRefs.push(ref);
+      assert.equal(entry.claim_kind,'human_title_not_divine_name');
+      assert.ok(entry.translation.en.includes('earthly')||entry.translation.en.includes('human')||entry.translation.en.includes('minister'),'Human title must be qualified.');
+    }
+    if(entry.relationship==='indefinite_divine_epithet')assert.equal(entry.claim_kind,'descriptive_indefinite_form');
+    for(const language of ['ml','en']){
+      const html=render(chapters[azizId]||null,azizId,language,{pdf_name_id:azizId});
+      for(const field of [entry.arabic_original,entry.verse_meaning[language],entry.translation[language],entry.source_scope[language]]){
+        assert.ok(html.includes(escape(field)),'Missing Quran verse/interpretation '+ref+'/'+language);
+      }
+      assert.ok(html.includes(entry.source_url),'Quran citation absent: '+ref);
+      assert.ok(sectionBEntrySearchText(entry,language).includes(entry.verse_meaning[language].toLocaleLowerCase()),
+        'Search must contain complete Quran meaning for '+ref);
+    }
+  }
+  assert.deepEqual(azizHumanRefs.sort(),['12:30','12:78','12:88'],'All three human al-Aziz usages in Yusuf must be distinct.');
+  const complete36=deepAziz.evidence.find(x=>x.source_reference.startsWith('Quran 3:6'));
+  assert.ok(complete36 && complete36.arabic_original.startsWith('هُوَ الَّذِي يُصَوِّرُكُمْ') && complete36.arabic_original.length>70,
+    'Expand original fragment into the full Quran 3:6 verse.');
+  const earlyTest=deepAziz.evidence.find(x=>x.source_reference.startsWith('Quran 67:2'));
+  assert.ok(earlyTest?.translation.en.includes('best deeds'),'Preserve meaningful best-vs-most-deeds explanation.');
+  const tafsirAuthors=new Set();
+  for(const entry of deepAziz.scholarly){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.ok(entry.arabic_original.length>=10 && entry.translation.ml && entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|saadi|tabary)\//.test(entry.source_url));
+    tafsirAuthors.add(entry.source_url.match(/\/tafseer\/([^/]+)\//)[1]);
+    for(const language of ['ml','en']){
+      const html=render(chapters[azizId]||null,azizId,language,{pdf_name_id:azizId});
+      assert.ok(html.includes(escape(entry.arabic_original)),'Arabic scholarly phrase missing '+entry.id);
+      assert.ok(html.includes(escape(entry.translation[language])),'Bilingual tafsir missing '+entry.id);
+      assert.ok(html.includes(entry.source_url),'Source-specific tafsir link missing '+entry.id);
+    }
+  }
+  assert.deepEqual([...tafsirAuthors].sort(),['katheer','saadi','tabary']);
+  assert.ok(deepAziz.scholarly.some(x=>x.translation.en.includes('authentic 99-Names')||x.translation.en.includes('ninety-nine Names')),
+    'Sound 99-Names hadith must be distinguished from extra enumerated chains.');
+  assert.equal(bridge.identity_map['b-shams-brief-68-العزيز'],azizId);
+  const shamsAziz=historical.accounts['b-shams-brief-68-العزيز'];
+  assert.equal(shamsAziz.source_page,'68');
+  assert.ok(shamsAziz.arabic_original.includes('من أكثر من ذكره'));
+  assert.ok(shamsAziz.count.en.includes('no fixed repetition count'),'Shams brief must not be assigned a fabricated count.');
+  assert.ok(!shamsAziz.timing.en.includes('Saturday')&&!shamsAziz.conditions.en.includes('incense'),
+    'Do not import ritual timing or incense from unrelated manuscript chapter.');
+  for(const language of ['ml','en']){
+    const html=render(chapters[azizId]||null,azizId,language,{pdf_name_id:azizId});
+    assert.ok(html.includes(escape(shamsAziz.arabic_original)),'Original sourced Shams al-Aziz brief absent.');
+    assert.ok(html.includes(escape(shamsAziz.count[language])),'No-fixed-count qualification lost.');
+    assert.ok(html.includes(escape(encyclopaediaVII.scope[language])),'Incomplete historical coverage warning must be displayed.');
+  }
+  for(const id of ['PDF-HN-001','PDF-HN-002','PDF-HN-003','PDF-HN-004','PDF-HN-005','PDF-HN-006','PDF-HN-007']){
+    const html=render(chapters[id]||null,id,'en',{pdf_name_id:id});
+    assert.ok(!html.includes(deepAziz.evidence[0].id),'Card 008 evidence leaked onto '+id);
+  }
+  console.log('PASS: al-Aziz eighth card contains 19 complete Quran verses, 22 Arabic-source tafsir readings, three distinctly human Aziz references and historically unnumbered Shams remembrance.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
