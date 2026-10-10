@@ -1,0 +1,2038 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "160 കാർഡ് പട്ടികയിലെ മുമ്പ് പ്രത്യേക ഗവേഷണ പ്രൊഫൈലില്ലാത്ത 48 തലക്കെട്ടുകൾക്കുള്ള ആദ്യ ഖുർആൻ-കേന്ദ്രീകൃത ഗവേഷണ വികസനം. ചില തലക്കെട്ടുകൾ സ്വതന്ത്ര നാമങ്ങളല്ല, ഖുർആനിലെ വാക്യങ്ങൾ/ക്രിയാരൂപങ്ങൾ മാത്രം ആണെന്ന് വ്യക്തമായി രേഖപ്പെടുത്തിയിട്ടുണ്ട്. എല്ലാ കൃതികളും ഹദീസുകളും പരിശോധിച്ചു തീർന്നിട്ടില്ല.",
+    "en": "An initial Quran-based expansion covering 48 previously unprofiled headings. Verbatim forms, thematic descriptions and full invocations are distinguished, with no invented count or completion claim."
+  },
+  "profiles": {
+    "PDF-HN-0144": {
+      "name_id": "PDF-HN-0144",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The All-Encompassing",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The All-Encompassing. «മുഹീത്വ്» എന്ന അർഥം അറിവിലും അധികാരത്തിലും ഒന്നും അല്ലാഹുവിനു പുറത്തല്ലെന്ന് വ്യക്തമാക്കുന്നു. അൽബുറൂജ് 85:20-ൽ «مُحِيطٌ» എന്ന രൂപമാണ്, ഒറ്റയ്ക്ക് «الْمُحِيطُ» എന്ന നാമരൂപമല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The All-Encompassing”. The Quran says Allah encompasses them in 85:20; its wording is muhīt, not the isolated definite-name form al-Muhīt. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-85-20",
+          "title": {
+            "ml": "ഖുർആൻ — 85:20",
+            "en": "Quran 85:20"
+          },
+          "arabic_original": "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",
+          "translation": {
+            "ml": "അല്ലാഹു അവരെ എല്ലാ വശത്തുനിന്നും പൂർണമായി ഉൾക്കൊള്ളുന്നവനാണ്.",
+            "en": "Allah encompasses them from every side."
+          },
+          "source_reference": "Quran 85:20",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya20.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0146": {
+      "name_id": "PDF-HN-0146",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The All-Powerful",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The All-Powerful. സൃഷ്ടിയുടെ ഉയിർത്തെഴുന്നേൽപ്പും സർവശക്തിയും സംസാരിക്കുന്ന 22:6-ൽ «قَدِيرٌ» എന്ന രൂപം വരുന്നു. ഇത് മറ്റെല്ലാ സഹായമാർഗങ്ങളും ഉപേക്ഷിക്കണമെന്നോ നിശ്ചിതസംഖ്യയിൽ ജപിക്കണമെന്നോ ഉള്ള നിർദേശം അല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The All-Powerful”. Quran 22:6 links divine ability to resurrection and truth. The form qadir here is a divine predicate, not a prescribed numbered recitation. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-6",
+          "title": {
+            "ml": "ഖുർആൻ — 22:6",
+            "en": "Quran 22:6"
+          },
+          "arabic_original": "ذَٰلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّهُ يُحْيِي الْمَوْتَىٰ وَأَنَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹുവാണ് സത്യമായുള്ളവൻ എന്നതുകൊണ്ടും അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നു എന്നതുകൊണ്ടും അവൻ എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനാണ് എന്നതുകൊണ്ടുമാണ് അത്.",
+            "en": "That is because Allah is the Truth, because He gives life to the dead, and because He has power over everything."
+          },
+          "source_reference": "Quran 22:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ — 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0147": {
+      "name_id": "PDF-HN-0147",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Bestower",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Bestower. അൽ-വഹ്ഹാബ് മഹാദാതാവിനെ സൂചിപ്പിക്കുന്നു. 3:8-ലെ പ്രാർത്ഥനയിൽ ഹൃദയം നേർവഴിയിൽ നിലനിൽക്കാനും കരുണ ലഭിക്കാനും അപേക്ഷിച്ചശേഷമാണ് «إِنَّكَ أَنتَ الْوَهَّابُ» വരുന്നത്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Bestower”. Al-Wahhab occurs directly in a prayer seeking steadfast hearts and mercy; the requested gifts are connected to spiritual guidance, not a fixed wealth formula. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-8",
+          "title": {
+            "ml": "ഖുർആൻ — 3:8",
+            "en": "Quran 3:8"
+          },
+          "arabic_original": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+          "translation": {
+            "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, നീ ഞങ്ങളെ നേർവഴിയിലാക്കിയശേഷം ഞങ്ങളുടെ ഹൃദയങ്ങളെ തെറ്റിക്കരുതേ. നിന്റെ പക്കൽനിന്ന് ഞങ്ങൾക്ക് കാരുണ്യം നൽകേണമേ. തീർച്ചയായും നീയാണ് ഉദാരമായി നൽകുന്നവൻ.",
+            "en": "Our Lord, do not let our hearts deviate after You have guided us. Grant us mercy from Yourself. You are indeed the Bestower."
+          },
+          "source_reference": "Quran 3:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0152": {
+      "name_id": "PDF-HN-0152",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "The One God",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The One God. ഇലാഹ് എന്നത് ആരാധനയ്ക്കർഹനായ ദൈവമെന്ന അർഥമാണ്. 20:8-ൽ ഏകദൈവത്വവും ഏറ്റവും ഉത്തമമായ നാമങ്ങൾ അല്ലാഹുവിനാണെന്ന വചനവും ഒരുമിച്ചു വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The One God”. The verse affirms that none deserves worship but Allah and the Beautiful Names belong to Him; this heading is a theological expression, not a new standalone Quranic name. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-20-8",
+          "title": {
+            "ml": "ഖുർആൻ — 20:8",
+            "en": "Quran 20:8"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+          "translation": {
+            "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. ഏറ്റവും നല്ല നാമങ്ങൾ അവന്നുള്ളതാണ്.",
+            "en": "Allah—there is no deity worthy of worship except Him. To Him belong the Most Beautiful Names."
+          },
+          "source_reference": "Quran 20:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0154": {
+      "name_id": "PDF-HN-0154",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The All-Forgiving",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The All-Forgiving. ഗഫ്ഫാർ പാപങ്ങൾ പൊറുത്തുതരുന്നവനാണ്. നൂഹ് നബി തന്റെ ജനങ്ങളോട് പശ്ചാത്താപവും ഇസ്തിഗ്ഫാറും ആവശ്യപ്പെടുന്ന 71:10-ലാണ് ഈ വിശേഷണം വരുന്നത്; അതിന്റെ പിന്നാലെ മഴയും മറ്റു അനുഗ്രഹങ്ങളും ഉള്ള ചരിത്രപ്രസംഗമാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The All-Forgiving”. Ghaffar appears in Nuh's appeal to repentance and asking forgiveness. Its surrounding passages mention rain and resources in that prophetic setting, not a universal fixed-count income promise. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-71-10",
+          "title": {
+            "ml": "ഖുർആൻ — 71:10",
+            "en": "Quran 71:10"
+          },
+          "arabic_original": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+          "translation": {
+            "ml": "അപ്പോൾ ഞാൻ പറഞ്ഞു: നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക. തീർച്ചയായും അവൻ വീണ്ടും വീണ്ടും പൊറുത്തുതരുന്നവനാണ്.",
+            "en": "Then I said: Seek forgiveness from your Lord; He is indeed Oft-Forgiving."
+          },
+          "source_reference": "Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-20-82",
+          "title": {
+            "ml": "ഖുർആൻ — 20:82",
+            "en": "Quran 20:82"
+          },
+          "arabic_original": "وَإِنِّي لَغَفَّارٌ لِّمَن تَابَ وَآمَنَ وَعَمِلَ صَالِحًا ثُمَّ اهْتَدَىٰ",
+          "translation": {
+            "ml": "പശ്ചാത്തപിക്കുകയും വിശ്വസിക്കുകയും നല്ല പ്രവർത്തികൾ ചെയ്യുകയും തുടർന്ന് നേർവഴിയിൽ നിലകൊള്ളുകയും ചെയ്യുന്നവന് ഞാൻ വളരെ പൊറുത്തുതരുന്നവനാണ്.",
+            "en": "I am indeed Oft-Forgiving toward whoever repents, believes, does good deeds, and then follows guidance."
+          },
+          "source_reference": "Quran 20:82",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya82.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-71-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 71:10",
+            "en": "Ibn Kathir — Quran 71:10"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നൂഹ് നബിയുടെ തൗബയിലേക്കുള്ള ആഹ്വാനവും അനുബന്ധ മഴയുടെ വിവരണവും വിശദീകരിക്കുന്നു; ഒരു നിശ്ചിത എണ്ണത്തിലുള്ള ധനലാഭ-വസീഫ അയാൾ നൽകുന്നില്ല.",
+            "en": "Ibn Kathir discusses Nuh's appeal to repentance and the following account of rain; he does not give a universal fixed-count wealth formula."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-0155": {
+      "name_id": "PDF-HN-0155",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Near",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Near. അൽ-ഖരീബ് അടുത്തിരിക്കുന്നവനെന്ന ആശയം സൂചിപ്പിക്കുന്നു. സ്വാലിഹ് നബിയുടെ ജനത്തോടുള്ള സന്ദേശത്തിൽ «قَرِيبٌ مُّجِيبٌ» എന്ന രണ്ട് പദങ്ങളും ഒത്തുചേരുന്നു; മുമ്പായി ഇസ്തിഗ്ഫാറും തൗബയും ആവശ്യപ്പെടുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Near”. Quran 11:61 links Allah's nearness and responsiveness to Salih's appeal for repentance, and uses qarib alongside mujib. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-61",
+          "title": {
+            "ml": "ഖുർആൻ — 11:61",
+            "en": "Quran 11:61"
+          },
+          "arabic_original": "وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَالِحًا ۚ قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَـٰهٍ غَيْرُهُ ۖ هُوَ أَنشَأَكُم مِّنَ الْأَرْضِ وَاسْتَعْمَرَكُمْ فِيهَا فَاسْتَغْفِرُوهُ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي قَرِيبٌ مُّجِيبٌ",
+          "translation": {
+            "ml": "സമൂദിലേക്കു അവരുടെ സഹോദരനായ സ്വാലിഹിനെ നാം അയച്ചു. അദ്ദേഹം പറഞ്ഞു: എന്റെ ജനങ്ങളേ, അല്ലാഹുവിനെ ആരാധിക്കുക; അവനല്ലാതെ നിങ്ങൾക്ക് ആരാധനയ്ക്കർഹനില്ല. ഭൂമിയിൽനിന്ന് നിങ്ങളെ ഉണ്ടാക്കുകയും അതിൽ നിങ്ങളെ പാർപ്പിക്കുകയും ചെയ്തത് അവനാണ്. അതിനാൽ അവനോട് പാപമോചനം തേടുകയും അവനിലേക്കു പശ്ചാത്തപിച്ചു മടങ്ങുകയും ചെയ്യുക. എന്റെ രക്ഷിതാവ് അടുത്തുള്ളവനും ഉത്തരം നൽകുന്നവനുമാണ്.",
+            "en": "To Thamud We sent their brother Salih. He said: My people, worship Allah; you have no deity worthy of worship other than Him. He brought you into being from the earth and settled you upon it. Seek His forgiveness, then turn to Him in repentance. My Lord is Near and Responsive."
+          },
+          "source_reference": "Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-11-61",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:61",
+            "en": "Ibn Kathir — Quran 11:61"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വാലിഹ് നബി ജനങ്ങളോട് ഇസ്തിഗ്ഫാറും തൗബയും ആവശ്യപ്പെടുന്ന സന്ദർഭത്തിലാണ് അല്ലാഹു സമീപസ്ഥനും ഉത്തരം നൽകുന്നവനും ആണെന്ന് വിവരിക്കുന്നത്.",
+            "en": "Ibn Kathir explains 'Near, Responsive' within Salih's call to ask forgiveness and return to Allah."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-0156": {
+      "name_id": "PDF-HN-0156",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The One who answers",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The One who answers. അൽ-മുജീബ് പ്രാർത്ഥനയ്ക്ക് മറുപടി നൽകുന്നവനാണ്. 11:61-ൽ «مُجِيبٌ» എന്ന വിശേഷണം അല്ലാഹുവിന്റെ സാമീപ്യത്തോട് ചേർന്നാണ്; ചോദിക്കുന്നതെല്ലാം നിശ്ചിത ദിവസത്തിനുള്ളിൽ കിട്ടുമെന്ന് ആയത്ത് പറയുന്നില്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The One who answers”. The descriptive form mujib appears with qarib in 11:61. It is not a promise that every request is fulfilled on a prescribed timetable. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-61",
+          "title": {
+            "ml": "ഖുർആൻ — 11:61",
+            "en": "Quran 11:61"
+          },
+          "arabic_original": "وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَالِحًا ۚ قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَـٰهٍ غَيْرُهُ ۖ هُوَ أَنشَأَكُم مِّنَ الْأَرْضِ وَاسْتَعْمَرَكُمْ فِيهَا فَاسْتَغْفِرُوهُ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي قَرِيبٌ مُّجِيبٌ",
+          "translation": {
+            "ml": "സമൂദിലേക്കു അവരുടെ സഹോദരനായ സ്വാലിഹിനെ നാം അയച്ചു. അദ്ദേഹം പറഞ്ഞു: എന്റെ ജനങ്ങളേ, അല്ലാഹുവിനെ ആരാധിക്കുക; അവനല്ലാതെ നിങ്ങൾക്ക് ആരാധനയ്ക്കർഹനില്ല. ഭൂമിയിൽനിന്ന് നിങ്ങളെ ഉണ്ടാക്കുകയും അതിൽ നിങ്ങളെ പാർപ്പിക്കുകയും ചെയ്തത് അവനാണ്. അതിനാൽ അവനോട് പാപമോചനം തേടുകയും അവനിലേക്കു പശ്ചാത്തപിച്ചു മടങ്ങുകയും ചെയ്യുക. എന്റെ രക്ഷിതാവ് അടുത്തുള്ളവനും ഉത്തരം നൽകുന്നവനുമാണ്.",
+            "en": "To Thamud We sent their brother Salih. He said: My people, worship Allah; you have no deity worthy of worship other than Him. He brought you into being from the earth and settled you upon it. Seek His forgiveness, then turn to Him in repentance. My Lord is Near and Responsive."
+          },
+          "source_reference": "Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-11-61",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:61",
+            "en": "Ibn Kathir — Quran 11:61"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വാലിഹ് നബി ജനങ്ങളോട് ഇസ്തിഗ്ഫാറും തൗബയും ആവശ്യപ്പെടുന്ന സന്ദർഭത്തിലാണ് അല്ലാഹു സമീപസ്ഥനും ഉത്തരം നൽകുന്നവനും ആണെന്ന് വിവരിക്കുന്നത്.",
+            "en": "Ibn Kathir explains 'Near, Responsive' within Salih's call to ask forgiveness and return to Allah."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:61",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya61.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-0158": {
+      "name_id": "PDF-HN-0158",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Forbearing",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Forbearing. അൽ-ഹലീം ശിക്ഷയിൽ തിടുക്കം കാണിക്കാത്ത സഹനവും കരുണയും സൂചിപ്പിക്കുന്നു. അത്തഗാബുൻ 64:17-ൽ നല്ല ദാനത്തിനും പാപമോചനത്തിനുമുള്ള സന്ദർഭത്തിൽ «شَكُورٌ حَلِيمٌ» വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Forbearing”. Halim is paired with Shakur in Quran 64:17 in a context of charity, forgiveness and divine forbearance. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-64-17",
+          "title": {
+            "ml": "ഖുർആൻ — 64:17",
+            "en": "Quran 64:17"
+          },
+          "arabic_original": "إِن تُقْرِضُوا اللَّهَ قَرْضًا حَسَنًا يُضَاعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ ۚ وَاللَّهُ شَكُورٌ حَلِيمٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ അല്ലാഹുവിന് നല്ല കടം നൽകിയാൽ അവൻ അത് നിങ്ങൾക്കായി ഇരട്ടിപ്പിക്കുകയും നിങ്ങൾക്ക് പൊറുത്തുതരുകയും ചെയ്യും. അല്ലാഹു നന്ദിയോടെ പ്രതിഫലം നൽകുന്നവനും സഹനമുള്ളവനുമാണ്.",
+            "en": "If you lend Allah a good loan, He will multiply it for you and forgive you. Allah is Appreciative and Forbearing."
+          },
+          "source_reference": "Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0159": {
+      "name_id": "PDF-HN-0159",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The All-Aware",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The All-Aware. അൽ-ഖബീർ സൃഷ്ടികളുടെ അകത്തും പുറത്തുമുള്ള കാര്യങ്ങൾ അറിയുന്നവൻ എന്ന അർഥം സൂചിപ്പിക്കുന്നു. അൽഅൻആം 6:18-ൽ അൽഹകീമിനൊപ്പമുള്ള «الْخَبِيرُ» നേരിട്ട് വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The All-Aware”. Al-Khabir occurs directly alongside al-Hakim in Quran 6:18, affirming complete awareness in the context of God's sovereign power. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-18",
+          "title": {
+            "ml": "ഖുർആൻ — 6:18",
+            "en": "Quran 6:18"
+          },
+          "arabic_original": "وَهُوَ الْقَاهِرُ فَوْقَ عِبَادِهِ ۚ وَهُوَ الْحَكِيمُ الْخَبِيرُ",
+          "translation": {
+            "ml": "അവൻ തന്റെ ദാസന്മാർക്കുമീതെ അധികാരമുള്ളവനാണ്. അവൻ യുക്തിമാനും എല്ലാം സൂക്ഷ്മമായി അറിയുന്നവനുമാണ്.",
+            "en": "He holds supreme power over His servants. He is the Wise, the All-Aware."
+          },
+          "source_reference": "Quran 6:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0160": {
+      "name_id": "PDF-HN-0160",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Most High",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Most High. അൽ-അലിയ്യ് ഉന്നതനായവനെ സൂചിപ്പിക്കുന്നു. ആയത്തുൽ കുർസിയുടെ അവസാനത്തിൽ «الْعَلِيُّ الْعَظِيمُ» എന്നു വരുന്നു. ഈ രണ്ട് നാമങ്ങളെക്കുറിച്ചുള്ള വിവരണം മുഴുവൻ ആയത്തിനുള്ളിലാണ് വായിക്കേണ്ടത്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Most High”. Al-Ali appears at the end of Ayat al-Kursi with al-Azim. The full verse speaks of divine life, knowledge, authority and untiring preservation. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-255",
+          "title": {
+            "ml": "ഖുർആൻ — 2:255",
+            "en": "Quran 2:255"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          "translation": {
+            "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+            "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+          },
+          "source_reference": "Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0161": {
+      "name_id": "PDF-HN-0161",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Magnificent",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Magnificent. അൽ-അളീം മഹത്തായവൻ എന്ന അർഥമാണ്; «അൽ-അലീം» (അറിയുന്നവൻ) എന്ന പദവുമായി ഇത് കലർത്തരുത്. ആയത്തുൽ കുർസിയിൽ സൃഷ്ടികളുടെ പരിപാലനത്തെക്കുറിച്ചുള്ള വിവരണത്തിനൊടുവിലാണ് നാമം. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Magnificent”. Al-Azim, the Magnificent, concludes Quran 2:255 with al-Ali. This must not be confused with al-Alim, the All-Knowing, a distinct Arabic word. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-255",
+          "title": {
+            "ml": "ഖുർആൻ — 2:255",
+            "en": "Quran 2:255"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          "translation": {
+            "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+            "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+          },
+          "source_reference": "Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0165": {
+      "name_id": "PDF-HN-0165",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "Owner of all sovereignty",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: Owner of all sovereignty. «മാലികൽ മുല്‌ക്» എന്ന അപേക്ഷയിലൂടെ ഭരണവും അധികാരവും നൽകുന്നതും തിരിച്ചെടുക്കുന്നതും അല്ലാഹുവാണെന്ന് 3:26 പറയുന്നു. ഇത് മറ്റുള്ളവരെ കീഴ്പ്പെടുത്താനുള്ള അനുമതിയോ അധികാരലാഭത്തിന്റെ ഉറപ്പോ അല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “Owner of all sovereignty”. Quran 3:26 explicitly addresses Allah as Owner of Sovereignty and describes granting and withdrawing rule. It is not a formula guaranteeing rank. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ — 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0170": {
+      "name_id": "PDF-HN-0170",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Watchful",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Watchful. അർ-റഖീബ് നിരീക്ഷകനെന്ന വിശേഷണമാണ്. അന്നിസാഅ് 4:1-ൽ മനുഷ്യരുടെ ഉത്ഭവം, കുടുംബബന്ധങ്ങൾ, കടമകൾ എന്നിവ പറഞ്ഞശേഷം അല്ലാഹു «رَقِيبًا» എന്നു വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Watchful”. Raqib appears in Quran 4:1 amid obligations toward family and others, meaning Allah is ever watchful; the verse is not a ritual diagram instruction. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-1",
+          "title": {
+            "ml": "ഖുർആൻ — 4:1",
+            "en": "Quran 4:1"
+          },
+          "arabic_original": "يَا أَيُّهَا النَّاسُ اتَّقُوا رَبَّكُمُ الَّذِي خَلَقَكُم مِّن نَّفْسٍ وَاحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًا كَثِيرًا وَنِسَاءً ۚ وَاتَّقُوا اللَّهَ الَّذِي تَسَاءَلُونَ بِهِ وَالْأَرْحَامَ ۚ إِنَّ اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+          "translation": {
+            "ml": "പരമകാരുണികനും കരുണാനിധിയുമായ അല്ലാഹുവിന്റെ നാമത്തിൽ. മനുഷ്യരേ, ഒരൊറ്റ വ്യക്തിയിൽനിന്ന് നിങ്ങളെ സൃഷ്ടിക്കുകയും അതിൽനിന്ന് അതിന്റെ ഇണയെ സൃഷ്ടിക്കുകയും അവരിൽനിന്ന് അനേകം പുരുഷന്മാരെയും സ്ത്രീകളെയും വ്യാപിപ്പിക്കുകയും ചെയ്ത നിങ്ങളുടെ രക്ഷിതാവിനെ സൂക്ഷിക്കുക. ആരുടെ പേരിൽ നിങ്ങൾ പരസ്പരം അവകാശങ്ങൾ ചോദിക്കുന്നുവോ ആ അല്ലാഹുവിനെ സൂക്ഷിക്കുക; കുടുംബബന്ധങ്ങളെയും മാനിക്കുക. തീർച്ചയായും അല്ലാഹു നിങ്ങളെ നിരീക്ഷിക്കുന്നവനാണ്.",
+            "en": "In the name of Allah, the All-Merciful, the Merciful. People, be mindful of your Lord, who created you from a single soul, created its mate from it, and spread many men and women from the two. Be mindful of Allah, in whose name you ask one another for your rights, and honor kinship ties. Allah is indeed watchful over you."
+          },
+          "source_reference": "Quran 4:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0172": {
+      "name_id": "PDF-HN-0172",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Sustainer",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Sustainer. അൽ-മുഖീത് പരിപാലനവും നിയന്ത്രണവും സൂചിപ്പിക്കുന്ന പദമാണ്. അന്നിസാഅ് 4:85-ൽ നല്ല ശുപാർശയും മോശം ശുപാർശയും അവയുടെ ഉത്തരവാദിത്തങ്ങളും ചർച്ച ചെയ്യുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Sustainer”. Muqit occurs as a predicate in Quran 4:85 concerning the moral consequences of intercession; it is not an unconditional guarantee of material sustenance. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-85",
+          "title": {
+            "ml": "ഖുർആൻ — 4:85",
+            "en": "Quran 4:85"
+          },
+          "arabic_original": "مَّن يَشْفَعْ شَفَاعَةً حَسَنَةً يَكُن لَّهُ نَصِيبٌ مِّنْهَا ۖ وَمَن يَشْفَعْ شَفَاعَةً سَيِّئَةً يَكُن لَّهُ كِفْلٌ مِّنْهَا ۗ وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُّقِيتًا",
+          "translation": {
+            "ml": "നല്ല കാര്യത്തിന് ശുപാർശ ചെയ്യുന്നവന് അതിൽ ഒരു പങ്കുണ്ടാകും. ചീത്ത കാര്യത്തിന് ശുപാർശ ചെയ്യുന്നവന് അതിന്റെ ഭാരത്തിൽ ഒരു പങ്കുണ്ടാകും. അല്ലാഹു എല്ലാ കാര്യങ്ങളെയും നിലനിർത്തുകയും മേൽനോട്ടം വഹിക്കുകയും ചെയ്യുന്നവനാണ്.",
+            "en": "Whoever intercedes for a good cause will have a share in it; whoever intercedes for an evil cause will have a share of its burden. Allah sustains and oversees everything."
+          },
+          "source_reference": "Quran 4:85",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya85.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0175": {
+      "name_id": "PDF-HN-0175",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Originator",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Originator. ബദീഉസ്സമാവാത്തി വൽ അർദ് എന്നത് ആകാശഭൂമികളുടെ സമാനതയില്ലാത്ത സൃഷ്ടാവെന്നാണ്. 6:101-ൽ സൃഷ്ടിയിലും സന്താനാരോപണത്തിന്റെ നിഷേധത്തിലും ഉൾപ്പെടുത്തി വിശദീകരിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Originator”. Badi al-samawat wa-l-ard describes the incomparable Originator of heaven and earth in 6:101, within a rejection of claims that Allah has offspring. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-101",
+          "title": {
+            "ml": "ഖുർആൻ — 6:101",
+            "en": "Quran 6:101"
+          },
+          "arabic_original": "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ ۖ أَنَّىٰ يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُن لَّهُ صَاحِبَةٌ ۖ وَخَلَقَ كُلَّ شَيْءٍ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+          "translation": {
+            "ml": "ആകാശങ്ങളെയും ഭൂമിയെയും മുൻമാതൃകയില്ലാതെ സൃഷ്ടിച്ചവൻ. അവന് ഇണയില്ലാതിരിക്കെ എങ്ങനെ അവന് സന്താനമുണ്ടാകും? അവൻ എല്ലാറ്റിനെയും സൃഷ്ടിച്ചു; അവൻ എല്ലാം അറിയുന്നവനാണ്.",
+            "en": "He is the Originator of the heavens and earth. How could He have a child when He has no consort? He created everything and knows all things."
+          },
+          "source_reference": "Quran 6:101",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya101.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0179": {
+      "name_id": "PDF-HN-0179",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Subtle, the Gentle",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Subtle, the Gentle. അൽ-ലത്വീഫ് സൂക്ഷ്മമായി കരുണ ചെയ്യുന്നവൻ എന്ന ആശയമാണ്; 42:19-ൽ അല്ലാഹു തന്റെ ദാസന്മാരോട് ലത്വീഫ് ആണെന്നും ഉദ്ദേശിക്കുന്നവർക്ക് ഉപജീവനം നൽകുന്നുവെന്നും പറയുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Subtle, the Gentle”. Al-Latif occurs in Quran 42:19 with a statement of provision and divine strength. It is not a fixed-count formula for assured money. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-42-19",
+          "title": {
+            "ml": "ഖുർആൻ — 42:19",
+            "en": "Quran 42:19"
+          },
+          "arabic_original": "اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَن يَشَاءُ ۖ وَهُوَ الْقَوِيُّ الْعَزِيزُ",
+          "translation": {
+            "ml": "അല്ലാഹു തന്റെ ദാസന്മാരോട് സൗമ്യമായി കരുണ ചെയ്യുന്നവനാണ്. അവൻ ഉദ്ദേശിക്കുന്നവർക്ക് ഉപജീവനം നൽകുന്നു. അവൻ ശക്തനും പ്രതാപമുള്ളവനുമാണ്.",
+            "en": "Allah is gentle toward His servants. He provides for whom He wills. He is the Strong, the Mighty."
+          },
+          "source_reference": "Quran 42:19",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya19.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-056": {
+      "name_id": "PDF-HN-056",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Protecting Friend",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Protecting Friend. അൽ-വലിയ്യ് യഥാർഥ രക്ഷാധികാരിയെന്ന നാമമാണ്. 42:9-ൽ മറ്റുള്ളവരെ രക്ഷാധികാരികളാക്കുന്നതിനെ ചോദ്യംചെയ്തുകൊണ്ട് «فَاللَّهُ هُوَ الْوَلِيُّ» എന്ന് പറയുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Protecting Friend”. Allah is directly called al-Wali in Quran 42:9, which contrasts the true divine guardian with other supposed protectors and mentions resurrection. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-42-9",
+          "title": {
+            "ml": "ഖുർആൻ — 42:9",
+            "en": "Quran 42:9"
+          },
+          "arabic_original": "أَمِ اتَّخَذُوا مِن دُونِهِ أَوْلِيَاءَ ۖ فَاللَّهُ هُوَ الْوَلِيُّ وَهُوَ يُحْيِي الْمَوْتَىٰ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാത്തവരെ അവർ രക്ഷാധികാരികളാക്കി സ്വീകരിച്ചോ? യഥാർഥ രക്ഷാധികാരി അല്ലാഹുവാണ്. അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നു; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Have they taken protectors besides Him? Allah alone is the true Protecting Friend. He revives the dead and has power over everything."
+          },
+          "source_reference": "Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-42-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:9",
+            "en": "Ibn Kathir — Quran 42:9"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രകാരം അല്ലാഹു മാത്രമാണ് യഥാർഥ രക്ഷാധികാരി; അവൻ മരിച്ചവരെ ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir identifies Allah as the true guardian, able to revive the dead."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-057": {
+      "name_id": "PDF-HN-057",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Praiseworthy",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Praiseworthy. അൽ-ഹമീദ് എല്ലാ സ്തുതികൾക്കും അർഹനായവനെ സൂചിപ്പിക്കുന്നു. 22:64-ൽ സകലത്തിന്റെയും ഉടമസ്ഥത അല്ലാഹുവിനാണെന്ന പ്രസ്താവനയോടൊപ്പം അൽഗനിയ്യും അൽഹമീദും വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Praiseworthy”. Al-Hamid occurs alongside al-Ghani in 22:64: all creation belongs to Allah while He is independent and worthy of praise. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-64",
+          "title": {
+            "ml": "ഖുർആൻ — 22:64",
+            "en": "Quran 22:64"
+          },
+          "arabic_original": "لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِنَّ اللَّهَ لَهُوَ الْغَنِيُّ الْحَمِيدُ",
+          "translation": {
+            "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. തീർച്ചയായും അല്ലാഹു എല്ലാറ്റിൽനിന്നും സ്വതന്ത്രനും സ്തുതിക്കർഹനുമാണ്.",
+            "en": "Everything in the heavens and earth belongs to Him. Allah is indeed free of all need and worthy of all praise."
+          },
+          "source_reference": "Quran 22:64",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-058": {
+      "name_id": "PDF-HN-058",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "thematic",
+      "source_heading_english": "The Enumerator",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Enumerator. അൽ-മുഹ്സി എന്ന തലക്കെട്ടിന്റെ 'കൃത്യമായി എണ്ണിവെക്കുന്നവൻ' എന്ന അർഥത്തിന് 58:6 തെളിവായ വിവരണമാണ്. പക്ഷേ ആയത്തിലുള്ളത് «أَحْصَاهُ اللَّهُ» എന്ന ക്രിയാരൂപം; «الْمُحْصِي» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Enumerator”. Quran 58:6 says Allah has counted and retained all deeds even when people forget. It uses a verb and does not independently establish al-Muhsi as a literal Quranic token. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-58-6",
+          "title": {
+            "ml": "ഖുർആൻ — 58:6",
+            "en": "Quran 58:6"
+          },
+          "arabic_original": "يَوْمَ يَبْعَثُهُمُ اللَّهُ جَمِيعًا فَيُنَبِّئُهُم بِمَا عَمِلُوا ۚ أَحْصَاهُ اللَّهُ وَنَسُوهُ ۚ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+          "translation": {
+            "ml": "അവരെ അല്ലാഹു എല്ലാവരെയും ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്ന ദിവസം അവർ ചെയ്തതെല്ലാം അവൻ അറിയിക്കും. അവർ മറന്നുപോയ കാര്യങ്ങളും അല്ലാഹു കൃത്യമായി എണ്ണി സൂക്ഷിച്ചിരിക്കുന്നു; അല്ലാഹു എല്ലാറ്റിനും സാക്ഷിയാണ്.",
+            "en": "On the Day Allah raises them all, He will tell them what they did. Allah has kept exact account though they forgot; Allah witnesses everything."
+          },
+          "source_reference": "Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "theme_not_independent_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-58-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 58:6",
+            "en": "Ibn Kathir — Quran 58:6"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മനുഷ്യർ മറന്ന നന്മ-തിന്മകൾ പോലും അല്ലാഹു സൂക്ഷിച്ചു രേഖപ്പെടുത്തിയിട്ടുണ്ടെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains that Allah retains every act, good or evil, even when people forget."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya6.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-060": {
+      "name_id": "PDF-HN-060",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "thematic",
+      "source_heading_english": "The One who restores",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The One who restores. അൽ-മുഈദ് വീണ്ടും കൊണ്ടുവരുന്നവൻ എന്ന അർഥമാണ്. അൽബുറൂജ് 85:13-ൽ «يُبْدِئُ وَيُعِيدُ» എന്ന രണ്ട് ക്രിയകളാണ്; «الْمُعِيدُ» എന്ന പ്രത്യേക നാമരൂപം അവിടെ ഇല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The One who restores”. Quran 85:13 uses verbs for initiating and repeating creation. It supports the theme of restoration but does not print the definite noun al-Mu'id. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-85-13",
+          "title": {
+            "ml": "ഖുർആൻ — 85:13",
+            "en": "Quran 85:13"
+          },
+          "arabic_original": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+          "translation": {
+            "ml": "തീർച്ചയായും അവനാണ് സൃഷ്ടി ആരംഭിക്കുകയും വീണ്ടും കൊണ്ടുവരുകയും ചെയ്യുന്നത്.",
+            "en": "Indeed it is He who initiates creation and brings it back."
+          },
+          "source_reference": "Quran 85:13",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya13.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "theme_not_independent_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-85-13",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 85:13",
+            "en": "Ibn Kathir — Quran 85:13"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടി ആരംഭിക്കുകയും വീണ്ടും ഉയിർത്തെഴുന്നേൽപ്പിക്കുകയും ചെയ്യുന്നത് അല്ലാഹുവിന്റെ പൂർണ ശക്തിയാണെന്ന് വ്യക്തമാക്കുന്നു.",
+            "en": "Ibn Kathir reads the two verbs as originating creation and recreating it without impediment."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:13",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya13.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-061": {
+      "name_id": "PDF-HN-061",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "thematic",
+      "source_heading_english": "The Giver of death",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Giver of death. അൽ-മുമീത് ജീവൻ അവസാനിപ്പിക്കുന്നവൻ എന്ന അർഥം സൂചിപ്പിക്കുന്നു. 15:23-ൽ «نُمِيتُ» എന്ന ക്രിയാരൂപം മാത്രമാണ്; മരണം അല്ലാഹുവിന്റെ കൈകളിലാണ് എന്ന ആശയം ഇവിടെ ഉറപ്പിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Giver of death”. Quran 15:23 affirms that Allah grants life and causes death; the grammar is verbal (numit), not the standalone divine-name noun al-Mumit. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-15-23",
+          "title": {
+            "ml": "ഖുർആൻ — 15:23",
+            "en": "Quran 15:23"
+          },
+          "arabic_original": "وَإِنَّا لَنَحْنُ نُحْيِي وَنُمِيتُ وَنَحْنُ الْوَارِثُونَ",
+          "translation": {
+            "ml": "ജീവൻ നൽകുന്നതും മരണം നൽകുന്നതും നാം തന്നെയാണ്; ഒടുവിൽ എല്ലാം നമുക്കുതന്നെ മടങ്ങുന്നു.",
+            "en": "It is We who give life and cause death, and We are the Inheritors."
+          },
+          "source_reference": "Quran 15:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "theme_not_independent_name"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-068": {
+      "name_id": "PDF-HN-068",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The All-Powerful",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The All-Powerful. അൽ-ഖദീർ കഴിവിന്റെ പരിപൂർണത സൂചിപ്പിക്കുന്നു. 22:6-ൽ പുനരുജ്ജീവനത്തോടൊപ്പം «قَدِيرٌ» വരുന്നു; 3:26-ലെ പ്രാർത്ഥനയിലും കഴിവ് സൂചിപ്പിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The All-Powerful”. Al-Qadir concerns complete power. Quran 22:6 directly ties divine power to resurrection; 3:26 places ability within God's sovereignty. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-6",
+          "title": {
+            "ml": "ഖുർആൻ — 22:6",
+            "en": "Quran 22:6"
+          },
+          "arabic_original": "ذَٰلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّهُ يُحْيِي الْمَوْتَىٰ وَأَنَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹുവാണ് സത്യമായുള്ളവൻ എന്നതുകൊണ്ടും അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നു എന്നതുകൊണ്ടും അവൻ എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനാണ് എന്നതുകൊണ്ടുമാണ് അത്.",
+            "en": "That is because Allah is the Truth, because He gives life to the dead, and because He has power over everything."
+          },
+          "source_reference": "Quran 22:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ — 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-078": {
+      "name_id": "PDF-HN-078",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Supremely Exalted",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Supremely Exalted. അൽ-മുതആലി എല്ലാറ്റിനും അതീതമായി ഉന്നതനായവൻ എന്ന വിശേഷണമാണ്. 13:9-ൽ മറഞ്ഞതും പ്രകടവുമായ കാര്യങ്ങൾ അറിയുന്നവനെന്ന വിവരണത്തോടൊപ്പം «الْمُتَعَالِ» വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Supremely Exalted”. Al-Muta'ali is used in 13:9 beside knowledge of the unseen and seen; the precise Quranic form is al-Muta'al. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-13-9",
+          "title": {
+            "ml": "ഖുർആൻ — 13:9",
+            "en": "Quran 13:9"
+          },
+          "arabic_original": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+          "translation": {
+            "ml": "അദൃശ്യവും ദൃശ്യവും അറിയുന്നവൻ; മഹാനായവൻ; അത്യുന്നതൻ.",
+            "en": "Knower of the unseen and the visible, the Great, the Supremely Exalted."
+          },
+          "source_reference": "Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-087": {
+      "name_id": "PDF-HN-087",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Gatherer",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Gatherer. അൽ-ജാമിഅ് ഒരുമിച്ചുകൂട്ടുന്നവനെ സൂചിപ്പിക്കുന്നു. 3:9-ൽ മനുഷ്യരെ സംശയമില്ലാത്ത ഒരു ദിവസത്തിനായി കൂട്ടിച്ചേർക്കുമെന്ന ദുആയിൽ «جَامِعُ النَّاسِ» വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Gatherer”. Jami al-nas appears in a Quranic prayer about the Day of Gathering. It does not prescribe an isolated count to reunite people in worldly life. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-9",
+          "title": {
+            "ml": "ഖുർആൻ — 3:9",
+            "en": "Quran 3:9"
+          },
+          "arabic_original": "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",
+          "translation": {
+            "ml": "ഞങ്ങളുടെ രക്ഷിതാവേ, സംശയമില്ലാത്ത ഒരു ദിവസത്തിനായി മനുഷ്യരെ നീ ഒരുമിച്ചുകൂട്ടുന്നതാണ്. തീർച്ചയായും അല്ലാഹു വാഗ്ദാനം ലംഘിക്കുകയില്ല.",
+            "en": "Our Lord, You will surely gather all people for a Day about which there is no doubt. Allah never fails His promise."
+          },
+          "source_reference": "Quran 3:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-3-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 3:9",
+            "en": "Ibn Kathir — Quran 3:9"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ദുആയെ ഉയിർത്തെഴുന്നേൽപ്പിന്റെ ദിവസം സൃഷ്ടികളെ ഒരുമിച്ചു കൂട്ടി ന്യായവിധി നടത്തുമെന്ന് അംഗീകരിക്കുന്നതായി വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains this as affirmation of the universal gathering for judgment and recompense."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya9.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-094": {
+      "name_id": "PDF-HN-094",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Incomparable Originator",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Incomparable Originator. അൽ-ബദീഅ് രൂപമാതൃകയില്ലാതെ സൃഷ്ടിക്കുന്നവൻ എന്ന അർഥമാണ്. 6:101-ലെ «بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ» എന്ന രൂപത്തിലാണ് ഖുർആൻ തെളിവ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Incomparable Originator”. Badi in Quran 6:101 describes the incomparable Originator of the heavens and the earth; the larger context concerns divine uniqueness. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-101",
+          "title": {
+            "ml": "ഖുർആൻ — 6:101",
+            "en": "Quran 6:101"
+          },
+          "arabic_original": "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ ۖ أَنَّىٰ يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُن لَّهُ صَاحِبَةٌ ۖ وَخَلَقَ كُلَّ شَيْءٍ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+          "translation": {
+            "ml": "ആകാശങ്ങളെയും ഭൂമിയെയും മുൻമാതൃകയില്ലാതെ സൃഷ്ടിച്ചവൻ. അവന് ഇണയില്ലാതിരിക്കെ എങ്ങനെ അവന് സന്താനമുണ്ടാകും? അവൻ എല്ലാറ്റിനെയും സൃഷ്ടിച്ചു; അവൻ എല്ലാം അറിയുന്നവനാണ്.",
+            "en": "He is the Originator of the heavens and earth. How could He have a child when He has no consort? He created everything and knows all things."
+          },
+          "source_reference": "Quran 6:101",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya101.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-095": {
+      "name_id": "PDF-HN-095",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "thematic",
+      "source_heading_english": "The Everlasting",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Everlasting. അൽ-ബാഖീ നിലനിൽക്കുന്നവൻ എന്ന ആശയം 55:27-ൽ «وَيَبْقَىٰ وَجْهُ رَبِّكَ» എന്ന ക്രിയാപ്രയോഗത്തിലൂടെയാണ് വരുന്നത്. «الْبَاقِي» എന്ന സ്വതന്ത്ര പദരൂപം ഈ വാക്യത്തിൽ ഇല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Everlasting”. Quran 55:27 speaks of the continuing existence of the Lord after created beings perish, using the verb yabqa rather than the standalone name al-Baqi. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-55-27",
+          "title": {
+            "ml": "ഖുർആൻ — 55:27",
+            "en": "Quran 55:27"
+          },
+          "arabic_original": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+          "translation": {
+            "ml": "മഹത്വത്തിന്റെയും ആദരവിന്റെയും ഉടമയായ നിന്റെ രക്ഷിതാവിന്റെ മുഖം (സത്ത) നിലനിൽക്കും.",
+            "en": "And the Face of your Lord, Possessor of Majesty and Honor, will remain."
+          },
+          "source_reference": "Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "theme_not_independent_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-55-27",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 55:27",
+            "en": "Ibn Kathir — Quran 55:27"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ എല്ലാ സൃഷ്ടികളും നശിച്ചാലും അല്ലാഹു നിലനിൽക്കുന്നതായി വിശദീകരിക്കുന്നു. «വജ്‌ഹ്» എന്ന പദത്തിന്റെ വ്യാഖ്യാനത്തിൽ പണ്ഡിതപരമ്പരകൾക്കിടയിൽ വ്യത്യാസങ്ങളുണ്ട്.",
+            "en": "Ibn Kathir emphasizes that creation perishes whereas Allah does not; interpretive differences concerning 'Face' must be kept attributed."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-101": {
+      "name_id": "PDF-HN-101",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Lord",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Lord. അർ-റബ്ബ് പോഷിപ്പിക്കുന്നവനും പരിപാലിക്കുന്നവനും ആയ രക്ഷിതാവാണ്. അൽഫാതിഹ 1:2-ലെ «رَبِّ الْعَالَمِينَ» എന്ന രൂപം ദൈവിക പരിപാലനത്തെ വിശാലമായി അവതരിപ്പിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Lord”. Rabb al-alamin appears in al-Fatihah 1:2, describing the Lordship and sustaining governance of all worlds. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-1-2",
+          "title": {
+            "ml": "ഖുർആൻ — 1:2",
+            "en": "Quran 1:2"
+          },
+          "arabic_original": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "translation": {
+            "ml": "സർവലോകങ്ങളുടെയും രക്ഷിതാവായ അല്ലാഹുവിനാണ് എല്ലാ സ്തുതിയും.",
+            "en": "All praise belongs to Allah, Lord of all worlds."
+          },
+          "source_reference": "Quran 1:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-102": {
+      "name_id": "PDF-HN-102",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Manifest, the One who makes clear",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Manifest, the One who makes clear. അൽ-മുബീൻ വ്യക്തമായി സത്യം വെളിപ്പെടുത്തുന്നവനെ സൂചിപ്പിക്കുന്നു. 24:25-ൽ «اللَّهَ هُوَ الْحَقُّ الْمُبِينُ» എന്നു വരുന്നു; അന്തിമവിധി ദൈവികസത്യത്തെ വ്യക്തമാക്കുന്നതാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Manifest, the One who makes clear”. Al-Mubin appears in Quran 24:25 together with al-Haqq, in a passage about the Day when truth and justice become manifest. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-24-25",
+          "title": {
+            "ml": "ഖുർആൻ — 24:25",
+            "en": "Quran 24:25"
+          },
+          "arabic_original": "يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+          "translation": {
+            "ml": "അന്നേദിവസം അല്ലാഹു അവർക്ക് അർഹമായ പ്രതിഫലം പൂർണമായി നൽകും. അല്ലാഹുവാണ് വ്യക്തമായ സത്യമെന്ന് അവർ അറിയും.",
+            "en": "On that day Allah will pay them their due recompense in full, and they will know that Allah is the manifest Truth."
+          },
+          "source_reference": "Quran 24:25",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-103": {
+      "name_id": "PDF-HN-103",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Sufficient",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Sufficient. അൽ-കാഫീ മതിയായവനെന്ന ആശയം 39:36-ൽ «بِكَافٍ عَبْدَهُ» എന്ന ചോദ്യംകൊണ്ടാണ് വരുന്നത്. ആയത്തിൽ «الْكَافِي» എന്ന സ്വതന്ത്ര നാമം ഇല്ല; ഈ വാക്യത്തിന്റെ പ്രധാന പശ്ചാത്തലം പ്രവാചകനോടുള്ള ശത്രുക്കളുടെ ഭീഷണികളാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Sufficient”. Quran 39:36 asks whether Allah is sufficient for His servant in a context of threats to the Prophet. The text says bi-kafin, not the isolated Name al-Kafi. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-39-36",
+          "title": {
+            "ml": "ഖുർആൻ — 39:36",
+            "en": "Quran 39:36"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِكَافٍ عَبْدَهُ ۖ وَيُخَوِّفُونَكَ بِالَّذِينَ مِن دُونِهِ ۚ وَمَن يُضْلِلِ اللَّهُ فَمَا لَهُ مِنْ هَادٍ",
+          "translation": {
+            "ml": "തന്റെ ദാസന് അല്ലാഹു മതിയായവനല്ലയോ? അവനല്ലാത്തവരെക്കൊണ്ട് അവർ നിന്നെ ഭയപ്പെടുത്തുന്നു. അല്ലാഹു വഴിതെറ്റാൻ വിട്ടവന് വഴികാട്ടിയില്ല.",
+            "en": "Is Allah not sufficient for His servant? They frighten you with those besides Him, yet whoever Allah leaves astray has no guide."
+          },
+          "source_reference": "Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya36.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-39-36",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 39:36",
+            "en": "Ibn Kathir — Quran 39:36"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ആയത്തിൽ അല്ലാഹുവിൽ തവക്കുൽ ചെയ്യുന്ന ദാസന് അവൻ മതിയായവനാണ് എന്നാണ് പറയുന്നത്; മറ്റ് ദൈവങ്ങളെക്കൊണ്ട് ഭയപ്പെടുത്തുന്ന സാഹചര്യം കൂടി വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir connects divine sufficiency with reliance upon Allah and the threatened Prophet."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya36.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-104": {
+      "name_id": "PDF-HN-104",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Powerful",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Powerful. അൽ-ഖാദിർ ശക്തനും എല്ലാറ്റിനും കഴിവുള്ളവനും എന്ന അർഥമാണ്. 42:9-ലെ «قَدِيرٌ» ഉയിർത്തെഴുന്നേൽപ്പുമായി ചേർന്നാണ്; മനുഷ്യരുടെ ആഗ്രഹംപോലെ ഫലം ഉടനെ ഉണ്ടാക്കുന്ന പ്രയോഗമല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Powerful”. Quran 42:9 closes by affirming power over everything in connection with raising the dead. It does not assign a counted recitation to the name. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-42-9",
+          "title": {
+            "ml": "ഖുർആൻ — 42:9",
+            "en": "Quran 42:9"
+          },
+          "arabic_original": "أَمِ اتَّخَذُوا مِن دُونِهِ أَوْلِيَاءَ ۖ فَاللَّهُ هُوَ الْوَلِيُّ وَهُوَ يُحْيِي الْمَوْتَىٰ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാത്തവരെ അവർ രക്ഷാധികാരികളാക്കി സ്വീകരിച്ചോ? യഥാർഥ രക്ഷാധികാരി അല്ലാഹുവാണ്. അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നു; അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Have they taken protectors besides Him? Allah alone is the true Protecting Friend. He revives the dead and has power over everything."
+          },
+          "source_reference": "Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ — 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-42-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:9",
+            "en": "Ibn Kathir — Quran 42:9"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രകാരം അല്ലാഹു മാത്രമാണ് യഥാർഥ രക്ഷാധികാരി; അവൻ മരിച്ചവരെ ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir identifies Allah as the true guardian, able to revive the dead."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-105": {
+      "name_id": "PDF-HN-105",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Creator",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Creator. അൽ-ഖാലിഖ് എല്ലാറ്റിന്റെയും സ്രഷ്ടാവാണ്. 39:62-ൽ «خَالِقُ كُلِّ شَيْءٍ» എന്നും 59:24-ൽ അൽഖാലിഖ്, അൽബാരിഅ്, അൽമുസവ്വിർ എന്നിങ്ങനെ മൂന്ന് നാമങ്ങൾ ഒരുമിച്ചും വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Creator”. Al-Khaliq appears in Quran 39:62 and 59:24. It is distinct in wording from al-Bari and al-Musawwir, names placed together in 59:24. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-39-62",
+          "title": {
+            "ml": "ഖുർആൻ — 39:62",
+            "en": "Quran 39:62"
+          },
+          "arabic_original": "اللَّهُ خَالِقُ كُلِّ شَيْءٍ ۖ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+          "translation": {
+            "ml": "അല്ലാഹു എല്ലാ കാര്യങ്ങളുടെയും സ്രഷ്ടാവാണ്. അവൻ എല്ലാ കാര്യങ്ങളുടെയും കാര്യനിർവാഹകനാണ്.",
+            "en": "Allah is the Creator of everything, and He is the Trustee over everything."
+          },
+          "source_reference": "Quran 39:62",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya62.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-59-24",
+          "title": {
+            "ml": "ഖുർആൻ — 59:24",
+            "en": "Quran 59:24"
+          },
+          "arabic_original": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; സ്രഷ്ടാവ്; സൃഷ്ടികളെ അസ്തിത്വത്തിലേക്കു കൊണ്ടുവരുന്നവൻ; രൂപം നൽകുന്നവൻ. ഏറ്റവും നല്ല നാമങ്ങൾ അവനുള്ളതാണ്. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവന്റെ പരിശുദ്ധിയെ പ്രകീർത്തിക്കുന്നു. അവൻ പ്രതാപമുള്ളവനും യുക്തിമാനുമാണ്.",
+            "en": "He is Allah, the Creator, the One who brings creation into being, the Fashioner. The most beautiful names belong to Him. Everything in the heavens and earth glorifies Him. He is the Mighty, the Wise."
+          },
+          "source_reference": "Quran 59:24",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya24.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-106": {
+      "name_id": "PDF-HN-106",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Preserver",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Preserver. അൽ-ഹഫീള് കാത്തുസൂക്ഷിക്കുന്നവനെ സൂചിപ്പിക്കുന്നു. ഹൂദ് നബിയുടെ തന്റെ ജനതയോടുള്ള പ്രസംഗത്തിൽ «حَفِيظٌ» എന്ന വിശേഷണമാണ്; വാക്കുകളും പ്രവർത്തനങ്ങളും അല്ലാഹു നിരീക്ഷിക്കുന്നതിനെ തഫ്സീർ വിശദീകരിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Preserver”. Hafiz occurs in 11:57 in Hud's address to his people. The verse states Allah preserves and witnesses all, rather than promising immunity to a formula. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-57",
+          "title": {
+            "ml": "ഖുർആൻ — 11:57",
+            "en": "Quran 11:57"
+          },
+          "arabic_original": "فَإِن تَوَلَّوْا فَقَدْ أَبْلَغْتُكُم مَّا أُرْسِلْتُ بِهِ إِلَيْكُمْ ۚ وَيَسْتَخْلِفُ رَبِّي قَوْمًا غَيْرَكُمْ وَلَا تَضُرُّونَهُ شَيْئًا ۚ إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ പിന്തിരിഞ്ഞാൽ ഞാൻ ഏൽപ്പിക്കപ്പെട്ട സന്ദേശം നിങ്ങളെ അറിയിച്ചുകഴിഞ്ഞു. എന്റെ രക്ഷിതാവ് നിങ്ങളുടെ സ്ഥാനത്ത് മറ്റുള്ളവരെ കൊണ്ടുവരും; നിങ്ങൾ അവന് യാതൊരു ദോഷവും വരുത്തുകയില്ല. എന്റെ രക്ഷിതാവ് എല്ലാറ്റിനെയും കാത്തുസൂക്ഷിച്ച് നിരീക്ഷിക്കുന്നവനാണ്.",
+            "en": "If you turn away, I have conveyed my message. My Lord can replace you with another people, and you cannot harm Him. My Lord watches over and preserves everything."
+          },
+          "source_reference": "Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-11-57",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:57",
+            "en": "Ibn Kathir — Quran 11:57"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇവിടെ അല്ലാഹു ദാസരുടെ വാക്കുകൾക്കും പ്രവൃത്തികൾക്കും സാക്ഷിയും സൂക്ഷിപ്പുകാരനുമാണെന്ന് പറയുന്നു.",
+            "en": "Ibn Kathir describes Allah as witness and preserver of His servants' words and deeds."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-110": {
+      "name_id": "PDF-HN-110",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "variant",
+      "source_heading_english": "The Glorious",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Glorious. അൽ-മജീദ് മഹത്വമുള്ളവനെ സൂചിപ്പിക്കുന്നു. 85:15-ലെ «الْمَجِيدُ» എന്ന പദത്തിന് പാരായണവ്യത്യാസമനുസരിച്ച് അല്ലാഹുവിന്റെയോ അർശിന്റെയോ വിശേഷണമാകുന്ന വിശദീകരണം ഇബ്നു കസീറും ഖുർത്വുബിയും രേഖപ്പെടുത്തുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Glorious”. Al-Majid occurs in Quran 85:15; Ibn Kathir and al-Qurtubi note recitational variants in which al-majid grammatically qualifies Allah or the Throne. These must not be collapsed. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-85-15",
+          "title": {
+            "ml": "ഖുർആൻ — 85:15",
+            "en": "Quran 85:15"
+          },
+          "arabic_original": "ذُو الْعَرْشِ الْمَجِيدُ",
+          "translation": {
+            "ml": "അർശിന്റെ ഉടമ; മഹത്വമുള്ളവൻ.",
+            "en": "Possessor of the Throne, the Glorious."
+          },
+          "source_reference": "Quran 85:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-85-15",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 85:15",
+            "en": "Ibn Kathir — Quran 85:15"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «الْمَجِيدُ» എന്നതിൽ രണ്ട് ഖിറാഅത്ത് അടിസ്ഥാനമാക്കിയുള്ള വ്യാകരണവായനകൾ പറയുന്നു: ദൈവത്തിന്റെ വിശേഷണമോ അർശിന്റെ വിശേഷണമോ.",
+            "en": "Ibn Kathir records two canonical grammatical readings, linking al-Majid to Allah or to the Throne."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya15.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-111": {
+      "name_id": "PDF-HN-111",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "thematic",
+      "source_heading_english": "The Resurrector",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Resurrector. അൽ-ബാഇഥ് പുനരുജ്ജീവിപ്പിക്കുന്നവൻ എന്ന ആശയം 22:7-ൽ «يَبْعَثُ مَن فِي الْقُبُورِ» എന്ന ക്രിയാപ്രയോഗത്തിലാണ്. ഖബറുകളിൽനിന്നുള്ള ഉയിർത്തെഴുന്നേൽപ്പാണ് ഈ വചനത്തിന്റെ സന്ദർഭം. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Resurrector”. Quran 22:7 directly affirms resurrection from graves using the verb yab'athu; the definite noun al-Ba'ith is not printed in this verse. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-7",
+          "title": {
+            "ml": "ഖുർആൻ — 22:7",
+            "en": "Quran 22:7"
+          },
+          "arabic_original": "وَأَنَّ السَّاعَةَ آتِيَةٌ لَّا رَيْبَ فِيهَا وَأَنَّ اللَّهَ يَبْعَثُ مَن فِي الْقُبُورِ",
+          "translation": {
+            "ml": "അന്ത്യസമയം വരുമെന്നതിൽ സംശയമില്ല; ഖബറുകളിലുള്ളവരെ അല്ലാഹു ഉയിർത്തെഴുന്നേൽപ്പിക്കും.",
+            "en": "The Hour is surely coming without doubt, and Allah will resurrect those in the graves."
+          },
+          "source_reference": "Quran 22:7",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya7.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "theme_not_independent_name"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-22-7",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 22:7",
+            "en": "Ibn Kathir — Quran 22:7"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മരിച്ചവരെ ഖബറുകളിൽനിന്ന് വീണ്ടും ജീവിതത്തിലേക്ക് കൊണ്ടുവരുന്നതാണ് ഈ ആയത്തിന്റെ മുഖ്യപ്രസ്താവനയെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains the raising of the dead from graves as an affirmation of the coming Hour."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:7",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya7.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-112": {
+      "name_id": "PDF-HN-112",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Witness",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Witness. അശ്ശഹീദ് എല്ലാറ്റിനും സാക്ഷിയായവൻ എന്ന ആശയം പ്രകടമാക്കുന്നു. അൽഫത്ഹ് 48:28-ൽ «وَكَفَىٰ بِاللَّهِ شَهِيدًا» എന്ന വാക്യമാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Witness”. Quran 48:28 says Allah is sufficient as a witness, using shahidan in the accusative, within the account of sending His Messenger. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-48-28",
+          "title": {
+            "ml": "ഖുർആൻ — 48:28",
+            "en": "Quran 48:28"
+          },
+          "arabic_original": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ ۚ وَكَفَىٰ بِاللَّهِ شَهِيدًا",
+          "translation": {
+            "ml": "സന്മാർഗവും സത്യമതവുമായി തന്റെ ദൂതനെ അയച്ചത് അവനാണ്; എല്ലാ മതങ്ങൾക്കുമീതെ അതിനെ പ്രകടമാക്കുവാൻ. സാക്ഷിയായി അല്ലാഹു മതി.",
+            "en": "He is the One who sent His Messenger with guidance and the religion of truth to make it prevail over all religion. Allah is sufficient as a witness."
+          },
+          "source_reference": "Quran 48:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-114": {
+      "name_id": "PDF-HN-114",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Strong",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Strong. അൽ-ഖവിയ്യ് ശക്തിയുള്ളവൻ എന്ന നാമമാണ്. അശ്ശൂറാ 42:19-ൽ അല്ലാഹു തന്റെ ദാസന്മാരോട് ലത്വീഫ് ആണെന്നും അവൻ ശക്തനും പ്രതാപിയുമാണെന്നും പറയുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Strong”. Al-Qawiyy occurs in Quran 42:19 alongside al-Aziz in a description of divine provision, kindness and might. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-42-19",
+          "title": {
+            "ml": "ഖുർആൻ — 42:19",
+            "en": "Quran 42:19"
+          },
+          "arabic_original": "اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَن يَشَاءُ ۖ وَهُوَ الْقَوِيُّ الْعَزِيزُ",
+          "translation": {
+            "ml": "അല്ലാഹു തന്റെ ദാസന്മാരോട് സൗമ്യമായി കരുണ ചെയ്യുന്നവനാണ്. അവൻ ഉദ്ദേശിക്കുന്നവർക്ക് ഉപജീവനം നൽകുന്നു. അവൻ ശക്തനും പ്രതാപമുള്ളവനുമാണ്.",
+            "en": "Allah is gentle toward His servants. He provides for whom He wills. He is the Strong, the Mighty."
+          },
+          "source_reference": "Quran 42:19",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya19.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-115": {
+      "name_id": "PDF-HN-115",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Firm in power",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Firm in power. അൽ-മതീൻ ഉറച്ച ശക്തിയുള്ളവൻ എന്ന ദൈവിക വിശേഷണമാണ്. അദ്ദാരിയാത്ത് 51:58-ൽ «الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ» എന്ന രൂപത്തിൽ വരുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Firm in power”. Al-Matin occurs directly in Quran 51:58, alongside ar-Razzaq and the description of divine strength. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-51-58",
+          "title": {
+            "ml": "ഖുർആൻ — 51:58",
+            "en": "Quran 51:58"
+          },
+          "arabic_original": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+          "translation": {
+            "ml": "തീർച്ചയായും അല്ലാഹുവാണ് ഉപജീവനം നൽകുന്നവൻ; ശക്തിയുടെ ഉടമ; ഉറച്ച ശക്തിയുള്ളവൻ.",
+            "en": "Allah is indeed the Provider, the Possessor of strength, the Firm in power."
+          },
+          "source_reference": "Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-120": {
+      "name_id": "PDF-HN-120",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "descriptive",
+      "source_heading_english": "The Appreciative, the Rewarder",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Appreciative, the Rewarder. അശ്ശാകിർ നന്മയെ വിലമതിച്ച് പ്രതിഫലം നൽകുന്നവനാണ്. 2:158-ൽ ഹജ്ജ്/ഉംറയുടെ സ്വഫാ-മർവ സഅ്‌യ് സംബന്ധിച്ച നിയമത്തിനൊപ്പം «شَاكِرٌ عَلِيمٌ» വരുന്നു; 64:17-ൽ «شَكُورٌ حَلِيمٌ» എന്ന മറ്റൊരു രൂപമുണ്ട്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Appreciative, the Rewarder”. Quran 2:158 says Allah is Appreciative and Knowing in the context of Safa-Marwa rites. Quran 64:17 says Shakur and Halim; the two adjective forms differ. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-158",
+          "title": {
+            "ml": "ഖുർആൻ — 2:158",
+            "en": "Quran 2:158"
+          },
+          "arabic_original": "۞ إِنَّ الصَّفَا وَالْمَرْوَةَ مِن شَعَائِرِ اللَّهِ ۖ فَمَنْ حَجَّ الْبَيْتَ أَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ اللَّهَ شَاكِرٌ عَلِيمٌ",
+          "translation": {
+            "ml": "സ്വഫായും മർവയും അല്ലാഹുവിന്റെ അടയാളങ്ങളാണ്. ഹജ്ജോ ഉംറയോ നിർവഹിക്കുന്നവർ അവയ്ക്കിടയിൽ സഅ്‌യ് ചെയ്യുന്നതിൽ തെറ്റില്ല. സ്വമേധയാ നന്മ ചെയ്യുന്നവരുടെ പ്രവർത്തനം അല്ലാഹു വിലമതിക്കുകയും അറിയുകയും ചെയ്യുന്നു.",
+            "en": "Safa and Marwa are among Allah's symbols; there is no blame in moving between them during Hajj or Umrah. Whoever voluntarily does good, Allah is Appreciative and Knowing."
+          },
+          "source_reference": "Quran 2:158",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya158.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        },
+        {
+          "id": "quran-64-17",
+          "title": {
+            "ml": "ഖുർആൻ — 64:17",
+            "en": "Quran 64:17"
+          },
+          "arabic_original": "إِن تُقْرِضُوا اللَّهَ قَرْضًا حَسَنًا يُضَاعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ ۚ وَاللَّهُ شَكُورٌ حَلِيمٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ അല്ലാഹുവിന് നല്ല കടം നൽകിയാൽ അവൻ അത് നിങ്ങൾക്കായി ഇരട്ടിപ്പിക്കുകയും നിങ്ങൾക്ക് പൊറുത്തുതരുകയും ചെയ്യും. അല്ലാഹു നന്ദിയോടെ പ്രതിഫലം നൽകുന്നവനും സഹനമുള്ളവനുമാണ്.",
+            "en": "If you lend Allah a good loan, He will multiply it for you and forgive you. Allah is Appreciative and Forbearing."
+          },
+          "source_reference": "Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-2-158",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:158",
+            "en": "Ibn Kathir — Quran 2:158"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വഫാ-മർവയുടെ സഅ്‌യ് ചടങ്ങിന്റെ ചരിത്രവും «شَاكِرٌ عَلِيمٌ» നന്മയ്ക്ക് അർഹമായ പ്രതിഫലം നിഷേധിക്കാത്തതുമാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains the Safa-Marwa ritual context and that Allah rewards even small acts of good."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:158",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya158.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-123": {
+      "name_id": "PDF-HN-123",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "direct",
+      "source_heading_english": "The Most Generous",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Most Generous. അൽ-അക്രം ഏറ്റവും മഹാദാനശീലനായവൻ എന്ന അർഥമാണ്. അൽഅലഖ് 96:3-ലെ «وَرَبُّكَ الْأَكْرَمُ» ആദ്യ വഹ്‌യിന്റെ അറിവ്/വായനാ സാഹചര്യത്തിൽ വരുന്നു; ഇബ്നു കസീർ അറിവ് പഠിപ്പിക്കുന്നതിനെ അല്ലാഹുവിന്റെ ഔദാര്യമായി വിശദീകരിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Most Generous”. Al-Akram is explicit in Quran 96:3, within the command to read and the gift of teaching. Ibn Kathir relates divine generosity to granting knowledge. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-96-3",
+          "title": {
+            "ml": "ഖുർആൻ — 96:3",
+            "en": "Quran 96:3"
+          },
+          "arabic_original": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ",
+          "translation": {
+            "ml": "വായിക്കുക; നിന്റെ രക്ഷിതാവാണ് ഏറ്റവും മഹാദാനശീലൻ.",
+            "en": "Read! Your Lord is the Most Generous."
+          },
+          "source_reference": "Quran 96:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura96-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "source_wording"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-96-3",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 96:3",
+            "en": "Ibn Kathir — Quran 96:3"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അറിവ് പഠിപ്പിച്ച് മനുഷ്യരെ ആദരിച്ചതും അല്ലാഹുവിന്റെ മഹത്തായ ഔദാര്യത്തിന്റെ ഭാഗമാണെന്ന് പറയുന്നു.",
+            "en": "Ibn Kathir relates the description of al-Akram to Allah teaching humanity knowledge."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 96:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura96-aya3.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-124": {
+      "name_id": "PDF-HN-124",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "The Most Merciful",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Most Merciful. «അർഹമുർറാഹിമീൻ» കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും കരുണയുള്ളവൻ എന്ന പ്രയോഗമാണ്. അയ്യൂബ് നബി ദുരിതത്തിനിടയിൽ അല്ലാഹുവിനോട് അപേക്ഷിക്കുമ്പോഴുള്ള പൂർണ ആയത്താണ് 21:83; ചികിത്സ ഉപേക്ഷിക്കാനുള്ള നിർദേശം ഇതിൽ ഇല്ല. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Most Merciful”. Arham ar-rahimin is the superlative expression in Ayyub's prayer amid affliction (21:83). The verse gives no separate repeated count or guaranteed treatment outcome. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-21-83",
+          "title": {
+            "ml": "ഖുർആൻ — 21:83",
+            "en": "Quran 21:83"
+          },
+          "arabic_original": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+          "translation": {
+            "ml": "അയ്യൂബ് തന്റെ രക്ഷിതാവിനെ വിളിച്ചു: എനിക്ക് പ്രയാസം ബാധിച്ചിരിക്കുന്നു; കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും കരുണയുള്ളവൻ നീയാണ്.",
+            "en": "And remember Ayyub when he called on his Lord: Harm has touched me, and You are the Most Merciful of those who show mercy."
+          },
+          "source_reference": "Quran 21:83",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya83.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-21-83",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 21:83",
+            "en": "Ibn Kathir — Quran 21:83"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അയ്യൂബ് നബിയുടെ ദുരിതവും സഹനവും വിവരിക്കുന്നു. ആ അനുബന്ധ കഥകളിൽ പറയുന്ന എല്ലാ വിശദാംശങ്ങളെയും ഒരേ നിലയിലുള്ള സഹീഹ് ഹദീസ് ആക്കാനാവില്ല.",
+            "en": "Ibn Kathir narrates Ayyub's trials and patience; details in attached historical reports should not automatically be treated as authenticated Prophetic hadith."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 21:83",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya83.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-125": {
+      "name_id": "PDF-HN-125",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "The Wisest of judges",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: The Wisest of judges. «അഹ്കമുൽ ഹാകിമീൻ» വിധികർത്താക്കളിൽ ഏറ്റവും ഉത്തമൻ എന്ന പ്രയോഗമാണ്. അത്തീൻ 95:8-ൽ അല്ലാഹുവിന്റെ അന്തിമവിധിയെയാണ് അഭിസംബോധന ചെയ്യുന്നത്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “The Wisest of judges”. The expression ahkam al-hakimin appears at Quran 95:8, affirming Allah as the wisest of judges; no private ritual count is attached to it. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-95-8",
+          "title": {
+            "ml": "ഖുർആൻ — 95:8",
+            "en": "Quran 95:8"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+          "translation": {
+            "ml": "അല്ലാഹു വിധികർത്താക്കളിൽ ഏറ്റവും നല്ല വിധികർത്താവല്ലയോ?",
+            "en": "Is Allah not the wisest of judges?"
+          },
+          "source_reference": "Quran 95:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura95-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-130": {
+      "name_id": "PDF-HN-130",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "There is no deity worthy of worship except Him",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: There is no deity worthy of worship except Him. «ലാ ഇലാഹ ഇല്ലാ ഹുവ» അല്ലാഹുവല്ലാതെ ആരാധനയ്ക്കർഹനില്ല എന്ന വിശ്വാസപ്രഖ്യാപനമാണ്. 20:8, 2:255 എന്നിവയിൽ വാക്യം വരുന്നു; ഇത് സ്വതന്ത്ര നാമമെന്നതിനെക്കാൾ തൗഹീദിന്റെ പ്രഖ്യാപനമാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “There is no deity worthy of worship except Him”. La ilaha illa Hu means there is no deity worthy of worship except Him. It appears in Quran 20:8 and Ayat al-Kursi, and is a confession of monotheism, not an isolated Name. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-20-8",
+          "title": {
+            "ml": "ഖുർആൻ — 20:8",
+            "en": "Quran 20:8"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+          "translation": {
+            "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. ഏറ്റവും നല്ല നാമങ്ങൾ അവന്നുള്ളതാണ്.",
+            "en": "Allah—there is no deity worthy of worship except Him. To Him belong the Most Beautiful Names."
+          },
+          "source_reference": "Quran 20:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        },
+        {
+          "id": "quran-2-255",
+          "title": {
+            "ml": "ഖുർആൻ — 2:255",
+            "en": "Quran 2:255"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          "translation": {
+            "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+            "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+          },
+          "source_reference": "Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-132": {
+      "name_id": "PDF-HN-132",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "All praise belongs to Allah",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: All praise belongs to Allah. «അൽഹംദുലില്ലാഹ്» സ്തുതികളെല്ലാം അല്ലാഹുവിനാണെന്ന പ്രസ്താവനയാണ്. അൽഫാതിഹ 1:2-ൽ ലോകരക്ഷിതാവിനാണ് സ്തുതി എന്നും ചേർത്തിരിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “All praise belongs to Allah”. Alhamdulillah is the declaration that praise belongs to Allah, appearing in al-Fatihah 1:2. It is a formula of praise rather than a distinct noun-name. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-1-2",
+          "title": {
+            "ml": "ഖുർആൻ — 1:2",
+            "en": "Quran 1:2"
+          },
+          "arabic_original": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "translation": {
+            "ml": "സർവലോകങ്ങളുടെയും രക്ഷിതാവായ അല്ലാഹുവിനാണ് എല്ലാ സ്തുതിയും.",
+            "en": "All praise belongs to Allah, Lord of all worlds."
+          },
+          "source_reference": "Quran 1:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-135": {
+      "name_id": "PDF-HN-135",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "What Allah wills",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: What Allah wills. «മാ ശാ അല്ലാഹ്, ലാ ഖുവ്വത്ത ഇല്ലാ ബില്ലാഹ്» എന്ന പ്രയോഗം അൽകഹ്ഫ് 18:39-ലെ തോട്ടത്തിന്റെ കഥയിലാണ്. സമ്പത്തിലും സന്താനങ്ങളിലും അഹങ്കാരം ഒഴിവാക്കി അനുഗ്രഹം അല്ലാഹുവിനാണെന്ന് തിരിച്ചറിയുന്ന സന്ദർഭമാണ്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “What Allah wills”. The words 'what Allah wills; no power except through Allah' appear in Quran 18:39 as counsel against pride in gardens, wealth and descendants, not a fixed wealth-increase ritual. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-18-39",
+          "title": {
+            "ml": "ഖുർആൻ — 18:39",
+            "en": "Quran 18:39"
+          },
+          "arabic_original": "وَلَوْلَا إِذْ دَخَلْتَ جَنَّتَكَ قُلْتَ مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ ۚ إِن تَرَنِ أَنَا أَقَلَّ مِنكَ مَالًا وَوَلَدًا",
+          "translation": {
+            "ml": "നിന്റെ തോട്ടത്തിൽ പ്രവേശിച്ചപ്പോൾ ‘അല്ലാഹു ഉദ്ദേശിച്ചതാണ്; അല്ലാഹുവിനാലല്ലാതെ ശക്തിയില്ല’ എന്ന് എന്തുകൊണ്ട് നീ പറഞ്ഞില്ല? സമ്പത്തിലും സന്തതിയിലും എന്നെ നിന്നെക്കാൾ കുറവുള്ളവനായി നീ കാണുന്നുവെങ്കിലും —",
+            "en": "When you entered your garden, why did you not say: What Allah wills; there is no strength except through Allah? Even if you see me as having less wealth and children than you—"
+          },
+          "source_reference": "Quran 18:39",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya39.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-136": {
+      "name_id": "PDF-HN-136",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "We belong to Allah, and to Him we return",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: We belong to Allah, and to Him we return. «ഇന്നാ ലില്ലാഹി വഇന്നാ ഇലൈഹി രാജിഊൻ» ദുരന്തമോ നഷ്ടമോ വന്നപ്പോൾ വിശ്വാസികൾ പറയുന്ന വാചകമാണ്. അൽബഖറ 2:156-ൽ പ്രതിസന്ധിയിൽ ക്ഷമിക്കുകയും അല്ലാഹുവിലേക്കുള്ള മടങ്ങിവരവ് അംഗീകരിക്കുകയും ചെയ്യുന്നതാണ് സന്ദർഭം. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “We belong to Allah, and to Him we return”. Inna lillahi wa inna ilayhi raji'un is the Quranic phrase of belonging and return to Allah in hardship, in Quran 2:156. It is not limited to one kind of loss. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-156",
+          "title": {
+            "ml": "ഖുർആൻ — 2:156",
+            "en": "Quran 2:156"
+          },
+          "arabic_original": "الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+          "translation": {
+            "ml": "തങ്ങൾക്ക് ദുരിതം ബാധിക്കുമ്പോൾ അവർ പറയുന്നു: ഞങ്ങൾ അല്ലാഹുവിനുള്ളവരാണ്; അവനിലേക്കാണ് ഞങ്ങൾ മടങ്ങുന്നത്.",
+            "en": "When a calamity strikes them, they say: We belong to Allah, and to Him we return."
+          },
+          "source_reference": "Quran 2:156",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya156.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-2-156",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:156",
+            "en": "Ibn Kathir — Quran 2:156"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രയാസമുണ്ടാകുമ്പോൾ മനുഷ്യൻ അല്ലാഹുവിന്റെ ഉടമസ്ഥതയും പരലോകമടങ്ങിവരവും അംഗീകരിക്കുന്നതാണെന്ന് വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains that the afflicted acknowledge belonging to Allah and returning to Him."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:156",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya156.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-137": {
+      "name_id": "PDF-HN-137",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "I seek Allah's forgiveness",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: I seek Allah's forgiveness. «അസ്തഗ്ഫിറുല്ലാഹ്» പാപമോചനം തേടുന്ന വാചകമാണ്; 71:10-ൽ നൂഹ് നബി തന്റെ ജനത്തോട് രക്ഷിതാവിനോട് ഇസ്തിഗ്ഫാർ ചെയ്യാൻ പറയുന്നു. ആ ആയത്തിലെ അറബി «اسْتَغْفِرُوا رَبَّكُمْ» ആണ്, «أَسْتَغْفِرُ اللَّهَ» അല്ല; രണ്ടും ഒറ്റമൂലപാഠമെന്ന് പറയരുത്. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “I seek Allah's forgiveness”. The command in Quran 71:10 is 'istaghfiru rabbakum', while the first-person formula 'astaghfirullah' appears in Prophetic prayer accounts. They must not be presented as identical textual quotations. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-71-10",
+          "title": {
+            "ml": "ഖുർആൻ — 71:10",
+            "en": "Quran 71:10"
+          },
+          "arabic_original": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+          "translation": {
+            "ml": "അപ്പോൾ ഞാൻ പറഞ്ഞു: നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക. തീർച്ചയായും അവൻ വീണ്ടും വീണ്ടും പൊറുത്തുതരുന്നവനാണ്.",
+            "en": "Then I said: Seek forgiveness from your Lord; He is indeed Oft-Forgiving."
+          },
+          "source_reference": "Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-71-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 71:10",
+            "en": "Ibn Kathir — Quran 71:10"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നൂഹ് നബിയുടെ തൗബയിലേക്കുള്ള ആഹ്വാനവും അനുബന്ധ മഴയുടെ വിവരണവും വിശദീകരിക്കുന്നു; ഒരു നിശ്ചിത എണ്ണത്തിലുള്ള ധനലാഭ-വസീഫ അയാൾ നൽകുന്നില്ല.",
+            "en": "Ibn Kathir discusses Nuh's appeal to repentance and the following account of rain; he does not give a universal fixed-count wealth formula."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    },
+    "PDF-HN-139": {
+      "name_id": "PDF-HN-139",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "Our Lord, grant us good in this world",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: Our Lord, grant us good in this world. «റബ്ബനാ ആതിനാ ഫിദ്ദുന്യാ ഹസനതൻ» ഇഹപരലോകങ്ങളിലെ നന്മയും നരകശിക്ഷയിൽനിന്നുള്ള രക്ഷയും ചോദിക്കുന്ന ഖുർആൻ ദുആയാണ്. ആദ്യവാക്കുകൾ മാത്രം അല്ല, 2:201-ലെ മുഴുവൻ അപേക്ഷയും കാർഡിൽ സൂക്ഷിക്കുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “Our Lord, grant us good in this world”. Quran 2:201 contains the complete prayer for good in this world and the Hereafter and protection from the Fire. The card retains the entire prayer rather than only its opening words. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-201",
+          "title": {
+            "ml": "ഖുർആൻ — 2:201",
+            "en": "Quran 2:201"
+          },
+          "arabic_original": "وَمِنْهُم مَّن يَقُولُ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "translation": {
+            "ml": "അവരിൽ ചിലർ പറയുന്നു: ഞങ്ങളുടെ രക്ഷിതാവേ, ഈ ലോകത്തും പരലോകത്തും ഞങ്ങൾക്ക് നന്മ നൽകേണമേ; നരകശിക്ഷയിൽനിന്ന് ഞങ്ങളെ കാത്തുരക്ഷിക്കേണമേ.",
+            "en": "Among them are those who say: Our Lord, grant us good in this world and good in the hereafter, and protect us from the punishment of the Fire."
+          },
+          "source_reference": "Quran 2:201",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya201.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-140": {
+      "name_id": "PDF-HN-140",
+      "reviewed_on": "2026-10-10",
+      "entry_kind": "formula",
+      "source_heading_english": "My Lord, make me one who maintains prayer",
+      "coverage": {
+        "ml": "ആദ്യ ഗവേഷണഘട്ടം: താഴെ നൽകിയിരിക്കുന്ന ഖുർആൻ പാഠങ്ങളും ഇവിടെ പ്രസക്തമായിടത്ത് മാത്രം ഉറവിടപരിശോധന നടത്തിയ തഫ്സീറും. മറ്റു ഗ്രന്ഥങ്ങൾ, ഹദീസ് നിവേദനങ്ങൾ, എല്ലാ ഖവാസ്സ്/കളങ്ങൾ എന്നിവയുടെ പൂർണ്ണ ഗവേഷണം പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത എണ്ണം, ദിവസം, മണിക്കൂർ, വാഗ്ദാനഫലം എന്നിവ ചേർത്തിട്ടില്ല.",
+        "en": "First-pass Quran source review and only the selected tafsir actually consulted. Full hadith, book, khawass and historical squares research remains incomplete. No count, day, time or promised outcome has been supplied when absent from the cited verse."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ തലക്കെട്ടിന്റെ അർഥം: My Lord, make me one who maintains prayer. «റബ്ബിജ്അൽനീ മുഖീമസ്സലാത്ത്» ഇബ്റാഹീം നബി നമസ്കാരം നിലനിർത്തുന്നവനാക്കാനും സന്തതികളിൽ അങ്ങനെ ആളുകൾ ഉണ്ടാകാനും നടത്തിയ ദുആയാണ്. 14:40-ൽ അവസാനത്തിൽ «رَبَّنَا وَتَقَبَّلْ دُعَاءِ» ഉൾപ്പെടുന്നു. ഈ വചനങ്ങൾ വിശദീകരണവും വിശ്വാസപാഠവുമാണ്; വേറിട്ട സ്ഥിരമായ എണ്ണം, സമയം, ദിവസങ്ങൾ, കളങ്ങൾ എന്നിവ ഈ ഉദ്ധരണികളിൽ നിർദേശിക്കുന്നില്ല.",
+        "en": "The stored heading is glossed as “My Lord, make me one who maintains prayer”. Ibrahim's prayer in Quran 14:40 seeks steadfast establishment of prayer for himself and descendants, ending 'Our Lord, accept my supplication'. The complete verse is preserved. These are scriptural descriptions and evidence, not an independently prescribed numbered regimen."
+      },
+      "evidence": [
+        {
+          "id": "quran-14-40",
+          "title": {
+            "ml": "ഖുർആൻ — 14:40",
+            "en": "Quran 14:40"
+          },
+          "arabic_original": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+          "translation": {
+            "ml": "എന്റെ രക്ഷിതാവേ, എന്നെയും എന്റെ സന്തതികളിൽപ്പെട്ടവരെയും നമസ്കാരം മുറപ്രകാരം നിർവഹിക്കുന്നവരാക്കേണമേ. ഞങ്ങളുടെ രക്ഷിതാവേ, എന്റെ പ്രാർത്ഥന സ്വീകരിക്കേണമേ.",
+            "en": "My Lord, make me one who maintains prayer, and make some of my descendants likewise. Our Lord, accept my supplication."
+          },
+          "source_reference": "Quran 14:40",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya40.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quranic_phrase"
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "ibn-kathir-14-40",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 14:40",
+            "en": "Ibn Kathir — Quran 14:40"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ദുആയെ നമസ്കാരം സ്ഥിരമായി നിലനിർത്താനും അതിന്റെ കടമകൾ പാലിക്കാനും അപേക്ഷിക്കുന്നതായി വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir interprets the plea as maintaining prayer and fulfilling its obligations."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 14:40",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya40.html",
+          "review_status": "checked_against_digital_text"
+        }
+      ],
+      "topics": []
+    }
+  }
+}
