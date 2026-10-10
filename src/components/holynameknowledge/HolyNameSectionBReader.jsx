@@ -20,6 +20,7 @@ import topicalDuasIII from '@/data/holyNamesSectionBTopicalDuasIII.json';
 import propheticDhikr from '@/data/holyNamesSectionBPropheticDhikr.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import shamsCardBridge from '@/data/holyNamesShamsCardBridge.json';
+import shamsEditionVariants from '@/data/holyNamesShamsEditionVariants.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
 import { sectionBReading } from '@/lib/holyNames/sectionBReading';
@@ -41,6 +42,21 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
     {entry.multiple_verses?.length > 0 && <p className="text-xs text-white/50">{t(entry.translation_note)}</p>}
     {entry.source_passage && <div className="space-y-3"><p className="text-xs text-yellow-200">{ml ? 'ഈ ഭാഗത്തിന്റെ മൂല അറബി പാഠം' : 'Original Arabic of this source passage'}</p><Arabic text={entry.source_passage} />{t(entry.passage_translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.passage_translation)}</p>}<p className="text-xs text-white/50 leading-relaxed">{t(entry.source_scope)}</p></div>}
     {t(entry.translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.translation)}</p>}
+    {entry.edition_variants && <details className="rounded-xl border border-amber-400/30 bg-amber-950/15 px-3 py-2">
+      <summary className="cursor-pointer font-semibold text-amber-200 text-sm">{ml ? 'മറ്റു പതിപ്പുകളിലെ പാഠഭേദങ്ങൾ — ഒത്തുനോക്കേണ്ടത്' : 'Textual variants in another edition — requires collation'}</summary>
+      <p className="mt-2 text-xs text-amber-100/85 leading-relaxed">{t(entry.edition_scope)}</p>
+      <p className="mt-1 text-xs text-amber-100/75 leading-relaxed">{t(entry.edition_note)}</p>
+      {entry.edition_variants.variants.map((variant, index) => <div key={index} className="mt-3 pt-3 border-t border-amber-500/20 space-y-2">
+        <p className="text-xs text-white/70">{ml ? 'കാർഡിൽ സൂക്ഷിച്ച പാഠം' : 'Preserved original reading'}</p>
+        <Arabic text={variant.stored_phrase} />
+        <p className="text-xs text-white/70">{ml ? 'മറ്റു ഡിജിറ്റൽ പതിപ്പിലെ പാഠം' : 'Alternative digital-edition reading'}</p>
+        <Arabic text={variant.alternative_phrase} />
+        <p className="text-sm text-white/85 leading-relaxed">{t(variant.note)}</p>
+      </div>)}
+      <a className="block text-xs underline text-yellow-200 mt-3 break-all" href={entry.edition_variants.compared_source_url} target="_blank" rel="noopener noreferrer">{ml ? 'മറ്റു പതിപ്പിന്റെ ഉറവിടം' : 'Alternative edition source'}: {entry.edition_variants.compared_source_url}</a>
+      {entry.edition_variants.other_page_url && <a className="block text-xs underline text-yellow-200 mt-2 break-all" href={entry.edition_variants.other_page_url} target="_blank" rel="noopener noreferrer">{ml ? 'തുടരുന്ന പേജ്' : 'Continued page'}: {entry.edition_variants.other_page_url}</a>}
+    </details>}
+
     {entry.legacy_body && <div className="rounded-lg border border-amber-500/20 bg-amber-950/20 p-3"><p className="text-xs text-amber-200 mb-1">{ml ? 'പഴയ കാർഡ് രേഖയിലെ പാഠം' : 'Legacy card text'}</p><p className="text-white/80 leading-relaxed whitespace-pre-wrap">{entry.legacy_body}</p></div>}
     {entry.review_status === 'pending_source_recheck' && <p className="text-xs text-amber-200/90">{ml ? 'സ്ഥിതി: ഉറവിടം വീണ്ടും പരിശോധിക്കണം — ഇത് സ്ഥിരീകരിച്ച തെളിവായി കണക്കാക്കരുത്.' : 'Status: source recheck required — do not treat this as verified evidence.'}{entry.legacy_confidence && ` ${ml ? 'പഴയ സ്ഥിതി: ' : 'Legacy status: '}${entry.legacy_confidence}`}</p>}
     {topic && <div className="space-y-3 border-t border-white/10 pt-3">
@@ -99,6 +115,9 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
       const name = accountId.split('-').slice(4).join('-');
       return {
         id: accountId,
+        edition_variants: shamsEditionVariants.entries[accountId] || null,
+        edition_scope: shamsEditionVariants.scope,
+        edition_note: shamsEditionVariants.edition_note,
         title: { ml: `ശംസ് അൽമആരിഫ് — «${name}» — അച്ചടി പേജ് ${account.source_page}`,
           en: `Shams al-Maarif — ${name} — printed page ${account.source_page}` },
         arabic_original: account.arabic_original,
