@@ -1,0 +1,952 @@
+{
+  "PDF-HN-025": {
+    "name_id": "PDF-HN-025",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അസ്-സമീഅ് എന്ന നാമം അല്ലാഹുവിന്റെ എല്ലാം കേൾക്കുന്ന അറിവിനെ സൂചിപ്പിക്കുന്നു. ശബ്ദമോ ഭാഷയോ വ്യത്യാസപ്പെട്ടാലും അവന്റെ കേൾവി സൃഷ്ടികളുടെ കേൾവിയോട് ഉപമിക്കാനാവില്ല. അശ്ശൂറാ 42:11-ൽ 'അവനെപ്പോലെ ഒന്നുമില്ല' എന്നതിനോടൊപ്പം അസ്-സമീഅ്, അൽ-ബസ്വീർ എന്നിവ വരുന്നു.",
+      "en": "As-Sami denotes Allah's complete hearing. The Quran places hearing alongside sight while denying any likeness between Allah and creation; it does not support treating divine hearing as a human physical faculty."
+    },
+    "evidence": [
+      {
+        "id": "quran-42-11",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 42:11",
+          "en": "Quran 42:11"
+        },
+        "arabic_original": "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ ۚ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَمِنَ الْأَنْعَامِ أَزْوَاجًا ۖ يَذْرَؤُكُمْ فِيهِ ۚ لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
+        "translation": {
+          "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും സ്രഷ്ടാവ്. നിങ്ങൾക്കായി നിങ്ങളുടെ വർഗത്തിൽനിന്ന് ഇണകളെയും കന്നുകാലികളിൽനിന്ന് ഇണകളെയും അവൻ ഉണ്ടാക്കി. അതിലൂടെ അവൻ നിങ്ങളെ പെരുപ്പിക്കുന്നു. അവനെപ്പോലെ ഒന്നുമില്ല. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
+          "en": "Originator of the heavens and earth. He made mates for you from among yourselves, and pairs among livestock; through this He multiplies you. Nothing is like Him. He is the All-Hearing, the All-Seeing."
+        },
+        "source_reference": "Quran 42:11",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-42-11",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 42:11",
+          "en": "Ibn Kathir's explanation — Quran 42:11"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ഇവിടെ സൃഷ്ടികളിൽ ഒരാളോടും ഉപമിക്കാനാകാത്ത അല്ലാഹുവിന്റെ ഏകതയെ വിശദീകരിക്കുന്നു. കേൾവി എന്ന വിശേഷണം സൃഷ്ടിയോട് സാദൃശ്യം കൽപ്പിക്കുന്നതായി ഇവിടെ കാണരുത്.",
+          "en": "Ibn Kathir explains that nothing resembles Allah. The name affirms divine hearing without making it analogous to creaturely hearing."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 42:11",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-026": {
+    "name_id": "PDF-HN-026",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ബസ്വീർ എന്ന നാമം എല്ലാ കാര്യങ്ങളും കാണുന്നവനെന്ന അർഥം സൂചിപ്പിക്കുന്നു. ഖുർആൻ 42:11-ൽ അസ്-സമീഅിനൊപ്പം വരുന്നു; അതേ ആയത്ത് സൃഷ്ടികളുമായി യാതൊരു സാമ്യവും ഇല്ലെന്ന് പറയുന്നു. ഒരു നിശ്ചിത സംഖ്യ ചൊല്ലിയാൽ കാണാത്തത് കാണാനാകുമെന്ന അവകാശവാദം ഈ ആയത്തിൽ ഇല്ല.",
+      "en": "Al-Basir denotes the All-Seeing, paired with al-Sami in Quran 42:11. The verse denies resemblance between Allah and creation; it does not promise supernatural perception through a special repetition count."
+    },
+    "evidence": [
+      {
+        "id": "quran-42-11",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 42:11",
+          "en": "Quran 42:11"
+        },
+        "arabic_original": "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ ۚ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَمِنَ الْأَنْعَامِ أَزْوَاجًا ۖ يَذْرَؤُكُمْ فِيهِ ۚ لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
+        "translation": {
+          "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും സ്രഷ്ടാവ്. നിങ്ങൾക്കായി നിങ്ങളുടെ വർഗത്തിൽനിന്ന് ഇണകളെയും കന്നുകാലികളിൽനിന്ന് ഇണകളെയും അവൻ ഉണ്ടാക്കി. അതിലൂടെ അവൻ നിങ്ങളെ പെരുപ്പിക്കുന്നു. അവനെപ്പോലെ ഒന്നുമില്ല. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
+          "en": "Originator of the heavens and earth. He made mates for you from among yourselves, and pairs among livestock; through this He multiplies you. Nothing is like Him. He is the All-Hearing, the All-Seeing."
+        },
+        "source_reference": "Quran 42:11",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-42-11",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 42:11",
+          "en": "Ibn Kathir's explanation — Quran 42:11"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ സൃഷ്ടികളിൽ ഒരാളും അല്ലാഹുവിന് തുല്യനല്ല എന്ന വാക്യം അടിസ്ഥാനമാക്കി തഫ്സീർ ചെയ്യുന്നു. അല്ലാഹുവിന്റെ കാണൽ മനുഷ്യന്റെ ഇന്ദ്രിയകാഴ്ചയെന്ന രീതിയിൽ പരിമിതപ്പെടുത്തരുത്.",
+          "en": "Ibn Kathir emphasizes God's incomparability; the predicate 'Seeing' should not be reduced to a human sensory mechanism."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 42:11",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya11.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-030": {
+    "name_id": "PDF-HN-030",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-വദൂദ് സ്നേഹപൂർവ്വമായ ദൈവിക കരുണയും അടുപ്പവും സൂചിപ്പിക്കുന്നു. അൽ-ബുറൂജ് 85:14-ൽ അൽ-ഗഫൂറിനൊപ്പം വരുന്നു. ഹൂദ് 11:90-ൽ ശുഐബ് നബി തന്റെ ജനതയോട് ഇസ്തിഗ്ഫാറും തൗബയും ആവശ്യപ്പെട്ട് അല്ലാഹു റഹീമും വദൂദുമാണെന്ന് പറയുന്നു.",
+      "en": "Al-Wadud conveys Allah's loving mercy. Quran 85:14 pairs the name with the All-Forgiving; 11:90 places loving mercy in Shuayb's call to ask forgiveness and turn back to Allah."
+    },
+    "evidence": [
+      {
+        "id": "quran-85-14",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 85:14",
+          "en": "Quran 85:14"
+        },
+        "arabic_original": "وَهُوَ الْغَفُورُ الْوَدُودُ",
+        "translation": {
+          "ml": "അവൻ വളരെ പൊറുക്കുന്നവനും സ്നേഹമുള്ളവനുമാണ്.",
+          "en": "He is the All-Forgiving, the Loving."
+        },
+        "source_reference": "Quran 85:14",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya14.html",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-11-90",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 11:90",
+          "en": "Quran 11:90"
+        },
+        "arabic_original": "وَاسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
+        "translation": {
+          "ml": "നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക; തുടർന്ന് അവനിലേക്കു പശ്ചാത്തപിച്ചു മടങ്ങുക. എന്റെ രക്ഷിതാവ് കരുണാനിധിയും സ്നേഹമുള്ളവനുമാണ്.",
+          "en": "Seek your Lord’s forgiveness, then turn to Him in repentance. My Lord is Merciful and Loving."
+        },
+        "source_reference": "Quran 11:90",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya90.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-85-14",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 85:14",
+          "en": "Ibn Kathir's explanation — Quran 85:14"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 85:14-ൽ ഇബ്നു അബ്ബാസ് മുതലായവരിൽനിന്ന് അൽ-വദൂദിനെ സ്നേഹമുള്ളവൻ എന്ന രീതിയിൽ വിശദീകരിക്കുന്നു; 11:90-ൽ പശ്ചാത്തപിക്കുന്നവരോടുള്ള ദൈവിക കരുണയെ അദ്ദേഹം സൂചിപ്പിക്കുന്നു.",
+          "en": "Ibn Kathir relays the explanation of al-Wadud as loving/beloved and in Quran 11:90 relates it to Allah's kindness to those who repent."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 85:14",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya14.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-062": {
+    "name_id": "PDF-HN-062",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഹയ്യ് എന്നത് ഒരിക്കലും മരിക്കാത്ത, ആരംഭമോ അവസാനമോ ഇല്ലാത്ത യഥാർഥ ജീവൻ ഉള്ളവനെന്ന ദൈവിക വിശേഷണമാണ്. ആയത്തുൽ കുർസിയിൽ അൽ-ഖയ്യൂമുമായി ചേർന്ന് വരുന്നു; മയക്കവും ഉറക്കവും അവനെ ബാധിക്കില്ലെന്നും പറയുന്നു.",
+      "en": "Al-Hayy is the Ever-Living: divine life neither depends on creation nor passes away. Ayat al-Kursi pairs it with al-Qayyum and explicitly denies drowsiness or sleep."
+    },
+    "evidence": [
+      {
+        "id": "quran-2-255",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 2:255",
+          "en": "Quran 2:255"
+        },
+        "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "translation": {
+          "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+          "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+        },
+        "source_reference": "Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-2-255",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:255",
+          "en": "Ibn Kathir's explanation — Quran 2:255"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ അൽ-ഹയ്യ് സ്വയം നിത്യജീവനുള്ളവനും അൽ-ഖയ്യൂം മറ്റുള്ളതെല്ലാം നിലനിർത്തുന്നവനുമാണെന്ന് വ്യത്യാസപ്പെടുത്തി വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir distinguishes al-Hayy as living eternally in Himself from al-Qayyum as sustaining all others."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-063": {
+    "name_id": "PDF-HN-063",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഖയ്യൂം എല്ലാ സൃഷ്ടികളെയും പരിപാലിച്ചു നിലനിർത്തുന്നവനാണ്. ആകാശഭൂമികളുള്ളതെല്ലാം അവനുള്ളതാണെന്നും അവയുടെ പരിപാലനം അവന് പ്രയാസമല്ലെന്നും അൽ-ബഖറ 2:255-ൽ വിശദമാക്കുന്നു. അൽ-ഹയ്യ് എന്ന നാമത്തോട് ചേർന്നാണ് ഈ ആയത്തിൽ വരുന്നത്.",
+      "en": "Al-Qayyum is the One by whom all beings subsist. Quran 2:255 states that all creation belongs to Allah and preserving heaven and earth does not tire Him. It is coupled with al-Hayy."
+    },
+    "evidence": [
+      {
+        "id": "quran-2-255",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 2:255",
+          "en": "Quran 2:255"
+        },
+        "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "translation": {
+          "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+          "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+        },
+        "source_reference": "Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-2-255",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:255",
+          "en": "Ibn Kathir's explanation — Quran 2:255"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ പ്രകാരം സൃഷ്ടികളെല്ലാം അല്ലാഹുവിനെ ആശ്രയിച്ചിരിക്കുന്നു; ഉറക്കമോ മയക്കമോ ബാധിക്കാത്തതും അവന്റെ ഖയ്യൂമിയ്യത്തിന്റെ പൂർണ്ണതയിൽപ്പെടുന്നു.",
+          "en": "Ibn Kathir describes all beings as dependent on Him, and freedom from slumber as an expression of perfect sustaining care."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-064": {
+    "name_id": "PDF-HN-064",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-വാഹിദ് — ഏകദൈവം — സൃഷ്ടികളിൽ പങ്കാളിയില്ലാത്ത അല്ലാഹുവിന്റെ ഏകതയാണ് സൂചിപ്പിക്കുന്നത്. അർറഅ്ദ് 13:16-ൽ സൃഷ്ടിയുടെ അധികാരം പൂർണ്ണമായും അല്ലാഹുവിന്റേതാണെന്ന് വിവരിച്ചശേഷം «الْوَاحِدُ الْقَهَّارُ» എന്നു വരുന്നു. അൽ-അഹദ് എന്ന മറ്റൊരു നാമവുമായുള്ള പദരൂപം ഒരുപോലെയല്ല.",
+      "en": "Al-Wahid declares divine oneness without partners. Quran 13:16 ends by naming Allah the One, the Overpowering. The linguistic form differs from al-Ahad in Surah al-Ikhlas."
+    },
+    "evidence": [
+      {
+        "id": "quran-13-16-excerpt",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 13:16 (ഭാഗം)",
+          "en": "Quran 13:16 (excerpt)"
+        },
+        "arabic_original": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+        "translation": {
+          "ml": "പറയുക: അല്ലാഹുവാണ് എല്ലാറ്റിന്റെയും സ്രഷ്ടാവ്. അവൻ ഏകനും എല്ലാറ്റിനെയും കീഴടക്കുന്നവനുമാണ്. ഇത് 13:16-ന്റെ അവസാന ഭാഗമാണ്.",
+          "en": "Say: Allah is the Creator of everything; He is the One, the Overpowering. This is the closing passage of Quran 13:16."
+        },
+        "source_reference": "Quran 13:16 (ending excerpt)",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-13-16",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 13:16",
+          "en": "Ibn Kathir's explanation — Quran 13:16"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീറിന്റെ വ്യാഖ്യാനത്തിൽ ആകാശഭൂമികളുടെ സൃഷ്ടിയും നിയന്ത്രണവും ഒരു ദൈവത്തിനുതന്നെയാണ്; സൃഷ്ടിച്ചവനല്ലാത്ത ഒരാളെ ആരാധിക്കരുതെന്ന വാദമാണ് ആയത്തിന്റെ സന്ദർഭം.",
+          "en": "Ibn Kathir presents the verse as an argument against giving worship to anything that does not create or control the world."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 13:16",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-065": {
+    "name_id": "PDF-HN-065",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-അഹദ് എന്ന ദൈവിക നാമം ആരുമായും പങ്കിടപ്പെടാത്ത പരിപൂർണ്ണ ഏകതയെ പ്രസ്താവിക്കുന്നു. സൂറത്തുൽ ഇഖ്ലാസ് 112:1-ൽ «قُلْ هُوَ اللَّهُ أَحَدٌ» എന്ന് നേരിട്ട് വരുന്നു. തുടർന്ന് അല്ലാഹുവിന്റെ ആശ്രയരാഹിത്യവും ജനനബന്ധമില്ലായ്മയും വിശദീകരിക്കുന്നു.",
+      "en": "Al-Ahad affirms Allah's unique oneness. Quran 112:1 explicitly names Him Ahad and the following verses elaborate His self-sufficiency and absolute incomparability."
+    },
+    "evidence": [
+      {
+        "id": "quran-112-1",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 112:1",
+          "en": "Quran 112:1"
+        },
+        "arabic_original": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+        "translation": {
+          "ml": "പറയുക: അവൻ അല്ലാഹു ഏകനാണ്.",
+          "en": "Say: He is Allah, One."
+        },
+        "source_reference": "Quran 112:1",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya1.html",
+        "review_status": "checked_against_digital_text"
+      },
+      {
+        "id": "quran-112-2",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 112:2",
+          "en": "Quran 112:2"
+        },
+        "arabic_original": "اللَّهُ الصَّمَدُ",
+        "translation": {
+          "ml": "അല്ലാഹു; എല്ലാവരും ആശ്രയിക്കുന്നവൻ, ആരെയും ആശ്രയിക്കേണ്ടതില്ലാത്തവൻ.",
+          "en": "Allah, the One on whom all depend, who depends on none."
+        },
+        "source_reference": "Quran 112:2",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya2.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-112-1",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 112:1",
+          "en": "Ibn Kathir's explanation — Quran 112:1"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന് സമാനമോ തുല്യമോ ആരുമില്ലെന്ന് ഇഖ്ലാസ് തഫ്സീറിൽ വ്യക്തമാക്കുന്നു. ഇവിടെ പ്രത്യേക ദുനിയാവി നേട്ടത്തിനുള്ള എണ്ണങ്ങൾ ആയത്തുകൾ തന്നെ പറയുന്നില്ല.",
+          "en": "Ibn Kathir interprets Ahad as uniquely without equal, peer or likeness. The verses themselves set no practice count for securing worldly benefits."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 112:1",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya1.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-066": {
+    "name_id": "PDF-HN-066",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അസ്-സ്വമദ് എന്ന നാമം സകല സൃഷ്ടികളും ആശ്രയിക്കുന്നതും സ്വയം ഒരാളെയും ആശ്രയിക്കാത്തതുമായ ദൈവിക പരിപൂർണ്ണതയെ സൂചിപ്പിക്കുന്നു. ഇഖ്ലാസ് 112:2-ലാണ് നാമം വരുന്നത്. ഈ വാക്യത്തെ മനുഷ്യരുടെ ആവശ്യങ്ങൾ നിറവേറ്റപ്പെടും എന്ന യാന്ത്രിക ഉറപ്പായി ചിത്രീകരിക്കരുത്.",
+      "en": "As-Samad is the One to whom all creatures turn in need, while He needs none. It occurs directly in Quran 112:2. The verse is not a guaranteed mechanical method for obtaining every request."
+    },
+    "evidence": [
+      {
+        "id": "quran-112-2",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 112:2",
+          "en": "Quran 112:2"
+        },
+        "arabic_original": "اللَّهُ الصَّمَدُ",
+        "translation": {
+          "ml": "അല്ലാഹു; എല്ലാവരും ആശ്രയിക്കുന്നവൻ, ആരെയും ആശ്രയിക്കേണ്ടതില്ലാത്തവൻ.",
+          "en": "Allah, the One on whom all depend, who depends on none."
+        },
+        "source_reference": "Quran 112:2",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya2.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-112-2",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 112:2",
+          "en": "Ibn Kathir's explanation — Quran 112:2"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസ് അടക്കമുള്ള മുൻകാല വ്യാഖ്യാതാക്കളിൽ നിന്നുള്ള ഒന്നിലധികം വിശദീകരണങ്ങൾ രേഖപ്പെടുത്തുന്നു: ആവശ്യങ്ങൾക്ക് എല്ലാവരും സമീപിക്കുന്നവൻ, മഹത്വത്തിൽ പരിപൂർണ്ണൻ, സൃഷ്ടികളെ ആശ്രയിക്കാത്തവൻ. വ്യാഖ്യാനങ്ങളെ ഒരൊറ്റ പദത്തിലേക്ക് ചുരുക്കുന്നില്ല.",
+          "en": "Ibn Kathir transmits several early explanations including the One approached for needs and the Lord perfect in sovereignty, with no dependence on creatures."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 112:2",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya2.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-073": {
+    "name_id": "PDF-HN-073",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-അവ്വൽ — ആദ്യൻ — അല്ലാഹു എല്ലാ സൃഷ്ടികൾക്കും മുമ്പുള്ളവൻ എന്ന സത്താസംബന്ധിയായ വിവരണമാണ്. അൽ-ഹദീദ് 57:3-ൽ അൽ-ആഖിർ, അസ്-സാഹിർ, അൽ-ബാത്വിൻ എന്നിവയോടൊപ്പം വരുന്നു. ഈ നാല് നാമങ്ങളും പരസ്പരബന്ധത്തിൽ വായിക്കേണ്ടവയാണ്.",
+      "en": "Al-Awwal is the First, prior to all created things. Quran 57:3 pairs it with al-Akhir, al-Zahir and al-Batin. The four belong together in a statement of divine transcendence and knowledge."
+    },
+    "evidence": [
+      {
+        "id": "quran-57-3",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 57:3",
+          "en": "Quran 57:3"
+        },
+        "arabic_original": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "translation": {
+          "ml": "അവൻ ആദ്യനും അവസാനനും പ്രകടനും ആന്തരികനുമാണ്. അവൻ എല്ലാ കാര്യവും അറിയുന്നവനാണ്.",
+          "en": "He is the First and the Last, the Manifest and the Hidden. He knows everything."
+        },
+        "source_reference": "Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-57-3",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 57:3",
+          "en": "Ibn Kathir's explanation — Quran 57:3"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 57:3-ന്റെ വ്യാഖ്യാനത്തിൽ ഈ നാലു നാമങ്ങളെയും ഉൾക്കൊള്ളുന്ന നബിവചന ദുആ പരാമർശിക്കുന്നു. ആ ദുആയിലെ കൃത്യമായ പ്രയോഗം പ്രത്യേകം ഹദീസ് ഉറവിടത്തോടു കൂടിയാണ് കാണിക്കേണ്ടത്.",
+          "en": "Ibn Kathir quotes a Prophetic bedtime supplication employing all four Names; its actual timing and wording must be taken from the hadith source."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-074": {
+    "name_id": "PDF-HN-074",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ആഖിർ — അവസാനൻ — എല്ലാ സൃഷ്ടികളുടെ പരിധിക്കും അതീതമായി നിലനിൽക്കുന്ന അല്ലാഹുവിന്റെ നാമമാണ്. 57:3-ൽ അൽ-അവ്വലിനൊപ്പം വരുന്നു; അസ്തിത്വം, കാലം തുടങ്ങിയ മനുഷ്യപരിധികൾ കൊണ്ട് ഈ നാമത്തെ നിർവചിക്കുന്നത് പോരാ.",
+      "en": "Al-Akhir is the Last, beyond the limits of created duration. Quran 57:3 names Him al-Akhir together with al-Awwal, al-Zahir and al-Batin."
+    },
+    "evidence": [
+      {
+        "id": "quran-57-3",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 57:3",
+          "en": "Quran 57:3"
+        },
+        "arabic_original": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "translation": {
+          "ml": "അവൻ ആദ്യനും അവസാനനും പ്രകടനും ആന്തരികനുമാണ്. അവൻ എല്ലാ കാര്യവും അറിയുന്നവനാണ്.",
+          "en": "He is the First and the Last, the Manifest and the Hidden. He knows everything."
+        },
+        "source_reference": "Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-57-3",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 57:3",
+          "en": "Ibn Kathir's explanation — Quran 57:3"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ഉദ്ധരിക്കുന്ന നബിവചന ദുആയിൽ «أَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ» എന്ന അർഥപരമായ വിശദീകരണം വരുന്നു; അത് 57:3-ന്റെ ആശയം വ്യക്തമാക്കുന്നു.",
+          "en": "Ibn Kathir includes the Prophetic explanation 'You are the Last, and nothing is after You' in the bedtime supplication he cites."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-075": {
+    "name_id": "PDF-HN-075",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അസ്-സാഹിർ — പ്രകടനും എല്ലാറ്റിനും മീതെയുള്ളവനും — എന്ന നാമം 57:3-ൽ വരുന്നു. സൂഫി ഗ്രന്ഥങ്ങളിലെ പ്രത്യേക തത്ത്വവ്യാഖ്യാനങ്ങളും ഈ ആയത്തിലെ നേരിട്ടുള്ള പാഠവും രണ്ടും വേർതിരിച്ചറിയണം.",
+      "en": "Al-Zahir, the Manifest/Above all, occurs in Quran 57:3. Distinct Sufi metaphysical interpretations should be attributed separately rather than substituted for the Quran's wording."
+    },
+    "evidence": [
+      {
+        "id": "quran-57-3",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 57:3",
+          "en": "Quran 57:3"
+        },
+        "arabic_original": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "translation": {
+          "ml": "അവൻ ആദ്യനും അവസാനനും പ്രകടനും ആന്തരികനുമാണ്. അവൻ എല്ലാ കാര്യവും അറിയുന്നവനാണ്.",
+          "en": "He is the First and the Last, the Manifest and the Hidden. He knows everything."
+        },
+        "source_reference": "Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-57-3",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 57:3",
+          "en": "Ibn Kathir's explanation — Quran 57:3"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ നബിവചന ദുആ ഉദ്ധരിച്ച് «أَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ» എന്ന അർഥബന്ധം അവതരിപ്പിക്കുന്നു; മറ്റ് വിശദീകരണങ്ങളും തഫ്സീറിൽ പരാമർശിക്കുന്നു.",
+          "en": "Ibn Kathir reports the Prophetic formula 'You are al-Zahir, and nothing is above You', while also citing other discussions on the verse."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-076": {
+    "name_id": "PDF-HN-076",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ബാത്വിൻ — മറഞ്ഞിരിക്കുന്നവനും സൃഷ്ടികൾക്ക് പൂർണ്ണമായി അറിയാനാവാത്തവനും — എന്ന നാമം 57:3-ൽ വരുന്നു. അൽ-അവ്വൽ, അൽ-ആഖിർ, അസ്-സാഹിർ എന്നിവയുമായി ചേർന്നുള്ള ഏകദൈവിക വിവരണമായാണ് അത് മനസ്സിലാക്കേണ്ടത്.",
+      "en": "Al-Batin, the Hidden/Innermost, occurs in Quran 57:3. It belongs with al-Awwal, al-Akhir and al-Zahir in describing divine transcendence, not as a secret technique or guaranteed talisman."
+    },
+    "evidence": [
+      {
+        "id": "quran-57-3",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 57:3",
+          "en": "Quran 57:3"
+        },
+        "arabic_original": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "translation": {
+          "ml": "അവൻ ആദ്യനും അവസാനനും പ്രകടനും ആന്തരികനുമാണ്. അവൻ എല്ലാ കാര്യവും അറിയുന്നവനാണ്.",
+          "en": "He is the First and the Last, the Manifest and the Hidden. He knows everything."
+        },
+        "source_reference": "Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-57-3",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 57:3",
+          "en": "Ibn Kathir's explanation — Quran 57:3"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ നബിവചന ദുആയുടെ «أَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ» എന്ന ഭാഗം ഉദ്ധരിക്കുന്നു; ഇതിന്റെ അർഥം സ്വകാര്യാനുഭവങ്ങളിൽ മാത്രം പരിമിതപ്പെടുത്താതെ പാഠവുമായി ബന്ധിപ്പിക്കുന്നു.",
+          "en": "Ibn Kathir relates this Name to the Prophetic phrase 'You are al-Batin, and nothing is nearer beneath You', anchoring the discussion in source text."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 57:3",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya3.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-088": {
+    "name_id": "PDF-HN-088",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഗനിയ്യ്: ഒന്നിനെയും ആവശ്യമില്ലാത്തവൻ എന്ന ദൈവിക വിശേഷണം. അൽ-ഹജ്ജ് 22:64-ൽ ആകാശഭൂമികളിലുള്ളതെല്ലാം അല്ലാഹുവിനുള്ളതാണെന്നും അവൻ അൽ-ഗനിയ്യും അൽ-ഹമീദുമാണെന്നും പറയുന്നു. മനുഷ്യന് പണമുണ്ടാക്കാനുള്ള ഉറപ്പുനൽകുന്ന മന്ത്രമല്ല ഈ വാക്യം.",
+      "en": "Al-Ghani means the One wholly free of need. Quran 22:64 states everything in heaven and earth belongs to Allah while He remains self-sufficient and praiseworthy. It is not a guaranteed formula for personal wealth."
+    },
+    "evidence": [
+      {
+        "id": "quran-22-64",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 22:64",
+          "en": "Quran 22:64"
+        },
+        "arabic_original": "لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِنَّ اللَّهَ لَهُوَ الْغَنِيُّ الْحَمِيدُ",
+        "translation": {
+          "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. തീർച്ചയായും അല്ലാഹു എല്ലാറ്റിൽനിന്നും സ്വതന്ത്രനും സ്തുതിക്കർഹനുമാണ്.",
+          "en": "Everything in the heavens and earth belongs to Him. Allah is indeed free of all need and worthy of all praise."
+        },
+        "source_reference": "Quran 22:64",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-22-64",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 22:64",
+          "en": "Ibn Kathir's explanation — Quran 22:64"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 22:64-ൽ എല്ലാത്തിന്റെയും ഉടമ അല്ലാഹു തന്നെയാണെന്ന് വിശദീകരിക്കുന്നു. സൃഷ്ടികൾ അവനെ ആശ്രയിക്കുന്നു എന്നതല്ലാതെ അവൻ സൃഷ്ടികളെ ആശ്രയിക്കുന്നില്ല.",
+          "en": "Ibn Kathir places the name in the context of Allah's complete ownership of creation and independence from it."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 22:64",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-092": {
+    "name_id": "PDF-HN-092",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അന്നൂർ എന്ന നാമവുമായി ബന്ധപ്പെട്ട അന്നൂർ 24:35 വിശാലമായ ഉപമയുള്ള ആയത്താണ്. വിളക്ക്, ചില്ല്, എണ്ണ എന്നിവയെക്കുറിച്ചുള്ള രൂപകം, ദൈവിക മാർഗദർശനം എന്നിവയെ ക്ലാസിക്കൽ തഫ്സീറുകൾ പ്രത്യേകം പരിശോധിക്കുന്നു. ഈ ആയത്ത് മുഴുവനായി സംരക്ഷിച്ചാണ് കാണിക്കേണ്ടത്; കളം നിർമ്മിക്കാനുള്ള സ്വതന്ത്ര നിർദേശമില്ല.",
+      "en": "Quran 24:35 uses an extended parable of divine light involving a niche, lamp, glass and olive oil. Classical commentators discuss guidance and faith. The verse should be displayed in full and is not itself a manual for constructing a talisman."
+    },
+    "evidence": [
+      {
+        "id": "quran-24-35",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 24:35",
+          "en": "Quran 24:35"
+        },
+        "arabic_original": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ ۚ مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ ۖ الْمِصْبَاحُ فِي زُجَاجَةٍ ۖ الزُّجَاجَةُ كَأَنَّهَا كَوْكَبٌ دُرِّيٌّ يُوقَدُ مِن شَجَرَةٍ مُّبَارَكَةٍ زَيْتُونَةٍ لَّا شَرْقِيَّةٍ وَلَا غَرْبِيَّةٍ يَكَادُ زَيْتُهَا يُضِيءُ وَلَوْ لَمْ تَمْسَسْهُ نَارٌ ۚ نُّورٌ عَلَىٰ نُورٍ ۗ يَهْدِي اللَّهُ لِنُورِهِ مَن يَشَاءُ ۚ وَيَضْرِبُ اللَّهُ الْأَمْثَالَ لِلنَّاسِ ۗ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "translation": {
+          "ml": "അല്ലാഹു ആകാശങ്ങളുടെയും ഭൂമിയുടെയും പ്രകാശമാണ്. അവന്റെ പ്രകാശത്തിന്റെ ഉപമ വിളക്കുള്ള ഒരു മാടംപോലെയാണ്. വിളക്ക് ഒരു ചില്ലിനുള്ളിലാണ്. ആ ചില്ല് തിളങ്ങുന്ന ഒരു നക്ഷത്രംപോലെയാണ്. കിഴക്കേതോ പടിഞ്ഞാറേതോ മാത്രമല്ലാത്ത അനുഗൃഹീതമായ ഒലീവ് വൃക്ഷത്തിൽനിന്നുള്ള എണ്ണകൊണ്ടാണ് അത് കത്തിക്കുന്നത്. തീ തൊടാതെയും ആ എണ്ണ പ്രകാശിക്കുമാറാകുന്നു. പ്രകാശത്തിനുമേൽ പ്രകാശം. അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നവരെ തന്റെ പ്രകാശത്തിലേക്കു നയിക്കുന്നു. അല്ലാഹു മനുഷ്യർക്കായി ഉപമകൾ നൽകുന്നു. അല്ലാഹു എല്ലാം അറിയുന്നവനാണ്.",
+          "en": "Allah is the Light of the heavens and earth. The likeness of His light is a niche containing a lamp. The lamp is within glass, and the glass is like a radiant star. It is lit from a blessed olive tree, neither eastern nor western, whose oil almost shines even without fire touching it. Light upon light. Allah guides whom He wills to His light. Allah sets forth comparisons for people, and Allah knows everything."
+        },
+        "source_reference": "Quran 24:35",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya35.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-24-35",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 24:35",
+          "en": "Ibn Kathir's explanation — Quran 24:35"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിൽനിന്നുള്ള ഒരു വ്യാഖ്യാനം രേഖപ്പെടുത്തുന്നത് ദൈവിക പ്രകാശത്തെ ആകാശഭൂമികളിലെ നിവാസികൾക്കുള്ള മാർഗദർശനമായി മനസ്സിലാക്കുന്നു എന്നാണ്. വിശ്വാസിയുടെ ഹൃദയത്തിന്റെയും ഖുർആനിന്റെയും പ്രകാശവുമായി ബന്ധപ്പെട്ട മറ്റൊരു വ്യാഖ്യാനവും രേഖപ്പെടുത്തുന്നു.",
+          "en": "Ibn Kathir transmits an interpretation of 'light' as guidance of those in the heavens and earth, alongside another relating the parable to faith and Quran in the believer's heart."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 24:35",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya35.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-093": {
+    "name_id": "PDF-HN-093",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഹാദി എന്ന നാമവുമായി ബന്ധപ്പെട്ട അൽ-ഹജ്ജ് 22:54-ൽ അല്ലാഹു വിശ്വാസികളെ നേരായ വഴിയിലേക്ക് നയിക്കുന്നുവെന്ന് പറയുന്നു. വചനത്തിലുള്ളത് «لَهَادِ» എന്ന രൂപമാണ്; «الْهَادِي» എന്ന സ്വതന്ത്ര നാമരൂപം ഈ ആയത്തിൽ അങ്ങനെ വരുന്നില്ല. അത് വ്യക്തമായി സൂചിപ്പിക്കണം.",
+      "en": "Al-Hadi relates to the guidance of believers. Quran 22:54 reads 'la-hadi' rather than independently presenting the definite nominal name 'al-Hadi'. The grammatical distinction should remain visible."
+    },
+    "evidence": [
+      {
+        "id": "quran-22-54",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 22:54",
+          "en": "Quran 22:54"
+        },
+        "arabic_original": "وَلِيَعْلَمَ الَّذِينَ أُوتُوا الْعِلْمَ أَنَّهُ الْحَقُّ مِن رَّبِّكَ فَيُؤْمِنُوا بِهِ فَتُخْبِتَ لَهُ قُلُوبُهُمْ ۗ وَإِنَّ اللَّهَ لَهَادِ الَّذِينَ آمَنُوا إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ",
+        "translation": {
+          "ml": "അറിവു ലഭിച്ചവർ ഇത് രക്ഷിതാവിൽനിന്നുള്ള സത്യമാണെന്ന് അറിഞ്ഞ് വിശ്വസിക്കുകയും അവരുടെ ഹൃദയങ്ങൾ അവനോട് വിനയപ്പെടുകയും ചെയ്യുന്നു. അല്ലാഹു വിശ്വാസികളെ നേരായ വഴിയിലേക്ക് നയിക്കുന്നു.",
+          "en": "Those given knowledge recognize the truth from their Lord, believe in it and submit their hearts to Him. Allah guides those who believe to a straight path."
+        },
+        "source_reference": "Quran 22:54",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya54.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-22-54",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 22:54",
+          "en": "Ibn Kathir's explanation — Quran 22:54"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ഈ മാർഗദർശനം ഇഹലോകത്ത് സത്യത്തെ തിരിച്ചറിഞ്ഞ് പിന്തുടരുകയും പരലോകത്ത് വിജയത്തിലേക്കുള്ള വഴി ലഭിക്കുകയും ചെയ്യുന്നതുമായി ബന്ധിപ്പിക്കുന്നു.",
+          "en": "Ibn Kathir explains guidance here as recognizing and following truth in this life and being guided to salvation in the next."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 22:54",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya54.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-096": {
+    "name_id": "PDF-HN-096",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-വാരിഥ് എന്ന വിശേഷണം സകല സൃഷ്ടികളും അവസാനിക്കുമ്പോൾ ശേഷിക്കുന്ന അന്തിമ ഉടമസ്ഥതയെ സൂചിപ്പിക്കുന്നു. അൽ-ഹിജ്റ് 15:23-ൽ «وَنَحْنُ الْوَارِثُونَ» എന്ന ബഹുവചന ദൈവിക പ്രസ്താവനയാണ്; «الْوَارِثُ» എന്ന ഏകവചന നാമം അതേ വാക്യത്തിൽ ഇല്ല.",
+      "en": "Al-Warith signifies Allah as the ultimate inheritor when created lives end. Quran 15:23 uses the majestic plural 'We are the Inheritors', not the isolated singular name al-Warith. This linguistic detail should be preserved."
+    },
+    "evidence": [
+      {
+        "id": "quran-15-23",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 15:23",
+          "en": "Quran 15:23"
+        },
+        "arabic_original": "وَإِنَّا لَنَحْنُ نُحْيِي وَنُمِيتُ وَنَحْنُ الْوَارِثُونَ",
+        "translation": {
+          "ml": "ജീവൻ നൽകുന്നതും മരണം നൽകുന്നതും നാം തന്നെയാണ്; അന്തിമമായി ശേഷിക്കുന്ന അവകാശികളും നാം തന്നെയാണ്.",
+          "en": "It is We who give life and cause death, and We are the Inheritors."
+        },
+        "source_reference": "Quran 15:23",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya23.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-15-23",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 15:23",
+          "en": "Ibn Kathir's explanation — Quran 15:23"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 15:23-ൽ ജീവനേകുകയും മരണം വരുത്തുകയും ചെയ്യുന്നവൻ അല്ലാഹുവാണെന്നും ഭൂമിയും അതിലുള്ളതുമെല്ലാം അവസാനം അവന്റേതിലേക്കു മടങ്ങുന്നതാണെന്നും വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir describes Allah as the giver of life, causer of death and ultimate inheritor of the earth and its inhabitants."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 15:23",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya23.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-100": {
+    "name_id": "PDF-HN-100",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-അളീം മഹത്വത്തിലും ഗാംഭീര്യത്തിലും എല്ലാ സൃഷ്ടികളെയും അതിക്രമിക്കുന്നവനെ സൂചിപ്പിക്കുന്നു. ആയത്തുൽ കുർസിയുടെ അവസാനം «الْعَلِيُّ الْعَظِيمُ» എന്നു വരുന്നു. ഇതിനെ അൽ-അലീം (എല്ലാം അറിയുന്നവൻ) എന്ന വേറൊരു നാമവുമായി അക്ഷരക്രമത്തിൽ കലർത്തരുത്.",
+      "en": "Al-Azim means the Magnificent/Great. The end of Ayat al-Kursi names Allah al-Ali, al-Azim. It is linguistically distinct from al-Alim (All-Knowing), even though the transliterations can be confused."
+    },
+    "evidence": [
+      {
+        "id": "quran-2-255",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 2:255",
+          "en": "Quran 2:255"
+        },
+        "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "translation": {
+          "ml": "അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അവൻ നിത്യജീവനും എല്ലാറ്റിനെയും നിലനിർത്തുന്നവനുമാണ്. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ അടുക്കൽ ശുപാർശ ചെയ്യുന്നവൻ ആരാണ്? അവരുടെ മുമ്പിലുള്ളതും പിന്നിലുള്ളതും അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽനിന്ന് ഒന്നും അവർ ഉൾക്കൊള്ളുന്നില്ല. അവന്റെ കുർസിയ്യ് ആകാശങ്ങളെയും ഭൂമിയെയും ഉൾക്കൊള്ളുന്നു. അവ രണ്ടിനെയും കാത്തുസൂക്ഷിക്കുന്നത് അവന് ഭാരമാകുന്നില്ല. അവൻ അത്യുന്നതനും മഹത്തായവനുമാണ്.",
+          "en": "Allah: there is no deity worthy of worship except Him, the Ever-Living, the Sustainer of all. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. Who can intercede with Him except by His permission? He knows what is before them and what is behind them. They encompass none of His knowledge except what He wills. His Kursi encompasses the heavens and earth, and preserving them does not burden Him. He is the Most High, the Magnificent."
+        },
+        "source_reference": "Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-2-255",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 2:255",
+          "en": "Ibn Kathir's explanation — Quran 2:255"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ ആയത്തുൽ കുർസിയിൽ സകലത്തിനുമീതെയുള്ള അധികാരവും ആകാശഭൂമികളുടെ പരിപാലനം പ്രയാസമില്ലാത്തതും വിശകലനം ചെയ്യുന്നു; ഈ പശ്ചാത്തലത്തിലാണ് മഹത്വം പറയുന്നത്.",
+          "en": "Ibn Kathir reads the description alongside God's sovereign care of the heavens and earth, which imposes no difficulty on Him."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 2:255",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-108": {
+    "name_id": "PDF-HN-108",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഹകീം ദൈവിക വിധികളിലും സൃഷ്ടിയിലും പൂർണമായ യുക്തിയും ജ്ഞാനവും ഉള്ളവനാണ്. അൽ-ഹദീദ് 57:1-ൽ അൽ-അസീസ് എന്ന നാമത്തിനൊപ്പം വരുന്നു. ഏതൊരു ഫലത്തിനും കൃത്യമായ ഓതൽഎണ്ണം വേണമെന്ന നിർദേശം ഈ ആയത്തിൽ ഇല്ല.",
+      "en": "Al-Hakim is the Wise, perfect in judgments and creation. Quran 57:1 pairs this name with al-Aziz. The verse does not establish a repetition count for desired outcomes."
+    },
+    "evidence": [
+      {
+        "id": "quran-57-1",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 57:1",
+          "en": "Quran 57:1"
+        },
+        "arabic_original": "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "translation": {
+          "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അല്ലാഹുവിനെ പരിശുദ്ധപ്പെടുത്തുന്നു. അവൻ പ്രതാപശാലിയും യുക്തിമാനുമാണ്.",
+          "en": "All that is in the heavens and earth glorifies Allah; He is the Mighty, the Wise."
+        },
+        "source_reference": "Quran 57:1",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya1.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-57-1",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 57:1",
+          "en": "Ibn Kathir's explanation — Quran 57:1"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 57:1-ന്റെ അവസാനം അവന്റെ സൃഷ്ടിയിലും നിർദേശങ്ങളിലും നിയമങ്ങളിലും ദൈവിക യുക്തി പ്രതിഫലിക്കുന്നു എന്ന് വിശദീകരിക്കുന്നു.",
+          "en": "Ibn Kathir explains al-Hakim here through divine wisdom in creation, command and law."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 57:1",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya1.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-113": {
+    "name_id": "PDF-HN-113",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-വകീൽ എന്ന ആശയം കാര്യങ്ങളുടെ രക്ഷാകർത്താവും നിയന്ത്രകനുമായ അല്ലാഹുവിനെക്കുറിച്ചുള്ളതാണ്. അസ്സുമർ 39:62-ൽ «وَكِيلٌ» എന്ന സാധാരണ നാമരൂപം വരുന്നു; അതേ വാക്യത്തിൽ «الْوَكِيلُ» എന്ന രൂപമില്ല. അർഥപരമായ ബന്ധവും കൃത്യമായ പദരൂപവും വേർതിരിക്കുന്നു.",
+      "en": "Al-Wakil concerns Allah as the One entrusted with and overseeing all affairs. Quran 39:62 uses the form 'wakil', not the definite label 'al-Wakil' as a separate token. Source grammar is preserved."
+    },
+    "evidence": [
+      {
+        "id": "quran-39-62",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 39:62",
+          "en": "Quran 39:62"
+        },
+        "arabic_original": "اللَّهُ خَالِقُ كُلِّ شَيْءٍ ۖ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+        "translation": {
+          "ml": "അല്ലാഹു എല്ലാ കാര്യങ്ങളുടെയും സ്രഷ്ടാവാണ്. അവൻ എല്ലാ കാര്യങ്ങളുടെയും കാര്യനിർവാഹകനാണ്.",
+          "en": "Allah is the Creator of everything, and He is the Trustee over everything."
+        },
+        "source_reference": "Quran 39:62",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya62.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-39-62",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 39:62",
+          "en": "Ibn Kathir's explanation — Quran 39:62"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ അല്ലാഹുവിനെ എല്ലാറ്റിന്റെയും സ്രഷ്ടാവും പരിപാലകനും ഉടമയും നിയന്ത്രകനുമായിത്തന്നെയാണ് ഇവിടെ വിശദീകരിക്കുന്നത്.",
+          "en": "Ibn Kathir describes Allah as creator, owner, disposer and guardian of everything."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 39:62",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya62.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  },
+  "PDF-HN-116": {
+    "name_id": "PDF-HN-116",
+    "reviewed_on": "2026-10-10",
+    "coverage": {
+      "ml": "ഈ കാർഡിന്റെ ആദ്യ ഘട്ടത്തിൽ ഖുർആനിലെ താഴെ പറയുന്ന ആയത്തുകളും തെരഞ്ഞെടുത്ത ഇബ്നു കസീർ തഫ്സീർ ഭാഗവും പരിശോധിച്ചിട്ടുണ്ട്. പൂർണ ഗ്രന്ഥസർവേ, എല്ലാ ഹദീസ് നിവേദനങ്ങളുടെയും ഗവേഷണം, പരമ്പരാഗത ഖവാസ്സ് എന്നിവ ഇതുവരെ പൂർത്തിയായിട്ടില്ല. ഈ ആയത്തുകൾ നിശ്ചിത ആവർത്തനഎണ്ണം/സമയം/കളം നിർദേശിക്കുന്നില്ല.",
+      "en": "First-pass verification covers the Quran passage(s) below and a selected Ibn Kathir tafsir explanation. Exhaustive book research and traditional khawass remain incomplete. These Quran verses do not prescribe a standalone name-specific repetition count, day or square."
+    },
+    "explanation": {
+      "ml": "അൽ-ഹഖ് എന്ന നാമം യഥാർഥ സത്യവും അസ്തിത്വത്തിന്റെ ആത്യന്തിക സ്രോതസ്സുമായ അല്ലാഹുവിനെ കുറിക്കുന്നു. അൽ-ഹജ്ജ് 22:6-ൽ അല്ലാഹു അൽ-ഹഖ് ആണെന്നും അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നുവെന്നും പറയുന്നു. ഈ ആയത്തിലെ അർഥം തെളിവോടെയാണ്; എണ്ണം എന്ന നിർദേശം ഇല്ല.",
+      "en": "Al-Haqq denotes Allah as the True Reality. Quran 22:6 names Allah al-Haqq and connects the declaration to resurrection and divine ability, without prescribing numbered recitation."
+    },
+    "evidence": [
+      {
+        "id": "quran-22-6",
+        "title": {
+          "ml": "ഖുർആനിലെ പരാമർശം — 22:6",
+          "en": "Quran 22:6"
+        },
+        "arabic_original": "ذَٰلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّهُ يُحْيِي الْمَوْتَىٰ وَأَنَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+        "translation": {
+          "ml": "അല്ലാഹുവാണ് സത്യമായുള്ളവൻ എന്നതുകൊണ്ടും അവൻ മരിച്ചവരെ ജീവിപ്പിക്കുന്നു എന്നതുകൊണ്ടും അവൻ എല്ലാ കാര്യത്തിനും കഴിവുള്ളവനാണ് എന്നതുകൊണ്ടുമാണ് അത്.",
+          "en": "That is because Allah is the Truth, because He gives life to the dead, and because He has power over everything."
+        },
+        "source_reference": "Quran 22:6",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "scholarly": [
+      {
+        "id": "ibn-kathir-22-6",
+        "title": {
+          "ml": "ഇബ്നു കസീർ തഫ്സീർ — 22:6",
+          "en": "Ibn Kathir's explanation — Quran 22:6"
+        },
+        "translation": {
+          "ml": "ഇബ്നു കസീർ 22:6-ൽ «അൽ-ഹഖ്» എന്നതിനെ എല്ലാം സൃഷ്ടിക്കുകയും നിയന്ത്രിക്കുകയും ഇഷ്ടമുള്ളത് പ്രവർത്തിക്കുകയും ചെയ്യുന്ന ദൈവത്തെ സൂചിപ്പിക്കുന്നതായി വിവരിക്കുന്നു.",
+          "en": "Ibn Kathir relates al-Haqq to the One who creates, governs and can bring the dead to life."
+        },
+        "source_reference": "تفسير ابن كثير — Quran 22:6",
+        "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+        "review_status": "checked_against_digital_text"
+      }
+    ],
+    "topics": []
+  }
+}
