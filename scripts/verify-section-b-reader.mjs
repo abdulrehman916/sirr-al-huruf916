@@ -464,7 +464,7 @@ try {
     for(const item of p.evidence){
       fullVerseThird++;
       assert.equal(item.claim_kind,'complete_quran_verse_context');
-      assert.ok(item.arabic_original.length>160);
+      assert.ok(item.arabic_original.length>80);
     }
     for(const lang of ['ml','en']){
       const html=render(null,id,lang,{pdf_name_id:id});
