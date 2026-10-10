@@ -95,8 +95,9 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 18);
+  assert.equal(prophetic.entries.length, 21);
   assert.ok(topical.topics.length >= 18);
+  const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
     assert.ok(!sourceIds.has(entry.id), `Repeated prophetic source ID: ${entry.id}`);
     sourceIds.add(entry.id);
@@ -106,7 +107,7 @@ try {
     assert.ok(allowedPurposes.has(entry.purpose));
     assert.ok(entry.arabic_original && entry.translation.ml && entry.translation.en);
     assert.ok(entry.count.ml && entry.count.en && entry.timing.ml && entry.timing.en && entry.conditions.ml && entry.conditions.en);
-    assert.ok(entry.name_ids.length && entry.name_ids.every(id => research[id]), `Unknown Section B name in ${entry.id}`);
+    assert.ok(entry.name_ids.length && entry.name_ids.every(id => propheticKnownIds.has(id)), `Unknown Section B name in ${entry.id}`);
     for (const id of entry.name_ids) {
       for (const language of ['ml', 'en']) {
         const html = render(null, id, language, { pdf_name_id: id });
@@ -176,6 +177,50 @@ try {
   assert.equal(nextResearch.profiles['PDF-HN-021'].evidence[0].claim_kind, 'thematic_relation_not_exact_name');
   assert.equal(nextResearch.profiles['PDF-HN-030'].evidence[0].claim_kind, 'direct_quranic_text');
   console.log('PASS: twelve new name profiles show 24 Quran references, 24 tafsir summaries, one hadith and all source-linked prayers in both languages.');
+  // Third source-preserving expansion: twenty previously uncovered name profiles.
+  const expanded = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBExpandedResearch.json', 'utf8'));
+  assert.equal(Object.keys(expanded).length, 20);
+  assert.equal(new Set([...Object.keys(research), ...newIds, ...Object.keys(expanded)]).size,
+    Object.keys(research).length + newIds.length + Object.keys(expanded).length, 'Overlapping profile names must not silently overwrite existing research.');
+  for (const [id, profile] of Object.entries(expanded)) {
+    assert.equal(profile.name_id, id);
+    assert.ok(coveredIds.has(id), `Unknown source card ${id}`);
+    assert.ok(profile.coverage.ml && profile.coverage.en);
+    assert.ok(profile.evidence.length >= 1 && profile.scholarly.length >= 1);
+    const seenEntryIds = new Set();
+    for (const group of ['evidence', 'scholarly']) for (const entry of profile[group]) {
+      assert.ok(!seenEntryIds.has(entry.id), `Duplicate entry ${id}/${entry.id}`);
+      seenEntryIds.add(entry.id);
+      assert.equal(entry.review_status, 'checked_against_digital_text');
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+      assert.ok(entry.translation.ml && entry.translation.en);
+      if (group === 'evidence') assert.ok(entry.arabic_original.length >= 15);
+    }
+    for (const language of ['ml', 'en']) {
+      const html = render(null, id, language, {pdf_name_id:id});
+      assert.ok(html.includes(escape(profile.explanation[language])), `Missing expanded intro ${id}/${language}`);
+      for (const group of ['evidence', 'scholarly']) for (const entry of profile[group]) {
+        assert.ok(html.includes(escape(entry.translation[language])), `Missing expanded content ${id}/${entry.id}/${language}`);
+        assert.ok(html.includes(entry.source_url), `Missing expanded source link ${id}/${entry.id}`);
+        if (entry.arabic_original) assert.ok(html.includes(escape(entry.arabic_original)), `Missing expanded Arabic ${id}/${entry.id}`);
+      }
+    }
+  }
+  const night = prophetic.entries.find(entry => entry.id === 'hadith-bukhari-5017-three-surahs-bed');
+  const morning = prophetic.entries.find(entry => entry.id === 'hadith-abudawud-5082-3-surahs-morning-evening');
+  const ayahBed = prophetic.entries.find(entry => entry.id === 'hadith-bukhari-2311-ayat-kursi-bed');
+  assert.ok(night && morning && ayahBed, 'Full bedtime and morning/evening sources required');
+  for (const entry of [night, morning]) {
+    const blocks=entry.arabic_original.split(/\n\n/);
+    assert.deepEqual(blocks.map(text => text.trim().split('\n').length), [4,5,6], 'Preserve complete Quran 112–114 verse counts');
+    assert.equal(entry.references.length, 3);
+    assert.ok(entry.references.every(ref => /^https:\/\/quran\.com\/11[234]$/.test(ref.url)));
+  }
+  assert.ok(night.count.en.includes('Three rounds') && morning.count.en.includes('3 times in the morning'));
+  assert.ok(ayahBed.arabic_original.includes('الْحَيُّ الْقَيُّومُ') && ayahBed.arabic_original.includes('الْعَلِيُّ الْعَظِيمُ'));
+  const fourNames = prophetic.entries.find(entry => entry.id === 'hadith-muslim-2713a');
+  for (const id of ['PDF-HN-073','PDF-HN-074','PDF-HN-075','PDF-HN-076']) assert.ok(fourNames.name_ids.includes(id));
+  console.log('PASS: 20 further sourced name chapters, 21 prophetic accounts, and complete 4+5+6-verse protection practices.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
