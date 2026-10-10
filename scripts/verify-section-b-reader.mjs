@@ -89,6 +89,43 @@ try {
     qcard.scholarly_entries[0].arabic_text = 'different excerpt';
     assert.equal(sectionBReading(qcard, 'test').evidence[0].verse_meaning, null);
   }
+  // Regression guard: every sourced prophetic dhikr must retain its own Arabic,
+  // count, timing, conditions, translations and public hadith citation.
+  const prophetic = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBPropheticDhikr.json', 'utf8'));
+  const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
+  const sourceIds = new Set();
+  const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
+  assert.equal(prophetic.entries.length, 18);
+  assert.ok(topical.topics.length >= 18);
+  for (const entry of prophetic.entries) {
+    assert.ok(!sourceIds.has(entry.id), `Repeated prophetic source ID: ${entry.id}`);
+    sourceIds.add(entry.id);
+    assert.equal(entry.review_status, 'checked_against_digital_text');
+    assert.ok(['prophetic_hadith', 'prophetic_report'].includes(entry.claim_kind));
+    assert.ok(entry.source_url.startsWith('https://sunnah.com/'), `Unrecognized hadith source: ${entry.id}`);
+    assert.ok(allowedPurposes.has(entry.purpose));
+    assert.ok(entry.arabic_original && entry.translation.ml && entry.translation.en);
+    assert.ok(entry.count.ml && entry.count.en && entry.timing.ml && entry.timing.en && entry.conditions.ml && entry.conditions.en);
+    assert.ok(entry.name_ids.length && entry.name_ids.every(id => research[id]), `Unknown Section B name in ${entry.id}`);
+    for (const id of entry.name_ids) {
+      for (const language of ['ml', 'en']) {
+        const html = render(null, id, language, { pdf_name_id: id });
+        assert.ok(html.includes('data-section-b-group="prophetic"'), `Missing Prophetic section: ${id}`);
+        for (const [label, body] of [['Arabic', entry.arabic_original], ['translation', entry.translation[language]], ['count', entry.count[language]], ['timing', entry.timing[language]], ['conditions', entry.conditions[language]]]) {
+          assert.ok(html.includes(escape(body)), `Missing ${label} for ${entry.id} in ${id} (${language})`);
+        }
+        assert.ok(html.includes(entry.source_url), `Missing source URL for ${entry.id}`);
+      }
+    }
+  }
+  const musPain = prophetic.entries.find(entry => entry.id === 'hadith-muslim-2202');
+  assert.ok(musPain.count.ml.includes('3') && musPain.count.ml.includes('7'), 'Pain dua counts must remain distinct.');
+  const dawudPrices = prophetic.entries.find(entry => entry.id === 'hadith-abudawud-3451');
+  const tirmidhiPrices = prophetic.entries.find(entry => entry.id === 'hadith-tirmidhi-1314');
+  assert.ok(dawudPrices.arabic_original.includes('الرَّازِقُ') && tirmidhiPrices.arabic_original.includes('الرَّزَّاقُ'), 'Distinct narrated wordings must not be merged.');
+  assert.ok(dawudPrices.name_ids.includes('PDF-HN-019') && tirmidhiPrices.name_ids.includes('PDF-HN-020'));
+  const witr = prophetic.entries.find(entry => entry.id === 'hadith-nasai-1733');
+  assert.ok(witr.count.ml.includes('മൂന്നു') && witr.timing.en.includes('witr'));
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
