@@ -1,0 +1,560 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "ഇതുവരെ അധിക തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകൾക്കുള്ള ആറാമത്തെ ഘട്ടം: 22 വിശിഷ്ട തഫ്സീർ വ്യാഖ്യാനങ്ങൾ, മൂല അറബി, മലയാളം/ഇംഗ്ലീഷ് വ്യാഖ്യാനം, കൃത്യമായ പേജ് ലിങ്ക്. 57:3-ലെ നാല് നാമങ്ങൾ, ഇഖ്‌ലാസിലെ അഹദ്/സമദ്, നൂർ ആയത്തിലെ വ്യത്യസ്ത ആദ്യകാല വായനകൾ, 2:37-ലെ തൗബ, ബലഹീന ഹദീസ് നിരൂപണം എന്നിവ വേർതിരിച്ചു. ചരിത്ര ഖവാസ്സ് ഗവേഷണം ഇതുകൊണ്ട് പൂർത്തിയായിട്ടില്ല. മുമ്പ് അവസാനഭാഗം മാത്രം ഉണ്ടായിരുന്ന 13:16-ന്റെ പൂർണ ആയത്തും രണ്ട് ഭാഷകളിലെ അർഥവും പ്രത്യേകം ചേർത്തു.",
+    "en": "Sixth deep-study stage: 15 previously undeepened card IDs, 22 actually checked classical tafsir snippets with bilingual attributed notes and verse URLs. Separate four Names of Quran 57:3 and their authentic Muslim 2713a hadith, distinguish Quranic Ahad/Samad from weak numerical virtue reports, document competing Light Verse readings and the Quran-grounded Adam repentance interpretation; historic khawass research still unfinished. Quran 13:16 is supplemented with the complete Arabic verse and full Malayalam/English meanings, rather than only the earlier closing excerpt."
+  },
+  "profiles": {
+    "PDF-HN-060": {
+      "name_id": "PDF-HN-060",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-060-katheer-85-13",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 85:13",
+            "en": "Ibn Kathir — Quran 85:13"
+          },
+          "arabic_original": "يبدئ الخلق ويعيده كما بدأه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആരംഭത്തിലെ സൃഷ്ടിയും പുനഃസൃഷ്ടിയും അല്ലാഹുവിന്റെ പൂർണ കഴിവാണെന്ന് വ്യക്തമാക്കുന്നു. ഖുർആൻ ഇവിടെ «يُبْدِئُ وَيُعِيدُ» എന്നീ ക്രിയകൾ ഉപയോഗിക്കുന്നു; «المعيد» എന്ന ഒറ്റ നാമരൂപമല്ല.",
+            "en": "Ibn Kathir explains that Allah originates creation and brings it back without opposition. The Quran has the verbs yubdi'u and yu'idu, not the independently written nominal heading al-Mu'id."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:13",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya13.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-064": {
+      "name_id": "PDF-HN-064",
+      "evidence": [
+        {
+          "id": "depth-vi-full-064-quran-13-16",
+          "title": {
+            "ml": "ഖുർആൻ 13:16 — പൂർണ ആയത്ത്, الْوَاحِدُ الْقَهَّارُ",
+            "en": "Quran 13:16 — complete verse in context"
+          },
+          "arabic_original": "قُلْ مَن رَّبُّ السَّمَاوَاتِ وَالْأَرْضِ قُلِ اللَّهُ ۚ قُلْ أَفَاتَّخَذْتُم مِّن دُونِهِ أَوْلِيَاءَ لَا يَمْلِكُونَ لِأَنفُسِهِمْ نَفْعًا وَلَا ضَرًّا ۚ قُلْ هَلْ يَسْتَوِي الْأَعْمَىٰ وَالْبَصِيرُ أَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُ ۗ أَمْ جَعَلُوا لِلَّهِ شُرَكَاءَ خَلَقُوا كَخَلْقِهِ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْ ۚ قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+          "translation": {
+            "ml": "പറയുക: ആകാശങ്ങളുടെയും ഭൂമിയുടെയും രക്ഷിതാവ് ആരാണ്? പറയുക: അല്ലാഹു. അവനല്ലാതെ സ്വയം നന്മയോ ദോഷമോ വരുത്താൻ കഴിയാത്ത രക്ഷാധികാരികളെ നിങ്ങൾ സ്വീകരിച്ചിരിക്കുകയാണോ? അന്ധനും കാണുന്നവനും, ഇരുട്ടും വെളിച്ചവും തുല്യമാകുമോ? അല്ലെങ്കിൽ സൃഷ്ടിയിൽ അല്ലാഹുവിന് തുല്യരായ പങ്കാളികളെ അവർ കണ്ടിട്ടുണ്ടോ? പറയുക: അല്ലാഹുവാണ് എല്ലാറ്റിന്റെയും സ്രഷ്ടാവ്; അവനാണ് ഏകനും സർവാധിപതിയും.",
+            "en": "Say: Who is Lord of the heavens and earth? Say: Allah. Have you taken protectors besides Him who cannot control even their own benefit or harm? Are the blind and the seeing equal, or darkness and light? Have those attributed partners to Allah created anything comparable to His creation so that the two creations seem alike? Say: Allah is Creator of everything, the One, the Irresistible."
+          },
+          "source_reference": "Quran 13:16 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പ് ഈ കാർഡിൽ അവസാന വാക്യഭാഗം മാത്രം നൽകിയിരുന്നു; ഖുർആനിൽ الْوَاحِدُ الْقَهَّارُ നേരിട്ട് വരുന്ന പൂർണ ആയത്തും സൃഷ്ടി–തൗഹീദ് സന്ദർഭവും ഇവിടെ ചേർക്കുന്നു.",
+            "en": "The earlier entry quoted only the final phrase; this supplies the full source verse and its monotheistic argument. The explicit pair is al-Wahid al-Qahhar, not a special-count wazifa."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-vi-064-katheer-13-16",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 13:16",
+            "en": "Ibn Kathir — Quran 13:16"
+          },
+          "arabic_original": "يقرر تعالى أنه لا إله إلا هو",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവാണ് ആകാശഭൂമികളുടെ ഏക സ്രഷ്ടാവെന്നും മറ്റു ആരാധ്യർക്ക് നന്മയോ ദോഷമോ നിയന്ത്രിക്കാൻ കഴിയില്ലെന്നും വ്യക്തമാക്കുന്നു. 13:16-ലെ അവസാനത്തിൽ «الْوَاحِدُ الْقَهَّارُ» നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir argues from Allah alone creating heaven and earth that idols cannot control benefit or harm. Al-Wahid al-Qahhar appears explicitly at the end of the long verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:16",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-065": {
+      "name_id": "PDF-HN-065",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-065-katheer-112-1",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 112:1",
+            "en": "Ibn Kathir — Quran 112:1"
+          },
+          "arabic_original": "الواحد الأحد ، الذي لا نظير له",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-അഹദ് സമാനനോ തുല്യനോ ഇല്ലാത്ത ഏക അല്ലാഹു എന്ന നിലയിൽ വിശദീകരിക്കുന്നു. സൂറയുടെ മഹത്വത്തെക്കുറിച്ചുള്ള സഹീഹ് നിവേദനങ്ങളോടൊപ്പം ചില പ്രത്യേക ആവർത്തനഎണ്ണങ്ങളെക്കുറിച്ചുള്ള ദുർബല നിവേദനങ്ങളും അദ്ദേഹം തിരിച്ചറിയുന്നു; അവയെല്ലാം സഹീഹ് എന്നു വിളിക്കരുത്.",
+            "en": "Ibn Kathir explains al-Ahad as utterly one and without peer. In the same chapter he distinguishes authentic reports on Surah al-Ikhlas from weak chains promising effects for special 50- or 200-fold recitations."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 112:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-065-tabary-112-1",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 112:1",
+            "en": "Al-Tabari — Quran 112:1"
+          },
+          "arabic_original": "سألوا رسول الله صلى الله عليه وسلم عن نسب ربّ العزّة",
+          "translation": {
+            "ml": "ത്വബരി സൂറത്തുൽ ഇഖ്‌ലാസിന്റെ അവതരണപശ്ചാത്തലത്തിൽ അല്ലാഹുവിനെക്കുറിച്ചു വിശദീകരിക്കണമെന്ന് ചോദിച്ചവരെക്കുറിച്ചുള്ള വിവിധ പരമ്പരകൾ രേഖപ്പെടുത്തുന്നു. ഈ റിപ്പോർട്ടുകളെ ഒരേയൊരു ഉറപ്പിച്ച നിവേദനമെന്നു മാറ്റരുത്.",
+            "en": "Al-Tabari records differing reports of people asking the Prophet about Allah's nature and relationship. These are separately transmitted explanations, not a single unanimously authenticated cause-of-revelation report."
+          },
+          "source_reference": "تفسير الطبري — Quran 112:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura112-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-066": {
+      "name_id": "PDF-HN-066",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-066-katheer-112-2",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 112:2",
+            "en": "Ibn Kathir — Quran 112:2"
+          },
+          "arabic_original": "الذي يصمد الخلائق إليه في حوائجهم ومسائلهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിൽനിന്ന് ആവശ്യങ്ങളിലും പ്രാർത്ഥനകളിലും സൃഷ്ടികൾ ആശ്രയിക്കുന്നവൻ എന്ന വ്യാഖ്യാനം വിവരിക്കുന്നു; പൂർണാധിപൻ, നിത്യനിലനിൽക്കുന്നവൻ തുടങ്ങിയ മറ്റു ആദ്യകാല അർഥങ്ങളും ഉൾക്കൊള്ളുന്നു. ഒരു വിവാദ നിവേദനത്തെ അതിന്റെ സനദ് അറിയാതെ നബിവചനമാക്കരുത്.",
+            "en": "Ibn Kathir records the explanation attributed to Ibn Abbas: creatures turn to Allah with their needs and requests. He also reports other early understandings of divine self-sufficiency and permanence, not one exclusive lexical meaning."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 112:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura112-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-066-tabary-112-2",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 112:2",
+            "en": "Al-Tabari — Quran 112:2"
+          },
+          "arabic_original": "السيد الذي يُصمد إليه, الذي لا أحد فوقه",
+          "translation": {
+            "ml": "ത്വബരി അറബി ഭാഷയിലെ «സമദ്» ഉയർന്ന അധിപനും എല്ലാവരും ആശ്രയിക്കുന്നവനുമാണെന്ന് ചർച്ച ചെയ്യുന്നു; മുൻഗാമികളിൽ നിന്നുള്ള ഒന്നിലധികം വ്യാഖ്യാനങ്ങൾ അദ്ദേഹം രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari discusses al-Samad as the supreme lord to whom all turn, alongside multiple early transmitted explanations; the meanings should not be collapsed into an invented practice count."
+          },
+          "source_reference": "تفسير الطبري — Quran 112:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura112-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-073": {
+      "name_id": "PDF-HN-073",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-073-tabary-57-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 57:3",
+            "en": "Al-Tabari — Quran 57:3"
+          },
+          "arabic_original": "قبل كل شيء بغير حدّ",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-അവ്വൽ» എല്ലാറ്റിനും മുമ്പുള്ളവൻ; അവന്റെ തുടക്കം നിശ്ചയിക്കാനാവില്ല എന്നാണ് വിശദീകരിക്കുന്നത്. മുസ്ലിം 2713a-ലെ രാത്രിദുആ ഇതേ നാമത്തിന്റെ അർഥം പ്രത്യേകം വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari explains al-Awwal as preceding every created thing without a beginning. The independently authenticated bedtime invocation in Muslim 2713a supplies complementary Prophetic wording."
+          },
+          "source_reference": "تفسير الطبري — Quran 57:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-074": {
+      "name_id": "PDF-HN-074",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-074-tabary-57-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 57:3",
+            "en": "Al-Tabari — Quran 57:3"
+          },
+          "arabic_original": "بعد كل شيء بغير نهاية",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-ആഖിർ» സകല സൃഷ്ടികൾക്കുശേഷവും അവസാനമില്ലാതെ നിലനിൽക്കുന്നവൻ എന്നാണ് വായിക്കുന്നത്. ഖുർആൻ 57:3-നും മുസ്ലിം 2713a-നും വ്യത്യസ്ത ഉറവിടസ്ഥാനം നൽകണം.",
+            "en": "Al-Tabari explains al-Akhir as remaining after all things without an end. The Quranic phrase and separately narrated Muslim 2713a dua have distinct sources."
+          },
+          "source_reference": "تفسير الطبري — Quran 57:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-075": {
+      "name_id": "PDF-HN-075",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-075-tabary-57-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 57:3",
+            "en": "Al-Tabari — Quran 57:3"
+          },
+          "arabic_original": "الظاهر على كل شيء دونه",
+          "translation": {
+            "ml": "ത്വബരി «അസ്-സാഹിർ» സകലത്തിനും മീതെ ഉന്നതനായവൻ എന്നാണ് വിശദീകരിക്കുന്നത്. ഇതിനെ മനുഷ്യരുടെ കാര്യങ്ങൾ നിയന്ത്രിക്കാൻ ഉപയോഗിക്കുന്ന രഹസ്യകളത്തിനുള്ള നിർദേശം എന്നു മാറ്റരുത്.",
+            "en": "Al-Tabari reads al-Zahir as exalted over everything else, not as a license for a fabricated amulet or recitation square."
+          },
+          "source_reference": "تفسير الطبري — Quran 57:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-076": {
+      "name_id": "PDF-HN-076",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-076-tabary-57-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 57:3",
+            "en": "Al-Tabari — Quran 57:3"
+          },
+          "arabic_original": "الباطن جميع الأشياء",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-ബാത്വിൻ» സൃഷ്ടികളുടെ മുഴുവൻ കാര്യങ്ങളും ഉൾക്കൊള്ളുന്ന ദൈവിക അടുത്തറിയലുമായി ബന്ധിപ്പിക്കുന്നു; അതോടൊപ്പം 57:3-ന്റെ അവസാനം എല്ലാറ്റിനെക്കുറിച്ചും പൂർണ അറിവ് പറയുന്നുണ്ട്.",
+            "en": "Al-Tabari connects al-Batin to divine nearness and comprehensive knowledge of all things; the verse ends by affirming complete divine knowledge."
+          },
+          "source_reference": "تفسير الطبري — Quran 57:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-079": {
+      "name_id": "PDF-HN-079",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-079-katheer-52-28",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 52:28",
+            "en": "Ibn Kathir — Quran 52:28"
+          },
+          "arabic_original": "نتضرع إليه فاستجاب [ الله ] لنا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വർഗവാസികൾ ഇഹലോകത്ത് അല്ലാഹുവിനോട് വിനയത്തോടെ പ്രാർത്ഥിച്ചതും അവൻ ഉത്തരം നൽകിയതുമാണ് സന്ദർഭമെന്ന് വ്യക്തമാക്കുന്നു. «الْبَرُّ الرَّحِيمُ» നേരിട്ട് വരുന്ന പദങ്ങളാണ്.",
+            "en": "Ibn Kathir places al-Barr al-Rahim within the speech of people of Paradise remembering their heartfelt prayers and divine response."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 52:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura52-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-079-tabary-52-28",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 52:28",
+            "en": "Al-Tabari — Quran 52:28"
+          },
+          "arabic_original": "يعني: اللطيف بعباده",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-ബർ» ദാസരോടു മൃദുലമായി കാരുണ്യം ചെയ്യുന്നവൻ എന്ന് വിശദീകരിക്കുന്നു; അവൻ തൗബ സ്വീകരിക്കുമ്പോൾ കരുണാനിധിയെന്ന അർഥവും നൽകുന്നു.",
+            "en": "Al-Tabari glosses al-Barr as gentle and gracious to His servants, in a passage celebrating worship without associating any partners."
+          },
+          "source_reference": "تفسير الطبري — Quran 52:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura52-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-080": {
+      "name_id": "PDF-HN-080",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-080-katheer-2-37",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 2:37",
+            "en": "Ibn Kathir — Quran 2:37"
+          },
+          "arabic_original": "إنه يتوب على من تاب إليه وأناب",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആദം നബി പശ്ചാത്തപിച്ച് അല്ലാഹുവിലേക്ക് തിരിഞ്ഞപ്പോൾ അല്ലാഹു തൗബ സ്വീകരിച്ചതായി വിശദീകരിക്കുന്നു. അദ്ദേഹം വിവിധ നിവേദനങ്ങൾ നിരത്തുകയും ഒരു റിപ്പോർട്ടിനെ സനദിലെ വിച്ഛേദമുള്ളതായും സൂചിപ്പിക്കുകയും ചെയ്യുന്നു; ബാക്കി പ്രാർത്ഥനകളെല്ലാം സഹീഹ് എന്ന് കരുതരുത്.",
+            "en": "Ibn Kathir explains Allah accepts the repentance of one who turns back to Him. He transmits several reported forms of Adam's words and explicitly notes a disconnected chain in one report."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:37",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya37.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-080-tabary-2-37",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 2:37",
+            "en": "Al-Tabari — Quran 2:37"
+          },
+          "arabic_original": "أن الكلمات التي تلقاهنّ آدمُ من ربه",
+          "translation": {
+            "ml": "ത്വബരി ആദം നബി ലഭിച്ച വാക്കുകൾ സംബന്ധിച്ച വ്യത്യസ്ത റിപ്പോർട്ടുകൾ പരിശോധിച്ച് ഖുർആൻ 7:23-ലെ «റബ്ബനാ ളലമ്നാ അൻഫുസനാ» എന്ന സമ്മതപ്രാർത്ഥനയ്ക്കാണ് കൂടുതൽ തെളിവുള്ളതെന്ന് തിരഞ്ഞെടുക്കുന്നു; മറ്റ് അധിക വാക്കുകളെ ഉറപ്പിക്കാൻ മതിയായ തെളിവില്ലെന്ന് പറയുന്നു.",
+            "en": "Al-Tabari reviews competing identifications of Adam's received words and favors the Quranic confession in 7:23; he does not accept unsupported extra words as certainly revealed to Adam."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:37",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya37.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-082": {
+      "name_id": "PDF-HN-082",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-082-katheer-4-149",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 4:149",
+            "en": "Ibn Kathir — Quran 4:149"
+          },
+          "arabic_original": "أن يعفو عن عباده مع قدرته على عقابهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ശിക്ഷിക്കാൻ കഴിവുണ്ടായിട്ടും അല്ലാഹു മാപ്പുനൽകുന്നതാണ് അൽ-അഫുവ്വ് എന്ന അർഥത്തിന്റെ ഹൃദയം എന്ന് പറയുന്നു; മനുഷ്യരും മറ്റുള്ളവരുടെ തെറ്റുകൾ പൊറുക്കാൻ പ്രോത്സാഹിപ്പിക്കപ്പെടുന്നു.",
+            "en": "Ibn Kathir explains that Allah pardons His servants despite having the power to punish them; the verse encourages forgiving another's wrongdoing."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:149",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya149.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-082-tabary-4-149",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 4:149",
+            "en": "Al-Tabari — Quran 4:149"
+          },
+          "arabic_original": "ذا عفوٍ عن خلقه، يصفح عمن عصَاه",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിന്റെ പാപമോചനം, അന്യായം ചെയ്തവരോടുള്ള ക്ഷമ എന്നിവ ഒന്നിച്ച് ചർച്ച ചെയ്യുന്നു. മാപ്പുനൽകാൻ കഴിയുന്ന സ്ഥാനത്തും ക്ഷമിക്കണമെന്ന ധാർമ്മിക സന്ദേശം അടിവരയിടുന്നു.",
+            "en": "Al-Tabari explains al-Afuww through pardoning sinners despite the ability to punish, and draws the ethical lesson of forgiving those who have wronged us."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:149",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya149.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-087": {
+      "name_id": "PDF-HN-087",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-087-katheer-3-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 3:9",
+            "en": "Ibn Kathir — Quran 3:9"
+          },
+          "arabic_original": "تجمع بين خلقك يوم معادهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മനുഷ്യരെ പുനരുത്ഥാനദിവസം ഒരുമിച്ചു കൂട്ടുകയും ഓരോരുത്തരുടെയും പ്രവർത്തിക്കനുസരിച്ച് വിധിക്കുകയും ചെയ്യുന്നതായി വിശദീകരിക്കുന്നു. «جَامِعُ النَّاسِ» എന്ന കൂട്ടുവാചകമാണ് ആയത്തിൽ, ഒറ്റ «الجامع» എന്നതല്ല.",
+            "en": "Ibn Kathir describes the gathering for Resurrection, judgment and recompense according to deeds. The verse says jami' an-nas, not the isolated definite heading al-Jami'."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-087-tabary-3-9",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 3:9",
+            "en": "Al-Tabari — Quran 3:9"
+          },
+          "arabic_original": "فالآية، وإن كانت قد خرجت مخرج الخبر",
+          "translation": {
+            "ml": "ത്വബരി ഇത് അറിയിപ്പിന്റെ ഭാഷയിൽ വന്നെങ്കിലും യാഥാർഥ്യത്തിൽ വിശ്വാസത്തിൽ ഉറച്ചുനിൽക്കാനും അന്ത്യദിനത്തിൽ കരുണ ലഭിക്കാനുമായി ഉന്നയിച്ച പ്രാർത്ഥനയാണെന്ന് വ്യക്തമാക്കുന്നു.",
+            "en": "Al-Tabari notes that the wording looks declarative but functions as a supplication for steadfastness, forgiveness and the final gathering."
+          },
+          "source_reference": "تفسير الطبري — Quran 3:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-088": {
+      "name_id": "PDF-HN-088",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-088-katheer-22-64",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 22:64",
+            "en": "Ibn Kathir — Quran 22:64"
+          },
+          "arabic_original": "وهو غني عما سواه وكل شيء فقير إليه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന് സൃഷ്ടികളുടെ ആവശ്യമില്ലെന്നും സകല സൃഷ്ടികളും അവനെ ആശ്രയിക്കുന്നെന്നും വിശദീകരിക്കുന്നു; 22:64-ൽ «الْغَنِيُّ الْحَمِيدُ» നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir explains Allah is independent of everything while all things depend upon Him; al-Ghani al-Hamid is explicitly named in the verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:64",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya64.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-092": {
+      "name_id": "PDF-HN-092",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-092-katheer-24-35",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — ഖുർആൻ 24:35",
+            "en": "Ibn Kathir — Quran 24:35"
+          },
+          "arabic_original": "هادي أهل السماوات والأرض",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിന്റെ വ്യാഖ്യാനത്തിൽ «അല്ലാഹു ആകാശഭൂമികളുടെ നൂർ» എന്നതിനെ സകല ജീവികൾക്കും സന്മാർഗം കാണിക്കുന്നവൻ എന്നാണ് വിശദീകരിക്കുന്നത്; പ്രകാശത്തിന്റെ രൂപകത്തിനു മറ്റു ആദ്യകാല വായനകളും രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir reports Ibn Abbas's interpretation of Allah as guide of those in heaven and earth, while also preserving early alternatives for the parable of light."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 24:35",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya35.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        },
+        {
+          "id": "depth-vi-092-tabary-24-35",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 24:35",
+            "en": "Al-Tabari — Quran 24:35"
+          },
+          "arabic_original": "هادي من في السماوات والأرض",
+          "translation": {
+            "ml": "ത്വബരി «നൂർ» എന്നതിന് സന്മാർഗം കാണിക്കുന്നവൻ എന്ന അർഥത്തിന് മുൻഗണന നൽകുന്നു; ഖുർആനിലെ പ്രകാശരൂപകം വിശ്വാസിയുടെ ഹൃദയത്തിലുള്ള മാർഗദർശനത്തെ എങ്ങനെ ചിത്രീകരിക്കുന്നു എന്നും പറയുന്നു. എല്ലാ വ്യാഖ്യാനങ്ങളും ഒറ്റ നിർബന്ധിത ഭൗതികരൂപമല്ല.",
+            "en": "Al-Tabari explicitly prefers the interpretation 'guide of those in heaven and earth' and treats the luminous parable as guidance and revelation, while reporting other early readings."
+          },
+          "source_reference": "تفسير الطبري — Quran 24:35",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura24-aya35.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    },
+    "PDF-HN-093": {
+      "name_id": "PDF-HN-093",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-vi-093-tabary-22-54",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — ഖുർആൻ 22:54",
+            "en": "Al-Tabari — Quran 22:54"
+          },
+          "arabic_original": "وإن الله لمرشد الذين آمنوا بالله ورسوله",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു വിശ്വാസികളെ വ്യക്തമായ നേരായ വഴിയിലേക്കു നയിക്കുന്നവനാണ് എന്ന് വിശദീകരിക്കുന്നു. ഈ ആയത്തിലെ «لَهَادِ» എന്ന പദരൂപം «الهادي» എന്ന നിശ്ചിത രൂപവുമായി സമാനമല്ല; അർഥബന്ധം വ്യക്തമാക്കണം.",
+            "en": "Al-Tabari explains Allah leads believers to the clear and upright truth. The Quran prints lahadi, a predicative construction, rather than the definite independent heading al-Hadi."
+          },
+          "source_reference": "تفسير الطبري — Quran 22:54",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura22-aya54.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "പരാമർശിച്ച തഫ്സീർ പേജിൽനിന്നുള്ള ചെറിയ അറബി ഭാഗവും പണ്ഡിതന്റെ ആശയസംഗ്രഹവും. ഈ അഭിപ്രായം ഖുർആൻ/ഹദീസ് നിർദേശിച്ച പ്രത്യേക ജപസംഖ്യയല്ല.",
+            "en": "Brief Arabic passage actually checked against the cited tafsir and a named scholarly paraphrase. No independent count, timing or amulet prescription is inferred."
+          }
+        }
+      ]
+    }
+  }
+}
