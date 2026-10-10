@@ -774,6 +774,61 @@ try {
   assert.ok(depthVIII.profiles['PDF-HN-016'].scholarly.some(x=>x.translation.en.includes('grammatical case')));
   assert.ok(depthVIII.profiles['PDF-HN-021'].scholarly.some(x=>x.translation.en.includes('event')));
   console.log('PASS: 135 unique researched headings; 32 Arabic classical tafsir excerpts, three full Quran verses, and two source-critical records render in Malayalam/English.');
+
+  // Ninth pass: 15 independently researched headings must reach 150 unique IDs.
+  const depthIX = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthIX.json','utf8'));
+  const ixIds=Object.keys(depthIX.profiles);
+  assert.equal(ixIds.length,15);
+  const researchedIX=[...researchedVIII,...ixIds];
+  assert.equal(researchedIX.length,150);
+  assert.equal(new Set(researchedIX).size,150,'Ninth batch must not duplicate any of the previous 135 IDs.');
+  assert.ok(researchedIX.every(id=>coveredIds.has(id)));
+  let ninthNotes=0,ninthKathir=0,ninthTabari=0,ninthVerses=0;
+  const ninthSourceIds=new Set();
+  for(const [id,p] of Object.entries(depthIX.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=2,'At least two independently attributed tafsir notes per card.');
+    for(const record of [...p.scholarly,...p.evidence]){
+      assert.ok(!ninthSourceIds.has(record.id),`Duplicate IX record ID ${record.id}`);
+      ninthSourceIds.add(record.id);
+      assert.equal(record.review_status,'checked_against_digital_text');
+      assert.ok(record.arabic_original?.length>=10,'Arabic original must not be empty.');
+      assert.ok(record.translation?.ml && record.translation?.en);
+      assert.ok(record.source_scope?.ml && record.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(record.source_url));
+      assert.ok(!record.count&&!record.timing&&!record.steps,'Classical commentary cannot be turned into an invented ritual.');
+    }
+    for(const record of p.scholarly){
+      ninthNotes++;
+      if(record.source_url.includes('/katheer/'))ninthKathir++;
+      if(record.source_url.includes('/tabary/'))ninthTabari++;
+    }
+    for(const record of p.evidence){
+      ninthVerses++;
+      assert.equal(record.claim_kind,'complete_quran_verse_context');
+      assert.ok(record.source_reference.endsWith('(complete verse)'));
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const record of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(record.arabic_original)),`Original Arabic missing ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.translation[lang])),`Translation missing ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.source_scope[lang])),`Source status missing ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(record.source_url),`Source link missing ${id}/${record.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({ninthNotes,ninthKathir,ninthTabari,ninthVerses},
+    {ninthNotes:32,ninthKathir:16,ninthTabari:16,ninthVerses:2});
+  const kabir = depthIX.profiles['PDF-HN-100'].evidence.find(e=>e.source_reference.includes('13:9'));
+  assert.ok(kabir?.arabic_original.includes('الْكَبِيرُ الْمُتَعَالِ'));
+  const qadir = depthIX.profiles['PDF-HN-104'].evidence.find(e=>e.source_reference.includes('6:65'));
+  assert.ok(qadir?.arabic_original.includes('هُوَ الْقَادِرُ'));
+  assert.ok(depthIX.profiles['PDF-HN-041'].scholarly.some(e=>e.translation.en.includes('reckoning')));
+  assert.ok(depthIX.profiles['PDF-HN-103'].scholarly.some(e=>e.translation.en.includes('both attested readings')));
+  assert.ok(depthIX.profiles['PDF-HN-096'].scholarly.some(e=>e.translation.en.includes('plural')));
+  console.log('PASS: 150 unique deeply studied Holy Names, 32 new Arabic tafsir notes, two exact-name Quran verses, both-language reader rendering.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();

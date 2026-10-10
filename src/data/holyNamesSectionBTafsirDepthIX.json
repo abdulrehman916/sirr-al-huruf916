@@ -1,0 +1,781 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് ഇബ്നു കസീറിന്റെയും ത്വബരിയുടെയും നേരിട്ട് പരിശോധിച്ച 30 മൂല അറബി വ്യാഖ്യാനങ്ങൾ. ഖുർആനിലെ നിശ്ചിത പദരൂപം, ചരിത്രസന്ദർഭം, പണ്ഡിതാഭിപ്രായം എന്നിവ തിരിച്ചറിയുന്നു. ഖവാസ്സ്, കളം, എണ്ണങ്ങൾ സംബന്ധിച്ച പൂർണ ഗ്രന്ഥപരിശോധന ഇതോടെ പൂർത്തിയായിട്ടില്ല. «അൽ-കബീർ» (13:9), «അൽ-ഖാദിർ» (6:65) എന്നീ നേരിട്ടുള്ള ഖുർആൻ നാമരൂപങ്ങൾ രണ്ടു പൂർണ ആയത്തുകളോടും അധികം രണ്ടു 6:65 തഫ്സീർ വായനകളോടും സ്ഥിരീകരിച്ചു.",
+    "en": "Ninth additive deep-study layer: 15 previously unstudied canonical IDs, 30 actually inspected short original Arabic commentary excerpts (15 Ibn Kathir, 15 al-Tabari), individualized Malayalam and English scholarly analyses. Distinguishes original Quran forms, grammatical nuances and contexts from later isolated catalog names. This is not complete historical khawass or manuscript research. Corrects earlier loose links by giving complete directly attested Quran al-Kabir (13:9) and al-Qadir (6:65), with two additionally inspected exegetical notes for 6:65."
+  },
+  "profiles": {
+    "PDF-HN-030": {
+      "name_id": "PDF-HN-030",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-030-katheer-85-14",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 85:14",
+            "en": "Ibn Kathir — Quran 85:14"
+          },
+          "arabic_original": "أي يغفر ذنب من تاب إليه وخضع لديه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-ഗഫൂർ പശ്ചാത്തപിക്കുന്നവരുടെ പാപങ്ങൾ പൊറുക്കുന്നതായും അൽ-വദൂദിനെ സ്നേഹിക്കപ്പെടുന്നവനെന്ന ഇബ്നു അബ്ബാസിന്റെ വ്യാഖ്യാനമായും വിവരിക്കുന്നു. 85:14-ൽ രണ്ട് നാമങ്ങളും നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir interprets forgiveness for one who repents and cites Ibn Abbas's interpretation of al-Wadud as 'the Beloved'. Both al-Ghafur and al-Wadud occur explicitly in the verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:14",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya14.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-030-tabary-85-14",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 85:14",
+            "en": "Al-Tabari — Quran 85:14"
+          },
+          "arabic_original": "وهو ذو المغفرة لمن تاب إليه من ذنوبه، وذو المحبة له",
+          "translation": {
+            "ml": "ത്വബരി പാപങ്ങളിൽനിന്നു മടങ്ങുന്നവരോട് ക്ഷമയും സ്നേഹവും ചെയ്യുന്നവനെന്ന് അൽ-വദൂദ് വിശദീകരിക്കുന്നു. ഇബ്നു സൈദിന്റെ «റഹീം» എന്ന വ്യാഖ്യാനവും പ്രത്യേകം രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari ties al-Wadud to love for repentant servants, and separately transmits Ibn Zayd's reading relating it to mercy."
+          },
+          "source_reference": "تفسير الطبري — Quran 85:14",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura85-aya14.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-041": {
+      "name_id": "PDF-HN-041",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-041-katheer-4-86",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:86",
+            "en": "Ibn Kathir — Quran 4:86"
+          },
+          "arabic_original": "فالزيادة مندوبة ، والمماثلة مفروضة",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സലാമിനു അതിലേറെ നല്ല മറുപടി നൽകുന്നത് പ്രശംസനീയവും തുല്യമായ മറുപടി നൽകുന്നത് ബാധ്യതയുമാണെന്ന് വിശദീകരിക്കുന്നു. ഈ വചനത്തിന്റെ അവസാനം «حَسِيبًا» എന്നും വരുന്നു; നാമത്തിന്റെ എണ്ണമുള്ള വസീഫയല്ല.",
+            "en": "Ibn Kathir explains that improving a greeting is recommended while returning an equivalent greeting is obligatory. The verse ends with hasiban, not a fixed-count ritual."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:86",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-041-tabary-4-86",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 4:86",
+            "en": "Al-Tabari — Quran 4:86"
+          },
+          "arabic_original": "وأصل \" الحسيب \" في هذا الموضع عندي،\" فعيل \" من \" الحساب \"",
+          "translation": {
+            "ml": "ത്വബരി ഇവിടെ ഹസീബിന്റെ അടിസ്ഥാന അർഥം കണക്കെടുപ്പ്/എണ്ണിപ്പരിശോധിക്കൽ എന്നാണ് മുൻഗണന നൽകുന്നത്; «മതിയായവൻ» മാത്രം എന്ന മറ്റൊരു ഭാഷാവ്യാഖ്യാനത്തെ തെറ്റാണെന്നും അദ്ദേഹം വിമർശിക്കുന്നു.",
+            "en": "Al-Tabari explicitly favors hasib derived from reckoning/accounting and rejects another proposed reading that reduces the word here simply to 'sufficient'."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:86",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-042": {
+      "name_id": "PDF-HN-042",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-042-katheer-55-27",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 55:27",
+            "en": "Ibn Kathir — Quran 55:27"
+          },
+          "arabic_original": "ذو العظمة والكبرياء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിന്റെ വ്യാഖ്യാനമായി «ദുൽ ജലാലി വൽ ഇക്‌റാം» മഹത്വവും പ്രതാപവും ഉള്ളവൻ എന്ന് പറയുന്നു. ഖുർആനിൽ «الْجَلِيلُ» എന്ന ഒറ്റ സ്വതന്ത്ര നാമമല്ല, «ذُو الْجَلَالِ» എന്ന വാക്യപ്രയോഗമാണ്.",
+            "en": "Ibn Kathir transmits Ibn Abbas's interpretation of 'Possessor of Majesty and Honor'. The Quran uses dhu al-jalal, not the separate definite heading al-Jalil."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-042-tabary-55-27",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 55:27",
+            "en": "Al-Tabari — Quran 55:27"
+          },
+          "arabic_original": "وذو الجلال والإكرام من نعت الوجه فلذلك رفع ذو",
+          "translation": {
+            "ml": "ത്വബരി «ذُو» എന്ന പദത്തിന്റെ വ്യാകരണസ്ഥാനവും ഇബ്നു മസ്ഊദിൽനിന്നു രേഖപ്പെടുത്തിയ «ذِي» എന്ന വായനയുടെ വ്യത്യാസവും സൂചിപ്പിക്കുന്നു. ഇതൊരു ഖുർആൻ പാഠ/വ്യാകരണ വിഷയം ആണ്.",
+            "en": "Al-Tabari explains the nominative dhu as qualifying 'Face' and reports a different grammatical reading dhi attributed to Ibn Mas'ud; this is a Quranic wording nuance, not an occult prescription."
+          },
+          "source_reference": "تفسير الطبري — Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura55-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-044": {
+      "name_id": "PDF-HN-044",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-044-katheer-18-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 18:10",
+            "en": "Ibn Kathir — Quran 18:10"
+          },
+          "arabic_original": "اجعل عاقبتنا رشدا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഗുഹയിലെ യുവാക്കൾ മതം കാത്ത് രക്ഷപ്പെട്ടപ്പോൾ ചെയ്ത പ്രാർത്ഥനയെ, കാര്യങ്ങളുടെ നല്ല അന്ത്യം ചോദിക്കുന്ന അപേക്ഷയായി വിശദീകരിക്കുന്നു. «رَشَدًا» എന്ന പദമാണ്; അർ-റശീദ് എന്ന ഒറ്റ നാമം ആയത്തിലില്ല.",
+            "en": "Ibn Kathir reads the companions' prayer as seeking a good and rightly guided outcome while protecting their faith. The verse says rashadan, not the isolated name al-Rashid."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 18:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-044-tabary-18-10",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 18:10",
+            "en": "Al-Tabari — Quran 18:10"
+          },
+          "arabic_original": "يسّر لنا بما نبتغي وما نلتمس من رضاك",
+          "translation": {
+            "ml": "ത്വബരി പീഡനത്തിൽനിന്നു മതം കാക്കാൻ അഭയം തേടിയവർ അല്ലാഹുവിന്റെ പ്രീതിയിലേക്കുള്ള ശരിയായ വഴി ചോദിച്ചുവെന്ന് വിശദീകരിക്കുന്നു; യുവാക്കളുടെ മുഴുവൻ കഥയെ ഈ ചെറിയ അപേക്ഷയ്ക്ക് പകരമാക്കരുത്.",
+            "en": "Al-Tabari explains the youths sought ease in pursuing God's pleasure and fleeing idolatry. He reports differing historical narratives, which should not be conflated with the Quranic prayer."
+          },
+          "source_reference": "تفسير الطبري — Quran 18:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura18-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-045": {
+      "name_id": "PDF-HN-045",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-045-katheer-16-127",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 16:127",
+            "en": "Ibn Kathir — Quran 16:127"
+          },
+          "arabic_original": "إنما ينال بمشيئة الله وإعانته ، وحوله وقوته",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രവാചകനോട് ക്ഷമിക്കാൻ കല്പിക്കുന്ന ആയത്തിൽ ആ ക്ഷമ അല്ലാഹുവിന്റെ സഹായത്തോടെയാണ് സാധ്യമാകുന്നതെന്ന് വിശദീകരിക്കുന്നു. «الصبر» എന്ന ഗുണമാണ്; «الصبور» എന്ന നിശ്ചിത സ്വതന്ത്ര നാമമല്ല.",
+            "en": "Ibn Kathir explains patience depends on divine assistance and strength. The verse commands sabr and does not itself print the standalone nominal al-Sabur."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 16:127",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya127.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-045-tabary-16-127",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 16:127",
+            "en": "Al-Tabari — Quran 16:127"
+          },
+          "arabic_original": "وما صبرك إن صبرت إلا بمعونة الله ، وتوفيقه إياك لذلك",
+          "translation": {
+            "ml": "ത്വബരി ക്ഷമ അല്ലാഹുവിന്റെ തൗഫീഖ് മൂലം ലഭിക്കുന്നതാണെന്ന് വിശദീകരിക്കുന്നു; «ضَيْقٍ / ضِيقٍ» എന്ന പാരായണഭേദവും ഭാഷാപരമായി ചർച്ച ചെയ്യുന്നു.",
+            "en": "Al-Tabari attributes patience to God's aid and guidance; he additionally discusses the vocalization variants dayq/diq in the verse."
+          },
+          "source_reference": "تفسير الطبري — Quran 16:127",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura16-aya127.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-056": {
+      "name_id": "PDF-HN-056",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-056-katheer-42-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:9",
+            "en": "Ibn Kathir — Quran 42:9"
+          },
+          "arabic_original": "هو الولي الحق الذي لا تنبغي العبادة إلا له وحده",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ യഥാർഥ രക്ഷാധികാരിയായ അല്ലാഹുവിനു മാത്രമാണ് ആരാധനയെന്നതും അവൻ മരിച്ചവരെ ഉയിർപ്പിക്കാൻ കഴിവുള്ളവനെന്നതും വ്യക്തമാക്കുന്നു. «الْوَلِيُّ» നേരിട്ട് വരുന്ന നാമമാണ്.",
+            "en": "Ibn Kathir affirms Allah as the true Guardian alone deserving worship, able to raise the dead; the definite form al-Wali explicitly occurs."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-056-tabary-42-9",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 42:9",
+            "en": "Al-Tabari — Quran 42:9"
+          },
+          "arabic_original": "فالله هو وليّ أوليائه, وإياه فليتخذوا وليا",
+          "translation": {
+            "ml": "ത്വബരി രക്ഷാധികാരത്തെ വിഗ്രഹാരാധനയെ നിരസിക്കുന്ന തൗഹീദ് സന്ദർഭത്തിൽ വിശദീകരിക്കുന്നു; ദൈവിക നാമം വ്യക്തികളെ നിയന്ത്രിക്കാനുള്ള പുതിയ ക്രമമായി മാറ്റരുത്.",
+            "en": "Al-Tabari locates divine guardianship in rejection of idols and affirming Allah as the One to take as Protector, not a human coercion formula."
+          },
+          "source_reference": "تفسير الطبري — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-062": {
+      "name_id": "PDF-HN-062",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-062-katheer-2-255",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:255",
+            "en": "Ibn Kathir — Quran 2:255"
+          },
+          "arabic_original": "هذه آية الكرسي ولها شأن عظيم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആയത്തുൽ കുർസിയുടെ ശ്രേഷ്ഠതയെക്കുറിച്ചുള്ള നിരവധി നിവേദനങ്ങൾ രേഖപ്പെടുത്തുന്നു; അവയുടെ സനദുകൾ എല്ലാം ഒരേ നിലവാരമാണെന്ന് പറയരുത്. «الْحَيُّ» ആയത്തിന്റെ തുടക്കത്തിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir discusses several distinct reports concerning Ayat al-Kursi and their merits; these differ in chains and grading. Al-Hayy itself occurs at the start of the verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-062-tabary-2-255",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:255",
+            "en": "Al-Tabari — Quran 2:255"
+          },
+          "arabic_original": "الذي له الحياة الدائمة، والبقاء الذي لا أول له بحد",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഹയ്യിനെ തുടക്കമോ അവസാനമോ ഇല്ലാത്ത സ്ഥിരജീവിതമുള്ളവൻ എന്നു വിശദീകരിക്കുന്നു; സൃഷ്ടികളുടെ പരിമിത ജീവിതത്തോട് താരതമ്യം ചെയ്യുന്നു.",
+            "en": "Al-Tabari interprets al-Hayy as possessing life without a finite beginning or ending, unlike the bounded lives of created beings."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-063": {
+      "name_id": "PDF-HN-063",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-063-katheer-2-255",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:255",
+            "en": "Ibn Kathir — Quran 2:255"
+          },
+          "arabic_original": "لا تأخذه سنة ولا نوم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആയത്തുൽ കുർസിയുടെ പൂർണ സന്ദർഭത്തിലൂടെ അല്ലാഹുവിനെ മയക്കമോ ഉറക്കമോ ബാധിക്കുന്നില്ലെന്ന് വിശദീകരിക്കുന്നു. «الْقَيُّومُ» നാമം നേരിട്ട് വരുന്നു; പാരായണഫലത്തെക്കുറിച്ചുള്ള ഹദീസുകളുടെ ഗ്രേഡിംഗ് വേറിട്ടതാണ്.",
+            "en": "Ibn Kathir places al-Qayyum beside Allah's freedom from drowsiness and sleep. Claims about a particular recitation effect require their own hadith evidence."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-063-tabary-2-255",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:255",
+            "en": "Al-Tabari — Quran 2:255"
+          },
+          "arabic_original": "القائم برزق ما خلق وحفظه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-ഖയ്യും സൃഷ്ടികളുടെ ഉപജീവനവും സംരക്ഷണവും നിലനിർത്തുന്നവനെന്ന് വിശദീകരിക്കുന്നു; മുജാഹിദ്, റബീഅ് എന്നിവരുടെ കൂടുതൽ വ്യാഖ്യാനങ്ങളും രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari interprets al-Qayyum as sustaining and guarding creation, and transmits related readings of Mujahid and al-Rabi'."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:255",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya255.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-095": {
+      "name_id": "PDF-HN-095",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-095-katheer-55-27",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 55:27",
+            "en": "Ibn Kathir — Quran 55:27"
+          },
+          "arabic_original": "فإن الرب - تعالى وتقدس - لا يموت ، بل هو الحي الذي لا يموت أبدا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഭൂമിയിലെ സകലവും ഇല്ലാതാകുമ്പോഴും അല്ലാഹു നശിക്കാത്തവനാണെന്ന് വിശദീകരിക്കുന്നു. ആയത്തിൽ «وَيَبْقَىٰ» എന്ന ക്രിയയാണ്; «الْبَاقِي» എന്ന ഒറ്റ നാമം നേരിട്ട് ഇല്ല.",
+            "en": "Ibn Kathir explains that all created things perish while Allah remains eternally. The Quran says wa-yabqa, a verb, rather than the isolated definite heading al-Baqi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-095-tabary-55-27",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 55:27",
+            "en": "Al-Tabari — Quran 55:27"
+          },
+          "arabic_original": "ويبقى وجه ربك يا محمد ذو الجلال والإكرام",
+          "translation": {
+            "ml": "ത്വബരി ദൈവിക നിലനിൽപ്പും മഹത്വവും ഉൾക്കൊള്ളുന്ന ഈ പദസമുച്ചയം വിവരിക്കുന്നു; «ذُو»യും «ذِي»യും സംബന്ധിച്ച പാരായണ/വ്യാകരണഭേദവും കുറിക്കുന്നു.",
+            "en": "Al-Tabari comments on the remaining Divine Face and Majesty, noting the differing dhu/dhi grammatical reading."
+          },
+          "source_reference": "تفسير الطبري — Quran 55:27",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura55-aya27.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-096": {
+      "name_id": "PDF-HN-096",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-096-katheer-15-23",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 15:23",
+            "en": "Ibn Kathir — Quran 15:23"
+          },
+          "arabic_original": "وأخبر أنه - تعالى - يرث الأرض ومن عليها وإليه يرجعون",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഭൂമിയും അതിലുള്ളവരും അവസാനം അല്ലാഹുവിന്റെ പൂർണ അധികാരത്തിലേക്കു മടങ്ങുന്നതായി വിശദീകരിക്കുന്നു. ഖുർആനിൽ «الْوَارِثُونَ» എന്ന ബഹുവചന രൂപമാണ്, «الْوَارِثُ» എന്ന ഒറ്റ നാമമല്ല.",
+            "en": "Ibn Kathir describes Allah as ultimately inheriting earth and everything upon it. The Quran uses the plural form al-warithun, not the identical singular heading al-Warith."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 15:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-096-tabary-15-23",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 15:23",
+            "en": "Al-Tabari — Quran 15:23"
+          },
+          "arabic_original": "ونحن نرث الأرض ومن عليها بأن نميت جميعهم",
+          "translation": {
+            "ml": "ത്വബരി ജീവനുള്ളവർ മരിക്കുമ്പോൾ നിലനിൽക്കുന്ന പൂർണ അധികാരം അല്ലാഹുവിനാണെന്ന് വ്യാഖ്യാനിക്കുന്നു. വ്യാകരണപരമായി «نَحْنُ الْوَارِثُونَ» എന്ന ബഹുവചനപ്രയോഗം ശ്രദ്ധിക്കണം.",
+            "en": "Al-Tabari links ultimate inheritance to mortality of all beings; preserve the first-person plural Quranic expression nahnu al-warithun."
+          },
+          "source_reference": "تفسير الطبري — Quran 15:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura15-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-100": {
+      "name_id": "PDF-HN-100",
+      "evidence": [
+        {
+          "id": "depth-ix-full-100-13-9",
+          "title": {
+            "ml": "ഖുർആൻ 13:9 — കൃത്യ നാമരൂപമുള്ള പൂർണ ആയത്ത്",
+            "en": "Complete Quran 13:9 — exact Divine Name form"
+          },
+          "arabic_original": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+          "translation": {
+            "ml": "മറഞ്ഞതും പ്രത്യക്ഷമായതും അറിയുന്നവനും എല്ലാ വസ്തുക്കൾക്കും മീതെ മഹത്വമുള്ളവനും ഉന്നതനുമാണ് അല്ലാഹു.",
+            "en": "Allah knows the unseen and the witnessed, the Supremely Great and Exalted."
+          },
+          "source_reference": "Quran 13:9 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ പൂർണ ആയത്തിൽ «الْكَبِيرُ» നേരിട്ട് വരുന്നു; പഴയ 2:255 തെളിവിൽ അൽ-അലിയ്യ്, അൽ-അളീം എന്നിവയാണ്; അവയെ അൽ-കബീറിന്റെ നേരിട്ടുള്ള തെളിവായി ചിത്രീകരിക്കരുത്.",
+            "en": "This complete verse explicitly prints al-Kabir. Quran 2:255 instead prints al-Ali al-Azim, so it should not be mislabeled an exact occurrence of al-Kabir."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-ix-100-katheer-13-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 13:9",
+            "en": "Ibn Kathir — Quran 13:9"
+          },
+          "arabic_original": "الكبير ) الذي هو أكبر من كل شيء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അൽ-കബീർ എല്ലാറ്റിനും മീതെയുള്ള മഹത്വമായി വ്യക്തമാക്കുന്നു. ഈ കാർഡിലെ പഴയ 2:255-നേക്കാൾ 13:9 കൂടുതൽ നേരിട്ടുള്ള തെളിവാണ്: «الْكَبِيرُ» ഇവിടെ വ്യക്തമായി വരുന്നു.",
+            "en": "Ibn Kathir explains al-Kabir as greater than everything. Unlike the old thematic cross-reference to Quran 2:255, 13:9 contains the direct definitive form al-Kabir."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-100-tabary-13-9",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 13:9",
+            "en": "Al-Tabari — Quran 13:9"
+          },
+          "arabic_original": "الكبير الذي كل شيء دونه",
+          "translation": {
+            "ml": "ത്വബരി അൽ-കബീർ എല്ലാറ്റിനും മീതെയുള്ള മഹത്വമുള്ളവൻ എന്ന് പറയുന്നു; അൽ-മുതആൽ എന്ന അടുത്ത നാമവുമായി അതിന്റെ ബന്ധവും വ്യക്തമാക്കുന്നു.",
+            "en": "Al-Tabari describes al-Kabir as greater than everything beneath Him, closely paired with al-Muta'al in the same actual verse."
+          },
+          "source_reference": "تفسير الطبري — Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-103": {
+      "name_id": "PDF-HN-103",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-103-katheer-39-36",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 39:36",
+            "en": "Ibn Kathir — Quran 39:36"
+          },
+          "arabic_original": "يعني أنه تعالى يكفي من عبده وتوكل عليه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിനെ ആശ്രയിക്കുന്ന ദാസനെ അവൻ മതിയാകും എന്ന് വിശദീകരിക്കുന്നു; വിഗ്രഹങ്ങൾ ഭീഷണിപ്പെടുത്തുന്നതിനെക്കുറിച്ചുള്ള സന്ദർഭമാണിത്. ഖുർആനിൽ «بِكَافٍ» ആണ്; «الْكَافِي» എന്ന ഒറ്റ നാമമല്ല.",
+            "en": "Ibn Kathir interprets Allah as sufficient for His trusting servant against threats associated with idols. The actual Quranic form is bi-kafin, not the independent definite al-Kafi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya36.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-103-tabary-39-36",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 39:36",
+            "en": "Al-Tabari — Quran 39:36"
+          },
+          "arabic_original": "فبأيتهما قرأ القارئ فمصيب لصحة مَعْنَيَيْهَا",
+          "translation": {
+            "ml": "ത്വബരി 39:36-ൽ «عَبْدَهُ» ഏകവചനവും «عِبَادَهُ» ബഹുവചനവും വായിക്കപ്പെടുന്നതായി രേഖപ്പെടുത്തി രണ്ടിന്റെയും അർഥം അംഗീകരിക്കുന്നു. കാർഡ് ഈ വായനാവ്യത്യാസം മറച്ചുവയ്ക്കരുത്.",
+            "en": "Al-Tabari accepts both attested readings of the verse referring to Allah's servant or His servants; neither supports a count-based formula."
+          },
+          "source_reference": "تفسير الطبري — Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura39-aya36.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-104": {
+      "name_id": "PDF-HN-104",
+      "evidence": [
+        {
+          "id": "depth-ix-full-104-6-65",
+          "title": {
+            "ml": "ഖുർആൻ 6:65 — കൃത്യ നാമരൂപമുള്ള പൂർണ ആയത്ത്",
+            "en": "Complete Quran 6:65 — exact Divine Name form"
+          },
+          "arabic_original": "قُلْ هُوَ الْقَادِرُ عَلَىٰ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ۗ انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ لَعَلَّهُمْ يَفْقَهُونَ",
+          "translation": {
+            "ml": "പറയുക: നിങ്ങളുടെ മുകളിൽനിന്നോ കാലുകളുടെ അടിയിൽനിന്നോ ശിക്ഷ അയയ്ക്കാനും, നിങ്ങളെ വിഭിന്ന കക്ഷികളാക്കി പരസ്പര സംഘർഷം അനുഭവിപ്പിക്കാനും കഴിവുള്ളവൻ അവനാണ്. അവർ മനസ്സിലാക്കാൻ നാം തെളിവുകൾ പലവിധം വിശദീകരിക്കുന്നതു നോക്കുക.",
+            "en": "Say: He has power to send punishment from above or beneath you, or divide you into factions and make you taste one another's violence. See how the signs are explained in diverse ways so they may understand."
+          },
+          "source_reference": "Quran 6:65 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ പൂർണ ആയത്തിൽ «الْقَادِرُ» നേരിട്ട് വരുന്നു. മുൻ കാർഡിലെ 42:9-ൽ «قَدِيرٌ» എന്ന വേറൊരു രൂപമാണ്. മുന്നറിയിപ്പിലെ ശിക്ഷ മറ്റുള്ളവർക്കെതിരെ ആചാരമായി ഉപയോഗിക്കാനുള്ള നിർദേശം അല്ല.",
+            "en": "The exact definite word al-Qadir appears here, unlike the earlier qadirun in Quran 42:9. This is a warning about divine power and division, not a ritual for attacking people."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-ix-104-katheer-42-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:9",
+            "en": "Ibn Kathir — Quran 42:9"
+          },
+          "arabic_original": "فإنه القادر على إحياء الموتى وهو على كل شيء قدير",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ പുനരുത്ഥാനശക്തി വിശദീകരിക്കുന്നു. വചനത്തിന്റെ പദരൂപം «قَدِيرٌ» ആണ്; കാർഡിന്റെ «الْقَادِر» എന്ന കൃത്യമായ സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "Ibn Kathir affirms the capacity to resurrect; the actual Quranic predicate is qadirun, not the definite, differently formed heading al-Qadir."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-104-tabary-42-9",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 42:9",
+            "en": "Al-Tabari — Quran 42:9"
+          },
+          "arabic_original": "والله القادر على إحياء خلقه من بعد مماتهم",
+          "translation": {
+            "ml": "ത്വബരി സൃഷ്ടികളെ വീണ്ടും ഉയിർപ്പിക്കുന്ന കഴിവ് വിവരിക്കുന്നു; 42:9-ലെ «قَدِيرٌ» എന്ന പദത്തെയും തഫ്സീറിലെ «الْقَادِر» എന്ന വിശദീകരണത്തെയും വേർതിരിക്കുന്നു.",
+            "en": "Al-Tabari uses al-qadir in his commentary gloss but Quran 42:9 itself says qadirun, a grammatical distinction to keep explicit."
+          },
+          "source_reference": "تفسير الطبري — Quran 42:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura42-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-104-katheer-6-65-exact",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — നേരിട്ടുള്ള അൽ-ഖാദിർ, ഖുർആൻ 6:65",
+            "en": "Ibn Kathir — explicit al-Qadir Quran 6:65"
+          },
+          "arabic_original": "قال : هذه للمشركين",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 6:65-ൽ «الْقَادِرُ» കൃത്യ നാമരൂപത്തോടെ വന്നതായി വിശദീകരിക്കുമ്പോൾ ഹസൻ അൽ-ബസ്വരിയുടെ ഈ ശിക്ഷാമുന്നറിയിപ്പ് മുശ്‌രിക്കുകൾക്ക് ബാധകമാണെന്ന അഭിപ്രായവും ഉദ്ധരിക്കുന്നു. ശിക്ഷയെ ആളുകളെ ഉപദ്രവിക്കാനുള്ള ദിക്‌ർ ക്രമമാക്കരുത്.",
+            "en": "Ibn Kathir reports al-Hasan's reading that the warning concerns polytheists. Unlike the earlier 42:9 link, Quran 6:65 explicitly uses al-Qadir. The warning is not a human license to harm others."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:65",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "exact_quranic_name_and_attributed_tafsir",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള ഖുർആൻ നാമരൂപം 6:65-ൽ. ഇത് ശിക്ഷാമുന്നറിയിപ്പാണ്; മറ്റൊരാളെ ഉപദ്രവിക്കാൻ ആചാരക്രമമല്ല.",
+            "en": "Direct Quranic definite al-Qadir in 6:65. The verse concerns warning and judgment; it does not prescribe any coercive rite."
+          }
+        },
+        {
+          "id": "depth-ix-104-tabary-6-65-exact",
+          "title": {
+            "ml": "ത്വബരി — നേരിട്ടുള്ള അൽ-ഖാദിർ, ഖുർആൻ 6:65",
+            "en": "Al-Tabari — explicit al-Qadir Quran 6:65"
+          },
+          "arabic_original": "هو القادر على أن يرسل عليكم عذابًا من فوقكم أو من تحت أرجلكم",
+          "translation": {
+            "ml": "ത്വബരി 6:65-ൽ ശിക്ഷവരുത്താൻ അല്ലാഹുവിന് കഴിവുണ്ടെന്ന മുന്നറിയിപ്പ് ഏകദൈവവിശ്വാസത്തോട് ബന്ധിപ്പിക്കുന്നു; മുഖ്യ അഭിസംബോധിതർ വിഗ്രഹാരാധകരാണെന്നതാണ് അദ്ദേഹത്തിന്റെ തിരഞ്ഞെടുത്ത സന്ദർഭം. ഖുർആനിലെ «الْقَادِرُ» നേരിട്ടുള്ള രൂപമാണ്.",
+            "en": "Al-Tabari interprets the verse as a warning to the idolaters, preferring this audience while recording other reports. Al-Qadir occurs directly and is not merely inferred from another verbal form."
+          },
+          "source_reference": "تفسير الطبري — Quran 6:65",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "exact_quranic_name_and_attributed_tafsir",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള ഖുർആൻ നാമരൂപം 6:65-ൽ. ഇത് ശിക്ഷാമുന്നറിയിപ്പാണ്; മറ്റൊരാളെ ഉപദ്രവിക്കാൻ ആചാരക്രമമല്ല.",
+            "en": "Direct Quranic definite al-Qadir in 6:65. The verse concerns warning and judgment; it does not prescribe any coercive rite."
+          }
+        }
+      ]
+    },
+    "PDF-HN-106": {
+      "name_id": "PDF-HN-106",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-106-katheer-11-57",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:57",
+            "en": "Ibn Kathir — Quran 11:57"
+          },
+          "arabic_original": "أي : شاهد وحافظ لأقوال عباده وأفعالهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു ദാസരുടെ വാക്കുകൾക്കും പ്രവൃത്തികൾക്കും സാക്ഷിയും സംരക്ഷകനുമാണെന്ന് വിവരിക്കുന്നു. ഹൂദ് നബിയുടെ തൗഹീദ് ആഹ്വാനത്തിന്റെ അവസാനത്തിൽ «حَفِيظٌ» എന്ന് വരുന്നു.",
+            "en": "Ibn Kathir interprets hafiz as witnessing and preserving the words and deeds of servants in Hud's monotheistic appeal."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-106-tabary-11-57",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 11:57",
+            "en": "Al-Tabari — Quran 11:57"
+          },
+          "arabic_original": "إن ربي على جميع خلقه ذو حفظ وعلم",
+          "translation": {
+            "ml": "ത്വബരി സൃഷ്ടികളെ മുഴുവൻ സംരക്ഷണത്തിലും അറിവിലും ഉൾക്കൊള്ളുന്നവനായി അല്ലാഹുവിനെ വിശദീകരിക്കുന്നു; വചനത്തിലെ കൃത്യരൂപം «حَفِيظٌ» ആണ്, «الْحَفِيظُ» അല്ല.",
+            "en": "Al-Tabari explains encompassing preservation and knowledge over all creatures; the verse prints hafizun, not the standalone definite form al-Hafiz."
+          },
+          "source_reference": "تفسير الطبري — Quran 11:57",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-108": {
+      "name_id": "PDF-HN-108",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-ix-108-katheer-57-1",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 57:1",
+            "en": "Ibn Kathir — Quran 57:1"
+          },
+          "arabic_original": "الحكيم ) في خلقه ، وأمره ، وشرعه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടിയിലും കല്പനയിലും നിയമത്തിലും അല്ലാഹുവിന്റെ ജ്ഞാനപൂർവമായ തീരുമാനം രേഖപ്പെടുത്തുന്നു. «الْحَكِيمُ» ഖുർആൻ 57:1-ൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir explains divine wisdom in creation, command and legislation; al-Hakim is an explicit Quranic Name in 57:1."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 57:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura57-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-108-tabary-57-1",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 57:1",
+            "en": "Al-Tabari — Quran 57:1"
+          },
+          "arabic_original": "الْحَكِيمُ ) في تدبيره أمرهم، وتصريفه إياهم فيما شاء وأحبّ",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു സൃഷ്ടികളുടെ കാര്യങ്ങൾ നിയന്ത്രിക്കുന്നതിലെ ജ്ഞാനമാണ് അൽ-ഹകീം എന്നു വ്യക്തമാക്കുന്നു; വചനത്തിൽ അൽ-അസീസിനോടൊപ്പം ഇത് വരുന്നു.",
+            "en": "Al-Tabari relates al-Hakim to wise administration of creation and cites its pairing with al-Aziz in the verse."
+          },
+          "source_reference": "تفسير الطبري — Quran 57:1",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura57-aya1.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_original_arabic_tafsir",
+          "source_scope": {
+            "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
+            "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        }
+      ]
+    }
+  }
+}
