@@ -132,7 +132,7 @@ try {
   const coverage = JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8'));
   const coveredIds = new Set(coverage.cards.map(card => card.name_id));
   const newIds = Object.keys(nextResearch.profiles);
-  assert.equal(newIds.length, 8);
+  assert.equal(newIds.length, 12);
   assert.equal(new Set(newIds).size, newIds.length);
   assert.ok(newIds.every(id => coveredIds.has(id)), 'Expansion has a name not on the stored 160-card list.');
   for (const [id, profile] of Object.entries(nextResearch.profiles)) {
@@ -163,9 +163,19 @@ try {
       }
     }
   }
+  const saburReport = nextResearch.profiles['PDF-HN-045'].hadith[0];
+  assert.equal(saburReport.source_reference, 'Sahih al-Bukhari 6099 · Book 78, Hadith 126');
+  assert.ok(saburReport.arabic_original.includes('أَصْبَرَ') && !saburReport.arabic_original.includes('الصَّبُورُ'));
+  for (const language of ['ml', 'en']) {
+    const html = render(null, 'PDF-HN-045', language, { pdf_name_id: 'PDF-HN-045' });
+    assert.ok(html.includes('data-section-b-group="hadith"'));
+    assert.ok(html.includes(escape(saburReport.arabic_original)));
+    assert.ok(html.includes(escape(saburReport.translation[language])));
+    assert.ok(html.includes(saburReport.source_url));
+  }
   assert.equal(nextResearch.profiles['PDF-HN-021'].evidence[0].claim_kind, 'thematic_relation_not_exact_name');
   assert.equal(nextResearch.profiles['PDF-HN-030'].evidence[0].claim_kind, 'direct_quranic_text');
-  console.log('PASS: eight new name profiles show 16 Quran references, tafsir explanations and every source-linked prayer in both languages.');
+  console.log('PASS: twelve new name profiles show 24 Quran references, 24 tafsir summaries, one hadith and all source-linked prayers in both languages.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
