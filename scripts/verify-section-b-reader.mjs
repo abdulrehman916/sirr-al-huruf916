@@ -95,7 +95,7 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 27);
+  assert.equal(prophetic.entries.length, 28);
   assert.ok(topical.topics.length >= 18);
   const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
@@ -535,6 +535,66 @@ try {
   assert.ok(depthIV.profiles['PDF-HN-0172'].scholarly.some(x=>x.source_url.includes('/tabary/')),
     'Al-Muqit must retain al-Tabari alternative readings and his chosen interpretation');
   console.log('PASS: 75 individually deep-studied headings, 20 additional original-Arabic tafsir explanations and authentic Tirmidhi 2140 heart dua.');
+
+  // Fifth source-critical pass: 15 new names, not repeated from the first 75.
+  const depthV = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthV.json','utf8'));
+  assert.equal(Object.keys(depthV.profiles).length,15);
+  const allFiveDeepIds = [...allDeepIds,...Object.keys(depthV.profiles)];
+  assert.equal(allFiveDeepIds.length,90);
+  assert.equal(new Set(allFiveDeepIds).size,90,'Every deep-study addition needs a different canonical card ID.');
+  assert.ok(allFiveDeepIds.every(x=>coveredIds.has(x)));
+  let fifthTafsir=0, fifthKathir=0, fifthTabari=0, fifthFullVerse=0;
+  for(const [id,p] of Object.entries(depthV.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=1);
+    const sourceIds=new Set();
+    for(const item of [...p.scholarly,...p.evidence]){
+      assert.ok(!sourceIds.has(item.id),`Duplicate source: ${id}/${item.id}`);
+      sourceIds.add(item.id);
+      assert.equal(item.review_status,'checked_against_digital_text');
+      assert.ok(item.translation.ml && item.translation.en);
+      assert.ok(item.arabic_original?.length>20);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(item.source_url));
+      assert.ok(!item.count&&!item.timing,'Tafsir entries cannot establish invented numbered rites.');
+    }
+    for(const item of p.scholarly){
+      fifthTafsir++;
+      if(item.source_url.includes('/katheer/'))fifthKathir++;
+      if(item.source_url.includes('/tabary/'))fifthTabari++;
+    }
+    for(const item of p.evidence){
+      fifthFullVerse++;
+      assert.equal(item.claim_kind,'complete_quran_verse_context');
+      assert.ok(item.source_reference.includes('complete verse'));
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const item of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(item.arabic_original)),`Arabic original not visible ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(escape(item.translation[lang])),`Bilingual meaning missing ${id}/${item.id}/${lang}`);
+        assert.ok(html.includes(item.source_url),`Source link missing ${id}/${item.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({fifthTafsir,fifthKathir,fifthTabari,fifthFullVerse},
+    {fifthTafsir:23,fifthKathir:15,fifthTabari:8,fifthFullVerse:5});
+  assert.ok(depthV.profiles['PDF-HN-105'].evidence[0].arabic_original.includes('الْخَلَّاقُ'));
+  assert.ok(depthV.profiles['PDF-HN-068'].evidence[0].arabic_original.includes('مُّقْتَدِرٍ'));
+  const weakNarrationWarning=depthV.profiles['PDF-HN-135'].scholarly.find(x=>x.source_reference.includes('katheer')||x.source_url.includes('/katheer/'));
+  assert.ok(weakNarrationWarning.translation.en.includes('unsound'),'Do not turn the weak garden-harm report into authentic prescription.');
+  const frequent=prophetic.entries.find(x=>x.id==='hadith-bukhari-6389-most-frequent-quran-dua');
+  assert.ok(frequent?.arabic_original.includes('اللَّهُمَّ رَبَّنَا آتِنَا'));
+  assert.ok(frequent.source_reference.includes('Bukhari 6389'));
+  assert.ok(frequent.count.en.includes('No fixed repetition count'));
+  assert.ok(frequent.name_ids.includes('PDF-HN-139'));
+  for(const id of frequent.name_ids)for(const lang of ['ml','en']){
+    const html=render(null,id,lang,{pdf_name_id:id});
+    assert.ok(html.includes(escape(frequent.arabic_original)));
+    assert.ok(html.includes(escape(frequent.translation[lang])));
+    assert.ok(html.includes(frequent.source_url));
+  }
+  console.log('PASS: 90 distinct tafsir-deepened names, 23 new classical commentaries, five complete Quran verses and Sahih Bukhari 6389 supplication.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();

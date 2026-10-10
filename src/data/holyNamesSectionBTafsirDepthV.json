@@ -1,0 +1,664 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "മുമ്പ് ആഴത്തിലുള്ള പഠനം ഇല്ലാത്ത 15 കാർഡുകളിലേക്ക് 23 പുതിയ തഫ്സീർ വ്യാഖ്യാനങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 8. പ്രത്യേകിച്ച് നേരിട്ടുള്ള നാമരൂപങ്ങൾ, ക്രിയ/വാക്യപ്രയോഗങ്ങൾ, വിശ്വസനീയമല്ലെന്ന് ഗ്രന്ഥം തന്നെ പറഞ്ഞ നിവേദനങ്ങൾ എന്നിവ വേർതിരിക്കുന്നു. സമ്പൂർണ ഖവാസ്സ് പഠനം പൂർത്തിയായിട്ടില്ല. ഖുർആൻ 54:55, 24:25, 15:86, 95:8, 48:28 എന്നീ അഞ്ച് പൂർണ ആയത്തുകൾ കൃത്യമായ പദരൂപം തിരിച്ചറിയാൻ ചേർത്തിട്ടുണ്ട്. മുൻഘട്ടത്തിൽ ആവർത്തിച്ച PDF-HN-057-ന് പകരം PDF-HN-058-ന്റെ അർഹമായ സ്വതന്ത്ര പഠനം ചേർത്തു.",
+    "en": "Twenty-three source-checked interpretations for 15 previously undepened headings (Ibn Kathir 15, Al-Tabari 8). Precise nominal wording, a verb/phrase, and an unsound reported guarantee are carefully distinguished. Comprehensive historic khawass coverage remains unfinished. Five complete original Quran verses (54:55, 24:25, 15:86, 95:8 and 48:28) supply exact grammatical evidence and replace reliance on loose thematic parallels. A duplicate earlier deep-study ID (057) was replaced by the previously unstudied al-Muhsi (058), using original source passages of Quran 58:6."
+  },
+  "profiles": {
+    "PDF-HN-068": {
+      "name_id": "PDF-HN-068",
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-068-54-55",
+          "title": {
+            "ml": "ഖുർആൻ 54:55 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 54:55 — complete source verse and exact form"
+          },
+          "arabic_original": "فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ",
+          "translation": {
+            "ml": "സത്യസന്ധതയുടെയും മഹത്വത്തിന്റെയും ഇരിപ്പിടത്തിൽ, എല്ലാറ്റിനും കഴിവുള്ള പരമാധികാരിയുടെ സാന്നിധ്യത്തിൽ.",
+            "en": "In an honored seat of truth, near a Sovereign fully able to do all things."
+          },
+          "source_reference": "Quran 54:55 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura54-aya55.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ മَلِيكٍ എന്നതിന് വിശേഷണമായി مُقْتَدِرٍ വരുന്നു; പഴയ പൊതുവായ 22:6 തെളിവിനേക്കാൾ കൃത്യമായ പദബന്ധമാണ് ഇത്.",
+            "en": "The Quranic form is مُقْتَدِرٍ modifying مَلِيكٍ; it is more precise than the generic 22:6 verse previously linked to this title."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-068-katheer-54-55",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 54:55",
+            "en": "Ibn Kathir — Quran 54:55"
+          },
+          "arabic_original": "عِنْدَ الْمَلِكِ الْعَظِيمِ الْخَالِقِ لِلْأَشْيَاءِ كُلِّهَا وَمُقَدِّرِهَا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «മലീകിൻ മുക്തദിർ» സകലതും സൃഷ്ടിക്കുകയും നിർണയിക്കുകയും ചെയ്യുന്ന മഹാരാജാവിന്റെ സാന്നിധ്യമെന്ന് വ്യാഖ്യാനിക്കുന്നു. ഇവിടെയുള്ള «مُقْتَدِرٍ» എന്ന പദം നേരിട്ടുള്ള തെളിവാണ്; «الْمُقْتَدِرُ» എന്ന നിശ്ചിതരൂപം അതേപടി അല്ല.",
+            "en": "Ibn Kathir describes the majestic Sovereign who creates and determines all things. Quran 54:55 uses the indefinite grammatical form muqtadirin, not the isolated definite heading al-Muqtadir."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 54:55",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura54-aya55.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-068-tabary-54-55",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 54:55",
+            "en": "Al-Tabari — Quran 54:55"
+          },
+          "arabic_original": "عِنْدَ ذِي مُلْكٍ مُقْتَدِرٍ عَلَى مَا يَشَاءُ",
+          "translation": {
+            "ml": "ത്വബരി «മുക്തദിർ» ഇച്ഛിക്കുന്നതെന്തും ചെയ്യാൻ കഴിവുള്ള രാജാധിപതി എന്നാണ് വിശദീകരിക്കുന്നത്. ആയത്തിലെ «മലീകിൻ മുക്തദിർ» അന്ത്യനാളിലെ നീതിമാന്മാരുടെ സ്ഥാനം സംബന്ധിക്കുന്നതാണ്.",
+            "en": "Al-Tabari interprets Malik Muqtadir as the sovereign with complete power to do what He wills, in the setting of the righteous in the Hereafter."
+          },
+          "source_reference": "تفسير الطبري — Quran 54:55",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura54-aya55.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-078": {
+      "name_id": "PDF-HN-078",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-078-katheer-13-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 13:9",
+            "en": "Ibn Kathir — Quran 13:9"
+          },
+          "arabic_original": "الْمُتَعَالِ أَيْ عَلَى كُلِّ شَيْءٍ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-മുതആൽ» എല്ലാറ്റിനും മീതെ ഉന്നതനാണെന്ന് വിശദീകരിക്കുന്നു; അതേ ആയത്തിൽ മറഞ്ഞതും പ്രകടമായതുമായ എല്ലാം അറിയുന്നവൻ എന്നും വരുന്നു. കാർഡിലെ «الْمُتَعَالِي» എന്ന എഴുത്തുരൂപവുമായി പാഠത്തിലെ «الْمُتَعَالِ» വ്യത്യാസപ്പെടുന്നു.",
+            "en": "Ibn Kathir reads al-Muta'al as exalted over everything, paired with knowledge of the hidden and seen. The Quranic written form al-muta'al differs from the catalog spelling al-muta'ali."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-078-tabary-13-9",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 13:9",
+            "en": "Al-Tabari — Quran 13:9"
+          },
+          "arabic_original": "الْمُسْتَعْلِي عَلَى كُلِّ شَيْءٍ بِقُدْرَتِهِ",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-മുതആൽ» എല്ലാ വസ്തുക്കൾക്കും മീതെയുള്ള ദൈവിക അധികാരമാണെന്ന് വിശദീകരിക്കുന്നു. ഖുർആനിലെ വ്യാകരണ/എഴുത്തുരൂപത്തിന്റെ വ്യത്യാസവും കാർഡിൽ നിലനിർത്തുന്നു.",
+            "en": "Al-Tabari glosses al-Muta'al as exalted over all by divine power. Preserve the actual Quranic spelling rather than silently replacing it with the catalog headword."
+          },
+          "source_reference": "تفسير الطبري — Quran 13:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-094": {
+      "name_id": "PDF-HN-094",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-094-katheer-6-101",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 6:101",
+            "en": "Ibn Kathir — Quran 6:101"
+          },
+          "arabic_original": "مُحْدِثُهَا عَلَى غَيْرِ مِثَالٍ سَبَقَ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആകാശഭൂമികളെ മുൻമാതൃകയില്ലാതെ ഉണ്ടാക്കിയ സ്രഷ്ടാവ് എന്നാണ് «ബദീഉ» വിശദീകരിക്കുന്നത്. 6:101-ലെ ഖുർആൻ രൂപം «بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ» ആണ്; «الْبَدِيعُ» എന്ന ഒറ്റനാമപാഠമല്ല.",
+            "en": "Ibn Kathir explains creating heaven and earth without any prior model. The Quran prints badi' al-samawati wal-ard, a construct phrase, rather than the separate definite word al-Badi'."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:101",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya101.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-101": {
+      "name_id": "PDF-HN-101",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-101-katheer-1-2",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 1:2",
+            "en": "Ibn Kathir — Quran 1:2"
+          },
+          "arabic_original": "وَالرَّبُّ هُوَ الْمَالِكُ الْمُتَصَرِّفُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «റബ്ബ്» ഉടമയും കാര്യങ്ങളെ നിയന്ത്രിക്കുന്നവനുമെന്ന അർഥത്തിൽ വിവരിക്കുന്നു; «റബ്ബുൽ ആലമീൻ» മുഴുവൻ സൃഷ്ടികളുടെ രക്ഷിതാവാണ്. ഇത് അൽഹംദുലില്ലാഹ് എന്ന സ്തുതിയോടൊന്നിച്ച് വരുന്നു.",
+            "en": "Ibn Kathir describes rabb as Master and Governor of affairs. Rabb al-'alamin refers to Lord of all created realms, and occurs within the complete verse of praise."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 1:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-101-tabary-1-2",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 1:2",
+            "en": "Al-Tabari — Quran 1:2"
+          },
+          "arabic_original": "السَّيِّدُ الَّذِي لَا شِبْهَ لَهُ",
+          "translation": {
+            "ml": "ത്വബരി «റബ്ബ്» എന്നതിന് ഉടമസ്ഥൻ, നിയന്ത്രിക്കുന്നവൻ, പരിപാലിക്കുന്നവൻ തുടങ്ങിയ അറബി ഭാഷയിലെ അർഥങ്ങൾ വിശദീകരിക്കുന്നു; എല്ലാസൃഷ്ടികളുടെയും സവിശേഷനായ അധിപനാണ് അല്ലാഹു.",
+            "en": "Al-Tabari identifies rabb through mastery, governance and care and applies it to Allah as the unique Lord over all created worlds."
+          },
+          "source_reference": "تفسير الطبري — Quran 1:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura1-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-102": {
+      "name_id": "PDF-HN-102",
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-102-24-25",
+          "title": {
+            "ml": "ഖുർആൻ 24:25 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 24:25 — complete source verse and exact form"
+          },
+          "arabic_original": "يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+          "translation": {
+            "ml": "ആ ദിവസം അല്ലാഹു അവരുടെ പ്രവൃത്തികൾക്കുള്ള യഥാർഥ പ്രതിഫലം പൂർണമായി നൽകും; അന്ന് അല്ലാഹു തന്നെയാണ് വ്യക്തമായ സത്യമെന്ന് അവർ തിരിച്ചറിയും.",
+            "en": "On that Day Allah will fully pay their just recompense; they will realize that Allah Himself is the manifest Truth."
+          },
+          "source_reference": "Quran 24:25 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "അന്ത്യനാളിലെ കണക്കെടുപ്പിൽ الْحَقُّ الْمُبِينُ എന്ന പൂർണ വിശേഷണമാണ് തെളിവ്; രഹസ്യങ്ങൾ ഉടൻ വെളിപ്പെടാനുള്ള ജപസംഖ്യ അല്ല.",
+            "en": "The complete phrase is الْحَقُّ الْمُبِينُ in the context of final reckoning; al-Mubin is not a guarantee of immediate revelations."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-102-katheer-24-25",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 24:25",
+            "en": "Ibn Kathir — Quran 24:25"
+          },
+          "arabic_original": "وَعْدُهُ وَوَعِيدُهُ وَحِسَابُهُ هُوَ الْعَدْلُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അന്തിമദിവസത്തിലെ പ്രതിഫലം, മുന്നറിയിപ്പ്, കണക്കെടുപ്പ് എന്നിവ നീതിയുള്ളതാണെന്ന് വിശദീകരിക്കുന്നു. «الْحَقُّ الْمُبِينُ» എന്ന പൂർണ വിശേഷണത്തിൽ «الْمُبِينُ» അല്ലാഹുവിനെക്കുറിച്ചുള്ള നേരിട്ടുള്ള വാക്കാണ്.",
+            "en": "Ibn Kathir explains Allah's promises, warnings and reckoning as entirely just. Quran 24:25 explicitly states al-Haqq al-Mubin, rather than merely offering a loose thematic reference."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 24:25",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-102-tabary-24-25",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 24:25",
+            "en": "Al-Tabari — Quran 24:25"
+          },
+          "arabic_original": "الْحَقُّ الَّذِي يُبَيِّنُ لَهُمْ حَقَائِقَ مَا كَانَ يَعِدُهُمْ",
+          "translation": {
+            "ml": "ത്വബരി «അൽ-ഹഖ് അൽ-മുബീൻ» എന്നത് അന്ത്യദിനത്തിൽ ദൈവിക വാഗ്ദാനങ്ങളുടെയും മുന്നറിയിപ്പുകളുടെയും സത്യം വ്യക്തമായി മനസ്സിലാകുന്നതിനെ സൂചിപ്പിക്കുന്നു എന്ന് പറയുന്നു. 24:25-ലെ തെളിവ് നേരിട്ടുള്ള പദരൂപമാണ്.",
+            "en": "Al-Tabari explains al-Haqq al-Mubin as the truth of God's promises and warnings becoming unmistakable on Judgment Day; the actual expression is present in 24:25."
+          },
+          "source_reference": "تفسير الطبري — Quran 24:25",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura24-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-105": {
+      "name_id": "PDF-HN-105",
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-105-15-86",
+          "title": {
+            "ml": "ഖുർആൻ 15:86 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 15:86 — complete source verse and exact form"
+          },
+          "arabic_original": "إِنَّ رَبَّكَ هُوَ الْخَلَّاقُ الْعَلِيمُ",
+          "translation": {
+            "ml": "തീർച്ചയായും നിന്റെ രക്ഷിതാവാണ് എല്ലാം സൃഷ്ടിക്കുന്നവനും എല്ലാം അറിയുന്നവനും.",
+            "en": "Indeed your Lord is the Ever-Creating, All-Knowing."
+          },
+          "source_reference": "Quran 15:86 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിൽ الْخَلَّاقُ എന്ന പദരൂപം നേരിട്ട് വരുന്നു. മുമ്പത്തെ 39:62-ലെ خَالِقُ എന്ന പൊതുവായ രൂപവുമായി കലർത്തരുത്.",
+            "en": "This verse directly contains the definite form الْخَلَّاقُ; unlike Quran 39:62's خَالِقُ, it precisely matches the card heading."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-105-katheer-15-86",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 15:86",
+            "en": "Ibn Kathir — Quran 15:86"
+          },
+          "arabic_original": "الْخَلَّاقُ الَّذِي لَا يَعْجِزُهُ خَلْقُ مَا يَشَاءُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖല്ലാഖ് ഉദ്ദേശിക്കുന്നതെന്തും സൃഷ്ടിക്കാൻ കഴിവുള്ളവനാണെന്നും ഉയിർത്തെഴുന്നേൽപ്പിനെ തെളിയിക്കുന്ന സന്ദർഭമാണിതെന്നും പറയുന്നു. പഴയ കാർഡിലെ പൊതുവായ 39:62 തെളിവിനൊപ്പം «الْخَلَّاقُ» നേരിട്ട് വരുന്ന 15:86 നിർണായകമാണ്.",
+            "en": "Ibn Kathir explains al-Khallaq as capable of creating whatever He wills in an argument for resurrection. Quran 15:86 explicitly uses al-Khallaq, making it a more precise source than the older general 39:62 link."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 15:86",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-112": {
+      "name_id": "PDF-HN-112",
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-112-48-28",
+          "title": {
+            "ml": "ഖുർആൻ 48:28 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 48:28 — complete source verse and exact form"
+          },
+          "arabic_original": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ ۚ وَكَفَىٰ بِاللَّهِ شَهِيدًا",
+          "translation": {
+            "ml": "തന്റെ ദൂതനെ സന്മാർഗവും സത്യമതവുമായി അയച്ചവനാണ് അവൻ; എല്ലാ മതത്തിനും മേൽ അതിനെ പ്രകടമാക്കുവാൻ. സാക്ഷിയായി അല്ലാഹു മതി.",
+            "en": "He sent His Messenger with guidance and the religion of truth to make it prevail over all religion; Allah suffices as Witness."
+          },
+          "source_reference": "Quran 48:28 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഖുർആനിലെ പദരൂപം شَهِيدًا എന്ന വിധത്തിലാണ്; അതിനെ ഒറ്റ നാമത്തിന്റെ പ്രത്യേക എണ്ണമായി കാണിക്കരുത്.",
+            "en": "The exact expression is وَكَفَىٰ بِاللَّهِ شَهِيدًا, a predicative use, not an independent count for the heading al-Shahid."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-112-katheer-48-28",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 48:28",
+            "en": "Ibn Kathir — Quran 48:28"
+          },
+          "arabic_original": "بِالْعِلْمِ النَّافِعِ وَالْعَمَلِ الصَّالِحِ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നബി ﷺയുടെ നിയോഗത്തിൽ «ഹുദാ» ഉപകാരപ്രദമായ അറിവും «ദീനുൽഹഖ്» ശരിയായ പ്രവർത്തനവുമാണ് എന്നു വ്യാഖ്യാനിക്കുന്നു. «وَكَفَىٰ بِاللَّهِ شَهِيدًا» എന്ന വാക്യത്തിലെ ശഹീദൻ അല്ലാഹുവിന്റെ സാക്ഷിത്വമാണ്; ഒറ്റനാമത്തിനുള്ള എണ്ണം അല്ല.",
+            "en": "Ibn Kathir interprets guidance as beneficial knowledge and the true religion as righteous practice. The phrase 'Allah suffices as Witness' is about divine testimony, not a counted repetition of al-Shahid."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 48:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-114": {
+      "name_id": "PDF-HN-114",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-114-katheer-42-19",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 42:19",
+            "en": "Ibn Kathir — Quran 42:19"
+          },
+          "arabic_original": "وَهُوَ الْقَوِيُّ الْعَزِيزُ أَيْ لَا يَعْجِزُهُ شَيْءٌ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ ഉപജീവനകാരുണ്യത്തോടൊപ്പം അവന്റെ ശക്തിയെ വിശദീകരിക്കുന്നു: ഒന്നിനും അവനെ അശക്തനാക്കാൻ കഴിയില്ല. «الْقَوِيُّ» വചനത്തിൽ നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir links gentle provision with irresistible strength: nothing renders Allah unable. Al-Qawiyy is explicitly named in Quran 42:19."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 42:19",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya19.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-115": {
+      "name_id": "PDF-HN-115",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-115-katheer-51-58",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 51:58",
+            "en": "Ibn Kathir — Quran 51:58"
+          },
+          "arabic_original": "فَهُوَ خَالِقُهُمْ وَرَازِقُهُمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദൈവിക ഉപജീവനം സൃഷ്ടികൾക്ക് നൽകുന്നതാണെന്നും സൃഷ്ടികളുടെ ഭക്ഷണമോ സേവനമോ അല്ലാഹുവിന് ആവശ്യമായിട്ടില്ലെന്നും പറയുന്നു. «الْمَتِينُ» നാമം «ذُو الْقُوَّةِ» എന്ന സമുച്ചയത്തിനു ശേഷം നേരിട്ട് വരുന്നു.",
+            "en": "Ibn Kathir says Allah needs no provision from created beings and provides for all creatures. Al-Matin occurs directly following dhu al-quwwah in Quran 51:58."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 51:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura51-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-125": {
+      "name_id": "PDF-HN-125",
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-125-95-8",
+          "title": {
+            "ml": "ഖുർആൻ 95:8 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 95:8 — complete source verse and exact form"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+          "translation": {
+            "ml": "വിധികർത്താക്കളിൽ ഏറ്റവും നീതിയുള്ള വിധികർത്താവ് അല്ലാഹു തന്നെയല്ലേ?",
+            "en": "Is Allah not the wisest and most just of judges?"
+          },
+          "source_reference": "Quran 95:8 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura95-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിലെ പൂർണ താരതമ്യപദസമുച്ചയം بِأَحْكَمِ الْحَاكِمِينَ ആണ്; الْأَحْكَم എന്ന വേറിട്ട സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "The verse has the superlative construct بِأَحْكَمِ الْحَاكِمِينَ, not an independent definite title الْأَحْكَم."
+          }
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-125-katheer-95-8",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 95:8",
+            "en": "Ibn Kathir — Quran 95:8"
+          },
+          "arabic_original": "لَا يَجُورُ وَلَا يَظْلِمُ أَحَدًا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹു ആരോടും അനീതി ചെയ്യാത്ത പരമോന്നത വിധികർത്താവാണെന്നും ഉയിർത്തെഴുന്നേൽപ്പിൽ അക്രമം അനുഭവിച്ചവർക്ക് നീതി ലഭിക്കുമെന്നും വിശദീകരിക്കുന്നു. «أَحْكَمِ الْحَاكِمِينَ» പൂർണ താരതമ്യവാചകമാണ്, ഒറ്റ «الْأَحْكَم» എന്ന പേരല്ല.",
+            "en": "Ibn Kathir explains Allah never acts unjustly and will vindicate the oppressed at resurrection. Ahkam al-hakimin is the full superlative phrase, not an isolated Quranic name al-Ahkam."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 95:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura95-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-125-tabary-95-8",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 95:8",
+            "en": "Al-Tabari — Quran 95:8"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിന്റെ വിധി മനുഷ്യരുടെ വിധിയേക്കാൾ ഏറ്റവും നീതിയുള്ളതാണെന്ന് വിശദീകരിക്കുന്നു. «ബലാ» എന്ന മറുപടി സംബന്ധിച്ച നിവേദനങ്ങൾ തഫ്സീറിലുണ്ടെങ്കിലും ഓരോന്നിന്റെയും സനദ് സ്വതന്ത്രമായി പരിശോധിക്കാതെ പ്രത്യേക ദിക്ർ നിർദേശമാക്കരുത്.",
+            "en": "Al-Tabari interprets Allah's supreme judgment; he also transmits responses of bala from earlier authorities, but these narrations do not by themselves settle an independent authenticated recitation rule."
+          },
+          "source_reference": "تفسير الطبري — Quran 95:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura95-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-130": {
+      "name_id": "PDF-HN-130",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-130-katheer-20-8",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 20:8",
+            "en": "Ibn Kathir — Quran 20:8"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖുർആൻ അവതരിപ്പിച്ച അല്ലാഹുവിനു മാത്രമാണ് ആരാധനാവകാശമെന്നും അവനു സുന്ദരമായ എല്ലാ നാമങ്ങളും ഉള്ളതാണെന്നും പറയുന്നു. «ലാ ഇലാഹ ഇല്ലാ ഹുവ» തൗഹീദിന്റെ വാക്യമാണ്; പുതിയ സ്വതന്ത്ര നാമമായി വിഭാഗീകരിക്കരുത്.",
+            "en": "Ibn Kathir explains the exclusivity of worship due to Allah and His Most Beautiful Names. La ilaha illa Huwa is a declarative monotheistic formula, not a separately minted individual Name."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 20:8",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-132": {
+      "name_id": "PDF-HN-132",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-132-katheer-1-2",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 1:2",
+            "en": "Ibn Kathir — Quran 1:2"
+          },
+          "arabic_original": "الْحَمْدُ أَعَمُّ مِنَ الشُّكْرِ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഹംദ് വാക്കാലുള്ള സ്തുതിയാണെന്നും ശുക്റിനെക്കാൾ ചില അർഥങ്ങളിൽ വിശാലമാണെന്നും വ്യത്യാസങ്ങൾ സൂക്ഷിച്ചും വിവരിക്കുന്നു. «അൽഹംദുലില്ലാഹ്» ഖുർആനിലെ സ്തുതി വാക്യമാണ്; ഒറ്റ നാമമല്ല.",
+            "en": "Ibn Kathir distinguishes verbal praise (hamd) from thanks (shukr) and reviews their overlap. Alhamdulillah is Quranic praise, not an isolated Divine Name."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 1:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura1-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-135": {
+      "name_id": "PDF-HN-135",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-135-katheer-18-39",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 18:39",
+            "en": "Ibn Kathir — Quran 18:39"
+          },
+          "arabic_original": "لَا يَصِحُّ حَدِيثُهُ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ باغ് കണ്ടപ്പോൾ «മാശാഅല്ലാഹ്, ലാ ഖുവ്വത ഇല്ലാ ബില്ലാഹ്» പറയുന്നത് നന്ദിയും അല്ലാഹുവിന്റെ അധികാരത്തെ അംഗീകരിക്കലുമാണെന്ന് വിശദീകരിക്കുന്നു. കുടുംബത്തിലോ സമ്പത്തിലോ ആ വാക്ക് പറഞ്ഞാൽ മരണം ഒഴികെ യാതൊരു ആപത്തുമുണ്ടാകില്ലെന്ന നിവേദനത്തിന്റെ സനദിനെ അദ്ദേഹം «لا يصح حديثه» എന്ന് വിമർശിക്കുന്നു. ആ ഉറപ്പ് സഹീഹ് നബിവചനമായി നൽകാനാവില്ല.",
+            "en": "Ibn Kathir encourages gratitude expressed through ma sha Allah, la quwwata illa billah. Crucially, he flags the attached report promising protection from all harm except death as unsound; that claim must not be presented as a verified Prophetic guarantee."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 18:39",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya39.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-135-tabary-18-39",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 18:39",
+            "en": "Al-Tabari — Quran 18:39"
+          },
+          "arabic_original": "مَا شَاءَ اللَّهُ كَانَ",
+          "translation": {
+            "ml": "ത്വബരി ഈ വാചകം ഇഷ്ടപ്പെട്ട തോട്ടവും സമ്പത്തും കണ്ടപ്പോൾ എല്ലാം അല്ലാഹുവിന്റെ ഇച്ഛയിലാണ് എന്ന് പറയുന്ന വിശ്വാസിയുടെ ഉപദേശം എന്നാണ് വിശദീകരിക്കുന്നത്. ഇതൊരു മുഴുവൻ ആയത്തിൻറെ ഭാഗമാണ്; അപകടരക്ഷയ്ക്കുള്ള തകിടോ കളമോ അല്ല.",
+            "en": "Al-Tabari explains ma sha Allah as acknowledging divine will on seeing an admired garden and its wealth; it is advice in context, not instructions to make an amulet or square."
+          },
+          "source_reference": "تفسير الطبري — Quran 18:39",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura18-aya39.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-139": {
+      "name_id": "PDF-HN-139",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-139-katheer-2-201",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:201",
+            "en": "Ibn Kathir — Quran 2:201"
+          },
+          "arabic_original": "فَجَمَعَتْ هَذِهِ الدَّعْوَةُ كُلَّ خَيْرٍ فِي الدُّنْيَا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ദുആയിൽ ഇഹലോകത്തെയും പരലോകത്തെയും നന്മയും നരകശിക്ഷയിൽനിന്നുള്ള രക്ഷയും ഉൾപ്പെടുന്നു എന്ന് വിശദീകരിക്കുന്നു. രോഗമുക്തി, ഉപജീവനം, നല്ല പ്രവൃത്തി, സ്വർഗം എന്നിങ്ങനെ ഉദാഹരണങ്ങളുണ്ട്; ഇഹലോകസമ്പത്തിന് മാത്രമായി അതിനെ ചുരുക്കരുത്.",
+            "en": "Ibn Kathir says this Quranic supplication encompasses worldly and afterlife good and protection from Hell, including well-being, provision, useful knowledge and Paradise. It is not a wealth-only formula."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:201",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya201.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-139-tabary-2-201",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:201",
+            "en": "Al-Tabari — Quran 2:201"
+          },
+          "arabic_original": "لَا يَجُوزُ أَنْ يُخَصَّ مِنْ مَعَانِي ذَلِكَ شَيْءٌ",
+          "translation": {
+            "ml": "ത്വബരി വിവിധ അഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തുന്നു: ആരോഗ്യവും ഉപജീവനവും അറിവും ആരാധനയും ഇഹലോകനന്മയിൽ വരാം; പരലോകനന്മ സ്വർഗം ഉൾക്കൊള്ളുന്നു. «ഹസന» ഒരു മാത്രം ഭൗതികലക്ഷ്യത്തിലേക്ക് ചുരുക്കാനാവില്ല എന്നാണ് അദ്ദേഹത്തിന്റെ തിരഞ്ഞെടുപ്പ്.",
+            "en": "Al-Tabari records health, knowledge, worship and provision as examples of dunya good, and Paradise for the afterlife. He explicitly rejects restricting the prayer's broad language to just one material benefit."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:201",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya201.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ നിന്നുള്ള പ്രസക്ത പാഠവും പണ്ഡിതന്റെ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹവും; ഇതിൽനിന്ന് നിശ്ചിത എണ്ണങ്ങളോ അത്ഭുതഫലങ്ങളോ ഊഹിക്കരുത്.",
+            "en": "Short original commentary excerpt and attributed meaning. No invented count, amulet, deadline, or hadith authenticity is implied."
+          }
+        }
+      ]
+    },
+    "PDF-HN-058": {
+      "name_id": "PDF-HN-058",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-v-PDF-HN-058-katheer-58-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 58:6",
+            "en": "Ibn Kathir — Quran 58:6"
+          },
+          "arabic_original": "ضَبَطَهُ اللَّهُ وَحَفِظَهُ عَلَيْهِمْ",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പ്രകാരം മനുഷ്യർ മറന്നുപോയ നല്ലതും ചീത്തയുമായ പ്രവൃത്തികളെല്ലാം അല്ലാഹു കൃത്യമായി രേഖപ്പെടുത്തി സംരക്ഷിക്കുന്നു. 58:6-ൽ «أَحْصَاهُ اللَّهُ» എന്ന ക്രിയാപ്രയോഗമാണ്; «الْمُحْصِي» എന്ന സ്വതന്ത്ര നാമം നേരിട്ട് വരുന്നില്ല.",
+            "en": "Ibn Kathir explains Allah precisely records and preserves human actions even when their doers forget them. The verse uses the verb ahsahu Allah, not the isolated noun al-Muhsi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീർ പാഠവും പണ്ഡിതന്റെ വിശദീകരണവും; പേരിലുള്ള സംഖ്യകളോ ഗൂഢഫലങ്ങളോ ഈ പാഠം നിർദേശിക്കുന്നില്ല.",
+            "en": "Original classical commentary and attributed meaning, not a prescribed numerical occult technique."
+          }
+        },
+        {
+          "id": "depth-v-PDF-HN-058-tabary-58-6",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 58:6",
+            "en": "Al-Tabari — Quran 58:6"
+          },
+          "arabic_original": "أَحْصَى اللَّهُ مَا عَمِلُوا فَعَدَّهُ عَلَيْهِمْ",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു മനുഷ്യരുടെ പ്രവൃത്തികളെ എണ്ണിയും രേഖപ്പെടുത്തിയും സൂക്ഷിച്ചിരിക്കുകയാണെന്ന് വിശദീകരിക്കുന്നു; ചെയ്തവർ മറന്നാലും അല്ലാഹുവിൽനിന്ന് ഒന്നും നഷ്ടപ്പെടില്ല. 58:6-ലെ അർഥം അന്ത്യദിനത്തിലെ കണക്കെടുപ്പുമായി ബന്ധപ്പെട്ടതാണ്.",
+            "en": "Al-Tabari says Allah counted, established and preserved people's deeds even after they forgot. It concerns accountability on Resurrection Day, not an independent esoteric counting rite."
+          },
+          "source_reference": "تفسير الطبري — Quran 58:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_tafsir_summary",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീർ പാഠവും പണ്ഡിതന്റെ വിശദീകരണവും; പേരിലുള്ള സംഖ്യകളോ ഗൂഢഫലങ്ങളോ ഈ പാഠം നിർദേശിക്കുന്നില്ല.",
+            "en": "Original classical commentary and attributed meaning, not a prescribed numerical occult technique."
+          }
+        }
+      ]
+    }
+  }
+}
