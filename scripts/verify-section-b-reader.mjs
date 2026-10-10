@@ -961,6 +961,43 @@ try {
   assert.ok(byThirdId('quran-14-41-ibrahim-forgiveness').translation.en.includes('9:114'));
   assert.ok(byThirdId('quran-3-147-steadfastness-and-repentance').translation.en.includes('historical'));
   console.log('PASS: ten whole Quran verses, twenty name-card links, and all forty topical Quran prayer records in both languages.');
+
+  // Historical khawass: expose all 91 existing scan-labelled Arabic passages across distinct matching card IDs.
+  const historical=JSON.parse(fs.readFileSync('src/data/holyNamesShamsBrief.json','utf8'));
+  const bridge=JSON.parse(fs.readFileSync('src/data/holyNamesShamsCardBridge.json','utf8'));
+  const historicalPairs=Object.entries(bridge.identity_map);
+  assert.equal(Object.keys(historical.accounts).length,91,'Source has 91 separate Shams passages.');
+  assert.equal(historicalPairs.length,91,'Every historical passage must be assigned to a name card.');
+  assert.equal(new Set(historicalPairs.map(([,id])=>id)).size,91,'Do not merge two distinct source names into one card.');
+  assert.equal(Object.keys(bridge.translations).length,73,'Translate all 73 previously untranslated historical Arabic accounts.');
+  assert.ok(bridge.source_edition_note.ml&&bridge.source_edition_note.en&&bridge.review_note.ml&&bridge.review_note.en);
+  assert.ok(bridge.source_edition_url.includes('archive.org/details/'));
+  const historicalChecked=new Set();
+  for(const [accountId,id] of historicalPairs){
+    assert.ok(coveredIds.has(id),'Mapped historical record to unrecognized card: '+id);
+    const entry=historical.accounts[accountId];
+    assert.ok(entry,'Missing original historical account '+accountId);
+    assert.equal(entry.review_status,'checked_against_scan');
+    assert.ok(entry.arabic_original.length>24,'Do not replace full source sentence with a summary.');
+    assert.ok(['67','68','69','70'].includes(entry.source_page),'Expected printed page 67-70');
+    const translated=entry.translation||bridge.translations[accountId];
+    assert.ok(translated?.ml&&translated?.en,'Missing Malayalam/English for '+accountId);
+    assert.ok(entry.count?.ml&&entry.count?.en&&entry.timing?.ml&&entry.timing?.en);
+    assert.ok(entry.conditions?.ml&&entry.conditions?.en,'Every source needs its genuine conditions or their absence.');
+    historicalChecked.add(accountId);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[id]||null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="shams"'),'Historical book section missing for '+id+'/'+lang);
+      for(const value of [entry.arabic_original,translated[lang],entry.count[lang],entry.timing[lang],entry.conditions[lang],bridge.source_edition_note[lang],bridge.review_note[lang]]){
+        assert.ok(html.includes(escape(value)),'Historical Arabic, note or translation absent for '+accountId+'/'+lang);
+      }
+      assert.ok(html.includes(bridge.source_edition_url),'Historical scan source absent for '+accountId);
+      assert.ok(html.includes('https://ablibrary.net/book_content/b/10942/'+entry.source_page),'Secondary text for page missing '+accountId);
+    }
+  }
+  assert.equal(historicalChecked.size,91);
+  assert.equal(91-Object.keys(bridge.translations).length,18,'Existing 18 detailed translations must remain intact.');
+  console.log('PASS: 91 full Shams source Arabic accounts visible across 91 correct cards, 73 new bilingual translations and 18 preserved earlier translations.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
@@ -975,7 +1012,7 @@ try {
       const verifiedTotal = groups.filter(entry => entry[1] !== 'pending').reduce((sum, entry) => sum + Number(entry[2]), 0);
       assert.equal(getCount('source'), verifiedTotal, 'Incomplete source total on ' + id + ' / ' + lang);
       assert.equal(getCount('quran'), countGroup('evidence'), 'Incomplete Quran total on ' + id + ' / ' + lang);
-      assert.equal(getCount('topic'), countGroup('topics') + countGroup('prophetic'), 'Incomplete topic total on ' + id + ' / ' + lang);
+      assert.equal(getCount('topic'), countGroup('topics') + countGroup('prophetic') + countGroup('shams'), 'Incomplete topic total on ' + id + ' / ' + lang);
     }
   }
   console.log('PASS: all 160 card summaries count their complete Arabic/bilingual Quran, scholarly, Prophetic, topics and book sections.');
