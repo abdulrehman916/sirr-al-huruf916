@@ -1,0 +1,2529 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "160 കാർഡുകളിലെ അവസാനത്തെ 60 തലക്കെട്ടുകൾക്കുള്ള ആദ്യ ഖുർആൻ പാഠപരിശോധന. ചില തലക്കെട്ടുകൾ പദരൂപത്തിൽ ആയത്തിൽ ഇല്ലാത്തവയാണെന്ന് പ്രത്യേകം സൂചിപ്പിച്ചിട്ടുണ്ട്. പൂർണഗ്രന്ഥ ഗവേഷണം പൂർത്തിയായെന്ന അവകാശവാദമല്ല.",
+    "en": "Initial Quran-source reading of the final 60 headings in the existing 160-card inventory. Exact Name forms are distinguished from descriptive, verbal, thematic and superlative wording. This is not an exhaustive audit."
+  },
+  "profiles": {
+    "PDF-HN-0148": {
+      "name_id": "PDF-HN-0148",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المفضل تبارك وتعالى",
+      "source_label": "The Bestower of Favour",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المفضل تبارك وتعالى» ആണ്. «المفضل» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിലില്ല; നൽകുന്ന അല്ലാഹുവിന്റെ ഔദാര്യവും «ذو الفضل» എന്ന വിശേഷണവുമാണ് തെളിവ്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المفضل تبارك وتعالى. English gloss: The Bestower of Favour. The verse names Allah as Possessor of Bounty, rather than using the exact independent heading al-Mufaddil. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-62-4",
+          "title": {
+            "ml": "ഖുർആൻ 62:4",
+            "en": "Quran 62:4"
+          },
+          "arabic_original": "ذَٰلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَن يَشَاءُ ۚ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ",
+          "translation": {
+            "ml": "ഇത് അല്ലാഹുവിന്റെ ഔദാര്യമാണ്. അവൻ ഉദ്ദേശിക്കുന്നവർക്ക് നൽകുന്നു. അല്ലാഹു മഹത്തായ ഔദാര്യത്തിന്റെ ഉടമയാണ്.",
+            "en": "This is Allah's bounty, granted to whom He wills. He is Possessor of tremendous bounty."
+          },
+          "source_reference": "Quran 62:4",
+          "source_url": "https://quran.com/62/4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0149": {
+      "name_id": "PDF-HN-0149",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "ذو الفضل",
+      "source_label": "Possessor of Bounty",
+      "claim_kind": "direct_phrase",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «ذو الفضل» ആണ്. «ذُو الْفَضْلِ الْعَظِيمِ» എന്ന മുഴുവൻ വിശേഷണമാണ് ഖുർആനിൽ; അതിന്റെ വാക്കുകളും നൽകുന്നവൻ ഉദ്ദേശിക്കുന്ന വിധമുള്ള ഔദാര്യസന്ദർഭവും ചേർത്ത് വായിക്കണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: ذو الفضل. English gloss: Possessor of Bounty. The actual Quranic construction is dhu al-fadl al-azim, with bounty bestowed according to Allah's will. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-62-4",
+          "title": {
+            "ml": "ഖുർആൻ 62:4",
+            "en": "Quran 62:4"
+          },
+          "arabic_original": "ذَٰلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَن يَشَاءُ ۚ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ",
+          "translation": {
+            "ml": "ഇത് അല്ലാഹുവിന്റെ ഔദാര്യമാണ്. അവൻ ഉദ്ദേശിക്കുന്നവർക്ക് നൽകുന്നു. അല്ലാഹു മഹത്തായ ഔദാര്യത്തിന്റെ ഉടമയാണ്.",
+            "en": "This is Allah's bounty, granted to whom He wills. He is Possessor of tremendous bounty."
+          },
+          "source_reference": "Quran 62:4",
+          "source_url": "https://quran.com/62/4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_phrase",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0150": {
+      "name_id": "PDF-HN-0150",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "النصير تبارك وتعالى",
+      "source_label": "The Helper",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «النصير تبارك وتعالى» ആണ്. അന്നിസാഅ് 4:45-ൽ «نَصِيرًا» എന്നാണ്; «النصير» എന്ന സ്വതന്ത്ര നാമരൂപം ഇവിടെ ഇല്ല. ശത്രുക്കളെക്കുറിച്ചുള്ള സന്ദർഭത്തിൽ സഹായിയായി അല്ലാഹു മതി എന്നു വ്യക്തമാക്കുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: النصير تبارك وتعالى. English gloss: The Helper. Quran 4:45 uses nasiran in the context of Allah sufficing as Helper; the heading al-Nasir is not printed as a definite noun here. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-45",
+          "title": {
+            "ml": "ഖുർആൻ 4:45",
+            "en": "Quran 4:45"
+          },
+          "arabic_original": "وَاللَّهُ أَعْلَمُ بِأَعْدَائِكُمْ ۚ وَكَفَىٰ بِاللَّهِ وَلِيًّا وَكَفَىٰ بِاللَّهِ نَصِيرًا",
+          "translation": {
+            "ml": "നിങ്ങളുടെ ശത്രുക്കളെക്കുറിച്ച് അല്ലാഹു നന്നായി അറിയുന്നു. രക്ഷാധികാരിയായും സഹായിയായും അല്ലാഹു മതി.",
+            "en": "Allah best knows your enemies; Allah suffices as Guardian and as Helper."
+          },
+          "source_reference": "Quran 4:45",
+          "source_url": "https://quran.com/4/45",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0151": {
+      "name_id": "PDF-HN-0151",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المبتلي تبارك وتعالى",
+      "source_label": "The Tester",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المبتلي تبارك وتعالى» ആണ്. ജീവനും മരണവും പരീക്ഷണത്തിന്റെ സന്ദർഭമാണെന്ന് 67:2 പറയുന്നു. «لِيَبْلُوَكُمْ» എന്ന ക്രിയയിൽനിന്നുള്ള ആശയബന്ധമാണ്; «الْمُبْتَلِي» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിലില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المبتلي تبارك وتعالى. English gloss: The Tester. The test is the quality of human deeds. Quran 67:2 contains the verb li-yabluwakum, not a standalone al-Mubtali name. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-67-2",
+          "title": {
+            "ml": "ഖുർആൻ 67:2",
+            "en": "Quran 67:2"
+          },
+          "arabic_original": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ",
+          "translation": {
+            "ml": "നിങ്ങളിൽ ആരാണ് നന്മയിൽ മികച്ചവരെന്ന് പരീക്ഷിക്കാനായി മരണവും ജീവിതവും സൃഷ്ടിച്ചവനാണ് അവൻ; അവൻ പ്രതാപിയും പൊറുക്കുന്നവനുമാണ്.",
+            "en": "He created death and life to test which of you does best in deeds; He is the Mighty, the Forgiving."
+          },
+          "source_reference": "Quran 67:2",
+          "source_url": "https://quran.com/67/2",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0153": {
+      "name_id": "PDF-HN-0153",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الشديد العذاب جلت قدرته",
+      "source_label": "Severe in Punishment",
+      "claim_kind": "direct_phrase",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الشديد العذاب جلت قدرته» ആണ്. ശിക്ഷയുടെ കഠിനത പറയുന്ന വാചകം വിഗ്രഹങ്ങളെ അല്ലാഹുവിന് സമാനമാക്കുന്നതിനെ വിമർശിക്കുന്ന സന്ദർഭത്തിലാണ്. ഇതിനെ ആളുകളെ ഉപദ്രവിക്കാൻ ജപിക്കുന്ന വസീഫയായി മാറ്റാൻ തെളിവില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الشديد العذاب جلت قدرته. English gloss: Severe in Punishment. The warning about severe punishment belongs to the context of associating others with Allah, not a license to seek harm through an invocation. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-165-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 2:165 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 2:165 — excerpt"
+          },
+          "arabic_original": "وَأَنَّ اللَّهَ شَدِيدُ الْعَذَابِ",
+          "translation": {
+            "ml": "അല്ലാഹു കഠിനമായി ശിക്ഷിക്കുന്നവനാണെന്നും (ആയത്തിന്റെ അവസാന ഭാഗം).",
+            "en": "And that Allah is severe in punishment (end of the verse)."
+          },
+          "source_reference": "Quran 2:165 (excerpt)",
+          "source_url": "https://quran.com/2/165",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_phrase",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0157": {
+      "name_id": "PDF-HN-0157",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "السريع الحساب سبحانه",
+      "source_label": "Swift in Reckoning",
+      "claim_kind": "direct_phrase",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «السريع الحساب سبحانه» ആണ്. ന്യായവിധിനാളിലെ കണക്കെടുപ്പിന്റെ വേഗതയാണ് ഇവിടെ സൂചിപ്പിക്കുന്നത്. «سَرِيعُ الْحِسَابِ» എന്ന ഗുണസമുച്ചയമാണ്; ഇതിൽ 24 മണിക്കൂറിനകം ഫലം നൽകുന്ന എണ്ണമുള്ള ദുആ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: السريع الحساب سبحانه. English gloss: Swift in Reckoning. The phrase concerns swift reckoning on Judgment Day; it is not an instruction for quick guaranteed outcomes. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-40-17-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 40:17 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 40:17 — excerpt"
+          },
+          "arabic_original": "إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ",
+          "translation": {
+            "ml": "അല്ലാഹു അതിവേഗം കണക്കെടുക്കുന്നവനാണ് (ആയത്തിന്റെ അവസാന ഭാഗം).",
+            "en": "Allah is swift in taking account (end of the verse)."
+          },
+          "source_reference": "Quran 40:17 (excerpt)",
+          "source_url": "https://quran.com/40/17",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_phrase",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0164": {
+      "name_id": "PDF-HN-0164",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المقسط تبارك اسمه",
+      "source_label": "The Equitable",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المقسط تبارك اسمه» ആണ്. അല്ലാഹു നീതിയോടെ വിധിക്കാൻ നിർദേശിക്കുന്നു; അതിൽനിന്നാണ് ഈ കാർഡിന്റെ നീതിസംബന്ധിയായ അർഥബന്ധം. «الْمُقْسِطُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المقسط تبارك اسمه. English gloss: The Equitable. The verse commands human judges to act justly, but does not use the definite standalone name al-Muqsit. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-58",
+          "title": {
+            "ml": "ഖുർആൻ 4:58",
+            "en": "Quran 4:58"
+          },
+          "arabic_original": "۞ إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ ۚ إِنَّ اللَّهَ نِعِمَّا يَعِظُكُم بِهِ ۗ إِنَّ اللَّهَ كَانَ سَمِيعًا بَصِيرًا",
+          "translation": {
+            "ml": "അമാനത്തുകൾ അവകാശികൾക്ക് നൽകാനും മനുഷ്യർക്കിടയിൽ നീതിയോടെ വിധിക്കാനും കല്പിക്കുന്നു; അവസാനം അല്ലാഹു കേൾക്കുന്നവനും കാണുന്നവനുമാണെന്ന് പറയുന്നു. ഇവിടെ «ബസ്വീറാ» എന്ന വിശേഷണരൂപം വരുന്നു.",
+            "en": "This verse commands returning trusts and judging justly, ending with attributes of hearing and seeing; the wording here is the adjective basira rather than the definite Name."
+          },
+          "source_reference": "Quran 4:58",
+          "source_url": "https://quran.com/4/58",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0166": {
+      "name_id": "PDF-HN-0166",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المذل تبارك اسمه",
+      "source_label": "The One who brings low",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المذل تبارك اسمه» ആണ്. «وَتُذِلُّ مَنْ تَشَاءُ» എന്നത് അല്ലാഹു ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുന്ന പ്രവൃത്തിയെ സൂചിപ്പിക്കുന്നു; «الْمُذِلُّ» എന്ന സ്വതന്ത്ര നാമം ഇതേ ആയത്തിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المذل تبارك اسمه. English gloss: The One who brings low. Quran 3:26 speaks of Allah humbling whom He wills, using a verb rather than independently listing al-Mudhill. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.com/3/26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0167": {
+      "name_id": "PDF-HN-0167",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الناصر تبارك وتعالى",
+      "source_label": "The One who aids",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الناصر تبارك وتعالى» ആണ്. «خَيْرُ النَّاصِرِينَ» എന്ന സമുച്ചയമാണ്; «الناصر» മാത്രം ഉദ്ധരിക്കുന്നത് പൂർണ മൂലപാഠമല്ല. വിശ്വാസത്തിന്റെ രക്ഷയും സഹായവുമാണ് സന്ദർഭം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الناصر تبارك وتعالى. English gloss: The One who aids. The actual expression is khayr al-nasirin, best of helpers; its plural construction differs from a single isolated name al-Nasir. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-150",
+          "title": {
+            "ml": "ഖുർആൻ 3:150",
+            "en": "Quran 3:150"
+          },
+          "arabic_original": "بَلِ اللَّهُ مَوْلَاكُمْ ۖ وَهُوَ خَيْرُ النَّاصِرِينَ",
+          "translation": {
+            "ml": "അല്ലാഹുവാണ് നിങ്ങളുടെ രക്ഷാധികാരി; അവൻ സഹായികളിൽ ഏറ്റവും നല്ലവനാണ്.",
+            "en": "Allah is your protecting Lord and the best of helpers."
+          },
+          "source_reference": "Quran 3:150",
+          "source_url": "https://quran.com/3/150",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0171": {
+      "name_id": "PDF-HN-0171",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المرسل جلت هدايته",
+      "source_label": "The Sender",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المرسل جلت هدايته» ആണ്. റസൂലിനെ സന്മാർഗവും സത്യമതവുമായിട്ട് അയച്ച അല്ലാഹുവിനെക്കുറിച്ച് «أَرْسَلَ» എന്ന ക്രിയയാണ്; «الْمُرْسِلُ» എന്ന സ്വതന്ത്ര നാമരൂപമല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المرسل جلت هدايته. English gloss: The Sender. The verse affirms Allah sent His Messenger, using arsala; al-Mursil is a derived heading rather than the Quran's isolated noun here. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-48-28",
+          "title": {
+            "ml": "ഖുർആൻ 48:28",
+            "en": "Quran 48:28"
+          },
+          "arabic_original": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ ۚ وَكَفَىٰ بِاللَّهِ شَهِيدًا",
+          "translation": {
+            "ml": "സന്മാർഗവും സത്യമതവുമായി തന്റെ ദൂതനെ അയച്ചത് അവനാണ്; എല്ലാ മതങ്ങൾക്കുമീതെ അതിനെ പ്രകടമാക്കുവാൻ. സാക്ഷിയായി അല്ലാഹു മതി.",
+            "en": "He is the One who sent His Messenger with guidance and the religion of truth to make it prevail over all religion. Allah is sufficient as a witness."
+          },
+          "source_reference": "Quran 48:28",
+          "source_url": "https://quran.com/48/28",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0173": {
+      "name_id": "PDF-HN-0173",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الصادق عز وجل",
+      "source_label": "The Truthful",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الصادق عز وجل» ആണ്. അല്ലാഹുവിനേക്കാൾ വാക്കിൽ സത്യസന്ധനായ മറ്റാരുമില്ല എന്ന് ആയത്ത് ചോദിക്കുന്നു. «أَصْدَقُ» എന്ന താരതമ്യപ്രയോഗമാണ്, «الصَّادِقُ» എന്ന ഒറ്റനാമമല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الصادق عز وجل. English gloss: The Truthful. The verse uses asdaq in a comparison about truthful speech, not the independent definite label al-Sadiq. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-87-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 4:87 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 4:87 — excerpt"
+          },
+          "arabic_original": "وَمَنْ أَصْدَقُ مِنَ اللَّهِ حَدِيثًا",
+          "translation": {
+            "ml": "അല്ലാഹുവിനെക്കാൾ വാക്കിൽ സത്യസന്ധനായ മറ്റാരുണ്ട്? (ആയത്തിലെ ഭാഗം)",
+            "en": "Who could be more truthful in speech than Allah? (excerpt)"
+          },
+          "source_reference": "Quran 4:87 (excerpt)",
+          "source_url": "https://quran.com/4/87",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0174": {
+      "name_id": "PDF-HN-0174",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الشاكر جل جلاله",
+      "source_label": "The Appreciative",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الشاكر جل جلاله» ആണ്. «شَاكِرٌ عَلِيمٌ» എന്ന വിശേഷണം ആരാധനാനുഷ്ഠാനത്തിനൊപ്പം വരുന്നു; «شَكُورٌ حَلِيمٌ» വേറൊരു പദരൂപമാണ്. പ്രതിഫലം കൃത്യമായി അറിയുന്നവൻ എന്ന അർഥം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الشاكر جل جلاله. English gloss: The Appreciative. The Quran uses shakir alim in the Safa-Marwa context and shakur halim elsewhere; these word forms must not be conflated. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-158",
+          "title": {
+            "ml": "ഖുർആൻ 2:158",
+            "en": "Quran 2:158"
+          },
+          "arabic_original": "۞ إِنَّ الصَّفَا وَالْمَرْوَةَ مِن شَعَائِرِ اللَّهِ ۖ فَمَنْ حَجَّ الْبَيْتَ أَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ اللَّهَ شَاكِرٌ عَلِيمٌ",
+          "translation": {
+            "ml": "സ്വഫായും മർവയും അല്ലാഹുവിന്റെ അടയാളങ്ങളാണ്. ഹജ്ജോ ഉംറയോ നിർവഹിക്കുന്നവർ അവയ്ക്കിടയിൽ സഅ്‌യ് ചെയ്യുന്നതിൽ തെറ്റില്ല. സ്വമേധയാ നന്മ ചെയ്യുന്നവരുടെ പ്രവർത്തനം അല്ലാഹു വിലമതിക്കുകയും അറിയുകയും ചെയ്യുന്നു.",
+            "en": "Safa and Marwa are among Allah's symbols; there is no blame in moving between them during Hajj or Umrah. Whoever voluntarily does good, Allah is Appreciative and Knowing."
+          },
+          "source_reference": "Quran 2:158",
+          "source_url": "https://quran.com/2/158",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-64-17",
+          "title": {
+            "ml": "ഖുർആൻ 64:17",
+            "en": "Quran 64:17"
+          },
+          "arabic_original": "إِن تُقْرِضُوا اللَّهَ قَرْضًا حَسَنًا يُضَاعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ ۚ وَاللَّهُ شَكُورٌ حَلِيمٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ അല്ലാഹുവിന് നല്ല കടം നൽകിയാൽ അവൻ അത് നിങ്ങൾക്കായി ഇരട്ടിപ്പിക്കുകയും നിങ്ങൾക്ക് പൊറുത്തുതരുകയും ചെയ്യും. അല്ലാഹു നന്ദിയോടെ പ്രതിഫലം നൽകുന്നവനും സഹനമുള്ളവനുമാണ്.",
+            "en": "If you lend Allah a good loan, He will multiply it for you and forgive you. Allah is Appreciative and Forbearing."
+          },
+          "source_reference": "Quran 64:17",
+          "source_url": "https://quran.com/64/17",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0176": {
+      "name_id": "PDF-HN-0176",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "القاهر جلت قدرته",
+      "source_label": "The Subduer",
+      "claim_kind": "direct",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «القاهر جلت قدرته» ആണ്. അല്ലാഹു ദാസർക്കുമീതെ പൂർണാധികാരമുള്ളവനാണെന്നും യുക്തിമാനും സൂക്ഷ്മജ്ഞാനിയുമാണെന്നും ആയത്ത് പറയുന്നു. «الْقَاهِرُ» നേരിട്ട് വരുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: القاهر جلت قدرته. English gloss: The Subduer. Al-Qahir occurs explicitly in Quran 6:18 alongside al-Hakim and al-Khabir, joining power with wisdom and knowledge. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-18",
+          "title": {
+            "ml": "ഖുർആൻ 6:18",
+            "en": "Quran 6:18"
+          },
+          "arabic_original": "وَهُوَ الْقَاهِرُ فَوْقَ عِبَادِهِ ۚ وَهُوَ الْحَكِيمُ الْخَبِيرُ",
+          "translation": {
+            "ml": "അവൻ തന്റെ ദാസന്മാർക്കുമീതെ അധികാരമുള്ളവനാണ്. അവൻ യുക്തിമാനും എല്ലാം സൂക്ഷ്മമായി അറിയുന്നവനുമാണ്.",
+            "en": "He holds supreme power over His servants. He is the Wise, the All-Aware."
+          },
+          "source_reference": "Quran 6:18",
+          "source_url": "https://quran.com/6/18",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0177": {
+      "name_id": "PDF-HN-0177",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "القاضي عز وجل",
+      "source_label": "The Judge",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «القاضي عز وجل» ആണ്. «يَفْتَحُ بَيْنَنَا بِالْحَقِّ» എന്നത് സത്യത്തോടെ വിധി പറയുക എന്നാണ്; «القاضي» എന്ന ഒറ്റനാമരൂപം ഇല്ല. അൽ-ഫത്താഹ് എന്ന നാമം ഈ ആയത്തിൽ വരുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: القاضي عز وجل. English gloss: The Judge. The judgment theme occurs through yaftahu baynana bil-haqq; the verse actually names al-Fattah, not al-Qadi. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-34-26",
+          "title": {
+            "ml": "ഖുർആൻ 34:26",
+            "en": "Quran 34:26"
+          },
+          "arabic_original": "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِالْحَقِّ وَهُوَ الْفَتَّاحُ الْعَلِيمُ",
+          "translation": {
+            "ml": "പറയുക: ഞങ്ങളുടെ രക്ഷിതാവ് നമ്മെ ഒന്നിച്ചുകൂട്ടുകയും തുടർന്ന് നമുക്കിടയിൽ സത്യത്തോടെ വിധി പറയുകയും ചെയ്യും. അവൻ തീർപ്പുകൽപ്പിക്കുന്നവനും എല്ലാം അറിയുന്നവനുമാണ്.",
+            "en": "Say: Our Lord will gather us together and then judge between us in truth. He is the Decisive Judge, the All-Knowing."
+          },
+          "source_reference": "Quran 34:26",
+          "source_url": "https://quran.com/34/26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0178": {
+      "name_id": "PDF-HN-0178",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الفالق دام جوده",
+      "source_label": "The Splitter who brings forth",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الفالق دام جوده» ആണ്. ധാന്യവും കുരുവും പിളർത്തി സൃഷ്ടിയെ പുറത്തുകൊണ്ടുവരുന്ന അല്ലാഹുവിന്റെ പ്രവർത്തിയാണ് «فَالِقُ الْحَبِّ وَالنَّوَىٰ» എന്ന് പറയുന്നത്; ഇതൊരു കാർഷിക മാന്ത്രികസംഖ്യയല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الفالق دام جوده. English gloss: The Splitter who brings forth. The phrase describes Allah splitting seed and fruit-stone and bringing forth life, not a numbered agricultural talisman. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-95",
+          "title": {
+            "ml": "ഖുർആൻ 6:95",
+            "en": "Quran 6:95"
+          },
+          "arabic_original": "إِنَّ اللَّهَ فَالِقُ الْحَبِّ وَالنَّوَىٰ ۖ يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَمُخْرِجُ الْمَيِّتِ مِنَ الْحَيِّ ۚ ذَٰلِكُمُ اللَّهُ ۖ فَأَنَّىٰ تُؤْفَكُونَ",
+          "translation": {
+            "ml": "അല്ലാഹുവാണ് ധാന്യവും കുരുവും പിളർത്തുന്നവൻ; ജീവനുള്ളതിനെ മരിച്ചതിൽനിന്നും മരിച്ചതിനെ ജീവനുള്ളതിൽനിന്നും കൊണ്ടുവരുന്നു; എന്നിട്ടും നിങ്ങൾ എവിടേക്ക് തിരിയുന്നു?",
+            "en": "Allah splits seed and date-stone and brings the living from the dead and the dead from the living. That is Allah; how are you turned away?"
+          },
+          "source_reference": "Quran 6:95",
+          "source_url": "https://quran.com/6/95",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0180": {
+      "name_id": "PDF-HN-0180",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "البادئ سبحانه",
+      "source_label": "The One who begins",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «البادئ سبحانه» ആണ്. «يُبْدِئُ» എന്നും «يُعِيدُ» എന്നും രണ്ടു ക്രിയകളാണ്; «الْبَادِئُ» എന്ന നാമം ഇവിടെ സ്വതന്ത്രമായി ഇല്ല. ആദ്യസൃഷ്ടിയും പുനഃസൃഷ്ടിയുമാണ് വിഷയം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: البادئ سبحانه. English gloss: The One who begins. Quran 85:13 uses verbs for originating and restoring, not the isolated noun al-Badi'. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-85-13",
+          "title": {
+            "ml": "ഖുർആൻ 85:13",
+            "en": "Quran 85:13"
+          },
+          "arabic_original": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+          "translation": {
+            "ml": "തീർച്ചയായും അവനാണ് സൃഷ്ടി ആരംഭിക്കുകയും വീണ്ടും കൊണ്ടുവരുകയും ചെയ്യുന്നത്.",
+            "en": "Indeed it is He who initiates creation and brings it back."
+          },
+          "source_reference": "Quran 85:13",
+          "source_url": "https://quran.com/85/13",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0182": {
+      "name_id": "PDF-HN-0182",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المضل",
+      "source_label": "The One who lets go astray",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المضل» ആണ്. «وَمَنْ يُضْلِلِ اللَّهُ» എന്ന ക്രിയാപ്രയോഗമാണ്. ഈ പാഠം ദൈവിക നീതിയുടെ വിശാല തഫ്സീർസന്ദർഭത്തിൽ വായിക്കണം; ആളുകളെ തെറ്റുവഴിയിലാക്കാനുള്ള തകിടല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المضل. English gloss: The One who lets go astray. Quran 39:36 has the verb yudlil, in a passage about reliance and guidance; it cannot justify a practice to mislead others. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-39-36",
+          "title": {
+            "ml": "ഖുർആൻ 39:36",
+            "en": "Quran 39:36"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِكَافٍ عَبْدَهُ ۖ وَيُخَوِّفُونَكَ بِالَّذِينَ مِن دُونِهِ ۚ وَمَن يُضْلِلِ اللَّهُ فَمَا لَهُ مِنْ هَادٍ",
+          "translation": {
+            "ml": "തന്റെ ദാസന് അല്ലാഹു മതിയായവനല്ലയോ? അവനല്ലാത്തവരെക്കൊണ്ട് അവർ നിന്നെ ഭയപ്പെടുത്തുന്നു. അല്ലാഹു വഴിതെറ്റാൻ വിട്ടവന് വഴികാട്ടിയില്ല.",
+            "en": "Is Allah not sufficient for His servant? They frighten you with those besides Him, yet whoever Allah leaves astray has no guide."
+          },
+          "source_reference": "Quran 39:36",
+          "source_url": "https://quran.com/39/36",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0183": {
+      "name_id": "PDF-HN-0183",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المغيث شمل جوده ورحمته",
+      "source_label": "The Rescuer of one seeking aid",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المغيث شمل جوده ورحمته» ആണ്. ബദ്റിലെ വിശ്വാസികൾ അല്ലാഹുവിനോട് രക്ഷയും സഹായവും തേടിയപ്പോഴുള്ള ഉത്തരം സംബന്ധിച്ച പാഠമാണിത്. «الْمُغِيثُ» എന്ന ഒറ്റനാമം ഇതിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المغيث شمل جوده ورحمته. English gloss: The Rescuer of one seeking aid. Quran 8:9 narrates believers asking for help during Badr and Allah's answer; it does not independently name al-Mughith. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-8-9-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 8:9 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 8:9 — excerpt"
+          },
+          "arabic_original": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ",
+          "translation": {
+            "ml": "നിങ്ങൾ നിങ്ങളുടെ രക്ഷിതാവിനോട് സഹായം തേടിയപ്പോൾ അവൻ ഉത്തരം നൽകിയ സന്ദർഭം (ബദ്റിന്റെ കഥയിലെ ഭാഗം).",
+            "en": "When you called upon your Lord for help and He answered (excerpt from the account of Badr)."
+          },
+          "source_reference": "Quran 8:9 (excerpt)",
+          "source_url": "https://quran.com/8/9",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0186": {
+      "name_id": "PDF-HN-0186",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الأليم الأخـذ نعوذ به منه",
+      "source_label": "Painful in Seizing",
+      "claim_kind": "direct_phrase",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الأليم الأخـذ نعوذ به منه» ആണ്. അക്രമം ചെയ്യുന്ന ജനതകൾക്കെതിരായ ദൈവിക നടപടിയെക്കുറിച്ചാണ് «أَلِيمٌ شَدِيدٌ» എന്നു പറയുന്നത്. ഇത് മനുഷ്യരെ ദോഷപ്പെടുത്താനുള്ള ശാസ്ത്രീയ ഉറപ്പോ പ്രയോഗമോ അല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الأليم الأخـذ نعوذ به منه. English gloss: Painful in Seizing. The description of painful and severe taking to account concerns punishment of wrongdoing, not an instruction to harm others. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-102-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 11:102 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 11:102 — excerpt"
+          },
+          "arabic_original": "إِنَّ أَخْذَهُ أَلِيمٌ شَدِيدٌ",
+          "translation": {
+            "ml": "അവന്റെ പിടുത്തം വേദനാജനകവും കഠിനവുമാണ് (ആയത്തിന്റെ അവസാന ഭാഗം).",
+            "en": "His taking to account is painful and severe (verse ending)."
+          },
+          "source_reference": "Quran 11:102 (excerpt)",
+          "source_url": "https://quran.com/11/102",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_phrase",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0187": {
+      "name_id": "PDF-HN-0187",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الحافظ تبارك اسمه",
+      "source_label": "The Guardian",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الحافظ تبارك اسمه» ആണ്. 11:57-ൽ «حَفِيظٌ», 12:64-ൽ യഅ്ഖൂബ് നബിയുടെ വാക്കുകളിൽ «خَيْرٌ حَافِظًا» എന്നീ വ്യത്യസ്ത പദരൂപങ്ങളുണ്ട്; സംരക്ഷണത്തെക്കുറിച്ചുള്ള വിശ്വാസം രേഖപ്പെടുത്തുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الحافظ تبارك اسمه. English gloss: The Guardian. Quran 11:57 uses hafiz while Yaqub says khayrun hafizan in 12:64; these are distinct grammatical forms connected by protection. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-57",
+          "title": {
+            "ml": "ഖുർആൻ 11:57",
+            "en": "Quran 11:57"
+          },
+          "arabic_original": "فَإِن تَوَلَّوْا فَقَدْ أَبْلَغْتُكُم مَّا أُرْسِلْتُ بِهِ إِلَيْكُمْ ۚ وَيَسْتَخْلِفُ رَبِّي قَوْمًا غَيْرَكُمْ وَلَا تَضُرُّونَهُ شَيْئًا ۚ إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
+          "translation": {
+            "ml": "നിങ്ങൾ പിന്തിരിഞ്ഞാൽ ഞാൻ ഏൽപ്പിക്കപ്പെട്ട സന്ദേശം നിങ്ങളെ അറിയിച്ചുകഴിഞ്ഞു. എന്റെ രക്ഷിതാവ് നിങ്ങളുടെ സ്ഥാനത്ത് മറ്റുള്ളവരെ കൊണ്ടുവരും; നിങ്ങൾ അവന് യാതൊരു ദോഷവും വരുത്തുകയില്ല. എന്റെ രക്ഷിതാവ് എല്ലാറ്റിനെയും കാത്തുസൂക്ഷിച്ച് നിരീക്ഷിക്കുന്നവനാണ്.",
+            "en": "If you turn away, I have conveyed my message. My Lord can replace you with another people, and you cannot harm Him. My Lord watches over and preserves everything."
+          },
+          "source_reference": "Quran 11:57",
+          "source_url": "https://quran.com/11/57",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-12-64-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 12:64 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 12:64 — excerpt"
+          },
+          "arabic_original": "فَاللَّهُ خَيْرٌ حَافِظًا وَهُوَ أَرْحَمُ الرَّاحِمِينَ",
+          "translation": {
+            "ml": "അല്ലാഹുവാണ് ഏറ്റവും നല്ല സംരക്ഷകൻ; കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും കരുണയുള്ളവനും അവനാണ് (യഅ്ഖൂബ് നബിയുടെ പ്രസ്താവന).",
+            "en": "Allah is the best guardian and the Most Merciful of the merciful (from Yaqub's statement)."
+          },
+          "source_reference": "Quran 12:64 (excerpt)",
+          "source_url": "https://quran.com/12/64",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0188": {
+      "name_id": "PDF-HN-0188",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المدبّر تبارك وتعالى",
+      "source_label": "The Disposer of Affairs",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المدبّر تبارك وتعالى» ആണ്. അല്ലാഹു കാര്യങ്ങൾ നിയന്ത്രിക്കുന്നുവെന്ന് «يُدَبِّرُ الْأَمْرَ» പറയുന്നു; «الْمُدَبِّرُ» എന്ന സ്വതന്ത്ര നാമം ഇവിടെ ഇല്ല. ദൈവിക നിയന്ത്രണവും വിധിയുമാണ് വിഷയം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المدبّر تبارك وتعالى. English gloss: The Disposer of Affairs. The Quran uses yudabbiru al-amr as a verb phrase about governing affairs, not the standalone noun al-Mudabbir. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-32-5-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 32:5 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 32:5 — excerpt"
+          },
+          "arabic_original": "يُدَبِّرُ الْأَمْرَ مِنَ السَّمَاءِ إِلَى الْأَرْضِ",
+          "translation": {
+            "ml": "ആകാശത്തുനിന്ന് ഭൂമിയിലേക്കുള്ള കാര്യങ്ങൾ അവൻ നിയന്ത്രിക്കുന്നു (ആയത്തിന്റെ തുടക്കം).",
+            "en": "He disposes affairs from heaven to earth (opening excerpt)."
+          },
+          "source_reference": "Quran 32:5 (excerpt)",
+          "source_url": "https://quran.com/32/5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0189": {
+      "name_id": "PDF-HN-0189",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المتعال جل وعلا",
+      "source_label": "The Supremely Exalted",
+      "claim_kind": "direct",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المتعال جل وعلا» ആണ്. «الْمُتَعَالِ» എന്ന വചനത്തിൽ മറഞ്ഞതും പ്രകടവുമായ കാര്യങ്ങൾ അറിയുന്ന അല്ലാഹുവിന്റെ അത്യുന്നതത്വമാണ് വിഷയം. ഈ രൂപം നേരിട്ട് ഖുർആനിൽ വരുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المتعال جل وعلا. English gloss: The Supremely Exalted. Al-Muta'al occurs directly in Quran 13:9, paired with divine knowledge of the unseen and seen. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-13-9",
+          "title": {
+            "ml": "ഖുർആൻ 13:9",
+            "en": "Quran 13:9"
+          },
+          "arabic_original": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+          "translation": {
+            "ml": "അദൃശ്യവും ദൃശ്യവും അറിയുന്നവൻ; മഹാനായവൻ; അത്യുന്നതൻ.",
+            "en": "Knower of the unseen and the visible, the Great, the Supremely Exalted."
+          },
+          "source_reference": "Quran 13:9",
+          "source_url": "https://quran.com/13/9",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0191": {
+      "name_id": "PDF-HN-0191",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الواقي به العصمة ومنه الرحمة",
+      "source_label": "The Protector",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الواقي به العصمة ومنه الرحمة» ആണ്. തന്റെ ദാസന് അല്ലാഹു മതിയാകുമെന്ന് 39:36 പറയുന്നു. «الْوَاقِي» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല; ഉപാധികളോ പ്രത്യേക തകിടോ നിർദേശിക്കുന്നില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الواقي به العصمة ومنه الرحمة. English gloss: The Protector. Allah sufficing for His servant is the theme, not a verbatim occurrence of the separate name al-Waqi. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-39-36",
+          "title": {
+            "ml": "ഖുർആൻ 39:36",
+            "en": "Quran 39:36"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِكَافٍ عَبْدَهُ ۖ وَيُخَوِّفُونَكَ بِالَّذِينَ مِن دُونِهِ ۚ وَمَن يُضْلِلِ اللَّهُ فَمَا لَهُ مِنْ هَادٍ",
+          "translation": {
+            "ml": "തന്റെ ദാസന് അല്ലാഹു മതിയായവനല്ലയോ? അവനല്ലാത്തവരെക്കൊണ്ട് അവർ നിന്നെ ഭയപ്പെടുത്തുന്നു. അല്ലാഹു വഴിതെറ്റാൻ വിട്ടവന് വഴികാട്ടിയില്ല.",
+            "en": "Is Allah not sufficient for His servant? They frighten you with those besides Him, yet whoever Allah leaves astray has no guide."
+          },
+          "source_reference": "Quran 39:36",
+          "source_url": "https://quran.com/39/36",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0192": {
+      "name_id": "PDF-HN-0192",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الدافع فهو الواقي سبحانه بمعاني الأسماء ما ينزل إلى الأرض من آفات السماء",
+      "source_label": "The Repeller of harm",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الدافع فهو الواقي سبحانه بمعاني الأسماء ما ينزل إلى الأرض من آفات السماء» ആണ്. വിശ്വാസികളെ അല്ലാഹു സംരക്ഷിക്കുന്നതായി «يُدَافِعُ» എന്ന ക്രിയയാണ്. ഒരു പ്രത്യേക രോഗമോ അപകടമോ ഒരിക്കലും ഉണ്ടാകില്ലെന്ന വാഗ്ദാനം ഇതല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الدافع فهو الواقي سبحانه بمعاني الأسماء ما ينزل إلى الأرض من آفات السماء. English gloss: The Repeller of harm. Quran 22:38 uses the verb yudafi'u for Allah defending believers; it does not guarantee the elimination of every risk. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-38-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 22:38 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 22:38 — excerpt"
+          },
+          "arabic_original": "إِنَّ اللَّهَ يُدَافِعُ عَنِ الَّذِينَ آمَنُوا",
+          "translation": {
+            "ml": "വിശ്വാസികളെ അല്ലാഹു സംരക്ഷിക്കുന്നു (ആയത്തിലെ ആദ്യഭാഗം).",
+            "en": "Allah defends those who believe (opening excerpt)."
+          },
+          "source_reference": "Quran 22:38 (excerpt)",
+          "source_url": "https://quran.com/22/38",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0193": {
+      "name_id": "PDF-HN-0193",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المنان شمل منه ورحمته",
+      "source_label": "The Bountiful Benefactor",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المنان شمل منه ورحمته» ആണ്. വിശ്വാസികളോട് ഔദാര്യം ചെയ്തതായി «مَنَّ اللَّهُ» എന്ന് പറയുന്നു; «الْمَنَّانُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല. ദാനത്തിന്റെ ദൈവിക അർഥമാണ് ബന്ധം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المنان شمل منه ورحمته. English gloss: The Bountiful Benefactor. Quran 3:164 has the verb manna while 62:4 describes bounty; neither verse prints al-Mannan as an independent noun. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-164-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 3:164 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 3:164 — excerpt"
+          },
+          "arabic_original": "لَقَدْ مَنَّ اللَّهُ عَلَى الْمُؤْمِنِينَ",
+          "translation": {
+            "ml": "അല്ലാഹു വിശ്വാസികളോട് മഹത്തായ ഔദാര്യം കാണിച്ചു (ആയത്തിന്റെ തുടക്കം).",
+            "en": "Allah bestowed great favour upon believers (verse opening)."
+          },
+          "source_reference": "Quran 3:164 (excerpt)",
+          "source_url": "https://quran.com/3/164",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        },
+        {
+          "id": "quran-62-4",
+          "title": {
+            "ml": "ഖുർആൻ 62:4",
+            "en": "Quran 62:4"
+          },
+          "arabic_original": "ذَٰلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَن يَشَاءُ ۚ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ",
+          "translation": {
+            "ml": "ഇത് അല്ലാഹുവിന്റെ ഔദാര്യമാണ്. അവൻ ഉദ്ദേശിക്കുന്നവർക്ക് നൽകുന്നു. അല്ലാഹു മഹത്തായ ഔദാര്യത്തിന്റെ ഉടമയാണ്.",
+            "en": "This is Allah's bounty, granted to whom He wills. He is Possessor of tremendous bounty."
+          },
+          "source_reference": "Quran 62:4",
+          "source_url": "https://quran.com/62/4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0194": {
+      "name_id": "PDF-HN-0194",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الكفيل تبارك وتعالى",
+      "source_label": "The Guarantor",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الكفيل تبارك وتعالى» ആണ്. ഉടമ്പടികൾ നിറവേറ്റുന്നതിന്റെ സന്ദർഭത്തിൽ അല്ലാഹുവിനെ «كَفِيلًا» എന്നു വിവരിക്കുന്നു; «الْكَفِيلُ» എന്ന നാമരൂപത്തിൽ സ്വതന്ത്ര ജപനിർദേശം ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الكفيل تبارك وتعالى. English gloss: The Guarantor. Kafilan appears within the command to honour covenants and oaths; the passage prescribes no separate name-specific practice. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-16-91-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 16:91 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 16:91 — excerpt"
+          },
+          "arabic_original": "وَقَدْ جَعَلْتُمُ اللَّهَ عَلَيْكُمْ كَفِيلًا",
+          "translation": {
+            "ml": "നിങ്ങൾ അല്ലാഹുവിനെ നിങ്ങളുടെ ഉടമ്പടിയുടെ ഉറപ്പുകാരനാക്കിയിരിക്കുന്നു (ആയത്തിലെ ഭാഗം).",
+            "en": "You have made Allah the guarantor over yourselves (excerpt about covenants)."
+          },
+          "source_reference": "Quran 16:91 (excerpt)",
+          "source_url": "https://quran.com/16/91",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0195": {
+      "name_id": "PDF-HN-0195",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المكرم تعالى",
+      "source_label": "The Bestower of Honour",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المكرم تعالى» ആണ്. പരീക്ഷണത്തിന്റെ ഭാഗമായി മനുഷ്യന് ലഭിക്കുന്ന ആദരവും അനുഗ്രഹവുമാണ് പാഠം; സമ്പത്തുള്ളവന് തീർച്ചയായും ദൈവിക അംഗീകാരമുണ്ടെന്ന് ഉറപ്പാക്കുന്നില്ല. «أَكْرَمَهُ» ക്രിയയാണ്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المكرم تعالى. English gloss: The Bestower of Honour. The verse describes a test in which a human receives honour and comfort, not proof that wealth establishes divine approval; akramahu is a verb. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-89-15-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 89:15 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 89:15 — excerpt"
+          },
+          "arabic_original": "إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ",
+          "translation": {
+            "ml": "രക്ഷിതാവ് മനുഷ്യനെ പരീക്ഷിച്ച് ആദരിക്കുകയും അനുഗ്രഹിക്കുകയും ചെയ്യുമ്പോൾ (ആയത്തിന്റെ ഭാഗം).",
+            "en": "When his Lord tests a person by honouring and favouring him (excerpt)."
+          },
+          "source_reference": "Quran 89:15 (excerpt)",
+          "source_url": "https://quran.com/89/15",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0196": {
+      "name_id": "PDF-HN-0196",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الحنان تبارك وتعالى",
+      "source_label": "The Tenderly Merciful",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الحنان تبارك وتعالى» ആണ്. ഈ രണ്ട് ആയത്തുകളും ദൈവിക കരുണയെ വ്യക്തമാക്കുന്നു; എന്നാൽ «الْحَنَّانُ» എന്ന രൂപം അവയിൽ ഇല്ല. ഇത് ഖുർആനിലെ നേരിട്ടുള്ള സ്വതന്ത്ര നാമമായി ഇവിടെ സ്ഥിരീകരിക്കുന്നില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الحنان تبارك وتعالى. English gloss: The Tenderly Merciful. These verses establish Allah's mercy, but neither prints al-Hannan as an independent Quranic name. Its independent hadith status needs a separately sourced study. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-11-90",
+          "title": {
+            "ml": "ഖുർആൻ 11:90",
+            "en": "Quran 11:90"
+          },
+          "arabic_original": "وَاسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
+          "translation": {
+            "ml": "നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക; തുടർന്ന് അവനിലേക്കു പശ്ചാത്തപിച്ചു മടങ്ങുക. എന്റെ രക്ഷിതാവ് കരുണാനിധിയും സ്നേഹമുള്ളവനുമാണ്.",
+            "en": "Seek your Lord’s forgiveness, then turn to Him in repentance. My Lord is Merciful and Loving."
+          },
+          "source_reference": "Quran 11:90",
+          "source_url": "https://quran.com/11/90",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-21-83",
+          "title": {
+            "ml": "ഖുർആൻ 21:83",
+            "en": "Quran 21:83"
+          },
+          "arabic_original": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+          "translation": {
+            "ml": "അയ്യൂബ് തന്റെ രക്ഷിതാവിനെ വിളിച്ചു: എനിക്ക് പ്രയാസം ബാധിച്ചിരിക്കുന്നു; കരുണ കാണിക്കുന്നവരിൽ ഏറ്റവും കരുണയുള്ളവൻ നീയാണ്.",
+            "en": "And remember Ayyub when he called on his Lord: Harm has touched me, and You are the Most Merciful of those who show mercy."
+          },
+          "source_reference": "Quran 21:83",
+          "source_url": "https://quran.com/21/83",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0200": {
+      "name_id": "PDF-HN-0200",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المعطي جل ثناؤه",
+      "source_label": "The Giver",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المعطي جل ثناؤه» ആണ്. «عَطَاءِ رَبِّكَ» എന്ന ദാനപരാമർശമാണ്; «الْمُعْطِي» എന്ന നാമം ഈ ആയത്തിൽ നേരിട്ട് ഇല്ല. ഹദീസിൽ ഈ പദം നേരിട്ട് വരുന്നതിന്റെ വിവരം വേറെ രേഖപ്പെടുത്തേണ്ടതാണ്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المعطي جل ثناؤه. English gloss: The Giver. Quran 17:20 speaks of the Lord's giving; al-Mu'ti as a direct epithet is attested separately in hadith and should not be attributed to this verse. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-17-20-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 17:20 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 17:20 — excerpt"
+          },
+          "arabic_original": "كُلًّا نُمِدُّ هَٰؤُلَاءِ وَهَٰؤُلَاءِ مِنْ عَطَاءِ رَبِّكَ",
+          "translation": {
+            "ml": "ഇക്കൂട്ടർക്കും അക്കൂട്ടർക്കും നിന്റെ രക്ഷിതാവിന്റെ ദാനത്തിൽനിന്ന് നാം നൽകുന്നു (ഭാഗം).",
+            "en": "We extend to both groups from the gift of your Lord (excerpt)."
+          },
+          "source_reference": "Quran 17:20 (excerpt)",
+          "source_url": "https://quran.com/17/20",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0201": {
+      "name_id": "PDF-HN-0201",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الغفار تبارك عفوه",
+      "source_label": "The Oft-Forgiving",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الغفار تبارك عفوه» ആണ്. നൂഹ് നബിയുടെ ഇസ്തിഗ്ഫാർ ആഹ്വാനത്തിൽ «غَفَّارًا» എന്നും 20:82-ൽ «لَغَفَّارٌ» എന്നും വരുന്നു. പശ്ചാത്താപം, വിശ്വാസം, നല്ല പ്രവൃത്തികൾ എന്നിവയുടെ സന്ദർഭം സംരക്ഷിക്കണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الغفار تبارك عفوه. English gloss: The Oft-Forgiving. Nuh's call uses ghaffaran, while Quran 20:82 uses la-ghaffar; repentance and right action are part of the wider context. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-71-10",
+          "title": {
+            "ml": "ഖുർആൻ 71:10",
+            "en": "Quran 71:10"
+          },
+          "arabic_original": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+          "translation": {
+            "ml": "അപ്പോൾ ഞാൻ പറഞ്ഞു: നിങ്ങളുടെ രക്ഷിതാവിനോട് പാപമോചനം തേടുക. തീർച്ചയായും അവൻ വീണ്ടും വീണ്ടും പൊറുത്തുതരുന്നവനാണ്.",
+            "en": "Then I said: Seek forgiveness from your Lord; He is indeed Oft-Forgiving."
+          },
+          "source_reference": "Quran 71:10",
+          "source_url": "https://quran.com/71/10",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-20-82",
+          "title": {
+            "ml": "ഖുർആൻ 20:82",
+            "en": "Quran 20:82"
+          },
+          "arabic_original": "وَإِنِّي لَغَفَّارٌ لِّمَن تَابَ وَآمَنَ وَعَمِلَ صَالِحًا ثُمَّ اهْتَدَىٰ",
+          "translation": {
+            "ml": "പശ്ചാത്തപിക്കുകയും വിശ്വസിക്കുകയും നല്ല പ്രവർത്തികൾ ചെയ്യുകയും തുടർന്ന് നേർവഴിയിൽ നിലകൊള്ളുകയും ചെയ്യുന്നവന് ഞാൻ വളരെ പൊറുത്തുതരുന്നവനാണ്.",
+            "en": "I am indeed Oft-Forgiving toward whoever repents, believes, does good deeds, and then follows guidance."
+          },
+          "source_reference": "Quran 20:82",
+          "source_url": "https://quran.com/20/82",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0202": {
+      "name_id": "PDF-HN-0202",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الراتق تعالى",
+      "source_label": "The Joiner who closes",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الراتق تعالى» ആണ്. ആകാശങ്ങളും ഭൂമിയും ചേർന്നിരുന്ന അവസ്ഥയെ «رَتْقًا» എന്നാണ് പറയുന്നത്. «الرَّاتِقُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല; ഖുർആൻ ഈ ശാസ്ത്രവിവരണം നക്ഷത്രക്കള നിർമ്മാണത്തിനായി നൽകുന്നില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الراتق تعالى. English gloss: The Joiner who closes. The verse uses ratqan for a joined condition, not an independent Divine Name al-Ratiq or instructions to build a grid. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-21-30-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 21:30 — excerpt"
+          },
+          "arabic_original": "أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا",
+          "translation": {
+            "ml": "ആകാശങ്ങളും ഭൂമിയും ഒന്നിച്ചു ചേർന്ന നിലയിലായിരുന്നു; നാം അവയെ വേർപെടുത്തി (ആയത്തിലെ ഭാഗം).",
+            "en": "The heavens and earth were joined together and We separated them (excerpt)."
+          },
+          "source_reference": "Quran 21:30 (excerpt)",
+          "source_url": "https://quran.com/21/30",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0203": {
+      "name_id": "PDF-HN-0203",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الفاتق تبارك وتعالى",
+      "source_label": "The Opener who separates",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الفاتق تبارك وتعالى» ആണ്. «فَفَتَقْنَاهُمَا» എന്നത് അവയെ വേർപെടുത്തി എന്ന ക്രിയയാണ്. «الفَاتِقُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല. അനുഭവശാസ്ത്രപരമായ വിശദീകരണങ്ങൾ തഫ്സീറുമായി വേർതിരിക്കണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الفاتق تبارك وتعالى. English gloss: The Opener who separates. Quran 21:30 has the verb fafataqnahuma, not the nominal name al-Fatiq; its exegetical history should not be confused with later scientific interpretations. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-21-30-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 21:30 — excerpt"
+          },
+          "arabic_original": "أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا",
+          "translation": {
+            "ml": "ആകാശങ്ങളും ഭൂമിയും ഒന്നിച്ചു ചേർന്ന നിലയിലായിരുന്നു; നാം അവയെ വേർപെടുത്തി (ആയത്തിലെ ഭാഗം).",
+            "en": "The heavens and earth were joined together and We separated them (excerpt)."
+          },
+          "source_reference": "Quran 21:30 (excerpt)",
+          "source_url": "https://quran.com/21/30",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0205": {
+      "name_id": "PDF-HN-0205",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المزكي تبارك وتعالى",
+      "source_label": "The Purifier, the One who gives growth",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المزكي تبارك وتعالى» ആണ്. ശുദ്ധീകരണം അല്ലാഹുവിന്റെ അധികാരമാണെന്ന് «يُزَكِّي» എന്ന ക്രിയ പറയുന്നു. «الْمُزَكِّي» എന്ന സ്വതന്ത്ര നാമരൂപം ഈ വചനത്തിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المزكي تبارك وتعالى. English gloss: The Purifier, the One who gives growth. The Quran uses the verb yuzakki about Allah's purifying action; it does not print al-Muzakki as a separate definite name. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-4-49-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 4:49 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 4:49 — excerpt"
+          },
+          "arabic_original": "بَلِ اللَّهُ يُزَكِّي مَن يَشَاءُ",
+          "translation": {
+            "ml": "അല്ലാഹു ഉദ്ദേശിക്കുന്നവരെ അവൻ ശുദ്ധീകരിക്കുന്നു (ആയത്തിലെ ഭാഗം).",
+            "en": "Rather, Allah purifies whom He wills (excerpt)."
+          },
+          "source_reference": "Quran 4:49 (excerpt)",
+          "source_url": "https://quran.com/4/49",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0206": {
+      "name_id": "PDF-HN-0206",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الوفي تعالى",
+      "source_label": "The One who gives in full",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الوفي تعالى» ആണ്. മുഴുവൻ പ്രതിഫലം നൽകൽ 53:41-ൽ «الْأَوْفَىٰ», 24:25-ൽ «يُوَفِّيهِمُ» എന്നിങ്ങനെ വ്യത്യസ്ത പദരൂപങ്ങളിലാണ്. ഇത് വാഗ്ദാനലംഘനമില്ലായ്മയുടെയും അന്തിമ നീതിയുടെയും സന്ദർഭമാണ്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الوفي تعالى. English gloss: The One who gives in full. Quran 53:41 and 24:25 speak of fully measured recompense in different grammatical forms, not the standalone heading al-Wafi. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-53-41",
+          "title": {
+            "ml": "ഖുർആൻ 53:41",
+            "en": "Quran 53:41"
+          },
+          "arabic_original": "ثُمَّ يُجْزَاهُ الْجَزَاءَ الْأَوْفَىٰ",
+          "translation": {
+            "ml": "പിന്നീട് ആ പ്രവർത്തനത്തിന് പൂർണമായ പ്രതിഫലം നൽകപ്പെടും.",
+            "en": "Then it will be recompensed with the fullest recompense."
+          },
+          "source_reference": "Quran 53:41",
+          "source_url": "https://quran.com/53/41",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-24-25",
+          "title": {
+            "ml": "ഖുർആൻ 24:25",
+            "en": "Quran 24:25"
+          },
+          "arabic_original": "يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+          "translation": {
+            "ml": "അന്നേദിവസം അല്ലാഹു അവർക്ക് അർഹമായ പ്രതിഫലം പൂർണമായി നൽകും. അല്ലാഹുവാണ് വ്യക്തമായ സത്യമെന്ന് അവർ അറിയും.",
+            "en": "On that day Allah will pay them their due recompense in full, and they will know that Allah is the manifest Truth."
+          },
+          "source_reference": "Quran 24:25",
+          "source_url": "https://quran.com/24/25",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0208": {
+      "name_id": "PDF-HN-0208",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المقدر جل جلاله",
+      "source_label": "The Determiner of measure",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المقدر جل جلاله» ആണ്. സകലത്തിനും അളവും നിർണയവുമുള്ള സൃഷ്ടിയെയാണ് «بِقَدَرٍ» വിവരിക്കുന്നത്. «الْمُقَدِّرُ» എന്ന സ്വതന്ത്ര നാമം വചനത്തിൽ ഇല്ല; മനുഷ്യരുടെ തീരുമാനങ്ങൾക്ക് പകരം ജപം നിശ്ചയിക്കുന്നില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المقدر جل جلاله. English gloss: The Determiner of measure. Quran 54:49 connects creation with ordained measure, using bi-qadar, not the independent noun al-Muqaddir. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-54-49",
+          "title": {
+            "ml": "ഖുർആൻ 54:49",
+            "en": "Quran 54:49"
+          },
+          "arabic_original": "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ",
+          "translation": {
+            "ml": "തീർച്ചയായും എല്ലാ വസ്തുക്കളെയും നാം നിർണയിച്ച അളവോടെ സൃഷ്ടിച്ചു.",
+            "en": "We have created everything according to a determined measure."
+          },
+          "source_reference": "Quran 54:49",
+          "source_url": "https://quran.com/54/49",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0209": {
+      "name_id": "PDF-HN-0209",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الشافي عمت بركته",
+      "source_label": "The Healer",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الشافي عمت بركته» ആണ്. ഇബ്റാഹീം നബി രോഗം വരുമ്പോൾ ശിഫ അല്ലാഹുവിൽനിന്നാണെന്ന് «يَشْفِينِ» എന്നു പറയുന്നു. «الشَّافِي» എന്ന പദം സംബന്ധിച്ച നബിവചന ദുആ വേറെയുണ്ട്; ചികിത്സ ഒഴിവാക്കാനുള്ള നിർദേശമില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الشافي عمت بركته. English gloss: The Healer. Ibrahim says 'He heals me' using the verb yashfin; the direct expression al-Shafi is reported in Prophetic prayer, not in this verse. Treatment is not ruled out. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-26-80",
+          "title": {
+            "ml": "ഖുർആൻ 26:80",
+            "en": "Quran 26:80"
+          },
+          "arabic_original": "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+          "translation": {
+            "ml": "എനിക്ക് രോഗം വന്നാൽ അവനാണ് സുഖപ്പെടുത്തുന്നത് (ഇബ്റാഹീം നബിയുടെ പ്രസ്താവന).",
+            "en": "When I am ill, He is the One who heals me (Ibrahim's statement)."
+          },
+          "source_reference": "Quran 26:80",
+          "source_url": "https://quran.com/26/80",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0210": {
+      "name_id": "PDF-HN-0210",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الكريم جل وعلا",
+      "source_label": "The Generous, the Noble",
+      "claim_kind": "direct",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الكريم جل وعلا» ആണ്. «بِرَبِّكَ الْكَرِيمِ» എന്നതിലൂടെ ഉദാരനായ രക്ഷിതാവിനെ മനുഷ്യനോട് ഓർമിപ്പിക്കുന്നു. അൽ-അക്രം എന്ന വേറൊരു രൂപവുമായി വേർതിരിച്ചാണ് വായിക്കേണ്ടത്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الكريم جل وعلا. English gloss: The Generous, the Noble. Al-Karim is directly in Quran 82:6 in a warning against human ingratitude; it differs morphologically from al-Akram. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-82-6",
+          "title": {
+            "ml": "ഖുർആൻ 82:6",
+            "en": "Quran 82:6"
+          },
+          "arabic_original": "يَا أَيُّهَا الْإِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+          "translation": {
+            "ml": "മനുഷ്യാ, ഉദാരനായ നിന്റെ രക്ഷിതാവിനെക്കുറിച്ച് നിന്നെ എന്താണ് വഞ്ചിച്ചത്?",
+            "en": "O human, what has deceived you concerning your Generous Lord?"
+          },
+          "source_reference": "Quran 82:6",
+          "source_url": "https://quran.com/82/6",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0211": {
+      "name_id": "PDF-HN-0211",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المحسن تبارك وتعالى",
+      "source_label": "The Doer of good",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المحسن تبارك وتعالى» ആണ്. അല്ലാഹുവിന്റെ സൃഷ്ടിയുടെ ഭംഗിയും പൂർണതയും «أَحْسَنَ» എന്ന ക്രിയയിൽ കാണിക്കുന്നു; «الْمُحْسِنُ» എന്ന നാമം ഈ വചനത്തിലില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المحسن تبارك وتعالى. English gloss: The Doer of good. The verb ahsana describes the excellence of Allah's creation; the separate name al-Muhsin is not printed here. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-32-7-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 32:7 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 32:7 — excerpt"
+          },
+          "arabic_original": "الَّذِي أَحْسَنَ كُلَّ شَيْءٍ خَلَقَهُ",
+          "translation": {
+            "ml": "അവൻ സൃഷ്ടിച്ചതെല്ലാം ഭംഗിയായി സംവിധാനം ചെയ്തു (ആയത്തിന്റെ തുടക്കം).",
+            "en": "He perfected everything He created (opening excerpt)."
+          },
+          "source_reference": "Quran 32:7 (excerpt)",
+          "source_url": "https://quran.com/32/7",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0212": {
+      "name_id": "PDF-HN-0212",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الطاهر جل جلاله",
+      "source_label": "The Pure",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الطاهر جل جلاله» ആണ്. അൽ-ഖുദ്ദൂസ്, അസ്സലാം എന്നീ നാമങ്ങൾ അല്ലാഹുവിന്റെ പരിശുദ്ധത വ്യക്തമാക്കുന്നു. «الطَّاهِرُ» എന്ന തലക്കെട്ട് അതേ അറബി പദരൂപമായി ഈ ആയത്തിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الطاهر جل جلاله. English gloss: The Pure. The verse names al-Quddus and al-Salam, which convey divine holiness, but it does not independently use al-Tahir. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-59-23",
+          "title": {
+            "ml": "ഖുർആൻ 59:23",
+            "en": "Quran 59:23"
+          },
+          "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. രാജാധിപൻ; പരിശുദ്ധൻ; ന്യൂനതകളിൽനിന്ന് മുക്തൻ; സുരക്ഷ നൽകുന്നവൻ; മേൽനോട്ടം വഹിക്കുന്നവൻ; പ്രതാപമുള്ളവൻ; സർവാധികാരമുള്ളവൻ; മഹത്വത്തിനുടമ. അവർ പങ്കുചേർക്കുന്നതിൽനിന്ന് അല്ലാഹു എത്രയോ പരിശുദ്ധൻ.",
+            "en": "He is Allah; there is no deity worthy of worship except Him: the Sovereign, the Holy, the One free of imperfection, the Giver of security, the Guardian, the Mighty, the Compeller, the Supremely Great. Allah is exalted above whatever they associate with Him."
+          },
+          "source_reference": "Quran 59:23",
+          "source_url": "https://quran.com/59/23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0213": {
+      "name_id": "PDF-HN-0213",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "العــلام تبارك وتعالى",
+      "source_label": "The Thorough Knower",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «العــلام تبارك وتعالى» ആണ്. അന്ത്യദിനത്തെക്കുറിച്ചുള്ള പ്രവാചകന്മാരുടെ ഉത്തരത്തിൽ «عَلَّامُ الْغُيُوبِ» എന്ന് വരുന്നു. «عَالِمُ الْغَيْبِ وَالشَّهَادَةِ» എന്ന 59:22-ലെ രൂപവുമായി ഭാഷാപരമായ വ്യത്യാസം കാണണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: العــلام تبارك وتعالى. English gloss: The Thorough Knower. Quran 5:109 has allam al-ghuyub, intensive Knower of the unseen, versus alim al-ghayb wa-sh-shahada in 59:22. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-5-109-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 5:109 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 5:109 — excerpt"
+          },
+          "arabic_original": "إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ",
+          "translation": {
+            "ml": "മറഞ്ഞിരിക്കുന്ന എല്ലാ കാര്യങ്ങളും ഏറ്റവും നന്നായി അറിയുന്നവൻ നീ തന്നെയാണ് (ആയത്തിന്റെ അവസാനം).",
+            "en": "You alone are the thorough Knower of all unseen things (verse ending)."
+          },
+          "source_reference": "Quran 5:109 (excerpt)",
+          "source_url": "https://quran.com/5/109",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        },
+        {
+          "id": "quran-59-22",
+          "title": {
+            "ml": "ഖുർആൻ 59:22",
+            "en": "Quran 59:22"
+          },
+          "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَـٰنُ الرَّحِيمُ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അദൃശ്യവും ദൃശ്യവും അറിയുന്നവൻ. അവൻ പരമകാരുണികനും കരുണാനിധിയുമാണ്.",
+            "en": "He is Allah; there is no deity worthy of worship except Him. Knower of the unseen and the visible, He is the All-Merciful, the Merciful."
+          },
+          "source_reference": "Quran 59:22",
+          "source_url": "https://quran.com/59/22",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0214": {
+      "name_id": "PDF-HN-0214",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الغافر جل جلاله",
+      "source_label": "The Forgiver",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الغافر جل جلاله» ആണ്. «غَافِرِ الذَّنْبِ» എന്ന വിശേഷണത്തിനു പിന്നാലെ പശ്ചാത്താപം സ്വീകരിക്കൽ, കഠിനശിക്ഷ, ഔദാര്യം, തൗഹീദ് എന്നിവയുണ്ട്; പകുതി വാചകം മാത്രം അവലംബിക്കരുത്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الغافر جل جلاله. English gloss: The Forgiver. Ghafir al-dhanb appears in a larger sequence including acceptance of repentance, severe punishment, bounty and worship of Allah alone. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-40-3",
+          "title": {
+            "ml": "ഖുർആൻ 40:3",
+            "en": "Quran 40:3"
+          },
+          "arabic_original": "غَافِرِ الذَّنْبِ وَقَابِلِ التَّوْبِ شَدِيدِ الْعِقَابِ ذِي الطَّوْلِ ۖ لَا إِلَٰهَ إِلَّا هُوَ ۖ إِلَيْهِ الْمَصِيرُ",
+          "translation": {
+            "ml": "പാപങ്ങൾ പൊറുക്കുകയും പശ്ചാത്താപം സ്വീകരിക്കുകയും കഠിനശിക്ഷ നൽകുകയും വലിയ ഔദാര്യത്തിന്റെ ഉടമയായിരിക്കുകയും ചെയ്യുന്നവൻ; അവനല്ലാതെ ആരാധ്യനില്ല; അവനിലേക്കാണ് മടക്കം.",
+            "en": "The Forgiver of sins, Accepter of repentance, severe in punishment and Possessor of bounty; none deserves worship but Him, and to Him is the return."
+          },
+          "source_reference": "Quran 40:3",
+          "source_url": "https://quran.com/40/3",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0216": {
+      "name_id": "PDF-HN-0216",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الرفيع تعالى",
+      "source_label": "The Exalted",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الرفيع تعالى» ആണ്. «رَفِيعُ الدَّرَجَاتِ» എന്ന സംയുക്തവിശേഷണം അർശിന്റെയും ദൂതന്മാർക്ക് ലഭിക്കുന്ന ദൈവിക സന്ദേശത്തിന്റെയും സന്ദർഭത്തിലാണ്. «الرفيع» എന്ന വേറിട്ട പദം ഇതിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الرفيع تعالى. English gloss: The Exalted. Rafi' al-darajat is the Quranic phrase about lofty rank within an account of the Throne and divine revelation; it is not the isolated token al-Rafi'. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-40-15-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 40:15 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 40:15 — excerpt"
+          },
+          "arabic_original": "رَفِيعُ الدَّرَجَاتِ ذُو الْعَرْشِ",
+          "translation": {
+            "ml": "പദവികളിൽ അത്യുന്നതനും അർശിന്റെ ഉടമയുമാണ് (ആയത്തിന്റെ ആദ്യഭാഗം).",
+            "en": "Exalted in ranks, Lord of the Throne (verse opening)."
+          },
+          "source_reference": "Quran 40:15 (excerpt)",
+          "source_url": "https://quran.com/40/15",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0218": {
+      "name_id": "PDF-HN-0218",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الممتحن جل جلاله",
+      "source_label": "The Examiner",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الممتحن جل جلاله» ആണ്. 49:3-ൽ «امْتَحَنَ اللَّهُ قُلُوبَهُمْ» എന്ന ക്രിയയും 67:2-ൽ ജീവിതത്തിന്റെ പരീക്ഷണവും വരുന്നു. «الْمُمْتَحِنُ» എന്ന ഒറ്റനാമരൂപം ഒന്നിലും ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الممتحن جل جلاله. English gloss: The Examiner. The source verses use verbs for Allah testing hearts and testing people through life. Neither prints an independent al-Mumtahin. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-49-3-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 49:3 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 49:3 — excerpt"
+          },
+          "arabic_original": "أُولَٰئِكَ الَّذِينَ امْتَحَنَ اللَّهُ قُلُوبَهُمْ لِلتَّقْوَىٰ",
+          "translation": {
+            "ml": "അല്ലാഹു ഭക്തിക്കായി അവരുടെ ഹൃദയങ്ങളെ പരീക്ഷിച്ചവരാണവർ (ആയത്തിലെ ഭാഗം).",
+            "en": "Those are the ones whose hearts Allah has tested for reverence (excerpt)."
+          },
+          "source_reference": "Quran 49:3 (excerpt)",
+          "source_url": "https://quran.com/49/3",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        },
+        {
+          "id": "quran-67-2",
+          "title": {
+            "ml": "ഖുർആൻ 67:2",
+            "en": "Quran 67:2"
+          },
+          "arabic_original": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ",
+          "translation": {
+            "ml": "നിങ്ങളിൽ ആരാണ് നന്മയിൽ മികച്ചവരെന്ന് പരീക്ഷിക്കാനായി മരണവും ജീവിതവും സൃഷ്ടിച്ചവനാണ് അവൻ; അവൻ പ്രതാപിയും പൊറുക്കുന്നവനുമാണ്.",
+            "en": "He created death and life to test which of you does best in deeds; He is the Mighty, the Forgiving."
+          },
+          "source_reference": "Quran 67:2",
+          "source_url": "https://quran.com/67/2",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0220": {
+      "name_id": "PDF-HN-0220",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المغني تعالى",
+      "source_label": "The Enricher",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المغني تعالى» ആണ്. «أَغْنَىٰ وَأَقْنَىٰ» ദൈവിക ധനവിതരണത്തെക്കുറിച്ചുള്ള ക്രിയാപ്രയോഗമാണ്. നിശ്ചിത ദിവസം ധനം ഉണ്ടാകുമെന്ന മന്ത്രവാഗ്ദാനമോ «الْمُغْنِي» എന്ന സ്വതന്ത്ര നാമമോ ഇവിടെ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المغني تعالى. English gloss: The Enricher. Quran 53:48 describes divine granting of means and sufficiency via verbs, not a separate al-Mughni heading or a time-bound wealth formula. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-53-48",
+          "title": {
+            "ml": "ഖുർആൻ 53:48",
+            "en": "Quran 53:48"
+          },
+          "arabic_original": "وَأَنَّهُ هُوَ أَغْنَىٰ وَأَقْنَىٰ",
+          "translation": {
+            "ml": "സമ്പത്ത് നൽകി പര്യാപ്തത നൽകുന്നതും അവൻ തന്നെയാണ്.",
+            "en": "And that it is He who enriches and gives contentment."
+          },
+          "source_reference": "Quran 53:48",
+          "source_url": "https://quran.com/53/48",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0226": {
+      "name_id": "PDF-HN-0226",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "السلام تبارك وتعالى",
+      "source_label": "The One free of imperfection, source of peace",
+      "claim_kind": "direct",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «السلام تبارك وتعالى» ആണ്. അസ്സലാം നാമം 59:23-ൽ വ്യക്തമായി വരുന്നു; «പിരിമുറുക്കമില്ലാത്തവൻ» എന്ന ആശയത്തോടൊപ്പം അല്ലാഹുവിന്റെ സമാധാനവും പരിപൂർണതയും മനസ്സിലാക്കണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: السلام تبارك وتعالى. English gloss: The One free of imperfection, source of peace. Al-Salam is explicitly present in Quran 59:23; it belongs with several other divine Names in a declaration of holiness and sovereignty. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-59-23",
+          "title": {
+            "ml": "ഖുർആൻ 59:23",
+            "en": "Quran 59:23"
+          },
+          "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. രാജാധിപൻ; പരിശുദ്ധൻ; ന്യൂനതകളിൽനിന്ന് മുക്തൻ; സുരക്ഷ നൽകുന്നവൻ; മേൽനോട്ടം വഹിക്കുന്നവൻ; പ്രതാപമുള്ളവൻ; സർവാധികാരമുള്ളവൻ; മഹത്വത്തിനുടമ. അവർ പങ്കുചേർക്കുന്നതിൽനിന്ന് അല്ലാഹു എത്രയോ പരിശുദ്ധൻ.",
+            "en": "He is Allah; there is no deity worthy of worship except Him: the Sovereign, the Holy, the One free of imperfection, the Giver of security, the Guardian, the Mighty, the Compeller, the Supremely Great. Allah is exalted above whatever they associate with Him."
+          },
+          "source_reference": "Quran 59:23",
+          "source_url": "https://quran.com/59/23",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0228": {
+      "name_id": "PDF-HN-0228",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المصوّر سبحانه وتعالى",
+      "source_label": "The Fashioner",
+      "claim_kind": "direct",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المصوّر سبحانه وتعالى» ആണ്. «الْمُصَوِّرُ» 59:24-ൽ അൽ-ഖാലിഖ്, അൽ-ബാരിഅ് എന്നിവയ്ക്ക് പിന്നാലെ വരുന്നു. സൃഷ്ടിയെ രൂപപ്പെടുത്തുന്നവനെന്നാണ്, ചിത്രമുണ്ടാക്കാൻ സംഖ്യനിർദേശം എന്നല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المصوّر سبحانه وتعالى. English gloss: The Fashioner. Al-Musawwir appears directly after al-Khaliq and al-Bari in Quran 59:24, without a prescribed numbered image-making practice. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-59-24",
+          "title": {
+            "ml": "ഖുർആൻ 59:24",
+            "en": "Quran 59:24"
+          },
+          "arabic_original": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; സ്രഷ്ടാവ്; സൃഷ്ടികളെ അസ്തിത്വത്തിലേക്കു കൊണ്ടുവരുന്നവൻ; രൂപം നൽകുന്നവൻ. ഏറ്റവും നല്ല നാമങ്ങൾ അവനുള്ളതാണ്. ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ളതെല്ലാം അവന്റെ പരിശുദ്ധിയെ പ്രകീർത്തിക്കുന്നു. അവൻ പ്രതാപമുള്ളവനും യുക്തിമാനുമാണ്.",
+            "en": "He is Allah, the Creator, the One who brings creation into being, the Fashioner. The most beautiful names belong to Him. Everything in the heavens and earth glorifies Him. He is the Mighty, the Wise."
+          },
+          "source_reference": "Quran 59:24",
+          "source_url": "https://quran.com/59/24",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0229": {
+      "name_id": "PDF-HN-0229",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الرازق",
+      "source_label": "The Provider",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الرازق» ആണ്. 22:58-ൽ «خَيْرُ الرَّازِقِينَ» എന്നു വരുന്നു; 51:58-ൽ «الرَّزَّاقُ» എന്ന വേറൊരു തീവ്രരൂപമാണ്. രണ്ടും ഒരേ അറബി പദരൂപമെന്നു കാണിക്കരുത്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الرازق. English gloss: The Provider. Quran 22:58 uses khayr al-raziqin, while 51:58 uses ar-Razzaq. The phrase and emphatic singular are different grammatical forms. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-22-58",
+          "title": {
+            "ml": "ഖുർആൻ 22:58",
+            "en": "Quran 22:58"
+          },
+          "arabic_original": "وَالَّذِينَ هَاجَرُوا فِي سَبِيلِ اللَّهِ ثُمَّ قُتِلُوا أَوْ مَاتُوا لَيَرْزُقَنَّهُمُ اللَّهُ رِزْقًا حَسَنًا ۚ وَإِنَّ اللَّهَ لَهُوَ خَيْرُ الرَّازِقِينَ",
+          "translation": {
+            "ml": "അല്ലാഹുവിന്റെ മാർഗത്തിൽ സ്വന്തം നാട് വിട്ടുപോകുകയും തുടർന്ന് കൊല്ലപ്പെടുകയോ മരിക്കുകയോ ചെയ്തവർക്ക് അല്ലാഹു തീർച്ചയായും നല്ല ഉപജീവനം നൽകും. തീർച്ചയായും അല്ലാഹുവാണ് ഉപജീവനം നൽകുന്നവരിൽ ഏറ്റവും ഉത്തമൻ.",
+            "en": "Those who emigrated in Allah’s cause and were then killed or died will surely receive good provision from Allah. Allah is indeed the best of providers."
+          },
+          "source_reference": "Quran 22:58",
+          "source_url": "https://quran.com/22/58",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        },
+        {
+          "id": "quran-51-58",
+          "title": {
+            "ml": "ഖുർആൻ 51:58",
+            "en": "Quran 51:58"
+          },
+          "arabic_original": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+          "translation": {
+            "ml": "തീർച്ചയായും അല്ലാഹുവാണ് ഉപജീവനം നൽകുന്നവൻ; ശക്തിയുടെ ഉടമ; ഉറച്ച ശക്തിയുള്ളവൻ.",
+            "en": "Allah is indeed the Provider, the Possessor of strength, the Firm in power."
+          },
+          "source_reference": "Quran 51:58",
+          "source_url": "https://quran.com/51/58",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0230": {
+      "name_id": "PDF-HN-0230",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الذارئ",
+      "source_label": "The Creator who brings forth",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الذارئ» ആണ്. സൃഷ്ടികളെ വർധിപ്പിക്കുന്നതിനെപ്പറ്റി «يَذْرَؤُكُمْ فِيهِ» എന്നാണ്; «الذَّارِئُ» സ്വതന്ത്ര നാമരൂപം ഈ ആയത്തിൽ ഇല്ല. അതേ വചനത്തിൽ സൃഷ്ടികളോട് അല്ലാഹു സാമ്യമില്ലെന്ന് പറയുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الذارئ. English gloss: The Creator who brings forth. Quran 42:11 uses yadhra'ukum for multiplication of creatures while denying any likeness to Allah; the definite noun al-Dhari' is not printed. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-42-11",
+          "title": {
+            "ml": "ഖുർആൻ 42:11",
+            "en": "Quran 42:11"
+          },
+          "arabic_original": "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ ۚ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَمِنَ الْأَنْعَامِ أَزْوَاجًا ۖ يَذْرَؤُكُمْ فِيهِ ۚ لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
+          "translation": {
+            "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും സ്രഷ്ടാവ്. നിങ്ങൾക്കായി നിങ്ങളുടെ വർഗത്തിൽനിന്ന് ഇണകളെയും കന്നുകാലികളിൽനിന്ന് ഇണകളെയും അവൻ ഉണ്ടാക്കി. അതിലൂടെ അവൻ നിങ്ങളെ പെരുപ്പിക്കുന്നു. അവനെപ്പോലെ ഒന്നുമില്ല. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
+            "en": "Originator of the heavens and earth. He made mates for you from among yourselves, and pairs among livestock; through this He multiplies you. Nothing is like Him. He is the All-Hearing, the All-Seeing."
+          },
+          "source_reference": "Quran 42:11",
+          "source_url": "https://quran.com/42/11",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-0232": {
+      "name_id": "PDF-HN-0232",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "العالم",
+      "source_label": "The Knowing",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «العالم» ആണ്. «عَالِمُ الْغَيْبِ وَالشَّهَادَةِ» എന്ന വിശേഷണം മറഞ്ഞതും പ്രകടവുമായ എല്ലാം അറിയുന്നതിനെ സൂചിപ്പിക്കുന്നു; «الْعَالِمُ» എന്ന ഒറ്റപദമല്ല ഇവിടെ. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: العالم. English gloss: The Knowing. Quran 59:22 presents the complete phrase 'Knower of the unseen and seen', rather than the isolated heading al-Alim. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-59-22",
+          "title": {
+            "ml": "ഖുർആൻ 59:22",
+            "en": "Quran 59:22"
+          },
+          "arabic_original": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَـٰنُ الرَّحِيمُ",
+          "translation": {
+            "ml": "അവനാണ് അല്ലാഹു; അവനല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. അദൃശ്യവും ദൃശ്യവും അറിയുന്നവൻ. അവൻ പരമകാരുണികനും കരുണാനിധിയുമാണ്.",
+            "en": "He is Allah; there is no deity worthy of worship except Him. Knower of the unseen and the visible, He is the All-Merciful, the Merciful."
+          },
+          "source_reference": "Quran 59:22",
+          "source_url": "https://quran.com/59/22",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-059": {
+      "name_id": "PDF-HN-059",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المبدئ",
+      "source_label": "The Originator",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المبدئ» ആണ്. «يُبْدِئُ وَيُعِيدُ» എന്ന രണ്ടു ക്രിയകൾ സൃഷ്ടി ആരംഭിക്കുകയും വീണ്ടും കൊണ്ടുവരുകയും ചെയ്യുന്ന അല്ലാഹുവിന്റെ കഴിവിനെ വിവരിക്കുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المبدئ. English gloss: The Originator. The verse uses two verbs for beginning and returning creation; it does not separately print al-Mubdi'. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-85-13",
+          "title": {
+            "ml": "ഖുർആൻ 85:13",
+            "en": "Quran 85:13"
+          },
+          "arabic_original": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+          "translation": {
+            "ml": "തീർച്ചയായും അവനാണ് സൃഷ്ടി ആരംഭിക്കുകയും വീണ്ടും കൊണ്ടുവരുകയും ചെയ്യുന്നത്.",
+            "en": "Indeed it is He who initiates creation and brings it back."
+          },
+          "source_reference": "Quran 85:13",
+          "source_url": "https://quran.com/85/13",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-069": {
+      "name_id": "PDF-HN-069",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المقدم",
+      "source_label": "The One who brings forward",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المقدم» ആണ്. 3:26-ലെ അധികാരം നൽകുകയും പിൻവലിക്കുകയും ചെയ്യുക എന്ന ആശയമാണ്; «الْمُقَدِّمُ» എന്ന സ്വതന്ത്ര നാമം ഈ ആയത്തിൽ ഇല്ല. ഇതിന്റെ നേരിട്ടുള്ള നബിവചന രൂപം വേറെ ഹദീസിൽ പരിശോധിക്കണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المقدم. English gloss: The One who brings forward. The theme of granting and withdrawing authority is relevant, but Quran 3:26 does not actually print al-Muqaddim. A separate authentic hadith states the word directly. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.com/3/26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-070": {
+      "name_id": "PDF-HN-070",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المؤخر",
+      "source_label": "The One who puts back",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المؤخر» ആണ്. രാജാധികാരം എടുക്കുകയും നൽകുകയും ചെയ്യുന്ന ദൈവിക തീരുമാനം വിവരിക്കുന്നു; «الْمُؤَخِّرُ» എന്ന പദരൂപം 3:26-ൽ ഇല്ല. ഹദീസിലെ കൃത്യമായ രൂപം വേറെ തെളിവോടെ വേണം. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المؤخر. English gloss: The One who puts back. Quran 3:26 speaks of giving and removing sovereignty, but it does not contain al-Mu'akhkhir; its direct wording is found in a separately cited hadith. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-3-26",
+          "title": {
+            "ml": "ഖുർആൻ 3:26",
+            "en": "Quran 3:26"
+          },
+          "arabic_original": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "പറയുക: അല്ലാഹുവേ, സകല അധികാരത്തിന്റെയും ഉടമയേ, നീ ഉദ്ദേശിക്കുന്നവർക്ക് അധികാരം നൽകുകയും നീ ഉദ്ദേശിക്കുന്നവരിൽനിന്ന് അത് എടുത്തുകളയുകയും ചെയ്യുന്നു. നീ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുകയും നീ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുകയും ചെയ്യുന്നു. നന്മ നിന്റെ കൈയിലാണ്. നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "Say: O Allah, Owner of all sovereignty, You grant sovereignty to whom You will and take it away from whom You will. You honor whom You will and bring low whom You will. All good is in Your hand. You have power over everything."
+          },
+          "source_reference": "Quran 3:26",
+          "source_url": "https://quran.com/3/26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-077": {
+      "name_id": "PDF-HN-077",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الْوَالِي",
+      "source_label": "The Governor",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الْوَالِي» ആണ്. «وَالٍ» എന്ന പദം ഈ ആയത്തിൽ അല്ലാഹുവല്ലാത്ത രക്ഷാധികാരിയുടെ അഭാവം സൂചിപ്പിക്കുന്നു; അത് «الْوَالِي» എന്ന ദൈവനാമം നേരിട്ട് വന്നതായി അവകാശപ്പെടാൻ പറ്റില്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الْوَالِي. English gloss: The Governor. Quran 13:11 denies any protector apart from Allah in a grammatical construction; it is not direct occurrence of the isolated Divine Name al-Wali (governor). The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-13-11-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 13:11 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 13:11 — excerpt"
+          },
+          "arabic_original": "وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ",
+          "translation": {
+            "ml": "അവനല്ലാതെ അവർക്ക് ഒരുതരത്തിലുള്ള രക്ഷാധികാരിയുമില്ല (ആയത്തിന്റെ അവസാനഭാഗം).",
+            "en": "There is no protector for them apart from Him (verse ending)."
+          },
+          "source_reference": "Quran 13:11 (excerpt)",
+          "source_url": "https://quran.com/13/11",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-081": {
+      "name_id": "PDF-HN-081",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الْمُنْتَقِمُ",
+      "source_label": "The Avenger",
+      "claim_kind": "verb_theme",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الْمُنْتَقِمُ» ആണ്. കുറ്റവാളികളോടുള്ള ദൈവിക പ്രതികാരത്തെ «مُنْتَقِمُونَ» എന്ന ബഹുവചന രൂപത്തിൽ പറയുന്നു; «الْمُنْتَقِمُ» എന്ന സ്വതന്ത്ര ഏകവചന രൂപം അല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الْمُنْتَقِمُ. English gloss: The Avenger. The Quran speaks in the majestic plural muntaqimun of recompense to criminals, not as an isolated singular al-Muntaqim. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-32-22-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 32:22 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 32:22 — excerpt"
+          },
+          "arabic_original": "إِنَّا مِنَ الْمُجْرِمِينَ مُنْتَقِمُونَ",
+          "translation": {
+            "ml": "കുറ്റവാളികളുടെ കാര്യത്തിൽ നാം ശിക്ഷാനടപടി എടുക്കുന്നവരാണ് (ആയത്തിന്റെ അവസാനഭാഗം).",
+            "en": "We indeed exact retribution from persistent wrongdoers (verse ending)."
+          },
+          "source_reference": "Quran 32:22 (excerpt)",
+          "source_url": "https://quran.com/32/22",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verb_theme",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-083": {
+      "name_id": "PDF-HN-083",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الرَّؤُوفُ",
+      "source_label": "The Compassionate",
+      "claim_kind": "descriptive",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الرَّؤُوفُ» ആണ്. «لَرَءُوفٌ رَحِيمٌ» എന്ന വിശേഷണങ്ങൾ മനുഷ്യരോടുള്ള അല്ലാഹുവിന്റെ ആർദ്രകരുണ പറയുന്നു; അർ-റഊഫ് നാമവുമായി ഭാഷാപരമായി നേരിട്ട് ബന്ധപ്പെട്ടിരിക്കുന്നു. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الرَّؤُوفُ. English gloss: The Compassionate. Quran 2:143 attributes ra'uf and rahim to Allah in a declaration of mercy toward people. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-2-143-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 2:143 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 2:143 — excerpt"
+          },
+          "arabic_original": "إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ",
+          "translation": {
+            "ml": "അല്ലാഹു മനുഷ്യരോട് വളരെ ആർദ്രകരുണയുള്ളവനും കരുണാനിധിയുമാണ് (ആയത്തിന്റെ അവസാനഭാഗം).",
+            "en": "Allah is truly Compassionate and Merciful toward people (verse ending)."
+          },
+          "source_reference": "Quran 2:143 (excerpt)",
+          "source_url": "https://quran.com/2/143",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "descriptive",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-089": {
+      "name_id": "PDF-HN-089",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "المانع",
+      "source_label": "The Preventer",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «المانع» ആണ്. അല്ലാഹു തുറന്നുകൊടുക്കുന്ന കരുണയെ ആരും തടഞ്ഞുവെക്കില്ലെന്ന് വചനം പറയുന്നു; «الْمَانِعُ» എന്ന നാമം അതിൽ ഇല്ല. കാരണബന്ധമുള്ള ഒരു പദപരിശോധനയാണിത്. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: المانع. English gloss: The Preventer. Quran 35:2 states no one can withhold Allah's opened mercy, but does not print the noun al-Mani' as a standalone divine Name. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-35-2-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 35:2 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 35:2 — excerpt"
+          },
+          "arabic_original": "مَا يَفْتَحِ اللَّهُ لِلنَّاسِ مِنْ رَحْمَةٍ فَلَا مُمْسِكَ لَهَا",
+          "translation": {
+            "ml": "അല്ലാഹു ജനങ്ങൾക്ക് തുറന്നുകൊടുക്കുന്ന കരുണയെ ആരും തടഞ്ഞുവെക്കുകയില്ല (ആയത്തിലെ ആദ്യഭാഗം).",
+            "en": "Whatever mercy Allah opens to people, none can withhold (opening excerpt)."
+          },
+          "source_reference": "Quran 35:2 (excerpt)",
+          "source_url": "https://quran.com/35/2",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-090": {
+      "name_id": "PDF-HN-090",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الضار",
+      "source_label": "The One who brings adversity",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الضار» ആണ്. അല്ലാഹുവിന്റെ അധികാരത്തിലുള്ള പ്രയാസവും അതിന്റെ നീക്കലുമാണ് ആയത്ത്. «الضَّارُّ» എന്ന നാമരൂപം ഇല്ല; മറ്റുള്ളവരെ ദോഷപ്പെടുത്താനുള്ള ഹദീസ്-അനുമതിയല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الضار. English gloss: The One who brings adversity. Quran 6:17 recognizes divine power over hardship and its removal; it does not print al-Darr or permit harm to others. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-17",
+          "title": {
+            "ml": "ഖുർആൻ 6:17",
+            "en": "Quran 6:17"
+          },
+          "arabic_original": "وَإِنْ يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ ۖ وَإِنْ يَمْسَسْكَ بِخَيْرٍ فَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹു നിനക്ക് പ്രയാസം വരുത്തിയാൽ അവനല്ലാതെ അത് നീക്കാനില്ല. അവൻ നന്മ നൽകിയാൽ അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "If Allah touches you with harm, none can remove it but Him; if with good, He has power over everything."
+          },
+          "source_reference": "Quran 6:17",
+          "source_url": "https://quran.com/6/17",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-091": {
+      "name_id": "PDF-HN-091",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "النافع",
+      "source_label": "The Benefactor",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «النافع» ആണ്. പ്രയാസത്തോടൊപ്പം നന്മ നൽകാനും അല്ലാഹുവിന് കഴിയുമെന്ന് ആയത്ത് പറയുന്നു; «النَّافِعُ» എന്ന നാമരൂപം അതിൽ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: النافع. English gloss: The Benefactor. The same verse describes Allah's power over benefit as well as harm, but not the isolated noun al-Nafi'. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-6-17",
+          "title": {
+            "ml": "ഖുർആൻ 6:17",
+            "en": "Quran 6:17"
+          },
+          "arabic_original": "وَإِنْ يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ ۖ وَإِنْ يَمْسَسْكَ بِخَيْرٍ فَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+          "translation": {
+            "ml": "അല്ലാഹു നിനക്ക് പ്രയാസം വരുത്തിയാൽ അവനല്ലാതെ അത് നീക്കാനില്ല. അവൻ നന്മ നൽകിയാൽ അവൻ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്.",
+            "en": "If Allah touches you with harm, none can remove it but Him; if with good, He has power over everything."
+          },
+          "source_reference": "Quran 6:17",
+          "source_url": "https://quran.com/6/17",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-121": {
+      "name_id": "PDF-HN-121",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الْأَكْبَر",
+      "source_label": "The Greatest",
+      "claim_kind": "linguistic_comparison",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الْأَكْبَر» ആണ്. «أَكْبَرُ» ഇവിടെ അല്ലാഹുവിന്റെ തൃപ്തി സ്വർഗാനുഗ്രഹങ്ങളെക്കാൾ മഹത്തായതാണ് എന്ന പ്രസ്താവനയിലെ താരതമ്യരൂപമാണ്; «الْأَكْبَرُ» എന്ന ഒറ്റനാമം അവിടെ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الْأَكْبَر. English gloss: The Greatest. In Quran 9:72 the comparative akbar describes Allah's approval as greater than other rewards. It does not independently print al-Akbar as a divine Name. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-9-72-excerpt",
+          "title": {
+            "ml": "ഖുർആൻ 9:72 — ആയത്തിലെ ഭാഗം",
+            "en": "Quran 9:72 — excerpt"
+          },
+          "arabic_original": "وَرِضْوَانٌ مِنَ اللَّهِ أَكْبَرُ",
+          "translation": {
+            "ml": "അല്ലാഹുവിന്റെ തൃപ്തിയാണ് അതിലും വലിയത് (ആയത്തിലെ ഭാഗം).",
+            "en": "Allah's good pleasure is greater (excerpt)."
+          },
+          "source_reference": "Quran 9:72 (excerpt)",
+          "source_url": "https://quran.com/9/72",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "linguistic_comparison",
+          "source_scope": {
+            "ml": "ഈ പാഠം മുഴുവൻ ആയത്തല്ല; സ്രോതസ്സിലെ പ്രസക്തഭാഗം മാത്രം. പൂർണ ആയത്ത് ലിങ്കിൽ വായിക്കുക.",
+            "en": "This quotes only the relevant portion, not the entire verse; follow the source for its full context."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    },
+    "PDF-HN-122": {
+      "name_id": "PDF-HN-122",
+      "reviewed_on": "2026-10-10",
+      "heading_arabic": "الْأَعَزّ",
+      "source_label": "The Most Mighty",
+      "claim_kind": "thematic",
+      "coverage": {
+        "ml": "പ്രാഥമിക ഖുർആൻ പാഠപരിശോധന മാത്രമാണ്: ഈ തലക്കെട്ടുമായി ബന്ധപ്പെട്ട ആയത്തും അറബി പദരൂപവും അർഥവും രേഖപ്പെടുത്തി. എല്ലാ ഹദീസ്, തഫ്സീർ, പഴയ ഗ്രന്ഥങ്ങൾ, ഖവാസ്സ്, ദുആകൾ, വഫ്ഖ്/കളങ്ങൾ എന്നിവയുടെ സമ്പൂർണ ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. ആയത്തിൽ ഇല്ലാത്ത സംഖ്യയോ സമയമോ സൃഷ്ടിക്കുന്നില്ല.",
+        "en": "First-pass Quran wording review only: the corresponding passage, grammatical form and meaning have been recorded. Exhaustive hadith, tafsir, khawass, complete prayers and historical wafq/square research is not yet finished. No count or timing is invented."
+      },
+      "explanation": {
+        "ml": "ഈ കാർഡിലെ സൂക്ഷിച്ച അറബി തലക്കെട്ട് «الْأَعَزّ» ആണ്. പ്രതാപം മുഴുവനും അല്ലാഹുവിനാണെന്ന് «فَلِلَّهِ الْعِزَّةُ جَمِيعًا» പറയുന്നു; «الْأَعَزُّ» എന്ന ഒറ്റനാമരൂപം ഇവിടെ ഇല്ല. ഈ വചനത്തെ പ്രത്യേകം എണ്ണമുള്ള വസീഫയായി ആയത്ത് നിർദേശിക്കുന്നില്ല.",
+        "en": "Stored Arabic heading: الْأَعَزّ. English gloss: The Most Mighty. Quran 35:10 attributes all might and honour to Allah, but does not use the standalone superlative name al-A'azz. The cited verse does not establish an independent name-specific numerical recitation practice."
+      },
+      "evidence": [
+        {
+          "id": "quran-35-10",
+          "title": {
+            "ml": "ഖുർആൻ 35:10",
+            "en": "Quran 35:10"
+          },
+          "arabic_original": "مَن كَانَ يُرِيدُ الْعِزَّةَ فَلِلَّهِ الْعِزَّةُ جَمِيعًا ۚ إِلَيْهِ يَصْعَدُ الْكَلِمُ الطَّيِّبُ وَالْعَمَلُ الصَّالِحُ يَرْفَعُهُ ۚ وَالَّذِينَ يَمْكُرُونَ السَّيِّئَاتِ لَهُمْ عَذَابٌ شَدِيدٌ ۖ وَمَكْرُ أُولَـٰئِكَ هُوَ يَبُورُ",
+          "translation": {
+            "ml": "പ്രതാപം ആഗ്രഹിക്കുന്നവൻ അറിയട്ടെ: പ്രതാപമെല്ലാം അല്ലാഹുവിനുള്ളതാണ്. നല്ല വാക്കുകൾ അവനിലേക്കുയരുന്നു; സൽപ്രവർത്തനം അവയെ ഉയർത്തുന്നു. തിന്മകൾ ആസൂത്രണം ചെയ്യുന്നവർക്ക് കഠിനശിക്ഷയുണ്ട്; അവരുടെ തന്ത്രം നശിച്ചുപോകും.",
+            "en": "Whoever seeks honor should know that all honor belongs to Allah. Good words ascend to Him, and righteous deeds raise them. Those who plot evil will have a severe punishment, and their plotting will come to nothing."
+          },
+          "source_reference": "Quran 35:10",
+          "source_url": "https://quran.com/35/10",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിന്റെ പൂർണ പാഠമാണ് നൽകിയിരിക്കുന്നത്.",
+            "en": "The full verse is supplied."
+          }
+        }
+      ],
+      "scholarly": [],
+      "topics": []
+    }
+  }
+}
