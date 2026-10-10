@@ -1,0 +1,939 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "25 കാർഡുകൾക്ക് ഇബ്നു കസീർ, ത്വബരി തഫ്സീർ പുസ്തകങ്ങളിൽ പരിശോധിച്ച 34 പ്രത്യേക വ്യാഖ്യാനങ്ങൾ; സമ്പൂർണ ഗ്രന്ഥ/ഖവാസ്സ് ഗവേഷണം ഇനിയും പൂർത്തിയായിട്ടില്ല. കൂടാതെ എട്ട് കാർഡുകളിൽ പൂർണ ആയത്തുകളുടെ അറബി പാഠവും അർഥവും ചേർത്തിട്ടുണ്ട്.",
+    "en": "34 selected, source-checked bilingual interpretations from Ibn Kathir and al-Tabari for 25 headings; not a completion certificate for the names' full literature. Eight cards additionally carry full, diacritized Quran verses and original Malayalam and English meaning summaries."
+  },
+  "profiles": {
+    "PDF-HN-0148": {
+      "name_id": "PDF-HN-0148",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0148-katheer-62-4",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 62:4",
+            "en": "Ibn Kathir — Quran 62:4"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «ഫദ്ല്» എന്നത് നബി ﷺക്ക് നൽകിയ പ്രവാചകത്വവും സമൂഹത്തിനുള്ള അനുഗ്രഹവുമാണെന്ന് വിവരിക്കുന്നു. പ്രത്യേക ധനലാഭ ജപസംഖ്യയല്ല.",
+            "en": "Ibn Kathir links divine bounty here to the Prophet's mission and the favor granted to his community, not a numerical wealth rite."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 62:4",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya4.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0148-tabary-62-4",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 62:4",
+            "en": "Al-Tabari — Quran 62:4"
+          },
+          "translation": {
+            "ml": "ത്വബരി ഇബ്നു അബ്ബാസിൽനിന്ന് «ഫദ്ല്» മതമാണെന്ന വിശദീകരണം രേഖപ്പെടുത്തുന്നു. «المفضل» എന്ന സ്വതന്ത്ര നാമം ആയത്തിലില്ല.",
+            "en": "Al-Tabari transmits Ibn Abbas's explanation of bounty as religion; the verse does not directly name al-Mufaddil."
+          },
+          "source_reference": "تفسير الطبري — Quran 62:4",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura62-aya4.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0149": {
+      "name_id": "PDF-HN-0149",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0149-katheer-62-4",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 62:4",
+            "en": "Ibn Kathir — Quran 62:4"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «ذُو الْفَضْلِ الْعَظِيمِ» നബിയുടെ നിയോഗത്തെക്കുറിച്ചുള്ള പശ്ചാത്തലത്തിൽ വിശദീകരിക്കുന്നു. വചനത്തിന്റെ പൂർണ വിശേഷണം സംരക്ഷിക്കണം.",
+            "en": "Ibn Kathir explains 'Possessor of immense bounty' in relation to the Prophet's mission; retain the whole phrase."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 62:4",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura62-aya4.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0149-tabary-62-4",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 62:4",
+            "en": "Al-Tabari — Quran 62:4"
+          },
+          "translation": {
+            "ml": "ത്വബരി മതവും പ്രവാചക നിയോഗവും അല്ലാഹുവിന്റെ ഔദാര്യമാണെന്ന് ഇബ്നു അബ്ബാസ് നിവേദനത്തിന്റെ വെളിച്ചത്തിൽ വിശദീകരിക്കുന്നു.",
+            "en": "Al-Tabari relates the bounty to faith and the Messenger's mission while contrasting divine bounty with human favor."
+          },
+          "source_reference": "تفسير الطبري — Quran 62:4",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura62-aya4.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0150": {
+      "name_id": "PDF-HN-0150",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0150-katheer-4-45",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:45",
+            "en": "Ibn Kathir — Quran 4:45"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ: ശത്രുക്കളെ അല്ലാഹു അറിയുന്നു; അഭയം തേടുന്നവർക്ക് രക്ഷാധികാരിയും സഹായം തേടുന്നവർക്ക് സഹായിയും അവൻ മതിയാകുന്നു. «نَصِيرًا» എന്ന രൂപമാണ്.",
+            "en": "Ibn Kathir explains Allah's knowledge of enemies and His sufficiency as protector and helper. The Arabic here is nasiran."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:45",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya45.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0151": {
+      "name_id": "PDF-HN-0151",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0151-katheer-67-2",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 67:2",
+            "en": "Ibn Kathir — Quran 67:2"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പരീക്ഷണത്തിലെ പ്രധാന്യം കൂടുതൽ പ്രവൃത്തികളല്ല, മികച്ച പ്രവൃത്തികളാണെന്ന് വ്യക്തമാക്കുന്നു. ശിക്ഷിക്കാനുള്ള കഴിവിനൊപ്പം പശ്ചാത്തപിക്കുന്നവരെ പൊറുക്കുന്നതും ആയത്തിൽ വരുന്നു.",
+            "en": "Ibn Kathir stresses better deeds, not merely more deeds, and notes might paired with forgiveness of repentance."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 67:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura67-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0151-tabary-67-2",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 67:2",
+            "en": "Al-Tabari — Quran 67:2"
+          },
+          "translation": {
+            "ml": "ത്വബരി ഈ പരീക്ഷണം അല്ലാഹുവിനെ അനുസരിക്കലിലും അവന്റെ തൃപ്തിക്കുവേണ്ടി മുന്നോട്ട് വരുന്നതിലും ആരാണ് മികച്ചതെന്നതായാണ് വിശദീകരിക്കുന്നത്.",
+            "en": "Al-Tabari explains the test through obedience and striving for divine approval, not an isolated al-Mubtali name."
+          },
+          "source_reference": "تفسير الطبري — Quran 67:2",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura67-aya2.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0153": {
+      "name_id": "PDF-HN-0153",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0153-katheer-2-165",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:165",
+            "en": "Ibn Kathir — Quran 2:165"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ മുന്നറിയിപ്പിനെ അല്ലാഹുവിനോട് പങ്കാളികളെ ചേർത്ത് അവരെ ദൈവത്തെപ്പോലെ ആരാധിക്കുന്ന ശിർക്കുമായി ബന്ധിപ്പിക്കുന്നു. മനുഷ്യരെ ഉപദ്രവിക്കാനുള്ള ജപമല്ല.",
+            "en": "Ibn Kathir interprets severe punishment as a warning against associating partners in worship, not a means of harming people."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:165",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya165.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0153-2-165",
+          "title": {
+            "ml": "ഖുർആൻ 2:165 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 2:165 — complete verse"
+          },
+          "arabic_original": "وَمِنَ النَّاسِ مَن يَتَّخِذُ مِن دُونِ اللَّهِ أَندَادًا يُحِبُّونَهُمْ كَحُبِّ اللَّهِ ۖ وَالَّذِينَ آمَنُوا أَشَدُّ حُبًّا لِّلَّهِ ۗ وَلَوْ يَرَى الَّذِينَ ظَلَمُوا إِذْ يَرَوْنَ الْعَذَابَ أَنَّ الْقُوَّةَ لِلَّهِ جَمِيعًا وَأَنَّ اللَّهَ شَدِيدُ الْعَذَابِ",
+          "translation": {
+            "ml": "ചില മനുഷ്യർ അല്ലാഹുവിന് തുല്യരായി മറ്റുള്ളവരെ സ്വീകരിച്ച് അവരെ അല്ലാഹുവിനെപ്പോലെ സ്നേഹിക്കുന്നു. വിശ്വാസികൾ അല്ലാഹുവിനോടു കൂടുതൽ സ്നേഹമുള്ളവരാണ്. അക്രമികൾ ശിക്ഷ കാണുമ്പോൾ ശക്തിയെല്ലാം അല്ലാഹുവിനാണെന്നും അവൻ കഠിനമായി ശിക്ഷിക്കുന്നവനാണെന്നും തിരിച്ചറിയും.",
+            "en": "Some people treat others as equals to Allah and love them as they should love Allah. Believers love Allah more deeply. When the wrongdoers see punishment, they will realize that all strength belongs to Allah and His punishment is severe."
+          },
+          "source_reference": "Quran 2:165 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya165.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0157": {
+      "name_id": "PDF-HN-0157",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0157-katheer-40-17",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 40:17",
+            "en": "Ibn Kathir — Quran 40:17"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ വിധിദിവസത്തിലെ നീതി വിവരിക്കുകയും സകലരുടെയും കണക്ക് അല്ലാഹുവിന് ഒരാളുടേതുപോലെ എളുപ്പമാണെന്ന് വ്യക്തമാക്കുകയും ചെയ്യുന്നു.",
+            "en": "Ibn Kathir describes just recompense on Judgment Day; reckoning for all is as effortless as reckoning for one."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 40:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0157-40-17",
+          "title": {
+            "ml": "ഖുർആൻ 40:17 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 40:17 — complete verse"
+          },
+          "arabic_original": "الْيَوْمَ تُجْزَىٰ كُلُّ نَفْسٍ بِمَا كَسَبَتْ ۚ لَا ظُلْمَ الْيَوْمَ ۚ إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ",
+          "translation": {
+            "ml": "ഇന്ന് ഓരോ വ്യക്തിക്കും ചെയ്ത പ്രവൃത്തിക്കനുസരിച്ചുള്ള പ്രതിഫലം ലഭിക്കും. ഇന്ന് അനീതിയുണ്ടാകില്ല. അല്ലാഹു വേഗത്തിൽ കണക്കെടുക്കുന്നവനാണ്.",
+            "en": "Today every soul will be repaid for what it earned. No injustice will occur today. Allah is swift in reckoning."
+          },
+          "source_reference": "Quran 40:17 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0164": {
+      "name_id": "PDF-HN-0164",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0164-katheer-4-58",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:58",
+            "en": "Ibn Kathir — Quran 4:58"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മതപരമായ കടമകളും മനുഷ്യർ ഏൽപ്പിക്കുന്ന ഉത്തരവാദിത്തങ്ങളും തിരികെ നൽകണമെന്നും നീതിയോടെ വിധിക്കണമെന്നും പറയുന്നു; കഅ്ബയുടെ താക്കോൽ സംബന്ധിച്ച ചരിത്രവും രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir applies the command to trusts owed to God and people, and just judgment, while recording the Kaaba key account."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0164-tabary-4-58",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 4:58",
+            "en": "Al-Tabari — Quran 4:58"
+          },
+          "translation": {
+            "ml": "ത്വബരി ഭരണാധികാരികൾക്കുള്ള ഉത്തരവാദിത്തവും കഅ്ബയുടെ താക്കോൽ തിരികെ നൽകിയ റിപ്പോർട്ടും ചർച്ച ചെയ്യുന്നു. അവകാശങ്ങളും സമ്പത്തും നീതിയോടെ കൈമാറണമെന്നാണ് ഊന്നൽ.",
+            "en": "Al-Tabari discusses rulers and the Kaaba key report, emphasizing fair distribution of entrusted rights and wealth."
+          },
+          "source_reference": "تفسير الطبري — Quran 4:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0164-4-58",
+          "title": {
+            "ml": "ഖുർആൻ 4:58 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 4:58 — complete verse"
+          },
+          "arabic_original": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ ۚ إِنَّ اللَّهَ نِعِمَّا يَعِظُكُم بِهِ ۗ إِنَّ اللَّهَ كَانَ سَمِيعًا بَصِيرًا",
+          "translation": {
+            "ml": "വിശ്വാസത്തോടെ ഏൽപ്പിക്കപ്പെട്ടവ അതിന്റെ അവകാശികൾക്ക് തിരികെ നൽകാനും ജനങ്ങൾക്കിടയിൽ വിധി പറയുമ്പോൾ നീതിയോടെ വിധിക്കാനും അല്ലാഹു നിർദേശിക്കുന്നു. അവൻ നൽകുന്ന ഉപദേശം മഹത്താണ്. അവൻ എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമാണ്.",
+            "en": "Allah commands you to return trusts to their rightful holders and to judge fairly between people. Excellent is His instruction; He hears and sees all."
+          },
+          "source_reference": "Quran 4:58 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0166": {
+      "name_id": "PDF-HN-0166",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0166-katheer-3-26",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 3:26",
+            "en": "Ibn Kathir — Quran 3:26"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ രാജ്യാധികാരം നൽകലും പിൻവലിക്കലും ആദരവും താഴ്ത്തലും അല്ലാഹുവിന്റെ അധികാരമാണെന്ന് വിശദീകരിക്കുന്നു; മനുഷ്യരെ അപമാനിക്കാനുള്ള വസീഫ നൽകുന്നില്ല.",
+            "en": "Ibn Kathir explains sovereignty, honor and humiliation as subject to divine authority, not a numbered coercive ritual."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0166-tabary-3-26",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 3:26",
+            "en": "Al-Tabari — Quran 3:26"
+          },
+          "translation": {
+            "ml": "ത്വബരി «മുൽക്» എന്നതിന് രാജാധികാരത്തിനു പുറമേ പ്രവാചകത്വം എന്ന മുജാഹിദിന്റെ വ്യാഖ്യാനവും റിപ്പോർട്ട് ചെയ്യുന്നു. അതൊരു തഫ്സീർ അഭിപ്രായമാണ്.",
+            "en": "Al-Tabari also transmits Mujahid's reading of mulk as prophethood; it is an attributed interpretive opinion."
+          },
+          "source_reference": "تفسير الطبري — Quran 3:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura3-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0167": {
+      "name_id": "PDF-HN-0167",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0167-katheer-3-150",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 3:150",
+            "en": "Ibn Kathir — Quran 3:150"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അനുസരിച്ച് «സഹായികളിൽ മികച്ചവൻ» എന്ന വാചകം അല്ലാഹുവിനെ അനുസരിക്കാനും അവനിൽ ആശ്രയിക്കാനും അവനോട് സഹായം ചോദിക്കാനുമുള്ള സന്ദർഭത്തിലാണ്.",
+            "en": "Ibn Kathir reads 'best of helpers' in the call to obedience, trust and seeking Allah's aid."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 3:150",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya150.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0171": {
+      "name_id": "PDF-HN-0171",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0171-katheer-48-28",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 48:28",
+            "en": "Ibn Kathir — Quran 48:28"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഹുദാ ഉപകാരപ്രദമായ അറിവും സത്യമതം സൽപ്രവൃത്തിയും ഉൾക്കൊള്ളുന്നതാണെന്ന് പറയുന്നു. «أَرْسَلَ» ക്രിയയാണ്, «الْمُرْسِلُ» എന്ന നാമമല്ല.",
+            "en": "Ibn Kathir describes guidance as beneficial knowledge and true religion as righteous action. Arsala is a verb here."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 48:28",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0173": {
+      "name_id": "PDF-HN-0173",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0173-katheer-4-87",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 4:87",
+            "en": "Ibn Kathir — Quran 4:87"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അല്ലാഹുവിന്റെ വാർത്തകളും വാഗ്ദാനങ്ങളും മുന്നറിയിപ്പുകളും സത്യസന്ധമാണെന്നും അന്ത്യദിനത്തിലെ കൂടിച്ചേരൽ ഉറപ്പാണെന്നും വിശദീകരിക്കുന്നു. «أَصْدَقُ» താരതമ്യരൂപമാണ്.",
+            "en": "Ibn Kathir affirms God's truthfulness in promise, warning and report, alongside the universal gathering; asdaq is comparative."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 4:87",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya87.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0173-4-87",
+          "title": {
+            "ml": "ഖുർആൻ 4:87 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 4:87 — complete verse"
+          },
+          "arabic_original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۚ لَيَجْمَعَنَّكُمْ إِلَىٰ يَوْمِ الْقِيَامَةِ لَا رَيْبَ فِيهِ ۗ وَمَنْ أَصْدَقُ مِنَ اللَّهِ حَدِيثًا",
+          "translation": {
+            "ml": "അല്ലാഹുവല്ലാതെ ആരാധനയ്ക്കർഹനില്ല. സംശയമില്ലാത്ത ഉയിർത്തെഴുന്നേൽപ്പുദിവസത്തിനായി അവൻ നിങ്ങളെ ഒരുമിച്ചു കൂട്ടും. അല്ലാഹുവിനെക്കാൾ സത്യസന്ധമായി സംസാരിക്കുന്നവൻ ആരുണ്ട്?",
+            "en": "Allah: none has the right to be worshipped except Him. He will gather you for the Day of Resurrection, without doubt. Who is more truthful in speech than Allah?"
+          },
+          "source_reference": "Quran 4:87 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya87.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0174": {
+      "name_id": "PDF-HN-0174",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0174-katheer-2-158",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:158",
+            "en": "Ibn Kathir — Quran 2:158"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സ്വഫാ–മർവ സഅ്‌യ് സംബന്ധിച്ച ആഇശയുടെ വ്യാഖ്യാനം രേഖപ്പെടുത്തുന്നു. ചെറിയ നന്മയ്ക്കുപോലും വലിയ പ്രതിഫലം നൽകുന്നവനെന്നതാണ് «شَاكِرٌ عَلِيمٌ» എന്നതിന്റെ വിശദീകരണം.",
+            "en": "Ibn Kathir records Aisha's clarification of Safa–Marwa rites and understands Shakir Alim as generously rewarding even small good acts."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:158",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya158.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0176": {
+      "name_id": "PDF-HN-0176",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0176-katheer-6-18",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 6:18",
+            "en": "Ibn Kathir — Quran 6:18"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ സൃഷ്ടികളെല്ലാം അല്ലാഹുവിന്റെ അധികാരത്തിൽ ആണെന്ന് വ്യക്തമാക്കുന്നു; അതേ ആയത്തിൽ അവനെ ഹകീമും ഖബീറും എന്നു വിളിക്കുന്നു.",
+            "en": "Ibn Kathir explains all creation's subjection to divine power, paired in the verse with wisdom and all-awareness."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0177": {
+      "name_id": "PDF-HN-0177",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0177-katheer-34-26",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 34:26",
+            "en": "Ibn Kathir — Quran 34:26"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അന്ത്യദിനത്തിൽ സത്യത്തോടെ വിധി നടത്തി ഓരോ പ്രവർത്തിക്കും പ്രതിഫലം നൽകുന്നതായി വിശദീകരിക്കുന്നു. ആയത്തിലെ നാമങ്ങൾ «الْفَتَّاحُ الْعَلِيمُ» ആണ്, «القاضي» അല്ല.",
+            "en": "Ibn Kathir describes final judgment and recompense; the verse names al-Fattah and al-Alim, not the isolated title al-Qadi."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 34:26",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura34-aya26.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0178": {
+      "name_id": "PDF-HN-0178",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0178-katheer-6-95",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 6:95",
+            "en": "Ibn Kathir — Quran 6:95"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ധാന്യങ്ങളും കുരുക്കളും പിളർന്ന് വിവിധ സസ്യങ്ങളും ഫലങ്ങളും ഉണ്ടാകുന്നതിനെ അല്ലാഹുവിന്റെ സൃഷ്ടിശക്തിയുടെ തെളിവായി വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir treats germination from seed and stone, and emergence of life, as evidence of divine creative power."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:95",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya95.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0180": {
+      "name_id": "PDF-HN-0180",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0180-katheer-85-13",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 85:13",
+            "en": "Ibn Kathir — Quran 85:13"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ആരംഭത്തിൽ സൃഷ്ടിക്കുന്നതും വീണ്ടും സൃഷ്ടിക്കുന്നതും തടസ്സമില്ലാതെ കഴിയുന്ന ദൈവിക കഴിവായി വ്യാഖ്യാനിക്കുന്നു. ആയത്തിൽ രണ്ടു ക്രിയകളാണുള്ളത്.",
+            "en": "Ibn Kathir interprets origination and restoration as demonstrations of unrestricted divine power. The text uses verbs."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:13",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya13.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0182": {
+      "name_id": "PDF-HN-0182",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0182-katheer-39-36",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 39:36",
+            "en": "Ibn Kathir — Quran 39:36"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ആയത്തിനെ അല്ലാഹുവിൽ ഭരമേൽപ്പിക്കുന്ന ദാസന് അവൻ മതിയാകുമെന്ന സന്ദർഭത്തിലാണ് വിശദീകരിക്കുന്നത്; വിഗ്രഹങ്ങളെക്കൊണ്ട് നബിയെ ഭയപ്പെടുത്തലും ചർച്ച ചെയ്യുന്നു.",
+            "en": "Ibn Kathir relates sufficiency to reliance on Allah amid threats by idolaters against the Prophet."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 39:36",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya36.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0183": {
+      "name_id": "PDF-HN-0183",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0183-katheer-8-9",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 8:9",
+            "en": "Ibn Kathir — Quran 8:9"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ബദ്റിൽ നബി ﷺ സഹായം തേടിയ സംഭവവും മലക്കുകളാൽ സഹായിക്കുമെന്ന മറുപടിയും വിവിധ നിവേദനങ്ങളിലൂടെ വിശദീകരിക്കുന്നു. ഇത് നിശ്ചിതസംഖ്യയിൽ നാമജപ നിർദേശമല്ല.",
+            "en": "Ibn Kathir recounts the appeal for help at Badr and announced angelic support, not a general name-specific numerical charm."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 8:9",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0183-8-9",
+          "title": {
+            "ml": "ഖുർആൻ 8:9 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 8:9 — complete verse"
+          },
+          "arabic_original": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ أَنِّي مُمِدُّكُم بِأَلْفٍ مِّنَ الْمَلَائِكَةِ مُرْدِفِينَ",
+          "translation": {
+            "ml": "നിങ്ങൾ രക്ഷിതാവിനോട് സഹായം അപേക്ഷിച്ചപ്പോൾ അവൻ ഉത്തരം നൽകി: തുടർച്ചയായി വരുന്ന ആയിരം മലക്കുകൾകൊണ്ട് ഞാൻ നിങ്ങളെ സഹായിക്കും. ഇത് ബദ്റിന്റെ സന്ദർഭമാണ്.",
+            "en": "When you sought your Lord's aid, He answered that He would support you with a thousand angels coming in succession. This concerns Badr."
+          },
+          "source_reference": "Quran 8:9 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0186": {
+      "name_id": "PDF-HN-0186",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0186-katheer-11-102",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 11:102",
+            "en": "Ibn Kathir — Quran 11:102"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മുൻകാല അക്രമി സമൂഹങ്ങൾക്കുള്ള ശിക്ഷയുടെ പശ്ചാത്തലം പറയുന്നു; അക്രമിയെ സമയം അനുവദിച്ചശേഷം പിടികൂടുന്ന ഹദീസും ഉദ്ധരിക്കുന്നു.",
+            "en": "Ibn Kathir relates the verse to unjust peoples and cites a hadith about respite followed by accountability."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 11:102",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya102.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0186-11-102",
+          "title": {
+            "ml": "ഖുർആൻ 11:102 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 11:102 — complete verse"
+          },
+          "arabic_original": "وَكَذَٰلِكَ أَخْذُ رَبِّكَ إِذَا أَخَذَ الْقُرَىٰ وَهِيَ ظَالِمَةٌ ۚ إِنَّ أَخْذَهُ أَلِيمٌ شَدِيدٌ",
+          "translation": {
+            "ml": "അനീതിയിൽ മുഴുകിയ പട്ടണങ്ങളെ നിന്റെ രക്ഷിതാവ് പിടികൂടുമ്പോൾ അവന്റെ നടപടി ഇങ്ങനെയാണ്. അവന്റെ പിടിത്തം വേദനാജനകവും കഠിനവുമാകുന്നു.",
+            "en": "Such is your Lord's punishment when He seizes unjust towns; His seizure is painful and severe."
+          },
+          "source_reference": "Quran 11:102 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya102.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0202": {
+      "name_id": "PDF-HN-0202",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0202-katheer-21-30",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 21:30",
+            "en": "Ibn Kathir — Quran 21:30"
+          },
+          "translation": {
+            "ml": "ആകാശഭൂമികൾ ചേർന്നിരുന്നത് വേർപെടുത്തിയെന്നും മഴയും മുളപ്പും ഉണ്ടായെന്നും പറയുന്ന വ്യത്യസ്ത ആദ്യകാല വ്യാഖ്യാനങ്ങൾ ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir transmits differing early interpretations: separation of joined heaven and earth, or rain and vegetation."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 21:30",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0202-tabary-21-30",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 21:30",
+            "en": "Al-Tabari — Quran 21:30"
+          },
+          "translation": {
+            "ml": "ത്വബരി വിവിധ അഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തി, വെള്ളത്തെക്കുറിച്ചുള്ള അടുത്ത വാചകം പരിഗണിച്ച് മഴയും സസ്യങ്ങളും സംബന്ധിച്ച വ്യാഖ്യാനത്തിനാണ് മുൻഗണന നൽകുന്നത്.",
+            "en": "Al-Tabari explicitly prefers the rain-and-vegetation interpretation in light of the immediately following reference to water."
+          },
+          "source_reference": "تفسير الطبري — Quran 21:30",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0202-21-30",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 21:30 — complete verse"
+          },
+          "arabic_original": "أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا ۖ وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ ۖ أَفَلَا يُؤْمِنُونَ",
+          "translation": {
+            "ml": "ആകാശവും ഭൂമിയും ചേർന്ന നിലയിൽ ഉണ്ടായിരുന്നുവെന്നും നാം അവയെ വേർപെടുത്തിയെന്നും നിഷേധികൾ മനസ്സിലാക്കുന്നില്ലേ? വെള്ളത്തിൽനിന്നാണ് ജീവിക്കുന്ന എല്ലാറ്റിനെയും നാം സൃഷ്ടിച്ചത്. അവർ വിശ്വസിക്കുന്നില്ലേ?",
+            "en": "Do those who disbelieve not consider that the heavens and earth were joined, then We separated them? We made every living thing from water. Will they not believe?"
+          },
+          "source_reference": "Quran 21:30 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0203": {
+      "name_id": "PDF-HN-0203",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0203-katheer-21-30",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 21:30",
+            "en": "Ibn Kathir — Quran 21:30"
+          },
+          "translation": {
+            "ml": "«فَفَتَقْنَاهُمَا» എന്ന വേർതിരിക്കലിനെക്കുറിച്ച് ഇബ്നു കസീർ പല ആദ്യകാല വ്യാഖ്യാനങ്ങൾ രേഖപ്പെടുത്തുന്നു; «الفاتق» എന്ന സ്വതന്ത്ര നാമം ആയത്തിലില്ല.",
+            "en": "Ibn Kathir records several explanations of separation, while the standalone name al-Fatiq is not printed in the verse."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 21:30",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0203-tabary-21-30",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 21:30",
+            "en": "Al-Tabari — Quran 21:30"
+          },
+          "translation": {
+            "ml": "ത്വബരി «റത്ഖ്/ഫത്ഖ്» എന്ന ആശയത്തെ പല നിലകളിൽ വിശദീകരിച്ച് മഴയും ചെടികളും ഉണ്ടാകുന്നതിനെ മുൻഗണന നൽകുന്നു; അത് എല്ലാവരുടെയും ഏകാഭിപ്രായമായി കാണിക്കരുത്.",
+            "en": "Al-Tabari reviews ratq/fatq variants and favors rain and growth; his preferred reading is not unanimous consensus."
+          },
+          "source_reference": "تفسير الطبري — Quran 21:30",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "deep-quran-full-PDF-HN-0203-21-30",
+          "title": {
+            "ml": "ഖുർആൻ 21:30 — മുഴുവൻ ആയത്ത്",
+            "en": "Quran 21:30 — complete verse"
+          },
+          "arabic_original": "أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا ۖ وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ ۖ أَفَلَا يُؤْمِنُونَ",
+          "translation": {
+            "ml": "ആകാശവും ഭൂമിയും ചേർന്ന നിലയിൽ ഉണ്ടായിരുന്നുവെന്നും നാം അവയെ വേർപെടുത്തിയെന്നും നിഷേധികൾ മനസ്സിലാക്കുന്നില്ലേ? വെള്ളത്തിൽനിന്നാണ് ജീവിക്കുന്ന എല്ലാറ്റിനെയും നാം സൃഷ്ടിച്ചത്. അവർ വിശ്വസിക്കുന്നില്ലേ?",
+            "en": "Do those who disbelieve not consider that the heavens and earth were joined, then We separated them? We made every living thing from water. Will they not believe?"
+          },
+          "source_reference": "Quran 21:30 — complete verse",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya30.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പത്തെ ഭാഗിക ഉദ്ധരണിക്ക് പൂർണ ഖുർആൻ സന്ദർഭം. ഈ കാർഡിലെ പ്രത്യേക തലക്കെട്ട് അതേ പദരൂപത്തിൽ ആയത്തിൽ ഉണ്ടെന്നു നിർബന്ധമില്ല.",
+            "en": "The full source verse replaces reliance on an earlier excerpt. The card heading is not necessarily an independently attested Divine Name here."
+          }
+        }
+      ]
+    },
+    "PDF-HN-0209": {
+      "name_id": "PDF-HN-0209",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0209-katheer-26-80",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 26:80",
+            "en": "Ibn Kathir — Quran 26:80"
+          },
+          "translation": {
+            "ml": "ഇബ്റാഹീം നബി രോഗം സ്വയം അനുഭവിക്കുന്നതായി പറഞ്ഞ് രോഗശാന്തി അല്ലാഹുവിന് ബന്ധപ്പെടുത്തി എന്ന ആദരസൂചക വാക്യക്രമം ഇബ്നു കസീർ വ്യക്തമാക്കുന്നു.",
+            "en": "Ibn Kathir notes Ibrahim's etiquette of attributing illness to himself and healing to Allah, including healing through appointed means."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 26:80",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura26-aya80.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0209-tabary-26-80",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 26:80",
+            "en": "Al-Tabari — Quran 26:80"
+          },
+          "translation": {
+            "ml": "ത്വബരി ഈ വചനത്തെ അസുഖപ്പെട്ടാൽ അല്ലാഹു ശരീരത്തിനു രോഗശാന്തി നൽകുന്നു എന്ന നേരിട്ടുള്ള അർഥത്തിൽ വിവരിക്കുന്നു. ഖുർആനിൽ «يَشْفِينِ» എന്ന ക്രിയയാണ്.",
+            "en": "Al-Tabari explains that Allah restores a sick person's body to health; the Quran uses the verb yashfini."
+          },
+          "source_reference": "تفسير الطبري — Quran 26:80",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura26-aya80.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0210": {
+      "name_id": "PDF-HN-0210",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0210-katheer-82-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 82:6",
+            "en": "Ibn Kathir — Quran 82:6"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഉദാരനായ രക്ഷിതാവിനെക്കുറിച്ചുള്ള ഈ ചോദ്യം മനുഷ്യന്റെ അനുസരണക്കേടിനെ ശാസിക്കുന്നതായി വായിക്കുന്നു; ദൈവിക ഔദാര്യം പാപത്തിന് അനുമതിയല്ല.",
+            "en": "Ibn Kathir calls it a rebuke of disobedience, rejecting divine generosity as a permission to sin."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 82:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura82-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0214": {
+      "name_id": "PDF-HN-0214",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0214-katheer-40-3",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 40:3",
+            "en": "Ibn Kathir — Quran 40:3"
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ പൊറുക്കലും തൗബ സ്വീകരിക്കലും കഠിനശിക്ഷയും ഔദാര്യവും ഒന്നിച്ചുള്ള ഖുർആൻ ശൈലി പ്രതീക്ഷയും ഉത്തരവാദിത്തവും നിലനിർത്തുന്നതായി വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir shows hope and accountability together through forgiveness, acceptance of repentance, warning and bounty."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 40:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura40-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    },
+    "PDF-HN-0220": {
+      "name_id": "PDF-HN-0220",
+      "scholarly": [
+        {
+          "id": "deep-PDF-HN-0220-katheer-53-48",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 53:48",
+            "en": "Ibn Kathir — Quran 53:48"
+          },
+          "translation": {
+            "ml": "«أَغْنَىٰ وَأَقْنَىٰ» എന്നതിന് സമ്പത്ത് നൽകൽ, സ്ഥിരസ്വത്ത് നൽകൽ, സംതൃപ്തി നൽകൽ തുടങ്ങിയ വ്യാഖ്യാനങ്ങൾ ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir reports variant meanings for aghna and aqna: granting wealth, possessions or contentment."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 53:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura53-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        },
+        {
+          "id": "deep-PDF-HN-0220-tabary-53-48",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 53:48",
+            "en": "Al-Tabari — Quran 53:48"
+          },
+          "translation": {
+            "ml": "ത്വബരി ആദ്യകാല നിവേദനങ്ങളിൽ സമ്പത്താക്കൽ, സേവനങ്ങൾ ലഭ്യമാക്കൽ, സംതൃപ്തിപ്പെടുത്തൽ തുടങ്ങിയ വ്യത്യസ്ത വിശദീകരണങ്ങൾ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Tabari preserves early explanations involving possessions, livelihood assistance and contentment."
+          },
+          "source_reference": "تفسير الطبري — Quran 53:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura53-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ തഫ്സീർ അഭിപ്രായത്തിന്റെ അർഥസംഗ്രഹം; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Attributed interpretive paraphrase, not a verse prescribing a separate numbered name recitation."
+          }
+        }
+      ],
+      "evidence": []
+    }
+  }
+}

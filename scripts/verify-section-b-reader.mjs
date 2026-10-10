@@ -334,6 +334,58 @@ try {
   const afterPrayer100=prophetic.entries.find(x=>x.id==='hadith-muslim-597a');
   assert.ok(afterPrayer100.count.en.includes('33') && afterPrayer100.count.en.includes('once'));
   console.log('PASS: 160 distinct Section B card introductions, 60 last-phase profiles, 69 Quran links and four new authentic source-attributed hadith reports.');
+  // Further source-critical depth on the already covered 160 cards.
+  // Never count an attributed tafsir paraphrase as a prescribed Quranic wazifa.
+  const depth = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepth.json', 'utf8'));
+  const depthIds = Object.keys(depth.profiles);
+  assert.equal(depthIds.length,25);
+  assert.ok(depthIds.every(id=>coveredIds.has(id)), 'Deep studies must use the approved 160-card inventory.');
+  let depthTafsir = 0, depthFullQuran = 0, deepTabari = 0, deepKathir = 0;
+  for(const [id, profile] of Object.entries(depth.profiles)) {
+    assert.equal(profile.name_id,id);
+    assert.ok(profile.scholarly.length >= 1);
+    const sourceIds = new Set();
+    for (const entry of [...profile.scholarly, ...profile.evidence]) {
+      assert.ok(!sourceIds.has(entry.id), `Repeated deep-research entry ${id}/${entry.id}`);
+      sourceIds.add(entry.id);
+      assert.equal(entry.review_status,'checked_against_digital_text');
+      assert.ok(entry.translation.ml && entry.translation.en);
+      assert.ok(entry.source_scope?.ml && entry.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(entry.source_url),`Unexpected deep-source link ${entry.id}`);
+    }
+    for(const e of profile.scholarly) {
+      depthTafsir++;
+      if(e.source_url.includes('/tabary/'))deepTabari++;
+      if(e.source_url.includes('/katheer/'))deepKathir++;
+      assert.ok(!e.count && !e.timing, 'Scholarly explanation must not masquerade as a new fixed-count ritual.');
+    }
+    for(const e of profile.evidence){
+      depthFullQuran++;
+      assert.equal(e.claim_kind,'complete_quran_verse_context');
+      assert.ok(e.arabic_original.length > 60, `Full verse appears incomplete: ${id}`);
+      assert.ok(e.source_reference.includes('complete verse'));
+      assert.ok(!e.count && !e.timing);
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'),`Missing tafsir group ${id}/${lang}`);
+      for(const entry of profile.scholarly){
+        assert.ok(html.includes(escape(entry.translation[lang])),`Missing tafsir meaning ${id}/${entry.id}/${lang}`);
+        assert.ok(html.includes(entry.source_url),`Missing tafsir link ${id}/${entry.id}`);
+      }
+      for(const entry of profile.evidence){
+        assert.ok(html.includes(escape(entry.arabic_original)),`Missing full Quran Arabic ${id}/${entry.id}`);
+        assert.ok(html.includes(escape(entry.translation[lang])),`Missing full Quran meaning ${id}/${entry.id}/${lang}`);
+        assert.ok(html.includes(entry.source_url),`Missing Quran source ${id}/${entry.id}`);
+      }
+    }
+  }
+  assert.deepEqual({depthTafsir,depthFullQuran,deepTabari,deepKathir},
+    {depthTafsir:34,depthFullQuran:8,deepTabari:9,deepKathir:25});
+  assert.ok(depth.profiles['PDF-HN-0202'].scholarly.some(e=>e.source_url.includes('/tabary/')));
+  assert.ok(depth.profiles['PDF-HN-0203'].scholarly.some(e=>e.source_url.includes('/tabary/')));
+  assert.ok(depth.profiles['PDF-HN-0164'].evidence[0].arabic_original.includes('بِالْعَدْلِ'));
+  console.log('PASS: 25 strengthened name cards show 34 cited classical tafsir readings and 8 complete Quran verses in both languages.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
