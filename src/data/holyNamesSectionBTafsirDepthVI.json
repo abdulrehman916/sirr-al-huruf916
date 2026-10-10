@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "ഇതുവരെ അധിക തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകൾക്കുള്ള ആറാമത്തെ ഘട്ടം: 22 വിശിഷ്ട തഫ്സീർ വ്യാഖ്യാനങ്ങൾ, മൂല അറബി, മലയാളം/ഇംഗ്ലീഷ് വ്യാഖ്യാനം, കൃത്യമായ പേജ് ലിങ്ക്. 57:3-ലെ നാല് നാമങ്ങൾ, ഇഖ്‌ലാസിലെ അഹദ്/സമദ്, നൂർ ആയത്തിലെ വ്യത്യസ്ത ആദ്യകാല വായനകൾ, 2:37-ലെ തൗബ, ബലഹീന ഹദീസ് നിരൂപണം എന്നിവ വേർതിരിച്ചു. ചരിത്ര ഖവാസ്സ് ഗവേഷണം ഇതുകൊണ്ട് പൂർത്തിയായിട്ടില്ല.",
-    "en": "Sixth deep-study stage: 15 previously undeepened card IDs, 22 actually checked classical tafsir snippets with bilingual attributed notes and verse URLs. Separate four Names of Quran 57:3 and their authentic Muslim 2713a hadith, distinguish Quranic Ahad/Samad from weak numerical virtue reports, document competing Light Verse readings and the Quran-grounded Adam repentance interpretation; historic khawass research still unfinished."
+    "ml": "ഇതുവരെ അധിക തഫ്സീർ പഠനം ലഭിക്കാത്ത 15 കാർഡുകൾക്കുള്ള ആറാമത്തെ ഘട്ടം: 22 വിശിഷ്ട തഫ്സീർ വ്യാഖ്യാനങ്ങൾ, മൂല അറബി, മലയാളം/ഇംഗ്ലീഷ് വ്യാഖ്യാനം, കൃത്യമായ പേജ് ലിങ്ക്. 57:3-ലെ നാല് നാമങ്ങൾ, ഇഖ്‌ലാസിലെ അഹദ്/സമദ്, നൂർ ആയത്തിലെ വ്യത്യസ്ത ആദ്യകാല വായനകൾ, 2:37-ലെ തൗബ, ബലഹീന ഹദീസ് നിരൂപണം എന്നിവ വേർതിരിച്ചു. ചരിത്ര ഖവാസ്സ് ഗവേഷണം ഇതുകൊണ്ട് പൂർത്തിയായിട്ടില്ല. മുമ്പ് അവസാനഭാഗം മാത്രം ഉണ്ടായിരുന്ന 13:16-ന്റെ പൂർണ ആയത്തും രണ്ട് ഭാഷകളിലെ അർഥവും പ്രത്യേകം ചേർത്തു.",
+    "en": "Sixth deep-study stage: 15 previously undeepened card IDs, 22 actually checked classical tafsir snippets with bilingual attributed notes and verse URLs. Separate four Names of Quran 57:3 and their authentic Muslim 2713a hadith, distinguish Quranic Ahad/Samad from weak numerical virtue reports, document competing Light Verse readings and the Quran-grounded Adam repentance interpretation; historic khawass research still unfinished. Quran 13:16 is supplemented with the complete Arabic verse and full Malayalam/English meanings, rather than only the earlier closing excerpt."
   },
   "profiles": {
     "PDF-HN-060": {
@@ -33,7 +33,28 @@
     },
     "PDF-HN-064": {
       "name_id": "PDF-HN-064",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-vi-full-064-quran-13-16",
+          "title": {
+            "ml": "ഖുർആൻ 13:16 — പൂർണ ആയത്ത്, الْوَاحِدُ الْقَهَّارُ",
+            "en": "Quran 13:16 — complete verse in context"
+          },
+          "arabic_original": "قُلْ مَن رَّبُّ السَّمَاوَاتِ وَالْأَرْضِ قُلِ اللَّهُ ۚ قُلْ أَفَاتَّخَذْتُم مِّن دُونِهِ أَوْلِيَاءَ لَا يَمْلِكُونَ لِأَنفُسِهِمْ نَفْعًا وَلَا ضَرًّا ۚ قُلْ هَلْ يَسْتَوِي الْأَعْمَىٰ وَالْبَصِيرُ أَمْ هَلْ تَسْتَوِي الظُّلُمَاتُ وَالنُّورُ ۗ أَمْ جَعَلُوا لِلَّهِ شُرَكَاءَ خَلَقُوا كَخَلْقِهِ فَتَشَابَهَ الْخَلْقُ عَلَيْهِمْ ۚ قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
+          "translation": {
+            "ml": "പറയുക: ആകാശങ്ങളുടെയും ഭൂമിയുടെയും രക്ഷിതാവ് ആരാണ്? പറയുക: അല്ലാഹു. അവനല്ലാതെ സ്വയം നന്മയോ ദോഷമോ വരുത്താൻ കഴിയാത്ത രക്ഷാധികാരികളെ നിങ്ങൾ സ്വീകരിച്ചിരിക്കുകയാണോ? അന്ധനും കാണുന്നവനും, ഇരുട്ടും വെളിച്ചവും തുല്യമാകുമോ? അല്ലെങ്കിൽ സൃഷ്ടിയിൽ അല്ലാഹുവിന് തുല്യരായ പങ്കാളികളെ അവർ കണ്ടിട്ടുണ്ടോ? പറയുക: അല്ലാഹുവാണ് എല്ലാറ്റിന്റെയും സ്രഷ്ടാവ്; അവനാണ് ഏകനും സർവാധിപതിയും.",
+            "en": "Say: Who is Lord of the heavens and earth? Say: Allah. Have you taken protectors besides Him who cannot control even their own benefit or harm? Are the blind and the seeing equal, or darkness and light? Have those attributed partners to Allah created anything comparable to His creation so that the two creations seem alike? Say: Allah is Creator of everything, the One, the Irresistible."
+          },
+          "source_reference": "Quran 13:16 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya16.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "മുമ്പ് ഈ കാർഡിൽ അവസാന വാക്യഭാഗം മാത്രം നൽകിയിരുന്നു; ഖുർആനിൽ الْوَاحِدُ الْقَهَّارُ നേരിട്ട് വരുന്ന പൂർണ ആയത്തും സൃഷ്ടി–തൗഹീദ് സന്ദർഭവും ഇവിടെ ചേർക്കുന്നു.",
+            "en": "The earlier entry quoted only the final phrase; this supplies the full source verse and its monotheistic argument. The explicit pair is al-Wahid al-Qahhar, not a special-count wazifa."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-vi-064-katheer-13-16",
