@@ -689,6 +689,102 @@
           "ഹദീസിൽ ഇല്ലാത്ത സ്ഥിരമായ എണ്ണമോ ഫലത്തിന്റെ സമയപരിധിയോ ചേർക്കരുത്."
         ]
       }
+    },
+    {
+      "id": "hadith-abudawud-3451",
+      "source_reference": "Sunan Abi Dawud 3451 (Sahih, al-Albani)",
+      "source_url": "https://sunnah.com/abudawud:3451",
+      "arabic_original": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ الْقَابِضُ الْبَاسِطُ الرَّازِقُ وَإِنِّي لأَرْجُو أَنْ أَلْقَى اللَّهَ وَلَيْسَ أَحَدٌ مِنْكُمْ يُطَالِبُنِي بِمَظْلَمَةٍ فِي دَمٍ وَلاَ مَالٍ",
+      "title": {
+        "ml": "വിലക്കയറ്റത്തെക്കുറിച്ചുള്ള ഹദീസ്: അൽ-ഖാബിദ്, അൽ-ബാസിത്, അർ-റാസിഖ്",
+        "en": "Price-setting report: al-Qabid, al-Basit and ar-Raziq"
+      },
+      "translation": {
+        "ml": "വില ഉയർന്നപ്പോൾ വില നിയന്ത്രിക്കാൻ ആവശ്യപ്പെട്ടവരോട് നബി ﷺ മറുപടി പറഞ്ഞതിൽ അല്ലാഹു വില നിർണയിക്കുന്നവനും പിടിച്ചുവെക്കുന്നവനും വിശാലമാക്കുന്നവനും ഉപജീവനം നൽകുന്നവനുമാണെന്ന് പറയുന്നു; ആരുടെയും രക്തത്തിലും സമ്പത്തിലും അന്യായം ചെയ്ത് അദ്ദേഹത്തിനെതിരെ പരാതി ഉണ്ടായിരിക്കരുതെന്ന് പ്രത്യാശയും പ്രകടിപ്പിക്കുന്നു. ഈ നിവേദനത്തിൽ «الرَّازِقُ» എന്ന രൂപമാണ്; മറ്റൊരു നിവേദനത്തിലെ «الرَّزَّاقُ» എന്ന രൂപം അതേപടി ഒറ്റയാക്കരുത്. ഇത് വിലനീതി സംബന്ധിച്ച ഹദീസാണ്, ആവർത്തിച്ച് ജപിക്കാൻ പ്രത്യേക എണ്ണം പറഞ്ഞിട്ടില്ല.",
+        "en": "When prices rose, the Prophet responded to a request for price controls by describing Allah as the One who sets prices, constricts, expands, and provides, and expressing hope to meet Allah free of claims of injustice over blood or wealth. This report uses ar-Raziq (الرَّازِقُ); the related Tirmidhi version says ar-Razzaq. It is a context-bound report, not an instruction to repeat these names."
+      },
+      "name_ids": [
+        "PDF-HN-016",
+        "PDF-HN-019",
+        "PDF-HN-020"
+      ],
+      "purpose": "provision",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_report",
+      "source_scope": {
+        "ml": "ഇത് ജപം നിർദേശിക്കുന്ന ഹദീസ് അല്ല; വിലക്കയറ്റം സംബന്ധിച്ച നബിവചനമാണ്. അറബി നിവേദനങ്ങളിലെ വ്യത്യാസം ഒത്തുതീർപ്പാക്കാതെ പ്രത്യേകം നിലനിർത്തുന്നു.",
+        "en": "This is an account about prices and just conduct, not a prescriptive dhikr. Narration wording variants are retained separately."
+      },
+      "count": {
+        "ml": "ഒരു നാമവും എത്രതവണ ഓതണം എന്ന എണ്ണം ഈ ഹദീസിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No name-specific recitation count is prescribed by this report."
+      },
+      "timing": {
+        "ml": "വിലക്കയറ്റത്തിന്റെ ചരിത്രസന്ദർഭം; ഓതേണ്ട പ്രത്യേക ദിവസമോ സമയമോ ഇല്ല.",
+        "en": "Historical price-rise context; no prescribed recitation time or number of days."
+      },
+      "conditions": {
+        "ml": "നീതിയും മറ്റുള്ളവരുടെ സമ്പത്തിലോ രക്തത്തിലോ അന്യായം ചെയ്യാതിരിക്കലുമാണ് സന്ദർഭം; ജപോപകരണങ്ങളോ കളമോ പറയുന്നില്ല.",
+        "en": "The context concerns justice and avoiding injury to people or property; no talisman, square or ritual apparatus."
+      },
+      "steps": {
+        "ml": [
+          "ഹദീസിന്റെ ചരിത്രസന്ദർഭം വായിക്കുക; ഇത് നിർദേശിച്ച വസീഫയായി മാറ്റരുത്.",
+          "മറ്റേ നിവേദനവുമായി അറബി പദരൂപ വ്യത്യാസം ഒത്തുനോക്കുക."
+        ],
+        "en": [
+          "Read this as a report in the context of price-setting, not as prescribed chanting.",
+          "Compare the distinct ar-Raziq / ar-Razzaq wordings without merging them."
+        ]
+      }
+    },
+    {
+      "id": "hadith-tirmidhi-1314",
+      "source_reference": "Jami at-Tirmidhi 1314 (Hasan Sahih per al-Tirmidhi; Sahih per Darussalam)",
+      "source_url": "https://sunnah.com/tirmidhi:1314",
+      "arabic_original": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ الْقَابِضُ الْبَاسِطُ الرَّزَّاقُ وَإِنِّي لأَرْجُو أَنْ أَلْقَى رَبِّي وَلَيْسَ أَحَدٌ مِنْكُمْ يَطْلُبُنِي بِمَظْلَمَةٍ فِي دَمٍ وَلاَ مَالٍ",
+      "title": {
+        "ml": "തിര്മിദി നിവേദനം: അൽ-ഖാബിദ്, അൽ-ബാസിത്, അർ-റസ്സാഖ്",
+        "en": "Tirmidhi's wording: al-Qabid, al-Basit and ar-Razzaq"
+      },
+      "translation": {
+        "ml": "വിലക്കയറ്റത്തിന്റെ പശ്ചാത്തലത്തിൽ നബി ﷺ വിലയും നിയന്ത്രണവും ഉപജീവനവും അല്ലാഹുവിന്റെ അധികാരവുമായി ബന്ധിപ്പിക്കുകയും ആളുകളോട് അന്യായം ചെയ്യാതിരിക്കാനുള്ള ആശങ്ക വ്യക്തമാക്കുകയും ചെയ്തു. ഈ നിവേദനത്തിലെ അറബി പാഠം «الرَّزَّاقُ» എന്നാണ്; അബൂദാവൂദ് 3451-ൽ «الرَّازِقُ» എന്നാണ്. തിർമിദി ഈ ഹദീസിനെ ഹസൻ സഹീഹ് എന്നു വിളിക്കുന്നു. Sunnah.com-ലെ ഇംഗ്ലീഷ് വരിയിൽ «Al-Basir» എന്നെഴുതിയിട്ടുണ്ടെങ്കിലും അതിന്റെ അറബി പാഠത്തിൽ «الْبَاسِطُ» എന്നാണ്; അതിനാൽ അറബി പാഠത്തെ അടിസ്ഥാനമാക്കി അൽ-ബാസിത് തന്നെയാണ് രേഖപ്പെടുത്തിയത്. ഇതിൽ ജപസംഖ്യയോ ദിവസനിയമമോ ഇല്ല.",
+        "en": "In the context of rising prices, the Prophet relates contraction, expansion and provision to Allah and expresses concern about injustice. The Arabic here uses ar-Razzaq (الرَّزَّاقُ), while Abu Dawud 3451 has ar-Raziq. Al-Tirmidhi calls the narration Hasan Sahih. Sunnah.com's English translation prints 'Al-Basir' at one point, but the Arabic actually reads 'al-Basit'; the Arabic wording is preserved. This is not a numerical recitation instruction."
+      },
+      "name_ids": [
+        "PDF-HN-016",
+        "PDF-HN-019",
+        "PDF-HN-020"
+      ],
+      "purpose": "provision",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_report",
+      "source_scope": {
+        "ml": "ഇത് ജപം നിർദേശിക്കുന്ന ഹദീസ് അല്ല; വിലക്കയറ്റം സംബന്ധിച്ച നബിവചനമാണ്. അറബി നിവേദനങ്ങളിലെ വ്യത്യാസം ഒത്തുതീർപ്പാക്കാതെ പ്രത്യേകം നിലനിർത്തുന്നു.",
+        "en": "This is an account about prices and just conduct, not a prescriptive dhikr. Narration wording variants are retained separately."
+      },
+      "count": {
+        "ml": "ഒരു നാമവും എത്രതവണ ഓതണം എന്ന എണ്ണം ഈ ഹദീസിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No name-specific recitation count is prescribed by this report."
+      },
+      "timing": {
+        "ml": "വിലക്കയറ്റത്തിന്റെ ചരിത്രസന്ദർഭം; ഓതേണ്ട പ്രത്യേക ദിവസമോ സമയമോ ഇല്ല.",
+        "en": "Historical price-rise context; no prescribed recitation time or number of days."
+      },
+      "conditions": {
+        "ml": "നീതിയും മറ്റുള്ളവരുടെ സമ്പത്തിലോ രക്തത്തിലോ അന്യായം ചെയ്യാതിരിക്കലുമാണ് സന്ദർഭം; ജപോപകരണങ്ങളോ കളമോ പറയുന്നില്ല.",
+        "en": "The context concerns justice and avoiding injury to people or property; no talisman, square or ritual apparatus."
+      },
+      "steps": {
+        "ml": [
+          "ഹദീസിന്റെ ചരിത്രസന്ദർഭം വായിക്കുക; ഇത് നിർദേശിച്ച വസീഫയായി മാറ്റരുത്.",
+          "മറ്റേ നിവേദനവുമായി അറബി പദരൂപ വ്യത്യാസം ഒത്തുനോക്കുക."
+        ],
+        "en": [
+          "Read this as a report in the context of price-setting, not as prescribed chanting.",
+          "Compare the distinct ar-Raziq / ar-Razzaq wordings without merging them."
+        ]
+      }
     }
   ]
 }
