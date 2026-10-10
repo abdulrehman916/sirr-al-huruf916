@@ -9,7 +9,9 @@
       "id": "hadith-muslim-591",
       "name_ids": [
         "PDF-HN-005",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-137",
+        "PDF-HN-0226"
       ],
       "purpose": "purification",
       "title": {
@@ -137,7 +139,8 @@
       "id": "hadith-bukhari-6406",
       "name_ids": [
         "PDF-HN-001",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-0161"
       ],
       "purpose": "purification",
       "title": {
@@ -180,7 +183,8 @@
       "id": "hadith-bukhari-6403",
       "name_ids": [
         "PDF-HN-003",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-130"
       ],
       "purpose": "protection",
       "title": {
@@ -266,7 +270,9 @@
       "id": "hadith-bukhari-6306",
       "name_ids": [
         "PDF-HN-011",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-0154",
+        "PDF-HN-105"
       ],
       "purpose": "purification",
       "title": {
@@ -310,7 +316,8 @@
       "name_ids": [
         "PDF-HN-002",
         "PDF-HN-013",
-        "PDF-HN-016"
+        "PDF-HN-016",
+        "PDF-HN-0229"
       ],
       "purpose": "provision",
       "title": {
@@ -524,7 +531,8 @@
     {
       "id": "hadith-muslim-2202",
       "name_ids": [
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-0209"
       ],
       "purpose": "relief",
       "title": {
@@ -566,7 +574,8 @@
     {
       "id": "hadith-bukhari-5743",
       "name_ids": [
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-0209"
       ],
       "purpose": "relief",
       "title": {
@@ -655,7 +664,10 @@
     {
       "id": "hadith-abudawud-1493",
       "name_ids": [
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-065",
+        "PDF-HN-066",
+        "PDF-HN-130"
       ],
       "purpose": "other",
       "title": {
@@ -796,7 +808,9 @@
         "PDF-HN-013",
         "PDF-HN-062",
         "PDF-HN-063",
-        "PDF-HN-100"
+        "PDF-HN-100",
+        "PDF-HN-0160",
+        "PDF-HN-0161"
       ],
       "purpose": "protection",
       "title": {

@@ -9,7 +9,8 @@
       "id": "quran-21-83-ayyub",
       "name_ids": [
         "PDF-HN-001",
-        "PDF-HN-002"
+        "PDF-HN-002",
+        "PDF-HN-124"
       ],
       "purpose": "relief",
       "title": {
@@ -232,7 +233,8 @@
       "id": "quran-3-8-steady-hearts",
       "name_ids": [
         "PDF-HN-001",
-        "PDF-HN-018"
+        "PDF-HN-018",
+        "PDF-HN-0147"
       ],
       "purpose": "purification",
       "title": {
@@ -269,7 +271,8 @@
       "id": "quran-2-201-two-worlds",
       "name_ids": [
         "PDF-HN-013",
-        "PDF-HN-016"
+        "PDF-HN-016",
+        "PDF-HN-139"
       ],
       "purpose": "provision",
       "title": {
@@ -307,7 +310,8 @@
       "name_ids": [
         "PDF-HN-001",
         "PDF-HN-002",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-136"
       ],
       "purpose": "relief",
       "title": {
@@ -344,7 +348,8 @@
       "id": "quran-3-26-sovereignty",
       "name_ids": [
         "PDF-HN-003",
-        "PDF-HN-013"
+        "PDF-HN-013",
+        "PDF-HN-0165"
       ],
       "purpose": "authority",
       "title": {
@@ -673,6 +678,188 @@
       "conditions": {
         "ml": "പ്രത്യേക കളം, മുദ്ര, തകിട്, വസ്തു, ഒരുക്കം എന്നിവ ഈ ആയത്തിൽ നിർദേശിക്കുന്നില്ല.",
         "en": "This verse prescribes no square, seal, amulet, material or special preparation."
+      }
+    },
+    {
+      "id": "quran-14-40-ibrahim-salah",
+      "name_ids": [
+        "PDF-HN-140",
+        "PDF-HN-101"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഇബ്റാഹീം നബി: നമസ്കാരം നിലനിർത്താനും സന്തതികൾക്കുമായി",
+        "en": "Ibrahim's prayer for regular prayer and descendants"
+      },
+      "arabic_original": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+      "translation": {
+        "ml": "ഇബ്റാഹീം നബി തന്റെ നമസ്കാരം ശരിയായി നിലനിർത്താനും തന്റെ സന്താനങ്ങളിലും നമസ്കാരം നിലനിർത്തുന്നവർ ഉണ്ടാകാനും, പ്രാർത്ഥന സ്വീകരിക്കാനും അപേക്ഷിക്കുന്നു. ഈ വാക്യത്തിൽ പ്രത്യേക എണ്ണമോ ദിവസങ്ങളോ സമയമോ പറഞ്ഞിട്ടില്ല.",
+        "en": "Ibrahim asks to establish prayer, that his descendants do so, and for his supplication to be accepted. There is no specific count, number of days or time."
+      },
+      "source_reference": "Quran 14:40; تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya40.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_source_context",
+      "source_scope": {
+        "ml": "ഈ ആയത്തുമായി ബന്ധപ്പെട്ട ഖുർആൻ പാഠമാണ്. നാമത്തിനായി പ്രത്യേകം നിശ്ചയിച്ച വസീഫയല്ല.",
+        "en": "Relevant Quranic text, not a separately numbered practice of a standalone name."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "No repetition count is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "No specified clock time or number of days."
+      },
+      "conditions": {
+        "ml": "കളമോ തകിടോ പ്രത്യേക ഒരുക്കമോ ആയത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No square, amulet or special preparation is prescribed."
+      }
+    },
+    {
+      "id": "quran-3-9-day-of-gathering",
+      "name_ids": [
+        "PDF-HN-087"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "അന്ത്യദിനത്തിലെ കൂടിച്ചേരലും ദൈവിക വാഗ്ദാനവും",
+        "en": "Prayer acknowledging the universal Gathering"
+      },
+      "arabic_original": "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",
+      "translation": {
+        "ml": "മനുഷ്യരെ സംശയമില്ലാത്ത ഉയിർത്തെഴുന്നേൽപ്പുദിവസം ഒരുമിച്ചു കൂട്ടുമെന്ന പ്രാർത്ഥനയാണിത്. നഷ്ടപ്പെട്ട ആളെ ഉടൻ തിരികെ കൊണ്ടുവരുന്നതിനുള്ള പ്രത്യേക ജപമല്ല; അങ്ങനെ ഒരു ഫലം ആയത്ത് ഉറപ്പുനൽകുന്നില്ല.",
+        "en": "This prayer acknowledges Allah gathering all people on the Day of Resurrection. It is not a prescribed procedure for immediately bringing someone back."
+      },
+      "source_reference": "Quran 3:9; تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya9.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_source_context",
+      "source_scope": {
+        "ml": "ഈ ആയത്തുമായി ബന്ധപ്പെട്ട ഖുർആൻ പാഠമാണ്. നാമത്തിനായി പ്രത്യേകം നിശ്ചയിച്ച വസീഫയല്ല.",
+        "en": "Relevant Quranic text, not a separately numbered practice of a standalone name."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "No repetition count is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "No specified clock time or number of days."
+      },
+      "conditions": {
+        "ml": "കളമോ തകിടോ പ്രത്യേക ഒരുക്കമോ ആയത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No square, amulet or special preparation is prescribed."
+      }
+    },
+    {
+      "id": "quran-2-156-calamity-remembrance",
+      "name_ids": [
+        "PDF-HN-136"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "പ്രയാസമോ ദുരന്തമോ വന്നപ്പോൾ പറയുന്ന വചനം",
+        "en": "Saying inna lillah when afflicted"
+      },
+      "arabic_original": "الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+      "translation": {
+        "ml": "പ്രയാസം വന്നപ്പോൾ വിശ്വാസികൾ «ഇന്നാ ലില്ലാഹി വഇന്നാ ഇലൈഹി രാജിഊൻ» എന്നു പറയുന്നതായി ഖുർആൻ രേഖപ്പെടുത്തുന്നു. പ്രത്യേക ദിവസങ്ങളുടെയും ആവർത്തനങ്ങളുടെയും എണ്ണം ഈ ആയത്ത് പറയുന്നില്ല.",
+        "en": "Quran 2:156 describes believers saying they belong to Allah and return to Him when afflicted. No fixed repetition count is given."
+      },
+      "source_reference": "Quran 2:156; تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya156.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_remembrance",
+      "source_scope": {
+        "ml": "ഈ ആയത്തുമായി ബന്ധപ്പെട്ട ഖുർആൻ പാഠമാണ്. നാമത്തിനായി പ്രത്യേകം നിശ്ചയിച്ച വസീഫയല്ല.",
+        "en": "Relevant Quranic text, not a separately numbered practice of a standalone name."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "No repetition count is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "ദുരന്തം സംഭവിക്കുമ്പോൾ; പ്രത്യേക ദിവസക്രമമില്ല.",
+        "en": "When hardship occurs; no fixed number of days."
+      },
+      "conditions": {
+        "ml": "കളമോ തകിടോ പ്രത്യേക ഒരുക്കമോ ആയത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No square, amulet or special preparation is prescribed."
+      }
+    },
+    {
+      "id": "quran-18-39-garden-remembering",
+      "name_ids": [
+        "PDF-HN-135"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "അനുഗ്രഹം കാണുമ്പോൾ മാ ശാഅല്ലാഹ് പറയുന്നതിന്റെ സന്ദർഭം",
+        "en": "Remembering Allah's will in the garden story"
+      },
+      "arabic_original": "وَلَوْلَا إِذْ دَخَلْتَ جَنَّتَكَ قُلْتَ مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ ۚ إِن تَرَنِ أَنَا أَقَلَّ مِنكَ مَالًا وَوَلَدًا",
+      "translation": {
+        "ml": "തന്റെ തോട്ടവും സമ്പത്തും കാണുമ്പോൾ അഹങ്കാരം ഒഴിവാക്കാൻ «മാ ശാഅല്ലാഹ്, ലാ ഖുവ്വത്ത ഇല്ലാ ബില്ലാഹ്» എന്നു പറയേണ്ടതായിരുന്നുവെന്ന് അൽകഹ്ഫ് 18:39-ൽ ഉപദേശിക്കുന്നു. സമ്പത്ത് വർധിക്കുമെന്ന സമയപരിധിയുള്ള വാഗ്ദാനം ഇല്ല.",
+        "en": "In the garden narrative Quran 18:39 rebukes pride and encourages recognizing Allah's will and power. It does not promise wealth growth on a fixed schedule."
+      },
+      "source_reference": "Quran 18:39; تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura18-aya39.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_source_context",
+      "source_scope": {
+        "ml": "ഈ ആയത്തുമായി ബന്ധപ്പെട്ട ഖുർആൻ പാഠമാണ്. നാമത്തിനായി പ്രത്യേകം നിശ്ചയിച്ച വസീഫയല്ല.",
+        "en": "Relevant Quranic text, not a separately numbered practice of a standalone name."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "No repetition count is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "No specified clock time or number of days."
+      },
+      "conditions": {
+        "ml": "കളമോ തകിടോ പ്രത്യേക ഒരുക്കമോ ആയത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No square, amulet or special preparation is prescribed."
+      }
+    },
+    {
+      "id": "quran-71-10-nuh-istighfar",
+      "name_ids": [
+        "PDF-HN-137",
+        "PDF-HN-0154"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "നൂഹ് നബി (അ): ഇസ്തിഗ്ഫാർ ചെയ്യാനുള്ള ആഹ്വാനം",
+        "en": "Nuh's call to seek forgiveness"
+      },
+      "arabic_original": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+      "translation": {
+        "ml": "നൂഹ് നബി തന്റെ ജനങ്ങളോട് രക്ഷിതാവിനോട് പാപമോചനം തേടാൻ പറയുന്നു. പിന്നാലെയുള്ള 71:11–12-ൽ മഴയും സമ്പത്തും സന്താനങ്ങളും പറയുന്നു. ആയത്തിൽ നിശ്ചിത 1000 തവണ ജപിക്കണം എന്ന സംഖ്യയില്ല.",
+        "en": "Nuh tells his people to seek forgiveness; Quran 71:11–12 mention rain and provision. The text sets no 1,000-times name recital."
+      },
+      "source_reference": "Quran 71:10; تفسير ابن كثير",
+      "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "quranic_source_context",
+      "source_scope": {
+        "ml": "ഈ ആയത്തുമായി ബന്ധപ്പെട്ട ഖുർആൻ പാഠമാണ്. നാമത്തിനായി പ്രത്യേകം നിശ്ചയിച്ച വസീഫയല്ല.",
+        "en": "Relevant Quranic text, not a separately numbered practice of a standalone name."
+      },
+      "count": {
+        "ml": "ഈ ആയത്തിൽ ആവർത്തനഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+        "en": "No repetition count is prescribed by this verse."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയമോ ദിവസങ്ങളുടെ എണ്ണമോ നൽകിയിട്ടില്ല.",
+        "en": "No specified clock time or number of days."
+      },
+      "conditions": {
+        "ml": "കളമോ തകിടോ പ്രത്യേക ഒരുക്കമോ ആയത്തിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "No square, amulet or special preparation is prescribed."
       }
     }
   ]
