@@ -1,0 +1,399 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "അർ-റഹ്മാൻ കാർഡിന്റെ പുതിയ വിപുലമായ ഖുർആൻ പഠനപാളി. മറ്റ് കാർഡുകൾ പൂർണമായെന്ന് അവകാശപ്പെടുന്നില്ല.",
+    "en": "New in-depth Quranic study layer for al-Rahman, without claiming other cards are complete."
+  },
+  "profiles": {
+    "PDF-HN-001": {
+      "name_id": "PDF-HN-001",
+      "evidence": [
+        {
+          "id": "encyclopedia-rahman-19-18",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:18",
+            "en": "Al-Rahman: complete Quran passage — 19:18"
+          },
+          "arabic_original": "قَالَتْ إِنِّي أَعُوذُ بِالرَّحْمَٰنِ مِنكَ إِن كُنتَ تَقِيًّا",
+          "verse_meaning": {
+            "ml": "മർയം പറഞ്ഞു: നീ ഭക്തനാണെങ്കിൽ നിന്നിൽനിന്ന് ഞാൻ പരമകാരുണികനിൽ അഭയം തേടുന്നു.",
+            "en": "Maryam said: I seek refuge with the All-Merciful against you, if you are God-fearing."
+          },
+          "translation": {
+            "ml": "മർയം സന്ദർശകനെ മലക്കാണെന്ന് തിരിച്ചറിയുന്നതിനു മുമ്പുള്ള ഭയവും സംരക്ഷണപ്രാർത്ഥനയും.",
+            "en": "Maryam seeks refuge before recognizing the visitor as an angel."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya18.html",
+          "source_reference": "Quran 19:18 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-26",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:26",
+            "en": "Al-Rahman: complete Quran passage — 19:26"
+          },
+          "arabic_original": "فَكُلِي وَاشْرَبِي وَقَرِّي عَيْنًا ۖ فَإِمَّا تَرَيِنَّ مِنَ الْبَشَرِ أَحَدًا فَقُولِي إِنِّي نَذَرْتُ لِلرَّحْمَٰنِ صَوْمًا فَلَنْ أُكَلِّمَ الْيَوْمَ إِنسِيًّا",
+          "verse_meaning": {
+            "ml": "തിന്നുകയും കുടിക്കുകയും ആശ്വാസം കൈവരിക്കുകയും ചെയ്യുക; ആരെയെങ്കിലും കണ്ടാൽ പരമകാരുണികനുവേണ്ടി മൗനവ്രതം നേർന്നതായി അറിയിക്കുക, ഇന്ന് ആരോടും സംസാരിക്കരുത്.",
+            "en": "Eat, drink and take comfort; if someone appears, indicate that you have vowed a fast of silence to the All-Merciful and will not speak today."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇവിടെ «صَوْمًا» മൗനമെന്നായി വിശദീകരിക്കുന്നു; ഇത് മർയമിന്റെ ചരിത്രസന്ദർഭമാണ്, പൊതുവായ മൗനവ്രതനിർദേശം അല്ല.",
+            "en": "Ibn Kathir reports interpreting sawman as silence in Mary's own historical setting, not a general vow prescription."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya26.html",
+          "source_reference": "Quran 19:26 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-44",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:44",
+            "en": "Al-Rahman: complete Quran passage — 19:44"
+          },
+          "arabic_original": "يَا أَبَتِ لَا تَعْبُدِ الشَّيْطَانَ ۖ إِنَّ الشَّيْطَانَ كَانَ لِلرَّحْمَٰنِ عَصِيًّا",
+          "verse_meaning": {
+            "ml": "പിതാവേ, പിശാചിനെ ആരാധിക്കരുത്; പിശാച് പരമകാരുണികനോട് അനുസരണക്കേട് കാണിക്കുന്നവനായിരുന്നു.",
+            "en": "Father, do not worship Satan, for he was rebellious against the All-Merciful."
+          },
+          "translation": {
+            "ml": "പിതാവിനോടു വിഗ്രഹാരാധന ഒഴിവാക്കാൻ ഇബ്രാഹീം നബി നൽകുന്ന ഉപദേശം.",
+            "en": "Ibrahim's compassionate counsel to his father to abandon idolatry."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya44.html",
+          "source_reference": "Quran 19:44 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-45",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:45",
+            "en": "Al-Rahman: complete Quran passage — 19:45"
+          },
+          "arabic_original": "يَا أَبَتِ إِنِّي أَخَافُ أَن يَمَسَّكَ عَذَابٌ مِّنَ الرَّحْمَٰنِ فَتَكُونَ لِلشَّيْطَانِ وَلِيًّا",
+          "verse_meaning": {
+            "ml": "പിതാവേ, പരമകാരുണികനിൽനിന്നുള്ള ശിക്ഷ നിന്നെ ബാധിച്ച് നീ പിശാചിന്റെ കൂട്ടാളിയാകുമെന്നു ഞാൻ ഭയപ്പെടുന്നു.",
+            "en": "Father, I fear that punishment from the All-Merciful may reach you, leaving you an ally of Satan."
+          },
+          "translation": {
+            "ml": "കരുണാനാമവും ഉത്തരവാദിത്തവും ഒന്നിക്കുന്ന ഇബ്രാഹീമിന്റെ മുന്നറിയിപ്പ്.",
+            "en": "Ibrahim's warning combines the Name of Mercy with moral accountability."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya45.html",
+          "source_reference": "Quran 19:45 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-58",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:58",
+            "en": "Al-Rahman: complete Quran passage — 19:58"
+          },
+          "arabic_original": "أُولَٰئِكَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِم مِّنَ النَّبِيِّينَ مِن ذُرِّيَّةِ آدَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ وَمِن ذُرِّيَّةِ إِبْرَاهِيمَ وَإِسْرَائِيلَ وَمِمَّنْ هَدَيْنَا وَاجْتَبَيْنَا ۚ إِذَا تُتْلَىٰ عَلَيْهِمْ آيَاتُ الرَّحْمَٰنِ خَرُّوا سُجَّدًا وَبُكِيًّا ۩",
+          "verse_meaning": {
+            "ml": "ആദമിന്റെയും നൂഹിനൊപ്പം വഹിക്കപ്പെട്ടവരുടെയും ഇബ്രാഹീമിന്റെയും ഇസ്റാഈലിന്റെയും സന്തതികളിൽനിന്നുള്ള അനുഗ്രഹീതരായ, വഴികാട്ടപ്പെട്ട പ്രവാചകന്മാരെക്കുറിച്ചാണ് ഈ വചനം. പരമകാരുണികന്റെ വചനങ്ങൾ കേൾക്കുമ്പോൾ അവർ സജ്ദ ചെയ്തു കരഞ്ഞുവീഴുമായിരുന്നു.",
+            "en": "It describes divinely favored, guided and chosen prophets from the lineages of Adam, the people carried with Noah, Ibrahim and Israel. Upon hearing the All-Merciful's verses, they fell prostrate weeping."
+          },
+          "translation": {
+            "ml": "ഈ ആയത്തിൽ സജ്ദ അടയാളമുണ്ട്; സജ്ദതു തിലാവയുടെ ഫിഖ്ഹ് വിശദാംശങ്ങൾ വേറെ പഠിക്കേണ്ട വിഷയമാണ്.",
+            "en": "A Quranic prostration marker occurs; detailed prostration jurisprudence belongs to separate fiqh."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya58.html",
+          "source_reference": "Quran 19:58 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-61",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:61",
+            "en": "Al-Rahman: complete Quran passage — 19:61"
+          },
+          "arabic_original": "جَنَّاتِ عَدْنٍ الَّتِي وَعَدَ الرَّحْمَٰنُ عِبَادَهُ بِالْغَيْبِ ۚ إِنَّهُ كَانَ وَعْدُهُ مَأْتِيًّا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ ദാസന്മാർക്ക് അദൃശ്യത്തിൽ വാഗ്ദാനം ചെയ്ത സ്ഥിരവാസത്തിന്റെ സ്വർഗത്തോട്ടങ്ങളാണവ; അവന്റെ വാഗ്ദാനം വരുകതന്നെ ചെയ്യും.",
+            "en": "Gardens of everlasting residence that the All-Merciful promised His servants unseen; His promise will come."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അദൃശ്യത്തിലെ വാഗ്ദാനത്തോടുള്ള വിശ്വാസവും അതിന്റെ ഉറപ്പും വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir emphasizes faith in the unseen and certainty of the promise."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya61.html",
+          "source_reference": "Quran 19:61 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-75",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:75",
+            "en": "Al-Rahman: complete Quran passage — 19:75"
+          },
+          "arabic_original": "قُلْ مَن كَانَ فِي الضَّلَالَةِ فَلْيَمْدُدْ لَهُ الرَّحْمَٰنُ مَدًّا ۚ حَتَّىٰ إِذَا رَأَوْا مَا يُوعَدُونَ إِمَّا الْعَذَابَ وَإِمَّا السَّاعَةَ فَسَيَعْلَمُونَ مَنْ هُوَ شَرٌّ مَّكَانًا وَأَضْعَفُ جُندًا",
+          "verse_meaning": {
+            "ml": "വഴിതെറ്റലിൽ തുടരുന്നവന് പരമകാരുണികൻ സമയം നീട്ടിക്കൊടുക്കട്ടെ; ശിക്ഷയോ അന്ത്യമണിക്കൂറോ കാണുമ്പോൾ ആരുടെ നിലയും കൂട്ടവും ദുർബലമാണെന്നു മനസ്സിലാകും എന്നു പറയുക.",
+            "en": "Say that the All-Merciful may extend the respite of one persisting in error; when the threatened punishment or Hour comes they will know who is worse placed and weaker in forces."
+          },
+          "translation": {
+            "ml": "ഇത് വഴിതെറ്റലിലുള്ളവർക്ക് നൽകപ്പെടുന്ന അവസരത്തെയും ന്യായവിധിയെയും കുറിച്ചുള്ള സന്ദർഭമാണ്; ജപസംഖ്യ അല്ല.",
+            "en": "It describes extended respite and judgment, not an al-Rahman recitation count."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya75.html",
+          "source_reference": "Quran 19:75 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-85",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:85",
+            "en": "Al-Rahman: complete Quran passage — 19:85"
+          },
+          "arabic_original": "يَوْمَ نَحْشُرُ الْمُتَّقِينَ إِلَى الرَّحْمَٰنِ وَفْدًا",
+          "verse_meaning": {
+            "ml": "ഭക്തരെ പരമകാരുണികന്റെ സന്നിധിയിലേക്ക് ആദരണീയ സംഘമായി കൂട്ടിച്ചേർക്കുന്ന ദിവസം.",
+            "en": "The day the God-fearing are gathered before the All-Merciful as an honored delegation."
+          },
+          "translation": {
+            "ml": "«وَفْدًا» ആദരണീയ സംഘത്തിന്റെ വരവിനെ സൂചിപ്പിക്കുന്നു. വിശദമായ അനുബന്ധ തഫ്സീർ റിപ്പോർട്ടുകളുടെ വിശ്വാസ്യത ഒരുപോലെയല്ല.",
+            "en": "Wafdan is an honored delegation; accompanying elaborate reports are not all equally authenticated."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya85.html",
+          "source_reference": "Quran 19:85 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-87",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:87",
+            "en": "Al-Rahman: complete Quran passage — 19:87"
+          },
+          "arabic_original": "لَّا يَمْلِكُونَ الشَّفَاعَةَ إِلَّا مَنِ اتَّخَذَ عِندَ الرَّحْمَٰنِ عَهْدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികനോടുള്ള ഉടമ്പടിയുള്ളവനല്ലാതെ ആരും ശുപാർശയുടെ അധികാരം സ്വന്തമാക്കുന്നില്ല.",
+            "en": "None possesses intercession except one who has a covenant with the All-Merciful."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഈ ഉടമ്പടിയെ തൗഹീദിന്റെ സാക്ഷ്യത്തോടും കടമകളോടും ബന്ധിപ്പിക്കുന്നു; തകിടിന്റെ സ്വതന്ത്ര ഫലവാഗ്ദാനമല്ല.",
+            "en": "Ibn Kathir links the covenant to testimony of divine oneness and its duties, not a talismanic guarantee."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya87.html",
+          "source_reference": "Quran 19:87 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-88",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:88",
+            "en": "Al-Rahman: complete Quran passage — 19:88"
+          },
+          "arabic_original": "وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ സന്താനത്തെ സ്വീകരിച്ചിട്ടുണ്ടെന്ന് അവർ ആരോപിച്ചു.",
+            "en": "Some alleged that the All-Merciful had taken a child."
+          },
+          "translation": {
+            "ml": "ഇത് ഖുർആൻ നിരാകരിക്കുന്ന ഒരു ആരോപണമാണ്; ഇസ്‌ലാമിക അംഗീകാരമല്ല. 19:92 ശ്രദ്ധിക്കുക.",
+            "en": "This quotes a claim being refuted, not affirmed; see the explicit denial in 19:92."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya88.html",
+          "source_reference": "Quran 19:88 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-92",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:92",
+            "en": "Al-Rahman: complete Quran passage — 19:92"
+          },
+          "arabic_original": "وَمَا يَنبَغِي لِلرَّحْمَٰنِ أَن يَتَّخِذَ وَلَدًا",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ സന്താനത്തെ സ്വീകരിക്കുക യോജിച്ചതല്ല.",
+            "en": "It is not befitting for the All-Merciful to take a child."
+          },
+          "translation": {
+            "ml": "19:88-ലെ ആരോപണത്തിന്റെ വ്യക്തമായ നിഷേധം.",
+            "en": "This directly rejects the preceding alleged divine offspring."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya92.html",
+          "source_reference": "Quran 19:92 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-93",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:93",
+            "en": "Al-Rahman: complete Quran passage — 19:93"
+          },
+          "arabic_original": "إِن كُلُّ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ إِلَّا آتِي الرَّحْمَٰنِ عَبْدًا",
+          "verse_meaning": {
+            "ml": "ആകാശങ്ങളിലും ഭൂമിയിലുമുള്ള എല്ലാവരും പരമകാരുണികന്റെ മുമ്പിൽ ദാസന്മാരായി വരും.",
+            "en": "Every being in the heavens and earth will come to the All-Merciful as a servant."
+          },
+          "translation": {
+            "ml": "സൃഷ്ടികളുടെയെല്ലാം ആശ്രിതാവസ്ഥയാണ് ഊന്നിപ്പറയുന്നത്.",
+            "en": "The verse stresses complete created dependence."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya93.html",
+          "source_reference": "Quran 19:93 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-19-96",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 19:96",
+            "en": "Al-Rahman: complete Quran passage — 19:96"
+          },
+          "arabic_original": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا",
+          "verse_meaning": {
+            "ml": "വിശ്വസിക്കുകയും സൽപ്രവൃത്തികൾ ചെയ്യുകയും ചെയ്യുന്നവർക്കു പരമകാരുണികൻ സ്‌നേഹം ഏർപ്പെടുത്തും.",
+            "en": "The All-Merciful will establish affection for those who believe and do righteous works."
+          },
+          "translation": {
+            "ml": "വിശ്വാസവും സൽപ്രവൃത്തിയും വ്യക്തമാക്കിയ നിബന്ധനകളാണ്; മറ്റൊരാളുടെ മനസ്സ് നിയന്ത്രിക്കുന്ന വസീഫയല്ല.",
+            "en": "The promise explicitly involves faith and righteous conduct, not control of another person's emotions."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya96.html",
+          "source_reference": "Quran 19:96 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-5",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:5",
+            "en": "Al-Rahman: complete Quran passage — 20:5"
+          },
+          "arabic_original": "الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ",
+          "verse_meaning": {
+            "ml": "പരമകാരുണികൻ അർശിന്മേൽ ഇസ്തിവാ ചെയ്തിരിക്കുന്നു.",
+            "en": "The All-Merciful is described as having established Himself over the Throne."
+          },
+          "translation": {
+            "ml": "ഇസ്തിവായെക്കുറിച്ചുള്ള പണ്ഡിതരീതികൾ വ്യത്യാസപ്പെടുന്നു; ദൈവത്തെ സൃഷ്ടിയോട് ഉപമിക്കരുത്.",
+            "en": "Exegetical approaches vary; avoid likening Allah to created beings."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya5.html",
+          "source_reference": "Quran 20:5 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-90",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:90",
+            "en": "Al-Rahman: complete Quran passage — 20:90"
+          },
+          "arabic_original": "وَلَقَدْ قَالَ لَهُمْ هَارُونُ مِن قَبْلُ يَا قَوْمِ إِنَّمَا فُتِنتُم بِهِ ۖ وَإِنَّ رَبَّكُمُ الرَّحْمَٰنُ فَاتَّبِعُونِي وَأَطِيعُوا أَمْرِي",
+          "verse_meaning": {
+            "ml": "ഹാറൂൻ നേരത്തെ പറഞ്ഞു: എന്റെ ജനങ്ങളേ, ഈ കാളക്കുട്ടി നിങ്ങളെ പരീക്ഷിച്ചിരിക്കുന്നു; നിങ്ങളുടെ രക്ഷിതാവ് പരമകാരുണികനാണ്; എന്നെ പിന്തുടരുക.",
+            "en": "Harun said: my people, the calf has tested you; your Lord is the All-Merciful, so follow and obey me."
+          },
+          "translation": {
+            "ml": "കാളക്കുട്ടി ആരാധനയിൽനിന്നു തൗഹീദിലേക്കുള്ള ഹാറൂന്റെ ആഹ്വാനം.",
+            "en": "Harun calls the people away from calf worship to monotheism."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya90.html",
+          "source_reference": "Quran 20:90 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        },
+        {
+          "id": "encyclopedia-rahman-20-108",
+          "title": {
+            "ml": "അർ-റഹ്മാൻ: പൂർണ ഖുർആൻ ആയത്ത് — 20:108",
+            "en": "Al-Rahman: complete Quran passage — 20:108"
+          },
+          "arabic_original": "يَوْمَئِذٍ يَتَّبِعُونَ الدَّاعِيَ لَا عِوَجَ لَهُ ۖ وَخَشَعَتِ الْأَصْوَاتُ لِلرَّحْمَٰنِ فَلَا تَسْمَعُ إِلَّا هَمْسًا",
+          "verse_meaning": {
+            "ml": "അന്നു വിളിക്കുന്നവനെ ജനങ്ങൾ പിന്തുടരും; പരമകാരുണികന്റെ മുമ്പിൽ ശബ്ദങ്ങൾ ഒതുങ്ങി പതിഞ്ഞ ഒച്ച മാത്രമാകും.",
+            "en": "People follow the caller on that day; voices are subdued before the All-Merciful so only a murmur remains."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «هَمْسًا» കാൽപ്പാടിന്റെയോ പതിഞ്ഞ സംസാരത്തിന്റെയോ ശബ്ദമായി വിശദീകരിക്കുന്ന അഭിപ്രായങ്ങൾ നൽകുന്നു.",
+            "en": "Ibn Kathir reports the interpretations of hamsan as quiet footsteps or hushed speech."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya108.html",
+          "source_reference": "Quran 20:108 · Ibn Kathir",
+          "source_scope": {
+            "ml": "നാമം നേരിട്ടുള്ള ഖുർആൻ പ്രയോഗമാണ്; നാമത്തിനൊരു പ്രത്യേക ജപസംഖ്യ, ദിവസം, തകിട്, ഫലവാഗ്ദാനം ഈ വചനത്തിൽ നിന്ന് ഊഹിക്കുന്നില്ല.",
+            "en": "A contextual direct Quranic occurrence of al-Rahman; no special numerical count, day, amulet or guaranteed outcome is inferred."
+          },
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "direct_quran_name_context"
+        }
+      ],
+      "scholarly": []
+    }
+  }
+}
