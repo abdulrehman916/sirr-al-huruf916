@@ -1636,7 +1636,408 @@
           }
         }
       ],
-      "scholarly": [],
+      "scholarly": [
+        {
+          "id": "encyclopedia-rahim-tafsir-1-1-3-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ഭയഭക്തിയും പ്രത്യാശയും തമ്മിലുള്ള സമതുലനം",
+            "en": "Al-Qurtubi on awe and hope"
+          },
+          "arabic_original": "ليجمع في صفاته بين الرهبة منه ، والرغبة إليه",
+          "translation": {
+            "ml": "«റബ്ബുൽ ആലമീൻ» എന്ന പരമാധികാരവിശേഷണത്തിന് പിന്നാലെ അർ-റഹ്മാൻ, അർ-റഹീം ചേർന്നതിനെ ഖുർതുബി ഭയവും പ്രത്യാശയും തുലനപ്പെടുത്തുന്ന രീതിയായി വിശദീകരിക്കുന്നു. ഇതിനെ പേരിനൊരു പ്രത്യേക 1000 എണ്ണമുള്ള വസീഫയായി മാറ്റുന്നില്ല.",
+            "en": "Al-Qurtubi explains how the two mercy names after ‘Lord of the worlds’ balance awe with hope, rather than supplying a fixed-count ritual."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura1-aya3.html",
+          "source_reference": "تفسير القرطبي · Quran 1:3",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-2-1-3-tabary",
+          "title": {
+            "ml": "ത്വബരി: ഫാതിഹയിലെ ബിസ്മില്ലാഹിന്റെ ആയത്ത് പദവി സംബന്ധിച്ച വ്യത്യാസം",
+            "en": "Al-Tabari on whether the basmalah counts as a verse"
+          },
+          "arabic_original": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ من فاتحة الكتاب - آيةٌ",
+          "translation": {
+            "ml": "ത്വബരി തന്റെ അഭിപ്രായത്തിൽ ബിസ്മില്ലാഹ് ഫാതിഹയുടെ പ്രത്യേക ആയത്തല്ലെന്ന് വാദിക്കുന്നു; തുടർന്ന് പാഠം എങ്ങനെയാണ് ആവർത്തനമല്ലാതെ വരുന്നതെന്ന് വ്യാകരണവും ക്രമവും ഉപയോഗിച്ച് വിശദീകരിക്കുന്നു. മറുവശത്തെ പണ്ഡിതാഭിപ്രായങ്ങൾ നിഷേധിക്കപ്പെടാതിരിക്കണം.",
+            "en": "Al-Tabari argues that the basmalah is not a separate verse of al-Fatihah, using the sequencing of the paired Names. Other scholars disagree, and the editor's note on the source expressly does so."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura1-aya3.html",
+          "source_reference": "تفسير الطبري · Quran 1:3",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-3-2-37-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ആദമിന്റെ തൗബ സംബന്ധിച്ച അപൂർണ്ണ നിവേദകശൃംഖല",
+            "en": "Ibn Kathir: an interrupted Adam narrative"
+          },
+          "arabic_original": "وهذا حديث غريب من هذا الوجه وفيه انقطاع",
+          "translation": {
+            "ml": "ആദം സ്വീകരിച്ച വചനങ്ങളെപ്പറ്റി വിവിധ വ്യാഖ്യാനങ്ങൾ വന്നശേഷം ഒരു റിപ്പോർട്ടിനെ ഇബ്നു കസീർ വിചിത്രവും സനദ് മുറിഞ്ഞതുമാണെന്ന് വിശേഷിപ്പിക്കുന്നു. ആ കഥയെ സ്വഹീഹ് നബിവചനമായി കാണിക്കരുത്.",
+            "en": "Ibn Kathir records several accounts of Adam's received words and calls a particular Prophetic report gharib and interrupted; the report must not be promoted to Sahih status."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya37.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:37",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-4-2-54-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: കാളക്കുട്ടി ആരാധനയുടെ പ്രത്യേക ചരിത്രശിക്ഷ",
+            "en": "Ibn Kathir: the historical repentance after calf-worship"
+          },
+          "arabic_original": "هذه صفة توبته تعالى على بني إسرائيل من عبادة العجل",
+          "translation": {
+            "ml": "ബനൂഇസ്റാഈലിന്റെ കാളക്കുട്ടി ആരാധനയ്ക്കു ശേഷമുള്ള പ്രത്യേക തൗബാ അനുഭവമാണ് ഇബ്നു കസീർ വിവരിക്കുന്നത്. അതിലെ കഠിന നിർദേശം സമകാലിക മുസ്‌ലിംകൾക്ക് ആത്മഹത്യയോ മറ്റുള്ളവരെ കൊല്ലലോ ആചരിക്കാനുള്ള നിർദേശമല്ല.",
+            "en": "Ibn Kathir describes the repentance of the Children of Israel after calf-worship. This severe historical punishment cannot be made into a present-day direction for suicide or murder."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya54.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:54",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-5-2-143-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഉമ്മതു വസത് എന്നതിന്റെ അർഥം",
+            "en": "Ibn Kathir: just and exemplary community"
+          },
+          "arabic_original": "الوسط هاهنا الخيار والأجود",
+          "translation": {
+            "ml": "സമൂഹത്തെ സാക്ഷികളാക്കിയതും ഖിബ്‌ല മാറിയതും വിശ്വാസപരീക്ഷണമായതും ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. «വസത്» മികച്ചതും നീതിയുള്ളതുമെന്നർഥത്തിൽ വരുന്നു; ഇമാൻ പാഴായില്ല എന്നത് മുൻപത്തെ നമസ്കാരങ്ങളോടും ബന്ധപ്പെട്ടിരിക്കുന്നു.",
+            "en": "Ibn Kathir glosses wasat as just and excellent, connects communal witness with the qiblah change, and preserves earlier prayers as accepted."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya143.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:143",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-6-2-143-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: റഅ്ഫത്ത്, റഹ്മത്ത് പദവ്യത്യാസം",
+            "en": "Al-Qurtubi: compassion and mercy as related terms"
+          },
+          "arabic_original": "الرأفة أشد من الرحمة",
+          "translation": {
+            "ml": "«إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَّحِيمٌ» എന്ന സമാപനത്തിൽ ഖുർതുബി «റഅ്ഫത്ത്» ചില വ്യാഖ്യാനങ്ങളിൽ സാധാരണ കാരുണ്യത്തേക്കാൾ തീവ്രമായ സൗമ്യതയെന്ന് പറയുന്നു. പദരൂപത്തിലും ഖിറാഅത്തിലും വ്യത്യാസങ്ങൾ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Al-Qurtubi says ra'fah may be more intense than rahmah, discusses closely related meanings and documents pronunciation or reading variants."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura2-aya143.html",
+          "source_reference": "تفسير القرطبي · Quran 2:143",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-7-2-143-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: മുമ്പത്തെ ഖിബ്‌ലയിലേക്കുള്ള നമസ്കാരം പാഴായില്ല",
+            "en": "Al-Qurtubi: prayer toward the first qiblah was not lost"
+          },
+          "arabic_original": "وما كان الله ليضيع إيمانكم",
+          "translation": {
+            "ml": "മുൻ ഖിബ്‌ലയിലേക്കു നമസ്കരിച്ചിരിക്കെ മരിച്ചവരുടെ ആരാധനയെപ്പറ്റിയുള്ള ആശങ്കയ്ക്ക് മറുപടിയായിട്ടാണ് «وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ» എന്ന ഭാഗം ഖുർതുബി വിശദീകരിക്കുന്നത്. 'ഇമാൻ' ഇവിടെ 'നമസ്കാരം' ഉൾക്കൊള്ളുന്നു.",
+            "en": "Al-Qurtubi reports agreement that the reassurance concerns believers who died having prayed toward Jerusalem. In this setting the term iman encompasses prayer."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura2-aya143.html",
+          "source_reference": "تفسير القرطبي · Quran 2:143",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-8-2-160-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പശ്ചാത്താപം, പരിഷ്കാരം, സത്യം പറയൽ",
+            "en": "Ibn Kathir: three parts of genuine repentance"
+          },
+          "arabic_original": "رجعوا عما كانوا فيه وأصلحوا أعمالهم وأحوالهم",
+          "translation": {
+            "ml": "മറച്ചുവെച്ച സത്യം വെളിപ്പെടുത്തുന്നവർ തൗബ സ്വീകരിക്കുന്നവരിൽ ഉൾപ്പെടാൻ പൂർണ പരിഷ്കാരവും വസ്തുതകൾ വെളിപ്പെടുത്തലും ആവശ്യമാണ്. വെറും നാമം ആവർത്തിക്കുന്നതല്ല ഇവിടെ പറയുന്നത്.",
+            "en": "Ibn Kathir explains repentance as turning back, reforming conduct and disclosing what was concealed, rather than merely repeating the Name."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya160.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:160",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-9-2-163-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തൗഹീദിന്റെ കൂട്ടത്തിൽ രണ്ട് കാരുണ്യനാമങ്ങൾ",
+            "en": "Ibn Kathir: two Names following the unity of God"
+          },
+          "arabic_original": "يخبر تعالى عن تفرده بالإلهية",
+          "translation": {
+            "ml": "അല്ലാഹുവിന് പങ്കാളിയില്ലെന്ന പ്രഖ്യാപനത്തിന്റെ പിന്നാലെ അർ-റഹ്മാനും അർ-റഹീമും വരുന്നതിനെ ഇബ്നു കസീർ എടുത്തുപറയുന്നു. രണ്ടു നാമങ്ങളുടെ കൃത്യമായ ഖുർആൻ വാക്കുകളാണിത്, മറ്റൊരാളിന്റെ രഹസ്യഎണ്ണത്തിന്റെ തെളിവല്ല.",
+            "en": "Ibn Kathir reads the twin Names immediately after the proclamation of oneness and uniqueness; they do not establish an invented private count."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya163.html",
+          "source_reference": "تفسير ابن كثير · Quran 2:163",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-10-3-31-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രവാചകാനുഗമനത്തിലൂടെ ദൈവസ്നേഹം",
+            "en": "Ibn Kathir: following the Messenger as the test of love"
+          },
+          "arabic_original": "هذه الآية الكريمة حاكمة على كل من ادعى محبة الله",
+          "translation": {
+            "ml": "അല്ലാഹുവിനെ സ്നേഹിക്കുന്നുവെന്ന വാദം പ്രവാചകന്റെ വഴിയിലുള്ള പ്രവൃത്തിയുമായി ബന്ധിപ്പിക്കുന്നതാണെന്നു ഇബ്നു കസീർ പറയുന്നു. ചില അനുബന്ധ നിവേദനങ്ങളെ സ്വതന്ത്ര സനദ് പരിശോധനയില്ലാതെ സഹീഹായി കണക്കാക്കരുത്.",
+            "en": "Ibn Kathir says the verse is a test for professed love of God, calling for following the Messenger; not every attached report is authentic."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura3-aya31.html",
+          "source_reference": "تفسير ابن كثير · Quran 3:31",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-11-4-29-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ജീവസംരക്ഷണത്തിലൂടെ പ്രത്യക്ഷപ്പെടുന്ന കരുണ",
+            "en": "Ibn Kathir: mercy in safeguarding life"
+          },
+          "arabic_original": "إن الله كان بكم رحيما",
+          "translation": {
+            "ml": "അന്യായമായ സ്വത്തുശേഖരണവും ആത്മഹത്യയും വിലക്കിയതിന്റെ പിന്നാലെ «إِنَّ اللَّهَ كَانَ بِكُمْ رَحِيمًا» വരുന്നു. ഇബ്നു കസീർ അംറ് ഇബ്‌നുൽ ആസ്വിന്റെ തണുപ്പുള്ള രാത്രി സംബന്ധിച്ച സംഭവവും പരാമർശിക്കുന്നു; ഇതിന്റെ നിയമസന്ദർഭം പ്രത്യേകം പരിശോധിക്കണം.",
+            "en": "The mercy epithet follows prohibitions on unjust financial gain and self-destruction. Ibn Kathir also cites Amr ibn al-As and the danger of bathing in extreme cold; the legal details require independent review."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya29.html",
+          "source_reference": "تفسير ابن كثير · Quran 4:29",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-12-4-64-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തഫ്സീറിൽ ഉദ്ധരിച്ച ഉത്ബിയുടെ കഥയും ഹദീസും തമ്മിലുള്ള വ്യത്യാസം",
+            "en": "Ibn Kathir: Utbi anecdote is not a canonical hadith"
+          },
+          "arabic_original": "الحكاية المشهورة عن العتبي",
+          "translation": {
+            "ml": "തഫ്സീറിൽ പ്രവാചകന്റെ അടുക്കൽ വന്ന് മാപ്പുതേടുന്ന സന്ദർഭത്തിനു ശേഷം ഉത്ബി പറഞ്ഞതായി രേഖപ്പെടുത്തുന്ന കഥ വരുന്നു. സംഭവം വിവരിച്ചതുകൊണ്ട് അത് സഹീഹ് മർഫൂഅ് ഹദീസാണെന്നു നിർണയിക്കപ്പെടുന്നില്ല; മരണാനന്തര സന്ദർശനത്തിന്റെ ഫിഖ്ഹ് ഭിന്നാഭിപ്രായങ്ങളും വേറെയായി പഠിക്കേണ്ടതാണ്.",
+            "en": "Ibn Kathir includes the famous Utbi story after discussing repentance in the Prophet's presence. Narrating an anecdote does not authenticate it as a Prophetic hadith; later jurisprudential opinions differ."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya64.html",
+          "source_reference": "تفسير ابن كثير · Quran 4:64",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-13-4-110-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഇസ്തിഗ്ഫാർ റിപ്പോർട്ടുകളുടെ ദുർബല ശൃംഖലകൾ",
+            "en": "Ibn Kathir: distinguish weak reports about forgiveness"
+          },
+          "arabic_original": "وهذا إسناد لا يصح",
+          "translation": {
+            "ml": "ഇസ്തിഗ്ഫാർ തേടുന്നവരെ അല്ലാഹു പൊറുക്കുമെന്ന ഖുർആൻ വചനം വ്യക്തമാണ്. എന്നാൽ അതിനോട് ബന്ധപ്പെട്ട് വരുന്ന ചില കഥകളെ ഇബ്നു കസീർ ദുർബലസനദ് എന്നായി വിലയിരുത്തുന്നു; കൃത്യമായ ഹദീസ് ഗ്രേഡ് പാഠവുമായി കലർത്തരുത്.",
+            "en": "The Quranic promise of forgiveness remains clear, but Ibn Kathir flags weaknesses in some appended chains. The grade of each reported extra ritual must be separate from the verse."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya110.html",
+          "source_reference": "تفسير ابن كثير · Quran 4:110",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-14-5-39-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തൗബയോടൊപ്പം നഷ്ടപരിഹാരവും",
+            "en": "Ibn Kathir: repentance and restoring property"
+          },
+          "arabic_original": "فأما أموال الناس فلا بد من ردها إليهم أو بدلها عند الجمهور",
+          "translation": {
+            "ml": "മോഷണത്തിൽ നിന്നുള്ള തൗബ അല്ലാഹുവിനോടുള്ള ബന്ധം ശരിയാക്കുന്നു; എന്നാൽ മറ്റൊരാളുടെ നഷ്ടപ്പെട്ട സ്വത്ത് തിരികെ കൊടുക്കുകയോ പരിഹാരം നൽകുകയോ ചെയ്യേണ്ടതുണ്ടെന്നാണ് ഭൂരിപക്ഷാഭിപ്രായമെന്ന് ഇബ്നു കസീർ പറയുന്നു.",
+            "en": "Repentance concerns one's relationship to Allah; Ibn Kathir notes the majority's requirement to return or compensate for another person's property."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya39.html",
+          "source_reference": "تفسير ابن كثير · Quran 5:39",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-15-6-54-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സൃഷ്ടികളോട് കരുണ നിശ്ചയിച്ച അല്ലാഹു",
+            "en": "Ibn Kathir: divine mercy and the duty to reform"
+          },
+          "arabic_original": "كتب ربكم على نفسه الرحمة",
+          "translation": {
+            "ml": "വിശ്വാസികളെ ആദരിക്കാനായി സലാം പറയുന്നതിനോടൊപ്പം 'നിങ്ങളുടെ രക്ഷിതാവ് തന്റെ മേൽ കാരുണ്യം രേഖപ്പെടുത്തി' എന്ന വചനമുണ്ട്. ഇബ്നു കസീർ അജ്ഞതയിൽ ചെയ്ത തെറ്റിന് ശേഷം തൗബയും ജീവിതപരിഷ്കാരവും എടുത്തുപറയുന്നു.",
+            "en": "Allah's instruction to welcome believers is followed by His mercy prescribed for Himself; Ibn Kathir stresses turning away from wrongdoing and future reform."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya54.html",
+          "source_reference": "تفسير ابن كثير · Quran 6:54",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-16-9-104-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: തൗബയും സ്വദഖയും ചേർന്ന സമീപനം",
+            "en": "Ibn Kathir: both repentance and charity are accepted"
+          },
+          "arabic_original": "هذا تهييج إلى التوبة والصدقة",
+          "translation": {
+            "ml": "പശ്ചാത്തപിക്കുകയും നിയമാനുസൃത വരുമാനത്തിൽനിന്നു ദാനം നൽകുകയും ചെയ്യുന്നവരെക്കുറിച്ചുള്ള സന്ദർഭമാണിത്. ധനം നൽകാതെ പേരിന്റെ ആവർത്തനം മാത്രം ചെയ്താൽ ധനം ലഭിക്കുമെന്ന് ഈ ഭാഗം പറയുന്നില്ല.",
+            "en": "Ibn Kathir links the verse to repentance and giving charity from lawful earnings; he does not present it as a guaranteed money-attraction formula."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura9-aya104.html",
+          "source_reference": "تفسير ابن كثير · Quran 9:104",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-17-12-98-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വെള്ളിയാഴ്ചരാത്രിയിലെ മർഫൂഅ് റിപ്പോർട്ടിന് സംശയം",
+            "en": "Ibn Kathir: Friday-night attribution is doubtful"
+          },
+          "arabic_original": "وهذا غريب من هذا الوجه ، وفي رفعه نظر",
+          "translation": {
+            "ml": "യഅ്ഖൂബ് നബി മക്കൾക്കുവേണ്ടി പ്രാർത്ഥന സഹറിലേക്കു മാറ്റിവെച്ചുവെന്ന അഭിപ്രായങ്ങൾ ഉണ്ട്. എന്നാൽ വെള്ളിയാഴ്ചരാത്രി എന്നു നബി ﷺ വരെ ഉയർത്തി പറയുന്ന റിപ്പോർട്ട് അദ്ഭുതകരമാണെന്നും അതിന്റെ മർഫൂഅ് രൂപത്തിൽ സംശയമുണ്ടെന്നും ഇബ്നു കസീർ പറയുന്നു.",
+            "en": "The early opinion postponing Ya'qub's prayer to pre-dawn is distinct from a claimed Friday-night Prophetic attribution, which Ibn Kathir calls unusual and questions."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura12-aya98.html",
+          "source_reference": "تفسير ابن كثير · Quran 12:98",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-18-15-49-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രത്യാശയും ഭയഭക്തിയും",
+            "en": "Ibn Kathir: mercy and punishment are read together"
+          },
+          "arabic_original": "دالة على مقامي الرجاء والخوف",
+          "translation": {
+            "ml": "15:49-ലെ «الغفور الرحيم» എന്ന പ്രഖ്യാപനത്തിന്റെ അടുത്ത ആയത്തിൽ ശിക്ഷയുടെ കാര്യവും വരുന്നു. ഭയവും പ്രത്യാശയും സമതുലിതമാക്കണമെന്നാണ് ഇബ്നു കസീർ പറയുന്നത്; ഒരു അനുബന്ധ നിവേദനം മുർസലാണെന്നും അദ്ദേഹം ചൂണ്ടിക്കാണിക്കുന്നു.",
+            "en": "Ibn Kathir reads 15:49 with the next verse on painful punishment as a balance of hope and fear, while describing a supplementary report as mursal."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya49.html",
+          "source_reference": "تفسير ابن كثير · Quran 15:49",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-19-39-53-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: നിരാശയെ നിരസിക്കുന്ന വചനം തൗബയുമായി ബന്ധപ്പെട്ടതാണ്",
+            "en": "Ibn Kathir: no despair, with sincere repentance"
+          },
+          "arabic_original": "هذه الآية الكريمة دعوة لجميع العصاة",
+          "translation": {
+            "ml": "പാപങ്ങൾ എല്ലാം പൊറുക്കുമെന്ന വചനം തൗബചെയ്യുന്ന എല്ലാവർക്കും വിളിയാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. «തൗബ ഇല്ലാതെയും നിർബന്ധമായും എല്ലാവർക്കും മാപ്പ്» എന്ന ലളിതവൽക്കരണം അദ്ദേഹം നിഷേധിക്കുന്നു.",
+            "en": "Ibn Kathir explains the verse as an invitation to those who repent and return to Allah; he rejects an interpretation that ignores repentance altogether."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya53.html",
+          "source_reference": "تفسير ابن كثير · Quran 39:53",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        },
+        {
+          "id": "encyclopedia-rahim-tafsir-20-49-12-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സംശയവും ചാരവൃത്തിയും പരദൂഷണവും",
+            "en": "Ibn Kathir: mercy tied to community ethics"
+          },
+          "arabic_original": "لأن بعض ذلك يكون إثما محضا",
+          "translation": {
+            "ml": "തെളിവില്ലാത്ത ചീത്തസംശയങ്ങളെ ഒഴിവാക്കാൻ ഖുർആൻ നിർദേശിക്കുന്നതിനു പിന്നാലെ ചാരവൃത്തിയും പരദൂഷണവും വിലക്കുന്നു. «തവ്വാബുന് റഹീം» എന്ന വിശേഷണപ്രയോഗത്തോടെ ആയത്ത് സമാപിക്കുന്നു.",
+            "en": "Ibn Kathir explains suspicion, spying and backbiting as serious threats to mutual respect. The verse closes with Allah accepting repentance and showing mercy."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura49-aya12.html",
+          "source_reference": "تفسير ابن كثير · Quran 49:12",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_exegesis",
+          "source_scope": {
+            "ml": "ഇത് പ്രസ്തുത തഫ്സീറിലെ പ്രത്യേകം ചേർത്ത വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹമാണ്; ചെറു അറബി വാക്യം മാത്രം മൂലപാഠമായി കൊടുത്തിരിക്കുന്നു. പൂർണ തഫ്സീർ അല്ല, നബിവചന ഗ്രേഡ് സ്ഥാപിക്കുന്നതുമല്ല.",
+            "en": "Source-attributed commentary summary with a short verbatim Arabic fragment, not a complete commentary or independent hadith authentication."
+          }
+        }
+      ],
       "coverage": {
         "ml": "അർ-റഹീം കാർഡിന്റെ ആദ്യ വിജ്ഞാനകോശ പാളി: 24 പൂർണ ഖുർആൻ ആയത്തുകൾ വിവിധ സന്ദർഭങ്ങളോടെ; എല്ലാ കൈയെഴുത്തുഗ്രന്ഥങ്ങളുടെയും ഖവാസ്സ് ഗവേഷണം ഇതോടെ പൂർത്തിയല്ല.",
         "en": "First encyclopedia-depth layer of 24 complete Quran verses across distinct settings for al-Rahim; not full khawass or manuscript coverage."
