@@ -1,0 +1,694 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "പ്രാഥമിക ഹദീസ് പേജുകളിലെ പ്രത്യേക ഓതലുകളും ദുആകളും; എണ്ണം, സമയം, ഘട്ടങ്ങൾ എന്നിവ റിപ്പോർട്ട് ചെയ്യുന്നത്ര മാത്രമാണ്. നാമങ്ങളുമായുള്ള ബന്ധങ്ങളിൽ വിഷയബന്ധമുള്ളവയും ഉൾപ്പെടുന്നു; ഒരു നാമം ഒറ്റയ്ക്ക് പ്രത്യേകം ഓതണമെന്ന നിർദേശമല്ല. ഹദീസ് പതിപ്പിൽ ഇല്ലാത്ത ഹറകത്ത് ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+    "en": "Hadith text checked against cited reports. Timing, counts and steps follow the particular report; thematic connections do not imply independent name-specific practices. Vowels absent from the printed source are not invented."
+  },
+  "entries": [
+    {
+      "id": "hadith-muslim-591",
+      "name_ids": [
+        "PDF-HN-005",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "നമസ്കാരശേഷം ഇസ്തിഗ്ഫാർ മൂന്നുതവണ; തുടർന്ന് അസ്-സലാം ദുആ",
+        "en": "After prayer: seeking forgiveness three times and invoking al-Salam"
+      },
+      "arabic_original": "أَسْتَغْفِرُ اللَّهَ\nاللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَامِ",
+      "translation": {
+        "ml": "ഥൗബാൻ (റ) റിപ്പോർട്ട് ചെയ്യുന്നത്: റസൂൽ ﷺ നമസ്കാരം കഴിഞ്ഞാൽ മൂന്നു തവണ അല്ലാഹുവിനോട് പൊറുക്കൽ തേടുകയും ശേഷം «അല്ലാഹുവേ, നീ സമാധാനമാണ്; നിന്നിൽനിന്നാണ് സമാധാനം; മഹത്വത്തിന്റെയും ആദരവിന്റെയും ഉടമയേ, നീ അനുഗ്രഹപൂർണനാകുന്നു» എന്നു പറയുകയും ചെയ്തിരുന്നു. ഇസ്തിഗ്ഫാറിന്റെ എണ്ണം ദുആയുടെ എണ്ണമായി തെറ്റിദ്ധരിക്കരുത്.",
+        "en": "Thawban reports the Prophet sought forgiveness three times at the end of prayer and then said: O Allah, You are Peace and peace is from You; blessed are You, Possessor of Majesty and Honor. The count of three applies to seeking forgiveness, not explicitly to repeating the longer formula."
+      },
+      "source_reference": "Sahih Muslim 591",
+      "source_url": "https://sunnah.com/muslim:591",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഇസ്തിഗ്ഫാർ മൂന്നു തവണ. തുടർന്ന് പറയുന്ന അസ്-സലാം ദുആയ്ക്ക് വേറെ എണ്ണം ഈ റിപ്പോർട്ടിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "Seek forgiveness three times. The longer al-Salam formula has no separately prescribed repetition count in this report."
+      },
+      "timing": {
+        "ml": "നമസ്കാരം അവസാനിപ്പിച്ചതിന് ശേഷം.",
+        "en": "After finishing prayer."
+      },
+      "conditions": {
+        "ml": "മൂന്നുതവണ ഇസ്തിഗ്ഫാർ; തുടർന്ന് ദുആ. പ്രത്യേക കളം/തകിട് പരാമർശിക്കുന്നില്ല.",
+        "en": "Three repetitions of istighfar followed by the supplication; no diagram or amulet."
+      },
+      "steps": {
+        "ml": [
+          "അസ്തഗ്ഫിറുല്ലാഹ് എന്ന് മൂന്നുതവണ പറയുക.",
+          "ശേഷം മുകളിൽ കൊടുത്തിരിക്കുന്ന പൂർണ ദുആ പറയുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-nasai-1733",
+      "name_ids": [
+        "PDF-HN-003",
+        "PDF-HN-004"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "വിത്ർ നമസ്കാരശേഷം «സുബ്ഹാനൽ മലികിൽ ഖുദ്ദൂസ്» മൂന്നുതവണ",
+        "en": "Three recitations of Subhana al-Malik al-Quddus after witr"
+      },
+      "arabic_original": "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ",
+      "translation": {
+        "ml": "റസൂൽ ﷺ വിത്ർ നമസ്കാരത്തിൽനിന്ന് സലാം പറഞ്ഞശേഷം «രാജാവും അതിപരിശുദ്ധനുമായവൻ പരിശുദ്ധനാകുന്നു» എന്ന് മൂന്നു തവണ പറയാറുണ്ടായിരുന്നുവെന്നും മൂന്നാമത്തേതിൽ ശബ്ദം ഉയർത്തിയിരുന്നുവെന്നും റിപ്പോർട്ട് ചെയ്യുന്നു. നസാഈ 1733-ന് സുന്നഹ്.കോമിൽ Darussalam 'Sahih' എന്ന ഗ്രേഡ് നൽകിയിട്ടുണ്ട്.",
+        "en": "After witr taslim the Prophet reportedly said 'Glory be to the Sovereign, Most Holy' three times, raising his voice on the third. Sunnah.com labels this narration Sahih (Darussalam)."
+      },
+      "source_reference": "Sunan an-Nasa'i 1733 (Sahih, Darussalam)",
+      "source_url": "https://sunnah.com/nasai:1733",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "മൂന്നുതവണ.",
+        "en": "Three times."
+      },
+      "timing": {
+        "ml": "വിത്ർ നമസ്കാരത്തിൽ സലാം പറഞ്ഞതിന് ശേഷം.",
+        "en": "After finishing the witr prayer with taslim."
+      },
+      "conditions": {
+        "ml": "മൂന്നാമത്തെ ആവർത്തനത്തിൽ ശബ്ദം ഉയർത്തുന്നതായി റിപ്പോർട്ട് പറയുന്നു; പ്രത്യേക ഉപകരണങ്ങളില്ല.",
+        "en": "The third recitation is raised in volume in the report; no objects required."
+      },
+      "steps": {
+        "ml": [
+          "വിത്ർ നമസ്കാരത്തിൽനിന്ന് സലാം പറയുക.",
+          "ദിക്ർ മൂന്നുതവണ ചൊല്ലുക; മൂന്നാമത്തേതിൽ ശബ്ദം ഉയർത്തുന്നതായി റിപ്പോർട്ട് രേഖപ്പെടുത്തുന്നു."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-6405",
+      "name_ids": [
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "ഒരു ദിവസത്തിൽ നൂറുതവണ «സുബ്ഹാനല്ലാഹി വബിഹംദിഹി»",
+        "en": "Subhan Allah wa bihamdihi one hundred times a day"
+      },
+      "arabic_original": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+      "translation": {
+        "ml": "അബൂഹുറൈറ (റ) വഴിയുള്ള ഹദീസിൽ ഈ ദിക്ർ ദിവസത്തിൽ നൂറുതവണ പറയുന്നതിന്റെ പാപമോചനപ്രാധാന്യം നബി ﷺ വിവരിക്കുന്നു; കടലിലെ നുരയോളം പാപങ്ങളായിരുന്നാലും എന്ന ഉദാഹരണവും റിപ്പോർട്ടിലുണ്ട്. ഇത് അല്ലാഹുവിനെ സ്തുതിക്കുന്ന പൊതുദിക്ർ ആണ്; ഏതു നാമത്തിനും ഇഷ്ടാനുസരണം നൂറെന്ന എണ്ണം മാറ്റിവയ്ക്കുന്ന നിയമമല്ല.",
+        "en": "Abu Hurayrah reports the Prophet described forgiveness for saying this glorification one hundred times in a day, even if sins were like sea foam. The count belongs to this exact dhikr, not to an arbitrary standalone Divine Name."
+      },
+      "source_reference": "Sahih al-Bukhari 6405",
+      "source_url": "https://sunnah.com/bukhari:6405",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഒരു ദിവസത്തിൽ 100 തവണ ഈ ദിക്ർ.",
+        "en": "100 times in one day for this exact formula."
+      },
+      "timing": {
+        "ml": "ഒരു ദിവസത്തിനുള്ളിൽ; പ്രത്യേക ഘടികാരസമയം ഈ റിപ്പോർട്ടിൽ പറഞ്ഞിട്ടില്ല.",
+        "en": "Within a day; no exact hour given here."
+      },
+      "conditions": {
+        "ml": "ഈ ഹദീസിൽ പ്രത്യേക കളമോ മന്ത്രക്കുറിപ്പോ ഇല്ല.",
+        "en": "No special diagram or written charm."
+      },
+      "steps": {
+        "ml": [
+          "മുകളിൽ പറഞ്ഞ ദിക്ർ തന്നെ സ്വീകരിക്കുക.",
+          "ദിവസത്തിൽ 100 തവണ ചൊല്ലുക; മറ്റൊരു വാക്കിന് അതേ എണ്ണമെന്ന് അവകാശപ്പെടരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-6406",
+      "name_ids": [
+        "PDF-HN-001",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "അർ-റഹ്മാന് പ്രിയപ്പെട്ട രണ്ടു സ്തുതിവാക്യങ്ങൾ",
+        "en": "Two phrases beloved to al-Rahman"
+      },
+      "arabic_original": "سُبْحَانَ اللَّهِ الْعَظِيمِ\nسُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+      "translation": {
+        "ml": "ഈ രണ്ടു വാക്യങ്ങൾ നാവിന് എളുപ്പവും തുലാസിൽ ഭാരമുള്ളതും അർ-റഹ്മാന് പ്രിയപ്പെട്ടതുമാണെന്ന് നബി ﷺ പറഞ്ഞതായി ബുഖാരി റിപ്പോർട്ട് ചെയ്യുന്നു. ഈ പ്രത്യേക റിപ്പോർട്ടിൽ ആവർത്തനഎണ്ണം പറഞ്ഞിട്ടില്ല; 6405-ലെ 100 എണ്ണമുള്ള റിപ്പോർട്ടിൽനിന്ന് ഇത് വേർതിരിച്ചിരിക്കുന്നു.",
+        "en": "The Prophet described these two expressions as easy on the tongue, weighty on the scales, and loved by al-Rahman. Unlike Bukhari 6405, this narration itself supplies no repetition number."
+      },
+      "source_reference": "Sahih al-Bukhari 6406",
+      "source_url": "https://sunnah.com/bukhari:6406",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസ് നിശ്ചിത ദിവസങ്ങളുടെ എണ്ണമോ പ്രതിദിന സമയമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "No fixed number of days or daily hour is specified in this hadith."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, തകിട്, മുദ്ര, വസ്തു, ഉപവാസനിബന്ധന എന്നിവ ഈ ഹദീസ് നിർദേശിക്കുന്നില്ല.",
+        "en": "This hadith prescribes no square, amulet, seal, materials or fasting requirements."
+      },
+      "steps": {
+        "ml": [
+          "മുകളിലെ രണ്ടു സ്തുതിവാക്യങ്ങളും വായിക്കുക.",
+          "ഈ റിപ്പോർട്ട് മാത്രമെടുത്ത് പ്രത്യേക സംഖ്യ നിശ്ചയിക്കരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-6403",
+      "name_ids": [
+        "PDF-HN-003",
+        "PDF-HN-013"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "നൂറുതവണ തഹ്‌ലീൽ: ദിക്ർ, പ്രതിഫലം, ശൈത്വാനിൽനിന്നുള്ള സംരക്ഷണം",
+        "en": "Tahlil one hundred times daily — merit and protection"
+      },
+      "arabic_original": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": {
+        "ml": "അബൂഹുറൈറ (റ) റിപ്പോർട്ട് ചെയ്യുന്നത്: ഈ പൂർണ തഹ്‌ലീൽ ദിവസത്തിൽ നൂറുതവണ പറഞ്ഞാൽ പത്ത് അടിമകളെ മോചിപ്പിച്ചതിന് തുല്യമായ പ്രതിഫലവും നൂറ് നന്മകൾ എഴുതപ്പെടുന്നതും നൂറ് തെറ്റുകൾ മായ്ക്കപ്പെടുന്നതും വൈകുന്നേരംവരെ ശൈത്വാനിൽനിന്ന് സംരക്ഷണവും സംബന്ധിച്ച വാഗ്ദാനം ഹദീസിലുണ്ട്. ഇത് മുഴുവൻ വാചകത്തിനുള്ള എണ്ണമാണ്; «അൽ-മലിക്» മാത്രം നൂറുതവണ എന്ന നിർദേശം അല്ല.",
+        "en": "The report promises reward equivalent to freeing ten slaves, one hundred good deeds, removal of one hundred sins and protection from Satan through that day for reciting this entire formula 100 times. It does not assign 100 repetitions to 'al-Malik' alone."
+      },
+      "source_reference": "Sahih al-Bukhari 6403",
+      "source_url": "https://sunnah.com/bukhari:6403",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "പൂർണമായ ഈ വാചകം ദിവസത്തിൽ 100 തവണ.",
+        "en": "100 times a day of the complete wording."
+      },
+      "timing": {
+        "ml": "ഒരു ദിവസത്തിനുള്ളിൽ; സംരക്ഷണത്തെക്കുറിച്ച് വൈകുന്നേരംവരെ എന്ന് റിപ്പോർട്ടുണ്ട്.",
+        "en": "During the day; the reported protection lasts until evening."
+      },
+      "conditions": {
+        "ml": "വാചകം മുഴുവനായി ചൊല്ലുന്ന ആവർത്തനമാണ്; പ്രത്യേക കളം/തകിട് നിർദേശിക്കുന്നില്ല.",
+        "en": "The count applies to the full phrase; no amulet or diagram."
+      },
+      "steps": {
+        "ml": [
+          "പൂർണ തഹ്‌ലീൽ വാചകം വായിക്കുക.",
+          "ദിവസത്തിൽ നൂറുതവണ അതേ രൂപത്തിൽ ചൊല്ലുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-597a",
+      "name_ids": [
+        "PDF-HN-003",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "നമസ്കാരശേഷം 33 + 33 + 33 + 1 = 100",
+        "en": "After prayer: 33+33+33 and final tahlil = 100"
+      },
+      "arabic_original": "سُبْحَانَ اللَّهِ\nالْحَمْدُ لِلَّهِ\nاللَّهُ أَكْبَرُ\nلَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": {
+        "ml": "നമസ്കാരശേഷം തസ്ബീഹ് 33, തഹ്മീദ് 33, തക്ബീർ 33 എന്നിങ്ങനെ 99; അവസാനം പൂർണ തഹ്‌ലീൽ ഒരുതവണ ചൊല്ലി നൂറ് പൂർത്തിയാക്കുക എന്ന ക്രമം മുസ്ലിം 597a-ൽ പറയുന്നു. ഈ നാല് ഘടകങ്ങൾക്കുള്ള എണ്ണങ്ങൾ പരസ്പരം മാറ്റരുത്.",
+        "en": "Muslim 597a prescribes 33 glorifications, 33 praises, 33 takbirs after each prayer (99 total), completed to 100 by the full tahlil once. These four separate counts must not be confused."
+      },
+      "source_reference": "Sahih Muslim 597a",
+      "source_url": "https://sunnah.com/muslim:597a",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "സുബ്ഹാനല്ലാഹ് 33; അൽഹംദുലില്ലാഹ് 33; അല്ലാഹു അക്ബർ 33; അവസാനം പൂർണ തഹ്‌ലീൽ 1 — ആകെ 100.",
+        "en": "33 tasbih, 33 tahmid, 33 takbir, then the complete tahlil once: 100 in total."
+      },
+      "timing": {
+        "ml": "ഓരോ നമസ്കാരത്തിനും ശേഷം എന്നാണ് ഈ റിപ്പോർട്ട്.",
+        "en": "After each prayer in this narration."
+      },
+      "conditions": {
+        "ml": "അതത് വാക്യം അതത് എണ്ണത്തിൽ; പ്രത്യേക കളമോ തകിടോ പറഞ്ഞിട്ടില്ല.",
+        "en": "Each phrase has its own count. No square or amulet is prescribed."
+      },
+      "steps": {
+        "ml": [
+          "സുബ്ഹാനല്ലാഹ് 33 തവണ, അൽഹംദുലില്ലാഹ് 33 തവണ, അല്ലാഹു അക്ബർ 33 തവണ ചൊല്ലുക.",
+          "പൂർണ തഹ്‌ലീൽ ഒരുതവണ ചൊല്ലി നൂറ് പൂർത്തിയാക്കുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-6306",
+      "name_ids": [
+        "PDF-HN-011",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "സയ്യിദുൽ ഇസ്തിഗ്ഫാർ — സമ്പൂർണ ദുആയും പകലും രാത്രിയും",
+        "en": "Sayyid al-Istighfar — complete supplication and its timing"
+      },
+      "arabic_original": "اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَىَّ وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
+      "translation": {
+        "ml": "സയ്യിദുൽ ഇസ്തിഗ്ഫാർ എന്നു വിശേഷിപ്പിച്ച പൂർണ ദുആയാണിത്: നീയാണ് എന്റെ റബ്ബ്; നീയല്ലാതെ ദൈവമില്ല; നീ എന്നെ സൃഷ്ടിച്ചു; ഞാൻ നിന്റെ ദാസനാണ്; കഴിയുന്നതുവരെ നിന്റെ ഉടമ്പടിയിലും വാഗ്ദാനത്തിലും ഞാൻ നിലകൊള്ളുന്നു; ഞാൻ ചെയ്തതിന്റെ തിന്മയിൽനിന്ന് അഭയം തേടുന്നു; നിന്റെ അനുഗ്രഹവും എന്റെ പാപവും അംഗീകരിക്കുന്നു; നീ മാത്രമാണ് പാപങ്ങൾ പൊറുക്കുന്നവൻ, എന്നെ പൊറുക്കേണമേ. പകലോ രാത്രിയോ ദൃഢവിശ്വാസത്തോടെ ചൊല്ലി ആ കാലയളവിൽ മരിച്ചാൽ സ്വർഗക്കാരിൽപ്പെട്ടവനാകുമെന്ന ഹദീസ് വാഗ്ദാനവും ഇവിടെ രേഖപ്പെടുത്തുന്നു. «ഖലഖ്തനി» ഉള്ളതിനാൽ അൽ-ഖാലിഖുമായി വിഷയബന്ധമാണ്; «അൽ-ഖാലിഖ്» നാമം ആ രൂപത്തിൽ ഇവിടെ പറഞ്ഞിട്ടില്ല.",
+        "en": "This full Sayyid al-Istighfar acknowledges Allah as Lord and Creator, pledges servanthood, acknowledges blessings and sins, seeks refuge from wrongdoing, and requests forgiveness. The report connects saying it with conviction by day or night and dying in that period to Paradise. Its relevance to al-Khaliq is thematic through 'You created me'; the divine name al-Khaliq is not itself recited in the formula."
+      },
+      "source_reference": "Sahih al-Bukhari 6306",
+      "source_url": "https://sunnah.com/bukhari:6306",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസിൽ ദിവസത്തിൽ എത്രതവണ എന്ന സംഖ്യ പ്രത്യേകം നൽകിയിട്ടില്ല.",
+        "en": "No set number of daily repetitions is specified in this narration."
+      },
+      "timing": {
+        "ml": "പകലും രാത്രിയും ദൃഢവിശ്വാസത്തോടെ ചൊല്ലുന്നതിനെക്കുറിച്ച് വാഗ്ദാനമുണ്ട്.",
+        "en": "The report mentions saying it in daytime or nighttime with conviction."
+      },
+      "conditions": {
+        "ml": "പൂർണ വാചകം ചൊല്ലുക; ഇഖ്ലാസും യഖീനും (ദൃഢവിശ്വാസം) റിപ്പോർട്ടിൽ പ്രസക്തമാണ്; പ്രത്യേക കളമില്ല.",
+        "en": "Say the full text with conviction; no square or amulet is stated."
+      },
+      "steps": {
+        "ml": [
+          "മുകളിലെ മുഴുവൻ അറബി ദുആ ശ്രദ്ധയോടെ വായിക്കുക.",
+          "ദിവസത്തിലോ രാത്രിയിലോ ദൃഢവിശ്വാസത്തോടെ ചൊല്ലുന്നതിന്റെ ഗുണം ഹദീസ് പറയുന്നതുപോലെ മാത്രം മനസ്സിലാക്കുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2696",
+      "name_ids": [
+        "PDF-HN-002",
+        "PDF-HN-013",
+        "PDF-HN-016"
+      ],
+      "purpose": "provision",
+      "title": {
+        "ml": "നബി ﷺ പഠിപ്പിച്ച ക്ഷമ, കരുണ, ഹിദായത്ത്, ഉപജീവനം എന്നിവയുടെ ദുആ",
+        "en": "Prophetic supplication for forgiveness, mercy, guidance and provision"
+      },
+      "arabic_original": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاهْدِنِي وَارْزُقْنِي",
+      "translation": {
+        "ml": "എന്റെ അല്ലാഹുവേ, എനിക്ക് പൊറുക്കേണമേ; എന്നോട് കരുണ കാണിക്കേണമേ; എന്നെ നേർവഴിയിലാക്കേണമേ; എനിക്ക് ഉപജീവനം നൽകേണമേ. ഒരു വ്യക്തിക്ക് നബി ﷺ പഠിപ്പിച്ച പ്രാർത്ഥനയായി മുസ്ലിം 2696 റിപ്പോർട്ട് ചെയ്യുന്നു. «ആഫിനി» ചേർത്തിരുന്നോയെന്ന കാര്യത്തിൽ അതേ റിപ്പോർട്ടിലെ ഒരു നിവേദകൻ സംശയം പറഞ്ഞതിനാൽ ഉറപ്പുള്ള നാലു വാക്യങ്ങൾ മാത്രമാണ് ഇവിടെ നൽകിയിരിക്കുന്നത്.",
+        "en": "O Allah, forgive me, have mercy on me, guide me and provide for me. Muslim 2696 reports the Prophet taught these words; a narrator was uncertain whether the additional 'grant me wellbeing' was included, so it is not silently appended."
+      },
+      "source_reference": "Sahih Muslim 2696",
+      "source_url": "https://sunnah.com/muslim:2696",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "പഠിപ്പിച്ച ദുആ; പ്രത്യേക ദിവസമോ സമയമോ എണ്ണം ആ റിപ്പോർട്ടിൽ ഇല്ല.",
+        "en": "A taught prayer; the narration specifies no day or time."
+      },
+      "conditions": {
+        "ml": "«ആഫിനി» എന്ന അധികവാക്കിന്റെ കാര്യത്തിൽ നിവേദകന്റെ സംശയം സൂചിപ്പിച്ചിരിക്കുന്നു; കളമില്ല.",
+        "en": "The narrator expresses uncertainty about adding 'grant me wellbeing'; no diagram is prescribed."
+      },
+      "steps": {
+        "ml": [
+          "സ്രോതസ്സിൽ ഉറപ്പോടെ രേഖപ്പെടുത്തിയ നാലു അപേക്ഷകളും വായിക്കുക.",
+          "അനിശ്ചിതമായ അധികവാക്ക് നിർബന്ധഘടകമായി ചേർക്കരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2720",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-016"
+      ],
+      "purpose": "provision",
+      "title": {
+        "ml": "ദീൻ, ദുനിയാവ്, ആഖിറത്ത്, ജീവിതം, മരണം എന്നിവയുടെ വിശാല ദുആ",
+        "en": "Prophetic prayer for faith, livelihood, afterlife, life and death"
+      },
+      "arabic_original": "اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي وَأَصْلِحْ لِي دُنْيَاىَ الَّتِي فِيهَا مَعَاشِي وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ",
+      "translation": {
+        "ml": "എന്റെ ദീൻ നന്നാക്കേണമേ; എന്റെ ജീവിതോപാധി നിലകൊള്ളുന്ന ദുനിയാവ് നന്നാക്കേണമേ; ഞാൻ മടങ്ങുന്ന ആഖിറത്ത് നന്നാക്കേണമേ; ജീവിതത്തെ എല്ലാ നന്മകളുടെയും വർധനയാക്കേണമേ; മരണത്തെ എല്ലാ തിന്മകളിൽനിന്നും ആശ്വാസമാക്കേണമേ. നബി ﷺ പറഞ്ഞിരുന്ന ദുആയായി അബൂഹുറൈറ (റ) റിപ്പോർട്ട് ചെയ്യുന്നു. ഈ ദുആ ഒരു പ്രത്യേക തൊഴിൽ/സമ്പത്ത് ഉറപ്പുനൽകുന്ന എണ്ണമുള്ള വസീഫയായി റിപ്പോർട്ട് ചെയ്യുന്നില്ല.",
+        "en": "A comprehensive supplication for sound religion, worldly living, the Hereafter, beneficial life and relief from evil through death. Abu Hurayrah reports this as the Prophet's prayer. No name-specific number or guaranteed income is stipulated."
+      },
+      "source_reference": "Sahih Muslim 2720",
+      "source_url": "https://sunnah.com/muslim:2720",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസ് നിശ്ചിത ദിവസങ്ങളുടെ എണ്ണമോ പ്രതിദിന സമയമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "No fixed number of days or daily hour is specified in this hadith."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, തകിട്, മുദ്ര, വസ്തു, ഉപവാസനിബന്ധന എന്നിവ ഈ ഹദീസ് നിർദേശിക്കുന്നില്ല.",
+        "en": "This hadith prescribes no square, amulet, seal, materials or fasting requirements."
+      },
+      "steps": {
+        "ml": [
+          "അഞ്ചു അപേക്ഷകളും വിട്ടുപോകാതെ വായിക്കുക.",
+          "ഇതിനു പ്രത്യേക എണ്ണം അല്ലെങ്കിൽ ദിവസം സൃഷ്ടിച്ചുചേർക്കരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2722",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-018"
+      ],
+      "purpose": "knowledge",
+      "title": {
+        "ml": "ഉപകാരമില്ലാത്ത അറിവിൽനിന്നുള്ള അഭയവും ആത്മശുദ്ധിക്കായുള്ള ദീർഘദുആയും",
+        "en": "Complete prayer against unbeneficial knowledge and for purification"
+      },
+      "arabic_original": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَالْجُبْنِ وَالْبُخْلِ وَالْهَرَمِ وَعَذَابِ الْقَبْرِ اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلاَهَا اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لاَ يَنْفَعُ وَمِنْ قَلْبٍ لاَ يَخْشَعُ وَمِنْ نَفْسٍ لاَ تَشْبَعُ وَمِنْ دَعْوَةٍ لاَ يُسْتَجَابُ لَهَا",
+      "translation": {
+        "ml": "നബി ﷺ പ്രാർത്ഥിച്ചിരുന്ന പൂർണ ദുആയിൽ കഴിവില്ലായ്മ, അലസത, ഭീരുത്വം, പിശുക്ക്, വാർധക്യം, ഖബറിലെ ശിക്ഷ എന്നിവയിൽനിന്ന് അഭയം; ആത്മാവിന് തഖ്‌വ നൽകുകയും അതിനെ ശുദ്ധീകരിക്കുകയും ചെയ്യുക; ഉപകാരമില്ലാത്ത അറിവിൽനിന്നും ഭക്തിയില്ലാത്ത ഹൃദയത്തിൽനിന്നും തൃപ്തിയില്ലാത്ത ആത്മാവിൽനിന്നും സ്വീകരിക്കപ്പെടാത്ത പ്രാർത്ഥനയിൽനിന്നും അഭയം എന്നിവ ഉൾപ്പെടുന്നു. അൽ-അലീം എന്ന നാമം നേരിട്ട് ഈ വാചകത്തിൽ വരുന്നില്ല; അറിവിന്റെ വിഷയത്തിലാണ് ബന്ധം.",
+        "en": "The complete narration seeks refuge from incapacity, laziness, cowardice, miserliness, old age and the grave's punishment, requests purification of the soul, and seeks refuge from knowledge without benefit, an unhumble heart, unsatisfied desire and unanswered prayer. Its link to al-Alim is thematic, not a direct occurrence of that name."
+      },
+      "source_reference": "Sahih Muslim 2722",
+      "source_url": "https://sunnah.com/muslim:2722",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസ് നിശ്ചിത ദിവസങ്ങളുടെ എണ്ണമോ പ്രതിദിന സമയമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "No fixed number of days or daily hour is specified in this hadith."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, തകിട്, മുദ്ര, വസ്തു, ഉപവാസനിബന്ധന എന്നിവ ഈ ഹദീസ് നിർദേശിക്കുന്നില്ല.",
+        "en": "This hadith prescribes no square, amulet, seal, materials or fasting requirements."
+      },
+      "steps": {
+        "ml": [
+          "ദുആയിലെ മൂന്നു അപേക്ഷാഖണ്ഡങ്ങളും പൂർണമായി വായിക്കുക.",
+          "അൽ-അലീം എന്ന നാമത്തിന് പ്രത്യേക എണ്ണം ഇതിൽനിന്നു നിശ്ചയിക്കരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2708a",
+      "name_ids": [
+        "PDF-HN-006",
+        "PDF-HN-013"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "ഒരു സ്ഥലത്ത് താമസമിറങ്ങുമ്പോൾ ചൊല്ലുന്ന അഭയപ്രാർത്ഥന",
+        "en": "Seeking refuge when stopping at a place"
+      },
+      "arabic_original": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+      "translation": {
+        "ml": "ഒരു സ്ഥലത്ത് ഇറങ്ങി താമസിക്കുമ്പോൾ അല്ലാഹുവിന്റെ സമ്പൂർണ വചനങ്ങളാൽ സൃഷ്ടികളുടെ തിന്മയിൽനിന്ന് അഭയം തേടുന്ന ഈ വാക്കുകൾ ചൊല്ലുന്നതിനെക്കുറിച്ച് മുസ്ലിം 2708a-ൽ നബി ﷺയുടെ പരാമർശമുണ്ട്. «അൽ-മുഅ്മിൻ» എന്ന നാമം നേരിട്ട് ദുആയിൽ ഇല്ല; സംരക്ഷണത്തിന്റെ ആശയബന്ധം മാത്രമാണ് കാർഡിലേക്കുള്ള ബന്ധം.",
+        "en": "Muslim 2708a reports a prayer seeking refuge in Allah's perfect words when stopping at a place and a promise of safety until departing from that place. Al-Mu'min is not directly uttered; its card association is thematic through safety."
+      },
+      "source_reference": "Sahih Muslim 2708a",
+      "source_url": "https://sunnah.com/muslim:2708a",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പലതവണ എന്ന കൃത്യസംഖ്യ പറയുന്നില്ല.",
+        "en": "This report does not specify a numerical repetition count."
+      },
+      "timing": {
+        "ml": "ഒരു സ്ഥലത്ത് ഇറങ്ങി താമസിക്കുമ്പോൾ; ആ സ്ഥലം വിട്ടുപോകുന്നതുവരെ എന്നാണ് ഫലവിവരണം.",
+        "en": "When stopping at a location; its reported duration extends until departure."
+      },
+      "conditions": {
+        "ml": "ഈ ദുആയ്ക്ക് കളം/തകിട് ആവശ്യമെന്ന് റിപ്പോർട്ടില്ല.",
+        "en": "No talisman or square is mentioned."
+      },
+      "steps": {
+        "ml": [
+          "ഒരു സ്ഥലത്ത് തങ്ങുമ്പോൾ മുകളിലെ ദുആ പറയുക.",
+          "ഇത് ഒരു നാമം മാത്രമായുള്ള പ്രത്യേക എണ്ണം എന്ന് മാറ്റിക്കാണിക്കരുത്."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-6369",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-016"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "കടബാധ്യത, ദുഃഖം, അലസത എന്നിവയിൽനിന്നുള്ള നബിവചന ദുആ",
+        "en": "Prophetic prayer against debt, grief and helplessness"
+      },
+      "arabic_original": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْجُبْنِ وَالْبُخْلِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ",
+      "translation": {
+        "ml": "ഉത്കണ്ഠ, ദുഃഖം, അശക്തി, അലസത, ഭീരുത്വം, പിശുക്ക്, കടത്തിന്റെ ഭാരം, ആളുകൾ കീഴടക്കൽ എന്നിവയിൽനിന്ന് നബി ﷺ അഭയം തേടിയിരുന്ന വാചകമാണിത്. കടബാധ്യതയുള്ളവരെ സംബന്ധിച്ചുള്ള ദുആ എന്നതിനാൽ അർ-റസ്സാഖ് കാർഡുമായി വിഷയബന്ധമുണ്ട്; ആ നാമം നേരിട്ട് ദുആയിൽ ഇല്ല. കടം തിരിച്ചടയ്ക്കുന്നതിനുള്ള യാഥാർഥ്യ നടപടികൾക്ക് പകരമല്ല.",
+        "en": "The Prophet sought refuge from worry, sorrow, incapacity, laziness, cowardice, miserliness, overwhelming debt and domination by people. The relation to ar-Razzaq concerns the debt theme; the Name is not explicitly recited. This does not replace practical debt management."
+      },
+      "source_reference": "Sahih al-Bukhari 6369",
+      "source_url": "https://sunnah.com/bukhari:6369",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസ് നിശ്ചിത ദിവസങ്ങളുടെ എണ്ണമോ പ്രതിദിന സമയമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "No fixed number of days or daily hour is specified in this hadith."
+      },
+      "conditions": {
+        "ml": "പ്രത്യേക കളം, തകിട്, മുദ്ര, വസ്തു, ഉപവാസനിബന്ധന എന്നിവ ഈ ഹദീസ് നിർദേശിക്കുന്നില്ല.",
+        "en": "This hadith prescribes no square, amulet, seal, materials or fasting requirements."
+      },
+      "steps": {
+        "ml": [
+          "കടവും ദുഃഖവും സംബന്ധിച്ച പൂർണ ദുആ വായിക്കുക.",
+          "സാമ്പത്തിക ഉത്തരവാദിത്തങ്ങൾ കൈകാര്യം ചെയ്യുന്നതിനോടൊപ്പം പ്രാർത്ഥിക്കുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2202",
+      "name_ids": [
+        "PDF-HN-013"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "വേദനയുള്ള ഭാഗത്ത് കൈവെച്ച് 3 + 7 പ്രാർത്ഥന",
+        "en": "Pain-related prayer: three Bismillah and seven appeals"
+      },
+      "arabic_original": "بِاسْمِ اللَّهِ\nأَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ",
+      "translation": {
+        "ml": "ഉഥ്മാൻ ബിൻ അബിൽ ആസ് (റ) ശരീരവേദനയെക്കുറിച്ച് പറഞ്ഞപ്പോൾ നബി ﷺ വേദനിക്കുന്ന സ്ഥലത്ത് കൈവെച്ച് «ബിസ്മില്ലാഹ്» മൂന്നു തവണയും പിന്നെ «അല്ലാഹുവിലും അവന്റെ ശക്തിയിലും, ഞാൻ അനുഭവിക്കുന്നതും ഭയപ്പെടുന്നതുമായ തിന്മയിൽനിന്ന് അഭയം തേടുന്നു» എന്ന ദുആ ഏഴുതവണയും പറയാൻ നിർദേശിച്ചതായി മുസ്ലിം 2202-ൽ രേഖപ്പെടുത്തിയിട്ടുണ്ട്. ഇത് ആരോഗ്യപരിചരണത്തിന് പകരമല്ല.",
+        "en": "Uthman ibn Abi al-As reported a complaint of pain; the Prophet instructed placing one's hand on the painful site, saying 'Bismillah' three times, then the full refuge prayer seven times. This is not a substitute for medical care."
+      },
+      "source_reference": "Sahih Muslim 2202",
+      "source_url": "https://sunnah.com/muslim:2202",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "«ബിസ്മില്ലാഹ്» 3; തുടർന്ന് രണ്ടാം ദുആ 7.",
+        "en": "'Bismillah' three times; the second formula seven times."
+      },
+      "timing": {
+        "ml": "ശരീരത്തിൽ വേദന അനുഭവപ്പെടുന്ന സാഹചര്യത്തിൽ; ഒരു നിശ്ചിത ദിവസക്രമം ഇല്ല.",
+        "en": "In the setting of bodily pain; no number of days specified."
+      },
+      "conditions": {
+        "ml": "വേദനയുള്ള ഭാഗത്ത് കൈവെക്കൽ രേഖപ്പെടുത്തിയിട്ടുണ്ട്; പ്രത്യേക കളമോ എഴുത്തോ ഇല്ല. ആവശ്യമെങ്കിൽ വൈദ്യസഹായം തേടണം.",
+        "en": "Place one's hand at the painful site; no talisman or writing. Seek medical care as appropriate."
+      },
+      "steps": {
+        "ml": [
+          "വേദനയുള്ള ഭാഗത്ത് കൈവെച്ച് «ബിസ്മില്ലാഹ്» മൂന്ന് തവണ പറയുക.",
+          "ശേഷം രണ്ടാമത്തെ അഭയദുആ ഏഴ് തവണ പറയുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-5743",
+      "name_ids": [
+        "PDF-HN-013"
+      ],
+      "purpose": "relief",
+      "title": {
+        "ml": "രോഗാവസ്ഥയിൽ ശിഫയ്ക്കായുള്ള നബിവചന ദുആ",
+        "en": "Prophetic prayer for healing without leaving illness"
+      },
+      "arabic_original": "اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَاسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لاَ شِفَاءَ إِلاَّ شِفَاؤُكَ، شِفَاءً لاَ يُغَادِرُ سَقَمًا",
+      "translation": {
+        "ml": "ആഇശ (റ) റിപ്പോർട്ട് ചെയ്യുന്നത്: നബി ﷺ രോഗമുള്ള കുടുംബാംഗത്തിനു വലതുകൈ കൊണ്ട് തടവിക്കൊണ്ട് «മനുഷ്യരുടെ രക്ഷിതാവേ, പ്രയാസം നീക്കുകയും പൂർണ സൗഖ്യം നൽകുകയും ചെയ്യേണമേ; നീയാണ് ശിഫ നൽകുന്നവൻ» എന്ന പ്രാർത്ഥന ചൊല്ലിയിരുന്നു. ഹദീസിലെ «ഇശ്ഫിഹി» രോഗിയായ പുരുഷനെ സംബന്ധിച്ച പ്രയോഗമാണ്. പ്രത്യേക ആവർത്തനസംഖ്യ റിപ്പോർട്ടിലില്ല; ചികിത്സ ഒഴിവാക്കാൻ പറയുന്നില്ല.",
+        "en": "Aisha reports the Prophet used his right hand when praying for an ill family member and asked the Lord of people to remove illness and grant healing that leaves no ailment. The quoted 'ishfihi' uses a masculine singular object; no count is prescribed or medical treatment ruled out."
+      },
+      "source_reference": "Sahih al-Bukhari 5743",
+      "source_url": "https://sunnah.com/bukhari:5743",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "രോഗാവസ്ഥയിൽ; ഒരു നിശ്ചിത സമയമോ ദിവസസംഖ്യയോ രേഖപ്പെടുത്തിയിട്ടില്ല.",
+        "en": "In illness, with no stipulated clock time or number of days."
+      },
+      "conditions": {
+        "ml": "വലതുകൈ കൊണ്ട് രോഗബാധിതനുമേൽ തടവുന്ന സംഭവമാണ് റിപ്പോർട്ട്; ആരോഗ്യപരിചരണം ഉപേക്ഷിക്കരുത്.",
+        "en": "The report describes the Prophet passing his right hand over an ill family member; do not abandon medical care."
+      },
+      "steps": {
+        "ml": [
+          "അറബി പാഠവും രോഗിയിലേക്കുള്ള പ്രയോഗവും ശ്രദ്ധിക്കുക.",
+          "ആവശ്യമായ ആരോഗ്യചികിത്സയോടൊപ്പം പ്രാർത്ഥിക്കുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-muslim-2713a",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-016"
+      ],
+      "purpose": "provision",
+      "title": {
+        "ml": "കിടക്കാൻ പോകുമ്പോൾ ചൊല്ലുന്ന കടബാധ്യതയും ദാരിദ്ര്യവും സംബന്ധിച്ച വലിയ ദുആ",
+        "en": "Complete bedtime supplication for protection, debt and poverty"
+      },
+      "arabic_original": "اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ رَبَّنَا وَرَبَّ كُلِّ شَىْءٍ فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالْفُرْقَانِ أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَىْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ اللَّهُمَّ أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَىْءٌ وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَىْءٌ وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَىْءٌ وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَىْءٌ اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+      "translation": {
+        "ml": "ആകാശങ്ങളുടെയും ഭൂമിയുടെയും അർശിന്റെയും എല്ലാ വസ്തുക്കളുടെയും രക്ഷിതാവേ, ധാന്യവും കുരുവും പിളർത്തുന്നവനേ, തൗറാത്തും ഇൻജീലും ഫുർഖാനും ഇറക്കിയവനേ, സൃഷ്ടികളുടെ തിന്മയിൽനിന്ന് അഭയം തേടുന്നു. നീയാണ് അൽ-അവ്വൽ, അൽ-ആഖിർ, അസ്-സാഹിർ, അൽ-ബാത്വിൻ. ഞങ്ങളുടെ കടം തീർക്കുകയും ദാരിദ്ര്യത്തിൽനിന്ന് സമൃദ്ധി നൽകുകയും ചെയ്യേണമേ. ഉറങ്ങാൻ പോകുമ്പോൾ വലതുഭാഗത്ത് കിടന്ന് ഈ പൂർണ ദുആ ചൊല്ലുന്നതായി മുസ്ലിം 2713a രേഖപ്പെടുത്തുന്നു; പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This extensive bedtime prayer invokes the Lord of heaven and earth, all things and revelation, seeks refuge from evil, invokes the First, Last, Manifest and Hidden, and asks for debt repayment and freedom from poverty. The narration describes lying on the right side when going to sleep; it specifies no repetition count."
+      },
+      "source_reference": "Sahih Muslim 2713a",
+      "source_url": "https://sunnah.com/muslim:2713a",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഉറങ്ങാൻ പോകുമ്പോൾ.",
+        "en": "When preparing to sleep."
+      },
+      "conditions": {
+        "ml": "വലതുഭാഗത്തായി കിടന്ന് ചൊല്ലുന്നതായി റിപ്പോർട്ട്; കളമോ എഴുത്തോ നിബന്ധനയില്ല.",
+        "en": "Lie on the right side before reciting, as reported; no writing or square."
+      },
+      "steps": {
+        "ml": [
+          "ഉറങ്ങാൻ പോകുമ്പോൾ വലതുവശത്ത് കിടക്കുക.",
+          "മുകളിലെ മുഴുവൻ ദുആ ചൊല്ലുക; കടം തീർക്കുന്ന പ്രായോഗിക നടപടികളും തുടരുക."
+        ]
+      }
+    },
+    {
+      "id": "hadith-abudawud-1493",
+      "name_ids": [
+        "PDF-HN-013"
+      ],
+      "purpose": "other",
+      "title": {
+        "ml": "അല്ലാഹുവിന്റെ നാമങ്ങൾ ഉപയോഗിച്ചുള്ള സമ്പൂർണ അഭ്യർത്ഥന — അബൂദാവൂദ് 1493",
+        "en": "Invocation through Divine Names — Sunan Abi Dawud 1493"
+      },
+      "arabic_original": "اللَّهُمَّ إِنِّي أَسْأَلُكَ أَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لاَ إِلَهَ إِلاَّ أَنْتَ الأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "translation": {
+        "ml": "«അല്ലാഹുവേ, നീ അല്ലാഹുവാണ്; നീയല്ലാതെ ആരാധ്യനില്ല; നീ ഏകനും സ്വയംപര്യാപ്തനുമാണ്; നീ പ്രസവിച്ചിട്ടില്ല, പ്രസവിക്കപ്പെട്ടിട്ടില്ല; നിനക്ക് തുല്യരാരുമില്ല» എന്നു സാക്ഷ്യപ്പെടുത്തി ചോദിക്കുന്ന വ്യക്തിയെ കേട്ടപ്പോൾ, അതിപ്രധാനമായ നാമത്താൽ അയാൾ അപേക്ഷിച്ചുവെന്ന് നബി ﷺ പറഞ്ഞതായി റിപ്പോർട്ട് ചെയ്യുന്നു. ഗ്രേഡായി അൽഅൽബാനിയുടെ Sahih എന്ന വിലയിരുത്തൽ സുന്നഹ്.കോമിൽ രേഖപ്പെടുത്തിയിരിക്കുന്നു. ഈ റിപ്പോർട്ട് ഓരോ ദിവസവും ചൊല്ലേണ്ട എണ്ണം നൽകുന്നില്ല.",
+        "en": "The Prophet reportedly heard a man invoke Allah through the testimony of oneness and the attributes of al-Ahad and al-Samad, and said he asked through the Name by which requests are granted. Sunnah.com displays an al-Albani Sahih grading. No daily repetition count is given in this narration."
+      },
+      "source_reference": "Sunan Abi Dawud 1493 (Sahih, al-Albani)",
+      "source_url": "https://sunnah.com/abudawud:1493",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ അറബി പദങ്ങൾ സ്രോതസ്സിലെ രൂപത്തിന് അടുത്തായി സൂക്ഷിച്ചു; സ്രോതസ്സിൽ ഇല്ലാത്ത എല്ലാ ഹറകത്തുകളും ഊഹിച്ച് ചേർത്തിട്ടില്ല. ഈ ദിക്ർ/ദുആയെ കാർഡുമായി ബന്ധപ്പെട്ട വിഷയമായി ചേർക്കുന്നു; അതുകൊണ്ട് ഈ നാമം ഒറ്റയ്ക്ക് ഓതുന്ന പ്രത്യേക എണ്ണമുള്ള വസീഫയാണെന്നു പറയുന്നില്ല.",
+        "en": "Hadith wording is retained in source-based orthography; unprinted vowel marks are not invented. The link to this name is thematic unless the name itself occurs in the wording, and no independent name-specific wazifa is inferred."
+      },
+      "count": {
+        "ml": "ഈ ഹദീസ് പ്രത്യേക ആവർത്തനഎണ്ണം പറയുന്നില്ല.",
+        "en": "This hadith gives no specific repetition count."
+      },
+      "timing": {
+        "ml": "ഈ ഹദീസ് നിശ്ചിത ദിവസങ്ങളുടെ എണ്ണമോ പ്രതിദിന സമയമോ നിർദേശിക്കുന്നില്ല.",
+        "en": "No fixed number of days or daily hour is specified in this hadith."
+      },
+      "conditions": {
+        "ml": "സനദിന്റെ ഗ്രേഡ് നൽകിയ പണ്ഡിതന്റെ പേരോടെ രേഖപ്പെടുത്തുന്നു; കളമോ പ്രത്യേക സംഖ്യയോ ഇല്ല.",
+        "en": "The grading is attributed to the named hadith scholar. No count or talisman appears."
+      },
+      "steps": {
+        "ml": [
+          "മുകളിലെ പൂർണ അഭ്യർത്ഥനവാക്യം വായിക്കുക.",
+          "ഹദീസിൽ ഇല്ലാത്ത സ്ഥിരമായ എണ്ണമോ ഫലത്തിന്റെ സമയപരിധിയോ ചേർക്കരുത്."
+        ]
+      }
+    }
+  ]
+}
