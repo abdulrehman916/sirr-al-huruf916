@@ -31,16 +31,32 @@ try {
       assert.ok(!html.includes('birhatiah-reader-guide'));
       if (research[id]) {
         const profile = research[id];
-        for (const group of ['evidence', 'scholarly', 'topics']) for (const entry of profile[group]) {
-          assert.ok(html.includes(escape(entry.translation[language])));
-          assert.ok(html.includes(entry.source_url));
+        for (const group of ['evidence', 'hadith', 'scholarly', 'topics']) for (const entry of profile[group] || []) {
+          assert.ok(html.includes(escape(entry.translation[language])), `${id}: missing ${group} ${entry.id} ${language}`);
+          assert.ok(html.includes(entry.source_url), `${id}: missing source link ${entry.id}`);
           assert.equal(entry.review_status, 'checked_against_digital_text');
         }
-        assert.ok(html.indexOf('data-section-b-group="scholarly"') < html.indexOf('data-section-b-group="topics"'));
-        assert.ok(html.indexOf('data-section-b-group="topics"') < html.indexOf('data-section-b-group="book"'));
-        assert.equal(profile.topics[0].count, null);
+        const researchGroups = ['evidence', 'hadith', 'scholarly', 'topics', 'book'];
+        const displayedPositions = researchGroups.map(group => html.indexOf(`data-section-b-group="${group}"`)).filter(position => position >= 0);
+        assert.deepEqual(displayedPositions, [...displayedPositions].sort((a, b) => a - b), `${id}: source groups are out of order`);
+        if (id === 'PDF-HN-001') assert.equal(profile.topics[0].count, null);
         assert.ok(!html.includes(profile.coverage[language === 'ml' ? 'en' : 'ml']));
       }
+    }
+  }
+  // Every externally researched profile must remain visible even where no scan chapter has been added.
+  for (const [id, profile] of Object.entries(research)) {
+    assert.equal(profile.name_id, id);
+    for (const language of ['ml', 'en']) {
+      const html = render(chapters[id] || null, id, language, { pdf_name_id: id });
+      assert.ok(html.includes(profile.explanation[language]), `${id}: missing research introduction ${language}`);
+      for (const group of ['evidence', 'hadith', 'scholarly', 'topics']) {
+        for (const entry of profile[group] || []) {
+          assert.ok(html.includes(escape(entry.translation[language])), `${id}: missing ${group} ${entry.id} ${language}`);
+          assert.ok(html.includes(entry.source_url), `${id}: missing verified URL ${entry.id}`);
+        }
+      }
+      if (profile.hadith?.length) assert.ok(html.includes('data-section-b-group="hadith"'), `${id}: missing hadith section`);
     }
   }
   assert.equal(render(chapters['PDF-HN-001'], 'PDF-HN-999', 'ml'), '');
