@@ -1,0 +1,469 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "160 കാർഡുകളിലെയും പ്രാഥമിക വിവരങ്ങൾക്കൊപ്പം അധിക തഫ്സീർ വായന നൽകുന്ന പത്താമത്തെ ഘട്ടം. ബാക്കിയുള്ള 10 വ്യത്യസ്ത കാർഡുകളിലേക്ക് ഇബ്നു കസീറിന്റെയും ത്വബരിയുടെയും 20 ചെറു മൂല അറബി ഉദ്ധരണികൾ ചേർത്തു. കൃത്യ ഖുർആൻ പദരൂപങ്ങൾ, പാരായണ വ്യത്യാസം, ദുആ/ക്രിയ, ചരിത്രവിവരണം എന്നിവ വേർതിരിച്ചു. മുഴുവൻ ഖവാസ്സ് ഗ്രന്ഥങ്ങൾ/പേജ്-സ്കാൻ പരിശോധന പൂർത്തിയായെന്ന് പറയാനാവില്ല.",
+    "en": "Tenth and final first-pass tafsir-depth phase for 10 remaining distinct card IDs, 20 individually verified Arabic excerpts from Ibn Kathir and al-Tabari. Distinguishes exact Quran names, verbs, Quranic prayer phrases, and qira'at differences. All 160 will have had a deep tafsir pass, but full historical manuscripts, page-by-page khawass, prescribed methods and diagrams remain incomplete."
+  },
+  "profiles": {
+    "PDF-HN-110": {
+      "name_id": "PDF-HN-110",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-110-katheer-85-15",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 85:15",
+            "en": "Ibn Kathir — Quran 85:15"
+          },
+          "arabic_original": "و ( المجيد ) فيه قراءتان الرفع على أنه صفة للرب عز وجل والجر على أنه صفة للعرش",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-മജീദ്» എന്നതിന് റഫ്അ് വായനയിൽ അല്ലാഹുവിന്റെ വിശേഷണവും ജർറ് വായനയിൽ അർശിന്റെ വിശേഷണവുമാകാമെന്ന് വ്യക്തമായി രേഖപ്പെടുത്തുന്നു. ഒരു വായന മാത്രം ശരിയെന്ന് പറയരുത്.",
+            "en": "Ibn Kathir explicitly records two grammatical readings of al-Majid: nominative describing the Lord, and genitive describing the Throne. They should not be conflated."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 85:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura85-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-110-tabary-85-15",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 85:15",
+            "en": "Al-Tabari — Quran 85:15"
+          },
+          "arabic_original": "والصواب من القول في ذلك عندنا أنهما قراءتان معروفتان، فبأيتهما قرأ القارئ فمصيب",
+          "translation": {
+            "ml": "ത്വബരി രണ്ട് പ്രസിദ്ധ പാരായണങ്ങളെയും അംഗീകരിക്കുന്നു; അവയുടെ വ്യാകരണവ്യത്യാസം മറച്ചുവച്ച് നിശ്ചിത രൂപത്തിന്റെ തെളിവ് മാത്രമായി ചിത്രീകരിക്കരുത്.",
+            "en": "Al-Tabari explicitly regards both readings as valid, so a source-critical card must preserve the difference between a Divine epithet and a Throne qualifier."
+          },
+          "source_reference": "تفسير الطبري — Quran 85:15",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura85-aya15.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-111": {
+      "name_id": "PDF-HN-111",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-111-katheer-22-7",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 22:7",
+            "en": "Ibn Kathir — Quran 22:7"
+          },
+          "arabic_original": "أي : يعيدهم بعد ما صاروا في قبورهم رمما",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മനുഷ്യരെ ഖബറിൽനിന്ന് വീണ്ടും ഉയിർപ്പിക്കുന്നതാണ് വചനത്തിന്റെ പ്രധാന വിഷയം എന്നു വിശദീകരിക്കുന്നു. «يَبْعَثُ» എന്ന ക്രിയയാണ്; «الْبَاعِثُ» എന്ന ഒറ്റ നാമം അല്ല.",
+            "en": "Ibn Kathir explains resurrection after decay in graves. Quran 22:7 uses the verb yab'athu, not the isolated definite Name al-Ba'ith."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:7",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya7.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-111-tabary-22-7",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 22:7",
+            "en": "Al-Tabari — Quran 22:7"
+          },
+          "arabic_original": "حينئذ من فيها من الأموات أحياء إلى موقف الحساب",
+          "translation": {
+            "ml": "ത്വബരി അന്ത്യദിവസത്തിൽ മരിച്ചവർ കണക്കെടുപ്പിനായി ഉയിർത്തെഴുന്നേൽക്കുന്നതായി വിശദീകരിക്കുന്നു; നിശ്ചിത ജപസംഖ്യ അല്ല ഇവിടെ നിർദേശം.",
+            "en": "Al-Tabari describes the dead being brought back to the place of reckoning; the passage is evidence for resurrection, not a prescribed numerical dhikr."
+          },
+          "source_reference": "تفسير الطبري — Quran 22:7",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura22-aya7.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-113": {
+      "name_id": "PDF-HN-113",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-113-katheer-39-62",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 39:62",
+            "en": "Ibn Kathir — Quran 39:62"
+          },
+          "arabic_original": "وكل تحت تدبيره وقهره وكلاءته",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ എല്ലാ സൃഷ്ടികളും അല്ലാഹുവിന്റെ നിയന്ത്രണത്തിലും സംരക്ഷണത്തിലും ഉൾപ്പെടുന്നു എന്നു വിശദീകരിക്കുന്നു. «وَكِيلٌ» എന്ന രൂപമാണ് വചനത്തിൽ; «الْوَكِيلُ» എന്ന സ്വതന്ത്ര നാമരൂപമല്ല.",
+            "en": "Ibn Kathir explains all creation remains under divine governance and guardianship. The verse says wakilun, a predicative form, not the standalone definite al-Wakil."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 39:62",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura39-aya62.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-113-tabary-39-62",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 39:62",
+            "en": "Al-Tabari — Quran 39:62"
+          },
+          "arabic_original": "وهو على كل شيء قيم بالحفظ والكلاءة",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹു എല്ലാറ്റിന്റെയും സംരക്ഷണവും കാര്യനിർവഹണവും ഏറ്റെടുത്തവനാണെന്ന് വിവരിക്കുന്നു; വിശ്വാസം ആശ്രയമായി മാറണം എന്നതാണ് ബന്ധം.",
+            "en": "Al-Tabari glosses wakil as taking charge of protection and care of all creation. The verse does not attach an occult numeric procedure."
+          },
+          "source_reference": "تفسير الطبري — Quran 39:62",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura39-aya62.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-116": {
+      "name_id": "PDF-HN-116",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-116-katheer-22-6",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 22:6",
+            "en": "Ibn Kathir — Quran 22:6"
+          },
+          "arabic_original": "أي : الخالق المدبر الفعال لما يشاء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «അൽ-ഹഖ്» യഥാർത്ഥ സ്രഷ്ടാവും കാര്യങ്ങൾ നിയന്ത്രിക്കുന്നവനുമായ അല്ലാഹുവാണെന്ന് വ്യാഖ്യാനിക്കുന്നു; വചനം മരിച്ചവരെ ഉയിർപ്പിക്കാനുള്ള കഴിവ് തെളിയിക്കുന്നു.",
+            "en": "Ibn Kathir interprets al-Haqq as the true Creator and Director who does what He wills; the surrounding argument is resurrection."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 22:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-116-tabary-22-6",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 22:6",
+            "en": "Al-Tabari — Quran 22:6"
+          },
+          "arabic_original": "ذلك هذا الذي ذكرت لكم أيها الناس من بدئنا خلقكم في بطون أمهاتكم",
+          "translation": {
+            "ml": "ത്വബരി ഗർഭത്തിലെ മനുഷ്യസൃഷ്ടിയും നിർജ്ജീവ ഭൂമിയിലേക്കുള്ള മഴയും പുനരുത്ഥാനത്തിന്റെ ഉദാഹരണങ്ങളായി വിശദീകരിക്കുന്നു. «الْحَقُّ» വചനത്തിൽ നേരിട്ട് വരുന്ന നാമമാണ്.",
+            "en": "Al-Tabari situates the direct epithet al-Haqq in Quran's argument from embryonic life and reviving barren ground to resurrection."
+          },
+          "source_reference": "تفسير الطبري — Quran 22:6",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura22-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-120": {
+      "name_id": "PDF-HN-120",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-120-katheer-64-17",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 64:17",
+            "en": "Ibn Kathir — Quran 64:17"
+          },
+          "arabic_original": "والله شكور ) أي : يجزي على القليل بالكثير",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ചെറിയ നന്മയ്ക്കും വലിയ പ്രതിഫലം നൽകുന്നവൻ എന്നാണ് അശ്-ശകൂറിനെ വിശദീകരിക്കുന്നത്; സംഭാവനയുടെയും മാപ്പിന്റെയും പശ്ചാത്തലമാണിത്. വചനത്തിൽ «شَكُورٌ» എന്ന രൂപമാണ്.",
+            "en": "Ibn Kathir interprets Shakur as rewarding a little good with much; the context is charity and forgiveness. Quran prints shakurun, not the isolated al-Shakur."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-120-tabary-64-17",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 64:17",
+            "en": "Al-Tabari — Quran 64:17"
+          },
+          "arabic_original": "والله ذو شكر لأهل الإنفاق في سبيله، بحسن الجزاء لهم",
+          "translation": {
+            "ml": "ത്വബരി അല്ലാഹുവിന്റെ മാർഗത്തിൽ ചെലവഴിക്കുന്നവർക്ക് നല്ല പ്രതിഫലം നൽകുന്നതായാണ് ശകൂറിന്റെ അർഥം വിശദീകരിക്കുന്നത്. ഇതിനെ ഏത് സാമ്പത്തികഫലത്തിന്റെയും ഉറപ്പായി മാറ്റരുത്.",
+            "en": "Al-Tabari interprets divine gratitude as rewarding sincere spending in God's path, not as a guaranteed investment return."
+          },
+          "source_reference": "تفسير الطبري — Quran 64:17",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura64-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-123": {
+      "name_id": "PDF-HN-123",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-123-katheer-96-3",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 96:3",
+            "en": "Ibn Kathir — Quran 96:3"
+          },
+          "arabic_original": "وأن من كرمه تعالى أن علم الإنسان ما لم يعلم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ വായനയും എഴുത്തും മനുഷ്യന് പഠിപ്പിച്ച ദൈവിക ഔദാര്യം വിശദീകരിക്കുന്നു. «الْأَكْرَمُ» എന്നാണ് 96:3-ലെ നേരിട്ടുള്ള പദം; കാർഡിലെ «الْأَجْوَدُ» അതേ പദമല്ല.",
+            "en": "Ibn Kathir relates divine generosity to teaching people what they did not know. The Quranic expression is al-Akram, not the distinct heading al-Ajwad."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 96:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura96-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-123-tabary-96-3",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 96:3",
+            "en": "Al-Tabari — Quran 96:3"
+          },
+          "arabic_original": "اقرأ يا محمد وربك الأكرم",
+          "translation": {
+            "ml": "ത്വബരി പ്രവാചകനോട് «വായിക്കുക» എന്ന കല്പനയും നിന്റെ രക്ഷിതാവ് ഏറ്റവും ഉദാരനാണെന്ന «അൽ-അക്‌റം» വിശേഷണവും വ്യക്തമാക്കുന്നു. അൽ-അജ്‌വദ് എന്ന സ്വതന്ത്ര നാമത്തിനുള്ള അക്ഷരശഃ ഖുർആൻ തെളിവല്ല ഇത്.",
+            "en": "Al-Tabari explains the command to read while naming Allah al-Akram; that verse must not be misrepresented as literally stating al-Ajwad."
+          },
+          "source_reference": "تفسير الطبري — Quran 96:3",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura96-aya3.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-124": {
+      "name_id": "PDF-HN-124",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-124-katheer-21-83",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 21:83",
+            "en": "Ibn Kathir — Quran 21:83"
+          },
+          "arabic_original": "وقد كان نبي الله أيوب ، عليه السلام ، غاية في الصبر",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അയ്യൂബ് നബിയുടെ പ്രയാസകാലത്തെ ക്ഷമയും പ്രാർത്ഥനയും വിവരിക്കുന്നു. ഇവിടെ «أَرْحَمُ الرَّاحِمِينَ» എന്ന പൂർണ താരതമ്യപ്രയോഗമാണ്; «الْأَرْحَمُ» എന്ന ഒറ്റ നാമപദമല്ല.",
+            "en": "Ibn Kathir recounts Ayyub's patience in suffering. The Quran says arham al-rahimin, a superlative construct, not an isolated definite name al-Arham."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 21:83",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura21-aya83.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-124-tabary-21-83",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 21:83",
+            "en": "Al-Tabari — Quran 21:83"
+          },
+          "arabic_original": "وكان الضر الذي أصابه والبلاء الذي نزل به , امتحانا من الله له واختبارا",
+          "translation": {
+            "ml": "ത്വബരി അയ്യൂബ് നബിയുടെ ദുഃഖത്തെ പരീക്ഷണത്തിന്റെ ഭാഗമായി വിവരിക്കുന്നു; ദീർഘമായ പല ചരിത്രവിവരണങ്ങളും സ്രോതസ്സിൽ വന്നതുകൊണ്ടു മാത്രം അവയെല്ലാം സഹീഹ് നബിവചനങ്ങളാകുന്നില്ല.",
+            "en": "Al-Tabari describes Ayyub's ordeal as a test. The many lengthy historical reports collected in tafsir should not all be promoted to authentic Prophetic reports."
+          },
+          "source_reference": "تفسير الطبري — Quran 21:83",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura21-aya83.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-136": {
+      "name_id": "PDF-HN-136",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-136-katheer-2-156",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 2:156",
+            "en": "Ibn Kathir — Quran 2:156"
+          },
+          "arabic_original": "وعلموا أنهم ملك لله يتصرف في عبيده بما يشاء",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദുരിതം നേരിടുമ്പോൾ «ഇന്നാ ലില്ലാഹ്…» ചൊല്ലുന്നത് അല്ലാഹുവിന്റെ ഉടമസ്ഥതയും അവനിലേക്കുള്ള മടക്കവും അംഗീകരിക്കലാണെന്ന് വിശദീകരിക്കുന്നു. ഇത് ഖുർആനിലെ പൂർണ വാക്യമാണ്; സ്വതന്ത്ര ദൈവനാമമല്ല.",
+            "en": "Ibn Kathir understands inna lillah as accepting Allah's ownership and our ultimate return during hardship; it is a Quranic statement, not an isolated Divine Name."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 2:156",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya156.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-136-tabary-2-156",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 2:156",
+            "en": "Al-Tabari — Quran 2:156"
+          },
+          "arabic_original": "إنا مماليك ربنا ومعبودنا أحياءً، ونحن عبيده",
+          "translation": {
+            "ml": "ത്വബരി ഈ ദുആ ദുരിതസമയത്ത് ക്ഷമയും പുനരുത്ഥാനവിശ്വാസവും പ്രകടിപ്പിക്കുന്ന വാക്കാണെന്ന് വിശദീകരിക്കുന്നു; സ്വതന്ത്ര നാമജപം പോലെയായി വേർതിരിക്കരുത്.",
+            "en": "Al-Tabari interprets the expression as patient submission, servitude to Allah and conviction about returning after death; it is not a separate Name."
+          },
+          "source_reference": "تفسير الطبري — Quran 2:156",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya156.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-137": {
+      "name_id": "PDF-HN-137",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-137-katheer-71-10",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 71:10",
+            "en": "Ibn Kathir — Quran 71:10"
+          },
+          "arabic_original": "ارجعوا إليه وارجعوا عما أنتم فيه وتوبوا إليه من قريب",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ നൂഹ് നബിയുടെ ജനങ്ങളോടുള്ള പാപമോചന ആഹ്വാനം തെറ്റുകളിൽനിന്നു മടങ്ങാനും പശ്ചാത്തപിക്കാനുമുള്ള കല്പനയാണെന്ന് പറയുന്നു. «اسْتَغْفِرُوا» ബഹുവചന കല്പനയാണ്, «أَسْتَغْفِرُ» എന്ന ഒന്നാംപുരുഷ വാക്യമല്ല.",
+            "en": "Ibn Kathir places istighfar in Noah's call to abandon sin and repent. The Quran says istaghfiru, a plural imperative, not the first-person card text astaghfiru."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-137-tabary-71-10",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 71:10",
+            "en": "Al-Tabari — Quran 71:10"
+          },
+          "arabic_original": "سلوا ربكم غفران ذنوبكم، وتوبوا إليه من كفركم",
+          "translation": {
+            "ml": "ത്വബരി വിശ്വാസസത്യത്തിലേക്കു മടങ്ങുകയും പാപങ്ങൾക്കു മാപ്പ് തേടുകയും ചെയ്യണമെന്നാണ് വിശദീകരിക്കുന്നത്; എണ്ണമോ സമയമോ ഈ വചനത്തിൽ നിശ്ചയിക്കുന്നില്ല.",
+            "en": "Al-Tabari connects asking forgiveness to turning away from unbelief and wrongdoing. No fixed count or hour is prescribed by this verse."
+          },
+          "source_reference": "تفسير الطبري — Quran 71:10",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura71-aya10.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    },
+    "PDF-HN-140": {
+      "name_id": "PDF-HN-140",
+      "evidence": [],
+      "scholarly": [
+        {
+          "id": "depth-x-140-katheer-14-40",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — 14:40",
+            "en": "Ibn Kathir — Quran 14:40"
+          },
+          "arabic_original": "أي : محافظا عليها مقيما لحدودها",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്രാഹിം നബി താനും സന്തതികളും നമസ്കാരം കൃത്യമായി നിലനിർത്താൻ അപേക്ഷിച്ചുവെന്ന് വിശദീകരിക്കുന്നു; ഇത് പൂർണ ഖുർആൻ ദുആയുടെ ഭാഗമാണ്.",
+            "en": "Ibn Kathir interprets the prayer as asking to observe Salah faithfully, including its limits, for himself and his descendants."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 14:40",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura14-aya40.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-x-140-tabary-14-40",
+          "title": {
+            "ml": "ഇമാം ത്വബരി — 14:40",
+            "en": "Al-Tabari — Quran 14:40"
+          },
+          "arabic_original": "واجعل أيضا من ذريتي مقيمي الصلاة لك",
+          "translation": {
+            "ml": "ത്വബരി ഇബ്രാഹിം നബി തന്റെ സന്തതികളെയും നമസ്കാരം നിലനിർത്തുന്നവരാക്കണമെന്നു പ്രാർത്ഥിച്ചതായി വിവരിക്കുന്നു; നിശ്ചിത പാരായണഎണ്ണം നിർദേശിക്കുന്നില്ല.",
+            "en": "Al-Tabari understands Ibrahim as asking that some descendants maintain the prescribed prayer; no independent numbered rite is given."
+          },
+          "source_reference": "تفسير الطبري — Quran 14:40",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura14-aya40.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "verbatim_tafsir_excerpt_with_critical_meaning",
+          "source_scope": {
+            "ml": "പണ്ഡിതന്റെ മൂല തഫ്സീറിലെ ചെറിയ അറബി ഉദ്ധരണിയും അതിന്റെ വിശദമായ ആശയവും. ഇത് പ്രത്യേകം സുന്നത്ത് ജപസംഖ്യയോ ഉറപ്പുള്ള ഫലവാഗ്ദാനമോ അല്ല.",
+            "en": "Short original-language quotation from the linked commentary plus individualized attributed interpretation. It creates no new Sunnah count, amulet or guaranteed effect."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1340,6 +1340,52 @@
           "Preserve its minor wording distinction from Quran 2:201."
         ]
       }
+    },
+    {
+      "id": "hadith-muslim-918a-calamity-full-istirja",
+      "name_ids": [
+        "PDF-HN-136"
+      ],
+      "purpose": "other",
+      "title": {
+        "ml": "ദുരിതസമയത്ത് നബി ﷺ പഠിപ്പിച്ച പൂർണ ദുആ — സഹീഹ് മുസ്ലിം 918a",
+        "en": "Full Prophetic prayer at a time of affliction — Sahih Muslim 918a"
+      },
+      "arabic_original": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا",
+      "translation": {
+        "ml": "ഞങ്ങൾ അല്ലാഹുവിന്റേതാണ്, അവനിലേക്കാണ് മടങ്ങുക. അല്ലാഹുവേ, എന്റെ ദുരിതത്തിൽ എനിക്ക് പ്രതിഫലം നൽകുകയും അതിനേക്കാൾ നല്ല പകരം നൽകുകയും ചെയ്യേണമേ. ഉമ്മു സലമ (റ) നിവേദനം ചെയ്ത സഹീഹ് മുസ്ലിം 918a-ൽ ദുരിതസമയത്ത് ഈ പൂർണ ദുആ ചൊല്ലുന്നവന് അല്ലാഹു അതിലും നല്ല പകരം നൽകുമെന്ന നബിവചനമുണ്ട്. ഖുർആൻ 2:156-ലെ വാചകത്തിനു ശേഷം ഹദീസിലുള്ള അധിക അപേക്ഷയും പ്രത്യേകം രേഖപ്പെടുത്തിയിട്ടുണ്ട്.",
+        "en": "Indeed we belong to Allah and will return to Him. O Allah, reward me in my affliction and replace it for me with something better. Umm Salama reports in Sahih Muslim 918a that the Prophet taught this supplication for affliction, with a promise from Allah of a better replacement. The Quranic wording of 2:156 is followed here by the additional words of the hadith."
+      },
+      "source_reference": "Sahih Muslim 918a (Book 11, Hadith 4)",
+      "source_url": "https://sunnah.com/muslim:918a",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഖുർആൻ 2:156-ലെ «ഇന്നാ ലില്ലാഹ്» വാചകത്തിനു പിന്നാലെ നബിവചനത്തിലെ പ്രത്യേക പ്രാർത്ഥന വരുന്നു; ഇത് ഹദീസിൽ ദുരിതസമയത്ത് പറയാനാണ് പഠിപ്പിക്കുന്നത്. 7/41/313 എന്ന പ്രത്യേക എണ്ണം ഇല്ല; ഈ ഹദീസിൽ പറഞ്ഞ നന്മയുടെ വാഗ്ദാനം അതിന്റെ കൃത്യ സന്ദർഭത്തിൽ മാത്രം വിവരിക്കുക.",
+        "en": "The first words are Quran 2:156; the following supplication is authentically reported in Muslim 918a for an actual calamity. No 7/41/313 count is prescribed, and the hadith's promised reward should not be detached from that context."
+      },
+      "count": {
+        "ml": "ദുരിതസമയത്ത് പറയുക; പ്രത്യേക ആവർത്തനഎണ്ണം നിവേദനത്തിലില്ല.",
+        "en": "Say on suffering a calamity; no numerical repeat count is specified."
+      },
+      "timing": {
+        "ml": "ദുരിതം നേരിടുമ്പോൾ; പ്രത്യേക നക്ഷത്രസമയമോ ദിവസമോ പറയുന്നില്ല.",
+        "en": "When afflicted; no special day or astrological hour is given."
+      },
+      "conditions": {
+        "ml": "ദുരിതസമയത്തെ പൂർണ ദുആ. തകിടോ കളമോ ആവശ്യമില്ല.",
+        "en": "The complete supplication at a time of loss; no amulet or magic square is required."
+      },
+      "steps": {
+        "ml": [
+          "ദുരിതം നേരിടുമ്പോൾ «ഇന്നാ ലില്ലാഹി വ ഇന്നാ ഇലൈഹി രാജിഊൻ» പറയുക.",
+          "മുസ്ലിം 918a-ലുള്ള «അല്ലാഹുമ്മ അജുർനി ഫീ മുസീബതീ...» എന്ന അധിക പ്രാർത്ഥനയും ചേർത്ത് പറയുക."
+        ],
+        "en": [
+          "When afflicted, recite the Quranic words 'Inna lillahi wa inna ilayhi raji'un'.",
+          "Continue with the authentically narrated 'Allahumma' prayer from Muslim 918a."
+        ]
+      }
     }
   ]
 }
