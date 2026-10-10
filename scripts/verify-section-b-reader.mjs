@@ -1330,6 +1330,88 @@ try {
     assert.ok(!html.includes(deepQuddus.evidence[0].id),'Card 004 entries must not contaminate card '+id);
   }
   console.log('PASS: al-Quddus card preserves 19 full Quran groups (23 verses), 16 original tafsir studies, two original exact-name verses, authentic hadith, Witr count and source-attributed Shams account in both languages.');
+
+  // Fifth encyclopedia-depth card: the single direct Divine Name must never be confused with many lexical salam greetings.
+  const encyclopaediaIV=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaIV.json','utf8'));
+  const salamId='PDF-HN-005';
+  const deepSalam=encyclopaediaIV.profiles[salamId];
+  assert.deepEqual(Object.keys(encyclopaediaIV.profiles),[salamId]);
+  assert.equal(deepSalam.evidence.length,26,'26 substantial full Quran passage groups are expected.');
+  assert.equal(deepSalam.evidence.reduce((n,e)=>n+e.verse_count,0),27,'Includes two full verses 13:23-24.');
+  assert.equal(deepSalam.scholarly.length,20,'20 source-attributed exegetical studies expected.');
+  assert.equal(deepSalam.hadith.length,2,'Two additional independently sourced Sahih Muslim narrations expected.');
+  assert.equal(new Set([...deepSalam.evidence,...deepSalam.scholarly,...deepSalam.hadith].map(x=>x.id)).size,48);
+  assert.equal(research[salamId].evidence.filter(e=>e.source_reference==='Quran 59:23').length,1,'Direct Name source retained once, not padded.');
+  const verses=new Set();
+  const individualCategories=new Set();
+  for(const item of deepSalam.evidence){
+    assert.equal(item.relationship,'related_word_or_theme_not_exact_divine_name');
+    assert.equal(item.review_status,'checked_against_digital_text');
+    assert.ok(item.arabic_original.length>=22 && item.verse_meaning.ml&&item.verse_meaning.en);
+    assert.ok(item.translation.ml&&item.translation.en&&item.source_scope.ml&&item.source_scope.en);
+    const ref=item.source_reference.match(/Quran (\d+:\d+(?:-\d+)?)/)?.[1];
+    assert.ok(ref&&!verses.has(ref)&&ref!=='59:23','Every full thematic passage distinct; no duplication of actual direct Name.');
+    verses.add(ref);
+    individualCategories.add(item.claim_kind);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(item.source_url));
+    for(const lang of ['ml','en']){
+      const html=render(chapters[salamId]||null,salamId,lang,{pdf_name_id:salamId});
+      for(const value of [item.arabic_original,item.verse_meaning[lang],item.translation[lang],item.source_scope[lang]]) {
+        assert.ok(html.includes(escape(value)), 'Complete Quran text or interpretation missing '+ref+'/'+lang);
+      }
+      assert.ok(html.includes(item.source_url),'Source missing '+ref);
+      assert.ok(sectionBEntrySearchText(item,lang).includes(item.verse_meaning[lang].toLocaleLowerCase()),'Verse meaning must be searchable.');
+    }
+  }
+  assert.ok(individualCategories.size>=10,'Study should cover many distinct peace themes, not repeated generic fillers.');
+  assert.equal(deepSalam.evidence.find(x=>x.source_reference.startsWith('Quran 13:23-24')).arabic_original.split('\n').length,2);
+  assert.equal(deepSalam.evidence.find(x=>x.source_reference.startsWith('Quran 36:58')).claim_kind,'divine_greeting_not_name');
+  const authors=new Set();
+  for(const entry of deepSalam.scholarly){
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.ok(entry.arabic_original.length>10 && entry.translation.ml && entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary|saadi)\//.test(entry.source_url));
+    authors.add(entry.source_url.match(/\/tafseer\/(katheer|qortobi|tabary|saadi)\//)[1]);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[salamId]||null,salamId,lang,{pdf_name_id:salamId});
+      assert.ok(html.includes(escape(entry.arabic_original))&&html.includes(escape(entry.translation[lang])));
+      assert.ok(html.includes(entry.source_url));
+    }
+  }
+  assert.deepEqual([...authors].sort(),['katheer','qortobi','saadi','tabary']);
+  assert.ok(deepSalam.scholarly.some(x=>x.translation.en.includes('three explanations')));
+  assert.ok(deepSalam.scholarly.some(x=>x.translation.en.includes('questionable')));
+  assert.ok(deepSalam.scholarly.some(x=>x.translation.en.includes('two grammatical')));
+  for(const hadith of deepSalam.hadith){
+    assert.equal(hadith.review_status,'checked_against_digital_text');
+    assert.ok(hadith.source_url.startsWith('https://sunnah.com/muslim:'));
+    assert.ok(hadith.arabic_original.length>65 && hadith.count.ml && hadith.count.en);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[salamId]||null,salamId,lang,{pdf_name_id:salamId});
+      assert.ok(html.includes(escape(hadith.arabic_original)),'Additional original Sahih Muslim matn missing '+hadith.id);
+      assert.ok(html.includes(escape(hadith.translation[lang])),'Hadith context missing '+hadith.id);
+      assert.ok(html.includes(hadith.source_url));
+    }
+  }
+  assert.deepEqual(deepSalam.hadith.map(x=>x.source_url),['https://sunnah.com/muslim:54a','https://sunnah.com/muslim:592a']);
+  assert.equal(bridge.identity_map['b-shams-brief-67-السلام'],'PDF-HN-0226','Historical original ownership unchanged.');
+  assert.deepEqual(bridge.secondary_matches[salamId],['b-shams-brief-67-السلام'],'Cross-link one existing historical account without multiplying independent sources.');
+  for(const lang of ['ml','en']){
+    const html=render(chapters[salamId]||null,salamId,lang,{pdf_name_id:salamId});
+    assert.ok(html.includes(research[salamId].hadith[0].source_url),'Original Muslim 591 post-salah remembrance must survive.');
+    assert.ok(html.includes(escape(research[salamId].hadith[0].arabic_original)),'Original 591 dhikr Arabic must survive.');
+    assert.ok(html.includes('https://sunnah.com/muslim:54a') && html.includes('https://sunnah.com/muslim:592a'));
+    assert.ok(html.includes(escape(historical.accounts['b-shams-brief-67-السلام'].arabic_original)),'Existing Shams account must also be discoverable on its primary Name card.');
+    assert.ok(html.includes(escape(bridge.secondary_scope[lang])),'Cross-link must be labeled and dangerous claims must not be recommended.');
+    assert.ok(html.includes(escape(encyclopaediaIV.scope[lang])),'Avoid claim of manuscript completeness.');
+  }
+  const oldSalam=render(chapters['PDF-HN-0226']||null,'PDF-HN-0226','en',{pdf_name_id:'PDF-HN-0226'});
+  assert.ok(oldSalam.includes(escape(historical.accounts['b-shams-brief-67-السلام'].arabic_original)),'Do not remove historical source from its original legacy card.');
+  for(const other of ['PDF-HN-001','PDF-HN-002','PDF-HN-003','PDF-HN-004']){
+    const html=render(chapters[other]||null,other,'en',{pdf_name_id:other});
+    assert.ok(!html.includes(deepSalam.evidence[0].id),'No cross-card leakage for al-Salam');
+  }
+  console.log('PASS: card 005 has 26 complete Quran peace contexts (27 ayat), 20 tafsir studies, 2 full Sahih Muslim reports, preserved Muslim 591 and a clearly disclosed historical Shams cross-link.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
