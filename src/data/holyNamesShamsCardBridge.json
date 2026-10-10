@@ -397,5 +397,14 @@
   "review_note": {
     "ml": "വിശദമായ അറബി പാഠം ഗ്രന്ഥത്തിൽ വന്നതുപോലെ നൽകുന്നു. അനുബന്ധ വിവരണം സ്വതന്ത്രമായി സുന്നത്ത് സ്ഥിരീകരിച്ചതല്ല. വിഷജന്തുക്കളെ കൈകാര്യം ചെയ്യൽ, ആരോഗ്യചികിത്സ ഒഴിവാക്കൽ, മറ്റുള്ളവർക്കു ദോഷം ചെയ്യൽ എന്നിവ സുരക്ഷിതമോ നിർദേശിക്കപ്പെട്ടതോ അല്ല.",
     "en": "The source-account wording is presented historically, not as an authenticated Sunnah prescription. Do not handle venomous animals, forgo medical treatment or harm another person in reliance on book claims."
+  },
+  "secondary_matches": {
+    "PDF-HN-005": [
+      "b-shams-brief-67-السلام"
+    ]
+  },
+  "secondary_scope": {
+    "ml": "ചരിത്രഗ്രന്ഥത്തിലെ ഒരേ അസ്സലാം ഖവാസ്സ് രേഖ കാർഡ് 005-ലും 0226-ലും ഉചിതമായി ബന്ധിപ്പിച്ചിരിക്കുന്നു. ഇത് രണ്ടാമത്തെ സ്വതന്ത്ര ഉറവിടമല്ല; പാമ്പ്/തേൾ/ആയുധ സുരക്ഷയെക്കുറിച്ചുള്ള അവകാശവാദങ്ങളെ യാഥാർഥ്യത്തിൽ പരീക്ഷിക്കരുത്.",
+    "en": "The same historical al-Salam passage is cross-linked to cards 005 and 0226 for discoverability; it is not a second independent manuscript source. Never test its claims about snakes, scorpions or weapon protection."
   }
 }
