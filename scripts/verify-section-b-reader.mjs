@@ -1074,7 +1074,7 @@ try {
   const encyclopaedia=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaI.json','utf8'));
   const rahmanId='PDF-HN-001';
   const deepRahman=encyclopaedia.profiles[rahmanId];
-  assert.ok(deepRahman && Object.keys(encyclopaedia.profiles).length===1);
+  assert.ok(deepRahman && Object.keys(encyclopaedia.profiles).length===2,'Encyclopedia must retain al-Rahman and add al-Rahim, without placeholders.');
   assert.equal(deepRahman.evidence.length,30,'First deep card should contain thirty complete Quran passages.');
   assert.equal(deepRahman.scholarly.length,15,'Fifteen distinct scholarly notes must be preserved.');
   assert.equal(new Set([...deepRahman.evidence,...deepRahman.scholarly].map(x=>x.id)).size,45);
@@ -1126,6 +1126,65 @@ try {
     assert.ok(!html.includes('encyclopedia-rahman-19-18'),'Names must be isolated.');
   }
   console.log('PASS: al-Rahman receives 30 complete Quran passages (33 ayat) and 15 additional source-attributed tafsir studies in both languages, with no cross-card leakage.');
+
+  // Second true encyclopedia-depth card: distinguish exact Divine Names from descriptive Rahim epithets.
+  const rahimId='PDF-HN-002';
+  const deepRahim=encyclopaedia.profiles[rahimId];
+  assert.ok(deepRahim && deepRahim.name_id===rahimId);
+  assert.equal(deepRahim.evidence.length,24,'Second card must have 24 individually sourced complete Quran verses.');
+  assert.equal(deepRahim.scholarly.length,20,'Second card must preserve 20 distinct source-based tafsir studies.');
+  assert.equal(new Set([...deepRahim.evidence,...deepRahim.scholarly].map(x=>x.id)).size,44);
+  const rahimExistingVerses=new Set(['1:3','33:43','59:22','2:128','28:16','59:10']);
+  const rahimVerses=new Set();
+  let definiteNames=0,descriptiveEpithets=0;
+  const stripVowels=text=>text.normalize('NFKD').replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,'').replace(/\u0640/g,'');
+  for(const entry of deepRahim.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'quran_explicit_rahim_form');
+    assert.ok(stripVowels(entry.arabic_original).includes('رحيم'),'Direct Rahim epithet missing: '+entry.id);
+    assert.ok(entry.arabic_original.length>30 && !entry.arabic_original.includes('...'));
+    assert.ok(entry.verse_meaning.ml && entry.verse_meaning.en && entry.translation.ml && entry.translation.en);
+    assert.ok(entry.source_scope.ml && entry.source_scope.en);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+    const ref=entry.source_reference.match(/Quran (\d+:\d+)/)?.[1];
+    assert.ok(ref && !rahimExistingVerses.has(ref) && !rahimVerses.has(ref),'Unexpected duplicate: '+ref);
+    rahimVerses.add(ref);
+    if(entry.name_occurrence_kind==='definite_name')definiteNames++;
+    else if(entry.name_occurrence_kind==='descriptive_epithet')descriptiveEpithets++;
+    else assert.fail('Unspecified grammar form: '+entry.id);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[rahimId],rahimId,lang,{pdf_name_id:rahimId});
+      for(const field of [entry.arabic_original,entry.verse_meaning[lang],entry.translation[lang],entry.source_scope[lang]]){
+        assert.ok(html.includes(escape(field)),'Missing Quran source text or meaning '+entry.id+'/'+lang);
+      }
+      assert.ok(html.includes(entry.source_url),'Missing tafsir link '+entry.id);
+      assert.ok(sectionBEntrySearchText(entry,lang).includes(entry.verse_meaning[lang].toLocaleLowerCase()));
+    }
+  }
+  assert.equal(definiteNames+descriptiveEpithets,24);
+  assert.ok(definiteNames>=6 && descriptiveEpithets>=10);
+  const scholarSources=new Set();
+  for(const entry of deepRahim.scholarly){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'attributed_scholarly_exegesis');
+    assert.ok(/\/tafseer\/(katheer|qortobi|tabary)\//.test(entry.source_url));
+    assert.ok(entry.arabic_original && entry.translation.ml && entry.translation.en);
+    const sourceMatch=entry.source_url.match(/\/tafseer\/(katheer|qortobi|tabary)\//);
+    scholarSources.add(sourceMatch[1]);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[rahimId],rahimId,lang,{pdf_name_id:rahimId});
+      assert.ok(html.includes(escape(entry.arabic_original)),'Missing Arabic scholarly quote '+entry.id+'/'+lang);
+      assert.ok(html.includes(escape(entry.translation[lang])),'Missing scholarly translation '+entry.id+'/'+lang);
+      assert.ok(html.includes(entry.source_url),'Missing source citation '+entry.id);
+    }
+  }
+  assert.deepEqual([...scholarSources].sort(),['katheer','qortobi','tabary']);
+  assert.ok(deepRahim.evidence.find(x=>x.source_reference.includes('Quran 2:54')).translation.en.includes('not an instruction'));
+  assert.ok(deepRahim.evidence.find(x=>x.source_reference.includes('Quran 4:64')).translation.en.includes('not itself an authenticated hadith'));
+  assert.ok(deepRahim.evidence.find(x=>x.source_reference.includes('Quran 39:53')).translation.en.includes('repentance'));
+  const firstCardEn=render(chapters[rahmanId],rahmanId,'en',{pdf_name_id:rahmanId});
+  assert.ok(!firstCardEn.includes(escape(deepRahim.evidence[0].arabic_original)),'Second encyclopedia card spilled onto the first.');
+  console.log('PASS: al-Rahim has 24 whole Arabic Quran verses, 20 attributed tafsir studies, bilingual context, grammar distinction and source independence.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
