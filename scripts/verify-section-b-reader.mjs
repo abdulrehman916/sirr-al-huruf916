@@ -95,7 +95,7 @@ try {
   const topical = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuas.json', 'utf8'));
   const sourceIds = new Set();
   const allowedPurposes = new Set(['provision', 'protection', 'knowledge', 'purification', 'relief', 'authority', 'relationships', 'other']);
-  assert.equal(prophetic.entries.length, 21);
+  assert.equal(prophetic.entries.length, 25);
   assert.ok(topical.topics.length >= 18);
   const propheticKnownIds = new Set(JSON.parse(fs.readFileSync('docs/section-b-coverage.json', 'utf8')).cards.map(card => card.name_id));
   for (const entry of prophetic.entries) {
@@ -272,6 +272,68 @@ try {
   assert.equal(further.profiles['PDF-HN-060'].evidence[0].claim_kind,'theme_not_independent_name');
   assert.equal(further.profiles['PDF-HN-139'].entry_kind,'formula');
   console.log('PASS: 48 further headings (100 unique profiles total), 55 Quran links, 19 attributed tafsir accounts and 5 linked Quranic practice explanations.');
+  // Final first-pass inventory expansion: every one of the 160 stored card IDs
+  // must have its own distinct, attributed research profile, with safe bilingual rendering.
+  const remaining = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBRemainingResearch.json', 'utf8'));
+  const remainingIds = Object.keys(remaining.profiles);
+  assert.equal(remainingIds.length, 60);
+  const everyResearchId = [...Object.keys(research), ...newIds, ...Object.keys(expanded), ...furtherIds, ...remainingIds];
+  assert.equal(everyResearchId.length, 160);
+  assert.equal(new Set(everyResearchId).size, 160, 'No name may overwrite a prior scholarly profile.');
+  assert.deepEqual(new Set(everyResearchId), coveredIds, 'Every stored card must have a corresponding research profile.');
+  let quranLinks = 0;
+  const allowedKinds = new Set(['direct', 'direct_phrase', 'descriptive', 'verb_theme', 'thematic', 'linguistic_comparison']);
+  for(const [id,profile] of Object.entries(remaining.profiles)) {
+    assert.equal(profile.name_id,id);
+    assert.ok(allowedKinds.has(profile.claim_kind), `Unknown source-form category on ${id}`);
+    assert.ok(profile.heading_arabic && profile.source_label && profile.explanation.ml && profile.explanation.en);
+    assert.ok(profile.coverage.en.includes('not yet finished'));
+    assert.ok(profile.evidence.length > 0);
+    const used = new Set();
+    for(const entry of profile.evidence) {
+      quranLinks++;
+      assert.ok(!used.has(entry.id), `Duplicate Quran entry on ${id}`);
+      used.add(entry.id);
+      assert.ok(entry.source_url.startsWith('https://quran.com/'));
+      assert.equal(entry.review_status,'checked_against_digital_text');
+      assert.ok(entry.arabic_original.length > 10 && entry.translation.ml && entry.translation.en);
+      if (entry.source_reference.includes('(excerpt)')) {
+        assert.ok(entry.source_scope.en.includes('relevant portion'), `Excerpt must be explicit on ${id}`);
+      }
+    }
+    for(const language of ['ml','en']) {
+      const html=render(null,id,language,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="evidence"'),`Missing Quran grouping for ${id}`);
+      assert.ok(html.includes(escape(profile.explanation[language])),`Missing ${language} introduction ${id}`);
+      for(const entry of profile.evidence){
+        assert.ok(html.includes(escape(entry.arabic_original)),`Missing original Quran text ${id}/${entry.id}`);
+        assert.ok(html.includes(escape(entry.translation[language])),`Missing translation ${id}/${entry.id}/${language}`);
+        assert.ok(html.includes(entry.source_url),`Missing public source link ${id}/${entry.id}`);
+      }
+    }
+  }
+  assert.equal(quranLinks,69,'All 69 source passages across 60 cards must be retained.');
+  for(const [id,required] of [
+    ['hadith-muslim-2719a-muqaddim-muakhkhir','الْمُقَدِّمُ'],
+    ['hadith-bukhari-3116-allah-giver','الْمُعْطِي'],
+    ['hadith-abudawud-1495-al-mannan','الْمَنَّانُ'],
+    ['hadith-bukhari-3113-bedtime-34-33-33','اللَّهُ أَكْبَرُ']
+  ]) {
+    const h=prophetic.entries.find(x=>x.id===id);
+    assert.ok(h?.arabic_original?.includes(required),`Missing precise new hadith text: ${id}`);
+    assert.ok(h.count.ml && h.count.en && h.timing.ml && h.conditions.en);
+    for(const nameId of h.name_ids) for (const language of ['ml','en']) {
+      const html=render(null,nameId,language,{pdf_name_id:nameId});
+      assert.ok(html.includes(escape(h.arabic_original)),`Missing new hadith Arabic: ${id}/${nameId}`);
+      assert.ok(html.includes(escape(h.translation[language])),`Missing new hadith meaning: ${id}/${language}`);
+      assert.ok(html.includes(h.source_url),`Missing hadith citation ${id}/${nameId}`);
+    }
+  }
+  const bedtime100=prophetic.entries.find(x=>x.id==='hadith-bukhari-3113-bedtime-34-33-33');
+  assert.ok(bedtime100.count.en.includes('34') && bedtime100.count.en.includes('33'));
+  const afterPrayer100=prophetic.entries.find(x=>x.id==='hadith-muslim-597a');
+  assert.ok(afterPrayer100.count.en.includes('33') && afterPrayer100.count.en.includes('once'));
+  console.log('PASS: 160 distinct Section B card introductions, 60 last-phase profiles, 69 Quran links and four new authentic source-attributed hadith reports.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();

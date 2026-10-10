@@ -184,7 +184,8 @@
       "name_ids": [
         "PDF-HN-003",
         "PDF-HN-013",
-        "PDF-HN-130"
+        "PDF-HN-130",
+        "PDF-HN-121"
       ],
       "purpose": "protection",
       "title": {
@@ -622,7 +623,9 @@
         "PDF-HN-073",
         "PDF-HN-074",
         "PDF-HN-075",
-        "PDF-HN-076"
+        "PDF-HN-076",
+        "PDF-HN-069",
+        "PDF-HN-070"
       ],
       "purpose": "provision",
       "title": {
@@ -990,6 +993,201 @@
           "url": "https://quran.com/114"
         }
       ]
+    },
+    {
+      "id": "hadith-muslim-2719a-muqaddim-muakhkhir",
+      "name_ids": [
+        "PDF-HN-069",
+        "PDF-HN-070",
+        "PDF-HN-073",
+        "PDF-HN-074"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "അൽ-മുഖദ്ദിം, അൽ-മുഅഖ്ഖിർ: നബിയുടെ പാപമോചനദുആയുടെ പൂർണവാചകം",
+        "en": "Directly named al-Muqaddim and al-Mu'akhkhir in full Prophetic prayer"
+      },
+      "arabic_original": "اللَّهُمَّ اغْفِرْ لِي خَطِيئَتِي وَجَهْلِي وَإِسْرَافِي فِي أَمْرِي وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي اللَّهُمَّ اغْفِرْ لِي جِدِّي وَهَزْلِي وَخَطَئِي وَعَمْدِي وَكُلُّ ذَلِكَ عِنْدِي اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ وَأَنْتَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": {
+        "ml": "അല്ലാഹുവേ, എന്റെ പിഴവുകളും അറിവില്ലായ്മയും കാര്യങ്ങളിൽ ഉണ്ടായ അതിരുകടക്കലും എനിക്കുതന്നെ അറിയാത്ത പാപങ്ങളും ക്ഷമിക്കേണമേ. ഗൗരവത്തിലോ കളിയിലോ, അബദ്ധത്തിലോ മനപ്പൂർവമോ സംഭവിച്ചതെല്ലാം ക്ഷമിക്കേണമേ. ഞാൻ മുമ്പ് ചെയ്തതും പിന്നീട് ചെയ്തതും മറച്ചുവെച്ചതും പരസ്യമാക്കിയതും എനിക്ക് അറിവില്ലാത്തതും ക്ഷമിക്കേണമേ. നീയാണ് മുൻനിരയിൽ നിർത്തുന്നവനും പിന്നിലാക്കുന്നവനും; നീ എല്ലാറ്റിനും കഴിവുള്ളവനാണ്. ഈ പൂർണ ദുആയെക്കുറിച്ചാണ് മുസ്ലിം 2719a; ഓരോ നാമവും ഒറ്റയ്ക്ക് കൃത്യസംഖ്യയിൽ ചൊല്ലുക എന്ന നിർദേശമല്ല.",
+        "en": "O Allah, forgive my mistakes, ignorance, excesses and what You know of me better than I do. Forgive what I did seriously or jokingly, mistakenly or deliberately; all are mine. Forgive what I did earlier or later, secretly or openly, and what You know best. You are the One who brings forward and puts back; You have power over all things. The two names occur directly in this full supplication, without an independent count."
+      },
+      "source_reference": "Sahih Muslim 2719a",
+      "source_url": "https://sunnah.com/muslim:2719a",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ പൂർണ വാചകത്തിന്റെയോ നിർദിഷ്ട ദിക്‌റിന്റെയോ സന്ദർഭം സൂക്ഷിച്ചിരിക്കുന്നു; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കണമെന്ന വ്യാഖ്യാനമല്ല.",
+        "en": "The report applies to its exact wording or context; no independent name-only repetition is inferred."
+      },
+      "count": {
+        "ml": "പ്രത്യേക ആവർത്തനഎണ്ണം ഈ നിവേദനത്തിൽ ഇല്ല.",
+        "en": "No fixed repetition count is stated in this report."
+      },
+      "timing": {
+        "ml": "നിശ്ചിത ദിവസം/മണിക്കൂർ പറഞ്ഞിട്ടില്ല.",
+        "en": "No fixed date, hour or number of days stated."
+      },
+      "conditions": {
+        "ml": "മുഴുവൻ അപേക്ഷാവാചകം; പ്രത്യേക കളമോ തകിടോ ഇല്ല.",
+        "en": "The full supplication; no magic square or amulet."
+      },
+      "steps": {
+        "ml": [
+          "അറബിയിലെ പാപമോചന അഭ്യർത്ഥനകൾ പൂർണമായി വായിക്കുക.",
+          "അവസാനത്തെ രണ്ട് നാമങ്ങളെ സ്വതന്ത്ര എണ്ണമുള്ള വസീഫയായി മാറ്റരുത്."
+        ],
+        "en": [
+          "Recite the complete forgiveness prayer as taught.",
+          "Do not separate the closing Names into an invented numbered wazifa."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-3116-allah-giver",
+      "name_ids": [
+        "PDF-HN-0200",
+        "PDF-HN-0148",
+        "PDF-HN-0149"
+      ],
+      "purpose": "knowledge",
+      "title": {
+        "ml": "അല്ലാഹുവാണ് ദാതാവ്; നബി ﷺ വിഭജിക്കുന്നവൻ — ബുഖാരി 3116",
+        "en": "Allah is the Giver; the Prophet distributes — Bukhari 3116"
+      },
+      "arabic_original": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ، وَاللَّهُ الْمُعْطِي وَأَنَا الْقَاسِمُ، وَلاَ تَزَالُ هَذِهِ الْأُمَّةُ ظَاهِرِينَ عَلَى مَنْ خَالَفَهُمْ حَتَّى يَأْتِيَ أَمْرُ اللَّهِ وَهُمْ ظَاهِرُونَ",
+      "translation": {
+        "ml": "അല്ലാഹു ഒരാൾക്ക് നന്മ ഉദ്ദേശിക്കുമ്പോൾ മതത്തിൽ അവന് അറിവ് നൽകുന്നു. അല്ലാഹുവാണ് ദാതാവ്; ഞാൻ വിഭജിക്കുന്നവനാണ്. ഈ സമൂഹം അല്ലാഹുവിന്റെ തീരുമാനം വരുന്നതുവരെ എതിർക്കുന്നവർക്കുമേൽ നിലനിൽക്കും. ബുഖാരി 3116-ൽ «اللَّهُ الْمُعْطِي» നേരിട്ട് വരുന്നുണ്ടെങ്കിലും ഓരോ ദിവസവും ദാതാവെന്ന നാമം നിശ്ചിത എണ്ണത്തിൽ പറയണമെന്ന് ഹദീസ് നിർദേശിക്കുന്നില്ല.",
+        "en": "If Allah intends good for someone, He grants understanding of religion. Allah is the Giver and the Prophet is the distributor. The community continues to stand against its opponents until Allah's command comes. The phrase Allah al-Mu'ti occurs explicitly, but the report does not prescribe repeating the Name a set number of times."
+      },
+      "source_reference": "Sahih al-Bukhari 3116",
+      "source_url": "https://sunnah.com/bukhari:3116",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഇത് ദുആയല്ല, നബി ﷺ പറഞ്ഞ അറിവിനെയും വിതരണത്തെയും സംബന്ധിച്ച പ്രസ്താവനയാണ്. «الْمُعْطِي» നാമരൂപം നേരിട്ട് റിപ്പോർട്ടിലുണ്ട്.",
+        "en": "This is an explanatory Prophetic statement rather than a supplication. The exact form al-Mu'ti is present in the hadith."
+      },
+      "count": {
+        "ml": "ജപിക്കുന്നതിന് എണ്ണമൊന്നും നിർദേശിച്ചിട്ടില്ല; ഇതൊരു നബിവചന പ്രസ്താവനയാണ്.",
+        "en": "This is a Prophetic statement, not a numerically prescribed recitation."
+      },
+      "timing": {
+        "ml": "പ്രത്യേക സമയനിയമം ഇല്ല.",
+        "en": "No recitation schedule is stipulated."
+      },
+      "conditions": {
+        "ml": "മതബോധവും ദാനവും സംബന്ധിച്ച പ്രസ്താവന; തകിട്/കളം ഒന്നുമില്ല.",
+        "en": "A statement about religious understanding and divine giving; no amulet or square."
+      },
+      "steps": {
+        "ml": [
+          "ഹദീസിലെ പ്രസ്താവന വായിച്ച് അതിന്റെ അർഥം മനസ്സിലാക്കുക."
+        ],
+        "en": [
+          "Read the reported statement in its educational context."
+        ]
+      }
+    },
+    {
+      "id": "hadith-abudawud-1495-al-mannan",
+      "name_ids": [
+        "PDF-HN-0193",
+        "PDF-HN-062",
+        "PDF-HN-063",
+        "PDF-HN-094",
+        "PDF-HN-013"
+      ],
+      "purpose": "other",
+      "title": {
+        "ml": "അൽ-മന്നാൻ, ബദീഅ്, യാ ഹയ്യു യാ ഖയ്യൂം — ദുആയുടെ പൂർണ പാഠം",
+        "en": "Full dua invoking al-Mannan, Originator, al-Hayy and al-Qayyum"
+      },
+      "arabic_original": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ الْمَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ يَا حَيُّ يَا قَيُّومُ",
+      "translation": {
+        "ml": "അല്ലാഹുവേ, എല്ലാ സ്തുതിയും നിനക്കുള്ളതാണെന്ന് സാക്ഷ്യപ്പെടുത്തി ഞാൻ നിന്നോട് ചോദിക്കുന്നു. നീയല്ലാതെ ആരാധ്യനില്ല; നീ മഹൗദാര്യത്തോടെ നൽകുന്ന അൽ-മന്നാൻ, ആകാശഭൂമികളുടെ അനുപമ സ്രഷ്ടാവ്. മഹത്വത്തിന്റെയും ആദരവിന്റെയും ഉടമയേ, നിത്യജീവനായവനേ, സർവം നിലനിർത്തുന്നവനേ! ഈ വാക്കുകളിൽ ഒരാൾ പ്രാർത്ഥിച്ചത് കേട്ട നബി ﷺ, മഹത്തായ നാമം ഉപയോഗിച്ചാണ് അദ്ദേഹം അപേക്ഷിച്ചതെന്ന് പറഞ്ഞതായി ഹദീസിലുണ്ട്. സുന്നഹ്.കോം അൽഅൽബാനിയുടെ സഹീഹ് ഗ്രേഡ് രേഖപ്പെടുത്തുന്നു. നിശ്ചിത ആവർത്തനഎണ്ണമില്ല.",
+        "en": "O Allah, I ask You, for praise belongs to You; no deity but You, the Bountiful Bestower, Originator of heaven and earth, Lord of Majesty and Honor, Ever-Living, Sustainer. The Prophet reportedly said the man had invoked Allah through His Great Name, by which requests are answered. Sunnah.com gives al-Albani's Sahih grading. No fixed repetition count is imposed."
+      },
+      "source_reference": "Sunan Abi Dawud 1495 (Sahih according to al-Albani)",
+      "source_url": "https://sunnah.com/abudawud:1495",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ പൂർണ വാചകത്തിന്റെയോ നിർദിഷ്ട ദിക്‌റിന്റെയോ സന്ദർഭം സൂക്ഷിച്ചിരിക്കുന്നു; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കണമെന്ന വ്യാഖ്യാനമല്ല.",
+        "en": "The report applies to its exact wording or context; no independent name-only repetition is inferred."
+      },
+      "count": {
+        "ml": "പ്രത്യേക ആവർത്തനഎണ്ണം റിപ്പോർട്ടിൽ ഇല്ല.",
+        "en": "No specific repetition number is given."
+      },
+      "timing": {
+        "ml": "ഒരാൾ നമസ്കാരത്തിനുശേഷം പ്രാർത്ഥിച്ച സംഭവമാണ് റിപ്പോർട്ട്; എല്ലാദിവസവും വേണമെന്ന നിർദേശം ഇല്ല.",
+        "en": "In the reported setting, a man was praying and made the supplication; no recurring schedule is required."
+      },
+      "conditions": {
+        "ml": "പൂർണ അറബി ദുആ പ്രാർത്ഥിക്കാം; പ്രത്യേക കളമോ അക്ഷരസംഖ്യയോ റിപ്പോർട്ടില്ല.",
+        "en": "Recite the full supplication; no letter count, amulet or square is prescribed."
+      },
+      "steps": {
+        "ml": [
+          "അല്ലാഹുവിനെ സ്തുതിച്ച് ഹദീസിലുള്ള മുഴുവൻ അപേക്ഷ പറയുക.",
+          "അൽ-മന്നാൻ നാമത്തിന് വേറെ രഹസ്യസംഖ്യ റിപ്പോർട്ടിലില്ലെന്ന് ശ്രദ്ധിക്കുക."
+        ],
+        "en": [
+          "Use the full praise-and-supplication wording.",
+          "Do not assign a secret standalone count to al-Mannan from this report."
+        ]
+      }
+    },
+    {
+      "id": "hadith-bukhari-3113-bedtime-34-33-33",
+      "name_ids": [
+        "PDF-HN-121",
+        "PDF-HN-132",
+        "PDF-HN-013"
+      ],
+      "purpose": "purification",
+      "title": {
+        "ml": "കിടക്കുമ്പോഴുള്ള 34 തക്ബീർ + 33 തഹ്മീദ് + 33 തസ്ബീഹ്",
+        "en": "Bedtime: 34 takbir + 33 tahmid + 33 tasbih"
+      },
+      "arabic_original": "اللَّهُ أَكْبَرُ\nالْحَمْدُ لِلَّهِ\nسُبْحَانَ اللَّهِ",
+      "translation": {
+        "ml": "ഫാത്വിമ (റ)യും അലി (റ)യും ദൈനംദിന ജോലിയുടെ ബുദ്ധിമുട്ട് പറഞ്ഞപ്പോൾ, നബി ﷺ ഉറങ്ങാൻ കിടക്കുമ്പോൾ «അല്ലാഹു അക്ബർ» 34 തവണ, «അൽഹംദുലില്ലാഹ്» 33 തവണ, «സുബ്ഹാനല്ലാഹ്» 33 തവണ ചൊല്ലാൻ പഠിപ്പിച്ചു; ആവശ്യപ്പെട്ട സേവകനെക്കാൾ ഇത് നല്ലതാണെന്ന് പറഞ്ഞു. ഈ 34+33+33 എന്ന ഉറക്കസമയത്തെ ക്രമം നമസ്കാരശേഷമുള്ള 33+33+33+1 എന്ന വേറിട്ട ക്രമവുമായി കലർത്തരുത്.",
+        "en": "After Fatima and Ali spoke about hard work, the Prophet taught 34 takbirs, 33 praises and 33 glorifications when going to bed, saying this was better than the servant they requested. This bedtime 34+33+33 method differs from the after-prayer 33+33+33+1 formula."
+      },
+      "source_reference": "Sahih al-Bukhari 3113",
+      "source_url": "https://sunnah.com/bukhari:3113",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിലെ പൂർണ വാചകത്തിന്റെയോ നിർദിഷ്ട ദിക്‌റിന്റെയോ സന്ദർഭം സൂക്ഷിച്ചിരിക്കുന്നു; നാമം ഒറ്റയ്ക്ക് പ്രത്യേക എണ്ണത്തിൽ ജപിക്കണമെന്ന വ്യാഖ്യാനമല്ല.",
+        "en": "The report applies to its exact wording or context; no independent name-only repetition is inferred."
+      },
+      "count": {
+        "ml": "അല്ലാഹു അക്ബർ 34; അൽഹംദുലില്ലാഹ് 33; സുബ്ഹാനല്ലാഹ് 33 — ആകെ 100.",
+        "en": "Allahu Akbar 34; Alhamdulillah 33; Subhan Allah 33 — total 100."
+      },
+      "timing": {
+        "ml": "ഉറങ്ങാൻ കിടക്കുമ്പോൾ.",
+        "en": "When going to bed."
+      },
+      "conditions": {
+        "ml": "മൂന്ന് വാചകങ്ങൾ ഓരോന്നും അതത് എണ്ണത്തിൽ; പ്രത്യേക വഫ്ഖോ തകിടോ ഇല്ല.",
+        "en": "Each exact formula has its own count; no written square or amulet."
+      },
+      "steps": {
+        "ml": [
+          "കിടക്കുമ്പോൾ «അല്ലാഹു അക്ബർ» 34 തവണ പറയുക.",
+          "«അൽഹംദുലില്ലാഹ്» 33 തവണ ചൊല്ലുക.",
+          "«സുബ്ഹാനല്ലാഹ്» 33 തവണ ചൊല്ലുക."
+        ],
+        "en": [
+          "At bedtime say Allahu Akbar 34 times.",
+          "Say Alhamdulillah 33 times.",
+          "Say Subhan Allah 33 times."
+        ]
+      }
     }
   ]
 }
