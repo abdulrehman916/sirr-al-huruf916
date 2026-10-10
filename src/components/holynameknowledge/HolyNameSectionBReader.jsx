@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import research from '@/data/holyNamesSectionBResearch.json';
 import topicalDuas from '@/data/holyNamesSectionBTopicalDuas.json';
+import propheticDhikr from '@/data/holyNamesSectionBPropheticDhikr.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import HolyOneSourceVisuals from './HolyOneSourceVisuals';
@@ -49,29 +50,31 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const t = value => value?.[language] || '';
   const profile = research[nameId]?.name_id === nameId ? research[nameId] : null;
   const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
+  const linkedPropheticDhikr = (propheticDhikr.entries || []).filter(entry => entry.name_ids?.includes(nameId));
   const checkedChapter = chapter?.name_id === nameId && chapter.review_status === 'checked_against_scan' ? chapter : null;
   const runtime = sectionBReading(card, nameId);
   if (!profile && !checkedChapter && (!card || card.pdf_name_id !== nameId)) return null;
   const groups = [
     { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...runtime.evidence] },
     { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: profile?.hadith || [] },
+    { key: 'prophetic', title: ml ? 'നബിവചന ദിക്ർ / ദുആ — എണ്ണവും സമയവും ക്രമവും' : 'Prophetic dhikr and supplications — count, timing and procedure', items: linkedPropheticDhikr },
     { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...runtime.topics] },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
     { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
   ];
   const term = query.trim().toLocaleLowerCase();
-  const matches = entry => !term || [t(entry.title), t(entry.translation), entry.arabic_original, entry.source_url, entry.source_passage, t(entry.passage_translation), t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference, ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`), ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`), checkedChapter?.source_title, t(entry.timing), t(entry.conditions), ...(Array.isArray(t(entry.steps)) ? t(entry.steps) : [])].filter(Boolean).join(' ').toLocaleLowerCase().includes(term);
-  const visible = groups.map(group => ({ ...group, items: group.items.filter(entry => matches(entry) && (group.key !== 'topics' || purpose === 'all' || (entry.purpose || 'other') === purpose)) }));
-  const availablePurposes = new Set(groups.find(group => group.key === 'topics').items.map(entry => entry.purpose || 'other'));
+  const matches = entry => !term || [t(entry.title), t(entry.translation), entry.arabic_original, entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation), t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference, ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`), ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`), checkedChapter?.source_title, t(entry.timing), t(entry.conditions), ...(Array.isArray(t(entry.steps)) ? t(entry.steps) : [])].filter(Boolean).join(' ').toLocaleLowerCase().includes(term);
+  const visible = groups.map(group => ({ ...group, items: group.items.filter(entry => matches(entry) && (!['topics', 'prophetic'].includes(group.key) || purpose === 'all' || (entry.purpose || 'other') === purpose)) }));
+  const availablePurposes = new Set(groups.filter(group => ['topics', 'prophetic'].includes(group.key)).flatMap(group => group.items.map(entry => entry.purpose || 'other')));
   return <section className={`space-y-5 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="section-b-reader">
     <h2 className="text-lg text-yellow-200 font-semibold">{ml ? 'നാമത്തെക്കുറിച്ചുള്ള വിശദമായ വായന' : 'Detailed reading about this name'}</h2>
     <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
     {card && <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-white/70" aria-label={ml ? 'കാർഡ് ഉറവിട സംഗ്രഹം' : 'Card source summary'}>
-      <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'സ്രോതസ്സ് രേഖകൾ' : 'Source entries'}</span>{runtime.evidence.length + runtime.scholarly.length + runtime.topics.length + (profile?.evidence?.length || 0) + (profile?.hadith?.length || 0) + (profile?.scholarly?.length || 0) + (profile?.topics?.length || 0)}</div>
+      <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'സ്രോതസ്സ് രേഖകൾ' : 'Source entries'}</span>{runtime.evidence.length + runtime.scholarly.length + runtime.topics.length + (profile?.evidence?.length || 0) + (profile?.hadith?.length || 0) + (profile?.scholarly?.length || 0) + (profile?.topics?.length || 0) + linkedQuranDuas.length + linkedPropheticDhikr.length}</div>
       <div className="rounded-lg border border-amber-500/20 p-2"><span className="block text-amber-200">{ml ? 'വീണ്ടും പരിശോധിക്കണം' : 'Recheck'}</span>{runtime.pending}</div>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'ഖുർആൻ' : 'Quran'}</span>{runtime.evidence.length + (profile?.evidence?.length || 0)}</div>
-      <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'വിഷയങ്ങൾ' : 'Topics'}</span>{runtime.topics.length + (profile?.topics?.length || 0)}</div>
+      <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'വിഷയങ്ങൾ' : 'Topics'}</span>{runtime.topics.length + (profile?.topics?.length || 0) + linkedQuranDuas.length + linkedPropheticDhikr.length}</div>
     </div>}
     {card && <p className="text-sm text-white/60 leading-loose">{ml ? 'താഴെ സ്രോതസ്സുമായി പരിശോധിച്ചതായി രേഖപ്പെടുത്തിയ വിവരങ്ങൾ വായിക്കാം. ഗ്രന്ഥത്തിലെ പ്രയോഗങ്ങൾ അതത് ഗ്രന്ഥത്തിന്റെ വിവരണങ്ങളാണ്; ഖുർആൻ / ഹദീസ് നിർദേശങ്ങളുമായി കലർത്തിയിട്ടില്ല. എല്ലാ ഗ്രന്ഥങ്ങളുടെയും ഗവേഷണം പൂർത്തിയായിട്ടില്ല.' : 'The material below is recorded as checked against its source. Traditional practices are attributed to their books and kept distinct from Quran or hadith instructions. Research across all books remains incomplete.'}{runtime.pending > 0 && ` ${ml ? 'സ്രോതസ്സ് വീണ്ടും പരിശോധിക്കേണ്ട പഴയ പരാമർശങ്ങൾ' : 'Earlier entries awaiting source recheck'}: ${runtime.pending}.`}</p>}
     <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ഈ കാർഡിലെ വിഷയങ്ങൾ തിരയുക' : 'Search topics in this card'}</span><input type="search" value={query} onChange={event => setQuery(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-transparent px-4 py-3 text-white focus:border-yellow-300" /></label>
@@ -81,9 +84,9 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
       <h3 className="text-lg text-yellow-200">{group.title}</h3>
       {group.key === 'book' && <div className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><Arabic text={checkedChapter.source_name_form} />{['name_note', 'scope_note', 'edition_note'].map(key => t(checkedChapter[key]) && <p key={key} className="text-white/75 leading-loose">{t(checkedChapter[key])}</p>)}<p className="text-xs text-white/60">{checkedChapter.source_title} · {checkedChapter.printed_page}</p></div>}
       {group.key === 'pending' && <p className="text-sm text-white/60 leading-relaxed">{ml ? 'ഇവ പഴയ ഡാറ്റയിൽ ഉണ്ടായിരുന്ന രേഖകളാണ്. ഉറവിടത്തിലെ പേജ്/പാഠം വീണ്ടും പരിശോധിക്കുന്നതുവരെ ഇവയെ ഖുർആൻ/ഹദീസ് തെളിവായി കാണിക്കില്ല.' : 'These records were already present in the legacy data. Until their source page/text is rechecked, they are not presented as Quran or hadith evidence.'}</p>}
-      {group.key === 'topics' ? Object.entries(shamsBrief.purpose_labels).map(([key, label]) => {
+      {['topics', 'prophetic'].includes(group.key) ? Object.entries(shamsBrief.purpose_labels).map(([key, label]) => {
         const items = group.items.filter(entry => (entry.purpose || 'other') === key);
-        return items.length > 0 && <section key={key} className="space-y-3" data-section-b-purpose={key}><h4 className="text-yellow-200 font-semibold">{t(label)}</h4>{items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} topic />)}</section>;
+        return items.length > 0 && <section key={key} className="space-y-3" data-section-b-purpose={key} data-source-kind={group.key}><h4 className="text-yellow-200 font-semibold">{t(label)}</h4>{items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} topic />)}</section>;
       }) : group.items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} book={group.key === 'book' ? checkedChapter.source_title : null} page={group.key === 'book' ? checkedChapter.printed_page : null} />)}
     </section>)}
   </section>;
