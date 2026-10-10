@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import research from '@/data/holyNamesSectionBResearch.json';
+import nextResearch from '@/data/holyNamesSectionBNextResearch.json';
 import topicalDuas from '@/data/holyNamesSectionBTopicalDuas.json';
 import propheticDhikr from '@/data/holyNamesSectionBPropheticDhikr.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
@@ -48,7 +49,10 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const [purpose, setPurpose] = useState('all');
   const ml = language === 'ml';
   const t = value => value?.[language] || '';
-  const profile = research[nameId]?.name_id === nameId ? research[nameId] : null;
+  const originalProfile = research[nameId]?.name_id === nameId ? research[nameId] : null;
+  const expansionProfile = nextResearch.profiles?.[nameId]?.name_id === nameId ? nextResearch.profiles[nameId] : null;
+  // Preserve the established profile as authoritative if a later overlay shares the ID.
+  const profile = originalProfile || expansionProfile;
   const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedPropheticDhikr = (propheticDhikr.entries || []).filter(entry => entry.name_ids?.includes(nameId));
   const checkedChapter = chapter?.name_id === nameId && chapter.review_status === 'checked_against_scan' ? chapter : null;
