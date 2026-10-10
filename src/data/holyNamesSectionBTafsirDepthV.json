@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പ് ആഴത്തിലുള്ള പഠനം ഇല്ലാത്ത 15 കാർഡുകളിലേക്ക് 23 പുതിയ തഫ്സീർ വ്യാഖ്യാനങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 8. പ്രത്യേകിച്ച് നേരിട്ടുള്ള നാമരൂപങ്ങൾ, ക്രിയ/വാക്യപ്രയോഗങ്ങൾ, വിശ്വസനീയമല്ലെന്ന് ഗ്രന്ഥം തന്നെ പറഞ്ഞ നിവേദനങ്ങൾ എന്നിവ വേർതിരിക്കുന്നു. സമ്പൂർണ ഖവാസ്സ് പഠനം പൂർത്തിയായിട്ടില്ല.",
-    "en": "Twenty-three source-checked interpretations for 15 previously undepened headings (Ibn Kathir 15, Al-Tabari 8). Precise nominal wording, a verb/phrase, and an unsound reported guarantee are carefully distinguished. Comprehensive historic khawass coverage remains unfinished."
+    "ml": "മുമ്പ് ആഴത്തിലുള്ള പഠനം ഇല്ലാത്ത 15 കാർഡുകളിലേക്ക് 23 പുതിയ തഫ്സീർ വ്യാഖ്യാനങ്ങൾ: ഇബ്നു കസീർ 15, ത്വബരി 8. പ്രത്യേകിച്ച് നേരിട്ടുള്ള നാമരൂപങ്ങൾ, ക്രിയ/വാക്യപ്രയോഗങ്ങൾ, വിശ്വസനീയമല്ലെന്ന് ഗ്രന്ഥം തന്നെ പറഞ്ഞ നിവേദനങ്ങൾ എന്നിവ വേർതിരിക്കുന്നു. സമ്പൂർണ ഖവാസ്സ് പഠനം പൂർത്തിയായിട്ടില്ല. ഖുർആൻ 54:55, 24:25, 15:86, 95:8, 48:28 എന്നീ അഞ്ച് പൂർണ ആയത്തുകൾ കൃത്യമായ പദരൂപം തിരിച്ചറിയാൻ ചേർത്തിട്ടുണ്ട്.",
+    "en": "Twenty-three source-checked interpretations for 15 previously undepened headings (Ibn Kathir 15, Al-Tabari 8). Precise nominal wording, a verb/phrase, and an unsound reported guarantee are carefully distinguished. Comprehensive historic khawass coverage remains unfinished. Five complete original Quran verses (54:55, 24:25, 15:86, 95:8 and 48:28) supply exact grammatical evidence and replace reliance on loose thematic parallels."
   },
   "profiles": {
     "PDF-HN-057": {
@@ -53,7 +53,28 @@
     },
     "PDF-HN-068": {
       "name_id": "PDF-HN-068",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-068-54-55",
+          "title": {
+            "ml": "ഖുർആൻ 54:55 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 54:55 — complete source verse and exact form"
+          },
+          "arabic_original": "فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ",
+          "translation": {
+            "ml": "സത്യസന്ധതയുടെയും മഹത്വത്തിന്റെയും ഇരിപ്പിടത്തിൽ, എല്ലാറ്റിനും കഴിവുള്ള പരമാധികാരിയുടെ സാന്നിധ്യത്തിൽ.",
+            "en": "In an honored seat of truth, near a Sovereign fully able to do all things."
+          },
+          "source_reference": "Quran 54:55 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura54-aya55.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഖുർആനിൽ മَلِيكٍ എന്നതിന് വിശേഷണമായി مُقْتَدِرٍ വരുന്നു; പഴയ പൊതുവായ 22:6 തെളിവിനേക്കാൾ കൃത്യമായ പദബന്ധമാണ് ഇത്.",
+            "en": "The Quranic form is مُقْتَدِرٍ modifying مَلِيكٍ; it is more precise than the generic 22:6 verse previously linked to this title."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-v-PDF-HN-068-katheer-54-55",
@@ -217,7 +238,28 @@
     },
     "PDF-HN-102": {
       "name_id": "PDF-HN-102",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-102-24-25",
+          "title": {
+            "ml": "ഖുർആൻ 24:25 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 24:25 — complete source verse and exact form"
+          },
+          "arabic_original": "يَوْمَئِذٍ يُوَفِّيهِمُ اللَّهُ دِينَهُمُ الْحَقَّ وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+          "translation": {
+            "ml": "ആ ദിവസം അല്ലാഹു അവരുടെ പ്രവൃത്തികൾക്കുള്ള യഥാർഥ പ്രതിഫലം പൂർണമായി നൽകും; അന്ന് അല്ലാഹു തന്നെയാണ് വ്യക്തമായ സത്യമെന്ന് അവർ തിരിച്ചറിയും.",
+            "en": "On that Day Allah will fully pay their just recompense; they will realize that Allah Himself is the manifest Truth."
+          },
+          "source_reference": "Quran 24:25 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura24-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "അന്ത്യനാളിലെ കണക്കെടുപ്പിൽ الْحَقُّ الْمُبِينُ എന്ന പൂർണ വിശേഷണമാണ് തെളിവ്; രഹസ്യങ്ങൾ ഉടൻ വെളിപ്പെടാനുള്ള ജപസംഖ്യ അല്ല.",
+            "en": "The complete phrase is الْحَقُّ الْمُبِينُ in the context of final reckoning; al-Mubin is not a guarantee of immediate revelations."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-v-PDF-HN-102-katheer-24-25",
@@ -263,7 +305,28 @@
     },
     "PDF-HN-105": {
       "name_id": "PDF-HN-105",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-105-15-86",
+          "title": {
+            "ml": "ഖുർആൻ 15:86 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 15:86 — complete source verse and exact form"
+          },
+          "arabic_original": "إِنَّ رَبَّكَ هُوَ الْخَلَّاقُ الْعَلِيمُ",
+          "translation": {
+            "ml": "തീർച്ചയായും നിന്റെ രക്ഷിതാവാണ് എല്ലാം സൃഷ്ടിക്കുന്നവനും എല്ലാം അറിയുന്നവനും.",
+            "en": "Indeed your Lord is the Ever-Creating, All-Knowing."
+          },
+          "source_reference": "Quran 15:86 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura15-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിൽ الْخَلَّاقُ എന്ന പദരൂപം നേരിട്ട് വരുന്നു. മുമ്പത്തെ 39:62-ലെ خَالِقُ എന്ന പൊതുവായ രൂപവുമായി കലർത്തരുത്.",
+            "en": "This verse directly contains the definite form الْخَلَّاقُ; unlike Quran 39:62's خَالِقُ, it precisely matches the card heading."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-v-PDF-HN-105-katheer-15-86",
@@ -289,7 +352,28 @@
     },
     "PDF-HN-112": {
       "name_id": "PDF-HN-112",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-112-48-28",
+          "title": {
+            "ml": "ഖുർആൻ 48:28 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 48:28 — complete source verse and exact form"
+          },
+          "arabic_original": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ ۚ وَكَفَىٰ بِاللَّهِ شَهِيدًا",
+          "translation": {
+            "ml": "തന്റെ ദൂതനെ സന്മാർഗവും സത്യമതവുമായി അയച്ചവനാണ് അവൻ; എല്ലാ മതത്തിനും മേൽ അതിനെ പ്രകടമാക്കുവാൻ. സാക്ഷിയായി അല്ലാഹു മതി.",
+            "en": "He sent His Messenger with guidance and the religion of truth to make it prevail over all religion; Allah suffices as Witness."
+          },
+          "source_reference": "Quran 48:28 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura48-aya28.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഖുർആനിലെ പദരൂപം شَهِيدًا എന്ന വിധത്തിലാണ്; അതിനെ ഒറ്റ നാമത്തിന്റെ പ്രത്യേക എണ്ണമായി കാണിക്കരുത്.",
+            "en": "The exact expression is وَكَفَىٰ بِاللَّهِ شَهِيدًا, a predicative use, not an independent count for the heading al-Shahid."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-v-PDF-HN-112-katheer-48-28",
@@ -367,7 +451,28 @@
     },
     "PDF-HN-125": {
       "name_id": "PDF-HN-125",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-v-full-PDF-HN-125-95-8",
+          "title": {
+            "ml": "ഖുർആൻ 95:8 — നേരിട്ടുള്ള പൂർണ ആയത്തും പദരൂപവും",
+            "en": "Quran 95:8 — complete source verse and exact form"
+          },
+          "arabic_original": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+          "translation": {
+            "ml": "വിധികർത്താക്കളിൽ ഏറ്റവും നീതിയുള്ള വിധികർത്താവ് അല്ലാഹു തന്നെയല്ലേ?",
+            "en": "Is Allah not the wisest and most just of judges?"
+          },
+          "source_reference": "Quran 95:8 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura95-aya8.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ ആയത്തിലെ പൂർണ താരതമ്യപദസമുച്ചയം بِأَحْكَمِ الْحَاكِمِينَ ആണ്; الْأَحْكَم എന്ന വേറിട്ട സ്വതന്ത്ര രൂപമല്ല.",
+            "en": "The verse has the superlative construct بِأَحْكَمِ الْحَاكِمِينَ, not an independent definite title الْأَحْكَم."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-v-PDF-HN-125-katheer-95-8",
