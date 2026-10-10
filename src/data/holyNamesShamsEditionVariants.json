@@ -1,0 +1,183 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "പഴയ അറബി പാഠം മായ്ച്ചുകളയാതെ മറ്റൊരു ഡിജിറ്റൽ പതിപ്പിൽ കണ്ടെത്തിയ പാഠഭേദങ്ങൾ. രണ്ടാമത്തെ പതിപ്പിന്റെ പേജ് സ്കാൻ സ്വതന്ത്രമായി പരിശോധിച്ചതായി അവകാശപ്പെടുന്നില്ല; 91 പേരുകളുടെയും സമ്പൂർണ ഒത്തുനോക്കൽ പൂർത്തിയായിട്ടില്ല.",
+    "en": "Selective comparison of preserved Arabic with a separate digital text edition. The existing scan-labelled original is retained. The second edition has not independently been rescanned, nor are all 91 entries claimed fully collated."
+  },
+  "edition_note": {
+    "ml": "പാഠഭേദങ്ങൾ ചരിത്രഗ്രന്ഥത്തിന്റെ പതിപ്പുകൾക്കിടയിലാണ്; അതിലെ ഫലാവകാശവാദം സ്വഹീഹ് ഹദീസായി സ്ഥിരീകരിക്കുന്നില്ല.",
+    "en": "These are textual variants between editions of a historical book, not authentication of the book's promised effects."
+  },
+  "digital_edition": "Shams al-Maarif al-Kubra — Maktabat Ahl al-Bayt digital edition, Muassasat al-Nur printing, Beirut",
+  "entries": {
+    "b-shams-brief-67-الرحمن": {
+      "account_id": "b-shams-brief-67-الرحمن",
+      "printed_pages": "67",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/67",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "كان مطلوبا في جميع أحواله",
+          "alternative_phrase": "كان ملطوفا به في جميع أحواله",
+          "note": {
+            "ml": "സാമൂഹികമായി അഭിലഷിതനാകുക എന്നതിനുപകരം സൗമ്യപരിപാലനം ലഭിക്കുക എന്ന അർഥം വരുന്നു.",
+            "en": "The alleged benefit changes from ‘sought after’ to ‘gently cared for’."
+          }
+        },
+        {
+          "stored_phrase": "قساوة في قلبه",
+          "alternative_phrase": "شقاوة في قلبه",
+          "note": {
+            "ml": "ഹൃദയകാഠിന്യം എന്നും ഹൃദയത്തിലെ ദുരവസ്ഥ എന്നും വ്യത്യസ്ത അർഥങ്ങളാണ്.",
+            "en": "Hardness of heart and wretchedness of heart are different readings."
+          }
+        },
+        {
+          "stored_phrase": "والرحم من وصلها وصله",
+          "alternative_phrase": "والرحم من وصلها وصلته",
+          "note": {
+            "ml": "കുടുംബബന്ധത്തെക്കുറിച്ചുള്ള വാക്യത്തിൽ സർവനാമവ്യത്യാസമുണ്ട്.",
+            "en": "There is a pronoun difference in the kinship sentence."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-68-السميع": {
+      "account_id": "b-shams-brief-68-السميع",
+      "printed_pages": "68",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/68",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "كان يجاب الدعوات",
+          "alternative_phrase": "كان مجاب الدعوات",
+          "note": {
+            "ml": "പ്രാർത്ഥനയ്ക്ക് ഉത്തരം ലഭിക്കുമെന്ന വാക്യത്തിൽ ക്രിയാരൂപ വ്യത്യാസമുണ്ട്.",
+            "en": "A verb-form versus adjectival-form variant, not a proven guarantee."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-69-الشهيد": {
+      "account_id": "b-shams-brief-69-الشهيد",
+      "printed_pages": "69",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "أشهده الله تعالى المراقبة في خلواته",
+          "alternative_phrase": "أشهده اللّه تعالى الراقبة في خلواته",
+          "note": {
+            "ml": "രണ്ടാമത്തെ ഡിജിറ്റൽ പതിപ്പിൽ ഒരു അക്ഷരം വിട്ടുപോയിരിക്കാം; സ്‌കാൻ ഒത്തുനോക്കണം.",
+            "en": "The alternative may have lost a letter during digitization; inspect the scan."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-69-المحصي": {
+      "account_id": "b-shams-brief-69-المحصي",
+      "printed_pages": "69",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "أمن من التبعات",
+          "alternative_phrase": "أمن من السيئات",
+          "note": {
+            "ml": "ബാധ്യതകളിൽനിന്നുള്ള സംരക്ഷണം എന്നും തിന്മകളിൽനിന്നുള്ള സംരക്ഷണം എന്നും വലിയ അർഥവ്യത്യാസമുണ്ട്.",
+            "en": "Liabilities or consequences versus misdeeds is a substantial meaning change."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-69-المعيد": {
+      "account_id": "b-shams-brief-69-المعيد",
+      "printed_pages": "69",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "والطالع أحد البروج المنقلبة",
+          "alternative_phrase": "والطالع أحد البروج المنقبة",
+          "note": {
+            "ml": "രാശിയുടെ വിശേഷണത്തിൽ അക്ഷരവ്യത്യാസമുണ്ട്; ഒരു ഡിജിറ്റൽ പകർപ്പിലെ പിശകാകാം.",
+            "en": "The zodiac adjective differs; one witness may contain a transcription error."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-69-المتعالي": {
+      "account_id": "b-shams-brief-69-المتعالي",
+      "printed_pages": "69",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "وأما اسمه تعالى المتعالي",
+          "alternative_phrase": "وأما اسمه تعالى المتعال",
+          "note": {
+            "ml": "നാമം «المتعالي» / «المتعال» എന്ന രണ്ടു പദരൂപത്തിൽ ലഭിക്കുന്നു.",
+            "en": "Two different name-forms, al-Mutaali and al-Mutaal, appear."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-70-النافع": {
+      "account_id": "b-shams-brief-70-النافع",
+      "printed_pages": "70",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/70",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "حتى ترافقه بعض عوامله",
+          "alternative_phrase": "حتى توافقه بعض عوالمه",
+          "note": {
+            "ml": "അവകാശവാദത്തിലെ രണ്ടു പ്രധാന പദങ്ങൾ മാറുന്നു; ചികിത്സാഫലം സ്ഥിരീകരിക്കപ്പെട്ടിട്ടില്ല.",
+            "en": "Two meaningful words differ in the account; the healing claim is unverified."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-70-الهادي": {
+      "account_id": "b-shams-brief-70-الهادي",
+      "printed_pages": "70",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/70",
+      "other_page_url": null,
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "وليذكر الاسم إلى أن يقطع النفس",
+          "alternative_phrase": "ويذكر الاسم إلى أن ينقطع النفس",
+          "note": {
+            "ml": "ശ്വാസത്തെപ്പറ്റിയുള്ള രണ്ട് പാഠങ്ങൾ തമ്മിൽ വ്യത്യാസമുണ്ട്; ശ്വാസം തടഞ്ഞുവെക്കാനുള്ള നിർദേശമായി കാണിക്കരുത്.",
+            "en": "Two distinct breath-related phrasings; neither warrants unsafe breath restriction."
+          }
+        }
+      ]
+    },
+    "b-shams-brief-70-التواب": {
+      "account_id": "b-shams-brief-70-التواب",
+      "printed_pages": "69–70",
+      "compared_source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "other_page_url": "https://ablibrary.net/book_content/b/10942/70",
+      "review_status": "secondary_digital_text_compared",
+      "variants": [
+        {
+          "stored_phrase": "وأما اسمه تعالى التواب: من كتبه",
+          "alternative_phrase": "وأما اسمه تعالى التواب : من | كتبه",
+          "note": {
+            "ml": "വാക്യം പേജ് 69-ൽ തുടങ്ങി 70-ൽ തുടരുന്നു; ‘|’ പേജ് വിഭജനത്തിന്റെ ചിഹ്നമാണ്.",
+            "en": "The account begins on page 69 and continues on page 70; ‘|’ marks the page break."
+          }
+        }
+      ]
+    }
+  }
+}
