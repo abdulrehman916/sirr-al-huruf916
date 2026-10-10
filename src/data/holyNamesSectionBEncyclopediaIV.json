@@ -685,7 +685,466 @@
           "verse_count": 1
         }
       ],
-      "scholarly": []
+      "scholarly": [
+        {
+          "id": "encyclopedia-salam-tafsir-1-59-23-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സത്ത, ഗുണങ്ങൾ, പ്രവർത്തനങ്ങൾ — ന്യൂനതകളിൽനിന്നും മുക്തം",
+            "en": "Ibn Kathir: without deficiencies in essence, attributes and acts"
+          },
+          "arabic_original": "من جميع العيوب والنقائص",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അസ്സലാം എന്ന നാമത്തെ അല്ലാഹുവിന്റെ സത്തയിലും വിശേഷണങ്ങളിലും പ്രവൃത്തികളിലും യാതൊരു ന്യൂനതയും ഇല്ലാത്ത പൂർണതയായി വിശദീകരിക്കുന്നു. മനുഷ്യരുടെ «സലാം» അഭിവാദ്യത്തോടു നാമത്തെ അർഥസമമായി ചുരുക്കരുത്.",
+            "en": "Ibn Kathir describes as-Salam as free of defects in the divine essence, attributes and actions. This is broader than a greeting between people."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-2-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ഒന്നാം വ്യാഖ്യാനം — എല്ലാ ദോഷങ്ങളിൽനിന്നും മുക്തൻ",
+            "en": "Al-Qurtubi: the first explanation is defectless perfection"
+          },
+          "arabic_original": "الذي سلم من كل عيب وبرئ من كل نقص",
+          "translation": {
+            "ml": "ഇബ്നുൽ അറബി വഴി ഖുർതുബി രേഖപ്പെടുത്തുന്ന മൂന്ന് വ്യാഖ്യാനങ്ങളിൽ ആദ്യത്തേത്: എല്ലാ കുറവുകളിൽനിന്നും മുക്തനും സകല ന്യൂനതകളിൽനിന്നും പരിശുദ്ധനുമായവൻ. ഇത് സത്തയുടെ ഗുണവിശേഷമായി അദ്ദേഹം വിശദീകരിക്കുന്നു.",
+            "en": "The first of three explanations quoted from Ibn al-Arabi is the One free from all blemish and defect, considered an attribute of the Divine Essence."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-3-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: രണ്ടാം വ്യാഖ്യാനം — സ്വർഗവാസികളെ അഭിവാദ്യം ചെയ്യുന്നവൻ",
+            "en": "Al-Qurtubi: the One greeting paradise's people"
+          },
+          "arabic_original": "المسلم على عباده في الجنة",
+          "translation": {
+            "ml": "രണ്ടാമത്തെ വിശദീകരണം: സ്വർഗത്തിലെ തന്റെ ദാസന്മാർക്ക് സലാം നൽകുന്നവൻ. 36:58-ലെ «سَلَامٌ قَوْلًا» എന്ന ആയത്തുമായി ഖുർതുബി നേരിട്ട് ബന്ധിപ്പിക്കുന്നു. ഇവിടെ ദൈവത്തിന്റെ പ്രവർത്തനവിശേഷണമാണ് പ്രധാനം.",
+            "en": "The second explanation is the One who bestows greetings of peace on His servants in paradise, supported with Quran 36:58. Al-Qurtubi treats this as related to Divine action."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-4-59-23-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: മൂന്നാം വ്യാഖ്യാനം — സൃഷ്ടികളെ അനീതിയിൽനിന്നു സുരക്ഷിതരാക്കുന്നവൻ",
+            "en": "Al-Qurtubi: creatures safe from His injustice"
+          },
+          "arabic_original": "الذي سلم الخلق من ظلمه",
+          "translation": {
+            "ml": "മൂന്നാമത്തെ വിശദീകരണം: സൃഷ്ടികൾ അവന്റെ അനീതിയിൽനിന്നു സുരക്ഷിതരാണ്. ഖുർതുബി ഇത് ഖത്താബിയുടെ അഭിപ്രായവുമായി ബന്ധിപ്പിക്കുന്നു. «സലാം» എന്ന പേരിന്റെ നൈതികമായ വിശാലത ഇതിലൂടെ വ്യക്തമാകുന്നു.",
+            "en": "The third explanation emphasizes that creation is safe from injustice from Him, a meaning Al-Qurtubi attributes also to al-Khattabi."
+          },
+          "source_reference": "تفسير القرطبي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-5-59-23-saadi",
+          "title": {
+            "ml": "സഅ്ദി: അൽ-ഖുദ്ദൂസും അസ്സലാമും — പൂർണതയും തൻസീഹും",
+            "en": "Al-Sa'di: holiness and peace without deficiency"
+          },
+          "arabic_original": "المقدس السالم من كل عيب وآفة ونقص",
+          "translation": {
+            "ml": "സഅ്ദി «الْقُدُّوسُ السَّلَامُ» എന്ന കൂട്ടനാമത്തെ എല്ലാ ദോഷങ്ങളിൽനിന്നും കുറവുകളിൽനിന്നും മുക്തനായ പരമപരിശുദ്ധൻ എന്ന അർഥത്തിൽ ചേർത്ത് വിശദീകരിക്കുന്നു. ഒരേ അർഥമെന്നല്ല, ബന്ധമുള്ള ഗുണങ്ങളാണെന്ന് കാണിക്കുന്നു.",
+            "en": "Al-Sa'di links the paired Divine Names to sanctity and freedom from defect while preserving their distinct emphasis."
+          },
+          "source_reference": "تفسير السعدي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/saadi/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-6-6-127-tabary",
+          "title": {
+            "ml": "ത്വബരി: ദാറുസ്സലാം അല്ലാഹുവിന്റെ സ്വർഗം",
+            "en": "Al-Tabari: the Abode of Peace as Allah's paradise"
+          },
+          "arabic_original": "الله هو السلام، والدار الجنة",
+          "translation": {
+            "ml": "«ദാറുസ്സലാം» അല്ലാഹു തന്റെ സത്യവിശ്വാസികൾക്കായി സജ്ജമാക്കിയ സ്വർഗമാണെന്ന് ത്വബരി പറയുന്നു. «സലാം» അല്ലാഹുവിന്റെ നാമമാണെന്ന സുദ്ദിയുടെ വിശദീകരണവും അദ്ദേഹം രേഖപ്പെടുത്തുന്നു; ഇവിടെ «ദാർ» എന്നത് സ്വർഗലോകത്തിനാണ്.",
+            "en": "Al-Tabari explicitly calls Dar al-Salam the divine abode prepared for His followers and records al-Suddi's explanation that al-Salam is Allah's Name."
+          },
+          "source_reference": "تفسير الطبري · Quran 6:127",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya127.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-7-6-127-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ദാറുസ്സലാം സുരക്ഷിതമായ സ്വർഗം",
+            "en": "Ibn Kathir: paradise safe from affliction"
+          },
+          "arabic_original": "وهي : الجنة",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ദാറുസ്സലാമിനെ സ്വർഗമെന്ന് വ്യക്തമാക്കുന്നു: ദോഷങ്ങളും വഴിതെറ്റലും വിട്ട് നേരായ പാത പിന്തുടർന്നവർക്ക് ലഭിക്കുന്ന സുരക്ഷിതമായ അഭയം. സലാമിനെ ഈ വചനത്തിൽ വ്യത്യസ്ത ഘടകങ്ങളോടെ വിശദീകരിക്കുന്നു.",
+            "en": "Ibn Kathir explains Dar al-Salam as paradise, named for the safety of those whose path was guided and free of deviation."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 6:127",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya127.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-8-10-25-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ദാറുസ്സലാമിലേക്കുള്ള ക്ഷണം",
+            "en": "Ibn Kathir: Allah calls toward the safe abode"
+          },
+          "arabic_original": "من الآفات ، والنقائص والنكبات",
+          "translation": {
+            "ml": "താൽക്കാലിക ഇഹലോകത്തെ വിവരിച്ചശേഷം അല്ലാഹു ദോഷങ്ങളില്ലാത്ത സ്വർഗത്തിലേക്കു വിളിക്കുന്നുവെന്ന് ഇബ്നു കസീർ പറയുന്നു. 10:25-ന്റെ തഫ്സീറിലെ ഒരു അനുബന്ധ ഉപമാകഥയെ അദ്ദേഹം മുർസൽ എന്നു അടയാളപ്പെടുത്തുന്നു; ഖുർആൻ വചനം തന്നെയാണെങ്കിൽ അതിന് അത്തരമൊരു ദുർബലതയില്ല.",
+            "en": "Ibn Kathir contrasts transient worldly life with the invitation to paradise free of afflictions, while calling a supplementary narrative mursal."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 10:25",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya25.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-9-4-86-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അഭിവാദ്യത്തിന്റെ മറുപടി ബാധ്യതയും മികവും",
+            "en": "Ibn Kathir: returning greetings and giving a better one"
+          },
+          "arabic_original": "فالزيادة مندوبة ، والمماثلة مفروضة",
+          "translation": {
+            "ml": "ഖുർആൻ 4:86-ൽ സലാമിന് തത്തുല്യമായി മറുപടി നൽകുന്നത് ബാധ്യതയും അധികമാക്കി നൽകുന്നത് പ്രശംസനീയവുമാണെന്ന് ഇബ്നു കസീർ പറയുന്നു. ഇസ്ലാമിക നിയമത്തിനുള്ള വ്യത്യസ്ത വിശദാംശങ്ങൾ ഉണ്ടെങ്കിലും ഖുർആനിലെ അടിസ്ഥാന മര്യാദ വ്യക്തമാണ്.",
+            "en": "Ibn Kathir distinguishes matching the greeting as required and improving on it as recommended in his legal reading of Quran 4:86."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 4:86",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-10-4-86-tabary",
+          "title": {
+            "ml": "ത്വബരി: അഭിവാദ്യം നന്മ ആശംസിക്കുന്ന പ്രാർത്ഥന",
+            "en": "Al-Tabari: greeting as an invocation for well-being"
+          },
+          "arabic_original": "إذا دعي لكم بطول الحياة والبقاء والسلامة",
+          "translation": {
+            "ml": "ത്വബരി 4:86-ലെ അഭിവാദ്യം മറ്റൊരാൾക്കു ദീർഘായുസ്സും സുരക്ഷയും ആശംസിക്കുന്ന വാക്കുകളായി വിശദീകരിക്കുന്നു. മറുപടി നൽകുമ്പോൾ അതിലും നല്ലത് നൽകാനോ അത്രതന്നെ മറുപടി നൽകാനോ പറയുന്നു.",
+            "en": "Al-Tabari explains tahiyya as an invocation for lasting life and well-being and the command to answer with an improved or equivalent greeting."
+          },
+          "source_reference": "تفسير الطبري · Quran 4:86",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-11-16-32-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അവസാനനിമിഷത്തെ മലക്കുകളുടെ സലാം",
+            "en": "Ibn Kathir: the angels greet the faithful at death"
+          },
+          "arabic_original": "أن الملائكة تسلم عليهم وتبشرهم بالجنة",
+          "translation": {
+            "ml": "ജീവിതത്തിന്റെ അവസാനത്തിൽ ശിർക്കിൽനിന്നും ദോഷങ്ങളിൽനിന്നും വിട്ടുനിന്നവരെ മലക്കുകൾ സലാം പറഞ്ഞു സ്വർഗത്തിൽ പ്രവേശിക്കുമെന്ന് സന്തോഷവാർത്ത നൽകുന്നതായി ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. ഈ സന്ദർഭത്തിൽ മലക്കുകളാണ് സംസാരിക്കുന്നത്.",
+            "en": "Ibn Kathir explains that the angels bring a peaceful greeting to believers at death, with the words being those of angels rather than the isolated Divine Name."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 16:32",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya32.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-12-19-47-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഇബ്രാഹീമിന്റെ «സലാം» — ദോഷം വരുത്താത്ത വിടവാങ്ങൽ",
+            "en": "Ibn Kathir: Ibrahim's peaceful response"
+          },
+          "arabic_original": "أما أنا فلا ينالك مني مكروه ولا أذى",
+          "translation": {
+            "ml": "ഇബ്രാഹീമിന്റെ പിതാവുമായുള്ള സംഭാഷണത്തിൽ «സലാമുൻ അലൈക്» എന്നത് തന്റെ ഭാഗത്തുനിന്ന് ദോഷമോ ഉപദ്രവമോ ഉണ്ടാകില്ലെന്ന അർഥത്തിലാണ് ഇബ്നു കസീർ പറയുന്നത്. പിന്നീടുള്ള 9:114-ലെ വ്യവസ്ഥ കൂടി ഒരുമിച്ച് വായിക്കണം.",
+            "en": "Ibn Kathir reads Ibrahim's reply as a refusal to harm his father, and explicitly traces the later limitation on seeking forgiveness in Quran 9:114."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 19:47",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya47.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-13-33-44-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ദൈവിക അഭിവാദ്യവും മറുവ്യാഖ്യാനവും",
+            "en": "Ibn Kathir: divine greeting versus mutual greetings"
+          },
+          "arabic_original": "الظاهر أن المراد والله أعلم",
+          "translation": {
+            "ml": "33:44-ൽ അല്ലാഹു സത്യവിശ്വാസികളെ സലാം പറയുന്നുവെന്ന വ്യാഖ്യാനമാണ് ഇബ്നു കസീർ കൂടുതൽ വ്യക്തമായി സ്വീകരിക്കുന്നത്. ഖതാദയുടെ «സ്വർഗവാസികൾ പരസ്പരം സലാം പറയുന്നു» എന്ന അഭിപ്രായവും അതേ തഫ്സീറിൽ രേഖപ്പെടുത്തിയിരിക്കുന്നു.",
+            "en": "Ibn Kathir takes the greeting as from Allah while expressly recording Qatadah's alternative that the people of paradise greet each other."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 33:44",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura33-aya44.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-14-33-44-tabary",
+          "title": {
+            "ml": "ത്വബരി: സ്വർഗവാസികൾ പരസ്പരം സമാധാനം ആശംസിക്കുന്നു",
+            "en": "Al-Tabari: greetings exchanged by paradise's people"
+          },
+          "arabic_original": "تحية أهل الجنة السلام",
+          "translation": {
+            "ml": "ത്വബരി തന്റെ വാചകത്തിൽ സത്യവിശ്വാസികൾ സ്വർഗത്തിൽ പരസ്പരം നൽകുന്ന സലാമാണ് ആയത്തിലെ അഭിവാദ്യം എന്ന് പറയുന്നു. ഇബ്നു കസീറിന്റെ മുൻഗണനയോട് ഈ വിശദീകരണം വ്യത്യാസപ്പെടുന്നു.",
+            "en": "Al-Tabari presents the greeting as exchanged among the people of paradise, a different exegetical emphasis from Ibn Kathir's."
+          },
+          "source_reference": "تفسير الطبري · Quran 33:44",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura33-aya44.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-15-33-44-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: «യൽഖൗനഹു» എന്ന സർവനാമത്തിന്റെ വ്യത്യസ്ത വ്യാഖ്യാനങ്ങൾ",
+            "en": "Al-Qurtubi: differing referents of meeting Him"
+          },
+          "arabic_original": "اختلف في الضمير الذي في يلقونه",
+          "translation": {
+            "ml": "ഖുർതുബി വചനത്തിലെ കാണുന്നവനെ അല്ലാഹുവോ മലക്കോ എന്നു വ്യത്യസ്തമായി വ്യാഖ്യാനിക്കുന്ന പഴയ അഭിപ്രായങ്ങൾ പറയുന്നു. സലാമിന്റെ ഉറവിടത്തെക്കുറിച്ചും ഒന്നിലധികം വ്യാഖ്യാനങ്ങൾ നിലനിർത്തുന്നു.",
+            "en": "Al-Qurtubi records differing readings of whom the believers meet and who greets them, including Allah and angelic interpretations. Avoid flattening these into unanimous consensus."
+          },
+          "source_reference": "تفسير القرطبي · Quran 33:44",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura33-aya44.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-16-36-58-katheer",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സ്വർഗത്തെക്കുറിച്ചുള്ള അത്ഭുതകഥയുടെ സനദ് ചോദ്യം ചെയ്യുന്നു",
+            "en": "Ibn Kathir: a vivid paradise story has a questioned chain"
+          },
+          "arabic_original": "وفي إسناده نظر",
+          "translation": {
+            "ml": "36:58-ലെ «സലാമുൻ കൗലൻ» എന്ന വചനം അല്ലാഹുവിൽനിന്നുള്ള അഭിവാദ്യവുമായി ബന്ധിപ്പിച്ചശേഷം, സ്വർഗവാസികളുടെ വിസ്മയകരമായ സന്ദർശനകഥ ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. പക്ഷേ റിപ്പോർട്ടിന്റെ നിവേദകശൃംഖലയെ തന്നെ സംശയത്തോടെ കാണുന്നു. ആ അധികകഥയെ സഹീഹ് ഹദീസെന്നു പ്രഖ്യാപിക്കരുത്.",
+            "en": "Ibn Kathir narrates an elaborate story about divine greeting in paradise, but explicitly says its chain is questionable. The Quranic verse and the report's reliability are separate."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 36:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura36-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-17-36-58-tabary",
+          "title": {
+            "ml": "ത്വബരി: «സലാമുൻ» എന്ന പദത്തിന്റെ രണ്ട് വ്യാകരണസാധ്യതകൾ",
+            "en": "Al-Tabari: two syntactic readings of Salam"
+          },
+          "arabic_original": "في رفع سلامٌ وجهان",
+          "translation": {
+            "ml": "«سَلَامٌ» മുൻവചനത്തിലെ «മാ യദ്ദഅൂൻ» എന്നതുമായി ബന്ധപ്പെട്ട വാർത്തയാകാമെന്നും, സ്വതന്ത്രമായ ആദരപ്രസ്താവനയാകാമെന്നും ത്വബരി പറയുന്നു. ഉച്ചാരണവും വാക്യക്രമവും അടിസ്ഥാനപ്പെടുത്തിയുള്ള ചർച്ചയാണിത്.",
+            "en": "Al-Tabari records two grammatical analyses of the nominative salam: an assertion about what paradise's people receive or an independent expression of honor."
+          },
+          "source_reference": "تفسير الطبري · Quran 36:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura36-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-18-36-58-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: വഖ്ഫ്, ഇഅ്റാബ് എന്നീ വിശദമായ വ്യത്യാസങ്ങൾ",
+            "en": "Al-Qurtubi: different parsing and pause positions"
+          },
+          "arabic_original": "ولهم ما يدعون وقف حسن",
+          "translation": {
+            "ml": "ഖുർതുബി «سَلَامٌ قَوْلًا» എന്ന ആയത്തിലെ വഖ്ഫ് എവിടെ വേണമെന്ന്, «സലാം» മുൻവാക്യവുമായി ബന്ധിപ്പിച്ചാൽ എങ്ങനെ അർഥം മാറുമെന്ന് വിശദമായി ചർച്ച ചെയ്യുന്നു. ഒരു വ്യാകരണവിശകലനത്തെ മാത്രം അംഗീകൃത ഏകവായനയായി പ്രഖ്യാപിക്കരുത്.",
+            "en": "Al-Qurtubi presents numerous syntactic analyses of salam and where to pause, reflecting genuine interpretive differences rather than a single compulsory reading."
+          },
+          "source_reference": "تفسير القرطبي · Quran 36:58",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura36-aya58.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-19-97-5-tabary",
+          "title": {
+            "ml": "ത്വബരി: ലൈലത്തുൽ ഖദ്റിന്റെ മുഴുവൻ സമയവും നന്മ",
+            "en": "Al-Tabari: safety and goodness throughout the night"
+          },
+          "arabic_original": "سلام ليلة القدر من الشرّ كله",
+          "translation": {
+            "ml": "«سَلَامٌ هِيَ» എന്ന വചനത്തിന് രാത്രി മുഴുവൻ പുലരിവരെ നന്മയും സമാധാനവുമുള്ളത് എന്ന വിശദീകരണം ത്വബരി മുൻഗാമികളിൽനിന്ന് പറയുന്നു. ഇത് അസ്-സലാം എന്ന നാമം പ്രത്യേക എണ്ണം ചൊല്ലേണ്ട വിധിയല്ല.",
+            "en": "Al-Tabari interprets the peace of the Night of Decree as goodness and protection until dawn, based on reported earlier glosses. It gives no al-Salam Name count."
+          },
+          "source_reference": "تفسير الطبري · Quran 97:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura97-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-tafsir-20-97-5-qortobi",
+          "title": {
+            "ml": "ഖുർതുബി: ലൈലത്തുൽ ഖദ്റിലെ «സലാം» — സുരക്ഷയും നന്മയും",
+            "en": "Al-Qurtubi: Laylat al-Qadr as peace and goodness"
+          },
+          "arabic_original": "ليلة القدر سلامة وخير كلها لا شر فيها",
+          "translation": {
+            "ml": "ഖുർതുബി 97:5-നെക്കുറിച്ച് അതിൽ നന്മയും സുരക്ഷയും ഉണ്ടെന്നും, ശൈത്വാന്റെ ദോഷപ്രഭാവമില്ലായ്മയുമായി ബന്ധിപ്പിക്കുന്ന പഴയ വ്യാഖ്യാനങ്ങൾ ഉണ്ടെന്നും പറയുന്നു. ഈ റിപ്പോർട്ടുകൾ പ്രത്യേക പദവാസനയുടെ നിർബന്ധസംഖ്യയല്ല.",
+            "en": "Al-Qurtubi records interpretations of the night as suffused with safety and goodness, including reported explanations about protection from harm."
+          },
+          "source_reference": "تفسير القرطبي · Quran 97:5",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura97-aya5.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിൽ പറഞ്ഞ ആശയത്തിന്റെ വിശദമായ മലയാളം/English വ്യാഖ്യാനവും ചെറു അറബി ഉദ്ധരണിയുമാണ്. ഇതിനെ മുഴുവൻ ഗ്രന്ഥത്തിന്റെ പുനരാവർത്തനമായോ സ്വഹീഹ് ഹദീസ് ഗ്രേഡായോ കാണിക്കരുത്.",
+            "en": "Source-specific scholarly interpretation with a short original Arabic quotation, not a complete reproduction of the book or a blanket authentication of related reports."
+          }
+        }
+      ],
+      "hadith": [
+        {
+          "id": "encyclopedia-salam-hadith-muslim-54a",
+          "title": {
+            "ml": "സ്വഹീഹ് മുസ്‌ലിം 54a — സലാം പ്രചരിപ്പിക്കുക, സ്നേഹം വളരും",
+            "en": "Sahih Muslim 54a — spread greetings of peace"
+          },
+          "arabic_original": "لَا تَدْخُلُونَ الْجَنَّةَ حَتَّى تُؤْمِنُوا وَلَا تُؤْمِنُوا حَتَّى تَحَابُّوا. أَوَلَا أَدُلُّكُمْ عَلَى شَىْءٍ إِذَا فَعَلْتُمُوهُ تَحَابَبْتُمْ؟ أَفْشُوا السَّلَامَ بَيْنَكُمْ.",
+          "translation": {
+            "ml": "അബൂ ഹുറൈറ (റ) റിപ്പോർട്ട് ചെയ്യുന്ന നബിവചനത്തിൽ വിശ്വാസവും പരസ്പരസ്നേഹവും തമ്മിലുള്ള ബന്ധം വിശദീകരിച്ച്, നിങ്ങളിൽ സ്നേഹം വളർത്താനുള്ള വഴിയായി സലാം വ്യാപിപ്പിക്കണമെന്ന് പറയുന്നു. «السَّلَامَ» ഇവിടെ മനുഷ്യർക്കിടയിലെ അഭിവാദ്യമാണ്, ദൈവനാമം ആയിരം തവണ ഓതാൻ കൽപ്പനയല്ല.",
+            "en": "Abu Hurayrah reports that the Prophet linked faith, mutual affection and entering Paradise, and directed believers to spread salam among themselves. The word denotes the greeting; no fixed recitation count for the Divine Name is stated."
+          },
+          "source_reference": "صحيح مسلم 54a — أبو هريرة رضي الله عنه",
+          "source_url": "https://sunnah.com/muslim:54a",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "authentic_prophetic_greeting_ethics",
+          "count": {
+            "ml": "നിശ്ചിത ജപസംഖ്യ പറഞ്ഞിട്ടില്ല.",
+            "en": "No numerical repetition count is stated."
+          },
+          "timing": {
+            "ml": "മനുഷ്യരെ അഭിവാദ്യം ചെയ്യുമ്പോൾ; പ്രത്യേക ദിവസം/മുഹൂർത്തം ഇല്ല.",
+            "en": "As part of social greetings; no specific weekday or hour."
+          },
+          "source_scope": {
+            "ml": "സലാം പറയുന്ന സാമൂഹിക സുന്നത്തിനെ അസ്സലാം ദൈവനാമത്തിന്റെ രഹസ്യവസീഫയായി മാറ്റരുത്.",
+            "en": "Do not recast the social Sunnah of spreading greetings as a secret Name-specific ritual."
+          }
+        },
+        {
+          "id": "encyclopedia-salam-hadith-muslim-592a",
+          "title": {
+            "ml": "സ്വഹീഹ് മുസ്‌ലിം 592a — നമസ്കാരശേഷ ദിക്ർ: മറ്റൊരു സഹീഹ് സാക്ഷ്യം",
+            "en": "Sahih Muslim 592a — corroborating report of al-Salam after prayer"
+          },
+          "arabic_original": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا سَلَّمَ لَمْ يَقْعُدْ إِلَّا مِقْدَارَ مَا يَقُولُ: اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ.",
+          "translation": {
+            "ml": "ആഇശ (റ) റിപ്പോർട്ട് ചെയ്യുന്നത്: നബി ﷺ സലാം ചൊല്ലി നമസ്കാരം അവസാനിപ്പിക്കുമ്പോൾ «അല്ലാഹുമ്മ അന്റസ്സലാം ...» എന്ന ദിക്ർ ചൊല്ലുന്നതിനുള്ള സമയം മാത്രമേ ഇരിക്കാറുണ്ടായിരുന്നുള്ളൂ. ഇബ്നു നുമൈറിന്റെ പാഠത്തിൽ «യാ ദൽജലാലി വൽ ഇക്‌റാം» എന്ന വ്യത്യാസവും വരുന്നു. ഈ റിപ്പോർട്ട് ആദ്യത്തെ മുസ്‌ലിം 591-ലെ ഇസ്തിഗ്ഫാർ മൂന്ന് എന്ന എണ്ണത്തെ ഈ ദുആയ്ക്കു മാറ്റുന്നില്ല.",
+            "en": "Aisha reports that after the prayer's taslim the Prophet remained seated for approximately the time needed to say Allahumma anta al-Salam... Ibn Numayr's transmission includes a variant reading ya dha al-jalal wa'l-ikram. This corroborates the formula without transferring the three istighfar repetitions from Muslim 591 to it."
+          },
+          "source_reference": "صحيح مسلم 592a — عائشة رضي الله عنها",
+          "source_url": "https://sunnah.com/muslim:592a",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "authentic_prophetic_post_prayer_dhikr",
+          "count": {
+            "ml": "ഈ ഹദീസിൽ പ്രസ്തുത ദുആയ്ക്ക് വേർതിരിച്ച സ്ഥിരസംഖ്യ പറഞ്ഞിട്ടില്ല.",
+            "en": "No separate fixed repetition count for this supplication is stated."
+          },
+          "timing": {
+            "ml": "നമസ്കാരം സലാം ചൊല്ലി അവസാനിപ്പിച്ചതിനു ശേഷം.",
+            "en": "After completing the prayer with taslim."
+          },
+          "source_scope": {
+            "ml": "അത് ഒരു സ്വഹീഹ് സാക്ഷ്യമാണ്; അസ്-സലാം ഒറ്റയ്ക്ക് എത്ര തവണ ചൊല്ലണമെന്ന് പറയുന്നില്ല.",
+            "en": "An authentic corroborating report, not a rule prescribing a separate count for the isolated Name."
+          }
+        }
+      ]
     }
   }
 }
