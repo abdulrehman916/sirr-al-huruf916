@@ -9,6 +9,7 @@ import tafsirDepthII from '@/data/holyNamesSectionBTafsirDepthII.json';
 import tafsirDepthIII from '@/data/holyNamesSectionBTafsirDepthIII.json';
 import tafsirDepthIV from '@/data/holyNamesSectionBTafsirDepthIV.json';
 import tafsirDepthV from '@/data/holyNamesSectionBTafsirDepthV.json';
+import tafsirDepthVI from '@/data/holyNamesSectionBTafsirDepthVI.json';
 import topicalDuas from '@/data/holyNamesSectionBTopicalDuas.json';
 import propheticDhikr from '@/data/holyNamesSectionBPropheticDhikr.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
@@ -69,16 +70,17 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   const deepProfileIII = tafsirDepthIII.profiles?.[nameId]?.name_id === nameId ? tafsirDepthIII.profiles[nameId] : null;
   const deepProfileIV = tafsirDepthIV.profiles?.[nameId]?.name_id === nameId ? tafsirDepthIV.profiles[nameId] : null;
   const deepProfileV = tafsirDepthV.profiles?.[nameId]?.name_id === nameId ? tafsirDepthV.profiles[nameId] : null;
+  const deepProfileVI = tafsirDepthVI.profiles?.[nameId]?.name_id === nameId ? tafsirDepthVI.profiles[nameId] : null;
   const linkedQuranDuas = (topicalDuas.topics || []).filter(entry => entry.name_ids?.includes(nameId));
   const linkedPropheticDhikr = (propheticDhikr.entries || []).filter(entry => entry.name_ids?.includes(nameId));
   const checkedChapter = chapter?.name_id === nameId && chapter.review_status === 'checked_against_scan' ? chapter : null;
   const runtime = sectionBReading(card, nameId);
   if (!profile && !checkedChapter && (!card || card.pdf_name_id !== nameId)) return null;
   const groups = [
-    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...runtime.evidence] },
+    { key: 'evidence', title: ml ? 'ഖുർആൻ പാഠവും അർഥവും' : 'Quran text and meaning', items: [...(profile?.evidence || []), ...(deepProfile?.evidence || []), ...(deepProfileII?.evidence || []), ...(deepProfileIII?.evidence || []), ...(deepProfileIV?.evidence || []), ...(deepProfileV?.evidence || []), ...(deepProfileVI?.evidence || []), ...runtime.evidence] },
     { key: 'hadith', title: ml ? 'ഹദീസുകൾ — മൂലപാഠവും ഉറവിടവും' : 'Hadith — original wording and reference', items: profile?.hadith || [] },
     { key: 'prophetic', title: ml ? 'നബിവചന ദിക്ർ / ദുആ — എണ്ണവും സമയവും ക്രമവും' : 'Prophetic dhikr and supplications — count, timing and procedure', items: linkedPropheticDhikr },
-    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...runtime.scholarly] },
+    { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...runtime.topics] },
     { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
     { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
