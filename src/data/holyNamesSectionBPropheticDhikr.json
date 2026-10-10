@@ -609,7 +609,11 @@
       "id": "hadith-muslim-2713a",
       "name_ids": [
         "PDF-HN-013",
-        "PDF-HN-016"
+        "PDF-HN-016",
+        "PDF-HN-073",
+        "PDF-HN-074",
+        "PDF-HN-075",
+        "PDF-HN-076"
       ],
       "purpose": "provision",
       "title": {
@@ -785,6 +789,195 @@
           "Compare the distinct ar-Raziq / ar-Razzaq wordings without merging them."
         ]
       }
+    },
+    {
+      "id": "hadith-bukhari-2311-ayat-kursi-bed",
+      "name_ids": [
+        "PDF-HN-013",
+        "PDF-HN-062",
+        "PDF-HN-063",
+        "PDF-HN-100"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "ഉറങ്ങുന്നതിനുമുമ്പ് ആയത്തുൽ കുർസി പൂർണമായി ഓതൽ — ബുഖാരി 2311",
+        "en": "Recite the complete Ayat al-Kursi before sleep — Bukhari 2311"
+      },
+      "arabic_original": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "translation": {
+        "ml": "അബൂഹുറൈറ (റ) യോട് പിടിക്കപ്പെട്ട കള്ളൻ ഉറങ്ങാൻ പോകുമ്പോൾ ആയത്തുൽ കുർസി ആദ്യം മുതൽ അവസാനംവരെ വായിക്കാൻ നിർദേശിച്ചെന്ന കഥ നബി ﷺക്ക് അറിയിച്ചപ്പോൾ, അവൻ കള്ളനാണെങ്കിലും പറഞ്ഞത് സത്യമാണെന്ന് നബി ﷺ സ്ഥിരീകരിച്ചു. അല്ലാഹുവിന്റെ സംരക്ഷണവും പ്രഭാതംവരെ പിശാചിന്റെ അടുപ്പത്തിൽനിന്നുള്ള കാവലും അവിടെ പരാമർശിക്കുന്നു. മുകളിൽ അൽബഖറ 2:255 പൂർണമായി നൽകിയിരിക്കുന്നു; അൽ-ഹയ്യ്, അൽ-ഖയ്യൂം എന്നീ രണ്ട് നാമങ്ങളും ഇതിലുണ്ട്.",
+        "en": "Abu Hurayrah related that a captive thief advised him to recite the entire Ayat al-Kursi before sleep; the Prophet confirmed that this particular advice was truthful even though the speaker was a liar. The report mentions protection until morning. The complete Quran 2:255 is reproduced above and includes al-Hayy and al-Qayyum."
+      },
+      "source_reference": "Sahih al-Bukhari 2311; Quran 2:255",
+      "source_url": "https://sunnah.com/bukhari:2311",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "സംഭവത്തിൽ നബി ﷺ സത്യമായ ഉപദേശം അംഗീകരിക്കുകയായിരുന്നു; ആയത്തുൽ കുർസി മുഴുവനായി ഓതുക എന്നതാണ് നിർദേശം. ഒന്നിലധികം പ്രാവശ്യം എന്ന് ഈ റിപ്പോർട്ട് പറയുന്നില്ല; ഓരോ നാമത്തിനും വേറിട്ട എണ്ണം നൽകിയിട്ടില്ല.",
+        "en": "The Prophet affirmed the instruction within the narrated incident. Recite the entire verse; this report does not require multiple repetitions or separate counts for names."
+      },
+      "count": {
+        "ml": "ഉറങ്ങുന്നതിന് മുമ്പ് ആയത്തുൽ കുർസി മുഴുവനായി വായിക്കുക. പ്രത്യേകിച്ച് ഒന്നിലധികം ആവർത്തനം ഈ റിപ്പോർട്ടിൽ പറയുന്നില്ല.",
+        "en": "Read the full Ayat al-Kursi before bed; this report specifies no multiple repetitions."
+      },
+      "timing": {
+        "ml": "ഉറങ്ങാൻ പോകുമ്പോൾ; സംരക്ഷണത്തെക്കുറിച്ച് പ്രഭാതംവരെ എന്നാണ് റിപ്പോർട്ട്.",
+        "en": "At bedtime, with reported protection until morning."
+      },
+      "conditions": {
+        "ml": "അൽബഖറ 2:255 മുഴുവനായി; പ്രത്യേക കളമോ തകിടോ വസ്തുവോ ഇല്ല.",
+        "en": "The full Quran 2:255; no square, talisman or special equipment."
+      },
+      "steps": {
+        "ml": [
+          "കിടക്കാൻ പോകുമ്പോൾ അൽബഖറ 2:255 ആരംഭംമുതൽ അവസാനംവരെ പാരായണം ചെയ്യുക.",
+          "അൽ-ഹയ്യ്, അൽ-ഖയ്യൂം എന്നിവ മാത്രം വേർതിരിച്ച് പ്രത്യേക എണ്ണം നിശ്ചയിക്കരുത്."
+        ],
+        "en": [
+          "Before sleep, recite Quran 2:255 from beginning to end.",
+          "Do not turn its individual Names into separate counted formulas."
+        ]
+      },
+      "references": [
+        {
+          "book": "Quran 2:255 — complete verse",
+          "url": "https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya255.html"
+        }
+      ]
+    },
+    {
+      "id": "hadith-bukhari-5017-three-surahs-bed",
+      "name_ids": [
+        "PDF-HN-065",
+        "PDF-HN-066",
+        "PDF-HN-013",
+        "PDF-HN-003",
+        "PDF-HN-101"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "ഉറങ്ങുമ്പോൾ ഇഖ്ലാസ്, ഫലഖ്, നാസ് പൂർണമായി: മൂന്നു ആവർത്തനങ്ങൾ",
+        "en": "Before sleep: all three complete surahs, three rounds (Bukhari 5017)"
+      },
+      "arabic_original": "قُلْ هُوَ ٱللَّهُ أَحَدٌ\nٱللَّهُ ٱلصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ\n\nقُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ\nمِن شَرِّ مَا خَلَقَ\nوَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ\nوَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n\nقُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ\nمَلِكِ ٱلنَّاسِ\nإِلَـٰهِ ٱلنَّاسِ\nمِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ\nٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\nمِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "translation": {
+        "ml": "ആഇശ (റ) നിവേദനം: റസൂൽ ﷺ എല്ലാ രാത്രിയിലും കിടക്കാൻ പോകുമ്പോൾ രണ്ട് കൈപ്പത്തികൾ കൂട്ടി, അതിലേക്ക് ഊതുകയും സൂറത്തുൽ ഇഖ്ലാസ് (4 ആയത്ത്), ഫലഖ് (5 ആയത്ത്), നാസ് (6 ആയത്ത്) മുഴുവൻ ഓതി, കഴിയുന്നത്ര ശരീരഭാഗങ്ങളിൽ കൈകൾ തടവുകയും ചെയ്തു. തല, മുഖം, ശരീരത്തിന്റെ മുൻഭാഗം എന്നിവയിൽ ആരംഭിച്ച് ഈ ക്രമം മൂന്നു തവണ ചെയ്തിരുന്നതായി റിപ്പോർട്ട് പറയുന്നു. മുകളിൽ മൂന്നു സൂറത്തുകളിലെയും 15 ആയത്തുകൾ പൂർണമായി ചേർത്തിട്ടുണ്ട്.",
+        "en": "Aisha reports that the Prophet cupped his palms, blew into them, recited Surahs al-Ikhlas (4 verses), al-Falaq (5) and an-Nas (6), and wiped as much of his body as he could, starting with his head, face and front. He performed this procedure three times. All 15 verses are reproduced above."
+      },
+      "source_reference": "Sahih al-Bukhari 5017; Quran 112–114",
+      "source_url": "https://sunnah.com/bukhari:5017",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിന്റെ എണ്ണം മൂന്നു സൂറത്തുകൾ മുഴുവനായി ഓതുന്നതിനും റിപ്പോർട്ടിൽ പറഞ്ഞ ക്രമത്തിനുമാണ്. അൽ-അഹദ്/അസ്-സ്വമദ് പോലുള്ള ഓരോ നാമം ഒറ്റയ്ക്ക് മൂന്നുതവണ ചൊല്ലണമെന്ന നിർദേശം ഇതിൽ ഇല്ല. സൂറത്തുകളുടെ എല്ലാ ആയത്തുകളും ഖുർആൻ പാഠത്തിൽനിന്ന് എടുത്ത് താഴെ ഒരുമിച്ച് കാണിച്ചിരിക്കുന്നു.",
+        "en": "The stated number applies to the complete recitation of these three surahs in the reported practice, not to repeating the standalone Names al-Ahad/al-Samad. All verses from the three surahs are supplied, in source order."
+      },
+      "count": {
+        "ml": "പൂർണ മൂന്നു സൂറത്തുകളും വായിച്ച് കൈപ്പത്തികളിലൂടെ ശരീരത്തിൽ തടവുന്ന ക്രമം 3 തവണ.",
+        "en": "Three rounds of the complete three-surah procedure."
+      },
+      "timing": {
+        "ml": "ഉറങ്ങാൻ കിടക്കുമ്പോൾ, ഓരോ രാത്രിയും.",
+        "en": "At bedtime every night in the narration."
+      },
+      "conditions": {
+        "ml": "കൈകൾ കൂട്ടിപ്പിടിക്കൽ, ഓതൽ, മൃദുവായി ഊതൽ, കഴിയുന്നത്ര ശരീരത്തിൽ തടവൽ. കളമോ തകിടോ ഇല്ല.",
+        "en": "Cup hands, recite, blow lightly into palms and wipe over the body; no magic square or amulet."
+      },
+      "steps": {
+        "ml": [
+          "സൂറത്തുൽ ഇഖ്ലാസ് പൂർണമായി വായിക്കുക: 112:1–4.",
+          "സൂറത്തുൽ ഫലഖ് പൂർണമായി വായിക്കുക: 113:1–5.",
+          "സൂറത്തുന്നാസ് പൂർണമായി വായിക്കുക: 114:1–6.",
+          "കൈപ്പത്തികളിൽ മൃദുവായി ഊതി തല, മുഖം, ശരീരത്തിന്റെ മുൻഭാഗം തുടങ്ങിയ ലഭ്യമായ ഭാഗങ്ങളിൽ തടവുക; ഈ ക്രമം മൂന്നു തവണ."
+        ],
+        "en": [
+          "Recite all four verses of Surah 112.",
+          "Recite all five verses of Surah 113.",
+          "Recite all six verses of Surah 114.",
+          "Blow gently into the palms and wipe over as much of the body as possible, beginning with head, face and front; perform three rounds."
+        ]
+      },
+      "references": [
+        {
+          "book": "Quran 112:1–4 — Surah al-Ikhlas (full)",
+          "url": "https://quran.com/112"
+        },
+        {
+          "book": "Quran 113:1–5 — Surah al-Falaq (full)",
+          "url": "https://quran.com/113"
+        },
+        {
+          "book": "Quran 114:1–6 — Surah an-Nas (full)",
+          "url": "https://quran.com/114"
+        }
+      ]
+    },
+    {
+      "id": "hadith-abudawud-5082-3-surahs-morning-evening",
+      "name_ids": [
+        "PDF-HN-065",
+        "PDF-HN-066",
+        "PDF-HN-013",
+        "PDF-HN-003",
+        "PDF-HN-101"
+      ],
+      "purpose": "protection",
+      "title": {
+        "ml": "രാവിലെയും വൈകുന്നേരവും ഇഖ്ലാസ്, ഫലഖ്, നാസ് — മൂന്നു തവണ",
+        "en": "Morning and evening — al-Ikhlas and both Mu'awwidhat, three times each"
+      },
+      "arabic_original": "قُلْ هُوَ ٱللَّهُ أَحَدٌ\nٱللَّهُ ٱلصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ\n\nقُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ\nمِن شَرِّ مَا خَلَقَ\nوَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ\nوَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n\nقُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ\nمَلِكِ ٱلنَّاسِ\nإِلَـٰهِ ٱلنَّاسِ\nمِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ\nٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\nمِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "translation": {
+        "ml": "അബ്ദുല്ലാഹ് ബിൻ ഖുബൈബ് (റ) നിവേദനം: റസൂൽ ﷺ «കുൽ ഹുവല്ലാഹു അഹദ്» എന്നും രണ്ട് മുഅവ്വിദത്തുകളും രാവിലെയും വൈകുന്നേരവും മൂന്നുതവണ ഓതാൻ പഠിപ്പിച്ചു. ഇത് ആവശ്യങ്ങളിൽ പര്യാപ്തമാകുമെന്ന വാഗ്ദാനം ഹദീസിലുണ്ട്. സുന്നഹ്.കോമിൽ അൽ-അൽബാനിയുടെ Hasan ഗ്രേഡ് നൽകിയിരിക്കുന്നു. മുകളിൽ മൂന്നു സൂറത്തുകളുടെയും 15 ആയത്തുകൾ മുഴുവനായി നൽകിയിരിക്കുന്നു.",
+        "en": "Abdullah ibn Khubayb reports that the Prophet taught reciting Surah al-Ikhlas and both protective surahs three times morning and evening, saying they would suffice against everything. Sunnah.com lists al-Albani's Hasan grading. The complete 15 verses of the three surahs are reproduced above."
+      },
+      "source_reference": "Sunan Abi Dawud 5082 (Hasan, al-Albani); Quran 112–114",
+      "source_url": "https://sunnah.com/abudawud:5082",
+      "review_status": "checked_against_digital_text",
+      "claim_kind": "prophetic_hadith",
+      "source_scope": {
+        "ml": "ഹദീസിന്റെ എണ്ണം മൂന്നു സൂറത്തുകൾ മുഴുവനായി ഓതുന്നതിനും റിപ്പോർട്ടിൽ പറഞ്ഞ ക്രമത്തിനുമാണ്. അൽ-അഹദ്/അസ്-സ്വമദ് പോലുള്ള ഓരോ നാമം ഒറ്റയ്ക്ക് മൂന്നുതവണ ചൊല്ലണമെന്ന നിർദേശം ഇതിൽ ഇല്ല. സൂറത്തുകളുടെ എല്ലാ ആയത്തുകളും ഖുർആൻ പാഠത്തിൽനിന്ന് എടുത്ത് താഴെ ഒരുമിച്ച് കാണിച്ചിരിക്കുന്നു.",
+        "en": "The stated number applies to the complete recitation of these three surahs in the reported practice, not to repeating the standalone Names al-Ahad/al-Samad. All verses from the three surahs are supplied, in source order."
+      },
+      "count": {
+        "ml": "ഓരോ സൂറത്തും 3 തവണ രാവിലെയും 3 തവണ വൈകുന്നേരവും. ഒന്നിനെ മാത്രം 3 എന്ന് ചുരുക്കരുത്.",
+        "en": "Each of the three surahs 3 times in the morning and 3 times in the evening."
+      },
+      "timing": {
+        "ml": "രാവിലെയും വൈകുന്നേരവും; പ്രത്യേക ഘടികാരസമയം ഈ റിപ്പോർട്ട് നിർദേശിക്കുന്നില്ല.",
+        "en": "Morning and evening; no exact clock hour prescribed."
+      },
+      "conditions": {
+        "ml": "സൂറത്തുകൾ പൂർണമായി വായിക്കുക; കൈകൂട്ടി ഊതലോ ശരീരത്തിൽ തടവലോ ഈ പ്രത്യേക റിപ്പോർട്ടിൽ പറയുന്നില്ല; അത് ബുഖാരി 5017-ലെ വ്യത്യസ്ത ക്രമമാണ്.",
+        "en": "Read all three surahs in full. The palm-blowing and wiping belongs to the separate bedtime Bukhari 5017 report, not this morning/evening narration."
+      },
+      "steps": {
+        "ml": [
+          "രാവിലെ മൂന്ന് സൂറത്തുകളും ഓരോന്നും 3 തവണ പൂർണമായി ഓതുക.",
+          "വൈകുന്നേരവും അതേ മൂന്ന് സൂറത്തുകളും ഓരോന്നും 3 തവണ പൂർണമായി ഓതുക.",
+          "കിടക്കുമ്പോഴുള്ള കൈതടവൽ ക്രമവുമായി ഈ സമയനിയമം കലർത്തരുത്."
+        ],
+        "en": [
+          "In the morning recite each complete surah three times.",
+          "In the evening recite each complete surah three times.",
+          "Keep the separate Bukhari bedtime palm-wiping ritual distinct."
+        ]
+      },
+      "references": [
+        {
+          "book": "Quran 112:1–4 — Surah al-Ikhlas (full)",
+          "url": "https://quran.com/112"
+        },
+        {
+          "book": "Quran 113:1–5 — Surah al-Falaq (full)",
+          "url": "https://quran.com/113"
+        },
+        {
+          "book": "Quran 114:1–6 — Surah an-Nas (full)",
+          "url": "https://quran.com/114"
+        }
+      ]
     }
   ]
 }
