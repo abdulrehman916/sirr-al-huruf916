@@ -141,6 +141,7 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
   // previously scan-reviewed original Arabic must not disappear when an older card is pending recheck.
   const shownLegacyShams = new Set(runtime.topics.filter(entry => entry.source_passage).map(entry => entry.id));
   const linkedShamsAccounts = Object.entries(shamsCardBridge.identity_map)
+    .concat((shamsCardBridge.secondary_matches?.[nameId] || []).map(accountId => [accountId, nameId]))
     .filter(([accountId, cardId]) => cardId === nameId && !shownLegacyShams.has(accountId))
     .map(([accountId]) => {
       const account = shamsBrief.accounts[accountId];
@@ -157,8 +158,8 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
         arabic_original: account.arabic_original,
         translation: account.translation || shamsCardBridge.translations[accountId],
         source_scope: {
-          ml: `${shamsCardBridge.source_edition_note.ml} ${shamsCardBridge.review_note.ml}`,
-          en: `${shamsCardBridge.source_edition_note.en} ${shamsCardBridge.review_note.en}`,
+          ml: `${shamsCardBridge.source_edition_note.ml} ${shamsCardBridge.review_note.ml} ${shamsCardBridge.identity_map[accountId] === nameId ? '' : shamsCardBridge.secondary_scope.ml}`,
+          en: `${shamsCardBridge.source_edition_note.en} ${shamsCardBridge.review_note.en} ${shamsCardBridge.identity_map[accountId] === nameId ? '' : shamsCardBridge.secondary_scope.en}`,
         },
         review_status: account.review_status,
         claim_kind: 'attributed_historical_khawass',
