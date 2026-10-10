@@ -1,0 +1,756 @@
+{
+  "reviewed_on": "2026-10-10",
+  "scope": {
+    "ml": "കാർഡ് 007 അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ പാഠങ്ങളും പദ/വ്യാകരണ വേർതിരിവും. പഴയ ശംസ് ഗ്രന്ഥത്തിൽ മോതിരത്തിൽ അഞ്ചുതവണ കൊത്തുക എന്നതാണ്, അഞ്ചുതവണ ഓതുക എന്നല്ല; അതിന്റെ സുരക്ഷാവാദം സ്ഥിരീകരിച്ചിട്ടില്ല. എല്ലാ 160 കാർഡുകളുടെയും കൈയെഴുത്തുപരിശോധന കഴിഞ്ഞിട്ടില്ല.",
+    "en": "Card 007 al-Muhaymin: complete Quran passages and careful grammatical distinctions. The historical Shams brief describes five inscriptions on a ring, NOT five recitations, and its claimed protection is unverified. Full manuscript research on 160 cards is incomplete."
+  },
+  "profiles": {
+    "PDF-HN-007": {
+      "name_id": "PDF-HN-007",
+      "evidence": [
+        {
+          "id": "encyclopedia-muhaymin-quran-5-48",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 5:48",
+            "en": "Al-Muhaymin — full Quran verse 5:48"
+          },
+          "arabic_original": "وَأَنزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ مِنَ الْكِتَابِ وَمُهَيْمِنًا عَلَيْهِ ۖ فَاحْكُم بَيْنَهُم بِمَا أَنزَلَ اللَّهُ ۖ وَلَا تَتَّبِعْ أَهْوَاءَهُمْ عَمَّا جَاءَكَ مِنَ الْحَقِّ ۚ لِكُلٍّ جَعَلْنَا مِنكُمْ شِرْعَةً وَمِنْهَاجًا ۚ وَلَوْ شَاءَ اللَّهُ لَجَعَلَكُمْ أُمَّةً وَاحِدَةً وَلَٰكِن لِّيَبْلُوَكُمْ فِي مَا آتَاكُمْ ۖ فَاسْتَبِقُوا الْخَيْرَاتِ ۚ إِلَى اللَّهِ مَرْجِعُكُمْ جَمِيعًا فَيُنَبِّئُكُم بِمَا كُنتُمْ فِيهِ تَخْتَلِفُونَ",
+          "verse_meaning": {
+            "ml": "ഖുർആൻ മുൻവേദങ്ങളെ സ്ഥിരീകരിക്കുകയും അവയുടെ മേൽ സാക്ഷിയും മാനദണ്ഡവും ആയിരിക്കുകയും ചെയ്യുന്നു; നന്മകളിൽ മത്സരിക്കാൻ കൽപ്പിക്കുന്നു.",
+            "en": "The Quran confirms earlier scriptures, witnesses over them and serves as a criterion; people are commanded to compete in good deeds."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «مُهَيْمِنًا» ഖുർആനെ വിശേഷിപ്പിക്കുന്നു, അല്ലാഹുവിന്റെ «الْمُهَيْمِنُ» എന്ന നാമം അല്ല. ഇബ്നു കസീർ അമീൻ, ശാഹിദ്, ഹാകിം എന്നീ വ്യാഖ്യാനങ്ങൾ നൽകുന്നു.",
+            "en": "Muhayminan is an adjective of the Quran, not the identical grammatical occurrence of Allah's Name. Ibn Kathir discusses trustee, witness and arbiter, rejecting a competing syntactic assignment to the Prophet."
+          },
+          "source_reference": "Quran 5:48 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "quran_adjective_not_divine_name",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-5-117",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 5:117",
+            "en": "Al-Muhaymin — full Quran verse 5:117"
+          },
+          "arabic_original": "مَا قُلْتُ لَهُمْ إِلَّا مَا أَمَرْتَنِي بِهِ أَنِ اعْبُدُوا اللَّهَ رَبِّي وَرَبَّكُمْ ۚ وَكُنتُ عَلَيْهِمْ شَهِيدًا مَّا دُمْتُ فِيهِمْ ۖ فَلَمَّا تَوَفَّيْتَنِي كُنتَ أَنتَ الرَّقِيبَ عَلَيْهِمْ ۚ وَأَنتَ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+          "verse_meaning": {
+            "ml": "ഈസാ നബി അല്ലാഹുവിനെ മാത്രം ആരാധിക്കണമെന്ന് പഠിപ്പിച്ചു; താൻ ജനങ്ങളുടെ ഇടയിൽ ഉണ്ടായിരുന്നപ്പോൾ സാക്ഷിയായിരുന്നുവെന്നും തുടർന്ന് അല്ലാഹു നിരീക്ഷകനാണെന്നും പറയുന്നു.",
+            "en": "Isa taught worship of Allah alone; he witnessed while present among his people, whereas Allah remains their ultimate Watcher and Witness."
+          },
+          "translation": {
+            "ml": "ഇവിടെയുള്ള ദൈവവിശേഷണം «الرَّقِيبَ» ആണ്; അൽ-മുഹൈമിൻ എന്ന പദമല്ല. തഫ്സീർ മനുഷ്യസാക്ഷിയുടെ കാലപരിധിയും അല്ലാഹുവിന്റെ പൂർണ സാക്ഷിത്വവും വേർതിരിക്കുന്നു.",
+            "en": "The direct epithet is al-Raqib, not al-Muhaymin. It distinguishes human witnessing during a lifetime from enduring divine watchfulness."
+          },
+          "source_reference": "Quran 5:117 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya117.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-6-59",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 6:59",
+            "en": "Al-Muhaymin — full Quran verse 6:59"
+          },
+          "arabic_original": "۞ وَعِندَهُ مَفَاتِحُ الْغَيْبِ لَا يَعْلَمُهَا إِلَّا هُوَ ۚ وَيَعْلَمُ مَا فِي الْبَرِّ وَالْبَحْرِ ۚ وَمَا تَسْقُطُ مِن وَرَقَةٍ إِلَّا يَعْلَمُهَا وَلَا حَبَّةٍ فِي ظُلُمَاتِ الْأَرْضِ وَلَا رَطْبٍ وَلَا يَابِسٍ إِلَّا فِي كِتَابٍ مُّبِينٍ",
+          "verse_meaning": {
+            "ml": "അദൃശ്യജ്ഞാനവും കരയിലും കടലിലുമുള്ളതെല്ലാം അറിയുന്നതും അല്ലാഹുവിനാണ്; ഒരു ഇല വീഴുന്നതും അവന്റെ അറിവിനപ്പുറമല്ല.",
+            "en": "Allah alone knows the unseen, all in land and sea, every falling leaf and grain, with everything recorded."
+          },
+          "translation": {
+            "ml": "അൽ-മുഹൈമിന്റെ സാക്ഷിത്വം വിശദീകരിക്കുന്ന ആശയബന്ധമാണ്. ഇബ്നു കസീർ അദൃശ്യജ്ഞാനത്തിന്റെ അഞ്ച് താക്കോലുകൾ സംബന്ധിച്ച സ്വഹീഹ് റിപ്പോർട്ട് ഉദ്ധരിക്കുന്നു.",
+            "en": "A thematic illustration of divine knowledge. Ibn Kathir cites sound reports on the five keys of the unseen rather than an al-Muhaymin repetition count."
+          },
+          "source_reference": "Quran 6:59 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya59.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-6-102",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 6:102",
+            "en": "Al-Muhaymin — full Quran verse 6:102"
+          },
+          "arabic_original": "ذَٰلِكُمُ اللَّهُ رَبُّكُمْ ۖ لَا إِلَٰهَ إِلَّا هُوَ ۖ خَالِقُ كُلِّ شَيْءٍ فَاعْبُدُوهُ ۚ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+          "verse_meaning": {
+            "ml": "സകലത്തിന്റെയും സ്രഷ്ടാവായ അല്ലാഹുവിനെ മാത്രം ആരാധിക്കുക; എല്ലാറ്റിന്റെയും കാര്യനിർവാഹകൻ അവനാണ്.",
+            "en": "Worship Allah, sole Creator and Lord; He is entrusted with every affair."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «وَكِيلٌ» എന്നതിന് ഹഫീഴ്, റഖീബ്, നിയന്ത്രിക്കുന്നവൻ എന്ന വ്യാഖ്യാനം നൽകുന്നു. വാക്കിന്റെ കൃത്യരൂപം അൽ-മുഹൈമിൻ അല്ല.",
+            "en": "Ibn Kathir explains wakil through guarding, observation and governing, without claiming the verse spells al-Muhaymin."
+          },
+          "source_reference": "Quran 6:102 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya102.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-10-46",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 10:46",
+            "en": "Al-Muhaymin — full Quran verse 10:46"
+          },
+          "arabic_original": "وَإِمَّا نُرِيَنَّكَ بَعْضَ الَّذِي نَعِدُهُمْ أَوْ نَتَوَفَّيَنَّكَ فَإِلَيْنَا مَرْجِعُهُمْ ثُمَّ اللَّهُ شَهِيدٌ عَلَىٰ مَا يَفْعَلُونَ",
+          "verse_meaning": {
+            "ml": "നബിക്ക് ചില വാഗ്ദാനങ്ങൾ കാണാനായാലും ഇല്ലെങ്കിലും എല്ലാവരും അല്ലാഹുവിങ്കലേക്ക് മടങ്ങും; അവൻ അവരുടെ പ്രവർത്തികൾക്ക് സാക്ഷിയാണ്.",
+            "en": "Whether the Prophet witnesses future events or not, the people return to Allah, who witnesses their deeds."
+          },
+          "translation": {
+            "ml": "«شَهِيدٌ» എന്ന വിശേഷണമാണ് നേരിട്ടുള്ള പദം; സാക്ഷിത്വം പ്രവാചകന്റെ ആയുസ്സിൽ ഒതുങ്ങുന്നില്ല.",
+            "en": "The direct word is shahid; divine witness is not limited by the Prophet's earthly lifespan."
+          },
+          "source_reference": "Quran 10:46 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya46.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-10-61",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 10:61",
+            "en": "Al-Muhaymin — full Quran verse 10:61"
+          },
+          "arabic_original": "وَمَا تَكُونُ فِي شَأْنٍ وَمَا تَتْلُو مِنْهُ مِن قُرْآنٍ وَلَا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُودًا إِذْ تُفِيضُونَ فِيهِ ۚ وَمَا يَعْزُبُ عَن رَّبِّكَ مِن مِّثْقَالِ ذَرَّةٍ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَلَا أَصْغَرَ مِن ذَٰلِكَ وَلَا أَكْبَرَ إِلَّا فِي كِتَابٍ مُّبِينٍ",
+          "verse_meaning": {
+            "ml": "മനുഷ്യരുടെ പ്രവർത്തികളും പാരായണവും അല്ലാഹു കാണുകയും അറിയുകയും ചെയ്യുന്നു; അണുവോളം പോലും അവനിൽനിന്നു മറയില്ല.",
+            "en": "No act or recitation escapes God's witnessing; nothing as small as an atom falls outside His knowledge and record."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇതിനെ ഇഹ്സാനിന്റെ ആശയവുമായി ബന്ധിപ്പിക്കുന്നു; അത് മനുഷ്യരുടെ സ്വകാര്യത ലംഘിക്കാൻ അനുമതിയല്ല.",
+            "en": "Ibn Kathir links this awareness to ihsan; God's complete observation is not a licence for people to spy on others."
+          },
+          "source_reference": "Quran 10:61 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura10-aya61.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-11-57",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 11:57",
+            "en": "Al-Muhaymin — full Quran verse 11:57"
+          },
+          "arabic_original": "فَإِن تَوَلَّوْا فَقَدْ أَبْلَغْتُكُم مَّا أُرْسِلْتُ بِهِ إِلَيْكُمْ ۚ وَيَسْتَخْلِفُ رَبِّي قَوْمًا غَيْرَكُمْ وَلَا تَضُرُّونَهُ شَيْئًا ۚ إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
+          "verse_meaning": {
+            "ml": "ഹൂദ് നബി സന്ദേശം അറിയിച്ചശേഷം ജനങ്ങൾ തിരിഞ്ഞാലും അല്ലാഹുവിനെ ദോഷപ്പെടുത്താനാവില്ല; അവൻ എല്ലാറ്റിന്റെയും കാവൽക്കാരനാണ്.",
+            "en": "Hud says he delivered his message; rejection cannot harm Allah, who guards and witnesses all things."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «حَفِيظٌ» എന്നതിനെ വാക്കും പ്രവൃത്തിയും നിരീക്ഷിച്ചു നീതിപൂർവം പ്രതിഫലം നൽകുന്നതുമായി ബന്ധിപ്പിക്കുന്നു.",
+            "en": "Ibn Kathir explains hafiz as preserving knowledge of deeds and words for recompense."
+          },
+          "source_reference": "Quran 11:57 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya57.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-11-86",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 11:86",
+            "en": "Al-Muhaymin — full Quran verse 11:86"
+          },
+          "arabic_original": "بَقِيَّتُ اللَّهِ خَيْرٌ لَّكُمْ إِن كُنتُم مُّؤْمِنِينَ ۚ وَمَا أَنَا عَلَيْكُم بِحَفِيظٍ",
+          "verse_meaning": {
+            "ml": "സത്യസന്ധമായ വ്യാപാരത്തിൽ ശേഷിക്കുന്ന ലാഭമാണ് നല്ലത്; താൻ അവരുടെ നിർബന്ധ കാവൽക്കാരനല്ലെന്ന് ശുഐബ് നബി പറയുന്നു.",
+            "en": "Honest remaining gain is better; Shu'ayb says he does not control his people's choices as their guardian."
+          },
+          "translation": {
+            "ml": "«حَفِيظٍ» എന്ന മനുഷ്യസ്ഥാനത്തെ ഇവിടെ നിഷേധിക്കുന്നു. അത് അല്ലാഹുവിന്റെ ഒരു പ്രത്യേക നാമത്തിന്റെ നേരിട്ടുള്ള വചനമായി എണ്ണരുത്.",
+            "en": "Hafiz is denied of the human messenger; it is not a fresh Divine Name occurrence."
+          },
+          "source_reference": "Quran 11:86 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya86.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-13-33",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 13:33",
+            "en": "Al-Muhaymin — full Quran verse 13:33"
+          },
+          "arabic_original": "أَفَمَنْ هُوَ قَائِمٌ عَلَىٰ كُلِّ نَفْسٍ بِمَا كَسَبَتْ ۗ وَجَعَلُوا لِلَّهِ شُرَكَاءَ قُلْ سَمُّوهُمْ ۚ أَمْ تُنَبِّئُونَهُ بِمَا لَا يَعْلَمُ فِي الْأَرْضِ أَم بِظَاهِرٍ مِّنَ الْقَوْلِ ۗ بَلْ زُيِّنَ لِلَّذِينَ كَفَرُوا مَكْرُهُمْ وَصُدُّوا عَنِ السَّبِيلِ ۗ وَمَن يُضْلِلِ اللَّهُ فَمَا لَهُ مِنْ هَادٍ",
+          "verse_meaning": {
+            "ml": "ഓരോ ആത്മാവിന്റെയും പ്രവൃത്തികളെ നിരീക്ഷിക്കുന്ന അല്ലാഹുവിനെ കൃത്രിമ പങ്കാളികളുമായി താരതമ്യം ചെയ്യാനാകില്ലെന്ന് വചനം ചോദിക്കുന്നു.",
+            "en": "The One observing the deeds of every soul is contrasted with the false partners attributed to God."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ കൃത്യമായി «حفيظ عليم رقيب» എന്നു വിശദീകരിക്കുന്നു. ഇവിടെ അൽ-മുഹൈമിൻ എന്ന പദമില്ല.",
+            "en": "Ibn Kathir explicitly uses guardian, knower and watcher as interpretive words, not an exact written al-Muhaymin occurrence."
+          },
+          "source_reference": "Quran 13:33 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya33.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-16-89",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 16:89",
+            "en": "Al-Muhaymin — full Quran verse 16:89"
+          },
+          "arabic_original": "وَيَوْمَ نَبْعَثُ فِي كُلِّ أُمَّةٍ شَهِيدًا عَلَيْهِم مِّنْ أَنفُسِهِمْ ۖ وَجِئْنَا بِكَ شَهِيدًا عَلَىٰ هَٰؤُلَاءِ ۚ وَنَزَّلْنَا عَلَيْكَ الْكِتَابَ تِبْيَانًا لِّكُلِّ شَيْءٍ وَهُدًى وَرَحْمَةً وَبُشْرَىٰ لِلْمُسْلِمِينَ",
+          "verse_meaning": {
+            "ml": "അന്ത്യദിനം എല്ലാ സമൂഹത്തിലും അവരുടെ ദൂതന്മാർ സാക്ഷികളാകും; ഖുർആൻ മാർഗദർശനവും കാരുണ്യവുമാണ്.",
+            "en": "Messengers will bear witness over their communities on Judgment Day; the Quran brings guidance and mercy."
+          },
+          "translation": {
+            "ml": "ഇവിടെ സാക്ഷികളായി പറയുന്നത് മനുഷ്യദൂതന്മാരാണ്. അല്ലാഹുവിന്റെ നാമമായ അൽ-മുഹൈമിൻ നേരിട്ടു വന്നതായി അടയാളപ്പെടുത്തരുത്.",
+            "en": "The witnesses here are human messengers, not a direct invocation of al-Muhaymin."
+          },
+          "source_reference": "Quran 16:89 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura16-aya89.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-22-17",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 22:17",
+            "en": "Al-Muhaymin — full Quran verse 22:17"
+          },
+          "arabic_original": "إِنَّ الَّذِينَ آمَنُوا وَالَّذِينَ هَادُوا وَالصَّابِئِينَ وَالنَّصَارَىٰ وَالْمَجُوسَ وَالَّذِينَ أَشْرَكُوا إِنَّ اللَّهَ يَفْصِلُ بَيْنَهُمْ يَوْمَ الْقِيَامَةِ ۚ إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+          "verse_meaning": {
+            "ml": "വ്യത്യസ്ത സമൂഹങ്ങളുടെ കാര്യത്തിൽ അന്തിമവിധി അല്ലാഹുവിന്റേതാണ്; അവൻ എല്ലാറ്റിനും സാക്ഷിയാണ്.",
+            "en": "Judgment among the named communities ultimately belongs to Allah, who witnesses all things."
+          },
+          "translation": {
+            "ml": "അന്ത്യദിനത്തിലെ നീതിയാണ് സന്ദർഭം; ആളുകൾ സ്വയം ശിക്ഷ നടപ്പാക്കാനുള്ള നിയമമല്ല.",
+            "en": "A declaration about ultimate Divine judgment, not private punitive authority."
+          },
+          "source_reference": "Quran 22:17 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura22-aya17.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-41-53",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 41:53",
+            "en": "Al-Muhaymin — full Quran verse 41:53"
+          },
+          "arabic_original": "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ ۗ أَوَلَمْ يَكْفِ بِرَبِّكَ أَنَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+          "verse_meaning": {
+            "ml": "ചക്രവാളങ്ങളിലും മനുഷ്യരിലും ഉള്ള ദൃഷ്ടാന്തങ്ങളിലൂടെ സത്യം തെളിയും; അല്ലാഹു സകലതിനും സാക്ഷിയാണ്.",
+            "en": "Signs in the horizons and in human beings reveal truth; Allah witnesses everything."
+          },
+          "translation": {
+            "ml": "ഇബ്നു കസീർ വ്യത്യസ്ത ചരിത്രപരവും സൃഷ്ടിപരവുമായ വിശദീകരണങ്ങൾ നൽകുന്നു. അവയെ ഖുർആൻ അക്ഷരപാഠമായി കാണിക്കരുത്.",
+            "en": "Ibn Kathir discusses historical and created signs as exegetical possibilities, not extra Quranic wording."
+          },
+          "source_reference": "Quran 41:53 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura41-aya53.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-42-6",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 42:6",
+            "en": "Al-Muhaymin — full Quran verse 42:6"
+          },
+          "arabic_original": "وَالَّذِينَ اتَّخَذُوا مِن دُونِهِ أَوْلِيَاءَ اللَّهُ حَفِيظٌ عَلَيْهِمْ وَمَا أَنتَ عَلَيْهِم بِوَكِيلٍ",
+          "verse_meaning": {
+            "ml": "അല്ലാഹുവിനെ വിട്ട് മറ്റുള്ളവരെ ആശ്രയിക്കുന്നവരുടെ കാര്യങ്ങളിൽ അല്ലാഹു കാവൽക്കാരനാണ്; നബി ﷺ നിർബന്ധ കാര്യനിർവാഹകനല്ല.",
+            "en": "Allah watches those choosing other patrons, while the Messenger is not their controller."
+          },
+          "translation": {
+            "ml": "ദൈവിക നിരീക്ഷണവും ദൂതന്റെ സന്ദേശമറിയിക്കാനുള്ള ചുമതലയും വേർതിരിച്ചിരിക്കുന്ന ആയത്താണ്.",
+            "en": "The verse distinguishes divine oversight from the Messenger's limited responsibility."
+          },
+          "source_reference": "Quran 42:6 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura42-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-50-18",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 50:18",
+            "en": "Al-Muhaymin — full Quran verse 50:18"
+          },
+          "arabic_original": "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ",
+          "verse_meaning": {
+            "ml": "എല്ലാ വാക്കിനും രേഖപ്പെടുത്താൻ സന്നദ്ധനായ നിരീക്ഷകനുണ്ട്.",
+            "en": "Not a word is uttered without a watcher ready to record it."
+          },
+          "translation": {
+            "ml": "ഇവിടെ «رَقِيبٌ عَتِيدٌ» ഒരു മലക്കാണ്, അല്ലാഹുവിന്റെ ദൈവനാമമല്ല. ഇബ്നു കസീർ എല്ലാ വാക്കുകളും രേഖപ്പെടുത്തുമോ എന്നതിലെ അഭിപ്രായവ്യത്യാസം നൽകുന്നു.",
+            "en": "This watcher is an angel, not Allah's Name. Ibn Kathir records distinct views over the scope of what is recorded."
+          },
+          "source_reference": "Quran 50:18 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "angelic_watcher_not_god",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-58-6",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 58:6",
+            "en": "Al-Muhaymin — full Quran verse 58:6"
+          },
+          "arabic_original": "يَوْمَ يَبْعَثُهُمُ اللَّهُ جَمِيعًا فَيُنَبِّئُهُم بِمَا عَمِلُوا ۚ أَحْصَاهُ اللَّهُ وَنَسُوهُ ۚ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+          "verse_meaning": {
+            "ml": "മനുഷ്യർ മറന്നുപോയ പ്രവൃത്തികളും അല്ലാഹു ഓർമിപ്പിക്കും; അവൻ സകലത്തിന്റെയും സാക്ഷിയാണ്.",
+            "en": "Allah will recount even deeds people have forgotten; He witnesses all things."
+          },
+          "translation": {
+            "ml": "ദൈവിക കണക്കിന്റെ പൂർണതയെയാണ് വചനം സൂചിപ്പിക്കുന്നത്; മനുഷ്യർക്കു രഹസ്യ നിരീക്ഷണം നടത്താനുള്ള അനുവാദമല്ല.",
+            "en": "The verse concerns divine accounting, not permission for invasive human surveillance."
+          },
+          "source_reference": "Quran 58:6 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura58-aya6.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        },
+        {
+          "id": "encyclopedia-muhaymin-quran-89-14",
+          "title": {
+            "ml": "അൽ-മുഹൈമിൻ — പൂർണ ഖുർആൻ ആയത്ത് 89:14",
+            "en": "Al-Muhaymin — full Quran verse 89:14"
+          },
+          "arabic_original": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
+          "verse_meaning": {
+            "ml": "നിന്റെ രക്ഷിതാവ് സൂക്ഷ്മമായി നിരീക്ഷിക്കുന്നവനാണ്.",
+            "en": "Your Lord is indeed ever watchful."
+          },
+          "translation": {
+            "ml": "അതിക്രമം ചെയ്ത പഴയ സമൂഹങ്ങളെക്കുറിച്ചുള്ള മുന്നറിയിപ്പിലാണ് ഇത്. «الْمِرْصَادِ» അൽ-മുഹൈമിൻ എന്ന പേരിന്റെ അതേ അക്ഷരരൂപമല്ല.",
+            "en": "It follows warnings about oppressive peoples; the term mirsad is not written as al-Muhaymin."
+          },
+          "source_reference": "Quran 89:14 · Ibn Kathir",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura89-aya14.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "thematic_divine_witness_and_guardianship",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള നാമം 59:23-ൽ മുമ്പേ ഉണ്ട്. ഇവിടെ 5:48-ലെ «مُهَيْمِنًا» ഖുർആന്റെ വിശേഷണമാണ്; മറ്റ് ആയത്തുകളിലെ ശാഹിദ്, റഖീബ്, ഹഫീഴ്, വകീൽ എന്നിവ അർഥബന്ധങ്ങളാണ്. മനുഷ്യ/മലക്ക് സാക്ഷികളെ അല്ലാഹുവിന്റെ നാമമായി തെറ്റായി കണക്കാക്കിയിട്ടില്ല. ജപസംഖ്യയോ സുരക്ഷാ ഉറപ്പോ സൃഷ്ടിച്ചിട്ടില്ല.",
+            "en": "The direct Name in 59:23 is already in the base card. Muhayminan in 5:48 describes the Quran; shahid, raqib, hafiz and wakil elsewhere express related roles, including human or angelic ones. No fabricated Name count or physical-safety guarantee."
+          },
+          "verse_count": 1
+        }
+      ],
+      "scholarly": [
+        {
+          "id": "encyclopedia-muhaymin-tafsir-1-59-23-katheer",
+          "title": {
+            "ml": "സൃഷ്ടികളുടെ പ്രവൃത്തികൾക്ക് സാക്ഷി",
+            "en": "Witness over creation's deeds"
+          },
+          "arabic_original": "أي الشاهد على خلقه بأعمالهم",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഇബ്നു അബ്ബാസിന്റെ അഭിപ്രായമായി അൽ-മുഹൈമിൻ സൃഷ്ടികളുടെ പ്രവൃത്തികൾക്ക് സാക്ഷി, നിരീക്ഷകൻ എന്ന വിശദീകരണം നൽകുന്നു; തകിടിന്റെ സുരക്ഷാവാഗ്ദാനമല്ല.",
+            "en": "Ibn Kathir reports Ibn Abbas' interpretation of al-Muhaymin as witness and watcher of creation's deeds, not a protective amulet."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-2-59-23-tabary",
+          "title": {
+            "ml": "ഇബ്നു അബ്ബാസ് — സാക്ഷിയും വിശ്വസ്തനും",
+            "en": "Ibn Abbas: witness and trustworthy"
+          },
+          "arabic_original": "قال: الشهيد، وقال مرّة أخرى: الأمين",
+          "translation": {
+            "ml": "ത്വബരി ഇബ്നു അബ്ബാസിൽനിന്ന് ശഹീദ് എന്നും മറ്റൊരിക്കൽ അമീൻ എന്നും രണ്ടു വ്യാഖ്യാനങ്ങൾ രേഖപ്പെടുത്തുന്നു. ഓരോന്നും അതത് റിപ്പോർട്ടിന്റെ അർഥമാണ്.",
+            "en": "Al-Tabari separately attributes the gloss shahid and, on another occasion, amin to Ibn Abbas."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-3-59-23-tabary",
+          "title": {
+            "ml": "മുജാഹിദ് — ശഹീദ്",
+            "en": "Mujahid: witness"
+          },
+          "arabic_original": "في قوله: ( الْمُهَيْمِنُ ) قال: الشهيد",
+          "translation": {
+            "ml": "മുജാഹിദിന്റെ പഴയ വ്യാഖ്യാനമനുസരിച്ച് അൽ-മുഹൈമിൻ എന്ന നാമം സാക്ഷി എന്ന അർഥത്തിലാണ്. നിവേദകന്റെ പേരോടെ സംരക്ഷിച്ച വാക്കാണിത്.",
+            "en": "Al-Tabari transmits Mujahid's distinct explanation of the Name as a witness."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-4-59-23-tabary",
+          "title": {
+            "ml": "ഖതാദ — ഗ്രന്ഥത്തിന്റെ കാര്യത്തിലുള്ള സാക്ഷിത്വം",
+            "en": "Qatadah: witnessing over a book"
+          },
+          "arabic_original": "أنـزل الله عزّ وجلّ كتابًا فشهد عليه",
+          "translation": {
+            "ml": "ഖതാദയുടെ അഭിപ്രായത്തിൽ അല്ലാഹു ഒരു ഗ്രന്ഥം ഇറക്കുകയും അതിനു സാക്ഷ്യം വഹിക്കുകയും ചെയ്യുന്നു. ഈ തഫ്സീർവിവരണം രഹസ്യ നിരീക്ഷണരീതിയല്ല.",
+            "en": "Qatadah describes God's revelation of a book and witnessing over it, not a method of human surveillance."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-5-59-23-tabary",
+          "title": {
+            "ml": "ഇബ്നു സൈദ് — സത്യസ്ഥിരീകരണം",
+            "en": "Ibn Zayd: attestation of truth"
+          },
+          "arabic_original": "المصدق لكلّ ما حدّث",
+          "translation": {
+            "ml": "ഇബ്നു സൈദ് ഭൂതവും ഭാവിയും പരലോകവും സംബന്ധിച്ച അല്ലാഹുവിന്റെ വാർത്തകളെ സ്ഥിരീകരിക്കുന്നവൻ എന്ന അർഥം നൽകുന്നു. നിരീക്ഷകൻ എന്നതിൽനിന്നു വ്യത്യസ്തമാണ്.",
+            "en": "Ibn Zayd connects the Name to confirmation of truth in God's accounts of past, future and the Hereafter."
+          },
+          "source_reference": "تفسير الطبري · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-6-59-23-baghawy",
+          "title": {
+            "ml": "ഖലീൽ — റഖീബ്, ഹാഫിസ്",
+            "en": "Al-Khalil: watcher and preserver"
+          },
+          "arabic_original": "وقال الخليل : هو الرقيب الحافظ",
+          "translation": {
+            "ml": "ബഗവി ഖലീലിന്റെ വിശദീകരണമായി റഖീബ്, ഹാഫിസ് എന്ന രണ്ടു വാക്കുകൾ സൂക്ഷിക്കുന്നു; ഭാഷയുടെ അർഥപരിധിയാണ് വിഷയം.",
+            "en": "Al-Baghawi attributes watcher and preserver to al-Khalil as related senses of the Name."
+          },
+          "source_reference": "تفسير البغوي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-7-59-23-baghawy",
+          "title": {
+            "ml": "ഹസൻ — അമീൻ",
+            "en": "Al-Hasan: trustworthy"
+          },
+          "arabic_original": "وقال الحسن : الأمين",
+          "translation": {
+            "ml": "ബഗവി ഹസന്റെ വാക്കായി അമീൻ എന്ന ലളിത വിശദീകരണം നൽകുന്നു. ഇതിൽ ഒരു പ്രത്യേക മോതിരമോ ജപസംഖ്യയോ ഇല്ല.",
+            "en": "Al-Baghawi reports al-Hasan's explanation as 'trustworthy', with no specific ring or recitation count."
+          },
+          "source_reference": "تفسير البغوي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-8-59-23-baghawy",
+          "title": {
+            "ml": "സഈദും ദഹ്ഹാക്കും — വിധികർത്താവ്",
+            "en": "Sa'id and al-Dahhak: arbiter"
+          },
+          "arabic_original": "وقال سعيد بن المسيب والضحاك : القاضي",
+          "translation": {
+            "ml": "ബഗവി സഈദ് ഇബ്നുൽ മുസയ്യിബിനെയും ദഹ്ഹാക്കിനെയും ഉദ്ധരിച്ച് വിധികർത്താവ് എന്ന അർഥം പറയുന്നു.",
+            "en": "Al-Baghawi attributes the gloss al-qadi, arbiter or judge, to Sa'id ibn al-Musayyib and al-Dahhak."
+          },
+          "source_reference": "تفسير البغوي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-9-59-23-baghawy",
+          "title": {
+            "ml": "ഇബ്നു സൈദ് — മുസദ്ദിഖ്",
+            "en": "Ibn Zayd: the One confirming"
+          },
+          "arabic_original": "وقال ابن زيد : المصدق",
+          "translation": {
+            "ml": "ബഗവി ഇബ്നു സൈദിന്റെ «സത്യം സ്ഥിരീകരിക്കുന്നവൻ» എന്ന വിശദീകരണം നൽകുന്നു; ഇത് നിരീക്ഷകൻ എന്ന അർഥത്തിൽനിന്നു വേറിട്ട പഠനമാണ്.",
+            "en": "Al-Baghawi preserves Ibn Zayd's explanation al-musaddiq, the One confirming truth."
+          },
+          "source_reference": "تفسير البغوي · Quran 59:23",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura59-aya23.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-10-5-48-katheer",
+          "title": {
+            "ml": "ഖുർആൻ മുൻവേദങ്ങളുടെ അമീൻ",
+            "en": "The Quran entrusted over earlier books"
+          },
+          "arabic_original": "القرآن أمين على كل كتاب قبله",
+          "translation": {
+            "ml": "ഇവിടെ മുഹൈമിനൻ ഖുർആനെ വിശേഷിപ്പിക്കുന്നു. ഇബ്നു കസീർ ഖുർആൻ മുൻവേദങ്ങളെക്കുറിച്ചുള്ള വിശ്വസ്ത മാനദണ്ഡമാണെന്നു പറയുന്നു.",
+            "en": "Muhayminan qualifies the Quran; Ibn Kathir says it is entrusted with the earlier scriptures."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-11-5-48-katheer",
+          "title": {
+            "ml": "അമീൻ, ശാഹിദ്, ഹാകിം",
+            "en": "Trustee, witness and arbiter"
+          },
+          "arabic_original": "فهو أمين وشاهد وحاكم على كل كتاب قبله",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ ഖുർആന്റെ മൂന്ന് അടുത്തബന്ധമുള്ള വ്യാഖ്യാനങ്ങൾ നൽകുന്നു: വിശ്വസ്തൻ, സാക്ഷി, വിധി നിർണയിക്കുന്നവൻ.",
+            "en": "Ibn Kathir presents trustee, witness and arbiter as semantically allied readings of the Quran's role."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-12-5-48-tabary",
+          "title": {
+            "ml": "ഹൈമനയുടെ ഭാഷാമൂലം",
+            "en": "The linguistic basis of haymana"
+          },
+          "arabic_original": "وأصل \" الهيمنة \"، الحفظ والارتقاب",
+          "translation": {
+            "ml": "ത്വബരി ഹൈമന എന്നതിന് സംരക്ഷണവും സൂക്ഷ്മനിരീക്ഷണവും അടിസ്ഥാന അർഥങ്ങളാണെന്ന് വ്യക്തമാക്കുന്നു; രഹസ്യജപക്രമമല്ല.",
+            "en": "Al-Tabari defines the root of haymana in terms of protection and observation, a linguistic account rather than an invocation."
+          },
+          "source_reference": "تفسير الطبري · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-13-5-48-tabary",
+          "title": {
+            "ml": "പ്രവാചകനിലേക്കുള്ള വിശേഷണബന്ധം വ്യാകരണപരമായി നിരസിക്കൽ",
+            "en": "Grammar rejects assigning the adjective to Muhammad"
+          },
+          "arabic_original": "وهذا التأويل بعيد من المفهوم في كلام العرب، بل هو خطأ",
+          "translation": {
+            "ml": "മുഹൈമിനൻ മുഹമ്മദ് നബിയെ വിശേഷിപ്പിക്കുന്നു എന്ന പഴയ വായന ത്വബരി ഉദ്ധരിക്കുകയും അറബി വ്യാകരണത്തിന്റെ അടിസ്ഥാനത്തിൽ അത് തെറ്റാണെന്ന് വിധിക്കുകയും ചെയ്യുന്നു.",
+            "en": "Al-Tabari notes an alternate attribution to Muhammad but rejects it as grammatically erroneous because the participle modifies the Book."
+          },
+          "source_reference": "تفسير الطبري · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-14-5-48-tabary",
+          "title": {
+            "ml": "മുൻവേദങ്ങളുടെ സംരക്ഷകനും സാക്ഷിയും",
+            "en": "Custodian of preceding scriptures"
+          },
+          "arabic_original": "أمينًا عليها، حافظا لها",
+          "translation": {
+            "ml": "ത്വബരി ഖുർആനെ മുൻവേദങ്ങളെക്കുറിച്ചുള്ള വിശ്വസ്ത സാക്ഷിയും സംരക്ഷകനുമായി വിശദീകരിക്കുന്നു. ദൈവനാമത്തിന്റെ അതേ വ്യാകരണ പ്രയോഗമല്ല.",
+            "en": "Al-Tabari treats the Quran as trustworthy keeper and witness over prior scriptures, not another occurrence of the Divine Name."
+          },
+          "source_reference": "تفسير الطبري · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-15-5-48-baghawy",
+          "title": {
+            "ml": "ബഗവിയുടെ വ്യത്യസ്ത പദാർത്ഥപാരമ്പര്യങ്ങൾ",
+            "en": "Al-Baghawi preserves divergent early glosses"
+          },
+          "arabic_original": "وقال الخليل : رقيبا وحافظا",
+          "translation": {
+            "ml": "ബഗവി വ്യത്യസ്ത പണ്ഡിതരിൽനിന്നുള്ള ശാഹിദ്, അമീൻ, ഖാദി, റഖീബ്, ഹാഫിസ് എന്നീ വ്യാഖ്യാനങ്ങൾ വേർതിരിക്കുന്നു.",
+            "en": "Al-Baghawi distinguishes witness, trustee, judge, watcher and guardian as separate transmitted interpretations."
+          },
+          "source_reference": "تفسير البغوي · Quran 5:48",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/baghawy/sura5-aya48.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-16-50-18-katheer",
+          "title": {
+            "ml": "മലക്ക് എല്ലാ വാക്കുകളും എഴുതുമോ?",
+            "en": "Do angels record every spoken word?"
+          },
+          "arabic_original": "وقد اختلف العلماء : هل يكتب الملك كل شيء من الكلام ؟",
+          "translation": {
+            "ml": "മലക്കുകൾ എല്ലാ വാക്കുകളും രേഖപ്പെടുത്തുമോ പ്രതിഫലമോ ശിക്ഷയോ ഉള്ളവ മാത്രമോ എന്നതിൽ ഇബ്നു കസീർ ഭിന്നാഭിപ്രായങ്ങൾ രേഖപ്പെടുത്തുന്നു.",
+            "en": "Ibn Kathir records a dispute over recording every spoken word versus reward- and punishment-bearing words."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 50:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        },
+        {
+          "id": "encyclopedia-muhaymin-tafsir-17-50-18-katheer",
+          "title": {
+            "ml": "മനുഷ്യവാക്കുകളുടെ ഉത്തരവാദിത്വം",
+            "en": "Accountability for speech"
+          },
+          "arabic_original": "إلا ولها من يراقبها معتد لذلك يكتبها",
+          "translation": {
+            "ml": "ഓരോ വാക്കിനെയും രേഖപ്പെടുത്താൻ നിയോഗിക്കപ്പെട്ട നിരീക്ഷകനെ ഇബ്നു കസീർ വിവരിക്കുന്നു. അത് അല്ലാഹുവിന്റെ നാമമല്ല, മലക്കാണ്.",
+            "en": "Ibn Kathir explains the designated watcher recording human speech; the watcher is an angel, not Allah's Name."
+          },
+          "source_reference": "تفسير ابن كثير · Quran 50:18",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya18.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "മൂല തഫ്സീറിലെ ചെറിയ അറബി വാക്യവും അർഥസന്ദർഭത്തിന്റെ പഠനവുമാണ്; പൂർണ തഫ്സീറോ ഹദീസിന്റെ സ്വതന്ത്ര സനദ് പരിശോധനയോ അല്ല.",
+            "en": "A verified short original Arabic quotation and source-specific commentary summary, not the full tafsir or independent authentication of every incidental report."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1492,6 +1492,83 @@ try {
     assert.ok(!html.includes(deepMumin.evidence[0].id),'Name six source entry leaked onto another card.');
   }
   console.log('PASS: card 006 al-Mumin preserves 21 complete Quran verses, 18 sourced tafsir notes, Bukhari 3360 with Muslim 124a corroboration, pre-existing Muslim 2708a and Shams 1,132 historical count with medical warning.');
+
+  // Seventh encyclopedia-depth card: Divine Name, Quranic Book adjective and human/angelic witnesses must not be conflated.
+  const encyclopaediaVI=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBEncyclopediaVI.json','utf8'));
+  const muhayminId='PDF-HN-007';
+  const deepMuhaymin=encyclopaediaVI.profiles[muhayminId];
+  assert.deepEqual(Object.keys(encyclopaediaVI.profiles),[muhayminId],'Only the seventh card is added in this overlay.');
+  assert.equal(deepMuhaymin.evidence.length,16,'Sixteen complete Quran verses expected on al-Muhaymin.');
+  assert.equal(deepMuhaymin.evidence.reduce((n,entry)=>n+entry.verse_count,0),16);
+  assert.equal(deepMuhaymin.scholarly.length,17,'Seventeen separately attributed Arabic-source tafsir studies expected.');
+  assert.equal(new Set([...deepMuhaymin.evidence,...deepMuhaymin.scholarly].map(x=>x.id)).size,33);
+  assert.equal(research[muhayminId].evidence.filter(e=>e.source_reference==='Quran 59:23').length,1,
+    'Original direct Name 59:23 must remain single and distinct.');
+  const verseReferences=new Set();
+  for(const entry of deepMuhaymin.evidence){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.ok(entry.arabic_original.length>=15 && entry.verse_meaning.ml && entry.verse_meaning.en);
+    assert.ok(entry.translation.ml&&entry.translation.en&&entry.source_scope.ml&&entry.source_scope.en);
+    assert.ok(entry.source_reference.startsWith('Quran '));
+    const ref=entry.source_reference.match(/Quran (\d+:\d+)/)?.[1];
+    assert.ok(ref && ref!=='59:23' && !verseReferences.has(ref),'Duplicate or direct-name source reuse '+ref);
+    verseReferences.add(ref);
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/katheer\/sura\d+-aya\d+\.html$/.test(entry.source_url));
+    if(ref==='5:48'){
+      assert.equal(entry.claim_kind,'quran_adjective_not_divine_name');
+      assert.ok(entry.arabic_original.includes('وَمُهَيْمِنًا عَلَيْهِ'));
+      assert.ok(entry.translation.en.includes('Muhayminan is an adjective of the Quran'));
+    }
+    if(ref==='50:18'){
+      assert.equal(entry.claim_kind,'angelic_watcher_not_god');
+      assert.ok(entry.translation.en.includes('angel'));
+    }
+    for(const lang of ['ml','en']){
+      const html=render(chapters[muhayminId]||null,muhayminId,lang,{pdf_name_id:muhayminId});
+      for(const field of [entry.arabic_original,entry.verse_meaning[lang],entry.translation[lang],entry.source_scope[lang]]) {
+        assert.ok(html.includes(escape(field)),'Full Quran phrase or bilingual meaning missing '+entry.id+'/'+lang);
+      }
+      assert.ok(html.includes(entry.source_url),'Quran/tafsir link missing '+entry.id);
+      assert.ok(sectionBEntrySearchText(entry,lang).includes(entry.verse_meaning[lang].toLocaleLowerCase()),
+        'Source-specific Quran meaning absent from search '+entry.id);
+    }
+  }
+  assert.equal(verseReferences.size,16);
+  const exactAuthors=new Set();
+  for(const entry of deepMuhaymin.scholarly){
+    assert.equal(entry.review_status,'checked_against_digital_text');
+    assert.equal(entry.claim_kind,'attributed_scholarly_tafsir');
+    assert.ok(entry.arabic_original.length>=12 && entry.translation.ml && entry.translation.en);
+    assert.ok(/\/tafseer\/(katheer|tabary|baghawy)\//.test(entry.source_url));
+    exactAuthors.add(entry.source_url.match(/\/tafseer\/([^/]+)\//)[1]);
+    for(const lang of ['ml','en']){
+      const html=render(chapters[muhayminId]||null,muhayminId,lang,{pdf_name_id:muhayminId});
+      assert.ok(html.includes(escape(entry.arabic_original)),'Scholarly Arabic quotation absent '+entry.id);
+      assert.ok(html.includes(escape(entry.translation[lang])),'Scholarly interpretation absent '+entry.id);
+      assert.ok(html.includes(entry.source_url),'Individual Arabic tafsir source link absent '+entry.id);
+    }
+  }
+  assert.deepEqual([...exactAuthors].sort(),['baghawy','katheer','tabary']);
+  assert.ok(deepMuhaymin.scholarly.some(x=>x.translation.en.includes('grammatically erroneous')),
+    'Keep al-Tabari rejection of a Quran-to-Prophet grammatical switch.');
+  assert.equal(bridge.identity_map['b-shams-brief-68-المهيمن'],muhayminId);
+  const historicalMuhaymin=historical.accounts['b-shams-brief-68-المهيمن'];
+  assert.equal(historicalMuhaymin.source_page,'68');
+  assert.ok(historicalMuhaymin.arabic_original.includes('خمس مرات في شرف القمر'));
+  assert.ok(historicalMuhaymin.count.en.includes('inscriptions'));
+  assert.ok(!historicalMuhaymin.count.en.includes('recitations'));
+  for(const lang of ['ml','en']){
+    const html=render(chapters[muhayminId]||null,muhayminId,lang,{pdf_name_id:muhayminId});
+    assert.ok(html.includes(escape(historicalMuhaymin.arabic_original)),'Original Shams Arabic inscription account lost.');
+    assert.ok(html.includes(escape(historicalMuhaymin.translation[lang])),'Shams history qualification lost.');
+    assert.ok(html.includes(escape(historicalMuhaymin.count[lang])),'Historical five inscriptions count lost.');
+    assert.ok(html.includes(escape(encyclopaediaVI.scope[lang])),'Incomplete manuscript-review warning absent.');
+  }
+  for(const id of ['PDF-HN-001','PDF-HN-002','PDF-HN-003','PDF-HN-004','PDF-HN-005','PDF-HN-006']){
+    const html=render(chapters[id]||null,id,'en',{pdf_name_id:id});
+    assert.ok(!html.includes(deepMuhaymin.evidence[0].id),'Cross-card leakage of seventh Name source into '+id);
+  }
+  console.log('PASS: al-Muhaymin seventh card contains 16 full Arabic Quran verses, 17 source-attributed tafsir distinctions, and the separate historical five-inscription ring claim, in both languages.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
