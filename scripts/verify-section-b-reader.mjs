@@ -924,6 +924,43 @@ try {
   assert.ok(patients.translation.en.includes('Pharaoh') && patients.translation.ml.includes('ഫിർഔനി'));
   assert.equal(checkedQuranVerses.length, 8);
   console.log('PASS: seven full Quranic prayer records, eight complete verses and eleven card links in two languages.');
+
+  // Third additive Quranic prayer layer: exact whole verses, bilingual display and twenty safe card links.
+  const topicalIII=JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTopicalDuasIII.json','utf8'));
+  assert.equal(topicalIII.topics.length,10,'The third layer should contain ten independent Quranic records.');
+  const earlierIds=new Set([...topical.topics,...topicalII.topics].map(item=>item.id));
+  const currentIds=new Set();
+  let thirdLinks=0;
+  for(const item of topicalIII.topics){
+    assert.ok(!earlierIds.has(item.id)&&!currentIds.has(item.id),'Duplicate Quranic prayer record: ' + item.id);
+    currentIds.add(item.id);
+    assert.equal(item.review_status,'checked_against_digital_text');
+    assert.ok(item.claim_kind && item.source_scope.ml && item.source_scope.en);
+    assert.ok(item.arabic_original.length>=35 && !item.arabic_original.includes('...'),'Full Arabic passage must remain verbatim.');
+    assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|qortobi)\/sura[0-9]+-aya[0-9]+\.html$/.test(item.source_url));
+    assert.ok(item.name_ids.length > 0);
+    for(const id of item.name_ids){
+      assert.ok(coveredIds.has(id),'Unknown card linked by ' + item.id + ': ' + id);
+      thirdLinks++;
+      for(const lang of ['ml','en']){
+        const html=render(chapters[id],id,lang,{pdf_name_id:id});
+        for(const phrase of [item.arabic_original,item.translation[lang],item.source_scope[lang],item.count[lang],item.timing[lang],item.conditions[lang],item.source_url]) {
+          assert.ok(html.includes(escape(phrase)),'Missing sourced Quran record ' + item.id + ' in ' + id + '/' + lang);
+        }
+      }
+    }
+  }
+  assert.equal(thirdLinks,20,'Ten new Quranic records must connect to twenty card views.');
+  assert.equal(23+topicalII.topics.length+topicalIII.topics.length,40,'Preserve all forty Quranic prayer records.');
+  const byThirdId=id=>topicalIII.topics.find(x=>x.id===id);
+  assert.ok(byThirdId('quran-2-128-submission-and-repentance').arabic_original.includes('التَّوَّابُ الرَّحِيمُ'));
+  assert.ok(byThirdId('quran-28-16-musa-forgiveness').arabic_original.includes('الْغَفُورُ الرَّحِيمُ'));
+  assert.ok(byThirdId('quran-21-112-truthful-judgment').arabic_original.includes('الرَّحْمَٰنُ'));
+  assert.ok(byThirdId('quran-17-80-truthful-entry-exit').translation.en.includes('Nasiran'));
+  assert.ok(byThirdId('quran-27-19-sulayman-gratitude').translation.en.includes('Ashkura'));
+  assert.ok(byThirdId('quran-14-41-ibrahim-forgiveness').translation.en.includes('9:114'));
+  assert.ok(byThirdId('quran-3-147-steadfastness-and-repentance').translation.en.includes('historical'));
+  console.log('PASS: ten whole Quran verses, twenty name-card links, and all forty topical Quran prayer records in both languages.');
   // The visible source summary must include every research overlay, not merely the first-pass profile.
   for (const id of coveredIds) {
     for (const lang of ['ml', 'en']) {
