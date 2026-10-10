@@ -160,7 +160,19 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
   ];
   const term = query.trim().toLocaleLowerCase();
-  const matches = entry => !term || [t(entry.title), t(entry.translation), entry.arabic_original, entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation), t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference, ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`), ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`), checkedChapter?.source_title, t(entry.timing), t(entry.conditions), ...(Array.isArray(t(entry.steps)) ? t(entry.steps) : [])].filter(Boolean).join(' ').toLocaleLowerCase().includes(term);
+  const matches = entry => !term || [
+    t(entry.title), t(entry.translation), entry.arabic_original,
+    entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation),
+    t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference,
+    ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`),
+    ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`),
+    checkedChapter?.source_title, t(entry.timing), t(entry.conditions),
+    t(entry.count), typeof entry.count === 'number' ? String(entry.count) : '',
+    entry.count_evidence?.source_phrase, entry.count_evidence?.value,
+    t(entry.count_evidence?.note),
+    ...(entry.edition_variants?.variants || []).flatMap(variant => [variant.stored_phrase, variant.alternative_phrase, t(variant.note)]),
+    ...(Array.isArray(t(entry.steps)) ? t(entry.steps) : []),
+  ].filter(value => value !== null && value !== undefined && value !== '').join(' ').toLocaleLowerCase().includes(term);
   const visible = groups.map(group => ({ ...group, items: group.items.filter(entry => matches(entry) && (!['topics', 'prophetic', 'shams'].includes(group.key) || purpose === 'all' || (entry.purpose || 'other') === purpose)) }));
   const availablePurposes = new Set(groups.filter(group => ['topics', 'prophetic', 'shams'].includes(group.key)).flatMap(group => group.items.map(entry => entry.purpose || 'other')));
   // Count the complete displayed source inventory, including all ten tafsir layers and checked book passages.
