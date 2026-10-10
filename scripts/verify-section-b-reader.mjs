@@ -914,7 +914,7 @@ try {
   }
   assert.equal(attachedCount, 11, 'Seven Quranic supplications must appear at eleven card connections.');
   const refuge = topicalII.topics.find(entry => entry.id === 'quran-23-97-98-seek-refuge');
-  assert.ok(refuge.arabic_original.includes('\\n'), 'Both entire Quran 23:97 and 23:98 must be retained.');
+  assert.ok(refuge.arabic_original.includes('\n'), 'Both entire Quran 23:97 and 23:98 must be retained.');
   assert.deepEqual(refuge.references.map(entry => entry.page), ['23:97', '23:98']);
   const zakariya = topicalII.topics.find(entry => entry.id === 'quran-21-89-zakariya-heir');
   assert.ok(zakariya.arabic_original.includes('خَيْرُ الْوَارِثِينَ'));
