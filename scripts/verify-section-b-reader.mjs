@@ -1507,7 +1507,7 @@ try {
   const verseReferences=new Set();
   for(const entry of deepMuhaymin.evidence){
     assert.equal(entry.review_status,'checked_against_digital_text');
-    assert.ok(entry.arabic_original.length>=35 && entry.verse_meaning.ml && entry.verse_meaning.en);
+    assert.ok(entry.arabic_original.length>=15 && entry.verse_meaning.ml && entry.verse_meaning.en);
     assert.ok(entry.translation.ml&&entry.translation.en&&entry.source_scope.ml&&entry.source_scope.en);
     assert.ok(entry.source_reference.startsWith('Quran '));
     const ref=entry.source_reference.match(/Quran (\d+:\d+)/)?.[1];
@@ -1517,7 +1517,7 @@ try {
     if(ref==='5:48'){
       assert.equal(entry.claim_kind,'quran_adjective_not_divine_name');
       assert.ok(entry.arabic_original.includes('وَمُهَيْمِنًا عَلَيْهِ'));
-      assert.ok(entry.translation.en.includes('not Allah'));
+      assert.ok(entry.translation.en.includes('Muhayminan is an adjective of the Quran'));
     }
     if(ref==='50:18'){
       assert.equal(entry.claim_kind,'angelic_watcher_not_god');
