@@ -729,7 +729,308 @@
           "claim_kind": "direct_quran_name_context"
         }
       ],
-      "scholarly": []
+      "scholarly": [
+        {
+          "id": "encyclopedia-rahman-tafsir-55-1-katheer-يخبر-تعالى-ع",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: കരുണയുടെ അനുഗ്രഹങ്ങളിൽ ഖുർആൻ പഠിപ്പിക്കൽ മുൻപന്തിയിൽ",
+            "en": "Ibn Kathir: revelation as a prime manifestation of mercy"
+          },
+          "arabic_original": "يخبر تعالى عن فضله ورحمته بخلقه",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ അർ-റഹ്മാൻ എന്ന ആദ്യവചനത്തിന് പിന്നാലെയുള്ള «عَلَّمَ الْقُرْآنَ» എന്ന പ്രസ്താവനയെ കാരുണ്യവുമായി ബന്ധിപ്പിക്കുന്നു. വിശ്വാസികൾക്ക് ഖുർആൻ പഠിക്കാനും മനസ്സിലാക്കാനും സൗകര്യം നൽകുന്നതിനെ അദ്ദേഹം പ്രധാന അനുഗ്രഹമായി പറയുന്നു. മനുഷ്യനെ സൃഷ്ടിച്ചതിന് മുമ്പ് ഖുർആൻ പഠിപ്പിച്ചെന്ന ക്രമം പരിശോധിക്കേണ്ട സവിശേഷ വിഷയമാണ്.",
+            "en": "Ibn Kathir explains the opening verses through Allah's benevolence in teaching revelation and enabling people to learn and understand it. The sequence placing the teaching of the Quran before the statement of human creation is exegetically significant."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya1.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-55-4-katheer-قال-الحسن-يع",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «ബയാൻ» വാക്കിന്റെയും ഉച്ചാരണത്തിന്റെയും അനുഗ്രഹം",
+            "en": "Ibn Kathir: bayan as articulate speech"
+          },
+          "arabic_original": "قال الحسن يعني النطق",
+          "translation": {
+            "ml": "അൽ-ബയാൻ എന്ന പദത്തെ ഹസൻ അൽ-ബസ്വരി സംസാരമായി വിവരിക്കുന്നുവെന്നും, ദഹ്ഹാക്കും ഖതാദയും നന്മതിന്മ വേർതിരിക്കുന്ന അറിവുമായി ബന്ധിപ്പിക്കുന്നുവെന്നും ഇബ്നു കസീർ രേഖപ്പെടുത്തുന്നു. അദ്ദേഹം ഈ സന്ദർഭത്തിൽ ഉച്ചാരണവുമായി ബന്ധപ്പെട്ട വ്യാഖ്യാനത്തെ മുൻഗണിക്കുന്നു. രണ്ടഭിപ്രായങ്ങളും ഒരേ രേഖയാക്കി മറച്ചിട്ടില്ല.",
+            "en": "Ibn Kathir records al-Hasan's interpretation of bayan as speech and the view of al-Dahhak and Qatadah connecting it to moral discernment. He favors the interpretation of articulation within the immediate context of Quranic instruction. These are preserved as distinguishable readings."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya4.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:4",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-26-katheer-هذا-حديث-منك",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: മർയമിന്റെ മൗനവ്രതവും ദുർബല റിപ്പോർട്ടും",
+            "en": "Ibn Kathir: Mary's silence and a rejected report"
+          },
+          "arabic_original": "هذا حديث منكر جدا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ മർയമിന്റെ «صَوْمًا» എന്ന പ്രയോഗത്തെ നിശ്ശബ്ദതയായി വിശദീകരിക്കുന്ന വ്യാഖ്യാനങ്ങൾ നൽകുന്നു. അതേ തഫ്സീർ ഭാഗത്ത് ഈത്തപ്പനയുടെ മഹത്ത്വവുമായി ബന്ധപ്പെട്ട ഒരു പ്രവാചകവചന-ആരോപണത്തെ «حديث منكر جدا» എന്നു വിമർശിക്കുന്നുണ്ട്. അതിനെ വിശ്വസനീയമായ സുന്നത്ത് ആയി കാർഡിൽ സ്ഥാപിക്കരുത്.",
+            "en": "Ibn Kathir transmits the interpretation of Mary's sawman as silence. The same commentary explicitly calls a separate palm-tree-related report ‘very objectionable’; that report must not be upgraded to authenticated Prophetic teaching."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya26.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:26",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-58-katheer-إذا-تتلى-علي",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: പ്രവാചകന്മാരുടെ ഖുർആൻ പ്രതികരണം",
+            "en": "Ibn Kathir: the prophets' response to revelation"
+          },
+          "arabic_original": "إذا تتلى عليهم آيات الرحمن خروا سجدا وبكيا",
+          "translation": {
+            "ml": "«آيَاتُ الرَّحْمَٰنِ» എന്നത് അല്ലാഹുവിന്റെ തെളിവുകളും വചനങ്ങളുമാണെന്ന് ഇബ്നു കസീർ വിശദീകരിക്കുന്നു. അത് കേട്ട പ്രവാചകന്മാർ ഭക്തിയോടെ സജ്ദയും കരച്ചിലും പ്രകടിപ്പിച്ചതാണ് വചനത്തിലെ കാര്യം. ഇവിടെ പ്രത്യേക അർ-റഹ്മാൻ ഓതലിന്റെ എണ്ണം കണ്ടെത്താൻ പാടില്ല.",
+            "en": "Ibn Kathir explains that the verses of the All-Merciful contain God's signs and proofs. Prophets respond in humble prostration and tears; the narration is not a prescribed name-specific numeric litany."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya58.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:58",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-katheer-من-غير-تكييف",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ഇസ്തിവാ വ്യാഖ്യാനത്തിലെ സലഫ് രീതി",
+            "en": "Ibn Kathir: the early approach to istiwa"
+          },
+          "arabic_original": "من غير تكييف ولا تحريف",
+          "translation": {
+            "ml": "അർ-റഹ്മാൻ അർശിന്മേൽ ഇസ്തിവാ എന്ന വചനത്തെ വിശദീകരിക്കുമ്പോൾ ഇബ്നു കസീർ സൃഷ്ടികളുമായി ഉപമിക്കാതെയും അതിന്റെ രൂപരീതി നിശ്ചയിക്കാതെയും ഖുർആൻ-ഹദീസിലെ പാഠം സ്വീകരിക്കുന്ന സലഫിന്റെ സമീപനം എടുത്തുപറയുന്നു. തക്യീഫ്, തശ്ബീഹ്, തഹ്‌രീഫ് എന്നീ വാദഭേദങ്ങൾ പദങ്ങളായി സൂക്ഷിച്ചു.",
+            "en": "Ibn Kathir refers to the early Muslim method of affirming what the scripture says without specifying a physical modality or likening Allah to creation. The disputed categories of takyif, tashbih and textual alteration are kept conceptually separate."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura20-aya5.html",
+          "source_reference": "تفسير ابن كثير — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-qortobi-بغير-حد-ولا-",
+          "title": {
+            "ml": "ഖുർതുബി: സൃഷ്ടികളോട് ഉപമിക്കാത്ത ഇസ്തിവാ",
+            "en": "Al-Qurtubi: divine transcendence in explaining istiwa"
+          },
+          "arabic_original": "بغير حد ولا كيف",
+          "translation": {
+            "ml": "അൽ-ഖുർതുബി ഈ ആയത്തിന്റെ വ്യാകരണവായനകളും 'ഇസ്തിവാ'യെ സംബന്ധിച്ച ദൈവശാസ്ത്രപ്രസ്താവനകളും രേഖപ്പെടുത്തുന്നു. സൃഷ്ടികൾക്കുള്ള അതിരുകളും 'എങ്ങനെ' എന്ന രൂപവിവരണവും അല്ലാഹുവിന് ബാധകമാക്കരുതെന്ന് അദ്ദേഹം ചർച്ച ചെയ്യുന്നു. ഇത് പണ്ഡിതവ്യാഖ്യാനമാണ്; ആയത്തിലെ പദങ്ങൾ മാറ്റിയതല്ല.",
+            "en": "Al-Qurtubi notes grammatical possibilities alongside theological discussion of istiwa, rejecting the importation of creaturely limitations or modality into Divine transcendence. It is a scholarly exposition, not a replacement for Quranic wording."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura20-aya5.html",
+          "source_reference": "تفسير القرطبي — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-20-5-tabary-وللرفع-في-ال",
+          "title": {
+            "ml": "ത്വബരി: അർ-റഹ്മാൻ എന്ന പദത്തിന്റെ വ്യാകരണബന്ധം",
+            "en": "Al-Tabari: grammar of the Divine Name in 20:5"
+          },
+          "arabic_original": "وللرفع في الرحمن وجهان",
+          "translation": {
+            "ml": "ത്വബരി «الرَّحْمَٰنُ» എന്ന പദത്തിന്റെ ഉയർത്തപ്പെട്ട രൂപത്തെ മുൻവചനത്തിലെ അവതരണവുമായി ബന്ധിപ്പിക്കുന്ന ഒരു വായനയും, അതിനെ തുടർന്ന് വരുന്ന «عَلَى الْعَرْشِ اسْتَوَىٰ» എന്ന വാക്യത്തോട് ബന്ധിപ്പിക്കുന്ന മറ്റൊരു വായനയും പറയുന്നു. ഒരേയൊരു വ്യാകരണബന്ധം മാത്രമെന്ന് അവകാശപ്പെടുന്നില്ല.",
+            "en": "Al-Tabari records more than one grammatical connection for the nominative al-Rahman: one relates it to the previous description of revelation and another to the following predication. The variant grammatical analyses are not silently harmonized."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura20-aya5.html",
+          "source_reference": "تفسير الطبري — Quran 20:5",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-63-katheer-بسكينة-ووقار",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വിനയം കൃത്രിമ ദുർബലതയല്ല",
+            "en": "Ibn Kathir: humility is not affected weakness"
+          },
+          "arabic_original": "بسكينة ووقار من غير جبرية ولا استكبار",
+          "translation": {
+            "ml": "«يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا» എന്നതിന് അഹങ്കാരമില്ലാത്ത, ശാന്തവും ഗാംഭീര്യപൂർണവുമായ പെരുമാറ്റം എന്ന അർഥമാണ് ഇബ്നു കസീർ ചർച്ച ചെയ്യുന്നത്. രോഗിയായി നടിച്ച് നടക്കുന്നതുപോലുള്ള കപടപെരുമാറ്റത്തെ അദ്ദേഹം വേർതിരിക്കുന്നു. മൃദുഭാഷണം അക്രമത്തെ അനുകരിക്കാതിരിക്കലാണ്.",
+            "en": "Ibn Kathir describes calm dignity free of arrogance, explicitly distinguishing it from affected frailty. Responding with salam concerns restraint rather than mirroring abusive conduct."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya63.html",
+          "source_reference": "تفسير ابن كثير — Quran 25:63",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-63-qortobi-وأضافهم-إلى-",
+          "title": {
+            "ml": "ഖുർതുബി: «ഇബാദുർറഹ്മാൻ» ആദരസംബോധനയും വ്യാകരണവും",
+            "en": "Al-Qurtubi: honored servants and their grammatical description"
+          },
+          "arabic_original": "وأضافهم إلى عبوديته تشريفا",
+          "translation": {
+            "ml": "ഖുർതുബി «عِبَادُ الرَّحْمَٰنِ» എന്ന ബന്ധം ദാസന്മാർക്ക് നൽകിയ ഒരു ആദരവിശേഷണമാണെന്ന് വിശദീകരിക്കുകയും തുടർന്നുള്ള «الَّذِينَ» എന്നതിന്റെ വ്യാകരണബന്ധത്തിനുള്ള വ്യത്യസ്ത നിർദേശങ്ങൾ നൽകുകയും ചെയ്യുന്നു. അതുവഴി പേരിന്റെ അർഥവും പെരുമാറ്റഗുണങ്ങളും വാക്യത്തിൽ എങ്ങനെ ചേരുന്നുവെന്നു വായിക്കാം.",
+            "en": "Al-Qurtubi explains the designation ‘servants of the All-Merciful’ as an honored ascription and records grammatical views about the relative construction that follows. These link the Divine Name to an extended portrait of upright character."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura25-aya63.html",
+          "source_reference": "تفسير القرطبي — Quran 25:63",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-85-katheer-وهو-أشبه-بال",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: വിശദമായ അന്തിമദിന റിപ്പോർട്ടുകൾക്ക് സമാന നിലവാരമില്ല",
+            "en": "Ibn Kathir: distinguish vivid reports from securely established texts"
+          },
+          "arabic_original": "وهو أشبه بالصحة",
+          "translation": {
+            "ml": "വഫ്ദ് എന്ന പദത്തെ സംബന്ധിച്ച് ഇബ്നു കസീർ വ്യത്യസ്ത മുൻഗാമി അഭിപ്രായങ്ങളും ദീർഘമായ വിവരണമുള്ള ചില റിപ്പോർട്ടുകളും ഉദ്ധരിക്കുന്നു. ഒരു ദീർഘവിവരണത്തിനു ശേഷം അത് അലി (റ)യുടെ പ്രസ്താവനയായി വരുന്നതാണ് കൂടുതൽ ശരിയായ രൂപമെന്നു അദ്ദേഹം ശ്രദ്ധിപ്പിക്കുന്നു. അതിനാൽ എല്ലാ അലങ്കാരവിവരണങ്ങളും സഹീഹ് മർഫൂഅ് ഹദീസാക്കാൻ പാടില്ല.",
+            "en": "Ibn Kathir cites various early reports about wafdan and some unusually elaborate descriptions. He explicitly suggests that a long narration is more likely preserved as a statement from Ali rather than securely Prophetic. The card should not collapse all reports into Sahih hadith."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya85.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:85",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-87-katheer-شهادة-أن-لا-",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «അഹ്ദ്» തൗഹീദിന്റെ കരാറുമായി ബന്ധപ്പെട്ടു",
+            "en": "Ibn Kathir: the covenant concerns faith and its duties"
+          },
+          "arabic_original": "شهادة أن لا إله إلا الله",
+          "translation": {
+            "ml": "«عِندَ الرَّحْمَٰنِ عَهْدًا» എന്നതിൽ ഇബ്നു കസീർ തൗഹീദിന്റെ സാക്ഷ്യം, അതിന്റെ അവകാശങ്ങൾ നിറവേറ്റൽ എന്നിവയുടെ വ്യാഖ്യാനം ഉദ്ധരിക്കുന്നു. അതിനോട് ചേർത്ത് നബിവചനമായി സ്ഥിരീകരിക്കാത്ത എല്ലാ അധിക പ്രാർത്ഥനകളെയും പ്രവാചകസുന്നത്തായി മുദ്രകുത്തരുത്.",
+            "en": "Ibn Kathir interprets the covenant through confession of Allah's oneness and fulfilling its obligations. Supplementary reported supplications in the commentary require their own transmission review before being labelled Prophetic."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya87.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:87",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-19-96-katheer-سيجعل-لهم-ال",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: സ്‌നേഹം വിശ്വാസത്തിന്റെയും സൽപ്രവൃത്തിയുടെയും സന്ദർഭം",
+            "en": "Ibn Kathir: love arises in the context of faith and righteous works"
+          },
+          "arabic_original": "سيجعل لهم الرحمن ودا",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ «وُدًّا» വിശ്വാസികളുടെ ഹൃദയങ്ങളിൽ ഉണ്ടാകുന്ന സ്‌നേഹവുമായി ബന്ധിപ്പിക്കുന്നു. അല്ലാഹു ഒരു ദാസനെ സ്‌നേഹിക്കുമ്പോൾ ജിബ്‌രീലിനോടുള്ള അറിയിപ്പിനെക്കുറിച്ചുള്ള ഹദീസ് ഇതോടൊപ്പം വിവരിക്കുന്നു. സ്‌നേഹം പിടിച്ചെടുക്കാനുള്ള രഹസ്യരീതി ആയത്തിൽ ഇല്ല.",
+            "en": "Ibn Kathir relates wuddan to affection arising among believers and discusses the report about divine love being announced to Gabriel. The verse does not provide a coercive charm for winning someone's affection."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura19-aya96.html",
+          "source_reference": "تفسير ابن كثير — Quran 19:96",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-78-38-katheer-اختلف-المفسر",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: «അർ-റൂഹ്» ആരെന്നതിലെ അഭിപ്രായഭേദം",
+            "en": "Ibn Kathir: several interpretations of al-Ruh"
+          },
+          "arabic_original": "اختلف المفسرون في المراد بالروح",
+          "translation": {
+            "ml": "«الرُّوحُ» എന്നത് ജിബ്‌രീൽ ആണെന്നതും മനുഷ്യരാണെന്നതും പ്രത്യേക സൃഷ്ടിയാണെന്നതും ഖുർആൻ തന്നെയാണെന്നതും അടക്കമുള്ള അഭിപ്രായങ്ങൾ ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. ത്വബരി ഒരേയൊരു അഭിപ്രായത്തിൽ തീർച്ചപ്പെടുത്തിയില്ലെന്നും ചർച്ച വരുന്നു. വ്യത്യാസമുള്ള വിഷയത്തിൽ ഒന്നുമാത്രം സ്ഥിരീകരിച്ച സത്യമായി അടയാളപ്പെടുത്തരുത്.",
+            "en": "Ibn Kathir lists the interpretations of al-Ruh as Gabriel, humanity, another created entity, and even the Quran, and remarks on al-Tabari's refusal to settle decisively on one. This controversy should not be flattened into a categorical ruling."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura78-aya38.html",
+          "source_reference": "تفسير ابن كثير — Quran 78:38",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-25-60-katheer-لا-نعرف-الرح",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: അർ-റഹ്മാൻ എന്ന നാമത്തെക്കുറിച്ചുള്ള ചരിത്രപരമായ തർക്കം",
+            "en": "Ibn Kathir: historical dispute about using the Name"
+          },
+          "arabic_original": "لا نعرف الرحمن ولا الرحيم",
+          "translation": {
+            "ml": "ഈ വചനത്തിലെ «وَمَا الرَّحْمَٰنُ» എന്ന എതിർപ്പ് വിശദീകരിക്കുമ്പോൾ ഇബ്നു കസീർ ഹുദൈബിയ്യ കരാറിലെ ബിസ്മില്ലാഹ് എഴുതുന്നതിനെച്ചൊല്ലിയുള്ള തർക്കവും ഓർമ്മിപ്പിക്കുന്നു. പിന്നീട് 17:110-ലെ അല്ലാഹുവിന്റെയും അർ-റഹ്മാന്റെയും നാമങ്ങളിൽ വിളിക്കാമെന്ന പ്രഖ്യാപനവുമായി ബന്ധിപ്പിക്കുന്നു. ഇത് നാമത്തിന്റെ ചരിത്രപരമായ അംഗീകാരം പഠിക്കാനുള്ള വിഷയമാണ്.",
+            "en": "Ibn Kathir ties the rejection of al-Rahman to objections during the treaty of Hudaybiyyah to writing the basmalah, and links the answer to Quran 17:110. This provides important historical context for the Name's use."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura25-aya60.html",
+          "source_reference": "تفسير ابن كثير — Quran 25:60",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        },
+        {
+          "id": "encyclopedia-rahman-tafsir-55-1-katheer-هذا-حديث-غري",
+          "title": {
+            "ml": "ഇബ്നു കസീർ: ജിന്നുകളുടെ മറുപടി റിപ്പോർട്ടിന്റെ ഗ്രേഡിങ്ങ്",
+            "en": "Ibn Kathir: grade the reported response of the jinn separately"
+          },
+          "arabic_original": "هذا حديث غريب",
+          "translation": {
+            "ml": "സൂറത്ത് അർ-റഹ്മാനിലെ ആവർത്തിക്കുന്ന «فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ» എന്ന വചനത്തിനു ജിന്നുകൾ മറുപടി പറഞ്ഞു എന്നൊരു റിപ്പോർട്ട് ഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു. അതിന്റെ ഒരു വഴിയെ തിർമിദി «غريب» എന്ന് വിളിച്ചതും മറ്റൊരു വഴിയെ സംബന്ധിച്ച പരാമർശങ്ങളും ഉണ്ട്. ആ റിപ്പോർട്ട് സ്ഥിരീകരിക്കാതെ പൂർണ സുന്നത്ത് ആയി അവതരിപ്പിക്കരുത്.",
+            "en": "Ibn Kathir quotes a report that the jinn responded to the refrain of Surat al-Rahman. He also preserves al-Tirmidhi's qualification of a transmission as gharib and reports other routes. Its grading must be evaluated rather than assuming every narrated ritual is unequivocally authentic."
+          },
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura55-aya1.html",
+          "source_reference": "تفسير ابن كثير — Quran 55:1",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "attributed_scholarly_tafsir",
+          "source_scope": {
+            "ml": "ഇത് ഗ്രന്ഥകാരന്റെ തഫ്സീർ വ്യാഖ്യാനത്തിന്റെ സംഗ്രഹവും ചെറു മൂലവാക്യവുമാണ്; മുഴുവൻ തഫ്സീർ അല്ല, സ്വതന്ത്ര ഹദീസ് തെളിവോ പ്രത്യേക ജപക്രമമോ അല്ല.",
+            "en": "A source-attributed explanatory summary with a short original quotation; not the whole commentary, independent hadith authentication or a numbered devotional procedure."
+          }
+        }
+      ]
     }
   }
 }
