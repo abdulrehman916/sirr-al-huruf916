@@ -1,8 +1,8 @@
 {
   "reviewed_on": "2026-10-10",
   "scope": {
-    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് ഇബ്നു കസീറിന്റെയും ത്വബരിയുടെയും നേരിട്ട് പരിശോധിച്ച 30 മൂല അറബി വ്യാഖ്യാനങ്ങൾ. ഖുർആനിലെ നിശ്ചിത പദരൂപം, ചരിത്രസന്ദർഭം, പണ്ഡിതാഭിപ്രായം എന്നിവ തിരിച്ചറിയുന്നു. ഖവാസ്സ്, കളം, എണ്ണങ്ങൾ സംബന്ധിച്ച പൂർണ ഗ്രന്ഥപരിശോധന ഇതോടെ പൂർത്തിയായിട്ടില്ല.",
-    "en": "Ninth additive deep-study layer: 15 previously unstudied canonical IDs, 30 actually inspected short original Arabic commentary excerpts (15 Ibn Kathir, 15 al-Tabari), individualized Malayalam and English scholarly analyses. Distinguishes original Quran forms, grammatical nuances and contexts from later isolated catalog names. This is not complete historical khawass or manuscript research."
+    "ml": "മുമ്പ് അധിക തഫ്സീർ പഠനം ഇല്ലാത്ത 15 കാർഡുകൾക്ക് ഇബ്നു കസീറിന്റെയും ത്വബരിയുടെയും നേരിട്ട് പരിശോധിച്ച 30 മൂല അറബി വ്യാഖ്യാനങ്ങൾ. ഖുർആനിലെ നിശ്ചിത പദരൂപം, ചരിത്രസന്ദർഭം, പണ്ഡിതാഭിപ്രായം എന്നിവ തിരിച്ചറിയുന്നു. ഖവാസ്സ്, കളം, എണ്ണങ്ങൾ സംബന്ധിച്ച പൂർണ ഗ്രന്ഥപരിശോധന ഇതോടെ പൂർത്തിയായിട്ടില്ല. «അൽ-കബീർ» (13:9), «അൽ-ഖാദിർ» (6:65) എന്നീ നേരിട്ടുള്ള ഖുർആൻ നാമരൂപങ്ങൾ രണ്ടു പൂർണ ആയത്തുകളോടും അധികം രണ്ടു 6:65 തഫ്സീർ വായനകളോടും സ്ഥിരീകരിച്ചു.",
+    "en": "Ninth additive deep-study layer: 15 previously unstudied canonical IDs, 30 actually inspected short original Arabic commentary excerpts (15 Ibn Kathir, 15 al-Tabari), individualized Malayalam and English scholarly analyses. Distinguishes original Quran forms, grammatical nuances and contexts from later isolated catalog names. This is not complete historical khawass or manuscript research. Corrects earlier loose links by giving complete directly attested Quran al-Kabir (13:9) and al-Qadir (6:65), with two additionally inspected exegetical notes for 6:65."
   },
   "profiles": {
     "PDF-HN-030": {
@@ -467,7 +467,28 @@
     },
     "PDF-HN-100": {
       "name_id": "PDF-HN-100",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-ix-full-100-13-9",
+          "title": {
+            "ml": "ഖുർആൻ 13:9 — കൃത്യ നാമരൂപമുള്ള പൂർണ ആയത്ത്",
+            "en": "Complete Quran 13:9 — exact Divine Name form"
+          },
+          "arabic_original": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
+          "translation": {
+            "ml": "മറഞ്ഞതും പ്രത്യക്ഷമായതും അറിയുന്നവനും എല്ലാ വസ്തുക്കൾക്കും മീതെ മഹത്വമുള്ളവനും ഉന്നതനുമാണ് അല്ലാഹു.",
+            "en": "Allah knows the unseen and the witnessed, the Supremely Great and Exalted."
+          },
+          "source_reference": "Quran 13:9 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura13-aya9.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ പൂർണ ആയത്തിൽ «الْكَبِيرُ» നേരിട്ട് വരുന്നു; പഴയ 2:255 തെളിവിൽ അൽ-അലിയ്യ്, അൽ-അളീം എന്നിവയാണ്; അവയെ അൽ-കബീറിന്റെ നേരിട്ടുള്ള തെളിവായി ചിത്രീകരിക്കരുത്.",
+            "en": "This complete verse explicitly prints al-Kabir. Quran 2:255 instead prints al-Ali al-Azim, so it should not be mislabeled an exact occurrence of al-Kabir."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-ix-100-katheer-13-9",
@@ -559,7 +580,28 @@
     },
     "PDF-HN-104": {
       "name_id": "PDF-HN-104",
-      "evidence": [],
+      "evidence": [
+        {
+          "id": "depth-ix-full-104-6-65",
+          "title": {
+            "ml": "ഖുർആൻ 6:65 — കൃത്യ നാമരൂപമുള്ള പൂർണ ആയത്ത്",
+            "en": "Complete Quran 6:65 — exact Divine Name form"
+          },
+          "arabic_original": "قُلْ هُوَ الْقَادِرُ عَلَىٰ أَن يَبْعَثَ عَلَيْكُمْ عَذَابًا مِّن فَوْقِكُمْ أَوْ مِن تَحْتِ أَرْجُلِكُمْ أَوْ يَلْبِسَكُمْ شِيَعًا وَيُذِيقَ بَعْضَكُم بَأْسَ بَعْضٍ ۗ انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ لَعَلَّهُمْ يَفْقَهُونَ",
+          "translation": {
+            "ml": "പറയുക: നിങ്ങളുടെ മുകളിൽനിന്നോ കാലുകളുടെ അടിയിൽനിന്നോ ശിക്ഷ അയയ്ക്കാനും, നിങ്ങളെ വിഭിന്ന കക്ഷികളാക്കി പരസ്പര സംഘർഷം അനുഭവിപ്പിക്കാനും കഴിവുള്ളവൻ അവനാണ്. അവർ മനസ്സിലാക്കാൻ നാം തെളിവുകൾ പലവിധം വിശദീകരിക്കുന്നതു നോക്കുക.",
+            "en": "Say: He has power to send punishment from above or beneath you, or divide you into factions and make you taste one another's violence. See how the signs are explained in diverse ways so they may understand."
+          },
+          "source_reference": "Quran 6:65 (complete verse)",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "complete_quran_verse_context",
+          "source_scope": {
+            "ml": "ഈ പൂർണ ആയത്തിൽ «الْقَادِرُ» നേരിട്ട് വരുന്നു. മുൻ കാർഡിലെ 42:9-ൽ «قَدِيرٌ» എന്ന വേറൊരു രൂപമാണ്. മുന്നറിയിപ്പിലെ ശിക്ഷ മറ്റുള്ളവർക്കെതിരെ ആചാരമായി ഉപയോഗിക്കാനുള്ള നിർദേശം അല്ല.",
+            "en": "The exact definite word al-Qadir appears here, unlike the earlier qadirun in Quran 42:9. This is a warning about divine power and division, not a ritual for attacking people."
+          }
+        }
+      ],
       "scholarly": [
         {
           "id": "depth-ix-104-katheer-42-9",
@@ -599,6 +641,46 @@
           "source_scope": {
             "ml": "ഈ ഭാഗം പരാമർശിച്ച തഫ്സീർ പേജിലെ അറബി വാചകമാണ്; തുടർന്ന് പണ്ഡിതന്റെ ഉദ്ദേശ്യത്തിന്റെ മലയാളം സംഗ്രഹം. നിശ്ചിത ജപസംഖ്യയോ ഉറപ്പായ ഫലമോ ഇവിടെ സ്ഥാപിക്കുന്നില്ല.",
             "en": "Brief Arabic original from the cited classical commentary, followed by an attributed interpretation. This does not establish an independently prescribed recitation count or guaranteed effect."
+          }
+        },
+        {
+          "id": "depth-ix-104-katheer-6-65-exact",
+          "title": {
+            "ml": "ഇബ്നു കസീർ — നേരിട്ടുള്ള അൽ-ഖാദിർ, ഖുർആൻ 6:65",
+            "en": "Ibn Kathir — explicit al-Qadir Quran 6:65"
+          },
+          "arabic_original": "قال : هذه للمشركين",
+          "translation": {
+            "ml": "ഇബ്നു കസീർ 6:65-ൽ «الْقَادِرُ» കൃത്യ നാമരൂപത്തോടെ വന്നതായി വിശദീകരിക്കുമ്പോൾ ഹസൻ അൽ-ബസ്വരിയുടെ ഈ ശിക്ഷാമുന്നറിയിപ്പ് മുശ്‌രിക്കുകൾക്ക് ബാധകമാണെന്ന അഭിപ്രായവും ഉദ്ധരിക്കുന്നു. ശിക്ഷയെ ആളുകളെ ഉപദ്രവിക്കാനുള്ള ദിക്‌ർ ക്രമമാക്കരുത്.",
+            "en": "Ibn Kathir reports al-Hasan's reading that the warning concerns polytheists. Unlike the earlier 42:9 link, Quran 6:65 explicitly uses al-Qadir. The warning is not a human license to harm others."
+          },
+          "source_reference": "تفسير ابن كثير — Quran 6:65",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/katheer/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "exact_quranic_name_and_attributed_tafsir",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള ഖുർആൻ നാമരൂപം 6:65-ൽ. ഇത് ശിക്ഷാമുന്നറിയിപ്പാണ്; മറ്റൊരാളെ ഉപദ്രവിക്കാൻ ആചാരക്രമമല്ല.",
+            "en": "Direct Quranic definite al-Qadir in 6:65. The verse concerns warning and judgment; it does not prescribe any coercive rite."
+          }
+        },
+        {
+          "id": "depth-ix-104-tabary-6-65-exact",
+          "title": {
+            "ml": "ത്വബരി — നേരിട്ടുള്ള അൽ-ഖാദിർ, ഖുർആൻ 6:65",
+            "en": "Al-Tabari — explicit al-Qadir Quran 6:65"
+          },
+          "arabic_original": "هو القادر على أن يرسل عليكم عذابًا من فوقكم أو من تحت أرجلكم",
+          "translation": {
+            "ml": "ത്വബരി 6:65-ൽ ശിക്ഷവരുത്താൻ അല്ലാഹുവിന് കഴിവുണ്ടെന്ന മുന്നറിയിപ്പ് ഏകദൈവവിശ്വാസത്തോട് ബന്ധിപ്പിക്കുന്നു; മുഖ്യ അഭിസംബോധിതർ വിഗ്രഹാരാധകരാണെന്നതാണ് അദ്ദേഹത്തിന്റെ തിരഞ്ഞെടുത്ത സന്ദർഭം. ഖുർആനിലെ «الْقَادِرُ» നേരിട്ടുള്ള രൂപമാണ്.",
+            "en": "Al-Tabari interprets the verse as a warning to the idolaters, preferring this audience while recording other reports. Al-Qadir occurs directly and is not merely inferred from another verbal form."
+          },
+          "source_reference": "تفسير الطبري — Quran 6:65",
+          "source_url": "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya65.html",
+          "review_status": "checked_against_digital_text",
+          "claim_kind": "exact_quranic_name_and_attributed_tafsir",
+          "source_scope": {
+            "ml": "നേരിട്ടുള്ള ഖുർആൻ നാമരൂപം 6:65-ൽ. ഇത് ശിക്ഷാമുന്നറിയിപ്പാണ്; മറ്റൊരാളെ ഉപദ്രവിക്കാൻ ആചാരക്രമമല്ല.",
+            "en": "Direct Quranic definite al-Qadir in 6:65. The verse concerns warning and judgment; it does not prescribe any coercive rite."
           }
         }
       ]
