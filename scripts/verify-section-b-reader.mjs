@@ -658,6 +658,64 @@ try {
   assert.ok(depthVI.profiles['PDF-HN-065'].scholarly.some(x=>x.translation.en.includes('weak chains')));
   assert.ok(depthVI.profiles['PDF-HN-092'].scholarly.some(x=>x.source_url.includes('/tabary/sura24-aya35.html')));
   console.log('PASS: 105 distinct scholarly-deepened Holy Names; 22 further sourced Arabic tafsir excerpts, one full Quran verse, four 57:3 hadith-linked names and weak-report caveat.');
+
+  // Seventh independently sourced study: first fifteen original catalog Names.
+  // Distinguish 120 unique deep-study headings from complete manuscript coverage.
+  const depthVII = JSON.parse(fs.readFileSync('src/data/holyNamesSectionBTafsirDepthVII.json','utf8'));
+  const viiIds = Object.keys(depthVII.profiles);
+  assert.equal(viiIds.length,15);
+  assert.deepEqual(viiIds.sort(),Array.from({length:15},(_,i)=>'PDF-HN-'+String(i+1).padStart(3,'0')).sort(),
+    'First fifteen original Holy Names need individual studies, not shared one-size-fits-all data.');
+  const studiedVII = [...sixPhaseIds,...viiIds];
+  assert.equal(studiedVII.length,120);
+  assert.equal(new Set(studiedVII).size,120,'Study must introduce fifteen unique new cards.');
+  assert.ok(studiedVII.every(x=>coveredIds.has(x)));
+  let depth7Scholarly=0,depth7Kathir=0,depth7Tabari=0,depth7Verses=0,criticalRecords=0;
+  const seenIds=new Set();
+  for(const [id,p] of Object.entries(depthVII.profiles)){
+    assert.equal(p.name_id,id);
+    assert.ok(p.scholarly.length>=2,'Every name needs at least Ibn Kathir and Tabari source readings.');
+    for(const record of [...p.scholarly,...p.evidence]){
+      assert.ok(!seenIds.has(record.id),`Globally duplicated research record ID ${record.id}`);
+      seenIds.add(record.id);
+      assert.equal(record.review_status,'checked_against_digital_text');
+      assert.ok(record.arabic_original && record.arabic_original.length>=10,`Short or absent original Arabic excerpt: ${record.id}`);
+      assert.ok(record.translation?.ml && record.translation?.en);
+      assert.ok(record.source_scope?.ml && record.source_scope?.en);
+      assert.ok(/^https:\/\/quran\.ksu\.edu\.sa\/tafseer\/(katheer|tabary)\/sura\d+-aya\d+\.html$/.test(record.source_url),
+        `Non-source reference: ${record.id}`);
+      assert.ok(!record.count&&!record.timing&&!record.steps,'Do not manufacture esoteric recipes from tafsir.');
+    }
+    for(const record of p.scholarly){
+      depth7Scholarly++;
+      if(record.source_url.includes('/katheer/'))depth7Kathir++;
+      if(record.source_url.includes('/tabary/'))depth7Tabari++;
+      if(record.claim_kind==='critical_transmission_and_scholarly_disagreement')criticalRecords++;
+    }
+    for(const record of p.evidence){
+      depth7Verses++;
+      assert.equal(record.claim_kind,'complete_quran_verse_context');
+      assert.ok(record.arabic_original.length>75);
+    }
+    for(const lang of ['ml','en']){
+      const html=render(null,id,lang,{pdf_name_id:id});
+      assert.ok(html.includes('data-section-b-group="scholarly"'));
+      for(const record of [...p.scholarly,...p.evidence]){
+        assert.ok(html.includes(escape(record.arabic_original)),`Original Arabic absent ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.translation[lang])),`Translated meaning absent ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(escape(record.source_scope[lang])),`Source context absent ${id}/${record.id}/${lang}`);
+        assert.ok(html.includes(record.source_url),`Source URL absent ${id}/${record.id}/${lang}`);
+      }
+    }
+  }
+  assert.deepEqual({depth7Scholarly,depth7Kathir,depth7Tabari,depth7Verses,criticalRecords},
+    {depth7Scholarly:32,depth7Kathir:16,depth7Tabari:16,depth7Verses:4,criticalRecords:2});
+  assert.ok(depthVII.profiles['PDF-HN-007'].scholarly.some(x=>x.translation.en.includes('Trustworthy')));
+  assert.ok(depthVII.profiles['PDF-HN-001'].scholarly.some(x=>x.translation.en.includes('disputed')));
+  assert.ok(depthVII.profiles['PDF-HN-011'].scholarly.some(x=>x.translation.en.includes('gharib')));
+  assert.ok(depthVII.profiles['PDF-HN-012'].evidence[0].source_scope.en.includes('not an instruction or authorization for violence today'));
+  assert.ok(depthVII.profiles['PDF-HN-014'].evidence[0].arabic_original.includes('الْوَاحِدُ الْقَهَّارُ'));
+  console.log('PASS: 120 unique deep-studied cards; first 15 add 32 source-exact classical excerpts, 4 full verses, two critical disagreements and bilingual original-text rendering.');
   if (process.env.SECTION_B_CHECKED_FIXTURE) {
     const checked = JSON.parse(fs.readFileSync(process.env.SECTION_B_CHECKED_FIXTURE, 'utf8'));
     const cards = new Map();
