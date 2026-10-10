@@ -32,7 +32,7 @@ import { sectionBExplanation } from '@/lib/holyNames/sectionBMeanings';
 export function sectionBEntrySearchText(entry, language, chapterTitle = null) {
   const t = value => value?.[language] || '';
   return [
-    t(entry.title), t(entry.translation), entry.arabic_original,
+    t(entry.title), t(entry.translation), t(entry.verse_meaning), t(entry.translation_note), entry.arabic_original,
     entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation),
     t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference,
     ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`),
