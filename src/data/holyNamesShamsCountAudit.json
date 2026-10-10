@@ -1,0 +1,74 @@
+{
+  "reviewed_on": "2026-10-10",
+  "source_note": {
+    "ml": "പഴയ ഗ്രന്ഥത്തിലെ അഞ്ച് സംഖ്യാഭാഗങ്ങൾ മാത്രമാണ് ഇവിടെ പ്രത്യേകം പരിശോധിച്ചത്. തെളിവുകൾ ചരിത്രപാഠത്തിലുള്ള പദങ്ങളാണ്; അവയുടെ ഫലം വിശ്വസനീയമായ ഹദീസിലൂടെ സ്ഥിരീകരിച്ചതല്ല.",
+    "en": "Five numbers parsed from historical source passages. This identifies what is counted, not proof of the claimed effect or a Prophetic practice."
+  },
+  "entries": {
+    "b-shams-brief-68-المؤمن": {
+      "card_id": "PDF-HN-006",
+      "source_page": "68",
+      "value": 1132,
+      "unit": "recitation",
+      "source_phrase": "كل يوم ١١٣٢ مرة",
+      "note": {
+        "ml": "ദിവസേന 1,132 തവണ ഓർക്കുന്നതിനെക്കുറിച്ചുള്ള ഗ്രന്ഥവാക്യം; ഇത് ഗ്രന്ഥാവകാശവാദമാണ്, സ്വഹീഹ് ഹദീസിലെ നിശ്ചിത വസീഫയല്ല.",
+        "en": "The edition says 1,132 remembrances daily. This is a historical book claim, not an authenticated Sunnah prescription."
+      },
+      "source_url": "https://ablibrary.net/book_content/b/10942/68",
+      "review_status": "count_unit_compared_with_digital_text"
+    },
+    "b-shams-brief-68-المهيمن": {
+      "card_id": "PDF-HN-007",
+      "source_page": "68",
+      "value": 5,
+      "unit": "inscription",
+      "source_phrase": "نقشه على خاتم خمس مرات",
+      "note": {
+        "ml": "അഞ്ചുതവണ കൊത്തലാണ്; അഞ്ചുതവണ ദിക്ർ ഓതൽ എന്നതല്ല.",
+        "en": "Five inscriptions on a ring are described, not five oral recitations."
+      },
+      "source_url": "https://ablibrary.net/book_content/b/10942/68",
+      "review_status": "count_unit_compared_with_digital_text"
+    },
+    "b-shams-brief-68-البصير": {
+      "card_id": "PDF-HN-026",
+      "source_page": "68",
+      "value": 100,
+      "unit": "inscription",
+      "source_phrase": "كتبه في جام زجاج مائة",
+      "note": {
+        "ml": "കുപ്പിപ്പാത്രത്തിൽ നൂറുതവണ എഴുത്ത് എന്നതാണ് പഴയ വാക്യത്തിന്റെ വിവരണം; ഓതൽഎണ്ണമല്ല. മഷി കലർന്ന വെള്ളം കുടിക്കുന്നത് ഇവിടെ നിർദേശിക്കുന്നില്ല.",
+        "en": "The source describes writing one hundred instances in a glass vessel, not one hundred recitations. Consuming writing-wash water is not advised."
+      },
+      "source_url": "https://ablibrary.net/book_content/b/10942/68",
+      "review_status": "count_unit_compared_with_digital_text"
+    },
+    "b-shams-brief-69-الحي": {
+      "card_id": "PDF-HN-062",
+      "source_page": "69",
+      "value": 120,
+      "unit": "inscription",
+      "source_phrase": "وكتبه مائة وعشرين مرة على باب داره",
+      "note": {
+        "ml": "വീടിന്റെ വാതിലിൽ 120 എഴുത്തുകൾ; ഓർമിക്കാനുള്ള എണ്ണം വേറെയായി പറഞ്ഞിട്ടില്ല.",
+        "en": "The number 120 applies to doorway inscriptions; the text does not specify a remembrance count."
+      },
+      "source_url": "https://ablibrary.net/book_content/b/10942/69",
+      "review_status": "count_unit_compared_with_digital_text"
+    },
+    "b-shams-brief-70-المانع": {
+      "card_id": "PDF-HN-088",
+      "source_page": "70",
+      "value": 161,
+      "unit": "inscription",
+      "source_phrase": "مائة وإحدى وستين مرة في ساعة الزهرة",
+      "note": {
+        "ml": "161 എന്നത് നഗരമതിലിൽ എഴുതുന്നതുമായി ബന്ധപ്പെട്ട എണ്ണമാണ്; ഓതേണ്ട എണ്ണമല്ല. ശുക്രന്റെ മണിക്കൂറെന്നത് ഗ്രന്ഥത്തിലെ ജ്യോതിഷപരാമർശം.",
+        "en": "The 161 count relates to an inscription on city walls, not recitations; Venus's hour is the text's astrological timing."
+      },
+      "source_url": "https://ablibrary.net/book_content/b/10942/70",
+      "review_status": "count_unit_compared_with_digital_text"
+    }
+  }
+}
