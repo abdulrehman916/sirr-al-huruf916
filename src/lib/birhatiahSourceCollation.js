@@ -15,7 +15,8 @@ export function collateBirhatiahChapter(chapter, collation) {
       return {...rest, source_title: correction.source_title, printed_page: correction.printed_page,
         count_kind: correction.count_kind, scope_note: correction.scope_note,
         ...(correction.arabic_original ? {arabic_original: correction.arabic_original} : {}),
-        ...(correction.translation ? {translation: correction.translation} : {})};
+        ...(correction.translation ? {translation: correction.translation} : {}),
+        ...(correction.timing ? {timing: correction.timing} : {})};
     }),
     source_notes: [
       ...(chapter.source_notes || []).filter(entry => !notes.some(note => note.id === entry.id)),

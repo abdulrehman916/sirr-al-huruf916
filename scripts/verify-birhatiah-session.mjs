@@ -22,6 +22,8 @@ assert.equal(sourceRecitationGoal(0, 'recitation'), null);
 assert.equal(sourceRecitationGoal(622, 'abjad'), null);
 assert.equal(sourceRecitationGoal(7, 'inscription'), null);
 assert.equal(sourceRecitationGoal(17, 'washing'), null);
+assert.equal(sourceRecitationGoal(35, 'collective_recitation'), null);
+assert.match(sourceCountLabel('collective_recitation', 'ml'), /28 നാമങ്ങളും/);
 assert.match(sourceCountLabel('washing', 'ml'), /കഴുകൽ/);
 assert.match(sourceCountLabel('washing', 'en'), /not a recitation count/);
 assert.equal(sourceRecitationGoal(100, undefined), null);

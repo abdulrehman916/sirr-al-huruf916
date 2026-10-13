@@ -30,6 +30,7 @@ export function sourceCountLabel(countKind, language = 'ml') {
   const ml = language === 'ml';
   switch (countKind) {
     case 'recitation': return ml ? 'ഉറവിടത്തിലെ പാരായണസംഖ്യ' : 'Source recitation count';
+    case 'collective_recitation': return ml ? '28 നാമങ്ങളും ചേർന്നുള്ള പാരായണസംഖ്യ' : 'Collective recitation count for all 28 names';
     case 'inscription':
     case 'writing':
     case 'written':

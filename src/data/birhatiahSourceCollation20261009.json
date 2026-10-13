@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-13",
   "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "review_basis": "Direct visual collation of bundled printed pages 67–70, with separately labelled readings from the 2017 outside post. Selected source checks; attribution and edition differences are retained.",
+  "review_basis": "Direct visual collation of selected passages on bundled printed pages 67–74, with separately labelled readings from the 2017 outside post. Full page images and distinct edition readings are retained.",
   "notes": [
     {
       "id": "manba-p68-turan-karir-pair",
@@ -212,6 +212,151 @@
       "printed_page": 68,
       "source_image": "/figures/birhatiah-manba-p68.png",
       "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p69-ghalmash-nightly-300",
+      "related_name_ids": [
+        "HNK-MHC-009"
+      ],
+      "title": {
+        "ml": "രാത്രിയിലെ 300 വായനകളും നിബന്ധനയും — അറബി പാഠം",
+        "en": "Nightly 300 readings and condition — Arabic text"
+      },
+      "arabic_original": "ومن تلاه كل ليلة (٣٠٠) مرة بشرط الرياضة والصوم",
+      "translation": {
+        "ml": "ഈ ഭാഗം രാത്രിയിൽ 300 തവണ വായിക്കുന്നതിനെ റിയാദയും നോമ്പും എന്ന നിബന്ധനയുമായി ബന്ധിപ്പിക്കുന്നു. ഓരോ നൂറിനുശേഷമുള്ള അഭ്യർഥനയും തുടർച്ചയിലെ നിർദേശങ്ങളും കാർഡിലെ ക്രമത്തോടൊപ്പം കാണാം. സമയത്തെ പുതിയ ഘടികാരമണിക്കൂറാക്കി മാറ്റിയിട്ടില്ല.",
+        "en": "This clause links three hundred nightly readings with the condition of discipline and fasting. The after-each-hundred petition and subsequent account remain in the card’s ordered method; no new clock hour is inferred."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 69,
+      "source_image": "/figures/birhatiah-manba-p69.png",
+      "review_status": "checked_against_scan",
+      "count": 300,
+      "count_kind": "recitation"
+    },
+    {
+      "id": "manba-p70-qalnahud-barshan-pair",
+      "related_name_ids": [
+        "HNK-MHC-011",
+        "HNK-MHC-012"
+      ],
+      "title": {
+        "ml": "ഖൽനഹൂദ്–ബർശാൻ സംയുക്തപരാമർശം — അറബി മൂലവാക്യം",
+        "en": "Qalnahud–Barshan paired account — Arabic source sentence"
+      },
+      "arabic_original": "ومن أراد الاستخبار من الأرواح عن أي شيء فليكثر من ذكر قلنهود برشان وهو يبخر بلبان ومحلب ويطلب الأرواح فإنها تحضر إليه وتخاطبه في كل ما يريد",
+      "translation": {
+        "ml": "രൂഹുകളിൽനിന്ന് ഏതെങ്കിലും കാര്യത്തെക്കുറിച്ച് വിവരം തേടാൻ ഖൽനഹൂദ്, ബർശാൻ എന്നീ രണ്ട് നാമങ്ങളും അധികമായി വായിക്കുക; കുന്തിരിക്കവും മഹ്‌ലബും ധൂപമായി നൽകിക്കൊണ്ട് രൂഹുകളെ ആവശ്യപ്പെടുക എന്നാണ് ഗ്രന്ഥം പറയുന്നത്. അവ ഹാജരായി ആവശ്യപ്പെട്ട കാര്യത്തെക്കുറിച്ച് സംസാരിക്കുമെന്നാണ് ഫലാവകാശവാദം. ഈ വാക്യത്തിൽ സ്ഥിരഎണ്ണമോ ദിവസമോ സമയമോ ഇല്ല.",
+        "en": "The source describes frequent reading of Qalnahud and Barshan while using frankincense and mahaleb and requesting the spirits. It claims their arrival and conversation about the requested matter. This sentence states no fixed count, day or time."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p71-kazhir-copper-clause",
+      "related_name_ids": [
+        "HNK-MHC-013"
+      ],
+      "title": {
+        "ml": "വീടിന്റെ സംരക്ഷണത്തെക്കുറിച്ചുള്ള താമ്രഫലക പരാമർശം",
+        "en": "Copper-plate account concerning house protection"
+      },
+      "arabic_original": "على لوح نحاس وعلقه في بيت كان محفوظا من اللصوص والحريق",
+      "translation": {
+        "ml": "തിരഞ്ഞെടുത്ത വാക്യഭാഗം താമ്രത്തകിടിലെ എഴുത്ത് വീട്ടിൽ തൂക്കുന്നതിനെ മോഷണവും തീപിടിത്തവും ഒഴിവാകുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു. ഖണ്ഡത്തിൽ പറയുന്ന അഞ്ചിന്റെ കളക്രമവും അറബി മൂലപേജും കാർഡിലുണ്ട്; തെളിവില്ലാത്ത കോശങ്ങൾ നിറച്ചിട്ടില്ല.",
+        "en": "The selected clause links an inscription on a copper plate hung in a house with a claim of protection from thieves and fire. The five-part square account and original page remain in the card; unestablished cells are not filled."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 71,
+      "source_image": "/figures/birhatiah-manba-p71.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p72-anghallalit-water-clause",
+      "related_name_ids": [
+        "HNK-MHC-018"
+      ],
+      "title": {
+        "ml": "സ്ഥലത്ത് തളിക്കുന്ന ചരിത്രപരാമർശം — അറബി പാഠം",
+        "en": "Historical sprinkling account — Arabic text"
+      },
+      "arabic_original": "ومن كتبه في زبدية ومحاها بماء ورشها في المكان ذي التخيلات ذهبت منه",
+      "translation": {
+        "ml": "പേര് ഒരു സബ്ദിയ്യ പാത്രത്തിൽ എഴുതി വെള്ളത്തിൽ മായ്ച്ച്, കാഴ്ചാഭാസങ്ങൾ ഉണ്ടെന്ന് ഗ്രന്ഥം വിശേഷിപ്പിക്കുന്ന സ്ഥലത്ത് തളിക്കുന്നതാണ് ചരിത്രവിവരണം. അവ മാറുമെന്നാണ് ഗ്രന്ഥം അവകാശപ്പെടുന്നത്. സ്ഥിരഎണ്ണമോ ദിവസമോ സമയമോ ഈ വാക്യം നൽകുന്നില്ല; ഇത് മാനസികാരോഗ്യ ചികിത്സാനിർദേശമല്ല.",
+        "en": "The historical account describes writing the name in a dish, washing it off with water and sprinkling a place described as having apparitions. Their departure is the book’s claim. The sentence gives no fixed count, day or time; this is not mental-health treatment advice."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 72,
+      "source_image": "/figures/birhatiah-manba-p72.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p72-ghayaha-count-clauses",
+      "related_name_ids": [
+        "HNK-MHC-020"
+      ],
+      "title": {
+        "ml": "90 എഴുത്തുകളും മൂന്ന് ആയത്ത് എഴുത്തുകളും — എണ്ണഭേദം",
+        "en": "Ninety name inscriptions and three verse inscriptions"
+      },
+      "arabic_original": "تسعين مرة … ثلاث مرات حروفا مفرقة",
+      "translation": {
+        "ml": "മൂലഖണ്ഡത്തിൽ പേര് എഴുതുന്നതിന് 90 എന്നും, ഖുർആൻ 86:8-ലെ ഉദ്ധരണി വേർതിരിച്ച അക്ഷരങ്ങളായി എഴുതുന്നതിന് മൂന്ന് എന്നും പറയുന്ന വേറിട്ട എണ്ണങ്ങളാണ്. ചുവന്ന ഈയം ഉൾപ്പെടുന്ന രോഗശമനാവകാശവാദം ചരിത്രവിവരണമായി മാത്രം നിലനിർത്തുന്നു; തയ്യാറാക്കാനോ കഴിക്കാനോ ഉള്ള ക്രമം നൽകുന്നില്ല.",
+        "en": "The original paragraph distinguishes ninety written names from three separated-letter inscriptions of the Quran 86:8 quotation. Its red-lead medical claim is retained as historical evidence, without preparation or ingestion instructions."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 72,
+      "source_image": "/figures/birhatiah-manba-p72.png",
+      "review_status": "checked_against_scan",
+      "count": 90,
+      "count_kind": "inscription"
+    },
+    {
+      "id": "manba-p73-bakahtuniya-seventy",
+      "related_name_ids": [
+        "HNK-MHC-025"
+      ],
+      "title": {
+        "ml": "70 എന്നത് എഴുത്തിന്റെ എണ്ണം — അറബി വാക്യഭാഗം",
+        "en": "Seventy is an inscription count — Arabic clause"
+      },
+      "arabic_original": "من كتبه سبعين مرة",
+      "translation": {
+        "ml": "ഈ വാക്യഭാഗത്തിലെ “കതബഹു” എഴുതുന്നതിനെ സൂചിപ്പിക്കുന്നു: 70 എഴുത്തുകൾ, 70 ഓതലുകൾ അല്ല. തുടർന്നുള്ള കഴുകിയ എഴുത്ത് കുടിക്കുന്ന പരാമർശം ചരിത്രവിവരണമായാണ് കാർഡിൽ വിവരിച്ചിരിക്കുന്നത്. എഴുത്തുവസ്തു എന്താണെന്ന് ഈ വാക്യം നിർദേശിക്കുന്നില്ല; അതിന് പുതിയ ചേരുവകൾ ചേർത്തിട്ടില്ല.",
+        "en": "Katabahu here refers to writing: seventy inscriptions, not seventy recitations. The subsequent washed-inscription ingestion account is described as historical evidence in the card. The sentence does not specify the writing substance; new ingredients are not supplied."
+      },
+      "scope_note": {
+        "ml": "ഇത് മൂലപേജിൽ നിന്ന് ഒത്തുനോക്കിയ തിരഞ്ഞെടുത്ത ഭാഗമാണ്. മനസ്സിലാക്കാവുന്ന നടപടിക്രമം മലയാളത്തിൽ വിവരിക്കുന്നു; അപരിചിത പദങ്ങൾക്ക് അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല. ചരിത്രപരമായ ഫലങ്ങൾ സ്രോതസ്സിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "A selected passage checked against the source image. The intelligible procedure is explained without inventing meanings or vowels for unfamiliar words. Historical outcomes remain source claims."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 73,
+      "source_image": "/figures/birhatiah-manba-p73.png",
+      "review_status": "checked_against_scan",
+      "count": 70,
+      "count_kind": "inscription"
     }
   ],
   "practice_provenance_corrections": [
@@ -372,6 +517,194 @@
       "scope_note": {
         "ml": "മൂലപേജ് വീണ്ടും ഒത്തുനോക്കി എണ്ണത്തിന്റെ തരം വ്യക്തമാക്കിയിരിക്കുന്നു. നാമമോ സംഖ്യയോ മാറ്റിയിട്ടില്ല; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
         "en": "The source image was rechecked to classify the count. Stored name and number are unchanged; the result is the source’s claim."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-006",
+      "practice_id": "thursday-paper",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 69,
+      "count_kind": null,
+      "arabic_original": "ومن خواصه أن من كتبه في ورقة حمراء قبل طلوع شمس يوم الخميس وقبل أن يتكلم مع أحد وذكر حاجته ثم ألقى الورقة في بحر قضى الله حاجته في جمعته",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-007",
+      "practice_id": "friday-store",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 69,
+      "count_kind": null,
+      "arabic_original": "من كتبه في يوم الجمعة",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-008",
+      "practice_id": "combined-recitation",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 69,
+      "count_kind": "recitation",
+      "arabic_original": "ومن قرأ ترقب برهش (١٢٠٩) ووكل عقب كل مائة بجلب من أراد حضر إليه سريعا",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-010",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "count_kind": "recitation",
+      "arabic_original": "ومن تلاه كل يوم سبعين مرة رزقه الله الهيبة وحفظ جميع ما سمعه وتفجرت الحكمة من قلبه",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-014",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 71,
+      "count_kind": null,
+      "arabic_original": "وإذا داوم على تلاوته مسجون خلصه الله تعالى",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-015",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 71,
+      "count_kind": "inscription",
+      "arabic_original": "فليتوضأ ويصل ست ركعات كل ركعتين بتسليمة ثم يكتب برهيولا سبع مرات في كفه الأيمن",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-016",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 71,
+      "count_kind": "recitation",
+      "arabic_original": "وإذا استعمله مكروب كل ليلة سبعين مرة فإن الله يفرج كربه وهمه ويقضي دينه",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-017",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 72,
+      "count_kind": null,
+      "arabic_original": "ومن أراد الخلاص من عدو له فليكثر من ذكر بشكيلخ قزمز",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-019",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 72,
+      "count_kind": "recitation",
+      "arabic_original": "ومن واظب على تلاوته ستين مرة كل يوم لم ير مكروها أبدا",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-022",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 73,
+      "count_kind": "inscription",
+      "arabic_original": "ومن خواصه أن من كتبه سبع مرات في طبق ومحاه بماء قراح ورشه في مكان النمل ذهب منه",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-023",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 73,
+      "count_kind": "inscription",
+      "arabic_original": "ومن خواصه أن من كتبه ١٥ مرة في ورقة وحرقها في المكان الذي فيه ناموس ذهب منه",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-024",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 73,
+      "count_kind": "recitation",
+      "arabic_original": "فاذكر شمخاهير شمهاهير مائة ثم قل إن كنتم حضرتم أيها الأرواح فأروني من شعاع نوركم فإنه يخرج نور كشعاع الشمس",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-026",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 73,
+      "count_kind": null,
+      "arabic_original": "من داوم على قراءته من غير عدد أمن من العطش",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-027",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 74,
+      "count_kind": "recitation",
+      "arabic_original": "بعد صلاة العشاء وهو ساجد ثمانين مرة ويسأل الله حاجته فإنها تقضى",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
+      },
+      "timing": {
+        "ml": "അറബി പേജ് 74: ഇശാ നമസ്കാരത്തിനുശേഷം, സുജൂദിൽ. ഈ വാക്യത്തിൽ പ്രത്യേക ദിവസമില്ല.",
+        "en": "Arabic page 74: after Isha prayer, in prostration. No particular day is stated."
+      },
+      "translation": {
+        "ml": "ഇശാ നമസ്കാരത്തിനുശേഷം സുജൂദിൽ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുന്നതിനെ ആവശ്യം നിറവേറുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. “ബഅ്ദ” എന്നത് ശേഷം എന്നാണ്; നമസ്കാരസമയത്ത് എന്നായി മാറ്റിയിട്ടില്ല.",
+        "en": "The source links eighty readings in prostration after Isha, followed by asking God for the need, with fulfilment. Ba‘d means after; it is not changed to during the prayer."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-028",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 74,
+      "count_kind": "collective_recitation",
+      "arabic_original": "ومن قرأها مع سورة يس ثم قرأها ٣٥ مرة وتوجه لحاجته قضيت بإذن الله تعالى",
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലപേജുമായി ഒത്തുനോക്കിയ വാക്യമോ തിരഞ്ഞെടുത്ത വാക്യഭാഗമോ ആണ്. പൂർണ്ണ മൂലപേജ് കാർഡിൽ ലഭ്യമാണ്. അച്ചടിയിൽ ഇല്ലാത്ത ഹരക്കത്തോ അധിക എണ്ണമോ സമയമോ ചേർത്തിട്ടില്ല. പഴയ നാമവും കണക്കും നിലനിർത്തുന്നു; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Sentence or selected clause visually rechecked against the source image on 2026-10-13. The complete original page remains inside the card. No unprinted vowels, extra counts or timing are added. Stored name/calculation fields are preserved; outcomes remain source claims."
       }
     }
   ]
