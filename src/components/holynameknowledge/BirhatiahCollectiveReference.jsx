@@ -7,6 +7,7 @@ import BirhatiahArabicInvocationSources from './BirhatiahArabicInvocationSources
 import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
 import BirhatiahExpandedVersions from './BirhatiahExpandedVersions';
 import BirhatiahResearchContext from './BirhatiahResearchContext';
+import BirhatiahOutsideWitness from './BirhatiahOutsideWitness';
 
 export default function BirhatiahCollectiveReference() {
   const { language } = useHolyNamesLanguage();
@@ -18,6 +19,7 @@ export default function BirhatiahCollectiveReference() {
   return <article className="border-t border-yellow-500/20 pt-4 space-y-4">
     <BirhatiahSharedBookAccounts />
     <BirhatiahResearchContext />
+    <BirhatiahOutsideWitness />
     <BirhatiahArabicSinglePage />
     <BirhatiahArabicInvocationSources />
     <BirhatiahFullSourceChapter />

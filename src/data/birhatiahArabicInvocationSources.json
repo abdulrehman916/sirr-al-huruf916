@@ -124,7 +124,12 @@
       "translation": {
         "en": "The first printed formula is marked 313 times, the second 45 times. These unfamiliar formula words are preserved as source forms; no semantic translation is established here.",
         "ml": "ആദ്യ അച്ചടിച്ച സൂത്രവാക്യത്തിന് 313 തവണ; രണ്ടാമത്തേതിന് 45 തവണ. അപരിചിത സൂത്രപദങ്ങൾ സ്രോതസ്സിലെ രൂപങ്ങളായി നിലനിർത്തുന്നു; അവയ്ക്ക് ഇവിടെ ഉറപ്പിച്ച പദാർഥം നൽകിയിട്ടില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "അച്ചടിച്ച ആദ്യ സൂത്രപദങ്ങൾ:\nبطد زهج واح — 313 مرة\n313 തവണ എന്ന അടയാളം ആദ്യ വരിക്കാണ്.\nഅടുത്ത സൂത്രപദങ്ങൾ:\nإيه بقطريال جليش دميال هططوش وهيم زنقطاء حدايه طفيال — 45 مرة\n45 തവണ എന്ന അടയാളം രണ്ടാം വരിക്കാണ്.",
+        "en": "First printed formula line:\nبطد زهج واح — 313 مرة\nThe 313-times marker belongs to this line.\nNext formula line:\nإيه بقطريال جليش دميال هططوش وهيم زنقطاء حدايه طفيال — 45 مرة\nThe 45-times marker belongs to the second line."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-02",
@@ -137,7 +142,12 @@
       "translation": {
         "en": "The speaker adjures the celestial and terrestrial spirits and servants of the great covenant to answer the invocation and fulfil the need, by the strength of the printed names. This edition expands and varies the list. Its printed 2-markers are retained; Karir does not have a separate 2-marker immediately after it. Qalmash and Anqallalit are retained as this source’s forms, rather than silently changed to the canonical spellings. Extra words are not assigned an invented meaning.",
         "ml": "ആകാശ–ഭൗമ രൂഹുകളെയും വലിയ ഉടമ്പടിയുടെ സേവകരെയും അഭിസംബോധന ചെയ്ത്, അച്ചടിച്ച നാമങ്ങളുടെ ശക്തിയാൽ ആഹ്വാനത്തിനു മറുപടി നൽകാനും ആവശ്യം നിറവേറ്റാനും ആവശ്യപ്പെടുന്നു. ഈ പതിപ്പിൽ പട്ടിക വിപുലമായതും പാഠഭേദമുള്ളതുമാണ്. അച്ചടിച്ച 2 അടയാളങ്ങൾ നിലനിർത്തുന്നു; കരീറിന് തൊട്ടുപിന്നിൽ സ്വന്തമായി 2 അടയാളമില്ല. ഖൽമശ്, അൻഖല്ലലീത് എന്നീ ഈ സ്രോതസ്സിലെ രൂപങ്ങൾ പതിവുരൂപങ്ങളാക്കി മാറ്റിയിട്ടില്ല. അധികപദങ്ങൾക്ക് ഊഹിച്ച അർഥം നൽകിയിട്ടില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "മുകളിലും താഴെയുമുള്ള ആത്മീയ രൂഹുകളേ, വലിയ ഉടമ്പടിയുടെ സേവകരേ, എന്റെ ആഹ്വാനത്തിന് മറുപടി നൽകാനും എന്റെ ആവശ്യം നിറവേറ്റാനും ഈ പദങ്ങളുടെ പ്രതാപത്താൽ നിങ്ങളോട് ഞാൻ ആണയിട്ട് ആവശ്യപ്പെടുന്നു:\nبرهتية 2 كرير تتليه 2 طوران 2 مزجل 2 بزجل 2 ترقب 2 برهش 2 قلمش 2 خوطير 2 قلنهود 2 برشان 2 كظهير 2 نموشلخ 2 برهيولا 2 بشكيلخ 2 قزمز 2 أنقلليط 2 قبرات 2 غياها 2 كيدهولا 2 شمخاهر 2 شمخاهير 2 شمهاهر 2 شمهاهير 2 بكطهونيه 2 بكهطهطهونيه 2 بشارش 2 شارش 2 طونش 2 طونياش 2 شمخاه باروخ 2 ياروخ 2 تبشيم 2 شيم 2 بكهطف 2 بلطشقشقويل 2 أمويل 2 إيل 2 مرتين 2\nഅല്ലാഹുവേ, «بكهكهيج» മുഖേന — അച്ചടിയിൽ ഇവിടെ 2 എന്ന അടയാളമുണ്ട്. തുടർവാക്യം അടുത്ത ഭാഗത്തിലാണ്.",
+        "en": "O spiritual beings above and below, and servants of the great covenant, I adjure you to answer my invocation and fulfil my need, by the might of these printed words:\nبرهتية 2 كرير تتليه 2 طوران 2 مزجل 2 بزجل 2 ترقب 2 برهش 2 قلمش 2 خوطير 2 قلنهود 2 برشان 2 كظهير 2 نموشلخ 2 برهيولا 2 بشكيلخ 2 قزمز 2 أنقلليط 2 قبرات 2 غياها 2 كيدهولا 2 شمخاهر 2 شمخاهير 2 شمهاهر 2 شمهاهير 2 بكطهونيه 2 بكهطهطهونيه 2 بشارش 2 شارش 2 طونش 2 طونياش 2 شمخاه باروخ 2 ياروخ 2 تبشيم 2 شيم 2 بكهطف 2 بلطشقشقويل 2 أمويل 2 إيل 2 مرتين 2\nO Allah, through «بكهكهيج» — the printing marks 2 here. The sentence continues in the next block."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-03",
@@ -150,7 +160,12 @@
       "translation": {
         "en": "After the additional formula words, the speaker asks, by divine might, for taking their hearing and sight. The unfamiliar words are preserved without claiming a verified Syriac, Hebrew or Arabic lexical meaning.",
         "ml": "അധിക സൂത്രപദങ്ങൾക്കു ശേഷം ദൈവികശക്തിയാൽ അവരുടെ കേൾവിയും കാഴ്ചയും പിടിച്ചെടുക്കണമെന്ന അഭ്യർഥന വരുന്നു. അപരിചിത പദങ്ങൾക്ക് സ്ഥിരീകരിച്ച സുറിയാനി, ഹീബ്രു, അറബി നിഘണ്ടുവർഥം അവകാശപ്പെടുന്നില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "كجكلم يقطش جلدا مهجما هشليخ تمليخ هشلموخ ورودنيه مهفياج\nനിന്റെ പ്രതാപത്താൽ അവരുടെ കേൾവിയും കാഴ്ചയും പിടിച്ചെടുക്കണമെന്ന അഭ്യർഥന.",
+        "en": "كجكلم يقطش جلدا مهجما هشليخ تمليخ هشلموخ ورودنيه مهفياج\nBy Your might, I ask that You seize their hearing and sight."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-04",
@@ -163,7 +178,12 @@
       "translation": {
         "en": "The passage addresses the named figures, calls them to answer and asks for compliance with what the speaker has commanded. The printed names are retained as this edition’s list; they are not treated as additional members of the 28-name sequence.",
         "ml": "അച്ചടിച്ച പേരുകളിൽ വരുന്നവരെ അഭിസംബോധന ചെയ്ത് മറുപടി നൽകാനും പറഞ്ഞ കാര്യത്തിൽ അനുസരിക്കാനും ആവശ്യപ്പെടുന്നു. ഈ പതിപ്പിലെ പട്ടികയായി പേരുകൾ നിലനിർത്തുന്നു; 28 നാമങ്ങളുടെ പട്ടികയിലെ പുതിയ അംഗങ്ങളായി ചേർക്കുന്നില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "റൂഖിയാഈലേ, അനുസരിക്കുക; ജിബ്രീലേ, നീയും; സംസമാഈലേ, നീയും; മീകാഈലേ, നീയും; സർഫിയാഈലേ, നീയും; അനിയാഈലേ, നീയും; കസ്ഫിയാഈലേ, നീയും. മദ്ഹബേ, മറുപടി നൽകുക; മുർറേ, നീയും; അഹ്മറേ, നീയും; ബർഖാനേ, നീയും; ശംഹറൂശേ, നീയും; സവ്ബഅയേ, നീയും; മയ്മൂനേ, നീയും. ഞാൻ നിങ്ങളോട് കൽപ്പിച്ച കാര്യത്തിൽ അനുസരിക്കുക. പേരുകളുടെ കൃത്യമായ അക്ഷരരൂപം മുകളിലെ അറബി പാഠത്തിലുണ്ട്.",
+        "en": "Submit, Ruqiya’il; and you, Jibril; and you, Samsama’il; and you, Mika’il; and you, Sarfiya’il; and you, Aniya’il; and you, Kasfiya’il. Answer, Madhhab; and you, Murra; and you, Ahmar; and you, Barqan; and you, Shamhurush; and you, Zawba‘a; and you, Maymun: comply with what I commanded you. The exact printed name spellings remain in the Arabic above."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-05",
@@ -176,7 +196,12 @@
       "translation": {
         "en": "The speaker invokes divine might, quotes covenant wording, then invokes the One without likeness, who hears and sees, and asks the addressed figures to attend, hear, obey and help. The sentence continues on page 2. The printed covenant wording has “ja‘alta” in the singular; Quran 16:91 has “ja‘altum” in the plural. The source wording is retained here and is not presented as the exact canonical Quran text. The next phrase corresponds to Quran 42:11.",
         "ml": "ദൈവികശക്തിയെ ചൊല്ലി ഉടമ്പടിവാക്യം ഉദ്ധരിക്കുന്നു. തുടർന്ന് തുല്യനില്ലാത്ത, കേൾക്കുന്നവനും കാണുന്നവനുമായവനെ ചൊല്ലി അഭിസംബോധന ചെയ്തവർ ഹാജരാകാനും കേൾക്കാനും അനുസരിക്കാനും സഹായിക്കാനും ആവശ്യപ്പെടുന്നു. വാക്യം രണ്ടാം പേജിൽ തുടരുന്നു. അച്ചടിയിലെ ഉടമ്പടിവാക്യത്തിൽ ഏകവചനമായ “ജഅൽത” ആണ്; ഖുർആൻ 16:91-ൽ ബഹുവചനമായ “ജഅൽതും” ആണ്. ഇവിടെ സ്രോതസ്സിലെ വാചകം തന്നെയാണ്; ഖുർആനിന്റെ കൃത്യമായ മൂലപാഠമായി അവതരിപ്പിക്കുന്നില്ല. അടുത്ത വാക്യഭാഗം ഖുർആൻ 42:11-നോട് ബന്ധപ്പെടുന്നു."
-      }
+      },
+      "literal_translation": {
+        "ml": "തന്റെ പ്രതാപത്തിൽ മഹത്വപ്പെടുന്ന പ്രതാപിയുടെ ശക്തിയാൽ: നിങ്ങൾ ഉടമ്പടി ചെയ്യുമ്പോൾ അല്ലാഹുവിന്റെ ഉടമ്പടി നിറവേറ്റുക; ഉറപ്പിച്ചശേഷം ശപഥങ്ങൾ ലംഘിക്കരുത്; അല്ലാഹുവിനെ നിങ്ങളിൽ ജാമ്യക്കാരനാക്കിയിരിക്കുന്നു. തുല്യനായി യാതൊന്നുമില്ലാത്തവനും എല്ലാം കേൾക്കുന്നവനും കാണുന്നവനുമായവന്റെ നാമത്തിന്റെ ഹഖിനാൽ: ഹാജരാകുക, കേൾക്കുക, അനുസരിക്കുക; ഞാൻ നിങ്ങളോട് കൽപ്പിച്ചതെല്ലാം ചെയ്യുന്നതിൽ എനിക്ക് സഹായികളാകുക… [വാക്യം അടുത്ത പേജിൽ തുടരുന്നു.]",
+        "en": "By the might of the Mighty One, exalted in His might: fulfil God’s covenant when you make a covenant; do not break oaths after confirming them, with God made guarantor over you. By the right of the Name of the One to whom nothing is comparable, the All-Hearing, the All-Seeing: appear, listen and obey; assist me in all that I… [The sentence continues on the next page.]"
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-06",
@@ -189,7 +214,12 @@
       "translation": {
         "en": "Continuing the preceding sentence, the speaker asks for service, all sustenance, benefits, good things and joys, and removal of harm and worries from the speaker and those encompassed by the speaker’s intercession. It invokes a great name said to begin and end with Al, inserts unfamiliar formula words, says “All-glorious, All-holy, Lord of the angels and the Spirit”, and calls for burning of whoever disobeys the addressed names. Allah is explicitly marked three times. The additional strings are preserved without a made-up translation.",
         "ml": "മുൻ വാക്യം തുടർന്ന് സേവനം, എല്ലാ ഉപജീവനവും പ്രയോജനങ്ങളും നന്മകളും സന്തോഷങ്ങളും, തനിക്കും തന്റെ ശുപാർശയിൽ ഉൾപ്പെടുന്നവർക്കും ദോഷവും വിഷമവും മാറുക എന്നിവ അഭ്യർഥിക്കുന്നു. ആൽ എന്നതിൽ തുടങ്ങുകയും അവസാനിക്കുകയും ചെയ്യുന്നുവെന്ന് പറയുന്ന വലിയ നാമത്തോടൊപ്പം അപരിചിത സൂത്രപദങ്ങൾ വരുന്നു. “സുബ്ബൂഹ്, ഖുദ്ദൂസ്, മലക്കുകളുടെയും റൂഹിന്റെയും റബ്ബ്” എന്നു പറയുന്നു; അഭിസംബോധന ചെയ്ത നാമങ്ങൾ അനുസരിക്കാത്തവർ കത്തണമെന്ന ആഹ്വാനവും വരുന്നു. അല്ലാഹ് എന്നതിന് മൂന്നുതവണ എന്ന അടയാളമുണ്ട്. അധികപദശൃംഖലകൾക്ക് ഉണ്ടാക്കിയ അർഥം നൽകുന്നില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "…നിങ്ങളോട് കൽപ്പിച്ചതിലും ഇനി കൽപ്പിക്കുന്നതിലും. എന്റെ സേവനത്തിനായി രൂഹുകളെ വിധേയരാക്കാനും, എല്ലാ ഉപജീവനങ്ങളും പ്രയോജനങ്ങളും നന്മകളും സന്തോഷങ്ങളും എത്തിക്കാനും, എന്നിൽനിന്നും എന്റെ ശുപാർശ ഉൾക്കൊള്ളുന്നവരിൽനിന്നും എല്ലാ ദോഷങ്ങളും വിഷമങ്ങളും നീക്കാനും ചുമതല ഏറ്റെടുക്കുക. ആരംഭവും അവസാനവും «آل» ആയ വലിയ, ഏറ്റവും വലിയ നാമത്തിന്റെ ഹഖിനാൽ; അതിന്റെ അച്ചടിച്ച പദങ്ങൾ:\nآل شلع يشلع كلش كذالهم جمعهم مكلش شكل\nസ്തുതിക്കപ്പെട്ട പരിശുദ്ധൻ, മലക്കുകളുടെയും റൂഹിന്റെയും രക്ഷിതാവ്. തുടർന്ന് അച്ചടിച്ച പദങ്ങൾ:\nبيو يوبية وه بتكه بيهم بتكفال بصعى كعى مميال بمطيعى لك يا آل جل زريال\nനിന്റെ നാമങ്ങൾ അനുസരിക്കാത്തവൻ കത്തട്ടെ. അല്ലാഹുവേ — ഇവിടെ 3 എന്ന അടയാളം അച്ചടിച്ചിരിക്കുന്നു.",
+        "en": "…commanded you and will command you. Undertake to subject spiritual beings to my service, bring every provision, benefit, good thing and joy, and repel every harm and worry from me and those encompassed by my intercession. By the right of the great, greatest Name beginning and ending with «آل», whose printed words are:\nآل شلع يشلع كلش كذالهم جمعهم مكلش شكل\nGlorified and Holy, Lord of the angels and the Spirit. The following printed words are:\nبيو يوبية وه بتكه بيهم بتكفال بصعى كعى مميال بمطيعى لك يا آل جل زريال\nMay whoever disobeys Your names burn. O Allah — the printing marks 3 here."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-07",
@@ -202,7 +232,12 @@
       "translation": {
         "en": "After further formula words, the charge says that the addressed figures are bound, subjected and obedient through these names and their oath; asks that the stated need be fulfilled; asks for the summoned spirits to be brought to attend, disclose and perform the command; and invokes the names’ overpowering force. The printed ending gives 45 or 70 repetitions. No hour or weekday is supplied. The parenthesis identifies where the required matter is mentioned, rather than supplying an invented request.",
         "ml": "കൂടുതൽ സൂത്രപദങ്ങൾക്കു ശേഷം ഈ നാമങ്ങളും സത്യവും വഴി അഭിസംബോധന ചെയ്തവർ ബന്ധിതരും അധീനരും അനുസരിക്കുന്നവരുമാണെന്ന് പറയുന്നു. പറഞ്ഞ ആവശ്യം നിറവേറ്റുക, ആഹ്വാനം ചെയ്ത രൂഹുകളെ ഹാജരാക്കുക, വെളിപ്പെടുത്തലും നിർദേശനിർവഹണവും നടത്തുക എന്നിവ ആവശ്യപ്പെടുന്നു; നാമങ്ങളുടെ കീഴടക്കുന്ന ശക്തിയെ ചൊല്ലുന്നു. അച്ചടിച്ച അവസാനം 45 അല്ലെങ്കിൽ 70 ആവർത്തനമാണ്. മണിക്കൂറോ ആഴ്ചദിവസമോ നൽകിയിട്ടില്ല. ആവശ്യവിഷയം പറയേണ്ട ഇടമാണ് ബ്രാക്കറ്റിലെ സൂചന; ഊഹിച്ച് പുതിയ അഭ്യർഥന ചേർത്തിട്ടില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "بهو بها هية فلطحعى هيكن طياشفه كيورث غيورش هلطهطوهثن مهطمهى ليهف طهيو مهو هف له يا ميهلوخا\nഈ നാമങ്ങളുടെ ഹഖിനാൽ—ഇവയാൽ നിങ്ങൾ ബന്ധിതരും, ഇവയുടെ പ്രതാപത്താൽ വിധേയരും, ഇവയുടെ ശക്തിയാൽ അനുസരിക്കുന്നവരും ഇവയുടെ ശപഥത്തിന് മറുപടി നൽകുന്നവരുമാണ്—എന്റെ ആവശ്യം [ആവശ്യപ്പെട്ട കാര്യം] നിറവേറ്റുന്നതുവരെ നിങ്ങൾക്ക് സ്വയം പ്രവർത്തിക്കാനാവില്ല. ഞാൻ വിളിച്ച രൂഹുകളെ നിയന്ത്രിക്കുക; അവർ ഹാജരായി എനിക്ക് വെളിപ്പെടുത്തുകയും ഞാൻ കൽപ്പിക്കുന്നത് ചെയ്യുകയും ചെയ്യട്ടെ. ഈ നാമങ്ങളുടെ ശക്തിയും അവ അനുസരിക്കാത്തവരുടെ മേലുള്ള വലിയ സംഹാരകാധികാരവും ചൊല്ലുന്നു. ആഹ്വാനമോ രണ്ടു വാക്കുകളോ നടപ്പാക്കുന്നതിനു മുമ്പ് കീഴടങ്ങുക. അച്ചടിച്ച ആവർത്തനവായന: 45 അല്ലെങ്കിൽ 70 തവണ.",
+        "en": "بهو بها هية فلطحعى هيكن طياشفه كيورث غيورش هلطهطوهثن مهطمهى ليهف طهيو مهو هف له يا ميهلوخا\nBy the right of these names, by which you are bound, subjected through their might, obedient through their power and responsive to their adjuration: you have no freedom to act on your own until you fulfil my need [the requested matter]. Take control of the spirits I summoned so they appear, disclose themselves to me and do what I command, through the power of the names and their great destructive dominion over whoever disobeys them. Submit before executing the invocation or the two words. Printed repetition alternatives: 45 or 70 times."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-08",
@@ -215,7 +250,12 @@
       "translation": {
         "en": "A separate Zajr is marked 21 repetitions. It begins in the name of God, the Great, the Greatest, the Living, the Sustainer, the Merciful, the Compassionate, Lord of the named angels, followed by additional formula words. It uses the throne phrase corresponding to Quran 20:5 and commands the celestial/spiritual angels and terrestrial kings to answer and perform the instruction immediately. “Now” is a word within the charge, not a prescribed clock time.",
         "ml": "വേറിട്ട സജ്‌റിന് 21 ആവർത്തനമെന്നാണ് അടയാളം. മഹാനും ഏറ്റവും മഹാനും ജീവിച്ചിരിക്കുന്നവനും നിലനിർത്തുന്നവനും കരുണയുള്ളവനും പരമകാരുണികനും, പേരെടുത്ത മലക്കുകളുടെ റബ്ബുമായ അല്ലാഹുവിന്റെ നാമത്തിൽ ആരംഭിക്കുന്നു; തുടർന്ന് അധിക സൂത്രപദങ്ങൾ വരുന്നു. ഖുർആൻ 20:5-നോടു ബന്ധപ്പെടുന്ന അർശ് വാക്യം ഉപയോഗിച്ച് ആകാശ/രൂഹാനി മലക്കുകളോടും ഭൗമ രാജാക്കന്മാരോടും മറുപടി നൽകാനും ഉടൻ നിർദേശം നിർവഹിക്കാനും ആവശ്യപ്പെടുന്നു. “ഇപ്പോൾ” എന്നത് ആഹ്വാനത്തിലെ വാക്കാണ്; നിർദേശിച്ച ഘടികാരസമയമല്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "സജ്റ് അസ്-സാജൂർ — 21 തവണ.\nമഹാനായ, ഏറ്റവും മഹാനായ, എന്നെന്നും ജീവിക്കുന്ന, എല്ലാറ്റിനെയും നിലനിർത്തുന്ന, പരമകാരുണികനായ, കരുണാനിധിയായ അല്ലാഹുവിന്റെ നാമത്തിൽ; ജിബ്രീൽ, മീകാഈൽ, ഇസ്റാഫീൽ, അസ്റാഈൽ എന്നിവരുടെ രക്ഷിതാവ്. തുടർന്ന് അച്ചടിച്ച സൂത്രപദങ്ങൾ:\nإه إه إه إه أهيا شراهيا اهيا هاهيا نماهيا أدوناي أصباؤت آل شداي صريال صديال\nപരമകാരുണികൻ അർശിൽ ഇസ്തിവാ ചെയ്തിരിക്കുന്നു. ആകാശമണ്ഡലങ്ങളിലെ മലക്കുകളേ, ആത്മീയരായ മലക്കുകളേ, ഭൂമിയിലെ രാജാക്കന്മാരേ, മറുപടി നൽകുക; ഇപ്പോൾ ഞാൻ നിങ്ങളോട് കൽപ്പിച്ചതുപോലെ പ്രവർത്തിക്കുക.",
+        "en": "Zajr al-Zajur — 21 times.\nIn the name of God, the Great, the Greatest, the Ever-Living, the Sustainer, the Most Merciful, the Compassionate, Lord of Jibril, Mika’il, Israfil and Azra’il. The following formula words are printed:\nإه إه إه إه أهيا شراهيا اهيا هاهيا نماهيا أدوناي أصباؤت آل شداي صريال صديال\nThe Most Merciful established Himself over the Throne. Answer, celestial and spiritual angels and earthly kings; do what I commanded you now."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-09",
@@ -228,7 +268,12 @@
       "translation": {
         "en": "The additional name strings are followed by praise of the greatness of these words and the majesty of the Lord of the worlds, a call to the named figures to answer, and an assertion of God’s great dominion. The final clause continues on page 3. The strings are source transcriptions, with no invented lexical meanings or replacements from another edition.",
         "ml": "അധിക നാമശൃംഖലകൾക്കു ശേഷം ഈ വാക്കുകളുടെ മഹത്വവും ലോകരബ്ബിന്റെ മഹിമയും പറയുന്നു; പേരെടുത്തവർ മറുപടി നൽകണമെന്ന് ആവശ്യപ്പെടുകയും അല്ലാഹുവിന്റെ അധികാരത്തിന്റെ മഹത്വം പറയുകയും ചെയ്യുന്നു. അവസാന വാക്യം മൂന്നാം പേജിൽ തുടരുന്നു. പദശൃംഖലകൾ ഈ സ്രോതസ്സിൽനിന്നുള്ള പകർപ്പാണ്; ഊഹിച്ച പദാർഥങ്ങളോ വേറെ പതിപ്പിലെ പകരംപദങ്ങളോ നൽകിയിട്ടില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "ഈ അച്ചടിച്ച പദങ്ങളുടെ ഹഖിനാൽ:\nشلعجعص شيلقوش ططليكش ططليكوش مهلوشخ بهمش همش هميوش شيهش شناهش شناهيش مرططكيوش مرططلكيوش نارفهلم غيوثا نافغلا ثاوث\nഈ വചനത്തിന്റെ മഹത്വം എത്ര വലുത്! സർവലോകങ്ങളുടെയും രക്ഷിതാവിന്റെ മഹത്വം ഉന്നതമാണ്. സയ്യിദേ, മറുപടി നൽകുക—പാഠത്തിലെ അഭിസംബോധനകൾ:\nطحيطمغيلال وميططرون وشرنطائييل\n[ദഅ്‌വ എന്ന അടയാളം.] അല്ലാഹുവിന്റെ അധികാരം എത്ര മഹത്തായത്! അനുസരിക്കാത്തവൻ കത്തട്ടെ… [തുടർച്ച അടുത്ത പേജിൽ.]",
+        "en": "By the right of these printed words:\nشلعجعص شيلقوش ططليكش ططليكوش مهلوشخ بهمش همش هميوش شيهش شناهش شناهيش مرططكيوش مرططلكيوش نارفهلم غيوثا نافغلا ثاوث\nHow great this speech is! Exalted is the majesty of the Lord of the worlds. Answer, master—these are the printed forms of address:\nطحيطمغيلال وميططرون وشرنطائييل\n[The marker “invocation”.] How great is God’s authority! May whoever disobeys burn… [Continued on the next page.]"
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     },
     {
       "id": "arabic-full-10",
@@ -241,11 +286,21 @@
       "translation": {
         "en": "The preceding clause continues with God and His names, then invokes God’s kindled fire that reaches the hearts, closed upon them in extended columns. It calls on the honoured angels with shaking, great fear, dread and painful punishment, and closes with the single-cry/resurrection phrase. The fire passage echoes Quran 104:6–9 and the closing echoes 79:13–14. The source uses “bi-nari” in its sentence; this is preserved as invocation wording, not substituted for the canonical opening of the verse.",
         "ml": "മുൻ വാക്യം അല്ലാഹുവും അവന്റെ നാമങ്ങളും എന്നതോടെ തുടർന്ന്, ഹൃദയങ്ങളിലേക്കെത്തുന്നതും നീണ്ട തൂണുകളിൽ അവരുടെമേൽ അടച്ചതുമായ അല്ലാഹുവിന്റെ ജ്വലിക്കുന്ന തീയെ ചൊല്ലുന്നു. വിറയൽ, കടുത്ത ഭയം, വലിയ സംഭ്രമം, വേദനാജനക ശിക്ഷ എന്നിവ പറഞ്ഞ് ആദരണീയ മലക്കുകളെ ആഹ്വാനം ചെയ്യുന്നു. ഒരൊറ്റ വിളിയും ഉയിർത്തെഴുന്നേൽപ്പും പറയുന്ന വാക്യത്തോടെ അവസാനിക്കുന്നു. തീയുടെ ഭാഗം ഖുർആൻ 104:6–9-നോടും അവസാനം 79:13–14-നോടും ബന്ധപ്പെടുന്നു. ഈ വാക്യത്തിൽ സ്രോതസ്സ് “ബിനാരി” എന്നാണ് ഉപയോഗിക്കുന്നത്; ആഹ്വാനത്തിലെ പ്രയോഗമായി നിലനിർത്തുന്നു, ആയത്തിന്റെ കൃത്യമായ തുടക്കത്തിനു പകരമാക്കുന്നില്ല."
-      }
+      },
+      "literal_translation": {
+        "ml": "…അല്ലാഹുവിനെയും അവന്റെ നാമങ്ങളെയും. ഹൃദയങ്ങളിലേക്ക് എത്തുന്ന അല്ലാഹുവിന്റെ ജ്വലിക്കുന്ന തീയിൽ; നീട്ടിയ തൂണുകളിലായി അത് അവരുടെ മേൽ അടച്ചിരിക്കുന്നു. അല്ലാഹുവിന്റെ മാന്യരായ മലക്കുകളേ, നടുക്കം, കടുത്ത ഭയം, വലിയ പരിഭ്രാന്തി, വേദനാജനകമായ ശിക്ഷ എന്നിവയാൽ അവരെ പ്രഹരിക്കുക. അത് ഒരൊറ്റ ശക്തമായ വിളി മാത്രം; അപ്പോൾ അവർ തുറന്ന ഭൂതലത്തിൽ പ്രത്യക്ഷപ്പെടുന്നു.",
+        "en": "…God and His names. In God’s kindled fire that reaches the hearts; it is closed over them in extended columns. Noble angels of God, strike them with trembling, severe fright, great terror and painful punishment. It is only a single cry, and then they are upon the open ground."
+      },
+      "translation_kind": "close_translation_with_unknown_formula_words_preserved"
     }
   ],
   "transcription_scope": {
     "en": "The ten blocks transcribe the printed words and numbers for reading. To avoid guessing the pronunciation of unfamiliar strings, this typed transcription omits vowel marks; the linked original pages preserve the actual printed harakat. Unknown strings have no invented lexical meaning. Descriptions translate the intelligible subject matter, not every foreign formula word. Edition differences are retained; compare the original page whenever a formula reading matters.",
     "ml": "വായിക്കാൻ സഹായിക്കുന്ന പത്ത് ഭാഗങ്ങളിൽ അച്ചടിച്ച പദങ്ങളും അക്കങ്ങളും പകർത്തുന്നു. അപരിചിത പദങ്ങളുടെ ഉച്ചാരണം ഊഹിക്കാതിരിക്കാൻ ഈ ടൈപ്പ് ചെയ്ത പകർപ്പിൽ ഹറകത്ത് ഒഴിവാക്കിയിരിക്കുന്നു; ചേർത്ത മൂലപേജുകളിൽ അച്ചടിയിലെ യഥാർഥ ഹറകത്ത് കാണാം. വ്യക്തമല്ലാത്ത പദങ്ങൾക്ക് അർഥം കൽപ്പിച്ചിട്ടില്ല. വിവരണങ്ങളിൽ മനസ്സിലാക്കാവുന്ന വിഷയങ്ങളുടെ അർഥമാണ്; ഓരോ അന്യഭാഷാ സൂത്രപദത്തിന്റെയും പരിഭാഷയല്ല. പതിപ്പുവ്യത്യാസങ്ങൾ നിലനിർത്തുന്നു; സൂത്രവായന ആവശ്യമായിടത്ത് മൂലപേജുമായി ഒത്തുനോക്കുക."
-  }
+  },
+  "literal_translation_note": {
+    "ml": "താഴെയുള്ള നേരിട്ടുള്ള പരിഭാഷ അച്ചടിച്ച പാഠത്തിന്റെ അർത്ഥമാണ്. അജ്ഞാത സൂത്രപദങ്ങൾ അറബിയിൽ അതേപടി നിലനിർത്തുന്നു; അവയ്ക്ക് അർത്ഥം കൽപ്പിച്ചിട്ടില്ല. ചരിത്രപാഠത്തിലെ ആണയിടൽ, ആഹ്വാനം, ശിക്ഷാവാചകങ്ങൾ എന്നിവ സ്രോതസ്സിന്റെ വാക്കുകളാണ്; മതപരമായ പ്രാമാണികതയോ ഫലമോ ഇതിലൂടെ സ്ഥാപിക്കുന്നില്ല. ഹരക്കത്ത് അച്ചടിയിലുള്ള മൂലചിത്രങ്ങളിൽ കാണാം.",
+    "en": "The close translation conveys the printed text. Unfamiliar formula words are retained in Arabic without invented meanings. Adjuration, invocation and punitive language are the historical source’s words, not authentication or proof of effects. The original page images preserve the printed vowels."
+  },
+  "literal_translation_checked_on": "2026-10-13"
 }

@@ -10,9 +10,15 @@ export default function BirhatiahArabicInvocationSources() {
     <section className="rounded-lg border border-white/15 p-3 space-y-4">
       <h3 className="text-yellow-100">{ml ? 'പൂർണ അറബി വായനാപകർപ്പും വിഷയമനുസരിച്ചുള്ള അർഥവും' : 'Full Arabic reading transcription and meaning by subject'}</h3>
       <p className="text-sm leading-loose text-white/65">{source.transcription_scope[language]}</p>
+      {source.literal_translation_note && <p className="text-sm leading-loose text-white/65">{source.literal_translation_note[language]}</p>}
       {source.transcription.map(entry => <article key={entry.id} className="border-t border-white/10 pt-3 space-y-3">
         <h3 className="text-yellow-100">{entry.title[language]}</h3>
         <p className="font-amiri text-xl text-right leading-loose whitespace-pre-wrap text-white/90" lang="ar" dir="rtl">{entry.arabic}</p>
+        {entry.literal_translation?.[language] && <section className="space-y-2" data-source-translation={entry.id}>
+          <h4 className="text-yellow-100 text-sm">{ml ? 'മൂലപാഠത്തിന്റെ നേരിട്ടുള്ള പരിഭാഷ' : 'Close translation of the source text'}</h4>
+          <p className="text-sm leading-loose whitespace-pre-wrap text-white/90">{entry.literal_translation[language]}</p>
+        </section>}
+        <h4 className="text-yellow-100 text-sm">{ml ? 'പാഠത്തെക്കുറിച്ചുള്ള വിശദീകരണം' : 'Explanation of the passage'}</h4>
         <p className="text-sm leading-loose text-white/85">{entry.translation[language]}</p>
         <p className="text-xs text-white/60">{ml ? 'താഴെ കാർഡിനുള്ളിൽ അച്ചടിച്ച മൂലപേജ്' : 'Printed original page displayed below in this card'}: {entry.pdf_page}</p>
       </article>)}
