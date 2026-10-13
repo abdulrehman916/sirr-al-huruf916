@@ -183,6 +183,35 @@
       "printed_page": 70,
       "source_image": "/figures/birhatiah-manba-p70.png",
       "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p68-turan-bread-21",
+      "related_name_ids": [
+        "HNK-MHC-004"
+      ],
+      "title": {
+        "ml": "അപ്പത്തിലെ 21 എഴുത്തുകൾ — അറബി പതിപ്പിലെ പൂർണ്ണവാക്യം",
+        "en": "Twenty-one bread inscriptions — sentence in the Arabic printing"
+      },
+      "arabic_original": "ومن كتبه (٢١) مرة على رغيف أو كعكة وناولها لمسجون فقسمها المسجون نصفين وأكل كل منهما نصفا أحسن الله خلاصه بمنه وكرمه",
+      "translation": {
+        "ml": "പേര് അപ്പത്തിലോ കഅ്‌കയിലോ 21 തവണ എഴുതി തടവുകാരന് നൽകുക; തടവുകാരൻ അത് രണ്ടു ഭാഗങ്ങളാക്കുകയും രണ്ടുപേരും ഓരോ പകുതി വീതം കഴിക്കുകയും ചെയ്യുന്നതിനെ അല്ലാഹു തന്റെ ഔദാര്യത്താൽ മോചനം നൽകുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു. ഇത് അച്ചടിയിലെ ചരിത്രവിവരണമാണ്; എഴുത്തുവസ്തു കഴിക്കാനുള്ള നിർദേശമല്ല.",
+        "en": "The source describes twenty-one inscriptions on bread or a cake given to a prisoner, the prisoner dividing it in two, and each of the two people eating half. It associates this with a claim of release through God’s generosity. This is a historical account, not advice to ingest writing material."
+      },
+      "count": 21,
+      "count_kind": "inscription",
+      "timing": {
+        "ml": "ഈ വാക്യത്തിൽ ദിവസമോ സമയമോ പറയുന്നില്ല.",
+        "en": "No day or clock time is stated in this sentence."
+      },
+      "scope_note": {
+        "ml": "അറബി പേജ് 68-ൽ «كتبه (٢١)» എന്നാണ്: 21 എഴുത്തുകൾ. «كل منهما» എന്നത് രണ്ട് ആളുകളെയും സൂചിപ്പിക്കുന്നു. ആരൊക്കെയെന്ന വിശദമായ തിരിച്ചറിയൽ വാക്യം നൽകുന്നില്ല; അതും എഴുതാൻ ഉപയോഗിക്കുന്ന വസ്തുവും ഊഹിച്ചിട്ടില്ല.",
+        "en": "Arabic page 68 prints كتبه (٢١): twenty-one inscriptions. كل منهما refers to two people. Their detailed identities and the writing substance are not specified or reconstructed."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "source_image": "/figures/birhatiah-manba-p68.png",
+      "review_status": "checked_against_scan"
     }
   ],
   "practice_provenance_corrections": [
@@ -227,6 +256,122 @@
       "scope_note": {
         "ml": "പേജ് 70-ൽ «على خاتم» എന്നും «السلم السليماني» എന്നും അച്ചടിച്ചതാണ് നേരിട്ട് ഒത്തുനോക്കിയത്. സുൽലമിന്റെ ചിത്രം, നിശ്ചിത എഴുത്തെണ്ണം, ദിവസം, സമയം എന്നിവ ഈ വാക്യത്തിൽ നൽകുന്നില്ല; അവ ഊഹിച്ച് പൂരിപ്പിച്ചിട്ടില്ല.",
         "en": "Page 70 prints على خاتم and السلم السليماني. This sentence supplies no drawing of the sullam, fixed inscription count, day or time; none is invented."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-002",
+      "practice_id": "merchandise-11",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "inscription",
+      "arabic_original": "ومن كتبه ١١ مرة في ورقة ووضعها في مال تاجر لا يسرق",
+      "translation": {
+        "ml": "ഗ്രന്ഥവാക്യം: പേര് കടലാസിൽ 11 തവണ എഴുതി ഒരു വ്യാപാരിയുടെ വസ്തുക്കളിൽ വച്ചാൽ അവ മോഷ്ടിക്കപ്പെടില്ലെന്ന് അവകാശപ്പെടുന്നു.",
+        "en": "The sentence claims that eleven inscriptions on paper placed among a trader’s goods prevent theft."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് പേജ് 68-ലെ ചിത്രവുമായി ഒത്തുനോക്കിയ പാഠം. പഴയ നാമരൂപവും സംഖ്യയും മാറ്റിയിട്ടില്ല. ഈ ഭാഗത്തിൽ പറയാത്ത അധിക സമയമോ ദിവസമോ ചേർത്തിട്ടില്ല. ഫലങ്ങൾ ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "Visually rechecked against printed page 68 on 2026-10-13. Stored names and numeric values are unchanged. Additional timing not stated in the passage is not added; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-002",
+      "practice_id": "historical-eye-account-17",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "washing",
+      "arabic_original": "وغسل به العين المرمودة (١٧) مرة ثلاثة أيام",
+      "translation": {
+        "ml": "തിരഞ്ഞെടുത്ത വാക്യഭാഗത്തിൽ കണ്ണ് കഴുകുന്നതിന് 17 തവണയും മൂന്ന് ദിവസവും പറയുന്നു. 17 എഴുത്തിന്റെ എണ്ണമായി മാറ്റിയിട്ടില്ല. ഇത് ചരിത്രത്തിലെ രോഗശമനവിവരണമാണ്; കണ്ണിൽ എഴുത്തുവെള്ളം ഉപയോഗിക്കാനുള്ള നിർദേശമല്ല.",
+        "en": "The selected clause states seventeen eye washings and three days. Seventeen is not reclassified as an inscription count. This historical medical account is not advice to put inscription water in the eye."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് പേജ് 68-ലെ ചിത്രവുമായി ഒത്തുനോക്കിയ പാഠം. പഴയ നാമരൂപവും സംഖ്യയും മാറ്റിയിട്ടില്ല. ഈ ഭാഗത്തിൽ പറയാത്ത അധിക സമയമോ ദിവസമോ ചേർത്തിട്ടില്ല. ഫലങ്ങൾ ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "Visually rechecked against printed page 68 on 2026-10-13. Stored names and numeric values are unchanged. Additional timing not stated in the passage is not added; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-003",
+      "practice_id": "tin-13",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "inscription",
+      "arabic_original": "ومن خواصه أن من كتبه (١٣) مرة في لوح صفيح ووضعه في البيت الذي فيه بق رحل عنه بإذن الله تعالى",
+      "translation": {
+        "ml": "പേര് തകരത്തകിടിൽ 13 തവണ എഴുതി മൂട്ടയുള്ള വീട്ടിൽ വച്ചാൽ അല്ലാഹുവിന്റെ അനുമതിയോടെ മൂട്ടകൾ അവിടെനിന്ന് പോകുമെന്നാണ് മൂലവാക്യം അവകാശപ്പെടുന്നത്.",
+        "en": "The sentence claims that thirteen inscriptions on a tin plate placed in a house with bedbugs cause them to leave by God’s permission."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് പേജ് 68-ലെ ചിത്രവുമായി ഒത്തുനോക്കിയ പാഠം. പഴയ നാമരൂപവും സംഖ്യയും മാറ്റിയിട്ടില്ല. ഈ ഭാഗത്തിൽ പറയാത്ത അധിക സമയമോ ദിവസമോ ചേർത്തിട്ടില്ല. ഫലങ്ങൾ ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "Visually rechecked against printed page 68 on 2026-10-13. Stored names and numeric values are unchanged. Additional timing not stated in the passage is not added; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-003",
+      "practice_id": "daily-70",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "recitation",
+      "arabic_original": "ومن تلاه كل يوم (٧٠) مرة لا يموت إلا غنيا ويرزقه الله المعيشة الطيبة",
+      "translation": {
+        "ml": "ദിവസേന 70 തവണ വായിക്കുന്നവൻ സമ്പന്നനായിട്ടല്ലാതെ മരിക്കില്ലെന്നും അല്ലാഹു നല്ല ജീവിതോപാധി നൽകുമെന്നും ഗ്രന്ഥം അവകാശപ്പെടുന്നു. ഇത് ഗ്രന്ഥത്തിലെ ഫലവിവരണമാണ്; ഉറപ്പുനൽകുന്ന വാഗ്ദാനമല്ല.",
+        "en": "The source claims that someone reciting it seventy times daily will die wealthy and receive a good livelihood from God. This is the book’s outcome claim, not a guaranteed promise."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് പേജ് 68-ലെ ചിത്രവുമായി ഒത്തുനോക്കിയ പാഠം. പഴയ നാമരൂപവും സംഖ്യയും മാറ്റിയിട്ടില്ല. ഈ ഭാഗത്തിൽ പറയാത്ത അധിക സമയമോ ദിവസമോ ചേർത്തിട്ടില്ല. ഫലങ്ങൾ ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "Visually rechecked against printed page 68 on 2026-10-13. Stored names and numeric values are unchanged. Additional timing not stated in the passage is not added; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-004",
+      "practice_id": "protection-five",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "inscription",
+      "arabic_original": "ومن خواصه أن من كتبه خمس مرات مع الأربع آيات أخيرات سورة الحشر وثلاث هاءات وسبع همزات وحمله أمن من سطوة الإنس والجن والجبابرة",
+      "translation": {
+        "ml": "പേര് അഞ്ച് തവണയും സൂറത്തുൽ ഹശ്റിന്റെ അവസാന നാല് ആയത്തുകളും മൂന്ന് ه അക്ഷരങ്ങളും ഏഴ് ഹംസകളും എഴുതിക്കൊണ്ട് അത് കൈവശം വയ്ക്കുന്നതിനെ മനുഷ്യർ, ജിന്നുകൾ, പീഡകർ എന്നിവരുടെ ആധിപത്യത്തിൽനിന്നുള്ള സംരക്ഷണവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു.",
+        "en": "The source links five inscriptions of the name, the last four verses of al-Hashr, three ه letters and seven hamzas, carried by the person, with protection from domination by people, jinn and tyrants."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് പേജ് 68-ലെ ചിത്രവുമായി ഒത്തുനോക്കിയ പാഠം. പഴയ നാമരൂപവും സംഖ്യയും മാറ്റിയിട്ടില്ല. ഈ ഭാഗത്തിൽ പറയാത്ത അധിക സമയമോ ദിവസമോ ചേർത്തിട്ടില്ല. ഫലങ്ങൾ ഗ്രന്ഥത്തിന്റെ അവകാശവാദങ്ങളാണ്.",
+        "en": "Visually rechecked against printed page 68 on 2026-10-13. Stored names and numeric values are unchanged. Additional timing not stated in the passage is not added; outcomes remain source claims."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-001",
+      "practice_id": "daily-100",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 67,
+      "count_kind": "recitation",
+      "arabic_original": "وإذا استعمله من ضاق به الرزق كل يوم مائة مرة لا يمضي عليه أربعون يوما حتى يفتح الله عليه باب الغنى عن الناس",
+      "scope_note": {
+        "ml": "മൂലപേജ് വീണ്ടും ഒത്തുനോക്കി എണ്ണത്തിന്റെ തരം വ്യക്തമാക്കിയിരിക്കുന്നു. നാമമോ സംഖ്യയോ മാറ്റിയിട്ടില്ല; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The source image was rechecked to classify the count. Stored name and number are unchanged; the result is the source’s claim."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-001",
+      "practice_id": "right-palm-seven",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 67,
+      "count_kind": "inscription",
+      "arabic_original": "وإذا كتبه إنسان في كفه الأيمن سبع مرات ولحسه على الريق حفظ كل ما يسمعه ولا ينساه أبدا",
+      "scope_note": {
+        "ml": "മൂലപേജ് വീണ്ടും ഒത്തുനോക്കി എണ്ണത്തിന്റെ തരം വ്യക്തമാക്കിയിരിക്കുന്നു. നാമമോ സംഖ്യയോ മാറ്റിയിട്ടില്ല; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The source image was rechecked to classify the count. Stored name and number are unchanged; the result is the source’s claim."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-002",
+      "practice_id": "nightly-100",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 68,
+      "count_kind": "recitation",
+      "arabic_original": "ومن خواصه أن من واظب على قراءته كل ليلة مائة مرة فإنه يجتمع بالجن عيانا وربما يصيرون له خداما",
+      "scope_note": {
+        "ml": "മൂലപേജ് വീണ്ടും ഒത്തുനോക്കി എണ്ണത്തിന്റെ തരം വ്യക്തമാക്കിയിരിക്കുന്നു. നാമമോ സംഖ്യയോ മാറ്റിയിട്ടില്ല; ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The source image was rechecked to classify the count. Stored name and number are unchanged; the result is the source’s claim."
       }
     }
   ]
