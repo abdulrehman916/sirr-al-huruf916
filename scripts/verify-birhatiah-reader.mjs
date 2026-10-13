@@ -91,6 +91,10 @@ for (const language of ['ml', 'en']) {
     assert.equal((html.match(/data-witness-name=/g) || []).length, 1, 'Outside number must belong only to its card');
     assert.ok(html.includes('data-witness-name=\"' + entry.name_id + '\"'));
     assert.ok(html.includes('>' + entry.reported_name_number + '</td>'));
+    for (const note of outsideWitness.variant_notes || []) {
+      assert.equal(html.includes('data-witness-variant="' + note.id + '"'), note.related_name_ids.includes(entry.name_id), 'Edition differences must remain on the relevant card');
+      if (note.related_name_ids.includes(entry.name_id)) assert.ok(html.includes(note.text[language]));
+    }
   }
   assert.equal((renderWitness(null, language).match(/data-witness-name=/g) || []).length, 28);
   assert.equal(renderWitness('UNKNOWN', language), '');

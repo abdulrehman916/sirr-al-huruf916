@@ -124,5 +124,28 @@
       "name_id": "HNK-MHC-028",
       "reported_name_number": 1550
     }
+  ],
+  "last_rechecked_on": "2026-10-13",
+  "variant_notes": [
+    {
+      "id": "outside-2017-turan-bread-count",
+      "related_name_ids": [
+        "HNK-MHC-004"
+      ],
+      "text": {
+        "ml": "അപ്പം സംബന്ധിച്ച ഭാഗത്ത് ഈ പോസ്റ്റ് 1000 വായനകൾ പറയുന്നു. അറബി പുസ്തകത്തിന്റെ പേജ് 68-ലെ 21 എഴുത്തുകളുമായി എണ്ണവും പ്രവർത്തനവും വ്യത്യസ്തമാണ്. രണ്ടു സ്രോതസ്സുകളും വേറിട്ട പതിപ്പുകളായി വായിക്കണം.",
+        "en": "For the bread account, this post gives 1,000 recitations; Arabic printed page 68 gives 21 inscriptions. Keep the count and action attached to their separate editions."
+      }
+    },
+    {
+      "id": "outside-2017-mazjal-daily-count",
+      "related_name_ids": [
+        "HNK-MHC-005"
+      ],
+      "text": {
+        "ml": "ദിവസേനയുള്ള വായനയ്ക്ക് ഈ പോസ്റ്റ് 50 പറയുന്നു; അറബി പുസ്തകത്തിലെ ബന്ധപ്പെട്ട ഭാഗത്ത് 5 ആണ്. പോസ്റ്റിലെ എട്ട് അധികനാമങ്ങളുടെ എഴുത്തിനെ പുസ്തകത്തിലെ അക്ഷരങ്ങൾക്കു പകരമായി ഉപയോഗിച്ചിട്ടില്ല.",
+        "en": "The post gives 50 daily readings, whereas the corresponding Arabic book passage gives 5. Its eight additional names are not substituted for the book’s spellings."
+      }
+    }
   ]
 }
