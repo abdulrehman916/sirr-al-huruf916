@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-10-13",
+  "base_commit": "d27d620dba5c9429ffe3d12fefb43480cf15f3e8",
+  "scope": "Focused original-image presentation and source specification review on individual cards 5, 8, 9 and 14. No new unreadable Arabic characters, pronunciation marks or diagrams are invented.",
+  "cards": [
+    {
+      "name_id": "HNK-MHC-005",
+      "change": "Enlarge the exact page-68 region with the eight additional names; retain the separately attributed outside reading."
+    },
+    {
+      "name_id": "HNK-MHC-008",
+      "change": "Show the exact page-69 talisman strokes in an enlarged original-image region within the method; keep the complete source page."
+    },
+    {
+      "name_id": "HNK-MHC-009",
+      "change": "Distinguish a mentioned seal from an actually supplied drawing. No seal drawing is provided alongside this source clause."
+    },
+    {
+      "name_id": "HNK-MHC-014",
+      "change": "Enlarge the page-71 passage with unfamiliar formula words and their printed positional order rather than inventing vowels or meanings."
+    }
+  ],
+  "verification": [
+    "100 purpose blocks in 28 cards",
+    "56 bilingual card renders",
+    "Original-image focus stays within source dimensions and only on its intended cards",
+    "Complete original pages remain inline"
+  ],
+  "limits": [
+    "Image enlargement preserves evidence and does not certify uncertain typed letters.",
+    "Full typed transcription of longer collective supplementary passages remains a separate unresolved task.",
+    "A second Archive.org PDF witness was retrieved and selected pages inspected. Its compressed text-PDF images do not settle uncertain characters; OCR is not treated as image verification."
+  ]
+}
