@@ -854,6 +854,34 @@
         },
         "formula_arabic": "مَزْجَلٍ بَزْجَلٍ",
         "source_name_id": "HNK-MHC-006"
+      },
+      {
+        "method_id": "hnk-mhc-005-six-name-iron-ring",
+        "source_entry": "manba-p70-six-name-iron-ring",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+          ],
+          "en": [
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
+          ]
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
       }
     ],
     "method_id": "hnk-mhc-005-purpose-001"
@@ -925,6 +953,34 @@
           ]
         },
         "formula_arabic": "مَزْجَلٍ بَزْجَلٍ"
+      },
+      {
+        "method_id": "hnk-mhc-006-six-name-iron-ring",
+        "source_entry": "manba-p70-six-name-iron-ring",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+          ],
+          "en": [
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
+          ]
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
       }
     ],
     "method_id": "hnk-mhc-006-purpose-001"
@@ -957,7 +1013,37 @@
       }
     },
     "verse_group": "3:37",
-    "method_id": "hnk-mhc-007-purpose-001"
+    "method_id": "hnk-mhc-007-purpose-001",
+    "other_methods": [
+      {
+        "method_id": "hnk-mhc-007-six-name-iron-ring",
+        "source_entry": "manba-p70-six-name-iron-ring",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+          ],
+          "en": [
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
+          ]
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
+      }
+    ]
   },
   "HNK-MHC-008": {
     "title": {
@@ -1014,6 +1100,34 @@
           "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
           "en": "Original Arabic-edition page — printed names and symbols"
         }
+      },
+      {
+        "method_id": "hnk-mhc-008-six-name-iron-ring",
+        "source_entry": "manba-p70-six-name-iron-ring",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+          ],
+          "en": [
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
+          ]
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
       }
     ],
     "source_pages": [
@@ -1135,6 +1249,34 @@
           "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
           "en": "Original Arabic-edition page — printed names and symbols"
         }
+      },
+      {
+        "method_id": "hnk-mhc-009-six-name-iron-ring",
+        "source_entry": "manba-p70-six-name-iron-ring",
+        "title": {
+          "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
+          "en": "Archery and sword skill — ring method"
+        },
+        "benefit": {
+          "ml": "ആ കലയിൽ ശക്തിയും മികവും ലഭിക്കുമെന്ന പരമ്പരാഗത അവകാശവാദം.",
+          "en": "Traditional claim of strength and skill in the art."
+        },
+        "steps": {
+          "ml": [
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
+          ],
+          "en": [
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
+          ]
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
       }
     ],
     "method_id": "hnk-mhc-009-purpose-001",
@@ -1230,7 +1372,7 @@
       },
       {
         "method_id": "dogs-threshold",
-        "source_entry": "english-extended-010",
+        "source_entry": "manba-p70-wolf-skin-pronoun",
         "title": {
           "ml": "വാതിലിലൂടെ നായകൾ കടക്കാതിരിക്കാൻ",
           "en": "Preventing dogs from entering a doorway"
@@ -1241,18 +1383,23 @@
         },
         "steps": {
           "ml": [
-            "സംസ്കരിച്ച ചെന്നായ്തോലിൽ എഴുതുക.",
-            "വീടിന്റെയോ നഗരത്തിന്റെയോ വാതിൽപ്പടിക്കടിയിൽ കുഴിച്ചിടുക. ഈ ഖണ്ഡത്തിലെ എഴുത്തിന്റെ മുഴുവൻ നാമക്രമം സ്ഥിരീകരിക്കാനുണ്ട്."
+            "സംസ്കരിച്ച ചെന്നായ്തോലിലെ എഴുത്ത് വാതിൽപ്പടിക്കടിയിൽ കുഴിച്ചിടുന്നതാണ് ചരിത്രവിവരണം.",
+            "മൂലവാക്യം പേരുകൾ വീണ്ടും നൽകാതെ “അവ” എന്നാണ് പറയുന്നത്. പൂർണ്ണ നാമക്രമം ഊഹിച്ച് ചേർത്തിട്ടില്ല.",
+            "നായ കടക്കില്ലെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം; എണ്ണം, ദിവസം, സമയം എന്നിവ ഈ വാക്യത്തിൽ പറയുന്നില്ല."
           ],
           "en": [
-            "The historical method uses an inscription on tanned wolf skin.",
-            "Bury it under the doorway of a house or city. The complete name sequence in this passage remains unverified."
+            "The historical account describes an inscription on tanned wolf skin buried beneath a threshold.",
+            "The original uses a pronoun instead of repeating the names; a full name sequence is not invented.",
+            "The claim about dogs is attributed to the book. No count, day or time is stated."
           ]
-        }
+        },
+        "source_pages": [
+          70
+        ]
       },
       {
         "method_id": "iron-ring-skill",
-        "source_entry": "english-extended-010",
+        "source_entry": "manba-p70-six-name-iron-ring",
         "title": {
           "ml": "അമ്പെയ്ത്തിലും വാൾപ്രയോഗത്തിലും മികവ് — മോതിരരീതി",
           "en": "Archery and sword skill — ring method"
@@ -1263,18 +1410,24 @@
         },
         "steps": {
           "ml": [
-            "ഇരുമ്പുമോതിരത്തിൽ നിർദിഷ്ട പദങ്ങൾ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തിവയ്ക്കുക.",
-            "അമ്പെയ്ത്തോ വാൾപ്രയോഗമോ ചെയ്യുന്നയാൾ മോതിരം ധരിക്കുക. പദങ്ങളുടെ പൂർണ്ണ അറബി പാഠവും ഏത് ദിവസം/മണിക്കൂർ എന്നതും ഈ ഖണ്ഡത്തിൽ സ്ഥിരീകരിച്ചിട്ടില്ല."
+            "മൂലപേജിലെ ആറുനാമപ്പാഠം മുകളിൽ നൽകിയിരിക്കുന്നു.",
+            "ഗ്രന്ഥത്തിലെ ക്രമം അത് ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി ധരിക്കുന്നതാണ്.",
+            "ഏത് ദിവസമോ മണിക്കൂറോ എന്ന് ഈ വാക്യം വ്യക്തമാക്കുന്നില്ല. കഴിവു വർധിക്കുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്."
           ],
           "en": [
-            "The method specifies engraving particular words on an iron ring on its day and hour.",
-            "The practitioner wears the ring. The full Arabic words and the specified day and hour are unverified in this passage."
+            "The six-name inscription from the original page appears above.",
+            "The book describes engraving it on an iron ring on its day and hour, and wearing the ring.",
+            "The sentence does not identify that day or hour. Increased ability is its outcome claim."
           ]
-        }
+        },
+        "formula_arabic": "مزجل بزجل ترقب برهش غلمش خوطير",
+        "source_pages": [
+          70
+        ]
       },
       {
         "method_id": "animal-colic",
-        "source_entry": "english-extended-010",
+        "source_entry": "manba-p70-animal-pronoun",
         "title": {
           "ml": "ചുമട്ടുമൃഗത്തിന്റെ വയറുവേദന — ചരിത്രരീതി",
           "en": "Pack-animal colic — historical method"
@@ -1285,18 +1438,23 @@
         },
         "steps": {
           "ml": [
-            "ശുദ്ധപാത്രത്തിൽ എഴുതിയത് ശുദ്ധവെള്ളത്തിൽ കഴുകിയെടുത്ത് മൃഗത്തിന് കുടിപ്പിക്കുന്നതാണ് ചരിത്രരീതി.",
-            "പൂർണ്ണ എഴുത്തുപാഠം ഈ ഖണ്ഡത്തിൽ സ്ഥിരീകരിച്ചിട്ടില്ല. ഇത് മൃഗചികിത്സയ്ക്കോ എഴുത്തുവസ്തു കുടിപ്പിക്കാനോ ഉള്ള നിർദേശമല്ല."
+            "ശുദ്ധപാത്രത്തിലെ എഴുത്ത് ശുദ്ധവെള്ളത്തിൽ കഴുകിയെടുക്കുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രവിവരണമാണ്.",
+            "മൂലത്തിൽ “അവ” എന്ന സർവനാമമാണ്; നാമപ്പട്ടിക വീണ്ടും നൽകിയിട്ടില്ല.",
+            "ഭേദമാകുമെന്നത് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം. ഇത് മൃഗചികിത്സയോ എഴുത്തുവസ്തു കുടിപ്പിക്കാനുള്ള നിർദേശമോ അല്ല."
           ],
           "en": [
-            "The historical method washes an inscription in a clean vessel with clean water and gives it to the animal.",
-            "The full inscription is unverified here. This is not veterinary or ingestion advice."
+            "The historical account describes washing an inscription in a clean vessel with clean water.",
+            "The original uses a pronoun and does not repeat the name list.",
+            "Recovery is the book’s claim, not veterinary or ingestion advice."
           ]
-        }
+        },
+        "source_pages": [
+          70
+        ]
       },
       {
         "method_id": "well-water",
-        "source_entry": "english-extended-010",
+        "source_entry": "manba-p70-well-cloves",
         "title": {
           "ml": "കിണറ്റിലെ വെള്ളം താഴുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രരീതി",
           "en": "Historical method concerning lowering well water"
@@ -1307,16 +1465,19 @@
         },
         "steps": {
           "ml": [
-            "ശനിയാഴ്ച ആദ്യ മണിക്കൂറിൽ കറുത്ത ഈയമുദ്രയിൽ നിർദിഷ്ട പദങ്ങളും ഖുർആൻ ഉദ്ധരണിയും എഴുതുന്നതാണ് ചരിത്രക്രമം.",
-            "carnation ധൂപമാക്കി കറുത്ത കമ്പിളിനൂലിൽ കിണറ്റിലേക്കിറക്കുന്നതാണ് തുടർഘട്ടം.",
-            "അപരിചിത പദങ്ങളുടെ പൂർണ്ണ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല. ഈയം വെള്ളത്തിൽ ഇടാനുള്ള നിർദേശമായി ഉപയോഗിക്കരുത്."
+            "ആറു പേരുകളും 23:18-ലെ ആയത്തുഭാഗവും ചേർത്ത ചരിത്രവിവരണം താഴെ നൽകിയിരിക്കുന്നു.",
+            "മൂലത്തിൽ പറയുന്നത് ശനിയാഴ്ച ആദ്യ മണിക്കൂർ, ഗ്രാമ്പൂധൂപം, കറുത്ത കമ്പിളിനൂൽ എന്നിവയാണ്.",
+            "കിണറിലെ വെള്ളം താഴുമെന്ന അവകാശവാദം ഗ്രന്ഥത്തിന്റേതാണ്. ഈയം വെള്ളത്തിൽ ഇടാൻ നിർദേശിക്കുന്നില്ല."
           ],
           "en": [
-            "The historical sequence specifies words and a Quran quotation on a black lead seal in the first hour of Saturday.",
-            "It then uses carnation incense and lowers the seal into a well on black wool thread.",
-            "The complete unfamiliar words remain unverified. Do not use this as advice to place lead in water."
+            "The historical account below contains the six names and the excerpt from Quran 23:18.",
+            "The source mentions Saturday’s first hour, clove incense and black wool thread.",
+            "Receding water is the book’s claim. This is not advice to place lead in water."
           ]
-        }
+        },
+        "source_pages": [
+          70
+        ]
       },
       {
         "method_id": "paired-palm",
