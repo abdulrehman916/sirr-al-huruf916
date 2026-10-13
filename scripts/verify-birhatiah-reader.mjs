@@ -7,7 +7,7 @@ import { build } from 'esbuild';
 import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
-assert.equal(collation.notes.length, 2);
+assert.equal(collation.notes.length, 4);
 for (const note of collation.notes) {
   assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
   assert.ok(fs.existsSync(`public${note.source_image}`));
@@ -27,6 +27,18 @@ assert.equal(correctedChapter.practices[0].arabic_original, undefined, 'An inacc
 assert.ok(correctedChapter.practices[0].source_title.includes('English edition'));
 assert.ok(correctedChapter.source_notes.some(note=>note.id==='owner-added-note'));
 assert.equal(collateBirhatiahChapter(correctedChapter, collation).source_notes.length, correctedChapter.source_notes.length, 'Collation must be idempotent');
+const firstOriginal = JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-001.json', 'utf8'));
+const firstBefore = JSON.stringify(firstOriginal);
+const firstCorrected = collateBirhatiahChapter(firstOriginal, collation);
+const firstCorrespondence = firstCorrected.practices.find(entry => entry.id === 'source-correspondences');
+assert.ok(firstCorrespondence.arabic_original.includes('النطح'));
+const birthNote = firstCorrected.source_notes.find(entry => entry.id === 'manba-p67-birth-inscription-source');
+assert.equal(birthNote.count, 35);
+assert.equal(birthNote.count_kind, 'inscription');
+assert.ok(!firstCorrespondence.arabic_original.includes('الشرطين'));
+assert.equal(JSON.stringify(firstOriginal), firstBefore);
+assert.ok(firstCorrected.edition_accounts.some(entry => entry.translation.en.includes('al-Sharatain')));
+assert.equal(collateBirhatiahChapter(firstCorrected, collation).source_notes.length, firstCorrected.source_notes.length);
 assert.equal(Object.keys(guides).length, 28);
 const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
 assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
