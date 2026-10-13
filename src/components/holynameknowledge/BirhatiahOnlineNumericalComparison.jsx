@@ -1,5 +1,6 @@
 import source from '@/data/birhatiahOnlineNumericalComparison.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import BirhatiahOutsideWitness from './BirhatiahOutsideWitness';
 
 const sum = values => values.reduce((total, number) => total + number, 0);
 const gridSums = grid => [
@@ -25,6 +26,7 @@ export function BirhatiahOnlineNameComparison({ nameId, currentAbjad }) {
       {differs && <p className="text-sm text-white/75">{ml ? `നിലവിലെ കാർഡിലെ കണക്ക്: ${currentAbjad}. വ്യത്യസ്ത അക്ഷരരൂപമോ പാഠഭേദമോ ആകാം; പഴയ കണക്ക് മാറ്റിയിട്ടില്ല.` : `Current card calculation: ${currentAbjad}. This may reflect a spelling or transmission variant; the original calculation is unchanged.`}</p>}
       <p className="text-xs text-white/60 leading-relaxed">{ml ? 'ഈ പുറംരേഖയിൽ പേരുകൾ ഹറകത്തില്ലാതെയാണ്. മൂലഗ്രന്ഥത്തിലെ ഹറകത്തോടെയുള്ള വായന മുകളിലുണ്ട്. മുകളിലെ സംഖ്യ എബ്ജദ് മൂല്യമാണ്; ദിക്റിന്റെ ആവർത്തനസംഖ്യയല്ല.' : 'This outside post prints the names without vowels. Read the manuscript-based vowelled name above. The number is an Abjad value, not a recitation count.'}</p>
       <a href={source.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{source.source_title}</a>
+      <BirhatiahOutsideWitness nameId={nameId} />
     </div>
   </section>;
 }

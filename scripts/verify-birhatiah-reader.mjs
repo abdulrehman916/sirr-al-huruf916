@@ -54,8 +54,23 @@ for (const [group, surah, count] of [['36:1-83', 36, 83], ['105:1-5', 105, 5]]) 
 }
 const work = fs.mkdtempSync(path.join(os.tmpdir(), 'birhatiah-guide-'));
 const output = path.join(work, 'reader.cjs');
-await build({ stdin: { contents: `import React from 'react'; import { renderToStaticMarkup } from 'react-dom/server'; import Reader from './src/components/holynameknowledge/HolyNameSourceChapter.jsx'; import Collective from './src/components/holynameknowledge/BirhatiahCollectiveVersion.jsx'; import { HolyNamesLanguageContext } from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx'; export const render = (chapter, language) => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, { value: {language} }, chapter ? React.createElement(Reader, { chapter, nameId: chapter.name_id }) : React.createElement(Collective)));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: {'@': path.join(process.cwd(), 'src')} });
-const {render} = createRequire(import.meta.url)(output);
+await build({ stdin: { contents: `import React from 'react'; import { renderToStaticMarkup } from 'react-dom/server'; import Reader from './src/components/holynameknowledge/HolyNameSourceChapter.jsx'; import Collective from './src/components/holynameknowledge/BirhatiahCollectiveVersion.jsx'; import Witness from './src/components/holynameknowledge/BirhatiahOutsideWitness.jsx'; import { HolyNamesLanguageContext } from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx'; export const render = (chapter, language) => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, { value: {language} }, chapter ? React.createElement(Reader, { chapter, nameId: chapter.name_id }) : React.createElement(Collective))); export const renderWitness = (nameId, language) => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, { value: {language} }, React.createElement(Witness, {nameId})));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: {'@': path.join(process.cwd(), 'src')} });
+const {render, renderWitness} = createRequire(import.meta.url)(output);
+const outsideWitness = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideWitness2017.json', 'utf8'));
+assert.equal(outsideWitness.entries.length, 28);
+assert.equal(new Set(outsideWitness.entries.map(entry => entry.name_id)).size, 28);
+assert.equal(outsideWitness.number_kind, 'source_name_number_not_recitation');
+for (const language of ['ml', 'en']) {
+  for (const entry of outsideWitness.entries) {
+    const html = renderWitness(entry.name_id, language);
+    assert.equal((html.match(/data-witness-name=/g) || []).length, 1, 'Outside number must belong only to its card');
+    assert.ok(html.includes('data-witness-name=\"' + entry.name_id + '\"'));
+    assert.ok(html.includes('>' + entry.reported_name_number + '</td>'));
+  }
+  assert.equal((renderWitness(null, language).match(/data-witness-name=/g) || []).length, 28);
+  assert.equal(renderWitness('UNKNOWN', language), '');
+}
+
 for (const [id, guide] of Object.entries(guides)) {
   const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${id}.json`, 'utf8'));
   assert.ok(['practices', 'source_notes', 'edition_accounts'].flatMap(key => chapter[key] || []).some(entry => entry.id === guide.source_entry), `${id}: unlinked method`);
@@ -166,6 +181,19 @@ for (const language of ['ml', 'en']) {
   assert.ok(html.indexOf('data-reader-section="extended-prayer"') < html.indexOf('data-reader-section="references"'));
   assert.ok(!/<details/.test(html), 'Collective reader must show material inline');
 }
+const invocationTranslation = JSON.parse(fs.readFileSync('src/data/birhatiahArabicInvocationSources.json', 'utf8'));
+assert.equal(invocationTranslation.transcription.length, 10);
+const escapeText = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('\"', '&quot;').replaceAll("'", '&#x27;');
+for (const language of ['ml', 'en']) {
+  const html = render(null, language);
+  for (const block of invocationTranslation.transcription) {
+    assert.ok(block.literal_translation[language], 'Missing close translation: ' + block.id);
+    assert.ok(html.includes('data-source-translation=\"' + block.id + '\"'));
+    assert.ok(html.includes(escapeText(block.literal_translation[language])), 'Missing literal source meaning: ' + block.id);
+    assert.ok(html.includes(escapeText(block.arabic)), 'Arabic source must remain unchanged: ' + block.id);
+  }
+}
+
 const version = JSON.parse(fs.readFileSync('src/data/birhatiahCollectiveVersion.json', 'utf8'));
 assert.equal(version.arabic_short_continuation_source.printed_page, 75);
 assert.ok(render(null, 'ml').includes(version.arabic_short_continuation));
