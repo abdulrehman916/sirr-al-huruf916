@@ -13,7 +13,9 @@ export function collateBirhatiahChapter(chapter, collation) {
       // An earlier paraphrase is not evidence of verbatim source wording.
       const { arabic_original: _original, arabic_reading: _reading, ...rest } = practice;
       return {...rest, source_title: correction.source_title, printed_page: correction.printed_page,
-        count_kind: correction.count_kind, scope_note: correction.scope_note};
+        count_kind: correction.count_kind, scope_note: correction.scope_note,
+        ...(correction.arabic_original ? {arabic_original: correction.arabic_original} : {}),
+        ...(correction.translation ? {translation: correction.translation} : {})};
     }),
     source_notes: [
       ...(chapter.source_notes || []).filter(entry => !notes.some(note => note.id === entry.id)),
