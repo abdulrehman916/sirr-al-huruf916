@@ -1046,7 +1046,7 @@
         "Fasting and avoidance of meat and its products are conditions; the claimed outcome is before three days elapse."
       ]
     },
-    "source_entry": "english-nightly-300",
+    "source_entry": "manba-p69-ghalmash-nightly-300",
     "spoken_request": {
       "arabic": "توكلوا يا خدام هذا الاسم في صفة كذا إلى كذا وأمروه بكذا",
       "translation": {
@@ -1137,7 +1137,10 @@
         }
       }
     ],
-    "method_id": "hnk-mhc-009-purpose-001"
+    "method_id": "hnk-mhc-009-purpose-001",
+    "source_pages": [
+      69
+    ]
   },
   "HNK-MHC-010": {
     "title": {
@@ -1365,7 +1368,7 @@
         "Use frankincense and mahaleb incense and states the need."
       ]
     },
-    "source_entry": "english-joint-summoning",
+    "source_entry": "manba-p70-qalnahud-barshan-pair",
     "other_methods": [
       {
         "method_id": "possession-twenty",
@@ -1394,7 +1397,10 @@
       }
     ],
     "formula_arabic": "قَلْنَهُودٍ بَرْشَانٍ",
-    "method_id": "hnk-mhc-011-purpose-001"
+    "method_id": "hnk-mhc-011-purpose-001",
+    "source_pages": [
+      70
+    ]
   },
   "HNK-MHC-012": {
     "title": {
@@ -1421,7 +1427,7 @@
     "other_methods": [
       {
         "method_id": "paired-information",
-        "source_entry": "english-extended-012",
+        "source_entry": "manba-p70-qalnahud-barshan-pair",
         "title": {
           "ml": "വിവരം അറിയാൻ — ഖൽനഹൂദ്, ബർശാൻ",
           "en": "Seeking information — Qalnahud and Barshan"
@@ -1469,7 +1475,7 @@
         "Do not fill unestablished cells by guesswork."
       ]
     },
-    "source_entry": "english-copper-square",
+    "source_entry": "manba-p71-kazhir-copper-clause",
     "other_methods": [
       {
         "method_id": "jinn-discipline",
@@ -1492,7 +1498,10 @@
         }
       }
     ],
-    "method_id": "hnk-mhc-013-purpose-001"
+    "method_id": "hnk-mhc-013-purpose-001",
+    "source_pages": [
+      71
+    ]
   },
   "HNK-MHC-014": {
     "title": {
@@ -1835,7 +1844,7 @@
         "Wash off the writing with water and sprinkles the place."
       ]
     },
-    "source_entry": "english-apparitions-water",
+    "source_entry": "manba-p72-anghallalit-water-clause",
     "other_methods": [
       {
         "method_id": "fire-historical",
@@ -1883,7 +1892,10 @@
         "verse_group": "105:1-5"
       }
     ],
-    "method_id": "hnk-mhc-018-purpose-001"
+    "method_id": "hnk-mhc-018-purpose-001",
+    "source_pages": [
+      72
+    ]
   },
   "HNK-MHC-019": {
     "title": {
@@ -1973,7 +1985,7 @@
         "The historical method uses toxic red lead. Do not prepare or ingest it."
       ]
     },
-    "source_entry": "english-extended-020",
+    "source_entry": "manba-p72-ghayaha-count-clauses",
     "include_chapter_quotes": true,
     "method_id": "hnk-mhc-020-purpose-001",
     "other_methods": [
@@ -2002,6 +2014,9 @@
         "inline_tijan": true,
         "source_name_id": "HNK-MHC-021"
       }
+    ],
+    "source_pages": [
+      72
     ]
   },
   "HNK-MHC-021": {
@@ -2117,25 +2132,25 @@
     },
     "steps": {
       "ml": [
-        "شمخاهير, شمهارير എന്നീ രണ്ടു പേരുകളും ചേർത്ത് 100 തവണ വായിക്കുക.",
+        "അറബി പേജ് 73-ലെ «شمخاهير», «شمهاهير» എന്നീ അക്ഷരരൂപങ്ങൾ ചേർത്ത് നൂറ് തവണ വായിക്കുന്നതായി ഗ്രന്ഥം പറയുന്നു. കാർഡിന്റെ പഴയ നാമവും കണക്കും മാറ്റിയിട്ടില്ല.",
         "ഇവിടെ നൽകിയ അഭ്യർഥന പറയുക."
       ],
       "en": [
-        "Read شمخاهير and شمهارير together one hundred times.",
+        "The Arabic page 73 account pairs the printed spellings شمخاهير and شمهاهير for one hundred readings. Stored card name and calculation remain unchanged.",
         "Say the request provided here."
       ]
     },
     "source_entry": "checked-account",
     "spoken_request": {
-      "arabic": "إن كنتم حضرتم أيها الأرواح فأروني من نوركم",
+      "arabic": "إن كنتم حضرتم أيها الأرواح فأروني من شعاع نوركم",
       "translation": {
-        "ml": "ആത്മാക്കളേ, നിങ്ങൾ എത്തിയിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശത്തിൽനിന്ന് എനിക്ക് കാണിച്ചുതരൂ.",
-        "en": "Spirits, if you have arrived, show me some of your light."
+        "ml": "രൂഹുകളേ, നിങ്ങൾ ഹാജരായിട്ടുണ്ടെങ്കിൽ നിങ്ങളുടെ പ്രകാശകിരണത്തിൽനിന്ന് എനിക്ക് കാണിച്ചുതരുക.",
+        "en": "Spirits, if you have appeared, show me some of the radiance of your light."
       },
       "source_entry": "checked-account",
-      "arabic_reading": "إِنْ كُنْتُمْ حَضَرْتُمْ أَيُّهَا الْأَرْوَاحُ فَأَرُونِي مِنْ نُورِكُمْ"
+      "arabic_reading": "إِنْ كُنْتُمْ حَضَرْتُمْ أَيُّهَا الْأَرْوَاحُ فَأَرُونِي مِنْ شُعَاعِ نُورِكُمْ"
     },
-    "formula_arabic": "شمخاهير شمهارير",
+    "formula_arabic": "شمخاهير شمهاهير",
     "method_id": "hnk-mhc-024-purpose-001",
     "other_methods": [
       {
@@ -2215,8 +2230,11 @@
         "The account of ingesting a washed inscription on an empty stomach is retained as historical information."
       ]
     },
-    "source_entry": "english-hunger-70",
-    "method_id": "hnk-mhc-025-purpose-001"
+    "source_entry": "manba-p73-bakahtuniya-seventy",
+    "method_id": "hnk-mhc-025-purpose-001",
+    "source_pages": [
+      73
+    ]
   },
   "HNK-MHC-026": {
     "title": {
@@ -2251,10 +2269,10 @@
     },
     "steps": {
       "ml": [
-        "ഇശാ നമസ്കാരസമയത്ത് സുജൂദിലായിരിക്കെ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുക."
+        "ഇശാ നമസ്കാരത്തിനുശേഷം സുജൂദിൽ പേര് 80 തവണ വായിച്ച് അല്ലാഹുവിനോട് ആവശ്യം ചോദിക്കുന്നതാണ് ഗ്രന്ഥം പറയുന്ന ക്രമം."
       ],
       "en": [
-        "Read the name eighty times in prostration at the night prayer, then ask God for the need."
+        "The source describes eighty readings in prostration after the Isha prayer, followed by asking God for the need."
       ]
     },
     "source_entry": "checked-account",

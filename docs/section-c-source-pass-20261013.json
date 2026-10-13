@@ -1,0 +1,154 @@
+{
+  "checked_on": "2026-10-13",
+  "scope": "Selected main source passages and count/timing categories across all 28 cards, using printed pages 67–74. This is not an exhaustive inventory of all external publications or all supplementary chapters.",
+  "preserved": "Stored name spellings, Abjad values, imported originals, distinct English-edition readings and original page images.",
+  "cards": [
+    {
+      "name_id": "HNK-MHC-001",
+      "main_source_page": 67,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-002",
+      "main_source_page": 68,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-003",
+      "main_source_page": 68,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-004",
+      "main_source_page": 68,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-005",
+      "main_source_page": 68,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-006",
+      "main_source_page": 69,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-007",
+      "main_source_page": 69,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-008",
+      "main_source_page": 69,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-009",
+      "main_source_page": 69,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-010",
+      "main_source_page": 70,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-011",
+      "main_source_page": 70,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-012",
+      "main_source_page": 70,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-013",
+      "main_source_page": 71,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-014",
+      "main_source_page": 71,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-015",
+      "main_source_page": 71,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-016",
+      "main_source_page": 71,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-017",
+      "main_source_page": 72,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-018",
+      "main_source_page": 72,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-019",
+      "main_source_page": 72,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-020",
+      "main_source_page": 72,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-021",
+      "main_source_page": 72,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-022",
+      "main_source_page": 73,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-023",
+      "main_source_page": 73,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-024",
+      "main_source_page": 73,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-025",
+      "main_source_page": 73,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-026",
+      "main_source_page": 73,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-027",
+      "main_source_page": 74,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    },
+    {
+      "name_id": "HNK-MHC-028",
+      "main_source_page": 74,
+      "review_scope": "main procedure or count/timing clause; original full page retained"
+    }
+  ],
+  "not_inferred": [
+    "unprinted vowels",
+    "unknown lexical meanings",
+    "unstated counts or times",
+    "missing diagram cells",
+    "fixed prayer wording where the source gives only a general instruction"
+  ]
+}

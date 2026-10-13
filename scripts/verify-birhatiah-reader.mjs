@@ -7,7 +7,7 @@ import { build } from 'esbuild';
 import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
-assert.equal(collation.notes.length, 8);
+assert.equal(collation.notes.length, 14);
 for (const note of collation.notes) {
   assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
   assert.ok(fs.existsSync(`public${note.source_image}`));
@@ -53,6 +53,17 @@ for (const [cardId, practiceId, kind] of [['HNK-MHC-002', 'merchandise-11', 'ins
   assert.equal(JSON.stringify(original), before);
 }
 assert.equal(collation.notes.find(entry => entry.id === 'manba-p68-turan-bread-21').count, 21);
+const finalCard = collateBirhatiahChapter(JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-028.json', 'utf8')), collation);
+assert.equal(finalCard.practices[0].count_kind, 'collective_recitation');
+assert.equal(finalCard.practices[0].count, 35);
+const twentySeventh = collateBirhatiahChapter(JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-027.json', 'utf8')), collation);
+assert.ok(twentySeventh.practices[0].arabic_original.includes('بعد صلاة العشاء'));
+assert.equal(twentySeventh.practices[0].count, 80);
+assert.ok(twentySeventh.practices[0].timing.en.includes('after Isha'));
+assert.ok(!twentySeventh.practices[0].timing.en.includes('at the night'));
+const nineteenth = collateBirhatiahChapter(JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-019.json', 'utf8')), collation);
+assert.ok(nineteenth.practices[0].arabic_original.includes('ستين مرة كل يوم'));
+assert.equal(nineteenth.practices[0].count, 60);
 assert.equal(Object.keys(guides).length, 28);
 const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
 assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
