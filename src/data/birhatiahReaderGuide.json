@@ -598,8 +598,8 @@
         "method_id": "bread-release",
         "source_entry": "english-extended-004",
         "title": {
-          "ml": "തടവിൽനിന്നുള്ള മോചനം — ചരിത്രത്തിലെ അപ്പരീതി",
-          "en": "Release from imprisonment — historical bread method"
+          "ml": "തടവിൽനിന്നുള്ള മോചനം — ഇംഗ്ലീഷ് പതിപ്പിലെ അപ്പരീതി",
+          "en": "Release from imprisonment — English-edition bread account"
         },
         "benefit": {
           "ml": "തടവുകാരന് മോചനം ലഭിക്കുമെന്ന ചരിത്രപരമായ അവകാശവാദം.",
@@ -701,13 +701,43 @@
         "steps": {
           "ml": [
             "രാത്രിയിൽ പേര് 1000 തവണ വായിക്കുക.",
-            "ഓരോ നൂറിനുശേഷവും പീഡകനെതിരെ പ്രതികാരം ആവശ്യപ്പെടുന്നതാണ് തുടർഘട്ടം. ഈ അഭ്യർഥനയുടെ കൃത്യമായ അറബി വാക്യം സ്ഥിരീകരിച്ചിട്ടില്ല."
+            "ഓരോ നൂറിനുശേഷവും പീഡകനെതിരായ പ്രതികാരത്തിന് ചുമതല നൽകുന്നതായി അറബി പേജ് 68 പറയുന്നു. ചൊല്ലേണ്ട സ്ഥിരദുആയുടെ വാക്കുകൾ ആ വാക്യം നിർദേശിക്കുന്നില്ല; പുതിയ വാക്യം സൃഷ്ടിച്ചിട്ടില്ല."
           ],
           "en": [
             "Read the name one thousand times at night.",
-            "After every hundred, request redress against the oppressor. The exact Arabic request is unverified."
+            "Arabic page 68 describes assigning a charge for redress after each hundred. It does not prescribe fixed spoken words; no prayer wording is invented."
           ]
-        }
+        },
+        "source_pages": [
+          68
+        ]
+      },
+      {
+        "method_id": "arabic-bread-release-21",
+        "source_entry": "manba-p68-turan-bread-21",
+        "title": {
+          "ml": "അപ്പത്തിലെ 21 എഴുത്തുകൾ — അറബി പതിപ്പിലെ പൂർണ്ണവാക്യം",
+          "en": "Twenty-one bread inscriptions — sentence in the Arabic printing"
+        },
+        "benefit": {
+          "ml": "മോചനം ലഭിക്കുമെന്ന ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+          "en": "The book’s claim of release."
+        },
+        "steps": {
+          "ml": [
+            "അറബി പതിപ്പിലെ ചരിത്രക്രമം അപ്പത്തിലോ കഅ്‌കയിലോ പേര് 21 തവണ എഴുതി തടവുകാരന് നൽകുന്നതാണ്.",
+            "തടവുകാരൻ അത് രണ്ടു ഭാഗങ്ങളാക്കുകയും രണ്ട് ആളുകളും ഓരോ പകുതി വീതം കഴിക്കുകയും ചെയ്യുന്നതായി വാക്യം പറയുന്നു.",
+            "ഇത് ചരിത്രത്തിലെ ഫലാവകാശവാദമാണ്; എഴുതിയ വസ്തു കഴിക്കാനുള്ള നിർദേശമല്ല. എഴുത്തുവസ്തുവും ദിവസവും സമയവും വാക്യം നൽകുന്നില്ല."
+          ],
+          "en": [
+            "The Arabic edition describes twenty-one name inscriptions on bread or a cake, given to a prisoner.",
+            "The prisoner divides it in two and two people each eat half, according to the sentence.",
+            "This is a historical outcome claim, not ingestion advice. Writing substance, day and time are not specified."
+          ]
+        },
+        "source_pages": [
+          68
+        ]
       }
     ],
     "method_id": "hnk-mhc-004-purpose-001",

@@ -35,6 +35,7 @@ export function sourceCountLabel(countKind, language = 'ml') {
     case 'written':
     case 'written_count': return ml ? 'ഉറവിടത്തിലെ എഴുത്തിന്റെ എണ്ണം' : 'Source inscription count';
     case 'abjad': return ml ? 'അബ്ജദ് മൂല്യം (പാരായണസംഖ്യയല്ല)' : 'Abjad value (not a recitation count)';
+    case 'washing': return ml ? 'ഗ്രന്ഥത്തിലെ കഴുകൽ എണ്ണം (പാരായണസംഖ്യയല്ല)' : 'Source washing count (not a recitation count)';
     default: return ml ? 'ഉറവിടത്തിലെ എണ്ണം (തരം സ്ഥിരീകരിച്ചിട്ടില്ല)' : 'Count in source (kind not classified)';
   }
 }

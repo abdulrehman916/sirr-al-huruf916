@@ -7,7 +7,7 @@ import { build } from 'esbuild';
 import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
-assert.equal(collation.notes.length, 7);
+assert.equal(collation.notes.length, 8);
 for (const note of collation.notes) {
   assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
   assert.ok(fs.existsSync(`public${note.source_image}`));
@@ -44,6 +44,15 @@ const twelfth = collateBirhatiahChapter(JSON.parse(fs.readFileSync('content/sour
 assert.ok(twelfth.practices[0].arabic_original.includes('السلم السليماني'));
 assert.ok(!twelfth.practices[0].arabic_original.includes('السر السليماني'));
 assert.equal(twelfth.practices[0].count, null);
+for (const [cardId, practiceId, kind] of [['HNK-MHC-002', 'merchandise-11', 'inscription'], ['HNK-MHC-002', 'historical-eye-account-17', 'washing'], ['HNK-MHC-003', 'tin-13', 'inscription'], ['HNK-MHC-003', 'daily-70', 'recitation'], ['HNK-MHC-004', 'protection-five', 'inscription']]) {
+  const original = JSON.parse(fs.readFileSync('content/source-checked/' + cardId + '.json', 'utf8'));
+  const before = JSON.stringify(original);
+  const revised = collateBirhatiahChapter(original, collation);
+  assert.equal(revised.practices.find(entry => entry.id === practiceId).count_kind, kind);
+  assert.equal(revised.practices.find(entry => entry.id === practiceId).count, original.practices.find(entry => entry.id === practiceId).count);
+  assert.equal(JSON.stringify(original), before);
+}
+assert.equal(collation.notes.find(entry => entry.id === 'manba-p68-turan-bread-21').count, 21);
 assert.equal(Object.keys(guides).length, 28);
 const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
 assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
