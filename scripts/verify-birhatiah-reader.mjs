@@ -7,7 +7,7 @@ import { build } from 'esbuild';
 import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
-assert.equal(collation.notes.length, 14);
+assert.equal(collation.notes.length, 18);
 for (const note of collation.notes) {
   assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
   assert.ok(fs.existsSync(`public${note.source_image}`));
@@ -140,6 +140,14 @@ for (const [id, guide] of Object.entries(guides)) {
       assert.ok(html.includes(`/figures/birhatiah-manba-p${printedPage}.png`));
     }
     const primary = html.slice(0, split);
+    const ringCards = ['HNK-MHC-005', 'HNK-MHC-006', 'HNK-MHC-007', 'HNK-MHC-008', 'HNK-MHC-009', 'HNK-MHC-010'];
+    assert.equal(primary.includes('data-source-entry="manba-p70-six-name-iron-ring"'), ringCards.includes(id), 'Six-name ring account must appear on exactly its six related cards');
+    if (ringCards.includes(id)) assert.ok(primary.includes('مزجل بزجل ترقب برهش غلمش خوطير'));
+    if (id === 'HNK-MHC-010') {
+      for (const entry of ['manba-p70-wolf-skin-pronoun', 'manba-p70-animal-pronoun', 'manba-p70-well-cloves']) assert.ok(primary.includes('data-source-entry="' + entry + '"'));
+      assert.ok(primary.includes(language === 'ml' ? 'ഗ്രാമ്പൂ' : 'clove incense'));
+      assert.ok(!primary.includes('carnation incense'), 'Cloves must not be mistranslated as carnation');
+    }
     assert.ok(primary.indexOf('data-reader-section="formula"') < primary.indexOf('data-reader-section="method"'));
     assert.ok(!primary.includes('data-reader-section="references"'));
     assert.ok(!primary.includes('28 പേരുകൾക്കുള്ള സംയുക്തവും അനുബന്ധവുമായ ഗ്രന്ഥവിവരങ്ങൾ'));

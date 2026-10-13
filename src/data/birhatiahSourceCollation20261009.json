@@ -357,6 +357,111 @@
       "review_status": "checked_against_scan",
       "count": 70,
       "count_kind": "inscription"
+    },
+    {
+      "id": "manba-p70-six-name-iron-ring",
+      "related_name_ids": [
+        "HNK-MHC-005",
+        "HNK-MHC-006",
+        "HNK-MHC-007",
+        "HNK-MHC-008",
+        "HNK-MHC-009",
+        "HNK-MHC-010"
+      ],
+      "title": {
+        "ml": "ഇരുമ്പുമോതിരത്തിലെ ആറുനാമപ്പാഠം",
+        "en": "Six-name inscription on an iron ring"
+      },
+      "arabic_original": "ومن نقش مزجل بزجل ترقب برهش غلمش خوطير على خاتم حديد ساعته ويومه وتختم به أحد ممن يعاني الرمى أو الضرب بالسيف أعطاه الله تعالى قوة فيما يعانيه وفاق على أقرانه في ذلك الفن",
+      "translation": {
+        "ml": "മസ്‌ജൽ, ബസ്‌ജൽ, തർഖബ്, ബർഹശ്, ഗൽമശ്, ഖൂതീർ എന്നീ ആറു പേരുകൾ ഇരുമ്പുമോതിരത്തിൽ അതിന്റെ ദിവസത്തിലും മണിക്കൂറിലും കൊത്തി, അമ്പെയ്ത്തോ വാൾപ്രയോഗമോ ചെയ്യുന്നയാൾ ധരിക്കുന്നതിനെ കഴിവും ശക്തിയും വർധിക്കുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു.",
+        "en": "The book describes engraving Mazjal, Bazjal, Tarqab, Barhash, Ghalmash and Khutir on an iron ring on its day and hour, worn by someone practising archery or swordsmanship. Increased ability and strength are the book’s claims."
+      },
+      "scope_note": {
+        "ml": "«ساعته ويومه» എന്നാണ് വാക്യം. ആഴ്ചയിലെ ദിവസമോ ഘടികാരമണിക്കൂറോ ഈ വാക്യം തിരിച്ചറിയുന്നില്ല. ആറു പേരുകളുടെ അക്ഷരങ്ങൾ പേജിൽനിന്നുള്ളവയാണ്; കാണാത്ത ഹറകത്ത് ചേർത്തിട്ടില്ല.",
+        "en": "The sentence says “its hour and day” without identifying a weekday or clock hour. The six printed names are retained without supplying unprinted vowels."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan",
+      "timing": {
+        "ml": "അതിന്റെ ദിവസവും മണിക്കൂറും; ഏതാണ് എന്ന് ഈ വാക്യത്തിൽ പറയുന്നില്ല.",
+        "en": "Its day and hour; their identities are not specified in this sentence."
+      }
+    },
+    {
+      "id": "manba-p70-wolf-skin-pronoun",
+      "related_name_ids": [
+        "HNK-MHC-010"
+      ],
+      "title": {
+        "ml": "ചെന്നായ്തോൽ പരാമർശം — മൂലവാക്യത്തിലെ സർവനാമം",
+        "en": "Wolf-skin account — pronoun in the original"
+      },
+      "arabic_original": "ومن كتبها على جلد ذئب مدبوغ ودفنه تحت عتبة دار أو مدينة لم يدخل من ذلك الباب كلب ما دام الجلد مدفونا",
+      "translation": {
+        "ml": "സംസ്കരിച്ച ചെന്നായ്തോലിൽ “അവ” എഴുതി വീടിന്റെയോ നഗരത്തിന്റെയോ വാതിൽപ്പടിക്കടിയിൽ കുഴിച്ചിട്ടാൽ, തോൽ അവിടെയുള്ളിടത്തോളം ആ വാതിലിലൂടെ നായ കടക്കില്ലെന്നാണ് ഗ്രന്ഥത്തിന്റെ അവകാശവാദം.",
+        "en": "The book claims that inscribing “them” on tanned wolf skin and burying it beneath a house or city threshold keeps dogs from passing through that doorway while the skin remains buried."
+      },
+      "scope_note": {
+        "ml": "«كتبها» എന്ന സർവനാമമാണ് മൂലത്തിൽ. ഈ വാക്യം പേരുകളുടെ പട്ടിക വീണ്ടും നൽകുന്നില്ല; ഏത് മുഴുവൻ പട്ടികയാണെന്നു തീർച്ചപ്പെടുത്തി പുതിയ എഴുത്തുപാഠം ഉണ്ടാക്കിയിട്ടില്ല. എണ്ണമോ ദിവസമോ മണിക്കൂറോ പറയുന്നില്ല.",
+        "en": "The original uses the pronoun كتبها rather than repeating a name list. Its full referent is not replaced with an invented inscription. No count, day or hour is stated."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p70-animal-pronoun",
+      "related_name_ids": [
+        "HNK-MHC-010"
+      ],
+      "title": {
+        "ml": "മൃഗത്തെക്കുറിച്ചുള്ള ചരിത്രവിവരണം — മൂലവാക്യം",
+        "en": "Historical animal account — original sentence"
+      },
+      "arabic_original": "ومن كتبها في إناء طاهر ومحاها بماء طاهر وسقاها للدابة الممغولة برئت في الحال",
+      "translation": {
+        "ml": "ശുദ്ധപാത്രത്തിൽ “അവ” എഴുതുകയും ശുദ്ധവെള്ളത്തിൽ കഴുകിയെടുക്കുകയും അസുഖമുള്ള മൃഗത്തിന് നൽകുകയും ചെയ്താൽ ഉടൻ ഭേദമാകുമെന്നാണ് ഗ്രന്ഥത്തിന്റെ ചരിത്രവിവരണം. ഇത് മൃഗചികിത്സയോ എഴുത്തുവസ്തു കുടിപ്പിക്കാനുള്ള നിർദേശമോ അല്ല.",
+        "en": "The historical sentence claims immediate recovery after an inscription in a clean vessel is washed with clean water and given to an afflicted animal. It is not veterinary or ingestion advice."
+      },
+      "scope_note": {
+        "ml": "«كتبها» എന്ന സർവനാമമാണ് ഇവിടെ; പേരുകളുടെ പട്ടിക ഈ വാക്യത്തിൽ ആവർത്തിക്കുന്നില്ല. രോഗപദത്തെ ആധുനിക രോഗനിർണയമായി അവതരിപ്പിക്കുന്നില്ല. എണ്ണവും സമയവും എഴുത്തുവസ്തുവും നിർദേശിച്ചിട്ടില്ല.",
+        "en": "The sentence uses كتبها without repeating the names. Its illness term is not converted into a modern diagnosis. Count, timing and writing substance are not specified."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p70-well-cloves",
+      "related_name_ids": [
+        "HNK-MHC-010"
+      ],
+      "title": {
+        "ml": "കിണർ സംബന്ധിച്ച ചരിത്രവിവരണം — ഗ്രാമ്പൂ എന്ന പദം",
+        "en": "Historical well account — identification of cloves"
+      },
+      "arabic_original": "ومن نقش مزجل بزجل ترقب برهش غلمش خوطير على طابع رصاص أسود أول ساعة من يوم السبت مع قوله تعالى وإنا على ذهاب به لقادرون وبخره بقرنفل ودلاه في بئر بخيط صوف أسود غار ماؤه بإذن الله تعالى",
+      "translation": {
+        "ml": "ആറു പേരുകളും ഖുർആനിലെ «وإنا على ذهاب به لقادرون» എന്ന ഭാഗവും കറുത്ത ഈയമുദ്രയിൽ ശനിയാഴ്ച ആദ്യ മണിക്കൂറിൽ കൊത്തിയതിനെക്കുറിച്ചുള്ള ചരിത്രവിവരണമാണ്. «قرنفل» ഗ്രാമ്പൂ എന്നാണ്. ഗ്രാമ്പൂധൂപം, കറുത്ത കമ്പിളിനൂൽ, കിണർ എന്നിവയെ വെള്ളം താഴുമെന്ന അവകാശവാദവുമായി ഗ്രന്ഥം ബന്ധിപ്പിക്കുന്നു.",
+        "en": "This historical account describes six names and the Quran phrase وإنا على ذهاب به لقادرون on a black lead seal in Saturday’s first hour. قرنفل means cloves. Clove incense, black wool thread and a well appear in the book’s claim of the water receding."
+      },
+      "scope_note": {
+        "ml": "ആയത്ത് ഭാഗം 23:18-ൽ നിന്നുള്ളതാണ്. «قرنفل» എന്നത് carnation അല്ല, cloves ആണ്. ചരിത്രവിവരണം രേഖപ്പെടുത്തുന്നതാണ്; ഈയം കുടിവെള്ളത്തിൽ ഇടാനുള്ള പ്രായോഗിക നിർദേശമല്ല.",
+        "en": "The verse excerpt is from 23:18. قرنفل is cloves, not carnation. This documents a historical claim rather than providing instructions to contaminate drinking water."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan",
+      "timing": {
+        "ml": "ശനിയാഴ്ച ആദ്യ മണിക്കൂർ എന്നാണ് മൂലത്തിൽ; ആധുനിക ഘടികാരസമയം പറഞ്ഞിട്ടില്ല.",
+        "en": "The source says the first hour of Saturday, without an equivalent modern clock time."
+      }
     }
   ],
   "practice_provenance_corrections": [

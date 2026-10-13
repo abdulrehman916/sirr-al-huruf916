@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-10-13",
+  "base_commit": "98251c9ddaab32fd04498c1551d497c3945c9ea7",
+  "scope": "Four further original clauses on printed Arabic page 70: iron ring, wolf-skin pronoun, animal pronoun, and well account. The source image was inspected at full size and with an enlarged diagnostic crop.",
+  "new_source_notes": 4,
+  "purpose_blocks_after_change": 100,
+  "source_scope": {
+    "six_name_ring": [
+      "HNK-MHC-005",
+      "HNK-MHC-006",
+      "HNK-MHC-007",
+      "HNK-MHC-008",
+      "HNK-MHC-009",
+      "HNK-MHC-010"
+    ],
+    "other_three_clauses": [
+      "HNK-MHC-010"
+    ]
+  },
+  "findings": [
+    "The iron-ring clause prints six names but does not identify the weekday or clock hour behind its day and hour.",
+    "The wolf-skin and animal clauses use a pronoun rather than repeating a name list; no full referent is invented.",
+    "The well account names cloves (قرنفل), not carnation, and cites the final phrase of Quran 23:18. It is documented as a historical source claim."
+  ],
+  "preserved": [
+    "Original name/card values and calculation core",
+    "Distinct English edition accounts",
+    "Original full page images",
+    "Unknown vowels and unstated count/time remain unfilled by inference"
+  ],
+  "limits": [
+    "This pass does not constitute a full transcription of collective supplementary pages 75–90.",
+    "The first/fifth Tahatil spellings remain uncertain in the available image; an outside witness stays separately labelled.",
+    "Inaccessible external sources were not newly verified."
+  ]
+}
