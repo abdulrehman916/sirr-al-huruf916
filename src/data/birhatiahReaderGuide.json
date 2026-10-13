@@ -775,12 +775,12 @@
           "ml": [
             "പേര് ഏഴ് തവണയും എട്ട് Tahatil നാമങ്ങളും പാത്രത്തിൽ എഴുതുക എന്നതാണ് ചരിത്രരീതിയുടെ തുടക്കം.",
             "കഴുകിയ എഴുത്ത് ഏഴ് ദിവസങ്ങളിൽ ഏഴ് തവണ കുടിപ്പിക്കൽ, മാസമുറ കഴിഞ്ഞുള്ള അവസ്ഥ, ദാമ്പത്യബന്ധം എന്നിവയാണ് മറ്റു ഘട്ടങ്ങൾ.",
-            "Tahatil നാമങ്ങളുടെ കൃത്യമായ അറബി പാഠം സ്ഥിരീകരിക്കാനുണ്ട്. ഇത് വന്ധ്യതാ ചികിത്സയ്ക്കോ കുടിക്കാനുള്ള നിർദേശത്തിനോ ഉപയോഗിക്കരുത്."
+            "എട്ട് നാമങ്ങളുടെ പുറംപാഠവും മൂലപേജും ഈ രീതിക്കുള്ളിൽ കാണാം. പതിപ്പിലെ അക്ഷരങ്ങൾ കലർത്തിയിട്ടില്ല. ഇത് വന്ധ്യതയ്ക്കുള്ള ചികിത്സയോ കഴുകിയ എഴുത്ത് കുടിപ്പിക്കാനുള്ള നിർദേശമോ അല്ല."
           ],
           "en": [
             "The historical method begins with seven inscriptions of the name and eight Tahatil names in a vessel.",
             "Other historical elements are ingestion seven times over seven days, the period after menstruation, and marital intercourse.",
-            "The exact Arabic Tahatil list remains unverified. Do not use this as fertility treatment or ingestion advice."
+            "The outside eight-name reading and original page are displayed inside this method, without merging spellings across editions. This is not infertility treatment or an ingestion recommendation."
           ]
         },
         "source_pages": [
@@ -789,6 +789,18 @@
         "scan_caption": {
           "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
           "en": "Original Arabic-edition page — printed names and symbols"
+        },
+        "written_text": {
+          "arabic": "للطهطيل مهطهطيل قهطيطيل فهطيطيل نههططيل جهلططيس لخهططيل لمقفنجل",
+          "translation": {
+            "ml": "പുറംപോസ്റ്റിലെ എട്ട് തഹാതീൽ നാമങ്ങളുടെ അക്ഷരരൂപം. മൂലഗ്രന്ഥത്തിലെ പതിപ്പായി കലർത്തിയിട്ടില്ല; അർത്ഥമോ ഹരക്കത്തോ ഊഹിച്ചിട്ടില്ല.",
+            "en": "The outside post’s eight Tahatil spellings, kept apart from the book printing without invented meanings or vowels."
+          },
+          "source": {
+            "title": "الفخرانى الرفاعى — عزيمة البرهتية الصحيحة",
+            "url": "https://alrefaee.forumegypt.net/t712-%D8%B9%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9",
+            "checked_on": "2026-10-13"
+          }
         }
       },
       {
@@ -930,15 +942,15 @@
       "ml": [
         "തർഖബ്, ബർഹശ് എന്നീ രണ്ടു പേരുകളും ചേർത്ത് 1209 തവണ വായിക്കുന്ന രീതിയാണിത്.",
         "സമയം: അർദ്ധരാത്രി. ധൂപം: അഗർവുഡ്, കുന്തിരിക്കം.",
-        "ഓരോ നൂറിനുശേഷവും പറയേണ്ട അധിക നിർദേശത്തിന്റെ പൂർണ്ണവാക്കുകൾ ഉറപ്പിച്ചിട്ടില്ല; ഈ ഭാഗം മാത്രം പൂർണ്ണരീതിയല്ല."
+        "ഓരോ നൂറിനുശേഷവും ഉദ്ദേശിച്ച വ്യക്തിയെ എത്തിക്കാനുള്ള ചുമതല നൽകണമെന്ന് പുറംപോസ്റ്റ് പറയുന്നു. അതിനായി ചൊല്ലേണ്ട സ്ഥിരമായ വാക്യം അത് നൽകിയിട്ടില്ല; ഇവിടെ പുതിയ ദുആ ഉണ്ടാക്കി ചേർത്തിട്ടില്ല."
       ],
       "en": [
         "This method pairs Tarqab and Barhash for 1,209 readings.",
         "Midnight and agarwood–frankincense incense are specified.",
-        "The complete additional instruction after every hundred is not established here; this is not a complete procedure on its own."
+        "After each hundred the outside post says to give the charge to bring the intended person. It supplies no fixed wording for that charge, so no new prayer is composed here."
       ]
     },
-    "source_entry": "combined-recitation",
+    "source_entry": "outside-2017-barhash-every-hundred",
     "formula_arabic": "تَرْقَبٍ بَرْهَشٍ",
     "method_id": "hnk-mhc-008-purpose-001",
     "other_methods": [
@@ -973,7 +985,15 @@
           "en": "Original Arabic-edition page — printed names and symbols"
         }
       }
-    ]
+    ],
+    "source_pages": [
+      69
+    ],
+    "external_source": {
+      "title": "الفخرانى الرفاعى — عزيمة البرهتية الصحيحة",
+      "url": "https://alrefaee.forumegypt.net/t712-%D8%B9%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9",
+      "checked_on": "2026-10-13"
+    }
   },
   "HNK-MHC-009": {
     "title": {
@@ -1267,7 +1287,7 @@
       },
       {
         "method_id": "paired-palm",
-        "source_entry": "english-extended-010",
+        "source_entry": "manba-p70-khutir-khutish-palm",
         "title": {
           "ml": "സഹായിയുടെ അനുസരണത്തിനുള്ള കൈപ്പത്തി എഴുത്ത്",
           "en": "Palm inscription for a helper’s obedience"
@@ -1278,14 +1298,20 @@
         },
         "steps": {
           "ml": [
-            "കൈപ്പത്തിയിൽ രണ്ടു പേരുകൾ എഴുതി വായിക്കുന്നതാണ് രീതി.",
-            "ആ രണ്ടു പേരുകളുടെ കൃത്യമായ അറബി പാഠം സ്ഥിരീകരിക്കാനുണ്ട്; പകരം ഊഹിച്ച പേരുകൾ നൽകിയിട്ടില്ല."
+            "ഗ്രന്ഥത്തിലെ പരാമർശം കൈപ്പത്തിയിൽ «خوطير», «خوطيش» എന്നീ രണ്ട് പേരുകളും എഴുതുന്നതാണ്.",
+            "തുടർന്ന് രണ്ട് പേരുകളും വായിച്ച് കൈകൊണ്ട് ആവശ്യപ്പെട്ട വ്യക്തിയെ സൂചിപ്പിക്കുന്നതായി വാക്യം പറയുന്നു.",
+            "ഈ വാക്യത്തിൽ എണ്ണം, ദിവസം, സമയം, എഴുത്തുവസ്തു എന്നിവ പറയുന്നില്ല. അനുസരണവും ആവശ്യം നിറവേറലും ഗ്രന്ഥത്തിന്റെ ഫലാവകാശവാദങ്ങളാണ്."
           ],
           "en": [
-            "The method writes and reads two names on the palm.",
-            "The exact Arabic pair remains unverified; conjectural names are not substituted."
+            "The source account describes writing خوطير and خوطيش on the palm.",
+            "It then describes reading both and gesturing toward the intended person.",
+            "The sentence states no count, day, time or writing material. Compliance and fulfilment are the book’s outcome claims."
           ]
-        }
+        },
+        "formula_arabic": "خوطير خوطيش",
+        "source_pages": [
+          70
+        ]
       }
     ],
     "method_id": "hnk-mhc-010-purpose-001"
@@ -1325,12 +1351,12 @@
         "steps": {
           "ml": [
             "ഈ പേരിന്റെ 20 വായനകളും amber skin, benzoin, കുന്തിരിക്കം, liquid storax എന്നീ ധൂപങ്ങളും ആണ് ആദ്യഘട്ടം.",
-            "വിടുന്നില്ലെങ്കിൽ 28 പേരുകളും ഏഴ് തവണ വായിക്കുക; തുടർന്ന് എഴുത്ത് തൂക്കുക എന്നാണ് തുടർക്രമം. ആ എഴുത്തിന്റെ പൂർണ്ണ രൂപം ഈ ഖണ്ഡത്തിൽ ലഭ്യമല്ല.",
+            "തുടർന്ന് 28 പേരുകളും ഏഴ് തവണ വായിക്കുകയും ഒരു എഴുത്ത് തയ്യാറാക്കി തൂക്കുകയും ചെയ്യുന്നതായി ഗ്രന്ഥം പറയുന്നു. ആ എഴുത്തിൽ ഏത് പാഠമോ രൂപമോ ഉപയോഗിക്കണമെന്ന് ഈ വാക്യം നിർദേശിക്കുന്നില്ല.",
             "Fits സംബന്ധിച്ച ഈ ചരിത്രരീതി ചികിത്സയ്ക്ക് പകരമല്ല."
           ],
           "en": [
             "The first stage specifies twenty readings with amber skin, benzoin, frankincense and liquid storax incense.",
-            "The next stage is seven readings of all twenty-eight names and an attached inscription. The full inscription is absent from this passage.",
+            "The source next describes seven readings of all twenty-eight names and preparing an attached inscription. This sentence does not specify the inscription’s text or shape.",
             "This historical method is not a treatment for seizures."
           ]
         },
@@ -1351,12 +1377,14 @@
     },
     "steps": {
       "ml": [
-        "തകരമോതിരത്തിൽ പേരും സുലൈമാനീ രഹസ്യവും എഴുതുന്നതാണ് രീതി.",
-        "സുലൈമാനീ പാഠത്തിന്റെ പൂർണ്ണരൂപം ഈ ഭാഗത്ത് ലഭ്യമല്ല; അതിനാൽ ഇത് പൂർണ്ണമായി ചെയ്യാവുന്ന ക്രമമായി നൽകിയിട്ടില്ല."
+        "ഗ്രന്ഥം പറയുന്ന ക്രമം: തകരമോതിരത്തിൽ ഈ നാമവും «السلم السليماني» എന്ന സുലൈമാനി സുൽലവും എഴുതുക.",
+        "അത് കൈവശം വച്ച് ആവശ്യത്തിനായി പുറപ്പെടുന്നതിനെ ഗ്രന്ഥം ആവശ്യം നിറവേറുമെന്ന അവകാശവാദവുമായി ബന്ധിപ്പിക്കുന്നു.",
+        "സുൽലമിന്റെ ചിത്രം, എണ്ണം, ദിവസം, സമയം എന്നിവ ഈ വാക്യം നൽകുന്നില്ല. «السلم» എന്ന അച്ചടിവാക്കിനെ «السر» എന്നാക്കി മാറ്റിയിട്ടില്ല."
       ],
       "en": [
-        "The method involves writing the name with the Sulaymani secret on a tin ring.",
-        "The complete Sulaymani formula is absent from this passage, so this is not presented as a complete procedure."
+        "The source describes writing this name on a tin ring together with the Sulaymani sullam (السلم السليماني).",
+        "It links carrying it while setting out for a need with a claim of fulfilment.",
+        "This sentence supplies no drawing, count, day or time. The printed word السلم is not replaced with السر."
       ]
     },
     "source_entry": "checked-account",
@@ -1387,7 +1415,10 @@
         "formula_arabic": "قَلْنَهُودٍ بَرْشَانٍ"
       }
     ],
-    "method_id": "hnk-mhc-012-purpose-001"
+    "method_id": "hnk-mhc-012-purpose-001",
+    "source_pages": [
+      70
+    ]
   },
   "HNK-MHC-013": {
     "title": {

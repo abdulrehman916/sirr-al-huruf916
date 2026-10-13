@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-13",
   "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "review_basis": "Direct visual collation of bundled printed pages 67–69; selected passages, not full chapter completion.",
+  "review_basis": "Direct visual collation of bundled printed pages 67–70, with separately labelled readings from the 2017 outside post. Selected source checks; attribution and edition differences are retained.",
   "notes": [
     {
       "id": "manba-p68-turan-karir-pair",
@@ -107,6 +107,82 @@
       "printed_page": 67,
       "source_image": "/figures/birhatiah-manba-p67.png",
       "review_status": "checked_against_scan"
+    },
+    {
+      "id": "outside-2017-tahatil-eight",
+      "related_name_ids": [
+        "HNK-MHC-005"
+      ],
+      "title": {
+        "ml": "എട്ട് തഹാതീൽ നാമങ്ങൾ — പുറംപോസ്റ്റിലെ പാഠം",
+        "en": "Eight Tahatil names — outside-post reading"
+      },
+      "arabic_original": "للطهطيل مهطهطيل قهطيطيل فهطيطيل نههططيل جهلططيس لخهططيل لمقفنجل",
+      "translation": {
+        "ml": "പുറംപോസ്റ്റ് നൽകിയ എട്ട് നാമങ്ങൾ അതിന്റെ അക്ഷരരൂപത്തിൽ മുകളിൽ കാണാം. ആദ്യ നാമത്തിന്റെയും അഞ്ചാം നാമത്തിന്റെയും അക്ഷരങ്ങൾ അറബി പേജ് 68-ലെ ചിത്രവുമായി വീണ്ടും താരതമ്യം ചെയ്യേണ്ട പതിപ്പുഭേദങ്ങളാണ്; പുറംപാഠം മൂലഗ്രന്ഥത്തിന്റെ ഉറപ്പിച്ച പകർപ്പായി അവതരിപ്പിക്കുന്നില്ല. ഈ പദങ്ങൾക്ക് ഊഹിച്ച മലയാള പദാർത്ഥമോ ഹരക്കത്തോ നൽകിയിട്ടില്ല.",
+        "en": "The eight names are retained above in the post’s spelling. The first and fifth spellings require comparison with the image on Arabic page 68; this outside reading is not presented as a verified transcription of that printing. No Malayalam lexical meanings or vowels are invented."
+      },
+      "scope_note": {
+        "ml": "ഇത് നാമപ്പട്ടികയ്ക്കുള്ള പുറംപാഠസാക്ഷിയാണ്. ഗർഭധാരണവുമായി ബന്ധപ്പെട്ട ചരിത്രവിവരണത്തിന്റെ ചികിത്സാഫലം സ്ഥിരീകരിക്കുന്നില്ല; കഴുകിയ എഴുത്ത് കുടിപ്പിക്കാൻ നിർദേശിക്കുന്നില്ല.",
+        "en": "This is an outside textual witness to the name list, not verification of medical effects or advice to ingest washed inscriptions."
+      },
+      "source_title": "الفخرانى الرفاعى — عزيمة البرهتية الصحيحة",
+      "source_url": "https://alrefaee.forumegypt.net/t712-%D8%B9%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9",
+      "source_image": "/figures/birhatiah-manba-p68.png",
+      "review_status": "checked_against_digital_text"
+    },
+    {
+      "id": "outside-2017-barhash-every-hundred",
+      "related_name_ids": [
+        "HNK-MHC-007",
+        "HNK-MHC-008"
+      ],
+      "title": {
+        "ml": "ഓരോ നൂറിനുശേഷമുള്ള ചുമതല — പുറംപോസ്റ്റിലെ നിർദേശം",
+        "en": "Charge after each hundred — outside-post instruction"
+      },
+      "arabic_original": "وكل عقب كل مائة بجلب من أراد",
+      "translation": {
+        "ml": "ഈ വാക്യഭാഗത്തിന്റെ അർത്ഥം: “ഓരോ നൂറിനുശേഷവും, താൻ ഉദ്ദേശിക്കുന്ന വ്യക്തിയെ എത്തിക്കുന്ന ചുമതല നൽകുക.” ഇത് തർഖബ്–ബർഹശ് സംയുക്തപരാമർശത്തിലെ നിർദേശമാണ്; പ്രത്യേകം അച്ചടിച്ച ഒരു സ്ഥിരദുആയുടെ വാക്കുകളല്ല. മുഖ്യ എണ്ണമായി 1209, സമയമായി അർദ്ധരാത്രി, ധൂപമായി അഗിലും കുന്തിരിക്കവും അതേ പോസ്റ്റ് പറയുന്നു.",
+        "en": "The clause means: “After each hundred, give the charge to bring the intended person.” It belongs to the Tarqab–Barhash paired account, not to a separately printed fixed prayer. The same post specifies 1,209 as the main count, midnight as the time, and aloeswood and frankincense as incense."
+      },
+      "count": 1209,
+      "count_kind": "recitation",
+      "timing": {
+        "ml": "അർദ്ധരാത്രി; ഏഴാം–എട്ടാം നാമങ്ങളുടെ കൂട്ടത്തിനാണ്.",
+        "en": "Midnight; applies to the seventh/eighth-name pair."
+      },
+      "scope_note": {
+        "ml": "ഇവ പുറംപോസ്റ്റിലെ പരമ്പരാഗത അവകാശവാദങ്ങളാണ്. ആവശ്യപ്പെട്ട വ്യക്തി എത്തുമെന്ന ഫലം ഉറപ്പിക്കുന്നില്ല. സ്ഥിരമായ അഭ്യർഥനാവാക്യം ഊഹിച്ച് പൂരിപ്പിച്ചിട്ടില്ല.",
+        "en": "These are the post’s traditional claims, without a guaranteed result. No fixed spoken petition is reconstructed."
+      },
+      "source_title": "الفخرانى الرفاعى — عزيمة البرهتية الصحيحة",
+      "source_url": "https://alrefaee.forumegypt.net/t712-%D8%B9%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9",
+      "source_image": "/figures/birhatiah-manba-p69.png",
+      "review_status": "checked_against_digital_text"
+    },
+    {
+      "id": "manba-p70-khutir-khutish-palm",
+      "related_name_ids": [
+        "HNK-MHC-010"
+      ],
+      "title": {
+        "ml": "ഖൂത്വീർ–ഖൂത്വീശ് — മൂലപേജിലെ കൈപ്പത്തി പരാമർശം",
+        "en": "Khutir–Khutish — palm account in the source image"
+      },
+      "arabic_original": "ومن كتب خوطير مع خوطيش في كفه وتلاهما وأشار بيده إلى أي أحد انقاد إليه وأطاعه وقضى حاجته",
+      "translation": {
+        "ml": "മൂലവാക്യത്തിന്റെ അർത്ഥം: “ഖൂത്വീറിനൊപ്പം ഖൂത്വീശ് കൈപ്പത്തിയിൽ എഴുതി രണ്ടും വായിച്ച്, കൈകൊണ്ട് ആരെയെങ്കിലും സൂചിപ്പിച്ചാൽ, അയാൾ അനുസരിക്കുകയും ആവശ്യത്തെ നിറവേറ്റുകയും ചെയ്യുമെന്നാണ്” ഗ്രന്ഥം പറയുന്നത്. രണ്ടാമത്തെ പേര് ഇവിടെ «خوطيش» എന്നാണ്; അനുമാനിച്ച് മറ്റൊരു നാമമാക്കിയിട്ടില്ല.",
+        "en": "The sentence claims that someone who writes Khutir together with Khutish on the palm, reads both and gestures toward a person obtains that person’s compliance and fulfilment of the need. The second printed word is خوطيش; it is not replaced with a conjectural name."
+      },
+      "scope_note": {
+        "ml": "അറബി പേജ് 70-ലെ തെരഞ്ഞെടുത്ത വാക്യം നേരിട്ട് ഒത്തുനോക്കിയത്. അച്ചടിയിൽ ഈ രണ്ട് പദങ്ങൾക്ക് പൂർണ്ണ ഹരക്കത്തില്ല. നിശ്ചിത എണ്ണം, ദിവസം, സമയം, എഴുത്തുവസ്തു എന്നിവ ഈ വാക്യത്തിൽ പറയുന്നില്ല. ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "Selected sentence visually checked on Arabic page 70. The pair is not fully vowelled in this printing. No fixed count, day, time or writing material is specified. The outcome is a source claim."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "source_image": "/figures/birhatiah-manba-p70.png",
+      "review_status": "checked_against_scan"
     }
   ],
   "practice_provenance_corrections": [
@@ -135,6 +211,22 @@
       "scope_note": {
         "ml": "2026-10-13-ന് മൂലചിത്രവുമായി ഒത്തുനോക്കിയ തിരുത്തൽ. നാമത്തിന്റെ നിലവിലെ അക്ഷരങ്ങളും Abjad കണക്കും മാറ്റിയിട്ടില്ല.",
         "en": "Visually rechecked on 2026-10-13. Stored name spelling and Abjad values are unchanged."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-012",
+      "practice_id": "checked-account",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 70,
+      "count_kind": null,
+      "arabic_original": "ومن خواصه أن من كتبه على خاتم قصدير مع السلم السليماني وتوجه به لحاجة قضيت بإذن الله تعالى",
+      "translation": {
+        "ml": "മൂലവാക്യത്തിന്റെ അർത്ഥം: “ഈ പേര് തകരമോതിരത്തിൽ സുലൈമാനി സുൽലമിനൊപ്പം എഴുതി ഒരു ആവശ്യത്തിനായി പുറപ്പെട്ടാൽ, അല്ലാഹുവിന്റെ അനുമതിയോടെ ആവശ്യം നിറവേറുമെന്നത് ഇതിന്റെ സവിശേഷതകളിൽപ്പെടുന്നു.” സുൽലം എന്നത് ഇവിടെ അച്ചടിച്ച പേരാണ്; «സിർറ്/രഹസ്യം» എന്ന മറ്റൊരു പദമാക്കി മാറ്റിയിട്ടില്ല. ഫലം ഗ്രന്ഥത്തിന്റെ അവകാശവാദമാണ്.",
+        "en": "The sentence claims that writing the name on a tin ring together with the Sulaymani sullam and setting out for a need brings fulfilment by God’s permission. The printed term is sullam, not sirr (“secret”); the source’s result remains a claim."
+      },
+      "scope_note": {
+        "ml": "പേജ് 70-ൽ «على خاتم» എന്നും «السلم السليماني» എന്നും അച്ചടിച്ചതാണ് നേരിട്ട് ഒത്തുനോക്കിയത്. സുൽലമിന്റെ ചിത്രം, നിശ്ചിത എഴുത്തെണ്ണം, ദിവസം, സമയം എന്നിവ ഈ വാക്യത്തിൽ നൽകുന്നില്ല; അവ ഊഹിച്ച് പൂരിപ്പിച്ചിട്ടില്ല.",
+        "en": "Page 70 prints على خاتم and السلم السليماني. This sentence supplies no drawing of the sullam, fixed inscription count, day or time; none is invented."
       }
     }
   ]
