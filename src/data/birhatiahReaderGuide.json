@@ -831,6 +831,18 @@
             "url": "https://alrefaee.forumegypt.net/t712-%D8%B9%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9",
             "checked_on": "2026-10-13"
           }
+        },
+        "figure": {
+          "image_path": "/figures/birhatiah-manba-p68.png",
+          "caption": {
+            "ml": "എട്ട് അധികനാമങ്ങളുടെ അച്ചടിരൂപം — പേജ് 68-ലെ അതേ ചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം. അക്ഷരങ്ങളോ ഹറകത്തോ പുനർനിർമിച്ചിട്ടില്ല.",
+            "en": "Eight additional names as printed — enlarged region of the same page-68 image, without reconstructed letters or vowels."
+          },
+          "crop": {
+            "view_box": "24 935 620 95",
+            "source_width": 669,
+            "source_height": 1056
+          }
         }
       },
       {
@@ -1085,12 +1097,12 @@
           "ml": [
             "റമദാനിന്റെ അവസാനം മഞ്ഞക്കടലാസിൽ പേര് 11 തവണ എഴുതുക.",
             "ചന്ദനധൂപവും മറ്റു ത്വൽസമുകളും ഉപയോഗിച്ച് മഞ്ഞക്കൊമ്പുകളുള്ള ഈന്തപ്പനയിൽ തൂക്കുക എന്നാണ് ചരിത്രക്രമം.",
-            "ത്വൽസമുകളുടെ മുഴുവൻ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല. അതിനോടൊപ്പം “അല്ലാഹുവിനെ ഭയപ്പെടുക” എന്നും അച്ചടിച്ചിട്ടുണ്ട്."
+            "വാക്കുകളായി മാറ്റിയെഴുതാതെ, അച്ചടിച്ച ത്വൽസമുകളുടെ മൂലചിത്രം ഈ രീതിക്കുള്ളിൽ വലുതായി നൽകിയിരിക്കുന്നു. പൂർണ്ണ മൂലപേജും താഴെയുണ്ട്. ഗ്രന്ഥം “അല്ലാഹുവിനെ ഭയപ്പെടുക” എന്നും മുന്നറിയിപ്പ് നൽകുന്നു."
           ],
           "en": [
             "The historical method uses eleven name inscriptions on yellow paper at the end of Ramadan.",
             "Its other elements are sandalwood incense, additional talismans and hanging it on a palm with yellow branches.",
-            "The full talisman text remains unverified. The passage also prints an admonition to fear God."
+            "The printed talisman marks are displayed here as an enlarged original image rather than converted into guessed words. The complete page follows. The book also admonishes the reader to fear God."
           ]
         },
         "source_pages": [
@@ -1099,6 +1111,18 @@
         "scan_caption": {
           "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
           "en": "Original Arabic-edition page — printed names and symbols"
+        },
+        "figure": {
+          "image_path": "/figures/birhatiah-manba-p69.png",
+          "caption": {
+            "ml": "പേജ് 69-ൽ അച്ചടിച്ച ത്വൽസമുകളുടെ മൂലരൂപം — ചിഹ്നങ്ങളുടെ എണ്ണം, ക്രമം, രേഖകൾ അതേപടി.",
+            "en": "Original talisman marks on page 69 — same count, order and strokes as the source image."
+          },
+          "crop": {
+            "view_box": "160 628 350 63",
+            "source_width": 640,
+            "source_height": 1040
+          }
         }
       },
       {
@@ -1232,12 +1256,12 @@
         "steps": {
           "ml": [
             "വെളുത്ത കടലാസിൽ പേര് വേർതിരിച്ച അക്ഷരങ്ങളായി 11 തവണ എഴുതുക.",
-            "മുദ്രയിൽ ഉൾപ്പെടുത്തി ലക്ഷ്യവ്യക്തിയുമായി ബന്ധപ്പെട്ട വസ്തു ധൂപമാക്കുക. മുദ്രയുടെ കൃത്യമായ പാഠം സ്ഥിരീകരിച്ചിട്ടില്ല.",
+            "ഒരു മുദ്ര ഇറക്കി അതുകൊണ്ട് ചുറ്റുകയും ലക്ഷ്യവ്യക്തിയുമായി ബന്ധപ്പെട്ട വസ്തു ധൂപമാക്കുകയും ചെയ്യുന്നതായി വാക്യം പറയുന്നു. ഈ വാക്യത്തോടൊപ്പം മുദ്രയുടെ ചിത്രം നൽകിയിട്ടില്ല; പുതിയ മുദ്ര വരച്ചിട്ടില്ല.",
             "പേരിലെ മേൽക്കോയ്മയുള്ള തത്ത്വം കണക്കാക്കിയശേഷം: അഗ്നിയെങ്കിൽ കത്തിക്കൽ; വായുവെങ്കിൽ കാറ്റിൽ തൂക്കൽ; ജലമെങ്കിൽ വെള്ളത്തിൽ ഇടൽ; ഭൂമിയെങ്കിൽ മണ്ണിൽ കുഴിച്ചിടൽ എന്നിങ്ങനെയാണ് ചരിത്രക്രമം. ആ കണക്കിന്റെ രീതി ഈ ഖണ്ഡത്തിൽ നൽകിയിട്ടില്ല."
           ],
           "en": [
             "Write the name eleven times in separated letters on white paper.",
-            "Include it in a seal and use an object associated with the intended person as incense. The exact seal is unverified.",
+            "The sentence mentions arranging a seal around the writing and incense associated with the intended person. It supplies no drawing of that seal alongside this clause; no diagram is invented.",
             "The historical sequence then uses the dominant element of the name: burning for fire, exposure to wind for air, water for water, or burial for earth. This passage does not provide the element-calculation method."
           ]
         },
@@ -1751,12 +1775,12 @@
           "ml": [
             "അസ്ഫാൾട്ടിന്റെ കഷണത്തിൽ ലക്ഷ്യവ്യക്തിയുടെ പേരും നിർദിഷ്ട നാമങ്ങളും നിശ്ചിത സ്ഥാനങ്ങളിൽ എഴുതുന്നതാണ് ചരിത്രരീതി.",
             "നാല് ആണികൾകൊണ്ട് നിലത്തോ കിഴക്കൻ മതിലിലോ ഉറപ്പിക്കുക; മല്ലിയും bdellium-വും ധൂപമാക്കി നാമങ്ങൾ വായിക്കുക എന്നാണ് തുടർക്രമം.",
-            "അപരിചിത നാമങ്ങളുടെ കൃത്യമായ പകർപ്പ് സ്ഥിരീകരിച്ചിട്ടില്ല. അവയുടെ അച്ചടിരൂപം താഴെയുള്ള മൂലപേജിൽ കാണാം."
+            "പേരിന്റെ മുകളിലെയും വലത്തെയും ഇടത്തെയും മധ്യത്തിലെയും സ്ഥാനങ്ങൾ മൂലവാക്യത്തിൽ കാണാം. അപരിചിത പദങ്ങൾക്ക് ഊഹിച്ച അർത്ഥമോ ഹറകത്തോ നൽകിയിട്ടില്ല; അവയുടെ അക്ഷരങ്ങൾ അതേ മൂലചിത്രത്തിൽ വലുതായി നൽകിയിരിക്കുന്നു."
           ],
           "en": [
             "The historical method positions the intended person’s name and specific names on a piece of asphalt.",
             "Its next elements are four nails fixing it to the ground or an eastern wall, coriander and bdellium incense, and reading the names.",
-            "The unfamiliar names are not reliably transcribed. Their printed form is visible on the original page below."
+            "The original shows the upper, right, left and central positions. Unfamiliar words receive no invented meanings or vowels; their printed letters are enlarged directly from the source image."
           ]
         },
         "source_pages": [
@@ -1765,6 +1789,18 @@
         "scan_caption": {
           "ml": "അറബി പതിപ്പിലെ മൂലപേജ് — അച്ചടിയിലെ നാമങ്ങളും ചിഹ്നങ്ങളും",
           "en": "Original Arabic-edition page — printed names and symbols"
+        },
+        "figure": {
+          "image_path": "/figures/birhatiah-manba-p71.png",
+          "caption": {
+            "ml": "അപരിചിത പദങ്ങളും അവയുടെ സ്ഥാനക്രമവും — പേജ് 71-ലെ അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം.",
+            "en": "Unfamiliar words and their positions — enlarged region of the original page-71 image."
+          },
+          "crop": {
+            "view_box": "20 385 600 125",
+            "source_width": 640,
+            "source_height": 1040
+          }
         }
       }
     ],

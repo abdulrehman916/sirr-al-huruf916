@@ -140,6 +140,9 @@ for (const [id, guide] of Object.entries(guides)) {
       assert.ok(html.includes(`/figures/birhatiah-manba-p${printedPage}.png`));
     }
     const primary = html.slice(0, split);
+    const focusedCards = ['HNK-MHC-005', 'HNK-MHC-008', 'HNK-MHC-014'];
+    assert.equal(primary.includes('data-source-image="focused-original"'), focusedCards.includes(id), 'Source-image enlargements must stay on their related cards');
+    if (id === 'HNK-MHC-009') assert.ok(primary.includes(language === 'ml' ? 'മുദ്രയുടെ ചിത്രം നൽകിയിട്ടില്ല' : 'supplies no drawing of that seal'));
     const ringCards = ['HNK-MHC-005', 'HNK-MHC-006', 'HNK-MHC-007', 'HNK-MHC-008', 'HNK-MHC-009', 'HNK-MHC-010'];
     assert.equal(primary.includes('data-source-entry="manba-p70-six-name-iron-ring"'), ringCards.includes(id), 'Six-name ring account must appear on exactly its six related cards');
     if (ringCards.includes(id)) assert.ok(primary.includes('مزجل بزجل ترقب برهش غلمش خوطير'));
@@ -186,6 +189,13 @@ for (const [id, guide] of Object.entries(guides)) {
     for (const method of guide.other_methods || []) assert.ok(primary.includes(`data-source-entry="${method.source_entry}"`));
     if (guide.spoken_request) assert.ok(primary.includes(guide.spoken_request.arabic));
     for (const method of allMethods) {
+      if (method.figure?.crop) {
+        const crop = method.figure.crop;
+        const [x,y,w,h] = crop.view_box.split(' ').map(Number);
+        assert.ok([x,y,w,h,crop.source_width,crop.source_height].every(Number.isFinite));
+        assert.ok(x >= 0 && y >= 0 && w > 0 && h > 0 && x+w <= crop.source_width && y+h <= crop.source_height, 'Enlargement must remain within the original page');
+        assert.ok(primary.includes('viewBox="' + crop.view_box + '"') && primary.includes('href="' + method.figure.image_path + '"'), 'Enlargement must use the same original source image');
+      }
       if (method.spoken_request?.arabic_reading) {
         const strip = text => text.replace(/[\u064B-\u065F\u0670\u0640\s]/g, '');
         assert.equal(strip(method.spoken_request.arabic_reading), strip(method.spoken_request.arabic));
