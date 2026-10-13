@@ -1,11 +1,14 @@
 {
-  "checked_on": "2026-10-09",
+  "checked_on": "2026-10-13",
   "source_title": "منبع أصول الحكمة — شرح البرهتية",
-  "review_basis": "Direct visual collation of the bundled original printed pages 68 and 69; a selected passage check, not a complete chapter transcription.",
+  "review_basis": "Direct visual collation of bundled printed pages 67–69; selected passages, not full chapter completion.",
   "notes": [
     {
       "id": "manba-p68-turan-karir-pair",
-      "related_name_ids": ["HNK-MHC-002", "HNK-MHC-004"],
+      "related_name_ids": [
+        "HNK-MHC-002",
+        "HNK-MHC-004"
+      ],
       "title": {
         "ml": "തൂറാൻ–കരീർ: അറബി പതിപ്പിൽ വ്യക്തമായി പേരെടുത്ത സംയുക്ത പരാമർശം",
         "en": "Turan–Karir: the explicitly named pair in the Arabic edition"
@@ -26,7 +29,9 @@
     },
     {
       "id": "manba-p68-69-mazjal-five-variant",
-      "related_name_ids": ["HNK-MHC-005"],
+      "related_name_ids": [
+        "HNK-MHC-005"
+      ],
       "title": {
         "ml": "അറബി പതിപ്പിലെ ദിവസേന അഞ്ച് — ഇംഗ്ലീഷ് രേഖയിലെ അമ്പതിൽനിന്ന് വേറിട്ട്",
         "en": "Five daily in the Arabic printing — distinct from the English account's fifty"
@@ -38,7 +43,10 @@
       },
       "count": 5,
       "count_kind": "recitation",
-      "timing": {"ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറില്ല.", "en": "Daily; no particular clock hour."},
+      "timing": {
+        "ml": "ദിവസേന; പ്രത്യേക മണിക്കൂറില്ല.",
+        "en": "Daily; no particular clock hour."
+      },
       "scope_note": {
         "ml": "ഇത് സംഖ്യ വ്യക്തമാക്കുന്ന ചെറിയ മൂലവാക്യഭാഗമാണ്; പേജ് 68–69-ലെ മുഴുവൻ ഖണ്ഡത്തിന്റെ പകർപ്പല്ല. ഗർഭധാരണപരാമർശത്തിലെ ഏഴ് എഴുത്തുകളോ ഏഴ് ദിവസങ്ങളോ ഇതിൽ ചേർക്കുന്നില്ല. നിലവിലെ നാമരൂപവും Abjad കണക്കും മാറ്റുന്നില്ല.",
         "en": "This is a short original clause establishing the printed number, not a transcription of the complete paragraph on pages 68–69. It is separate from the seven inscriptions and seven days in the conception account. The stored name and Abjad calculation remain unchanged."
@@ -46,6 +54,58 @@
       "source_title": "منبع أصول الحكمة — شرح البرهتية",
       "printed_page": "68–69",
       "source_image": "/figures/birhatiah-manba-p68.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p67-first-name-meaning",
+      "related_name_ids": [
+        "HNK-MHC-001"
+      ],
+      "title": {
+        "ml": "ഒന്നാം നാമത്തിന്റെ അർത്ഥം — അറബി മൂലവാക്യം",
+        "en": "First-name meaning — original Arabic sentence"
+      },
+      "arabic_original": "ومعناه بالعربية قدوس وقيل سبوح",
+      "translation": {
+        "ml": "ഗ്രന്ഥത്തിലെ വാക്യത്തിന്റെ അർത്ഥം: “അറബിയിൽ ഇതിന്റെ അർത്ഥം ഖുദ്ദൂസ്; മറ്റൊരു അഭിപ്രായത്തിൽ സുബ്ബൂഹ്.” ഖുദ്ദൂസ് എന്നത് പരിശുദ്ധൻ; സുബ്ബൂഹ് എന്നത് ന്യൂനതകളിൽനിന്ന് മുക്തനായി മഹത്വപ്പെടുത്തപ്പെട്ടവൻ. ഇവ ഗ്രന്ഥം നൽകുന്ന വ്യാഖ്യാനങ്ങളാണ്; അപരിചിത നാമത്തിന്റെ ഭാഷാമൂലം സ്വതന്ത്രമായി സ്ഥിരീകരിച്ചതായി അവതരിപ്പിക്കുന്നില്ല.",
+        "en": "The source sentence says: “Its meaning in Arabic is Quddus; alternatively Subbuh.” Quddus means the Holy One; Subbuh describes the One glorified as free of imperfections. These are interpretations supplied by the book, not independent verification of the unfamiliar name’s linguistic origin."
+      },
+      "scope_note": {
+        "ml": "ഹരക്കത്ത് കുറവുള്ള മൂലവാക്യം അച്ചടിയിലുള്ള അക്ഷരങ്ങളോടെ നിലനിർത്തുന്നു. ഓതൽഎണ്ണമോ സമയമോ ഈ അർത്ഥവാക്യത്തിൽ ഇല്ല.",
+        "en": "The sparsely vowelled original is retained without reconstructing vowels. This meaning sentence gives no recitation count or timing."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 67,
+      "source_image": "/figures/birhatiah-manba-p67.png",
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "manba-p67-birth-inscription-source",
+      "related_name_ids": [
+        "HNK-MHC-001"
+      ],
+      "title": {
+        "ml": "പ്രസവത്തെക്കുറിച്ചുള്ള 35 എഴുത്ത് — അറബി ഗ്രന്ഥത്തിലെ ചരിത്രപരാമർശം",
+        "en": "Thirty-five inscriptions — historical childbirth account in the Arabic source"
+      },
+      "arabic_original": "ومن خواصه أن من كتبه (٣٥) مرة في طبق أبيض نظيف ومحاه وسقاه للمرأة المعسرة عن الولادة وضعت بإذن الله تعالى",
+      "translation": {
+        "ml": "മൂലവാക്യത്തിന്റെ അർത്ഥം: “ഇത് ശുദ്ധമായ വെളുത്ത പാത്രത്തിൽ 35 തവണ എഴുതി, അത് മായ്ച്ച്, പ്രസവം പ്രയാസപ്പെട്ട സ്ത്രീക്ക് കുടിക്കാൻ നൽകിയാൽ അല്ലാഹുവിന്റെ അനുമതിയോടെ പ്രസവിക്കുമെന്നത് ഇതിന്റെ സവിശേഷതകളിൽപ്പെടുന്നു.” ഇത് ഗ്രന്ഥം രേഖപ്പെടുത്തിയ ചികിത്സാസംബന്ധമായ പരമ്പരാഗത അവകാശവാദമാണ്; തെളിയിക്കപ്പെട്ട ചികിത്സയോ ഉപയോഗിക്കാനുള്ള നിർദേശമോ അല്ല.",
+        "en": "Meaning of the source sentence: “Among its properties is that whoever writes it thirty-five times on a clean white plate, washes it off and gives it to a woman experiencing difficult childbirth, she delivers by God’s permission.” This is the book’s traditional medical claim, not established treatment or a recommendation to follow it."
+      },
+      "count": 35,
+      "count_kind": "inscription",
+      "timing": {
+        "ml": "ഈ വാക്യത്തിൽ ദിവസമോ ഘടികാരസമയമോ ഓതൽഎണ്ണമോ ഇല്ല.",
+        "en": "This sentence supplies no day, clock time or recitation count."
+      },
+      "scope_note": {
+        "ml": "35 എന്നത് എഴുത്തിന്റെ എണ്ണമാണ്; ഓതൽഎണ്ണമല്ല. എഴുതാൻ ഉപയോഗിക്കുന്ന വസ്തുവോ മായ്ക്കാനുള്ള ദ്രാവകമോ വാക്യം വ്യക്തമാക്കുന്നില്ല. അവ ഊഹിച്ച് ചേർത്തിട്ടില്ല. പ്രസവത്തിലെ ബുദ്ധിമുട്ടിന് അടിയന്തര വൈദ്യപരിചരണം ആവശ്യമാണ്; ഈ ചരിത്രവിവരണം അതിന് പകരമല്ല.",
+        "en": "Thirty-five is an inscription count, not a recitation count. The sentence does not identify the writing substance or washing liquid; neither is invented. Difficult childbirth needs urgent medical care; this historical account is no substitute."
+      },
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 67,
+      "source_image": "/figures/birhatiah-manba-p67.png",
       "review_status": "checked_against_scan"
     }
   ],
@@ -59,6 +119,22 @@
       "scope_note": {
         "ml": "അമ്പത് എന്ന എണ്ണം ഇംഗ്ലീഷ് പതിപ്പിന്റെ നിലവിലുള്ള പരിശോധിച്ച രേഖയിൽ നിന്നാണ്. അറബി പേജ് 68-ലെ അച്ചടിരൂപമായ അഞ്ച് എന്നതുമായി ഇതിനെ കലർത്തരുത്. മുൻ അറബി വാക്യം മൂലപേജുമായി വാക്കുപ്രതി പൊരുത്തപ്പെടാത്തതിനാൽ ഇവിടെ മൂലഉദ്ധരണിയായി കാണിക്കുന്നില്ല.",
         "en": "Fifty comes from the existing reviewed English-edition record. Do not conflate it with five as printed on Arabic page 68. The previous Arabic sentence does not match that page word for word and is no longer displayed as an original quotation."
+      }
+    },
+    {
+      "name_id": "HNK-MHC-001",
+      "practice_id": "source-correspondences",
+      "source_title": "منبع أصول الحكمة — شرح البرهتية",
+      "printed_page": 67,
+      "count_kind": null,
+      "arabic_original": "له من الحروف حرف الألف ومن المنازل النطح",
+      "translation": {
+        "ml": "അറബി പേജ് 67-ൽ ഈ പേരിന്റെ അക്ഷരം അലിഫ് എന്നും മൻസിൽ «النطح» എന്നും അച്ചടിച്ചിരിക്കുന്നു. ഇംഗ്ലീഷ് പതിപ്പിലെ al-Sharatain എന്ന വായന വേറിട്ട പതിപ്പിന്റെ രേഖയായി നിലനിർത്തുന്നു. മൂലപേജിൽ ഇല്ലാത്ത «الشرطين» എന്ന വാക്ക് അറബി മൂലഉദ്ധരണിയായി കാണിക്കുന്നില്ല. ഇവ ഗ്രന്ഥത്തിലെ പരമ്പരാഗത ബന്ധങ്ങളാണ്; ഓതൽസമയം നിർദേശിക്കുന്നില്ല.",
+        "en": "Arabic page 67 prints alif as the associated letter and al-Nath (النطح) as the mansion. The English edition’s al-Sharatain reading remains separately attributed. الشرطين is not printed in this Arabic sentence and must not be shown as its original wording. These are traditional correspondences, not a recitation time."
+      },
+      "scope_note": {
+        "ml": "2026-10-13-ന് മൂലചിത്രവുമായി ഒത്തുനോക്കിയ തിരുത്തൽ. നാമത്തിന്റെ നിലവിലെ അക്ഷരങ്ങളും Abjad കണക്കും മാറ്റിയിട്ടില്ല.",
+        "en": "Visually rechecked on 2026-10-13. Stored name spelling and Abjad values are unchanged."
       }
     }
   ]
