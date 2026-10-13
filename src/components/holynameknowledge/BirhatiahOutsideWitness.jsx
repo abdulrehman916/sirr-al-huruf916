@@ -5,6 +5,7 @@ export default function BirhatiahOutsideWitness({ nameId = null }) {
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const entries = source.entries.filter(entry => !nameId || entry.name_id === nameId);
+  const variantNotes = (source.variant_notes || []).filter(note => !nameId || note.related_name_ids.includes(nameId));
   if (!entries.length) return null;
   return <section className="rounded-xl border border-yellow-500/25 p-4 space-y-3" data-testid="birhatiah-outside-witness-2017">
     <h3 className="text-yellow-200 font-semibold">{ml ? 'മറ്റൊരു പുറംപതിപ്പിലെ നാമസംഖ്യകൾ' : 'Name numbers in another outside witness'}</h3>
@@ -17,6 +18,7 @@ export default function BirhatiahOutsideWitness({ nameId = null }) {
         </tr>)}</tbody>
       </table>
     </div>
+    {variantNotes.map(note => <p key={note.id} data-witness-variant={note.id} className="text-sm text-white/80 leading-loose">{note.text[language]}</p>)}
     <p className="text-xs text-white/60">{ml ? 'പോസ്റ്റിൽ കാണുന്ന തീയതി' : 'Displayed publication date'}: {source.publication_date_as_displayed}; {ml ? 'ഉള്ളിൽ പകർത്തിയ പഴയ തീയതി' : 'Embedded earlier date'}: {source.embedded_repost_date}</p>
     <a href={source.source_url} target="_blank" rel="noopener noreferrer" className="text-xs text-yellow-100 underline break-all">{source.source_title}</a>
   </section>;

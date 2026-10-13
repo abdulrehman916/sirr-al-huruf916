@@ -1,0 +1,397 @@
+{
+  "checked_on": "2026-10-13",
+  "checked_commit": "92d2d58d463f85375649614976320f4c3b2f1916",
+  "scope": "All 28 repository card guides: source-entry existence, Malayalam/English procedure presence, correction targets, and retained source-page files. Selected source comparison supplements the earlier pages 67–74 pass. This is not a fresh word-by-word validation of every stored passage or the private live database.",
+  "cards": [
+    {
+      "name_id": "HNK-MHC-001",
+      "method_blocks": 10,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        67,
+        68
+      ],
+      "display_corrections_matched_to_imports": 3
+    },
+    {
+      "name_id": "HNK-MHC-002",
+      "method_blocks": 9,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        68
+      ],
+      "display_corrections_matched_to_imports": 3
+    },
+    {
+      "name_id": "HNK-MHC-003",
+      "method_blocks": 6,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        68
+      ],
+      "display_corrections_matched_to_imports": 2
+    },
+    {
+      "name_id": "HNK-MHC-004",
+      "method_blocks": 7,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        68
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-005",
+      "method_blocks": 4,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        68,
+        69,
+        70
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-006",
+      "method_blocks": 3,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        69,
+        70
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-007",
+      "method_blocks": 1,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        69,
+        70
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-008",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        69,
+        70
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-009",
+      "method_blocks": 4,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        69,
+        70
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-010",
+      "method_blocks": 9,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        70
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-011",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        70,
+        71,
+        85
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-012",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        70,
+        71,
+        85
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-013",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        71
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-014",
+      "method_blocks": 4,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        71,
+        85
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-015",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        71
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-016",
+      "method_blocks": 3,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        71,
+        72,
+        86
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-017",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        72
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-018",
+      "method_blocks": 3,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        72
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-019",
+      "method_blocks": 3,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        72
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-020",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        72,
+        73
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-021",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        72,
+        73
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-022",
+      "method_blocks": 1,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-023",
+      "method_blocks": 1,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-024",
+      "method_blocks": 3,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-025",
+      "method_blocks": 1,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73
+      ],
+      "display_corrections_matched_to_imports": 0
+    },
+    {
+      "name_id": "HNK-MHC-026",
+      "method_blocks": 1,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-027",
+      "method_blocks": 4,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        73,
+        74
+      ],
+      "display_corrections_matched_to_imports": 1
+    },
+    {
+      "name_id": "HNK-MHC-028",
+      "method_blocks": 2,
+      "source_link_check": "passed",
+      "bilingual_procedure_check": "passed",
+      "original_image_presence_check": "passed",
+      "source_pages": [
+        74
+      ],
+      "display_corrections_matched_to_imports": 1
+    }
+  ],
+  "totals": {
+    "cards": 28,
+    "purpose_blocks": 95
+  },
+  "external_retrievals": [
+    {
+      "url": "https://alrefaee.forumegypt.net/t712-عزيمة-البرهتية-الصحيحة",
+      "result": "retrieved; 28 table numbers and selected card 4/5 differences rechecked"
+    },
+    {
+      "url": "https://archive.org/details/alabadiaschool_gmail_20190215_1631",
+      "result": "catalogue retrieved; not a new full PDF transcription"
+    },
+    {
+      "url": "https://barhatiya.blogspot.com/2020/02/blog-post_88.html",
+      "result": "retrieved; first two stored outside procedures match counts 622 and 340"
+    },
+    {
+      "url": "https://hurqalya.ucmerced.edu/node/2231/",
+      "result": "retrieved; bibliography context, not ritual verification"
+    },
+    {
+      "url": "https://alchamel114.org/showthread.php?mode=hybrid&t=90",
+      "result": "retrieved; printed grids and claimed sum visible; not corrected or treated as recitation counts"
+    },
+    {
+      "url": "https://asrare.net/node/85",
+      "result": "403"
+    },
+    {
+      "url": "https://www.albatine.org/showthread.php?t=33",
+      "result": "403"
+    },
+    {
+      "url": "https://asrare.net/node/42673",
+      "result": "403"
+    },
+    {
+      "url": "https://asrare.net/node/12726",
+      "result": "403"
+    },
+    {
+      "url": "https://heshammamdouh.blogspot.com/2012/01/28.html",
+      "result": "redirect to inaccessible Blogger login"
+    },
+    {
+      "url": "https://asrare.net/node/35293",
+      "result": "fetch failed"
+    },
+    {
+      "url": "https://asrare.net/node/661913",
+      "result": "fetch failed"
+    }
+  ],
+  "remaining_evidence_limits": [
+    "No new private database snapshot was supplied to the legacy coverage check.",
+    "Not every supplementary collective passage on pages 75–90 has a complete typed transcription and line-by-line Malayalam procedure.",
+    "Exact first/fifth Tahatil spellings in the Arabic scan remain uncertain; the separately attributed outside list is retained.",
+    "Unstated inscription wording, diagram cells, vowels and timing must not be invented."
+  ],
+  "checks": [
+    "verify:section-c-source passed",
+    "verify:section-c-reader passed, including variant-note scoping in both languages",
+    "verify:calculations passed (17 locked files)"
+  ]
+}
