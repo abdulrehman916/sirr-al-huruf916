@@ -7,11 +7,12 @@ import { build } from 'esbuild';
 import { collateBirhatiahChapter } from '../src/lib/birhatiahSourceCollation.js';
 const guides = JSON.parse(fs.readFileSync('src/data/birhatiahReaderGuide.json', 'utf8'));
 const collation = JSON.parse(fs.readFileSync('src/data/birhatiahSourceCollation20261009.json', 'utf8'));
-assert.equal(collation.notes.length, 4);
+assert.equal(collation.notes.length, 7);
 for (const note of collation.notes) {
   assert.ok(note.translation.ml && note.translation.en && note.arabic_original);
   assert.ok(fs.existsSync(`public${note.source_image}`));
-  assert.equal(note.review_status, 'checked_against_scan');
+  assert.ok(['checked_against_scan', 'checked_against_digital_text'].includes(note.review_status));
+  if (note.review_status === 'checked_against_digital_text') assert.ok(note.source_url.startsWith('https://'));
 }
 assert.deepEqual(collation.notes[0].related_name_ids, ['HNK-MHC-002', 'HNK-MHC-004']);
 assert.equal(collation.notes[1].count, 5);
@@ -39,6 +40,10 @@ assert.ok(!firstCorrespondence.arabic_original.includes('الشرطين'));
 assert.equal(JSON.stringify(firstOriginal), firstBefore);
 assert.ok(firstCorrected.edition_accounts.some(entry => entry.translation.en.includes('al-Sharatain')));
 assert.equal(collateBirhatiahChapter(firstCorrected, collation).source_notes.length, firstCorrected.source_notes.length);
+const twelfth = collateBirhatiahChapter(JSON.parse(fs.readFileSync('content/source-checked/HNK-MHC-012.json', 'utf8')), collation);
+assert.ok(twelfth.practices[0].arabic_original.includes('السلم السليماني'));
+assert.ok(!twelfth.practices[0].arabic_original.includes('السر السليماني'));
+assert.equal(twelfth.practices[0].count, null);
 assert.equal(Object.keys(guides).length, 28);
 const blogGlosses = JSON.parse(fs.readFileSync('src/data/birhatiahOutsideGlosses2012.json', 'utf8'));
 assert.equal(blogGlosses.entries.length, 28, 'The outside blog glosses must cover all 28 names');
@@ -72,17 +77,25 @@ for (const language of ['ml', 'en']) {
 }
 
 for (const [id, guide] of Object.entries(guides)) {
-  const chapter = JSON.parse(fs.readFileSync(`content/source-checked/${id}.json`, 'utf8'));
+  const chapter = collateBirhatiahChapter(JSON.parse(fs.readFileSync(`content/source-checked/${id}.json`, 'utf8')), collation);
   assert.ok(['practices', 'source_notes', 'edition_accounts'].flatMap(key => chapter[key] || []).some(entry => entry.id === guide.source_entry), `${id}: unlinked method`);
   for (const language of ['ml', 'en']) {
     for (const method of guide.other_methods || []) {
-      const sourceChapter = JSON.parse(fs.readFileSync(`content/source-checked/${method.source_name_id || id}.json`, 'utf8'));
+      const sourceChapter = collateBirhatiahChapter(JSON.parse(fs.readFileSync(`content/source-checked/${method.source_name_id || id}.json`, 'utf8')), collation);
       assert.ok(method.external_source?.url?.startsWith('https://') && method.external_source.checked_on || ['practices', 'source_notes', 'edition_accounts'].flatMap(key => sourceChapter[key] || []).some(entry => entry.id === method.source_entry), `${id}: additional method lacks source`);
       assert.ok(method.steps[language]?.length && method.title[language] && method.benefit[language]);
       if (method.figure) assert.ok(fs.existsSync(`public${method.figure.image_path}`));
     }
     assert.ok(guide.steps[language].length && guide.title[language] && guide.benefit[language]);
     const html = render(chapter, language);
+    assert.ok(html.includes(language === 'ml' ? 'മലയാളവിവരണം — ഗ്രന്ഥം പറയുന്ന ക്രമം' : 'Source procedure — explained in order'));
+    if (id === 'HNK-MHC-005') {
+      const list = guide.other_methods.find(method => method.method_id === 'fertility-seven').written_text.arabic;
+      assert.equal(list.split(' ').length, 8);
+      assert.ok(html.includes(list));
+    }
+    if (id === 'HNK-MHC-008') assert.ok(html.includes('وكل عقب كل مائة بجلب من أراد'));
+    if (id === 'HNK-MHC-010') assert.ok(html.includes('خوطير خوطيش') && html.includes('data-source-entry="manba-p70-khutir-khutish-palm"'));
     const pairVisible = ['HNK-MHC-002', 'HNK-MHC-004'].includes(id);
     assert.equal(html.includes(`${id}-extra-source_notes-manba-p68-turan-karir-pair`), pairVisible, `${id}: paired source account has wrong name scope`);
     assert.equal(html.includes(`${id}-extra-source_notes-manba-p68-69-mazjal-five-variant`), id==='HNK-MHC-005', `${id}: five-reading variant has wrong name scope`);
