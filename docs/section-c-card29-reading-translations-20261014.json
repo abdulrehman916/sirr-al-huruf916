@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-10-14",
+  "base_commit": "5c1278d235adc3a75a1820d25bf35f1fd710a2e9",
+  "scope": "Card 29: Malayalam reading translations of intelligible surrounding invocation clauses, six source recensions, twelve Tijan groups, the supplementary prayer and two dismissal contexts. Original formula strings and printed vowels remain in the complete inline Arabic pages.",
+  "entries": [
+    {
+      "id": "expanded-bahnasawi",
+      "paragraphs": 2,
+      "source_pages": [
+        75
+      ]
+    },
+    {
+      "id": "expanded-tusi",
+      "paragraphs": 4,
+      "source_pages": [
+        75,
+        76
+      ]
+    },
+    {
+      "id": "expanded-maghazi",
+      "paragraphs": 2,
+      "source_pages": [
+        76
+      ]
+    },
+    {
+      "id": "expanded-qayrawani",
+      "paragraphs": 4,
+      "source_pages": [
+        76,
+        77
+      ]
+    },
+    {
+      "id": "expanded-fasi-mursi",
+      "paragraphs": 4,
+      "source_pages": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "expanded-kushani",
+      "paragraphs": 2,
+      "source_pages": [
+        78
+      ]
+    },
+    {
+      "id": "shared-048",
+      "paragraphs": 3,
+      "source_pages": [
+        86,
+        87
+      ]
+    },
+    {
+      "id": "shared-049",
+      "paragraphs": 2,
+      "source_pages": [
+        87
+      ]
+    },
+    {
+      "id": "shared-051",
+      "paragraphs": 4,
+      "source_pages": [
+        87
+      ]
+    },
+    {
+      "id": "shared-052",
+      "paragraphs": 12,
+      "source_pages": [
+        88,
+        89
+      ]
+    }
+  ],
+  "total_malayalam_reading_paragraphs": 39,
+  "preserved": [
+    "Original Arabic source pages",
+    "Unfamiliar formula strings without inferred dictionary meanings",
+    "Distinct recension instructions and count markers",
+    "Earlier editorial context and English rendering",
+    "Current name spellings and calculation values",
+    "Card 29 original figures and empty cells"
+  ],
+  "validation": [
+    "Each added Malayalam paragraph rendered by the actual React components",
+    "Each reading section contains the indicated original source-page images",
+    "All Section C reader checks passed",
+    "Vite build passed"
+  ],
+  "source_scope_note": "Reading translations follow the intelligible surrounding clauses; formula lists retained in full source images are not represented as newly verified typed or independently translated Syriac text."
+}

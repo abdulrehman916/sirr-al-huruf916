@@ -6,6 +6,13 @@ import { createRequire } from 'node:module';
 import { build } from 'esbuild';
 
 const book = JSON.parse(fs.readFileSync('src/data/birhatiahSharedBookAccounts.json', 'utf8'));
+const expanded = JSON.parse(fs.readFileSync('src/data/birhatiahExpandedVersions.json', 'utf8'));
+assert.deepEqual(expanded.versions.map(version => version.reading_translation.ml.length), [2,4,2,4,4,2]);
+assert.equal(book.accounts.find(entry => entry.id === 'shared-052').reading_translation.ml.length, 12);
+for (const entry of [...expanded.versions, ...book.accounts.filter(entry => entry.reading_translation)]) {
+  assert.ok(entry.reading_translation.ml.every(text => text.trim().length > 30));
+  for (const page of entry.reading_translation_source.arabic_pages) assert.ok(fs.existsSync(`public/figures/birhatiah-manba-p${page}.png`));
+}
 const figures = [...book.figures, ...book.source_figures];
 assert.equal(book.figures.length, 8);
 assert.equal(book.source_figures.length, 3);
@@ -36,10 +43,19 @@ for (const [id,page] of [['shared-013',78],['shared-038',82]]) {
 }
 const output = path.join(os.tmpdir(), `section-c-collective-figures-${process.pid}.cjs`);
 try {
-  await build({stdin: {contents: `import React from 'react'; import {renderToStaticMarkup} from 'react-dom/server'; import Shared from './src/components/holynameknowledge/BirhatiahSharedBookAccounts.jsx'; import {HolyNamesLanguageContext} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx'; export const render = (language, initialQuery = '') => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, {value:{language}}, React.createElement(Shared,{initialQuery})));`, resolveDir:process.cwd(),loader:'jsx'}, outfile:output,bundle:true,platform:'node',format:'cjs',jsx:'automatic',alias:{'@':path.join(process.cwd(),'src')}});
-  const {render} = createRequire(import.meta.url)(output);
+  await build({stdin: {contents: `import React from 'react'; import {renderToStaticMarkup} from 'react-dom/server'; import Shared from './src/components/holynameknowledge/BirhatiahSharedBookAccounts.jsx'; import Expanded from './src/components/holynameknowledge/BirhatiahExpandedVersions.jsx'; import {HolyNamesLanguageContext} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx'; export const render = (language, initialQuery = '') => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, {value:{language}}, React.createElement(Shared,{initialQuery}))); export const renderExpanded = language => renderToStaticMarkup(React.createElement(HolyNamesLanguageContext.Provider, {value:{language}}, React.createElement(Expanded)));`, resolveDir:process.cwd(),loader:'jsx'}, outfile:output,bundle:true,platform:'node',format:'cjs',jsx:'automatic',alias:{'@':path.join(process.cwd(),'src')}});
+  const {render, renderExpanded} = createRequire(import.meta.url)(output);
   for (const language of ['ml','en']) {
     const html = render(language);
+    const versionHtml = renderExpanded(language);
+    for (const version of expanded.versions) {
+      for (const paragraph of version.reading_translation[language] || []) assert.ok(versionHtml.includes(paragraph), 'Every added translation paragraph must render');
+      for (const page of version.arabic_pages) assert.ok(versionHtml.includes(`/figures/birhatiah-manba-p${page}.png`));
+    }
+    for (const entry of book.accounts.filter(entry => entry.reading_translation)) {
+      for (const paragraph of entry.reading_translation[language] || []) assert.ok(html.includes(paragraph));
+      if (language === 'ml') for (const page of entry.reading_translation_source.arabic_pages) assert.ok(html.includes(`data-reading-source-page="${page}"`));
+    }
     assert.equal((html.match(/data-shared-figure=/g) || []).length, 11, 'Show each original figure once');
     assert.equal((html.match(/data-source-image="inline-arabic-shared-account"/g) || []).length, 8);
     for (const figure of figures) {
