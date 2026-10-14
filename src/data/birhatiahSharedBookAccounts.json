@@ -118,8 +118,17 @@
       "printed_pages": "154–155",
       "subject": "incense",
       "translation": {
-        "en": "Benevolent-work incense for Wednesday: mastic and carnation.",
-        "ml": "ഗുണകരമായ പ്രവൃത്തികളുടെ ബുധൻ ധൂപം: മാസ്റ്റിക്, കാർണേഷൻ."
+        "en": "Benevolent-work incense for Wednesday: mastic and cloves.",
+        "ml": "ഗുണകരമായ പ്രവൃത്തികളുടെ ബുധൻ ധൂപം: മാസ്റ്റിക്, ഗ്രാമ്പൂ."
+      },
+      "source_word_note": {
+        "arabic": "قرنفل",
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 78,
+        "image_path": "/figures/birhatiah-manba-p78.png",
+        "ml": "മൂലത്തിലെ «قرنفل» ഗ്രാമ്പൂ എന്നാണ്. ഇംഗ്ലീഷ് പതിപ്പിൽ നിന്നുള്ള പഴയ പുഷ്പനാമവിവർത്തനം തിരുത്തിയിരിക്കുന്നു.",
+        "en": "The source word قرنفل means cloves. The earlier flower-name rendering from the English edition is corrected.",
+        "review_status": "checked_against_scan"
       }
     },
     {
@@ -343,8 +352,17 @@
       "printed_pages": "166–168",
       "subject": "objects",
       "translation": {
-        "en": "Other accounts give 35 recitations on Sunday with black cumin against an oppressor; 45 for separation with myrrh/aloe and a doorway inscription; 45 for a treasure bowl with frankincense/coriander; paper-to-coin transformation with 45 paper shapes, a coin and 45 recitations using aloeswood/benzoin; Saturday fasting with seven recitations after every prayer and frankincense for summoning; and Sunday fasting with carnation and 21 recitations for an absent person.",
-        "ml": "മറ്റു ഭാഗങ്ങൾ: എതിരാളിക്കെതിരെ ഞായറാഴ്ച കറുത്ത ജീരകത്തോടെയുള്ള 35 ആവർത്തനങ്ങൾ; വേർപെടുത്തലിന് മിർ/അലോ, വാതിൽപ്പടി എഴുത്ത്, 45; നിധിപാത്രത്തിന് കുന്തിരിക്കം/മല്ലി, 45; കടലാസ് നാണയമാകുമെന്ന അവകാശവാദത്തിൽ 45 കടലാസ് രൂപങ്ങൾ, ഒരു നാണയം, അഗർവുഡ്/ബെൻസോയിൻ, 45 ആവർത്തനങ്ങൾ; വരുത്തലിന് ശനിയാഴ്ച നോമ്പ്, ഓരോ നമസ്കാരശേഷവും ഏഴ്, കുന്തിരിക്കം; ഹാജരില്ലാത്ത ആളിന് ഞായറാഴ്ച നോമ്പ്, കാർണേഷൻ, 21 ആവർത്തനങ്ങൾ."
+        "en": "Other accounts give 35 recitations on Sunday with black cumin against an oppressor; 45 for separation with myrrh/aloe and a doorway inscription; 45 for a treasure bowl with frankincense/coriander; paper-to-coin transformation with 45 paper shapes, a coin and 45 recitations using aloeswood/benzoin; Saturday fasting with seven recitations after every prayer and frankincense for summoning; and Sunday fasting with cloves and 21 recitations for an absent person.",
+        "ml": "മറ്റു ഭാഗങ്ങൾ: എതിരാളിക്കെതിരെ ഞായറാഴ്ച കറുത്ത ജീരകത്തോടെയുള്ള 35 ആവർത്തനങ്ങൾ; വേർപെടുത്തലിന് മിർ/അലോ, വാതിൽപ്പടി എഴുത്ത്, 45; നിധിപാത്രത്തിന് കുന്തിരിക്കം/മല്ലി, 45; കടലാസ് നാണയമാകുമെന്ന അവകാശവാദത്തിൽ 45 കടലാസ് രൂപങ്ങൾ, ഒരു നാണയം, അഗർവുഡ്/ബെൻസോയിൻ, 45 ആവർത്തനങ്ങൾ; വരുത്തലിന് ശനിയാഴ്ച നോമ്പ്, ഓരോ നമസ്കാരശേഷവും ഏഴ്, കുന്തിരിക്കം; ഹാജരില്ലാത്ത ആളിന് ഞായറാഴ്ച നോമ്പ്, ഗ്രാമ്പൂ, 21 ആവർത്തനങ്ങൾ."
+      },
+      "source_word_note": {
+        "arabic": "قرنفل",
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 82,
+        "image_path": "/figures/birhatiah-manba-p82.png",
+        "ml": "മൂലത്തിലെ «قرنفل» ഗ്രാമ്പൂ എന്നാണ്. ഇംഗ്ലീഷ് പതിപ്പിൽ നിന്നുള്ള പഴയ പുഷ്പനാമവിവർത്തനം തിരുത്തിയിരിക്കുന്നു.",
+        "en": "The source word قرنفل means cloves. The earlier flower-name rendering from the English edition is corrected.",
+        "review_status": "checked_against_scan"
       }
     },
     {
@@ -554,35 +572,261 @@
   "figures": [
     {
       "printed_page": 157,
-      "image_path": "/figures/birhatiah-shared-english-p157.png"
+      "image_path": "/figures/birhatiah-shared-english-p157.png",
+      "id": "shared-figure-157",
+      "owner_account_id": "shared-025",
+      "related_account_ids": [
+        "shared-025",
+        "shared-026",
+        "shared-027"
+      ],
+      "caption": {
+        "ml": "കൈപ്പത്തിയിലെ കളം; തുടർന്നുള്ള ബന്ധപ്പെട്ട മുദ്രപരാമർശങ്ങൾ",
+        "en": "Palm square and following shared-seal references"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 79,
+        "image_path": "/figures/birhatiah-manba-p79.png",
+        "crop": {
+          "view_box": "10 500 270 231",
+          "source_width": 675,
+          "source_height": 1072
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 163,
-      "image_path": "/figures/birhatiah-shared-english-p163.png"
+      "image_path": "/figures/birhatiah-shared-english-p163.png",
+      "id": "shared-figure-163",
+      "owner_account_id": "shared-035",
+      "related_account_ids": [
+        "shared-035"
+      ],
+      "caption": {
+        "ml": "വീട്ടിലേക്കുള്ള കല്ലേറ് സംബന്ധിച്ച ചരിത്രപരാമർശത്തിലെ കളം",
+        "en": "Square in the historical house-stoning account"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 81,
+        "image_path": "/figures/birhatiah-manba-p81.png",
+        "crop": {
+          "view_box": "30 269 152 114",
+          "source_width": 640,
+          "source_height": 1040
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 172,
-      "image_path": "/figures/birhatiah-shared-english-p172.png"
+      "image_path": "/figures/birhatiah-shared-english-p172.png",
+      "id": "shared-figure-172",
+      "owner_account_id": "shared-040",
+      "related_account_ids": [
+        "shared-040",
+        "shared-041"
+      ],
+      "caption": {
+        "ml": "രണ്ടു കടലാസുകളിലെ മുദ്രയും തുടർന്ന് പരാമർശിക്കുന്ന അതേ കളവും",
+        "en": "Two-paper seal and subsequent references to the same square"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 83,
+        "image_path": "/figures/birhatiah-manba-p83.png",
+        "crop": {
+          "view_box": "27 780 253 235",
+          "source_width": 675,
+          "source_height": 1040
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 177,
-      "image_path": "/figures/birhatiah-shared-english-p177.png"
+      "image_path": "/figures/birhatiah-shared-english-p177.png",
+      "id": "shared-figure-177",
+      "owner_account_id": "shared-044",
+      "related_account_ids": [
+        "shared-044"
+      ],
+      "caption": {
+        "ml": "നെറ്റിയിലും കൈയിലും എഴുതുന്നതിനെക്കുറിച്ചുള്ള ചരിത്രപരാമർശത്തിലെ രൂപം",
+        "en": "Form in the historical forehead-and-hand inscription account"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 85,
+        "image_path": "/figures/birhatiah-manba-p85.png",
+        "crop": {
+          "view_box": "236 625 90 104",
+          "source_width": 662,
+          "source_height": 1072
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 179,
-      "image_path": "/figures/birhatiah-shared-english-p179.png"
+      "image_path": "/figures/birhatiah-shared-english-p179.png",
+      "id": "shared-figure-179",
+      "owner_account_id": "shared-045",
+      "related_account_ids": [
+        "shared-045"
+      ],
+      "caption": {
+        "ml": "ചരിത്രപരമായ തിരിച്ചെടുക്കൽവിവരണത്തിലെ രൂപം",
+        "en": "Form in the historical reversal account"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 86,
+        "image_path": "/figures/birhatiah-manba-p86.png",
+        "crop": {
+          "view_box": "29 79 219 213",
+          "source_width": 656,
+          "source_height": 1024
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 180,
-      "image_path": "/figures/birhatiah-shared-english-p180.png"
+      "image_path": "/figures/birhatiah-shared-english-p180.png",
+      "id": "shared-figure-180",
+      "owner_account_id": "shared-046",
+      "related_account_ids": [
+        "shared-046"
+      ],
+      "caption": {
+        "ml": "അല്ലാഹ് നാമത്തിന്റെ പ്രത്യേക ഖൽവയിലെ കളം; ആവശ്യത്തിനുള്ള ഒഴിഞ്ഞ സ്ഥാനം",
+        "en": "Square in the special Allah-name retreat; blank place for the need"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 86,
+        "image_path": "/figures/birhatiah-manba-p86.png",
+        "crop": {
+          "view_box": "26 306 133 115",
+          "source_width": 656,
+          "source_height": 1024
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 182,
-      "image_path": "/figures/birhatiah-shared-english-p182.png"
+      "image_path": "/figures/birhatiah-shared-english-p182.png",
+      "id": "shared-figure-182",
+      "owner_account_id": "shared-048",
+      "related_account_ids": [
+        "shared-048"
+      ],
+      "caption": {
+        "ml": "ആവശ്യം നടുവിൽ എഴുതുന്ന കളം; ബന്ധപ്പെട്ട ദുആയോടൊപ്പം",
+        "en": "Square with the need written in the centre, accompanying its supplication"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 86,
+        "image_path": "/figures/birhatiah-manba-p86.png",
+        "crop": {
+          "view_box": "25 818 164 119",
+          "source_width": 656,
+          "source_height": 1024
+        },
+        "review_status": "checked_against_scan"
+      }
     },
     {
       "printed_page": 185,
-      "image_path": "/figures/birhatiah-shared-english-p185.png"
+      "image_path": "/figures/birhatiah-shared-english-p185.png",
+      "id": "shared-figure-185",
+      "owner_account_id": "shared-050",
+      "related_account_ids": [
+        "shared-050"
+      ],
+      "caption": {
+        "ml": "അഞ്ച് ഖുർആൻ ആയത്തുകളെ പരാമർശിക്കുന്ന ഭാഗത്തിലെ കളം",
+        "en": "Square in the passage referring to five Quran verses"
+      },
+      "arabic_comparison": {
+        "source_title": "منبع أصول الحكمة — Arabic printing",
+        "printed_page": 87,
+        "image_path": "/figures/birhatiah-manba-p87.png",
+        "crop": {
+          "view_box": "12 650 278 327",
+          "source_width": 665,
+          "source_height": 1088
+        },
+        "review_status": "checked_against_scan"
+      }
     }
-  ]
+  ],
+  "source_figures": [
+    {
+      "id": "shared-arabic-wick-signs",
+      "owner_account_id": "shared-047",
+      "related_account_ids": [
+        "shared-047"
+      ],
+      "printed_page": 86,
+      "source_title": "منبع أصول الحكمة — Arabic printing",
+      "image_path": "/figures/birhatiah-manba-p86.png",
+      "caption": {
+        "ml": "തിരികളോടൊപ്പമുള്ള ചിഹ്നപ്പാഠം — മൂലചിത്രം",
+        "en": "Printed signs accompanying the wick account — original image"
+      },
+      "crop": {
+        "view_box": "12 488 629 83",
+        "source_width": 656,
+        "source_height": 1024
+      },
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "shared-arabic-horseshoe-signs",
+      "owner_account_id": "shared-039",
+      "related_account_ids": [
+        "shared-039"
+      ],
+      "printed_page": 83,
+      "source_title": "منبع أصول الحكمة — Arabic printing",
+      "image_path": "/figures/birhatiah-manba-p83.png",
+      "caption": {
+        "ml": "കുതിരലാടത്തിന്റെ ത്വൽസമ് — മൂലചിത്രം",
+        "en": "Horseshoe talisman — original image"
+      },
+      "crop": {
+        "view_box": "12 104 298 196",
+        "source_width": 675,
+        "source_height": 1040
+      },
+      "review_status": "checked_against_scan"
+    },
+    {
+      "id": "shared-arabic-printed-signs-p82",
+      "owner_account_id": "shared-038",
+      "related_account_ids": [
+        "shared-038"
+      ],
+      "printed_page": 82,
+      "source_title": "منبع أصول الحكمة — Arabic printing",
+      "image_path": "/figures/birhatiah-manba-p82.png",
+      "caption": {
+        "ml": "ഈ ഖണ്ഡത്തോടൊപ്പമുള്ള അച്ചടിച്ച ചിഹ്നപ്പാഠം — മൂലചിത്രം",
+        "en": "Printed sign formula alongside this passage — original image"
+      },
+      "crop": {
+        "view_box": "190 329 435 48",
+        "source_width": 662,
+        "source_height": 1072
+      },
+      "review_status": "checked_against_scan"
+    }
+  ],
+  "figures_checked_on": "2026-10-14"
 }
