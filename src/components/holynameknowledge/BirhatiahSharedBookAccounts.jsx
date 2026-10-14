@@ -48,6 +48,14 @@ export default function BirhatiahSharedBookAccounts({ initialQuery = '' }) {
         <h3 className="text-yellow-100">{names[ml ? 0 : 1]} ({entries.length})</h3>
         {entries.map(entry => <section key={entry.id} data-shared-account={entry.id} className="border-t border-white/10 pt-3 space-y-2">
           <p className="text-sm leading-loose text-white/90">{entry.translation[language]}</p>
+          {entry.reading_translation?.[language] && <section className="space-y-3" data-reading-translation={entry.id}>
+            <h4 className="text-yellow-100 text-sm">{ml ? 'ദുആയിലെ വാക്യക്രമത്തിലുള്ള മലയാള വിവർത്തനം' : 'Translation following the invocation sequence'}</h4>
+            {entry.reading_translation[language].map((paragraph,index) => <p key={`${entry.id}-reading-${index}`} className="text-sm text-white/90 leading-loose">{paragraph}</p>)}
+            {entry.reading_translation_source?.arabic_pages?.map(page => <figure key={page} className="space-y-2" data-reading-source-page={page}>
+              <img src={`/figures/birhatiah-manba-p${page}.png`} loading="lazy" alt={`منبع أصول الحكمة · ${page}`} className="block w-full max-w-2xl mx-auto rounded-lg bg-white" />
+              <figcaption className="text-xs text-white/65">منبع أصول الحكمة · {ml ? 'പേജ്' : 'Page'} {page}</figcaption>
+            </figure>)}
+          </section>}
           {entry.expanded_translation && <section className="space-y-3">
             <h3 className="text-yellow-100 text-sm">{ml ? 'ഈ പാഠഭാഗത്തിന്റെ വിപുലമായ അർഥം' : 'Expanded meaning of this passage'}</h3>
             {entry.expanded_translation.map((paragraph, index) => <p key={`${entry.id}-${index}`} className="text-sm leading-loose text-white/90">{paragraph[language]}</p>)}
