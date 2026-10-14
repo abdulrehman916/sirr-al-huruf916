@@ -1,0 +1,151 @@
+{
+  "checked_on": "2026-10-14",
+  "scope": "Card 29: bind retained original figures to the matching collective accounts, add original Arabic comparison regions and three additional printed-sign regions, preserve blank cells and source-edition differences.",
+  "base_commit": "c6c8b851a1de34a9f53958dae3b973ea0bfe5375",
+  "figures": [
+    {
+      "id": "shared-figure-157",
+      "owner_account_id": "shared-025",
+      "related_account_ids": [
+        "shared-025",
+        "shared-026",
+        "shared-027"
+      ],
+      "printed_page": 157,
+      "image_path": "/figures/birhatiah-shared-english-p157.png",
+      "arabic_comparison_page": 79
+    },
+    {
+      "id": "shared-figure-163",
+      "owner_account_id": "shared-035",
+      "related_account_ids": [
+        "shared-035"
+      ],
+      "printed_page": 163,
+      "image_path": "/figures/birhatiah-shared-english-p163.png",
+      "arabic_comparison_page": 81
+    },
+    {
+      "id": "shared-figure-172",
+      "owner_account_id": "shared-040",
+      "related_account_ids": [
+        "shared-040",
+        "shared-041"
+      ],
+      "printed_page": 172,
+      "image_path": "/figures/birhatiah-shared-english-p172.png",
+      "arabic_comparison_page": 83
+    },
+    {
+      "id": "shared-figure-177",
+      "owner_account_id": "shared-044",
+      "related_account_ids": [
+        "shared-044"
+      ],
+      "printed_page": 177,
+      "image_path": "/figures/birhatiah-shared-english-p177.png",
+      "arabic_comparison_page": 85
+    },
+    {
+      "id": "shared-figure-179",
+      "owner_account_id": "shared-045",
+      "related_account_ids": [
+        "shared-045"
+      ],
+      "printed_page": 179,
+      "image_path": "/figures/birhatiah-shared-english-p179.png",
+      "arabic_comparison_page": 86
+    },
+    {
+      "id": "shared-figure-180",
+      "owner_account_id": "shared-046",
+      "related_account_ids": [
+        "shared-046"
+      ],
+      "printed_page": 180,
+      "image_path": "/figures/birhatiah-shared-english-p180.png",
+      "arabic_comparison_page": 86
+    },
+    {
+      "id": "shared-figure-182",
+      "owner_account_id": "shared-048",
+      "related_account_ids": [
+        "shared-048"
+      ],
+      "printed_page": 182,
+      "image_path": "/figures/birhatiah-shared-english-p182.png",
+      "arabic_comparison_page": 86
+    },
+    {
+      "id": "shared-figure-185",
+      "owner_account_id": "shared-050",
+      "related_account_ids": [
+        "shared-050"
+      ],
+      "printed_page": 185,
+      "image_path": "/figures/birhatiah-shared-english-p185.png",
+      "arabic_comparison_page": 87
+    },
+    {
+      "id": "shared-arabic-wick-signs",
+      "owner_account_id": "shared-047",
+      "related_account_ids": [
+        "shared-047"
+      ],
+      "printed_page": 86,
+      "image_path": "/figures/birhatiah-manba-p86.png",
+      "arabic_comparison_page": null
+    },
+    {
+      "id": "shared-arabic-horseshoe-signs",
+      "owner_account_id": "shared-039",
+      "related_account_ids": [
+        "shared-039"
+      ],
+      "printed_page": 83,
+      "image_path": "/figures/birhatiah-manba-p83.png",
+      "arabic_comparison_page": null
+    },
+    {
+      "id": "shared-arabic-printed-signs-p82",
+      "owner_account_id": "shared-038",
+      "related_account_ids": [
+        "shared-038"
+      ],
+      "printed_page": 82,
+      "image_path": "/figures/birhatiah-manba-p82.png",
+      "arabic_comparison_page": null
+    }
+  ],
+  "totals": {
+    "supplied_figures": 8,
+    "arabic_comparison_regions": 8,
+    "additional_arabic_sign_regions": 3
+  },
+  "corrections": [
+    {
+      "account": "shared-013",
+      "source_page": 78,
+      "word": "قرنفل",
+      "meaning": "cloves / ഗ്രാമ്പൂ"
+    },
+    {
+      "account": "shared-038",
+      "source_page": 82,
+      "word": "قرنفل",
+      "meaning": "cloves / ഗ്രാമ്പൂ"
+    }
+  ],
+  "validation": [
+    "PNG dimensions checked against crop metadata",
+    "Source-image regions visually inspected",
+    "Each figure appears once under its matching account",
+    "Related-account searches retain the referenced figure without broken internal links",
+    "Malayalam and English rendering verified",
+    "Original full source pages preserved"
+  ],
+  "limits": [
+    "This image pass does not assert that every long invocation has a complete typed Arabic transcription or literal Malayalam translation.",
+    "Unclear signs remain exact original-image evidence; no missing signs, vowels or blank cells were invented."
+  ]
+}
