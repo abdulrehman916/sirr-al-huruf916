@@ -36,6 +36,16 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
   const [saving, setSaving] = useState(false);
   const [pageSearch, setPageSearch] = useState("");
   const [managedPages, setManagedPages] = useState([]);
+  const [defaultDuration, setDefaultDuration] = useState(null);
+  useEffect(() => {
+    let active = true;
+    platform.functions.invoke('manageSystemSettings', { action: 'GET_SETTINGS' }).then(({ data }) => {
+      const value = data?.settings?.reading_codes?.default_expiry;
+      const preset = DURATION_OPTIONS.find(d => d.value === (value === '30_DAYS' ? '1_MONTH' : value));
+      if (active && preset && preset.value !== 'CUSTOM') setDefaultDuration(preset.value);
+    }).catch(() => {});
+    return () => { active = false; };
+  }, []);
 
   const registeredPages = useMemo(() => getContentPages().map(p => ({
     path: p.path, name: p.name, icon: p.icon || '📖',
@@ -91,6 +101,7 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
         setPageSubFeatures(newSub);
         return newPages;
       }
+      if (defaultDuration) updatePageDuration(path, defaultDuration);
       return [...p, path];
     });
   };

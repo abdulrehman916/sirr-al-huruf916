@@ -381,6 +381,36 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    if (name === 'getRuntimeStatus') {
+      const { data, error } = await client().rpc('runtime_status');
+      if (error) throw error;
+      return { data };
+    }
+    const maintenanceActions = { automatedBackup: 'BACKUP', restoreFromZipBackup: 'RESTORE', resetOnboarding: 'RESET_ONBOARDING', exportData: 'EXPORT' };
+    if (maintenanceActions[name]) {
+      const run = async (action, payload) => {
+        const { data, error } = await client().rpc('owner_maintenance', { p_action: action, p_payload: payload });
+        if (error) throw error;
+        if (!data?.success) throw new Error('Maintenance operation failed');
+        return data;
+      };
+      const backup = async () => {
+        let data = await run('BACKUP', {});
+        while (!data.complete) data = await run('BACKUP', { backup_id: data.backup_id });
+        return data;
+      };
+      if (name === 'automatedBackup') return { data: await backup() };
+      if (name === 'restoreFromZipBackup') {
+        const source = await run('LATEST_BACKUP', {});
+        const recovery = await backup();
+        let data;
+        do {
+          data = await run('RESTORE', { backup_id: source.backup_id, recovery_backup_id: recovery.backup_id });
+        } while (!data.complete);
+        return { data };
+      }
+      return { data: await run(maintenanceActions[name], body) };
+    }
     if (name === 'ownerCustomerDirectory') {
       const { data, error } = await client().rpc('owner_customer_directory', {
         p_search: body.search || '', p_status: body.status || '', p_after: body.after || '', p_limit: body.limit || 50,
