@@ -2,8 +2,9 @@ import { useNavigation } from "@/context/NavigationContext";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import { Shield, LayoutDashboard, Users, Globe, MessageSquare, FileText, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, BarChart3, SlidersHorizontal, ShoppingBag, Store, ScrollText, Tags, LogOut, BookMarked, Library, ListChecks, Search, FilePlus2, BookOpen, LockKeyhole, KeyRound, Link2 } from "lucide-react";
+import { Shield, LayoutDashboard, Users, Globe, MessageSquare, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, Store, LogOut, ListChecks, KeyRound } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
+import { ADMIN_NAVIGATION } from "@/lib/adminNavigation";
 import { filterAdminSections } from "@/lib/rbac";
 import { platform } from "@/api/platformClient";
 import { clearLocalSession } from "@/lib/sessionId";
@@ -17,76 +18,8 @@ const G = {
   bgHi: "rgba(212,175,55,0.14)",
 };
 
-const SIDEBAR_SECTIONS = [
-  {
-    label: "Overview",
-    items: [
-      { path: "/admin/access-dashboard", label: "Dashboard", icon: LayoutDashboard },
-    ]
-  },
-  {
-    label: "User Management",
-    items: [
-      { path: "/admin/approved-users", label: "All Users", icon: Users },
-      { path: "/admin/admins", label: "Admins", icon: Shield },
-    ]
-  },
-  {
-    label: "Access Control",
-    items: [
-      { path: "/admin/access-requests", label: "Access Requests", icon: Inbox },
-      { path: "/admin/access-codes", label: "Access Codes", icon: KeyRound },
-      { path: "/admin/google-linked", label: "Google Linked", icon: Link2 },
-      { path: "/admin/page-permissions", label: "Page Access", icon: Globe },
-    ]
-  },
-  {
-    label: "Knowledge Management",
-    items: [
-      { path: "/admin/master-pdf-library", label: "Master PDF Library", icon: Library },
-      { path: "/admin/pending-reviews", label: "Pending Reviews", icon: ListChecks },
-      { path: "/admin/knowledge-search", label: "Knowledge Search", icon: Search },
-    ]
-  },
-  {
-    label: "Content",
-    items: [
-      { path: "/admin/content-studio", label: "Content Studio", icon: FilePlus2 },
-      { path: "/admin/books-studio", label: "Books Studio", icon: BookOpen },
-      { path: "/admin/resource-studio", label: "Page Access & Pricing", icon: LockKeyhole },
-      { path: "/admin/feature-pricing", label: "Feature Pricing", icon: Tags },
-      { path: "/admin/purpose-dictionary", label: "Purpose Dictionary", icon: BookMarked },
-    ]
-  },
-  {
-    label: "Shop",
-    items: [
-      { path: "/admin/shop", label: "Shop Dashboard", icon: Store },
-      { path: "/admin/products", label: "Products", icon: ShoppingBag },
-    ]
-  },
-  {
-    label: "Support",
-    items: [
-      { path: "/admin/support", label: "Support Messages", icon: MessageSquare },
-    ]
-  },
-  {
-    label: "Reports",
-    items: [
-      { path: "/admin/access-logs", label: "Access Logs", icon: FileText },
-      { path: "/admin/analytics", label: "Analytics & Audit", icon: BarChart3 },
-      { path: "/admin/audit-log", label: "Owner Audit Log", icon: ScrollText },
-    ]
-  },
-  {
-    label: "System",
-    items: [
-      { path: "/admin/settings", label: "Settings", icon: Settings },
-      { path: "/admin/system-settings", label: "System Settings", icon: SlidersHorizontal },
-    ]
-  },
-];
+const NAV_ICONS = { dashboard: LayoutDashboard, users: Users, codes: KeyRound, requests: Inbox, approvals: ListChecks, pages: Globe, support: MessageSquare, shop: Store, settings: Settings };
+const SIDEBAR_SECTIONS = ADMIN_NAVIGATION.map(section => ({ ...section, items: section.items.map(item => ({ ...item, icon: NAV_ICONS[item.icon] })) }));
 
 function SidebarContent({ location, onNavigate }) {
   const { role, adminProfile } = useAuth();
@@ -195,7 +128,7 @@ function SidebarContent({ location, onNavigate }) {
             try { sessionStorage.removeItem("sirr_admin_session"); } catch {}
             try { sessionStorage.removeItem("sirr_google_prompt_dismissed"); } catch {}
             if (onNavigate) onNavigate();
-            await platform.auth.logout("/login");
+            await platform.auth.logout();
           }}
           style={{
             display: "flex",
@@ -223,7 +156,7 @@ function SidebarContent({ location, onNavigate }) {
   );
 }
 
-export default function AdminLayout({ children, title, subtitle, showBackButton = false, backPath = null }) {
+export default function AdminLayout({ children, title = "", subtitle = "", showBackButton = false, backPath = null }) {
   const location = useLocation();
   const { goBack } = useNavigation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
