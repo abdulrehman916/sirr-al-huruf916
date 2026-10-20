@@ -216,6 +216,7 @@ export default function RequestDetail({ request, onUpdate }) {
           style={{ background: "rgba(255,255,255,0.05)", border: `1px solid ${G.border}`, fontSize: "16px" }}
         />
         <button
+          aria-label="Send request reply"
           onClick={handleSendReply}
           disabled={sending || !reply.trim()}
           className="p-2.5 rounded-xl disabled:opacity-50"

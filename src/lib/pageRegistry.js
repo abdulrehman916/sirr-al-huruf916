@@ -103,7 +103,7 @@ registerPage('/astro-clock/search', { pageType: 'content', visible: false, requi
 
 // Support pages — all public
 registerPage('/support', { name: 'Support Hub', icon: '🛡️', category: 'System', pageType: 'content', visible: true, requiresPermission: false });
-registerPage('/support/hub', { pageType: 'content', visible: true, requiresPermission: false });
+registerPage('/support/hub', { name: 'Support Hub', pageType: 'system', visible: false, requiresPermission: false });
 registerPage('/support/chat', { pageType: 'content', visible: false, requiresPermission: false });
 registerPage('/support/voice', { pageType: 'content', visible: false, requiresPermission: false });
 registerPage('/support/ticket', { pageType: 'content', visible: false, requiresPermission: false });
@@ -111,7 +111,7 @@ registerPage('/support/ticket', { pageType: 'content', visible: false, requiresP
 // Subscription pages
 registerPage('/subscription/expired', { pageType: 'system', visible: false, requiresPermission: false });
 registerPage('/subscription/pending', { pageType: 'system', visible: false, requiresPermission: false });
-registerPage('/premium/request', { pageType: 'content', visible: true, requiresPermission: false });
+registerPage('/premium/request', { name: 'Premium Access Request', pageType: 'system', visible: false, requiresPermission: false });
 registerPage('/my-subscription', { name: 'My Subscription', icon: '⭐', category: 'System', pageType: 'content', visible: true, requiresPermission: false });
 
 // Admin pages (all exist in ROUTE_MANIFEST)
@@ -120,7 +120,6 @@ registerPage('/admin/support', { name: 'Support Messages', icon: '💬', categor
 registerPage('/admin/page-permissions', { name: 'Page Permissions', icon: '🌐', category: 'Admin', pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/access-logs', { pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/access-requests', { pageType: 'admin', adminOnly: true, visible: false });
-registerPage('/admin/admins', { name: 'Admins', icon: '🛡️', category: 'Admin', pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/user/:userId', { pageType: 'admin', adminOnly: true, visible: false });
 
 // ── AUTO-REGISTRATION FROM ROUTE_MANIFEST ──────────────────────────
@@ -162,7 +161,7 @@ function isSystemPath(path) {
 for (const entry of ROUTE_MANIFEST) {
   if (pageRegistry.has(entry.path)) continue; // manual registration wins
 
-  if (isSystemPath(entry.path)) {
+  if (isSystemPath(entry.path) || entry.flags?.includes('noauth') || entry.path === '/mizan-completion-test') {
     registerPage(entry.path, {
       pageType: entry.path.startsWith('/admin/') ? 'admin' : 'system',
       adminOnly: entry.path.startsWith('/admin/'),
