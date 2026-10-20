@@ -143,7 +143,7 @@ export default function AdminRedeemApprovals() {
         approval_id: approvalId,
       });
       if (res.data?.success) {
-        toast({ title: "✓ Code Approved", description: "Customer has been notified." });
+        toast({ title: "✓ Code Approved", description: "Customer can view the updated status in their account." });
         await refreshAfterAction();
       } else {
         toast({ title: "Approval Failed", description: res.data?.error, variant: "destructive" });
@@ -168,7 +168,7 @@ export default function AdminRedeemApprovals() {
         rejection_reason: reason,
       });
       if (res.data?.success) {
-        toast({ title: "Code Rejected", description: "Customer has been notified." });
+        toast({ title: "Code Rejected", description: "Customer can view the updated status in their account." });
         await refreshAfterAction();
       } else {
         toast({ title: "Rejection Failed", description: res.data?.error, variant: "destructive" });

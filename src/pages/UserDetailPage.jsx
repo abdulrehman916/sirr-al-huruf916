@@ -62,7 +62,7 @@ export default function UserDetailPage() {
 
   useEffect(() => {
     platform.auth.me().then(user => {
-      if (!user || user.role !== "admin") { setIsAdmin(false); return; }
+      if (!user || !["owner", "admin"].includes(user.role)) { setIsAdmin(false); return; }
       setIsAdmin(true);
       loadUser();
     }).catch(() => setIsAdmin(false));

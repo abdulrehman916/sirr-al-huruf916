@@ -20,6 +20,7 @@ import RenewCodeModal from "@/components/admin/RenewCodeModal";
 import EditCodeModal from "@/components/admin/EditCodeModal";
 import {
   getCodeStatus, fmtDateTime, formatRemainingLong, isLifetime,
+  effectiveCodeExpiry,
 } from "@/lib/codeDuration";
 
 const G = {
@@ -237,7 +238,7 @@ export default function CodeDetailPage() {
             <InfoRow icon={<Smartphone className="w-3.5 h-3.5 text-white/40" />} label="Device ID" value={code.device_id ? code.device_id.slice(0, 24) + "…" : "Not redeemed yet"} />
             <InfoRow icon={<KeyRound className="w-3.5 h-3.5 text-white/40" />} label="User ID" value={code.used_by_user_id ? code.used_by_user_id.slice(0, 24) + "…" : "—"} />
             <InfoRow icon={<Clock className="w-3.5 h-3.5 text-white/40" />} label="Redeemed Date" value={code.used_at ? fmtDateTime(code.used_at) : "Not redeemed"} />
-            <InfoRow icon={<Clock className="w-3.5 h-3.5 text-white/40" />} label="Expiry Date" value={fmtDateTime(code.expiry_date)} color={isLifetime(code) ? { color: "#22c55e" } : undefined} />
+            <InfoRow icon={<Clock className="w-3.5 h-3.5 text-white/40" />} label="Expiry Date" value={fmtDateTime(effectiveCodeExpiry(code))} color={isLifetime(code) ? { color: "#22c55e" } : undefined} />
             <InfoRow icon={<Clock className="w-3.5 h-3.5 text-white/40" />} label="Remaining Time" value={formatRemainingLong(code.expiry_date)} />
             <InfoRow icon={<RefreshCw className="w-3.5 h-3.5 text-white/40" />} label="Reset Count" value={String(code.reset_count || 0)} />
           </div>

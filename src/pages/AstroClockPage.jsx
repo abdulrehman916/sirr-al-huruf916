@@ -4,7 +4,6 @@
 // UI-only redesign: no calculation/engine changes
 // ═══════════════════════════════════════════════════════════════
 import { Suspense, lazy, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { requestLocationPermission, startLocationWatch, stopLocationWatch, setManualLocation, setManualLocationByCoords, getUserLocation, subscribeLocation } from "@/lib/astroClockGeolocation";
 import { KNOWN_LOCATIONS } from "@/lib/astroClockSunriseSunset";
 import { AstroClockLanguageProvider, useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
@@ -182,10 +181,10 @@ function AstroClockContent() {
         <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
           <PageTitle arabic="الساعة الفلكية" latin={language === "en" ? "Astro Clock" : undefined} subtitle={txt("പാരമ്പര്യ സമയ വ്യവസ്ഥ", "Traditional Timing System", "Geleneksel Zaman Sistemi")} icon="🕰" />
           <div className="flex items-center gap-2">
-            <Link to="/manuscript-library" className="px-3 py-2 rounded-xl border text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5"
+            <button type="button" onClick={() => document.getElementById("reference-library")?.scrollIntoView({ behavior: "smooth" })} className="px-3 py-2 rounded-xl border text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5"
               style={{ background: "rgba(212,175,55,0.10)", color: "#F5D060", borderColor: "rgba(212,175,55,0.30)" }}>
               📚 {txt("ഗ്രന്ഥശേഖരം", "Library", "Kütüphane")}
-            </Link>
+            </button>
             <LangSelector />
             <CustomDatePicker />
             <LocationSelector />
@@ -368,6 +367,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
 
         <AstroClockErrorBoundary label="References">
+          <div id="reference-library" />
           <DashboardSection icon="📖" title={txt("റഫറൻസ് ലൈബ്രറി", "Reference Library", "Kaynak Kitaplığı")}
             subtitle={txt("എല്ലാ ഗ്രന്ഥങ്ങളുടെയും പൂർണ്ണ കാറ്റലോഗ്", "Master Manuscript Catalog", "Ana El Yazması Kataloğu")}>
             <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>

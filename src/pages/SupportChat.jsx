@@ -62,13 +62,8 @@ export default function SupportChat() {
       if (existing.length > 0 && existing[0].status !== "CLOSED") {
         tid = existing[0].ticket_id;
       } else {
-        const allTickets = await platform.entities.SupportTickets.list('-created_at', 100);
-        const maxNum = allTickets.reduce((max, t) => {
-          const n = parseInt(t.ticket_id?.split("-")[1] || "0");
-          return n > max ? n : max;
-        }, 0);
-        const newId = `SUP-${String(maxNum + 1).padStart(6, "0")}`;
-        await platform.entities.SupportTickets.create({
+        const newId = `SUP-${crypto.randomUUID().toUpperCase()}`;
+        const createdTicket = await platform.entities.SupportTickets.create({
           ticket_id: newId,
           name: u.full_name || u.email || "User",
           mobile: "",
@@ -79,7 +74,7 @@ export default function SupportChat() {
           status: "OPEN",
           created_at: new Date().toISOString(),
         });
-        tid = newId;
+        tid = createdTicket.ticket_id;
       }
       setTicketId(tid);
 
@@ -109,7 +104,7 @@ export default function SupportChat() {
         created_at: new Date().toISOString(),
         is_read: false,
       });
-      setMessages(prev => [...prev, msg]);
+      setMessages(prev => prev.some(item => item.id === msg.id) ? prev : [...prev, msg]);
       setText("");
     } catch (err) {
       toast({ title: "Failed", description: err.message, variant: "destructive" });

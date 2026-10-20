@@ -21,6 +21,14 @@ const unwrap = ({ data, error }) => { if (error) throw error; return data; };
 const references = createReferenceResolver(client);
 supabase?.auth.onAuthStateChange(() => references.clear());
 const hydrateRecord = (row) => references.resolve(toRecord(row));
+// Resolve only at the RPC boundary: public record IDs and relationships remain stable.
+const accessCodePayload = async (body) => {
+  if (!body.code_id) return body;
+  const row = unwrap(await byRecordId(client().from('platform_records')
+    .select('id').eq('entity', 'AccessCode'), body.code_id).single());
+  return { ...body, code_id: row.id };
+};
+
 const sortQuery = (query, sort) => {
   if (!sort) return query;
   const ascending = !String(sort).startsWith('-');
@@ -47,6 +55,11 @@ const entityApi = (entity) => ({
     return hydrateRecord(unwrap(await byRecordId(client().from('platform_records').select('*').eq('entity', entity), id).maybeSingle()));
   },
   async create(data) {
+    if (entity === 'SupportTickets' || entity === 'SupportMessage') {
+      return hydrateRecord(unwrap(await client().rpc('create_support_record', {
+        p_entity: entity, p_payload: references.restore(data),
+      })));
+    }
     return hydrateRecord(unwrap(await client().from('platform_records').insert({ entity, data: references.restore(data) }).select().single()));
   },
   async update(id, data) {
@@ -325,10 +338,15 @@ const integrations = { Core: {
   async UploadFile({ file, bucket = 'private-documents', path } = {}) {
     const user = await auth.me();
     if (!user) throw new Error('Sign in is required to upload files.');
+    if (!file || file.size > 50 * 1024 * 1024) throw new Error('Choose a file smaller than 50 MB.');
     const safeName = String(file?.name || 'upload').replace(/[^a-zA-Z0-9._-]/g, '-');
     const objectPath = path || `${user.id}/${crypto.randomUUID()}-${safeName}`;
     unwrap(await client().storage.from(bucket).upload(objectPath, file, { upsert: false }));
-    return { file_url: objectPath, bucket };
+    const fileUrl = bucket === 'private-documents'
+      ? await references.resolve(`storage://private-documents/${objectPath}`)
+      : unwrap(await client().storage.from(bucket).createSignedUrl(objectPath, 900)).signedUrl;
+    if (!fileUrl) throw new Error('File uploaded, but its preview URL could not be created.');
+    return { file_url: fileUrl, path: objectPath, bucket };
   },
   async CreateSignedDownload({ path, bucket = 'private-documents', expiresIn = 120 } = {}) {
     if (!path) throw new Error('A file path is required.');
@@ -338,10 +356,48 @@ const integrations = { Core: {
   async InvokeLLM(payload) { return unwrap(await client().functions.invoke('invoke-llm', { body: payload })); },
 } };
 
+const pendingInvocations = new Map();
+const coalesceInvocations = (invoke) => (name, body = {}) => {
+  const key = JSON.stringify([name, body]);
+  if (pendingInvocations.has(key)) return pendingInvocations.get(key);
+  const pending = Promise.resolve().then(() => invoke(name, body))
+    .finally(() => { if (pendingInvocations.get(key) === pending) pendingInvocations.delete(key); });
+  pendingInvocations.set(key, pending);
+  return pending;
+};
+
 export const platform = {
   auth,
   integrations,
-  functions: { async invoke(name, body = {}) {
+  functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    const adminWorkflow = { manageAdminProfile: 'admins', manageCustomerAssignment: 'assignments', manageSupportRouting: 'support' };
+    if (adminWorkflow[name]) {
+      const { data, error } = await client().rpc('manage_admin_workflow', { p_domain: adminWorkflow[name], p_payload: body });
+      if (error) throw error;
+      return { data };
+    }
+    const workflowRpc = { replyToAccessRequest: 'reply_access_request', manageRedeemCodeApproval: 'manage_redeem_approval' };
+    if (workflowRpc[name]) {
+      const { data, error } = await client().rpc(workflowRpc[name], { p_payload: body });
+      if (error) throw error;
+      return { data };
+    }
+    if (name === 'syncPageVisibility' || name === 'syncModuleRegistry') {
+      const { data, error } = await client().rpc('sync_owner_registry', {
+        p_kind: name === 'syncPageVisibility' ? 'pages' : 'modules',
+        p_items: name === 'syncPageVisibility' ? body.routes : body.modules,
+      });
+      if (error) throw error;
+      return { data };
+    }
+    if (name === 'manageSystemSettings' || name === 'getOwnerAuditLog') {
+      const { data, error } = await client().rpc('owner_configuration', {
+        p_action: name === 'getOwnerAuditLog' ? 'AUDIT_LOG' : body.action,
+        p_payload: body,
+      });
+      if (error) throw error;
+      return { data };
+    }
     if (name === 'redeemCodeLinked' || name === 'redeemCodeGuest') {
       const { data, error } = await client().rpc('redeem_access_code', { p_code: body.code });
       if (error) throw error;
@@ -359,7 +415,7 @@ export const platform = {
     };
     if (codeActions[name]) {
       const { data, error } = await client().rpc('manage_access_code',
-        { p_action: codeActions[name], p_payload: body });
+        { p_action: codeActions[name], p_payload: await accessCodePayload(body) });
       if (error) throw error;
       return { data };
     }
@@ -388,7 +444,7 @@ export const platform = {
     };
     if (codeDetailActions[name]) {
       const { data, error } = await client().rpc('manage_access_code_detail',
-        { p_action: codeDetailActions[name], p_payload: body });
+        { p_action: codeDetailActions[name], p_payload: await accessCodePayload(body) });
       if (error) throw error;
       return { data };
     }
@@ -437,7 +493,7 @@ export const platform = {
     const { data, error } = await client().functions.invoke(name, { body });
     if (error) throw error;
     return { data };
-  } },
+  }) },
   entities: /** @type {Record<string, ReturnType<typeof entityApi>> & { User: typeof userDirectoryApi, ManagedPage: typeof managedPageApi }} */ (new Proxy({}, { get: (_target, entity) => String(entity) === 'ManagedPage'
     ? managedPageApi : String(entity) === 'User' ? userDirectoryApi : entityApi(String(entity)) })),
   async canAccessLegacyPage(pagePath) {

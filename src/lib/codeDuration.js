@@ -132,36 +132,50 @@ export function formatRemainingLong(expiryDate) {
  * Get computed status of a code based on current time.
  * Returns { label, color, value }
  */
+export function effectiveCodeExpiry(code) {
+  const grants = (code.page_paths || []).map(path => code.page_grants?.[path]);
+  if (!grants.length) return code.expiry_date || null;
+  const expiries = grants.map(grant => grant && Object.hasOwn(grant, 'expires_at')
+    ? grant.expires_at : code.expiry_date);
+  if (expiries.some(expiry => !expiry)) return null;
+  return expiries.reduce((latest, expiry) =>
+    new Date(expiry) > new Date(latest) ? expiry : latest);
+}
+
 export function getCodeStatus(code) {
   if (code.is_disabled) return { label: 'Disabled', color: '#6b7280', value: 'disabled' };
-  if (code.expiry_date && new Date(code.expiry_date) < new Date()) return { label: 'Expired', color: '#ef4444', value: 'expired' };
+  const expiry = effectiveCodeExpiry(code);
+  if (expiry && new Date(expiry) <= new Date()) return { label: 'Expired', color: '#ef4444', value: 'expired' };
   if ((code.use_count || 0) >= (code.max_uses || 1)) return { label: 'Used', color: '#f59e0b', value: 'used' };
   return { label: 'Active', color: '#22c55e', value: 'active' };
 }
 
 export function isLifetime(code) {
-  return !code.expiry_date;
+  return !effectiveCodeExpiry(code);
 }
 
 export function isExpiringToday(code) {
-  if (!code.expiry_date) return false;
+  const expiryDate = effectiveCodeExpiry(code);
+  if (!expiryDate) return false;
   const now = new Date();
-  const expiry = new Date(code.expiry_date);
+  const expiry = new Date(expiryDate);
   return expiry.toDateString() === now.toDateString() && expiry > now;
 }
 
 export function isExpiringTomorrow(code) {
-  if (!code.expiry_date) return false;
+  const expiryDate = effectiveCodeExpiry(code);
+  if (!expiryDate) return false;
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
-  return new Date(code.expiry_date).toDateString() === tomorrow.toDateString();
+  return new Date(expiryDate).toDateString() === tomorrow.toDateString();
 }
 
 export function isExpiringWithin7Days(code) {
-  if (!code.expiry_date) return false;
+  const expiryDate = effectiveCodeExpiry(code);
+  if (!expiryDate) return false;
   const now = new Date();
   const sevenDays = new Date(now.getTime() + 7 * 86400000);
-  const expiry = new Date(code.expiry_date);
+  const expiry = new Date(expiryDate);
   return expiry > now && expiry <= sevenDays;
 }
 

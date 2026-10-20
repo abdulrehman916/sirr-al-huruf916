@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mic, MicOff, StopCircle, ArrowLeft, Send, Loader2 } from "lucide-react";
@@ -30,6 +30,15 @@ export default function SupportVoice() {
   const mediaRecorderRef = useRef(null);
   const chunksRef = useRef([]);
   const timerRef = useRef(null);
+  useEffect(() => () => {
+    clearInterval(timerRef.current);
+    const recorder = mediaRecorderRef.current;
+    if (recorder) {
+      recorder.onstop = null;
+      if (recorder.state !== 'inactive') recorder.stop();
+      recorder.stream.getTracks().forEach(track => track.stop());
+    }
+  }, []);
 
   const formatDuration = (s) => {
     const m = Math.floor(s / 60);
@@ -45,11 +54,11 @@ export default function SupportVoice() {
       mediaRecorderRef.current.ondataavailable = (e) => {
         if (e.data.size > 0) chunksRef.current.push(e.data);
       };
+      const recordingStartedAt = Date.now();
       mediaRecorderRef.current.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+        const blob = new Blob(chunksRef.current, { type: mediaRecorderRef.current.mimeType || "audio/webm" });
         setAudioBlob(blob);
-        const audio = new Audio(URL.createObjectURL(blob));
-        audio.onloadedmetadata = () => setAudioDuration(Math.floor(audio.duration));
+        setAudioDuration(Math.max(0, Math.round((Date.now() - recordingStartedAt) / 1000)));
       };
       mediaRecorderRef.current.start();
       setIsRecording(true);
@@ -69,6 +78,7 @@ export default function SupportVoice() {
   };
 
   const discardRecording = () => {
+    if (mediaRecorderRef.current) mediaRecorderRef.current.onstop = null;
     stopRecording();
     setAudioBlob(null);
     setAudioDuration(0);
@@ -82,14 +92,9 @@ export default function SupportVoice() {
     }
     setUploading(true);
     try {
-      const file = new File([audioBlob], `voice-${Date.now()}.webm`, { type: "audio/webm" });
+      const file = new File([audioBlob], `voice-${Date.now()}.webm`, { type: audioBlob.type?.split(";")[0] || "audio/webm" });
       const uploadRes = await platform.integrations.Core.UploadFile({ file });
-      const allTickets = await platform.entities.SupportTickets.list('-created_at', 100);
-      const maxNum = allTickets.reduce((max, t) => {
-        const n = parseInt(t.ticket_id?.split("-")[1] || "0");
-        return n > max ? n : max;
-      }, 0);
-      const ticketId = `SUP-${String(maxNum + 1).padStart(6, "0")}`;
+      const ticketId = `SUP-${crypto.randomUUID().toUpperCase()}`;
       await platform.entities.SupportTickets.create({
         ticket_id: ticketId,
         name,

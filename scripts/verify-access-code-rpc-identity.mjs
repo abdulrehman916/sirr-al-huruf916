@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import { build } from 'esbuild';
+const uuid='12345678-1234-4234-8234-123456789abc';
+const legacy='6a3eb24c7f23de95a4e10001';
+const calls=[];
+const query={select(){return this;},eq(column,value){calls.push({column,value});return this;},async single(){return {data:{id:uuid},error:null};}};
+const mock={auth:{onAuthStateChange(){}},from(table){assert.equal(table,'platform_records');return query;},async rpc(name,args){calls.push({name,args});return {data:{success:true},error:null};}};
+const built=await build({entryPoints:['src/api/platformClient.js'],bundle:true,write:false,format:'iife',globalName:'Client',define:{'import.meta.env.VITE_SUPABASE_URL':'"https://example.supabase.co"','import.meta.env.VITE_SUPABASE_ANON_KEY':'"public-test-key"'},plugins:[{name:'test-client',setup(b){b.onResolve({filter:/^@supabase\/supabase-js$/},()=>({path:'mock',namespace:'test'}));b.onLoad({filter:/.*/,namespace:'test'},()=>({contents:'export const createClient = () => globalThis.mock;'}));}}]});
+const context={mock,console,URL,URLSearchParams};vm.createContext(context);vm.runInContext(built.outputFiles[0].text,context);
+for(const id of [legacy,uuid]) for(const name of ['setAccessCodeDisabled','resetCodeDevice','updateAccessCode','renewAccessCode','deleteAccessCodeSecure','linkAccessCode','transferAccessCode','unlinkAccessCode']){
+ calls.length=0; const body={code_id:id,disable:true};
+ await context.Client.platform.functions.invoke(name,body);
+ assert.ok(calls.some(c=>c.column===(id===uuid?'id':'data->>_base44_legacy_id')&&c.value===id));
+ assert.equal(calls.at(-1).args.p_payload.code_id,uuid);
+ assert.equal(body.code_id,id,'do not mutate caller record');
+}
+console.log('PASS: all eight access-code mutation RPCs resolve imported and UUID IDs while preserving public IDs.');
+calls.length=0;
+const first=context.Client.platform.functions.invoke('renewAccessCode',{code_id:legacy,duration_type:'DAYS',duration_count:1});
+const repeated=context.Client.platform.functions.invoke('renewAccessCode',{code_id:legacy,duration_type:'DAYS',duration_count:1});
+assert.equal(first,repeated,'coalesce simultaneous duplicate submissions');
+await Promise.all([first,repeated]);
+assert.equal(calls.filter(c=>c.name==='manage_access_code_detail').length,1);
+await context.Client.platform.functions.invoke('renewAccessCode',{code_id:legacy,duration_type:'DAYS',duration_count:1});
+assert.equal(calls.filter(c=>c.name==='manage_access_code_detail').length,2,'later deliberate retry is allowed');
+let fail=true;mock.rpc=async()=>fail?{error:new Error('temporary API failure')}:{data:{success:true},error:null};
+await assert.rejects(()=>context.Client.platform.functions.invoke('renewAccessCode',{code_id:legacy}));
+fail=false;await context.Client.platform.functions.invoke('renewAccessCode',{code_id:legacy});
+console.log('PASS: simultaneous mutation deduplication; later repeat and retry after API failure.');

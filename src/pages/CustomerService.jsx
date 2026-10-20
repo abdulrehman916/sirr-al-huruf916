@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Send, Upload, FileText, Image, Monitor, Mic, MicOff, StopCircle } from "lucide-react";
 import { platform } from "@/api/platformClient";
@@ -46,6 +46,15 @@ export default function CustomerService() {
   const mediaRecorderRef = useRef(null);
   const chunksRef = useRef([]);
   const timerRef = useRef(null);
+  useEffect(() => () => {
+    clearInterval(timerRef.current);
+    const recorder = mediaRecorderRef.current;
+    if (recorder) {
+      recorder.onstop = null;
+      if (recorder.state !== 'inactive') recorder.stop();
+      recorder.stream.getTracks().forEach(track => track.stop());
+    }
+  }, []);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -65,7 +74,7 @@ export default function CustomerService() {
     if (!file) return;
 
     // Validate file type (images, PDFs, audio)
-    const validTypes = ['image/jpeg', 'image/png', 'image/gif', 'application/pdf', 'audio/mpeg', 'audio/mp4', 'audio/wav', 'audio/webm'];
+    const validTypes = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf', 'audio/mpeg', 'audio/mp4', 'audio/wav', 'audio/webm'];
     if (!validTypes.includes(file.type)) {
       toast({
         title: "Invalid File Type",
@@ -116,15 +125,12 @@ export default function CustomerService() {
         }
       };
 
+      const recordingStartedAt = Date.now();
       mediaRecorderRef.current.onstop = async () => {
-        const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
+        const blob = new Blob(chunksRef.current, { type: mediaRecorderRef.current.mimeType || 'audio/webm' });
         setAudioBlob(blob);
 
-        // Calculate duration
-        const audio = new Audio(URL.createObjectURL(blob));
-        audio.onloadedmetadata = () => {
-          setAudioDuration(Math.floor(audio.duration));
-        };
+        setAudioDuration(Math.max(0, Math.round((Date.now() - recordingStartedAt) / 1000)));
       };
 
       mediaRecorderRef.current.start();
@@ -172,6 +178,7 @@ export default function CustomerService() {
 
   const cancelRecording = () => {
     if (mediaRecorderRef.current && isRecording) {
+      mediaRecorderRef.current.onstop = null;
       mediaRecorderRef.current.stop();
       mediaRecorderRef.current.stream.getTracks().forEach(track => track.stop());
     }
@@ -189,7 +196,7 @@ export default function CustomerService() {
 
     setUploading(true);
     try {
-      const file = new File([audioBlob], `voice-message-${Date.now()}.webm`, { type: 'audio/webm' });
+      const file = new File([audioBlob], `voice-message-${Date.now()}.webm`, { type: audioBlob.type?.split(';')[0] || 'audio/webm' });
       const result = await platform.integrations.Core.UploadFile({ file });
       return { url: result.file_url, duration: audioDuration };
     } catch (error) {
@@ -211,12 +218,7 @@ export default function CustomerService() {
   };
 
   const generateTicketId = async () => {
-    const existingTickets = await platform.entities.SupportTickets.list('-created_at', 100);
-    const maxNum = existingTickets.reduce((max, ticket) => {
-      const num = parseInt(ticket.ticket_id.split('-')[1]);
-      return num > max ? num : max;
-    }, 0);
-    return `SUP-${String(maxNum + 1).padStart(6, '0')}`;
+    return `SUP-${crypto.randomUUID().toUpperCase()}`;
   };
 
   const handleSubmit = async (e) => {
@@ -231,6 +233,7 @@ export default function CustomerService() {
       return;
     }
 
+    if (loading) return;
     setLoading(true);
     try {
       const ticketId = await generateTicketId();
@@ -240,6 +243,7 @@ export default function CustomerService() {
       let audioData = null;
       if (audioBlob) {
         audioData = await uploadAudio();
+        if (!audioData) throw new Error("Audio upload failed. Please try again.");
       }
 
       await platform.entities.SupportTickets.create({

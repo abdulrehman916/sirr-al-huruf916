@@ -108,7 +108,8 @@ export default function WhatsAppSupport() {
     const message = encodeURIComponent(
       `Hello ${name}, I need support from Sirr al-Huruf.`
     );
-    window.open(`https://wa.me/${cleanNumber}?text=${message}`, "_blank");
+    if (!cleanNumber) throw new Error("Support WhatsApp number has not been configured.");
+    window.location.assign(`https://wa.me/${cleanNumber}?text=${message}`);
   };
 
   const handleEmailSubmit = async (e) => {

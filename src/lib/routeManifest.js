@@ -50,21 +50,21 @@ const ROUTE_MANIFEST = [
   { path: '/books/:slug', component: 'BookDetailPage', chunk: 'BookDetailPage', flags: ['public'] },
   
   // Support — all public
-  { path: '/support', component: 'CustomerService', chunk: 'CustomerService', flags: ['public'] },
+  { path: '/support', component: 'CustomerService', chunk: 'CustomerService', flags: ['public', 'account'] },
   { path: '/support/hub', component: 'SupportHub', chunk: 'SupportHub', flags: ['public'] },
-  { path: '/support/chat', component: 'SupportChat', chunk: 'SupportChat', flags: ['public'] },
-  { path: '/support/voice', component: 'SupportVoice', chunk: 'SupportVoice', flags: ['public'] },
-  { path: '/support/ticket', component: 'SupportTicket', chunk: 'SupportTicket', flags: ['public'] },
-  { path: '/support/whatsapp', component: 'WhatsAppSupport', chunk: 'WhatsAppSupport', flags: ['public'] },
+  { path: '/support/chat', component: 'SupportChat', chunk: 'SupportChat', flags: ['public', 'account'] },
+  { path: '/support/voice', component: 'SupportVoice', chunk: 'SupportVoice', flags: ['public', 'account'] },
+  { path: '/support/ticket', component: 'SupportTicket', chunk: 'SupportTicket', flags: ['public', 'account'] },
+  { path: '/support/whatsapp', component: 'WhatsAppSupport', chunk: 'WhatsAppSupport', flags: ['public', 'account'] },
   
   // Access & Subscription utility pages — all public
   { path: '/subscription/expired', component: 'SubscriptionExpired', chunk: 'SubscriptionExpired', flags: ['public'] },
   { path: '/subscription/pending', component: 'SubscriptionPending', chunk: 'SubscriptionPending', flags: ['public'] },
-  { path: '/premium/request', component: 'PremiumAccessRequest', chunk: 'PremiumAccessRequest', flags: ['public'] },
-  { path: '/my-subscription', component: 'MySubscription', chunk: 'MySubscription', flags: ['public'] },
-  { path: '/my-library', component: 'MyLibrary', chunk: 'MyLibrary', flags: ['public'] },
-  { path: '/my-requests', component: 'MyRequests', chunk: 'MyRequests', flags: ['public'] },
-  { path: '/redeem-approval', component: 'RedeemCodeApproval', chunk: 'RedeemCodeApproval', flags: ['public'] },
+  { path: '/premium/request', component: 'PremiumAccessRequest', chunk: 'PremiumAccessRequest', flags: ['public', 'account'] },
+  { path: '/my-subscription', component: 'MySubscription', chunk: 'MySubscription', flags: ['public', 'account'] },
+  { path: '/my-library', component: 'MyLibrary', chunk: 'MyLibrary', flags: ['public', 'account'] },
+  { path: '/my-requests', component: 'MyRequests', chunk: 'MyRequests', flags: ['public', 'account'] },
+  { path: '/redeem-approval', component: 'RedeemCodeApproval', chunk: 'RedeemCodeApproval', flags: ['public', 'account'] },
 
   // Admin
   { path: '/admin/access-dashboard', component: 'AdminDashboard', chunk: 'AdminDashboard' },
