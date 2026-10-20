@@ -84,7 +84,6 @@ const PAGE_IMPORTS = {
   AdminSettings:            () => import('./pages/AdminSettings'),
   AdminSystemSettings:      () => import('./pages/AdminSystemSettings'),
   AdminAnalytics:           () => import('./pages/AdminAnalytics'),
-  AdminAdmins:              () => import('./pages/AdminAdmins'),
   UserDetailPage:           () => import('./pages/UserDetailPage'),
   AdminPDFContentEditor:    () => import('./pages/AdminPDFContentEditor'),
   OwnerBooksStudio:         () => import('./pages/OwnerBooksStudio'),

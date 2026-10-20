@@ -18,6 +18,7 @@
 
 import { getLocalPermissions, checkLocalPermission } from './sessionId';
 import { getFeatures, hasSubFeatures } from './featureRegistry';
+import { featureGrantActive } from './permissionGrants';
 import { getCachedFeaturePermission } from './featureConfigCache';
 
 // ── Module-level admin flag (set by ProtectedPage when admin is detected) ──
@@ -58,6 +59,7 @@ export function checkFeatureAccess(pagePath, featureId) {
 
   // No permission entry at all → locked
   if (!perm) return false;
+  if (Array.isArray(perm.grants)) return perm.grants.some(grant => featureGrantActive(grant, featureId));
 
   // No sub_features → all features unlocked (backward compat)
   // But still check page-level expiry

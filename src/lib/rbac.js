@@ -16,7 +16,7 @@
 //
 // The SHOP_ADMIN constant is retained for backward compatibility only.
 // ═══════════════════════════════════════════════════════════════
-import { ADMIN_CONFIG } from "@/lib/adminConfig";
+
 
 export const ROLES = {
   OWNER: "owner",
@@ -27,26 +27,13 @@ export const ROLES = {
 };
 
 export function isAdminRole(role) {
-  return role === ROLES.OWNER || role === ROLES.ADMIN;
+  return role === ROLES.OWNER;
 }
 
 // Resolve role from platform user + AdminProfile record.
-export function resolveRole(user, adminProfile) {
+export function resolveRole(user) {
   if (!user) return ROLES.GUEST;
-  // Owner email safety net — guarantees the owner is never locked out,
-  // even before the AdminProfile record is bootstrapped.
-  if (user.email && ADMIN_CONFIG.OWNER_EMAIL &&
-      user.email.toLowerCase() === String(ADMIN_CONFIG.OWNER_EMAIL).toLowerCase()) {
-    return ROLES.OWNER;
-  }
-  if (user.role !== "admin") return ROLES.CUSTOMER;
-  if (!adminProfile) return ROLES.CUSTOMER;
-  if (adminProfile.is_owner === true) return ROLES.OWNER;
-  if (adminProfile.status !== "ACTIVE") return ROLES.CUSTOMER;
-  // Shop Management is an additional permission on an Admin, not a separate role.
-  // An Admin with perm_shop_management stays 'admin' and additionally gains the
-  // Shop routes (see ROUTE_ACCESS perm gating below).
-  return ROLES.ADMIN;
+  return user.role === 'owner' ? ROLES.OWNER : ROLES.CUSTOMER;
 }
 
 // ── Admin route access matrix ──────────────────────────────────
@@ -146,21 +133,8 @@ export function isDeveloperLockedPath(path) {
 }
 
 // Can the given role access an admin route?
-export function canAccessAdminRoute(role, path, adminProfile) {
-  // Hard developer lock — owner-only, no permission override possible.
-  if (isDeveloperLockedPath(path)) return role === ROLES.OWNER;
-
-  const rule = matchAdminRoute(path);
-  if (!rule) {
-    // Unlisted /admin route — default owner-only (strict).
-    return role === ROLES.OWNER;
-  }
-  if (role === ROLES.OWNER) return true;
-  if (!rule.roles.includes(role)) return false;
-  if (role === ROLES.ADMIN && rule.perm) {
-    return adminProfile ? adminProfile[rule.perm] === true : false;
-  }
-  return true;
+export function canAccessAdminRoute(role, path) {
+  return role === ROLES.OWNER && path !== '/admin/admins';
 }
 
 // Landing admin path per role. (Shop Management is a permission, not a role,
@@ -173,21 +147,12 @@ export function getAdminHomePath(role) {
 // Content tabs are visible to all roles (gated by reading codes downstream).
 // 'admin-shop' tab is visible to the owner, and to an Admin only when that
 // Admin has been granted the shop-management permission (perm_shop_management).
-export function isNavTabVisible(tabId, role, adminProfile) {
-  if (tabId !== "admin-shop") return true;
-  if (role === ROLES.OWNER) return true;
-  if (role === ROLES.ADMIN) return adminProfile ? adminProfile.perm_shop_management === true : false;
-  return false;
+export function isNavTabVisible(tabId, role) {
+  return tabId !== 'admin-shop' || role === ROLES.OWNER;
 }
 
-// Filter admin sidebar sections for the role.
-// sections: array of { label, items: [{path, label, icon}] }
-export function filterAdminSections(sections, role, adminProfile) {
-  if (role === ROLES.OWNER) return sections;
-  return sections
-    .map((section) => ({
-      ...section,
-      items: section.items.filter((item) => canAccessAdminRoute(role, item.path, adminProfile)),
-    }))
-    .filter((section) => section.items.length > 0);
+export function filterAdminSections(sections, role) {
+  if (role !== ROLES.OWNER) return [];
+  return sections.map(section => ({ ...section, items: section.items.filter(item => item.path !== '/admin/admins') }))
+    .filter(section => section.items.length > 0);
 }

@@ -2,6 +2,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { toRecord, byRecordId } from './recordIdentity';
 import { createReferenceResolver } from './privateReferenceAssets';
+import { mergePermissionGrants } from '../lib/permissionGrants.js';
 
 const url = import.meta.env.VITE_SUPABASE_URL;
 const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
@@ -38,12 +39,22 @@ const sortQuery = (query, sort) => {
 };
 
 const entityApi = (entity) => ({
+  async summaries(fields, limit = 500) {
+    if (!Array.isArray(fields) || fields.some(field => !/^[a-z_][a-z0-9_]*$/.test(field))) throw new Error('Invalid summary fields.');
+    const selected = [...new Set(['_base44_legacy_id', ...fields])];
+    const columns = ['id', 'created_at', 'updated_at', ...selected.map(field => `${field}:data->${field}`)].join(',');
+    const rows = unwrap(await client().from('platform_records').select(columns).eq('entity', entity).limit(Math.min(limit, 500)));
+    return rows.map(({ id, created_at, updated_at, ...data }) => toRecord({ id, created_at, updated_at, data }));
+  },
   async list(sort = null, limit = 100, skip = 0) {
+    if (entity === 'FeatureConfig') return (unwrap(await client().rpc('feature_configs', { p_path: null })) || []).slice(skip, skip + limit).map(toRecord);
     let query = client().from('platform_records').select('*').eq('entity', entity);
     query = sortQuery(query, sort).range(skip || 0, (skip || 0) + (limit || 100) - 1);
     return Promise.all(unwrap(await query).map(hydrateRecord));
   },
   async filter(filters = {}, sort = null, limit = 100, skip = 0) {
+    if (entity === 'FeatureConfig') return (unwrap(await client().rpc('feature_configs', { p_path: filters.page_path || null })) || []).map(toRecord)
+      .filter(row => Object.entries(filters).every(([key, value]) => row[key] === value)).slice(skip, skip + limit);
     let query = client().from('platform_records').select('*').eq('entity', entity);
     Object.entries(filters || {}).forEach(([key, value]) => {
       query = key === 'id' ? byRecordId(query, value) : query.eq(`data->>${key}`, String(value));
@@ -279,7 +290,7 @@ const auth = {
     return { ...meta, id: data.user.id, email: data.user.email,
       full_name: profile.full_name || meta.full_name || meta.name || '',
       photo_url: profile.avatar_url || meta.avatar_url || meta.picture || '',
-      role: profile.role };
+      role: profile.role === 'owner' ? 'owner' : 'customer' };
   },
   async isAuthenticated() { return Boolean(await this.me()); },
   async loginWithProvider(provider = 'google', returnTo = '/') {
@@ -370,15 +381,27 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
-    const adminWorkflow = { manageAdminProfile: 'admins', manageCustomerAssignment: 'assignments', manageSupportRouting: 'support' };
-    if (adminWorkflow[name]) {
-      const { data, error } = await client().rpc('manage_admin_workflow', { p_domain: adminWorkflow[name], p_payload: body });
+    if (name === 'ownerCustomerDirectory') {
+      const { data, error } = await client().rpc('owner_customer_directory', {
+        p_search: body.search || '', p_status: body.status || '', p_after: body.after || '', p_limit: body.limit || 50,
+      });
       if (error) throw error;
       return { data };
     }
-    const workflowRpc = { replyToAccessRequest: 'reply_access_request', manageRedeemCodeApproval: 'manage_redeem_approval' };
+    if (name === 'setCustomerStatus') {
+      const { data, error } = await client().rpc('set_customer_status', { p_user_id: body.user_id, p_status: body.status === 'BLOCKED' ? 'disabled' : 'active' });
+      if (error) throw error;
+      return { data };
+    }
+    const adminWorkflow = { manageSupportRouting: 'support' };
+    if (adminWorkflow[name]) {
+      const { data, error } = await client().rpc('owner_support', { p_payload: body });
+      if (error) throw error;
+      return { data: await references.resolve(data) };
+    }
+    const workflowRpc = { ownerReplySupport: 'owner_reply_support', replyToAccessRequest: 'reply_access_request', manageRedeemCodeApproval: 'manage_redeem_approval' };
     if (workflowRpc[name]) {
-      const { data, error } = await client().rpc(workflowRpc[name], { p_payload: body });
+      const { data, error } = await client().rpc(workflowRpc[name], { p_payload: references.restore(body) });
       if (error) throw error;
       return { data };
     }
@@ -401,7 +424,9 @@ export const platform = {
     if (name === 'redeemCodeLinked' || name === 'redeemCodeGuest') {
       const { data, error } = await client().rpc('redeem_access_code', { p_code: body.code });
       if (error) throw error;
-      return { data };
+      const { data: refreshed, error: refreshError } = await client().rpc('legacy_permission_grants');
+      if (refreshError) throw refreshError;
+      return { data: { ...data, permissions: mergePermissionGrants(refreshed || []) } };
     }
     if (name === 'validateCodeStatus') {
       const { data, error } = await client().rpc('linked_code_permissions');
@@ -420,18 +445,9 @@ export const platform = {
       return { data };
     }
     if (name === 'loadLinkedPermissions') {
-      const { data: linked, error } = await client().rpc('linked_code_permissions');
+      const { data, error } = await client().rpc('legacy_permission_grants');
       if (error) throw error;
-      const permissions = (linked || []).flatMap((code) =>
-        (code.page_paths || []).map((path, index) => ({
-          page_path: path,
-          page_name: (code.page_names || [])[index] || path,
-          expiry_date: code.page_grants?.[path]
-            ? code.page_grants[path].expires_at : code.expiry_date ?? null,
-          granted_at: code.page_grants?.[path]?.granted_at || null,
-          code: code.code,
-        })));
-      return { data: { success: true, permissions } };
+      return { data: { success: true, permissions: mergePermissionGrants(data || []) } };
     }
     if (name === 'getUserStats') {
       const { data, error } = await client().rpc('owner_dashboard_stats');
@@ -492,7 +508,7 @@ export const platform = {
     }
     const { data, error } = await client().functions.invoke(name, { body });
     if (error) throw error;
-    return { data };
+    return { data: await references.resolve(data) };
   }) },
   entities: /** @type {Record<string, ReturnType<typeof entityApi>> & { User: typeof userDirectoryApi, ManagedPage: typeof managedPageApi }} */ (new Proxy({}, { get: (_target, entity) => String(entity) === 'ManagedPage'
     ? managedPageApi : String(entity) === 'User' ? userDirectoryApi : entityApi(String(entity)) })),

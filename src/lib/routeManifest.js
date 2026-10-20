@@ -81,7 +81,6 @@ const ROUTE_MANIFEST = [
   { path: '/admin/settings', component: 'AdminSettings', chunk: 'AdminSettings' },
   { path: '/admin/system-settings', component: 'AdminSystemSettings', chunk: 'AdminSystemSettings' },
   { path: '/admin/analytics', component: 'AdminAnalytics', chunk: 'AdminAnalytics' },
-  { path: '/admin/admins', component: 'AdminAdmins', chunk: 'AdminAdmins' },
   { path: '/admin/user/:userId', component: 'UserDetailPage', chunk: 'UserDetailPage' },
   { path: '/admin/pdf-content-editor', component: 'AdminPDFContentEditor', chunk: 'AdminPDFContentEditor' },
   { path: '/admin/books-studio', component: 'OwnerBooksStudio', chunk: 'OwnerBooksStudio' },

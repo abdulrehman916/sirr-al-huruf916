@@ -25,17 +25,12 @@ export const AuthProvider = ({ children }) => {
       if (!current()) return;
       if (!account) {
         clearLocalSession();
+        setAuthError(null);
         setUser(null); setIsAuthenticated(false); setAdminProfile(null); setRole(ROLES.GUEST);
         return;
       }
       let profile = null;
       let nextRole = account.role === 'owner' ? ROLES.OWNER : ROLES.CUSTOMER;
-      if (account.role === 'admin') {
-        setAdminProfileLoading(true);
-        const profiles = await platform.entities.AdminProfile.filter({ email: account.email });
-        profile = profiles.find(p => p.status === 'ACTIVE' && p.is_owner !== true) || null;
-        if (profile) nextRole = ROLES.ADMIN;
-      }
       const { error: claimError } = await supabase.rpc('claim_base44_legacy_data');
       if (claimError) throw claimError;
       const response = await platform.functions.invoke('loadLinkedPermissions', {});

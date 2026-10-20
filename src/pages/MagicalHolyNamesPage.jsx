@@ -378,7 +378,8 @@ function SectionB() {
     setLoading(true);
     setLoadError(false);
     try {
-      const allNames = await platform.entities.HolyOnePDFName.list(null, 500);
+      const allNames = await platform.entities.HolyOnePDFName.summaries(['pdf_name_id', 'arabic_name', 'arabic_transliteration', 'malayalam_pronunciation', 'meaning_malayalam', 'meaning_english', 'english_meaning', 'surah_name', 'global_order', 'book_order'], 500);
+      allNames.sort((a, b) => Number(a.global_order || 0) - Number(b.global_order || 0));
       setNames((allNames || []).map(withSectionBMeaning));
       const uniqueSurahs = [...new Set((allNames || []).map(n => n.surah_name))].filter(Boolean);
       setSurahList(uniqueSurahs);

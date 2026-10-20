@@ -452,7 +452,7 @@ export default function HolyOneDetailPage() {
         </div>
 
         {/* Imported PDF Knowledge — enriches this Holy Name's existing card */}
-        {!reviewedCards[nameId] && <div className="mt-6">
+        {<div className="mt-6">
           <HolyNameImportedSections
             sourceSection={source === "B" ? "section_b" : "section_a"}
             sourceNameKey={source === "B" ? (name.pdf_name_id || nameId) : nameId}
