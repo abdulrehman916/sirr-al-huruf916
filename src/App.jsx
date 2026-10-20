@@ -15,6 +15,7 @@ import OfflineNotice from './components/OfflineNotice';
 import ErrorBoundary from './components/ErrorBoundary';
 import ProtectedPage from './components/ProtectedPage';
 import AccountRoute from './components/AccountRoute';
+import MaintenanceGate from './components/MaintenanceGate';
 import ROUTE_MANIFEST from '@/lib/routeManifest';
 import RulesGate from './components/RulesGate';
 import GoogleSignInPrompt from './components/GoogleSignInPrompt';
@@ -235,7 +236,7 @@ function App() {
                 <NavigationProvider>
                   <PreviewStateRestore />
                   <RulesGate>
-                    <AuthenticatedApp />
+                    <MaintenanceGate><AuthenticatedApp /></MaintenanceGate>
                   </RulesGate>
                 </NavigationProvider>
               </PageStateProvider>

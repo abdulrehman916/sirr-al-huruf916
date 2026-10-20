@@ -27,12 +27,11 @@ begin
     begin perform public.owner_dashboard_stats(); exception when insufficient_privilege then denied:=true; end;
     if not denied then raise exception 'Customer authorized'; end if;
     perform set_config('request.jwt.claims',jsonb_build_object('sub',owner_id,'role','authenticated')::text,true);
-    update public.profiles set role='admin' where id=customer_id;
-    perform set_config('request.jwt.claims',jsonb_build_object('sub',customer_id,'role','authenticated')::text,true);
-    actual:=public.owner_dashboard_stats();
-    if actual->'renewals_due'<>'[]'::jsonb or actual->'page_summary'<>'[]'::jsonb then raise exception 'Admin without code permission received code details'; end if;
-    perform set_config('request.jwt.claims',jsonb_build_object('sub',owner_id,'role','authenticated')::text,true);
-    update public.profiles set role='customer' where id=customer_id;
+    begin
+      update public.profiles set role='admin' where id=customer_id;
+      raise exception 'Delegated admin role accepted';
+    exception when check_violation then null;
+    end;
   end if;
   if has_function_privilege('anon','public.owner_dashboard_stats()','EXECUTE') then raise exception 'Anon RPC executable'; end if;
   perform set_config('request.jwt.claims',jsonb_build_object('sub',gen_random_uuid(),'role','authenticated')::text,true);

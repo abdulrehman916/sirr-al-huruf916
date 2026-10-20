@@ -1,7 +1,7 @@
 begin;
 select set_config('test.owner',(select id::text from public.profiles where role='owner' and status='active' limit 1),true);
 do $$ declare label text; uid uuid;
-begin foreach label in array array['staff','customer','other'] loop
+begin foreach label in array array['customer','other'] loop
  uid:=gen_random_uuid(); perform set_config('test.'||label,uid::text,true);
  insert into auth.users(id,aud,role,email,email_confirmed_at,raw_app_meta_data,raw_user_meta_data,created_at,updated_at)
  values(uid,'authenticated','authenticated','rollback-'||label||'@example.invalid',now(),'{}','{}',now(),now());
@@ -10,13 +10,9 @@ begin foreach label in array array['staff','customer','other'] loop
 end loop; end $$;
 select set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
 set local role authenticated;
-do $$ declare result jsonb; admin_id text; ticket jsonb; message jsonb; changed bigint;
+do $$ declare result jsonb; ticket jsonb; message jsonb; changed bigint; request_id uuid:=gen_random_uuid();
 begin
- result:=public.manage_admin_workflow('admins','{"action":"CREATE","email":"rollback-staff@example.invalid","full_name":"Rollback staff","whatsapp_number":"1234567890","permissions":{"support_messages":true,"redeem_code_approval":true}}');
- admin_id:=result#>>'{profile,admin_profile_id}';
- if admin_id is null then raise exception 'Admin creation failed'; end if;
- perform public.manage_admin_workflow('admins',jsonb_build_object('action','UPDATE_PERMISSIONS','admin_profile_id',admin_id,'permissions',jsonb_build_object('support_messages',true)));
- perform public.manage_admin_workflow('assignments',jsonb_build_object('action','ASSIGN','customer_email','rollback-customer@example.invalid','admin_profile_id',admin_id));
+ if to_regprocedure('public.manage_admin_workflow(text,jsonb)') is not null then raise exception 'Delegated management endpoint remains'; end if;
  perform set_config('request.jwt.claim.sub',current_setting('test.customer'),true);
  ticket:=public.create_support_record('SupportTickets',jsonb_build_object('ticket_id','SUP-'||gen_random_uuid()::text,'subject','Rollback test','message','Only a rollback fixture','email','spoof@example.invalid'));
  if ticket#>>'{data,email}'<>'rollback-customer@example.invalid' then raise exception 'Email spoofing was accepted'; end if;
@@ -29,18 +25,15 @@ begin
  if exists(select 1 from public.platform_records where id=(ticket->>'id')::uuid or id=(message->>'id')::uuid) then raise exception 'Another customer saw private support'; end if;
  begin perform public.create_support_record('SupportMessage',jsonb_build_object('ticket_id',ticket#>>'{data,ticket_id}','message','Unauthorized'));
  raise exception 'Cross-customer message accepted'; exception when insufficient_privilege then null; end;
- perform set_config('request.jwt.claim.sub',current_setting('test.staff'),true);
- result:=public.manage_admin_workflow('support','{"action":"GET_SCOPED_TICKETS"}');
- if jsonb_array_length(result->'tickets')<>1 then raise exception 'Assigned admin cannot see ticket'; end if;
- perform public.create_support_record('SupportMessage',jsonb_build_object('ticket_id',ticket#>>'{data,ticket_id}','message','Rollback staff reply'));
- perform set_config('request.jwt.claim.sub',current_setting('test.customer'),true);
- if (select count(*) from public.platform_records where entity='SupportMessage' and data->>'ticket_id'=ticket#>>'{data,ticket_id}')<>2 then raise exception 'Customer cannot read staff reply'; end if;
+ begin perform public.owner_support('{"action":"GET_SCOPED_TICKETS"}'); raise exception 'Customer can list owner tickets'; exception when insufficient_privilege then null; end;
  perform set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
- perform public.manage_admin_workflow('admins',jsonb_build_object('action','DISABLE','admin_profile_id',admin_id));
- perform public.manage_admin_workflow('admins',jsonb_build_object('action','ENABLE','admin_profile_id',admin_id));
- perform public.manage_admin_workflow('assignments','{"action":"REMOVE","customer_email":"rollback-customer@example.invalid"}');
- perform public.manage_admin_workflow('admins',jsonb_build_object('action','DELETE','admin_profile_id',admin_id));
- if not exists(select 1 from public.profiles where id=current_setting('test.staff')::uuid and role='customer') then raise exception 'Admin deletion did not demote account'; end if;
+ result:=public.owner_reply_support(jsonb_build_object('request_id',request_id,'ticket_id',ticket#>>'{data,ticket_id}','message','Rollback owner reply'));
+ if not (result->>'success')::boolean then raise exception 'Owner reply failed'; end if;
+ result:=public.owner_reply_support(jsonb_build_object('request_id',request_id,'ticket_id',ticket#>>'{data,ticket_id}','message','Rollback owner reply'));
+ if not (result->>'already_saved')::boolean then raise exception 'Reply retry was not deduplicated'; end if;
+ perform set_config('request.jwt.claim.sub',current_setting('test.customer'),true);
+ if (select count(*) from public.platform_records where entity='SupportMessage' and data->>'ticket_id'=ticket#>>'{data,ticket_id}')<>2 then raise exception 'Customer cannot read exact owner reply'; end if;
+ if (select data->>'admin_reply' from public.platform_records where id=(ticket->>'id')::uuid)<>'Rollback owner reply' then raise exception 'Ticket summary not updated atomically'; end if;
 end $$;
-select 'PASS admin create/permissions/disable/enable/delete; assignment; support ticket/message; sender/email protection; customer isolation; assigned admin and customer replies' as checks;
+select 'PASS owner-only support; retired delegation; ticket/message identity; customer isolation; atomic owner reply and safe repeated send' as checks;
 rollback;
