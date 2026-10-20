@@ -158,7 +158,7 @@ export default function AccessCodesTab() {
   // Dashboard stats
   const stats = useMemo(() => ({
     total: codes.length,
-    active: codes.filter(c => getCodeStatus(c).value === 'active').length,
+    active: codes.filter(c => ['active', 'used'].includes(getCodeStatus(c).value)).length,
     used: codes.filter(c => getCodeStatus(c).value === 'used').length,
     expired: codes.filter(c => getCodeStatus(c).value === 'expired').length,
     disabled: codes.filter(c => getCodeStatus(c).value === 'disabled').length,

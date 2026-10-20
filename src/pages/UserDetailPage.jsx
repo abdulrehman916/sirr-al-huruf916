@@ -71,29 +71,24 @@ export default function UserDetailPage() {
   const loadUser = async () => {
     setLoading(true);
     try {
-      const [profiles, perms] = await Promise.all([
+      const [profiles, perms, registered] = await Promise.all([
         platform.entities.UserAccessProfile.filter({ user_id: userId }),
         platform.entities.PagePermission.filter({ user_id: userId }),
+        /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(userId)
+          ? platform.entities.User.get(userId) : Promise.resolve(null),
       ]);
-      const prof = profiles[0] || null;
+      const prof = registered ? { ...profiles[0], ...registered, user_id: registered.id,
+        full_name: registered.full_name || profiles[0]?.full_name || '',
+        registration_date: profiles[0]?.registration_date || registered.created_date,
+      } : profiles[0] || null;
       setProfile(prof);
       setPermissions(perms);
 
       // Fetch codes by user_id or email
-      let userCodes = [];
-      try {
-        const byUserId = await platform.entities.AccessCode.filter({ used_by_user_id: userId });
-        userCodes = byUserId;
-      } catch {}
-      // Also try by email if available
-      if (prof?.email) {
-        try {
-          const byEmail = await platform.entities.AccessCode.filter({ used_by_email: prof.email });
-          // Merge unique by id
-          const existingIds = new Set(userCodes.map(c => c.id));
-          byEmail.forEach(c => { if (!existingIds.has(c.id)) userCodes.push(c); });
-        } catch {}
-      }
+      const codeFilters = [{ used_by_user_id: userId }, { linked_user_id: userId }];
+      if (prof?.email) codeFilters.push(...['used_by_email', 'linked_user_email', 'email'].map(key => ({ [key]: prof.email })));
+      const codeGroups = await Promise.all(codeFilters.map(filter => platform.entities.AccessCode.filter(filter)));
+      const userCodes = [...new Map(codeGroups.flat().map(code => [code.id, code])).values()];
       // Sort by created_date descending
       userCodes.sort((a, b) => new Date(b.created_date || 0) - new Date(a.created_date || 0));
       setCodes(userCodes);
@@ -116,7 +111,7 @@ export default function UserDetailPage() {
   const statusCfg = STATUS_COLORS[profile?.account_status] || STATUS_COLORS.ACTIVE;
 
   // Categorize codes
-  const activeCodes = codes.filter(c => !c.is_disabled && getCodeStatus(c).value === 'active' && !isLifetime(c));
+  const activeCodes = codes.filter(c => !c.is_disabled && ['active', 'used'].includes(getCodeStatus(c).value) && !isLifetime(c));
   const lifetimeCodes = codes.filter(c => !c.is_disabled && isLifetime(c));
   const expiredCodes = codes.filter(c => !c.is_disabled && getCodeStatus(c).value === 'expired');
   const disabledCodes = codes.filter(c => c.is_disabled);

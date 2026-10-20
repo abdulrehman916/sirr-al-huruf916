@@ -44,6 +44,7 @@ export default function AdminRedeemApprovals() {
   const [approvals, setApprovals] = useState([]);
   const [stats, setStats] = useState({ pending: 0, approved: 0, rejected: 0, info_requested: 0, overridden: 0, total: 0 });
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
   const [selectedApproval, setSelectedApproval] = useState(null);
@@ -80,16 +81,19 @@ export default function AdminRedeemApprovals() {
 
   const loadApprovals = async () => {
     setLoading(true);
+    setLoadError("");
     try {
       const res = await platform.functions.invoke("manageRedeemCodeApproval", {
-        action: "GET_ALL",
+        action: "GET_SCOPED_APPROVALS",
       });
+      if (!res.data?.success) throw new Error("Could not load approvals");
       if (res.data?.success) {
         setApprovals(res.data.approvals || []);
         setStats(res.data.stats || {});
         setIsOwner(res.data.is_owner || false);
       }
     } catch (error) {
+      setLoadError(error.message || "Could not load approvals");
       toast({
         title: "Error Loading Approvals",
         description: error.message,
@@ -124,7 +128,7 @@ export default function AdminRedeemApprovals() {
     // Update selected approval with fresh data
     if (selectedApproval) {
       const res = await platform.functions.invoke("manageRedeemCodeApproval", {
-        action: "GET_ALL",
+        action: "GET_SCOPED_APPROVALS",
       });
       if (res.data?.success) {
         const updated = (res.data.approvals || []).find(
@@ -310,13 +314,13 @@ export default function AdminRedeemApprovals() {
           <div className="text-center py-12">
             <div className="w-8 h-8 border-4 border-t-yellow-400 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin mx-auto" />
           </div>
-        ) : filteredApprovals.length === 0 ? (
+        ) : loadError ? (<div role="alert" className="rounded-xl border border-red-400/30 p-5 text-red-200">{loadError}<button type="button" className="ml-4 underline" onClick={loadApprovals}>Retry</button></div>) : filteredApprovals.length === 0 ? (
           <div className="text-center py-16 text-white/30">
             <ClipboardCheck className="w-12 h-12 mx-auto mb-3 opacity-30" />
             <p className="text-sm">
               {isOwner
                 ? "No redeem code approvals found"
-                : "No redeem code approvals for your assigned customers"}
+                : "No redeem code approvals"}
             </p>
           </div>
         ) : (
