@@ -34,7 +34,7 @@ export default function AdminFormModal({ mode, profile, onClose, onSaved }) {
     return init;
   });
   const [saving, setSaving] = useState(false);
-  const [invitationCode, setInvitationCode] = useState(null);
+  const [invitationCode] = useState(null);
 
   const togglePerm = (key) => {
     setPermissions((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -48,13 +48,6 @@ export default function AdminFormModal({ mode, profile, onClose, onSaved }) {
     setSaving(true);
     try {
       if (mode === "add") {
-        // First, invite the user via platform
-        try {
-          await platform.users.inviteUser(email.trim(), "admin");
-        } catch (inviteErr) {
-          // User might already exist — continue anyway
-        }
-
         const res = await platform.functions.invoke("manageAdminProfile", {
           action: "CREATE",
           email: email.trim(),
@@ -64,8 +57,8 @@ export default function AdminFormModal({ mode, profile, onClose, onSaved }) {
         });
 
         if (res.data?.success) {
-          setInvitationCode(res.data.invitation_code);
-          toast({ title: "✓ Admin created", description: "Invitation code generated" });
+          toast({ title: "✓ Admin created", description: "The account can sign in with its existing login." });
+          onSaved();
         } else {
           toast({ title: "Create failed", description: res.data?.error, variant: "destructive" });
         }

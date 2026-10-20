@@ -42,11 +42,13 @@ export default function PremiumAccessRequest() {
 
   useEffect(() => {
     platform.auth.me().then((u) => {
+      if (!u) { navigate("/login?redirect=%2Fpremium%2Frequest", { replace: true }); return; }
       setUser(u);
-    }).catch(() => navigate("/otp-login"));
+    }).catch(() => navigate("/login?redirect=%2Fpremium%2Frequest", { replace: true }));
   }, [navigate]);
 
   const handleSubmitRequest = async () => {
+    if (loading || !user) return;
     setLoading(true);
     try {
       const response = await platform.functions.invoke("submitAccessRequest", {

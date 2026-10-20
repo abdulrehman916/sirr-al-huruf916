@@ -14,6 +14,7 @@ import PWAInstallPrompt from './components/PWAInstallPrompt';
 import OfflineNotice from './components/OfflineNotice';
 import ErrorBoundary from './components/ErrorBoundary';
 import ProtectedPage from './components/ProtectedPage';
+import AccountRoute from './components/AccountRoute';
 import ROUTE_MANIFEST from '@/lib/routeManifest';
 import RulesGate from './components/RulesGate';
 import GoogleSignInPrompt from './components/GoogleSignInPrompt';
@@ -83,7 +84,6 @@ const PAGE_IMPORTS = {
   AdminSettings:            () => import('./pages/AdminSettings'),
   AdminSystemSettings:      () => import('./pages/AdminSystemSettings'),
   AdminAnalytics:           () => import('./pages/AdminAnalytics'),
-  AdminAdmins:              () => import('./pages/AdminAdmins'),
   UserDetailPage:           () => import('./pages/UserDetailPage'),
   AdminPDFContentEditor:    () => import('./pages/AdminPDFContentEditor'),
   OwnerBooksStudio:         () => import('./pages/OwnerBooksStudio'),
@@ -127,7 +127,7 @@ function useRouteElements() {
         element={
           <ErrorBoundary>
             <ProtectedPage routePath={entry.path} requiresPermission={isPublic ? false : undefined}>
-              <LazyPage />
+              {entry.flags?.includes('account') ? <AccountRoute><LazyPage /></AccountRoute> : <LazyPage />}
             </ProtectedPage>
           </ErrorBoundary>
         }

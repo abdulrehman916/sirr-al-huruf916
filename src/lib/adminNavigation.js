@@ -23,9 +23,8 @@ export const ADMIN_MAINTENANCE = [
   {label:'Configuration',items:[
     {path:'/admin/settings',label:'App settings',description:'Existing app preferences and maintenance controls.'},
     {path:'/admin/feature-pricing',label:'Feature pricing',description:'Manage individual feature prices.'},
-    {path:'/admin/admins',label:'Admins',description:'Manage the existing independent admin accounts.'},
   ]},
-  {label:'Team & activity',items:[
+  {label:'Activity',items:[
     {path:'/admin/access-logs',label:'Access history',description:'Investigate code activation and access issues.'},
     {path:'/admin/audit-log',label:'Owner audit history',description:'Review recorded owner actions.'},
     {path:'/admin/analytics',label:'Analytics',description:'Review usage reports.'},

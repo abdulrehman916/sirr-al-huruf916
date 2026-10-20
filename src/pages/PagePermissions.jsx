@@ -106,7 +106,7 @@ export default function PagePermissions() {
   const checkAdmin = async () => {
     try {
       const user = await platform.auth.me();
-      if (!user || user.role !== "admin") {
+      if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
         return;
       }

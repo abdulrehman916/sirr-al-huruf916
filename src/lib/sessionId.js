@@ -45,6 +45,7 @@ export function mergeGrantedPermissions(newPerms) {
   const map = {};
   existing.forEach(p => { map[p.page_path] = p; });
   newPerms.forEach(np => {
+    if (Array.isArray(np.grants)) { map[np.page_path] = np; return; }
     const prev = map[np.page_path];
     if (prev) {
       // Merge sub_features and feature_expiries (feature stacking)
@@ -96,87 +97,13 @@ export function checkLocalPermission(page_path) {
  * Best-effort: silently fails if backend is unreachable.
  */
 export async function validateAndCleanPermissions() {
-  const sid = getSessionId();
   try {
     const { platform } = await import("@/api/platformClient");
-    const res = await platform.functions.invoke("validateCodeStatus", { session_id: sid });
-    const data = res.data;
-    if (!data?.success || !data?.codes) return;
-
-    const perms = getLocalPermissions();
-    let changed = false;
-
-    // ── P3.8: Build the set of page_paths still covered by ANY code bound to
-    // this session. localStorage permissions for pages NOT in this set belong
-    // to deleted/revoked codes (or pages an admin removed from a code) and must
-    // be cleaned — e.g. a deleted LIFETIME code must not keep granting access. ──
-    const coveredPaths = new Set();
-    data.codes.forEach((codeInfo) => {
-      (codeInfo.page_paths || []).forEach((p) => coveredPaths.add(p));
-    });
-    for (let i = perms.length - 1; i >= 0; i--) {
-      if (!coveredPaths.has(perms[i].page_path)) {
-        perms.splice(i, 1);
-        changed = true;
-      }
+    const response = await platform.functions.invoke('loadLinkedPermissions');
+    if (response.data?.success && Array.isArray(response.data.permissions)) {
+      setLocalPermissions(response.data.permissions);
     }
-
-    data.codes.forEach(codeInfo => {
-      if (codeInfo.status === 'disabled') {
-        // Whole code admin-revoked → remove ALL its pages. (Per-page removal is
-        // handled by the coveredPaths cleanup above when an admin removes a page.)
-        codeInfo.page_paths.forEach(path => {
-          const idx = perms.findIndex(p => p.page_path === path);
-          if (idx >= 0) {
-            perms.splice(idx, 1);
-            changed = true;
-          }
-        });
-      } else {
-        // Active code → sync EACH page to its OWN per-page grant. Pages are
-        // fully independent: an expired page is left in place (checkLocalPermission
-        // denies it, and a later per-page renewal restores it via this sync), never
-        // removed. A page missing from localStorage (e.g. redeemed on another
-        // device) is reconstructed from its own grant.
-        const grants = codeInfo.page_grants || {};
-        codeInfo.page_paths.forEach((path, i) => {
-          const grant = grants[path] || {};
-          const backendExpiry = Object.prototype.hasOwnProperty.call(grant, 'expires_at')
-            ? (grant.expires_at ?? null)
-            : codeInfo.expiry_date;
-          const backendGrantedAt = grant.granted_at || null;
-
-          const existing = perms.find(p => p.page_path === path);
-          if (existing) {
-            if (backendExpiry !== existing.expiry_date) { existing.expiry_date = backendExpiry; changed = true; }
-            if (backendGrantedAt && existing.granted_at !== backendGrantedAt) { existing.granted_at = backendGrantedAt; changed = true; }
-          } else {
-            const pageName = (codeInfo.page_names || [])[i] || path;
-            const subFeats = (codeInfo.sub_features || {})[path] || [];
-            const featureExpiries = {};
-            subFeats.forEach(featId => {
-              featureExpiries[featId] = { expiry_date: backendExpiry, plan_name: 'Restored' };
-            });
-            perms.push({
-              page_path: path,
-              page_name: pageName,
-              expiry_date: backendExpiry,
-              granted_at: backendGrantedAt || new Date().toISOString(),
-              sub_features: subFeats.length > 0 ? subFeats : undefined,
-              feature_expiries: Object.keys(featureExpiries).length > 0 ? featureExpiries : undefined,
-            });
-            changed = true;
-          }
-        });
-      }
-    });
-
-    if (changed) {
-      setLocalPermissions(perms);
-    }
-  } catch {
-    // Best-effort validation — silently fail
-  }
+  } catch { /* Keep the previous expiring cache during a temporary connection failure. */ }
 }
 
 /**

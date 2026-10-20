@@ -30,7 +30,7 @@ function SidebarContent({ location, onNavigate }) {
       <div style={{ marginBottom: 20, paddingBottom: 14, borderBottom: `1px solid ${G.border}` }}>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <Shield style={{ width: 18, height: 18, color: G.text }} />
-          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 15, fontWeight: 700, color: "#fff" }}>{role === "owner" ? "Owner Panel" : "Admin Panel"}</span>
+          <span style={{ fontFamily: "Inter, sans-serif", fontSize: 15, fontWeight: 700, color: "#fff" }}>{"Owner Panel"}</span>
         </div>
       </div>
 
@@ -171,7 +171,7 @@ export default function AdminLayout({ children, title = "", subtitle = "", showB
         if (location.pathname === item.path) return item.label;
       }
     }
-    return title || (role === "owner" ? "Owner" : "Admin");
+    return title || ("Owner");
   }, [location.pathname, title, role]);
 
   return (
@@ -309,7 +309,7 @@ export default function AdminLayout({ children, title = "", subtitle = "", showB
               color: "rgba(255,255,255,0.30)",
               flexShrink: 0,
             }}>
-              {role === "owner" ? "Owner" : "Admin"}
+              {"Owner"}
             </span>
             <span style={{ color: "rgba(255,255,255,0.15)", fontSize: 11, flexShrink: 0 }}>/</span>
             <span style={{

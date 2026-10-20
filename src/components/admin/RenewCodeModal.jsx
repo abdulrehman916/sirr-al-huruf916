@@ -10,6 +10,7 @@ import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 import {
   DURATION_TYPES, DURATION_PRESETS, computeExpiry, fmtDateTime,
+  effectiveCodeExpiry,
 } from "@/lib/codeDuration";
 
 const G = {
@@ -107,7 +108,7 @@ export default function RenewCodeModal({ code, onClose, onRenewed }) {
           <div className="rounded-lg border p-3 flex items-center justify-between" style={{ background: G.bg, borderColor: G.border }}>
             <div>
               <p className="text-[10px] text-white/40 uppercase tracking-wider">Current Expiry</p>
-              <p className="text-sm text-white font-medium">{fmtDateTime(code.expiry_date)}</p>
+              <p className="text-sm text-white font-medium">{fmtDateTime(effectiveCodeExpiry(code))}</p>
             </div>
             <div>
               <p className="text-[10px] text-white/40 uppercase tracking-wider text-right">New Expiry</p>

@@ -45,9 +45,9 @@ export default function SupportTicket() {
   const handleFile = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
-    const valid = ["image/jpeg", "image/png", "image/gif", "application/pdf"];
+    const valid = ["image/jpeg", "image/png", "image/webp", "application/pdf"];
     if (!valid.includes(file.type)) {
-      toast({ title: "Invalid File", description: "JPG, PNG, GIF, or PDF only.", variant: "destructive" });
+      toast({ title: "Invalid File", description: "JPG, PNG, WebP, or PDF only.", variant: "destructive" });
       return;
     }
     if (file.size > 10 * 1024 * 1024) {
@@ -71,11 +71,10 @@ export default function SupportTicket() {
       toast({ title: "Missing Info", description: "Please fill all required fields.", variant: "destructive" });
       return;
     }
+    if (loading) return;
     setLoading(true);
     try {
-      // Use timestamp-based ID instead of counting all tickets — O(1) vs O(n)
-      const ts = Date.now().toString(36).toUpperCase();
-      const tid = `SUP-${ts.slice(-6)}`;
+      const tid = `SUP-${crypto.randomUUID().toUpperCase()}`;
       await platform.entities.SupportTickets.create({
         ticket_id: tid,
         name: form.name,
