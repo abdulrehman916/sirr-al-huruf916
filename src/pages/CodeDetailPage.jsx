@@ -31,7 +31,7 @@ const G = {
   bgHi: "rgba(212,175,55,0.14)",
 };
 
-function InfoRow({ icon, label, value, color }) {
+function InfoRow({ icon, label, value, color = undefined }) {
   return (
     <div className="flex items-center gap-3 py-2">
       <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
@@ -129,7 +129,7 @@ export default function CodeDetailPage() {
       const res = await platform.functions.invoke("deleteAccessCodeSecure", { code_id: code.id });
       if (res.data?.success) {
         toast({ title: `✓ Code "${code.code}" deleted` });
-        navigate("/admin/access-dashboard?tab=codes");
+        navigate("/admin/access-codes");
       } else {
         toast({ title: "Delete failed", description: res.data?.error, variant: "destructive" });
       }
@@ -142,7 +142,7 @@ export default function CodeDetailPage() {
 
   if (loading) {
     return (
-      <AdminLayout title="Loading..." showBackButton backPath="/admin/access-dashboard?tab=codes">
+      <AdminLayout title="Loading..." showBackButton backPath="/admin/access-codes">
         <div className="min-h-[60vh] flex items-center justify-center">
           <Loader2 className="w-8 h-8 animate-spin" style={{ color: G.text }} />
         </div>
@@ -152,7 +152,7 @@ export default function CodeDetailPage() {
 
   if (!code) {
     return (
-      <AdminLayout title="Code Not Found" showBackButton backPath="/admin/access-dashboard?tab=codes">
+      <AdminLayout title="Code Not Found" showBackButton backPath="/admin/access-codes">
         <div className="text-center py-16">
           <AlertCircle className="w-12 h-12 mx-auto mb-3 text-white/20" />
           <p className="text-white/40">Code not found</p>
@@ -166,7 +166,7 @@ export default function CodeDetailPage() {
   const renewalHistory = code.renewal_history || [];
 
   return (
-    <AdminLayout title={`Code: ${code.code}`} showBackButton backPath="/admin/access-dashboard?tab=codes">
+    <AdminLayout title={`Code: ${code.code}`} showBackButton backPath="/admin/access-codes">
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 max-w-3xl mx-auto">
 
         {/* Status + Actions Bar */}
@@ -339,7 +339,7 @@ export default function CodeDetailPage() {
         )}
 
         {/* Back button */}
-        <button onClick={() => navigate("/admin/access-dashboard?tab=codes")}
+        <button onClick={() => navigate("/admin/access-codes")}
           className="w-full py-2.5 rounded-xl font-inter font-semibold text-xs flex items-center justify-center gap-2"
           style={{ background: "transparent", border: `1px solid ${G.border}`, color: G.text }}>
           <ChevronLeft className="w-4 h-4" /> Back to Access Codes
