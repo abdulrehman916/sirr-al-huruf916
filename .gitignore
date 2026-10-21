@@ -29,4 +29,6 @@ dist-ssr
 
 .env
 .vite
+/public/ocr/
+supabase/.temp/
 base44/.app.jsonc

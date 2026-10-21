@@ -4,9 +4,10 @@
  * extraction_status='uploading'). Shows Google Drive / OneDrive / Adobe
  * connection status. Owner-only (page-gated).
  */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Loader2, UploadCloud, CheckCircle2, XCircle, HardDrive, Cloud, FileBox } from "lucide-react";
 import { platform } from "@/api/platformClient";
+import { importOwnerPdf } from "@/lib/ownerLibraryImport";
 
 const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
 
@@ -27,12 +28,26 @@ function ConnCard({ name, icon: Icon, status, note }) {
   );
 }
 
-export default function MplUpload() {
+export default function MplUpload({ onBusyChange }) {
   const [uploading, setUploading] = useState(false);
   const [msg, setMsg] = useState(null);
   const [bookName, setBookName] = useState("");
+  const [language, setLanguage] = useState('ara');
+  const [progress, setProgress] = useState('');
+  const pending = useRef(null);
+  const alive = useRef(true);
   const [conn, setConn] = useState({ drive: "unknown", onedrive: "unknown", adobe: "unknown", adobeNote: "" });
 
+  useEffect(() => {
+    alive.current = true;
+    return () => { alive.current = false; pending.current?.abort(); };
+  }, []);
+  useEffect(() => {
+    if (!uploading) return;
+    const warn = event => { event.preventDefault(); event.returnValue = ''; };
+    window.addEventListener('beforeunload', warn);
+    return () => window.removeEventListener('beforeunload', warn);
+  }, [uploading]);
   useEffect(() => {
     (async () => {
       try {
@@ -47,37 +62,29 @@ export default function MplUpload() {
   }, []);
 
   const handleUpload = async (e) => {
+    const input = e.target;
     const file = e.target.files?.[0];
-    if (!file) return;
-    setUploading(true); setMsg(null);
+    if (!file || pending.current) return;
+    const controller = new AbortController(); pending.current = controller;
+    setUploading(true); setMsg(null); onBusyChange?.(true);
     try {
-      const up = await platform.integrations.Core.UploadFile({ file });
-      const fileUrl = up?.file_url || up?.data?.file_url;
-      if (!fileUrl) throw new Error("Upload failed");
-      const ts = Date.now();
-      const rand = Math.random().toString(36).slice(2, 8);
-      const masterBookId = `MPB-${ts}-${rand}`;
-      const partId = `MPBP-${masterBookId}-1`;
-      await platform.entities.MasterPdfBook.create({
-        master_book_id: masterBookId,
-        library_type: "master_library",
-        import_source: "upload",
-        malayalam_book_name: bookName || file.name,
-        book_title: file.name,
-        upload_date: new Date().toISOString(),
-        extraction_status: "uploading",
-        pdf_parts: [{
-          part_id: partId, part_number: 1, file_url: fileUrl, file_name: file.name,
-          file_size: file.size || 0, uploaded_at: new Date().toISOString(),
-          processed: false, extraction_status: "pending",
-        }],
-        version_history: [{ version_id: `v-${ts}`, timestamp: new Date().toISOString(), action: "upload", change_summary: `Uploaded ${file.name}` }],
+      const result = await importOwnerPdf({ file, language, displayName: bookName, signal: controller.signal,
+        onProgress: text => { if (alive.current) setProgress(text); },
+      }, {
+        invoke: body => platform.functions.invoke('ownerLibraryIngest', body),
+        upload: selected => platform.integrations.Core.UploadFile({ file: selected }),
+        remove: path => platform.integrations.Core.RemoveUploadedFile({ path }),
       });
-      setMsg({ ok: true, text: `Uploaded "${file.name}". Book created — processing will index pages server-side.` });
-      setBookName("");
+      if (alive.current) {
+        setMsg({ ok: true, text: `${result.alreadyIndexed ? 'Already indexed' : 'Indexed'} ${result.indexed} pages from "${file.name}". Open Full-Text Search to review. Pages remain private and unapproved.` });
+        setBookName('');
+      }
     } catch (err) {
-      setMsg({ ok: false, text: err?.message || "Upload failed" });
-    } finally { setUploading(false); e.target.value = ""; }
+      if (alive.current) setMsg({ ok: false, text: (err?.name === 'AbortError' ? 'Paused.' : err?.message || 'Import failed.') + ' Saved pages are retained. Select the same PDF to resume.' });
+    } finally {
+      pending.current = null; onBusyChange?.(false); input.value = '';
+      if (alive.current) { setUploading(false); setProgress(''); }
+    }
   };
 
   return (
@@ -89,15 +96,23 @@ export default function MplUpload() {
           <h3 style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 700, color: "#fff", margin: 0 }}>Upload PDF</h3>
         </div>
         <input
+          disabled={uploading}
           type="text" placeholder="Malayalam display name (optional)" value={bookName}
           onChange={(e) => setBookName(e.target.value)}
           style={{ width: "100%", padding: "9px 11px", borderRadius: 8, fontSize: 12, color: "#fff", background: "rgba(255,255,255,0.05)", border: `1px solid ${G.border}`, outline: "none", fontFamily: "Inter, sans-serif", marginBottom: 10, boxSizing: "border-box" }}
         />
+        <label className="block text-xs text-white/70 mb-3">Document language
+          <select value={language} disabled={uploading} onChange={e => setLanguage(e.target.value)} className="ml-3 rounded border border-white/20 bg-slate-950 p-2">
+            <option value="ara">Arabic + English</option><option value="eng">English</option><option value="mal">Malayalam + English</option>
+          </select>
+        </label>
+        <p className="text-xs text-white/60 mb-3">Up to 50 MB / 5,000 pages. Text extraction and scan OCR run on this device. Keep this tab open. Original PDFs and extracted text stay private; review before publication.</p>
         <label style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "14px", borderRadius: 8, cursor: uploading ? "wait" : "pointer", background: G.bgHi, border: `1px dashed ${G.borderHi}`, color: G.text, fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600 }}>
           {uploading ? <Loader2 className="animate-spin" style={{ width: 15, height: 15 }} /> : <UploadCloud style={{ width: 15, height: 15 }} />}
-          {uploading ? "Uploading…" : "Choose PDF to upload"}
+          {uploading ? "Importing…" : "Choose PDF to import or resume"}
           <input type="file" accept="application/pdf" onChange={handleUpload} disabled={uploading} style={{ display: "none" }} />
         </label>
+        {uploading && <div role="status" className="mt-3 text-xs text-amber-200">{progress}<button type="button" onClick={() => pending.current?.abort()} className="ml-3 underline">Pause import</button></div>}
         {msg && (
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, margin: "10px 0 0 0", color: msg.ok ? "#86efac" : "#fca5a5" }}>{msg.text}</p>
         )}
@@ -115,7 +130,7 @@ export default function MplUpload() {
           <ConnCard name="Adobe Document Cloud" icon={FileBox} status={conn.adobe} note={conn.adobeNote || "Credentials required"} />
         </div>
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.40)", margin: "12px 0 0 0" }}>
-          Connect/disconnect is performed by the Owner through the Base44 builder OAuth flow. Admins and users can never access these connections.
+          Cloud providers need a separate connection to this independent app. Existing Base44 connections are not shared. You can download a PDF from your cloud account and import it above.
         </p>
       </div>
     </div>

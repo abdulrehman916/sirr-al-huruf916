@@ -364,6 +364,11 @@ const integrations = { Core: {
     const data = unwrap(await client().storage.from(bucket).createSignedUrl(path, expiresIn, { download: true }));
     return { signed_url: data.signedUrl, expires_in: expiresIn };
   },
+  async RemoveUploadedFile({ path } = {}) {
+    const user = await auth.me();
+    if (!user || typeof path !== 'string' || !path.startsWith(`${user.id}/`)) throw new Error('You can only remove your own upload.');
+    unwrap(await client().storage.from('private-documents').remove([path]));
+  },
   async InvokeLLM(payload) { return unwrap(await client().functions.invoke('invoke-llm', { body: payload })); },
 } };
 
@@ -381,6 +386,15 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    if (name === 'ownerLibraryIngest') {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 30000);
+      try {
+        const { data, error } = await client().rpc('owner_library_ingest', { p_payload: body }).abortSignal(controller.signal);
+        if (error) throw error;
+        return { data: await references.resolve(data) };
+      } finally { clearTimeout(timeout); }
+    }
     if (name === 'getOwnerPurposeRecords') {
       const { data, error } = await client().rpc('owner_purpose_records', { p_after: body.after || null });
       if (error) throw error;
