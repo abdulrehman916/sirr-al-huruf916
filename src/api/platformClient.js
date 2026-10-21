@@ -386,6 +386,11 @@ export const platform = {
       if (error) throw error;
       return { data: await references.resolve(data) };
     }
+    if (name === 'autoLearnPurpose') {
+      const { data, error } = await client().rpc('lookup_purpose_intent', { p_phrase: body.customPurpose || '' });
+      if (error) throw error;
+      return { data };
+    }
     if (name === 'deletePurposeDictionaryVersion') {
       const { data, error } = await client().rpc('owner_purpose_delete_version', {
         p_version_id: body.version_id,
