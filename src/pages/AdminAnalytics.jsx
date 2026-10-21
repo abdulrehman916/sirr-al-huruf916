@@ -1,275 +1,68 @@
-/**
- * AdminAnalytics — Admin Analytics & Audit Dashboard.
- *
- * Two tabs:
- *   1. Analytics — Stats cards + charts (RBAC scoped)
- *   2. Audit Logs — Searchable audit logs with filters (RBAC scoped)
- *
- * Owner: full analytics + all audit logs + export (CSV)
- * Admin: only analytics/logs for their assigned customers
- *
- * Server-side RBAC enforced by manageAnalytics function.
- */
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Navigate } from "react-router-dom";
-import {
-  Users, UserCheck, Crown, Globe, Ticket, Clock, CheckCircle, XCircle,
-  DollarSign, Calendar, Shield, UserPlus, UserMinus, Download, BarChart3, History, ShoppingBag,
-} from "lucide-react";
-import { platform } from "@/api/platformClient";
-import AdminLayout from "@/components/admin/AdminLayout";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
-import AnalyticsStatCard from "@/components/admin/AnalyticsStatCard";
-import AnalyticsCharts from "@/components/admin/AnalyticsCharts";
-import AuditLogList from "@/components/admin/AuditLogList";
-import MarketplaceAnalyticsDashboard from "@/components/admin/shop/MarketplaceAnalyticsDashboard";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import AdminLayout from '@/components/admin/AdminLayout';
+import { platform } from '@/api/platformClient';
+import { useAuth } from '@/lib/AuthContext';
 
-const G = {
-  border: "rgba(212,175,55,0.40)",
-  text: "#F5D060",
-  dim: "rgba(212,175,55,0.55)",
-  bg: "rgba(212,175,55,0.07)",
-};
+const METRICS = [
+  ['total_users','Customers'], ['active_users','Active registered customers'], ['blocked_users','Blocked registered customers'],
+  ['total_codes','All codes'], ['active_codes','Active codes'], ['expired_codes','Expired codes'], ['disabled_codes','Disabled codes'],
+  ['lifetime_codes','Lifetime codes'], ['expiring_7days','Codes expiring within 7 days'], ['active_permissions','Active page grants'],
+  ['pending_requests','Pending access requests'], ['pending_support','Open support tickets'], ['renewals_today','Renewals today'], ['recent_redeems','Redeems in 7 days'],
+];
+
+function downloadCsv(name, columns, rows) {
+  const cell = value => {
+    let text = String(value ?? '');
+    if (/^[\s]*[=+\-@]/.test(text)) text = "'" + text;
+    return '"' + text.replace(/"/g, '""') + '"';
+  };
+  const content = '\uFEFF' + [columns, ...rows].map(row => row.map(cell).join(',')).join('\r\n');
+  const url = URL.createObjectURL(new Blob([content], { type: 'text/csv;charset=utf-8' }));
+  const link = document.createElement('a'); link.href = url; link.download = name;
+  document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
 
 export default function AdminAnalytics() {
-  const { toast } = useToast();
-  const [isAdmin, setIsAdmin] = useState(null);
-  const [isOwner, setIsOwner] = useState(false);
-  const [activeTab, setActiveTab] = useState("analytics");
-  const [loading, setLoading] = useState(true);
+  const { role } = useAuth();
+  const [tab, setTab] = useState('overview');
+  const [page, setPage] = useState(0);
+  const [refresh, setRefresh] = useState(0);
   const [stats, setStats] = useState(null);
-  const [charts, setCharts] = useState(null);
-  const [logs, setLogs] = useState([]);
+  const [audit, setAudit] = useState({ rows: [], total: 0 });
+  const [loading, setLoading] = useState(true);
   const [exporting, setExporting] = useState(false);
-
+  const [error, setError] = useState('');
   useEffect(() => {
-    checkAdminAccess();
-  }, []);
-
-  const checkAdminAccess = async () => {
+    if (role !== 'owner') return;
+    let current = true; setLoading(true); setError('');
+    const request = tab === 'overview' ? platform.functions.invoke('getUserStats') : platform.functions.invoke('getOwnerAuditLog', { limit: 50, skip: page * 50 });
+    request.then(({ data }) => {
+      if (!data?.success) throw new Error('Could not load analytics');
+      if (current) { if (tab === 'overview') setStats(data.stats); else setAudit(data); }
+    }).catch(e => { if (current) setError(e.message); }).finally(() => { if (current) setLoading(false); });
+    return () => { current = false; };
+  }, [role, tab, page, refresh]);
+  const exportData = async () => {
+    setExporting(true); setError('');
     try {
-      const user = await platform.auth.me();
-      if (!user || !["owner", "admin"].includes(user.role)) {
-        setIsAdmin(false);
-        toast({ title: "Access Denied", description: "Only administrators can access this page", variant: "destructive" });
-      } else {
-        setIsAdmin(true);
-        loadAnalytics();
+      if (tab === 'overview') downloadCsv('owner-statistics.csv', ['Metric','Value'], METRICS.map(([key,label]) => [label,stats?.[key] ?? 0]));
+      else {
+        const rows = []; let skip = 0;
+        for (;;) {
+          const { data } = await platform.functions.invoke('getOwnerAuditLog', { limit: 200, skip });
+          if (!data?.success) throw new Error('Audit export failed');
+          rows.push(...data.rows); skip += data.rows.length;
+          if (skip >= data.total) break;
+          if (!data.rows.length) throw new Error('Audit export stopped before completion');
+        }
+        downloadCsv('owner-audit.csv', ['Timestamp','Action','Actor','Details'], rows.map(row => [row.timestamp,row.action_label || row.action_type || row.action,row.performed_by_email || row.performed_by,typeof row.details === 'object' ? JSON.stringify(row.details) : row.details]));
       }
-    } catch {
-      setIsAdmin(false);
-      toast({ title: "Authentication Error", description: "Please log in to continue", variant: "destructive" });
-    }
+    } catch (e) { setError(e.message); } finally { setExporting(false); }
   };
-
-  const loadAnalytics = async () => {
-    setLoading(true);
-    try {
-      const res = await platform.functions.invoke("manageAnalytics", { action: "GET_ANALYTICS" });
-      if (res.data?.success) {
-        setStats(res.data.stats);
-        setCharts(res.data.charts);
-        setIsOwner(res.data.is_owner);
-      }
-    } catch (error) {
-      toast({ title: "Error Loading Analytics", description: error.message, variant: "destructive" });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const loadAuditLogs = async () => {
-    setLoading(true);
-    try {
-      const res = await platform.functions.invoke("manageAnalytics", { action: "GET_AUDIT_LOGS" });
-      if (res.data?.success) {
-        setLogs(res.data.logs || []);
-        setIsOwner(res.data.is_owner);
-      }
-    } catch (error) {
-      toast({ title: "Error Loading Audit Logs", description: error.message, variant: "destructive" });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-    if (tab === "analytics") {
-      loadAnalytics();
-    } else if (tab === "audit") {
-      loadAuditLogs();
-    }
-    // "shop" tab — dashboard loads its own data
-  };
-
-  const handleExport = async (exportType) => {
-    if (!isOwner) {
-      toast({ title: "Access Denied", description: "Only owner can export data", variant: "destructive" });
-      return;
-    }
-    setExporting(true);
-    try {
-      const res = await platform.functions.invoke("manageAnalytics", {
-        action: "EXPORT_DATA",
-        export_type: exportType,
-      });
-      // Response is CSV text
-      const csv = typeof res.data === "string" ? res.data : res.data?.text || "";
-      if (!csv) {
-        toast({ title: "Export Failed", description: "No data returned", variant: "destructive" });
-        return;
-      }
-      const blob = new Blob([csv], { type: "text/csv" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${exportType}_${new Date().toISOString().split("T")[0]}.csv`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-      toast({ title: "✓ Export Complete", description: `${exportType} CSV downloaded.` });
-    } catch (error) {
-      toast({ title: "Export Failed", description: error.message, variant: "destructive" });
-    } finally {
-      setExporting(false);
-    }
-  };
-
-  if (isAdmin === false) return <Navigate to="/" replace />;
-
-  if (isAdmin === null) {
-    return (
-      <AdminLayout title="Loading..." showBackButton={false}>
-        <div className="min-h-[60vh] flex items-center justify-center">
-          <div className="w-10 h-10 border-4 border-t-yellow-400 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin" />
-        </div>
-      </AdminLayout>
-    );
-  }
-
-  return (
-    <AdminLayout title="Analytics & Audit" subtitle="Dashboard">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
-        {/* Tab Switcher + Export */}
-        <div className="flex items-center justify-between flex-wrap gap-3">
-          <div className="flex gap-2">
-            <button
-              onClick={() => handleTabChange("analytics")}
-              className="px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-2"
-              style={{
-                background: activeTab === "analytics" ? "rgba(212,175,55,0.14)" : "rgba(255,255,255,0.03)",
-                border: activeTab === "analytics" ? "1px solid rgba(212,175,55,0.50)" : "1px solid rgba(255,255,255,0.08)",
-                color: activeTab === "analytics" ? G.text : "rgba(255,255,255,0.50)",
-              }}
-            >
-              <BarChart3 className="w-3.5 h-3.5" />
-              Analytics
-            </button>
-            <button
-              onClick={() => handleTabChange("audit")}
-              className="px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-2"
-              style={{
-                background: activeTab === "audit" ? "rgba(212,175,55,0.14)" : "rgba(255,255,255,0.03)",
-                border: activeTab === "audit" ? "1px solid rgba(212,175,55,0.50)" : "1px solid rgba(255,255,255,0.08)",
-                color: activeTab === "audit" ? G.text : "rgba(255,255,255,0.50)",
-              }}
-            >
-              <History className="w-3.5 h-3.5" />
-              Audit Logs
-            </button>
-            <button
-              onClick={() => handleTabChange("shop")}
-              className="px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-2"
-              style={{
-                background: activeTab === "shop" ? "rgba(212,175,55,0.14)" : "rgba(255,255,255,0.03)",
-                border: activeTab === "shop" ? "1px solid rgba(212,175,55,0.50)" : "1px solid rgba(255,255,255,0.08)",
-                color: activeTab === "shop" ? G.text : "rgba(255,255,255,0.50)",
-              }}
-            >
-              <ShoppingBag className="w-3.5 h-3.5" />
-              Shop
-            </button>
-          </div>
-
-          {/* Export buttons (owner only) */}
-          {isOwner && (
-            <div className="flex gap-2">
-              <Button
-                onClick={() => handleExport("analytics")}
-                disabled={exporting}
-                variant="outline"
-                className="border-gold/30 text-gold hover:bg-gold/10 text-xs"
-                size="sm"
-              >
-                <Download className="w-3 h-3 mr-1" />
-                Export Analytics
-              </Button>
-              <Button
-                onClick={() => handleExport("audit")}
-                disabled={exporting}
-                variant="outline"
-                className="border-gold/30 text-gold hover:bg-gold/10 text-xs"
-                size="sm"
-              >
-                <Download className="w-3 h-3 mr-1" />
-                Export Audit
-              </Button>
-            </div>
-          )}
-        </div>
-
-        {/* RBAC notice for non-owners */}
-        {!isOwner && (
-          <div className="rounded-xl border p-3 text-center" style={{ background: "rgba(59,130,246,0.05)", borderColor: "rgba(59,130,246,0.20)" }}>
-            <p className="text-xs text-blue-400/80">
-              📊 Showing analytics for your assigned customers only. Owner sees full analytics.
-            </p>
-          </div>
-        )}
-
-        {/* Loading */}
-        {loading ? (
-          <div className="text-center py-16">
-            <div className="w-8 h-8 border-4 border-t-yellow-400 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin mx-auto" />
-          </div>
-        ) : activeTab === "analytics" ? (
-          /* ── Analytics Tab ── */
-          <>
-            {/* Stats Grid */}
-            {stats && (
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                <AnalyticsStatCard icon={Users} label="Total Customers" value={stats.totalCustomers || 0} color="#60a5fa" />
-                <AnalyticsStatCard icon={UserCheck} label="Active Customers" value={stats.activeCustomers || 0} color="#22c55e" />
-                <AnalyticsStatCard icon={Crown} label="Premium Customers" value={stats.premiumCustomers || 0} color="#D4AF37" />
-                <AnalyticsStatCard icon={Globe} label="Public Users" value={stats.publicUsers || 0} color="#a855f7" />
-                <AnalyticsStatCard icon={Ticket} label="Total Redeem Codes" value={stats.totalRedeemCodes || 0} color="#60a5fa" />
-                <AnalyticsStatCard icon={Clock} label="Pending Approvals" value={stats.pendingApprovals || 0} color="#eab308" />
-                <AnalyticsStatCard icon={CheckCircle} label="Approved Today" value={stats.approvedToday || 0} color="#22c55e" />
-                <AnalyticsStatCard icon={XCircle} label="Rejected Today" value={stats.rejectedToday || 0} color="#ef4444" />
-                <AnalyticsStatCard icon={DollarSign} label="Revenue Today" value={stats.revenueToday || 0} color="#22c55e" />
-                <AnalyticsStatCard icon={Calendar} label="Revenue This Month" value={stats.revenueThisMonth || 0} color="#D4AF37" />
-                <AnalyticsStatCard icon={Calendar} label="Revenue This Year" value={stats.revenueThisYear || 0} color="#D4AF37" />
-                <AnalyticsStatCard icon={Shield} label="Active Admins" value={stats.activeAdmins || 0} color="#60a5fa" />
-                <AnalyticsStatCard icon={UserPlus} label="Assigned Customers" value={stats.assignedCustomers || 0} color="#22c55e" />
-                <AnalyticsStatCard icon={UserMinus} label="Unassigned" value={stats.unassignedCustomers || 0} color="#ef4444" />
-              </div>
-            )}
-
-            {/* Charts */}
-            <AnalyticsCharts charts={charts} />
-          </>
-        ) : activeTab === "shop" ? (
-          /* ── Shop Analytics Tab ── */
-          <MarketplaceAnalyticsDashboard />
-        ) : (
-          /* ── Audit Logs Tab ── */
-          <AuditLogList logs={logs} isOwner={isOwner} />
-        )}
-      </motion.div>
-    </AdminLayout>
-  );
+  return <AdminLayout title="Analytics & audit" subtitle="Owner statistics"><div className="space-y-5 text-white">
+    <div className="flex flex-wrap gap-3">{['overview','audit'].map(value => <button key={value} type="button" aria-pressed={tab === value} onClick={() => { setTab(value); setPage(0); }} className="rounded-lg border border-amber-200/30 px-4 py-2">{value === 'overview' ? 'Overview' : 'Audit logs'}</button>)}<button type="button" disabled={loading} onClick={() => setRefresh(value => value + 1)} className="rounded-lg border border-white/20 px-4 py-2 disabled:opacity-40">Refresh</button><button type="button" disabled={loading || exporting || Boolean(error)} onClick={exportData} className="rounded-lg bg-amber-200 text-slate-950 px-4 py-2 disabled:opacity-40">{exporting ? 'Exporting…' : 'Export CSV'}</button><Link to="/admin/shop" className="underline px-3 py-2">Shop dashboard</Link><Link to="/admin/audit-log" className="underline px-3 py-2">Search all audit logs</Link></div>
+    {error && <p role="alert" className="text-red-200">{error}<button type="button" className="ml-4 underline" onClick={() => setRefresh(value => value + 1)}>Retry</button></p>}
+    {loading ? <p role="status">Loading…</p> : !error && (tab === 'overview' ? <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{METRICS.map(([key,label]) => <article key={key} className="rounded-xl border border-amber-200/20 p-4"><p className="text-white/60 text-sm">{label}</p><p className="text-2xl text-amber-200 mt-2">{stats?.[key] ?? 0}</p></article>)}</div> : <><p>{audit.total} recorded actions · Page {page + 1}</p><div className="space-y-3">{audit.rows.map(row => <article key={row.id} className="rounded-xl border border-white/15 p-4"><p className="text-amber-200">{row.action_label || row.action_type || row.action}</p><p className="text-white/60 text-sm">{row.performed_by_email || row.performed_by} · {row.timestamp}</p>{row.details && <p className="whitespace-pre-wrap break-words">{typeof row.details === 'object' ? JSON.stringify(row.details) : row.details}</p>}</article>)}{!audit.rows.length && <p>No recorded actions.</p>}</div><div className="flex justify-between"><button type="button" disabled={page === 0} onClick={() => setPage(value => value - 1)} className="underline disabled:opacity-30">Previous</button><button type="button" disabled={(page + 1) * 50 >= audit.total} onClick={() => setPage(value => value + 1)} className="underline disabled:opacity-30">Next</button></div></>)}
+  </div></AdminLayout>;
 }

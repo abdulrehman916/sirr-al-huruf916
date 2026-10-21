@@ -82,7 +82,7 @@ export default function AstroClockLibraryStatus() {
         <PageTitle
           arabic="حالة المكتبة"
           latin="Library Status"
-          subtitle="Astro Clock Archive Dashboard"
+          subtitle="Independent library index and recorded extraction status"
           icon="📊"
         />
 
@@ -142,6 +142,8 @@ export default function AstroClockLibraryStatus() {
                 <StatCard icon={FileX} label="Failed" value={lib.failed || 0} color="#f87171" />
                 <StatCard icon={FileWarning} label="Corrupt" value={lib.corrupt || 0} color="#f87171" />
                 <StatCard icon={FilePlus} label="Newly Imported" value={lib.newly_imported || 0} color="#a78bfa" />
+                <StatCard icon={AlertTriangle} label="Needs Review" value={lib.needs_review || 0} color="#fbbf24" />
+                <StatCard icon={FileWarning} label="Source Unavailable" value={lib.source_unavailable || 0} color="#f87171" />
               </div>
 
               {/* ── Cumulative scan stats ── */}
@@ -248,14 +250,7 @@ export default function AstroClockLibraryStatus() {
                           : b.status === "in_progress"
                             ? "#60a5fa"
                             : "rgba(255,255,255,0.40)";
-                    const sl =
-                      b.status === "completed"
-                        ? "✓ Done"
-                        : b.status === "needs_rescan"
-                          ? "⚠ Rescan"
-                          : b.status === "in_progress"
-                            ? "◐ Scanning"
-                            : "○ New";
+                    const sl = ({ completed: '✓ Done', needs_rescan: '⚠ Rescan', in_progress: '◐ Scanning', processing: '◐ Processing', needs_review: 'Needs review', source_unavailable: 'Source unavailable', failed: 'Failed', corrupt: 'Corrupt', pending: 'Pending', newly_imported: 'New' })[b.status] || b.status || 'Unknown';
                     return (
                       <div
                         key={i}
