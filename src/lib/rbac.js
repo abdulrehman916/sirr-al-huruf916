@@ -64,11 +64,6 @@ export const ROUTE_ACCESS = {
   "/admin/user/:userId":          { roles: [ROLES.OWNER, ROLES.ADMIN], perm: "perm_customer_management" },
   // Dashboard — accessible to every admin (no perm flag required)
   "/admin/access-dashboard":      { roles: [ROLES.OWNER, ROLES.ADMIN] },
-  // Owner publishing studios. These are intentionally owner-only: customers
-  // and delegated admins must never create, upload, price or publish content.
-  "/admin/content-studio":        { roles: [ROLES.OWNER] },
-  "/admin/books-studio":          { roles: [ROLES.OWNER] },
-  "/admin/resource-studio":       { roles: [ROLES.OWNER] },
   // Owner Audit Log — append-only trail; owner-only (the complete log must never
   // be visible to non-owners, so the admin role is intentionally omitted here;
   // the getOwnerAuditLog backend function also enforces owner-only server-side).

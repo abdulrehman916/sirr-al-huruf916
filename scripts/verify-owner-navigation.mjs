@@ -19,7 +19,11 @@ assert.deepEqual(limited, []);
 assert.equal(rbac.canAccessAdminRoute('owner', '/admin/admins'), false);
 assert.ok(!manifest.some(route => route.path === '/admin/admins'));
 for (const path of ['/admin/content-studio', '/admin/books-studio', '/admin/resource-studio']) {
-  assert.ok(ADMIN_MAINTENANCE.some(section => section.items.some(item => item.path === path)));
+  assert.ok(!manifest.some(route => route.path === path));
+  assert.ok(!ADMIN_MAINTENANCE.some(section => section.items.some(item => item.path === path)));
   assert.equal(rbac.canAccessAdminRoute('admin', path, { perm_system_settings: true }), false);
 }
-console.log('PASS: ten daily routes, retained independent studios, owner-only navigation and admin/guest/customer denial.');
+for (const path of ['/resources', '/content/:slug', '/books', '/books/:slug', '/my-library']) {
+  assert.ok(!manifest.some(route => route.path === path));
+}
+console.log('PASS: ten daily routes, removed publishing studios/catalogues, owner-only navigation and admin/guest/customer denial.');

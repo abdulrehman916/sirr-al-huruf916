@@ -8,7 +8,6 @@ export function parentRoute(pathname, search = '') {
   }
   if (pathname === '/admin/access-dashboard') return '/';
   if (pathname.startsWith('/admin/user/')) return '/admin/approved-users';
-  if (pathname.startsWith('/content/')) return '/resources';
   const parent = pathname.replace(/\/$/, '').split('/').slice(0, -1).join('/');
   if (ROUTE_MANIFEST.some(route => route.path === parent)) return parent;
   return pathname.startsWith('/admin/') ? '/admin/access-dashboard' : '/';

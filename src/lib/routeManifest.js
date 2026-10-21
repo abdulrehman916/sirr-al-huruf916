@@ -41,13 +41,6 @@ const ROUTE_MANIFEST = [
   { path: '/astro-clock/search', component: 'AstroClockSearch', chunk: 'AstroClockSearch' },
   { path: '/sirr', component: 'SirrPage', chunk: 'SirrPage', flags: ['public'] },
 
-  // Owner-managed published website content. The route itself is public so the
-  // ManagedContentPage renderer can enforce PUBLIC / LOGIN / PREMIUM / PAID /
-  // SELECTED_CUSTOMERS using the page record plus user entitlements.
-  { path: '/resources', component: 'ResourcesLibrary', chunk: 'ResourcesLibrary', flags: ['public'] },
-  { path: '/content/:slug', component: 'ManagedContentPage', chunk: 'ManagedContentPage', flags: ['public'] },
-  { path: '/books', component: 'BooksLibrary', chunk: 'BooksLibrary', flags: ['public'] },
-  { path: '/books/:slug', component: 'BookDetailPage', chunk: 'BookDetailPage', flags: ['public'] },
   
   // Support — all public
   { path: '/support', component: 'CustomerService', chunk: 'CustomerService', flags: ['public', 'account'] },
@@ -62,13 +55,11 @@ const ROUTE_MANIFEST = [
   { path: '/subscription/pending', component: 'SubscriptionPending', chunk: 'SubscriptionPending', flags: ['public'] },
   { path: '/premium/request', component: 'PremiumAccessRequest', chunk: 'PremiumAccessRequest', flags: ['public', 'account'] },
   { path: '/my-subscription', component: 'MySubscription', chunk: 'MySubscription', flags: ['public', 'account'] },
-  { path: '/my-library', component: 'MyLibrary', chunk: 'MyLibrary', flags: ['public', 'account'] },
   { path: '/my-requests', component: 'MyRequests', chunk: 'MyRequests', flags: ['public', 'account'] },
   { path: '/redeem-approval', component: 'RedeemCodeApproval', chunk: 'RedeemCodeApproval', flags: ['public', 'account'] },
 
   // Admin
   { path: '/admin/access-dashboard', component: 'AdminDashboard', chunk: 'AdminDashboard' },
-  { path: '/admin/content-studio', component: 'OwnerContentStudio', chunk: 'OwnerContentStudio' },
   { path: '/admin/approved-users', component: 'ApprovedUsersPage', chunk: 'ApprovedUsersPage' },
   { path: '/admin/page-permissions', component: 'PagePermissions', chunk: 'PagePermissions' },
   { path: '/admin/access-codes', component: 'AdminAccessCodes', chunk: 'AdminAccessCodes' },
@@ -83,8 +74,6 @@ const ROUTE_MANIFEST = [
   { path: '/admin/analytics', component: 'AdminAnalytics', chunk: 'AdminAnalytics' },
   { path: '/admin/user/:userId', component: 'UserDetailPage', chunk: 'UserDetailPage' },
   { path: '/admin/pdf-content-editor', component: 'AdminPDFContentEditor', chunk: 'AdminPDFContentEditor' },
-  { path: '/admin/books-studio', component: 'OwnerBooksStudio', chunk: 'OwnerBooksStudio' },
-  { path: '/admin/resource-studio', component: 'OwnerResourceStudio', chunk: 'OwnerResourceStudio' },
   { path: '/admin/holy-names-translator', component: 'AdminHolyNamesTranslator', chunk: 'AdminHolyNamesTranslator' },
   { path: '/admin/feature-pricing', component: 'AdminFeaturePricing', chunk: 'AdminFeaturePricing' },
   { path: '/admin/products', component: 'AdminProducts', chunk: 'AdminProducts' },

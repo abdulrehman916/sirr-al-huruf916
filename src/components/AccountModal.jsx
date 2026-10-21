@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { platform } from "@/api/platformClient";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/lib/AuthContext";
-import { BookOpen, LogOut } from "lucide-react";
+import { LogOut } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 
 export default function AccountModal({ user, onClose }) {
@@ -99,12 +99,6 @@ export default function AccountModal({ user, onClose }) {
 
           {/* Actions */}
           <div className="space-y-2">
-            <button
-              onClick={() => { onClose(); navigate('/my-library'); }}
-              className="flex w-full items-center justify-center gap-2 rounded-xl border border-cyan-400/25 bg-cyan-400/10 px-4 py-3 font-inter text-sm font-semibold text-cyan-100"
-            >
-              <BookOpen className="h-4 w-4" /> My Library
-            </button>
             {(role === 'owner' || role === 'admin') && (
               <button
                 onClick={() => { onClose(); navigate('/admin/access-dashboard'); }}
@@ -117,14 +111,7 @@ export default function AccountModal({ user, onClose }) {
                   {role === 'owner' ? t("account_owner_dashboard", "Owner Dashboard") : t("account_admin_dashboard", "Admin Dashboard")}
                   </button>
             )}
-            {role === 'owner' && (
-              <button
-                onClick={() => { onClose(); navigate('/admin/books-studio'); }}
-                className="w-full rounded-xl border border-yellow-500/30 bg-yellow-500/10 px-4 py-3 font-inter text-sm font-semibold text-yellow-200"
-              >
-                Books Studio
-              </button>
-            )}
+
 
             <button
               onClick={handleLogout}
