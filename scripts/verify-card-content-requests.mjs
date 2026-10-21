@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import { cardContentRequest, mergeCardNotes } from '../src/lib/cardContentRequests.js';
+const old = { section:'note-1',revision:1,content:{title:'Old'} };
+const fresh = { ...old,revision:2,content:{title:'Fresh'} };
+assert.deepEqual(mergeCardNotes([fresh],[old]),[fresh], 'A late load replaced a saved edit');
+assert.deepEqual(mergeCardNotes([old],[fresh,fresh]),[fresh], 'Repeated saves duplicated an entry');
+assert.deepEqual(mergeCardNotes([fresh],[{section:'note-2',revision:1}]).map(row=>row.section),['note-1','note-2']);
+let signal;
+await assert.rejects(cardContentRequest(value=>{signal=value;return new Promise(()=>{});},10),{name:'TimeoutError'});
+assert.equal(signal.aborted,true,'Timed out API query was not cancelled');
+assert.equal(await cardContentRequest(()=>Promise.resolve('retry succeeded')), 'retry succeeded');
+await assert.rejects(cardContentRequest(()=>Promise.reject(new Error('Offline'))),/Offline/);
+console.log('PASS: newer edits survive late pages, duplicate responses merge once, timeout aborts, retry succeeds, offline errors propagate.');

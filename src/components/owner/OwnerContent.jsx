@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { supabase } from '@/api/platformClient';
 import { useIsOwner } from '@/hooks/useIsOwner';
+import { cardContentRequest, mergeCardNotes } from '@/lib/cardContentRequests';
 
 const empty = { title: '', arabic: '', malayalam: '', english: '', images: [] };
 const fieldStyle = 'w-full rounded-lg border border-yellow-500/25 bg-slate-950 p-3 text-white';
@@ -25,10 +26,10 @@ function CardNotebook({ cardKey, kind }) {
     try {
       let query = supabase.from('owner_content').select('*').eq('scope', scope).order('section').limit(PAGE_SIZE + 1);
       if (after) query = query.gt('section', after);
-      const { data, error: failure } = await query;
+      const { data, error: failure } = await cardContentRequest(signal => query.abortSignal(signal));
       if (failure) throw failure;
       if (!mounted.current) return;
-      setRows(previous => after ? [...new Map([...previous, ...data.slice(0, PAGE_SIZE)].map(row => [row.section, row])).values()] : data.slice(0, PAGE_SIZE));
+      setRows(previous => after ? mergeCardNotes(previous, data.slice(0, PAGE_SIZE)) : data.slice(0, PAGE_SIZE));
       setMore(data.length > PAGE_SIZE);
       setCursor(data.slice(0, PAGE_SIZE).at(-1)?.section || null);
     } catch (failure) { if (mounted.current) setError(failure.message || 'Could not load this card’s information.'); }
@@ -48,9 +49,9 @@ function CardNotebook({ cardKey, kind }) {
     {loading && <p role="status" className="text-xs text-white/50">Loading information…</p>}
     {more && <button type="button" disabled={loading} onClick={() => load(cursor)} className="rounded-lg border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200">Load more information</button>}
     {editor && createPortal(<ContentEditor label="card information" row={editor} originalText="" onClose={() => setEditor(null)} onSave={async value => {
-      const { data, error: failure } = await supabase.rpc('save_owner_content', { p_scope: scope, p_section: editor.section, p_feature: feature, p_content: value, p_revision: editor.revision || 0 });
+      const { data, error: failure } = await cardContentRequest(signal => supabase.rpc('save_owner_content', { p_scope: scope, p_section: editor.section, p_feature: feature, p_content: value, p_revision: editor.revision || 0 }).abortSignal(signal));
       if (failure) throw failure;
-      setRows(previous => previous.some(row => row.section === data.section) ? previous.map(row => row.section === data.section ? data : row) : [...previous, data]);
+      setRows(previous => mergeCardNotes(previous, [data]));
       setEditor(null);
     }} />, document.body)}
   </section>;
@@ -66,12 +67,33 @@ function PublishedContent({ content }) {
 }
 function ContentImage({ image }) {
   const [url, setUrl] = useState('');
+  const [error, setError] = useState(false);
+  const [retry, setRetry] = useState(0);
+  const [visible, setVisible] = useState(false);
+  const figure = useRef(null);
   useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') { setVisible(true); return; }
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) { setVisible(true); observer.disconnect(); }
+    }, { rootMargin: '400px' });
+    if (figure.current) observer.observe(figure.current);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    if (!visible) return;
     let alive = true;
-    supabase.storage.from('owner-content-images').createSignedUrl(image.path, 900).then(({ data }) => { if (alive) setUrl(data?.signedUrl || ''); });
-    return () => { alive = false; };
-  }, [image.path]);
-  return <figure>{url ? <img src={url} alt={image.caption || 'Owner supplied illustration'} className="max-w-full max-h-[75vh] rounded-lg object-contain mx-auto" /> : <p className="text-xs text-white/50">Photo unavailable</p>}{image.caption && <figcaption dir="auto" className="mt-2 text-sm text-white/70 whitespace-pre-wrap">{image.caption}</figcaption>}</figure>;
+    let refresh;
+    setError(false); setUrl('');
+    cardContentRequest(() => supabase.storage.from('owner-content-images').createSignedUrl(image.path, 900))
+      .then(({ data, error: failure }) => {
+        if (!alive) return;
+        if (failure || !data?.signedUrl) { setError(true); return; }
+        setUrl(data.signedUrl);
+        refresh = setTimeout(() => { if (alive) setRetry(value => value + 1); }, 12 * 60 * 1000);
+      }).catch(() => { if (alive) setError(true); });
+    return () => { alive = false; clearTimeout(refresh); };
+  }, [image.path, retry, visible]);
+  return <figure ref={figure} className="min-h-12">{error ? <div role="status" className="text-sm text-amber-100">Photo could not load. <button type="button" onClick={() => setRetry(value => value + 1)} className="underline">Retry photo</button></div> : url ? <img loading="lazy" decoding="async" src={url} onError={() => setError(true)} alt={image.caption || 'Owner supplied illustration'} className="max-w-full max-h-[75vh] rounded-lg object-contain mx-auto" /> : <p className="text-xs text-white/50">Loading photo…</p>}{image.caption && <figcaption dir="auto" className="mt-2 text-sm text-white/70 whitespace-pre-wrap">{image.caption}</figcaption>}</figure>;
 }
 function ContentEditor({ label, row, originalText, onClose, onSave }) {
   const [form, setForm] = useState({ ...empty, ...row?.content });
@@ -100,6 +122,7 @@ function ContentEditor({ label, row, originalText, onClose, onSave }) {
     event.preventDefault();
     if (busyRef.current) return;
     if (![form.title, form.arabic, form.malayalam, form.english].some(value => value.trim()) && !form.images.length) { setError("Add text or a photo before saving."); return; }
+    if (new TextEncoder().encode(JSON.stringify(form)).length > 2000000) { setError("This information exceeds 2 MB. Split it into two entries on this card."); return; }
     busyRef.current = true; setBusy(true); setError('');
     try { await onSave(form); }
     catch (failure) { setError(failure.message || 'Could not save. Your draft is still here.'); }
@@ -110,10 +133,10 @@ function ContentEditor({ label, row, originalText, onClose, onSave }) {
       <h2 className="text-lg text-yellow-200">Edit {label}</h2>
       <p className="text-sm text-white/65">Save to this section. Arabic, Malayalam and English are supported. Calculation rules and values stay unchanged.</p>
       {originalText && <details><summary className="cursor-pointer text-sm text-yellow-100">Current original text</summary><p dir="auto" className="whitespace-pre-wrap text-sm mt-2">{originalText}</p></details>}
-      <label className="block">Title<input aria-label="Content title" className={fieldStyle} dir="auto" value={form.title} onChange={e => change('title', e.target.value)} /></label>
-      {[['arabic','Arabic / العربية','rtl'],['malayalam','Malayalam / മലയാളം','ltr'],['english','English','ltr']].map(([key, title, dir]) => <label key={key} className="block">{title}<textarea aria-label={title} dir={dir} lang={key === 'arabic' ? 'ar' : key === 'malayalam' ? 'ml' : 'en'} rows={7} className={fieldStyle} value={form[key]} onChange={e => change(key,e.target.value)} /></label>)}
+      <label className="block">Title<input disabled={busy} aria-label="Content title" className={fieldStyle} dir="auto" value={form.title} onChange={e => change('title', e.target.value)} /></label>
+      {[['arabic','Arabic / العربية','rtl'],['malayalam','Malayalam / മലയാളം','ltr'],['english','English','ltr']].map(([key, title, dir]) => <label key={key} className="block">{title}<textarea disabled={busy} aria-label={title} dir={dir} lang={key === 'arabic' ? 'ar' : key === 'malayalam' ? 'ml' : 'en'} rows={7} className={fieldStyle} value={form[key]} onChange={e => change(key,e.target.value)} /></label>)}
       <label className="block">Add photos (up to 20, 10 MB each)<input aria-label="Add content photo" type="file" accept="image/jpeg,image/png,image/webp,image/gif" disabled={busy} onChange={upload} className="block mt-2" /></label>
-      {form.images.map((image,index) => <div key={image.path} className="rounded-lg border border-white/15 p-3 space-y-2"><ContentImage image={image} /><label>Photo caption<input aria-label={`Photo ${index+1} caption`} className={fieldStyle} dir="auto" value={image.caption} onChange={e => change('images',form.images.map((item,i) => i === index ? { ...item,caption:e.target.value } : item))} /></label><button type="button" disabled={busy} onClick={() => change('images',form.images.filter((_,i) => i !== index))}>Remove photo from section</button></div>)}
+      {form.images.map((image,index) => <div key={image.path} className="rounded-lg border border-white/15 p-3 space-y-2"><ContentImage image={image} /><label>Photo caption<input disabled={busy} aria-label={`Photo ${index+1} caption`} className={fieldStyle} dir="auto" value={image.caption} onChange={e => change('images',form.images.map((item,i) => i === index ? { ...item,caption:e.target.value } : item))} /></label><button type="button" disabled={busy} onClick={() => change('images',form.images.filter((_,i) => i !== index))}>Remove photo from section</button></div>)}
       {error && <p role="alert" className="text-red-300">{error}</p>}
       <div className="sticky bottom-0 flex justify-end gap-3 bg-[#081026] py-3"><button type="button" disabled={busy} onClick={onClose} className="rounded-lg border border-white/20 px-4 py-2">Cancel</button><button type="submit" disabled={busy} className="btn-gold rounded-lg px-5 py-2">{busy ? 'Saving…' : 'Save / OK'}</button></div>
     </form>
