@@ -38,7 +38,8 @@ export default function StatsPanel({ entries, loading }) {
     const keywords = new Set();
     let duplicates = 0;
     for (const entry of entries.filter(entry => entry.is_active !== false)) {
-      const keyword = (entry.arabic_keyword || entry.purpose_phrase || '').replace(/[\u0610-\u061a\u064b-\u065f\u0670\u0640]/g, '').trim().toLowerCase();
+      const normalize = value => (value || '').replace(/[\u0610-\u061a\u064b-\u065f\u0670\u0640]/g, '').trim().toLowerCase();
+      const keyword = [normalize(entry.arabic_keyword || entry.purpose_phrase), normalize(entry.purpose_phrase), entry.normalized_purpose_key, entry.action].join('::');
       if (keyword && keywords.has(keyword)) duplicates++;
       keywords.add(keyword);
     }
