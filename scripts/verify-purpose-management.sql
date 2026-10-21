@@ -1,6 +1,7 @@
 begin;
 select set_config('test.owner',(select id::text from public.profiles where role='owner' and status='active' limit 1),true);
 insert into public.platform_records(entity,owner_id,data) values('PurposeDictionary',current_setting('test.owner')::uuid,'{"purpose_phrase":"fixture original 916","arabic_keyword":"فَحْصـ916","normalized_purpose_key":"celb","action":"jalb","is_active":false,"aliases":["original_alias"],"notes":"preserve note","extra_original":"preserve exact"}');
+insert into public.platform_records(entity,owner_id,data) values('PurposeDictionary',current_setting('test.owner')::uuid,'{"purpose_phrase":"search fixture 916","arabic_keyword":"فحص بحث 916","normalized_purpose_key":"knowledge","action":"jalb","is_active":true,"aliases":["searchalias916"],"english_meaning":"Search test","malayalam_meaning":"തിരച്ചിൽ പരീക്ഷണം"}');
 insert into public.platform_records(entity,owner_id,data) values('OwnerAuditLog',current_setting('test.owner')::uuid,'{"fixture":"purpose isolation 916","original":"untouched"}');
 select set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
 set local role authenticated;
@@ -17,6 +18,12 @@ do $$ declare backup jsonb; restored jsonb; report jsonb; r jsonb; v jsonb; requ
    cursor:=(r->>'next_cursor')::uuid;
  end loop;
  if cardinality(ids)<>expected then raise exception 'Dictionary read lost records'; end if;
+ r:=public.lookup_purpose_intent('فَحْص بحث 916');
+ if r->>'matched'<>'true' or r->>'normalized_purpose_key'<>'knowledge' then raise exception 'Normalized read-only keyword lookup failed: %',r; end if;
+ r:=public.lookup_purpose_intent('searchalias916');
+ if r->>'matched'<>'true' or r->>'normalized_purpose_key'<>'knowledge' then raise exception 'Indexed alias lookup failed: %',r; end if;
+ r:=public.lookup_purpose_intent('unknown fixture 916');
+ if r->>'matched'<>'false' then raise exception 'Unknown keyword did not return a clean miss'; end if;
  backup:=public.owner_purpose_management('BACKUP',jsonb_build_object('label','ROLLBACK PURPOSE FIXTURE 916','request_id',gen_random_uuid()));
  if (backup->>'record_count')::bigint<>expected then raise exception 'Backup incomplete'; end if;
  report:=public.owner_purpose_management('IMPORT',jsonb_build_object('version_id',backup->>'version_id','request_id',request_id,'entries','[{"purpose_phrase":"replacement must not win","arabic_keyword":"فحص916","normalized_purpose_key":"rizq","action":"tard","is_active":true,"english_meaning":"fill missing","notes":"do not overwrite","aliases":["added_alias"]},{"purpose_phrase":"fixture newly imported 916","normalized_purpose_key":"knowledge","aliases":"one|two"},{"purpose_phrase":"invalid key fixture","normalized_purpose_key":"invented"}]'::jsonb));
@@ -33,6 +40,8 @@ do $$ declare backup jsonb; restored jsonb; report jsonb; r jsonb; v jsonb; requ
  if not exists(select 1 from public.platform_records where entity='OwnerAuditLog' and data='{"fixture":"purpose isolation 916","original":"untouched"}') then raise exception 'Unrelated entity changed'; end if;
  perform public.owner_purpose_management('FINALIZE',jsonb_build_object('version_id',backup->>'version_id','request_id',gen_random_uuid(),'status','failed','report',report));
  perform set_config('request.jwt.claim.sub',gen_random_uuid()::text,true);
+ r:=public.lookup_purpose_intent('searchalias916');
+ if r->>'matched'<>'true' or r->>'normalized_purpose_key'<>'knowledge' then raise exception 'Authenticated customer could not use bounded read-only lookup'; end if;
  begin perform public.owner_purpose_management('BACKUP',jsonb_build_object('request_id',gen_random_uuid())); raise exception 'Customer could manage dictionary'; exception when insufficient_privilege then null; end;
  begin perform public.owner_purpose_records(); raise exception 'Customer could read dictionary'; exception when insufficient_privilege then null; end;
  if exists(select 1 from private.purpose_snapshots) then raise exception 'Customer could read private snapshots'; end if;
@@ -43,5 +52,5 @@ do $$ declare backup jsonb; restored jsonb; report jsonb; r jsonb; v jsonb; requ
  if r->>'success'<>'true' or exists(select 1 from public.platform_records where entity='PurposeDictionaryVersion' and data->>'version_id'=v->>'version_id') or exists(select 1 from private.purpose_snapshots where version_id=v->>'version_id') then raise exception 'Version deletion did not atomically remove its private snapshot'; end if;
  if public.owner_purpose_delete_version(v->>'version_id',request_id)<>r then raise exception 'Version deletion retry did not return its original result'; end if;
 end $$;
-select 'PASS complete bounded dictionary read, isolated snapshot, normalized dedup, protected fields, aliases, replay, exact atomic restore, recovery, atomic version deletion and owner isolation' checks;
+select 'PASS bounded read-only keyword/alias lookup, complete paginated owner read, isolated backup, normalized dedup, protected fields, idempotency, exact atomic restore, recovery, atomic version deletion and owner/customer access' checks;
 rollback;
