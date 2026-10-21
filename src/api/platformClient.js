@@ -381,6 +381,13 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    if (name === 'unifiedKnowledgeSearch' || name === 'getAstroClockLibraryStatus') {
+      const { data, error } = await client().rpc(name === 'unifiedKnowledgeSearch' ? 'owner_library_search' : 'owner_library_status', name === 'unifiedKnowledgeSearch' ? {
+        p_query: body.query, p_mode: body.mode || 'harakat_insensitive', p_after: body.after || null, p_limit: body.limit || 30,
+      } : {});
+      if (error) throw error;
+      return { data: await references.resolve(data) };
+    }
     if (name === 'getRuntimeStatus') {
       const { data, error } = await client().rpc('runtime_status');
       if (error) throw error;

@@ -52,7 +52,7 @@ export default function KnowledgeSearchResults({ results }) {
 
   return (
     <div>
-      {db.length > 0 && (
+      {db.length > 0 && results.source_scope !== 'independent_index' && (
         <button onClick={() => setShowGraph(true)} style={{ display: "flex", alignItems: "center", gap: 6, padding: "8px 13px", borderRadius: 8, cursor: "pointer", background: "rgba(212,175,55,0.10)", border: `1px solid ${G.borderHi}`, color: G.text, fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, marginBottom: 12 }}>
           <Network style={{ width: 13, height: 13 }} /> Build Knowledge Graph for "{query}"
         </button>
@@ -101,11 +101,11 @@ export default function KnowledgeSearchResults({ results }) {
       </Section>
 
       {/* Cloud matches */}
-      <Section title="Cloud matches (not yet indexed)" icon={Cloud}>
+      {results.source_scope !== 'independent_index' && <Section title="Cloud matches (not yet indexed)" icon={Cloud}>
         <CloudGroup label="Google Drive" files={cm.googleDrive} />
         <CloudGroup label="OneDrive" files={cm.oneDrive} />
         {cm.adobe && <CloudGroup label="Adobe Document Cloud" note={cm.adobe.note} />}
-      </Section>
+      </Section>}
 
       {cite && (
         <CitationExplorer

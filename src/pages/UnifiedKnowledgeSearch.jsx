@@ -1,17 +1,15 @@
 /**
  * UnifiedKnowledgeSearch — OWNER-ONLY permanent knowledge gateway.
  *
- * Searches across every connected source at once (Google Drive,
- * OneDrive, Adobe note, uploaded PDFs, indexed Master PDF Library),
- * then the AI compares all matched books and auto-collects scholarly
- * entries — opinions kept separate, nothing fabricated.
+ * Searches the independent Master PDF index with preserved citations.
+ * External cloud discovery and AI comparison require separate services.
  *
  * Gating: rbac ROUTE_ACCESS roles:[OWNER], sidebar (Owner), client
  * check, backend Owner-verify, entity RLS.
  */
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ShieldAlert, Search, Loader2, Sparkles, Database, Cloud, BookOpen, AlertTriangle } from "lucide-react";
+import { ShieldAlert, Search, Loader2, Sparkles, Database, AlertTriangle } from "lucide-react";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
 import { platform } from "@/api/platformClient";
@@ -29,9 +27,6 @@ const MODES = [
   { id: "exact", label: "Exact" },
   { id: "malayalam", label: "Malayalam" },
   { id: "english", label: "English" },
-  { id: "semantic", label: "Semantic (broad)" },
-  { id: "root", label: "Root (Arabic root)" },
-  { id: "fuzzy", label: "Fuzzy (subsequence)" },
 ];
 
 export default function UnifiedKnowledgeSearch() {
@@ -41,6 +36,7 @@ export default function UnifiedKnowledgeSearch() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState("");
+  const [moreLoading, setMoreLoading] = useState(false);
 
   if (role !== "owner") {
     return (
@@ -58,7 +54,7 @@ export default function UnifiedKnowledgeSearch() {
 
   async function runSearch(e) {
     e?.preventDefault();
-    if (!query.trim()) return;
+    if (!query.trim() || loading || moreLoading) return;
     setLoading(true); setError(""); setResults(null);
     try {
       const res = await platform.functions.invoke("unifiedKnowledgeSearch", { query: query.trim(), mode });
@@ -72,6 +68,16 @@ export default function UnifiedKnowledgeSearch() {
     }
   }
 
+  async function loadMore() {
+    if (!results?.has_more || moreLoading || loading) return;
+    setMoreLoading(true); setError('');
+    try {
+      const { data } = await platform.functions.invoke('unifiedKnowledgeSearch', { query: results.query, mode: results.mode, after: results.next_cursor });
+      setResults(previous => ({ ...data, db_results: [...previous.db_results, ...data.db_results] }));
+    } catch (err) { setError(err.message); }
+    finally { setMoreLoading(false); }
+  }
+
   return (
     <AdminLayout title="Knowledge Search" subtitle="Owner Knowledge Management">
       <div style={{ marginBottom: 18 }}>
@@ -79,7 +85,7 @@ export default function UnifiedKnowledgeSearch() {
           Unified Knowledge Search
         </h1>
         <p style={{ fontFamily: "Inter, sans-serif", color: G.dim, fontSize: 11, margin: 0, letterSpacing: "0.04em" }}>
-          Google Drive · OneDrive · Adobe · Uploaded PDFs · Master PDF Library · AI compares all books · Opinions kept separate · Nothing fabricated
+          Search the independent PDF index. Each match retains its source citation and recorded text.
         </p>
       </div>
 
@@ -98,7 +104,7 @@ export default function UnifiedKnowledgeSearch() {
         <select value={mode} onChange={(e) => setMode(e.target.value)} style={{ padding: "11px 12px", borderRadius: 9, fontSize: 12, color: "#fff", background: "rgba(255,255,255,0.05)", border: `1px solid ${G.border}`, outline: "none", fontFamily: "Inter, sans-serif", cursor: "pointer" }}>
           {MODES.map((m) => <option key={m.id} value={m.id} style={{ background: "#0a1428" }}>{m.label}</option>)}
         </select>
-        <button type="submit" disabled={loading || !query.trim()} style={{ padding: "11px 18px", borderRadius: 9, cursor: loading || !query.trim() ? "not-allowed" : "pointer", background: "linear-gradient(135deg, #f6d860 0%, #c98a14 100%)", border: "none", color: "#0d1b2a", fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, opacity: loading ? 0.6 : 1 }}>
+        <button type="submit" disabled={loading || moreLoading || !query.trim()} style={{ padding: "11px 18px", borderRadius: 9, cursor: loading || !query.trim() ? "not-allowed" : "pointer", background: "linear-gradient(135deg, #f6d860 0%, #c98a14 100%)", border: "none", color: "#0d1b2a", fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, opacity: loading ? 0.6 : 1 }}>
           {loading ? <Loader2 style={{ width: 14, height: 14, animation: "spin 1s linear infinite" }} /> : <Sparkles style={{ width: 14, height: 14 }} />}
           {loading ? "Searching…" : "Search"}
         </button>
@@ -108,7 +114,7 @@ export default function UnifiedKnowledgeSearch() {
       <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 12px", borderRadius: 8, background: "rgba(34,197,94,0.06)", border: "1px solid rgba(34,197,94,0.30)", marginBottom: 16 }}>
         <AlertTriangle style={{ width: 13, height: 13, color: "#86efac", flexShrink: 0 }} />
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "rgba(255,255,255,0.70)", margin: 0 }}>
-          The AI collects only from matched source content. Conflicting scholarly opinions are never merged — each carries its own citation. Missing knowledge is never fabricated.
+          Results contain stored source text. Search does not rewrite passages or combine opinions. Cloud discovery and AI comparison require separate service configuration.
         </p>
       </div>
 
@@ -121,7 +127,7 @@ export default function UnifiedKnowledgeSearch() {
       {loading && (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: 48, gap: 12 }}>
           <Loader2 style={{ width: 26, height: 26, color: G.text, animation: "spin 1s linear infinite" }} />
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: G.dim, margin: 0 }}>Searching across Google Drive, OneDrive, and the Master PDF Library…</p>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: G.dim, margin: 0 }}>Searching the independent PDF index…</p>
         </div>
       )}
 
@@ -129,12 +135,10 @@ export default function UnifiedKnowledgeSearch() {
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.18 }}>
           {/* Counts */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: 8, marginBottom: 16 }}>
-            <CountCard icon={Database} label="Master Library" value={results.counts?.db ?? 0} />
-            <CountCard icon={Cloud} label="Google Drive" value={results.counts?.googleDrive ?? 0} />
-            <CountCard icon={Cloud} label="OneDrive" value={results.counts?.oneDrive ?? 0} />
-            <CountCard icon={BookOpen} label="Adobe" value={typeof results.counts?.adobe === "string" ? "—" : (results.counts?.adobe ?? 0)} />
+            <CountCard icon={Database} label="Loaded matches" value={results.db_results?.length ?? 0} />
           </div>
           <KnowledgeSearchResults results={results} />
+          {results.has_more && <button type="button" onClick={loadMore} disabled={moreLoading} className="rounded-lg border border-yellow-300/30 px-4 py-3 text-yellow-200 disabled:opacity-40">{moreLoading ? 'Loading…' : 'Load more matches'}</button>}
         </motion.div>
       )}
     </AdminLayout>
