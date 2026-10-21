@@ -63,6 +63,7 @@ const PAGE_IMPORTS = {
   SubscriptionExpired:      () => import('./pages/SubscriptionExpired'),
   SubscriptionPending:      () => import('./pages/SubscriptionPending'),
   PremiumAccessRequest:     () => import('./pages/PremiumAccessRequest'),
+  MembershipPage:           () => import('./pages/MembershipPage'),
   MySubscription:           () => import('./pages/MySubscription'),
   MyRequests:               () => import('./pages/MyRequests'),
   RedeemCodeApproval:       () => import('./pages/RedeemCodeApproval'),
