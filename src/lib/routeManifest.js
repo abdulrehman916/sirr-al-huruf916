@@ -53,6 +53,7 @@ const ROUTE_MANIFEST = [
   // Access & Subscription utility pages — all public
   { path: '/subscription/expired', component: 'SubscriptionExpired', chunk: 'SubscriptionExpired', flags: ['public'] },
   { path: '/subscription/pending', component: 'SubscriptionPending', chunk: 'SubscriptionPending', flags: ['public'] },
+  { path: '/premium/membership', component: 'MembershipPage', chunk: 'MembershipPage', flags: ['public'] },
   { path: '/premium/request', component: 'PremiumAccessRequest', chunk: 'PremiumAccessRequest', flags: ['public', 'account'] },
   { path: '/my-subscription', component: 'MySubscription', chunk: 'MySubscription', flags: ['public', 'account'] },
   { path: '/my-requests', component: 'MyRequests', chunk: 'MyRequests', flags: ['public', 'account'] },
