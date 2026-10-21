@@ -1,0 +1,35 @@
+begin;
+select set_config('test.owner',(select id::text from public.profiles where role='owner' and status='active' limit 1),true);
+insert into public.platform_records(entity,owner_id,data) values('MasterPdfBook',current_setting('test.owner')::uuid,'{"master_book_id":"ROLLBACK-REVIEW-916","book_title":"Review fixture"}');
+insert into public.platform_records(entity,owner_id,data)
+select 'MasterPdfPage',current_setting('test.owner')::uuid,jsonb_build_object('_base44_legacy_id','ROLLBACK-REVIEW-'||i,'master_book_id','ROLLBACK-REVIEW-916','page_number',i,'review_status','pending_review','needs_owner_review',true,'ocr_text','original immutable OCR','ocr_text_ar','أصل','arabic_text','قبل','content_hash','ROLLBACK-REVIEW-HASH916','search_text','fixture_review_lookup916') from generate_series(1,52) i;
+select set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
+set local role authenticated;
+do $$ declare r jsonb; request_id uuid:=gen_random_uuid(); row_data jsonb; n int; cursor uuid; begin
+ r:=public.owner_library_pages('{"query":"fixture_review_lookup916","only_review":true,"only_duplicates":true}');
+ if jsonb_array_length(r->'pages')<>50 or not (r->>'has_more')::boolean then raise exception 'Bounded review queue failed'; end if;
+ cursor:=(r->>'next_cursor')::uuid;
+ r:=public.owner_library_pages(jsonb_build_object('query','fixture_review_lookup916','after',cursor));
+ if jsonb_array_length(r->'pages')<>2 or (r->>'has_more')::boolean then raise exception 'Queue pagination failed'; end if;
+ r:=public.owner_library_review(jsonb_build_object('mode','correct','page_id','ROLLBACK-REVIEW-1','request_id',request_id,'field','arabic_text','corrected_value','بعد','reason','fixture'));
+ perform public.owner_library_review(jsonb_build_object('mode','correct','page_id','ROLLBACK-REVIEW-1','request_id',request_id,'field','arabic_text','corrected_value','بعد'));
+ select data into row_data from public.platform_records where entity='MasterPdfPage' and data->>'_base44_legacy_id'='ROLLBACK-REVIEW-1';
+ if row_data->>'ocr_text'<>'original immutable OCR' or row_data->>'ocr_text_ar'<>'أصل' or row_data->>'arabic_text'<>'بعد' or jsonb_array_length(row_data->'ocr_corrections')<>1 or row_data#>>'{ocr_corrections,0,original_value}'<>'قبل' then raise exception 'Correction history/source/idempotency failed'; end if;
+ select count(*) into n from public.platform_records where entity='SirrAuditLog' and data->>'request_id'=request_id::text;
+ if n<>1 then raise exception 'Audit missing or duplicate'; end if;
+ perform public.owner_library_review(jsonb_build_object('mode','approve','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid()));
+ begin perform public.owner_library_review(jsonb_build_object('mode','merge','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid(),'canonical_page_record_id','ROLLBACK-REVIEW-2')); raise exception 'Approved page merged'; exception when raise_exception then if sqlerrm='Approved page merged' then raise; end if; end;
+ perform public.owner_library_review(jsonb_build_object('mode','reject','page_id','ROLLBACK-REVIEW-2','request_id',gen_random_uuid(),'reason','fixture'));
+ perform public.owner_library_review(jsonb_build_object('mode','re_review','page_id','ROLLBACK-REVIEW-2','request_id',gen_random_uuid()));
+ perform public.owner_library_review(jsonb_build_object('mode','merge','page_id','ROLLBACK-REVIEW-2','request_id',gen_random_uuid(),'canonical_page_record_id','ROLLBACK-REVIEW-1'));
+ select data into row_data from public.platform_records where entity='MasterPdfPage' and data->>'_base44_legacy_id'='ROLLBACK-REVIEW-2';
+ if row_data->>'review_status'<>'ignored' or row_data->>'canonical_page_record_id' is null or row_data->>'ocr_text'<>'original immutable OCR' then raise exception 'Merge lost source or canonical'; end if;
+ perform public.owner_library_review(jsonb_build_object('mode','note','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid(),'note','fixture'));
+ perform public.owner_library_review(jsonb_build_object('mode','uncertain','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid()));
+ begin perform public.owner_library_review(jsonb_build_object('mode','correct','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid(),'field','ocr_text','corrected_value','tamper')); raise exception 'OCR editable'; exception when raise_exception then if sqlerrm='OCR editable' then raise; end if; end;
+ perform set_config('request.jwt.claim.sub',gen_random_uuid()::text,true);
+ begin perform public.owner_library_review(jsonb_build_object('mode','approve','page_id','ROLLBACK-REVIEW-1','request_id',gen_random_uuid())); raise exception 'Customer could review'; exception when insufficient_privilege then null; end;
+ begin perform public.owner_library_pages(); raise exception 'Customer could browse queue'; exception when insufficient_privilege then null; end;
+end $$;
+select 'PASS review pagination, source preservation, append-only corrections, replay protection, audit, approval/rejection/reopening/merge and owner isolation' checks;
+rollback;

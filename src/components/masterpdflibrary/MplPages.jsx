@@ -1,107 +1,66 @@
-/**
- * MplPages — full-text search across MasterPdfPage.search_text,
- * duplicate detection (content_hash), correction workflow
- * (ocr_corrections append-only), AI classification display,
- * error/review flags. Owner-only (page-gated).
- */
-import { useState, useEffect, useMemo } from "react";
-import { Loader2, Copy, AlertTriangle, CheckCircle2, Tag } from "lucide-react";
-import { platform } from "@/api/platformClient";
-
-const G = { border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)", text: "#F5D060", dim: "rgba(212,175,55,0.55)", bg: "rgba(212,175,55,0.07)", bgHi: "rgba(212,175,55,0.14)" };
+/** Owner-only bounded search and review of the independent PDF index. */
+import { useState, useEffect } from 'react';
+import { platform } from '@/api/platformClient';
+import MplReviewDrawer from './MplReviewDrawer';
 
 export default function MplPages() {
-  const [pages, setPages] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState("");
+  const [draft, setDraft] = useState('');
+  const [query, setQuery] = useState('');
   const [onlyReview, setOnlyReview] = useState(false);
   const [onlyDup, setOnlyDup] = useState(false);
-
+  const [cursors, setCursors] = useState([null]);
+  const [data, setData] = useState({ pages: [], books: [] });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+  const [refresh, setRefresh] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [reviewing, setReviewing] = useState(false);
+  const after = cursors[cursors.length - 1];
   useEffect(() => {
-    (async () => {
-      try { setPages(await platform.entities.MasterPdfPage.list("-indexed_at", 200)); }
-      catch { /* ignore */ } finally { setLoading(false); }
-    })();
-  }, []);
-
-  const hashCounts = useMemo(() => {
-    const m = {};
-    pages.forEach((p) => { if (p.content_hash) m[p.content_hash] = (m[p.content_hash] || 0) + 1; });
-    return m;
-  }, [pages]);
-
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return pages.filter((p) => {
-      if (onlyReview && !p.needs_owner_review) return false;
-      if (onlyDup && !(p.content_hash && hashCounts[p.content_hash] > 1)) return false;
-      if (!q) return true;
-      return (p.search_text || "").toLowerCase().includes(q) || (p.ocr_text || "").toLowerCase().includes(q) || (p.arabic_text || "").toLowerCase().includes(q);
-    });
-  }, [pages, query, onlyReview, onlyDup, hashCounts]);
-
-  if (loading) return <div style={{ display: "flex", justifyContent: "center", padding: 40 }}><Loader2 className="animate-spin" style={{ width: 22, height: 22, color: G.text }} /></div>;
-
-  const dupGroups = Object.values(hashCounts).filter((n) => n > 1).length;
-  const reviewCount = pages.filter((p) => p.needs_owner_review).length;
-
-  return (
-    <div>
-      <div style={{ display: "flex", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search indexed page text…" style={{ flex: 1, minWidth: 200, padding: "9px 11px", borderRadius: 8, fontSize: 12, color: "#fff", background: "rgba(255,255,255,0.05)", border: `1px solid ${G.border}`, outline: "none", fontFamily: "Inter, sans-serif" }} />
-        <button onClick={() => setOnlyReview(!onlyReview)} style={{ padding: "9px 12px", borderRadius: 8, cursor: "pointer", background: onlyReview ? G.bgHi : "transparent", border: `1px solid ${G.border}`, color: onlyReview ? G.text : "rgba(255,255,255,0.55)", fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
-          <AlertTriangle style={{ width: 12, height: 12 }} /> Needs review ({reviewCount})
-        </button>
-        <button onClick={() => setOnlyDup(!onlyDup)} style={{ padding: "9px 12px", borderRadius: 8, cursor: "pointer", background: onlyDup ? G.bgHi : "transparent", border: `1px solid ${G.border}`, color: onlyDup ? G.text : "rgba(255,255,255,0.55)", fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
-          <Copy style={{ width: 12, height: 12 }} /> Duplicates ({dupGroups})
-        </button>
-      </div>
-
-      <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: G.dim, margin: "0 0 12px 0" }}>{filtered.length} of {pages.length} pages</p>
-
-      {filtered.slice(0, 40).map((p) => <PageRow key={p.id} p={p} dup={p.content_hash && hashCounts[p.content_hash] > 1} />)}
-
-      {filtered.length > 40 && <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.35)", textAlign: "center", marginTop: 12 }}>Showing first 40 results. Refine your search to narrow.</p>}
-    </div>
-  );
-}
-
-function PageRow({ p, dup }) {
-  const [open, setOpen] = useState(false);
-  const cls = p.ai_classification || {};
-  const clsKeys = Object.keys(cls).filter((k) => Array.isArray(cls[k]) && cls[k].length > 0);
-  return (
-    <div style={{ padding: 12, borderRadius: 9, background: "rgba(255,255,255,0.03)", border: `1px solid ${G.border}`, marginBottom: 8 }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <button onClick={() => setOpen(!open)} style={{ background: "none", border: "none", cursor: "pointer", color: G.text, padding: 0, fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700 }}>
-          p.{p.page_number}
-        </button>
-        {p.needs_owner_review && <span style={{ fontFamily: "Inter, sans-serif", fontSize: 9, fontWeight: 700, padding: "2px 6px", borderRadius: 4, background: "rgba(252,165,165,0.15)", color: "#fca5a5", border: "1px solid rgba(252,165,165,0.40)" }}>NEEDS REVIEW</span>}
-        {dup && <span style={{ fontFamily: "Inter, sans-serif", fontSize: 9, fontWeight: 700, padding: "2px 6px", borderRadius: 4, background: "rgba(251,191,36,0.15)", color: "#fbbf24", border: "1px solid rgba(251,191,36,0.40)" }}>DUPLICATE</span>}
-        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: G.dim, marginLeft: "auto" }}>OCR {p.ocr_confidence ?? 100}%</span>
-        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.45)" }}>{p.review_status?.replace(/_/g, " ")}</span>
-      </div>
-      {open && (
-        <div style={{ marginTop: 10, paddingTop: 10, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-          {p.arabic_text && <p className="font-amiri" style={{ direction: "rtl", textAlign: "right", color: G.text, fontSize: 14, margin: "0 0 8px 0" }}>{p.arabic_text.slice(0, 300)}</p>}
-          <pre style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.70)", whiteSpace: "pre-wrap", wordBreak: "break-word", maxHeight: 200, overflowY: "auto", margin: "0 0 8px 0" }}>{(p.ocr_text || p.search_text || "").slice(0, 600)}</pre>
-          {clsKeys.length > 0 && (
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 6 }}>
-              {clsKeys.map((k) => (
-                <span key={k} style={{ display: "flex", alignItems: "center", gap: 3, fontFamily: "Inter, sans-serif", fontSize: 9, fontWeight: 600, padding: "2px 7px", borderRadius: 4, background: "rgba(212,175,55,0.12)", color: G.text, border: `1px solid ${G.border}` }}>
-                  <Tag style={{ width: 9, height: 9 }} /> {k} ({cls[k].length})
-                </span>
-              ))}
-            </div>
-          )}
-          {(p.ocr_corrections || []).length > 0 && (
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.45)", marginTop: 8 }}>
-              <CheckCircle2 style={{ width: 11, height: 11, color: "#86efac", verticalAlign: "middle", marginRight: 4 }} />
-              {(p.ocr_corrections || []).length} correction(s) appended (original preserved)
-            </p>
-          )}
-        </div>
-      )}
-    </div>
-  );
+    let current = true;
+    setLoading(true); setError('');
+    platform.functions.invoke('getOwnerLibraryPages', { query, only_review: onlyReview, only_duplicates: onlyDup, after })
+      .then(({ data: result }) => { if (current) setData(result); })
+      .catch(e => { if (current) setError(e.message); })
+      .finally(() => { if (current) setLoading(false); });
+    return () => { current = false; };
+  }, [query, onlyReview, onlyDup, after, refresh]);
+  const openReview = async page => {
+    setReviewing(true); setError('');
+    try {
+      const [fresh, siblings, books] = await Promise.all([
+        platform.entities.MasterPdfPage.get(page.id),
+        page.content_hash ? platform.entities.MasterPdfPage.filter({ content_hash: page.content_hash }, 'created_date', 100) : Promise.resolve([]),
+        platform.entities.MasterPdfBook.filter({ master_book_id: page.master_book_id }, 'created_date', 1),
+      ]);
+      setSelected({ page: fresh, siblings, book: books[0] || {} });
+    } catch (e) { setError(e.message); } finally { setReviewing(false); }
+  };
+  const changed = async () => {
+    const page = await platform.entities.MasterPdfPage.get(selected.page.id);
+    const books = await platform.entities.MasterPdfBook.filter({ master_book_id: page.master_book_id }, 'created_date', 1);
+    setSelected(previous => previous ? ({ ...previous, page, book: books[0] || {} }) : null);
+    setRefresh(value => value + 1);
+  };
+  return <div className="space-y-4 text-white">
+    <form className="flex flex-wrap gap-3" onSubmit={e => { e.preventDefault(); setQuery(draft.trim()); setCursors([null]); setRefresh(value => value + 1); }}>
+      <input aria-label="Search indexed page text" value={draft} maxLength={200} onChange={e => setDraft(e.target.value)} placeholder="Search all indexed pages…" className="flex-1 min-w-48 rounded-lg bg-white/5 border border-amber-200/30 p-3" />
+      <button type="submit" disabled={loading} className="rounded-lg border border-amber-200/30 p-3 disabled:opacity-40">Search</button>
+      <label className="flex items-center gap-2"><input type="checkbox" checked={onlyReview} onChange={e => { setOnlyReview(e.target.checked); setCursors([null]); }} />Needs review</label>
+      <label className="flex items-center gap-2"><input type="checkbox" checked={onlyDup} onChange={e => { setOnlyDup(e.target.checked); setCursors([null]); }} />Duplicates</label>
+    </form>
+    {error && <p role="alert" className="text-red-200">{error}<button type="button" onClick={() => setRefresh(value => value + 1)} className="ml-4 underline">Retry</button></p>}
+    {loading ? <p role="status">Loading indexed pages…</p> : !error && <>
+      <p>Page {cursors.length} · {data.pages.length} records shown · Search and filters cover the full independent index.</p>
+      {data.pages.map(page => <article key={page.id} className="rounded-xl border border-amber-200/20 p-4 space-y-2">
+        <p className="text-amber-200">{data.books.find(book => book.master_book_id === page.master_book_id)?.book_title || page.master_book_id} · p.{page.page_number}</p>
+        <p className="text-sm text-white/60">{page.review_status || 'Unreviewed'} · OCR {page.ocr_confidence == null ? 'not recorded' : page.ocr_confidence + '%'}{page.needs_owner_review ? ' · Needs review' : ''}</p>
+        <p dir="auto" className="whitespace-pre-wrap line-clamp-4">{(page.arabic_text || page.ocr_text || '').slice(0, 600)}</p>
+        <button type="button" disabled={reviewing} onClick={() => openReview(page)} className="underline disabled:opacity-40">Open owner review</button>
+      </article>)}
+      {!data.pages.length && <p>No matching pages.</p>}
+      <div className="flex justify-between"><button type="button" disabled={cursors.length === 1} onClick={() => setCursors(values => values.slice(0, -1))} className="underline disabled:opacity-40">Previous</button><button type="button" disabled={!data.has_more} onClick={() => setCursors(values => [...values, data.next_cursor])} className="underline disabled:opacity-40">Next</button></div>
+    </>}
+    {selected && <MplReviewDrawer page={selected.page} book={selected.book} allPages={selected.siblings} allBooks={[...data.books.filter(book => book.master_book_id !== selected.book.master_book_id), selected.book]} onClose={() => setSelected(null)} onChanged={changed} />}
+  </div>;
 }

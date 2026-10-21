@@ -381,6 +381,11 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    if (name === 'reviewMasterPdfPage' || name === 'getOwnerLibraryPages') {
+      const { data, error } = await client().rpc(name === 'reviewMasterPdfPage' ? 'owner_library_review' : 'owner_library_pages', { p_payload: body });
+      if (error) throw error;
+      return { data: await references.resolve(data) };
+    }
     if (name === 'unifiedKnowledgeSearch' || name === 'getAstroClockLibraryStatus') {
       const { data, error } = await client().rpc(name === 'unifiedKnowledgeSearch' ? 'owner_library_search' : 'owner_library_status', name === 'unifiedKnowledgeSearch' ? {
         p_query: body.query, p_mode: body.mode || 'harakat_insensitive', p_after: body.after || null, p_limit: body.limit || 30,
