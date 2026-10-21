@@ -381,6 +381,39 @@ export const platform = {
   auth,
   integrations,
   functions: { invoke: coalesceInvocations(async (name, body = {}) => {
+    if (name === 'getOwnerPurposeRecords') {
+      const { data, error } = await client().rpc('owner_purpose_records', { p_after: body.after || null });
+      if (error) throw error;
+      return { data: await references.resolve(data) };
+    }
+    if (name === 'deletePurposeDictionaryVersion') {
+      const { data, error } = await client().rpc('owner_purpose_delete_version', {
+        p_version_id: body.version_id,
+        p_request_id: body.request_id || crypto.randomUUID(),
+      });
+      if (error) throw error;
+      return { data };
+    }
+    const purposeActions = { backupPurposeDictionary: 'BACKUP', bulkImportPurposeDictionary: 'IMPORT', restorePurposeDictionary: 'RESTORE', finalizePurposeDictionaryImport: 'FINALIZE' };
+    if (purposeActions[name]) {
+      const payload = { ...body, request_id: body.request_id || crypto.randomUUID() };
+      if (name === 'restorePurposeDictionary') {
+        const versions = await entityApi('PurposeDictionaryVersion').filter({ version_id: body.version_id }, null, 1);
+        const version = versions[0];
+        if (!version) throw new Error('Version not found');
+        if (version.snapshot_storage !== 'independent') {
+          if (!version.snapshot_file_url) throw new Error('Legacy snapshot file is unavailable; current dictionary is unchanged');
+          const file = await fetch(version.snapshot_file_url);
+          if (!file.ok) throw new Error('Could not read the legacy snapshot; current dictionary is unchanged');
+          const entries = await file.json();
+          if (!Array.isArray(entries) || entries.length !== Number(version.record_count)) throw new Error('Legacy snapshot is incomplete; current dictionary is unchanged');
+          payload.snapshot_entries = entries;
+        }
+      }
+      const { data, error } = await client().rpc('owner_purpose_management', { p_action: purposeActions[name], p_payload: payload });
+      if (error) throw error;
+      return { data };
+    }
     if (name === 'reviewMasterPdfPage' || name === 'getOwnerLibraryPages') {
       const { data, error } = await client().rpc(name === 'reviewMasterPdfPage' ? 'owner_library_review' : 'owner_library_pages', { p_payload: body });
       if (error) throw error;
