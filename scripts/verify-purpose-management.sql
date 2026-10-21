@@ -1,0 +1,47 @@
+begin;
+select set_config('test.owner',(select id::text from public.profiles where role='owner' and status='active' limit 1),true);
+insert into public.platform_records(entity,owner_id,data) values('PurposeDictionary',current_setting('test.owner')::uuid,'{"purpose_phrase":"fixture original 916","arabic_keyword":"فَحْصـ916","normalized_purpose_key":"celb","action":"jalb","is_active":false,"aliases":["original_alias"],"notes":"preserve note","extra_original":"preserve exact"}');
+insert into public.platform_records(entity,owner_id,data) values('OwnerAuditLog',current_setting('test.owner')::uuid,'{"fixture":"purpose isolation 916","original":"untouched"}');
+select set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
+set local role authenticated;
+do $$ declare backup jsonb; restored jsonb; report jsonb; r jsonb; v jsonb; request_id uuid:=gen_random_uuid(); n bigint; expected bigint; ids text[]:='{}'; cursor uuid; row jsonb; begin
+ select count(*) into expected from public.platform_records where entity='PurposeDictionary';
+ loop
+   r:=public.owner_purpose_records(cursor);
+   if jsonb_array_length(r->'rows')>200 then raise exception 'Unbounded dictionary read'; end if;
+   for row in select * from jsonb_array_elements(r->'rows') loop
+     if row->>'id'=any(ids) then raise exception 'Duplicate dictionary page record'; end if;
+     ids:=array_append(ids,row->>'id');
+   end loop;
+   exit when not (r->>'has_more')::boolean;
+   cursor:=(r->>'next_cursor')::uuid;
+ end loop;
+ if cardinality(ids)<>expected then raise exception 'Dictionary read lost records'; end if;
+ backup:=public.owner_purpose_management('BACKUP',jsonb_build_object('label','ROLLBACK PURPOSE FIXTURE 916','request_id',gen_random_uuid()));
+ if (backup->>'record_count')::bigint<>expected then raise exception 'Backup incomplete'; end if;
+ report:=public.owner_purpose_management('IMPORT',jsonb_build_object('version_id',backup->>'version_id','request_id',request_id,'entries','[{"purpose_phrase":"replacement must not win","arabic_keyword":"فحص916","normalized_purpose_key":"rizq","action":"tard","is_active":true,"english_meaning":"fill missing","notes":"do not overwrite","aliases":["added_alias"]},{"purpose_phrase":"fixture newly imported 916","normalized_purpose_key":"knowledge","aliases":"one|two"},{"purpose_phrase":"invalid key fixture","normalized_purpose_key":"invented"}]'::jsonb));
+ if (report->>'imported')::int<>1 or (report->>'updated')::int<>1 or (report->>'skipped')::int<>1 then raise exception 'Import report incorrect: %',report; end if;
+ r:=public.owner_purpose_management('IMPORT',jsonb_build_object('version_id',backup->>'version_id','request_id',request_id,'entries','[]'::jsonb));
+ if r<>report then raise exception 'Import replay changed result'; end if;
+ select data into v from public.platform_records where entity='PurposeDictionary' and data->>'purpose_phrase'='fixture original 916';
+ if v->>'normalized_purpose_key'<>'celb' or v->>'action'<>'jalb' or (v->>'is_active')::boolean<>false or v->>'notes'<>'preserve note' or v->>'english_meaning'<>'fill missing' or not v->'aliases' @> '["original_alias","added_alias"]'::jsonb then raise exception 'Import overwrote protected content or failed alias union'; end if;
+ restored:=public.owner_purpose_management('RESTORE',jsonb_build_object('version_id',backup->>'version_id','request_id',gen_random_uuid()));
+ if (restored->>'record_count')::bigint<>expected or (restored->>'deleted_count')::bigint<>expected+1 or restored->>'recovery_version_id' is null then raise exception 'Restore counts or recovery snapshot incorrect'; end if;
+ if exists(select id,owner_id,data from public.platform_records where entity='PurposeDictionary' except select record_id,owner_id,data from private.purpose_snapshot_rows where snapshot_id=(select id from private.purpose_snapshots where version_id=backup->>'version_id')) then raise exception 'Restored content differs'; end if;
+ select count(*) into n from public.platform_records where entity='PurposeDictionary';
+ if n<>expected then raise exception 'Restore lost or duplicated records'; end if;
+ if not exists(select 1 from public.platform_records where entity='OwnerAuditLog' and data='{"fixture":"purpose isolation 916","original":"untouched"}') then raise exception 'Unrelated entity changed'; end if;
+ perform public.owner_purpose_management('FINALIZE',jsonb_build_object('version_id',backup->>'version_id','request_id',gen_random_uuid(),'status','failed','report',report));
+ perform set_config('request.jwt.claim.sub',gen_random_uuid()::text,true);
+ begin perform public.owner_purpose_management('BACKUP',jsonb_build_object('request_id',gen_random_uuid())); raise exception 'Customer could manage dictionary'; exception when insufficient_privilege then null; end;
+ begin perform public.owner_purpose_records(); raise exception 'Customer could read dictionary'; exception when insufficient_privilege then null; end;
+ if exists(select 1 from private.purpose_snapshots) then raise exception 'Customer could read private snapshots'; end if;
+ perform set_config('request.jwt.claim.sub',current_setting('test.owner'),true);
+ v:=public.owner_purpose_management('BACKUP',jsonb_build_object('request_id',gen_random_uuid()));
+ request_id:=gen_random_uuid();
+ r:=public.owner_purpose_delete_version(v->>'version_id',request_id);
+ if r->>'success'<>'true' or exists(select 1 from public.platform_records where entity='PurposeDictionaryVersion' and data->>'version_id'=v->>'version_id') or exists(select 1 from private.purpose_snapshots where version_id=v->>'version_id') then raise exception 'Version deletion did not atomically remove its private snapshot'; end if;
+ if public.owner_purpose_delete_version(v->>'version_id',request_id)<>r then raise exception 'Version deletion retry did not return its original result'; end if;
+end $$;
+select 'PASS complete bounded dictionary read, isolated snapshot, normalized dedup, protected fields, aliases, replay, exact atomic restore, recovery, atomic version deletion and owner isolation' checks;
+rollback;
