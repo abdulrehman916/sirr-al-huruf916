@@ -35,7 +35,6 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
   const [showSummary, setShowSummary] = useState(false);
   const [saving, setSaving] = useState(false);
   const [pageSearch, setPageSearch] = useState("");
-  const [managedPages, setManagedPages] = useState([]);
   const [defaultDuration, setDefaultDuration] = useState(null);
   useEffect(() => {
     let active = true;
@@ -52,34 +51,7 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
     category: p.category || 'General', adminOnly: p.adminOnly || false,
   })), []);
 
-  useEffect(() => {
-    let cancelled = false;
-    async function loadManagedPages() {
-      try {
-        const rows = await platform.entities.ManagedPage.filter({ status: "PUBLISHED" }, "-updated_date", 500);
-        if (cancelled) return;
-        setManagedPages((Array.isArray(rows) ? rows : []).map(page => ({
-          path: `/content/${page.slug}`,
-          name: page.title_ml || page.title_en || page.slug,
-          icon: '📄',
-          category: page.category || 'Published Content',
-          adminOnly: false,
-          managed: true,
-        })));
-      } catch {
-        if (!cancelled) setManagedPages([]);
-      }
-    }
-    loadManagedPages();
-    return () => { cancelled = true; };
-  }, []);
-
-  const pageList = useMemo(() => {
-    const byPath = new Map();
-    registeredPages.forEach(page => byPath.set(page.path, page));
-    managedPages.forEach(page => byPath.set(page.path, page));
-    return Array.from(byPath.values());
-  }, [registeredPages, managedPages]);
+  const pageList = registeredPages;
 
   const filteredPages = useMemo(() => {
     if (!pageSearch) return pageList;
@@ -315,7 +287,7 @@ export default function CreateCodeForm({ onCreated, onCancel }) {
       <div>
         <label className="text-xs text-white/45 mb-2 block">Pages Unlocked * ({selectedPages.length} selected)</label>
         <input value={pageSearch} onChange={e => setPageSearch(e.target.value)}
-          placeholder="Search pages, including published Content Studio pages…"
+          placeholder="Search app pages…"
           className="mb-2 w-full px-3 py-2 rounded-lg text-sm text-white outline-none"
           style={{ background: "rgba(255,255,255,0.05)", border: `1px solid ${G.border}` }} />
         <div className="space-y-2 max-h-80 overflow-y-auto pr-1">

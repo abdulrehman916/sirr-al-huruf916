@@ -16,11 +16,6 @@ export const ADMIN_NAVIGATION = [
   ]},
 ];
 export const ADMIN_MAINTENANCE = [
-  {label:'Independent publishing',items:[
-    {path:'/admin/content-studio',label:'Content Studio',description:'Create and publish website pages.'},
-    {path:'/admin/books-studio',label:'Books Studio',description:'Manage independent book publications.'},
-    {path:'/admin/resource-studio',label:'Resource access & pricing',description:'Manage independent resource entitlements and prices.'},
-  ]},
   {label:'Configuration',items:[
     {path:'/admin/settings',label:'App settings',description:'Existing app preferences and maintenance controls.'},
     {path:'/admin/feature-pricing',label:'Feature pricing',description:'Manage individual feature prices.'},
