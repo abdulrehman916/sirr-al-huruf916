@@ -46,9 +46,9 @@ export default function VersionHistoryPanel({ onRestored }) {
   useEffect(() => { loadVersions(); }, []);
 
   const handleRestore = async (versionId, label) => {
-    if (!confirm(`Restore Purpose Dictionary from "${label}"?\n\nThis will REPLACE all current records with the snapshot. This cannot be undone.`)) return;
+    if (!confirm(`Restore Purpose Dictionary from "${label}"?\n\nThis will REPLACE all current records with the snapshot. A recovery snapshot of the current dictionary will be kept.`)) return;
     setActioning(versionId);
-    setMessage("Deleting current records + downloading snapshot...");
+    setMessage("Validating snapshot and preparing an atomic restore...");
     try {
       const res = await platform.functions.invoke("restorePurposeDictionary", { version_id: versionId });
       const r = res.data || {};
@@ -63,7 +63,8 @@ export default function VersionHistoryPanel({ onRestored }) {
           await platform.entities.PurposeDictionary.bulkCreate(chunk);
         }
       }
-      setMessage(`Restored ${r.record_count} records from snapshot (deleted ${r.deleted_count}).`);
+      setMessage(`Restored ${r.record_count} records. Previous ${r.deleted_count} records saved in recovery version ${r.recovery_version_id}.`);
+      loadVersions();
       if (onRestored) onRestored();
     } catch (err) {
       setMessage("Restore failed: " + (err.message || "Unknown error"));
@@ -73,16 +74,15 @@ export default function VersionHistoryPanel({ onRestored }) {
   };
 
   const handleDelete = async (versionId, label) => {
-    if (!confirm(`Delete version "${label}"?\n\nThe snapshot file will be orphaned but the version record will be removed permanently.`)) return;
+    if (!confirm(`Permanently delete version "${label}" and its attached dictionary snapshot? This cannot be undone.`)) return;
     setActioning(versionId);
     setMessage("");
     try {
-      const records = await platform.entities.PurposeDictionaryVersion.filter({ version_id: versionId }, null, 1);
-      if (records && records.length > 0) {
-        await platform.entities.PurposeDictionaryVersion.delete(records[0].id);
-      }
-      setMessage("Version deleted.");
-      loadVersions();
+      const res = await platform.functions.invoke("deletePurposeDictionaryVersion", { version_id: versionId });
+      setMessage(res.data?.legacy_file_retained
+        ? "Version deleted. Its older external snapshot file remains in storage."
+        : "Version and attached snapshot deleted.");
+      await loadVersions();
     } catch (err) {
       setMessage("Delete failed: " + (err.message || "Unknown error"));
     } finally {

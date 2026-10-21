@@ -19,6 +19,7 @@ export default function AdminPurposeDictionary() {
   const { user } = useAuth();
   const [entries, setEntries] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [editorOpen, setEditorOpen] = useState(false);
   const [editingEntry, setEditingEntry] = useState(null);
   const [refreshKey, setRefreshKey] = useState(0);
@@ -42,12 +43,23 @@ export default function AdminPurposeDictionary() {
 
   const loadEntries = useCallback(async () => {
     setLoading(true);
+    setLoadError("");
     try {
-      const result = await platform.entities.PurposeDictionary.list("-created_date", 500);
-      setEntries(result || []);
+      const allEntries = [];
+      let after = null;
+      do {
+        const result = await platform.functions.invoke("getOwnerPurposeRecords", { after });
+        const page = result?.data || {};
+        if (!page.success || !Array.isArray(page.rows)) throw new Error("The dictionary page response was invalid.");
+        allEntries.push(...page.rows);
+        after = page.has_more ? page.next_cursor : null;
+        if (page.has_more && !after) throw new Error("The dictionary returned an incomplete page cursor.");
+      } while (after);
+      setEntries(allEntries);
     } catch (err) {
       console.error("Failed to load PurposeDictionary entries:", err);
       setEntries([]);
+      setLoadError(err.message || "Could not load the Purpose Dictionary.");
     } finally {
       setLoading(false);
     }
@@ -125,6 +137,13 @@ export default function AdminPurposeDictionary() {
             </button>
           </div>
         </div>
+
+        {loadError && (
+          <div role="alert" className="rounded-lg border border-red-400/30 bg-red-950/30 px-4 py-3 text-sm text-red-200">
+            <span>Purpose Dictionary failed to load: {loadError}</span>
+            <button onClick={loadEntries} disabled={loading} className="ml-3 underline disabled:opacity-50">Retry</button>
+          </div>
+        )}
 
         {/* Stats */}
         <StatsPanel entries={entries} loading={loading} />

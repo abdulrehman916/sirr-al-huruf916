@@ -41,11 +41,9 @@ export default function ImportExportBar({ entries, onImportComplete }) {
       "action", "normalized_purpose_key", "language", "aliases", "source", "is_active", "notes",
     ];
     const escapeCSV = (val) => {
-      const s = (val || "").toString();
-      if (s.includes(",") || s.includes('"') || s.includes("\n")) {
-        return '"' + s.replace(/"/g, '""') + '"';
-      }
-      return s;
+      let s = (val || "").toString();
+      if (/^[\t\r\n ]*[=+@-]/.test(s)) s = `'${s}`;
+      return `"${s.replace(/"/g, '""')}"`;
     };
     const rows = entries.map(e => [
       escapeCSV(e.purpose_phrase),
@@ -78,7 +76,11 @@ export default function ImportExportBar({ entries, onImportComplete }) {
       "purpose_phrase", "arabic_keyword", "malayalam_meaning", "english_meaning",
       "action", "normalized_purpose_key", "language", "aliases", "source", "is_active", "notes",
     ];
-    const rows = entries.map(e => ({
+    const safeText = value => {
+      const text = String(value || "");
+      return /^[\t\r\n ]*[=+@-]/.test(text) ? `'${text}` : text;
+    };
+    const rows = entries.map(e => Object.fromEntries(Object.entries({
       purpose_phrase: e.purpose_phrase || "",
       arabic_keyword: e.arabic_keyword || "",
       malayalam_meaning: e.malayalam_meaning || "",
@@ -90,7 +92,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
       source: e.source || "",
       is_active: e.is_active !== false ? "true" : "false",
       notes: e.notes || "",
-    }));
+    }).map(([key, value]) => [key, safeText(value)])));
     const ws = XLSX.utils.json_to_sheet(rows, { header: headers });
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "PurposeDictionary");
@@ -154,18 +156,20 @@ export default function ImportExportBar({ entries, onImportComplete }) {
           });
           versionId = backupRes.data?.version_id || null;
         } catch (backupErr) {
-          // Backup failed — proceed without rollback safety net
-          console.warn("Pre-import backup failed:", backupErr);
+          throw new Error("Import cancelled because the backup failed: " + backupErr.message);
         }
+
+        if (!versionId) throw new Error("Import cancelled: no completed backup was returned");
 
         // ── Phase 2: Chunked smart import via backend (dedup + merge + validate) ──
         let importFailed = false;
         let failError = null;
+        let rolledBack = false;
         for (let c = 0; c < totalChunks; c++) {
           const chunk = parsed.slice(c * CHUNK_SIZE, (c + 1) * CHUNK_SIZE);
           setProgress({ phase: "import", current: c + 1, total: totalChunks });
           try {
-            const response = await platform.functions.invoke("bulkImportPurposeDictionary", { entries: chunk });
+            const response = await platform.functions.invoke("bulkImportPurposeDictionary", { entries: chunk, version_id: versionId });
             const r = response.data || {};
             aggregated.total += r.total || 0;
             aggregated.imported += r.imported || 0;
@@ -198,6 +202,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
                 await platform.entities.PurposeDictionary.bulkCreate(chunk);
               }
             }
+            rolledBack = true;
             aggregated.errors.unshift(`Import failed: ${failError?.message || "Unknown error"}. Automatically rolled back to pre-import state (${rd.record_count} records restored).`);
           } catch (rollbackErr) {
             aggregated.errors.unshift(`Import failed: ${failError?.message}. Rollback also failed: ${rollbackErr.message}. Manual restore needed via Version History.`);
@@ -213,7 +218,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
 
         setReport(aggregated);
         setMessage(importFailed
-          ? "Import failed — rolled back to pre-import state. See report."
+          ? (rolledBack ? "Import failed — pre-import state restored. See report." : "Import failed and recovery is incomplete. Use Version History; see report.")
           : `Done: ${aggregated.imported} new, ${aggregated.updated} updated, ${aggregated.duplicatesMerged} merged, ${aggregated.skipped} skipped.`);
         onImportComplete();
       } catch (err) {
