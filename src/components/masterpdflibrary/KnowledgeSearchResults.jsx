@@ -177,10 +177,10 @@ function PageResultCard({ r, query, onOpenCitation }) {
   return (
     <div style={{ borderRadius: 9, background: "rgba(255,255,255,0.03)", border: `1px solid ${G.border}`, marginBottom: 8, overflow: "hidden" }}>
       <button onClick={() => setOpen(!open)} style={{ display: "flex", alignItems: "center", gap: 8, width: "100%", padding: "10px 12px", background: "transparent", border: "none", cursor: "pointer" }}>
-        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, color: G.text }}>p.{r.page_number}</span>
+        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, fontWeight: 700, color: G.text }}>{c.book_title || c.master_book_id || "Indexed page"} · p.{r.page_number}</span>
         <span style={{ fontFamily: "Inter, sans-serif", fontSize: 10, padding: "2px 6px", borderRadius: 4, background: "rgba(96,165,250,0.12)", color: "#60a5fa", border: "1px solid rgba(96,165,250,0.30)" }}>{r.cloud_source}</span>
         {r.duplicate_status !== "Unique" && <span style={{ fontFamily: "Inter, sans-serif", fontSize: 9, padding: "2px 6px", borderRadius: 4, background: "rgba(251,191,36,0.15)", color: "#fbbf24", border: "1px solid rgba(251,191,36,0.40)" }}><GitMerge style={{ width: 9, height: 9, verticalAlign: "middle", marginRight: 3 }} />{r.duplicate_status}</span>}
-        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: G.dim, marginLeft: "auto" }}>OCR {r.ocr_confidence}%</span>
+        <span style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: G.dim, marginLeft: "auto" }}>OCR {r.ocr_confidence == null ? "not recorded" : `${r.ocr_confidence}%`}</span>
       </button>
       {open && (
         <div style={{ padding: "0 12px 12px", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
@@ -188,11 +188,11 @@ function PageResultCard({ r, query, onOpenCitation }) {
             <FileText style={{ width: 12, height: 12 }} /> Open citation explorer
           </button>
           {r.arabic && <p className="font-amiri" style={{ direction: "rtl", textAlign: "right", color: G.text, fontSize: 16, margin: "8px 0", lineHeight: 1.9 }}>{r.arabic}</p>}
-          <Row label="Verified Arabic"><span className="font-amiri" style={{ direction: "rtl", textAlign: "right", display: "block", color: G.text, fontSize: 15 }}>{r.verified_arabic || "—"}</span></Row>
+          <Row label="Verified Arabic"><span className="font-amiri" style={{ direction: "rtl", textAlign: "right", display: "block", color: G.text, fontSize: 15 }}>{r.verified_arabic || (["approved", "verified"].includes(r.review_status) ? r.arabic : "Not owner approved")}</span></Row>
           <Row label="English">{r.english || "—"}</Row>
           <Row label="Malayalam"><span className="font-malayalam" style={{ fontSize: 13 }}>{r.malayalam || "—"}</span></Row>
           <Row label="OCR text (original)"><pre style={{ fontFamily: "Inter, sans-serif", fontSize: 10, color: "rgba(255,255,255,0.65)", whiteSpace: "pre-wrap", wordBreak: "break-word", maxHeight: 160, overflowY: "auto", margin: 0 }}>{r.ocr_text || "—"}</pre></Row>
-          <Row label="Confidence score">{r.ocr_confidence}%</Row>
+          <Row label="Confidence score">{r.ocr_confidence == null ? "not recorded" : `${r.ocr_confidence}%`}</Row>
           <Row label="Duplicate status">{r.duplicate_status}</Row>
           {r.related_books && r.related_books.length > 0 && (
             <Row label="Related books">
@@ -204,7 +204,7 @@ function PageResultCard({ r, query, onOpenCitation }) {
           <Row label="Author">{c.author || "—"}</Row>
           <Row label="Book">{c.book_title || "—"}</Row>
           <Row label="Volume">{c.volume || "—"}</Row>
-          <Row label="Page">{String(c.page ?? "—")}</Row>
+          <Row label="Page">{String(c.page ?? c.page_number ?? "—")}</Row>
           <Row label="Publisher">{c.publisher || "—"}</Row>
           <Row label="Edition">{c.edition || "—"}</Row>
           <Row label="Language">{c.language || "—"}</Row>

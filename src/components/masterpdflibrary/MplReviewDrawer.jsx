@@ -4,7 +4,7 @@
  * Owner-only reviewMasterPdfPage backend. Append-only: original OCR is
  * never overwritten; corrections append to ocr_corrections.
  */
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import {
   X, CheckCircle2, XCircle, RotateCcw, Edit3, StickyNote, HelpCircle,
@@ -38,20 +38,23 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
   const [loadingAudit, setLoadingAudit] = useState(true);
   const [modal, setModal] = useState(null); // {type, ...}
   const [compareId, setCompareId] = useState("");
+  const pendingRequest = useRef(null);
+  const [auditRevision, setAuditRevision] = useState(0);
 
   // Verification history + notes for this page (SirrAuditLog, page_range === page number).
   useEffect(() => {
     let active = true;
+    setLoadingAudit(true);
     (async () => {
       try {
-        const logs = await platform.entities.SirrAuditLog.filter({ sirr_book_id: p.master_book_id }, "-timestamp", 100);
+        const logs = await platform.entities.SirrAuditLog.filter({ sirr_book_id: p.master_book_id, page_range: String(p.page_number) }, "-timestamp", 100);
         if (!active) return;
         const mine = (logs || []).filter((l) => String(l.page_range || "") === String(p.page_number));
         setAudit(mine);
       } catch { /* ignore */ } finally { if (active) setLoadingAudit(false); }
     })();
     return () => { active = false; };
-  }, [p.master_book_id, p.page_number]);
+  }, [p.master_book_id, p.page_number, auditRevision]);
 
   // Sibling pages sharing the same content_hash (duplicate detection / related books).
   const siblings = useMemo(() => {
@@ -77,17 +80,25 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
   const qfKeys = Object.keys(qf).filter((k) => qf[k] === true);
 
   async function run(mode, payload = {}) {
+    if (busy) return;
     setBusy(mode);
+    const key = JSON.stringify({ mode, page_id: p.id, ...payload });
+    if (pendingRequest.current?.key !== key) pendingRequest.current = { key, id: crypto.randomUUID() };
     try {
-      const res = await platform.functions.invoke("reviewMasterPdfPage", { mode, page_id: p.id, ...payload });
+      const res = await platform.functions.invoke("reviewMasterPdfPage", { mode, page_id: p.id, request_id: pendingRequest.current.id, ...payload });
       const data = res?.data || res;
       if (data?.error) throw new Error(data.error);
-      onChanged && onChanged();
+      pendingRequest.current = null;
+      setAuditRevision(value => value + 1);
+      setModal(null);
+      if (onChanged) {
+        try { await onChanged(); }
+        catch (refreshError) { alert("Saved. Could not refresh the page: " + refreshError.message + ". Reopen the review to load the saved record."); }
+      }
     } catch (e) {
       alert("Action failed: " + (e?.message || e));
     } finally {
       setBusy("");
-      setModal(null);
     }
   }
 
@@ -120,7 +131,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
             <ActBtn icon={Edit3} label="Correct" color={G.text} onClick={() => setModal({ type: "correct" })} busy={busy === "correct"} />
             <ActBtn icon={StickyNote} label="Note" color={G.text} onClick={() => setModal({ type: "note" })} busy={busy === "note"} />
             <ActBtn icon={HelpCircle} label="Uncertain" color="#fbbf24" onClick={() => run("uncertain")} busy={busy === "uncertain"} />
-            <ActBtn icon={RefreshCw} label="Reprocess" color="#60a5fa" onClick={() => setModal({ type: "reprocess" })} busy={busy === "reprocess"} disabled={p.review_status === "approved" || p.review_status === "verified"} />
+            <ActBtn icon={RefreshCw} label="Reprocess (OCR service required)" color="#60a5fa" disabled />
             <ActBtn icon={GitMerge} label="Merge" color="#c084fc" onClick={() => setModal({ type: "merge" })} busy={busy === "merge"} disabled={p.review_status === "approved"} />
             {p.review_status === "rejected" || p.review_status === "ignored" ? (
               <ActBtn icon={RotateCcw} label="Re-review" color="#86efac" onClick={() => run("re_review")} busy={busy === "re_review"} />
@@ -134,9 +145,9 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
           <div style={{ padding: 12, borderRadius: 9, background: "rgba(255,255,255,0.03)", border: `1px solid ${G.border}`, marginBottom: 14 }}>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: 9, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.40)", margin: "0 0 8px 0" }}>OCR Confidence</p>
             <div style={{ height: 8, borderRadius: 4, background: "rgba(255,255,255,0.08)", overflow: "hidden" }}>
-              <div style={{ height: "100%", width: `${p.ocr_confidence ?? 100}%`, background: (p.ocr_confidence ?? 100) >= 90 ? "#86efac" : (p.ocr_confidence ?? 100) >= 70 ? "#fbbf24" : "#f87171", transition: "width 0.3s" }} />
+              <div style={{ height: "100%", width: `${p.ocr_confidence == null ? "Not recorded" : `${p.ocr_confidence}%`}`, background: (p.ocr_confidence ?? 0) >= 90 ? "#86efac" : (p.ocr_confidence ?? 0) >= 70 ? "#fbbf24" : "#f87171", transition: "width 0.3s" }} />
             </div>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: G.text, margin: "6px 0 0 0", fontWeight: 700 }}>{p.ocr_confidence ?? 100}%</p>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: G.text, margin: "6px 0 0 0", fontWeight: 700 }}>{p.ocr_confidence == null ? "Not recorded" : `${p.ocr_confidence}%`}</p>
             {qfKeys.length > 0 && (
               <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 8 }}>
                 {qfKeys.map((k) => (
@@ -164,7 +175,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
 
           {/* Text content */}
           <div style={{ padding: 12, borderRadius: 9, background: "rgba(255,255,255,0.03)", border: `1px solid ${G.border}`, marginBottom: 14 }}>
-            <Field label="Arabic text (verified)" icon={BookOpen}>
+            <Field label="Arabic text (recorded)" icon={BookOpen}>
               <span className="font-amiri" style={{ direction: "rtl", textAlign: "right", display: "block", color: G.text, fontSize: 16, lineHeight: 1.9 }}>{p.arabic_text || "—"}</span>
             </Field>
             <Field label="OCR text (original — immutable)" icon={FileText}>
@@ -255,7 +266,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
                 </ul>
               )}
             </Field>
-            <Field label="Verification history" icon={History}>
+            <Field label="Verification history (latest 100)" icon={History}>
               {loadingAudit ? <span style={{ color: G.dim }}>Loading…</span> : audit.length === 0 ? "None" : (
                 <ul style={{ margin: 0, paddingLeft: 16 }}>
                   {audit.map((a, i) => (
