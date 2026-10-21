@@ -19,7 +19,7 @@ const PAGE_SIZE = 25;
 
 export default function EntryTable({ entries, loading, onEdit, onToggleActive, onDelete }) {
   const [search, setSearch] = useState("");
-  const [statusFilter, setStatusFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("active");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [languageFilter, setLanguageFilter] = useState("all");
   const [page, setPage] = useState(0);

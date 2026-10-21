@@ -23,6 +23,19 @@ export default function AdminPurposeDictionary() {
   const [editorOpen, setEditorOpen] = useState(false);
   const [editingEntry, setEditingEntry] = useState(null);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [deduplicating, setDeduplicating] = useState(false);
+  const [dedupMessage, setDedupMessage] = useState("");
+  const archiveDuplicates = async () => {
+    if (deduplicating) return;
+    setDeduplicating(true); setDedupMessage("");
+    try {
+      const result = await platform.functions.invoke("archivePurposeDuplicates", {});
+      setDedupMessage(`${result.data.archived} duplicate entries archived. Backup saved in Version History.`);
+      window.dispatchEvent(new Event("purpose-dictionary-updated"));
+      setRefreshKey(k => k + 1);
+    } catch (error) { setDedupMessage(error.message); }
+    finally { setDeduplicating(false); }
+  };
 
   // ── Audit logging helper (isolated to PurposeDictionaryAuditLog) ──
   const logAudit = useCallback(async (action, details, recordCount = 0) => {
@@ -68,6 +81,7 @@ export default function AdminPurposeDictionary() {
   useEffect(() => { loadEntries(); }, [loadEntries, refreshKey]);
 
   const handleSave = () => {
+    window.dispatchEvent(new Event("purpose-dictionary-updated"));
     const wasNew = !editingEntry;
     logAudit(wasNew ? "RECORD_CREATE" : "RECORD_UPDATE", {
       purpose_phrase: editingEntry?.purpose_phrase || "new entry",
@@ -80,7 +94,8 @@ export default function AdminPurposeDictionary() {
 
   const handleToggleActive = async (entry) => {
     try {
-      await platform.entities.PurposeDictionary.update(entry.id, { is_active: !entry.is_active });
+      await platform.functions.invoke("savePurposeEntry", { id: entry.id, entry: { ...entry, arabic_keyword: entry.arabic_keyword || entry.purpose_phrase, is_active: !entry.is_active } });
+      window.dispatchEvent(new Event("purpose-dictionary-updated"));
       await logAudit("RECORD_UPDATE", { id: entry.id, arabic_keyword: entry.arabic_keyword, field: "is_active", old: entry.is_active, new: !entry.is_active });
       setRefreshKey(k => k + 1);
     } catch (err) {
@@ -102,6 +117,7 @@ export default function AdminPurposeDictionary() {
   };
 
   const handleImportComplete = () => {
+    window.dispatchEvent(new Event("purpose-dictionary-updated"));
     setRefreshKey(k => k + 1);
   };
 
@@ -113,7 +129,7 @@ export default function AdminPurposeDictionary() {
           <div>
             <h1 className="font-inter text-xl font-bold text-white">Purpose Dictionary</h1>
             <p className="font-inter text-xs text-white/40 mt-1">
-              Admin-only management for 7th Mizan purpose phrase mappings. This dictionary is NOT part of any calculation.
+              Add Arabic words with Malayalam and English meanings. Select a suggestion in 7th Mizan to use its Arabic text with the existing calculation rules.
             </p>
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -128,8 +144,10 @@ export default function AdminPurposeDictionary() {
             >
               <RefreshCw className="w-3.5 h-3.5" /> Refresh
             </button>
-            <ImportExportBar entries={entries} onImportComplete={handleImportComplete} />
+            <button onClick={archiveDuplicates} disabled={loading || deduplicating} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-xs">{deduplicating ? "Archiving…" : "Archive duplicates"}</button>
+            <ImportExportBar disabled={loading || !!loadError} entries={entries} onImportComplete={handleImportComplete} />
             <button
+              disabled={loading || !!loadError}
               onClick={() => { setEditingEntry(null); setEditorOpen(true); }}
               className="btn-gold px-4 py-2 rounded-lg flex items-center gap-2 text-sm"
             >
@@ -145,6 +163,7 @@ export default function AdminPurposeDictionary() {
           </div>
         )}
 
+        {dedupMessage && <p role="status" className="text-sm text-yellow-100">{dedupMessage}</p>}
         {/* Stats */}
         <StatsPanel entries={entries} loading={loading} />
 

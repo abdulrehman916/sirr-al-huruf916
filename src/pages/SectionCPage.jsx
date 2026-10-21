@@ -10,6 +10,8 @@ import SectionCVisualIntegrator from "@/components/sectionc/SectionCVisualIntegr
 // INDEPENDENT module. Reads ONLY from HolyNameEsotericKnowledge.
 // No data from Section A or Section B is used here.
 
+import { CardNotes } from "@/components/owner/OwnerContent";
+
 const P = {
   border: "rgba(212,175,55,0.30)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -153,6 +155,7 @@ export default function SectionCPage() {
                   {isOpen && (
                     <div className="px-3 pb-3">
                       <HolyNameEsotericResearchProfile nameId={card.name_id} />
+                      <CardNotes cardKey={card.name_id} kind="holy-c" />
                     </div>
                   )}
                 </motion.div>

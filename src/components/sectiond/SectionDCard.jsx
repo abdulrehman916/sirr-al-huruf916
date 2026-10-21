@@ -14,6 +14,8 @@ import { useState } from "react";
 import { ChevronDown, BookOpen, Clock, Calendar, Repeat, Sparkles, AlertCircle, Hand } from "lucide-react";
 import { useIsOwner } from "@/hooks/useIsOwner";
 
+import { CardNotes } from "@/components/owner/OwnerContent";
+
 const CONTENT_TYPE_LABELS = {
   long_dua: { en: "Long Du'a", ml: "ദീർഘ ദുആ", color: "rgba(212,175,55,0.65)", bg: "rgba(212,175,55,0.10)" },
   general_wazifa: { en: "Wazifa", ml: "വാഴിഫ", color: "rgba(129,140,248,0.65)", bg: "rgba(129,140,248,0.10)" },
@@ -94,6 +96,7 @@ export default function SectionDCard({ record }) {
       {/* ── Expanded content ── */}
       {expanded && (
         <div className="px-3 pb-3 space-y-2.5">
+          <CardNotes cardKey={record.section_d_id || record.id} kind="holy-d" />
           {/* Arabic Text — primary display */}
           {record.arabic_text && (
             <div className="rounded-lg p-2.5" style={{ background: "rgba(0,0,0,0.20)", border: "1px solid rgba(212,175,55,0.10)" }}>

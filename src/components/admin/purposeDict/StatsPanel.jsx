@@ -34,25 +34,14 @@ export default function StatsPanel({ entries, loading }) {
     const active = entries.filter(e => e.is_active !== false).length;
     const inactive = entries.filter(e => e.is_active === false).length;
 
-    // Duplicate detection: same purpose_phrase or same alias
-    const phraseMap = {};
-    const aliasMap = {};
-    const duplicateIds = new Set();
-    for (const e of entries) {
-      const phrase = (e.purpose_phrase || "").trim().toLowerCase();
-      if (phrase) {
-        if (phraseMap[phrase]) duplicateIds.add(e.id);
-        else phraseMap[phrase] = e.id;
-      }
-      for (const alias of (e.aliases || [])) {
-        const a = (alias || "").trim().toLowerCase();
-        if (a) {
-          if (aliasMap[a]) duplicateIds.add(e.id);
-          else aliasMap[a] = e.id;
-        }
-      }
+    // Only active copies of the same Arabic keyword count as duplicates.
+    const keywords = new Set();
+    let duplicates = 0;
+    for (const entry of entries.filter(entry => entry.is_active !== false)) {
+      const keyword = (entry.arabic_keyword || entry.purpose_phrase || '').replace(/[\u0610-\u061a\u064b-\u065f\u0670\u0640]/g, '').trim().toLowerCase();
+      if (keyword && keywords.has(keyword)) duplicates++;
+      keywords.add(keyword);
     }
-    const duplicates = duplicateIds.size;
 
     // Per category
     const byCategory = {};

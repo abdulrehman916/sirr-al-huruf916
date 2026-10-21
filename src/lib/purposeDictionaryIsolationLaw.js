@@ -120,3 +120,7 @@ export const PURPOSE_DICTIONARY_ISOLATION_LAW = {
     access: "Owner-only",
   },
 };
+// Owner instruction, 2026-10-21: add read-only word suggestions to the existing
+// custom-purpose input through purposeDictionaryLookup.js. A deliberate user
+// selection copies Arabic text into that input; meanings are display-only.
+// All calculation engines, source values, and automatic workflows stay sealed.

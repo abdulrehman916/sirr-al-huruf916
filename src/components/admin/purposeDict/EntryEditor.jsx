@@ -88,13 +88,14 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
       setError("Arabic Phrase is required.");
       return;
     }
+    if (!form.arabic_keyword.trim()) { setError("Arabic Keyword is required for calculations."); return; }
     if (!form.normalized_purpose_key) {
       setError("Normalized Purpose Key is required.");
       return;
     }
 
-    // Warn but allow saving duplicates (user may override)
-    // — the duplicate warning is informational, not a hard block
+    // The server rejects duplicate active Arabic keywords atomically.
+    // Overlapping aliases remain an informational warning.
 
     setSaving(true);
     try {
@@ -112,11 +113,8 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
         notes: form.notes.trim(),
       };
 
-      if (isEdit) {
-        await platform.entities.PurposeDictionary.update(entry.id, data);
-      } else {
-        await platform.entities.PurposeDictionary.create(data);
-      }
+      await platform.functions.invoke("savePurposeEntry", { id: entry?.id, entry: data });
+      window.dispatchEvent(new Event("purpose-dictionary-updated"));
       onSave();
     } catch (err) {
       setError("Failed to save: " + (err.message || "Unknown error"));
@@ -127,7 +125,7 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
 
   return (
     <div
-      onClick={onClose}
+      onClick={() => { if (!saving) onClose(); }}
       style={{
         position: "fixed", inset: 0, background: "rgba(0,0,0,0.75)",
         display: "flex", alignItems: "center", justifyContent: "center",
@@ -152,7 +150,7 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
           <h3 className="font-inter text-sm font-bold" style={{ color: G.text }}>
             {isEdit ? "Edit Entry" : "Add New Entry"}
           </h3>
-          <button onClick={onClose} className="p-1 rounded hover:bg-white/10">
+          <button disabled={saving} onClick={onClose} className="p-1 rounded hover:bg-white/10">
             <X className="w-4 h-4" style={{ color: "rgba(255,255,255,0.50)" }} />
           </button>
         </div>
@@ -179,7 +177,7 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
                   </p>
                 )}
                 <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(255,255,255,0.40)" }}>
-                  You can still save, but consider deactivating the duplicate instead.
+                  Duplicate active Arabic keywords cannot be saved. Edit the existing word or archive the duplicate.
                 </p>
               </div>
             </div>
@@ -199,7 +197,7 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
           </FormField>
 
           {/* Arabic Keyword */}
-          <FormField label="Arabic Keyword">
+          <FormField label="Arabic Keyword *">
             <input
               type="text"
               value={form.arabic_keyword}
@@ -325,7 +323,7 @@ export default function EntryEditor({ entry, existingEntries, onSave, onClose })
           borderTop: `1px solid ${G.border}`,
           background: "rgba(8,16,38,0.98)",
         }}>
-          <button onClick={onClose} className="font-inter text-sm px-4 py-2 rounded-lg"
+          <button disabled={saving} onClick={onClose} className="font-inter text-sm px-4 py-2 rounded-lg"
             style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.10)", color: "rgba(255,255,255,0.60)" }}>
             Cancel
           </button>

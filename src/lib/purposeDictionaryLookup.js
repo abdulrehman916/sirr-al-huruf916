@@ -68,3 +68,11 @@ export function confirmPurposeMeaning({ mainPurpose, english_meaning, malayalam_
     auto_learned: false,
   });
 }
+
+// Read-only suggestions; selecting one only changes the existing text input.
+export async function searchPurposeWords(query) {
+  const response = await platform.functions.invoke("searchPurposeDictionary", { query });
+  return Array.isArray(response.data) ? response.data : [];
+}
+
+if (typeof window !== "undefined") window.addEventListener("purpose-dictionary-updated", () => lookupCache.clear());

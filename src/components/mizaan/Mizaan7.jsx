@@ -4,6 +4,7 @@ import MizaanHeader from "./MizaanHeader";
 import { MIZAAN_PURPOSES } from "../../lib/mizaan9Data";
 import { calcBast } from "../../lib/abjadModes";
 import PurposeInterpretationCard from "./PurposeInterpretationCard";
+import PurposeWordSuggestions from "../owner/PurposeWordSuggestions";
 
 function CustomPurposePanel({ customPurpose, onCustomPurpose }) {
   const stats = useMemo(() => {
@@ -33,6 +34,7 @@ function CustomPurposePanel({ customPurpose, onCustomPurpose }) {
         className="w-full rounded-xl px-4 py-2.5 font-amiri text-base text-white leading-relaxed resize-none focus:outline-none caret-white placeholder:text-white/25"
         style={{ background: "rgba(4,12,34,0.97)", border: `1px solid ${active ? G.borderHi : G.border}`, fontSize: "16px" }}
       />
+      <PurposeWordSuggestions value={customPurpose} onSelect={onCustomPurpose} />
       {active && (
         <motion.div
           initial={{ opacity: 0, y: -6 }}

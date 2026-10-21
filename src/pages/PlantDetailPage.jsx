@@ -11,6 +11,8 @@ import { ArrowLeft, BookOpen, Leaf } from "lucide-react";
 import PageLayout from "../components/PageLayout";
 import { PLANTS_DATA, PLANT_CATEGORIES } from "../lib/plantsData";
 
+import { CardNotes } from "@/components/owner/OwnerContent";
+
 const P = {
   border:   "rgba(34,197,94,0.30)",
   borderHi: "rgba(34,197,94,0.65)",
@@ -120,6 +122,7 @@ export default function PlantDetailPage() {
           )}
         </motion.div>
 
+        <CardNotes cardKey={id} kind="plant" />
         {/* Description */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
