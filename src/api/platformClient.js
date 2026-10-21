@@ -255,7 +255,7 @@ export const platform = {
     if (name === 'savePurposeEntry') return { data: unwrap(await client().rpc('save_purpose_entry', { p_id: body.id || null, p_data: body.entry })) };
     if (name === 'archivePurposeDuplicates') return { data: unwrap(await client().rpc('archive_purpose_duplicates')) };
     if (name === 'autoLearnPurpose') {
-      const { data, error } = await client().rpc('lookup_purpose_intent', { p_phrase: body.customPurpose || '' });
+      const { data, error } = await client().rpc('lookup_purpose_intent_for_action', { p_phrase: body.customPurpose || '', p_action: body.selectedAction || null });
       if (error) throw error;
       return { data };
     }

@@ -18,8 +18,8 @@ export default function PurposeWordSuggestions({ value, onSelect }) {
   return <div aria-label="Dictionary word suggestions" className="space-y-2">
     {error && <p className="text-xs text-amber-100">{error}</p>}
     {matches.length > 0 && <><p className="text-xs text-yellow-100/70">Choose the Arabic word to use in your phrase / വാക്ക് തിരഞ്ഞെടുക്കുക</p>
-      {matches.map(row => <button key={row.id} type="button" onClick={() => onSelect(row.arabic_keyword)} className="block w-full text-left rounded-lg border border-yellow-500/20 bg-slate-950 p-3">
-        <span dir="rtl" lang="ar" className="block font-amiri text-xl text-yellow-100">{row.arabic_keyword}</span>
+      {matches.map(row => <button key={row.id} type="button" onClick={() => onSelect(row.purpose_phrase || row.arabic_keyword)} className="block w-full text-left rounded-lg border border-yellow-500/20 bg-slate-950 p-3">
+        <span dir="rtl" lang="ar" className="block font-amiri text-xl text-yellow-100">{row.purpose_phrase || row.arabic_keyword}</span>
         <span className="block text-sm text-white/80">{row.malayalam_meaning}</span>
         <span className="block text-xs text-white/60">{row.english_meaning}</span>
       </button>)}</>}
