@@ -1,10 +1,9 @@
 // ═══════════════════════════════════════════════════════════════
-// PURPOSE DICTIONARY LOOKUP — Client-side helper
+// PURPOSE DICTIONARY LOOKUP — Client-side reader and session-only suggestions
 // ═══════════════════════════════════════════════════════════════
-// Calls the backend autoLearnPurpose function: checks the dictionary first,
-// and if no match exists, auto-generates + saves a new entry (self-learning).
-// Returns { matched: boolean, ritualIntent?: string, auto_learned?: boolean }.
-// Never exposes dictionary contents to the client.
+// Calls one indexed, read-only backend match and returns at most one purpose.
+// A user-selected suggestion applies to this session only; only the Owner
+// management page may write PurposeDictionary.
 //
 // ── PERMANENT ISOLATION LAW ──
 // This helper is the ONLY client-side reader of PurposeDictionary.
@@ -44,8 +43,7 @@ export function lookupPurposeIntent(customPurpose, selectedAction) {
 }
 
 // Clear the lookup cache so the next lookup re-queries the dictionary.
-// Called after a user confirms a meaning (the new dictionary entry must
-// be found on the next lookup, not the stale needsConfirmation result).
+// This helper remains available to refresh a lookup after an admin edit.
 export function clearLookupCache(customPurpose, selectedAction) {
   if (customPurpose) {
     const cacheKey = `${customPurpose}::${selectedAction || ""}`;
@@ -55,19 +53,18 @@ export function clearLookupCache(customPurpose, selectedAction) {
   }
 }
 
-// Confirm a user-selected candidate meaning. Saves to PurposeDictionary
-// and returns the confirmed result in the same shape as lookupPurposeIntent.
-export function confirmPurposeMeaning({ mainPurpose, english_meaning, malayalam_meaning, normalized_purpose_key, synonyms, ai_confidence }) {
-  return platform.functions.invoke("confirmPurposeMeaning", {
-    mainPurpose,
-    english_meaning,
-    malayalam_meaning,
+// A chosen candidate is a display/session selection, never a database write.
+export function confirmPurposeMeaning({ mainPurpose, english_meaning, malayalam_meaning, normalized_purpose_key }) {
+  const allowedKeys = ["celb", "tard", "sihhat", "sekam", "tarfet", "rizq", "knowledge", "travel", "sultan", "haybah"];
+  if (!allowedKeys.includes(normalized_purpose_key)) return Promise.resolve({ matched: false, error: "Unknown purpose key" });
+  return Promise.resolve({
+    matched: true,
+    ritualIntent: normalized_purpose_key,
     normalized_purpose_key,
-    synonyms,
-    ai_confidence,
-  })
-    .then((response) => response.data || { matched: false })
-    .catch((err) => {
-      return { matched: false, error: err?.message || "Confirmation failed" };
-    });
+    matchedPhrase: String(mainPurpose || ""),
+    english_meaning: String(english_meaning || ""),
+    malayalam_meaning: String(malayalam_meaning || ""),
+    source: "Selected suggestion (this session only)",
+    auto_learned: false,
+  });
 }

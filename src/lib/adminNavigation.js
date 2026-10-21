@@ -11,6 +11,7 @@ export const ADMIN_NAVIGATION = [
   ]},
   { label: 'App management', items: [
     {path:'/admin/shop',label:'Shop',icon:'shop'},
+    {path:'/admin/purpose-dictionary',label:'Purpose dictionary',icon:'library'},
     {path:'/admin/system-settings',label:'Settings',icon:'settings'},
   ]},
 ];
@@ -34,7 +35,6 @@ export const ADMIN_MAINTENANCE = [
     {path:'/admin/master-pdf-library',label:'Source documents',description:'Connected to the Astro Clock indexing pipeline; keep when maintaining source content.'},
     {path:'/admin/pending-reviews',label:'Source content review',description:'Approve or reject extracted source pages before using them.'},
     {path:'/admin/knowledge-search',label:'Source search',description:'Search indexed documents and maintain the knowledge cache.'},
-    {path:'/admin/purpose-dictionary',label:'Purpose dictionary',description:'Maintain the existing Mizan interpretation dictionary.'},
     {path:'/admin/astro-library-status',label:'Astro Clock library status',description:'Inspect the existing indexed Astro Clock content.'},
     {path:'/admin/astro-approval-queue',label:'Astro Clock source review',description:'Review flagged source records.'},
   ]},

@@ -7,7 +7,7 @@ const bundled = await build({ entryPoints: ['src/lib/rbac.js'], bundle: true, wr
   platform: 'node', format: 'esm', alias: { '@': new URL('../src', import.meta.url).pathname } });
 const rbac = await import(`data:text/javascript;base64,${Buffer.from(bundled.outputFiles[0].text).toString('base64')}`);
 const daily = ADMIN_NAVIGATION.flatMap(section => section.items);
-assert.equal(daily.length, 9);
+assert.equal(daily.length, 10);
 for (const item of [...daily, ...ADMIN_MAINTENANCE.flatMap(section => section.items)]) {
   assert.ok(manifest.some(route => route.path === item.path), `Missing route: ${item.path}`);
   assert.equal(rbac.canAccessAdminRoute('owner', item.path, null), true);
@@ -22,4 +22,4 @@ for (const path of ['/admin/content-studio', '/admin/books-studio', '/admin/reso
   assert.ok(ADMIN_MAINTENANCE.some(section => section.items.some(item => item.path === path)));
   assert.equal(rbac.canAccessAdminRoute('admin', path, { perm_system_settings: true }), false);
 }
-console.log('PASS: nine daily routes, retained independent studios, owner-only navigation and admin/guest/customer denial.');
+console.log('PASS: ten daily routes, retained independent studios, owner-only navigation and admin/guest/customer denial.');
