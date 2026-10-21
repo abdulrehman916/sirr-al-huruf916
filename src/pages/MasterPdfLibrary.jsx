@@ -46,6 +46,7 @@ const TABS = [
 export default function MasterPdfLibrary() {
   const { role } = useAuth();
   const [tab, setTab] = useState("overview");
+  const [importing, setImporting] = useState(false);
 
   if (role !== "owner") {
     return (
@@ -68,7 +69,7 @@ export default function MasterPdfLibrary() {
           Master PDF Library
         </h1>
         <p style={{ fontFamily: "Inter, sans-serif", color: G.dim, fontSize: 11, margin: 0, letterSpacing: "0.04em" }}>
-          Single source of truth · Owner-only · Append-only · Server-side indexing
+          Private sources · Owner-only · Original text preserved · Review before publication
         </p>
       </div>
 
@@ -80,6 +81,7 @@ export default function MasterPdfLibrary() {
           return (
             <button
               key={t.id}
+              disabled={importing && t.id !== tab}
               onClick={() => setTab(t.id)}
               style={{
                 display: "flex", alignItems: "center", gap: 7, padding: "8px 13px", borderRadius: 7, cursor: "pointer",
@@ -99,7 +101,7 @@ export default function MasterPdfLibrary() {
 
       <motion.div key={tab} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.15 }}>
         {tab === "overview" && <MplOverview />}
-        {tab === "upload" && <MplUpload />}
+        {tab === "upload" && <MplUpload onBusyChange={setImporting} />}
         {tab === "cloud" && <MplCloudSearch />}
         {tab === "library" && <MplLibrary />}
         {tab === "pages" && <MplPages />}

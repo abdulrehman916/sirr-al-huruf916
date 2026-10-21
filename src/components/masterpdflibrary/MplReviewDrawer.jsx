@@ -12,6 +12,7 @@ import {
   BookOpen, Hash, Clock, Tag, FileText, Languages, Shield, History,
 } from "lucide-react";
 import { platform } from "@/api/platformClient";
+import MplReprocessModal from './MplReprocessModal';
 
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
@@ -39,6 +40,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
   const [modal, setModal] = useState(null); // {type, ...}
   const [compareId, setCompareId] = useState("");
   const pendingRequest = useRef(null);
+  const actionLock = useRef(false);
   const [auditRevision, setAuditRevision] = useState(0);
 
   // Verification history + notes for this page (SirrAuditLog, page_range === page number).
@@ -80,7 +82,8 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
   const qfKeys = Object.keys(qf).filter((k) => qf[k] === true);
 
   async function run(mode, payload = {}) {
-    if (busy) return;
+    if (actionLock.current) return;
+    actionLock.current = true;
     setBusy(mode);
     const key = JSON.stringify({ mode, page_id: p.id, ...payload });
     if (pendingRequest.current?.key !== key) pendingRequest.current = { key, id: crypto.randomUUID() };
@@ -98,6 +101,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
     } catch (e) {
       alert("Action failed: " + (e?.message || e));
     } finally {
+      actionLock.current = false;
       setBusy("");
     }
   }
@@ -131,12 +135,12 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
             <ActBtn icon={Edit3} label="Correct" color={G.text} onClick={() => setModal({ type: "correct" })} busy={busy === "correct"} />
             <ActBtn icon={StickyNote} label="Note" color={G.text} onClick={() => setModal({ type: "note" })} busy={busy === "note"} />
             <ActBtn icon={HelpCircle} label="Uncertain" color="#fbbf24" onClick={() => run("uncertain")} busy={busy === "uncertain"} />
-            <ActBtn icon={RefreshCw} label="Reprocess (OCR service required)" color="#60a5fa" disabled />
+            <ActBtn icon={RefreshCw} label="Reprocess OCR" color="#60a5fa" disabled={Boolean(busy)} onClick={() => setModal({ type: 'reprocess_local' })} />
             <ActBtn icon={GitMerge} label="Merge" color="#c084fc" onClick={() => setModal({ type: "merge" })} busy={busy === "merge"} disabled={p.review_status === "approved"} />
             {p.review_status === "rejected" || p.review_status === "ignored" ? (
               <ActBtn icon={RotateCcw} label="Re-review" color="#86efac" onClick={() => run("re_review")} busy={busy === "re_review"} />
             ) : null}
-            {part?.file_url && <ActBtn icon={ExternalLink} label="Open PDF" color={G.dim} onClick={() => window.open(part.file_url, "_blank")} />}
+            {part?.file_url && <ActBtn icon={ExternalLink} label="Open PDF" color={G.dim} onClick={() => window.open(`${part.file_url.split('#')[0]}#page=${p.page_number || 1}`, "_blank", "noopener,noreferrer")} />}
             {p.original_scan_url && <ActBtn icon={ImageIcon} label="Page image" color={G.dim} onClick={() => window.open(p.original_scan_url, "_blank")} />}
             {siblings.length > 0 && <ActBtn icon={Scale} label={`Compare (${siblings.length})`} color={G.dim} onClick={() => setModal({ type: "compare" })} />}
           </div>
@@ -145,7 +149,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
           <div style={{ padding: 12, borderRadius: 9, background: "rgba(255,255,255,0.03)", border: `1px solid ${G.border}`, marginBottom: 14 }}>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: 9, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.40)", margin: "0 0 8px 0" }}>OCR Confidence</p>
             <div style={{ height: 8, borderRadius: 4, background: "rgba(255,255,255,0.08)", overflow: "hidden" }}>
-              <div style={{ height: "100%", width: `${p.ocr_confidence == null ? "Not recorded" : `${p.ocr_confidence}%`}`, background: (p.ocr_confidence ?? 0) >= 90 ? "#86efac" : (p.ocr_confidence ?? 0) >= 70 ? "#fbbf24" : "#f87171", transition: "width 0.3s" }} />
+              <div style={{ height: "100%", width: `${Math.max(0, Math.min(100, Number(p.ocr_confidence) || 0))}%`, background: (p.ocr_confidence ?? 0) >= 90 ? "#86efac" : (p.ocr_confidence ?? 0) >= 70 ? "#fbbf24" : "#f87171", transition: "width 0.3s" }} />
             </div>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: G.text, margin: "6px 0 0 0", fontWeight: 700 }}>{p.ocr_confidence == null ? "Not recorded" : `${p.ocr_confidence}%`}</p>
             {qfKeys.length > 0 && (
@@ -290,9 +294,7 @@ export default function MplReviewDrawer({ page, book, dupCount, allBooks, allPag
         <AnimateModal open={modal?.type === "note"}>
           <NoteForm onCancel={() => setModal(null)} onSubmit={(note) => run("note", { note })} busy={busy === "note"} />
         </AnimateModal>
-        <AnimateModal open={modal?.type === "reprocess"}>
-          <ReprocessForm onCancel={() => setModal(null)} onSubmit={() => run("reprocess")} busy={busy === "reprocess"} />
-        </AnimateModal>
+        {modal?.type === 'reprocess_local' && <MplReprocessModal page={p} part={part} busy={Boolean(busy)} onClose={() => setModal(null)} onApply={payload => run('correct', payload)} />}
         <AnimateModal open={modal?.type === "merge"}>
           <MergeForm siblings={siblings} books={allBooks} onCancel={() => setModal(null)} onSubmit={(canonical) => run("merge", { canonical_page_record_id: canonical })} busy={busy === "merge"} />
         </AnimateModal>
@@ -385,19 +387,6 @@ function NoteForm({ onCancel, onSubmit, busy }) {
       <div style={{ display: "flex", gap: 8, marginTop: 12, justifyContent: "flex-end" }}>
         <button onClick={onCancel} style={btnSecondary}>Cancel</button>
         <button onClick={() => onSubmit(note)} disabled={busy || !note.trim()} style={btnPrimary}>{busy ? "Saving…" : "Save note"}</button>
-      </div>
-    </div>
-  );
-}
-
-function ReprocessForm({ onCancel, onSubmit, busy }) {
-  return (
-    <div>
-      <h3 style={{ fontFamily: "Inter, sans-serif", color: "#fff", fontSize: 14, margin: "0 0 10px 0" }}>Request re-processing</h3>
-      <p style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "rgba(255,255,255,0.55)", margin: "0 0 10px 0" }}>This deletes the unverified draft and re-runs the pipeline for this page. Approved pages cannot be reprocessed. The old draft remains in the audit history.</p>
-      <div style={{ display: "flex", gap: 8, marginTop: 12, justifyContent: "flex-end" }}>
-        <button onClick={onCancel} style={btnSecondary}>Cancel</button>
-        <button onClick={onSubmit} disabled={busy} style={btnPrimary}>{busy ? "Requesting…" : "Reprocess"}</button>
       </div>
     </div>
   );

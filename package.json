@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm run verify:calculations && npm run verify:section-c-source && npm run verify:section-c-reader && npm run verify:section-b-figures && npm run verify:section-b-reader",
+    "prebuild": "node scripts/prepare-ocr-assets.mjs && npm run verify:calculations && npm run verify:section-c-source && npm run verify:section-c-reader && npm run verify:section-b-figures && npm run verify:section-b-reader",
     "build": "vite build",
     "verify:calculations": "node scripts/verify-calculation-core.mjs && node scripts/verify-holy-name-abjad.mjs",
     "lint": "eslint . --quiet",
@@ -21,7 +21,9 @@
     "verify:section-c-source": "node scripts/verify-birhatiah-online-comparison.mjs && node scripts/verify-birhatiah-oman-notes.mjs",
     "verify:section-c-reader": "node scripts/verify-section-c-reader-state.mjs && node scripts/verify-birhatiah-reader.mjs && node scripts/verify-birhatiah-purpose-layout.mjs && node scripts/verify-birhatiah-session.mjs && node scripts/verify-birhatiah-inline-assets.mjs && node scripts/verify-section-c-collective-figures.mjs && node scripts/verify-section-c-legacy-coverage.mjs",
     "verify:section-b-figures": "node scripts/verify-section-b-figures.mjs",
-    "verify:section-b-reader": "node scripts/verify-section-b-reader.mjs"
+    "verify:section-b-reader": "node scripts/verify-section-b-reader.mjs",
+    "predev": "node scripts/prepare-ocr-assets.mjs",
+    "verify:owner-ocr": "node scripts/prepare-ocr-assets.mjs && node scripts/verify-owner-ocr.mjs"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^17.0.0",
@@ -55,6 +57,9 @@
     "@radix-ui/react-tooltip": "^1.1.8",
     "@supabase/supabase-js": "^2.116.0",
     "@tanstack/react-query": "^5.84.1",
+    "@tesseract.js-data/ara": "1.0.0",
+    "@tesseract.js-data/eng": "1.0.0",
+    "@tesseract.js-data/mal": "1.0.0",
     "adm-zip": "^0.5.17",
     "canvas-confetti": "^1.9.4",
     "class-variance-authority": "^0.7.1",
@@ -85,6 +90,7 @@
     "sonner": "^2.0.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
+    "tesseract.js": "7.0.0",
     "three": "^0.171.0",
     "tz-lookup": "^6.1.25",
     "unpdf": "^1.6.2",
