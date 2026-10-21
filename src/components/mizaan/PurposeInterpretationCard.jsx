@@ -19,7 +19,7 @@
 import { useState, useEffect, useMemo, memo, useRef } from "react";
 import { motion } from "framer-motion";
 import { BookOpen, ArrowDown, Loader2, Bug, ChevronDown, AlertTriangle, Check } from "lucide-react";
-import { lookupPurposeIntent, confirmPurposeMeaning, clearLookupCache } from "../../lib/purposeDictionaryLookup";
+import { lookupPurposeIntent, confirmPurposeMeaning } from "../../lib/purposeDictionaryLookup";
 import {
   detectAction, parsePurposeStructure, ACTION_MEANINGS, ENDING_MEANING,
   CARD_TO_ACTION, CARD_TO_MODIFIER, buildRitualSemanticPhrase, buildCanonicalArabicPhrase,
@@ -200,8 +200,7 @@ const PurposeInterpretationCard = memo(function PurposeInterpretationCard({ cust
         ai_confidence: candidate.confidence,
       });
       if (result.matched) {
-        // Clear cache so future lookups find the new dictionary entry
-        clearLookupCache(detected?.middleWord, detected?.cardKey);
+        // This user-selected suggestion applies only to the current session.
         setPurposeLookup(result);
         if (onPurposeResolved) {
           const canonicalArabic = buildCanonicalArabicPhrase({ selections, customPurpose });
