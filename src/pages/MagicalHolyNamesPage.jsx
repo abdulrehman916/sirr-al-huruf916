@@ -21,6 +21,7 @@ import HolyNameLexicalNotes from "@/components/holynameknowledge/HolyNameLexical
 import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVerifiedKnowledge";
 import SectionCNames from "@/components/holynameknowledge/SectionCNames";
 import SectionDLibrary from "@/components/sectiond/SectionDLibrary";
+import { CardNotes } from "@/components/owner/OwnerContent";
 import { useAuth } from "@/lib/AuthContext";
 
 import { getHolyNameCardMetrics } from "@/lib/holyNameCardMetrics";
@@ -305,6 +306,7 @@ function SectionA({ importRefreshKey }) {
                         <HolyNameVerifiedKnowledge arabicName={name.arabicName} nameId={name.id} englishName={name.englishName} />
                         <HolyNameResearchProfile originalStaticId={name.id} />
                         <HolyNameLexicalNotes nameId={name.id} />
+                        <div className="px-4"><CardNotes cardKey={`MHN-${name.id}`} kind="holy-a" /></div>
                         <HolyNameImportedSections sourceSection="section_a" sourceNameKey={String(name.id)} refreshKey={importRefreshKey} />
                       </motion.div>
                     )}

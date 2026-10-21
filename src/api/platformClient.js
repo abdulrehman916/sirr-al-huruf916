@@ -251,6 +251,9 @@ export const platform = {
       if (error) throw error;
       return { data: await references.resolve(data) };
     }
+    if (name === 'searchPurposeDictionary') return { data: unwrap(await client().rpc('search_purpose_dictionary', { p_query: body.query })) };
+    if (name === 'savePurposeEntry') return { data: unwrap(await client().rpc('save_purpose_entry', { p_id: body.id || null, p_data: body.entry })) };
+    if (name === 'archivePurposeDuplicates') return { data: unwrap(await client().rpc('archive_purpose_duplicates')) };
     if (name === 'autoLearnPurpose') {
       const { data, error } = await client().rpc('lookup_purpose_intent', { p_phrase: body.customPurpose || '' });
       if (error) throw error;

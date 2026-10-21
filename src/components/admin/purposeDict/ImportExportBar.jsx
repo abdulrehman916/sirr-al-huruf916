@@ -3,6 +3,7 @@ import { Upload, FileJson, FileSpreadsheet, Loader2, Database } from "lucide-rea
 import * as XLSX from "xlsx";
 import { platform } from "@/api/platformClient";
 import ImportReport from "./ImportReport";
+import { parseDictionaryCSV } from "./parseDictionaryCSV";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -12,7 +13,7 @@ const G = {
   bg: "rgba(212,175,55,0.07)",
 };
 
-export default function ImportExportBar({ entries, onImportComplete }) {
+export default function ImportExportBar({ entries, onImportComplete, disabled = false }) {
   const [showMenu, setShowMenu] = useState(false);
   const [importing, setImporting] = useState(false);
   const [message, setMessage] = useState("");
@@ -104,11 +105,13 @@ export default function ImportExportBar({ entries, onImportComplete }) {
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    if (file.size > 10 * 1024 * 1024) { setMessage("Import failed: choose a file under 10 MB."); return; }
     setImporting(true);
     setMessage("");
     setReport(null);
 
     const reader = new FileReader();
+    reader.onerror = () => { setMessage("Import failed: file could not be read."); setImporting(false); };
     reader.onload = async (event) => {
       try {
         let parsed = [];
@@ -134,7 +137,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
         } else {
           // CSV parse
           const content = event.target.result;
-          parsed = parseCSV(content);
+          parsed = parseDictionaryCSV(content);
         }
 
         if (parsed.length === 0) {
@@ -255,7 +258,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
       />
       <button
         onClick={() => setShowMenu(!showMenu)}
-        disabled={importing}
+        disabled={importing || disabled}
         className="px-3 py-2 rounded-lg flex items-center gap-2 text-xs font-bold font-inter"
         style={{
           background: G.bg,
@@ -276,6 +279,7 @@ export default function ImportExportBar({ entries, onImportComplete }) {
               background: "linear-gradient(145deg, rgba(8,16,38,0.99) 0%, rgba(4,10,24,0.99) 100%)",
               border: `1px solid ${G.borderHi}`,
               boxShadow: "0 8px 32px rgba(0,0,0,0.60)",
+              zIndex: 1000,
             }}
           >
             <div className="p-2 space-y-1">
@@ -342,50 +346,4 @@ function MenuItem({ icon, label, onClick }) {
       {label}
     </button>
   );
-}
-
-// ── Simple CSV parser ──
-function parseCSV(text) {
-  const lines = text.split(/\r?\n/).filter(l => l.trim());
-  if (lines.length < 2) return [];
-
-  const parseLine = (line) => {
-    const result = [];
-    let current = "";
-    let inQuotes = false;
-    for (let i = 0; i < line.length; i++) {
-      const ch = line[i];
-      if (inQuotes) {
-        if (ch === '"' && line[i + 1] === '"') { current += '"'; i++; }
-        else if (ch === '"') { inQuotes = false; }
-        else { current += ch; }
-      } else {
-        if (ch === '"') { inQuotes = true; }
-        else if (ch === ",") { result.push(current); current = ""; }
-        else { current += ch; }
-      }
-    }
-    result.push(current);
-    return result;
-  };
-
-  const headers = parseLine(lines[0]);
-  const entries = [];
-  for (let i = 1; i < lines.length; i++) {
-    const values = parseLine(lines[i]);
-    const entry = {};
-    for (let j = 0; j < headers.length; j++) {
-      const key = headers[j].trim();
-      let val = (values[j] || "").trim();
-      if (key === "aliases") {
-        entry[key] = val ? val.split("|").map(a => a.trim()).filter(Boolean) : [];
-      } else if (key === "is_active") {
-        entry[key] = val === "true";
-      } else {
-        entry[key] = val;
-      }
-    }
-    entries.push(entry);
-  }
-  return entries;
 }

@@ -21,6 +21,8 @@ import HolyNameVerifiedKnowledge from "@/components/holynameknowledge/HolyNameVe
 import { useIsOwner } from "@/hooks/useIsOwner";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
+import { CardNotes } from "@/components/owner/OwnerContent";
+
 const G = {
   border: "rgba(212,175,55,0.40)",
   text: "#F5D060",
@@ -369,6 +371,7 @@ export default function HolyOneDetailPage() {
           </div>
         )}
 
+        <CardNotes cardKey={nameId} kind={source === "B" ? "holy-b" : "holy-a"} />
         {/* Content Sections */}
         <div className="space-y-4">
 
