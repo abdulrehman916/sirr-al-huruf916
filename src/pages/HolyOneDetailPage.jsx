@@ -22,6 +22,7 @@ import { useIsOwner } from "@/hooks/useIsOwner";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 import { CardNotes } from "@/components/owner/OwnerContent";
+import mergedCards from "@/data/holyNamesMergedCards.json";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -48,6 +49,7 @@ export default function HolyOneDetailPage() {
   const { toast } = useToast();
   const { getPageState, setPageState, pushNavState, popNavState } = usePageState();
   const [name, setName] = useState(null);
+  const [mergedAliases, setMergedAliases] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
   const loadSequence = useRef(0);
@@ -92,7 +94,20 @@ export default function HolyOneDetailPage() {
       const tab = searchParams.get('tab');
 
       if (tab === 'b' || nameId.startsWith('PDF-')) {
+        // A duplicate card now lives inside the card it was merged into.
+        const mergedTarget = mergedCards.merged_into[nameId];
+        if (mergedTarget) {
+          navigate(`/holy-names/one/${mergedTarget}?tab=b`, { replace: true });
+          return;
+        }
         // Section B: PDF Holy Names
+        const aliasIds = Object.entries(mergedCards.merged_into).filter(([, target]) => target === nameId).map(([alias]) => alias);
+        setMergedAliases([]);
+        if (aliasIds.length) {
+          Promise.all(aliasIds.map(alias => platform.entities.HolyOnePDFName.filter({ pdf_name_id: alias })))
+            .then(results => { if (sequence === loadSequence.current) setMergedAliases(results.map(r => r?.[0]).filter(Boolean).map(withSectionBMeaning)); })
+            .catch(() => {});
+        }
         const result = await platform.entities.HolyOnePDFName.filter({ pdf_name_id: nameId });
         if (sequence !== loadSequence.current) return;
         if (result && result.length > 0) {
@@ -399,6 +414,22 @@ export default function HolyOneDetailPage() {
           ) : null}
 
         {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} card={name} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
+
+        {source === "B" && mergedAliases.map(alias => (
+          <div key={alias.pdf_name_id} className="rounded-xl border p-4 space-y-4" style={{ background: "rgba(255,255,255,0.02)", borderColor: G.border }} data-testid="merged-card-content">
+            <h2 className="font-inter font-semibold text-white">
+              {language === "ml" ? "ഇതേ നാമത്തിന്റെ മുൻ കാർഡിൽ നിന്ന് ചേർത്തത്" : "Merged from this Name's earlier card"} <span dir="rtl" className="font-amiri text-amber-200">{alias.arabic_name}</span>
+            </h2>
+            {(alias.explanation_malayalam || alias.explanation_english || alias.english_explanation) ? (
+              <SelectedTranslation language={language} malayalam={alias.explanation_malayalam} english={alias.explanation_english || alias.english_explanation} />
+            ) : null}
+            {(alias.virtues_benefits || alias.virtues_benefits_english || alias.benefits_english) ? (
+              <SelectedTranslation language={language} malayalam={alias.virtues_benefits} english={alias.virtues_benefits_english || alias.benefits_english} />
+            ) : null}
+            <HolyNameSectionBReader card={alias} chapter={tilimsaniChapters[alias.pdf_name_id]} nameId={alias.pdf_name_id} />
+            <HolyNameImportedSections sourceSection="section_b" sourceNameKey={alias.pdf_name_id} />
+          </div>
+        ))}
 
           {/* Virtues & Benefits */}
           {(name.virtues_benefits || name.virtues_benefits_english || name.benefits_english) ? (
