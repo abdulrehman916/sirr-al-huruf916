@@ -13,6 +13,7 @@ import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImp
 import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVisuals";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSectionBReader from "@/components/holynameknowledge/HolyNameSectionBReader";
+import HolyNameOutsideSources from "@/components/holynameknowledge/HolyNameOutsideSources";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
 import { withSectionBMeaning } from '@/lib/holyNames/sectionBMeanings';
 import { unlinkedSectionBVisuals } from '@/lib/holyNames/sectionBReading';
@@ -399,6 +400,7 @@ export default function HolyOneDetailPage() {
           ) : null}
 
         {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} card={name} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
+        {source === "B" && <HolyNameOutsideSources nameId={name.pdf_name_id || nameId} />}
 
           {/* Virtues & Benefits */}
           {(name.virtues_benefits || name.virtues_benefits_english || name.benefits_english) ? (

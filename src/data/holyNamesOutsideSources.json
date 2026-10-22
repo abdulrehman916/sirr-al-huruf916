@@ -1,0 +1,297 @@
+{
+ "note": "Section B — outside sources by purpose. Quran and hadith first; items marked khawass come from the khawass literature (experience-based, not hadith) and were read from online transcriptions not yet checked against a printed edition. No bakhur or wafq was found in these sources for these five Names, so none is given.",
+ "purposes": {
+  "wealth": {
+   "ml": "ധനം, കടം വീട്ടൽ",
+   "en": "Wealth and debt"
+  },
+  "job": {
+   "ml": "ജോലി, സ്ഥാനക്കയറ്റം",
+   "en": "Work and promotion"
+  },
+  "illness": {
+   "ml": "രോഗശമനം",
+   "en": "Illness"
+  },
+  "marriage": {
+   "ml": "വിവാഹം, കുടുംബം",
+   "en": "Marriage and family"
+  },
+  "sihr": {
+   "ml": "സിഹ്‌റ്, ഉപദ്രവങ്ങളിൽ നിന്ന് സംരക്ഷണം",
+   "en": "Protection from sihr and harm"
+  },
+  "distress": {
+   "ml": "ദുഃഖം, പ്രയാസം",
+   "en": "Distress"
+  },
+  "general": {
+   "ml": "പൊതുവായ ഖവാസ്വ്",
+   "en": "General properties"
+  }
+ },
+ "source_types": {
+  "quran": {
+   "ml": "ഖുർആൻ",
+   "en": "Qur'an"
+  },
+  "hadith": {
+   "ml": "ഹദീസ്",
+   "en": "Hadith"
+  },
+  "khawass": {
+   "ml": "ഖവാസ്വ് ഗ്രന്ഥം (അനുഭവം, ഹദീസ് അല്ല)",
+   "en": "Khawass book (experience, not hadith)"
+  }
+ },
+ "names": {
+  "PDF-HN-013": [
+   {
+    "purpose": "wealth",
+    "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ.",
+    "ml": "കടം വീട്ടാനും ഹലാലായ വരുമാനത്തിനും: «അല്ലാഹുവേ, നിന്റെ ഹലാൽ കൊണ്ട് ഹറാമിൽ നിന്ന് എന്നെ മതിയാക്കണേ; നിന്റെ ഔദാര്യം കൊണ്ട് നീയല്ലാത്തവരിൽ നിന്ന് എന്നെ ധന്യനാക്കണേ.» പർവതത്തോളം കടമുണ്ടെങ്കിലും അല്ലാഹു വീട്ടിത്തരുമെന്ന് അലി (റ) പറഞ്ഞു.",
+    "en": "For debt and lawful provision: “O Allah, suffice me with what You have made lawful against what You have forbidden, and make me independent by Your grace of all besides You.” ‘Ali said Allah would pay off even a mountain of debt.",
+    "source": {
+     "title": "الترمذي 3563 (حسن)",
+     "url": "https://hadeethenc.com/ar/browse/hadith/5884",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "illness",
+    "arabic": "بِسْمِ اللَّهِ (ثَلَاثًا)، أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ (سَبْعَ مَرَّاتٍ).",
+    "ml": "വേദനയുള്ള സ്ഥലത്ത് കൈ വെച്ച് മൂന്ന് പ്രാവശ്യം «ബിസ്മില്ലാഹ്», പിന്നെ ഏഴ് പ്രാവശ്യം: «ഞാൻ അനുഭവിക്കുന്നതും പേടിക്കുന്നതുമായ തിന്മയിൽ നിന്ന് അല്ലാഹുവിലും അവന്റെ കഴിവിലും ഞാൻ ശരണം തേടുന്നു.»",
+    "en": "Place your hand where it hurts, say “Bismillah” three times, then seven times: “I seek refuge in Allah and His power from the evil of what I feel and fear.”",
+    "source": {
+     "title": "صحيح مسلم 2202 (عن عثمان بن أبي العاص)",
+     "url": "https://dorar.net/hadith/search?q=%D8%A3%D8%B9%D9%88%D8%B0+%D8%A8%D8%A7%D9%84%D9%84%D9%87+%D9%88%D9%82%D8%AF%D8%B1%D8%AA%D9%87+%D9%85%D9%86+%D8%B4%D8%B1+%D9%85%D8%A7+%D8%A3%D8%AC%D8%AF+%D9%88%D8%A3%D8%AD%D8%A7%D8%B0%D8%B1",
+     "type": "hadith"
+    },
+    "count_ml": "ബിസ്മില്ലാഹ് 3 തവണ, ദുആ 7 തവണ",
+    "count_en": "Bismillah ×3, then the words ×7"
+   },
+   {
+    "purpose": "sihr",
+    "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، وَهُوَ السَّمِيعُ الْعَلِيمُ.",
+    "ml": "സിഹ്‌റ്, പെട്ടെന്നുള്ള ആപത്ത് എന്നിവയിൽ നിന്നുള്ള സംരക്ഷണത്തിന്: «ആരുടെ നാമത്തോടൊപ്പം ഭൂമിയിലോ ആകാശത്തോ ഒന്നും ഉപദ്രവിക്കില്ലയോ, ആ അല്ലാഹുവിന്റെ നാമത്തിൽ; അവൻ എല്ലാം കേൾക്കുന്നവനും അറിയുന്നവനുമാണ്.»",
+    "en": "Protection from sudden harm: “In the name of Allah, with whose name nothing on earth or in heaven can harm, and He is the All-Hearing, All-Knowing.”",
+    "source": {
+     "title": "أبو داود 5088؛ الترمذي 3388 (حسن صحيح)",
+     "url": "https://dorar.net/hadith/search?q=%D9%84%D8%A7+%D9%8A%D8%B6%D8%B1+%D9%85%D8%B9+%D8%A7%D8%B3%D9%85%D9%87+%D8%B4%D9%8A%D8%A1",
+     "type": "hadith"
+    },
+    "count_ml": "രാവിലെ 3 തവണ, വൈകുന്നേരം 3 തവണ",
+    "count_en": "3 times in the morning and 3 in the evening"
+   },
+   {
+    "purpose": "distress",
+    "arabic": "اللَّهُ اللَّهُ رَبِّي، لَا أُشْرِكُ بِهِ شَيْئًا.",
+    "ml": "ദുഃഖത്തിലും പ്രയാസത്തിലും നബി ﷺ അസ്മാഅ് ബിൻത് ഉമൈസ് (റ)-ന് പഠിപ്പിച്ചത്: «അല്ലാഹ്, അല്ലാഹ് ആണ് എന്റെ റബ്ബ്; അവനോട് ഞാൻ ഒന്നിനെയും പങ്കുചേർക്കുന്നില്ല.»",
+    "en": "Taught to Asma’ bint ‘Umays for times of distress: “Allah, Allah is my Lord; I associate nothing with Him.”",
+    "source": {
+     "title": "أبو داود 1525؛ ابن ماجه 3882",
+     "url": "https://dorar.net/hadith/search?q=%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D9%84%D9%87+%D8%B1%D8%A8%D9%8A+%D9%84%D8%A7+%D8%A3%D8%B4%D8%B1%D9%83+%D8%A8%D9%87+%D8%B4%D9%8A%D8%A6%D8%A7",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا اللَّهُ يَا هُوَ",
+    "ml": "(ഖവാസ്വ്) ഉറപ്പ് (യഖീൻ) കൂടാനും നല്ല ലക്ഷ്യങ്ങൾ എളുപ്പമാകാനും. ദിവസവും 1000 തവണ «യാ അല്ലാഹ്, യാ ഹൂ». രോഗി ഏഴ് ദിവസം ചൊല്ലിയാൽ, അജൽ എത്തിയിട്ടില്ലെങ്കിൽ, സുഖപ്പെടുമെന്നും പറയുന്നു.",
+    "en": "(Khawass) For firm certainty and ease in good aims: “Ya Allah, ya Hu” 1,000 times daily. It is also said a sick person who recites it for seven days recovers unless his appointed time has come.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "ദിവസവും 1000 തവണ",
+    "count_en": "1,000 times daily"
+   }
+  ],
+  "PDF-HN-001": [
+   {
+    "purpose": "wealth",
+    "arabic": "اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ بِيَدِكَ الْخَيْرُ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَحْمٰنَ الدُّنْيَا وَالْآخِرَةِ وَرَحِيمَهُمَا، تُعْطِيهِمَا مَنْ تَشَاءُ وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
+    "ml": "കടം (ഉഹുദ് മലയോളം ആണെങ്കിലും) വീട്ടാൻ നബി ﷺ മുആദ് (റ)-ന് പഠിപ്പിച്ച ദുആ: «അല്ലാഹുവേ, ആധിപത്യത്തിന്റെ ഉടമസ്ഥനേ… ഇഹത്തിലും പരത്തിലും റഹ്മാനും റഹീമുമായവനേ… മറ്റാരുടെയും കാരുണ്യം വേണ്ടാത്ത വിധം നിന്റെ കാരുണ്യം എനിക്ക് തരണേ.»",
+    "en": "Taught by the Prophet ﷺ to Mu‘adh for paying off debt, even one as large as Mount Uhud: “O Allah, Owner of sovereignty… Rahman of this world and the next and their Rahim… grant me a mercy that frees me from needing anyone's mercy but Yours.”",
+    "source": {
+     "title": "الطبراني، المعجم الصغير 558؛ حسّنه الألباني في صحيح الترغيب 1821 (عن أنس)",
+     "url": "https://dorar.net/h/tamWd7TA",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "distress",
+    "arabic": "اللَّهُمَّ رَحْمَتَكَ أَرْجُو، فَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لَا إِلٰهَ إِلَّا أَنْتَ.",
+    "ml": "വിഷമത്തിലുള്ളവന്റെ ദുആ: «അല്ലാഹുവേ, നിന്റെ കാരുണ്യമാണ് ഞാൻ പ്രതീക്ഷിക്കുന്നത്; ഒരു കണ്ണിമ നേരം പോലും എന്നെ എന്നിലേക്ക് ഏൽപ്പിക്കരുതേ; എന്റെ എല്ലാ കാര്യങ്ങളും നന്നാക്കിത്തരണേ; നീയല്ലാതെ ഒരു ഇലാഹുമില്ല.»",
+    "en": "The supplication of the distressed: “O Allah, it is Your mercy I hope for, so do not leave me to myself for the blink of an eye; set right all my affairs; there is no god but You.”",
+    "source": {
+     "title": "أبو داود 5090 (حسّنه الألباني)",
+     "url": "https://dorar.net/hadith/search?q=%D8%B1%D8%AD%D9%85%D8%AA%D9%83+%D8%A3%D8%B1%D8%AC%D9%88+%D9%81%D9%84%D8%A7+%D8%AA%D9%83%D9%84%D9%86%D9%8A",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا رَحْمٰنُ",
+    "ml": "(ഖവാസ്വ്) എല്ലാ നമസ്കാരത്തിനും ശേഷം 100 തവണ പതിവാക്കിയാൽ അവന്റെ വാക്കിലും പ്രവൃത്തിയിലും അല്ലാഹുവിന്റെ ലുത്വ്ഫ് (സൂക്ഷ്മമായ കരുണ) ഉണ്ടാകും.",
+    "en": "(Khawass) Whoever keeps to it 100 times after every prayer is treated with gentle care in all his words and deeds.",
+    "source": {
+     "title": "شمس المعارف الكبرى (أحمد بن علي البوني) — الأسماء الحسنى وخواصها",
+     "url": "https://shams-almaref-alkobra.blogspot.com/2015/08/blog-post_59.html",
+     "type": "khawass"
+    },
+    "count_ml": "ഓരോ നമസ്കാരത്തിനും ശേഷം 100 തവണ",
+    "count_en": "100 times after every prayer"
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا رَحْمٰنُ",
+    "ml": "(ഖവാസ്വ്) ചൊല്ലുന്നവനിൽ നിന്നും കൂടെ കൊണ്ടുനടക്കുന്നവനിൽ നിന്നും അനിഷ്ടം അകറ്റും. നമസ്കാരങ്ങൾക്ക് ശേഷം ചൊല്ലിയാൽ ഹൃദയത്തിലെ അശ്രദ്ധയും മറവിയും നീങ്ങും.",
+    "en": "(Khawass) It turns harm away from the one who recites or carries it; recited after the prayers it removes heedlessness and forgetfulness from the heart.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "നമസ്കാരങ്ങൾക്ക് ശേഷം",
+    "count_en": "After the prayers"
+   }
+  ],
+  "PDF-HN-002": [
+   {
+    "purpose": "wealth",
+    "arabic": "اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ بِيَدِكَ الْخَيْرُ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَحْمٰنَ الدُّنْيَا وَالْآخِرَةِ وَرَحِيمَهُمَا، تُعْطِيهِمَا مَنْ تَشَاءُ وَتَمْنَعُ مِنْهُمَا مَنْ تَشَاءُ، ارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ.",
+    "ml": "കടം (ഉഹുദ് മലയോളം ആണെങ്കിലും) വീട്ടാൻ നബി ﷺ മുആദ് (റ)-ന് പഠിപ്പിച്ച ദുആ: «അല്ലാഹുവേ, ആധിപത്യത്തിന്റെ ഉടമസ്ഥനേ… ഇഹത്തിലും പരത്തിലും റഹ്മാനും റഹീമുമായവനേ… മറ്റാരുടെയും കാരുണ്യം വേണ്ടാത്ത വിധം നിന്റെ കാരുണ്യം എനിക്ക് തരണേ.»",
+    "en": "Taught by the Prophet ﷺ to Mu‘adh for paying off debt, even one as large as Mount Uhud: “O Allah, Owner of sovereignty… Rahman of this world and the next and their Rahim… grant me a mercy that frees me from needing anyone's mercy but Yours.”",
+    "source": {
+     "title": "الطبراني، المعجم الصغير 558؛ حسّنه الألباني في صحيح الترغيب 1821 (عن أنس)",
+     "url": "https://dorar.net/h/tamWd7TA",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا رَحِيمُ",
+    "ml": "(ഖവാസ്വ്) പതിവായി ചൊല്ലുന്നവന്റെ ദുആക്ക് ഉത്തരം കിട്ടും; അല്ലാഹുവിനോട് ചോദിക്കുന്നതെല്ലാം നൽകപ്പെടും.",
+    "en": "(Khawass) Whoever keeps to it has his prayers answered; he asks Allah nothing but it is given.",
+    "source": {
+     "title": "شمس المعارف الكبرى (أحمد بن علي البوني) — الأسماء الحسنى وخواصها",
+     "url": "https://shams-almaref-alkobra.blogspot.com/2015/08/blog-post_59.html",
+     "type": "khawass"
+    }
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا رَحْمٰنُ يَا رَحِيمُ",
+    "ml": "(ഖവാസ്വ്) ഹൃദയം മൃദുവാകാനും സൃഷ്ടികളോട് കരുണ ഉണ്ടാകാനും «യാ റഹീം» ദിവസവും 100 തവണ. «യാ റഹ്മാൻ യാ റഹീം» 100 തവണ ചൊല്ലിയാൽ അനിഷ്ടം അകലും.",
+    "en": "(Khawass) For a soft heart and mercy to creation: “Ya Rahim” 100 times daily. “Ya Rahman, ya Rahim” 100 times turns harm away.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "ദിവസവും 100 തവണ",
+    "count_en": "100 times daily"
+   }
+  ],
+  "PDF-HN-003": [
+   {
+    "purpose": "wealth",
+    "arabic": "يَا مَلِكُ",
+    "ml": "(ഖവാസ്വ്) സുബ്ഹിന് ശേഷം 121 തവണ ചൊല്ലിയാൽ അല്ലാഹു തന്റെ ഔദാര്യത്താൽ ധന്യനാക്കും — കാരണങ്ങളിലൂടെയോ വാതിലുകളിലൂടെയോ തുറവികളിലൂടെയോ.",
+    "en": "(Khawass) Recited 121 times after Fajr, Allah enriches the reciter from His bounty — through means, opened doors or unexpected openings.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "സുബ്ഹിന് ശേഷം 121 തവണ",
+    "count_en": "121 times after Fajr"
+   },
+   {
+    "purpose": "job",
+    "arabic": "يَا تَامُّ فَلَا تَصِفُ الْأَلْسُنُ كُلَّ كُنْهِ جَلَالِ مُلْكِهِ",
+    "ml": "(ഖവാസ്വ്) ജോലിക്കും സ്ഥാനക്കയറ്റത്തിനും: ഈ വാചകം ദിവസവും 25 തവണ, 12 ദിവസം. ജോലികൾ വന്നെത്തുമെന്നും പദവികളിൽ ഉയരുമെന്നും കാര്യങ്ങൾ നന്നാകുമെന്നും പറയുന്നു.",
+    "en": "(Khawass) For work and promotion: this phrase 25 times daily for twelve days; it is said work comes to him, he rises in rank, and his affairs come right.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "ദിവസവും 25 തവണ × 12 ദിവസം",
+    "count_en": "25 times daily for 12 days"
+   },
+   {
+    "purpose": "general",
+    "arabic": "يَا مَلِكُ",
+    "ml": "(ഖവാസ്വ്) വെള്ളിയാഴ്ച സൂര്യോദയത്തിന് മുമ്പ് 1000 തവണ ചൊല്ലിയാൽ എല്ലാ ആവശ്യങ്ങളും എളുപ്പമാകും; ദുൻയാവിലെയും ആഖിറത്തിലെയും ആവശ്യങ്ങൾ നിറവേറും. ളുഹർ സമയത്ത് (സവാൽ) ദിവസവും 100 തവണ ഹൃദയം തെളിയാൻ.",
+    "en": "(Khawass) 1,000 times on Friday before sunrise eases every request and fulfils needs of this world and the next. 100 times daily at noon (zawal) clears the heart.",
+    "source": {
+     "title": "شمس المعارف الكبرى (أحمد بن علي البوني) — الأسماء الحسنى وخواصها",
+     "url": "https://shams-almaref-alkobra.blogspot.com/2015/08/blog-post_59.html",
+     "type": "khawass"
+    },
+    "count_ml": "വെള്ളി സൂര്യോദയത്തിന് മുമ്പ് 1000; ദിവസവും ഉച്ചയ്ക്ക് 100",
+    "count_en": "1,000 on Friday before sunrise; 100 daily at noon"
+   }
+  ],
+  "PDF-HN-101": [
+   {
+    "purpose": "job",
+    "arabic": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ.",
+    "ml": "മൂസാ നബി (അ) ഒന്നുമില്ലാതെ മദ്‌യനിൽ എത്തിയപ്പോൾ പ്രാർഥിച്ചത്: «എന്റെ റബ്ബേ, നീ എനിക്ക് ഇറക്കിത്തരുന്ന ഏത് നന്മയ്ക്കും ഞാൻ ആവശ്യക്കാരനാണ്.» തുടർന്ന് ജോലിയും വിവാഹവും ലഭിച്ചു (28:25–27). ജോലി, രിസ്ഖ്, വിവാഹം എന്നിവയ്ക്ക് ചൊല്ലപ്പെടുന്നു.",
+    "en": "Musa's prayer on arriving in Madyan with nothing: “My Lord, I am in need of whatever good You send down to me.” Work and marriage followed (28:25–27); it is recited for work, provision and marriage.",
+    "source": {
+     "title": "القرآن الكريم، القصص 28:24",
+     "url": "https://quran.com/28/24-27",
+     "type": "quran"
+    }
+   },
+   {
+    "purpose": "job",
+    "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي، وَيَسِّرْ لِي أَمْرِي، وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي، يَفْقَهُوا قَوْلِي.",
+    "ml": "ഇന്റർവ്യൂ, സംസാരം, പുതിയ ജോലി എന്നിവയ്ക്ക് മുമ്പ് — മൂസാ നബിയുടെ ദുആ: «എന്റെ റബ്ബേ, എന്റെ ഹൃദയം വിശാലമാക്കണേ, എന്റെ കാര്യം എളുപ്പമാക്കണേ, എന്റെ നാവിലെ കെട്ട് അഴിക്കണേ, അവർ എന്റെ വാക്ക് മനസ്സിലാക്കാൻ.»",
+    "en": "Before an interview, a talk or a new task — Musa's prayer: “My Lord, expand my chest, ease my task, untie the knot from my tongue, that they may understand my speech.”",
+    "source": {
+     "title": "القرآن الكريم، طه 20:25–28",
+     "url": "https://quran.com/20/25-28",
+     "type": "quran"
+    }
+   },
+   {
+    "purpose": "marriage",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ، وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا.",
+    "ml": "നല്ല ജീവിതപങ്കാളിക്കും മക്കൾക്കും: «ഞങ്ങളുടെ റബ്ബേ, ഞങ്ങളുടെ ഇണകളിൽ നിന്നും സന്താനങ്ങളിൽ നിന്നും ഞങ്ങൾക്ക് കണ്ണുകുളിർമ നൽകണേ; ഞങ്ങളെ ഭക്തന്മാർക്ക് മാതൃകയാക്കണേ.»",
+    "en": "For a good spouse and children: “Our Lord, grant us from our spouses and offspring the coolness of our eyes, and make us leaders of the God-fearing.”",
+    "source": {
+     "title": "القرآن الكريم، الفرقان 25:74",
+     "url": "https://quran.com/25/74",
+     "type": "quran"
+    }
+   },
+   {
+    "purpose": "illness",
+    "arabic": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا.",
+    "ml": "രോഗിയെ സന്ദർശിക്കുമ്പോൾ നബി ﷺ ചൊല്ലിയിരുന്നത്: «അല്ലാഹുവേ, ജനങ്ങളുടെ റബ്ബേ, ബുദ്ധിമുട്ട് നീക്കണേ; സുഖപ്പെടുത്തണേ, നീയാണ് ശിഫ നൽകുന്നവൻ; നിന്റെ ശിഫയല്ലാതെ ഒരു ശിഫയുമില്ല; ഒരു രോഗവും ബാക്കിവെക്കാത്ത ശിഫ.»",
+    "en": "What the Prophet ﷺ said when visiting the sick: “O Allah, Lord of mankind, remove the harm and heal; You are the Healer, there is no healing but Yours, a healing that leaves no illness.”",
+    "source": {
+     "title": "صحيح البخاري 5743؛ صحيح مسلم 2191 (عن عائشة)",
+     "url": "https://dorar.net/hadith/search?q=%D8%A3%D8%B0%D9%87%D8%A8+%D8%A7%D9%84%D8%A8%D8%A3%D8%B3+%D8%B1%D8%A8+%D8%A7%D9%84%D9%86%D8%A7%D8%B3",
+     "type": "hadith"
+    }
+   },
+   {
+    "purpose": "sihr",
+    "arabic": "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ، وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ.",
+    "ml": "പിശാചുക്കളുടെ ഉപദ്രവത്തിൽ നിന്ന് സംരക്ഷണത്തിന്: «എന്റെ റബ്ബേ, പിശാചുക്കളുടെ ദുർബോധനങ്ങളിൽ നിന്ന് ഞാൻ നിന്നോട് ശരണം തേടുന്നു; അവർ എന്റെ അടുത്ത് വരുന്നതിൽ നിന്നും, എന്റെ റബ്ബേ, നിന്നോട് ശരണം തേടുന്നു.»",
+    "en": "Protection from devils: “My Lord, I seek refuge in You from the promptings of the devils, and I seek refuge in You, my Lord, lest they come near me.”",
+    "source": {
+     "title": "القرآن الكريم، المؤمنون 23:97–98",
+     "url": "https://quran.com/23/97-98",
+     "type": "quran"
+    }
+   }
+  ]
+ }
+}
