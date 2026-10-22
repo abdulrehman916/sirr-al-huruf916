@@ -29,7 +29,7 @@ export default function HolyNameImportPanel({ onImported }) {
       <div className="rounded-2xl border p-5 flex items-center gap-3" style={{ background: P.bg, borderColor: P.border }}>
         <Lock className="w-4 h-4" style={{ color: P.dim }} />
         <p className="font-inter text-[11px]" style={{ color: P.dim }}>
-          PDF import is available to administrators only.
+          PDF import is available to the owner only.
         </p>
       </div>
     );

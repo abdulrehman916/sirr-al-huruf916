@@ -59,7 +59,7 @@ export default function RequestDetail({ request, onUpdate }) {
           request_id: request.request_id,
           sender_type: "ADMIN",
           sender_id: user?.id || "admin",
-          sender_name: user?.full_name || "Admin",
+          sender_name: user?.full_name || "Sirr Al-Huruf",
           message: message.trim(),
           status_change: statusChange || null,
           created_at: now,

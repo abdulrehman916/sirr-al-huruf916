@@ -63,7 +63,7 @@ export default function PremiumAccessRequest() {
       if (response.data.success) {
         toast({
           title: "Access Request Submitted",
-          description: "Admin will review your request shortly",
+          description: "We will review your request shortly",
         });
         navigate("/");
       } else {

@@ -115,9 +115,9 @@ registerPage('/premium/request', { name: 'Premium Access Request', pageType: 'sy
 registerPage('/my-subscription', { name: 'My Subscription', icon: '⭐', category: 'System', pageType: 'content', visible: true, requiresPermission: false });
 
 // Admin pages (all exist in ROUTE_MANIFEST)
-registerPage('/admin/access-dashboard', { name: 'Admin Dashboard', icon: '👑', category: 'Admin', pageType: 'admin', adminOnly: true, visible: false });
-registerPage('/admin/support', { name: 'Support Messages', icon: '💬', category: 'Admin', pageType: 'admin', adminOnly: true, visible: false });
-registerPage('/admin/page-permissions', { name: 'Page Permissions', icon: '🌐', category: 'Admin', pageType: 'admin', adminOnly: true, visible: false });
+registerPage('/admin/access-dashboard', { name: 'Owner Dashboard', icon: '👑', category: 'Owner', pageType: 'admin', adminOnly: true, visible: false });
+registerPage('/admin/support', { name: 'Support Messages', icon: '💬', category: 'Owner', pageType: 'admin', adminOnly: true, visible: false });
+registerPage('/admin/page-permissions', { name: 'Page Permissions', icon: '🌐', category: 'Owner', pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/access-logs', { pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/access-requests', { pageType: 'admin', adminOnly: true, visible: false });
 registerPage('/admin/user/:userId', { pageType: 'admin', adminOnly: true, visible: false });

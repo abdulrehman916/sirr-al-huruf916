@@ -63,7 +63,7 @@ const translations = {
   nav_names: { ml: "പേരുകൾ", en: "Names", ar: "الأسماء" },
   nav_astro: { ml: "നക്ഷത്രം", en: "Astro", ar: "الفلك" },
   nav_support: { ml: "സഹായം", en: "Support", ar: "الدعم" },
-  nav_admin: { ml: "അഡ്മിൻ", en: "Admin", ar: "المشرف" },
+  nav_admin: { ml: "ഓണർ", en: "Owner", ar: "المالك" },
   nav_settings: { ml: "ക്രമീകരണങ്ങൾ", en: "Settings", ar: "الإعدادات" },
 
   // ── Page Titles ──
@@ -257,12 +257,12 @@ const translations = {
 
   // ── Account Modal ──
   account_owner_dashboard: { ml: "ഉടമസ്ഥ ഡാഷ്ബോർഡ്", en: "Owner Dashboard", ar: "لوحة المالك" },
-  account_admin_dashboard: { ml: "അഡ്മിൻ ഡാഷ്ബോർഡ്", en: "Admin Dashboard", ar: "لوحة المشرف" },
+  account_admin_dashboard: { ml: "ഓണർ ഡാഷ്ബോർഡ്", en: "Owner Dashboard", ar: "لوحة المالك" },
   account_logging_out: { ml: "ലോഗ് ഔട്ട് ചെയ്യുന്നു…", en: "Logging out…", ar: "جاري الخروج…" },
   account_user_fallback: { ml: "ഉപയോക്താവ്", en: "User", ar: "مستخدم" },
   account_subscription: { ml: "സബ്സ്ക്രിപ്ഷൻ", en: "Subscription", ar: "الاشتراك" },
   role_owner: { ml: "ഉടമസ്ഥൻ", en: "Owner", ar: "المالك" },
-  role_admin: { ml: "അഡ്മിൻ", en: "Admin", ar: "مشرف" },
+  role_admin: { ml: "ഓണർ", en: "Owner", ar: "المالك" },
   role_user: { ml: "ഉപയോക്താവ്", en: "User", ar: "مستخدم" },
 
   // ── Google Sign-In Prompt ──
@@ -278,9 +278,9 @@ const translations = {
   error_refresh: { ml: "പേജ് പുതുക്കുക", en: "Refresh Page", ar: "تحديث الصفحة" },
 
   // ── Protected Page ──
-  admin_access_required: { ml: "അഡ്മിൻ പ്രവേശനം ആവശ്യം", en: "Admin Access Required", ar: "مطلوب وصول المشرف" },
-  admin_restricted: { ml: "ഈ പേജ് അഡ്മിനിസ്ട്രേറ്റർമാർക്ക് മാത്രം പരിമിതപ്പെടുത്തിയിരിക്കുന്നു.", en: "This page is restricted to administrators only.", ar: "هذه الصفحة مقتصرة على المسؤولين فقط." },
-  admin_login: { ml: "അഡ്മിൻ ലോഗിൻ", en: "Admin Login", ar: "دخول المشرف" },
+  admin_access_required: { ml: "ഓണർ പ്രവേശനം മാത്രം", en: "Owner Access Only", ar: "للمالك فقط" },
+  admin_restricted: { ml: "ഈ പേജ് ഓണർക്ക് മാത്രമുള്ളതാണ്.", en: "This page is for the owner only.", ar: "هذه الصفحة للمالك فقط." },
+  admin_login: { ml: "ഓണർ ലോഗിൻ", en: "Owner Login", ar: "دخول المالك" },
   back_to_home: { ml: "← ഹോമിലേക്ക് തിരികെ", en: "← Back to Home", ar: "← العودة للرئيسية" },
   access_restricted_title: { ml: "പ്രവേശനം നിയന്ത്രിതം", en: "Access Restricted", ar: "وصول مقيد" },
   access_restricted_desc: { ml: "നിങ്ങളുടെ റോളിന് ഈ വിഭാഗത്തിലേക്ക് പ്രവേശനമില്ല.", en: "Your role does not have access to this section.", ar: "دورك لا يملك صلاحية الوصول إلى هذا القسم." },

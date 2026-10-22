@@ -547,7 +547,7 @@ export default function AstroScreenshotUploader() {
             color: "rgba(248,113,113,0.60)",
             border: "1px solid rgba(248,113,113,0.20)",
           }}>
-            {txt("അഡ്മിൻ", "Admin", "مشرف")}
+            {txt("ഓണർ", "Owner", "المالك")}
           </span>
         </div>
         <p className="font-inter text-[9px] mt-1" style={{ color: "rgba(255,255,255,0.35)" }}>

@@ -21,7 +21,7 @@ export default function HolyOnePage() {
   const navigate = useNavigate();
   const { toast } = useToast();
   const { role } = useAuth();
-  const isAdmin = role === "admin" || role === "owner";
+  const isAdmin = role === "owner";
   const [names, setNames] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");

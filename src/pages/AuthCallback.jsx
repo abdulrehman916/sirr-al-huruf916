@@ -21,7 +21,7 @@ export default function AuthCallback() {
           throw new Error("This account does not have access. Please contact the site owner.");
         const { error: claimError } = await supabase.rpc("claim_base44_legacy_data");
         if (claimError) throw new Error("We could not restore your previous permissions. Please try again.");
-        const isAdmin = ["owner", "admin"].includes(profile.role);
+        const isAdmin = profile.role === "owner";
         try { persistSet("sirr_admin_session", isAdmin ? "true" : "false"); } catch { /* optional UI hint */ }
         if (active) window.location.replace(returnTo.startsWith("/admin/") && !isAdmin ? "/" : returnTo);
       } catch (error) {

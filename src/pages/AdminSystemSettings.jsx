@@ -79,7 +79,7 @@ export default function AdminSystemSettings() {
       const user = await platform.auth.me();
       if (!user || !["owner", "admin"].includes(user.role)) {
         setIsAdmin(false);
-        toast({ title: "Access Denied", description: "Only administrators can access this page", variant: "destructive" });
+        toast({ title: "Access Denied", description: "Only the owner can access this page", variant: "destructive" });
       } else {
         setIsAdmin(true);
         loadSettings();
@@ -355,10 +355,10 @@ export default function AdminSystemSettings() {
               {sectionData.security?.maintenance_mode && (
                 <div className="rounded-lg p-2 flex items-center gap-2" style={{ background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.25)" }}>
                   <AlertTriangle className="w-3.5 h-3.5 text-red-400 flex-shrink-0" />
-                  <p className="text-[10px] text-red-400">Maintenance mode is ON — only admins can access the app.</p>
+                  <p className="text-[10px] text-red-400">Maintenance mode is ON — only the owner can access the app.</p>
                 </div>
               )}
-              <SettingsField label="Maintenance Mode" type="toggle" value={sectionData.security?.maintenance_mode} onChange={(v) => updateField("security", "maintenance_mode", v)} disabled={!canEdit} description="Restrict app access to admins only" />
+              <SettingsField label="Maintenance Mode" type="toggle" value={sectionData.security?.maintenance_mode} onChange={(v) => updateField("security", "maintenance_mode", v)} disabled={!canEdit} description="Restrict app access to the owner only" />
               <SettingsField label="Force Logout All Users" type="toggle" value={sectionData.security?.force_logout_all} onChange={(v) => updateField("security", "force_logout_all", v)} disabled={!canEdit} description="Force all non-admin users to log out" />
               <SettingsField label="Session Timeout (Minutes)" type="number" value={sectionData.security?.session_timeout_minutes} onChange={(v) => updateField("security", "session_timeout_minutes", v)} disabled={!canEdit} min={5} max={1440} />
               <SettingsField label="Device Reset Limit" type="number" value={sectionData.security?.device_reset_limit} onChange={(v) => updateField("security", "device_reset_limit", v)} disabled={!canEdit} min={0} max={10} description="Max device resets per code" />

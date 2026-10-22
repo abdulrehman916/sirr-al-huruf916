@@ -62,7 +62,7 @@ export default function AdminRedeemApprovals() {
         setIsAdmin(false);
         toast({
           title: "Access Denied",
-          description: "Only administrators can access this page",
+          description: "Only the owner can access this page",
           variant: "destructive",
         });
       } else {
