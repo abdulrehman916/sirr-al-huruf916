@@ -26,7 +26,6 @@ const TAB_KEYS = [
   { id: "sirr", arabicTitle: "السر", englishSubtitle: "SIRR", path: "/sirr" },
   { id: "astro-clock", arabicTitle: "الساعة", englishSubtitle: "ASTRO", path: "/astro-clock" },
   { id: "shop", arabicTitle: "المتجر", englishSubtitle: "SHOP", path: "/shop" },
-  { id: "admin-shop", arabicTitle: "إدارة المتجر", englishSubtitle: "SHOP ADMIN", path: "/admin/shop" },
   { id: "support", arabicTitle: "الدعم", englishSubtitle: "SUPPORT", path: "/support" },
 ];
 
@@ -206,7 +205,7 @@ export default function PageLayout({ children }) {
                     }}
                   >
                     <Shield className="w-3.5 h-3.5" />
-                    <span className="text-[10px] font-bold tracking-wide">{role === "owner" ? "OWNER" : "ADMIN"}</span>
+                    <span className="text-[10px] font-bold tracking-wide">OWNER</span>
                   </Link>
                 )}
 
@@ -308,7 +307,7 @@ export default function PageLayout({ children }) {
                       }}
                     >
                       <Shield className="w-4 h-4" />
-                      <span className="text-xs font-bold">{role === "owner" ? "OWNER PANEL" : "ADMIN PANEL"}</span>
+                      <span className="text-xs font-bold">OWNER PANEL</span>
                     </button>
                   )}
                 </div>

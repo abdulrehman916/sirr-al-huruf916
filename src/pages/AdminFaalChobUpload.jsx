@@ -1,1 +1,0 @@
-export default function AdminFaalChobUpload() { return <div>Admin Faal Chob Upload</div>; }

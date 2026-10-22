@@ -16,7 +16,6 @@ for (const item of [...daily, ...ADMIN_MAINTENANCE.flatMap(section => section.it
 }
 const limited = rbac.filterAdminSections(ADMIN_NAVIGATION, 'admin', { perm_support_messages: true });
 assert.deepEqual(limited, []);
-assert.equal(rbac.canAccessAdminRoute('owner', '/admin/admins'), false);
 assert.ok(!manifest.some(route => route.path === '/admin/admins'));
 for (const path of ['/admin/content-studio', '/admin/books-studio', '/admin/resource-studio']) {
   assert.ok(!manifest.some(route => route.path === path));

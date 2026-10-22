@@ -43,14 +43,14 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
   const [unifiedResource, setUnifiedResource] = useState(null);
 
   // Post-signin redirect: when a Guest signs in via Google from a locked
-  // page, send Owner → Owner Dashboard, Admin → Admin Dashboard. Guests
+  // page, send Owner → Owner Dashboard. Guests
   // stay on the locked page (still need an access code). This does NOT
   // change access-control — it is a one-shot convenience redirect.
   useEffect(() => {
     let flag = null;
     try { flag = sessionStorage.getItem("sirr_locked_signin_redirect"); } catch { /* ignore */ }
     if (!flag) return;
-    if (role === ROLES.OWNER || role === ROLES.ADMIN) {
+    if (role === ROLES.OWNER) {
       try { sessionStorage.removeItem("sirr_locked_signin_redirect"); } catch { /* ignore */ }
       navigate(getAdminHomePath(role), { replace: true });
     } else if (isAuthenticated) {
@@ -206,8 +206,8 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
       // DB-locked multi-feature page with no permission → fall through to locked
     }
 
-    // 6. Authenticated admin bypass (content pages too) — owner + admin only
-    if (role === ROLES.OWNER || role === ROLES.ADMIN) {
+    // 6. Owner bypass (content pages too)
+    if (role === ROLES.OWNER) {
       setAdminFlag(true);
       setAccessStatus("granted");
       return;

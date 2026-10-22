@@ -124,9 +124,7 @@ export default function RedeemCodeApproval() {
             : "✓ Code Submitted for Approval",
           description: res.data.already_submitted
             ? `Your code is already ${res.data.status.toLowerCase().replace(/_/g, " ")}.`
-            : `Approval ID: ${res.data.approval_id}${
-                res.data.assigned_admin ? `. Assigned to: ${res.data.assigned_admin}` : ""
-              }`,
+            : `Approval ID: ${res.data.approval_id}`,
         });
         setFormData((prev) => ({ ...prev, code: "" }));
         await loadSubmissions(formData.email.trim());
@@ -160,7 +158,7 @@ export default function RedeemCodeApproval() {
       });
 
       if (res.data?.success) {
-        toast({ title: "✓ Response Sent", description: "Admin will review your response." });
+        toast({ title: "✓ Response Sent", description: "We will review your response." });
         setResponseData("");
         setRespondingTo(null);
         await loadSubmissions(formData.email);

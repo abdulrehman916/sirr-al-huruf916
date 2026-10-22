@@ -20,7 +20,7 @@ export default function AdminGoogleLinked() {
     );
   }
 
-  if (role !== ROLES.OWNER && role !== ROLES.ADMIN) return <Navigate to="/" replace />;
+  if (role !== ROLES.OWNER) return <Navigate to="/" replace />;
 
   return (
     <AdminLayout title="Google Linked Customers" subtitle="ربط حسابات جوجل" showBackButton={true}>

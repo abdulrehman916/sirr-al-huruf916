@@ -192,7 +192,7 @@ export default function CreateCodePageItem({
           <div className="flex items-center gap-2 text-xs text-white/40 mt-1">
             <span>{page.category || 'General'}</span>
             <span>·</span>
-            <span>{page.adminOnly ? "Admin" : "User"} Access</span>
+            <span>{page.adminOnly ? "Owner" : "User"} Access</span>
           </div>
         </div>
       </button>

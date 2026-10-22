@@ -49,7 +49,7 @@ export default function SubscriptionPending() {
                 <CheckCircle className="w-4 h-4 text-white" />
               </div>
               <div>
-                <p className="text-white font-medium">Admin Verification</p>
+                <p className="text-white font-medium">Owner Verification</p>
                 <p className="text-white/60 text-sm">Will be completed within 24 hours</p>
               </div>
             </div>

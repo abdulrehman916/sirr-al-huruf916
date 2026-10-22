@@ -73,11 +73,11 @@ export default function AccountModal({ user, onClose }) {
               <div className="flex items-center justify-between py-2 border-b border-white/10">
                 <span className="font-inter text-xs text-white/60">{t("user_role", "Role")}</span>
                 <span className={`font-inter text-xs font-semibold px-2 py-1 rounded-full ${
-                  role === 'owner' || profile.role === 'admin'
+                  role === 'owner'
                     ? 'text-amber-400 bg-amber-400/10'
                     : 'text-blue-400 bg-blue-400/10'
                 }`}>
-                  {role === 'owner' ? t("role_owner", "Owner") : (profile.role === 'admin' ? t("role_admin", "Admin") : t("role_user", "User"))}
+                  {role === 'owner' ? t("role_owner", "Owner") : t("role_user", "User")}
                 </span>
               </div>
               <div className="flex items-center justify-between py-2 border-b border-white/10">
@@ -99,7 +99,7 @@ export default function AccountModal({ user, onClose }) {
 
           {/* Actions */}
           <div className="space-y-2">
-            {(role === 'owner' || role === 'admin') && (
+            {role === 'owner' && (
               <button
                 onClick={() => { onClose(); navigate('/admin/access-dashboard'); }}
                 className="w-full py-3 px-4 rounded-xl font-inter text-sm font-semibold"
@@ -108,7 +108,7 @@ export default function AccountModal({ user, onClose }) {
                   border: "1px solid rgba(212,175,55,0.40)",
                   color: "#E8C84A",
                   }}>
-                  {role === 'owner' ? t("account_owner_dashboard", "Owner Dashboard") : t("account_admin_dashboard", "Admin Dashboard")}
+                  {t("account_owner_dashboard", "Owner Dashboard")}
                   </button>
             )}
 

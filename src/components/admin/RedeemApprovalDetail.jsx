@@ -109,12 +109,6 @@ export default function RedeemApprovalDetail({
             <strong className="text-white/60">Status:</strong>{" "}
             <span style={{ color: G.text }}>{STATUS_LABELS[approval.status] || approval.status}</span>
           </p>
-          {approval.assigned_admin_name && (
-            <p className="text-white">
-              <strong className="text-white/60">Assigned Admin:</strong>{" "}
-              {approval.assigned_admin_name}
-            </p>
-          )}
           {approval.reviewed_by_name && (
             <p className="text-white">
               <strong className="text-white/60">Reviewed By:</strong>{" "}

@@ -152,7 +152,7 @@ function LocationSelector() {
 function AstroClockContent() {
   const { txt, language } = useAstroClockLanguage();
   const { role } = useAuth();
-  const isAdmin = role === 'admin' || role === 'owner';
+  const isAdmin = role === 'owner';
 
   // Verified Knowledge Cache query — current weekday (deterministic, no engine dependency).
   // The Owner populates the cache by running unifiedKnowledgeSearch for the weekday name;

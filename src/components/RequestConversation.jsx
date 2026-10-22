@@ -36,7 +36,7 @@ export default function RequestConversation({ messages }) {
                   className="text-[9px] font-bold uppercase tracking-wider"
                   style={{ color: isAdmin ? "#60a5fa" : "#F5D060" }}
                 >
-                  {isAdmin ? "Admin" : "You"}
+                  {isAdmin ? "Sirr Al-Huruf" : "You"}
                 </span>
                 {msg.status_change && (
                   <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-white/10 text-white/60">

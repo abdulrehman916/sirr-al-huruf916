@@ -65,13 +65,6 @@ export default function RedeemApprovalRow({ approval, onClick }) {
                 : "—"}
             </span>
           </div>
-
-          {/* Assigned admin */}
-          {approval.assigned_admin_name && (
-            <p className="text-[10px] mt-1" style={{ color: G.dim }}>
-              Admin: {approval.assigned_admin_name}
-            </p>
-          )}
         </div>
       </div>
     </div>

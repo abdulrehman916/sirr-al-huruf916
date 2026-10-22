@@ -142,7 +142,7 @@ export default function RulesGate({ children }) {
     if (!authResolved) return;
 
     // Owner/Admin → always skip onboarding completely
-    if (role === ROLES.OWNER || role === ROLES.ADMIN) {
+    if (role === ROLES.OWNER) {
       persistSet(RULES_STORAGE_KEY, 'true');
       setShowRules(false);
       setGateResolved(true);

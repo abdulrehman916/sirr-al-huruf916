@@ -591,7 +591,7 @@ function TabSwitcher({ activeTab, onTabChange }) {
 // ── MAIN PAGE ────────────────────────────────────────────────────
 export default function MagicalHolyNamesPage() {
   const { role } = useAuth();
-  const isAdmin = role === "admin" || role === "owner";
+  const isAdmin = role === "owner";
   const [searchParams, setSearchParams] = useSearchParams();
   const requestedTab = searchParams.get("section");
   const activeTab = TABS.some(tab => tab.id === requestedTab) ? requestedTab : null;

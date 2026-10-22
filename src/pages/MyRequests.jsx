@@ -200,7 +200,7 @@ export default function MyRequests() {
                     </div>
                     {lastMsg && (
                       <p className="text-xs text-white/50 mt-2 truncate">
-                        <span className="text-white/30">{lastMsg.sender_type === "ADMIN" ? "Admin: " : "You: "}</span>
+                        <span className="text-white/30">{lastMsg.sender_type === "ADMIN" ? "Sirr Al-Huruf: " : "You: "}</span>
                         {lastMsg.message}
                       </p>
                     )}
