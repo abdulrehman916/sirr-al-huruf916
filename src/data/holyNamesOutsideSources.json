@@ -28,6 +28,10 @@
   "general": {
    "ml": "പൊതുവായ ഖവാസ്വ്",
    "en": "General properties"
+  },
+  "love": {
+   "ml": "മഹബ്ബത്ത്, സ്നേഹം, ആകർഷണം",
+   "en": "Love and attraction (mahabba)"
   }
  },
  "source_types": {
@@ -106,6 +110,19 @@
     },
     "count_ml": "ദിവസവും 1000 തവണ",
     "count_en": "1,000 times daily"
+   },
+   {
+    "purpose": "general",
+    "arabic": "اللّٰه",
+    "ml": "(ഖവാസ്വ്) ളുഹാ സമയത്തും അസ്വ്റിലും രാത്രിയുടെ അവസാന മൂന്നിലൊന്നിലും 66 തവണ — ലക്ഷ്യത്തിലെത്തിക്കും.",
+    "en": "(Khawass) 66 times at duha, at ‘asr and in the last third of the night brings one to what is sought.",
+    "source": {
+     "title": "خواص أسماء الله الحسنى (مدونة MARO، 2010)",
+     "url": "https://mero82aw.wordpress.com/2010/03/16/%D8%AE%D9%88%D8%A7%D8%B5-%D8%A7%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89/",
+     "type": "khawass"
+    },
+    "count_ml": "66 തവണ — ളുഹാ, അസ്വ്ർ, രാത്രിയുടെ അവസാന ഭാഗം",
+    "count_en": "66 times — duha, ‘asr, last third of the night"
    }
   ],
   "PDF-HN-001": [
@@ -193,6 +210,19 @@
     },
     "count_ml": "ദിവസവും 100 തവണ",
     "count_en": "100 times daily"
+   },
+   {
+    "purpose": "love",
+    "arabic": "رَحِيمَ كُلِّ صَرِيخٍ وَمَكْرُوبٍ وَغِيَاثَهُ وَمَعَاذَهُ",
+    "ml": "(ഖവാസ്വ്) ഈ വാചകം എഴുതി വെള്ളത്തിൽ കലക്കി മരത്തിന് ഒഴിച്ചാൽ അതിന്റെ കായ്കളിൽ ബറകത്ത് കാണും. ആ വെള്ളം ആരെങ്കിലും കുടിച്ചാൽ അയാൾക്ക് എഴുതിയ ആളോട് ഇഷ്ടം (ശൗഖ്) ഉണ്ടാകും. ആവശ്യക്കാരന്റെയും (ത്വാലിബ്) ലക്ഷ്യമാക്കുന്ന ആളുടെയും (മത്‌ലൂബ്) പേരും ഉമ്മയുടെ പേരും കൂടെ എഴുതിയാൽ കൂടുതൽ ശക്തമാകും. ഗ്രന്ഥത്തിന്റെ നിബന്ധന: അനുവദനീയമായ വഴിക്കാണെങ്കിൽ മാത്രം; അല്ലെങ്കിൽ ഫലം വിപരീതമാകും.",
+    "en": "(Khawass) Written, dissolved in water and poured on a tree, blessing appears in its fruit; whoever drinks that water comes to long for the writer. Adding the names of the seeker and the sought, with their mothers' names, makes it stronger. The source's condition: only in a permissible matter, otherwise the effect is reversed.",
+    "source": {
+     "title": "خواص الأسماء الحسنى وأورادها، منسوبة إلى الشيخ أحمد زرّوق",
+     "url": "https://elrohani.ahlamontada.com/t1099-%D8%B0%D9%83%D8%B1-%D8%AE%D9%88%D8%A7%D8%B5-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89-%D9%88%D8%B9%D8%AF%D8%AF-%D8%A3%D9%88%D8%B1%D8%A7%D8%AF%D9%87%D8%A7",
+     "type": "khawass"
+    },
+    "count_ml": "എഴുതി, വെള്ളത്തിൽ കലക്കി",
+    "count_en": "Written and dissolved in water"
    }
   ],
   "PDF-HN-003": [
@@ -234,6 +264,19 @@
     },
     "count_ml": "വെള്ളി സൂര്യോദയത്തിന് മുമ്പ് 1000; ദിവസവും ഉച്ചയ്ക്ക് 100",
     "count_en": "1,000 on Friday before sunrise; 100 daily at noon"
+   },
+   {
+    "purpose": "job",
+    "arabic": "يَا مَلِكُ",
+    "ml": "(ഖവാസ്വ്) ദിവസവും 64 തവണ പതിവാക്കിയാൽ അധികാരവും സ്ഥാനവും നിലനിൽക്കും.",
+    "en": "(Khawass) Kept up 64 times every day, it preserves authority and position.",
+    "source": {
+     "title": "خواص أسماء الله الحسنى (مدونة MARO، 2010)",
+     "url": "https://mero82aw.wordpress.com/2010/03/16/%D8%AE%D9%88%D8%A7%D8%B5-%D8%A7%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89/",
+     "type": "khawass"
+    },
+    "count_ml": "ദിവസവും 64 തവണ",
+    "count_en": "64 times daily"
    }
   ],
   "PDF-HN-101": [

@@ -1,7 +1,7 @@
 import outsideSources from '@/data/holyNamesOutsideSources.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 
-const ORDER = ['wealth', 'job', 'illness', 'marriage', 'sihr', 'distress', 'general'];
+const ORDER = ['wealth', 'job', 'illness', 'marriage', 'love', 'sihr', 'distress', 'general'];
 
 // Outside-the-book material for a Section B card, grouped by purpose. Quran and
 // hadith come first inside each group; khawass items are labelled as such.
