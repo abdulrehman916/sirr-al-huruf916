@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Calendar, ChevronDown, Check } from "lucide-react";
 import { G, T, Box, translatePlanet, translateDay, saatDisplayNum, computeCompat, compatColor } from "../v3/shared";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // CARD 6 — COMPLETE FUTURE CALENDAR (next 29 days, collapsed by default)
 // Header "Future Opportunities (Next 29 Days)". Expanded shows every suitable
 // opportunity grouped by date, strength-sorted within each day, with Date,
@@ -9,6 +10,7 @@ import { G, T, Box, translatePlanet, translateDay, saatDisplayNum, computeCompat
 // reasoning text (lives on Card 1) and no source lists (live on Card 3/5).
 export default function Card6FutureOpportunities({ analysis, onApply, lang }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   const timeline = (analysis?.allowedTimeline || []).map(o => {
     const pct = computeCompat(analysis, { weekday: o.weekday, dayKey: o.dayKey, period: o.period, saatNumber: o.hour, planetLC: String(o.planet || "").toLowerCase() }).final;
     return { ...o, pct };

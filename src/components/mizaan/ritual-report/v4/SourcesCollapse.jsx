@@ -2,12 +2,14 @@ import { useState } from "react";
 import { BookOpen, ChevronDown } from "lucide-react";
 import { G, T } from "../v3/shared";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // Collapsible "Sources" section. Lists ONLY book references (book name in its
 // original language + page). Never dumps raw manuscript paragraphs into the
 // main UI. Used by the decision-assistant cards so the report behaves as a
 // Decision Assistant, not a Book Viewer.
 export default function SourcesCollapse({ sources, lang, labelEn = "Sources", labelMl = "സ്രോതസ്സുകൾ" }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   if (!sources || sources.length === 0) return null;
   const items = sources
     .map(s => ({
