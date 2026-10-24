@@ -5,6 +5,7 @@ import { ChevronLeft, Search, Leaf, FlaskConical, Droplet, Circle, Wind,
 import SirrPreparationCard from "./SirrPreparationCard";
 import { PREPARATION_TYPES } from "@/lib/preparationLibrarySync";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const ICON_MAP = {
   Leaf, FlaskConical, Droplet, Circle, Wind,
   Flower2, PenTool, Square, BookOpen, Archive, Info, Package, Ruler,
@@ -22,6 +23,7 @@ export default function SirrPreparationLibrary({
   const isMl = language === "ml";
   const [search, setSearch] = useState("");
   const [selectedType, setSelectedType] = useState(null);
+  useBackLayer(selectedType != null, () => setSelectedType(null)); // Back closes this first
 
   const filtered = useMemo(() => {
     if (!preparations) return [];

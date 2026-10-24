@@ -4,6 +4,7 @@ import { ChevronLeft, ZoomIn, X, BookOpen, Layers,
   ListChecks, BookMarked, GitBranch, Link2 } from "lucide-react";
 import { getPreparationTypeLabel } from "@/lib/preparationLibrarySync";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const NOT_SPECIFIED_ML = "ഗ്രന്ഥത്തിൽ വ്യക്തമാക്കാത്തത്";
 const NOT_SPECIFIED_EN = "Not specified in the manuscript";
 
@@ -65,6 +66,7 @@ function ImageViewer({ images, diagrams, accent }) {
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center"
           style={{ background: "rgba(0,0,0,0.95)" }}
           onClick={() => setFullscreen(null)}>
+          <BackLayer onBack={() => setFullscreen(null)} />
           <button className="absolute top-4 right-4 p-2 rounded-full" style={{ background: "rgba(255,255,255,0.10)" }}
             onClick={(e) => { e.stopPropagation(); setFullscreen(null); }}>
             <X className="w-6 h-6 text-white" />

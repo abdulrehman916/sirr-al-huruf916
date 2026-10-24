@@ -13,9 +13,11 @@ import { ChevronLeft, FileText, Layers, Sparkles, BookOpen } from "lucide-react"
 import SirrMethodDetail from "./SirrMethodDetail";
 import { getLanguageContent } from "@/lib/sirrTurkishGuard";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 export default function SirrHeadingView({ heading, childHeadings, entries, breadcrumb, onSelectHeading, onSelectEntry, onBack, language, accent }) {
   const isMl = language === "ml";
   const [selectedEntry, setSelectedEntry] = useState(null);
+  useBackLayer(selectedEntry != null, () => setSelectedEntry(null)); // Back closes this first
 
   // If an entry is selected, show the method detail
   if (selectedEntry) {

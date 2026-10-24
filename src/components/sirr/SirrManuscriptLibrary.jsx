@@ -13,6 +13,7 @@ import { useState } from "react";
 import { useSirrBooks } from "@/hooks/useSirrBooks";
 import SirrReader from "@/components/sirr/SirrReader";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = { text: "#D4AF37", dim: "rgba(212,175,55,0.55)", faint: "rgba(212,175,55,0.18)" };
 
 function Empty({ label }) {
@@ -26,6 +27,7 @@ function Empty({ label }) {
 export default function SirrManuscriptLibrary() {
   const { books, loading: booksLoading } = useSirrBooks();
   const [selectedBookId, setSelectedBookId] = useState(null);
+  useBackLayer(selectedBookId != null, () => setSelectedBookId(null)); // Back closes this first
   const selectedBook = books.find(b => b.sirr_book_id === selectedBookId) || null;
 
   return (

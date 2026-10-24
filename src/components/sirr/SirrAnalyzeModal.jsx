@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { platform } from "@/api/platformClient";
 
+import { BackLayer } from "@/lib/useBackLayer";
 export default function SirrAnalyzeModal({ file, language, onClose, onComplete }) {
   const isMl = language === "ml";
   const [stage, setStage] = useState("starting");
@@ -348,6 +349,7 @@ export default function SirrAnalyzeModal({ file, language, onClose, onComplete }
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4"
       style={{ background: "rgba(0,0,0,0.80)" }}
       onClick={onClose}>
+      <BackLayer onBack={onClose} />
       <div className="w-full max-w-md rounded-2xl p-5 card-dark max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}>
 

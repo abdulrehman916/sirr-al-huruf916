@@ -9,9 +9,11 @@ import { ChevronLeft, BookMarked, FileText } from "lucide-react";
 import SirrMethodDetail from "./SirrMethodDetail";
 import { getLanguageContent } from "@/lib/sirrTurkishGuard";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 export default function SirrTopicView({ topic, section, onBack, language, onSelectPreparation }) {
   const isMl = language === "ml";
   const [selectedMethod, setSelectedMethod] = useState(null);
+  useBackLayer(selectedMethod != null, () => setSelectedMethod(null)); // Back closes this first
 
   // Group methods by book (manuscript) — never merge
   const byBook = {};
