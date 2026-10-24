@@ -8,6 +8,7 @@ import { createPortal } from "react-dom";
 import { X, RefreshCw, Loader2, Check } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
+import { BackLayer } from "@/lib/useBackLayer";
 import {
   DURATION_TYPES, DURATION_PRESETS, computeExpiry, fmtDateTime,
   effectiveCodeExpiry,
@@ -84,6 +85,7 @@ export default function RenewCodeModal({ code, onClose, onRenewed }) {
         className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto p-4"
         style={{ background: "rgba(0,0,0,0.70)" }} onClick={onClose}
       >
+        <BackLayer onBack={onClose} />
         <div
           className="w-full max-w-lg my-8 rounded-2xl border p-5 space-y-4"
           style={{ background: "linear-gradient(145deg, #0c1630, #060c1c)", borderColor: G.borderHi }}

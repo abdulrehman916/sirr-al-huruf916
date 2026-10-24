@@ -13,6 +13,7 @@ import { getContentPages } from "@/lib/pageRegistry";
 import { DURATION_OPTIONS, buildPageGrant, computePageExpiry } from "@/lib/codeDuration";
 import CreateCodePageItem from "./CreateCodePageItem";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.35)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -298,6 +299,7 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
         style={{ background: "rgba(0,0,0,0.70)" }}
         onClick={requestClose}
       >
+        <BackLayer onBack={requestClose} />
         <div
           className="w-full max-w-2xl my-8 rounded-2xl border p-5 space-y-4"
           style={{ background: "linear-gradient(145deg, #0c1630, #060c1c)", borderColor: G.borderHi }}
@@ -385,6 +387,7 @@ export default function EditCodeModal({ code, onClose, onUpdated }) {
           style={{ background: "rgba(0,0,0,0.80)" }}
           onClick={() => setShowDiscardConfirm(false)}
         >
+          <BackLayer onBack={() => setShowDiscardConfirm(false)} />
           <div
             className="w-full max-w-xs rounded-2xl border p-5 space-y-4 text-center"
             style={{ background: "linear-gradient(145deg, #0c1630, #060c1c)", borderColor: G.borderHi }}

@@ -10,6 +10,7 @@ import { ROLES } from "@/lib/rbac";
 import RenewCodeModal from "./RenewCodeModal";
 import { fmtDate } from "@/lib/codeDuration";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.35)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -39,6 +40,7 @@ function LinkModal({ codes, onClose, onLinked }) {
   };
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.85)" }} onClick={onClose}>
+      <BackLayer onBack={onClose} />
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 40 }}
         className="w-full max-w-md rounded-2xl p-6 space-y-4"
         style={{ background: "linear-gradient(145deg,#0c1630,#060c1c)", border: `1px solid ${G.borderHi}` }}
@@ -92,6 +94,7 @@ function TransferModal({ code, onClose, onDone }) {
   };
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.85)" }} onClick={onClose}>
+      <BackLayer onBack={onClose} />
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 40 }}
         className="w-full max-w-sm rounded-2xl p-6 space-y-4"
         style={{ background: "linear-gradient(145deg,#0c1630,#060c1c)", border: `1px solid ${G.borderHi}` }}
@@ -131,6 +134,7 @@ function UnlinkConfirm({ code, onClose, onDone }) {
   };
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.85)" }} onClick={onClose}>
+      <BackLayer onBack={onClose} />
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 40 }}
         className="w-full max-w-sm rounded-2xl p-6 space-y-4"
         style={{ background: "linear-gradient(145deg,#0c1630,#060c1c)", border: `1px solid ${G.borderHi}` }}
