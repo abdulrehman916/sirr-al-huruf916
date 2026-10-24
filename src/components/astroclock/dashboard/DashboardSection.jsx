@@ -5,6 +5,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useBackLayer } from "@/lib/useBackLayer";
 
 const G = {
   border: "rgba(212,175,55,0.25)",
@@ -17,6 +18,8 @@ const G = {
 export default function DashboardSection({ icon, title, subtitle, defaultOpen = false, alwaysOpen = false, badge = null, children }) {
   const [open, setOpen] = useState(defaultOpen);
   const isOpen = alwaysOpen || open;
+  // Back closes an opened section before leaving the page
+  useBackLayer(!alwaysOpen && open && !defaultOpen, () => setOpen(false));
 
   return (
     <div className="rounded-2xl overflow-hidden" style={{

@@ -11,6 +11,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition";
 import * as K from "@/lib/kashfSaatData";
+import * as O from "@/lib/kashfOtherSources";
+import { useBackLayer } from "@/lib/useBackLayer";
 
 const GOLD = "#F5D060";
 const NAT_COLOR = { saad: "#4ADE80", nahs: "#F87171", mixed: "#FBBF24", good: "#4ADE80", bad: "#F87171" };
@@ -57,12 +59,31 @@ const natLabel = (n, isEn) => ({
   good: isEn ? "Sa'd (good)" : "സഅ്ദ് (നല്ലത്)",
   bad: isEn ? "Nahs (bad)" : "നഹ്സ് (മോശം)",
 }[n] || n);
+// Other Islamic books — beside Kashf, never part of the % scores.
+const NAT_C = { saad: "#4ADE80", nahs: "#F87171", mixed: "#FBBF24" };
+function Others({ items, isEn }) {
+  const list = (items || []).filter(Boolean);
+  if (!list.length) return null;
+  return (
+    <div className="mt-1.5 pt-1.5 space-y-0.5" style={{ borderTop: "1px dashed rgba(255,255,255,0.12)" }}>
+      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other books" : "മറ്റ് ഗ്രന്ഥങ്ങൾ"}</p>
+      {list.map((o, i) => (
+        <p key={i} className="text-[11px] leading-relaxed" style={{ color: o.color || "rgba(255,255,255,0.65)" }}>
+          • <b style={{ color: "rgba(255,255,255,0.85)" }}>{isEn ? O.SOURCES[o.src].en : O.SOURCES[o.src].ml}</b>: {isEn ? o.en : o.ml}
+        </p>
+      ))}
+    </div>
+  );
+}
+const natWord = (n, isEn) => (n === "saad" ? (isEn ? "Sa'd" : "സഅ്ദ്") : n === "nahs" ? (isEn ? "Nahs" : "നഹ്സ്") : (isEn ? "Mixed" : "കലർന്നത്"));
+const mansionOther = (no) => { const o = O.MANSION_OTHER[no]; return o ? { src: "havass", color: NAT_C[o.nature], ml: `${natWord(o.nature, false)} — ${o.ml}`, en: `${natWord(o.nature, true)} — ${o.en}` } : null; };
 const Src = ({ children }) => <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>📖 <span className="font-amiri">{K.BOOK.ar}</span>{children ? <> · {children}</> : null}</p>;
 
 // ── QAMAR ──────────────────────────────────────────────────────
 export function QamarSection() {
   const { isEn, customDate } = useLang();
   const [open, setOpen] = useState(null);
+  useBackLayer(open !== null, () => setOpen(null)); // Back closes the opened row
   const [tab, setTab] = useState("manazil");
   const moon = useMemo(() => {
     const mp = calculateMoonPosition(customDate || new Date());
@@ -87,6 +108,7 @@ export function QamarSection() {
         <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? mnEn.travel : mn.travel_ml}</P>
         <P>🤲 {isEn ? "For needs, use the hour of" : "ആവശ്യങ്ങൾക്ക് ഉചിതമായ സാഅത്ത്"}: <b style={{ color: "#fff" }}>{isEn ? K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].tr_en : K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].tr_ml}</b> <Ar>{K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].ar}</Ar></P>
         {moon.sign === 7 && <P color="#F87171">💍 {isEn ? "Qamar in Aqrab: no nikah" : "ഖമർ അഖ്റബിൽ: നിക്കാഹ് വേണ്ട"}</P>}
+        <Others isEn={isEn} items={[mansionOther(moon.mansionNo), O.TAHA_NAHS_BURUJ.includes(moon.sign) ? { ...O.BURJ_OTHER_NOTE, color: "#F87171" } : null, moon.light < 5 ? O.MOON_OTHER.muhaq : moon.waxing ? O.MOON_OTHER.waxing : null]} />
         <Src>{isEn ? "28 equal manazil from 0° Hamal" : "0° ഹമൽ മുതൽ 28 തുല്യ മനാസിൽ"}</Src>
       </Card>
 
@@ -114,6 +136,7 @@ export function QamarSection() {
                 <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? en.travel : m.travel_ml}{K.TRAVEL_GOOD_MANSIONS.includes(n) ? (isEn ? " · Dhu al-Ghabra: good for travel" : " · ദുൽ-ഗബ്റ: യാത്രയ്ക്ക് നല്ലത്") : ""}</P>
                 {K.MARRIAGE_GOOD_MANSIONS.includes(n) && <P color="#4ADE80">💍 {isEn ? "Dhu al-Ghabra: good for nikah" : "ദുൽ-ഗബ്റ: നിക്കാഹിന് നല്ലത്"}</P>}
                 {(isEn ? en.note : m.note_ml) && <P color="rgba(255,255,255,0.5)">{isEn ? en.note : m.note_ml}</P>}
+                <Others isEn={isEn} items={[mansionOther(n)]} />
                 <P color="rgba(255,255,255,0.4)">{(n - 1) * (360 / 28) | 0}° – {(n * (360 / 28)) | 0}°</P>
               </Row>
             );
@@ -135,6 +158,7 @@ export function QamarSection() {
                 </>}>
                 <P>🤲 {isEn ? "Qamar here → needs in the hour of" : "ഖമർ ഇവിടെ → ആവശ്യങ്ങൾക്ക്"} <b style={{ color: "#fff" }}>{isEn ? hp.tr_en : hp.tr_ml}</b> <Ar>{hp.ar}</Ar> ({isEn ? hp.en : hp.ml})</P>
                 {i === 7 && <P color="#F87171">💍 {isEn ? "Qamar here: no nikah" : "ഖമർ ഇവിടെ: നിക്കാഹ് വേണ്ട"}</P>}
+                <Others isEn={isEn} items={[O.TAHA_NAHS_BURUJ.includes(i) ? { ...O.BURJ_OTHER_NOTE, color: "#F87171" } : null]} />
                 <P color="rgba(255,255,255,0.4)">{i * 30}° – {i * 30 + 30}°</P>
               </Row>
             );
@@ -157,6 +181,7 @@ const AFFINITY_NOTE = {
 export function KawakibSection() {
   const { isEn } = useLang();
   const [open, setOpen] = useState(null);
+  useBackLayer(open !== null, () => setOpen(null)); // Back closes the opened row
   return (
     <div className="space-y-1.5">
       <P color="rgba(255,255,255,0.55)">{isEn ? "Order of the hours: " : "സാഅത്തുകളുടെ ക്രമം: "}
@@ -176,6 +201,7 @@ export function KawakibSection() {
             {AFFINITY_NOTE[k] && <P color="#4ADE80">✓ {isEn ? AFFINITY_NOTE[k][1] : AFFINITY_NOTE[k][0]}</P>}
             {jaad.length > 0 && <P>{isEn ? "Sheikh Jaad's table" : "ശൈഖ് ജാഇദിന്റെ പട്ടിക"}: {jaad.map(([d, role]) => `${isEn ? K.WEEKDAYS[d].tr_en : K.WEEKDAYS[d].tr_ml} — ${isEn ? JAAD_ROLE[role][1] : JAAD_ROLE[role][0]}`).join(" · ")}</P>}
             <P color="rgba(255,255,255,0.5)">{isEn ? "Metal" : "ലോഹം"}: {isEn ? p.metal_en : p.metal_ml}</P>
+            <Others isEn={isEn} items={O.PLANET_OTHER[k]} />
           </Row>
         );
       })}
@@ -188,6 +214,7 @@ export function KawakibSection() {
 export function AyyamSection() {
   const { isEn } = useLang();
   const [open, setOpen] = useState(null);
+  useBackLayer(open !== null, () => setOpen(null)); // Back closes the opened row
   const [tab, setTab] = useState("week");
   return (
     <div className="space-y-3">
@@ -215,6 +242,7 @@ export function AyyamSection() {
                 <P>🧭 {isEn ? "Avoid travelling towards" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b></P>
                 <P>🤲 {isEn ? "Ijaba hour" : "ഇജാബത്തിന്റെ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.IJABA_HOUR[i]} · 🏆 {isEn ? "Mughalaba hour" : "മുഗാലബ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.MUGHALABA_HOUR[i]}</P>
                 {K.MASTERS_HOURS.days.includes(i) && <P>⭐ {isEn ? "Day-hours 1 and 8 are excellent" : "പകലിലെ 1, 8 സാഅത്തുകൾ ശ്രേഷ്ഠം"}</P>}
+                <Others isEn={isEn} items={[O.WEEKDAY_OTHER[i]]} />
               </Row>
             );
           })}
@@ -249,6 +277,7 @@ export function AyyamSection() {
             <P><b style={{ color: "#F87171" }}>{K.KAWAMIL.join(", ")}</b></P>
             <P>{isEn ? "Avoid" : "ഒഴിവാക്കുക"}: {actList(K.KAWAMIL_AVOID, isEn)}</P>
             <P>{isEn ? "Also the last Arbi'a (Wednesday) of each Hijri month" : "കൂടാതെ ഓരോ ഹിജ്റ മാസത്തിലെയും അവസാന അർബിആഅ് (ബുധൻ)"}</P>
+            <Others isEn={isEn} items={[O.KAWAMIL_AGREEMENT]} />
           </Card>
           <Card title={isEn ? "Al-Khalili — one nahs day per month" : "അൽ-ഖലീലി — ഓരോ മാസവും ഒരു നഹ്സ് ദിവസം"}>
             <div className="grid grid-cols-2 gap-1">
@@ -257,6 +286,16 @@ export function AyyamSection() {
               ))}
             </div>
           </Card>
+          {O.TAHA_MONTH_NAHS.map((r, ri) => (
+            <Card key={ri} title={`${isEn ? O.SOURCES.taha.en : O.SOURCES.taha.ml} — ${isEn ? r.en : r.ml}`}>
+              <div className="grid grid-cols-2 gap-1">
+                {K.HIJRI_MONTHS_AR.map((ar, i) => (r.days[i + 1] ? (
+                  <P key={i}><Ar>{ar}</Ar> {isEn ? K.HIJRI_MONTHS_EN[i] : K.HIJRI_MONTHS_ML[i]}: <b style={{ color: "#F87171" }}>{r.days[i + 1].join(", ")}</b></P>
+                ) : null))}
+              </div>
+              <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>{isEn ? "Other book — shown for reference; not used in the % scores" : "മറ്റ് ഗ്രന്ഥം — അറിവിനായി മാത്രം; ശതമാനത്തിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല"}</p>
+            </Card>
+          ))}
         </div>
       )}
     </div>

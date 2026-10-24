@@ -11,6 +11,8 @@ import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { subscribeLocation } from "@/lib/astroClockGeolocation";
 import { getPlanetaryDay, formatClock } from "@/lib/kashfSaatEngine";
+import { useBackLayer } from "@/lib/useBackLayer";
+import { SOURCES, PLANET_OTHER, MANSION_OTHER, WEEKDAY_OTHER, TAHA_NAHS_BURUJ, BURJ_OTHER_NOTE, tahaNahsFor } from "@/lib/kashfOtherSources";
 import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN } from "@/lib/kashfSaatData";
 
 const GOLD = "#F5D060";
@@ -89,6 +91,25 @@ function Box({ title, children }) {
 }
 const Line = ({ children, color = "rgba(255,255,255,0.75)" }) => <p className="text-xs leading-relaxed" style={{ color }}>{children}</p>;
 
+// "Other scholars" lines — shown beside Kashf, never part of the % score.
+const NAT_C = { saad: "#4ADE80", nahs: "#F87171", mixed: "#FBBF24" };
+function Others({ items, isEn }) {
+  const list = (items || []).filter(Boolean);
+  if (!list.length) return null;
+  return (
+    <div className="mt-1.5 pt-1.5 space-y-0.5" style={{ borderTop: "1px dashed rgba(255,255,255,0.12)" }}>
+      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other books" : "മറ്റ് ഗ്രന്ഥങ്ങൾ"}</p>
+      {list.map((o, i) => (
+        <p key={i} className="text-[11px] leading-relaxed" style={{ color: o.color || "rgba(255,255,255,0.65)" }}>
+          • <b style={{ color: "rgba(255,255,255,0.85)" }}>{isEn ? SOURCES[o.src].en : SOURCES[o.src].ml}</b>: {isEn ? o.en : o.ml}
+        </p>
+      ))}
+    </div>
+  );
+}
+const natWord = (n, isEn) => (n === "saad" ? (isEn ? "Sa'd" : "സഅ്ദ്") : n === "nahs" ? (isEn ? "Nahs" : "നഹ്സ്") : (isEn ? "Mixed" : "കലർന്നത്"));
+const mansionOther = (no, isEn) => { const o = MANSION_OTHER[no]; return o ? { src: "havass", color: NAT_C[o.nature], ml: `${natWord(o.nature, false)} — ${o.ml}`, en: `${natWord(o.nature, true)} — ${o.en}` } : null; };
+
 function DayFlags({ day, isEn }) {
   const flags = [];
   if (day.isKamil) flags.push(isEn ? `Kawamil nahs day (${day.lunarDay})` : `കവാമിൽ നഹ്സ് ദിവസം (${day.lunarDay})`);
@@ -157,12 +178,17 @@ function Sheet({ h, data, onClose, isEn }) {
         <Box title={isEn ? "Today" : "ഇന്ന്"}>
           <Line>{dayName(day.wdInfo, isEn)} · {hijriText(day, isEn)} <span className="font-amiri" style={{ color: GOLD }}>{day.hijriMonth_ar}</span></Line>
           <DaySummary day={day} isEn={isEn} />
+          <Others isEn={isEn} items={[
+            ...(day.hijri ? tahaNahsFor(day.hijri.month, day.hijri.day).map((r) => ({ src: "taha", color: "#F87171", ml: `${r.ml} പ്രകാരം ഇന്ന് നഹ്സ്`, en: `Nahs today per the ${r.en.toLowerCase()}` })) : []),
+            WEEKDAY_OTHER[day.weekday],
+          ]} />
         </Box>
 
         <Box title={isEn ? "This sa'a" : "ഈ സാഅത്ത്"}>
           <Line>{isEn ? NATURE_LABEL[p.nature].en : NATURE_LABEL[p.nature].ml} <span className="font-amiri" style={{ color: GOLD }}>{NATURE_LABEL[p.nature].ar}</span></Line>
           {isIjaba && <Line color="#4ADE80">🤲 {isEn ? "Sa'at al-ijaba — du'a is answered" : "ഇജാബത്തിന്റെ സാഅത്ത് — ദുആ സ്വീകരിക്കപ്പെടും"}</Line>}
           {isGhalaba && <Line color="#60A5FA">🏆 {isEn ? "Sa'at al-mughalaba — hour of victory" : "മുഗാലബയുടെ സാഅത്ത് — ജയത്തിന്റെ സമയം"}</Line>}
+          <Others isEn={isEn} items={PLANET_OTHER[h.planet]} />
         </Box>
 
         {moon?.mansion && (
@@ -174,6 +200,7 @@ function Sheet({ h, data, onClose, isEn }) {
             </Line>
             <Line>{isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}</Line>
             {(isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml) && <Line color="rgba(255,255,255,0.5)">{isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml}</Line>}
+            <Others isEn={isEn} items={[mansionOther(moon.mansionNo, isEn), TAHA_NAHS_BURUJ.includes(moon.sign) ? { ...BURJ_OTHER_NOTE, color: "#F87171" } : null]} />
           </Box>
         )}
 
@@ -224,6 +251,7 @@ export default function SaatGrid() {
   const [tick, setTick] = useState(0);
   const [locTick, setLocTick] = useState(0);
   const [openKey, setOpenKey] = useState(null);
+  useBackLayer(openKey !== null, () => setOpenKey(null)); // Back closes the card sheet
 
   useEffect(() => { const id = setInterval(() => setTick((t) => t + 1), 30000); return () => clearInterval(id); }, []);
   useEffect(() => subscribeLocation(() => setLocTick((t) => t + 1)), []);
