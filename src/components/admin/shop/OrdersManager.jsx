@@ -4,6 +4,7 @@ import { Plus, X, Trash2, ShoppingCart, Save, ChevronDown } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -155,6 +156,7 @@ export default function OrdersManager() {
           style={{ background: "rgba(0,0,0,0.75)" }}
           onClick={() => setShowForm(false)}
         >
+          <BackLayer onBack={() => setShowForm(false)} />
           <motion.div
             initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
             onClick={e => e.stopPropagation()}

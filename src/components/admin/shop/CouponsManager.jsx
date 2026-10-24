@@ -4,6 +4,7 @@ import { Plus, X, Edit3, Trash2, Ticket, Save, Percent, DollarSign, Truck } from
 import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
   text: "#F5D060", dim: "rgba(212,175,55,0.55)", faint: "rgba(212,175,55,0.22)",
@@ -129,6 +130,7 @@ export default function CouponsManager() {
 
       {showForm && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-50 flex items-end lg:items-center justify-center" style={{ background: "rgba(0,0,0,0.75)" }} onClick={() => setShowForm(false)}>
+          <BackLayer onBack={() => setShowForm(false)} />
           <motion.div initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} onClick={e => e.stopPropagation()}
             className="w-full lg:w-[420px] rounded-t-2xl lg:rounded-2xl p-5 space-y-3 max-h-[90vh] overflow-y-auto" style={{ background: "linear-gradient(180deg, rgba(5,10,28,0.99) 0%, rgba(2,5,16,1) 100%)", border: `1px solid ${G.border}` }}>
             <div className="flex items-center justify-between sticky top-0" style={{ background: "rgba(5,10,28,0.95)" }}>

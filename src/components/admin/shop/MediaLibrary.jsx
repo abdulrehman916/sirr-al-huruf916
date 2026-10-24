@@ -4,6 +4,7 @@ import { Image as ImageIcon, FileText, Video, Search, Copy, Check, Package, X } 
 import { platform } from "@/api/platformClient";
 import { useToast } from "@/components/ui/use-toast";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
   text: "#F5D060", dim: "rgba(212,175,55,0.55)", faint: "rgba(212,175,55,0.22)",
@@ -205,6 +206,7 @@ export default function MediaLibrary() {
           style={{ background: "rgba(0,0,0,0.85)" }}
           onClick={() => setPreviewItem(null)}
         >
+          <BackLayer onBack={() => setPreviewItem(null)} />
           <motion.div
             initial={{ scale: 0.9 }} animate={{ scale: 1 }}
             onClick={e => e.stopPropagation()}
