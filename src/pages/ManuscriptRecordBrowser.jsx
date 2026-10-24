@@ -10,6 +10,7 @@ import PageLayout from "../components/PageLayout";
 import { platform } from "@/api/platformClient";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay, ArabicTextWithTranslation } from "../components/astroclock/ArabicLetterDisplay";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -42,6 +43,7 @@ export default function ManuscriptRecordBrowser() {
     manuscript: ""
   });
   const [expandedRecord, setExpandedRecord] = useState(null);
+  useBackLayer(expandedRecord != null, () => setExpandedRecord(null)); // Back closes this first
   const [stats, setStats] = useState(null);
 
   useEffect(() => {

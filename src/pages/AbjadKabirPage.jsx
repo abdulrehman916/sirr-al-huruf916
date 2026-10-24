@@ -9,6 +9,7 @@ import FeatureLockedCard from "../components/FeatureLockedCard";
 import { checkFeatureAccess } from "../lib/featurePermission";
 import { getFeatures } from "../lib/featureRegistry";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const PAGE_PATH = "/abjad";
 const FEATURES = getFeatures(PAGE_PATH);
 
@@ -508,6 +509,7 @@ export default function AbjadKabirPage() {
               style={{ background: "rgba(0,0,0,0.88)" }}
               onClick={closeModal}
             >
+              <BackLayer onBack={closeModal} />
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}

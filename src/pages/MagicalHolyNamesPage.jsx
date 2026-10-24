@@ -27,6 +27,7 @@ import { useAuth } from "@/lib/AuthContext";
 import { getHolyNameCardMetrics } from "@/lib/holyNameCardMetrics";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference, useHolyNamesLanguage } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const PAGE_PATH = "/holy-names";
 const FEATURES = getFeatures(PAGE_PATH);
 
@@ -40,6 +41,7 @@ function SectionA({ importRefreshKey }) {
   const [category, setCategory] = useState(initial.category || "all");
   const [sortIdx, setSortIdx] = useState(initial.sortIdx || 0);
   const [openId, setOpenId] = useState(initial.openId || null);
+  useBackLayer(openId != null, () => setOpenId(null)); // Back closes this first
 
   // Canonical verified spelling map (by static id) so each card title shows
   // the best verified scholarly form instead of the imported one when the

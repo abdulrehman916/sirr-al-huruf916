@@ -11,6 +11,7 @@ import PageLayout from "../components/PageLayout";
 import { platform } from "@/api/platformClient";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay, ArabicTextWithTranslation } from "../components/astroclock/ArabicLetterDisplay";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.35)",
   borderHi: "rgba(212,175,55,0.60)",
@@ -56,6 +57,7 @@ export default function ManuscriptLibraryPage() {
   const [uploading, setUploading] = useState(false);
   const [uploadResult, setUploadResult] = useState(null);
   const [expandedBook, setExpandedBook] = useState(null);
+  useBackLayer(expandedBook != null, () => setExpandedBook(null)); // Back closes this first
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("ALL");
   const [queryResults, setQueryResults] = useState(null);
@@ -491,6 +493,7 @@ function ArabicDataDisplay({ rule }) {
 // ─────────────────────────────────────────────────────────────────────────────
 function QueryResults({ results }) {
   const [expandedCat, setExpandedCat] = useState(null);
+  useBackLayer(expandedCat != null, () => setExpandedCat(null)); // Back closes this first
 
   return (
     <div className="mt-6">

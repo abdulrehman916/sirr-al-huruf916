@@ -7,6 +7,7 @@ import AdminLayout from "@/components/admin/AdminLayout";
 import RequestDetail from "@/components/admin/RequestDetail";
 import { REQUEST_STATUSES } from "@/lib/accessRequestStatus";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.30)",
   text: "#F5D060",
@@ -343,6 +344,7 @@ export default function AdminAccessRequests() {
       {rejectingReq && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.85)" }}
           onClick={cancelReject}>
+          <BackLayer onBack={cancelReject} />
           <div className="w-full max-w-sm rounded-2xl p-6 space-y-4"
             style={{ background: "linear-gradient(145deg,#0c1630,#060c1c)", border: "1px solid rgba(239,68,68,0.50)" }}
             onClick={e => e.stopPropagation()}>

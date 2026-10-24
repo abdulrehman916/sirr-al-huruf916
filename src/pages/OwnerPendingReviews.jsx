@@ -22,6 +22,7 @@ import { useAuth } from "@/lib/AuthContext";
 import { platform } from "@/api/platformClient";
 import MplReviewDrawer from "@/components/masterpdflibrary/MplReviewDrawer";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)", borderHi: "rgba(212,175,55,0.65)",
   text: "#F5D060", dim: "rgba(212,175,55,0.55)",
@@ -45,6 +46,7 @@ export default function OwnerPendingReviews() {
   const [onlyLowConf, setOnlyLowConf] = useState(false);
   const [onlyDup, setOnlyDup] = useState(false);
   const [selected, setSelected] = useState(null); // MasterPdfPage record
+  useBackLayer(selected != null, () => setSelected(null)); // Back closes this first
   const [refreshKey, setRefreshKey] = useState(0);
 
   const load = useCallback(async () => {

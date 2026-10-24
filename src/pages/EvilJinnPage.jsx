@@ -7,6 +7,7 @@ import PullToRefresh from "../components/PullToRefresh";
 import { usePageState } from "../context/PageStateContext";
 import { EVIL_JINN_NAMES } from "../lib/evilJinnData";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // Scoped Arabic font for Evil Jinn page only
 const ARABIC_FONT_STYLE = `
   @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
@@ -285,6 +286,7 @@ export default function EvilJinnPage() {
   const [category, setCategory] = useState(initialState.category);
   const [sortIdx, setSortIdx] = useState(initialState.sortIdx);
   const [openId, setOpenId] = useState(null);
+  useBackLayer(openId != null, () => setOpenId(null)); // Back closes this first
   const sort = SORT_CYCLE[sortIdx];
 
   useEffect(() => {

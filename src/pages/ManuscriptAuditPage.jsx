@@ -17,6 +17,7 @@ import { getPlanetHourRules } from "@/lib/astroClockPlanetaryHourRules.js";
 import { AY_MANAZILLERI } from "@/lib/astroClockData.js";
 import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset.js";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -39,6 +40,7 @@ export default function ManuscriptAuditPage() {
   const [auditData, setAuditData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [expandedSection, setExpandedSection] = useState(null);
+  useBackLayer(expandedSection != null, () => setExpandedSection(null)); // Back closes this first
 
   useEffect(() => {
     generateAudit();

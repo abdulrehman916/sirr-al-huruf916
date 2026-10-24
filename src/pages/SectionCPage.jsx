@@ -12,6 +12,7 @@ import SectionCVisualIntegrator from "@/components/sectionc/SectionCVisualIntegr
 
 import { CardNotes } from "@/components/owner/OwnerContent";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const P = {
   border: "rgba(212,175,55,0.30)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -29,6 +30,7 @@ export default function SectionCPage() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [expandedId, setExpandedId] = useState(null);
+  useBackLayer(expandedId != null, () => setExpandedId(null)); // Back closes this first
 
   const load = useCallback(async () => {
     setLoading(true);

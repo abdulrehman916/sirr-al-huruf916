@@ -21,6 +21,7 @@ import ShopBadges from "../components/shop/ShopBadges";
 import ShopHomeSections from "../components/shop/ShopHomeSections";
 import HeroBanner from "../components/shop/HeroBanner";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.30)",
   borderHi: "rgba(212,175,55,0.55)",
@@ -51,7 +52,9 @@ export default function ShopPage() {
   const [activeBrand, setActiveBrand] = useState("all");
   const [sort, setSort] = useState("featured");
   const [sortOpen, setSortOpen] = useState(false);
+  useBackLayer(sortOpen, () => setSortOpen(false));
   const [showFilters, setShowFilters] = useState(false);
+  useBackLayer(showFilters, () => setShowFilters(false));
   const [priceMin, setPriceMin] = useState("");
   const [priceMax, setPriceMax] = useState("");
   const [showWishlistOnly, setShowWishlistOnly] = useState(false);

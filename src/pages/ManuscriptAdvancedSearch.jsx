@@ -5,6 +5,7 @@ import { Search, Book, Moon, Sun, Star, Sparkles, Shield, Gem, Scroll } from "lu
 import PageLayout from "@/components/PageLayout";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   text: "#F5D060",
@@ -37,6 +38,7 @@ export default function ManuscriptAdvancedSearch() {
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
   const [expandedResult, setExpandedResult] = useState(null);
+  useBackLayer(expandedResult != null, () => setExpandedResult(null)); // Back closes this first
 
   useEffect(() => {
     const timer = setTimeout(() => {

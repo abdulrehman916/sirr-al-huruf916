@@ -11,6 +11,7 @@ import { STATUS_FILTERS, getStatusConfig } from "@/lib/accessRequestStatus";
 import { Inbox, RefreshCw, ChevronLeft, Send, Loader2, AlertCircle, KeyRound, Paperclip, X, RotateCcw, Search } from "lucide-react";
 import RequestConversation from "@/components/RequestConversation";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.30)",
   text: "#F5D060",
@@ -27,6 +28,7 @@ export default function MyRequests() {
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
   const [expandedId, setExpandedId] = useState(null);
+  useBackLayer(expandedId != null, () => setExpandedId(null)); // Back closes this first
   const [replyText, setReplyText] = useState("");
   const [replying, setReplying] = useState(false);
   const [error, setError] = useState(null);

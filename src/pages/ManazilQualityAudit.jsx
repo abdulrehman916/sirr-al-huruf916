@@ -5,6 +5,7 @@ import { CheckCircle, AlertCircle, Book } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   text: "#F5D060",
@@ -22,6 +23,7 @@ export default function ManazilQualityAudit() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedMansion, setExpandedMansion] = useState(null);
+  useBackLayer(expandedMansion != null, () => setExpandedMansion(null)); // Back closes this first
 
   useEffect(() => {
     runAudit();

@@ -14,6 +14,7 @@ import { getCurrentPlanetaryHour, DAY_INFO } from "@/lib/astroClockLiveEngine.js
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition.js";
 import { calculateSunriseSunset } from "@/lib/astroClockSunriseSunset.js";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -54,6 +55,7 @@ export default function ManuscriptActionFinder() {
   const { isMalayalam } = useAstroClockLanguage();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
+  useBackLayer(selectedCategory != null, () => setSelectedCategory(null)); // Back closes this first
   const [searchResults, setSearchResults] = useState(null);
   const [loading, setLoading] = useState(false);
   const [currentAstro, setCurrentAstro] = useState(null);
@@ -374,6 +376,7 @@ function getManuscriptActionRules() {
 
 function SearchResults({ results, currentAstro, isMalayalam }) {
   const [expandedRule, setExpandedRule] = useState(null);
+  useBackLayer(expandedRule != null, () => setExpandedRule(null)); // Back closes this first
 
   if (!results.found) {
     return (
