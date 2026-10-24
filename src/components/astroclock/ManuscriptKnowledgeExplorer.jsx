@@ -11,6 +11,7 @@ import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext.jsx";
 import { ArabicLetterDisplay, LunarMansionDisplay, ZodiacSignDisplay } from "./ArabicLetterDisplay";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -88,6 +89,7 @@ export default function ManuscriptKnowledgeExplorer({ entityType, entityData, on
       style={{ background: "rgba(0,0,0,0.85)" }}
       onClick={onClose}
     >
+      <BackLayer onBack={onClose} />
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
