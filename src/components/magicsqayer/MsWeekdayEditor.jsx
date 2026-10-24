@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { ARABIC_WEEKDAYS, WEEKDAY_ULVI, WEEKDAY_SUFLI } from "./MsQasam";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   borderHi: "rgba(212,175,55,0.65)",
   text: "#F5D060",
@@ -36,6 +37,7 @@ export default function MsWeekdayEditor({ open, onClose, overrides, onSave, sele
         style={{ background: "rgba(0,0,0,0.85)" }}
         onClick={onClose}
       >
+        <BackLayer onBack={onClose} />
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

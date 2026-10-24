@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ARABIC_ABJAD, HEBREW_GEMATRIA, numToArabic, numToHebrew } from "./msEngine";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   borderHi: "rgba(212,175,55,0.65)",
   glow:     "rgba(212,175,55,0.22)",
@@ -11,6 +12,7 @@ const G = {
 
 export default function MsLetterTables({ mc, L }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   const [inputVal, setInputVal] = useState("");
 
   const resultAr = inputVal ? numToArabic(parseInt(inputVal) || 0) : (mc ? numToArabic(mc) : "");
