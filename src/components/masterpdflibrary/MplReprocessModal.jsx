@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { openOwnerPdf, pdfFileHash } from '@/lib/ownerPdfExtraction';
 
+import { BackLayer } from "@/lib/useBackLayer";
 export default function MplReprocessModal({ page, part, busy, onClose, onApply }) {
   const [language, setLanguage] = useState(page.malayalam_text ? 'mal' : page.arabic_text ? 'ara' : 'eng');
   const [number, setNumber] = useState(Number(page.source_part_number || 1) > 1 ? '' : String(page.page_number || 1));
@@ -36,7 +37,7 @@ export default function MplReprocessModal({ page, part, busy, onClose, onApply }
     }
   }
 
-  return <div className="fixed inset-0 z-[1100] flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true" aria-labelledby="reprocess-title">
+  return <div className="fixed inset-0 z-[1100] flex items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true" aria-labelledby="reprocess-title"><BackLayer onBack={onClose} />
     <div className="max-h-[90vh] w-full max-w-xl overflow-y-auto rounded-xl border border-amber-200/30 bg-slate-950 p-5 text-white">
       <h2 id="reprocess-title" className="font-bold mb-3">Reprocess page with on-device OCR</h2>
       <p className="text-xs text-white/70 mb-3">Compare the result with the original before saving. Original OCR is preserved; saving appends an owner correction. This does not translate the page.</p>
