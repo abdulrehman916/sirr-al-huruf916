@@ -5,8 +5,20 @@ import { cva } from "class-variance-authority";
 import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { useBackLayer } from "@/lib/useBackLayer"
 
-const Sheet = SheetPrimitive.Root
+// Back button closes this layer first (see src/lib/useBackLayer.js)
+function Sheet({ open, defaultOpen, onOpenChange, ...props }) {
+  const [innerOpen, setInnerOpen] = React.useState(defaultOpen ?? false)
+  const controlled = open !== undefined
+  const isOpen = controlled ? open : innerOpen
+  const handleOpenChange = (v) => {
+    if (!controlled) setInnerOpen(v)
+    onOpenChange?.(v)
+  }
+  useBackLayer(isOpen, () => handleOpenChange(false))
+  return <SheetPrimitive.Root open={isOpen} onOpenChange={handleOpenChange} {...props} />
+}
 
 const SheetTrigger = SheetPrimitive.Trigger
 

@@ -2,9 +2,21 @@ import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 
 import { cn } from "@/lib/utils"
+import { useBackLayer } from "@/lib/useBackLayer"
 import { buttonVariants } from "@/components/ui/button"
 
-const AlertDialog = AlertDialogPrimitive.Root
+// Back button closes this layer first (see src/lib/useBackLayer.js)
+function AlertDialog({ open, defaultOpen, onOpenChange, ...props }) {
+  const [innerOpen, setInnerOpen] = React.useState(defaultOpen ?? false)
+  const controlled = open !== undefined
+  const isOpen = controlled ? open : innerOpen
+  const handleOpenChange = (v) => {
+    if (!controlled) setInnerOpen(v)
+    onOpenChange?.(v)
+  }
+  useBackLayer(isOpen, () => handleOpenChange(false))
+  return <AlertDialogPrimitive.Root open={isOpen} onOpenChange={handleOpenChange} {...props} />
+}
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
 

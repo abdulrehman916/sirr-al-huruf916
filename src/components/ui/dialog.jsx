@@ -5,8 +5,20 @@ import * as DialogPrimitive from "@radix-ui/react-dialog"
 import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { useBackLayer } from "@/lib/useBackLayer"
 
-const Dialog = DialogPrimitive.Root
+// Back button closes this layer first (see src/lib/useBackLayer.js)
+function Dialog({ open, defaultOpen, onOpenChange, ...props }) {
+  const [innerOpen, setInnerOpen] = React.useState(defaultOpen ?? false)
+  const controlled = open !== undefined
+  const isOpen = controlled ? open : innerOpen
+  const handleOpenChange = (v) => {
+    if (!controlled) setInnerOpen(v)
+    onOpenChange?.(v)
+  }
+  useBackLayer(isOpen, () => handleOpenChange(false))
+  return <DialogPrimitive.Root open={isOpen} onOpenChange={handleOpenChange} {...props} />
+}
 
 const DialogTrigger = DialogPrimitive.Trigger
 

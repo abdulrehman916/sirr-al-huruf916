@@ -4,13 +4,26 @@ import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
 
 import { cn } from "@/lib/utils"
+import { useBackLayer } from "@/lib/useBackLayer"
 
+// Back button closes this layer first (see src/lib/useBackLayer.js)
 const Drawer = ({
   shouldScaleBackground = true,
+  open,
+  defaultOpen,
+  onOpenChange,
   ...props
-}) => (
-  <DrawerPrimitive.Root shouldScaleBackground={shouldScaleBackground} {...props} />
-)
+}) => {
+  const [innerOpen, setInnerOpen] = React.useState(defaultOpen ?? false)
+  const controlled = open !== undefined
+  const isOpen = controlled ? open : innerOpen
+  const handleOpenChange = (v) => {
+    if (!controlled) setInnerOpen(v)
+    onOpenChange?.(v)
+  }
+  useBackLayer(isOpen, () => handleOpenChange(false))
+  return <DrawerPrimitive.Root shouldScaleBackground={shouldScaleBackground} open={isOpen} onOpenChange={handleOpenChange} {...props} />
+}
 Drawer.displayName = "Drawer"
 
 const DrawerTrigger = DrawerPrimitive.Trigger
