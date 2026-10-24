@@ -10,7 +10,7 @@
 // Back pops that entry and we call close(). Closing by the UI (✕, backdrop)
 // removes our entry again, so history never fills up with stale steps.
 // ═══════════════════════════════════════════════════════════════
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const stack = [];
 let ignorePops = 0;
@@ -30,7 +30,8 @@ function ensureListener() {
 }
 
 export function useBackLayer(isOpen, close) {
-  const closeRef = useRef(close);
+  // Stable box for the latest close() (useState so it works with the test harness too)
+  const [closeRef] = useState({ current: close });
   closeRef.current = close;
 
   useEffect(() => {
