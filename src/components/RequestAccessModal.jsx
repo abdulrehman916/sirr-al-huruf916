@@ -4,6 +4,7 @@ import { X, Send, User, Phone, Mail, MessageSquare, CheckCircle } from "lucide-r
 import { platform } from "@/api/platformClient";
 import { getSessionId, getRedeemedCodes } from "@/lib/sessionId";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -57,6 +58,7 @@ export default function RequestAccessModal({ pagePath, pageName, onClose }) {
       style={{ background: "rgba(0,0,0,0.80)" }}
       onClick={onClose}
     >
+      <BackLayer onBack={onClose} />
       <motion.div
         initial={{ opacity: 0, scale: 0.94, y: 16 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}

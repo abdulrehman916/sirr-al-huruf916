@@ -4,6 +4,7 @@ import { X, KeyRound, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { addRedeemedCode, getSessionId, mergeGrantedPermissions } from "@/lib/sessionId";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -71,6 +72,7 @@ export default function RedeemCodeModal({ onClose }) {
       style={{ background: "rgba(0,0,0,0.88)" }}
       onClick={onClose}
     >
+      <BackLayer onBack={onClose} />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

@@ -6,6 +6,7 @@ import { useAuth } from "@/lib/AuthContext";
 import { LogOut } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 
+import { BackLayer } from "@/lib/useBackLayer";
 export default function AccountModal({ user, onClose }) {
   const navigate = useNavigate();
   const { role, logout } = useAuth();
@@ -41,6 +42,7 @@ export default function AccountModal({ user, onClose }) {
         style={{ background: "rgba(0,0,0,0.70)" }}
         onClick={onClose}
       >
+        <BackLayer onBack={onClose} />
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

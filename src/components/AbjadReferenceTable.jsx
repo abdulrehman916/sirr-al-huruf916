@@ -3,6 +3,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { ABJAD_MAP } from "../lib/abjadValues";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const orderedLetters = [
   'ا','ب','ج','د','ه','و','ز','ح','ط',
   'ي','ك','ل','م','ن','س','ع',
@@ -12,6 +13,7 @@ const orderedLetters = [
 
 export default function AbjadReferenceTable() {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
 
   return (
     <div className="w-full">
