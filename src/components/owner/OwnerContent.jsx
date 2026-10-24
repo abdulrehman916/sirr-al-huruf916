@@ -4,6 +4,7 @@ import { supabase } from '@/api/platformClient';
 import { useIsOwner } from '@/hooks/useIsOwner';
 import { cardContentRequest, mergeCardNotes } from '@/lib/cardContentRequests';
 
+import { BackLayer } from "@/lib/useBackLayer";
 const empty = { title: '', arabic: '', malayalam: '', english: '', images: [] };
 const fieldStyle = 'w-full rounded-lg border border-yellow-500/25 bg-slate-950 p-3 text-white';
 const PAGE_SIZE = 20;
@@ -128,7 +129,7 @@ function ContentEditor({ label, row, originalText, onClose, onSave }) {
     catch (failure) { setError(failure.message || 'Could not save. Your draft is still here.'); }
     finally { busyRef.current = false; setBusy(false); }
   };
-  return <div className="fixed inset-0 z-[2000] overflow-y-auto bg-black/80 p-3 sm:p-8" role="dialog" aria-modal="true" aria-label={`Edit ${label}`}>
+  return <div className="fixed inset-0 z-[2000] overflow-y-auto bg-black/80 p-3 sm:p-8" role="dialog" aria-modal="true" aria-label={`Edit ${label}`}><BackLayer onBack={onClose} />
     <form onSubmit={save} className="mx-auto max-w-3xl rounded-2xl border border-yellow-500/30 bg-[#081026] p-4 sm:p-6 text-white space-y-4">
       <h2 className="text-lg text-yellow-200">Edit {label}</h2>
       <p className="text-sm text-white/65">Save to this section. Arabic, Malayalam and English are supported. Calculation rules and values stay unchanged.</p>
