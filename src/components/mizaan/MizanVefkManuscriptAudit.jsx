@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { buildVefk } from "../../lib/mizaanPostEngine";
 import { ChevronDown, ChevronRight, CheckCircle2, XCircle } from "lucide-react";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   gold: "#F5D060",
   goldDim: "rgba(245,208,96,0.55)",
@@ -116,6 +117,7 @@ function CellComparison({ generated, manuscript, idx }) {
 
 export default function MizanVefkManuscriptAudit() {
   const [expandedExample, setExpandedExample] = useState(null);
+  useBackLayer(expandedExample != null, () => setExpandedExample(null)); // Back closes this first
 
   return (
     <motion.div

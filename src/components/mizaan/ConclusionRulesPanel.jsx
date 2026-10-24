@@ -7,6 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   gold:         "#F5D060",
   goldDim:      "rgba(245,208,96,0.55)",
@@ -78,6 +79,7 @@ function OrnamentalDivider() {
 
 export default function ConclusionRulesPanel() {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
 
   return (
     <motion.div

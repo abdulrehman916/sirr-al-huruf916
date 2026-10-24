@@ -15,6 +15,7 @@ import { localizeAnalysis, tStr, useRitualLang, RITUAL_LANGS } from "../../lib/r
 import { useAstroClockKnowledgeAll } from "../../hooks/useAstroClockKnowledgeAll";
 import { usePurposeActionKeywords } from "../../hooks/usePurposeActionKeywords";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -83,6 +84,7 @@ const ML_PLACEMENT = {
 
 export default function RitualTimingAnalysis({ result, selections, customPurpose, activeMethod, purposeLookup }) {
   const [expanded, setExpanded] = useState(false);
+  useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
   const [lang, setLang] = useRitualLang();
   const { astroClockKnowledge } = useAstroClockKnowledgeAll();
   const { purposeKeywords } = usePurposeActionKeywords();

@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp, RotateCcw, ChevronRight } from "lucide-react";
 import { getBastLevel as getBastLevelDefault } from "../../lib/mizaanPostEngine";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   gold:         "#F5D060",
   goldDim:      "rgba(245,208,96,0.55)",
@@ -168,6 +169,7 @@ function SourceSection({ letters, sourceTotal, elementColor }) {
 // ── Collapsible Section Panel ──
 function SectionPanel({ label, arabic, subtitle, vefk, sourceNumber, sourceLabel, names, elementColor, sourceLetters, bastLevel }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   const hasVefk = vefk && vefk.grid;
   const color = elementColor || G.gold;
 

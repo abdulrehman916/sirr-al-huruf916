@@ -26,6 +26,7 @@ import {
 } from "../../lib/ritualSemanticPhrase";
 import { useRitualLang, RITUAL_LANGS } from "../../lib/ritualTimingI18n";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   border: "rgba(212,175,55,0.40)",
   borderHi: "rgba(212,175,55,0.65)",
@@ -463,6 +464,7 @@ function Row({ label, children }) {
 // ═══════════════════════════════════════════════════════════════
 function DebugPanel({ originalInput, action, rawMiddle, normalizedPurpose, purposeLookup }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   const dbg = purposeLookup?._debug || {};
   const matched = purposeLookup?.matched || false;
   const source = dbg.source || purposeLookup?.source || (purposeLookup?.auto_learned ? "Auto-Learned" : "—");

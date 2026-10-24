@@ -19,6 +19,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Moon, ChevronDown, Check, X, Minus, CalendarClock, AlertTriangle, Sparkles, BookOpen } from "lucide-react";
+import { useBackLayer } from "@/lib/useBackLayer";
 import {
   analyzeMoonCompatibility,
   planRitualByMoon,
@@ -355,7 +356,9 @@ const L = (lang) => ({
 
 export default function MoonAnalysisCard({ moonPhase, moonReq, moonCitations, req, lang = "ml", planningDate = null }) {
   const [expanded, setExpanded] = useState(false);
+  useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
   const [selectedOption, setSelectedOption] = useState(null); // null | "status" | "plan"
+  useBackLayer(selectedOption != null, () => setSelectedOption(null)); // Back closes this first
   const [desiredMansion, setDesiredMansion] = useState("");
   const [desiredZodiac, setDesiredZodiac] = useState("");
   const [desiredPhase, setDesiredPhase] = useState("");
@@ -1020,6 +1023,7 @@ function FinalTimelineCard({ data: m, t, lang, moonCitations, hasMoonPrefs, moon
 // ═══════════════════════════════════════════════════════════════
 function TimelineExplanation({ rejectionTimeline, finalTime, t, lang, hasMoonPrefs }) {
   const [expanded, setExpanded] = useState(false);
+  useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
 
   return (
     <div className="rounded-xl overflow-hidden" style={{

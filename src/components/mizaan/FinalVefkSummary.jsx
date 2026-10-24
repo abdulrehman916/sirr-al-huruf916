@@ -9,6 +9,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp, RotateCcw, ChevronRight } from "lucide-react";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   gold:         "#F5D060",
   goldDim:      "rgba(245,208,96,0.55)",
@@ -138,6 +139,7 @@ function VefkWritingAssistant({ grid, color }) {
 // ── Collapsible Section Panel ────────────────────────────────────
 function SectionPanel({ label, arabic, subtitle, vefk, sourceNumber, borderLetters, names, elementColor }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
 
   const hasVefk = vefk && vefk.grid;
   const color = elementColor || G.gold;

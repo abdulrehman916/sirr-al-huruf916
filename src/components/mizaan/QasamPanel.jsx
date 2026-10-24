@@ -16,6 +16,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Scroll, ChevronDown, ShieldCheck, AlertTriangle, CheckCircle2, ListChecks, BookOpen } from "lucide-react";
+import { useBackLayer } from "@/lib/useBackLayer";
 import {
   resolveQasam,
   GENERAL_CONDITIONS,
@@ -42,6 +43,7 @@ const PLANET_ARABIC = {
 
 export default function QasamPanel({ selections }) {
   const [expanded, setExpanded] = useState(false);
+  useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
   const [showDua, setShowDua] = useState(false);
   const [showConditions, setShowConditions] = useState(false);
 

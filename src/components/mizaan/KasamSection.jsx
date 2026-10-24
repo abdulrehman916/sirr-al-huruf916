@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Check, User, Eye } from "lucide-react";
 import { COMMON_KASAM, KASAM_CATEGORIES } from "../../lib/kasamData";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // ── SECTION 4: KASAM — PDF-accurate assembly ──────────────────────────────────
 // ISOLATED from Sections 1, 2, 3. No engine calls.
 //
@@ -320,6 +321,7 @@ function FinalKasamOutput({ cat, names, avanNames, kasemNames }) {
 // ── Main export ───────────────────────────────────────────────────────────────
 export default function KasamSection({ avanNames = [], kasemNames = [] }) {
   const [selectedCat, setSelectedCat] = useState(null);
+  useBackLayer(selectedCat != null, () => setSelectedCat(null)); // Back closes this first
   const [names, setNames] = useState({
     requesterName: "", requesterMother: "", targetMale: "", targetFemale: "",
   });
