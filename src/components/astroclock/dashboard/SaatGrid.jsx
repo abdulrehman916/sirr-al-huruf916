@@ -11,7 +11,7 @@ import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { subscribeLocation } from "@/lib/astroClockGeolocation";
 import { getPlanetaryDay, formatClock } from "@/lib/kashfSaatEngine";
-import { PLANETS, NATURE_LABEL, SIGNS_ML, WEIGHTS, BOOK } from "@/lib/kashfSaatData";
+import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN } from "@/lib/kashfSaatData";
 
 const GOLD = "#F5D060";
 const VERDICT = {
@@ -21,11 +21,26 @@ const VERDICT = {
 };
 const scoreColor = (s) => (s >= 65 ? "#4ADE80" : s >= 40 ? "#FBBF24" : "#F87171");
 
-function remaining(ms) {
-  if (ms <= 0) return "0m";
-  const m = Math.floor(ms / 60000);
-  return m >= 60 ? `${Math.floor(m / 60)}h ${m % 60}m` : `${m}m`;
+function remaining(ms, isEn) {
+  const m = Math.max(0, Math.floor(ms / 60000));
+  const h = Math.floor(m / 60), mm = m % 60;
+  if (isEn) return h ? `${h}h ${mm}m` : `${mm}m`;
+  return h ? `${h} മണി. ${mm} മിനി.` : `${mm} മിനിറ്റ്`;
 }
+
+// Arabic name first (in the reader's script), Arabic letters, then the local meaning.
+function ArName({ tr, ar, meaning, strong = true }) {
+  return (
+    <>
+      {strong ? <b style={{ color: "#fff" }}>{tr}</b> : <span>{tr}</span>}{" "}
+      <span className="font-amiri" style={{ color: GOLD }}>{ar}</span>
+      {meaning && <span style={{ color: "rgba(255,255,255,0.5)" }}> ({meaning})</span>}
+    </>
+  );
+}
+const planetName = (p, isEn) => <ArName tr={isEn ? p.tr_en : p.tr_ml} ar={p.ar} meaning={isEn ? p.en : p.ml} />;
+const dayName = (w, isEn) => <ArName tr={isEn ? `Yawm al-${w.tr_en}` : `യൗമുൽ ${w.tr_ml}`} ar={w.ar} meaning={isEn ? w.en : w.ml} />;
+const hijriText = (day, isEn) => (isEn ? day.hijriLabel_en : day.hijriLabel_ml);
 
 function Ring({ value, size = 38 }) {
   const r = (size - 6) / 2, c = 2 * Math.PI * r, col = scoreColor(value);
@@ -55,7 +70,7 @@ function HourChip({ h, tz, onOpen, isEn }) {
       <span className="font-inter text-[10px] font-bold w-5 text-center" style={{ color: "rgba(255,255,255,0.45)" }}>{h.num}</span>
       <span className="text-lg leading-none" style={{ color: GOLD }}>{p.symbol}</span>
       <span className="flex-1 min-w-0">
-        <span className="block font-bold text-xs truncate" style={{ color: "#fff" }}>{isEn ? p.en : p.ml} <span className="font-amiri" style={{ color: "rgba(245,208,96,0.6)" }}>{p.ar}</span></span>
+        <span className="block text-xs truncate" style={{ color: "#fff" }}>{planetName(p, isEn)}</span>
         <span className="block font-inter text-[9px] tabular-nums" style={{ color: "rgba(255,255,255,0.45)" }}>{formatClock(h.start, tz)} – {formatClock(h.end, tz)}</span>
       </span>
       {current && <span className="font-inter text-[8px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ background: "rgba(74,222,128,0.15)", color: "#4ADE80" }}>{isEn ? "Now" : "ഇപ്പോൾ"}</span>}
@@ -77,9 +92,9 @@ const Line = ({ children, color = "rgba(255,255,255,0.75)" }) => <p className="t
 function DayFlags({ day, isEn }) {
   const flags = [];
   if (day.isKamil) flags.push(isEn ? `Kawamil nahs day (${day.lunarDay})` : `കവാമിൽ നഹ്സ് ദിവസം (${day.lunarDay})`);
-  if (day.isKhalili) flags.push(isEn ? "Monthly nahs day (al-Khalili)" : "ഖലീലിയുടെ മാസ-നഹ്സ് ദിവസം");
-  if (day.isLastWed) flags.push(isEn ? "Last Wednesday of the month" : "മാസത്തിലെ അവസാന ബുധൻ");
-  if (!flags.length && day.monthDay?.nature === "bad") flags.push(isEn ? "Nahs lunar day" : "നഹ്സ് ചാന്ദ്രദിവസം");
+  if (day.isKhalili) flags.push(isEn ? "Al-Khalili's monthly nahs day" : "ഖലീലിയുടെ മാസ-നഹ്സ് ദിവസം");
+  if (day.isLastWed) flags.push(isEn ? "Last Arbi'a (Wednesday) of the month" : "മാസത്തിലെ അവസാന അർബിആഅ് (ബുധൻ)");
+  if (!flags.length && day.monthDay?.nature === "bad") flags.push(isEn ? "Nahs lunar day" : "നഹ്സ് ആയ ചാന്ദ്രദിവസം");
   if (!flags.length) return <Line color="#4ADE80">✓ {isEn ? "No nahs on this day" : "ഇന്ന് നഹ്സ് ഇല്ല"}</Line>;
   return flags.map((f) => <Line key={f} color="#F87171">⛔ {f}</Line>);
 }
@@ -89,10 +104,10 @@ function DaySummary({ day, isEn }) {
   return (
     <>
       <DayFlags day={day} isEn={isEn} />
-      <Line>{isEn ? "Lunar day" : "ചാന്ദ്രദിവസം"} {day.lunarDay ?? "—"}{day.monthDay?.note_ml && !isEn ? ` — ${day.monthDay.note_ml}` : ""}</Line>
-      {w.note_ml && !isEn && <Line>• {w.note_ml}</Line>}
-      <Line>• {isEn ? "Avoid travelling" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{w.avoidDir_ml}</b></Line>
-      {!isEn && <Line>• {w.clothesNote_ml}</Line>}
+      <Line>{isEn ? "Lunar day" : "ചാന്ദ്രദിവസം"} {day.lunarDay ?? "—"}{(() => { const n = isEn ? MONTH_DAY_NOTE_EN[day.lunarDay] : day.monthDay?.note_ml; return n ? ` — ${n}` : ""; })()}</Line>
+      {(isEn ? w.note_en : w.note_ml) && <Line>• {isEn ? w.note_en : w.note_ml}</Line>}
+      <Line>• {isEn ? "Direction to avoid travelling" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b></Line>
+      <Line>• {isEn ? w.clothesNote_en : w.clothesNote_ml}</Line>
     </>
   );
 }
@@ -104,8 +119,8 @@ function Sheet({ h, data, onClose, isEn }) {
   const dos = h.activities.filter((a) => a.verdict === "do");
   const avoids = h.activities.filter((a) => a.verdict === "avoid");
   const moon = h.moon;
-  const isIjaba = h.period === "day" && h.activities.some((a) => a.why.some((w) => w.includes("ഇജാബ")));
-  const isGhalaba = h.period === "day" && h.activities.some((a) => a.why.some((w) => w.includes("മുഗാലബ")));
+  const isIjaba = h.period === "day" && h.activities.some((a) => a.why.some((w) => w.tag === "ijaba"));
+  const isGhalaba = h.period === "day" && h.activities.some((a) => a.why.some((w) => w.tag === "ghalaba"));
   return (
     <motion.div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
@@ -119,10 +134,10 @@ function Sheet({ h, data, onClose, isEn }) {
         <div className="flex items-center gap-3">
           <span className="text-4xl" style={{ color: GOLD }}>{p.symbol}</span>
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-base" style={{ color: "#fff" }}>{isEn ? p.en : p.ml} <span className="font-amiri" style={{ color: GOLD }}>{p.ar}</span></p>
+            <p className="text-base" style={{ color: "#fff" }}>{planetName(p, isEn)}</p>
             <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.55)" }}>
-              {h.period === "night" ? (isEn ? "Night" : "രാത്രി") : (isEn ? "Day" : "പകൽ")} #{h.num} · {formatClock(h.start, tz)} – {formatClock(h.end, tz)}
-              {h.status === "current" && <> · <span style={{ color: "#4ADE80" }}>{isEn ? "left" : "ബാക്കി"} {remaining(h.end - Date.now())}</span></>}
+              {h.period === "night" ? (isEn ? "Night" : "രാവ്") : (isEn ? "Day" : "പകൽ")} — {isEn ? "Sa'a" : "സാഅത്ത്"} {h.num} · {formatClock(h.start, tz)} – {formatClock(h.end, tz)}
+              {h.status === "current" && <> · <span style={{ color: "#4ADE80" }}>{isEn ? "left" : "ബാക്കി"} {remaining(h.end - Date.now(), isEn)}</span></>}
             </p>
           </div>
           <Ring value={h.score} size={52} />
@@ -139,23 +154,25 @@ function Sheet({ h, data, onClose, isEn }) {
           </Box>
         </div>
 
-        <Box title={`${isEn ? "Today" : "ഇന്ന്"} — ${isEn ? day.wdInfo.en : day.wdInfo.ml} · ${day.hijriLabel_ml}`}>
+        <Box title={isEn ? "Today" : "ഇന്ന്"}>
+          <Line>{dayName(day.wdInfo, isEn)} · {hijriText(day, isEn)} <span className="font-amiri" style={{ color: GOLD }}>{day.hijriMonth_ar}</span></Line>
           <DaySummary day={day} isEn={isEn} />
         </Box>
 
-        <Box title={isEn ? "This hour" : "ഈ മണിക്കൂർ"}>
-          <Line>{isEn ? NATURE_LABEL[p.nature].en : NATURE_LABEL[p.nature].ml} (p.266)</Line>
-          {isIjaba && <Line color="#4ADE80">🤲 {isEn ? "Hour of answered du'a (p.53)" : "ദുആ സ്വീകരിക്കപ്പെടുന്ന ഇജാബത്തിന്റെ മണിക്കൂർ (p.53)"}</Line>}
-          {isGhalaba && <Line color="#60A5FA">🏆 {isEn ? "Hour of victory (p.53)" : "ജയത്തിന്റെ (മുഗാലബ) മണിക്കൂർ (p.53)"}</Line>}
+        <Box title={isEn ? "This sa'a" : "ഈ സാഅത്ത്"}>
+          <Line>{isEn ? NATURE_LABEL[p.nature].en : NATURE_LABEL[p.nature].ml} <span className="font-amiri" style={{ color: GOLD }}>{NATURE_LABEL[p.nature].ar}</span> (p.266)</Line>
+          {isIjaba && <Line color="#4ADE80">🤲 {isEn ? "Sa'at al-ijaba — du'a is answered (p.53)" : "ഇജാബത്തിന്റെ സാഅത്ത് — ദുആ സ്വീകരിക്കപ്പെടും (p.53)"}</Line>}
+          {isGhalaba && <Line color="#60A5FA">🏆 {isEn ? "Sa'at al-mughalaba — hour of victory (p.53)" : "മുഗാലബയുടെ സാഅത്ത് — ജയത്തിന്റെ സമയം (p.53)"}</Line>}
         </Box>
 
         {moon?.mansion && (
-          <Box title={isEn ? "Moon" : "ചന്ദ്രൻ"}>
-            <Line>{isEn ? "Mansion" : "മൻസിൽ"} {moon.mansionNo}: <b>{moon.mansion.ml}</b> <span className="font-amiri" style={{ color: GOLD }}>{moon.mansion.ar}</span> · {SIGNS_ML[moon.sign]}</Line>
+          <Box title={isEn ? "Qamar (Moon)" : "ഖമർ (ചന്ദ്രൻ)"}>
+            <Line>{isEn ? "Manzil" : "മൻസിൽ"} {moon.mansionNo}: <ArName tr={isEn ? MANSIONS_EN[moon.mansionNo].name : moon.mansion.ml} ar={moon.mansion.ar} /></Line>
+            <Line>{isEn ? "Burj" : "ബുർജ്"}: <ArName tr={isEn ? SIGNS_TR_EN[moon.sign] : SIGNS_TR_ML[moon.sign]} ar={SIGNS_AR[moon.sign]} meaning={isEn ? SIGNS_EN[moon.sign] : SIGNS_ML[moon.sign]} strong={false} /></Line>
             <Line color={moon.mansion.nature === "saad" ? "#4ADE80" : moon.mansion.nature === "nahs" ? "#F87171" : "#FBBF24"}>
-              {moon.mansion.nature === "saad" ? "ശുഭം" : moon.mansion.nature === "nahs" ? "അശുഭം" : "കലർന്നത്"} · {isEn ? "Travel" : "യാത്ര"}: {moon.mansion.travel_ml}
+              {moon.mansion.nature === "saad" ? (isEn ? "Sa'd (benefic)" : "സഅ്ദ് (ശുഭം)") : moon.mansion.nature === "nahs" ? (isEn ? "Nahs (malefic)" : "നഹ്സ് (അശുഭം)") : (isEn ? "Mumtazij (mixed)" : "മുംതസിജ് (കലർന്നത്)")} · {isEn ? "Travel" : "യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}
             </Line>
-            {moon.mansion.note_ml && <Line color="rgba(255,255,255,0.5)">{moon.mansion.note_ml}</Line>}
+            {(isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml) && <Line color="rgba(255,255,255,0.5)">{isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml}</Line>}
           </Box>
         )}
 
@@ -180,9 +197,9 @@ function Sheet({ h, data, onClose, isEn }) {
                     {open && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
                         <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
-                          {isEn ? "Day" : "ദിവസം"} {a.parts.day}% · {isEn ? "Hour" : "മണിക്കൂർ"} {a.parts.hour}% · {isEn ? "Moon" : "ചന്ദ്രൻ"} {a.parts.moon}%
+                          {isEn ? "Day" : "ദിവസം"} {a.parts.day}% · {isEn ? "Sa'a" : "സാഅത്ത്"} {a.parts.hour}% · {isEn ? "Qamar" : "ഖമർ"} {a.parts.moon}%
                         </p>
-                        {a.why.map((w, i) => <p key={i} className="text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>• {w}</p>)}
+                        {a.why.map((w, i) => <p key={i} className="text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>• {isEn ? w.en : w.ml}</p>)}
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -193,7 +210,7 @@ function Sheet({ h, data, onClose, isEn }) {
         </Box>
 
         <p className="font-inter text-[9px] text-center" style={{ color: "rgba(255,255,255,0.35)" }}>
-          {BOOK.ar} · {isEn ? "Day" : "ദിവസം"} {WEIGHTS.day * 100}% · {isEn ? "Hour" : "മണിക്കൂർ"} {WEIGHTS.hour * 100}% · {isEn ? "Moon" : "ചന്ദ്രൻ"} {WEIGHTS.moon * 100}%
+          <span className="font-amiri">{BOOK.ar}</span> · {isEn ? "Day" : "ദിവസം"} {WEIGHTS.day * 100}% · {isEn ? "Sa'a" : "സാഅത്ത്"} {WEIGHTS.hour * 100}% · {isEn ? "Qamar" : "ഖമർ"} {WEIGHTS.moon * 100}%
         </p>
       </motion.div>
     </motion.div>
@@ -201,8 +218,8 @@ function Sheet({ h, data, onClose, isEn }) {
 }
 
 export default function SaatGrid() {
-  const { txt, language, customDate } = useAstroClockLanguage();
-  const isEn = language === "en";
+  const { language, customDate } = useAstroClockLanguage();
+  const isEn = language === "en"; // Arabic UI falls back to Malayalam here
   const [tick, setTick] = useState(0);
   const [locTick, setLocTick] = useState(0);
   const [openKey, setOpenKey] = useState(null);
@@ -225,9 +242,8 @@ export default function SaatGrid() {
     <div className="space-y-3">
       {/* Day banner */}
       <div className="rounded-2xl p-3" style={{ background: data.day.isNahsDay ? "rgba(248,113,113,0.08)" : "rgba(74,222,128,0.06)", border: `1px solid ${data.day.isNahsDay ? "rgba(248,113,113,0.35)" : "rgba(74,222,128,0.25)"}` }}>
-        <p className="font-bold text-sm" style={{ color: "#fff" }}>
-          {isEn ? data.day.wdInfo.en : data.day.wdInfo.ml} <span className="font-amiri" style={{ color: GOLD }}>{data.day.wdInfo.ar}</span> · {data.day.hijriLabel_ml}
-        </p>
+        <p className="text-sm" style={{ color: "#fff" }}>{dayName(data.day.wdInfo, isEn)}</p>
+        <p className="text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>{hijriText(data.day, isEn)} <span className="font-amiri" style={{ color: GOLD }}>{data.day.hijriMonth_ar}</span></p>
         <p className="font-inter text-[10px] mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
           📍 {loc.name || `${loc.lat?.toFixed?.(2)}, ${loc.lng?.toFixed?.(2)}`} · ☀ {formatClock(data.sunrise, data.tz)} · 🌙 {formatClock(data.sunset, data.tz)}
         </p>
@@ -242,8 +258,8 @@ export default function SaatGrid() {
           <div className="flex items-center gap-3">
             <span className="text-4xl" style={{ color: GOLD }}>{PLANETS[cur.planet].symbol}</span>
             <div className="flex-1 min-w-0">
-              <p className="font-inter text-[9px] uppercase tracking-wider font-bold" style={{ color: "#4ADE80" }}>● {txt("ഇപ്പോഴത്തെ മണിക്കൂർ", "Current hour")} · {txt("ബാക്കി", "left")} {remaining(cur.end - Date.now())}</p>
-              <p className="font-bold text-base" style={{ color: "#fff" }}>{isEn ? PLANETS[cur.planet].en : PLANETS[cur.planet].ml} <span className="font-amiri" style={{ color: GOLD }}>{PLANETS[cur.planet].ar}</span></p>
+              <p className="font-inter text-[9px] uppercase tracking-wider font-bold" style={{ color: "#4ADE80" }}>● {isEn ? "Current sa'a" : "ഇപ്പോഴത്തെ സാഅത്ത്"} · {isEn ? "left" : "ബാക്കി"} {remaining(cur.end - Date.now(), isEn)}</p>
+              <p className="text-base" style={{ color: "#fff" }}>{planetName(PLANETS[cur.planet], isEn)}</p>
               <p className="text-[11px]" style={{ color: "rgba(255,255,255,0.65)" }}>
                 ✓ {cur.activities.filter((a) => a.verdict === "do").slice(0, 3).map((a) => (isEn ? a.en : a.ml)).join(", ") || "—"}
               </p>
@@ -253,14 +269,14 @@ export default function SaatGrid() {
             </div>
             <Ring value={cur.score} size={56} />
           </div>
-          <p className="font-inter text-[9px] mt-2 text-center" style={{ color: "rgba(245,208,96,0.6)" }}>{txt("വിശദമായി കാണാൻ അമർത്തുക", "Tap for full details")}</p>
+          <p className="font-inter text-[9px] mt-2 text-center" style={{ color: "rgba(245,208,96,0.6)" }}>{isEn ? "Tap for full details" : "വിശദമായി കാണാൻ അമർത്തുക"}</p>
         </motion.button>
       )}
 
       {/* Night then day of this planetary day */}
       <div>
         <p className="font-inter text-[10px] uppercase tracking-wider font-bold mb-1.5" style={{ color: "rgba(129,140,248,0.7)" }}>
-          🌙 {txt(`${data.day.wdInfo.ml} രാവ് (തലേന്ന് അസ്തമയം മുതൽ)`, `Night of ${data.day.wdInfo.en} (from the previous sunset)`)}
+          🌙 {isEn ? `Layl — night of ${data.day.wdInfo.tr_en} (${data.day.wdInfo.en}), from the previous sunset` : `ലൈൽ — ${data.day.wdInfo.tr_ml} (${data.day.wdInfo.ml}) രാവ്, തലേന്നത്തെ അസ്തമയം മുതൽ`}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
           {night.map((h) => <HourChip key={`n${h.num}`} h={h} tz={data.tz} isEn={isEn} onOpen={() => setOpenKey(`night-${h.num}`)} />)}
@@ -268,7 +284,7 @@ export default function SaatGrid() {
       </div>
       <div>
         <p className="font-inter text-[10px] uppercase tracking-wider font-bold mb-1.5" style={{ color: "rgba(245,208,96,0.7)" }}>
-          ☀ {txt(`${data.day.wdInfo.ml} പകൽ`, `Day of ${data.day.wdInfo.en}`)}
+          ☀ {isEn ? `Nahar — day of ${data.day.wdInfo.tr_en} (${data.day.wdInfo.en})` : `നഹാർ — ${data.day.wdInfo.tr_ml} (${data.day.wdInfo.ml}) പകൽ`}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
           {dayH.map((h) => <HourChip key={`d${h.num}`} h={h} tz={data.tz} isEn={isEn} onOpen={() => setOpenKey(`day-${h.num}`)} />)}
