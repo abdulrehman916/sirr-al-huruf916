@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Globe, ChevronDown } from "lucide-react";
 import { G, T, Box, translatePlanet, computeCompat, compatColor, PLANET_LIST } from "./shared";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // BOX 9 — PLANET DETAILS (optional, lazy, conclusion-first per planet)
 // 7 expandable buttons. On tap: shows ONLY that planet's relationship with
 // this ritual — conclusion (Supports / Forbidden / Neutral) + compat % first,
@@ -9,6 +10,7 @@ import { G, T, Box, translatePlanet, computeCompat, compatColor, PLANET_LIST } f
 // Current Lunar Mansion, Relationship, Compatibility, Supporting Book.
 export default function BoxPlanetDetails({ analysis, lang }) {
   const [open, setOpen] = useState(null);
+  useBackLayer(open != null, () => setOpen(null)); // Back closes this first
   const req = analysis?.req || {};
   const matchingRules = analysis?.matchingRules || [];
   const conflictingRules = analysis?.conflictingRules || [];
