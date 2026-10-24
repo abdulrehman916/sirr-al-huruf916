@@ -16,6 +16,7 @@ import { useIsOwner } from "@/hooks/useIsOwner";
 
 import { CardNotes } from "@/components/owner/OwnerContent";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const CONTENT_TYPE_LABELS = {
   long_dua: { en: "Long Du'a", ml: "ദീർഘ ദുആ", color: "rgba(212,175,55,0.65)", bg: "rgba(212,175,55,0.10)" },
   general_wazifa: { en: "Wazifa", ml: "വാഴിഫ", color: "rgba(129,140,248,0.65)", bg: "rgba(129,140,248,0.10)" },
@@ -42,6 +43,7 @@ function Field({ icon: Icon, label, value, color }) {
 
 export default function SectionDCard({ record }) {
   const [expanded, setExpanded] = useState(false);
+  useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
   const isOwner = useIsOwner();
   const ct = CONTENT_TYPE_LABELS[record.content_type] || CONTENT_TYPE_LABELS.miscellaneous;
   const title = record.title || record.original_rule_entity || record.section_d_id;

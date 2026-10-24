@@ -3,11 +3,13 @@ import { supabase } from '@/api/platformClient';
 import { useIsOwner } from '@/hooks/useIsOwner';
 import { CardNotes } from '@/components/owner/OwnerContent';
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // New names are created explicitly by the owner. No source cards are fabricated.
 export default function SectionDLibrary() {
   const owner = useIsOwner();
   const [cards, setCards] = useState([]);
   const [open, setOpen] = useState(null);
+  useBackLayer(open != null, () => setOpen(null)); // Back closes this first
   const [name, setName] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
