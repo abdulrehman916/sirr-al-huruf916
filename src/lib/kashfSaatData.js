@@ -15,7 +15,7 @@ export const BOOK = {
 export const ACTIVITIES = [
   { id: "needs",     ml: "ആവശ്യങ്ങൾ / ദുആ",       en: "Needs & du'a",         icon: "🤲" },
   { id: "travel",    ml: "യാത്ര",                  en: "Travel",               icon: "🧳" },
-  { id: "marriage",  ml: "വിവാഹം / നിക്കാഹ്",       en: "Marriage",             icon: "💍" },
+  { id: "marriage",  ml: "വിവാഹം / നിക്കാഹ്",       en: "Nikah (marriage)",     icon: "💍" },
   { id: "trade",     ml: "കച്ചവടം / വാങ്ങൽ-വിൽക്കൽ", en: "Trade",                icon: "🛒" },
   { id: "officials", ml: "അധികാരികളെ കാണൽ",         en: "Meeting officials",    icon: "🏛️" },
   { id: "building",  ml: "കെട്ടിടം / തറക്കല്ല്",     en: "Building",             icon: "🧱" },
@@ -33,22 +33,22 @@ export const PLANET_ORDER = ["saturn", "jupiter", "mars", "sun", "venus", "mercu
 // Nature — book p.266: المشتري السعد الأكبر، الزهرة السعد الأصغر، زحل النحس الأكبر،
 // المريخ النحس الأصغر، الشمس سعد أوسط، عطارد والقمر ممتزجان
 export const PLANETS = {
-  saturn:  { ar: "زحل",    ml: "ശനി",    en: "Saturn",  symbol: "♄", nature: "nahs_akbar",  base: 20, metal_ml: "ഈയം" },
-  jupiter: { ar: "المشتري", ml: "വ്യാഴം",  en: "Jupiter", symbol: "♃", nature: "saad_akbar",  base: 95, metal_ml: "വെള്ളീയം" },
-  mars:    { ar: "المريخ",  ml: "ചൊവ്വ",   en: "Mars",    symbol: "♂", nature: "nahs_asghar", base: 30, metal_ml: "ഇരുമ്പ്" },
-  sun:     { ar: "الشمس",   ml: "സൂര്യൻ",  en: "Sun",     symbol: "☉", nature: "saad_awsat",  base: 75, metal_ml: "സ്വർണ്ണം" },
-  venus:   { ar: "الزهرة",  ml: "ശുക്രൻ",  en: "Venus",   symbol: "♀", nature: "saad_asghar", base: 85, metal_ml: "ചെമ്പ്" },
-  mercury: { ar: "عطارد",  ml: "ബുധൻ",   en: "Mercury", symbol: "☿", nature: "mixed",       base: 60, metal_ml: "രസം" },
-  moon:    { ar: "القمر",   ml: "ചന്ദ്രൻ",  en: "Moon",    symbol: "☽", nature: "mixed",       base: 60, metal_ml: "വെള്ളി" },
+  saturn:  { tr_ml: "സുഹൽ", tr_en: "Zuhal", ar: "زحل",    ml: "ശനി",    en: "Saturn",  symbol: "♄", nature: "nahs_akbar",  base: 20, metal_ml: "ഈയം", metal_en: "Lead" },
+  jupiter: { tr_ml: "മുശ്തരി", tr_en: "Mushtari", ar: "المشتري", ml: "വ്യാഴം",  en: "Jupiter", symbol: "♃", nature: "saad_akbar",  base: 95, metal_ml: "വെള്ളീയം", metal_en: "Tin" },
+  mars:    { tr_ml: "മിർരീഖ്", tr_en: "Mirrikh", ar: "المريخ",  ml: "ചൊവ്വ",   en: "Mars",    symbol: "♂", nature: "nahs_asghar", base: 30, metal_ml: "ഇരുമ്പ്", metal_en: "Iron" },
+  sun:     { tr_ml: "ശംസ്", tr_en: "Shams", ar: "الشمس",   ml: "സൂര്യൻ",  en: "Sun",     symbol: "☉", nature: "saad_awsat",  base: 75, metal_ml: "സ്വർണ്ണം", metal_en: "Gold" },
+  venus:   { tr_ml: "സുഹ്റ", tr_en: "Zuhra", ar: "الزهرة",  ml: "ശുക്രൻ",  en: "Venus",   symbol: "♀", nature: "saad_asghar", base: 85, metal_ml: "ചെമ്പ്", metal_en: "Copper" },
+  mercury: { tr_ml: "ഉത്വാരിദ്", tr_en: "Utarid", ar: "عطارد",  ml: "ബുധൻ",   en: "Mercury", symbol: "☿", nature: "mixed",       base: 60, metal_ml: "രസം", metal_en: "Quicksilver" },
+  moon:    { tr_ml: "ഖമർ", tr_en: "Qamar", ar: "القمر",   ml: "ചന്ദ്രൻ",  en: "Moon",    symbol: "☽", nature: "mixed",       base: 60, metal_ml: "വെള്ളി", metal_en: "Silver" },
 };
 
 export const NATURE_LABEL = {
-  saad_akbar:  { ml: "ഏറ്റവും വലിയ ശുഭം (സഅ്ദ് അക്ബർ)", en: "Greater benefic" },
-  saad_asghar: { ml: "ചെറിയ ശുഭം (സഅ്ദ് അസ്ഗർ)",       en: "Lesser benefic" },
-  saad_awsat:  { ml: "ഇടത്തരം ശുഭം (സഅ്ദ് ഔസത്ത്)",     en: "Middle benefic" },
-  mixed:       { ml: "കലർന്നത് (മുംതസിജ്)",              en: "Mixed" },
-  nahs_asghar: { ml: "ചെറിയ അശുഭം (നഹ്സ് അസ്ഗർ)",       en: "Lesser malefic" },
-  nahs_akbar:  { ml: "ഏറ്റവും വലിയ അശുഭം (നഹ്സ് അക്ബർ)", en: "Greater malefic" },
+  saad_akbar:  { ar: "السعد الأكبر", ml: "സഅ്ദ് അക്ബർ — ഏറ്റവും വലിയ ശുഭം", en: "Sa'd Akbar — greater benefic" },
+  saad_asghar: { ar: "السعد الأصغر", ml: "സഅ്ദ് അസ്ഗർ — ചെറിയ ശുഭം",       en: "Sa'd Asghar — lesser benefic" },
+  saad_awsat:  { ar: "سعد أوسط",    ml: "സഅ്ദ് ഔസത്ത് — ഇടത്തരം ശുഭം",     en: "Sa'd Awsat — middle benefic" },
+  mixed:       { ar: "ممتزج",       ml: "മുംതസിജ് — കലർന്നത്",              en: "Mumtazij — mixed" },
+  nahs_asghar: { ar: "النحس الأصغر", ml: "നഹ്സ് അസ്ഗർ — ചെറിയ അശുഭം",       en: "Nahs Asghar — lesser malefic" },
+  nahs_akbar:  { ar: "النحس الأكبر", ml: "നഹ്സ് അക്ബർ — ഏറ്റവും വലിയ അശുഭം", en: "Nahs Akbar — greater malefic" },
 };
 
 // Hour-planet affinity — only where the book links a planet hour to an everyday aim.
@@ -64,20 +64,20 @@ export const PLANET_AFFINITY = {
 // good: Khamis al-Abri (p.59) + al-Ma'wali poem (p.66)
 // clothes: poem p.67 · avoidDir: Kharusi poem p.57
 export const WEEKDAYS = [
-  { ar: "الأحد",   ml: "ഞായർ",   en: "Sunday",    planet: "sun",
+  { tr_ml: "അഹദ്", tr_en: "Ahad", clothesNote_en: "New clothes: brings sorrow", avoidDir_en: "West", ar: "الأحد",   ml: "ഞായർ",   en: "Sunday",    planet: "sun",
     good: ["building"], clothes: "bad", clothesNote_ml: "പുതുവസ്ത്രം: സങ്കടം വരും", avoidDir_ml: "പടിഞ്ഞാറ്" },
-  { ar: "الإثنين", ml: "തിങ്കൾ",  en: "Monday",    planet: "moon",
+  { tr_ml: "ഇഥ്നൈൻ", tr_en: "Ithnayn", clothesNote_en: "New clothes: honour and peace", avoidDir_en: "East", ar: "الإثنين", ml: "തിങ്കൾ",  en: "Monday",    planet: "moon",
     good: ["travel"], clothes: "good", clothesNote_ml: "പുതുവസ്ത്രം: ആദരവ്, സമാധാനം", avoidDir_ml: "കിഴക്ക്" },
-  { ar: "الثلاثاء", ml: "ചൊവ്വ",  en: "Tuesday",   planet: "mars",
+  { tr_ml: "ഥുലാഥാഅ്", tr_en: "Thulatha", clothesNote_en: "New clothes: theft / fear of water", avoidDir_en: "North", note_en: "A day for hijama", ar: "الثلاثاء", ml: "ചൊവ്വ",  en: "Tuesday",   planet: "mars",
     good: ["medicine"], clothes: "bad", clothesNote_ml: "പുതുവസ്ത്രം: മോഷണം/വെള്ളപ്പേടി", avoidDir_ml: "വടക്ക്", note_ml: "ഹിജാമയ്ക്കുള്ള ദിവസം" },
-  { ar: "الأربعاء", ml: "ബുധൻ",  en: "Wednesday", planet: "mercury",
+  { tr_ml: "അർബിആഅ്", tr_en: "Arbi'a", clothesNote_en: "New clothes: rizq", avoidDir_en: "North", note_en: "Nikah may be on Wednesday night (Tuesday evening), not Wednesday daytime (p.65-66)", ar: "الأربعاء", ml: "ബുധൻ",  en: "Wednesday", planet: "mercury",
     good: ["medicine"], clothes: "good", clothesNote_ml: "പുതുവസ്ത്രം: റിസ്ഖ്", avoidDir_ml: "വടക്ക്",
     note_ml: "നിക്കാഹ് ബുധൻ രാത്രിയിൽ (ചൊവ്വ വൈകുന്നേരം) ആകാം, ബുധൻ പകലിൽ വേണ്ട (p.65-66)" },
-  { ar: "الخميس",  ml: "വ്യാഴം",  en: "Thursday",  planet: "jupiter",
+  { tr_ml: "ഖമീസ്", tr_en: "Khamis", clothesNote_en: "New clothes: knowledge", avoidDir_en: "South", ar: "الخميس",  ml: "വ്യാഴം",  en: "Thursday",  planet: "jupiter",
     good: ["needs", "clothes", "learning"], clothes: "good", clothesNote_ml: "പുതുവസ്ത്രം: അറിവ്", avoidDir_ml: "തെക്ക്" },
-  { ar: "الجمعة",  ml: "വെള്ളി",  en: "Friday",    planet: "venus",
+  { tr_ml: "ജുമുഅ", tr_en: "Jumu'a", clothesNote_en: "New clothes: long life", avoidDir_en: "West", ar: "الجمعة",  ml: "വെള്ളി",  en: "Friday",    planet: "venus",
     good: ["marriage"], clothes: "good", clothesNote_ml: "പുതുവസ്ത്രം: ആയുസ്സ് നീളും", avoidDir_ml: "പടിഞ്ഞാറ്" },
-  { ar: "السبت",   ml: "ശനി",    en: "Saturday",  planet: "saturn",
+  { tr_ml: "സബ്ത്", tr_en: "Sabt", clothesNote_en: "New clothes: illness", avoidDir_en: "East", note_en: "A day for hunting", ar: "السبت",   ml: "ശനി",    en: "Saturday",  planet: "saturn",
     good: ["travel"], clothes: "bad", clothesNote_ml: "പുതുവസ്ത്രം: അസുഖം", avoidDir_ml: "കിഴക്ക്", note_ml: "വേട്ടയ്ക്കുള്ള ദിവസം" },
 ];
 
@@ -185,3 +185,40 @@ export const SIGNS_AR = ["الحمل", "الثور", "الجوزاء", "السر
 
 // Weights for the % score. The moon is deliberately the lightest factor.
 export const WEIGHTS = { day: 0.45, hour: 0.35, moon: 0.20 };
+
+// ── English companions (same order/keys as the Malayalam data above) ──
+export const HIJRI_MONTHS_EN = ["Muharram", "Safar", "Rabi' al-Awwal", "Rabi' al-Akhir", "Jumada al-Ula", "Jumada al-Akhira", "Rajab", "Sha'ban", "Ramadan", "Shawwal", "Dhu al-Qa'da", "Dhu al-Hijja"];
+export const HIJRI_MONTHS_AR = ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"];
+// Arabic sign names in Malayalam / English script
+export const SIGNS_TR_ML = ["ഹമൽ", "ഥൗർ", "ജൗസാഅ്", "സരത്വാൻ", "അസദ്", "അദ്റാഅ്", "മീസാൻ", "അഖ്റബ്", "ഖൗസ്", "ജദ്‌യ്", "ദൽവ്", "ഹൂത്"];
+export const SIGNS_TR_EN = ["Hamal", "Thawr", "Jawza", "Saratan", "Asad", "Adhra", "Mizan", "Aqrab", "Qaws", "Jady", "Dalw", "Hut"];
+export const SIGNS_EN = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
+export const MONTH_DAY_NOTE_EN = {
+  1: "Day Adam (AS) was created", 2: "Day Hawwa (AS) was created", 3: "Nahs mustamirr — stay at home",
+  4: "Day Habil was born", 5: "Do not begin anything new", 6: "The traveller returns happy",
+  7: "Good for everything", 8: "No sea travel or contracts", 9: "Wealth comes on a journey",
+  10: "Nuh (AS) was born; the sick recover", 11: "Shith (AS) was born", 12: "Good to open a shop; no mediation",
+  13: "Nahs mustamirr — no disputes, no haircut", 14: "", 15: "Some say: be careful except for debts",
+  16: "Travel is very dangerous", 17: "", 18: "You will overcome an opponent",
+  19: "Ishaq (AS) was born", 20: "", 21: "Nahs mustamirr",
+  22: "Sadaqa is accepted", 23: "Yusuf (AS) was born", 24: "Day Fir'awn was born",
+  25: "Guard yourself", 26: "Give sadaqa; day Musa (AS) parted the sea", 27: "",
+  28: "Ya'qub (AS) was born", 29: "Do not write a will", 30: "Some say: no travel",
+};
+export const MANSIONS_EN = [
+  null,
+  { name: "Sharatayn", travel: "much good" }, { name: "Butayn", travel: "poverty increases" },
+  { name: "Thurayya", travel: "much good" }, { name: "Dabaran", travel: "fear of death" },
+  { name: "Haq'a", travel: "need fulfilled" }, { name: "Han'a", travel: "fear of robbery" },
+  { name: "Dhira'", travel: "fear of robbery / killing" }, { name: "Nathra", travel: "honour, goal reached" },
+  { name: "Tarf", travel: "gain" }, { name: "Jabha", travel: "rank, wealth" },
+  { name: "Zubra", travel: "fear of calamity" }, { name: "Sarfa", travel: "postpone the journey" },
+  { name: "Awwa'", travel: "gain" }, { name: "Simak", travel: "fear of drowning", note: "Kharusi: benefic; Hermes, Amili: malefic" },
+  { name: "Ghafr", travel: "honour" }, { name: "Zubana", travel: "loss of wealth" },
+  { name: "Iklil", travel: "fear of harm" }, { name: "Qalb", travel: "the worst" },
+  { name: "Shawla", travel: "fear of death" }, { name: "Na'a'im", travel: "profit (with illness)" },
+  { name: "Balda", travel: "middling", note: "Kharusi: benefic; Hermes: malefic" }, { name: "Sa'd al-Dhabih", travel: "the worst" },
+  { name: "Sa'd Bula'", travel: "benefic, fear of eye illness" }, { name: "Sa'd al-Su'ud", travel: "profit and joy" },
+  { name: "Sa'd al-Akhbiya", travel: "unclear", note: "Kharusi: benefic; Hermes, Amili: malefic" }, { name: "Fargh al-Muqaddam", travel: "returns without money" },
+  { name: "Fargh al-Mu'akhkhar", travel: "good" }, { name: "Batn al-Hut", travel: "gain" },
+];

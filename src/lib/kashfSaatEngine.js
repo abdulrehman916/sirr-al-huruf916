@@ -86,46 +86,50 @@ export function getDayFacts(pDay, isNightNow = false) {
     weekday: pDay.wd, wdInfo, hijri: h, lunarDay, monthDay: md,
     isKamil, isKhalili, isLastWed, isMuhaq: !!monthEndsSoon, isNahsDay,
     hijriLabel_ml: h ? `${h.day} ${K.HIJRI_MONTHS_ML[h.month - 1]} ${h.year}` : "",
+    hijriLabel_en: h ? `${h.day} ${K.HIJRI_MONTHS_EN[h.month - 1]} ${h.year}` : "",
+    hijriMonth_ar: h ? K.HIJRI_MONTHS_AR[h.month - 1] : "",
     isNightNow,
   };
 }
 
 // ── Scoring ────────────────────────────────────────────────────
+// Each reason is bilingual: { ml, en, tag? }
+const R = (ml, en, tag) => ({ ml, en, tag });
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 function dayScore(a, day, hour, why) {
   const md = day.monthDay;
   let s = md ? (md.nature === "good" ? 70 : md.nature === "mixed" ? 50 : 15) : 60;
-  if (md?.good.includes(a)) { s = 90; why.push(`ചാന്ദ്രദിവസം ${day.lunarDay}: നല്ലത് (p.60-65)`); }
-  if (md?.avoid.includes(a)) { s = Math.min(s, 10); why.push(`ചാന്ദ്രദിവസം ${day.lunarDay}: ഒഴിവാക്കുക (p.60-65)`); }
-  if (day.wdInfo.good.includes(a)) { s += 10; why.push(`${day.wdInfo.ml} ഇതിന് നല്ല ദിവസം (p.59, 66)`); }
+  if (md?.good.includes(a)) { s = 90; why.push(R(`ചാന്ദ്രദിവസം ${day.lunarDay}: നല്ലത് (p.60-65)`, `Lunar day ${day.lunarDay}: good (p.60-65)`)); }
+  if (md?.avoid.includes(a)) { s = Math.min(s, 10); why.push(R(`ചാന്ദ്രദിവസം ${day.lunarDay}: ഒഴിവാക്കുക (p.60-65)`, `Lunar day ${day.lunarDay}: avoid (p.60-65)`)); }
+  if (day.wdInfo.good.includes(a)) { s += 10; why.push(R(`യൗമുൽ ${day.wdInfo.tr_ml} (${day.wdInfo.ml}) ഇതിന് നല്ല ദിവസം (p.59, 66)`, `Yawm al-${day.wdInfo.tr_en} (${day.wdInfo.en}) is good for this (p.59, 66)`)); }
   if (a === "clothes") {
-    if (day.wdInfo.clothes === "bad") { s = Math.min(s, 20); why.push(`${day.wdInfo.clothesNote_ml} (p.67)`); }
+    if (day.wdInfo.clothes === "bad") { s = Math.min(s, 20); why.push(R(`${day.wdInfo.clothesNote_ml} (p.67)`, `${day.wdInfo.clothesNote_en} (p.67)`)); }
     else s += 10;
   }
   if (day.isKamil) {
     s = Math.min(s, K.KAWAMIL_AVOID.includes(a) ? 10 : 30);
-    why.push(`കവാമിൽ നഹ്സ് ദിവസം (${day.lunarDay}) (p.57-58)`);
+    why.push(R(`കവാമിൽ നഹ്സ് ദിവസം (${day.lunarDay}) (p.57-58)`, `Kawamil nahs day (${day.lunarDay}) (p.57-58)`));
   }
-  if (day.isKhalili) { s = Math.min(s, 10); why.push("ഖലീലിയുടെ മാസ-നഹ്സ് ദിവസം (p.59)"); }
-  if (day.isLastWed) { s = Math.min(s, 15); why.push("മാസത്തിലെ അവസാന ബുധൻ (p.57)"); }
-  if (a === "marriage" && day.weekday === 3 && hour.period === "day") { s = Math.min(s, 20); why.push("ബുധൻ പകലിൽ നിക്കാഹ് വേണ്ട, രാത്രി ആകാം (p.65-66)"); }
-  if (a === "marriage" && day.isMuhaq) { s = Math.min(s, 15); why.push("മാസാവസാന ദിവസങ്ങൾ (മുഹാഖ്) (p.66)"); }
+  if (day.isKhalili) { s = Math.min(s, 10); why.push(R("ഖലീലിയുടെ മാസ-നഹ്സ് ദിവസം (p.59)", "Al-Khalili's monthly nahs day (p.59)")); }
+  if (day.isLastWed) { s = Math.min(s, 15); why.push(R("മാസത്തിലെ അവസാന അർബിആഅ് (ബുധൻ) (p.57)", "Last Arbi'a (Wednesday) of the month (p.57)")); }
+  if (a === "marriage" && day.weekday === 3 && hour.period === "day") { s = Math.min(s, 20); why.push(R("അർബിആഅ് (ബുധൻ) പകലിൽ നിക്കാഹ് വേണ്ട, രാത്രി ആകാം (p.65-66)", "No nikah on Arbi'a (Wednesday) daytime; its night is fine (p.65-66)")); }
+  if (a === "marriage" && day.isMuhaq) { s = Math.min(s, 15); why.push(R("മാസാവസാന ദിവസങ്ങൾ (മുഹാഖ്) (p.66)", "Last days of the month (muhaq) (p.66)")); }
   return clamp(s);
 }
 
 function hourScore(a, day, hour, why) {
   const p = K.PLANETS[hour.planet];
   let s = p.base;
-  if ((K.PLANET_AFFINITY[hour.planet] || []).includes(a)) { s += 15; why.push(`${p.ml} മണിക്കൂർ ഇതിന് യോജിച്ചത്`); }
+  if ((K.PLANET_AFFINITY[hour.planet] || []).includes(a)) { s += 15; why.push(R(`${p.tr_ml} (${p.ml}) സാഅത്ത് ഇതിന് യോജിച്ചത്`, `Hour of ${p.tr_en} (${p.en}) suits this`)); }
   if (hour.period === "day") {
-    if (K.IJABA_HOUR[day.weekday] === hour.num && a === "needs") { s += 20; why.push("ഇജാബത്തിന്റെ മണിക്കൂർ (p.53)"); }
-    if (K.MUGHALABA_HOUR[day.weekday] === hour.num && a === "officials") { s += 15; why.push("മുഗാലബ (ജയം) മണിക്കൂർ (p.53)"); }
-    if (K.MASTERS_HOURS.days.includes(day.weekday) && K.MASTERS_HOURS.hours.includes(hour.num)) { s += 10; why.push("നല്ല കാര്യങ്ങൾക്ക് ശ്രേഷ്ഠ മണിക്കൂർ (p.13)"); }
+    if (K.IJABA_HOUR[day.weekday] === hour.num && a === "needs") { s += 20; why.push(R("ഇജാബത്തിന്റെ സാഅത്ത് (p.53)", "Sa'at al-ijaba — hour of answered du'a (p.53)", "ijaba")); }
+    if (K.MUGHALABA_HOUR[day.weekday] === hour.num && a === "officials") { s += 15; why.push(R("മുഗാലബയുടെ (ജയം) സാഅത്ത് (p.53)", "Sa'at al-mughalaba — hour of victory (p.53)", "ghalaba")); }
+    if (K.MASTERS_HOURS.days.includes(day.weekday) && K.MASTERS_HOURS.hours.includes(hour.num)) { s += 10; why.push(R("നല്ല കാര്യങ്ങൾക്ക് ശ്രേഷ്ഠ സാഅത്ത് (p.13)", "An excellent hour for good works (p.13)")); }
   }
   const j = K.JAAD[day.weekday];
-  if (j && (j.saad === hour.planet || j.baraka === hour.planet)) { s += 8; why.push("ശൈഖ് ജാഇദിന്റെ പട്ടികയിൽ സഅ്ദ്/ബറക്ക (p.54)"); }
-  if (a === "needs" && hour.moon && K.MOON_SIGN_NEEDS_HOUR[hour.moon.sign] === hour.planet) { s += 10; why.push("ചന്ദ്രന്റെ രാശിക്ക് പറ്റിയ മണിക്കൂർ (p.54)"); }
+  if (j && (j.saad === hour.planet || j.baraka === hour.planet)) { s += 8; why.push(R("ശൈഖ് ജാഇദിന്റെ പട്ടികയിൽ സഅ്ദ്/ബറക്ക (p.54)", "Sa'd / baraka in Sheikh Jaad's table (p.54)")); }
+  if (a === "needs" && hour.moon && K.MOON_SIGN_NEEDS_HOUR[hour.moon.sign] === hour.planet) { s += 10; why.push(R("ഖമറിന്റെ ബുർജിന് പറ്റിയ സാഅത്ത് (p.54)", "Hour that matches the Qamar's burj (p.54)")); }
   return clamp(s);
 }
 
@@ -134,11 +138,11 @@ function moonScore(a, hour, why) {
   if (!m?.mansion) return 50;
   const mn = m.mansion;
   let s = mn.nature === "saad" ? 65 : mn.nature === "mixed" ? 50 : 35;
-  if (mn.good.includes(a)) { s = 85; why.push(`ചന്ദ്രൻ ${mn.ml}-ൽ: നല്ലത് (p.115-124)`); }
-  if (mn.avoid.includes(a)) { s = 15; why.push(`ചന്ദ്രൻ ${mn.ml}-ൽ: ഒഴിവാക്കുക (p.115-124)`); }
-  if (a === "travel" && K.TRAVEL_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push("യാത്രയ്ക്ക് നല്ല മൻസിൽ (p.75)"); }
-  if (a === "marriage" && K.MARRIAGE_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push("കല്യാണത്തിന് നല്ല മൻസിൽ (p.76-77)"); }
-  if (a === "marriage" && m.sign === 7) { s = Math.min(s, 10); why.push("ചന്ദ്രൻ വൃശ്ചികത്തിൽ: നിക്കാഹ് വേണ്ട (p.66)"); }
+  if (mn.good.includes(a)) { s = 85; why.push(R(`ഖമർ ${mn.ml} മൻസിലിൽ: നല്ലത് (p.115-124)`, `Qamar in ${K.MANSIONS_EN[m.mansionNo].name}: good (p.115-124)`)); }
+  if (mn.avoid.includes(a)) { s = 15; why.push(R(`ഖമർ ${mn.ml} മൻസിലിൽ: ഒഴിവാക്കുക (p.115-124)`, `Qamar in ${K.MANSIONS_EN[m.mansionNo].name}: avoid (p.115-124)`)); }
+  if (a === "travel" && K.TRAVEL_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("യാത്രയ്ക്ക് നല്ല മൻസിൽ (p.75)", "A good manzil for travel (p.75)")); }
+  if (a === "marriage" && K.MARRIAGE_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("നിക്കാഹിന് നല്ല മൻസിൽ (p.76-77)", "A good manzil for nikah (p.76-77)")); }
+  if (a === "marriage" && m.sign === 7) { s = Math.min(s, 10); why.push(R("ഖമർ അഖ്റബിൽ (വൃശ്ചികം): നിക്കാഹ് വേണ്ട (p.66)", "Qamar in Aqrab (Scorpio): no nikah (p.66)")); }
   if (m.waxing && s >= 50) s += 5;
   return clamp(s);
 }
