@@ -164,6 +164,8 @@ function AstroClockContent() {
   // until every line is verified against a clearer source image / original PDF.
   // Data is preserved untouched in src/lib/astroClockSourceBookData.js.
   // Set to false to restore the cards after verification.
+  // Extras hidden (not deleted): jinn day-king invocations + import log
+  const HIDE_EXTRAS = true;
   const HIDE_UNVERIFIED_ARABIC = true;
   // ────────────────────────────────────────────────────────────────
 
@@ -199,11 +201,21 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
 
         {/* ── 8 Sections — each unique, no duplication ── */}
+        {/* ── Section 1 — Live Saat cards (PRIMARY · always open · Kashf al-Haqa'iq) ── */}
+        <AstroClockErrorBoundary label="Saat Grid">
+          <DashboardSection icon="⏰" title={txt("ഇപ്പോഴത്തെ സാഅത്ത് · 24 സാഅത്തുകൾ", "Current Saat · 24 Hours", "الساعة الآن · ٢٤ ساعة")}
+            subtitle={txt("കശ്ഫുൽ ഹഖാഇഖ് പ്രകാരം — കാർഡ് തൊട്ടാൽ വിശദാംശം", "Per Kashf al-Haqa'iq — tap a card for details", "حسب كشف الحقائق — اضغط البطاقة")}
+            alwaysOpen badge="●">
+            <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
+              <SaatGrid />
+            </Suspense>
+          </DashboardSection>
+        </AstroClockErrorBoundary>
+
         {/* ── Section 1 — Intelligent Today's Dashboard (PRIMARY · always open · live decision engine) ── */}
         <AstroClockErrorBoundary label="Today Dashboard">
           <DashboardSection icon="🧭" title={txt("ഇന്നത്തെ തിരുമാനം", "Today's Dashboard", "لوحة اليوم")}
-            subtitle={txt("തത്സമയ ഗ്രന്ഥ വിധായക യന്ത്രം — എല്ലാ പാളികളുടെയും സംയോജനം", "Live manuscript decision engine — synthesis of all layers", "محرّك القرار الحي — تركيب جميع الطبقات")}
-            alwaysOpen badge="●">
+            subtitle={txt("തത്സമയ ഗ്രന്ഥ വിധായക യന്ത്രം — എല്ലാ പാളികളുടെയും സംയോജനം", "Live manuscript decision engine — synthesis of all layers", "محرّك القرار الحي — تركيب جميع الطبقات")}>
             <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
               <IntelligentDashboard />
             </Suspense>
@@ -211,6 +223,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
 
         {/* ── Reference & Study sections (non-operational) ── */}
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Daily Mantras">
           <DashboardSection icon="📿" title={txt("ദൈനംദിന മന്ത്രങ്ങൾ", "Daily Mantras", "Günlük Mantralar")}
             subtitle={txt("ഇന്നത്തെ ആത്മിക പാരായണങ്ങൾ", "Today's Spiritual Recitations", "Bugünün Ruani Zikirleri")}>
@@ -219,21 +232,13 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         <AstroClockErrorBoundary label="Smart Search">
           <DashboardSection icon="🔍" title={txt("സ്മാർട്ട് തിരച്ചിൽ", "Smart Search", "Akıllı Arama")}
             subtitle={txt("ഉദ്ദേശം → മികച്ച സഅാത്", "Purpose → Best Saat", "Amaç → En İyi Saat")}>
             <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
               <SmartSearch />
-            </Suspense>
-          </DashboardSection>
-        </AstroClockErrorBoundary>
-
-        <AstroClockErrorBoundary label="Saat Grid">
-          <DashboardSection icon="⏰" title={txt("ഇന്നത്തെ 24 സഅാത്", "Today's 24 Saat", "Bugünün 24 Saati")}
-            subtitle={txt("12 പകൽ + 12 രാത്രി ഗ്രഹ മണിക്കൂറുകൾ", "12 Day + 12 Night Planetary Hours", "12 Gündüz + 12 Gece Gezegen Saati")}>
-            <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
-              <SaatGrid />
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
@@ -357,6 +362,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
 
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Import History">
           <DashboardSection icon="📥" title={txt("ഇറക്കുമതി ചരിത്രം", "Import History", "İçe Aktarma Geçmişi")}
             subtitle={txt("ഗ്രന്ഥങ്ങൾ, പേജുകൾ, രേഖകൾ, പുരോഗതി, പരിശോധന", "Books, Pages, Records, Progress, Verification", "Kitap, Sayfa, Kayıt, İlerleme, Doğrulama")}>
@@ -365,6 +371,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         <AstroClockErrorBoundary label="References">
           <div id="reference-library" />
