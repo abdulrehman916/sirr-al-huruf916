@@ -263,7 +263,7 @@ export const KASHF_ZODIAC_BY_DAY_HOUR = [
   { zodiac_ar: "الجدي", zodiac_en: "Capricorn", day_ar: "الخميس", day_en: "Thursday", planet_ar: "عطارد", planet_en: "Mercury" },
   { zodiac_ar: "الدلو", zodiac_en: "Aquarius", day_ar: "الأحد", day_en: "Sunday", planet_ar: "المشتري", planet_en: "Jupiter" },
   { zodiac_ar: "الحوت", zodiac_en: "Pisces", note_ar: "في الثوابت الصحاح" },
-  { source: { book: KASHF_SOURCE.book_name_ar, page: 18 }, note_en: "Scorpio (العقرب) was not found by the author" },
+  { source: { book: KASHF_SOURCE.book_name_ar, page: 18 }, note_en: "Pisces is not assigned a day/hour in this table (it is 'in the fixed stars')" },
 ];
 
 // TABLE 2 — By Hour Only (second Omani tradition, same manuscript p.19)
@@ -353,7 +353,7 @@ export const KASHF_JAAD_HOUR_TABLE = {
     { day_ar: "الأربعاء", saad_planet: "المشتري", dominance_planet: "الشمس", answer_planet: "المشتري", blessing_planet: "زحل" },
     { day_ar: "الخميس", saad_planet: "القمر", dominance_planet: "زحل", answer_planet: "الزهرة", blessing_planet: "الزهرة" },
     { day_ar: "الجمعة", saad_planet: "الشمس", dominance_planet: "المريخ", answer_planet: "زحل", blessing_planet: "القمر" },
-    { day_ar: "السبت", saad_planet: "عطارد", dominance_planet: "المشتري", answer_planet: "الزهرة", blessing_planet: "الشمس" },
+    { day_ar: "السبت", saad_planet: "عطارد", dominance_planet: "الزهرة", answer_planet: "المشتري", blessing_planet: "الشمس" },
   ],
 };
 
@@ -437,7 +437,7 @@ export const KASHF_MONTHLY_NAHS_DAYS = {
   name_ml: "ഓരോ മാസത്തിലെ 7 ദ്രോഹ ദിനങ്ങൾ",
   days: [3, 5, 13, 16, 21, 24, 25],
   note_ar: "وكل أربعاء لا تدور — لا يتخذ فيها بيع ولا سفر ولا غيرهما",
-  note_en: "Plus the 'non-recurring Wednesday' of each month. No trade, travel, or major actions.",
+  note_en: "Plus the last Wednesday of each Arabic month (أربعاء لا تدور). No trade, travel, or major actions.",
   note_ml: "ഈ ദിനങ്ങളിൽ ഒരു പ്രധാന കൃത്യവും ആരംഭിക്കരുത്",
 };
 
@@ -447,8 +447,8 @@ export const KASHF_LUNAR_MONTH_NAHS = {
   name_ar: "يوم النحس من كل شهر قمري",
   monthly_nahs: {
     "محرم": 12, "صفر": 10, "ربيع الأول": 4, "ربيع الثاني": 8,
-    "جمادى الأولى": 4, "جمادى الثانية": 2, "رجب": 2, "شعبان": 23,
-    "رمضان": 24, "شوال": 28, "ذو القعدة": 28, "ذو الحجة": 8,
+    "جمادى الأولى": 2, "جمادى الثانية": 2, "رجب": 2, "شعبان": 23,
+    "رمضان": 24, "شوال": 8, "ذو القعدة": 28, "ذو الحجة": 8,
   },
 };
 
@@ -475,8 +475,8 @@ export const KASHF_MONTH_DAYS = {
     { day: 15, nature: "saad", summary_ar: "صالح لكل حاجة تريدها" },
     { day: 16, nature: "nahs", summary_ar: "رديء نحس — من سافر فيه هلك" },
     { day: 17, nature: "saad", summary_ar: "صالح مختار — فاطلبوا فيه ما شئتم" },
-    { day: 18, nature: "mixed", summary_ar: "ممزوج — صالح مبارك لكل أمر وحاجة" },
-    { day: 19, nature: "saad", summary_ar: "مختار جيد لكل حاجة ما خلا الكاتب" },
+    { day: 18, nature: "saad", summary_ar: "مختار — صالح للسفر وطلب الحوائج، ومن خاصم فيه عدوه غلبه" },
+    { day: 19, nature: "saad", summary_ar: "مختار صالح لكل عمل — ولد فيه إسحاق" },
     { day: 20, nature: "saad", summary_ar: "جيد مختار — للحوائج والسفر والبناء والغرس" },
     { day: 21, nature: "nahs", summary_ar: "نحس مستمر لا يطلب فيه حاجة" },
     { day: 22, nature: "saad", summary_ar: "مختار صالح للشراء والبيع ولقاء السلطان" },
@@ -485,8 +485,8 @@ export const KASHF_MONTH_DAYS = {
     { day: 25, nature: "nahs", summary_ar: "رديء مذموم — نحس شديد البلاء" },
     { day: 26, nature: "mixed", summary_ar: "صالح لكل حاجة سوى التزويج والسفر" },
     { day: 27, nature: "saad", summary_ar: "جيد مختار للحوائج ولقاء السلطان" },
-    { day: 28, nature: "saad", summary_ar: "مختار صالح للسفر وطلب الحوائج" },
-    { day: 29, nature: "saad", summary_ar: "مختار جيد لكل حاجة" },
+    { day: 28, nature: "mixed", summary_ar: "ممزوج — وقيل صالح مبارك لكل أمر وحاجة، ولد فيه يعقوب" },
+    { day: 29, nature: "saad", summary_ar: "مختار جيد لكل حاجة ما خلا الكاتب — ولا يكتب فيه وصية" },
     { day: 30, nature: "saad", summary_ar: "مختار جيد لكل شيء والبيع والتزويج" },
   ],
 };

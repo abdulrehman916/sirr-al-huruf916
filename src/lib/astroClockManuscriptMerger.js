@@ -109,6 +109,8 @@ export function getKashfOperationsForPurpose(purposeKey) {
 export function getKashfHourAttributes(dayIndex, displayHourNum, period) {
   const results = [];
   const dayName = DAY_EN_MAP[dayIndex];
+  // Kashf p.53-54 tables number the DAYTIME hours only.
+  if (period === "night") return results;
 
   // Answer hours (ساعات الإجابة)
   const answerEntry = KASHF_ANSWER_HOURS.table.find(t => t.day_en === dayName && t.hour_number === displayHourNum);

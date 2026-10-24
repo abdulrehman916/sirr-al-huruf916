@@ -30,8 +30,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Government work", "Gold trading", "Leadership roles", "Health improvement"],
     badActions_ml: ["രഹസ്യ പ്രവർത്തനങ്ങൾ", "താഴ്മ കാണിക്കൽ"],
     badActions_en: ["Secret operations", "Showing humility"],
-    spiritualOperations_ml: ["സൂര്യ ദേവതകളെ വിളിക്കുക", "ശക്തിക്കും വിജയത്തിനും പ്രാർത്ഥന"],
-    spiritualOperations_en: ["Invoke Solar deities", "Prayers for power and success"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.50"
   },
   moon: { 
@@ -51,8 +51,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Travel", "Water-related matters", "Romance", "Mental peace"],
     badActions_ml: ["യുദ്ധം", "കലഹം"],
     badActions_en: ["Warfare", "Conflict"],
-    spiritualOperations_ml: ["ചന്ദ്ര ധ്യാനം", "മാനസിക സന്തുലിതാവസ്ഥയ്ക്ക്"],
-    spiritualOperations_en: ["Moon meditation", "For emotional balance"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.50"
   },
   mars: { 
@@ -72,8 +72,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Military success", "Confronting enemies", "Courageous acts"],
     badActions_ml: ["വിവാഹം", "സമാധാന ചർച്ചകൾ"],
     badActions_en: ["Marriage", "Peaceful negotiations"],
-    spiritualOperations_ml: ["ചൊവ്വ മന്ത്രങ്ങൾ", "ശക്തിക്കും സംരക്ഷണത്തിനും"],
-    spiritualOperations_en: ["Mars mantras", "For strength and protection"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.50"
   },
   mercury: { 
@@ -93,8 +93,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Business", "Writing", "Communication", "Learning"],
     badActions_ml: ["വഞ്ചന", "ചൂതാട്ടം"],
     badActions_en: ["Deception", "Gambling"],
-    spiritualOperations_ml: ["ബുധ മന്ത്രങ്ങൾ", "ജ്ഞാനത്തിനും ബുദ്ധിക്കും"],
-    spiritualOperations_en: ["Mercury mantras", "For knowledge and wisdom"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.50"
   },
   jupiter: { 
@@ -114,8 +114,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Education", "Finance", "Spiritual work", "Marriage"],
     badActions_ml: ["അനീതി", "ദ്രോഹ പ്രവർത്തനങ്ങൾ"],
     badActions_en: ["Dishonesty", "Harmful activities"],
-    spiritualOperations_ml: ["ഗുരു പ്രാർത്ഥനകൾ", "ജ്ഞാനത്തിനും ഐശ്വര്യത്തിനും"],
-    spiritualOperations_en: ["Jupiter prayers", "For wisdom and prosperity"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.51"
   },
   venus: { 
@@ -135,8 +135,8 @@ export const PLANET_INFO = {
     goodActions_en: ["Love", "Arts", "Beauty", "Entertainment", "Marriage"],
     badActions_ml: ["കലഹം", "കഠിനമായ സംസാരം"],
     badActions_en: ["Conflict", "Harsh speech"],
-    spiritualOperations_ml: ["ശുക്ര മന്ത്രങ്ങൾ", "പ്രണയത്തിനും ആകർഷണത്തിനും"],
-    spiritualOperations_en: ["Venus mantras", "For love and attraction"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.51"
   },
   saturn: { 
@@ -150,14 +150,14 @@ export const PLANET_INFO = {
     nature_en: "Greater Malefic",
     benefits_ml: ["ദ്രോഹ ദൂരീകരണം"],
     benefits_en: ["Obstacle Removal"],
-    warnings_ml: ["ഒന്നാം, 4, 7, 10 ഭവനത്തിൽ ദ്രോഹ ഫലം"],
-    warnings_en: ["Malefic in 1st, 4th, 7th, 10th houses"],
+    warnings_ml: [],
+    warnings_en: [],
     goodActions_ml: ["ശിക്ഷണം", "ദീർഘകാല ആസൂത്രണം", "റിയൽ എസ്റ്റേറ്റ്"],
     goodActions_en: ["Discipline", "Long-term planning", "Real estate"],
     badActions_ml: ["പുതിയ സംരംഭങ്ങൾ", "പ്രണയം", "വിനോദം"],
     badActions_en: ["New ventures", "Romance", "Entertainment"],
-    spiritualOperations_ml: ["ശനി മന്ത്രങ്ങൾ", "കർമ്മ ശുദ്ധീകരണത്തിന്"],
-    spiritualOperations_en: ["Saturn mantras", "For karmic cleansing"],
+    spiritualOperations_ml: [],
+    spiritualOperations_en: [],
     source: "Havâss'ın Derinlikleri, p.51"
   }
 };
@@ -527,9 +527,10 @@ export function getAllPlanetaryHours(date, sunrise = 6.5, sunset = 18.25) {
     let status = 'upcoming';
 
     if (isDaytime) {
-      // Daytime: ALL Night Sahaths are COMPLETED — the previous night is finished.
-      // They stay expandable and clickable (status only affects styling).
-      status = 'past';
+      // Daytime: the night hours listed start at TODAY's sunset (they belong to
+      // the next planetary day, Kashf p.65) — they have not begun yet.
+      status = 'upcoming';
+      timeUntilStart = formatCountdown(startMs - currentHours * 60 * 60 * 1000);
     } else if (nightNowMs >= startMs && nightNowMs < endMs) {
       // Active — current time is between start and end
       timeRemaining = formatCountdown(endMs - nightNowMs);
