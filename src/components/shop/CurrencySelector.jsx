@@ -4,6 +4,7 @@ import { Globe, ChevronDown, Search, Check } from "lucide-react";
 import { useShopCurrency } from "@/hooks/useShopCurrency";
 import { getAllCountries } from "@/lib/shopCurrency";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   text: "#F5D060",
   dim: "rgba(212,175,55,0.55)",
@@ -15,6 +16,7 @@ const G = {
 export default function CurrencySelector({ compact = false }) {
   const { country, currencyInfo, changeCountry, ratesSource } = useShopCurrency();
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false));
   const [query, setQuery] = useState("");
 
   const countries = useMemo(() => getAllCountries(), []);

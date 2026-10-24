@@ -2,6 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, ZoomIn, X, Maximize2 } from "lucide-react";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   text: "#F5D060", dim: "rgba(212,175,55,0.55)",
   border: "rgba(212,175,55,0.30)", borderHi: "rgba(212,175,55,0.55)",
@@ -259,6 +260,7 @@ export default function PremiumGallery({ images = [], productName = "", initialI
             className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
             onClick={() => setFullscreen(false)}
           >
+            <BackLayer onBack={() => setFullscreen(false)} />
             <button
               onClick={(e) => { e.stopPropagation(); setFullscreen(false); }}
               className="absolute top-4 right-4 p-3 rounded-full z-10"

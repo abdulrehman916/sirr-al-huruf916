@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Share2, MessageCircle, Send, Link2, Check } from "lucide-react";
 import { trackShareClick } from "@/lib/shopAnalytics";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   text: "#F5D060",
   dim: "rgba(212,175,55,0.55)",
@@ -17,6 +18,7 @@ const G = {
  */
 export default function ShareMenu({ product }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false));
   const [copied, setCopied] = useState(false);
 
   const url = `${window.location.origin}/shop/${product.slug || product.id}`;

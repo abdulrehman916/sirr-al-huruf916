@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { GitCompare, X } from "lucide-react";
 import { getCompareList, toggleCompare, isInCompare, clearCompare } from "@/lib/shopUtils";
 
+import { BackLayer } from "@/lib/useBackLayer";
 const G = {
   text: "#F5D060",
   dim: "rgba(212,175,55,0.55)",
@@ -154,6 +155,7 @@ export default function CompareBar({ products = [] }) {
             className="fixed inset-0 z-50 flex items-end lg:items-center justify-center"
             style={{ background: "rgba(0,0,0,0.80)" }}
           >
+            <BackLayer onBack={() => setDrawerOpen(false)} />
             <motion.div
               initial={{ y: 60, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

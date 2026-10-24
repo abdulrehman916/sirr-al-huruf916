@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HelpCircle, ChevronDown } from "lucide-react";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   text: "#F5D060",
   dim: "rgba(212,175,55,0.55)",
@@ -10,6 +11,7 @@ const G = {
 
 export default function FaqSection({ faqs = [] }) {
   const [openIdx, setOpenIdx] = useState(null);
+  useBackLayer(openIdx != null, () => setOpenIdx(null)); // Back closes this first
 
   if (!faqs || faqs.length === 0) return null;
 
