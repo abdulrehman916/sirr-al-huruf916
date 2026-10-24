@@ -160,9 +160,9 @@ function Sheet({ h, data, onClose, isEn }) {
         </Box>
 
         <Box title={isEn ? "This sa'a" : "ഈ സാഅത്ത്"}>
-          <Line>{isEn ? NATURE_LABEL[p.nature].en : NATURE_LABEL[p.nature].ml} <span className="font-amiri" style={{ color: GOLD }}>{NATURE_LABEL[p.nature].ar}</span> (p.266)</Line>
-          {isIjaba && <Line color="#4ADE80">🤲 {isEn ? "Sa'at al-ijaba — du'a is answered (p.53)" : "ഇജാബത്തിന്റെ സാഅത്ത് — ദുആ സ്വീകരിക്കപ്പെടും (p.53)"}</Line>}
-          {isGhalaba && <Line color="#60A5FA">🏆 {isEn ? "Sa'at al-mughalaba — hour of victory (p.53)" : "മുഗാലബയുടെ സാഅത്ത് — ജയത്തിന്റെ സമയം (p.53)"}</Line>}
+          <Line>{isEn ? NATURE_LABEL[p.nature].en : NATURE_LABEL[p.nature].ml} <span className="font-amiri" style={{ color: GOLD }}>{NATURE_LABEL[p.nature].ar}</span></Line>
+          {isIjaba && <Line color="#4ADE80">🤲 {isEn ? "Sa'at al-ijaba — du'a is answered" : "ഇജാബത്തിന്റെ സാഅത്ത് — ദുആ സ്വീകരിക്കപ്പെടും"}</Line>}
+          {isGhalaba && <Line color="#60A5FA">🏆 {isEn ? "Sa'at al-mughalaba — hour of victory" : "മുഗാലബയുടെ സാഅത്ത് — ജയത്തിന്റെ സമയം"}</Line>}
         </Box>
 
         {moon?.mansion && (
@@ -170,8 +170,9 @@ function Sheet({ h, data, onClose, isEn }) {
             <Line>{isEn ? "Manzil" : "മൻസിൽ"} {moon.mansionNo}: <ArName tr={isEn ? MANSIONS_EN[moon.mansionNo].name : moon.mansion.ml} ar={moon.mansion.ar} /></Line>
             <Line>{isEn ? "Burj" : "ബുർജ്"}: <ArName tr={isEn ? SIGNS_TR_EN[moon.sign] : SIGNS_TR_ML[moon.sign]} ar={SIGNS_AR[moon.sign]} meaning={isEn ? SIGNS_EN[moon.sign] : SIGNS_ML[moon.sign]} strong={false} /></Line>
             <Line color={moon.mansion.nature === "saad" ? "#4ADE80" : moon.mansion.nature === "nahs" ? "#F87171" : "#FBBF24"}>
-              {moon.mansion.nature === "saad" ? (isEn ? "Sa'd (benefic)" : "സഅ്ദ് (ശുഭം)") : moon.mansion.nature === "nahs" ? (isEn ? "Nahs (malefic)" : "നഹ്സ് (അശുഭം)") : (isEn ? "Mumtazij (mixed)" : "മുംതസിജ് (കലർന്നത്)")} · {isEn ? "Travel" : "യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}
+              {isEn ? "Kharusi" : "ഖറൂസി"}: {moon.mansion.nature === "saad" ? (isEn ? "Sa'd (benefic)" : "സഅ്ദ് (ശുഭം)") : moon.mansion.nature === "nahs" ? (isEn ? "Nahs (malefic)" : "നഹ്സ് (അശുഭം)") : (isEn ? "Mumtazij (mixed)" : "മുംതസിജ് (കലർന്നത്)")}
             </Line>
+            <Line>{isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}</Line>
             {(isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml) && <Line color="rgba(255,255,255,0.5)">{isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml}</Line>}
           </Box>
         )}

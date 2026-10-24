@@ -57,7 +57,7 @@ const natLabel = (n, isEn) => ({
   good: isEn ? "Sa'd (good)" : "സഅ്ദ് (നല്ലത്)",
   bad: isEn ? "Nahs (bad)" : "നഹ്സ് (മോശം)",
 }[n] || n);
-const Src = ({ children }) => <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>📖 <span className="font-amiri">{K.BOOK.ar}</span> · {children}</p>;
+const Src = ({ children }) => <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>📖 <span className="font-amiri">{K.BOOK.ar}</span>{children ? <> · {children}</> : null}</p>;
 
 // ── QAMAR ──────────────────────────────────────────────────────
 export function QamarSection() {
@@ -78,15 +78,16 @@ export function QamarSection() {
   return (
     <div className="space-y-3">
       <Card title={isEn ? "Qamar now" : "ഖമർ ഇപ്പോൾ"}>
-        <P>{isEn ? "Manzil" : "മൻസിൽ"} {moon.mansionNo}: <b style={{ color: "#fff" }}>{isEn ? mnEn.name : mn.ml}</b> <Ar>{mn.ar}</Ar> · <span style={{ color: NAT_COLOR[mn.nature] }}>{natLabel(mn.nature, isEn)}</span></P>
+        <P>{isEn ? "Manzil" : "മൻസിൽ"} {moon.mansionNo}: <b style={{ color: "#fff" }}>{isEn ? mnEn.name : mn.ml}</b> <Ar>{mn.ar}</Ar> · <span style={{ color: NAT_COLOR[mn.nature] }}>{isEn ? "Kharusi" : "ഖറൂസി"}: {natLabel(mn.nature, isEn)}</span></P>
         <P>{isEn ? "Burj" : "ബുർജ്"}: <b style={{ color: "#fff" }}>{isEn ? K.SIGNS_TR_EN[moon.sign] : K.SIGNS_TR_ML[moon.sign]}</b> <Ar>{K.SIGNS_AR[moon.sign]}</Ar> ({isEn ? K.SIGNS_EN[moon.sign] : K.SIGNS_ML[moon.sign]}) · {moon.lon.toFixed(1)}°</P>
         <P>{phase} · {moon.light.toFixed(0)}%</P>
+        <P color="rgba(255,255,255,0.55)">{isEn ? "According to Hermes" : "ഹെർമിസ് പ്രകാരം"}:</P>
         <P>✓ {actList(mn.good, isEn)}</P>
         {mn.avoid.length > 0 && <P color="#F87171">✕ {actList(mn.avoid, isEn)}</P>}
-        <P>🧳 {isEn ? "Travel" : "യാത്ര"}: {isEn ? mnEn.travel : mn.travel_ml}</P>
+        <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? mnEn.travel : mn.travel_ml}</P>
         <P>🤲 {isEn ? "For needs, use the hour of" : "ആവശ്യങ്ങൾക്ക് ഉചിതമായ സാഅത്ത്"}: <b style={{ color: "#fff" }}>{isEn ? K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].tr_en : K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].tr_ml}</b> <Ar>{K.PLANETS[K.MOON_SIGN_NEEDS_HOUR[moon.sign]].ar}</Ar></P>
-        {moon.sign === 7 && <P color="#F87171">💍 {isEn ? "Qamar in Aqrab: no nikah (p.66)" : "ഖമർ അഖ്റബിൽ: നിക്കാഹ് വേണ്ട (p.66)"}</P>}
-        <Src>{isEn ? "manazil divided equally from 0° Hamal (p.127)" : "0° ഹമൽ മുതൽ 28 തുല്യ ഭാഗം (p.127)"}</Src>
+        {moon.sign === 7 && <P color="#F87171">💍 {isEn ? "Qamar in Aqrab: no nikah" : "ഖമർ അഖ്റബിൽ: നിക്കാഹ് വേണ്ട"}</P>}
+        <Src>{isEn ? "28 equal manazil from 0° Hamal" : "0° ഹമൽ മുതൽ 28 തുല്യ മനാസിൽ"}</Src>
       </Card>
 
       <div className="flex gap-1.5">
@@ -107,16 +108,17 @@ export function QamarSection() {
                   <span className="flex-1 min-w-0 text-xs truncate"><b style={{ color: "#fff" }}>{isEn ? en.name : m.ml}</b> <Ar>{m.ar}</Ar></span>
                   <span className="text-[10px] font-bold" style={{ color: NAT_COLOR[m.nature] }}>{natLabel(m.nature, isEn)}</span>
                 </>}>
+                <P color="rgba(255,255,255,0.55)">{isEn ? "According to Hermes" : "ഹെർമിസ് പ്രകാരം"}:</P>
                 <P>✓ {actList(m.good, isEn)}</P>
                 {m.avoid.length > 0 && <P color="#F87171">✕ {actList(m.avoid, isEn)}</P>}
-                <P>🧳 {isEn ? en.travel : m.travel_ml}{K.TRAVEL_GOOD_MANSIONS.includes(n) ? (isEn ? " · good for travel (p.75)" : " · യാത്രയ്ക്ക് നല്ലത് (p.75)") : ""}</P>
-                {K.MARRIAGE_GOOD_MANSIONS.includes(n) && <P color="#4ADE80">💍 {isEn ? "Good for nikah (p.76-77)" : "നിക്കാഹിന് നല്ലത് (p.76-77)"}</P>}
+                <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? en.travel : m.travel_ml}{K.TRAVEL_GOOD_MANSIONS.includes(n) ? (isEn ? " · Dhu al-Ghabra: good for travel" : " · ദുൽ-ഗബ്റ: യാത്രയ്ക്ക് നല്ലത്") : ""}</P>
+                {K.MARRIAGE_GOOD_MANSIONS.includes(n) && <P color="#4ADE80">💍 {isEn ? "Dhu al-Ghabra: good for nikah" : "ദുൽ-ഗബ്റ: നിക്കാഹിന് നല്ലത്"}</P>}
                 {(isEn ? en.note : m.note_ml) && <P color="rgba(255,255,255,0.5)">{isEn ? en.note : m.note_ml}</P>}
                 <P color="rgba(255,255,255,0.4)">{(n - 1) * (360 / 28) | 0}° – {(n * (360 / 28)) | 0}°</P>
               </Row>
             );
           })}
-          <Src>{isEn ? "nature p.55-56 · travel p.68-69 · works p.115-124" : "സ്വഭാവം p.55-56 · യാത്ര p.68-69 · പ്രവൃത്തികൾ p.115-124"}</Src>
+          <Src>{isEn ? "nature: Kharusi · travel: Nabhani · works: Hermes" : "സ്വഭാവം: ഖറൂസി · യാത്ര: നബ്ഹാനി · പ്രവൃത്തികൾ: ഹെർമിസ്"}</Src>
         </div>
       )}
 
@@ -131,8 +133,8 @@ export function QamarSection() {
                   <span className="flex-1 min-w-0 text-xs truncate"><b style={{ color: "#fff" }}>{isEn ? K.SIGNS_TR_EN[i] : K.SIGNS_TR_ML[i]}</b> <Ar>{ar}</Ar> <span style={{ color: "rgba(255,255,255,0.5)" }}>({isEn ? K.SIGNS_EN[i] : K.SIGNS_ML[i]})</span></span>
                   {i === moon.sign && <span className="text-[9px] font-bold" style={{ color: "#4ADE80" }}>{isEn ? "Qamar here" : "ഖമർ ഇവിടെ"}</span>}
                 </>}>
-                <P>🤲 {isEn ? "Qamar here → needs in the hour of" : "ഖമർ ഇവിടെ → ആവശ്യങ്ങൾക്ക്"} <b style={{ color: "#fff" }}>{isEn ? hp.tr_en : hp.tr_ml}</b> <Ar>{hp.ar}</Ar> ({isEn ? hp.en : hp.ml}) (p.54)</P>
-                {i === 7 && <P color="#F87171">💍 {isEn ? "Qamar here: no nikah (p.66)" : "ഖമർ ഇവിടെ: നിക്കാഹ് വേണ്ട (p.66)"}</P>}
+                <P>🤲 {isEn ? "Qamar here → needs in the hour of" : "ഖമർ ഇവിടെ → ആവശ്യങ്ങൾക്ക്"} <b style={{ color: "#fff" }}>{isEn ? hp.tr_en : hp.tr_ml}</b> <Ar>{hp.ar}</Ar> ({isEn ? hp.en : hp.ml})</P>
+                {i === 7 && <P color="#F87171">💍 {isEn ? "Qamar here: no nikah" : "ഖമർ ഇവിടെ: നിക്കാഹ് വേണ്ട"}</P>}
                 <P color="rgba(255,255,255,0.4)">{i * 30}° – {i * 30 + 30}°</P>
               </Row>
             );
@@ -147,9 +149,9 @@ export function QamarSection() {
 const RULES_DAY = { sun: 0, moon: 1, mars: 2, mercury: 3, jupiter: 4, venus: 5, saturn: 6 };
 const JAAD_ROLE = { saad: ["സഅ്ദ്", "Sa'd"], ghalaba: ["ഗലബ", "Ghalaba"], ijaba: ["ഇജാബ", "Ijaba"], baraka: ["ബറക്ക", "Baraka"] };
 const AFFINITY_NOTE = {
-  sun: ["അധികാരികളെ കാണാൻ (p.26)", "Meeting officials (p.26)"],
-  jupiter: ["ആവശ്യങ്ങൾ, റിസ്ഖ്, കച്ചവടം (p.27)", "Needs, rizq, trade (p.27)"],
-  venus: ["നിക്കാഹ്, സ്നേഹം (p.13)", "Nikah, affection (p.13)"],
+  sun: ["അധികാരികളെ കാണാൻ", "Meeting officials"],
+  jupiter: ["ആവശ്യങ്ങൾ, റിസ്ഖ്, കച്ചവടം", "Needs, rizq, trade"],
+  venus: ["നിക്കാഹ്, സ്നേഹം", "Nikah, affection"],
 };
 
 export function KawakibSection() {
@@ -157,7 +159,7 @@ export function KawakibSection() {
   const [open, setOpen] = useState(null);
   return (
     <div className="space-y-1.5">
-      <P color="rgba(255,255,255,0.55)">{isEn ? "Order of the hours (p.14-15): " : "സാഅത്തുകളുടെ ക്രമം (p.14-15): "}
+      <P color="rgba(255,255,255,0.55)">{isEn ? "Order of the hours: " : "സാഅത്തുകളുടെ ക്രമം: "}
         {K.PLANET_ORDER.map((k) => (isEn ? K.PLANETS[k].tr_en : K.PLANETS[k].tr_ml)).join(" → ")}</P>
       {K.PLANET_ORDER.map((k) => {
         const p = K.PLANETS[k], wd = K.WEEKDAYS[RULES_DAY[k]];
@@ -169,15 +171,15 @@ export function KawakibSection() {
               <span className="flex-1 min-w-0 text-xs truncate"><b style={{ color: "#fff" }}>{isEn ? p.tr_en : p.tr_ml}</b> <Ar>{p.ar}</Ar> <span style={{ color: "rgba(255,255,255,0.5)" }}>({isEn ? p.en : p.ml})</span></span>
               <span className="text-[10px] font-bold" style={{ color: p.base >= 75 ? "#4ADE80" : p.base >= 50 ? "#FBBF24" : "#F87171" }}>{(isEn ? K.NATURE_LABEL[p.nature].en : K.NATURE_LABEL[p.nature].ml).split(" — ")[0]}</span>
             </>}>
-            <P>{isEn ? K.NATURE_LABEL[p.nature].en : K.NATURE_LABEL[p.nature].ml} <Ar>{K.NATURE_LABEL[p.nature].ar}</Ar> (p.266)</P>
+            <P>{isEn ? K.NATURE_LABEL[p.nature].en : K.NATURE_LABEL[p.nature].ml} <Ar>{K.NATURE_LABEL[p.nature].ar}</Ar></P>
             <P>📅 {isEn ? "Rules the day" : "ഭരിക്കുന്ന ദിവസം"}: <b style={{ color: "#fff" }}>{isEn ? `Yawm al-${wd.tr_en}` : `യൗമുൽ ${wd.tr_ml}`}</b> <Ar>{wd.ar}</Ar> ({isEn ? wd.en : wd.ml}) — {isEn ? "its 1st day-hour" : "പകലിലെ ഒന്നാം സാഅത്ത്"}</P>
             {AFFINITY_NOTE[k] && <P color="#4ADE80">✓ {isEn ? AFFINITY_NOTE[k][1] : AFFINITY_NOTE[k][0]}</P>}
-            {jaad.length > 0 && <P>{isEn ? "Sheikh Jaad's table (p.54)" : "ശൈഖ് ജാഇദിന്റെ പട്ടിക (p.54)"}: {jaad.map(([d, role]) => `${isEn ? K.WEEKDAYS[d].tr_en : K.WEEKDAYS[d].tr_ml} — ${isEn ? JAAD_ROLE[role][1] : JAAD_ROLE[role][0]}`).join(" · ")}</P>}
+            {jaad.length > 0 && <P>{isEn ? "Sheikh Jaad's table" : "ശൈഖ് ജാഇദിന്റെ പട്ടിക"}: {jaad.map(([d, role]) => `${isEn ? K.WEEKDAYS[d].tr_en : K.WEEKDAYS[d].tr_ml} — ${isEn ? JAAD_ROLE[role][1] : JAAD_ROLE[role][0]}`).join(" · ")}</P>}
             <P color="rgba(255,255,255,0.5)">{isEn ? "Metal" : "ലോഹം"}: {isEn ? p.metal_en : p.metal_ml}</P>
           </Row>
         );
       })}
-      <Src>p.13-15, 26-27, 54, 266</Src>
+      <Src />
     </div>
   );
 }
@@ -207,12 +209,12 @@ export function AyyamSection() {
                   <span className="flex-1 min-w-0 text-xs truncate"><b style={{ color: "#fff" }}>{isEn ? `Yawm al-${w.tr_en}` : `യൗമുൽ ${w.tr_ml}`}</b> <Ar>{w.ar}</Ar> <span style={{ color: "rgba(255,255,255,0.5)" }}>({isEn ? w.en : w.ml})</span></span>
                 </>}>
                 <P>{isEn ? "Planet" : "ഗ്രഹം"}: <b style={{ color: "#fff" }}>{isEn ? p.tr_en : p.tr_ml}</b> <Ar>{p.ar}</Ar></P>
-                <P color="#4ADE80">✓ {actList(w.good, isEn)} (p.59, 66)</P>
+                <P color="#4ADE80">✓ {actList(w.good, isEn)}</P>
                 {(isEn ? w.note_en : w.note_ml) && <P>• {isEn ? w.note_en : w.note_ml}</P>}
-                <P>👕 {isEn ? w.clothesNote_en : w.clothesNote_ml} (p.67)</P>
-                <P>🧭 {isEn ? "Avoid travelling towards" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b> (p.57)</P>
-                <P>🤲 {isEn ? "Ijaba hour" : "ഇജാബത്തിന്റെ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.IJABA_HOUR[i]} · 🏆 {isEn ? "Mughalaba hour" : "മുഗാലബ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.MUGHALABA_HOUR[i]} (p.53)</P>
-                {K.MASTERS_HOURS.days.includes(i) && <P>⭐ {isEn ? "Day-hours 1 and 8 are excellent (p.13)" : "പകലിലെ 1, 8 സാഅത്തുകൾ ശ്രേഷ്ഠം (p.13)"}</P>}
+                <P>👕 {isEn ? w.clothesNote_en : w.clothesNote_ml}</P>
+                <P>🧭 {isEn ? "Avoid travelling towards" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b></P>
+                <P>🤲 {isEn ? "Ijaba hour" : "ഇജാബത്തിന്റെ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.IJABA_HOUR[i]} · 🏆 {isEn ? "Mughalaba hour" : "മുഗാലബ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.MUGHALABA_HOUR[i]}</P>
+                {K.MASTERS_HOURS.days.includes(i) && <P>⭐ {isEn ? "Day-hours 1 and 8 are excellent" : "പകലിലെ 1, 8 സാഅത്തുകൾ ശ്രേഷ്ഠം"}</P>}
               </Row>
             );
           })}
@@ -233,22 +235,22 @@ export function AyyamSection() {
                 </>}>
                 <P color="#4ADE80">✓ {actList(md.good, isEn)}</P>
                 {md.avoid.length > 0 && <P color="#F87171">✕ {actList(md.avoid, isEn)}</P>}
-                {kamil && <P color="#F87171">⛔ {isEn ? "One of the seven kawamil days (p.57-58)" : "ഏഴ് കവാമിൽ ദിവസങ്ങളിൽ ഒന്ന് (p.57-58)"}</P>}
+                {kamil && <P color="#F87171">⛔ {isEn ? "One of the seven kawamil days" : "ഏഴ് കവാമിൽ ദിവസങ്ങളിൽ ഒന്ന്"}</P>}
               </Row>
             );
           })}
-          <Src>p.60-65</Src>
+          <Src />
         </div>
       )}
 
       {tab === "nahs" && (
         <div className="space-y-3">
-          <Card title={isEn ? "Al-Kawamil — 7 days of every month (p.57-58)" : "അൽ-കവാമിൽ — എല്ലാ മാസവും 7 ദിവസം (p.57-58)"}>
+          <Card title={isEn ? "Al-Kawamil — 7 days of every month" : "അൽ-കവാമിൽ — എല്ലാ മാസവും 7 ദിവസം"}>
             <P><b style={{ color: "#F87171" }}>{K.KAWAMIL.join(", ")}</b></P>
             <P>{isEn ? "Avoid" : "ഒഴിവാക്കുക"}: {actList(K.KAWAMIL_AVOID, isEn)}</P>
-            <P>{isEn ? "Also the last Arbi'a (Wednesday) of each Hijri month (p.57)" : "കൂടാതെ ഓരോ ഹിജ്റ മാസത്തിലെയും അവസാന അർബിആഅ് (ബുധൻ) (p.57)"}</P>
+            <P>{isEn ? "Also the last Arbi'a (Wednesday) of each Hijri month" : "കൂടാതെ ഓരോ ഹിജ്റ മാസത്തിലെയും അവസാന അർബിആഅ് (ബുധൻ)"}</P>
           </Card>
-          <Card title={isEn ? "Al-Khalili — one nahs day per month (p.59)" : "അൽ-ഖലീലി — ഓരോ മാസവും ഒരു നഹ്സ് ദിവസം (p.59)"}>
+          <Card title={isEn ? "Al-Khalili — one nahs day per month" : "അൽ-ഖലീലി — ഓരോ മാസവും ഒരു നഹ്സ് ദിവസം"}>
             <div className="grid grid-cols-2 gap-1">
               {K.HIJRI_MONTHS_AR.map((ar, i) => (
                 <P key={i}><Ar>{ar}</Ar> {isEn ? K.HIJRI_MONTHS_EN[i] : K.HIJRI_MONTHS_ML[i]}: <b style={{ color: "#F87171" }}>{K.KHALILI_NAHS[i + 1]}</b></P>
