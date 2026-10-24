@@ -21,6 +21,9 @@ const IntelligentDashboard = lazy(() => import("@/components/astroclock/dashboar
 const DailyMantras = lazy(() => import("@/components/astroclock/dashboard/DailyMantras"));
 const SmartSearch = lazy(() => import("@/components/astroclock/dashboard/SmartSearch"));
 const SaatGrid = lazy(() => import("@/components/astroclock/dashboard/SaatGrid"));
+const QamarSection = lazy(() => import("@/components/astroclock/dashboard/KashfReference").then((m) => ({ default: m.QamarSection })));
+const KawakibSection = lazy(() => import("@/components/astroclock/dashboard/KashfReference").then((m) => ({ default: m.KawakibSection })));
+const AyyamSection = lazy(() => import("@/components/astroclock/dashboard/KashfReference").then((m) => ({ default: m.AyyamSection })));
 const MoonCenter = lazy(() => import("@/components/astroclock/dashboard/MoonCenter"));
 const MansionsReference = lazy(() => import("@/components/astroclock/dashboard/MansionsReference"));
 const PlanetEncyclopedia = lazy(() => import("@/components/astroclock/dashboard/PlanetEncyclopedia"));
@@ -34,11 +37,12 @@ import SourceBookPanel from "@/components/astroclock/dashboard/SourceBookPanel";
 
 function LangSelector() {
   const { language, setLanguage, txt } = useAstroClockLanguage();
+  // Two reading languages only. Arabic terms stay Arabic inside both.
   const langs = [
-    { key: "ml", label: "Malayalam" },
+    { key: "ml", label: "മലയാളം" },
     { key: "en", label: "English" },
-    { key: "ar", label: "Arabic" },
   ];
+  useEffect(() => { if (language === "ar") setLanguage("ml"); }, [language, setLanguage]);
   return (
     <div className="flex rounded-xl overflow-hidden" style={{ border: "1px solid rgba(212,175,55,0.30)" }}>
       {langs.map(l => (
@@ -203,8 +207,8 @@ function AstroClockContent() {
         {/* ── 8 Sections — each unique, no duplication ── */}
         {/* ── Section 1 — Live Saat cards (PRIMARY · always open · Kashf al-Haqa'iq) ── */}
         <AstroClockErrorBoundary label="Saat Grid">
-          <DashboardSection icon="⏰" title={txt("ഇപ്പോഴത്തെ സാഅത്ത് · 24 സാഅത്തുകൾ", "Current Saat · 24 Hours", "الساعة الآن · ٢٤ ساعة")}
-            subtitle={txt("കശ്ഫുൽ ഹഖാഇഖ് പ്രകാരം — കാർഡ് തൊട്ടാൽ വിശദാംശം", "Per Kashf al-Haqa'iq — tap a card for details", "حسب كشف الحقائق — اضغط البطاقة")}
+          <DashboardSection icon="⏰" title={language === "en" ? "Al-Sa'at الساعات — 24 hours" : "അസ്സാഅാത്ത് الساعات — 24 സാഅത്ത്"}
+            subtitle={language === "en" ? "Per Kashf al-Haqa'iq — tap a card for details" : "കശ്ഫുൽ ഹഖാഇഖ് പ്രകാരം — കാർഡ് തൊട്ടാൽ വിശദാംശം"}
             alwaysOpen badge="●">
             <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
               <SaatGrid />
@@ -212,7 +216,37 @@ function AstroClockContent() {
           </DashboardSection>
         </AstroClockErrorBoundary>
 
+        {/* ── Kashf reference — one place per subject ── */}
+        <AstroClockErrorBoundary label="Qamar">
+          <DashboardSection icon="🌙" title={language === "en" ? "Qamar القمر — Manazil & Buruj" : "ഖമർ القمر — മനാസിലും ബുറൂജും"}
+            subtitle={language === "en" ? "The Moon now, 28 manazil, 12 buruj" : "ഇപ്പോഴത്തെ ഖമർ, 28 മനാസിൽ, 12 ബുറൂജ്"}>
+            <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
+              <QamarSection />
+            </Suspense>
+          </DashboardSection>
+        </AstroClockErrorBoundary>
+
+        <AstroClockErrorBoundary label="Kawakib">
+          <DashboardSection icon="🪐" title={language === "en" ? "Al-Kawakib al-Sab'a الكواكب السبعة" : "അൽ-കവാകിബ് അസ്സബ്അ الكواكب السبعة"}
+            subtitle={language === "en" ? "The 7 planets — nature, day, hours" : "7 ഗ്രഹങ്ങൾ — സ്വഭാവം, ദിവസം, സാഅത്ത്"}>
+            <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
+              <KawakibSection />
+            </Suspense>
+          </DashboardSection>
+        </AstroClockErrorBoundary>
+
+        <AstroClockErrorBoundary label="Ayyam">
+          <DashboardSection icon="📅" title={language === "en" ? "Al-Ayyam الأيام — days & nahs" : "അൽ-അയ്യാം الأيام — ദിവസങ്ങളും നഹ്സും"}
+            subtitle={language === "en" ? "7 weekdays, 30 lunar days, kawamil, Khalili" : "7 ആഴ്ചദിവസം, 30 ചാന്ദ്രദിവസം, കവാമിൽ, ഖലീലി"}>
+            <Suspense fallback={<div className="py-8 text-center font-inter text-xs" style={{ color: "rgba(255,255,255,0.30)" }}>...</div>}>
+              <AyyamSection />
+            </Suspense>
+          </DashboardSection>
+        </AstroClockErrorBoundary>
+
+
         {/* ── Section 1 — Intelligent Today's Dashboard (PRIMARY · always open · live decision engine) ── */}
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Today Dashboard">
           <DashboardSection icon="🧭" title={txt("ഇന്നത്തെ തിരുമാനം", "Today's Dashboard", "لوحة اليوم")}
             subtitle={txt("തത്സമയ ഗ്രന്ഥ വിധായക യന്ത്രം — എല്ലാ പാളികളുടെയും സംയോജനം", "Live manuscript decision engine — synthesis of all layers", "محرّك القرار الحي — تركيب جميع الطبقات")}>
@@ -221,6 +255,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         {/* ── Reference & Study sections (non-operational) ── */}
         {!HIDE_EXTRAS && (
@@ -234,6 +269,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
         )}
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Smart Search">
           <DashboardSection icon="🔍" title={txt("സ്മാർട്ട് തിരച്ചിൽ", "Smart Search", "Akıllı Arama")}
             subtitle={txt("ഉദ്ദേശം → മികച്ച സഅാത്", "Purpose → Best Saat", "Amaç → En İyi Saat")}>
@@ -242,8 +278,10 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         {/* ── Preserved panels (kept collapsed; not removed) ── */}
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Moon Center">
           <DashboardSection icon="🌙" title={txt("ചന്ദ്ര കേന്ദ്രം", "Moon Center", "Ay Merkezi")}
             subtitle={txt("രാശി, ഘട്ടം, ചാന്ദ്ര മൻസിൽ, ശക്തി, സ്വഭാവം", "Zodiac, Phase, Mansion, Strength, Nature", "Burç, Evre, Menzil, Güç, Doğa")}>
@@ -252,7 +290,9 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Zodiac Encyclopedia">
           <DashboardSection icon="♈" title={txt("12 രാശികൾ", "12 Zodiac Signs", "12 Burç")}
             subtitle={txt("എല്ലാ രാശികളുടെയും പൂർണ്ണ വിശദാംശങ്ങൾ", "Full Details for All Signs", "Tüm Burçların Tam Detayları")}>
@@ -261,6 +301,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         {/* ── HIDDEN: Fixed Stars — pending Arabic verification ── */}
         {!HIDE_UNVERIFIED_ARABIC && (
@@ -289,6 +330,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
         )}
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Mansions">
           <DashboardSection icon="⭐" title={txt("28 അറബി ചാന്ദ്ര മൻസിലുകൾ", "28 Lunar Mansions", "28 Ay Menzili")}
             subtitle={txt("യഥാർത്ഥ അറബി പേരുകളോടെയുള്ള മൻസിൽ റഫറൻസ്", "Manzil / Nakshatra Reference", "Menzil / Nakşatra Referansı")}>
@@ -297,6 +339,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         {/* ── HIDDEN: Weekday Planetary Luck — pending Arabic verification ── */}
         {!HIDE_UNVERIFIED_ARABIC && (
@@ -352,6 +395,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
         )}
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="Planets">
           <DashboardSection icon="🪐" title={txt("ഗ്രഹ വിജ്ഞാനകോശം", "Planet Encyclopedia", "Gezegen Ansiklopedisi")}
             subtitle={txt("7 ഗ്രഹ ഭരണികൾ", "7 Planetary Rulers", "7 Gezegen Hükümdarı")}>
@@ -360,6 +404,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
 
         {!HIDE_EXTRAS && (
@@ -373,6 +418,7 @@ function AstroClockContent() {
         </AstroClockErrorBoundary>
         )}
 
+        {!HIDE_EXTRAS && (
         <AstroClockErrorBoundary label="References">
           <div id="reference-library" />
           <DashboardSection icon="📖" title={txt("റഫറൻസ് ലൈബ്രറി", "Reference Library", "Kaynak Kitaplığı")}
@@ -382,6 +428,7 @@ function AstroClockContent() {
             </Suspense>
           </DashboardSection>
         </AstroClockErrorBoundary>
+        )}
 
         {/* ── Admin-only: Screenshot Analysis & Merge ── */}
         {isAdmin && (
