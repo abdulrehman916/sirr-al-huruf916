@@ -11,6 +11,7 @@ import { usePageState } from "@/context/PageStateContext";
 import { matchesSectionCSearch, sectionCMeaning } from "@/lib/sectionCReaderState";
 import { collectSectionCShared } from "@/lib/birhatiahSharedContent";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // ── Section C — Birhatīya / Esoteric Invocation Names ──
 // INDEPENDENT module. Reads ONLY from HolyNameEsotericKnowledge.
 // Displays all 28 seeded cards as clickable, collapsible cards.
@@ -35,6 +36,7 @@ export default function SectionCNames() {
   const [initial] = useState(() => getPageState("holy-names-section-c", {}));
   const [query, setQuery] = useState(initial.query || "");
   const [openId, setOpenId] = useState(initial.openId || null);
+  useBackLayer(openId != null, () => setOpenId(null)); // Back closes this first
   const [collectiveOpen, setCollectiveOpen] = useState(Boolean(initial.collectiveOpen));
 
   useEffect(() => {

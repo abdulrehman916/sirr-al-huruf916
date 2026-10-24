@@ -4,6 +4,7 @@ import { ShieldCheck, Database, BookOpen, ChevronDown, Sparkles, FileText } from
 import { platform } from "@/api/platformClient";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 // ═══════════════════════════════════════════════════════════════
 // HolyNameVerifiedKnowledge — Knowledge Intelligence Engine reader
 // for a single Holy Name card.
@@ -74,6 +75,7 @@ const DISPLAY_ORDER = Object.keys(CATEGORY_LABELS);
 
 function EntryRow({ entry, idx, inlineDetails = false }) {
   const [open, setOpen] = useState(false);
+  useBackLayer(open, () => setOpen(false)); // Back closes this first
   const { language } = useHolyNamesLanguage();
   if (!entry) return null;
   const arabic = entry.arabic || (entry.language === "ar" ? entry.text : "");
