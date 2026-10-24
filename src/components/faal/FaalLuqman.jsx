@@ -4,6 +4,7 @@ import { Trash2, ChevronDown, ChevronUp } from "lucide-react";
 import { LUQMAN_CELLS } from "../../lib/faalLuqmanData";
 import { usePageState } from "../../context/PageStateContext";
 
+import { useBackLayer } from "@/lib/useBackLayer";
 const G = {
   borderHi: "rgba(212,175,55,0.65)",
   glow:     "rgba(212,175,55,0.22)",
@@ -40,6 +41,7 @@ export default function FaalLuqman() {
   const [lang, setLang] = useState(initialState.lang || "en");
   const [shuffled, setShuffled] = useState(initialState.shuffled);
   const [selectedCell, setSelectedCell] = useState(initialState.selectedCell);
+  useBackLayer(selectedCell != null, () => setSelectedCell(null)); // Back closes this first
   const [hasShuffledOnce, setHasShuffledOnce] = useState(initialState.hasShuffledOnce);
   const [instructionsExpanded, setInstructionsExpanded] = useState(false);
 
