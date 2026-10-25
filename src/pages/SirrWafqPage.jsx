@@ -19,6 +19,7 @@ import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
+import WafqCapraz from "@/components/wafq/WafqCapraz";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS } from "@/lib/wafqSurround";
@@ -63,6 +64,11 @@ function Stat({ ar, label, value }) {
   );
 }
 
+const TAB_BTN = (active) => ({
+  background: active ? "rgba(212,175,55,0.18)" : "transparent",
+  color: active ? GOLD : "rgba(255,255,255,0.6)",
+  border: `1px solid ${active ? "rgba(212,175,55,0.55)" : "rgba(212,175,55,0.22)"}`,
+});
 const Note = ({ children, color = "rgba(245,234,212,0.78)" }) => <p className="font-inter text-xs leading-relaxed" style={{ color }}>{children}</p>;
 const Ar = ({ children, size = "text-base" }) => <span className={`font-amiri ${size}`} style={{ color: GOLD }}>{children}</span>;
 const ArBlock = ({ children }) => (
@@ -192,6 +198,47 @@ function drawWafq(cv, o) {
   }
 }
 
+/**
+ * The crossed square. The book shows the two apart before it shows
+ * them together, because they are read as two separate vefks, so the
+ * same three views are offered here.
+ */
+function CaprazView({ cz, isEn, txt }) {
+  const [show, setShow] = useState("both");
+  const views = [
+    ["both", txt("രണ്ടും ചേർന്ന്", "Both together")],
+    ["inner", txt(`ഉള്ളിലേത് ${cz.inner.n}×${cz.inner.n}`, `Inner ${cz.inner.n}×${cz.inner.n}`)],
+    ["outer", txt(`പുറത്തേത് ${cz.outer.n}×${cz.outer.n}`, `Outer ${cz.outer.n}×${cz.outer.n}`)],
+  ];
+  return (
+    <div className="space-y-2">
+      <div className="flex flex-wrap gap-1.5">
+        {views.map(([k, l]) => (
+          <button key={k} type="button" onClick={() => setShow(k)}
+                  className="px-2.5 py-1 rounded-lg font-inter text-[10px] font-bold"
+                  style={TAB_BTN(show === k)}>{l}</button>
+        ))}
+      </div>
+      <div style={{ color: INK_C }}>
+        <WafqCapraz outer={cz.outer} inner={cz.inner} show={show} className="w-full h-auto" />
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {[[txt("ഉള്ളിലേത്", "Inner"), cz.inner], [txt("പുറത്തേത്", "Outer"), cz.outer]].map(([l, p]) => (
+          <span key={l} className="px-2 py-1 rounded-lg font-inter text-[10px] font-bold"
+                style={{ background: p.valid ? "rgba(74,222,128,0.12)" : "rgba(248,113,113,0.12)",
+                         color: p.valid ? "#4ADE80" : "#F87171" }}>
+            {l} {p.n}×{p.n} · {p.total} {p.valid ? "✓" : "✗"}
+          </span>
+        ))}
+      </div>
+      <Note color="rgba(255,255,255,0.5)">
+        {txt("ഉള്ളിലെ കള്ളിയാണ് ആദ്യം എഴുതേണ്ടത്. രണ്ടും ഒരേ ഉദ്ദേശ്യത്തിനായിരിക്കണം; ഹാദിമുകളുടെ പണി രണ്ടിനും വെവ്വേറെ ചെയ്യണം.",
+             "The inner square is written first. Both must be for the same purpose, and the work with the hâdims is done separately for each.")}
+      </Note>
+    </div>
+  );
+}
+
 function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, setMAyah, fallbackText, onDraw }) {
   const [open, setOpen] = useState(idx === 0);
   const useText = mText || fallbackText || "";
@@ -253,8 +300,12 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
                        `The size comes from the letter count — ${built.grid.length} letters, so ${built.grid.length}×${built.grid.length}. The size chosen above does not apply to this one.`)}
                 </Note>
               )}
-              <Grid grid={built.grid} arabic={!m.letters} />
-              {built.expected != null && (
+              {built.capraz ? (
+                <CaprazView cz={built.capraz} isEn={isEn} txt={txt} />
+              ) : (
+                <Grid grid={built.grid} arabic={!m.letters} />
+              )}
+              {!built.capraz && built.expected != null && (
                 <div className="flex flex-wrap gap-1.5">
                   {[...built.sums.rows.map((v, i) => [txt(`വരി ${i + 1}`, `Row ${i + 1}`), v]),
                     ...built.sums.cols.map((v, i) => [txt(`നിര ${i + 1}`, `Col ${i + 1}`), v]),

@@ -359,6 +359,58 @@ export const METHODS = [
     },
   },
   {
+    id: "capraz",
+    src: "havass",
+    sizes: [4, 5, 6, 7, 8, 9, 10],
+    capraz: true,
+    ml: "ചാപ്രാസ് — കോർത്ത കള്ളി", en: "Çapraz — the crossed vefk", ar: "",
+    ref_ml: "ഹവാസ്സ് I പേജ് 320-324 (ÇAPRAZ VEFKLER)",
+    ref_en: "Hâvâss I pp.320-324 (ÇAPRAZ VEFKLER)",
+    rules_ml: [
+      "ചാപ്രാസ് വഫ്ഖ് ഉണ്ടാകുന്നത് ഒന്നിൽ ഒന്ന് കോർത്ത രണ്ട് വഫ്ഖുകളിൽ നിന്നാണ് — ഒന്ന് ഒറ്റയും മറ്റേത് ഇരട്ടയും.",
+      "വീടുകൾ 45 ഡിഗ്രി ചരിഞ്ഞുനിൽക്കുന്നു എന്നതല്ലാതെ ഇത് നമുക്കറിയാവുന്ന വഫ്ഖിൽ നിന്ന് വ്യത്യസ്തമല്ല.",
+      "എഴുതുമ്പോൾ ആദ്യം ഉള്ളിലെ വഫ്ഖ് നിറയ്ക്കണം.",
+      "രണ്ടിനെയും സ്വതന്ത്രമായ രണ്ട് വഫ്ഖുകളായി കരുതണം. രണ്ടും ഒരേ ഇസ്മിന്റേതാകാം, വെവ്വേറെ ഇസ്മുകളുടേതുമാകാം — പക്ഷേ രണ്ടും ഒരേ ഉദ്ദേശ്യത്തിനുള്ളതായിരിക്കണം.",
+      "ചാപ്രാസ് വഫ്ഖിന്റെ രണ്ട് ഭാഗങ്ങൾ വെവ്വേറെ കാര്യങ്ങൾക്ക് ഉപയോഗിക്കാൻ പാടില്ല.",
+      "വഫ്ഖുകൾ തീർന്ന ശേഷമുള്ള പണികൾ — ഹാദിമുകളെ നിശ്ചയിക്കലും നയിക്കലും — രണ്ട് വഫ്ഖിനും വെവ്വേറെ ചെയ്യണം.",
+      "ഇതല്ലാതെ വഫ്ഖ് നിർമ്മാണത്തിന്റെ എല്ലാ നിയമങ്ങളും ചാപ്രാസിനും അതേപടി ബാധകം: സൂര്യ-ചന്ദ്ര കോണുകൾ, ആൺ-പെൺ വഫ്ഖുകൾ, സാഅത്തുകൾ, എല്ലാം.",
+      "ഒന്ന് ഹുറൂഫിയും മറ്റേത് സംഖ്യയുമാകാം; ഒന്ന് ഹാലി വസത്തും മറ്റേത് സാധാരണ സംഖ്യാ വഫ്ഖുമാകാം. ചിന്തിക്കാവുന്ന ഏത് വകഭേദവും ഉപയോഗിക്കാം.",
+      "ഇങ്ങനെ ഉണ്ടാക്കുന്ന വഫ്ഖിന്റെ ചുറ്റിലും മലക്കുകളുടെ പേരുകളോ ബിസ്മിയോ ആയത്തുകളോ എഴുതാം.",
+    ],
+    rules_en: [
+      "A çapraz vefk is made of two vefks fitted one into the other — one odd, the other even.",
+      "Apart from the houses standing turned through 45 degrees, it is no different from the vefk we know.",
+      "In the writing, the inner vefk must be filled first.",
+      "The two are to be thought of as two independent vefks. Both may belong to the same name, or to different names — but both must be made for the same purpose.",
+      "The two parts of a çapraz vefk may not be used for different works.",
+      "What follows the vefks — determining the hâdims and directing them — must be done separately for each of the two.",
+      "Beyond this, every rule of vefk-making applies to the çapraz unchanged: the Sun and Moon angles, male and female vefks, the hours, all of it.",
+      "One may be hurufî and the other numeric; or one hâli vasat and the other an ordinary numeric vefk. Any variation that comes to mind may be used.",
+      "Around a vefk prepared in this way the angels' names, the besmele or some ayat may likewise be written.",
+    ],
+    expects_ml: "രണ്ട് കള്ളിയും അതതിന്റെ തുകയിൽ ഒത്തുവരണം — വെവ്വേറെ പരിശോധിക്കുന്നു",
+    expects_en: "Each square must come out at its own total — they are checked separately",
+    needsTwo: true,
+    build(N, { n = 4, step = 1, ayahTotal = 0 } = {}) {
+      // The outer square is the one the size control names; the inner
+      // is one smaller, and it is the one written first.
+      const inN = n - 1;
+      if (inN < 3) return null;
+      const innerTotal = ayahTotal > 0 ? ayahTotal : N;
+      const out = buildWafq(N, n, { step });
+      const inn = buildWafq(innerTotal, inN, { step });
+      if (!out?.grid || !inn?.grid) return null;
+      return {
+        grid: out.grid, houses: out.houses,
+        ...checkAll(out.grid, N),
+        capraz: {
+          outer: { grid: out.grid, total: N, n, ...checkAll(out.grid, N) },
+          inner: { grid: inn.grid, total: innerTotal, n: inN, ...checkAll(inn.grid, innerTotal) },
+        },
+      };
+    },
+  },
+  {
     id: "tedahul",
     src: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
