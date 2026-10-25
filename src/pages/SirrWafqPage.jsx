@@ -20,7 +20,6 @@ import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/li
 import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
-import WafqUcgen from "@/components/wafq/WafqUcgen";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS } from "@/lib/wafqSurround";
@@ -200,51 +199,6 @@ function drawWafq(cv, o) {
 }
 
 /**
- * The triangular vefks. The book prints four figures and states no
- * rule for arranging one, so the figures are what is shown — and the
- * book's own doubt about the method is shown with them, first.
- */
-function UcgenView({ built, isEn, txt }) {
-  return (
-    <div className="space-y-3">
-      <div className="rounded-xl p-3 space-y-1.5"
-           style={{ background: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.3)" }}>
-        <p className="font-inter text-[11px]" style={{ color: "#FBBF24" }}>
-          ⚠ {txt("കിതാബ് തന്നെ പറയുന്നത്", "The book's own words")} (
-          {txt("പേ.", "p.")}{built.note.page})
-        </p>
-        <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
-          {isEn ? built.note.en : built.note.ml}
-        </p>
-        <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
-          {isEn ? built.doubt.en : built.doubt.ml}
-        </p>
-        <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.5)" }}>
-          {txt("ഏത് സംഖ്യ ഏത് വീട്ടിൽ എന്ന നിയമം കിതാബ് പറയുന്നില്ല. അതുകൊണ്ട് കിതാബിൽ അച്ചടിച്ച ചിത്രങ്ങൾ മാത്രമാണ് ഇവിടെ — ഒരു ക്രമീകരണവും സ്വയം ഉണ്ടാക്കുന്നില്ല.",
-               "The book states no rule for which number goes in which house. So only the figures it prints are shown here — no arrangement is generated.")}
-        </p>
-      </div>
-      {built.figures.map((f) => (
-        <div key={f.id} className="space-y-1.5">
-          <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
-            {isEn ? f.en : f.ml}{" "}
-            <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
-              ({txt("പേ.", "p.")}{f.page})
-            </span>
-          </p>
-          <div style={{ color: INK_C }} className="max-w-xs mx-auto">
-            <WafqUcgen rows={f.rows} apex={f.apex} className="w-full h-auto" />
-          </div>
-          <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
-            {isEn ? f.sides_en : f.sides_ml}
-          </p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-/**
  * The crossed square. The book shows the two apart before it shows
  * them together, because they are read as two separate vefks, so the
  * same three views are offered here.
@@ -346,9 +300,7 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
                        `The size comes from the letter count — ${built.grid.length} letters, so ${built.grid.length}×${built.grid.length}. The size chosen above does not apply to this one.`)}
                 </Note>
               )}
-              {built.figures ? (
-                <UcgenView built={built} isEn={isEn} txt={txt} />
-              ) : built.capraz ? (
+              {built.capraz ? (
                 <CaprazView cz={built.capraz} isEn={isEn} txt={txt} />
               ) : (
                 <Grid grid={built.grid} arabic={!m.letters} />

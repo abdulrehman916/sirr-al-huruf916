@@ -7,7 +7,6 @@
 // the page checks the built square against that.
 // ═══════════════════════════════════════════════════════════════
 import { ABJAD, asOf, jabrHouse, buildWafq, hollowWafq3, HOUSE_LETTERS, toArabicDigits } from "./sirrWafqEngine.js";
-import * as U from "./wafqUcgenData.js";
 
 export const SOURCES = {
   kashf: { ml: "കശ്ഫുൽ ഹഖാഇഖ്", en: "Kashf al-Haqa'iq", ar: "كشف الحقائق" },
@@ -358,20 +357,6 @@ export const METHODS = [
       const s = lineSums(h.grid);
       return { grid: h.grid, houses: GH, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
     },
-  },
-  {
-    id: "ucgen",
-    src: "havass",
-    sizes: [3, 4, 5, 6, 7, 8, 9, 10],
-    figures: true,
-    ml: "ത്രികോണ വഫ്ഖുകൾ", en: "Üçgen — the triangular vefks", ar: "",
-    ref_ml: "ഹവാസ്സ് I പേജ് 325-327 (ÜÇGEN VEFKLER)",
-    ref_en: "Hâvâss I pp.325-327 (ÜÇGEN VEFKLER)",
-    rules_ml: U.UCGEN_RULES.ml,
-    rules_en: U.UCGEN_RULES.en,
-    expects_ml: "വശങ്ങൾ മാത്രം തുകയിൽ ഒത്തുവരുന്നു — വരികളും നിരകളുമല്ല",
-    expects_en: "Only the sides come out at the total — not the rows and columns",
-    build() { return { figures: U.UCGEN_FIGURES, note: U.UCGEN_NOTE, doubt: U.UCGEN_DOUBT }; },
   },
   {
     id: "capraz",
