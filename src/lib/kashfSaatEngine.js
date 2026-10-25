@@ -9,6 +9,7 @@
 // location's own time zone — never the browser's.
 // ═══════════════════════════════════════════════════════════════
 import * as K from "./kashfSaatData.js";
+import * as O from "./kashfOtherSources.js";
 import { calculateSunriseSunset, getTzOffsetHours } from "./astroClockSunriseSunset.js";
 import { calculateMoonPosition } from "./astroClockMoonPosition.js";
 
@@ -200,6 +201,111 @@ function moonScore(a, hour, why) {
     why.push(R("ഖമർ ക്ഷയിക്കുന്നു", "The Qamar is waning"));
   }
   return clamp(s);
+}
+
+// ── The Moon's standing, and how severe a time is ──────────────
+// Waning on its own says little. What the books weigh is where the
+// Moon stands while it wanes — its burj and its manzil — and whether
+// the day and the hour agree with it. So the state is reported whole,
+// and the severity is the count of what the books mark as nahs, with
+// each one named and sourced rather than folded into a number.
+
+/**
+ * The Moon's full standing at one hour: its phase, its burj, its
+ * manzil, and every nahs mark the books put on them.
+ */
+export function moonState(hour, day) {
+  const m = hour?.moon;
+  if (!m?.mansion) return null;
+  const marks = [];
+  const sign = m.sign, mn = m.mansion, no = m.mansionNo;
+
+  // Waning is the Moon's ordinary state for half of every month, and
+  // Hâvâss states a preference for the waxing Moon rather than calling
+  // the waning Moon nahs. So it is reported, but tagged "info" and
+  // left out of the severity count; muhaq and ijtima below are the
+  // phase marks the books actually treat as nahs.
+  if (!m.waxing) {
+    marks.push(R("ഖമർ ക്ഷയിക്കുന്നു — നല്ല കർമ്മത്തിന് ഹവാസ്സ് വളരുന്ന ഖമറിനെയാണ് ചേർത്തുപറയുന്നത്",
+                 "The Qamar is waning — Hâvâss pairs constructive work with the waxing Moon", "info"));
+  }
+  if (O.TAHA_NAHS_BURUJ.includes(sign)) {
+    marks.push(R(`ഖമർ ${K.SIGNS_TR_ML[sign]} ബുർജിൽ — ഉസ്താദ് താഹ പ്രകാരം നഹ്സ്`,
+                 `Qamar in ${K.SIGNS_TR_EN[sign]} — nahs according to Ustad Taha`, "burj"));
+  }
+  if (sign === K.MAKRUH_AQD.moonInScorpio.sign) {
+    marks.push(R(`ഖമർ അഖ്റബിൽ — അഖ്ദ് കറാഹത്ത് (കശ്ഫ് പേ.${K.MAKRUH_AQD.moonInScorpio.page})`,
+                 `Qamar in Aqrab — contracts disliked (Kashf p.${K.MAKRUH_AQD.moonInScorpio.page})`, "burj"));
+  }
+  if (mn.nature === "nahs") {
+    marks.push(R(`മൻസിൽ ${no} ${mn.ml} — ഖറൂസ്വിയുടെ പട്ടികയിൽ നഹ്സ്`,
+                 `Manzil ${no} ${K.MANSIONS_EN[no].name} — nahs in al-Kharusi's table`, "manzil"));
+  }
+  // What the book itself attaches to this manzil. This is not a
+  // reason the time is nahs — it is what al-Kharusi's table says the
+  // manzil is for — so it carries its own tag and is reported apart
+  // from the nahs marks, in the book's words, with its page.
+  const work = K.MANSION_WORK[no];
+  if (work) {
+    marks.push(R(`${work.ml} — ${work.ar}`, `${work.en} — ${work.ar}`, "work"));
+  }
+  if (day?.isMuhaq) {
+    marks.push(R(`മുഹാഖ് — മാസാവസാനത്തെ മൂന്ന് ദിവസം (കശ്ഫ് പേ.${K.MAKRUH_AQD.lastThreeDays.page})`,
+                 `Muhaq — the month's last three days (Kashf p.${K.MAKRUH_AQD.lastThreeDays.page})`, "phase"));
+  }
+  const ij = ijtimaAt((hour.start + hour.end) / 2);
+  if (ij && ij.sep < 12) {
+    marks.push(R(`ഇജ്തിമാഅ് അടുത്ത് — ശംസും ഖമറും ${ij.sep.toFixed(1)}° അകലെ; ഈ സമയത്ത് വഫ്ഖ് ഉണ്ടാക്കരുതെന്ന് ഹവാസ്സ്`,
+                 `Near ijtima' — Sun and Moon ${ij.sep.toFixed(1)}° apart; Hâvâss makes no wafq at this time`, "phase"));
+  }
+  return {
+    waxing: m.waxing, sign, mansionNo: no, mansion: mn, work, ijtima: ij,
+    marks, nahsCount: marks.length,
+  };
+}
+
+// Severity goes by how many SIDES carry a nahs mark — the day, the
+// hour, the Moon's burj, its manzil, its phase — not by how many
+// marks there are. Counting marks makes a waning Moon, which is half
+// of every month, weigh as much as the day and the hour agreeing
+// against it, and then almost every hour reads as severe and the
+// warning stops meaning anything.
+const SEVERITY = {
+  0: { key: "clear",   ml: "നഹ്സ് അടയാളമില്ല",            en: "No nahs marks" },
+  1: { key: "some",    ml: "നഹ്സ് ഉണ്ട് — ഒരു വശത്ത്",      en: "Nahs — on one side" },
+  2: { key: "strong",  ml: "ശക്തമായ നഹ്സ് — രണ്ട് വശങ്ങൾ",  en: "Strong nahs — two sides" },
+  3: { key: "severe",  ml: "വളരെ നീചം — മൂന്നോ അതിലധികമോ വശങ്ങൾ ഒത്തുവരുന്നു", en: "Very severe — three or more sides agree" },
+};
+
+/**
+ * How severe a given hour is, counting the nahs marks the books put
+ * on the day, the hour and the Moon together. Nothing is invented:
+ * every mark carries the rule it comes from.
+ */
+export function timeSeverity(day, hour) {
+  const marks = [];
+  if (day?.isNahsDay) {
+    if (day.isKamil) marks.push(R(`ദിവസം ${day.lunarDay} — കവാമിലുന്നുഹൂസ്`, `Day ${day.lunarDay} — Kawamil al-nuhus`, "day"));
+    if (day.isKhalili) marks.push(R("ഖലീലിയുടെ മാസനഹ്സ് ദിവസം", "Al-Khalili's nahs day of the month", "day"));
+    if (day.isLastWed) marks.push(R(`മാസത്തിലെ അവസാന ബുധൻ — അർബആഅ് ലാ തദൂർ (പേ.${K.MAKRUH_AQD.wednesdayDaytime.page})`, `The month's last Wednesday — Arbi'a la tadur (p.${K.MAKRUH_AQD.wednesdayDaytime.page})`, "day"));
+    if (day.monthDay?.nature === "bad") marks.push(R(`ചാന്ദ്രദിനം ${day.lunarDay} നഹ്സ്`, `Lunar day ${day.lunarDay} is nahs`, "day"));
+  }
+  const hp = K.PLANETS[hour.planet];
+  if (hp && (hp.nature === "nahs_akbar" || hp.nature === "nahs_asghar")) {
+    marks.push(R(`സാഅത്ത് ${hp.tr_ml} — ${K.NATURE_LABEL[hp.nature].ml}`,
+                 `${hp.tr_en} hour — ${K.NATURE_LABEL[hp.nature].en}`, "hour"));
+  }
+  const ms = moonState(hour, day);
+  if (ms) marks.push(...ms.marks);
+
+  // "info" and "work" marks are reported but do not raise the
+  // severity: one is the Moon's ordinary state, the other is what the
+  // book attaches to the time rather than a mark against it.
+  const sides = new Set(
+    marks.filter((x) => x.tag !== "info" && x.tag !== "work").map((x) => x.tag)
+  ).size;
+  const level = SEVERITY[sides > 3 ? 3 : sides];
+  return { marks, count: marks.length, sides, level, moon: ms };
 }
 
 export function scoreActivities(day, hour) {

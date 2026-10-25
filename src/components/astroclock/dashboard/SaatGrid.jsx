@@ -10,11 +10,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { subscribeLocation } from "@/lib/astroClockGeolocation";
-import { getPlanetaryDay, formatClock } from "@/lib/kashfSaatEngine";
+import { getPlanetaryDay, formatClock, timeSeverity } from "@/lib/kashfSaatEngine";
 import { useBackLayer } from "@/lib/useBackLayer";
 import { moonSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { SOURCES, PLANET_OTHER, MANSION_OTHER, WEEKDAY_OTHER, TAHA_NAHS_BURUJ, BURJ_OTHER_NOTE, tahaNahsFor } from "@/lib/kashfOtherSources";
-import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN } from "@/lib/kashfSaatData";
+import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN, MANSION_WORK, MANSION_WORK_SOURCE } from "@/lib/kashfSaatData";
 
 const GOLD = "#F5D060";
 const VERDICT = {
@@ -134,6 +134,67 @@ function DaySummary({ day, isEn }) {
   );
 }
 
+const SEV_STYLE = {
+  clear:  { bg: "rgba(74,222,128,0.10)",  bd: "rgba(74,222,128,0.35)",  fg: "#4ADE80", icon: "✓" },
+  some:   { bg: "rgba(251,191,36,0.10)",  bd: "rgba(251,191,36,0.40)",  fg: "#FBBF24", icon: "⚠" },
+  strong: { bg: "rgba(248,113,113,0.12)", bd: "rgba(248,113,113,0.45)", fg: "#F87171", icon: "⛔" },
+  severe: { bg: "rgba(248,113,113,0.20)", bd: "rgba(248,113,113,0.70)", fg: "#FCA5A5", icon: "⛔" },
+};
+
+/**
+ * How severe this hour is, by the books' own marks on the day, the
+ * hour and the Moon together. Each mark is listed with the rule it
+ * comes from, so the reader sees what is stacking and why — a waning
+ * Moon alone reads differently from a waning Moon in a nahs burj on a
+ * nahs day in a nahs hour.
+ */
+function Severity({ day, h, isEn }) {
+  const sev = useMemo(() => timeSeverity(day, h), [day, h]);
+  if (!sev || sev.count === 0) return null;
+  const st = SEV_STYLE[sev.level.key] || SEV_STYLE.some;
+  return (
+    <div className="rounded-2xl p-3 space-y-1"
+      style={{ background: st.bg, border: `1px solid ${st.bd}` }}>
+      <p className="font-inter text-xs font-bold" style={{ color: st.fg }}>
+        {st.icon} {isEn ? sev.level.en : sev.level.ml}
+        <span style={{ color: "rgba(255,255,255,0.45)", fontWeight: 400 }}>
+          {" "}· {sev.count} {isEn ? "marks" : "അടയാളം"}
+          {sev.sides > 1 && (isEn ? `, across ${sev.sides} sides` : `, ${sev.sides} വശങ്ങളിൽ`)}
+        </span>
+      </p>
+      {sev.marks.filter((m) => m.tag !== "work").map((m, i) => (
+        <p key={i} className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}>
+          • {isEn ? m.en : m.ml}
+        </p>
+      ))}
+
+      {/* What the book attaches to this time, in its own words. It is
+          kept apart from the nahs marks above: those say why the time
+          is nahs, this says what the book puts in it. */}
+      {sev.marks.some((m) => m.tag === "work") && (
+        <div className="pt-1.5 mt-1.5" style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+          <p className="font-inter text-[10px] font-bold" style={{ color: "rgba(255,255,255,0.55)" }}>
+            {isEn
+              ? `What the book attaches to this manzil (Kashf p.${MANSION_WORK_SOURCE.page})`
+              : `ഈ മൻസിലിന് കിതാബ് ചേർത്തുപറയുന്നത് (കശ്ഫ് പേ.${MANSION_WORK_SOURCE.page})`}
+          </p>
+          {sev.marks.filter((m) => m.tag === "work").map((m, i) => (
+            <p key={i} className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
+              📜 {isEn ? m.en : m.ml}
+            </p>
+          ))}
+        </div>
+      )}
+
+      <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.4)" }}>
+        {isEn
+          ? "These are the books' marks on this time, each from the rule named. What is done with a time is the reader's own affair."
+          : "ഈ സമയത്തിന്മേൽ കിതാബുകൾ വെക്കുന്ന അടയാളങ്ങളാണിവ, ഓരോന്നും പറഞ്ഞ നിയമത്തിൽ നിന്ന്. ഈ സമയം എന്തിന് ഉപയോഗിക്കണമെന്നത് വായനക്കാരന്റെ കാര്യം."}
+      </p>
+    </div>
+  );
+}
+
 function Sheet({ h, data, onClose, isEn }) {
   const [openAct, setOpenAct] = useState(null);
   if (!h) return null;
@@ -165,6 +226,8 @@ function Sheet({ h, data, onClose, isEn }) {
           <Ring value={h.score} size={52} />
           <button type="button" onClick={onClose} className="text-xl px-2" style={{ color: "rgba(255,255,255,0.5)" }} aria-label="close">✕</button>
         </div>
+
+        <Severity day={day} h={h} isEn={isEn} />
 
         {/* Quick answer */}
         <div className="grid grid-cols-2 gap-2">
@@ -206,6 +269,19 @@ function Sheet({ h, data, onClose, isEn }) {
                 <Line color="#93C5FD">⏱ {isEn ? "Manzil until" : "ഈ മൻസിൽ"} {ms?.end ? fmtWhen(ms.end, loc, isEn) : "—"}{isEn ? "" : " വരെ"} · {isEn ? "burj until" : "ഈ ബുർജ്"} {bs?.end ? fmtWhen(bs.end, loc, isEn) : "—"}{isEn ? "" : " വരെ"}</Line>
               );
             })()}
+            <Line color={moon.waxing ? "#4ADE80" : "#FBBF24"}>
+              {moon.waxing
+                ? (isEn ? "Waxing — gaining light" : "വളരുന്നു — നൂർ കൂടുന്നു")
+                : (isEn ? "Waning — losing light" : "ക്ഷയിക്കുന്നു — നൂർ കുറയുന്നു")}
+              {day.isMuhaq && (isEn ? " · Muhaq, the month's last three days" : " · മുഹാഖ്, മാസാവസാനത്തെ മൂന്ന് ദിവസം")}
+            </Line>
+            {MANSION_WORK[moon.mansionNo] && (
+              <Line color={MANSION_WORK[moon.mansionNo].harm ? "#FCA5A5" : "rgba(255,255,255,0.75)"}>
+                📜 {isEn ? "Kharusi's table" : "ഖറൂസ്വിയുടെ പട്ടിക"}:{" "}
+                {isEn ? MANSION_WORK[moon.mansionNo].en : MANSION_WORK[moon.mansionNo].ml}{" "}
+                <span className="font-amiri" style={{ color: GOLD }}>{MANSION_WORK[moon.mansionNo].ar}</span>
+              </Line>
+            )}
             <Line>{isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}</Line>
             {(isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml) && <Line color="rgba(255,255,255,0.5)">{isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml}</Line>}
             <Others isEn={isEn} items={[mansionOther(moon.mansionNo, isEn), TAHA_NAHS_BURUJ.includes(moon.sign) ? { ...BURJ_OTHER_NOTE, color: "#F87171" } : null]} />
