@@ -340,6 +340,95 @@ const AFFINITY_NOTE = {
   venus: ["നിക്കാഹ്, സ്നേഹം", "Nikah, affection"],
 };
 
+/**
+ * Where a planet is strong and where it is harmed — Kashf p. 244.
+ * بيت and شرف are its own ground; وبال and هبوط are where it is undone.
+ */
+function Dignity({ k, isEn }) {
+  const d = K.PLANET_DIGNITY[k];
+  if (!d) return null;
+  const sign = (i) => (isEn ? K.SIGNS_TR_EN[i] : K.SIGNS_TR_ML[i]);
+  const signs = (a) => a.map(sign).join(isEn ? " and " : ", ");
+  const L = K.DIGNITY_LABEL;
+  const at = (x) => `${x.deg}° ${sign(x.sign)}`;
+  return (
+    <>
+      <P color="#4ADE80">
+        ✦ {isEn ? L.bayt.en : L.bayt.ml} <Ar>{L.bayt.ar}</Ar>: <b style={{ color: "#fff" }}>{signs(d.bayt)}</b>
+        {" · "}{isEn ? L.sharaf.en : L.sharaf.ml} <Ar>{L.sharaf.ar}</Ar>: <b style={{ color: "#fff" }}>{at(d.sharaf)}</b>
+      </P>
+      <P color="#FCA5A5">
+        ⚠ {isEn ? L.wabal.en : L.wabal.ml} <Ar>{L.wabal.ar}</Ar>: <b>{signs(d.wabal)}</b>
+        {" · "}{isEn ? L.hubut.en : L.hubut.ml} <Ar>{L.hubut.ar}</Ar>: <b>{at(d.hubut)}</b>
+      </P>
+      <P color="rgba(255,255,255,0.6)">
+        {isEn ? L.farah.en : L.farah.ml} <Ar>{L.farah.ar}</Ar>: {d.farah}
+        {" · "}{isEn ? L.jurm.en : L.jurm.ml} <Ar>{L.jurm.ar}</Ar>: {d.jurm}°
+        {" · "}<Ar>{d.tabia_ar}</Ar>
+      </P>
+      {d.note_ml && (
+        <P color="rgba(255,255,255,0.5)">{isEn ? d.note_en : d.note_ml} <Ar>{d.note_ar}</Ar></P>
+      )}
+    </>
+  );
+}
+
+/**
+ * The day and the hour taken together — Hâvâss I pp. 40-42.
+ * The book works this through for Venus hours only; the other six are
+ * left to the reader, and that gap is stated rather than filled.
+ */
+function DayHourCombo({ isEn }) {
+  const [open, setOpen] = useState(false);
+  const rule = K.HAVASS_DAY_HOUR_RULE, base = K.HAVASS_DAY_HOUR_BASE;
+  return (
+    <div className="mt-3 pt-3" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+      <Row open={open} onToggle={() => setOpen(!open)}
+        head={<>
+          <span className="text-lg w-6 text-center" style={{ color: GOLD }}>⚭</span>
+          <span className="flex-1 min-w-0 text-xs truncate">
+            <b style={{ color: "#fff" }}>
+              {isEn ? "The day and the hour together" : "ദിവസവും സാഅത്തും ചേർത്ത്"}
+            </b>{" "}
+            <span style={{ color: "rgba(255,255,255,0.5)" }}>
+              {isEn ? "(Hâvâss pp. 40-42)" : "(ഹവാസ്സ് പേ. 40-42)"}
+            </span>
+          </span>
+        </>}>
+        <P>{isEn ? rule.en : rule.ml}</P>
+        <P color="rgba(255,255,255,0.6)">⭐ {isEn ? base.en : base.ml}</P>
+        <P color="#C4B5FD" >
+          {isEn
+            ? "The book's own worked examples, all of them Venus hours:"
+            : "കിതാബ് തരുന്ന ഉദാഹരണങ്ങൾ — എല്ലാം സുഹ്റയുടെ സാഅത്തിന്:"}
+        </P>
+        {K.HAVASS_DAY_HOUR_VENUS.map((c, i) => {
+          const d = K.PLANETS[c.day];
+          return (
+            <P key={i} color={c.harm ? "#FCA5A5" : "rgba(255,255,255,0.8)"}>
+              <b style={{ color: c.harm ? "#FCA5A5" : "#fff" }}>
+                {isEn ? d.tr_en : d.tr_ml}
+              </b>{" "}
+              <Ar>{d.ar}</Ar> — {isEn ? c.en : c.ml}{" "}
+              <span style={{ color: "rgba(255,255,255,0.35)" }}>(p.{c.page})</span>
+            </P>
+          );
+        })}
+        <P color="rgba(255,255,255,0.5)">
+          {isEn ? K.HAVASS_DAY_HOUR_GAP.en : K.HAVASS_DAY_HOUR_GAP.ml}
+        </P>
+        <P color="#FBBF24">
+          ⚖ {isEn ? K.DIGNITY_IN_USE.en : K.DIGNITY_IN_USE.ml}{" "}
+          <Ar>{K.DIGNITY_IN_USE.ar}</Ar>{" "}
+          <span style={{ color: "rgba(255,255,255,0.35)" }}>
+            ({isEn ? "Kashf p." : "കശ്ഫ് പേ."}{K.DIGNITY_IN_USE.page})
+          </span>
+        </P>
+      </Row>
+    </div>
+  );
+}
+
 export function KawakibSection() {
   const { isEn } = useLang();
   const [open, setOpen] = useState(null);
@@ -362,11 +451,20 @@ export function KawakibSection() {
             <P>📅 {isEn ? "Rules the day" : "ഭരിക്കുന്ന ദിവസം"}: <b style={{ color: "#fff" }}>{isEn ? `Yawm al-${wd.tr_en}` : `യൗമുൽ ${wd.tr_ml}`}</b> <Ar>{wd.ar}</Ar> ({isEn ? wd.en : wd.ml}) — {isEn ? "its 1st day-hour" : "പകലിലെ ഒന്നാം സാഅത്ത്"}</P>
             {AFFINITY_NOTE[k] && <P color="#4ADE80">✓ {isEn ? AFFINITY_NOTE[k][1] : AFFINITY_NOTE[k][0]}</P>}
             {jaad.length > 0 && <P>{isEn ? "Sheikh Jaad's table" : "ശൈഖ് ജാഇദിന്റെ പട്ടിക"}: {jaad.map(([d, role]) => `${isEn ? K.WEEKDAYS[d].tr_en : K.WEEKDAYS[d].tr_ml} — ${isEn ? JAAD_ROLE[role][1] : JAAD_ROLE[role][0]}`).join(" · ")}</P>}
+            <Dignity k={k} isEn={isEn} />
             <P color="rgba(255,255,255,0.5)">{isEn ? "Metal" : "ലോഹം"}: {isEn ? p.metal_en : p.metal_ml}</P>
+            {k === "venus" && (
+              <P color="#C4B5FD">
+                ⚭ {isEn
+                  ? "Hâvâss pairs this planet's hours with other planets' days — see “The day and the hour together” below."
+                  : "ഈ ഗ്രഹത്തിന്റെ സാഅത്ത് മറ്റു ഗ്രഹങ്ങളുടെ ദിവസങ്ങളുമായി ചേർക്കുന്നത് ഹവാസ്സ് വിശദമാക്കുന്നു — താഴെ “ദിവസവും സാഅത്തും ചേർത്ത്” നോക്കുക."}
+              </P>
+            )}
             <Others isEn={isEn} items={O.PLANET_OTHER[k]} />
           </Row>
         );
       })}
+      <DayHourCombo isEn={isEn} />
       <Src />
     </div>
   );

@@ -445,3 +445,167 @@ export const HAVASS_INCENSE_NOTE = {
   en: "For a general purpose, plain buhur or frankincense alone may be burned.",
   page: "201",
 };
+
+// ═══════════════════════════════════════════════════════════════
+// The day and the hour taken together — Hâvâss I, pp. 40-42,
+// "SAATLERİN KULLANILIŞ MANTIĞI".
+//
+// The book's point is that a planet's hour comes round 24 times in a
+// week, and they are not interchangeable. The hour's planet sets what
+// kind of work it is; the planet of the day it falls in colours that
+// work. So the reader is told to combine the two deliberately rather
+// than wait for the one obvious hour.
+//
+// It then works this through for Venus hours only, and for the other
+// six planets it teaches the method and leaves the combining to the
+// reader. So only the Venus examples are recorded here. Nothing is
+// filled in for the rest: a table of forty-nine cells would be ours,
+// not the book's.
+// ═══════════════════════════════════════════════════════════════
+
+export const HAVASS_DAY_HOUR_RULE = {
+  tr: "Yıldızların etkilerini birbirlerine kombine ederek yapmalısınız. Yapmak istediğiniz işe uyan yıldızı bulduktan sonra onu hangi yıldızın günü veya gecesi ile birleştireceğinize karar vermek oldukça kolaydır.",
+  ml: "ഗ്രഹങ്ങളുടെ സ്വാധീനങ്ങൾ പരസ്പരം കൂട്ടിച്ചേർത്താണ് ചെയ്യേണ്ടത്. ചെയ്യാനുദ്ദേശിക്കുന്ന കാര്യത്തിന് ചേരുന്ന ഗ്രഹം ഏതെന്ന് കണ്ടെത്തിയ ശേഷം, അതിനെ ഏത് ഗ്രഹത്തിന്റെ പകലുമായോ രാത്രിയുമായോ ചേർക്കണമെന്ന് തീരുമാനിക്കുക എളുപ്പമാണ്.",
+  en: "You should work by combining the planets' influences with one another. Once you have found the planet that suits the work you mean to do, deciding which planet's day or night to join it with is quite easy.",
+  page: "42",
+};
+
+export const HAVASS_DAY_HOUR_BASE = {
+  ml: "ഏത് ഗ്രഹത്തിന്റെയും കർമ്മത്തിന് ഏറ്റവും അനുയോജ്യമായ സമയം ആ ഗ്രഹത്തിന്റെ ദിവസത്തിലെ ഒന്നാം സാഅത്താണ് — സുഹ്റയ്ക്ക് വെള്ളിയാഴ്ചയിലെ ഒന്നാം സാഅത്ത്. കൂട്ടുകൾ അതിനു പുറമെ, കർമ്മത്തിന് പ്രത്യേകമായ ഒരു നിറം ചേർക്കാനാണ്.",
+  en: "The plainest best time for any planet's work is the first hour of that planet's own day — for Venus, the first hour of Friday. The combinations below are for adding something particular on top of that.",
+  page: "41",
+};
+
+/**
+ * The book's worked examples, all of them Venus hours. `day` is the
+ * planet whose day (or night) the Venus hour falls inside.
+ * `harm: true` marks what the book itself describes as breaking a
+ * person or a bond; it is kept because the book says it, and it is
+ * marked because of what it is.
+ */
+export const HAVASS_DAY_HOUR_VENUS = [
+  {
+    day: "venus", page: "41",
+    tr: "Cuma gününün ilk saati",
+    ml: "വെള്ളിയാഴ്ചയിലെ ഒന്നാം സാഅത്ത് — ഏത് സുഹ്റ കർമ്മത്തിനും അടിസ്ഥാന ഉത്തമം",
+    en: "The first hour of Friday — the plain best for any Venus work",
+  },
+  {
+    day: "mars", page: "41",
+    tr: "Salı günü veya Mars gecesi içindeki Venüs saatleri — Venüs ve Mars etkilerinin karışımı",
+    ml: "ചൊവ്വാഴ്ചയിലോ മിർരീഖിന്റെ രാത്രിയിലോ ഉള്ള സുഹ്റ സാഅത്ത് — സുഹ്റയുടെയും മിർരീഖിന്റെയും സ്വാധീനങ്ങൾ കലർന്ന പ്രഭാവം; വികാരത്തെക്കാൾ ശാരീരികമായ വശം പ്രകടിപ്പിക്കുന്ന ഗ്രഹം മിർരീഖാണ്",
+    en: "Venus hours inside Tuesday or a Mars night — a mixture of the Venus and Mars influences; Mars is the planet that expresses the physical side rather than the feeling",
+  },
+  {
+    day: "mars", page: "42",
+    tr: "Bir düşman veya rakibinizle ya da dargın, kavgalı olduğunuz birisi ile barışmak",
+    ml: "ഒരു ശത്രുവുമായോ എതിരാളിയുമായോ, അല്ലെങ്കിൽ പിണങ്ങിയോ വഴക്കിട്ടോ നിൽക്കുന്ന ഒരാളുമായോ ഇണങ്ങാൻ — ചൊവ്വാഴ്ചയിലെ സുഹ്റ സാഅത്ത്",
+    en: "To make peace with an enemy or rival, or with someone you have quarrelled or fallen out with — Venus hours inside Tuesday",
+  },
+  {
+    day: "sun", page: "42",
+    tr: "Önemli bir kimsenin teveccühünü, desteğini, dostluğunu kazanmak",
+    ml: "പ്രധാനപ്പെട്ട ഒരാളുടെ പ്രീതിയും പിന്തുണയും സൗഹൃദവും നേടാൻ — ഞായറാഴ്ച, അതായത് ശംസിന്റെ ദിവസത്തിലെ സുഹ്റ സാഅത്ത്",
+    en: "To win the favour, support and friendship of an important person — Venus hours inside Sunday, the Sun's day",
+  },
+  {
+    day: "jupiter", page: "42",
+    tr: "Mahkeme, hâkimin desteği ve teveccühü, devlet dairelerinde halledilmesi gereken iş",
+    ml: "കോടതിക്കാര്യം, ജഡ്ജിയുടെ പിന്തുണയും പ്രീതിയും, സർക്കാർ ഓഫീസുകളിൽ തീർക്കേണ്ട കാര്യം — മുശ്തരിയുടെ പകലിലോ രാത്രിയിലോ ഉള്ള സുഹ്റ സാഅത്ത്",
+    en: "A court case, the judge's support and favour, business to be settled in government offices — Venus hours inside Jupiter's day or night",
+  },
+  {
+    day: "saturn", page: "42", harm: true,
+    tr: "Bir kadının ahlaksızlaştırılması, her türlü ahlak ve namus anlayışının kırılması, onun kötü yola düşürülmesi",
+    ml: "⚠ ഒരു സ്ത്രീയെ വഴിതെറ്റിക്കൽ, അവളുടെ സദാചാരബോധം തകർക്കൽ — സുഹലിന്റെ പകലിലോ രാത്രിയിലോ ഉള്ള സുഹ്റ സാഅത്ത് എന്ന് കിതാബ് പറയുന്നു",
+    en: "⚠ The book names this one too: corrupting a woman, breaking every sense of morals and honour in her, leading her astray — Venus hours inside Saturn's day or night",
+  },
+  {
+    day: "saturn", page: "42", harm: true,
+    tr: "İki sevgilinin veya karı kocanın ya da iki arkadaşın, ortağın aralarını bozmak",
+    ml: "⚠ രണ്ട് കാമുകരുടെയോ ഭാര്യാഭർത്താക്കന്മാരുടെയോ രണ്ട് കൂട്ടുകാരുടെയോ പങ്കാളികളുടെയോ ഇടയിൽ പിരിവുണ്ടാക്കാൻ — അതേ സുഹലിന്റെ പകലിലെയും രാത്രിയിലെയും സുഹ്റ സാഅത്ത്",
+    en: "⚠ Breaking apart two lovers, a husband and wife, or two friends or partners — the same Venus hours inside Saturn's day and night",
+  },
+];
+
+// ═══════════════════════════════════════════════════════════════
+// Where each planet is strong and where it is harmed —
+// Kashf al-Haqa'iq p. 244,
+// "جدول الكواكب بيوتها، شرفها، وبالها، أفراحها، إجرامها، طبيعتها".
+//
+// This is the book's own account of a planet's friendly and hostile
+// ground: بيت (its house) and شرف (its exaltation) are where it is
+// at full strength; وبال (detriment) and هبوط (fall) are where it is
+// undone. The book uses it directly when choosing an hour — at
+// p. 79 it requires of a marriage hour that neither the hour's lord
+// nor the Moon carry "نحوس الشهر والاحتراق والهبوط والوبال".
+//
+// Signs are given as indices into SIGNS_AR (0 = الحمل).
+// ═══════════════════════════════════════════════════════════════
+
+export const PLANET_DIGNITY = {
+  sun: {
+    bayt: [4], sharaf: { sign: 0, deg: 19 }, hubut: { sign: 6, deg: 19 }, wabal: [10],
+    farah: 9, jurm: 15, tabia_ar: "سعيد",
+    note_ar: "خاصة عند وجود الشمس في زوايا من برج التثليث أو التسديس",
+    note_ml: "വിശേഷിച്ച് ശംസ് തസ്‌ലീസിന്റെയോ തസ്ദീസിന്റെയോ കോണുകളിൽ നിൽക്കുമ്പോൾ",
+    note_en: "especially when the Sun stands in the angles of a trine or sextile",
+  },
+  moon: {
+    bayt: [3], sharaf: { sign: 1, deg: 3 }, hubut: { sign: 7, deg: 3 }, wabal: [9],
+    farah: 3, jurm: 12, tabia_ar: "سعيد",
+  },
+  mars: {
+    bayt: [0, 7], sharaf: { sign: 9, deg: 28 }, hubut: { sign: 3, deg: 28 }, wabal: [6, 1],
+    farah: 6, jurm: 8, tabia_ar: "نحس أصغر",
+  },
+  mercury: {
+    bayt: [2, 5], sharaf: { sign: 5, deg: 15 }, hubut: { sign: 11, deg: 15 }, wabal: [11],
+    farah: 1, jurm: 7, tabia_ar: "معتدل",
+    note_ar: "سعيد إذا قارن سعداً والعكس صحيح",
+    note_ml: "സഅ്ദിനോട് ചേർന്നാൽ സഅ്ദ്, നഹ്സിനോട് ചേർന്നാൽ നഹ്സ്",
+    note_en: "benefic when joined to a benefic, and the reverse",
+  },
+  jupiter: {
+    bayt: [8, 11], sharaf: { sign: 3, deg: 15 }, hubut: { sign: 9, deg: 15 }, wabal: [2, 5],
+    farah: 11, jurm: 9, tabia_ar: "سعيد (سعد أكبر)",
+  },
+  venus: {
+    bayt: [1, 6], sharaf: { sign: 11, deg: 27 }, hubut: { sign: 5, deg: 27 }, wabal: [0, 7],
+    farah: 5, jurm: 7, tabia_ar: "سعيد (سعد أصغر)",
+  },
+  saturn: {
+    bayt: [9, 10], sharaf: { sign: 6, deg: 21 }, hubut: { sign: 0, deg: 21 }, wabal: [3, 4],
+    farah: 12, jurm: 9, tabia_ar: "نحس أكبر",
+  },
+};
+
+export const DIGNITY_LABEL = {
+  bayt:   { ar: "بيته",    ml: "അതിന്റെ ഭവനം — പൂർണ്ണ ശക്തി",       en: "its house — full strength" },
+  sharaf: { ar: "شرفه",    ml: "ശറഫ് — ഉയർച്ച",                     en: "exaltation" },
+  hubut:  { ar: "هبوطه",   ml: "ഹുബൂത്വ് — വീഴ്ച",                   en: "fall" },
+  wabal:  { ar: "وباله",   ml: "വബാൽ — കേട്",                       en: "detriment" },
+  farah:  { ar: "فرحه",    ml: "ഫറഹ് — സന്തോഷിക്കുന്ന ഭവനം",         en: "its joy (house)" },
+  jurm:   { ar: "جرمه",    ml: "ജിർമ് — ഡിഗ്രി",                     en: "body, in degrees" },
+};
+
+export const PLANET_DIGNITY_SOURCE = {
+  page: "243-244",
+  ar: "جدول الكواكب بيوتها، شرفها، وبالها، أفراحها، إجرامها، طبيعتها",
+  ml: "ഗ്രഹങ്ങളുടെ ഭവനം, ശറഫ്, വബാൽ, ഫറഹ്, ജിർമ്, സ്വഭാവം എന്നിവയുടെ പട്ടിക",
+  en: "Table of the planets: their houses, exaltation, detriment, joys, bodies and nature",
+};
+
+/** p.79 — the book applying the table when it chooses an hour. */
+export const DIGNITY_IN_USE = {
+  ar: "والساعة واليوم مسعودان لا مدخل فيهما من نحوس الشهر والاحتراق والهبوط والوبال",
+  ml: "സാഅത്തും ദിവസവും സഅ്ദായിരിക്കണം — മാസത്തിന്റെ നഹ്സോ ഇഹ്തിറാഖോ ഹുബൂത്വോ വബാലോ അതിൽ കടക്കരുത്. അതായത് ഒരു ഗ്രഹം അതിന്റെ ഹുബൂത്വിലോ വബാലിലോ നിൽക്കുന്ന സമയം ആ കർമ്മത്തിന് ഒഴിവാക്കണം എന്ന് കിതാബ് തന്നെ പ്രയോഗിക്കുന്നു.",
+  en: "The hour and the day must both be fortunate, with nothing of the month's nahs, combustion, fall or detriment entering them — the book applying this table to the choice of an hour.",
+  page: "79",
+};
+
+export const HAVASS_DAY_HOUR_GAP = {
+  ml: "ബാക്കി ആറ് ഗ്രഹങ്ങൾക്ക് കിതാബ് ഇങ്ങനെ പട്ടിക തരുന്നില്ല. രീതി പഠിപ്പിച്ചിട്ട് കൂട്ടിച്ചേർക്കൽ വായനക്കാരന് വിടുകയാണ് ചെയ്യുന്നത്. അതുകൊണ്ട് ഇവിടെ അവ നിറച്ചിട്ടില്ല — നിറച്ചാൽ അത് കിതാബിന്റേതാവില്ല. ഓരോ ഗ്രഹത്തിന്റെയും സ്വഭാവവും കർമ്മങ്ങളും മുകളിലെ കവാകിബ് പട്ടികയിൽ ഉണ്ട്; അതുവെച്ച് മുകളിലെ നിയമം സ്വയം പ്രയോഗിക്കാം.",
+  en: "The book gives no such table for the other six planets. It teaches the method and leaves the combining to the reader, so nothing is filled in for them here — filling it in would make it ours, not the book's. Each planet's nature and works are in the Kawakib table above; apply the rule above with those.",
+  page: "40-42",
+};
