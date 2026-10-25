@@ -126,3 +126,40 @@ export function fmtSpan(span, loc, isEn) {
   const sameDay = civilOf(span.start, loc).d === civilOf(span.end, loc).d && span.end - span.start < DAY;
   return `${a} – ${fmtWhen(span.end, loc, isEn, !sameDay)}`;
 }
+
+// ── Best times for one activity, the day weighed first ─────────
+// Walks the next `days` planetary days and reads the per-activity score the
+// Saat engine already builds for every hour (day 45%, hour 35%, moon 20%).
+// Returns the hours still ahead, sorted by the day's score first, then total.
+//   aligned  — day, hour and moon all strong at once (shown on its own)
+//   best     — the rest, strongest first
+export function bestTimesFor(actId, fromMs, loc, days = 10, limit = 6) {
+  const out = [];
+  try {
+    for (let d = 0; d <= days; d++) {
+      const pd = getPlanetaryDay(fromMs + d * DAY, loc);
+      for (const h of pd.hours) {
+        if (h.end <= fromMs) continue;
+        const a = h.activities.find((x) => x.id === actId);
+        if (!a) continue;
+        out.push({
+          start: h.start, end: h.end, current: fromMs >= h.start,
+          planet: h.planet, period: h.period, num: h.num,
+          wd: pd.pDay.wd, dayFacts: pd.day, moon: h.moon,
+          total: a.total, parts: a.parts, verdict: a.verdict, why: a.why,
+          nahsDay: pd.day.isNahsDay,
+        });
+      }
+    }
+  } catch (_) { /* fall through */ }
+  // Drop near-duplicates of the same hour (a day's edges can repeat).
+  const seen = new Set();
+  const uniq = out.filter((h) => { const k = Math.round(h.start / 60000); if (seen.has(k)) return false; seen.add(k); return true; });
+  const strong = (h) => h.parts.day >= 65 && h.parts.hour >= 65 && h.parts.moon >= 65;
+  const byDayFirst = (x, y) => (y.parts.day - x.parts.day) || (y.total - x.total) || (x.start - y.start);
+  const aligned = uniq.filter(strong).sort((x, y) => (y.total - x.total) || (x.start - y.start)).slice(0, 3);
+  const alignedKeys = new Set(aligned.map((h) => h.start));
+  const best = uniq.filter((h) => h.verdict !== "avoid" && !strong(h) && !alignedKeys.has(h.start)).sort(byDayFirst).slice(0, limit);
+  const soonest = uniq.filter((h) => h.verdict !== "avoid").sort((x, y) => x.start - y.start).slice(0, 3);
+  return { aligned, best, soonest };
+}

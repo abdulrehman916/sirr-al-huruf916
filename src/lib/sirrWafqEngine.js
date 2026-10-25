@@ -239,3 +239,125 @@ export function workingSizes(N, step = 1) {
 export function toArabicDigits(v) {
   return String(v).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d]);
 }
+
+// ═══════════════════════════════════════════════════════════════
+// WRITING THE WAFQ — Kashf al-Haqa'iq, conditions 34 and after
+// (printed pages 49-52). Arabic kept exactly as the book prints it.
+// ═══════════════════════════════════════════════════════════════
+
+/** Condition 34: how the digits themselves must be written. */
+export const NUMBER_RULE = {
+  ar: "يجب مراعاة كتابة الخمسة هاء مشقوقة وأن يكون الصفر دائرة",
+  ml: "അക്കം 5 പിളർന്ന ഹാ (ﻫ) പോലെ എഴുതണം; പൂജ്യം ഒരു വൃത്തമായിരിക്കണം.",
+  en: "The 5 must be written as a split ha (ﻫ) and the zero as a circle.",
+  zeroEnd_ar: "وإذا كان الصفر آخر العدد فيضعه قبل تكملة العدد",
+  zeroEnd_ml: "പൂജ്യം സംഖ്യയുടെ അവസാനമാണെങ്കിൽ സംഖ്യ പൂർത്തിയാക്കുംമുമ്പ് അത് വെക്കണം. കിതാബിലെ ഉദാഹരണം: വീട്ടിൽ 340 വന്നാൽ ആദ്യം മുന്നൂറ്, പിന്നെ പൂജ്യം, പൂജ്യത്തിനു ശേഷം നാൽപ്പത്.",
+  zeroEnd_en: "If the zero is the last of the number, place it before completing the number. The book's example: 340 in a house — first the three hundred, then the zero, then the forty after it.",
+};
+
+/** Condition 34: the seven ranks written in the middle house (بيت الوسط). */
+export const SEVEN_RANKS = [
+  { n: 1, ar: "لفظ الجلالة", ml: "ലഫ്ദുൽ ജലാല (الله)", en: "The Name of Majesty (الله)", fixed: "الله" },
+  { n: 2, ar: "محمد صلى الله عليه وسلم", ml: "മുഹമ്മദ് ﷺ", en: "Muhammad ﷺ", fixed: "محمد صلى الله عليه وسلم" },
+  { n: 3, ar: "اسم الملك المناسب للحاجة", ml: "ആവശ്യത്തിന് യോജിച്ച മലക്കിന്റെ പേര്", en: "The angel suited to the need" },
+  { n: 4, ar: "اسم الطالب", ml: "ആവശ്യപ്പെടുന്നയാളുടെ പേര്", en: "The seeker's name" },
+  { n: 5, ar: "الحاجة", ml: "ആവശ്യം", en: "The need" },
+  { n: 6, ar: "المطلوب", ml: "തേടുന്ന കാര്യം", en: "The matter sought" },
+  { n: 7, ar: "عدد الضلع", ml: "വശത്തിന്റെ എണ്ണം (ളിൽഅ്)", en: "The number of the side" },
+];
+export const SEVEN_RANKS_NOTE = {
+  ar: "وتنزل الجميع في الوسط",
+  ml: "എല്ലാം നടുവിലെ വീട്ടിൽ ഇറക്കുന്നു.",
+  en: "All of them are brought down into the middle house.",
+  alt_ml: "മറ്റൊരു രീതി: മുകളിൽ പറഞ്ഞതെല്ലാം കൂട്ടി അതിൽനിന്ന് اييل (51) കുറച്ച്, കിട്ടുന്ന സംഖ്യയിൽ നിന്ന് ഒരു മലക്കിനെ എടുത്ത് നടുവിൽ സംഖ്യയായി വെക്കുക.",
+  alt_en: "Another way: add all of the above, drop اييل (51) from it, and from what remains draw an angel to be placed in the middle as a number.",
+};
+
+/** Condition 34: the angel suited to the need (only the beneficial pairs are carried here). */
+export const NEED_ANGEL = [
+  { id: "atf", ar: "العطف والمحبة", ml: "ഇണക്കവും സ്നേഹവും", en: "Affection and love", angel: "جبرائيل" },
+  { id: "rizq", ar: "الأرزاق والفتوح", ml: "രിസ്ഖും ഫുതൂഹും", en: "Provision and opening", angel: "ميكائيل" },
+];
+/** Picks the angel for a purpose id (see PURPOSES); falls back to the element's angel. */
+export function needAngelFor(purposeId) {
+  const atf = ["love", "accept"], rizq = ["needs", "work", "fath", "goal", "healing", "safety", "victory", "prisoner"];
+  if (atf.includes(purposeId)) return NEED_ANGEL[0];
+  if (rizq.includes(purposeId)) return NEED_ANGEL[1];
+  return null;
+}
+
+/** How many times the names are said — three opinions, the book calls the last the soundest. */
+export const RECITE_COUNT = {
+  opinions: [
+    { ar: "بعدد نطقها", ml: "ഉച്ചരിക്കുന്നതിന്റെ എണ്ണത്തോളം", en: "by the number of its utterances" },
+    { ar: "بقدر عدد ما في الوسط", ml: "നടുവിലെ വീട്ടിലുള്ള സംഖ്യയോളം", en: "by the number in the middle house" },
+    { ar: "بقدر عدد حروف الاسمين", ml: "രണ്ട് പേരുകളുടെയും അക്ഷരങ്ങളുടെ എണ്ണത്തോളം", en: "by the number of letters of the two names" },
+  ],
+  soundest: 2,
+  soundest_ml: "കിതാബ്: \"والأصح الأخير\" — ഏറ്റവും ശരിയായത് അവസാനത്തേത്.",
+  soundest_en: "The book: \"والأصح الأخير\" — the soundest is the last.",
+};
+
+/** Said before the tanzil (bringing down) of the names. */
+export const DUA_BEFORE = [
+  { count: 70, ar: "أستغفر الله الذي لا إله إلا هو الحي القيوم وأتوب إليه", ml: "ഇസ്തിഗ്ഫാർ — 70 തവണ", en: "Istighfar — 70 times" },
+  { count: 70, ar: "اللهم صل على سيدنا محمد وعلى آله وصحبه وسلم", ml: "നബി ﷺ യുടെ മേൽ സ്വലാത്ത് — 70 തവണ", en: "Salawat on the Prophet ﷺ — 70 times" },
+  { count: 1, ar: "يا بديع السماوات والأرض يا ذا الجلال والإكرام يا صريخ المستصرخين يا غياث المستغيثين يا مجيب دعوة المضطرين يا إله العالمين بك أنزل حاجتي وأنت أعلم بها فاقضها", ml: "പിന്നെ ഈ ദുആ, ശേഷം വീണ്ടും നബി ﷺ യുടെ മേൽ സ്വലാത്ത്", en: "Then this du'a, then salawat on the Prophet ﷺ again" },
+];
+export const DUA_BEFORE_WHEN = {
+  ar: "وهذا يكون إذا كان خالي الوسط أو بسر التداخل",
+  ml: "നടുവ് ഒഴിഞ്ഞ കള്ളിയാണെങ്കിലോ സിർറുത്തദാഖുൽ പ്രകാരമാണെങ്കിലോ ആണ് ഇത്.",
+  en: "This is when the middle is empty, or by sirr al-tadakhul.",
+};
+
+/** Said at the tanzil of the need. */
+export const DUA_TANZIL = {
+  ar: "إلهي من ذا الذي دعاك فلم تجبه، ومن ذا الذي سألك فلم تعطه، ومن ذا الذي استجار بك فلم تجره، ومن ذا الذي استعاذ بك فلم تعذه، ومن ذا الذي استغاث بك فلم تغثه، واغوثاه واغوثاه واغوثاه، يا غياث المستغيثين أغثني واقض حوائجي وحوائج المحتاجين والمسلمين بحرمة القرآن العظيم والنبي الكريم، اللهم افعل بنا ما أنت أهله ولا تفعل بنا ما نحن أهله فإنك أهل التقوى وأهل المغفرة ونحن أهل الذنوب والخطايا برحمتك يا أرحم الراحمين، وصلى الله على سيدنا محمد وعلى آله وصحبه وسلم",
+  ml: "ആവശ്യം ഇറക്കുമ്പോൾ ചൊല്ലേണ്ട ദുആ",
+  en: "The du'a read at the bringing down of the need",
+};
+
+/** What some scholars require to be written around the wafq in works of affection. */
+export const AROUND_WAFQ = {
+  scope_ar: "في جميع أعمال المحبات",
+  scope_ml: "സ്നേഹത്തിന്റെയും ഇണക്കത്തിന്റെയും (محبات) പ്രവൃത്തികളിൽ",
+  scope_en: "In all works of affection (محبات)",
+  how_ar: "أن يكتب حول الوفق إن أمكن أو يتلى عليه",
+  how_ml: "കഴിയുമെങ്കിൽ കള്ളിക്ക് ചുറ്റും എഴുതുക, അല്ലെങ്കിൽ അതിന്മേൽ ഓതുക.",
+  how_en: "Written around the wafq if possible, or recited over it.",
+  verses: [
+    { ar: "وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ أَرِنِي كَيْفَ تُحْيِي الْمَوْتَىٰ قَالَ أَوَلَمْ تُؤْمِن قَالَ بَلَىٰ وَلَٰكِن لِّيَطْمَئِنَّ قَلْبِي قَالَ فَخُذْ أَرْبَعَةً مِّنَ الطَّيْرِ فَصُرْهُنَّ إِلَيْكَ ثُمَّ اجْعَلْ عَلَىٰ كُلِّ جَبَلٍ مِّنْهُنَّ جُزْءًا ثُمَّ ادْعُهُنَّ يَأْتِينَكَ سَعْيًا", ref: "البقرة ٢٦٠", times: 3 },
+    { ar: "يَوْمَ نَطْوِي السَّمَاءَ كَطَيِّ السِّجِلِّ", ref: "الأنبياء ١٠٤", times: 1 },
+    { ar: "أَنَا آتِيكَ بِهِ قَبْلَ أَن يَرْتَدَّ إِلَيْكَ طَرْفُكَ فَلَمَّا رَآهُ مُسْتَقِرًّا عِندَهُ قَالَ هَٰذَا مِن فَضْلِ رَبِّي", ref: "النمل ٤٠", times: 1 },
+  ],
+};
+
+/** The spiritual ink (الحبر أو المداد الروحاني), printed page 52. */
+export const INK = {
+  title_ar: "الحبر أو المداد الروحاني",
+  items_ar: ["زعفران من النوع الممتاز الأصلي", "مسك خام", "دم الغزال (العكر الفاسي) أو دم الأخوين", "ماء ورد"],
+  items_ml: ["ഏറ്റവും മേന്മയുള്ള യഥാർത്ഥ കുങ്കുമം (സഅ്ഫറാൻ)", "പച്ച കസ്തൂരി (മിസ്ക് ഖാം)", "ദമുൽ ഗസാൽ (അൽ-അക്കറുൽ ഫാസി) അല്ലെങ്കിൽ ദമുൽ അഖവൈൻ", "പനിനീർ (മാഉൽ വർദ്)"],
+  items_en: ["Best-quality genuine saffron", "Raw musk", "Dam al-ghazal (al-'akar al-fasi) or dam al-akhawayn", "Rose water"],
+  steps_ml: [
+    "കുങ്കുമം കസ്തൂരിയുടെ മൂന്നിരട്ടി എടുക്കുക.",
+    "രണ്ടും പൊടിക്കുക.",
+    "ഒരു മരക്കമ്പ് കൊണ്ട് ഇളക്കി പനിനീർ ചേർത്ത് കലർത്തുക.",
+    "പിന്നെ ദമുൽ ഗസാൽ ചേർത്ത് നന്നായി യോജിപ്പിക്കുക.",
+    "ഇരുണ്ട കുപ്പിയിലോ പാത്രത്തിലോ സൂക്ഷിക്കുക.",
+  ],
+  steps_en: [
+    "Take the saffron at three times the musk.",
+    "Grind both.",
+    "Mix with a wooden stick, stirring, with rose water.",
+    "Then add the dam al-ghazal and blend well.",
+    "Keep it in a dark bottle or container.",
+  ],
+  note_ml: "ദമുൽ ഫാസിയോ ദമുൽ അഖവൈനോ നിർബന്ധമല്ല. ഉണ്ടാക്കുമ്പോഴും അതിനുശേഷവും സൂര്യവെളിച്ചത്തിൽ നിന്ന് അകറ്റി വെക്കണം.",
+  note_en: "The 'akar al-fasi or dam al-akhawayn is not a requirement. Keep the work away from sunlight, both while making it and after.",
+};
+
+/** General cautions printed with these conditions. */
+export const CAUTIONS = [
+  { ar: "تجنب وضع يدك أو مدها داخل السيبة أثناء تلاوة العزيمة ودوران العمل", ml: "ഓത്തിന്റെയും പ്രവൃത്തിയുടെയും ഇടയിൽ കൈ ഉള്ളിലേക്ക് വെക്കുകയോ നീട്ടുകയോ ചെയ്യരുത്.", en: "Do not put or stretch your hand inside during the recitation and the course of the work." },
+  { ar: "الكتمان فهو خير من الإفشاء", ml: "രഹസ്യമായി സൂക്ഷിക്കുക; വെളിപ്പെടുത്തുന്നതിനെക്കാൾ നല്ലത് അതാണ്.", en: "Keep it concealed; that is better than disclosing it." },
+];
