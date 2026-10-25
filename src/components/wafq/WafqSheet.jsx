@@ -38,6 +38,7 @@ export default function WafqSheet({
   besmele = true,
   verse = CORNER_VERSE,
   showSeals = true,
+  ringAround = "",          // the reader's own text, carried round the outside
   title = "",
   className = "",
 }) {
@@ -74,6 +75,21 @@ export default function WafqSheet({
         el.textContent = fitAt(word, splitIndexFor(word, slots), target, m);
       }
     });
+
+    // The ring is sized rather than spaced. Stretching a textPath with
+    // textLength opens gaps between the glyphs, which breaks the joins
+    // and leaves the letters standing apart; shrinking the type keeps
+    // every word in one piece, which is the thing that matters.
+    const ringEl = svg.querySelector("[data-ring]");
+    if (ringEl) {
+      const room = Number(ringEl.dataset.ring);
+      let fs = 34;
+      ringEl.style.fontSize = `${fs}px`;
+      for (let i = 0; i < 40 && ringEl.getComputedTextLength() > room && fs > 7; i++) {
+        fs -= 1;
+        ringEl.style.fontSize = `${fs}px`;
+      }
+    }
   });
 
   // ── the seven seals, right to left ──
@@ -139,6 +155,36 @@ export default function WafqSheet({
       })
     : null;
 
+  // ── a text of the reader's own, carried right round the outside ──
+  // It sits outside everything else: outside the angels' names, outside
+  // the besmele making the sides. However long the ayah, the whole of
+  // it goes round the ring once, the letters drawn to the circle so it
+  // closes where it began.
+  // The ring takes the outermost band of the sheet, and everything
+  // already drawn — the number, the seals, the names, the square — is
+  // drawn inward to leave it clear. Otherwise the ring runs straight
+  // through the seals at the top.
+  const ringText = (ringAround || "").trim();
+  const ringR = 470;
+  const innerScale = ringText ? 0.80 : 1;
+  const ring = ringText
+    ? (
+      <>
+        {/* The circle starts at the bottom, so the halfway point — where
+            the text is centred — falls at the top, and a short text sits
+            over the head of the sheet rather than under its foot. */}
+        <path id="wf-ring" fill="none"
+              d={`M ${C} ${C + ringR} A ${ringR} ${ringR} 0 1 1 ${C} ${C - ringR}`
+                 + ` A ${ringR} ${ringR} 0 1 1 ${C} ${C + ringR}`} />
+        <text className="wf-ring" data-ring={2 * Math.PI * ringR * 0.96}>
+          <textPath href="#wf-ring" startOffset="50%" textAnchor="middle">
+            {ringText}
+          </textPath>
+        </text>
+      </>
+    )
+    : null;
+
   // ── the square and its numbers ──
   const cell = size / n;
   const lines = [];
@@ -171,21 +217,27 @@ export default function WafqSheet({
         .wf-jinn  { font-size: 23px; opacity: .7; }
         .wf-bes   { font-size: 46px; }
         .wf-verse { font-size: 30px; }
+        .wf-ring  { font-size: 30px; }
         .wf-cell  { font-family: inherit; direction: ltr; }
         .wf-num   { font-size: 50px; font-family: inherit; }
         .wf line, .wf rect.sq { stroke: currentColor; fill: none; }
       `}</style>
       <g className="wf">
-        <text x={C} y={48} className="wf-num">
-          {String(BASMALA_NUMBER).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])}
-        </text>
-        {seals && <g transform="translate(0 62)" fill="currentColor">{seals}</g>}
-        {around}
-        {corners}
-        {sides}
-        <rect className="sq" x={a} y={a} width={size} height={size} strokeWidth="3" />
-        <g strokeWidth="2">{lines}</g>
-        {nums}
+        <g transform={`translate(0 ${ringText ? 86 : 0})`}>
+          <text x={C} y={48} className="wf-num">
+            {String(BASMALA_NUMBER).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])}
+          </text>
+          {seals && <g transform="translate(0 62)" fill="currentColor">{seals}</g>}
+        </g>
+        {ring}
+        <g transform={`translate(${C} ${C}) scale(${innerScale}) translate(${-C} ${-C})`}>
+          {around}
+          {corners}
+          {sides}
+          <rect className="sq" x={a} y={a} width={size} height={size} strokeWidth="3" />
+          <g strokeWidth="2">{lines}</g>
+          {nums}
+        </g>
       </g>
     </svg>
   );

@@ -28,12 +28,14 @@ const INK_C = "#f5ead4";
 const card = { background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.22)" };
 const WD_ML = ["ഞായർ", "തിങ്കൾ", "ചൊവ്വ", "ബുധൻ", "വ്യാഴം", "വെള്ളി", "ശനി"];
 const WD_EN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-// Side the four angels take when the user asks for them (their own practice).
+// Side each angel takes, as the book draws it (Hâvâss I, pp. 190 and
+// 289): top, left, right, bottom — the order of ج ا م ع, the letters
+// of Allah's attribute "Jami'", which is the reason the book gives.
 const SIDE_ANGELS = [
   { pos: "top", ar: "جبرائيل", ml: "മുകളിൽ", en: "Top" },
   { pos: "right", ar: "ميكائيل", ml: "വലത്ത്", en: "Right" },
-  { pos: "bottom", ar: "إسرافيل", ml: "താഴെ", en: "Bottom" },
-  { pos: "left", ar: "عزرائيل", ml: "ഇടത്ത്", en: "Left" },
+  { pos: "bottom", ar: "عزرائيل", ml: "താഴെ", en: "Bottom" },
+  { pos: "left", ar: "اسرافيل", ml: "ഇടത്ത്", en: "Left" },
 ];
 
 function Box({ step, title, children, tone, id }) {
@@ -292,6 +294,7 @@ export default function SirrWafqPage() {
   const [bismi, setBismi] = useState(true);
   const [sideAngels, setSideAngels] = useState(false);
   const [angel, setAngel] = useState("jibril");
+  const [ringAround, setRingAround] = useState("");
   const [seeker, setSeeker] = useState("");
   const [need, setNeed] = useState("");
   const [mText, setMText] = useState("");
@@ -321,7 +324,11 @@ export default function SirrWafqPage() {
   const actTimes = useMemo(() => (actId ? bestTimesFor(actId, Date.now(), loc) : null), [actId]);
   const manzilTimes = useMemo(() => (purpose ? purposeTimes(purpose, Date.now(), loc) : []), [purposeId]);
 
-  useEffect(() => { setResult(null); setWriteIdx(-1); }, [N, n, step, form, bismi, sideAngels]);
+  // Only what changes the numbers in the square sends the reader back to
+  // build it again. The besmele and the four angels are written around
+  // the square, not in it, so turning them on must not throw away a
+  // square that is already made.
+  useEffect(() => { setResult(null); setWriteIdx(-1); }, [N, n, step, form]);
 
   function generate() {
     if (!(N > 0)) return;
@@ -673,9 +680,31 @@ export default function SirrWafqPage() {
                 ))}
               </div>
 
+              {/* The reader's own text, carried right round the outside —
+                  outside the angels' names and outside the besmele. */}
+              <div className="rounded-2xl p-3 space-y-2" style={card}>
+                <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
+                  {txt("ചുറ്റും വട്ടത്തിൽ എഴുതാൻ (ഐച്ഛികം)", "Written round the outside (optional)")}
+                </p>
+                <textarea
+                  dir="rtl"
+                  rows={2}
+                  value={ringAround}
+                  onChange={(e) => setRingAround(e.target.value)}
+                  placeholder={txt("ആയത്തോ പദമോ ഇവിടെ എഴുതുക", "An ayah or a phrase")}
+                  className="w-full rounded-xl px-3 py-2 font-amiri text-lg"
+                  style={{ background: "rgba(0,0,0,0.25)", color: INK_C,
+                           border: "1px solid rgba(212,175,55,0.25)" }} />
+                <p className="font-inter text-[10px]" style={{ color: "rgba(245,234,212,0.5)" }}>
+                  {txt("എഴുതുന്നതെല്ലാം മലക്കുകളുടെ പേരുകൾക്കും ബിസ്മിക്കും പുറത്ത്, ഒരു വട്ടത്തിൽ മുഴുവനായി വരും. കള്ളിയുടെ ഉള്ളിൽ ഒന്നും കയറില്ല.",
+                       "Whatever you write goes round once, outside the angels' names and the besmele. Nothing enters the square.")}
+                </p>
+              </div>
+
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
                 <WafqSheet grid={result.grid} angel={angel} fourAngels={sideAngels}
-                           weekday={dayWd} besmele={bismi} className="w-full h-auto" />
+                           weekday={dayWd} besmele={bismi} ringAround={ringAround}
+                           className="w-full h-auto" />
               </div>
 
               <button type="button" className="w-full py-2 rounded-xl font-inter text-xs font-bold"

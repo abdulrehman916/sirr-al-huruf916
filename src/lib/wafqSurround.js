@@ -73,7 +73,7 @@ export const ARCHANGELS = [
     havass_en: "Abundance, provision, blessing",
   },
   {
-    id: "israfil", ar: "اسرافيل", ml: "ഇസ്റാഫീൽ", side: "bottom", harm: true,
+    id: "israfil", ar: "اسرافيل", ml: "ഇസ്റാഫീൽ", side: "left", harm: true,
     // the two books part company on this one
     kashf_ml: "⚠ പീഡയും രോഗവും (العذاب والأسقام)",
     havass_ml: "⚠ ഭിന്നത, വേർപിരിയൽ, ജോലിയിൽനിന്ന് പുറത്താക്കൽ",
@@ -81,7 +81,7 @@ export const ARCHANGELS = [
     havass_en: "⚠ Discord, separation, dismissal",
   },
   {
-    id: "azrail", ar: "عزرائيل", ml: "അസ്റാഈൽ", side: "left", harm: true,
+    id: "azrail", ar: "عزرائيل", ml: "അസ്റാഈൽ", side: "bottom", harm: true,
     kashf_ml: "⚠ നാശവും മരണവും (الهلاك والموت)",
     havass_ml: "⚠ നാശം, തകർച്ച, മരണം",
     kashf_en: "⚠ Destruction and death",
@@ -97,7 +97,10 @@ export const ARCHANGELS = [
  * Azrâil, so that the initials ج ا م ع spell جامع. Kept here for the
  * record, and switchable.
  */
-export const ANGEL_ROUND = ["jibril", "mikail", "israfil", "azrail"];
+// Placement as the book draws it (pp. 190, 289): top, left, right,
+// bottom — the order of ج ا م ع, the letters of Allah's attribute
+// "Jami'", which is why the book gives this sequence.
+export const ANGEL_ROUND = ["jibril", "israfil", "mikail", "azrail"];
 export const ANGEL_ROUND_JAMI = ["jibril", "israfil", "mikail", "azrail"];
 
 export const ANGEL_SUFFIX = "ع م";
