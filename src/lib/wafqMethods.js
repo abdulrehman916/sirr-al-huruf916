@@ -358,6 +358,51 @@ export const METHODS = [
       return { grid: h.grid, houses: GH, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
     },
   },
+  {
+    id: "tedahul",
+    src: "havass",
+    sizes: [3, 4, 5, 6, 7, 8, 9, 10],
+    sizeFromText: true,
+    ml: "സിർരി തദാഹുൽ", en: "Sırrı Tedahül", ar: "سر التداخل",
+    ref_ml: "ഹവാസ്സ് I പേജ് 328-329 (SIRRI TEDAHÜL USÜLÜ)",
+    ref_en: "Hâvâss I pp.328-329 (SIRRI TEDAHÜL USÜLÜ)",
+    rules_ml: [
+      "ഇസ്മ് ഏറ്റവും മുകളിലെ വരിയിൽ അക്ഷരം അക്ഷരമായി നേരെ എഴുതുക. പല ഇസ്മുകളാണെങ്കിൽ ഇസ്മ് ഇസ്മായി; നീണ്ട ആയത്താണെങ്കിൽ അക്ഷരങ്ങൾ വിഭജിച്ച്; സൂറത്താണെങ്കിൽ ആയത്ത് ആയത്തായി.",
+      "ഒരു വരിയിലെ വീടുകളുടെ എണ്ണം എഴുതാനുള്ള ഏകകങ്ങളുടെ എണ്ണത്തോളം — അതായത് അക്ഷരം എത്രയോ അത്ര വരിയും നിരയും.",
+      "രണ്ടാം വരിയുടെ തുടക്കത്തിൽ ഒന്നാം വരിയുടെ രണ്ടാമത്തെ അക്ഷരം എഴുതുക. പിന്നെ പദം അതേപടി തുടരുക, വരിയുടെ അവസാനം ഒന്നാമത്തെ അക്ഷരം എഴുതുക.",
+      "അതേ രീതി മൂന്നാം വരിക്കും; പദം വീണ്ടും അതേപടി വരുന്നതിന് തൊട്ടുമുമ്പ് വരെ തുടരുക.",
+      "കിതാബിന്റെ കുറിപ്പ്: ഇത് വഫ്ഖ് എന്നതിനെക്കാൾ തക്സീർ വിഭാഗത്തിൽ പെടുന്നു; പല ഹവാസ്സ് രേഖകളിലും വഫ്ഖ് എന്ന പേരിൽ കാണുന്നതുകൊണ്ടാണ് വഫ്ഖുകളുടെ ഭാഗത്ത് ചേർത്തത്.",
+    ],
+    rules_en: [
+      "The name is written across the topmost row, letter by letter. If several names, name by name; if a long ayah, its letters divided; if a surah, ayah by ayah.",
+      "The number of houses in a row is the number of units to be written — as many rows and columns as there are letters.",
+      "At the head of the second row goes the second letter of the first row. The word then continues as it is, and the first letter is written at the end of the row.",
+      "The same for the third row, and so on until just before the word comes out as itself again.",
+      "The book's own note: this belongs to the teksir class rather than to the vefks; it is placed among the vefks because many Hâvâss documents show it under that name.",
+    ],
+    expects_ml: "അക്ഷരക്കള്ളിയായതിനാൽ സംഖ്യാ പരിശോധന ബാധകമല്ല",
+    expects_en: "Being a letter square, the numeric check does not apply",
+    needsText: true,
+    letters: true,
+    build(N, { text = "" } = {}) {
+      const ls = lettersOf(text);
+      const k = ls.length;
+      if (k < 2) return null;
+      // Each row is the letters carried one step to the left, the one
+      // that falls off the head coming back round to the tail. The last
+      // row is the step before the name reads as itself again.
+      const grid = Array.from({ length: k }, (_, r) =>
+        Array.from({ length: k }, (_, c) => ls[(r + c) % k].ch)
+      );
+      const numeric = Array.from({ length: k }, (_, r) =>
+        Array.from({ length: k }, (_, c) => ls[(r + c) % k].v)
+      );
+      return {
+        grid, houses: null, numeric, sums: lineSums(numeric),
+        valid: null, expected: null, n: k,
+      };
+    },
+  },
 ];
 
 export const methodsFor = (n) => METHODS.filter((m) => m.sizes.includes(n));

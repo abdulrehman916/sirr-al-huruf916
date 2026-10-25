@@ -247,6 +247,12 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
               : txt("അറബിയിൽ ഒരു പേരോ ആയത്തോ മുകളിൽ നൽകുക.", "Enter an Arabic name or ayah above.")}</Note>
           ) : (
             <>
+              {m.sizeFromText && (
+                <Note color="rgba(255,255,255,0.55)">
+                  {txt(`കള്ളിയുടെ വലുപ്പം അക്ഷരങ്ങളുടെ എണ്ണത്തിൽ നിന്നാണ് വരുന്നത് — ${built.grid.length} അക്ഷരം, അതുകൊണ്ട് ${built.grid.length}×${built.grid.length}. മുകളിൽ തിരഞ്ഞെടുത്ത വലുപ്പം ഇതിന് ബാധകമല്ല.`,
+                       `The size comes from the letter count — ${built.grid.length} letters, so ${built.grid.length}×${built.grid.length}. The size chosen above does not apply to this one.`)}
+                </Note>
+              )}
               <Grid grid={built.grid} arabic={!m.letters} />
               {built.expected != null && (
                 <div className="flex flex-wrap gap-1.5">
