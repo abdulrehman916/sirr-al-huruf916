@@ -25,6 +25,7 @@ const TAB_KEYS = [
   { id: "holy-names", arabicTitle: "الأسماء", englishSubtitle: "NAMES", path: "/holy-names" },
   { id: "sirr", arabicTitle: "السر", englishSubtitle: "SIRR", path: "/sirr" },
   { id: "astro-clock", arabicTitle: "الساعة", englishSubtitle: "ASTRO", path: "/astro-clock" },
+  { id: "sirr-al-wafq", arabicTitle: "الوفق", englishSubtitle: "WAFQ", path: "/sirr-al-wafq" },
   { id: "shop", arabicTitle: "المتجر", englishSubtitle: "SHOP", path: "/shop" },
   { id: "support", arabicTitle: "الدعم", englishSubtitle: "SUPPORT", path: "/support" },
 ];

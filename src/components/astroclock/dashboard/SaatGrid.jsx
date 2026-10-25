@@ -12,6 +12,7 @@ import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { subscribeLocation } from "@/lib/astroClockGeolocation";
 import { getPlanetaryDay, formatClock } from "@/lib/kashfSaatEngine";
 import { useBackLayer } from "@/lib/useBackLayer";
+import { moonSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { SOURCES, PLANET_OTHER, MANSION_OTHER, WEEKDAY_OTHER, TAHA_NAHS_BURUJ, BURJ_OTHER_NOTE, tahaNahsFor } from "@/lib/kashfOtherSources";
 import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN } from "@/lib/kashfSaatData";
 
@@ -198,6 +199,13 @@ function Sheet({ h, data, onClose, isEn }) {
             <Line color={moon.mansion.nature === "saad" ? "#4ADE80" : moon.mansion.nature === "nahs" ? "#F87171" : "#FBBF24"}>
               {isEn ? "Kharusi" : "ഖറൂസി"}: {moon.mansion.nature === "saad" ? (isEn ? "Sa'd (benefic)" : "സഅ്ദ് (ശുഭം)") : moon.mansion.nature === "nahs" ? (isEn ? "Nahs (malefic)" : "നഹ്സ് (അശുഭം)") : (isEn ? "Mumtazij (mixed)" : "മുംതസിജ് (കലർന്നത്)")}
             </Line>
+            {(() => {
+              const mid = (h.start + h.end) / 2, loc = getUserLocation();
+              const ms = moonSpan("mansion", moon.mansionNo - 1, mid), bs = moonSpan("sign", moon.sign, mid);
+              return (
+                <Line color="#93C5FD">⏱ {isEn ? "Manzil until" : "ഈ മൻസിൽ"} {ms?.end ? fmtWhen(ms.end, loc, isEn) : "—"}{isEn ? "" : " വരെ"} · {isEn ? "burj until" : "ഈ ബുർജ്"} {bs?.end ? fmtWhen(bs.end, loc, isEn) : "—"}{isEn ? "" : " വരെ"}</Line>
+              );
+            })()}
             <Line>{isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? MANSIONS_EN[moon.mansionNo].travel : moon.mansion.travel_ml}</Line>
             {(isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml) && <Line color="rgba(255,255,255,0.5)">{isEn ? MANSIONS_EN[moon.mansionNo].note : moon.mansion.note_ml}</Line>}
             <Others isEn={isEn} items={[mansionOther(moon.mansionNo, isEn), TAHA_NAHS_BURUJ.includes(moon.sign) ? { ...BURJ_OTHER_NOTE, color: "#F87171" } : null]} />

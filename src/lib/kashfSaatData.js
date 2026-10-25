@@ -222,3 +222,33 @@ export const MANSIONS_EN = [
   { name: "Sa'd al-Akhbiya", travel: "unclear", note: "Kharusi: benefic; Hermes, Amili: malefic" }, { name: "Fargh al-Muqaddam", travel: "returns without money" },
   { name: "Fargh al-Mu'akhkhar", travel: "good" }, { name: "Batn al-Hut", travel: "gain" },
 ];
+
+// ── Manazil: best hours (al-Khalili's commentary, "خير ساعاته") ──
+// Planet keys; mansions the commentary gives no hours for are absent.
+export const MANSION_BEST_HOURS = {
+  2: ["mars", "venus"], 3: ["venus", "mars"], 5: ["mercury"], 6: ["venus"], 7: ["venus", "mars"],
+  8: ["mercury", "moon"], 9: ["saturn", "jupiter"], 10: ["mercury"], 11: ["venus"], 12: ["venus", "mercury", "moon"],
+  13: ["saturn", "moon", "jupiter"], 14: ["mercury"], 15: ["saturn", "sun"], 16: ["saturn"], 17: ["saturn", "jupiter"],
+  18: ["saturn", "jupiter"], 19: ["mars"], 20: ["mars"], 21: ["jupiter", "mars"], 22: ["sun", "moon"],
+};
+// Mansions whose commentary names only works against others — no "best hour" is offered for them.
+export const MANSION_HOURS_WITHHELD = [9, 14, 22];
+
+// ── Manazil: purpose from the book's table "جدول الأعمال للمنازل" (beneficial entries) ──
+export const MANSION_PURPOSE = {
+  2: { ar: "للمحبة", ml: "സ്നേഹത്തിന്", en: "for love" },
+  3: { ar: "للألفة", ml: "ഇണക്കത്തിന്", en: "for harmony" },
+  4: { ar: "للوصول", ml: "ലക്ഷ്യത്തിലെത്താൻ", en: "for reaching (a goal)" },
+  6: { ar: "للاجتماع", ml: "ഒത്തുചേരലിന്", en: "for gathering together" },
+  7: { ar: "للنصر", ml: "വിജയത്തിന്", en: "for victory" },
+  11: { ar: "للقبول", ml: "സ്വീകാര്യതയ്ക്ക്", en: "for acceptance" },
+  15: { ar: "للأمن", ml: "സുരക്ഷയ്ക്ക്", en: "for safety" },
+  17: { ar: "لإزالة الحمى", ml: "പനി മാറാൻ", en: "for removing fever" },
+  18: { ar: "للنصر", ml: "വിജയത്തിന്", en: "for victory" },
+  19: { ar: "لخلاص المسجون", ml: "തടവുകാരന്റെ മോചനത്തിന്", en: "for freeing a prisoner" },
+  20: { ar: "للفتح", ml: "തുറവിക്ക് (ഫത്ഹ്)", en: "for opening (fath)" },
+  23: { ar: "للشفاء", ml: "ശിഫയ്ക്ക് (രോഗശമനം)", en: "for healing" },
+  24: { ar: "لحفظ النفس", ml: "സ്വയം സംരക്ഷണത്തിന്", en: "for self-protection" },
+  26: { ar: "للعمل", ml: "പ്രവൃത്തിക്ക്", en: "for work" },
+  28: { ar: "لقضاء الحاجات", ml: "ആവശ്യങ്ങൾ നിറവേറാൻ", en: "for fulfilling needs" },
+};

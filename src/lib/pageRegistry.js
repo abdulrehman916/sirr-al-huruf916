@@ -100,6 +100,7 @@ registerPage('/evil-jinn', { name: 'Evil Jinn Names', icon: '👁️', category:
 registerPage('/holy-names', { name: 'Magical Holy Names', icon: '✦', category: 'Reference', pageType: 'content', visible: true, requiresPermission: true });
 registerPage('/astro-clock', { name: 'Astro Clock', icon: '🕰️', category: 'Timings', pageType: 'content', visible: true, requiresPermission: true });
 registerPage('/astro-clock/search', { pageType: 'content', visible: false, requiresPermission: true });
+registerPage('/sirr-al-wafq', { name: 'Sirr al-Wafq', icon: '۞', category: 'Vefk Systems', pageType: 'content', visible: true, requiresPermission: true });
 
 // Support pages — all public
 registerPage('/support', { name: 'Support Hub', icon: '🛡️', category: 'System', pageType: 'content', visible: true, requiresPermission: false });

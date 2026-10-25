@@ -29,6 +29,7 @@ const PREMIUM_PAGES = [
   { path: "/evil-jinn", name: "Evil Jinn" },
   { path: "/holy-names", name: "Holy Names" },
   { path: "/astro-clock", name: "Astro Clock" },
+  { path: "/sirr-al-wafq", name: "Sirr al-Wafq" },
 ];
 
 export default function PremiumAccessRequest() {

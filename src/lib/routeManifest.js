@@ -38,6 +38,7 @@ const ROUTE_MANIFEST = [
   { path: '/shop/:productId', component: 'ProductDetailPage', chunk: 'ProductDetailPage', flags: ['public'] },
 
   { path: '/astro-clock', component: 'AstroClockPage', chunk: 'AstroClockPage' },
+  { path: '/sirr-al-wafq', component: 'SirrWafqPage', chunk: 'SirrWafqPage' },
   { path: '/astro-clock/search', component: 'AstroClockSearch', chunk: 'AstroClockSearch' },
   { path: '/sirr', component: 'SirrPage', chunk: 'SirrPage', flags: ['public'] },
 

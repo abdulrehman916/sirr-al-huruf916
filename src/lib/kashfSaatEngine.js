@@ -199,3 +199,6 @@ export function formatClock(ms, tz) {
   h = h % 12 || 12;
   return `${h}:${m} ${ap}`;
 }
+
+// Shared time helpers (used by kashfNextTimes.js for "when does it come next").
+export { tzFor, civilOf, addDays, sunOf, hijriOf, moonAt };

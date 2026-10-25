@@ -252,6 +252,7 @@ const translations = {
   card_sub_holy_names: { ml: "പവിത്ര നാമ പരാമർശം", en: "Sacred Names Reference", ar: "مرجع الأسماء المقدسة" },
   card_sub_evil_jinn: { ml: "ജിൻ വർഗ്ഗീകരണം", en: "Jinn Classification", ar: "تصنيف الجن" },
   card_sub_astro: { ml: "ഖഗോള സമയ എഞ്ചിൻ", en: "Celestial Time Engine", ar: "محرك الوقت السماوي" },
+  card_sub_wafq: { ml: "കശ്ഫ് പ്രകാരം കള്ളി നിർമ്മാണം", en: "Kashf Wafq Builder", ar: "صناعة الأوفاق على قواعد الكشف" },
   card_sub_sirr: { ml: "ഗ്രന്ഥ വിജ്ഞാനം", en: "Manuscript Knowledge", ar: "معرفة المخطوطة" },
   card_sub_shop: { ml: "പ്രീമിയം ഉൽപ്പന്നങ്ങളും പുസ്തകങ്ങളും", en: "Premium Products & Books", ar: "منتجات وكتب مميزة" },
 

@@ -100,6 +100,16 @@ const CARD_ICONS = {
       <circle cx="16" cy="5" r="1" fill={color} fillOpacity="0.7"/>
     </svg>
   ),
+  wafq: (color) => (
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+      <rect x="5" y="5" width="22" height="22" rx="1.5" stroke={color} strokeWidth="1" strokeOpacity="0.8" fill={color} fillOpacity="0.06"/>
+      <line x1="12.33" y1="5" x2="12.33" y2="27" stroke={color} strokeWidth="0.6" strokeOpacity="0.6"/>
+      <line x1="19.66" y1="5" x2="19.66" y2="27" stroke={color} strokeWidth="0.6" strokeOpacity="0.6"/>
+      <line x1="5" y1="12.33" x2="27" y2="12.33" stroke={color} strokeWidth="0.6" strokeOpacity="0.6"/>
+      <line x1="5" y1="19.66" x2="27" y2="19.66" stroke={color} strokeWidth="0.6" strokeOpacity="0.6"/>
+      <text x="16" y="17" dominantBaseline="middle" textAnchor="middle" fontFamily="Amiri, serif" fontWeight="700" fontSize="7" fill={color}>٥</text>
+    </svg>
+  ),
   sirr: (color) => (
     <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
       <text x="50%" y="56%" dominantBaseline="middle" textAnchor="middle"
@@ -142,6 +152,7 @@ const NAV_CARDS = [
   { path: "/holy-names",       arabic: "أسماء مقدسة",  label: "HOLY NAMES",       subtitle: "Sacred Names Reference",    iconKey: "holyNames", accent: [212, 175, 55] },
   { path: "/evil-jinn",        arabic: "الجن الشرير",  label: "EVIL JINN",        subtitle: "Jinn Classification",       iconKey: "evilJinn",   accent: [239, 68, 68] },
   { path: "/astro-clock",      arabic: "الساعة الفلكية", label: "ASTRO CLOCK",      subtitle: "Celestial Time Engine",     iconKey: "astroClock", accent: [99, 179, 237] },
+  { path: "/sirr-al-wafq",     arabic: "سر الوفق",       label: "SIRR AL-WAFQ",     subtitle: "Kashf Wafq Builder",        iconKey: "wafq",   accent: [212, 175, 55] },
   { path: "/sirr",             arabic: "السر",           label: "SIRR",             subtitle: "Manuscript Knowledge",      iconKey: "sirr",   accent: [212, 175, 55] },
   { path: "/shop",             arabic: "المتجر",         label: "SHOP",             subtitle: "Premium Products & Books",  iconKey: "shop",   accent: [212, 175, 55] },
 ];
@@ -159,6 +170,7 @@ const CARD_SUB_KEYS = {
   "/holy-names": "card_sub_holy_names",
   "/evil-jinn": "card_sub_evil_jinn",
   "/astro-clock": "card_sub_astro",
+  "/sirr-al-wafq": "card_sub_wafq",
   "/sirr": "card_sub_sirr",
   "/shop": "card_sub_shop",
 };
