@@ -17,6 +17,11 @@ import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
+import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
+import WafqSheet from "@/components/wafq/WafqSheet";
+import WafqTiming from "@/components/wafq/WafqTiming";
+import { downloadSvgPng } from "@/lib/svgToPng";
+import { ARCHANGELS } from "@/lib/wafqSurround";
 
 const GOLD = "#F5D060";
 const INK_C = "#f5ead4";
@@ -185,6 +190,88 @@ function drawWafq(cv, o) {
   }
 }
 
+function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, setMAyah, fallbackText, onDraw }) {
+  const [open, setOpen] = useState(idx === 0);
+  const useText = mText || fallbackText || "";
+  const built = useMemo(() => {
+    try {
+      return m.build(N, { n, step, text: useText, nameTotal: N, ayahTotal: parseInt(mAyah || "0", 10) });
+    } catch (_) { return null; }
+  }, [m, N, n, step, useText, mAyah]);
+  const src = SOURCES[m.src];
+  const tone = !built ? undefined : built.valid === null ? undefined : built.valid ? "ok" : "warn";
+  const rules = isEn ? m.rules_en : m.rules_ml;
+  return (
+    <Box tone={tone}>
+      <button type="button" onClick={() => setOpen((o) => !o)} className="w-full flex items-start gap-2 text-left">
+        <span className="inline-flex items-center justify-center w-5 h-5 rounded-full font-inter text-[10px] shrink-0 mt-0.5" style={{ background: "rgba(212,175,55,0.18)", color: GOLD }}>{idx + 1}</span>
+        <span className="flex-1 min-w-0">
+          <span className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>{isEn ? m.en : m.ml}</span>
+          {m.ar && <span className="font-amiri text-sm ml-2" style={{ color: "rgba(245,208,96,0.7)" }}>{m.ar}</span>}
+          <span className="block font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(255,255,255,0.4)" }}>
+            {isEn ? src.en : src.ml}{m.also ? ` + ${isEn ? SOURCES[m.also].en : SOURCES[m.also].ml}` : ""}
+          </span>
+        </span>
+        <span style={{ color: "rgba(255,255,255,0.4)" }}>{open ? "▾" : "▸"}</span>
+      </button>
+      {open && (
+        <>
+          <Note color="rgba(255,255,255,0.4)">{isEn ? m.ref_en : m.ref_ml}</Note>
+          <ol className="list-decimal pl-5 space-y-1 font-inter text-xs" style={{ color: "rgba(245,234,212,0.85)" }}>
+            {rules.map((r, i) => <li key={i}>{r}</li>)}
+          </ol>
+          {(m.needsText || m.needsTwo) && (
+            <div className="flex flex-wrap items-center gap-2">
+              {m.needsText && (
+                <input value={mText} onChange={(e) => setMText(e.target.value)} dir="rtl" placeholder={fallbackText || "الاسم أو الآية"}
+                  className="flex-1 min-w-[140px] rounded-xl px-3 py-2 font-amiri text-base outline-none"
+                  style={{ background: "rgba(0,0,0,0.25)", color: INK_C, border: "1px solid rgba(212,175,55,0.25)" }} />
+              )}
+              {m.needsTwo && (
+                <input value={mAyah} onChange={(e) => setMAyah(e.target.value.replace(/[^\d]/g, ""))} inputMode="numeric"
+                  placeholder={txt("ആയത്തിന്റെ തുക", "ayah total")}
+                  className="w-36 rounded-xl px-3 py-2 font-inter text-xs outline-none"
+                  style={{ background: "rgba(0,0,0,0.25)", color: INK_C, border: "1px solid rgba(212,175,55,0.25)" }} />
+              )}
+            </div>
+          )}
+          <Note color="rgba(147,197,253,0.85)">⇒ {isEn ? m.expects_en : m.expects_ml}</Note>
+          {!built ? (
+            <Note color="#FCA5A5">{m.id === "hollow"
+              ? txt(`ഈ തുകയ്ക്ക് ഇത് ചെയ്യാനാകില്ല: (${N} − 12) ÷ 3 = ${((N - 12) / 3).toFixed(2)} — ഇത് നാലിന്റെ ഗുണിതമായ പൂർണ്ണസംഖ്യയാകണം.`,
+                     `Not possible for this total: (${N} − 12) ÷ 3 = ${((N - 12) / 3).toFixed(2)} — it must be a whole multiple of four.`)
+              : m.needsTwo
+              ? txt("ആയത്തിന്റെ തുക കൂടി മുകളിൽ നൽകുക.", "Enter the ayah's total above as well.")
+              : txt("അറബിയിൽ ഒരു പേരോ ആയത്തോ മുകളിൽ നൽകുക.", "Enter an Arabic name or ayah above.")}</Note>
+          ) : (
+            <>
+              <Grid grid={built.grid} arabic={!m.letters} />
+              {built.expected != null && (
+                <div className="flex flex-wrap gap-1.5">
+                  {[...built.sums.rows.map((v, i) => [txt(`വരി ${i + 1}`, `Row ${i + 1}`), v]),
+                    ...built.sums.cols.map((v, i) => [txt(`നിര ${i + 1}`, `Col ${i + 1}`), v]),
+                    [txt("കോൺ ↘", "Diag ↘"), built.sums.d1], [txt("കോൺ ↙", "Diag ↙"), built.sums.d2]].map(([l, v]) => (
+                    <span key={l} className="px-2 py-1 rounded-lg font-inter text-[10px] font-bold"
+                      style={{ background: v === built.expected ? "rgba(74,222,128,0.10)" : "rgba(248,113,113,0.12)", color: v === built.expected ? "#4ADE80" : "#FCA5A5" }}>
+                      {l} {v} {v === built.expected ? "✓" : "✗"}
+                    </span>
+                  ))}
+                </div>
+              )}
+              {built.valid === true && <Note color="#4ADE80">{txt("ഗ്രന്ഥം പറയുന്നതുപോലെ തന്നെ ഒത്തുവന്നു.", "It comes out exactly as the book says.")}</Note>}
+              {built.valid === false && <Note color="#FCA5A5">{txt("പൂർണ്ണമായി ഒത്തുവരുന്നില്ല — ഗ്രന്ഥകാരൻ തന്നെ ഇത് പറയുന്നുണ്ട്.", "It does not fully come out — the author says so himself.")}</Note>}
+              <button type="button" onClick={() => onDraw(built.grid)} className="px-3 py-1.5 rounded-lg font-inter text-[10px] font-bold"
+                style={{ background: "transparent", color: "rgba(255,255,255,0.6)", border: "1px solid rgba(212,175,55,0.22)" }}>
+                ⬇ {txt("ഈ കള്ളി ചിത്രമായി", "This square as an image")}
+              </button>
+            </>
+          )}
+        </>
+      )}
+    </Box>
+  );
+}
+
 export default function SirrWafqPage() {
   const [lang, setLang] = useState("ml");
   const txt = (ml, en) => (lang === "en" ? en : ml);
@@ -204,13 +291,18 @@ export default function SirrWafqPage() {
   const [chosen, setChosen] = useState(null);
   const [bismi, setBismi] = useState(true);
   const [sideAngels, setSideAngels] = useState(false);
+  const [angel, setAngel] = useState("jibril");
   const [seeker, setSeeker] = useState("");
   const [need, setNeed] = useState("");
+  const [mText, setMText] = useState("");
+  const [mAyah, setMAyah] = useState("");
+  const [openM, setOpenM] = useState(null);
   const [sought, setSought] = useState("");
   const [result, setResult] = useState(null);
   const [writeIdx, setWriteIdx] = useState(-1);
   const [copied, setCopied] = useState(false);
   const canvasRef = useRef(null);
+  const sheetRef = useRef(null);
   const loc = getUserLocation();
 
   const textAbjad = useMemo(() => abjadOf(text, { taMarbuta: ta }), [text, ta]);
@@ -516,6 +608,37 @@ export default function SirrWafqPage() {
           </button>
         </Box>
 
+        {/* The method library — one section per way of building a square */}
+        {N > 0 && (
+          <>
+            <Box title={txt(`${n}×${n} കള്ളി ഉണ്ടാക്കുന്ന രീതികൾ`, `Ways of building the ${n}×${n}`)}>
+              <Note>{txt(
+                `ഈ കള്ളിക്ക് രണ്ട് ഗ്രന്ഥങ്ങളിൽ നിന്നായി ${methodsFor(n).length} രീതികൾ. ഓരോന്നിന്റെയും നിയമങ്ങൾ ഗ്രന്ഥം പറയുന്നതുപോലെ, പിന്നെ ആ രീതിയിൽ ഉണ്ടാക്കിയ കള്ളി, പിന്നെ പരിശോധന.`,
+                `${methodsFor(n).length} ways for this square, from the two books. For each: the rules as the book gives them, then the square built that way, then the check.`)}</Note>
+              <Note color="rgba(255,255,255,0.5)">{txt(
+                "ചുവട് (k) മാറ്റിയാൽ എല്ലാ രീതിയിലും മാറ്റം വരും. ഹവാസ്സ് പ്രകാരം k തിരഞ്ഞെടുക്കുന്നത് സൂര്യ-ചന്ദ്ര കോൺ നോക്കിയാണ്:",
+                "Changing the step (k) changes every method. In Hâvâss, k is chosen by the Sun–Moon angle:")}</Note>
+              <div className="flex flex-wrap gap-1.5">
+                {[1, 2, 3, 4, 5, 6].map((k) => {
+                  const a = ANGLE_FOR_STEP[k], sx = ANGLE_SEX[a];
+                  return (
+                    <button key={k} type="button" onClick={() => setStep(k)} className="px-2.5 py-1.5 rounded-xl font-inter text-[10px] font-bold" style={btn(step === k)}>
+                      {a}° <span style={{ color: "rgba(255,255,255,0.45)" }}>k={k}</span>
+                      <span className="block text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>{isEn ? sx.en : sx.ml}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </Box>
+            {methodsFor(n).map((m, i) => (
+              <MethodSection key={m.id} m={m} idx={i} N={N} n={n} step={step} isEn={isEn} txt={txt}
+                mText={mText} setMText={setMText} mAyah={mAyah} setMAyah={setMAyah}
+                fallbackText={mode === "text" ? text : names.self}
+                onDraw={(g) => { const cv = canvasRef.current; if (!cv) return; drawWafq(cv, { grid: g, bismi, sideAngels, dayAngel: null, dayKhadim: null, ranks: null, title: null }); const a = document.createElement("a"); a.download = `wafq-${m.id}-${N}.png`; a.href = cv.toDataURL("image/png"); a.click(); }} />
+            ))}
+          </>
+        )}
+
         {result && (
           <div id="wafq-result" className="space-y-3" style={{ scrollMarginTop: 72 }}>
             <Box title={`${SIZE_NAME[result.n].ar} · ${result.n}×${result.n} · N = ${result.N}`} tone={result.valid ? "ok" : "warn"}>
@@ -537,20 +660,34 @@ export default function SirrWafqPage() {
 
             {/* 5 writing */}
             <Box step="5" title={txt("എഴുതേണ്ട രൂപവും ക്രമവും", "How and in what order to write it")}>
-              {bismi && <p className="font-amiri text-2xl text-center" style={{ color: INK_C }}>بسم الله الرحمن الرحيم</p>}
-              {sideAngels && <p className="font-amiri text-xl text-center" style={{ color: GOLD }}>{SIDE_ANGELS[0].ar}</p>}
-              <div className="flex items-center gap-2">
-                {sideAngels && <span className="font-amiri text-base" style={{ color: GOLD, writingMode: "vertical-rl" }}>{SIDE_ANGELS[3].ar}</span>}
-                <div className="flex-1">
-                  <Grid grid={result.grid} arabic active={writeIdx >= 0 && writeIdx < order.length ? order[writeIdx] : null}
-                    done={writeIdx < 0 || writeIdx >= order.length ? null : doneSet}
-                    cellNote={result.n === 3 ? result.houses.flat().map((h) => HOUSE_LETTERS[h - 1]) : null} />
-                </div>
-                {sideAngels && <span className="font-amiri text-base" style={{ color: GOLD, writingMode: "vertical-rl" }}>{SIDE_ANGELS[1].ar}</span>}
+              {/* which angel the working belongs to — its name is what
+                  goes on all four sides */}
+              <div className="grid grid-cols-2 gap-2">
+                {ARCHANGELS.map((a) => (
+                  <button key={a.id} type="button" onClick={() => setAngel(a.id)}
+                          className="rounded-xl p-2 text-right font-inter text-[10px] leading-relaxed"
+                          style={btn(angel === a.id)}>
+                    <span className="font-amiri text-lg block">{a.ar}</span>
+                    <span style={{ opacity: 0.75 }}>{isEn ? a.kashf_en : a.kashf_ml}</span>
+                  </button>
+                ))}
               </div>
-              {sideAngels && <p className="font-amiri text-xl text-center" style={{ color: GOLD }}>{SIDE_ANGELS[2].ar}</p>}
-              {dayRow && dayRow.angel !== "—" && <p className="font-amiri text-lg text-center" style={{ color: INK_C }}>{dayRow.angel}</p>}
-              {dayRow && dayRow.khadim !== "—" && <p className="font-amiri text-base text-center" style={{ color: "rgba(245,234,212,0.6)" }}>{dayRow.khadim}</p>}
+
+              <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
+                <WafqSheet grid={result.grid} angel={angel} fourAngels={sideAngels}
+                           weekday={dayWd} besmele={bismi} className="w-full h-auto" />
+              </div>
+
+              <button type="button" className="w-full py-2 rounded-xl font-inter text-xs font-bold"
+                      style={btn(true)}
+                      onClick={() => {
+                        const svg = sheetRef.current?.querySelector("svg");
+                        if (svg) downloadSvgPng(svg, `wafq-${result.n}x${result.n}-${result.N}.png`);
+                      }}>
+                {txt("കള്ളി ചിത്രമായി സൂക്ഷിക്കുക (PNG)", "Save the sheet as a PNG")}
+              </button>
+
+              <WafqTiming angel={angel} weekday={dayWd} ml={!isEn} />
 
               <Note>{txt("ഏറ്റവും ചെറിയ സംഖ്യ (മിഫ്താഹ്) ആദ്യം അലിഫിന്റെ വീട്ടിൽ; പിന്നെ ഓരോന്നായി കൂട്ടി ക്രമത്തിൽ, ഏറ്റവും വലിയ സംഖ്യ (മഗാലിഖ്) അവസാനം.", "The smallest number (the key) goes first, in the house of alif; then each next number in order, the largest (maghaliq) last.")}</Note>
               {writeIdx >= 0 && writeIdx < order.length && (() => {

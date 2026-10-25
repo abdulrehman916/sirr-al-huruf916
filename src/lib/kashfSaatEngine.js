@@ -57,6 +57,35 @@ function hijriOf(c) {
 }
 
 // ── Moon at an instant (Kashf mansion division: equal parts from 0° Aries, p.127) ──
+/**
+ * The Sun's ecliptic longitude, to a fraction of a degree — enough to
+ * say which sign it stands in, and so whether it shares that sign
+ * with the Moon (الاجتماع / Birleşim).
+ */
+function sunLonAt(ms) {
+  const d = ms / 86400000 + 2440587.5 - 2451545.0;      // days from J2000
+  const g = ((357.529 + 0.98560028 * d) % 360) * Math.PI / 180;
+  const q = (280.459 + 0.98564736 * d) % 360;
+  const lon = q + 1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g);
+  return ((lon % 360) + 360) % 360;
+}
+
+/**
+ * Sun and Moon in one sign. Hâvâss I p.160 holds that no wafq is
+ * made then; the Astro Clock only reports it — it does not score it,
+ * because the book's rule is about making a wafq, not about travel
+ * or trade or the rest of the day's aims.
+ */
+export function ijtimaAt(ms) {
+  const m = moonAt(ms);
+  if (!m) return null;
+  const sLon = sunLonAt(ms);
+  const sSign = Math.floor(sLon / 30);
+  let sep = Math.abs(m.lon - sLon) % 360;
+  if (sep > 180) sep = 360 - sep;
+  return { same: sSign === m.sign, sunSign: sSign, moonSign: m.sign, sep, waxing: m.waxing };
+}
+
 function moonAt(ms) {
   try {
     const mp = calculateMoonPosition(new Date(ms));
@@ -127,6 +156,23 @@ function hourScore(a, day, hour, why) {
     if (K.MUGHALABA_HOUR[day.weekday] === hour.num && a === "officials") { s += 15; why.push(R("മുഗാലബയുടെ (ജയം) സാഅത്ത്", "Sa'at al-mughalaba — hour of victory", "ghalaba")); }
     if (K.MASTERS_HOURS.days.includes(day.weekday) && K.MASTERS_HOURS.hours.includes(hour.num)) { s += 10; why.push(R("നല്ല കാര്യങ്ങൾക്ക് ശ്രേഷ്ഠ സാഅത്ത്", "An excellent hour for good works")); }
   }
+  // Hâvâss I p.161 settles the day of the wafq's planet, then that
+  // planet's own hour — the strongest pairing a day offers.
+  if (hour.planet === day.wdInfo.planet) {
+    s += 12;
+    why.push(R(`${p.tr_ml} ദിവസത്തിൽ ${p.tr_ml}ന്റെ സാഅത്ത് — ഏറ്റവും ചേർച്ച`,
+               `The hour of ${p.tr_en} on its own day — the closest pairing`));
+  }
+  // Kashf p.56: the planet whose fortune falls on this day.
+  if (K.DAY_SAAD && hour.planet === K.DAY_SAAD[day.weekday]) {
+    s += 9;
+    why.push(R("ഈ ദിവസത്തിന്റെ സഅ്ദ് ഈ ഗ്രഹത്തിന്റേതാണ്", "This day's fortune belongs to this planet"));
+  }
+  // and its ascendant, the same page
+  if (K.DAY_TALI && hour.planet === K.DAY_TALI[day.weekday]) {
+    s += 5;
+    why.push(R("ഈ ദിവസത്തിന്റെ ത്വാലിഅ്", "The ascendant of this day"));
+  }
   const j = K.JAAD[day.weekday];
   if (j && (j.saad === hour.planet || j.baraka === hour.planet)) { s += 8; why.push(R("ശൈഖ് ജാഇദിന്റെ പട്ടികയിൽ സഅ്ദ്/ബറക്ക", "Sa'd / baraka in Sheikh Jaad's table")); }
   if (a === "needs" && hour.moon && K.MOON_SIGN_NEEDS_HOUR[hour.moon.sign] === hour.planet) { s += 10; why.push(R("ഖമറിന്റെ ബുർജിന് പറ്റിയ സാഅത്ത്", "Hour that matches the Qamar's burj")); }
@@ -143,7 +189,16 @@ function moonScore(a, hour, why) {
   if (a === "travel" && K.TRAVEL_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("യാത്രയ്ക്ക് നല്ല മൻസിൽ — ദുൽ-ഗബ്റ പ്രകാരം", "A good manzil for travel — according to Dhu al-Ghabra")); }
   if (a === "marriage" && K.MARRIAGE_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("നിക്കാഹിന് നല്ല മൻസിൽ — ദുൽ-ഗബ്റ പ്രകാരം", "A good manzil for nikah — according to Dhu al-Ghabra")); }
   if (a === "marriage" && m.sign === 7) { s = Math.min(s, 10); why.push(R("ഖമർ അഖ്റബിൽ (വൃശ്ചികം): നിക്കാഹ് വേണ്ട", "Qamar in Aqrab (Scorpio): no nikah")); }
-  if (m.waxing && s >= 50) s += 5;
+  // Hâvâss I p.160 pairs a constructive work with the waxing Moon.
+  // It is counted as a help here, never as a gate — holding every
+  // good work back for half of each month is not what the day cards
+  // are for.
+  if (m.waxing) {
+    if (s >= 50) s += 5;
+    why.push(R("ഖമർ വളരുന്നു — നല്ല കർമ്മത്തിന് അനുകൂലം", "The Qamar is waxing — favourable for constructive work"));
+  } else {
+    why.push(R("ഖമർ ക്ഷയിക്കുന്നു", "The Qamar is waning"));
+  }
   return clamp(s);
 }
 

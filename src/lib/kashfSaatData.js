@@ -123,20 +123,20 @@ export const MONTH_DAYS = {
   11: { nature: "good",  good: ["trade", "travel", "needs"], avoid: ["officials"], note_ml: "ശീസ്(അ) ജനിച്ച ദിവസം" },
   12: { nature: "good",  good: ["marriage", "trade", "needs"], avoid: [], note_ml: "കട തുറക്കാൻ നല്ലത്; മധ്യസ്ഥത വേണ്ട" },
   13: { nature: "bad",   good: [], avoid: ALL, note_ml: "നഹ്സ് മുസ്തമിർ — തർക്കം, മുടി വെട്ടൽ വേണ്ട" },
-  14: { nature: "good",  good: ["learning", "trade", "needs", "travel"], avoid: [], note_ml: "" },
+  14: { nature: "good",  good: ["learning", "trade", "needs", "travel"], avoid: [], note_ml: "അറിവ്, വാങ്ങൽ-വിൽക്കൽ, കടം വാങ്ങലും കൊടുക്കലും, കടൽയാത്ര" },
   15: { nature: "good",  good: ["needs"], avoid: [], note_ml: "ചിലർ: കടമൊഴികെ ശ്രദ്ധിക്കുക" },
   16: { nature: "bad",   good: ["trade", "building"], avoid: ["travel", "officials"], note_ml: "യാത്ര വളരെ അപകടം" },
-  17: { nature: "good",  good: ["marriage", "trade", "farming", "building", "officials"], avoid: [], note_ml: "" },
+  17: { nature: "good",  good: ["marriage", "trade", "farming", "building", "officials"], avoid: [], note_ml: "ആവശ്യങ്ങൾ നടക്കും; ചിലർ: ഇടത്തരം — തർക്കം ഒഴിവാക്കുക, കടം തിരിച്ചുകിട്ടില്ല" },
   18: { nature: "good",  good: ["travel", "needs", "trade", "farming"], avoid: [], note_ml: "എതിരാളിയെ ജയിക്കും" },
   19: { nature: "good",  good: ["learning", "travel", "needs", "trade"], avoid: [], note_ml: "ഇസ്ഹാഖ്(അ) ജനിച്ച ദിവസം" },
-  20: { nature: "good",  good: ["travel", "building", "marriage", "farming", "officials", "needs"], avoid: [], note_ml: "" },
+  20: { nature: "good",  good: ["travel", "building", "marriage", "farming", "officials", "needs"], avoid: [], note_ml: "ആവശ്യങ്ങൾ, യാത്ര, കെട്ടിടം, നടീൽ" },
   21: { nature: "bad",   good: [], avoid: ALL, note_ml: "നഹ്സ് മുസ്തമിർ" },
   22: { nature: "good",  good: ["trade", "officials", "travel", "needs"], avoid: [], note_ml: "സ്വദഖ സ്വീകാര്യം" },
   23: { nature: "good",  good: ["marriage", "trade", "officials", "travel"], avoid: [], note_ml: "യൂസുഫ്(അ) ജനിച്ച ദിവസം" },
   24: { nature: "bad",   good: [], avoid: ALL, note_ml: "ഫിർഔൻ ജനിച്ച ദിവസം" },
   25: { nature: "bad",   good: [], avoid: ALL, note_ml: "സ്വയം സൂക്ഷിക്കുക" },
   26: { nature: "mixed", good: ["needs"], avoid: ["marriage", "travel"], note_ml: "സ്വദഖ ചെയ്യുക; മൂസ(അ) കടൽ പിളർന്ന ദിവസം" },
-  27: { nature: "good",  good: ["needs", "officials", "trade"], avoid: [], note_ml: "" },
+  27: { nature: "good",  good: ["needs", "officials", "trade"], avoid: [], note_ml: "ആവശ്യങ്ങൾക്കും കൂടിക്കാഴ്ചയ്ക്കും നല്ലത്" },
   28: { nature: "mixed", good: [], avoid: [], note_ml: "യഅ്ഖൂബ്(അ) ജനിച്ച ദിവസം" },
   29: { nature: "good",  good: ["travel", "needs", "medicine"], avoid: [], note_ml: "വസ്വിയ്യത്ത് എഴുതരുത്" },
   30: { nature: "good",  good: ["trade", "farming", "marriage", "medicine"], avoid: [], note_ml: "ചിലർ: യാത്ര വേണ്ട" },
@@ -198,11 +198,11 @@ export const MONTH_DAY_NOTE_EN = {
   4: "Day Habil was born", 5: "Do not begin anything new", 6: "The traveller returns happy",
   7: "Good for everything", 8: "No sea travel or contracts", 9: "Wealth comes on a journey",
   10: "Nuh (AS) was born; the sick recover", 11: "Shith (AS) was born", 12: "Good to open a shop; no mediation",
-  13: "Nahs mustamirr — no disputes, no haircut", 14: "", 15: "Some say: be careful except for debts",
-  16: "Travel is very dangerous", 17: "", 18: "You will overcome an opponent",
-  19: "Ishaq (AS) was born", 20: "", 21: "Nahs mustamirr",
+  13: "Nahs mustamirr — no disputes, no haircut", 14: "Knowledge, buying and selling, borrowing and lending, going to sea", 15: "Some say: be careful except for debts",
+  16: "Travel is very dangerous", 17: "Needs are granted; some call it middling — avoid disputes, a loan is not returned", 18: "You will overcome an opponent",
+  19: "Ishaq (AS) was born", 20: "Needs, travel, building and planting", 21: "Nahs mustamirr",
   22: "Sadaqa is accepted", 23: "Yusuf (AS) was born", 24: "Day Fir'awn was born",
-  25: "Guard yourself", 26: "Give sadaqa; day Musa (AS) parted the sea", 27: "",
+  25: "Guard yourself", 26: "Give sadaqa; day Musa (AS) parted the sea", 27: "Good for needs and for meeting someone",
   28: "Ya'qub (AS) was born", 29: "Do not write a will", 30: "Some say: no travel",
 };
 export const MANSIONS_EN = [
@@ -251,4 +251,197 @@ export const MANSION_PURPOSE = {
   24: { ar: "لحفظ النفس", ml: "സ്വയം സംരക്ഷണത്തിന്", en: "for self-protection" },
   26: { ar: "للعمل", ml: "പ്രവൃത്തിക്ക്", en: "for work" },
   28: { ar: "لقضاء الحاجات", ml: "ആവശ്യങ്ങൾ നിറവേറാൻ", en: "for fulfilling needs" },
+};
+
+// ═══════════════════════════════════════════════════════════════
+// What each lunar mansion is worked for — Kashf al-Haqa'iq,
+// printed pp.54–55, "معرفة منازل القمر وأعمالها", from Shaykh
+// Nasir bin Jaa'id al-Kharusi.
+//
+// The book's own words for all twenty-eight, set down whole. Some
+// of what it records is destructive — هلاك العدو, الشر والعداوة,
+// الفرقة, التهييج — and those entries are kept and marked `harm`
+// rather than quietly dropped, because a reference that prints only
+// the pleasant half of a page is not a reference.
+//
+// Marking them lets the interface show them for what they are. It
+// does not make them into a plan: nothing here schedules a working
+// against anyone.
+// ═══════════════════════════════════════════════════════════════
+
+export const MANSION_WORK = {
+  1:  { nature: "نحسة",              face: null,      ar: "يعمل فيها للفرقة",                 ml: "ഫുർഖത്തിന് (വേർപിരിയലിന്) പ്രവർത്തിക്കുന്നു",        en: "worked for separation", harm: true },
+  2:  { nature: "نحس",               face: null,      ar: "للعطف والجمع",                     ml: "ഇണക്കത്തിനും ഒരുമിപ്പിക്കലിനും",                      en: "for affection and joining" },
+  3:  { nature: "سعد",               face: "الزهرة",  ar: "للمحبة وجمع الاثنين",              ml: "സ്നേഹത്തിനും രണ്ടുപേരെ ഒരുമിപ്പിക്കാനും",             en: "for love, and joining two" },
+  4:  { nature: "نحس أحمر",          face: "عطارد",   ar: "لهلاك العدو",                      ml: "⚠ ശത്രുവിന്റെ നാശത്തിന്",                              en: "⚠ for the ruin of an enemy", harm: true },
+  5:  { nature: "نحس",               face: "القمر",   ar: "للشر والعداوة",                    ml: "⚠ ദ്രോഹത്തിനും ശത്രുതയ്ക്കും",                        en: "⚠ for harm and enmity", harm: true },
+  6:  { nature: "نحس مختلط",         face: null,      ar: "للصلاح وكل ما تريد",               ml: "നന്മയ്ക്കും നീ ഉദ്ദേശിക്കുന്നതിനെല്ലാം",               en: "for good, and whatever you wish" },
+  7:  { nature: "سعد",               face: "زحل",     ar: "اعمل فيه ما تريد من الصلاح",       ml: "നന്മയിൽ നീ ഉദ്ദേശിക്കുന്നത് ചെയ്യുക",                  en: "work in it whatever good you wish" },
+  8:  { nature: "سعد مختلط أبيض وأحمر", face: null,   ar: "اعمل فيه للخير والتجارة",          ml: "നന്മയ്ക്കും കച്ചവടത്തിനും",                            en: "for good and for trade" },
+  9:  { nature: "نحس",               face: "المريخ",  ar: "اعمل فيه للطيور والدواب",          ml: "പക്ഷികൾക്കും മൃഗങ്ങൾക്കും",                            en: "for birds and beasts" },
+  10: { nature: "سعد أبيض",          face: "الشمس",   ar: "للسباع والوحوش",                   ml: "ഹിംസ്രജന്തുക്കൾക്കും കാട്ടുമൃഗങ്ങൾക്കും",             en: "for predators and wild beasts",
+        note_ar: "ذكرها في السر العلي بأنها نحس", note_ml: "അസ്സിർറുൽ ആലിയിൽ ഇത് നഹ്സ് എന്ന് പറയുന്നു", note_en: "al-Sirr al-'Ali calls this one nahs" },
+  11: { nature: "سعد",               face: "الزهرة",  ar: "المحبة للنساء",                    ml: "സ്ത്രീകളുടെ സ്നേഹത്തിന്",                              en: "for the love of women" },
+  12: { nature: "نحس",               face: "عطارد",   ar: "للمحبة وكل ما تريد",               ml: "സ്നേഹത്തിനും നീ ഉദ്ദേശിക്കുന്നതിനെല്ലാം",              en: "for love, and whatever you wish" },
+  13: { nature: "نحس",               face: "القمر",   ar: "للخير كله",                        ml: "എല്ലാ നന്മയ്ക്കും",                                     en: "for all good" },
+  14: { nature: "سعد صالح",          face: "زحل",     ar: "للعطف والمحبة وتأليف ما أردت",     ml: "ഇണക്കത്തിനും സ്നേഹത്തിനും, നീ ഉദ്ദേശിച്ചത് കൂട്ടിയിണക്കാനും", en: "for affection, love, and joining what you wish" },
+  15: { nature: "سعد أبيض",          face: "المشتري", ar: "للخير كله",                        ml: "എല്ലാ നന്മയ്ക്കും",                                     en: "for all good" },
+  16: { nature: "نحس",               face: "المريخ",  ar: "للفرقة",                           ml: "⚠ വേർപിരിയലിന്",                                       en: "⚠ for separation", harm: true },
+  17: { nature: "نحس",               face: "الشمس",   ar: "للخير وعقد الألسنة",               ml: "നന്മയ്ക്കും നാവ് കെട്ടാനും",                            en: "for good, and for binding tongues" },
+  18: { nature: "سعد",               face: null,      ar: "سعد",                              ml: "സഅ്ദ്",                                                  en: "sa'd — fortunate" },
+  19: { nature: "نحس",               face: "عطارد",   ar: "للتهييج والمحبة",                  ml: "⚠ ഇളക്കിവിടാനും സ്നേഹത്തിനും",                        en: "⚠ for stirring up, and for love", harm: true },
+  20: { nature: "سعد",               face: null,      ar: "للخير",                            ml: "നന്മയ്ക്ക്",                                            en: "for good" },
+  21: { nature: "سعد",               face: "زحل",     ar: "للطلسمات",                         ml: "ത്വിൽസമുകൾക്ക്",                                        en: "for talismans" },
+  22: { nature: "نحس",               face: "المشتري", ar: "الطلسمات للمريض والعقد",           ml: "രോഗിക്കുള്ള ത്വിൽസമിനും കെട്ടിനും",                    en: "talismans for the sick, and binding" },
+  23: { nature: "سعد",               face: "المريخ",  ar: "الطلسمات للخير كله",               ml: "എല്ലാ നന്മയ്ക്കുമുള്ള ത്വിൽസമുകൾ",                     en: "talismans for all good" },
+  24: { nature: "سعد",               face: "الشمس",   ar: "للخير",                            ml: "നന്മയ്ക്ക്",                                            en: "for good" },
+  25: { nature: "سعد",               face: "الزهرة",  ar: "للخير",                            ml: "നന്മയ്ക്ക്",                                            en: "for good" },
+  26: { nature: "سعد أبيض",          face: "عطارد",   ar: "للمحبات والتأليف والتهييج",        ml: "സ്നേഹങ്ങൾക്കും കൂട്ടിയിണക്കലിനും ⚠ ഇളക്കിവിടലിനും",  en: "for loves, joining, and ⚠ stirring up" },
+  27: { nature: "سعد",               face: null,      ar: "سعد",                              ml: "സഅ്ദ്",                                                  en: "sa'd — fortunate" },
+  28: { nature: "سعد",               face: "المشتري", ar: "للخير والسفر والتجارة",            ml: "നന്മയ്ക്കും യാത്രയ്ക്കും കച്ചവടത്തിനും",               en: "for good, travel and trade" },
+};
+
+export const MANSION_WORK_SOURCE = {
+  ar: "معرفة منازل القمر وأعمالها — للشيخ ناصر بن جاعد الخروصي",
+  ml: "ചന്ദ്രന്റെ മൻസിലുകളും അവയുടെ പ്രവൃത്തികളും — ശൈഖ് നാസ്വിർ ബിൻ ജാഇദ് അൽ-ഖറൂസ്വി",
+  en: "The Moon's mansions and their works — Shaykh Nasir bin Jaa'id al-Kharusi",
+  page: "54–55",
+};
+
+// ═══════════════════════════════════════════════════════════════
+// "سعود الكواكب من الأيام السبعة" — Kashf, printed p.56, found in
+// the hand of Shaykh Zahir bin Muhammad bin Sa'id al-Isma'ili.
+//
+// Two tables the page had been missing. Kashf p.253 says the work
+// is begun by looking to the hour, THE ASCENDANT and the khadim —
+// so the ascendant belongs on the day card beside the rest.
+// Index 0 = Sunday.
+// ═══════════════════════════════════════════════════════════════
+
+/** The planet whose fortune (سعد) falls on each day. */
+export const DAY_SAAD = ["saturn", "venus", "mars", "jupiter", "moon", "sun", "mercury"];
+
+/** The day's ascendant (طالع). */
+export const DAY_TALI = ["moon", "venus", "jupiter", "saturn", "mars", "mercury", "sun"];
+
+export const DAY_SAAD_SOURCE = {
+  ar: "سعود الكواكب من الأيام السبعة — بخط الشيخ زاهر بن محمد بن سعيد الإسماعيلي",
+  ml: "ഏഴ് ദിവസങ്ങളിലെ ഗ്രഹങ്ങളുടെ സഅ്ദ് — ശൈഖ് സാഹിർ ബിൻ മുഹമ്മദ് ബിൻ സഈദ് അൽ-ഇസ്മാഈലിയുടെ കൈപ്പടയിൽ",
+  en: "The planets' fortune across the seven days — in the hand of Shaykh Zahir bin Muhammad bin Sa'id al-Isma'ili",
+  page: "56",
+};
+
+// ═══════════════════════════════════════════════════════════════
+// What the book dislikes — Kashf, printed pp.65–66.
+//
+// Three rules the page had been missing. They are not about the
+// planetary hour at all, which is why they slipped past: they fall
+// on the lunar date and on the Moon's SIGN (burj, not manzil).
+// ═══════════════════════════════════════════════════════════════
+
+/** العقد — the contract, the binding. The book dislikes it: */
+export const MAKRUH_AQD = {
+  // "the last three days of every month … they are the dark of the Moon"
+  lastThreeDays: {
+    ar: "الأيام الثلاث الأخيرة من كل شهر يكره العقد فيها ولا ينبغي العقد فيها لكونها محاق",
+    ml: "ഓരോ മാസത്തിന്റെയും അവസാനത്തെ മൂന്ന് ദിവസം അഖ്ദ് കറാഹത്താണ് — അത് മിഹാഖ് (ചന്ദ്രന്റെ ഇരുട്ട്) ആയതിനാൽ",
+    en: "In the last three days of any month the contract is disliked — they are the dark of the Moon",
+    page: "65",
+  },
+  // "when the Moon is in the sign of Scorpio — the sign is meant here, not the mansion"
+  moonInScorpio: {
+    sign: 7,
+    ar: "يكره العقد عندما يكون القمر في برج العقرب ولا يقصد هنا المنازل بل البرج نفسه",
+    ml: "ചന്ദ്രൻ വൃശ്ചികം രാശിയിലായിരിക്കുമ്പോൾ അഖ്ദ് കറാഹത്ത് — ഇവിടെ ഉദ്ദേശിക്കുന്നത് മൻസിലല്ല, രാശി തന്നെ",
+    en: "The contract is disliked while the Moon is in Scorpio — the sign is meant, not the mansion",
+    page: "65",
+  },
+  // Wednesday: the night is allowed, the daytime disliked
+  wednesdayDaytime: {
+    wd: 3,
+    ar: "ليلة الأربعاء فقط أي مساء الثلاثاء لا نهار الأربعاء لكراهة العقد نهار الأربعاء",
+    ml: "ബുധൻ രാത്രി മാത്രം — അതായത് ചൊവ്വ വൈകുന്നേരം, ബുധൻ പകലല്ല; ബുധൻ പകലിൽ അഖ്ദ് കറാഹത്ത്",
+    en: "Wednesday night only — Tuesday evening — not Wednesday daytime, where the contract is disliked",
+    page: "64–65",
+  },
+};
+
+/**
+ * Planting — Shaykh Muhammad bin Abdullah al-Ma'wali's lines, p.66.
+ * Palms are not planted on the 9th, 19th or 29th; cutting on those
+ * days is good.
+ */
+export const PLANTING_AVOID_DATES = {
+  dates: [9, 19, 29],
+  ar: "تجنب غرس النخل في يوم تاسع وتاسع عشر والتاسع والعشرين … ولكن يقال القطع فيهن جيد",
+  ml: "ഒമ്പത്, പത്തൊമ്പത്, ഇരുപത്തൊമ്പത് — ഈ ദിവസങ്ങളിൽ ഈന്തപ്പന നടരുത്. വെട്ടുന്നത് നല്ലതാണെന്ന് പറയുന്നു",
+  en: "Do not plant palms on the 9th, 19th or 29th — though cutting on them is said to be good",
+  page: "66",
+};
+
+// ═══════════════════════════════════════════════════════════════
+// Hâvâss'ın Derinlikleri I, "ZAMANLAMADA DİĞER ETKENLER", pp.160–161.
+//
+// The second book sets out the ORDER in which the time is settled,
+// and two conditions it calls unchangeable. Neither was in the app:
+// the Astro Clock weighed day, hour and Moon together, where the
+// book ranks them, and puts two gates before all of it.
+// ═══════════════════════════════════════════════════════════════
+
+/** The two the book calls "değişmez ve şart" — unchangeable and required. */
+export const HAVASS_GATES = {
+  // positive work while the Moon waxes, negative while it wanes
+  moonPhase: {
+    tr: "Olumlu çalışmalar Ay büyürken, olumsuz çalışmalar Ay küçülürken yapılmalıdır",
+    ml: "നല്ല കർമ്മങ്ങൾ ചന്ദ്രൻ വളരുമ്പോൾ, മോശം കർമ്മങ്ങൾ ചന്ദ്രൻ ക്ഷയിക്കുമ്പോൾ",
+    en: "Constructive work while the Moon waxes; destructive work while it wanes",
+    page: "160",
+  },
+  // Sun and Moon in one sign — no wafq is made at all
+  conjunction: {
+    tr: "Güneş ve Ay aynı burçtayken, yani Birleşim halinde, genel kural olarak hiçbir konu hakkında vefk yapılmaz",
+    ml: "സൂര്യനും ചന്ദ്രനും ഒരേ രാശിയിലായിരിക്കുമ്പോൾ — ഇജ്തിമാഅ് — പൊതുനിയമമായി ഒരു കാര്യത്തിനും വഫ്ഖ് ഉണ്ടാക്കില്ല",
+    en: "While Sun and Moon stand in one sign — in conjunction — as a general rule no wafq is made for anything",
+    page: "160",
+    note_ml: "⚠ ഈ നിയമത്തിന് വിരുദ്ധമായി, ഇജ്തിമാഇലും പ്രത്യേകിച്ച് കറുത്ത വാവിലും ചെയ്യുന്ന ചില പ്രത്യേക കർമ്മങ്ങളുണ്ടെന്ന് കിതാബ് പറയുന്നു — അവയെ \"വളരെ ശർറായവ\" എന്നാണ് വിശേഷിപ്പിക്കുന്നത്.",
+    note_en: "⚠ The book notes that certain workings are nonetheless done at conjunction, and especially at the dark Moon; it calls them workings held to be very evil.",
+  },
+};
+
+/**
+ * The order the book settles the time in — p.161. It is a ranking,
+ * not a weighting: the first two are gates, the rest are worked
+ * down in turn.
+ */
+export const HAVASS_TIMING_ORDER = [
+  { n: 1, tr: "Güneş ve Ay'ın açısı",        ml: "സൂര്യ–ചന്ദ്ര കോൺ — ഏത് തരം വഫ്ഖ് എന്ന് ഇത് നിശ്ചയിക്കുന്നു", en: "The Sun–Moon angle, which settles what kind of wafq" },
+  { n: 2, tr: "Ay'ın büyüme / küçülme",      ml: "ചന്ദ്രൻ വളരുന്നോ ക്ഷയിക്കുന്നോ — കർമ്മം മൃദുവോ കഠിനമോ എന്നതനുസരിച്ച്", en: "Waxing or waning, by whether the work is soft or hard" },
+  { n: 3, tr: "Ay'ın menzili",               ml: "ആ ഘട്ടത്തിൽ ചന്ദ്രൻ ഏത് മൻസിലിൽ — കർമ്മത്തിന്റെ സ്വഭാവത്തിന് ചേരുന്നത്", en: "Which mansion the Moon is in, fitting the work's character" },
+  { n: 4, tr: "Vefkin yıldızının günü",      ml: "വഫ്ഖിന്റെ ഗ്രഹത്തിന്റെ ദിവസം — ആ പകലോ രാത്രിയോ", en: "The day of the wafq's own planet — that day or its night" },
+  { n: 5, tr: "Vefkin yıldızının saati",     ml: "ഒടുവിൽ ആ ദിവസത്തെ സാഅത്തുകളിൽ ആ ഗ്രഹത്തിന്റേത്", en: "Last, that planet's hour within the day" },
+];
+
+export const HAVASS_TIMING_NOTE = {
+  tr: "Bazı durumlarda en uygun zamanın gelmesi iki veya üç ay sürebilir; bu yüzden gereken yıldızın günü ihmal edilebilir, ya da Ay menazilleri fazla dikkate alınmayabilir — fakat en ideali her şeyin yerine oturmasıdır.",
+  ml: "ചിലപ്പോൾ എല്ലാം ഒത്തുവരാൻ രണ്ടോ മൂന്നോ മാസമെടുക്കാം. അതുകൊണ്ട് ഗ്രഹത്തിന്റെ ദിവസം വിട്ടുകളയാം, അല്ലെങ്കിൽ മൻസിലിന് അധികം ഭാരം കൊടുക്കാതിരിക്കാം — പക്ഷേ എല്ലാം ഒത്തുവരുന്നതാണ് ഏറ്റവും ഉത്തമം.",
+  en: "The right moment can be two or three months away, so the planet's day may be let go, or the mansions not weighed too heavily — but the ideal is that everything falls into place.",
+  page: "161",
+};
+
+/** Incense by planet — Hâvâss I p.201, "YILDIZLARIN TÜTSÜLERİ". */
+export const HAVASS_INCENSE = {
+  sun:     { tr: "Günlük veya Sendrus",        ml: "കുന്തിരിക്കം അല്ലെങ്കിൽ സന്ദറൂസ്" },
+  moon:    { tr: "Günlük veya Ağaç sakızı",    ml: "കുന്തിരിക്കം അല്ലെങ്കിൽ മരക്കറ" },
+  mercury: { tr: "Mahleb kabuğu",              ml: "മഹ്‌ലബിന്റെ തൊലി" },
+  venus:   { tr: "Masteki (Hindistan sakızı)", ml: "മസ്തകി" },
+  mars:    { tr: "Kıst (Toplak otu)",          ml: "ഖുസ്ത്" },
+  jupiter: { tr: "Ödağacı ve Kafur",           ml: "ഊദും കർപ്പൂരവും" },
+  saturn:  { tr: "Yere dökülmüş ıslak nesne",  ml: "നിലത്ത് വീണ നനഞ്ഞ വസ്തു" },
+};
+
+export const HAVASS_INCENSE_NOTE = {
+  tr: "Genel amaçlı olarak sadece Buhurotu veya Günlük yakılabilir.",
+  ml: "പൊതുവായ ആവശ്യത്തിന് ബുഖൂറോ കുന്തിരിക്കമോ മാത്രം പുകയ്ക്കാം.",
+  en: "For a general purpose, plain buhur or frankincense alone may be burned.",
+  page: "201",
 };

@@ -105,13 +105,43 @@ function MansionNext({ n, isEn, customDate }) {
   const best = K.MANSION_HOURS_WITHHELD.includes(n) ? null : K.MANSION_BEST_HOURS[n];
   const bestHours = useMemo(() => (best && span ? best.map((pl) => [pl, nextPlanetHourIn(pl, span, loc, now)]) : []), [best, span, now]);
   const purpose = K.MANSION_PURPOSE[n];
+  const work = K.MANSION_WORK[n];
   return (
     <div className="pt-1 space-y-0.5" style={{ borderTop: "1px dashed rgba(147,197,253,0.25)" }}>
       <When label={isEn ? "Qamar in this manzil" : "ഖമർ ഈ മൻസിലിൽ"} span={span} isEn={isEn} loc={loc} />
       {purpose && <P color="#4ADE80">📋 {isEn ? "Book's table of works" : "കിതാബിലെ പ്രവൃത്തിപ്പട്ടിക"}: <Ar>{purpose.ar}</Ar> — {isEn ? purpose.en : purpose.ml}</P>}
+      {work && (
+        <P color={work.harm ? "#FCA5A5" : "#FBBF24"}>
+          📜 {isEn ? "al-Kharusi's table" : "ഖറൂസ്വിയുടെ പട്ടിക"} (p.{K.MANSION_WORK_SOURCE.page}):{" "}
+          <Ar>{work.nature}</Ar>
+          {work.face && <> · <Ar>{isEn ? "face of " : "വജ്ഹ് "}{work.face}</Ar></>}
+          {" — "}<Ar>{work.ar}</Ar> — {isEn ? work.en : work.ml}
+        </P>
+      )}
+      {work?.note_ar && (
+        <P color="rgba(255,255,255,0.45)"><Ar>{work.note_ar}</Ar> — {isEn ? work.note_en : work.note_ml}</P>
+      )}
       {bestHours.map(([pl, h]) => (
         <P key={pl} color="#C4B5FD">⭐ {isEn ? "Best hour (al-Khalili)" : "ഏറ്റവും നല്ല സാഅത്ത് (ഖലീലി)"}: <b>{pName(pl, isEn)}</b> <Ar>{K.PLANETS[pl].ar}</Ar>{h ? ` → ${h.current ? (isEn ? "now, until " : "ഇപ്പോൾ, വരെ ") + fmtWhen(h.end, loc, isEn) : fmtSpan(h, loc, isEn)}` : ""}</P>
       ))}
+    </div>
+  );
+}
+
+/** The day's own fortune-planet and ascendant — Kashf p.56. */
+function DaySaad({ wd, isEn }) {
+  const sd = K.DAY_SAAD[wd], tl = K.DAY_TALI[wd];
+  if (!sd && !tl) return null;
+  return (
+    <div className="pt-1 space-y-0.5" style={{ borderTop: "1px dashed rgba(147,197,253,0.25)" }}>
+      <P color="#FBBF24">
+        ✦ {isEn ? "Fortune of the day" : "ദിവസത്തിന്റെ സഅ്ദ്"} (p.{K.DAY_SAAD_SOURCE.page}):{" "}
+        <b>{pName(sd, isEn)}</b> <Ar>{K.PLANETS[sd].ar}</Ar>
+      </P>
+      <P color="#C4B5FD">
+        ↑ {isEn ? "Ascendant of the day" : "ദിവസത്തിന്റെ ത്വാലിഅ്"}:{" "}
+        <b>{pName(tl, isEn)}</b> <Ar>{K.PLANETS[tl].ar}</Ar>
+      </P>
     </div>
   );
 }
@@ -127,6 +157,13 @@ function BurjNext({ i, isEn, customDate }) {
       <When label={isEn ? "Qamar in this burj" : "ഖമർ ഈ ബുർജിൽ"} span={span} isEn={isEn} loc={loc} />
       {hour && <When label={`${isEn ? "Needs — hour of" : "ആവശ്യങ്ങൾക്ക് — സാഅത്ത്"} ${pName(hp, isEn)}`} span={hour} isEn={isEn} loc={loc} color="#4ADE80" />}
       {i === 7 && span && <When label={isEn ? "No nikah during" : "നിക്കാഹ് ഒഴിവാക്കേണ്ട സമയം"} span={span} isEn={isEn} loc={loc} color="#F87171" />}
+      {i === K.MAKRUH_AQD.moonInScorpio.sign && (
+        <P color="#F87171">
+          ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"} (p.{K.MAKRUH_AQD.moonInScorpio.page}):{" "}
+          <Ar>{K.MAKRUH_AQD.moonInScorpio.ar}</Ar> —{" "}
+          {isEn ? K.MAKRUH_AQD.moonInScorpio.en : K.MAKRUH_AQD.moonInScorpio.ml}
+        </P>
+      )}
     </div>
   );
 }
@@ -367,6 +404,7 @@ export function AyyamSection() {
                 <P>🧭 {isEn ? "Avoid travelling towards" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b></P>
                 <P>🤲 {isEn ? "Ijaba hour" : "ഇജാബത്തിന്റെ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.IJABA_HOUR[i]} · 🏆 {isEn ? "Mughalaba hour" : "മുഗാലബ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.MUGHALABA_HOUR[i]}</P>
                 {K.MASTERS_HOURS.days.includes(i) && <P>⭐ {isEn ? "Day-hours 1 and 8 are excellent" : "പകലിലെ 1, 8 സാഅത്തുകൾ ശ്രേഷ്ഠം"}</P>}
+                <DaySaad wd={i} isEn={isEn} />
                 <WeekNext wd={i} isEn={isEn} customDate={customDate} />
                 <Others isEn={isEn} items={[O.WEEKDAY_OTHER[i]]} />
               </Row>
@@ -379,6 +417,7 @@ export function AyyamSection() {
         <div className="space-y-1.5">
           {Array.from({ length: 30 }, (_, i) => i + 1).map((d) => {
             const md = K.MONTH_DAYS[d], kamil = K.KAWAMIL.includes(d);
+            const dark = d >= 28, noPalm = K.PLANTING_AVOID_DATES.dates.includes(d);
             const note = isEn ? K.MONTH_DAY_NOTE_EN[d] : md.note_ml;
             return (
               <Row key={d} open={open === `d${d}`} onToggle={() => setOpen(open === `d${d}` ? null : `d${d}`)}
@@ -390,6 +429,20 @@ export function AyyamSection() {
                 <P color="#4ADE80">✓ {actList(md.good, isEn)}</P>
                 {md.avoid.length > 0 && <P color="#F87171">✕ {actList(md.avoid, isEn)}</P>}
                 {kamil && <P color="#F87171">⛔ {isEn ? "One of the seven kawamil days" : "ഏഴ് കവാമിൽ ദിവസങ്ങളിൽ ഒന്ന്"}</P>}
+                {dark && (
+                  <P color="#F87171">
+                    ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"} (p.{K.MAKRUH_AQD.lastThreeDays.page}):{" "}
+                    <Ar>{K.MAKRUH_AQD.lastThreeDays.ar}</Ar> —{" "}
+                    {isEn ? K.MAKRUH_AQD.lastThreeDays.en : K.MAKRUH_AQD.lastThreeDays.ml}
+                  </P>
+                )}
+                {noPalm && (
+                  <P color="#FBBF24">
+                    🌴 {isEn ? "Planting" : "നടീൽ"} (p.{K.PLANTING_AVOID_DATES.page}):{" "}
+                    <Ar>{K.PLANTING_AVOID_DATES.ar}</Ar> —{" "}
+                    {isEn ? K.PLANTING_AVOID_DATES.en : K.PLANTING_AVOID_DATES.ml}
+                  </P>
+                )}
                 <LunarDayNext d={d} isEn={isEn} customDate={customDate} color={kamil || md.nature === "bad" ? "#FCA5A5" : undefined} />
               </Row>
             );
