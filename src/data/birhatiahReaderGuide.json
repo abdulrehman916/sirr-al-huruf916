@@ -835,7 +835,7 @@
         "figure": {
           "image_path": "/figures/birhatiah-manba-p68.png",
           "caption": {
-            "ml": "എട്ട് അധികനാമങ്ങളുടെ അച്ചടിരൂപം — പേജ് 68-ലെ അതേ ചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം. അക്ഷരങ്ങളോ ഹറകത്തോ പുനർനിർമിച്ചിട്ടില്ല.",
+            "ml": "എട്ട് അധികനാമങ്ങളുടെ അച്ചടിരൂപം — അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം. അക്ഷരങ്ങളോ ഹറകത്തോ പുനർനിർമിച്ചിട്ടില്ല.",
             "en": "Eight additional names as printed — enlarged region of the same page-68 image, without reconstructed letters or vowels."
           },
           "crop": {
@@ -1115,8 +1115,8 @@
         "figure": {
           "image_path": "/figures/birhatiah-manba-p69.png",
           "caption": {
-            "ml": "പേജ് 69-ൽ അച്ചടിച്ച ത്വൽസമുകളുടെ മൂലരൂപം — ചിഹ്നങ്ങളുടെ എണ്ണം, ക്രമം, രേഖകൾ അതേപടി.",
-            "en": "Original talisman marks on page 69 — same count, order and strokes as the source image."
+            "ml": "ഗ്രന്ഥത്തിൽ അച്ചടിച്ച ത്വൽസമുകളുടെ മൂലരൂപം — ചിഹ്നങ്ങളുടെ എണ്ണം, ക്രമം, രേഖകൾ അതേപടി.",
+            "en": "Original talisman marks as printed in the book — same count, order and strokes as the source image."
           },
           "crop": {
             "view_box": "160 628 350 63",
@@ -1793,7 +1793,7 @@
         "figure": {
           "image_path": "/figures/birhatiah-manba-p71.png",
           "caption": {
-            "ml": "അപരിചിത പദങ്ങളും അവയുടെ സ്ഥാനക്രമവും — പേജ് 71-ലെ അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം.",
+            "ml": "അപരിചിത പദങ്ങളും അവയുടെ സ്ഥാനക്രമവും — അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം.",
             "en": "Unfamiliar words and their positions — enlarged region of the original page-71 image."
           },
           "crop": {
