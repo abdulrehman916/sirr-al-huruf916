@@ -55,6 +55,7 @@ export function lettersOf(text) {
 export const METHODS = [
   {
     id: "std",
+    section: "a",
     src: "kashf",
     also: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
@@ -82,6 +83,7 @@ export const METHODS = [
   },
   {
     id: "jabr",
+    section: "a",
     src: "kashf",
     also: "havass",
     sizes: [4, 5, 6, 7, 8, 9, 10],
@@ -109,6 +111,7 @@ export const METHODS = [
   },
   {
     id: "tafadul",
+    section: "a",
     src: "kashf",
     also: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
@@ -137,6 +140,7 @@ export const METHODS = [
   },
   {
     id: "halivasat",
+    section: "b",
     src: "havass",
     sizes: [3],
     ml: "ഹാലി വസത്ത് — ഉസൂൽ 2", en: "Hâli vasat — 2nd Usûl", ar: "",
@@ -166,6 +170,7 @@ export const METHODS = [
   },
   {
     id: "misli",
+    section: "b",
     src: "havass",
     sizes: [3],
     ml: "ഗുണിത രീതി — ഉസൂൽ 3", en: "The multiples method — 3rd Usûl", ar: "",
@@ -194,6 +199,7 @@ export const METHODS = [
   },
   {
     id: "firstrow",
+    section: "b",
     src: "havass",
     sizes: [3],
     ml: "ഒന്നാം വരി രീതി — ഉസൂൽ 4", en: "The first-row method — 4th Usûl", ar: "",
@@ -247,6 +253,7 @@ export const METHODS = [
   },
   {
     id: "nameayah",
+    section: "b",
     src: "havass",
     sizes: [3],
     ml: "പേരും ആയത്തും — ഉസൂൽ 5", en: "Name and ayah — 5th Usûl", ar: "",
@@ -286,6 +293,7 @@ export const METHODS = [
   },
   {
     id: "hurufi",
+    section: "b",
     src: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
     ml: "ഹുറൂഫി — ഉസൂൽ 6", en: "Hurufî — 6th Usûl", ar: "الوفق الحرفي",
@@ -318,6 +326,7 @@ export const METHODS = [
   },
   {
     id: "hurufi2num",
+    section: "b",
     src: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
     ml: "ഹുറൂഫി → സംഖ്യ — ഉസൂൽ 7", en: "Hurufî turned numeric — 7th Usûl", ar: "",
@@ -346,6 +355,7 @@ export const METHODS = [
   },
   {
     id: "hollow",
+    section: "a",
     src: "kashf",
     sizes: [3],
     ml: "നടുവ് ഒഴിഞ്ഞ 3×3", en: "Hollow-centre 3×3", ar: "مثلث خالي الوسط",
@@ -372,6 +382,7 @@ export const METHODS = [
   },
   {
     id: "harfadad",
+    section: "b",
     src: "havass",
     sizes: [4],
     ml: "അക്ഷരവും സംഖ്യയും ഒന്നിച്ച്", en: "Letters and numbers together", ar: "",
@@ -429,6 +440,7 @@ export const METHODS = [
   },
   {
     id: "capraz",
+    section: "c",
     src: "havass",
     sizes: [4, 5, 6, 7, 8, 9, 10],
     capraz: true,
@@ -481,6 +493,7 @@ export const METHODS = [
   },
   {
     id: "tedahul",
+    section: "c",
     src: "havass",
     sizes: [3, 4, 5, 6, 7, 8, 9, 10],
     sizeFromText: true,
@@ -527,6 +540,15 @@ export const METHODS = [
 ];
 
 export const methodsFor = (n) => METHODS.filter((m) => m.sizes.includes(n));
+
+/**
+ * The methods of one section, at one size. The sections are what the
+ * page locks and sells separately, so a method belongs to exactly one:
+ * A is Kashf's own building of a square, B the ways Hâvâss sets out
+ * for it, C the workings that stand on a finished square.
+ */
+export const methodsIn = (section, n) =>
+  METHODS.filter((m) => m.section === section && m.sizes.includes(n));
 export const methodById = (id) => METHODS.find((m) => m.id === id) || null;
 
 /** The Sun–Moon angle that matches a step, for showing beside the step control. */

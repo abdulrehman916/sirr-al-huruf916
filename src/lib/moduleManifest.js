@@ -86,6 +86,15 @@ export const MODULE_DEFINITIONS = {
       { id: 'section_b', label: 'Section B', icon: '✦', module_type: MODULE_TYPES.SECTION, tab: 'section-b', sort_order: 2 },
     ],
   },
+
+  '/sirr-al-wafq': {
+    pageName: 'Sirr al-Wafq',
+    modules: [
+      { id: 'section_a', label: 'Section A', icon: '۞', module_type: MODULE_TYPES.SECTION, tab: 'section-a', sort_order: 1 },
+      { id: 'section_b', label: 'Section B', icon: '۞', module_type: MODULE_TYPES.SECTION, tab: 'section-b', sort_order: 2 },
+      { id: 'section_c', label: 'Section C', icon: '۞', module_type: MODULE_TYPES.SECTION, tab: 'section-c', sort_order: 3 },
+    ],
+  },
 };
 
 /**

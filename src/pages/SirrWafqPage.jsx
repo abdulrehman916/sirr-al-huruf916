@@ -7,6 +7,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
+import FeatureLockedCard from "@/components/FeatureLockedCard";
+import { getFeatures } from "@/lib/featureRegistry";
+import { checkFeatureAccess } from "@/lib/featurePermission";
 import {
   abjadOf, asOf, SIZES, SIZE_NAME, SQUARE_CLASS, buildWafq, hollowWafq3, workingSizes,
   elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, DAY_ANGEL, PURPOSES,
@@ -17,7 +20,7 @@ import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
-import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
+import { METHODS, methodsFor, methodsIn, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
@@ -27,6 +30,50 @@ import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS } from "@/lib/wafqSurround";
 
 const GOLD = "#F5D060";
+const PAGE_PATH = "/sirr-al-wafq";
+
+// The three sections are what the page locks and sells apart, so each
+// is its own card and its own module id. Nothing of a section shows
+// until its card is opened.
+const SECTIONS = [
+  { id: "section-a", feature: "section_a", ar: "القسم أ",
+    ml: "സെക്ഷൻ എ", en: "Section A",
+    sub_ml: "കശ്ഫുൽ ഹഖാഇഖിന്റെ അടിസ്ഥാന നിർമ്മാണം",
+    sub_en: "Kashf al-Haqa'iq — the building of a square" },
+  { id: "section-b", feature: "section_b", ar: "القسم ب",
+    ml: "സെക്ഷൻ ബി", en: "Section B",
+    sub_ml: "ഹവാസ്സിന്റെ ഉസൂലുകൾ",
+    sub_en: "The usûl of Hâvâss" },
+  { id: "section-c", feature: "section_c", ar: "القسم ج",
+    ml: "സെക്ഷൻ സി", en: "Section C",
+    sub_ml: "കോർത്ത കള്ളി, തദാഹുൽ, ഹാദിമുകൾ",
+    sub_en: "The crossed square, tedahül, and the hâdims" },
+];
+
+function SectionCards({ onPick, isEn, txt }) {
+  const feats = getFeatures(PAGE_PATH);
+  return (
+    <div className="grid gap-3 sm:grid-cols-3">
+      {SECTIONS.map((sec) => {
+        const f = feats.find((x) => x.id === sec.feature);
+        const locked = f && !checkFeatureAccess(PAGE_PATH, f.id);
+        return (
+          <button key={sec.id} type="button" onClick={() => onPick(sec.id)}
+            className="rounded-2xl p-4 text-left space-y-1.5 transition"
+            style={{ ...card, borderColor: locked ? "rgba(212,175,55,0.2)" : "rgba(212,175,55,0.45)" }}>
+            <p className="font-amiri text-2xl" style={{ color: GOLD }}>{sec.ar}</p>
+            <p className="font-inter text-xs font-bold" style={{ color: "#fff" }}>
+              {isEn ? sec.en : sec.ml}{locked ? " 🔒" : ""}
+            </p>
+            <p className="font-inter text-[10px] leading-relaxed" style={{ color: "rgba(245,234,212,0.6)" }}>
+              {isEn ? sec.sub_en : sec.sub_ml}
+            </p>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
 const INK_C = "#f5ead4";
 const card = { background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.22)" };
 const WD_ML = ["ഞായർ", "തിങ്കൾ", "ചൊവ്വ", "ബുധൻ", "വ്യാഴം", "വെള്ളി", "ശനി"];
@@ -398,6 +445,17 @@ export default function SirrWafqPage() {
   const [lang, setLang] = useState("ml");
   const txt = (ml, en) => (lang === "en" ? en : ml);
   const isEn = lang === "en";
+  // Which section is open. Nothing of a section is on the page until
+  // its card is chosen, so each one can be locked and sold apart.
+  const [section, setSection] = useState(null);
+  // One plain check, as the Holy Names page does it: the feature this
+  // section belongs to, and whether it is still locked.
+  const secDef = section ? SECTIONS.find((v) => v.id === section) : null;
+  const secFeature = secDef
+    ? getFeatures(PAGE_PATH).find((x) => x.id === secDef.feature) || null
+    : null;
+  const sectionLocked = !!(secFeature && !checkFeatureAccess(PAGE_PATH, secFeature.id));
+  const secKey = section === "section-b" ? "b" : section === "section-c" ? "c" : "a";
   const [mode, setMode] = useState("text");
   const [text, setText] = useState("");
   const [names, setNames] = useState({ self: "", mother: "", house: "" });
@@ -582,6 +640,22 @@ export default function SirrWafqPage() {
               "If this is your first time, this much is enough: if you have a purpose in mind, write it below in Arabic — an ayah, a surah, a name of God, or a person\'s name with the mother\'s. The square builds itself from its abjad total. If the purpose is not settled but you already have a total worked out, enter that number alone and you will get the squares that fit it. What to do at each step after that is written under its own heading.")}</Intro>
           </div>
         </Box>
+
+        {!section && <SectionCards onPick={setSection} isEn={isEn} txt={txt} />}
+
+        {section && sectionLocked && (
+          <FeatureLockedCard pagePath={PAGE_PATH} featureId={secFeature.id} featureLabel={secFeature.label}
+                             onBack={() => setSection(null)}
+                             onUnlocked={() => window.location.reload()} />
+        )}
+
+        {section && !sectionLocked && (
+        <>
+        <button type="button" onClick={() => setSection(null)}
+                className="rounded-xl px-4 py-2 font-inter text-[11px] font-bold"
+                style={{ border: "1px solid rgba(212,175,55,0.35)", color: GOLD }}>
+          ← {txt("സെക്ഷനുകളിലേക്ക്", "Back to the sections")}
+        </button>
 
         {/* 1 */}
         <Box step="1" title={txt("വാചകം അല്ലെങ്കിൽ പേര്", "Text or name")}>
@@ -770,8 +844,8 @@ export default function SirrWafqPage() {
           <>
             <Box title={txt(`${n}×${n} കള്ളി ഉണ്ടാക്കുന്ന രീതികൾ`, `Ways of building the ${n}×${n}`)}>
               <Note>{txt(
-                `ഈ കള്ളിക്ക് രണ്ട് ഗ്രന്ഥങ്ങളിൽ നിന്നായി ${methodsFor(n).length} രീതികൾ. ഓരോന്നിന്റെയും നിയമങ്ങൾ ഗ്രന്ഥം പറയുന്നതുപോലെ, പിന്നെ ആ രീതിയിൽ ഉണ്ടാക്കിയ കള്ളി, പിന്നെ പരിശോധന.`,
-                `${methodsFor(n).length} ways for this square, from the two books. For each: the rules as the book gives them, then the square built that way, then the check.`)}</Note>
+                `ഈ കള്ളിക്ക് രണ്ട് ഗ്രന്ഥങ്ങളിൽ നിന്നായി ${methodsIn(secKey, n).length} രീതികൾ. ഓരോന്നിന്റെയും നിയമങ്ങൾ ഗ്രന്ഥം പറയുന്നതുപോലെ, പിന്നെ ആ രീതിയിൽ ഉണ്ടാക്കിയ കള്ളി, പിന്നെ പരിശോധന.`,
+                `${methodsIn(secKey, n).length} ways for this square, from the two books. For each: the rules as the book gives them, then the square built that way, then the check.`)}</Note>
               <Note color="rgba(255,255,255,0.5)">{txt(
                 "ചുവട് (k) മാറ്റിയാൽ എല്ലാ രീതിയിലും മാറ്റം വരും. ഹവാസ്സ് പ്രകാരം k തിരഞ്ഞെടുക്കുന്നത് സൂര്യ-ചന്ദ്ര കോൺ നോക്കിയാണ്:",
                 "Changing the step (k) changes every method. In Hâvâss, k is chosen by the Sun–Moon angle:")}</Note>
@@ -787,7 +861,7 @@ export default function SirrWafqPage() {
                 })}
               </div>
             </Box>
-            {methodsFor(n).map((m, i) => (
+            {methodsIn(secKey, n).map((m, i) => (
               <MethodSection key={m.id} m={m} idx={i} N={N} n={n} step={step} isEn={isEn} txt={txt}
                 mText={mText} setMText={setMText} mAyah={mAyah} setMAyah={setMAyah}
                 fallbackText={mode === "text" ? text : names.self}
@@ -1030,6 +1104,8 @@ export default function SirrWafqPage() {
               </ul>
             </Box>
           </div>
+        )}
+        </>
         )}
       </div>
     </PageLayout>
