@@ -1,5 +1,6 @@
 import notes from '@/data/birhatiahOmanBook2026.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const countLabels = {
   collective_recitation: { ml: 'സംയുക്ത ദഅ്‌വത്ത് വായന', en: 'Collective invocation readings' },
@@ -13,6 +14,7 @@ const countLabels = {
 };
 
 export default function BirhatiahOmanBookNotes() {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const sourceOrder = [...notes.notes].sort((a, b) => a.printed_page - b.printed_page);
@@ -48,12 +50,12 @@ export default function BirhatiahOmanBookNotes() {
               {ml ? "മൂലപേജിലെ യഥാർത്ഥ ചിത്രം ഈ കാർഡിൽ ഇനിയും ചേർത്തിട്ടില്ല." : "The original source figure has not yet been added to this card."}
             </p>)}
         {note.review_note && <p className={`text-xs text-white/60 leading-relaxed ${ml ? 'font-malayalam' : 'font-inter'}`}>{note.review_note[language]}</p>}
-        <p className="text-xs text-white/55">{notes.source_title_ar} · {notes.edition} · {ml ? "അച്ചടിച്ച പേജ്" : "printed page"} {note.printed_page}{note.continuation_printed_page ? `–${note.continuation_printed_page}` : ""} · PDF {note.pdf_page}{note.continuation_pdf_page ? `–${note.continuation_pdf_page}` : ""}</p>
+        {isOwner && <p className="text-xs text-white/55">{notes.source_title_ar} · {notes.edition} · {ml ? "അച്ചടിച്ച പേജ്" : "printed page"} {note.printed_page}{note.continuation_printed_page ? `–${note.continuation_printed_page}` : ""} · PDF {note.pdf_page}{note.continuation_pdf_page ? `–${note.continuation_pdf_page}` : ""}</p>}
       </article>)}
       {notes.indexed_pending_visual_review?.length > 0 && <section className="rounded-lg border border-white/15 p-3 space-y-3" data-source-index-status="needs-image-review">
         <h3 className="text-yellow-100 text-sm">{ml ? 'കണ്ടെത്തിയ മറ്റ് പേജുകൾ — മൂലചിത്ര പരിശോധന ബാക്കി' : 'Additional indexed pages — original image review pending'} ({notes.indexed_pending_visual_review.length})</h3>
         <ul className="space-y-3 pt-3">{notes.indexed_pending_visual_review.map(item => <li key={item.pdf_page} className="border-t border-white/10 pt-2 space-y-1">
-          <p className="text-xs text-yellow-100">{ml ? 'അച്ചടിച്ച പേജ്' : 'Printed page'} {item.printed_page} · PDF {item.pdf_page}</p>
+          {isOwner && <p className="text-xs text-yellow-100">{ml ? 'അച്ചടിച്ച പേജ്' : 'Printed page'} {item.printed_page} · PDF {item.pdf_page}</p>}
           <p className="text-sm text-white/80 leading-relaxed">{item.summary[language]}</p>
           <p className="text-xs text-white/50">{ml ? 'ഇത് തിരച്ചിലിൽ കണ്ടെത്തിയ സൂചിക മാത്രം; അക്ഷരങ്ങളും ചിത്രങ്ങളും ഇനിയും സ്ഥിരീകരിച്ചിട്ടില്ല.' : 'Text-search index only: wording and figures not yet visually verified.'}</p>
         </li>)}</ul>

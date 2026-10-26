@@ -26,6 +26,7 @@ import {
   PDF_SOURCE_LABEL,
   VERIFICATION_STATUS,
 } from "@/lib/qasamData";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -42,6 +43,7 @@ const PLANET_ARABIC = {
 };
 
 export default function QasamPanel({ selections }) {
+  const isOwner = useIsOwner();             // PDF page notes are the owner's alone
   const [expanded, setExpanded] = useState(false);
   useBackLayer(expanded, () => setExpanded(false)); // Back closes this first
   const [showDua, setShowDua] = useState(false);
@@ -181,7 +183,7 @@ export default function QasamPanel({ selections }) {
                       </div>
                       {entry.angel_da3wa && entry.angel_da3wa !== entry.angel_qasam && (
                         <p className="font-inter text-[10px]" style={{ color: "rgba(251,191,36,0.70)" }}>
-                          ⚠ Angel name differs between Da'wa ({entry.angel_da3wa}) and Qasam ({entry.angel_qasam}) — both verbatim from PDF. {entry.pdf_note}
+                          ⚠ Angel name differs between Da'wa ({entry.angel_da3wa}) and Qasam ({entry.angel_qasam}) {isOwner && <> — {entry.pdf_note}</>}
                         </p>
                       )}
                       {entry.quran_ref && (
@@ -237,16 +239,16 @@ export default function QasamPanel({ selections }) {
 
                     {/* SECTION 2: Da'wa — verbatim Arabic */}
                     <ArabicBlock
-                      label={`دعوة ${entry.dayName} — Da'wa (PDF p.${entry.da3wa.source_page})`}
+                      label={`دعوة ${entry.dayName} — Da'wa`}
                       arabic={entry.da3wa.arabic}
-                      note={entry.da3wa.note}
+                      note={isOwner ? entry.da3wa.note : undefined}
                     />
 
                     {/* SECTION 3: Qasam — verbatim Arabic (Omani refined form) */}
                     <ArabicBlock
-                      label={`القسم — Qasam / Omani Refined Form (PDF p.${entry.qasam.source_page})`}
+                      label={`القسم — Qasam / Omani Refined Form`}
                       arabic={entry.qasam.arabic}
-                      note={entry.qasam.note}
+                      note={isOwner ? entry.qasam.note : undefined}
                       highlight
                     />
 
@@ -256,7 +258,7 @@ export default function QasamPanel({ selections }) {
                         {OMANI_FORM_NOTE.arabic}
                       </p>
                       <p className="font-inter text-[10px] mt-1" style={{ color: G.dim }}>
-                        PDF p.{OMANI_FORM_NOTE.source_page} — {OMANI_FORM_NOTE.ml}
+                        {OMANI_FORM_NOTE.ml}
                       </p>
                     </div>
 
@@ -266,7 +268,7 @@ export default function QasamPanel({ selections }) {
                         <BookOpen className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style={{ color: "rgba(96,165,250,0.60)" }} />
                         <div>
                           <p className="font-inter text-[9px] uppercase tracking-wider font-bold mb-1" style={{ color: "rgba(96,165,250,0.60)" }}>
-                            Ritual Order — PDF p.{RITUAL_ORDER_NOTE.source_page}
+                            Ritual Order
                           </p>
                           <p className="font-amiri text-sm text-right leading-loose" style={{ color: "rgba(255,255,255,0.65)" }} dir="rtl">
                             {RITUAL_ORDER_NOTE.arabic}
@@ -287,7 +289,7 @@ export default function QasamPanel({ selections }) {
                       >
                         <div className="text-left">
                           <p className="font-inter text-[11px] font-bold uppercase tracking-wider" style={{ color: G.text }}>
-                            الدعاء العام بعد القسم — Post-Qasam Du'a (PDF p.{GENERAL_POST_QASAM_DUA.source_page})
+                            الدعاء العام بعد القسم — Post-Qasam Du'a
                           </p>
                           <p className="font-inter text-[10px]" style={{ color: G.dim }}>
                             {GENERAL_POST_QASAM_DUA.instruction_ml}

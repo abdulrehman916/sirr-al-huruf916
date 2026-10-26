@@ -6,6 +6,7 @@
 import { G, T, translatePlanet, translateDay, saatDisplayNum, DAY_KEY_BY_INDEX, MIZAN_DAY_NAMES } from "../shared";
 import { computeCompat, compatColor } from "../v2/compatibility";
 import { BookOpen } from "lucide-react";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 export { G, T, translatePlanet, translateDay, saatDisplayNum, DAY_KEY_BY_INDEX, MIZAN_DAY_NAMES, computeCompat, compatColor };
 
@@ -59,6 +60,7 @@ export function fmtRuleSource(rule) {
 }
 
 export function RuleSources({ rules, lang, tone = "neutral" }) {
+  const isOwner = useIsOwner();             // book · page lines are the owner's alone
   if (!rules || rules.length === 0) return null;
   const color = tone === "support" ? "#4ADE80" : tone === "oppose" ? "#F87171" : G.dim;
   // Dedup by source + page — every distinct book/page shown once.
@@ -74,10 +76,10 @@ export function RuleSources({ rules, lang, tone = "neutral" }) {
     <div className="space-y-1.5">
       {unique.map((r, i) => (
         <div key={i} className="rounded-lg p-2" style={{ background: G.bg, border: `1px solid ${G.border}` }}>
-          <div className="flex items-center gap-1.5">
+          {isOwner && <div className="flex items-center gap-1.5">
             <BookOpen className="w-3 h-3 flex-shrink-0" style={{ color }} />
             <span className="font-inter text-[10px] font-bold" style={{ color: "#fff" }}>{fmtRuleSource(r)}</span>
-          </div>
+          </div>}
           {r.title && <p className="font-inter text-[11px] leading-snug mt-0.5" style={{ color: "rgba(255,255,255,0.72)" }}>{r.title}</p>}
         </div>
       ))}

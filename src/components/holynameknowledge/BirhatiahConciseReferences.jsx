@@ -4,10 +4,12 @@ import BirhatiahArabicSinglePage from './BirhatiahArabicSinglePage';
 import BirhatiahResearchContext from './BirhatiahResearchContext';
 import BirhatiahOmanNameReferences from './BirhatiahOmanNameReferences';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // Source content and existing source images are displayed in the card.
 // External links are optional bibliography; never the sole way to view an excerpt.
 export default function BirhatiahConciseReferences({ chapter, nameId }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const sourceTitles = new Set();
@@ -32,7 +34,7 @@ export default function BirhatiahConciseReferences({ chapter, nameId }) {
       {uniqueFigures.map(figure => <figure key={figure.image_path} className="space-y-2 pt-3">
         <img src={figure.image_path} loading="lazy" alt={figure.caption?.[language] || (ml ? 'മൂലഗ്രന്ഥത്തിലെ ചിത്രം' : 'Original source figure')} className="block max-w-full w-96 rounded-lg bg-white mx-auto" />
         {figure.caption?.[language] && <figcaption className="text-sm text-white/80 leading-loose">{figure.caption[language]}</figcaption>}
-        <p className="text-xs text-white/55">{figure.source_title || chapter.source_title}{figure.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${figure.printed_page}` : ''}</p>
+        {isOwner && <p className="text-xs text-white/55">{figure.source_title || chapter.source_title}{figure.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${figure.printed_page}` : ''}</p>}
       </figure>)}
     </section>}
     <BirhatiahOmanNameReferences nameId={nameId} />

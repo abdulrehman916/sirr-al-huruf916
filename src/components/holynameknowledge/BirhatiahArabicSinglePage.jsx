@@ -1,7 +1,9 @@
 import source from '@/data/birhatiahArabicSinglePage.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 export default function BirhatiahArabicSinglePage({ nameId }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const entries = source.accounts.filter(entry => nameId ? entry.name_ids?.includes(nameId) : !entry.name_ids?.length);
@@ -13,7 +15,7 @@ export default function BirhatiahArabicSinglePage({ nameId }) {
       <h3 className="text-yellow-100">{entry.title[language]}</h3>
       <p className="font-amiri text-xl text-right leading-loose text-white/90" lang="ar" dir="rtl">{entry.arabic_original}</p>
       <p className="text-sm leading-loose text-white/85">{entry.translation[language]}</p>
-      <p className="text-xs text-white/55">{source.source_title} · {ml ? 'PDF പേജ്' : 'PDF page'} {entry.pdf_page}</p>
+      {isOwner && <p className="text-xs text-white/55">{source.source_title} · {ml ? 'PDF പേജ്' : 'PDF page'} {entry.pdf_page}</p>}
     </article>)}
     <figure className="space-y-3 border-t border-white/15 pt-3" data-reader-section="inline-source-image">
       <figcaption className="text-sm text-white/70">{ml ? 'പരിശോധിച്ച അറബി മൂലപേജ്' : 'Checked original Arabic page'}</figcaption>

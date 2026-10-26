@@ -28,6 +28,7 @@ import { getHolyNameCardMetrics } from "@/lib/holyNameCardMetrics";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference, useHolyNamesLanguage } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 import { useBackLayer } from "@/lib/useBackLayer";
+import { useIsOwner } from "@/hooks/useIsOwner";
 const PAGE_PATH = "/holy-names";
 const FEATURES = getFeatures(PAGE_PATH);
 
@@ -325,6 +326,7 @@ function SectionA({ importRefreshKey }) {
 
 // ── SECTION B COMPONENT ──────────────────────────────────────────
 function SectionB() {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const { getPageState, setPageState } = usePageState();
   const listKey = "magical-holy-names-section-b";
@@ -529,7 +531,7 @@ function SectionB() {
                   borderColor: "rgba(212,175,55,0.20)"
                 }}>
                   <span style={{ color: "rgba(255,255,255,0.50)" }}>{name.surah_name || "PDF"}</span>
-                  <span style={{ color: "rgba(212,175,55,0.60)" }}>Page {name.source_pdf_page}</span>
+                  {isOwner && <span style={{ color: "rgba(212,175,55,0.60)" }}>Page {name.source_pdf_page}</span>}
                 </div>
               </div>
             </Link>

@@ -110,6 +110,7 @@ function Block({ title, titleML, icon: Icon, children, accent, defaultOpen = tru
 }
 
 function AdvancedBlock({ label, ml, entries, nameId }) {
+  const isOwner = useIsOwner();
   const list = Array.isArray(entries) ? entries : [];
   const { language } = useHolyNamesLanguage();
   return (
@@ -131,7 +132,7 @@ function AdvancedBlock({ label, ml, entries, nameId }) {
                 {translated
                   ? <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[11px] selectable leading-relaxed`} style={{ color: "rgba(255,255,255,0.85)" }} dir="auto">{translated}</p>
                   : <p className={`${language === "ml" ? "font-malayalam" : "font-inter"} text-[10px] italic`} style={{ color: "rgba(255,255,255,0.38)" }}>{language === "ml" ? "മലയാള പരിഭാഷ ലഭ്യമല്ല" : "Translation unavailable"}</p>}
-                {(e.source_reference || e.source_page) && <p className="font-inter text-[10px] mt-1 break-words" style={{ color: "rgba(212,175,55,0.60)" }}>{e.source_reference || ""}{e.source_page ? ` · p. ${e.source_page}` : ""}</p>}
+                {isOwner && (e.source_reference || e.source_page) && <p className="font-inter text-[10px] mt-1 break-words" style={{ color: "rgba(212,175,55,0.60)" }}>{e.source_reference || ""}{e.source_page ? ` · p. ${e.source_page}` : ""}</p>}
                 {(e.name_id === nameId || e.related_name_id === nameId) && <p className="font-malayalam text-[10px]" style={{color:P.dim}}>{language === "ml" ? "ഈ ഇസ്മുമായി നേരിട്ട് ബന്ധിപ്പിച്ച രേഖ" : "Explicitly linked to this name"}</p>}
               </div>
             );
@@ -288,7 +289,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
           <Field label="Verification Status" labelML="പരിശോധന നില">{rec.verification_status || "unverified"}</Field>
         </div>
         <Field label="Source Reference" labelML="സ്രോതസ്സ് പരാമർശം">{rec.source_reference}</Field>
-        <Field label="Source Page Number" labelML="സ്രോതസ്സ് പേജ്">{rec.source_page_number}</Field>
+        {isOwner && <Field label="Source Page Number" labelML="സ്രോതസ്സ് പേജ്">{rec.source_page_number}</Field>}
         {isOwner && <Field label="Source Notes" labelML="സ്രോതസ്സ് കുറിപ്പുകൾ">{rec.source_notes}</Field>}
       </Block>
 
@@ -304,7 +305,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
                   <BookMarked className="w-3 h-3 flex-shrink-0 mt-0.5" style={{ color: P.dim }} />
                   <div className="flex-1 space-y-0.5">
                     <p className="font-inter text-[10px] selectable break-words" style={{ color: "rgba(255,255,255,0.72)" }}>{s.source_reference || (language === "ml" ? "സ്രോതസ്സ് വ്യക്തമാക്കിയിട്ടില്ല" : "Source not recorded")}</p>
-                    {s.source_page && <p className="font-malayalam text-[11px]" style={{ color: P.dim }}>{language === "ml" ? "പേജ്" : "Page"} {s.source_page}</p>}
+                    {isOwner && s.source_page && <p className="font-malayalam text-[11px]" style={{ color: P.dim }}>{language === "ml" ? "പേജ്" : "Page"} {s.source_page}</p>}
                   </div>
                 </div>
                 {s.arabic_text && <p className="font-amiri text-lg leading-loose selectable" style={{ color: "rgba(255,255,255,0.90)" }} dir="rtl">{s.arabic_text}</p>}
@@ -337,7 +338,7 @@ export default function HolyNameEsotericResearchProfile({ nameId, sharedEntryKey
         {Array.isArray(rec.sources) && rec.sources.length > 0 && (
           <div className="space-y-1 pt-2" style={{ borderTop: `1px solid ${P.faint}` }}>
             <span className="font-malayalam text-[12px] font-semibold" style={{ color: P.dim }}>{language === "ml" ? "പരിശോധിച്ച സ്രോതസ്സുകൾ" : "Recorded source references"}</span>
-            {rec.sources.map((s, i) => <p key={i} className="font-inter text-[9px] selectable" style={{ color: "rgba(255,255,255,0.65)" }}>{s.reference} {s.page ? `(p. ${s.page})` : ""}</p>)}
+            {isOwner && rec.sources.map((s, i) => <p key={i} className="font-inter text-[9px] selectable" style={{ color: "rgba(255,255,255,0.65)" }}>{s.reference} {s.page ? `(p. ${s.page})` : ""}</p>)}
           </div>
         )}
       </Block>

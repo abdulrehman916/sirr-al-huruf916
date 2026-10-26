@@ -1,7 +1,9 @@
 import source from '@/data/birhatiahArabicInvocationSources.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 export default function BirhatiahArabicInvocationSources() {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   return <section className="rounded-xl border border-yellow-500/25 p-4 space-y-4">
@@ -20,7 +22,7 @@ export default function BirhatiahArabicInvocationSources() {
         </section>}
         <h4 className="text-yellow-100 text-sm">{ml ? 'പാഠത്തെക്കുറിച്ചുള്ള വിശദീകരണം' : 'Explanation of the passage'}</h4>
         <p className="text-sm leading-loose text-white/85">{entry.translation[language]}</p>
-        <p className="text-xs text-white/60">{ml ? 'താഴെ കാർഡിനുള്ളിൽ അച്ചടിച്ച മൂലപേജ്' : 'Printed original page displayed below in this card'}: {entry.pdf_page}</p>
+        <p className="text-xs text-white/60">{ml ? 'താഴെ കാർഡിനുള്ളിൽ അച്ചടിച്ച മൂലപേജ്' : 'Printed original page displayed below in this card'}{isOwner && <>: {entry.pdf_page}</>}</p>
       </article>)}
     </section>
     {source.accounts.map(entry => <article key={entry.id} className="border-t border-white/15 pt-3 space-y-3">
@@ -39,7 +41,7 @@ export default function BirhatiahArabicInvocationSources() {
       <h3 className="text-white/70">{ml ? 'മൂന്നു പേജുകളിലെ മുഴുവൻ അച്ചടിച്ച പാഠം' : 'Complete printed text on all three pages'}</h3>
       {source.pages.map(page => <figure key={page.pdf_page} className="space-y-2">
         <img src={page.image_path} loading="lazy" alt={`${source.source_title} · ${page.pdf_page}`} className="block w-full max-w-2xl mx-auto bg-white rounded-lg" />
-        <figcaption className="text-xs text-white/55">{source.source_title} · {ml ? 'PDF പേജ്' : 'PDF page'} {page.pdf_page}</figcaption>
+        <figcaption className="text-xs text-white/55">{isOwner && <>{source.source_title} · {ml ? 'PDF പേജ്' : 'PDF page'} {page.pdf_page}</>}</figcaption>
       </figure>)}
     </section>
     <footer className="border-t border-white/15 pt-3 space-y-2 text-xs text-white/60" data-reader-section="optional-source-links">

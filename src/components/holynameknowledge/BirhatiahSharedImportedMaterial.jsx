@@ -1,9 +1,11 @@
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import { BIRHATIAH_FIELD_LABELS, sectionCOriginal, sectionCTranslation } from '@/lib/birhatiahSharedContent';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // Only the truly identical, unscoped records present in all 28 name cards
 // appear here once, instead of being mislabelled as 28 distinct practices.
 export default function BirhatiahSharedImportedMaterial({ byField = {} }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const sections = Object.entries(byField).filter(([, entries]) => entries.length);
@@ -30,7 +32,7 @@ export default function BirhatiahSharedImportedMaterial({ byField = {} }) {
               {translation || (ml ? 'ഈ മൂലവാക്യത്തിന്റെ മലയാള അർത്ഥം ഇനിയും ഉറപ്പിച്ച് ചേർത്തിട്ടില്ല.' : 'The source statement has not yet been translated into English.')}
             </p>
             {!original && !translation && <p className="text-xs text-white/60">{ml ? "ഈ മൂലരേഖയുടെ മലയാള പരിഭാഷ ചേർക്കാനുണ്ട്." : "This source entry still needs an English translation."}</p>}
-            <p className="text-xs text-white/55 break-words">{entry.source_reference || (ml ? 'സ്രോതസ്സ് രേഖപ്പെടുത്തിയിട്ടില്ല' : 'Source not recorded')}{entry.source_page ? ` · ${ml ? 'പേജ്' : 'Page'} ${entry.source_page}` : ''}</p>
+            {isOwner && <p className="text-xs text-white/55 break-words">{entry.source_reference || (ml ? 'സ്രോതസ്സ് രേഖപ്പെടുത്തിയിട്ടില്ല' : 'Source not recorded')}{entry.source_page ? ` · ${ml ? 'പേജ്' : 'Page'} ${entry.source_page}` : ''}</p>}
           </article>;
         })}
       </div>

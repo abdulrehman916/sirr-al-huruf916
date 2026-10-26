@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import book from '@/data/birhatiahSharedBookAccounts.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const labels = {
   selection: ['നാമതിരഞ്ഞെടുപ്പും അക്ഷരമൂല്യങ്ങളും', 'Selection and numerical values'],
@@ -26,6 +27,7 @@ const labels = {
 };
 
 export default function BirhatiahSharedBookAccounts({ initialQuery = '' }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const [query, setQuery] = useState(initialQuery);
@@ -53,15 +55,15 @@ export default function BirhatiahSharedBookAccounts({ initialQuery = '' }) {
             {entry.reading_translation[language].map((paragraph,index) => <p key={`${entry.id}-reading-${index}`} className="text-sm text-white/90 leading-loose">{paragraph}</p>)}
             {entry.reading_translation_source?.arabic_pages?.map(page => <figure key={page} className="space-y-2" data-reading-source-page={page}>
               <img src={`/figures/birhatiah-manba-p${page}.png`} loading="lazy" alt={`منبع أصول الحكمة · ${page}`} className="block w-full max-w-2xl mx-auto rounded-lg bg-white" />
-              <figcaption className="text-xs text-white/65">منبع أصول الحكمة · {ml ? 'പേജ്' : 'Page'} {page}</figcaption>
+              <figcaption className="text-xs text-white/65">{isOwner && <>منبع أصول الحكمة · {ml ? 'പേജ്' : 'Page'} {page}</>}</figcaption>
             </figure>)}
           </section>}
           {entry.expanded_translation && <section className="space-y-3">
             <h3 className="text-yellow-100 text-sm">{ml ? 'ഈ പാഠഭാഗത്തിന്റെ വിപുലമായ അർഥം' : 'Expanded meaning of this passage'}</h3>
             {entry.expanded_translation.map((paragraph, index) => <p key={`${entry.id}-${index}`} className="text-sm leading-loose text-white/90">{paragraph[language]}</p>)}
           </section>}
-          <p className="text-xs text-white/55">{book.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.printed_pages}</p>
-          {entry.source_word_note && <p className="text-sm text-white/75" data-source-word-note={entry.id}>{entry.source_word_note[language]} · {entry.source_word_note.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.source_word_note.printed_page}</p>}
+          {isOwner && <p className="text-xs text-white/55">{book.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.printed_pages}</p>}
+          {entry.source_word_note && <p className="text-sm text-white/75" data-source-word-note={entry.id}>{entry.source_word_note[language]}{isOwner && <> · {entry.source_word_note.source_title} · {ml ? 'പേജ്' : 'Page'} {entry.source_word_note.printed_page}</>}</p>}
           {allFigures.filter(figure => figure.related_account_ids.includes(entry.id)).map(figure => figurePlacement.get(figure.id) === entry.id ? <section key={figure.id} id={figure.id} data-shared-figure={figure.id} className="rounded-lg border border-yellow-500/20 p-3 space-y-4">
             <h4 className="text-yellow-100 text-sm">{figure.caption[language]}</h4>
             <figure className="space-y-2" data-source-image="inline-shared-account">
@@ -69,14 +71,14 @@ export default function BirhatiahSharedBookAccounts({ initialQuery = '' }) {
                 <title>{figure.caption[language]}</title>
                 <image href={figure.image_path} width={figure.crop.source_width} height={figure.crop.source_height} />
               </svg> : <img src={figure.image_path} loading="lazy" alt={figure.caption[language]} className="block w-full max-w-xl mx-auto rounded-lg bg-white" />}
-              <figcaption className="text-xs text-white/65">{figure.source_title || book.source_title} · {ml ? 'പേജ്' : 'Page'} {figure.printed_page}</figcaption>
+              <figcaption className="text-xs text-white/65">{isOwner && <>{figure.source_title || book.source_title} · {ml ? 'പേജ്' : 'Page'} {figure.printed_page}</>}</figcaption>
             </figure>
             {figure.arabic_comparison?.review_status === 'checked_against_scan' && <figure className="space-y-2" data-source-image="inline-arabic-shared-account">
               <svg role="img" aria-label={figure.caption[language]} viewBox={figure.arabic_comparison.crop.view_box} className="block w-full max-w-xl mx-auto rounded-lg bg-white">
                 <title>{figure.caption[language]}</title>
                 <image href={figure.arabic_comparison.image_path} width={figure.arabic_comparison.crop.source_width} height={figure.arabic_comparison.crop.source_height} />
               </svg>
-              <figcaption className="text-xs text-white/65">{figure.arabic_comparison.source_title} · {ml ? 'പേജ്' : 'Page'} {figure.arabic_comparison.printed_page} · {ml ? 'അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം; അക്ഷരങ്ങളും അക്കങ്ങളും ഒഴിഞ്ഞ കളങ്ങളും മാറ്റിയിട്ടില്ല.' : 'Enlarged original image region; letters, numbers and empty cells are unchanged.'}</figcaption>
+              <figcaption className="text-xs text-white/65">{isOwner && <>{figure.arabic_comparison.source_title} · {ml ? 'പേജ്' : 'Page'} {figure.arabic_comparison.printed_page} · </>}{ml ? 'അതേ മൂലചിത്രത്തിന്റെ വലുതാക്കിയ ഭാഗം; അക്ഷരങ്ങളും അക്കങ്ങളും ഒഴിഞ്ഞ കളങ്ങളും മാറ്റിയിട്ടില്ല.' : 'Enlarged original image region; letters, numbers and empty cells are unchanged.'}</figcaption>
             </figure>}
           </section> : <p key={figure.id} className="text-sm text-white/75"><a href={`#${figure.id}`} className="underline text-yellow-100">{ml ? 'ഈ ഭാഗത്ത് പരാമർശിക്കുന്ന അതേ ചിത്രം ഈ കാർഡിൽ കാണുക' : 'View the same referenced figure in this card'} · {figure.printed_page}</a></p>)}
           {entry.edition_comparison && <section className="border-l-2 border-yellow-500/25 pl-3 space-y-2">

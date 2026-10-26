@@ -14,12 +14,14 @@ import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 import { BirhatiahOnlineNameComparison } from './BirhatiahOnlineNumericalComparison';
 import BirhatiahSessionTools from './BirhatiahSessionTools';
 import { sourceCountLabel } from '@/lib/birhatiahSessionUtils';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const letters = value => String(value || '').replace(/[\u064B-\u065F\u0670\u0640\s،؛؟,.]/g, '');
 const safeReading = (reading, original) => reading && letters(reading) === letters(original) ? reading : original;
 const Arabic = ({ children }) => children && <p className="font-amiri text-3xl text-right text-yellow-100 leading-[2.2] whitespace-pre-wrap" dir="rtl" lang="ar">{String(children).replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))}</p>;
 
 function PurposeMethod({ method, name, language, chapter, index, children, collective = false }) {
+  const isOwner = useIsOwner();
   const ml = language === 'ml';
   const t = value => value?.[language] || '';
   const verses = methodVerses[method.verse_group];
@@ -87,7 +89,7 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
     {method.inline_tijan && <section className="rounded-xl border border-yellow-500/20 p-4 space-y-4" data-reader-section="tijan-text"><h5 className="text-yellow-200">{ml ? 'തിജാൻ ദുആ — ഹറകത്തോടുകൂടിയ പൂർണ്ണ അറബി മൂലപേജുകൾ' : 'Tijan prayer — original printed Arabic pages with vowels'}</h5>{[88, 89].map(page => <figure key={page} className="space-y-2"><img src={`/figures/birhatiah-manba-p${page}.png`} loading="lazy" alt={`Tijan ${page}`} className="w-full max-w-xl mx-auto rounded-lg bg-white" /><figcaption className="text-xs text-white/65">{ml ? 'അച്ചടിച്ച പേജ്' : 'Printed page'} {page}</figcaption></figure>)}</section>}
     {linked?.arabic_original && <section className="border-t border-white/10 pt-2 space-y-2"><h5 className="text-xs text-white/65">{ml ? 'ഗ്രന്ഥത്തിലെ മൂല അറബി വാക്യം' : 'Original Arabic source wording'}</h5><Arabic>{safeReading(linked.arabic_reading, linked.arabic_original)}</Arabic></section>}
     {t(linked?.scope_note) && <p className="text-sm text-white/65 leading-loose">{t(linked.scope_note)}</p>}
-    {(sourceTitle || sourcePage || method.source_name_id) && <p className="text-xs text-white/45 break-words">
+    {isOwner && (sourceTitle || sourcePage || method.source_name_id) && <p className="text-xs text-white/45 break-words">
       {sourceTitle || (ml ? 'ബന്ധപ്പെട്ട ഇസ്മിന്റെ ഗ്രന്ഥഭാഗം' : 'Related name source')}
       {sourcePage ? ` · ${ml ? 'പേജ്' : 'p.'} ${sourcePage}` : ''}
     </p>}
@@ -102,6 +104,7 @@ function PurposeMethod({ method, name, language, chapter, index, children, colle
 }
 
 export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const [topicQuery, setTopicQuery] = useState('');
   if (!chapter || chapter.name_id !== nameId || chapter.review_status !== 'checked_against_scan') return null;
@@ -171,7 +174,7 @@ export default function HolyNameSourceChapter({ chapter, nameId, currentAbjad })
           {entry.count != null && <p className="text-sm text-white/85">{sourceCountLabel(entry.count_kind, language)}: {entry.count}</p>}
           {t(entry.timing) && <p className="text-sm text-white/85">{ml ? 'സമയം' : 'Time'}: {t(entry.timing)}</p>}
           {(entry.quote_blocks || []).map((quote, j) => <div key={j} className="space-y-2 border-t border-white/10 pt-3"><Arabic>{safeReading(quote.arabic_reading, quote.arabic_original || quote.arabic) || quote.arabic}</Arabic><p className="leading-loose text-white/85">{t(quote.translation)}</p><p className="text-xs text-white/55">{quote.source_location}</p></div>)}
-          {entry.source_title && <p className="text-xs text-white/45">{entry.source_title}{entry.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${entry.printed_page}` : ''}</p>}
+          {isOwner && entry.source_title && <p className="text-xs text-white/45">{entry.source_title}{entry.printed_page ? ` · ${ml ? 'പേജ്' : 'p.'} ${entry.printed_page}` : ''}</p>}
         </div>
       </article>)}
     </div>

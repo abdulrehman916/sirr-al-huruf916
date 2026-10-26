@@ -8,8 +8,10 @@ import BirhatiahFullSourceChapter from './BirhatiahFullSourceChapter';
 import BirhatiahExpandedVersions from './BirhatiahExpandedVersions';
 import BirhatiahResearchContext from './BirhatiahResearchContext';
 import BirhatiahOutsideWitness from './BirhatiahOutsideWitness';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 export default function BirhatiahCollectiveReference() {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === "ml";
   const cls = ml ? "font-malayalam" : "font-inter";
@@ -29,7 +31,7 @@ export default function BirhatiahCollectiveReference() {
       <p className="font-amiri text-2xl sm:text-3xl text-right text-yellow-100 leading-[2.2]" dir="rtl" lang="ar">{account.reading}</p>
       <p className={`${cls} text-white/90 leading-loose`} lang={language}>{account.translation[language]}</p>
       <p className={`${cls} text-sm text-white/65 leading-loose`}>{account.scope_note[language]}</p>
-      <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></section>
+      {isOwner && <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{account.source_title} · {ml ? "പേജ്" : "Page"} {account.printed_page}</p></section>}
     </section>}
     {bibliography.review_status === "checked_against_digital_text" && <section className="space-y-2">
       <h3 className={`${cls} text-base text-yellow-200`}>{ml ? "ഗ്രന്ഥത്തെക്കുറിച്ചുള്ള പുറംസ്രോതസ്സ്" : "External bibliographic context"}</h3>
@@ -60,7 +62,7 @@ export default function BirhatiahCollectiveReference() {
           <p className="font-amiri text-xl leading-loose text-right" dir="rtl" lang="ar">{excerpt.attribution_original}</p>
           <p className="leading-loose" lang={language}>{excerpt.attribution_translation[language]}</p>
           <p className="leading-loose">{excerpt.scope_note[language]}</p>
-          <p>{excerpt.source_title} · {ml ? "പേജ്" : "Page"} {excerpt.printed_page}</p>
+          {isOwner && <p>{excerpt.source_title} · {ml ? "പേജ്" : "Page"} {excerpt.printed_page}</p>}
         </div>
       </section>
     </section>}

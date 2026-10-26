@@ -1,5 +1,6 @@
 import diagram from '@/data/birhatiahOmanSquareP561.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const arabicDigits = number => String(number).replace(/[0-9]/g, digit => '٠١٢٣٤٥٦٧٨٩'[Number(digit)]);
 const total = values => values.reduce((a, b) => a + b, 0);
@@ -14,6 +15,7 @@ const allLines = grid => [
 // diagram. Both the large source values and its smaller position numbers are
 // preserved exactly; the full source PDF is not published.
 export default function BirhatiahOmanSquare() {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const valid = allLines(diagram.numbers).every(x => x === diagram.verified_magic_sum);
@@ -30,7 +32,7 @@ export default function BirhatiahOmanSquare() {
       </div>
       <p className={`text-sm text-white/75 ${ml?'font-malayalam':'font-inter'}`}>{ml?'പരിശോധിച്ച വരി/നിര/വികർണ്ണ ആകെ':'Verified row/column/diagonal total'}: <strong>{diagram.verified_magic_sum}</strong> {valid ? '✓' : (ml ? '— പരിശോധനാവ്യത്യാസം' : '— discrepancy')}</p>
       <p className={`text-xs text-white/65 leading-relaxed ${ml?'font-malayalam':'font-inter'}`}>{diagram.reading_note[language]}</p>
-      <p className="text-xs text-white/50">{diagram.source_title_ar} · {ml?'പേജ്':'p.'} {diagram.printed_page}</p>
+      {isOwner && <p className="text-xs text-white/50">{diagram.source_title_ar} · {ml?'പേജ്':'p.'} {diagram.printed_page}</p>}
     </div>
   </section>;
 }

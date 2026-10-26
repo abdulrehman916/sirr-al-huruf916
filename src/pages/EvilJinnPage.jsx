@@ -8,6 +8,7 @@ import { usePageState } from "../context/PageStateContext";
 import { EVIL_JINN_NAMES } from "../lib/evilJinnData";
 
 import { useBackLayer } from "@/lib/useBackLayer";
+import { useIsOwner } from "@/hooks/useIsOwner";
 // Scoped Arabic font for Evil Jinn page only
 const ARABIC_FONT_STYLE = `
   @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
@@ -141,6 +142,7 @@ function ProfileField({ icon: Icon, label, value }) {
 }
 
 function JinnCard({ jinn, index, isOpen, onToggle }) {
+  const isOwner = useIsOwner();           // the book and its pages are the owner's alone
   const valueCategory = jinn.abjadValue <= 200 ? "Low" : jinn.abjadValue <= 400 ? "Medium" : "High";
   const profile = jinn.profile || {};
 
@@ -250,7 +252,7 @@ function JinnCard({ jinn, index, isOpen, onToggle }) {
               <ProfileField icon={Zap} label="പരിഹാരം / ചികിത്സ" value={profile.remedy} />
 
               {/* Source Reference */}
-              {profile.source && (
+              {isOwner && profile.source && (
                 <div className="rounded-xl border p-3 flex items-center gap-2" style={{ background: P.bg, borderColor: P.border }}>
                   <BookOpen className="w-3.5 h-3.5 flex-shrink-0" style={{ color: P.dim }} />
                   <div className="flex-1">

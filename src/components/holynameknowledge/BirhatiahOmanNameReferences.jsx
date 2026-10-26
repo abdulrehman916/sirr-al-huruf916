@@ -1,9 +1,11 @@
 import notes from '@/data/birhatiahOmanBook2026.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // Source references are linked only to the names explicitly printed on a
 // page. A four-name grouping is not four independent recitation methods.
 export default function BirhatiahOmanNameReferences({ nameId }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const matches = notes.notes.filter(note =>
@@ -35,10 +37,10 @@ export default function BirhatiahOmanNameReferences({ nameId }) {
               : 'A collective historical context, not a standalone prescription or verified effect for this name.'}
           </p>}
           {note.review_note && <p className="text-xs text-white/60 leading-relaxed">{note.review_note[language]}</p>}
-          <p className="text-xs text-white/55">
+          {isOwner && <p className="text-xs text-white/55">
             {notes.source_title_ar} · {notes.edition} · {ml ? 'അച്ചടിച്ച പേജ്' : 'printed page'} {note.printed_page}
             {' · '}PDF {note.pdf_page}
-          </p>
+          </p>}
         </article>;
       })}
     </div>

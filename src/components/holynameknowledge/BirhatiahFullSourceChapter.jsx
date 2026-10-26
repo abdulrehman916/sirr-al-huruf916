@@ -1,9 +1,11 @@
 import source from '@/data/birhatiahFullSourceChapter.json';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // Original page scans already bundled with the independent website.
 // All pages relevant to this name render within the card, without opening a new site.
 export default function BirhatiahFullSourceChapter({ nameId }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const ml = language === 'ml';
   const related = nameId ? (source.name_pages[nameId] || []) : source.pages.map(page => page.printed_page);
@@ -18,7 +20,7 @@ export default function BirhatiahFullSourceChapter({ nameId }) {
       <figcaption className="space-y-1">
         <h4 className="text-yellow-100 font-medium">{page.title[language]}</h4>
         <p className="text-sm text-white/80 leading-loose">{page.description[language]}</p>
-        <p className="text-xs text-white/55">{source.source_title} · {ml ? 'അച്ചടിച്ച പേജ്' : 'Printed page'} {page.printed_page}</p>
+        {isOwner && <p className="text-xs text-white/55">{source.source_title} · {ml ? 'അച്ചടിച്ച പേജ്' : 'Printed page'} {page.printed_page}</p>}
       </figcaption>
       <img src={page.image_path} loading="lazy" alt={`${source.source_title} — original page ${page.printed_page}`} className="block w-full max-w-2xl mx-auto bg-white rounded-lg" />
     </figure>)}

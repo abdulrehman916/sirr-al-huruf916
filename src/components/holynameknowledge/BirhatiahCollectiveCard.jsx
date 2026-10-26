@@ -7,10 +7,12 @@ import { BirhatiahOnlineCollectiveGrids } from "./BirhatiahOnlineNumericalCompar
 import BirhatiahOmanSquare from "./BirhatiahOmanSquare";
 import BirhatiahOmanBookNotes from "./BirhatiahOmanBookNotes";
 import BirhatiahSharedImportedMaterial from "./BirhatiahSharedImportedMaterial";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // The collective text has its own card; never attach it as an individual
 // name's prayer or silently substitute the current card list for a manuscript.
 export default function BirhatiahCollectiveCard({ cards, sharedByField = {}, open: controlledOpen, onOpenChange }) {
+  const isOwner = useIsOwner();
   const [localOpen, setLocalOpen] = useState(false);
   const open = controlledOpen ?? localOpen;
   const toggleOpen = () => {
@@ -49,7 +51,7 @@ export default function BirhatiahCollectiveCard({ cards, sharedByField = {}, ope
         <p className={`${cls} text-sm text-white/85 leading-loose`}>{source.translation[language]}</p>
         {source.arabic_reading && <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "വായനയ്ക്കായി ഹറകത്ത് ചേർത്തത്; മൂലപാഠം" : "Editorial reading vowels; original wording"}</h3><p className="font-amiri text-lg text-right leading-loose pt-2" lang="ar" dir="rtl">{source.arabic_original}</p></section>}
         <p className={`${cls} text-sm text-white/65 leading-relaxed`}>{ml ? "ഈ ഭാഗം പ്രത്യേക സമയം, ഓതൽഎണ്ണം, കളത്തിന്റെ സംഖ്യകൾ എന്നിവ നൽകുന്നില്ല. പേരുകൾക്കുള്ള മുഴുവൻ സംയുക്ത നിർദേശമായി ഇത് ഉപയോഗിച്ചിട്ടില്ല." : "This passage supplies no specific time, repetition count or square values. It is not used as a complete collective prescription."}</p>
-        <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{source.source_title} · {source.source_author} · {source.source_volume} · {source.source_pages}</p></section>
+        {isOwner && <section className={`${cls} text-xs text-white/50`}><h3 className="cursor-pointer">{ml ? "സ്രോതസ്സ്" : "Source"}</h3><p className="pt-2">{source.source_title} · {source.source_author} · {source.source_volume} · {source.source_pages}</p></section>}
       </article>}
       </section>
     </div>}

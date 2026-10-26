@@ -1,10 +1,10 @@
-import React, { createContext, useState, useContext, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useContext, useEffect, useCallback, useRef } from 'react';
 import { platform, supabase } from '@/api/platformClient';
 import { ROLES } from '@/lib/rbac';
 import { persistRemove } from '@/lib/devModePersistence';
 import { clearLocalSession, setLocalPermissions } from '@/lib/sessionId';
+import { AuthContext } from '@/lib/authContextObject';
 
-const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

@@ -180,7 +180,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
               <div className="flex items-center gap-1.5 pt-1 border-t flex-wrap" style={{ borderColor: "rgba(212,175,55,0.12)" }}>
                 <FileText className="w-3 h-3 flex-shrink-0" style={{ color: "rgba(212,175,55,0.40)" }} />
                 <span className="font-inter text-[8px] truncate" style={{ color: "rgba(255,255,255,0.40)" }}>
-                  Page {s.source_pdf_page || "?"}
+                  {isOwner && <>Page {s.source_pdf_page || "?"}</>}
                 </span>
                 {s.import_date && (
                   <span className="font-inter text-[8px] truncate" style={{ color: "rgba(255,255,255,0.30)" }}>

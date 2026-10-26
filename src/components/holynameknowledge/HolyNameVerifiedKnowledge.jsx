@@ -5,6 +5,7 @@ import { platform } from "@/api/platformClient";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 
 import { useBackLayer } from "@/lib/useBackLayer";
+import { useIsOwner } from "@/hooks/useIsOwner";
 // ═══════════════════════════════════════════════════════════════
 // HolyNameVerifiedKnowledge — Knowledge Intelligence Engine reader
 // for a single Holy Name card.
@@ -74,6 +75,7 @@ const CATEGORY_LABELS = {
 const DISPLAY_ORDER = Object.keys(CATEGORY_LABELS);
 
 function EntryRow({ entry, idx, inlineDetails = false }) {
+  const isOwner = useIsOwner();
   const [open, setOpen] = useState(false);
   useBackLayer(open, () => setOpen(false)); // Back closes this first
   const { language } = useHolyNamesLanguage();
@@ -100,7 +102,7 @@ function EntryRow({ entry, idx, inlineDetails = false }) {
         </p>}
       {(entry.source_book || entry.citation || entry.source_page) && <p className="text-xs text-white/60 leading-relaxed" data-testid="section-c-verified-entry-source">
         <FileText className="w-3 h-3 inline mr-1" />
-        {[entry.source_book, entry.citation, entry.source_page ? `${language === "ml" ? "പേജ്" : "Page"} ${entry.source_page}` : null]
+        {isOwner && [entry.source_book, entry.citation, entry.source_page ? `${language === "ml" ? "പേജ്" : "Page"} ${entry.source_page}` : null]
           .filter(Boolean).join(" · ")}
       </p>}
       {entry.confidence != null && <p className="text-xs text-white/60">
@@ -127,7 +129,7 @@ function EntryRow({ entry, idx, inlineDetails = false }) {
               {(entry.source_book || entry.citation || entry.source_page) && (
                 <p className="font-inter text-[10px] flex items-center gap-1" style={{ color: "rgba(255,255,255,0.50)" }}>
                   <FileText className="w-3 h-3" style={{ color: P.dim }} />
-                  {entry.source_book ? entry.source_book : entry.citation}{entry.source_page ? `, p. ${entry.source_page}` : ""}
+                  {isOwner && <>{entry.source_book ? entry.source_book : entry.citation}{entry.source_page ? `, p. ${entry.source_page}` : ""}</>}
                   {entry.language ? ` · ${entry.language}` : ""}
                 </p>
               )}
@@ -143,6 +145,7 @@ function EntryRow({ entry, idx, inlineDetails = false }) {
 }
 
 export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishName, inlineDetails = false }) {
+  const isOwner = useIsOwner();
   const { language } = useHolyNamesLanguage();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -259,7 +262,7 @@ export default function HolyNameVerifiedKnowledge({ arabicName, nameId, englishN
             <div className="space-y-1">
               {sourceBooks.map((s, i) => (
                 <p key={i} className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>
-                  • {s.book_title}{s.author ? ` — ${s.author}` : ""}{s.page ? `, p. ${s.page}` : ""}{s.edition ? ` (${s.edition})` : ""}
+                  • {s.author || "—"}{isOwner && <>{" · "}{s.book_title}{s.page ? `, p. ${s.page}` : ""}{s.edition ? ` (${s.edition})` : ""}</>}
                 </p>
               ))}
             </div>

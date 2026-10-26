@@ -8,6 +8,7 @@ import {
 import { platform } from "@/api/platformClient";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import { arTitle } from "./holyNameProfileI18n";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const P = {
   border: "rgba(212,175,55,0.30)",
@@ -86,6 +87,8 @@ function TriField({ label, labelML, arabic, malayalam, english, arabicFirst }) {
 }
 
 function SourceChip({ s }) {
+  const isOwner = useIsOwner();             // books and pages are the owner's alone
+  if (!isOwner) return null;
   const title = s?.title || "Untitled source";
   return (
     <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border font-inter text-[8px] leading-tight" style={{ background: "rgba(8,16,38,0.6)", borderColor: P.border, color: "rgba(255,255,255,0.72)" }}>
@@ -163,6 +166,7 @@ const INVOCATION_CATS = [
 ];
 
 function InvocationCard({ inv }) {
+  const isOwner = useIsOwner();
   const lang = useContext(LangCtx);
   const auth = inv.authenticated === true || inv.evidence_level === "authenticated";
   return (
@@ -181,7 +185,7 @@ function InvocationCard({ inv }) {
       {(inv.source_book || inv.author || inv.chapter || inv.page || inv.edition || inv.manuscript_ref || inv.publication) && (
         <div className="space-y-0.5 pt-1 border-t text-[10px] font-inter selectable" style={{ borderColor: "rgba(212,175,55,0.12)", color: "rgba(255,255,255,0.65)" }}>
           {inv.source_book && <div>📚 {inv.source_book}{inv.author ? ` — ${inv.author}` : ""}</div>}
-          {(inv.chapter || inv.page || inv.edition) && <div>{[inv.chapter && `Ch. ${inv.chapter}`, inv.page && `p. ${inv.page}`, inv.edition && `Ed. ${inv.edition}`].filter(Boolean).join(" · ")}</div>}
+          {isOwner && (inv.chapter || inv.page || inv.edition) && <div>{[inv.chapter && `Ch. ${inv.chapter}`, inv.page && `p. ${inv.page}`, inv.edition && `Ed. ${inv.edition}`].filter(Boolean).join(" · ")}</div>}
           {inv.manuscript_ref && <div>📜 Manuscript: {inv.manuscript_ref}</div>}
           {inv.publication && <div>🏫 {inv.publication}</div>}
         </div>
