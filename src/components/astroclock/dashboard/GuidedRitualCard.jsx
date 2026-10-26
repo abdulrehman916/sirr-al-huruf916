@@ -1,3 +1,4 @@
+import { useIsOwner } from "@/hooks/useIsOwner";
 // ═══════════════════════════════════════════════════════════════
 // GUIDED RITUAL CARD — COMPLETE MANUSCRIPT KNOWLEDGE SYSTEM
 // 37-FIELD DISPLAY TEMPLATE with auto-category classification
@@ -96,6 +97,7 @@ function StepLabel({ icon, label, color }) {
 
 // ── Field display: shows instructions with source+page, or "not specified" ──
 function FieldDisplay({ num, label, fieldInstructions }) {
+  const isOwner = useIsOwner();
   const hasData = fieldInstructions && fieldInstructions.length > 0;
   return (
     <div className="flex items-start gap-2 py-0.5">
@@ -106,7 +108,7 @@ function FieldDisplay({ num, label, fieldInstructions }) {
           fieldInstructions.map((instr, i) => (
             <div key={i}>
               <span className="font-malayalam text-[11px] leading-relaxed" style={{ color: "rgba(255,255,255,0.70)" }}>{instr.text}</span>
-              <span className="font-inter text-[8px] ml-1" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>
+              {isOwner && <span className="font-inter text-[8px] ml-1" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>}
             </div>
           ))
         ) : (
@@ -133,6 +135,7 @@ function DisplaySection({ section, instructions }) {
 
 // ── Section 6: Procedure (field 24) — numbered steps ──
 function ProcedureSection({ instructions }) {
+  const isOwner = useIsOwner();
   const steps = [
     ...instructions.before_recitation_steps.map(s => ({ ...s, phase: 'മുമ്പ്' })),
     ...instructions.during_recitation_rules.map(s => ({ ...s, phase: 'സമയം' })),
@@ -151,7 +154,7 @@ function ProcedureSection({ instructions }) {
               <div className="flex-1">
                 <span className="font-inter text-[8px] px-1 rounded mr-1" style={{ background: "rgba(251,191,36,0.10)", color: "rgba(251,191,36,0.60)" }}>{step.phase}</span>
                 <span className="font-malayalam text-[11px] leading-relaxed" style={{ color: "rgba(255,255,255,0.70)" }}>{step.text}</span>
-                <span className="font-inter text-[8px] block" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(step.source)} صـ{step.page}</span>
+                {isOwner && <span className="font-inter text-[8px] block" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(step.source)} صـ{step.page}</span>}
               </div>
             </div>
           ))}
@@ -178,6 +181,7 @@ function ArabicSection({ mantra }) {
 
 // ── Section 8: Translation (fields 29-30) ──
 function TranslationSection({ mantra, instructions }) {
+  const isOwner = useIsOwner();
   const explanations = instructions.arabic_word_explanations || [];
   return (
     <div className="rounded-lg p-3" style={{ background: "rgba(74,222,128,0.04)", border: "1px solid rgba(74,222,128,0.12)" }}>
@@ -189,7 +193,7 @@ function TranslationSection({ mantra, instructions }) {
           explanations.map((instr, i) => (
             <div key={i}>
               <span className="font-malayalam text-[11px]" style={{ color: "rgba(255,255,255,0.70)" }}>{instr.text}</span>
-              <span className="font-inter text-[8px] ml-1" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>
+              {isOwner && <span className="font-inter text-[8px] ml-1" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>}
             </div>
           ))
         ) : (
@@ -202,6 +206,7 @@ function TranslationSection({ mantra, instructions }) {
 
 // ── Section 10: References (fields 36-37) ──
 function ReferencesSection({ mantra, instructions }) {
+  const isOwner = useIsOwner();
   const quranNote = getQuranVerificationNote(mantra.id);
   const relatedInstrs = instructions.related_rituals || [];
   const map = getAllRecitationsMap();
@@ -220,7 +225,7 @@ function ReferencesSection({ mantra, instructions }) {
                   <span className="font-amiri text-[11px]" style={{ color: "rgba(255,255,255,0.60)", direction: "rtl" }}>
                     {r ? `${TYPE_META[r.type]?.label_ml || r.type} — ${r.king || r.servant || r.purpose_ml?.slice(0, 50)}` : instr.text}
                   </span>
-                  <span className="font-inter text-[8px]" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>
+                  {isOwner && <span className="font-inter text-[8px]" style={{ color: "rgba(255,255,255,0.25)" }}>📖 {arabicBookTitle(instr.source)} صـ{instr.page}</span>}
                 </div>
               );
             })}
@@ -230,6 +235,7 @@ function ReferencesSection({ mantra, instructions }) {
           <span className="font-malayalam text-[11px] italic ml-2" style={{ color: "rgba(255,255,255,0.25)" }}>{NOT_SPECIFIED_ANY}</span>
         )}
       </div>
+      {isOwner && (
       <div className="pt-2" style={{ borderTop: "1px solid rgba(129,140,248,0.15)" }}>
         <span className="font-malayalam text-[11px] font-bold" style={{ color: "rgba(129,140,248,0.60)" }}>37. മൂലഗ്രന്ഥം:</span>
         <div className="mt-1 space-y-0.5">
@@ -238,6 +244,7 @@ function ReferencesSection({ mantra, instructions }) {
           <div className="flex gap-2"><span className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)", minWidth: "60px" }}>മൂലം:</span><span className="font-amiri text-[12px]" style={{ color: "rgba(255,255,255,0.65)", direction: "rtl" }}>{mantra.source?.book || NOT_SPECIFIED_ANY}</span></div>
         </div>
       </div>
+      )}
       {quranNote && <p className="font-inter text-[9px] mt-2" style={{ color: "rgba(129,140,248,0.60)" }}>✓ {quranNote.quran_ref} — {quranNote.note}</p>}
       <p className="font-inter text-[8px] mt-2" style={{ color: "rgba(255,255,255,0.20)" }}>⚖️ {MANUSCRIPT_AUTHORITY_RULE.rule_ml}</p>
     </div>

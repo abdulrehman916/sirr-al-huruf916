@@ -127,6 +127,7 @@ export default function EntityKnowledgePanel({ entityType, entityKey }) {
                 {/* Sources — Owner only */}
                 {isOwner && (
                 <div className="flex flex-wrap gap-1 mt-1">
+                  {isOwner && (
                   <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                     background: "rgba(129,140,248,0.06)",
                     color: "rgba(129,140,248,0.40)"
@@ -135,6 +136,7 @@ export default function EntityKnowledgePanel({ entityType, entityKey }) {
                     {rec.source_page_number ? ` p.${rec.source_page_number}` : ''}
                     {rec.source_screenshot_url ? ' 📷' : ''}
                   </span>
+                  )}
                   {rec.source_count > 1 && (
                     <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                       background: "rgba(212,175,55,0.06)",

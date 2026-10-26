@@ -455,9 +455,11 @@ export default function SmartSearch() {
                       <p className="font-amiri text-[11px] mt-1" style={{ color: "rgba(212,175,55,0.40)", direction: "rtl" }}>{m.text_ar}</p>
                     )}
                     <div className="flex flex-wrap gap-1 mt-1">
+                      {isOwner && (
                       <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                         background: "rgba(74,222,128,0.06)", color: "rgba(74,222,128,0.40)",
                       }}>📖 {m.source}{m.page ? ` ${txt("പേ.", "p.")}${m.page}` : ""}{m.screenshot ? " 📷" : ""}</span>
+                      )}
                       {m.source_count > 1 && (
                         <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                           background: "rgba(212,175,55,0.06)", color: "rgba(212,175,55,0.40)",
@@ -518,6 +520,7 @@ export default function SmartSearch() {
 // Used for Supporting, Blocking, Conditional, Exceptions, Indirect
 // ═══════════════════════════════════════════════════════════════
 function RuleSection({ icon: Icon, title, rules, color, bgColor, borderColor, d, lang, txt, actionMarker, showReason, mlTranslations }) {
+  const isOwner = useIsOwner();
   // ── Malayalam display helpers (UI layer only) ──
   const getActionML = (en, ml) => lang === "ml" ? (ml || "മലയാള പരിഭാഷ ഇതുവരെ ലഭ്യമല്ല.") : lang === "ar" ? "الترجمة العربية غير متوفرة بعد." : en;
   const getEkML = (en, ml) => {
@@ -577,9 +580,11 @@ function RuleSection({ icon: Icon, title, rules, color, bgColor, borderColor, d,
 
             {/* Source */}
             <div className="flex flex-wrap gap-1 mt-1">
+              {isOwner && (
               <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                 background: "rgba(129,140,248,0.06)", color: "rgba(129,140,248,0.40)",
               }}>📖 {rule.source}{rule.page ? ` ${txt("പേ.", "p.")}${rule.page}` : ""}{rule.screenshot ? " 📷" : ""}</span>
+              )}
               {rule.source_count > 1 && (
                 <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                   background: "rgba(212,175,55,0.06)", color: "rgba(212,175,55,0.40)",

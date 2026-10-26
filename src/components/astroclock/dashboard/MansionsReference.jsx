@@ -103,12 +103,12 @@ export default function MansionsReference() {
                           <DifferentOpinion language={language}>
                             <div className="flex items-center gap-1.5 mb-1"><ConflictBadge language={language} /></div>
                             <div className="flex items-center gap-1.5 flex-wrap">
-                              <SourceBadge source={MANUSCRIPT_SOURCES.HAVASS} page={mansionConflict.havassOpinion.page} language={language} isOwner={isOwner} />
+                              <SourceBadge source={MANUSCRIPT_SOURCES.HAVASS} page={mansionConflict.havassOpinion.page} language={language} isOwner={isOwner} always />
                               <span className={zodiacFontClass} style={{ color: "#F87171" }}>{mansionConflict.havassOpinion.label[language] || mansionConflict.havassOpinion.label.en}</span>
                               <span className="font-inter text-[8px]" style={{ color: "rgba(255,255,255,0.40)" }}>— {mansionConflict.havassOpinion.source}</span>
                             </div>
                             <div className="flex items-center gap-1.5 flex-wrap">
-                              <SourceBadge source={MANUSCRIPT_SOURCES.KASHF} page={mansionConflict.kashfOpinion.page} language={language} isOwner={isOwner} />
+                              <SourceBadge source={MANUSCRIPT_SOURCES.KASHF} page={mansionConflict.kashfOpinion.page} language={language} isOwner={isOwner} always />
                               <span className={zodiacFontClass} style={{ color: "#F87171" }}>{mansionConflict.kashfOpinion.label[language] || mansionConflict.kashfOpinion.label.en}</span>
                               <span className="font-inter text-[8px]" style={{ color: "rgba(255,255,255,0.40)" }}>— {mansionConflict.kashfOpinion.source}</span>
                             </div>

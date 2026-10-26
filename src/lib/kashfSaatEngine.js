@@ -235,16 +235,16 @@ export function moonState(hour, day) {
   // left out of the severity count; muhaq and ijtima below are the
   // phase marks the books actually treat as nahs.
   if (!m.waxing) {
-    marks.push(R("ഖമർ ക്ഷയിക്കുന്നു — നല്ല കർമ്മത്തിന് ഹവാസ്സ് വളരുന്ന ഖമറിനെയാണ് ചേർത്തുപറയുന്നത്",
-                 "The Qamar is waning — Hâvâss pairs constructive work with the waxing Moon", "info"));
+    marks.push(R("ഖമർ ക്ഷയിക്കുന്നു — നല്ല കർമ്മത്തിന് വളരുന്ന ഖമറിനെയാണ് ചേർത്തുപറയുന്നത്",
+                 "The Qamar is waning — constructive work goes with the waxing Moon", "info"));
   }
   if (O.TAHA_NAHS_BURUJ.includes(sign)) {
     marks.push(R(`ഖമർ ${K.SIGNS_TR_ML[sign]} ബുർജിൽ — ഉസ്താദ് താഹ പ്രകാരം നഹ്സ്`,
                  `Qamar in ${K.SIGNS_TR_EN[sign]} — nahs according to Ustad Taha`, "burj"));
   }
   if (sign === K.MAKRUH_AQD.moonInScorpio.sign) {
-    marks.push(R(`ഖമർ അഖ്റബിൽ — അഖ്ദ് കറാഹത്ത് (കശ്ഫ് പേ.${K.MAKRUH_AQD.moonInScorpio.page})`,
-                 `Qamar in Aqrab — contracts disliked (Kashf p.${K.MAKRUH_AQD.moonInScorpio.page})`, "burj"));
+    marks.push(R(`ഖമർ അഖ്റബിൽ — അഖ്ദ് കറാഹത്ത്`,
+                 `Qamar in Aqrab — contracts disliked`, "burj"));
   }
   if (mn.nature === "nahs") {
     marks.push(R(`മൻസിൽ ${no} ${mn.ml} — ഖറൂസ്വിയുടെ പട്ടികയിൽ നഹ്സ്`,
@@ -259,13 +259,13 @@ export function moonState(hour, day) {
     marks.push(R(`${work.ml} — ${work.ar}`, `${work.en} — ${work.ar}`, "work"));
   }
   if (day?.isMuhaq) {
-    marks.push(R(`മുഹാഖ് — മാസാവസാനത്തെ മൂന്ന് ദിവസം (കശ്ഫ് പേ.${K.MAKRUH_AQD.lastThreeDays.page})`,
-                 `Muhaq — the month's last three days (Kashf p.${K.MAKRUH_AQD.lastThreeDays.page})`, "phase"));
+    marks.push(R(`മുഹാഖ് — മാസാവസാനത്തെ മൂന്ന് ദിവസം`,
+                 `Muhaq — the month's last three days`, "phase"));
   }
   const ij = ijtimaAt((hour.start + hour.end) / 2);
   if (ij && ij.sep < 12) {
-    marks.push(R(`ഇജ്തിമാഅ് അടുത്ത് — ശംസും ഖമറും ${ij.sep.toFixed(1)}° അകലെ; ഈ സമയത്ത് വഫ്ഖ് ഉണ്ടാക്കരുതെന്ന് ഹവാസ്സ്`,
-                 `Near ijtima' — Sun and Moon ${ij.sep.toFixed(1)}° apart; Hâvâss makes no wafq at this time`, "phase"));
+    marks.push(R(`ഇജ്തിമാഅ് അടുത്ത് — ശംസും ഖമറും ${ij.sep.toFixed(1)}° അകലെ; ഈ സമയത്ത് വഫ്ഖ് ഉണ്ടാക്കരുത്`,
+                 `Near ijtima' — Sun and Moon ${ij.sep.toFixed(1)}° apart; no wafq is made at this time`, "phase"));
   }
   return {
     waxing: m.waxing, sign, mansionNo: no, mansion: mn, work, ijtima: ij,
@@ -296,7 +296,7 @@ export function timeSeverity(day, hour) {
   if (day?.isNahsDay) {
     if (day.isKamil) marks.push(R(`ദിവസം ${day.lunarDay} — കവാമിലുന്നുഹൂസ്`, `Day ${day.lunarDay} — Kawamil al-nuhus`, "day"));
     if (day.isKhalili) marks.push(R("ഖലീലിയുടെ മാസനഹ്സ് ദിവസം", "Al-Khalili's nahs day of the month", "day"));
-    if (day.isLastWed) marks.push(R(`മാസത്തിലെ അവസാന ബുധൻ — അർബആഅ് ലാ തദൂർ (പേ.${K.MAKRUH_AQD.wednesdayDaytime.page})`, `The month's last Wednesday — Arbi'a la tadur (p.${K.MAKRUH_AQD.wednesdayDaytime.page})`, "day"));
+    if (day.isLastWed) marks.push(R(`മാസത്തിലെ അവസാന ബുധൻ — അർബആഅ് ലാ തദൂർ`, `The month's last Wednesday — Arbi'a la tadur`, "day"));
     if (day.monthDay?.nature === "bad") marks.push(R(`ചാന്ദ്രദിനം ${day.lunarDay} നഹ്സ്`, `Lunar day ${day.lunarDay} is nahs`, "day"));
   }
   const hp = K.PLANETS[hour.planet];

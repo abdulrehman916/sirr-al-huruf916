@@ -30,6 +30,7 @@ const SRC_GIH = { key: "gih", short: { en: "GIH", ml: "GIH", ar: "GIH" }, color:
 const SRC_KASHF = { key: "kashf", short: { en: "Kashf", ml: "കശ്ഫ്", ar: "كشف" }, color: "#C084FC" };
 
 function Src({ src, page, language, isOwner }) {
+  if (!isOwner) return null;               // visitors see no book or page
   const label = src.short[language] || src.short.en;
   return (
     <span className="font-inter text-[7px] uppercase tracking-wider px-1 py-0.5 rounded align-middle" style={{

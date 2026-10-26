@@ -75,7 +75,7 @@ function Others({ items, isEn }) {
   if (!list.length) return null;
   return (
     <div className="mt-1.5 pt-1.5 space-y-0.5" style={{ borderTop: "1px dashed rgba(255,255,255,0.12)" }}>
-      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other books" : "മറ്റ് ഗ്രന്ഥങ്ങൾ"}</p>
+      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other scholars" : "മറ്റ് പണ്ഡിതന്മാർ"}</p>
       {list.map((o, i) => (
         <p key={i} className="text-[11px] leading-relaxed" style={{ color: o.color || "rgba(255,255,255,0.65)" }}>
           • <b style={{ color: "rgba(255,255,255,0.85)" }}>{isEn ? O.SOURCES[o.src].en : O.SOURCES[o.src].ml}</b>: {isEn ? o.en : o.ml}
@@ -86,7 +86,8 @@ function Others({ items, isEn }) {
 }
 const natWord = (n, isEn) => (n === "saad" ? (isEn ? "Sa'd" : "സഅ്ദ്") : n === "nahs" ? (isEn ? "Nahs" : "നഹ്സ്") : (isEn ? "Mixed" : "കലർന്നത്"));
 const mansionOther = (no) => { const o = O.MANSION_OTHER[no]; return o ? { src: "havass", color: NAT_C[o.nature], ml: `${natWord(o.nature, false)} — ${o.ml}`, en: `${natWord(o.nature, true)} — ${o.en}` } : null; };
-const Src = ({ children }) => <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>📖 <span className="font-amiri">{K.BOOK.ar}</span>{children ? <> · {children}</> : null}</p>;
+// No book name and no page for visitors — only who says it, where that is given.
+const Src = ({ children }) => (children ? <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>{children}</p> : null);
 
 // ── "When" lines: every rule says when it next happens ─────────
 const nowOf = (customDate) => (customDate ? customDate.getTime() : Date.now());
@@ -115,8 +116,7 @@ function ManzilWorks({ n, isEn }) {
   return (
     <>
       <P color="rgba(255,255,255,0.55)">
-        📖 {isEn ? "This manzil's own chapter" : "ഈ മൻസിലിന്റെ ഖണ്ഡിക"} (
-        {isEn ? "Kashf pp." : "കശ്ഫ് പേ."}{PUR.PURPOSE_SOURCE.pages}):
+        📖 {isEn ? "This manzil's own chapter" : "ഈ മൻസിലിന്റെ ഖണ്ഡിക"}:
       </P>
       {p.good.length > 0 && (
         <P color="#4ADE80">✓ {p.good.map(name).join(" · ")}</P>
@@ -139,8 +139,7 @@ function DayWorks({ wd, isEn }) {
   return (
     <>
       <P color="rgba(255,255,255,0.55)">
-        🕰 {isEn ? "Works the book sets on this day" : "ഈ ദിവസത്തേക്ക് കിതാബ് വെക്കുന്ന കർമ്മങ്ങൾ"} (
-        {isEn ? "Kashf pp." : "കശ്ഫ് പേ."}{PUR.WORK_TIMES_SOURCE.page}):
+        🕰 {isEn ? "Works the book sets on this day" : "ഈ ദിവസത്തേക്ക് കിതാബ് വെക്കുന്ന കർമ്മങ്ങൾ"}:
       </P>
       {rows.map((w, k) => (
         <P key={k} color={w.harm ? "#FCA5A5" : "rgba(255,255,255,0.8)"}>
@@ -166,7 +165,7 @@ function MansionNext({ n, isEn, customDate }) {
       {purpose && <P color="#4ADE80">📋 {isEn ? "Book's table of works" : "കിതാബിലെ പ്രവൃത്തിപ്പട്ടിക"}: <Ar>{purpose.ar}</Ar> — {isEn ? purpose.en : purpose.ml}</P>}
       {work && (
         <P color={work.harm ? "#FCA5A5" : "#FBBF24"}>
-          📜 {isEn ? "al-Kharusi's table" : "ഖറൂസ്വിയുടെ പട്ടിക"} (p.{K.MANSION_WORK_SOURCE.page}):{" "}
+          📜 {isEn ? "al-Kharusi's table" : "ഖറൂസ്വിയുടെ പട്ടിക"}:{" "}
           <Ar>{work.nature}</Ar>
           {work.face && <> · <Ar>{isEn ? "face of " : "വജ്ഹ് "}{work.face}</Ar></>}
           {" — "}<Ar>{work.ar}</Ar> — {isEn ? work.en : work.ml}
@@ -189,7 +188,7 @@ function DaySaad({ wd, isEn }) {
   return (
     <div className="pt-1 space-y-0.5" style={{ borderTop: "1px dashed rgba(147,197,253,0.25)" }}>
       <P color="#FBBF24">
-        ✦ {isEn ? "Fortune of the day" : "ദിവസത്തിന്റെ സഅ്ദ്"} (p.{K.DAY_SAAD_SOURCE.page}):{" "}
+        ✦ {isEn ? "Fortune of the day" : "ദിവസത്തിന്റെ സഅ്ദ്"}:{" "}
         <b>{pName(sd, isEn)}</b> <Ar>{K.PLANETS[sd].ar}</Ar>
       </P>
       <P color="#C4B5FD">
@@ -213,7 +212,7 @@ function BurjNext({ i, isEn, customDate }) {
       {i === 7 && span && <When label={isEn ? "No nikah during" : "നിക്കാഹ് ഒഴിവാക്കേണ്ട സമയം"} span={span} isEn={isEn} loc={loc} color="#F87171" />}
       {i === K.MAKRUH_AQD.moonInScorpio.sign && (
         <P color="#F87171">
-          ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"} (p.{K.MAKRUH_AQD.moonInScorpio.page}):{" "}
+          ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"}:{" "}
           <Ar>{K.MAKRUH_AQD.moonInScorpio.ar}</Ar> —{" "}
           {isEn ? K.MAKRUH_AQD.moonInScorpio.en : K.MAKRUH_AQD.moonInScorpio.ml}
         </P>
@@ -461,10 +460,7 @@ function DayHourCombo({ isEn }) {
           <span className="flex-1 min-w-0 text-xs truncate">
             <b style={{ color: "#fff" }}>
               {isEn ? "The day and the hour together" : "ദിവസവും സാഅത്തും ചേർത്ത്"}
-            </b>{" "}
-            <span style={{ color: "rgba(255,255,255,0.5)" }}>
-              {isEn ? "(Hâvâss pp. 40-42)" : "(ഹവാസ്സ് പേ. 40-42)"}
-            </span>
+            </b>
           </span>
         </>}>
         <P>{isEn ? rule.en : rule.ml}</P>
@@ -481,8 +477,7 @@ function DayHourCombo({ isEn }) {
               <b style={{ color: c.harm ? "#FCA5A5" : "#fff" }}>
                 {isEn ? d.tr_en : d.tr_ml}
               </b>{" "}
-              <Ar>{d.ar}</Ar> — {isEn ? c.en : c.ml}{" "}
-              <span style={{ color: "rgba(255,255,255,0.35)" }}>(p.{c.page})</span>
+              <Ar>{d.ar}</Ar> — {isEn ? c.en : c.ml}
             </P>
           );
         })}
@@ -491,10 +486,7 @@ function DayHourCombo({ isEn }) {
         </P>
         <P color="#FBBF24">
           ⚖ {isEn ? K.DIGNITY_IN_USE.en : K.DIGNITY_IN_USE.ml}{" "}
-          <Ar>{K.DIGNITY_IN_USE.ar}</Ar>{" "}
-          <span style={{ color: "rgba(255,255,255,0.35)" }}>
-            ({isEn ? "Kashf p." : "കശ്ഫ് പേ."}{K.DIGNITY_IN_USE.page})
-          </span>
+          <Ar>{K.DIGNITY_IN_USE.ar}</Ar>
         </P>
       </Row>
     </div>
@@ -528,8 +520,8 @@ export function KawakibSection() {
             {k === "venus" && (
               <P color="#C4B5FD">
                 ⚭ {isEn
-                  ? "Hâvâss pairs this planet's hours with other planets' days — see “The day and the hour together” below."
-                  : "ഈ ഗ്രഹത്തിന്റെ സാഅത്ത് മറ്റു ഗ്രഹങ്ങളുടെ ദിവസങ്ങളുമായി ചേർക്കുന്നത് ഹവാസ്സ് വിശദമാക്കുന്നു — താഴെ “ദിവസവും സാഅത്തും ചേർത്ത്” നോക്കുക."}
+                  ? "The book pairs this planet's hours with other planets' days — see “The day and the hour together” below."
+                  : "ഈ ഗ്രഹത്തിന്റെ സാഅത്ത് മറ്റു ഗ്രഹങ്ങളുടെ ദിവസങ്ങളുമായി ചേർക്കുന്നത് കിതാബ് വിശദമാക്കുന്നു — താഴെ “ദിവസവും സാഅത്തും ചേർത്ത്” നോക്കുക."}
               </P>
             )}
             <Others isEn={isEn} items={O.PLANET_OTHER[k]} />
@@ -602,14 +594,14 @@ export function AyyamSection() {
                 {kamil && <P color="#F87171">⛔ {isEn ? "One of the seven kawamil days" : "ഏഴ് കവാമിൽ ദിവസങ്ങളിൽ ഒന്ന്"}</P>}
                 {dark && (
                   <P color="#F87171">
-                    ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"} (p.{K.MAKRUH_AQD.lastThreeDays.page}):{" "}
+                    ⚠ {isEn ? "Contract disliked" : "അഖ്ദ് കറാഹത്ത്"}:{" "}
                     <Ar>{K.MAKRUH_AQD.lastThreeDays.ar}</Ar> —{" "}
                     {isEn ? K.MAKRUH_AQD.lastThreeDays.en : K.MAKRUH_AQD.lastThreeDays.ml}
                   </P>
                 )}
                 {noPalm && (
                   <P color="#FBBF24">
-                    🌴 {isEn ? "Planting" : "നടീൽ"} (p.{K.PLANTING_AVOID_DATES.page}):{" "}
+                    🌴 {isEn ? "Planting" : "നടീൽ"}:{" "}
                     <Ar>{K.PLANTING_AVOID_DATES.ar}</Ar> —{" "}
                     {isEn ? K.PLANTING_AVOID_DATES.en : K.PLANTING_AVOID_DATES.ml}
                   </P>

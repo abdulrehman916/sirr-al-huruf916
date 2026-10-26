@@ -8,7 +8,7 @@
 
 export const SOURCES = {
   taha:   { ml: "ഉസ്താദ് ത്വാഹ", en: "Ustad Taha", book_ml: "തദ്‌രീസെ നുജൂമെ അഹ്കാമി", book_en: "Tadris-e Nujum-e Ahkami" },
-  havass: { ml: "ഹവാസ്സ് ഗ്രന്ഥം", en: "Havass book", book_ml: "Havâss'ın Derinlikleri", book_en: "Havâss'ın Derinlikleri" },
+  havass: { ml: "ബുലന്റ് കിസ", en: "Bülent Kısa", book_ml: "Havâss'ın Derinlikleri", book_en: "Havâss'ın Derinlikleri" },
 };
 
 // ── Planets ────────────────────────────────────────────────────

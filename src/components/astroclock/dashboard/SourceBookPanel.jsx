@@ -4,6 +4,7 @@
 // non-empty (left empty for future addition — no placeholder text).
 // ═══════════════════════════════════════════════════════════════
 import { SOURCE_BOOK_TOPICS } from "@/lib/astroClockSourceBookData";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 const G = {
   text: "#F5D060",
@@ -95,6 +96,7 @@ function Block({ block }) {
 
 export default function SourceBookPanel({ topicId }) {
   const topic = SOURCE_BOOK_TOPICS[topicId];
+  const isOwner = useIsOwner();             // the book line is the owner's alone
   if (!topic) return null;
 
   return (
@@ -102,7 +104,7 @@ export default function SourceBookPanel({ topicId }) {
       {/* Source attribution */}
       <div className="flex items-center gap-2 px-1">
         <div className="h-px flex-1" style={{ background: "rgba(212,175,55,0.15)" }} />
-        <span className="font-amiri text-[10px]" style={{ color: G.dim, direction: "rtl" }}>📖 {topic.source.ar}</span>
+        {isOwner && <span className="font-amiri text-[10px]" style={{ color: G.dim, direction: "rtl" }}>📖 {topic.source.ar}</span>}
         <div className="h-px flex-1" style={{ background: "rgba(212,175,55,0.15)" }} />
       </div>
 

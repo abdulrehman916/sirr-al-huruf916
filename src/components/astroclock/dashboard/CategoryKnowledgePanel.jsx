@@ -17,6 +17,7 @@ import { ChevronDown, BookOpen } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { normalizeDisplay } from "@/lib/astroClockLanguageNormalizer";
+import { useIsOwner } from "@/hooks/useIsOwner";
 
 // Wrong-slug / legacy categories to EXCLUDE
 const WRONG_SLUG = new Set([
@@ -68,6 +69,7 @@ function catLabel(cat, lang) {
 }
 
 export default function CategoryKnowledgePanel() {
+  const isOwner = useIsOwner();
   const { txt, language } = useAstroClockLanguage();
   const [allRecs, setAllRecs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -205,6 +207,7 @@ export default function CategoryKnowledgePanel() {
                           </p>
                         )}
                         <div className="flex flex-wrap gap-1 mt-1">
+                          {isOwner && (
                           <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                             background: "rgba(129,140,248,0.06)",
                             color: "rgba(129,140,248,0.40)",
@@ -212,6 +215,7 @@ export default function CategoryKnowledgePanel() {
                             📖 {normalizeDisplay(rec.source_book_title || "Manuscript")}
                             {rec.source_page_number ? ` p.${rec.source_page_number}` : ""}
                           </span>
+                          )}
                           {rec.source_count > 1 && (
                             <span className="font-inter text-[7px] px-1 py-0.5 rounded" style={{
                               background: "rgba(212,175,55,0.06)",

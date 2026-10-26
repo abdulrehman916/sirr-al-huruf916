@@ -25,7 +25,11 @@ const LABELS = {
 };
 
 // Single source badge: "📖 Havâss p.88-92"
-export function SourceBadge({ source, page, language, isOwner }) {
+export function SourceBadge({ source, page, language, isOwner, always = false }) {
+  // Visitors see no book or page; the owner sees both, to check against
+  // the books. Where two sources disagree (`always`), the name is shown
+  // so the two views can be told apart — never the page.
+  if (!isOwner && !always) return null;
   const label = source.short[language] || source.short.en;
   return (
     <span
@@ -44,6 +48,7 @@ export function SourceBadge({ source, page, language, isOwner }) {
 // "Sources: 📖 Havâss p.48  📖 GIH p.1419"
 export function SourceList({ sources, language, isOwner }) {
   const lbl = LABELS.sources[language] || LABELS.sources.en;
+  if (!isOwner) return null;
   return (
     <div className="flex flex-wrap gap-1 items-center">
       <span className="font-inter text-[8px] font-bold" style={{ color: "rgba(255,255,255,0.40)" }}>{lbl}:</span>

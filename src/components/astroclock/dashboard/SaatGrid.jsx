@@ -100,7 +100,7 @@ function Others({ items, isEn }) {
   if (!list.length) return null;
   return (
     <div className="mt-1.5 pt-1.5 space-y-0.5" style={{ borderTop: "1px dashed rgba(255,255,255,0.12)" }}>
-      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other books" : "മറ്റ് ഗ്രന്ഥങ്ങൾ"}</p>
+      <p className="font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(129,140,248,0.8)" }}>{isEn ? "Other scholars" : "മറ്റ് പണ്ഡിതന്മാർ"}</p>
       {list.map((o, i) => (
         <p key={i} className="text-[11px] leading-relaxed" style={{ color: o.color || "rgba(255,255,255,0.65)" }}>
           • <b style={{ color: "rgba(255,255,255,0.85)" }}>{isEn ? SOURCES[o.src].en : SOURCES[o.src].ml}</b>: {isEn ? o.en : o.ml}
@@ -191,8 +191,8 @@ function Severity({ day, h, isEn }) {
         <div className="pt-1.5 mt-1.5" style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}>
           <p className="font-inter text-[10px] font-bold" style={{ color: "rgba(255,255,255,0.55)" }}>
             {isEn
-              ? `What the book attaches to this manzil (Kashf p.${MANSION_WORK_SOURCE.page})`
-              : `ഈ മൻസിലിന് കിതാബ് ചേർത്തുപറയുന്നത് (കശ്ഫ് പേ.${MANSION_WORK_SOURCE.page})`}
+              ? "What the book attaches to this manzil"
+              : "ഈ മൻസിലിന് കിതാബ് ചേർത്തുപറയുന്നത്"}
           </p>
           {sev.marks.filter((m) => m.tag === "work").map((m, i) => (
             <p key={i} className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
