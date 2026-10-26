@@ -57,7 +57,7 @@ export const DAY_NAME_AR_ALT = { 0: "يوم الأحد" };
  */
 export const ARCHANGELS = [
   {
-    id: "jibril", ar: "جبرائيل", ml: "ജിബ്രാഈൽ", side: "top",
+    id: "jibril", kashf_ar: "العطف والمحبة", short_ml: "ഇണക്കം, സ്നേഹം", ar: "جبرائيل", ml: "ജിബ്രാഈൽ", side: "top",
     // both books agree here
     kashf_ml: "ഇണക്കവും സ്നേഹവും (العطف والمحبة)",
     havass_ml: "സ്നേഹം, സ്വീകാര്യത, വിവാഹം, അപേക്ഷ സ്വീകരിക്കൽ, ഉദ്ദേശം നടക്കൽ, സമ്പാദ്യം, ജോലിയിൽ ഉയർച്ച",
@@ -65,7 +65,7 @@ export const ARCHANGELS = [
     havass_en: "Love, acceptance, marriage, requests granted, earnings, advancement",
   },
   {
-    id: "mikail", ar: "ميكائيل", ml: "മീകാഈൽ", side: "right",
+    id: "mikail", kashf_ar: "الأرزاق والفتوح", short_ml: "രിസ്ഖ്, ഫത്ഹ്", ar: "ميكائيل", ml: "മീകാഈൽ", side: "right",
     // both books agree here too
     kashf_ml: "രിസ്ഖും ഫത്ഹും (الأرزاق والفتوح)",
     havass_ml: "സമൃദ്ധി, രിസ്ഖ്, ബറകത്ത്",
@@ -73,7 +73,7 @@ export const ARCHANGELS = [
     havass_en: "Abundance, provision, blessing",
   },
   {
-    id: "israfil", ar: "اسرافيل", ml: "ഇസ്റാഫീൽ", side: "left", harm: true,
+    id: "israfil", kashf_ar: "العذاب والأسقام", short_ml: "പീഡ, രോഗം", ar: "اسرافيل", ml: "ഇസ്റാഫീൽ", side: "left", harm: true,
     // the two books part company on this one
     kashf_ml: "⚠ പീഡയും രോഗവും (العذاب والأسقام)",
     havass_ml: "⚠ ഭിന്നത, വേർപിരിയൽ, ജോലിയിൽനിന്ന് പുറത്താക്കൽ",
@@ -81,7 +81,7 @@ export const ARCHANGELS = [
     havass_en: "⚠ Discord, separation, dismissal",
   },
   {
-    id: "azrail", ar: "عزرائيل", ml: "അസ്റാഈൽ", side: "bottom", harm: true,
+    id: "azrail", kashf_ar: "الهلاك والموت", short_ml: "നാശം, മരണം", ar: "عزرائيل", ml: "അസ്റാഈൽ", side: "bottom", harm: true,
     kashf_ml: "⚠ നാശവും മരണവും (الهلاك والموت)",
     havass_ml: "⚠ നാശം, തകർച്ച, മരണം",
     kashf_en: "⚠ Destruction and death",
