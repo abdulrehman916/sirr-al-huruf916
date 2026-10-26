@@ -193,6 +193,9 @@ export function planWafq(N, n, step = 1) {
   const issues = [];
   if (key < 1) issues.push("too_small");
   if (n === 3 && rem) issues.push("m3_jabr_diagonal");
+  // The books give the jabr house for 3×3 to 9×9 only; the 10×10 has
+  // none, so a total with a remainder does not come out on it.
+  if (n === 10 && rem) issues.push("m10_no_jabr");
   return { N, n, step, as, key, rem, jabrHouse: jh, ok: key >= 1, issues };
 }
 
@@ -449,4 +452,38 @@ export function letterElement(text, opts = {}) {
   const tied = order.filter(([, v]) => v === top[1]).map(([k]) => k);
   if (tied.length > 1) return { sums, count, leader: null, margin: 0, balanced: true, tied };
   return { sums, count, leader: top[0], margin: top[1] - second[1], balanced: false, tied: [] };
+}
+
+/**
+ * The element of a text, settled by itself — the owner's order
+ * (27 Oct 2026), built on the books' own pieces:
+ *   1. every letter is sorted into its element (the seven-letter groups
+ *      above) and counted; the element with the most letters leads;
+ *   2. if two or more are level in count, the degrees of their letters
+ *      decide (Hâvâss I pp.85-86) — the larger degree sum leads;
+ *   3. if they are level in degrees too, or there are no letters (a bare
+ *      number), the book's rule for a number decides: the total divided
+ *      by 4, remainder 1 fire, 2 earth, 3 air, 0 water (Kashf p.298).
+ * Returns the element and how it was reached, with every letter shown.
+ */
+export function dominantElement(text, N, opts = {}) {
+  const r = letterElement(text, opts);
+  const groups = { fire: [], earth: [], air: [], water: [] };
+  const clean = String(text || "").replace(/[ً-ٰٟۖ-ۭـ࣓-ࣿ]/g, "");
+  for (const raw of clean) {
+    let ch = NORM[raw] || raw;
+    if (ch === "ة") ch = opts.taMarbuta === 400 ? "ت" : "ه";
+    const hit = LETTER_ELEMENT[ch];
+    if (hit) groups[hit.el].push(ch);
+  }
+  const letters = Object.values(r.count).reduce((a, b) => a + b, 0);
+  const byTotal = N > 0 ? elementOf(N) : null;
+  if (!letters) return { element: byTotal, by: "total", ...r, groups, tiedCount: [], tiedDegree: [] };
+  const maxC = Math.max(...Object.values(r.count));
+  const tiedCount = Object.keys(r.count).filter((k) => r.count[k] === maxC);
+  if (tiedCount.length === 1) return { element: tiedCount[0], by: "count", ...r, groups, tiedCount: [], tiedDegree: [] };
+  const maxD = Math.max(...tiedCount.map((k) => r.sums[k]));
+  const tiedDegree = tiedCount.filter((k) => r.sums[k] === maxD);
+  if (tiedDegree.length === 1) return { element: tiedDegree[0], by: "degree", ...r, groups, tiedCount, tiedDegree: [] };
+  return { element: byTotal, by: "total-after-tie", ...r, groups, tiedCount, tiedDegree };
 }

@@ -13,7 +13,7 @@ import { getFeatures } from "@/lib/featureRegistry";
 import { checkFeatureAccess } from "@/lib/featurePermission";
 import {
   abjadOf, asOf, SIZES, SIZE_NAME, SQUARE_CLASS, buildWafq, hollowWafq3, workingSizes,
-  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, letterElement, DAY_ANGEL, PURPOSES,
+  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, dominantElement, DAY_ANGEL, PURPOSES,
   toArabicDigits, planWafq, NUMBER_RULE, SEVEN_RANKS, SEVEN_RANKS_NOTE, needAngelFor,
   RECITE_COUNT, DUA_BEFORE, DUA_BEFORE_WHEN, DUA_TANZIL, AROUND_WAFQ, INK, CAUTIONS,
 } from "@/lib/sirrWafqEngine";
@@ -747,10 +747,13 @@ export default function SirrWafqPage() {
   const lettersText = mode === "text" ? text
     : mode === "hajat" ? [["seeker", seeker], ["need", need], ["sought", sought]].filter(([k]) => useHajat[k]).map(([, v]) => v).join(" ")
     : ["self", "mother", "house"].filter((k) => useName[k]).map((k) => names[k]).join(" ");
-  const letterEl = useMemo(() => letterElement(lettersText, { taMarbuta: ta }), [lettersText, ta]);
   const manualN = /^\d+$/.test(manual.trim()) ? parseInt(manual.trim(), 10) : null;
   const N = manualN ?? (mode === "text" ? textAbjad.total : mode === "hajat" ? hajatTotal : nameTotal);
   const el = N > 0 ? ELEMENTS[elementOf(N)] : null;
+  // The element settled by itself: letters counted by element, a tie
+  // settled by degrees, then by the book's rule for the number.
+  const dom = useMemo(() => dominantElement(manualN ? "" : lettersText, N, { taMarbuta: ta }), [manualN, lettersText, N, ta]);
+  const autoEl = dom.element;
   const good = useMemo(() => (N > 0 ? workingSizes(N, step) : []), [N, step]);
   const plan = N > 0 ? planWafq(N, n, step) : null;
 
@@ -777,13 +780,13 @@ export default function SirrWafqPage() {
   // the square, not in it, so turning them on must not throw away a
   // square that is already made.
   useEffect(() => { setResult(null); setWriteIdx(-1); }, [N, n, step, form]);
-  useEffect(() => { setForm(null); }, [N]);
+  useEffect(() => { setForm(null); }, [N, autoEl]);
 
   function generate() {
     if (!(N > 0)) return;
-    const f = form || elementOf(N);
+    const f = form || autoEl;
     const r = buildWafq(N, n, { step, form: n <= 4 ? f : "base" });
-    setResult({ ...r, hollow: n === 3 && step === 1 ? hollowWafq3(N) : null, element: elementOf(N) });
+    setResult({ ...r, hollow: n === 3 && step === 1 ? hollowWafq3(N) : null, element: f });
     setWriteIdx(-1); setCopied(false);
     setTimeout(() => document.getElementById("wafq-result")?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
   }
@@ -992,47 +995,43 @@ export default function SirrWafqPage() {
           <div className="grid grid-cols-3 gap-2">
             <Stat ar="المجموع" label={txt("ആകെ തുക", "Total")} value={N || "—"} />
             <Stat ar="الحروف" label={txt("അക്ഷരങ്ങൾ", "Letters")} value={manualN ? "—" : (mode === "text" ? textAbjad.letters : ["self", "mother", "house"].reduce((s, k) => s + (useName[k] ? nameAbjad[k].letters : 0), 0)) || "—"} />
-            <Stat ar={el ? el.ar : "الطبع"} label={txt("മൂലകം", "Element")} value={el ? (isEn ? el.en : el.ml) : "—"} />
+            <Stat ar={autoEl ? ELEMENTS[autoEl].ar : "الطبع"} label={txt("മൂലകം", "Element")} value={autoEl ? (isEn ? ELEMENTS[autoEl].en : ELEMENTS[autoEl].ml) : "—"} />
           </div>
-          {el && <Note color="rgba(255,255,255,0.5)">{txt(`${N} ÷ 4 → ബാക്കി ${N % 4} → ${el.ml} (1 അഗ്നി, 2 മണ്ണ്, 3 വായു, 0 ജലം).`, `${N} ÷ 4 leaves ${N % 4} → ${el.en} (1 fire, 2 earth, 3 air, 0 water).`)}</Note>}
-          {el && (
-            <div className="rounded-xl p-2.5 space-y-1.5 font-inter text-[11px]" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.2)" }}>
-              <p style={{ color: "#4ADE80" }}>
-                ✓ {txt(`കശ്ഫ് (ഈ സെക്ഷന്റെ കിതാബ്): തുകയെ 4 കൊണ്ട് ഹരിച്ച ബാക്കിയാണ് വഫ്ഖിന്റെ മൂലകം — ${el.ml}. കള്ളിയുടെ രൂപം ഇതുകൊണ്ട് തനിയെ തിരഞ്ഞെടുക്കുന്നു.`,
-                        `Kashf (this section's book): the remainder of the total divided by 4 is the wafq's element — ${el.en}. The square's form is chosen by it.`)}
+          {N > 0 && autoEl && (
+            <div className="rounded-xl p-2.5 space-y-1.5 font-inter text-[11px]" style={{ background: "rgba(74,222,128,0.05)", border: "1px solid rgba(74,222,128,0.35)" }}>
+              <p className="font-bold" style={{ color: "#4ADE80" }}>
+                {txt("മൂലകം", "Element")}: {isEn ? ELEMENTS[autoEl].en : ELEMENTS[autoEl].ml} <span className="font-amiri">{ELEMENTS[autoEl].ar}</span> ✓
               </p>
-              {!manualN && lettersText.trim() && (Object.values(letterEl.sums).some((v) => v > 0)) && (
-                <div className="space-y-1">
-                  <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                    {txt("അക്ഷരങ്ങൾ തന്നെ ഏത് മൂലകത്തിലേക്ക് ചായുന്നു — ഹവാസ്സിലെ ദറജ കണക്ക്:", "Which element the letters themselves lean to — Hâvâss's count of degrees:")}
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {["fire", "earth", "air", "water"].map((k) => (
-                      <span key={k} className="px-2 py-0.5 rounded-lg font-bold"
-                            style={{ background: letterEl.leader === k ? "rgba(212,175,55,0.18)" : "rgba(255,255,255,0.04)", color: letterEl.leader === k ? GOLD : "rgba(255,255,255,0.65)", border: "1px solid rgba(212,175,55,0.2)" }}>
-                        {isEn ? ELEMENTS[k].en : ELEMENTS[k].ml} {letterEl.sums[k]}
-                        <span style={{ opacity: 0.55, fontWeight: 400 }}> ({letterEl.count[k]} {txt("അക്ഷരം", "letters")})</span>
-                      </span>
-                    ))}
-                  </div>
-                  <p style={{ color: "rgba(255,255,255,0.75)" }}>
-                    {letterEl.balanced
-                      ? txt(`${letterEl.tied.map((k) => ELEMENTS[k].ml).join(", ")} — ദറജ തുല്യം. കിതാബ് പ്രകാരം ഈ വാക്ക് മുഅ്തദിൽ (സമനിലയിൽ) ആണ്; ഒന്നിനും മുൻതൂക്കമില്ല.`,
-                            `${letterEl.tied.map((k) => ELEMENTS[k].en).join(", ")} — equal degrees. By the book the word is mu'tadil (balanced); none leads.`)
-                      : txt(`അക്ഷരങ്ങളിൽ മുന്നിൽ ${ELEMENTS[letterEl.leader].ml} — ${letterEl.margin} ദറജ മുൻതൂക്കം.`,
-                            `The letters lead with ${ELEMENTS[letterEl.leader].en} — by ${letterEl.margin} degrees.`)}
-                    {letterEl.leader && letterEl.leader !== elementOf(N) && n <= 4 && (
-                      <button type="button" onClick={() => setForm(letterEl.leader)} className="ml-2 px-2 py-0.5 rounded-lg font-bold" style={btn(form === letterEl.leader)}>
-                        {txt(`കള്ളിക്ക് ${ELEMENTS[letterEl.leader].ml} എടുക്കുക`, `Use ${ELEMENTS[letterEl.leader].en} for the square`)}
-                      </button>
-                    )}
-                  </p>
-                  <p style={{ color: "rgba(255,255,255,0.45)" }}>
-                    {txt("ഓരോ മൂലകത്തിനും ഏഴ് അക്ഷരം. നടുവിലെ അക്ഷരം 4-ാം ദറജ, അതിന്റെ രണ്ടു വശത്തുള്ളവ 3, പിന്നെ 2, ആദ്യത്തേതും അവസാനത്തേതും 1. ഓരോ മൂലകത്തിന്റെയും അക്ഷരങ്ങളുടെ ദറജ കൂട്ടുന്നു; കൂടുതലുള്ളത് മുന്നിൽ, വ്യത്യാസമാണ് അതിന്റെ ദറജ. തുല്യമെങ്കിൽ മുഅ്തദിൽ.",
-                         "Seven letters to each element. The middle letter is the 4th degree, those beside it the 3rd, then the 2nd, the first and last the 1st. Each element's degrees are added; the larger leads, by the difference. Equal sums make the word mu'tadil.")}
-                  </p>
+              {dom.by !== "total" && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                  {["fire", "earth", "air", "water"].map((k) => (
+                    <div key={k} className="rounded-lg p-1.5 space-y-0.5"
+                         style={{ background: autoEl === k ? "rgba(74,222,128,0.12)" : "rgba(255,255,255,0.03)", border: `1px solid ${autoEl === k ? "rgba(74,222,128,0.5)" : "rgba(212,175,55,0.18)"}` }}>
+                      <p className="font-bold" style={{ color: autoEl === k ? "#4ADE80" : GOLD }}>
+                        {isEn ? ELEMENTS[k].en : ELEMENTS[k].ml} · {dom.count[k]} {txt("അക്ഷരം", "letters")}
+                      </p>
+                      <p style={{ color: "rgba(255,255,255,0.55)" }}>{txt("ദറജ", "degrees")} {dom.sums[k]}</p>
+                      <p className="font-amiri text-sm leading-snug break-all" dir="rtl" style={{ color: "rgba(245,234,212,0.8)" }}>
+                        {dom.groups[k].length > 60 ? dom.groups[k].slice(0, 60).join(" ") + " …" : dom.groups[k].join(" ") || "—"}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               )}
+              <p style={{ color: "rgba(255,255,255,0.8)" }}>
+                {dom.by === "count" && txt(`ഏറ്റവും കൂടുതൽ അക്ഷരം ${ELEMENTS[autoEl].ml}-ന് — ${dom.count[autoEl]}. അതുകൊണ്ട് മൂലകം ${ELEMENTS[autoEl].ml}.`,
+                                           `${ELEMENTS[autoEl].en} has the most letters — ${dom.count[autoEl]}. So the element is ${ELEMENTS[autoEl].en}.`)}
+                {dom.by === "degree" && txt(`${dom.tiedCount.map((k) => ELEMENTS[k].ml).join(", ")} — അക്ഷരങ്ങളുടെ എണ്ണം തുല്യം (${dom.count[autoEl]} വീതം). അപ്പോൾ ദറജ നോക്കി: ${dom.tiedCount.map((k) => `${ELEMENTS[k].ml} ${dom.sums[k]}`).join(", ")}. കൂടുതൽ ദറജ ${ELEMENTS[autoEl].ml}-ന്, അതുകൊണ്ട് മൂലകം ${ELEMENTS[autoEl].ml}.`,
+                                            `${dom.tiedCount.map((k) => ELEMENTS[k].en).join(", ")} — level in letters (${dom.count[autoEl]} each). So the degrees decide: ${dom.tiedCount.map((k) => `${ELEMENTS[k].en} ${dom.sums[k]}`).join(", ")}. ${ELEMENTS[autoEl].en} has more, so the element is ${ELEMENTS[autoEl].en}.`)}
+                {dom.by === "total-after-tie" && txt(`${dom.tiedDegree.map((k) => ELEMENTS[k].ml).join(", ")} — അക്ഷരങ്ങളിലും ദറജയിലും തുല്യം (കിതാബിൽ "മുഅ്തദിൽ"). അപ്പോൾ കിതാബിന്റെ സംഖ്യാ നിയമം: ${N} ÷ 4 → ബാക്കി ${N % 4} → ${ELEMENTS[autoEl].ml}.`,
+                                                     `${dom.tiedDegree.map((k) => ELEMENTS[k].en).join(", ")} — level in letters and in degrees (the book's "mu'tadil"). So the book's rule for the number: ${N} ÷ 4 leaves ${N % 4} → ${ELEMENTS[autoEl].en}.`)}
+                {dom.by === "total" && txt(`അക്ഷരമില്ലാതെ സംഖ്യ മാത്രം. കിതാബിന്റെ സംഖ്യാ നിയമം: ${N} ÷ 4 → ബാക്കി ${N % 4} → ${ELEMENTS[autoEl].ml} (ബാക്കി 1 അഗ്നി, 2 മണ്ണ്, 3 വായു, 0 ജലം).`,
+                                           `A number with no letters. The book's rule for a number: ${N} ÷ 4 leaves ${N % 4} → ${ELEMENTS[autoEl].en} (1 fire, 2 earth, 3 air, 0 water).`)}
+              </p>
+              <p style={{ color: "rgba(255,255,255,0.45)" }}>
+                {txt("ദറജ: ഓരോ മൂലകത്തിന്റെയും ഏഴ് അക്ഷരങ്ങളിൽ നടുവിലേതിന് 4, അതിന്റെ ഇരുവശത്തുമുള്ളവയ്ക്ക് 3, പിന്നെ 2, ആദ്യത്തേതിനും അവസാനത്തേതിനും 1.",
+                     "Degrees: of each element's seven letters the middle one is 4, those beside it 3, then 2, the first and last 1.")}
+              </p>
             </div>
           )}
         </Box>
@@ -1104,7 +1103,12 @@ export default function SirrWafqPage() {
           {plan && <Note color="rgba(255,255,255,0.5)">{txt(
             `മിഫ്താഹ് = (${N} − ${asOf(n) * step}) ÷ ${n} = ${plan.key}${plan.rem ? `, ബാക്കി ${plan.rem} → ജബ്ർ വീട് (${n} − ${plan.rem}) × ${n} + 1 = ${plan.jabrHouse}; ആ വീട് മുതൽ ഓരോന്നിലും ഒന്ന് അധികം` : ""}.`,
             `Key = (${N} − ${asOf(n) * step}) ÷ ${n} = ${plan.key}${plan.rem ? `, remainder ${plan.rem} → jabr house (${n} − ${plan.rem}) × ${n} + 1 = ${plan.jabrHouse}` : ""}.`)}</Note>}
-          {plan?.issues.includes("too_small") && <Note color="#FCA5A5">{txt("ഈ കള്ളിക്ക് തുക വളരെ ചെറുതാണ്.", "The total is too small for this square.")}</Note>}
+          {plan?.issues.includes("too_small") && <Note color="#FCA5A5">{txt(
+            `ഈ തുക ${n}×${n}-ൽ ഒതുങ്ങില്ല — തുക വളരെ ചെറുതാണ്. മിഫ്താഹ് 1 എങ്കിലും വരാൻ തുക കുറഞ്ഞത് ${asOf(n) * step + n} വേണം. ശരിയാകുന്നവ: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`,
+            `This total will not fit a ${n}×${n} — it is too small. For a key of at least 1 the total must be ${asOf(n) * step + n} or more. Working: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`)}</Note>}
+          {plan?.issues.includes("m10_no_jabr") && <Note color="#FCA5A5">{txt(
+            `ഈ തുക 10×10-ൽ ഒതുങ്ങില്ല: (${N} − ${asOf(10) * step}) ÷ 10 ബാക്കി ${plan.rem}. 10×10-ന് കിതാബ് ജബ്ർ നിയമം തരുന്നില്ല. ശരിയാകുന്നവ: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`,
+            `This total will not fit a 10×10: (${N} − ${asOf(10) * step}) ÷ 10 leaves ${plan.rem}. The book gives no jabr rule for the 10×10. Working: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`)}</Note>}
           {plan?.issues.includes("m3_jabr_diagonal") && <Note color="#FCA5A5">{txt(
             `3×3-ൽ ബാക്കി ${plan.rem} വരുന്നു; ജബ്ർ ചെയ്താലും ഒരു കോൺ ശരിയാകില്ല. ശരിയാകുന്നവ: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`,
             `3×3 leaves remainder ${plan.rem}; even with jabr one diagonal stays off. Working: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`)}</Note>}
@@ -1122,8 +1126,8 @@ export default function SirrWafqPage() {
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span style={{ color: "rgba(255,255,255,0.6)" }}>{txt("മൂലകം", "Element")}:</span>
                   {["fire", "air", "water", "earth"].map((k) => {
-                    const on = (form || elementOf(N)) === k;
-                    const book = elementOf(N) === k;
+                    const on = (form || autoEl) === k;
+                    const book = autoEl === k;
                     return (
                       <button key={k} type="button" onClick={() => setForm(book ? null : k)}
                               className="px-2.5 py-1 rounded-lg font-bold"
@@ -1133,11 +1137,11 @@ export default function SirrWafqPage() {
                     );
                   })}
                 </div>
-                <p style={{ color: "rgba(255,255,255,0.5)" }}>{form && form !== elementOf(N)
-                  ? txt(`നിങ്ങൾ ${ELEMENTS[form].ml} തിരഞ്ഞെടുത്തു. കിതാബ് പ്രകാരം തുകയുടെ മൂലകം ${ELEMENTS[elementOf(N)].ml} ആണ് (പച്ച). കിതാബ് ഇങ്ങനെ മാറ്റാൻ അനുവദിക്കുന്നുണ്ട്: "ചെയ്യുന്നവന് തന്റെ സ്വന്തം സ്വഭാവം അനുസരിച്ചും വഫ്ഖ് തിരഞ്ഞെടുക്കാം".`,
-                         `You chose ${ELEMENTS[form].en}. By the book the total's element is ${ELEMENTS[elementOf(N)].en} (green). The book allows the change: "the maker may also choose the wafq by his own nature".`)
-                  : txt("പച്ചയിലുള്ളതാണ് കിതാബ് പ്രകാരം തുകയുടെ മൂലകം; അത് തനിയെ തിരഞ്ഞെടുത്തിട്ടുണ്ട്. മാറ്റണമെങ്കിൽ മറ്റൊന്നിൽ അമർത്തുക.",
-                        "The green one is the total's element by the book, chosen by itself. Press another to change it.")}</p>
+                <p style={{ color: "rgba(255,255,255,0.5)" }}>{form && form !== autoEl
+                  ? txt(`നിങ്ങൾ ${ELEMENTS[form].ml} തിരഞ്ഞെടുത്തു. കണ്ടെത്തിയ മൂലകം ${ELEMENTS[autoEl].ml} ആണ് (പച്ച). കിതാബ് ഇങ്ങനെ മാറ്റാൻ അനുവദിക്കുന്നുണ്ട്: "ചെയ്യുന്നവന് തന്റെ സ്വന്തം സ്വഭാവം അനുസരിച്ചും വഫ്ഖ് തിരഞ്ഞെടുക്കാം".`,
+                         `You chose ${ELEMENTS[form].en}. The element found is ${ELEMENTS[autoEl].en} (green). The book allows the change: "the maker may also choose the wafq by his own nature".`)
+                  : txt("പച്ചയിലുള്ളതാണ് ഒന്നാം പടിയിൽ കണ്ടെത്തിയ മൂലകം; കള്ളി അതിന്റെ രൂപത്തിൽ തനിയെ വരും. മാറ്റണമെങ്കിൽ മറ്റൊന്നിൽ അമർത്തുക.",
+                        "The green one is the element found in step 1; the square comes in its form by itself. Press another to change it.")}</p>
               </div>
             )}
             <label className="flex items-center gap-1.5" style={{ color: "rgba(255,255,255,0.6)" }}>
