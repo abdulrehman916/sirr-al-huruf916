@@ -35,10 +35,7 @@ export default function HadimPanel({ grid, miftah, ml = true }) {
   return (
     <div className="space-y-3">
       <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
-        {isEn ? H.HADIM_NOTE.en : H.HADIM_NOTE.ml}{" "}
-        <span style={{ color: "rgba(255,255,255,0.4)" }}>
-          ({txt("ഹവാസ്സ് I പേ.", "Hâvâss I pp.")}{H.HADIM_SOURCE.pages})
-        </span>
+        {isEn ? H.HADIM_NOTE.en : H.HADIM_NOTE.ml}
       </p>
 
       {/* the eight points */}

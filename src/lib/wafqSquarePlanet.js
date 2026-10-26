@@ -52,8 +52,8 @@ export const SQUARE_PLANET = {
   },
   5: {
     planet: "mirrikh", ar: "المريخ", ml: "ചൊവ്വ", en: "Mars", day: 2, stated: true,
-    note_ml: "കിതാബ്: ഖഹ്ഹാർ (القهار) എന്ന സിഫത്ത് ചൊവ്വയുടേതാണ്, അതുകൊണ്ട് ആ സിഫത്ത് ഉപയോഗിക്കുന്ന കാര്യത്തിന്റെ വഫ്ഖ് അഞ്ചിന്റെ കള്ളിയായിരിക്കണം. കശ്ഫ് പേ.286: അഞ്ചിന്റെ കള്ളി സ്വാധീനത്തിന്റെയും (تأثير) സംരക്ഷണത്തിന്റെയും (تحصين) കർമ്മങ്ങൾക്ക്.",
-    note_en: "The book: the attribute al-Qahhâr belongs to Mars, so a vefk for a work using that attribute must be a 5×5. Kashf p.286: the 5×5 is used for works of influence (ta'thir) and fortification (tahsin).",
+    note_ml: "കിതാബ്: ഖഹ്ഹാർ (القهار) എന്ന സിഫത്ത് ചൊവ്വയുടേതാണ്, അതുകൊണ്ട് ആ സിഫത്ത് ഉപയോഗിക്കുന്ന കാര്യത്തിന്റെ വഫ്ഖ് അഞ്ചിന്റെ കള്ളിയായിരിക്കണം. അഞ്ചിന്റെ കള്ളി സ്വാധീനത്തിന്റെയും (تأثير) സംരക്ഷണത്തിന്റെയും (تحصين) കർമ്മങ്ങൾക്ക്.",
+    note_en: "The book: the attribute al-Qahhâr belongs to Mars, so a vefk for a work using that attribute must be a 5×5. the 5×5 is used for works of influence (ta'thir) and fortification (tahsin).",
   },
   6: {
     planet: "shams", ar: "الشمس", ml: "സൂര്യൻ", en: "Sun", day: 0, stated: true,

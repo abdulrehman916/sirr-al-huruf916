@@ -73,8 +73,7 @@ function WhatTheBookSays({ r, isEn }) {
     <div className="mt-1 ml-2 rounded-lg p-2 space-y-1.5 font-inter text-[11px]" style={box}>
       {tier ? (
         <p style={{ color: TIER_COLOR[r.tier] }}>
-          {t(`പടി ${r.tier}`, `Step ${r.tier}`)}: {isEn ? tier.en : tier.ml}{" "}
-          <span style={{ color: DIM }}>({tier.src})</span>
+          {t(`പടി ${r.tier}`, `Step ${r.tier}`)}: {isEn ? tier.en : tier.ml}
         </p>
       ) : (
         <p style={{ color: DIM }}>
@@ -96,15 +95,15 @@ function WhatTheBookSays({ r, isEn }) {
           ☾ {t(`ചന്ദ്രന്റെ പ്രകാശം ${r.light.lit}%`, `The Moon ${r.light.lit}% lit`)}
           {r.light.waxing
             ? t(" — വളരുന്നു", " — waxing")
-            : t(` — ക്ഷയം ${r.light.waned}% (പൗർണ്ണമിയിൽ 0%, അമാവാസിയിൽ 100%; ഹവാസ്സ്)`,
-                ` — waned ${r.light.waned}% (0% at full, 100% at new; Hâvâss)`)}
+            : t(` — ക്ഷയം ${r.light.waned}% (പൗർണ്ണമിയിൽ 0%, അമാവാസിയിൽ 100%)`,
+                ` — waned ${r.light.waned}% (0% at full, 100% at new)`)}
         </p>
       )}
       {r.boost.manzil && (
         <p style={{ color: GOLD }}>
           ✦ {r.kind === "kahir"
-            ? t("ചന്ദ്രൻ നഹ്സായ മൻസിലിലോ മിർരീഖിന്റെ മൻസിലിലോ — ഈ കർമ്മത്തിന് കൂടുതൽ ശക്തി (കശ്ഫ്, ഹവാസ്സ്)",
-                "The Moon in a nahs manzil or one of Mars — more strength for this work (Kashf, Hâvâss)")
+            ? t("ചന്ദ്രൻ നഹ്സായ മൻസിലിലോ മിർരീഖിന്റെ മൻസിലിലോ — ഈ കർമ്മത്തിന് കൂടുതൽ ശക്തി",
+                "The Moon in a nahs manzil or one of Mars — more strength for this work")
             : t("ചന്ദ്രൻ, തിരഞ്ഞെടുത്ത ഉദ്ദേശ്യത്തിന് കിതാബ് പറയുന്ന മൻസിലിൽ — കൂടുതൽ ശക്തി",
                 "The Moon in a manzil the book names for the chosen purpose — more strength")}
         </p>
@@ -112,27 +111,27 @@ function WhatTheBookSays({ r, isEn }) {
       {r.boost.phase && (
         <p style={{ color: GOLD }}>
           ✦ {r.kind === "kahir"
-            ? t("ചന്ദ്രൻ ക്ഷയിക്കുന്നു — ഈ തരം കർമ്മത്തിന് യോജിച്ചത് (ഹവാസ്സ്)", "The Moon wanes — as this kind of work wants (Hâvâss)")
-            : t("ചന്ദ്രൻ വളരുന്നു — നല്ല കർമ്മത്തിന് യോജിച്ചത് (ഹവാസ്സ്)", "The Moon waxes — as a good work wants (Hâvâss)")}
+            ? t("ചന്ദ്രൻ ക്ഷയിക്കുന്നു — ഈ തരം കർമ്മത്തിന് യോജിച്ചത്", "The Moon wanes — as this kind of work wants")
+            : t("ചന്ദ്രൻ വളരുന്നു — നല്ല കർമ്മത്തിന് യോജിച്ചത്", "The Moon waxes — as a good work wants")}
         </p>
       )}
       {r.sameSign && (
         <p style={{ color: "#FDBA74" }}>
-          {t("ശംസും ഖമറും ഒരേ ബുർജിൽ. ഹവാസ്സ്: ഈ സമയത്ത് പൊതുവെ ഒരു വഫ്ഖും ഉണ്ടാക്കാറില്ല.",
-             "The Sun and Moon share a sign. Hâvâss: as a general rule no wafq is made at this time.")}
+          {t("ശംസും ഖമറും ഒരേ ബുർജിൽ. ഈ സമയത്ത് പൊതുവെ ഒരു വഫ്ഖും ഉണ്ടാക്കാറില്ല.",
+             "The Sun and Moon share a sign. As a general rule no wafq is made at this time.")}
         </p>
       )}
       {r.fallDet && (
         <p style={{ color: DIM }}>
           {r.fallDet === "hubut" ? t("ചന്ദ്രൻ ഹുബൂത്വിൽ", "The Moon in its fall") : t("ചന്ദ്രൻ വബാലിൽ", "The Moon in its detriment")}
-          {t(" — കശ്ഫ് പ്രകാരം ജനനസമയത്തല്ലാതെ ഇത് പരിഗണിക്കേണ്ടതില്ല; അറിയിക്കുക മാത്രം.",
-             " — by Kashf this counts only at a birth; reported only.")}
+          {t(" — ജനനസമയത്തല്ലാതെ ഇത് പരിഗണിക്കേണ്ടതില്ല; അറിയിക്കുക മാത്രം.",
+             " — this counts only at a birth; reported only.")}
         </p>
       )}
 
       {r.kind === "kahir" && (
         <div className="pt-1 space-y-1" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-          <p style={{ color: DIM }}>{t("ഹവാസ്സിലെ നിബന്ധനകൾ:", "The conditions in Hâvâss:")}</p>
+          <p style={{ color: DIM }}>{t("കിതാബിലെ നിബന്ധനകൾ:", "The book's conditions:")}</p>
           {KAHIR_CONDITIONS.map((c) => (
             <p key={c.id} style={{ color: c.computed ? "rgba(255,255,255,0.85)" : DIM }}>
               <Mark v={c.computed ? r.fit.met[c.id] : null} /> {c.n}. {isEn ? c.en : c.ml}
@@ -180,7 +179,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
       {/* the work, from the book's own table */}
       <div className="space-y-1">
         <p className="font-inter text-[10px]" style={{ color: DIM }}>
-          {t("കിതാബിലെ കർമ്മം — കശ്ഫ്", "The work, as Kashf lists it")}
+          {t("കിതാബിലെ കർമ്മം", "The work, as the book lists it")}
         </p>
         <select value={wi ?? ""} onChange={(e) => { setWi(e.target.value === "" ? null : +e.target.value); setOpen(null); }}
                 className="w-full rounded-xl px-3 py-2 font-inter text-xs"
@@ -270,7 +269,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
           {/* the companion rule in the book's words */}
           <div className="space-y-1 pt-2" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
             <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
-              {t("കൂട്ടുകാരൻ — കശ്ഫ്", "The companion — Kashf")}
+              {t("കൂട്ടുകാരൻ", "The companion")}
             </p>
             <p className="font-amiri text-sm" dir="rtl" style={{ color: "rgba(255,255,255,0.8)" }}>{COMPANION_SOURCE.ar}</p>
             <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>{isEn ? COMPANION_SOURCE.en : COMPANION_SOURCE.ml}</p>

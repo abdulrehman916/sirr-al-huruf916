@@ -180,8 +180,8 @@ export const GOOD_CONDITIONS = [
 ];
 
 export const GOOD_WAXING_NOTE = {
-  ml: "ചന്ദ്രന്റെ വളർച്ച: കിതാബ് ക്ഷയത്തെക്കുറിച്ച് നഹ്സ് കർമ്മത്തിന്റെ കൂടെ പറയുന്നുണ്ട് (ഹവാസ്സ് പേ.107). നല്ല കർമ്മത്തിന് വളർച്ച വേണമെന്നത് അതിന്റെ മറുവശമാണ്, പക്ഷേ കിതാബിന്റെ ഒരു വാചകമല്ല. അതുകൊണ്ട് ഇത് അറിയിക്കുന്നു, എണ്ണത്തിൽ കൂട്ടുന്നില്ല.",
-  en: "The waxing Moon: the book states the waning for a kahır working (Hâvâss p.107). That a good work wants a waxing Moon is its converse, but a converse is not a sentence of the book. So it is reported and not counted.",
+  ml: "ചന്ദ്രന്റെ വളർച്ച: കിതാബ് ക്ഷയത്തെക്കുറിച്ച് നഹ്സ് കർമ്മത്തിന്റെ കൂടെ പറയുന്നുണ്ട്. നല്ല കർമ്മത്തിന് വളർച്ച വേണമെന്നത് അതിന്റെ മറുവശമാണ്, പക്ഷേ കിതാബിന്റെ ഒരു വാചകമല്ല. അതുകൊണ്ട് ഇത് അറിയിക്കുന്നു, എണ്ണത്തിൽ കൂട്ടുന്നില്ല.",
+  en: "The waxing Moon: the book states the waning for a kahır working. That a good work wants a waxing Moon is its converse, but a converse is not a sentence of the book. So it is reported and not counted.",
 };
 
 /**

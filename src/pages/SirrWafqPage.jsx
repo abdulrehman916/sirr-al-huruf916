@@ -21,13 +21,12 @@ import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
-import { METHODS, methodsFor, methodsIn, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
+import { METHODS, methodsFor, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
 import * as PUR from "@/lib/kashfPurposes";
-import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING,
-         SQUARE_PLANET_SOURCE } from "@/lib/wafqSquarePlanet";
+import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
@@ -124,10 +123,7 @@ function SurroundPick({ value, onPick, isEn, txt }) {
   return (
     <div className="space-y-2">
       <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
-        {txt("കളത്തിന്റെ ചുറ്റ് — കിതാബിന്റെ വഴികൾ", "The square's surround — the book's ways")}{" "}
-        <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
-          ({txt("ഹവാസ്സ് I പേ. 187-193", "Hâvâss I pp. 187-193")})
-        </span>
+        {txt("കളത്തിന്റെ ചുറ്റ് — കിതാബിന്റെ വഴികൾ", "The square's surround — the book's ways")}
       </p>
       <div className="flex flex-wrap gap-1.5">
         {SURROUND_MODES.map((m) => (
@@ -144,18 +140,13 @@ function SurroundPick({ value, onPick, isEn, txt }) {
       </div>
       <div className="rounded-xl p-2.5 space-y-1.5" style={card}>
         <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.82)" }}>
-          {isEn ? sel.note_en : sel.note_ml}{" "}
-          <span style={{ color: "rgba(255,255,255,0.4)" }}>
-            ({txt("പേ.", "p.")}{sel.page})
-          </span>
+          {isEn ? sel.note_en : sel.note_ml}
         </p>
         <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.5)" }}>
-          {isEn ? SURROUND_RULE.en : SURROUND_RULE.ml}{" "}
-          <span style={{ color: "rgba(255,255,255,0.35)" }}>({txt("പേ.", "p.")}{SURROUND_RULE.page})</span>
+          {isEn ? SURROUND_RULE.en : SURROUND_RULE.ml}
         </p>
         <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>
-          {isEn ? SURROUND_NOT_STAGES.en : SURROUND_NOT_STAGES.ml}{" "}
-          <span style={{ color: "rgba(255,255,255,0.3)" }}>({txt("പേ.", "p.")}{SURROUND_NOT_STAGES.page})</span>
+          {isEn ? SURROUND_NOT_STAGES.en : SURROUND_NOT_STAGES.ml}
         </p>
       </div>
     </div>
@@ -454,7 +445,6 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
       return m.build(N, { n, step, text: useText, nameTotal: N, ayahTotal: parseInt(mAyah || "0", 10) });
     } catch (_) { return null; }
   }, [m, N, n, step, useText, mAyah]);
-  const src = SOURCES[m.src];
   const tone = !built ? undefined : built.valid === null ? undefined : built.valid ? "ok" : "warn";
   const rules = isEn ? m.rules_en : m.rules_ml;
   return (
@@ -464,15 +454,11 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
         <span className="flex-1 min-w-0">
           <span className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>{isEn ? m.en : m.ml}</span>
           {m.ar && <span className="font-amiri text-sm ml-2" style={{ color: "rgba(245,208,96,0.7)" }}>{m.ar}</span>}
-          <span className="block font-inter text-[9px] uppercase tracking-wider" style={{ color: "rgba(255,255,255,0.4)" }}>
-            {isEn ? src.en : src.ml}{m.also ? ` + ${isEn ? SOURCES[m.also].en : SOURCES[m.also].ml}` : ""}
-          </span>
         </span>
         <span style={{ color: "rgba(255,255,255,0.4)" }}>{open ? "▾" : "▸"}</span>
       </button>
       {open && (
         <>
-          <Note color="rgba(255,255,255,0.4)">{isEn ? m.ref_en : m.ref_ml}</Note>
           <ol className="list-decimal pl-5 space-y-1 font-inter text-xs" style={{ color: "rgba(245,234,212,0.85)" }}>
             {rules.map((r, i) => <li key={i}>{r}</li>)}
           </ol>
@@ -520,8 +506,8 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
                          "Every row and column met the total; one diagonal falls a step short. This is not a slip in the app — it is what the book's own method gives when jabr is needed. (There is only one 3×3 square, so with jabr both diagonals cannot come out.) Either choose a text whose total divides without a remainder, or use the hollow-centre 3×3.")}
                   </p>
                   <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
-                    {txt("കശ്ഫ് പേ. 295 — ജബ്ർ വീടിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1",
-                         "Kashf p. 295 — the rule for the jabr house: (houses of the side − remainder) × houses of the side + 1")}
+                    {txt("ജബ്ർ വീടിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1",
+                         "The rule for the jabr house: (houses of the side − remainder) × houses of the side + 1")}
                   </p>
                 </div>
               )}
@@ -754,7 +740,7 @@ export default function SirrWafqPage() {
       <div className="space-y-3 pb-10 max-w-3xl mx-auto">
         <div className="flex items-center justify-between flex-wrap gap-3 mb-1">
           <PageTitle arabic="سر الوفق" latin={isEn ? "Sirr al-Wafq" : undefined}
-            subtitle={txt("കശ്ഫുൽ ഹഖാഇഖിന്റെ നിയമപ്രകാരം വഫ്ഖ് നിർമ്മാണം", "Building a wafq by the rules of Kashf al-Haqa'iq")} icon="۞" />
+            subtitle={txt("കിതാബിന്റെ നിയമപ്രകാരം വഫ്ഖ് നിർമ്മാണം", "Building a wafq by the book's rules")} icon="۞" />
           <div className="flex rounded-xl overflow-hidden" style={{ border: "1px solid rgba(212,175,55,0.30)" }}>
             {[["ml", "മലയാളം"], ["en", "English"]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setLang(k)} className="px-3 py-2 font-inter text-[10px] font-bold uppercase tracking-wider"
@@ -770,8 +756,8 @@ export default function SirrWafqPage() {
             "ഓരോ വരിയുടെയും നിരയുടെയും രണ്ടു കോണുകളുടെയും തുക ഒന്നാകുന്ന വിധത്തിൽ സംഖ്യകൾ ക്രമീകരിച്ച സമചതുര കള്ളിയാണ് വഫ്ഖ് (وفق). ഒരു ആയത്തിന്റെയോ സൂറത്തിന്റെയോ പേരിന്റെയോ അബ്ജദ് തുകയിൽ നിന്നാണ് അത് നിറയ്ക്കുന്നത്.",
             "A wafq (وفق) is a square of houses filled so that every row, every column and both diagonals give the same total. It is filled from the abjad total of an ayah, a surah or a name.")}</Note>
           <Note>{txt(
-            "ഈ പേജ് കശ്ഫുൽ ഹഖാഇഖിലെ നിയമങ്ങൾ അതേപടി പാലിക്കുന്നു: أس കുറച്ച് മിഫ്താഹ്, ബാക്കി വന്നാൽ ജബ്ർ, മൂലകമനുസരിച്ചുള്ള രൂപം, ചെറിയ സംഖ്യ മുതൽ എഴുതുന്ന ക്രമം, നിബന്ധന 34-ലെ ഏഴ് പടികൾ, ചൊല്ലേണ്ട ദുആകളും എണ്ണവും. സമയം ആസ്ട്രോ ക്ലോക്കിൽ നിന്ന്: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ഖമർ.",
-            "This page follows the rules of Kashf al-Haqa'iq as written: subtract the أس for the key, apply jabr on a remainder, the element's form, writing from the smallest number up, the seven ranks of condition 34, and the du'as with their counts. The time comes from the Astro Clock: the day first, then the hour, then the Qamar.")}</Note>
+            "ഈ പേജ് കിതാബിലെ നിയമങ്ങൾ അതേപടി പാലിക്കുന്നു: أس കുറച്ച് മിഫ്താഹ്, ബാക്കി വന്നാൽ ജബ്ർ, മൂലകമനുസരിച്ചുള്ള രൂപം, ചെറിയ സംഖ്യ മുതൽ എഴുതുന്ന ക്രമം, നിബന്ധന 34-ലെ ഏഴ് പടികൾ, ചൊല്ലേണ്ട ദുആകളും എണ്ണവും. സമയം ആസ്ട്രോ ക്ലോക്കിൽ നിന്ന്: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ഖമർ.",
+            "This page follows the book's rules as written: subtract the أس for the key, apply jabr on a remainder, the element's form, writing from the smallest number up, the seven ranks of condition 34, and the du'as with their counts. The time comes from the Astro Clock: the day first, then the hour, then the Qamar.")}</Note>
           <Note color="rgba(255,255,255,0.5)">{txt(
             "(1) വാചകമോ പേരോ → (2) കള്ളി → (3) ഉണ്ടാക്കുക → (4) ക്രമത്തിൽ എഴുതുക → (5) ഉദ്ദേശ്യവും സമയവും → (6) ഡൗൺലോഡ്.",
             "(1) text or name → (2) square → (3) build → (4) write in order → (5) purpose and time → (6) download.")}</Note>
@@ -917,10 +903,7 @@ export default function SirrWafqPage() {
           </div>
           <div className="rounded-xl p-2.5 space-y-1" style={card}>
             <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
-              {txt("ഓരോ കള്ളിക്കും അതിന്റെ ഗ്രഹവും ദിവസവും", "Each square has its planet, and so its day")}{" "}
-              <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
-                ({txt("ഹവാസ്സ് പേ.", "Hâvâss pp.")}{SQUARE_PLANET_SOURCE.havass} · {txt("കശ്ഫ് പേ.", "Kashf p.")}{SQUARE_PLANET_SOURCE.kashf})
-              </span>
+              {txt("ഓരോ കള്ളിക്കും അതിന്റെ ഗ്രഹവും ദിവസവും", "Each square has its planet, and so its day")}
             </p>
             <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.82)" }}>
               {isEn ? SQUARE_PLANET_WARNING.en : SQUARE_PLANET_WARNING.ml}
@@ -959,8 +942,8 @@ export default function SirrWafqPage() {
 
         {/* 4 */}
         <Box step="3" title={txt("കള്ളി ഉണ്ടാക്കുക", "Build the wafq")}>
-          <Intro>{txt("കിതാബിലെ ഓരോ രീതിയും ഇവിടെയുണ്ട്. ഒരു രീതിയുടെ പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഏത് കിതാബിലെ ഏത് പേജ്, ഉണ്ടാക്കിയ കള്ളി, വരിയുടെയും നിരയുടെയും കോണിന്റെയും തുക ഒത്തുവന്നോ എന്ന പരിശോധന — എല്ലാം കാണാം.", "Every method in the books is here. Press a method\'s name to see its rules, which book and page they come from, the square it builds, and the check that every row, column and diagonal comes out at the total.")}</Intro>
-          <Rules isEn={isEn} items={isEn ? ["Pressing a method's name opens its rules, the book and page they come from, the square it builds, and the check.", "The standard method (التعمير): write the miftah in the house of alif, then add one in each house in the abjad house order.", "Jabr: where the division leaves a remainder, that remainder is added from a particular house onward. The book's rule (Kashf p. 295): (houses of the side − remainder) × houses of the side + 1.", "Tafāḍul (تفاضل): instead of adding one, a step is added. The step belongs to the Sun–Moon angle — 1 at 30°, 2 at 60°, and so on. 180° is to be avoided.", "The check: every row, column and both diagonals must equal the total. Rows and columns are reported apart from the diagonals.", "On a 3×3 that needs jabr, one diagonal comes out a step short. That belongs to the book's method — there is only one 3×3 square. Either choose a text whose total divides evenly, or take the hollow-centre 3×3.", "The book gives no jabr rule for the 10×10, so a total with a remainder will not come out on one.", "⚠ In the methods that write letters into the houses, the letters' abjad must be added to the total as well, which doubles it. The recitation goes by that number."] : ["ഓരോ രീതിയുടെയും പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഏത് കിതാബിലെ ഏത് പേജ്, ഉണ്ടാക്കിയ കള്ളി, പരിശോധന — എല്ലാം തുറക്കും.", "അടിസ്ഥാന രീതി (التعمير): മിഫ്താഹ് അലിഫിന്റെ വീട്ടിൽ എഴുതുക, പിന്നെ അബ്ജദ് വീട് ക്രമത്തിൽ ഓരോന്നിലും ഒന്നു വീതം കൂട്ടുക.", "ജബ്ർ: ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ, ആ ബാക്കി ഒരു പ്രത്യേക വീട്ടിൽ നിന്ന് തുടങ്ങി കൂട്ടുന്നു. കിതാബിന്റെ നിയമം (കശ്ഫ് പേ. 295): (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1.", "തഫാദുൽ (تفاضل): ഓരോന്ന് കൂട്ടുന്നതിന് പകരം ഒരു ചുവട് വെച്ച് കൂട്ടുന്നു. ചുവട് സൂര്യ-ചന്ദ്ര കോണുമായി ബന്ധപ്പെട്ടതാണ് — 30° ആണെങ്കിൽ 1, 60° ആണെങ്കിൽ 2, അങ്ങനെ. 180° ഒഴിവാക്കണം.", "പരിശോധന: എല്ലാ വരിയും നിരയും രണ്ട് കോണും ആകെ തുകയ്ക്ക് തുല്യമാകണം. വരിയും നിരയും വെവ്വേറെ, കോണുകൾ വെവ്വേറെ കാണിക്കുന്നു.", "3×3-ൽ ജബ്ർ വേണ്ടിവന്നാൽ ഒരു കോൺ ഒരു പടി കുറവായി വരും. ഇത് കിതാബിന്റെ രീതിയുടെ സ്വഭാവമാണ് — 3×3 കള്ളി ഗണിതപരമായി ഒന്നേയുള്ളൂ. ബാക്കി വരാത്ത വാചകം നോക്കുകയോ നടുവ് ഒഴിഞ്ഞ മുഅല്ലസ് എടുക്കുകയോ ചെയ്യാം.", "10×10-ന് കിതാബ് ജബ്ർ നിയമം തരുന്നില്ല. അതുകൊണ്ട് ബാക്കി വരുന്ന തുകയിൽ 10×10 ഒത്തുവരില്ല.", "അക്ഷരം കള്ളിയിൽ എഴുതുന്ന രീതികളിൽ ⚠ ശ്രദ്ധിക്കുക: അക്ഷരത്തിന്റെ അബ്ജദ് കൂടി തുകയിൽ കൂട്ടണം, അപ്പോൾ ശരിയായ തുക ഇരട്ടിയാകും. ചൊല്ലേണ്ടതും ആ സംഖ്യ വെച്ചാണ്."]} />
+          <Intro>{txt("കിതാബിലെ ഓരോ രീതിയും ഇവിടെയുണ്ട്. ഒരു രീതിയുടെ പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, വരിയുടെയും നിരയുടെയും കോണിന്റെയും തുക ഒത്തുവന്നോ എന്ന പരിശോധന — എല്ലാം കാണാം.", "Every method in the books is here. Press a method\'s name to see its rules, the square it builds, and the check that every row, column and diagonal comes out at the total.")}</Intro>
+          <Rules isEn={isEn} items={isEn ? ["Pressing a method's name opens its rules, the square it builds, and the check.", "The standard method (التعمير): write the miftah in the house of alif, then add one in each house in the abjad house order.", "Jabr: where the division leaves a remainder, that remainder is added from a particular house onward. The book's rule: (houses of the side − remainder) × houses of the side + 1.", "Tafāḍul (تفاضل): instead of adding one, a step is added. The step belongs to the Sun–Moon angle — 1 at 30°, 2 at 60°, and so on. 180° is to be avoided.", "The check: every row, column and both diagonals must equal the total. Rows and columns are reported apart from the diagonals.", "On a 3×3 that needs jabr, one diagonal comes out a step short. That belongs to the book's method — there is only one 3×3 square. Either choose a text whose total divides evenly, or take the hollow-centre 3×3.", "The book gives no jabr rule for the 10×10, so a total with a remainder will not come out on one.", "⚠ In the methods that write letters into the houses, the letters' abjad must be added to the total as well, which doubles it. The recitation goes by that number."] : ["ഓരോ രീതിയുടെയും പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, പരിശോധന — എല്ലാം തുറക്കും.", "അടിസ്ഥാന രീതി (التعمير): മിഫ്താഹ് അലിഫിന്റെ വീട്ടിൽ എഴുതുക, പിന്നെ അബ്ജദ് വീട് ക്രമത്തിൽ ഓരോന്നിലും ഒന്നു വീതം കൂട്ടുക.", "ജബ്ർ: ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ, ആ ബാക്കി ഒരു പ്രത്യേക വീട്ടിൽ നിന്ന് തുടങ്ങി കൂട്ടുന്നു. കിതാബിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1.", "തഫാദുൽ (تفاضل): ഓരോന്ന് കൂട്ടുന്നതിന് പകരം ഒരു ചുവട് വെച്ച് കൂട്ടുന്നു. ചുവട് സൂര്യ-ചന്ദ്ര കോണുമായി ബന്ധപ്പെട്ടതാണ് — 30° ആണെങ്കിൽ 1, 60° ആണെങ്കിൽ 2, അങ്ങനെ. 180° ഒഴിവാക്കണം.", "പരിശോധന: എല്ലാ വരിയും നിരയും രണ്ട് കോണും ആകെ തുകയ്ക്ക് തുല്യമാകണം. വരിയും നിരയും വെവ്വേറെ, കോണുകൾ വെവ്വേറെ കാണിക്കുന്നു.", "3×3-ൽ ജബ്ർ വേണ്ടിവന്നാൽ ഒരു കോൺ ഒരു പടി കുറവായി വരും. ഇത് കിതാബിന്റെ രീതിയുടെ സ്വഭാവമാണ് — 3×3 കള്ളി ഗണിതപരമായി ഒന്നേയുള്ളൂ. ബാക്കി വരാത്ത വാചകം നോക്കുകയോ നടുവ് ഒഴിഞ്ഞ മുഅല്ലസ് എടുക്കുകയോ ചെയ്യാം.", "10×10-ന് കിതാബ് ജബ്ർ നിയമം തരുന്നില്ല. അതുകൊണ്ട് ബാക്കി വരുന്ന തുകയിൽ 10×10 ഒത്തുവരില്ല.", "അക്ഷരം കള്ളിയിൽ എഴുതുന്ന രീതികളിൽ ⚠ ശ്രദ്ധിക്കുക: അക്ഷരത്തിന്റെ അബ്ജദ് കൂടി തുകയിൽ കൂട്ടണം, അപ്പോൾ ശരിയായ തുക ഇരട്ടിയാകും. ചൊല്ലേണ്ടതും ആ സംഖ്യ വെച്ചാണ്."]} />
           <div className="flex flex-wrap items-center gap-3 font-inter text-[10px]">
             {n <= 4 && (
               <div className="flex flex-wrap items-center gap-1">
@@ -998,8 +981,8 @@ export default function SirrWafqPage() {
                 `ഈ കള്ളിക്ക് രണ്ട് ഗ്രന്ഥങ്ങളിൽ നിന്നായി ${methodsIn(secKey, n).length} രീതികൾ. ഓരോന്നിന്റെയും നിയമങ്ങൾ ഗ്രന്ഥം പറയുന്നതുപോലെ, പിന്നെ ആ രീതിയിൽ ഉണ്ടാക്കിയ കള്ളി, പിന്നെ പരിശോധന.`,
                 `${methodsIn(secKey, n).length} ways for this square, from the two books. For each: the rules as the book gives them, then the square built that way, then the check.`)}</Note>
               <Note color="rgba(255,255,255,0.5)">{txt(
-                "ചുവട് (k) മാറ്റിയാൽ എല്ലാ രീതിയിലും മാറ്റം വരും. ഹവാസ്സ് പ്രകാരം k തിരഞ്ഞെടുക്കുന്നത് സൂര്യ-ചന്ദ്ര കോൺ നോക്കിയാണ്:",
-                "Changing the step (k) changes every method. In Hâvâss, k is chosen by the Sun–Moon angle:")}</Note>
+                "ചുവട് (k) മാറ്റിയാൽ എല്ലാ രീതിയിലും മാറ്റം വരും. k തിരഞ്ഞെടുക്കുന്നത് സൂര്യ-ചന്ദ്ര കോൺ നോക്കിയാണ്:",
+                "Changing the step (k) changes every method. k is chosen by the Sun–Moon angle:")}</Note>
               <div className="flex flex-wrap gap-1.5">
                 {[1, 2, 3, 4, 5, 6].map((k) => {
                   const a = ANGLE_FOR_STEP[k], sx = ANGLE_SEX[a];
@@ -1043,7 +1026,7 @@ export default function SirrWafqPage() {
             {/* 5 writing */}
             <Box step="4" title={txt("എഴുതേണ്ട രൂപവും ക്രമവും", "How and in what order to write it")}>
           <Intro>{txt("ഇനി എഴുത്താണ്. ഏത് വീട്ടിൽ ഏത് സംഖ്യ ആദ്യം എന്ന ക്രമം, കള്ളിക്ക് ചുറ്റും ബിസ്മിയും മലക്കുകളുടെ പേരുകളും മൂലയിലെ ആയത്തും, ഈ കള്ളിയുടെ ഹാദിമുകൾ — എല്ലാം താഴെ.", "Now the writing. The order in which the houses are filled, the besmele and the angels\' names around the square with the verse across its corners, and this square\'s hâdims — all below.")}</Intro>
-          <Rules isEn={isEn} items={isEn ? ["The order: begin at the smallest number and go up, in the abjad house order.", "While writing each house, say one basmala without lifting the pen from the paper (Hâvâss).", "Around it: ٧٨٦, the Seven Seals beneath it, then the besmele around the square — each word clustered outside one corner, one letter drawn out to make the side.", "At the four corners, قوله الحق وله الملك, each part stretched on its first letter and lying across its corner.", "The angels: choose one and that name is written on all four sides. Choose four and the book's order holds — Jibril above, Israfil left, Mikail right, Azrail below. That is the order of ج ا م ع, the letters of Allah's attribute Jami'.", "On each side, from the outside inward: the angel you chose (large), then that day's angel, then that day's jinn.", "No letter may be broken, and nothing may enter the square.", "A text of your own can be carried right round the outside if you wish — beyond the angels' names and the besmele."] : ["ക്രമം: ഏറ്റവും ചെറിയ സംഖ്യ മുതൽ എഴുതിത്തുടങ്ങുക, അബ്ജദ് വീട് ക്രമത്തിൽ.", "ഓരോ വീടും എഴുതുമ്പോൾ പേന കടലാസിൽ നിന്ന് ഉയർത്താതെ ഒരു ബിസ്മി ചൊല്ലുക (ഹവാസ്സ്).", "ചുറ്റെഴുത്ത്: ٧٨٦, അതിന് താഴെ ഖാത്തമു സുലൈമാൻ, പിന്നെ കള്ളിക്ക് ചുറ്റും ബിസ്മി — ഓരോ പദവും ഒരു മൂലയ്ക്ക് പുറത്ത്, ഒരക്ഷരം നീട്ടി വശമാക്കി.", "നാല് മൂലയിൽ قوله الحق وله الملك, ഓരോ ഭാഗവും ആദ്യത്തെ അക്ഷരത്തിൽ നീട്ടി മൂലയ്ക്ക് കുറുകെ.", "മലക്കുകൾ: ഒരു മലക്കിനെ മാത്രം തിരഞ്ഞെടുത്താൽ ആ പേര് നാല് വശത്തും. നാല് മലക്ക് തിരഞ്ഞെടുത്താൽ കിതാബിന്റെ ക്രമം — മുകളിൽ ജിബ്രാഈൽ, ഇടത് ഇസ്റാഫീൽ, വലത് മീകാഈൽ, താഴെ അസ്റാഈൽ. അത് ج ا م ع എന്ന ക്രമമാണ്, അല്ലാഹുവിന്റെ ജാമിഅ് എന്ന സിഫത്തിന്റെ അക്ഷരങ്ങൾ.", "ഓരോ വശത്തും പുറത്തുനിന്ന് അകത്തേക്ക്: തിരഞ്ഞെടുത്ത മലക്ക് (വലുതായി), പിന്നെ ആ ദിവസത്തിന്റെ മലക്ക്, പിന്നെ ആ ദിവസത്തിന്റെ ജിന്ന്.", "ഒരക്ഷരവും മുറിയരുത്; ഒന്നും കള്ളിയുടെ ഉള്ളിലേക്ക് കയറരുത്.", "വേണമെങ്കിൽ സ്വന്തമായി ഒരു ആയത്ത് ചുറ്റും വട്ടത്തിൽ എഴുതാം — മലക്കുകളുടെ പേരുകൾക്കും ബിസ്മിക്കും പുറത്ത്."]} />
+          <Rules isEn={isEn} items={isEn ? ["The order: begin at the smallest number and go up, in the abjad house order.", "While writing each house, say one basmala without lifting the pen from the paper.", "Around it: ٧٨٦, the Seven Seals beneath it, then the besmele around the square — each word clustered outside one corner, one letter drawn out to make the side.", "At the four corners, قوله الحق وله الملك, each part stretched on its first letter and lying across its corner.", "The angels: choose one and that name is written on all four sides. Choose four and the book's order holds — Jibril above, Israfil left, Mikail right, Azrail below. That is the order of ج ا م ع, the letters of Allah's attribute Jami'.", "On each side, from the outside inward: the angel you chose (large), then that day's angel, then that day's jinn.", "No letter may be broken, and nothing may enter the square.", "A text of your own can be carried right round the outside if you wish — beyond the angels' names and the besmele."] : ["ക്രമം: ഏറ്റവും ചെറിയ സംഖ്യ മുതൽ എഴുതിത്തുടങ്ങുക, അബ്ജദ് വീട് ക്രമത്തിൽ.", "ഓരോ വീടും എഴുതുമ്പോൾ പേന കടലാസിൽ നിന്ന് ഉയർത്താതെ ഒരു ബിസ്മി ചൊല്ലുക.", "ചുറ്റെഴുത്ത്: ٧٨٦, അതിന് താഴെ ഖാത്തമു സുലൈമാൻ, പിന്നെ കള്ളിക്ക് ചുറ്റും ബിസ്മി — ഓരോ പദവും ഒരു മൂലയ്ക്ക് പുറത്ത്, ഒരക്ഷരം നീട്ടി വശമാക്കി.", "നാല് മൂലയിൽ قوله الحق وله الملك, ഓരോ ഭാഗവും ആദ്യത്തെ അക്ഷരത്തിൽ നീട്ടി മൂലയ്ക്ക് കുറുകെ.", "മലക്കുകൾ: ഒരു മലക്കിനെ മാത്രം തിരഞ്ഞെടുത്താൽ ആ പേര് നാല് വശത്തും. നാല് മലക്ക് തിരഞ്ഞെടുത്താൽ കിതാബിന്റെ ക്രമം — മുകളിൽ ജിബ്രാഈൽ, ഇടത് ഇസ്റാഫീൽ, വലത് മീകാഈൽ, താഴെ അസ്റാഈൽ. അത് ج ا م ع എന്ന ക്രമമാണ്, അല്ലാഹുവിന്റെ ജാമിഅ് എന്ന സിഫത്തിന്റെ അക്ഷരങ്ങൾ.", "ഓരോ വശത്തും പുറത്തുനിന്ന് അകത്തേക്ക്: തിരഞ്ഞെടുത്ത മലക്ക് (വലുതായി), പിന്നെ ആ ദിവസത്തിന്റെ മലക്ക്, പിന്നെ ആ ദിവസത്തിന്റെ ജിന്ന്.", "ഒരക്ഷരവും മുറിയരുത്; ഒന്നും കള്ളിയുടെ ഉള്ളിലേക്ക് കയറരുത്.", "വേണമെങ്കിൽ സ്വന്തമായി ഒരു ആയത്ത് ചുറ്റും വട്ടത്തിൽ എഴുതാം — മലക്കുകളുടെ പേരുകൾക്കും ബിസ്മിക്കും പുറത്ത്."]} />
               {/* Which angel the working belongs to. Both books name the
                   works for each, and on two of the four they do not say
                   the same thing, so both are shown rather than one chosen
@@ -1066,11 +1049,9 @@ export default function SirrWafqPage() {
                               style={btn(angel === a.id)}>
                         <span className="font-amiri text-lg block">{a.ar}</span>
                         <span className="block" style={{ opacity: 0.8 }}>
-                          <b style={{ opacity: 0.65 }}>{txt("കശ്ഫ്", "Kashf")}:</b>{" "}
                           {isEn ? a.kashf_en : a.kashf_ml}
                         </span>
                         <span className="block" style={{ opacity: 0.8 }}>
-                          <b style={{ opacity: 0.65 }}>{txt("ഹവാസ്സ് പേ.188", "Hâvâss p.188")}:</b>{" "}
                           {isEn ? a.havass_en : a.havass_ml}
                         </span>
                       </button>
@@ -1097,9 +1078,6 @@ export default function SirrWafqPage() {
                              border: "1px solid rgba(212,175,55,0.25)" }} />
                   <p className="font-inter text-[10px]" style={{ color: "rgba(245,234,212,0.5)" }}>
                     {isEn ? CORNER_VERSE_RULE.en : CORNER_VERSE_RULE.ml}{" "}
-                    <span style={{ color: "rgba(245,234,212,0.35)" }}>
-                      ({txt("പേ.", "p.")}{CORNER_VERSE_RULE.page})
-                    </span>{" "}
                     {txt("നാല് ഭാഗമാകാൻ ചുരുങ്ങിയത് നാല് പദം വേണം.",
                          "At least four words are needed for it to divide in four.")}
                   </p>
@@ -1182,7 +1160,7 @@ export default function SirrWafqPage() {
 
         <Box step="5" title={txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
           <Intro>{txt("കള്ളി എപ്പോൾ എഴുതണമെന്ന് ഇവിടെ നോക്കാം. ആദ്യ ടാബിൽ ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന വിഷയങ്ങൾ; രണ്ടാമത്തേതിൽ കിതാബിന്റെ മൻസിൽ പട്ടിക; മൂന്നാമത്തേതിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം — സമ്പത്ത്, ജിന്ന്, യാത്ര എന്നിങ്ങനെ — മലയാളത്തിലോ അറബിയിലോ എഴുതി കിതാബ് അതിനെ ഏത് മൻസിലിലും ദിവസത്തിലും സാഅത്തിലും വെക്കുന്നു എന്ന് കാണാം.", "Here is when to write the square. The first tab holds the subjects the Astro Clock grades with a percentage; the second, the book\'s manzil table; the third lets you type your own purpose — provision, jinn, travel — in Malayalam or Arabic, and shows which manzil, day and hour the book places it in.")}</Intro>
-          <Rules isEn={isEn} items={isEn ? ["The order of time: the day first, then the hour, then the Qamar. It is the day that holds authority.", "First tab: the ten subjects the Astro Clock grades with a percentage, drawn together from the book's day table, hour table and manzil table.", "Second tab: the book's own table of the twenty-eight manazil, each with its nature and its work.", "Third tab: type your own purpose, in Malayalam or Arabic. It is searched against the thirty-five works the book names and the day-and-hour table on pp. 12-13.", "What comes back: which manazil are good for that work and which are not, the day and hour where the book gives them, and how far this moment answers to it.", "The reading is not invented. It is a count: of the conditions the book actually states for that work, how many are met now.", "No work the book does not name will appear here. If nothing comes back, try another word."] : ["സമയത്തിന്റെ ക്രമം: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ചന്ദ്രൻ. ദിവസമാണ് അധികാരം വഹിക്കുന്നത്.", "ആദ്യ ടാബ്: ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന 10 വിഷയങ്ങൾ. കിതാബിന്റെ ദിവസപ്പട്ടിക, സാഅത്ത് പട്ടിക, മൻസിൽ പട്ടിക — മൂന്നും ചേർന്നാണ് ആ ശതമാനം.", "രണ്ടാം ടാബ്: കിതാബിലെ 28 മൻസിലിന്റെ പട്ടിക, ഓരോന്നിന്റെയും സ്വഭാവവും കർമ്മവും.", "മൂന്നാം ടാബ്: നിങ്ങളുടെ സ്വന്തം ഉദ്ദേശ്യം മലയാളത്തിലോ അറബിയിലോ എഴുതുക. കിതാബ് പേരെടുത്തു പറയുന്ന 35 കർമ്മങ്ങളിലും പേ. 12-13-ലെ സമയപ്പട്ടികയിലും തിരയും.", "കിട്ടുന്നത്: ആ കർമ്മത്തിന് ഏതൊക്കെ മൻസിൽ നല്ലത്, ഏതൊക്കെ പറ്റില്ല, കിതാബ് ദിവസവും സാഅത്തും പറയുന്നുണ്ടെങ്കിൽ അതും, ഇപ്പോൾ എത്ര ഒത്തുവരുന്നു എന്നും.", "ശതമാനം കെട്ടിച്ചമച്ചതല്ല — കിതാബ് ആ കർമ്മത്തിന് എത്ര നിബന്ധന പറയുന്നുവോ അതിൽ എത്ര ഇപ്പോൾ ഒത്തുവരുന്നു എന്ന എണ്ണമാണ്.", "കിതാബിൽ ഇല്ലാത്ത ഒരു കർമ്മവും ഇവിടെ വരില്ല. കിട്ടിയില്ലെങ്കിൽ വേറൊരു വാക്കിൽ നോക്കുക."]} />
+          <Rules isEn={isEn} items={isEn ? ["The order of time: the day first, then the hour, then the Qamar. It is the day that holds authority.", "First tab: the ten subjects the Astro Clock grades with a percentage, drawn together from the book's day table, hour table and manzil table.", "Second tab: the book's own table of the twenty-eight manazil, each with its nature and its work.", "Third tab: type your own purpose, in Malayalam or Arabic. It is searched against the thirty-five works the book names and its day-and-hour table.", "What comes back: which manazil are good for that work and which are not, the day and hour where the book gives them, and how far this moment answers to it.", "The reading is not invented. It is a count: of the conditions the book actually states for that work, how many are met now.", "No work the book does not name will appear here. If nothing comes back, try another word."] : ["സമയത്തിന്റെ ക്രമം: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ചന്ദ്രൻ. ദിവസമാണ് അധികാരം വഹിക്കുന്നത്.", "ആദ്യ ടാബ്: ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന 10 വിഷയങ്ങൾ. കിതാബിന്റെ ദിവസപ്പട്ടിക, സാഅത്ത് പട്ടിക, മൻസിൽ പട്ടിക — മൂന്നും ചേർന്നാണ് ആ ശതമാനം.", "രണ്ടാം ടാബ്: കിതാബിലെ 28 മൻസിലിന്റെ പട്ടിക, ഓരോന്നിന്റെയും സ്വഭാവവും കർമ്മവും.", "മൂന്നാം ടാബ്: നിങ്ങളുടെ സ്വന്തം ഉദ്ദേശ്യം മലയാളത്തിലോ അറബിയിലോ എഴുതുക. കിതാബ് പേരെടുത്തു പറയുന്ന 35 കർമ്മങ്ങളിലും അതിലെ സമയപ്പട്ടികയിലും തിരയും.", "കിട്ടുന്നത്: ആ കർമ്മത്തിന് ഏതൊക്കെ മൻസിൽ നല്ലത്, ഏതൊക്കെ പറ്റില്ല, കിതാബ് ദിവസവും സാഅത്തും പറയുന്നുണ്ടെങ്കിൽ അതും, ഇപ്പോൾ എത്ര ഒത്തുവരുന്നു എന്നും.", "ശതമാനം കെട്ടിച്ചമച്ചതല്ല — കിതാബ് ആ കർമ്മത്തിന് എത്ര നിബന്ധന പറയുന്നുവോ അതിൽ എത്ര ഇപ്പോൾ ഒത്തുവരുന്നു എന്ന എണ്ണമാണ്.", "കിതാബിൽ ഇല്ലാത്ത ഒരു കർമ്മവും ഇവിടെ വരില്ല. കിട്ടിയില്ലെങ്കിൽ വേറൊരു വാക്കിൽ നോക്കുക."]} />
           <div className="flex gap-1.5">
             {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>

@@ -197,8 +197,8 @@ export const SURROUND_MODES = [
 
   { id: "one",       ml: "നാല് വശത്തും ഒരേ മലക്ക് — കാര്യത്തിന് യോജിച്ചത്", en: "One archangel, the one the work belongs to, on all four sides",
     page: 188, angels: true, four: false, besmele: false, verse: false, ring: false,
-    note_ml: "\"ഈ മലക്കുകളിൽ ഒരാളുടെ പേര് മാത്രം, ചെയ്യുന്ന കാര്യത്തോട് ബന്ധപ്പെട്ടത് തിരഞ്ഞെടുത്ത്, നാല് വശത്തും അവന്റെ പേര് എഴുതാം.\" ഏത് കാര്യം ഏത് മലക്കിന്റേതാണെന്ന് കിതാബ് പേ.188-ൽ പറയുന്നു — താഴെ കാണുക.",
-    note_en: "\"Only one of these angels' names, the one related to the work in hand, may be chosen and written on all four sides.\" Which work belongs to which angel the book sets out on p.188 — shown below." },
+    note_ml: "\"ഈ മലക്കുകളിൽ ഒരാളുടെ പേര് മാത്രം, ചെയ്യുന്ന കാര്യത്തോട് ബന്ധപ്പെട്ടത് തിരഞ്ഞെടുത്ത്, നാല് വശത്തും അവന്റെ പേര് എഴുതാം.\" ഏത് കാര്യം ഏത് മലക്കിന്റേതാണെന്ന് കിതാബ് പറയുന്നു — താഴെ കാണുക.",
+    note_en: "\"Only one of these angels' names, the one related to the work in hand, may be chosen and written on all four sides.\" Which work belongs to which angel the book sets out — shown below." },
 
   { id: "besmele",   ml: "പുറംവരകൾ ബിസ്മി നാലായി",                 en: "The outer lines made of the besmele, split four ways",
     page: 190, angels: false, four: false, besmele: true, verse: false, ring: false,

@@ -77,8 +77,8 @@ export default function PurposePanel({ ml = true }) {
           style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4",
                    border: "1px solid rgba(212,175,55,0.25)" }} />
         <p className="font-inter text-[10px]" style={{ color: "rgba(245,234,212,0.5)" }}>
-          {txt(`കിതാബ് പേരെടുത്തു പറയുന്ന ${all.length} കർമ്മങ്ങളിലും പേ. 12-13-ലെ സമയപ്പട്ടികയിലും തിരയുന്നു. കിതാബിൽ ഇല്ലാത്ത ഒന്നും ഇവിടെ വരില്ല.`,
-               `Searches the ${all.length} works the book names and the day-and-hour table on pp. 12-13. Nothing the book does not name appears here.`)}
+          {txt(`കിതാബ് പേരെടുത്തു പറയുന്ന ${all.length} കർമ്മങ്ങളിലും കിതാബിലെ സമയപ്പട്ടികയിലും തിരയുന്നു. കിതാബിൽ ഇല്ലാത്ത ഒന്നും ഇവിടെ വരില്ല.`,
+               `Searches the ${all.length} works the book names and its day-and-hour table. Nothing the book does not name appears here.`)}
         </p>
       </div>
 
@@ -87,10 +87,7 @@ export default function PurposePanel({ ml = true }) {
         <div className="rounded-xl p-3 space-y-1.5"
              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.22)" }}>
           <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
-            {txt("കിതാബ് ദിവസവും സാഅത്തും പറയുന്നത്", "The book names a day and an hour")}{" "}
-            <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
-              ({txt("പേ.", "pp.")}{P.WORK_TIMES_SOURCE.page})
-            </span>
+            {txt("കിതാബ് ദിവസവും സാഅത്തും പറയുന്നത്", "The book names a day and an hour")}
           </p>
           {times.map((w) => {
             const dayOk = w.day === now.weekday;
@@ -199,10 +196,6 @@ function Selected({ p, now, isEn, txt }) {
                   `The Moon is now in manzil ${now.manzil} ${mname(now.manzil, isEn)} — not good for this ✗`)
             : txt(`ഇപ്പോൾ ചന്ദ്രൻ മൻസിൽ ${now.manzil} ${mname(now.manzil, isEn)}-ൽ — ഈ കർമ്മത്തെക്കുറിച്ച് ഈ മൻസിലിന്റെ ഖണ്ഡിക ഒന്നും പറയുന്നില്ല`,
                   `The Moon is now in manzil ${now.manzil} ${mname(now.manzil, isEn)} — that manzil's chapter says nothing about this work`)}
-        </p>
-        <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(255,255,255,0.4)" }}>
-          {txt(`കശ്ഫ് പേ. ${P.PURPOSE_SOURCE.pages} — ഓരോ മൻസിലിന്റെയും ഖണ്ഡികയിൽ നിന്ന്`,
-               `Kashf pp. ${P.PURPOSE_SOURCE.pages} — from each manzil's own chapter`)}
         </p>
       </div>
     </div>
