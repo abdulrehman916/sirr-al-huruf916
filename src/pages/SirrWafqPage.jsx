@@ -27,7 +27,8 @@ import PurposePanel from "@/components/wafq/PurposePanel";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
-import { ARCHANGELS } from "@/lib/wafqSurround";
+import { ARCHANGELS, SURROUND_MODES, SURROUND_RULE, SURROUND_NOT_STAGES,
+         CORNER_VERSE_RULE, CORNER_VERSE, BASMALA_FULL } from "@/lib/wafqSurround";
 
 const GOLD = "#F5D060";
 const PAGE_PATH = "/sirr-al-wafq";
@@ -87,6 +88,58 @@ const SIDE_ANGELS = [
   { pos: "bottom", ar: "عزرائيل", ml: "താഴെ", en: "Bottom" },
   { pos: "left", ar: "اسرافيل", ml: "ഇടത്ത്", en: "Left" },
 ];
+
+/**
+ * Which of the book's ways of surrounding the square is used.
+ *
+ * The book gives nine forms and is explicit on two points: the surround
+ * follows the vefk's purpose and the maker's own view (p. 187), and the
+ * forms are each a real form in their own right, not stages of one
+ * square (p. 193). So this is one choice, with the book's own words for
+ * the chosen form shown under it.
+ */
+function SurroundPick({ value, onPick, isEn, txt }) {
+  const sel = SURROUND_MODES.find((m) => m.id === value) || SURROUND_MODES[1];
+  return (
+    <div className="space-y-2">
+      <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
+        {txt("കളത്തിന്റെ ചുറ്റ് — കിതാബിന്റെ വഴികൾ", "The square's surround — the book's ways")}{" "}
+        <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
+          ({txt("ഹവാസ്സ് I പേ. 187-193", "Hâvâss I pp. 187-193")})
+        </span>
+      </p>
+      <div className="flex flex-wrap gap-1.5">
+        {SURROUND_MODES.map((m) => (
+          <button key={m.id} type="button" onClick={() => onPick(m.id)}
+                  className="px-2 py-1 rounded-lg font-inter text-[10px] font-bold text-left"
+                  style={{
+                    background: value === m.id ? "rgba(212,175,55,0.18)" : "transparent",
+                    color: value === m.id ? GOLD : "rgba(255,255,255,0.65)",
+                    border: `1px solid ${value === m.id ? "rgba(212,175,55,0.55)" : "rgba(212,175,55,0.2)"}`,
+                  }}>
+            {isEn ? m.en : m.ml}
+          </button>
+        ))}
+      </div>
+      <div className="rounded-xl p-2.5 space-y-1.5" style={card}>
+        <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.82)" }}>
+          {isEn ? sel.note_en : sel.note_ml}{" "}
+          <span style={{ color: "rgba(255,255,255,0.4)" }}>
+            ({txt("പേ.", "p.")}{sel.page})
+          </span>
+        </p>
+        <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.5)" }}>
+          {isEn ? SURROUND_RULE.en : SURROUND_RULE.ml}{" "}
+          <span style={{ color: "rgba(255,255,255,0.35)" }}>({txt("പേ.", "p.")}{SURROUND_RULE.page})</span>
+        </p>
+        <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>
+          {isEn ? SURROUND_NOT_STAGES.en : SURROUND_NOT_STAGES.ml}{" "}
+          <span style={{ color: "rgba(255,255,255,0.3)" }}>({txt("പേ.", "p.")}{SURROUND_NOT_STAGES.page})</span>
+        </p>
+      </div>
+    </div>
+  );
+}
 
 /**
  * A step's rules, folded away until wanted. The short Intro above says
@@ -469,10 +522,20 @@ export default function SirrWafqPage() {
   const [actId, setActId] = useState(null);
   const [purposeId, setPurposeId] = useState(null);
   const [chosen, setChosen] = useState(null);
-  const [bismi, setBismi] = useState(true);
-  const [sideAngels, setSideAngels] = useState(false);
+  // Which of the book's ways of surrounding the square is being used.
+  // The book does not tie a surround to a method of building; it ties
+  // it to the purpose and to the maker's own choice (p. 187), and warns
+  // that these forms are alternatives, not stages (p. 193). So it is one
+  // choice here, and everything the sheet draws follows from it.
+  const [surround, setSurround] = useState("four");
+  const sur = SURROUND_MODES.find((m) => m.id === surround) || SURROUND_MODES[1];
+  const bismi = sur.besmele;
+  const sideAngels = sur.angels && sur.four;
   const [angel, setAngel] = useState("jibril");
   const [ringAround, setRingAround] = useState("");
+  // p.193: though the ayah the book gives is generally used at the
+  // corners, any ayah chosen for the work in hand may be used.
+  const [cornerVerse, setCornerVerse] = useState(CORNER_VERSE);
   const [seeker, setSeeker] = useState("");
   const [need, setNeed] = useState("");
   const [mText, setMText] = useState("");
@@ -817,10 +880,7 @@ export default function SirrWafqPage() {
               <input type="number" min={1} max={99} value={step} onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))} className="w-14 rounded-lg px-2 py-1" style={input} />
             </label>
           </div>
-          <div className="flex flex-wrap items-center gap-3 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
-            <label className="flex items-center gap-1.5"><input type="checkbox" checked={bismi} onChange={(e) => setBismi(e.target.checked)} /> {txt("മുകളിൽ ബിസ്മി", "Bismillah on top")}</label>
-            <label className="flex items-center gap-1.5"><input type="checkbox" checked={sideAngels} onChange={(e) => setSideAngels(e.target.checked)} /> {txt("നാലു വശത്തും നാലു മലക്കുകൾ", "Four angels on the four sides")}</label>
-          </div>
+          <SurroundPick value={surround} onPick={setSurround} isEn={isEn} txt={txt} />
           <div className="space-y-2">
             <Note color="rgba(255,255,255,0.5)">{txt("നടുവിലെ വീട്ടിൽ എഴുതാൻ (നിബന്ധന 34) — അറബിയിൽ:", "For the middle house (condition 34) — in Arabic:")}</Note>
             {[["seeker", seeker, setSeeker, "اسم الطالب", txt("ആവശ്യപ്പെടുന്നയാളുടെ പേര്", "Seeker's name")],
@@ -893,18 +953,67 @@ export default function SirrWafqPage() {
             <Box step="5" title={txt("എഴുതേണ്ട രൂപവും ക്രമവും", "How and in what order to write it")}>
           <Intro>{txt("ഇനി എഴുത്താണ്. ഏത് വീട്ടിൽ ഏത് സംഖ്യ ആദ്യം എന്ന ക്രമം, കള്ളിക്ക് ചുറ്റും ബിസ്മിയും മലക്കുകളുടെ പേരുകളും മൂലയിലെ ആയത്തും, ഈ കള്ളിയുടെ ഹാദിമുകൾ — എല്ലാം താഴെ.", "Now the writing. The order in which the houses are filled, the besmele and the angels\' names around the square with the verse across its corners, and this square\'s hâdims — all below.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["The order: begin at the smallest number and go up, in the abjad house order.", "While writing each house, say one basmala without lifting the pen from the paper (Hâvâss).", "Around it: ٧٨٦, the Seven Seals beneath it, then the besmele around the square — each word clustered outside one corner, one letter drawn out to make the side.", "At the four corners, قوله الحق وله الملك, each part stretched on its first letter and lying across its corner.", "The angels: choose one and that name is written on all four sides. Choose four and the book's order holds — Jibril above, Israfil left, Mikail right, Azrail below. That is the order of ج ا م ع, the letters of Allah's attribute Jami'.", "On each side, from the outside inward: the angel you chose (large), then that day's angel, then that day's jinn.", "No letter may be broken, and nothing may enter the square.", "A text of your own can be carried right round the outside if you wish — beyond the angels' names and the besmele."] : ["ക്രമം: ഏറ്റവും ചെറിയ സംഖ്യ മുതൽ എഴുതിത്തുടങ്ങുക, അബ്ജദ് വീട് ക്രമത്തിൽ.", "ഓരോ വീടും എഴുതുമ്പോൾ പേന കടലാസിൽ നിന്ന് ഉയർത്താതെ ഒരു ബിസ്മി ചൊല്ലുക (ഹവാസ്സ്).", "ചുറ്റെഴുത്ത്: ٧٨٦, അതിന് താഴെ ഖാത്തമു സുലൈമാൻ, പിന്നെ കള്ളിക്ക് ചുറ്റും ബിസ്മി — ഓരോ പദവും ഒരു മൂലയ്ക്ക് പുറത്ത്, ഒരക്ഷരം നീട്ടി വശമാക്കി.", "നാല് മൂലയിൽ قوله الحق وله الملك, ഓരോ ഭാഗവും ആദ്യത്തെ അക്ഷരത്തിൽ നീട്ടി മൂലയ്ക്ക് കുറുകെ.", "മലക്കുകൾ: ഒരു മലക്കിനെ മാത്രം തിരഞ്ഞെടുത്താൽ ആ പേര് നാല് വശത്തും. നാല് മലക്ക് തിരഞ്ഞെടുത്താൽ കിതാബിന്റെ ക്രമം — മുകളിൽ ജിബ്രാഈൽ, ഇടത് ഇസ്റാഫീൽ, വലത് മീകാഈൽ, താഴെ അസ്റാഈൽ. അത് ج ا م ع എന്ന ക്രമമാണ്, അല്ലാഹുവിന്റെ ജാമിഅ് എന്ന സിഫത്തിന്റെ അക്ഷരങ്ങൾ.", "ഓരോ വശത്തും പുറത്തുനിന്ന് അകത്തേക്ക്: തിരഞ്ഞെടുത്ത മലക്ക് (വലുതായി), പിന്നെ ആ ദിവസത്തിന്റെ മലക്ക്, പിന്നെ ആ ദിവസത്തിന്റെ ജിന്ന്.", "ഒരക്ഷരവും മുറിയരുത്; ഒന്നും കള്ളിയുടെ ഉള്ളിലേക്ക് കയറരുത്.", "വേണമെങ്കിൽ സ്വന്തമായി ഒരു ആയത്ത് ചുറ്റും വട്ടത്തിൽ എഴുതാം — മലക്കുകളുടെ പേരുകൾക്കും ബിസ്മിക്കും പുറത്ത്."]} />
-              {/* which angel the working belongs to — its name is what
-                  goes on all four sides */}
-              <div className="grid grid-cols-2 gap-2">
-                {ARCHANGELS.map((a) => (
-                  <button key={a.id} type="button" onClick={() => setAngel(a.id)}
-                          className="rounded-xl p-2 text-right font-inter text-[10px] leading-relaxed"
-                          style={btn(angel === a.id)}>
-                    <span className="font-amiri text-lg block">{a.ar}</span>
-                    <span style={{ opacity: 0.75 }}>{isEn ? a.kashf_en : a.kashf_ml}</span>
-                  </button>
-                ))}
-              </div>
+              {/* Which angel the working belongs to. Both books name the
+                  works for each, and on two of the four they do not say
+                  the same thing, so both are shown rather than one chosen
+                  for the reader. When the chosen form writes one angel,
+                  this is the name that goes on all four sides (p. 188);
+                  when it writes four, the chosen one leads each side. */}
+              {sur.angels && (
+                <div className="space-y-2">
+                  <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
+                    {sur.four
+                      ? txt("ഏത് കാര്യത്തിനാണ് ഈ കള്ളി എന്ന് തിരഞ്ഞെടുക്കുക. നാല് മലക്കുകളും വരും; തിരഞ്ഞെടുത്തത് ഓരോ വശത്തും മുന്നിൽ നിൽക്കും.",
+                            "Choose which work this square is for. All four angels are written; the one chosen leads each side.")
+                      : txt("ഏത് കാര്യത്തിനാണ് ഈ കള്ളി എന്ന് തിരഞ്ഞെടുക്കുക. ഈ രൂപത്തിൽ തിരഞ്ഞെടുത്ത മലക്കിന്റെ പേര് മാത്രം നാല് വശത്തും വരും.",
+                            "Choose which work this square is for. In this form only the chosen angel's name is written, on all four sides.")}
+                  </p>
+                  <div className="grid grid-cols-2 gap-2">
+                    {ARCHANGELS.map((a) => (
+                      <button key={a.id} type="button" onClick={() => setAngel(a.id)}
+                              className="rounded-xl p-2 text-right font-inter text-[10px] leading-relaxed"
+                              style={btn(angel === a.id)}>
+                        <span className="font-amiri text-lg block">{a.ar}</span>
+                        <span className="block" style={{ opacity: 0.8 }}>
+                          <b style={{ opacity: 0.65 }}>{txt("കശ്ഫ്", "Kashf")}:</b>{" "}
+                          {isEn ? a.kashf_en : a.kashf_ml}
+                        </span>
+                        <span className="block" style={{ opacity: 0.8 }}>
+                          <b style={{ opacity: 0.65 }}>{txt("ഹവാസ്സ് പേ.188", "Hâvâss p.188")}:</b>{" "}
+                          {isEn ? a.havass_en : a.havass_ml}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* The corner ayah. The book's own is filled in; p.193 gives
+                  leave to put in whatever ayah suits the work in hand. */}
+              {(sur.verse || sur.verseAsLine) && (
+                <div className="rounded-2xl p-3 space-y-2" style={card}>
+                  <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
+                    {sur.verseAsLine
+                      ? txt("പുറംവരകളാക്കുന്ന ആയത്ത്", "The ayah that makes the outer lines")
+                      : txt("മൂലകളിൽ എഴുതുന്ന ആയത്ത്", "The ayah written at the corners")}
+                  </p>
+                  <textarea
+                    dir="rtl" rows={2} value={cornerVerse}
+                    onChange={(e) => setCornerVerse(e.target.value)}
+                    placeholder={CORNER_VERSE}
+                    className="w-full rounded-xl px-3 py-2 font-amiri text-lg"
+                    style={{ background: "rgba(0,0,0,0.25)", color: INK_C,
+                             border: "1px solid rgba(212,175,55,0.25)" }} />
+                  <p className="font-inter text-[10px]" style={{ color: "rgba(245,234,212,0.5)" }}>
+                    {isEn ? CORNER_VERSE_RULE.en : CORNER_VERSE_RULE.ml}{" "}
+                    <span style={{ color: "rgba(245,234,212,0.35)" }}>
+                      ({txt("പേ.", "p.")}{CORNER_VERSE_RULE.page})
+                    </span>{" "}
+                    {txt("നാല് ഭാഗമാകാൻ ചുരുങ്ങിയത് നാല് പദം വേണം.",
+                         "At least four words are needed for it to divide in four.")}
+                  </p>
+                </div>
+              )}
 
               {/* The reader's own text, carried right round the outside —
                   outside the angels' names and outside the besmele. */}
@@ -928,8 +1037,12 @@ export default function SirrWafqPage() {
               </div>
 
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
-                <WafqSheet grid={result.grid} angel={angel} fourAngels={sideAngels}
-                           weekday={dayWd} besmele={bismi} ringAround={ringAround}
+                <WafqSheet grid={result.grid} angel={angel}
+                           angels={sur.angels} fourAngels={sur.four}
+                           weekday={dayWd} besmele={sur.besmele}
+                           verse={sur.verse ? (cornerVerse.trim() || CORNER_VERSE) : ""}
+                           lineText={sur.verseAsLine ? (cornerVerse.trim() || CORNER_VERSE) : ""}
+                           ringAround={sur.ring ? (ringAround.trim() || BASMALA_FULL) : ringAround}
                            className="w-full h-auto" />
               </div>
 

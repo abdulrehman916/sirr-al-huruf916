@@ -165,16 +165,101 @@ export const CORNER_GEOM = {
   tl: { sx: -1, sy: -1, rot:   45 },
 };
 
-/** The seven ways the book gives for surrounding a square (pp.187–192). */
+/**
+ * The seven ways the book gives for surrounding a square (pp.187–192).
+ *
+ * The book does NOT tie a surround to a method of building. It says
+ * plainly, closing the chapter on p.187:
+ *
+ *   "Özet olarak veklerin çevre yazıları da vefkin amacına ve yapan
+ *    kişinin görüşüne göre değişir."
+ *   — in short, what is written round a vefk changes with the vefk's
+ *     purpose and with the view of the one making it.
+ *
+ * So the surround is chosen, not decided by the square. Each way below
+ * carries the shape the book draws for it, which is what the sheet is
+ * given: `angels` whether anything is written on the four sides,
+ * `four` all four archangels in the ج ا م ع order or the one chosen,
+ * `besmele` the outer lines made of the besmele split four ways,
+ * `verse` the short ayah lying across the corners, `ring` the besmele
+ * (or the reader's own words) carried right round outside everything.
+ */
 export const SURROUND_MODES = [
-  { id: "bare",      ml: "ചുറ്റും ഒന്നുമില്ല",                      page: 189 },
-  { id: "circle",    ml: "ബിസ്മി വൃത്തമാക്കി, ഉള്ളിൽ കളം",          page: 191 },
-  { id: "four",      ml: "നാല് വശത്തും നാല് മലക്കുകൾ",             page: 189 },
-  { id: "one",       ml: "നാല് വശത്തും ഒരേ മലക്ക്",                 page: 188 },
-  { id: "corners",   ml: "നാല് മൂലയിൽ ആയത്ത് നാലായി",              page: 191 },
-  { id: "besmele",   ml: "പുറംവരകൾ ബിസ്മി നാലായി",                 page: 190 },
-  { id: "verseline", ml: "പുറംവരകൾ ആയത്ത് കൊണ്ട്",                  page: 192 },
+  { id: "bare",      ml: "ചുറ്റും ഒന്നുമില്ല",                      en: "Nothing around it",
+    page: 189, angels: false, four: false, besmele: false, verse: false, ring: false,
+    note_ml: "കിതാബിന്റെ ആദ്യ വഴി. \"പല അവസ്ഥകളിലും വഫ്ഖുകൾ ഈ രൂപത്തിൽ മാത്രമാണ് ഉപയോഗിക്കുന്നത്, അവയുടെ ചുറ്റ് ഇവിടെ കാണുന്നതുപോലെ ഒഴിഞ്ഞതാണ്.\"",
+    note_en: "The book's first way: \"in many cases vefks are used in this plain form alone, and their surrounds are empty, as here.\"" },
+
+  { id: "four",      ml: "നാല് വശത്തും നാല് മലക്കുകൾ",             en: "The four archangels on the four sides",
+    page: 189, angels: true, four: true, besmele: false, verse: false, ring: false,
+    note_ml: "ജിബ്രാഈൽ · ഇസ്റാഫീൽ · മീകാഈൽ · അസ്റാഈൽ എന്ന ക്രമത്തിൽ — അവരുടെ ആദ്യാക്ഷരങ്ങൾ ജ ا م ع ചേർന്ന് അല്ലാഹുവിന്റെ \"ജാമിഅ്\" എന്ന വിശേഷണമാകുന്നു. ഇത് പൊതുവെയുള്ള രീതിയാണ്.",
+    note_en: "In the order Cebrâil · İsrâfil · Mikâil · Azrâil — their initials ج ا م ع spelling God's attribute Jâmi', the one who gathers what He wills, when and where He wills. This is the general tendency." },
+
+  { id: "one",       ml: "നാല് വശത്തും ഒരേ മലക്ക് — കാര്യത്തിന് യോജിച്ചത്", en: "One archangel, the one the work belongs to, on all four sides",
+    page: 188, angels: true, four: false, besmele: false, verse: false, ring: false,
+    note_ml: "\"ഈ മലക്കുകളിൽ ഒരാളുടെ പേര് മാത്രം, ചെയ്യുന്ന കാര്യത്തോട് ബന്ധപ്പെട്ടത് തിരഞ്ഞെടുത്ത്, നാല് വശത്തും അവന്റെ പേര് എഴുതാം.\" ഏത് കാര്യം ഏത് മലക്കിന്റേതാണെന്ന് കിതാബ് പേ.188-ൽ പറയുന്നു — താഴെ കാണുക.",
+    note_en: "\"Only one of these angels' names, the one related to the work in hand, may be chosen and written on all four sides.\" Which work belongs to which angel the book sets out on p.188 — shown below." },
+
+  { id: "besmele",   ml: "പുറംവരകൾ ബിസ്മി നാലായി",                 en: "The outer lines made of the besmele, split four ways",
+    page: 190, angels: false, four: false, besmele: true, verse: false, ring: false,
+    note_ml: "ചതുരക്കളത്തിന്റെ പുറംവരകൾ \"ബിസ്മില്ലാഹിർറഹ്മാനിർറഹീം\" നാലായി പിരിച്ച് — ബിസ്മ് · ഇല്ലാഹി · അർറഹ്മാൻ · അർറഹീം — ഉണ്ടാക്കുന്നു. \"ചില വഫ്ഖുകൾ ഈ രൂപത്തിൽ മാത്രമാണ്; ചുറ്റ് വേറൊന്നും എഴുതില്ല.\"",
+    note_en: "The square's outer lines are made from \"Bismillâhirrahmânirrahîm\" divided in four — Bism · illâhi · errahmân · errahîm. \"Some vefks are made only in this way: nothing else is written around them.\"" },
+
+  { id: "besmelefour", ml: "പുറംവരകൾ ബിസ്മി + നാല് വശത്ത് മലക്കുകൾ", en: "Besmele outer lines with the angels on the four edges",
+    page: 191, angels: true, four: true, besmele: true, verse: false, ring: false,
+    note_ml: "\"ചിലതിൽ, ഇവിടെയുള്ളതുപോലെ, വശവരകൾ ബിസ്മിയാൽ ഉണ്ടാകുന്നു, നാല് വശത്ത് മലക്കുകളുടെ പേരുകളും എഴുതുന്നു.\"",
+    note_en: "\"In some, as here, the side lines are formed of the besmele and the angels' names are written on the four edges.\"" },
+
+  { id: "corners",   ml: "നാല് മൂലയിൽ ആയത്ത് നാലായി",              en: "A short ayah divided across the four corners",
+    page: 191, angels: true, four: true, besmele: false, verse: true, ring: false,
+    note_ml: "\"വഫ്ഖുകളുടെ മൂലകളിൽ ചില ആയത്തുകൾ എഴുതുന്ന പതിവുണ്ട്. ഇതിന് സാധാരണ قوله الحق وله الملك എന്ന ആയത്താണ് തിരഞ്ഞെടുക്കുന്നത്.\" കാര്യത്തിന് യോജിച്ച ചെറിയ ആയത്ത് നാലായി പിരിച്ച് ഓരോ മൂലയിലും ഒരു ഭാഗം.",
+    note_en: "\"There is a tradition of writing certain ayahs at a vefk's corners; for this, قوله الحق وله الملك is generally chosen.\" A short ayah suited to the work, divided in four, a piece to each corner." },
+
+  { id: "circle",    ml: "ബിസ്മി വൃത്തമാക്കി, ഉള്ളിൽ കളം",          en: "The besmele written as a circle, the square set inside it",
+    page: 191, angels: true, four: true, besmele: false, verse: false, ring: true,
+    note_ml: "\"ബിസ്മിയെ വൃത്തരൂപത്തിൽ എഴുതി വഫ്ഖിനെ അതിന്റെ ഉള്ളിൽ ഇരുത്തുന്ന പ്രയോഗങ്ങളും ഉണ്ട്.\" വൃത്തത്തിൽ എഴുതേണ്ടത് താഴെ സ്വയം മാറ്റാം.",
+    note_en: "\"There are also applications that write the besmele in the shape of a circle and seat the vefk inside it.\" What goes round the circle can be changed below." },
+
+  { id: "verseline", ml: "പുറംവരകൾ ആയത്ത് കൊണ്ട് — ബിസ്മിക്ക് പകരം", en: "The ayah as the outer lines, in the besmele's place",
+    page: 192, angels: false, four: false, besmele: false, verse: false, ring: false, verseAsLine: true,
+    note_ml: "\"അതേ ആയത്തിനെ ബിസ്മിക്ക് പകരം വഫ്ഖിന്റെ വശവരയായി ഉപയോഗിക്കുന്ന ഒരു ഉദാഹരണം.\" ബിസ്മിയെപ്പോലെ ആയത്തും നാലായി പിരിഞ്ഞ് നാല് പുറംവരകളാകുന്നു.",
+    note_en: "\"An example using that same ayah as the vefk's edge line, in the besmele's place.\" The ayah is split four ways and makes the four outer lines, just as the besmele does." },
+
+  { id: "all",       ml: "എല്ലാം ചേർന്നത് — ബിസ്മി, മലക്കുകൾ, മൂലയിൽ ആയത്ത്", en: "Everything together — besmele, angels and the corner ayah",
+    page: 192, angels: true, four: true, besmele: true, verse: true, ring: false,
+    note_ml: "കിതാബിന്റെ അവസാന ഉദാഹരണം — \"ഈ ആയത്ത് മൂലകളിൽ ഉപയോഗിച്ച്, ഇവിടെ പറഞ്ഞതെല്ലാം എഴുതിയ അവസാന ഉദാഹരണം.\"",
+    note_en: "The book's last example — \"the final example, with that ayah at the corners and everything described here written in.\"" },
 ];
+
+/**
+ * The book's warning against reading these as stages (p. 193):
+ * every one of the forms above is a real form used in its own right.
+ * They are not pieces of one vefk shown step by step.
+ */
+export const SURROUND_NOT_STAGES = {
+  tr: "Yukarda görülen örneklerin hepsi de ayrı ayrı gerçek şekiller olarak kullanılmaktadırlar. Yani burada bir vefkin yapım aşamasına örnek olarak parça parça göstermek için verilmiş değildirler.",
+  ml: "മേൽ കണ്ട ഉദാഹരണങ്ങളെല്ലാം വേറെ വേറെ യഥാർത്ഥ രൂപങ്ങളായി ഉപയോഗിക്കുന്നവയാണ്. ഒരു വഫ്ഖിന്റെ നിർമ്മാണഘട്ടങ്ങൾ ഭാഗം ഭാഗമായി കാണിക്കാൻ തന്നതല്ല. അതിനാൽ ഒന്ന് തിരഞ്ഞെടുക്കുക — എല്ലാം കൂടി ചെയ്യേണ്ടതില്ല.",
+  en: "Every one of the forms above is used as a real form in its own right. They are not given as the stages of making one vefk, shown piece by piece. So one is chosen — they are not all to be done together.",
+  page: 193,
+};
+
+/** The corner ayah: the usual one, and the book's leave to choose another (p. 193). */
+export const CORNER_VERSE_RULE = {
+  ml: "മൂലകളിൽ സാധാരണ മേൽപറഞ്ഞ ആയത്താണ് ഉപയോഗിക്കുന്നതെങ്കിലും, ചെയ്യാനുള്ള കാര്യത്തിനനുസരിച്ച് തിരഞ്ഞെടുക്കുന്ന ഏത് ആയത്തും ഉപയോഗിക്കാം.",
+  en: "Though the ayah given above is generally used at the corners, any ayah chosen according to the work in hand may be used.",
+  page: 193,
+};
+
+/** The besmele whole, for the ring that is written round the outside (p.191). */
+export const BASMALA_FULL = "بسم الله الرحمن الرحيم";
+
+/** The book's own closing word on the whole chapter (p.187). */
+export const SURROUND_RULE = {
+  tr: "Özet olarak veklerin çevre yazıları da vefkin amacına ve yapan kişinin görüşüne göre değişir.",
+  ml: "ചുരുക്കത്തിൽ, വഫ്ഖിന്റെ ചുറ്റ് എഴുതുന്നതും വഫ്ഖിന്റെ ഉദ്ദേശ്യത്തിനും ചെയ്യുന്നവന്റെ അഭിപ്രായത്തിനും അനുസരിച്ച് മാറുന്നു.",
+  en: "In short, what is written round a vefk changes with the vefk's purpose and with the view of the one making it.",
+  page: 187,
+};
 
 // ═══════════════════════════════════════════════════════════════
 // How the writing is laid out around the square.

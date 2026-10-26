@@ -32,10 +32,14 @@ export default function WafqSheet({
   size = 430,                 // the square's side, in viewBox units
   angel = "jibril",           // which archangel this working belongs to
   fourAngels = true,          // all four, in the ج ا م ع order, or just one
+  angels = true,              // false leaves the four sides bare — the book's
+                              // first way, "çevresi tamamen boş" (p. 189)
   weekday = 0,                // the day the work is written: 0 Sunday … 6 Saturday
                               // its ruling planet gives the angel and the jinn,
                               // never the hour's — the day is what holds authority
   besmele = true,
+  lineText = "",              // an ayah used as the four outer lines in the
+                              // besmele's place (p. 192); ignored when besmele
   verse = CORNER_VERSE,
   showSeals = true,
   ringAround = "",          // the reader's own text, carried round the outside
@@ -113,7 +117,7 @@ export default function WafqSheet({
   }
 
   // ── the four sides ──
-  const sides = [0, 90, 180, 270].map((deg) => {
+  const sides = !angels ? null : [0, 90, 180, 270].map((deg) => {
     const an = fourAngels
       ? ARCHANGELS.find((x) => sideOf[x.side] === deg)
       : pick;
@@ -128,10 +132,16 @@ export default function WafqSheet({
     );
   });
 
-  // ── the besmele (or the four-part verse) making the four sides ──
-  const around = besmele
-    ? BASMALA_FOUR.map((w, i) => (
-        <g key={w} transform={`rotate(${BASMALA_SIDE[i]} ${C} ${C})`}>
+  // ── the besmele making the four sides, or, in its place, the ayah ──
+  //
+  // p.192: "an example using that same ayah as the vefk's edge line,
+  // in the besmele's place" — so the four outer lines are either the
+  // besmele split four ways or the ayah split the same way.
+  const lineWords = lineText ? splitFour(lineText) : null;
+  const sideWords = besmele ? BASMALA_FOUR : lineWords;
+  const around = sideWords
+    ? sideWords.map((w, i) => (
+        <g key={`${i}-${w}`} transform={`rotate(${BASMALA_SIDE[i]} ${C} ${C})`}>
           <text x={C} y={a + 1} className="wf-bes"
                 data-word={w} data-target={span} data-how="split">{w}</text>
         </g>
