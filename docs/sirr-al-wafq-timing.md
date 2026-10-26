@@ -122,6 +122,34 @@ and a converse is not a sentence in the book.
   there are Mars and Saturn, over and over. **The book states each
   work's hour directly, so nothing needs to be derived.** Use the table;
   do not build the rule.
+- **A friendship/enmity table between the planets**, searched again in
+  the Arabic: `صداقة` 0, `أصدقاء` 0, `المصادقة` 0, `المعاداة` 0.
+  `عداوة` appears 23 times and every one of them is enmity as a *work*
+  between people ("this manzil suits works of enmity and estrangement"),
+  not a relation between two planets. There is no such table.
+
+  **What the books do instead — Kashf p. 127**, from Shaykh Zâhir ibn
+  Muhammad ibn Sa'îd al-Ismâ'îlî, on the manazil, their days and their
+  works. Each manzil carries a **face** (وجه — the planet of that
+  decan) and a **nature** (sa'd, or which kind of nahs), and the work
+  follows from those:
+
+  > الثريا — سعد، وجه الزهرة → for love and joining two
+  > الدبران — نحس أحمر، وجه عطارد → for destruction
+  > الهقعة — وجه القمر، فيكون نحس → for secrecy and enmity
+  > الهنعة — نحس مختلط → for good, and for whatever you want
+  > الذراع — وجه زحل، فإنه سعد → work in it what is good
+
+  Note what this overturns: **the Moon's own face is nahs, and
+  Saturn's face is sa'd.** A planet is not good or bad in itself here,
+  and a rule built on planetary enmity would have got both of those
+  backwards. The nahs hour is found through the Moon's manzil, its
+  face and its nature — not by reckoning one planet against another.
+
+  This is already held as `MANSION_WORK` in `kashfSaatData.js`: all 28
+  have their `nature`, **21 of 28 have their `face`**. The seven
+  missing faces are the gap to close, and they are on p. 127 onward.
+
 - **The day-and-hour table for the other six planets.** Hâvâss pp. 40-42
   works it through for Venus only and leaves the combining to the
   reader. Not filled in — filling it in would make it ours.
