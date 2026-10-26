@@ -132,13 +132,20 @@ export default function PurposePanel({ ml = true }) {
             {p.harm ? "⚠ " : ""}{isEn ? p.en : p.ml}
           </button>
         ))}
-        {list.length === 0 && (
+        {list.length === 0 && times.length === 0 && (
           <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.5)" }}>
             {txt("കിതാബ് ഈ പേരിൽ ഒരു കർമ്മവും പറയുന്നില്ല. വേറൊരു വാക്കിൽ നോക്കുക.",
                  "The book names no work under that word. Try another.")}
           </p>
         )}
       </div>
+
+      {list.length === 0 && times.length > 0 && (
+        <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>
+          {txt("ഈ കർമ്മത്തിന് ദിവസവും സാഅത്തും കിതാബ് പറയുന്നുണ്ട്; മൻസിലുകളുടെ ഖണ്ഡികകളിൽ ഈ പേരിൽ ഒന്നും വരുന്നില്ല.",
+               "The book names a day and an hour for this work; the manzil chapters name nothing under that word.")}
+        </p>
+      )}
 
       {sel && <Selected p={sel} now={now} isEn={isEn} txt={txt} />}
     </div>

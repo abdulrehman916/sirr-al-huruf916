@@ -20,6 +20,7 @@ import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/li
 import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
+import PurposePanel from "@/components/wafq/PurposePanel";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS } from "@/lib/wafqSurround";
@@ -576,10 +577,12 @@ export default function SirrWafqPage() {
         {/* 3 */}
         <Box step="3" title={txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
           <div className="flex gap-1.5">
-            {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")]].map(([k, l]) => (
+            {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>
             ))}
           </div>
+
+          {tab === "purpose" && <PurposePanel ml={!isEn} />}
 
           {tab === "act" && (
             <>
