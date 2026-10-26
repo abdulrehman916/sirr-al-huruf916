@@ -219,3 +219,32 @@ export function workTimesMatching({ weekday = null, hourPlanet = null } = {}) {
     hourMatch: hourPlanet != null && w.hour === hourPlanet,
   }));
 }
+
+/**
+ * One search across both of the book's purpose vocabularies: the
+ * works the manzil chapters name, and the works pp. 12-13 give a day
+ * and an hour for. Typing matches the text in any of the three
+ * languages; nothing is guessed at beyond what the book names.
+ */
+export function searchAll(query) {
+  // Malayalam words change their tail as they take case endings —
+  // സമ്പത്ത് becomes സമ്പത്തും — and Arabic takes ال and prefixes. So
+  // both sides are stripped of vowel signs and the article before
+  // matching, or a reader searching the plain word finds nothing.
+  const strip = (s) => (s || "")
+    .toLowerCase()
+    .replace(/[\u0D3E-\u0D4D\u0D57\u0D62\u0D63]/g, "")
+    .replace(/[\u064B-\u0652\u0640]/g, "")
+    .replace(/\u0627\u0644/g, "");
+  const q = strip(query).trim();
+  if (q.length < 2) return { purposes: [], times: [] };
+  const hit = (s) => strip(s).includes(q);
+  return {
+    purposes: Object.entries(PURPOSES)
+      .filter(([, p]) => hit(p.ar) || hit(p.ml) || hit(p.en))
+      .map(([id, p]) => ({ id, ...p, ...manzilsFor(id) })),
+    times: WORK_TIMES
+      .map((w, i) => ({ ...w, i }))
+      .filter((w) => hit(w.ar) || hit(w.ml) || hit(w.en)),
+  };
+}

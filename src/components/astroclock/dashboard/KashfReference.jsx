@@ -12,6 +12,7 @@ import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { calculateMoonPosition } from "@/lib/astroClockMoonPosition";
 import * as K from "@/lib/kashfSaatData";
 import * as O from "@/lib/kashfOtherSources";
+import * as PUR from "@/lib/kashfPurposes";
 import { useBackLayer } from "@/lib/useBackLayer";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { moonSpan, nextLunarDays, nextWeekdayHour, nextPlanetHourIn, fmtSpan, fmtWhen, fmtDate } from "@/lib/kashfNextTimes";
@@ -97,6 +98,59 @@ function When({ label, span, isEn, color = "#93C5FD", loc }) {
   return <P color={color}>⏱ {label ? <b>{label}: </b> : null}{txt}</P>;
 }
 const pName = (k, isEn) => (isEn ? K.PLANETS[k].tr_en : K.PLANETS[k].tr_ml);
+
+/**
+ * The works this manzil's own chapter names — Kashf pp. 114-136.
+ * These are the book's wider purpose list, far past the ten the hour
+ * tables grade, and they live on the manzil's card so nothing has to
+ * be looked up twice.
+ */
+function ManzilWorks({ n, isEn }) {
+  const p = PUR.MANZIL_PURPOSES[n];
+  if (!p) return null;
+  const name = (id) => {
+    const x = PUR.PURPOSES[id];
+    return x ? `${x.harm ? "⚠ " : ""}${isEn ? x.en : x.ml}` : id;
+  };
+  return (
+    <>
+      <P color="rgba(255,255,255,0.55)">
+        📖 {isEn ? "This manzil's own chapter" : "ഈ മൻസിലിന്റെ ഖണ്ഡിക"} (
+        {isEn ? "Kashf pp." : "കശ്ഫ് പേ."}{PUR.PURPOSE_SOURCE.pages}):
+      </P>
+      {p.good.length > 0 && (
+        <P color="#4ADE80">✓ {p.good.map(name).join(" · ")}</P>
+      )}
+      {p.avoid.length > 0 && (
+        <P color="#F87171">✕ {p.avoid.map(name).join(" · ")}</P>
+      )}
+    </>
+  );
+}
+
+/**
+ * The works Kashf pp. 12-13 assigns to this day, each with the hour
+ * it names. The table gives a planet's hour on a planet's day, so a
+ * day's card is where the day half of it belongs.
+ */
+function DayWorks({ wd, isEn }) {
+  const rows = PUR.WORK_TIMES.filter((w) => w.day === wd);
+  if (!rows.length) return null;
+  return (
+    <>
+      <P color="rgba(255,255,255,0.55)">
+        🕰 {isEn ? "Works the book sets on this day" : "ഈ ദിവസത്തേക്ക് കിതാബ് വെക്കുന്ന കർമ്മങ്ങൾ"} (
+        {isEn ? "Kashf pp." : "കശ്ഫ് പേ."}{PUR.WORK_TIMES_SOURCE.page}):
+      </P>
+      {rows.map((w, k) => (
+        <P key={k} color={w.harm ? "#FCA5A5" : "rgba(255,255,255,0.8)"}>
+          {isEn ? w.en : w.ml} — <b>{isEn ? K.PLANETS[w.hour].tr_en : K.PLANETS[w.hour].tr_ml}</b>{" "}
+          <Ar>{K.PLANETS[w.hour].ar}</Ar> {isEn ? "hour" : "സാഅത്ത്"}
+        </P>
+      ))}
+    </>
+  );
+}
 
 function MansionNext({ n, isEn, customDate }) {
   const loc = getUserLocation();
@@ -296,6 +350,7 @@ export function QamarSection() {
                 <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? en.travel : m.travel_ml}{K.TRAVEL_GOOD_MANSIONS.includes(n) ? (isEn ? " · Dhu al-Ghabra: good for travel" : " · ദുൽ-ഗബ്റ: യാത്രയ്ക്ക് നല്ലത്") : ""}</P>
                 {K.MARRIAGE_GOOD_MANSIONS.includes(n) && <P color="#4ADE80">💍 {isEn ? "Dhu al-Ghabra: good for nikah" : "ദുൽ-ഗബ്റ: നിക്കാഹിന് നല്ലത്"}</P>}
                 {(isEn ? en.note : m.note_ml) && <P color="rgba(255,255,255,0.5)">{isEn ? en.note : m.note_ml}</P>}
+                <ManzilWorks n={n} isEn={isEn} />
                 <MansionNext n={n} isEn={isEn} customDate={customDate} />
                 <Others isEn={isEn} items={[mansionOther(n)]} />
                 <P color="rgba(255,255,255,0.4)">{(n - 1) * (360 / 28) | 0}° – {(n * (360 / 28)) | 0}°</P>
@@ -503,6 +558,7 @@ export function AyyamSection() {
                 <P>🤲 {isEn ? "Ijaba hour" : "ഇജാബത്തിന്റെ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.IJABA_HOUR[i]} · 🏆 {isEn ? "Mughalaba hour" : "മുഗാലബ സാഅത്ത്"}: {isEn ? "day-hour" : "പകലിലെ"} {K.MUGHALABA_HOUR[i]}</P>
                 {K.MASTERS_HOURS.days.includes(i) && <P>⭐ {isEn ? "Day-hours 1 and 8 are excellent" : "പകലിലെ 1, 8 സാഅത്തുകൾ ശ്രേഷ്ഠം"}</P>}
                 <DaySaad wd={i} isEn={isEn} />
+                <DayWorks wd={i} isEn={isEn} />
                 <WeekNext wd={i} isEn={isEn} customDate={customDate} />
                 <Others isEn={isEn} items={[O.WEEKDAY_OTHER[i]]} />
               </Row>
