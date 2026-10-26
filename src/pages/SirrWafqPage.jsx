@@ -41,6 +41,12 @@ const SIDE_ANGELS = [
   { pos: "left", ar: "اسرافيل", ml: "ഇടത്ത്", en: "Left" },
 ];
 
+/** A line under a step's title saying, plainly, what to do here. */
+const Intro = ({ children }) => (
+  <p className="font-inter text-[11px] leading-relaxed"
+     style={{ color: "rgba(245,234,212,0.72)" }}>{children}</p>
+);
+
 function Box({ step, title, children, tone, id }) {
   const border = tone === "ok" ? "rgba(74,222,128,0.35)" : tone === "warn" ? "rgba(248,113,113,0.45)" : "rgba(212,175,55,0.22)";
   return (
@@ -500,10 +506,31 @@ export default function SirrWafqPage() {
           <Note color="rgba(255,255,255,0.5)">{txt(
             "(1) വാചകമോ പേരോ → (2) കള്ളി → (3) ഉദ്ദേശ്യവും സമയവും → (4) ഉണ്ടാക്കുക → (5) ക്രമത്തിൽ എഴുതുക → (6) ഡൗൺലോഡ്.",
             "(1) text or name → (2) square → (3) purpose and time → (4) build → (5) write in order → (6) download.")}</Note>
+          <div className="rounded-xl p-3.5 space-y-2"
+               style={{ background: "rgba(74,222,128,0.06)", border: "1px solid rgba(74,222,128,0.3)" }}>
+            <p className="font-inter text-[11px] font-bold tracking-[0.14em] uppercase" style={{ color: "#4ADE80" }}>
+              {txt("ഒരു വാക്ക്", "A word first")}
+            </p>
+            <p className="font-inter text-[12px] leading-relaxed" style={{ color: "rgba(245,234,212,0.9)" }}>
+              {txt("ഈ കർമ്മങ്ങൾ ആരെയും ഉപദ്രവിക്കാൻ ഉപയോഗിക്കരുത്. ഉപദ്രവത്തിന് ഉപയോഗിച്ചാൽ ആദ്യം മലിനമാകുന്നത് സ്വന്തം നഫ്സാണ്; പിന്നെ ആ ജീവിതത്തിൽ ഒരു ഉയർച്ചയും ഉണ്ടാകില്ല.",
+                   "Do not use these workings to harm anyone. Used for harm, the first thing defiled is your own nafs; and after that no rise comes in that life.")}
+            </p>
+            <p className="font-inter text-[12px] leading-relaxed" style={{ color: "rgba(245,234,212,0.9)" }}>
+              {txt("ഈ സംരംഭം തുടങ്ങിയത് സത്യത്തിന് വേണ്ടി മാത്രമാണ്, സത്യത്തെ നിലനിർത്താൻ മാത്രം. നിങ്ങൾ സത്യം കണ്ടെത്തുക. അതിന്റെ പ്രതിഫലം നിങ്ങൾക്കും നിങ്ങളുടെ കുടുംബത്തിനും, ഇതിനായി അധ്വാനിച്ച എനിക്കും ലഭിക്കട്ടെ.",
+                   "This work was begun for the truth alone, and to keep the truth standing. Find the truth. May its reward reach you, and your family, and the one who laboured over this.")}
+            </p>
+          </div>
+
+          <div className="rounded-xl p-3" style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.25)" }}>
+            <Intro>{txt(
+              "ആദ്യമായി വരുന്നെങ്കിൽ ഇത്രമാത്രം: മനസ്സിൽ ഒരു ഉദ്ദേശ്യമുണ്ടെങ്കിൽ അത് അറബിയിൽ താഴെ എഴുതുക — ഒരു ആയത്ത്, സൂറത്ത്, ഇസ്മ്, അല്ലെങ്കിൽ ആളുടെ പേരും ഉമ്മയുടെ പേരും. അതിന്റെ അബ്ജദ് തുകയിൽ നിന്ന് കള്ളി താനേ ഉണ്ടാകും. ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ല, പക്ഷേ നേരത്തെ കൂട്ടിവെച്ച ഒരു സംഖ്യയുണ്ട് എന്നാണെങ്കിൽ ആ സംഖ്യ മാത്രം കൊടുത്താലും മതി — അതിന് ചേരുന്ന കള്ളികൾ കിട്ടും. ബാക്കി ഓരോ പടിയും എന്താണ് ചെയ്യേണ്ടതെന്ന് അതാത് തലക്കെട്ടിന് താഴെ പറയുന്നുണ്ട്.",
+              "If this is your first time, this much is enough: if you have a purpose in mind, write it below in Arabic — an ayah, a surah, a name of God, or a person\'s name with the mother\'s. The square builds itself from its abjad total. If the purpose is not settled but you already have a total worked out, enter that number alone and you will get the squares that fit it. What to do at each step after that is written under its own heading.")}</Intro>
+          </div>
         </Box>
 
         {/* 1 */}
         <Box step="1" title={txt("വാചകം അല്ലെങ്കിൽ പേര്", "Text or name")}>
+          <Intro>{txt("മനസ്സിൽ ഒരു ഉദ്ദേശ്യമുണ്ടെങ്കിൽ അത് അറബിയിൽ ഇവിടെ എഴുതുക — ഒരു ആയത്തോ സൂറത്തോ ഇസ്മോ, അല്ലെങ്കിൽ ആളുടെ പേരും ഉമ്മയുടെ പേരും. അതിന്റെ അബ്ജദ് തുകയിൽ നിന്നാണ് കള്ളി ഉണ്ടാകുന്നത്. ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ലെങ്കിൽ, നേരത്തെ കൂട്ടിവെച്ച ഒരു സംഖ്യ ഉണ്ടെങ്കിൽ അത് നേരിട്ട് കൊടുത്താലും മതി — ആ സംഖ്യയ്ക്ക് ചേരുന്ന കള്ളികൾ കിട്ടും.", "If you have a purpose in mind, write it here in Arabic — an ayah, a surah, a name of God, or a person\'s name with the mother\'s. The square is built from its abjad total. If the purpose is not settled, a total you have already worked out can be entered on its own, and you will get the squares that fit that number.")}</Intro>
           <div className="flex gap-1.5">
             {[["text", txt("ആയത്ത് / സൂറത്ത് / വാചകം", "Ayah / surah / text")], ["name", txt("പേര്", "Name")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setMode(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(mode === k)}>{l}</button>
@@ -547,6 +574,7 @@ export default function SirrWafqPage() {
 
         {/* 2 */}
         <Box step="2" title={txt("കള്ളി തിരഞ്ഞെടുക്കുക", "Choose the square")}>
+          <Intro>{txt("എത്ര വശമുള്ള കള്ളി വേണമെന്ന് തിരഞ്ഞെടുക്കുക. ✓ ഉള്ളവയാണ് നിങ്ങളുടെ തുകയ്ക്ക് ചെയ്യാൻ പറ്റുന്നത്; ✗ ഉള്ളവയ്ക്ക് തുക ഒത്തുവരില്ല. ഓരോ വലുപ്പത്തിനും കിതാബിൽ വെവ്വേറെ രീതികളുണ്ട്.", "Choose how many houses a side. The ones marked ✓ can be made from your total; the ✗ ones will not come out. Each size has its own methods in the book.")}</Intro>
           <div className="flex flex-wrap gap-1.5">
             {SIZES.map((s) => {
               const ok = good.includes(s);
@@ -577,6 +605,7 @@ export default function SirrWafqPage() {
 
         {/* 3 */}
         <Box step="3" title={txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
+          <Intro>{txt("കള്ളി എപ്പോൾ എഴുതണമെന്ന് ഇവിടെ നോക്കാം. ആദ്യ ടാബിൽ ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന വിഷയങ്ങൾ; രണ്ടാമത്തേതിൽ കിതാബിന്റെ മൻസിൽ പട്ടിക; മൂന്നാമത്തേതിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം — സമ്പത്ത്, ജിന്ന്, യാത്ര എന്നിങ്ങനെ — മലയാളത്തിലോ അറബിയിലോ എഴുതി കിതാബ് അതിനെ ഏത് മൻസിലിലും ദിവസത്തിലും സാഅത്തിലും വെക്കുന്നു എന്ന് കാണാം.", "Here is when to write the square. The first tab holds the subjects the Astro Clock grades with a percentage; the second, the book\'s manzil table; the third lets you type your own purpose — provision, jinn, travel — in Malayalam or Arabic, and shows which manzil, day and hour the book places it in.")}</Intro>
           <div className="flex gap-1.5">
             {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>
@@ -639,6 +668,7 @@ export default function SirrWafqPage() {
 
         {/* 4 */}
         <Box step="4" title={txt("കള്ളി ഉണ്ടാക്കുക", "Build the wafq")}>
+          <Intro>{txt("കിതാബിലെ ഓരോ രീതിയും ഇവിടെയുണ്ട്. ഒരു രീതിയുടെ പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഏത് കിതാബിലെ ഏത് പേജ്, ഉണ്ടാക്കിയ കള്ളി, വരിയുടെയും നിരയുടെയും കോണിന്റെയും തുക ഒത്തുവന്നോ എന്ന പരിശോധന — എല്ലാം കാണാം.", "Every method in the books is here. Press a method\'s name to see its rules, which book and page they come from, the square it builds, and the check that every row, column and diagonal comes out at the total.")}</Intro>
           <div className="flex flex-wrap items-center gap-3 font-inter text-[10px]">
             {n <= 4 && (
               <div className="flex flex-wrap items-center gap-1">
@@ -728,6 +758,7 @@ export default function SirrWafqPage() {
 
             {/* 5 writing */}
             <Box step="5" title={txt("എഴുതേണ്ട രൂപവും ക്രമവും", "How and in what order to write it")}>
+          <Intro>{txt("ഇനി എഴുത്താണ്. ഏത് വീട്ടിൽ ഏത് സംഖ്യ ആദ്യം എന്ന ക്രമം, കള്ളിക്ക് ചുറ്റും ബിസ്മിയും മലക്കുകളുടെ പേരുകളും മൂലയിലെ ആയത്തും, ഈ കള്ളിയുടെ ഹാദിമുകൾ — എല്ലാം താഴെ.", "Now the writing. The order in which the houses are filled, the besmele and the angels\' names around the square with the verse across its corners, and this square\'s hâdims — all below.")}</Intro>
               {/* which angel the working belongs to — its name is what
                   goes on all four sides */}
               <div className="grid grid-cols-2 gap-2">
@@ -884,6 +915,7 @@ export default function SirrWafqPage() {
 
             {/* 9 download */}
             <Box step="8" title={txt("ഡൗൺലോഡും പ്രിൻ്റും", "Download and print")}>
+          <Intro>{txt("തീർന്ന കള്ളി ചിത്രമായി സൂക്ഷിക്കാം, പ്രിന്റ് എടുക്കാം.", "Save the finished square as an image, or print it.")}</Intro>
               <div className="flex flex-wrap gap-2">
                 <button type="button" onClick={downloadPng} className="flex-1 py-2.5 rounded-xl font-inter text-xs font-bold" style={btn(true)}>⬇ {txt("ചിത്രമായി (PNG)", "Image (PNG)")}</button>
                 <button type="button" onClick={printPdf} className="flex-1 py-2.5 rounded-xl font-inter text-xs font-bold" style={btn(true)}>🖨 {txt("PDF / പ്രിൻ്റ്", "PDF / print")}</button>
