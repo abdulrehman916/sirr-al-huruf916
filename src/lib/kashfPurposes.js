@@ -160,3 +160,62 @@ export function findPurposes(query) {
       p.ar.includes(q) || p.ml.includes(q) || p.en.toLowerCase().includes(q))
     .map(([id, p]) => ({ id, ...p }));
 }
+
+// ═══════════════════════════════════════════════════════════════
+// The work, its day and its hour — Kashf al-Haqa'iq pp. 12-13.
+//
+// Before the manzil chapters the book sets out a plain table: for
+// this work, that planet's hour on that planet's day. It is the one
+// place where day and hour are named together for a purpose, and it
+// reaches well past the ten the later tables grade — provision,
+// awe, binding the tongue, scattering a man from his place.
+//
+// Days are given by their planet in the book ("يوم القمر",
+// "يوم المريخ"), which is written out here as the weekday.
+// ═══════════════════════════════════════════════════════════════
+
+export const WORK_TIMES_SOURCE = { page: "12-13" };
+
+export const WORK_TIMES = [
+  { ar: "المحبة والقبول إلى شخص واحد", ml: "ഒരാളുടെ അടുത്ത് സ്നേഹവും സ്വീകാര്യതയും", en: "Love and acceptance toward one person", hour: "venus", day: 5 },
+  { ar: "المحبة والقبول لجميع الناس مع الإجلال والتعظيم", ml: "എല്ലാവരുടെയും അടുത്ത് സ്നേഹവും ബഹുമാനവും", en: "Love and acceptance among all people, with reverence", hour: "mercury", day: 4 },
+  { ar: "عطف بين اثنين ذكرين", ml: "രണ്ട് പുരുഷന്മാർക്കിടയിൽ ഇണക്കം", en: "Affection between two men", hour: "moon", day: 5 },
+  { ar: "العطف والمحبة بين المرأة وزوجها", ml: "ഭാര്യയ്ക്കും ഭർത്താവിനുമിടയിൽ ഇണക്കവും സ്നേഹവും", en: "Affection and love between a woman and her husband", hour: "venus", day: 4 },
+  { ar: "قضاء حاجة عند شخص ذي مقام وجاه وسلطان", ml: "സ്ഥാനവും അധികാരവുമുള്ള ഒരാളുടെ അടുത്ത് ആവശ്യം നിറവേറ്റൽ", en: "Getting a need met from someone of rank and authority", hour: "sun", day: 0 },
+  { ar: "الهيبة مع الخوف والرعب في قلوب الناس", ml: "ജനഹൃദയങ്ങളിൽ ഗാംഭീര്യവും ഭയവും", en: "Awe, with fear in people's hearts", hour: "sun", day: 2 },
+  { ar: "العطف والمحبة والقبول عند الأكابر وذوي الجاه والسلطان", ml: "വലിയവരുടെയും അധികാരികളുടെയും അടുത്ത് ഇണക്കവും സ്വീകാര്യതയും", en: "Affection and acceptance among the great and those in authority", hour: "venus", day: 0 },
+  { ar: "التهييج", ml: "⚠ ഇളക്കിവിടൽ", en: "⚠ Stirring up", hour: "mars", day: 5, harm: true },
+  { ar: "الفرقة والبغضة وتنفير العدو", ml: "⚠ വേർപിരിയൽ, വെറുപ്പ്, ശത്രുവിനെ അകറ്റൽ", en: "⚠ Separation, hatred, driving off an enemy", hour: "saturn", day: 2, harm: true },
+  { ar: "الحريق", ml: "⚠ തീ", en: "⚠ Burning", hour: "mars", day: 2, harm: true },
+  { ar: "تسليط الدم على الإنسان أو الصمم أو عقد اللسان", ml: "⚠ ഒരാളുടെ മേൽ രക്തം, ബധിരത, അല്ലെങ്കിൽ നാവ് കെട്ടൽ", en: "⚠ Setting blood upon a person, deafness, or binding the tongue", hour: "mars", day: 4, harm: true },
+  { ar: "كف الأذى", ml: "ഉപദ്രവം തടയൽ", en: "Warding off harm", hour: "saturn", day: 5 },
+  { ar: "العقد الذي لا يحل أبدا", ml: "⚠ ഒരിക്കലും അഴിയാത്ത കെട്ട്", en: "⚠ The binding that is never loosed", hour: "saturn", day: 3, harm: true },
+  { ar: "إيقاع الحرب والفتنة والخصومة بين الناس", ml: "⚠ ജനങ്ങൾക്കിടയിൽ യുദ്ധവും കുഴപ്പവും തർക്കവും", en: "⚠ Bringing war, strife and quarrel among people", hour: "mercury", day: 2, harm: true },
+  { ar: "جلب الرزق وتحصيل المعاش", ml: "ഉപജീവനവും സമ്പത്തും ലഭിക്കാൻ", en: "Drawing provision and securing a livelihood", hour: "jupiter", day: 1 },
+  { ar: "المحبة الشديدة لقلب المطلوب", ml: "ഉദ്ദേശിച്ചയാളുടെ ഹൃദയത്തിൽ ശക്തമായ സ്നേഹം", en: "Strong love in the heart of the one sought", hour: "venus", day: 2 },
+  { ar: "الرصد", ml: "റസ്വദ് — നിരീക്ഷണം", en: "The rasd (watch)", hour: "mars", day: 2 },
+  { ar: "العقد", ml: "കെട്ടൽ", en: "Binding", hour: "saturn", day: 1 },
+  { ar: "تشتيت الإنسان بحيث لا يكون له قرار بمكان واحد", ml: "⚠ ഒരാളെ ഒരിടത്തും ഉറയ്ക്കാത്തവിധം ചിതറിക്കൽ", en: "⚠ Scattering a person so he has no rest in one place", hour: "saturn", day: 3, harm: true },
+];
+
+/**
+ * The sheikhs' plain rule, for anyone who does not want to match the
+ * table: for works of good the fortunate hours suffice — the first
+ * and the eighth of Sunday, Monday, Thursday and Friday, or any hour
+ * whose planet is benefic, from any day or night. (p. 13)
+ */
+export const MASTERS_RULE = {
+  ar: "يكفي عندهم في الرصد لأعمال الخير مراعاة الساعات السعيدة وهي الأولى والثامنة من يوم الأحد والاثنين والخميس والجمعة، أو أي ساعة يكون كوكبها سعيد من أي يوم كان أو ليلة",
+  ml: "നല്ല കർമ്മങ്ങൾക്ക് സഅ്ദായ സാഅത്തുകൾ ശ്രദ്ധിച്ചാൽ മതിയെന്നാണ് വലിയ പണ്ഡിതന്മാരുടെ അഭിപ്രായം — ഞായർ, തിങ്കൾ, വ്യാഴം, വെള്ളി എന്നീ ദിവസങ്ങളിലെ ഒന്നാമത്തെയും എട്ടാമത്തെയും സാഅത്ത്, അല്ലെങ്കിൽ ഏത് പകലിലോ രാത്രിയിലോ ആയാലും ഗ്രഹം സഅ്ദായ ഏത് സാഅത്തും.",
+  en: "For works of good the great sheikhs hold it enough to observe the fortunate hours: the first and the eighth of Sunday, Monday, Thursday and Friday, or any hour whose planet is benefic, from any day or night.",
+  page: "13",
+};
+
+/** The work-times whose day or hour matches a given weekday / hour planet. */
+export function workTimesMatching({ weekday = null, hourPlanet = null } = {}) {
+  return WORK_TIMES.map((w) => ({
+    ...w,
+    dayMatch: weekday != null && w.day === weekday,
+    hourMatch: hourPlanet != null && w.hour === hourPlanet,
+  }));
+}
