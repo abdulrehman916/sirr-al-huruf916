@@ -129,7 +129,7 @@ const PILL = (on) => ({
 });
 
 function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorners,
-                        ring, setRing, ayah, setAyah, fromStep1, isEn, txt }) {
+                        ring, setRing, ayah, setAyah, fromStep1, recommended, isEn, txt }) {
   const Row = ({ id, children }) => (
     <button type="button" onClick={() => setAngelSel(id)} dir="rtl"
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-right" style={PILL(angelSel === id)}>
@@ -158,7 +158,9 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
       <div className="space-y-1.5">
         {ARCHANGELS.map((a) => (
           <Row key={a.id} id={a.id}>
-            <span className="font-amiri text-xl shrink-0" style={{ color: INK_C, minWidth: 84 }}>{a.ar}</span>
+            <span className="font-amiri text-xl shrink-0" style={{ color: recommended === a.ar ? "#4ADE80" : INK_C, minWidth: 84 }}>
+              {a.ar}{recommended === a.ar && <span className="text-sm"> ★</span>}
+            </span>
             <span className="flex-1 min-w-0">
               <span className="font-amiri text-lg block" style={{ color: a.harm ? "#FCA5A5" : "#86EFAC" }}>
                 {a.kashf_ar} <span className="text-sm" style={{ opacity: 0.75 }}>· {a.harm ? "شر" : "خير"}</span>
@@ -1022,6 +1024,7 @@ export default function SirrWafqPage() {
           <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
                         ayah={ayah} setAyah={setAyahEdit} fromStep1={!!step1Ayah && ayahEdit == null}
+                        recommended={needAngel ? needAngel.angel : null}
                         isEn={isEn} txt={txt} />
           {/* The seeker, the need and the matter sought are written once, in
               step 1, and carried down into the middle house from there. */}
