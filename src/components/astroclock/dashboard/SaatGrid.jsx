@@ -11,6 +11,7 @@ import { useAstroClockLanguage } from "@/lib/astroClockLanguageContext";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { subscribeLocation } from "@/lib/astroClockGeolocation";
 import { getPlanetaryDay, formatClock, timeSeverity } from "@/lib/kashfSaatEngine";
+import { eclipsesIn, ECLIPSE_SOURCE } from "@/lib/eclipses";
 import { useBackLayer } from "@/lib/useBackLayer";
 import { moonSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { SOURCES, PLANET_OTHER, MANSION_OTHER, WEEKDAY_OTHER, TAHA_NAHS_BURUJ, BURJ_OTHER_NOTE, tahaNahsFor } from "@/lib/kashfOtherSources";
@@ -121,11 +122,26 @@ function DayFlags({ day, isEn }) {
   return flags.map((f) => <Line key={f} color="#F87171">⛔ {f}</Line>);
 }
 
-function DaySummary({ day, isEn }) {
+// Al-Siraji: no engagement, contract or wedding on an eclipse day. The
+// day is the Kashf day, from the sunset before it to its own sunset.
+function EclipseFlag({ span, isEn }) {
+  const list = span ? eclipsesIn(span[0], span[1]) : [];
+  return list.map((e) => (
+    <Line key={e.at} color="#F87171">
+      ⛔ {e.type === "solar"
+        ? (isEn ? "Solar eclipse (كسوف الشمس) this day" : "ഇന്ന് സൂര്യഗ്രഹണം (كسوف الشمس)")
+        : (isEn ? "Lunar eclipse (خسوف القمر) this day" : "ഇന്ന് ചന്ദ്രഗ്രഹണം (خسوف القمر)")}
+      {" — "}{isEn ? `${ECLIPSE_SOURCE.scholar_en}: ${ECLIPSE_SOURCE.en}` : `${ECLIPSE_SOURCE.scholar_ml}: ${ECLIPSE_SOURCE.ml}`}
+    </Line>
+  ));
+}
+
+function DaySummary({ day, span, isEn }) {
   const w = day.wdInfo;
   return (
     <>
       <DayFlags day={day} isEn={isEn} />
+      <EclipseFlag span={span} isEn={isEn} />
       <Line>{isEn ? "Lunar day" : "ചാന്ദ്രദിവസം"} {day.lunarDay ?? "—"}{(() => { const n = isEn ? MONTH_DAY_NOTE_EN[day.lunarDay] : day.monthDay?.note_ml; return n ? ` — ${n}` : ""; })()}</Line>
       {(isEn ? w.note_en : w.note_ml) && <Line>• {isEn ? w.note_en : w.note_ml}</Line>}
       <Line>• {isEn ? "Direction to avoid travelling" : "യാത്ര ഒഴിവാക്കേണ്ട ദിശ"}: <b style={{ color: "#F87171" }}>{isEn ? w.avoidDir_en : w.avoidDir_ml}</b></Line>
@@ -360,7 +376,7 @@ export default function SaatGrid() {
         <p className="font-inter text-[10px] mb-1" style={{ color: "rgba(255,255,255,0.45)" }}>
           📍 {loc.name || `${loc.lat?.toFixed?.(2)}, ${loc.lng?.toFixed?.(2)}`} · ☀ {formatClock(data.sunrise, data.tz)} · 🌙 {formatClock(data.sunset, data.tz)}
         </p>
-        <DaySummary day={data.day} isEn={isEn} />
+        <DaySummary day={data.day} span={[data.prevSunset, data.sunset]} isEn={isEn} />
       </div>
 
       {/* Current hour — the main card */}

@@ -176,6 +176,8 @@ function hourScore(a, day, hour, why) {
   }
   const j = K.JAAD[day.weekday];
   if (j && (j.saad === hour.planet || j.baraka === hour.planet)) { s += 8; why.push(R("ശൈഖ് ജാഇദിന്റെ പട്ടികയിൽ സഅ്ദ്/ബറക്ക", "Sa'd / baraka in Sheikh Jaad's table")); }
+  // Al-Siraji: the contract is better by night. Reported, not scored.
+  if (a === "marriage" && hour.period === "night") why.push(R(K.SIRAJI_NIKAH_RULES.night.ml, K.SIRAJI_NIKAH_RULES.night.en, "siraji"));
   if (a === "needs" && hour.moon && K.MOON_SIGN_NEEDS_HOUR[hour.moon.sign] === hour.planet) { s += 10; why.push(R("ഖമറിന്റെ ബുർജിന് പറ്റിയ സാഅത്ത്", "Hour that matches the Qamar's burj")); }
   return clamp(s);
 }
@@ -190,6 +192,13 @@ function moonScore(a, hour, why) {
   if (a === "travel" && K.TRAVEL_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("യാത്രയ്ക്ക് നല്ല മൻസിൽ — ദുൽ-ഗബ്റ പ്രകാരം", "A good manzil for travel — according to Dhu al-Ghabra")); }
   if (a === "marriage" && K.MARRIAGE_GOOD_MANSIONS.includes(m.mansionNo)) { s = Math.max(s, 80); why.push(R("നിക്കാഹിന് നല്ല മൻസിൽ — ദുൽ-ഗബ്റ പ്രകാരം", "A good manzil for nikah — according to Dhu al-Ghabra")); }
   if (a === "marriage" && m.sign === 7) { s = Math.min(s, 10); why.push(R("ഖമർ അഖ്റബിൽ (വൃശ്ചികം): നിക്കാഹ് വേണ്ട", "Qamar in Aqrab (Scorpio): no nikah")); }
+  // Al-Siraji's verdict for the manzil — reported beside the others,
+  // never added to the score.
+  if (a === "marriage" && K.SIRAJI_NIKAH?.[m.mansionNo]) {
+    const sj = K.SIRAJI_NIKAH[m.mansionNo];
+    why.push(R(`സിറാജി: ${sj.ar} (${K.SIRAJI_KIND_LABEL[sj.kind].ml}) — ${sj.ml}`,
+               `Al-Siraji: ${sj.ar} (${K.SIRAJI_KIND_LABEL[sj.kind].en}) — ${sj.en}`, "siraji"));
+  }
   // Hâvâss I p.160 pairs a constructive work with the waxing Moon.
   // It is counted as a help here, never as a gate — holding every
   // good work back for half of each month is not what the day cards

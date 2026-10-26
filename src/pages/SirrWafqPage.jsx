@@ -29,7 +29,7 @@ import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING,
          SQUARE_PLANET_SOURCE } from "@/lib/wafqSquarePlanet";
 import HadimPanel from "@/components/wafq/HadimPanel";
-import WafqTiming from "@/components/wafq/WafqTiming";
+import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS, SURROUND_MODES, SURROUND_RULE, SURROUND_NOT_STAGES,
          CORNER_VERSE_RULE, CORNER_VERSE, BASMALA_FULL } from "@/lib/wafqSurround";
@@ -646,12 +646,14 @@ export default function SirrWafqPage() {
   // what marks out the square to use, since each square is dedicated to
   // a planet (Hâvâss pp.172-173). Null when the book names no planet for
   // what was chosen — nothing is guessed in that case.
-  const wantPlanet = useMemo(() => {
+  // The row of that table, for the timing panel under the square. The
+  // same text match as above; the reader can change the row there.
+  const wantWork = useMemo(() => {
     const q = (purpose?.ml || purpose?.en || act?.ml || act?.en || "").trim();
     if (q.length < 2) return null;
-    const hit = PUR.searchAll(q);
-    return hit?.times?.[0]?.hour || null;
+    return PUR.searchAll(q)?.times?.[0]?.i ?? null;
   }, [purpose, act]);
+  const wantPlanet = wantWork != null ? PUR.WORK_TIMES[wantWork].hour : null;
   const actTimes = useMemo(() => (actId ? bestTimesFor(actId, Date.now(), loc) : null), [actId]);
   const manzilTimes = useMemo(() => (purpose ? purposeTimes(purpose, Date.now(), loc) : []), [purposeId]);
 
@@ -1144,7 +1146,8 @@ export default function SirrWafqPage() {
                 {txt("കള്ളി ചിത്രമായി സൂക്ഷിക്കുക (PNG)", "Save the sheet as a PNG")}
               </button>
 
-              <WafqTiming angel={angel} weekday={dayWd} ml={!isEn} />
+              <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
+                               mansions={purpose?.mansions || null} ml={!isEn} />
 
               <div className="rounded-2xl p-3 space-y-2" style={card}>
                 <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>

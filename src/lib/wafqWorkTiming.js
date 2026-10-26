@@ -94,9 +94,11 @@ export const KAHIR_SUFFICIENT = ["day", "waning"];
  */
 export function kahirFit(at = {}) {
   const { weekday, hourIndex, isNight, waning, manzilEvil } = at;
-  // Tuesday, or the night that joins Wednesday to Thursday — which is
-  // the night belonging to Wednesday, the 3rd day.
-  const rightDay = weekday === 2 || (isNight && weekday === 3);
+  // Tuesday, or the night that joins Wednesday to Thursday. The night
+  // after sunset belongs to the next day, so that night is Thursday's
+  // (weekday 4) — the Saat engine hands its night hours the weekday of
+  // the day they lead into, and this follows it.
+  const rightDay = weekday === 2 || (isNight && weekday === 4);
   const rightHour = hourIndex === 1 || hourIndex === 8;
   const met = {
     day: !!(rightDay && rightHour),

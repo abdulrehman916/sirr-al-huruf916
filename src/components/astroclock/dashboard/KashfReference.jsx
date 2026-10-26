@@ -349,6 +349,23 @@ export function QamarSection() {
                 {m.avoid.length > 0 && <P color="#F87171">✕ {actList(m.avoid, isEn)}</P>}
                 <P>🧳 {isEn ? "Nabhani — travel" : "നബ്ഹാനി — യാത്ര"}: {isEn ? en.travel : m.travel_ml}{K.TRAVEL_GOOD_MANSIONS.includes(n) ? (isEn ? " · Dhu al-Ghabra: good for travel" : " · ദുൽ-ഗബ്റ: യാത്രയ്ക്ക് നല്ലത്") : ""}</P>
                 {K.MARRIAGE_GOOD_MANSIONS.includes(n) && <P color="#4ADE80">💍 {isEn ? "Dhu al-Ghabra: good for nikah" : "ദുൽ-ഗബ്റ: നിക്കാഹിന് നല്ലത്"}</P>}
+                {K.SIRAJI_NIKAH[n] && (() => {
+                  const sj = K.SIRAJI_NIKAH[n];
+                  const good = sj.kind === "best" || sj.kind === "good";
+                  const clash = K.MARRIAGE_GOOD_MANSIONS.includes(n) !== good;
+                  return (
+                    <>
+                      <P color={good ? "#4ADE80" : sj.kind === "sadaqa" ? "#FDE047" : "#F87171"}>
+                        💍 {isEn ? "Al-Siraji" : "സിറാജി"}: <Ar>{sj.ar}</Ar> ({isEn ? K.SIRAJI_KIND_LABEL[sj.kind].en : K.SIRAJI_KIND_LABEL[sj.kind].ml}) — {isEn ? sj.en : sj.ml}
+                      </P>
+                      {clash && (
+                        <P color="#FDBA74">
+                          ⚠ {isEn ? "Dhu al-Ghabra and al-Siraji disagree on this manzil for nikah." : "നിക്കാഹിന്റെ കാര്യത്തിൽ ഈ മൻസിലിൽ ദുൽ-ഗബ്റയും സിറാജിയും വിയോജിക്കുന്നു."}
+                        </P>
+                      )}
+                    </>
+                  );
+                })()}
                 {(isEn ? en.note : m.note_ml) && <P color="rgba(255,255,255,0.5)">{isEn ? en.note : m.note_ml}</P>}
                 <ManzilWorks n={n} isEn={isEn} />
                 <MansionNext n={n} isEn={isEn} customDate={customDate} />
@@ -357,7 +374,7 @@ export function QamarSection() {
               </Row>
             );
           })}
-          <Src>{isEn ? "nature: Kharusi · travel: Nabhani · works: Hermes" : "സ്വഭാവം: ഖറൂസി · യാത്ര: നബ്ഹാനി · പ്രവൃത്തികൾ: ഹെർമിസ്"}</Src>
+          <Src>{isEn ? "nature: Kharusi · travel: Nabhani · works: Hermes · nikah: Dhu al-Ghabra, al-Siraji" : "സ്വഭാവം: ഖറൂസി · യാത്ര: നബ്ഹാനി · പ്രവൃത്തികൾ: ഹെർമിസ് · നിക്കാഹ്: ദുൽ-ഗബ്റ, സിറാജി"}</Src>
         </div>
       )}
 

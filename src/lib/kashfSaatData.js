@@ -611,3 +611,65 @@ export const HAVASS_DAY_HOUR_GAP = {
   en: "The book gives no such table for the other six planets. It teaches the method and leaves the combining to the reader, so nothing is filled in for them here — filling it in would make it ours, not the book's. Each planet's nature and works are in the Kawakib table above; apply the rule above with those.",
   page: "40-42",
 };
+
+// ═══════════════════════════════════════════════════════════════
+// Al-Siraji (الباحث الفلكي عادل محمد علي السراجي), الاختيارات الفلكية
+// للخطبة او العقد او الزواج — his verdict on engagement, the contract
+// and the wedding with the Moon in each manzil, and what follows from
+// it. His 2025 calendar gives the same verdict for a manzil every time
+// it comes round, across all twelve months, so the verdict belongs to
+// the manzil, not to the date. Kept beside Dhu al-Ghabra's list, never
+// merged into it: where the two disagree, both are shown.
+//   kind: "best" | "good" | "sadaqa" (nahs lifted by giving sadaqa) | "nahs" | "severe"
+// ═══════════════════════════════════════════════════════════════
+export const SIRAJI_NIKAH = {
+  1:  { kind: "nahs",   ar: "نحسة",        ml: "ഭാര്യ ഭർത്താവിനു മുമ്പ് മരിക്കും, അല്ലെങ്കിൽ അവർക്കിടയിൽ ശർറ് കടക്കും", en: "the wife dies before the husband, or evil comes between them" },
+  2:  { kind: "nahs",   ar: "نحس",         ml: "ഭർത്താവ് ഭാര്യക്കു മുമ്പ് മരിക്കും, അല്ലെങ്കിൽ അവർക്കിടയിൽ ശർറ് കടക്കും", en: "the husband dies before the wife, or evil comes between them" },
+  3:  { kind: "good",   ar: "جيدة",        ml: "നല്ലത്, വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും യോജിച്ചത്", en: "good, suited to engagement and the contract" },
+  4:  { kind: "severe", ar: "نحسة جدا",    ml: "ദുശ്ശകുനം, ദാരിദ്ര്യം, വെറുപ്പ്", en: "ill omen, poverty and hatred" },
+  5:  { kind: "nahs",   ar: "نحس",         ml: "പിണക്കം, ദുഃഖം, ഖേദം, വിഷാദം, വെറുപ്പ്", en: "estrangement, grief, regret, gloom and hatred" },
+  6:  { kind: "good",   ar: "سعيدة",       ml: "സന്തോഷം, സ്നേഹം, മക്കളിൽ ബറക്കത്ത്", en: "happiness, love and blessing in the children" },
+  7:  { kind: "good",   ar: "سعيدة",       ml: "മക്കളിൽ ബറക്കത്ത്; മഹത്തായ നിലയുള്ള ഒരു കുഞ്ഞ് ജനിക്കും", en: "blessing in the children; a child of great standing will be born" },
+  8:  { kind: "nahs",   ar: "نحسة",        ml: "പ്രശ്നങ്ങളും കുറച്ചുകാലം വേർപിരിയലും, പിന്നെ ഉറപ്പായ ത്വലാഖ്, അല്ലെങ്കിൽ ദുരിത ജീവിതം", en: "troubles and a time apart, then certain divorce or a wretched life" },
+  9:  { kind: "nahs",   ar: "نحسة",        ml: "ഭാര്യ ഭർത്താവിനെ വെറുക്കും, വേർപിരിയലിൽ എത്തും", en: "the wife comes to hate her husband, and it ends in separation" },
+  10: { kind: "sadaqa", ar: "تخرج صدقة",   ml: "മക്കൾ പെൺകുട്ടികളായിരിക്കും", en: "the children will be girls" },
+  11: { kind: "good",   ar: "سعيدة",       ml: "ദാമ്പത്യത്തിൽ ഉയർച്ച, അഭിമാനം, സന്തോഷം, ആനന്ദം", en: "elevation, honour, joy and delight in the married life" },
+  12: { kind: "good",   ar: "جيدة",        ml: "വളരെ യോജിച്ചത്", en: "very suitable" },
+  13: { kind: "severe", ar: "شديد النحس",  ml: "ദുശ്ശകുനം, ദാരിദ്ര്യം, വെറുപ്പ്", en: "ill omen, poverty and hatred" },
+  14: { kind: "good",   ar: "سعيدة",       ml: "വളരെ യോജിച്ചത്", en: "very suitable" },
+  15: { kind: "good",   ar: "سعيدة",       ml: "വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും വളരെ യോജിച്ചത്", en: "very suitable for engagement and the contract" },
+  16: { kind: "good",   ar: "سعيدة",       ml: "വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും വളരെ യോജിച്ചത്", en: "very suitable for engagement and the contract" },
+  17: { kind: "nahs",   ar: "نحسة",        ml: "നിക്കാഹ് സൂക്ഷിക്കുക", en: "beware of the contract" },
+  18: { kind: "severe", ar: "شديد النحس",  ml: "നന്മ കാണില്ല; നിക്കാഹ് യോജിച്ചതല്ല", en: "it sees no good; the contract is not suitable" },
+  19: { kind: "severe", ar: "نحسة جدا",    ml: "നിക്കാഹ് കർശനമായി സൂക്ഷിക്കുക", en: "beware the contract" },
+  20: { kind: "good",   ar: "جيدة",        ml: "നല്ലത്, വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും യോജിച്ചത്", en: "good, suited to engagement and the contract" },
+  21: { kind: "nahs",   ar: "نحس",         ml: "വിവാഹം നിലനിൽക്കില്ല, ത്വലാഖ്", en: "the marriage will not last; divorce" },
+  22: { kind: "severe", ar: "نحسة جدا",    ml: "ഒരു വർഷത്തിനുള്ളിൽ ഭർത്താവ് മരിക്കും, അല്ലെങ്കിൽ വേർപിരിയൽ", en: "the husband dies within a year, or separation" },
+  23: { kind: "nahs",   ar: "نحس",         ml: "ദുശ്ശകുനം, ദാരിദ്ര്യം, വെറുപ്പ്", en: "ill omen, poverty and hatred" },
+  24: { kind: "best",   ar: "ممتازة",      ml: "സന്തോഷത്തിന്റെ പൂർണ്ണത — ഏറ്റവും ഉത്തമം", en: "the fullness of happiness — the best of all" },
+  25: { kind: "best",   ar: "جيدة جدا",    ml: "വളരെ നല്ലത്, വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും യോജിച്ചത്", en: "very good, suited to engagement and the contract" },
+  26: { kind: "sadaqa", ar: "تخرج صدقة",   ml: "സ്ത്രീക്ക് വന്ധ്യത; വിവാഹം നിലനിൽക്കില്ല", en: "barrenness for the woman; the marriage will not last" },
+  27: { kind: "sadaqa", ar: "تخرج صدقة",   ml: "സ്ത്രീക്ക് വന്ധ്യതയോ കുഞ്ഞുണ്ടാകാൻ വൈകലോ", en: "barrenness for the woman, or children delayed" },
+  28: { kind: "good",   ar: "جيدة وسعيدة", ml: "വിവാഹാലോചനയ്ക്കും നിക്കാഹിനും യോജിച്ചത്", en: "suited to engagement and the contract" },
+};
+
+export const SIRAJI_KIND_LABEL = {
+  best:   { ml: "ഏറ്റവും ഉത്തമം", en: "Excellent" },
+  good:   { ml: "നല്ലത്",          en: "Good" },
+  sadaqa: { ml: "സ്വദഖ കൊടുത്തിട്ട് ചെയ്യാം", en: "With sadaqa given first" },
+  nahs:   { ml: "നഹ്സ്",           en: "Nahs" },
+  severe: { ml: "കടുത്ത നഹ്സ്",    en: "Severe nahs" },
+};
+
+// His general rules for the contract. Those already held from Kashf
+// (Moon in Aqrab, Wednesday daytime, the kawamil days) are not repeated.
+export const SIRAJI_NIKAH_RULES = {
+  night: {
+    ml: "സിറാജി: നിക്കാഹ് പകലിനേക്കാൾ രാത്രിയാണ് നല്ലത് — രാത്രി കൂടുതൽ ബറക്കത്തുള്ള സമയമാണ്.",
+    en: "Al-Siraji: the contract is better at night than by day — the night is the more blessed time.",
+  },
+  sadaqa: {
+    ml: "സിറാജി: \"تخرج صدقة\" എന്നുള്ള മൻസിലുകളുടെ നഹ്സ് സ്വദഖ കൊണ്ട് നീങ്ങും; മറ്റ് നഹ്സുകൾ സ്വദഖ കൊണ്ടും നീങ്ങില്ല.",
+    en: "Al-Siraji: the nahs of the manzils marked \"تخرج صدقة\" is lifted by sadaqa; the other nahs are not lifted even by sadaqa.",
+  },
+};
