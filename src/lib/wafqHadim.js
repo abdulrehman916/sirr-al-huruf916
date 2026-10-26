@@ -15,23 +15,37 @@ import { ABJAD } from "./sirrWafqEngine.js";
 
 export const HADIM_SOURCE = { book: "Hâvâss'ın Derinlikleri I", pages: "196-198" };
 
-/** Letters by value, largest first — for turning a number back into letters. */
-const BY_VALUE = Object.entries(ABJAD)
+/**
+ * Nutk: a number spoken as letters (Hâvâss I p.97, "İstintak").
+ * Below a thousand the number is broken into abjad values, largest
+ * first — the book's example 69 → 60 (س) + 9 (ط). From a thousand up,
+ * the count of thousands is spoken first and غ (1000) written after it,
+ * then the rest: the book's own example is 92 × 92 = 8464 →
+ * 8 (ح) · 1000 (غ) · 400 (ت) · 60 (س) · 4 (د), "حغتسد" — not eight غ in
+ * a row. A count of thousands that is itself in the thousands is spoken
+ * the same way, so a million is غغ.
+ */
+const SMALL = Object.entries(ABJAD)
   .map(([ch, v]) => ({ ch, v }))
+  .filter(({ v }) => v < 1000)
   .sort((a, b) => b.v - a.v);
 
-/**
- * Nutk: a number spoken as letters. The number is broken into abjad
- * values, largest first, and those letters are what is pronounced —
- * the book's own example is 69 → 60 (س) + 9 (ط), read "Set".
- */
-export function nutk(n) {
-  let rest = Math.max(0, Math.round(n));
+function under1000(n) {
+  let rest = n;
   const parts = [];
-  for (const { ch, v } of BY_VALUE) {
+  for (const { ch, v } of SMALL) {
     while (rest >= v) { parts.push({ ch, v }); rest -= v; }
   }
   return parts;
+}
+
+export function nutk(n) {
+  const v = Math.max(0, Math.round(n));
+  if (v < 1000) return under1000(v);
+  const thousands = Math.floor(v / 1000);
+  const rest = v % 1000;
+  const head = thousands === 1 ? [] : nutk(thousands);
+  return [...head, { ch: "غ", v: 1000, mul: true }, ...under1000(rest)];
 }
 
 export const nutkLetters = (n) => nutk(n).map((p) => p.ch).join("");

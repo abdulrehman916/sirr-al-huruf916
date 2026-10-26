@@ -85,7 +85,7 @@ export default function HadimPanel({ grid, miftah, ml = true }) {
                 {isEn ? h.point.tr : h.point.ml.split(" — ")[0]} {d.value}
                 {d.devri ? ` + ${H.DEVRI_FELAK} = ${d.used}` : ""} − {C.sub} = {d.rest}
                 {" → "}
-                {d.parts.map((x) => `${x.v}`).join(" + ")}
+                {d.parts.map((x) => (x.mul ? `${x.ch} ×1000` : `${x.ch} ${x.v}`)).join(" · ")}
               </p>
             </div>
           );
