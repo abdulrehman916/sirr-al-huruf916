@@ -5,6 +5,7 @@
 // Beneficial purposes only.
 // ═══════════════════════════════════════════════════════════════
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Lock } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import PageTitle from "@/components/PageTitle";
 import FeatureLockedCard from "@/components/FeatureLockedCard";
@@ -51,24 +52,35 @@ const SECTIONS = [
     sub_en: "The crossed square, tedahül, and the hâdims" },
 ];
 
-function SectionCards({ onPick, isEn, txt }) {
+/**
+ * The section cards, laid out as the Holy Names page lays its own out:
+ * a two-column grid of square cards, the Arabic name large with the
+ * short name under it, a lock on the ones not opened yet. Nothing more
+ * goes on the card — what each section holds is read inside it.
+ */
+function SectionCards({ onPick, isEn }) {
   const feats = getFeatures(PAGE_PATH);
+  const P = {
+    border: "rgba(212,175,55,0.30)", borderHi: "rgba(212,175,55,0.65)",
+    glow: "rgba(212,175,55,0.22)", text: "#F5D060",
+    dim: "rgba(245,208,96,0.55)", bg: "rgba(212,175,55,0.06)",
+  };
   return (
-    <div className="grid gap-3 sm:grid-cols-3">
+    <div className="grid grid-cols-2 gap-4 mb-4" aria-label="Choose a section">
       {SECTIONS.map((sec) => {
         const f = feats.find((x) => x.id === sec.feature);
         const locked = f && !checkFeatureAccess(PAGE_PATH, f.id);
         return (
           <button key={sec.id} type="button" onClick={() => onPick(sec.id)}
-            className="rounded-2xl p-4 text-left space-y-1.5 transition"
-            style={{ ...card, borderColor: locked ? "rgba(212,175,55,0.2)" : "rgba(212,175,55,0.45)" }}>
-            <p className="font-amiri text-2xl" style={{ color: GOLD }}>{sec.ar}</p>
-            <p className="font-inter text-xs font-bold" style={{ color: "#fff" }}>
-              {isEn ? sec.en : sec.ml}{locked ? " 🔒" : ""}
-            </p>
-            <p className="font-inter text-[10px] leading-relaxed" style={{ color: "rgba(245,234,212,0.6)" }}>
-              {isEn ? sec.sub_en : sec.sub_ml}
-            </p>
+            className="min-h-36 py-6 px-4 rounded-2xl border font-inter text-sm font-semibold transition-all hover:border-yellow-400/60"
+            style={{ background: P.bg, borderColor: P.border, color: P.dim,
+                     boxShadow: `0 0 0 ${P.glow}` }}>
+            <span className="font-amiri text-2xl leading-loose flex items-center justify-center gap-2 mb-2"
+                  dir="rtl" style={{ color: P.text }}>
+              {locked && <Lock className="w-3 h-3 opacity-60" />}
+              {sec.ar}
+            </span>
+            <span className="text-sm tracking-widest">{isEn ? sec.en : sec.ml}</span>
           </button>
         );
       })}
@@ -704,7 +716,7 @@ export default function SirrWafqPage() {
           </div>
         </Box>
 
-        {!section && <SectionCards onPick={setSection} isEn={isEn} txt={txt} />}
+        {!section && <SectionCards onPick={setSection} isEn={isEn} />}
 
         {section && sectionLocked && (
           <FeatureLockedCard pagePath={PAGE_PATH} featureId={secFeature.id} featureLabel={secFeature.label}
