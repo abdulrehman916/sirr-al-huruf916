@@ -399,3 +399,54 @@ export const CAUTIONS = [
   { ar: "تجنب وضع يدك أو مدها داخل السيبة أثناء تلاوة العزيمة ودوران العمل", ml: "ഓത്തിന്റെയും പ്രവൃത്തിയുടെയും ഇടയിൽ കൈ ഉള്ളിലേക്ക് വെക്കുകയോ നീട്ടുകയോ ചെയ്യരുത്.", en: "Do not put or stretch your hand inside during the recitation and the course of the work." },
   { ar: "الكتمان فهو خير من الإفشاء", ml: "രഹസ്യമായി സൂക്ഷിക്കുക; വെളിപ്പെടുത്തുന്നതിനെക്കാൾ നല്ലത് അതാണ്.", en: "Keep it concealed; that is better than disclosing it." },
 ];
+
+// ═══════════════════════════════════════════════════════════════
+// Which element a word's own letters lean to — Hâvâss'ın Derinlikleri I
+// pp.85-86, "Harflerin dereceleri".
+//
+// Each element has seven letters (the groups Kashf p.252 gives from
+// al-Ghazali, and Hâvâss p.80 in the order of the signs: fire, earth,
+// air, water). Within a group the middle letter is the fourth degree,
+// the two beside it the third, then the second, and the first and last
+// letters the first degree. The degrees of each element's letters in
+// the word are added; the element with the larger sum leads, and it
+// leads by the difference ("محمد": two mim, fire 4+4 = 8; ح and د,
+// water 2+1 = 3; fire leads by 5, "fire of the fifth degree"). Equal
+// sums make the word mu'tadil — balanced — and the book names no
+// leader then.
+// ═══════════════════════════════════════════════════════════════
+export const ELEMENT_LETTERS = {
+  fire:  ["ا", "ه", "ط", "م", "ف", "ش", "ذ"],
+  earth: ["ب", "و", "ي", "ن", "ص", "ت", "ض"],
+  air:   ["ج", "ز", "ك", "س", "ق", "ث", "ظ"],
+  water: ["د", "ح", "ل", "ع", "ر", "خ", "غ"],
+};
+const DEGREE_AT = [1, 2, 3, 4, 3, 2, 1];
+const LETTER_ELEMENT = {};
+for (const [el, ls] of Object.entries(ELEMENT_LETTERS)) ls.forEach((l, i) => { LETTER_ELEMENT[l] = { el, deg: DEGREE_AT[i] }; });
+
+/**
+ * The element the letters lean to. opts.taMarbuta as in abjadOf: ة read
+ * as ه (5) or as ت (400). Returns the degree sum and letter count of
+ * each element, the leader and its margin, or balanced: true when the
+ * top sums are equal.
+ */
+export function letterElement(text, opts = {}) {
+  const sums = { fire: 0, earth: 0, air: 0, water: 0 };
+  const count = { fire: 0, earth: 0, air: 0, water: 0 };
+  const clean = String(text || "").replace(/[ً-ٰٟۖ-ۭـ࣓-ࣿ]/g, "");
+  for (const raw of clean) {
+    let ch = NORM[raw] || raw;
+    if (ch === "ة") ch = opts.taMarbuta === 400 ? "ت" : "ه";
+    const hit = LETTER_ELEMENT[ch];
+    if (!hit) continue;
+    sums[hit.el] += hit.deg;
+    count[hit.el] += 1;
+  }
+  const order = Object.entries(sums).sort((a, b) => b[1] - a[1]);
+  const [top, second] = order;
+  if (!top || top[1] === 0) return { sums, count, leader: null, margin: 0, balanced: false, tied: [] };
+  const tied = order.filter(([, v]) => v === top[1]).map(([k]) => k);
+  if (tied.length > 1) return { sums, count, leader: null, margin: 0, balanced: true, tied };
+  return { sums, count, leader: top[0], margin: top[1] - second[1], balanced: false, tied: [] };
+}

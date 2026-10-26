@@ -13,7 +13,7 @@ import { getFeatures } from "@/lib/featureRegistry";
 import { checkFeatureAccess } from "@/lib/featurePermission";
 import {
   abjadOf, asOf, SIZES, SIZE_NAME, SQUARE_CLASS, buildWafq, hollowWafq3, workingSizes,
-  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, DAY_ANGEL, PURPOSES,
+  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, letterElement, DAY_ANGEL, PURPOSES,
   toArabicDigits, planWafq, NUMBER_RULE, SEVEN_RANKS, SEVEN_RANKS_NOTE, needAngelFor,
   RECITE_COUNT, DUA_BEFORE, DUA_BEFORE_WHEN, DUA_TANZIL, AROUND_WAFQ, INK, CAUTIONS,
 } from "@/lib/sirrWafqEngine";
@@ -687,7 +687,9 @@ export default function SirrWafqPage() {
   const [manual, setManual] = useState("");
   const [n, setN] = useState(3);
   const [step, setStep] = useState(1);
-  const [form, setForm] = useState("auto");
+  // null = the element the book gives for the total (Kashf p.298);
+  // the reader may pick another, as the book allows.
+  const [form, setForm] = useState(null);
   const [tab, setTab] = useState("act");
   const [actId, setActId] = useState(null);
   const [purposeId, setPurposeId] = useState(null);
@@ -740,6 +742,12 @@ export default function SirrWafqPage() {
     sought: abjadOf(sought, { taMarbuta: ta }),
   }), [seeker, need, sought, ta]);
   const hajatTotal = ["seeker", "need", "sought"].reduce((s, k) => s + (useHajat[k] ? hajatAbjad[k].total : 0), 0);
+  // The letters the total was counted from, for the reading of which
+  // element the letters themselves lean to (Hâvâss I pp.85-86).
+  const lettersText = mode === "text" ? text
+    : mode === "hajat" ? [["seeker", seeker], ["need", need], ["sought", sought]].filter(([k]) => useHajat[k]).map(([, v]) => v).join(" ")
+    : ["self", "mother", "house"].filter((k) => useName[k]).map((k) => names[k]).join(" ");
+  const letterEl = useMemo(() => letterElement(lettersText, { taMarbuta: ta }), [lettersText, ta]);
   const manualN = /^\d+$/.test(manual.trim()) ? parseInt(manual.trim(), 10) : null;
   const N = manualN ?? (mode === "text" ? textAbjad.total : mode === "hajat" ? hajatTotal : nameTotal);
   const el = N > 0 ? ELEMENTS[elementOf(N)] : null;
@@ -769,10 +777,11 @@ export default function SirrWafqPage() {
   // the square, not in it, so turning them on must not throw away a
   // square that is already made.
   useEffect(() => { setResult(null); setWriteIdx(-1); }, [N, n, step, form]);
+  useEffect(() => { setForm(null); }, [N]);
 
   function generate() {
     if (!(N > 0)) return;
-    const f = form === "auto" ? elementOf(N) : form;
+    const f = form || elementOf(N);
     const r = buildWafq(N, n, { step, form: n <= 4 ? f : "base" });
     setResult({ ...r, hollow: n === 3 && step === 1 ? hollowWafq3(N) : null, element: elementOf(N) });
     setWriteIdx(-1); setCopied(false);
@@ -986,6 +995,46 @@ export default function SirrWafqPage() {
             <Stat ar={el ? el.ar : "الطبع"} label={txt("മൂലകം", "Element")} value={el ? (isEn ? el.en : el.ml) : "—"} />
           </div>
           {el && <Note color="rgba(255,255,255,0.5)">{txt(`${N} ÷ 4 → ബാക്കി ${N % 4} → ${el.ml} (1 അഗ്നി, 2 മണ്ണ്, 3 വായു, 0 ജലം).`, `${N} ÷ 4 leaves ${N % 4} → ${el.en} (1 fire, 2 earth, 3 air, 0 water).`)}</Note>}
+          {el && (
+            <div className="rounded-xl p-2.5 space-y-1.5 font-inter text-[11px]" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.2)" }}>
+              <p style={{ color: "#4ADE80" }}>
+                ✓ {txt(`കശ്ഫ് (ഈ സെക്ഷന്റെ കിതാബ്): തുകയെ 4 കൊണ്ട് ഹരിച്ച ബാക്കിയാണ് വഫ്ഖിന്റെ മൂലകം — ${el.ml}. കള്ളിയുടെ രൂപം ഇതുകൊണ്ട് തനിയെ തിരഞ്ഞെടുക്കുന്നു.`,
+                        `Kashf (this section's book): the remainder of the total divided by 4 is the wafq's element — ${el.en}. The square's form is chosen by it.`)}
+              </p>
+              {!manualN && lettersText.trim() && (Object.values(letterEl.sums).some((v) => v > 0)) && (
+                <div className="space-y-1">
+                  <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                    {txt("അക്ഷരങ്ങൾ തന്നെ ഏത് മൂലകത്തിലേക്ക് ചായുന്നു — ഹവാസ്സിലെ ദറജ കണക്ക്:", "Which element the letters themselves lean to — Hâvâss's count of degrees:")}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["fire", "earth", "air", "water"].map((k) => (
+                      <span key={k} className="px-2 py-0.5 rounded-lg font-bold"
+                            style={{ background: letterEl.leader === k ? "rgba(212,175,55,0.18)" : "rgba(255,255,255,0.04)", color: letterEl.leader === k ? GOLD : "rgba(255,255,255,0.65)", border: "1px solid rgba(212,175,55,0.2)" }}>
+                        {isEn ? ELEMENTS[k].en : ELEMENTS[k].ml} {letterEl.sums[k]}
+                        <span style={{ opacity: 0.55, fontWeight: 400 }}> ({letterEl.count[k]} {txt("അക്ഷരം", "letters")})</span>
+                      </span>
+                    ))}
+                  </div>
+                  <p style={{ color: "rgba(255,255,255,0.75)" }}>
+                    {letterEl.balanced
+                      ? txt(`${letterEl.tied.map((k) => ELEMENTS[k].ml).join(", ")} — ദറജ തുല്യം. കിതാബ് പ്രകാരം ഈ വാക്ക് മുഅ്തദിൽ (സമനിലയിൽ) ആണ്; ഒന്നിനും മുൻതൂക്കമില്ല.`,
+                            `${letterEl.tied.map((k) => ELEMENTS[k].en).join(", ")} — equal degrees. By the book the word is mu'tadil (balanced); none leads.`)
+                      : txt(`അക്ഷരങ്ങളിൽ മുന്നിൽ ${ELEMENTS[letterEl.leader].ml} — ${letterEl.margin} ദറജ മുൻതൂക്കം.`,
+                            `The letters lead with ${ELEMENTS[letterEl.leader].en} — by ${letterEl.margin} degrees.`)}
+                    {letterEl.leader && letterEl.leader !== elementOf(N) && n <= 4 && (
+                      <button type="button" onClick={() => setForm(letterEl.leader)} className="ml-2 px-2 py-0.5 rounded-lg font-bold" style={btn(form === letterEl.leader)}>
+                        {txt(`കള്ളിക്ക് ${ELEMENTS[letterEl.leader].ml} എടുക്കുക`, `Use ${ELEMENTS[letterEl.leader].en} for the square`)}
+                      </button>
+                    )}
+                  </p>
+                  <p style={{ color: "rgba(255,255,255,0.45)" }}>
+                    {txt("ഓരോ മൂലകത്തിനും ഏഴ് അക്ഷരം. നടുവിലെ അക്ഷരം 4-ാം ദറജ, അതിന്റെ രണ്ടു വശത്തുള്ളവ 3, പിന്നെ 2, ആദ്യത്തേതും അവസാനത്തേതും 1. ഓരോ മൂലകത്തിന്റെയും അക്ഷരങ്ങളുടെ ദറജ കൂട്ടുന്നു; കൂടുതലുള്ളത് മുന്നിൽ, വ്യത്യാസമാണ് അതിന്റെ ദറജ. തുല്യമെങ്കിൽ മുഅ്തദിൽ.",
+                         "Seven letters to each element. The middle letter is the 4th degree, those beside it the 3rd, then the 2nd, the first and last the 1st. Each element's degrees are added; the larger leads, by the difference. Equal sums make the word mu'tadil.")}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
         </Box>
 
         {/* 2 */}
@@ -1068,19 +1117,36 @@ export default function SirrWafqPage() {
           <Intro>{txt("കിതാബിലെ ഓരോ രീതിയും ഇവിടെയുണ്ട്. ഒരു രീതിയുടെ പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, വരിയുടെയും നിരയുടെയും കോണിന്റെയും തുക ഒത്തുവന്നോ എന്ന പരിശോധന — എല്ലാം കാണാം.", "Every method in the books is here. Press a method\'s name to see its rules, the square it builds, and the check that every row, column and diagonal comes out at the total.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["Pressing a method's name opens its rules, the square it builds, and the check.", "The standard method (التعمير): write the miftah in the house of alif, then add one in each house in the abjad house order.", "Jabr: where the division leaves a remainder, that remainder is added from a particular house onward. The book's rule: (houses of the side − remainder) × houses of the side + 1.", "Tafāḍul (تفاضل): instead of adding one, a step is added. The step belongs to the Sun–Moon angle — 1 at 30°, 2 at 60°, and so on. 180° is to be avoided.", "The check: every row, column and both diagonals must equal the total. Rows and columns are reported apart from the diagonals.", "On a 3×3 that needs jabr, one diagonal comes out a step short. That belongs to the book's method — there is only one 3×3 square. Either choose a text whose total divides evenly, or take the hollow-centre 3×3.", "The book gives no jabr rule for the 10×10, so a total with a remainder will not come out on one.", "⚠ In the methods that write letters into the houses, the letters' abjad must be added to the total as well, which doubles it. The recitation goes by that number."] : ["ഓരോ രീതിയുടെയും പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, പരിശോധന — എല്ലാം തുറക്കും.", "അടിസ്ഥാന രീതി (التعمير): മിഫ്താഹ് അലിഫിന്റെ വീട്ടിൽ എഴുതുക, പിന്നെ അബ്ജദ് വീട് ക്രമത്തിൽ ഓരോന്നിലും ഒന്നു വീതം കൂട്ടുക.", "ജബ്ർ: ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ, ആ ബാക്കി ഒരു പ്രത്യേക വീട്ടിൽ നിന്ന് തുടങ്ങി കൂട്ടുന്നു. കിതാബിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1.", "തഫാദുൽ (تفاضل): ഓരോന്ന് കൂട്ടുന്നതിന് പകരം ഒരു ചുവട് വെച്ച് കൂട്ടുന്നു. ചുവട് സൂര്യ-ചന്ദ്ര കോണുമായി ബന്ധപ്പെട്ടതാണ് — 30° ആണെങ്കിൽ 1, 60° ആണെങ്കിൽ 2, അങ്ങനെ. 180° ഒഴിവാക്കണം.", "പരിശോധന: എല്ലാ വരിയും നിരയും രണ്ട് കോണും ആകെ തുകയ്ക്ക് തുല്യമാകണം. വരിയും നിരയും വെവ്വേറെ, കോണുകൾ വെവ്വേറെ കാണിക്കുന്നു.", "3×3-ൽ ജബ്ർ വേണ്ടിവന്നാൽ ഒരു കോൺ ഒരു പടി കുറവായി വരും. ഇത് കിതാബിന്റെ രീതിയുടെ സ്വഭാവമാണ് — 3×3 കള്ളി ഗണിതപരമായി ഒന്നേയുള്ളൂ. ബാക്കി വരാത്ത വാചകം നോക്കുകയോ നടുവ് ഒഴിഞ്ഞ മുഅല്ലസ് എടുക്കുകയോ ചെയ്യാം.", "10×10-ന് കിതാബ് ജബ്ർ നിയമം തരുന്നില്ല. അതുകൊണ്ട് ബാക്കി വരുന്ന തുകയിൽ 10×10 ഒത്തുവരില്ല.", "അക്ഷരം കള്ളിയിൽ എഴുതുന്ന രീതികളിൽ ⚠ ശ്രദ്ധിക്കുക: അക്ഷരത്തിന്റെ അബ്ജദ് കൂടി തുകയിൽ കൂട്ടണം, അപ്പോൾ ശരിയായ തുക ഇരട്ടിയാകും. ചൊല്ലേണ്ടതും ആ സംഖ്യ വെച്ചാണ്."]} />
           <div className="flex flex-wrap items-center gap-3 font-inter text-[10px]">
-            {n <= 4 && (
-              <div className="flex flex-wrap items-center gap-1">
-                <span style={{ color: "rgba(255,255,255,0.6)" }}>{txt("രൂപം", "Form")}:</span>
-                {[["auto", txt(`തുകയുടെ മൂലകം${el ? ` (${el.ml})` : ""}`, `Total's element${el ? ` (${el.en})` : ""}`)], ["base", txt("അടിസ്ഥാനം", "Base")],
-                  ["fire", isEn ? "Fire" : "അഗ്നി"], ["air", isEn ? "Air" : "വായു"], ["water", isEn ? "Water" : "ജലം"], ["earth", isEn ? "Earth" : "മണ്ണ്"]].map(([k, l]) => (
-                  <button key={k} type="button" onClick={() => setForm(k)} className="px-2 py-1 rounded-lg font-bold" style={btn(form === k)}>{l}</button>
-                ))}
+            {n <= 4 && N > 0 && (
+              <div className="w-full space-y-1">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span style={{ color: "rgba(255,255,255,0.6)" }}>{txt("മൂലകം", "Element")}:</span>
+                  {["fire", "air", "water", "earth"].map((k) => {
+                    const on = (form || elementOf(N)) === k;
+                    const book = elementOf(N) === k;
+                    return (
+                      <button key={k} type="button" onClick={() => setForm(book ? null : k)}
+                              className="px-2.5 py-1 rounded-lg font-bold"
+                              style={book ? { background: on ? "rgba(74,222,128,0.22)" : "rgba(74,222,128,0.07)", color: "#4ADE80", border: `1.5px solid ${on ? "#4ADE80" : "rgba(74,222,128,0.45)"}` } : btn(on)}>
+                        {isEn ? ELEMENTS[k].en : ELEMENTS[k].ml} <span className="font-amiri">{ELEMENTS[k].ar}</span>{book ? " ✓" : ""}
+                      </button>
+                    );
+                  })}
+                </div>
+                <p style={{ color: "rgba(255,255,255,0.5)" }}>{form && form !== elementOf(N)
+                  ? txt(`നിങ്ങൾ ${ELEMENTS[form].ml} തിരഞ്ഞെടുത്തു. കിതാബ് പ്രകാരം തുകയുടെ മൂലകം ${ELEMENTS[elementOf(N)].ml} ആണ് (പച്ച). കിതാബ് ഇങ്ങനെ മാറ്റാൻ അനുവദിക്കുന്നുണ്ട്: "ചെയ്യുന്നവന് തന്റെ സ്വന്തം സ്വഭാവം അനുസരിച്ചും വഫ്ഖ് തിരഞ്ഞെടുക്കാം".`,
+                         `You chose ${ELEMENTS[form].en}. By the book the total's element is ${ELEMENTS[elementOf(N)].en} (green). The book allows the change: "the maker may also choose the wafq by his own nature".`)
+                  : txt("പച്ചയിലുള്ളതാണ് കിതാബ് പ്രകാരം തുകയുടെ മൂലകം; അത് തനിയെ തിരഞ്ഞെടുത്തിട്ടുണ്ട്. മാറ്റണമെങ്കിൽ മറ്റൊന്നിൽ അമർത്തുക.",
+                        "The green one is the total's element by the book, chosen by itself. Press another to change it.")}</p>
               </div>
             )}
             <label className="flex items-center gap-1.5" style={{ color: "rgba(255,255,255,0.6)" }}>
               {txt("ചുവട് (تفاضل)", "Step")}
               <input type="number" min={1} max={99} value={step} onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))} className="w-14 rounded-lg px-2 py-1" style={input} />
             </label>
+            <p className="w-full" style={{ color: "rgba(255,255,255,0.5)" }}>{txt(
+              "ചുവട് = ഓരോ വീട്ടിൽ നിന്ന് അടുത്ത വീട്ടിലേക്ക് എത്ര കൂട്ടണം (തഫാദുൽ). സാധാരണ 1. 2 ആക്കിയാൽ ഓരോ വീട്ടിലും 2 വീതം കൂടും; എന്നാലും കളിയുടെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. സംശയമുണ്ടെങ്കിൽ 1-ൽ വിടുക.",
+              "Step = how much is added from one house to the next (tafāḍul). Normally 1. At 2, each house goes up by 2; the square's total stays the same, only the key changes. If unsure, leave it at 1.")}</p>
           </div>
           <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
