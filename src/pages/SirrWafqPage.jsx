@@ -21,6 +21,7 @@ import { METHODS, methodsFor, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } fr
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
+import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS } from "@/lib/wafqSurround";
@@ -777,6 +778,14 @@ export default function SirrWafqPage() {
               </button>
 
               <WafqTiming angel={angel} weekday={dayWd} ml={!isEn} />
+
+              <div className="rounded-2xl p-3 space-y-2" style={card}>
+                <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
+                  <span className="font-amiri">خدام الوفق</span>{" "}
+                  {txt("ഈ കള്ളിയുടെ ഹാദിമുകൾ", "The hâdims of this square")}
+                </p>
+                <HadimPanel grid={result.grid} miftah={result.key} ml={!isEn} />
+              </div>
 
               <Note>{txt("ഏറ്റവും ചെറിയ സംഖ്യ (മിഫ്താഹ്) ആദ്യം അലിഫിന്റെ വീട്ടിൽ; പിന്നെ ഓരോന്നായി കൂട്ടി ക്രമത്തിൽ, ഏറ്റവും വലിയ സംഖ്യ (മഗാലിഖ്) അവസാനം.", "The smallest number (the key) goes first, in the house of alif; then each next number in order, the largest (maghaliq) last.")}</Note>
               {writeIdx >= 0 && writeIdx < order.length && (() => {
