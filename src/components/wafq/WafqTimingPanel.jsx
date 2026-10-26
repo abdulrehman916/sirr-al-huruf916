@@ -152,6 +152,9 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
   const [wi, setWi] = useState(initialWork);
   const [open, setOpen] = useState(null);
   const [date, setDate] = useState("");
+  // Once a date is chosen, its hours all stand open and stay open — the
+  // reader closes any by hand; only Reset goes back to the present.
+  const [shut, setShut] = useState(() => new Set());
   const work = wi != null ? WORK_TIMES[wi] : null;
   const kahir = isKahirWork(work);
 
@@ -169,6 +172,14 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
   }, [wi, date, mansions]);
 
   const toggle = (k) => setOpen(open === k ? null : k);
+  const dateOpen = (k) => (date ? !shut.has(k) : open === k);
+  const dateToggle = (k) => {
+    if (!date) return toggle(k);
+    const n = new Set(shut);
+    n.has(k) ? n.delete(k) : n.add(k);
+    setShut(n);
+  };
+  const resetDate = () => { setDate(""); setShut(new Set()); setOpen(null); };
 
   return (
     <div className="rounded-2xl p-3 space-y-3" style={box}>
@@ -181,7 +192,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
         <p className="font-inter text-[10px]" style={{ color: DIM }}>
           {t("കിതാബിലെ കർമ്മം", "The work, as the book lists it")}
         </p>
-        <select value={wi ?? ""} onChange={(e) => { setWi(e.target.value === "" ? null : +e.target.value); setOpen(null); }}
+        <select value={wi ?? ""} onChange={(e) => { setWi(e.target.value === "" ? null : +e.target.value); setOpen(null); setShut(new Set()); }}
                 className="w-full rounded-xl px-3 py-2 font-inter text-xs"
                 style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4", border: "1px solid rgba(212,175,55,0.25)" }}>
           <option value="">{t("— തിരഞ്ഞെടുക്കുക —", "— choose —")}</option>
@@ -260,10 +271,19 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
                 ? t("ഈ ദിവസം ഈ കർമ്മം ചെയ്യാമോ, ഏത് സാഅത്തിൽ?", "Can this work be done on this day, and at what hour?")
                 : t("കിതാബ് ഈ കർമ്മത്തിന് പറയുന്ന അടുത്ത ദിവസം — അതിലെ ഏറ്റവും യോജിച്ച സാഅത്തുകൾ", "The next day the book gives for this work — its best hours")}
             </p>
-            <input type="date" value={date} onChange={(e) => { setDate(e.target.value); setOpen(null); }}
-                   className="rounded-xl px-3 py-1.5 font-inter text-xs"
-                   style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4", border: "1px solid rgba(212,175,55,0.25)" }} />
-            {onDate && <DateAnswer d={onDate} work={work} isEn={isEn} loc={loc} open={open} toggle={toggle} />}
+            <div className="flex items-center gap-2">
+              <input type="date" value={date} onChange={(e) => { if (e.target.value) { setDate(e.target.value); setShut(new Set()); } }}
+                     className="rounded-xl px-3 py-1.5 font-inter text-xs"
+                     style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4", border: "1px solid rgba(212,175,55,0.25)" }} />
+              {date && (
+                <button type="button" onClick={resetDate}
+                        className="rounded-xl px-3 py-1.5 font-inter text-xs font-bold"
+                        style={{ background: "rgba(212,175,55,0.15)", color: GOLD, border: "1px solid rgba(212,175,55,0.5)" }}>
+                  ↺ {t("റീസെറ്റ് — ഇപ്പോഴത്തേതിലേക്ക്", "Reset — back to now")}
+                </button>
+              )}
+            </div>
+            {onDate && <DateAnswer d={onDate} work={work} isEn={isEn} loc={loc} isOpen={dateOpen} toggle={dateToggle} past={!!date} />}
           </div>
 
           {/* the companion rule in the book's words */}
@@ -285,11 +305,13 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
 }
 
 /** Item 3's answer: the day judged, then its hours, the strongest first. */
-function DateAnswer({ d, work, isEn, loc, open, toggle }) {
+function DateAnswer({ d, work, isEn, loc, isOpen, toggle, past }) {
   const t = (m, e) => (isEn ? e : m);
   const wd = d.pDay.wd;
   const dayName = isEn ? WD_EN[wd] : WD_ML_FULL[wd];
-  const best = d.hours.filter((h) => h.tier && h.end > Date.now()).sort(byStrength).slice(0, 5);
+  // A chosen date is shown whole, even if it has already gone by; the
+  // book's next day (no date chosen) only shows hours still to come.
+  const best = d.hours.filter((h) => h.tier && (past || h.end > Date.now())).sort(byStrength).slice(0, 5);
   const dayOk = wd === work.day;
   return (
     <div className="space-y-1">
@@ -303,7 +325,7 @@ function DateAnswer({ d, work, isEn, loc, open, toggle }) {
         <ul className="space-y-1">
           {best.map((r) => (
             <HourLine key={r.start} r={r} isEn={isEn} loc={loc}
-                      open={open === `d${r.start}`} onToggle={() => toggle(`d${r.start}`)} />
+                      open={isOpen(`d${r.start}`)} onToggle={() => toggle(`d${r.start}`)} />
           ))}
         </ul>
       ) : (

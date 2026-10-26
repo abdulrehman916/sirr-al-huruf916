@@ -30,7 +30,7 @@ import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
-import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL } from "@/lib/wafqSurround";
+import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL, splitFour } from "@/lib/wafqSurround";
 
 const GOLD = "#F5D060";
 const PAGE_PATH = "/sirr-al-wafq";
@@ -128,8 +128,44 @@ const PILL = (on) => ({
   border: `1px solid ${on ? "rgba(212,175,55,0.6)" : "rgba(212,175,55,0.2)"}`,
 });
 
+/**
+ * A text that is written round the square, editable, with what it
+ * becomes when split four ways: the four pieces, one per side or corner,
+ * or plainly "cannot be split" when it has fewer than four words. Words
+ * are never broken (splitFour). Kept at module level so the textarea
+ * keeps its focus while typing.
+ */
+function SplitBox({ title, value, onChange, four, note, isEn, txt }) {
+  const parts = four ? splitFour(value) : null;
+  return (
+    <div className="space-y-1.5">
+      <p className="font-amiri text-base" dir="rtl" style={{ color: GOLD }}>{title}</p>
+      <textarea dir="rtl" rows={2} value={value} onChange={(e) => onChange(e.target.value)}
+                className="w-full rounded-xl px-3 py-2 font-amiri text-lg"
+                style={{ background: "rgba(0,0,0,0.25)", color: INK_C, border: "1px solid rgba(212,175,55,0.25)" }} />
+      {four && (parts ? (
+        <div className="grid grid-cols-4 gap-1" dir="rtl">
+          {parts.map((w, i) => (
+            <span key={i} className="rounded-lg px-1.5 py-1 text-center font-amiri text-base"
+                  style={{ background: "rgba(74,222,128,0.08)", border: "1px solid rgba(74,222,128,0.35)", color: INK_C }}>
+              <span className="block font-inter text-[9px]" style={{ color: "#4ADE80" }}>{["١", "٢", "٣", "٤"][i]}</span>
+              {w}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p className="font-inter text-[11px] font-bold" style={{ color: "#FCA5A5" }}>
+          ✗ {txt("ഇത് നാലായി മുറിക്കാൻ പറ്റില്ല — ചുരുങ്ങിയത് നാല് പദം വേണം.",
+                 "This cannot be split in four — at least four words are needed.")}
+        </p>
+      ))}
+      {note && <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>{note}</p>}
+    </div>
+  );
+}
+
 function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorners,
-                        ring, setRing, ayah, setAyah, fromStep1, recommended, isEn, txt }) {
+                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isEn, txt }) {
   const Row = ({ id, children }) => (
     <button type="button" onClick={() => setAngelSel(id)} dir="rtl"
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-right" style={PILL(angelSel === id)}>
@@ -150,7 +186,6 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
     </div>
   );
   const usesAyah = edge === "ayah" || corners === "ayah" || ring === "ayah";
-  const words = ayah.trim().split(/\s+/).filter(Boolean).length;
   return (
     <div className="rounded-2xl p-3 space-y-3" style={card}>
       <p className="font-amiri text-xl text-center" dir="rtl" style={{ color: GOLD }}>ما يُكتب حول الوفق</p>
@@ -191,22 +226,18 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
       <Pills label="الدائرة:" value={ring} onPick={setRing}
              opts={[["none", "بلا"], ["besmele", "بسم الله الرحمن الرحيم"], ["ayah", "الآية"]]} />
 
+      {(edge === "besmele" || ring === "besmele") && (
+        <SplitBox title="البسملة" value={bismi} onChange={setBismi}
+                  four={edge === "besmele"} isEn={isEn} txt={txt} />
+      )}
       {usesAyah && (
-        <div className="space-y-1">
-          <p className="font-amiri text-base" dir="rtl" style={{ color: GOLD }}>الآية</p>
-          <textarea dir="rtl" rows={2} value={ayah} onChange={(e) => setAyah(e.target.value)}
-                    className="w-full rounded-xl px-3 py-2 font-amiri text-lg"
-                    style={{ background: "rgba(0,0,0,0.25)", color: INK_C, border: "1px solid rgba(212,175,55,0.25)" }} />
-          <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>
-            {fromStep1
-              ? txt("ഒന്നാം പടിയിൽ എഴുതിയ ആയത്താണ് ഇവിടെ തനിയെ വന്നത്. മാറ്റണമെങ്കിൽ ഇവിടെ മാറ്റാം.",
-                    "This is the ayah written in step 1, carried here. Change it here if you wish.")
-              : txt("ഒന്നാം പടിയിൽ ആയത്ത് എഴുതിയാൽ അത് ഇവിടെ തനിയെ വരും. അല്ലെങ്കിൽ ഇവിടെ എഴുതുക.",
-                    "An ayah written in step 1 comes here by itself. Otherwise write it here.")}
-            {(edge === "ayah" || corners === "ayah") && words < 4 &&
-              " " + txt("നാല് ഭാഗമാക്കാൻ ചുരുങ്ങിയത് നാല് പദം വേണം.", "At least four words are needed to divide it in four.")}
-          </p>
-        </div>
+        <SplitBox title="الآية" value={ayah} onChange={setAyah}
+                  four={edge === "ayah" || corners === "ayah"} isEn={isEn} txt={txt}
+                  note={fromStep1
+                    ? txt("ഒന്നാം പടിയിൽ എഴുതിയ ആയത്താണ് ഇവിടെ തനിയെ വന്നത്. മാറ്റണമെങ്കിൽ ഇവിടെ മാറ്റാം.",
+                          "This is the ayah written in step 1, carried here. Change it here if you wish.")
+                    : txt("ഒന്നാം പടിയിൽ ആയത്ത് എഴുതിയാൽ അത് ഇവിടെ തനിയെ വരും. അല്ലെങ്കിൽ ഇവിടെ എഴുതുക.",
+                          "An ayah written in step 1 comes here by itself. Otherwise write it here.")} />
       )}
     </div>
   );
@@ -643,6 +674,7 @@ export default function SirrWafqPage() {
   const [corners, setCorners] = useState("none");
   const [ringPick, setRingPick] = useState(null);
   const [ayahEdit, setAyahEdit] = useState(null);
+  const [bismiText, setBismiText] = useState(BASMALA_FULL);
   const bismi = edge === "besmele";
   const sideAngels = angelSel === "four";
   const angel = ARCHANGELS.some((x) => x.id === angelSel) ? angelSel : "jibril";
@@ -1023,7 +1055,7 @@ export default function SirrWafqPage() {
           </div>
           <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
-                        ayah={ayah} setAyah={setAyahEdit} fromStep1={!!step1Ayah && ayahEdit == null}
+                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
                         isEn={isEn} txt={txt} />
           {/* The seeker, the need and the matter sought are written once, in
@@ -1096,10 +1128,10 @@ export default function SirrWafqPage() {
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
                 <WafqSheet grid={result.grid} angel={angel}
                            angels={angelSel !== "none"} fourAngels={angelSel === "four"}
-                           weekday={dayWd} besmele={bismi}
+                           weekday={dayWd} besmele={false}
                            verse={corners === "book" ? CORNER_VERSE : corners === "ayah" ? ayah.trim() : ""}
-                           lineText={edge === "ayah" ? ayah.trim() : ""}
-                           ringAround={ring === "besmele" ? BASMALA_FULL : ring === "ayah" ? ayah.trim() : ""}
+                           lineText={edge === "besmele" ? (bismiText.trim() || BASMALA_FULL) : edge === "ayah" ? ayah.trim() : ""}
+                           ringAround={ring === "besmele" ? (bismiText.trim() || BASMALA_FULL) : ring === "ayah" ? ayah.trim() : ""}
                            className="w-full h-auto" />
               </div>
 
