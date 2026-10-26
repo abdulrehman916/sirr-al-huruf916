@@ -1264,6 +1264,10 @@ export default function SirrWafqPage() {
               <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
                                mansions={purpose?.mansions || null} ml={!isEn} />
 
+              {/* The hadims are drawn out by Hâvâss's rule alone (Kashf has
+                  none), so they belong to the Hâvâss section, C — the
+                  owner's decision, 27 Oct 2026. */}
+              {secKey === "c" ? (
               <div className="rounded-2xl p-3 space-y-2" style={card}>
                 <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
                   <span className="font-amiri">خدام الوفق</span>{" "}
@@ -1271,6 +1275,9 @@ export default function SirrWafqPage() {
                 </p>
                 <HadimPanel grid={result.grid} miftah={result.key} ml={!isEn} />
               </div>
+              ) : (
+                <Note color="rgba(255,255,255,0.45)">{txt("ഈ കള്ളിയുടെ ഹാദിമുകൾ (ഉൽവി, സുഫ്‌ലി, ശർ) സെക്ഷൻ C-യിലാണ്.", "This square's hâdims (ulvî, suflî, şer) are in Section C.")}</Note>
+              )}
 
               <Note>{txt("ഏറ്റവും ചെറിയ സംഖ്യ (മിഫ്താഹ്) ആദ്യം അലിഫിന്റെ വീട്ടിൽ; പിന്നെ ഓരോന്നായി കൂട്ടി ക്രമത്തിൽ, ഏറ്റവും വലിയ സംഖ്യ (മഗാലിഖ്) അവസാനം.", "The smallest number (the key) goes first, in the house of alif; then each next number in order, the largest (maghaliq) last.")}</Note>
               {writeIdx >= 0 && writeIdx < order.length && (() => {

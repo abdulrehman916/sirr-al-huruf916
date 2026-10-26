@@ -251,3 +251,10 @@ cards, each lockable and priced on its own.
   (by words, else by letters); only fewer than four letters cannot.
 - Only one session works on this at a time, on `wafq-timing-preview`;
   nothing goes to main without the owner's OK.
+- Element of a text (27 Oct): letters counted by element, the most leads;
+  a tie goes to the larger degree sum (Hâvâss I pp.85-86); a tie in that,
+  or a bare number, to Kashf's total ÷ 4. Chosen by itself, changeable.
+- Hadims of a wafq: Hâvâss I pp.196-198 only (Kashf has no such rule), so
+  they are shown in Section C, not A. Numbers are spoken by Hâvâss I p.97
+  (istintak): thousands as count + one غ — 8464 حغتسد, 778688 ذعحغخفح.
+  Kashf has no number-to-letters rule.
