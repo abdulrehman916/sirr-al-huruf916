@@ -146,9 +146,32 @@ and a converse is not a sentence in the book.
   backwards. The nahs hour is found through the Moon's manzil, its
   face and its nature — not by reckoning one planet against another.
 
-  This is already held as `MANSION_WORK` in `kashfSaatData.js`: all 28
-  have their `nature`, **21 of 28 have their `face`**. The seven
-  missing faces are the gap to close, and they are on p. 127 onward.
+  This is held as `MANSION_WORK` in `kashfSaatData.js`: all 28 have
+  their `nature`.
+
+  **The faces, read off p. 127-128 and closed out.** The passage names
+  the face for 22 of the 28, and they are filled in:
+
+  > 3 الثريا Venus · 4 الدبران Mercury · 5 الهقعة Moon ·
+  > 7 الذراع Saturn · 8 النثرة Jupiter · 9 الطرف Mars ·
+  > 10 الجبهة Sun · 11 الزبرة Venus · 12 الصرفة Mercury ·
+  > 13 العواء Moon · 14 السماك Saturn · 15 الغفر Jupiter ·
+  > 16 الزبانى Mars · 17 الإكليل Sun · 19 الشولة Mercury ·
+  > 21 البلدة Saturn · 22 سعد الذابح Jupiter · 23 سعد بلع Mars ·
+  > 24 سعد السعود Sun · 25 سعد الأخبية Venus ·
+  > 26 فرغ المقدم Mercury · 28 الرشا Jupiter
+
+  **Six are left without one, and they stay empty: 1 الشرطين,
+  2 البطين, 6 الهنعة, 18 القلب, 20 النعائم, 27 فرغ المؤخر.** The
+  passage gives them a work, and for some a nature, but no face.
+
+  It is tempting to fill them from the series, since the named faces
+  run in the descending planetary order — but the order does not
+  survive the gaps. Between 17 Sun and 19 Mercury one slot wants
+  Venus; between 26 Mercury and 28 Jupiter the order needs two steps
+  for one slot. The series is not continuous, so filling these would
+  be ours and not the book's. They are left null, and the interface
+  shows no face where there is none.
 
 - **The day-and-hour table for the other six planets.** Hâvâss pp. 40-42
   works it through for Venus only and leaves the combining to the

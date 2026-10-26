@@ -277,7 +277,9 @@ export const MANSION_WORK = {
   5:  { nature: "نحس",               face: "القمر",   ar: "للشر والعداوة",                    ml: "⚠ ദ്രോഹത്തിനും ശത്രുതയ്ക്കും",                        en: "⚠ for harm and enmity", harm: true },
   6:  { nature: "نحس مختلط",         face: null,      ar: "للصلاح وكل ما تريد",               ml: "നന്മയ്ക്കും നീ ഉദ്ദേശിക്കുന്നതിനെല്ലാം",               en: "for good, and whatever you wish" },
   7:  { nature: "سعد",               face: "زحل",     ar: "اعمل فيه ما تريد من الصلاح",       ml: "നന്മയിൽ നീ ഉദ്ദേശിക്കുന്നത് ചെയ്യുക",                  en: "work in it whatever good you wish" },
-  8:  { nature: "سعد مختلط أبيض وأحمر", face: null,   ar: "اعمل فيه للخير والتجارة",          ml: "നന്മയ്ക്കും കച്ചവടത്തിനും",                            en: "for good and for trade" },
+  // p.127: "وإذا نزل القمر في النثرة وهو وجه المشتري فإنه سعد مختلط
+  // ابيض وأحمر فاعمل فيه للخير والتجارة" — the face is named outright.
+  8:  { nature: "سعد مختلط أبيض وأحمر", face: "المشتري", ar: "اعمل فيه للخير والتجارة",          ml: "നന്മയ്ക്കും കച്ചവടത്തിനും",                            en: "for good and for trade" },
   9:  { nature: "نحس",               face: "المريخ",  ar: "اعمل فيه للطيور والدواب",          ml: "പക്ഷികൾക്കും മൃഗങ്ങൾക്കും",                            en: "for birds and beasts" },
   10: { nature: "سعد أبيض",          face: "الشمس",   ar: "للسباع والوحوش",                   ml: "ഹിംസ്രജന്തുക്കൾക്കും കാട്ടുമൃഗങ്ങൾക്കും",             en: "for predators and wild beasts",
         note_ar: "ذكرها في السر العلي بأنها نحس", note_ml: "അസ്സിർറുൽ ആലിയിൽ ഇത് നഹ്സ് എന്ന് പറയുന്നു", note_en: "al-Sirr al-'Ali calls this one nahs" },
