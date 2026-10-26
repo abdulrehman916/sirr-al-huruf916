@@ -80,7 +80,9 @@ function SectionCards({ onPick, isEn }) {
               {locked && <Lock className="w-3 h-3 opacity-60" />}
               {sec.ar}
             </span>
-            <span className="text-sm tracking-widest">{isEn ? sec.en : sec.ml}</span>
+            {/* English on the card in both languages: "സെക്ഷൻ എ" transliterated
+                into Malayalam reads badly, and the Holy Names cards do the same. */}
+            <span className="text-sm tracking-widest">{sec.en}</span>
           </button>
         );
       })}
