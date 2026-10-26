@@ -357,8 +357,21 @@ export default function SaatGrid() {
   useEffect(() => subscribeLocation(() => setLocTick((t) => t + 1)), []);
 
   const data = useMemo(() => {
-    const now = customDate ? customDate.getTime() : Date.now();
-    return getPlanetaryDay(now, getUserLocation());
+    const real = Date.now();
+    const d = getPlanetaryDay(customDate ? customDate.getTime() : real, getUserLocation());
+    if (!customDate) return d;
+    // A chosen date is read as a whole day. The picker stands it at
+    // noon, and measuring "past" and "current" from that noon dimmed
+    // the morning's hours and marked a noon hour as running on a day
+    // that is not today. Only if the chosen day is the one running now
+    // does the real clock mark anything; otherwise every hour stands
+    // open, and each opens only when it is tapped.
+    const live = real >= d.prevSunset && real < d.sunset;
+    const hours = d.hours.map((h) => ({
+      ...h,
+      status: live ? (real >= h.end ? "past" : real >= h.start ? "current" : "upcoming") : "upcoming",
+    }));
+    return { ...d, hours, current: hours.find((h) => h.status === "current") || null };
   }, [tick, locTick, customDate]);
 
   const open = data.hours.find((h) => `${h.period}-${h.num}` === openKey) || null;

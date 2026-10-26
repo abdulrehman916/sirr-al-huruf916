@@ -131,8 +131,9 @@ const PILL = (on) => ({
 /**
  * A text that is written round the square, editable, with what it
  * becomes when split four ways: the four pieces, one per side or corner,
- * or plainly "cannot be split" when it has fewer than four words. Words
- * are never broken (splitFour). Kept at module level so the textarea
+ * or plainly "cannot be split" when it has fewer than four letters. Four
+ * words or more split at the spaces; fewer are shared out by letter
+ * (splitFour). Kept at module level so the textarea
  * keeps its focus while typing.
  */
 function SplitBox({ title, value, onChange, four, note, isEn, txt }) {
@@ -155,8 +156,8 @@ function SplitBox({ title, value, onChange, four, note, isEn, txt }) {
         </div>
       ) : (
         <p className="font-inter text-[11px] font-bold" style={{ color: "#FCA5A5" }}>
-          ✗ {txt("ഇത് നാലായി മുറിക്കാൻ പറ്റില്ല — ചുരുങ്ങിയത് നാല് പദം വേണം.",
-                 "This cannot be split in four — at least four words are needed.")}
+          ✗ {txt("ഇത് നാലായി മുറിക്കാൻ പറ്റില്ല — ചുരുങ്ങിയത് നാല് അക്ഷരം വേണം.",
+                 "This cannot be split in four — at least four letters are needed.")}
         </p>
       ))}
       {note && <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>{note}</p>}

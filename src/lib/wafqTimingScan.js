@@ -180,7 +180,11 @@ export function readDay(ms, loc, work, mansions = null) {
   const pd = getPlanetaryDay(ms, loc);
   return {
     pDay: pd.pDay, day: pd.day,
-    hours: pd.hours.map((h) => ({ ...readHour(h, pd.pDay.wd, work, mansions), current: h.status === "current" })),
+    // "now" is the real clock: a day asked for by date is not running
+    hours: pd.hours.map((h) => {
+      const real = Date.now();
+      return { ...readHour(h, pd.pDay.wd, work, mansions), current: real >= h.start && real < h.end };
+    }),
   };
 }
 

@@ -152,15 +152,12 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
   const [wi, setWi] = useState(initialWork);
   const [open, setOpen] = useState(null);
   const [date, setDate] = useState("");
-  // Once a date is chosen, its hours all stand open and stay open — the
-  // reader closes any by hand; only Reset goes back to the present.
-  const [shut, setShut] = useState(() => new Set());
   const work = wi != null ? WORK_TIMES[wi] : null;
   const kahir = isKahirWork(work);
 
   const now = useMemo(() => (work ? readNow(work, Date.now(), loc, mansions) : null), [wi, mansions]);
   const next = useMemo(
-    () => (work ? nextOpenings(work, Date.now(), loc, { days: 14, perTier: 3, mansions }) : {}),
+    () => (work ? nextOpenings(work, Date.now(), loc, { days: 14, perTier: 40, mansions }) : {}),
     [wi, mansions]
   );
   // With no date typed, the book's own next day for this work is shown.
@@ -172,14 +169,9 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
   }, [wi, date, mansions]);
 
   const toggle = (k) => setOpen(open === k ? null : k);
-  const dateOpen = (k) => (date ? !shut.has(k) : open === k);
-  const dateToggle = (k) => {
-    if (!date) return toggle(k);
-    const n = new Set(shut);
-    n.has(k) ? n.delete(k) : n.add(k);
-    setShut(n);
-  };
-  const resetDate = () => { setDate(""); setShut(new Set()); setOpen(null); };
+  const resetDate = () => { setDate(""); setOpen(null); };
+  // Today's planetary day, for "can it be done today, and when".
+  const today = useMemo(() => (work ? readDay(Date.now(), loc, work, mansions) : null), [wi, mansions]);
 
   return (
     <div className="rounded-2xl p-3 space-y-3" style={box}>
@@ -192,7 +184,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
         <p className="font-inter text-[10px]" style={{ color: DIM }}>
           {t("കിതാബിലെ കർമ്മം", "The work, as the book lists it")}
         </p>
-        <select value={wi ?? ""} onChange={(e) => { setWi(e.target.value === "" ? null : +e.target.value); setOpen(null); setShut(new Set()); }}
+        <select value={wi ?? ""} onChange={(e) => { setWi(e.target.value === "" ? null : +e.target.value); setOpen(null); }}
                 className="w-full rounded-xl px-3 py-2 font-inter text-xs"
                 style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4", border: "1px solid rgba(212,175,55,0.25)" }}>
           <option value="">{t("— തിരഞ്ഞെടുക്കുക —", "— choose —")}</option>
@@ -223,6 +215,10 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
 
       {work && (
         <>
+          {/* When to do it: today if the book's times are still ahead today,
+              else the next day and hour they come. */}
+          <WhenToDo today={today} next={next} isEn={isEn} loc={loc} open={open} toggle={toggle} />
+
           {/* 1a. where this moment stands */}
           <div className="space-y-1">
             <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>{t("ഇപ്പോൾ", "Now")}</p>
@@ -246,7 +242,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
                 </p>
                 {next[k]?.length ? (
                   <ul className="space-y-1">
-                    {next[k].map((r) => (
+                    {next[k].slice(0, 3).map((r) => (
                       <HourLine key={r.start} r={r} isEn={isEn} loc={loc}
                                 open={open === r.start} onToggle={() => toggle(r.start)} />
                     ))}
@@ -272,7 +268,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
                 : t("കിതാബ് ഈ കർമ്മത്തിന് പറയുന്ന അടുത്ത ദിവസം — അതിലെ ഏറ്റവും യോജിച്ച സാഅത്തുകൾ", "The next day the book gives for this work — its best hours")}
             </p>
             <div className="flex items-center gap-2">
-              <input type="date" value={date} onChange={(e) => { if (e.target.value) { setDate(e.target.value); setShut(new Set()); } }}
+              <input type="date" value={date} onChange={(e) => { if (e.target.value) { setDate(e.target.value); setOpen(null); } }}
                      className="rounded-xl px-3 py-1.5 font-inter text-xs"
                      style={{ background: "rgba(0,0,0,0.25)", color: "#f5ead4", border: "1px solid rgba(212,175,55,0.25)" }} />
               {date && (
@@ -283,7 +279,7 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
                 </button>
               )}
             </div>
-            {onDate && <DateAnswer d={onDate} work={work} isEn={isEn} loc={loc} isOpen={dateOpen} toggle={dateToggle} past={!!date} />}
+            {onDate && <DateAnswer d={onDate} work={work} isEn={isEn} loc={loc} isOpen={(k) => open === k} toggle={toggle} past={!!date} />}
           </div>
 
           {/* the companion rule in the book's words */}
@@ -299,6 +295,77 @@ export default function WafqTimingPanel({ initialWork = null, mansions = null, m
             </p>
           </div>
         </>
+      )}
+    </div>
+  );
+}
+
+/**
+ * The answer first: can this work be done today, and at which hours;
+ * if today has none left, the next day and hour the book gives — the
+ * strongest step that comes soonest.
+ */
+function WhenToDo({ today, next, isEn, loc, open, toggle }) {
+  const t = (m, e) => (isEn ? e : m);
+  const now = Date.now();
+  const left = (today?.hours || []).filter((h) => h.tier && h.end > now).sort((a, b) => a.start - b.start);
+  const bestToday = left.length ? [...left].sort(byStrength)[0] : null;
+  // After today when today still has times; otherwise from now.
+  const from = left.length ? today.hours[today.hours.length - 1].end : now;
+  const all = [1, 2, 3, 4, 5].flatMap((k) => next[k] || []).filter((h) => h.start >= from || (!left.length && h.end > now));
+  all.sort((a, b) => a.start - b.start);
+  const soonest = all[0] || null;
+  const strong = all.find((h) => h.tier <= 2) || null;
+  const dayOf = (r) => {
+    const wd = r.wd;
+    const name = isEn ? WD_EN[wd] : WD_ML_FULL[wd];
+    return r.period === "night" ? (isEn ? `${name} night (the evening before)` : `${name} രാത്രി (തലേന്ന് സന്ധ്യ മുതൽ)`) : name;
+  };
+  return (
+    <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(74,222,128,0.06)", border: "1px solid rgba(74,222,128,0.35)" }}>
+      <p className="font-inter text-[11px] font-bold" style={{ color: "#4ADE80" }}>
+        {t("എപ്പോൾ ചെയ്യണം", "When to do it")}
+      </p>
+      {left.length ? (
+        <>
+          <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.85)" }}>
+            {t(`ഇന്ന് ചെയ്യാം — ഇനി ബാക്കിയുള്ള ${left.length} സമയം, സമയക്രമത്തിൽ. ഒന്ന് കഴിഞ്ഞാൽ അടുത്തത്:`,
+               `It can be done today — ${left.length} times still ahead, in order. When one passes, the next:`)}
+          </p>
+          <ul className="space-y-1">
+            {left.slice(0, 6).map((r) => (
+              <HourLine key={r.start} r={r} isEn={isEn} loc={loc}
+                        open={open === `w${r.start}`} onToggle={() => toggle(`w${r.start}`)} />
+            ))}
+          </ul>
+          {bestToday && (
+            <p className="font-inter text-[10px]" style={{ color: GOLD }}>
+              {t("ഇന്നത്തെ ഏറ്റവും ശക്തമായത്: ", "Strongest today: ")}{fmtWhen(bestToday.start, loc, isEn)} · {PLANETS[bestToday.planet].symbol} {isEn ? PLANETS[bestToday.planet].tr_en : PLANETS[bestToday.planet].tr_ml} · {t(`പടി ${bestToday.tier}`, `step ${bestToday.tier}`)}
+            </p>
+          )}
+        </>
+      ) : (
+        <p className="font-inter text-[11px]" style={{ color: "#FDBA74" }}>
+          {t("ഇന്ന് ഇനി ഈ കർമ്മത്തിന് കിതാബിന്റെ സമയമില്ല.", "No time the book gives for this work is left today.")}
+        </p>
+      )}
+      {soonest && (
+        <div className="space-y-1">
+          <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.85)" }}>
+            {left.length ? t("ഇന്നിന് ശേഷം അടുത്ത സമയം:", "After today, the next time:") : t("അടുത്ത സമയം:", "The next time:")}{" "}
+            <b style={{ color: TIER_COLOR[soonest.tier] }}>{dayOf(soonest)}</b>
+          </p>
+          <ul><HourLine r={soonest} isEn={isEn} loc={loc} open={open === `b${soonest.start}`} onToggle={() => toggle(`b${soonest.start}`)} /></ul>
+        </div>
+      )}
+      {strong && strong !== soonest && (
+        <div className="space-y-1">
+          <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.85)" }}>
+            {t("കിതാബിന്റെ ദിവസവും സാഅത്തും ഒത്തുവരുന്ന അടുത്ത സമയം (ഏറ്റവും ശക്തം):", "The next time the book's day and hour meet (strongest):")}{" "}
+            <b style={{ color: TIER_COLOR[strong.tier] }}>{dayOf(strong)}</b>
+          </p>
+          <ul><HourLine r={strong} isEn={isEn} loc={loc} open={open === `s${strong.start}`} onToggle={() => toggle(`s${strong.start}`)} /></ul>
+        </div>
       )}
     </div>
   );

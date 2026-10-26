@@ -124,12 +124,12 @@ export const CORNER_ORDER = ["tr", "br", "bl", "tl"];
  * Splits a text into exactly four corner pieces, on word boundaries
  * only. Four words give one word per corner. More words are gathered
  * into four runs of as near equal length as the words allow, never
- * breaking a word. Fewer than four words cannot be split, so this
- * returns null and the caller says so rather than forcing it.
+ * breaking a word. Fewer than four words are split by their letters
+ * (splitLetters); only a text of fewer than four letters returns null.
  */
 export function splitFour(text) {
   const words = String(text || "").trim().split(/\s+/).filter(Boolean);
-  if (words.length < 4) return null;
+  if (words.length < 4) return splitLetters(words.join(" "));
   if (words.length === 4) return words.slice();
 
   const len = (w) => [...w].length;
@@ -155,6 +155,47 @@ export function splitFour(text) {
   while (groups.length < 4) groups.push([]);
   if (groups.some((g) => g.length === 0)) return null;
   return groups.map((g) => g.join(" "));
+}
+
+/**
+ * Fewer than four words: the owner's rule is that any word, however
+ * short the text, is still written in four pieces. The letters are
+ * shared out four ways as evenly as they go, a harakah staying with
+ * its letter and a space never starting or ending a piece. Fewer than
+ * four letters cannot make four pieces, so that alone returns null.
+ */
+function splitLetters(text) {
+  // each word as letter units, a harakah kept with its letter
+  const words = text.split(/\s+/).filter(Boolean).map((w) => {
+    const u = [];
+    for (const ch of [...w]) {
+      if (/[\u064B-\u065F\u0670\u06D6-\u06ED]/.test(ch) && u.length) u[u.length - 1] += ch;
+      else u.push(ch);
+    }
+    return u;
+  });
+  const total = words.reduce((n, w) => n + w.length, 0);
+  if (total < 4) return null;
+  // one piece per word to begin with; the cuts still wanted go to the
+  // word with the most letters per piece, so the pieces stay even and
+  // a word is cut only where the four cannot be had at the spaces
+  const count = words.map(() => 1);
+  for (let left = 4 - words.length; left > 0; left--) {
+    let best = -1;
+    words.forEach((w, i) => {
+      const r = w.length / count[i], rb = best < 0 ? -1 : words[best].length / count[best];
+      if (count[i] < w.length && (r > rb || (r === rb && w.length > words[best].length))) best = i;
+    });
+    if (best < 0) return null;
+    count[best]++;
+  }
+  const out = [];
+  words.forEach((w, i) => {
+    for (let k = 0; k < count[i]; k++) {
+      out.push(w.slice(Math.round((w.length * k) / count[i]), Math.round((w.length * (k + 1)) / count[i])).join(""));
+    }
+  });
+  return out.length === 4 && out.every(Boolean) ? out : null;
 }
 
 /** Where each corner piece sits, and which way its baseline runs. */

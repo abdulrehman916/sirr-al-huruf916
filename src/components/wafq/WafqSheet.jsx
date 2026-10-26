@@ -71,12 +71,20 @@ export default function WafqSheet({
       const target = Number(el.dataset.target);
       const how = el.dataset.how;
       const m = measure(el);
+      el.style.fontSize = "";
       if (how === "first") {
         el.textContent = fitFirst(word, target, m);
       } else {
         const slots = kashidaSlots(word);
-        if (!slots.length) { el.textContent = word; return; }
-        el.textContent = fitAt(word, splitIndexFor(word, slots), target, m);
+        el.textContent = slots.length ? fitAt(word, splitIndexFor(word, slots), target, m) : word;
+      }
+      // A long piece — part of a long ayah or surah — is longer than its
+      // side or corner even before any stretching. It is made smaller,
+      // never cut, until it fits the room it was given.
+      let fs = parseFloat(getComputedStyle(el).fontSize) || 30;
+      for (let i = 0; i < 60 && el.getComputedTextLength() > target && fs > 6; i++) {
+        fs -= 1;
+        el.style.fontSize = `${fs}px`;
       }
     });
 
@@ -89,7 +97,7 @@ export default function WafqSheet({
       const room = Number(ringEl.dataset.ring);
       let fs = 34;
       ringEl.style.fontSize = `${fs}px`;
-      for (let i = 0; i < 40 && ringEl.getComputedTextLength() > room && fs > 7; i++) {
+      for (let i = 0; i < 60 && ringEl.getComputedTextLength() > room && fs > 5; i++) {
         fs -= 1;
         ringEl.style.fontSize = `${fs}px`;
       }
