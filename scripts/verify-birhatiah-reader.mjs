@@ -126,7 +126,9 @@ for (const [id, guide] of Object.entries(guides)) {
     if (id==='HNK-MHC-005') {
       assert.ok(!html.includes(importedChapter.practices[0].arabic_original), 'Old paraphrase must not appear as original Arabic in either language');
       assert.ok(html.includes('ومن تلاه كل يوم خمس مرة'));
-      assert.ok(html.includes('114–115'), 'Fifty-reading account must identify its English edition pages');
+      // Owner's rule (2026-10-26): visitors see no page numbers or book names;
+      // the edition pages are kept in the data and shown to the owner only.
+      assert.ok(!html.includes('114–115'), 'Edition page numbers must not be shown to visitors');
     }
     const split = html.indexOf('data-reader-section="references"');
     assert.ok(split > 0, `${id}: source references must appear inside the card`);
