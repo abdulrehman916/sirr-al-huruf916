@@ -237,6 +237,101 @@ function SquareDayTimes({ wd, fromSquare, n, loc, isEn, txt }) {
   );
 }
 
+/**
+ * What is read after the square is written: the day's qasam with the
+ * need, the command (or, for love, the love tawkeel), then the common
+ * azima. The need stays the same from day to day; only the day's khadim,
+ * letters, angel, verse and names change — so any day can be chosen, and
+ * the text for one day or all seven saved as a PDF for daily reading.
+ */
+function readingTextFor(wd, need, love, sought) {
+  return {
+    qasam: dayQasam(wd, need, { voc: true }),
+    command: love ? loveTawkeel(sought, { voc: true }) : khadimCommand(need, { voc: true }),
+    azima: COMMON_AZIMA.v,
+  };
+}
+
+function printReading(days, need, love, sought, counts) {
+  const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const pages = days.map((wd) => {
+    const r = readingTextFor(wd, need, love, sought);
+    return `<section>
+      <h1>يوم ${WD_AR[wd]}</h1>
+      <h2>القسم</h2><p>${esc(r.qasam)} ${esc(r.command)}</p>
+      <div class="n">${esc(counts)}</div>
+      <h2>العزيمة — ثلاث أو خمس أو سبع مرات</h2><p>${esc(r.azima)}</p>
+    </section>`;
+  }).join("");
+  const w = window.open("", "_blank");
+  if (!w) return;
+  w.document.write(`<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+    <title>القسم والعزيمة</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap">
+    <style>
+      @page { margin: 16mm; }
+      body { font-family: Amiri, "Noto Naskh Arabic", serif; color: #111; margin: 0; }
+      section { page-break-after: always; }
+      section:last-child { page-break-after: auto; }
+      h1 { text-align: center; font-size: 30px; margin: 0 0 10px; }
+      h2 { font-size: 20px; margin: 18px 0 6px; color: #7a5c00; }
+      p { font-size: 22px; line-height: 2.1; text-align: justify; margin: 0; }
+      .n { font-size: 15px; color: #555; margin-top: 8px; }
+    </style></head><body>${pages}
+    <script>(document.fonts ? document.fonts.ready : Promise.resolve()).then(function(){ setTimeout(function(){ window.focus(); window.print(); }, 300); });</script>
+    </body></html>`);
+  w.document.close();
+}
+
+function ReadingBox({ sqWd, need, love, sought, N, n, letters, isEn, txt }) {
+  const [wd, setWd] = useState(sqWd);
+  useEffect(() => { setWd(sqWd); }, [sqWd]);
+  const r = readingTextFor(wd, need, love, sought);
+  const q = DAY_QASAM[wd];
+  const counts = `يقرأ القسم بعدد الجملة ${N} مرة، أو بعدد ضلع الوفق ${n} مرات${letters ? `، أو بعدد الحروف ${letters} مرة` : ""}`;
+  return (
+    <div className="rounded-2xl p-3 space-y-2" style={card}>
+      <p className="font-amiri text-xl text-center" dir="rtl" style={{ color: GOLD }}>ما يُقرأ — القسم والعزيمة</p>
+      <Note color="rgba(255,255,255,0.7)">{txt(
+        "കളത്തിന് ചുറ്റും എഴുതിയ ഖസവും കൽപ്പനയും, പിന്നെ പൊതു അസീമ — ചൊല്ലാനുള്ളത് മുഴുവൻ ഇവിടെ ഒരുമിച്ച്. ദിവസം മാറുമ്പോൾ ആ ദിവസത്തെ ഖാദിമും മലക്കും മാത്രമേ മാറുന്നുള്ളൂ; ആവശ്യം അതുതന്നെ. ഓതുന്ന ദിവസം താഴെ തിരഞ്ഞെടുക്കുക.",
+        "The qasam and command written round the square, then the common azima — all that is said, together here. When the day changes only that day's khadim and angel change; the need stays. Choose the day you are reading on.")}</Note>
+      <div className="flex flex-wrap gap-1">
+        {[6, 0, 1, 2, 3, 4, 5].map((d) => (
+          <button key={d} type="button" onClick={() => setWd(d)}
+                  className="px-2 py-1 rounded-lg font-inter text-[11px] font-bold" style={PILL(wd === d)}>
+            {isEn ? WD_EN[d] : WD_ML[d]}{d === sqWd ? " ★" : ""}
+          </button>
+        ))}
+      </div>
+      <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.5)" }}>
+        {txt(`★ = കളത്തിന്റെ ദിവസം (കളം എഴുതുന്നതും ചുറ്റും എഴുതുന്ന ഖസമും ആ ദിവസത്തേതാണ്). ഇപ്പോൾ: ${WD_ML[wd]} — ഖാദിം ${q.khadim}, മലക്ക് ${q.angel}.`,
+             `★ = the square's day (the square and the qasam round it are that day's). Now: ${WD_EN[wd]} — khadim ${q.khadim}, angel ${q.angel}.`)}
+      </p>
+      <div className="rounded-xl p-2.5 space-y-2" style={{ background: "rgba(0,0,0,0.25)" }}>
+        <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>{txt("1. ഖസം — ", "1. The qasam — ")}<span className="font-amiri text-sm">يوم {WD_AR[wd]}</span></p>
+        <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{r.qasam} {r.command}</p>
+        <p className="font-amiri text-sm" dir="rtl" style={{ color: "rgba(255,255,255,0.6)" }}>{counts}</p>
+        <p className="font-inter text-[10px] font-bold pt-1" style={{ color: GOLD }}>{txt("2. പൊതു അസീമ — 3, 5 അല്ലെങ്കിൽ 7 പ്രാവശ്യം, ആ ദിവസത്തെ ബഖൂറോടെ", "2. The common azima — 3, 5 or 7 times, with the day's incense")}</p>
+        <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{r.azima}</p>
+      </div>
+      {!need && <Note color="#FCA5A5">{txt("ആവശ്യം ചേർത്തിട്ടില്ല — മൂന്നാം പടിയിൽ الدائرة → التوكيل-ൽ എഴുതുക. അതുവരെ كذا وكذا എന്ന് കാണും.", "No need filled in — write it under الدائرة → التوكيل in step 3. Until then it reads كذا وكذا.")}</Note>}
+      <div className="grid grid-cols-2 gap-2">
+        <button type="button" className="py-2 rounded-xl font-inter text-[11px] font-bold" style={PILL(true)}
+                onClick={() => printReading([wd], need, love, sought, counts)}>
+          {txt(`${WD_ML[wd]} ദിവസത്തേത് PDF`, `${WD_EN[wd]} — PDF`)}
+        </button>
+        <button type="button" className="py-2 rounded-xl font-inter text-[11px] font-bold" style={PILL(false)}
+                onClick={() => printReading([6, 0, 1, 2, 3, 4, 5], need, love, sought, counts)}>
+          {txt("ഏഴ് ദിവസവും ഒരുമിച്ച് PDF", "All seven days — PDF")}
+        </button>
+      </div>
+      <Note color="rgba(255,255,255,0.45)">{txt(
+        "PDF ബട്ടൺ അമർത്തിയാൽ പ്രിന്റ് ജാലകം തുറക്കും — അവിടെ \"Save as PDF\" തിരഞ്ഞെടുക്കുക. ഏഴ് ദിവസത്തേതിൽ ഓരോ ദിവസവും വേറെ പേജിൽ. റിയാദ: പണി തുടങ്ങുന്നതിന് മുമ്പ് 3 അല്ലെങ്കിൽ 7 ദിവസം, അതിൽ കൂടുതലും ആകാം. എഴുതിയ ശേഷം എത്ര ദിവസം ചൊല്ലണമെന്ന് ഈ കിതാബ് പറയുന്നില്ല.",
+        "The PDF button opens the print window — choose \"Save as PDF\" there. In the seven-day file each day is on its own page. Riyada: 3 or 7 days or more before the work. How many days to say it after writing, this book does not say.")}</Note>
+    </div>
+  );
+}
+
 /** What goes in place of كذا وكذا, and the person sought (for love). */
 function tawkeelParts(tk) {
   const person = personAr(tk.name, tk.mother, tk.female);
@@ -292,8 +387,8 @@ function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
             <textarea value={tk.custom || ""} onChange={set("custom")} dir="rtl" rows={2} className={field} style={TK_INPUT}
                       placeholder="حصول عبد الرحمن بن رملة على عمل طيب" />
             <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
-              {txt("ആവശ്യം മുഴുവൻ വാചകമായി, പേരും ഉമ്മയുടെ പേരും ചേർത്ത്, അറബിയിൽ എഴുതുക. അത് അതുപോലെ كذا وكذا-യുടെ സ്ഥാനത്ത് വരും.",
-                   "Write the whole need as a sentence in Arabic, with the name and the mother's name. It goes in place of كذا وكذا as written.")}
+              {txt("ഇവിടെ നിങ്ങളുടെ ഉദ്ദേശ്യം അറബിയിൽ എഴുതുക — പേരും ഉമ്മയുടെ പേരും ചേർത്ത്. എഴുതിക്കഴിഞ്ഞാൽ, എഴുതിയതുപോലെ തന്നെ കളത്തിന് ചുറ്റുമുള്ള ഖസമിലേക്കും വായിക്കാനുള്ളതിലേക്കും തനിയെ വരും.",
+                   "Write your purpose here in Arabic, with the name and the mother's name. Once written, it goes as written into the qasam round the square and into what is read.")}
             </p>
           </>
         )}
@@ -1539,35 +1634,13 @@ export default function SirrWafqPage() {
               </button>
 
 
-              {/* What is said — the day's qasam and the common azima (Kashf
-                  pp. 24-25, 29-31). Said, not only written: the qasam as many
-                  times as the total, the side, or the letters; the azima
-                  3, 5 or 7 times. */}
-              <div className="rounded-2xl p-3 space-y-2" style={card}>
-                <p className="font-amiri text-xl text-center" dir="rtl" style={{ color: GOLD }}>القسم والعزيمة</p>
-                <Note color="rgba(255,255,255,0.7)">{txt(
-                  `കിതാബ്: ഖസം "ശർത്തുകളിൽ ഏറ്റവും പ്രധാനം". കളത്തിന്റെ ദിവസമായ ${WD_ML[sqWd]} ദിവസത്തെ ഖസം, ആവശ്യം ചേർത്ത്, ചൊല്ലുക. പിന്നെ ആ ദിവസത്തെ ബഖൂർ പുകച്ച് പൊതു അസീമ.`,
-                  `The book: the qasam is "the most important of the conditions". Say the qasam of the square's day, ${WD_EN[sqWd]}, with the need in it; then, with that day's incense, the common azima.`)}</Note>
-                <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>{txt("1. ദിവസത്തിന്റെ ഖസം", "1. The day's qasam")}</p>
-                <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>
-                  {dayQasam(sqWd, tkNeed, { voc: true })}{" "}
-                  {tk.love ? loveTawkeel(tkp.sought, { voc: true }) : khadimCommand(tkNeed, { voc: true })}
-                </p>
-                {(() => {
-                  const letters = (lettersText.match(/[ء-ي]/g) || []).length;
-                  return (
-                    <Note color="rgba(255,255,255,0.6)">{txt(
-                      `എണ്ണം — കിതാബ് മൂന്നിൽ ഒന്ന് പറയുന്നു: ആകെ തുക (${result.N}) പ്രാവശ്യം, അല്ലെങ്കിൽ കളത്തിന്റെ ഒരു വശത്തെ വീടുകളുടെ എണ്ണം (${result.n}) പ്രാവശ്യം${letters ? `, അല്ലെങ്കിൽ അക്ഷരങ്ങളുടെ എണ്ണം (${letters}) പ്രാവശ്യം` : ""}.`,
-                      `How many times — the book gives three: the total (${result.N}), or the houses on a side (${result.n})${letters ? `, or the number of letters (${letters})` : ""}.`)}</Note>
-                  );
-                })()}
-                {!tkNeed && <Note color="#FCA5A5">{txt("ആവശ്യം ചേർത്തിട്ടില്ല — മൂന്നാം പടിയിൽ الدائرة → التوكيل-ൽ പേരും ആവശ്യവും എഴുതുക. അതുവരെ كذا وكذا എന്ന് കാണും.", "No need filled in — write the name and need under الدائرة → التوكيل in step 3. Until then it reads كذا وكذا.")}</Note>}
-                <p className="font-inter text-[10px] font-bold pt-1" style={{ color: GOLD }}>{txt("2. പൊതു അസീമ — 3, 5 അല്ലെങ്കിൽ 7 പ്രാവശ്യം", "2. The common azima — 3, 5 or 7 times")}</p>
-                <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{COMMON_AZIMA.v}</p>
-                <Note color="rgba(255,255,255,0.45)">{txt(
-                  "കിതാബിൽ ഒരിടത്ത് ഖസം അസീമക്ക് ശേഷമെന്നും മറ്റൊരിടത്ത് അസീമ ഖസമിന് ശേഷമെന്നും പറയുന്നു. റിയാദ: പണി തുടങ്ങുന്നതിന് മുമ്പ് 3 അല്ലെങ്കിൽ 7 ദിവസം, അതിൽ കൂടുതലും ആകാം (ആവശ്യത്തിന്റെ കാഠിന്യം അനുസരിച്ച്). എഴുതിയ ശേഷം എത്ര ദിവസം ചൊല്ലണമെന്ന് ഈ കിതാബ് പറയുന്നില്ല.",
-                  "The book puts the qasam after the azima in one place and the azima after the qasam in another. Riyada: 3 or 7 days or more before the work begins, by how hard the need is. How many days to say it after writing, this book does not say.")}</Note>
-              </div>
+              {/* What is read — the day's qasam with its command, then the
+                  common azima; any day can be chosen, since only the day's
+                  khadim and angel change from day to day. */}
+              <ReadingBox sqWd={sqWd} need={tkNeed} love={tk.love} sought={tkp.sought}
+                          N={result.N} n={result.n}
+                          letters={(lettersText.match(/[\u0621-\u064A]/g) || []).length}
+                          isEn={isEn} txt={txt} />
 
               {/* The hadims are drawn out by Hâvâss's rule alone (Kashf has
                   none), so they belong to the Hâvâss section, C — the
