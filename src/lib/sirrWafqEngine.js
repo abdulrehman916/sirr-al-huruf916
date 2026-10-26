@@ -115,7 +115,7 @@ export const LETTER_TABLE = [
   { l: "ط", nat: "نحس جسيم", el: "fire",  metal_ml: "മൺപാത്രം", planet: "الذنب", day_ml: "—", day_en: "—", group: "—", angel: "—", khadim: "—" },
 ];
 
-// Names the book says to recite while writing each house of the 3×3 (one per letter, said twice).
+// Names the book says to recite while writing each house of the 3×3, printed as the book prints them (already doubled: "الوهيم الوهيم"), with no "×2" added.
 export const HOUSE_RECITE = {
   1: "الوهيم الوهيم", 2: "بدميال بدميال", 3: "جه جه", 4: "دلوه دلوه", 5: "همال همال",
   6: "واليهم واليهم", 7: "زقطار زقطار", 8: "حدايه حدايه", 9: "طيال طيال",
