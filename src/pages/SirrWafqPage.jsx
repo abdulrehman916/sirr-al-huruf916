@@ -573,6 +573,7 @@ export default function SirrWafqPage() {
   const [text, setText] = useState("");
   const [names, setNames] = useState({ self: "", mother: "", house: "" });
   const [useName, setUseName] = useState({ self: true, mother: true, house: false });
+  const [useHajat, setUseHajat] = useState({ seeker: true, need: true, sought: true });
   const [ta, setTa] = useState(5);
   const [manual, setManual] = useState("");
   const [n, setN] = useState(3);
@@ -614,8 +615,19 @@ export default function SirrWafqPage() {
     self: abjadOf(names.self, { taMarbuta: ta }), mother: abjadOf(names.mother, { taMarbuta: ta }), house: abjadOf(names.house, { taMarbuta: ta }),
   }), [names, ta]);
   const nameTotal = ["self", "mother", "house"].reduce((s, k) => s + (useName[k] ? nameAbjad[k].total : 0), 0);
+  // The three the book asks for by name (condition 34, ranks 4-6): the
+  // seeker, the need, and the matter sought. They are written once, here,
+  // and the same three go down into the middle house — so nothing is
+  // written twice. The matter sought may be another person's name, or
+  // anything else the work is aimed at.
+  const hajatAbjad = useMemo(() => ({
+    seeker: abjadOf(seeker, { taMarbuta: ta }),
+    need:   abjadOf(need,   { taMarbuta: ta }),
+    sought: abjadOf(sought, { taMarbuta: ta }),
+  }), [seeker, need, sought, ta]);
+  const hajatTotal = ["seeker", "need", "sought"].reduce((s, k) => s + (useHajat[k] ? hajatAbjad[k].total : 0), 0);
   const manualN = /^\d+$/.test(manual.trim()) ? parseInt(manual.trim(), 10) : null;
-  const N = manualN ?? (mode === "text" ? textAbjad.total : nameTotal);
+  const N = manualN ?? (mode === "text" ? textAbjad.total : mode === "hajat" ? hajatTotal : nameTotal);
   const el = N > 0 ? ELEMENTS[elementOf(N)] : null;
   const good = useMemo(() => (N > 0 ? workingSizes(N, step) : []), [N, step]);
   const plan = N > 0 ? planWafq(N, n, step) : null;
@@ -772,11 +784,46 @@ export default function SirrWafqPage() {
           <Intro>{txt("മനസ്സിൽ ഒരു ഉദ്ദേശ്യമുണ്ടെങ്കിൽ അത് അറബിയിൽ ഇവിടെ എഴുതുക — ഒരു ആയത്തോ സൂറത്തോ ഇസ്മോ, അല്ലെങ്കിൽ ആളുടെ പേരും ഉമ്മയുടെ പേരും. അതിന്റെ അബ്ജദ് തുകയിൽ നിന്നാണ് കള്ളി ഉണ്ടാകുന്നത്. ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ലെങ്കിൽ, നേരത്തെ കൂട്ടിവെച്ച ഒരു സംഖ്യ ഉണ്ടെങ്കിൽ അത് നേരിട്ട് കൊടുത്താലും മതി — ആ സംഖ്യയ്ക്ക് ചേരുന്ന കള്ളികൾ കിട്ടും.", "If you have a purpose in mind, write it here in Arabic — an ayah, a surah, a name of God, or a person\'s name with the mother\'s. The square is built from its abjad total. If the purpose is not settled, a total you have already worked out can be entered on its own, and you will get the squares that fit that number.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["Write in Arabic only. Harakat and the Quranic marks are skipped on their own — only written letters are counted.", "It may be an ayah or a whole surah, of any length. It may be the names of Allah, or a sentence of your own.", "For a person, the name and the mother's name are added together; the house name is optional. Each can be ticked in or out.", "You choose what ة is worth: 5 as ه, or 400 as ت. Both are held among the scholars; keep to one of them throughout a working.", "If the purpose is not settled, a total you have already worked out can be entered as a number, with no text at all.", "The total that comes out is what the square is built from. Its element — fire, air, water or earth — is shown here too, settled by the remainder when the total is divided by four."] : ["അറബിയിൽ മാത്രം എഴുതുക. ഹറകത്തും (ഫത്ഹ്, കസ്റ്, ളമ്മ) ഖുർആനിലെ ചിഹ്നങ്ങളും തനിയെ ഒഴിവാകും — എഴുതിയ അക്ഷരങ്ങൾ മാത്രമേ എണ്ണുന്നുള്ളൂ.", "ആയത്തോ സൂറത്തോ ആകാം, എത്ര നീളമുള്ളതും. അല്ലാഹുവിന്റെ ഇസ്മുകളോ ഒരു വാചകമോ ആകാം.", "ആളുടെ പേരാണെങ്കിൽ പേരും ഉമ്മയുടെ പേരും ചേർത്ത് കൂട്ടുന്നു — വീട്ടുപേര് ഐച്ഛികം. ഓരോന്നും വേണോ വേണ്ടയോ എന്ന് ടിക്ക് ചെയ്ത് തീരുമാനിക്കാം.", "ة-യുടെ മൂല്യം നിങ്ങൾ തിരഞ്ഞെടുക്കണം: ه ആയി 5, അല്ലെങ്കിൽ ت ആയി 400. രണ്ടും പണ്ഡിതന്മാർക്കിടയിൽ ഉണ്ട്; ഒരേ കർമ്മത്തിൽ ഒരേ രീതി തുടരുക.", "ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ലെങ്കിൽ, നേരത്തെ കൂട്ടിവെച്ച തുക നേരിട്ട് സംഖ്യയായി കൊടുക്കാം. അപ്പോൾ വാചകം വേണ്ട.", "കിട്ടുന്ന ആകെ തുകയാണ് കള്ളിയുടെ അടിസ്ഥാനം. തുകയുടെ മൂലകവും (അഗ്നി, വായു, ജലം, മണ്ണ്) ഇവിടെത്തന്നെ കാണാം — തുകയെ 4 കൊണ്ട് ഹരിച്ച ബാക്കിയാണ് അത് നിശ്ചയിക്കുന്നത്."]} />
           <div className="flex gap-1.5">
-            {[["text", txt("ആയത്ത് / സൂറത്ത് / വാചകം", "Ayah / surah / text")], ["name", txt("പേര്", "Name")]].map(([k, l]) => (
+            {[["text", txt("ആയത്ത് / സൂറത്ത് / വാചകം", "Ayah / surah / text")],
+              ["hajat", txt("താലിബ് · ഹാജ · മത്‌ലൂബ്", "Seeker · need · sought")],
+              ["name", txt("പേര്", "Name")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setMode(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(mode === k)}>{l}</button>
             ))}
           </div>
-          {mode === "text" ? (
+          {mode === "hajat" ? (
+            <div className="space-y-2">
+              <Note color="rgba(255,255,255,0.6)">{txt(
+                "കിതാബ് നടുവിലെ വീട്ടിൽ ചോദിക്കുന്ന മൂന്ന് കാര്യങ്ങൾ (നിബന്ധന 34, പടി 4-5-6). ഇവിടെ ഒരിക്കൽ എഴുതിയാൽ മതി — തുകയും ഇതിൽനിന്ന്, നടുവിലെ വീടും ഇതിൽനിന്ന്.",
+                "The three the book asks for in the middle house (condition 34, ranks 4-6). Write them once here: the total comes from them, and so does the middle house.")}</Note>
+              {[["seeker", seeker, setSeeker, "الطالب", txt("താലിബ് — ആവശ്യപ്പെടുന്നയാളുടെ പേര്", "Talib — the seeker's name"),
+                 txt("ഉദാ: عبد الرحمن", "e.g. عبد الرحمن")],
+                ["need", need, setNeed, "الحاجة", txt("ഹാജ — ആവശ്യം", "Haja — the need"),
+                 txt("ഉദാ: ജോലി കിട്ടുക, മുഹബ്ബത്ത്, ആരോഗ്യം", "e.g. work, love, health")],
+                ["sought", sought, setSought, "المطلوب", txt("മത്‌ലൂബ് — തേടുന്നത്", "Matlub — what is sought"),
+                 txt("വേറൊരാളുടെ പേരോ മറ്റെന്തെങ്കിലുമോ ആകാം", "another person's name, or anything else")],
+              ].map(([k, v, set, ph, l, hint]) => (
+                <div key={k} className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <input type="checkbox" checked={useHajat[k]}
+                           onChange={(e) => setUseHajat({ ...useHajat, [k]: e.target.checked })} />
+                    <span className="flex-1 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
+                      {l} <span className="font-amiri text-sm" style={{ color: GOLD }}>{ph}</span>
+                    </span>
+                    <span className="w-16 text-right font-inter text-xs font-bold"
+                          style={{ color: useHajat[k] ? INK_C : "rgba(255,255,255,0.3)" }}>
+                      {hajatAbjad[k].total || "—"}
+                    </span>
+                  </div>
+                  <input value={v} onChange={(e) => set(e.target.value)} dir="rtl" placeholder={ph}
+                    className="w-full rounded-xl px-3 py-2 font-amiri text-lg outline-none" style={input} />
+                  <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.35)" }}>{hint}</p>
+                </div>
+              ))}
+              <Note color="rgba(255,255,255,0.45)">{txt(
+                "ഉദാഹരണം — ഭാര്യാഭർത്താക്കന്മാർ തമ്മിൽ ഇണങ്ങാൻ: താലിബിൽ ഭർത്താവിന്റെ പേര്, ഹാജയിൽ മുഹബ്ബത്ത്, മത്‌ലൂബിൽ ഭാര്യയുടെ പേര്. ജോലിക്കാണെങ്കിൽ: താലിബിൽ പേര്, ഹാജയിൽ ജോലി, മത്‌ലൂബ് ഒഴിച്ചിടാം.",
+                "An example — for a husband and wife to be at peace: the husband's name as talib, love as the haja, the wife's name as the matlub. For work: the name as talib, work as the haja, and the matlub may be left empty.")}</Note>
+            </div>
+          ) : mode === "text" ? (
             <>
               <textarea value={text} onChange={(e) => setText(e.target.value)} dir="rtl" rows={5}
                 placeholder="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
@@ -928,18 +975,13 @@ export default function SirrWafqPage() {
             </label>
           </div>
           <SurroundPick value={surround} onPick={setSurround} isEn={isEn} txt={txt} />
-          <div className="space-y-2">
-            <Note color="rgba(255,255,255,0.5)">{txt("നടുവിലെ വീട്ടിൽ എഴുതാൻ (നിബന്ധന 34) — അറബിയിൽ:", "For the middle house (condition 34) — in Arabic:")}</Note>
-            {[["seeker", seeker, setSeeker, "اسم الطالب", txt("ആവശ്യപ്പെടുന്നയാളുടെ പേര്", "Seeker's name")],
-              ["need", need, setNeed, "الحاجة", txt("ആവശ്യം", "The need")],
-              ["sought", sought, setSought, "المطلوب", txt("തേടുന്ന കാര്യം", "The matter sought")]].map(([k, v, set, ph, l]) => (
-              <div key={k} className="flex items-center gap-2">
-                <span className="w-28 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>{l}</span>
-                <input value={v} onChange={(e) => set(e.target.value)} dir="rtl" placeholder={ph}
-                  className="flex-1 rounded-xl px-3 py-2 font-amiri text-base outline-none" style={input} />
-              </div>
-            ))}
-          </div>
+          {/* The seeker, the need and the matter sought are written once, in
+              step 1, and carried down into the middle house from there. */}
+          {!(seeker || need || sought) && (
+            <Note color="rgba(255,255,255,0.45)">{txt(
+              "നടുവിലെ വീട്ടിൽ എഴുതേണ്ട താലിബ്, ഹാജ, മത്‌ലൂബ് — അവ ഒന്നാം പടിയിലെ \"താലിബ് · ഹാജ · മത്‌ലൂബ്\" എന്ന രീതിയിൽ എഴുതുക. ഇവിടെ വീണ്ടും എഴുതേണ്ടതില്ല.",
+              "The talib, haja and matlub for the middle house are written in step 1, under \"Seeker · need · sought\". There is no need to write them again here.")}</Note>
+          )}
           <button type="button" onClick={generate} disabled={!(N > 0)} className="w-full py-3 rounded-xl font-inter text-sm font-bold uppercase tracking-[0.2em]"
             style={{ background: N > 0 ? "linear-gradient(135deg,rgba(212,175,55,0.35),rgba(212,175,55,0.15))" : "rgba(255,255,255,0.04)", color: N > 0 ? "#fff6d6" : "rgba(255,255,255,0.3)", border: "1px solid rgba(212,175,55,0.55)" }}>
             ۞ {txt("കള്ളി ഉണ്ടാക്കുക", "Build the wafq")}
