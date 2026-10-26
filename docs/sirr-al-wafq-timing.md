@@ -234,3 +234,20 @@ cards, each lockable and priced on its own.
    home.
 8. Per-method surround is still one setting for all methods.
 9. **The GitHub repository is still public.**
+
+**Owner's decisions, 26-27 Oct 2026** (recorded so another session does not reopen them)
+
+- Kawamil (Kashf p.57) wins over the lunar-day table when they disagree
+  (day 16: the table calls trade and building good, Kawamil forbids
+  selling and "anything else"). Kept as built.
+- Kashf p.265, المتباغضة: reading (B). Mars and Saturn are companions of
+  each other for nahs work, and set against the fortunate four, so no
+  good work is done with them. Mercury mixes with either. Applied in
+  `astroClockPlanetFriendships.js`, which feeds Mizan 9's enemy-planet
+  penalty, the Astro Clock hour strength and the decision engine.
+- Section A surround: angels chosen in Arabic with their work and خير/شر;
+  one angel = that name on all four sides, الأربعة = all four. The ayah
+  written in step 1 is carried round the square. Any text splits in four
+  (by words, else by letters); only fewer than four letters cannot.
+- Only one session works on this at a time, on `wafq-timing-preview`;
+  nothing goes to main without the owner's OK.
