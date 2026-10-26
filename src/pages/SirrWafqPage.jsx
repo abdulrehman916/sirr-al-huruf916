@@ -118,7 +118,65 @@ const SIDE_ANGELS = [
  * square (p. 193). So this is one choice, with the book's own words for
  * the chosen form shown under it.
  */
-function SurroundPick({ value, onPick, isEn, txt }) {
+/**
+ * The four archangels, where the surround is chosen — because that is
+ * where the choice belongs. Each name in Arabic, each with the work the
+ * books give it, and the one the chosen purpose points to marked.
+ *
+ * Both books name the works for each, and on two of the four they do
+ * not agree, so both are shown rather than one picked for the reader.
+ */
+function AngelPick({ angel, onPick, four, recommended, isEn, txt }) {
+  return (
+    <div className="space-y-2">
+      <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
+        {four
+          ? txt("നാല് മലക്കുകളും കളത്തിൽ വരും. ഏത് കാര്യത്തിനാണെന്ന് തിരഞ്ഞെടുക്കുക — തിരഞ്ഞെടുത്തത് ഓരോ വശത്തും മുന്നിൽ നിൽക്കും.",
+                "All four are written on the square. Choose which work this is for — the one chosen leads each side.")
+          : txt("തിരഞ്ഞെടുക്കുന്ന മലക്കിന്റെ പേര് മാത്രം നാല് വശത്തും വരും.",
+                "Only the chosen angel's name is written, on all four sides.")}
+      </p>
+      <div className="grid grid-cols-2 gap-2">
+        {ARCHANGELS.map((a) => {
+          const on = angel === a.id;
+          const rec = recommended && recommended === a.ar;
+          return (
+            <button key={a.id} type="button" onClick={() => onPick(a.id)}
+              className="rounded-xl p-2.5 text-right space-y-1"
+              style={{
+                background: on ? "rgba(212,175,55,0.16)" : "rgba(255,255,255,0.03)",
+                border: `1px solid ${on ? "rgba(212,175,55,0.6)" : "rgba(212,175,55,0.22)"}`,
+                ...(rec ? { borderColor: "#4ADE80", background: on ? "rgba(74,222,128,0.18)" : "rgba(74,222,128,0.09)",
+                            boxShadow: "0 0 10px rgba(74,222,128,0.22)" } : {}),
+              }}>
+              <span className="font-amiri text-xl block" style={{ color: a.harm ? "#FCA5A5" : "#fff" }}>
+                {a.ar}
+              </span>
+              <span className="font-inter text-[10px] block" style={{ color: GOLD }}>
+                {isEn ? a.id : a.ml}
+                {rec && <b style={{ color: "#4ADE80" }}> ★ {txt("ഇതിന് യോജിച്ചത്", "fits this work")}</b>}
+                {on && <span style={{ color: "#4ADE80" }}> ✓</span>}
+              </span>
+              {/* Both readings, with no book named and no page — the
+                  owner's rule for what a reader sees. The references
+                  stay in wafqSurround.js beside the data. */}
+              <span className="font-inter text-[9px] block leading-relaxed"
+                    style={{ color: "rgba(255,255,255,0.6)" }}>
+                {isEn ? a.kashf_en : a.kashf_ml}
+              </span>
+              <span className="font-inter text-[9px] block leading-relaxed"
+                    style={{ color: "rgba(255,255,255,0.6)" }}>
+                {isEn ? a.havass_en : a.havass_ml}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function SurroundPick({ value, onPick, isEn, txt, angel, onAngel, recommended }) {
   const sel = SURROUND_MODES.find((m) => m.id === value) || SURROUND_MODES[1];
   return (
     <div className="space-y-2">
@@ -138,6 +196,12 @@ function SurroundPick({ value, onPick, isEn, txt }) {
           </button>
         ))}
       </div>
+      {/* The angels belong here, with the form that writes them. */}
+      {sel.angels && (
+        <AngelPick angel={angel} onPick={onAngel} four={sel.four}
+                   recommended={recommended} isEn={isEn} txt={txt} />
+      )}
+
       <div className="rounded-xl p-2.5 space-y-1.5" style={card}>
         <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.82)" }}>
           {isEn ? sel.note_en : sel.note_ml}
@@ -959,7 +1023,9 @@ export default function SirrWafqPage() {
               <input type="number" min={1} max={99} value={step} onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))} className="w-14 rounded-lg px-2 py-1" style={input} />
             </label>
           </div>
-          <SurroundPick value={surround} onPick={setSurround} isEn={isEn} txt={txt} />
+          <SurroundPick value={surround} onPick={setSurround} isEn={isEn} txt={txt}
+                        angel={angel} onAngel={setAngel}
+                        recommended={needAngel ? needAngel.angel : null} />
           {/* The seeker, the need and the matter sought are written once, in
               step 1, and carried down into the middle house from there. */}
           {!(seeker || need || sought) && (
