@@ -92,15 +92,23 @@ export default function WafqSheet({
     // textLength opens gaps between the glyphs, which breaks the joins
     // and leaves the letters standing apart; shrinking the type keeps
     // every word in one piece, which is the thing that matters.
-    const ringEl = svg.querySelector("[data-ring]");
-    if (ringEl) {
-      const room = Number(ringEl.dataset.ring);
-      let fs = 34;
-      ringEl.style.fontSize = `${fs}px`;
-      for (let i = 0; i < 60 && ringEl.getComputedTextLength() > room && fs > 5; i++) {
-        fs -= 1;
-        ringEl.style.fontSize = `${fs}px`;
-      }
+    // Every ring is shrunk until it fits, and then all of them are set
+    // to the smallest size any one needed, so a long tawkeel running
+    // round two or three rings reads in one hand throughout.
+    const ringEls = [...svg.querySelectorAll("[data-ring]")];
+    if (ringEls.length) {
+      let low = 34;
+      ringEls.forEach((el) => {
+        const room = Number(el.dataset.ring);
+        let fs = 34;
+        el.style.fontSize = `${fs}px`;
+        for (let i = 0; i < 60 && el.getComputedTextLength() > room && fs > 5; i++) {
+          fs -= 1;
+          el.style.fontSize = `${fs}px`;
+        }
+        low = Math.min(low, fs);
+      });
+      ringEls.forEach((el) => { el.style.fontSize = `${low}px`; });
     }
   });
 
@@ -183,24 +191,52 @@ export default function WafqSheet({
   // drawn inward to leave it clear. Otherwise the ring runs straight
   // through the seals at the top.
   const ringText = (ringAround || "").trim();
-  const ringR = 470;
+  // A long text — a day's qasam with its tawkeel — goes round more than
+  // once: up to four rings, outermost first, the words shared out by the
+  // length of each circle. Everything inside is drawn smaller to leave
+  // the rings clear.
+  const RING_STEP = 38;
+  const ringCount = ringText ? Math.min(4, Math.max(1, Math.ceil(ringText.length / 240))) : 0;
+  const radii = Array.from({ length: ringCount }, (_, i) => 470 - i * RING_STEP);
+  const ringLines = (() => {
+    if (!ringCount) return [];
+    if (ringCount === 1) return [ringText];
+    const words = ringText.split(/\s+/);
+    const totalLen = ringText.length;
+    const sumR = radii.reduce((x, y) => x + y, 0);
+    const out = [];
+    let cur = [], curLen = 0, k = 0;
+    for (const w of words) {
+      const quota = (totalLen * radii[k]) / sumR;
+      if (cur.length && curLen + w.length > quota && k < ringCount - 1) {
+        out.push(cur.join(" ")); cur = []; curLen = 0; k += 1;
+      }
+      cur.push(w); curLen += w.length + 1;
+    }
+    out.push(cur.join(" "));
+    return out;
+  })();
   const innerScale = ringText ? 0.80 : 1;
-  const ring = ringText
-    ? (
-      <>
-        {/* The circle starts at the bottom, so the halfway point — where
-            the text is centred — falls at the top, and a short text sits
-            over the head of the sheet rather than under its foot. */}
-        <path id="wf-ring" fill="none"
-              d={`M ${C} ${C + ringR} A ${ringR} ${ringR} 0 1 1 ${C} ${C - ringR}`
-                 + ` A ${ringR} ${ringR} 0 1 1 ${C} ${C + ringR}`} />
-        <text className="wf-ring" data-ring={2 * Math.PI * ringR * 0.96}>
-          <textPath href="#wf-ring" startOffset="50%" textAnchor="middle">
-            {ringText}
-          </textPath>
-        </text>
-      </>
-    )
+  // the whole one-ring layout, drawn inward to sit inside the last ring
+  const fit = ringCount > 1 ? radii[ringCount - 1] / 470 : 1;
+  const ring = ringLines.length
+    ? ringLines.map((line, i) => {
+      const r = radii[i];
+      return (
+        <g key={i}>
+          {/* The circle starts at the bottom, so the halfway point — where
+              the text is centred — falls at the top. */}
+          <path id={`wf-ring-${i}`} fill="none"
+                d={`M ${C} ${C + r} A ${r} ${r} 0 1 1 ${C} ${C - r}`
+                   + ` A ${r} ${r} 0 1 1 ${C} ${C + r}`} />
+          <text className="wf-ring" data-ring={2 * Math.PI * r * 0.96}>
+            <textPath href={`#wf-ring-${i}`} startOffset="50%" textAnchor="middle">
+              {line}
+            </textPath>
+          </text>
+        </g>
+      );
+    })
     : null;
 
   // ── the square and its numbers ──
@@ -241,13 +277,14 @@ export default function WafqSheet({
         .wf line, .wf rect.sq { stroke: currentColor; fill: none; }
       `}</style>
       <g className="wf">
+        {ring}
+        <g transform={`translate(${C} ${C}) scale(${fit}) translate(${-C} ${-C})`}>
         <g transform={`translate(0 ${ringText ? 86 : 0})`}>
           <text x={C} y={48} className="wf-num">
             {String(BASMALA_NUMBER).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])}
           </text>
           {seals && <g transform="translate(0 62)" fill="currentColor">{seals}</g>}
         </g>
-        {ring}
         <g transform={`translate(${C} ${C}) scale(${innerScale}) translate(${-C} ${-C})`}>
           {around}
           {corners}
@@ -255,6 +292,7 @@ export default function WafqSheet({
           <rect className="sq" x={a} y={a} width={size} height={size} strokeWidth="3" />
           <g strokeWidth="2">{lines}</g>
           {nums}
+        </g>
         </g>
       </g>
     </svg>

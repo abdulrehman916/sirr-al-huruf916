@@ -27,6 +27,7 @@ import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
 import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
+import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, needFor, NEED_PRESETS } from "@/lib/wafqDayQasam";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
@@ -165,8 +166,79 @@ function SplitBox({ title, value, onChange, four, note, isEn, txt }) {
   );
 }
 
+const TK_INPUT = { background: "rgba(0,0,0,0.25)", color: INK_C, border: "1px solid rgba(212,175,55,0.25)" };
+const WD_AR = ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+
+/**
+ * التوكيل — the day's qasam (Kashf pp. 29-31) written round the square,
+ * with the need in the place of كذا وكذا, then the book's command to the
+ * square's khadims (p. 301). For love, the love ayahs and their tawkeel
+ * (pp. 50-51) in the command's place, with the person sought in place of
+ * فلان بن فلانة. The day is the square's own day.
+ */
+function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
+  const set = (k) => (e) => setTk({ ...tk, [k]: e.target.type === "checkbox" ? e.target.checked : e.target.value });
+  const q = DAY_QASAM[wd];
+  const person = personAr(tk.name, tk.mother, tk.female);
+  const need = needFor(tk.need, person);
+  const sought = personAr(tk.sName, tk.sMother, tk.sFemale);
+  const field = "w-full rounded-xl px-3 py-1.5 font-amiri text-lg outline-none";
+  const lab = (t) => <span className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>{t}</span>;
+  const who = (k1, k2, kf, title) => (
+    <div className="space-y-1">
+      {lab(title)}
+      <div className="flex gap-1.5">
+        <input value={tk[k1]} onChange={set(k1)} dir="rtl" placeholder={txt("പേര് (അറബിയിൽ)", "Name (Arabic)")} className={field} style={TK_INPUT} />
+        <input value={tk[k2]} onChange={set(k2)} dir="rtl" placeholder={txt("ഉമ്മയുടെ പേര്", "Mother's name")} className={field} style={TK_INPUT} />
+      </div>
+      <label className="flex items-center gap-1.5 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>
+        <input type="checkbox" checked={!!tk[kf]} onChange={set(kf)} />
+        {txt("സ്ത്രീ (بن-ന് പകരം بنت)", "A woman (بنت in place of بن)")}
+      </label>
+    </div>
+  );
+  return (
+    <div className="rounded-xl p-2.5 space-y-2.5" style={{ border: "1px solid rgba(212,175,55,0.35)", background: "rgba(212,175,55,0.05)" }}>
+      <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
+        {txt(`കളത്തിന്റെ ദിവസം: ${WD_ML[wd]} (يوم ${WD_AR[wd]}) — ഖാദിം ${q.khadim}, മലക്ക് ${q.angel}. ആ ദിവസത്തെ ഖസം, كذا وكذا-യുടെ സ്ഥാനത്ത് ആവശ്യം ചേർത്ത്, കളത്തിന് ചുറ്റും എഴുതുന്നു. അതിനു ശേഷം കളത്തിന്റെ ഖാദിമുകളോടുള്ള കൽപ്പന.`,
+             `The square's day: ${WD_EN[wd]} (يوم ${WD_AR[wd]}) — khadim ${q.khadim}, angel ${q.angel}. That day's qasam is written round the square with the need in place of كذا وكذا, then the command to the square's khadims.`)}
+        {!fromSquare && txt(" (10×10-ന് കിതാബിൽ ഗ്രഹമില്ലാത്തതിനാൽ ഇന്നത്തെ / തിരഞ്ഞെടുത്ത ദിവസം.)", " (The 10×10 has no planet in the book, so today's / the chosen day is used.)")}
+      </p>
+      {who("name", "mother", "female", txt("ആർക്കുവേണ്ടി (طالب)", "For whom (the seeker)"))}
+      <div className="space-y-1">
+        {lab(txt("ആവശ്യം (كذا وكذا) — അറബിയിൽ", "The need (كذا وكذا) — in Arabic"))}
+        <div className="flex flex-wrap gap-1" dir="rtl">
+          {NEED_PRESETS.map((p) => (
+            <button key={p.id} type="button" onClick={() => setTk({ ...tk, need: p.ar, love: p.id === "love" ? true : tk.love })}
+                    className="px-2 py-0.5 rounded-lg font-amiri text-sm" style={PILL(tk.need === p.ar)}>{p.ar}</button>
+          ))}
+        </div>
+        <input value={tk.need} onChange={set("need")} dir="rtl" className={field} style={TK_INPUT}
+               placeholder="العمل" />
+        <p className="font-amiri text-base" dir="rtl" style={{ color: GOLD }}>كذا وكذا ← {need || "—"}</p>
+      </div>
+      <label className="flex items-center gap-1.5 font-inter text-[11px]" style={{ color: "#F9A8D4" }}>
+        <input type="checkbox" checked={!!tk.love} onChange={set("love")} />
+        {txt("സ്നേഹത്തിന്റെ കർമ്മം — കൽപ്പന توكّلوا يا خدّام هذه الآيات എന്ന് (കിതാബിലെ സ്നേഹ ആയത്തുകളോടെ)",
+             "A work of love — the command is توكّلوا يا خدّام هذه الآيات (with the book's love ayahs)")}
+      </label>
+      {tk.love && who("sName", "sMother", "sFemale", txt("ആരെ (مطلوب) — فلان بن فلانة", "Whom (the one sought) — فلان بن فلانة"))}
+      <div className="rounded-lg p-2" style={{ background: "rgba(0,0,0,0.25)" }}>
+        {lab(txt("ചുറ്റും എഴുതുന്നത്:", "What is written round:"))}
+        <p className="font-amiri text-base leading-loose" dir="rtl" style={{ color: INK_C }}>
+          {tawkeelRing(wd, need, { love: tk.love, sought })}
+        </p>
+      </div>
+      <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
+        {txt("ഖസം: കിതാബ് പേജ് 29–31-ലെ രണ്ടാമത്തെ രീതി. കൽപ്പന: പേജ് 301. സ്നേഹം: പേജ് 50–51. ആവശ്യവും പേരുകളും മാത്രമേ ചേർക്കുന്നുള്ളൂ; ബാക്കി കിതാബിലെ വാക്കുകൾ അതുപോലെ.",
+             "Qasam: the book's second set. Command: the book's words after the square is filled. Love: the book's love condition. Only the need and the names are filled in; the rest is the book's wording as printed.")}
+      </p>
+    </div>
+  );
+}
+
 function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorners,
-                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isLove, isEn, txt }) {
+                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isLove, isEn, txt, tawkeelBox }) {
   const Row = ({ id, children }) => (
     <button type="button" onClick={() => setAngelSel(id)} dir="rtl"
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-right" style={PILL(angelSel === id)}>
@@ -225,7 +297,8 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
       <Pills label="الزوايا:" value={corners} onPick={setCorners}
              opts={[["none", "بلا"], ["book", CORNER_VERSE], ["ayah", "الآية"]]} />
       <Pills label="الدائرة:" value={ring} onPick={setRing}
-             opts={[["none", "بلا"], ["besmele", "بسم الله الرحمن الرحيم"], ["ayah", "الآية"]]} />
+             opts={[["none", "بلا"], ["ayah", "الآية"], ["tawkeel", "التوكيل"]]} />
+      {ring === "tawkeel" && tawkeelBox}
 
       <details open={isLove} className="rounded-xl p-2.5" style={{ background: isLove ? "rgba(244,114,182,0.07)" : "transparent", border: `1px solid ${isLove ? "rgba(244,114,182,0.4)" : "rgba(212,175,55,0.18)"}` }}>
         <summary className="font-inter text-[11px] font-bold cursor-pointer" style={{ color: isLove ? "#F9A8D4" : "rgba(255,255,255,0.6)" }}>
@@ -243,9 +316,9 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
         </div>
       </details>
 
-      {(edge === "besmele" || ring === "besmele") && (
+      {edge === "besmele" && (
         <SplitBox title="البسملة" value={bismi} onChange={setBismi}
-                  four={edge === "besmele"} isEn={isEn} txt={txt} />
+                  four isEn={isEn} txt={txt} />
       )}
       {usesAyah && (
         <SplitBox title="الآية" value={ayah} onChange={setAyah}
@@ -702,6 +775,9 @@ export default function SirrWafqPage() {
   const [corners, setCorners] = useState("none");
   const [ringPick, setRingPick] = useState(null);
   const [ayahEdit, setAyahEdit] = useState(null);
+  // التوكيل round the square: only what the reader has changed by hand;
+  // the rest is taken from step 1 and the chosen purpose (see tk below).
+  const [tkEdit, setTkEdit] = useState({});
   // Kashf p.300-301 gives two ways of the names said while each letter is written.
   const [reciteWay, setReciteWay] = useState(1);
   const RECITE = reciteWay === 2 ? HOUSE_RECITE_2 : HOUSE_RECITE;
@@ -809,6 +885,19 @@ export default function SirrWafqPage() {
     toArabicDigits(result.n),
   ] : [];
   const isLoveWork = purposeId === "love" || purposeId === "accept" || actId === "marriage";
+  // The square's own day (its planet's day); the 10×10 has none in the
+  // book, so it falls back to the day already in use.
+  const sqPlanet = SQUARE_PLANET[result ? result.n : n] || null;
+  const sqWd = sqPlanet ? sqPlanet.day : dayWd;
+  const tk = {
+    name: seeker || names.self || "", mother: names.mother || "", female: false,
+    need: purposeId === "love" || actId === "marriage" ? "المحبة والألفة" : "",
+    love: purposeId === "love" || actId === "marriage",
+    sName: mode === "hajat" ? sought : "", sMother: "", sFemale: true,
+    ...tkEdit,
+  };
+  const tkNeed = needFor(tk.need, personAr(tk.name, tk.mother, tk.female));
+  const tkRingText = tawkeelRing(sqWd, tkNeed, { love: tk.love, sought: personAr(tk.sName, tk.sMother, tk.sFemale) });
 
   function copyText() {
     if (!result) return;
@@ -1157,6 +1246,7 @@ export default function SirrWafqPage() {
                         ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
                         isLove={purposeId === "love" || actId === "marriage"}
+                        tawkeelBox={<TawkeelBox wd={sqWd} fromSquare={!!sqPlanet} tk={tk} setTk={setTkEdit} isEn={isEn} txt={txt} />}
                         isEn={isEn} txt={txt} />
           {/* The seeker, the need and the matter sought are written once, in
               step 1, and carried down into the middle house from there. */}
@@ -1342,10 +1432,10 @@ export default function SirrWafqPage() {
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
                 <WafqSheet grid={result.grid} angel={angel}
                            angels={angelSel !== "none"} fourAngels={angelSel === "four"}
-                           weekday={dayWd} besmele={false}
+                           weekday={sqWd} besmele={false}
                            verse={corners === "book" ? CORNER_VERSE : corners === "ayah" ? ayah.trim() : ""}
                            lineText={edge === "besmele" ? (bismiText.trim() || BASMALA_FULL) : edge === "ayah" ? ayah.trim() : ""}
-                           ringAround={ring === "besmele" ? (bismiText.trim() || BASMALA_FULL) : ring === "ayah" ? ayah.trim() : ""}
+                           ringAround={ring === "tawkeel" ? tkRingText : ring === "ayah" ? ayah.trim() : ""}
                            className="w-full h-auto" />
               </div>
 
@@ -1358,6 +1448,36 @@ export default function SirrWafqPage() {
                 {txt("കള്ളി ചിത്രമായി സൂക്ഷിക്കുക (PNG)", "Save the sheet as a PNG")}
               </button>
 
+
+              {/* What is said — the day's qasam and the common azima (Kashf
+                  pp. 24-25, 29-31). Said, not only written: the qasam as many
+                  times as the total, the side, or the letters; the azima
+                  3, 5 or 7 times. */}
+              <div className="rounded-2xl p-3 space-y-2" style={card}>
+                <p className="font-amiri text-xl text-center" dir="rtl" style={{ color: GOLD }}>القسم والعزيمة</p>
+                <Note color="rgba(255,255,255,0.7)">{txt(
+                  `കിതാബ്: ഖസം "ശർത്തുകളിൽ ഏറ്റവും പ്രധാനം". കളത്തിന്റെ ദിവസമായ ${WD_ML[sqWd]} ദിവസത്തെ ഖസം, ആവശ്യം ചേർത്ത്, ചൊല്ലുക. പിന്നെ ആ ദിവസത്തെ ബഖൂർ പുകച്ച് പൊതു അസീമ.`,
+                  `The book: the qasam is "the most important of the conditions". Say the qasam of the square's day, ${WD_EN[sqWd]}, with the need in it; then, with that day's incense, the common azima.`)}</Note>
+                <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>{txt("1. ദിവസത്തിന്റെ ഖസം", "1. The day's qasam")}</p>
+                <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>
+                  {dayQasam(sqWd, tkNeed, { voc: true })}{" "}
+                  {tk.love ? loveTawkeel(personAr(tk.sName, tk.sMother, tk.sFemale), { voc: true }) : khadimCommand(tkNeed, { voc: true })}
+                </p>
+                {(() => {
+                  const letters = (lettersText.match(/[ء-ي]/g) || []).length;
+                  return (
+                    <Note color="rgba(255,255,255,0.6)">{txt(
+                      `എണ്ണം — കിതാബ് മൂന്നിൽ ഒന്ന് പറയുന്നു: ആകെ തുക (${result.N}) പ്രാവശ്യം, അല്ലെങ്കിൽ കളത്തിന്റെ ഒരു വശത്തെ വീടുകളുടെ എണ്ണം (${result.n}) പ്രാവശ്യം${letters ? `, അല്ലെങ്കിൽ അക്ഷരങ്ങളുടെ എണ്ണം (${letters}) പ്രാവശ്യം` : ""}.`,
+                      `How many times — the book gives three: the total (${result.N}), or the houses on a side (${result.n})${letters ? `, or the number of letters (${letters})` : ""}.`)}</Note>
+                  );
+                })()}
+                {!tkNeed && <Note color="#FCA5A5">{txt("ആവശ്യം ചേർത്തിട്ടില്ല — മൂന്നാം പടിയിൽ الدائرة → التوكيل-ൽ പേരും ആവശ്യവും എഴുതുക. അതുവരെ كذا وكذا എന്ന് കാണും.", "No need filled in — write the name and need under الدائرة → التوكيل in step 3. Until then it reads كذا وكذا.")}</Note>}
+                <p className="font-inter text-[10px] font-bold pt-1" style={{ color: GOLD }}>{txt("2. പൊതു അസീമ — 3, 5 അല്ലെങ്കിൽ 7 പ്രാവശ്യം", "2. The common azima — 3, 5 or 7 times")}</p>
+                <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{COMMON_AZIMA.v}</p>
+                <Note color="rgba(255,255,255,0.45)">{txt(
+                  "കിതാബിൽ ഒരിടത്ത് ഖസം അസീമക്ക് ശേഷമെന്നും മറ്റൊരിടത്ത് അസീമ ഖസമിന് ശേഷമെന്നും പറയുന്നു. റിയാദ: പണി തുടങ്ങുന്നതിന് മുമ്പ് 3 അല്ലെങ്കിൽ 7 ദിവസം, അതിൽ കൂടുതലും ആകാം (ആവശ്യത്തിന്റെ കാഠിന്യം അനുസരിച്ച്). എഴുതിയ ശേഷം എത്ര ദിവസം ചൊല്ലണമെന്ന് ഈ കിതാബ് പറയുന്നില്ല.",
+                  "The book puts the qasam after the azima in one place and the azima after the qasam in another. Riyada: 3 or 7 days or more before the work begins, by how hard the need is. How many days to say it after writing, this book does not say.")}</Note>
+              </div>
 
               {/* The hadims are drawn out by Hâvâss's rule alone (Kashf has
                   none), so they belong to the Hâvâss section, C — the

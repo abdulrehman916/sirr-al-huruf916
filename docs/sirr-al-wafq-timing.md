@@ -258,3 +258,5 @@ cards, each lockable and priced on its own.
   they are shown in Section C, not A. Numbers are spoken by Hâvâss I p.97
   (istintak): thousands as count + one غ — 8464 حغتسد, 778688 ذعحغخفح.
   Kashf has no number-to-letters rule.
+
+- 27 Oct 2026 (owner): the ring round the square becomes التوكيل — the qasam of the square's own day (Kashf pp. 29-31, second set) with the need in place of كذا وكذا, then the command to the square's khadims (p. 301). For love, the love ayahs and their tawkeel (pp. 50-51), with the person sought in place of فلان بن فلانة. The besmele ring option is removed (it was Hâvâss's, and the besmele is already the four sides). The day's angels on the sheet follow the square's day. The qasam and the common azima are shown with harakat for reading, with the book's counts.
