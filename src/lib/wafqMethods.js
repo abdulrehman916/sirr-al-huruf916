@@ -30,7 +30,14 @@ function lineSums(g) {
 }
 const checkAll = (g, expected) => {
   const s = lineSums(g);
-  return { sums: s, valid: s.all.every((v) => v === expected), expected };
+  // Rows and columns are reported apart from the diagonals. With jabr
+  // on a 3×3 the rows and columns come out and one diagonal falls a
+  // step short, and that is the book's own method, not a slip — so
+  // the reader is shown which lines met the total rather than one ✗
+  // over the whole square.
+  const linesOk = [...s.rows, ...s.cols].every((v) => v === expected);
+  const diagsOk = s.d1 === expected && s.d2 === expected;
+  return { sums: s, valid: linesOk && diagsOk, linesOk, diagsOk, expected };
 };
 
 /** Abjad total of a short Arabic string, letter by letter (for the letter methods). */

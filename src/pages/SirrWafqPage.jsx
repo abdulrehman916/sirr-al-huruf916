@@ -314,6 +314,19 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
                 <Grid grid={built.grid} arabic={!m.letters}
                       cellNote={built.letters ? built.letters.flat() : null} />
               )}
+              {built.linesOk && built.diagsOk === false && (
+                <div className="rounded-xl p-2.5" style={{ background: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.3)" }}>
+                  <p className="font-inter text-[11px]" style={{ color: "#FBBF24" }}>
+                    {txt("എല്ലാ വരിയും നിരയും തുകയിൽ ഒത്തുവന്നു; ഒരു കോൺ ഒരു പടി കുറവാണ്. ഇത് ആപ്പിന്റെ പിഴവല്ല — ജബ്ർ വേണ്ടിവരുമ്പോൾ കിതാബിന്റെ രീതി തന്നെ ഇങ്ങനെയാണ് വരുന്നത്. (മുഅല്ലസിന്റെ കള്ളി ഗണിതപരമായി ഒന്നേയുള്ളൂ, അതുകൊണ്ട് ജബ്റിൽ രണ്ട് കോണും ഒത്തുവരിക സാധ്യമല്ല.) തുക ബാക്കി വരാതെ ഹരിക്കുന്ന ഒരു വാചകം തിരഞ്ഞെടുക്കുകയോ, നടുവ് ഒഴിഞ്ഞ മുഅല്ലസ് നോക്കുകയോ ചെയ്യാം.",
+                         "Every row and column met the total; one diagonal falls a step short. This is not a slip in the app — it is what the book's own method gives when jabr is needed. (There is only one 3×3 square, so with jabr both diagonals cannot come out.) Either choose a text whose total divides without a remainder, or use the hollow-centre 3×3.")}
+                  </p>
+                  <p className="font-inter text-[10px] mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
+                    {txt("കശ്ഫ് പേ. 295 — ജബ്ർ വീടിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1",
+                         "Kashf p. 295 — the rule for the jabr house: (houses of the side − remainder) × houses of the side + 1")}
+                  </p>
+                </div>
+              )}
+
               {built.withLetters && (
                 <div className="rounded-xl p-2.5" style={{ background: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.3)" }}>
                   <p className="font-inter text-[11px]" style={{ color: "#FBBF24" }}>
