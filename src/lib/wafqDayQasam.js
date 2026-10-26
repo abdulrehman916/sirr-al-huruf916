@@ -151,25 +151,34 @@ export function personAr(name, mother, female = false) {
   return m ? `${a} ${female ? "بنت" : "بن"} ${m}` : a;
 }
 
-/** Ready Arabic needs: the book's own names for its works (PURPOSES, and
- *  استجلاب الأرزاق from the water square, p. 300). Editable by the reader. */
+/**
+ * Ready needs, written out as a whole phrase with the person in it, for
+ * the place of كذا وكذا: "{p}" is the seeker (فلان بن فلانة), "{s}" the
+ * other person (for love between two). "{h}" is ه or ها by the seeker.
+ * The kinds of work are the book's own (its list of works and the water
+ * square's provision, p. 300); the Arabic wording of each phrase is ours,
+ * since the book leaves كذا وكذا to the worker, and every phrase can be
+ * changed by hand or replaced by one's own.
+ */
 export const NEED_PRESETS = [
-  { id: "work", ar: "العمل", ml: "ജോലി" },
-  { id: "needs", ar: "قضاء الحاجات", ml: "ആവശ്യം നിറവേറൽ" },
-  { id: "rizq", ar: "استجلاب الأرزاق", ml: "രിസ്ഖ്" },
-  { id: "accept", ar: "القبول", ml: "സ്വീകാര്യത" },
-  { id: "fath", ar: "الفتح", ml: "ഫത്ഹ്" },
-  { id: "goal", ar: "الوصول", ml: "ലക്ഷ്യത്തിലെത്തൽ" },
-  { id: "victory", ar: "النصر", ml: "വിജയം" },
-  { id: "healing", ar: "الشفاء", ml: "ശിഫ" },
-  { id: "safety", ar: "الأمن وحفظ النفس", ml: "സംരക്ഷണം" },
-  { id: "prisoner", ar: "خلاص المسجون", ml: "തടവിൽ നിന്ന് മോചനം" },
-  { id: "love", ar: "المحبة والألفة", ml: "സ്നേഹം" },
+  { id: "work", ml: "ജോലി", ar: "حصول {p} على عمل طيب" },
+  { id: "rizq", ml: "രിസ്ഖ്", ar: "سعة رزق {p}" },
+  { id: "needs", ml: "ആവശ്യം നിറവേറൽ", ar: "قضاء حاجة {p}" },
+  { id: "accept", ml: "സ്വീകാര്യത", ar: "قبول {p} عند الناس" },
+  { id: "fath", ml: "ഫത്ഹ്", ar: "فتح أبواب الخير ل{p}" },
+  { id: "goal", ml: "ലക്ഷ്യത്തിലെത്തൽ", ar: "وصول {p} إلى مطلوب{h}" },
+  { id: "healing", ml: "ശിഫ", ar: "شفاء {p} من مرض{h}" },
+  { id: "safety", ml: "സംരക്ഷണം", ar: "حفظ {p} من كل سوء" },
+  { id: "shaytan", ml: "ശൈത്വാന്റെ ഉപദ്രവം നീങ്ങൽ", ar: "دفع أذى الشيطان عن {p}" },
+  { id: "prisoner", ml: "തടവിൽ നിന്ന് മോചനം", ar: "خلاص {p} من السجن" },
+  { id: "love", ml: "ഭാര്യാഭർത്താക്കന്മാർക്കിടയിൽ സ്നേഹം", ar: "دوام المحبة والمودة والألفة بين {p} و{s}", two: true },
 ];
 
-/** The need for كذا وكذا: "<need> ل<person>". */
-export function needFor(needAr, person) {
-  const n = (needAr || "").trim();
-  if (!n) return "";
-  return person ? `${n} ل${person}` : n;
+/** Fill a preset phrase with the people. */
+export function fillNeed(tpl, person, other = "", female = false) {
+  return (tpl || "")
+    .replaceAll("{p}", person || "فلان بن فلانة")
+    .replaceAll("{s}", other || "فلانة بنت فلانة")
+    .replaceAll("{h}", female ? "ها" : "ه")
+    .replace(/\s+/g, " ").trim();
 }

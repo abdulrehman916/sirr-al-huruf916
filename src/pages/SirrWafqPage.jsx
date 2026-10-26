@@ -19,7 +19,7 @@ import {
 } from "@/lib/sirrWafqEngine";
 import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
-import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
+import { getPlanetaryDay, civilOf, addDays, sunOf } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { METHODS, methodsFor, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf, TUKHI_WARNING } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
@@ -27,7 +27,7 @@ import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
 import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
-import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, needFor, NEED_PRESETS } from "@/lib/wafqDayQasam";
+import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, fillNeed, NEED_PRESETS } from "@/lib/wafqDayQasam";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
@@ -176,12 +176,82 @@ const WD_AR = ["الأحد", "الاثنين", "الثلاثاء", "الأربع
  * (pp. 50-51) in the command's place, with the person sought in place of
  * فلان بن فلانة. The day is the square's own day.
  */
+const DAY_PLANET_EN = ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"];
+
+/**
+ * The square's own day and its planet's hours on it. If today is that
+ * day and its hours are not all past, today; otherwise the next such
+ * weekday — and the one after, in case the first falls on a day the book
+ * counts unlucky. The day's planet rules the first and the eighth hour of
+ * its daytime.
+ */
+function squareDayTimes(wd, nowMs, loc, count = 2) {
+  const out = [];
+  try {
+    const planet = DAY_PLANET_EN[wd];
+    const today = civilOf(nowMs, loc);
+    for (let i = 0; i <= 21 && out.length < count; i++) {
+      const c = addDays(today, i);
+      if (c.wd !== wd) continue;
+      const pd = getPlanetaryDay(sunOf(c, loc).rise + 3 * 3600e3, loc);
+      const hours = pd.hours
+        .filter((h) => h.planet === planet && Number.isFinite(h.start) && h.end > nowMs)
+        .map((h) => ({ ...h, current: nowMs >= h.start, strong: h.period === "day" && (h.num === 1 || h.num === 8) }));
+      if (!hours.length) continue;
+      out.push({ civil: c, hours, nahs: !!pd.day.isNahsDay, kamil: !!pd.day.isKamil });
+    }
+  } catch (_) { /* nothing */ }
+  return out;
+}
+
+function SquareDayTimes({ wd, fromSquare, n, loc, isEn, txt }) {
+  const days = useMemo(() => squareDayTimes(wd, Date.now(), loc), [wd]);
+  const pl = K.PLANETS[DAY_PLANET_EN[wd]];
+  return (
+    <div className="rounded-2xl p-3 space-y-2" style={{ ...card, border: "1px solid rgba(212,175,55,0.45)" }}>
+      <p className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>
+        {txt(`ഈ കളത്തിന്റെ ദിവസവും സമയവും — ${n}×${n}: ${pl.ml} (${pl.ar}), ${WD_ML[wd]}`,
+             `This square's day and hours — ${n}×${n}: ${pl.en} (${pl.ar}), ${WD_EN[wd]}`)}
+      </p>
+      <Note color="rgba(255,255,255,0.65)">{fromSquare
+        ? txt(`കളം എഴുതേണ്ടത് അതിന്റെ ഗ്രഹത്തിന്റെ ദിവസം, ആ ഗ്രഹത്തിന്റെ സാഅത്തിലാണ്. ഇന്ന് ${WD_ML[wd]} ആണെങ്കിൽ ഇന്നത്തെ ബാക്കിയുള്ള സാഅത്തുകൾ; അല്ലെങ്കിൽ അടുത്ത ${WD_ML[wd]}. പകലിലെ ഒന്നാമത്തെയും എട്ടാമത്തെയും സാഅത്താണ് ഏറ്റവും ശക്തം (★).`,
+              `The square is written on its planet's day, in that planet's hour. If today is ${WD_EN[wd]}, today's remaining hours; otherwise the next ${WD_EN[wd]}. The first and eighth hours of the daytime are the strongest (★).`)
+        : txt("10×10-ന് കിതാബിൽ ഗ്രഹമില്ല. അതുകൊണ്ട് ഇന്നത്തെ / തിരഞ്ഞെടുത്ത ദിവസമാണ് ഇവിടെ.", "The 10×10 has no planet in the book, so today's / the chosen day is used.")}</Note>
+      {days.length === 0 && <Note color="#FCA5A5">{txt("സമയം കണക്കാക്കാൻ കഴിഞ്ഞില്ല.", "The hours could not be worked out.")}</Note>}
+      {days.map((d, i) => (
+        <div key={i} className="rounded-xl p-2 space-y-1" style={{ background: "rgba(0,0,0,0.2)" }}>
+          <p className="font-inter text-[11px] font-bold" style={{ color: d.nahs || d.kamil ? "#FCA5A5" : INK_C }}>
+            {i === 0 && d.hours.some((h) => h.current) ? txt("ഇപ്പോൾ — ", "Now — ") : ""}
+            {fmtWhen(d.hours[0].start, loc, isEn).split(",")[0]}
+            {(d.nahs || d.kamil) && txt(" · ഈ ദിവസം കിതാബ് നഹ്സായി എണ്ണുന്നു — നല്ല കാര്യങ്ങൾക്ക് അടുത്തത് എടുക്കുക", " · the book counts this day unlucky — for good works take the next")}
+          </p>
+          {d.hours.map((h, k) => (
+            <p key={k} className="font-inter text-[11px]" style={{ color: h.current ? "#4ADE80" : h.strong ? GOLD : "rgba(255,255,255,0.7)" }}>
+              {h.strong ? "★ " : "· "}{fmtSpan(h, loc, isEn)} — {h.period === "day" ? txt(`പകലിലെ ${h.num}-ാം സാഅത്ത്`, `day hour ${h.num}`) : txt(`രാത്രിയിലെ ${h.num}-ാം സാഅത്ത്`, `night hour ${h.num}`)}
+              {h.current && txt(" (ഇപ്പോൾ)", " (now)")}
+            </p>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** What goes in place of كذا وكذا, and the person sought (for love). */
+function tawkeelParts(tk) {
+  const person = personAr(tk.name, tk.mother, tk.female);
+  const sought = personAr(tk.sName, tk.sMother, tk.sFemale);
+  const pre = NEED_PRESETS.find((p) => p.id === tk.preset);
+  const need = tk.preset === "custom" ? (tk.custom || "").trim()
+    : pre ? fillNeed(pre.ar, person, sought, tk.female) : "";
+  return { person, sought, need, love: !!tk.love };
+}
+
 function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
   const set = (k) => (e) => setTk({ ...tk, [k]: e.target.type === "checkbox" ? e.target.checked : e.target.value });
   const q = DAY_QASAM[wd];
-  const person = personAr(tk.name, tk.mother, tk.female);
-  const need = needFor(tk.need, person);
-  const sought = personAr(tk.sName, tk.sMother, tk.sFemale);
+  const { need, sought } = tawkeelParts(tk);
+  const pre = NEED_PRESETS.find((p) => p.id === tk.preset);
   const field = "w-full rounded-xl px-3 py-1.5 font-amiri text-lg outline-none";
   const lab = (t) => <span className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>{t}</span>;
   const who = (k1, k2, kf, title) => (
@@ -206,23 +276,41 @@ function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
       </p>
       {who("name", "mother", "female", txt("ആർക്കുവേണ്ടി (طالب)", "For whom (the seeker)"))}
       <div className="space-y-1">
-        {lab(txt("ആവശ്യം (كذا وكذا) — അറബിയിൽ", "The need (كذا وكذا) — in Arabic"))}
-        <div className="flex flex-wrap gap-1" dir="rtl">
+        {lab(txt("ആവശ്യം — كذا وكذا-യുടെ സ്ഥാനത്ത് വരുന്നത്", "The need — what stands in place of كذا وكذا"))}
+        <div className="flex flex-wrap gap-1">
           {NEED_PRESETS.map((p) => (
-            <button key={p.id} type="button" onClick={() => setTk({ ...tk, need: p.ar, love: p.id === "love" ? true : tk.love })}
-                    className="px-2 py-0.5 rounded-lg font-amiri text-sm" style={PILL(tk.need === p.ar)}>{p.ar}</button>
+            <button key={p.id} type="button" onClick={() => setTk({ ...tk, preset: p.id, love: !!p.two })}
+                    className="px-2 py-0.5 rounded-lg font-inter text-[11px] font-bold" style={PILL(tk.preset === p.id)}>{isEn ? p.id : p.ml}</button>
           ))}
+          <button type="button" onClick={() => setTk({ ...tk, preset: "custom" })}
+                  className="px-2 py-0.5 rounded-lg font-inter text-[11px] font-bold" style={PILL(tk.preset === "custom")}>
+            {txt("സ്വന്തമായി എഴുതുക", "Write your own")}
+          </button>
         </div>
-        <input value={tk.need} onChange={set("need")} dir="rtl" className={field} style={TK_INPUT}
-               placeholder="العمل" />
-        <p className="font-amiri text-base" dir="rtl" style={{ color: GOLD }}>كذا وكذا ← {need || "—"}</p>
+        {tk.preset === "custom" && (
+          <>
+            <textarea value={tk.custom || ""} onChange={set("custom")} dir="rtl" rows={2} className={field} style={TK_INPUT}
+                      placeholder="حصول عبد الرحمن بن رملة على عمل طيب" />
+            <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
+              {txt("ആവശ്യം മുഴുവൻ വാചകമായി, പേരും ഉമ്മയുടെ പേരും ചേർത്ത്, അറബിയിൽ എഴുതുക. അത് അതുപോലെ كذا وكذا-യുടെ സ്ഥാനത്ത് വരും.",
+                   "Write the whole need as a sentence in Arabic, with the name and the mother's name. It goes in place of كذا وكذا as written.")}
+            </p>
+          </>
+        )}
+        {pre?.two && who("sName", "sMother", "sFemale", txt("മറ്റേയാൾ (ഭാര്യ / ഭർത്താവ്) — പേരും ഉമ്മയുടെ പേരും", "The other person (wife / husband) — name and mother's name"))}
+        <p className="font-amiri text-lg leading-relaxed" dir="rtl" style={{ color: GOLD }}>كذا وكذا ← {need || "—"}</p>
+        {pre && pre.id !== "custom" && (
+          <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
+            {txt("ഈ വാചകം ഒരു മാതൃകയാണ്. മാറ്റണമെങ്കിൽ \"സ്വന്തമായി എഴുതുക\" തിരഞ്ഞെടുത്ത് എഴുതാം.", "This sentence is a model. To change it, choose \"Write your own\".")}
+          </p>
+        )}
       </div>
       <label className="flex items-center gap-1.5 font-inter text-[11px]" style={{ color: "#F9A8D4" }}>
         <input type="checkbox" checked={!!tk.love} onChange={set("love")} />
-        {txt("സ്നേഹത്തിന്റെ കർമ്മം — കൽപ്പന توكّلوا يا خدّام هذه الآيات എന്ന് (കിതാബിലെ സ്നേഹ ആയത്തുകളോടെ)",
-             "A work of love — the command is توكّلوا يا خدّام هذه الآيات (with the book's love ayahs)")}
+        {txt("സ്നേഹത്തിന്റെ കർമ്മം — അവസാനത്തെ കൽപ്പന توكّلوا يا خدّام هذه الآيات എന്ന് (കിതാബിലെ സ്നേഹ ആയത്തുകളോടെ)",
+             "A work of love — the last command is توكّلوا يا خدّام هذه الآيات (with the book's love ayahs)")}
       </label>
-      {tk.love && who("sName", "sMother", "sFemale", txt("ആരെ (مطلوب) — فلان بن فلانة", "Whom (the one sought) — فلان بن فلانة"))}
+      {tk.love && !pre?.two && who("sName", "sMother", "sFemale", txt("ആരെ (مطلوب) — فلان بن فلانة", "Whom (the one sought) — فلان بن فلانة"))}
       <div className="rounded-lg p-2" style={{ background: "rgba(0,0,0,0.25)" }}>
         {lab(txt("ചുറ്റും എഴുതുന്നത്:", "What is written round:"))}
         <p className="font-amiri text-base leading-loose" dir="rtl" style={{ color: INK_C }}>
@@ -230,7 +318,7 @@ function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
         </p>
       </div>
       <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
-        {txt("ഖസം: കിതാബ് പേജ് 29–31-ലെ രണ്ടാമത്തെ രീതി. കൽപ്പന: പേജ് 301. സ്നേഹം: പേജ് 50–51. ആവശ്യവും പേരുകളും മാത്രമേ ചേർക്കുന്നുള്ളൂ; ബാക്കി കിതാബിലെ വാക്കുകൾ അതുപോലെ.",
+        {txt("ഖസവും കൽപ്പനയും സ്നേഹത്തിന്റെ തൗകീലും കിതാബിലെ വാക്കുകൾ അതുപോലെയാണ്. ആവശ്യവും പേരുകളും മാത്രമേ ചേർക്കുന്നുള്ളൂ.",
              "Qasam: the book's second set. Command: the book's words after the square is filled. Love: the book's love condition. Only the need and the names are filled in; the rest is the book's wording as printed.")}
       </p>
     </div>
@@ -891,13 +979,14 @@ export default function SirrWafqPage() {
   const sqWd = sqPlanet ? sqPlanet.day : dayWd;
   const tk = {
     name: seeker || names.self || "", mother: names.mother || "", female: false,
-    need: purposeId === "love" || actId === "marriage" ? "المحبة والألفة" : "",
+    preset: purposeId === "love" || actId === "marriage" ? "love" : null, custom: "",
     love: purposeId === "love" || actId === "marriage",
     sName: mode === "hajat" ? sought : "", sMother: "", sFemale: true,
     ...tkEdit,
   };
-  const tkNeed = needFor(tk.need, personAr(tk.name, tk.mother, tk.female));
-  const tkRingText = tawkeelRing(sqWd, tkNeed, { love: tk.love, sought: personAr(tk.sName, tk.sMother, tk.sFemale) });
+  const tkp = tawkeelParts(tk);
+  const tkNeed = tkp.need;
+  const tkRingText = tawkeelRing(sqWd, tkNeed, { love: tk.love, sought: tkp.sought });
 
   function copyText() {
     if (!result) return;
@@ -1361,6 +1450,7 @@ export default function SirrWafqPage() {
         <Box step="4" title={txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
           <Intro>{txt("കള്ളി എപ്പോൾ എഴുതണമെന്ന് ഇവിടെ നോക്കാം. ആദ്യ ടാബിൽ ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന വിഷയങ്ങൾ; രണ്ടാമത്തേതിൽ കിതാബിന്റെ മൻസിൽ പട്ടിക; മൂന്നാമത്തേതിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം — സമ്പത്ത്, ജിന്ന്, യാത്ര എന്നിങ്ങനെ — മലയാളത്തിലോ അറബിയിലോ എഴുതി കിതാബ് അതിനെ ഏത് മൻസിലിലും ദിവസത്തിലും സാഅത്തിലും വെക്കുന്നു എന്ന് കാണാം.", "Here is when to write the square. The first tab holds the subjects the Astro Clock grades with a percentage; the second, the book\'s manzil table; the third lets you type your own purpose — provision, jinn, travel — in Malayalam or Arabic, and shows which manzil, day and hour the book places it in.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["The order of time: the day first, then the hour, then the Qamar. It is the day that holds authority.", "First tab: the ten subjects the Astro Clock grades with a percentage, drawn together from the book's day table, hour table and manzil table.", "Second tab: the book's own table of the twenty-eight manazil, each with its nature and its work.", "Third tab: type your own purpose, in Malayalam or Arabic. It is searched against the thirty-five works the book names and its day-and-hour table.", "What comes back: which manazil are good for that work and which are not, the day and hour where the book gives them, and how far this moment answers to it.", "The reading is not invented. It is a count: of the conditions the book actually states for that work, how many are met now.", "No work the book does not name will appear here. If nothing comes back, try another word."] : ["സമയത്തിന്റെ ക്രമം: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ചന്ദ്രൻ. ദിവസമാണ് അധികാരം വഹിക്കുന്നത്.", "ആദ്യ ടാബ്: ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന 10 വിഷയങ്ങൾ. കിതാബിന്റെ ദിവസപ്പട്ടിക, സാഅത്ത് പട്ടിക, മൻസിൽ പട്ടിക — മൂന്നും ചേർന്നാണ് ആ ശതമാനം.", "രണ്ടാം ടാബ്: കിതാബിലെ 28 മൻസിലിന്റെ പട്ടിക, ഓരോന്നിന്റെയും സ്വഭാവവും കർമ്മവും.", "മൂന്നാം ടാബ്: നിങ്ങളുടെ സ്വന്തം ഉദ്ദേശ്യം മലയാളത്തിലോ അറബിയിലോ എഴുതുക. കിതാബ് പേരെടുത്തു പറയുന്ന 35 കർമ്മങ്ങളിലും അതിലെ സമയപ്പട്ടികയിലും തിരയും.", "കിട്ടുന്നത്: ആ കർമ്മത്തിന് ഏതൊക്കെ മൻസിൽ നല്ലത്, ഏതൊക്കെ പറ്റില്ല, കിതാബ് ദിവസവും സാഅത്തും പറയുന്നുണ്ടെങ്കിൽ അതും, ഇപ്പോൾ എത്ര ഒത്തുവരുന്നു എന്നും.", "ശതമാനം കെട്ടിച്ചമച്ചതല്ല — കിതാബ് ആ കർമ്മത്തിന് എത്ര നിബന്ധന പറയുന്നുവോ അതിൽ എത്ര ഇപ്പോൾ ഒത്തുവരുന്നു എന്ന എണ്ണമാണ്.", "കിതാബിൽ ഇല്ലാത്ത ഒരു കർമ്മവും ഇവിടെ വരില്ല. കിട്ടിയില്ലെങ്കിൽ വേറൊരു വാക്കിൽ നോക്കുക."]} />
+          <SquareDayTimes wd={sqWd} fromSquare={!!sqPlanet} n={result ? result.n : n} loc={loc} isEn={isEn} txt={txt} />
           <div className="flex gap-1.5">
             {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
               <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>
@@ -1461,7 +1551,7 @@ export default function SirrWafqPage() {
                 <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>{txt("1. ദിവസത്തിന്റെ ഖസം", "1. The day's qasam")}</p>
                 <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>
                   {dayQasam(sqWd, tkNeed, { voc: true })}{" "}
-                  {tk.love ? loveTawkeel(personAr(tk.sName, tk.sMother, tk.sFemale), { voc: true }) : khadimCommand(tkNeed, { voc: true })}
+                  {tk.love ? loveTawkeel(tkp.sought, { voc: true }) : khadimCommand(tkNeed, { voc: true })}
                 </p>
                 {(() => {
                   const letters = (lettersText.match(/[ء-ي]/g) || []).length;
