@@ -25,6 +25,9 @@ import { METHODS, methodsFor, methodsIn, SOURCES, ANGLE_FOR_STEP, ANGLE_SEX, let
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
+import * as PUR from "@/lib/kashfPurposes";
+import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING,
+         SQUARE_PLANET_SOURCE } from "@/lib/wafqSquarePlanet";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTiming from "@/components/wafq/WafqTiming";
 import { downloadSvgPng } from "@/lib/svgToPng";
@@ -93,6 +96,10 @@ const INK_C = "#f5ead4";
 const card = { background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.22)" };
 const WD_ML = ["ഞായർ", "തിങ്കൾ", "ചൊവ്വ", "ബുധൻ", "വ്യാഴം", "വെള്ളി", "ശനി"];
 const WD_EN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// The full day names. The planets and the weekdays share their names in
+// Malayalam, so beside a planet the short form reads as a repetition
+// ("ശനി · ശനി"); these keep the two apart.
+const WD_ML_FULL = ["ഞായറാഴ്ച", "തിങ്കളാഴ്ച", "ചൊവ്വാഴ്ച", "ബുധനാഴ്ച", "വ്യാഴാഴ്ച", "വെള്ളിയാഴ്ച", "ശനിയാഴ്ച"];
 // Side each angel takes, as the book draws it (Hâvâss I, pp. 190 and
 // 289): top, left, right, bottom — the order of ج ا م ع, the letters
 // of Allah's attribute "Jami'", which is the reason the book gives.
@@ -634,6 +641,17 @@ export default function SirrWafqPage() {
 
   const act = K.ACTIVITIES.find((a) => a.id === actId) || null;
   const purpose = PURPOSES.find((p) => p.id === purposeId) || null;
+  // The planet the chosen work belongs to, taken from the book's own
+  // table of a work with its day and its hour (Kashf pp.12-13). It is
+  // what marks out the square to use, since each square is dedicated to
+  // a planet (Hâvâss pp.172-173). Null when the book names no planet for
+  // what was chosen — nothing is guessed in that case.
+  const wantPlanet = useMemo(() => {
+    const q = (purpose?.ml || purpose?.en || act?.ml || act?.en || "").trim();
+    if (q.length < 2) return null;
+    const hit = PUR.searchAll(q);
+    return hit?.times?.[0]?.hour || null;
+  }, [purpose, act]);
   const actTimes = useMemo(() => (actId ? bestTimesFor(actId, Date.now(), loc) : null), [actId]);
   const manzilTimes = useMemo(() => (purpose ? purposeTimes(purpose, Date.now(), loc) : []), [purposeId]);
 
@@ -863,16 +881,60 @@ export default function SirrWafqPage() {
         <Box step="2" title={txt("കള്ളി തിരഞ്ഞെടുക്കുക", "Choose the square")}>
           <Intro>{txt("എത്ര വശമുള്ള കള്ളി വേണമെന്ന് തിരഞ്ഞെടുക്കുക. ✓ ഉള്ളവയാണ് നിങ്ങളുടെ തുകയ്ക്ക് ചെയ്യാൻ പറ്റുന്നത്; ✗ ഉള്ളവയ്ക്ക് തുക ഒത്തുവരില്ല. ഓരോ വലുപ്പത്തിനും കിതാബിൽ വെവ്വേറെ രീതികളുണ്ട്.", "Choose how many houses a side. The ones marked ✓ can be made from your total; the ✗ ones will not come out. Each size has its own methods in the book.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["This is how many houses a side: from 3×3 up to 10×10.", "The ones marked ✓ will come out for your total. A ✗ means that size does not fit that total.", "How it is settled: the square's أس is taken from the total (12 for a 3×3, 30 for a 4×4, 60 for a 5×5…), and what is left is divided by the number of the side. The whole number, without a fraction, is the miftah.", "If the division leaves a remainder, jabr is needed — the book gives a rule for it, set out in step 4.", "The larger the square, the smaller its numbers; the smaller the square, the larger they grow. Several sizes may fit one total — choose by the purpose."] : ["വശത്ത് എത്ര വീട് വേണമെന്നതാണ് തിരഞ്ഞെടുക്കുന്നത്: 3×3 മുതൽ 10×10 വരെ.", "✓ എന്ന് കാണുന്നവ നിങ്ങളുടെ തുകയ്ക്ക് ഒത്തുവരും. ✗ എന്നത് ആ തുകയ്ക്ക് ആ വലുപ്പം ചേരില്ല എന്നാണ്.", "ഒത്തുവരുന്നത് എങ്ങനെയെന്ന്: ആകെ തുകയിൽ നിന്ന് ആ കള്ളിയുടെ أس കുറയ്ക്കുന്നു (3×3-ന് 12, 4×4-ന് 30, 5×5-ന് 60...), പിന്നെ വശത്തിന്റെ എണ്ണം കൊണ്ട് ഹരിക്കുന്നു. ഭിന്നമില്ലാതെ കിട്ടുന്നതാണ് മിഫ്താഹ്.", "ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ ജബ്ർ വേണ്ടിവരും — കിതാബ് അതിന് നിയമം തരുന്നുണ്ട് (പടി 4-ൽ വിശദമായി).", "വലുപ്പം കൂടുന്തോറും കള്ളിയിലെ സംഖ്യകൾ ചെറുതാകും; വലുപ്പം കുറയുന്തോറും സംഖ്യകൾ വലുതാകും. ഒരേ തുകയ്ക്ക് പല വലുപ്പവും ചേരാം — ഉദ്ദേശ്യത്തിനനുസരിച്ച് തിരഞ്ഞെടുക്കുക."]} />
+          {/* Each square belongs to a planet, and so to a day. Where the
+              work's own planet is known from the book, that square is
+              marked out — the book insists the square be chosen to suit
+              the work, not only the hour (Hâvâss pp.172-173). */}
           <div className="flex flex-wrap gap-1.5">
             {SIZES.map((s) => {
               const ok = good.includes(s);
+              const sp = SQUARE_PLANET[s];
+              const fit = sp && wantPlanet && sp.planet === wantPlanet;
               return (
-                <button key={s} type="button" onClick={() => setN(s)} className="px-3 py-2 rounded-xl font-inter text-xs font-bold" style={btn(n === s)}>
-                  <span className="font-amiri text-sm mr-1">{SIZE_NAME[s].ar}</span>{s}×{s}
-                  {N > 0 && <span style={{ color: ok ? "#4ADE80" : "#FCA5A5" }}> {ok ? "✓" : "✗"}</span>}
+                <button key={s} type="button" onClick={() => setN(s)}
+                  className="px-3 py-2 rounded-xl font-inter text-xs font-bold text-left"
+                  style={{ ...btn(n === s),
+                           ...(fit ? { borderColor: "#4ADE80", background: "rgba(74,222,128,0.14)",
+                                       boxShadow: "0 0 10px rgba(74,222,128,0.25)" } : {}) }}>
+                  <span className="block">
+                    <span className="font-amiri text-sm mr-1">{SIZE_NAME[s].ar}</span>{s}×{s}
+                    {N > 0 && <span style={{ color: ok ? "#4ADE80" : "#FCA5A5" }}> {ok ? "✓" : "✗"}</span>}
+                  </span>
+                  {sp && (
+                    <span className="block font-inter text-[9px] font-normal"
+                          style={{ color: fit ? "#4ADE80" : "rgba(255,255,255,0.45)" }}>
+                      <span className="font-amiri">{sp.ar}</span> {isEn ? sp.en : sp.ml}
+                      {" · "}{isEn ? WD_EN[sp.day] : WD_ML_FULL[sp.day]}
+                      {sp.stated ? "" : " ◦"}
+                      {fit ? (isEn ? " ★ fits" : " ★ ചേരുന്നു") : ""}
+                    </span>
+                  )}
                 </button>
               );
             })}
+          </div>
+          <div className="rounded-xl p-2.5 space-y-1" style={card}>
+            <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
+              {txt("ഓരോ കള്ളിക്കും അതിന്റെ ഗ്രഹവും ദിവസവും", "Each square has its planet, and so its day")}{" "}
+              <span style={{ color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>
+                ({txt("ഹവാസ്സ് പേ.", "Hâvâss pp.")}{SQUARE_PLANET_SOURCE.havass} · {txt("കശ്ഫ് പേ.", "Kashf p.")}{SQUARE_PLANET_SOURCE.kashf})
+              </span>
+            </p>
+            <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.82)" }}>
+              {isEn ? SQUARE_PLANET_WARNING.en : SQUARE_PLANET_WARNING.ml}
+            </p>
+            <p className="font-inter text-[11px] font-bold" style={{ color: "#4ADE80" }}>
+              {isEn ? SQUARE_PLANET_RULE.en : SQUARE_PLANET_RULE.ml}
+            </p>
+            {SQUARE_PLANET[n] && (
+              <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.65)" }}>
+                {isEn ? SQUARE_PLANET[n].note_en : SQUARE_PLANET[n].note_ml}
+              </p>
+            )}
+            <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>
+              {txt("◦ അടയാളമുള്ളവ: ആ കള്ളിയുടെ ഗ്രഹം കിതാബ് ഈ പേജുകളിൽ പേരെടുത്ത് പറയുന്നില്ല; കിതാബ് പേരെടുത്ത് പറഞ്ഞ നാലെണ്ണം നിൽക്കുന്ന ഗ്രഹക്രമത്തിൽ നിന്നാണ് അത്. അടയാളമില്ലാത്തവ കിതാബിന്റെ സ്വന്തം വാക്കാണ്.",
+                   "Marked ◦: the book does not name that square's planet on these pages; it comes from the planetary series the four it does name fall in. The unmarked ones are the book's own word.")}
+            </p>
           </div>
           {plan && (
             <div className="grid grid-cols-4 gap-2">
