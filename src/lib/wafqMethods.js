@@ -6,7 +6,7 @@
 // Every method states what its lines are expected to add up to, and
 // the page checks the built square against that.
 // ═══════════════════════════════════════════════════════════════
-import { ABJAD, asOf, jabrHouse, buildWafq, hollowWafq3, HOUSE_LETTERS, toArabicDigits } from "./sirrWafqEngine.js";
+import { ABJAD, asOf, jabrHouse, buildWafq, hollowWafq3, HOUSE_LETTERS, toArabicDigits, houseGrid } from "./sirrWafqEngine.js";
 
 export const SOURCES = {
   kashf: { ml: "കശ്ഫുൽ ഹഖാഇഖ്", en: "Kashf al-Haqa'iq", ar: "كشف الحقائق" },
@@ -15,6 +15,9 @@ export const SOURCES = {
 
 // Houses of the 3×3 (buduh / Muthallath al-Ghazali) in the book's layout.
 const GH = [[4, 9, 2], [3, 5, 7], [8, 1, 6]];
+// Houses of the 4×4 as the book draws it at p. 226, read from its
+// own worked example of the Jami' square (each value there is 20 + h).
+const HARF_M4 = [[8, 11, 14, 1], [13, 2, 7, 12], [3, 16, 9, 6], [10, 5, 4, 15]];
 const fill = (houses, val) => houses.map((r) => r.map((h) => val(h)));
 
 function lineSums(g) {
@@ -277,10 +280,10 @@ export const METHODS = [
   {
     id: "hurufi",
     src: "havass",
-    sizes: [3],
+    sizes: [3, 4, 5, 6, 7, 8, 9, 10],
     ml: "ഹുറൂഫി — ഉസൂൽ 6", en: "Hurufî — 6th Usûl", ar: "الوفق الحرفي",
-    ref_ml: "ഹവാസ്സ് I പേജ് 220 (ഊച്‌ലൂ വഫ്ഖ് 6. ഉസൂൽ) · കശ്ഫ്: الوفق الحرفي",
-    ref_en: "Hâvâss I p.220 (Üçlü Vefk, 6. Usûl) · Kashf: al-wafq al-ḥarfī",
+    ref_ml: "ഹവാസ്സ് I പേജ് 220 (ഊച്‌ലൂ 6. ഉസൂൽ) · പേജ് 225 (ദോർത്‌ലൂ ഹുറൂഫി വഫ്ഖ്) · കശ്ഫ്: الوفق الحرفي",
+    ref_en: "Hâvâss I p.220 (Üçlü, 6. Usûl) · p.225 (Dörtlü Hurufî Vefk) · Kashf: al-wafq al-ḥarfī",
     rules_ml: [
       "സംഖ്യയ്ക്ക് പകരം അക്ഷരങ്ങൾ കൊണ്ട് ഉണ്ടാക്കുന്ന കള്ളി.",
       "3×3-ന് സാധാരണ മൂന്നക്ഷര ഇസ്മുകൾ കൊണ്ടാണ് ചെയ്യുക. ഒരു വീട്ടിൽ ഒന്നിലധികം അക്ഷരവും ആകാം.",
@@ -297,18 +300,19 @@ export const METHODS = [
     expects_en: "Being a letter square, the numeric check does not apply",
     needsText: true,
     letters: true,
-    build(N, { text = "" } = {}) {
+    build(N, { n = 3, text = "" } = {}) {
       const ls = lettersOf(text);
       if (!ls.length) return null;
-      const grid = fill(GH, (h) => ls[(h - 1) % ls.length].ch);
-      const num = fill(GH, (h) => ls[(h - 1) % ls.length].v);
-      return { grid, houses: GH, numeric: num, sums: lineSums(num), valid: null, expected: null };
+      const H = houseGrid(n);
+      const grid = fill(H, (h) => ls[(h - 1) % ls.length].ch);
+      const num = fill(H, (h) => ls[(h - 1) % ls.length].v);
+      return { grid, houses: H, numeric: num, sums: lineSums(num), valid: null, expected: null };
     },
   },
   {
     id: "hurufi2num",
     src: "havass",
-    sizes: [3],
+    sizes: [3, 4, 5, 6, 7, 8, 9, 10],
     ml: "ഹുറൂഫി → സംഖ്യ — ഉസൂൽ 7", en: "Hurufî turned numeric — 7th Usûl", ar: "",
     ref_ml: "ഹവാസ്സ് I പേജ് 221 (ഊച്‌ലൂ വഫ്ഖ് 7. ഉസൂൽ)",
     ref_en: "Hâvâss I p.221 (Üçlü Vefk, 7. Usûl)",
@@ -325,11 +329,12 @@ export const METHODS = [
     expects_ml: "പരിശോധന ബാധകമല്ല — അക്ഷരത്തിന്റെ മൂല്യം എഴുതുക മാത്രം",
     expects_en: "No check applies — it is only writing the letter's value",
     needsText: true,
-    build(N, { text = "" } = {}) {
+    build(N, { n = 3, text = "" } = {}) {
       const ls = lettersOf(text);
       if (!ls.length) return null;
-      const grid = fill(GH, (h) => ls[(h - 1) % ls.length].v);
-      return { grid, houses: GH, sums: lineSums(grid), valid: null, expected: null };
+      const H = houseGrid(n);
+      const grid = fill(H, (h) => ls[(h - 1) % ls.length].v);
+      return { grid, houses: H, sums: lineSums(grid), valid: null, expected: null };
     },
   },
   {
@@ -356,6 +361,63 @@ export const METHODS = [
       if (!h.ok) return null;
       const s = lineSums(h.grid);
       return { grid: h.grid, houses: GH, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
+    },
+  },
+  {
+    id: "harfadad",
+    src: "havass",
+    sizes: [4],
+    ml: "അക്ഷരവും സംഖ്യയും ഒന്നിച്ച്", en: "Letters and numbers together", ar: "",
+    ref_ml: "ഹവാസ്സ് I പേജ് 226-228 (DİĞER BİR TARZ)",
+    ref_en: "Hâvâss I pp.226-228 (DİĞER BİR TARZ)",
+    rules_ml: [
+      "നാലക്ഷരമുള്ള ഒരു ഇസ്മോ അല്ലാഹുവിന്റെ ഒരു സിഫത്തോ കള്ളിയിലേക്ക് എടുക്കുമ്പോൾ, വീടുകളിൽ എഴുതുന്ന സംഖ്യകളോടൊപ്പം ഇസ്മിന്റെ അക്ഷരങ്ങളും ഹുറൂഫി വഫ്ഖ് പോലെ ക്രമത്തിൽ എഴുതുന്നു.",
+      "എഴുതുന്ന ഇസ്മ് ഉപയോഗിക്കുന്ന എസ്മ തന്നെയാകണമെന്നില്ല. ഉദാഹരണത്തിന് ജാമിഅ് എന്ന സിഫത്ത് ഒരാളുമായി ചേരാൻ വേണ്ടിയാണെങ്കിൽ, ആ ആളുടെ പേരുകൂടി ചേർത്താണ് കണക്കാക്കുന്നതെങ്കിൽ, നടുവിൽ എഴുതുന്ന പേര് ആ ആളുടേതുമാകാം.",
+      "നാലക്ഷരം തന്നെ വേണമെന്നില്ല — നീണ്ട ഒരു ഇസ്മോ ആയത്തോ നാലായി മുറിച്ച് ഒരു വീട്ടിൽ ഒന്നിലധികം അക്ഷരവും എഴുതാം.",
+      "⚠ ശ്രദ്ധിക്കേണ്ട കാര്യം: അക്ഷരങ്ങൾ കൂടി എഴുതിയാൽ കള്ളിയുടെ പരിശോധനാ തുക മാറും. ഓരോ വീട്ടിലെയും സംഖ്യയ്ക്ക് പുറമെ ആ അക്ഷരത്തിന്റെ അബ്ജദ് മൂല്യവും കൂട്ടണം.",
+      "കിതാബിന്റെ ഉദാഹരണം: ജാമിഅ് എന്നതിന്റെ അബ്ജദ് 114. സംഖ്യകൾ മാത്രം കൂട്ടിയാൽ ഓരോ വരിയും 114. പക്ഷേ അക്ഷരങ്ങളും കൂടി (ج3 + ا1 + م40 + ع70 = 114) ചേർത്താൽ ഓരോ വരിയിലും 228 ഉണ്ട്. ചൊല്ലേണ്ടതും പ്രവർത്തിക്കേണ്ടതും ആ സംഖ്യ വെച്ചാണ്.",
+      "പൊതുവായ നിയമം: കള്ളിയുടെ വീടുകളിൽ എഴുതുന്ന ഓരോന്നും ആ കള്ളിയിൽ ചെയ്യുന്ന കർമ്മവുമായി ബന്ധപ്പെട്ടതാണ്. ചൊല്ലലിൽ ഉപയോഗിക്കാത്ത ഒന്നും കള്ളിയിൽ വെക്കാൻ പാടില്ല; കള്ളിയിലുള്ള എല്ലാം അതിന്റെ എണ്ണപ്രകാരം ചൊല്ലണം. അക്ഷരങ്ങളെ അലങ്കാരമായി കണ്ട് അവയുടെ എണ്ണം ചൊല്ലലിൽ ചേർക്കാതിരിക്കാൻ പറ്റില്ല.",
+    ],
+    rules_en: [
+      "When a four-letter name, or an attribute of Allah, is taken into a square, the letters of the name are written into the houses in order alongside the numbers, as though a hurufî vefk were being made.",
+      "The name written need not be the esma being used. If, say, the attribute Jami' is for coming together with someone and is reckoned together with that person's name, the name written inside may be that person's.",
+      "Nor need it be four letters — a long name or an ayah can be divided into four, with more than one letter in a house.",
+      "⚠ The thing to watch: once the letters are written in too, the square's check total changes. To each house's number the abjad of its letter or letters must be added.",
+      "The book's example: Jami' is 114 in abjad. Adding the numbers alone, every row comes to 114. But the letters must be added as well (ج3 + ا1 + م40 + ع70 = 114), so every row and column holds 228, and the work done on the square must go by that number.",
+      "The general rule: everything written into a square's houses belongs to the work done on it. Nothing may be put in that will not be used in the recitation, and everything in it must be recited by its count. The letters cannot be treated as ornament and left out of the reckoning.",
+    ],
+    expects_ml: "⚠ സംഖ്യകളും അക്ഷരങ്ങളും കൂട്ടിയ തുകയാണ് ശരിയായ തുക",
+    expects_en: "⚠ The true total is the numbers and the letters added together",
+    needsText: true,
+    build(N, { n = 4, step = 1, text = "" } = {}) {
+      const ls = lettersOf(text);
+      if (!ls.length) return null;
+      const r = buildWafq(N, n, { step });
+      if (!r?.grid) return null;
+      // The book's own form for this one (p. 226). It matters: the
+      // letters run round the houses in order, so every row AND
+      // column carries each letter once only when no column repeats
+      // a house number modulo the letter count. The form the rest of
+      // the page uses does repeat, and then the columns do not come
+      // out at the doubled total the book states.
+      const H = n === 4 ? HARF_M4 : houseGrid(n);
+      // Both the numbers and the letters are laid on that same form,
+      // so the two agree house for house.
+      const valueOf = (h) => r.key + (h - 1) * step + (r.rem && h >= r.jabr ? 1 : 0);
+      const nums = fill(H, valueOf);
+      const letters = fill(H, (h) => ls[(h - 1) % ls.length].ch);
+      const lvals = fill(H, (h) => ls[(h - 1) % ls.length].v);
+      const combined = nums.map((row, i) => row.map((v, j) => v + lvals[i][j]));
+      const s = lineSums(combined);
+      const rowTotal = s.rows[0];
+      return {
+        grid: nums, houses: H, letters, lvals,
+        sums: s, expected: rowTotal,
+        // The book states the doubled total for every row and column.
+        // It does not claim it for the diagonals, so neither do we.
+        valid: [...s.rows, ...s.cols].every((v) => v === rowTotal),
+        numberTotal: N, letterTotal: lineSums(lvals).rows[0], withLetters: true,
+      };
     },
   },
   {

@@ -311,8 +311,18 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
               {built.capraz ? (
                 <CaprazView cz={built.capraz} isEn={isEn} txt={txt} />
               ) : (
-                <Grid grid={built.grid} arabic={!m.letters} />
+                <Grid grid={built.grid} arabic={!m.letters}
+                      cellNote={built.letters ? built.letters.flat() : null} />
               )}
+              {built.withLetters && (
+                <div className="rounded-xl p-2.5" style={{ background: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.3)" }}>
+                  <p className="font-inter text-[11px]" style={{ color: "#FBBF24" }}>
+                    ⚠ {txt(`അക്ഷരങ്ങൾ കൂടി എഴുതിയതുകൊണ്ട് ശരിയായ തുക ${built.expected} ആണ് — സംഖ്യകൾ ${built.numberTotal} + അക്ഷരങ്ങൾ ${built.letterTotal}. ചൊല്ലേണ്ടതും ഈ സംഖ്യ വെച്ചാണ്.`,
+                         `Because the letters are written in too, the true total is ${built.expected} — the numbers ${built.numberTotal} plus the letters ${built.letterTotal}. The recitation goes by this number.`)}
+                  </p>
+                </div>
+              )}
+
               {!built.capraz && built.expected != null && (
                 <div className="flex flex-wrap gap-1.5">
                   {[...built.sums.rows.map((v, i) => [txt(`വരി ${i + 1}`, `Row ${i + 1}`), v]),

@@ -186,7 +186,7 @@ function lineSums(g) {
   return { rows, cols, d1, d2 };
 }
 
-function houseGrid(n, form, rem) {
+export function houseGrid(n, form = "base", rem = 0) {
   if (n === 3) return FORMS[3][form] || GHAZALI;
   if (n === 4) {
     if (FORMS[4][form]) return FORMS[4][form];
