@@ -154,6 +154,52 @@ function SurroundPick({ value, onPick, isEn, txt }) {
 }
 
 /**
+ * The word that meets a reader at the door.
+ *
+ * These are the owner's own words, kept as he gave them: what this
+ * cost to gather, what it must never be used for, and who it is for.
+ * It stands at the head of the page, before anything is explained,
+ * because it is the condition on everything that follows.
+ */
+function Welcome({ isEn, txt }) {
+  const P = [
+    ["ഇവിടെ പറയാൻ പോകുന്ന കാര്യങ്ങൾ വർഷങ്ങളുടെ പ്രയത്നവും കഠിനാധ്വാനവും കൊണ്ട് ലഭിച്ചതാണ്. അതുകൊണ്ട് സത്യസന്ധമായി മാത്രം നിങ്ങൾ ഇതിനെ ഉപയോഗപ്പെടുത്തുക.",
+     "What is set out here came through years of labour and hard work. So use it in honesty, and in nothing else."],
+    ["വീണ്ടും ഓർമ്മിപ്പിക്കുന്നു — അന്യന്റെ ഹൃദയം വേദനിപ്പിക്കാൻ ഒരിക്കലും ഈ കർമ്മങ്ങൾ ഉപയോഗിക്കരുത്. ഉപയോഗിച്ചാൽ അതിന്റെ ഉത്തരവാദി നിങ്ങൾ തന്നെയായിരിക്കും. ആദ്യം മലിനമാകുന്നത് സ്വന്തം നഫ്സാണ്; പിന്നെ ആ ജീവിതത്തിൽ ഒരു ഉയർച്ചയും ഉണ്ടാകില്ല. എന്നാൽ സത്യത്തിൽ നിലനിന്നാൽ ഈ വഴി നിങ്ങൾക്ക് തുറക്കും.",
+     "Again this is said: never use these workings to wound another heart. If you do, the answer for it is yours. The first thing defiled is your own nafs, and after that no rise comes in that life. But stand in truth, and this road opens to you."],
+    ["അക്ഷരങ്ങൾക്കുള്ളിൽ ഒളിഞ്ഞിരിക്കുന്നതും അക്കങ്ങൾക്കുള്ളിൽ മറഞ്ഞിരിക്കുന്നതുമായ രഹസ്യങ്ങൾ ഇവിടെയുണ്ട്. പല കിതാബുകളിലായി ചിതറിക്കിടന്നിരുന്നത് ഒരിടത്ത് ചേർത്തുവെച്ചിരിക്കുന്നു — ഓരോന്നിനും അതിന്റെ കിതാബും പേജും ചേർത്ത്. ബുക്കുകളിൽ നിന്ന് പഠിച്ചെടുത്തത് മാത്രമല്ല; അനുഭവങ്ങളിൽ നിന്ന്, വർഷങ്ങളുടെ പ്രയത്നത്തിൽ നിന്ന് തിരിച്ചറിഞ്ഞ സത്യങ്ങളുമുണ്ട്.",
+     "What lies hidden inside the letters, and what lies covered inside the numbers, is here. What was scattered across many books has been gathered into one place — each thing with the book and the page it came from. And not only what was learnt from books: there are truths here recognised through experience, through years of labour."],
+    ["ഈ സംരംഭം തുടങ്ങിയത് സത്യത്തിന് വേണ്ടി മാത്രമാണ്, സത്യത്തെ നിലനിർത്താൻ മാത്രം. നിങ്ങൾ സത്യം കണ്ടെത്തുക. അതിന്റെ പ്രതിഫലം നിങ്ങൾക്കും നിങ്ങളുടെ കുടുംബത്തിനും, ഇതിനായി അധ്വാനിച്ച എനിക്കും ലഭിക്കട്ടെ.",
+     "This work was begun for the truth alone, and to keep the truth standing. Find the truth. May its reward reach you, and your family, and the one who laboured over this."],
+  ];
+  return (
+    <div className="rounded-2xl p-4 sm:p-5 space-y-3"
+         style={{ background: "linear-gradient(180deg, rgba(212,175,55,0.09), rgba(212,175,55,0.03))",
+                  border: "1px solid rgba(212,175,55,0.38)" }}>
+      <div className="text-center space-y-1">
+        <p className="font-amiri text-xl" style={{ color: GOLD }}>إلى أعماق الأسرار</p>
+        <p className="font-inter text-[12px] font-bold tracking-[0.16em] uppercase"
+           style={{ color: GOLD }}>
+          {txt("രഹസ്യങ്ങളുടെ ആഴങ്ങളിലേക്ക് സ്വാഗതം", "Welcome to the depths of the secrets")}
+        </p>
+        <div className="mx-auto" style={{ width: 56, height: 1, background: "rgba(212,175,55,0.5)" }} />
+      </div>
+      {P.map(([ml, en], i) => (
+        <p key={i} className="font-inter text-[12px] leading-relaxed"
+           style={{ color: "rgba(245,234,212,0.9)" }}>
+          {isEn ? en : ml}
+        </p>
+      ))}
+      <p className="font-inter text-[12px] font-bold text-center pt-1"
+         style={{ color: GOLD, borderTop: "1px solid rgba(212,175,55,0.22)" }}>
+        {txt("അതുകൊണ്ട് സൂക്ഷ്മതയോടെ മാത്രം ഇതിനെ സമീപിക്കുക.",
+             "So come to this with care, and with nothing less.")}
+      </p>
+    </div>
+  );
+}
+
+/**
  * A step's rules, folded away until wanted. The short Intro above says
  * what the step is for in a line; this holds the whole of it — what
  * the rule is, where it comes from, and what to watch — so a reader
@@ -685,6 +731,7 @@ export default function SirrWafqPage() {
 
         <Box>
           <p className="font-amiri text-2xl text-center" style={{ color: GOLD }}>بسم الله الرحمن الرحيم</p>
+          <Welcome isEn={isEn} txt={txt} />
           <Note>{txt(
             "ഓരോ വരിയുടെയും നിരയുടെയും രണ്ടു കോണുകളുടെയും തുക ഒന്നാകുന്ന വിധത്തിൽ സംഖ്യകൾ ക്രമീകരിച്ച സമചതുര കള്ളിയാണ് വഫ്ഖ് (وفق). ഒരു ആയത്തിന്റെയോ സൂറത്തിന്റെയോ പേരിന്റെയോ അബ്ജദ് തുകയിൽ നിന്നാണ് അത് നിറയ്ക്കുന്നത്.",
             "A wafq (وفق) is a square of houses filled so that every row, every column and both diagonals give the same total. It is filled from the abjad total of an ayah, a surah or a name.")}</Note>
@@ -694,20 +741,6 @@ export default function SirrWafqPage() {
           <Note color="rgba(255,255,255,0.5)">{txt(
             "(1) വാചകമോ പേരോ → (2) കള്ളി → (3) ഉദ്ദേശ്യവും സമയവും → (4) ഉണ്ടാക്കുക → (5) ക്രമത്തിൽ എഴുതുക → (6) ഡൗൺലോഡ്.",
             "(1) text or name → (2) square → (3) purpose and time → (4) build → (5) write in order → (6) download.")}</Note>
-          <div className="rounded-xl p-3.5 space-y-2"
-               style={{ background: "rgba(74,222,128,0.06)", border: "1px solid rgba(74,222,128,0.3)" }}>
-            <p className="font-inter text-[11px] font-bold tracking-[0.14em] uppercase" style={{ color: "#4ADE80" }}>
-              {txt("ഒരു വാക്ക്", "A word first")}
-            </p>
-            <p className="font-inter text-[12px] leading-relaxed" style={{ color: "rgba(245,234,212,0.9)" }}>
-              {txt("ഈ കർമ്മങ്ങൾ ആരെയും ഉപദ്രവിക്കാൻ ഉപയോഗിക്കരുത്. ഉപദ്രവത്തിന് ഉപയോഗിച്ചാൽ ആദ്യം മലിനമാകുന്നത് സ്വന്തം നഫ്സാണ്; പിന്നെ ആ ജീവിതത്തിൽ ഒരു ഉയർച്ചയും ഉണ്ടാകില്ല.",
-                   "Do not use these workings to harm anyone. Used for harm, the first thing defiled is your own nafs; and after that no rise comes in that life.")}
-            </p>
-            <p className="font-inter text-[12px] leading-relaxed" style={{ color: "rgba(245,234,212,0.9)" }}>
-              {txt("ഈ സംരംഭം തുടങ്ങിയത് സത്യത്തിന് വേണ്ടി മാത്രമാണ്, സത്യത്തെ നിലനിർത്താൻ മാത്രം. നിങ്ങൾ സത്യം കണ്ടെത്തുക. അതിന്റെ പ്രതിഫലം നിങ്ങൾക്കും നിങ്ങളുടെ കുടുംബത്തിനും, ഇതിനായി അധ്വാനിച്ച എനിക്കും ലഭിക്കട്ടെ.",
-                   "This work was begun for the truth alone, and to keep the truth standing. Find the truth. May its reward reach you, and your family, and the one who laboured over this.")}
-            </p>
-          </div>
 
           <div className="rounded-xl p-3" style={{ background: "rgba(212,175,55,0.07)", border: "1px solid rgba(212,175,55,0.25)" }}>
             <Intro>{txt(
