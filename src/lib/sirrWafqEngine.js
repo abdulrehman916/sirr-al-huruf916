@@ -121,6 +121,25 @@ export const HOUSE_RECITE = {
   6: "واليهم واليهم", 7: "زقطار زقطار", 8: "حدايه حدايه", 9: "طيال طيال",
 };
 
+/**
+ * Kashf p.301: "and there is another way" — longer names for each of the
+ * nine letters, said as the letter's house is written, then the oath.
+ * As printed; the book's own spelling kept (e.g. زنقطار here, زقطار in
+ * the first way).
+ */
+export const HOUSE_RECITE_2 = {
+  1: "الوهيم الوهيم اهٍ اهٍ ايهٍ ايهٍ افشال افشال اطردشاً",
+  2: "بقطريال بقطريال بدميال بدميال يشهرشبٍ",
+  3: "جلشٍ جلشٍ جهٍ جهٍ حمروسخٍ",
+  4: "دميالٍ دميالٍ دلوهٍ دلوهٍ",
+  5: "ههبطوشٍ ههبطوشٍ هيالٍ هيالٍ هططشٍ همتشتشا",
+  6: "وهيمٍ وهيمٍ واليهم واليهم وسحالوا",
+  7: "زنقطارٍ زنقطارٍ سحاله سحاله ساله رهن شلو",
+  8: "حدايا حدايا حدايه حدايه حمر شيخ",
+  9: "طواطهيالٍ طيالٍ طيالٍ طلمواحط طاشٍ طاشوشٍ",
+};
+export const HOUSE_RECITE_2_OATH = "اقسم عليكم ياخدام هذه الأسماء أن تفعلوا لي كذا وكذا (تذكر حاجتك) أو حاجة من تريد";
+
 // Angel of each weekday (index 0 = Sunday), from the letter table above.
 export const DAY_ANGEL = ["روقيائيل", "جبرائيل", "سمسمائيل", "ميكائيل", "صرفيائيل", "عنيائيل", "عزرائيل"];
 
@@ -244,6 +263,25 @@ export function toArabicDigits(v) {
 // WRITING THE WAFQ — Kashf al-Haqa'iq, conditions 34 and after
 // (printed pages 49-52). Arabic kept exactly as the book prints it.
 // ═══════════════════════════════════════════════════════════════
+
+/** Condition 28 (Kashf p.46): how the wafq itself is drawn and written. */
+export const WRITING_RULE_28 = {
+  ar: "ملازمة القواعد الوفقية في كتابته أو نقشه وإتقان وضع مكعبه وتسوية اضلاعه بحيث لا يكون فيه تفاوت وأن تكون خطوط الجداول في غاية الاستقامة وأن تكون قسمة البيوت متساوية والحروف والرقوم المكتوبة في غاية الحسن والبيان وأن تكون عيون الحروف مفتوحة ورسم الأرقام واضح وأن تنقط الحروف إن كان الوفق وضعيا وبضبط الكلمات إن كان الوفق اسميا ويجب نطق ما تكتب ارواحا أو أجساد أو أسماء أو آيات",
+  ml: [
+    "എഴുതുമ്പോഴും കൊത്തുമ്പോഴും വഫ്ഖിന്റെ നിയമങ്ങൾ മുറുകെ പിടിക്കുക. ചതുരം കൃത്യമായി വരയ്ക്കുക; വശങ്ങൾ ഒരുപോലെയാകണം, ഒരു ഏറ്റക്കുറവും പാടില്ല.",
+    "കള്ളിയുടെ വരകൾ തികച്ചും നേരെയാകണം; വീടുകൾ എല്ലാം ഒരേ വലുപ്പമാകണം.",
+    "എഴുതുന്ന അക്ഷരങ്ങളും അക്കങ്ങളും ഏറ്റവും ഭംഗിയായും വ്യക്തമായും ആകണം. അക്ഷരങ്ങളുടെ കണ്ണുകൾ (ഉള്ളിലെ ദ്വാരം) തുറന്നിരിക്കണം; അക്കങ്ങൾ തെളിഞ്ഞിരിക്കണം.",
+    "അക്ഷരങ്ങളുള്ള വഫ്ഖാണെങ്കിൽ അക്ഷരങ്ങൾക്ക് പുള്ളി ഇടണം; പേരുകളുള്ള വഫ്ഖാണെങ്കിൽ വാക്കുകൾക്ക് ഹറകത്ത് കൊടുക്കണം.",
+    "എഴുതുന്നതെല്ലാം — റൂഹുകളോ ശരീരങ്ങളോ പേരുകളോ ആയത്തുകളോ — ഉച്ചരിച്ചുകൊണ്ട് എഴുതണം.",
+  ],
+  en: [
+    "Keep to the rules of the wafq in writing or engraving it. Draw the square true; its sides alike, with no difference between them.",
+    "The lines of the table perfectly straight; the houses all the same size.",
+    "The letters and figures as fine and clear as can be. The eyes of the letters open; the figures plain.",
+    "In a wafq of letters the letters are dotted; in a wafq of names the words are vowelled.",
+    "Say aloud whatever you write — spirits, bodies, names or ayahs.",
+  ],
+};
 
 /** Condition 34: how the digits themselves must be written. */
 export const NUMBER_RULE = {

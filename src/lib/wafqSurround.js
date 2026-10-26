@@ -381,3 +381,18 @@ export const HOUR_BY_MOON_SIGN = [
   "zuhal",    // الدلو      → ساعة زحل
   "mushtari", // الحوت      → ساعة المشتري
 ];
+
+
+/**
+ * Kashf p.51, at the end of the conditions: some scholars made it a
+ * condition in every work of love that the ayah of Ibrahim (al-Baqara
+ * 260) be written round the wafq if possible, or recited over it, three
+ * times, with the verses that follow. Printed as the book prints it.
+ */
+export const LOVE_SURROUND = {
+  intro_ar: "واعلم أن بعض العلماء والمشايخ اشترط في جميع اعمال المحبات ان يكتب حول الوفق إن امكن أو يتلى عليه قوله تعالى",
+  ayah: "وإذ قال إبراهيم رب أرني كيف تحيي الموتى قال أولم تؤمن قال بلى ولكن ليطمئن قلبي قال فخذ أربعة من الطير فصرهن إليك ثم اجعل على كل جبل منهن جزءا ثم ادعهن يأتينك سعيا",
+  rest_ar: "ثلاث مرات « يوم نطوي السماء كطي السجل » « أنا آتيك به قبل أن يرتد إليك طرفك فلما رآه مستقرا عنده قال هذا من فضل ربي » توكلوا يا خدام هذه الآيات بتهييج فلان بن فلانة بحق تسبيح الملائكة وصلاة الشهداء فسوف يأتي الله بقوم يحبهم ويحبونه وألقيت عليك محبة مني واذكروا نعمة الله عليكم إلى قلوبكم ونزعنا ما في صدورهم من غل",
+  ml: "ചില ഉലമാക്കളും മശാഇഖുമാർ സ്നേഹത്തിന്റെ (മഹബ്ബ) എല്ലാ കർമ്മങ്ങളിലും ഇത് ശർത്താക്കിയിട്ടുണ്ട്: സാധിക്കുമെങ്കിൽ ഇബ്റാഹീം നബിയുടെ ഈ ആയത്ത് (അൽ-ബഖറ 260) വഫ്ഖിന് ചുറ്റും എഴുതുക, അല്ലെങ്കിൽ വഫ്ഖിന്മേൽ മൂന്ന് തവണ ഓതുക. പിന്നെ താഴെയുള്ള ആയത്തുകളും ഖിദ്മത്തിന്റെ വാക്കുകളും.",
+  en: "Some scholars and shaykhs made it a condition in every work of love that this ayah of Ibrahim (al-Baqara 260) be written round the wafq if possible, or recited over it three times, followed by the verses and words below.",
+};

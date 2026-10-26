@@ -13,7 +13,7 @@ import { getFeatures } from "@/lib/featureRegistry";
 import { checkFeatureAccess } from "@/lib/featurePermission";
 import {
   abjadOf, asOf, SIZES, SIZE_NAME, SQUARE_CLASS, buildWafq, hollowWafq3, workingSizes,
-  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, DAY_ANGEL, PURPOSES,
+  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, DAY_ANGEL, PURPOSES,
   toArabicDigits, planWafq, NUMBER_RULE, SEVEN_RANKS, SEVEN_RANKS_NOTE, needAngelFor,
   RECITE_COUNT, DUA_BEFORE, DUA_BEFORE_WHEN, DUA_TANZIL, AROUND_WAFQ, INK, CAUTIONS,
 } from "@/lib/sirrWafqEngine";
@@ -21,7 +21,7 @@ import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { getPlanetaryDay } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
-import { METHODS, methodsFor, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf } from "@/lib/wafqMethods";
+import { METHODS, methodsFor, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf, TUKHI_WARNING } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
@@ -30,7 +30,7 @@ import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/
 import HadimPanel from "@/components/wafq/HadimPanel";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
-import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL, splitFour } from "@/lib/wafqSurround";
+import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL, splitFour, LOVE_SURROUND } from "@/lib/wafqSurround";
 
 const GOLD = "#F5D060";
 const PAGE_PATH = "/sirr-al-wafq";
@@ -166,7 +166,7 @@ function SplitBox({ title, value, onChange, four, note, isEn, txt }) {
 }
 
 function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorners,
-                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isEn, txt }) {
+                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isLove, isEn, txt }) {
   const Row = ({ id, children }) => (
     <button type="button" onClick={() => setAngelSel(id)} dir="rtl"
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-right" style={PILL(angelSel === id)}>
@@ -226,6 +226,22 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
              opts={[["none", "بلا"], ["book", CORNER_VERSE], ["ayah", "الآية"]]} />
       <Pills label="الدائرة:" value={ring} onPick={setRing}
              opts={[["none", "بلا"], ["besmele", "بسم الله الرحمن الرحيم"], ["ayah", "الآية"]]} />
+
+      <details open={isLove} className="rounded-xl p-2.5" style={{ background: isLove ? "rgba(244,114,182,0.07)" : "transparent", border: `1px solid ${isLove ? "rgba(244,114,182,0.4)" : "rgba(212,175,55,0.18)"}` }}>
+        <summary className="font-inter text-[11px] font-bold cursor-pointer" style={{ color: isLove ? "#F9A8D4" : "rgba(255,255,255,0.6)" }}>
+          {txt("സ്നേഹത്തിന്റെ കർമ്മങ്ങൾക്ക് — കിതാബിലെ ശർത്ത്", "For works of love — the book's condition")}
+        </summary>
+        <div className="space-y-1.5 mt-2">
+          <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}>{isEn ? LOVE_SURROUND.en : LOVE_SURROUND.ml}</p>
+          <p className="font-amiri text-base leading-relaxed" dir="rtl" style={{ color: INK_C }}>
+            {LOVE_SURROUND.intro_ar} « {LOVE_SURROUND.ayah} » {LOVE_SURROUND.rest_ar}.
+          </p>
+          <button type="button" onClick={() => { setAyah(LOVE_SURROUND.ayah); setRing("ayah"); }}
+                  className="px-2.5 py-1 rounded-lg font-inter text-[10px] font-bold" style={PILL(ayah.trim() === LOVE_SURROUND.ayah && ring === "ayah")}>
+            {txt("ഈ ആയത്ത് കളത്തിന് ചുറ്റും വട്ടത്തിൽ എഴുതുക", "Write this ayah round the square")}
+          </button>
+        </div>
+      </details>
 
       {(edge === "besmele" || ring === "besmele") && (
         <SplitBox title="البسملة" value={bismi} onChange={setBismi}
@@ -568,11 +584,16 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
               )}
             </div>
           )}
+          {m.bookNote_ar && (
+            <div className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.06)", border: "1px solid rgba(212,175,55,0.25)" }}>
+              <p className="font-amiri text-sm leading-relaxed" dir="rtl" style={{ color: INK_C }}>{m.bookNote_ar}</p>
+              <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.7)" }}>{isEn ? m.bookNote_en : m.bookNote_ml}</p>
+            </div>
+          )}
           <Note color="rgba(147,197,253,0.85)">⇒ {isEn ? m.expects_en : m.expects_ml}</Note>
           {!built ? (
-            <Note color="#FCA5A5">{m.id === "hollow"
-              ? txt(`ഈ തുകയ്ക്ക് ഇത് ചെയ്യാനാകില്ല: (${N} − 12) ÷ 3 = ${((N - 12) / 3).toFixed(2)} — ഇത് നാലിന്റെ ഗുണിതമായ പൂർണ്ണസംഖ്യയാകണം.`,
-                     `Not possible for this total: (${N} − 12) ÷ 3 = ${((N - 12) / 3).toFixed(2)} — it must be a whole multiple of four.`)
+            <Note color="#FCA5A5">{m.whyNot
+              ? (isEn ? m.whyNot(N).en : m.whyNot(N).ml)
               : m.needsTwo
               ? txt("ആയത്തിന്റെ തുക കൂടി മുകളിൽ നൽകുക.", "Enter the ayah's total above as well.")
               : txt("അറബിയിൽ ഒരു പേരോ ആയത്തോ മുകളിൽ നൽകുക.", "Enter an Arabic name or ayah above.")}</Note>
@@ -612,11 +633,15 @@ function MethodSection({ m, idx, N, n, step, isEn, txt, mText, setMText, mAyah, 
                 </div>
               )}
 
+              {built.tripled && (
+                <Note color="#FBBF24">{txt(`തുക ${N} 3 കൊണ്ട് ഭാഗിക്കാൻ പറ്റാത്തതിനാൽ, കിതാബ് പറയുന്നതുപോലെ തുകയെ 3 കൊണ്ട് ഗുണിച്ചു: ${N} × 3 = ${built.expected}. ഓരോ വരിയും നിരയും ${built.expected} ആണ്.`,
+                                         `${N} does not divide by 3, so as the book says the total was multiplied by 3: ${N} × 3 = ${built.expected}. Every row and column is ${built.expected}.`)}</Note>
+              )}
               {!built.capraz && built.expected != null && (
                 <div className="flex flex-wrap gap-1.5">
                   {[...built.sums.rows.map((v, i) => [txt(`വരി ${i + 1}`, `Row ${i + 1}`), v]),
                     ...built.sums.cols.map((v, i) => [txt(`നിര ${i + 1}`, `Col ${i + 1}`), v]),
-                    [txt("കോൺ ↘", "Diag ↘"), built.sums.d1], [txt("കോൺ ↙", "Diag ↙"), built.sums.d2]].map(([l, v]) => (
+                    ...(built.hollow ? [] : [[txt("കോൺ ↘", "Diag ↘"), built.sums.d1], [txt("കോൺ ↙", "Diag ↙"), built.sums.d2]])].map(([l, v]) => (
                     <span key={l} className="px-2 py-1 rounded-lg font-inter text-[10px] font-bold"
                       style={{ background: v === built.expected ? "rgba(74,222,128,0.10)" : "rgba(248,113,113,0.12)", color: v === built.expected ? "#4ADE80" : "#FCA5A5" }}>
                       {l} {v} {v === built.expected ? "✓" : "✗"}
@@ -675,6 +700,9 @@ export default function SirrWafqPage() {
   const [corners, setCorners] = useState("none");
   const [ringPick, setRingPick] = useState(null);
   const [ayahEdit, setAyahEdit] = useState(null);
+  // Kashf p.300-301 gives two ways of the names said while each letter is written.
+  const [reciteWay, setReciteWay] = useState(1);
+  const RECITE = reciteWay === 2 ? HOUSE_RECITE_2 : HOUSE_RECITE;
   const [bismiText, setBismiText] = useState(BASMALA_FULL);
   const bismi = edge === "besmele";
   const sideAngels = angelSel === "four";
@@ -1058,6 +1086,7 @@ export default function SirrWafqPage() {
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
                         ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
+                        isLove={purposeId === "love" || actId === "marriage"}
                         isEn={isEn} txt={txt} />
           {/* The seeker, the need and the matter sought are written once, in
               step 1, and carried down into the middle house from there. */}
@@ -1094,6 +1123,23 @@ export default function SirrWafqPage() {
                 })}
               </div>
             </Box>
+            {secKey === "a" && (
+              <Box>
+                <details>
+                  <summary className="font-inter text-[12px] font-bold cursor-pointer" style={{ color: "#FCA5A5" }}>
+                    ✗ {txt("അത്ത്വൂഖിയുടെ രീതി — കിതാബ് തള്ളിക്കളഞ്ഞത്", "Al-Tukhi's way — rejected by the book")}
+                  </summary>
+                  <div className="space-y-2 mt-2">
+                    <ul className="list-disc pl-4 space-y-1 font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>
+                      {(isEn ? TUKHI_WARNING.en : TUKHI_WARNING.ml).map((x, i) => <li key={i}>{x}</li>)}
+                    </ul>
+                    <Grid grid={TUKHI_WARNING.example} />
+                    <Note color="#FCA5A5">{txt("ഓരോ വരിയും 24 = 72-ന്റെ മൂന്നിലൊന്ന് ✗", "Every line is 24 = a third of 72 ✗")}</Note>
+                    <p className="font-amiri text-sm leading-relaxed" dir="rtl" style={{ color: "rgba(245,234,212,0.7)" }}>{TUKHI_WARNING.ar}</p>
+                  </div>
+                </details>
+              </Box>
+            )}
             {methodsIn(secKey, n).map((m, i) => (
               <MethodSection key={m.id} m={m} idx={i} N={N} n={n} step={step} isEn={isEn} txt={txt}
                 mText={mText} setMText={setMText} mAyah={mAyah} setMAyah={setMAyah}
@@ -1164,7 +1210,7 @@ export default function SirrWafqPage() {
                   <div className="rounded-xl p-3 text-center space-y-1" style={{ background: "rgba(212,175,55,0.10)", border: "1px solid rgba(212,175,55,0.4)" }}>
                     <Note color={INK_C}>{txt(`വീട് ${h} / ${result.n * result.n}`, `House ${h} of ${result.n * result.n}`)} · {txt(`വരി ${r}, നിര ${c}`, `row ${r}, column ${c}`)}{result.n === 3 ? <> · <Ar>{HOUSE_LETTERS[h - 1]}</Ar></> : null}</Note>
                     <p className="font-amiri text-4xl" style={{ color: GOLD }}>{toArabicDigits(v)}</p>
-                    {result.n === 3 && <Note>{txt("ഈ വീട് എഴുതുമ്പോൾ ചൊല്ലേണ്ടത് — രണ്ടു തവണ", "Recite while writing this house — twice")}: <Ar size="text-lg">{HOUSE_RECITE[h]}</Ar></Note>}
+                    {result.n === 3 && <Note>{txt("ഈ വീട് എഴുതുമ്പോൾ ചൊല്ലേണ്ടത്", "Recite while writing this house")}: <Ar size="text-lg">{RECITE[h]}</Ar></Note>}
                   </div>
                 );
               })()}
@@ -1173,6 +1219,13 @@ export default function SirrWafqPage() {
                 <button type="button" onClick={() => setWriteIdx((i) => Math.min(order.length, i + 1))} className="flex-1 py-2 rounded-xl font-inter text-xs font-bold" style={btn(true)}>
                   {writeIdx < 0 ? txt("എഴുത്ത് തുടങ്ങുക", "Start writing") : writeIdx >= order.length - 1 ? txt("പൂർത്തിയായി ✓", "Done ✓") : `${txt("അടുത്തത്", "Next")} →`}
                 </button>
+              </div>
+              <div className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.22)" }}>
+                <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>{txt("വഫ്ഖ് വരയ്ക്കുന്നതും എഴുതുന്നതും (നിബന്ധന 28)", "Drawing and writing the wafq (condition 28)")}</p>
+                <p className="font-amiri text-sm leading-relaxed" dir="rtl" style={{ color: INK_C }}>{WRITING_RULE_28.ar}</p>
+                <ul className="list-disc pl-4 space-y-0.5 font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}>
+                  {(isEn ? WRITING_RULE_28.en : WRITING_RULE_28.ml).map((x, i) => <li key={i}>{x}</li>)}
+                </ul>
               </div>
               <Note color="rgba(255,255,255,0.5)"><b>{txt("അക്കങ്ങൾ എഴുതുന്ന നിയമം (നിബന്ധന 34)", "How the digits are written (condition 34)")}:</b> <Ar size="text-sm">{NUMBER_RULE.ar}</Ar> — {isEn ? NUMBER_RULE.en : NUMBER_RULE.ml} {isEn ? NUMBER_RULE.zeroEnd_en : NUMBER_RULE.zeroEnd_ml}</Note>
               {(bismi || sideAngels) && <Note color="rgba(255,255,255,0.4)">{txt("മുകളിലെ ബിസ്മിയും നാലു വശത്തെ മലക്കുകളും അവ്ഫാഖ് അധ്യായത്തിലെ നിയമമല്ല; കിതാബ് ആവശ്യത്തിന് യോജിച്ച ഒരു മലക്കിനെ നടുവിലെ വീട്ടിലാണ് പറയുന്നത്.", "The Bismillah on top and the four side angels are not rules of the awfaq chapter; the book places the one angel suited to the need in the middle house.")}</Note>}
@@ -1269,15 +1322,28 @@ export default function SirrWafqPage() {
                 `ദിവസത്തിന്റെ മലക്കും ഖാദിമും ${chosen ? "തിരഞ്ഞെടുത്ത സമയത്തിന്റെ" : "ഇന്നത്തെ"} ദിവസം അനുസരിച്ചാണ്; സമയം മാറ്റിയാൽ ഇവയും മാറും. മൂലകത്തിന്റെ മലക്ക് തുകയുടെ മൂലകം അനുസരിച്ച് സ്ഥിരമാണ് — ${ELEMENTS[result.element].angel}.`,
                 `The angel and khadim of the day follow ${chosen ? "the chosen time's" : "today's"} day and change with the time. The element's angel is fixed by the total's element — ${ELEMENTS[result.element].angel}.`)}</Note>
               {result.n === 3 && (
+                <div className="flex flex-wrap items-center gap-1.5 font-inter text-[10px]">
+                  <span style={{ color: "rgba(255,255,255,0.6)" }}>{txt("ഓരോ അക്ഷരം എഴുതുമ്പോൾ ചൊല്ലേണ്ട പേരുകൾ — കിതാബിൽ രണ്ട് രീതി:", "The names said as each letter is written — the book gives two ways:")}</span>
+                  {[1, 2].map((w) => (
+                    <button key={w} type="button" onClick={() => setReciteWay(w)} className="px-2.5 py-1 rounded-lg font-bold" style={btn(reciteWay === w)}>
+                      {w === 1 ? txt("ഒന്നാം രീതി", "First way") : txt("രണ്ടാം രീതി", "The other way")}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {result.n === 3 && reciteWay === 2 && (
+                <Note color="rgba(255,255,255,0.6)">{txt("ഒമ്പത് വീടും എഴുതിക്കഴിഞ്ഞാൽ:", "When the nine houses are written:")} <Ar size="text-base">{HOUSE_RECITE_2_OATH}</Ar></Note>
+              )}
+              {result.n === 3 && (
                 <div className="overflow-x-auto">
                   <table className="w-full font-inter text-[10px]" style={{ color: "rgba(245,234,212,0.85)" }}>
-                    <thead><tr style={{ color: GOLD }}>{[txt("വീട്", "House"), txt("സംഖ്യ", "No."), txt("ചൊല്ലേണ്ടത് (×2)", "Recite (×2)"), txt("ഗ്രഹം", "Planet"), txt("മലക്ക്", "Angel"), txt("ഖാദിം", "Khadim")].map((h) => <th key={h} className="p-1 text-left">{h}</th>)}</tr></thead>
+                    <thead><tr style={{ color: GOLD }}>{[txt("വീട്", "House"), txt("സംഖ്യ", "No."), txt("ചൊല്ലേണ്ടത്", "Recite"), txt("ഗ്രഹം", "Planet"), txt("മലക്ക്", "Angel"), txt("ഖാദിം", "Khadim")].map((h) => <th key={h} className="p-1 text-left">{h}</th>)}</tr></thead>
                     <tbody>
                       {LETTER_TABLE.map((r, i) => (
                         <tr key={r.l} style={{ borderTop: "1px solid rgba(212,175,55,0.12)" }}>
                           <td className="p-1 font-amiri text-base">{i + 1} {r.l}</td>
                           <td className="p-1 font-bold">{result.grid.flat()[result.houses.flat().indexOf(i + 1)]}</td>
-                          <td className="p-1 font-amiri text-sm">{HOUSE_RECITE[i + 1]}</td>
+                          <td className="p-1 font-amiri text-sm">{RECITE[i + 1]}</td>
                           <td className="p-1 font-amiri text-sm">{r.planet}</td>
                           <td className="p-1 font-amiri text-sm">{r.angel}</td>
                           <td className="p-1 font-amiri text-sm">{r.khadim}</td>

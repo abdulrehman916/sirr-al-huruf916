@@ -373,11 +373,105 @@ export const METHODS = [
     ],
     expects_ml: "മൂന്നു വരിയും മൂന്നു നിരയും = ആകെ തുക (കോണുകൾ ബാധകമല്ല)",
     expects_en: "The three rows and three columns = the total (the diagonals do not apply)",
+    // Kashf p.307: it is strong in effect, as are all the hollow-hearted
+    // squares, above all in good works — healing, acceptance, love.
+    bookNote_ar: "وهو قوي المفعول وكذلك الأوفاق خالية القلب وقد أكدوا على صحة وقوة مفعولها وسرعة إستجابتها خاصة في أعمال الخير مثل الشفاء والقبول والمحبة وغير ذلك.",
+    bookNote_ml: "ഇത് ഫലത്തിൽ ശക്തമാണ്; നടുവ് ഒഴിഞ്ഞ എല്ലാ വഫ്ഖുകളും അങ്ങനെതന്നെ. അവയുടെ ശക്തിയും വേഗത്തിലുള്ള ഫലവും ഉലമാക്കൾ ഉറപ്പിച്ചു പറഞ്ഞിട്ടുണ്ട് — പ്രത്യേകിച്ച് നല്ല കർമ്മങ്ങളിൽ: ശിഫ, ഖബൂൽ, മഹബ്ബ തുടങ്ങിയവ.",
+    bookNote_en: "It is strong in effect, as are all the hollow-hearted squares; the scholars stressed their soundness, strength and quick answer, above all in good works — healing, acceptance, love and the like.",
+    // Kashf p.307: if the total will not divide by 3 without a fraction,
+    // the whole total is multiplied by 3 (the houses of a side) first.
     build(N) {
-      const h = hollowWafq3(N);
+      const tripled = N % 3 !== 0;
+      const M = tripled ? N * 3 : N;
+      const h = hollowWafq3(M);
       if (!h.ok) return null;
       const s = lineSums(h.grid);
-      return { grid: h.grid, houses: GH, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
+      return { grid: h.grid, houses: GH, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === M), expected: M, hollow: true, tripled };
+    },
+    whyNot(N) {
+      const M = N % 3 !== 0 ? N * 3 : N;
+      const a = (M - 12) / 3;
+      return {
+        ml: `${M !== N ? `തുക 3 കൊണ്ട് ഭാഗിക്കാൻ പറ്റാത്തതിനാൽ കിതാബ് പറയുന്നതുപോലെ 3 കൊണ്ട് ഗുണിച്ചു: ${N} × 3 = ${M}. ` : ""}(${M} − 12) ÷ 3 = ${a} അലിഫിന്റെ വീട്ടിൽ; അതിന്റെ പകുതി ഹാഇന്റെ വീട്ടിൽ, അതിന്റെ പകുതി ബാഇന്റെ വീട്ടിൽ. ${a} നാലിന്റെ ഗുണിതമല്ലാത്തതിനാൽ ഭിന്നസംഖ്യ വരുന്നു. ഇതിന് കിതാബ് വേറെ വഴി പറയുന്നില്ല.`,
+        en: `${M !== N ? `The total does not divide by 3, so as the book says it is multiplied by 3: ${N} × 3 = ${M}. ` : ""}(${M} − 12) ÷ 3 = ${a} goes in the house of alif; half of it in ha, half of that in ba. ${a} is not a multiple of four, so a fraction comes out, and the book gives no further way for this.`,
+      };
+    },
+  },
+  {
+    // Kashf p.309: "another way for the 3×3, hollow in the middle and
+    // hollow at the side". The total is divided by 12 and that is the
+    // key in the first house; it is multiplied by 2 for the second
+    // house, by 3 for the third, and so on to the eighth. The book
+    // prints two placements — the empty house in the middle, or at the
+    // side — and its worked example is اسم باسط, 72 ÷ 12 = 6.
+    // (The book's opening line says "take a third of the total and
+    // divide by 12", but its own example divides the whole total, and
+    // only that gives rows of the total; the example is followed.)
+    id: "hollow12",
+    section: "a",
+    src: "kashf",
+    sizes: [3],
+    ml: "നടുവ് ഒഴിഞ്ഞ 3×3 — രണ്ടാം രീതി", en: "Hollow-centre 3×3 — the second way", ar: "المثلث خالي الوسط — طريقة أخرى",
+    rules_ml: [
+      "ആകെ തുകയെ 12 കൊണ്ട് ഹരിക്കുക. കിട്ടുന്നതാണ് മിഫ്താഹ്; അത് ഒന്നാം വീട്ടിൽ.",
+      "മിഫ്താഹിനെ 2 കൊണ്ട് ഗുണിച്ച് രണ്ടാം വീട്ടിൽ, 3 കൊണ്ട് ഗുണിച്ച് മൂന്നാം വീട്ടിൽ — അങ്ങനെ എട്ടാം വീട് വരെ.",
+      "നടുവിലെ വീട് ഒഴിഞ്ഞുകിടക്കും. വീടുകളുടെ സ്ഥാനം: മുകളിൽ 3 8 1, നടുവിൽ 7 · 5, താഴെ 2 4 6.",
+      "കിതാബ് തന്നെ പറയുന്നു: ഇത് എല്ലാ സംഖ്യയ്ക്കും ശരിയാകില്ല — തുക 12 കൊണ്ട് പൂർണ്ണമായി ഹരിക്കാൻ പറ്റണം.",
+      "കിതാബിന്റെ ഉദാഹരണം: باسط = 72; 72 ÷ 12 = 6.",
+    ],
+    rules_en: [
+      "Divide the total by 12. That is the key; it goes in the first house.",
+      "The key times 2 in the second house, times 3 in the third, and so on to the eighth.",
+      "The middle house stays empty. The houses stand: top 3 8 1, middle 7 · 5, bottom 2 4 6.",
+      "The book itself says this does not hold for every number — the total must divide by 12 exactly.",
+      "The book's example: باسط = 72; 72 ÷ 12 = 6.",
+    ],
+    expects_ml: "മൂന്നു വരിയും മൂന്നു നിരയും = ആകെ തുക (കോണുകൾ ബാധകമല്ല)",
+    expects_en: "The three rows and three columns = the total (the diagonals do not apply)",
+    build(N) {
+      if (N % 12 !== 0 || N <= 0) return null;
+      const k = N / 12;
+      const grid = [[3, 8, 1], [7, null, 5], [2, 4, 6]].map((r) => r.map((h) => (h == null ? null : h * k)));
+      const s = lineSums(grid);
+      return { grid, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
+    },
+    whyNot(N) {
+      return {
+        ml: `${N} ÷ 12 = ${(N / 12).toFixed(2)} — പൂർണ്ണസംഖ്യയല്ല. കിതാബ് പറയുന്നതുപോലെ ഈ രീതി എല്ലാ സംഖ്യയ്ക്കും ശരിയാകില്ല.`,
+        en: `${N} ÷ 12 = ${(N / 12).toFixed(2)} — not a whole number. As the book says, this way does not hold for every number.`,
+      };
+    },
+  },
+  {
+    id: "hollowside",
+    section: "a",
+    src: "kashf",
+    sizes: [3],
+    ml: "വശം ഒഴിഞ്ഞ 3×3", en: "Hollow-side 3×3", ar: "المثلث خالي الجنب",
+    rules_ml: [
+      "മുൻ രീതി തന്നെ: തുക ÷ 12 = മിഫ്താഹ്, അതിനെ 1 മുതൽ 8 വരെ ഗുണിച്ച് എട്ട് വീടുകളിൽ.",
+      "ഇവിടെ ഒഴിഞ്ഞ വീട് നടുവിലല്ല, താഴത്തെ വരിയുടെ നടുവിലാണ്. വീടുകളുടെ സ്ഥാനം: മുകളിൽ 3 8 1, നടുവിൽ 2 4 6, താഴെ 7 · 5.",
+      "തുക 12 കൊണ്ട് പൂർണ്ണമായി ഹരിക്കാൻ പറ്റണം.",
+    ],
+    rules_en: [
+      "The same as the way before: total ÷ 12 = the key, multiplied by 1 to 8 into the eight houses.",
+      "Here the empty house is not in the middle but in the middle of the bottom row. The houses stand: top 3 8 1, middle 2 4 6, bottom 7 · 5.",
+      "The total must divide by 12 exactly.",
+    ],
+    expects_ml: "മൂന്നു വരിയും മൂന്നു നിരയും = ആകെ തുക (കോണുകൾ ബാധകമല്ല)",
+    expects_en: "The three rows and three columns = the total (the diagonals do not apply)",
+    build(N) {
+      if (N % 12 !== 0 || N <= 0) return null;
+      const k = N / 12;
+      const grid = [[3, 8, 1], [2, 4, 6], [7, null, 5]].map((r) => r.map((h) => (h == null ? null : h * k)));
+      const s = lineSums(grid);
+      return { grid, sums: s, valid: [...s.rows, ...s.cols].every((v) => v === N), expected: N, hollow: true };
+    },
+    whyNot(N) {
+      return {
+        ml: `${N} ÷ 12 = ${(N / 12).toFixed(2)} — പൂർണ്ണസംഖ്യയല്ല. ഈ തുകയ്ക്ക് ഇത് ശരിയാകില്ല.`,
+        en: `${N} ÷ 12 = ${(N / 12).toFixed(2)} — not a whole number. It will not come out for this total.`,
+      };
     },
   },
   {
@@ -558,4 +652,28 @@ export const ANGLE_SEX = {
   30: { ml: "ആൺ", en: "male" }, 90: { ml: "ആൺ", en: "male" }, 150: { ml: "ആൺ", en: "male" },
   60: { ml: "പെൺ", en: "female" }, 120: { ml: "പെൺ", en: "female" },
   180: { ml: "⚠ ഒഴിവാക്കുക", en: "⚠ avoid" },
+};
+
+
+/**
+ * Kashf pp.304-305: a way "found in a book of al-Tukhi", recorded by the
+ * book only to reject it. Not built — shown so the reader knows why.
+ */
+export const TUKHI_WARNING = {
+  ar: "وهناك طريقة أخرى وجدناها في كتاب للطوخي وهي أن تحسب الجملة وتأخذ ثلثها بعد ذلك تطرح منها الأس ثم تأخذ ثلث الباقي وتنزل به في المفتاح وتسير عليه بزيادة واحد إلى آخر بيت عندك في الوفق أما في المربع فتأخذ ربع الجملة والمخمس خمس الجملة وهكذا … وبهذه الطريقة نجد أن الطوخي قد خالف جميع العلماء وهي طريقة خاطئة والتجربة خير برهان في هذا العلم.",
+  example: [[7, 12, 5], [6, 8, 10], [11, 4, 9]],
+  ml: [
+    "അത്ത്വൂഖി എന്ന ഒരാളുടെ ഗ്രന്ഥത്തിൽ കണ്ട ഒരു രീതി കശ്ഫ് രേഖപ്പെടുത്തുന്നു — അത് തള്ളിക്കളയാൻ വേണ്ടി മാത്രം.",
+    "ആ രീതി: ആകെ തുകയുടെ മൂന്നിലൊന്ന് എടുക്കുക, അതിൽ നിന്ന് അസ്സ് (3×3-ന് 12) കുറയ്ക്കുക, ബാക്കിയുടെ മൂന്നിലൊന്ന് മിഫ്താഹാക്കി ഒന്നു വീതം കൂട്ടി എഴുതുക. 4×4-ൽ നാലിലൊന്ന്, 5×5-ൽ അഞ്ചിലൊന്ന്.",
+    "കിതാബിലെ ഉദാഹരണം: باسط = 72. മൂന്നിലൊന്ന് 24; 24 − 12 = 12; 12-ന്റെ മൂന്നിലൊന്ന് 4 = മിഫ്താഹ്. കിട്ടുന്ന കള്ളി താഴെ.",
+    "തെറ്റ് എവിടെ: ഈ കള്ളിയുടെ ഓരോ വരിയും 24 ആണ്, 72 അല്ല. അതായത് ഇത് باسط-ന്റെ (72) വഫ്ഖല്ല, 24-ന്റെ വഫ്ഖാണ്. പേരിന്റെ സംഖ്യ കള്ളിയിൽ വരുന്നില്ല; മൂന്നിലൊന്ന് മാത്രം.",
+    "കിതാബിന്റെ വിധി: \"ഈ രീതിയിൽ അത്ത്വൂഖി എല്ലാ ഉലമാക്കളോടും എതിരായി. ഇത് തെറ്റായ രീതിയാണ്; ഈ ഇൽമിൽ അനുഭവമാണ് ഏറ്റവും നല്ല തെളിവ്.\" അതുകൊണ്ട് ഇവിടെ ഈ രീതി ഉണ്ടാക്കുന്നില്ല.",
+  ],
+  en: [
+    "Kashf records a way found in a book by al-Tukhi — only to reject it.",
+    "The way: take a third of the total, subtract the as (12 for the 3×3), take a third of what is left as the key and add one per house. A quarter for the 4×4, a fifth for the 5×5.",
+    "The book's example: باسط = 72. A third is 24; 24 − 12 = 12; a third of 12 is 4 = the key. The square it gives is below.",
+    "Where it goes wrong: every line of this square is 24, not 72. It is the square of 24, not of باسط (72). The name's number is not in the square — only a third of it.",
+    "The book's verdict: \"By this way al-Tukhi went against all the scholars. It is a wrong way, and in this science experience is the best proof.\" So it is not built here.",
+  ],
 };
