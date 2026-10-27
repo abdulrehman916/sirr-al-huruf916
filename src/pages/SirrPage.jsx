@@ -8,6 +8,7 @@
 import { useMemo, useState } from "react";
 import PageLayout from "@/components/PageLayout";
 import { SIRR_ENTRIES } from "@/lib/sirrDuasData";
+import OmanMujarrabat from "@/components/sirr/OmanMujarrabat";
 
 const GOLD = "#D4AF37";
 const INK = "rgba(255,255,255,0.86)";
@@ -158,10 +159,17 @@ export default function SirrPage() {
               <span className="block font-inter text-lg font-semibold mt-2" style={{ color: INK }}>മരുന്നുകൾ</span>
               <span className="block font-inter text-xs mt-2" style={{ color: DIM }}>ഓരോ മരുന്നും എന്തിനാണ്, എങ്ങനെ ഉണ്ടാക്കണം, എങ്ങനെ ഉപയോഗിക്കണം.</span>
             </Card>
+            <Card big onClick={() => go("oman")}>
+              <span dir="rtl" className="block font-amiri text-2xl" style={{ color: GOLD }}>مجربات أهل عمان الكبير</span>
+              <span className="block font-inter text-lg font-semibold mt-2" style={{ color: INK }}>ഉമാനി മുജർറബാത്ത്</span>
+              <span className="block font-inter text-xs mt-2" style={{ color: DIM }}>സിഹ്റ്, കണ്ണേറ്, റബ്ത്വ്, കാവൽ, രോഗങ്ങൾ… — വിഷയമനുസരിച്ച് ദുആ, മരുന്ന്, മരുന്നും മന്ത്രവും, ത്വൽസം, വഫ്ഖ്.</span>
+            </Card>
           </div>
         )}
 
-        {view !== "home" && (
+        {view === "oman" && <OmanMujarrabat onExit={() => go("home")} />}
+
+        {view !== "home" && view !== "oman" && (
           <div className="mt-6">
             <Back onClick={() => (cat && !query ? setCat(null) : go("home"))} label={cat && !query ? "വിഷയങ്ങൾ" : "തുടക്കം"} />
             <h2 className="font-inter text-xl font-semibold" style={{ color: INK }}>{view === "dua" ? "മന്ത്ര ദുആകൾ" : "മരുന്നുകൾ"}</h2>
