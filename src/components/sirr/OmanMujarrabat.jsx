@@ -113,7 +113,7 @@ function Entry({ e, quran }) {
           )}
           {e.q?.length > 0 && (
             <div className="space-y-2">
-              <p className="font-inter text-[11px]" style={{ color: DIM }}>കിതാബിൽ പേര് മാത്രം പറഞ്ഞ സൂറത്തുകളും ആയത്തുകളും — മുഴുവനായി:</p>
+              <p className="font-inter text-[11px]" style={{ color: DIM }}>ഇതിൽ പറയുന്ന സൂറത്തുകളും ആയത്തുകളും — മുഴുവനായി, അർത്ഥത്തോടെ:</p>
               {e.q.map((r, i) => <QuranRef key={i} r={r} quran={quran} />)}
             </div>
           )}
