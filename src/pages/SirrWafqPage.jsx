@@ -690,7 +690,7 @@ function TawkeelBox({ wd, fromSquare, tk, setTk, isEn, txt }) {
 }
 
 function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorners,
-                        ring, setRing, ayah, setAyah, bismi, setBismi, fromStep1, recommended, isLove, isEn, txt, tawkeelBox }) {
+                        ring, setRing, ayah, setAyah, bismi, setBismi, cornerText, setCornerText, fromStep1, recommended, isLove, isEn, txt, tawkeelBox }) {
   const Row = ({ id, children }) => (
     <button type="button" onClick={() => setAngelSel(id)} dir="rtl"
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-right" style={PILL(angelSel === id)}>
@@ -771,6 +771,12 @@ function SurroundPick({ angelSel, setAngelSel, edge, setEdge, corners, setCorner
       {edge === "besmele" && (
         <SplitBox title="البسملة" value={bismi} onChange={setBismi}
                   four isEn={isEn} txt={txt} />
+      )}
+      {corners === "book" && (
+        <SplitBox title="الزوايا" value={cornerText} onChange={setCornerText}
+                  four isEn={isEn} txt={txt}
+                  note={txt("കിതാബിൽ സാധാരണ ഈ ആയത്താണ്. വേണമെങ്കിൽ ഇവിടെ മാറ്റി വേറെ ഏത് ആയത്തോ ബിസ്മിയോ എഴുതാം — അത് നാലായി പിരിഞ്ഞ് നാല് മൂലയിലും വരും.",
+                            "The book's usual ayah. Change it here to any other ayah or the besmele — it is split in four and goes on the four corners.")} />
       )}
       {usesAyah && (
         <SplitBox title="الآية" value={ayah} onChange={setAyah}
@@ -1261,6 +1267,7 @@ export default function SirrWafqPage() {
   const [reciteWay, setReciteWay] = useState(1);
   const RECITE = reciteWay === 2 ? HOUSE_RECITE_2 : HOUSE_RECITE;
   const [bismiText, setBismiText] = useState(BASMALA_FULL);
+  const [cornerText, setCornerText] = useState(CORNER_VERSE);
   const bismi = edge === "besmele";
   const sideAngels = angelSel === "four";
   const angel = ARCHANGELS.some((x) => x.id === angelSel) ? angelSel : "jibril";
@@ -1871,7 +1878,7 @@ export default function SirrWafqPage() {
           </div>
           {!lean && <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
-                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
+                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} cornerText={cornerText} setCornerText={setCornerText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
                         isLove={purposeId === "love" || actId === "marriage"}
                         tawkeelBox={<TawkeelBox wd={sqWd} fromSquare={!!sqPlanet} tk={tk} setTk={setTkEdit} isEn={isEn} txt={txt} />}
@@ -2006,7 +2013,7 @@ export default function SirrWafqPage() {
               {lean && (
                 <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
-                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
+                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} cornerText={cornerText} setCornerText={setCornerText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
                         isLove={purposeId === "love" || actId === "marriage"}
                         tawkeelBox={<Note color="rgba(255,255,255,0.6)">{txt("ഉദ്ദേശ്യവും പേരും ഒന്നാം പടിയിൽ എഴുതിയതാണ് ഇവിടെ വരുന്നത്. ചുറ്റും എഴുതുന്നത്:", "The purpose and names come from step 1. What is written round:")} <span className="font-amiri text-sm" dir="rtl">{tkRingText}</span></Note>}
@@ -2016,7 +2023,7 @@ export default function SirrWafqPage() {
                 <WafqSheet grid={sqGrid} angel={angel}
                            angels={angelSel !== "none"} fourAngels={angelSel === "four"}
                            weekday={sqWd} besmele={false}
-                           verse={corners === "book" ? CORNER_VERSE : corners === "ayah" ? ayah.trim() : ""}
+                           verse={corners === "book" ? (cornerText.trim() || CORNER_VERSE) : corners === "ayah" ? ayah.trim() : ""}
                            lineText={edge === "besmele" ? (bismiText.trim() || BASMALA_FULL) : edge === "ayah" ? ayah.trim() : ""}
                            ringAround={ring === "tawkeel" ? tkRingText : ring === "ayah" ? ayah.trim() : ""}
                            className="w-full h-auto" />
