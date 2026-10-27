@@ -461,7 +461,7 @@ function SectionB() {
       <div className="flex gap-4 text-sm text-gray-400">
         <div className="flex items-center gap-2">
           <Book className="w-4 h-4" />
-          <span>{filteredNames.length} of {names.length} names from PDFs</span>
+          <span>{filteredNames.length} / {names.length} {language === "ml" ? "നാമങ്ങൾ" : "names"}</span>
         </div>
       </div>
 
@@ -530,7 +530,7 @@ function SectionB() {
                 <div className="flex justify-between items-center text-xs pt-2 border-t" style={{
                   borderColor: "rgba(212,175,55,0.20)"
                 }}>
-                  <span style={{ color: "rgba(255,255,255,0.50)" }}>{name.surah_name || "PDF"}</span>
+                  <span style={{ color: "rgba(255,255,255,0.50)" }}>{name.surah_name === "Tilimsani" ? "" : (name.surah_name || "")}</span>
                   {isOwner && <span style={{ color: "rgba(212,175,55,0.60)" }}>Page {name.source_pdf_page}</span>}
                 </div>
               </div>

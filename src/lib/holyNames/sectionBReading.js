@@ -1,3 +1,4 @@
+import { withLegacyTranslations } from './legacyTranslations';
 import quranMeanings from '@/data/holyNamesQuranMeanings.json';
 import structuredMethods from '@/data/holyNamesSectionBMethods.json';
 import shamsBrief from '@/data/holyNamesShamsBrief.json';
@@ -18,7 +19,7 @@ function publicUrl(entry) {
 
 function normalize(entry, field, index) {
   const verse = /Tanzil/.test(entry.source_book || '') ? quranMeanings.verses[entry.source_page] : null;
-  const arabic = entry.arabic_text || entry.arabic_original || '';
+  const arabic = [entry.arabic_text, entry.arabic_original].find(value => typeof value === 'string' && value.trim() && !/^(null|undefined)$/i.test(value.trim())) || '';
   const matchedVerse = verse && (!arabic || arabic === verse.arabic) ? verse : null;
   const multipleVerses = /Tanzil/.test(entry.source_book || '') && !arabic && String(entry.source_page).includes(';')
     ? entry.source_page.split(';').map(ref => ({ ref: ref.trim(), ...quranMeanings.verses[ref.trim()] })).filter(item => item.arabic) : [];
@@ -27,6 +28,7 @@ function normalize(entry, field, index) {
     title: { ml: entry.title_ml || 'സ്രോതസ്സിലെ പരാമർശം', en: entry.title_en || 'Source account' },
     translation: { ml: entry.malayalam_text || entry.malayalam_translation || entry.malayalam || '', en: entry.english_text || entry.english_translation || entry.english || '' },
     arabic_original: arabic || matchedVerse?.arabic || '',
+    arabic_translation: entry.editorial_arabic_translation || null,
     verse_meaning: matchedVerse,
     multiple_verses: multipleVerses,
     translation_note: matchedVerse || multipleVerses.length ? quranMeanings.translation_note : null,
@@ -56,15 +58,16 @@ export function sectionBReading(card, nameId) {
   const seen = new Map();
   for (const field of SECTION_B_FIELDS) {
     for (const [index, original] of (Array.isArray(card[field]) ? card[field] : []).entries()) {
+      const translated = withLegacyTranslations(original, nameId, field);
       if (!isSourceChecked(original)) {
         result.pending++;
-        const legacy = normalize(original, field, index);
+        const legacy = normalize(translated, field, index);
         legacy.review_status = 'pending_source_recheck';
         legacy.source_kind = legacy.source_kind || 'legacy_record';
         result.pendingEntries.push(legacy);
         continue;
       }
-      const entry = normalize(original, field, index);
+      const entry = normalize(translated, field, index);
       const structured = structuredMethods[nameId]?.[entry.id];
       if (structured && structured.source_book === entry.references[0].book && structured.source_page === entry.references[0].page) {
         for (const key of ['steps', 'count', 'timing', 'conditions']) entry[key] = structured[key];

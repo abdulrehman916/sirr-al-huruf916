@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, BookOpen, ScrollText, Sparkles, Shield, Square, Star, Hand, Gift, AlertTriangle, Clock, Hash, ListChecks, Type, Languages, Library, History } from "lucide-react";
 import { useHolyNamesLanguage } from "./HolyNamesLanguageContext";
 import { useIsOwner } from "@/hooks/useIsOwner";
+import { withLegacyTranslations } from '@/lib/holyNames/legacyTranslations';
 import { isSourceChecked } from '@/lib/holyNames/sectionBReading';
 
 // ═══════════════════════════════════════════════════════════════
@@ -82,11 +83,13 @@ function displayValue(value) {
   return typeof value === "string" && /^(null|undefined)$/i.test(value.trim()) ? "" : (value ?? "");
 }
 
-function EntryCard({ entry, language }) {
+function EntryCard({ entry: original, language, cardId, field }) {
+  const entry = withLegacyTranslations(original, cardId, field);
+  const isOwner = useIsOwner();
   const text = entry?.text || entry?.verbatim_text || "";
-  const arabic = entry?.arabic_text || entry?.arabic_original || (/^[^A-Za-z]*[\u0600-\u06ff]/.test(text) ? text : "");
+  const arabic = displayValue(entry?.arabic_text) || displayValue(entry?.arabic_original) || (/^[^A-Za-z]*[\u0600-\u06ff]/.test(text) ? text : "");
   const malayalam = displayValue(entry?.malayalam_text) || displayValue(entry?.malayalam_translation) || displayValue(entry?.malayalam) || displayValue(entry?.exact_meaning);
-  const english = displayValue(entry?.english_text) || displayValue(entry?.english_translation) || displayValue(entry?.english) || (/[A-Za-z]/.test(text) && !/[\u0600-\u06ff\u0d00-\u0d7f]/.test(text) ? text : "");
+  const english = displayValue(entry?.english_text) || displayValue(entry?.english_translation) || displayValue(entry?.english) || (/[A-Za-z]/.test(text) && !/[\u0d00-\u0d7f]/.test(text) ? text : "");
   const translation = language === "ml" ? malayalam : language === "en" ? english : "";
   const sourceBook = entry?.source_book || entry?.source_reference || entry?.book || "";
   const author = entry?.author || "";
@@ -107,6 +110,7 @@ function EntryCard({ entry, language }) {
 
   return (
     <div className="rounded-lg border p-3" style={{ background: "rgba(255,255,255,0.02)", borderColor: "rgba(212,175,55,0.22)" }}>
+      {!isOwner && !checked && <p className="text-xs text-white/50 mb-2">{language === 'ml' ? 'ഗ്രന്ഥപരാമർശം · പരിശോധന ബാക്കി' : 'Book account · review pending'}</p>}
       {title && <h3 className="text-base text-gold font-semibold mb-2">{title}</h3>}
       {checked && <p className="text-xs text-white/60 mb-2">{language === "ml" ? "മൂലസ്രോതസ്സുമായി ഒത്തുനോക്കിയ പാഠം" : "Text checked against the primary source"}</p>}
       {arabic && (
@@ -114,6 +118,8 @@ function EntryCard({ entry, language }) {
           {arabic}
         </p>
       )}
+      {entry.editorial_arabic_translation && <div className="space-y-2 mb-3"><p className="text-xs text-white/50">{language === 'ml' ? 'അറബി പരിഭാഷ — മൂല ഉദ്ധരണിയല്ല' : 'Arabic translation — not a source quotation'}</p><p dir="rtl" lang="ar" className="font-amiri text-xl leading-loose text-gold">{entry.editorial_arabic_translation}</p></div>}
+      {!arabic && /^[0-9\s|\\n]+$/.test(text) && text.includes('|') && <pre dir="ltr" className="text-white/85 whitespace-pre-wrap">{text.replaceAll('\\n', '\n')}</pre>}
       {translation && (
         <p className={`text-white/90 text-base leading-loose mb-3 whitespace-pre-wrap ${language === "ml" ? "font-malayalam" : "font-inter"}`} lang={language}>{translation}</p>
       )}
@@ -132,15 +138,15 @@ function EntryCard({ entry, language }) {
       )}
       {(sourceBook || author || page || lang || conf || cat || notes) && (
         <details className="text-xs text-white/50 border-t border-white/10 pt-2 mt-3">
-          <summary className="cursor-pointer">{language === "ml" ? "മൂലസ്രോതസ്സ്" : "Source details"}</summary>
+          <summary className="cursor-pointer" aria-label={language === "ml" ? "മൂലസ്രോതസ്സ്" : "Source details"}>{isOwner ? (language === "ml" ? "മൂലസ്രോതസ്സ്" : "Source details") : "ⓘ"}</summary>
           <div className="space-y-1 pt-2">
             {sourceBook && <p>{sourceBook}{author ? ` — ${author}` : ""}</p>}
-            {page && <p>{language === "ml" ? "പേജ് / പാഠനമ്പർ" : "Page / text number"}: {page}</p>}
-            {lang && <p>Language: {lang}</p>}
-            {conf && <p>Imported confidence: {conf}</p>}
+            {isOwner && page && <p>{language === "ml" ? "പേജ് / പാഠനമ്പർ" : "Page / text number"}: {page}</p>}
+            {isOwner && lang && <p>Language: {lang}</p>}
+            {isOwner && conf && <p>Imported confidence: {conf}</p>}
             {!checked && <p>{language === "ml" ? "പഴയ ഇറക്കുമതി വിവരം: പുസ്തകം, പേജ്, ഗുണങ്ങൾ എന്നിവയുടെ ആധികാരികത വീണ്ടും പരിശോധിക്കേണ്ടതാണ്. HIGH / verified എന്ന പഴയ അടയാളം മാത്രം മൂലസ്രോതസ്സിന്റെ തെളിവല്ല." : "Legacy import: book, page and claimed properties need source verification. An imported HIGH / verified label alone is not primary-source evidence."}</p>}
-            {cat && <p>Category: {cat}</p>}
-            {notes && <p className="whitespace-pre-wrap break-words">{notes}</p>}
+            {isOwner && cat && <p>Category: {cat}</p>}
+            {isOwner && notes && <p className="whitespace-pre-wrap break-words">{notes}</p>}
             {entry?.public_source_url?.startsWith("https://tanzil.net/#") && <a href={entry.public_source_url} target="_blank" rel="noopener noreferrer" className="block text-gold underline">Tanzil Project — Quran text</a>}
             {entry?.source_notice && <p className="whitespace-pre-wrap text-[11px]">{entry.source_notice}</p>}
           </div>
@@ -151,6 +157,7 @@ function EntryCard({ entry, language }) {
 }
 
 function VariantCard({ entry, type }) {
+  const isOwner = useIsOwner();
   const value = entry?.arabic || entry?.meaning || entry?.pronunciation || entry?.text || "";
   const note = entry?.note || "";
   const sourceBook = entry?.source_book || entry?.source_reference || entry?.book || "";
@@ -166,9 +173,9 @@ function VariantCard({ entry, type }) {
       )}
       {note && <p className="text-white/55 text-xs mb-1">{note}</p>}
       {(sourceBook || page) && (
-        <div className="text-[11px] text-white/45">
-          {sourceBook && <span>📚 {sourceBook}</span>}{page && <span> · p.{page}</span>}
-        </div>
+        <details className="text-[11px] text-white/45"><summary className="cursor-pointer" aria-label="Source information">{isOwner ? "Source information" : "ⓘ"}</summary>
+          {sourceBook && <span>{sourceBook}</span>}{isOwner && page && <span> · p.{page}</span>}
+        </details>
       )}
     </div>
   );
@@ -227,7 +234,7 @@ export default function HolyOneScholarlySections({ card, pendingOnly = false }) 
       <div className="flex items-center gap-2 mb-2">
         <Library className="w-5 h-5" style={{ color: G.text }} />
         <h2 className={`${language === "ml" ? "font-malayalam" : "font-inter"} font-semibold text-white`}>
-          {pendingOnly ? (language === 'ml' ? 'പഴയ പരാമർശങ്ങൾ — സ്രോതസ്സ് പുനഃപരിശോധന ബാക്കി' : 'Earlier accounts — source recheck pending') : (language === "ml" ? "പണ്ഡിത ഗ്രന്ഥശാല" : "Scholarly Library")}
+          {!isOwner ? (language === 'ml' ? 'കൂടുതൽ വിശദീകരണങ്ങൾ' : 'Further explanations') : pendingOnly ? (language === 'ml' ? 'പഴയ പരാമർശങ്ങൾ — സ്രോതസ്സ് പുനഃപരിശോധന ബാക്കി' : 'Earlier accounts — source recheck pending') : (language === "ml" ? "പണ്ഡിത ഗ്രന്ഥശാല" : "Scholarly Library")}
         </h2>
         {isOwner && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "rgba(212,175,55,0.15)", color: G.text }}>
           {sources.length} sources · {history.length} passes
@@ -237,7 +244,7 @@ export default function HolyOneScholarlySections({ card, pendingOnly = false }) 
       {sections.map(s => (
         <CollapsibleSection key={s.key} icon={s.icon} title_ml={s.label_ml} title_en={s.label_en} count={s.count}>
           {s.items.map((entry, i) => (
-            <EntryCard key={i} entry={entry} language={language} />
+            <EntryCard key={i} entry={entry} language={language} cardId={c.pdf_name_id} field={s.key} />
           ))}
         </CollapsibleSection>
       ))}
