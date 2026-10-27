@@ -558,16 +558,16 @@ function TypesIntro({ N, n, step, setStep, hasResult, isEn, txt }) {
   const K = [
     { t: txt("അടിസ്ഥാന കളം (التعمير)", "The standard square (التعمير)"), b: 1,
       d: txt("ആകെ തുകയിൽ നിന്ന് أس കുറച്ച് വശം കൊണ്ട് ഹരിച്ചത് മിഫ്താഹ്. അത് അലിഫിന്റെ വീട്ടിൽ, പിന്നെ ഓരോ വീട്ടിലും ഒന്നു വീതം കൂട്ടി. എല്ലാ വരിയും നിരയും രണ്ട് കോണും ഒരേ തുക. പ്രധാന വഴിയിൽ ഉണ്ടാക്കുന്നത് ഇതാണ്.",
-             "The total less the أس, divided by the side, is the key. It goes in the house of alif, then one more in each house. Every row, column and both diagonals agree. This is the square of the main way.") },
+             "The total less the أس, divided by the side, is the key. It goes in the house of alif, then one more in each house. Every row, column and both diagonals agree. This is the square of the main way.") , main: "auto" },
     { t: txt("ജബ്ർ — ബാക്കി വന്നാൽ", "Jabr — when a remainder is left"), b: 1,
       d: txt("ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ ഒരു പ്രത്യേക വീട് മുതൽ ഓരോന്നിലും ഒന്ന് കൂടുതൽ. ആ വീട് = (വശം − ബാക്കി) × വശം + 1. 3×3-ൽ ഇങ്ങനെ വന്നാൽ ഒരു കോൺ ഒരു പടി കുറയും — അപ്പോൾ നടുവൊഴിഞ്ഞ കളം നല്ലത്.",
-             "If the division leaves a remainder, from one house on each is one more. That house = (side − remainder) × side + 1. On a 3×3 one diagonal then falls a step short — the hollow-centre square is better there.") },
+             "If the division leaves a remainder, from one house on each is one more. That house = (side − remainder) × side + 1. On a 3×3 one diagonal then falls a step short — the hollow-centre square is better there.") , main: "auto" },
     { t: txt("തഫാദുൽ — ചുവട്", "Tafāḍul — the step"), b: 1,
-      d: txt("ഓരോ വീട്ടിലും ഒന്നിന് പകരം 2, 3… കൂട്ടുന്നത്. കളത്തിന്റെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. സാധാരണ 1.",
-             "Adding 2, 3… from house to house in place of one. The total stays; only the key changes. Normally 1."), step: true },
+      d: txt("ഓരോ വീട്ടിലും ഒന്നിന് പകരം 2, 3… കൂട്ടുന്നത് — എല്ലാ വീട്ടിലും ഒരേ ചുവട്. 3×3-ന് മിഫ്താഹ് = (തുക − 12 × ചുവട്) ÷ 3. കളത്തിന്റെ തുക മാറില്ല, സംഖ്യകൾ മാത്രം മാറും. ഏത് ചുവട് എടുക്കണമെന്നോ സൂര്യ-ചന്ദ്ര കോണോ ഒന്നാം കിതാബ് പറയുന്നില്ല; കോൺ രണ്ടാം കിതാബിന്റെ നിയമമാണ് (സെക്ഷൻ B/C). സാധാരണ 1.",
+             "Adding 2, 3… from house to house in place of one — the same step in every house. For a 3×3 the key = (total − 12 × step) ÷ 3. The total stays; only the numbers change. Which step to take, or any Sun–Moon angle, the first book does not say; the angle is the second book's rule (Sections B/C). Normally 1."), step: true, main: true },
     { t: txt("നടുവൊഴിഞ്ഞ കളം (المثلث خالي الوسط)", "The hollow-centre square (المثلث خالي الوسط)"), b: 1,
       d: txt("3×3-ലെ നടുവിലെ വീട് (ه) ഒഴിച്ചിട്ട് ബാക്കി എട്ട് വീടുകളിൽ മാത്രം സംഖ്യ. ഓരോ വരിയും നിരയും ആകെ തുക; കോണുകൾ ബാധകമല്ല. പ്രത്യേകത — കിതാബ്: ഇത് ഫലത്തിൽ ശക്തമാണ്, വേഗത്തിൽ ഫലം കിട്ടും, പ്രത്യേകിച്ച് ശിഫ, ഖബൂൽ, മഹബ്ബത്ത് പോലുള്ള നല്ല കാര്യങ്ങളിൽ. ഉള്ളിൽ എഴുതേണ്ടത്: കിതാബ് നടുവിലെ വീട്ടിൽ ഏഴ് പടികൾ ഇറക്കാൻ പറയുന്നു — അല്ലാഹു, മുഹമ്മദ് ﷺ, ആവശ്യത്തിന്റെ മലക്ക്, താലിബിന്റെ പേര്, ആവശ്യം, മത്‌ലൂബ്, വശത്തിന്റെ എണ്ണം. ഇറക്കുന്നതിന് മുമ്പുള്ള ഇസ്തിഗ്ഫാർ 70, സ്വലാത്ത് 70, ദുആ — ഇവയെക്കുറിച്ച് കിതാബ്: \"ഇത് നടുവൊഴിഞ്ഞതാണെങ്കിലോ തദാഖുൽ പ്രകാരമാണെങ്കിലോ\". കിതാബിൽ മൂന്ന് രൂപം: തുക 3 കൊണ്ട് (വേണ്ടിവന്നാൽ ×3), തുക 12 കൊണ്ട്, വശം ഒഴിഞ്ഞത്.",
-             "The 3×3 with its centre (ه) left empty and numbers in the other eight. Each row and column gives the total; the diagonals do not count. Its mark — the book: strong in effect and quick to answer, above all in good works such as healing, acceptance and love. What goes inside: the book has the seven ranks brought down into the middle house — Allah, Muhammad ﷺ, the angel of the need, the seeker's name, the need, the one sought, the side count; of the istighfar 70, salawat 70 and du'a said before, the book says \"this is when the centre is empty, or by tadakhul\". The book gives three forms: by thirds of the total (×3 if needed), by twelfths, and the hollow-side.") },
+             "The 3×3 with its centre (ه) left empty and numbers in the other eight. Each row and column gives the total; the diagonals do not count. Its mark — the book: strong in effect and quick to answer, above all in good works such as healing, acceptance and love. What goes inside: the book has the seven ranks brought down into the middle house — Allah, Muhammad ﷺ, the angel of the need, the seeker's name, the need, the one sought, the side count; of the istighfar 70, salawat 70 and du'a said before, the book says \"this is when the centre is empty, or by tadakhul\". The book gives three forms: by thirds of the total (×3 if needed), by twelfths, and the hollow-side.") , main: true },
     { t: txt("അത്ത്വൂഖിയുടെ രീതി — തെറ്റ്", "Al-Tukhi's way — wrong"), b: 1,
       d: txt("കിതാബ് ഇത് രേഖപ്പെടുത്തുന്നത് തള്ളിക്കളയാൻ മാത്രം: ഓരോ വരിയും ആകെ തുകയുടെ മൂന്നിലൊന്നേ വരുന്നുള്ളൂ. താഴെ ഉദാഹരണം.",
              "The book records it only to reject it: each line gives only a third of the total. The example is below.") },
@@ -582,6 +582,8 @@ function TypesIntro({ N, n, step, setStep, hasResult, isEn, txt }) {
         <div key={i} className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.2)" }}>
           <p className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>{k.t} <span className="font-normal text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>· {txt("ഒന്നാം കിതാബ്", "the first book")}</span></p>
           <p className="font-inter text-[11px] leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>{k.d}</p>
+          {k.main === "auto" && <p className="font-inter text-[10px]" style={{ color: "#4ADE80" }}>{txt("✓ പ്രധാന വഴിയിലെ കളം ഇങ്ങനെ തന്നെയാണ് ഉണ്ടാക്കുന്നത് — ബാക്കി വന്നാൽ ജബ്ർ തനിയെ. ചുറ്റെഴുത്തും ഡൗൺലോഡും അവിടെ.", "✓ The main way's square is made exactly so — jabr applied by itself on a remainder. Its surround and download are there.")}</p>}
+          {k.main === true && <p className="font-inter text-[10px]" style={{ color: "#4ADE80" }}>{txt("✓ പ്രധാന വഴിയിലെ പടി 3-ൽ (\"കളത്തിന്റെ തരം\") ഇത് തിരഞ്ഞെടുക്കാം — അപ്പോൾ ചുറ്റെഴുത്തോടെ കാണാനും ഡൗൺലോഡ് ചെയ്യാനും ആ കളം തന്നെ വരും.", "✓ Choose it in the main way, step 3 (\"The kind of square\") — the square then comes with its surround, ready to download.")}</p>}
           {k.step && (
             <label className="flex items-center gap-1.5 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
               {txt("ചുവട്", "Step")}
@@ -1344,10 +1346,32 @@ export default function SirrWafqPage() {
     setTimeout(() => document.getElementById("wafq-result")?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
   }
 
+  // The kind of square the main way builds: the standard one (with jabr
+  // when a remainder is left, and tafadul when a step is set), or, for a
+  // 3×3, one of the book's hollow forms. Whichever is chosen is the square
+  // drawn, written in order, surrounded and downloaded.
+  const [variant, setVariant] = useState("std");
+  const variantBuilt = useMemo(() => {
+    if (!result || variant === "std" || result.n !== 3) return null;
+    const m = METHODS.find((x) => x.id === variant);
+    const b = m?.build(result.N, { n: 3, step: 1 });
+    return b && b.grid ? b : null;
+  }, [result, variant]);
+  const sqGrid = variantBuilt ? variantBuilt.grid : result?.grid;
+  const sqHouses = variantBuilt ? (variantBuilt.houses || null) : result?.houses;
+  const hollowOpts = useMemo(() => (n === 3 && N > 0 && step === 1
+    ? ["hollow", "hollow12", "hollowside"].map((id) => {
+        const m = METHODS.find((x) => x.id === id);
+        const b = m?.build(N, { n: 3, step: 1 });
+        return { id, m, ok: !!(b && b.grid && b.valid !== false) };
+      })
+    : []), [n, N, step]);
+  useEffect(() => { setVariant("std"); }, [N, n, step]);
+
   const order = useMemo(() => {
-    if (!result) return [];
-    return result.houses.flat().map((h, k) => [h, k]).sort((a, b) => a[0] - b[0]).map(([, k]) => k);
-  }, [result]);
+    if (!sqGrid) return [];
+    return sqGrid.flat().map((v, k) => [v, k]).filter(([v]) => v != null).sort((a, b) => a[0] - b[0]).map(([, k]) => k);
+  }, [sqGrid]);
   const doneSet = useMemo(() => new Set(writeIdx < 0 ? [] : order.slice(0, writeIdx + 1)), [order, writeIdx]);
 
   const dayWd = chosen ? chosen.wd : getPlanetaryDay(Date.now(), loc).pDay.wd;
@@ -1380,11 +1404,11 @@ export default function SirrWafqPage() {
   function copyText() {
     if (!result) return;
     const head = `سر الوفق — N=${result.N}, ${result.n}×${result.n}, مفتاح=${result.key}${result.rem ? `, جبر=${result.jabrHouse}` : ""}`;
-    navigator.clipboard?.writeText(head + "\n" + result.grid.map((r) => r.join("\t")).join("\n")).then(() => setCopied(true)).catch(() => {});
+    navigator.clipboard?.writeText(head + "\n" + sqGrid.map((r) => r.map((v) => (v == null ? "" : v)).join("\t")).join("\n")).then(() => setCopied(true)).catch(() => {});
   }
   function drawOpts() {
     return {
-      grid: result.grid, bismi, sideAngels,
+      grid: sqGrid, bismi, sideAngels,
       dayAngel: dayRow && dayRow.angel !== "—" ? dayRow.angel : null,
       dayKhadim: dayRow && dayRow.khadim !== "—" ? dayRow.khadim : null,
       ranks: rankValues.filter((v) => v && v !== "—"),
@@ -1815,7 +1839,35 @@ export default function SirrWafqPage() {
               "ചുവട് = ഓരോ വീട്ടിൽ നിന്ന് അടുത്ത വീട്ടിലേക്ക് എത്ര കൂട്ടണം (തഫാദുൽ). സാധാരണ 1. 2 ആക്കിയാൽ ഓരോ വീട്ടിലും 2 വീതം കൂടും; എന്നാലും കളിയുടെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. സംശയമുണ്ടെങ്കിൽ 1-ൽ വിടുക.",
               "Step = how much is added from one house to the next (tafāḍul). Normally 1. At 2, each house goes up by 2; the square's total stays the same, only the key changes. If unsure, leave it at 1.")}</p>
             </>)}
-            {lean && step > 1 && <p className="w-full" style={{ color: GOLD }}>{txt(`ചുവട് (തഫാദുൽ) ${step} — "കളങ്ങളുടെ തരങ്ങൾ" എന്നതിൽ മാറ്റാം.`, `Step (tafāḍul) ${step} — change it under "Kinds of square".`)}</p>}
+            {lean && (
+              <div className="w-full space-y-2 rounded-xl p-2.5" style={{ border: "1px solid rgba(212,175,55,0.22)" }}>
+                <p className="font-bold" style={{ color: GOLD }}>{txt("കളത്തിന്റെ തരം", "The kind of square")}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  <button type="button" onClick={() => setVariant("std")} className="px-2.5 py-1 rounded-lg font-bold" style={btn(variant === "std")}>
+                    {txt("അടിസ്ഥാന കളം", "Standard")} <span className="font-amiri">التعمير</span>
+                  </button>
+                  {hollowOpts.map((o) => (
+                    <button key={o.id} type="button" disabled={!o.ok} onClick={() => setVariant(o.id)}
+                            className="px-2.5 py-1 rounded-lg font-bold" style={{ ...btn(variant === o.id), opacity: o.ok ? 1 : 0.35 }}>
+                      {isEn ? o.m.en : o.m.ml}{o.ok ? "" : " ✗"}
+                    </button>
+                  ))}
+                </div>
+                <p style={{ color: "rgba(255,255,255,0.55)" }}>{txt(
+                  "അടിസ്ഥാന കളം: മിഫ്താഹ് അലിഫിന്റെ വീട്ടിൽ, പിന്നെ ഓരോ വീട്ടിലും ഒന്ന് (അല്ലെങ്കിൽ ചുവട്) കൂട്ടി. ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ ജബ്ർ തനിയെ ചെയ്യും — പ്രത്യേകം തിരഞ്ഞെടുക്കേണ്ടതില്ല. 3×3 ആണെങ്കിൽ നടുവൊഴിഞ്ഞ കളവും ഇവിടെ തിരഞ്ഞെടുക്കാം (ചുവട് 1-ൽ മാത്രം); തിരഞ്ഞെടുക്കുന്നതാണ് ചുറ്റെഴുത്തോടെ വരുന്നതും ഡൗൺലോഡ് ആകുന്നതും. ✗ = ഈ തുകയ്ക്ക് ആ രൂപം ശരിയാകില്ല.",
+                  "Standard: the key in the house of alif, then one (or the step) more in each house. If the division leaves a remainder, jabr is applied by itself — nothing to choose. For a 3×3 the hollow-centre forms can be chosen here (step 1 only); the one chosen is the square surrounded and downloaded. ✗ = that form does not come out for this total.")}</p>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span style={{ color: "rgba(255,255,255,0.7)" }}>{txt("ചുവട് (തഫാദുൽ)", "Step (tafāḍul)")}:</span>
+                  {[1, 2, 3, 4].map((k) => (
+                    <button key={k} type="button" onClick={() => setStep(k)} className="px-2.5 py-1 rounded-lg font-bold" style={btn(step === k)}>{k}</button>
+                  ))}
+                  <input type="number" min={1} max={99} value={step} onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))} className="w-14 rounded-lg px-2 py-1" style={input} />
+                </div>
+                <p style={{ color: "rgba(255,255,255,0.55)" }}>{txt(
+                  "തഫാദുൽ (ഒന്നാം കിതാബ്): ഓരോ വീട്ടിൽ നിന്ന് അടുത്തതിലേക്ക് 1-ന് പകരം 2, 3, 4… കൂട്ടുന്നു; എല്ലാ വീട്ടിലും ഒരേ ചുവട്, ഇല്ലെങ്കിൽ കളം തെറ്റും. കണക്ക് — 3×3-ന്: (തുക − 12 × ചുവട്) ÷ 3 = മിഫ്താഹ്. കളത്തിന്റെ തുക മാറില്ല, സംഖ്യകൾ മാത്രം മാറും. ഏത് ചുവട് എടുക്കണമെന്നോ സൂര്യ-ചന്ദ്ര കോണോ ഈ കിതാബ് പറയുന്നില്ല — അത് രണ്ടാം കിതാബിന്റെ (ഹവാസ്) നിയമമാണ്, സെക്ഷൻ B/C-ൽ. സംശയമെങ്കിൽ 1.",
+                  "Tafāḍul (first book): from house to house add 2, 3, 4… in place of one, the same in every house or the square breaks. The working, for a 3×3: (total − 12 × step) ÷ 3 = key. The total stays; only the numbers change. Which step to take, or the Sun–Moon angle, this book does not say — that is the second book's (Hâvâss) rule, in Sections B/C. If unsure, 1.")}</p>
+              </div>
+            )}
           </div>
           {!lean && <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
@@ -1900,7 +1952,7 @@ export default function SirrWafqPage() {
             <Box title={`${SIZE_NAME[result.n].ar} · ${result.n}×${result.n} · N = ${result.N}`} tone={result.valid ? "ok" : "warn"}>
               {/* The square in Arabic figures. While writing, the house to
                   write now is lit and the ones not yet written are faint. */}
-              <Grid grid={result.grid} arabic
+              <Grid grid={sqGrid} arabic
                     active={writeIdx >= 0 && writeIdx < order.length ? order[writeIdx] : undefined}
                     done={writeIdx >= 0 ? doneSet : undefined} />
               <div className="flex flex-wrap gap-2">
@@ -1909,13 +1961,13 @@ export default function SirrWafqPage() {
               </div>
               <Note>{txt("ഏറ്റവും ചെറിയ സംഖ്യ (മിഫ്താഹ്) ആദ്യം അലിഫിന്റെ വീട്ടിൽ; പിന്നെ ഓരോന്നായി കൂട്ടി ക്രമത്തിൽ, ഏറ്റവും വലിയ സംഖ്യ (മഗാലിഖ്) അവസാനം.", "The smallest number (the key) goes first, in the house of alif; then each next number in order, the largest (maghaliq) last.")}</Note>
               {writeIdx >= 0 && writeIdx < order.length && (() => {
-                const k = order[writeIdx], h = result.houses.flat()[k], v = result.grid.flat()[k];
+                const k = order[writeIdx], h = sqHouses ? sqHouses.flat()[k] : null, v = sqGrid.flat()[k];
                 const r = Math.floor(k / result.n) + 1, c = k % result.n + 1;
                 return (
                   <div className="rounded-xl p-3 text-center space-y-1" style={{ background: "rgba(212,175,55,0.10)", border: "1px solid rgba(212,175,55,0.4)" }}>
-                    <Note color={INK_C}>{txt(`വീട് ${h} / ${result.n * result.n}`, `House ${h} of ${result.n * result.n}`)} · {txt(`വരി ${r}, നിര ${c}`, `row ${r}, column ${c}`)}{result.n === 3 ? <> · <Ar>{HOUSE_LETTERS[h - 1]}</Ar></> : null}</Note>
+                    <Note color={INK_C}>{h ? <>{txt(`വീട് ${h} / ${result.n * result.n}`, `House ${h} of ${result.n * result.n}`)} · </> : <>{txt(`${writeIdx + 1}-ാമത്തെ സംഖ്യ`, `Number ${writeIdx + 1}`)} · </>}{txt(`വരി ${r}, നിര ${c}`, `row ${r}, column ${c}`)}{result.n === 3 && h ? <> · <Ar>{HOUSE_LETTERS[h - 1]}</Ar></> : null}</Note>
                     <p className="font-amiri text-4xl" style={{ color: GOLD }}>{toArabicDigits(v)}</p>
-                    {result.n === 3 && <Note>{txt("ഈ വീട് എഴുതുമ്പോൾ ചൊല്ലേണ്ടത്", "Recite while writing this house")}: <Ar size="text-lg">{RECITE[h]}</Ar></Note>}
+                    {result.n === 3 && h && <Note>{txt("ഈ വീട് എഴുതുമ്പോൾ ചൊല്ലേണ്ടത്", "Recite while writing this house")}: <Ar size="text-lg">{RECITE[h]}</Ar></Note>}
                   </div>
                 );
               })()}
@@ -1925,9 +1977,10 @@ export default function SirrWafqPage() {
                   {writeIdx < 0 ? txt("എഴുത്ത് തുടങ്ങുക", "Start writing") : writeIdx >= order.length - 1 ? txt("പൂർത്തിയായി ✓", "Done ✓") : `${txt("അടുത്തത്", "Next")} →`}
                 </button>
               </div>
-              <Note color={result.valid ? "#4ADE80" : "#FCA5A5"}>{result.valid
+              {variantBuilt && <Note color="#4ADE80">{txt(`${variantBuilt.tripled ? "തുക 3 കൊണ്ട് ഭാഗിക്കാത്തതിനാൽ കിതാബ് പറഞ്ഞതുപോലെ ×3. " : ""}നടുവ് ഒഴിഞ്ഞ കളം: ഓരോ വരിയും നിരയും ${variantBuilt.expected}. കോണുകൾ ഇതിൽ ബാധകമല്ല.`, `${variantBuilt.tripled ? "The total does not divide by 3, so ×3 as the book says. " : ""}Hollow-centre: each row and column ${variantBuilt.expected}; the diagonals do not apply.`)}</Note>}
+              {!variantBuilt && <Note color={result.valid ? "#4ADE80" : "#FCA5A5"}>{result.valid
                 ? txt("എല്ലാ വരിയും നിരയും രണ്ടു കോണും ഒരേ തുക — കള്ളി ശരി.", "Every row, column and both diagonals agree — the wafq is correct.")
-                : txt("ചില വരികൾ തുല്യമല്ല (✗). ✓ ഉള്ള മറ്റൊരു കള്ളി എടുക്കുക.", "Some lines differ (✗). Choose a square marked ✓.")}</Note>
+                : txt("ചില വരികൾ തുല്യമല്ല (✗). ✓ ഉള്ള മറ്റൊരു കള്ളി എടുക്കുക.", "Some lines differ (✗). Choose a square marked ✓.")}</Note>}
               <Fold on={lean} summary={txt("പരിശോധനയും കളത്തിന്റെ കണക്കുകളും", "The check and the square's figures")}>
               <SumsCheck result={result} txt={txt} />
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
@@ -1960,7 +2013,7 @@ export default function SirrWafqPage() {
                         isEn={isEn} txt={txt} />
               )}
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
-                <WafqSheet grid={result.grid} angel={angel}
+                <WafqSheet grid={sqGrid} angel={angel}
                            angels={angelSel !== "none"} fourAngels={angelSel === "four"}
                            weekday={sqWd} besmele={false}
                            verse={corners === "book" ? CORNER_VERSE : corners === "ayah" ? ayah.trim() : ""}
