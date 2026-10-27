@@ -310,7 +310,11 @@ export const SURROUND_RULE = {
 // ═══════════════════════════════════════════════════════════════
 
 /** Which side each besmele piece is written on. 0=top 90=right 180=bottom 270=left */
-export const BASMALA_SIDE = [0, 270, 90, 180];   // بسم top · الله left · الرحمن right · الرحيم bottom
+// Hâvâss I p.191 (the first figure): بسم along the top from the right,
+// الله down the left, الرحمن along the bottom, الرحيم up the right — the
+// four words going round the square one after the other, as the owner
+// pointed out (27 Oct 2026). الرحمن and الرحيم had been the wrong way round.
+export const BASMALA_SIDE = [0, 270, 180, 90];   // بسم top · الله left · الرحمن bottom · الرحيم right
 
 /** Which corner each verse piece sits on, قوله first at the besmele's gap. */
 export const VERSE_CORNER = ["tr", "tl", "bl", "br"];
