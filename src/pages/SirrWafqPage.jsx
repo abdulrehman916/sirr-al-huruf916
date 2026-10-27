@@ -332,6 +332,110 @@ function ReadingBox({ sqWd, need, love, sought, N, n, letters, isEn, txt }) {
   );
 }
 
+/**
+ * Step 6 of the lean Section A: everything that is said, in order —
+ * before the work, while each house is written, and after.
+ */
+function ReadingStep({ result, RECITE, reciteWay, setReciteWay, sqWd, need, love, sought, letters, isEn, txt }) {
+  const H = ({ children }) => <p className="font-inter text-[12px] font-bold pt-1" style={{ color: GOLD }}>{children}</p>;
+  const AR = ({ children }) => <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{children}</p>;
+  return (
+    <Box step="6" title={txt("വായിക്കേണ്ടത് — തുടങ്ങുന്നതിന് മുമ്പ്, എഴുതുമ്പോൾ, എഴുതിയ ശേഷം", "What is said — before, while writing, after")}>
+      <H>{txt("1. തുടങ്ങുന്നതിന് മുമ്പ്", "1. Before beginning")}</H>
+      <Note color="rgba(255,255,255,0.7)">{txt("രണ്ട് റക്അത്ത് നിസ്കാരം; ആവശ്യമെങ്കിൽ ഇസ്തിഖാറ. പിന്നെ:", "Two rak'at; istikhara if needed. Then:")}</Note>
+      {DUA_BEFORE.map((d, i) => (
+        <div key={i} className="rounded-xl p-2.5" style={{ background: "rgba(0,0,0,0.2)" }}>
+          <Note color={GOLD}><b>{d.count > 1 ? `${d.count}× ` : ""}{isEn ? d.en : d.ml}</b></Note>
+          <AR>{d.ar_v || d.ar}</AR>
+        </div>
+      ))}
+      <Note color="rgba(255,255,255,0.45)"><Ar size="text-sm">{DUA_BEFORE_WHEN.ar}</Ar> — {isEn ? DUA_BEFORE_WHEN.en : DUA_BEFORE_WHEN.ml}</Note>
+
+      <H>{txt("2. ഓരോ വീടും എഴുതുമ്പോൾ", "2. While each house is written")}</H>
+      {result.n === 3 ? (
+        <>
+          <div className="flex flex-wrap items-center gap-1.5 font-inter text-[10px]">
+            <span style={{ color: "rgba(255,255,255,0.6)" }}>{txt("കിതാബിൽ രണ്ട് രീതി:", "The book gives two ways:")}</span>
+            {[1, 2].map((w) => (
+              <button key={w} type="button" onClick={() => setReciteWay(w)} className="px-2.5 py-1 rounded-lg font-bold" style={PILL(reciteWay === w)}>
+                {w === 1 ? txt("ഒന്നാം രീതി", "First way") : txt("രണ്ടാം രീതി", "Second way")}
+              </button>
+            ))}
+          </div>
+          <div className="space-y-1">
+            {HOUSE_LETTERS.map((l, i) => (
+              <div key={l} className="flex items-center gap-2 rounded-lg px-2 py-1" style={{ background: "rgba(212,175,55,0.05)" }}>
+                <span className="font-amiri text-lg w-14 shrink-0" style={{ color: GOLD }}>{i + 1} · {l}</span>
+                <span className="font-amiri text-lg flex-1 text-right" dir="rtl" style={{ color: INK_C }}>{RECITE[i + 1]}</span>
+              </div>
+            ))}
+          </div>
+          {reciteWay === 2 && <Note color="rgba(255,255,255,0.65)">{txt("ഒമ്പത് വീടും എഴുതിക്കഴിഞ്ഞാൽ:", "When the nine are written:")} <Ar size="text-base">{HOUSE_RECITE_2_OATH}</Ar></Note>}
+          <Note color="rgba(255,255,255,0.45)">{txt("ഈ പേരുകൾക്ക് കിതാബിൽ ഹറകത്ത് ഇല്ല (ചിലയിടത്ത് തൻവീൻ മാത്രം — അത് വെച്ചിട്ടുണ്ട്). ഇവ ഭാഷയിലെ വാക്കുകളല്ലാത്തതിനാൽ ഊഹിച്ച് ഹറകത്ത് ഇട്ടിട്ടില്ല; കിതാബിൽ അച്ചടിച്ചതുപോലെ.", "The book gives these names without harakat (a few tanween only — kept). They are not words of the language, so none is guessed; as printed.")}</Note>
+        </>
+      ) : (
+        <Note color="rgba(255,255,255,0.7)">{txt("ഓരോ വീടും എഴുതുമ്പോൾ പേന ഉയർത്താതെ ഒരു ബിസ്മി: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ഓരോ വീടിനും പ്രത്യേക പേരുകൾ കിതാബ് തരുന്നത് 3×3-ന് മാത്രം.", "With each house, one basmala without lifting the pen: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. The book gives names per house only for the 3×3.")}</Note>
+      )}
+
+      <Note color="rgba(255,255,255,0.6)">{txt("നടുവിലെ വീട്ടിൽ ആവശ്യം ഇറക്കുമ്പോൾ (തൻസീൽ) ചൊല്ലേണ്ട ദുആ:", "The du'a as the need is brought down into the middle house:")}</Note>
+      <div className="rounded-xl p-2.5" style={{ background: "rgba(0,0,0,0.2)" }}><AR>{DUA_TANZIL.ar_v || DUA_TANZIL.ar}</AR></div>
+
+      <H>{txt("3. എഴുതിയ ശേഷം — ഖസവും അസീമയും", "3. After writing — the qasam and the azima")}</H>
+      <ReadingBox sqWd={sqWd} need={need} love={love} sought={sought} N={result.N} n={result.n} letters={letters} isEn={isEn} txt={txt} />
+    </Box>
+  );
+}
+
+/**
+ * The head of the lean Section A's second view: what each kind of square
+ * is, what sets it apart, what is written in it and how, and which book
+ * it is from — the books named by their place, not their title.
+ */
+function TypesIntro({ N, n, step, setStep, hasResult, isEn, txt }) {
+  const K = [
+    { t: txt("അടിസ്ഥാന കളം (التعمير)", "The standard square (التعمير)"), b: 1,
+      d: txt("ആകെ തുകയിൽ നിന്ന് أس കുറച്ച് വശം കൊണ്ട് ഹരിച്ചത് മിഫ്താഹ്. അത് അലിഫിന്റെ വീട്ടിൽ, പിന്നെ ഓരോ വീട്ടിലും ഒന്നു വീതം കൂട്ടി. എല്ലാ വരിയും നിരയും രണ്ട് കോണും ഒരേ തുക. പ്രധാന വഴിയിൽ ഉണ്ടാക്കുന്നത് ഇതാണ്.",
+             "The total less the أس, divided by the side, is the key. It goes in the house of alif, then one more in each house. Every row, column and both diagonals agree. This is the square of the main way.") },
+    { t: txt("ജബ്ർ — ബാക്കി വന്നാൽ", "Jabr — when a remainder is left"), b: 1,
+      d: txt("ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ ഒരു പ്രത്യേക വീട് മുതൽ ഓരോന്നിലും ഒന്ന് കൂടുതൽ. ആ വീട് = (വശം − ബാക്കി) × വശം + 1. 3×3-ൽ ഇങ്ങനെ വന്നാൽ ഒരു കോൺ ഒരു പടി കുറയും — അപ്പോൾ നടുവൊഴിഞ്ഞ കളം നല്ലത്.",
+             "If the division leaves a remainder, from one house on each is one more. That house = (side − remainder) × side + 1. On a 3×3 one diagonal then falls a step short — the hollow-centre square is better there.") },
+    { t: txt("തഫാദുൽ — ചുവട്", "Tafāḍul — the step"), b: 1,
+      d: txt("ഓരോ വീട്ടിലും ഒന്നിന് പകരം 2, 3… കൂട്ടുന്നത്. കളത്തിന്റെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. സാധാരണ 1.",
+             "Adding 2, 3… from house to house in place of one. The total stays; only the key changes. Normally 1."), step: true },
+    { t: txt("നടുവൊഴിഞ്ഞ കളം (المثلث خالي الوسط)", "The hollow-centre square (المثلث خالي الوسط)"), b: 1,
+      d: txt("3×3-ലെ നടുവിലെ വീട് (ه) ഒഴിച്ചിട്ട് ബാക്കി എട്ട് വീടുകളിൽ മാത്രം സംഖ്യ. ഓരോ വരിയും നിരയും ആകെ തുക; കോണുകൾ ബാധകമല്ല. പ്രത്യേകത — കിതാബ്: ഇത് ഫലത്തിൽ ശക്തമാണ്, വേഗത്തിൽ ഫലം കിട്ടും, പ്രത്യേകിച്ച് ശിഫ, ഖബൂൽ, മഹബ്ബത്ത് പോലുള്ള നല്ല കാര്യങ്ങളിൽ. ഉള്ളിൽ എഴുതേണ്ടത്: കിതാബ് നടുവിലെ വീട്ടിൽ ഏഴ് പടികൾ ഇറക്കാൻ പറയുന്നു — അല്ലാഹു, മുഹമ്മദ് ﷺ, ആവശ്യത്തിന്റെ മലക്ക്, താലിബിന്റെ പേര്, ആവശ്യം, മത്‌ലൂബ്, വശത്തിന്റെ എണ്ണം. ഇറക്കുന്നതിന് മുമ്പുള്ള ഇസ്തിഗ്ഫാർ 70, സ്വലാത്ത് 70, ദുആ — ഇവയെക്കുറിച്ച് കിതാബ്: \"ഇത് നടുവൊഴിഞ്ഞതാണെങ്കിലോ തദാഖുൽ പ്രകാരമാണെങ്കിലോ\". കിതാബിൽ മൂന്ന് രൂപം: തുക 3 കൊണ്ട് (വേണ്ടിവന്നാൽ ×3), തുക 12 കൊണ്ട്, വശം ഒഴിഞ്ഞത്.",
+             "The 3×3 with its centre (ه) left empty and numbers in the other eight. Each row and column gives the total; the diagonals do not count. Its mark — the book: strong in effect and quick to answer, above all in good works such as healing, acceptance and love. What goes inside: the book has the seven ranks brought down into the middle house — Allah, Muhammad ﷺ, the angel of the need, the seeker's name, the need, the one sought, the side count; of the istighfar 70, salawat 70 and du'a said before, the book says \"this is when the centre is empty, or by tadakhul\". The book gives three forms: by thirds of the total (×3 if needed), by twelfths, and the hollow-side.") },
+    { t: txt("അത്ത്വൂഖിയുടെ രീതി — തെറ്റ്", "Al-Tukhi's way — wrong"), b: 1,
+      d: txt("കിതാബ് ഇത് രേഖപ്പെടുത്തുന്നത് തള്ളിക്കളയാൻ മാത്രം: ഓരോ വരിയും ആകെ തുകയുടെ മൂന്നിലൊന്നേ വരുന്നുള്ളൂ. താഴെ ഉദാഹരണം.",
+             "The book records it only to reject it: each line gives only a third of the total. The example is below.") },
+  ];
+  return (
+    <div className="rounded-2xl p-4 space-y-3" style={card}>
+      <p className="font-amiri text-xl text-center" style={{ color: GOLD }}>أنواع الأوفاق</p>
+      <Note color="rgba(255,255,255,0.75)">{txt(
+        "പ്രധാന വഴിയിൽ ഉണ്ടാക്കുന്നത് അടിസ്ഥാന കളമാണ്. ഒന്നാം കിതാബിൽ പറയുന്ന മറ്റു തരം കളങ്ങളും അവയുടെ വിശദീകരണവും ഇവിടെ. ഓരോന്നും എന്താണ്, എന്താണ് പ്രത്യേകത, ഉള്ളിൽ എന്ത് എഴുതണം, എങ്ങനെ — പിന്നെ താഴെ നിങ്ങളുടെ തുകയിൽ ഉണ്ടാക്കിയ കളവും.",
+        "The main way builds the standard square. Here are the other kinds the first book gives, with what each is, what sets it apart, what goes in it and how — and below, each built from your total.")}</Note>
+      {K.map((k, i) => (
+        <div key={i} className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.2)" }}>
+          <p className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>{k.t} <span className="font-normal text-[10px]" style={{ color: "rgba(255,255,255,0.45)" }}>· {txt("ഒന്നാം കിതാബ്", "the first book")}</span></p>
+          <p className="font-inter text-[11px] leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>{k.d}</p>
+          {k.step && (
+            <label className="flex items-center gap-1.5 font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.6)" }}>
+              {txt("ചുവട്", "Step")}
+              <input type="number" min={1} max={99} value={step}
+                     onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))}
+                     className="w-14 rounded-lg px-2 py-1" style={TK_INPUT} />
+              {step > 1 && <span style={{ color: GOLD }}>{txt("പ്രധാന വഴിയിലെ കളവും ഈ ചുവടിലാകും.", "The main way's square takes this step too.")}</span>}
+            </label>
+          )}
+        </div>
+      ))}
+      {!(N > 0) && <Note color="#FCA5A5">{txt("കളങ്ങൾ ഉണ്ടാക്കി കാണിക്കാൻ ആദ്യം മുകളിൽ ഒന്നാം പടിയിൽ ഉദ്ദേശ്യമോ പേരോ സംഖ്യയോ എഴുതുക.", "To build the squares, first write a purpose, name or number in step 1 above.")}</Note>}
+      {N > 0 && !hasResult && <Note color="rgba(255,255,255,0.5)">{txt("നടുവിലെ വീടിന്റെ ഏഴ് പടികൾ, മലക്കുകളുടെ പട്ടിക, മൂലകവും ലോഹവും — ഇവ പ്രധാന വഴിയിൽ കളം ഉണ്ടാക്കിയ ശേഷം ഇവിടെ താഴെ വരും.", "The seven ranks, the angels' table, the element and metal come here below once the square is built in the main way.")}</Note>}
+    </div>
+  );
+}
+
 /** What goes in place of كذا وكذا, and the person sought (for love). */
 function tawkeelParts(tk) {
   const person = personAr(tk.name, tk.mother, tk.female);
@@ -631,6 +735,17 @@ const TAB_BTN = (active) => ({
   border: `1px solid ${active ? "rgba(212,175,55,0.55)" : "rgba(212,175,55,0.22)"}`,
 });
 const Note = ({ children, color = "rgba(245,234,212,0.78)" }) => <p className="font-inter text-xs leading-relaxed" style={{ color }}>{children}</p>;
+/** In the lean Section A, secondary detail sits folded; elsewhere it shows as before. */
+function Fold({ on, summary, children }) {
+  if (!on) return <>{children}</>;
+  return (
+    <details className="rounded-xl px-2.5 py-2" style={{ border: "1px solid rgba(212,175,55,0.18)" }}>
+      <summary className="font-inter text-[11px] font-bold cursor-pointer" style={{ color: "rgba(255,255,255,0.65)" }}>{summary}</summary>
+      <div className="space-y-2 mt-2">{children}</div>
+    </details>
+  );
+}
+
 const Ar = ({ children, size = "text-base" }) => <span className={`font-amiri ${size}`} style={{ color: GOLD }}>{children}</span>;
 const ArBlock = ({ children }) => (
   <p dir="rtl" className="font-amiri text-lg leading-loose rounded-xl p-3" style={{ color: INK_C, background: "rgba(0,0,0,0.22)", border: "1px solid rgba(212,175,55,0.18)" }}>{children}</p>
@@ -934,6 +1049,13 @@ export default function SirrWafqPage() {
     : null;
   const sectionLocked = !!(secFeature && !checkFeatureAccess(PAGE_PATH, secFeature.id));
   const secKey = section === "section-b" ? "b" : section === "section-c" ? "c" : "a";
+  // Section A (the first book) is kept to its main way — the square, its
+  // writing, its time and what is read — with the other kinds of square
+  // and the reference notes in a view of their own (owner, 27 Oct 2026).
+  const lean = secKey === "a";
+  const [aView, setAView] = useState("main");
+  const showMain = !lean || aView === "main";
+  const showTypes = !lean || aView === "types";
   const [mode, setMode] = useState("text");
   const [text, setText] = useState("");
   const [names, setNames] = useState({ self: "", mother: "", house: "" });
@@ -1141,6 +1263,78 @@ export default function SirrWafqPage() {
     );
   };
 
+  const timeBox = (
+        <Box step={lean ? "5" : "4"} title={lean ? txt("എഴുതേണ്ട ദിവസവും സമയവും", "The day and hour to write") : txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
+          <Intro>{txt("കള്ളി എപ്പോൾ എഴുതണമെന്ന് ഇവിടെ നോക്കാം. ആദ്യ ടാബിൽ ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന വിഷയങ്ങൾ; രണ്ടാമത്തേതിൽ കിതാബിന്റെ മൻസിൽ പട്ടിക; മൂന്നാമത്തേതിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം — സമ്പത്ത്, ജിന്ന്, യാത്ര എന്നിങ്ങനെ — മലയാളത്തിലോ അറബിയിലോ എഴുതി കിതാബ് അതിനെ ഏത് മൻസിലിലും ദിവസത്തിലും സാഅത്തിലും വെക്കുന്നു എന്ന് കാണാം.", "Here is when to write the square. The first tab holds the subjects the Astro Clock grades with a percentage; the second, the book\'s manzil table; the third lets you type your own purpose — provision, jinn, travel — in Malayalam or Arabic, and shows which manzil, day and hour the book places it in.")}</Intro>
+          <Rules isEn={isEn} items={isEn ? ["The order of time: the day first, then the hour, then the Qamar. It is the day that holds authority.", "First tab: the ten subjects the Astro Clock grades with a percentage, drawn together from the book's day table, hour table and manzil table.", "Second tab: the book's own table of the twenty-eight manazil, each with its nature and its work.", "Third tab: type your own purpose, in Malayalam or Arabic. It is searched against the thirty-five works the book names and its day-and-hour table.", "What comes back: which manazil are good for that work and which are not, the day and hour where the book gives them, and how far this moment answers to it.", "The reading is not invented. It is a count: of the conditions the book actually states for that work, how many are met now.", "No work the book does not name will appear here. If nothing comes back, try another word."] : ["സമയത്തിന്റെ ക്രമം: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ചന്ദ്രൻ. ദിവസമാണ് അധികാരം വഹിക്കുന്നത്.", "ആദ്യ ടാബ്: ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന 10 വിഷയങ്ങൾ. കിതാബിന്റെ ദിവസപ്പട്ടിക, സാഅത്ത് പട്ടിക, മൻസിൽ പട്ടിക — മൂന്നും ചേർന്നാണ് ആ ശതമാനം.", "രണ്ടാം ടാബ്: കിതാബിലെ 28 മൻസിലിന്റെ പട്ടിക, ഓരോന്നിന്റെയും സ്വഭാവവും കർമ്മവും.", "മൂന്നാം ടാബ്: നിങ്ങളുടെ സ്വന്തം ഉദ്ദേശ്യം മലയാളത്തിലോ അറബിയിലോ എഴുതുക. കിതാബ് പേരെടുത്തു പറയുന്ന 35 കർമ്മങ്ങളിലും അതിലെ സമയപ്പട്ടികയിലും തിരയും.", "കിട്ടുന്നത്: ആ കർമ്മത്തിന് ഏതൊക്കെ മൻസിൽ നല്ലത്, ഏതൊക്കെ പറ്റില്ല, കിതാബ് ദിവസവും സാഅത്തും പറയുന്നുണ്ടെങ്കിൽ അതും, ഇപ്പോൾ എത്ര ഒത്തുവരുന്നു എന്നും.", "ശതമാനം കെട്ടിച്ചമച്ചതല്ല — കിതാബ് ആ കർമ്മത്തിന് എത്ര നിബന്ധന പറയുന്നുവോ അതിൽ എത്ര ഇപ്പോൾ ഒത്തുവരുന്നു എന്ന എണ്ണമാണ്.", "കിതാബിൽ ഇല്ലാത്ത ഒരു കർമ്മവും ഇവിടെ വരില്ല. കിട്ടിയില്ലെങ്കിൽ വേറൊരു വാക്കിൽ നോക്കുക."]} />
+          <SquareDayTimes wd={sqWd} fromSquare={!!sqPlanet} n={result ? result.n : n} loc={loc} isEn={isEn} txt={txt} />
+          <Fold on={lean} summary={txt("കൂടുതൽ സമയ വിവരങ്ങൾ — ആസ്ട്രോ ക്ലോക്ക് വിഷയങ്ങൾ, മൻസിൽ പട്ടിക, ഉദ്ദേശ്യം തിരയൽ", "More on time — Astro Clock subjects, the manzil table, searching a purpose")}>
+          <div className="flex gap-1.5">
+            {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
+              <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>
+            ))}
+          </div>
+
+          {tab === "purpose" && <PurposePanel ml={!isEn} />}
+
+          {tab === "act" && (
+            <>
+              <div className="flex flex-wrap gap-1.5">
+                {K.ACTIVITIES.map((a) => (
+                  <button key={a.id} type="button" onClick={() => { setActId(a.id === actId ? null : a.id); setPurposeId(null); setChosen(null); }}
+                    className="px-2.5 py-1.5 rounded-xl font-inter text-[11px] font-bold" style={btn(actId === a.id)}>{a.icon} {isEn ? a.en : a.ml}</button>
+                ))}
+              </div>
+              {!act && <Note color="rgba(255,255,255,0.45)">{txt("ഒരു വിഷയം അമർത്തിയാൽ അതിന് പറ്റിയ അടുത്ത സമയങ്ങൾ ശതമാനത്തോടെ താഴെ വരും.", "Tap a subject to see its next suitable times with percentages.")}</Note>}
+              {act && actTimes && (
+                <div className="space-y-2">
+                  {actTimes.aligned.length > 0 && (
+                    <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(74,222,128,0.07)", border: "1px solid rgba(74,222,128,0.35)" }}>
+                      <Note color="#4ADE80"><b>★ {txt("ദിവസവും സാഅത്തും ഖമറും ഒരുമിച്ച് ചേരുന്ന സമയം", "Day, hour and Qamar all strong together")}</b></Note>
+                      {actTimes.aligned.map((h) => <TimeRow key={h.start} h={h} star />)}
+                    </div>
+                  )}
+                  <Note color="rgba(255,255,255,0.5)">{txt("ദിവസത്തിന് മുൻഗണന നൽകി ക്രമീകരിച്ചത്:", "Ranked with the day weighed first:")}</Note>
+                  {actTimes.best.map((h) => <TimeRow key={h.start} h={h} />)}
+                  {actTimes.best.length === 0 && actTimes.aligned.length === 0 && <Note color="#FCA5A5">{txt("വരുന്ന ദിവസങ്ങളിൽ പറ്റിയ സമയം കണ്ടെത്താനായില്ല.", "No suitable time found in the coming days.")}</Note>}
+                  <Note color="rgba(255,255,255,0.4)">{txt("ശതമാനം: ദിവസം 45% + സാഅത്ത് 35% + ഖമർ 20% — ആസ്ട്രോ ക്ലോക്കിന്റെ അതേ കണക്ക്.", "Percent: day 45% + hour 35% + Qamar 20% — the same reckoning as the Astro Clock.")}</Note>
+                </div>
+              )}
+            </>
+          )}
+
+          {tab === "manzil" && (
+            <>
+              <div className="flex flex-wrap gap-1.5">
+                {PURPOSES.map((p) => (
+                  <button key={p.id} type="button" onClick={() => { setPurposeId(p.id === purposeId ? null : p.id); setActId(null); setChosen(null); }}
+                    className="px-2.5 py-1.5 rounded-xl font-inter text-[11px] font-bold" style={btn(purposeId === p.id)}>
+                    <span className="font-amiri text-sm mr-1">{p.ar}</span>{isEn ? p.en : p.ml}
+                  </button>
+                ))}
+              </div>
+              {purpose && manzilTimes.map((t) => {
+                const mn = K.MANSIONS[t.m], tp = K.MANSION_PURPOSE[t.m];
+                return (
+                  <div key={t.m} className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(147,197,253,0.05)", border: "1px solid rgba(147,197,253,0.2)" }}>
+                    <Note color={INK_C}>🌙 <b>{txt("ഖമർ", "Qamar in")} {isEn ? K.MANSIONS_EN[t.m].name : mn.ml}</b> <Ar>{mn.ar}</Ar> · {t.span.current ? txt(`ഇപ്പോൾ — ${fmtWhen(t.span.end, loc, false)} വരെ`, `now — until ${fmtWhen(t.span.end, loc, true)}`) : fmtSpan(t.span, loc, isEn)}</Note>
+                    {tp && <Note color="#4ADE80">📋 {txt("കിതാബിലെ പ്രവൃത്തിപ്പട്ടിക", "Book's table of works")}: <Ar>{tp.ar}</Ar> — {isEn ? tp.en : tp.ml}</Note>}
+                    <Note color="rgba(255,255,255,0.5)">{t.best ? txt("ഖലീലി പറഞ്ഞ ഏറ്റവും നല്ല സാഅത്തുകൾ:", "al-Khalili's best hours:") : txt("ഖലീലി സാഅത്ത് പറയാത്തതിനാൽ സഅ്ദ് ഗ്രഹങ്ങളുടെ സാഅത്തുകൾ:", "No hour named here, so the sa'd planets' hours:")}</Note>
+                    {t.hours.map((h) => <TimeRow key={h.start} h={h} />)}
+                  </div>
+                );
+              })}
+            </>
+          )}
+          </Fold>
+          {/* When the book's times for the chosen work fall — today, or the
+              next day they come — read from the Astro Clock's own engine. */}
+          <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
+                           mansions={purpose?.mansions || null} ml={!isEn} />
+          {chosen && <Note color={GOLD}>✓ {txt("തിരഞ്ഞെടുത്ത സമയം", "Chosen time")}: {fmtSpan(chosen, loc, isEn)} · {isEn ? WD_EN[chosen.wd] : WD_ML[chosen.wd]}</Note>}
+        </Box>
+  );
+
   return (
     <PageLayout>
       <div className="space-y-3 pb-10 max-w-3xl mx-auto">
@@ -1191,8 +1385,18 @@ export default function SirrWafqPage() {
           ← {txt("സെക്ഷനുകളിലേക്ക്", "Back to the sections")}
         </button>
 
+        {lean && (
+          <div className="grid grid-cols-2 gap-1.5">
+            {[["main", txt("കളം എഴുതാൻ — പ്രധാന വഴി", "Writing the square — the main way")],
+              ["types", txt("കളങ്ങളുടെ തരങ്ങളും വിശദീകരണവും", "Kinds of square and the notes")]].map(([k, l]) => (
+              <button key={k} type="button" onClick={() => setAView(k)}
+                      className="py-2.5 rounded-xl font-inter text-[11px] font-bold" style={btn(aView === k)}>{l}</button>
+            ))}
+          </div>
+        )}
+
         {/* 1 */}
-        <Box step="1" title={txt("വാചകം അല്ലെങ്കിൽ പേര്", "Text or name")}>
+        <Box step="1" title={lean ? txt("ഉദ്ദേശ്യവും പേരും", "Purpose and name") : txt("വാചകം അല്ലെങ്കിൽ പേര്", "Text or name")}>
           <Intro>{txt("മനസ്സിൽ ഒരു ഉദ്ദേശ്യമുണ്ടെങ്കിൽ അത് അറബിയിൽ ഇവിടെ എഴുതുക — ഒരു ആയത്തോ സൂറത്തോ ഇസ്മോ, അല്ലെങ്കിൽ ആളുടെ പേരും ഉമ്മയുടെ പേരും. അതിന്റെ അബ്ജദ് തുകയിൽ നിന്നാണ് കള്ളി ഉണ്ടാകുന്നത്. ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ലെങ്കിൽ, നേരത്തെ കൂട്ടിവെച്ച ഒരു സംഖ്യ ഉണ്ടെങ്കിൽ അത് നേരിട്ട് കൊടുത്താലും മതി — ആ സംഖ്യയ്ക്ക് ചേരുന്ന കള്ളികൾ കിട്ടും.", "If you have a purpose in mind, write it here in Arabic — an ayah, a surah, a name of God, or a person\'s name with the mother\'s. The square is built from its abjad total. If the purpose is not settled, a total you have already worked out can be entered on its own, and you will get the squares that fit that number.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["Write in Arabic only. Harakat and the Quranic marks are skipped on their own — only written letters are counted.", "It may be an ayah or a whole surah, of any length. It may be the names of Allah, or a sentence of your own.", "For a person, the name and the mother's name are added together; the house name is optional. Each can be ticked in or out.", "If the text has a ة, you choose what it is worth: 5 as written (ه), or 400 as spoken (ت). Both are held among the scholars; keep to one throughout a working.", "If the purpose is not settled, a total you have already worked out can be entered as a number, with no text at all.", "The total that comes out is what the square is built from. Its element — fire, air, water or earth — is shown here too, settled by the remainder when the total is divided by four."] : ["അറബിയിൽ മാത്രം എഴുതുക. ഹറകത്തും (ഫത്ഹ്, കസ്റ്, ളമ്മ) ഖുർആനിലെ ചിഹ്നങ്ങളും തനിയെ ഒഴിവാകും — എഴുതിയ അക്ഷരങ്ങൾ മാത്രമേ എണ്ണുന്നുള്ളൂ.", "ആയത്തോ സൂറത്തോ ആകാം, എത്ര നീളമുള്ളതും. അല്ലാഹുവിന്റെ ഇസ്മുകളോ ഒരു വാചകമോ ആകാം.", "ആളുടെ പേരാണെങ്കിൽ പേരും ഉമ്മയുടെ പേരും ചേർത്ത് കൂട്ടുന്നു — വീട്ടുപേര് ഐച്ഛികം. ഓരോന്നും വേണോ വേണ്ടയോ എന്ന് ടിക്ക് ചെയ്ത് തീരുമാനിക്കാം.", "എഴുതിയതിൽ ة ഉണ്ടെങ്കിൽ മാത്രം അതിന്റെ മൂല്യം ചോദിക്കും: എഴുതുന്നതുപോലെ ه ആയി 5, അല്ലെങ്കിൽ ഉച്ചരിക്കുന്നതുപോലെ ت ആയി 400. രണ്ടും പണ്ഡിതന്മാർക്കിടയിൽ ഉണ്ട്; ഒരേ കർമ്മത്തിൽ ഒരേ രീതി തുടരുക.", "ഉദ്ദേശ്യം നിശ്ചയിച്ചിട്ടില്ലെങ്കിൽ, നേരത്തെ കൂട്ടിവെച്ച തുക നേരിട്ട് സംഖ്യയായി കൊടുക്കാം. അപ്പോൾ വാചകം വേണ്ട.", "കിട്ടുന്ന ആകെ തുകയാണ് കള്ളിയുടെ അടിസ്ഥാനം. തുകയുടെ മൂലകവും (അഗ്നി, വായു, ജലം, മണ്ണ്) ഇവിടെത്തന്നെ കാണാം — തുകയെ 4 കൊണ്ട് ഹരിച്ച ബാക്കിയാണ് അത് നിശ്ചയിക്കുന്നത്."]} />
           <div className="flex gap-1.5">
@@ -1307,6 +1511,14 @@ export default function SirrWafqPage() {
               </p>
             </div>
           )}
+          {lean && (
+            <div className="space-y-1.5 pt-1">
+              <p className="font-inter text-[12px] font-bold" style={{ color: GOLD }}>
+                {txt("ഉദ്ദേശ്യം — കളത്തിന് ചുറ്റുമുള്ള ഖസമിലും വായിക്കാനുള്ളതിലും വരുന്നത്", "The purpose — what goes into the qasam round the square and into what is read")}
+              </p>
+              <TawkeelBox wd={sqWd} fromSquare={!!sqPlanet} tk={tk} setTk={setTkEdit} isEn={isEn} txt={txt} />
+            </div>
+          )}
         </Box>
 
         {/* 2 */}
@@ -1345,6 +1557,7 @@ export default function SirrWafqPage() {
               );
             })}
           </div>
+          <Fold on={lean} summary={txt("ഓരോ കളത്തിനും അതിന്റെ ഗ്രഹവും ദിവസവും — എന്തുകൊണ്ട്", "Each square has its planet and day — why")}>
           <div className="rounded-xl p-2.5 space-y-1" style={card}>
             <p className="font-inter text-[10px] font-bold" style={{ color: GOLD }}>
               {txt("ഓരോ കള്ളിക്കും അതിന്റെ ഗ്രഹവും ദിവസവും", "Each square has its planet, and so its day")}
@@ -1365,6 +1578,8 @@ export default function SirrWafqPage() {
                    "Marked ◦: the book does not name that square's planet on these pages; it comes from the planetary series the four it does name fall in. The unmarked ones are the book's own word.")}
             </p>
           </div>
+          </Fold>
+          <Fold on={lean} summary={txt("മിഫ്താഹും ജബ്റും — കണക്ക്", "The key and jabr — the working")}>
           {plan && (
             <div className="grid grid-cols-4 gap-2">
               <Stat ar="الأس" value={asOf(n) * step} />
@@ -1376,6 +1591,7 @@ export default function SirrWafqPage() {
           {plan && <Note color="rgba(255,255,255,0.5)">{txt(
             `മിഫ്താഹ് = (${N} − ${asOf(n) * step}) ÷ ${n} = ${plan.key}${plan.rem ? `, ബാക്കി ${plan.rem} → ജബ്ർ വീട് (${n} − ${plan.rem}) × ${n} + 1 = ${plan.jabrHouse}; ആ വീട് മുതൽ ഓരോന്നിലും ഒന്ന് അധികം` : ""}.`,
             `Key = (${N} − ${asOf(n) * step}) ÷ ${n} = ${plan.key}${plan.rem ? `, remainder ${plan.rem} → jabr house (${n} − ${plan.rem}) × ${n} + 1 = ${plan.jabrHouse}` : ""}.`)}</Note>}
+          </Fold>
           {plan?.issues.includes("too_small") && <Note color="#FCA5A5">{txt(
             `ഈ തുക ${n}×${n}-ൽ ഒതുങ്ങില്ല — തുക വളരെ ചെറുതാണ്. മിഫ്താഹ് 1 എങ്കിലും വരാൻ തുക കുറഞ്ഞത് ${asOf(n) * step + n} വേണം. ശരിയാകുന്നവ: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`,
             `This total will not fit a ${n}×${n} — it is too small. For a key of at least 1 the total must be ${asOf(n) * step + n} or more. Working: ${good.map((s) => `${s}×${s}`).join(", ") || "—"}.`)}</Note>}
@@ -1390,6 +1606,7 @@ export default function SirrWafqPage() {
         {/* 3 */}
 
         {/* 4 */}
+        {showMain && (
         <Box step="3" title={txt("കള്ളി ഉണ്ടാക്കുക", "Build the wafq")}>
           <Intro>{txt("കിതാബിലെ ഓരോ രീതിയും ഇവിടെയുണ്ട്. ഒരു രീതിയുടെ പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, വരിയുടെയും നിരയുടെയും കോണിന്റെയും തുക ഒത്തുവന്നോ എന്ന പരിശോധന — എല്ലാം കാണാം.", "Every method in the books is here. Press a method\'s name to see its rules, the square it builds, and the check that every row, column and diagonal comes out at the total.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["Pressing a method's name opens its rules, the square it builds, and the check.", "The standard method (التعمير): write the miftah in the house of alif, then add one in each house in the abjad house order.", "Jabr: where the division leaves a remainder, that remainder is added from a particular house onward. The book's rule: (houses of the side − remainder) × houses of the side + 1.", "Tafāḍul (تفاضل): each house goes up by 2, 3… instead of one. The square's total stays; only the key changes. (Tying the step to the Sun–Moon angle is Hâvâss's rule; it is in Sections B and C.)", "The check: every row, column and both diagonals must equal the total. Rows and columns are reported apart from the diagonals.", "On a 3×3 that needs jabr, one diagonal comes out a step short. That belongs to the book's method — there is only one 3×3 square. Either choose a text whose total divides evenly, or take the hollow-centre 3×3.", "The book gives no jabr rule for the 10×10, so a total with a remainder will not come out on one.", "⚠ In the methods that write letters into the houses, the letters' abjad must be added to the total as well, which doubles it. The recitation goes by that number."] : ["ഓരോ രീതിയുടെയും പേരിൽ അമർത്തിയാൽ അതിന്റെ നിയമങ്ങൾ, ഉണ്ടാക്കിയ കള്ളി, പരിശോധന — എല്ലാം തുറക്കും.", "അടിസ്ഥാന രീതി (التعمير): മിഫ്താഹ് അലിഫിന്റെ വീട്ടിൽ എഴുതുക, പിന്നെ അബ്ജദ് വീട് ക്രമത്തിൽ ഓരോന്നിലും ഒന്നു വീതം കൂട്ടുക.", "ജബ്ർ: ഹരിച്ചിട്ട് ബാക്കി വന്നാൽ, ആ ബാക്കി ഒരു പ്രത്യേക വീട്ടിൽ നിന്ന് തുടങ്ങി കൂട്ടുന്നു. കിതാബിന്റെ നിയമം: (വശത്തിന്റെ വീടുകൾ − ബാക്കി) × വശത്തിന്റെ വീടുകൾ + 1.", "തഫാദുൽ (تفاضل): ഓരോ വീട്ടിലും ഒന്ന് കൂട്ടുന്നതിന് പകരം 2, 3… വീതം കൂട്ടുന്നു. കള്ളിയുടെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. (ചുവടിനെ സൂര്യ-ചന്ദ്ര കോണുമായി ബന്ധിപ്പിക്കുന്നത് ഹവാസ്സിന്റെ നിയമമാണ്; അത് സെക്ഷൻ B, C-യിൽ.)", "പരിശോധന: എല്ലാ വരിയും നിരയും രണ്ട് കോണും ആകെ തുകയ്ക്ക് തുല്യമാകണം. വരിയും നിരയും വെവ്വേറെ, കോണുകൾ വെവ്വേറെ കാണിക്കുന്നു.", "3×3-ൽ ജബ്ർ വേണ്ടിവന്നാൽ ഒരു കോൺ ഒരു പടി കുറവായി വരും. ഇത് കിതാബിന്റെ രീതിയുടെ സ്വഭാവമാണ് — 3×3 കള്ളി ഗണിതപരമായി ഒന്നേയുള്ളൂ. ബാക്കി വരാത്ത വാചകം നോക്കുകയോ നടുവ് ഒഴിഞ്ഞ മുഅല്ലസ് എടുക്കുകയോ ചെയ്യാം.", "10×10-ന് കിതാബ് ജബ്ർ നിയമം തരുന്നില്ല. അതുകൊണ്ട് ബാക്കി വരുന്ന തുകയിൽ 10×10 ഒത്തുവരില്ല.", "അക്ഷരം കള്ളിയിൽ എഴുതുന്ന രീതികളിൽ ⚠ ശ്രദ്ധിക്കുക: അക്ഷരത്തിന്റെ അബ്ജദ് കൂടി തുകയിൽ കൂട്ടണം, അപ്പോൾ ശരിയായ തുക ഇരട്ടിയാകും. ചൊല്ലേണ്ടതും ആ സംഖ്യ വെച്ചാണ്."]} />
@@ -1417,6 +1634,7 @@ export default function SirrWafqPage() {
                         "The green one is the element found in step 1; the square comes in its form by itself. Press another to change it.")}</p>
               </div>
             )}
+            {!lean && (<>
             <label className="flex items-center gap-1.5" style={{ color: "rgba(255,255,255,0.6)" }}>
               {txt("ചുവട് (تفاضل)", "Step")}
               <input type="number" min={1} max={99} value={step} onChange={(e) => setStep(Math.max(1, Math.min(99, parseInt(e.target.value || "1", 10))))} className="w-14 rounded-lg px-2 py-1" style={input} />
@@ -1424,17 +1642,19 @@ export default function SirrWafqPage() {
             <p className="w-full" style={{ color: "rgba(255,255,255,0.5)" }}>{txt(
               "ചുവട് = ഓരോ വീട്ടിൽ നിന്ന് അടുത്ത വീട്ടിലേക്ക് എത്ര കൂട്ടണം (തഫാദുൽ). സാധാരണ 1. 2 ആക്കിയാൽ ഓരോ വീട്ടിലും 2 വീതം കൂടും; എന്നാലും കളിയുടെ തുക മാറില്ല, മിഫ്താഹ് മാത്രം മാറും. സംശയമുണ്ടെങ്കിൽ 1-ൽ വിടുക.",
               "Step = how much is added from one house to the next (tafāḍul). Normally 1. At 2, each house goes up by 2; the square's total stays the same, only the key changes. If unsure, leave it at 1.")}</p>
+            </>)}
+            {lean && step > 1 && <p className="w-full" style={{ color: GOLD }}>{txt(`ചുവട് (തഫാദുൽ) ${step} — "കളങ്ങളുടെ തരങ്ങൾ" എന്നതിൽ മാറ്റാം.`, `Step (tafāḍul) ${step} — change it under "Kinds of square".`)}</p>}
           </div>
-          <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
+          {!lean && <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
                         corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
                         ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
                         recommended={needAngel ? needAngel.angel : null}
                         isLove={purposeId === "love" || actId === "marriage"}
                         tawkeelBox={<TawkeelBox wd={sqWd} fromSquare={!!sqPlanet} tk={tk} setTk={setTkEdit} isEn={isEn} txt={txt} />}
-                        isEn={isEn} txt={txt} />
+                        isEn={isEn} txt={txt} />}
           {/* The seeker, the need and the matter sought are written once, in
               step 1, and carried down into the middle house from there. */}
-          {!(seeker || need || sought) && (
+          {!lean && !(seeker || need || sought) && (
             <Note color="rgba(255,255,255,0.45)">{txt(
               "നടുവിലെ വീട്ടിൽ എഴുതേണ്ട താലിബ്, ഹാജ, മത്‌ലൂബ് — അവ ഒന്നാം പടിയിലെ \"താലിബ് · ഹാജ · മത്‌ലൂബ്\" എന്ന രീതിയിൽ എഴുതുക. ഇവിടെ വീണ്ടും എഴുതേണ്ടതില്ല.",
               "The talib, haja and matlub for the middle house are written in step 1, under \"Seeker · need · sought\". There is no need to write them again here.")}</Note>
@@ -1444,9 +1664,12 @@ export default function SirrWafqPage() {
             ۞ {txt("കള്ളി ഉണ്ടാക്കുക", "Build the wafq")}
           </button>
         </Box>
+        )}
+
+        {lean && aView === "types" && <TypesIntro N={N} n={n} step={step} setStep={setStep} hasResult={!!result} isEn={isEn} txt={txt} />}
 
         {/* The method library — one section per way of building a square */}
-        {N > 0 && (
+        {N > 0 && showTypes && (
           <>
             <Box title={txt(`${n}×${n} കള്ളി ഉണ്ടാക്കുന്ന രീതികൾ`, `Ways of building the ${n}×${n}`)}>
               <Note>{txt(
@@ -1499,6 +1722,8 @@ export default function SirrWafqPage() {
 
         {result && (
           <div id="wafq-result" className="space-y-3" style={{ scrollMarginTop: 72 }}>
+            <canvas ref={canvasRef} style={{ display: "none" }} />
+            {showMain && (
             <Box title={`${SIZE_NAME[result.n].ar} · ${result.n}×${result.n} · N = ${result.N}`} tone={result.valid ? "ok" : "warn"}>
               {/* The square in Arabic figures. While writing, the house to
                   write now is lit and the ones not yet written are faint. */}
@@ -1527,10 +1752,11 @@ export default function SirrWafqPage() {
                   {writeIdx < 0 ? txt("എഴുത്ത് തുടങ്ങുക", "Start writing") : writeIdx >= order.length - 1 ? txt("പൂർത്തിയായി ✓", "Done ✓") : `${txt("അടുത്തത്", "Next")} →`}
                 </button>
               </div>
-              <SumsCheck result={result} txt={txt} />
               <Note color={result.valid ? "#4ADE80" : "#FCA5A5"}>{result.valid
                 ? txt("എല്ലാ വരിയും നിരയും രണ്ടു കോണും ഒരേ തുക — കള്ളി ശരി.", "Every row, column and both diagonals agree — the wafq is correct.")
                 : txt("ചില വരികൾ തുല്യമല്ല (✗). ✓ ഉള്ള മറ്റൊരു കള്ളി എടുക്കുക.", "Some lines differ (✗). Choose a square marked ✓.")}</Note>
+              <Fold on={lean} summary={txt("പരിശോധനയും കളത്തിന്റെ കണക്കുകളും", "The check and the square's figures")}>
+              <SumsCheck result={result} txt={txt} />
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                 <Stat ar="الوفق" value={result.N} /><Stat ar="المفتاح" value={result.miftah} /><Stat ar="المغالق" value={result.maghaliq} />
                 <Stat ar="العدل" value={result.miftah + result.maghaliq} /><Stat ar="المساحة" value={result.masaha} /><Stat ar="الضابط" value={result.N + result.masaha} />
@@ -1540,80 +1766,26 @@ export default function SirrWafqPage() {
                 {result.rem ? ` · ${txt("ജബ്ർ വീട്", "jabr house")} ${result.jabrHouse}` : ""}
                 {result.n <= 4 ? ` · ${txt("രൂപം", "form")}: ${result.form === "base" ? txt("അടിസ്ഥാനം", "base") : (isEn ? ELEMENTS[result.form].en : ELEMENTS[result.form].ml)}` : ""}</Note>
               <button type="button" onClick={copyText} className="px-3 py-1 rounded-lg font-inter text-[10px] font-bold" style={btn(copied)}>{copied ? txt("പകർത്തി ✓", "Copied ✓") : txt("സംഖ്യകൾ പകർത്തുക", "Copy numbers")}</button>
+              </Fold>
             </Box>
+            )}
 
-        <Box step="4" title={txt("ഉദ്ദേശ്യവും സമയവും", "Purpose and time")}>
-          <Intro>{txt("കള്ളി എപ്പോൾ എഴുതണമെന്ന് ഇവിടെ നോക്കാം. ആദ്യ ടാബിൽ ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന വിഷയങ്ങൾ; രണ്ടാമത്തേതിൽ കിതാബിന്റെ മൻസിൽ പട്ടിക; മൂന്നാമത്തേതിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം — സമ്പത്ത്, ജിന്ന്, യാത്ര എന്നിങ്ങനെ — മലയാളത്തിലോ അറബിയിലോ എഴുതി കിതാബ് അതിനെ ഏത് മൻസിലിലും ദിവസത്തിലും സാഅത്തിലും വെക്കുന്നു എന്ന് കാണാം.", "Here is when to write the square. The first tab holds the subjects the Astro Clock grades with a percentage; the second, the book\'s manzil table; the third lets you type your own purpose — provision, jinn, travel — in Malayalam or Arabic, and shows which manzil, day and hour the book places it in.")}</Intro>
-          <Rules isEn={isEn} items={isEn ? ["The order of time: the day first, then the hour, then the Qamar. It is the day that holds authority.", "First tab: the ten subjects the Astro Clock grades with a percentage, drawn together from the book's day table, hour table and manzil table.", "Second tab: the book's own table of the twenty-eight manazil, each with its nature and its work.", "Third tab: type your own purpose, in Malayalam or Arabic. It is searched against the thirty-five works the book names and its day-and-hour table.", "What comes back: which manazil are good for that work and which are not, the day and hour where the book gives them, and how far this moment answers to it.", "The reading is not invented. It is a count: of the conditions the book actually states for that work, how many are met now.", "No work the book does not name will appear here. If nothing comes back, try another word."] : ["സമയത്തിന്റെ ക്രമം: ആദ്യം ദിവസം, പിന്നെ സാഅത്ത്, പിന്നെ ചന്ദ്രൻ. ദിവസമാണ് അധികാരം വഹിക്കുന്നത്.", "ആദ്യ ടാബ്: ആസ്ട്രോ ക്ലോക്ക് ശതമാനത്തോടെ കണക്കാക്കുന്ന 10 വിഷയങ്ങൾ. കിതാബിന്റെ ദിവസപ്പട്ടിക, സാഅത്ത് പട്ടിക, മൻസിൽ പട്ടിക — മൂന്നും ചേർന്നാണ് ആ ശതമാനം.", "രണ്ടാം ടാബ്: കിതാബിലെ 28 മൻസിലിന്റെ പട്ടിക, ഓരോന്നിന്റെയും സ്വഭാവവും കർമ്മവും.", "മൂന്നാം ടാബ്: നിങ്ങളുടെ സ്വന്തം ഉദ്ദേശ്യം മലയാളത്തിലോ അറബിയിലോ എഴുതുക. കിതാബ് പേരെടുത്തു പറയുന്ന 35 കർമ്മങ്ങളിലും അതിലെ സമയപ്പട്ടികയിലും തിരയും.", "കിട്ടുന്നത്: ആ കർമ്മത്തിന് ഏതൊക്കെ മൻസിൽ നല്ലത്, ഏതൊക്കെ പറ്റില്ല, കിതാബ് ദിവസവും സാഅത്തും പറയുന്നുണ്ടെങ്കിൽ അതും, ഇപ്പോൾ എത്ര ഒത്തുവരുന്നു എന്നും.", "ശതമാനം കെട്ടിച്ചമച്ചതല്ല — കിതാബ് ആ കർമ്മത്തിന് എത്ര നിബന്ധന പറയുന്നുവോ അതിൽ എത്ര ഇപ്പോൾ ഒത്തുവരുന്നു എന്ന എണ്ണമാണ്.", "കിതാബിൽ ഇല്ലാത്ത ഒരു കർമ്മവും ഇവിടെ വരില്ല. കിട്ടിയില്ലെങ്കിൽ വേറൊരു വാക്കിൽ നോക്കുക."]} />
-          <SquareDayTimes wd={sqWd} fromSquare={!!sqPlanet} n={result ? result.n : n} loc={loc} isEn={isEn} txt={txt} />
-          <div className="flex gap-1.5">
-            {[["act", txt("ആസ്ട്രോ ക്ലോക്കിലെ വിഷയങ്ങൾ", "Astro Clock subjects")], ["manzil", txt("കിതാബിലെ മൻസിൽ പട്ടിക", "The book's manzil table")], ["purpose", txt("ഉദ്ദേശ്യം തിരയുക", "Search a purpose")]].map(([k, l]) => (
-              <button key={k} type="button" onClick={() => setTab(k)} className="flex-1 py-2 rounded-xl font-inter text-[11px] font-bold" style={btn(tab === k)}>{l}</button>
-            ))}
-          </div>
-
-          {tab === "purpose" && <PurposePanel ml={!isEn} />}
-
-          {tab === "act" && (
-            <>
-              <div className="flex flex-wrap gap-1.5">
-                {K.ACTIVITIES.map((a) => (
-                  <button key={a.id} type="button" onClick={() => { setActId(a.id === actId ? null : a.id); setPurposeId(null); setChosen(null); }}
-                    className="px-2.5 py-1.5 rounded-xl font-inter text-[11px] font-bold" style={btn(actId === a.id)}>{a.icon} {isEn ? a.en : a.ml}</button>
-                ))}
-              </div>
-              {!act && <Note color="rgba(255,255,255,0.45)">{txt("ഒരു വിഷയം അമർത്തിയാൽ അതിന് പറ്റിയ അടുത്ത സമയങ്ങൾ ശതമാനത്തോടെ താഴെ വരും.", "Tap a subject to see its next suitable times with percentages.")}</Note>}
-              {act && actTimes && (
-                <div className="space-y-2">
-                  {actTimes.aligned.length > 0 && (
-                    <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(74,222,128,0.07)", border: "1px solid rgba(74,222,128,0.35)" }}>
-                      <Note color="#4ADE80"><b>★ {txt("ദിവസവും സാഅത്തും ഖമറും ഒരുമിച്ച് ചേരുന്ന സമയം", "Day, hour and Qamar all strong together")}</b></Note>
-                      {actTimes.aligned.map((h) => <TimeRow key={h.start} h={h} star />)}
-                    </div>
-                  )}
-                  <Note color="rgba(255,255,255,0.5)">{txt("ദിവസത്തിന് മുൻഗണന നൽകി ക്രമീകരിച്ചത്:", "Ranked with the day weighed first:")}</Note>
-                  {actTimes.best.map((h) => <TimeRow key={h.start} h={h} />)}
-                  {actTimes.best.length === 0 && actTimes.aligned.length === 0 && <Note color="#FCA5A5">{txt("വരുന്ന ദിവസങ്ങളിൽ പറ്റിയ സമയം കണ്ടെത്താനായില്ല.", "No suitable time found in the coming days.")}</Note>}
-                  <Note color="rgba(255,255,255,0.4)">{txt("ശതമാനം: ദിവസം 45% + സാഅത്ത് 35% + ഖമർ 20% — ആസ്ട്രോ ക്ലോക്കിന്റെ അതേ കണക്ക്.", "Percent: day 45% + hour 35% + Qamar 20% — the same reckoning as the Astro Clock.")}</Note>
-                </div>
-              )}
-            </>
-          )}
-
-          {tab === "manzil" && (
-            <>
-              <div className="flex flex-wrap gap-1.5">
-                {PURPOSES.map((p) => (
-                  <button key={p.id} type="button" onClick={() => { setPurposeId(p.id === purposeId ? null : p.id); setActId(null); setChosen(null); }}
-                    className="px-2.5 py-1.5 rounded-xl font-inter text-[11px] font-bold" style={btn(purposeId === p.id)}>
-                    <span className="font-amiri text-sm mr-1">{p.ar}</span>{isEn ? p.en : p.ml}
-                  </button>
-                ))}
-              </div>
-              {purpose && manzilTimes.map((t) => {
-                const mn = K.MANSIONS[t.m], tp = K.MANSION_PURPOSE[t.m];
-                return (
-                  <div key={t.m} className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(147,197,253,0.05)", border: "1px solid rgba(147,197,253,0.2)" }}>
-                    <Note color={INK_C}>🌙 <b>{txt("ഖമർ", "Qamar in")} {isEn ? K.MANSIONS_EN[t.m].name : mn.ml}</b> <Ar>{mn.ar}</Ar> · {t.span.current ? txt(`ഇപ്പോൾ — ${fmtWhen(t.span.end, loc, false)} വരെ`, `now — until ${fmtWhen(t.span.end, loc, true)}`) : fmtSpan(t.span, loc, isEn)}</Note>
-                    {tp && <Note color="#4ADE80">📋 {txt("കിതാബിലെ പ്രവൃത്തിപ്പട്ടിക", "Book's table of works")}: <Ar>{tp.ar}</Ar> — {isEn ? tp.en : tp.ml}</Note>}
-                    <Note color="rgba(255,255,255,0.5)">{t.best ? txt("ഖലീലി പറഞ്ഞ ഏറ്റവും നല്ല സാഅത്തുകൾ:", "al-Khalili's best hours:") : txt("ഖലീലി സാഅത്ത് പറയാത്തതിനാൽ സഅ്ദ് ഗ്രഹങ്ങളുടെ സാഅത്തുകൾ:", "No hour named here, so the sa'd planets' hours:")}</Note>
-                    {t.hours.map((h) => <TimeRow key={h.start} h={h} />)}
-                  </div>
-                );
-              })}
-            </>
-          )}
-          {/* When the book's times for the chosen work fall — today, or the
-              next day they come — read from the Astro Clock's own engine. */}
-          <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
-                           mansions={purpose?.mansions || null} ml={!isEn} />
-          {chosen && <Note color={GOLD}>✓ {txt("തിരഞ്ഞെടുത്ത സമയം", "Chosen time")}: {fmtSpan(chosen, loc, isEn)} · {isEn ? WD_EN[chosen.wd] : WD_ML[chosen.wd]}</Note>}
-        </Box>
+        {!lean && timeBox}
 
             {/* 5 writing */}
-            <Box step="5" title={txt("ചുറ്റെഴുത്തോടെ കള്ളി", "The square with its surround")}>
+            {showMain && (
+            <Box step={lean ? "4" : "5"} title={txt("ചുറ്റെഴുത്തോടെ കള്ളി", "The square with its surround")}>
           <Intro>{txt("മൂന്നാം പടിയിൽ തിരഞ്ഞെടുത്ത ചുറ്റെഴുത്തോടെ കള്ളി — ബിസ്മി, മലക്കുകളുടെ പേരുകൾ, മൂലയിലെ ആയത്ത്, വട്ടം. ഇത് ചിത്രമായി സൂക്ഷിക്കാം.", "The square with the surround chosen in step 3 — the besmele, the angels' names, the corner ayah, the ring. It can be saved as an image.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["The order: begin at the smallest number and go up, in the abjad house order.", "While writing each house, say one basmala without lifting the pen from the paper.", "Around it: ٧٨٦, the Seven Seals beneath it, then the besmele around the square — each word clustered outside one corner, one letter drawn out to make the side.", "At the four corners, قوله الحق وله الملك, each part stretched on its first letter and lying across its corner.", "The angels: choose one and that name is written on all four sides. Choose four and the book's order holds — Jibril above, Israfil left, Mikail right, Azrail below. That is the order of ج ا م ع, the letters of Allah's attribute Jami'.", "On each side, from the outside inward: the angel you chose (large), then that day's angel, then that day's jinn.", "No letter may be broken, and nothing may enter the square.", "A text of your own can be carried right round the outside if you wish — beyond the angels' names and the besmele."] : ["ക്രമം: ഏറ്റവും ചെറിയ സംഖ്യ മുതൽ എഴുതിത്തുടങ്ങുക, അബ്ജദ് വീട് ക്രമത്തിൽ.", "ഓരോ വീടും എഴുതുമ്പോൾ പേന കടലാസിൽ നിന്ന് ഉയർത്താതെ ഒരു ബിസ്മി ചൊല്ലുക.", "ചുറ്റെഴുത്ത്: ٧٨٦, അതിന് താഴെ ഖാത്തമു സുലൈമാൻ, പിന്നെ കള്ളിക്ക് ചുറ്റും ബിസ്മി — ഓരോ പദവും ഒരു മൂലയ്ക്ക് പുറത്ത്, ഒരക്ഷരം നീട്ടി വശമാക്കി.", "നാല് മൂലയിൽ قوله الحق وله الملك, ഓരോ ഭാഗവും ആദ്യത്തെ അക്ഷരത്തിൽ നീട്ടി മൂലയ്ക്ക് കുറുകെ.", "മലക്കുകൾ: ഒരു മലക്കിനെ മാത്രം തിരഞ്ഞെടുത്താൽ ആ പേര് നാല് വശത്തും. നാല് മലക്ക് തിരഞ്ഞെടുത്താൽ കിതാബിന്റെ ക്രമം — മുകളിൽ ജിബ്രാഈൽ, ഇടത് ഇസ്റാഫീൽ, വലത് മീകാഈൽ, താഴെ അസ്റാഈൽ. അത് ج ا م ع എന്ന ക്രമമാണ്, അല്ലാഹുവിന്റെ ജാമിഅ് എന്ന സിഫത്തിന്റെ അക്ഷരങ്ങൾ.", "ഓരോ വശത്തും പുറത്തുനിന്ന് അകത്തേക്ക്: തിരഞ്ഞെടുത്ത മലക്ക് (വലുതായി), പിന്നെ ആ ദിവസത്തിന്റെ മലക്ക്, പിന്നെ ആ ദിവസത്തിന്റെ ജിന്ന്.", "ഒരക്ഷരവും മുറിയരുത്; ഒന്നും കള്ളിയുടെ ഉള്ളിലേക്ക് കയറരുത്.", "വേണമെങ്കിൽ സ്വന്തമായി ഒരു ആയത്ത് ചുറ്റും വട്ടത്തിൽ എഴുതാം — മലക്കുകളുടെ പേരുകൾക്കും ബിസ്മിക്കും പുറത്ത്."]} />
+              {lean && (
+                <SurroundPick angelSel={angelSel} setAngelSel={setAngelSel} edge={edge} setEdge={setEdge}
+                        corners={corners} setCorners={setCorners} ring={ring} setRing={setRingPick}
+                        ayah={ayah} setAyah={setAyahEdit} bismi={bismiText} setBismi={setBismiText} fromStep1={!!step1Ayah && ayahEdit == null}
+                        recommended={needAngel ? needAngel.angel : null}
+                        isLove={purposeId === "love" || actId === "marriage"}
+                        tawkeelBox={<Note color="rgba(255,255,255,0.6)">{txt("ഉദ്ദേശ്യവും പേരും ഒന്നാം പടിയിൽ എഴുതിയതാണ് ഇവിടെ വരുന്നത്. ചുറ്റും എഴുതുന്നത്:", "The purpose and names come from step 1. What is written round:")} <span className="font-amiri text-sm" dir="rtl">{tkRingText}</span></Note>}
+                        isEn={isEn} txt={txt} />
+              )}
               <div ref={sheetRef} className="rounded-2xl p-2" style={{ background: "#FDFAF2", color: "#111" }}>
                 <WafqSheet grid={result.grid} angel={angel}
                            angels={angelSel !== "none"} fourAngels={angelSel === "four"}
@@ -1637,15 +1809,15 @@ export default function SirrWafqPage() {
               {/* What is read — the day's qasam with its command, then the
                   common azima; any day can be chosen, since only the day's
                   khadim and angel change from day to day. */}
-              <ReadingBox sqWd={sqWd} need={tkNeed} love={tk.love} sought={tkp.sought}
+              {!lean && <ReadingBox sqWd={sqWd} need={tkNeed} love={tk.love} sought={tkp.sought}
                           N={result.N} n={result.n}
                           letters={(lettersText.match(/[\u0621-\u064A]/g) || []).length}
-                          isEn={isEn} txt={txt} />
+                          isEn={isEn} txt={txt} />}
 
               {/* The hadims are drawn out by Hâvâss's rule alone (Kashf has
                   none), so they belong to the Hâvâss section, C — the
                   owner's decision, 27 Oct 2026. */}
-              {secKey === "c" ? (
+              {lean ? null : secKey === "c" ? (
               <div className="rounded-2xl p-3 space-y-2" style={card}>
                 <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>
                   <span className="font-amiri">خدام الوفق</span>{" "}
@@ -1657,6 +1829,7 @@ export default function SirrWafqPage() {
                 <Note color="rgba(255,255,255,0.45)">{txt("ഈ കള്ളിയുടെ ഹാദിമുകൾ (ഉൽവി, സുഫ്‌ലി, ശർ) സെക്ഷൻ C-യിലാണ്.", "This square's hâdims (ulvî, suflî, şer) are in Section C.")}</Note>
               )}
 
+              <Fold on={lean} summary={txt("കളം വരയ്ക്കുന്നതിന്റെയും അക്കങ്ങൾ എഴുതുന്നതിന്റെയും നിയമം", "The rules for drawing the square and writing its digits")}>
               <div className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.22)" }}>
                 <p className="font-inter text-[11px] font-bold" style={{ color: GOLD }}>{txt("വഫ്ഖ് വരയ്ക്കുന്നതും എഴുതുന്നതും (നിബന്ധന 28)", "Drawing and writing the wafq (condition 28)")}</p>
                 <p className="font-amiri text-sm leading-relaxed" dir="rtl" style={{ color: INK_C }}>{WRITING_RULE_28.ar}</p>
@@ -1667,11 +1840,23 @@ export default function SirrWafqPage() {
               <Note color="rgba(255,255,255,0.5)"><b>{txt("അക്കങ്ങൾ എഴുതുന്ന നിയമം (നിബന്ധന 34)", "How the digits are written (condition 34)")}:</b> <Ar size="text-sm">{NUMBER_RULE.ar}</Ar> — {isEn ? NUMBER_RULE.en : NUMBER_RULE.ml} {isEn ? NUMBER_RULE.zeroEnd_en : NUMBER_RULE.zeroEnd_ml}</Note>
               {(bismi || sideAngels) && <Note color="rgba(255,255,255,0.4)">{txt("മുകളിലെ ബിസ്മിയും നാലു വശത്തെ മലക്കുകളും അവ്ഫാഖ് അധ്യായത്തിലെ നിയമമല്ല; കിതാബ് ആവശ്യത്തിന് യോജിച്ച ഒരു മലക്കിനെ നടുവിലെ വീട്ടിലാണ് പറയുന്നത്.", "The Bismillah on top and the four side angels are not rules of the awfaq chapter; the book places the one angel suited to the need in the middle house.")}</Note>}
               {result.n !== 3 && <Note color="rgba(255,255,255,0.45)">{txt("ഓരോ വീട്ടിലും ചൊല്ലേണ്ട പേരുകൾ കിതാബ് നൽകുന്നത് 3×3-ന് മാത്രമാണ്.", "The book gives names to recite per house only for the 3×3.")}</Note>}
+              </Fold>
             </Box>
+            )}
+
+            {lean && aView === "main" && timeBox}
+
+            {lean && aView === "main" && (
+              <ReadingStep result={result} RECITE={RECITE} reciteWay={reciteWay} setReciteWay={setReciteWay}
+                           sqWd={sqWd} need={tkNeed} love={tk.love} sought={tkp.sought}
+                           letters={(lettersText.match(/[\u0621-\u064A]/g) || []).length}
+                           isEn={isEn} txt={txt} />
+            )}
 
 
             {/* 6 middle house */}
-            <Box step="6" title={txt("നടുവിലെ വീട്ടിൽ — ഏഴ് പടികൾ (നിബന്ധന 34)", "The middle house — seven ranks (condition 34)")}>
+            {showTypes && (
+            <Box step={lean ? undefined : "6"} title={txt("നടുവിലെ വീട്ടിൽ — ഏഴ് പടികൾ (നിബന്ധന 34)", "The middle house — seven ranks (condition 34)")}>
               <div className="space-y-1">
                 {SEVEN_RANKS.map((r, i) => (
                   <div key={r.n} className="flex items-center gap-2 rounded-lg px-2 py-1.5" style={{ background: "rgba(212,175,55,0.05)" }}>
@@ -1686,8 +1871,10 @@ export default function SirrWafqPage() {
               {needAngel && <Note color="#4ADE80">{txt("ആവശ്യത്തിന് യോജിച്ച മലക്ക്", "The angel suited to the need")}: <Ar size="text-lg">{needAngel.angel}</Ar> — <Ar size="text-sm">{needAngel.ar}</Ar> ({isEn ? needAngel.en : needAngel.ml})</Note>}
               <Note color="rgba(255,255,255,0.5)"><b>{txt("എത്ര തവണ ചൊല്ലണം", "How many times to recite")}:</b> {RECITE_COUNT.opinions.map((o, i) => `${i + 1}. ${isEn ? o.en : o.ml}`).join(" · ")}. {isEn ? RECITE_COUNT.soundest_en : RECITE_COUNT.soundest_ml}</Note>
             </Box>
+            )}
 
             {/* 7 angels */}
+            {showTypes && (
             <Box title={txt("മലക്കുകൾ", "Angels")}>
               <div className="grid grid-cols-2 gap-2">
                 <Stat ar="ملك اليوم" label={txt(`ദിവസത്തിന്റെ മലക്ക് — ${WD_ML[dayWd]}`, `Angel of the day — ${WD_EN[dayWd]}`)} value={<span className="font-amiri text-lg">{dayRow?.angel || "—"}</span>} />
@@ -1729,8 +1916,10 @@ export default function SirrWafqPage() {
                 </div>
               )}
             </Box>
+            )}
 
             {/* 8 duas */}
+            {!lean && (
             <Box step="7" title={txt("ചൊല്ലേണ്ട ദുആകളും എണ്ണവും", "The du'as and their counts")}>
               <Note color="rgba(255,255,255,0.5)">{txt("പേരുകൾ ഇറക്കുംമുമ്പ്:", "Before the tanzil of the names:")}</Note>
               {DUA_BEFORE.map((d, i) => (
@@ -1754,8 +1943,10 @@ export default function SirrWafqPage() {
                 </>
               )}
             </Box>
+            )}
 
             {/* 9 download */}
+            {!lean && (
             <Box step="8" title={txt("ഡൗൺലോഡും പ്രിൻ്റും", "Download and print")}>
           <Intro>{txt("തീർന്ന കള്ളി ചിത്രമായി സൂക്ഷിക്കാം, പ്രിന്റ് എടുക്കാം.", "Save the finished square as an image, or print it.")}</Intro>
           <Rules isEn={isEn} items={isEn ? ["The finished square can be saved as a PNG — at three times the size, with the Arabic letterforms carried inside the image, on white.", "Use that image for printing; printing straight from the screen can change the colours.", "The download has been checked at every size up to 10×10: no letter breaks and nothing of the surround is lost."] : ["തീർന്ന കള്ളി PNG ചിത്രമായി സൂക്ഷിക്കാം — മൂന്നിരട്ടി വലുപ്പത്തിൽ, അറബി അക്ഷരങ്ങൾ ചിത്രത്തിൽത്തന്നെ ചേർത്ത്, വെള്ള പശ്ചാത്തലത്തിൽ.", "പ്രിന്റ് എടുക്കുമ്പോൾ ആ ചിത്രം ഉപയോഗിക്കുക — സ്ക്രീനിൽ നിന്ന് നേരിട്ട് പ്രിന്റ് ചെയ്താൽ നിറങ്ങൾ മാറിയേക്കാം.", "ഡൗൺലോഡ് ചെയ്ത ചിത്രം 10×10 വരെയുള്ള എല്ലാ വലുപ്പത്തിലും പരിശോധിച്ചിട്ടുണ്ട്; അക്ഷരം മുറിയുകയോ ചുറ്റെഴുത്ത് നഷ്ടപ്പെടുകയോ ചെയ്യില്ല."]} />
@@ -1766,16 +1957,17 @@ export default function SirrWafqPage() {
                 <button type="button" onClick={printPdf} className="flex-1 py-2.5 rounded-xl font-inter text-xs font-bold" style={btn(true)}>🖨 {txt("PDF / പ്രിൻ്റ്", "PDF / print")}</button>
               </div>
               <Note color="rgba(255,255,255,0.45)">{txt("ബിസ്മി, നാലു വശത്തെ മലക്കുകൾ, ദിവസത്തിന്റെ മലക്കും ഖാദിമും, ഏഴ് പടികൾ — തിരഞ്ഞെടുത്തതെല്ലാം ചിത്രത്തിൽ വരും. പ്രിൻ്റ് ജാലകത്തിൽ \"Save as PDF\" തിരഞ്ഞെടുക്കാം.", "The Bismillah, the four side angels, the day's angel and khadim and the seven ranks — whatever is selected comes into the image. In the print window choose \"Save as PDF\".")}</Note>
-              <canvas ref={canvasRef} style={{ display: "none" }} />
             </Box>
+            )}
 
-            {result.hollow?.ok && (
+            {showTypes && result.hollow?.ok && (
               <Box title={txt("നടുവ് ഒഴിഞ്ഞ 3×3 (مثلث خالي الوسط)", "Hollow-centre 3×3")}>
                 <Grid grid={result.hollow.grid} arabic />
                 <Note color="rgba(255,255,255,0.5)">{txt(`നടുവിലെ ه ഒഴിച്ചിടുന്നു; ഓരോ വരിയും നിരയും ${result.N}.`, `Centre ه left empty; each row and column ${result.N}.`)}</Note>
               </Box>
             )}
 
+            {showTypes && (<>
             <Box title={txt("മൂലകം, ദിശ, ലോഹം", "Element, direction, metal")}>
               <div className="grid grid-cols-3 gap-2">
                 <Stat ar={ELEMENTS[result.element].ar} label={txt("മൂലകം", "Element")} value={isEn ? ELEMENTS[result.element].en : ELEMENTS[result.element].ml} />
@@ -1811,6 +2003,7 @@ export default function SirrWafqPage() {
                 {CAUTIONS.map((c, i) => <li key={i}><Ar size="text-sm">{c.ar}</Ar> — {isEn ? c.en : c.ml}</li>)}
               </ul>
             </Box>
+            </>)}
           </div>
         )}
         </>
