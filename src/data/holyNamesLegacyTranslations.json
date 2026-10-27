@@ -1,0 +1,858 @@
+[
+  {
+    "card_id": "PDF-HN-001",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Exclusivity of the Name Ar-Rahman] Ar-Rahman is a name reserved exclusively for Allah and cannot be attributed to any human being in any sense.",
+    "source_reference": "Tafsir Ibn Kathir (Commentary on Surah Al-Fatihah)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അർ-റഹ്മാൻ എന്ന നാമത്തിന്റെ പ്രത്യേകത] അർ-റഹ്മാൻ അല്ലാഹുവിന് മാത്രം സംവരണം ചെയ്ത നാമമാണ്; ഒരു അർഥത്തിലും മനുഷ്യന് അത് നൽകാൻ കഴിയില്ല.",
+    "arabic_translation": "[رأي مختلف — اختصاص اسم الرحمن] الرحمن اسم مختص بالله وحده، ولا يجوز نسبته إلى أي إنسان بأي معنى."
+  },
+  {
+    "card_id": "PDF-HN-001",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Exclusivity of the Name Ar-Rahman] The root meaning of Ar-Rahman allows for the description of human mercy, though the definite form 'Al-Rahman' remains unique to the Divine essence.",
+    "source_reference": "Al-Mufradat fi Gharib al-Qur'an (Al-Raghib al-Isfahani)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അർ-റഹ്മാൻ എന്ന നാമത്തിന്റെ പ്രത്യേകത] അർ-റഹ്മാന്റെ മൂലാർഥം മനുഷ്യരുടെ കാരുണ്യത്തെ വിവരിക്കാൻ അനുവദിക്കുന്നു; എന്നാൽ ‘അർ-റഹ്മാൻ’ എന്ന നിർണിതരൂപം ദൈവിക സത്തയ്ക്ക് മാത്രമുള്ളതാണ്.",
+    "arabic_translation": "[رأي مختلف — اختصاص اسم الرحمن] يسمح المعنى الجذري للرحمن بوصف الرحمة البشرية، لكن الصيغة المعرّفة «الرحمن» تبقى مختصة بالذات الإلهية."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Scope of Mercy] Ar-Rahim is specific only to believers in the hereafter.",
+    "source_reference": "Ibn Kathir, Tafsir al-Qur'an al-Azim",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — കാരുണ്യത്തിന്റെ പരിധി] അർ-റഹീം പരലോകത്ത് വിശ്വാസികൾക്ക് മാത്രമായി പ്രത്യേകമായതാണ്.",
+    "arabic_translation": "[رأي مختلف — نطاق الرحمة] الرحيم خاص بالمؤمنين وحدهم في الآخرة."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Scope of Mercy] Ar-Rahim is synonymous with Ar-Rahman and applies to all, but differs in linguistic weight.",
+    "source_reference": "Classical Lexicons cited in Lisan al-Arab",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — കാരുണ്യത്തിന്റെ പരിധി] അർ-റഹീം അർ-റഹ്മാന്റെ പര്യായമാണ്; എല്ലാവർക്കും ബാധകവുമാണ്. എന്നാൽ പദത്തിന്റെ രൂപഘടനയിൽ വ്യത്യാസമുണ്ട്.",
+    "arabic_translation": "[رأي مختلف — نطاق الرحمة] الرحيم مرادف للرحمن ويشمل الجميع، لكنه يختلف عنه في الوزن اللغوي."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count for wealth] Recite 90 times daily for wealth.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Ahmad al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സമ്പത്തിനുവേണ്ടിയുള്ള ഓതൽഎണ്ണം] സമ്പത്തിനുവേണ്ടി ദിവസവും 90 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة للمال] يُتلى 90 مرة يوميًا للمال."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count for wealth] Recite 121 times daily after Fajr for wealth.",
+    "source_reference": "Mujarrabat al-Dayrabi al-Kabir",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സമ്പത്തിനുവേണ്ടിയുള്ള ഓതൽഎണ്ണം] സമ്പത്തിനുവേണ്ടി ദിവസവും ഫജ്റിനുശേഷം 121 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة للمال] يُتلى 121 مرة يوميًا بعد الفجر للمال."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Linguistic Meaning in Fatihah] Recitation as 'Malik' (King) is superior as it implies authority over free subjects.",
+    "source_reference": "Al-Tabari / Al-Zamakhshari",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഫാതിഹയിലെ ഭാഷാപരമായ അർഥം] ‘മലിക്’ (രാജാവ്) എന്ന പാരായണം ശ്രേഷ്ഠമാണ്; സ്വതന്ത്രരായ പ്രജകളുടെ മേലുള്ള അധികാരം അത് സൂചിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المعنى اللغوي في الفاتحة] القراءة بصيغة «مَلِك» أفضل لأنها تدل على السلطان على الرعية الأحرار."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Linguistic Meaning in Fatihah] Recitation as 'Maalik' (Owner) is superior as it implies ownership over both subjects and their possessions.",
+    "source_reference": "Al-Kasa'i / certain Qira'at traditions",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഫാതിഹയിലെ ഭാഷാപരമായ അർഥം] ‘മാലിക്’ (ഉടമ) എന്ന പാരായണം ശ്രേഷ്ഠമാണ്; പ്രജകളുടെയും അവരുടെ സ്വത്തുക്കളുടെയും മേലുള്ള ഉടമസ്ഥത അത് സൂചിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المعنى اللغوي في الفاتحة] القراءة بصيغة «مَالِك» أفضل لأنها تدل على ملك الرعية وممتلكاتهم معًا."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count] The recitation count should be exactly 170 according to the Abjad calculation.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Ahmad ibn Ali al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണം] അബ്ജദ് കണക്കനുസരിച്ച് ഓതൽഎണ്ണം കൃത്യമായി 170 ആയിരിക്കണം.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة] ينبغي أن يكون عدد التلاوة 170 بالضبط وفق حساب الأبجد."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count] The recitation count should be 171, adding one for the Divine Essence.",
+    "source_reference": "Al-Futuhat al-Makkiyya by Ibn Arabi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണം] ദൈവിക സത്തയ്ക്കായി ഒന്ന് കൂട്ടി ഓതൽഎണ്ണം 171 ആയിരിക്കണം.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة] ينبغي أن يكون العدد 171 بإضافة واحد للذات الإلهية."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological derivation of As-Salam] Derived from 'Salama' meaning peace granted to creation.",
+    "source_reference": "Ibn Abbas (quoted in Tafsir al-Baghawi)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അസ്സലാമിന്റെ പദോത്പത്തി] സൃഷ്ടികൾക്ക് നൽകപ്പെടുന്ന സമാധാനം എന്ന അർഥത്തിലുള്ള ‘സലാമ’യിൽനിന്ന് ഉത്ഭവിച്ചതാണ്.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم السلام] مشتق من «سلامة»، بمعنى السلام الممنوح للخلق."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological derivation of As-Salam] Derived from being 'Salim' (intact/whole), implying God is free from all defects.",
+    "source_reference": "Al-Zajjaj / Imam al-Ghazali (Al-Maqsad al-Asna)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അസ്സലാമിന്റെ പദോത്പത്തി] ‘സലീം’ (കേടുപാടില്ലാത്തത് / പൂർണമായത്) എന്നതിൽനിന്ന് ഉത്ഭവിച്ചതാണ്; അല്ലാഹു എല്ലാ ന്യൂനതകളിൽനിന്നും മുക്തനാണെന്ന് ഇത് സൂചിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم السلام] مشتق من كونه «سليمًا» أي تامًا، بما يدل على تنزّه الله عن جميع النقائص."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological derivation of Al-Mu'min] Derived from 'Aman' meaning The Giver of Security (Al-Muti lil-Aman).",
+    "source_reference": "Tafsir Ibn Kathir",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-മുഅ്മിന്റെ പദോത്പത്തി] ‘അമാൻ’ എന്നതിൽനിന്ന് ഉത്ഭവിച്ചതാണ്; സുരക്ഷ നൽകുന്നവൻ (അൽ-മുഅ്തീ ലിൽ-അമാൻ) എന്നർഥം.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم المؤمن] مشتق من «أمان»، بمعنى المعطي للأمان."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological derivation of Al-Mu'min] Derived from 'Iman' meaning The One who testifies to His own Oneness and the truth of His messengers.",
+    "source_reference": "Tafsir al-Jalalayn",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-മുഅ്മിന്റെ പദോത്പത്തി] ‘ഈമാൻ’ എന്നതിൽനിന്ന് ഉത്ഭവിച്ചതാണ്; തന്റെ ഏകത്വത്തിനും തന്റെ ദൂതന്മാരുടെ സത്യത്തിനും സാക്ഷ്യം വഹിക്കുന്നവൻ എന്നർഥം.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم المؤمن] مشتق من «إيمان»، بمعنى الذي يشهد بوحدانيته وصدق رسله."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count for spiritual discovery] Recite 145 times after Isha for uncovering secrets.",
+    "source_reference": "Shams al-Ma'arif (Al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ആത്മീയ വെളിപ്പെടലിനുള്ള ഓതൽഎണ്ണം] രഹസ്യങ്ങൾ വെളിപ്പെടുന്നതിനായി ഇശാഇനുശേഷം 145 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة للكشف الروحي] يُتلى 145 مرة بعد العشاء لكشف الأسرار."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count for spiritual discovery] Recite 100 times after ritual purification for internal clarity.",
+    "source_reference": "Khazinat al-Asrar (Al-Nazili)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ആത്മീയ വെളിപ്പെടലിനുള്ള ഓതൽഎണ്ണം] ആന്തരിക വ്യക്തതയ്ക്കായി ആചാരപരമായ ശുദ്ധീകരണത്തിനുശേഷം 100 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة للكشف الروحي] يُتلى 100 مرة بعد الطهارة لصفاء الباطن."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Daily Recitation Count] 40 times for 40 days for independence from creation.",
+    "source_reference": "Imam al-Ghazali, Al-Maqsad al-Asna",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദിവസേനയുള്ള ഓതൽഎണ്ണം] സൃഷ്ടികളെ ആശ്രയിക്കുന്നതിൽനിന്ന് സ്വാതന്ത്ര്യം ലഭിക്കാൻ 40 ദിവസം 40 തവണ വീതം.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة اليومي] 40 مرة لمدة 40 يومًا للاستغناء عن الخلق."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Daily Recitation Count] 94 times (Abjad value) daily for prestige and awe.",
+    "source_reference": "Ahmad ibn 'Ali al-Buni, Shams al-Ma'arif",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദിവസേനയുള്ള ഓതൽഎണ്ണം] പ്രതാപത്തിനും ഗാംഭീര്യത്തിനുമായി ദിവസവും 94 തവണ (അബ്ജദ് മൂല്യം).",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة اليومي] 94 مرة، وهي قيمة الأبجد، يوميًا للعزة والهيبة."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary Correspondence] Associated with Mars (Al-Mirrikh) for its attributes of power and conquest.",
+    "source_reference": "Manba' Usul al-Hikma",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] ശക്തിയുടെയും കീഴടക്കലിന്റെയും ഗുണങ്ങൾ കാരണം ചൊവ്വയുമായി (അൽ-മിർരീഖ്) ബന്ധിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يرتبط بالمريخ لصفاته في القوة والغلبة."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary Correspondence] Associated with the Sun (Al-Shams) in some specific solar-aligned 3x3 grids for 'Izzah.",
+    "source_reference": "Traditional North African Talismanic Manuscripts",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] ഇസ്സത്തിനുവേണ്ടിയുള്ള, സൂര്യനോട് അനുബന്ധിപ്പിക്കുന്ന ചില പ്രത്യേക 3x3 കളങ്ങളിൽ സൂര്യനുമായി (അശ്-ശംസ്) ബന്ധിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يرتبط بالشمس في بعض الجداول الشمسية الخاصة ذات 3x3 خانات للعزة."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological Root of Al-Jabbar] Derived from Jabr meaning to force or compel creation according to His will.",
+    "source_reference": "Hamad bin Muhammad al-Khattabi (Sha'n al-Du'a)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ജബ്ബാറിന്റെ പദമൂലം] തന്റെ ഇച്ഛയ്ക്കനുസരിച്ച് സൃഷ്ടികളെ നിർബന്ധിക്കുക എന്ന അർഥത്തിലുള്ള ‘ജബ്റി’ൽനിന്ന് ഉത്ഭവിച്ചതാണ്.",
+    "arabic_translation": "[رأي مختلف — الجذر اللغوي للجبار] مشتق من الجبر بمعنى إجبار الخلق وإلزامهم وفق مشيئته."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymological Root of Al-Jabbar] Derived from Jabr meaning the Mender who repairs the affairs of the poor and the broken-hearted.",
+    "source_reference": "Ibn Abbas as cited in Tafsir al-Bagha-wi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ജബ്ബാറിന്റെ പദമൂലം] ദരിദ്രരുടെയും ഹൃദയം തകർന്നവരുടെയും കാര്യങ്ങൾ ശരിയാക്കുന്നവൻ എന്ന അർഥത്തിലുള്ള ‘ജബ്റി’ൽനിന്ന് ഉത്ഭവിച്ചതാണ്.",
+    "arabic_translation": "[رأي مختلف — الجذر اللغوي للجبار] مشتق من الجبر بمعنى جابر أحوال الفقراء والمنكسرة قلوبهم."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation Count] The count is 662 based on the letters M-T-K-B-R.",
+    "source_reference": "Shams al-Ma'arif (Al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്കിലെ എണ്ണം] M-T-K-B-R എന്ന അക്ഷരങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 662 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد حساب الأبجد] العدد 662 بناءً على حروف M-T-K-B-R."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation Count] The count is 693 based on the full orthography Al-M-T-K-B-R (with Alif-Lam).",
+    "source_reference": "Classical Abjad Tables / Modern practitioners",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്കിലെ എണ്ണം] അലിഫ്-ലാം ഉൾപ്പെടുന്ന Al-M-T-K-B-R എന്ന പൂർണ എഴുത്തുരൂപത്തെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 693 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد حساب الأبجد] العدد 693 بناءً على الرسم الكامل Al-M-T-K-B-R مع الألف واللام."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Clarity of Heart] 731 times based on the Abjad value of the name.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൃദയവ്യക്തതയ്ക്കുള്ള ആവർത്തനഎണ്ണം] നാമത്തിന്റെ അബ്ജദ് മൂല്യം അടിസ്ഥാനമാക്കി 731 തവണ.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لصفاء القلب] 731 مرة بناءً على قيمة الاسم بالأبجد."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Clarity of Heart] 100 times daily for general spiritual enlightenment.",
+    "source_reference": "Khazinat al-Asrar by Al-Nazili",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൃദയവ്യക്തതയ്ക്കുള്ള ആവർത്തനഎണ്ണം] പൊതുവായ ആത്മീയ പ്രകാശത്തിനായി ദിവസവും 100 തവണ.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لصفاء القلب] 100 مرة يوميًا للاستنارة الروحية العامة."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Definition of Al-Bari vs Al-Khaliq] Al-Bari means the One who brings forth from absolute nothingness (Ibn al-Jawzi).",
+    "source_reference": "Nuzhat al-A'yun al-Nawazir by Ibn al-Jawzi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ബാരിഅ്, അൽ-ഖാലിഖ് എന്നീ നാമങ്ങളുടെ നിർവചനം] തികച്ചും ഇല്ലായ്മയിൽനിന്ന് ഉളവാക്കുന്നവൻ എന്നാണ് അൽ-ബാരിഅ് എന്നതിന്റെ അർഥം (ഇബ്നുൽ ജൗസി).",
+    "arabic_translation": "[رأي مختلف — تعريف البارئ مقارنة بالخالق] البارئ هو الذي يُخرج من العدم المحض، وفق ابن الجوزي."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Definition of Al-Bari vs Al-Khaliq] Al-Bari means the One who creates and distinguishes beings from each other by their specific forms after they have been brought into existence (Al-Ghazali).",
+    "source_reference": "Al-Maqsad al-Asna by Abu Hamid al-Ghazali",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ബാരിഅ്, അൽ-ഖാലിഖ് എന്നീ നാമങ്ങളുടെ നിർവചനം] സൃഷ്ടികൾ നിലനിൽപ്പിലേക്ക് വന്നശേഷം അവയെ സൃഷ്ടിക്കുകയും പ്രത്യേക രൂപങ്ങൾ നൽകി പരസ്പരം വേർതിരിക്കുകയും ചെയ്യുന്നവൻ എന്നാണ് അൽ-ബാരിഅ് എന്നതിന്റെ അർഥം (അൽ-ഗസ്സാലി).",
+    "arabic_translation": "[رأي مختلف — تعريف البارئ مقارنة بالخالق] البارئ هو الذي يخلق الموجودات ويميّز بعضها من بعض بصورها الخاصة بعد إيجادها، وفق الغزالي."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymology of the name 'Allah'] The name 'Allah' is a proper noun (Ism 'Alam) and is non-derived (Murtajal). It was never used for anyone else even in the pre-Islamic period.",
+    "source_reference": "Al-Khalil ibn Ahmad, cited in Tafsir al-Qurtubi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ‘അല്ലാഹ്’ എന്ന നാമത്തിന്റെ പദോത്പത്തി] ‘അല്ലാഹ്’ ഒരു സംജ്ഞാനാമമാണ് (ഇസ്മ് അലം); മറ്റൊരു പദത്തിൽനിന്ന് നിഷ്പന്നമല്ല (മുർതജൽ). ഇസ്‌ലാമിന് മുമ്പുള്ള കാലത്തുപോലും മറ്റാർക്കും ഈ നാമം ഉപയോഗിച്ചിരുന്നില്ല.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم الله] اسم «الله» اسم علم مرتجل غير مشتق، ولم يُستعمل لغيره حتى في الجاهلية."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Etymology of the name 'Allah'] The name 'Allah' is derived (Mushtaqq) from the root 'al-Ilah', or from 'aliha' meaning 'to be bewildered' because intellects are bewildered by His essence.",
+    "source_reference": "Sibawayh and Imam al-Razi, cited in Mafatih al-Ghayb",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ‘അല്ലാഹ്’ എന്ന നാമത്തിന്റെ പദോത്പത്തി] ‘അല്ലാഹ്’ നിഷ്പന്നമായ നാമമാണ് (മുശ്തഖ്); ‘അൽ-ഇലാഹ്’ എന്നതിൽനിന്നോ ‘അമ്പരക്കുക’ എന്ന അർഥമുള്ള ‘അലിഹ’ എന്നതിൽനിന്നോ ഉത്ഭവിച്ചതാണ്. അവന്റെ സത്തയെക്കുറിച്ച് ബുദ്ധികൾ അമ്പരക്കുന്നതാണ് കാരണം.",
+    "arabic_translation": "[رأي مختلف — اشتقاق اسم الله] اسم «الله» مشتق من «الإله»، أو من «أله» بمعنى تحيّر، لأن العقول تتحيّر في ذاته."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Purpose of Recitation] Focuses on external power, specifically subduing physical enemies and tyrants.",
+    "source_reference": "Mujarrabat al-Dayrabi al-Kabir",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതലിന്റെ ഉദ്ദേശ്യം] ബാഹ്യശക്തിക്കാണ് പ്രാധാന്യം; പ്രത്യേകിച്ച് യഥാർഥ ശത്രുക്കളെയും അക്രമികളെയും കീഴ്പ്പെടുത്തൽ.",
+    "arabic_translation": "[رأي مختلف — غرض التلاوة] يركّز على القوة الخارجية، وبخاصة إخضاع الأعداء الفعليين والطغاة."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Purpose of Recitation] Focuses on internal power, specifically subduing the ego (Nafs) and spiritual purification.",
+    "source_reference": "Al-Maqsad al-Asna (Al-Ghazali)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതലിന്റെ ഉദ്ദേശ്യം] ആന്തരികശക്തിക്കാണ് പ്രാധാന്യം; പ്രത്യേകിച്ച് നഫ്സിനെ കീഴ്പ്പെടുത്തലും ആത്മീയശുദ്ധീകരണവും.",
+    "arabic_translation": "[رأي مختلف — غرض التلاوة] يركّز على القوة الداخلية، وبخاصة إخضاع النفس والتطهير الروحي."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical value for recitation] The primary repetition count is 14 (Abjad of Wahhab).",
+    "source_reference": "Shams al-Ma'arif al-Kubra (Al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതലിനുള്ള സംഖ്യാമൂല്യം] പ്രധാന ആവർത്തനഎണ്ണം 14 ആണ് (‘വഹ്ഹാബ്’ എന്നതിന്റെ അബ്ജദ്).",
+    "arabic_translation": "[رأي مختلف — القيمة العددية للتلاوة] عدد التكرار الأساسي 14، وهو أبجد «وهاب»."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical value for recitation] The count for specific financial breakthroughs is 196 (14 squared).",
+    "source_reference": "Al-Jawahir al-Lamma'ah (Al-Marzuqi)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതലിനുള്ള സംഖ്യാമൂല്യം] സാമ്പത്തിക കാര്യങ്ങളിലെ പ്രത്യേക മുന്നേറ്റങ്ങൾക്കുള്ള എണ്ണം 196 ആണ് (14-ന്റെ വർഗം).",
+    "arabic_translation": "[رأي مختلف — القيمة العددية للتلاوة] العدد للانفراجات المالية الخاصة هو 196، أي مربع 14."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numeric Value for Wafq Construction] The Wafq should be based on the Abjad value 308 (Ra=200, Za=7, Alif=1, Qaf=100).",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Ahmad al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വഫ്ഖ് നിർമ്മാണത്തിനുള്ള സംഖ്യാമൂല്യം] വഫ്ഖ് 308 എന്ന അബ്ജദ് മൂല്യത്തെ അടിസ്ഥാനമാക്കണം (റാ=200, സാ=7, അലിഫ്=1, ഖാഫ്=100).",
+    "arabic_translation": "[رأي مختلف — القيمة العددية لبناء الوفق] ينبغي أن يُبنى الوفق على قيمة الأبجد 308: الراء=200، الزاي=7، الألف=1، القاف=100."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numeric Value for Wafq Construction] Some practitioners use the value 315 by counting the Shadda on the Ra (Ra=200x2) or different spelling variations, though 308 is the majority view.",
+    "source_reference": "Various later Ottoman occult manuscripts on the 'Secrets of Names'.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വഫ്ഖ് നിർമ്മാണത്തിനുള്ള സംഖ്യാമൂല്യം] ചില പ്രയോഗക്കാർ റായിലെ ശദ്ദ കണക്കാക്കിയോ (റാ=200x2) വ്യത്യസ്ത എഴുത്തുരൂപങ്ങൾ ഉപയോഗിച്ചോ 315 എന്ന മൂല്യം സ്വീകരിക്കുന്നു; എന്നാൽ ഭൂരിപക്ഷാഭിപ്രായം 308 ആണ്.",
+    "arabic_translation": "[رأي مختلف — القيمة العددية لبناء الوفق] يستعمل بعض الممارسين القيمة 315 بحساب الشدة على الراء، أي الراء=200x2، أو باختلاف الرسم، وإن كانت 308 هي رأي الأغلبية."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition count for heart illumination] Recite 71 times after Fajr with hand on chest.",
+    "source_reference": "Mujarrabat al-Dairabi al-Kabir, p. 14",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൃദയപ്രകാശത്തിനുള്ള ആവർത്തനഎണ്ണം] ഫജ്റിനുശേഷം നെഞ്ചിൽ കൈവെച്ച് 71 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لتنوير القلب] يُتلى 71 مرة بعد الفجر مع وضع اليد على الصدر."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition count for heart illumination] Recite 99 times after every prayer for the same effect.",
+    "source_reference": "Kunuz al-Asrar, al-Khalwati",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൃദയപ്രകാശത്തിനുള്ള ആവർത്തനഎണ്ണം] അതേ ഫലത്തിനായി ഓരോ നമസ്കാരത്തിനുശേഷവും 99 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لتنوير القلب] يُتلى 99 مرة بعد كل صلاة للأثر نفسه."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Khadim name] The Khadim is Samya'il (سميائيل).",
+    "source_reference": "Manba' Usul al-Hikma, p. 231",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഖാദിമിന്റെ പേര്] ഖാദിം സമ്യാഈൽ (سميائيل) ആണ്.",
+    "arabic_translation": "[رأي مختلف — اسم الخادم] الخادم هو سميائيل."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Khadim name] The Khadim is Tatyā’īl (تتيائيل).",
+    "source_reference": "Shams al-Ma'arif (Alternative Manuscript Edition)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഖാദിമിന്റെ പേര്] ഖാദിം തത്യാഈൽ (تتيائيل) ആണ്.",
+    "arabic_translation": "[رأي مختلف — اسم الخادم] الخادم هو تتيائيل."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary association] Governed by Mercury (Utarid) for knowledge and communication.",
+    "source_reference": "Kanz al-Mu'azzam / General Occult tradition",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] അറിവിനും ആശയവിനിമയത്തിനുമായി ബുധന്റെ (ഉത്വാരിദ്) അധീനതയിലാണെന്ന് പറയുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يحكمه عطارد للعلم والتواصل."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary association] Governed by Jupiter (Mushtari) due to its association with expansion and wisdom.",
+    "source_reference": "Some later Indian Sufi manuals on Ilm al-Jafr",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] വിപുലീകരണവും ജ്ഞാനവുമായുള്ള ബന്ധം കാരണം വ്യാഴത്തിന്റെ (മുശ്തരി) അധീനതയിലാണെന്ന് പറയുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يحكمه المشتري لارتباطه بالتوسع والحكمة."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition counts] Recite 903 times based on the Abjad value for specific needs.",
+    "source_reference": "Shams al-Ma'arif al-Kubra (Al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ആവർത്തനഎണ്ണങ്ങൾ] പ്രത്യേക ആവശ്യങ്ങൾക്കായി അബ്ജദ് മൂല്യത്തെ അടിസ്ഥാനമാക്കി 903 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — أعداد التكرار] يُتلى 903 مرات بناءً على قيمة الأبجد لحاجات خاصة."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition counts] Recite 100 times daily for general spiritual discipline and heart control.",
+    "source_reference": "Al-Wird al-Musaffa (Traditional Shadhili text)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ആവർത്തനഎണ്ണങ്ങൾ] പൊതുവായ ആത്മീയ അച്ചടക്കത്തിനും ഹൃദയനിയന്ത്രണത്തിനുമായി ദിവസവും 100 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — أعداد التكرار] يُتلى 100 مرة يوميًا للانضباط الروحي العام وضبط القلب."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation in Isolation] It is mandatory to pair Al-Basit with Al-Qabid as they are complementary attributes of Divine action.",
+    "source_reference": "Fakhr al-Din al-Razi (Tafsir al-Kabir)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഒറ്റയ്ക്ക് ഓതൽ] ദൈവിക പ്രവർത്തനത്തിന്റെ പരസ്പരപൂരക ഗുണങ്ങളായതിനാൽ അൽ-ബാസിതിനെ അൽ-ഖാബിദിനൊപ്പം ചേർക്കൽ നിർബന്ധമാണ്.",
+    "arabic_translation": "[رأي مختلف — التلاوة منفردًا] يجب إقران الباسط بالقابض لأنهما صفتان متكاملتان للفعل الإلهي."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation in Isolation] Reciting Al-Basit alone is effective and permissible for the specific purpose of seeking abundance and relief from poverty.",
+    "source_reference": "Ahmad al-Buni (Shams al-Ma'arif)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഒറ്റയ്ക്ക് ഓതൽ] സമൃദ്ധി തേടുന്നതിനും ദാരിദ്ര്യത്തിൽനിന്ന് ആശ്വാസം ലഭിക്കുന്നതിനുമായി അൽ-ബാസിത് മാത്രം ഓതുന്നത് ഫലപ്രദവും അനുവദനീയവുമാണ്.",
+    "arabic_translation": "[رأي مختلف — التلاوة منفردًا] تلاوة الباسط وحده فعالة وجائزة لطلب السعة والخلاص من الفقر تحديدًا."
+  },
+  {
+    "card_id": "PDF-HN-021",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Usage of the Name Al-Khafidh Alone] It is not permissible (or disliked) to call Allah 'Al-Khafidh' alone; it must be paired with 'Ar-Rafi' to ensure perfection of the attribute.",
+    "source_reference": "Al-Maqsad al-Asna by Imam al-Ghazali; Sha'n al-Du'a by Imam al-Khattabi.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ഖാഫിദ് എന്ന നാമം ഒറ്റയ്ക്ക് ഉപയോഗിക്കൽ] അല്ലാഹുവിനെ ‘അൽ-ഖാഫിദ്’ എന്നു മാത്രം വിളിക്കുന്നത് അനുവദനീയമല്ല, അല്ലെങ്കിൽ വെറുക്കപ്പെട്ടതാണ്; വിശേഷണത്തിന്റെ പൂർണത ഉറപ്പാക്കാൻ ‘അർ-റാഫിഅ്’ എന്നതിനൊപ്പം ചേർക്കണം.",
+    "arabic_translation": "[رأي مختلف — استعمال اسم الخافض منفردًا] لا يجوز، أو يُكره، دعاء الله بالخافض وحده؛ ويجب إقرانه بالرافع لكمال الصفة."
+  },
+  {
+    "card_id": "PDF-HN-021",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Usage of the Name Al-Khafidh Alone] The name can be used individually in specific spiritual exercises (Wazaif) and rituals (Amal) particularly those aimed at subduing oppressors or for specific numerological benefits.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Ahmad ibn Ali al-Buni; Khazinat al-Asrar by Al-Nazili.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ഖാഫിദ് എന്ന നാമം ഒറ്റയ്ക്ക് ഉപയോഗിക്കൽ] പ്രത്യേക ആത്മീയ അഭ്യാസങ്ങളിലും (വസാഇഫ്) ആചാരങ്ങളിലും (അമൽ) ഈ നാമം ഒറ്റയ്ക്ക് ഉപയോഗിക്കാം; പ്രത്യേകിച്ച് അക്രമികളെ കീഴ്പ്പെടുത്താനോ ചില സംഖ്യാധിഷ്ഠിത നേട്ടങ്ങൾക്കായോ ഉള്ളവയിൽ.",
+    "arabic_translation": "[رأي مختلف — استعمال اسم الخافض منفردًا] يمكن استعمال الاسم منفردًا في وظائف وأعمال روحية خاصة، ولا سيما لإخضاع الظالمين أو لمنافع عددية خاصة."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status of the Name Ar-Rafi] Ar-Rafi is an official Divine Name among the 99 based on widely accepted Hadith and Sufi consensus.",
+    "source_reference": "Ahmad al-Buni, Shams al-Ma'arif; Standard Asmaul Husna lists.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അർ-റാഫിഅ് എന്ന നാമത്തിന്റെ സ്ഥാനം] വ്യാപകമായി അംഗീകരിക്കപ്പെട്ട ഹദീസും സൂഫികളുടെ ഏകാഭിപ്രായവും അനുസരിച്ച് അർ-റാഫിഅ് 99 ദൈവനാമങ്ങളിൽ ഔദ്യോഗികമായി ഉൾപ്പെടുന്നു.",
+    "arabic_translation": "[رأي مختلف — مكانة اسم الرافع] الرافع اسم إلهي معتمد ضمن الأسماء الـ99 بناءً على الحديث المقبول على نطاق واسع وإجماع الصوفية."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status of the Name Ar-Rafi] Ar-Rafi is excluded from the 99 Names because it appears in the Qur'an as a verb and not a noun.",
+    "source_reference": "Ibn Hazm, Ibn Uthaymeen.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അർ-റാഫിഅ് എന്ന നാമത്തിന്റെ സ്ഥാനം] ഖുർആനിൽ നാമരൂപത്തിലല്ല, ക്രിയാരൂപത്തിലാണ് വരുന്നതെന്നതിനാൽ അർ-റാഫിഅ് 99 നാമങ്ങളിൽനിന്ന് ഒഴിവാക്കപ്പെടുന്നു.",
+    "arabic_translation": "[رأي مختلف — مكانة اسم الرافع] يُستبعد الرافع من الأسماء الـ99 لأنه ورد في القرآن فعلًا لا اسمًا."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Hayba (Awe)] Recite 140 times on Friday or Monday nights for prestige.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൈബത്തിനുള്ള ആവർത്തനഎണ്ണം] പ്രതാപത്തിനുവേണ്ടി വെള്ളിയാഴ്ചയുടെയോ തിങ്കളാഴ്ചയുടെയോ രാത്രികളിൽ 140 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للهيبة] يُتلى 140 مرة في ليالي الجمعة أو الاثنين للعزة."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Hayba (Awe)] Recite 117 times (the Abjad total) for any need regarding honor.",
+    "source_reference": "Khazinat al-Asrar by Al-Nazili",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഹൈബത്തിനുള്ള ആവർത്തനഎണ്ണം] ആദരവുമായി ബന്ധപ്പെട്ട ഏത് ആവശ്യത്തിനും 117 തവണ (അബ്ജദ് ആകെമൂല്യം) ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للهيبة] يُتلى 117 مرة، وهو مجموع الأبجد، لأي حاجة تتعلق بالعزة."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical Count (Abjad)] The count is 180 based on the standard Abjad values of S=60, M=40, Y=10, A=70.",
+    "source_reference": "Makhzan al-Awfaq by Al-Nazili",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംഖ്യാമൂല്യം (അബ്ജദ്)] S=60, M=40, Y=10, A=70 എന്ന സാധാരണ അബ്ജദ് മൂല്യങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 180 ആണ്.",
+    "arabic_translation": "[رأي مختلف — العدد بالأبجد] العدد 180 بناءً على القيم المعتادة: S=60، M=40، Y=10، A=70."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical Count (Abjad)] The count is 211, considering the Shadda as an extra letter or different numerical weighting.",
+    "source_reference": "Kashf al-Asrar (Attributed to Ibn al-Arabi)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംഖ്യാമൂല്യം (അബ്ജദ്)] ശദ്ദയെ അധിക അക്ഷരമായി കണക്കാക്കിയോ വ്യത്യസ്ത സംഖ്യാഭാരം നൽകിയോ എണ്ണം 211 ആയി കണക്കാക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — العدد بالأبجد] العدد 211 باعتبار الشدة حرفًا إضافيًا أو باختلاف الوزن العددي."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Al-Basir] The name should be recited 302 times based on its numerical Abjad value for spiritual unveiling.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ബസീറിനുള്ള ആവർത്തനഎണ്ണം] ആത്മീയ വെളിപ്പെടലിനായി ഈ നാമം അതിന്റെ അബ്ജദ് സംഖ്യാമൂല്യത്തെ അടിസ്ഥാനമാക്കി 302 തവണ ഓതണം.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للبصير] ينبغي تلاوة الاسم 302 مرة بناءً على قيمته العددية بالأبجد للكشف الروحي."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Al-Basir] The name should be recited 100 times after Friday prayer for enlightenment and heart purity.",
+    "source_reference": "Mujarrabat al-Dairabi al-Kabir",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-ബസീറിനുള്ള ആവർത്തനഎണ്ണം] ആത്മീയപ്രകാശത്തിനും ഹൃദയശുദ്ധിക്കും വെള്ളിയാഴ്ച നമസ്കാരത്തിനുശേഷം 100 തവണ ഓതണം.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للبصير] ينبغي تلاوة الاسم 100 مرة بعد صلاة الجمعة للاستنارة وطهارة القلب."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Timing of Recitation on Friday] Recitation should occur between the Sunnah and Fard of Jumu'ah prayer.",
+    "source_reference": "Some manuscripts of Mujarrabat al-Dairabi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വെള്ളിയാഴ്ചയിലെ ഓതൽസമയം] ജുമുഅയുടെ സുന്നത്തിനും ഫർളിനുമിടയിൽ ഓതണം.",
+    "arabic_translation": "[رأي مختلف — وقت التلاوة يوم الجمعة] تكون التلاوة بين سنة الجمعة وفرضها."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Timing of Recitation on Friday] Recitation should occur after the completion of the Jumu'ah prayer.",
+    "source_reference": "Khazinat al-Asrar",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വെള്ളിയാഴ്ചയിലെ ഓതൽസമയം] ജുമുഅ നമസ്കാരം പൂർത്തിയായശേഷം ഓതണം.",
+    "arabic_translation": "[رأي مختلف — وقت التلاوة يوم الجمعة] تكون التلاوة بعد إتمام صلاة الجمعة."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count calculation] The count is 68 based on the root letters H-K-M.",
+    "source_reference": "Khazinat al-Asrar by Al-Nazili",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണത്തിന്റെ കണക്ക്] H-K-M എന്ന മൂലാക്ഷരങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 68 ആണ്.",
+    "arabic_translation": "[رأي مختلف — حساب عدد التلاوة] العدد 68 بناءً على الحروف الأصلية H-K-M."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation count calculation] The count should be 99 to include the definite article 'Al-'.",
+    "source_reference": "General practice in various North African Sufi orders",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണത്തിന്റെ കണക്ക്] ‘അൽ’ എന്ന നിർണയോപസർഗം ഉൾപ്പെടുത്തി എണ്ണം 99 ആയിരിക്കണം.",
+    "arabic_translation": "[رأي مختلف — حساب عدد التلاوة] ينبغي أن يكون العدد 99 بإدخال أداة التعريف «ال»."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status as a Divine Name] It is an established Name of Allah included in the 99 Names reported by Al-Tirmidhi.",
+    "source_reference": "Imam al-Bayhaqi (Al-Asma wa al-Sifat)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദൈവനാമമെന്ന സ്ഥാനം] തിർമിദി റിപ്പോർട്ട് ചെയ്ത 99 നാമങ്ങളിൽ ഉൾപ്പെട്ട, സ്ഥിരപ്പെട്ട അല്ലാഹുവിന്റെ നാമമാണിത്.",
+    "arabic_translation": "[رأي مختلف — ثبوته اسمًا إلهيًا] هو اسم ثابت لله ضمن الأسماء الـ99 التي رواها الترمذي."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status as a Divine Name] It is not a Name of Allah as it is not explicitly mentioned in the Quran or Sahih Hadith in a nominative form.",
+    "source_reference": "Sheikh Ibn Uthaymeen (Al-Qawa'id al-Muthla)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദൈവനാമമെന്ന സ്ഥാനം] ഖുർആനിലോ സ്വഹീഹ് ഹദീസിലോ നാമരൂപത്തിൽ വ്യക്തമായി പരാമർശിക്കാത്തതിനാൽ ഇത് അല്ലാഹുവിന്റെ നാമമല്ല.",
+    "arabic_translation": "[رأي مختلف — ثبوته اسمًا إلهيًا] ليس اسمًا لله لأنه لم يُذكر صراحة في القرآن أو الحديث الصحيح بصيغة اسمية."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Friday Ritual Timing] The writing on bread should be done on Friday Night (Thursday after Maghrib).",
+    "source_reference": "Ahmad al-Buni (Manba' Usul al-Hikma)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വെള്ളിയാഴ്ചയിലെ ആചാരസമയം] റൊട്ടിയിൽ എഴുതുന്നത് വെള്ളിയാഴ്ച രാത്രി, അതായത് വ്യാഴാഴ്ച മഗ്‌രിബിനുശേഷം, ആയിരിക്കണം.",
+    "arabic_translation": "[رأي مختلف — وقت عمل الجمعة] تكون الكتابة على الخبز ليلة الجمعة، أي يوم الخميس بعد المغرب."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Friday Ritual Timing] The practice is best performed on Friday Day (after Fajr) before eating anything else.",
+    "source_reference": "Shaykh Tosun Bayrak (The Name and the Named)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — വെള്ളിയാഴ്ചയിലെ ആചാരസമയം] മറ്റൊന്നും കഴിക്കുന്നതിനു മുമ്പ് വെള്ളിയാഴ്ച പകൽ, ഫജ്റിനുശേഷം, ചെയ്യുന്നതാണ് ഉത്തമം.",
+    "arabic_translation": "[رأي مختلف — وقت عمل الجمعة] الأفضل أداء العمل نهار الجمعة بعد الفجر وقبل أكل أي شيء آخر."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical Value (Abjad)] The value of 'Wadud' is 20 (Waw=6, Dal=4, Waw=6, Dal=4).",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംഖ്യാമൂല്യം (അബ്ജദ്)] ‘വദൂദ്’ എന്നതിന്റെ മൂല്യം 20 ആണ് (വാവ്=6, ദാൽ=4, വാവ്=6, ദാൽ=4).",
+    "arabic_translation": "[رأي مختلف — القيمة العددية بالأبجد] قيمة «ودود» هي 20: الواو=6، الدال=4، الواو=6، الدال=4."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Numerical Value (Abjad)] The value of 'Al-Wadud' is 51 (including Alif and Lam).",
+    "source_reference": "Various modern Abjad tables and numerical commentaries on the Asma al-Husna.",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംഖ്യാമൂല്യം (അബ്ജദ്)] അലിഫും ലാമും ഉൾപ്പെടുന്ന ‘അൽ-വദൂദ്’ എന്നതിന്റെ മൂല്യം 51 ആണ്.",
+    "arabic_translation": "[رأي مختلف — القيمة العددية بالأبجد] قيمة «الودود» هي 51 بإدخال الألف واللام."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Protection] Recite 70 times for protection from enemies.",
+    "source_reference": "Al-Kaf'ami, Al-Misbah",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംരക്ഷണത്തിനുള്ള ആവർത്തനഎണ്ണം] ശത്രുക്കളിൽനിന്നുള്ള സംരക്ഷണത്തിനായി 70 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للحماية] يُتلى 70 مرة للحماية من الأعداء."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Protection] Recite 77 times for protection from enemies.",
+    "source_reference": "Al-Buni, Shams al-Ma'arif",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — സംരക്ഷണത്തിനുള്ള ആവർത്തനഎണ്ണം] ശത്രുക്കളിൽനിന്നുള്ള സംരക്ഷണത്തിനായി 77 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للحماية] يُتلى 77 مرة للحماية من الأعداء."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Efficacy] The count is 73 based on the standard Abjad of the name Jaleel.",
+    "source_reference": "Shams al-Ma'arif by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഫലപ്രാപ്തിക്കുള്ള ആവർത്തനഎണ്ണം] ‘ജലീൽ’ എന്ന നാമത്തിന്റെ സാധാരണ അബ്ജദിനെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 73 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للفعالية] العدد 73 بناءً على أبجد اسم «جليل» المعتاد."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Efficacy] The count should be 5,329 (the square of the Abjad) for severe needs or overcoming tyrants.",
+    "source_reference": "Makhzan al-A'mal (Indian Sufi tradition)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഫലപ്രാപ്തിക്കുള്ള ആവർത്തനഎണ്ണം] ഗുരുതര ആവശ്യങ്ങൾക്കോ അക്രമികളെ മറികടക്കാനോ എണ്ണം 5,329 (അബ്ജദിന്റെ വർഗം) ആയിരിക്കണം.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للفعالية] ينبغي أن يكون العدد 5,329، أي مربع الأبجد، للحاجات الشديدة أو للتغلب على الطغاة."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary Association] Associated with the Sun (Shams) due to the attributes of light and majesty.",
+    "source_reference": "Mujarrabat al-Dirbi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] പ്രകാശത്തിന്റെയും മഹത്വത്തിന്റെയും ഗുണങ്ങൾ കാരണം സൂര്യനുമായി (ശംസ്) ബന്ധിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يرتبط بالشمس لصفات النور والجلال."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Planetary Association] Associated with Saturn (Zuhal) because of the aspect of awe, severity, and permanence.",
+    "source_reference": "Ancient Talismanic manuscripts attributed to Hermes/Balinas",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഗ്രഹബന്ധം] ഗാംഭീര്യം, കാഠിന്യം, സ്ഥിരത എന്നിവയുടെ വശം കാരണം ശനിയുമായി (സുഹൽ) ബന്ധിപ്പിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — المناسبة الكوكبية] يرتبط بزحل لوجه الهيبة والشدة والدوام."
+  },
+  {
+    "card_id": "PDF-HN-044",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count for Guidance] Recite 514 times (Abjad value) daily for general guidance.",
+    "source_reference": "Shams al-Ma'arif by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — മാർഗദർശനത്തിനുള്ള ആവർത്തനഎണ്ണം] പൊതുവായ മാർഗദർശനത്തിനായി ദിവസവും 514 തവണ (അബ്ജദ് മൂല്യം) ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للهداية] يُتلى 514 مرة، وهي قيمة الأبجد، يوميًا للهداية العامة."
+  },
+  {
+    "card_id": "PDF-HN-044",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count for Guidance] Recite 1000 times between Maghrib and Isha specifically when confused about a decision.",
+    "source_reference": "Al-Khawass al-Kubra by Al-Suyuti",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — മാർഗദർശനത്തിനുള്ള ആവർത്തനഎണ്ണം] ഒരു തീരുമാനത്തിൽ ആശയക്കുഴപ്പമുള്ളപ്പോൾ പ്രത്യേകമായി മഗ്‌രിബിനും ഇശാഇനുമിടയിൽ 1000 തവണ ഓതുക.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار للهداية] يُتلى 1000 مرة بين المغرب والعشاء، خاصة عند الحيرة في قرار."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Canonical Status of the Name] As-Saboor is explicitly listed among the 99 Names of Allah in the popular Tirmidhi tradition.",
+    "source_reference": "Sunan al-Tirmidhi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അംഗീകൃത നാമമെന്ന സ്ഥാനം] പ്രസിദ്ധമായ തിർമിദി നിവേദനത്തിൽ അസ്സബൂർ അല്ലാഹുവിന്റെ 99 നാമങ്ങളിൽ വ്യക്തമായി ഉൾപ്പെട്ടിരിക്കുന്നു.",
+    "arabic_translation": "[رأي مختلف — اعتماد الاسم] الصبور مذكور صراحة ضمن أسماء الله الـ99 في رواية الترمذي المشهورة."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Canonical Status of the Name] It is not mentioned in the Quran as a proper Name, and some scholars argue the list in Tirmidhi is 'Mudraj' (inserted by a sub-narrator).",
+    "source_reference": "Ibn Hajar al-Asqalani in Fath al-Bari",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അംഗീകൃത നാമമെന്ന സ്ഥാനം] ഖുർആനിൽ ഇത് സംജ്ഞാനാമമായി പരാമർശിച്ചിട്ടില്ല. തിർമിദിയിലെ പട്ടിക ‘മുദ്റജ്’—പിന്നീടുള്ള ഒരു നിവേദകൻ ചേർത്തത്—ആണെന്ന് ചില പണ്ഡിതർ അഭിപ്രായപ്പെടുന്നു.",
+    "arabic_translation": "[رأي مختلف — اعتماد الاسم] لم يُذكر في القرآن اسمًا علمًا، ويرى بعض العلماء أن قائمة الترمذي مُدرجة، أي أدخلها راوٍ لاحق."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation Value] The value is 298 (S-B-W-R: 90+2+6+200).",
+    "source_reference": "Shams al-Ma'arif",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്കിലെ മൂല്യം] മൂല്യം 298 ആണ് (S-B-W-R: 90+2+6+200).",
+    "arabic_translation": "[رأي مختلف — قيمة حساب الأبجد] القيمة 298: S-B-W-R: 90+2+6+200."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation Value] The value is 329 (Alif-Lam-S-B-W-R: 1+30+90+2+6+200).",
+    "source_reference": "Various numerical tables in North African manuscripts",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്കിലെ മൂല്യം] മൂല്യം 329 ആണ് (Alif-Lam-S-B-W-R: 1+30+90+2+6+200).",
+    "arabic_translation": "[رأي مختلف — قيمة حساب الأبجد] القيمة 329: Alif-Lam-S-B-W-R: 1+30+90+2+6+200."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation / Repetition Count] The count is 46 based on the root word W-L-Y.",
+    "source_reference": "Manba' Usul al-Hikma by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്ക് / ആവർത്തനഎണ്ണം] W-L-Y എന്ന മൂലപദത്തെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 46 ആണ്.",
+    "arabic_translation": "[رأي مختلف — حساب الأبجد وعدد التكرار] العدد 46 بناءً على الكلمة الأصلية W-L-Y."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Calculation / Repetition Count] The count is 77 when including the definite article (Alif-Lam).",
+    "source_reference": "Kashf al-Asrar 'an 'Ilm al-Huruf",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് കണക്ക് / ആവർത്തനഎണ്ണം] അലിഫ്-ലാം എന്ന നിർണയോപസർഗം ഉൾപ്പെടുത്തിയാൽ എണ്ണം 77 ആണ്.",
+    "arabic_translation": "[رأي مختلف — حساب الأبجد وعدد التكرار] العدد 77 عند إدخال الألف واللام، أداة التعريف."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count] Count is 62 based on the word 'Hameed' without the definite article.",
+    "source_reference": "Shams al-Ma'arif al-Kubra (Abjad calculation for H-M-Y-D)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണം] നിർണയോപസർഗമില്ലാത്ത ‘ഹമീദ്’ എന്ന പദത്തെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 62 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة] العدد 62 بناءً على كلمة «حميد» دون أداة التعريف."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Recitation Count] Count is 93 based on the full name 'Al-Hameed'.",
+    "source_reference": "Khazinat al-Asrar",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഓതൽഎണ്ണം] ‘അൽ-ഹമീദ്’ എന്ന പൂർണനാമത്തെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 93 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد التلاوة] العدد 93 بناءً على الاسم الكامل «الحميد»."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad calculation of Al-Muhsi] The value is 148, which is the most widely used count in spiritual works.",
+    "source_reference": "Shams al-Ma'arif, Ahmad al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-മുഹ്സിയുടെ അബ്ജദ് കണക്ക്] മൂല്യം 148 ആണ്; ആത്മീയ പ്രയോഗങ്ങളിൽ ഏറ്റവും വ്യാപകമായി ഉപയോഗിക്കുന്ന എണ്ണമാണിത്.",
+    "arabic_translation": "[رأي مختلف — حساب أبجد المحصي] القيمة 148، وهي أكثر الأعداد استعمالًا في الأعمال الروحية."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad calculation of Al-Muhsi] The value including the definite article (Al-) is 179.",
+    "source_reference": "Standard Abjad Tables / Modern Occult Lexicons",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അൽ-മുഹ്സിയുടെ അബ്ജദ് കണക്ക്] ‘അൽ’ എന്ന നിർണയോപസർഗം ഉൾപ്പെടെയുള്ള മൂല്യം 179 ആണ്.",
+    "arabic_translation": "[رأي مختلف — حساب أبجد المحصي] القيمة مع أداة التعريف «ال» هي 179."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status as a Divine Name] Al-Muhsi is one of the 99 Beautiful Names of Allah explicitly.",
+    "source_reference": "Hadith narrated by Al-Walid ibn Muslim in Tirmidhi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദൈവനാമമെന്ന സ്ഥാനം] അൽ-മുഹ്സി വ്യക്തമായും അല്ലാഹുവിന്റെ 99 ഉത്തമനാമങ്ങളിൽ ഒന്നാണ്.",
+    "arabic_translation": "[رأي مختلف — ثبوته اسمًا إلهيًا] المحصي واحد من أسماء الله الحسنى الـ99 صراحة."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Status as a Divine Name] It is an attribute (Sifah) derived from actions mentioned in the Quran, but not a proper name of essence.",
+    "source_reference": "Ibn Hazm and some Salafi theologians",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ദൈവനാമമെന്ന സ്ഥാനം] ഖുർആനിൽ പരാമർശിക്കുന്ന പ്രവർത്തനങ്ങളിൽനിന്ന് നിഷ്പന്നമായ വിശേഷണമാണ് (സ്വിഫത്ത്); സത്തയുടെ സംജ്ഞാനാമമല്ല.",
+    "arabic_translation": "[رأي مختلف — ثبوته اسمًا إلهيًا] هو صفة مشتقة من أفعال مذكورة في القرآن، وليس اسم علم للذات."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Numerical Value] The value is 57 (Mim=40, Ba=2, Dal=4, Ya=10, Hamza/Alif=1).",
+    "source_reference": "Shams al-Ma'arif al-Kubra (Al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് സംഖ്യാമൂല്യം] മൂല്യം 57 ആണ് (മീം=40, ബാ=2, ദാൽ=4, യാ=10, ഹംസ/അലിഫ്=1).",
+    "arabic_translation": "[رأي مختلف — القيمة العددية بالأبجد] القيمة 57: الميم=40، الباء=2، الدال=4، الياء=10، الهمزة/الألف=1."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Abjad Numerical Value] The value is 56 (not counting the Hamza as an Alif).",
+    "source_reference": "Kashf al-Asrar (Esoteric Manuscript)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — അബ്ജദ് സംഖ്യാമൂല്യം] ഹംസയെ അലിഫായി കണക്കാക്കാതിരുന്നാൽ മൂല്യം 56 ആണ്.",
+    "arabic_translation": "[رأي مختلف — القيمة العددية بالأبجد] القيمة 56 عند عدم حساب الهمزة ألفًا."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for finding lost items] Recite 124 times (Abjad count).",
+    "source_reference": "Shams al-Ma'arif al-Kubra (Ahmad al-Buni)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — നഷ്ടപ്പെട്ട വസ്തുക്കൾ കണ്ടെത്താനുള്ള ആവർത്തനഎണ്ണം] 124 തവണ ഓതുക (അബ്ജദ് എണ്ണം).",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لإيجاد المفقودات] يُتلى 124 مرة، وهو عدد الأبجد."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for finding lost items] Recite 70 times in each corner of the house (Total 280).",
+    "source_reference": "Various Sufi Mujarrabat manuals",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — നഷ്ടപ്പെട്ട വസ്തുക്കൾ കണ്ടെത്താനുള്ള ആവർത്തനഎണ്ണം] വീടിന്റെ ഓരോ മൂലയിലും 70 തവണ വീതം ഓതുക (ആകെ 280).",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لإيجاد المفقودات] يُتلى 70 مرة في كل زاوية من البيت، والمجموع 280."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Permissibility of using Al-Mumit against enemies] It is permitted to recite Al-Mumit to seek the destruction of an oppressor who is causing harm to Muslims.",
+    "source_reference": "Al-Ajnas by Asif ibn Barkhiya",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ശത്രുക്കൾക്കെതിരെ അൽ-മുമീത് ഉപയോഗിക്കുന്നതിന്റെ അനുവദനീയത] മുസ്‌ലിംകൾക്ക് ഉപദ്രവം ചെയ്യുന്ന അക്രമിയുടെ നാശം തേടി അൽ-മുമീത് ഓതുന്നത് അനുവദനീയമാണ്.",
+    "arabic_translation": "[رأي مختلف — جواز استعمال المميت ضد الأعداء] يجوز تلاوة المميت لطلب هلاك ظالم يؤذي المسلمين."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Permissibility of using Al-Mumit against enemies] It is forbidden to use this name to pray for the death of another; it should only be used to 'kill' the evil traits within oneself or to neutralize the harm of an enemy without seeking their physical demise.",
+    "source_reference": "Sharh al-Asma al-Husna by Ahmad al-Dardir",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ശത്രുക്കൾക്കെതിരെ അൽ-മുമീത് ഉപയോഗിക്കുന്നതിന്റെ അനുവദനീയത] മറ്റൊരാളുടെ മരണം പ്രാർഥിക്കാൻ ഈ നാമം ഉപയോഗിക്കുന്നത് നിരോധിതമാണ്. സ്വന്തം ഉള്ളിലെ ദുർഗുണങ്ങളെ ‘കൊല്ലാനോ’ ശത്രുവിന്റെ ശാരീരിക അന്ത്യം തേടാതെ അവന്റെ ഉപദ്രവം നിർവീര്യമാക്കാനോ മാത്രമേ ഉപയോഗിക്കാവൂ.",
+    "arabic_translation": "[رأي مختلف — جواز استعمال المميت ضد الأعداء] يحرم استعمال هذا الاسم للدعاء بموت شخص آخر؛ وإنما يُستعمل لقتل الصفات السيئة في النفس أو لتحييد أذى العدو دون طلب موته الجسدي."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Ism al-A'zam benefits] The count is 18 based on its literal Abjad value.",
+    "source_reference": "Shams al-Ma'arif al-Kubra by Al-Buni",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളമിന്റെ ഗുണങ്ങൾക്കുള്ള ആവർത്തനഎണ്ണം] അക്ഷരങ്ങളുടെ നേരിട്ടുള്ള അബ്ജദ് മൂല്യത്തെ അടിസ്ഥാനമാക്കിയുള്ള എണ്ണം 18 ആണ്.",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لفوائد الاسم الأعظم] العدد 18 بناءً على قيمته الحرفية بالأبجد."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Repetition Count for Ism al-A'zam benefits] The count should be 324, which is the square of its Abjad value (18x18), for greater effect.",
+    "source_reference": "Jawahir al-Khams by Ghaus al-Hindi",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളമിന്റെ ഗുണങ്ങൾക്കുള്ള ആവർത്തനഎണ്ണം] കൂടുതൽ ഫലത്തിനായി എണ്ണം 324 ആയിരിക്കണം; ഇത് അബ്ജദ് മൂല്യത്തിന്റെ വർഗമാണ് (18x18).",
+    "arabic_translation": "[رأي مختلف — عدد التكرار لفوائد الاسم الأعظم] ينبغي أن يكون العدد 324، أي مربع قيمته بالأبجد 18x18، لأثر أكبر."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Ism al-A'zam status] Al-Hayy is the Greatest Name independently.",
+    "source_reference": "Various Sufi Traditions",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളമെന്ന സ്ഥാനം] അൽ-ഹയ്യ് സ്വതന്ത്രമായിത്തന്നെ ഏറ്റവും മഹത്തായ നാമമാണ്.",
+    "arabic_translation": "[رأي مختلف — كونه الاسم الأعظم] الحي هو الاسم الأعظم مستقلًا."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Ism al-A'zam status] It is only the Greatest Name when combined with Al-Qayyum.",
+    "source_reference": "Tafsir Ibn Kathir (citing various Hadiths)",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളമെന്ന സ്ഥാനം] അൽ-ഖയ്യൂമിനൊപ്പം ചേരുമ്പോൾ മാത്രമാണ് അത് ഏറ്റവും മഹത്തായ നാമമാകുന്നത്.",
+    "arabic_translation": "[رأي مختلف — كونه الاسم الأعظم] لا يكون الاسم الأعظم إلا عند جمعه مع القيوم."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Ism al-A'zam (The Greatest Name)] The Greatest Name is 'Al-Hayy al-Qayyum' because it encompasses all attributes of Being and Action.",
+    "source_reference": "Ibn Taymiyyah, Majmu' al-Fatawa",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളം (ഏറ്റവും മഹത്തായ നാമം)] സത്തയുടെയും പ്രവർത്തനത്തിന്റെയും എല്ലാ ഗുണങ്ങളും ഉൾക്കൊള്ളുന്നതിനാൽ ‘അൽ-ഹയ്യുൽ ഖയ്യൂം’ ആണ് ഏറ്റവും മഹത്തായ നാമം.",
+    "arabic_translation": "[رأي مختلف — الاسم الأعظم] الاسم الأعظم هو «الحي القيوم» لأنه يشمل جميع صفات الذات والفعل."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "field": "scholarly_entries",
+    "source_text": "[Contradictory opinion — Ism al-A'zam (The Greatest Name)] The Greatest Name is 'Allah' because it is the unique proper name that encompasses all Divine Attributes.",
+    "source_reference": "Imam al-Qurtubi, al-Jami' li-Ahkam al-Qur'an",
+    "malayalam": "[ഭിന്നാഭിപ്രായം — ഇസ്മുൽ അഅ്‌ളം (ഏറ്റവും മഹത്തായ നാമം)] ദൈവിക ഗുണങ്ങളെല്ലാം ഉൾക്കൊള്ളുന്ന സവിശേഷ സംജ്ഞാനാമമായതിനാൽ ‘അല്ലാഹ്’ ആണ് ഏറ്റവും മഹത്തായ നാമം.",
+    "arabic_translation": "[رأي مختلف — الاسم الأعظم] الاسم الأعظم هو «الله» لأنه اسم العلم الفريد الجامع لجميع الصفات الإلهية."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "scholarly_entries",
+    "source_text": "A 3x3 magic square (Muthallath) for the name Al-Malik (Abjad 90). Construction: The total sum is 90. Subtract 12 (90-12=78), divide by 3 (78/3=26). The first house (Bait 1) starts with 26. The square ensures honor and prevents poverty if carried on a silver ring.",
+    "source_reference": "Manba' Usul al-Hikma — Ahmad ibn Ali al-Buni",
+    "malayalam": "അൽ-മലിക് (അബ്ജദ് 90) എന്ന നാമത്തിന്റെ 3x3 മജിക് സ്ക്വയർ (മുസല്ലസ്). നിർമ്മാണ രീതി: ആകെ തുകയായ 90-ൽ നിന്ന് 12 കുറയ്ക്കുക (90-12=78), അതിനെ 3 കൊണ്ട് ഹരിക്കുക (78/3=26). ആദ്യത്തെ കളം 26-ൽ തുടങ്ങുന്നു. ഇത് വെള്ളി മോതിരത്തിൽ കൊത്തി ധരിക്കുന്നത് അന്തസ്സ് നൽകാനും ദാരിദ്ര്യം തടയാനും സഹായിക്കുന്നു.",
+    "arabic_translation": "وفق مثلث 3x3 لاسم الملك، وقيمته بالأبجد 90. طريقة البناء: المجموع 90. يُطرح 12: 90-12=78، ثم يُقسم على 3: 78/3=26. يبدأ البيت 1 بالعدد 26. ويزعم النص أن حمله في خاتم فضة يضمن العزة ويمنع الفقر."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "field": "wafq",
+    "source_text": "33 | 26 | 31\n28 | 30 | 32\n29 | 34 | 27",
+    "source_reference": "Manba' Usul al-Hikma — Ahmad ibn Ali al-Buni",
+    "malayalam": "അൽ-മലിക് (അബ്ജദ് 90) എന്ന നാമത്തിന്റെ 3x3 മജിക് സ്ക്വയർ (മുസല്ലസ്). നിർമ്മാണ രീതി: ആകെ തുകയായ 90-ൽ നിന്ന് 12 കുറയ്ക്കുക (90-12=78), അതിനെ 3 കൊണ്ട് ഹരിക്കുക (78/3=26). ആദ്യത്തെ കളം 26-ൽ തുടങ്ങുന്നു. ഇത് വെള്ളി മോതിരത്തിൽ കൊത്തി ധരിക്കുന്നത് അന്തസ്സ് നൽകാനും ദാരിദ്ര്യം തടയാനും സഹായിക്കുന്നു.",
+    "arabic_translation": "وصف الشكل: وفق مثلث 3x3 لاسم الملك بقيمة 90. يُطرح 12 من 90: 90-12=78، ثم يُقسم على 3: 78/3=26، ويبدأ البيت الأول بالعدد 26. يذكر الوصف أن نقشه في خاتم فضة وحمله يفيد العزة ويمنع الفقر. الأرقام الأصلية محفوظة كما هي."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "field": "scholarly_entries",
+    "source_text": "The word 'Allah' is analyzed as a contraction of 'al-ilāh', though some scholars argue it is a non-derivative (murtajal) proper name for the Divine Essence.",
+    "source_reference": "The Encyclopaedia of Islam (Second Edition)",
+    "malayalam": "'അല്ലാഹു' എന്നത് 'അൽ-ഇലാഹ്' എന്നതിന്റെ ചുരുക്കരൂപമാണെന്ന് ഒരു വിഭാഗം പണ്ഡിതർ വാദിക്കുന്നു, എന്നാൽ മറ്റു ചിലർ ഇത് അല്ലാഹുവിന്റെ സത്തയെ കുറിക്കാൻ നേരിട്ട് നൽകപ്പെട്ട (നിഷ്പന്നമല്ലാത്ത) നാമമാണെന്ന് കരുതുന്നു.",
+    "arabic_translation": "تُحلّل كلمة «الله» بوصفها اختصارًا من «الإله»، بينما يرى بعض العلماء أنها اسم علم مرتجل غير مشتق للذات الإلهية."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "field": "scholarly_entries",
+    "source_text": "A 3x3 Magic Square (Muthallath) for the name Al-Alim (Total 150). Construction: The base number is 150. (150-12)/3 = 46. The square starts with 46 in the first cell following the Ghazalian entry sequence. It is written on a Friday in the hour of Mercury.",
+    "source_reference": "Al-Aufaq — Imam al-Ghazali",
+    "malayalam": "അൽ-അലീം എന്ന നാമത്തിന്റെ 3x3 വഫഖ്. ആകെ തുക 150 വരും വിധമാണ് ഇത് നിർമ്മിക്കുന്നത്. വെള്ളിയാഴ്ച ബുധന്റെ ഹോരയിൽ (Hour of Mercury) ഇത് എഴുതുന്നത് ഫലപ്രദമാണ്.",
+    "arabic_translation": "وفق مثلث 3x3 لاسم العليم بمجموع 150. طريقة البناء: العدد الأساسي 150، والحساب (150-12)/3 = 46. يبدأ المربع بالعدد 46 في الخانة الأولى وفق ترتيب الإدخال الغزالي. ويُكتب يوم الجمعة في ساعة عطارد."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "field": "wafq",
+    "source_text": "46 | 53 | 51\n55 | 50 | 45\n49 | 47 | 54",
+    "source_reference": "Al-Aufaq — Imam al-Ghazali",
+    "malayalam": "അൽ-അലീം എന്ന നാമത്തിന്റെ 3x3 വഫഖ്. ആകെ തുക 150 വരും വിധമാണ് ഇത് നിർമ്മിക്കുന്നത്. വെള്ളിയാഴ്ച ബുധന്റെ ഹോരയിൽ (Hour of Mercury) ഇത് എഴുതുന്നത് ഫലപ്രദമാണ്.",
+    "arabic_translation": "وصف الشكل: وفق 3x3 لاسم العليم، مجموعُه 150. يذكر الوصف أن كتابته يوم الجمعة في ساعة عطارد فعالة. الأرقام الأصلية محفوظة كما هي."
+  },
+  {
+    "card_id": "PDF-HN-075",
+    "field": "scholarly_entries",
+    "source_text": "The concept of Al-Zahir in Ibn Arabi's thought represents the external aspect of the Divine Reality (Haqq) as manifested in the cosmos.",
+    "source_reference": "The Sufi Path of Knowledge",
+    "malayalam": "ഇബ്നു അറബിയുടെ ദർശനത്തിൽ, പ്രപഞ്ചത്തിൽ വെളിവാക്കപ്പെട്ട ദൈവീക യാഥാർത്ഥ്യത്തിന്റെ ബാഹ്യരൂപമാണ് അസ്സാഹിർ.",
+    "arabic_translation": "يمثّل مفهوم الظاهر في فكر ابن عربي الجانب الخارجي للحقيقة الإلهية، أي الحق، كما تتجلى في الكون."
+  },
+  {
+    "card_id": "PDF-HN-082",
+    "field": "scholarly_entries",
+    "source_text": "The semantic evolution of 'Afw' from pre-Islamic meanings of 'abundance' and 'erasure of desert campsites' to the Qur'anic concept of Divine Pardon.",
+    "source_reference": "The Foreign Vocabulary of the Qur'an",
+    "malayalam": "അറബി ഭാഷയിലെ 'അഫ്വ്' എന്ന പദത്തിന്റെ അർത്ഥവ്യാപ്തി - ഇസ്‌ലാമിന് മുമ്പുള്ള കാലത്തെ 'സമൃദ്ധി' എന്ന അർത്ഥത്തിൽ നിന്ന് ഖുർആനികമായ 'ദൈവിക മാപ്പ്' എന്നതിലേക്കുള്ള മാറ്റത്തെക്കുറിച്ചുള്ള പഠനം.",
+    "arabic_translation": "التطور الدلالي لكلمة «عفو» من معانيها قبل الإسلام، مثل «الكثرة» و«محو آثار مخيمات الصحراء»، إلى المفهوم القرآني للعفو الإلهي."
+  },
+  {
+    "card_id": "PDF-HN-093",
+    "field": "scholarly_entries",
+    "source_text": "The name Al-Hadi in Sufi metaphysics represents the descent of Divine light into the darkness of the human soul to enable navigation through the stations of the path (Maqamat).",
+    "source_reference": "The Sufi Path of Knowledge",
+    "malayalam": "സൂഫി മെറ്റാഫിസിക്സിൽ, അൽ-ഹാദി എന്ന നാമം മനുഷ്യന്റെ ആത്മാവിന്റെ ഇരുളിലേക്ക് ദിവ്യപ്രകാശം ഇറങ്ങിവരുന്നതിനെയും അതിലൂടെ ആത്മീയ യാത്ര സുഗമമാക്കുന്നതിനെയും പ്രതിനിധീകരിക്കുന്നു.",
+    "arabic_translation": "يمثّل اسم الهادي في الميتافيزيقا الصوفية نزول النور الإلهي إلى ظلمة النفس البشرية لتمكينها من السير عبر مقامات الطريق."
+  },
+  {
+    "card_id": "PDF-HN-121",
+    "field": "timings",
+    "source_text": "The name Al-Akbar is associated with the planet Jupiter (Al-Mushtari), which governs expansion, wealth, and legal matters. Rituals are best performed when Jupiter is in exaltation.",
+    "source_reference": "Al-Ajnās",
+    "malayalam": "അൽ-അക്ബർ എന്ന നാമം വ്യാഴം (മുശ്തരി) ഗ്രഹവുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു. ഐശ്വര്യം, സമ്പത്ത്, നിയമകാര്യങ്ങൾ എന്നിവയെ ഇത് നിയന്ത്രിക്കുന്നു. വ്യാഴത്തിന്റെ ഉന്നത സ്ഥാനത്തുള്ള സമയത്താണ് ഇതിന്റെ കർമ്മങ്ങൾ ഉത്തമം.",
+    "arabic_translation": "يرتبط اسم الأكبر بكوكب المشتري الذي يحكم التوسع والمال والمسائل القانونية. ويذكر النص أن أفضل أداء للأعمال يكون حين يكون المشتري في شرفه."
+  }
+]

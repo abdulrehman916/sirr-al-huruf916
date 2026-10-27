@@ -1,3 +1,4 @@
+import { useIsOwner } from '@/hooks/useIsOwner';
 import { useState } from 'react';
 import { useHolyNamesLanguage } from './HolyNamesLanguageContext';
 
@@ -7,6 +8,7 @@ function figureUrl(visual) {
 }
 
 function SourceVisual({ visual, language }) {
+  const isOwner = useIsOwner();
   const [failed, setFailed] = useState(false);
   const url = figureUrl(visual);
   const title = (language === 'ml' ? visual.title_ml : visual.title_en) || (language === 'ml' ? 'മൂലഗ്രന്ഥത്തിലെ കളം / പ്രത്യേക ലിപി' : 'Source figure / special script');
@@ -14,7 +16,7 @@ function SourceVisual({ visual, language }) {
     <figcaption className="text-base text-gold">{title}</figcaption>
     {url && !failed ? <img src={url} alt={title} loading="lazy" onError={() => setFailed(true)} className="w-full max-w-2xl mx-auto h-auto rounded-lg bg-white" />
       : <p className="text-sm text-white/60">{language === 'ml' ? 'ഈ കളത്തിന്റെ മൂലചിത്രം ഇപ്പോൾ തുറക്കാനായില്ല.' : 'The original figure is currently unavailable.'}</p>}
-    <p className="text-xs text-white/60 break-words">{visual.source_reference} · {language === 'ml' ? 'പേജ്' : 'page'} {visual.source_page}</p>
+    <details className="text-xs text-white/60"><summary className="cursor-pointer" aria-label={language === 'ml' ? 'സ്രോതസ്സ് വിവരം' : 'Source information'}>{isOwner ? (language === 'ml' ? 'സ്രോതസ്സ് വിവരം' : 'Source information') : 'ⓘ'}</summary><p className="pt-2">{visual.source_reference}{isOwner && <> · {language === 'ml' ? 'പേജ്' : 'page'} {visual.source_page}</>}</p></details>
     <p className="text-white/85 text-base leading-loose whitespace-pre-wrap">{language === 'ml' ? visual.description_ml : visual.description_en}</p>
     <p className="text-xs text-white/50">{language === 'ml' ? 'മൂലഗ്രന്ഥത്തിലെ കളം അതേപടി എടുത്തതാണ്; അക്കങ്ങളോ ലിപികളോ പുനർനിർമിച്ചിട്ടില്ല. ഗുണങ്ങൾ ഗ്രന്ഥത്തിലെ അവകാശവാദങ്ങളാണ്.' : 'Extracted from the source, preserving its numbers and script. Claimed properties are the book’s accounts.'}</p>
   </figure>;

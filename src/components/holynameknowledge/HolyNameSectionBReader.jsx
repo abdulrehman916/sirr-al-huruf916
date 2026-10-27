@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useIsOwner } from '@/hooks/useIsOwner';
 import research from '@/data/holyNamesSectionBResearch.json';
 import nextResearch from '@/data/holyNamesSectionBNextResearch.json';
 import expandedResearch from '@/data/holyNamesSectionBExpandedResearch.json';
@@ -39,7 +40,7 @@ export function sectionBEntrySearchText(entry, language, chapterTitle = null) {
   const t = value => value?.[language] || '';
   return [
     t(entry.title), t(entry.translation), t(entry.verse_meaning), t(entry.translation_note), entry.arabic_original,
-    entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation),
+    entry.arabic_translation, entry.source_url, t(entry.source_scope), entry.source_passage, t(entry.passage_translation),
     t(shamsBrief.purpose_labels[entry.purpose]), entry.source_reference,
     ...(entry.references || []).map(ref => `${ref.book} ${ref.author} ${ref.page}`),
     ...(entry.supplications || []).map(dua => `${t(dua.translation)} ${dua.arabic_original}`),
@@ -57,16 +58,18 @@ function Arabic({ text }) {
 }
 
 function SourceEntry({ entry, language, book = null, page = null, topic = false, card = null }) {
+  const isOwner = useIsOwner();
   const ml = language === 'ml';
   const t = value => value?.[language] || '';
   return <article id={`section-b-${entry.id}`} className="rounded-xl border border-yellow-500/20 p-4 space-y-3">
-    <h4 className="text-yellow-200 font-semibold">{t(entry.title)}</h4>
+    <h4 className="text-yellow-200 font-semibold">{!isOwner && /ശംസ്|Shams|തിലിംസാനി|Tilimsani|ഗ്രന്ഥപാഠം പരിശോധിച്ചു|source.checked|അച്ചടി പേജ്|printed page/i.test(t(entry.title)) ? (ml ? 'വിശദീകരണം' : 'Explanation') : t(entry.title)}</h4>
     <Arabic text={entry.arabic_original} />
-    {entry.source_scope && !entry.source_passage && <p className="text-xs text-amber-100/75 leading-relaxed">{t(entry.source_scope)}</p>}
-    {entry.verse_meaning && <div className="space-y-2"><p className="text-xs text-yellow-200">{ml ? 'ആയത്തിന്റെ പൂർണ അർഥം' : 'Meaning of the complete verse'}</p><p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.verse_meaning)}</p><p className="text-xs text-white/50">{t(entry.translation_note)}</p></div>}
+    {entry.arabic_translation && <div className="space-y-2"><p className="text-xs text-white/50">{ml ? 'അറബി പരിഭാഷ — മൂല ഉദ്ധരണിയല്ല' : 'Arabic translation — not a source quotation'}</p><Arabic text={entry.arabic_translation} /></div>}
+    {isOwner && entry.source_scope && !entry.source_passage && <p className="text-xs text-amber-100/75 leading-relaxed">{t(entry.source_scope)}</p>}
+    {entry.verse_meaning && <div className="space-y-2"><p className="text-xs text-yellow-200">{ml ? 'ആയത്തിന്റെ പൂർണ അർഥം' : 'Meaning of the complete verse'}</p><p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.verse_meaning)}</p><p className="text-xs text-white/50">{isOwner ? t(entry.translation_note) : null}</p></div>}
     {entry.multiple_verses?.map(verse => <div key={verse.ref} className="space-y-2"><p className="text-yellow-200 text-sm">{verse.ref}</p><Arabic text={verse.arabic} /><p className="text-white/90 leading-loose">{t(verse)}</p></div>)}
-    {entry.multiple_verses?.length > 0 && <p className="text-xs text-white/50">{t(entry.translation_note)}</p>}
-    {entry.source_passage && <div className="space-y-3"><p className="text-xs text-yellow-200">{ml ? 'ഈ ഭാഗത്തിന്റെ മൂല അറബി പാഠം' : 'Original Arabic of this source passage'}</p><Arabic text={entry.source_passage} />{t(entry.passage_translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.passage_translation)}</p>}<p className="text-xs text-white/50 leading-relaxed">{t(entry.source_scope)}</p></div>}
+    {entry.multiple_verses?.length > 0 && <p className="text-xs text-white/50">{isOwner ? t(entry.translation_note) : null}</p>}
+    {entry.source_passage && <div className="space-y-3"><p className="text-xs text-yellow-200">{ml ? 'ഈ ഭാഗത്തിന്റെ മൂല അറബി പാഠം' : 'Original Arabic of this source passage'}</p><Arabic text={entry.source_passage} />{t(entry.passage_translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.passage_translation)}</p>}{isOwner && <p className="text-xs text-white/50 leading-relaxed">{t(entry.source_scope)}</p>}</div>}
     {t(entry.translation) && <p className="text-white/90 leading-loose whitespace-pre-wrap">{t(entry.translation)}</p>}
     {entry.edition_variants && <details className="rounded-xl border border-amber-400/30 bg-amber-950/15 px-3 py-2">
       <summary className="cursor-pointer font-semibold text-amber-200 text-sm">{ml ? 'മറ്റു പതിപ്പുകളിലെ പാഠഭേദങ്ങൾ — ഒത്തുനോക്കേണ്ടത്' : 'Textual variants in another edition — requires collation'}</summary>
@@ -83,8 +86,8 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
       {entry.edition_variants.other_page_url && <a className="block text-xs underline text-yellow-200 mt-2 break-all" href={entry.edition_variants.other_page_url} target="_blank" rel="noopener noreferrer">{ml ? 'തുടരുന്ന പേജ്' : 'Continued page'}: {entry.edition_variants.other_page_url}</a>}
     </details>}
 
-    {entry.legacy_body && <div className="rounded-lg border border-amber-500/20 bg-amber-950/20 p-3"><p className="text-xs text-amber-200 mb-1">{ml ? 'പഴയ കാർഡ് രേഖയിലെ പാഠം' : 'Legacy card text'}</p><p className="text-white/80 leading-relaxed whitespace-pre-wrap">{entry.legacy_body}</p></div>}
-    {entry.review_status === 'pending_source_recheck' && <p className="text-xs text-amber-200/90">{ml ? 'സ്ഥിതി: ഉറവിടം വീണ്ടും പരിശോധിക്കണം — ഇത് സ്ഥിരീകരിച്ച തെളിവായി കണക്കാക്കരുത്.' : 'Status: source recheck required — do not treat this as verified evidence.'}{entry.legacy_confidence && ` ${ml ? 'പഴയ സ്ഥിതി: ' : 'Legacy status: '}${entry.legacy_confidence}`}</p>}
+    {isOwner && entry.legacy_body && <div className="rounded-lg border border-amber-500/20 bg-amber-950/20 p-3"><p className="text-xs text-amber-200 mb-1">{ml ? 'പഴയ കാർഡ് രേഖയിലെ പാഠം' : 'Legacy card text'}</p><p className="text-white/80 leading-relaxed whitespace-pre-wrap">{entry.legacy_body}</p></div>}
+    {entry.review_status === 'pending_source_recheck' && <p className="text-xs text-amber-200/90">{ml ? 'സ്ഥിതി: ഉറവിടം വീണ്ടും പരിശോധിക്കണം — ഇത് സ്ഥിരീകരിച്ച തെളിവായി കണക്കാക്കരുത്.' : 'Status: source recheck required — do not treat this as verified evidence.'}{isOwner && entry.legacy_confidence && ` ${ml ? 'പഴയ സ്ഥിതി: ' : 'Legacy status: '}${entry.legacy_confidence}`}</p>}
     {topic && <div className="space-y-3 border-t border-white/10 pt-3">
       {Array.isArray(t(entry.steps)) && <ol className="list-decimal pl-6 space-y-2 text-white/85">{t(entry.steps).map((step, i) => <li key={i}>{step}</li>)}</ol>}
       <p className="text-white/75"><span className="text-yellow-200">{ml ? 'എണ്ണം: ' : 'Count: '}</span>{(typeof entry.count === 'object' && entry.count ? t(entry.count) : entry.count) ?? (entry.references ? (ml ? 'മുകളിലെ സ്രോതസ്സ് വിവരണം വായിക്കുക; എണ്ണം പ്രത്യേകം രേഖപ്പെടുത്തിയിട്ടില്ല.' : 'Read the source account above; no separate count field is recorded.') : (ml ? 'ഈ സ്രോതസ്സിൽ നിർദേശിച്ചിട്ടില്ല.' : 'Not specified in this source.'))}</p>
@@ -98,9 +101,11 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
       {t(entry.conditions) && <p className="text-white/75"><span className="text-yellow-200">{ml ? 'നിബന്ധനകൾ / ഒരുക്കം: ' : 'Conditions / preparation: '}</span>{t(entry.conditions)}</p>}
       {entry.construction && <p className="text-white/75 whitespace-pre-wrap">{entry.construction}</p>}
     </div>}
-    {!entry.references && <p className="text-xs text-white/60 break-words">{entry.source_reference || book}{page && <> · {ml ? 'പേജ്' : 'page'} {page}</>}</p>}
-    {entry.references?.map((reference, i) => <div key={i} className="text-xs text-white/60 break-words"><p>{reference.book}{reference.author && ` · ${reference.author}`}{reference.page && ` · ${ml ? 'പേജ്' : 'page'} ${reference.page}`}</p>{reference.url && <details><summary className="cursor-pointer mt-2">{ml ? 'സ്രോതസ്സിന്റെ ലിങ്ക്' : 'Source link'}</summary><a className="block underline break-all mt-2" href={reference.url} target="_blank" rel="noopener noreferrer">{reference.url}</a></details>}</div>)}
-    {entry.source_notice && <details className="text-xs text-white/50"><summary className="cursor-pointer">{ml ? 'പാഠത്തിന്റെ പകർപ്പവകാശ കുറിപ്പ്' : 'Text attribution and license'}</summary><pre className="whitespace-pre-wrap mt-2">{entry.source_notice}</pre></details>}
+    <details className="text-xs text-white/60" data-source-details><summary className="cursor-pointer" aria-label={ml ? 'സ്രോതസ്സ് വിവരം' : 'Source information'}>{isOwner ? (ml ? 'സ്രോതസ്സ് വിവരം' : 'Source information') : 'ⓘ'}</summary><div className="space-y-2 pt-2">
+    {!entry.references && <p className="text-xs text-white/60 break-words">{entry.source_reference || book}{isOwner && page && <> · {ml ? 'പേജ്' : 'page'} {page}</>}</p>}
+    {entry.references?.map((reference, i) => <div key={i} className="text-xs text-white/60 break-words"><p>{reference.book}{reference.author && ` · ${reference.author}`}{isOwner && reference.page && ` · ${ml ? 'പേജ്' : 'page'} ${reference.page}`}</p>{isOwner && reference.url && <details><summary className="cursor-pointer mt-2">{ml ? 'സ്രോതസ്സിന്റെ ലിങ്ക്' : 'Source link'}</summary><a className="block underline break-all mt-2" href={reference.url} target="_blank" rel="noopener noreferrer">{reference.url}</a></details>}</div>)}
+    </div></details>
+    {entry.source_notice && <details className="text-xs text-white/50"><summary className="cursor-pointer">{isOwner ? (ml ? 'പാഠത്തിന്റെ പകർപ്പവകാശ കുറിപ്പ്' : 'Text attribution and license') : '©'}</summary><pre className="whitespace-pre-wrap mt-2">{entry.source_notice}</pre></details>}
     {entry.supplications?.map(supplication => <SourceEntry key={supplication.id} entry={supplication} language={language} />)}
     {entry.related_visual_id && card && <HolyOneSourceVisuals cardId={card.pdf_name_id} visuals={(card.attached_visuals || []).filter(visual => visual.id === entry.related_visual_id)} />}
     {entry.source_url?.startsWith('https://') && <details className="text-xs text-white/60"><summary className="cursor-pointer">{ml ? 'സ്രോതസ്സിന്റെ ലിങ്ക്' : 'Source link'}</summary><a className="block underline break-all mt-2" href={entry.source_url} target="_blank" rel="noopener noreferrer">{entry.source_url}</a></details>}
@@ -109,6 +114,7 @@ function SourceEntry({ entry, language, book = null, page = null, topic = false,
 
 export default function HolyNameSectionBReader({ chapter, nameId, card = null }) {
   const { language } = useHolyNamesLanguage();
+  const isOwner = useIsOwner();
   const [query, setQuery] = useState('');
   const [purpose, setPurpose] = useState('all');
   const ml = language === 'ml';
@@ -188,49 +194,49 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     { key: 'prophetic', title: ml ? 'നബിവചന ദിക്ർ / ദുആ — എണ്ണവും സമയവും ക്രമവും' : 'Prophetic dhikr and supplications — count, timing and procedure', items: linkedPropheticDhikr },
     { key: 'scholarly', title: ml ? 'പണ്ഡിതരുടെ വിശദീകരണങ്ങളും അഭിപ്രായഭേദങ്ങളും' : 'Scholarly explanations and differing views', items: [...(profile?.scholarly || []), ...(deepProfile?.scholarly || []), ...(deepProfileII?.scholarly || []), ...(deepProfileIII?.scholarly || []), ...(deepProfileIV?.scholarly || []), ...(deepProfileV?.scholarly || []), ...(deepProfileVI?.scholarly || []), ...(deepProfileVII?.scholarly || []), ...(deepProfileVIII?.scholarly || []), ...(deepProfileIX?.scholarly || []), ...(deepProfileX?.scholarly || []), ...(encyclopediaProfile?.scholarly || []), ...(encyclopediaProfileII?.scholarly || []), ...(encyclopediaProfileIII?.scholarly || []), ...(encyclopediaProfileIV?.scholarly || []), ...(encyclopediaProfileV?.scholarly || []), ...(encyclopediaProfileVI?.scholarly || []), ...(encyclopediaProfileVII?.scholarly || []), ...runtime.scholarly] },
     { key: 'topics', title: ml ? 'ആവശ്യങ്ങളും ബന്ധപ്പെട്ട ദുആകളും' : 'Purposes and related supplications', items: [...(profile?.topics || []), ...linkedQuranDuas, ...linkedQuranDuasII, ...linkedQuranDuasIII, ...runtime.topics] },
-    { key: 'shams', title: ml ? 'ശംസ് അൽമആരിഫ് — ഖവാസ്സ്: മൂല അറബി, എണ്ണം, സമയം, ഗ്രന്ഥവിവരണം' : 'Shams al-Maarif — historical khawass: Arabic, counts, timings and book account', items: linkedShamsAccounts },
-    { key: 'book', title: ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
+    { key: 'shams', title: !isOwner ? (ml ? 'കൂടുതൽ വിവരങ്ങൾ' : 'Further information') : ml ? 'ശംസ് അൽമആരിഫ് — ഖവാസ്സ്: മൂല അറബി, എണ്ണം, സമയം, ഗ്രന്ഥവിവരണം' : 'Shams al-Maarif — historical khawass: Arabic, counts, timings and book account', items: linkedShamsAccounts },
+    { key: 'book', title: !isOwner ? (ml ? 'വിശദീകരണങ്ങൾ' : 'Explanations') : ml ? 'തിലിംസാനിയുടെ ഗ്രന്ഥവിവരണം — മൂലപാഠവും പരിഭാഷയും' : 'Tilimsani’s book account — original text and translation', items: checkedChapter?.practices || [] },
     { key: 'pending', title: ml ? 'വീണ്ടും പരിശോധിക്കേണ്ട പഴയ കാർഡ് രേഖകൾ' : 'Legacy card records awaiting source recheck', items: runtime.pendingEntries },
   ];
   const term = query.trim().toLocaleLowerCase();
   const matches = entry => !term || sectionBEntrySearchText(entry, language, checkedChapter?.source_title).includes(term);
-  const visible = groups.map(group => ({ ...group, items: group.items.filter(entry => matches(entry) && (!['topics', 'prophetic', 'shams'].includes(group.key) || purpose === 'all' || (entry.purpose || 'other') === purpose)) }));
+  const visible = groups.filter(group => isOwner || group.key !== 'pending').map(group => ({ ...group, items: group.items.filter(entry => matches(entry) && (!['topics', 'prophetic', 'shams'].includes(group.key) || purpose === 'all' || (entry.purpose || 'other') === purpose)) }));
   const availablePurposes = new Set(groups.filter(group => ['topics', 'prophetic', 'shams'].includes(group.key)).flatMap(group => group.items.map(entry => entry.purpose || 'other')));
   // Count the complete displayed source inventory, including all ten tafsir layers and checked book passages.
   const groupCount = key => groups.find(group => group.key === key)?.items.length || 0;
   const totalSourceEntries = groups.filter(group => group.key !== 'pending').reduce((sum, group) => sum + group.items.length, 0);
   return <section className={`space-y-5 ${ml ? 'font-malayalam' : 'font-inter'}`} data-testid="section-b-reader">
     <h2 className="text-lg text-yellow-200 font-semibold">{ml ? 'നാമത്തെക്കുറിച്ചുള്ള വിശദമായ വായന' : 'Detailed reading about this name'}</h2>
-    {encyclopediaProfile && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepth.scope)}</p>}
-    {encyclopediaProfileII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthII.scope)}</p>}
-    {encyclopediaProfileIII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIII.scope)}</p>}
-    {encyclopediaProfileIV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIV.scope)}</p>}
-    {encyclopediaProfileV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthV.scope)}</p>}
-    {encyclopediaProfileVI && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthVI.scope)}</p>}
-    {encyclopediaProfileVII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthVII.scope)}</p>}
-    <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
-    {card && <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-white/70" aria-label={ml ? 'കാർഡ് ഉറവിട സംഗ്രഹം' : 'Card source summary'}>
+    {isOwner && encyclopediaProfile && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepth.scope)}</p>}
+    {isOwner && encyclopediaProfileII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthII.scope)}</p>}
+    {isOwner && encyclopediaProfileIII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIII.scope)}</p>}
+    {isOwner && encyclopediaProfileIV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthIV.scope)}</p>}
+    {isOwner && encyclopediaProfileV && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthV.scope)}</p>}
+    {isOwner && encyclopediaProfileVI && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthVI.scope)}</p>}
+    {isOwner && encyclopediaProfileVII && <p className="text-sm text-yellow-100/75 leading-relaxed">{t(encyclopediaDepthVII.scope)}</p>}
+    <div className="space-y-3"><p className="text-white/90 leading-loose">{profile ? t(profile.explanation) : sectionBExplanation(card, language)}</p>{isOwner && profile && <p className="text-sm text-white/60 leading-relaxed">{t(profile.coverage)}</p>}</div>
+    {isOwner && card && <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-white/70" aria-label={ml ? 'കാർഡ് ഉറവിട സംഗ്രഹം' : 'Card source summary'}>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'സ്രോതസ്സ് രേഖകൾ' : 'Source entries'}</span><span data-testid="section-b-source-count">{totalSourceEntries}</span></div>
       <div className="rounded-lg border border-amber-500/20 p-2"><span className="block text-amber-200">{ml ? 'വീണ്ടും പരിശോധിക്കണം' : 'Recheck'}</span>{runtime.pending}</div>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'ഖുർആൻ' : 'Quran'}</span><span data-testid="section-b-quran-count">{groupCount("evidence")}</span></div>
       <div className="rounded-lg border border-yellow-500/20 p-2"><span className="block text-yellow-200">{ml ? 'വിഷയങ്ങൾ' : 'Topics'}</span><span data-testid="section-b-topic-count">{groupCount("topics") + groupCount("prophetic") + groupCount("shams")}</span></div>
     </div>}
-    {card && <p className="text-sm text-white/60 leading-loose">{ml ? 'താഴെ സ്രോതസ്സുമായി പരിശോധിച്ചതായി രേഖപ്പെടുത്തിയ വിവരങ്ങൾ വായിക്കാം. ഗ്രന്ഥത്തിലെ പ്രയോഗങ്ങൾ അതത് ഗ്രന്ഥത്തിന്റെ വിവരണങ്ങളാണ്; ഖുർആൻ / ഹദീസ് നിർദേശങ്ങളുമായി കലർത്തിയിട്ടില്ല. എല്ലാ ഗ്രന്ഥങ്ങളുടെയും ഗവേഷണം പൂർത്തിയായിട്ടില്ല.' : 'The material below is recorded as checked against its source. Traditional practices are attributed to their books and kept distinct from Quran or hadith instructions. Research across all books remains incomplete.'}{runtime.pending > 0 && ` ${ml ? 'സ്രോതസ്സ് വീണ്ടും പരിശോധിക്കേണ്ട പഴയ പരാമർശങ്ങൾ' : 'Earlier entries awaiting source recheck'}: ${runtime.pending}.`}</p>}
+    {isOwner && card && <p className="text-sm text-white/60 leading-loose">{ml ? 'താഴെ സ്രോതസ്സുമായി പരിശോധിച്ചതായി രേഖപ്പെടുത്തിയ വിവരങ്ങൾ വായിക്കാം. ഗ്രന്ഥത്തിലെ പ്രയോഗങ്ങൾ അതത് ഗ്രന്ഥത്തിന്റെ വിവരണങ്ങളാണ്; ഖുർആൻ / ഹദീസ് നിർദേശങ്ങളുമായി കലർത്തിയിട്ടില്ല. എല്ലാ ഗ്രന്ഥങ്ങളുടെയും ഗവേഷണം പൂർത്തിയായിട്ടില്ല.' : 'The material below is recorded as checked against its source. Traditional practices are attributed to their books and kept distinct from Quran or hadith instructions. Research across all books remains incomplete.'}{runtime.pending > 0 && ` ${ml ? 'സ്രോതസ്സ് വീണ്ടും പരിശോധിക്കേണ്ട പഴയ പരാമർശങ്ങൾ' : 'Earlier entries awaiting source recheck'}: ${runtime.pending}.`}</p>}
     <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ഈ കാർഡിലെ വിഷയങ്ങൾ തിരയുക' : 'Search topics in this card'}</span><input aria-describedby="section-b-search-scope" type="search" value={query} onChange={event => setQuery(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-transparent px-4 py-3 text-white focus:border-yellow-300" /></label>
     <p id="section-b-search-scope" className="text-xs text-white/60">{ml ? 'ഈ തിരച്ചിൽ മുകളിലെ വിശദമായ വായനയിലെ സ്രോതസ്സ് രേഖകൾക്കാണ്. താഴെയുള്ള PDF ഭാഗങ്ങളും പഴയ രേഖകളും ഇതിൽ ഉൾപ്പെടില്ല.' : 'This search filters source entries in the detailed reading. The PDF passages and earlier records below are separate.'}</p>
     {(term || purpose !== 'all') && <div className="flex items-center justify-between gap-3"><p role="status" aria-live="polite" className="text-sm text-white/70">{ml ? 'കണ്ടെത്തിയ രേഖകൾ' : 'Matching entries'}: {visible.reduce((sum, group) => sum + group.items.length, 0)}</p><button type="button" onClick={() => { setQuery(''); setPurpose('all'); }} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-sm text-yellow-200">{ml ? 'തിരച്ചിലും ഫിൽറ്ററും മായ്ക്കുക' : 'Clear search and filter'}</button></div>}
     {availablePurposes.size > 0 && <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ആവശ്യാനുസരിച്ചുള്ള ഗ്രന്ഥപരാമർശങ്ങൾ' : 'Source accounts by purpose'}</span><select value={purpose} onChange={event => setPurpose(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-black px-4 py-3 text-white"><option value="all">{ml ? 'എല്ലാ വിഷയങ്ങളും' : 'All purposes'}</option>{Object.entries(shamsBrief.purpose_labels).filter(([key]) => availablePurposes.has(key)).map(([key, label]) => <option key={key} value={key}>{t(label)}</option>)}</select></label>}
-    {linkedShamsAccounts.length > 0 && <p className="text-xs text-amber-100/75 leading-relaxed">{t(shamsCardBridge.source_edition_note)} {t(shamsCardBridge.review_note)}</p>}
+    {isOwner && linkedShamsAccounts.length > 0 && <p className="text-xs text-amber-100/75 leading-relaxed">{t(shamsCardBridge.source_edition_note)} {t(shamsCardBridge.review_note)}</p>}
     {visible.every(group => !group.items.length) && <p role="status" className="text-white/65">{ml ? 'ഈ തിരച്ചിലിന് യോജിച്ച വിവരമില്ല.' : 'No matching material for this search.'}</p>}
-    {visible.map(group => group.items.length > 0 && <section key={group.key} className="space-y-3" data-section-b-group={group.key} data-section-b-count={group.items.length}>
-      <h3 className="text-lg text-yellow-200">{group.title}</h3>
-      {group.key === 'book' && <div className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><Arabic text={checkedChapter.source_name_form} />{['name_note', 'scope_note', 'edition_note'].map(key => t(checkedChapter[key]) && <p key={key} className="text-white/75 leading-loose">{t(checkedChapter[key])}</p>)}<p className="text-xs text-white/60">{checkedChapter.source_title} · {checkedChapter.printed_page}</p></div>}
+    {visible.map(group => group.items.length > 0 && <details key={group.key} open={isOwner || Boolean(term) || purpose !== 'all' || undefined} className="rounded-xl border border-yellow-500/20 p-3 space-y-3" data-section-b-group={group.key} data-section-b-count={group.items.length}>
+      <summary className="cursor-pointer text-yellow-200"><h3 className="inline text-lg">{group.title}</h3><span className="ml-2 text-xs text-white/60">{group.items.length}</span></summary>
+      {isOwner && group.key === 'book' && <div className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><Arabic text={checkedChapter.source_name_form} />{['name_note', 'scope_note', 'edition_note'].map(key => t(checkedChapter[key]) && <p key={key} className="text-white/75 leading-loose">{t(checkedChapter[key])}</p>)}<p className="text-xs text-white/60">{checkedChapter.source_title} · {checkedChapter.printed_page}</p></div>}
       {group.key === 'pending' && <p className="text-sm text-white/60 leading-relaxed">{ml ? 'ഇവ പഴയ ഡാറ്റയിൽ ഉണ്ടായിരുന്ന രേഖകളാണ്. ഉറവിടത്തിലെ പേജ്/പാഠം വീണ്ടും പരിശോധിക്കുന്നതുവരെ ഇവയെ ഖുർആൻ/ഹദീസ് തെളിവായി കാണിക്കില്ല.' : 'These records were already present in the legacy data. Until their source page/text is rechecked, they are not presented as Quran or hadith evidence.'}</p>}
       {['topics', 'prophetic', 'shams'].includes(group.key) ? Object.entries(shamsBrief.purpose_labels).map(([key, label]) => {
         const items = group.items.filter(entry => (entry.purpose || 'other') === key);
         return items.length > 0 && <section key={key} className="space-y-3" data-section-b-purpose={key} data-source-kind={group.key}><h4 className="text-yellow-200 font-semibold">{t(label)}</h4>{items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} topic />)}</section>;
       }) : group.items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} book={group.key === 'book' ? checkedChapter.source_title : null} page={group.key === 'book' ? checkedChapter.printed_page : null} />)}
-    </section>)}
+    </details>)}
   </section>;
 }
 

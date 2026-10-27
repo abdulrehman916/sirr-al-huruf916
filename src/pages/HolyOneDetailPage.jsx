@@ -225,7 +225,7 @@ export default function HolyOneDetailPage() {
             color: source === "A" ? "#4ade80" : "#60a5fa",
             fontSize: 12
           }}>
-            {source === "A" ? "Section A - Original" : "Section B - PDF"}
+            {source === "A" ? "Section A" : "Section B"}
           </Badge>
         </div>
 
@@ -448,7 +448,7 @@ export default function HolyOneDetailPage() {
             {isOwner && source === "B" && name.source_pdf_page && (
               <p>Page {name.source_pdf_page}</p>
             )}
-            {source === "B" && name.surah_name && (
+            {source === "B" && name.surah_name && name.surah_name !== "Tilimsani" && (
               <p>Surah: {name.surah_name}</p>
             )}
           </div>
@@ -469,8 +469,8 @@ export default function HolyOneDetailPage() {
         {source === "B" && (
           <div className="mt-6">
             <details className="rounded-xl border border-yellow-500/20 p-4">
-              <summary className="cursor-pointer text-yellow-200">{language === 'ml' ? 'പഴയ രേഖകളും സ്രോതസ്സ് പരിശോധനയുടെ നിലയും' : 'Earlier records and source review status'}</summary>
-              <p className="my-3 text-sm text-white/65 leading-relaxed">{language === 'ml' ? 'വിശദമായ വായന മുകളിലുണ്ട്. ഇവിടെ പഴയ രേഖകൾ അതേപടി സൂക്ഷിച്ചിരിക്കുന്നു; ചില രേഖകളുടെ പരിഭാഷയും സ്രോതസ്സ് പരിശോധനയും ബാക്കിയുണ്ട്. ഇത് മുഴുവൻ കാർഡും ശൂന്യമാണെന്നോ വിവരങ്ങൾ നഷ്ടമായെന്നോ അർഥമാക്കുന്നില്ല.' : 'The detailed reading is above. Earlier records are preserved here; some still need translation or source review. This does not mean the whole card is empty or its content is lost.'}</p>
+              <summary className="cursor-pointer text-yellow-200">{isOwner ? (language === 'ml' ? 'പഴയ രേഖകളും സ്രോതസ്സ് പരിശോധനയുടെ നിലയും' : 'Earlier records and source review status') : (language === 'ml' ? 'കൂടുതൽ വിവരങ്ങൾ' : 'More information')}</summary>
+              {isOwner && <p className="my-3 text-sm text-white/65 leading-relaxed">{language === 'ml' ? 'വിശദമായ വായന മുകളിലുണ്ട്. ഇവിടെ പഴയ രേഖകൾ അതേപടി സൂക്ഷിച്ചിരിക്കുന്നു; ചില രേഖകളുടെ പരിഭാഷയും സ്രോതസ്സ് പരിശോധനയും ബാക്കിയുണ്ട്. ഇത് മുഴുവൻ കാർഡും ശൂന്യമാണെന്നോ വിവരങ്ങൾ നഷ്ടമായെന്നോ അർഥമാക്കുന്നില്ല.' : 'The detailed reading is above. Earlier records are preserved here; some still need translation or source review. This does not mean the whole card is empty or its content is lost.'}</p>}
               <HolyOneScholarlySections card={name} pendingOnly />
             </details>
           </div>

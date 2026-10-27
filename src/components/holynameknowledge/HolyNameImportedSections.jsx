@@ -84,13 +84,13 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
   if (contentSections.length === 0 && !isOwner) return null;
 
   return (
-    <div className="pt-3 mt-1" style={{ borderTop: "1px solid " + P.faint }}>
-      <div className="flex items-center gap-2 mb-3">
+    <details open={isOwner || undefined} className="pt-3 mt-1" style={{ borderTop: "1px solid " + P.faint }}>
+      <summary className="flex cursor-pointer items-center gap-2 mb-3">
         <BookOpen className="w-3.5 h-3.5" style={{ color: P.text }} />
         <span className="font-inter text-[9px] uppercase tracking-widest font-bold" style={{ color: P.text }}>
-          {isOwner ? `PDF Knowledge · ${contentSections.length} paragraph${contentSections.length > 1 ? "s" : ""}` : `${contentSections.length} paragraph${contentSections.length > 1 ? "s" : ""}`}
+          {isOwner ? `PDF Knowledge · ${contentSections.length} paragraph${contentSections.length > 1 ? "s" : ""}` : (lang === "ml" ? `കൂടുതൽ അറബി പാഠങ്ങളും പരിഭാഷയും · ${contentSections.length}` : `More Arabic passages and translations · ${contentSections.length}`)}
         </span>
-      </div>
+      </summary>
 
       {lang === "en" && contentSections.some(s => !s.english_translation) && (
         <p className="font-inter text-xs text-white/60 mb-3">English translation is not available for every paragraph yet. The original Arabic remains visible.</p>
@@ -215,6 +215,6 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
           </div>
         </details>
       )}
-    </div>
+    </details>
   );
 }

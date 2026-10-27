@@ -12,13 +12,51 @@ try {
   const output = path.join(work, 'reader.cjs');
   await build({ stdin: { contents: `import React from 'react'; import {renderToStaticMarkup} from 'react-dom/server';
     import Reader from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
+    import {AuthContext} from './src/lib/authContextObject.js';
+    import Scholarly from './src/components/holynameknowledge/HolyOneScholarlySections.jsx';
+    export const renderLegacy=(card,language,role='customer')=>renderToStaticMarkup(React.createElement(AuthContext.Provider,{value:{role}},React.createElement(Context.Provider,{value:{language}},React.createElement(Scholarly,{card,pendingOnly:true}))));
+    export {withLegacyTranslations} from './src/lib/holyNames/legacyTranslations.js';
     export {sectionBReading, unlinkedSectionBVisuals} from './src/lib/holyNames/sectionBReading.js';
     export {withSectionBMeaning} from './src/lib/holyNames/sectionBMeanings.js';
     export {sectionBEntrySearchText} from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
     import {HolyNamesLanguageContext as Context} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx';
-    export const render=(chapter,nameId,language,card)=>renderToStaticMarkup(React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId,card})));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
-  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning, sectionBEntrySearchText } = createRequire(import.meta.url)(output);
+    export const render=(chapter,nameId,language,card,role='owner')=>renderToStaticMarkup(React.createElement(AuthContext.Provider,{value:{role}},React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId,card}))));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
+  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning, sectionBEntrySearchText, withLegacyTranslations, renderLegacy } = createRequire(import.meta.url)(output);
+  const legacyTranslations = JSON.parse(fs.readFileSync('src/data/holyNamesLegacyTranslations.json', 'utf8'));
+  assert.equal(legacyTranslations.length, 107);
+  assert.equal(new Set(legacyTranslations.slice(0,98).map(row => row.card_id)).size, 40);
+  for (const row of legacyTranslations.slice(0,98)) {
+    const original = Object.freeze({ text: row.source_text, source_reference: row.source_reference, review_status: 'pending_source_recheck', repetitions: 17, arabic_text: '' });
+    const enriched = withLegacyTranslations(original, row.card_id, row.field);
+    for (const key of Object.keys(original)) assert.equal(enriched[key], original[key], `Changed stored field ${key}`);
+    assert.equal(enriched.malayalam, row.malayalam);
+    assert.equal(enriched.editorial_arabic_translation, row.arabic_translation);
+    assert.match(row.malayalam, /[\u0d00-\u0d7f]/);
+    assert.match(row.arabic_translation, /[\u0600-\u06ff]/);
+    const numbers = value => (value.match(/\d+(?:,\d{3})*(?:x\d+)?/g) || []).sort();
+    assert.deepEqual(numbers(row.malayalam), numbers(row.source_text), `Malayalam changed numbers: ${row.card_id}`);
+    assert.deepEqual(numbers(row.arabic_translation), numbers(row.source_text), `Arabic changed numbers: ${row.card_id}`);
+    assert.equal(withLegacyTranslations(original, 'different-card', row.field), original);
+    assert.equal(withLegacyTranslations({...original, source_reference:'other'}, row.card_id, row.field).malayalam, undefined);
+    assert.equal(withLegacyTranslations({...original, malayalam:'Existing translation'}, row.card_id, row.field).malayalam, 'Existing translation');
+    assert.equal(withLegacyTranslations({...original, arabic_text:'النص الأصلي'}, row.card_id, row.field).editorial_arabic_translation, null);
+  }
+  const customer = render(chapters['PDF-HN-001'], 'PDF-HN-001', 'ml', {pdf_name_id:'PDF-HN-001'}, 'customer');
+  assert.ok(!customer.includes('Card source summary') && !customer.includes('കാർഡ് ഉറവിട സംഗ്രഹം'));
+  assert.ok(customer.includes('data-source-details') && customer.includes('ⓘ'));
+  assert.ok(!customer.includes(chapters['PDF-HN-001'].scope_note.ml));
+  assert.ok(customer.includes(chapters['PDF-HN-001'].practices[0].arabic_original));
   const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
+  for (const row of legacyTranslations.slice(0,98)) {
+    const card = {pdf_name_id:row.card_id, [row.field]:[{text:row.source_text,source_reference:row.source_reference}]};
+    const html = renderLegacy(card, 'ml');
+    assert.ok(html.includes(escape(row.malayalam)), `Missing Malayalam in customer view: ${row.card_id}`);
+    assert.ok(html.includes(escape(row.arabic_translation)), `Missing Arabic translation: ${row.card_id}`);
+    assert.ok(html.includes('അറബി പരിഭാഷ — മൂല ഉദ്ധരണിയല്ല'));
+    assert.ok(!html.includes('മലയാള പരിഭാഷ ഇതുവരെ ചേർത്തിട്ടില്ല.'));
+    const english = renderLegacy(card, 'en');
+    assert.ok(english.includes(escape(row.source_text)), `Lost original English: ${row.card_id}`);
+  }
   for (const [id, chapter] of Object.entries(chapters)) {
     for (const language of ['ml', 'en']) {
       const html = render(chapter, id, language);
