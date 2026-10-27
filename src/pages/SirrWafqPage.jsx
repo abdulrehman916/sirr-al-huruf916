@@ -13,7 +13,7 @@ import { getFeatures } from "@/lib/featureRegistry";
 import { checkFeatureAccess } from "@/lib/featurePermission";
 import {
   abjadOf, asOf, SIZES, SIZE_NAME, SQUARE_CLASS, buildWafq, hollowWafq3, workingSizes,
-  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, dominantElement, DAY_ANGEL, PURPOSES,
+  elementOf, ELEMENTS, LETTER_TABLE, HOUSE_LETTERS, HOUSE_RECITE, HOUSE_RECITE_2, HOUSE_RECITE_2_OATH, WRITING_RULE_28, dominantElement, PURPOSES,
   toArabicDigits, planWafq, NUMBER_RULE, SEVEN_RANKS, SEVEN_RANKS_NOTE, needAngelFor,
   RECITE_COUNT, DUA_BEFORE, DUA_BEFORE_WHEN, DUA_TANZIL, AROUND_WAFQ, INK, CAUTIONS,
 } from "@/lib/sirrWafqEngine";
@@ -21,13 +21,13 @@ import * as K from "@/lib/kashfSaatData";
 import { getUserLocation } from "@/lib/astroClockSunriseSunset";
 import { getPlanetaryDay, civilOf, addDays, sunOf } from "@/lib/kashfSaatEngine";
 import { moonSpan, nextPlanetHourIn, bestTimesFor, fmtSpan, fmtWhen } from "@/lib/kashfNextTimes";
-import { METHODS, methodsFor, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, lettersOf, TUKHI_WARNING } from "@/lib/wafqMethods";
+import { METHODS, methodsIn, ANGLE_FOR_STEP, ANGLE_SEX, TUKHI_WARNING } from "@/lib/wafqMethods";
 import WafqSheet from "@/components/wafq/WafqSheet";
 import WafqCapraz from "@/components/wafq/WafqCapraz";
 import PurposePanel from "@/components/wafq/PurposePanel";
 import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
-import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, fillNeed, NEED_PRESETS } from "@/lib/wafqDayQasam";
+import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, tawkeelRing, COMMON_AZIMA, personAr, fillNeed, NEED_PRESETS } from "@/lib/wafqDayQasam";
 import HadimPanel from "@/components/wafq/HadimPanel";
 import { SUBSTANCE, DAY_TABLE, METAL_SUBSTITUTES, PLACE_BY_ELEMENT, commonsImg, commonsPage } from "@/lib/wafqPrep";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";

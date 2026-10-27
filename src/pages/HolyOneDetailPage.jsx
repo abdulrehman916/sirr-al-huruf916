@@ -160,7 +160,8 @@ export default function HolyOneDetailPage() {
   if (loading) {
     return (
       <PageLayout>
-        <div className="min-h-[60vh] flex items-center justify-center">
+        <div role="status" aria-live="polite" className="min-h-[60vh] flex flex-col gap-4 items-center justify-center">
+          <p className="text-white/70">{language === "ml" ? "കാർഡിന്റെ വിവരങ്ങൾ ലോഡ് ചെയ്യുന്നു…" : "Loading card information…"}</p>
           <div className="w-10 h-10 border-4 border-t-yellow-400 rounded-full animate-spin" />
         </div>
       </PageLayout>
@@ -457,6 +458,7 @@ export default function HolyOneDetailPage() {
         {/* Imported PDF Knowledge — enriches this Holy Name's existing card */}
         {<div className="mt-6">
           <HolyNameImportedSections
+            key={`${source}:${nameId}`}
             sourceSection={source === "B" ? "section_b" : "section_a"}
             sourceNameKey={source === "B" ? (name.pdf_name_id || nameId) : nameId}
           />
@@ -466,7 +468,11 @@ export default function HolyOneDetailPage() {
             Section-B-only; never shown for Section A. */}
         {source === "B" && (
           <div className="mt-6">
-            <HolyOneScholarlySections card={name} pendingOnly />
+            <details className="rounded-xl border border-yellow-500/20 p-4">
+              <summary className="cursor-pointer text-yellow-200">{language === 'ml' ? 'പഴയ രേഖകളും സ്രോതസ്സ് പരിശോധനയുടെ നിലയും' : 'Earlier records and source review status'}</summary>
+              <p className="my-3 text-sm text-white/65 leading-relaxed">{language === 'ml' ? 'വിശദമായ വായന മുകളിലുണ്ട്. ഇവിടെ പഴയ രേഖകൾ അതേപടി സൂക്ഷിച്ചിരിക്കുന്നു; ചില രേഖകളുടെ പരിഭാഷയും സ്രോതസ്സ് പരിശോധനയും ബാക്കിയുണ്ട്. ഇത് മുഴുവൻ കാർഡും ശൂന്യമാണെന്നോ വിവരങ്ങൾ നഷ്ടമായെന്നോ അർഥമാക്കുന്നില്ല.' : 'The detailed reading is above. Earlier records are preserved here; some still need translation or source review. This does not mean the whole card is empty or its content is lost.'}</p>
+              <HolyOneScholarlySections card={name} pendingOnly />
+            </details>
           </div>
         )}
 

@@ -15,7 +15,7 @@ import { eclipsesIn, ECLIPSE_SOURCE } from "@/lib/eclipses";
 import { useBackLayer } from "@/lib/useBackLayer";
 import { moonSpan, fmtWhen } from "@/lib/kashfNextTimes";
 import { SOURCES, PLANET_OTHER, MANSION_OTHER, WEEKDAY_OTHER, TAHA_NAHS_BURUJ, BURJ_OTHER_NOTE, tahaNahsFor } from "@/lib/kashfOtherSources";
-import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN, MANSION_WORK, MANSION_WORK_SOURCE } from "@/lib/kashfSaatData";
+import { PLANETS, NATURE_LABEL, SIGNS_ML, SIGNS_EN, SIGNS_TR_ML, SIGNS_TR_EN, SIGNS_AR, WEIGHTS, BOOK, MONTH_DAY_NOTE_EN, MANSIONS_EN, MANSION_WORK } from "@/lib/kashfSaatData";
 
 const GOLD = "#F5D060";
 const VERDICT = {
