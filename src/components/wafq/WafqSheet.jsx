@@ -88,6 +88,17 @@ export default function WafqSheet({
       }
     });
 
+    // Every number sits inside its own house, in Arabic figures, however
+    // long it is: the figure is made smaller until it fits the house.
+    svg.querySelectorAll("[data-cellw]").forEach((el) => {
+      const room = Number(el.dataset.cellw);
+      let fs = parseFloat(el.style.fontSize) || 30;
+      for (let i = 0; i < 80 && el.getComputedTextLength() > room && fs > 5; i++) {
+        fs -= 1;
+        el.style.fontSize = `${fs}px`;
+      }
+    });
+
     // The ring is sized rather than spaced. Stretching a textPath with
     // textLength opens gaps between the glyphs, which breaks the joins
     // and leaves the letters standing apart; shrinking the type keeps
@@ -254,8 +265,9 @@ export default function WafqSheet({
         <text key={`${r}-${c}`} className="wf-cell"
               x={a + c * cell + cell / 2}
               y={a + r * cell + cell / 2 + cell * 0.13}
+              data-cellw={cell * 0.86}
               style={{ fontSize: `${Math.min(46, cell * 0.42)}px` }}>
-          {grid[r][c]}
+          {grid[r][c] == null ? "" : String(grid[r][c]).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])}
         </text>
       );
 

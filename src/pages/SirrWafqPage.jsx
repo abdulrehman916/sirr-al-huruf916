@@ -29,6 +29,7 @@ import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
 import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, fillNeed, NEED_PRESETS } from "@/lib/wafqDayQasam";
 import HadimPanel from "@/components/wafq/HadimPanel";
+import { SUBSTANCE, DAY_TABLE, METAL_SUBSTITUTES, PLACE_BY_ELEMENT } from "@/lib/wafqPrep";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL, splitFour, LOVE_SURROUND } from "@/lib/wafqSurround";
@@ -332,26 +333,146 @@ function ReadingBox({ sqWd, need, love, sought, N, n, letters, isEn, txt }) {
   );
 }
 
+const nameOf = (ar, isEn) => {
+  const x = SUBSTANCE[ar];
+  return (
+    <span className="inline-block mr-2">
+      <span className="font-amiri text-base" style={{ color: GOLD }}>{ar}</span>
+      {x && <span className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}> — {isEn ? x.en : x.ml}</span>}
+    </span>
+  );
+};
+
 /**
- * Step 6 of the lean Section A: everything that is said, in order —
+ * Step 6 of the lean Section A: before writing — what to keep to, what
+ * it is written on, what is burnt, and what is said first.
+ */
+function PrepStep({ wd, n, element, isEn, txt }) {
+  const d = DAY_TABLE[wd];
+  const H = ({ children }) => <p className="font-inter text-[12px] font-bold pt-1" style={{ color: GOLD }}>{children}</p>;
+  const face = { fire: ["കിഴക്ക്", "East"], air: ["പടിഞ്ഞാറ്", "West"], water: ["വടക്ക്", "North"], earth: ["തെക്ക്", "South"] }[element] || ["പടിഞ്ഞാറ് അല്ലെങ്കിൽ ഖിബ്‌ല", "West or the qibla"];
+  const L = (items) => (
+    <ul className="list-disc pl-5 space-y-1 font-inter text-[12px]" style={{ color: "rgba(245,234,212,0.88)" }}>
+      {items.map((x, i) => <li key={i}>{x}</li>)}
+    </ul>
+  );
+  return (
+    <Box step="6" title={txt("കളം എഴുതുന്നതിന് മുമ്പ് ശ്രദ്ധിക്കേണ്ടത്", "Before writing the square")}>
+      <H>{txt("1. ശ്രദ്ധിക്കേണ്ട നിയമങ്ങൾ", "1. The rules to keep")}</H>
+      {L(isEn ? [
+        "Riyada: 3 or 7 days or more before the work, by how hard the need is — with the protective du'as after every prayer.",
+        "Before starting: two rak'at, istighfar, salawat; istikhara if needed.",
+        "A dark, small place; eat little; the heart present, the mind empty of other things, the purpose held in view.",
+        `Face ${face[1]} while writing (by the element of this square).`,
+        `Clothing in the day's colour: ${d.colour} — ${d.colour_ml}.`,
+        "Equal sides, straight lines, equal houses; clear, beautiful letters and digits; say what you write.",
+        "Taqwa, halal food, sincerity; seek only what is permitted; patience.",
+      ] : [
+        "റിയാദ: പണി തുടങ്ങുന്നതിന് മുമ്പ് 3 അല്ലെങ്കിൽ 7 ദിവസം, ആവശ്യത്തിന്റെ കാഠിന്യം അനുസരിച്ച് അതിൽ കൂടുതലും — ഓരോ നിസ്കാരത്തിനു ശേഷവും കാവലിന്റെ ദുആകളോടെ.",
+        "തുടങ്ങുന്നതിന് മുമ്പ് രണ്ട് റക്അത്ത് നിസ്കാരം, ഇസ്തിഗ്ഫാർ, സ്വലാത്ത്; ആവശ്യമെങ്കിൽ ഇസ്തിഖാറ.",
+        "ഇരുണ്ട, ചെറിയ മുറി; ഭക്ഷണം കുറയ്ക്കുക; ഹൃദയം ഹാജരായി, മനസ്സ് മറ്റു കാര്യങ്ങളിൽ നിന്ന് ഒഴിഞ്ഞ്, ഉദ്ദേശ്യം മനസ്സിൽ കണ്ടുകൊണ്ട്.",
+        `എഴുതുമ്പോൾ ${face[0]} ദിശയിലേക്ക് തിരിഞ്ഞിരിക്കുക (ഈ കളത്തിന്റെ മൂലകം അനുസരിച്ച്).`,
+        `വസ്ത്രത്തിന്റെ നിറം — ആ ദിവസത്തേത്: ${d.colour_ml} (${d.colour}).`,
+        "കളത്തിന്റെ വശങ്ങൾ തുല്യം, വരകൾ നേരെ, വീടുകൾ ഒരേ വലിപ്പം; അക്ഷരവും അക്കവും ഭംഗിയായി, വ്യക്തമായി; എഴുതുന്നത് നാവുകൊണ്ട് ഉച്ചരിക്കുക.",
+        "തഖ്‌വ, ഹലാലായ ഭക്ഷണം, ഇഖ്‌ലാസ്; അനുവദനീയമായത് മാത്രം തേടുക; ക്ഷമ.",
+      ])}
+      <div className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.22)" }}>
+        <p className="font-amiri text-sm leading-relaxed" dir="rtl" style={{ color: INK_C }}>{WRITING_RULE_28.ar}</p>
+        <ul className="list-disc pl-4 space-y-0.5 font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}>
+          {(isEn ? WRITING_RULE_28.en : WRITING_RULE_28.ml).map((x, i) => <li key={i}>{x}</li>)}
+        </ul>
+      </div>
+
+      <H>{txt("2. എന്തിലാണ് എഴുതേണ്ടത്", "2. What it is written on")}</H>
+      <Note color={INK_C}>{txt(
+        `ഈ കളത്തിന്റെ ഗ്രഹം ${d.planet} — അതിന്റെ ലോഹം: `, `This square's planet is ${d.planet} — its metal: `)}<Ar>{d.metal}</Ar> — <b>{d.metal_ml}</b>.</Note>
+      {L(isEn ? [
+        `On metal the weight is the side's number in grams: ${n} g for this ${n}×${n}.`,
+        "Paper stands in for the metal when the work is not meant to last.",
+        "If the metal cannot be had, the book allows a substitute in keeping with the planet's nature, colour, scent or matter:",
+      ] : [
+        `ലോഹത്തിൽ എഴുതുമ്പോൾ അതിന്റെ ഭാരം കളത്തിന്റെ വശത്തിന്റെ എണ്ണം ഗ്രാം: ഈ ${n}×${n}-ന് ${n} ഗ്രാം.`,
+        "പണി സ്ഥിരമായി നിൽക്കേണ്ടതല്ലെങ്കിൽ ലോഹത്തിന് പകരം കടലാസ് മതി.",
+        "ലോഹം കിട്ടിയില്ലെങ്കിൽ ഗ്രഹത്തിന്റെ സ്വഭാവം, നിറം, മണം, വസ്തു എന്നിവയോട് ചേരുന്ന പകരം വസ്തു ആകാമെന്ന് കിതാബ്:",
+      ])}
+      <div className="flex flex-wrap gap-1.5">
+        {METAL_SUBSTITUTES[wd].ar.map((a, i) => (
+          <span key={i} className="px-2 py-1 rounded-lg font-inter text-[11px]" style={{ background: "rgba(212,175,55,0.07)", color: INK_C }}>
+            <span className="font-amiri text-sm">{a}</span> — {isEn ? a : METAL_SUBSTITUTES[wd].ml[i]}
+          </span>
+        ))}
+      </div>
+
+      <H>{txt(`3. പുകക്കേണ്ടത് — ${WD_ML[wd]} ദിവസത്തെ ബഖൂർ`, `3. The incense — ${WD_EN[wd]}`)}</H>
+      <Note color="rgba(255,255,255,0.7)">{txt(
+        "കിതാബ്: പണിയുടെ ബഖൂർ ആ സാഅത്തിന്റേതാണ്. ഈ കളം അതിന്റെ ഗ്രഹത്തിന്റെ ദിവസം, ആ ഗ്രഹത്തിന്റെ സാഅത്തിൽ എഴുതുന്നതിനാൽ രണ്ടും ഒരേ ഗ്രഹം. തുടങ്ങുമ്പോൾ മുതൽ ഖസമും അസീമയും ചൊല്ലുന്നതുവരെ പുകച്ചുകൊണ്ടിരിക്കുക.",
+        "The book: the work's incense is its hour's. This square is written on its planet's day in that planet's hour, so both are one planet. Keep it burning from the start until the qasam and azima are done.")}</Note>
+      <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(0,0,0,0.2)" }}>
+        <Note color={GOLD}><b>{txt("ദിവസങ്ങളുടെ പട്ടികയിൽ", "In the table of the days")}</b></Note>
+        <div>{d.incense.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+        <Note color="rgba(255,255,255,0.55)"><b>{txt("ദിവസങ്ങളുടെ ബഖൂർ പട്ടികയിൽ", "In the table of the days' incense")}</b></Note>
+        <div>{d.incense2.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+        <Note color="rgba(255,255,255,0.55)"><b>{txt("ചില ഉലമാക്കൾ പറഞ്ഞത്", "As some scholars give it")}</b></Note>
+        <div>{d.incense3.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+      </div>
+      {L(isEn ? [
+        "Male frankincense (اللبان الذكر) stands in for every incense, for any work.",
+        "Works of good take sweet scents — frankincense, oud, ambergris, musk, saffron and the like; never a foul one.",
+      ] : [
+        "കിതാബ്: ആൺ കുന്തിരിക്കം (اللبان الذكر) എല്ലാ ബഖൂറിനും പകരമാകും — ഏത് പണിക്കും.",
+        "നല്ല കാര്യങ്ങൾക്ക് നല്ല മണമുള്ളവ മാത്രം — കുന്തിരിക്കം, അകിൽ, അംബർ, കസ്തൂരി, കുങ്കുമപ്പൂവ് പോലുള്ളവ; ദുർഗന്ധമുള്ളവ ഒരിക്കലും അരുത്.",
+      ])}
+
+      <H>{txt("4. തുടങ്ങുന്നതിന് മുമ്പ് ഓതേണ്ടത്", "4. What is said before beginning")}</H>
+      {DUA_BEFORE.map((x, i) => (
+        <div key={i} className="rounded-xl p-2.5" style={{ background: "rgba(0,0,0,0.2)" }}>
+          <Note color={GOLD}><b>{x.count > 1 ? `${x.count}× ` : ""}{isEn ? x.en : x.ml}</b></Note>
+          <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{x.ar_v || x.ar}</p>
+        </div>
+      ))}
+      <Note color="rgba(255,255,255,0.45)"><Ar size="text-sm">{DUA_BEFORE_WHEN.ar}</Ar> — {isEn ? DUA_BEFORE_WHEN.en : DUA_BEFORE_WHEN.ml}</Note>
+    </Box>
+  );
+}
+
+/** Step 8: where the finished square goes, and carrying it. */
+function PlaceStep({ element, isEn, txt }) {
+  const pl = PLACE_BY_ELEMENT[element];
+  return (
+    <Box step="8" title={txt("എഴുതിയ ശേഷം — എവിടെ വെക്കണം, കൊണ്ടുനടക്കൽ", "After writing — where it goes, and carrying it")}>
+      {pl && (
+        <div className="rounded-xl p-2.5 space-y-1" style={{ background: "rgba(74,222,128,0.06)", border: "1px solid rgba(74,222,128,0.35)" }}>
+          <Note color="#4ADE80"><b>{txt(`ഈ കളത്തിന്റെ മൂലകം: ${ELEMENTS[element].ml}`, `This square's element: ${ELEMENTS[element].en}`)}</b> — {isEn ? pl.en : pl.ml}</Note>
+          <p className="font-amiri text-sm" dir="rtl" style={{ color: INK_C }}>{pl.ar}</p>
+        </div>
+      )}
+      <ul className="list-disc pl-5 space-y-1 font-inter text-[12px]" style={{ color: "rgba(245,234,212,0.88)" }}>
+        {(isEn ? [
+          "Fire: near fire. Earth: buried in the ground away from where feet tread. Air: where the wind blows on it, or hung on oneself. Water: near water.",
+          "Put the work by its hour's nature, and make a second copy on paper for the seeker to carry. Carrying is for works of good only.",
+          "Before it is carried: perfume it with the day's incense.",
+          "Keep it from sunlight and moonlight; do not let it be handled carelessly.",
+        ] : [
+          "മൂലകം അനുസരിച്ച്: അഗ്നി — തീയിനടുത്ത്. മണ്ണ് — ആളുകൾ ചവിട്ടാത്ത ഇടത്ത് മണ്ണിൽ കുഴിച്ചിടുക. വായു — കാറ്റ് വീശുന്ന ഇടത്ത്, അല്ലെങ്കിൽ ദേഹത്ത് ധരിക്കുക. ജലം — വെള്ളത്തിനടുത്ത്.",
+          "പ്രധാന കളം അതിന്റെ സ്വഭാവം അനുസരിച്ച് വെക്കുക; ആവശ്യക്കാരന് കൊണ്ടുനടക്കാൻ കടലാസിൽ ഒരു പകർപ്പ് കൂടി എഴുതുക. കൊണ്ടുനടക്കുന്നത് നല്ല കാര്യങ്ങൾക്ക് മാത്രം.",
+          "കൊണ്ടുനടക്കുന്നതിന് മുമ്പ് ആ ദിവസത്തെ ബഖൂർ പുകച്ച് സുഗന്ധമാക്കുക.",
+          "സൂര്യന്റെയും ചന്ദ്രന്റെയും വെളിച്ചം അതിൽ തട്ടരുത്; അശ്രദ്ധമായി കൈകാര്യം ചെയ്യരുത്.",
+        ]).map((x, i) => <li key={i}>{x}</li>)}
+      </ul>
+    </Box>
+  );
+}
+
+/**
+ * Step 7 of the lean Section A: everything that is said, in order —
  * before the work, while each house is written, and after.
  */
 function ReadingStep({ result, RECITE, reciteWay, setReciteWay, sqWd, need, love, sought, letters, isEn, txt }) {
   const H = ({ children }) => <p className="font-inter text-[12px] font-bold pt-1" style={{ color: GOLD }}>{children}</p>;
   const AR = ({ children }) => <p className="font-amiri text-lg leading-loose" dir="rtl" style={{ color: INK_C }}>{children}</p>;
   return (
-    <Box step="6" title={txt("വായിക്കേണ്ടത് — തുടങ്ങുന്നതിന് മുമ്പ്, എഴുതുമ്പോൾ, എഴുതിയ ശേഷം", "What is said — before, while writing, after")}>
-      <H>{txt("1. തുടങ്ങുന്നതിന് മുമ്പ്", "1. Before beginning")}</H>
-      <Note color="rgba(255,255,255,0.7)">{txt("രണ്ട് റക്അത്ത് നിസ്കാരം; ആവശ്യമെങ്കിൽ ഇസ്തിഖാറ. പിന്നെ:", "Two rak'at; istikhara if needed. Then:")}</Note>
-      {DUA_BEFORE.map((d, i) => (
-        <div key={i} className="rounded-xl p-2.5" style={{ background: "rgba(0,0,0,0.2)" }}>
-          <Note color={GOLD}><b>{d.count > 1 ? `${d.count}× ` : ""}{isEn ? d.en : d.ml}</b></Note>
-          <AR>{d.ar_v || d.ar}</AR>
-        </div>
-      ))}
-      <Note color="rgba(255,255,255,0.45)"><Ar size="text-sm">{DUA_BEFORE_WHEN.ar}</Ar> — {isEn ? DUA_BEFORE_WHEN.en : DUA_BEFORE_WHEN.ml}</Note>
-
-      <H>{txt("2. ഓരോ വീടും എഴുതുമ്പോൾ", "2. While each house is written")}</H>
+    <Box step="7" title={txt("എഴുതുമ്പോഴും എഴുതിയ ശേഷവും ചൊല്ലേണ്ടത്", "What is said while writing and after")}>
+      <H>{txt("1. ഓരോ വീടും എഴുതുമ്പോൾ", "1. While each house is written")}</H>
       {result.n === 3 ? (
         <>
           <div className="flex flex-wrap items-center gap-1.5 font-inter text-[10px]">
@@ -380,7 +501,7 @@ function ReadingStep({ result, RECITE, reciteWay, setReciteWay, sqWd, need, love
       <Note color="rgba(255,255,255,0.6)">{txt("നടുവിലെ വീട്ടിൽ ആവശ്യം ഇറക്കുമ്പോൾ (തൻസീൽ) ചൊല്ലേണ്ട ദുആ:", "The du'a as the need is brought down into the middle house:")}</Note>
       <div className="rounded-xl p-2.5" style={{ background: "rgba(0,0,0,0.2)" }}><AR>{DUA_TANZIL.ar_v || DUA_TANZIL.ar}</AR></div>
 
-      <H>{txt("3. എഴുതിയ ശേഷം — ഖസവും അസീമയും", "3. After writing — the qasam and the azima")}</H>
+      <H>{txt("2. എഴുതിയ ശേഷം — ഖസവും അസീമയും", "2. After writing — the qasam and the azima")}</H>
       <ReadingBox sqWd={sqWd} need={need} love={love} sought={sought} N={result.N} n={result.n} letters={letters} isEn={isEn} txt={txt} />
     </Box>
   );
@@ -756,10 +877,13 @@ function Grid({ grid, arabic, active, done, cellNote }) {
   const n = grid.length;
   const fmt = (v) => (v == null ? "" : arabic ? toArabicDigits(v) : String(v));
   const longest = Math.max(1, ...grid.flat().filter((v) => v != null).map((v) => String(v).length));
-  const fs = n <= 4 ? (longest > 6 ? 13 : 18) : n <= 6 ? (longest > 5 ? 11 : 14) : longest > 4 ? 9 : 11;
+  // Every number stays inside its own house at every size: the figure is
+  // sized from the narrowest phone width the page is drawn at.
+  const avail = 320 / n;
+  const fs = Math.max(7, Math.min(n <= 4 ? 18 : 14, Math.floor((avail - 6) / (longest * 0.62))));
   return (
     <div className="overflow-x-auto">
-      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs }}>
+      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs, tableLayout: "fixed", width: n >= 6 || longest > 4 ? "100%" : undefined }}>
         <tbody>
           {grid.map((row, i) => (
             <tr key={i}>
@@ -769,7 +893,7 @@ function Grid({ grid, arabic, active, done, cellNote }) {
                 return (
                   <td key={j} className={`text-center font-bold ${arabic ? "font-amiri" : "font-inter"}`}
                     style={{
-                      border: "1px solid rgba(212,175,55,0.6)", padding: n <= 4 ? "10px 12px" : "6px 6px", minWidth: n <= 4 ? 54 : 34,
+                      border: "1px solid rgba(212,175,55,0.6)", padding: n <= 4 ? (longest > 5 ? "8px 2px" : "10px 12px") : "5px 1px", minWidth: n <= 4 && longest <= 5 ? 54 : undefined, whiteSpace: "nowrap", overflow: "hidden",
                       color: isActive ? "#0b0a12" : INK_C, background: isActive ? GOLD : v == null ? "rgba(255,255,255,0.02)" : "rgba(212,175,55,0.05)",
                       opacity: isDone || isActive ? 1 : 0.18, transition: "all .25s",
                     }}>
@@ -853,7 +977,11 @@ function drawWafq(cv, o) {
   }
   g.strokeStyle = "#111"; g.lineWidth = 2.5;
   const longest = Math.max(...grid.flat().filter((v) => v != null).map((v) => String(v).length));
-  g.font = amiri(cell / (longest > 4 ? 3.4 : longest > 2 ? 2.6 : 2));
+  // The figures are sized so the longest fits its house with room to spare.
+  let fpx = cell / 2;
+  g.font = amiri(fpx);
+  const widest = Math.max(...grid.flat().filter((v) => v != null).map((v) => g.measureText(toArabicDigits(v)).width));
+  if (widest > cell * 0.84) { fpx = fpx * (cell * 0.84) / widest; g.font = amiri(fpx); }
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       const x = x0 + j * cell, yy = y0 + i * cell;
@@ -1329,8 +1457,8 @@ export default function SirrWafqPage() {
           </Fold>
           {/* When the book's times for the chosen work fall — today, or the
               next day they come — read from the Astro Clock's own engine. */}
-          <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
-                           mansions={purpose?.mansions || null} ml={!isEn} />
+          {!lean && <WafqTimingPanel key={`${purposeId}-${actId}`} initialWork={wantWork}
+                           mansions={purpose?.mansions || null} ml={!isEn} />}
           {chosen && <Note color={GOLD}>✓ {txt("തിരഞ്ഞെടുത്ത സമയം", "Chosen time")}: {fmtSpan(chosen, loc, isEn)} · {isEn ? WD_EN[chosen.wd] : WD_ML[chosen.wd]}</Note>}
         </Box>
   );
@@ -1847,11 +1975,17 @@ export default function SirrWafqPage() {
             {lean && aView === "main" && timeBox}
 
             {lean && aView === "main" && (
+              <PrepStep wd={sqWd} n={result.n} element={result.element} isEn={isEn} txt={txt} />
+            )}
+
+            {lean && aView === "main" && (
               <ReadingStep result={result} RECITE={RECITE} reciteWay={reciteWay} setReciteWay={setReciteWay}
                            sqWd={sqWd} need={tkNeed} love={tk.love} sought={tkp.sought}
                            letters={(lettersText.match(/[\u0621-\u064A]/g) || []).length}
                            isEn={isEn} txt={txt} />
             )}
+
+            {lean && aView === "main" && <PlaceStep element={result.element} isEn={isEn} txt={txt} />}
 
 
             {/* 6 middle house */}
