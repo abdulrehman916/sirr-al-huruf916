@@ -43,6 +43,7 @@ export default function WafqSheet({
   verse = CORNER_VERSE,
   showSeals = true,
   ringAround = "",          // the reader's own text, carried round the outside
+  centerText = "",          // what is written in an empty middle house
   title = "",
   className = "",
 }) {
@@ -111,6 +112,19 @@ export default function WafqSheet({
       cellFs = Math.min(cellFs, fs);
     });
     cells.forEach((el) => { el.style.fontSize = `${cellFs}px`; });
+
+    const mids = [...svg.querySelectorAll("[data-midw]")];
+    let midFs = 40;
+    mids.forEach((el) => {
+      const room = Number(el.dataset.midw);
+      let fs = parseFloat(el.style.fontSize) || 20;
+      for (let i = 0; i < 60 && el.getComputedTextLength() > room && fs > 4; i++) {
+        fs -= 0.5;
+        el.style.fontSize = `${fs}px`;
+      }
+      midFs = Math.min(midFs, fs);
+    });
+    mids.forEach((el) => { el.style.fontSize = `${midFs}px`; });
 
     // The ring is sized rather than spaced. Stretching a textPath with
     // textLength opens gaps between the glyphs, which breaks the joins
@@ -272,8 +286,27 @@ export default function WafqSheet({
     lines.push(<line key={`v${c}`} x1={a + c * cell} y1={a} x2={a + c * cell} y2={b} />);
 
   const nums = [];
+  // An empty middle house holds the purpose, in up to three short lines,
+  // sized to the house; it is not part of the square's sums.
+  const ctext = (centerText || "").trim();
+  const centerLines = (() => {
+    if (!ctext) return [];
+    const w = ctext.split(/\s+/);
+    const k = Math.min(3, Math.max(1, Math.ceil(w.length / 3)));
+    const per = Math.ceil(w.length / k);
+    return Array.from({ length: k }, (_, i) => w.slice(i * per, (i + 1) * per).join(" ")).filter(Boolean);
+  })();
   for (let r = 0; r < n; r++)
     for (let c = 0; c < n; c++)
+      if (grid[r][c] == null && centerLines.length) {
+        const cx = a + c * cell + cell / 2, cy = a + r * cell + cell / 2;
+        const lh = (cell * 0.8) / centerLines.length;
+        centerLines.forEach((line, i) => nums.push(
+          <text key={`${r}-${c}-m${i}`} className="wf-mid" x={cx}
+                y={cy - (cell * 0.8) / 2 + lh * (i + 0.72)}
+                data-midw={cell * 0.86} style={{ fontSize: `${Math.min(lh * 0.8, 28)}px` }}>{line}</text>
+        ));
+      } else
       nums.push(
         <text key={`${r}-${c}`} className="wf-cell"
               x={a + c * cell + cell / 2}

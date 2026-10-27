@@ -1040,6 +1040,12 @@ function drawWafq(cv, o) {
       g.strokeRect(x, yy, cell, cell);
       const v = grid[i][j];
       if (v != null) g.fillText(toArabicDigits(v), x + cell / 2, yy + cell / 2);
+      else if (o.midText) {
+        // the purpose in the empty middle, shrunk to the house
+        const saved = g.font; let fp = cell / 5; g.font = amiri(fp);
+        while (g.measureText(o.midText).width > cell * 0.9 && fp > 6) { fp -= 0.5; g.font = amiri(fp); }
+        g.fillText(o.midText, x + cell / 2, yy + cell / 2); g.font = saved;
+      }
     }
   }
   let ty = y0 + n * cell + (sideAngels ? 82 : 46);
@@ -1358,6 +1364,7 @@ export default function SirrWafqPage() {
   // 3×3, one of the book's hollow forms. Whichever is chosen is the square
   // drawn, written in order, surrounded and downloaded.
   const [variant, setVariant] = useState("std");
+  const [midEdit, setMidEdit] = useState(null);
   const variantBuilt = useMemo(() => {
     if (!result || variant === "std" || result.n !== 3) return null;
     const m = METHODS.find((x) => x.id === variant);
@@ -1365,6 +1372,7 @@ export default function SirrWafqPage() {
     return b && b.grid ? b : null;
   }, [result, variant]);
   const sqGrid = variantBuilt ? variantBuilt.grid : result?.grid;
+  // What the empty middle carries: the purpose from step 1 unless changed.
   const sqHouses = variantBuilt ? (variantBuilt.houses || null) : result?.houses;
   const hollowOpts = useMemo(() => (n === 3 && N > 0 && step === 1
     ? ["hollow", "hollow12", "hollowside"].map((id) => {
@@ -1406,6 +1414,7 @@ export default function SirrWafqPage() {
   };
   const tkp = tawkeelParts(tk);
   const tkNeed = tkp.need;
+  const midText = midEdit ?? (tkNeed || "");
   const tkRingText = tawkeelRing(sqWd, tkNeed, { love: tk.love, sought: tkp.sought });
 
   function copyText() {
@@ -1415,7 +1424,7 @@ export default function SirrWafqPage() {
   }
   function drawOpts() {
     return {
-      grid: sqGrid, bismi, sideAngels,
+      grid: sqGrid, bismi, sideAngels, midText: variantBuilt ? midText : "",
       dayAngel: dayRow && dayRow.angel !== "—" ? dayRow.angel : null,
       dayKhadim: dayRow && dayRow.khadim !== "—" ? dayRow.khadim : null,
       ranks: rankValues.filter((v) => v && v !== "—"),
@@ -1984,6 +1993,19 @@ export default function SirrWafqPage() {
                   {writeIdx < 0 ? txt("എഴുത്ത് തുടങ്ങുക", "Start writing") : writeIdx >= order.length - 1 ? txt("പൂർത്തിയായി ✓", "Done ✓") : `${txt("അടുത്തത്", "Next")} →`}
                 </button>
               </div>
+              {variantBuilt && (
+                <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(252,165,165,0.06)", border: "1px solid rgba(252,165,165,0.45)" }}>
+                  <p className="font-inter text-[12px] font-bold" style={{ color: "#FCA5A5" }}>
+                    ⚠ {txt("നടുവൊഴിഞ്ഞ കളം — നടുവിൽ നിങ്ങളുടെ ഉദ്ദേശ്യം എഴുതുക", "Hollow-centre square — write your purpose in the middle")}
+                  </p>
+                  <p className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.8)" }}>{txt(
+                    "നടുവിൽ സംഖ്യ എഴുതരുത്. എന്ത് ഉദ്ദേശിച്ചാണോ ചെയ്യുന്നത് അത് എഴുതുക: ഉദ്ദേശ്യം, അല്ലെങ്കിൽ ആർക്കുവേണ്ടിയാണോ ആ ആളുടെ പേര് (ഉമ്മയുടെ പേരോടെ), അല്ലെങ്കിൽ മത്‌ലൂബിന്റെ പേര്. സ്നേഹത്തിന് രണ്ടുപേരുടെയും പേരുകൾ. ഈ എഴുത്ത് കളത്തിന്റെ തുകയിൽ കൂട്ടില്ല. ഒന്നാം പടിയിൽ എഴുതിയ ഉദ്ദേശ്യം തനിയെ ഇവിടെ വരും; മാറ്റാം.",
+                    "Write no number in the middle. Write what the work is for: the purpose, or the name of the one it is for (with the mother's name), or the one sought. For love, both names. It is not counted in the square's sums. The purpose from step 1 comes here by itself; it can be changed.")}</p>
+                  <textarea value={midText} onChange={(e) => setMidEdit(e.target.value)} dir="rtl" rows={2}
+                            className="w-full rounded-xl px-3 py-2 font-amiri text-lg outline-none" style={input}
+                            placeholder="حصول عبد الرحمن بن رملة على عمل طيب" />
+                </div>
+              )}
               {variantBuilt && <Note color="#4ADE80">{txt(`${variantBuilt.tripled ? "തുക 3 കൊണ്ട് ഭാഗിക്കാത്തതിനാൽ കിതാബ് പറഞ്ഞതുപോലെ ×3. " : ""}നടുവ് ഒഴിഞ്ഞ കളം: ഓരോ വരിയും നിരയും ${variantBuilt.expected}. കോണുകൾ ഇതിൽ ബാധകമല്ല.`, `${variantBuilt.tripled ? "The total does not divide by 3, so ×3 as the book says. " : ""}Hollow-centre: each row and column ${variantBuilt.expected}; the diagonals do not apply.`)}</Note>}
               {!variantBuilt && <Note color={result.valid ? "#4ADE80" : "#FCA5A5"}>{result.valid
                 ? txt("എല്ലാ വരിയും നിരയും രണ്ടു കോണും ഒരേ തുക — കള്ളി ശരി.", "Every row, column and both diagonals agree — the wafq is correct.")
@@ -2026,6 +2048,7 @@ export default function SirrWafqPage() {
                            verse={corners === "book" ? (cornerText.trim() || CORNER_VERSE) : corners === "ayah" ? ayah.trim() : ""}
                            lineText={edge === "besmele" ? (bismiText.trim() || BASMALA_FULL) : edge === "ayah" ? ayah.trim() : ""}
                            ringAround={ring === "tawkeel" ? tkRingText : ring === "ayah" ? ayah.trim() : ""}
+                           centerText={variantBuilt ? midText : ""}
                            className="w-full h-auto" />
               </div>
 
