@@ -52,7 +52,7 @@ export default function WafqSheet({
   // house is made wide enough for its longest figure at a readable size,
   // and the whole drawing is then brought back in to keep its frame.
   const longest = Math.max(1, ...(grid || []).flat().filter((v) => v != null).map((v) => String(v).length));
-  const size = Math.max(baseSize, Math.min(680, n * longest * 14));
+  const size = Math.max(baseSize, Math.min(540, n * longest * 11));
   const grow = (baseSize + 260) / (size + 260);
   const a = C - size / 2;
   const b = C + size / 2;
@@ -96,14 +96,21 @@ export default function WafqSheet({
 
     // Every number sits inside its own house, in Arabic figures, however
     // long it is: the figure is made smaller until it fits the house.
-    svg.querySelectorAll("[data-cellw]").forEach((el) => {
+    // One size for every house, so the square reads evenly: the size the
+    // longest number needs to fit is the size all of them take.
+    const cells = [...svg.querySelectorAll("[data-cellw]")];
+    let cellFs = 46;
+    cells.forEach((el) => {
       const room = Number(el.dataset.cellw);
-      let fs = parseFloat(el.style.fontSize) || 30;
+      let fs = parseFloat(el.dataset.fs) || 30;
+      el.style.fontSize = `${fs}px`;
       for (let i = 0; i < 80 && el.getComputedTextLength() > room && fs > 5; i++) {
-        fs -= 1;
+        fs -= 0.5;
         el.style.fontSize = `${fs}px`;
       }
+      cellFs = Math.min(cellFs, fs);
     });
+    cells.forEach((el) => { el.style.fontSize = `${cellFs}px`; });
 
     // The ring is sized rather than spaced. Stretching a textPath with
     // textLength opens gaps between the glyphs, which breaks the joins
@@ -271,7 +278,7 @@ export default function WafqSheet({
         <text key={`${r}-${c}`} className="wf-cell"
               x={a + c * cell + cell / 2}
               y={a + r * cell + cell / 2 + cell * 0.13}
-              data-cellw={cell * 0.86}
+              data-cellw={cell * 0.82} data-fs={Math.min(46, cell * 0.42)}
               style={{ fontSize: `${Math.min(46, cell * 0.42)}px` }}>
           {grid[r][c] == null ? "" : String(grid[r][c]).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])}
         </text>

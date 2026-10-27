@@ -917,13 +917,13 @@ function Grid({ grid, arabic, active, done, cellNote }) {
   const longest = Math.max(1, ...grid.flat().filter((v) => v != null).map((v) => String(v).length));
   // Every number stays inside its own house at every size: the figure is
   // sized from the narrowest phone width the page is drawn at.
-  // and the houses widen with it — a long number never shrinks below a
-  // readable size; on a narrow screen the square scrolls sideways instead.
+  // one even size for every house, so the square stays square and neat.
   const avail = 320 / n;
-  const fs = Math.max(13, Math.min(n <= 4 ? 18 : 15, Math.floor((avail - 6) / (longest * 0.62))));
+  const fs = Math.max(9, Math.min(n <= 4 ? 18 : 15, Math.floor((avail - 6) / (longest * 0.62))));
+  const full = n * (longest * fs * 0.62 + 10) > 300;
   return (
     <div className="overflow-x-auto">
-      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs }}>
+      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs, tableLayout: full ? "fixed" : undefined, width: full ? "100%" : undefined }}>
         <tbody>
           {grid.map((row, i) => (
             <tr key={i}>
@@ -933,7 +933,7 @@ function Grid({ grid, arabic, active, done, cellNote }) {
                 return (
                   <td key={j} className={`text-center font-bold ${arabic ? "font-amiri" : "font-inter"}`}
                     style={{
-                      border: "1px solid rgba(212,175,55,0.6)", padding: n <= 4 ? "10px 10px" : "6px 5px", minWidth: n <= 4 ? 54 : 34, whiteSpace: "nowrap",
+                      border: "1px solid rgba(212,175,55,0.6)", padding: full ? "6px 1px" : n <= 4 ? "10px 10px" : "6px 5px", minWidth: full ? undefined : n <= 4 ? 54 : 34, whiteSpace: "nowrap", overflow: "hidden",
                       color: isActive ? "#0b0a12" : INK_C, background: isActive ? GOLD : v == null ? "rgba(255,255,255,0.02)" : "rgba(212,175,55,0.05)",
                       opacity: isDone || isActive ? 1 : 0.18, transition: "all .25s",
                     }}>
