@@ -333,6 +333,8 @@ function ReadingBox({ sqWd, need, love, sought, N, n, letters, isEn, txt }) {
   );
 }
 
+const txtSearch = (isEn) => (isEn ? "No photo — search by the Arabic or English name to find it." : "ചിത്രമില്ല — അറബി പേരോ ഇംഗ്ലീഷ് പേരോ വെച്ച് തിരഞ്ഞാൽ സാധനം കണ്ടെത്താം.");
+
 /** One incense: its photo (from Wikimedia Commons), Arabic and common name. */
 function IncenseCard({ ar, isEn }) {
   const x = SUBSTANCE[ar] || {};
@@ -348,6 +350,8 @@ function IncenseCard({ ar, isEn }) {
       <div className="min-w-0">
         <p className="font-amiri text-lg leading-tight" dir="rtl" style={{ color: GOLD }}>{ar}</p>
         <p className="font-inter text-[11px] leading-snug" style={{ color: "rgba(255,255,255,0.8)" }}>{isEn ? x.en : x.ml}</p>
+        {!isEn && x.en && <p className="font-inter text-[10px]" style={{ color: "rgba(255,255,255,0.55)" }}>English: {x.en}</p>}
+        {(!x.img || broken) && <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>{txtSearch(isEn)}</p>}
         {kind && <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>{isEn ? `photo: ${kind[1]}` : `ചിത്രം: ${kind[0]} — പശ / സാധനം അതിൽ നിന്നാണ്`}</p>}
       </div>
     </div>
