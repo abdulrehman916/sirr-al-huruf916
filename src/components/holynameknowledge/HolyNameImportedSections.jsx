@@ -34,13 +34,17 @@ const LANG_LABELS = { ar: "Arabic", ml: "Malayalam", en: "English", mixed: "Arab
  */
 export default function HolyNameImportedSections({ sourceSection, sourceNameKey, refreshKey = 0 }) {
   const [sections, setSections] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [failed, setFailed] = useState(false);
+  const [retry, setRetry] = useState(0);
   const { language: lang } = useHolyNamesLanguage();
   const isOwner = useIsOwner();
 
   useEffect(() => {
     let alive = true;
     setLoading(true);
+    setFailed(false);
+    setSections(null);
     platform.entities.HolyNameImportedSection
       .filter({ source_section: sourceSection, source_name_key: String(sourceNameKey) }, null, 500)
       .then((raw) => {
@@ -55,19 +59,24 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
         });
         setSections(secs);
       })
-      .catch(() => { if (alive) setSections([]); })
+      .catch(() => { if (alive) setFailed(true); })
       .finally(() => { if (alive) setLoading(false); });
     return () => { alive = false; };
-  }, [sourceSection, sourceNameKey, refreshKey]);
+  }, [sourceSection, sourceNameKey, refreshKey, retry]);
 
   if (loading) {
     return (
-      <div className="flex items-center gap-2 py-3" style={{ borderTop: "1px solid " + P.faint }}>
+      <div role="status" aria-live="polite" className="flex items-center gap-2 py-3" style={{ borderTop: "1px solid " + P.faint }}>
         <Loader2 className="w-3.5 h-3.5 animate-spin" style={{ color: P.dim }} />
-        <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: P.dim }}>Loading imported knowledge…</span>
+        <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: P.dim }}>{lang === "ml" ? "കൂടുതൽ PDF വിവരങ്ങൾ ലോഡ് ചെയ്യുന്നു… മുകളിലെ വിവരങ്ങൾ വായിക്കാം." : "Loading additional PDF passages… You can read the material above."}</span>
       </div>
     );
   }
+
+  if (failed) return <div role="alert" className="rounded-xl border border-amber-500/30 p-3 space-y-2">
+    <p className="text-sm text-white/75">{lang === "ml" ? "കൂടുതൽ PDF വിവരങ്ങൾ ലോഡ് ചെയ്യാനായില്ല. മുകളിലെ വിവരങ്ങൾ ലഭ്യമാണ്." : "Additional PDF passages could not be loaded. The material above is still available."}</p>
+    <button type="button" onClick={() => setRetry(value => value + 1)} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-sm text-yellow-200">{lang === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Try again"}</button>
+  </div>;
 
   if (!sections || sections.length === 0) return null;
   const contentSections = sections.filter(s => s.content_role !== "import_metadata");
@@ -122,7 +131,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
                     {LANG_LABELS[s.language] || s.language}
                   </span>
                   <span className="font-inter text-[8px]" style={{ color: "rgba(212,175,55,0.45)" }}>
-                    · {s.match_confidence ?? 100}%
+                    · {Number.isFinite(Number(s.match_confidence)) && s.match_confidence != null && s.match_confidence !== "" && Number(s.match_confidence) >= 0 && Number(s.match_confidence) <= 100 ? `${Number(s.match_confidence)}%` : (lang === "ml" ? "സ്കോർ ലഭ്യമല്ല" : "Score unavailable")}
                   </span>
                 </div>
                 {s.needs_review && (
