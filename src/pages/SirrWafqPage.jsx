@@ -29,7 +29,7 @@ import * as PUR from "@/lib/kashfPurposes";
 import { SQUARE_PLANET, SQUARE_PLANET_RULE, SQUARE_PLANET_WARNING } from "@/lib/wafqSquarePlanet";
 import { DAY_QASAM, dayQasam, khadimCommand, loveTawkeel, LOVE_AYAHS, tawkeelRing, COMMON_AZIMA, personAr, fillNeed, NEED_PRESETS } from "@/lib/wafqDayQasam";
 import HadimPanel from "@/components/wafq/HadimPanel";
-import { SUBSTANCE, DAY_TABLE, METAL_SUBSTITUTES, PLACE_BY_ELEMENT } from "@/lib/wafqPrep";
+import { SUBSTANCE, DAY_TABLE, METAL_SUBSTITUTES, PLACE_BY_ELEMENT, commonsImg, commonsPage } from "@/lib/wafqPrep";
 import WafqTimingPanel from "@/components/wafq/WafqTimingPanel";
 import { downloadSvgPng } from "@/lib/svgToPng";
 import { ARCHANGELS, CORNER_VERSE, BASMALA_FULL, splitFour, LOVE_SURROUND } from "@/lib/wafqSurround";
@@ -333,15 +333,52 @@ function ReadingBox({ sqWd, need, love, sought, N, n, letters, isEn, txt }) {
   );
 }
 
-const nameOf = (ar, isEn) => {
-  const x = SUBSTANCE[ar];
+/** One incense: its photo (from Wikimedia Commons), Arabic and common name. */
+function IncenseCard({ ar, isEn }) {
+  const x = SUBSTANCE[ar] || {};
+  const [broken, setBroken] = useState(false);
+  const kind = { tree: ["മരം", "the tree"], plant: ["ചെടി", "the plant"], drawing: ["ചിത്രരചന", "a drawing"] }[x.imgKind];
   return (
-    <span className="inline-block mr-2">
-      <span className="font-amiri text-base" style={{ color: GOLD }}>{ar}</span>
-      {x && <span className="font-inter text-[11px]" style={{ color: "rgba(255,255,255,0.75)" }}> — {isEn ? x.en : x.ml}</span>}
-    </span>
+    <div className="flex gap-2.5 items-start rounded-xl p-2" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(212,175,55,0.18)" }}>
+      <div className="shrink-0 w-20 h-20 rounded-lg overflow-hidden flex items-center justify-center" style={{ background: "rgba(0,0,0,0.3)" }}>
+        {x.img && !broken
+          ? <a href={commonsPage(x.img)} target="_blank" rel="noreferrer"><img src={commonsImg(x.img)} alt={x.en || ar} loading="lazy" className="w-20 h-20 object-cover" onError={() => setBroken(true)} /></a>
+          : <span className="font-inter text-[9px] text-center px-1" style={{ color: "rgba(255,255,255,0.35)" }}>{isEn ? "no photo" : "ചിത്രമില്ല"}</span>}
+      </div>
+      <div className="min-w-0">
+        <p className="font-amiri text-lg leading-tight" dir="rtl" style={{ color: GOLD }}>{ar}</p>
+        <p className="font-inter text-[11px] leading-snug" style={{ color: "rgba(255,255,255,0.8)" }}>{isEn ? x.en : x.ml}</p>
+        {kind && <p className="font-inter text-[9px]" style={{ color: "rgba(255,255,255,0.4)" }}>{isEn ? `photo: ${kind[1]}` : `ചിത്രം: ${kind[0]} — പശ / സാധനം അതിൽ നിന്നാണ്`}</p>}
+      </div>
+    </div>
   );
-};
+}
+const IncenseList = ({ items, isEn }) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">{items.map((x) => <IncenseCard key={x} ar={x} isEn={isEn} />)}</div>
+);
+
+/** Every day's incense with photos — a reference section. */
+function IncenseGallery({ sqWd, isEn, txt }) {
+  return (
+    <Box title={txt("ബഖൂർ സാധനങ്ങൾ — പേരും ചിത്രവും, ഓരോ ദിവസത്തിനും", "The incense — names and photos, day by day")}>
+      <Note color="rgba(255,255,255,0.6)">{txt(
+        "കിതാബിലെ പട്ടികകളിലെ ഓരോ ദിവസത്തെയും ബഖൂർ: അറബി പേര്, ഇന്ന് ഉപയോഗത്തിലുള്ള മലയാളം പേര്, ഒരു മാതൃകാ ചിത്രം. ചിത്രത്തിൽ അമർത്തിയാൽ വലുതായി കാണാം. ചിത്രങ്ങൾ Wikimedia Commons-ൽ നിന്ന്.",
+        "Each day's incense from the book's tables: the Arabic name, the common name, and an example photo. Tap a photo to see it larger. Photos from Wikimedia Commons.")}</Note>
+      {[6, 0, 1, 2, 3, 4, 5].map((wd) => {
+        const d = DAY_TABLE[wd];
+        const all = [...new Set([...d.incense, ...d.incense2, ...d.incense3])];
+        return (
+          <details key={wd} open={wd === sqWd} className="rounded-xl px-2.5 py-2" style={{ border: `1px solid ${wd === sqWd ? "rgba(212,175,55,0.5)" : "rgba(212,175,55,0.18)"}` }}>
+            <summary className="font-inter text-[12px] font-bold cursor-pointer" style={{ color: GOLD }}>
+              {isEn ? WD_EN[wd] : WD_ML[wd]} <span className="font-amiri">· يوم {WD_AR[wd]} · {d.planet}</span>{wd === sqWd ? " ★" : ""}
+            </summary>
+            <div className="mt-2"><IncenseList items={all} isEn={isEn} /></div>
+          </details>
+        );
+      })}
+    </Box>
+  );
+}
 
 /**
  * Step 6 of the lean Section A: before writing — what to keep to, what
@@ -409,12 +446,13 @@ function PrepStep({ wd, n, element, isEn, txt }) {
         "The book: the work's incense is its hour's. This square is written on its planet's day in that planet's hour, so both are one planet. Keep it burning from the start until the qasam and azima are done.")}</Note>
       <div className="rounded-xl p-2.5 space-y-1.5" style={{ background: "rgba(0,0,0,0.2)" }}>
         <Note color={GOLD}><b>{txt("ദിവസങ്ങളുടെ പട്ടികയിൽ", "In the table of the days")}</b></Note>
-        <div>{d.incense.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+        <IncenseList items={d.incense} isEn={isEn} />
         <Note color="rgba(255,255,255,0.55)"><b>{txt("ദിവസങ്ങളുടെ ബഖൂർ പട്ടികയിൽ", "In the table of the days' incense")}</b></Note>
-        <div>{d.incense2.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+        <IncenseList items={d.incense2} isEn={isEn} />
         <Note color="rgba(255,255,255,0.55)"><b>{txt("ചില ഉലമാക്കൾ പറഞ്ഞത്", "As some scholars give it")}</b></Note>
-        <div>{d.incense3.map((x) => <span key={x}>{nameOf(x, isEn)}</span>)}</div>
+        <IncenseList items={d.incense3} isEn={isEn} />
       </div>
+      <Note color="rgba(255,255,255,0.5)">{txt("എല്ലാ ദിവസത്തെയും ബഖൂർ ചിത്രങ്ങളോടെ മുകളിലെ \"കളങ്ങളുടെ തരങ്ങളും വിശദീകരണവും\" എന്നതിൽ ഒരുമിച്ച് കാണാം.", "Every day's incense with photos is under \"Kinds of square and the notes\" above.")}</Note>
       {L(isEn ? [
         "Male frankincense (اللبان الذكر) stands in for every incense, for any work.",
         "Works of good take sweet scents — frankincense, oud, ambergris, musk, saffron and the like; never a foul one.",
@@ -879,11 +917,13 @@ function Grid({ grid, arabic, active, done, cellNote }) {
   const longest = Math.max(1, ...grid.flat().filter((v) => v != null).map((v) => String(v).length));
   // Every number stays inside its own house at every size: the figure is
   // sized from the narrowest phone width the page is drawn at.
+  // and the houses widen with it — a long number never shrinks below a
+  // readable size; on a narrow screen the square scrolls sideways instead.
   const avail = 320 / n;
-  const fs = Math.max(7, Math.min(n <= 4 ? 18 : 14, Math.floor((avail - 6) / (longest * 0.62))));
+  const fs = Math.max(13, Math.min(n <= 4 ? 18 : 15, Math.floor((avail - 6) / (longest * 0.62))));
   return (
     <div className="overflow-x-auto">
-      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs, tableLayout: "fixed", width: n >= 6 || longest > 4 ? "100%" : undefined }}>
+      <table className="mx-auto border-collapse" dir="ltr" style={{ fontSize: fs }}>
         <tbody>
           {grid.map((row, i) => (
             <tr key={i}>
@@ -893,7 +933,7 @@ function Grid({ grid, arabic, active, done, cellNote }) {
                 return (
                   <td key={j} className={`text-center font-bold ${arabic ? "font-amiri" : "font-inter"}`}
                     style={{
-                      border: "1px solid rgba(212,175,55,0.6)", padding: n <= 4 ? (longest > 5 ? "8px 2px" : "10px 12px") : "5px 1px", minWidth: n <= 4 && longest <= 5 ? 54 : undefined, whiteSpace: "nowrap", overflow: "hidden",
+                      border: "1px solid rgba(212,175,55,0.6)", padding: n <= 4 ? "10px 10px" : "6px 5px", minWidth: n <= 4 ? 54 : 34, whiteSpace: "nowrap",
                       color: isActive ? "#0b0a12" : INK_C, background: isActive ? GOLD : v == null ? "rgba(255,255,255,0.02)" : "rgba(212,175,55,0.05)",
                       opacity: isDone || isActive ? 1 : 0.18, transition: "all .25s",
                     }}>
@@ -1795,6 +1835,7 @@ export default function SirrWafqPage() {
         )}
 
         {lean && aView === "types" && <TypesIntro N={N} n={n} step={step} setStep={setStep} hasResult={!!result} isEn={isEn} txt={txt} />}
+        {lean && aView === "types" && <IncenseGallery sqWd={sqWd} isEn={isEn} txt={txt} />}
 
         {/* The method library — one section per way of building a square */}
         {N > 0 && showTypes && (

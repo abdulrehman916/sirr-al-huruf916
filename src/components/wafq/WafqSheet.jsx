@@ -29,7 +29,7 @@ const C = VB / 2;
 
 export default function WafqSheet({
   grid,                       // number[][]
-  size = 430,                 // the square's side, in viewBox units
+  size: baseSize = 430,       // the square's side, in viewBox units
   angel = "jibril",           // which archangel this working belongs to
   fourAngels = true,          // all four, in the ج ا م ع order, or just one
   angels = true,              // false leaves the four sides bare — the book's
@@ -48,6 +48,12 @@ export default function WafqSheet({
 }) {
   const ref = useRef(null);
   const n = grid?.length || 3;
+  // Long numbers widen the square rather than shrink to nothing: each
+  // house is made wide enough for its longest figure at a readable size,
+  // and the whole drawing is then brought back in to keep its frame.
+  const longest = Math.max(1, ...(grid || []).flat().filter((v) => v != null).map((v) => String(v).length));
+  const size = Math.max(baseSize, Math.min(680, n * longest * 14));
+  const grow = (baseSize + 260) / (size + 260);
   const a = C - size / 2;
   const b = C + size / 2;
   const span = size * (1 + OVERHANG);
@@ -297,7 +303,7 @@ export default function WafqSheet({
           </text>
           {seals && <g transform="translate(0 62)" fill="currentColor">{seals}</g>}
         </g>
-        <g transform={`translate(${C} ${C}) scale(${innerScale}) translate(${-C} ${-C})`}>
+        <g transform={`translate(${C} ${C}) scale(${innerScale * grow}) translate(${-C} ${-C})`}>
           {around}
           {corners}
           {sides}

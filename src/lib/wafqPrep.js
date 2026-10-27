@@ -21,45 +21,48 @@
 //    for works of good only. p. 307: surround it, write it at a fitting
 //    time, perfume it with incense, and carry it after.
 //
+// Photos: Wikimedia Commons files, shown by name (img); imgKind says
+// whether it is the thing itself or its plant/tree/drawing.
+//
 // Malayalam names are given where the thing has one in common use; where
 // it has none, the name it is sold under is given and that is said.
 // ═══════════════════════════════════════════════════════════════
 
 /** Each incense / material: Arabic as printed, Malayalam, English. */
 export const SUBSTANCE = {
-  "السندروس": { ml: "സന്ദ്രൂസ് — ഒരു മരപ്പശ (sandarac). മലയാളത്തിൽ പ്രത്യേക പേരില്ല; അത്തർ/ബഖൂർ കടകളിൽ ഈ പേരിൽ", en: "sandarac resin" },
-  "سندروس": { ml: "സന്ദ്രൂസ് — ഒരു മരപ്പശ (sandarac). മലയാളത്തിൽ പ്രത്യേക പേരില്ല", en: "sandarac resin" },
-  "اللبان الذكر": { ml: "കുന്തിരിക്കം (ലുബാൻ) — ആൺ ഇനം, തെളിഞ്ഞ മണികൾ", en: "frankincense (the 'male', clear tears)" },
-  "اللبان": { ml: "കുന്തിരിക്കം (ലുബാൻ)", en: "frankincense" },
-  "لبان": { ml: "കുന്തിരിക്കം (ലുബാൻ)", en: "frankincense" },
-  "الكندر": { ml: "കുന്തിരിക്കം (കുന്ദുർ — ലുബാന്റെ മറ്റൊരു പേര്)", en: "frankincense (kundur)" },
+  "السندروس": { img: "Sandarac_tears.jpg", imgKind: "thing", ml: "ചന്ദ്രസ് / സന്ദ്രൂസ് — ഒരു മരത്തിന്റെ മഞ്ഞ നിറത്തിലുള്ള പശത്തരികൾ (sandarac). മലയാളത്തിൽ പ്രത്യേക പേരില്ല; അങ്ങാടിക്കടകളിൽ ചന്ദ്രസ് എന്ന പേരിൽ", en: "sandarac resin" },
+  "سندروس": { img: "Sandarac_tears.jpg", imgKind: "thing", ml: "ചന്ദ്രസ് / സന്ദ്രൂസ് — മഞ്ഞ പശത്തരികൾ (sandarac)", en: "sandarac resin" },
+  "اللبان الذكر": { img: "Frankinsence-oman-dhofar.JPG", imgKind: "thing", ml: "കുന്തിരിക്കം (ലുബാൻ) — ആൺ ഇനം, തെളിഞ്ഞ മണികൾ", en: "frankincense (the 'male', clear tears)" },
+  "اللبان": { img: "Frankinsence-oman-dhofar.JPG", imgKind: "thing", ml: "കുന്തിരിക്കം (ലുബാൻ)", en: "frankincense" },
+  "لبان": { img: "Frankinsence-oman-dhofar.JPG", imgKind: "thing", ml: "കുന്തിരിക്കം (ലുബാൻ)", en: "frankincense" },
+  "الكندر": { img: "Frankinsence-oman-dhofar.JPG", imgKind: "thing", ml: "കുന്തിരിക്കം (കുന്ദുർ — ലുബാന്റെ മറ്റൊരു പേര്)", en: "frankincense (kundur)" },
   "القسط": { ml: "കൊട്ടം (ഖുസ്ത്)", en: "costus root" },
   "قسط": { ml: "കൊട്ടം (ഖുസ്ത്)", en: "costus root" },
   "قسط اسود": { ml: "കറുത്ത കൊട്ടം (ഖുസ്ത് ഹിന്ദി)", en: "black costus" },
   "قشر المحلب": { ml: "മഹ്‌ലബ് കുരുവിന്റെ തൊലി — മലയാളത്തിൽ പ്രത്യേക പേരില്ല; അറബി കടകളിൽ \"മഹ്‌ലബ്\"", en: "mahaleb cherry husk" },
   "قشور المحلب": { ml: "മഹ്‌ലബ് കുരുവിന്റെ തൊലി — അറബി കടകളിൽ \"മഹ്‌ലബ്\"", en: "mahaleb cherry husks" },
-  "المقل الأزرق": { ml: "ഗുഗ്ഗുലു (മുഖ്ൽ) — നീല ഇനം", en: "blue bdellium (guggul)" },
-  "العنبر": { ml: "അംബർ (ആമ്പർഗ്രിസ്)", en: "ambergris" },
-  "عنبر": { ml: "അംബർ (ആമ്പർഗ്രിസ്)", en: "ambergris" },
-  "العود": { ml: "അകിൽ (ഊദ്)", en: "agarwood (oud)" },
-  "عود": { ml: "അകിൽ (ഊദ്)", en: "agarwood (oud)" },
-  "عود ابيض": { ml: "വെളുത്ത അകിൽ", en: "white agarwood" },
-  "الكافور": { ml: "കർപ്പൂരം", en: "camphor" },
-  "المصطكي": { ml: "മസ്തകി (റൂമി മസ്തകി) — ഒരു മരപ്പശ", en: "mastic" },
-  "المستكة": { ml: "മസ്തകി (റൂമി മസ്തകി)", en: "mastic" },
-  "الشمع الأصفر": { ml: "മഞ്ഞ മെഴുക് — തേനീച്ച മെഴുക്", en: "yellow beeswax" },
-  "المايعة": { ml: "മൈഅ — ദ്രാവക രൂപത്തിലുള്ള ഒരു മരപ്പശ (storax). മലയാളത്തിൽ സാധാരണ പേരില്ല; അറബി കടകളിൽ \"മൈഅ\"", en: "liquid storax (may'a)" },
-  "المايعة السائلة": { ml: "ദ്രാവക മൈഅ (liquid storax) — അറബി കടകളിൽ \"മൈഅ\"", en: "liquid storax" },
-  "مايعة": { ml: "മൈഅ (storax)", en: "storax" },
-  "اللاذن": { ml: "ലാദൻ — ഒരു ചെടിയുടെ പശ (labdanum). മലയാളത്തിൽ പ്രത്യേക പേരില്ല", en: "labdanum" },
-  "زعفران": { ml: "കുങ്കുമപ്പൂവ്", en: "saffron" },
-  "صندل أحمر": { ml: "രക്തചന്ദനം", en: "red sandalwood" },
-  "صندل أبيض": { ml: "വെള്ള ചന്ദനം", en: "white sandalwood" },
-  "صندل": { ml: "ചന്ദനം", en: "sandalwood" },
-  "كبابة": { ml: "വാൽമുളക് (കബാബ് ചീനി)", en: "cubeb" },
-  "بسباس": { ml: "ജാതിപത്രി", en: "mace" },
-  "قرنفل": { ml: "ഗ്രാമ്പൂ", en: "clove" },
-  "سنبل": { ml: "ജടാമാഞ്ചി", en: "spikenard" },
+  "المقل الأزرق": { img: "Commiphora-wightii-resin.jpg", imgKind: "thing", ml: "ഗുഗ്ഗുലു (മുഖ്ൽ) — നീല ഇനം", en: "blue bdellium (guggul)" },
+  "العنبر": { img: "Ambergris,_Skagway_Museum.JPG", imgKind: "thing", ml: "അംബർ (ആമ്പർഗ്രിസ്)", en: "ambergris" },
+  "عنبر": { img: "Ambergris,_Skagway_Museum.JPG", imgKind: "thing", ml: "അംബർ (ആമ്പർഗ്രിസ്)", en: "ambergris" },
+  "العود": { img: "Agarwood.jpg", imgKind: "thing", ml: "അകിൽ (ഊദ്)", en: "agarwood (oud)" },
+  "عود": { img: "Agarwood.jpg", imgKind: "thing", ml: "അകിൽ (ഊദ്)", en: "agarwood (oud)" },
+  "عود ابيض": { img: "Agarwood.jpg", imgKind: "thing", ml: "വെളുത്ത അകിൽ", en: "white agarwood" },
+  "الكافور": { img: "Camphor_laurel-camphor.jpg", imgKind: "thing", ml: "കർപ്പൂരം", en: "camphor" },
+  "المصطكي": { img: "Mastic.jpg", imgKind: "thing", ml: "മസ്തകി (റൂമി മസ്തകി) — ഒരു മരപ്പശ", en: "mastic" },
+  "المستكة": { img: "Mastic.jpg", imgKind: "thing", ml: "മസ്തകി (റൂമി മസ്തകി)", en: "mastic" },
+  "الشمع الأصفر": { img: "Pure_Natural_Beeswax_Blocks.jpg", imgKind: "thing", ml: "മഞ്ഞ മെഴുക് — തേനീച്ച മെഴുക്", en: "yellow beeswax" },
+  "المايعة": { img: "Liquidambar_orientalis_-_Orto_botanico_-_Rome,_Italy_-_DSC09849.jpg", imgKind: "tree", ml: "മൈഅ — ഒരു മരത്തിൽ നിന്നുള്ള കട്ടിയുള്ള ദ്രാവകപ്പശ (storax). ആയുർവേദ കടകളിൽ സിലാരസം എന്ന പേരിൽ; അറബി കടകളിൽ \"മൈഅ\"", en: "liquid storax (may'a)" },
+  "المايعة السائلة": { img: "Liquidambar_orientalis_-_Orto_botanico_-_Rome,_Italy_-_DSC09849.jpg", imgKind: "tree", ml: "ദ്രാവക മൈഅ (liquid storax) — ആയുർവേദ കടകളിൽ സിലാരസം", en: "liquid storax" },
+  "مايعة": { img: "Liquidambar_orientalis_-_Orto_botanico_-_Rome,_Italy_-_DSC09849.jpg", imgKind: "tree", ml: "മൈഅ (storax) — ആയുർവേദ കടകളിൽ സിലാരസം", en: "storax" },
+  "اللاذن": { img: "Cistus_ladanifer.JPG", imgKind: "plant", ml: "ലാദൻ — ഒരു ചെടിയുടെ പശ (labdanum). മലയാളത്തിൽ പ്രത്യേക പേരില്ല", en: "labdanum" },
+  "زعفران": { img: "Iran_saffron_threads.jpg", imgKind: "thing", ml: "കുങ്കുമപ്പൂവ്", en: "saffron" },
+  "صندل أحمر": { img: "Santali_rubri_lignum_050258.jpg", imgKind: "thing", ml: "രക്തചന്ദനം", en: "red sandalwood" },
+  "صندل أبيض": { img: "Santalum_album_2.jpg", imgKind: "tree", ml: "വെള്ള ചന്ദനം", en: "white sandalwood" },
+  "صندل": { img: "Santalum_album_2.jpg", imgKind: "tree", ml: "ചന്ദനം", en: "sandalwood" },
+  "كبابة": { img: "Cubebae1.JPG", imgKind: "thing", ml: "വാൽമുളക് (കബാബ് ചീനി)", en: "cubeb" },
+  "بسباس": { img: "Mace_of_nutmeg_-_ml-Jathi.jpg", imgKind: "thing", ml: "ജാതിപത്രി (ബഖൂറിൽ ഇതാണ്; ചില നാടുകളിൽ ബസ്ബാസ് എന്ന് പെരുംജീരകത്തിനും പറയും)", en: "mace (in some regions the word also means fennel)" },
+  "قرنفل": { img: "Cloves-spice.jpg", imgKind: "thing", ml: "ഗ്രാമ്പൂ", en: "clove" },
+  "سنبل": { img: "Indian_spikenard_Nardostachys_jatamansi_al-naridin_al-sunbul_al-hindi_fol_22v_NYPL.jpg", imgKind: "drawing", ml: "ജടാമാഞ്ചി", en: "spikenard" },
   "مسك": { ml: "കസ്തൂരി", en: "musk" },
 };
 
@@ -106,3 +109,8 @@ export const PLACE_BY_ELEMENT = {
   air:   { ar: "ففي مكان تهب عليه الريح أو علقه عليك", ml: "കാറ്റ് വീശുന്ന ഇടത്ത് വെക്കുക, അല്ലെങ്കിൽ ദേഹത്ത് തൂക്കി (ധരിച്ച്) നടക്കുക.", en: "Put it where the wind blows on it, or hang it on yourself." },
   water: { ar: "فضعه قريبا من الماء", ml: "വെള്ളത്തിനടുത്ത് വെക്കുക.", en: "Put it near water." },
 };
+
+/** A Commons file shown at a small width. */
+export const commonsImg = (file, w = 240) =>
+  `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${w}`;
+export const commonsPage = (file) => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file)}`;
