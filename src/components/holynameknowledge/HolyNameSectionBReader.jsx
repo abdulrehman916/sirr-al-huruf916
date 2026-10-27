@@ -228,15 +228,15 @@ export default function HolyNameSectionBReader({ chapter, nameId, card = null })
     {availablePurposes.size > 0 && <label className="block space-y-2"><span className="text-sm text-white/70">{ml ? 'ആവശ്യാനുസരിച്ചുള്ള ഗ്രന്ഥപരാമർശങ്ങൾ' : 'Source accounts by purpose'}</span><select value={purpose} onChange={event => setPurpose(event.target.value)} className="w-full rounded-xl border border-yellow-500/30 bg-black px-4 py-3 text-white"><option value="all">{ml ? 'എല്ലാ വിഷയങ്ങളും' : 'All purposes'}</option>{Object.entries(shamsBrief.purpose_labels).filter(([key]) => availablePurposes.has(key)).map(([key, label]) => <option key={key} value={key}>{t(label)}</option>)}</select></label>}
     {isOwner && linkedShamsAccounts.length > 0 && <p className="text-xs text-amber-100/75 leading-relaxed">{t(shamsCardBridge.source_edition_note)} {t(shamsCardBridge.review_note)}</p>}
     {visible.every(group => !group.items.length) && <p role="status" className="text-white/65">{ml ? 'ഈ തിരച്ചിലിന് യോജിച്ച വിവരമില്ല.' : 'No matching material for this search.'}</p>}
-    {visible.map(group => group.items.length > 0 && <section key={group.key} className="space-y-3" data-section-b-group={group.key} data-section-b-count={group.items.length}>
-      <h3 className="text-lg text-yellow-200">{group.title}</h3>
+    {visible.map(group => group.items.length > 0 && <details key={group.key} open={isOwner || Boolean(term) || purpose !== 'all' || undefined} className="rounded-xl border border-yellow-500/20 p-3 space-y-3" data-section-b-group={group.key} data-section-b-count={group.items.length}>
+      <summary className="cursor-pointer text-yellow-200"><h3 className="inline text-lg">{group.title}</h3><span className="ml-2 text-xs text-white/60">{group.items.length}</span></summary>
       {isOwner && group.key === 'book' && <div className="rounded-xl border border-yellow-500/20 p-4 space-y-3"><Arabic text={checkedChapter.source_name_form} />{['name_note', 'scope_note', 'edition_note'].map(key => t(checkedChapter[key]) && <p key={key} className="text-white/75 leading-loose">{t(checkedChapter[key])}</p>)}<p className="text-xs text-white/60">{checkedChapter.source_title} · {checkedChapter.printed_page}</p></div>}
       {group.key === 'pending' && <p className="text-sm text-white/60 leading-relaxed">{ml ? 'ഇവ പഴയ ഡാറ്റയിൽ ഉണ്ടായിരുന്ന രേഖകളാണ്. ഉറവിടത്തിലെ പേജ്/പാഠം വീണ്ടും പരിശോധിക്കുന്നതുവരെ ഇവയെ ഖുർആൻ/ഹദീസ് തെളിവായി കാണിക്കില്ല.' : 'These records were already present in the legacy data. Until their source page/text is rechecked, they are not presented as Quran or hadith evidence.'}</p>}
       {['topics', 'prophetic', 'shams'].includes(group.key) ? Object.entries(shamsBrief.purpose_labels).map(([key, label]) => {
         const items = group.items.filter(entry => (entry.purpose || 'other') === key);
         return items.length > 0 && <section key={key} className="space-y-3" data-section-b-purpose={key} data-source-kind={group.key}><h4 className="text-yellow-200 font-semibold">{t(label)}</h4>{items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} topic />)}</section>;
       }) : group.items.map(entry => <SourceEntry key={entry.id} entry={entry} language={language} card={card} book={group.key === 'book' ? checkedChapter.source_title : null} page={group.key === 'book' ? checkedChapter.printed_page : null} />)}
-    </section>)}
+    </details>)}
   </section>;
 }
 
