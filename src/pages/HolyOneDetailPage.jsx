@@ -14,6 +14,7 @@ import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVi
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSectionBReader from "@/components/holynameknowledge/HolyNameSectionBReader";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
+import { withSectionBBaseTranslations } from '@/lib/holyNames/baseTranslations';
 import { withSectionBMeaning } from '@/lib/holyNames/sectionBMeanings';
 import { unlinkedSectionBVisuals } from '@/lib/holyNames/sectionBReading';
 import reviewedCards from "@/data/holyNamesReviewedCards.json";
@@ -97,9 +98,9 @@ export default function HolyOneDetailPage() {
         if (sequence !== loadSequence.current) return;
         if (result && result.length > 0) {
           const reviewed = reviewedCards[nameId];
-          setName(withSectionBMeaning(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
+          setName(withSectionBMeaning(withSectionBBaseTranslations(reviewed?.pdf_name_id === nameId && reviewed.review_status === "checked_against_digital_text"
             ? { ...result[0], ...reviewed }
-            : result[0]));
+            : result[0])));
           setSource("B");
         } else {
           toast({ title: "Name not found", variant: "destructive" });
@@ -381,7 +382,7 @@ export default function HolyOneDetailPage() {
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">Meaning</h2>
+                <h2 className="font-inter font-semibold text-white">{language === 'ml' ? 'അർഥം' : 'Meaning'}</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.meaning_malayalam} english={name.meaning_english || name.english_meaning} />
               {name.editorial_meaning && <p className="text-xs text-white/55 mt-3 leading-relaxed">{language === 'ml' ? 'ഇത് നൽകിയ അറബി തലക്കെട്ടിന്റെ ലളിതമായ അർഥമാണ്. തബാറക, തആലാ, സുബ്ഹാനഹു തുടങ്ങിയവ സ്തുതിപദങ്ങളാണ്. ഒരു പദത്തെ സ്വതന്ത്ര ദൈവനാമമായി സ്ഥിരീകരിക്കുന്ന തെളിവായി ഈ അർഥം കണക്കാക്കരുത്.' : 'This is an editorial meaning of the supplied Arabic heading. Tabaraka, taala and subhanahu are expressions of praise. This gloss does not authenticate a word as an independent divine name.'}</p>}
@@ -393,7 +394,7 @@ export default function HolyOneDetailPage() {
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Star className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">Explanation</h2>
+                <h2 className="font-inter font-semibold text-white">{language === 'ml' ? 'വിശദീകരണം' : 'Explanation'}</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.explanation_malayalam} english={name.explanation_english || name.english_explanation} />
             </div>
@@ -406,7 +407,7 @@ export default function HolyOneDetailPage() {
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Star className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">Virtues & Benefits</h2>
+                <h2 className="font-inter font-semibold text-white">{language === 'ml' ? 'ഗുണങ്ങളെക്കുറിച്ചുള്ള പരാമർശങ്ങൾ' : 'Virtues & Benefits'}</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.virtues_benefits} english={name.virtues_benefits_english || name.benefits_english} />
             </div>
@@ -417,7 +418,7 @@ export default function HolyOneDetailPage() {
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">Islamic Information</h2>
+                <h2 className="font-inter font-semibold text-white">{language === 'ml' ? 'ഇസ്‌ലാമിക വിവരങ്ങൾ' : 'Islamic Information'}</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.islamic_information} english={name.islamic_information_english} />
             </div>
@@ -428,7 +429,7 @@ export default function HolyOneDetailPage() {
             <div className="rounded-xl border p-4" style={{ background: "rgba(255,255,255,0.03)", borderColor: G.border }}>
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-5 h-5" style={{ color: G.text }} />
-                <h2 className="font-inter font-semibold text-white">Authentic Notes</h2>
+                <h2 className="font-inter font-semibold text-white">{language === 'ml' ? 'കുറിപ്പുകൾ' : 'Notes'}</h2>
               </div>
               <SelectedTranslation language={language} malayalam={name.authentic_notes} english={name.authentic_notes_english} />
             </div>
@@ -454,6 +455,8 @@ export default function HolyOneDetailPage() {
           </div>
 
         </div>
+
+        {isOwner && name.archived_import_errors?.length > 0 && <details className="mt-4 rounded-xl border border-white/10 p-3 text-xs text-white/55"><summary className="cursor-pointer">{language === 'ml' ? 'പഴയ import പിശകുകൾ' : 'Archived import errors'}</summary>{name.archived_import_errors.map(entry => <p key={entry.field} className="mt-2 whitespace-pre-wrap">{entry.field}: {language === 'ml' ? entry.text : entry.english}</p>)}</details>}
 
         {/* Imported PDF Knowledge — enriches this Holy Name's existing card */}
         {<div className="mt-6">

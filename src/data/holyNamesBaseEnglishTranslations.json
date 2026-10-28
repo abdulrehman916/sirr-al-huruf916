@@ -1,0 +1,2914 @@
+[
+  {
+    "card_id": "PDF-HN-001",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഇഹലോകത്ത് എല്ലാ സൃഷ്ടികളോടും കരുണ കാണിക്കുന്നവൻ.",
+    "english": "He shows mercy to all creatures in this world."
+  },
+  {
+    "card_id": "PDF-HN-001",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഹൃദയശാന്തി ലഭിക്കാൻ ഉത്തമം.",
+    "english": "Beneficial for attaining peace of heart."
+  },
+  {
+    "card_id": "PDF-HN-001",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ബിസ്മിയിൽ ഉൾപ്പെട്ട നാമം.",
+    "english": "A name included in the Basmala."
+  },
+  {
+    "card_id": "PDF-HN-001",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "തിർമിദിയുടെ ഹദീസിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in a hadith of al-Tirmidhi."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "പരലോകത്ത് സത്യവിശ്വാസികളോട് മാത്രം കരുണ കാണിക്കുന്നവൻ.",
+    "english": "He shows mercy specifically to believers in the Hereafter."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പാപമോചനത്തിന് ഉത്തമം.",
+    "english": "Beneficial for seeking forgiveness."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ നിരന്തരം ഉപയോഗിച്ച നാമം.",
+    "english": "A name used frequently in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-002",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "സ്വഹീഹായ ഹദീസുകളിൽ വന്നിട്ടുണ്ട്.",
+    "english": "Reported in authentic hadiths."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിന്റെയും യഥാർത്ഥ ഉടമസ്ഥൻ.",
+    "english": "The true owner of everything."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സാമ്പത്തിക ബുദ്ധിമുട്ടുകൾ മാറാൻ സഹായിക്കും.",
+    "english": "Helps relieve financial difficulties."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് അന്നാസിൽ വന്നിട്ടുള്ള നാമം.",
+    "english": "A name appearing in Surat al-Nas."
+  },
+  {
+    "card_id": "PDF-HN-003",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ പലയിടത്തും വന്നിട്ടുണ്ട്.",
+    "english": "Appears in several places in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ ന്യൂനതകളിൽ നിന്നും മുക്തനായവൻ.",
+    "english": "Free from every imperfection."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "മാനസിക ശുദ്ധിക്ക് ഉത്തമം.",
+    "english": "Beneficial for inner purification."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് അൽ-ജുമുഅയിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in Surat al-Jumuah."
+  },
+  {
+    "card_id": "PDF-HN-004",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "പ്രവാചകൻ നിസ്കാരത്തിൽ പറയുന്ന നാമം.",
+    "english": "A name the Prophet used in prayer."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തന്റെ സൃഷ്ടികൾക്ക് സമാധാനം നൽകുന്നവൻ.",
+    "english": "He grants peace to His creatures."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഭയം മാറാൻ സഹായിക്കും.",
+    "english": "Helps dispel fear."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "നിസ്കാരത്തിലെ തഷഹ്ഹുദിൽ വന്നിട്ടുണ്ട്.",
+    "english": "Appears in the tashahhud of the prayer."
+  },
+  {
+    "card_id": "PDF-HN-005",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "സ്വഹീഹായ ഹദീസുകളിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in authentic hadiths."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തന്റെ വാഗ്ദാനങ്ങൾ പാലിക്കുന്നവൻ.",
+    "english": "He fulfils His promises."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിശ്വാസം ദൃഢമാക്കാൻ സഹായിക്കും.",
+    "english": "Helps strengthen faith."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് അൽ-ഹശ്റിൽ വന്നിട്ടുണ്ട്.",
+    "english": "Appears in Surat al-Hashr."
+  },
+  {
+    "card_id": "PDF-HN-006",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "99 നാമങ്ങളിൽ ഉൾപ്പെടുന്നു.",
+    "english": "Included among the 99 names."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങളെയും നിരീക്ഷിക്കുന്നവൻ.",
+    "english": "He watches over all matters."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അല്ലാഹുവിന്റെ സാന്നിധ്യം ബോധ്യമാകാൻ സഹായിക്കും.",
+    "english": "Helps cultivate awareness of Allah's presence."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് അൽ-ഹശ്റിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in Surat al-Hashr."
+  },
+  {
+    "card_id": "PDF-HN-007",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഇബ്ൻ കസീർ തഫ്സീറിൽ വിശദീകരിച്ചിട്ടുണ്ട്.",
+    "english": "Explained in the tafsir of Ibn Kathir."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ ശക്തിയും ഉള്ളവൻ.",
+    "english": "He possesses all power."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ശക്തി ലഭിക്കാൻ സഹായിക്കും.",
+    "english": "Helps attain strength."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ പലയിടത്തും വന്നിട്ടുണ്ട്.",
+    "english": "Appears in several places in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-008",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "99 നാമങ്ങളിൽ ഉൾപ്പെടുന്നു.",
+    "english": "Included among the 99 names."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തന്റെ ഇച്ഛ നിർബന്ധമാക്കുന്നവൻ.",
+    "english": "He makes His will prevail."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അഹങ്കാരം മാറാൻ സഹായിക്കും.",
+    "english": "Helps remove arrogance."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് അൽ-ഹശ്റിൽ വന്നിട്ടുണ്ട്.",
+    "english": "Appears in Surat al-Hashr."
+  },
+  {
+    "card_id": "PDF-HN-009",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "തിർമിദി ഹദീസിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in a hadith of al-Tirmidhi."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികളെക്കാളും ഉന്നതനായവനും സ്വന്തം മഹത്വത്തിൽ പൂർണ്ണനുമായ അല്ലാഹു എന്നാണ് ഇതിന്റെ അർത്ഥം.",
+    "english": "It means Allah, who is above all creatures and perfect in His own majesty."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം പതിവായി ചൊല്ലുന്നവർക്ക് മറ്റുള്ളവരിൽ നിന്ന് ആദരവ് ലഭിക്കും.",
+    "english": "Those who regularly recite this name will receive respect from others."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് മാത്രമേ യഥാർത്ഥത്തിൽ അഹങ്കരിക്കാൻ അവകാശമുള്ളൂ എന്ന് ഹദീസുകളിൽ വ്യക്തമാക്കുന്നു.",
+    "english": "Hadiths explain that only Allah truly has the right to supreme greatness."
+  },
+  {
+    "card_id": "PDF-HN-010",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഈ ഗുണം മനുഷ്യർക്ക് പാടില്ലാത്തതാണ്.",
+    "english": "This attribute is not appropriate for human beings."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഇല്ലായ്മയിൽ നിന്ന് എല്ലാറ്റിനെയും സൃഷ്ടിച്ചുണ്ടാക്കുന്നവൻ എന്നാണ് അൽ-ഖാലിഖ് എന്നതിലൂടെ അർത്ഥമാക്കുന്നത്.",
+    "english": "Al-Khaliq means the One who creates everything from nonexistence."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സന്താനങ്ങളില്ലാത്തവർ ഈ നാമം പതിവായി ചൊല്ലുന്നത് നല്ലതാണ്.",
+    "english": "It is good for those without children to recite this name regularly."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മാത്രമാണ് യഥാർത്ഥ സ്രഷ്ടാവ് എന്ന് ഖുർആൻ ആവർത്തിച്ച് വ്യക്തമാക്കുന്നു.",
+    "english": "The Quran repeatedly makes clear that Allah alone is the true Creator."
+  },
+  {
+    "card_id": "PDF-HN-011",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "സൃഷ്ടിപ്പിൽ അല്ലാഹുവിന് പങ്കുകാരില്ല.",
+    "english": "Allah has no partner in creation."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "സൃഷ്ടികളെ അവയുടെ അനുപാതത്തിലും രൂപത്തിലും വ്യവസ്ഥാപിതമായി നിർമ്മിക്കുന്നവൻ.",
+    "english": "He forms creatures systematically, in their proper proportions and forms."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "രോഗശാന്തിക്കും പ്രയാസങ്ങൾ അകലാനും ഉത്തമം.",
+    "english": "Beneficial for healing and relief from difficulties."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൃഷ്ടിപ്പിന്റെ തുടർച്ചയായ ഘട്ടങ്ങളെ ഇത് സൂചിപ്പിക്കുന്നു.",
+    "english": "It indicates successive stages of creation."
+  },
+  {
+    "card_id": "PDF-HN-012",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ശരിയായ ഉച്ചാരണം ശ്രദ്ധിക്കുക.",
+    "english": "Pay attention to correct pronunciation."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ക്ഷമിക്കണം, താങ്കൾ നൽകിയ പിഡിഎഫ് ഫയൽ ലഭ്യമായില്ല. അതിനാൽ വിവരങ്ങൾ വേർതിരിച്ചെടുക്കാൻ കഴിഞ്ഞില്ല.",
+    "english": "Sorry, the PDF file you provided was unavailable, so its information could not be extracted."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഫയൽ ലഭ്യമല്ലാത്തതിനാൽ വിവരങ്ങൾ ഇല്ല.",
+    "english": "No information is available because the file is unavailable."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഫയൽ ലഭ്യമല്ലാത്തതിനാൽ വിവരങ്ങൾ ഇല്ല.",
+    "english": "No information is available because the file is unavailable."
+  },
+  {
+    "card_id": "PDF-HN-013",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഫയൽ ലഭ്യമല്ലാത്തതിനാൽ വിവരങ്ങൾ ഇല്ല.",
+    "english": "No information is available because the file is unavailable."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികളെയും കീഴ്പ്പെടുത്തുന്നവൻ അല്ലാഹുവാണ്. അവന്റെ മഹത്വത്തിന് മുൻപിൽ എല്ലാവരും തലകുനിക്കുന്നു.",
+    "english": "Allah subdues all creatures. Everyone bows before His majesty."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അഹങ്കാരം ഇല്ലാതാകാൻ സഹായിക്കുന്നു. വിനയവും താഴ്മയും വർദ്ധിക്കുന്നു.",
+    "english": "Helps remove arrogance and increase humility and modesty."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സർവ്വതിനെയും കീഴ്പ്പെടുത്തുന്നവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah subdues everything."
+  },
+  {
+    "card_id": "PDF-HN-014",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് മുൻപിൽ എല്ലാവരും തുല്യരാണ്.",
+    "english": "Everyone is equal before Allah."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "സൗജന്യമായി ദാനം ചെയ്യുന്നവൻ അല്ലാഹുവാണ്. അവൻ പ്രതിഫലം പ്രതീക്ഷിക്കാതെ നൽകുന്നു.",
+    "english": "Allah gives freely, expecting no return."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഔദാര്യം വർദ്ധിക്കാൻ സഹായിക്കുന്നു. മനസ്സിന് വിശാലത ലഭിക്കുന്നു.",
+    "english": "Helps increase generosity and openness of heart."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും ദാനശീലനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most generous giver."
+  },
+  {
+    "card_id": "PDF-HN-015",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു നന്മ ചെയ്യുന്നവരെ സ്നേഹിക്കുന്നു.",
+    "english": "Allah loves those who do good."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികൾക്കും ഉപജീവനം നൽകുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah provides sustenance to all creatures."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഉപജീവനത്തിൽ വിശ്വാസം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps strengthen trust concerning sustenance."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഉപജീവനം നൽകുന്നതെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the Provider."
+  },
+  {
+    "card_id": "PDF-HN-016",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഉപജീവനം അല്ലാഹുവിങ്കൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Sustenance comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "വിജയവും നന്മയും നൽകുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah grants victory and goodness."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിജയം ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain success."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു വിജയം നൽകുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah grants victory."
+  },
+  {
+    "card_id": "PDF-HN-017",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "വിജയം അല്ലാഹുവിൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Victory comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാം അറിയുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah knows everything."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അറിവ് വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase knowledge."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സർവ്വജ്ഞനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is all-knowing."
+  },
+  {
+    "card_id": "PDF-HN-018",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് എല്ലാം അറിയാം.",
+    "english": "Allah knows all things."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഉപജീവനം ചുരുക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah restricts sustenance."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ക്ഷമ വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase patience."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഉപജീവനം ചുരുക്കുകയും വിശാലമാക്കുകയും ചെയ്യുന്നു.",
+    "english": "Allah restricts and expands sustenance."
+  },
+  {
+    "card_id": "PDF-HN-019",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഉപജീവനത്തിൽ അല്ലാഹുവിന്റെ ഇച്ഛയാണ് പ്രധാനം.",
+    "english": "Allah's will determines sustenance."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഉപജീവനം വിശാലമാക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah expands sustenance."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നന്ദിയുള്ളവരാകാൻ സഹായിക്കുന്നു.",
+    "english": "Helps cultivate gratitude."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഉപജീവനം വിശാലമാക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah expands sustenance."
+  },
+  {
+    "card_id": "PDF-HN-020",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഉപജീവനം അല്ലാഹുവിങ്കൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Sustenance comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-021",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിനയം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase humility."
+  },
+  {
+    "card_id": "PDF-HN-021",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു അഹങ്കാരികളെ താഴ്ത്തുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah brings down the arrogant."
+  },
+  {
+    "card_id": "PDF-HN-021",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അഹങ്കാരം പാടില്ല.",
+    "english": "One should not be arrogant."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "വിശ്വസിച്ചവരെ ഉയർത്തുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah raises those who believe."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഉയർച്ച ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain elevation."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു വിശ്വസിച്ചവരെ ഉയർത്തുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah raises those who believe."
+  },
+  {
+    "card_id": "PDF-HN-022",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "വിശ്വാസം മഹത്വത്തിന് കാരണമാകുന്നു.",
+    "english": "Faith is a cause of honour."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവർക്ക് മഹത്വം നൽകുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah grants honour to whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "മഹത്വം ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain honour."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "മഹത്വം അല്ലാഹുവിന് മാത്രമേ ഉള്ളൂ എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that honour belongs to Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-023",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "മഹത്വം അല്ലാഹുവിൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Honour comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാം കേൾക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah hears everything."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പ്രാർത്ഥനയിൽ വിശ്വാസം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps strengthen confidence in supplication."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാം കേൾക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah hears everything."
+  },
+  {
+    "card_id": "PDF-HN-025",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് എല്ലാം കേൾക്കാം.",
+    "english": "Allah can hear all things."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാം കാണുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah sees everything."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അല്ലാഹുവിന്റെ സാന്നിധ്യം ബോധ്യമാകാൻ സഹായിക്കുന്നു.",
+    "english": "Helps cultivate awareness of Allah's presence."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാം കാണുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah sees everything."
+  },
+  {
+    "card_id": "PDF-HN-026",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് എല്ലാം കാണാം.",
+    "english": "Allah can see all things."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ന്യായവിധി നടത്തുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah passes judgement."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നീതിബോധം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase a sense of justice."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും നല്ല ന്യായാധിപനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the best of judges."
+  },
+  {
+    "card_id": "PDF-HN-027",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ന്യായവിധി അല്ലാഹുവിന് മാത്രമേ ഉള്ളൂ.",
+    "english": "Judgement belongs to Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "നീതിയുള്ളവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is just."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നീതി പുലർത്താൻ സഹായിക്കുന്നു.",
+    "english": "Helps uphold justice."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു നീതിയുള്ളവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is just."
+  },
+  {
+    "card_id": "PDF-HN-028",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നീതി പുലർത്തണം.",
+    "english": "One should uphold justice."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തന്റെ ദാസന്മാരെ സ്നേഹിക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah loves His servants."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സ്നേഹം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase love."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സ്നേഹിക്കുന്നവരെ സ്നേഹിക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah loves those who love Him."
+  },
+  {
+    "card_id": "PDF-HN-030",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "സ്നേഹം അല്ലാഹുവിൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Love comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അല്ലാഹു മനുഷ്യരുടെ എല്ലാ കർമ്മങ്ങളും കൃത്യമായി കണക്കാക്കുന്നവനാണ്. അവൻ എല്ലാവർക്കും മതിയായവനും എല്ലാ കാര്യങ്ങൾക്കും കണക്ക് ചോദിക്കുന്നവനുമാണ്.",
+    "english": "Allah precisely accounts for all human deeds. He is sufficient for everyone and calls everyone to account for all matters."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം പതിവായി ചൊല്ലുന്നത് ശത്രുക്കളുടെ ശല്യത്തിൽ നിന്ന് സംരക്ഷണം നൽകുകയും സാമ്പത്തിക സുരക്ഷ ഉറപ്പാക്കുകയും ചെയ്യുന്നു.",
+    "english": "Regularly reciting this name provides protection from enemies' harassment and ensures financial security."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഇമാം ഗസാലിയുടെ അഭിപ്രായത്തിൽ, തന്നെ ആശ്രയിക്കുന്നവർക്ക് അല്ലാഹു പര്യാപ്തനാണ് എതിനാണ് ഇതിന്റെ വിവക്ഷ.",
+    "english": "According to Imam al-Ghazali, it means that Allah is sufficient for those who rely on Him."
+  },
+  {
+    "card_id": "PDF-HN-041",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിനെ മാത്രം ഭയപ്പെടുകയും അവനിൽ മാത്രം ആശ്രയിക്കുകയും ചെയ്യുക.",
+    "english": "Fear Allah alone and rely on Him alone."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അല്ലാഹുവിന്റെ മഹത്വം മനസ്സിലാക്കി ഈ നാമം ഉരുവിടുന്നത് മനസ്സിൽ ഭക്തിയും ആദരവും വർദ്ധിപ്പിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Reciting this name with an understanding of Allah's majesty helps increase devotion and reverence in the heart."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ 'മഹത്വത്തിനും ഔദാര്യത്തിനും ഉടമ' എന്ന് വിശേഷിപ്പിക്കപ്പെട്ടിരിക്കുന്നു.",
+    "english": "The Quran describes Him as the possessor of majesty and generosity."
+  },
+  {
+    "card_id": "PDF-HN-042",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "മഹത്വം അല്ലാഹുവിന് മാത്രമാണ്, അഹങ്കാരം പാടില്ല.",
+    "english": "Majesty belongs to Allah alone; one should not be arrogant."
+  },
+  {
+    "card_id": "PDF-HN-044",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "തീരുമാനങ്ങളെടുക്കുമ്പോൾ ഈ നാമം ചൊല്ലുന്നത് ശരിയായ തീരുമാനത്തിലെത്താൻ സഹായിക്കുന്നു.",
+    "english": "Reciting this name when making decisions helps one reach the right decision."
+  },
+  {
+    "card_id": "PDF-HN-044",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "നേർവഴിയും പിഴവുകളും വ്യക്തമാക്കുന്നവൻ അല്ലാഹുവാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah makes guidance and error clear."
+  },
+  {
+    "card_id": "PDF-HN-044",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നേർവഴി തേടി അല്ലാഹുവിനോട് പ്രാർത്ഥിക്കണം.",
+    "english": "Pray to Allah for guidance."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "കഷ്ടപ്പാടുകളിൽ ഈ നാമം ചൊല്ലുന്നത് സഹനശക്തി നൽകുകയും മനസ്സിന് ശാന്തത നൽകുകയും ചെയ്യുന്നു.",
+    "english": "Reciting this name during hardships gives endurance and peace of mind."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സഹനമുള്ളവനാണെന്നും പാപികൾക്ക് അവസരം നൽകുന്നുവെന്നും ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is forbearing and gives sinners an opportunity."
+  },
+  {
+    "card_id": "PDF-HN-045",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "മനുഷ്യരും സഹനം കാണിക്കണം, പക്ഷെ അത് അല്ലാഹുവിന് മാത്രമുള്ള ഗുണമല്ല.",
+    "english": "Human beings should also be patient; patience is not an attribute exclusive to Allah."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "വിശ്വസിക്കുന്നവരുടെ സംരക്ഷകനും മിത്രവുമാണ് അല്ലാഹു. അവൻ അവരെ അന്ധകാരത്തിൽ നിന്ന് പ്രകാശത്തിലേക്ക് നയിക്കുന്നു.",
+    "english": "Allah is the protector and ally of believers. He leads them from darkness into light."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം ചൊല്ലുന്നത് അല്ലാഹുവിന്റെ സംരക്ഷണം നേടാൻ സഹായിക്കും.",
+    "english": "Reciting this name helps one obtain Allah's protection."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു വിശ്വാസികളുടെ സംരക്ഷകനാണ് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the protector of believers."
+  },
+  {
+    "card_id": "PDF-HN-056",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിൽ ആശ്രയിക്കുന്നവർക്ക് അവൻ സംരക്ഷണം നൽകുന്നു.",
+    "english": "Allah protects those who rely on Him."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അല്ലാഹു ഏറ്റവും സ്തുതിക്കപ്പെട്ടവനാണ്. അവന്റെ എല്ലാ പ്രവൃത്തികളും സ്തുതിയർഹമാണ്.",
+    "english": "Allah is the most praised. All His actions deserve praise."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം ചൊല്ലുന്നത് നന്ദിയും സ്തുതിയും വർദ്ധിപ്പിക്കും.",
+    "english": "Reciting this name increases gratitude and praise."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "എല്ലാ സ്തുതിയും അല്ലാഹുവിനാണ് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that all praise belongs to Allah."
+  },
+  {
+    "card_id": "PDF-HN-057",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിനെ സ്തുതിക്കുന്നത് വിശ്വാസത്തിന്റെ ഭാഗമാണ്.",
+    "english": "Praising Allah is part of faith."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങളും കൃത്യമായി കണക്കാക്കി വെക്കുന്നവൻ. ഒന്നും അവനിൽ നിന്ന് ഒളിച്ചിരിക്കുന്നില്ല.",
+    "english": "He precisely accounts for everything. Nothing is hidden from Him."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം സ്മരിക്കുന്നത് ഉത്തരവാദിത്തബോധം വർദ്ധിപ്പിക്കും.",
+    "english": "Remembering this name increases a sense of responsibility."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാ കാര്യങ്ങളുടെയും കണക്ക് സൂക്ഷിക്കുന്നുണ്ട്.",
+    "english": "Allah keeps an account of all things."
+  },
+  {
+    "card_id": "PDF-HN-058",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "പരലോകത്ത് എല്ലാ കർമ്മങ്ങൾക്കും കണക്ക് ചോദിക്കപ്പെടും.",
+    "english": "All deeds will be called to account in the Hereafter."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികളുടെയും ആരംഭക്കാരൻ അല്ലാഹുവാണ്. അവൻ ആദ്യമായി സൃഷ്ടിച്ചവൻ.",
+    "english": "Allah originates all creatures. He is the One who first created them."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം ചൊല്ലുന്നത് പുതിയ തുടക്കങ്ങൾക്ക് അനുഗ്രഹം നേടും.",
+    "english": "Reciting this name brings blessing to new beginnings."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് സൃഷ്ടിയുടെ ആരംഭം എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the originator of creation."
+  },
+  {
+    "card_id": "PDF-HN-059",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ആരംഭിക്കുന്നവനും അവസാനിപ്പിക്കുന്നവനും അല്ലാഹുവാണ്.",
+    "english": "Allah is the One who begins and brings to an end."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "സൃഷ്ടികളെ മരണശേഷം വീണ്ടും ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്നവൻ. അവൻ ആരംഭിക്കുകയും തിരിച്ചുകൊണ്ടുവരികയും ചെയ്യുന്നു.",
+    "english": "He raises creatures again after death. He originates and restores them."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഈ നാമം സ്മരിക്കുന്നത് പരലോക വിശ്വാസം ദൃഢമാക്കും.",
+    "english": "Remembering this name strengthens belief in the Hereafter."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "പുനരുത്ഥാനം അല്ലാഹുവിന്റെ കഴിവുകളിൽ ഒന്നാണ്.",
+    "english": "Resurrection is among Allah's powers."
+  },
+  {
+    "card_id": "PDF-HN-060",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ആരംഭിക്കുന്നവനും തിരിച്ചുകൊണ്ടുവരുന്നവനും അല്ലാഹുവാണ്.",
+    "english": "Allah is the One who originates and restores."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ജീവനുളള എല്ലാറ്റിനും മരണം നൽകുന്നവൻ അല്ലാഹുവാണ്. ജീവന്റെയും മരണത്തിന്റെയും നിയന്ത്രണം അവന്റെ കൈകളിലാണ്.",
+    "english": "Allah gives death to everything that lives. Control of life and death is in His hands."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "മരണത്തെക്കുറിച്ചുള്ള ഭയം അകലാനും ഈമാൻ ദൃഢമാക്കാനും ഇത് പാരായണം ചെയ്യുന്നത് നല്ലതാണ്.",
+    "english": "Reciting this is good for dispelling fear of death and strengthening faith."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മാത്രമാണ് യഥാർത്ഥത്തിൽ ജീവൻ നൽകുന്നവനും എടുക്കുന്നവനും.",
+    "english": "Allah alone truly gives and takes life."
+  },
+  {
+    "card_id": "PDF-HN-061",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഇമാം തിർമിദിയുടെ 99 നാമങ്ങളുടെ പട്ടികയിൽ ഈ നാമം ഉൾപ്പെടുത്തിയിട്ടുണ്ട്.",
+    "english": "This name is included in Imam al-Tirmidhi's list of 99 names."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തുടക്കമോ ഒടുക്കമോ ഇല്ലാതെ, എപ്പോഴും ജീവിച്ചിരിക്കുന്നവനാണ് അല്ലാഹു. അവൻ ഒരിക്കലും നാശമില്ല.",
+    "english": "Allah is ever-living, without beginning or end. He never perishes."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ആയുരാരോഗ്യസൗഖ്യത്തിനും രോഗശാന്തിക്കും ഇത് പതിവാക്കുന്നത് ഗുണകരമാണ്.",
+    "english": "Making this a regular practice is beneficial for health, well-being and healing."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ആയത്തുൽ കുർസിയിൽ പറയുന്ന പ്രധാന നാമങ്ങളിലൊന്നാണിത്.",
+    "english": "It is one of the principal names mentioned in Ayat al-Kursi."
+  },
+  {
+    "card_id": "PDF-HN-062",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ പലയിടത്തും ഈ നാമം വ്യക്തമായി പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "This name is explicitly mentioned in several places in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "പ്രപഞ്ചത്തിലെ എല്ലാ കാര്യങ്ങളെയും നിയന്ത്രിക്കുകയും നിലനിർത്തുകയും ചെയ്യുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah governs and sustains everything in the universe."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ കാര്യങ്ങൾക്കും അല്ലാഹുവിനെ ആശ്രയിക്കാൻ ഈ നാമം പഠിപ്പിക്കുന്നു.",
+    "english": "This name teaches reliance on Allah in all matters."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ആയത്തുൽ കുർസിയിൽ ഈ നാമം പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "This name is mentioned in Ayat al-Kursi."
+  },
+  {
+    "card_id": "PDF-HN-063",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് തുല്യനായി ആരുമില്ല, എല്ലാം അവനെ ആശ്രയിച്ചിരിക്കുന്നു.",
+    "english": "No one is equal to Allah; everything depends on Him."
+  },
+  {
+    "card_id": "PDF-HN-064",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അല്ലാഹു ഏകനാണ്. അവന് പങ്കാളികളില്ല, തുല്യരില്ല.",
+    "english": "Allah is one. He has no partners or equals."
+  },
+  {
+    "card_id": "PDF-HN-064",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഏകത്വവിശ്വാസം ദൃഢമാക്കാൻ ഈ നാമം ജപിക്കുന്നത് ഉത്തമമാണ്.",
+    "english": "Reciting this name is beneficial for strengthening belief in divine unity."
+  },
+  {
+    "card_id": "PDF-HN-064",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഇഖ്ലാസ് സൂറത്തിൽ അല്ലാഹുവിന്റെ ഐക്യം വ്യക്തമാക്കുന്നു.",
+    "english": "Surat al-Ikhlas makes Allah's oneness clear."
+  },
+  {
+    "card_id": "PDF-HN-064",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "തൗഹീദിന്റെ അടിസ്ഥാനമാണ് അല്ലാഹുവിന്റെ ഐക്യം.",
+    "english": "Allah's oneness is the foundation of tawhid."
+  },
+  {
+    "card_id": "PDF-HN-065",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "പൂർണ്ണമായും ഏകനായവൻ. അവന് ആരും തുല്യരല്ല, പങ്കാളികളില്ല.",
+    "english": "He is absolutely one, without any equal or partner."
+  },
+  {
+    "card_id": "PDF-HN-065",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിശ്വാസത്തിന്റെ അടിത്തറ ശക്തമാക്കാൻ ഈ നാമം പാരായണം ചെയ്യുക.",
+    "english": "Recite this name to strengthen the foundation of faith."
+  },
+  {
+    "card_id": "PDF-HN-065",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് ഇഖ്ലാസിൽ 'ഖുൽ ഹുവല്ലാഹു അഹദ്' എന്ന് പറയുന്നു.",
+    "english": "Surat al-Ikhlas says, 'Say: He is Allah, One.'"
+  },
+  {
+    "card_id": "PDF-HN-065",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "തൗഹീദിന്റെ ഏറ്റവും പ്രധാനപ്പെട്ട നാമങ്ങളിലൊന്ന്.",
+    "english": "One of the most important names concerning tawhid."
+  },
+  {
+    "card_id": "PDF-HN-066",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാവരും ആശ്രയിക്കുന്നവൻ, പക്ഷെ അവൻ ആരെയും ആശ്രയിക്കുന്നില്ല.",
+    "english": "Everyone depends on Him, but He depends on no one."
+  },
+  {
+    "card_id": "PDF-HN-066",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ ആവശ്യങ്ങൾക്കും അല്ലാഹുവിനെ മാത്രം ആശ്രയിക്കാൻ ഈ നാമം പഠിപ്പിക്കുന്നു.",
+    "english": "This name teaches reliance on Allah alone for every need."
+  },
+  {
+    "card_id": "PDF-HN-066",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൂറത്ത് ഇഖ്ലാസിൽ 'അല്ലാഹുസ് സമദ്' എന്ന് പറയുന്നു.",
+    "english": "Surat al-Ikhlas says, 'Allah, the Eternal Refuge.'"
+  },
+  {
+    "card_id": "PDF-HN-066",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മാത്രമാണ് പൂർണ്ണമായ ആശ്രയം.",
+    "english": "Allah alone is the complete refuge."
+  },
+  {
+    "card_id": "PDF-HN-068",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങളിലും പൂർണ്ണ അധികാരവും കഴിവും ഉള്ളവൻ.",
+    "english": "He possesses complete authority and power over all things."
+  },
+  {
+    "card_id": "PDF-HN-068",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ കാര്യങ്ങൾക്കും അല്ലാഹുവിനെ ആശ്രയിക്കാൻ ഈ നാമം പഠിപ്പിക്കുന്നു.",
+    "english": "This name teaches reliance on Allah in all matters."
+  },
+  {
+    "card_id": "PDF-HN-068",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് എല്ലാ കാര്യങ്ങളും സാധ്യമാണ് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that all things are possible for Allah."
+  },
+  {
+    "card_id": "PDF-HN-068",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ കഴിവിന് പരിധിയില്ല.",
+    "english": "There is no limit to Allah's power."
+  },
+  {
+    "card_id": "PDF-HN-069",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവരെ മുന്നോട്ട് കൊണ്ടുവരുന്നവൻ, താൻ ഉദ്ദേശിക്കുന്നവരെ പിന്നോട്ട് പോകുന്നവനും.",
+    "english": "He brings forward whomever He wills and puts back whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-069",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിജയവും പുരോഗതിയും നേടാൻ ഈ നാമം ജപിക്കുന്നത് ഗുണകരമാണ്.",
+    "english": "Reciting this name is beneficial for attaining success and progress."
+  },
+  {
+    "card_id": "PDF-HN-069",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നവരെ ഉയർത്തുന്നു.",
+    "english": "Allah raises whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-069",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ തീരുമാനത്തിന് മുകളിൽ ആർക്കും ചോദ്യം ചെയ്യാൻ കഴിയില്ല.",
+    "english": "No one can challenge Allah's decision."
+  },
+  {
+    "card_id": "PDF-HN-070",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിനയവും അടക്കവും വർദ്ധിപ്പിക്കാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps increase humility and restraint."
+  },
+  {
+    "card_id": "PDF-HN-070",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നവരെ താഴ്ത്തുന്നു.",
+    "english": "Allah brings low whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-070",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ തീരുമാനത്തിന് മുകളിൽ ആർക്കും ചോദ്യം ചെയ്യാൻ കഴിയില്ല.",
+    "english": "No one can challenge Allah's decision."
+  },
+  {
+    "card_id": "PDF-HN-073",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനും മുന്പുള്ളവനാണ് അല്ലാഹു. അവന് ഒരു തുടക്കമില്ല.",
+    "english": "Allah is before everything. He has no beginning."
+  },
+  {
+    "card_id": "PDF-HN-073",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പുതിയ കാര്യങ്ങൾ തുടങ്ങുമ്പോൾ ചൊല്ലുന്നത് നല്ലതാണ്.",
+    "english": "It is good to recite when beginning new things."
+  },
+  {
+    "card_id": "PDF-HN-073",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ സൂറത്തുൽ ഹദീദിൽ ഇത് വ്യക്തമാക്കുന്നു.",
+    "english": "This is made clear in Surat al-Hadid in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-073",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് തുടക്കമില്ല, അവൻ ആദിയും അന്തവുമാണ്.",
+    "english": "Allah has no beginning; He is the First and the Last."
+  },
+  {
+    "card_id": "PDF-HN-074",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനും ശേഷം അവശേഷിക്കുന്നവൻ അല്ലാഹുവാണ്. അവന് ഒടുക്കമില്ല.",
+    "english": "Allah remains after everything. He has no end."
+  },
+  {
+    "card_id": "PDF-HN-074",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പരലോക വിശ്വാസം ദൃഢമാക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps strengthen belief in the Hereafter."
+  },
+  {
+    "card_id": "PDF-HN-074",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ സൂറത്തുൽ ഹദീദിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in Surat al-Hadid in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-074",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ആദിയും അന്തവും.",
+    "english": "Allah is the First and the Last."
+  },
+  {
+    "card_id": "PDF-HN-075",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനും മീതെയായവൻ, പ്രത്യക്ഷമായ തെളിവുകളിലൂടെ അറിയാൻ കഴിയുന്നവൻ.",
+    "english": "He is above everything and can be known through manifest signs."
+  },
+  {
+    "card_id": "PDF-HN-075",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അല്ലാഹുവിന്റെ അസ്തിത്വത്തിൽ ഉറച്ച വിശ്വാസം നൽകുന്നു.",
+    "english": "Gives firm belief in Allah's existence."
+  },
+  {
+    "card_id": "PDF-HN-075",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ സൂറത്തുൽ ഹദീദിൽ വന്നിട്ടുണ്ട്.",
+    "english": "Appears in Surat al-Hadid in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-075",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ മഹത്വം പ്രത്യക്ഷമാണ്.",
+    "english": "Allah's majesty is manifest."
+  },
+  {
+    "card_id": "PDF-HN-076",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ രഹസ്യങ്ങളും അറിയുന്നവൻ, പ്രത്യക്ഷത്തിൽ കാണാത്തവൻ.",
+    "english": "He knows every secret and is not visibly seen."
+  },
+  {
+    "card_id": "PDF-HN-076",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അന്തർജ്ഞാനം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase inner insight."
+  },
+  {
+    "card_id": "PDF-HN-076",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ സൂറത്തുൽ ഹദീദിൽ പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "Mentioned in Surat al-Hadid in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-076",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു രഹസ്യങ്ങളെല്ലാം അറിയുന്നു.",
+    "english": "Allah knows all secrets."
+  },
+  {
+    "card_id": "PDF-HN-077",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ കാര്യങ്ങളും അല്ലാഹുവിനെ ഏൽപ്പിക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches entrusting all matters to Allah."
+  },
+  {
+    "card_id": "PDF-HN-077",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ പലയിടത്തും ഈ നാമം വന്നിട്ടുണ്ട്.",
+    "english": "This name appears in several places in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-077",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് യഥാർത്ഥ ഭരണാധികാരി.",
+    "english": "Allah is the true ruler."
+  },
+  {
+    "card_id": "PDF-HN-078",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഏറ്റവും ഉന്നതനായവൻ, എല്ലാ സൃഷ്ടികളിൽ നിന്നും ഉയർന്നവൻ.",
+    "english": "The Most High, exalted above all creatures."
+  },
+  {
+    "card_id": "PDF-HN-078",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിനയവും താഴ്മയും വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase humility and modesty."
+  },
+  {
+    "card_id": "PDF-HN-078",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും ഉന്നതനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the Most High."
+  },
+  {
+    "card_id": "PDF-HN-078",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് മീതെ ആരുമില്ല.",
+    "english": "No one is above Allah."
+  },
+  {
+    "card_id": "PDF-HN-079",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ നന്മകളും ചെയ്യുന്നവൻ, സൃഷ്ടികളോട് കരുണ കാട്ടുന്നവൻ.",
+    "english": "He does every good and shows mercy to creatures."
+  },
+  {
+    "card_id": "PDF-HN-079",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നന്മ ചെയ്യാൻ പ്രേരിപ്പിക്കുന്നു.",
+    "english": "Encourages doing good."
+  },
+  {
+    "card_id": "PDF-HN-079",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും നന്മ ചെയ്യുന്നവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the greatest doer of good."
+  },
+  {
+    "card_id": "PDF-HN-079",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ കരുണ അനന്തമാണ്.",
+    "english": "Allah's mercy is boundless."
+  },
+  {
+    "card_id": "PDF-HN-080",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അടിയാർ പശ്ചാത്തപിച്ച് തിരിച്ചുവരുമ്പോൾ അവരുടെ തൗബ സ്വീകരിക്കുന്നവൻ.",
+    "english": "He accepts His servants' repentance when they turn back to Him."
+  },
+  {
+    "card_id": "PDF-HN-080",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പാപങ്ങളിൽ നിന്ന് മടങ്ങിവരാൻ പ്രേരിപ്പിക്കുന്നു.",
+    "english": "Encourages turning away from sins."
+  },
+  {
+    "card_id": "PDF-HN-080",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു പശ്ചാത്താപം സ്വീകരിക്കുന്നവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah accepts repentance."
+  },
+  {
+    "card_id": "PDF-HN-080",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു പശ്ചാത്തപിക്കുന്നവരെ സ്നേഹിക്കുന്നു.",
+    "english": "Allah loves those who repent."
+  },
+  {
+    "card_id": "PDF-HN-081",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അക്രമികളിൽ നിന്ന് പ്രതികാരം ചെയ്യുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah exacts retribution from wrongdoers."
+  },
+  {
+    "card_id": "PDF-HN-081",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അക്രമത്തിൽ നിന്ന് വിട്ടുനിൽക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches abstaining from wrongdoing."
+  },
+  {
+    "card_id": "PDF-HN-081",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു അക്രമികൾക്ക് ശിക്ഷ നൽകുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah punishes wrongdoers."
+  },
+  {
+    "card_id": "PDF-HN-081",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു നീതിയുള്ളവനാണ്.",
+    "english": "Allah is just."
+  },
+  {
+    "card_id": "PDF-HN-082",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "പാപങ്ങളെ പൊറുക്കുന്നവൻ, ശിക്ഷിക്കാതെ വിടുന്നവൻ.",
+    "english": "He pardons sins and refrains from punishment."
+  },
+  {
+    "card_id": "PDF-HN-082",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പാപമോചനത്തിന് കാരണമാകുന്നു.",
+    "english": "Leads to forgiveness of sins."
+  },
+  {
+    "card_id": "PDF-HN-082",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും പൊറുക്കുന്നവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most forgiving."
+  },
+  {
+    "card_id": "PDF-HN-082",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു പൊറുക്കുന്നത് ഇഷ്ടപ്പെടുന്നു.",
+    "english": "Allah loves to pardon."
+  },
+  {
+    "card_id": "PDF-HN-083",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഏറ്റവും കരുണയുള്ളവൻ, സൃഷ്ടികളോട് വാത്സല്യം കാട്ടുന്നവൻ.",
+    "english": "The most compassionate, showing tenderness to creatures."
+  },
+  {
+    "card_id": "PDF-HN-083",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "കരുണയും വാത്സല്യവും വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase compassion and tenderness."
+  },
+  {
+    "card_id": "PDF-HN-083",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും കരുണയുള്ളവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most merciful."
+  },
+  {
+    "card_id": "PDF-HN-083",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ കരുണ അനന്തമാണ്.",
+    "english": "Allah's mercy is boundless."
+  },
+  {
+    "card_id": "PDF-HN-087",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അന്ത്യനാളിൽ മനുഷ്യരെല്ലാവരെയും ഒരുമിച്ച്കൂട്ടുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah will gather all people together on the Last Day."
+  },
+  {
+    "card_id": "PDF-HN-087",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നഷ്ടപ്പെട്ട വസ്തുക്കൾ തിരികെ ലഭിക്കാൻ ഈ നാമം ജപിക്കുന്നത് ഉത്തമമാണ്.",
+    "english": "Reciting this name is beneficial for recovering lost possessions."
+  },
+  {
+    "card_id": "PDF-HN-087",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാറ്റിനെയും ഒന്നിച്ച് ചേർക്കുന്നവനാണ്.",
+    "english": "Allah brings everything together."
+  },
+  {
+    "card_id": "PDF-HN-087",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ ഈ നാമം പരാമർശിച്ചിട്ടുണ്ട്.",
+    "english": "This name is mentioned in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-088",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അല്ലാഹുവിന് ആരുടെയും സഹായം ആവശ്യമില്ല. അവൻ സ്വയം പര്യാപ്തനാണ്.",
+    "english": "Allah needs no one's help. He is self-sufficient."
+  },
+  {
+    "card_id": "PDF-HN-088",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സാമ്പത്തിക ബുദ്ധിമുട്ടുകൾ മാറാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps relieve financial difficulties."
+  },
+  {
+    "card_id": "PDF-HN-088",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "സൃഷ്ടികൾക്കെല്ലാം അല്ലാഹുവിനെ ആവശ്യമുണ്ട്, എന്നാൽ അല്ലാഹുവിന് ആരെയും ആവശ്യമില്ല.",
+    "english": "All creatures need Allah, but Allah needs no one."
+  },
+  {
+    "card_id": "PDF-HN-088",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "സമ്പൂർണ്ണനായ അല്ലാഹുവിന്റെ ഗുണമാണിത്.",
+    "english": "It is an attribute of Allah's perfection."
+  },
+  {
+    "card_id": "PDF-HN-089",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവർക്ക് താൻ ഉദ്ദേശിക്കുന്നത് നൽകാതിരിക്കുന്നവൻ, താൻ ഉദ്ദേശിക്കുന്നവർക്ക് താൻ ഉദ്ദേശിക്കുന്നത് നൽകാതിരിക്കുന്നവൻ.",
+    "english": "He withholds what He wills from whomever He wills; He withholds what He wills from whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-089",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ദോഷങ്ങളിൽ നിന്ന് സംരക്ഷണം ലഭിക്കാൻ സഹായിക്കും.",
+    "english": "Helps obtain protection from harm."
+  },
+  {
+    "card_id": "PDF-HN-089",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നത് തടയുന്നു.",
+    "english": "Allah withholds what He wills."
+  },
+  {
+    "card_id": "PDF-HN-089",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ തീരുമാനത്തിന് മുകളിൽ ആർക്കും ചോദ്യം ചെയ്യാൻ കഴിയില്ല.",
+    "english": "No one can challenge Allah's decision."
+  },
+  {
+    "card_id": "PDF-HN-090",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവർക്ക് കഷ്ടത നൽകുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah brings hardship to whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-090",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "കഷ്ടതകളിൽ ക്ഷമിക്കാൻ ഈ നാമം പഠിപ്പിക്കുന്നു.",
+    "english": "This name teaches patience in hardship."
+  },
+  {
+    "card_id": "PDF-HN-090",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഗുണവും ദോഷവും നൽകുന്നവൻ.",
+    "english": "Allah grants benefit and brings harm."
+  },
+  {
+    "card_id": "PDF-HN-090",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ പരീക്ഷണങ്ങളിൽ ക്ഷമിക്കണം.",
+    "english": "Be patient in Allah's trials."
+  },
+  {
+    "card_id": "PDF-HN-091",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവർക്ക് ഗുണം ചെയ്യുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah benefits whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-091",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഗുണങ്ങൾ ലഭിക്കാൻ ഈ നാമം ജപിക്കുന്നത് ഉത്തമമാണ്.",
+    "english": "Reciting this name is beneficial for obtaining good."
+  },
+  {
+    "card_id": "PDF-HN-091",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഗുണവും ദോഷവും നൽകുന്നവൻ.",
+    "english": "Allah grants benefit and brings harm."
+  },
+  {
+    "card_id": "PDF-HN-091",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിൽ നിന്നുള്ള ഗുണങ്ങൾക്ക് നന്ദി പറയണം.",
+    "english": "Be grateful for the benefits granted by Allah."
+  },
+  {
+    "card_id": "PDF-HN-092",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "അല്ലാഹുവാണ് ആകാശങ്ങൾക്കും ഭൂമിക്കും പ്രകാശം നൽകുന്നവൻ.",
+    "english": "Allah gives light to the heavens and the earth."
+  },
+  {
+    "card_id": "PDF-HN-092",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ഹൃദയത്തിന് പ്രകാശം ലഭിക്കാൻ ഈ നാമം ജപിക്കുന്നത് ഉത്തമമാണ്.",
+    "english": "Reciting this name is beneficial for bringing light to the heart."
+  },
+  {
+    "card_id": "PDF-HN-092",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ലോകങ്ങളുടെ പ്രകാശം എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the light of the worlds."
+  },
+  {
+    "card_id": "PDF-HN-092",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ പ്രകാശം സർവ്വവ്യാപകമാണ്.",
+    "english": "Allah's light is all-pervading."
+  },
+  {
+    "card_id": "PDF-HN-093",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "താൻ ഉദ്ദേശിക്കുന്നവർക്ക് നേർവഴി കാട്ടിക്കൊടുക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah guides whomever He wills."
+  },
+  {
+    "card_id": "PDF-HN-093",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ശരിയായ തീരുമാനങ്ങൾ എടുക്കാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps one make the right decisions."
+  },
+  {
+    "card_id": "PDF-HN-093",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു താൻ ഉദ്ദേശിക്കുന്നവരെ നേർവഴിയിലാക്കുന്നു.",
+    "english": "Allah guides those He wills."
+  },
+  {
+    "card_id": "PDF-HN-093",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നേർവഴി അല്ലാഹുവിൽ നിന്ന് മാത്രമാണ്.",
+    "english": "Guidance comes from Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-094",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "മാതൃകയില്ലാതെ അദ്ഭുതകരമായ സൃഷ്ടികൾ സൃഷ്ടിക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah creates wondrous creations without a prior model."
+  },
+  {
+    "card_id": "PDF-HN-094",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സൃഷ്ടിപരമായ കഴിവുകൾ വർദ്ധിക്കാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps increase creative abilities."
+  },
+  {
+    "card_id": "PDF-HN-094",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ സൃഷ്ടി അദ്ഭുതകരമാണ് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah's creation is wondrous."
+  },
+  {
+    "card_id": "PDF-HN-094",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് തുല്യനായി ആരുമില്ല.",
+    "english": "No one is equal to Allah."
+  },
+  {
+    "card_id": "PDF-HN-095",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എന്നെന്നും നിലനിൽക്കുന്നവൻ അല്ലാഹുവാണ്. അവന് ഒടുക്കമില്ല.",
+    "english": "Allah remains forever. He has no end."
+  },
+  {
+    "card_id": "PDF-HN-095",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ശാശ്വതമായ ജീവിതത്തിനായി ഈ നാമം ജപിക്കുന്നത് ഉത്തമമാണ്.",
+    "english": "Reciting this name is beneficial for seeking everlasting life."
+  },
+  {
+    "card_id": "PDF-HN-095",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മാത്രമാണ് ശാശ്വതമായി നിലനിൽക്കുന്നത്.",
+    "english": "Allah alone remains eternally."
+  },
+  {
+    "card_id": "PDF-HN-095",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "എല്ലാം നശിക്കും, അല്ലാഹു മാത്രം ബാക്കിയാകും.",
+    "english": "Everything will perish; Allah alone will remain."
+  },
+  {
+    "card_id": "PDF-HN-096",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികളും നശിച്ച ശേഷം അവശേഷിക്കുന്ന അവകാശി അല്ലാഹുവാണ്.",
+    "english": "Allah is the inheritor who remains after all creatures perish."
+  },
+  {
+    "card_id": "PDF-HN-096",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ലൗകിക മോഹങ്ങൾ കുറയാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps reduce worldly desires."
+  },
+  {
+    "card_id": "PDF-HN-096",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഭൂമിയുടെയും ആകാശത്തിന്റെയും അവകാശി എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the inheritor of the earth and the heavens."
+  },
+  {
+    "card_id": "PDF-HN-096",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "എല്ലാം അല്ലാഹുവിങ്കലേക്ക് മടങ്ങുന്നു.",
+    "english": "Everything returns to Allah."
+  },
+  {
+    "card_id": "PDF-HN-100",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനേക്കാളും മഹാനായവൻ അല്ലാഹുവാണ്. അവന്റെ മഹത്വത്തിന് പരിധിയില്ല.",
+    "english": "Allah is greater than everything. His greatness has no limit."
+  },
+  {
+    "card_id": "PDF-HN-100",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിനയവും താഴ്മയും വർദ്ധിക്കാൻ ഈ നാമം സഹായിക്കും.",
+    "english": "This name helps increase humility and modesty."
+  },
+  {
+    "card_id": "PDF-HN-100",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും മഹാനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the greatest."
+  },
+  {
+    "card_id": "PDF-HN-100",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ മഹത്വത്തിന് മുന്നിൽ എല്ലാം ചെറുതാണ്.",
+    "english": "Everything is small before Allah's greatness."
+  },
+  {
+    "card_id": "PDF-HN-101",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ ലോകങ്ങളുടെയും നാഥൻ അല്ലാഹുവാണ്. അവൻ സൃഷ്ടിക്കുന്നു, പരിപാലിക്കുന്നു, വളർത്തുന്നു.",
+    "english": "Allah is the Lord of all worlds. He creates, sustains and nurtures."
+  },
+  {
+    "card_id": "PDF-HN-101",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ കാര്യങ്ങളിലും അല്ലാഹുവിനെ ആശ്രയിക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches reliance on Allah in all matters."
+  },
+  {
+    "card_id": "PDF-HN-101",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഖുർആനിൽ ഏറ്റവും കൂടുതൽ വന്ന നാമമാണ് 'റബ്ബ്'.",
+    "english": "'Rabb' is the name occurring most frequently in the Quran."
+  },
+  {
+    "card_id": "PDF-HN-101",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് എല്ലാറ്റിന്റെയും നാഥൻ.",
+    "english": "Allah is the Lord of everything."
+  },
+  {
+    "card_id": "PDF-HN-102",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങളും വ്യക്തമാക്കുന്നവൻ, തെളിവുകൾ നൽകുന്നവൻ.",
+    "english": "He makes all matters clear and provides proofs."
+  },
+  {
+    "card_id": "PDF-HN-102",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അറിവും വ്യക്തതയും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain knowledge and clarity."
+  },
+  {
+    "card_id": "PDF-HN-102",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു വ്യക്തമായ തെളിവുകൾ നൽകുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah provides clear proofs."
+  },
+  {
+    "card_id": "PDF-HN-102",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ വചനങ്ങൾ വ്യക്തമാണ്.",
+    "english": "Allah's words are clear."
+  },
+  {
+    "card_id": "PDF-HN-103",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ ആവശ്യങ്ങൾക്കും പര്യാപ്തനായവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is sufficient for every need."
+  },
+  {
+    "card_id": "PDF-HN-103",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിഷമങ്ങളിൽ ഈ നാമം ചൊല്ലുന്നത് മതിയായ സഹായം ലഭിക്കാൻ കാരണമാകും.",
+    "english": "Reciting this name during distress leads to sufficient help."
+  },
+  {
+    "card_id": "PDF-HN-103",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു പര്യാപ്തനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is sufficient."
+  },
+  {
+    "card_id": "PDF-HN-103",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മതിയായവനാണ്.",
+    "english": "Allah is sufficient."
+  },
+  {
+    "card_id": "PDF-HN-104",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങൾക്കും കഴിവുള്ളവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah has power over all things."
+  },
+  {
+    "card_id": "PDF-HN-104",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "കഴിവും ശക്തിയും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain ability and strength."
+  },
+  {
+    "card_id": "PDF-HN-104",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സർവ്വശക്തനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is all-powerful."
+  },
+  {
+    "card_id": "PDF-HN-104",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് എല്ലാത്തിനും കഴിവുണ്ട്.",
+    "english": "Allah has power to do everything."
+  },
+  {
+    "card_id": "PDF-HN-105",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സൃഷ്ടികളെയും സൃഷ്ടിക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah creates all creatures."
+  },
+  {
+    "card_id": "PDF-HN-105",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സൃഷ്ടിപരമായ കഴിവുകൾ വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase creative abilities."
+  },
+  {
+    "card_id": "PDF-HN-105",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും നല്ല സൃഷ്ടാവാണ് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the best of creators."
+  },
+  {
+    "card_id": "PDF-HN-105",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് സ്രഷ്ടാവ്.",
+    "english": "Allah is the Creator."
+  },
+  {
+    "card_id": "PDF-HN-106",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനെയും സംരക്ഷിക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah protects everything."
+  },
+  {
+    "card_id": "PDF-HN-106",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സുരക്ഷിതത്വം ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain safety."
+  },
+  {
+    "card_id": "PDF-HN-106",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാറ്റിനെയും സംരക്ഷിക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah protects everything."
+  },
+  {
+    "card_id": "PDF-HN-106",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഏറ്റവും നല്ല സംരക്ഷിതാവ്.",
+    "english": "Allah is the best protector."
+  },
+  {
+    "card_id": "PDF-HN-108",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഏറ്റവും യുക്തിയുള്ളവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is the most wise."
+  },
+  {
+    "card_id": "PDF-HN-108",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "യുക്തിയും ജ്ഞാനവും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain wisdom and knowledge."
+  },
+  {
+    "card_id": "PDF-HN-108",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും യുക്തിമാനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most wise."
+  },
+  {
+    "card_id": "PDF-HN-108",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ തീരുമാനങ്ങളിൽ യുക്തിയുണ്ട്.",
+    "english": "There is wisdom in Allah's decisions."
+  },
+  {
+    "card_id": "PDF-HN-110",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "മഹിമയും ബഹുമാനവും ഉള്ളവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah possesses glory and honour."
+  },
+  {
+    "card_id": "PDF-HN-110",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ബഹുമാനവും ആദരവും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain honour and respect."
+  },
+  {
+    "card_id": "PDF-HN-110",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മഹിമയുള്ളവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is glorious."
+  },
+  {
+    "card_id": "PDF-HN-110",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് മഹിമയും ബഹുമാനവും ഉടമപ്പെട്ടതാണ്.",
+    "english": "Glory and honour belong to Allah."
+  },
+  {
+    "card_id": "PDF-HN-111",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "മരിച്ചവരെ ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah raises the dead."
+  },
+  {
+    "card_id": "PDF-HN-111",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "മരണാനന്തര ജീവിതത്തിൽ വിശ്വാസം ദൃഢമാക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps strengthen belief in life after death."
+  },
+  {
+    "card_id": "PDF-HN-111",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു മരിച്ചവരെ ഉയിർത്തെഴുന്നേൽപ്പിക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah raises the dead."
+  },
+  {
+    "card_id": "PDF-HN-111",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "പരലോക വിശ്വാസം ഇസ്ലാമിന്റെ അടിസ്ഥാനമാണ്.",
+    "english": "Belief in the Hereafter is a foundation of Islam."
+  },
+  {
+    "card_id": "PDF-HN-112",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങൾക്കും സാക്ഷിയായവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is a witness to all things."
+  },
+  {
+    "card_id": "PDF-HN-112",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "എല്ലാ കാര്യങ്ങളിലും അല്ലാഹു സാക്ഷിയുണ്ടെന്ന് ഓർമ്മപ്പെടുത്തുന്നു.",
+    "english": "Reminds one that Allah witnesses all matters."
+  },
+  {
+    "card_id": "PDF-HN-112",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു എല്ലാറ്റിനും സാക്ഷിയാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is a witness to everything."
+  },
+  {
+    "card_id": "PDF-HN-112",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിൽ നിന്ന് ഒന്നും മറച്ചുവെക്കാൻ കഴിയില്ല.",
+    "english": "Nothing can be hidden from Allah."
+  },
+  {
+    "card_id": "PDF-HN-113",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ കാര്യങ്ങളും ഏൽപ്പിക്കാൻ കഴിയുന്നവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is the One to whom all matters can be entrusted."
+  },
+  {
+    "card_id": "PDF-HN-113",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിഷമങ്ങളിൽ അല്ലാഹുവിനെ ഭരമേൽപ്പിക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches entrusting oneself to Allah during distress."
+  },
+  {
+    "card_id": "PDF-HN-113",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിൽ ഭരമേൽപ്പിക്കുന്നവർക്ക് അവൻ മതിയായവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is sufficient for those who rely on Him."
+  },
+  {
+    "card_id": "PDF-HN-113",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "തവക്കുൽ (ഭരമേൽപ്പിക്കൽ) വിശ്വാസത്തിന്റെ ഭാഗമാണ്.",
+    "english": "Tawakkul, or reliance on Allah, is part of faith."
+  },
+  {
+    "card_id": "PDF-HN-114",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ഏറ്റവും ശക്തനായവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is the most powerful."
+  },
+  {
+    "card_id": "PDF-HN-114",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ശക്തിയും കഴിവും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain strength and ability."
+  },
+  {
+    "card_id": "PDF-HN-114",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും ശക്തനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most powerful."
+  },
+  {
+    "card_id": "PDF-HN-114",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ ശക്തിക്ക് പരിധിയില്ല.",
+    "english": "Allah's power has no limit."
+  },
+  {
+    "card_id": "PDF-HN-115",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "ദൃഢതയുള്ളവൻ, ഉറച്ചവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is firm and steadfast."
+  },
+  {
+    "card_id": "PDF-HN-115",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "മനസ്സിന് ഉറപ്പും ദൃഢതയും ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain firmness and resolve of mind."
+  },
+  {
+    "card_id": "PDF-HN-115",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും ദൃഢനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most steadfast."
+  },
+  {
+    "card_id": "PDF-HN-115",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ ദൃഢതക്ക് കുറവ് വരില്ല.",
+    "english": "Allah's firmness never diminishes."
+  },
+  {
+    "card_id": "PDF-HN-116",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "സത്യമായവൻ അല്ലാഹുവാണ്. അവന്റെ വാഗ്ദാനങ്ങൾ സത്യമാണ്.",
+    "english": "Allah is the Truth. His promises are true."
+  },
+  {
+    "card_id": "PDF-HN-116",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "സത്യസന്ധത വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase truthfulness."
+  },
+  {
+    "card_id": "PDF-HN-116",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു സത്യമാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the Truth."
+  },
+  {
+    "card_id": "PDF-HN-116",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിൽ നിന്നുള്ളതെല്ലാം സത്യമാണ്.",
+    "english": "Everything from Allah is true."
+  },
+  {
+    "card_id": "PDF-HN-120",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "തന്റെ അടിയാർ ചെയ്യുന്ന ചെറിയ നന്മകൾക്ക് പോലും വലിയ പ്രതിഫലം നൽകുന്നവൻ.",
+    "english": "He gives great rewards even for His servants' small good deeds."
+  },
+  {
+    "card_id": "PDF-HN-120",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നന്ദിയുള്ളവരാകാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches gratitude."
+  },
+  {
+    "card_id": "PDF-HN-120",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു നന്ദിയുള്ളവർക്ക് കൂടുതൽ നൽകുന്നു എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah gives more to the grateful."
+  },
+  {
+    "card_id": "PDF-HN-120",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നന്ദി കാണിക്കുന്നവർക്ക് അല്ലാഹു കൂടുതൽ അനുഗ്രഹം നൽകുന്നു.",
+    "english": "Allah gives more blessings to those who show gratitude."
+  },
+  {
+    "card_id": "PDF-HN-121",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാറ്റിനേക്കാളും വലിയവൻ അല്ലാഹുവാണ്.",
+    "english": "Allah is greater than everything."
+  },
+  {
+    "card_id": "PDF-HN-121",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "വിനയവും താഴ്മയും വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase humility and modesty."
+  },
+  {
+    "card_id": "PDF-HN-121",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും വലിയവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the greatest."
+  },
+  {
+    "card_id": "PDF-HN-121",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന് മീതെ ആരുമില്ല.",
+    "english": "No one is above Allah."
+  },
+  {
+    "card_id": "PDF-HN-122",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ആത്മവിശ്വാസം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase self-confidence."
+  },
+  {
+    "card_id": "PDF-HN-122",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "പ്രതാപം അല്ലാഹുവിന് മാത്രമേ ഉള്ളൂ എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that might belongs to Allah alone."
+  },
+  {
+    "card_id": "PDF-HN-122",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവാണ് ഏറ്റവും പ്രതാപി.",
+    "english": "Allah is the mightiest."
+  },
+  {
+    "card_id": "PDF-HN-123",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ദാനശീലം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase generosity."
+  },
+  {
+    "card_id": "PDF-HN-123",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും ദാനശീലനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most generous giver."
+  },
+  {
+    "card_id": "PDF-HN-123",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു നന്മ ചെയ്യുന്നവരെ സ്നേഹിക്കുന്നു.",
+    "english": "Allah loves those who do good."
+  },
+  {
+    "card_id": "PDF-HN-124",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "കരുണയും വാത്സല്യവും വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase compassion and tenderness."
+  },
+  {
+    "card_id": "PDF-HN-124",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും കരുണയുള്ളവനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the most merciful."
+  },
+  {
+    "card_id": "PDF-HN-124",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ കരുണ അനന്തമാണ്.",
+    "english": "Allah's mercy is boundless."
+  },
+  {
+    "card_id": "PDF-HN-125",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നീതിബോധം വർദ്ധിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps increase a sense of justice."
+  },
+  {
+    "card_id": "PDF-HN-125",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹു ഏറ്റവും നല്ല ന്യായാധിപനാണെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah is the best of judges."
+  },
+  {
+    "card_id": "PDF-HN-125",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "അല്ലാഹുവിന്റെ വിധി നീതിയുക്തമാണ്.",
+    "english": "Allah's judgement is just."
+  },
+  {
+    "card_id": "PDF-HN-130",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "തൗഹീദ് (ഏകത്വം) ദൃഢമാക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps strengthen tawhid, the belief in divine unity."
+  },
+  {
+    "card_id": "PDF-HN-130",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഇതാണ് ഇസ്ലാമിന്റെ അടിസ്ഥാന വിശ്വാസം.",
+    "english": "This is the fundamental belief of Islam."
+  },
+  {
+    "card_id": "PDF-HN-130",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ലാ ഇലാഹ ഇല്ലല്ലാഹ് എന്നത് ഇസ്ലാമിന്റെ ഒന്നാം സ്തംഭമാണ്.",
+    "english": "'There is no god but Allah' is the first pillar of Islam."
+  },
+  {
+    "card_id": "PDF-HN-132",
+    "source_field": "explanation_malayalam",
+    "target_field": "explanation_english",
+    "alternate_field": "english_explanation",
+    "source_text": "എല്ലാ സ്തുതിയും അല്ലാഹുവിന് അവകാശപ്പെട്ടതാണ്.",
+    "english": "All praise belongs to Allah."
+  },
+  {
+    "card_id": "PDF-HN-132",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നന്ദിയുള്ളവരാകാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches gratitude."
+  },
+  {
+    "card_id": "PDF-HN-132",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "അൽഹംദുലില്ലാഹ് എന്ന് പറയുന്നത് പ്രാർത്ഥനയാണ്.",
+    "english": "Saying 'Alhamdulillah' is a supplication."
+  },
+  {
+    "card_id": "PDF-HN-132",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നന്ദി കാണിക്കുന്നവർക്ക് അല്ലാഹു കൂടുതൽ നൽകുന്നു.",
+    "english": "Allah gives more to those who show gratitude."
+  },
+  {
+    "card_id": "PDF-HN-135",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "അല്ലാഹുവിന്റെ ഇച്ഛയെ ആദരിക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches respect for Allah's will."
+  },
+  {
+    "card_id": "PDF-HN-135",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "നന്മ കാണുമ്പോൾ മശാഅല്ലാഹ് എന്ന് പറയണം.",
+    "english": "One should say 'MashaAllah' upon seeing something good."
+  },
+  {
+    "card_id": "PDF-HN-135",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "എല്ലാം അല്ലാഹുവിന്റെ ഇച്ഛപ്രകാരമാണ്.",
+    "english": "Everything happens according to Allah's will."
+  },
+  {
+    "card_id": "PDF-HN-136",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "ദുരിതങ്ങളിൽ ക്ഷമിക്കാൻ പഠിപ്പിക്കുന്നു.",
+    "english": "Teaches patience during adversity."
+  },
+  {
+    "card_id": "PDF-HN-136",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ദുരിതം സംഭവിക്കുമ്പോൾ ഇത് പറയണം എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says to say this when adversity occurs."
+  },
+  {
+    "card_id": "PDF-HN-136",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "മരണശേഷം അല്ലാഹുവിങ്കലേക്ക് മടങ്ങുന്നു.",
+    "english": "After death, one returns to Allah."
+  },
+  {
+    "card_id": "PDF-HN-137",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "പാപമോചനം ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps obtain forgiveness of sins."
+  },
+  {
+    "card_id": "PDF-HN-137",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "പാപമോചനം തേടുന്നവർക്ക് അല്ലാഹു മാപ്പ് നൽകുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that Allah forgives those who seek forgiveness."
+  },
+  {
+    "card_id": "PDF-HN-137",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "പാപങ്ങൾ ഏറ്റുപറഞ്ഞ് മാപ്പ് തേടണം.",
+    "english": "One should acknowledge sins and seek forgiveness."
+  },
+  {
+    "card_id": "PDF-HN-139",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നന്മകൾ ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain good."
+  },
+  {
+    "card_id": "PDF-HN-139",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "ഏറ്റവും മികച്ച പ്രാർത്ഥനകളിൽ ഒന്നാണിത് എന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that this is one of the best supplications."
+  },
+  {
+    "card_id": "PDF-HN-139",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "ലൗകിക നന്മകൾ മാത്രമല്ല, പാരലൗകിക നന്മകളും തേടണം.",
+    "english": "One should seek goodness in the Hereafter as well as in this world."
+  },
+  {
+    "card_id": "PDF-HN-140",
+    "source_field": "virtues_benefits",
+    "target_field": "virtues_benefits_english",
+    "alternate_field": "benefits_english",
+    "source_text": "നമസ്കാരത്തിൽ സ്ഥിരത ലഭിക്കാൻ സഹായിക്കുന്നു.",
+    "english": "Helps attain consistency in prayer."
+  },
+  {
+    "card_id": "PDF-HN-140",
+    "source_field": "islamic_information",
+    "target_field": "islamic_information_english",
+    "alternate_field": null,
+    "source_text": "നമസ്കാരം സ്ഥിരമായി ചെയ്യുന്നവർ വിജയിക്കുന്നുണ്ടെന്ന് ഖുർആൻ പറയുന്നു.",
+    "english": "The Quran says that those who maintain prayer succeed."
+  },
+  {
+    "card_id": "PDF-HN-140",
+    "source_field": "authentic_notes",
+    "target_field": "authentic_notes_english",
+    "alternate_field": null,
+    "source_text": "നമസ്കാരം ഇസ്ലാമിന്റെ സ്തംഭമാണ്.",
+    "english": "Prayer is a pillar of Islam."
+  }
+]

@@ -68,13 +68,13 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
     return (
       <div role="status" aria-live="polite" className="flex items-center gap-2 py-3" style={{ borderTop: "1px solid " + P.faint }}>
         <Loader2 className="w-3.5 h-3.5 animate-spin" style={{ color: P.dim }} />
-        <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: P.dim }}>{lang === "ml" ? "കൂടുതൽ PDF വിവരങ്ങൾ ലോഡ് ചെയ്യുന്നു… മുകളിലെ വിവരങ്ങൾ വായിക്കാം." : "Loading additional PDF passages… You can read the material above."}</span>
+        <span className="font-inter text-[9px] uppercase tracking-widest" style={{ color: P.dim }}>{lang === "ml" ? "കൂടുതൽ വിവരങ്ങൾ ലോഡ് ചെയ്യുന്നു… മുകളിലെ വിവരങ്ങൾ വായിക്കാം." : "Loading additional passages… You can read the material above."}</span>
       </div>
     );
   }
 
   if (failed) return <div role="alert" className="rounded-xl border border-amber-500/30 p-3 space-y-2">
-    <p className="text-sm text-white/75">{lang === "ml" ? "കൂടുതൽ PDF വിവരങ്ങൾ ലോഡ് ചെയ്യാനായില്ല. മുകളിലെ വിവരങ്ങൾ ലഭ്യമാണ്." : "Additional PDF passages could not be loaded. The material above is still available."}</p>
+    <p className="text-sm text-white/75">{lang === "ml" ? "കൂടുതൽ വിവരങ്ങൾ ലോഡ് ചെയ്യാനായില്ല. മുകളിലെ വിവരങ്ങൾ ലഭ്യമാണ്." : "Additional passages could not be loaded. The material above is still available."}</p>
     <button type="button" onClick={() => setRetry(value => value + 1)} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-sm text-yellow-200">{lang === "ml" ? "വീണ്ടും ശ്രമിക്കുക" : "Try again"}</button>
   </div>;
 
@@ -149,7 +149,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
 
               {s.arabic_text && (
                 <div className="space-y-1">
-                  <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>Original Arabic text</span>
+                  <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>{lang === 'ml' ? 'അറബി മൂലം' : 'Original Arabic text'}</span>
                   <p className="font-amiri text-lg leading-loose whitespace-pre-wrap selectable" style={{ color: "rgba(255,255,255,0.92)" }} dir="rtl">
                     {s.arabic_text}
                   </p>
@@ -158,7 +158,7 @@ export default function HolyNameImportedSections({ sourceSection, sourceNameKey,
 
               {lang === "ml" && s.malayalam_translation && (
                 <div className="space-y-1 pt-1 border-t" style={{ borderColor: "rgba(212,175,55,0.10)" }}>
-                  <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>Malayalam translation</span>
+                  <span className="font-inter text-[7px] uppercase tracking-widest" style={{ color: "rgba(212,175,55,0.50)" }}>മലയാള പരിഭാഷ</span>
                   <p className="font-malayalam text-sm leading-relaxed whitespace-pre-wrap selectable" style={{ color: "rgba(255,255,255,0.80)" }} dir="auto">
                     {s.malayalam_translation}
                   </p>
