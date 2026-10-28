@@ -17,11 +17,33 @@ try {
     export const renderLegacy=(card,language,role='customer')=>renderToStaticMarkup(React.createElement(AuthContext.Provider,{value:{role}},React.createElement(Context.Provider,{value:{language}},React.createElement(Scholarly,{card,pendingOnly:true}))));
     export {withLegacyTranslations} from './src/lib/holyNames/legacyTranslations.js';
     export {sectionBReading, unlinkedSectionBVisuals} from './src/lib/holyNames/sectionBReading.js';
+    export {withSectionBBaseTranslations} from './src/lib/holyNames/baseTranslations.js';
     export {withSectionBMeaning} from './src/lib/holyNames/sectionBMeanings.js';
     export {sectionBEntrySearchText} from './src/components/holynameknowledge/HolyNameSectionBReader.jsx';
     import {HolyNamesLanguageContext as Context} from './src/components/holynameknowledge/HolyNamesLanguageContext.jsx';
     export const render=(chapter,nameId,language,card,role='owner')=>renderToStaticMarkup(React.createElement(AuthContext.Provider,{value:{role}},React.createElement(Context.Provider,{value:{language}},React.createElement(Reader,{chapter,nameId,card}))));`, resolveDir: process.cwd(), loader: 'jsx' }, outfile: output, bundle: true, platform: 'node', format: 'cjs', jsx: 'automatic', alias: { '@': path.resolve('src') } });
-  const { render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning, sectionBEntrySearchText, withLegacyTranslations, renderLegacy } = createRequire(import.meta.url)(output);
+  const { withSectionBBaseTranslations, render, sectionBReading, unlinkedSectionBVisuals, withSectionBMeaning, sectionBEntrySearchText, withLegacyTranslations, renderLegacy } = createRequire(import.meta.url)(output);
+  const baseTranslations = JSON.parse(fs.readFileSync('src/data/holyNamesBaseEnglishTranslations.json', 'utf8'));
+  assert.equal(baseTranslations.length, 364);
+  assert.equal(new Set(baseTranslations.map(row => row.card_id)).size, 95);
+  for (const entry of baseTranslations) {
+    const card = Object.freeze({ pdf_name_id: entry.card_id, [entry.source_field]: entry.source_text, arabic_name: 'الرَّحْمَن', abjad_value: 329 });
+    const result = withSectionBBaseTranslations(card);
+    assert.equal(result.arabic_name, card.arabic_name);
+    assert.equal(result.abjad_value, card.abjad_value);
+    assert.equal(card[entry.source_field], entry.source_text);
+    if (!result.archived_import_errors?.length) {
+      assert.equal(result[entry.target_field], entry.english);
+      assert.equal(result[entry.source_field], entry.source_text);
+      assert.equal(withSectionBBaseTranslations({...card,[entry.target_field]:'Owner translation'})[entry.target_field], 'Owner translation');
+      assert.equal(withSectionBBaseTranslations({...card,[entry.source_field]:'Updated source'})[entry.target_field], undefined);
+    } else {
+      assert.equal(result[entry.source_field], '');
+      assert.ok(result.archived_import_errors.some(row => row.text === entry.source_text));
+    }
+    assert.deepEqual(entry.english.match(/\d+/g)||[],entry.source_text.match(/\d+/g)||[]);
+  }
+  console.log('PASS: 364 guarded English additions, 95 cards, original Arabic/numbers/source preservation and failed-import archival.');
   const legacyTranslations = JSON.parse(fs.readFileSync('src/data/holyNamesLegacyTranslations.json', 'utf8'));
   assert.equal(legacyTranslations.length, 107);
   assert.equal(new Set(legacyTranslations.slice(0,98).map(row => row.card_id)).size, 40);
