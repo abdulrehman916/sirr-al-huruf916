@@ -128,12 +128,12 @@ function EntryCard({ entry: original, language, cardId, field }) {
       )}
       {(construction || conditions || reps || timing || purpose || warnings) && (
         <div className="space-y-1 mb-2 text-xs">
-          {construction && <p className="text-white/60"><span className="text-gold-dim">Construction:</span> {construction}</p>}
-          {conditions && <p className="text-white/60"><span className="text-gold-dim">Conditions:</span> {conditions}</p>}
-          {reps && <p className="text-white/60"><span className="text-gold-dim">Repetitions:</span> {reps}</p>}
-          {timing && <p className="text-white/60"><span className="text-gold-dim">Timing:</span> {timing}</p>}
-          {purpose && <p className="text-white/60"><span className="text-gold-dim">Purpose:</span> {purpose}</p>}
-          {warnings && <p className="text-white/60"><span className="text-gold-dim">Warnings:</span> {warnings}</p>}
+          {construction && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'നിർമാണരീതി' : 'Construction'}:</span> {construction}</p>}
+          {conditions && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'നിബന്ധനകൾ' : 'Conditions'}:</span> {conditions}</p>}
+          {reps && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'ആവർത്തന എണ്ണം' : 'Repetitions'}:</span> {reps}</p>}
+          {timing && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'സമയം' : 'Timing'}:</span> {timing}</p>}
+          {purpose && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'ആവശ്യം' : 'Purpose'}:</span> {purpose}</p>}
+          {warnings && <p className="text-white/60"><span className="text-gold-dim">{language === 'ml' ? 'മുന്നറിയിപ്പുകൾ' : 'Warnings'}:</span> {warnings}</p>}
         </div>
       )}
       {(sourceBook || author || page || lang || conf || cat || notes) && (

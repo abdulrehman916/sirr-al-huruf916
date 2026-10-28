@@ -8,10 +8,10 @@ import { BackLayer } from "@/lib/useBackLayer";
 const empty = { title: '', arabic: '', malayalam: '', english: '', images: [] };
 const fieldStyle = 'w-full rounded-lg border border-yellow-500/25 bg-slate-950 p-3 text-white';
 const PAGE_SIZE = 20;
-export function CardNotes({ cardKey, kind }) {
-  return <CardNotebook key={`${kind}:${cardKey}`} cardKey={cardKey} kind={kind} />;
+export function CardNotes({ cardKey, kind, language }) {
+  return <CardNotebook key={`${kind}:${cardKey}`} cardKey={cardKey} kind={kind} language={language} />;
 }
-function CardNotebook({ cardKey, kind }) {
+function CardNotebook({ cardKey, kind, language }) {
   const owner = useIsOwner();
   const feature = kind.startsWith('holy-') ? `section_${kind.slice(-1)}` : '';
   const scope = kind === 'plant' ? `/plants/${cardKey}` : kind === 'holy-a' || kind === 'holy-b' ? `/holy-names/one/${cardKey}` : `/holy-names/card/${kind.slice(-1)}/${cardKey}`;
@@ -39,16 +39,16 @@ function CardNotebook({ cardKey, kind }) {
   useEffect(() => { mounted.current = true; load(); return () => { mounted.current = false; }; }, [scope]);
   if (!owner && !rows.length && !error) return null;
   return <section aria-label="Additional card information" className="my-5 space-y-4">
-    <div className="flex items-center justify-between gap-3 flex-wrap"><h2 className="text-yellow-100 font-semibold">Additional information / കൂടുതൽ വിവരങ്ങൾ</h2>
-      {owner && <button type="button" disabled={loading || !!error} onClick={() => setEditor({ section: `note-${Date.now()}-${crypto.randomUUID()}` })} className="rounded-lg border border-yellow-500/40 bg-slate-950 px-4 py-2 text-sm text-yellow-200">Add information / വിവരം ചേർക്കുക</button>}
+    <div className="flex items-center justify-between gap-3 flex-wrap"><h2 className="text-yellow-100 font-semibold">{language === 'ml' ? 'കൂടുതൽ വിവരങ്ങൾ' : language === 'en' ? 'Additional information' : 'Additional information / കൂടുതൽ വിവരങ്ങൾ'}</h2>
+      {owner && <button type="button" disabled={loading || !!error} onClick={() => setEditor({ section: `note-${Date.now()}-${crypto.randomUUID()}` })} className="rounded-lg border border-yellow-500/40 bg-slate-950 px-4 py-2 text-sm text-yellow-200">{language === 'ml' ? 'വിവരങ്ങളും ചിത്രങ്ങളും ചേർക്കുക' : language === 'en' ? 'Add information and photos' : 'Add information / വിവരം ചേർക്കുക'}</button>}
     </div>
     {error && <div role="alert" className="text-red-200 text-sm">{error} <button onClick={() => load()} className="underline">Retry</button></div>}
     {rows.map(row => <article key={row.section} className="min-w-0">
-      {owner && <button type="button" onClick={() => setEditor(row)} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-xs text-yellow-200">Edit information / തിരുത്തുക</button>}
-      <PublishedContent content={row.content} />
+      {owner && <button type="button" onClick={() => setEditor(row)} className="rounded-lg border border-yellow-500/30 px-3 py-2 text-xs text-yellow-200">{language === 'ml' ? 'തിരുത്തുക' : language === 'en' ? 'Edit information' : 'Edit information / തിരുത്തുക'}</button>}
+      <PublishedContent content={row.content} language={language} />
     </article>)}
-    {loading && <p role="status" className="text-xs text-white/50">Loading information…</p>}
-    {more && <button type="button" disabled={loading} onClick={() => load(cursor)} className="rounded-lg border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200">Load more information</button>}
+    {loading && <p role="status" className="text-xs text-white/50">{language === 'ml' ? 'വിവരങ്ങൾ ലഭ്യമാക്കുന്നു…' : 'Loading information…'}</p>}
+    {more && <button type="button" disabled={loading} onClick={() => load(cursor)} className="rounded-lg border border-yellow-500/30 px-4 py-2 text-sm text-yellow-200">{language === 'ml' ? 'ബാക്കിയുള്ള വിവരങ്ങൾ കാണുക' : 'Load more information'}</button>}
     {editor && createPortal(<ContentEditor label="card information" row={editor} originalText="" onClose={() => setEditor(null)} onSave={async value => {
       const { data, error: failure } = await cardContentRequest(signal => supabase.rpc('save_owner_content', { p_scope: scope, p_section: editor.section, p_feature: feature, p_content: value, p_revision: editor.revision || 0 }).abortSignal(signal));
       if (failure) throw failure;
@@ -57,12 +57,13 @@ function CardNotebook({ cardKey, kind }) {
     }} />, document.body)}
   </section>;
 }
-function PublishedContent({ content }) {
+export function PublishedContent({ content, language }) {
   return <div className="my-4 space-y-4 rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 break-words">
     {content.title && <h3 dir="auto" className="text-lg font-semibold text-yellow-100 whitespace-pre-wrap">{content.title}</h3>}
     {content.arabic && <p lang="ar" dir="rtl" className="font-amiri text-2xl leading-loose whitespace-pre-wrap">{content.arabic}</p>}
-    {content.malayalam && <p lang="ml" dir="ltr" className="font-malayalam leading-loose whitespace-pre-wrap">{content.malayalam}</p>}
-    {content.english && <p lang="en" dir="ltr" className="leading-relaxed whitespace-pre-wrap">{content.english}</p>}
+    {(!language || language === 'ml') && content.malayalam && <p lang="ml" dir="ltr" className="font-malayalam leading-loose whitespace-pre-wrap">{content.malayalam}</p>}
+    {(!language || language === 'en') && content.english && <p lang="en" dir="ltr" className="leading-relaxed whitespace-pre-wrap">{content.english}</p>}
+    {language && !(language === 'ml' ? content.malayalam : content.english) && (content.malayalam || content.english) && <p role="status" className="text-sm text-white/50">{language === 'ml' ? 'മലയാള പരിഭാഷ ഇതുവരെ ചേർത്തിട്ടില്ല.' : 'English translation has not been added yet.'}</p>}
     {content.images?.map(image => <ContentImage key={image.path} image={image} />)}
   </div>;
 }
