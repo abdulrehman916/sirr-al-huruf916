@@ -6,7 +6,7 @@
 // ways to use it, and the source text word for word (collapsed).
 // The source book's title is never shown anywhere on the site.
 import { useEffect, useMemo, useState } from "react";
-import { OMAN_BOOK, OMAN_TOPICS, OMAN_HEALTH_SUBS, OMAN_KINDS, OMAN_TAWKIL, loadOmanTopic, loadOmanQuran } from "@/lib/omanTopics";
+import { OMAN_BOOK, OMAN_TOPICS, OMAN_HEALTH_SUBS, OMAN_KINDS, OMAN_TAWKIL, loadOmanTopic, loadOmanQuran, hasOmanTopic } from "@/lib/omanTopics";
 import { OMAN_INTRO } from "@/lib/omanIntro";
 import { buildHaystack, matchesAll, queryWords } from "@/lib/sirrSearch";
 
@@ -252,7 +252,7 @@ export default function OmanMujarrabat({ onExit }) {
   const query = q.trim();
   useEffect(() => {
     if (!query || all) return;
-    Promise.all(OMAN_TOPICS.map((t) => loadOmanTopic(t.id).then((rs) => rs.map((e) => ({ e, topic: t.id })))))
+    Promise.all(OMAN_TOPICS.filter((t) => hasOmanTopic(t.id)).map((t) => loadOmanTopic(t.id).then((rs) => rs.map((e) => ({ e, topic: t.id })))))
       .then((rs) => setAll(rs.flat().map((x) => ({ ...x, hay: buildHaystack(x.e.ml, x.e.c, x.e.ar, x.e.src, KIND[x.e.k]?.ml) }))));
   }, [query, all]);
 
@@ -300,7 +300,7 @@ export default function OmanMujarrabat({ onExit }) {
               </span>
             </span>
           </Card>
-          {OMAN_TOPICS.map((x) => (
+          {OMAN_TOPICS.filter((x) => hasOmanTopic(x.id)).map((x) => (
             <Card key={x.id} onClick={() => setTopic(x.id)}>
               <span className="flex items-center gap-3">
                 <span className="text-2xl">{x.icon}</span>

@@ -56,6 +56,8 @@ export const OMAN_KINDS = [
 // Loaded on demand, one file per subject.
 const loaders = import.meta.glob("../data/oman/*.json");
 
+export const hasOmanTopic = (id) => Boolean(loaders[`../data/oman/${id}.json`]);
+
 export async function loadOmanTopic(id) {
   const fn = loaders[`../data/oman/${id}.json`];
   if (!fn) return [];
