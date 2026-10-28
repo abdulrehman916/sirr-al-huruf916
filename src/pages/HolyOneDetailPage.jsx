@@ -372,7 +372,7 @@ export default function HolyOneDetailPage() {
           </div>
         )}
 
-        <CardNotes cardKey={nameId} kind={source === "B" ? "holy-b" : "holy-a"} />
+        <CardNotes cardKey={nameId} kind={source === "B" ? "holy-b" : "holy-a"} language={language} />
         {/* Content Sections */}
         <div className="space-y-4">
 
