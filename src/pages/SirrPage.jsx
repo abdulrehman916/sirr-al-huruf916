@@ -160,8 +160,8 @@ export default function SirrPage() {
               <span className="block font-inter text-xs mt-2" style={{ color: DIM }}>ഓരോ മരുന്നും എന്തിനാണ്, എങ്ങനെ ഉണ്ടാക്കണം, എങ്ങനെ ഉപയോഗിക്കണം.</span>
             </Card>
             <Card big onClick={() => go("oman")}>
-              <span dir="rtl" className="block font-amiri text-2xl" style={{ color: GOLD }}>مجربات أهل عمان الكبير</span>
-              <span className="block font-inter text-lg font-semibold mt-2" style={{ color: INK }}>ഉമാനി മുജർറബാത്ത്</span>
+              <span dir="rtl" className="block font-amiri text-2xl" style={{ color: GOLD }}>المجربات</span>
+              <span className="block font-inter text-lg font-semibold mt-2" style={{ color: INK }}>മുജർറബാത്ത് — പരീക്ഷിച്ചറിഞ്ഞവ</span>
               <span className="block font-inter text-xs mt-2" style={{ color: DIM }}>സിഹ്റ്, കണ്ണേറ്, റബ്ത്വ്, കാവൽ, രോഗങ്ങൾ… — വിഷയമനുസരിച്ച് ദുആ, മരുന്ന്, മരുന്നും മന്ത്രവും, ത്വൽസം, വഫ്ഖ്.</span>
             </Card>
           </div>
