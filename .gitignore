@@ -32,3 +32,4 @@ dist-ssr
 /public/ocr/
 supabase/.temp/
 base44/.app.jsonc
+dist-e2e

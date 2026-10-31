@@ -163,7 +163,8 @@ begin
       price_minor = coalesce(v_price, price_minor), currency = 'INR',
       validity_days = case when v_lifetime then null else coalesce(v_days, validity_days) end,
       lifetime_access = v_lifetime,
-      metadata = metadata || jsonb_build_object('sold_online', true)
+      metadata = metadata || jsonb_build_object('sold_online', true),
+      owner_id = coalesce(owner_id, auth.uid())
     where id = v_row.id returning * into v_row;
   end if;
   return jsonb_build_object('success', true, 'resource_id', v_row.id, 'on_sale', v_row.status = 'PUBLISHED');

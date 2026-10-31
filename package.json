@@ -25,6 +25,7 @@
     "predev": "node scripts/prepare-ocr-assets.mjs",
     "verify:payments": "node scripts/verify-razorpay-payments.mjs",
     "verify:payment-ledger": "bash scripts/verify-razorpay-ledger.sh",
+    "verify:payment-browser": "node scripts/verify-payment-pages-browser.mjs",
     "verify:owner-ocr": "node scripts/prepare-ocr-assets.mjs && node scripts/verify-owner-ocr.mjs"
   },
   "dependencies": {

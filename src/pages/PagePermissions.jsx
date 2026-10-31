@@ -326,6 +326,11 @@ export default function PagePermissions() {
   return (
     <AdminLayout title="Page Access Manager" subtitle="Visibility, pricing, plans & features">
       <div className="max-w-4xl mx-auto space-y-4">
+        <div className="rounded-xl border px-4 py-3 text-sm" role="note"
+          style={{ background: "rgba(34,197,94,0.07)", borderColor: "rgba(34,197,94,0.35)", color: "rgba(255,255,255,0.8)" }}>
+          Online-ൽ വിൽക്കാനുള്ള വിലയും കാലാവധിയും <a href="/admin/online-payments" className="font-semibold underline" style={{ color: "#F5D060" }}>Online payments</a> page-ൽ വെക്കുക.
+          ഈ page-ലെ പഴയ വില/plan വിവരങ്ങൾ customers-ന് കാണിക്കുന്നില്ല; page free ആണോ പൂട്ടിയതാണോ എന്ന് നിശ്ചയിക്കാൻ മാത്രം ഇത് ഉപയോഗിക്കുക.
+        </div>
         {/* Summary */}
         <div className="grid grid-cols-3 gap-3">
           <div

@@ -24,11 +24,62 @@ export function sellableRoutes(manifest = ROUTE_MANIFEST) {
     .map(route => ({ path: route.path, name: getPageConfig(route.path)?.name || route.component, isPublic: route.flags?.includes("public") }));
 }
 
+/** Turns database errors into plain Malayalam for the owner. */
+export function ownerMessage(error) {
+  const text = String(error?.message || error || "");
+  if (/Could not find the function|PGRST202|does not exist/i.test(text)) {
+    return "Database update (migration) ഇനിയും ചെയ്തിട്ടില്ല. അത് ചെയ്ത ശേഷം ഈ page പ്രവർത്തിക്കും.";
+  }
+  if (/Owner access required/i.test(text)) return "Owner account-ൽ login ചെയ്യുക.";
+  if (/Price must be/i.test(text)) return "വില ₹1 മുതൽ ₹5,00,000 വരെ ആയിരിക്കണം.";
+  if (/Validity must be/i.test(text)) return "കാലാവധി 1 മുതൽ 3650 ദിവസം വരെ ആയിരിക്കണം.";
+  return text || "എന്തോ പിശക് സംഭവിച്ചു.";
+}
+
+const SETUP_ROWS = [
+  ["supabase_url", "SUPABASE_URL"],
+  ["supabase_service_role_key", "SUPABASE_SERVICE_ROLE_KEY"],
+  ["razorpay_key_id", "RAZORPAY_KEY_ID"],
+  ["razorpay_key_secret", "RAZORPAY_KEY_SECRET"],
+  ["razorpay_webhook_secret", "RAZORPAY_WEBHOOK_SECRET (പിന്നീട്)"],
+];
+
+function SetupStatus() {
+  const [status, setStatus] = useState(null);
+  useEffect(() => {
+    let alive = true;
+    fetch("/api/payments/status").then(r => r.ok ? r.json() : null).catch(() => null)
+      .then(data => { if (alive) setStatus(data || { unavailable: true }); });
+    return () => { alive = false; };
+  }, []);
+  if (!status) return null;
+  if (status.unavailable) return <p className="text-[11px] text-white/45">Payment server-ന്റെ നില പരിശോധിക്കാൻ കഴിഞ്ഞില്ല.</p>;
+  const ok = (key) => key === "razorpay_key_id" ? status[key] === "test" || status[key] === "live" : status[key] === true;
+  return (
+    <section className="rounded-xl border p-3 space-y-2" style={{ background: G.bg, borderColor: status.ready ? "rgba(34,197,94,0.45)" : "rgba(239,68,68,0.45)" }}>
+      <h2 className="text-sm font-semibold text-white">
+        {status.ready ? "✅ Payment സജ്ജമാണ്" : "⚠️ Payment ഇനിയും സജ്ജമല്ല"}
+        {status.razorpay_key_id === "test" && <span className="ml-2 text-[10px] px-2 py-0.5 rounded-full" style={{ background: "rgba(96,165,250,0.18)", color: "#93c5fd" }}>TEST MODE — യഥാർത്ഥ പണം ഇല്ല</span>}
+        {status.razorpay_key_id === "live" && <span className="ml-2 text-[10px] px-2 py-0.5 rounded-full" style={{ background: "rgba(34,197,94,0.18)", color: "#86efac" }}>LIVE</span>}
+      </h2>
+      <ul className="grid sm:grid-cols-2 gap-1 text-[11px] text-white/70">
+        {SETUP_ROWS.map(([key, label]) => (
+          <li key={key}>{ok(key) ? "✅" : "❌"} <span className="font-mono">{label}</span></li>
+        ))}
+      </ul>
+      {!status.ready && (
+        <p className="text-[11px] text-white/55">❌ ഉള്ളവ Vercel → Settings → Environment Variables-ൽ ചേർക്കുക (ഈ site-ന്റെ ശരിയായ environment tick ചെയ്ത്), പിന്നെ Redeploy ചെയ്യുക. വിശദമായി: docs/RAZORPAY_SETUP_ML.md</p>
+      )}
+    </section>
+  );
+}
+
 const fmt = (value) => value ? new Date(value).toLocaleString("en-IN", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) : "—";
 
 function PriceRow({ route, current, onSaved }) {
   const [price, setPrice] = useState(current ? String(current.price_minor / 100) : "");
   const [days, setDays] = useState(current?.validity_days || 30);
+  const [custom, setCustom] = useState(Boolean(current?.validity_days) && !VALIDITY.some(v => v.days === current?.validity_days));
   const [lifetime, setLifetime] = useState(Boolean(current?.lifetime_access));
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
@@ -39,7 +90,8 @@ function PriceRow({ route, current, onSaved }) {
     setMessage("");
     try {
       const rupees = Number(price);
-      if (sell && (!Number.isFinite(rupees) || rupees < 1)) throw new Error("വില ₹1-ൽ കൂടുതൽ ആയിരിക്കണം.");
+      if (sell && (!Number.isFinite(rupees) || rupees < 1 || rupees > 500000)) throw new Error("വില ₹1 മുതൽ ₹5,00,000 വരെ ആയിരിക്കണം.");
+      if (sell && !lifetime && (!Number.isInteger(Number(days)) || days < 1 || days > 3650)) throw new Error("കാലാവധി 1 മുതൽ 3650 ദിവസം വരെ ആയിരിക്കണം.");
       const { error } = await supabase.rpc("owner_set_page_price", { p_payload: {
         route_path: route.path, title: route.name, price_minor: sell ? Math.round(rupees * 100) : null,
         validity_days: lifetime ? null : Number(days), lifetime_access: lifetime, on_sale: sell,
@@ -48,7 +100,7 @@ function PriceRow({ route, current, onSaved }) {
       setMessage(sell ? "Save ചെയ്തു — വിൽപ്പനയിലുണ്ട്." : "വിൽപ്പന നിർത്തി.");
       onSaved();
     } catch (e) {
-      setMessage(e.message || "Save ചെയ്യാൻ കഴിഞ്ഞില്ല.");
+      setMessage(ownerMessage(e));
     } finally {
       setSaving(false);
     }
@@ -70,13 +122,22 @@ function PriceRow({ route, current, onSaved }) {
           <input type="number" min="1" step="1" inputMode="decimal" value={price} onChange={e => setPrice(e.target.value)}
             className="w-24 px-2 py-1.5 rounded-lg text-sm text-white bg-white/5 border" style={{ borderColor: G.border }} aria-label={`${route.name} price`} />
         </label>
-        <select value={lifetime ? "LIFETIME" : String(days)} onChange={e => {
-          if (e.target.value === "LIFETIME") setLifetime(true); else { setLifetime(false); setDays(Number(e.target.value)); }
+        <select value={lifetime ? "LIFETIME" : custom ? "CUSTOM" : String(days)} onChange={e => {
+          const value = e.target.value;
+          if (value === "LIFETIME") { setLifetime(true); setCustom(false); }
+          else if (value === "CUSTOM") { setLifetime(false); setCustom(true); }
+          else { setLifetime(false); setCustom(false); setDays(Number(value)); }
         }} className="px-2 py-1.5 rounded-lg text-sm text-white bg-[#0b1426] border" style={{ borderColor: G.border }} aria-label={`${route.name} validity`}>
           {VALIDITY.map(v => <option key={v.days} value={v.days}>{v.label}</option>)}
-          {!VALIDITY.some(v => v.days === days) && !lifetime && <option value={days}>{days} ദിവസം</option>}
+          <option value="CUSTOM">ഇഷ്ടമുള്ള ദിവസം…</option>
           <option value="LIFETIME">Lifetime</option>
         </select>
+        {custom && !lifetime && (
+          <label className="text-xs text-white/60 flex items-center gap-1">
+            <input type="number" min="1" max="3650" step="1" value={days} onChange={e => setDays(Number(e.target.value))}
+              className="w-20 px-2 py-1.5 rounded-lg text-sm text-white bg-white/5 border" style={{ borderColor: G.border }} aria-label={`${route.name} days`} /> ദിവസം
+          </label>
+        )}
         <button disabled={saving} onClick={() => save(true)} className="px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1 disabled:opacity-50"
           style={{ background: "linear-gradient(135deg,#f6d860,#c98a14)", color: "#0d1b2a" }}>
           <Save className="w-3.5 h-3.5" /> {onSale ? "Update" : "വിൽക്കുക"}
@@ -122,7 +183,7 @@ export default function AdminOnlinePayments() {
     setLoading(true);
     setError("");
     try { await Promise.all([loadPrices(), loadOrders()]); }
-    catch (e) { setError(e.message || "Load ചെയ്യാൻ കഴിഞ്ഞില്ല."); }
+    catch (e) { setError(ownerMessage(e)); }
     finally { setLoading(false); }
   }, [loadPrices, loadOrders]);
 
@@ -142,6 +203,7 @@ export default function AdminOnlinePayments() {
             <RefreshCw className={`w-3.5 h-3.5 ${loading ? "animate-spin" : ""}`} /> Refresh
           </button>
         </header>
+        <SetupStatus />
         {error && <p className="text-sm text-red-300" role="alert">{error}</p>}
 
         <section className="space-y-2">
@@ -186,7 +248,7 @@ export default function AdminOnlinePayments() {
               </tbody>
             </table>
           </div>
-          {more && <button onClick={() => loadOrders(true, orders[orders.length - 1]).catch(e => setError(e.message))}
+          {more && <button onClick={() => loadOrders(true, orders[orders.length - 1]).catch(e => setError(ownerMessage(e)))}
             className="w-full py-2 rounded-lg text-xs border" style={{ borderColor: G.border, color: G.text }}>കൂടുതൽ കാണിക്കുക</button>}
         </section>
       </div>
