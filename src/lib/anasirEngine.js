@@ -49,6 +49,10 @@ export function analyzeElements(text) {
     }
   });
   
+  return summarizeElements(counts, letterDetails);
+}
+
+function summarizeElements(counts, letterDetails) {
   const total = letterDetails.length; // Count classified letters, not punctuation or marks.
   const percentages = {
     fire: total > 0 ? Math.round((counts.fire / total) * 100) : 0,
@@ -90,11 +94,18 @@ export function analyzeElements(text) {
  * Async version with progress tracking
  */
 export async function analyzeAnasirAsync(text, onProgress) {
-  onProgress?.(10);
-  await new Promise(resolve => setTimeout(resolve, 50));
-  
-  const result = analyzeElements(text);
-  
+  const chunkSize = 12000;
+  const counts = { fire: 0, air: 0, water: 0, earth: 0 };
+  const letterDetails = [];
+  onProgress?.(0);
+  for (let offset = 0; offset < text.length; offset += chunkSize) {
+    const part = analyzeElements(text.slice(offset, offset + chunkSize));
+    for (const element of Object.keys(counts)) counts[element] += part.counts[element];
+    for (const detail of part.letterDetails) letterDetails.push(detail);
+    onProgress?.(Math.min(99, Math.round((offset + chunkSize) / text.length * 100)));
+    // Let the browser paint progress and respond to input between batches.
+    await new Promise(resolve => setTimeout(resolve, 0));
+  }
   onProgress?.(100);
-  return result;
+  return summarizeElements(counts, letterDetails);
 }

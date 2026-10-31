@@ -10,6 +10,14 @@ export default function AnasirLetterGrid({ letterDetails }) {
     return acc;
   }, {});
 
+  // Bound rendered cells for long texts, without dropping any counted letters.
+  const compact = letterDetails.length > 500;
+  const displayLetters = (letters) => compact
+    ? Array.from(letters.reduce((frequencies, letter) =>
+        frequencies.set(letter, (frequencies.get(letter) || 0) + 1), new Map()),
+        ([letter, count]) => ({ letter, count }))
+    : letters.map(letter => ({ letter, count: null }));
+
   const elementColors = {
     fire: '#ef4444',
     air: '#fbbf24',
@@ -44,14 +52,14 @@ export default function AnasirLetterGrid({ letterDetails }) {
             </span>
           </div>
           <div className="flex flex-wrap gap-1">
-            {letters.map((letter, i) => (
-              <span key={i} className="w-7 h-7 rounded-lg flex items-center justify-center font-amiri text-lg font-bold"
+            {displayLetters(letters).map(({ letter, count }, i) => (
+              <span key={i} className="min-w-7 px-1 h-7 rounded-lg flex items-center justify-center font-amiri text-lg font-bold"
                 style={{
                   background: `${elementColors[element]}20`,
                   color: '#ffffff',
                   border: `1px solid ${elementColors[element]}30`
                 }}>
-                {letter}
+                {letter}{count !== null && <small className="font-inter text-[10px] ml-1">×{count}</small>}
               </span>
             ))}
           </div>
