@@ -30,9 +30,31 @@ jobs:
         run: npm run verify:records && npm run verify:private-references && npm run verify:independence
       - name: Verify independent account read isolation
         run: node scripts/verify-independent-read-api.mjs
+      - name: Verify Razorpay payment handlers
+        run: npm run verify:payments
       - name: Lint source
         run: npm run lint
       - name: Compare source calculation outputs
         run: npm run verify:calculation-source && npm run verify:calculation-regression && npm run verify:async-calculation
       - name: Build production bundle
         run: npm run build
+
+  payment-ledger:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify payment ledger SQL on a throwaway database
+        env:
+          PG_TEST_URL: postgresql://postgres@localhost:5432/postgres
+        run: bash scripts/verify-razorpay-ledger.sh

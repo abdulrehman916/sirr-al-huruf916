@@ -61,6 +61,10 @@ npm run typecheck
 The calculation verification is a release gate. Keep the locked calculation core and its expected outputs unchanged unless the owner explicitly authorizes a formula change.
 
 
+## Online payments (Razorpay)
+
+Owner sets a price and validity per premium page (Owner Panel → Online payments). Customers sign in and buy one page at a time; Vercel functions in `api/payments/` create the Razorpay order, verify the checkout signature and captured payment, and receive signed webhooks. Access is granted only by service-role SQL functions (`payment_*`) into `orders` / `order_items` / `entitlements`, one entitlement per paid order, each with its own expiry. Owner gift codes are unchanged. Setup steps (Malayalam): `docs/RAZORPAY_SETUP_ML.md`. Tests: `npm run verify:payments` and `PG_TEST_URL=… npm run verify:payment-ledger` (throwaway Postgres only).
+
 ## Deployment and scale
 
 

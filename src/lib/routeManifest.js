@@ -54,13 +54,12 @@ const ROUTE_MANIFEST = [
   // Access & Subscription utility pages — all public
   { path: '/subscription/expired', component: 'SubscriptionExpired', chunk: 'SubscriptionExpired', flags: ['public'] },
   { path: '/subscription/pending', component: 'SubscriptionPending', chunk: 'SubscriptionPending', flags: ['public'] },
-  { path: '/premium/request', component: 'PremiumAccessRequest', chunk: 'PremiumAccessRequest', flags: ['public', 'account'] },
-  { path: '/my-subscription', component: 'MySubscription', chunk: 'MySubscription', flags: ['public', 'account'] },
+  { path: '/my-subscription', component: 'MyPurchases', chunk: 'MyPurchases', flags: ['public', 'account'] },
   { path: '/my-requests', component: 'MyRequests', chunk: 'MyRequests', flags: ['public', 'account'] },
-  { path: '/redeem-approval', component: 'RedeemCodeApproval', chunk: 'RedeemCodeApproval', flags: ['public', 'account'] },
 
   // Admin
   { path: '/admin/access-dashboard', component: 'AdminDashboard', chunk: 'AdminDashboard' },
+  { path: '/admin/online-payments', component: 'AdminOnlinePayments', chunk: 'AdminOnlinePayments' },
   { path: '/admin/approved-users', component: 'ApprovedUsersPage', chunk: 'ApprovedUsersPage' },
   { path: '/admin/page-permissions', component: 'PagePermissions', chunk: 'PagePermissions' },
   { path: '/admin/access-codes', component: 'AdminAccessCodes', chunk: 'AdminAccessCodes' },

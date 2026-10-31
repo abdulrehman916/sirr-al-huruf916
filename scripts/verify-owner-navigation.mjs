@@ -7,7 +7,9 @@ const bundled = await build({ entryPoints: ['src/lib/rbac.js'], bundle: true, wr
   platform: 'node', format: 'esm', alias: { '@': new URL('../src', import.meta.url).pathname } });
 const rbac = await import(`data:text/javascript;base64,${Buffer.from(bundled.outputFiles[0].text).toString('base64')}`);
 const daily = ADMIN_NAVIGATION.flatMap(section => section.items);
-assert.equal(daily.length, 10);
+assert.equal(daily.length, 9);
+assert.ok(daily.some(item => item.path === '/admin/online-payments'), 'Online payments is a daily owner page');
+assert.ok(!daily.some(item => ['/admin/access-requests', '/admin/redeem-approvals'].includes(item.path)), 'Retired customer request flows are not daily pages');
 for (const item of [...daily, ...ADMIN_MAINTENANCE.flatMap(section => section.items)]) {
   assert.ok(manifest.some(route => route.path === item.path), `Missing route: ${item.path}`);
   assert.equal(rbac.canAccessAdminRoute('owner', item.path, null), true);
@@ -25,4 +27,4 @@ for (const path of ['/admin/content-studio', '/admin/books-studio', '/admin/reso
 for (const path of ['/resources', '/content/:slug', '/books', '/books/:slug', '/my-library']) {
   assert.ok(!manifest.some(route => route.path === path));
 }
-console.log('PASS: ten daily routes, removed publishing studios/catalogues, owner-only navigation and admin/guest/customer denial.');
+console.log('PASS: nine daily routes, removed publishing studios/catalogues, owner-only navigation and admin/guest/customer denial.');

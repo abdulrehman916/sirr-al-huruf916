@@ -112,8 +112,7 @@ registerPage('/support/ticket', { pageType: 'content', visible: false, requiresP
 // Subscription pages
 registerPage('/subscription/expired', { pageType: 'system', visible: false, requiresPermission: false });
 registerPage('/subscription/pending', { pageType: 'system', visible: false, requiresPermission: false });
-registerPage('/premium/request', { name: 'Premium Access Request', pageType: 'system', visible: false, requiresPermission: false });
-registerPage('/my-subscription', { name: 'My Subscription', icon: '⭐', category: 'System', pageType: 'content', visible: true, requiresPermission: false });
+registerPage('/my-subscription', { name: 'My Purchases', icon: '⭐', category: 'System', pageType: 'content', visible: true, requiresPermission: false });
 
 // Admin pages (all exist in ROUTE_MANIFEST)
 registerPage('/admin/access-dashboard', { name: 'Owner Dashboard', icon: '👑', category: 'Owner', pageType: 'admin', adminOnly: true, visible: false });

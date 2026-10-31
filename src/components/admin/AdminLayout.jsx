@@ -2,7 +2,7 @@ import { useNavigation } from "@/context/NavigationContext";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import { Shield, LayoutDashboard, Users, Globe, MessageSquare, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, Store, LogOut, ListChecks, KeyRound, Library } from "lucide-react";
+import { Shield, LayoutDashboard, Users, Globe, MessageSquare, Settings, ChevronLeft, PanelLeftOpen, PanelLeftClose, Inbox, Store, LogOut, ListChecks, KeyRound, Library, CreditCard } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 import { ADMIN_NAVIGATION } from "@/lib/adminNavigation";
 import { filterAdminSections } from "@/lib/rbac";
@@ -18,7 +18,7 @@ const G = {
   bgHi: "rgba(212,175,55,0.14)",
 };
 
-const NAV_ICONS = { dashboard: LayoutDashboard, users: Users, codes: KeyRound, requests: Inbox, approvals: ListChecks, pages: Globe, support: MessageSquare, shop: Store, library: Library, settings: Settings };
+const NAV_ICONS = { dashboard: LayoutDashboard, users: Users, codes: KeyRound, requests: Inbox, approvals: ListChecks, pages: Globe, support: MessageSquare, shop: Store, library: Library, settings: Settings, payments: CreditCard };
 const SIDEBAR_SECTIONS = ADMIN_NAVIGATION.map(section => ({ ...section, items: section.items.map(item => ({ ...item, icon: NAV_ICONS[item.icon] })) }));
 
 function SidebarContent({ location, onNavigate }) {

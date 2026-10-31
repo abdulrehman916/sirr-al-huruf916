@@ -264,7 +264,6 @@ export const MISSING_VISIBILITY_CONFIGS = [
   // Payment Flow
   { path: '/payment', chunk: 'PaymentPage', critical: true, impact: 'Payment page inaccessible' },
   { path: '/payment/razorpay', chunk: 'RazorpayPayment', critical: true, impact: 'Razorpay integration broken' },
-  { path: '/premium/request', chunk: 'PremiumAccessRequest', critical: true, impact: 'Access requests broken' },
   
   // Admin Panel (Core 5)
   { path: '/admin/access-dashboard', chunk: 'AdminDashboard', critical: true, impact: 'Admin dashboard inaccessible' },

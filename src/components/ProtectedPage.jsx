@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { platform } from "@/api/platformClient";
-import { Lock, MessageCircle, KeyRound, Loader2, Shield, Construction } from "lucide-react";
+import { Lock, KeyRound, Loader2, Shield, Construction, Receipt } from "lucide-react";
 import { getPageConfig, isPublicPage } from "@/lib/pageRegistry";
 import { validateAndCleanPermissions } from "@/lib/sessionId";
 import { setAdminFlag } from "@/lib/featurePermission";
@@ -10,11 +10,12 @@ import { useAuth } from "@/lib/AuthContext";
 import { ROLES, isAdminRole, canAccessAdminRoute, getAdminHomePath } from "@/lib/rbac";
 import { hasSubFeatures } from "@/lib/featureRegistry";
 import { preloadPageFeatureConfigs } from "@/lib/featureConfigCache";
-import WhatsAppAccessRequest from "@/components/WhatsAppAccessRequest";
-import RequestAccessModal from "@/components/RequestAccessModal";
+import BuyPageButton from "@/components/BuyPageButton";
+import RedeemCodeModal from "@/components/RedeemCodeModal";
 import { useTranslation } from "@/i18n/useTranslation";
 import { isDevMode, persistSet, persistRemove } from "@/lib/devModePersistence";
-import { formatResourcePrice, resolveUnifiedPageAccess } from "@/lib/unifiedAccess";
+import { resolveUnifiedPageAccess, purchasedAccessEndsAt, formatResourcePrice } from "@/lib/unifiedAccess";
+import { describeValidity } from "@/lib/razorpayCheckout";
 
 const G = {
   border: "rgba(212,175,55,0.40)",
@@ -41,6 +42,7 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
   const [pageName, setPageName] = useState("");
   const [plockInfo, setPlockInfo] = useState({ reason: "", custom_message: "" });
   const [unifiedResource, setUnifiedResource] = useState(null);
+  const [relockAt, setRelockAt] = useState(null);
 
   // Post-signin redirect: when a Guest signs in via Google from a locked
   // page, send Owner → Owner Dashboard. Guests
@@ -155,8 +157,14 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
         setUnifiedResource(unified.resource);
         if (unified.title) setPageName(unified.title);
         setAccessStatus(unified.allowed ? "granted" : "locked");
+        // A purchase has its own end time: re-check exactly then so the page
+        // locks itself while open. Renewals and gift codes keep it open.
+        const endsAt = unified.allowed && unified.reason === "ENTITLEMENT"
+          ? await purchasedAccessEndsAt(unified.resource.id) : null;
+        setRelockAt(endsAt && new Date(endsAt).getTime() > Date.now() ? new Date(endsAt).getTime() : null);
         return;
       }
+      setRelockAt(null);
       setUnifiedResource(null);
     } catch {
       // Fail closed: a database/network error must never make a paid route
@@ -236,6 +244,14 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
     setPageName(config?.name || routePath.replace(/^\//, "").replace(/-/g, " "));
     checkAccess();
   }, [routePath, checkAccess]);
+
+  useEffect(() => {
+    if (!relockAt) return undefined;
+    // Browsers cap timers at ~24.8 days; a longer wait simply re-checks then.
+    const delay = Math.min(Math.max(relockAt - Date.now(), 0) + 1000, 2147483000);
+    const timer = window.setTimeout(() => { validateAndCleanPermissions(); checkAccess(); }, delay);
+    return () => window.clearTimeout(timer);
+  }, [relockAt, checkAccess]);
 
   if (accessStatus === "checking") {
     return (
@@ -331,16 +347,17 @@ export default function ProtectedPage({ routePath, children, requiresPermission 
       pageName={pageName}
       routePath={routePath}
       resource={unifiedResource}
+      onUnlocked={checkAccess}
     />
   );
 }
 
 // ── Premium locked screen ──────────────────────────────────────────────────────
-function PremiumLockedScreen({ pageName, routePath, resource }) {
+function PremiumLockedScreen({ pageName, routePath, resource, onUnlocked }) {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [showRequestModal, setShowRequestModal] = useState(false);
+  const [showCodeModal, setShowCodeModal] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
 
   // Google Sign-In for Guests — identity + return to this exact page.
@@ -379,6 +396,11 @@ function PremiumLockedScreen({ pageName, routePath, resource }) {
             <p className="font-inter text-sm text-white/60 mb-6">
               This page requires an account. Sign in with your email or Google to continue.
             </p>
+            {resource?.access_mode === "PAID" && Number(resource?.price_minor || 0) >= 100 && (
+              <p className="font-inter text-xs mb-5" style={{ color: G.text }}>
+                {formatResourcePrice(resource)} · {describeValidity(resource)} · login ചെയ്ത ശേഷം വാങ്ങാം
+              </p>
+            )}
             <button onClick={() => navigate(`/login?redirect=${encodeURIComponent(routePath)}`)}
               className="w-full py-3.5 rounded-xl font-inter font-bold text-sm flex items-center justify-center gap-2 mb-3"
               style={{ background: "#ffffff", color: "#0d1b2a" }}>
@@ -417,32 +439,24 @@ function PremiumLockedScreen({ pageName, routePath, resource }) {
           <h1 className="font-inter text-lg font-bold mb-2" style={{ color: G.text }}>{pageName}</h1>
           <p className="font-inter text-sm text-white/60 mb-6">{t("premium_no_access", "You don't have access to this premium content.")}</p>
 
-          {resource?.access_mode === "PAID" && (
-            <div className="mb-4 rounded-xl border px-4 py-3" style={{ background: G.bg, borderColor: G.border }}>
-              <p className="text-[10px] uppercase tracking-wider text-white/40">Price</p>
-              <p className="mt-1 text-lg font-bold" style={{ color: G.text }}>{formatResourcePrice(resource)}</p>
-              <p className="mt-1 text-[11px] text-white/40">
-                {resource.lifetime_access
-                  ? "Lifetime access"
-                  : resource.validity_days
-                    ? `${resource.validity_days} days access`
-                    : "Owner-managed validity"}
-              </p>
-            </div>
+          <BuyPageButton resource={resource} onUnlocked={onUnlocked} />
+
+          {!(resource?.access_mode === "PAID" && Number(resource?.price_minor || 0) >= 100) && (
+            <p className="mb-4 text-xs text-white/45">ഈ page ഇപ്പോൾ online-ൽ വിൽപ്പനയ്ക്കില്ല.</p>
           )}
 
-          <p className="mb-4 text-xs text-white/45">Access is linked to your signed-in account after approval.</p>
-
-          {/* ── Request access: WhatsApp + in-app form (original workflow) ── */}
-          <div className="mb-3">
-            <WhatsAppAccessRequest pageName={pageName} routePath={routePath} />
-          </div>
-
-          <button onClick={() => setShowRequestModal(true)}
+          <button onClick={() => setShowCodeModal(true)}
             className="w-full py-3 rounded-xl font-inter font-semibold text-sm flex items-center justify-center gap-2 mb-3"
             style={{ background: "rgba(212,175,55,0.08)", border: `1px solid rgba(212,175,55,0.35)`, color: "#F5D060" }}>
-            <MessageCircle className="w-4 h-4" />
-            {t("request_access_form", "Request Access (In-App Form)")}
+            <KeyRound className="w-4 h-4" />
+            Gift code ഉണ്ടോ? ഇവിടെ നൽകുക
+          </button>
+
+          <button onClick={() => navigate("/my-subscription")}
+            className="w-full py-2.5 rounded-xl font-inter font-semibold text-xs flex items-center justify-center gap-2 mb-3"
+            style={{ background: "transparent", border: `1px solid rgba(212,175,55,0.20)`, color: "rgba(245,208,96,0.75)" }}>
+            <Receipt className="w-3.5 h-3.5" />
+            എന്റെ purchases
           </button>
 
           <button onClick={() => navigate("/")}
@@ -454,14 +468,9 @@ function PremiumLockedScreen({ pageName, routePath, resource }) {
 
       </motion.div>
 
-      {/* In-app access request modal (original workflow → submitAccessRequest) */}
       <AnimatePresence>
-        {showRequestModal && (
-          <RequestAccessModal
-            pagePath={routePath}
-            pageName={pageName}
-            onClose={() => setShowRequestModal(false)}
-          />
+        {showCodeModal && (
+          <RedeemCodeModal onClose={() => { setShowCodeModal(false); onUnlocked?.(); }} />
         )}
       </AnimatePresence>
     </div>

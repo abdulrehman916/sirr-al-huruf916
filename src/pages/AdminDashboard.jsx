@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
-import { Users, KeyRound, Clock, Inbox, ArrowUpRight, RefreshCw, Plus, Globe, MessageSquare } from "lucide-react";
+import { Users, KeyRound, Clock, CreditCard, ArrowUpRight, RefreshCw, Plus, Globe, MessageSquare } from "lucide-react";
 import { platform } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
@@ -9,9 +9,8 @@ import { canAccessAdminRoute, isAdminRole } from "@/lib/rbac";
 
 const actions = [
   { to: "/admin/approved-users", label: "Customers", description: "Accounts and customer details", icon: Users },
-  { to: "/admin/access-codes", label: "Codes & renewals", description: "Create codes, add pages and extend access", icon: KeyRound },
-  { to: "/admin/access-requests", label: "Access requests", description: "Review customer requests", icon: Inbox },
-  { to: "/admin/redeem-approvals", label: "Redeem approvals", description: "Review code activation approvals", icon: Inbox },
+  { to: "/admin/online-payments", label: "Online payments", description: "Page prices, validity and Razorpay payments", icon: CreditCard },
+  { to: "/admin/access-codes", label: "Gift codes & renewals", description: "Create gift codes for family and friends", icon: KeyRound },
   { to: "/admin/page-permissions", label: "Pages & pricing", description: "Set access, prices and durations for pages and child cards", icon: Globe },
   { to: "/admin/support", label: "Customer support", description: "Read and answer support requests", icon: MessageSquare },
 ];

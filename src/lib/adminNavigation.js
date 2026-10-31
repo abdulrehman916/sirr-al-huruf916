@@ -3,9 +3,8 @@ export const ADMIN_NAVIGATION = [
   { label: 'Overview', items: [{path:'/admin/access-dashboard',label:'Dashboard',icon:'dashboard'}] },
   { label: 'Customer access', items: [
     {path:'/admin/approved-users',label:'Customers',icon:'users'},
-    {path:'/admin/access-codes',label:'Codes & renewals',icon:'codes'},
-    {path:'/admin/access-requests',label:'Access requests',icon:'requests'},
-    {path:'/admin/redeem-approvals',label:'Redeem approvals',icon:'approvals'},
+    {path:'/admin/online-payments',label:'Online payments',icon:'payments'},
+    {path:'/admin/access-codes',label:'Gift codes & renewals',icon:'codes'},
     {path:'/admin/page-permissions',label:'Pages & pricing',icon:'pages'},
     {path:'/admin/support',label:'Customer support',icon:'support'},
   ]},
@@ -22,6 +21,8 @@ export const ADMIN_MAINTENANCE = [
   ]},
   {label:'Activity',items:[
     {path:'/admin/access-logs',label:'Access history',description:'Investigate code activation and access issues.'},
+    {path:'/admin/access-requests',label:'Old access requests',description:'Read-only history of the retired customer request flow.'},
+    {path:'/admin/redeem-approvals',label:'Old redeem approvals',description:'History of the retired customer code-approval flow.'},
     {path:'/admin/audit-log',label:'Owner audit history',description:'Review recorded owner actions.'},
     {path:'/admin/analytics',label:'Analytics',description:'Review usage reports.'},
     {path:'/admin/products',label:'Products',description:'Manage the products shown in the existing shop.'},
