@@ -25,6 +25,8 @@ import { CardNotes } from "@/components/owner/OwnerContent";
 import { useAuth } from "@/lib/AuthContext";
 
 import { getHolyNameCardMetrics } from "@/lib/holyNameCardMetrics";
+import mergedCards from "@/data/holyNamesMergedCards.json";
+import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
 import { HolyNamesLanguageContext, HolyNamesLanguageToggle, useHolyNamesLanguagePreference, useHolyNamesLanguage } from "@/components/holynameknowledge/HolyNamesLanguageContext";
 
 import { useBackLayer } from "@/lib/useBackLayer";
@@ -385,9 +387,14 @@ function SectionB() {
     setLoadError(false);
     try {
       const allNames = await platform.entities.HolyOnePDFName.summaries(['pdf_name_id', 'arabic_name', 'arabic_transliteration', 'malayalam_pronunciation', 'meaning_malayalam', 'meaning_english', 'english_meaning', 'surah_name', 'global_order', 'book_order'], 500);
-      allNames.sort((a, b) => Number(a.global_order || 0) - Number(b.global_order || 0));
-      setNames((allNames || []).map(withSectionBMeaning));
-      const uniqueSurahs = [...new Set((allNames || []).map(n => n.surah_name))].filter(Boolean);
+      // One card per Divine Name: duplicates are shown inside the card they were merged into,
+      // and dhikr phrases (not Names) are hidden. Book names follow Tilimsani's order first.
+      const hiddenIds = new Set([...Object.keys(mergedCards.merged_into), ...mergedCards.hidden]);
+      const bookOrder = name => Number(tilimsaniChapters[name.pdf_name_id]?.book_order) || 1000 + Number(name.global_order || 0);
+      const visibleNames = (allNames || []).filter(name => !hiddenIds.has(name.pdf_name_id));
+      visibleNames.sort((a, b) => bookOrder(a) - bookOrder(b));
+      setNames(visibleNames.map(withSectionBMeaning));
+      const uniqueSurahs = [...new Set(visibleNames.map(n => n.surah_name))].filter(Boolean);
       setSurahList(uniqueSurahs);
     } catch (error) {
       setLoadError(true);

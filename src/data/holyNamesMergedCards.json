@@ -1,0 +1,20 @@
+{
+ "note": "Section B card consolidation. merged_into: duplicate card id -> the single card that now shows its content. hidden: dhikr phrases that are not Divine Names; their records are kept, only hidden from the Names list.",
+ "merged_into": {
+  "PDF-HN-005": "PDF-HN-0226",
+  "PDF-HN-0147": "PDF-HN-015",
+  "PDF-HN-078": "PDF-HN-0189",
+  "PDF-HN-0202": "PDF-HN-236",
+  "PDF-HN-0192": "PDF-HN-0191",
+  "PDF-HN-064": "PDF-HN-0152"
+ },
+ "hidden": [
+  "PDF-HN-130",
+  "PDF-HN-132",
+  "PDF-HN-135",
+  "PDF-HN-136",
+  "PDF-HN-137",
+  "PDF-HN-139",
+  "PDF-HN-140"
+ ]
+}
