@@ -18,7 +18,7 @@ export const ELEMENTS = {
       background: 'rgba(239,68,68,0.20)',
       borderColor: 'rgba(239,68,68,0.40)'
     },
-    letters: 'اهطمر'
+    letters: 'اهطمفشذ'
   },
   air: {
     name: 'Air',
@@ -34,7 +34,7 @@ export const ELEMENTS = {
       background: 'rgba(251,191,36,0.20)',
       borderColor: 'rgba(251,191,36,0.40)'
     },
-    letters: 'دزكوي'
+    letters: 'جزكسقثظ'
   },
   water: {
     name: 'Water',
@@ -50,7 +50,7 @@ export const ELEMENTS = {
       background: 'rgba(59,130,246,0.20)',
       borderColor: 'rgba(59,130,246,0.40)'
     },
-    letters: 'بجلن'
+    letters: 'دحلعرخغ'
   },
   earth: {
     name: 'Earth',
@@ -66,6 +66,6 @@ export const ELEMENTS = {
       background: 'rgba(132,204,22,0.20)',
       borderColor: 'rgba(132,204,22,0.40)'
     },
-    letters: 'سعفصقثخذضظغخشت'
+    letters: 'بوينصتض'
   }
 };

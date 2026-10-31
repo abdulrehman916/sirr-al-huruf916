@@ -3,7 +3,7 @@
  * Calculates elemental domination based on Arabic letter properties
  */
 
-import { ELEMENTS } from './anasirValues';
+import { ELEMENTS } from './anasirValues.js';
 
 /**
  * Normalize Arabic text - remove diacritics and standardize forms
@@ -18,18 +18,15 @@ export function normalizeText(text) {
 /**
  * Get element for a single Arabic letter
  */
-const ANASIR_NORM = { 'ء':'ا','أ':'ا','إ':'ا','آ':'ا','ؤ':'و','ئ':'ي' };
+const ANASIR_NORM = { 'ء':'ا','أ':'ا','إ':'ا','آ':'ا','ؤ':'و','ئ':'ي','ى':'ي','ة':'ه' };
 export function getElementForLetter(letter) {
   const normalized = ANASIR_NORM[letter.trim()] || letter.trim();
 
-  // Fire letters (carrier set — Hamza inherits Alif via ANASIR_NORM)
-  if ('اهطمر'.includes(normalized)) return 'fire';
-  // Air letters
-  if ('دزكوي'.includes(normalized)) return 'air';
-  // Water letters
-  if ('بجلن'.includes(normalized)) return 'water';
-  // Earth letters
-  if ('سعفصقثخذضظغخشت'.includes(normalized)) return 'earth';
+  if (!normalized) return null;
+  // Use the same source-checked seven-letter sets as the page configuration.
+  for (const [element, config] of Object.entries(ELEMENTS)) {
+    if (config.letters.includes(normalized)) return element;
+  }
 
   return null;
 }
@@ -52,7 +49,7 @@ export function analyzeElements(text) {
     }
   });
   
-  const total = letters.length;
+  const total = letterDetails.length; // Count classified letters, not punctuation or marks.
   const percentages = {
     fire: total > 0 ? Math.round((counts.fire / total) * 100) : 0,
     air: total > 0 ? Math.round((counts.air / total) * 100) : 0,
