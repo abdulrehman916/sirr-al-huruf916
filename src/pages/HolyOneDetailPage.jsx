@@ -13,6 +13,7 @@ import HolyNameImportedSections from "@/components/holynameknowledge/HolyNameImp
 import HolyOneSourceVisuals from "@/components/holynameknowledge/HolyOneSourceVisuals";
 import HolyOneScholarlySections from "@/components/holynameknowledge/HolyOneScholarlySections";
 import HolyNameSectionBReader from "@/components/holynameknowledge/HolyNameSectionBReader";
+import HolyNameOutsideSources from "@/components/holynameknowledge/HolyNameOutsideSources";
 import tilimsaniChapters from "@/data/holyNamesTilimsaniChapters.json";
 import { withSectionBBaseTranslations } from '@/lib/holyNames/baseTranslations';
 import { withSectionBMeaning } from '@/lib/holyNames/sectionBMeanings';
@@ -416,6 +417,7 @@ export default function HolyOneDetailPage() {
           ) : null}
 
         {source === "B" && <HolyNameSectionBReader key={name.pdf_name_id || nameId} card={name} chapter={tilimsaniChapters[name.pdf_name_id || nameId]} nameId={name.pdf_name_id || nameId} />}
+        {source === "B" && <HolyNameOutsideSources nameId={name.pdf_name_id || nameId} />}
 
         {source === "B" && mergedAliases.map(alias => (
           <div key={alias.pdf_name_id} className="rounded-xl border p-4 space-y-4" style={{ background: "rgba(255,255,255,0.02)", borderColor: G.border }} data-testid="merged-card-content">
