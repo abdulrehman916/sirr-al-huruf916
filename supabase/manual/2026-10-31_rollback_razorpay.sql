@@ -28,3 +28,12 @@ drop function if exists public.owner_payment_orders(jsonb);
 drop function if exists public.my_page_purchases();
 -- Tables, columns and indexes added by the migration are left in place (they hold
 -- payment history and do not change access on their own).
+
+-- UPI direct payments (2026-11-01): turn UPI off and remove its functions.
+-- Restoring function_definitions above already brings back the pre-UPI
+-- owner_payment_orders / my_page_purchases. Payment rows are kept.
+update public.payment_settings set upi_enabled = false where id;
+drop function if exists public.upi_submit_payment(uuid, text);
+drop function if exists public.owner_upi_decide(uuid, boolean, text);
+drop function if exists public.owner_payment_settings(jsonb);
+drop function if exists public.payment_options();

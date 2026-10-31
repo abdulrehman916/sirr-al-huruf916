@@ -31,7 +31,7 @@ if (!process.env.E2E_SKIP_BUILD || !existsSync(OUT)) {
 }
 
 // ── In-memory stand-in for the database ─────────────────────────────────────
-const state = { resources: [], orders: [], entitlements: [], rpcCalls: [] };
+const state = { resources: [], orders: [], entitlements: [], rpcCalls: [], razorpayReady: true, settings: { upi_enabled: false, upi_id: null, payee_name: null } };
 const now = () => new Date().toISOString();
 const activeEnt = (userId, resourceId) => state.entitlements.find(e => e.user_id === userId
   && e.resource_id === resourceId && !e.revoked_at && (!e.expires_at || new Date(e.expires_at) > new Date()));
@@ -50,12 +50,39 @@ const rpc = {
       validity_days: p.lifetime_access ? null : p.validity_days, lifetime_access: p.lifetime_access, updated_at: now() });
     return { success: true, resource_id: r.id, on_sale: r.status === 'PUBLISHED' };
   },
-  owner_payment_orders: () => ({ orders: state.orders.filter(o => o.status === 'PAID') }),
+  owner_payment_orders: (_u, { p_payload: p = {} }) => ({ orders: state.orders
+    .filter(o => (p.provider ? o.provider === p.provider : true) && o.status === (p.status || 'PAID'))
+    .map(o => { const r = state.resources.find(x => x.id === o.resource_id); return { ...o, page_title: r.title, route_path: r.metadata.route_path, validity_days: r.validity_days, currency: 'INR' }; }) }),
+  payment_options: () => ({ upi_enabled: state.settings.upi_enabled, upi_id: state.settings.upi_enabled ? state.settings.upi_id : null, payee_name: state.settings.payee_name }),
+  owner_payment_settings: (user, { p_payload: p }) => {
+    if (user.role !== 'owner') throw new Error('Owner access required');
+    if (p) {
+      if (p.upi_id && !/^[a-z0-9._-]{2,64}@[a-z0-9.-]{2,64}$/.test(p.upi_id.toLowerCase())) throw new Error('Invalid UPI ID');
+      state.settings = { upi_enabled: p.upi_enabled, upi_id: p.upi_id.toLowerCase(), payee_name: p.payee_name };
+    }
+    return state.settings;
+  },
+  upi_submit_payment: (user, { p_resource_id, p_utr }) => {
+    if (!/^[0-9]{12}$/.test(p_utr)) throw new Error('INVALID_UTR');
+    if (state.orders.some(o => o.provider_payment_id === p_utr)) throw new Error('UTR_ALREADY_USED');
+    const r = state.resources.find(x => x.id === p_resource_id);
+    const o = { id: randomUUID(), provider: 'upi', user_id: user.id, resource_id: r.id, status: 'PENDING', total_minor: r.price_minor, created_at: now(), customer_email: user.email, provider_payment_id: p_utr };
+    state.orders.push(o);
+    return { success: true, order_id: o.id, status: 'PENDING' };
+  },
+  owner_upi_decide: (user, { p_order_id, p_approve }) => {
+    if (user.role !== 'owner') throw new Error('Owner access required');
+    const o = state.orders.find(x => x.id === p_order_id);
+    if (!p_approve) { o.status = 'FAILED'; return { status: 'FAILED' }; }
+    o.status = 'PAID'; o.paid_at = now();
+    state.entitlements.push({ order_id: o.id, user_id: o.user_id, resource_id: o.resource_id, starts_at: now(), expires_at: new Date(Date.now() + 86400000).toISOString(), revoked_at: null });
+    return { status: 'PAID' };
+  },
   page_visibility: () => ({}),
   can_access_resource: (user, { target }) => user?.role === 'owner' || Boolean(activeEnt(user?.id, target)),
   can_access_legacy_page: (user, { p_path }) => Boolean(resourceFor(p_path) && activeEnt(user?.id, resourceFor(p_path).id)),
   legacy_permission_grants: () => [],
-  my_page_purchases: (user) => state.orders.filter(o => o.user_id === user.id && o.status === 'PAID').map(o => {
+  my_page_purchases: (user) => state.orders.filter(o => o.user_id === user.id && (o.status === 'PAID' || o.provider === 'upi')).map(o => {
     const e = state.entitlements.find(x => x.order_id === o.id); const r = state.resources.find(x => x.id === o.resource_id);
     return { order_id: o.id, status: o.status, total_minor: o.total_minor, currency: 'INR', paid_at: o.paid_at, route_path: r.metadata.route_path,
       page_title: r.title, access_starts_at: e.starts_at, access_expires_at: e.expires_at, provider_payment_id: o.provider_payment_id };
@@ -108,7 +135,7 @@ const server = createServer(async (req, res) => {
     const request = new Request(url, { method: req.method, headers: req.headers, body: req.method === 'POST' ? await body(req) : undefined });
     const route = { 'create-order': handlers.createOrder, verify: handlers.verifyPayment, webhook: handlers.webhook }[name];
     const response = name === 'status'
-      ? new Response(JSON.stringify({ ready: true, razorpay_key_id: 'test', razorpay_key_secret: true, supabase_url: true, supabase_service_role_key: true, razorpay_webhook_secret: false }))
+      ? new Response(JSON.stringify({ ready: state.razorpayReady, razorpay_key_id: 'test', razorpay_key_secret: true, supabase_url: true, supabase_service_role_key: true, razorpay_webhook_secret: false }))
       : route ? await route(request) : new Response('{}', { status: 404 });
     return send(res, response.status, await response.text());
   }
@@ -173,7 +200,7 @@ try {
   const owner = await signedIn('tok-owner', OWNER);
   await owner.goto(`${ORIGIN}/admin/online-payments`);
   await owner.getByRole('heading', { name: /Online payments/ }).waitFor({ timeout: 20000 });
-  await owner.getByText('Payment സജ്ജമാണ്').waitFor();
+  await owner.getByText(/Razorpay \(തനിയെ തുറക്കുന്ന payment\) സജ്ജമാണ്/).waitFor();
   for (const name of ['Mizan 9', 'Plants Dictionary', 'Magical Holy Names', 'Astro Clock', 'Sirr al-Wafq', 'Faal Hasrath', 'Evil Jinn Names']) {
     assert.ok(await owner.getByText(name, { exact: true }).count(), `owner can price ${name}`);
   }
@@ -243,6 +270,52 @@ try {
   await customer.waitForTimeout(1500);
   assert.equal(await customer.getByText(/Gift code ഉണ്ടോ/).count(), 0, 'still open before expiry');
   await customer.getByRole('button', { name: /Buy · ₹499/ }).waitFor({ timeout: (ACCESS_SECONDS + 6) * 1000 });
+
+  // ── UPI straight to the owner's bank, approved by the owner ──────────────
+  state.razorpayReady = false;
+  owner.on('dialog', dialog => dialog.accept());
+  await owner.goto(`${ORIGIN}/admin/online-payments`);
+  await owner.getByLabel('UPI ID').waitFor({ timeout: 20000 });
+  await owner.getByLabel('UPI ID').fill('not-a-upi');
+  await owner.getByRole('button', { name: 'UPI ഓൺ ആക്കുക' }).click();
+  await owner.getByText(/UPI ID ശരിയല്ല/).waitFor();
+  await owner.getByLabel('UPI ID').fill('owner.name@okaxis');
+  await owner.getByLabel('Payee name').fill('Sirr al-Huruf');
+  await owner.getByRole('button', { name: 'UPI ഓൺ ആക്കുക' }).click();
+  await owner.getByText(/customers-ന് UPI വഴി അടയ്ക്കാം/).waitFor();
+  const faal = priceRow('Faal Hasrath');
+  await faal.getByLabel('Faal Hasrath price').fill('299');
+  await faal.getByLabel('Faal Hasrath validity').selectOption('7');
+  await faal.getByRole('button', { name: /വിൽക്കുക/ }).click();
+  await priceRow('Faal Hasrath').getByText(/വിൽപ്പനയിൽ · ₹299/).waitFor();
+
+  await customer.goto(`${ORIGIN}/faal-hasrath`);
+  await customer.getByRole('button', { name: /UPI വഴി Buy · ₹299/ }).click({ timeout: 20000 });
+  assert.equal(await customer.getByRole('button', { name: /^Buy · / }).count(), 0, 'Razorpay button hidden while Razorpay is off');
+  await customer.getByAltText('UPI QR code').waitFor();
+  await customer.getByText('owner.name@okaxis').waitFor();
+  await shot(customer, '4-customer-upi-pay');
+  await customer.getByLabel(/12 അക്ക UPI Ref/).fill('1234');
+  await customer.getByRole('button', { name: /Payment വിവരം അയക്കുക/ }).click();
+  await customer.getByText(/12 അക്കം ആയിരിക്കണം/).waitFor();
+  await customer.getByLabel(/12 അക്ക UPI Ref/).fill('4123 4567 8901');
+  await customer.getByRole('button', { name: /Payment വിവരം അയക്കുക/ }).click();
+  await customer.getByText(/Owner പരിശോധിച്ച് approve ചെയ്താൽ/).waitFor();
+  assert.equal(state.orders.at(-1).provider_payment_id, '412345678901', 'UPI reference saved without spaces');
+  await customer.goto(`${ORIGIN}/faal-hasrath`);
+  await customer.getByRole('button', { name: /UPI വഴി Buy/ }).waitFor({ timeout: 20000 });
+
+  await owner.goto(`${ORIGIN}/admin/online-payments`);
+  await owner.getByText('412345678901').waitFor({ timeout: 20000 });
+  await shot(owner, '5-owner-upi-approval');
+  await owner.getByRole('button', { name: 'Approve' }).click();
+  await owner.getByText(/customer-ന് page തുറന്നു/).waitFor();
+
+  await customer.goto(`${ORIGIN}/faal-hasrath`);
+  await customer.waitForTimeout(3000);
+  assert.equal(await customer.getByRole('button', { name: /UPI വഴി Buy/ }).count(), 0, 'approved UPI payment opens the page');
+  assert.equal(await customer.getByText(/Gift code ഉണ്ടോ/).count(), 0, 'lock screen is gone');
+  console.log('PASS: UPI — owner sets UPI ID (bad IDs refused), customer sees QR and pays to the owner, wrong reference refused, page stays locked until the owner approves, then opens.');
   console.log('PASS: owner prices every page (rupees, paise, custom days, lifetime), invalid prices refused, customer sees price, buys through the payment server, only that page opens, purchases list shows it, and the page locks itself at expiry.');
 } finally {
   await browser.close();

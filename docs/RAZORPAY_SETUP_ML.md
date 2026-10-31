@@ -1,4 +1,15 @@
-# Razorpay online payment — ഘട്ടം ഘട്ടമായുള്ള നിർദ്ദേശം (TEST mode)
+# Online payment — ഘട്ടം ഘട്ടമായുള്ള നിർദ്ദേശം
+
+## ഇപ്പോൾ: UPI വഴി നേരിട്ട് ബാങ്കിലേക്ക് (KYC വേണ്ട)
+
+1. Owner Panel → **Online payments** → **UPI വഴി നേരിട്ട് ബാങ്കിലേക്ക്**: നിങ്ങളുടെ UPI ID (GPay/PhonePe-ൽ കാണുന്നത്, ഉദാ: `name@okaxis`) + പേര് → **UPI ഓൺ ആക്കുക**.
+2. Page വിലകളിൽ ഓരോ page-നും വിലയും കാലാവധിയും → **വിൽക്കുക**.
+3. Customer QR scan ചെയ്ത് അടച്ച് 12 അക്ക UPI Ref നമ്പർ അയക്കും.
+4. **"approval കാത്തിരിക്കുന്നവ"** list-ൽ ആ നമ്പർ വരും. ബാങ്ക് SMS / app-ൽ അതേ നമ്പറും തുകയും ഉണ്ടോ എന്ന് നോക്കുക → **Approve**. ആ customer-ന് ആ page മാത്രം, നിങ്ങൾ വെച്ച കാലാവധിയോടെ തുറക്കും. കാണുന്നില്ലെങ്കിൽ **നിരസിക്കുക**.
+5. ഒരേ UPI Ref നമ്പർ രണ്ടാമത് ഉപയോഗിക്കാൻ site അനുവദിക്കില്ല.
+
+## പിന്നീട്: Razorpay (KYC കഴിഞ്ഞ ശേഷം — പണം അടച്ചാൽ തനിയെ തുറക്കും)
+
 
 > **പ്രധാനം:** Secret keys (Key Secret, service_role key, webhook secret) ഒരിക്കലും chat-ലോ GitHub-ലോ WhatsApp-ലോ ഇടരുത്. Vercel-ലെ "Environment Variables" എന്ന സ്ഥലത്ത് മാത്രം ഇടുക.
 
@@ -70,7 +81,9 @@ Customer-ന്റെ internet payment കഴിഞ്ഞ ഉടനെ മുറ
 
 > Vercel preview links സാധാരണ "Vercel Authentication" കൊണ്ട് പൂട്ടിയിരിക്കും; അതിനാൽ preview-ലേക്ക് Razorpay webhook എത്തിയേക്കില്ല. Preview test-ന് webhook ഇല്ലാതെയും payment ശരിയായി പ്രവർത്തിക്കും (server നേരിട്ട് പരിശോധിക്കുന്നു). Webhook production-ൽ സജ്ജമാക്കാം.
 
-## Database മാറ്റം (Owner-ന്റെ അനുമതിക്ക് ശേഷം മാത്രം)
+## Database മാറ്റം
+
+✅ 2026-10-31/11-01: backup എടുത്ത ശേഷം Razorpay, UPI database updates live database-ൽ apply ചെയ്തു (owner-ന്റെ അനുമതിയോടെ). പരിശോധനകൾ എല്ലാം ശരി.
 
 Preview-ഉം production-ഉം ഒരേ database ആണ്. അതിനാൽ ക്രമം:
 

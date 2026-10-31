@@ -249,6 +249,21 @@ assert.match(checkout.describeValidity({ validity_days: 7 }), /^7 ദിവസ�
   } }), /forged/);
   assert.equal(tries, 1, 'a rejected signature is not retried');
 }
+const upi = await bundle('src/lib/upiPayment.js');
+{
+  const link = upi.buildUpiLink({ upiId: 'owner.name@okaxis', payeeName: 'Sirr al-Huruf', amountMinor: 29950, note: 'Faal Hasrath' });
+  const params = new URL(link.replace('upi://pay', 'https://x/pay')).searchParams;
+  assert.ok(link.startsWith('upi://pay?'));
+  assert.equal(params.get('pa'), 'owner.name@okaxis');
+  assert.equal(params.get('am'), '299.50', 'amount in rupees with paise');
+  assert.equal(params.get('cu'), 'INR');
+  assert.equal(params.get('pn'), 'Sirr al-Huruf');
+  assert.ok(!link.includes('+'), 'spaces encoded for UPI apps');
+  assert.equal(upi.normalizeUtr('4123 4567 8901'), '412345678901');
+  assert.equal(upi.normalizeUtr('41234567890'), null, '11 digits refused');
+  assert.equal(upi.normalizeUtr('41234567890a'), null, 'letters refused');
+  assert.match(upi.upiErrorMessage({ message: 'UTR_ALREADY_USED' }), /ഇതിനകം ഉപയോഗിച്ചിട്ടുണ്ട്/);
+}
 const access = await bundle('src/lib/unifiedAccess.js');
 assert.deepEqual(access.priceLookupPaths('/plants/:id'), ['/plants/:id', '/plants']);
 assert.deepEqual(access.priceLookupPaths('/mizaan9'), ['/mizaan9']);

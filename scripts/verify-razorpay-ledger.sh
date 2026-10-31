@@ -19,7 +19,9 @@ for file in \
   supabase/migrations/20261002101301_secure_email_code_redemption_and_expiry.sql \
   supabase/migrations/20261020224754_independent_feature_permission_reads.sql \
   supabase/migrations/20261031120000_razorpay_page_purchases.sql \
-  supabase/migrations/20261031120000_razorpay_page_purchases.sql; do
+  supabase/migrations/20261031120000_razorpay_page_purchases.sql \
+  supabase/migrations/20261101090000_upi_direct_payments.sql \
+  supabase/migrations/20261101090000_upi_direct_payments.sql; do
   run -f "$file"
 done
 run -f scripts/verify-razorpay-ledger.sql

@@ -15,6 +15,8 @@ const fmt = (value) => value
 const titleOf = (title, fallback) => title?.ml || title?.en || fallback || "Premium page";
 
 export function accessState(item, now = Date.now()) {
+  if (item.status === "PENDING") return { label: "Owner approval കാത്തിരിക്കുന്നു", color: "#facc15" };
+  if (item.status === "FAILED") return { label: "നിരസിച്ചു", color: "#f87171" };
   if (item.status === "REFUNDED" || item.access_revoked_at) return { label: "Refund ചെയ്തു", color: "#f87171" };
   if (item.access_starts_at && new Date(item.access_starts_at).getTime() > now) return { label: "അടുത്ത കാലാവധി", color: "#60a5fa" };
   if (!item.access_expires_at || new Date(item.access_expires_at).getTime() > now) return { label: "Active", color: "#22c55e" };
@@ -75,15 +77,16 @@ export default function MyPurchases() {
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <p className="text-sm font-semibold text-white truncate">{titleOf(item.page_title, item.route_path)}</p>
-                    <p className="text-[11px] text-white/45">{formatResourcePrice({ price_minor: item.total_minor, currency: item.currency })} · {fmt(item.paid_at)}</p>
+                    <p className="text-[11px] text-white/45">{formatResourcePrice({ price_minor: item.total_minor, currency: item.currency })} · {fmt(item.paid_at || item.created_at)}</p>
                   </div>
                   <span className="text-[10px] font-bold uppercase tracking-wider whitespace-nowrap" style={{ color: state.color }}>{state.label}</span>
                 </div>
-                <p className="mt-2 text-xs text-white/60 flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {fmt(item.access_starts_at)} മുതൽ {fmt(item.access_expires_at)} വരെ</p>
+                {item.status === "PAID" && <p className="mt-2 text-xs text-white/60 flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {fmt(item.access_starts_at)} മുതൽ {fmt(item.access_expires_at)} വരെ</p>}
                 {item.route_path && state.label === "Active" && (
                   <Link to={item.route_path} className="mt-2 inline-block text-xs font-semibold" style={{ color: G.text }}>Page തുറക്കുക →</Link>
                 )}
                 {item.provider_payment_id && <p className="mt-1 text-[10px] text-white/30 font-mono">{item.provider_payment_id}</p>}
+                {item.status === "FAILED" && item.failure_reason && <p className="mt-1 text-[11px] text-red-300">{item.failure_reason}</p>}
               </div>
             );
           })}

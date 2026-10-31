@@ -181,6 +181,64 @@ set role service_role;
 select pg_temp.expect_error(format('select public.payment_create_order(%L, %L)', :'A', (select v from t_ids where k='sectionc')), 'NOT_FOR_SALE');
 reset role;
 
+-- ── Direct UPI payments approved by the owner ────────────────────────────────
+\set D '00000000-0000-0000-0000-0000000000d4'
+insert into auth.users (id, email, email_confirmed_at) values (:'D', 'd@example.com', now());
+set role authenticated;
+select set_config('request.jwt.claim.sub', :'O', false);
+select public.owner_set_page_price('{"route_path":"/faal-hasrath","title":"Faal","price_minor":29900,"validity_days":10}');
+select set_config('request.jwt.claim.sub', :'D', false);
+do $$ begin
+  assert (public.payment_options()->>'upi_enabled')::boolean = false, 'UPI is off until the owner turns it on';
+end $$;
+select pg_temp.expect_error($$select public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/faal-hasrath'), '123456789012')$$, 'UPI_DISABLED');
+select pg_temp.expect_error($$select public.owner_payment_settings('{"upi_enabled":true,"upi_id":"me@okaxis"}')$$, 'Owner access required');
+select set_config('request.jwt.claim.sub', :'O', false);
+select pg_temp.expect_error($$select public.owner_payment_settings('{"upi_enabled":true,"upi_id":"not a upi"}')$$, 'Invalid UPI ID');
+select public.owner_payment_settings('{"upi_enabled":true,"upi_id":"Owner.Name@okaxis","payee_name":"Sirr al-Huruf"}');
+reset role;
+set role anon;
+do $$ begin
+  assert public.payment_options()->>'upi_id' = 'owner.name@okaxis', 'payers see the UPI ID';
+end $$;
+reset role;
+set role authenticated;
+select set_config('request.jwt.claim.sub', :'D', false);
+select pg_temp.expect_error($$select public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/faal-hasrath'), '12345')$$, 'INVALID_UTR');
+select pg_temp.expect_error($$select public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/section-c'), '123456789012')$$, 'NOT_FOR_SALE');
+create temp table t_upi as select (public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/faal-hasrath'), '1234 5678 9012')->>'order_id')::uuid id;
+select pg_temp.expect_error($$select public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/faal-hasrath'), '123456789012')$$, 'UTR_ALREADY_USED');
+select pg_temp.expect_error($$select public.owner_upi_decide((select id from t_upi), true)$$, 'Owner access required');
+do $$ begin
+  assert not public.can_access_legacy_page('/faal-hasrath'), 'no access before the owner approves';
+  assert (select x->>'status' from jsonb_array_elements(public.my_page_purchases()) x limit 1) = 'PENDING', 'customer sees pending';
+end $$;
+select set_config('request.jwt.claim.sub', :'O', false);
+do $$ declare r jsonb; begin
+  assert jsonb_array_length(public.owner_payment_orders('{"provider":"upi","status":"PENDING"}')->'orders') = 1, 'owner sees the pending UPI payment';
+  r := public.owner_upi_decide((select id from t_upi), true);
+  assert r->>'status' = 'PAID';
+  assert abs(extract(epoch from ((r->>'expires_at')::timestamptz - now() - interval '10 days'))) < 60, 'page validity applied';
+  r := public.owner_upi_decide((select id from t_upi), true);
+  assert (r->>'already_decided')::boolean, 'approving twice does nothing';
+end $$;
+select set_config('request.jwt.claim.sub', :'D', false);
+do $$ begin
+  assert public.can_access_legacy_page('/faal-hasrath'), 'approved UPI payment opens the page';
+  assert not public.can_access_legacy_page('/mizaan9'), 'and nothing else';
+end $$;
+-- A rejected (fake) reference opens nothing.
+create temp table t_upi2 as select (public.upi_submit_payment((select id from public.resources where metadata->>'route_path'='/plants'), '999999999999')->>'order_id')::uuid id;
+select set_config('request.jwt.claim.sub', :'O', false);
+do $$ begin
+  assert public.owner_upi_decide((select id from t_upi2), false, 'Not in bank statement')->>'status' = 'FAILED';
+end $$;
+select set_config('request.jwt.claim.sub', :'D', false);
+do $$ begin
+  assert not public.can_access_legacy_page('/plants'), 'rejected payment opens nothing';
+end $$;
+reset role;
+
 -- Step 4 (after merge) retires customer access requests.
 \i supabase/manual/2026-10-31_step4_after_main_merge_disable_customer_requests.sql
 set role authenticated;
@@ -188,4 +246,4 @@ select set_config('request.jwt.claim.sub', :'A', false);
 select pg_temp.expect_error($$select public.request_page_access('{}')$$, 'permission denied');
 reset role;
 
-\echo 'PASS: Razorpay ledger — owner prices, server-only grants, idempotent payment, per-page isolation, renewals, refunds, expiry, gift codes.'
+\echo 'PASS: payment ledger — UPI owner approval (bad UTR, reused UTR, reject, approve once), owner prices, server-only grants, idempotent payment, per-page isolation, renewals, refunds, expiry, gift codes.'

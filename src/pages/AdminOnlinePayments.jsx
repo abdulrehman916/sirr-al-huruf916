@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Navigate } from "react-router-dom";
-import { CreditCard, RefreshCw, Save, Search } from "lucide-react";
+import { CreditCard, RefreshCw, Save, Search, QrCode, Check, X } from "lucide-react";
 import { supabase } from "@/api/platformClient";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { useAuth } from "@/lib/AuthContext";
@@ -58,7 +58,7 @@ function SetupStatus() {
   return (
     <section className="rounded-xl border p-3 space-y-2" style={{ background: G.bg, borderColor: status.ready ? "rgba(34,197,94,0.45)" : "rgba(239,68,68,0.45)" }}>
       <h2 className="text-sm font-semibold text-white">
-        {status.ready ? "✅ Payment സജ്ജമാണ്" : "⚠️ Payment ഇനിയും സജ്ജമല്ല"}
+        {status.ready ? "✅ Razorpay (തനിയെ തുറക്കുന്ന payment) സജ്ജമാണ്" : "⏸️ Razorpay ഇപ്പോൾ ഓഫ് ആണ് (KYC-ക്ക് ശേഷം)"}
         {status.razorpay_key_id === "test" && <span className="ml-2 text-[10px] px-2 py-0.5 rounded-full" style={{ background: "rgba(96,165,250,0.18)", color: "#93c5fd" }}>TEST MODE — യഥാർത്ഥ പണം ഇല്ല</span>}
         {status.razorpay_key_id === "live" && <span className="ml-2 text-[10px] px-2 py-0.5 rounded-full" style={{ background: "rgba(34,197,94,0.18)", color: "#86efac" }}>LIVE</span>}
       </h2>
@@ -68,7 +68,7 @@ function SetupStatus() {
         ))}
       </ul>
       {!status.ready && (
-        <p className="text-[11px] text-white/55">❌ ഉള്ളവ Vercel → Settings → Environment Variables-ൽ ചേർക്കുക (ഈ site-ന്റെ ശരിയായ environment tick ചെയ്ത്), പിന്നെ Redeploy ചെയ്യുക. വിശദമായി: docs/RAZORPAY_SETUP_ML.md</p>
+        <p className="text-[11px] text-white/55">Razorpay ഇല്ലെങ്കിലും താഴെയുള്ള UPI വഴി പണം വാങ്ങാം. ❌ ഉള്ളവ Vercel → Settings → Environment Variables-ൽ ചേർക്കുക (ഈ site-ന്റെ ശരിയായ environment tick ചെയ്ത്), പിന്നെ Redeploy ചെയ്യുക. വിശദമായി: docs/RAZORPAY_SETUP_ML.md</p>
       )}
     </section>
   );
@@ -150,6 +150,93 @@ function PriceRow({ route, current, onSaved }) {
   );
 }
 
+
+const fmtWhen = (value) => value ? new Date(value).toLocaleString("en-IN", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
+
+/** Owner's own UPI ID: customers pay straight into the owner's bank account. */
+function UpiSettings() {
+  const [form, setForm] = useState(null);
+  const [message, setMessage] = useState("");
+  const [saving, setSaving] = useState(false);
+  useEffect(() => {
+    supabase.rpc("owner_payment_settings", { p_payload: null })
+      .then(({ data, error }) => { if (error) setMessage(ownerMessage(error)); else setForm({ upi_id: data?.upi_id || "", payee_name: data?.payee_name || "", upi_enabled: Boolean(data?.upi_enabled) }); });
+  }, []);
+  if (!form) return message ? <p className="text-xs text-red-300">{message}</p> : null;
+  const save = async (enabled) => {
+    setSaving(true); setMessage("");
+    const { data, error } = await supabase.rpc("owner_payment_settings", { p_payload: { ...form, upi_enabled: enabled } });
+    setSaving(false);
+    if (error) { setMessage(/Invalid UPI ID/.test(error.message) ? "UPI ID ശരിയല്ല (ഉദാ: name@okaxis)." : ownerMessage(error)); return; }
+    setForm({ upi_id: data.upi_id || "", payee_name: data.payee_name || "", upi_enabled: data.upi_enabled });
+    setMessage(enabled ? "Save ചെയ്തു — customers-ന് UPI വഴി അടയ്ക്കാം." : "UPI payment ഓഫ് ആക്കി.");
+  };
+  return (
+    <section className="rounded-xl border p-3 space-y-2" style={{ background: G.bg, borderColor: form.upi_enabled ? "rgba(34,197,94,0.45)" : G.border }}>
+      <h2 className="text-sm font-semibold text-white flex items-center gap-2"><QrCode className="w-4 h-4" style={{ color: G.text }} />
+        UPI വഴി നേരിട്ട് ബാങ്കിലേക്ക് {form.upi_enabled ? "✅ ഓൺ" : "— ഓഫ്"}</h2>
+      <p className="text-[11px] text-white/50">Customer നിങ്ങളുടെ UPI ID-ലേക്ക് പണം അടച്ച് 12 അക്ക UPI reference അയക്കും. ബാങ്കിൽ പണം വന്നോ എന്ന് നോക്കി താഴെ "Approve" അമർത്തിയാൽ ആ page തുറക്കും.</p>
+      <div className="flex flex-wrap gap-2">
+        <input value={form.upi_id} onChange={e => setForm({ ...form, upi_id: e.target.value.trim() })} placeholder="UPI ID (ഉദാ: name@okaxis)" aria-label="UPI ID"
+          className="flex-1 min-w-[180px] px-2 py-1.5 rounded-lg text-sm text-white bg-white/5 border" style={{ borderColor: G.border }} />
+        <input value={form.payee_name} onChange={e => setForm({ ...form, payee_name: e.target.value })} placeholder="പേര് (UPI-ൽ കാണിക്കുന്നത്)" aria-label="Payee name"
+          className="flex-1 min-w-[150px] px-2 py-1.5 rounded-lg text-sm text-white bg-white/5 border" style={{ borderColor: G.border }} />
+      </div>
+      <div className="flex gap-2">
+        <button disabled={saving} onClick={() => save(true)} className="px-3 py-1.5 rounded-lg text-xs font-bold disabled:opacity-50"
+          style={{ background: "linear-gradient(135deg,#f6d860,#c98a14)", color: "#0d1b2a" }}>{form.upi_enabled ? "Update" : "UPI ഓൺ ആക്കുക"}</button>
+        {form.upi_enabled && <button disabled={saving} onClick={() => save(false)} className="px-3 py-1.5 rounded-lg text-xs border disabled:opacity-50"
+          style={{ borderColor: "rgba(239,68,68,0.4)", color: "#fca5a5" }}>ഓഫ് ആക്കുക</button>}
+      </div>
+      {message && <p className="text-[11px] text-white/70" role="status">{message}</p>}
+    </section>
+  );
+}
+
+/** UPI payments waiting for the owner to check the bank and approve. */
+function UpiApprovals({ onChanged }) {
+  const [rows, setRows] = useState([]);
+  const [busy, setBusy] = useState("");
+  const [message, setMessage] = useState("");
+  const load = useCallback(async () => {
+    const { data, error } = await supabase.rpc("owner_payment_orders", { p_payload: { provider: "upi", status: "PENDING", limit: 100 } });
+    if (error) setMessage(ownerMessage(error)); else setRows(data?.orders || []);
+  }, []);
+  useEffect(() => { load(); }, [load]);
+  const decide = async (row, approve) => {
+    let note = null;
+    if (!approve) { note = window.prompt("നിരസിക്കാനുള്ള കാരണം (customer-ന് കാണാം):", "ബാങ്കിൽ ഈ payment കണ്ടില്ല"); if (note === null) return; }
+    else if (!window.confirm(`${row.customer_email} — ${formatResourcePrice({ price_minor: row.total_minor, currency: row.currency })}, UPI Ref ${row.provider_payment_id}.\nബാങ്കിൽ ഈ പണം വന്നിട്ടുണ്ടെന്ന് ഉറപ്പാണോ?`)) return;
+    setBusy(row.id); setMessage("");
+    const { error } = await supabase.rpc("owner_upi_decide", { p_order_id: row.id, p_approve: approve, p_note: note });
+    setBusy("");
+    if (error) { setMessage(ownerMessage(error)); return; }
+    setMessage(approve ? "Approve ചെയ്തു — customer-ന് page തുറന്നു." : "നിരസിച്ചു.");
+    await load(); onChanged?.();
+  };
+  return (
+    <section className="space-y-2">
+      <h2 className="text-sm font-semibold text-white/80">UPI payments — approval കാത്തിരിക്കുന്നവ ({rows.length})</h2>
+      {message && <p className="text-[11px] text-white/70" role="status">{message}</p>}
+      {rows.length === 0 && <p className="text-xs text-white/40">ഇപ്പോൾ ഒന്നുമില്ല.</p>}
+      {rows.map(row => (
+        <div key={row.id} className="rounded-xl border p-3 flex flex-wrap items-center gap-3" style={{ background: G.bg, borderColor: "rgba(234,179,8,0.45)" }}>
+          <div className="flex-1 min-w-[200px] text-xs text-white/80 space-y-0.5">
+            <p className="font-semibold text-white">{row.page_title?.ml || row.page_title?.en || row.route_path} · {formatResourcePrice({ price_minor: row.total_minor, currency: row.currency })}</p>
+            <p>{row.customer_email}</p>
+            <p>UPI Ref: <span className="font-mono text-amber-200">{row.provider_payment_id}</span> · {fmtWhen(row.created_at)}</p>
+            <p className="text-white/45">കാലാവധി: {row.lifetime_access ? "Lifetime" : `${row.validity_days} ദിവസം`}</p>
+          </div>
+          <button disabled={busy === row.id} onClick={() => decide(row, true)} className="px-3 py-2 rounded-lg text-xs font-bold flex items-center gap-1 disabled:opacity-50"
+            style={{ background: "rgba(34,197,94,0.18)", border: "1px solid rgba(34,197,94,0.5)", color: "#86efac" }}><Check className="w-3.5 h-3.5" /> Approve</button>
+          <button disabled={busy === row.id} onClick={() => decide(row, false)} className="px-3 py-2 rounded-lg text-xs flex items-center gap-1 disabled:opacity-50"
+            style={{ border: "1px solid rgba(239,68,68,0.4)", color: "#fca5a5" }}><X className="w-3.5 h-3.5" /> നിരസിക്കുക</button>
+        </div>
+      ))}
+    </section>
+  );
+}
+
 export default function AdminOnlinePayments() {
   const { role, authResolved, adminProfileLoading } = useAuth();
   const [prices, setPrices] = useState([]);
@@ -197,12 +284,14 @@ export default function AdminOnlinePayments() {
         <header className="flex items-center justify-between gap-3">
           <div>
             <h1 className="text-2xl font-semibold text-white flex items-center gap-2"><CreditCard className="w-6 h-6" style={{ color: G.text }} /> Online payments</h1>
-            <p className="text-xs text-white/50 mt-1">ഓരോ page-നും വിലയും കാലാവധിയും. പണം Razorpay വഴി ലഭിച്ച ശേഷം മാത്രം ആ page ആ customer-ന് തുറക്കും.</p>
+            <p className="text-xs text-white/50 mt-1">ഓരോ page-നും വിലയും കാലാവധിയും. പണം ലഭിച്ചെന്ന് ഉറപ്പായ ശേഷം മാത്രം ആ page ആ customer-ന് തുറക്കും.</p>
           </div>
           <button onClick={reload} className="px-3 py-2 rounded-lg text-xs border flex items-center gap-1" style={{ borderColor: G.border, color: G.text }}>
             <RefreshCw className={`w-3.5 h-3.5 ${loading ? "animate-spin" : ""}`} /> Refresh
           </button>
         </header>
+        <UpiSettings />
+        <UpiApprovals onChanged={() => reload()} />
         <SetupStatus />
         {error && <p className="text-sm text-red-300" role="alert">{error}</p>}
 
@@ -240,7 +329,7 @@ export default function AdminOnlinePayments() {
                     <td className="p-2">{order.customer_email}</td>
                     <td className="p-2">{order.page_title?.ml || order.page_title?.en || order.route_path}</td>
                     <td className="p-2 whitespace-nowrap">{formatResourcePrice({ price_minor: order.total_minor, currency: order.currency })}</td>
-                    <td className="p-2">{order.status}{order.failure_reason ? ` · ${order.failure_reason}` : ""}</td>
+                    <td className="p-2">{order.provider === "upi" ? "UPI · " : "Razorpay · "}{order.status}{order.failure_reason ? ` · ${order.failure_reason}` : ""}</td>
                     <td className="p-2 whitespace-nowrap">{order.status === "PAID" ? (order.access_expires_at ? fmt(order.access_expires_at) : "Lifetime") : "—"}</td>
                   </tr>
                 ))}
